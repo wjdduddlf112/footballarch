@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101922">
+<meta name="description" content="Football Archive — Historical Best XI, player tiers, and league history.">
+<title>FOOTBALL ARCHIVE · Historical League Best</title>
+<link rel="stylesheet" href="./assets/app.css">
+<script src="./assets/app.js" defer></script>
+</head>
+<body>
+<div id="app">
+<header class="site-header">
+  <div class="header-top">
+    <a class="brand" href="./" aria-label="Football Archive">
+      <span class="brand-symbol">FA</span>
+      <span><strong>FOOTBALL ARCHIVE</strong><small>HISTORICAL PLAYER RATINGS</small></span>
+    </a>
+    <div class="switchers" aria-label="대회와 시즌 선택">
+      <label><span>구분</span><select id="domain"><option value="domestic">Domestic Leagues</option><option value="europe">UEFA Competitions</option></select></label>
+      <label><span>대회</span><select id="league"></select></label>
+      <label><span>시즌</span><select id="season"></select></label>
+    </div>
+  </div>
+  <nav class="main-nav" aria-label="화면 선택">
+    <button type="button" data-tab="overview" class="active">Overview</button>
+    <button type="button" data-tab="formation">Best XI</button>
+    <button type="button" data-tab="top">Top Class</button>
+    <button type="button" data-tab="ranking">All Rankings</button>
+    <button type="button" data-tab="table">League Table</button>
+    <button type="button" data-tab="stats">Statistics</button>
+  </nav>
+</header>
+<main class="shell">
+  <div class="pagehead"><div><div class="eyebrow" id="eyebrow">HISTORICAL FOOTBALL ARCHIVE</div><h1 id="heading">Football Archive</h1><p id="subheading">시즌별 선수 평가 기록을 불러오는 중입니다.</p></div><span id="stateTag" class="status">Loading</span></div>
+  <div id="content" aria-live="polite"><div class="empty"><strong>데이터를 불러오는 중입니다.</strong></div></div>
+</main>
+<footer class="site-footer">FOOTBALL ARCHIVE · 시즌별 검수 후 승인된 평가만 공식 기록으로 반영합니다. <span>데이터 출처와 평가 상태는 시즌 화면에 표시됩니다.</span></footer>
+</div>
+</body>
+</html>
