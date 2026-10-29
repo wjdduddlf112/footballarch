@@ -165,3 +165,13 @@ body.is-home .floating-season-nav{display:none}
 .home-league-grid .archive-card-emblem{position:absolute;z-index:0;top:18%;right:7%;width:53%;height:42%;object-fit:contain;object-position:center;opacity:.65;pointer-events:none;filter:drop-shadow(0 4px 12px #0008)}
 .home-league-grid .archive-card-bottom{z-index:2;text-shadow:0 1px 12px #08121bed}
 @media(max-width:650px){.home-league-grid .archive-card-emblem{top:19%;right:9%;width:52%;height:37%;opacity:.72}}
+
+/* Homogeneous league-logo cards: clear emblem, shared plate and no overlapping monograms. */
+.home-league-grid .archive-card-emblem-frame{position:absolute;top:18%;right:15%;z-index:1;display:flex;align-items:center;justify-content:center;width:70%;height:37%;box-sizing:border-box;padding:15px 22px;border:1px solid #e0e5e879;border-radius:14px;background:#f2f4f5;box-shadow:0 10px 28px #03090d70;pointer-events:none;overflow:hidden}
+.home-league-grid .archive-card-emblem{display:block;position:static;width:100%;height:100%;object-fit:contain;object-position:center;opacity:1;filter:none;max-width:100%;max-height:100%}
+.home-league-grid .archive-card-monogram{display:none}
+.home-league-grid .archive-card-bottom{position:relative;z-index:2}
+.champion-badge,.champion-stripped{display:inline-flex;align-items:center;justify-content:center;vertical-align:middle;flex:none;margin-left:3px;white-space:nowrap;font-weight:850}
+.champion-badge{width:19px;height:19px;border-radius:50%;border:1px solid #d7b25b;color:#f3d68f;background:#6c4f1d57;font-size:11px}
+.champion-stripped{padding:2px 5px;border:1px solid #ab6663;border-radius:4px;background:#7d33332a;color:#edacaa;font-size:10px}
+@media(max-width:650px){.home-league-grid .archive-card-emblem-frame{top:18%;right:12%;width:76%;height:37%;padding:12px 17px}}
