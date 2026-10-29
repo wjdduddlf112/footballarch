@@ -81,3 +81,16 @@ body.is-home #content{min-width:0}
 @media(max-width:650px){body.is-home .shell{padding:0 12px 34px}body.is-home .header-top{min-height:66px}.home-masthead{border-radius:0 0 14px 14px;min-height:0}.home-masthead-copy{padding:48px 20px 38px}.home-kicker{font-size:8px;letter-spacing:.1em;gap:7px;margin-bottom:23px}.home-kicker-line{width:17px}.home-masthead h1{font-size:clamp(51px,12.6vw,73px);margin-bottom:24px}.home-lead{font-size:16px}.home-description{font-size:12px}.home-actions{gap:18px}.home-primary{width:100%;justify-content:space-between}.home-editorial-art{min-height:185px}.art-big{font-size:155px}.art-label,.art-bottom{font-size:8px}.home-facts{padding:22px 0;gap:23px 0}.home-facts>div{gap:10px;padding-left:10%}.home-facts strong{font-size:30px}.home-facts span{font-size:9px}.home-section{margin-bottom:52px}.home-section-heading{display:block;margin-bottom:18px}.home-section-count{display:inline-block;margin-top:12px}.home-section h2{font-size:32px}.home-league-grid,.home-europe-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.archive-card,.home-league-grid .archive-card,.home-europe-grid .archive-card{height:215px;padding:16px}.archive-card-bottom strong{font-size:21px}.archive-card-monogram{font-size:85px;top:53px}.home-feature-grid{grid-template-columns:1fr}.home-feature{min-height:205px;padding:22px}.home-note{display:block}.home-note p{margin-top:10px}}
 @media(max-width:380px){.home-league-grid,.home-europe-grid{grid-template-columns:1fr}.archive-card,.home-league-grid .archive-card,.home-europe-grid .archive-card{height:188px}.home-masthead h1{font-size:49px}}
 @media(prefers-reduced-motion:reduce){.archive-card,.archive-card:after,.home-primary{transition:none;transform:none!important}}
+
+
+/* Football Archive emblem: engraved globe + open tactical record book. */
+.brand-logo{width:50px;height:50px;min-width:50px;object-fit:contain;border:0;border-radius:0;background:transparent;box-shadow:none}
+.brand:hover .brand-logo{filter:drop-shadow(0 0 7px #d8bb8b40)}
+.home-editorial-art{background:radial-gradient(circle at 50% 47%,#24483e 0%,#16342f 46%,#0e2426 79%,#101e26 100%)}
+.home-editorial-art:before{border-color:#aec8b217}
+.home-editorial-art:after{border-color:#aec8b21c}
+.archive-hero-symbol{position:relative;z-index:1;display:block;width:79%;max-width:445px;height:auto;max-height:430px;object-fit:contain;filter:drop-shadow(0 22px 25px #0007);transition:transform .35s ease}
+.home-editorial-art:hover .archive-hero-symbol{transform:scale(1.035)}
+@media(max-width:780px){.archive-hero-symbol{width:220px;max-width:58%;height:210px;max-height:none}.home-editorial-art{min-height:246px}}
+@media(max-width:650px){.brand-logo{width:42px;height:42px;min-width:42px}.archive-hero-symbol{width:152px;height:156px;max-width:none}.home-editorial-art{min-height:201px}.art-label{top:19px}.art-bottom{bottom:20px}}
+@media(prefers-reduced-motion:reduce){.archive-hero-symbol{transition:none}.home-editorial-art:hover .archive-hero-symbol{transform:none}}
