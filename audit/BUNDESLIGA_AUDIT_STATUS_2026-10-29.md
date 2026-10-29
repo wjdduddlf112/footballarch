@@ -5,7 +5,7 @@ Recorded 2026-10-29.
 ## Scope
 - **27 Bundesliga seasons**, each 18 teams / 34 matches, for **486 club-season final records**.
 - 40 historical club identities with alias normalization (historic spelling/renaming recorded separately).
-- **181 mapped European-club season entries** currently stored. **Only 2025-26 → 2026-27 entrants are fully checked against an official recent Bundesliga publication**. Earlier entrants are explicitly marked preliminary. DO NOT use provisional historic entrant lists for final historical player shortlisting until verified.
+- **183 mapped European-club season entries in the original archived JSON** (earlier 181 figure in this audit was a stale count). **Only 2025-26 → 2026-27 entrants are fully checked against an official recent Bundesliga publication**. Earlier entrants are explicitly marked preliminary. DO NOT use provisional historic entrant lists for final historical player shortlisting until verified.
 - **21 club crest URLs**, 19 club profiles using initials fallback pending valid sourced crests, actual image loading and era-correctness.
 
 ## Final league table validation
@@ -68,7 +68,7 @@ Alias profiles: `data/bundesliga-clubs-1999-2026.json`
 - **2020-21:** correct Union Berlin from UEL to inaugural 2021-22 UECL.
 - **2021-22:** add Eintracht Frankfurt to 2022-23 UCL (2021-22 Europa League titleholder, finishing 11th in the domestic league).
 
-21 club-season field corrections across 9 seasons; historical mapped European entries increase **181 → 201**. Source references and per-club route notes attached to the corresponding season records. Evidence: [RSSSF actual German European Cup participants](https://www.rsssf.org/tablesd/duit-ec85.html), [RSSSF Intertoto competition records](https://www.rsssf.org/tablesi/intertoto.html), individual RSSSF domestic season pages and UEFA titleholder records. These are targeted evidence-based corrections, not an unconditional certification of every 1999-00 to 2024-25 entrant list. The **26 historical years remain flagged for full season-by-season review**, whereas 2025-26 retains its separate official confirmation.
+21 club-season field corrections across 9 seasons; historical mapped European entries increase **183 → 201** (18 net additions; 21 club-season field corrections including a removal and reclassification). Source references and per-club route notes attached to the corresponding season records. Evidence: [RSSSF actual German European Cup participants](https://www.rsssf.org/tablesd/duit-ec85.html), [RSSSF Intertoto competition records](https://www.rsssf.org/tablesi/intertoto.html), individual RSSSF domestic season pages and UEFA titleholder records. These are targeted evidence-based corrections, not an unconditional certification of every 1999-00 to 2024-25 entrant list. The **26 historical years remain flagged for full season-by-season review**, whereas 2025-26 retains its separate official confirmation.
 
 ### Clubs and crests
 
