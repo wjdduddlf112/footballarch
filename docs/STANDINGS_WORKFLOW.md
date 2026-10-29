@@ -45,6 +45,16 @@ Updated: 2026-10-29. This document governs **standings and next-season European 
 - Homepage league emblem assets (La Liga / PL / Serie A / Bundesliga / Ligue 1) linked directly, not AI-generated stadium art. Original card design retained. Browser image loads are not yet verified.
 - Follow-up league order: Bundesliga, then Ligue 1. Player candidate/grade work remains separate and user-gated.
 
+## Bundesliga stage (2026-10-29)
+
+- Bundesliga is the **fourth** domestic league with all 27 final standings seasons entered: `data/bundesliga-standings-verified-1999-2026.json` (1999-00–2025-26).
+- 27 × 18 = **486** source-checked club-season rows, 40 historical club identities. Bundesliga was 18 teams / 34 matches for this entire period.
+- Play-off and discipline exceptions: 1999-00 Eintracht Frankfurt -2, 2003-04 Kaiserslautern -3, 2008-09 onwards rank 16 play-off outcomes checked with subsequent division membership; latest 2025-26 Wolfsburg rank 16 lost play-off.
+- 2025-26 → 2026-27 European entrants **officially confirmed** (4 UCL, 2 UEL, 1 UECL). Previous 26 seasons' UEFA entries are provisional and require full actual-entrant audit before being used for user-approved player candidate teams.
+- Automatic verification: `node scripts/verify-bundesliga.mjs` (PASS: 27/486). Full audit: `audit/BUNDESLIGA_AUDIT_STATUS_2026-10-29.md`.
+- Homepage 5-league insignia alignment adjusted with shared neutral plates. Official league champions display gold C; stripped Juventus 2004-05 and 2005-06 title decisions display red 박탈, 2004-05 has no champion and 2005-06 Inter retains C.
+- Next domestic data stage is Ligue 1. No provisional player grades approved.
+
 ## Baseline on 2026-10-29 (prior 26-season snapshot)
 
 ### La Liga
