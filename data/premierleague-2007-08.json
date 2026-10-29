@@ -7,7 +7,7 @@
     "status": "standings_only",
     "label": "League Table",
     "standingsOnly": true,
-    "standingsVerified": "match_reconstructed_pending_official_rank_crosscheck",
+    "standingsVerified": true,
     "europeanQualificationVerified": false,
     "assessmentStart": "2005-06",
     "assessmentEnd": "2007-08",
@@ -16,15 +16,21 @@
     "sourceGameCount": 380,
     "pointsDeductions": [],
     "notes": "Match-derived table: official rank, tie-breaking and actual next-season UEFA entrants require source verification. Provisional until verified.",
-    "lastReview": "2026-10-29"
+    "lastReview": "2026-10-29",
+    "standingsSource": "https://www.rsssf.org/tablese/eng08.html",
+    "standingsCrossChecked": "20/20 independent RSSSF final table (rank, P, W, D, L, GF, GA, pts)",
+    "europeanQualificationReview": "curated historical entrant list; individual UEFA competition record verification pending",
+    "europeanQualificationSources": [
+      "https://www.rsssf.org/tablese/eng08.html",
+      "https://www.rsssf.org/tablesu/uic08.html"
+    ]
   },
   "clubs": [
     {
       "id": "bolton",
       "name": "Bolton Wanderers",
       "abbr": "BOL",
-      "crestUrl": "https://crests.football-data.org/68.png",
-      "crestHistoricalStatus": "modern_reference_historical_version_unverified",
+      "crestHistoricalStatus": "crest_source_unverified",
       "crestSource": "https://www.football-data.org/"
     },
     {
@@ -186,7 +192,98 @@
       "crestSource": "https://www.football-data.org/"
     }
   ],
-  "qualifiers": [],
+  "qualifiers": [
+    {
+      "club": "manutd",
+      "competition": "UCL",
+      "route": "Portsmouth FA Cup winners; Tottenham League Cup winners; Manchester City UEFA Fair Play; Aston Villa 2008 Intertoto entrant.",
+      "status": "review",
+      "sources": [
+        "https://www.rsssf.org/tablese/eng08.html",
+        "https://www.rsssf.org/tablesu/uic08.html"
+      ]
+    },
+    {
+      "club": "chelsea",
+      "competition": "UCL",
+      "route": "Portsmouth FA Cup winners; Tottenham League Cup winners; Manchester City UEFA Fair Play; Aston Villa 2008 Intertoto entrant.",
+      "status": "review",
+      "sources": [
+        "https://www.rsssf.org/tablese/eng08.html",
+        "https://www.rsssf.org/tablesu/uic08.html"
+      ]
+    },
+    {
+      "club": "arsenal",
+      "competition": "UCL",
+      "route": "Portsmouth FA Cup winners; Tottenham League Cup winners; Manchester City UEFA Fair Play; Aston Villa 2008 Intertoto entrant.",
+      "status": "review",
+      "sources": [
+        "https://www.rsssf.org/tablese/eng08.html",
+        "https://www.rsssf.org/tablesu/uic08.html"
+      ]
+    },
+    {
+      "club": "liverpool",
+      "competition": "UCL",
+      "route": "Portsmouth FA Cup winners; Tottenham League Cup winners; Manchester City UEFA Fair Play; Aston Villa 2008 Intertoto entrant.",
+      "status": "review",
+      "sources": [
+        "https://www.rsssf.org/tablese/eng08.html",
+        "https://www.rsssf.org/tablesu/uic08.html"
+      ]
+    },
+    {
+      "club": "everton",
+      "competition": "UEFA Cup",
+      "route": "Portsmouth FA Cup winners; Tottenham League Cup winners; Manchester City UEFA Fair Play; Aston Villa 2008 Intertoto entrant.",
+      "status": "review",
+      "sources": [
+        "https://www.rsssf.org/tablese/eng08.html",
+        "https://www.rsssf.org/tablesu/uic08.html"
+      ]
+    },
+    {
+      "club": "portsmouth",
+      "competition": "UEFA Cup",
+      "route": "Portsmouth FA Cup winners; Tottenham League Cup winners; Manchester City UEFA Fair Play; Aston Villa 2008 Intertoto entrant.",
+      "status": "review",
+      "sources": [
+        "https://www.rsssf.org/tablese/eng08.html",
+        "https://www.rsssf.org/tablesu/uic08.html"
+      ]
+    },
+    {
+      "club": "mancity",
+      "competition": "UEFA Cup",
+      "route": "Portsmouth FA Cup winners; Tottenham League Cup winners; Manchester City UEFA Fair Play; Aston Villa 2008 Intertoto entrant.",
+      "status": "review",
+      "sources": [
+        "https://www.rsssf.org/tablese/eng08.html",
+        "https://www.rsssf.org/tablesu/uic08.html"
+      ]
+    },
+    {
+      "club": "tottenham",
+      "competition": "UEFA Cup",
+      "route": "Portsmouth FA Cup winners; Tottenham League Cup winners; Manchester City UEFA Fair Play; Aston Villa 2008 Intertoto entrant.",
+      "status": "review",
+      "sources": [
+        "https://www.rsssf.org/tablese/eng08.html",
+        "https://www.rsssf.org/tablesu/uic08.html"
+      ]
+    },
+    {
+      "club": "astonvilla",
+      "competition": "Intertoto Cup",
+      "route": "Portsmouth FA Cup winners; Tottenham League Cup winners; Manchester City UEFA Fair Play; Aston Villa 2008 Intertoto entrant.",
+      "status": "review",
+      "sources": [
+        "https://www.rsssf.org/tablese/eng08.html",
+        "https://www.rsssf.org/tablesu/uic08.html"
+      ]
+    }
+  ],
   "standings": [
     {
       "rank": 1,
@@ -199,7 +296,7 @@
       "goalsAgainst": 22,
       "gd": 58,
       "points": 87,
-      "competition": null,
+      "competition": "UCL",
       "outcome": "retained"
     },
     {
@@ -213,7 +310,7 @@
       "goalsAgainst": 26,
       "gd": 39,
       "points": 85,
-      "competition": null,
+      "competition": "UCL",
       "outcome": "retained"
     },
     {
@@ -227,7 +324,7 @@
       "goalsAgainst": 31,
       "gd": 43,
       "points": 83,
-      "competition": null,
+      "competition": "UCL",
       "outcome": "retained"
     },
     {
@@ -241,7 +338,7 @@
       "goalsAgainst": 28,
       "gd": 39,
       "points": 76,
-      "competition": null,
+      "competition": "UCL",
       "outcome": "retained"
     },
     {
@@ -255,7 +352,7 @@
       "goalsAgainst": 33,
       "gd": 22,
       "points": 65,
-      "competition": null,
+      "competition": "UEFA Cup",
       "outcome": "retained"
     },
     {
@@ -269,7 +366,7 @@
       "goalsAgainst": 51,
       "gd": 20,
       "points": 60,
-      "competition": null,
+      "competition": "Intertoto Cup",
       "outcome": "retained"
     },
     {
@@ -297,7 +394,7 @@
       "goalsAgainst": 40,
       "gd": 8,
       "points": 57,
-      "competition": null,
+      "competition": "UEFA Cup",
       "outcome": "retained"
     },
     {
@@ -311,7 +408,7 @@
       "goalsAgainst": 53,
       "gd": -8,
       "points": 55,
-      "competition": null,
+      "competition": "UEFA Cup",
       "outcome": "retained"
     },
     {
@@ -339,7 +436,7 @@
       "goalsAgainst": 61,
       "gd": 5,
       "points": 46,
-      "competition": null,
+      "competition": "UEFA Cup",
       "outcome": "retained"
     },
     {
