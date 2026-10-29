@@ -9,7 +9,7 @@ const ranks=["S","A+","A","A-","B+","B","B-","C+","C","C-","D"];
 const positions=["GK","CB","LB","RB","DM","CM","CAM","LW","RW","ST"];
 const slots=[["LW",15,13],["ST",50,11],["RW",85,13],["CM",30,37],["CAM",70,37],["DM",50,54],["LB",13,73],["CB",37,76],["CB",63,76],["RB",87,73],["GK",50,91]];
 const q=new URLSearchParams(location.search);
-const st={domain:"domestic",league:"laliga",season:"1999-00",tab:"overview",position:"all",club:"all",from:"S",to:"D",search:"",tier:"all",age:"all",qualifiedOnly:false};
+const st={domain:"domestic",league:"laliga",season:"1999-00",tab:"overview",home:!q.has("league"),position:"all",club:"all",from:"S",to:"D",search:"",tier:"all",age:"all",qualifiedOnly:false};
 let data=null,loading=false;
 const yearList=Array.from({length:26},(_,i)=>{let a=1999+i,b=(a+1)%100;return a+"-"+String(b).padStart(2,"0")});
 function esc(a){return String(a??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
@@ -28,14 +28,14 @@ function syncSelects(){
 function label(){return competitionGroups[st.domain].find(x=>x[0]===st.league)?.[1]||"Football"}
 function seasonEndLabel(){return st.season.split("-")[0]+"–"+(2000+Number(st.season.split("-")[1]))}
 function clearFilters(){st.position="all";st.club="all";st.from="S";st.to="D";st.search="";st.tier="all";st.age="all";st.qualifiedOnly=false}
-function writeUrl(){let p=new URLSearchParams({league:st.league,season:st.season,view:st.tab});history.replaceState(null,"",location.pathname+"?"+p.toString())}
+function writeUrl(){st.home=false;let p=new URLSearchParams({league:st.league,season:st.season,view:st.tab});history.replaceState(null,"",location.pathname+"?"+p.toString())}
 async function load(){
  loading=true;data=null;render();
  const path="./data/"+st.league+"-"+st.season+".json";
  try{const r=await fetch(path,{cache:"no-cache"});if(!r.ok)throw Error("Not registered");data=await r.json()}catch(err){data=null}
  loading=false;render()
 }
-function setCompetition(){clearFilters();st.tab="overview";writeUrl();load()}
+function setCompetition(){st.home=false;clearFilters();st.tab="overview";writeUrl();load()}
 function seasonsStatus(){return data?.meta?.status==="demo"?"demo":data?.meta?.status==="approved"?"approved":"pending"}
 function rankPlayers(){return (data?.players||[]).slice().sort((a,b)=>positions.indexOf(a.position)-positions.indexOf(b.position)||((a.rank||999)-(b.rank||999))||ranks.indexOf(a.tier)-ranks.indexOf(b.tier)||a.name.localeCompare(b.name))}
 function hasTop(){return (data?.players||[]).some(p=>top(p))}
@@ -119,11 +119,80 @@ function stats(){
  mid+='<div class="stat-grid" style="margin-top:14px"><div class="panel"><h2>Tier Distribution</h2>'+(n?bars(ranks.map(t=>[t,ps.filter(p=>p.tier===t).length])):'<div class="empty"><strong>티어 평가 전입니다.</strong></div>')+'</div><div class="panel"><h2>Position Distribution</h2>'+bars(positions.map(t=>[t,ps.filter(p=>p.position===t).length]))+'</div><div class="panel"><h2>Club Representation</h2>'+bars(qualifiers().map(q=>[club(q.club).name,ps.filter(p=>p.club===q.club).length]))+'</div><div class="panel"><h2>Age Breakdown</h2>'+bars([["≤22",ps.filter(p=>age(p)<=22).length],["23–27",ps.filter(p=>age(p)>=23&&age(p)<=27).length],["28–32",ps.filter(p=>age(p)>=28&&age(p)<=32).length],["33+",ps.filter(p=>age(p)>=33).length]])+'</div></div>';
  return mid
 }
+
+const homeDomestic=[
+ {id:"laliga",tag:"ES",name:"La Liga",detail:"SPAIN",number:"01",color:"bronze"},
+ {id:"premierleague",tag:"EN",name:"Premier League",detail:"ENGLAND",number:"02",color:"plum"},
+ {id:"seriea",tag:"IT",name:"Serie A",detail:"ITALY",number:"03",color:"blue"},
+ {id:"bundesliga",tag:"DE",name:"Bundesliga",detail:"GERMANY",number:"04",color:"red"},
+ {id:"ligue1",tag:"FR",name:"Ligue 1",detail:"FRANCE",number:"05",color:"teal"}
+];
+const homeEuropean=[
+ {id:"ucl",tag:"CL",name:"Champions League",detail:"THE EUROPEAN CUP",number:"01",color:"blue",season:"1999-00"},
+ {id:"uel",tag:"EL",name:"Europa League",detail:"THE UEFA CUP LINEAGE",number:"02",color:"bronze",season:"2009-10"},
+ {id:"uecl",tag:"CO",name:"Conference League",detail:"SINCE 2021–22",number:"03",color:"teal",season:"2021-22"}
+];
+function homeCard(c){
+ return '<button type="button" class="archive-card '+esc(c.color)+'" data-open-league="'+esc(c.id)+'" data-open-season="'+esc(c.season||"1999-00")+'" aria-label="'+esc(c.name)+' 대회 보기">'+
+ '<span class="archive-card-top"><span class="archive-card-number">'+esc(c.number)+' / '+(c.tag==="CL"||c.tag==="EL"||c.tag==="CO"?"03":"05")+'</span><span class="archive-card-arrow" aria-hidden="true">↗</span></span>'+
+ '<span class="archive-card-monogram" aria-hidden="true">'+esc(c.tag)+'</span>'+
+ '<span class="archive-card-bottom"><span class="archive-card-label">'+esc(c.detail)+'</span><strong>'+esc(c.name)+'</strong><span class="archive-card-action">Explore competition <span aria-hidden="true">→</span></span></span></button>';
+}
+function homeMarkup(){
+ return `
+ <section class="home-masthead" aria-labelledby="home-title">
+  <div class="home-masthead-copy">
+   <p class="home-kicker"><span class="home-kicker-line"></span> AN INDEPENDENT FOOTBALL RESEARCH ARCHIVE</p>
+   <h1 id="home-title">FOOTBALL<br><em>ARCHIVE<span class="home-period">.</span></em></h1>
+   <p class="home-lead">축구의 한 시대를, 한 시즌씩 기록하다.</p>
+   <p class="home-description">유럽 5대 리그와 UEFA 클럽 대회를 아우르는 역사적 선수 평가 아카이브. 시즌별 주전과 후보, 포지션별 순위와 개인 활약을 검토하고 확정된 기록만 남깁니다.</p>
+   <div class="home-actions"><button type="button" class="home-primary" data-open-league="laliga" data-open-season="1999-00">1999–00 La Liga 살펴보기 <span aria-hidden="true">↗</span></button><a class="home-secondary" href="#competitions">대회 전체 보기 <span aria-hidden="true">↓</span></a></div>
+  </div>
+  <div class="home-editorial-art" aria-hidden="true"><span class="art-label">THE GAME. THE PLAYERS. THE ERA.</span><span class="art-big">XI</span><div class="art-pitch-circle"></div><span class="art-bottom">EST. 1999<span> / </span>SEASON BY SEASON</span><span class="art-cross">✳</span></div>
+ </section>
+ <section class="home-facts" aria-label="아카이브 범위">
+  <div><strong>05</strong><span>DOMESTIC LEAGUES</span></div>
+  <div><strong>03</strong><span>UEFA COMPETITIONS</span></div>
+  <div><strong>26</strong><span>SEASONS IN SCOPE</span></div>
+  <div><strong>10</strong><span>PLAYER POSITIONS</span></div>
+ </section>
+ <section class="home-section" id="competitions" aria-labelledby="home-leagues-title">
+  <div class="home-section-heading"><div><p class="home-overline">01 — DOMESTIC</p><h2 id="home-leagues-title">The five leagues<span class="home-period">.</span></h2><p>대회를 선택한 다음, 상단의 시즌 선택기에서 원하는 시즌을 탐색할 수 있습니다.</p></div><span class="home-section-count">05 COMPETITIONS</span></div>
+  <div class="home-league-grid">${homeDomestic.map(homeCard).join("")}</div>
+ </section>
+ <section class="home-section home-europe-section" aria-labelledby="home-europe-title">
+  <div class="home-section-heading"><div><p class="home-overline">02 — CONTINENTAL</p><h2 id="home-europe-title">European nights<span class="home-period">.</span></h2><p>UEFA 클럽 대회는 국내 리그와 별도의 기록으로 관리합니다.</p></div><span class="home-section-count">03 COMPETITIONS</span></div>
+  <div class="home-europe-grid">${homeEuropean.map(homeCard).join("")}</div>
+ </section>
+ <section class="home-section home-current" aria-labelledby="home-current-title">
+  <div class="home-section-heading"><div><p class="home-overline">03 — THE COLLECTION</p><h2 id="home-current-title">Inside the archive<span class="home-period">.</span></h2><p>현재 등록된 시즌은 검수 상태에 따라 구분합니다. 시연용 평가를 공식 결과로 취급하지 않습니다.</p></div></div>
+  <div class="home-feature-grid">
+   <button type="button" class="home-feature" data-open-league="laliga" data-open-season="1999-00"><span class="home-feature-status">CANDIDATES / UNDER REVIEW</span><strong>La Liga <span>1999–00</span></strong><span class="home-feature-description">유럽대항전 진출 후보 구단과 GK 후보 자료를 검토 중입니다. 티어와 베스트 XI는 아직 확정되지 않았습니다.</span><span class="home-feature-bottom">후보 현황 보기 <span aria-hidden="true">↗</span></span></button>
+   <button type="button" class="home-feature home-feature-demo" data-open-league="laliga" data-open-season="2022-23"><span class="home-feature-status">DEMONSTRATION / NOT FINAL</span><strong>La Liga <span>2022–23</span></strong><span class="home-feature-description">선수 평가 화면과 순위, 포메이션을 미리 살펴보기 위한 시연 자료입니다. 공식 평가 결과가 아닙니다.</span><span class="home-feature-bottom">시연 화면 보기 <span aria-hidden="true">↗</span></span></button>
+  </div>
+ </section>
+ <div class="home-note"><span>ARCHIVE PRINCIPLE</span><p>평가 시즌과 직전 두 시즌의 개인 활약을 최근 시즌에 가중해 비교합니다. 후보 선정·등급·최종 베스트는 검수와 승인 이후 공개합니다.</p></div>`;
+}
+function openArchive(id,season){
+ const domestic=competitionGroups.domestic.some(x=>x[0]===id);
+ const european=competitionGroups.europe.some(x=>x[0]===id);
+ if(!domestic&&!european)return;
+ st.domain=domestic?"domestic":"europe";st.league=id;
+ st.season=yearList.includes(season)?season:"1999-00";
+ st.tab="overview";st.home=false;clearFilters();
+ const p=new URLSearchParams({league:st.league,season:st.season,view:st.tab});
+ history.pushState(null,"",location.pathname+"?"+p.toString());
+ load();window.scrollTo(0,0);
+}
+
 function unregistered(){
  const intro=st.domain==="domestic"?"5대 리그는 선택할 수 있지만 아직 기록이 등록되지 않은 시즌입니다.":"유럽대항전별 평가는 국내리그와 분리하여 등록할 예정입니다.";
  return '<div class="panel"><div class="empty"><strong>'+esc(label())+' · '+esc(st.season)+' 기록 준비 중</strong><p>'+intro+'</p><p>승인된 후보 구단·선수 평가를 이곳에 차례대로 추가합니다.</p><button class="pill" data-action="back">1999–00 La Liga 보기</button></div></div>'
 }
 function render(){
+ document.body.classList.toggle("is-home",st.home);
+ if(st.home){$("content").innerHTML=homeMarkup();document.title="FOOTBALL ARCHIVE | A History of the Beautiful Game";return}
+ document.title=label()+" "+st.season+" | FOOTBALL ARCHIVE";
  syncSelects();pageIntro();const el=$("content");if(loading){el.innerHTML='<div class="empty"><strong>데이터를 불러오는 중입니다.</strong></div>';return}
  if(!data){el.innerHTML=unregistered();return}
  if(st.tab==="overview")el.innerHTML=overview();else if(st.tab==="formation")el.innerHTML=formation();else if(st.tab==="top")el.innerHTML=topPage();else if(st.tab==="ranking")el.innerHTML=ranking();else if(st.tab==="table")el.innerHTML=standings();else el.innerHTML=stats()
@@ -138,6 +207,7 @@ function playerDetails(id){
 function closeModal(){document.getElementById("modalLayer")?.remove()}
 document.addEventListener("click",ev=>{
  let btn=ev.target.closest("button");if(btn){
+ if(btn.dataset.openLeague){openArchive(btn.dataset.openLeague,btn.dataset.openSeason);return}
  if(btn.dataset.tab){st.tab=btn.dataset.tab;writeUrl();render();return}
  if(btn.dataset.go){st.tab=btn.dataset.go;writeUrl();render();return}
  if(btn.dataset.position){st.position=btn.dataset.position;render();return}
@@ -175,5 +245,18 @@ else if(competitionGroups.europe.some(x=>x[0]===q.get("league"))){st.domain="eur
 if(yearList.includes(q.get("season")))st.season=q.get("season");
 if(["overview","formation","top","ranking","table","stats"].includes(q.get("view")))st.tab=q.get("view");
 if(st.domain==="europe"&&["formation","table"].includes(st.tab))st.tab="overview";
-load();
+if(st.home)render();else load();
+window.addEventListener("popstate",()=>{
+ const p=new URLSearchParams(location.search);
+ if(!p.has("league")){st.home=true;data=null;loading=false;render();return}
+ const id=p.get("league");
+ const domestic=competitionGroups.domestic.some(x=>x[0]===id);
+ const european=competitionGroups.europe.some(x=>x[0]===id);
+ if(!domestic&&!europe){st.home=true;data=null;loading=false;render();return}
+ st.home=false;st.domain=domestic?"domestic":"europe";st.league=id;
+ st.season=yearList.includes(p.get("season"))?p.get("season"):"1999-00";
+ st.tab=["overview","formation","top","ranking","table","stats"].includes(p.get("view"))?p.get("view"):"overview";
+ if(st.domain==="europe"&&["formation","table"].includes(st.tab))st.tab="overview";
+ clearFilters();load();
+});
 })();
