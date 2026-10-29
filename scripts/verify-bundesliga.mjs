@@ -1,9 +1,10 @@
 // Run from repository root: node scripts/verify-bundesliga.mjs
 import {readFileSync} from "node:fs";
 const read=p=>JSON.parse(readFileSync(p,"utf8"));
-export function verifyBundesliga(archive,references){
+export function verifyBundesliga(archive,references,clubAliases){
  const errs=[],warnings=[],audit=[];
  const ref=Object.assign({},...references.map(x=>x.seasons)),idset=new Set(archive.clubs.map(x=>x.id));
+ const aliasIds=Object.fromEntries(clubAliases.clubs.flatMap(c=>c.aliases.map(name=>[name,c.id])));
  if(Object.keys(archive.seasons).length!==27)errs.push("Expected 27 seasons");
  if(archive.clubs.length!==40||idset.size!==40)errs.push("Expected 40 historical clubs");
  let rows=0,entrantRecords=0;
@@ -20,8 +21,11 @@ export function verifyBundesliga(archive,references){
      const stats=["rank","played","wins","draws","losses","goalsFor","goalsAgainst","points"];
      if(stats.some(k=>r[k]!==refrow[k]))errs.push(season+": source mismatch rank "+(i+1));
      if(r.rank!==i+1||r.played!==34||r.wins+r.draws+r.losses!==34||r.gd!==r.goalsFor-r.goalsAgainst||r.points!==3*r.wins+r.draws-(r.pointsDeduction||0))errs.push(season+": arithmetic "+r.club);
-     const shouldRelegate=r.rank>=17||(r.rank===16&&(year<=2007||year===2025||!t.standings.some(()=>false)&&!!next&&!next.rows.some(n=>archive.clubs.find(c=>c.id===r.club)?.name===n.name||candidatesMatch(r.club,n.name))));
-     // We verify 17-18, and use actual next-year club membership separately for play-off ranks.
+     if(r.rank===16&&year>=2008){
+       const expectedDown=year===2025?true:!next?.rows.some(x=>aliasIds[x.name]===r.club);
+       const actualDown=r.outcome==="relegated";
+       if(expectedDown!==actualDown)errs.push(season+": relegation playoff result incorrect "+r.club);
+     }
      if(r.rank>=17&&r.outcome!=="relegated")errs.push(season+": bottom-two relegation "+r.club);
      if(year<=2007&&r.rank===16&&r.outcome!=="relegated")errs.push(season+": old automatic relegation "+r.club);
      if(year===2025&&r.rank===16&&r.club==="wolfsburg"&&r.outcome!=="relegated")errs.push(season+": Wolfsburg lost playoff");
@@ -42,9 +46,9 @@ export function verifyBundesliga(archive,references){
  warnings.push("Historical logo variants and web asset loading require a separate visual pass.");
  return {passed:errs.length===0,seasons:audit.length,standingsRows:rows,EuropeanEntries:entrantRecords,missingCrests:archive.clubs.filter(c=>!c.crestUrl).map(c=>c.id),errors:errs,warnings,audit};
 }
-function candidatesMatch(){return false}
 const arc=read("data/bundesliga-standings-verified-1999-2026.json");
 const refs=["audit/bundesliga-rsssf-1999-2007.json","audit/bundesliga-rsssf-2008-2016.json","audit/bundesliga-rsssf-2017-2025.json"].map(read);
-const result=verifyBundesliga(arc,refs);
+const aliases=read("data/bundesliga-clubs-1999-2026.json");
+const result=verifyBundesliga(arc,refs,aliases);
 process.stdout.write(JSON.stringify(result,null,2)+"\n");
 if(!result.passed)process.exitCode=1;
