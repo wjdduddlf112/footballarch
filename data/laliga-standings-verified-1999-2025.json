@@ -22,12 +22,13 @@
       "notes": "14 historic-club logo URL blanks filled; five of those replaced with exact linked assets or provider-published direct URL (Granada/Eibar/Tenerife/Albacete/Xerez). Other historic crest URLs have fallback candidates but were not browser tested. Historical season variant not guaranteed."
     },
     "europeanParticipationCoverage": {
-      "verifiedSeasons": 24,
-      "additionalExistingSeasonFiles": 2,
+      "verifiedSeasons": 26,
+      "additionalExistingSeasonFiles": 0,
       "totalHistoricalSeasons": 26,
-      "earlierSeasonStatus": "1999-00 and 2000-01 next-season competition allocations are maintained in dedicated season JSONs. All 2001-02 to 2024-25 archive seasons covered.",
+      "earlierSeasonStatus": "1999-00 and 2000-01 verified next-season entrant lists are now also integrated into the unified archive (previously stored only in dedicated season JSON).",
       "policy": "Based on actual next season UCL/UEFA Cup/Europa League/Conference League/Intertoto entries including cup route, titleholders and licensing exceptions; qualification is not inferred solely from league rank.",
-      "source": "Historical season qualification and entrant tables; individual source links per season"
+      "source": "Historical season qualification and entrant tables; individual source links per season",
+      "note": "Verified flags indicate data-level historical research; independent browser-rendered display testing remains pending."
     }
   },
   "clubs": [
@@ -709,7 +710,40 @@
         "source": "https://github.com/footballcsv/cache.footballdata/tree/master/1999-00",
         "finalRankBasis": "legacy standings ordering, pending independent cross-check",
         "originalSourceDiscrepancies": []
-      }
+      },
+      "europeanParticipation": {
+        "deportivo": "UCL",
+        "barca": "UCL",
+        "valencia": "UCL",
+        "madrid": "UCL",
+        "zaragoza": "UEFA Cup",
+        "alaves": "UEFA Cup",
+        "espanyol": "UEFA Cup",
+        "rayo": "UEFA Cup",
+        "celta": "Intertoto Cup",
+        "mallorca": "Intertoto Cup"
+      },
+      "europeanParticipationStatus": "verified_next_season_uefa_entrant_list",
+      "europeanParticipationSources": [
+        "https://www.soccer-spain.com/ssdocs/history/1999-2000.php",
+        "https://www.rsssf.org/tabless/span00.html",
+        "https://www.futbol-regional.es/competicion.php?com=10068",
+        "https://www.rsssf.org/miscellaneous/uefa.html"
+      ],
+      "europeanParticipationNotes": {
+        "deportivo": "League ranking",
+        "barca": "League ranking",
+        "valencia": "League ranking",
+        "madrid": "1999–00 UEFA Champions League title",
+        "zaragoza": "League/cup allocation",
+        "alaves": "League allocation",
+        "espanyol": "Domestic cup route",
+        "rayo": "Fair play route",
+        "celta": "2000 Intertoto; also qualified for 2000–01 UEFA Cup via Intertoto",
+        "mallorca": "2000 Intertoto"
+      },
+      "europeanParticipationVerificationNote": "Checked against next-season actual UEFA or Intertoto participants, including title holders, cup winners, fair play and competition-specific exceptions. Historical player tiers remain draft and unapproved.",
+      "europeanParticipationVerifiedAt": "2026-10-29"
     },
     "2000-01": {
       "standings": [
@@ -1008,7 +1042,33 @@
             ]
           }
         ]
-      }
+      },
+      "europeanParticipation": {
+        "madrid": "UCL",
+        "deportivo": "UCL",
+        "mallorca": "UCL",
+        "barca": "UCL",
+        "valencia": "UEFA Cup",
+        "celta": "UEFA Cup",
+        "zaragoza": "UEFA Cup"
+      },
+      "europeanParticipationStatus": "verified_next_season_uefa_entrant_list",
+      "europeanParticipationSources": [
+        "https://www.rsssf.org/tabless/span01.html",
+        "https://coeffarchive.com/country/spain/2001-2002/",
+        "https://www.realzaragoza.com/la-gesta-ante-los-galacticos"
+      ],
+      "europeanParticipationNotes": {
+        "madrid": "1st in 2000-01 La Liga",
+        "deportivo": "2nd in 2000-01 La Liga",
+        "mallorca": "3rd in 2000-01 La Liga; qualifying round",
+        "barca": "4th in 2000-01 La Liga; qualifying round",
+        "valencia": "5th in 2000-01 La Liga",
+        "celta": "6th in 2000-01 La Liga",
+        "zaragoza": "2000-01 Copa del Rey winner; league 17th"
+      },
+      "europeanParticipationVerificationNote": "Checked against next-season actual UEFA or Intertoto participants, including title holders, cup winners, fair play and competition-specific exceptions. Historical player tiers remain draft and unapproved.",
+      "europeanParticipationVerifiedAt": "2026-10-29"
     },
     "2001-02": {
       "standings": [
