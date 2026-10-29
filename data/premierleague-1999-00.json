@@ -58,7 +58,7 @@
       "positionRules": "CB 2+1, CM 2+1 for two-CM systems; no CAM",
       "tierAndRank": "all_null",
       "bestXi": "untouched",
-      "knownOmissions": "Ole Gunnar Solskjaer, Dennis Bergkamp and others await role/slot re-assessment",
+      "knownOmissions": "Manchester United Ole Gunnar Solskjær (ST position cap), Liverpool Emile Heskey (January/March transfer), Arsenal three-forward slot exception retained.",
       "correctionReview": {
         "date": "2026-10-30",
         "removed": [
@@ -74,7 +74,106 @@
           "https://dr.statbunker.com/competitions/SeasonAppearances?club_id=34&comp_id=76"
         ],
         "note": "Season membership and low-appearance candidates removed; large outstanding DOB, positions, all-team league starts checks remain."
-      }
+      },
+      "teamCandidateAudit": {
+        "manutd": {
+          "status": "NEEDS_VERIFICATION",
+          "squadReviewed": true,
+          "qualified": true,
+          "formation": "4-4-2",
+          "candidateCount": 15,
+          "sources": [
+            "https://www.11v11.com/teams/manchester-united/tab/players/season/2000/",
+            "https://fbref.com/en/squads/19538871/1999-2000/Manchester-United-Stats"
+          ],
+          "notes": "Yorke/Cole both nominal starters in classic 4-4-2; Solskjær rotational regular must be reconsidered within ST cap."
+        },
+        "arsenal": {
+          "status": "NEEDS_VERIFICATION",
+          "squadReviewed": true,
+          "qualified": true,
+          "formation": "4-4-2",
+          "candidateCount": 18,
+          "sources": [
+            "https://www.11v11.com/teams/arsenal/tab/players/season/2000/comp/1/",
+            "https://fbref.com/en/squads/18bb7c10/1999-2000/Arsenal-Stats"
+          ],
+          "notes": "Henry/Kanu/Bergkamp all reached 23+ league starts and played 4-4-2 striker pairing at different times; retain third ST with recorded slot exception."
+        },
+        "leeds": {
+          "status": "NEEDS_VERIFICATION",
+          "squadReviewed": true,
+          "qualified": true,
+          "formation": "4-4-2",
+          "candidateCount": 15,
+          "sources": [
+            "https://www.11v11.com/teams/leeds-united/tab/players/season/2000/",
+            "https://fbref.com/en/squads/5bfb9659/1999-2000/Leeds-United-Stats"
+          ],
+          "notes": "Woodgate and Radebe primary CB, third Duberry; right defender Gary Kelly / Danny Mills selection requires appearances review."
+        },
+        "liverpool": {
+          "status": "NEEDS_VERIFICATION",
+          "squadReviewed": true,
+          "qualified": true,
+          "formation": "4-4-2",
+          "candidateCount": 16,
+          "sources": [
+            "https://www.11v11.com/teams/liverpool/tab/players/season/2000/",
+            "https://www.lfchistory.net/season-archive/appearances/43"
+          ],
+          "notes": "Song returned to CB pool after 11v11 club archive showed 16 all-competition starts; Fowler and later arriving Heskey need striker quota review."
+        },
+        "chelsea": {
+          "status": "NEEDS_VERIFICATION",
+          "squadReviewed": true,
+          "qualified": true,
+          "formation": "multi-striker / narrow-midfield role pending",
+          "candidateCount": 14,
+          "sources": [
+            "https://www.11v11.com/teams/chelsea/tab/players/season/2000/1000/",
+            "https://fbref.com/en/squads/cff3d9bb/1999-2000/Chelsea-Stats"
+          ],
+          "notes": "Ferrer played 25 league games, Melchiot 5 (one as sub); RB revised to Petrescu+Ferrer; position of wide midfielders remains unresolved."
+        },
+        "leicester": {
+          "status": "NEEDS_VERIFICATION",
+          "squadReviewed": true,
+          "qualified": true,
+          "formation": "three-centre-back / wing-back usage pending",
+          "candidateCount": 14,
+          "sources": [
+            "https://www.11v11.com/teams/leicester-city/tab/players/season/2000/",
+            "https://www.11v11.com/competitions/premier-league/2000/"
+          ],
+          "notes": "Elliott, Taggart, Sinclair/Gilchrist three-back variations: generic LB/RB blanks reflect football structure, not missed audit."
+        },
+        "astonvilla": {
+          "status": "NEEDS_VERIFICATION",
+          "squadReviewed": true,
+          "qualified": true,
+          "formation": "3-5-2 / withdrawn-forward role pending",
+          "candidateCount": 18,
+          "sources": [
+            "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/comp/1/",
+            "https://fbref.com/en/squads/8602292d/1999-2000/c9/Aston-Villa-Stats-Premier-League"
+          ],
+          "notes": "Corrected James 29 (not 38), Enckelman 10; Merson 24 league starts and Carbone 22 restored; striker slot exception explicitly recorded."
+        },
+        "bradford": {
+          "status": "NEEDS_VERIFICATION",
+          "squadReviewed": true,
+          "qualified": true,
+          "formation": "4-4-2 / midfield variations pending",
+          "candidateCount": 15,
+          "sources": [
+            "https://www.11v11.com/teams/bradford-city/tab/players/season/2000/",
+            "https://fbref.com/en/squads/3148d79f/1999-2000/c9/Bradford-City-Stats-Premier-League"
+          ],
+          "notes": "Mills 19 league starts added next to Windass/Saunders; Bradford sources include 11v11 all-competitions and independent PL statistics."
+        }
+      },
+      "auditScope": "All eight 1999-00 UEFA-qualified Premier League clubs inspected against historical season squad and league sources; no club left unstarted. Individual DOB and positional-majority verification outstanding."
     }
   },
   "clubs": [
@@ -644,7 +743,16 @@
         "https://www.11v11.com/teams/manchester-united/tab/players/season/2000/",
         "https://en.wikipedia.org/wiki/1999%E2%80%932000_Manchester_United_F.C._season"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/manchester-united/tab/players/season/2000/",
+        "leagueStatSource": "https://fbref.com/en/squads/19538871/1999-2000/Manchester-United-Stats",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-manutd-002",
@@ -666,7 +774,16 @@
       "sources": [
         "https://www.11v11.com/teams/manchester-united/tab/players/season/2000/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/manchester-united/tab/players/season/2000/",
+        "leagueStatSource": "https://fbref.com/en/squads/19538871/1999-2000/Manchester-United-Stats",
+        "leagueAppearanceVerified": false,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-manutd-003",
@@ -689,7 +806,16 @@
         "https://www.11v11.com/teams/manchester-united/tab/players/season/2000/",
         "https://en.wikipedia.org/wiki/1999%E2%80%932000_Manchester_United_F.C._season"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/manchester-united/tab/players/season/2000/",
+        "leagueStatSource": "https://fbref.com/en/squads/19538871/1999-2000/Manchester-United-Stats",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-manutd-004",
@@ -711,7 +837,16 @@
       "sources": [
         "https://www.11v11.com/teams/manchester-united/tab/players/season/2000/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/manchester-united/tab/players/season/2000/",
+        "leagueStatSource": "https://fbref.com/en/squads/19538871/1999-2000/Manchester-United-Stats",
+        "leagueAppearanceVerified": false,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-manutd-005",
@@ -734,7 +869,16 @@
         "https://www.11v11.com/teams/manchester-united/tab/players/season/2000/",
         "https://en.wikipedia.org/wiki/1999%E2%80%932000_Manchester_United_F.C._season"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/manchester-united/tab/players/season/2000/",
+        "leagueStatSource": "https://fbref.com/en/squads/19538871/1999-2000/Manchester-United-Stats",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-manutd-006",
@@ -756,7 +900,16 @@
       "sources": [
         "https://www.11v11.com/teams/manchester-united/tab/players/season/2000/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/manchester-united/tab/players/season/2000/",
+        "leagueStatSource": "https://fbref.com/en/squads/19538871/1999-2000/Manchester-United-Stats",
+        "leagueAppearanceVerified": false,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-manutd-007",
@@ -779,7 +932,16 @@
         "https://www.11v11.com/teams/manchester-united/tab/players/season/2000/",
         "https://en.wikipedia.org/wiki/1999%E2%80%932000_Manchester_United_F.C._season"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/manchester-united/tab/players/season/2000/",
+        "leagueStatSource": "https://fbref.com/en/squads/19538871/1999-2000/Manchester-United-Stats",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-manutd-008",
@@ -792,16 +954,26 @@
       "role": "backup",
       "tier": null,
       "rank": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
+      "leagueAppearances": 29,
+      "leagueStarts": 25,
+      "leagueMinutes": 2281,
       "appearanceScope": "Premier League only; null = not independently verified",
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/manchester-united/tab/players/season/2000/"
+        "https://www.11v11.com/teams/manchester-united/tab/players/season/2000/",
+        "https://fbref.com/en/squads/19538871/1999-2000/Manchester-United-Stats"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/manchester-united/tab/players/season/2000/",
+        "leagueStatSource": "https://fbref.com/en/squads/19538871/1999-2000/Manchester-United-Stats",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-manutd-009",
@@ -814,16 +986,26 @@
       "role": "starter",
       "tier": null,
       "rank": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
+      "leagueAppearances": 29,
+      "leagueStarts": 28,
+      "leagueMinutes": 2403,
       "appearanceScope": "Premier League only; null = not independently verified",
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/manchester-united/tab/players/season/2000/"
+        "https://www.11v11.com/teams/manchester-united/tab/players/season/2000/",
+        "https://fbref.com/en/squads/19538871/1999-2000/Manchester-United-Stats"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/manchester-united/tab/players/season/2000/",
+        "leagueStatSource": "https://fbref.com/en/squads/19538871/1999-2000/Manchester-United-Stats",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-manutd-010",
@@ -845,7 +1027,16 @@
       "sources": [
         "https://www.11v11.com/teams/manchester-united/tab/players/season/2000/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/manchester-united/tab/players/season/2000/",
+        "leagueStatSource": "https://fbref.com/en/squads/19538871/1999-2000/Manchester-United-Stats",
+        "leagueAppearanceVerified": false,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-manutd-011",
@@ -858,16 +1049,26 @@
       "role": "starter",
       "tier": null,
       "rank": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
+      "leagueAppearances": 31,
+      "leagueStarts": 27,
+      "leagueMinutes": 2396,
       "appearanceScope": "Premier League only; null = not independently verified",
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/manchester-united/tab/players/season/2000/"
+        "https://www.11v11.com/teams/manchester-united/tab/players/season/2000/",
+        "https://fbref.com/en/squads/19538871/1999-2000/Manchester-United-Stats"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/manchester-united/tab/players/season/2000/",
+        "leagueStatSource": "https://fbref.com/en/squads/19538871/1999-2000/Manchester-United-Stats",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-manutd-012",
@@ -880,16 +1081,26 @@
       "role": "starter",
       "tier": null,
       "rank": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
+      "leagueAppearances": 30,
+      "leagueStarts": 30,
+      "leagueMinutes": 2496,
       "appearanceScope": "Premier League only; null = not independently verified",
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/manchester-united/tab/players/season/2000/"
+        "https://www.11v11.com/teams/manchester-united/tab/players/season/2000/",
+        "https://fbref.com/en/squads/19538871/1999-2000/Manchester-United-Stats"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/manchester-united/tab/players/season/2000/",
+        "leagueStatSource": "https://fbref.com/en/squads/19538871/1999-2000/Manchester-United-Stats",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-manutd-013",
@@ -904,15 +1115,25 @@
       "rank": null,
       "leagueAppearances": 31,
       "leagueStarts": 30,
-      "leagueMinutes": null,
+      "leagueMinutes": 2605,
       "appearanceScope": "Premier League only; null = not independently verified",
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
         "https://www.11v11.com/teams/manchester-united/tab/players/season/2000/",
-        "https://en.wikipedia.org/wiki/1999%E2%80%932000_Manchester_United_F.C._season"
+        "https://en.wikipedia.org/wiki/1999%E2%80%932000_Manchester_United_F.C._season",
+        "https://fbref.com/en/squads/19538871/1999-2000/Manchester-United-Stats"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/manchester-united/tab/players/season/2000/",
+        "leagueStatSource": "https://fbref.com/en/squads/19538871/1999-2000/Manchester-United-Stats",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-manutd-014",
@@ -925,16 +1146,26 @@
       "role": "starter",
       "tier": null,
       "rank": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
+      "leagueAppearances": 32,
+      "leagueStarts": 29,
+      "leagueMinutes": 2555,
       "appearanceScope": "Premier League only; null = not independently verified",
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/manchester-united/tab/players/season/2000/"
+        "https://www.11v11.com/teams/manchester-united/tab/players/season/2000/",
+        "https://fbref.com/en/squads/19538871/1999-2000/Manchester-United-Stats"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/manchester-united/tab/players/season/2000/",
+        "leagueStatSource": "https://fbref.com/en/squads/19538871/1999-2000/Manchester-United-Stats",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-manutd-015",
@@ -947,16 +1178,26 @@
       "role": "backup",
       "tier": null,
       "rank": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
+      "leagueAppearances": 28,
+      "leagueStarts": 23,
+      "leagueMinutes": 1990,
       "appearanceScope": "Premier League only; null = not independently verified",
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/manchester-united/tab/players/season/2000/"
+        "https://www.11v11.com/teams/manchester-united/tab/players/season/2000/",
+        "https://fbref.com/en/squads/19538871/1999-2000/Manchester-United-Stats"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/manchester-united/tab/players/season/2000/",
+        "leagueStatSource": "https://fbref.com/en/squads/19538871/1999-2000/Manchester-United-Stats",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-arsenal-016",
@@ -971,15 +1212,26 @@
       "rank": null,
       "leagueAppearances": 24,
       "leagueStarts": 24,
-      "leagueMinutes": null,
+      "leagueMinutes": 2116,
       "appearanceScope": "Premier League only; null = not independently verified",
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
         "https://www.11v11.com/teams/arsenal/tab/players/season/2000/",
-        "https://en.wikipedia.org/wiki/1999%E2%80%932000_Arsenal_F.C._season"
+        "https://en.wikipedia.org/wiki/1999%E2%80%932000_Arsenal_F.C._season",
+        "https://fbref.com/en/squads/18bb7c10/1999-2000/Arsenal-Stats",
+        "https://www.11v11.com/teams/arsenal/tab/players/season/2000/comp/1/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/arsenal/tab/players/season/2000/comp/1/",
+        "leagueStatSource": "https://fbref.com/en/squads/18bb7c10/1999-2000/Arsenal-Stats",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-arsenal-017",
@@ -999,9 +1251,19 @@
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/arsenal/tab/players/season/2000/"
+        "https://www.11v11.com/teams/arsenal/tab/players/season/2000/",
+        "https://www.11v11.com/teams/arsenal/tab/players/season/2000/comp/1/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/arsenal/tab/players/season/2000/comp/1/",
+        "leagueStatSource": "https://fbref.com/en/squads/18bb7c10/1999-2000/Arsenal-Stats",
+        "leagueAppearanceVerified": false,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-arsenal-018",
@@ -1014,16 +1276,27 @@
       "role": "starter",
       "tier": null,
       "rank": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
+      "leagueAppearances": 21,
+      "leagueStarts": 21,
+      "leagueMinutes": 1890,
       "appearanceScope": "Premier League only; null = not independently verified",
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/arsenal/tab/players/season/2000/"
+        "https://www.11v11.com/teams/arsenal/tab/players/season/2000/",
+        "https://fbref.com/en/squads/18bb7c10/1999-2000/Arsenal-Stats",
+        "https://www.11v11.com/teams/arsenal/tab/players/season/2000/comp/1/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/arsenal/tab/players/season/2000/comp/1/",
+        "leagueStatSource": "https://fbref.com/en/squads/18bb7c10/1999-2000/Arsenal-Stats",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-arsenal-019",
@@ -1043,9 +1316,19 @@
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/arsenal/tab/players/season/2000/"
+        "https://www.11v11.com/teams/arsenal/tab/players/season/2000/",
+        "https://www.11v11.com/teams/arsenal/tab/players/season/2000/comp/1/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/arsenal/tab/players/season/2000/comp/1/",
+        "leagueStatSource": "https://fbref.com/en/squads/18bb7c10/1999-2000/Arsenal-Stats",
+        "leagueAppearanceVerified": false,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-arsenal-020",
@@ -1065,9 +1348,19 @@
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/arsenal/tab/players/season/2000/"
+        "https://www.11v11.com/teams/arsenal/tab/players/season/2000/",
+        "https://www.11v11.com/teams/arsenal/tab/players/season/2000/comp/1/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/arsenal/tab/players/season/2000/comp/1/",
+        "leagueStatSource": "https://fbref.com/en/squads/18bb7c10/1999-2000/Arsenal-Stats",
+        "leagueAppearanceVerified": false,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-arsenal-021",
@@ -1080,16 +1373,27 @@
       "role": "starter",
       "tier": null,
       "rank": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
+      "leagueAppearances": 31,
+      "leagueStarts": 23,
+      "leagueMinutes": 2182,
       "appearanceScope": "Premier League only; null = not independently verified",
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/arsenal/tab/players/season/2000/"
+        "https://www.11v11.com/teams/arsenal/tab/players/season/2000/",
+        "https://fbref.com/en/squads/18bb7c10/1999-2000/Arsenal-Stats",
+        "https://www.11v11.com/teams/arsenal/tab/players/season/2000/comp/1/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/arsenal/tab/players/season/2000/comp/1/",
+        "leagueStatSource": "https://fbref.com/en/squads/18bb7c10/1999-2000/Arsenal-Stats",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-arsenal-022",
@@ -1102,16 +1406,27 @@
       "role": "backup",
       "tier": null,
       "rank": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
+      "leagueAppearances": 28,
+      "leagueStarts": 19,
+      "leagueMinutes": 1915,
       "appearanceScope": "Premier League only; null = not independently verified",
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/arsenal/tab/players/season/2000/"
+        "https://www.11v11.com/teams/arsenal/tab/players/season/2000/",
+        "https://fbref.com/en/squads/18bb7c10/1999-2000/Arsenal-Stats",
+        "https://www.11v11.com/teams/arsenal/tab/players/season/2000/comp/1/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/arsenal/tab/players/season/2000/comp/1/",
+        "leagueStatSource": "https://fbref.com/en/squads/18bb7c10/1999-2000/Arsenal-Stats",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-arsenal-023",
@@ -1131,9 +1446,19 @@
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/arsenal/tab/players/season/2000/"
+        "https://www.11v11.com/teams/arsenal/tab/players/season/2000/",
+        "https://www.11v11.com/teams/arsenal/tab/players/season/2000/comp/1/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/arsenal/tab/players/season/2000/comp/1/",
+        "leagueStatSource": "https://fbref.com/en/squads/18bb7c10/1999-2000/Arsenal-Stats",
+        "leagueAppearanceVerified": false,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-arsenal-024",
@@ -1146,16 +1471,27 @@
       "role": "backup",
       "tier": null,
       "rank": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
+      "leagueAppearances": 21,
+      "leagueStarts": 16,
+      "leagueMinutes": 1466,
       "appearanceScope": "Premier League only; null = not independently verified",
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/arsenal/tab/players/season/2000/"
+        "https://www.11v11.com/teams/arsenal/tab/players/season/2000/",
+        "https://fbref.com/en/squads/18bb7c10/1999-2000/Arsenal-Stats",
+        "https://www.11v11.com/teams/arsenal/tab/players/season/2000/comp/1/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/arsenal/tab/players/season/2000/comp/1/",
+        "leagueStatSource": "https://fbref.com/en/squads/18bb7c10/1999-2000/Arsenal-Stats",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-arsenal-025",
@@ -1168,16 +1504,27 @@
       "role": "starter",
       "tier": null,
       "rank": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
+      "leagueAppearances": 26,
+      "leagueStarts": 24,
+      "leagueMinutes": 2057,
       "appearanceScope": "Premier League only; null = not independently verified",
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/arsenal/tab/players/season/2000/"
+        "https://www.11v11.com/teams/arsenal/tab/players/season/2000/",
+        "https://fbref.com/en/squads/18bb7c10/1999-2000/Arsenal-Stats",
+        "https://www.11v11.com/teams/arsenal/tab/players/season/2000/comp/1/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/arsenal/tab/players/season/2000/comp/1/",
+        "leagueStatSource": "https://fbref.com/en/squads/18bb7c10/1999-2000/Arsenal-Stats",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-arsenal-026",
@@ -1197,9 +1544,19 @@
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/arsenal/tab/players/season/2000/"
+        "https://www.11v11.com/teams/arsenal/tab/players/season/2000/",
+        "https://www.11v11.com/teams/arsenal/tab/players/season/2000/comp/1/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/arsenal/tab/players/season/2000/comp/1/",
+        "leagueStatSource": "https://fbref.com/en/squads/18bb7c10/1999-2000/Arsenal-Stats",
+        "leagueAppearanceVerified": false,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-arsenal-027",
@@ -1219,9 +1576,19 @@
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/arsenal/tab/players/season/2000/"
+        "https://www.11v11.com/teams/arsenal/tab/players/season/2000/",
+        "https://www.11v11.com/teams/arsenal/tab/players/season/2000/comp/1/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/arsenal/tab/players/season/2000/comp/1/",
+        "leagueStatSource": "https://fbref.com/en/squads/18bb7c10/1999-2000/Arsenal-Stats",
+        "leagueAppearanceVerified": false,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-arsenal-028",
@@ -1241,9 +1608,19 @@
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/arsenal/tab/players/season/2000/"
+        "https://www.11v11.com/teams/arsenal/tab/players/season/2000/",
+        "https://www.11v11.com/teams/arsenal/tab/players/season/2000/comp/1/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/arsenal/tab/players/season/2000/comp/1/",
+        "leagueStatSource": "https://fbref.com/en/squads/18bb7c10/1999-2000/Arsenal-Stats",
+        "leagueAppearanceVerified": false,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-arsenal-029",
@@ -1256,16 +1633,27 @@
       "role": "starter",
       "tier": null,
       "rank": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
+      "leagueAppearances": 31,
+      "leagueStarts": 22,
+      "leagueMinutes": 1926,
       "appearanceScope": "Premier League only; null = not independently verified",
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/arsenal/tab/players/season/2000/"
+        "https://www.11v11.com/teams/arsenal/tab/players/season/2000/",
+        "https://fbref.com/en/squads/18bb7c10/1999-2000/Arsenal-Stats",
+        "https://www.11v11.com/teams/arsenal/tab/players/season/2000/comp/1/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/arsenal/tab/players/season/2000/comp/1/",
+        "leagueStatSource": "https://fbref.com/en/squads/18bb7c10/1999-2000/Arsenal-Stats",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-arsenal-030",
@@ -1278,16 +1666,27 @@
       "role": "starter",
       "tier": null,
       "rank": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
+      "leagueAppearances": 26,
+      "leagueStarts": 22,
+      "leagueMinutes": 1811,
       "appearanceScope": "Premier League only; null = not independently verified",
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/arsenal/tab/players/season/2000/"
+        "https://www.11v11.com/teams/arsenal/tab/players/season/2000/",
+        "https://fbref.com/en/squads/18bb7c10/1999-2000/Arsenal-Stats",
+        "https://www.11v11.com/teams/arsenal/tab/players/season/2000/comp/1/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/arsenal/tab/players/season/2000/comp/1/",
+        "leagueStatSource": "https://fbref.com/en/squads/18bb7c10/1999-2000/Arsenal-Stats",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-arsenal-031",
@@ -1307,9 +1706,20 @@
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/arsenal/tab/players/season/2000/"
+        "https://www.11v11.com/teams/arsenal/tab/players/season/2000/",
+        "https://www.11v11.com/teams/arsenal/tab/players/season/2000/comp/1/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/arsenal/tab/players/season/2000/comp/1/",
+        "leagueStatSource": "https://fbref.com/en/squads/18bb7c10/1999-2000/Arsenal-Stats",
+        "leagueAppearanceVerified": false,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      },
+      "slotException": "ST oversubscription; team main formation 2+ forwards and rotated starters"
     },
     {
       "id": "pl-1999-00-arsenal-032",
@@ -1322,16 +1732,28 @@
       "role": "backup",
       "tier": null,
       "rank": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
+      "leagueAppearances": 31,
+      "leagueStarts": 24,
+      "leagueMinutes": 2159,
       "appearanceScope": "Premier League only; null = not independently verified",
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/arsenal/tab/players/season/2000/"
+        "https://www.11v11.com/teams/arsenal/tab/players/season/2000/",
+        "https://fbref.com/en/squads/18bb7c10/1999-2000/Arsenal-Stats",
+        "https://www.11v11.com/teams/arsenal/tab/players/season/2000/comp/1/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/arsenal/tab/players/season/2000/comp/1/",
+        "leagueStatSource": "https://fbref.com/en/squads/18bb7c10/1999-2000/Arsenal-Stats",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      },
+      "slotException": "ST oversubscription; team main formation 2+ forwards and rotated starters"
     },
     {
       "id": "pl-1999-00-leeds-033",
@@ -1344,16 +1766,26 @@
       "role": "starter",
       "tier": null,
       "rank": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
+      "leagueAppearances": 38,
+      "leagueStarts": 38,
+      "leagueMinutes": 3420,
       "appearanceScope": "Premier League only; null = not independently verified",
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/leeds-united/tab/players/season/2000/"
+        "https://www.11v11.com/teams/leeds-united/tab/players/season/2000/",
+        "https://fbref.com/en/squads/5bfb9659/1999-2000/Leeds-United-Stats"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/leeds-united/tab/players/season/2000/",
+        "leagueStatSource": "https://fbref.com/en/squads/5bfb9659/1999-2000/Leeds-United-Stats",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-leeds-034",
@@ -1366,16 +1798,26 @@
       "role": "starter",
       "tier": null,
       "rank": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
+      "leagueAppearances": 31,
+      "leagueStarts": 31,
+      "leagueMinutes": 2698,
       "appearanceScope": "Premier League only; null = not independently verified",
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/leeds-united/tab/players/season/2000/"
+        "https://www.11v11.com/teams/leeds-united/tab/players/season/2000/",
+        "https://fbref.com/en/squads/5bfb9659/1999-2000/Leeds-United-Stats"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/leeds-united/tab/players/season/2000/",
+        "leagueStatSource": "https://fbref.com/en/squads/5bfb9659/1999-2000/Leeds-United-Stats",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-leeds-035",
@@ -1388,16 +1830,26 @@
       "role": "starter",
       "tier": null,
       "rank": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
+      "leagueAppearances": 34,
+      "leagueStarts": 32,
+      "leagueMinutes": 2828,
       "appearanceScope": "Premier League only; null = not independently verified",
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/leeds-united/tab/players/season/2000/"
+        "https://www.11v11.com/teams/leeds-united/tab/players/season/2000/",
+        "https://fbref.com/en/squads/5bfb9659/1999-2000/Leeds-United-Stats"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/leeds-united/tab/players/season/2000/",
+        "leagueStatSource": "https://fbref.com/en/squads/5bfb9659/1999-2000/Leeds-United-Stats",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-leeds-036",
@@ -1419,7 +1871,16 @@
       "sources": [
         "https://www.11v11.com/teams/leeds-united/tab/players/season/2000/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/leeds-united/tab/players/season/2000/",
+        "leagueStatSource": "https://fbref.com/en/squads/5bfb9659/1999-2000/Leeds-United-Stats",
+        "leagueAppearanceVerified": false,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-leeds-037",
@@ -1432,16 +1893,26 @@
       "role": "starter",
       "tier": null,
       "rank": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
+      "leagueAppearances": 33,
+      "leagueStarts": 33,
+      "leagueMinutes": 2864,
       "appearanceScope": "Premier League only; null = not independently verified",
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/leeds-united/tab/players/season/2000/"
+        "https://www.11v11.com/teams/leeds-united/tab/players/season/2000/",
+        "https://fbref.com/en/squads/5bfb9659/1999-2000/Leeds-United-Stats"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/leeds-united/tab/players/season/2000/",
+        "leagueStatSource": "https://fbref.com/en/squads/5bfb9659/1999-2000/Leeds-United-Stats",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-leeds-038",
@@ -1454,16 +1925,26 @@
       "role": "starter",
       "tier": null,
       "rank": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
+      "leagueAppearances": 31,
+      "leagueStarts": 28,
+      "leagueMinutes": 2620,
       "appearanceScope": "Premier League only; null = not independently verified",
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/leeds-united/tab/players/season/2000/"
+        "https://www.11v11.com/teams/leeds-united/tab/players/season/2000/",
+        "https://fbref.com/en/squads/5bfb9659/1999-2000/Leeds-United-Stats"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/leeds-united/tab/players/season/2000/",
+        "leagueStatSource": "https://fbref.com/en/squads/5bfb9659/1999-2000/Leeds-United-Stats",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-leeds-039",
@@ -1485,7 +1966,16 @@
       "sources": [
         "https://www.11v11.com/teams/leeds-united/tab/players/season/2000/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/leeds-united/tab/players/season/2000/",
+        "leagueStatSource": "https://fbref.com/en/squads/5bfb9659/1999-2000/Leeds-United-Stats",
+        "leagueAppearanceVerified": false,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-leeds-040",
@@ -1507,7 +1997,16 @@
       "sources": [
         "https://www.11v11.com/teams/leeds-united/tab/players/season/2000/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/leeds-united/tab/players/season/2000/",
+        "leagueStatSource": "https://fbref.com/en/squads/5bfb9659/1999-2000/Leeds-United-Stats",
+        "leagueAppearanceVerified": false,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-leeds-041",
@@ -1520,16 +2019,26 @@
       "role": "starter",
       "tier": null,
       "rank": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
+      "leagueAppearances": 33,
+      "leagueStarts": 31,
+      "leagueMinutes": 2768,
       "appearanceScope": "Premier League only; null = not independently verified",
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/leeds-united/tab/players/season/2000/"
+        "https://www.11v11.com/teams/leeds-united/tab/players/season/2000/",
+        "https://fbref.com/en/squads/5bfb9659/1999-2000/Leeds-United-Stats"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/leeds-united/tab/players/season/2000/",
+        "leagueStatSource": "https://fbref.com/en/squads/5bfb9659/1999-2000/Leeds-United-Stats",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-leeds-042",
@@ -1542,16 +2051,26 @@
       "role": "starter",
       "tier": null,
       "rank": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
+      "leagueAppearances": 29,
+      "leagueStarts": 24,
+      "leagueMinutes": 2229,
       "appearanceScope": "Premier League only; null = not independently verified",
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/leeds-united/tab/players/season/2000/"
+        "https://www.11v11.com/teams/leeds-united/tab/players/season/2000/",
+        "https://fbref.com/en/squads/5bfb9659/1999-2000/Leeds-United-Stats"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/leeds-united/tab/players/season/2000/",
+        "leagueStatSource": "https://fbref.com/en/squads/5bfb9659/1999-2000/Leeds-United-Stats",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-leeds-043",
@@ -1573,7 +2092,16 @@
       "sources": [
         "https://www.11v11.com/teams/leeds-united/tab/players/season/2000/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/leeds-united/tab/players/season/2000/",
+        "leagueStatSource": "https://fbref.com/en/squads/5bfb9659/1999-2000/Leeds-United-Stats",
+        "leagueAppearanceVerified": false,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-leeds-044",
@@ -1586,16 +2114,26 @@
       "role": "starter",
       "tier": null,
       "rank": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
+      "leagueAppearances": 36,
+      "leagueStarts": 36,
+      "leagueMinutes": 3193,
       "appearanceScope": "Premier League only; null = not independently verified",
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/leeds-united/tab/players/season/2000/"
+        "https://www.11v11.com/teams/leeds-united/tab/players/season/2000/",
+        "https://fbref.com/en/squads/5bfb9659/1999-2000/Leeds-United-Stats"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/leeds-united/tab/players/season/2000/",
+        "leagueStatSource": "https://fbref.com/en/squads/5bfb9659/1999-2000/Leeds-United-Stats",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-leeds-045",
@@ -1618,7 +2156,16 @@
         "https://www.11v11.com/teams/leeds-united/tab/players/season/2000/",
         "https://lufchistory.com/players/jason-wilcox-1971-07-15/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/leeds-united/tab/players/season/2000/",
+        "leagueStatSource": "https://fbref.com/en/squads/5bfb9659/1999-2000/Leeds-United-Stats",
+        "leagueAppearanceVerified": false,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-leeds-046",
@@ -1631,16 +2178,26 @@
       "role": "starter",
       "tier": null,
       "rank": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
+      "leagueAppearances": 34,
+      "leagueStarts": 32,
+      "leagueMinutes": 2339,
       "appearanceScope": "Premier League only; null = not independently verified",
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/leeds-united/tab/players/season/2000/"
+        "https://www.11v11.com/teams/leeds-united/tab/players/season/2000/",
+        "https://fbref.com/en/squads/5bfb9659/1999-2000/Leeds-United-Stats"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/leeds-united/tab/players/season/2000/",
+        "leagueStatSource": "https://fbref.com/en/squads/5bfb9659/1999-2000/Leeds-United-Stats",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-leeds-047",
@@ -1662,7 +2219,16 @@
       "sources": [
         "https://www.11v11.com/teams/leeds-united/tab/players/season/2000/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/leeds-united/tab/players/season/2000/",
+        "leagueStatSource": "https://fbref.com/en/squads/5bfb9659/1999-2000/Leeds-United-Stats",
+        "leagueAppearanceVerified": false,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-liverpool-048",
@@ -1687,7 +2253,16 @@
         "https://www.lfchistory.net/season-archive/appearances/43",
         "https://fbref.com/en/players/dc8d38a2/Sander-Westerveld"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/liverpool/tab/players/season/2000/",
+        "leagueStatSource": "https://www.lfchistory.net/season-archive/appearances/43",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-liverpool-050",
@@ -1710,7 +2285,16 @@
         "https://www.11v11.com/teams/liverpool/tab/players/season/2000/",
         "https://www.lfchistory.net/season-archive/appearances/43"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/liverpool/tab/players/season/2000/",
+        "leagueStatSource": "https://www.lfchistory.net/season-archive/appearances/43",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-liverpool-051",
@@ -1733,7 +2317,16 @@
         "https://www.11v11.com/teams/liverpool/tab/players/season/2000/",
         "https://www.lfchistory.net/season-archive/appearances/43"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/liverpool/tab/players/season/2000/",
+        "leagueStatSource": "https://www.lfchistory.net/season-archive/appearances/43",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-liverpool-053",
@@ -1756,7 +2349,16 @@
         "https://www.11v11.com/teams/liverpool/tab/players/season/2000/",
         "https://www.lfchistory.net/season-archive/appearances/43"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/liverpool/tab/players/season/2000/",
+        "leagueStatSource": "https://www.lfchistory.net/season-archive/appearances/43",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-liverpool-054",
@@ -1779,7 +2381,16 @@
         "https://www.11v11.com/teams/liverpool/tab/players/season/2000/",
         "https://www.lfchistory.net/season-archive/appearances/43"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/liverpool/tab/players/season/2000/",
+        "leagueStatSource": "https://www.lfchistory.net/season-archive/appearances/43",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-liverpool-055",
@@ -1802,7 +2413,16 @@
         "https://www.11v11.com/teams/liverpool/tab/players/season/2000/",
         "https://www.lfchistory.net/season-archive/appearances/43"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/liverpool/tab/players/season/2000/",
+        "leagueStatSource": "https://www.lfchistory.net/season-archive/appearances/43",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-liverpool-056",
@@ -1826,7 +2446,16 @@
         "https://www.lfchistory.net/season-archive/appearances/43",
         "https://www.soccerbase.com/players/player.sd?player_id=14478"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/liverpool/tab/players/season/2000/",
+        "leagueStatSource": "https://www.lfchistory.net/season-archive/appearances/43",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-liverpool-057",
@@ -1849,7 +2478,16 @@
         "https://www.11v11.com/teams/liverpool/tab/players/season/2000/",
         "https://www.lfchistory.net/season-archive/appearances/43"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/liverpool/tab/players/season/2000/",
+        "leagueStatSource": "https://www.lfchistory.net/season-archive/appearances/43",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-liverpool-058",
@@ -1872,7 +2510,16 @@
         "https://www.11v11.com/teams/liverpool/tab/players/season/2000/",
         "https://www.lfchistory.net/season-archive/appearances/43"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/liverpool/tab/players/season/2000/",
+        "leagueStatSource": "https://www.lfchistory.net/season-archive/appearances/43",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-liverpool-059",
@@ -1895,7 +2542,16 @@
         "https://www.11v11.com/teams/liverpool/tab/players/season/2000/",
         "https://www.lfchistory.net/season-archive/appearances/43"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/liverpool/tab/players/season/2000/",
+        "leagueStatSource": "https://www.lfchistory.net/season-archive/appearances/43",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-liverpool-060",
@@ -1918,7 +2574,16 @@
         "https://www.11v11.com/teams/liverpool/tab/players/season/2000/",
         "https://www.lfchistory.net/season-archive/appearances/43"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/liverpool/tab/players/season/2000/",
+        "leagueStatSource": "https://www.lfchistory.net/season-archive/appearances/43",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-liverpool-061",
@@ -1941,7 +2606,16 @@
         "https://www.11v11.com/teams/liverpool/tab/players/season/2000/",
         "https://www.lfchistory.net/season-archive/appearances/43"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/liverpool/tab/players/season/2000/",
+        "leagueStatSource": "https://www.lfchistory.net/season-archive/appearances/43",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-liverpool-062",
@@ -1964,7 +2638,16 @@
         "https://www.11v11.com/teams/liverpool/tab/players/season/2000/",
         "https://www.lfchistory.net/season-archive/appearances/43"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/liverpool/tab/players/season/2000/",
+        "leagueStatSource": "https://www.lfchistory.net/season-archive/appearances/43",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-liverpool-063",
@@ -1987,7 +2670,16 @@
         "https://www.11v11.com/teams/liverpool/tab/players/season/2000/",
         "https://www.lfchistory.net/season-archive/appearances/43"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/liverpool/tab/players/season/2000/",
+        "leagueStatSource": "https://www.lfchistory.net/season-archive/appearances/43",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-liverpool-064",
@@ -2010,7 +2702,16 @@
         "https://www.11v11.com/teams/liverpool/tab/players/season/2000/",
         "https://www.lfchistory.net/season-archive/appearances/43"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/liverpool/tab/players/season/2000/",
+        "leagueStatSource": "https://www.lfchistory.net/season-archive/appearances/43",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-chelsea-065",
@@ -2023,16 +2724,27 @@
       "role": "starter",
       "tier": null,
       "rank": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
+      "leagueAppearances": 37,
+      "leagueStarts": 37,
+      "leagueMinutes": 3330,
       "appearanceScope": "Premier League only; null = not independently verified",
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/chelsea/tab/players/season/2000/"
+        "https://www.11v11.com/teams/chelsea/tab/players/season/2000/",
+        "https://fbref.com/en/squads/cff3d9bb/1999-2000/Chelsea-Stats",
+        "https://www.11v11.com/teams/chelsea/tab/players/season/2000/1000/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/chelsea/tab/players/season/2000/1000/",
+        "leagueStatSource": "https://fbref.com/en/squads/cff3d9bb/1999-2000/Chelsea-Stats",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-chelsea-067",
@@ -2045,16 +2757,27 @@
       "role": "starter",
       "tier": null,
       "rank": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
+      "leagueAppearances": 23,
+      "leagueStarts": 23,
+      "leagueMinutes": 1928,
       "appearanceScope": "Premier League only; null = not independently verified",
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/chelsea/tab/players/season/2000/"
+        "https://www.11v11.com/teams/chelsea/tab/players/season/2000/",
+        "https://fbref.com/en/squads/cff3d9bb/1999-2000/Chelsea-Stats",
+        "https://www.11v11.com/teams/chelsea/tab/players/season/2000/1000/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/chelsea/tab/players/season/2000/1000/",
+        "leagueStatSource": "https://fbref.com/en/squads/cff3d9bb/1999-2000/Chelsea-Stats",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-chelsea-068",
@@ -2067,16 +2790,27 @@
       "role": "starter",
       "tier": null,
       "rank": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
+      "leagueAppearances": 28,
+      "leagueStarts": 28,
+      "leagueMinutes": 2308,
       "appearanceScope": "Premier League only; null = not independently verified",
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/chelsea/tab/players/season/2000/"
+        "https://www.11v11.com/teams/chelsea/tab/players/season/2000/",
+        "https://fbref.com/en/squads/cff3d9bb/1999-2000/Chelsea-Stats",
+        "https://www.11v11.com/teams/chelsea/tab/players/season/2000/1000/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/chelsea/tab/players/season/2000/1000/",
+        "leagueStatSource": "https://fbref.com/en/squads/cff3d9bb/1999-2000/Chelsea-Stats",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-chelsea-069",
@@ -2096,9 +2830,19 @@
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/chelsea/tab/players/season/2000/"
+        "https://www.11v11.com/teams/chelsea/tab/players/season/2000/",
+        "https://www.11v11.com/teams/chelsea/tab/players/season/2000/1000/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/chelsea/tab/players/season/2000/1000/",
+        "leagueStatSource": "https://fbref.com/en/squads/cff3d9bb/1999-2000/Chelsea-Stats",
+        "leagueAppearanceVerified": false,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-chelsea-070",
@@ -2111,16 +2855,27 @@
       "role": "starter",
       "tier": null,
       "rank": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
+      "leagueAppearances": 25,
+      "leagueStarts": 23,
+      "leagueMinutes": 2057,
       "appearanceScope": "Premier League only; null = not independently verified",
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/chelsea/tab/players/season/2000/"
+        "https://www.11v11.com/teams/chelsea/tab/players/season/2000/",
+        "https://fbref.com/en/squads/cff3d9bb/1999-2000/Chelsea-Stats",
+        "https://www.11v11.com/teams/chelsea/tab/players/season/2000/1000/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/chelsea/tab/players/season/2000/1000/",
+        "leagueStatSource": "https://fbref.com/en/squads/cff3d9bb/1999-2000/Chelsea-Stats",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-chelsea-071",
@@ -2140,9 +2895,19 @@
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/chelsea/tab/players/season/2000/"
+        "https://www.11v11.com/teams/chelsea/tab/players/season/2000/",
+        "https://www.11v11.com/teams/chelsea/tab/players/season/2000/1000/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/chelsea/tab/players/season/2000/1000/",
+        "leagueStatSource": "https://fbref.com/en/squads/cff3d9bb/1999-2000/Chelsea-Stats",
+        "leagueAppearanceVerified": false,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-chelsea-072",
@@ -2155,38 +2920,27 @@
       "role": "starter",
       "tier": null,
       "rank": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
+      "leagueAppearances": 29,
+      "leagueStarts": 24,
+      "leagueMinutes": 1989,
       "appearanceScope": "Premier League only; null = not independently verified",
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/chelsea/tab/players/season/2000/"
+        "https://www.11v11.com/teams/chelsea/tab/players/season/2000/",
+        "https://fbref.com/en/squads/cff3d9bb/1999-2000/Chelsea-Stats",
+        "https://www.11v11.com/teams/chelsea/tab/players/season/2000/1000/"
       ],
-      "candidateStatus": "draft"
-    },
-    {
-      "id": "pl-1999-00-chelsea-073",
-      "name": "Mario Melchiot",
-      "nameKo": "마리오 멜히오트",
-      "born": null,
-      "club": "chelsea",
-      "clubNameOriginal": "Chelsea FC",
-      "position": "RB",
-      "role": "backup",
-      "tier": null,
-      "rank": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
-      "appearanceScope": "Premier League only; null = not independently verified",
-      "positionVerification": "needs_review",
-      "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
-      "sources": [
-        "https://www.11v11.com/teams/chelsea/tab/players/season/2000/"
-      ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/chelsea/tab/players/season/2000/1000/",
+        "leagueStatSource": "https://fbref.com/en/squads/cff3d9bb/1999-2000/Chelsea-Stats",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-chelsea-074",
@@ -2199,16 +2953,27 @@
       "role": "starter",
       "tier": null,
       "rank": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
+      "leagueAppearances": 27,
+      "leagueStarts": 24,
+      "leagueMinutes": 2054,
       "appearanceScope": "Premier League only; null = not independently verified",
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/chelsea/tab/players/season/2000/"
+        "https://www.11v11.com/teams/chelsea/tab/players/season/2000/",
+        "https://fbref.com/en/squads/cff3d9bb/1999-2000/Chelsea-Stats",
+        "https://www.11v11.com/teams/chelsea/tab/players/season/2000/1000/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/chelsea/tab/players/season/2000/1000/",
+        "leagueStatSource": "https://fbref.com/en/squads/cff3d9bb/1999-2000/Chelsea-Stats",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-chelsea-075",
@@ -2221,16 +2986,27 @@
       "role": "starter",
       "tier": null,
       "rank": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
+      "leagueAppearances": 30,
+      "leagueStarts": 29,
+      "leagueMinutes": 2607,
       "appearanceScope": "Premier League only; null = not independently verified",
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/chelsea/tab/players/season/2000/"
+        "https://www.11v11.com/teams/chelsea/tab/players/season/2000/",
+        "https://fbref.com/en/squads/cff3d9bb/1999-2000/Chelsea-Stats",
+        "https://www.11v11.com/teams/chelsea/tab/players/season/2000/1000/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/chelsea/tab/players/season/2000/1000/",
+        "leagueStatSource": "https://fbref.com/en/squads/cff3d9bb/1999-2000/Chelsea-Stats",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-chelsea-076",
@@ -2250,9 +3026,19 @@
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/chelsea/tab/players/season/2000/"
+        "https://www.11v11.com/teams/chelsea/tab/players/season/2000/",
+        "https://www.11v11.com/teams/chelsea/tab/players/season/2000/1000/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/chelsea/tab/players/season/2000/1000/",
+        "leagueStatSource": "https://fbref.com/en/squads/cff3d9bb/1999-2000/Chelsea-Stats",
+        "leagueAppearanceVerified": false,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-chelsea-077",
@@ -2265,16 +3051,27 @@
       "role": "backup",
       "tier": null,
       "rank": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
+      "leagueAppearances": 33,
+      "leagueStarts": 25,
+      "leagueMinutes": 2347,
       "appearanceScope": "Premier League only; null = not independently verified",
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/chelsea/tab/players/season/2000/"
+        "https://www.11v11.com/teams/chelsea/tab/players/season/2000/",
+        "https://fbref.com/en/squads/cff3d9bb/1999-2000/Chelsea-Stats",
+        "https://www.11v11.com/teams/chelsea/tab/players/season/2000/1000/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/chelsea/tab/players/season/2000/1000/",
+        "leagueStatSource": "https://fbref.com/en/squads/cff3d9bb/1999-2000/Chelsea-Stats",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-chelsea-078",
@@ -2294,9 +3091,19 @@
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/chelsea/tab/players/season/2000/"
+        "https://www.11v11.com/teams/chelsea/tab/players/season/2000/",
+        "https://www.11v11.com/teams/chelsea/tab/players/season/2000/1000/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/chelsea/tab/players/season/2000/1000/",
+        "leagueStatSource": "https://fbref.com/en/squads/cff3d9bb/1999-2000/Chelsea-Stats",
+        "leagueAppearanceVerified": false,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-chelsea-079",
@@ -2309,16 +3116,27 @@
       "role": "backup",
       "tier": null,
       "rank": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
+      "leagueAppearances": 33,
+      "leagueStarts": 25,
+      "leagueMinutes": 2229,
       "appearanceScope": "Premier League only; null = not independently verified",
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/chelsea/tab/players/season/2000/"
+        "https://www.11v11.com/teams/chelsea/tab/players/season/2000/",
+        "https://fbref.com/en/squads/cff3d9bb/1999-2000/Chelsea-Stats",
+        "https://www.11v11.com/teams/chelsea/tab/players/season/2000/1000/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/chelsea/tab/players/season/2000/1000/",
+        "leagueStatSource": "https://fbref.com/en/squads/cff3d9bb/1999-2000/Chelsea-Stats",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-leicester-080",
@@ -2341,7 +3159,16 @@
         "https://www.11v11.com/teams/leicester-city/tab/players/season/2000/",
         "https://en.wikipedia.org/wiki/1999%E2%80%932000_Leicester_City_F.C._season"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/leicester-city/tab/players/season/2000/",
+        "leagueStatSource": "https://www.11v11.com/competitions/premier-league/2000/",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-leicester-081",
@@ -2363,7 +3190,16 @@
       "sources": [
         "https://www.11v11.com/teams/leicester-city/tab/players/season/2000/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/leicester-city/tab/players/season/2000/",
+        "leagueStatSource": "https://www.11v11.com/competitions/premier-league/2000/",
+        "leagueAppearanceVerified": false,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-leicester-082",
@@ -2385,7 +3221,16 @@
       "sources": [
         "https://www.11v11.com/teams/leicester-city/tab/players/season/2000/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/leicester-city/tab/players/season/2000/",
+        "leagueStatSource": "https://www.11v11.com/competitions/premier-league/2000/",
+        "leagueAppearanceVerified": false,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-leicester-083",
@@ -2407,7 +3252,16 @@
       "sources": [
         "https://www.11v11.com/teams/leicester-city/tab/players/season/2000/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/leicester-city/tab/players/season/2000/",
+        "leagueStatSource": "https://www.11v11.com/competitions/premier-league/2000/",
+        "leagueAppearanceVerified": false,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-leicester-084",
@@ -2429,7 +3283,16 @@
       "sources": [
         "https://www.11v11.com/teams/leicester-city/tab/players/season/2000/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/leicester-city/tab/players/season/2000/",
+        "leagueStatSource": "https://www.11v11.com/competitions/premier-league/2000/",
+        "leagueAppearanceVerified": false,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-leicester-085",
@@ -2451,7 +3314,16 @@
       "sources": [
         "https://www.11v11.com/teams/leicester-city/tab/players/season/2000/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/leicester-city/tab/players/season/2000/",
+        "leagueStatSource": "https://www.11v11.com/competitions/premier-league/2000/",
+        "leagueAppearanceVerified": false,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-leicester-086",
@@ -2473,7 +3345,16 @@
       "sources": [
         "https://www.11v11.com/teams/leicester-city/tab/players/season/2000/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/leicester-city/tab/players/season/2000/",
+        "leagueStatSource": "https://www.11v11.com/competitions/premier-league/2000/",
+        "leagueAppearanceVerified": false,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-leicester-087",
@@ -2495,7 +3376,16 @@
       "sources": [
         "https://www.11v11.com/teams/leicester-city/tab/players/season/2000/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/leicester-city/tab/players/season/2000/",
+        "leagueStatSource": "https://www.11v11.com/competitions/premier-league/2000/",
+        "leagueAppearanceVerified": false,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-leicester-088",
@@ -2517,7 +3407,16 @@
       "sources": [
         "https://www.11v11.com/teams/leicester-city/tab/players/season/2000/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/leicester-city/tab/players/season/2000/",
+        "leagueStatSource": "https://www.11v11.com/competitions/premier-league/2000/",
+        "leagueAppearanceVerified": false,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-leicester-089",
@@ -2539,7 +3438,16 @@
       "sources": [
         "https://www.11v11.com/teams/leicester-city/tab/players/season/2000/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/leicester-city/tab/players/season/2000/",
+        "leagueStatSource": "https://www.11v11.com/competitions/premier-league/2000/",
+        "leagueAppearanceVerified": false,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-leicester-090",
@@ -2561,7 +3469,16 @@
       "sources": [
         "https://www.11v11.com/teams/leicester-city/tab/players/season/2000/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/leicester-city/tab/players/season/2000/",
+        "leagueStatSource": "https://www.11v11.com/competitions/premier-league/2000/",
+        "leagueAppearanceVerified": false,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-leicester-091",
@@ -2583,7 +3500,16 @@
       "sources": [
         "https://www.11v11.com/teams/leicester-city/tab/players/season/2000/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/leicester-city/tab/players/season/2000/",
+        "leagueStatSource": "https://www.11v11.com/competitions/premier-league/2000/",
+        "leagueAppearanceVerified": false,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-leicester-092",
@@ -2605,7 +3531,16 @@
       "sources": [
         "https://www.11v11.com/teams/leicester-city/tab/players/season/2000/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/leicester-city/tab/players/season/2000/",
+        "leagueStatSource": "https://www.11v11.com/competitions/premier-league/2000/",
+        "leagueAppearanceVerified": false,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-leicester-093",
@@ -2627,7 +3562,16 @@
       "sources": [
         "https://www.11v11.com/teams/leicester-city/tab/players/season/2000/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/leicester-city/tab/players/season/2000/",
+        "leagueStatSource": "https://www.11v11.com/competitions/premier-league/2000/",
+        "leagueAppearanceVerified": false,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-astonvilla-094",
@@ -2640,17 +3584,28 @@
       "role": "starter",
       "tier": null,
       "rank": null,
-      "leagueAppearances": 38,
-      "leagueStarts": 38,
-      "leagueMinutes": null,
+      "leagueAppearances": 29,
+      "leagueStarts": 29,
+      "leagueMinutes": 2565,
       "appearanceScope": "Premier League only; null = not independently verified",
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
         "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/",
-        "https://en.wikipedia.org/wiki/1999%E2%80%932000_Aston_Villa_F.C._season"
+        "https://en.wikipedia.org/wiki/1999%E2%80%932000_Aston_Villa_F.C._season",
+        "https://fbref.com/en/squads/8602292d/1999-2000/c9/Aston-Villa-Stats-Premier-League",
+        "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/comp/1/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/comp/1/",
+        "leagueStatSource": "https://fbref.com/en/squads/8602292d/1999-2000/c9/Aston-Villa-Stats-Premier-League",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-astonvilla-096",
@@ -2670,9 +3625,19 @@
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/"
+        "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/",
+        "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/comp/1/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/comp/1/",
+        "leagueStatSource": "https://fbref.com/en/squads/8602292d/1999-2000/c9/Aston-Villa-Stats-Premier-League",
+        "leagueAppearanceVerified": false,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-astonvilla-097",
@@ -2692,9 +3657,19 @@
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/"
+        "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/",
+        "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/comp/1/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/comp/1/",
+        "leagueStatSource": "https://fbref.com/en/squads/8602292d/1999-2000/c9/Aston-Villa-Stats-Premier-League",
+        "leagueAppearanceVerified": false,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-astonvilla-098",
@@ -2715,9 +3690,19 @@
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
         "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/",
-        "https://fbref.com/en/players/2903aa4a/Colin-Calderwood"
+        "https://fbref.com/en/players/2903aa4a/Colin-Calderwood",
+        "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/comp/1/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/comp/1/",
+        "leagueStatSource": "https://fbref.com/en/squads/8602292d/1999-2000/c9/Aston-Villa-Stats-Premier-League",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-astonvilla-099",
@@ -2737,9 +3722,19 @@
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/"
+        "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/",
+        "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/comp/1/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/comp/1/",
+        "leagueStatSource": "https://fbref.com/en/squads/8602292d/1999-2000/c9/Aston-Villa-Stats-Premier-League",
+        "leagueAppearanceVerified": false,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-astonvilla-100",
@@ -2752,16 +3747,27 @@
       "role": "starter",
       "tier": null,
       "rank": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
+      "leagueAppearances": 28,
+      "leagueStarts": 25,
+      "leagueMinutes": 2291,
       "appearanceScope": "Premier League only; null = not independently verified",
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/"
+        "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/",
+        "https://fbref.com/en/squads/8602292d/1999-2000/c9/Aston-Villa-Stats-Premier-League",
+        "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/comp/1/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/comp/1/",
+        "leagueStatSource": "https://fbref.com/en/squads/8602292d/1999-2000/c9/Aston-Villa-Stats-Premier-League",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-astonvilla-101",
@@ -2774,16 +3780,27 @@
       "role": "backup",
       "tier": null,
       "rank": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
+      "leagueAppearances": 14,
+      "leagueStarts": 13,
+      "leagueMinutes": 1084,
       "appearanceScope": "Premier League only; null = not independently verified",
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/"
+        "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/",
+        "https://fbref.com/en/squads/8602292d/1999-2000/c9/Aston-Villa-Stats-Premier-League",
+        "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/comp/1/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/comp/1/",
+        "leagueStatSource": "https://fbref.com/en/squads/8602292d/1999-2000/c9/Aston-Villa-Stats-Premier-League",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-astonvilla-102",
@@ -2803,9 +3820,19 @@
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/"
+        "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/",
+        "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/comp/1/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/comp/1/",
+        "leagueStatSource": "https://fbref.com/en/squads/8602292d/1999-2000/c9/Aston-Villa-Stats-Premier-League",
+        "leagueAppearanceVerified": false,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-astonvilla-103",
@@ -2818,16 +3845,27 @@
       "role": "starter",
       "tier": null,
       "rank": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
+      "leagueAppearances": 29,
+      "leagueStarts": 25,
+      "leagueMinutes": 2343,
       "appearanceScope": "Premier League only; null = not independently verified",
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/"
+        "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/",
+        "https://fbref.com/en/squads/8602292d/1999-2000/c9/Aston-Villa-Stats-Premier-League",
+        "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/comp/1/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/comp/1/",
+        "leagueStatSource": "https://fbref.com/en/squads/8602292d/1999-2000/c9/Aston-Villa-Stats-Premier-League",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-astonvilla-104",
@@ -2847,9 +3885,19 @@
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/"
+        "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/",
+        "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/comp/1/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/comp/1/",
+        "leagueStatSource": "https://fbref.com/en/squads/8602292d/1999-2000/c9/Aston-Villa-Stats-Premier-League",
+        "leagueAppearanceVerified": false,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-astonvilla-105",
@@ -2862,16 +3910,27 @@
       "role": "backup",
       "tier": null,
       "rank": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
+      "leagueAppearances": 29,
+      "leagueStarts": 18,
+      "leagueMinutes": 1679,
       "appearanceScope": "Premier League only; null = not independently verified",
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/"
+        "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/",
+        "https://fbref.com/en/squads/8602292d/1999-2000/c9/Aston-Villa-Stats-Premier-League",
+        "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/comp/1/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/comp/1/",
+        "leagueStatSource": "https://fbref.com/en/squads/8602292d/1999-2000/c9/Aston-Villa-Stats-Premier-League",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-astonvilla-106",
@@ -2884,16 +3943,27 @@
       "role": "starter",
       "tier": null,
       "rank": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
+      "leagueAppearances": 21,
+      "leagueStarts": 16,
+      "leagueMinutes": 1396,
       "appearanceScope": "Premier League only; null = not independently verified",
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/"
+        "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/",
+        "https://fbref.com/en/squads/8602292d/1999-2000/c9/Aston-Villa-Stats-Premier-League",
+        "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/comp/1/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/comp/1/",
+        "leagueStatSource": "https://fbref.com/en/squads/8602292d/1999-2000/c9/Aston-Villa-Stats-Premier-League",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-astonvilla-107",
@@ -2906,16 +3976,27 @@
       "role": "starter",
       "tier": null,
       "rank": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
+      "leagueAppearances": 24,
+      "leagueStarts": 10,
+      "leagueMinutes": 1096,
       "appearanceScope": "Premier League only; null = not independently verified",
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/"
+        "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/",
+        "https://fbref.com/en/squads/8602292d/1999-2000/c9/Aston-Villa-Stats-Premier-League",
+        "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/comp/1/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/comp/1/",
+        "leagueStatSource": "https://fbref.com/en/squads/8602292d/1999-2000/c9/Aston-Villa-Stats-Premier-League",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-astonvilla-108",
@@ -2928,16 +4009,28 @@
       "role": "starter",
       "tier": null,
       "rank": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
+      "leagueAppearances": 26,
+      "leagueStarts": 23,
+      "leagueMinutes": 2033,
       "appearanceScope": "Premier League only; null = not independently verified",
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/"
+        "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/",
+        "https://fbref.com/en/squads/8602292d/1999-2000/c9/Aston-Villa-Stats-Premier-League",
+        "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/comp/1/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/comp/1/",
+        "leagueStatSource": "https://fbref.com/en/squads/8602292d/1999-2000/c9/Aston-Villa-Stats-Premier-League",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      },
+      "slotException": "ST oversubscription; team main formation 2+ forwards and rotated starters"
     },
     {
       "id": "pl-1999-00-astonvilla-109",
@@ -2950,16 +4043,28 @@
       "role": "backup",
       "tier": null,
       "rank": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
+      "leagueAppearances": 33,
+      "leagueStarts": 27,
+      "leagueMinutes": 2379,
       "appearanceScope": "Premier League only; null = not independently verified",
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/"
+        "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/",
+        "https://fbref.com/en/squads/8602292d/1999-2000/c9/Aston-Villa-Stats-Premier-League",
+        "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/comp/1/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/comp/1/",
+        "leagueStatSource": "https://fbref.com/en/squads/8602292d/1999-2000/c9/Aston-Villa-Stats-Premier-League",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      },
+      "slotException": "ST oversubscription; team main formation 2+ forwards and rotated starters"
     },
     {
       "id": "pl-1999-00-bradford-110",
@@ -2972,16 +4077,26 @@
       "role": "starter",
       "tier": null,
       "rank": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
+      "leagueAppearances": 21,
+      "leagueStarts": 21,
+      "leagueMinutes": 1874,
       "appearanceScope": "Premier League only; null = not independently verified",
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/bradford-city/tab/players/season/2000/"
+        "https://www.11v11.com/teams/bradford-city/tab/players/season/2000/",
+        "https://fbref.com/en/squads/3148d79f/1999-2000/c9/Bradford-City-Stats-Premier-League"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/bradford-city/tab/players/season/2000/",
+        "leagueStatSource": "https://fbref.com/en/squads/3148d79f/1999-2000/c9/Bradford-City-Stats-Premier-League",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-bradford-111",
@@ -2994,16 +4109,26 @@
       "role": "backup",
       "tier": null,
       "rank": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
+      "leagueAppearances": 11,
+      "leagueStarts": 11,
+      "leagueMinutes": 990,
       "appearanceScope": "Premier League only; null = not independently verified",
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/bradford-city/tab/players/season/2000/"
+        "https://www.11v11.com/teams/bradford-city/tab/players/season/2000/",
+        "https://fbref.com/en/squads/3148d79f/1999-2000/c9/Bradford-City-Stats-Premier-League"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/bradford-city/tab/players/season/2000/",
+        "leagueStatSource": "https://fbref.com/en/squads/3148d79f/1999-2000/c9/Bradford-City-Stats-Premier-League",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-bradford-112",
@@ -3025,7 +4150,16 @@
       "sources": [
         "https://www.11v11.com/teams/bradford-city/tab/players/season/2000/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/bradford-city/tab/players/season/2000/",
+        "leagueStatSource": "https://fbref.com/en/squads/3148d79f/1999-2000/c9/Bradford-City-Stats-Premier-League",
+        "leagueAppearanceVerified": false,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-bradford-113",
@@ -3047,7 +4181,16 @@
       "sources": [
         "https://www.11v11.com/teams/bradford-city/tab/players/season/2000/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/bradford-city/tab/players/season/2000/",
+        "leagueStatSource": "https://fbref.com/en/squads/3148d79f/1999-2000/c9/Bradford-City-Stats-Premier-League",
+        "leagueAppearanceVerified": false,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-bradford-114",
@@ -3060,16 +4203,26 @@
       "role": "backup",
       "tier": null,
       "rank": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
+      "leagueAppearances": 14,
+      "leagueStarts": 11,
+      "leagueMinutes": 979,
       "appearanceScope": "Premier League only; null = not independently verified",
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/bradford-city/tab/players/season/2000/"
+        "https://www.11v11.com/teams/bradford-city/tab/players/season/2000/",
+        "https://fbref.com/en/squads/3148d79f/1999-2000/c9/Bradford-City-Stats-Premier-League"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/bradford-city/tab/players/season/2000/",
+        "leagueStatSource": "https://fbref.com/en/squads/3148d79f/1999-2000/c9/Bradford-City-Stats-Premier-League",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-bradford-115",
@@ -3082,16 +4235,26 @@
       "role": "starter",
       "tier": null,
       "rank": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
+      "leagueAppearances": 24,
+      "leagueStarts": 22,
+      "leagueMinutes": 1859,
       "appearanceScope": "Premier League only; null = not independently verified",
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/bradford-city/tab/players/season/2000/"
+        "https://www.11v11.com/teams/bradford-city/tab/players/season/2000/",
+        "https://fbref.com/en/squads/3148d79f/1999-2000/c9/Bradford-City-Stats-Premier-League"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/bradford-city/tab/players/season/2000/",
+        "leagueStatSource": "https://fbref.com/en/squads/3148d79f/1999-2000/c9/Bradford-City-Stats-Premier-League",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-bradford-116",
@@ -3113,7 +4276,16 @@
       "sources": [
         "https://www.11v11.com/teams/bradford-city/tab/players/season/2000/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/bradford-city/tab/players/season/2000/",
+        "leagueStatSource": "https://fbref.com/en/squads/3148d79f/1999-2000/c9/Bradford-City-Stats-Premier-League",
+        "leagueAppearanceVerified": false,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-bradford-117",
@@ -3135,7 +4307,16 @@
       "sources": [
         "https://www.11v11.com/teams/bradford-city/tab/players/season/2000/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/bradford-city/tab/players/season/2000/",
+        "leagueStatSource": "https://fbref.com/en/squads/3148d79f/1999-2000/c9/Bradford-City-Stats-Premier-League",
+        "leagueAppearanceVerified": false,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-bradford-118",
@@ -3148,16 +4329,26 @@
       "role": "starter",
       "tier": null,
       "rank": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
+      "leagueAppearances": 16,
+      "leagueStarts": 16,
+      "leagueMinutes": 1292,
       "appearanceScope": "Premier League only; null = not independently verified",
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/bradford-city/tab/players/season/2000/"
+        "https://www.11v11.com/teams/bradford-city/tab/players/season/2000/",
+        "https://fbref.com/en/squads/3148d79f/1999-2000/c9/Bradford-City-Stats-Premier-League"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/bradford-city/tab/players/season/2000/",
+        "leagueStatSource": "https://fbref.com/en/squads/3148d79f/1999-2000/c9/Bradford-City-Stats-Premier-League",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-bradford-119",
@@ -3170,16 +4361,26 @@
       "role": "starter",
       "tier": null,
       "rank": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
+      "leagueAppearances": 17,
+      "leagueStarts": 14,
+      "leagueMinutes": 1254,
       "appearanceScope": "Premier League only; null = not independently verified",
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/bradford-city/tab/players/season/2000/"
+        "https://www.11v11.com/teams/bradford-city/tab/players/season/2000/",
+        "https://fbref.com/en/squads/3148d79f/1999-2000/c9/Bradford-City-Stats-Premier-League"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/bradford-city/tab/players/season/2000/",
+        "leagueStatSource": "https://fbref.com/en/squads/3148d79f/1999-2000/c9/Bradford-City-Stats-Premier-League",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-bradford-120",
@@ -3192,16 +4393,26 @@
       "role": "starter",
       "tier": null,
       "rank": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
+      "leagueAppearances": 35,
+      "leagueStarts": 30,
+      "leagueMinutes": 2759,
       "appearanceScope": "Premier League only; null = not independently verified",
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/bradford-city/tab/players/season/2000/"
+        "https://www.11v11.com/teams/bradford-city/tab/players/season/2000/",
+        "https://fbref.com/en/squads/3148d79f/1999-2000/c9/Bradford-City-Stats-Premier-League"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/bradford-city/tab/players/season/2000/",
+        "leagueStatSource": "https://fbref.com/en/squads/3148d79f/1999-2000/c9/Bradford-City-Stats-Premier-League",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-bradford-121",
@@ -3214,16 +4425,26 @@
       "role": "starter",
       "tier": null,
       "rank": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
+      "leagueAppearances": 23,
+      "leagueStarts": 19,
+      "leagueMinutes": 1657,
       "appearanceScope": "Premier League only; null = not independently verified",
       "positionVerification": "needs_review",
       "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
       "sources": [
-        "https://www.11v11.com/teams/bradford-city/tab/players/season/2000/"
+        "https://www.11v11.com/teams/bradford-city/tab/players/season/2000/",
+        "https://fbref.com/en/squads/3148d79f/1999-2000/c9/Bradford-City-Stats-Premier-League"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/bradford-city/tab/players/season/2000/",
+        "leagueStatSource": "https://fbref.com/en/squads/3148d79f/1999-2000/c9/Bradford-City-Stats-Premier-League",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     },
     {
       "id": "pl-1999-00-bradford-122",
@@ -3245,7 +4466,17 @@
       "sources": [
         "https://www.11v11.com/teams/bradford-city/tab/players/season/2000/"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/bradford-city/tab/players/season/2000/",
+        "leagueStatSource": "https://fbref.com/en/squads/3148d79f/1999-2000/c9/Bradford-City-Stats-Premier-League",
+        "leagueAppearanceVerified": false,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      },
+      "slotException": "ST oversubscription; team main formation 2+ forwards and rotated starters"
     },
     {
       "id": "pl-1999-00-bradford-123",
@@ -3258,16 +4489,254 @@
       "role": "backup",
       "tier": null,
       "rank": null,
+      "leagueAppearances": 34,
+      "leagueStarts": 28,
+      "leagueMinutes": 2451,
+      "appearanceScope": "Premier League only; null = not independently verified",
+      "positionVerification": "needs_review",
+      "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
+      "sources": [
+        "https://www.11v11.com/teams/bradford-city/tab/players/season/2000/",
+        "https://fbref.com/en/squads/3148d79f/1999-2000/c9/Bradford-City-Stats-Premier-League"
+      ],
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/bradford-city/tab/players/season/2000/",
+        "leagueStatSource": "https://fbref.com/en/squads/3148d79f/1999-2000/c9/Bradford-City-Stats-Premier-League",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      },
+      "slotException": "ST oversubscription; team main formation 2+ forwards and rotated starters"
+    },
+    {
+      "id": "pl-1999-00-astonvilla-restored-16",
+      "name": "Peter Enckelman",
+      "nameKo": "페테르 엔켈만",
+      "born": null,
+      "club": "astonvilla",
+      "clubNameOriginal": "Aston Villa FC",
+      "position": "GK",
+      "role": "backup",
+      "tier": null,
+      "rank": null,
+      "leagueAppearances": 10,
+      "leagueStarts": 9,
+      "leagueMinutes": 849,
+      "appearanceScope": "Premier League only; null = not independently verified",
+      "positionVerification": "needs_review",
+      "verificationReason": "FBref Premier League playing time: 10 matches, nine starts; previous deletion incorrectly based on all-competition inference.",
+      "sources": [
+        "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/comp/1/",
+        "https://fbref.com/en/squads/8602292d/1999-2000/c9/Aston-Villa-Stats-Premier-League"
+      ],
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/comp/1/",
+        "leagueStatSource": "https://fbref.com/en/squads/8602292d/1999-2000/c9/Aston-Villa-Stats-Premier-League",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
+    },
+    {
+      "id": "pl-1999-00-astonvilla-restored-17",
+      "name": "Paul Merson",
+      "nameKo": "폴 머슨",
+      "born": null,
+      "club": "astonvilla",
+      "clubNameOriginal": "Aston Villa FC",
+      "position": "CAM",
+      "role": "starter",
+      "tier": null,
+      "rank": null,
+      "leagueAppearances": 32,
+      "leagueStarts": 24,
+      "leagueMinutes": 2225,
+      "appearanceScope": "Premier League only; null = not independently verified",
+      "positionVerification": "needs_review",
+      "verificationReason": "1999-00 24 league starts; no separate dedicated CAM majority positional event tally yet; 3-5-2 withdrawn-forward / playmaker role requires tactical verification.",
+      "sources": [
+        "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/comp/1/",
+        "https://fbref.com/en/squads/8602292d/1999-2000/c9/Aston-Villa-Stats-Premier-League"
+      ],
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/comp/1/",
+        "leagueStatSource": "https://fbref.com/en/squads/8602292d/1999-2000/c9/Aston-Villa-Stats-Premier-League",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
+    },
+    {
+      "id": "pl-1999-00-astonvilla-restored-18",
+      "name": "Benito Carbone",
+      "nameKo": "베니토 카르보네",
+      "born": null,
+      "club": "astonvilla",
+      "clubNameOriginal": "Aston Villa FC",
+      "position": "ST",
+      "role": "backup",
+      "tier": null,
+      "rank": null,
+      "leagueAppearances": 24,
+      "leagueStarts": 22,
+      "leagueMinutes": 1861,
+      "appearanceScope": "Premier League only; null = not independently verified",
+      "positionVerification": "needs_review",
+      "verificationReason": "1999-00 22 league starts; seasonal 2+ forwards sharing starts; exceeds basic ST slot because multiple starting forwards",
+      "sources": [
+        "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/comp/1/",
+        "https://fbref.com/en/squads/8602292d/1999-2000/c9/Aston-Villa-Stats-Premier-League"
+      ],
+      "candidateStatus": "draft",
+      "slotException": "third_regular_forward_in_1999_00_two_forward_rotation",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/aston-villa/tab/players/season/2000/comp/1/",
+        "leagueStatSource": "https://fbref.com/en/squads/8602292d/1999-2000/c9/Aston-Villa-Stats-Premier-League",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
+    },
+    {
+      "id": "pl-1999-00-bradford-restored-15",
+      "name": "Lee Mills",
+      "nameKo": "리 밀스",
+      "born": null,
+      "club": "bradford",
+      "clubNameOriginal": "Bradford City AFC",
+      "position": "ST",
+      "role": "backup",
+      "tier": null,
+      "rank": null,
+      "leagueAppearances": 21,
+      "leagueStarts": 19,
+      "leagueMinutes": 1719,
+      "appearanceScope": "Premier League only; null = not independently verified",
+      "positionVerification": "needs_review",
+      "verificationReason": "1999-00 19 league starts; three regular strikers Windass/Saunders/Mills. Preserve tactical overload for review.",
+      "sources": [
+        "https://www.11v11.com/teams/bradford-city/tab/players/season/2000/",
+        "https://fbref.com/en/squads/3148d79f/1999-2000/c9/Bradford-City-Stats-Premier-League"
+      ],
+      "candidateStatus": "draft",
+      "slotException": "third_forward_19_league_starts",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/bradford-city/tab/players/season/2000/",
+        "leagueStatSource": "https://fbref.com/en/squads/3148d79f/1999-2000/c9/Bradford-City-Stats-Premier-League",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
+    },
+    {
+      "id": "pl-1999-00-liverpool-restored-16",
+      "name": "Rigobert Song",
+      "nameKo": "리고베르 송",
+      "born": null,
+      "club": "liverpool",
+      "clubNameOriginal": "Liverpool FC",
+      "position": "CB",
+      "role": "backup",
+      "tier": null,
+      "rank": null,
       "leagueAppearances": null,
       "leagueStarts": null,
       "leagueMinutes": null,
       "appearanceScope": "Premier League only; null = not independently verified",
       "positionVerification": "needs_review",
-      "verificationReason": "Season-specific left/right or midfield role and DOB not yet individually checked; team season appearance list establishes initial pool, not final nomination.",
+      "verificationReason": "11v11 squad lists 16 starts across all competitions; requires league-only verification and seasonal CB/RB classification.",
       "sources": [
-        "https://www.11v11.com/teams/bradford-city/tab/players/season/2000/"
+        "https://www.11v11.com/teams/liverpool/tab/players/season/2000/",
+        "https://www.lfchistory.net/season-archive/appearances/43"
       ],
-      "candidateStatus": "draft"
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/liverpool/tab/players/season/2000/",
+        "leagueStatSource": "https://www.lfchistory.net/season-archive/appearances/43",
+        "leagueAppearanceVerified": false,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
+    },
+    {
+      "id": "pl-1999-00-arsenal-restored-18",
+      "name": "Dennis Bergkamp",
+      "nameKo": "데니스 베르캄프",
+      "born": null,
+      "club": "arsenal",
+      "clubNameOriginal": "Arsenal FC",
+      "position": "ST",
+      "role": "backup",
+      "tier": null,
+      "rank": null,
+      "leagueAppearances": 28,
+      "leagueStarts": 23,
+      "leagueMinutes": 1874,
+      "appearanceScope": "Premier League only; null = not independently verified",
+      "positionVerification": "needs_review",
+      "verificationReason": "1999-00 league 23 starts and 1874 minutes; third regular forward behind Henry and Kanu, excluded in previous draft by strict 2-slot cap.",
+      "sources": [
+        "https://www.11v11.com/teams/arsenal/tab/players/season/2000/comp/1/",
+        "https://fbref.com/en/squads/18bb7c10/1999-2000/Arsenal-Stats"
+      ],
+      "candidateStatus": "draft",
+      "slotException": "three_regular_starting_forwards_23_starts",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/arsenal/tab/players/season/2000/comp/1/",
+        "leagueStatSource": "https://fbref.com/en/squads/18bb7c10/1999-2000/Arsenal-Stats",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
+    },
+    {
+      "id": "pl-1999-00-chelsea-restored-15",
+      "name": "Albert Ferrer",
+      "nameKo": "알베르트 페레르",
+      "born": "1970-06-06",
+      "club": "chelsea",
+      "clubNameOriginal": "Chelsea FC",
+      "position": "RB",
+      "role": "starter",
+      "tier": null,
+      "rank": null,
+      "leagueAppearances": 25,
+      "leagueStarts": 24,
+      "leagueMinutes": 2097,
+      "appearanceScope": "Premier League only; null = not independently verified",
+      "positionVerification": "needs_review",
+      "verificationReason": "Chelsea FC history gives 25 PL appearances including one substitute; RB competing for same starting role as Petrescu.",
+      "sources": [
+        "https://www.11v11.com/teams/chelsea/tab/players/season/2000/1000/",
+        "https://fbref.com/en/squads/cff3d9bb/1999-2000/Chelsea-Stats"
+      ],
+      "candidateStatus": "draft",
+      "season": "1999-00",
+      "selectionReview": {
+        "status": "NEEDS_VERIFICATION",
+        "teamSquadSource": "https://www.11v11.com/teams/chelsea/tab/players/season/2000/1000/",
+        "leagueStatSource": "https://fbref.com/en/squads/cff3d9bb/1999-2000/Chelsea-Stats",
+        "leagueAppearanceVerified": true,
+        "seasonRoleVerification": "starter/backup provisional; compare each 11v11 club roster with lineup context",
+        "positionMajorityVerified": false
+      }
     }
   ],
   "bestXi": []
