@@ -5,7 +5,7 @@ import { resolve } from "node:path";
 function read(path) { return JSON.parse(readFileSync(resolve(path), "utf8")); }
 function verifyArchive(archive, reference, standalone) {
   const errors = [], notices = [];
-  const years = Array.from({ length: 26 }, (_, i) => {
+  const years = Array.from({ length: 27 }, (_, i) => {
     const y = 1999 + i;
     return y + "-" + String((y + 1) % 100).padStart(2, "0");
   });
@@ -76,13 +76,15 @@ function verifyArchive(archive, reference, standalone) {
   const noCrestUrl = archive.clubs.filter(c => !c.crestUrl).map(c => c.id);
   if (noCrestUrl.length) errors.push("Crest URLs missing for: " + noCrestUrl.join(", "));
   notices.push("Crest URLs exist but web image loading and era-correctness are NOT established by JSON checks");
-  notices.push("Only " + officialRows + " rows have independent full-table official UEFA comparisons, NOT all " + rowCount + " rows");
+  notices.push("Independent full-table cross-check rows: " + officialRows + " (60 earlier UEFA references + 20 latest RSSSF reference), of " + rowCount + " total. Most older seasons retain earlier match-source validation.");
   notices.push("Browser UI deployment checks remain separate and are NOT established by this test");
-  return { passed: errors.length === 0, seasons: seasonCount, tableRows: rowCount, europeanEntrantSlots: euroRows, officialUEFARows: officialRows, errors, notices };
+  return { passed: errors.length === 0, seasons: seasonCount, tableRows: rowCount, europeanEntrantSlots: euroRows, independentReferenceRows: officialRows, errors, notices };
 }
 
-const archive = read("data/laliga-standings-verified-1999-2025.json");
+const archive = read("data/laliga-standings-verified-1999-2026.json");
 const refs = read("audit/laliga-uefa-reference.json");
+const recentRef = read("audit/laliga-rsssf-2025-26.json");
+refs.seasons = {...refs.seasons,...recentRef.seasons};
 const candidates = {
   "1999-00": read("data/laliga-1999-00.json"),
   "2000-01": read("data/laliga-2000-01.json")
