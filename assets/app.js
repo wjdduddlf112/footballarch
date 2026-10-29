@@ -114,7 +114,7 @@ function overview(){
  let result="";
  if(data?.meta?.standingsOnly){
   const leaders=(data.standings||[]).slice(0,3);
-  result+='<section class="panel"><div class="section-heading"><h2>League Table</h2><button class="pill" data-go="table">전체 순위</button></div><div class="relegation-list">'+leaders.map(r=>'<div class="relegation-item">'+crest(r.club)+'<span>'+esc(r.rank)+'위 '+esc(club(r.club).name)+'</span><b>'+esc(r.points)+' PTS</b></div>').join("")+'</div></section>';
+  result+='<section class="panel"><div class="section-heading"><h2>League Table</h2><button class="pill" data-go="table">전체 순위</button></div><div class="relegation-list">'+leaders.map(r=>'<div class="relegation-item">'+crest(r.club)+'<span>'+esc(r.rank)+'위 '+esc(club(r.club).name)+championStatus(r)+'</span><b>'+esc(r.points)+' PTS</b></div>').join("")+'</div></section>';
  }else{
   const n=(data.players||[]).length;
   if(n){
@@ -174,6 +174,14 @@ function formation(){
  const previewNote="";
  return '<div class="panels"><section class="panel"><div class="section-heading"><h2>Season Best XI</h2><span class="small muted">'+esc(formationName)+' · '+(data?.meta?.status==="demo"?"SAMPLE":proposed?"DRAFT":"BEST XI")+'</span></div>'+previewNote+'<div class="pitch"><div class="mid"></div><div class="circle"></div>'+marks+'</div></section>'+side+'</div>'
 }
+function championStatus(r){
+ if(st.domain!=="domestic"||!data?.standings?.length)return "";
+ const isSerieA=st.league==="seriea",yr=st.season;
+ const stripped=isSerieA&&r.club==="juventus"&&(yr==="2004-05"||yr==="2005-06");
+ if(stripped)return '<span class="champion-stripped" title="우승 박탈 (칼초폴리)" aria-label="우승 박탈">박탈</span>';
+ const winner=isSerieA&&yr==="2004-05"?false:isSerieA&&yr==="2005-06"?r.club==="inter":r.rank===1;
+ return winner?'<span class="champion-badge" title="리그 공식 우승" aria-label="리그 공식 우승">C</span>':"";
+}
 function standings(){
  const rows=data.standings||[];
  if(!rows.length)return '<section class="panel"><div class="section-heading"><h2>Final League Table</h2></div><div class="empty"><strong>순위표 검증 중입니다.</strong></div></section>';
@@ -187,7 +195,7 @@ function standings(){
   const adminStay=r.outcome==="retained_administrative";
   const euroStatus=r.competition?comp(r.competition):"";
   const stat=down?'<span class="relegation-chip">↓ '+(r.outcome==="relegated_administrative"?"행정 강등":"강등")+'</span>':adminStay?'<span class="retention-chip">잔류 · 행정</span>':euroStatus;
-  return '<tr class="'+(down?"table-relegated":"")+'"><td><b>'+esc(r.rank)+'</b></td><td><div style="display:flex;align-items:center;gap:8px">'+crest(r.club)+esc(club(r.club).name)+'</div></td><td>'+esc(r.played)+'</td><td>'+esc(r.wins)+'</td><td>'+esc(r.draws)+'</td><td>'+esc(r.losses)+'</td><td>'+esc(r.goalsFor)+'</td><td>'+esc(r.goalsAgainst)+'</td><td>'+esc(r.gd)+'</td><td><b>'+esc(r.points)+'</b></td><td>'+stat+'</td></tr>';
+  return '<tr class="'+(down?"table-relegated":"")+'"><td><b>'+esc(r.rank)+'</b></td><td><div style="display:flex;align-items:center;gap:8px">'+crest(r.club)+esc(club(r.club).name)+championStatus(r)+'</div></td><td>'+esc(r.played)+'</td><td>'+esc(r.wins)+'</td><td>'+esc(r.draws)+'</td><td>'+esc(r.losses)+'</td><td>'+esc(r.goalsFor)+'</td><td>'+esc(r.goalsAgainst)+'</td><td>'+esc(r.gd)+'</td><td><b>'+esc(r.points)+'</b></td><td>'+stat+'</td></tr>';
  }).join("");
  return content+'</tbody></table></div></section>';
 }
@@ -216,7 +224,7 @@ const homeEuropean=[
 function homeCard(c){
  return '<button type="button" class="archive-card '+esc(c.color)+'" data-open-league="'+esc(c.id)+'" data-open-season="'+esc(c.season||"1999-00")+'" aria-label="'+esc(c.name)+' 대회 보기">'+
  '<span class="archive-card-top"><span class="archive-card-number">'+esc(c.number)+' / '+(c.tag==="CL"||c.tag==="EL"||c.tag==="CO"?"03":"05")+'</span><span class="archive-card-arrow" aria-hidden="true">↗</span></span>'+
- '<span class="archive-card-monogram" aria-hidden="true">'+esc(c.tag)+'</span>'+(leagueEmblems[c.id]?'<img class="archive-card-emblem" src="'+esc(leagueEmblems[c.id])+'" alt="" loading="lazy">':'')+
+ (leagueEmblems[c.id]?'<span class="archive-card-emblem-frame"><img class="archive-card-emblem" src="'+esc(leagueEmblems[c.id])+'" alt="" loading="lazy"></span>':'<span class="archive-card-monogram" aria-hidden="true">'+esc(c.tag)+'</span>')+
  '<span class="archive-card-bottom"><span class="archive-card-label">'+esc(c.detail)+'</span><strong>'+esc(c.name)+'</strong><span class="archive-card-action">Explore competition <span aria-hidden="true">→</span></span></span></button>';
 }
 function homeMarkup(){
