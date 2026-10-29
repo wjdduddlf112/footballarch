@@ -207,6 +207,7 @@ const homeDomestic=[
  {id:"bundesliga",tag:"DE",name:"Bundesliga",detail:"GERMANY",number:"04",color:"red"},
  {id:"ligue1",tag:"FR",name:"Ligue 1",detail:"FRANCE",number:"05",color:"teal"}
 ];
+const leagueEmblems={"laliga":"https://commons.wikimedia.org/wiki/Special:FilePath/LaLiga_logo_2023.svg","premierleague":"https://commons.wikimedia.org/wiki/Special:FilePath/Pl-logo-light.svg","seriea":"https://commons.wikimedia.org/wiki/Special:FilePath/Serie_A.svg","bundesliga":"https://commons.wikimedia.org/wiki/Special:FilePath/Bundesliga_logo.svg","ligue1":"https://commons.wikimedia.org/wiki/Special:FilePath/Ligue_1_2024_Logo.png"};
 const homeEuropean=[
  {id:"ucl",tag:"CL",name:"Champions League",detail:"THE EUROPEAN CUP",number:"01",color:"blue",season:"1999-00"},
  {id:"uel",tag:"EL",name:"Europa League",detail:"THE UEFA CUP LINEAGE",number:"02",color:"bronze",season:"2009-10"},
@@ -215,7 +216,7 @@ const homeEuropean=[
 function homeCard(c){
  return '<button type="button" class="archive-card '+esc(c.color)+'" data-open-league="'+esc(c.id)+'" data-open-season="'+esc(c.season||"1999-00")+'" aria-label="'+esc(c.name)+' 대회 보기">'+
  '<span class="archive-card-top"><span class="archive-card-number">'+esc(c.number)+' / '+(c.tag==="CL"||c.tag==="EL"||c.tag==="CO"?"03":"05")+'</span><span class="archive-card-arrow" aria-hidden="true">↗</span></span>'+
- '<span class="archive-card-monogram" aria-hidden="true">'+esc(c.tag)+'</span>'+
+ '<span class="archive-card-monogram" aria-hidden="true">'+esc(c.tag)+'</span>'+(leagueEmblems[c.id]?'<img class="archive-card-emblem" src="'+esc(leagueEmblems[c.id])+'" alt="" loading="lazy">':'')+
  '<span class="archive-card-bottom"><span class="archive-card-label">'+esc(c.detail)+'</span><strong>'+esc(c.name)+'</strong><span class="archive-card-action">Explore competition <span aria-hidden="true">→</span></span></span></button>';
 }
 function homeMarkup(){
