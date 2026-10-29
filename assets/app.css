@@ -116,3 +116,15 @@ body.is-home #content{min-width:0}
 /* Mark the unapproved editorial Best XI clearly on season pages. */
 .formation-review{margin-bottom:15px;border-left-color:#cbb27c;background:#252c2b;color:#d0d6d0}
 .formation-review b{color:#f3dcab}
+
+/* Verified 1999–00 relegation: visible in both overview and final standings. */
+.table-relegated{background:#43262caa!important;box-shadow:inset 3px 0 0 #d16c72}
+.table-relegated:hover{background:#543039!important}
+.table-relegated td{border-bottom-color:#75464d!important}
+.table-relegated td:first-child b{color:#f1a6a9}
+.relegation-chip{display:inline-flex;align-items:center;justify-content:center;white-space:nowrap;border:1px solid #bd696f;border-radius:5px;padding:4px 8px;background:#593138;color:#ffd0cc;font-size:11px;font-weight:800}
+.relegation-legend{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-bottom:13px;color:#c2cbd0;font-size:11px}
+.relegation-overview{margin-top:15px;border-color:#63434a}
+.relegation-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:9px}
+.relegation-item{display:flex;align-items:center;gap:9px;border:1px solid #5e3e46;border-radius:7px;background:#2a252c;padding:9px 11px;font-size:12px}
+.relegation-item span{flex:1}.relegation-item b{color:#ed9e9e;font-size:11px}
