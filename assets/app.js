@@ -107,13 +107,13 @@ function formation(){
  let pos=st.position==="all"?"GK":st.position;
  let candidates=rankPlayers().filter(p=>p.position===pos);
  let side='<div class="panel"><div class="section-heading"><h2>포지션별 순위</h2><span class="status">'+pos+'</span></div><div class="position-nav">'+positions.map(p=>'<button data-position="'+p+'" class="'+(pos===p?"active":"")+'">'+p+'</button>').join("")+'</div>';
- side+='<div class="small muted" style="margin-bottom:8px">'+candidates.length+' registered players · 포지션 내 순위만 표시</div>';
+ side+='<div class="small muted" style="margin-bottom:8px">'+candidates.length+' registered players · 포지션 내 순위만 표시'+(data?.meta?.positionalRanking?.status==="assigned_all_candidates"?' · 순위 배정 완료 / 자료 검증 중':'')+'</div>';
  if(candidates.length&&!candidates.some(p=>p.rank!=null))side+='<p class="position-rank-note">아직 이 포지션의 순위가 확정되지 않았습니다. 후보가 자동으로 1위부터 배정되지 않습니다.</p>';
  if(candidates.length){side+=candidates.map(p=>'<button class="rank-row" data-player="'+esc(p.id)+'"><span class="rank-num">'+esc(p.rank??"—")+'</span>'+crest(p.club)+'<span class="rank-label"><b>'+esc(p.name)+'</b><small>'+esc(club(p.club).name)+'</small></span>'+grade(p.tier)+'</button>').join("")}
  else side+='<div class="empty"><strong>아직 후보가 없습니다.</strong></div>';
  side+='</div>';
  const proposed=data?.meta?.bestXiReview?.status==="proposed_unapproved";
- const previewNote=proposed?'<div class="banner formation-review"><b>1차 선정안 · 검수 전</b> · 이 베스트 XI는 공식 확정 명단이 아닙니다. 포지션별 순위는 아직 확정되지 않았으며 선수의 이전 두 시즌 활약과 포지션 배분을 추가 검토합니다.</div>':"";
+ const previewNote=proposed?'<div class="banner formation-review"><b>1차 선정안 · 검수 전</b> · 이 베스트 XI는 공식 확정 명단이 아닙니다. 포지션별 1~N위는 후보 전원에게 배정했습니다. 다만 이전 두 시즌의 세부 근거와 포지션 분류는 계속 검증 중이며 베스트 XI는 공식 승인 전입니다.</div>':"";
  return '<div class="panels"><section class="panel"><div class="section-heading"><h2>Season Best XI</h2><span class="small muted">'+esc(formationName)+' · '+(proposed?"DRAFT XI":"BEST XI")+'</span></div>'+previewNote+'<div class="pitch"><div class="mid"></div><div class="circle"></div>'+marks+'</div><p class="pitch-note">포메이션에는 주 포지션과 선수 이름만 표시합니다. 선수의 티어 및 포지션별 순위는 오른쪽에서 확인합니다.</p></section>'+side+'</div>'
 }
 function standings(){
