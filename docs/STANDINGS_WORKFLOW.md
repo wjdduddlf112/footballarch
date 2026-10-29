@@ -7,7 +7,7 @@ Updated: 2026-10-29. This document governs **standings and next-season European 
 - **One league at a time**, **one season at a time** within it.
 - Order: La Liga → Premier League → Serie A → Bundesliga → Ligue 1.
 - Within each league: 1999-00 through 2024-25, in order.
-- Do not move to another league before all 26 seasons pass the league's standings and display gates.
+- In general, finish one league before the next. A user-directed change of league priority is an explicit exception; record open audits rather than falsely claiming full approval.
 - Commit small, independently checkable data changes. Keep source citations and documented exceptions.
 - Never recreate the website or change `index.html`, `assets/app.js`, or CSS as part of routine data ingestion.
 
@@ -32,8 +32,10 @@ Updated: 2026-10-29. This document governs **standings and next-season European 
 - **Outstanding**: season-by-season web-rendered UI audit, 42 club crest loading/period matching, and targeted independent spot checks for 2001-02 to 2024-25. Never call the whole league completed until these pass.
 
 ### Other domestic leagues
-- Premier League 1999-00 basic standings + European entrant JSON exists as an **early data-only draft**: `data/premierleague-1999-00.json`.
-- Pause other league expansion until La Liga display checks are completed. No changes to player evaluation status.
+- **Premier League 1999-00 through 2024-25**: 26 season JSON files now contain 520 club-season rows, 195 next-season European entrant records, and source-linked team crest URLs. All 520 numeric records and ranks independently match RSSSF; all 26 qualifier lists match their season table labels. Correct point deductions: Portsmouth 2009-10 (-9), Everton 2023-24 (-8), Nottingham Forest 2023-24 (-4).
+- Premier League historical European lists are documented in `data/premierleague-europe-qualification-1999-2025.json`; historical exceptions include UCL/UEL titleholders, FA/League Cup, Intertoto, fair play, and UEFA licensing decisions. Individual full UEFA competition-participant re-audits remain open for some older seasons; those qualifier flags stay `review`.
+- Full Premier League audit log: `audit/PREMIERLEAGUE_AUDIT_STATUS_2026-10-29.md`. JSON presence/logic checks are not live browser image/display proof.
+- The user explicitly approved beginning PL before completing La Liga's remaining browser/crest checks; those open La Liga checks are preserved. No changes to player evaluation status.
 
 ## Sources used for La Liga 1999-00 and 2000-01 special-year reconciliation
 - https://www.soccer-spain.com/ssdocs/history/1999-2000.php
