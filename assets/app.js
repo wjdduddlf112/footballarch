@@ -148,7 +148,7 @@ function homeMarkup(){
    <p class="home-description">유럽 5대 리그와 UEFA 클럽 대회를 아우르는 역사적 선수 평가 아카이브. 시즌별 주전과 후보, 포지션별 순위와 개인 활약을 검토하고 확정된 기록만 남깁니다.</p>
    <div class="home-actions"><button type="button" class="home-primary" data-open-league="laliga" data-open-season="1999-00">1999–00 La Liga 살펴보기 <span aria-hidden="true">↗</span></button><a class="home-secondary" href="#competitions">대회 전체 보기 <span aria-hidden="true">↓</span></a></div>
   </div>
-  <div class="home-editorial-art" aria-hidden="true"><span class="art-label">THE GAME. THE PLAYERS. THE ERA.</span><span class="art-big">XI</span><div class="art-pitch-circle"></div><span class="art-bottom">EST. 1999<span> / </span>SEASON BY SEASON</span><span class="art-cross">✳</span></div>
+  <div class="home-editorial-art" aria-hidden="true"><span class="art-label">THE GAME. THE PLAYERS. THE ERA.</span><img class="archive-hero-symbol" src="./assets/football-archive-emblem.svg" alt="" width="420" height="420" loading="eager"><span class="art-bottom">SEASONS 1999–2025<span> / </span>THE HISTORICAL COLLECTION</span><span class="art-cross">✳</span></div>
  </section>
  <section class="home-facts" aria-label="아카이브 범위">
   <div><strong>05</strong><span>DOMESTIC LEAGUES</span></div>
