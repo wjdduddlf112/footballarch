@@ -35,12 +35,14 @@ function syncSelects(){
  $("league").innerHTML=option(competitionGroups[st.domain],st.league);
  $("season").innerHTML=option(yearList.map(x=>[x,x.replace("-","–")]),st.season);
  const index=yearList.indexOf(st.season);
- for(const [id,offset,prefix] of [["prevSeason",-1,"이전 시즌"],["nextSeason",1,"다음 시즌"]]){
-   const button=$(id),target=yearList[index+offset];
-   button.disabled=!target;
-   button.title=target?prefix+" · "+target.replace("-","–"):prefix+" 없음";
-   button.setAttribute("aria-label",button.title);
- }
+ document.querySelectorAll("[data-season-step]").forEach(button=>{
+  const target=yearList[index+Number(button.dataset.seasonStep)];
+  const label=Number(button.dataset.seasonStep)<0?"이전 시즌":"다음 시즌";
+  button.disabled=!target;
+  button.title=target?label+" · "+target.replace("-","–"):label+" 없음";
+  button.setAttribute("aria-label",button.title);
+ });
+ $("floatingSeasonLabel").textContent=st.season.replace("-","–");
 }
 function label(){return competitionGroups[st.domain].find(x=>x[0]===st.league)?.[1]||"Football"}
 function seasonEndLabel(){return st.season.split("-")[0]+"–"+(2000+Number(st.season.split("-")[1]))}
@@ -298,9 +300,8 @@ document.addEventListener("error",event=>{
 },true);
 document.addEventListener("click",ev=>{
  let btn=ev.target.closest("button");if(btn){
- if(btn.id==="prevSeason"||btn.id==="nextSeason"){
-  const offset=btn.id==="prevSeason"?-1:1;
-  changeSeason(yearList[yearList.indexOf(st.season)+offset]);
+ if(btn.dataset.seasonStep){
+  changeSeason(yearList[yearList.indexOf(st.season)+Number(btn.dataset.seasonStep)]);
   return;
  }
  if(btn.dataset.openLeague){openArchive(btn.dataset.openLeague,btn.dataset.openSeason);return}
