@@ -7,11 +7,11 @@
     "assessmentEnd": "2000-01",
     "qualifyingSeason": "2001-02",
     "status": "draft",
-    "label": "GK 후보 13명 등록 · 검수 중",
+    "label": "7개 구단 전체 후보·티어·포지션 순위 공개 · 검수 중",
     "lastReview": "2026-10-29",
-    "note": "Seven UEFA-qualified clubs; 13 GK candidates recorded from verified 2000-01 league starts. Zaragoza reserve César Láinez also started Copa del Rey final. Valencia reserve Palop excluded (one league and one UCL start). No tiers or position ranks have been approved. Other positions await next instructions.",
-    "candidateCount": 13,
-    "selectionStage": "gk_candidates_pending_review",
+    "note": "All 120 candidate players across ten positions registered for seven verified 2001-02 UEFA-qualified clubs. Tier grades S–D, within-position ranks and 4-2-3-1 Best XI are 1st-pass draft subject to three-season audit. Sources: 2000-01 BDFutbol club lineup/starts. 0 dates of birth intentionally left null instead of inventing dates.",
+    "candidateCount": 120,
+    "selectionStage": "all_positions_tiers_ranks_best_xi_preliminary",
     "assessmentWeighting": "1998-99 < 1999-00 < 2000-01",
     "standingsStatus": "verified",
     "standingsSource": "https://www.rsssf.org/tabless/span01.html",
@@ -35,18 +35,70 @@
     },
     "historicalCrestPolicy": "Modern/reference badges are inherited from 1999-00 season data; this stage does not establish exact 2000-01 artwork.",
     "playerCandidateSources": {
-      "madrid": "https://fbref.com/en/squads/53a2f082/2000-2001/all_comps/Real-Madrid-Stats",
-      "deportivo": "https://fbref.com/en/squads/2a60ed82/2000-2001/Deportivo-La-Coruna-Stats",
-      "mallorca": "https://fbref.com/en/squads/2aa12281/2000-2001/c12/Mallorca-Stats-La-Liga",
-      "barca": "https://fbref.com/en/squads/206d90db/2000-2001/all_comps/Barcelona-Stats-All-Competitions",
-      "valencia": "https://fbref.com/en/squads/dcc91a7b/2000-2001/all_comps/Valencia-Stats-All-Competitions",
-      "celta": "https://fbref.com/en/squads/f25da7fb/2000-2001/Celta-Vigo-Stats",
-      "zaragoza": "https://fbref.com/en/squads/800303a0/2000-2001/all_comps/Zaragoza-Stats-All-Competitions"
+      "madrid": "https://www.bdfutbol.com/en/t/t2000-012.html",
+      "deportivo": "https://www.bdfutbol.com/en/t/t2000-0113.html",
+      "mallorca": "https://www.bdfutbol.com/en/t/t2000-0124.html",
+      "barca": "https://www.bdfutbol.com/en/t/t2000-011.html",
+      "valencia": "https://www.bdfutbol.com/en/t/t2000-0136.html",
+      "celta": "https://www.bdfutbol.com/en/t/t2000-0111.html",
+      "zaragoza": "https://www.bdfutbol.com/en/t/t2000-0139.html"
     },
     "gkSelectionReview": {
-      "status": "pending",
+      "status": "incorporated_in_full_provisional_pool",
       "notes": "Reina 18 league starts and Dutruel 15 are Barcelona rotating pair; Mallorca Miki Garro chosen with 5 league starts (Roa 4); Zaragoza César Láinez started the cup final despite 3 league starts; Cañizares only Valencia qualifying keeper with 37 league starts.",
-      "period": "1998-99,1999-00,2000-01"
+      "period": "1998-99,1999-00,2000-01",
+      "note": "Previous 13 GK candidates retained, tiers and ranks now preliminary."
+    },
+    "formation": "4-2-3-1",
+    "tierProposal": {
+      "status": "published_preliminary_not_final",
+      "assessmentSeasons": [
+        "1998-99",
+        "1999-00",
+        "2000-01"
+      ],
+      "weights": "recency_priority_no_numeric_weight_claim",
+      "candidateCount": 120,
+      "assessmentNote": "Initial qualitative 2000-01 league impact, 1999-00 continuity and 1998-99 context; historical 3-year player-by-player verification still incomplete. Club league placement not counted as direct tier score.",
+      "approval": "pending_user_review",
+      "positionAuditPending": [
+        "Iván Helguera",
+        "Guti",
+        "Juan Carlos Valerón",
+        "Djalminha",
+        "Ariel Ibagaza",
+        "Rivaldo",
+        "Gabri García",
+        "Vágner",
+        "Edú Schmidt",
+        "Daniel Montenegro",
+        "Juanele",
+        "Jamelli"
+      ]
+    },
+    "positionalRanking": {
+      "status": "assigned_all_candidates",
+      "verified": "pending_three_season_audit",
+      "scope": "1..N separately in each primary position; no global rank; player grades and ranking tentative"
+    },
+    "bestXiReview": {
+      "status": "proposed_unapproved",
+      "label": "2000–01 4-2-3-1 1차 선정안",
+      "notes": "4-2-3-1 selected as a period-representative lineup, not statistically verified league-wide modal formation. Rivaldo plays CAM as second-striker/advanced-playmaker eligible under flexible user instruction. Each XI player is #1 in their respective ranked primary slot except the second CB, who is #2; Best XI and primary-position allocation subject to correction.",
+      "sources": [
+        "https://www.bdfutbol.com/en/t/t2000-012.html",
+        "https://www.bdfutbol.com/en/t/t2000-0113.html",
+        "https://www.bdfutbol.com/en/t/t2000-0124.html",
+        "https://www.bdfutbol.com/en/t/t2000-011.html",
+        "https://www.bdfutbol.com/en/t/t2000-0136.html",
+        "https://www.bdfutbol.com/en/t/t2000-0111.html",
+        "https://www.bdfutbol.com/en/t/t2000-0139.html"
+      ],
+      "lastDraft": "2026-10-29"
+    },
+    "birthDateReview": {
+      "status": "all_present",
+      "missing": []
     }
   },
   "clubs": [
@@ -599,266 +651,2450 @@
   ],
   "players": [
     {
-      "id": "laliga-2000-gk-madrid-01",
-      "club": "madrid",
+      "id": "laliga-2000-madrid-001",
       "name": "Iker Casillas",
       "nameKo": "이케르 카시야스",
-      "nameOriginal": "Iker Casillas Fernández",
+      "nameOriginal": "Iker Casillas",
       "born": "1981-05-20",
+      "club": "madrid",
       "position": "GK",
       "role": "starter",
       "starts": 34,
-      "appearances": 34,
-      "europeStarts": 11,
-      "tier": null,
-      "rank": null,
-      "review": "provisional_candidate",
-      "evidence": "https://fbref.com/en/squads/53a2f082/2000-2001/all_comps/Real-Madrid-Stats",
+      "tier": "A",
+      "rank": 2,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-012.html",
       "threeSeasonReview": {
-        "status": "pending"
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
       }
     },
     {
-      "id": "laliga-2000-gk-madrid-02",
-      "club": "madrid",
+      "id": "laliga-2000-madrid-002",
       "name": "César Sánchez",
       "nameKo": "세사르 산체스",
       "nameOriginal": "César Sánchez Domínguez",
       "born": "1971-09-02",
+      "club": "madrid",
       "position": "GK",
       "role": "backup",
       "starts": 4,
-      "appearances": 5,
-      "europeStarts": 5,
-      "tier": null,
-      "rank": null,
-      "review": "provisional_candidate",
-      "evidence": "https://fbref.com/en/squads/53a2f082/2000-2001/all_comps/Real-Madrid-Stats",
+      "tier": "B-",
+      "rank": 11,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-012.html",
       "threeSeasonReview": {
-        "status": "pending"
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
       }
     },
     {
-      "id": "laliga-2000-gk-deportivo-01",
-      "club": "deportivo",
+      "id": "laliga-2000-madrid-003",
+      "name": "Aitor Karanka",
+      "nameKo": "아이토르 카랑카",
+      "nameOriginal": "Aitor Karanka",
+      "born": "1973-09-18",
+      "club": "madrid",
+      "position": "CB",
+      "role": "starter",
+      "starts": 33,
+      "tier": "B+",
+      "rank": 11,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-012.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-madrid-004",
+      "name": "Fernando Hierro",
+      "nameKo": "페르난도 이에로",
+      "nameOriginal": "Fernando Hierro",
+      "born": "1968-03-23",
+      "club": "madrid",
+      "position": "CB",
+      "role": "starter",
+      "starts": 28,
+      "tier": "A",
+      "rank": 3,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-012.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-madrid-005",
+      "name": "Míchel Salgado",
+      "nameKo": "미첼 살가도",
+      "nameOriginal": "Míchel Salgado",
+      "born": "1975-10-22",
+      "club": "madrid",
+      "position": "RB",
+      "role": "starter",
+      "starts": 26,
+      "tier": "A-",
+      "rank": 2,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-012.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-madrid-006",
+      "name": "Geremi Njitap",
+      "nameKo": "제레미 은지타프",
+      "nameOriginal": "Geremi Njitap",
+      "born": "1978-12-20",
+      "club": "madrid",
+      "position": "RB",
+      "role": "backup",
+      "starts": 12,
+      "tier": "B",
+      "rank": 10,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-012.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-madrid-007",
+      "name": "Roberto Carlos",
+      "nameKo": "호베르투 카를루스",
+      "nameOriginal": "Roberto Carlos",
+      "born": "1973-04-10",
+      "club": "madrid",
+      "position": "LB",
+      "role": "starter",
+      "starts": 36,
+      "tier": "S",
+      "rank": 1,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-012.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-madrid-008",
+      "name": "Claude Makélélé",
+      "nameKo": "클로드 마켈렐레",
+      "nameOriginal": "Claude Makélélé",
+      "born": "1973-02-18",
+      "club": "madrid",
+      "position": "DM",
+      "role": "starter",
+      "starts": 32,
+      "tier": "A+",
+      "rank": 1,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-012.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-madrid-009",
+      "name": "Albert Celades",
+      "nameKo": "알베르트 셀라데스",
+      "nameOriginal": "Albert Celades",
+      "born": "1975-09-29",
+      "club": "madrid",
+      "position": "DM",
+      "role": "backup",
+      "starts": 10,
+      "tier": "B",
+      "rank": 12,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-012.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-madrid-010",
+      "name": "Iván Helguera",
+      "nameKo": "이반 엘게라",
+      "nameOriginal": "Iván Helguera",
+      "born": "1975-03-28",
+      "club": "madrid",
+      "position": "CM",
+      "role": "starter",
+      "starts": 29,
+      "tier": "A-",
+      "rank": 3,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "primary_role_requires_match_by_match_position_audit",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-012.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-madrid-011",
+      "name": "Guti",
+      "nameKo": "구티",
+      "nameOriginal": "Guti",
+      "born": "1976-10-31",
+      "club": "madrid",
+      "position": "CAM",
+      "role": "starter",
+      "starts": 22,
+      "tier": "A-",
+      "rank": 6,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "primary_role_requires_match_by_match_position_audit",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-012.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-madrid-012",
+      "name": "Sávio Bortolini",
+      "nameKo": "사비우",
+      "nameOriginal": "Sávio Bortolini Pimentel",
+      "born": "1974-01-09",
+      "club": "madrid",
+      "position": "LW",
+      "role": "starter",
+      "starts": 17,
+      "tier": "B+",
+      "rank": 9,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-012.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-madrid-013",
+      "name": "Pedro Munitis",
+      "nameKo": "페드로 무니티스",
+      "nameOriginal": "Pedro Munitis Álvarez",
+      "born": "1975-06-19",
+      "club": "madrid",
+      "position": "LW",
+      "role": "backup",
+      "starts": 9,
+      "tier": "B",
+      "rank": 12,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-012.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-madrid-014",
+      "name": "Luís Figo",
+      "nameKo": "루이스 피구",
+      "nameOriginal": "Luís Figo",
+      "born": "1972-11-04",
+      "club": "madrid",
+      "position": "RW",
+      "role": "starter",
+      "starts": 33,
+      "tier": "S",
+      "rank": 1,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-012.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-madrid-015",
+      "name": "Steve McManaman",
+      "nameKo": "스티브 맥매너먼",
+      "nameOriginal": "Steve McManaman",
+      "born": "1972-02-11",
+      "club": "madrid",
+      "position": "RW",
+      "role": "backup",
+      "starts": 22,
+      "tier": "A-",
+      "rank": 6,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-012.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-madrid-016",
+      "name": "Raúl González",
+      "nameKo": "라울 곤살레스",
+      "nameOriginal": "Raúl González",
+      "born": "1977-06-27",
+      "club": "madrid",
+      "position": "ST",
+      "role": "starter",
+      "starts": 34,
+      "tier": "S",
+      "rank": 1,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-012.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-madrid-017",
+      "name": "Fernando Morientes",
+      "nameKo": "페르난도 모리엔테스",
+      "nameOriginal": "Fernando Morientes",
+      "born": "1976-04-05",
+      "club": "madrid",
+      "position": "ST",
+      "role": "backup",
+      "starts": 13,
+      "tier": "A-",
+      "rank": 10,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-012.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-deportivo-001",
       "name": "José Francisco Molina",
       "nameKo": "호세 프란시스코 몰리나",
       "nameOriginal": "José Francisco Molina Jiménez",
       "born": "1970-08-08",
+      "club": "deportivo",
       "position": "GK",
       "role": "starter",
       "starts": 32,
-      "appearances": 32,
-      "europeStarts": null,
-      "tier": null,
-      "rank": null,
-      "review": "provisional_candidate",
-      "evidence": "https://fbref.com/en/squads/2a60ed82/2000-2001/Deportivo-La-Coruna-Stats",
+      "tier": "A",
+      "rank": 3,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0113.html",
       "threeSeasonReview": {
-        "status": "pending"
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
       }
     },
     {
-      "id": "laliga-2000-gk-deportivo-02",
-      "club": "deportivo",
+      "id": "laliga-2000-deportivo-002",
       "name": "Jacques Songo'o",
       "nameKo": "자크 송고오",
-      "nameOriginal": "Jacques Célestin Songo'o",
+      "nameOriginal": "Jacques Songo'o",
       "born": "1964-03-17",
+      "club": "deportivo",
       "position": "GK",
       "role": "backup",
       "starts": 6,
-      "appearances": 9,
-      "europeStarts": null,
-      "tier": null,
-      "rank": null,
-      "review": "provisional_candidate",
-      "evidence": "https://fbref.com/en/squads/2a60ed82/2000-2001/Deportivo-La-Coruna-Stats",
+      "tier": "B",
+      "rank": 10,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0113.html",
       "threeSeasonReview": {
-        "status": "pending"
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
       }
     },
     {
-      "id": "laliga-2000-gk-mallorca-01",
-      "club": "mallorca",
+      "id": "laliga-2000-deportivo-003",
+      "name": "Donato Gama da Silva",
+      "nameKo": "도나투",
+      "nameOriginal": "Donato Gama da Silva",
+      "born": "1962-12-30",
+      "club": "deportivo",
+      "position": "CB",
+      "role": "starter",
+      "starts": 28,
+      "tier": "A-",
+      "rank": 9,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0113.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-deportivo-004",
+      "name": "Noureddine Naybet",
+      "nameKo": "누레딘 나이베트",
+      "nameOriginal": "Noureddine Naybet",
+      "born": "1970-02-10",
+      "club": "deportivo",
+      "position": "CB",
+      "role": "starter",
+      "starts": 25,
+      "tier": "A",
+      "rank": 2,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0113.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-deportivo-005",
+      "name": "Hélder Cristóvão",
+      "nameKo": "엘데르 크리스토방",
+      "nameOriginal": "Hélder Marino Rodrigues Cristóvão",
+      "born": "1971-03-21",
+      "club": "deportivo",
+      "position": "CB",
+      "role": "backup",
+      "starts": 18,
+      "tier": "B",
+      "rank": 17,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0113.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-deportivo-006",
+      "name": "Manuel Pablo García Díaz",
+      "nameKo": "마누엘 파블로",
+      "nameOriginal": "Manuel Pablo García Díaz",
+      "born": "1976-01-25",
+      "club": "deportivo",
+      "position": "RB",
+      "role": "starter",
+      "starts": 37,
+      "tier": "A-",
+      "rank": 1,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0113.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-deportivo-007",
+      "name": "Lionel Scaloni",
+      "nameKo": "리오넬 스칼로니",
+      "nameOriginal": "Lionel Scaloni",
+      "born": "1978-05-16",
+      "club": "deportivo",
+      "position": "RB",
+      "role": "backup",
+      "starts": 11,
+      "tier": "B",
+      "rank": 11,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0113.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-deportivo-008",
+      "name": "Enrique Romero",
+      "nameKo": "엔리케 로메로",
+      "nameOriginal": "Enrique Romero",
+      "born": "1971-06-23",
+      "club": "deportivo",
+      "position": "LB",
+      "role": "starter",
+      "starts": 28,
+      "tier": "A-",
+      "rank": 2,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0113.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-deportivo-009",
+      "name": "Joan Capdevila",
+      "nameKo": "조안 카프데빌라",
+      "nameOriginal": "Joan Capdevila",
+      "born": "1978-02-03",
+      "club": "deportivo",
+      "position": "LB",
+      "role": "backup",
+      "starts": 11,
+      "tier": "B",
+      "rank": 9,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0113.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-deportivo-010",
+      "name": "Mauro Silva",
+      "nameKo": "마우루 시우바",
+      "nameOriginal": "Mauro Silva",
+      "born": "1968-01-12",
+      "club": "deportivo",
+      "position": "DM",
+      "role": "starter",
+      "starts": 31,
+      "tier": "A+",
+      "rank": 2,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0113.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-deportivo-011",
+      "name": "Emerson Moisés Costa",
+      "nameKo": "에메르송 모이제스",
+      "nameOriginal": "Emerson Moisés Costa",
+      "born": "1972-04-12",
+      "club": "deportivo",
+      "position": "DM",
+      "role": "backup",
+      "starts": 20,
+      "tier": "B+",
+      "rank": 8,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0113.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-deportivo-012",
+      "name": "Juan Carlos Valerón",
+      "nameKo": "후안 카를로스 발레론",
+      "nameOriginal": "Juan Carlos Valerón",
+      "born": "1975-06-17",
+      "club": "deportivo",
+      "position": "CAM",
+      "role": "starter",
+      "starts": 20,
+      "tier": "A",
+      "rank": 2,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "primary_role_requires_match_by_match_position_audit",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0113.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-deportivo-013",
+      "name": "Djalminha",
+      "nameKo": "잘미냐",
+      "nameOriginal": "Djalminha",
+      "born": "1970-12-09",
+      "club": "deportivo",
+      "position": "CAM",
+      "role": "backup",
+      "starts": 17,
+      "tier": "A",
+      "rank": 4,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "primary_role_requires_match_by_match_position_audit",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0113.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-deportivo-014",
+      "name": "Fran González",
+      "nameKo": "프란 곤살레스",
+      "nameOriginal": "Fran González",
+      "born": "1969-07-14",
+      "club": "deportivo",
+      "position": "LW",
+      "role": "starter",
+      "starts": 26,
+      "tier": "A-",
+      "rank": 4,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0113.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-deportivo-015",
+      "name": "Víctor Sánchez del Amo",
+      "nameKo": "빅토르 산체스",
+      "nameOriginal": "Víctor Sánchez del Amo",
+      "born": "1976-02-23",
+      "club": "deportivo",
+      "position": "RW",
+      "role": "starter",
+      "starts": 26,
+      "tier": "A-",
+      "rank": 4,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0113.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-deportivo-016",
+      "name": "Roy Makaay",
+      "nameKo": "로이 마카이",
+      "nameOriginal": "Roy Makaay",
+      "born": "1975-03-09",
+      "club": "deportivo",
+      "position": "ST",
+      "role": "starter",
+      "starts": 21,
+      "tier": "A+",
+      "rank": 2,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0113.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-deportivo-017",
+      "name": "Diego Tristán",
+      "nameKo": "디에고 트리스탄",
+      "nameOriginal": "Diego Tristán",
+      "born": "1976-01-05",
+      "club": "deportivo",
+      "position": "ST",
+      "role": "backup",
+      "starts": 22,
+      "tier": "A",
+      "rank": 4,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0113.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-mallorca-001",
       "name": "Leo Franco",
       "nameKo": "레오 프랑코",
       "nameOriginal": "Leonardo Noeren Franco",
       "born": "1977-05-20",
+      "club": "mallorca",
       "position": "GK",
       "role": "starter",
       "starts": 27,
-      "appearances": 27,
-      "europeStarts": null,
-      "tier": null,
-      "rank": null,
-      "review": "provisional_candidate",
-      "evidence": "https://fbref.com/en/squads/2aa12281/2000-2001/c12/Mallorca-Stats-La-Liga",
+      "tier": "A-",
+      "rank": 4,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0124.html",
       "threeSeasonReview": {
-        "status": "pending"
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
       }
     },
     {
-      "id": "laliga-2000-gk-mallorca-02",
-      "club": "mallorca",
+      "id": "laliga-2000-mallorca-002",
       "name": "Miki Garro",
       "nameKo": "미키 가로",
       "nameOriginal": "Miquel Garro Gomila",
       "born": "1975-09-20",
+      "club": "mallorca",
       "position": "GK",
       "role": "backup",
       "starts": 5,
-      "appearances": 7,
-      "europeStarts": null,
-      "tier": null,
-      "rank": null,
-      "review": "provisional_candidate",
-      "evidence": "https://fbref.com/en/squads/2aa12281/2000-2001/c12/Mallorca-Stats-La-Liga",
+      "tier": "C+",
+      "rank": 12,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0124.html",
       "threeSeasonReview": {
-        "status": "pending"
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
       }
     },
     {
-      "id": "laliga-2000-gk-barca-01",
-      "club": "barca",
+      "id": "laliga-2000-mallorca-003",
+      "name": "Miguel Ángel Nadal",
+      "nameKo": "미겔 앙헬 나달",
+      "nameOriginal": "Miguel Ángel Nadal",
+      "born": "1966-07-28",
+      "club": "mallorca",
+      "position": "CB",
+      "role": "starter",
+      "starts": 36,
+      "tier": "A-",
+      "rank": 7,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0124.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-mallorca-004",
+      "name": "Fernando Niño",
+      "nameKo": "페르난도 니뇨",
+      "nameOriginal": "Fernando Niño",
+      "born": "1974-09-16",
+      "club": "mallorca",
+      "position": "CB",
+      "role": "starter",
+      "starts": 31,
+      "tier": "B+",
+      "rank": 12,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0124.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-mallorca-005",
+      "name": "Gustavo Siviero",
+      "nameKo": "구스타보 시비에로",
+      "nameOriginal": "Gustavo Siviero",
+      "born": "1969-09-13",
+      "club": "mallorca",
+      "position": "CB",
+      "role": "backup",
+      "starts": 8,
+      "tier": "B",
+      "rank": 18,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0124.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-mallorca-006",
+      "name": "Miquel Soler",
+      "nameKo": "미켈 솔레르",
+      "nameOriginal": "Miquel Soler",
+      "born": "1965-03-13",
+      "club": "mallorca",
+      "position": "LB",
+      "role": "starter",
+      "starts": 35,
+      "tier": "B+",
+      "rank": 5,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0124.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-mallorca-007",
+      "name": "Lluís Carreras",
+      "nameKo": "류이스 카레라스",
+      "nameOriginal": "Lluís Carreras",
+      "born": "1972-09-24",
+      "club": "mallorca",
+      "position": "LB",
+      "role": "backup",
+      "starts": 13,
+      "tier": "B",
+      "rank": 8,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0124.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-mallorca-008",
+      "name": "Javier Olaizola",
+      "nameKo": "하비에르 올라솔라",
+      "nameOriginal": "Javier Olaizola",
+      "born": "1969-11-28",
+      "club": "mallorca",
+      "position": "RB",
+      "role": "starter",
+      "starts": 36,
+      "tier": "B+",
+      "rank": 4,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0124.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-mallorca-009",
+      "name": "Vicente Engonga",
+      "nameKo": "비센테 엥공가",
+      "nameOriginal": "Vicente Engonga",
+      "born": "1965-10-20",
+      "club": "mallorca",
+      "position": "DM",
+      "role": "starter",
+      "starts": 31,
+      "tier": "B+",
+      "rank": 6,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0124.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-mallorca-010",
+      "name": "Marcos Martín",
+      "nameKo": "마르코스 마르틴",
+      "nameOriginal": "Marcos Martín",
+      "born": "1968-09-17",
+      "club": "mallorca",
+      "position": "DM",
+      "role": "backup",
+      "starts": 31,
+      "tier": "B+",
+      "rank": 5,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0124.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-mallorca-011",
+      "name": "Paco Soler",
+      "nameKo": "파코 솔레르",
+      "nameOriginal": "Paco Soler",
+      "born": "1970-03-05",
+      "club": "mallorca",
+      "position": "CM",
+      "role": "starter",
+      "starts": 7,
+      "tier": "B",
+      "rank": 9,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0124.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-mallorca-012",
+      "name": "Ariel Ibagaza",
+      "nameKo": "아리엘 이바가사",
+      "nameOriginal": "Ariel Ibagaza",
+      "born": "1976-10-27",
+      "club": "mallorca",
+      "position": "CAM",
+      "role": "starter",
+      "starts": 33,
+      "tier": "A-",
+      "rank": 5,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "primary_role_requires_match_by_match_position_audit",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0124.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-mallorca-013",
+      "name": "Albert Luque",
+      "nameKo": "알베르트 루케",
+      "nameOriginal": "Albert Luque Martos",
+      "born": "1978-03-11",
+      "club": "mallorca",
+      "position": "LW",
+      "role": "starter",
+      "starts": 32,
+      "tier": "B+",
+      "rank": 6,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0124.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-mallorca-014",
+      "name": "Finidi George",
+      "nameKo": "피니디 조지",
+      "nameOriginal": "Finidi George",
+      "born": "1971-04-15",
+      "club": "mallorca",
+      "position": "RW",
+      "role": "starter",
+      "starts": 29,
+      "tier": "B+",
+      "rank": 7,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0124.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-mallorca-015",
+      "name": "Álvaro Novo",
+      "nameKo": "알바로 노보",
+      "nameOriginal": "Álvaro Novo",
+      "born": "1978-05-16",
+      "club": "mallorca",
+      "position": "RW",
+      "role": "backup",
+      "starts": 12,
+      "tier": "B",
+      "rank": 10,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0124.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-mallorca-016",
+      "name": "Samuel Eto'o",
+      "nameKo": "사뮈엘 에토",
+      "nameOriginal": "Samuel Eto'o Fils",
+      "born": "1981-03-10",
+      "club": "mallorca",
+      "position": "ST",
+      "role": "starter",
+      "starts": 25,
+      "tier": "A-",
+      "rank": 8,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0124.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-mallorca-017",
+      "name": "Carlos Domínguez",
+      "nameKo": "카를로스 도밍게스",
+      "nameOriginal": "Carlos Domínguez",
+      "born": "1976-09-18",
+      "club": "mallorca",
+      "position": "ST",
+      "role": "backup",
+      "starts": 6,
+      "tier": "B-",
+      "rank": 13,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0124.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-barca-001",
       "name": "Pepe Reina",
       "nameKo": "페페 레이나",
       "nameOriginal": "José Manuel Reina Páez",
       "born": "1982-08-31",
+      "club": "barca",
       "position": "GK",
       "role": "starter",
       "starts": 18,
-      "appearances": 19,
-      "europeStarts": 7,
-      "tier": null,
-      "rank": null,
-      "review": "provisional_candidate",
-      "evidence": "https://fbref.com/en/squads/206d90db/2000-2001/all_comps/Barcelona-Stats-All-Competitions",
+      "tier": "B",
+      "rank": 7,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-011.html",
       "threeSeasonReview": {
-        "status": "pending"
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
       }
     },
     {
-      "id": "laliga-2000-gk-barca-02",
-      "club": "barca",
+      "id": "laliga-2000-barca-002",
       "name": "Richard Dutruel",
       "nameKo": "리샤르 뒤트뤼엘",
       "nameOriginal": "Richard Philippe Dutruel",
       "born": "1972-12-24",
+      "club": "barca",
       "position": "GK",
       "role": "backup",
       "starts": 15,
-      "appearances": 15,
-      "europeStarts": 5,
-      "tier": null,
-      "rank": null,
-      "review": "provisional_candidate",
-      "evidence": "https://fbref.com/en/squads/206d90db/2000-2001/all_comps/Barcelona-Stats-All-Competitions",
+      "tier": "B",
+      "rank": 9,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-011.html",
       "threeSeasonReview": {
-        "status": "pending"
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
       }
     },
     {
-      "id": "laliga-2000-gk-valencia-01",
-      "club": "valencia",
+      "id": "laliga-2000-barca-003",
+      "name": "Frank de Boer",
+      "nameKo": "프랑크 더부르",
+      "nameOriginal": "Frank de Boer",
+      "born": "1970-05-15",
+      "club": "barca",
+      "position": "CB",
+      "role": "starter",
+      "starts": 31,
+      "tier": "A",
+      "rank": 4,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-011.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-barca-004",
+      "name": "Abelardo Fernández",
+      "nameKo": "아벨라르도 페르난데스",
+      "nameOriginal": "Abelardo Fernández",
+      "born": "1970-04-19",
+      "club": "barca",
+      "position": "CB",
+      "role": "starter",
+      "starts": 18,
+      "tier": "B+",
+      "rank": 13,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-011.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-barca-005",
+      "name": "Michael Reiziger",
+      "nameKo": "미하엘 레이치허르",
+      "nameOriginal": "Michael Reiziger",
+      "born": "1973-05-03",
+      "club": "barca",
+      "position": "RB",
+      "role": "starter",
+      "starts": 22,
+      "tier": "B+",
+      "rank": 6,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-011.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-barca-006",
+      "name": "Carles Puyol",
+      "nameKo": "카를레스 푸욜",
+      "nameOriginal": "Carles Puyol",
+      "born": "1978-04-13",
+      "club": "barca",
+      "position": "RB",
+      "role": "backup",
+      "starts": 15,
+      "tier": "B+",
+      "rank": 7,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-011.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-barca-007",
+      "name": "Sergi Barjuán",
+      "nameKo": "세르지 바르후안",
+      "nameOriginal": "Sergi Barjuán",
+      "born": "1971-12-28",
+      "club": "barca",
+      "position": "LB",
+      "role": "starter",
+      "starts": 30,
+      "tier": "A-",
+      "rank": 4,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-011.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-barca-008",
+      "name": "Josep Guardiola",
+      "nameKo": "주제프 과르디올라",
+      "nameOriginal": "Josep Guardiola",
+      "born": "1971-01-18",
+      "club": "barca",
+      "position": "DM",
+      "role": "starter",
+      "starts": 21,
+      "tier": "A-",
+      "rank": 3,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-011.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-barca-009",
+      "name": "Emmanuel Petit",
+      "nameKo": "에마뉘엘 프티",
+      "nameOriginal": "Emmanuel Petit",
+      "born": "1976-09-25",
+      "club": "barca",
+      "position": "DM",
+      "role": "backup",
+      "starts": 13,
+      "tier": "B",
+      "rank": 11,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-011.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-barca-010",
+      "name": "Phillip Cocu",
+      "nameKo": "필립 코쿠",
+      "nameOriginal": "Phillip Cocu",
+      "born": "1970-10-29",
+      "club": "barca",
+      "position": "CM",
+      "role": "starter",
+      "starts": 32,
+      "tier": "A",
+      "rank": 2,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-011.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-barca-011",
+      "name": "Xavi Hernández",
+      "nameKo": "차비 에르난데스",
+      "nameOriginal": "Xavi Hernández",
+      "born": "1980-01-25",
+      "club": "barca",
+      "position": "CM",
+      "role": "backup",
+      "starts": 15,
+      "tier": "B+",
+      "rank": 6,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-011.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-barca-012",
+      "name": "Gerard López",
+      "nameKo": "제라르 로페스",
+      "nameOriginal": "Gerard López",
+      "born": "1979-03-12",
+      "club": "barca",
+      "position": "CM",
+      "role": "backup",
+      "starts": 12,
+      "tier": "B",
+      "rank": 7,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-011.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-barca-013",
+      "name": "Rivaldo",
+      "nameKo": "히바우두",
+      "nameOriginal": "Rivaldo",
+      "born": "1972-04-19",
+      "club": "barca",
+      "position": "CAM",
+      "role": "starter",
+      "starts": 34,
+      "tier": "S",
+      "rank": 1,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "primary_role_requires_match_by_match_position_audit",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-011.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-barca-014",
+      "name": "Marc Overmars",
+      "nameKo": "마르크 오베르마르스",
+      "nameOriginal": "Marc Overmars",
+      "born": "1973-03-29",
+      "club": "barca",
+      "position": "LW",
+      "role": "starter",
+      "starts": 26,
+      "tier": "A-",
+      "rank": 1,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-011.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-barca-015",
+      "name": "Simão Sabrosa",
+      "nameKo": "시망 사브로자",
+      "nameOriginal": "Simão Sabrosa",
+      "born": "1979-10-31",
+      "club": "barca",
+      "position": "LW",
+      "role": "backup",
+      "starts": 20,
+      "tier": "B",
+      "rank": 11,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-011.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-barca-016",
+      "name": "Luis Enrique",
+      "nameKo": "루이스 엔리케",
+      "nameOriginal": "Luis Enrique",
+      "born": "1970-05-08",
+      "club": "barca",
+      "position": "RW",
+      "role": "starter",
+      "starts": 27,
+      "tier": "A-",
+      "rank": 5,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-011.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-barca-017",
+      "name": "Gabri García",
+      "nameKo": "가브리 가르시아",
+      "nameOriginal": "Gabriel Francisco García de la Torre",
+      "born": "1979-02-10",
+      "club": "barca",
+      "position": "RW",
+      "role": "backup",
+      "starts": 20,
+      "tier": "B",
+      "rank": 9,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "primary_role_requires_match_by_match_position_audit",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-011.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-barca-018",
+      "name": "Patrick Kluivert",
+      "nameKo": "파트릭 클라위버르트",
+      "nameOriginal": "Patrick Kluivert",
+      "born": "1976-07-01",
+      "club": "barca",
+      "position": "ST",
+      "role": "starter",
+      "starts": 30,
+      "tier": "A+",
+      "rank": 3,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-011.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-valencia-001",
       "name": "Santiago Cañizares",
       "nameKo": "산티아고 카니사레스",
-      "nameOriginal": "José Santiago Cañizares Ruiz",
+      "nameOriginal": "Santiago Cañizares",
       "born": "1969-12-18",
+      "club": "valencia",
       "position": "GK",
       "role": "starter",
       "starts": 37,
-      "appearances": 37,
-      "europeStarts": 16,
-      "tier": null,
-      "rank": null,
-      "review": "provisional_candidate",
-      "evidence": "https://fbref.com/en/squads/dcc91a7b/2000-2001/all_comps/Valencia-Stats-All-Competitions",
+      "tier": "A+",
+      "rank": 1,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0136.html",
       "threeSeasonReview": {
-        "status": "pending"
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
       }
     },
     {
-      "id": "laliga-2000-gk-celta-01",
-      "club": "celta",
+      "id": "laliga-2000-valencia-002",
+      "name": "Miroslav Đukić",
+      "nameKo": "미로슬라브 주키치",
+      "nameOriginal": "Miroslav Đukić",
+      "born": "1966-02-19",
+      "club": "valencia",
+      "position": "CB",
+      "role": "starter",
+      "starts": 29,
+      "tier": "A-",
+      "rank": 8,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0136.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-valencia-003",
+      "name": "Roberto Ayala",
+      "nameKo": "로베르토 아얄라",
+      "nameOriginal": "Roberto Fabián Ayala",
+      "born": "1973-04-14",
+      "club": "valencia",
+      "position": "CB",
+      "role": "starter",
+      "starts": 27,
+      "tier": "A+",
+      "rank": 1,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0136.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-valencia-004",
+      "name": "Mauricio Pellegrino",
+      "nameKo": "마우리시오 펠레그리노",
+      "nameOriginal": "Mauricio Pellegrino",
+      "born": "1971-10-05",
+      "club": "valencia",
+      "position": "CB",
+      "role": "backup",
+      "starts": 24,
+      "tier": "A",
+      "rank": 5,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0136.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-valencia-005",
+      "name": "Amedeo Carboni",
+      "nameKo": "아메데오 카르보니",
+      "nameOriginal": "Amedeo Carboni",
+      "born": "1965-04-06",
+      "club": "valencia",
+      "position": "LB",
+      "role": "starter",
+      "starts": 24,
+      "tier": "A-",
+      "rank": 3,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0136.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-valencia-006",
+      "name": "Fábio Aurélio",
+      "nameKo": "파비우 아우렐리우",
+      "nameOriginal": "Fábio Aurélio",
+      "born": "1979-09-24",
+      "club": "valencia",
+      "position": "LB",
+      "role": "backup",
+      "starts": 7,
+      "tier": "B-",
+      "rank": 10,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0136.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-valencia-007",
+      "name": "Jocelyn Angloma",
+      "nameKo": "조슬랭 앙글로마",
+      "nameOriginal": "Jocelyn Angloma",
+      "born": "1965-08-07",
+      "club": "valencia",
+      "position": "RB",
+      "role": "starter",
+      "starts": 27,
+      "tier": "A-",
+      "rank": 3,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0136.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-valencia-008",
+      "name": "David Albelda",
+      "nameKo": "다비드 알벨다",
+      "nameOriginal": "David Albelda",
+      "born": "1977-09-01",
+      "club": "valencia",
+      "position": "DM",
+      "role": "starter",
+      "starts": 15,
+      "tier": "B+",
+      "rank": 9,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0136.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-valencia-009",
+      "name": "Didier Deschamps",
+      "nameKo": "디디에 데샹",
+      "nameOriginal": "Didier Deschamps",
+      "born": "1968-10-15",
+      "club": "valencia",
+      "position": "DM",
+      "role": "backup",
+      "starts": 7,
+      "tier": "B",
+      "rank": 13,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0136.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-valencia-010",
+      "name": "Rubén Baraja",
+      "nameKo": "루벤 바라하",
+      "nameOriginal": "Rubén Baraja",
+      "born": "1975-07-11",
+      "club": "valencia",
+      "position": "CM",
+      "role": "starter",
+      "starts": 34,
+      "tier": "A",
+      "rank": 1,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0136.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-valencia-011",
+      "name": "Pablo Aimar",
+      "nameKo": "파블로 아이마르",
+      "nameOriginal": "Pablo César Aimar",
+      "born": "1979-11-03",
+      "club": "valencia",
+      "position": "CAM",
+      "role": "starter",
+      "starts": 8,
+      "tier": "A-",
+      "rank": 7,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0136.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-valencia-012",
+      "name": "Vicente Rodríguez",
+      "nameKo": "비센테 로드리게스",
+      "nameOriginal": "Vicente Rodríguez",
+      "born": "1981-07-16",
+      "club": "valencia",
+      "position": "LW",
+      "role": "starter",
+      "starts": 20,
+      "tier": "B+",
+      "rank": 8,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0136.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-valencia-013",
+      "name": "Cristian González",
+      "nameKo": "킬리 곤살레스",
+      "nameOriginal": "Cristian González",
+      "born": "1974-08-04",
+      "club": "valencia",
+      "position": "LW",
+      "role": "backup",
+      "starts": 19,
+      "tier": "A-",
+      "rank": 2,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0136.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-valencia-014",
+      "name": "Gaizka Mendieta",
+      "nameKo": "가이스카 멘디에타",
+      "nameOriginal": "Gaizka Mendieta",
+      "born": "1974-03-27",
+      "club": "valencia",
+      "position": "RW",
+      "role": "starter",
+      "starts": 31,
+      "tier": "A+",
+      "rank": 2,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0136.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-valencia-015",
+      "name": "Miguel Ángel Angulo",
+      "nameKo": "미겔 앙헬 앙굴로",
+      "nameOriginal": "Miguel Ángel Angulo",
+      "born": "1977-06-23",
+      "club": "valencia",
+      "position": "RW",
+      "role": "backup",
+      "starts": 20,
+      "tier": "B+",
+      "rank": 8,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0136.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-valencia-016",
+      "name": "John Carew",
+      "nameKo": "욘 카레브",
+      "nameOriginal": "John Alieu Carew",
+      "born": "1979-09-05",
+      "club": "valencia",
+      "position": "ST",
+      "role": "starter",
+      "starts": 32,
+      "tier": "A",
+      "rank": 5,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0136.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-valencia-017",
+      "name": "Juan Sánchez",
+      "nameKo": "후안 산체스",
+      "nameOriginal": "Juan Sánchez",
+      "born": "1972-02-15",
+      "club": "valencia",
+      "position": "ST",
+      "role": "backup",
+      "starts": 26,
+      "tier": "B+",
+      "rank": 11,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0136.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-celta-001",
       "name": "Pablo Cavallero",
       "nameKo": "파블로 카바예로",
-      "nameOriginal": "Pablo Óscar Cavallero Rodríguez",
+      "nameOriginal": "Pablo Cavallero",
       "born": "1974-04-13",
+      "club": "celta",
       "position": "GK",
       "role": "starter",
       "starts": 21,
-      "appearances": 21,
-      "europeStarts": null,
-      "tier": null,
-      "rank": null,
-      "review": "provisional_candidate",
-      "evidence": "https://fbref.com/en/squads/f25da7fb/2000-2001/Celta-Vigo-Stats",
+      "tier": "B+",
+      "rank": 5,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0111.html",
       "threeSeasonReview": {
-        "status": "pending"
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
       }
     },
     {
-      "id": "laliga-2000-gk-celta-02",
-      "club": "celta",
+      "id": "laliga-2000-celta-002",
       "name": "José Manuel Pinto",
       "nameKo": "호세 마누엘 핀토",
-      "nameOriginal": "José Manuel Pinto Colorado",
+      "nameOriginal": "José Manuel Pinto",
       "born": "1975-11-08",
+      "club": "celta",
       "position": "GK",
       "role": "backup",
       "starts": 17,
-      "appearances": 18,
-      "europeStarts": null,
-      "tier": null,
-      "rank": null,
-      "review": "provisional_candidate",
-      "evidence": "https://fbref.com/en/squads/f25da7fb/2000-2001/Celta-Vigo-Stats",
+      "tier": "B",
+      "rank": 8,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0111.html",
       "threeSeasonReview": {
-        "status": "pending"
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
       }
     },
     {
-      "id": "laliga-2000-gk-zaragoza-01",
-      "club": "zaragoza",
-      "name": "Juanmi",
+      "id": "laliga-2000-celta-003",
+      "name": "Fernando Cáceres",
+      "nameKo": "페르난도 카세레스",
+      "nameOriginal": "Fernando Cáceres",
+      "born": "1969-02-07",
+      "club": "celta",
+      "position": "CB",
+      "role": "starter",
+      "starts": 36,
+      "tier": "A-",
+      "rank": 6,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0111.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-celta-004",
+      "name": "Goran Đorović",
+      "nameKo": "고란 조로비치",
+      "nameOriginal": "Goran Đorović",
+      "born": "1971-11-11",
+      "club": "celta",
+      "position": "CB",
+      "role": "starter",
+      "starts": 18,
+      "tier": "B+",
+      "rank": 14,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0111.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-celta-005",
+      "name": "Eduardo Berizzo",
+      "nameKo": "에두아르도 베리소",
+      "nameOriginal": "Eduardo Berizzo",
+      "born": "1969-11-13",
+      "club": "celta",
+      "position": "CB",
+      "role": "backup",
+      "starts": 16,
+      "tier": "B+",
+      "rank": 15,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0111.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-celta-006",
+      "name": "Juanfran García",
+      "nameKo": "후안프란 가르시아",
+      "nameOriginal": "Juanfran García",
+      "born": "1976-07-15",
+      "club": "celta",
+      "position": "LB",
+      "role": "starter",
+      "starts": 26,
+      "tier": "B+",
+      "rank": 6,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0111.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-celta-007",
+      "name": "Juan Velasco",
+      "nameKo": "후안 벨라스코",
+      "nameOriginal": "Juan Velasco",
+      "born": "1977-05-17",
+      "club": "celta",
+      "position": "RB",
+      "role": "starter",
+      "starts": 33,
+      "tier": "B+",
+      "rank": 5,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0111.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-celta-008",
+      "name": "Pablo Coira",
+      "nameKo": "파블로 코이라",
+      "nameOriginal": "Pablo Coira",
+      "born": "1979-10-18",
+      "club": "celta",
+      "position": "RB",
+      "role": "backup",
+      "starts": 7,
+      "tier": "C+",
+      "rank": 12,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0111.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-celta-009",
+      "name": "Everton Giovanella",
+      "nameKo": "에베르톤 지오바넬라",
+      "nameOriginal": "Everton Giovanella",
+      "born": "1970-09-13",
+      "club": "celta",
+      "position": "DM",
+      "role": "starter",
+      "starts": 24,
+      "tier": "B+",
+      "rank": 7,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0111.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-celta-010",
+      "name": "Doriva",
+      "nameKo": "도리바",
+      "nameOriginal": "Doriva",
+      "born": "1972-05-28",
+      "club": "celta",
+      "position": "DM",
+      "role": "backup",
+      "starts": 14,
+      "tier": "B",
+      "rank": 10,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0111.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-celta-011",
+      "name": "Vágner",
+      "nameKo": "바그네르",
+      "nameOriginal": "Vágner",
+      "born": "1973-03-19",
+      "club": "celta",
+      "position": "CM",
+      "role": "starter",
+      "starts": 21,
+      "tier": "B+",
+      "rank": 5,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "primary_role_requires_match_by_match_position_audit",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0111.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-celta-012",
+      "name": "Juan Jayo",
+      "nameKo": "후안 하요",
+      "nameOriginal": "Juan José Jayo Legario",
+      "born": "1973-01-20",
+      "club": "celta",
+      "position": "CM",
+      "role": "backup",
+      "starts": 12,
+      "tier": "B",
+      "rank": 8,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0111.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-celta-013",
+      "name": "Aleksandr Mostovoi",
+      "nameKo": "알렉산드르 모스토보이",
+      "nameOriginal": "Aleksandr Mostovoi",
+      "born": "1968-08-22",
+      "club": "celta",
+      "position": "CAM",
+      "role": "starter",
+      "starts": 25,
+      "tier": "A",
+      "rank": 3,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0111.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-celta-014",
+      "name": "Gustavo López",
+      "nameKo": "구스타보 로페스",
+      "nameOriginal": "Gustavo López",
+      "born": "1973-04-13",
+      "club": "celta",
+      "position": "LW",
+      "role": "starter",
+      "starts": 30,
+      "tier": "A-",
+      "rank": 3,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0111.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-celta-015",
+      "name": "Edú Schmidt",
+      "nameKo": "에두 슈미트",
+      "nameOriginal": "Luís Eduardo Schmidt",
+      "born": "1979-01-10",
+      "club": "celta",
+      "position": "LW",
+      "role": "backup",
+      "starts": 20,
+      "tier": "B+",
+      "rank": 7,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "primary_role_requires_match_by_match_position_audit",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0111.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-celta-016",
+      "name": "Valery Karpin",
+      "nameKo": "발레리 카르핀",
+      "nameOriginal": "Valery Karpin",
+      "born": "1969-02-02",
+      "club": "celta",
+      "position": "RW",
+      "role": "starter",
+      "starts": 26,
+      "tier": "A",
+      "rank": 3,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0111.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-celta-017",
+      "name": "Jesuli",
+      "nameKo": "헤술리",
+      "nameOriginal": "Jesuli",
+      "born": "1978-01-24",
+      "club": "celta",
+      "position": "RW",
+      "role": "backup",
+      "starts": 7,
+      "tier": "B-",
+      "rank": 11,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0111.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-celta-018",
+      "name": "Catanha",
+      "nameKo": "카타냐",
+      "nameOriginal": "Henrique Guedes da Silva",
+      "born": "1972-03-06",
+      "club": "celta",
+      "position": "ST",
+      "role": "starter",
+      "starts": 35,
+      "tier": "A-",
+      "rank": 6,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0111.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-celta-019",
+      "name": "Benni McCarthy",
+      "nameKo": "베니 매카시",
+      "nameOriginal": "Benni McCarthy",
+      "born": "1977-11-12",
+      "club": "celta",
+      "position": "ST",
+      "role": "backup",
+      "starts": 8,
+      "tier": "B-",
+      "rank": 12,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0111.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-zaragoza-001",
+      "name": "Juan Miguel García Inglés",
       "nameKo": "후안미",
       "nameOriginal": "Juan Miguel García Inglés",
       "born": "1971-03-09",
+      "club": "zaragoza",
       "position": "GK",
       "role": "starter",
       "starts": 35,
-      "appearances": 35,
-      "europeStarts": 2,
-      "tier": null,
-      "rank": null,
-      "review": "provisional_candidate",
-      "evidence": "https://fbref.com/en/squads/800303a0/2000-2001/all_comps/Zaragoza-Stats-All-Competitions",
+      "tier": "B",
+      "rank": 6,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0139.html",
       "threeSeasonReview": {
-        "status": "pending"
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
       }
     },
     {
-      "id": "laliga-2000-gk-zaragoza-02",
-      "club": "zaragoza",
+      "id": "laliga-2000-zaragoza-002",
       "name": "César Láinez",
       "nameKo": "세사르 라이네스",
-      "nameOriginal": "César Láinez Sanjuán",
+      "nameOriginal": "César Láinez",
       "born": "1977-04-10",
+      "club": "zaragoza",
       "position": "GK",
       "role": "backup",
       "starts": 3,
-      "appearances": 3,
-      "europeStarts": null,
-      "tier": null,
-      "rank": null,
-      "review": "provisional_candidate",
-      "evidence": "https://fbref.com/en/squads/800303a0/2000-2001/all_comps/Zaragoza-Stats-All-Competitions",
+      "tier": "C+",
+      "rank": 13,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0139.html",
       "threeSeasonReview": {
-        "status": "pending"
-      },
-      "additionalEvidence": "https://www.transfermarkt.com/real-zaragoza_celta-de-vigo/index/spielbericht/1093367"
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-zaragoza-003",
+      "name": "Francisco Jémez",
+      "nameKo": "파코 헤메스",
+      "nameOriginal": "Francisco Jémez",
+      "born": "1970-04-18",
+      "club": "zaragoza",
+      "position": "CB",
+      "role": "starter",
+      "starts": 34,
+      "tier": "B+",
+      "rank": 10,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0139.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-zaragoza-004",
+      "name": "Xavier Aguado",
+      "nameKo": "샤비에르 아과도",
+      "nameOriginal": "Xavier Aguado",
+      "born": "1968-06-05",
+      "club": "zaragoza",
+      "position": "CB",
+      "role": "starter",
+      "starts": 26,
+      "tier": "B",
+      "rank": 16,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0139.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-zaragoza-005",
+      "name": "Miguel Rebosio",
+      "nameKo": "미겔 레보시오",
+      "nameOriginal": "Miguel Rebosio",
+      "born": "1976-10-20",
+      "club": "zaragoza",
+      "position": "CB",
+      "role": "backup",
+      "starts": 11,
+      "tier": "B-",
+      "rank": 19,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0139.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-zaragoza-006",
+      "name": "Marco Lanna",
+      "nameKo": "마르코 란나",
+      "nameOriginal": "Marco Lanna",
+      "born": "1968-07-13",
+      "club": "zaragoza",
+      "position": "LB",
+      "role": "starter",
+      "starts": 17,
+      "tier": "B",
+      "rank": 7,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0139.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-zaragoza-007",
+      "name": "Pablo Javier Díaz Stalla",
+      "nameKo": "파블로 디아스",
+      "nameOriginal": "Pablo Javier Díaz Stalla",
+      "born": "1971-08-05",
+      "club": "zaragoza",
+      "position": "RB",
+      "role": "starter",
+      "starts": 28,
+      "tier": "B",
+      "rank": 8,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0139.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-zaragoza-008",
+      "name": "Kari Sundgren",
+      "nameKo": "카리 순드그렌",
+      "nameOriginal": "Kari Sundgren",
+      "born": "1967-10-25",
+      "club": "zaragoza",
+      "position": "RB",
+      "role": "backup",
+      "starts": 16,
+      "tier": "B",
+      "rank": 9,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0139.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-zaragoza-009",
+      "name": "Roberto Acuña",
+      "nameKo": "로베르토 아쿠냐",
+      "nameOriginal": "Roberto Acuña",
+      "born": "1972-03-25",
+      "club": "zaragoza",
+      "position": "DM",
+      "role": "starter",
+      "starts": 34,
+      "tier": "B+",
+      "rank": 4,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0139.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-zaragoza-010",
+      "name": "José Ignacio",
+      "nameKo": "호세 이그나시오",
+      "nameOriginal": "José Ignacio Sáenz Marín",
+      "born": "1973-09-28",
+      "club": "zaragoza",
+      "position": "CM",
+      "role": "starter",
+      "starts": 34,
+      "tier": "B+",
+      "rank": 4,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0139.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-zaragoza-011",
+      "name": "Daniel Montenegro",
+      "nameKo": "다니엘 몬테네그로",
+      "nameOriginal": "Daniel Montenegro",
+      "born": "1979-03-28",
+      "club": "zaragoza",
+      "position": "CAM",
+      "role": "starter",
+      "starts": 20,
+      "tier": "B+",
+      "rank": 8,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "primary_role_requires_match_by_match_position_audit",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0139.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-zaragoza-012",
+      "name": "Martín Vellisca",
+      "nameKo": "마르틴 베이스카",
+      "nameOriginal": "Martín Vellisca",
+      "born": "1971-08-25",
+      "club": "zaragoza",
+      "position": "LW",
+      "role": "starter",
+      "starts": 38,
+      "tier": "B+",
+      "rank": 5,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0139.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-zaragoza-013",
+      "name": "Juanele",
+      "nameKo": "후아넬레",
+      "nameOriginal": "Juan Castaño Quirós",
+      "born": "1971-04-10",
+      "club": "zaragoza",
+      "position": "LW",
+      "role": "backup",
+      "starts": 32,
+      "tier": "B",
+      "rank": 10,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "primary_role_requires_match_by_match_position_audit",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0139.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-zaragoza-014",
+      "name": "Jamelli",
+      "nameKo": "자멜리",
+      "nameOriginal": "Paulo Roberto Jamelli Júnior",
+      "born": "1974-07-22",
+      "club": "zaragoza",
+      "position": "ST",
+      "role": "starter",
+      "starts": 30,
+      "tier": "A-",
+      "rank": 7,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "primary_role_requires_match_by_match_position_audit",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0139.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-zaragoza-015",
+      "name": "Juan Eduardo Esnáider",
+      "nameKo": "후안 에스나이데르",
+      "nameOriginal": "Juan Eduardo Esnáider Belén",
+      "born": "1973-03-05",
+      "club": "zaragoza",
+      "position": "ST",
+      "role": "backup",
+      "starts": 17,
+      "tier": "A-",
+      "rank": 9,
+      "review": "published_preliminary_pending_three_season_audit",
+      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0139.html",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+      }
     }
   ],
-  "bestXi": []
+  "bestXi": [
+    {
+      "position": "GK",
+      "playerId": "laliga-2000-valencia-001"
+    },
+    {
+      "position": "CB",
+      "playerId": "laliga-2000-valencia-003"
+    },
+    {
+      "position": "CB",
+      "playerId": "laliga-2000-deportivo-004"
+    },
+    {
+      "position": "LB",
+      "playerId": "laliga-2000-madrid-007"
+    },
+    {
+      "position": "RB",
+      "playerId": "laliga-2000-deportivo-006"
+    },
+    {
+      "position": "DM",
+      "playerId": "laliga-2000-madrid-008"
+    },
+    {
+      "position": "CM",
+      "playerId": "laliga-2000-valencia-010"
+    },
+    {
+      "position": "CAM",
+      "playerId": "laliga-2000-barca-013"
+    },
+    {
+      "position": "LW",
+      "playerId": "laliga-2000-barca-014"
+    },
+    {
+      "position": "RW",
+      "playerId": "laliga-2000-madrid-014"
+    },
+    {
+      "position": "ST",
+      "playerId": "laliga-2000-madrid-016"
+    }
+  ]
 }
