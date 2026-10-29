@@ -1,12 +1,12 @@
 // Run from repository root with Node: node scripts/verify-premierleague.mjs
 import {readFileSync} from "node:fs";
 function read(path){return JSON.parse(readFileSync(path,"utf8"));}
-export function verifyPremierLeague(getSeason,ref1,ref2,archive){
+export function verifyPremierLeague(getSeason,ref1,ref2,ref3,archive){
  const errors=[],notices=[],details=[];
- const official={...ref1.seasons,...ref2.seasons};
+ const official={...ref1.seasons,...ref2.seasons,...ref3.seasons};
  const validEurope=new Set(["UCL","UEFA Cup","UEL","UECL","Intertoto Cup"]);
  let rowsChecked=0,euEntrants=0,clubIds=new Set(),crestGaps=new Set();
- for(let y=1999;y<=2024;y++){
+ for(let y=1999;y<=2025;y++){
   const season=y+"-"+String((y+1)%100).padStart(2,"0"),doc=getSeason(season),ref=official[season],hist=archive.seasons[season];
   if(!doc||!ref||!hist){errors.push(season+": missing input");continue;}
   const rows=doc.standings,ids=new Set(rows.map(r=>r.club)),ranks=new Set(rows.map(r=>r.rank));
@@ -42,7 +42,7 @@ export function verifyPremierLeague(getSeason,ref1,ref2,archive){
   euEntrants+=q.length;
   details.push({season,rows:rows.length,entrants:q.length,relegated:rows.filter(r=>r.outcome==="relegated").map(r=>r.club)});
  }
- if(rowsChecked!==520)errors.push("Expected 520 independently corroborated Premier League rows");
+ if(rowsChecked!==540)errors.push("Expected 540 independently corroborated Premier League rows");
  notices.push("RSSSF is an independent historical table reference, not the Premier League's official site.");
  notices.push("European entrants have been curated against seasonal and competition records; some historical UEFA competition-by-competition checks are still pending.");
  notices.push("Crest URL gaps and browser rendering need separate verification; no URL alone is treated as proof that a logo loads.");
@@ -51,8 +51,9 @@ export function verifyPremierLeague(getSeason,ref1,ref2,archive){
 function run(){
  const first=read("audit/premierleague-rsssf-1999-2011.json");
  const second=read("audit/premierleague-rsssf-2012-2024.json");
- const europe=read("data/premierleague-europe-qualification-1999-2025.json");
- const result=verifyPremierLeague(season=>read("data/premierleague-"+season+".json"),first,second,europe);
+ const third=read("audit/premierleague-rsssf-2025.json");
+ const europe=read("data/premierleague-europe-qualification-1999-2026.json");
+ const result=verifyPremierLeague(season=>read("data/premierleague-"+season+".json"),first,second,third,europe);
  process.stdout.write(JSON.stringify(result,null,2)+"\n");
  if(!result.passed)process.exitCode=1;
 }
