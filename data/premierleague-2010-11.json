@@ -7,7 +7,7 @@
     "status": "standings_only",
     "label": "League Table",
     "standingsOnly": true,
-    "standingsVerified": "match_reconstructed_pending_official_rank_crosscheck",
+    "standingsVerified": true,
     "europeanQualificationVerified": false,
     "assessmentStart": "2008-09",
     "assessmentEnd": "2010-11",
@@ -16,7 +16,13 @@
     "sourceGameCount": 380,
     "pointsDeductions": [],
     "notes": "Match-derived table: official rank, tie-breaking and actual next-season UEFA entrants require source verification. Provisional until verified.",
-    "lastReview": "2026-10-29"
+    "lastReview": "2026-10-29",
+    "standingsSource": "https://www.rsssf.org/tablese/eng2011.html",
+    "standingsCrossChecked": "20/20 independent RSSSF final table (rank, P, W, D, L, GF, GA, pts)",
+    "europeanQualificationReview": "curated historical entrant list; individual UEFA competition record verification pending",
+    "europeanQualificationSources": [
+      "https://www.rsssf.org/tablese/eng2011.html"
+    ]
   },
   "clubs": [
     {
@@ -53,8 +59,7 @@
       "id": "bolton",
       "name": "Bolton Wanderers",
       "abbr": "BOL",
-      "crestUrl": "https://crests.football-data.org/68.png",
-      "crestHistoricalStatus": "modern_reference_historical_version_unverified",
+      "crestHistoricalStatus": "crest_source_unverified",
       "crestSource": "https://www.football-data.org/"
     },
     {
@@ -184,7 +189,80 @@
       "crestSource": "https://www.football-data.org/"
     }
   ],
-  "qualifiers": [],
+  "qualifiers": [
+    {
+      "club": "manutd",
+      "competition": "UCL",
+      "route": "Birmingham relegated but League Cup winners; Stoke FA Cup finalists; Fulham UEFA Fair Play.",
+      "status": "review",
+      "sources": [
+        "https://www.rsssf.org/tablese/eng2011.html"
+      ]
+    },
+    {
+      "club": "chelsea",
+      "competition": "UCL",
+      "route": "Birmingham relegated but League Cup winners; Stoke FA Cup finalists; Fulham UEFA Fair Play.",
+      "status": "review",
+      "sources": [
+        "https://www.rsssf.org/tablese/eng2011.html"
+      ]
+    },
+    {
+      "club": "mancity",
+      "competition": "UCL",
+      "route": "Birmingham relegated but League Cup winners; Stoke FA Cup finalists; Fulham UEFA Fair Play.",
+      "status": "review",
+      "sources": [
+        "https://www.rsssf.org/tablese/eng2011.html"
+      ]
+    },
+    {
+      "club": "arsenal",
+      "competition": "UCL",
+      "route": "Birmingham relegated but League Cup winners; Stoke FA Cup finalists; Fulham UEFA Fair Play.",
+      "status": "review",
+      "sources": [
+        "https://www.rsssf.org/tablese/eng2011.html"
+      ]
+    },
+    {
+      "club": "tottenham",
+      "competition": "UEL",
+      "route": "Birmingham relegated but League Cup winners; Stoke FA Cup finalists; Fulham UEFA Fair Play.",
+      "status": "review",
+      "sources": [
+        "https://www.rsssf.org/tablese/eng2011.html"
+      ]
+    },
+    {
+      "club": "stoke",
+      "competition": "UEL",
+      "route": "Birmingham relegated but League Cup winners; Stoke FA Cup finalists; Fulham UEFA Fair Play.",
+      "status": "review",
+      "sources": [
+        "https://www.rsssf.org/tablese/eng2011.html"
+      ]
+    },
+    {
+      "club": "birmingham",
+      "competition": "UEL",
+      "route": "Birmingham relegated but League Cup winners; Stoke FA Cup finalists; Fulham UEFA Fair Play.",
+      "status": "review",
+      "sources": [
+        "https://www.rsssf.org/tablese/eng2011.html"
+      ]
+    },
+    {
+      "club": "fulham",
+      "competition": "UEL",
+      "route": "Birmingham relegated but League Cup winners; Stoke FA Cup finalists; Fulham UEFA Fair Play.",
+      "status": "review",
+      "sources": [
+        "https://www.rsssf.org/tablese/eng2011.html"
+      ]
+    }
+  ],
   "standings": [
     {
       "rank": 1,
@@ -197,7 +275,7 @@
       "goalsAgainst": 37,
       "gd": 41,
       "points": 80,
-      "competition": null,
+      "competition": "UCL",
       "outcome": "retained"
     },
     {
@@ -211,7 +289,7 @@
       "goalsAgainst": 33,
       "gd": 36,
       "points": 71,
-      "competition": null,
+      "competition": "UCL",
       "outcome": "retained"
     },
     {
@@ -225,7 +303,7 @@
       "goalsAgainst": 33,
       "gd": 27,
       "points": 71,
-      "competition": null,
+      "competition": "UCL",
       "outcome": "retained"
     },
     {
@@ -239,7 +317,7 @@
       "goalsAgainst": 43,
       "gd": 29,
       "points": 68,
-      "competition": null,
+      "competition": "UCL",
       "outcome": "retained"
     },
     {
@@ -253,7 +331,7 @@
       "goalsAgainst": 46,
       "gd": 9,
       "points": 62,
-      "competition": null,
+      "competition": "UEL",
       "outcome": "retained"
     },
     {
@@ -295,7 +373,7 @@
       "goalsAgainst": 43,
       "gd": 6,
       "points": 49,
-      "competition": null,
+      "competition": "UEL",
       "outcome": "retained"
     },
     {
@@ -365,7 +443,7 @@
       "goalsAgainst": 48,
       "gd": -2,
       "points": 46,
-      "competition": null,
+      "competition": "UEL",
       "outcome": "retained"
     },
     {
@@ -435,7 +513,7 @@
       "goalsAgainst": 58,
       "gd": -21,
       "points": 39,
-      "competition": null,
+      "competition": "UEL",
       "outcome": "relegated"
     },
     {
