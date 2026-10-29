@@ -74,7 +74,7 @@ async function load(){
    const european=verified.europeanParticipation||{};
    data.standings=verified.standings.map(r=>({...r,competition:curatedEuropean?(european[r.club]||null):(earlier.get(r.club)?.competition||null)}));
    if(curatedEuropean){
-    data.qualifiers=Object.entries(european).map(([club,competition])=>({club,competition,route:verified.europeanParticipationNotes?.[club]||"Verified 2000s UEFA competition entry"}));
+    data.qualifiers=Object.entries(european).map(([club,competition])=>({club,competition,route:verified.europeanParticipationNotes?.[club]||""}));
     data.meta.europeanQualificationVerified=verifiedEuropean;
     data.meta.europeanQualificationSource=verified.europeanParticipationSources?.[0];
    }
