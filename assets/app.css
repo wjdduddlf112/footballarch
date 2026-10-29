@@ -161,16 +161,48 @@ body.is-home .floating-season-nav{display:none}
 
 .static-qual { cursor: default; }
 
-/* Native league insignia — monogram remains as the fallback. */
-.home-league-grid .archive-card-emblem{position:absolute;z-index:0;top:18%;right:7%;width:53%;height:42%;object-fit:contain;object-position:center;opacity:.65;pointer-events:none;filter:drop-shadow(0 4px 12px #0008)}
-.home-league-grid .archive-card-bottom{z-index:2;text-shadow:0 1px 12px #08121bed}
-@media(max-width:650px){.home-league-grid .archive-card-emblem{top:19%;right:9%;width:52%;height:37%;opacity:.72}}
-
-/* Homogeneous league-logo cards: clear emblem, shared plate and no overlapping monograms. */
-.home-league-grid .archive-card-emblem-frame{position:absolute;top:18%;right:15%;z-index:1;display:flex;align-items:center;justify-content:center;width:70%;height:37%;box-sizing:border-box;padding:15px 22px;border:1px solid #e0e5e879;border-radius:14px;background:#f2f4f5;box-shadow:0 10px 28px #03090d70;pointer-events:none;overflow:hidden}
-.home-league-grid .archive-card-emblem{display:block;position:static;width:100%;height:100%;object-fit:contain;object-position:center;opacity:1;filter:none;max-width:100%;max-height:100%}
-.home-league-grid .archive-card-monogram{display:none}
-.home-league-grid .archive-card-bottom{position:relative;z-index:2}
+/* All eight homepage competition marks: floated, transparent, and visually balanced.
+   Keep the actual league and UEFA identities separate from the period-specific team crests. */
+.home-league-grid .archive-card-emblem-frame,
+.home-europe-grid .archive-card-emblem-frame{
+ position:absolute;z-index:1;top:18%;left:14%;right:auto;width:72%;height:37%;
+ display:flex;align-items:center;justify-content:center;
+ padding:0;box-sizing:border-box;background:transparent;border:0;border-radius:0;
+ box-shadow:none;overflow:visible;pointer-events:none;
+}
+.home-league-grid .archive-card-emblem,
+.home-europe-grid .archive-card-emblem{
+ display:block;position:static;width:100%;height:100%;max-width:100%;max-height:100%;
+ object-fit:contain;object-position:center;opacity:1;
+ filter:drop-shadow(0 7px 14px #0009);
+}
+.home-league-grid .archive-card-monogram,
+.home-europe-grid .archive-card-monogram{display:none}
+.home-league-grid .archive-card-bottom,
+.home-europe-grid .archive-card-bottom{position:relative;z-index:2;text-shadow:0 1px 12px #08121be8}
+/* Dark card legibility: use the light silhouette of the source artwork. */
+.home-league-grid [data-open-league="premierleague"] .archive-card-emblem,
+.home-league-grid [data-open-league="ligue1"] .archive-card-emblem,
+.home-europe-grid [data-open-league="ucl"] .archive-card-emblem{
+ filter:brightness(0) invert(1) drop-shadow(0 7px 14px #0009);
+}
+.home-league-grid [data-open-league="bundesliga"] .archive-card-emblem{
+ width:77%;height:100%;
+}
+.home-league-grid [data-open-league="seriea"] .archive-card-emblem{
+ width:70%;height:100%;
+}
+.home-europe-grid .archive-card-emblem-frame{top:17%;left:29%;width:42%;height:44%}
+.home-europe-grid [data-open-league="ucl"] .archive-card-emblem-frame{left:34%;width:32%}
+.home-europe-grid [data-open-league="uel"] .archive-card-emblem-frame{left:32%;width:36%}
+.home-europe-grid [data-open-league="uecl"] .archive-card-emblem-frame{left:31%;width:38%}
+/* A visible and unobtrusive failure state for third-party SVG hosts. */
+.archive-card-emblem-frame.is-fallback{color:#dce8ee;font-weight:900;font-size:clamp(48px,5vw,76px);letter-spacing:-.085em;opacity:.58}
+@media(max-width:650px){
+ .home-league-grid .archive-card-emblem-frame{top:17%;left:12%;width:76%;height:34%}
+ .home-europe-grid .archive-card-emblem-frame{top:18%;height:38%}
+ .archive-card-emblem-frame.is-fallback{font-size:47px}
+}
 .champion-badge,.champion-stripped{display:inline-flex;align-items:center;justify-content:center;vertical-align:middle;flex:none;margin-left:3px;white-space:nowrap;font-weight:850}
 .champion-badge{width:19px;height:19px;border-radius:50%;border:1px solid #d7b25b;color:#f3d68f;background:#6c4f1d57;font-size:11px}
 .champion-stripped{padding:2px 5px;border:1px solid #ab6663;border-radius:4px;background:#7d33332a;color:#edacaa;font-size:10px}
