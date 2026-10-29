@@ -6,7 +6,7 @@ Updated: 2026-10-29. This document governs **standings and next-season European 
 
 - **One league at a time**, **one season at a time** within it.
 - Order: La Liga → Premier League → Serie A → Bundesliga → Ligue 1.
-- Within each league: 1999-00 through 2024-25, in order.
+- Within each league: **1999-00 through 2025-26 (27 complete seasons)**, in order. Historical Europe qualification refers to the next season (2026-27 for the final 2025-26 domestic season).
 - In general, finish one league before the next. A user-directed change of league priority is an explicit exception; record open audits rather than falsely claiming full approval.
 - Commit small, independently checkable data changes. Keep source citations and documented exceptions.
 - Never recreate the website or change `index.html`, `assets/app.js`, or CSS as part of routine data ingestion.
@@ -20,7 +20,21 @@ Updated: 2026-10-29. This document governs **standings and next-season European 
 5. **Browser display**: directly inspect that season's deployed `?league=...&season=...&view=table` page, every European label, non-entry status, relegation tag, icon display and season navigation. JSON existence is not evidence of browser success.
 6. **Completion log**: record source date/references, exceptions, JSON commit SHA and display-review outcome. Declare a league complete only after all gates for all seasons pass.
 
-## Baseline on 2026-10-29
+
+## 2025-26 extension (added 2026-10-29)
+
+**Current active data scope: 1999-00–2025-26, 27 seasons in both La Liga and Premier League.** The 26-season historical figures below describe the previous snapshot and are retained as an audit trail.
+
+- La Liga active archive: `data/laliga-standings-verified-1999-2026.json` — 27 seasons × 20 clubs, 540 table rows. Original `data/laliga-standings-verified-1999-2025.json` is a legacy 26-season snapshot and is no longer fetched by the website.
+- La Liga 2025-26: Barcelona 94 points, Real Madrid 86; relegated Mallorca, Girona and Real Oviedo. 2026-27 UEFA entrants: UCL Barcelona, Real Madrid, Villarreal, Atlético de Madrid, Real Betis; UEL Real Sociedad (Copa del Rey winners), Celta; UECL Getafe. Sources: [RSSSF Spain 2026](https://rsssf.org/tabless/span2026.html), [LaLiga champions](https://www.laliga.com/noticias/hansi-flick-mejor-entrenador-de-laliga-ea-sports-2025-2026), [LaLiga relegation](https://www.laliga.com/noticias/equipos-que-bajan-a-segunda), UEFA competition phase lists from October 2026. Dedicated independent row references: `audit/laliga-rsssf-2025-26.json`.
+- Premier League 2025-26: `data/premierleague-2025-26.json` — official 20-team final standings and 2026-27 UEFA participation. Arsenal champions 85 points; relegated West Ham, Burnley and Wolves. Five UCL: Arsenal, Man City, Man United, Aston Villa, Liverpool. Three UEL: Bournemouth, Sunderland, Crystal Palace (UECL titleholder despite finishing 15th). One UECL: Brighton.
+- Premier League current cross-season European archive: `data/premierleague-europe-qualification-1999-2026.json` — 27 seasons, 204 entrant-season records. Previous `...1999-2025.json` preserved as a 26-season historical snapshot.
+- Official PL source: [2025-26 final standings](https://www.premierleague.com/en/tables/premier-league/2025-26), [PL 2025-26 season summary](https://www.premierleague.com/en/news/4668605/everything-thats-been-decided-in-202526-league). UEFA 2026-27 UCL/UEL/UECL league phase entrant publications provide a separate check. Independent reference: `audit/premierleague-rsssf-2025.json`.
+- Website: season list, masthead and season-count indicators extended to 27; source path updated to the 1999-2026 La Liga archive. No player nominations, positions, grades or Best XI were modified.
+- Validation: `node scripts/verify-laliga.mjs` and `node scripts/verify-premierleague.mjs` now span 27 seasons.
+- Remaining historical limitations **unchanged**: some earlier next-season UEFA qualification source checks and full 27-season live-browser and historical badge tests have not been independently completed. An image URL is not proof a crest renders.
+
+## Baseline on 2026-10-29 (prior 26-season snapshot)
 
 ### La Liga
 - Unified archive: `data/laliga-standings-verified-1999-2025.json`, 26 seasons × 20 clubs (520 rows), 42 distinct club identities.
