@@ -13,7 +13,7 @@
     "source": "BDFutbol league lineup tables for club-season; La Liga archive for standings and European participants",
     "dataCollected": "2026-10-30",
     "candidateCount": 135,
-    "sourceScope": "Spanish top-flight league matches only",
+    "sourceScope": "La Liga league-only appearances/starts/minutes, not UEFA Cup/UCL.",
     "positionVerifiedCount": 15,
     "unverifiedPositions": 120,
     "positionNotes": "Outfield roles require contemporary positional lineups verification; the provisional classification is not approved.",
@@ -29,7 +29,8 @@
       "Alavés Carles Llorens left-back verified from BDFutbol historical player page",
       "2001-02 2002 Intertoto Villarreal Xavi Roca 22 starts confirmed, Jesús Galván second RB 17 starts; BDFutbol matchup role pending",
       "2001-02 Betis Dani 11 starts competes with João Tomás 15; second striker eligibility to be verified",
-      "Attacking central creator, 23 league starts; stored in CM pool only provisionally under 4-2-3-1 no-CAM convention. Actual CAM role must be independently audited."
+      "Attacking central creator, 23 league starts; stored in CM pool only provisionally under 4-2-3-1 no-CAM convention. Actual CAM role must be independently audited.",
+      "Málaga 2001-02 4-4-2: RB Josemi, CB Litos/Roteta, LB Fernando Sanz, LM Musampa, RM Gerardo; El País 2002-01-20; subject to season majority audit."
     ],
     "formationVerification": "needs_review",
     "bestXiStatus": "not_selected",
@@ -39,7 +40,7 @@
     "birthdateAudit": "partial; populated birthdates may be inherited from prior draft or manually corroborated; unpopulated are null",
     "pendingUnassignedCandidates": [],
     "coverageState": "NEEDS_VERIFICATION",
-    "rosterReaudit": "first-season full list compared to BDFutbol; starters/role position disputes remain"
+    "rosterReaudit": "All nine eligible clubs reviewed against BDFutbol seasonal squads; corrections and missing starter-equivalent candidates preserved under draft. Match-by-match primary positional verification pending."
   },
   "clubs": [
     {
@@ -3246,7 +3247,7 @@
     },
     {
       "id": "laliga-200102-malaga-04",
-      "position": "CB",
+      "position": "LB",
       "nameKo": "페르난도 산스",
       "name": "Fernando Sanz",
       "club": "malaga",
@@ -3269,7 +3270,12 @@
         "https://www.transfermarkt.es/malaga-cf/startseite/verein/1084/saison_id/2001"
       ],
       "verificationNotes": [
-        "Match-by-match majority-position evidence pending; positional assignment is provisional."
+        "Match-by-match majority-position evidence pending; positional assignment is provisional.",
+        "2002-01-19 Real Madrid match match report 4-4-2: Josemi, Litos, Roteta, Fernando Sanz defence; Fernando Sanz LB provisional. Match-by-match season majority requires audit."
+      ],
+      "positionEvidenceSources": [
+        "https://elpais.com/diario/2002/01/20/deportes/1011481201_850215.html",
+        "https://www.transfermarkt.pe/malaga-cf_real-madrid-cf/index/spielbericht/1089693"
       ]
     },
     {
@@ -3309,7 +3315,7 @@
       "clubId": "malaga",
       "clubName": "Málaga CF",
       "born": "1970-01-16",
-      "role": "backup",
+      "role": "starter",
       "starts": 30,
       "leagueAppearances": 30,
       "leagueStarts": 30,
@@ -3328,7 +3334,11 @@
       ],
       "verificationNotes": [
         "Match-by-match majority-position evidence pending; positional assignment is provisional.",
-        "Málaga club and UEFA contemporary records identify this player as Mikel Roteta."
+        "Málaga club and UEFA contemporary records identify this player as Mikel Roteta.",
+        "CB partnered Litos in contemporary 2002-01-19 4-4-2 match; 30/30 league starts, not backup."
+      ],
+      "positionEvidenceSources": [
+        "https://elpais.com/diario/2002/01/20/deportes/1011481201_850215.html"
       ]
     },
     {
@@ -4606,5 +4616,140 @@
     "LW": "draft_unapproved",
     "RW": "draft_unapproved",
     "ST": "draft_unapproved"
+  },
+  "candidateAudit": {
+    "clubResearchCoverage": [
+      {
+        "clubId": "valencia",
+        "clubName": "Valencia CF",
+        "competition": "UCL",
+        "status": "NEEDS_VERIFICATION",
+        "researchPerformed": true,
+        "rosterEvidenceUrl": "https://www.bdfutbol.com/en/t/t2001-0236.html",
+        "researchMethod": "BDFutbol league appearances/starts, listed squad and selected contemporary match lineups; partial secondary checks",
+        "registered": 16,
+        "starters": 11,
+        "backups": 5,
+        "positionNeedsReview": 14,
+        "missingPrimaryRoleNotes": null
+      },
+      {
+        "clubId": "deportivo",
+        "clubName": "RC Deportivo de La Coruña",
+        "competition": "UCL",
+        "status": "NEEDS_VERIFICATION",
+        "researchPerformed": true,
+        "rosterEvidenceUrl": "https://www.bdfutbol.com/en/t/t2001-0213.html",
+        "researchMethod": "BDFutbol league appearances/starts, listed squad and selected contemporary match lineups; partial secondary checks",
+        "registered": 17,
+        "starters": 12,
+        "backups": 5,
+        "positionNeedsReview": 16,
+        "missingPrimaryRoleNotes": null
+      },
+      {
+        "clubId": "madrid",
+        "clubName": "Real Madrid",
+        "competition": "UCL",
+        "status": "NEEDS_VERIFICATION",
+        "researchPerformed": true,
+        "rosterEvidenceUrl": "https://www.bdfutbol.com/en/t/t2001-022.html",
+        "researchMethod": "BDFutbol league appearances/starts, listed squad and selected contemporary match lineups; partial secondary checks",
+        "registered": 15,
+        "starters": 11,
+        "backups": 4,
+        "positionNeedsReview": 13,
+        "missingPrimaryRoleNotes": null
+      },
+      {
+        "clubId": "barca",
+        "clubName": "FC Barcelona",
+        "competition": "UCL",
+        "status": "NEEDS_VERIFICATION",
+        "researchPerformed": true,
+        "rosterEvidenceUrl": "https://www.bdfutbol.com/en/t/t2001-021.html",
+        "researchMethod": "BDFutbol league appearances/starts, listed squad and selected contemporary match lineups; partial secondary checks",
+        "registered": 15,
+        "starters": 11,
+        "backups": 4,
+        "positionNeedsReview": 13,
+        "missingPrimaryRoleNotes": null
+      },
+      {
+        "clubId": "celta",
+        "clubName": "RC Celta",
+        "competition": "UEFA Cup",
+        "status": "NEEDS_VERIFICATION",
+        "researchPerformed": true,
+        "rosterEvidenceUrl": "https://www.bdfutbol.com/en/t/t2001-0211.html",
+        "researchMethod": "BDFutbol league appearances/starts, listed squad and selected contemporary match lineups; partial secondary checks",
+        "registered": 17,
+        "starters": 10,
+        "backups": 7,
+        "positionNeedsReview": 15,
+        "missingPrimaryRoleNotes": null
+      },
+      {
+        "clubId": "betis",
+        "clubName": "Real Betis",
+        "competition": "UEFA Cup",
+        "status": "NEEDS_VERIFICATION",
+        "researchPerformed": true,
+        "rosterEvidenceUrl": "https://www.bdfutbol.com/en/t/t2001-028.html",
+        "researchMethod": "BDFutbol league appearances/starts, listed squad and selected contemporary match lineups; partial secondary checks",
+        "registered": 14,
+        "starters": 10,
+        "backups": 4,
+        "positionNeedsReview": 13,
+        "missingPrimaryRoleNotes": null
+      },
+      {
+        "clubId": "alaves",
+        "clubName": "Deportivo Alavés",
+        "competition": "UEFA Cup",
+        "status": "NEEDS_VERIFICATION",
+        "researchPerformed": true,
+        "rosterEvidenceUrl": "https://www.bdfutbol.com/en/t/t2001-023.html",
+        "researchMethod": "BDFutbol league appearances/starts, listed squad and selected contemporary match lineups; partial secondary checks",
+        "registered": 14,
+        "starters": 10,
+        "backups": 4,
+        "positionNeedsReview": 11,
+        "missingPrimaryRoleNotes": "RW slot unused pending analysis of narrow attacker/creator arrangement."
+      },
+      {
+        "clubId": "malaga",
+        "clubName": "Málaga CF",
+        "competition": "Intertoto Cup",
+        "status": "NEEDS_VERIFICATION",
+        "researchPerformed": true,
+        "rosterEvidenceUrl": "https://www.bdfutbol.com/en/t/t2001-0223.html",
+        "researchMethod": "BDFutbol league appearances/starts, listed squad and selected contemporary match lineups; partial secondary checks",
+        "registered": 12,
+        "starters": 10,
+        "backups": 2,
+        "positionNeedsReview": 11,
+        "missingPrimaryRoleNotes": "Confirmed 4-4-2 back four in 2002-01-19 contemporary report; no forced unused CAM."
+      },
+      {
+        "clubId": "villarreal",
+        "clubName": "Villarreal CF",
+        "competition": "Intertoto Cup",
+        "status": "NEEDS_VERIFICATION",
+        "researchPerformed": true,
+        "rosterEvidenceUrl": "https://www.bdfutbol.com/en/t/t2001-0238.html",
+        "researchMethod": "BDFutbol league appearances/starts, listed squad and selected contemporary match lineups; partial secondary checks",
+        "registered": 15,
+        "starters": 10,
+        "backups": 5,
+        "positionNeedsReview": 14,
+        "missingPrimaryRoleNotes": null
+      }
+    ],
+    "status": "all_eligible_clubs_first_pass_researched_position_verification_pending",
+    "eligibleClubCount": 9,
+    "researchedClubCount": 9,
+    "missingClubs": [],
+    "sourcesScope": "BDFutbol league PM/SM/minute squad data; some individual positioning corroborated by contemporary lineups, mostly not majority-position signed off."
   }
 }
