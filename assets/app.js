@@ -17,14 +17,11 @@ const yearList=Array.from({length:26},(_,i)=>{let a=1999+i,b=(a+1)%100;return a+
 function esc(a){return String(a??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
 function club(id){return (data&&data.clubs||[]).find(c=>c.id===id)||{id,name:id,abbr:id.slice(0,3).toUpperCase()}}
 function crest(id){
- let c=club(id),fb='<span class="crest-fallback">'+esc(c.abbr||c.name.slice(0,3))+'</span>';
- if(c.crestCrop&&c.crestUrl){
-  let p=c.crestCrop,fallbackSrc=c.crestFallbackUrl||"";
-  let fallbackImg=fallbackSrc?'<img class="crest" alt="" loading="lazy" src="'+esc(fallbackSrc)+'" onerror="this.outerHTML=this.dataset.fallback" data-fallback="'+esc(fb)+'">':fb;
-  let cropStyle='width:'+Number(p.imageWidth)+'px;height:'+Number(p.imageHeight)+'px;left:'+Number(p.left)+'px;top:'+Number(p.top)+'px';
-  return '<span class="crest-archive-crop" role="img" aria-label="'+esc(c.name)+' 1999–00 엠블럼" title="1999–00 Liga Este 수집 카드의 엠블럼">'+fallbackImg+'<img class="crest-period-img" alt="" loading="lazy" src="'+esc(c.crestUrl)+'" style="'+cropStyle+'" onerror="this.remove()"></span>'
- }
- return c.crestUrl?'<img class="crest" alt="" loading="lazy" src="'+esc(c.crestUrl)+'" onerror="this.outerHTML=this.dataset.fallback" data-fallback="'+esc(fb)+'">':fb
+ const c=club(id);
+ const fallback='<span class="crest-fallback">'+esc(c.abbr||c.name.slice(0,3))+'</span>';
+ if(!c.crestUrl)return fallback;
+ const backups=(c.crestBackupUrls||[]).filter(url=>typeof url==="string"&&url!==c.crestUrl&&/^https:\/\//.test(url));
+ return '<img class="crest" alt="" loading="lazy" src="'+esc(c.crestUrl)+'" data-backups="'+esc(JSON.stringify(backups))+'" data-fallback="'+esc(fallback)+'">';
 }
 function comp(name){if(!name)return '<span class="muted">—</span>';const type=name==="UEFA Cup"?"UEFA-Cup":name==="Intertoto Cup"?"Intertoto-Cup":name;let shown=name==="Intertoto Cup"?"Intertoto":name==="UEFA Cup"?"UEFA Cup":name;return '<span class="comp '+esc(type)+'">'+esc(shown)+'</span>'}
 const tierClassNames={"S":"tier-grade-s","A+":"tier-grade-a-plus","A":"tier-grade-a","A-":"tier-grade-a-minus","B+":"tier-grade-b-plus","B":"tier-grade-b","B-":"tier-grade-b-minus","C+":"tier-grade-c-plus","C":"tier-grade-c","C-":"tier-grade-c-minus","D":"tier-grade-d"};
@@ -234,6 +231,19 @@ function playerDetails(id){
  let layer=document.createElement("div");layer.id="modalLayer";layer.innerHTML=html;document.body.appendChild(layer)
 }
 function closeModal(){document.getElementById("modalLayer")?.remove()}
+/* Keep real club emblems visible when one provider fails or blocks hotlinking. */
+document.addEventListener("error",event=>{
+ const image=event.target;
+ if(!image||!image.classList?.contains("crest"))return;
+ let backups=[];try{backups=JSON.parse(image.dataset.backups||"[]")}catch(err){}
+ const attempt=Number(image.dataset.backupAttempt||0);
+ if(attempt<backups.length){
+   image.dataset.backupAttempt=String(attempt+1);
+   image.src=backups[attempt];
+   return;
+ }
+ image.outerHTML=image.dataset.fallback||"";
+},true);
 document.addEventListener("click",ev=>{
  let btn=ev.target.closest("button");if(btn){
  if(btn.dataset.openLeague){openArchive(btn.dataset.openLeague,btn.dataset.openSeason);return}
