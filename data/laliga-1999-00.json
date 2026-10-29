@@ -82,7 +82,7 @@
       "lastDraft": "2026-10-29",
       "selectionLogic": "Historically representative 1999-00 Spanish 4-2-3-1: GK1, RB1, CB2, LB1, DM1, CM1, CAM1, LW1, RW1, ST1. Each pick is #1 or within the top two for CB; positional ranks across all 148 unchanged."
     },
-    "crestSources": "Club images sourced from football-data.org and football-logos.cc. Deportivo's prior assumed /spain/512 URL was replaced with an image-indexed published asset URL; displayed image is a later Deportivo crest (2000–2026 style), not the historic 1997–2000 matchday emblem.",
+    "crestSources": "Period crests: Football Kit Archive (Barcelona 1975–2002), football-logos.cc (Atlético 1997–2000), 1999 Liga Este card (Deportivo 1999-00 cropped). Remaining 17 use current-era team images pending individual historical sourcing; attribution in clubs[].crestSource.",
     "positionalRanking": {
       "status": "assigned_all_candidates",
       "label": "포지션별 순위 배정 완료",
@@ -112,14 +112,21 @@
       "caveat": "Formation selection should be revised if a comprehensive season-wide count identifies a different most common shape."
     },
     "crestHistoricalReview": {
-      "club": "deportivo",
-      "era": "1997–2000",
-      "status": "historic_version_located_asset_pending",
-      "note": "The 1999–00 crest was the brighter 1997–2000 variant, not the later gold-and-purple 2000–2026 version. A viewable later-version image has been installed to replace a guessed URL; when a directly embeddable reliable 1997–2000 asset is sourced, replace this display URL.",
-      "sources": [
+      "season": "1999-00",
+      "status": "partial_historic_assets_live",
+      "exactEraIndependentLogos": [
+        "barca",
+        "atleti"
+      ],
+      "originalPeriodDocumentCrop": [
+        "deportivo"
+      ],
+      "otherClubEmblems": "17 present-day reference images with unverified season-correct appearance; a historically representative version should replace these when a reliable directly linkable period image is found.",
+      "note": "Deportivo is a crop of an authentic 1999–00 Irureta Panini/Liga Este card, not a clean isolated vector crest; if the image fails load, show its previous reference crest. Barcelona and Atletico are actual period-appropriate crest files. Remaining 17 are recognizable reference crests, not asserted exact 1999 designs.",
+      "sourceCatalogue": "https://soccerstickersfc.net/2025/12/este-la-liga-1999-2000-complete-album/",
+      "historicalDeportivo": [
         "https://www.footballkitarchive.com/deportivo-de-a-coruna-logo-history-t201/",
-        "https://1000logos.net/deportivo-la-coruna-logo/",
-        "https://www.euro-soccer-cards.com/es/liga-este-1999-00/escudo-deportivo-coruna-este-99-2000"
+        "https://www.euro-soccer-cards.com/es/liga-este-1999-00/irureta-entrenador-deportivo-coruna-este-99-2000"
       ]
     },
     "relegation": {
@@ -141,121 +148,188 @@
       "id": "deportivo",
       "name": "RC Deportivo de La Coruña",
       "abbr": "DEP",
-      "crestUrl": "https://assets.football-logos.cc/logos/spain/3000x3000/deportivo-la-coruna.2383dc4b.png"
+      "crestUrl": "https://www.euro-soccer-cards.com/136100-large_default/irureta-entrenador-deportivo-coruna-este-99-2000.jpg",
+      "crestFallbackUrl": "https://assets.football-logos.cc/logos/spain/3000x3000/deportivo-la-coruna.2383dc4b.png",
+      "crestEra": "1999–00",
+      "crestHistoricalStatus": "period_original_crop",
+      "crestSource": "https://www.euro-soccer-cards.com/es/liga-este-1999-00/irureta-entrenador-deportivo-coruna-este-99-2000",
+      "crestCrop": {
+        "imageWidth": 61,
+        "imageHeight": 61,
+        "left": -37,
+        "top": -12
+      }
     },
     {
       "id": "barca",
       "name": "FC Barcelona",
       "abbr": "BAR",
-      "crestUrl": "https://crests.football-data.org/81.png"
+      "crestUrl": "https://www.footballkitarchive.com/static/logos/JnMbsV2gfLThVuc/fc-barcelona-1975-2002-logo.png",
+      "crestEra": "1975–2002",
+      "crestHistoricalStatus": "period_correct",
+      "crestSource": "https://www.footballkitarchive.com/fc-barcelona-logo-history/"
     },
     {
       "id": "valencia",
       "name": "Valencia CF",
       "abbr": "VAL",
-      "crestUrl": "https://crests.football-data.org/95.png"
+      "crestUrl": "https://crests.football-data.org/95.png",
+      "crestEra": "modern_reference",
+      "crestHistoricalStatus": "historical_version_unverified",
+      "crestSource": "https://www.football-data.org/"
     },
     {
       "id": "madrid",
       "name": "Real Madrid CF",
       "abbr": "RMA",
-      "crestUrl": "https://crests.football-data.org/86.png"
+      "crestUrl": "https://crests.football-data.org/86.png",
+      "crestEra": "modern_reference",
+      "crestHistoricalStatus": "historical_version_unverified",
+      "crestSource": "https://www.football-data.org/"
     },
     {
       "id": "zaragoza",
       "name": "Real Zaragoza",
       "abbr": "ZAR",
-      "crestUrl": "https://images.football-logos.cc/spain/512/real-zaragoza.png"
+      "crestUrl": "https://r2.thesportsdb.com/images/media/team/badge/sxpwxs1473503702.png",
+      "crestEra": "modern_reference",
+      "crestHistoricalStatus": "historical_version_unverified",
+      "crestSource": "https://www.thesportsdb.com/team/133737-real-zaragoza"
     },
     {
       "id": "alaves",
       "name": "Deportivo Alavés",
       "abbr": "ALA",
-      "crestUrl": "https://crests.football-data.org/263.png"
+      "crestUrl": "https://crests.football-data.org/263.png",
+      "crestEra": "modern_reference",
+      "crestHistoricalStatus": "historical_version_unverified",
+      "crestSource": "https://www.football-data.org/"
     },
     {
       "id": "espanyol",
       "name": "RCD Espanyol",
       "abbr": "ESP",
-      "crestUrl": "https://crests.football-data.org/80.png"
+      "crestUrl": "https://crests.football-data.org/80.png",
+      "crestEra": "modern_reference",
+      "crestHistoricalStatus": "historical_version_unverified",
+      "crestSource": "https://www.football-data.org/"
     },
     {
       "id": "rayo",
       "name": "Rayo Vallecano",
       "abbr": "RAY",
-      "crestUrl": "https://crests.football-data.org/87.png"
+      "crestUrl": "https://crests.football-data.org/87.png",
+      "crestEra": "modern_reference",
+      "crestHistoricalStatus": "historical_version_unverified",
+      "crestSource": "https://www.football-data.org/"
     },
     {
       "id": "celta",
       "name": "RC Celta de Vigo",
       "abbr": "CEL",
-      "crestUrl": "https://crests.football-data.org/558.png"
+      "crestUrl": "https://crests.football-data.org/558.png",
+      "crestEra": "modern_reference",
+      "crestHistoricalStatus": "historical_version_unverified",
+      "crestSource": "https://www.football-data.org/"
     },
     {
       "id": "mallorca",
       "name": "RCD Mallorca",
       "abbr": "MLL",
-      "crestUrl": "https://crests.football-data.org/89.png"
+      "crestUrl": "https://crests.football-data.org/89.png",
+      "crestEra": "modern_reference",
+      "crestHistoricalStatus": "historical_version_unverified",
+      "crestSource": "https://www.football-data.org/"
     },
     {
       "id": "valladolid",
       "name": "Real Valladolid CF",
       "abbr": "VLL",
-      "crestUrl": "https://images.football-logos.cc/spain/512/real-valladolid.png"
+      "crestUrl": "https://assets.football-logos.cc/logos/spain/700x700/valladolid.1aca82aa.png",
+      "crestEra": "modern_reference",
+      "crestHistoricalStatus": "historical_version_unverified",
+      "crestSource": "https://football-logos.cc/spain/valladolid/"
     },
     {
       "id": "athletic",
       "name": "Athletic Club",
       "abbr": "ATH",
-      "crestUrl": "https://crests.football-data.org/77.png"
+      "crestUrl": "https://crests.football-data.org/77.png",
+      "crestEra": "modern_reference",
+      "crestHistoricalStatus": "historical_version_unverified",
+      "crestSource": "https://www.football-data.org/"
     },
     {
       "id": "malaga",
       "name": "Málaga CF",
       "abbr": "MAL",
-      "crestUrl": "https://images.football-logos.cc/spain/512/malaga.png"
+      "crestUrl": "https://images.seeklogo.com/logo-png/28/1/malaga-logo-png_seeklogo-289120.png",
+      "crestEra": "modern_reference",
+      "crestHistoricalStatus": "historical_version_unverified",
+      "crestSource": "https://seeklogo.com/vector-logo/511240/malaga-cf"
     },
     {
       "id": "sociedad",
       "name": "Real Sociedad",
       "abbr": "RSO",
-      "crestUrl": "https://crests.football-data.org/92.png"
+      "crestUrl": "https://crests.football-data.org/92.png",
+      "crestEra": "modern_reference",
+      "crestHistoricalStatus": "historical_version_unverified",
+      "crestSource": "https://www.football-data.org/"
     },
     {
       "id": "racing",
       "name": "Real Racing Club de Santander",
       "abbr": "RAC",
-      "crestUrl": "https://images.football-logos.cc/spain/512/racing-santander.png"
+      "crestUrl": "https://r2.thesportsdb.com/images/media/team/badge/97kkiq1536575158.png",
+      "crestEra": "modern_reference",
+      "crestHistoricalStatus": "historical_version_unverified",
+      "crestSource": "https://www.thesportsdb.com/team/133726-racing-de-santander"
     },
     {
       "id": "oviedo",
       "name": "Real Oviedo",
       "abbr": "OVI",
-      "crestUrl": "https://images.football-logos.cc/spain/512/oviedo.png"
+      "crestUrl": "https://pub-3bd35431294c47068cbf31a95d572166.r2.dev/logos/real-oviedo/real-oviedo-logo-footylogos.png",
+      "crestEra": "modern_reference",
+      "crestHistoricalStatus": "historical_version_unverified",
+      "crestSource": "https://www.footylogos.com/es/logos/real-oviedo"
     },
     {
       "id": "numancia",
       "name": "CD Numancia",
       "abbr": "NUM",
-      "crestUrl": "https://images.football-logos.cc/spain/512/numancia.png"
+      "crestUrl": "https://www.zerozero.pt/img/logos/equipas/2562_imgbank_1700489985.png",
+      "crestEra": "modern_reference",
+      "crestHistoricalStatus": "historical_version_unverified",
+      "crestSource": "https://www.zerozero.pt/equipa/numancia/2562"
     },
     {
       "id": "betis",
       "name": "Real Betis Balompié",
       "abbr": "BET",
-      "crestUrl": "https://crests.football-data.org/90.png"
+      "crestUrl": "https://crests.football-data.org/90.png",
+      "crestEra": "modern_reference",
+      "crestHistoricalStatus": "historical_version_unverified",
+      "crestSource": "https://www.football-data.org/"
     },
     {
       "id": "atleti",
       "name": "Club Atlético de Madrid",
       "abbr": "ATM",
-      "crestUrl": "https://crests.football-data.org/78.png"
+      "crestUrl": "https://assets.football-logos.cc/logos/spain/1500x1500/atletico-madrid--1997-2000.f2baec8c.png",
+      "crestEra": "1997–2000",
+      "crestHistoricalStatus": "period_correct",
+      "crestSource": "https://football-logos.cc/spain/atletico-madrid/logo-history/"
     },
     {
       "id": "sevilla",
       "name": "Sevilla FC",
       "abbr": "SEV",
-      "crestUrl": "https://crests.football-data.org/559.png"
+      "crestUrl": "https://crests.football-data.org/559.png",
+      "crestEra": "modern_reference",
+      "crestHistoricalStatus": "historical_version_unverified",
+      "crestSource": "https://www.football-data.org/"
     }
   ],
   "qualifiers": [
