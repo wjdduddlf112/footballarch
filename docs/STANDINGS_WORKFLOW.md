@@ -83,3 +83,12 @@ Updated: 2026-10-29. This document governs **standings and next-season European 
 
 ## Separate player workflow
 Player nomination/position/tiers/ranks are a different, user-reviewed workflow. Do not approve provisional 1999-00 and 2000-01 players or sample 2022-23 tiers by adding or verifying league standings. Do not advance a player-position stage without the user's instruction.
+
+## Bundesliga continuation checkpoint — 2026-10-29
+
+- `data/bundesliga-standings-verified-1999-2026.json` updated with 21 actual next-season European participation fixes, including Intertoto, fair play, DFB Cup finalist, Conference League and European titleholder exceptions; **201** European entrant-season records total, status unapproved for 26 historical years pending final exhaustive actual-entrant cross-check.
+- **37/40** club crest sources linked; 3 still initial-only. Source URLs do not establish successful browser rendering or correct historical variants.
+- Preserved all 27 seasons / 486 source-matched RSSSF standings, with 18 playoff outcomes (14 survived, 4 relegated), via post-change independent in-memory integrity replay. No source capture or front-end files modified.
+- UI/live-screen gate remains open; champion C and stripped-title rendering code unchanged. Bundesliga completion **partial, not full**.
+- Continue to **Ligue 1** as user-directed league priority, without silently promoting Bundesliga/old player ratings to approved.
+- Detailed source/commit ledger: `audit/BUNDESLIGA_AUDIT_STATUS_2026-10-29.md`.
