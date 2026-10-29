@@ -7,14 +7,24 @@
     "status": "draft",
     "standingsOnly": true,
     "standingsStatus": "archived_source_crosschecked",
-    "playerCandidateStatus": "draft_unapproved_all_clubs_first_pass_needs_further_review",
+    "playerCandidateStatus": "all_qualified_clubs_seeding_complete_player_eligibility_and_position_verification_incomplete",
     "candidateCount": 119,
     "candidateCoverage": {
       "qualifiedClubs": 9,
       "clubsWithPlayerCandidates": 9,
       "fullyAuditedClubs": 0,
-      "clubsPending": [],
-      "notes": "Initial active roster and league-appearance-based selection seeded for all 1999-00 participant clubs; candidate eligibility and actual season-primary position still not signed off. All 1999-00 club records need lineup-level validation."
+      "clubsPending": [
+        "lazio",
+        "juventus",
+        "milan",
+        "inter",
+        "parma",
+        "roma",
+        "fiorentina",
+        "udinese",
+        "perugia"
+      ],
+      "notes": "All qualified clubs have first-pass researched candidates; no club season's primary-position match-by-match frequency or formation is fully verified. Do not call completed/approved."
     },
     "statsScope": "Serie A league matches only",
     "tierStatus": "not_assessed",
@@ -55,7 +65,9 @@
     "qualificationNotes": "Inter entered UCL after play-off victory over Parma. Perugia and Udinese participated in 2000 Intertoto; Udinese subsequently won a UEFA Cup entry.",
     "playerApprovalUnchanged": true,
     "lastReview": "2026-10-30",
-    "candidateAuditNotes": "Milan Maldini reassigned from LB to CB based on first-hand Roma historical analysis of Zaccheroni 3-back; Ayala with only 9 league starts removed from CB three-player shortlist. Roma Cafu, Zago and Zanetti DOB errors rectified against UEFA, Roma historical, official Inter sources. Verified 1999 Fiorentina/Udinese etc research continue; low-start RB Juventus (Birindelli4) and Perugia CB Rivalta7 removed, Colonnese replaced with Simić19."
+    "candidateAuditNotes": "Milan Maldini reassigned from LB to CB based on first-hand Roma historical analysis of Zaccheroni 3-back; Ayala with only 9 league starts removed from CB three-player shortlist. Roma Cafu, Zago and Zanetti DOB errors rectified against UEFA, Roma historical, official Inter sources. Verified 1999 Fiorentina/Udinese etc research continue; low-start RB Juventus (Birindelli4) and Perugia CB Rivalta7 removed, Colonnese replaced with Simić19.",
+    "positionValidationStatus": "needs_review_all",
+    "rolesSemantics": "Candidate-slot starter is highest league-start player per fixed position; backup is secondary candidate slot even when historical co-starter. 2 CB starters and up to 1 backup; 2 CM starters and up to 1 backup provisionally. Historical actual formation exception may change positions/CM/CAM eligibility at signoff."
   },
   "clubs": [
     {
@@ -578,14 +590,15 @@
       "leagueStarts": 28,
       "leagueMinutes": 2339,
       "statsScope": "Serie A domestic league only",
-      "positionVerification": "source_crosschecked_provisional",
+      "positionVerification": "needs_review",
       "verificationReasons": [],
       "sources": [
         "https://www.laziostories.com/post/1999-00-complete-player-statistics",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/lazio.htm",
         "https://universitadelcalcio.it/la-lazio-di-eriksson-dallo-scudetto-2000-alla-leggenda-biancoceleste/"
       ],
-      "evidence": "https://www.laziostories.com/post/1999-00-complete-player-statistics"
+      "evidence": "https://www.laziostories.com/post/1999-00-complete-player-statistics",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-00-lazio-02",
@@ -606,14 +619,15 @@
       "leagueStarts": 6,
       "leagueMinutes": 721,
       "statsScope": "Serie A domestic league only",
-      "positionVerification": "source_crosschecked_provisional",
+      "positionVerification": "needs_review",
       "verificationReasons": [],
       "sources": [
         "https://www.laziostories.com/post/1999-00-complete-player-statistics",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/lazio.htm",
         "https://universitadelcalcio.it/la-lazio-di-eriksson-dallo-scudetto-2000-alla-leggenda-biancoceleste/"
       ],
-      "evidence": "https://www.laziostories.com/post/1999-00-complete-player-statistics"
+      "evidence": "https://www.laziostories.com/post/1999-00-complete-player-statistics",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-00-lazio-03",
@@ -634,14 +648,15 @@
       "leagueStarts": 28,
       "leagueMinutes": 2405,
       "statsScope": "Serie A domestic league only",
-      "positionVerification": "source_crosschecked_provisional",
+      "positionVerification": "needs_review",
       "verificationReasons": [],
       "sources": [
         "https://www.laziostories.com/post/1999-00-complete-player-statistics",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/lazio.htm",
         "https://universitadelcalcio.it/la-lazio-di-eriksson-dallo-scudetto-2000-alla-leggenda-biancoceleste/"
       ],
-      "evidence": "https://www.laziostories.com/post/1999-00-complete-player-statistics"
+      "evidence": "https://www.laziostories.com/post/1999-00-complete-player-statistics",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-00-lazio-04",
@@ -662,14 +677,15 @@
       "leagueStarts": 26,
       "leagueMinutes": 2330,
       "statsScope": "Serie A domestic league only",
-      "positionVerification": "source_crosschecked_provisional",
+      "positionVerification": "needs_review",
       "verificationReasons": [],
       "sources": [
         "https://www.laziostories.com/post/1999-00-complete-player-statistics",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/lazio.htm",
         "https://universitadelcalcio.it/la-lazio-di-eriksson-dallo-scudetto-2000-alla-leggenda-biancoceleste/"
       ],
-      "evidence": "https://www.laziostories.com/post/1999-00-complete-player-statistics"
+      "evidence": "https://www.laziostories.com/post/1999-00-complete-player-statistics",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-00-lazio-05",
@@ -690,14 +706,15 @@
       "leagueStarts": 10,
       "leagueMinutes": 974,
       "statsScope": "Serie A domestic league only",
-      "positionVerification": "source_crosschecked_provisional",
+      "positionVerification": "needs_review",
       "verificationReasons": [],
       "sources": [
         "https://www.laziostories.com/post/1999-00-complete-player-statistics",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/lazio.htm",
         "https://universitadelcalcio.it/la-lazio-di-eriksson-dallo-scudetto-2000-alla-leggenda-biancoceleste/"
       ],
-      "evidence": "https://www.laziostories.com/post/1999-00-complete-player-statistics"
+      "evidence": "https://www.laziostories.com/post/1999-00-complete-player-statistics",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-00-lazio-06",
@@ -727,7 +744,8 @@
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/lazio.htm",
         "https://universitadelcalcio.it/la-lazio-di-eriksson-dallo-scudetto-2000-alla-leggenda-biancoceleste/"
       ],
-      "evidence": "https://www.laziostories.com/post/1999-00-complete-player-statistics"
+      "evidence": "https://www.laziostories.com/post/1999-00-complete-player-statistics",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-00-lazio-07",
@@ -757,7 +775,8 @@
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/lazio.htm",
         "https://universitadelcalcio.it/la-lazio-di-eriksson-dallo-scudetto-2000-alla-leggenda-biancoceleste/"
       ],
-      "evidence": "https://www.laziostories.com/post/1999-00-complete-player-statistics"
+      "evidence": "https://www.laziostories.com/post/1999-00-complete-player-statistics",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-00-lazio-08",
@@ -778,14 +797,15 @@
       "leagueStarts": 25,
       "leagueMinutes": 2147,
       "statsScope": "Serie A domestic league only",
-      "positionVerification": "source_crosschecked_provisional",
+      "positionVerification": "needs_review",
       "verificationReasons": [],
       "sources": [
         "https://www.laziostories.com/post/1999-00-complete-player-statistics",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/lazio.htm",
         "https://universitadelcalcio.it/la-lazio-di-eriksson-dallo-scudetto-2000-alla-leggenda-biancoceleste/"
       ],
-      "evidence": "https://www.laziostories.com/post/1999-00-complete-player-statistics"
+      "evidence": "https://www.laziostories.com/post/1999-00-complete-player-statistics",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-00-lazio-09",
@@ -797,7 +817,7 @@
       "clubId": "lazio",
       "clubName": "SS Lazio",
       "position": "DM",
-      "role": "starter",
+      "role": "backup",
       "starts": 15,
       "tier": null,
       "rank": null,
@@ -815,7 +835,8 @@
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/lazio.htm",
         "https://universitadelcalcio.it/la-lazio-di-eriksson-dallo-scudetto-2000-alla-leggenda-biancoceleste/"
       ],
-      "evidence": "https://www.laziostories.com/post/1999-00-complete-player-statistics"
+      "evidence": "https://www.laziostories.com/post/1999-00-complete-player-statistics",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-00-lazio-10",
@@ -827,7 +848,7 @@
       "clubId": "lazio",
       "clubName": "SS Lazio",
       "position": "DM",
-      "role": "backup",
+      "role": "starter",
       "starts": 15,
       "tier": null,
       "rank": null,
@@ -845,7 +866,8 @@
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/lazio.htm",
         "https://universitadelcalcio.it/la-lazio-di-eriksson-dallo-scudetto-2000-alla-leggenda-biancoceleste/"
       ],
-      "evidence": "https://www.laziostories.com/post/1999-00-complete-player-statistics"
+      "evidence": "https://www.laziostories.com/post/1999-00-complete-player-statistics",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-00-lazio-11",
@@ -866,14 +888,15 @@
       "leagueStarts": 31,
       "leagueMinutes": 2610,
       "statsScope": "Serie A domestic league only",
-      "positionVerification": "source_crosschecked_provisional",
+      "positionVerification": "needs_review",
       "verificationReasons": [],
       "sources": [
         "https://www.laziostories.com/post/1999-00-complete-player-statistics",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/lazio.htm",
         "https://universitadelcalcio.it/la-lazio-di-eriksson-dallo-scudetto-2000-alla-leggenda-biancoceleste/"
       ],
-      "evidence": "https://www.laziostories.com/post/1999-00-complete-player-statistics"
+      "evidence": "https://www.laziostories.com/post/1999-00-complete-player-statistics",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-00-lazio-12",
@@ -903,7 +926,8 @@
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/lazio.htm",
         "https://universitadelcalcio.it/la-lazio-di-eriksson-dallo-scudetto-2000-alla-leggenda-biancoceleste/"
       ],
-      "evidence": "https://www.laziostories.com/post/1999-00-complete-player-statistics"
+      "evidence": "https://www.laziostories.com/post/1999-00-complete-player-statistics",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-00-lazio-13",
@@ -931,7 +955,8 @@
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/lazio.htm",
         "https://universitadelcalcio.it/la-lazio-di-eriksson-dallo-scudetto-2000-alla-leggenda-biancoceleste/"
       ],
-      "evidence": "https://www.laziostories.com/post/1999-00-complete-player-statistics"
+      "evidence": "https://www.laziostories.com/post/1999-00-complete-player-statistics",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-00-lazio-14",
@@ -961,7 +986,8 @@
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/lazio.htm",
         "https://universitadelcalcio.it/la-lazio-di-eriksson-dallo-scudetto-2000-alla-leggenda-biancoceleste/"
       ],
-      "evidence": "https://www.laziostories.com/post/1999-00-complete-player-statistics"
+      "evidence": "https://www.laziostories.com/post/1999-00-complete-player-statistics",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-00-lazio-15",
@@ -991,7 +1017,8 @@
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/lazio.htm",
         "https://universitadelcalcio.it/la-lazio-di-eriksson-dallo-scudetto-2000-alla-leggenda-biancoceleste/"
       ],
-      "evidence": "https://www.laziostories.com/post/1999-00-complete-player-statistics"
+      "evidence": "https://www.laziostories.com/post/1999-00-complete-player-statistics",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-00-lazio-16",
@@ -1012,14 +1039,15 @@
       "leagueStarts": 26,
       "leagueMinutes": 2273,
       "statsScope": "Serie A domestic league only",
-      "positionVerification": "source_crosschecked_provisional",
+      "positionVerification": "needs_review",
       "verificationReasons": [],
       "sources": [
         "https://www.laziostories.com/post/1999-00-complete-player-statistics",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/lazio.htm",
         "https://universitadelcalcio.it/la-lazio-di-eriksson-dallo-scudetto-2000-alla-leggenda-biancoceleste/"
       ],
-      "evidence": "https://www.laziostories.com/post/1999-00-complete-player-statistics"
+      "evidence": "https://www.laziostories.com/post/1999-00-complete-player-statistics",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-00-lazio-17",
@@ -1040,7 +1068,7 @@
       "leagueStarts": 15,
       "leagueMinutes": 1207,
       "statsScope": "Serie A domestic league only",
-      "positionVerification": "source_crosschecked_provisional",
+      "positionVerification": "needs_review",
       "verificationReasons": [
         "15 league starts versus Simone Inzaghi's 10; ST backup capped to one, to be reviewed."
       ],
@@ -1049,7 +1077,8 @@
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/lazio.htm",
         "https://universitadelcalcio.it/la-lazio-di-eriksson-dallo-scudetto-2000-alla-leggenda-biancoceleste/"
       ],
-      "evidence": "https://www.laziostories.com/post/1999-00-complete-player-statistics"
+      "evidence": "https://www.laziostories.com/post/1999-00-complete-player-statistics",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-juventus-01",
@@ -1070,13 +1099,14 @@
       "leagueStarts": 32,
       "leagueMinutes": 2851,
       "statsScope": "Serie A domestic league only",
-      "positionVerification": "source_crosschecked_provisional",
+      "positionVerification": "needs_review",
       "verificationReasons": [],
       "sources": [
         "https://fbref.com/en/squads/e0652b02/1999-2000/Juventus-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/juventus.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/e0652b02/1999-2000/Juventus-Stats"
+      "evidence": "https://fbref.com/en/squads/e0652b02/1999-2000/Juventus-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-juventus-02",
@@ -1105,7 +1135,8 @@
         "https://fbref.com/en/squads/e0652b02/1999-2000/Juventus-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/juventus.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/e0652b02/1999-2000/Juventus-Stats"
+      "evidence": "https://fbref.com/en/squads/e0652b02/1999-2000/Juventus-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-juventus-03",
@@ -1126,13 +1157,14 @@
       "leagueStarts": 32,
       "leagueMinutes": 2808,
       "statsScope": "Serie A domestic league only",
-      "positionVerification": "source_crosschecked_provisional",
+      "positionVerification": "needs_review",
       "verificationReasons": [],
       "sources": [
         "https://fbref.com/en/squads/e0652b02/1999-2000/Juventus-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/juventus.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/e0652b02/1999-2000/Juventus-Stats"
+      "evidence": "https://fbref.com/en/squads/e0652b02/1999-2000/Juventus-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-juventus-04",
@@ -1153,13 +1185,14 @@
       "leagueStarts": 31,
       "leagueMinutes": 2567,
       "statsScope": "Serie A domestic league only",
-      "positionVerification": "source_crosschecked_provisional",
+      "positionVerification": "needs_review",
       "verificationReasons": [],
       "sources": [
         "https://fbref.com/en/squads/e0652b02/1999-2000/Juventus-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/juventus.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/e0652b02/1999-2000/Juventus-Stats"
+      "evidence": "https://fbref.com/en/squads/e0652b02/1999-2000/Juventus-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-juventus-05",
@@ -1188,7 +1221,8 @@
         "https://fbref.com/en/squads/e0652b02/1999-2000/Juventus-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/juventus.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/e0652b02/1999-2000/Juventus-Stats"
+      "evidence": "https://fbref.com/en/squads/e0652b02/1999-2000/Juventus-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-juventus-06",
@@ -1217,7 +1251,8 @@
         "https://fbref.com/en/squads/e0652b02/1999-2000/Juventus-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/juventus.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/e0652b02/1999-2000/Juventus-Stats"
+      "evidence": "https://fbref.com/en/squads/e0652b02/1999-2000/Juventus-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-juventus-08",
@@ -1246,7 +1281,8 @@
         "https://fbref.com/en/squads/e0652b02/1999-2000/Juventus-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/juventus.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/e0652b02/1999-2000/Juventus-Stats"
+      "evidence": "https://fbref.com/en/squads/e0652b02/1999-2000/Juventus-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-juventus-09",
@@ -1267,13 +1303,14 @@
       "leagueStarts": 27,
       "leagueMinutes": 2428,
       "statsScope": "Serie A domestic league only",
-      "positionVerification": "source_crosschecked_provisional",
+      "positionVerification": "needs_review",
       "verificationReasons": [],
       "sources": [
         "https://fbref.com/en/squads/e0652b02/1999-2000/Juventus-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/juventus.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/e0652b02/1999-2000/Juventus-Stats"
+      "evidence": "https://fbref.com/en/squads/e0652b02/1999-2000/Juventus-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-juventus-10",
@@ -1302,7 +1339,8 @@
         "https://fbref.com/en/squads/e0652b02/1999-2000/Juventus-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/juventus.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/e0652b02/1999-2000/Juventus-Stats"
+      "evidence": "https://fbref.com/en/squads/e0652b02/1999-2000/Juventus-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-juventus-11",
@@ -1331,7 +1369,8 @@
         "https://fbref.com/en/squads/e0652b02/1999-2000/Juventus-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/juventus.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/e0652b02/1999-2000/Juventus-Stats"
+      "evidence": "https://fbref.com/en/squads/e0652b02/1999-2000/Juventus-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-juventus-12",
@@ -1360,7 +1399,8 @@
         "https://fbref.com/en/squads/e0652b02/1999-2000/Juventus-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/juventus.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/e0652b02/1999-2000/Juventus-Stats"
+      "evidence": "https://fbref.com/en/squads/e0652b02/1999-2000/Juventus-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-juventus-13",
@@ -1389,7 +1429,8 @@
         "https://fbref.com/en/squads/e0652b02/1999-2000/Juventus-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/juventus.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/e0652b02/1999-2000/Juventus-Stats"
+      "evidence": "https://fbref.com/en/squads/e0652b02/1999-2000/Juventus-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-juventus-14",
@@ -1418,7 +1459,8 @@
         "https://fbref.com/en/squads/e0652b02/1999-2000/Juventus-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/juventus.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/e0652b02/1999-2000/Juventus-Stats"
+      "evidence": "https://fbref.com/en/squads/e0652b02/1999-2000/Juventus-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-milan-01",
@@ -1449,7 +1491,8 @@
         "https://www.acmilan.com/en/news/articles/internationals/acmilan-1999-roster",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/dc56fe14/1999-2000/Milan-Stats"
+      "evidence": "https://fbref.com/en/squads/dc56fe14/1999-2000/Milan-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-milan-02",
@@ -1479,7 +1522,8 @@
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/milan.htm",
         "https://www.acmilan.com/en/news/articles/internationals/acmilan-1999-roster"
       ],
-      "evidence": "https://fbref.com/en/squads/dc56fe14/1999-2000/Milan-Stats"
+      "evidence": "https://fbref.com/en/squads/dc56fe14/1999-2000/Milan-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-milan-03",
@@ -1500,14 +1544,15 @@
       "leagueStarts": 27,
       "leagueMinutes": 2326,
       "statsScope": "Serie A domestic league only",
-      "positionVerification": "source_crosschecked_provisional",
+      "positionVerification": "needs_review",
       "verificationReasons": [],
       "sources": [
         "https://fbref.com/en/squads/dc56fe14/1999-2000/Milan-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/milan.htm",
         "https://www.acmilan.com/en/news/articles/internationals/acmilan-1999-roster"
       ],
-      "evidence": "https://fbref.com/en/squads/dc56fe14/1999-2000/Milan-Stats"
+      "evidence": "https://fbref.com/en/squads/dc56fe14/1999-2000/Milan-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-milan-05",
@@ -1538,7 +1583,8 @@
         "https://www.acmilan.com/en/news/articles/internationals/acmilan-1999-roster",
         "https://fbref.com/en/players/d447541e/Luigi-Sala"
       ],
-      "evidence": "https://fbref.com/en/squads/dc56fe14/1999-2000/Milan-Stats"
+      "evidence": "https://fbref.com/en/squads/dc56fe14/1999-2000/Milan-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-milan-06",
@@ -1569,7 +1615,8 @@
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/milan.htm",
         "https://www.acmilan.com/en/news/articles/internationals/acmilan-1999-roster"
       ],
-      "evidence": "https://fbref.com/en/squads/dc56fe14/1999-2000/Milan-Stats"
+      "evidence": "https://fbref.com/en/squads/dc56fe14/1999-2000/Milan-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-milan-07",
@@ -1581,7 +1628,7 @@
       "clubId": "milan",
       "clubName": "AC Milan",
       "position": "RB",
-      "role": "backup",
+      "role": "starter",
       "starts": 17,
       "tier": null,
       "rank": null,
@@ -1599,7 +1646,8 @@
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/milan.htm",
         "https://www.acmilan.com/en/news/articles/internationals/acmilan-1999-roster"
       ],
-      "evidence": "https://fbref.com/en/squads/dc56fe14/1999-2000/Milan-Stats"
+      "evidence": "https://fbref.com/en/squads/dc56fe14/1999-2000/Milan-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-milan-08",
@@ -1629,7 +1677,8 @@
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/milan.htm",
         "https://www.acmilan.com/en/news/articles/internationals/acmilan-1999-roster"
       ],
-      "evidence": "https://fbref.com/en/squads/dc56fe14/1999-2000/Milan-Stats"
+      "evidence": "https://fbref.com/en/squads/dc56fe14/1999-2000/Milan-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-milan-09",
@@ -1659,7 +1708,8 @@
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/milan.htm",
         "https://www.acmilan.com/en/news/articles/internationals/acmilan-1999-roster"
       ],
-      "evidence": "https://fbref.com/en/squads/dc56fe14/1999-2000/Milan-Stats"
+      "evidence": "https://fbref.com/en/squads/dc56fe14/1999-2000/Milan-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-milan-10",
@@ -1690,7 +1740,8 @@
         "https://www.acmilan.com/en/news/articles/internationals/acmilan-1999-roster",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/dc56fe14/1999-2000/Milan-Stats"
+      "evidence": "https://fbref.com/en/squads/dc56fe14/1999-2000/Milan-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-milan-11",
@@ -1702,7 +1753,7 @@
       "clubId": "milan",
       "clubName": "AC Milan",
       "position": "CAM",
-      "role": "backup",
+      "role": "starter",
       "starts": 11,
       "tier": null,
       "rank": null,
@@ -1720,7 +1771,8 @@
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/milan.htm",
         "https://www.acmilan.com/en/news/articles/internationals/acmilan-1999-roster"
       ],
-      "evidence": "https://fbref.com/en/squads/dc56fe14/1999-2000/Milan-Stats"
+      "evidence": "https://fbref.com/en/squads/dc56fe14/1999-2000/Milan-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-milan-12",
@@ -1751,7 +1803,8 @@
         "https://www.acmilan.com/en/news/articles/internationals/acmilan-1999-roster",
         "https://www.acmilan.com/en/club/legends/players/serginho"
       ],
-      "evidence": "https://fbref.com/en/squads/dc56fe14/1999-2000/Milan-Stats"
+      "evidence": "https://fbref.com/en/squads/dc56fe14/1999-2000/Milan-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-milan-13",
@@ -1782,7 +1835,8 @@
         "https://www.acmilan.com/en/news/articles/internationals/acmilan-1999-roster",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/dc56fe14/1999-2000/Milan-Stats"
+      "evidence": "https://fbref.com/en/squads/dc56fe14/1999-2000/Milan-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-milan-14",
@@ -1803,14 +1857,15 @@
       "leagueStarts": 30,
       "leagueMinutes": 2593,
       "statsScope": "Serie A domestic league only",
-      "positionVerification": "source_crosschecked_provisional",
+      "positionVerification": "needs_review",
       "verificationReasons": [],
       "sources": [
         "https://fbref.com/en/squads/dc56fe14/1999-2000/Milan-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/milan.htm",
         "https://www.acmilan.com/en/news/articles/internationals/acmilan-1999-roster"
       ],
-      "evidence": "https://fbref.com/en/squads/dc56fe14/1999-2000/Milan-Stats"
+      "evidence": "https://fbref.com/en/squads/dc56fe14/1999-2000/Milan-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-milan-15",
@@ -1841,7 +1896,8 @@
         "https://www.acmilan.com/en/news/articles/internationals/acmilan-1999-roster",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/dc56fe14/1999-2000/Milan-Stats"
+      "evidence": "https://fbref.com/en/squads/dc56fe14/1999-2000/Milan-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-inter-01",
@@ -1862,13 +1918,14 @@
       "leagueStarts": 33,
       "leagueMinutes": 2871,
       "statsScope": "Serie A domestic league only",
-      "positionVerification": "source_crosschecked_provisional",
+      "positionVerification": "needs_review",
       "verificationReasons": [],
       "sources": [
         "https://fbref.com/en/squads/d609edc0/1999-2000/Internazionale-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/inter.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/d609edc0/1999-2000/Internazionale-Stats"
+      "evidence": "https://fbref.com/en/squads/d609edc0/1999-2000/Internazionale-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-inter-02",
@@ -1897,7 +1954,8 @@
         "https://fbref.com/en/squads/d609edc0/1999-2000/Internazionale-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/inter.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/d609edc0/1999-2000/Internazionale-Stats"
+      "evidence": "https://fbref.com/en/squads/d609edc0/1999-2000/Internazionale-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-inter-03",
@@ -1918,13 +1976,14 @@
       "leagueStarts": 34,
       "leagueMinutes": 3060,
       "statsScope": "Serie A domestic league only",
-      "positionVerification": "source_crosschecked_provisional",
+      "positionVerification": "needs_review",
       "verificationReasons": [],
       "sources": [
         "https://fbref.com/en/squads/d609edc0/1999-2000/Internazionale-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/inter.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/d609edc0/1999-2000/Internazionale-Stats"
+      "evidence": "https://fbref.com/en/squads/d609edc0/1999-2000/Internazionale-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-inter-05",
@@ -1936,7 +1995,7 @@
       "clubId": "inter",
       "clubName": "FC Internazionale Milano",
       "position": "CB",
-      "role": "backup",
+      "role": "starter",
       "starts": 19,
       "tier": null,
       "rank": null,
@@ -1953,7 +2012,8 @@
         "https://fbref.com/en/squads/d609edc0/1999-2000/Internazionale-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/inter.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/d609edc0/1999-2000/Internazionale-Stats"
+      "evidence": "https://fbref.com/en/squads/d609edc0/1999-2000/Internazionale-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-inter-06",
@@ -1982,7 +2042,8 @@
         "https://fbref.com/en/squads/d609edc0/1999-2000/Internazionale-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/inter.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/d609edc0/1999-2000/Internazionale-Stats"
+      "evidence": "https://fbref.com/en/squads/d609edc0/1999-2000/Internazionale-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-inter-07",
@@ -2011,7 +2072,8 @@
         "https://fbref.com/en/squads/d609edc0/1999-2000/Internazionale-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/inter.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/d609edc0/1999-2000/Internazionale-Stats"
+      "evidence": "https://fbref.com/en/squads/d609edc0/1999-2000/Internazionale-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-inter-08",
@@ -2032,13 +2094,14 @@
       "leagueStarts": 23,
       "leagueMinutes": 2157,
       "statsScope": "Serie A domestic league only",
-      "positionVerification": "source_crosschecked_provisional",
+      "positionVerification": "needs_review",
       "verificationReasons": [],
       "sources": [
         "https://fbref.com/en/squads/d609edc0/1999-2000/Internazionale-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/inter.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/d609edc0/1999-2000/Internazionale-Stats"
+      "evidence": "https://fbref.com/en/squads/d609edc0/1999-2000/Internazionale-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-inter-09",
@@ -2059,13 +2122,14 @@
       "leagueStarts": 20,
       "leagueMinutes": 1961,
       "statsScope": "Serie A domestic league only",
-      "positionVerification": "source_crosschecked_provisional",
+      "positionVerification": "needs_review",
       "verificationReasons": [],
       "sources": [
         "https://fbref.com/en/squads/d609edc0/1999-2000/Internazionale-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/inter.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/d609edc0/1999-2000/Internazionale-Stats"
+      "evidence": "https://fbref.com/en/squads/d609edc0/1999-2000/Internazionale-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-inter-10",
@@ -2077,7 +2141,7 @@
       "clubId": "inter",
       "clubName": "FC Internazionale Milano",
       "position": "CM",
-      "role": "backup",
+      "role": "starter",
       "starts": 19,
       "tier": null,
       "rank": null,
@@ -2094,7 +2158,8 @@
         "https://fbref.com/en/squads/d609edc0/1999-2000/Internazionale-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/inter.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/d609edc0/1999-2000/Internazionale-Stats"
+      "evidence": "https://fbref.com/en/squads/d609edc0/1999-2000/Internazionale-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-inter-11",
@@ -2123,7 +2188,8 @@
         "https://fbref.com/en/squads/d609edc0/1999-2000/Internazionale-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/inter.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/d609edc0/1999-2000/Internazionale-Stats"
+      "evidence": "https://fbref.com/en/squads/d609edc0/1999-2000/Internazionale-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-inter-12",
@@ -2152,7 +2218,8 @@
         "https://fbref.com/en/squads/d609edc0/1999-2000/Internazionale-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/inter.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/d609edc0/1999-2000/Internazionale-Stats"
+      "evidence": "https://fbref.com/en/squads/d609edc0/1999-2000/Internazionale-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-inter-13",
@@ -2173,13 +2240,14 @@
       "leagueStarts": 22,
       "leagueMinutes": 2080,
       "statsScope": "Serie A domestic league only",
-      "positionVerification": "source_crosschecked_provisional",
+      "positionVerification": "needs_review",
       "verificationReasons": [],
       "sources": [
         "https://fbref.com/en/squads/d609edc0/1999-2000/Internazionale-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/inter.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/d609edc0/1999-2000/Internazionale-Stats"
+      "evidence": "https://fbref.com/en/squads/d609edc0/1999-2000/Internazionale-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-inter-14",
@@ -2208,7 +2276,8 @@
         "https://fbref.com/en/squads/d609edc0/1999-2000/Internazionale-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/inter.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/d609edc0/1999-2000/Internazionale-Stats"
+      "evidence": "https://fbref.com/en/squads/d609edc0/1999-2000/Internazionale-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-parma-01",
@@ -2229,13 +2298,14 @@
       "leagueStarts": 32,
       "leagueMinutes": 2880,
       "statsScope": "Serie A domestic league only",
-      "positionVerification": "source_crosschecked_provisional",
+      "positionVerification": "needs_review",
       "verificationReasons": [],
       "sources": [
         "https://fbref.com/en/squads/eab4234c/1999-2000/Parma-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/parma.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/eab4234c/1999-2000/Parma-Stats"
+      "evidence": "https://fbref.com/en/squads/eab4234c/1999-2000/Parma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-parma-02",
@@ -2265,7 +2335,8 @@
         "https://fbref.com/en/squads/eab4234c/1999-2000/Parma-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/parma.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/eab4234c/1999-2000/Parma-Stats"
+      "evidence": "https://fbref.com/en/squads/eab4234c/1999-2000/Parma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-parma-03",
@@ -2286,13 +2357,14 @@
       "leagueStarts": 31,
       "leagueMinutes": 2763,
       "statsScope": "Serie A domestic league only",
-      "positionVerification": "source_crosschecked_provisional",
+      "positionVerification": "needs_review",
       "verificationReasons": [],
       "sources": [
         "https://fbref.com/en/squads/eab4234c/1999-2000/Parma-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/parma.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/eab4234c/1999-2000/Parma-Stats"
+      "evidence": "https://fbref.com/en/squads/eab4234c/1999-2000/Parma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-parma-04",
@@ -2321,7 +2393,8 @@
         "https://fbref.com/en/squads/eab4234c/1999-2000/Parma-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/parma.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/eab4234c/1999-2000/Parma-Stats"
+      "evidence": "https://fbref.com/en/squads/eab4234c/1999-2000/Parma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-parma-05",
@@ -2350,7 +2423,8 @@
         "https://fbref.com/en/squads/eab4234c/1999-2000/Parma-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/parma.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/eab4234c/1999-2000/Parma-Stats"
+      "evidence": "https://fbref.com/en/squads/eab4234c/1999-2000/Parma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-parma-06",
@@ -2379,7 +2453,8 @@
         "https://fbref.com/en/squads/eab4234c/1999-2000/Parma-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/parma.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/eab4234c/1999-2000/Parma-Stats"
+      "evidence": "https://fbref.com/en/squads/eab4234c/1999-2000/Parma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-parma-07",
@@ -2408,7 +2483,8 @@
         "https://fbref.com/en/squads/eab4234c/1999-2000/Parma-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/parma.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/eab4234c/1999-2000/Parma-Stats"
+      "evidence": "https://fbref.com/en/squads/eab4234c/1999-2000/Parma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-parma-08",
@@ -2437,7 +2513,8 @@
         "https://fbref.com/en/squads/eab4234c/1999-2000/Parma-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/parma.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/eab4234c/1999-2000/Parma-Stats"
+      "evidence": "https://fbref.com/en/squads/eab4234c/1999-2000/Parma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-parma-09",
@@ -2458,13 +2535,14 @@
       "leagueStarts": 23,
       "leagueMinutes": 1847,
       "statsScope": "Serie A domestic league only",
-      "positionVerification": "source_crosschecked_provisional",
+      "positionVerification": "needs_review",
       "verificationReasons": [],
       "sources": [
         "https://fbref.com/en/squads/eab4234c/1999-2000/Parma-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/parma.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/eab4234c/1999-2000/Parma-Stats"
+      "evidence": "https://fbref.com/en/squads/eab4234c/1999-2000/Parma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-parma-10",
@@ -2476,7 +2554,7 @@
       "clubId": "parma",
       "clubName": "Parma Calcio 1913",
       "position": "CM",
-      "role": "backup",
+      "role": "starter",
       "starts": 11,
       "tier": null,
       "rank": null,
@@ -2493,7 +2571,8 @@
         "https://fbref.com/en/squads/eab4234c/1999-2000/Parma-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/parma.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/eab4234c/1999-2000/Parma-Stats"
+      "evidence": "https://fbref.com/en/squads/eab4234c/1999-2000/Parma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-parma-11",
@@ -2522,7 +2601,8 @@
         "https://fbref.com/en/squads/eab4234c/1999-2000/Parma-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/parma.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/eab4234c/1999-2000/Parma-Stats"
+      "evidence": "https://fbref.com/en/squads/eab4234c/1999-2000/Parma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-parma-12",
@@ -2551,7 +2631,8 @@
         "https://fbref.com/en/squads/eab4234c/1999-2000/Parma-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/parma.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/eab4234c/1999-2000/Parma-Stats"
+      "evidence": "https://fbref.com/en/squads/eab4234c/1999-2000/Parma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-parma-13",
@@ -2563,7 +2644,7 @@
       "clubId": "parma",
       "clubName": "Parma Calcio 1913",
       "position": "LW",
-      "role": "backup",
+      "role": "starter",
       "starts": 11,
       "tier": null,
       "rank": null,
@@ -2580,7 +2661,8 @@
         "https://fbref.com/en/squads/eab4234c/1999-2000/Parma-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/parma.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/eab4234c/1999-2000/Parma-Stats"
+      "evidence": "https://fbref.com/en/squads/eab4234c/1999-2000/Parma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-parma-14",
@@ -2601,13 +2683,14 @@
       "leagueStarts": 34,
       "leagueMinutes": 2979,
       "statsScope": "Serie A domestic league only",
-      "positionVerification": "source_crosschecked_provisional",
+      "positionVerification": "needs_review",
       "verificationReasons": [],
       "sources": [
         "https://fbref.com/en/squads/eab4234c/1999-2000/Parma-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/parma.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/eab4234c/1999-2000/Parma-Stats"
+      "evidence": "https://fbref.com/en/squads/eab4234c/1999-2000/Parma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-parma-15",
@@ -2636,7 +2719,8 @@
         "https://fbref.com/en/squads/eab4234c/1999-2000/Parma-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/parma.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/eab4234c/1999-2000/Parma-Stats"
+      "evidence": "https://fbref.com/en/squads/eab4234c/1999-2000/Parma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-roma-01",
@@ -2657,13 +2741,14 @@
       "leagueStarts": 30,
       "leagueMinutes": 2700,
       "statsScope": "Serie A domestic league only",
-      "positionVerification": "source_crosschecked_provisional",
+      "positionVerification": "needs_review",
       "verificationReasons": [],
       "sources": [
         "https://fbref.com/en/squads/cf74a709/1999-2000/Roma-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/roma.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/cf74a709/1999-2000/Roma-Stats"
+      "evidence": "https://fbref.com/en/squads/cf74a709/1999-2000/Roma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-roma-02",
@@ -2692,7 +2777,8 @@
         "https://fbref.com/en/squads/cf74a709/1999-2000/Roma-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/roma.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/cf74a709/1999-2000/Roma-Stats"
+      "evidence": "https://fbref.com/en/squads/cf74a709/1999-2000/Roma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-roma-03",
@@ -2713,13 +2799,14 @@
       "leagueStarts": 34,
       "leagueMinutes": 3060,
       "statsScope": "Serie A domestic league only",
-      "positionVerification": "source_crosschecked_provisional",
+      "positionVerification": "needs_review",
       "verificationReasons": [],
       "sources": [
         "https://fbref.com/en/squads/cf74a709/1999-2000/Roma-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/roma.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/cf74a709/1999-2000/Roma-Stats"
+      "evidence": "https://fbref.com/en/squads/cf74a709/1999-2000/Roma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-roma-04",
@@ -2749,7 +2836,8 @@
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/roma.htm",
         "https://www.cucs.it/giocatori/antonio-carlos-zago/"
       ],
-      "evidence": "https://fbref.com/en/squads/cf74a709/1999-2000/Roma-Stats"
+      "evidence": "https://fbref.com/en/squads/cf74a709/1999-2000/Roma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-roma-05",
@@ -2778,7 +2866,8 @@
         "https://fbref.com/en/squads/cf74a709/1999-2000/Roma-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/roma.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/cf74a709/1999-2000/Roma-Stats"
+      "evidence": "https://fbref.com/en/squads/cf74a709/1999-2000/Roma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-roma-06",
@@ -2807,7 +2896,8 @@
         "https://fbref.com/en/squads/cf74a709/1999-2000/Roma-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/roma.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/cf74a709/1999-2000/Roma-Stats"
+      "evidence": "https://fbref.com/en/squads/cf74a709/1999-2000/Roma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-roma-07",
@@ -2838,7 +2928,8 @@
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/roma.htm",
         "https://www.uefa.com/newsfiles/461350.pdf"
       ],
-      "evidence": "https://fbref.com/en/squads/cf74a709/1999-2000/Roma-Stats"
+      "evidence": "https://fbref.com/en/squads/cf74a709/1999-2000/Roma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-roma-08",
@@ -2867,7 +2958,8 @@
         "https://fbref.com/en/squads/cf74a709/1999-2000/Roma-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/roma.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/cf74a709/1999-2000/Roma-Stats"
+      "evidence": "https://fbref.com/en/squads/cf74a709/1999-2000/Roma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-roma-09",
@@ -2879,7 +2971,7 @@
       "clubId": "roma",
       "clubName": "AS Roma",
       "position": "CM",
-      "role": "pending_review",
+      "role": "starter",
       "starts": 6,
       "tier": null,
       "rank": null,
@@ -2898,7 +2990,8 @@
         "https://www.inter.it/it/archivio_giocatore/G0682",
         "https://fbref.com/en/players/21dd8591/Cristiano-Zanetti"
       ],
-      "evidence": "https://fbref.com/en/squads/cf74a709/1999-2000/Roma-Stats"
+      "evidence": "https://fbref.com/en/squads/cf74a709/1999-2000/Roma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-roma-10",
@@ -2927,7 +3020,8 @@
         "https://fbref.com/en/squads/cf74a709/1999-2000/Roma-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/roma.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/cf74a709/1999-2000/Roma-Stats"
+      "evidence": "https://fbref.com/en/squads/cf74a709/1999-2000/Roma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-roma-11",
@@ -2956,7 +3050,8 @@
         "https://fbref.com/en/squads/cf74a709/1999-2000/Roma-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/roma.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/cf74a709/1999-2000/Roma-Stats"
+      "evidence": "https://fbref.com/en/squads/cf74a709/1999-2000/Roma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-roma-12",
@@ -2977,13 +3072,14 @@
       "leagueStarts": 30,
       "leagueMinutes": 2459,
       "statsScope": "Serie A domestic league only",
-      "positionVerification": "source_crosschecked_provisional",
+      "positionVerification": "needs_review",
       "verificationReasons": [],
       "sources": [
         "https://fbref.com/en/squads/cf74a709/1999-2000/Roma-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/roma.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/cf74a709/1999-2000/Roma-Stats"
+      "evidence": "https://fbref.com/en/squads/cf74a709/1999-2000/Roma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-roma-13",
@@ -3012,7 +3108,8 @@
         "https://fbref.com/en/squads/cf74a709/1999-2000/Roma-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/roma.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/cf74a709/1999-2000/Roma-Stats"
+      "evidence": "https://fbref.com/en/squads/cf74a709/1999-2000/Roma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-fiorentina-01",
@@ -3033,13 +3130,14 @@
       "leagueStarts": 34,
       "leagueMinutes": 3060,
       "statsScope": "Serie A domestic league only",
-      "positionVerification": "source_crosschecked_provisional",
+      "positionVerification": "needs_review",
       "verificationReasons": [],
       "sources": [
         "https://fbref.com/en/squads/421387cf/1999-2000/Fiorentina-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/fiorenti.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/421387cf/1999-2000/Fiorentina-Stats"
+      "evidence": "https://fbref.com/en/squads/421387cf/1999-2000/Fiorentina-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-fiorentina-03",
@@ -3060,13 +3158,14 @@
       "leagueStarts": 26,
       "leagueMinutes": 2394,
       "statsScope": "Serie A domestic league only",
-      "positionVerification": "source_crosschecked_provisional",
+      "positionVerification": "needs_review",
       "verificationReasons": [],
       "sources": [
         "https://fbref.com/en/squads/421387cf/1999-2000/Fiorentina-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/fiorenti.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/421387cf/1999-2000/Fiorentina-Stats"
+      "evidence": "https://fbref.com/en/squads/421387cf/1999-2000/Fiorentina-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-fiorentina-04",
@@ -3087,13 +3186,14 @@
       "leagueStarts": 26,
       "leagueMinutes": 2254,
       "statsScope": "Serie A domestic league only",
-      "positionVerification": "source_crosschecked_provisional",
+      "positionVerification": "needs_review",
       "verificationReasons": [],
       "sources": [
         "https://fbref.com/en/squads/421387cf/1999-2000/Fiorentina-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/fiorenti.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/421387cf/1999-2000/Fiorentina-Stats"
+      "evidence": "https://fbref.com/en/squads/421387cf/1999-2000/Fiorentina-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-fiorentina-05",
@@ -3122,7 +3222,8 @@
         "https://fbref.com/en/squads/421387cf/1999-2000/Fiorentina-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/fiorenti.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/421387cf/1999-2000/Fiorentina-Stats"
+      "evidence": "https://fbref.com/en/squads/421387cf/1999-2000/Fiorentina-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-fiorentina-06",
@@ -3151,7 +3252,8 @@
         "https://fbref.com/en/squads/421387cf/1999-2000/Fiorentina-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/fiorenti.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/421387cf/1999-2000/Fiorentina-Stats"
+      "evidence": "https://fbref.com/en/squads/421387cf/1999-2000/Fiorentina-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-fiorentina-07",
@@ -3163,7 +3265,7 @@
       "clubId": "fiorentina",
       "clubName": "ACF Fiorentina",
       "position": "RB",
-      "role": "backup",
+      "role": "starter",
       "starts": 14,
       "tier": null,
       "rank": null,
@@ -3181,7 +3283,8 @@
         "https://fbref.com/en/squads/421387cf/1999-2000/Fiorentina-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/fiorenti.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/421387cf/1999-2000/Fiorentina-Stats"
+      "evidence": "https://fbref.com/en/squads/421387cf/1999-2000/Fiorentina-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-fiorentina-08",
@@ -3202,13 +3305,14 @@
       "leagueStarts": 20,
       "leagueMinutes": 1739,
       "statsScope": "Serie A domestic league only",
-      "positionVerification": "source_crosschecked_provisional",
+      "positionVerification": "needs_review",
       "verificationReasons": [],
       "sources": [
         "https://fbref.com/en/squads/421387cf/1999-2000/Fiorentina-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/fiorenti.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/421387cf/1999-2000/Fiorentina-Stats"
+      "evidence": "https://fbref.com/en/squads/421387cf/1999-2000/Fiorentina-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-fiorentina-09",
@@ -3237,7 +3341,8 @@
         "https://fbref.com/en/squads/421387cf/1999-2000/Fiorentina-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/fiorenti.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/421387cf/1999-2000/Fiorentina-Stats"
+      "evidence": "https://fbref.com/en/squads/421387cf/1999-2000/Fiorentina-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-fiorentina-11",
@@ -3266,7 +3371,8 @@
         "https://fbref.com/en/squads/421387cf/1999-2000/Fiorentina-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/fiorenti.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/421387cf/1999-2000/Fiorentina-Stats"
+      "evidence": "https://fbref.com/en/squads/421387cf/1999-2000/Fiorentina-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-fiorentina-12",
@@ -3287,13 +3393,14 @@
       "leagueStarts": 30,
       "leagueMinutes": 2589,
       "statsScope": "Serie A domestic league only",
-      "positionVerification": "source_crosschecked_provisional",
+      "positionVerification": "needs_review",
       "verificationReasons": [],
       "sources": [
         "https://fbref.com/en/squads/421387cf/1999-2000/Fiorentina-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/fiorenti.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/421387cf/1999-2000/Fiorentina-Stats"
+      "evidence": "https://fbref.com/en/squads/421387cf/1999-2000/Fiorentina-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-fiorentina-13",
@@ -3322,7 +3429,8 @@
         "https://fbref.com/en/squads/421387cf/1999-2000/Fiorentina-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/fiorenti.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/421387cf/1999-2000/Fiorentina-Stats"
+      "evidence": "https://fbref.com/en/squads/421387cf/1999-2000/Fiorentina-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-udinese-01",
@@ -3343,13 +3451,14 @@
       "leagueStarts": 28,
       "leagueMinutes": 2496,
       "statsScope": "Serie A domestic league only",
-      "positionVerification": "source_crosschecked_provisional",
+      "positionVerification": "needs_review",
       "verificationReasons": [],
       "sources": [
         "https://fbref.com/en/squads/04eea015/1999-2000/Udinese-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/udinese.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/04eea015/1999-2000/Udinese-Stats"
+      "evidence": "https://fbref.com/en/squads/04eea015/1999-2000/Udinese-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-udinese-02",
@@ -3378,7 +3487,8 @@
         "https://fbref.com/en/squads/04eea015/1999-2000/Udinese-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/udinese.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/04eea015/1999-2000/Udinese-Stats"
+      "evidence": "https://fbref.com/en/squads/04eea015/1999-2000/Udinese-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-udinese-03",
@@ -3399,13 +3509,14 @@
       "leagueStarts": 30,
       "leagueMinutes": 2700,
       "statsScope": "Serie A domestic league only",
-      "positionVerification": "source_crosschecked_provisional",
+      "positionVerification": "needs_review",
       "verificationReasons": [],
       "sources": [
         "https://fbref.com/en/squads/04eea015/1999-2000/Udinese-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/udinese.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/04eea015/1999-2000/Udinese-Stats"
+      "evidence": "https://fbref.com/en/squads/04eea015/1999-2000/Udinese-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-udinese-04",
@@ -3426,13 +3537,14 @@
       "leagueStarts": 29,
       "leagueMinutes": 2596,
       "statsScope": "Serie A domestic league only",
-      "positionVerification": "source_crosschecked_provisional",
+      "positionVerification": "needs_review",
       "verificationReasons": [],
       "sources": [
         "https://fbref.com/en/squads/04eea015/1999-2000/Udinese-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/udinese.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/04eea015/1999-2000/Udinese-Stats"
+      "evidence": "https://fbref.com/en/squads/04eea015/1999-2000/Udinese-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-udinese-05",
@@ -3461,7 +3573,8 @@
         "https://fbref.com/en/squads/04eea015/1999-2000/Udinese-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/udinese.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/04eea015/1999-2000/Udinese-Stats"
+      "evidence": "https://fbref.com/en/squads/04eea015/1999-2000/Udinese-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-udinese-07",
@@ -3473,7 +3586,7 @@
       "clubId": "udinese",
       "clubName": "Udinese Calcio",
       "position": "RB",
-      "role": "backup",
+      "role": "starter",
       "starts": 15,
       "tier": null,
       "rank": null,
@@ -3490,7 +3603,8 @@
         "https://fbref.com/en/squads/04eea015/1999-2000/Udinese-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/udinese.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/04eea015/1999-2000/Udinese-Stats"
+      "evidence": "https://fbref.com/en/squads/04eea015/1999-2000/Udinese-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-udinese-08",
@@ -3511,13 +3625,14 @@
       "leagueStarts": 29,
       "leagueMinutes": 2585,
       "statsScope": "Serie A domestic league only",
-      "positionVerification": "source_crosschecked_provisional",
+      "positionVerification": "needs_review",
       "verificationReasons": [],
       "sources": [
         "https://fbref.com/en/squads/04eea015/1999-2000/Udinese-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/udinese.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/04eea015/1999-2000/Udinese-Stats"
+      "evidence": "https://fbref.com/en/squads/04eea015/1999-2000/Udinese-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-udinese-09",
@@ -3538,13 +3653,14 @@
       "leagueStarts": 33,
       "leagueMinutes": 2914,
       "statsScope": "Serie A domestic league only",
-      "positionVerification": "source_crosschecked_provisional",
+      "positionVerification": "needs_review",
       "verificationReasons": [],
       "sources": [
         "https://fbref.com/en/squads/04eea015/1999-2000/Udinese-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/udinese.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/04eea015/1999-2000/Udinese-Stats"
+      "evidence": "https://fbref.com/en/squads/04eea015/1999-2000/Udinese-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-udinese-10",
@@ -3556,7 +3672,7 @@
       "clubId": "udinese",
       "clubName": "Udinese Calcio",
       "position": "CM",
-      "role": "backup",
+      "role": "starter",
       "starts": 15,
       "tier": null,
       "rank": null,
@@ -3573,7 +3689,8 @@
         "https://fbref.com/en/squads/04eea015/1999-2000/Udinese-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/udinese.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/04eea015/1999-2000/Udinese-Stats"
+      "evidence": "https://fbref.com/en/squads/04eea015/1999-2000/Udinese-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-udinese-11",
@@ -3602,7 +3719,8 @@
         "https://fbref.com/en/squads/04eea015/1999-2000/Udinese-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/udinese.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/04eea015/1999-2000/Udinese-Stats"
+      "evidence": "https://fbref.com/en/squads/04eea015/1999-2000/Udinese-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-udinese-12",
@@ -3614,7 +3732,7 @@
       "clubId": "udinese",
       "clubName": "Udinese Calcio",
       "position": "RW",
-      "role": "backup",
+      "role": "starter",
       "starts": 14,
       "tier": null,
       "rank": null,
@@ -3631,7 +3749,8 @@
         "https://fbref.com/en/squads/04eea015/1999-2000/Udinese-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/udinese.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/04eea015/1999-2000/Udinese-Stats"
+      "evidence": "https://fbref.com/en/squads/04eea015/1999-2000/Udinese-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-udinese-13",
@@ -3652,13 +3771,14 @@
       "leagueStarts": 27,
       "leagueMinutes": 2383,
       "statsScope": "Serie A domestic league only",
-      "positionVerification": "source_crosschecked_provisional",
+      "positionVerification": "needs_review",
       "verificationReasons": [],
       "sources": [
         "https://fbref.com/en/squads/04eea015/1999-2000/Udinese-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/udinese.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/04eea015/1999-2000/Udinese-Stats"
+      "evidence": "https://fbref.com/en/squads/04eea015/1999-2000/Udinese-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-udinese-14",
@@ -3687,7 +3807,8 @@
         "https://fbref.com/en/squads/04eea015/1999-2000/Udinese-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/udinese.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/04eea015/1999-2000/Udinese-Stats"
+      "evidence": "https://fbref.com/en/squads/04eea015/1999-2000/Udinese-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-perugia-01",
@@ -3718,7 +3839,8 @@
         "https://www.rsssf.org/tablesi/ital00ext.html",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/37cba288/1999-2000/Perugia-Stats"
+      "evidence": "https://fbref.com/en/squads/37cba288/1999-2000/Perugia-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-perugia-02",
@@ -3749,7 +3871,8 @@
         "https://www.rsssf.org/tablesi/ital00ext.html",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/37cba288/1999-2000/Perugia-Stats"
+      "evidence": "https://fbref.com/en/squads/37cba288/1999-2000/Perugia-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-perugia-03",
@@ -3780,7 +3903,8 @@
         "https://www.rsssf.org/tablesi/ital00ext.html",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/37cba288/1999-2000/Perugia-Stats"
+      "evidence": "https://fbref.com/en/squads/37cba288/1999-2000/Perugia-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-perugia-05",
@@ -3811,7 +3935,8 @@
         "https://www.rsssf.org/tablesi/ital00ext.html",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/37cba288/1999-2000/Perugia-Stats"
+      "evidence": "https://fbref.com/en/squads/37cba288/1999-2000/Perugia-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-perugia-06",
@@ -3842,7 +3967,8 @@
         "https://www.rsssf.org/tablesi/ital00ext.html",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/37cba288/1999-2000/Perugia-Stats"
+      "evidence": "https://fbref.com/en/squads/37cba288/1999-2000/Perugia-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-perugia-07",
@@ -3871,7 +3997,8 @@
         "https://www.rsssf.org/tablesi/ital00ext.html",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/37cba288/1999-2000/Perugia-Stats"
+      "evidence": "https://fbref.com/en/squads/37cba288/1999-2000/Perugia-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-perugia-08",
@@ -3900,7 +4027,8 @@
         "https://www.rsssf.org/tablesi/ital00ext.html",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/37cba288/1999-2000/Perugia-Stats"
+      "evidence": "https://fbref.com/en/squads/37cba288/1999-2000/Perugia-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-perugia-09",
@@ -3931,7 +4059,8 @@
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/perugia.htm",
         "https://www.rsssf.org/tablesi/ital00ext.html"
       ],
-      "evidence": "https://fbref.com/en/squads/37cba288/1999-2000/Perugia-Stats"
+      "evidence": "https://fbref.com/en/squads/37cba288/1999-2000/Perugia-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-perugia-10",
@@ -3952,14 +4081,15 @@
       "leagueStarts": 22,
       "leagueMinutes": 1904,
       "statsScope": "Serie A domestic league only",
-      "positionVerification": "source_crosschecked_provisional",
+      "positionVerification": "needs_review",
       "verificationReasons": [],
       "sources": [
         "https://fbref.com/en/squads/37cba288/1999-2000/Perugia-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/perugia.htm",
         "https://www.rsssf.org/tablesi/ital00ext.html"
       ],
-      "evidence": "https://fbref.com/en/squads/37cba288/1999-2000/Perugia-Stats"
+      "evidence": "https://fbref.com/en/squads/37cba288/1999-2000/Perugia-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-1999-inter-simic-01",
@@ -3988,7 +4118,8 @@
         "https://fbref.com/en/squads/d609edc0/1999-2000/Internazionale-Stats",
         "https://www.footballsquads.co.uk/italy/1999-2000/seriea/inter.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/d609edc0/1999-2000/Internazionale-Stats"
+      "evidence": "https://fbref.com/en/squads/d609edc0/1999-2000/Internazionale-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     }
   ],
   "bestXi": [],
@@ -4179,6 +4310,100 @@
         "unfilledPositions": "Positions without evidence-supported starting-level players intentionally not padded; still subject to full fixture-level squad audit",
         "issues": "Starter versus rotational classification and exact primary positional frequency must be verified; 3-at-the-back wingbacks often normalized to LB/RB/LW/RW."
       }
-    }
+    },
+    "clubSummaries": {
+      "lazio": {
+        "starters": 11,
+        "backups": 6,
+        "players": 17,
+        "positionNeedsReview": 17,
+        "birthDatesMissing": 0,
+        "formationVerification": "needs_review",
+        "rosterStatus": "first_pass_candidates_saved_full_lineup_frequency_audit_pending",
+        "allStartsCaptured": true
+      },
+      "juventus": {
+        "starters": 10,
+        "backups": 3,
+        "players": 13,
+        "positionNeedsReview": 13,
+        "birthDatesMissing": 0,
+        "formationVerification": "needs_review",
+        "rosterStatus": "first_pass_candidates_saved_full_lineup_frequency_audit_pending",
+        "allStartsCaptured": true
+      },
+      "milan": {
+        "starters": 10,
+        "backups": 4,
+        "players": 14,
+        "positionNeedsReview": 14,
+        "birthDatesMissing": 0,
+        "formationVerification": "needs_review",
+        "rosterStatus": "first_pass_candidates_saved_full_lineup_frequency_audit_pending",
+        "allStartsCaptured": true
+      },
+      "inter": {
+        "starters": 10,
+        "backups": 4,
+        "players": 14,
+        "positionNeedsReview": 14,
+        "birthDatesMissing": 0,
+        "formationVerification": "needs_review",
+        "rosterStatus": "first_pass_candidates_saved_full_lineup_frequency_audit_pending",
+        "allStartsCaptured": true
+      },
+      "parma": {
+        "starters": 11,
+        "backups": 4,
+        "players": 15,
+        "positionNeedsReview": 15,
+        "birthDatesMissing": 0,
+        "formationVerification": "needs_review",
+        "rosterStatus": "first_pass_candidates_saved_full_lineup_frequency_audit_pending",
+        "allStartsCaptured": true
+      },
+      "roma": {
+        "starters": 10,
+        "backups": 3,
+        "players": 13,
+        "positionNeedsReview": 13,
+        "birthDatesMissing": 0,
+        "formationVerification": "needs_review",
+        "rosterStatus": "first_pass_candidates_saved_full_lineup_frequency_audit_pending",
+        "allStartsCaptured": true
+      },
+      "fiorentina": {
+        "starters": 9,
+        "backups": 2,
+        "players": 11,
+        "positionNeedsReview": 11,
+        "birthDatesMissing": 0,
+        "formationVerification": "needs_review",
+        "rosterStatus": "first_pass_candidates_saved_full_lineup_frequency_audit_pending",
+        "allStartsCaptured": true
+      },
+      "udinese": {
+        "starters": 10,
+        "backups": 3,
+        "players": 13,
+        "positionNeedsReview": 13,
+        "birthDatesMissing": 0,
+        "formationVerification": "needs_review",
+        "rosterStatus": "first_pass_candidates_saved_full_lineup_frequency_audit_pending",
+        "allStartsCaptured": true
+      },
+      "perugia": {
+        "starters": 9,
+        "backups": 0,
+        "players": 9,
+        "positionNeedsReview": 9,
+        "birthDatesMissing": 1,
+        "formationVerification": "needs_review",
+        "rosterStatus": "first_pass_candidates_saved_full_lineup_frequency_audit_pending",
+        "allStartsCaptured": true
+      }
+    },
+    "positionReviewNote": "All position assignments explicitly needs_review: FBref bulk DF/MF/FW categories don't verify left/right, centreback vs wingback or CAM-vs-double-CM restrictions. Requires match-by-match lineups before approval.",
+    "qualificationNotes": "2022 Intertoto Italian entries Bologna, Perugia and Torino corroborated against UEFA 15 July 2002 draw and RSSSF uic02. 2001 Brescia entry corroborated against RSSSF ital01 and historical 2001 Intertoto. 2000 Perugia/Udinese against RSSSF UIC 2000."
   }
 }
