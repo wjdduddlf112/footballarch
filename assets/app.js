@@ -62,7 +62,7 @@ async function load(){
  loading=true;data=null;render();
  const path="./data/"+st.league+"-"+st.season+".json";
  const req=[fetch(path,{cache:"no-cache"}).then(r=>r.ok?r.json():null).catch(()=>null)];
- if(st.league==="laliga"||st.league==="seriea"){const archivePath=st.league==="laliga"?"./data/laliga-standings-verified-1999-2026.json":"./data/seriea-standings-verified-1999-2026.json";req.push(fetch(archivePath,{cache:"no-cache"}).then(r=>r.ok?r.json():null).catch(()=>null));}
+ if(["laliga","seriea","bundesliga"].includes(st.league)){const archivePath=st.league==="laliga"?"./data/laliga-standings-verified-1999-2026.json":st.league==="seriea"?"./data/seriea-standings-verified-1999-2026.json":"./data/bundesliga-standings-verified-1999-2026.json";req.push(fetch(archivePath,{cache:"no-cache"}).then(r=>r.ok?r.json():null).catch(()=>null));}
  const [seasonData,archive]=await Promise.all(req);
  if(request!==loadSequence)return;
  data=seasonData;
@@ -70,7 +70,7 @@ async function load(){
  if(verified?.standings?.length>=18){
    if(!data)data={meta:{leagueId:st.league,league:label(),season:st.season,status:"standings_only",standingsOnly:true},clubs:[],qualifiers:[],standings:[],players:[],bestXi:[]};
    const earlier=new Map((data.standings||[]).map(r=>[r.club,r]));
-   const verifiedEuropean=(verified.europeanParticipationStatus||"").startsWith("verified");const curatedEuropean=verifiedEuropean||st.league==="seriea";
+   const verifiedEuropean=(verified.europeanParticipationStatus||"").startsWith("verified");const curatedEuropean=verifiedEuropean||["seriea","bundesliga"].includes(st.league);
    const european=verified.europeanParticipation||{};
    data.standings=verified.standings.map(r=>({...r,competition:curatedEuropean?(european[r.club]||null):(earlier.get(r.club)?.competition||null)}));
    if(curatedEuropean){
