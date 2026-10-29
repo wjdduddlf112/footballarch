@@ -13,7 +13,7 @@ const slots4231=[["ST",50,12],["LW",14,32],["CAM",50,36],["RW",86,32],["DM",38,5
 const q=new URLSearchParams(location.search);
 const st={domain:"domestic",league:"laliga",season:"1999-00",tab:"overview",home:!q.has("league"),showCandidates:q.get("view")==="ranking",position:"all",club:"all",from:"S",to:"D",search:"",tier:"all",age:"all",qualifiedOnly:false};
 let data=null,loading=false,loadSequence=0;
-const yearList=Array.from({length:26},(_,i)=>{let a=1999+i,b=(a+1)%100;return a+"-"+String(b).padStart(2,"0")});
+const yearList=Array.from({length:27},(_,i)=>{let a=1999+i,b=(a+1)%100;return a+"-"+String(b).padStart(2,"0")});
 function esc(a){return String(a??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
 function club(id){return (data&&data.clubs||[]).find(c=>c.id===id)||{id,name:id,abbr:id.slice(0,3).toUpperCase()}}
 function crest(id){
@@ -62,7 +62,7 @@ async function load(){
  loading=true;data=null;render();
  const path="./data/"+st.league+"-"+st.season+".json";
  const req=[fetch(path,{cache:"no-cache"}).then(r=>r.ok?r.json():null).catch(()=>null)];
- if(st.league==="laliga")req.push(fetch("./data/laliga-standings-verified-1999-2025.json",{cache:"no-cache"}).then(r=>r.ok?r.json():null).catch(()=>null));
+ if(st.league==="laliga")req.push(fetch("./data/laliga-standings-verified-1999-2026.json",{cache:"no-cache"}).then(r=>r.ok?r.json():null).catch(()=>null));
  const [seasonData,archive]=await Promise.all(req);
  if(request!==loadSequence)return;
  data=seasonData;
@@ -228,12 +228,12 @@ function homeMarkup(){
    
    <div class="home-actions"><button type="button" class="home-primary" data-open-league="laliga" data-open-season="1999-00">1999–00 La Liga 살펴보기 <span aria-hidden="true">↗</span></button><a class="home-secondary" href="#competitions">대회 전체 보기 <span aria-hidden="true">↓</span></a></div>
   </div>
-  <div class="home-editorial-art" aria-hidden="true"><span class="art-label">THE GAME. THE PLAYERS. THE ERA.</span><img class="archive-hero-symbol" src="./assets/football-archive-emblem.svg" alt="" width="420" height="420" loading="eager"><span class="art-bottom">SEASONS 1999–2025<span> / </span>THE HISTORICAL COLLECTION</span><span class="art-cross">✳</span></div>
+  <div class="home-editorial-art" aria-hidden="true"><span class="art-label">THE GAME. THE PLAYERS. THE ERA.</span><img class="archive-hero-symbol" src="./assets/football-archive-emblem.svg" alt="" width="420" height="420" loading="eager"><span class="art-bottom">SEASONS 1999–2026<span> / </span>THE HISTORICAL COLLECTION</span><span class="art-cross">✳</span></div>
  </section>
  <section class="home-facts" aria-label="아카이브 범위">
   <div><strong>05</strong><span>DOMESTIC LEAGUES</span></div>
   <div><strong>03</strong><span>UEFA COMPETITIONS</span></div>
-  <div><strong>26</strong><span>SEASONS IN SCOPE</span></div>
+  <div><strong>27</strong><span>SEASONS IN SCOPE</span></div>
   <div><strong>10</strong><span>PLAYER POSITIONS</span></div>
  </section>
  <section class="home-section" id="competitions" aria-labelledby="home-leagues-title">
