@@ -196,6 +196,16 @@ body.is-home .floating-season-nav{display:none}
 .home-europe-grid [data-open-league="ucl"] .archive-card-emblem-frame{left:34%;width:32%}
 .home-europe-grid [data-open-league="uel"] .archive-card-emblem-frame{left:32%;width:36%}
 .home-europe-grid [data-open-league="uecl"] .archive-card-emblem-frame{left:31%;width:38%}
+/* Correct only the three black-lettered logos on dark competition cards.
+   180deg hue rotation after inversion retains the orange/green accents while
+   changing black text to white; other five logo treatments remain unchanged. */
+.home-league-grid [data-open-league="bundesliga"] .archive-card-emblem{
+ filter:brightness(0) invert(1) drop-shadow(0 7px 14px #0009);
+}
+.home-europe-grid [data-open-league="uel"] .archive-card-emblem,
+.home-europe-grid [data-open-league="uecl"] .archive-card-emblem{
+ filter:invert(1) hue-rotate(180deg) drop-shadow(0 7px 14px #0009);
+}
 /* A visible and unobtrusive failure state for third-party SVG hosts. */
 .archive-card-emblem-frame.is-fallback{color:#dce8ee;font-weight:900;font-size:clamp(48px,5vw,76px);letter-spacing:-.085em;opacity:.58}
 @media(max-width:650px){
