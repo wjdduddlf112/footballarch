@@ -9,7 +9,7 @@ const ranks=["S","A+","A","A-","B+","B","B-","C+","C","C-","D"];
 const positions=["GK","CB","LB","RB","DM","CM","CAM","LW","RW","ST"];
 const slots=[["LW",15,13],["ST",50,11],["RW",85,13],["CM",30,37],["CAM",70,37],["DM",50,54],["LB",13,73],["CB",37,76],["CB",63,76],["RB",87,73],["GK",50,91]];
 const q=new URLSearchParams(location.search);
-const st={domain:"domestic",league:"laliga",season:"1999-00",tab:"overview",home:!q.has("league"),position:"all",club:"all",from:"S",to:"D",search:"",tier:"all",age:"all",qualifiedOnly:false};
+const st={domain:"domestic",league:"laliga",season:"1999-00",tab:"overview",home:!q.has("league"),showCandidates:q.get("view")==="ranking",position:"all",club:"all",from:"S",to:"D",search:"",tier:"all",age:"all",qualifiedOnly:false};
 let data=null,loading=false;
 const yearList=Array.from({length:26},(_,i)=>{let a=1999+i,b=(a+1)%100;return a+"-"+String(b).padStart(2,"0")});
 function esc(a){return String(a??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
@@ -29,7 +29,7 @@ function syncSelects(){
 }
 function label(){return competitionGroups[st.domain].find(x=>x[0]===st.league)?.[1]||"Football"}
 function seasonEndLabel(){return st.season.split("-")[0]+"–"+(2000+Number(st.season.split("-")[1]))}
-function clearFilters(){st.position="all";st.club="all";st.from="S";st.to="D";st.search="";st.tier="all";st.age="all";st.qualifiedOnly=false}
+function clearFilters(){st.position="all";st.club="all";st.from="S";st.to="D";st.search="";st.tier="all";st.age="all";st.qualifiedOnly=false;st.showCandidates=false}
 function writeUrl(){st.home=false;let p=new URLSearchParams({league:st.league,season:st.season,view:st.tab});history.replaceState(null,"",location.pathname+"?"+p.toString())}
 async function load(){
  loading=true;data=null;render();
@@ -62,7 +62,8 @@ function overview(){
  else result+='<div class="empty"><strong>후보 구단 정보가 없습니다.</strong></div>';
  result+='</div>';
  if(n){const counts=positions.map(p=>[p,(data.players||[]).filter(x=>x.position===p).length]).filter(x=>x[1]);
- result+='<div class="panel" style="margin-top:15px"><div class="section-heading"><div><h2>Candidate Progress</h2><span class="small muted">등록된 포지션 후보 — 검수 전 자료 포함</span></div><button class="pill" data-go="ranking">All Candidates</button></div><div class="pills">'+counts.map(x=>'<button class="pill" data-pos-go="'+x[0]+'">'+x[0]+' &nbsp; '+x[1]+'</button>').join("")+'</div></div>'}
+ result+='<div class="panel" style="margin-top:15px"><div class="section-heading"><div><h2>Candidate Progress</h2><span class="small muted">등록된 포지션 후보 — 검수 전 자료 포함</span></div><button class="pill" data-action="candidates">'+(st.showCandidates?'후보 목록 닫기':'전체 후보 보기')+'</button></div><div class="pills">'+counts.map(x=>'<button class="pill" data-pos-go="'+x[0]+'">'+x[0]+' &nbsp; '+x[1]+'</button>').join("")+'</div></div>'}
+ if(st.showCandidates&&n)result+=candidatePool();
  if(data.meta.status==="demo")result+='<div class="banner" style="margin-top:14px"><b>시연 데이터</b> · 2022–23시즌 선수 티어와 순위는 기존 인터랙티브 샘플의 자료입니다. 사용자가 확인한 역사적 최종 평가가 아닙니다.</div>';
  if(data.meta.status==="in_review")result+='<div class="banner" style="margin-top:14px"><b>선수 평가 대기</b> · 등록된 골키퍼 후보의 주전/후보 구분과 선발 기록은 추가 검수 대상입니다. S~D 티어는 아직 정하지 않았습니다.</div>';
  return result
@@ -81,13 +82,14 @@ function filters(useTop,stats){
  v+='</div>';return v;
 }
 function tablePlayers(rows){
- if(!rows.length)return '<div class="empty"><strong>표시할 선수가 없습니다.</strong><p>선수 후보 또는 평가가 등록되면 이곳에 표시됩니다.</p></div>';
- return '<div class="table-scroll"><table class="datagrid"><thead><tr><th>POS</th><th>RANK</th><th>PLAYER</th><th>CLUB</th><th>BORN</th><th>AGE</th><th>TIER</th></tr></thead><tbody>'+rows.map(p=>'<tr data-player="'+esc(p.id)+'"><td><b>'+esc(p.position)+'</b></td><td>'+esc(p.rank||"—")+'</td><td class="person">'+esc(p.name)+'</td><td><div style="display:flex;align-items:center;gap:8px">'+crest(p.club)+esc(club(p.club).name)+'</div></td><td>'+esc(p.born||"—")+'</td><td>'+esc(age(p)??"—")+'</td><td>'+grade(p.tier)+'</td></tr>').join("")+'</tbody></table></div>'
+ if(!rows.length)return '<div class="empty"><strong>표시할 선수가 없습니다.</strong><p>후보 또는 평가가 등록되면 이곳에 표시됩니다.</p></div>';
+ return '<div class="table-scroll"><table class="datagrid"><thead><tr><th>POS</th><th>PLAYER</th><th>CLUB</th><th>BORN</th><th>AGE</th><th>TIER</th></tr></thead><tbody>'+rows.map(p=>'<tr data-player="'+esc(p.id)+'"><td><b>'+esc(p.position)+'</b></td><td class="person">'+esc(p.name)+'</td><td><div style="display:flex;align-items:center;gap:8px">'+crest(p.club)+esc(club(p.club).name)+'</div></td><td>'+esc(p.born||"—")+'</td><td>'+esc(age(p)??"—")+'</td><td>'+grade(p.tier)+'</td></tr>').join("")+'</tbody></table></div>'
 }
-function ranking(){
+function candidatePool(){
  let all=rankPlayers(),rows=filterPlayers(all,false);
- return '<section class="panel"><div class="section-heading"><div><h2>All Player Rankings</h2><div class="small muted">'+rows.length+' / '+all.length+' players · 포지션, 구단, 티어 범위 필터</div></div><button class="pill" data-action="reset">Reset</button></div>'+filters(false,false)+tablePlayers(rows)+'</section>'
+ return '<section class="panel candidate-pool" id="candidate-pool"><div class="section-heading"><div><h2>Candidate Pool</h2><div class="small muted">'+rows.length+' / '+all.length+' players · 후보 목록에서는 등급만 표시하고 순위는 Best XI에서 포지션별로 확인합니다.</div></div><button class="pill" data-action="reset">필터 초기화</button></div>'+filters(false,false)+tablePlayers(rows)+'</section>'
 }
+
 function topPage(){
  let all=rankPlayers(),filtered=filterPlayers(all,true);let count=t=>all.filter(p=>p.tier===t).length;
  let cards='<div class="top-scores">'+["S","A+","A","A-"].map(t=>'<button class="top-score '+tierClass(t)+' '+(st.tier===t?"active":"")+'" data-toptier="'+t+'"><b>'+t+'</b><small>'+count(t)+' players</small></button>').join("")+'</div>';
@@ -96,16 +98,17 @@ function topPage(){
  return '<section class="panel">'+body+'</section>'
 }
 function formation(){
- let selection=data.bestXi||[],used={};
+ let selection=(data.bestXi||[]).slice(0,11),used={};
  let marks=slots.map(x=>{let matches=selection.filter(b=>b.position===x[0]);let index=used[x[0]]||0;used[x[0]]=index+1;let pick=matches[index];let p=data.players.find(y=>y.id===pick?.playerId);return '<button class="slot '+(st.position===x[0]?"active":"")+'" data-position="'+x[0]+'" style="left:'+x[1]+'%;top:'+x[2]+'%"><span class="spot">'+x[0]+'</span><span class="slot-label">'+(p?esc(p.name):"선정 대기")+'</span></button>'}).join("");
  let pos=st.position==="all"?"GK":st.position;
  let candidates=rankPlayers().filter(p=>p.position===pos);
- let side='<div class="panel"><div class="section-heading"><h2>Positional Rankings</h2><span class="status">'+pos+'</span></div><div class="position-nav">'+positions.map(p=>'<button data-position="'+p+'" class="'+(pos===p?"active":"")+'">'+p+'</button>').join("")+'</div>';
- side+='<div class="small muted" style="margin-bottom:8px">'+candidates.length+' registered players</div>';
- if(candidates.length){side+=candidates.map((p,i)=>'<button class="rank-row" data-player="'+esc(p.id)+'"><span class="rank-num">'+esc(p.rank||i+1)+'</span>'+crest(p.club)+'<span class="rank-label"><b>'+esc(p.name)+'</b><small>'+esc(club(p.club).name)+'</small></span>'+grade(p.tier)+'</button>').join("")}
+ let side='<div class="panel"><div class="section-heading"><h2>포지션별 순위</h2><span class="status">'+pos+'</span></div><div class="position-nav">'+positions.map(p=>'<button data-position="'+p+'" class="'+(pos===p?"active":"")+'">'+p+'</button>').join("")+'</div>';
+ side+='<div class="small muted" style="margin-bottom:8px">'+candidates.length+' registered players · 포지션 내 순위만 표시</div>';
+ if(candidates.length&&!candidates.some(p=>p.rank!=null))side+='<p class="position-rank-note">아직 이 포지션의 순위가 확정되지 않았습니다. 후보가 자동으로 1위부터 배정되지 않습니다.</p>';
+ if(candidates.length){side+=candidates.map(p=>'<button class="rank-row" data-player="'+esc(p.id)+'"><span class="rank-num">'+esc(p.rank??"—")+'</span>'+crest(p.club)+'<span class="rank-label"><b>'+esc(p.name)+'</b><small>'+esc(club(p.club).name)+'</small></span>'+grade(p.tier)+'</button>').join("")}
  else side+='<div class="empty"><strong>아직 후보가 없습니다.</strong></div>';
  side+='</div>';
- return '<div class="panels"><section class="panel"><div class="section-heading"><h2>Season Best XI</h2><span class="small muted">4–3–3 · POSITION RANKINGS</span></div><div class="pitch"><div class="mid"></div><div class="circle"></div>'+marks+'</div><p class="pitch-note">포메이션에는 포지션·선수 이름만 표시합니다. 티어는 오른쪽 순위표에서 확인합니다.</p></section>'+side+'</div>'
+ return '<div class="panels"><section class="panel"><div class="section-heading"><h2>Season Best XI</h2><span class="small muted">BEST XI · 11 PLAYERS</span></div><div class="pitch"><div class="mid"></div><div class="circle"></div>'+marks+'</div><p class="pitch-note">포메이션은 베스트 11명만 표시합니다. 선수 티어와 포지션 내 순위는 오른쪽에서 확인합니다.</p></section>'+side+'</div>'
 }
 function standings(){
  let rows=data.standings||[];if(!rows.length)return '<section class="panel"><div class="section-heading"><h2>Final League Table</h2></div><div class="empty"><strong>순위표 검증 중입니다.</strong><p>해당 시즌의 공식 경기 결과를 교차 확인한 뒤 공개합니다. 유럽 참가 구단 목록은 Overview에서 볼 수 있습니다.</p><button class="pill" data-go="overview">Qualified Clubs</button></div></section>';
@@ -197,12 +200,12 @@ function render(){
  document.title=label()+" "+st.season+" | FOOTBALL ARCHIVE";
  syncSelects();pageIntro();const el=$("content");if(loading){el.innerHTML='<div class="empty"><strong>데이터를 불러오는 중입니다.</strong></div>';return}
  if(!data){el.innerHTML=unregistered();return}
- if(st.tab==="overview")el.innerHTML=overview();else if(st.tab==="formation")el.innerHTML=formation();else if(st.tab==="top")el.innerHTML=topPage();else if(st.tab==="ranking")el.innerHTML=ranking();else if(st.tab==="table")el.innerHTML=standings();else el.innerHTML=stats()
+ if(st.tab==="overview")el.innerHTML=overview();else if(st.tab==="formation")el.innerHTML=formation();else if(st.tab==="top")el.innerHTML=topPage();else if(st.tab==="table")el.innerHTML=standings();else el.innerHTML=stats()
 }
 function playerDetails(id){
  const p=data?.players?.find(x=>x.id===id);if(!p)return;
  const html='<div class="overlay" role="dialog" aria-modal="true" aria-label="Player information"><div class="dialog"><button class="close" data-action="close">✕</button><div class="eyebrow">PLAYER RECORD · '+esc(st.season)+'</div><h2>'+esc(p.name)+'</h2><div style="display:flex;gap:10px;align-items:center;margin:14px 0">'+crest(p.club)+'<b>'+esc(club(p.club).name)+'</b>'+grade(p.tier)+'</div>'+
- [["Position",p.position],["Starting role",p.role==="starter"?"주전":p.role==="backup"?"후보":"—"],["League starts",p.starts??"—"],["Position ranking",p.rank??"미확정"],["Date of birth",p.born??"—"],["Age at Jun 30",age(p)??"—"],["Top Class",p.tier?(top(p)?"YES":"NO"):"미평가"]].map(x=>'<div class="detail-row"><span>'+x[0]+'</span><b>'+esc(x[1])+'</b></div>').join("")+
+ [["Position",p.position],["Starting role",p.role==="starter"?"주전":p.role==="backup"?"후보":"—"],["League starts",p.starts??"—"],["Date of birth",p.born??"—"],["Age at Jun 30",age(p)??"—"],["Top Class",p.tier?(top(p)?"YES":"NO"):"미평가"]].map(x=>'<div class="detail-row"><span>'+x[0]+'</span><b>'+esc(x[1])+'</b></div>').join("")+
  '<p class="notice">'+(data.meta.status==="demo"?"시연용 평가로, 최종 선수 선정 자료가 아닙니다.":"해당 시즌 선수 검수 및 평가는 아직 확정되지 않았습니다.")+'</p></div></div>';
  let layer=document.createElement("div");layer.id="modalLayer";layer.innerHTML=html;document.body.appendChild(layer)
 }
@@ -210,15 +213,16 @@ function closeModal(){document.getElementById("modalLayer")?.remove()}
 document.addEventListener("click",ev=>{
  let btn=ev.target.closest("button");if(btn){
  if(btn.dataset.openLeague){openArchive(btn.dataset.openLeague,btn.dataset.openSeason);return}
- if(btn.dataset.tab){st.tab=btn.dataset.tab;writeUrl();render();return}
+ if(btn.dataset.tab){st.tab=btn.dataset.tab;st.showCandidates=false;writeUrl();render();return}
  if(btn.dataset.go){st.tab=btn.dataset.go;writeUrl();render();return}
  if(btn.dataset.position){st.position=btn.dataset.position;render();return}
- if(btn.dataset.posGo){st.tab="ranking";st.position=btn.dataset.posGo;writeUrl();render();return}
- if(btn.dataset.clubGo){st.tab="ranking";st.club=btn.dataset.clubGo;st.position="all";st.from="S";st.to="D";writeUrl();render();return}
+ if(btn.dataset.posGo){st.tab="overview";st.showCandidates=true;st.position=btn.dataset.posGo;st.club="all";writeUrl();render();document.getElementById("candidate-pool")?.scrollIntoView({behavior:"smooth",block:"start"});return}
+ if(btn.dataset.clubGo){st.tab="overview";st.showCandidates=true;st.club=btn.dataset.clubGo;st.position="all";st.from="S";st.to="D";writeUrl();render();document.getElementById("candidate-pool")?.scrollIntoView({behavior:"smooth",block:"start"});return}
  if(btn.dataset.toptier){st.tier=btn.dataset.toptier;render();return}
  if(btn.dataset.player){playerDetails(btn.dataset.player);return}
  if(btn.dataset.action==="close"){closeModal();return}
- if(btn.dataset.action==="reset"){clearFilters();render();return}
+ if(btn.dataset.action==="candidates"){st.showCandidates=!st.showCandidates;render();if(st.showCandidates)document.getElementById("candidate-pool")?.scrollIntoView({behavior:"smooth",block:"start"});return}
+ if(btn.dataset.action==="reset"){clearFilters();st.showCandidates=true;render();return}
  if(btn.dataset.action==="qualonly"){st.qualifiedOnly=!st.qualifiedOnly;render();return}
  if(btn.dataset.action==="back"){st.domain="domestic";st.league="laliga";st.season="1999-00";st.tab="overview";clearFilters();writeUrl();load();return}
  }
@@ -245,7 +249,8 @@ $("content").addEventListener("input",e=>{
 if(competitionGroups.domestic.some(x=>x[0]===q.get("league")))st.league=q.get("league");
 else if(competitionGroups.europe.some(x=>x[0]===q.get("league"))){st.domain="europe";st.league=q.get("league")}
 if(yearList.includes(q.get("season")))st.season=q.get("season");
-if(["overview","formation","top","ranking","table","stats"].includes(q.get("view")))st.tab=q.get("view");
+if(["overview","formation","top","table","stats"].includes(q.get("view")))st.tab=q.get("view");
+if(q.get("view")==="ranking")st.showCandidates=true;
 if(st.domain==="europe"&&["formation","table"].includes(st.tab))st.tab="overview";
 if(st.home)render();else load();
 window.addEventListener("popstate",()=>{
@@ -257,8 +262,8 @@ window.addEventListener("popstate",()=>{
  if(!domestic&&!europe){st.home=true;data=null;loading=false;render();return}
  st.home=false;st.domain=domestic?"domestic":"europe";st.league=id;
  st.season=yearList.includes(p.get("season"))?p.get("season"):"1999-00";
- st.tab=["overview","formation","top","ranking","table","stats"].includes(p.get("view"))?p.get("view"):"overview";
+ st.tab=["overview","formation","top","table","stats"].includes(p.get("view"))?p.get("view"):"overview";
  if(st.domain==="europe"&&["formation","table"].includes(st.tab))st.tab="overview";
- clearFilters();load();
+ clearFilters();if(p.get("view")==="ranking")st.showCandidates=true;load();
 });
 })();
