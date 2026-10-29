@@ -7,11 +7,11 @@
     "assessmentEnd": "2000-01",
     "qualifyingSeason": "2001-02",
     "status": "draft",
-    "label": "후보 구단 7팀 선정 · 선수 명단 작업 전",
+    "label": "GK 후보 13명 등록 · 검수 중",
     "lastReview": "2026-10-29",
-    "note": "Seven verified candidate clubs based on actual 2001-02 UEFA Champions League and UEFA Cup participation. No Spanish teams participated in the 2001 Intertoto Cup after withdrawal of two allocated places. Players, tier ratings, positional rankings, Best XI and the period's most prevalent formation have NOT yet been selected or approved.",
-    "candidateCount": 0,
-    "selectionStage": "qualified_clubs_only",
+    "note": "Seven UEFA-qualified clubs; 13 GK candidates recorded from verified 2000-01 league starts. Zaragoza reserve César Láinez also started Copa del Rey final. Valencia reserve Palop excluded (one league and one UCL start). No tiers or position ranks have been approved. Other positions await next instructions.",
+    "candidateCount": 13,
+    "selectionStage": "gk_candidates_pending_review",
     "assessmentWeighting": "1998-99 < 1999-00 < 2000-01",
     "standingsStatus": "verified",
     "standingsSource": "https://www.rsssf.org/tabless/span01.html",
@@ -33,7 +33,21 @@
       "appliesTo": "2001-02",
       "source": "https://www.rsssf.org/tabless/span01.html"
     },
-    "historicalCrestPolicy": "Modern/reference badges are inherited from 1999-00 season data; this stage does not establish exact 2000-01 artwork."
+    "historicalCrestPolicy": "Modern/reference badges are inherited from 1999-00 season data; this stage does not establish exact 2000-01 artwork.",
+    "playerCandidateSources": {
+      "madrid": "https://fbref.com/en/squads/53a2f082/2000-2001/all_comps/Real-Madrid-Stats",
+      "deportivo": "https://fbref.com/en/squads/2a60ed82/2000-2001/Deportivo-La-Coruna-Stats",
+      "mallorca": "https://fbref.com/en/squads/2aa12281/2000-2001/c12/Mallorca-Stats-La-Liga",
+      "barca": "https://fbref.com/en/squads/206d90db/2000-2001/all_comps/Barcelona-Stats-All-Competitions",
+      "valencia": "https://fbref.com/en/squads/dcc91a7b/2000-2001/all_comps/Valencia-Stats-All-Competitions",
+      "celta": "https://fbref.com/en/squads/f25da7fb/2000-2001/Celta-Vigo-Stats",
+      "zaragoza": "https://fbref.com/en/squads/800303a0/2000-2001/all_comps/Zaragoza-Stats-All-Competitions"
+    },
+    "gkSelectionReview": {
+      "status": "pending",
+      "notes": "Reina 18 league starts and Dutruel 15 are Barcelona rotating pair; Mallorca Miki Garro chosen with 5 league starts (Roa 4); Zaragoza César Láinez started the cup final despite 3 league starts; Cañizares only Valencia qualifying keeper with 37 league starts.",
+      "period": "1998-99,1999-00,2000-01"
+    }
   },
   "clubs": [
     {
@@ -583,6 +597,268 @@
       "outcome": "relegated"
     }
   ],
-  "players": [],
+  "players": [
+    {
+      "id": "laliga-2000-gk-madrid-01",
+      "club": "madrid",
+      "name": "Iker Casillas",
+      "nameKo": "이케르 카시야스",
+      "nameOriginal": "Iker Casillas Fernández",
+      "born": "1981-05-20",
+      "position": "GK",
+      "role": "starter",
+      "starts": 34,
+      "appearances": 34,
+      "europeStarts": 11,
+      "tier": null,
+      "rank": null,
+      "review": "provisional_candidate",
+      "evidence": "https://fbref.com/en/squads/53a2f082/2000-2001/all_comps/Real-Madrid-Stats",
+      "threeSeasonReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "laliga-2000-gk-madrid-02",
+      "club": "madrid",
+      "name": "César Sánchez",
+      "nameKo": "세사르 산체스",
+      "nameOriginal": "César Sánchez Domínguez",
+      "born": "1971-09-02",
+      "position": "GK",
+      "role": "backup",
+      "starts": 4,
+      "appearances": 5,
+      "europeStarts": 5,
+      "tier": null,
+      "rank": null,
+      "review": "provisional_candidate",
+      "evidence": "https://fbref.com/en/squads/53a2f082/2000-2001/all_comps/Real-Madrid-Stats",
+      "threeSeasonReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "laliga-2000-gk-deportivo-01",
+      "club": "deportivo",
+      "name": "José Francisco Molina",
+      "nameKo": "호세 프란시스코 몰리나",
+      "nameOriginal": "José Francisco Molina Jiménez",
+      "born": "1970-08-08",
+      "position": "GK",
+      "role": "starter",
+      "starts": 32,
+      "appearances": 32,
+      "europeStarts": null,
+      "tier": null,
+      "rank": null,
+      "review": "provisional_candidate",
+      "evidence": "https://fbref.com/en/squads/2a60ed82/2000-2001/Deportivo-La-Coruna-Stats",
+      "threeSeasonReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "laliga-2000-gk-deportivo-02",
+      "club": "deportivo",
+      "name": "Jacques Songo'o",
+      "nameKo": "자크 송고오",
+      "nameOriginal": "Jacques Célestin Songo'o",
+      "born": "1964-03-17",
+      "position": "GK",
+      "role": "backup",
+      "starts": 6,
+      "appearances": 9,
+      "europeStarts": null,
+      "tier": null,
+      "rank": null,
+      "review": "provisional_candidate",
+      "evidence": "https://fbref.com/en/squads/2a60ed82/2000-2001/Deportivo-La-Coruna-Stats",
+      "threeSeasonReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "laliga-2000-gk-mallorca-01",
+      "club": "mallorca",
+      "name": "Leo Franco",
+      "nameKo": "레오 프랑코",
+      "nameOriginal": "Leonardo Noeren Franco",
+      "born": "1977-05-20",
+      "position": "GK",
+      "role": "starter",
+      "starts": 27,
+      "appearances": 27,
+      "europeStarts": null,
+      "tier": null,
+      "rank": null,
+      "review": "provisional_candidate",
+      "evidence": "https://fbref.com/en/squads/2aa12281/2000-2001/c12/Mallorca-Stats-La-Liga",
+      "threeSeasonReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "laliga-2000-gk-mallorca-02",
+      "club": "mallorca",
+      "name": "Miki Garro",
+      "nameKo": "미키 가로",
+      "nameOriginal": "Miquel Garro Gomila",
+      "born": "1975-09-20",
+      "position": "GK",
+      "role": "backup",
+      "starts": 5,
+      "appearances": 7,
+      "europeStarts": null,
+      "tier": null,
+      "rank": null,
+      "review": "provisional_candidate",
+      "evidence": "https://fbref.com/en/squads/2aa12281/2000-2001/c12/Mallorca-Stats-La-Liga",
+      "threeSeasonReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "laliga-2000-gk-barca-01",
+      "club": "barca",
+      "name": "Pepe Reina",
+      "nameKo": "페페 레이나",
+      "nameOriginal": "José Manuel Reina Páez",
+      "born": "1982-08-31",
+      "position": "GK",
+      "role": "starter",
+      "starts": 18,
+      "appearances": 19,
+      "europeStarts": 7,
+      "tier": null,
+      "rank": null,
+      "review": "provisional_candidate",
+      "evidence": "https://fbref.com/en/squads/206d90db/2000-2001/all_comps/Barcelona-Stats-All-Competitions",
+      "threeSeasonReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "laliga-2000-gk-barca-02",
+      "club": "barca",
+      "name": "Richard Dutruel",
+      "nameKo": "리샤르 뒤트뤼엘",
+      "nameOriginal": "Richard Philippe Dutruel",
+      "born": "1972-12-24",
+      "position": "GK",
+      "role": "backup",
+      "starts": 15,
+      "appearances": 15,
+      "europeStarts": 5,
+      "tier": null,
+      "rank": null,
+      "review": "provisional_candidate",
+      "evidence": "https://fbref.com/en/squads/206d90db/2000-2001/all_comps/Barcelona-Stats-All-Competitions",
+      "threeSeasonReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "laliga-2000-gk-valencia-01",
+      "club": "valencia",
+      "name": "Santiago Cañizares",
+      "nameKo": "산티아고 카니사레스",
+      "nameOriginal": "José Santiago Cañizares Ruiz",
+      "born": "1969-12-18",
+      "position": "GK",
+      "role": "starter",
+      "starts": 37,
+      "appearances": 37,
+      "europeStarts": 16,
+      "tier": null,
+      "rank": null,
+      "review": "provisional_candidate",
+      "evidence": "https://fbref.com/en/squads/dcc91a7b/2000-2001/all_comps/Valencia-Stats-All-Competitions",
+      "threeSeasonReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "laliga-2000-gk-celta-01",
+      "club": "celta",
+      "name": "Pablo Cavallero",
+      "nameKo": "파블로 카바예로",
+      "nameOriginal": "Pablo Óscar Cavallero Rodríguez",
+      "born": "1974-04-13",
+      "position": "GK",
+      "role": "starter",
+      "starts": 21,
+      "appearances": 21,
+      "europeStarts": null,
+      "tier": null,
+      "rank": null,
+      "review": "provisional_candidate",
+      "evidence": "https://fbref.com/en/squads/f25da7fb/2000-2001/Celta-Vigo-Stats",
+      "threeSeasonReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "laliga-2000-gk-celta-02",
+      "club": "celta",
+      "name": "José Manuel Pinto",
+      "nameKo": "호세 마누엘 핀토",
+      "nameOriginal": "José Manuel Pinto Colorado",
+      "born": "1975-11-08",
+      "position": "GK",
+      "role": "backup",
+      "starts": 17,
+      "appearances": 18,
+      "europeStarts": null,
+      "tier": null,
+      "rank": null,
+      "review": "provisional_candidate",
+      "evidence": "https://fbref.com/en/squads/f25da7fb/2000-2001/Celta-Vigo-Stats",
+      "threeSeasonReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "laliga-2000-gk-zaragoza-01",
+      "club": "zaragoza",
+      "name": "Juanmi",
+      "nameKo": "후안미",
+      "nameOriginal": "Juan Miguel García Inglés",
+      "born": "1971-03-09",
+      "position": "GK",
+      "role": "starter",
+      "starts": 35,
+      "appearances": 35,
+      "europeStarts": 2,
+      "tier": null,
+      "rank": null,
+      "review": "provisional_candidate",
+      "evidence": "https://fbref.com/en/squads/800303a0/2000-2001/all_comps/Zaragoza-Stats-All-Competitions",
+      "threeSeasonReview": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "laliga-2000-gk-zaragoza-02",
+      "club": "zaragoza",
+      "name": "César Láinez",
+      "nameKo": "세사르 라이네스",
+      "nameOriginal": "César Láinez Sanjuán",
+      "born": "1977-04-10",
+      "position": "GK",
+      "role": "backup",
+      "starts": 3,
+      "appearances": 3,
+      "europeStarts": null,
+      "tier": null,
+      "rank": null,
+      "review": "provisional_candidate",
+      "evidence": "https://fbref.com/en/squads/800303a0/2000-2001/all_comps/Zaragoza-Stats-All-Competitions",
+      "threeSeasonReview": {
+        "status": "pending"
+      },
+      "additionalEvidence": "https://www.transfermarkt.com/real-zaragoza_celta-de-vigo/index/spielbericht/1093367"
+    }
+  ],
   "bestXi": []
 }
