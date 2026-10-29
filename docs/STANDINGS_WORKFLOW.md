@@ -34,6 +34,17 @@ Updated: 2026-10-29. This document governs **standings and next-season European 
 - Validation: `node scripts/verify-laliga.mjs` and `node scripts/verify-premierleague.mjs` now span 27 seasons.
 - Remaining historical limitations **unchanged**: some earlier next-season UEFA qualification source checks and full 27-season live-browser and historical badge tests have not been independently completed. An image URL is not proof a crest renders.
 
+## Serie A stage (added 2026-10-29)
+
+- Serie A is now the third league with completed **1999-00–2025-26 preliminary standings data**. File: `data/seriea-standings-verified-1999-2026.json`.
+- Exact league format: 18 teams and 34 matches in 1999-00 through 2003-04, then 20 teams and 38 matches in 2004-05 through 2025-26.
+- 27 complete league tables, 530 club-season final rank rows, 195 next-season European entrant **curated draft** links. Historical UEFA entrants (26 earlier seasons) are not independently UEFA-signed-off and must not trigger player nomination approval until reviewed. 2025-26 next-season entrants checked against official UEFA league phase publications.
+- 50 club identities including historical name changes. 43 externally sourced crest URLs; 7 still use abbreviation fallback. Visual asset period correctness and browser loading are not yet checked.
+- Exceptions: Juventus stripped of 2004-05 title; 2005-06 Juventus administrative relegation and Calciopoli -30 penalties for other clubs; Bologna 2004-05 lost relegation playoff despite Parma being ranked below; older points deductions documented with actual values. 1999-00 Milan/Roma source typos reconciled against independent final tables.
+- Three archived full-table reference files and source notes under `audit/seriea-rsssf-*.json`. Repeatable integrity script: `node scripts/verify-seriea.mjs`. Detail: `audit/SERIEA_AUDIT_STATUS_2026-10-29.md`.
+- Homepage league emblem assets (La Liga / PL / Serie A / Bundesliga / Ligue 1) linked directly, not AI-generated stadium art. Original card design retained. Browser image loads are not yet verified.
+- Follow-up league order: Bundesliga, then Ligue 1. Player candidate/grade work remains separate and user-gated.
+
 ## Baseline on 2026-10-29 (prior 26-season snapshot)
 
 ### La Liga
