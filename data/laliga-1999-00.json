@@ -10,7 +10,7 @@
     "label": "후보 검토 중",
     "source": "ChatGPT and user discussion; requires further historical validation",
     "lastReview": "2026-10-29",
-    "note": "1999-00 verified standings, 10 European entrants, 149 historical player candidates with birth dates; all player positions/eligibility and 3-season weighted tiers remain unapproved pending review.",
+    "note": "Final league table confirmed, 10 qualified clubs, provisional 1999-00 player pool with birth dates. Left/right roles and eligible backup slot caps remain subject to full 1997-2000 research and user approval. No tier or positional ranking finalized.",
     "standingsStatus": "verified",
     "standingsSource": "https://www.rsssf.org/tabless/span00.html; https://www.bdfutbol.com/en/t/t1999-00.html",
     "playerCandidateSources": {
@@ -25,8 +25,16 @@
       "mallorca": "https://www.bdfutbol.com/en/t/t1999-0024.html",
       "espanyol": "https://www.bdfutbol.com/en/t/t1999-0014.html"
     },
-    "candidateCount": 149,
-    "birthDatesVerificationRequired": 0
+    "candidateCount": 148,
+    "birthDatesVerificationRequired": 0,
+    "excludedProvisionalCandidates": [
+      {
+        "club": "rayo",
+        "name": "Eduardo Estíbariz",
+        "reason": "Historical RB listed behind Jesús Cota and Jordi Ferrón; only two RB candidates allowed; 1999–00 role requires further review.",
+        "source": "https://www.transfermarkt.es/rayo-vallecano/kader/verein/367/saison_id/1999"
+      }
+    ]
   },
   "clubs": [
     {
@@ -1426,16 +1434,17 @@
       "nameKo": "카리 순드그렌",
       "born": "1967-10-25",
       "club": "zaragoza",
-      "position": "RB",
+      "position": "CB",
       "role": "backup",
       "starts": 28,
       "tier": null,
       "rank": null,
       "review": "candidate_unapproved",
-      "positionReview": "needs_match_lineup_verification",
+      "positionReview": "verified_profile_requires_season_role_confirmation",
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0039.html",
       "birthReview": "crosscheck_on_source_discrepancy",
-      "birthSource": "https://www.bdfutbol.com/en/t/t1999-0039.html"
+      "birthSource": "https://www.bdfutbol.com/en/t/t1999-0039.html",
+      "evidencePosition": "https://www.national-football-teams.com/club/2319/2000/Real_Zaragoza.html"
     },
     {
       "id": "laliga-1999-zaragoza-076",
@@ -2157,16 +2166,17 @@
       "nameKo": "게르하르트 포슈너",
       "born": "1969-09-23",
       "club": "rayo",
-      "position": "CM",
+      "position": "DM",
       "role": "starter",
       "starts": 25,
       "tier": null,
       "rank": null,
       "review": "candidate_unapproved",
-      "positionReview": "needs_match_lineup_verification",
+      "positionReview": "verified_profile_requires_season_role_confirmation",
       "evidence": "https://www.bdfutbol.com/en/t/t1999-005.html",
       "birthReview": "crosscheck_on_source_discrepancy",
-      "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/rayo.htm"
+      "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/rayo.htm",
+      "evidencePosition": "https://www.transfermarkt.com/rayo-vallecano/startseite/verein/367/saison_id/1999/sort/trikotNumber.desc"
     },
     {
       "id": "laliga-1999-rayo-120",
@@ -2223,35 +2233,19 @@
       "id": "laliga-1999-rayo-123",
       "name": "Jordi Ferrón",
       "nameKo": "조르디 페론",
-      "born": "1978-08-19",
+      "born": "1978-08-15",
       "club": "rayo",
-      "position": "RW",
+      "position": "RB",
       "role": "starter",
       "starts": 24,
       "tier": null,
       "rank": null,
       "review": "candidate_unapproved",
-      "positionReview": "needs_match_lineup_verification",
+      "positionReview": "verified_profile_requires_season_role_confirmation",
       "evidence": "https://www.bdfutbol.com/en/t/t1999-005.html",
       "birthReview": "crosscheck_on_source_discrepancy",
-      "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/rayo.htm"
-    },
-    {
-      "id": "laliga-1999-rayo-124",
-      "name": "Eduardo Estíbariz",
-      "nameKo": "에두아르도 에스티바리스",
-      "born": "1966-05-27",
-      "club": "rayo",
-      "position": "LB",
-      "role": "backup",
-      "starts": 20,
-      "tier": null,
-      "rank": null,
-      "review": "candidate_unapproved",
-      "positionReview": "needs_match_lineup_verification",
-      "evidence": "https://www.bdfutbol.com/en/t/t1999-005.html",
-      "birthSource": "https://footballsquads.co.uk/spain/1999-2000/laliga/rayo.htm",
-      "birthReview": "crosschecked_source"
+      "birthSource": "https://www.bdfutbol.com/es/p/j1323.html?cat=1a-2a&ps=1",
+      "evidencePosition": "https://www.transfermarkt.com/rayo-vallecano/startseite/verein/367/saison_id/1999/sort/trikotNumber.desc"
     },
     {
       "id": "laliga-1999-rayo-125",
