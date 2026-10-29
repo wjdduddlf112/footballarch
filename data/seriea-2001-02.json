@@ -7,14 +7,25 @@
     "status": "draft",
     "standingsOnly": true,
     "standingsStatus": "archived_source_crosschecked",
-    "playerCandidateStatus": "draft_unapproved_all_clubs_first_pass_needs_further_review",
+    "playerCandidateStatus": "all_qualified_clubs_seeding_complete_player_eligibility_and_position_verification_incomplete",
     "candidateCount": 137,
     "candidateCoverage": {
       "qualifiedClubs": 10,
       "clubsWithPlayerCandidates": 10,
       "fullyAuditedClubs": 0,
-      "clubsPending": [],
-      "notes": "All 10 teams first-pass candidate records; not all player positions and starts verified; each must pass match-level review."
+      "clubsPending": [
+        "juventus",
+        "roma",
+        "inter",
+        "milan",
+        "chievo",
+        "lazio",
+        "parma",
+        "perugia",
+        "bologna",
+        "torino"
+      ],
+      "notes": "All qualified clubs have first-pass researched candidates; no club season's primary-position match-by-match frequency or formation is fully verified. Do not call completed/approved."
     },
     "statsScope": "Serie A league matches only",
     "tierStatus": "not_assessed",
@@ -36,7 +47,9 @@
     ],
     "qualificationNotes": "",
     "playerApprovalUnchanged": true,
-    "lastReview": "2026-10-30"
+    "lastReview": "2026-10-30",
+    "positionValidationStatus": "needs_review_all",
+    "rolesSemantics": "Candidate-slot starter is highest league-start player per fixed position; backup is secondary candidate slot even when historical co-starter. 2 CB starters and up to 1 backup; 2 CM starters and up to 1 backup provisionally. Historical actual formation exception may change positions/CM/CAM eligibility at signoff."
   },
   "clubs": [
     {
@@ -571,14 +584,15 @@
       "leagueStarts": 34,
       "leagueMinutes": 3060,
       "statsScope": "Serie A domestic league only",
-      "positionVerification": "source_crosschecked_provisional",
+      "positionVerification": "needs_review",
       "verificationReasons": [],
       "sources": [
         "https://fbref.com/en/squads/e0652b02/2001-2002/c11/Juventus-Stats-Serie-A",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/juventus.htm",
         "https://www.romaromagol.it/category/memorie-giallorosse/"
       ],
-      "evidence": "https://fbref.com/en/squads/e0652b02/2001-2002/c11/Juventus-Stats-Serie-A"
+      "evidence": "https://fbref.com/en/squads/e0652b02/2001-2002/c11/Juventus-Stats-Serie-A",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-02-juventus-02",
@@ -599,7 +613,7 @@
       "leagueStarts": 26,
       "leagueMinutes": 2208,
       "statsScope": "Serie A domestic league only",
-      "positionVerification": "source_crosschecked_provisional",
+      "positionVerification": "needs_review",
       "verificationReasons": [
         "Footballsquads DOB 1983 is a clear transcription error; 1973-08-12 independently checked against biographical record."
       ],
@@ -609,7 +623,8 @@
         "https://www.romaromagol.it/category/memorie-giallorosse/",
         "https://en.wikipedia.org/wiki/Mark_Iuliano"
       ],
-      "evidence": "https://fbref.com/en/squads/e0652b02/2001-2002/c11/Juventus-Stats-Serie-A"
+      "evidence": "https://fbref.com/en/squads/e0652b02/2001-2002/c11/Juventus-Stats-Serie-A",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-02-juventus-03",
@@ -630,14 +645,15 @@
       "leagueStarts": 21,
       "leagueMinutes": 1881,
       "statsScope": "Serie A domestic league only",
-      "positionVerification": "source_crosschecked_provisional",
+      "positionVerification": "needs_review",
       "verificationReasons": [],
       "sources": [
         "https://fbref.com/en/squads/e0652b02/2001-2002/c11/Juventus-Stats-Serie-A",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/juventus.htm",
         "https://www.romaromagol.it/category/memorie-giallorosse/"
       ],
-      "evidence": "https://fbref.com/en/squads/e0652b02/2001-2002/c11/Juventus-Stats-Serie-A"
+      "evidence": "https://fbref.com/en/squads/e0652b02/2001-2002/c11/Juventus-Stats-Serie-A",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-02-juventus-04",
@@ -658,7 +674,7 @@
       "leagueStarts": 13,
       "leagueMinutes": 1057,
       "statsScope": "Serie A domestic league only",
-      "positionVerification": "source_crosschecked_provisional",
+      "positionVerification": "needs_review",
       "verificationReasons": [
         "13 starts; Igor Tudor (10 starts) excluded by CB three-player cap, requires review."
       ],
@@ -667,7 +683,8 @@
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/juventus.htm",
         "https://www.romaromagol.it/category/memorie-giallorosse/"
       ],
-      "evidence": "https://fbref.com/en/squads/e0652b02/2001-2002/c11/Juventus-Stats-Serie-A"
+      "evidence": "https://fbref.com/en/squads/e0652b02/2001-2002/c11/Juventus-Stats-Serie-A",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-02-juventus-05",
@@ -697,7 +714,8 @@
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/juventus.htm",
         "https://www.romaromagol.it/category/memorie-giallorosse/"
       ],
-      "evidence": "https://fbref.com/en/squads/e0652b02/2001-2002/c11/Juventus-Stats-Serie-A"
+      "evidence": "https://fbref.com/en/squads/e0652b02/2001-2002/c11/Juventus-Stats-Serie-A",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-02-juventus-06",
@@ -718,14 +736,15 @@
       "leagueStarts": 30,
       "leagueMinutes": 2614,
       "statsScope": "Serie A domestic league only",
-      "positionVerification": "source_crosschecked_provisional",
+      "positionVerification": "needs_review",
       "verificationReasons": [],
       "sources": [
         "https://fbref.com/en/squads/e0652b02/2001-2002/c11/Juventus-Stats-Serie-A",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/juventus.htm",
         "https://www.romaromagol.it/category/memorie-giallorosse/"
       ],
-      "evidence": "https://fbref.com/en/squads/e0652b02/2001-2002/c11/Juventus-Stats-Serie-A"
+      "evidence": "https://fbref.com/en/squads/e0652b02/2001-2002/c11/Juventus-Stats-Serie-A",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-02-juventus-07",
@@ -755,7 +774,8 @@
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/juventus.htm",
         "https://www.romaromagol.it/category/memorie-giallorosse/"
       ],
-      "evidence": "https://fbref.com/en/squads/e0652b02/2001-2002/c11/Juventus-Stats-Serie-A"
+      "evidence": "https://fbref.com/en/squads/e0652b02/2001-2002/c11/Juventus-Stats-Serie-A",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-02-juventus-08",
@@ -776,14 +796,15 @@
       "leagueStarts": 25,
       "leagueMinutes": 2095,
       "statsScope": "Serie A domestic league only",
-      "positionVerification": "source_crosschecked_provisional",
+      "positionVerification": "needs_review",
       "verificationReasons": [],
       "sources": [
         "https://fbref.com/en/squads/e0652b02/2001-2002/c11/Juventus-Stats-Serie-A",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/juventus.htm",
         "https://www.romaromagol.it/category/memorie-giallorosse/"
       ],
-      "evidence": "https://fbref.com/en/squads/e0652b02/2001-2002/c11/Juventus-Stats-Serie-A"
+      "evidence": "https://fbref.com/en/squads/e0652b02/2001-2002/c11/Juventus-Stats-Serie-A",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-02-juventus-09",
@@ -804,14 +825,15 @@
       "leagueStarts": 24,
       "leagueMinutes": 2110,
       "statsScope": "Serie A domestic league only",
-      "positionVerification": "source_crosschecked_provisional",
+      "positionVerification": "needs_review",
       "verificationReasons": [],
       "sources": [
         "https://fbref.com/en/squads/e0652b02/2001-2002/c11/Juventus-Stats-Serie-A",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/juventus.htm",
         "https://www.romaromagol.it/category/memorie-giallorosse/"
       ],
-      "evidence": "https://fbref.com/en/squads/e0652b02/2001-2002/c11/Juventus-Stats-Serie-A"
+      "evidence": "https://fbref.com/en/squads/e0652b02/2001-2002/c11/Juventus-Stats-Serie-A",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-02-juventus-10",
@@ -832,14 +854,15 @@
       "leagueStarts": 16,
       "leagueMinutes": 1483,
       "statsScope": "Serie A domestic league only",
-      "positionVerification": "source_crosschecked_provisional",
+      "positionVerification": "needs_review",
       "verificationReasons": [],
       "sources": [
         "https://fbref.com/en/squads/e0652b02/2001-2002/c11/Juventus-Stats-Serie-A",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/juventus.htm",
         "https://www.romaromagol.it/category/memorie-giallorosse/"
       ],
-      "evidence": "https://fbref.com/en/squads/e0652b02/2001-2002/c11/Juventus-Stats-Serie-A"
+      "evidence": "https://fbref.com/en/squads/e0652b02/2001-2002/c11/Juventus-Stats-Serie-A",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-02-juventus-11",
@@ -869,7 +892,8 @@
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/juventus.htm",
         "https://www.romaromagol.it/category/memorie-giallorosse/"
       ],
-      "evidence": "https://fbref.com/en/squads/e0652b02/2001-2002/c11/Juventus-Stats-Serie-A"
+      "evidence": "https://fbref.com/en/squads/e0652b02/2001-2002/c11/Juventus-Stats-Serie-A",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-02-juventus-12",
@@ -899,7 +923,8 @@
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/juventus.htm",
         "https://www.romaromagol.it/category/memorie-giallorosse/"
       ],
-      "evidence": "https://fbref.com/en/squads/e0652b02/2001-2002/c11/Juventus-Stats-Serie-A"
+      "evidence": "https://fbref.com/en/squads/e0652b02/2001-2002/c11/Juventus-Stats-Serie-A",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-02-juventus-13",
@@ -920,14 +945,15 @@
       "leagueStarts": 33,
       "leagueMinutes": 2898,
       "statsScope": "Serie A domestic league only",
-      "positionVerification": "source_crosschecked_provisional",
+      "positionVerification": "needs_review",
       "verificationReasons": [],
       "sources": [
         "https://fbref.com/en/squads/e0652b02/2001-2002/c11/Juventus-Stats-Serie-A",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/juventus.htm",
         "https://www.romaromagol.it/category/memorie-giallorosse/"
       ],
-      "evidence": "https://fbref.com/en/squads/e0652b02/2001-2002/c11/Juventus-Stats-Serie-A"
+      "evidence": "https://fbref.com/en/squads/e0652b02/2001-2002/c11/Juventus-Stats-Serie-A",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-02-juventus-14",
@@ -948,7 +974,7 @@
       "leagueStarts": 31,
       "leagueMinutes": 2662,
       "statsScope": "Serie A domestic league only",
-      "positionVerification": "source_crosschecked_provisional",
+      "positionVerification": "needs_review",
       "verificationReasons": [
         "31 starts, regular co-starter; 'backup' denotes 1+1 ST candidate slot, not actual substitute."
       ],
@@ -957,7 +983,8 @@
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/juventus.htm",
         "https://www.romaromagol.it/category/memorie-giallorosse/"
       ],
-      "evidence": "https://fbref.com/en/squads/e0652b02/2001-2002/c11/Juventus-Stats-Serie-A"
+      "evidence": "https://fbref.com/en/squads/e0652b02/2001-2002/c11/Juventus-Stats-Serie-A",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-roma-01",
@@ -986,7 +1013,8 @@
         "https://fbref.com/en/squads/cf74a709/2001-2002/Roma-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/roma.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/cf74a709/2001-2002/Roma-Stats"
+      "evidence": "https://fbref.com/en/squads/cf74a709/2001-2002/Roma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-roma-02",
@@ -1016,7 +1044,8 @@
         "https://fbref.com/en/squads/cf74a709/2001-2002/Roma-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/roma.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/cf74a709/2001-2002/Roma-Stats"
+      "evidence": "https://fbref.com/en/squads/cf74a709/2001-2002/Roma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-roma-03",
@@ -1045,7 +1074,8 @@
         "https://fbref.com/en/squads/cf74a709/2001-2002/Roma-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/roma.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/cf74a709/2001-2002/Roma-Stats"
+      "evidence": "https://fbref.com/en/squads/cf74a709/2001-2002/Roma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-roma-04",
@@ -1057,7 +1087,7 @@
       "clubId": "roma",
       "clubName": "AS Roma",
       "position": "CB",
-      "role": "starter",
+      "role": "backup",
       "starts": 23,
       "leagueAppearances": 24,
       "leagueStarts": 23,
@@ -1074,7 +1104,8 @@
         "https://fbref.com/en/squads/cf74a709/2001-2002/Roma-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/roma.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/cf74a709/2001-2002/Roma-Stats"
+      "evidence": "https://fbref.com/en/squads/cf74a709/2001-2002/Roma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-roma-06",
@@ -1105,7 +1136,8 @@
         "https://fbref.com/en/squads/cf74a709/2001-2002/Roma-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/roma.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/cf74a709/2001-2002/Roma-Stats"
+      "evidence": "https://fbref.com/en/squads/cf74a709/2001-2002/Roma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-roma-07",
@@ -1135,7 +1167,8 @@
         "https://fbref.com/en/squads/cf74a709/2001-2002/Roma-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/roma.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/cf74a709/2001-2002/Roma-Stats"
+      "evidence": "https://fbref.com/en/squads/cf74a709/2001-2002/Roma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-roma-08",
@@ -1167,7 +1200,8 @@
         "https://fbref.com/en/squads/cf74a709/2001-2002/Roma-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/roma.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/cf74a709/2001-2002/Roma-Stats"
+      "evidence": "https://fbref.com/en/squads/cf74a709/2001-2002/Roma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-roma-09",
@@ -1196,7 +1230,8 @@
         "https://fbref.com/en/squads/cf74a709/2001-2002/Roma-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/roma.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/cf74a709/2001-2002/Roma-Stats"
+      "evidence": "https://fbref.com/en/squads/cf74a709/2001-2002/Roma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-roma-10",
@@ -1225,7 +1260,8 @@
         "https://fbref.com/en/squads/cf74a709/2001-2002/Roma-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/roma.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/cf74a709/2001-2002/Roma-Stats"
+      "evidence": "https://fbref.com/en/squads/cf74a709/2001-2002/Roma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-roma-11",
@@ -1254,7 +1290,8 @@
         "https://fbref.com/en/squads/cf74a709/2001-2002/Roma-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/roma.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/cf74a709/2001-2002/Roma-Stats"
+      "evidence": "https://fbref.com/en/squads/cf74a709/2001-2002/Roma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-roma-12",
@@ -1266,7 +1303,7 @@
       "clubId": "roma",
       "clubName": "AS Roma",
       "position": "CM",
-      "role": "backup",
+      "role": "starter",
       "starts": 15,
       "leagueAppearances": 22,
       "leagueStarts": 15,
@@ -1283,7 +1320,8 @@
         "https://fbref.com/en/squads/cf74a709/2001-2002/Roma-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/roma.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/cf74a709/2001-2002/Roma-Stats"
+      "evidence": "https://fbref.com/en/squads/cf74a709/2001-2002/Roma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-roma-13",
@@ -1313,7 +1351,8 @@
         "https://fbref.com/en/squads/cf74a709/2001-2002/Roma-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/roma.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/cf74a709/2001-2002/Roma-Stats"
+      "evidence": "https://fbref.com/en/squads/cf74a709/2001-2002/Roma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-roma-14",
@@ -1325,7 +1364,7 @@
       "clubId": "roma",
       "clubName": "AS Roma",
       "position": "ST",
-      "role": "starter",
+      "role": "backup",
       "starts": 20,
       "leagueAppearances": 23,
       "leagueStarts": 20,
@@ -1342,7 +1381,8 @@
         "https://fbref.com/en/squads/cf74a709/2001-2002/Roma-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/roma.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/cf74a709/2001-2002/Roma-Stats"
+      "evidence": "https://fbref.com/en/squads/cf74a709/2001-2002/Roma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-roma-15",
@@ -1371,7 +1411,8 @@
         "https://fbref.com/en/squads/cf74a709/2001-2002/Roma-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/roma.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/cf74a709/2001-2002/Roma-Stats"
+      "evidence": "https://fbref.com/en/squads/cf74a709/2001-2002/Roma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-inter-01",
@@ -1400,7 +1441,8 @@
         "https://fbref.com/en/squads/d609edc0/2001-2002/Inter-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/inter.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/d609edc0/2001-2002/Inter-Stats"
+      "evidence": "https://fbref.com/en/squads/d609edc0/2001-2002/Inter-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-inter-02",
@@ -1429,7 +1471,8 @@
         "https://fbref.com/en/squads/d609edc0/2001-2002/Inter-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/inter.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/d609edc0/2001-2002/Inter-Stats"
+      "evidence": "https://fbref.com/en/squads/d609edc0/2001-2002/Inter-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-inter-03",
@@ -1458,7 +1501,8 @@
         "https://fbref.com/en/squads/d609edc0/2001-2002/Inter-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/inter.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/d609edc0/2001-2002/Inter-Stats"
+      "evidence": "https://fbref.com/en/squads/d609edc0/2001-2002/Inter-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-inter-04",
@@ -1487,7 +1531,8 @@
         "https://fbref.com/en/squads/d609edc0/2001-2002/Inter-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/inter.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/d609edc0/2001-2002/Inter-Stats"
+      "evidence": "https://fbref.com/en/squads/d609edc0/2001-2002/Inter-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-inter-06",
@@ -1517,7 +1562,8 @@
         "https://fbref.com/en/squads/d609edc0/2001-2002/Inter-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/inter.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/d609edc0/2001-2002/Inter-Stats"
+      "evidence": "https://fbref.com/en/squads/d609edc0/2001-2002/Inter-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-inter-07",
@@ -1547,7 +1593,8 @@
         "https://fbref.com/en/squads/d609edc0/2001-2002/Inter-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/inter.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/d609edc0/2001-2002/Inter-Stats"
+      "evidence": "https://fbref.com/en/squads/d609edc0/2001-2002/Inter-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-inter-09",
@@ -1576,7 +1623,8 @@
         "https://fbref.com/en/squads/d609edc0/2001-2002/Inter-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/inter.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/d609edc0/2001-2002/Inter-Stats"
+      "evidence": "https://fbref.com/en/squads/d609edc0/2001-2002/Inter-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-inter-10",
@@ -1605,7 +1653,8 @@
         "https://fbref.com/en/squads/d609edc0/2001-2002/Inter-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/inter.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/d609edc0/2001-2002/Inter-Stats"
+      "evidence": "https://fbref.com/en/squads/d609edc0/2001-2002/Inter-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-inter-11",
@@ -1617,7 +1666,7 @@
       "clubId": "inter",
       "clubName": "FC Internazionale Milano",
       "position": "CM",
-      "role": "backup",
+      "role": "starter",
       "starts": 17,
       "leagueAppearances": 20,
       "leagueStarts": 17,
@@ -1634,7 +1683,8 @@
         "https://fbref.com/en/squads/d609edc0/2001-2002/Inter-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/inter.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/d609edc0/2001-2002/Inter-Stats"
+      "evidence": "https://fbref.com/en/squads/d609edc0/2001-2002/Inter-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-inter-12",
@@ -1664,7 +1714,8 @@
         "https://fbref.com/en/squads/d609edc0/2001-2002/Inter-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/inter.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/d609edc0/2001-2002/Inter-Stats"
+      "evidence": "https://fbref.com/en/squads/d609edc0/2001-2002/Inter-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-inter-13",
@@ -1676,7 +1727,7 @@
       "clubId": "inter",
       "clubName": "FC Internazionale Milano",
       "position": "RW",
-      "role": "backup",
+      "role": "starter",
       "starts": 16,
       "leagueAppearances": 22,
       "leagueStarts": 16,
@@ -1695,7 +1746,8 @@
         "https://fbref.com/en/squads/d609edc0/2001-2002/Inter-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/inter.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/d609edc0/2001-2002/Inter-Stats"
+      "evidence": "https://fbref.com/en/squads/d609edc0/2001-2002/Inter-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-inter-14",
@@ -1726,7 +1778,8 @@
         "https://fbref.com/en/squads/d609edc0/2001-2002/Inter-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/inter.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/d609edc0/2001-2002/Inter-Stats"
+      "evidence": "https://fbref.com/en/squads/d609edc0/2001-2002/Inter-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-inter-15",
@@ -1755,7 +1808,8 @@
         "https://fbref.com/en/squads/d609edc0/2001-2002/Inter-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/inter.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/d609edc0/2001-2002/Inter-Stats"
+      "evidence": "https://fbref.com/en/squads/d609edc0/2001-2002/Inter-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-inter-16",
@@ -1785,7 +1839,8 @@
         "https://fbref.com/en/squads/d609edc0/2001-2002/Inter-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/inter.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/d609edc0/2001-2002/Inter-Stats"
+      "evidence": "https://fbref.com/en/squads/d609edc0/2001-2002/Inter-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-milan-01",
@@ -1815,7 +1870,8 @@
         "https://fbref.com/en/squads/dc56fe14/2001-2002/c11/Milan-Stats-Serie-A",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/milan.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/dc56fe14/2001-2002/c11/Milan-Stats-Serie-A"
+      "evidence": "https://fbref.com/en/squads/dc56fe14/2001-2002/c11/Milan-Stats-Serie-A",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-milan-02",
@@ -1846,7 +1902,8 @@
         "https://fbref.com/en/squads/dc56fe14/2001-2002/c11/Milan-Stats-Serie-A",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/milan.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/dc56fe14/2001-2002/c11/Milan-Stats-Serie-A"
+      "evidence": "https://fbref.com/en/squads/dc56fe14/2001-2002/c11/Milan-Stats-Serie-A",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-milan-03",
@@ -1858,7 +1915,7 @@
       "clubId": "milan",
       "clubName": "AC Milan",
       "position": "CB",
-      "role": "backup",
+      "role": "starter",
       "starts": 18,
       "leagueAppearances": 22,
       "leagueStarts": 18,
@@ -1876,7 +1933,8 @@
         "https://fbref.com/en/squads/dc56fe14/2001-2002/c11/Milan-Stats-Serie-A",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/milan.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/dc56fe14/2001-2002/c11/Milan-Stats-Serie-A"
+      "evidence": "https://fbref.com/en/squads/dc56fe14/2001-2002/c11/Milan-Stats-Serie-A",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-milan-05",
@@ -1907,7 +1965,8 @@
         "https://fbref.com/en/squads/dc56fe14/2001-2002/c11/Milan-Stats-Serie-A",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/milan.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/dc56fe14/2001-2002/c11/Milan-Stats-Serie-A"
+      "evidence": "https://fbref.com/en/squads/dc56fe14/2001-2002/c11/Milan-Stats-Serie-A",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-milan-06",
@@ -1919,7 +1978,7 @@
       "clubId": "milan",
       "clubName": "AC Milan",
       "position": "LB",
-      "role": "starter",
+      "role": "backup",
       "starts": 24,
       "leagueAppearances": 27,
       "leagueStarts": 24,
@@ -1938,7 +1997,8 @@
         "https://fbref.com/en/squads/dc56fe14/2001-2002/c11/Milan-Stats-Serie-A",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/milan.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/dc56fe14/2001-2002/c11/Milan-Stats-Serie-A"
+      "evidence": "https://fbref.com/en/squads/dc56fe14/2001-2002/c11/Milan-Stats-Serie-A",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-milan-07",
@@ -1969,7 +2029,8 @@
         "https://fbref.com/en/squads/dc56fe14/2001-2002/c11/Milan-Stats-Serie-A",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/milan.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/dc56fe14/2001-2002/c11/Milan-Stats-Serie-A"
+      "evidence": "https://fbref.com/en/squads/dc56fe14/2001-2002/c11/Milan-Stats-Serie-A",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-milan-08",
@@ -2000,7 +2061,8 @@
         "https://fbref.com/en/squads/dc56fe14/2001-2002/c11/Milan-Stats-Serie-A",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/milan.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/dc56fe14/2001-2002/c11/Milan-Stats-Serie-A"
+      "evidence": "https://fbref.com/en/squads/dc56fe14/2001-2002/c11/Milan-Stats-Serie-A",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-milan-09",
@@ -2030,7 +2092,8 @@
         "https://fbref.com/en/squads/dc56fe14/2001-2002/c11/Milan-Stats-Serie-A",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/milan.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/dc56fe14/2001-2002/c11/Milan-Stats-Serie-A"
+      "evidence": "https://fbref.com/en/squads/dc56fe14/2001-2002/c11/Milan-Stats-Serie-A",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-milan-10",
@@ -2060,7 +2123,8 @@
         "https://fbref.com/en/squads/dc56fe14/2001-2002/c11/Milan-Stats-Serie-A",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/milan.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/dc56fe14/2001-2002/c11/Milan-Stats-Serie-A"
+      "evidence": "https://fbref.com/en/squads/dc56fe14/2001-2002/c11/Milan-Stats-Serie-A",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-milan-12",
@@ -2091,7 +2155,8 @@
         "https://fbref.com/en/squads/dc56fe14/2001-2002/c11/Milan-Stats-Serie-A",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/milan.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/dc56fe14/2001-2002/c11/Milan-Stats-Serie-A"
+      "evidence": "https://fbref.com/en/squads/dc56fe14/2001-2002/c11/Milan-Stats-Serie-A",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-milan-14",
@@ -2121,7 +2186,8 @@
         "https://fbref.com/en/squads/dc56fe14/2001-2002/c11/Milan-Stats-Serie-A",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/milan.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/dc56fe14/2001-2002/c11/Milan-Stats-Serie-A"
+      "evidence": "https://fbref.com/en/squads/dc56fe14/2001-2002/c11/Milan-Stats-Serie-A",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-milan-15",
@@ -2151,7 +2217,8 @@
         "https://fbref.com/en/squads/dc56fe14/2001-2002/c11/Milan-Stats-Serie-A",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/milan.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/dc56fe14/2001-2002/c11/Milan-Stats-Serie-A"
+      "evidence": "https://fbref.com/en/squads/dc56fe14/2001-2002/c11/Milan-Stats-Serie-A",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-chievo-01",
@@ -2180,7 +2247,8 @@
         "https://fbref.com/en/squads/cc919b35/2001-2002/Chievo-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/cverona.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/cc919b35/2001-2002/Chievo-Stats"
+      "evidence": "https://fbref.com/en/squads/cc919b35/2001-2002/Chievo-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-chievo-02",
@@ -2210,7 +2278,8 @@
         "https://fbref.com/en/squads/cc919b35/2001-2002/Chievo-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/cverona.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/cc919b35/2001-2002/Chievo-Stats"
+      "evidence": "https://fbref.com/en/squads/cc919b35/2001-2002/Chievo-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-chievo-03",
@@ -2240,7 +2309,8 @@
         "https://fbref.com/en/squads/cc919b35/2001-2002/Chievo-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/cverona.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/cc919b35/2001-2002/Chievo-Stats"
+      "evidence": "https://fbref.com/en/squads/cc919b35/2001-2002/Chievo-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-chievo-04",
@@ -2270,7 +2340,8 @@
         "https://fbref.com/en/squads/cc919b35/2001-2002/Chievo-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/cverona.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/cc919b35/2001-2002/Chievo-Stats"
+      "evidence": "https://fbref.com/en/squads/cc919b35/2001-2002/Chievo-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-chievo-05",
@@ -2300,7 +2371,8 @@
         "https://fbref.com/en/squads/cc919b35/2001-2002/Chievo-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/cverona.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/cc919b35/2001-2002/Chievo-Stats"
+      "evidence": "https://fbref.com/en/squads/cc919b35/2001-2002/Chievo-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-chievo-06",
@@ -2330,7 +2402,8 @@
         "https://fbref.com/en/squads/cc919b35/2001-2002/Chievo-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/cverona.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/cc919b35/2001-2002/Chievo-Stats"
+      "evidence": "https://fbref.com/en/squads/cc919b35/2001-2002/Chievo-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-chievo-07",
@@ -2360,7 +2433,8 @@
         "https://fbref.com/en/squads/cc919b35/2001-2002/Chievo-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/cverona.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/cc919b35/2001-2002/Chievo-Stats"
+      "evidence": "https://fbref.com/en/squads/cc919b35/2001-2002/Chievo-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-chievo-08",
@@ -2391,7 +2465,8 @@
         "https://fbref.com/en/squads/cc919b35/2001-2002/Chievo-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/cverona.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/cc919b35/2001-2002/Chievo-Stats"
+      "evidence": "https://fbref.com/en/squads/cc919b35/2001-2002/Chievo-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-chievo-09",
@@ -2420,7 +2495,8 @@
         "https://fbref.com/en/squads/cc919b35/2001-2002/Chievo-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/cverona.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/cc919b35/2001-2002/Chievo-Stats"
+      "evidence": "https://fbref.com/en/squads/cc919b35/2001-2002/Chievo-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-chievo-11",
@@ -2451,7 +2527,8 @@
         "https://fbref.com/en/squads/cc919b35/2001-2002/Chievo-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/cverona.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/cc919b35/2001-2002/Chievo-Stats"
+      "evidence": "https://fbref.com/en/squads/cc919b35/2001-2002/Chievo-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-chievo-12",
@@ -2483,7 +2560,8 @@
         "https://fbref.com/en/squads/cc919b35/2001-2002/Chievo-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/cverona.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/cc919b35/2001-2002/Chievo-Stats"
+      "evidence": "https://fbref.com/en/squads/cc919b35/2001-2002/Chievo-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-chievo-13",
@@ -2512,7 +2590,8 @@
         "https://fbref.com/en/squads/cc919b35/2001-2002/Chievo-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/cverona.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/cc919b35/2001-2002/Chievo-Stats"
+      "evidence": "https://fbref.com/en/squads/cc919b35/2001-2002/Chievo-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-chievo-14",
@@ -2524,7 +2603,7 @@
       "clubId": "chievo",
       "clubName": "AC ChievoVerona",
       "position": "ST",
-      "role": "starter",
+      "role": "backup",
       "starts": 30,
       "leagueAppearances": 31,
       "leagueStarts": 30,
@@ -2542,7 +2621,8 @@
         "https://fbref.com/en/squads/cc919b35/2001-2002/Chievo-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/cverona.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/cc919b35/2001-2002/Chievo-Stats"
+      "evidence": "https://fbref.com/en/squads/cc919b35/2001-2002/Chievo-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-lazio-01",
@@ -2571,7 +2651,8 @@
         "https://fbref.com/en/squads/7213da33/2001-2002/Lazio-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/lazio.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/7213da33/2001-2002/Lazio-Stats"
+      "evidence": "https://fbref.com/en/squads/7213da33/2001-2002/Lazio-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-lazio-02",
@@ -2601,7 +2682,8 @@
         "https://fbref.com/en/squads/7213da33/2001-2002/Lazio-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/lazio.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/7213da33/2001-2002/Lazio-Stats"
+      "evidence": "https://fbref.com/en/squads/7213da33/2001-2002/Lazio-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-lazio-03",
@@ -2630,7 +2712,8 @@
         "https://fbref.com/en/squads/7213da33/2001-2002/Lazio-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/lazio.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/7213da33/2001-2002/Lazio-Stats"
+      "evidence": "https://fbref.com/en/squads/7213da33/2001-2002/Lazio-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-lazio-04",
@@ -2659,7 +2742,8 @@
         "https://fbref.com/en/squads/7213da33/2001-2002/Lazio-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/lazio.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/7213da33/2001-2002/Lazio-Stats"
+      "evidence": "https://fbref.com/en/squads/7213da33/2001-2002/Lazio-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-lazio-06",
@@ -2671,7 +2755,7 @@
       "clubId": "lazio",
       "clubName": "SS Lazio",
       "position": "LB",
-      "role": "backup",
+      "role": "starter",
       "starts": 18,
       "leagueAppearances": 20,
       "leagueStarts": 18,
@@ -2690,7 +2774,8 @@
         "https://fbref.com/en/squads/7213da33/2001-2002/Lazio-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/lazio.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/7213da33/2001-2002/Lazio-Stats"
+      "evidence": "https://fbref.com/en/squads/7213da33/2001-2002/Lazio-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-lazio-07",
@@ -2720,7 +2805,8 @@
         "https://fbref.com/en/squads/7213da33/2001-2002/Lazio-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/lazio.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/7213da33/2001-2002/Lazio-Stats"
+      "evidence": "https://fbref.com/en/squads/7213da33/2001-2002/Lazio-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-lazio-08",
@@ -2751,7 +2837,8 @@
         "https://fbref.com/en/squads/7213da33/2001-2002/Lazio-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/lazio.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/7213da33/2001-2002/Lazio-Stats"
+      "evidence": "https://fbref.com/en/squads/7213da33/2001-2002/Lazio-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-lazio-09",
@@ -2780,7 +2867,8 @@
         "https://fbref.com/en/squads/7213da33/2001-2002/Lazio-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/lazio.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/7213da33/2001-2002/Lazio-Stats"
+      "evidence": "https://fbref.com/en/squads/7213da33/2001-2002/Lazio-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-lazio-10",
@@ -2809,7 +2897,8 @@
         "https://fbref.com/en/squads/7213da33/2001-2002/Lazio-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/lazio.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/7213da33/2001-2002/Lazio-Stats"
+      "evidence": "https://fbref.com/en/squads/7213da33/2001-2002/Lazio-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-lazio-11",
@@ -2838,7 +2927,8 @@
         "https://fbref.com/en/squads/7213da33/2001-2002/Lazio-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/lazio.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/7213da33/2001-2002/Lazio-Stats"
+      "evidence": "https://fbref.com/en/squads/7213da33/2001-2002/Lazio-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-lazio-12",
@@ -2868,7 +2958,8 @@
         "https://fbref.com/en/squads/7213da33/2001-2002/Lazio-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/lazio.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/7213da33/2001-2002/Lazio-Stats"
+      "evidence": "https://fbref.com/en/squads/7213da33/2001-2002/Lazio-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-lazio-13",
@@ -2880,7 +2971,7 @@
       "clubId": "lazio",
       "clubName": "SS Lazio",
       "position": "RW",
-      "role": "backup",
+      "role": "starter",
       "starts": 19,
       "leagueAppearances": 27,
       "leagueStarts": 19,
@@ -2899,7 +2990,8 @@
         "https://fbref.com/en/squads/7213da33/2001-2002/Lazio-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/lazio.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/7213da33/2001-2002/Lazio-Stats"
+      "evidence": "https://fbref.com/en/squads/7213da33/2001-2002/Lazio-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-lazio-14",
@@ -2911,7 +3003,7 @@
       "clubId": "lazio",
       "clubName": "SS Lazio",
       "position": "ST",
-      "role": "starter",
+      "role": "backup",
       "starts": 21,
       "leagueAppearances": 22,
       "leagueStarts": 21,
@@ -2928,7 +3020,8 @@
         "https://fbref.com/en/squads/7213da33/2001-2002/Lazio-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/lazio.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/7213da33/2001-2002/Lazio-Stats"
+      "evidence": "https://fbref.com/en/squads/7213da33/2001-2002/Lazio-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-lazio-15",
@@ -2957,7 +3050,8 @@
         "https://fbref.com/en/squads/7213da33/2001-2002/Lazio-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/lazio.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/7213da33/2001-2002/Lazio-Stats"
+      "evidence": "https://fbref.com/en/squads/7213da33/2001-2002/Lazio-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-parma-01",
@@ -2986,7 +3080,8 @@
         "https://fbref.com/en/squads/eab4234c/2001-2002/Parma-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/parma.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/eab4234c/2001-2002/Parma-Stats"
+      "evidence": "https://fbref.com/en/squads/eab4234c/2001-2002/Parma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-parma-02",
@@ -3016,7 +3111,8 @@
         "https://fbref.com/en/squads/eab4234c/2001-2002/Parma-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/parma.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/eab4234c/2001-2002/Parma-Stats"
+      "evidence": "https://fbref.com/en/squads/eab4234c/2001-2002/Parma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-parma-03",
@@ -3045,7 +3141,8 @@
         "https://fbref.com/en/squads/eab4234c/2001-2002/Parma-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/parma.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/eab4234c/2001-2002/Parma-Stats"
+      "evidence": "https://fbref.com/en/squads/eab4234c/2001-2002/Parma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-parma-04",
@@ -3074,7 +3171,8 @@
         "https://fbref.com/en/squads/eab4234c/2001-2002/Parma-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/parma.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/eab4234c/2001-2002/Parma-Stats"
+      "evidence": "https://fbref.com/en/squads/eab4234c/2001-2002/Parma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-parma-05",
@@ -3103,7 +3201,8 @@
         "https://fbref.com/en/squads/eab4234c/2001-2002/Parma-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/parma.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/eab4234c/2001-2002/Parma-Stats"
+      "evidence": "https://fbref.com/en/squads/eab4234c/2001-2002/Parma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-parma-06",
@@ -3133,7 +3232,8 @@
         "https://fbref.com/en/squads/eab4234c/2001-2002/Parma-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/parma.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/eab4234c/2001-2002/Parma-Stats"
+      "evidence": "https://fbref.com/en/squads/eab4234c/2001-2002/Parma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-parma-07",
@@ -3145,7 +3245,7 @@
       "clubId": "parma",
       "clubName": "Parma Calcio 1913",
       "position": "RB",
-      "role": "backup",
+      "role": "starter",
       "starts": 18,
       "leagueAppearances": 19,
       "leagueStarts": 18,
@@ -3163,7 +3263,8 @@
         "https://fbref.com/en/squads/eab4234c/2001-2002/Parma-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/parma.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/eab4234c/2001-2002/Parma-Stats"
+      "evidence": "https://fbref.com/en/squads/eab4234c/2001-2002/Parma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-parma-08",
@@ -3193,7 +3294,8 @@
         "https://fbref.com/en/squads/eab4234c/2001-2002/Parma-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/parma.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/eab4234c/2001-2002/Parma-Stats"
+      "evidence": "https://fbref.com/en/squads/eab4234c/2001-2002/Parma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-parma-09",
@@ -3205,7 +3307,7 @@
       "clubId": "parma",
       "clubName": "Parma Calcio 1913",
       "position": "DM",
-      "role": "backup",
+      "role": "starter",
       "starts": 18,
       "leagueAppearances": 18,
       "leagueStarts": 18,
@@ -3222,7 +3324,8 @@
         "https://fbref.com/en/squads/eab4234c/2001-2002/Parma-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/parma.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/eab4234c/2001-2002/Parma-Stats"
+      "evidence": "https://fbref.com/en/squads/eab4234c/2001-2002/Parma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-parma-10",
@@ -3251,7 +3354,8 @@
         "https://fbref.com/en/squads/eab4234c/2001-2002/Parma-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/parma.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/eab4234c/2001-2002/Parma-Stats"
+      "evidence": "https://fbref.com/en/squads/eab4234c/2001-2002/Parma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-parma-12",
@@ -3263,7 +3367,7 @@
       "clubId": "parma",
       "clubName": "Parma Calcio 1913",
       "position": "CAM",
-      "role": "backup",
+      "role": "starter",
       "starts": 17,
       "leagueAppearances": 24,
       "leagueStarts": 17,
@@ -3281,7 +3385,8 @@
         "https://fbref.com/en/squads/eab4234c/2001-2002/Parma-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/parma.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/eab4234c/2001-2002/Parma-Stats"
+      "evidence": "https://fbref.com/en/squads/eab4234c/2001-2002/Parma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-parma-14",
@@ -3310,7 +3415,8 @@
         "https://fbref.com/en/squads/eab4234c/2001-2002/Parma-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/parma.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/eab4234c/2001-2002/Parma-Stats"
+      "evidence": "https://fbref.com/en/squads/eab4234c/2001-2002/Parma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-parma-15",
@@ -3339,7 +3445,8 @@
         "https://fbref.com/en/squads/eab4234c/2001-2002/Parma-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/parma.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/eab4234c/2001-2002/Parma-Stats"
+      "evidence": "https://fbref.com/en/squads/eab4234c/2001-2002/Parma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-perugia-02",
@@ -3370,7 +3477,8 @@
         "https://fbref.com/en/squads/37cba288/2001-2002/Perugia-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/perugia.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/37cba288/2001-2002/Perugia-Stats"
+      "evidence": "https://fbref.com/en/squads/37cba288/2001-2002/Perugia-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-perugia-03",
@@ -3399,7 +3507,8 @@
         "https://fbref.com/en/squads/37cba288/2001-2002/Perugia-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/perugia.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/37cba288/2001-2002/Perugia-Stats"
+      "evidence": "https://fbref.com/en/squads/37cba288/2001-2002/Perugia-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-perugia-04",
@@ -3428,7 +3537,8 @@
         "https://fbref.com/en/squads/37cba288/2001-2002/Perugia-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/perugia.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/37cba288/2001-2002/Perugia-Stats"
+      "evidence": "https://fbref.com/en/squads/37cba288/2001-2002/Perugia-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-perugia-06",
@@ -3458,7 +3568,8 @@
         "https://fbref.com/en/squads/37cba288/2001-2002/Perugia-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/perugia.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/37cba288/2001-2002/Perugia-Stats"
+      "evidence": "https://fbref.com/en/squads/37cba288/2001-2002/Perugia-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-perugia-07",
@@ -3488,7 +3599,8 @@
         "https://fbref.com/en/squads/37cba288/2001-2002/Perugia-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/perugia.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/37cba288/2001-2002/Perugia-Stats"
+      "evidence": "https://fbref.com/en/squads/37cba288/2001-2002/Perugia-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-perugia-08",
@@ -3517,7 +3629,8 @@
         "https://fbref.com/en/squads/37cba288/2001-2002/Perugia-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/perugia.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/37cba288/2001-2002/Perugia-Stats"
+      "evidence": "https://fbref.com/en/squads/37cba288/2001-2002/Perugia-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-perugia-09",
@@ -3529,7 +3642,7 @@
       "clubId": "perugia",
       "clubName": "AC Perugia",
       "position": "DM",
-      "role": "starter",
+      "role": "backup",
       "starts": 22,
       "leagueAppearances": 26,
       "leagueStarts": 22,
@@ -3546,7 +3659,8 @@
         "https://fbref.com/en/squads/37cba288/2001-2002/Perugia-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/perugia.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/37cba288/2001-2002/Perugia-Stats"
+      "evidence": "https://fbref.com/en/squads/37cba288/2001-2002/Perugia-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-perugia-10",
@@ -3575,7 +3689,8 @@
         "https://fbref.com/en/squads/37cba288/2001-2002/Perugia-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/perugia.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/37cba288/2001-2002/Perugia-Stats"
+      "evidence": "https://fbref.com/en/squads/37cba288/2001-2002/Perugia-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-perugia-12",
@@ -3587,7 +3702,7 @@
       "clubId": "perugia",
       "clubName": "AC Perugia",
       "position": "LW",
-      "role": "backup",
+      "role": "starter",
       "starts": 17,
       "leagueAppearances": 24,
       "leagueStarts": 17,
@@ -3607,7 +3722,8 @@
         "https://fbref.com/en/squads/37cba288/2001-2002/Perugia-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/perugia.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/37cba288/2001-2002/Perugia-Stats"
+      "evidence": "https://fbref.com/en/squads/37cba288/2001-2002/Perugia-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-perugia-13",
@@ -3636,7 +3752,8 @@
         "https://fbref.com/en/squads/37cba288/2001-2002/Perugia-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/perugia.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/37cba288/2001-2002/Perugia-Stats"
+      "evidence": "https://fbref.com/en/squads/37cba288/2001-2002/Perugia-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-perugia-14",
@@ -3648,7 +3765,7 @@
       "clubId": "perugia",
       "clubName": "AC Perugia",
       "position": "ST",
-      "role": "starter",
+      "role": "backup",
       "starts": 29,
       "leagueAppearances": 29,
       "leagueStarts": 29,
@@ -3665,7 +3782,8 @@
         "https://fbref.com/en/squads/37cba288/2001-2002/Perugia-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/perugia.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/37cba288/2001-2002/Perugia-Stats"
+      "evidence": "https://fbref.com/en/squads/37cba288/2001-2002/Perugia-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-bologna-01",
@@ -3694,7 +3812,8 @@
         "https://fbref.com/en/squads/1d8099f8/2001-2002/Bologna-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/bologna.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/1d8099f8/2001-2002/Bologna-Stats"
+      "evidence": "https://fbref.com/en/squads/1d8099f8/2001-2002/Bologna-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-bologna-02",
@@ -3723,7 +3842,8 @@
         "https://fbref.com/en/squads/1d8099f8/2001-2002/Bologna-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/bologna.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/1d8099f8/2001-2002/Bologna-Stats"
+      "evidence": "https://fbref.com/en/squads/1d8099f8/2001-2002/Bologna-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-bologna-03",
@@ -3752,7 +3872,8 @@
         "https://fbref.com/en/squads/1d8099f8/2001-2002/Bologna-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/bologna.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/1d8099f8/2001-2002/Bologna-Stats"
+      "evidence": "https://fbref.com/en/squads/1d8099f8/2001-2002/Bologna-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-bologna-04",
@@ -3764,7 +3885,7 @@
       "clubId": "bologna",
       "clubName": "Bologna FC",
       "position": "CB",
-      "role": "starter",
+      "role": "backup",
       "starts": 24,
       "leagueAppearances": 25,
       "leagueStarts": 24,
@@ -3781,7 +3902,8 @@
         "https://fbref.com/en/squads/1d8099f8/2001-2002/Bologna-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/bologna.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/1d8099f8/2001-2002/Bologna-Stats"
+      "evidence": "https://fbref.com/en/squads/1d8099f8/2001-2002/Bologna-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-bologna-05",
@@ -3811,7 +3933,8 @@
         "https://fbref.com/en/squads/1d8099f8/2001-2002/Bologna-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/bologna.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/1d8099f8/2001-2002/Bologna-Stats"
+      "evidence": "https://fbref.com/en/squads/1d8099f8/2001-2002/Bologna-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-bologna-06",
@@ -3841,7 +3964,8 @@
         "https://fbref.com/en/squads/1d8099f8/2001-2002/Bologna-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/bologna.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/1d8099f8/2001-2002/Bologna-Stats"
+      "evidence": "https://fbref.com/en/squads/1d8099f8/2001-2002/Bologna-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-bologna-07",
@@ -3853,7 +3977,7 @@
       "clubId": "bologna",
       "clubName": "Bologna FC",
       "position": "RB",
-      "role": "backup",
+      "role": "starter",
       "starts": 12,
       "leagueAppearances": 24,
       "leagueStarts": 12,
@@ -3871,7 +3995,8 @@
         "https://fbref.com/en/squads/1d8099f8/2001-2002/Bologna-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/bologna.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/1d8099f8/2001-2002/Bologna-Stats"
+      "evidence": "https://fbref.com/en/squads/1d8099f8/2001-2002/Bologna-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-bologna-08",
@@ -3901,7 +4026,8 @@
         "https://fbref.com/en/squads/1d8099f8/2001-2002/Bologna-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/bologna.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/1d8099f8/2001-2002/Bologna-Stats"
+      "evidence": "https://fbref.com/en/squads/1d8099f8/2001-2002/Bologna-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-bologna-09",
@@ -3930,7 +4056,8 @@
         "https://fbref.com/en/squads/1d8099f8/2001-2002/Bologna-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/bologna.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/1d8099f8/2001-2002/Bologna-Stats"
+      "evidence": "https://fbref.com/en/squads/1d8099f8/2001-2002/Bologna-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-bologna-10",
@@ -3959,7 +4086,8 @@
         "https://fbref.com/en/squads/1d8099f8/2001-2002/Bologna-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/bologna.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/1d8099f8/2001-2002/Bologna-Stats"
+      "evidence": "https://fbref.com/en/squads/1d8099f8/2001-2002/Bologna-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-bologna-11",
@@ -3988,7 +4116,8 @@
         "https://fbref.com/en/squads/1d8099f8/2001-2002/Bologna-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/bologna.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/1d8099f8/2001-2002/Bologna-Stats"
+      "evidence": "https://fbref.com/en/squads/1d8099f8/2001-2002/Bologna-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-bologna-12",
@@ -4018,7 +4147,8 @@
         "https://fbref.com/en/squads/1d8099f8/2001-2002/Bologna-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/bologna.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/1d8099f8/2001-2002/Bologna-Stats"
+      "evidence": "https://fbref.com/en/squads/1d8099f8/2001-2002/Bologna-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-bologna-13",
@@ -4047,7 +4177,8 @@
         "https://fbref.com/en/squads/1d8099f8/2001-2002/Bologna-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/bologna.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/1d8099f8/2001-2002/Bologna-Stats"
+      "evidence": "https://fbref.com/en/squads/1d8099f8/2001-2002/Bologna-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-bologna-14",
@@ -4077,7 +4208,8 @@
         "https://fbref.com/en/squads/1d8099f8/2001-2002/Bologna-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/bologna.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/1d8099f8/2001-2002/Bologna-Stats"
+      "evidence": "https://fbref.com/en/squads/1d8099f8/2001-2002/Bologna-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-torino-01",
@@ -4106,7 +4238,8 @@
         "https://fbref.com/en/squads/105360fe/2001-2002/Torino-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/torino.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/105360fe/2001-2002/Torino-Stats"
+      "evidence": "https://fbref.com/en/squads/105360fe/2001-2002/Torino-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-torino-02",
@@ -4136,7 +4269,8 @@
         "https://fbref.com/en/squads/105360fe/2001-2002/Torino-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/torino.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/105360fe/2001-2002/Torino-Stats"
+      "evidence": "https://fbref.com/en/squads/105360fe/2001-2002/Torino-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-torino-03",
@@ -4165,7 +4299,8 @@
         "https://fbref.com/en/squads/105360fe/2001-2002/Torino-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/torino.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/105360fe/2001-2002/Torino-Stats"
+      "evidence": "https://fbref.com/en/squads/105360fe/2001-2002/Torino-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-torino-04",
@@ -4194,7 +4329,8 @@
         "https://fbref.com/en/squads/105360fe/2001-2002/Torino-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/torino.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/105360fe/2001-2002/Torino-Stats"
+      "evidence": "https://fbref.com/en/squads/105360fe/2001-2002/Torino-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-torino-05",
@@ -4206,7 +4342,7 @@
       "clubId": "torino",
       "clubName": "Torino FC",
       "position": "CB",
-      "role": "starter",
+      "role": "backup",
       "starts": 30,
       "leagueAppearances": 30,
       "leagueStarts": 30,
@@ -4223,7 +4359,8 @@
         "https://fbref.com/en/squads/105360fe/2001-2002/Torino-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/torino.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/105360fe/2001-2002/Torino-Stats"
+      "evidence": "https://fbref.com/en/squads/105360fe/2001-2002/Torino-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-torino-06",
@@ -4253,7 +4390,8 @@
         "https://fbref.com/en/squads/105360fe/2001-2002/Torino-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/torino.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/105360fe/2001-2002/Torino-Stats"
+      "evidence": "https://fbref.com/en/squads/105360fe/2001-2002/Torino-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-torino-07",
@@ -4285,7 +4423,8 @@
         "https://fbref.com/en/squads/105360fe/2001-2002/Torino-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/torino.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/105360fe/2001-2002/Torino-Stats"
+      "evidence": "https://fbref.com/en/squads/105360fe/2001-2002/Torino-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-torino-08",
@@ -4317,7 +4456,8 @@
         "https://fbref.com/en/squads/105360fe/2001-2002/Torino-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/torino.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/105360fe/2001-2002/Torino-Stats"
+      "evidence": "https://fbref.com/en/squads/105360fe/2001-2002/Torino-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-torino-09",
@@ -4348,7 +4488,8 @@
         "https://fbref.com/en/squads/105360fe/2001-2002/Torino-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/torino.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/105360fe/2001-2002/Torino-Stats"
+      "evidence": "https://fbref.com/en/squads/105360fe/2001-2002/Torino-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-torino-10",
@@ -4379,7 +4520,8 @@
         "https://fbref.com/en/squads/105360fe/2001-2002/Torino-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/torino.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/105360fe/2001-2002/Torino-Stats"
+      "evidence": "https://fbref.com/en/squads/105360fe/2001-2002/Torino-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-torino-12",
@@ -4391,7 +4533,7 @@
       "clubId": "torino",
       "clubName": "Torino FC",
       "position": "LW",
-      "role": "backup",
+      "role": "starter",
       "starts": 12,
       "leagueAppearances": 19,
       "leagueStarts": 12,
@@ -4411,7 +4553,8 @@
         "https://fbref.com/en/squads/105360fe/2001-2002/Torino-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/torino.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/105360fe/2001-2002/Torino-Stats"
+      "evidence": "https://fbref.com/en/squads/105360fe/2001-2002/Torino-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-torino-13",
@@ -4443,7 +4586,8 @@
         "https://fbref.com/en/squads/105360fe/2001-2002/Torino-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/torino.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/105360fe/2001-2002/Torino-Stats"
+      "evidence": "https://fbref.com/en/squads/105360fe/2001-2002/Torino-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-torino-14",
@@ -4472,7 +4616,8 @@
         "https://fbref.com/en/squads/105360fe/2001-2002/Torino-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/torino.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/105360fe/2001-2002/Torino-Stats"
+      "evidence": "https://fbref.com/en/squads/105360fe/2001-2002/Torino-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-torino-15",
@@ -4484,7 +4629,7 @@
       "clubId": "torino",
       "clubName": "Torino FC",
       "position": "ST",
-      "role": "starter",
+      "role": "backup",
       "starts": 25,
       "leagueAppearances": 28,
       "leagueStarts": 25,
@@ -4503,7 +4648,8 @@
         "https://fbref.com/en/squads/105360fe/2001-2002/Torino-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/torino.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/105360fe/2001-2002/Torino-Stats"
+      "evidence": "https://fbref.com/en/squads/105360fe/2001-2002/Torino-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-milan-additional-15",
@@ -4532,7 +4678,8 @@
         "https://fbref.com/en/squads/dc56fe14/2001-2002/c11/Milan-Stats-Serie-A",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/milan.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/dc56fe14/2001-2002/c11/Milan-Stats-Serie-A"
+      "evidence": "https://fbref.com/en/squads/dc56fe14/2001-2002/c11/Milan-Stats-Serie-A",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-perugia-cordoba-01",
@@ -4561,7 +4708,8 @@
         "https://fbref.com/en/squads/37cba288/2001-2002/Perugia-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/perugia.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/37cba288/2001-2002/Perugia-Stats"
+      "evidence": "https://fbref.com/en/squads/37cba288/2001-2002/Perugia-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-perugia-sogliano-01",
@@ -4590,7 +4738,8 @@
         "https://fbref.com/en/squads/37cba288/2001-2002/Perugia-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/perugia.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/37cba288/2001-2002/Perugia-Stats"
+      "evidence": "https://fbref.com/en/squads/37cba288/2001-2002/Perugia-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2001-lazio-stam-01",
@@ -4619,7 +4768,8 @@
         "https://fbref.com/en/squads/7213da33/2001-2002/Lazio-Stats",
         "https://www.footballsquads.co.uk/italy/2001-2002/seriea/lazio.htm"
       ],
-      "evidence": "https://fbref.com/en/squads/7213da33/2001-2002/Lazio-Stats"
+      "evidence": "https://fbref.com/en/squads/7213da33/2001-2002/Lazio-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     }
   ],
   "bestXi": [],
@@ -4861,6 +5011,110 @@
         "notes": "Complete season roster consulted; shortlist starter/backup slots preliminary, not full audited. Unknown starts null, no guessed numbers."
       }
     },
-    "draftCoverageNotice": "First-pass candidates for all 10 qualified clubs; Juventus original preserved. Seasonal formation and actual majority position uncertain for many players. No tier/rank/best XI."
+    "draftCoverageNotice": "First-pass candidates for all 10 qualified clubs; Juventus original preserved. Seasonal formation and actual majority position uncertain for many players. No tier/rank/best XI.",
+    "clubSummaries": {
+      "juventus": {
+        "starters": 10,
+        "backups": 4,
+        "players": 14,
+        "positionNeedsReview": 14,
+        "birthDatesMissing": 0,
+        "formationVerification": "needs_review",
+        "rosterStatus": "first_pass_candidates_saved_full_lineup_frequency_audit_pending",
+        "allStartsCaptured": true
+      },
+      "roma": {
+        "starters": 10,
+        "backups": 4,
+        "players": 14,
+        "positionNeedsReview": 14,
+        "birthDatesMissing": 0,
+        "formationVerification": "needs_review",
+        "rosterStatus": "first_pass_candidates_saved_full_lineup_frequency_audit_pending",
+        "allStartsCaptured": true
+      },
+      "inter": {
+        "starters": 11,
+        "backups": 3,
+        "players": 14,
+        "positionNeedsReview": 14,
+        "birthDatesMissing": 0,
+        "formationVerification": "needs_review",
+        "rosterStatus": "first_pass_candidates_saved_full_lineup_frequency_audit_pending",
+        "allStartsCaptured": true
+      },
+      "milan": {
+        "starters": 9,
+        "backups": 4,
+        "players": 13,
+        "positionNeedsReview": 13,
+        "birthDatesMissing": 0,
+        "formationVerification": "needs_review",
+        "rosterStatus": "first_pass_candidates_saved_full_lineup_frequency_audit_pending",
+        "allStartsCaptured": true
+      },
+      "chievo": {
+        "starters": 10,
+        "backups": 3,
+        "players": 13,
+        "positionNeedsReview": 13,
+        "birthDatesMissing": 0,
+        "formationVerification": "needs_review",
+        "rosterStatus": "first_pass_candidates_saved_full_lineup_frequency_audit_pending",
+        "allStartsCaptured": true
+      },
+      "lazio": {
+        "starters": 11,
+        "backups": 4,
+        "players": 15,
+        "positionNeedsReview": 15,
+        "birthDatesMissing": 0,
+        "formationVerification": "needs_review",
+        "rosterStatus": "first_pass_candidates_saved_full_lineup_frequency_audit_pending",
+        "allStartsCaptured": true
+      },
+      "parma": {
+        "starters": 9,
+        "backups": 4,
+        "players": 13,
+        "positionNeedsReview": 13,
+        "birthDatesMissing": 0,
+        "formationVerification": "needs_review",
+        "rosterStatus": "first_pass_candidates_saved_full_lineup_frequency_audit_pending",
+        "allStartsCaptured": true
+      },
+      "perugia": {
+        "starters": 9,
+        "backups": 4,
+        "players": 13,
+        "positionNeedsReview": 13,
+        "birthDatesMissing": 0,
+        "formationVerification": "needs_review",
+        "rosterStatus": "first_pass_candidates_saved_full_lineup_frequency_audit_pending",
+        "allStartsCaptured": true
+      },
+      "bologna": {
+        "starters": 10,
+        "backups": 4,
+        "players": 14,
+        "positionNeedsReview": 14,
+        "birthDatesMissing": 0,
+        "formationVerification": "needs_review",
+        "rosterStatus": "first_pass_candidates_saved_full_lineup_frequency_audit_pending",
+        "allStartsCaptured": true
+      },
+      "torino": {
+        "starters": 10,
+        "backups": 4,
+        "players": 14,
+        "positionNeedsReview": 14,
+        "birthDatesMissing": 0,
+        "formationVerification": "needs_review",
+        "rosterStatus": "first_pass_candidates_saved_full_lineup_frequency_audit_pending",
+        "allStartsCaptured": true
+      }
+    },
+    "positionReviewNote": "All position assignments explicitly needs_review: FBref bulk DF/MF/FW categories don't verify left/right, centreback vs wingback or CAM-vs-double-CM restrictions. Requires match-by-match lineups before approval.",
+    "qualificationNotes": "2022 Intertoto Italian entries Bologna, Perugia and Torino corroborated against UEFA 15 July 2002 draw and RSSSF uic02. 2001 Brescia entry corroborated against RSSSF ital01 and historical 2001 Intertoto. 2000 Perugia/Udinese against RSSSF UIC 2000."
   }
 }
