@@ -50,3 +50,43 @@ Official source: [Bundesliga 2026-27 German participants](https://www.bundesliga
 
 Data file: `data/bundesliga-standings-verified-1999-2026.json`
 Alias profiles: `data/bundesliga-clubs-1999-2026.json`
+
+
+## Continuation audit — 2026-10-29 (committed)
+
+**Source material reused:** the three existing `audit/bundesliga-rsssf-1999-2007.json`, `2008-2016.json`, and `2017-2025.json` full-table captures, plus `data/bundesliga-clubs-1999-2026.json` aliases; none were regenerated.
+
+### Actual next-season European participant corrections
+
+- **1999-00:** add VfB Stuttgart (2000 Intertoto).
+- **2001-02:** add Hertha BSC, Schalke 04 and Werder Bremen (2002-03 UEFA Cup); Kaiserslautern, Stuttgart and 1860 München (2002 Intertoto).
+- **2002-03:** add Bremen, Schalke and Wolfsburg (2003 Intertoto).
+- **2003-04:** add Borussia Dortmund, Schalke, HSV and Wolfsburg (2004 Intertoto).
+- **2004-05:** add Mainz 05 (2005-06 UEFA Cup through UEFA Fair Play).
+- **2007-08:** add Hertha BSC (2008-09 UEFA Cup, Fair Play) and VfB Stuttgart (2008 Intertoto).
+- **2012-13:** replace Hamburg SV (not qualified) with VfB Stuttgart (DFB-Pokal runner-up, 2013-14 Europa League).
+- **2020-21:** correct Union Berlin from UEL to inaugural 2021-22 UECL.
+- **2021-22:** add Eintracht Frankfurt to 2022-23 UCL (2021-22 Europa League titleholder, finishing 11th in the domestic league).
+
+21 club-season field corrections across 9 seasons; historical mapped European entries increase **181 → 201**. Source references and per-club route notes attached to the corresponding season records. Evidence: [RSSSF actual German European Cup participants](https://www.rsssf.org/tablesd/duit-ec85.html), [RSSSF Intertoto competition records](https://www.rsssf.org/tablesi/intertoto.html), individual RSSSF domestic season pages and UEFA titleholder records. These are targeted evidence-based corrections, not an unconditional certification of every 1999-00 to 2024-25 entrant list. The **26 historical years remain flagged for full season-by-season review**, whereas 2025-26 retains its separate official confirmation.
+
+### Clubs and crests
+
+16 formerly missing club crest image links added from documented Wikimedia Commons file pages, with explicit `crestSource` and `crestHistoricalStatus`. **37/40 profiles now have a source-linked crest URL**. Remaining without linked crest: **SpVgg Unterhaching, Eintracht Braunschweig, FC Ingolstadt 04** (initials fallback intact). Some new logos are modern versions inappropriate to earlier Bundesliga participation (notably Rostock, Duisburg, Bielefeld, Hannover, Aachen, Fürth and Paderborn); do not mark their period-specific crest audit as passed. Wikimedia redirect URLs and previously linked crest URLs still need actual browser/network image verification.
+
+### Fresh data validation (post-change)
+
+- GitHub connector read the final archive, three stored RSSSF full-table references and club alias list; independent in-memory JS parity check (matching `verify-bundesliga.mjs` integrity criteria) returned **PASS / 27 seasons / 486 rows / 0 errors**, 201 mapped European records.
+- **18 promotion-relegation play-off outcomes** in 2008-09 through 2025-26 checked against next season's source-listed first-division membership: **14 retained / 4 relegated** (2025-26 Wolfsburg handled by recorded special outcome).
+- Verified rank 1-18, W/D/L, GF/GA, points, points deductions, league totals, club IDs, Europe map/standing row parity, automatic relegations.
+- **Not run as a Node CLI:** `node scripts/verify-bundesliga.mjs` (connector-side equivalent check used); this distinction must be preserved.
+
+### Commit / deployment / UI gates
+
+- Data correction commit: [a43aa1b](https://github.com/wjdduddlf112/footballarch/commit/a43aa1b1afc2fb3e1d6aee5323b7e9b4a47761c6)
+- Crest reference commit: [a85cb54](https://github.com/wjdduddlf112/footballarch/commit/a85cb54ecf10777ebea01a3ab59ee5d0ff66c1e9)
+- No changes to `index.html`, `assets/app.js`, CSS, player evaluation, champion C badges, or stripped-title badges.
+- **Data integrity gate PASSED** for 27×18 rows and promotion-relegation membership; historical UEFA full actual-entrant gate NOT COMPLETE; crest-URL coverage 37/40 but logo display/period correctness NOT COMPLETE.
+- **Actual GitHub Pages browser rendering gate NOT TESTED**: no deployed-browser screenshot, client network response, fallback, mobile or badge inspection performed. Existing programmatic champion-badge tests are historical only, not a new live screen review.
+- Bundesliga therefore **not declared fully completed**; priority now moves to Ligue 1 on user instruction with these open gates documented.
+
