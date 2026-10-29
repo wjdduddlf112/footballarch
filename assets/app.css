@@ -160,3 +160,8 @@ body.is-home .floating-season-nav{display:none}
 @media(max-width:650px){.pagehead-season-nav{gap:6px}.title-season-arrow{width:35px;height:39px;font-size:21px;border-radius:8px}.pagehead-season-nav h1{font-size:clamp(21px,6vw,32px);white-space:normal}.floating-season-nav{right:12px;bottom:12px;padding:4px}.floating-season-nav button{width:36px;height:36px}.floating-season-nav span{min-width:65px;font-size:11px}}
 
 .static-qual { cursor: default; }
+
+/* Native league insignia — monogram remains as the fallback. */
+.home-league-grid .archive-card-emblem{position:absolute;z-index:0;top:18%;right:7%;width:53%;height:42%;object-fit:contain;object-position:center;opacity:.65;pointer-events:none;filter:drop-shadow(0 4px 12px #0008)}
+.home-league-grid .archive-card-bottom{z-index:2;text-shadow:0 1px 12px #08121bed}
+@media(max-width:650px){.home-league-grid .archive-card-emblem{top:19%;right:9%;width:52%;height:37%;opacity:.72}}
