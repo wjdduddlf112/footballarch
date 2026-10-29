@@ -16,7 +16,9 @@ function esc(a){return String(a??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&l
 function club(id){return (data&&data.clubs||[]).find(c=>c.id===id)||{id,name:id,abbr:id.slice(0,3).toUpperCase()}}
 function crest(id){let c=club(id);let fb='<span class="crest-fallback">'+esc(c.abbr||c.name.slice(0,3))+'</span>';return c.crestUrl?'<img class="crest" alt="" loading="lazy" src="'+esc(c.crestUrl)+'" onerror="this.outerHTML=this.dataset.fallback" data-fallback="'+esc(fb)+'">':fb}
 function comp(name){if(!name)return '<span class="muted">—</span>';const type=name==="UEFA Cup"?"UEFA-Cup":name==="Intertoto Cup"?"Intertoto-Cup":name;let shown=name==="Intertoto Cup"?"Intertoto":name==="UEFA Cup"?"UEFA Cup":name;return '<span class="comp '+esc(type)+'">'+esc(shown)+'</span>'}
-function grade(t){return t?'<span class="tier '+(ranks.indexOf(t)<=3?"top":"")+'">'+esc(t)+'</span>':'<span class="placeholder">미평가</span>'}
+const tierClassNames={"S":"tier-grade-s","A+":"tier-grade-a-plus","A":"tier-grade-a","A-":"tier-grade-a-minus","B+":"tier-grade-b-plus","B":"tier-grade-b","B-":"tier-grade-b-minus","C+":"tier-grade-c-plus","C":"tier-grade-c","C-":"tier-grade-c-minus","D":"tier-grade-d"};
+function tierClass(t){return tierClassNames[t]||""}
+function grade(t){return t?'<span class="tier '+tierClass(t)+' '+(ranks.indexOf(t)<=3?"top":"")+'">'+esc(t)+'</span>':'<span class="placeholder">미평가</span>'}
 function top(p){return p.tier&&ranks.indexOf(p.tier)<=3}
 function age(p){if(!p.born)return null;let vals=p.born.split("-").map(Number);if(vals.length!==3||!vals[0])return null;const year=2000+Number(st.season.split("-")[1]);return year-vals[0]-((vals[1]>6)?1:0)}
 function option(items,current){return items.map(x=>'<option value="'+esc(x[0])+'"'+(x[0]===current?' selected':'')+'>'+esc(x[1])+'</option>').join("")}
@@ -88,7 +90,7 @@ function ranking(){
 }
 function topPage(){
  let all=rankPlayers(),filtered=filterPlayers(all,true);let count=t=>all.filter(p=>p.tier===t).length;
- let cards='<div class="top-scores">'+["S","A+","A","A-"].map(t=>'<button class="top-score '+(st.tier===t?"active":"")+'" data-toptier="'+t+'"><b>'+t+'</b><small>'+count(t)+' players</small></button>').join("")+'</div>';
+ let cards='<div class="top-scores">'+["S","A+","A","A-"].map(t=>'<button class="top-score '+tierClass(t)+' '+(st.tier===t?"active":"")+'" data-toptier="'+t+'"><b>'+t+'</b><small>'+count(t)+' players</small></button>').join("")+'</div>';
  let body='<div class="section-heading"><div><h2>League Top Class</h2><span class="small muted">S ~ A- 전체. 포지션별 베스트 선정 인원 제한과 무관합니다.</span></div><button class="pill '+(st.tier==="all"?"active":"")+'" data-toptier="all">All tiers</button></div>'+cards+'<div style="margin-top:15px">'+filters(true,false)+'</div>'+tablePlayers(filtered);
  if(!hasTop())body='<div class="section-heading"><h2>League Top Class</h2></div><div class="empty"><strong>평가 확정 전입니다.</strong><p>S~A- 선수는 포지션별 평가를 검수한 뒤 이곳에 자동으로 표시됩니다.</p></div>';
  return '<section class="panel">'+body+'</section>'
