@@ -10,7 +10,7 @@
     "label": "후보 검토 중",
     "source": "ChatGPT and user discussion; requires further historical validation",
     "lastReview": "2026-10-29",
-    "note": "1999-00 final standings verified; 148 candidate players have unapproved proposedTier values (tier:null and rank:null for all players). Candidate eligibility, main positions, 3-season weighting, ranks and Best XI require user review before publishing.",
+    "note": "Provisional tier audit: all 148 proposedTier entries remain unapproved. GK candidate eligibility checked (Bizzarri/Lopetegui retained); Helguera CB and Revivo CAM flagged as preferred positions pending slot/formation reconciliation; Cembranos CM retained. Three-season records explicitly corroborated for 10/148 candidates.",
     "standingsStatus": "verified",
     "standingsSource": "https://www.rsssf.org/tabless/span00.html; https://www.bdfutbol.com/en/t/t1999-00.html",
     "playerCandidateSources": {
@@ -36,7 +36,7 @@
       }
     ],
     "tierProposal": {
-      "status": "unapproved",
+      "status": "unapproved_audit_in_progress",
       "updated": "2026-10-29",
       "assessmentSeasons": [
         "1997-98",
@@ -47,13 +47,22 @@
       "scope": "148 registered candidates, no implied approval or Best XI selection",
       "sourceNotes": "1999-00 BDFutbol team lineups; FBref season statistics; 1999 and 2000 Ballon d'Or; UEFA 1999-00 club awards; initial historical contextual assessment",
       "pendingCorrections": [
-        "1999-00 Real Madrid Iván Helguera played CB/DM and his most frequent role needs match-by-match validation",
-        "Rayo Vallecano Luis Cembranos AM/CM and Celta Haim Revivo AM/LW seasonal roles need validation",
-        "Deportivo Pauleta (12 La Liga starts) and Zaragoza Yordi (9) omitted under 2-ST per-club cap",
-        "Real Madrid Anelka (12 La Liga starts) omitted from capped ST pool; center-back pool contains overlap with Iván Helguera",
-        "Some listed low-start backups may fail starter-equivalent eligibility and require removal before final approval",
-        "Historical 1997-98 and 1998-99 performance evidence not individually completed for all 148 candidates"
-      ]
+        "Helguera's actual 1999-00 CB vs DM minutes cannot be conclusively established from currently accessible period lineup data; CB 3-player cap requires a choice among Hierro/Karanka/Júlio César/Iván Campo",
+        "Revivo listed attacking midfield yet Celta 4-2-3-1 CAM-exclusion rule needs clarification before changing CAM eligibility",
+        "Cembranos CM retained provisionally; match-by-match positional role totals not yet verified",
+        "Historical 1997-98 and 1998-99 individual records fully corroborated for 10 of 148, outstanding for the remainder",
+        "Team-level shortlist omissions such as Ronald de Boer, Jari Litmanen and Iván Campo require reassessment under 2-per-position and CB 3-per-team constraints"
+      ],
+      "auditDate": "2026-10-29",
+      "corroboratedThreeSeasonPlayers": 10,
+      "totalCandidatePlayers": 148,
+      "threeSeasonVerificationCoverage": "10/148",
+      "positionAudit": {
+        "Helguera": "proposed CB, season-level CB-vs-DM starting count still unresolved",
+        "Cembranos": "CM retained, evidence does not establish CAM majority",
+        "Revivo": "proposed CAM, 4-2-3-1 two-midfield CAM-exclusion rule unresolved",
+        "Rayo and Madrid GK": "Lopetegui and Bizzarri both retained as starter-equivalent backups (10 and 11 combined league/UCL starts respectively)"
+      }
     }
   },
   "clubs": [
@@ -254,7 +263,10 @@
       "review": "tier_proposed_unapproved",
       "nameKo": "자크 송고오",
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0013.html",
-      "proposedTier": "A+"
+      "proposedTier": "A+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-gk-02",
@@ -269,7 +281,10 @@
       "review": "tier_proposed_unapproved",
       "nameKo": "뤼트 헤스프",
       "evidence": "https://www.bdfutbol.com/en/t/t1999-001.html",
-      "proposedTier": "B+"
+      "proposedTier": "B+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-gk-03",
@@ -284,7 +299,10 @@
       "review": "tier_proposed_unapproved",
       "nameKo": "프란세스크 아르나우",
       "evidence": "https://www.bdfutbol.com/en/t/t1999-001.html",
-      "proposedTier": "B-"
+      "proposedTier": "B-",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-gk-04",
@@ -299,7 +317,10 @@
       "review": "tier_proposed_unapproved",
       "nameKo": "산티아고 카니사레스",
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0036.html",
-      "proposedTier": "A"
+      "proposedTier": "A",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-gk-05",
@@ -314,7 +335,10 @@
       "review": "tier_proposed_unapproved",
       "nameKo": "안드레스 팔로프",
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0036.html",
-      "proposedTier": "B"
+      "proposedTier": "B",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-gk-06",
@@ -329,7 +353,10 @@
       "review": "tier_proposed_unapproved",
       "nameKo": "후안미",
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0039.html",
-      "proposedTier": "B+"
+      "proposedTier": "B+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-gk-07",
@@ -344,7 +371,10 @@
       "review": "tier_proposed_unapproved",
       "nameKo": "이케르 카시야스",
       "evidence": "https://www.bdfutbol.com/en/t/t1999-002.html",
-      "proposedTier": "A-"
+      "proposedTier": "A-",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-gk-08",
@@ -359,7 +389,22 @@
       "review": "tier_proposed_unapproved",
       "nameKo": "알바노 비사리",
       "evidence": "https://www.bdfutbol.com/en/t/t1999-002.html",
-      "proposedTier": "C+"
+      "proposedTier": "C+",
+      "eligibilityReview": {
+        "status": "retained_as_candidate",
+        "leagueStarts": 7,
+        "uclStarts": 4,
+        "overallStartsKnown": 11,
+        "leagueSaveRate": "60.0%",
+        "evidence": [
+          "https://fbref.com/en/squads/53a2f082/1999-2000/all_comps/Real-Madrid-Stats-All-Competitions",
+          "https://www.bdfutbol.com/en/t/t1999-002.html"
+        ],
+        "note": "7 league and 4 UCL starts constitute genuine starter-equivalent rotation; lower-tier candidate retained; Illgner had 5 league and 1 UCL starts."
+      },
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-gk-09",
@@ -374,7 +419,10 @@
       "review": "tier_proposed_unapproved",
       "nameKo": "마르틴 에레라",
       "evidence": "https://www.bdfutbol.com/en/t/t1999-003.html",
-      "proposedTier": "A"
+      "proposedTier": "A",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-gk-10",
@@ -389,7 +437,10 @@
       "review": "tier_proposed_unapproved",
       "nameKo": "리샤르 뒤트뤼엘",
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0011.html",
-      "proposedTier": "B+"
+      "proposedTier": "B+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-gk-11",
@@ -404,7 +455,10 @@
       "review": "tier_proposed_unapproved",
       "nameKo": "호세 마누엘 핀토",
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0011.html",
-      "proposedTier": "B"
+      "proposedTier": "B",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-gk-12",
@@ -419,7 +473,10 @@
       "review": "tier_proposed_unapproved",
       "nameKo": "케이시 켈러",
       "evidence": "https://www.bdfutbol.com/en/t/t1999-005.html",
-      "proposedTier": "B+"
+      "proposedTier": "B+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-gk-13",
@@ -434,7 +491,23 @@
       "review": "tier_proposed_unapproved",
       "nameKo": "훌렌 로페테기",
       "evidence": "https://www.bdfutbol.com/en/t/t1999-005.html",
-      "proposedTier": "C+"
+      "proposedTier": "B-",
+      "eligibilityReview": {
+        "status": "retained_as_candidate",
+        "leagueStarts": 10,
+        "leagueCleanSheets": 4,
+        "leagueSaveRate": "77.3%",
+        "evidence": [
+          "https://fbref.com/en/squads/98e8af82/1999-2000/s42/Rayo-Vallecano-Stats",
+          "https://www.transfermarkt.com/rayo-vallecano/torhueterchronik/verein/367"
+        ],
+        "note": "10 complete 90-min league starts with 4 clean sheets, substantial 1997-98 and 1998-99 Segunda playing experience; qualifies as starter-equivalent backup."
+      },
+      "threeSeasonReview": {
+        "status": "three_season_league_record_corrobated",
+        "source": "https://www.transfermarkt.com/rayo-vallecano/torhueterchronik/verein/367",
+        "summary": "1997-98 14 Rayo Segunda matches; 1998-99 18 Segunda; 1999-00 10 Primera starts 4 clean sheets"
+      }
     },
     {
       "id": "laliga-1999-gk-14",
@@ -449,7 +522,10 @@
       "review": "tier_proposed_unapproved",
       "nameKo": "레오 프랑코",
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0024.html",
-      "proposedTier": "B+"
+      "proposedTier": "B+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-gk-15",
@@ -464,7 +540,10 @@
       "review": "tier_proposed_unapproved",
       "nameKo": "헤르만 부르고스",
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0024.html",
-      "proposedTier": "B"
+      "proposedTier": "B",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-gk-16",
@@ -479,7 +558,10 @@
       "review": "tier_proposed_unapproved",
       "nameKo": "파블로 카바예로",
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0014.html",
-      "proposedTier": "B+"
+      "proposedTier": "B+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-gk-17",
@@ -494,7 +576,10 @@
       "review": "tier_proposed_unapproved",
       "nameKo": "후안 루이스 모라",
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0014.html",
-      "proposedTier": "B"
+      "proposedTier": "B",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-deportivo-018",
@@ -512,7 +597,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0013.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.national-football-teams.com/club/2306/1999/Deportivo_La_Coruna.html",
-      "proposedTier": "A-"
+      "proposedTier": "A-",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-deportivo-019",
@@ -530,7 +618,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0013.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.national-football-teams.com/club/2306/1999/Deportivo_La_Coruna.html",
-      "proposedTier": "A-"
+      "proposedTier": "A-",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-deportivo-020",
@@ -548,7 +639,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0013.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.national-football-teams.com/club/2306/1999/Deportivo_La_Coruna.html",
-      "proposedTier": "A-"
+      "proposedTier": "A-",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-deportivo-021",
@@ -566,7 +660,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0013.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.national-football-teams.com/club/2306/1999/Deportivo_La_Coruna.html",
-      "proposedTier": "A+"
+      "proposedTier": "A+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-deportivo-022",
@@ -584,7 +681,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0013.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.national-football-teams.com/club/2306/1999/Deportivo_La_Coruna.html",
-      "proposedTier": "B+"
+      "proposedTier": "B+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-deportivo-023",
@@ -602,7 +702,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0013.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.national-football-teams.com/club/2306/1999/Deportivo_La_Coruna.html",
-      "proposedTier": "A+"
+      "proposedTier": "A+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-deportivo-024",
@@ -620,7 +723,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0013.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.national-football-teams.com/club/2306/1999/Deportivo_La_Coruna.html",
-      "proposedTier": "A-"
+      "proposedTier": "A-",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-deportivo-025",
@@ -638,7 +744,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0013.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.national-football-teams.com/club/2306/1999/Deportivo_La_Coruna.html",
-      "proposedTier": "B"
+      "proposedTier": "B",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-deportivo-026",
@@ -656,7 +765,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0013.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.national-football-teams.com/club/2306/1999/Deportivo_La_Coruna.html",
-      "proposedTier": "A+"
+      "proposedTier": "A+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-deportivo-027",
@@ -674,7 +786,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0013.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.national-football-teams.com/club/2306/1999/Deportivo_La_Coruna.html",
-      "proposedTier": "B+"
+      "proposedTier": "B+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-deportivo-028",
@@ -692,7 +807,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0013.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.national-football-teams.com/club/2306/1999/Deportivo_La_Coruna.html",
-      "proposedTier": "A-"
+      "proposedTier": "A-",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-deportivo-029",
@@ -710,7 +828,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0013.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.national-football-teams.com/club/2306/1999/Deportivo_La_Coruna.html",
-      "proposedTier": "A+"
+      "proposedTier": "A+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-deportivo-030",
@@ -728,7 +849,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0013.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.national-football-teams.com/club/2306/1999/Deportivo_La_Coruna.html",
-      "proposedTier": "B"
+      "proposedTier": "B",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-barca-031",
@@ -746,7 +870,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-001.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/barce.htm",
-      "proposedTier": "A-"
+      "proposedTier": "A-",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-barca-032",
@@ -764,7 +891,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-001.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/barce.htm",
-      "proposedTier": "B"
+      "proposedTier": "B",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-barca-033",
@@ -782,7 +912,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-001.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/barce.htm",
-      "proposedTier": "B+"
+      "proposedTier": "B+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-barca-034",
@@ -800,7 +933,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-001.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/barce.htm",
-      "proposedTier": "A-"
+      "proposedTier": "A-",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-barca-035",
@@ -818,7 +954,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-001.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/barce.htm",
-      "proposedTier": "A"
+      "proposedTier": "A",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-barca-036",
@@ -836,7 +975,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-001.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/barce.htm",
-      "proposedTier": "B"
+      "proposedTier": "B",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-barca-037",
@@ -854,7 +996,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-001.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/barce.htm",
-      "proposedTier": "A"
+      "proposedTier": "A",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-barca-038",
@@ -872,7 +1017,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-001.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/barce.htm",
-      "proposedTier": "A"
+      "proposedTier": "A",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-barca-039",
@@ -890,7 +1038,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-001.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/barce.htm",
-      "proposedTier": "B"
+      "proposedTier": "B",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-barca-040",
@@ -908,7 +1059,12 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-001.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/barce.htm",
-      "proposedTier": "S"
+      "proposedTier": "S",
+      "threeSeasonReview": {
+        "status": "three_season_league_record_corrobated",
+        "source": "https://fbref.com/en/players/5c7f3153/all_comps/Rivaldo-Stats---All-Competitions",
+        "summary": "1997-98 La Liga 34 starts 19 goals; 1998-99 37 starts 24 goals; 1999-00 30 starts 12 goals plus 10 UCL goals"
+      }
     },
     {
       "id": "laliga-1999-barca-041",
@@ -926,7 +1082,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-001.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/barce.htm",
-      "proposedTier": "B+"
+      "proposedTier": "B+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-barca-042",
@@ -944,7 +1103,12 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-001.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/barce.htm",
-      "proposedTier": "S"
+      "proposedTier": "S",
+      "threeSeasonReview": {
+        "status": "three_season_league_record_corrobated",
+        "source": "https://fbref.com/en/players/f20f347f/all_comps/Luis-Figo-Stats---All-Competitions",
+        "summary": "1997-98 35 starts 5 goals; 1998-99 34 starts 7 goals; 1999-00 32 starts 9 goals 10 assists plus 5 UCL goals 9 assists"
+      }
     },
     {
       "id": "laliga-1999-barca-043",
@@ -962,7 +1126,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-001.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/barce.htm",
-      "proposedTier": "B+"
+      "proposedTier": "B+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-barca-044",
@@ -980,7 +1147,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-001.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/barce.htm",
-      "proposedTier": "A"
+      "proposedTier": "A",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-barca-045",
@@ -998,7 +1168,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-001.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/barce.htm",
-      "proposedTier": "B"
+      "proposedTier": "B",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-valencia-046",
@@ -1016,7 +1189,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0036.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.national-football-teams.com/club/2311/1999_1/Valencia_Cf.html",
-      "proposedTier": "A-"
+      "proposedTier": "A-",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-valencia-047",
@@ -1034,7 +1210,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0036.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.national-football-teams.com/club/2311/1999_1/Valencia_Cf.html",
-      "proposedTier": "A-"
+      "proposedTier": "A-",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-valencia-048",
@@ -1052,7 +1231,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0036.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.national-football-teams.com/club/2311/1999_1/Valencia_Cf.html",
-      "proposedTier": "A-"
+      "proposedTier": "A-",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-valencia-049",
@@ -1070,7 +1252,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0036.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.national-football-teams.com/club/2311/1999_1/Valencia_Cf.html",
-      "proposedTier": "A"
+      "proposedTier": "A",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-valencia-050",
@@ -1088,7 +1273,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0036.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.national-football-teams.com/club/2311/1999_1/Valencia_Cf.html",
-      "proposedTier": "B"
+      "proposedTier": "B",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-valencia-051",
@@ -1106,7 +1294,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0036.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.national-football-teams.com/club/2311/1999_1/Valencia_Cf.html",
-      "proposedTier": "B"
+      "proposedTier": "B",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-valencia-052",
@@ -1124,7 +1315,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0036.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.national-football-teams.com/club/2311/1999_1/Valencia_Cf.html",
-      "proposedTier": "A-"
+      "proposedTier": "A-",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-valencia-053",
@@ -1142,7 +1336,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0036.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.national-football-teams.com/club/2311/1999_1/Valencia_Cf.html",
-      "proposedTier": "B+"
+      "proposedTier": "B+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-valencia-054",
@@ -1160,7 +1357,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0036.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.national-football-teams.com/club/2311/1999_1/Valencia_Cf.html",
-      "proposedTier": "C+"
+      "proposedTier": "C+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-valencia-055",
@@ -1178,7 +1378,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0036.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.national-football-teams.com/club/2311/1999_1/Valencia_Cf.html",
-      "proposedTier": "A"
+      "proposedTier": "A",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-valencia-056",
@@ -1196,7 +1399,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0036.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.national-football-teams.com/club/2311/1999_1/Valencia_Cf.html",
-      "proposedTier": "A+"
+      "proposedTier": "A+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-valencia-057",
@@ -1214,7 +1420,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0036.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.national-football-teams.com/club/2311/1999_1/Valencia_Cf.html",
-      "proposedTier": "B+"
+      "proposedTier": "B+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-valencia-058",
@@ -1232,7 +1441,12 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0036.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.national-football-teams.com/club/2311/1999_1/Valencia_Cf.html",
-      "proposedTier": "A+"
+      "proposedTier": "A+",
+      "threeSeasonReview": {
+        "status": "three_season_league_record_corrobated",
+        "source": "https://fbref.com/en/players/ce8a4e4c/all_comps/Claudio-Lopez-Stats---All-Competitions",
+        "summary": "1997-98 Valencia 26 league starts 12 goals; 1998-99 31 starts 21 goals; 1999-00 32 starts 10 goals 10 assists, UCL 5 goals 6 assists"
+      }
     },
     {
       "id": "laliga-1999-valencia-059",
@@ -1250,7 +1464,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0036.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.national-football-teams.com/club/2311/1999_1/Valencia_Cf.html",
-      "proposedTier": "B+"
+      "proposedTier": "B+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-madrid-060",
@@ -1268,7 +1485,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-002.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.national-football-teams.com/club/2315/1999_1/Real_Madrid.html",
-      "proposedTier": "A-"
+      "proposedTier": "A-",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-madrid-061",
@@ -1286,7 +1506,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-002.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.national-football-teams.com/club/2315/1999_1/Real_Madrid.html",
-      "proposedTier": "B"
+      "proposedTier": "B",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-madrid-062",
@@ -1304,7 +1527,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-002.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.national-football-teams.com/club/2315/1999_1/Real_Madrid.html",
-      "proposedTier": "S"
+      "proposedTier": "S",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-madrid-063",
@@ -1322,7 +1548,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-002.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.national-football-teams.com/club/2315/1999_1/Real_Madrid.html",
-      "proposedTier": "A-"
+      "proposedTier": "A-",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-madrid-064",
@@ -1340,7 +1569,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-002.html",
       "birthSource": "https://www.realmadrid.com/en-US/the-club/history/football-legends/julio-cesar-santos-correa",
       "birthReview": "crosschecked_source",
-      "proposedTier": "B"
+      "proposedTier": "B",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-madrid-065",
@@ -1358,7 +1590,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-002.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.national-football-teams.com/club/2315/1999_1/Real_Madrid.html",
-      "proposedTier": "B"
+      "proposedTier": "B",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-madrid-066",
@@ -1376,7 +1611,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-002.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.national-football-teams.com/club/2315/1999_1/Real_Madrid.html",
-      "proposedTier": "S"
+      "proposedTier": "S",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-madrid-067",
@@ -1390,11 +1628,26 @@
       "tier": null,
       "rank": null,
       "review": "tier_proposed_unapproved",
-      "positionReview": "needs_match_lineup_verification",
+      "positionReview": "CB_leading_historical_evidence__requires_1999_00_match_by_match_position_counts_and_CB_slot_resolution",
       "evidence": "https://www.bdfutbol.com/en/t/t1999-002.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.national-football-teams.com/club/2315/1999_1/Real_Madrid.html",
-      "proposedTier": "A-"
+      "proposedTier": "A-",
+      "proposedPosition": "CB",
+      "positionAudit": {
+        "status": "provisional_prefer_CB",
+        "evidence": [
+          "https://www.realmadrid.com/en-US/the-club/history/football-legends/ivan-helguera-bujia",
+          "https://www.transfermarkt.com/real-madrid_valencia-cf/index/spielbericht/984698",
+          "https://elpais.com/diario/2005/10/25/deportes/1130191201_850215.html"
+        ],
+        "reason": "1999-00 UCL final CB and club official historical CB profile; historical reporting confirms versatile DM/CB roles. Exact 1999-00 match-by-match positional majority not yet measured; current position retained to avoid exceeding 3-CB roster cap."
+      },
+      "threeSeasonReview": {
+        "status": "three_season_league_record_corrobated",
+        "source": "https://fbref.com/en/players/44151558/Ivan-Helguera",
+        "summary": "1997-98 Roma 9 Serie A games (5 starts), 1998-99 Espanyol 37 La Liga starts, 1999-00 Madrid 27 league starts and 13 UCL starts"
+      }
     },
     {
       "id": "laliga-1999-madrid-068",
@@ -1412,7 +1665,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-002.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.national-football-teams.com/club/2315/1999_1/Real_Madrid.html",
-      "proposedTier": "B+"
+      "proposedTier": "B+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-madrid-069",
@@ -1430,7 +1686,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-002.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.national-football-teams.com/club/2315/1999_1/Real_Madrid.html",
-      "proposedTier": "B-"
+      "proposedTier": "B-",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-madrid-070",
@@ -1448,7 +1707,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-002.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.national-football-teams.com/club/2315/1999_1/Real_Madrid.html",
-      "proposedTier": "A-"
+      "proposedTier": "A-",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-madrid-071",
@@ -1466,7 +1728,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-002.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.national-football-teams.com/club/2315/1999_1/Real_Madrid.html",
-      "proposedTier": "A-"
+      "proposedTier": "A-",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-madrid-072",
@@ -1484,7 +1749,12 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-002.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.national-football-teams.com/club/2315/1999_1/Real_Madrid.html",
-      "proposedTier": "S"
+      "proposedTier": "S",
+      "threeSeasonReview": {
+        "status": "three_season_league_record_corrobated",
+        "source": "https://fbref.com/en/players/2b81295d/Raul",
+        "summary": "1997-98 35 league starts; 1998-99 37; 1999-00 32 and 17 league goals; 1999-00 10 UCL goals"
+      }
     },
     {
       "id": "laliga-1999-madrid-073",
@@ -1502,7 +1772,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-002.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.national-football-teams.com/club/2315/1999_1/Real_Madrid.html",
-      "proposedTier": "A"
+      "proposedTier": "A",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-zaragoza-074",
@@ -1520,7 +1793,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0039.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.bdfutbol.com/en/t/t1999-0039.html",
-      "proposedTier": "B"
+      "proposedTier": "B",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-zaragoza-075",
@@ -1539,7 +1815,10 @@
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.bdfutbol.com/en/t/t1999-0039.html",
       "evidencePosition": "https://www.national-football-teams.com/club/2319/2000/Real_Zaragoza.html",
-      "proposedTier": "B+"
+      "proposedTier": "B+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-zaragoza-076",
@@ -1557,7 +1836,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0039.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.bdfutbol.com/en/t/t1999-0039.html",
-      "proposedTier": "B"
+      "proposedTier": "B",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-zaragoza-077",
@@ -1575,7 +1857,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0039.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.bdfutbol.com/en/t/t1999-0039.html",
-      "proposedTier": "C+"
+      "proposedTier": "C+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-zaragoza-078",
@@ -1593,7 +1878,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0039.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.bdfutbol.com/en/t/t1999-0039.html",
-      "proposedTier": "B+"
+      "proposedTier": "B+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-zaragoza-079",
@@ -1611,7 +1899,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0039.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.bdfutbol.com/en/t/t1999-0039.html",
-      "proposedTier": "B+"
+      "proposedTier": "B+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-zaragoza-080",
@@ -1629,7 +1920,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0039.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.bdfutbol.com/en/t/t1999-0039.html",
-      "proposedTier": "B+"
+      "proposedTier": "B+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-zaragoza-081",
@@ -1647,7 +1941,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0039.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.bdfutbol.com/en/t/t1999-0039.html",
-      "proposedTier": "B+"
+      "proposedTier": "B+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-zaragoza-082",
@@ -1665,7 +1962,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0039.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.bdfutbol.com/en/t/t1999-0039.html",
-      "proposedTier": "B+"
+      "proposedTier": "B+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-zaragoza-083",
@@ -1683,7 +1983,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0039.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.bdfutbol.com/en/t/t1999-0039.html",
-      "proposedTier": "B"
+      "proposedTier": "B",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-zaragoza-084",
@@ -1701,7 +2004,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0039.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.bdfutbol.com/en/t/t1999-0039.html",
-      "proposedTier": "B+"
+      "proposedTier": "B+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-zaragoza-085",
@@ -1719,7 +2025,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0039.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.bdfutbol.com/en/t/t1999-0039.html",
-      "proposedTier": "B+"
+      "proposedTier": "B+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-zaragoza-086",
@@ -1737,7 +2046,12 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0039.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.bdfutbol.com/en/t/t1999-0039.html",
-      "proposedTier": "A+"
+      "proposedTier": "A+",
+      "threeSeasonReview": {
+        "status": "three_season_league_record_corrobated",
+        "source": "https://fbref.com/en/players/bab73c39/Savo-Milosevic",
+        "summary": "1997-98 Aston Villa 19 starts 7 PL goals; 1998-99 Zaragoza 35 starts 17 goals; 1999-00 Zaragoza 37 league starts 21 goals"
+      }
     },
     {
       "id": "laliga-1999-alaves-088",
@@ -1755,7 +2069,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-003.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/alaves.htm",
-      "proposedTier": "A-"
+      "proposedTier": "A-",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-alaves-089",
@@ -1773,7 +2090,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-003.html",
       "birthSource": "https://www.realmadrid.com/es-ES/el-club/historia/leyendas-futbol/victor-manuel-torres-mestre",
       "birthReview": "crosschecked_source",
-      "proposedTier": "B+"
+      "proposedTier": "B+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-alaves-090",
@@ -1791,7 +2111,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-003.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/alaves.htm",
-      "proposedTier": "B+"
+      "proposedTier": "B+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-alaves-091",
@@ -1809,7 +2132,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-003.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/alaves.htm",
-      "proposedTier": "A-"
+      "proposedTier": "A-",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-alaves-092",
@@ -1827,7 +2153,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-003.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/alaves.htm",
-      "proposedTier": "B+"
+      "proposedTier": "B+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-alaves-093",
@@ -1845,7 +2174,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-003.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/alaves.htm",
-      "proposedTier": "B-"
+      "proposedTier": "B-",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-alaves-094",
@@ -1863,7 +2195,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-003.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/alaves.htm",
-      "proposedTier": "B+"
+      "proposedTier": "B+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-alaves-095",
@@ -1881,7 +2216,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-003.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/alaves.htm",
-      "proposedTier": "B+"
+      "proposedTier": "B+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-alaves-096",
@@ -1899,7 +2237,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-003.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/alaves.htm",
-      "proposedTier": "B"
+      "proposedTier": "B",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-alaves-097",
@@ -1917,7 +2258,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-003.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/alaves.htm",
-      "proposedTier": "B"
+      "proposedTier": "B",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-alaves-098",
@@ -1935,7 +2279,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-003.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/alaves.htm",
-      "proposedTier": "B-"
+      "proposedTier": "B-",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-alaves-099",
@@ -1953,7 +2300,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-003.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/alaves.htm",
-      "proposedTier": "B"
+      "proposedTier": "B",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-alaves-100",
@@ -1971,7 +2321,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-003.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/alaves.htm",
-      "proposedTier": "B+"
+      "proposedTier": "B+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-celta-101",
@@ -1989,7 +2342,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0011.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/celta.htm",
-      "proposedTier": "B+"
+      "proposedTier": "B+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-celta-102",
@@ -2007,7 +2363,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0011.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/celta.htm",
-      "proposedTier": "B+"
+      "proposedTier": "B+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-celta-103",
@@ -2025,7 +2384,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0011.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/celta.htm",
-      "proposedTier": "A-"
+      "proposedTier": "A-",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-celta-104",
@@ -2043,7 +2405,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0011.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/celta.htm",
-      "proposedTier": "B+"
+      "proposedTier": "B+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-celta-105",
@@ -2061,7 +2426,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0011.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/celta.htm",
-      "proposedTier": "B+"
+      "proposedTier": "B+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-celta-106",
@@ -2079,7 +2447,12 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0011.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/celta.htm",
-      "proposedTier": "A"
+      "proposedTier": "A",
+      "threeSeasonReview": {
+        "status": "three_season_league_record_corrobated",
+        "source": "https://fbref.com/en/players/c27d01de/all_comps/Claude-Makelele-Stats---All-Competitions",
+        "summary": "1997-98 Marseille 31 league starts; 1998-99 Celta 34; 1999-00 Celta 33"
+      }
     },
     {
       "id": "laliga-1999-celta-107",
@@ -2097,7 +2470,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0011.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/celta.htm",
-      "proposedTier": "B+"
+      "proposedTier": "B+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-celta-108",
@@ -2115,7 +2491,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0011.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/celta.htm",
-      "proposedTier": "B"
+      "proposedTier": "B",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-celta-109",
@@ -2133,7 +2512,12 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0011.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/celta.htm",
-      "proposedTier": "A+"
+      "proposedTier": "A+",
+      "threeSeasonReview": {
+        "status": "three_season_league_record_corrobated",
+        "source": "https://fbref.com/en/players/6d215bed/all_comps/Aleksandr-Mostovoi-Stats---All-Competitions",
+        "summary": "1997-98 34 league starts 8 goals; 1998-99 30 starts 6 goals; 1999-00 22 starts 6 goals 9 assists"
+      }
     },
     {
       "id": "laliga-1999-celta-110",
@@ -2151,7 +2535,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0011.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/celta.htm",
-      "proposedTier": "A-"
+      "proposedTier": "A-",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-celta-111",
@@ -2165,11 +2552,26 @@
       "tier": null,
       "rank": null,
       "review": "tier_proposed_unapproved",
-      "positionReview": "needs_match_lineup_verification",
+      "positionReview": "AM_primary_position_source_support__resolve_Celta_two_pivot_CAM_eligibility",
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0011.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/celta.htm",
-      "proposedTier": "B+"
+      "proposedTier": "B+",
+      "proposedPosition": "CAM",
+      "positionAudit": {
+        "status": "provisional_prefer_CAM",
+        "evidence": [
+          "https://www.transfermarkt.com/celta-de-vigo/kader/verein/940/saison_id/1999/plus/1",
+          "https://www.transfermarkt.com/celta-de-vigo_real-madrid/index/spielbericht/1183827",
+          "https://fbref.com/en/players/f55491d2/all_comps/Haim-Revivo-Stats---All-Competitions"
+        ],
+        "reason": "Celta 1999-00 main formation 4-2-3-1, Gustavo Lopez occupied LW and Mostovoi central AM; Revivo listed AM and in 1999-11-28 bench as AM. Need resolve 4-2-3-1 2CM=>CAM exclusion rule and Mostovoi incumbent before changing official position."
+      },
+      "threeSeasonReview": {
+        "status": "three_season_league_record_corrobated",
+        "source": "https://fbref.com/en/players/f55491d2/all_comps/Haim-Revivo-Stats---All-Competitions",
+        "summary": "1997-98 36 league starts 7 goals; 1998-99 20 league starts 9 goals; 1999-00 18 starts 2 goals 2 assists"
+      }
     },
     {
       "id": "laliga-1999-celta-112",
@@ -2187,7 +2589,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0011.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/celta.htm",
-      "proposedTier": "A"
+      "proposedTier": "A",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-celta-113",
@@ -2205,7 +2610,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0011.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/celta.htm",
-      "proposedTier": "B+"
+      "proposedTier": "B+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-rayo-114",
@@ -2223,7 +2631,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-005.html",
       "birthSource": "https://footballsquads.co.uk/spain/1999-2000/laliga/rayo.htm",
       "birthReview": "crosschecked_source",
-      "proposedTier": "B+"
+      "proposedTier": "B+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-rayo-115",
@@ -2241,7 +2652,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-005.html",
       "birthSource": "https://footballsquads.co.uk/spain/1999-2000/laliga/rayo.htm",
       "birthReview": "crosschecked_source",
-      "proposedTier": "B+"
+      "proposedTier": "B+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-rayo-116",
@@ -2259,7 +2673,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-005.html",
       "birthSource": "https://footballsquads.co.uk/spain/1999-2000/laliga/rayo.htm",
       "birthReview": "crosschecked_source",
-      "proposedTier": "B+"
+      "proposedTier": "B+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-rayo-117",
@@ -2277,7 +2694,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-005.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/rayo.htm",
-      "proposedTier": "B+"
+      "proposedTier": "B+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-rayo-118",
@@ -2295,7 +2715,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-005.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/rayo.htm",
-      "proposedTier": "B"
+      "proposedTier": "B",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-rayo-119",
@@ -2314,7 +2737,10 @@
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/rayo.htm",
       "evidencePosition": "https://www.transfermarkt.com/rayo-vallecano/startseite/verein/367/saison_id/1999/sort/trikotNumber.desc",
-      "proposedTier": "B"
+      "proposedTier": "B",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-rayo-120",
@@ -2328,11 +2754,23 @@
       "tier": null,
       "rank": null,
       "review": "tier_proposed_unapproved",
-      "positionReview": "needs_match_lineup_verification",
+      "positionReview": "retained_CM_provisionally__1999_00_match_lineup_role_counts_pending",
       "evidence": "https://www.bdfutbol.com/en/t/t1999-005.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/rayo.htm",
-      "proposedTier": "A-"
+      "proposedTier": "A-",
+      "proposedPosition": "CM",
+      "positionAudit": {
+        "status": "no_change_provisional",
+        "evidence": [
+          "https://fbref.com/en/squads/98e8af82/1999-2000/Rayo-Vallecano-Stats",
+          "https://www.bdfutbol.com/en/t/t1999-005.html"
+        ],
+        "reason": "1999-00 30 league starts, 4G 9A, listed midfielder; no sufficient season-level evidence showing most appearances were specifically CAM rather than central midfield. CAM not created from creative statistics alone."
+      },
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-rayo-121",
@@ -2350,7 +2788,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-005.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/rayo.htm",
-      "proposedTier": "B-"
+      "proposedTier": "B-",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-rayo-122",
@@ -2368,7 +2809,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-005.html",
       "birthReview": "crosschecked_source",
       "birthSource": "https://footballsquads.co.uk/spain/1999-2000/laliga/rayo.htm",
-      "proposedTier": "B"
+      "proposedTier": "B",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-rayo-123",
@@ -2387,7 +2831,10 @@
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.bdfutbol.com/es/p/j1323.html?cat=1a-2a&ps=1",
       "evidencePosition": "https://www.transfermarkt.com/rayo-vallecano/startseite/verein/367/saison_id/1999/sort/trikotNumber.desc",
-      "proposedTier": "B+"
+      "proposedTier": "B+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-rayo-125",
@@ -2405,7 +2852,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-005.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/rayo.htm",
-      "proposedTier": "B+"
+      "proposedTier": "B+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-rayo-126",
@@ -2423,7 +2873,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-005.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/rayo.htm",
-      "proposedTier": "B+"
+      "proposedTier": "B+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-mallorca-127",
@@ -2441,7 +2894,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0024.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/mallorca.htm",
-      "proposedTier": "B+"
+      "proposedTier": "B+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-mallorca-128",
@@ -2459,7 +2915,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0024.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/mallorca.htm",
-      "proposedTier": "B+"
+      "proposedTier": "B+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-mallorca-129",
@@ -2477,7 +2936,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0024.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/mallorca.htm",
-      "proposedTier": "A-"
+      "proposedTier": "A-",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-mallorca-130",
@@ -2495,7 +2957,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0024.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/mallorca.htm",
-      "proposedTier": "B+"
+      "proposedTier": "B+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-mallorca-131",
@@ -2513,7 +2978,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0024.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/mallorca.htm",
-      "proposedTier": "B-"
+      "proposedTier": "B-",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-mallorca-132",
@@ -2531,7 +2999,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0024.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/mallorca.htm",
-      "proposedTier": "B+"
+      "proposedTier": "B+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-mallorca-133",
@@ -2549,7 +3020,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0024.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/mallorca.htm",
-      "proposedTier": "B"
+      "proposedTier": "B",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-mallorca-134",
@@ -2567,7 +3041,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0024.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/mallorca.htm",
-      "proposedTier": "B+"
+      "proposedTier": "B+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-mallorca-135",
@@ -2585,7 +3062,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0024.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/mallorca.htm",
-      "proposedTier": "B+"
+      "proposedTier": "B+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-mallorca-136",
@@ -2603,7 +3083,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0024.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/mallorca.htm",
-      "proposedTier": "B+"
+      "proposedTier": "B+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-mallorca-137",
@@ -2621,7 +3104,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0024.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/mallorca.htm",
-      "proposedTier": "A"
+      "proposedTier": "A",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-mallorca-138",
@@ -2639,7 +3125,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0024.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/mallorca.htm",
-      "proposedTier": "B"
+      "proposedTier": "B",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-espanyol-139",
@@ -2657,7 +3146,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0014.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/espanyol.htm",
-      "proposedTier": "B+"
+      "proposedTier": "B+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-espanyol-140",
@@ -2675,7 +3167,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0014.html",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/espanyol.htm",
       "birthReview": "crosschecked_source",
-      "proposedTier": "B+"
+      "proposedTier": "B+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-espanyol-141",
@@ -2693,7 +3188,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0014.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/espanyol.htm",
-      "proposedTier": "A-"
+      "proposedTier": "A-",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-espanyol-142",
@@ -2711,7 +3209,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0014.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/espanyol.htm",
-      "proposedTier": "B"
+      "proposedTier": "B",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-espanyol-143",
@@ -2729,7 +3230,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0014.html",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/espanyol.htm",
       "birthReview": "crosschecked_source",
-      "proposedTier": "B+"
+      "proposedTier": "B+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-espanyol-144",
@@ -2747,7 +3251,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0014.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/espanyol.htm",
-      "proposedTier": "B+"
+      "proposedTier": "B+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-espanyol-145",
@@ -2765,7 +3272,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0014.html",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/espanyol.htm",
       "birthReview": "crosschecked_source",
-      "proposedTier": "B"
+      "proposedTier": "B",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-espanyol-146",
@@ -2783,7 +3293,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0014.html",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/espanyol.htm",
       "birthReview": "crosschecked_source",
-      "proposedTier": "B+"
+      "proposedTier": "B+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-espanyol-147",
@@ -2801,7 +3314,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0014.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/espanyol.htm",
-      "proposedTier": "B+"
+      "proposedTier": "B+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-espanyol-148",
@@ -2819,7 +3335,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0014.html",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/espanyol.htm",
       "birthReview": "crosschecked_source",
-      "proposedTier": "B"
+      "proposedTier": "B",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-espanyol-149",
@@ -2837,7 +3356,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0014.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/espanyol.htm",
-      "proposedTier": "B+"
+      "proposedTier": "B+",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     },
     {
       "id": "laliga-1999-espanyol-150",
@@ -2855,7 +3377,10 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0014.html",
       "birthReview": "crosscheck_on_source_discrepancy",
       "birthSource": "https://www.footballsquads.co.uk/spain/1999-2000/laliga/espanyol.htm",
-      "proposedTier": "B"
+      "proposedTier": "B",
+      "threeSeasonReview": {
+        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+      }
     }
   ],
   "bestXi": [],
