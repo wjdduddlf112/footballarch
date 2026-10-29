@@ -12,10 +12,10 @@
     "standingsStatus": "reused_from_verified_archive",
     "source": "BDFutbol league lineup tables for club-season; La Liga archive for standings and European participants",
     "dataCollected": "2026-10-30",
-    "candidateCount": 121,
+    "candidateCount": 134,
     "sourceScope": "Spanish top-flight league matches only",
     "positionVerifiedCount": 15,
-    "unverifiedPositions": 106,
+    "unverifiedPositions": 119,
     "positionNotes": "Outfield roles require contemporary positional lineups verification; the provisional classification is not approved.",
     "pendingPositionCases": [
       "Pablo Aimar (Valencia) CAM/CM double-pivot exclusion rule",
@@ -26,7 +26,9 @@
       "Carles Puyol and Gabri (Barcelona) RB versus CB or CM",
       "Villarreal Víctor Fernández winger versus forward",
       "Málaga Gerardo RW/central midfield and Romero defensive role need majority-position audit",
-      "Alavés Carles Llorens left-back verified from BDFutbol historical player page"
+      "Alavés Carles Llorens left-back verified from BDFutbol historical player page",
+      "2001-02 2002 Intertoto Villarreal Xavi Roca 22 starts confirmed, Jesús Galván second RB 17 starts; BDFutbol matchup role pending",
+      "2001-02 Betis Dani 11 starts competes with João Tomás 15; second striker eligibility to be verified"
     ],
     "formationVerification": "needs_review",
     "bestXiStatus": "not_selected",
@@ -47,47 +49,10 @@
         "positionVerification": "needs_review",
         "draftStatus": "unassigned_not_counted_as_registered_player",
         "reason": "CAM versus a double-CM 4-2-3-1 structure; no eligible slot without tactical adjudication"
-      },
-      {
-        "club": "deportivo",
-        "clubName": "RC Deportivo de La Coruña",
-        "name": "Juan Carlos Valerón",
-        "nameKo": "후안 카를로스 발레론",
-        "leagueAppearances": 36,
-        "leagueStarts": 32,
-        "leagueMinutes": 2578,
-        "source": "https://www.bdfutbol.com/en/t/t2001-0213.html",
-        "positionVerification": "needs_review",
-        "draftStatus": "unassigned_not_counted_as_registered_player",
-        "reason": "Central creator/CAM versus two-central-midfielder exclusion rule"
-      },
-      {
-        "club": "celta",
-        "clubName": "RC Celta",
-        "name": "Aleksandr Mostovoi",
-        "nameKo": "알렉산드르 모스토보이",
-        "leagueAppearances": 30,
-        "leagueStarts": 28,
-        "leagueMinutes": 2495,
-        "source": "https://www.bdfutbol.com/en/t/t2001-0211.html",
-        "positionVerification": "needs_review",
-        "draftStatus": "unassigned_not_counted_as_registered_player",
-        "reason": "Clear central creator, but tactical two-CM exception unresolved"
-      },
-      {
-        "club": "alaves",
-        "clubName": "Deportivo Alavés",
-        "name": "Jordi Cruyff",
-        "nameKo": "조르디 크라위프",
-        "leagueAppearances": 33,
-        "leagueStarts": 29,
-        "leagueMinutes": 2428,
-        "source": "https://www.bdfutbol.com/en/t/t2001-023.html",
-        "positionVerification": "needs_review",
-        "draftStatus": "unassigned_not_counted_as_registered_player",
-        "reason": "Attacking-midfield versus second-forward match usage unresolved"
       }
-    ]
+    ],
+    "coverageState": "NEEDS_VERIFICATION",
+    "rosterReaudit": "first-season full list compared to BDFutbol; starters/role position disputes remain"
   },
   "clubs": [
     {
@@ -1377,7 +1342,7 @@
       "clubId": "deportivo",
       "clubName": "RC Deportivo de La Coruña",
       "born": "1975-03-09",
-      "role": "backup",
+      "role": "starter",
       "starts": 22,
       "leagueAppearances": 30,
       "leagueStarts": 22,
@@ -1392,7 +1357,8 @@
         "https://www.bdfutbol.com/en/t/t2001-0213.html"
       ],
       "verificationNotes": [
-        "Match-by-match majority-position evidence pending; positional assignment is provisional."
+        "Match-by-match majority-position evidence pending; positional assignment is provisional.",
+        "Shared forward starting role with Diego Tristán, not a historical bench player."
       ]
     },
     {
@@ -1700,7 +1666,7 @@
       "clubId": "madrid",
       "clubName": "Real Madrid",
       "born": "1976-04-05",
-      "role": "backup",
+      "role": "starter",
       "starts": 28,
       "leagueAppearances": 33,
       "leagueStarts": 28,
@@ -1715,7 +1681,8 @@
         "https://www.bdfutbol.com/en/t/t2001-022.html"
       ],
       "verificationNotes": [
-        "Match-by-match majority-position evidence pending; positional assignment is provisional."
+        "Match-by-match majority-position evidence pending; positional assignment is provisional.",
+        "28 league starts: second starting forward, not a historical backup."
       ]
     },
     {
@@ -2080,7 +2047,7 @@
       "clubId": "barca",
       "clubName": "FC Barcelona",
       "born": null,
-      "role": "backup",
+      "role": "starter",
       "starts": 27,
       "leagueAppearances": 36,
       "leagueStarts": 27,
@@ -2096,7 +2063,8 @@
       ],
       "verificationNotes": [
         "Match-by-match majority-position evidence pending; positional assignment is provisional.",
-        "Birthdate not independently confirmed; null intentionally."
+        "Birthdate not independently confirmed; null intentionally.",
+        "27 league starts and 17 goals; second simultaneous starting striker."
       ]
     },
     {
@@ -2323,7 +2291,7 @@
       "clubId": "celta",
       "clubName": "RC Celta",
       "born": "1970-09-13",
-      "role": "starter",
+      "role": "backup",
       "starts": 18,
       "leagueAppearances": 27,
       "leagueStarts": 18,
@@ -2343,7 +2311,7 @@
     },
     {
       "id": "laliga-200102-celta-10",
-      "position": "CM",
+      "position": "DM",
       "nameKo": "바그네르",
       "name": "Vágner",
       "club": "celta",
@@ -2366,7 +2334,8 @@
       ],
       "verificationNotes": [
         "Match-by-match majority-position evidence pending; positional assignment is provisional.",
-        "Birthdate not independently confirmed; null intentionally."
+        "Birthdate not independently confirmed; null intentionally.",
+        "Changed from CM to provisional DM to avoid omitting main creator Mostovoi; actual primary role pending."
       ]
     },
     {
@@ -2601,7 +2570,7 @@
       "clubId": "betis",
       "clubName": "Real Betis",
       "born": "1974-03-29",
-      "role": "starter",
+      "role": "backup",
       "starts": 20,
       "leagueAppearances": 20,
       "leagueStarts": 20,
@@ -2617,7 +2586,8 @@
         "https://www.transfermarkt.com/real-betis-balompie/kader/verein/150/saison_id/2001/plus/1"
       ],
       "verificationNotes": [
-        "Match-by-match majority-position evidence pending; positional assignment is provisional."
+        "Match-by-match majority-position evidence pending; positional assignment is provisional.",
+        "CB 20 league starts (less than Juanito 23); role label realigned to starts; many rotational starts."
       ]
     },
     {
@@ -2657,7 +2627,7 @@
       "clubId": "betis",
       "clubName": "Real Betis",
       "born": null,
-      "role": "backup",
+      "role": "starter",
       "starts": 23,
       "leagueAppearances": 25,
       "leagueStarts": 23,
@@ -2673,7 +2643,8 @@
       ],
       "verificationNotes": [
         "Match-by-match majority-position evidence pending; positional assignment is provisional.",
-        "Birthdate not independently confirmed; null intentionally."
+        "Birthdate not independently confirmed; null intentionally.",
+        "23 league starts and significant CB rotation; historical starter-equivalent despite CB 2+1 cap."
       ]
     },
     {
@@ -3545,13 +3516,13 @@
     {
       "id": "laliga-200102-villarreal-02",
       "position": "RB",
-      "nameKo": "크리스티안 갈반",
-      "name": "Cristian Galván",
+      "nameKo": "헤수스 갈반",
+      "name": "Jesús Galván",
       "club": "villarreal",
       "clubId": "villarreal",
       "clubName": "Villarreal CF",
       "born": null,
-      "role": "starter",
+      "role": "backup",
       "starts": 17,
       "leagueAppearances": 22,
       "leagueStarts": 17,
@@ -3567,7 +3538,8 @@
       ],
       "verificationNotes": [
         "Match-by-match majority-position evidence pending; positional assignment is provisional.",
-        "Birthdate not independently confirmed; null intentionally."
+        "Birthdate not independently confirmed; null intentionally.",
+        "Corrected player's identity: BDFutbol lists Jesús Galván Carrillo; 22 appearances, 17 starts, 1524 minutes."
       ]
     },
     {
@@ -3905,6 +3877,422 @@
         "Match-position verification pending.",
         "Birthdate not independently confirmed; null intentionally."
       ]
+    },
+    {
+      "id": "laliga-200102-valencia-15",
+      "position": "RW",
+      "nameKo": "미겔 앙헬 앙굴로",
+      "name": "Miguel Ángel Angulo",
+      "club": "valencia",
+      "clubId": "valencia",
+      "clubName": "Valencia CF",
+      "born": null,
+      "role": "backup",
+      "starts": 21,
+      "leagueAppearances": 26,
+      "leagueStarts": 21,
+      "leagueMinutes": 1661,
+      "appearanceScope": "La Liga 2001-02 only",
+      "positionVerification": "needs_review",
+      "tier": null,
+      "rank": null,
+      "review": "draft_unapproved",
+      "evidence": "https://www.bdfutbol.com/en/t/t2001-0236.html",
+      "sources": [
+        "https://www.bdfutbol.com/en/t/t2001-0236.html"
+      ],
+      "positionEvidenceSources": [
+        "https://www.bdfutbol.com/en/t/t2001-0236.html"
+      ],
+      "verificationNotes": [
+        "RW/second-forward role unresolved",
+        "BDFutbol club-season appearance/starts/minutes checked against lineup listing; majority position NOT confirmed"
+      ],
+      "eligibilityReview": "draft"
+    },
+    {
+      "id": "laliga-200102-madrid-13",
+      "position": "LW",
+      "nameKo": "산티아고 솔라리",
+      "name": "Santiago Solari",
+      "club": "madrid",
+      "clubId": "madrid",
+      "clubName": "Real Madrid",
+      "born": null,
+      "role": "starter",
+      "starts": 14,
+      "leagueAppearances": 28,
+      "leagueStarts": 14,
+      "leagueMinutes": 1309,
+      "appearanceScope": "La Liga 2001-02 only",
+      "positionVerification": "needs_review",
+      "tier": null,
+      "rank": null,
+      "review": "draft_unapproved",
+      "evidence": "https://www.bdfutbol.com/en/t/t2001-022.html",
+      "sources": [
+        "https://www.bdfutbol.com/en/t/t2001-022.html"
+      ],
+      "positionEvidenceSources": [
+        "https://www.bdfutbol.com/en/t/t2001-022.html"
+      ],
+      "verificationNotes": [
+        "Left midfield versus attacking forward position pending",
+        "BDFutbol club-season appearance/starts/minutes checked against lineup listing; majority position NOT confirmed"
+      ],
+      "eligibilityReview": "draft"
+    },
+    {
+      "id": "laliga-200102-madrid-14",
+      "position": "CM",
+      "nameKo": "구티",
+      "name": "Guti",
+      "club": "madrid",
+      "clubId": "madrid",
+      "clubName": "Real Madrid",
+      "born": null,
+      "role": "backup",
+      "starts": 9,
+      "leagueAppearances": 29,
+      "leagueStarts": 9,
+      "leagueMinutes": 1057,
+      "appearanceScope": "La Liga 2001-02 only",
+      "positionVerification": "needs_review",
+      "tier": null,
+      "rank": null,
+      "review": "draft_unapproved",
+      "evidence": "https://www.bdfutbol.com/en/t/t2001-022.html",
+      "sources": [
+        "https://www.bdfutbol.com/en/t/t2001-022.html"
+      ],
+      "positionEvidenceSources": [
+        "https://www.bdfutbol.com/en/t/t2001-022.html"
+      ],
+      "verificationNotes": [
+        "CM vs withdrawn striker; added given 29 league appearances",
+        "BDFutbol club-season appearance/starts/minutes checked against lineup listing; majority position NOT confirmed"
+      ],
+      "eligibilityReview": "draft"
+    },
+    {
+      "id": "laliga-200102-madrid-15",
+      "position": "RW",
+      "nameKo": "스티브 맥매너먼",
+      "name": "Steve McManaman",
+      "club": "madrid",
+      "clubId": "madrid",
+      "clubName": "Real Madrid",
+      "born": null,
+      "role": "backup",
+      "starts": 13,
+      "leagueAppearances": 23,
+      "leagueStarts": 13,
+      "leagueMinutes": 1296,
+      "appearanceScope": "La Liga 2001-02 only",
+      "positionVerification": "needs_review",
+      "tier": null,
+      "rank": null,
+      "review": "draft_unapproved",
+      "evidence": "https://www.bdfutbol.com/en/t/t2001-022.html",
+      "sources": [
+        "https://www.bdfutbol.com/en/t/t2001-022.html"
+      ],
+      "positionEvidenceSources": [
+        "https://www.bdfutbol.com/en/t/t2001-022.html"
+      ],
+      "verificationNotes": [
+        "Right attacking mid versus CM pending",
+        "BDFutbol club-season appearance/starts/minutes checked against lineup listing; majority position NOT confirmed"
+      ],
+      "eligibilityReview": "draft"
+    },
+    {
+      "id": "laliga-200102-barca-15",
+      "position": "LB",
+      "nameKo": "세르지 바르후안",
+      "name": "Sergi Barjuán",
+      "club": "barca",
+      "clubId": "barca",
+      "clubName": "FC Barcelona",
+      "born": null,
+      "role": "backup",
+      "starts": 15,
+      "leagueAppearances": 18,
+      "leagueStarts": 15,
+      "leagueMinutes": 1338,
+      "appearanceScope": "La Liga 2001-02 only",
+      "positionVerification": "needs_review",
+      "tier": null,
+      "rank": null,
+      "review": "draft_unapproved",
+      "evidence": "https://www.bdfutbol.com/en/t/t2001-021.html",
+      "sources": [
+        "https://www.bdfutbol.com/en/t/t2001-021.html"
+      ],
+      "positionEvidenceSources": [
+        "https://www.bdfutbol.com/en/t/t2001-021.html"
+      ],
+      "verificationNotes": [
+        "Left-back vs left-sided wingback role provisional",
+        "BDFutbol club-season appearance/starts/minutes checked against lineup listing; majority position NOT confirmed"
+      ],
+      "eligibilityReview": "draft"
+    },
+    {
+      "id": "laliga-200102-deportivo-17",
+      "position": "CM",
+      "nameKo": "후안 카를로스 발레론",
+      "name": "Juan Carlos Valerón",
+      "club": "deportivo",
+      "clubId": "deportivo",
+      "clubName": "RC Deportivo de La Coruña",
+      "born": null,
+      "role": "starter",
+      "starts": 32,
+      "leagueAppearances": 36,
+      "leagueStarts": 32,
+      "leagueMinutes": 2578,
+      "appearanceScope": "La Liga 2001-02 only",
+      "positionVerification": "needs_review",
+      "tier": null,
+      "rank": null,
+      "review": "draft_unapproved",
+      "evidence": "https://www.bdfutbol.com/en/t/t2001-0213.html",
+      "sources": [
+        "https://www.bdfutbol.com/en/t/t2001-0213.html"
+      ],
+      "positionEvidenceSources": [
+        "https://www.bdfutbol.com/en/t/t2001-0213.html"
+      ],
+      "verificationNotes": [
+        "Historically central attacking creator, provisionally CM under 2-central-midfield no-CAM rule; must revisit tactical exception",
+        "BDFutbol club-season appearance/starts/minutes checked against lineup listing; majority position NOT confirmed"
+      ],
+      "eligibilityReview": "draft"
+    },
+    {
+      "id": "laliga-200102-celta-15",
+      "position": "LW",
+      "nameKo": "에두 슈미트",
+      "name": "Edú",
+      "club": "celta",
+      "clubId": "celta",
+      "clubName": "RC Celta",
+      "born": null,
+      "role": "backup",
+      "starts": 18,
+      "leagueAppearances": 32,
+      "leagueStarts": 18,
+      "leagueMinutes": 1867,
+      "appearanceScope": "La Liga 2001-02 only",
+      "positionVerification": "needs_review",
+      "tier": null,
+      "rank": null,
+      "review": "draft_unapproved",
+      "evidence": "https://www.bdfutbol.com/en/t/t2001-0211.html",
+      "sources": [
+        "https://www.bdfutbol.com/en/t/t2001-0211.html"
+      ],
+      "positionEvidenceSources": [
+        "https://www.bdfutbol.com/en/t/t2001-0211.html"
+      ],
+      "verificationNotes": [
+        "Left attacker vs striker; positional majority to be checked",
+        "BDFutbol club-season appearance/starts/minutes checked against lineup listing; majority position NOT confirmed"
+      ],
+      "eligibilityReview": "draft"
+    },
+    {
+      "id": "laliga-200102-celta-16",
+      "position": "CM",
+      "nameKo": "알렉산드르 모스토보이",
+      "name": "Aleksandr Mostovoi",
+      "club": "celta",
+      "clubId": "celta",
+      "clubName": "RC Celta",
+      "born": null,
+      "role": "starter",
+      "starts": 28,
+      "leagueAppearances": 30,
+      "leagueStarts": 28,
+      "leagueMinutes": 2495,
+      "appearanceScope": "La Liga 2001-02 only",
+      "positionVerification": "needs_review",
+      "tier": null,
+      "rank": null,
+      "review": "draft_unapproved",
+      "evidence": "https://www.bdfutbol.com/en/t/t2001-0211.html",
+      "sources": [
+        "https://www.bdfutbol.com/en/t/t2001-0211.html"
+      ],
+      "positionEvidenceSources": [
+        "https://www.bdfutbol.com/en/t/t2001-0211.html"
+      ],
+      "verificationNotes": [
+        "Central attacking creator; provisionally CM pending CAM-rule tactical adjudication",
+        "BDFutbol club-season appearance/starts/minutes checked against lineup listing; majority position NOT confirmed"
+      ],
+      "eligibilityReview": "draft"
+    },
+    {
+      "id": "laliga-200102-celta-17",
+      "position": "RB",
+      "nameKo": "후안 벨라스코",
+      "name": "Juan Velasco",
+      "club": "celta",
+      "clubId": "celta",
+      "clubName": "RC Celta",
+      "born": null,
+      "role": "backup",
+      "starts": 15,
+      "leagueAppearances": 16,
+      "leagueStarts": 15,
+      "leagueMinutes": 1270,
+      "appearanceScope": "La Liga 2001-02 only",
+      "positionVerification": "needs_review",
+      "tier": null,
+      "rank": null,
+      "review": "draft_unapproved",
+      "evidence": "https://www.bdfutbol.com/en/t/t2001-0211.html",
+      "sources": [
+        "https://www.bdfutbol.com/en/t/t2001-0211.html"
+      ],
+      "positionEvidenceSources": [
+        "https://www.bdfutbol.com/en/t/t2001-0211.html"
+      ],
+      "verificationNotes": [
+        "Right defensive role from 2001-02 squad; match-majority needs review",
+        "BDFutbol club-season appearance/starts/minutes checked against lineup listing; majority position NOT confirmed"
+      ],
+      "eligibilityReview": "draft"
+    },
+    {
+      "id": "laliga-200102-betis-14",
+      "position": "ST",
+      "nameKo": "다니 마르틴",
+      "name": "Dani",
+      "club": "betis",
+      "clubId": "betis",
+      "clubName": "Real Betis",
+      "born": null,
+      "role": "backup",
+      "starts": 11,
+      "leagueAppearances": 17,
+      "leagueStarts": 11,
+      "leagueMinutes": 956,
+      "appearanceScope": "La Liga 2001-02 only",
+      "positionVerification": "needs_review",
+      "tier": null,
+      "rank": null,
+      "review": "draft_unapproved",
+      "evidence": "https://www.bdfutbol.com/en/t/t2001-028.html",
+      "sources": [
+        "https://www.bdfutbol.com/en/t/t2001-028.html"
+      ],
+      "positionEvidenceSources": [
+        "https://www.bdfutbol.com/en/t/t2001-028.html"
+      ],
+      "verificationNotes": [
+        "Second striker; role and actual frequency to audit",
+        "BDFutbol club-season appearance/starts/minutes checked against lineup listing; majority position NOT confirmed"
+      ],
+      "eligibilityReview": "draft"
+    },
+    {
+      "id": "laliga-200102-alaves-14",
+      "position": "CAM",
+      "nameKo": "조르디 크라위프",
+      "name": "Jordi Cruyff",
+      "club": "alaves",
+      "clubId": "alaves",
+      "clubName": "Deportivo Alavés",
+      "born": null,
+      "role": "starter",
+      "starts": 29,
+      "leagueAppearances": 33,
+      "leagueStarts": 29,
+      "leagueMinutes": 2428,
+      "appearanceScope": "La Liga 2001-02 only",
+      "positionVerification": "needs_review",
+      "tier": null,
+      "rank": null,
+      "review": "draft_unapproved",
+      "evidence": "https://www.bdfutbol.com/en/t/t2001-023.html",
+      "sources": [
+        "https://www.bdfutbol.com/en/t/t2001-023.html"
+      ],
+      "positionEvidenceSources": [
+        "https://www.bdfutbol.com/en/t/t2001-023.html"
+      ],
+      "verificationNotes": [
+        "Exception candidate: main central second-line creator; CAM eligibility and two-CM structural exclusion UNRESOLVED",
+        "BDFutbol club-season appearance/starts/minutes checked against lineup listing; majority position NOT confirmed"
+      ],
+      "eligibilityReview": "exception_pending_tactical_review"
+    },
+    {
+      "id": "laliga-200102-villarreal-14",
+      "position": "RB",
+      "nameKo": "사비 로카",
+      "name": "Xavi Roca",
+      "club": "villarreal",
+      "clubId": "villarreal",
+      "clubName": "Villarreal CF",
+      "born": null,
+      "role": "starter",
+      "starts": 22,
+      "leagueAppearances": 27,
+      "leagueStarts": 22,
+      "leagueMinutes": 1965,
+      "appearanceScope": "La Liga 2001-02 only",
+      "positionVerification": "needs_review",
+      "tier": null,
+      "rank": null,
+      "review": "draft_unapproved",
+      "evidence": "https://www.bdfutbol.com/en/t/t2001-0238.html",
+      "sources": [
+        "https://www.bdfutbol.com/en/t/t2001-0238.html"
+      ],
+      "positionEvidenceSources": [
+        "https://www.bdfutbol.com/en/t/t2001-0238.html"
+      ],
+      "verificationNotes": [
+        "Right-back assignment provisional, match-level majority not audited",
+        "BDFutbol club-season appearance/starts/minutes checked against lineup listing; majority position NOT confirmed"
+      ],
+      "eligibilityReview": "draft"
+    },
+    {
+      "id": "laliga-200102-villarreal-15",
+      "position": "LW",
+      "nameKo": "안토니오 과이레",
+      "name": "Antonio Guayre",
+      "club": "villarreal",
+      "clubId": "villarreal",
+      "clubName": "Villarreal CF",
+      "born": null,
+      "role": "backup",
+      "starts": 16,
+      "leagueAppearances": 31,
+      "leagueStarts": 16,
+      "leagueMinutes": 1551,
+      "appearanceScope": "La Liga 2001-02 only",
+      "positionVerification": "needs_review",
+      "tier": null,
+      "rank": null,
+      "review": "draft_unapproved",
+      "evidence": "https://www.bdfutbol.com/en/t/t2001-0238.html",
+      "sources": [
+        "https://www.bdfutbol.com/en/t/t2001-0238.html"
+      ],
+      "positionEvidenceSources": [
+        "https://www.bdfutbol.com/en/t/t2001-0238.html"
+      ],
+      "verificationNotes": [
+        "Left-forward/striker positional split unresolved",
+        "BDFutbol club-season appearance/starts/minutes checked against lineup listing; majority position NOT confirmed"
+      ],
+      "eligibilityReview": "draft"
     }
   ],
   "bestXi": [],
