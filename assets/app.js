@@ -97,6 +97,9 @@ function pageIntro(){
  $("subheading").textContent=data?(data.meta.standingsOnly?(data.meta.europeanQualificationVerified?"리그 순위표와 다음 시즌 UEFA 참가 구단 검증 완료 · 선수 평가는 미진행 상태입니다.":"리그 최종 순위 검증 완료 · 다음 시즌 UEFA 참가 여부와 선수 평가는 아직 조사 중입니다."):data.meta.status==="demo"?"시연용 선수 평가 데이터입니다. 실제 최종 선정 결과가 아닙니다.":data.meta.bestXiReview?.status==="proposed_unapproved"?"베스트 XI와 티어는 검수용 초안입니다. 당시 전술과 선수 기록을 검증 중입니다.":"승인된 데이터만 공식 선정 결과로 반영됩니다."):"이 시즌의 데이터는 아직 등록되지 않았습니다.";
  $("stateTag").textContent=loading?"불러오는 중":!data?"미등록":data.meta.label||data.meta.status;
  $("stateTag").className="status "+(data?.meta.status==="demo"?"demo":"pending");
+ const compact=st.tab==="overview"||st.tab==="table";
+ $("subheading").style.display=compact?"none":"";
+ $("stateTag").style.display=compact?"none":"";
  Array.from(document.querySelectorAll(".main-nav button")).forEach(b=>{b.classList.toggle("active",b.dataset.tab===st.tab);b.disabled=st.domain==="europe"&&["formation","table"].includes(b.dataset.tab)})
 }
 function statValue(label,value,note){return '<div class="metric"><span class="name">'+label+'</span><strong class="value">'+value+'</strong>'+(note?'<small class="note">'+esc(note)+'</small>':"")+'</div>'}
@@ -105,29 +108,27 @@ function qualItem(v){return '<button class="qual-item" data-club-go="'+esc(v.clu
 function overview(){
  if(data?.meta?.standingsOnly){
   const leaders=(data.standings||[]).slice(0,3),demoted=(data.standings||[]).filter(r=>r.outcome==="relegated"||r.outcome==="relegated_administrative");
-  let result='<div class="cards">'+statValue("리그 참가 구단",data.standings.length,"38경기 최종 성적 교차 검증")+statValue("유럽대항전 참가",data.meta.europeanQualificationVerified?(data.qualifiers||[]).length:"미검증","다음 시즌 실제 UEFA 대회")+statValue("강등 구단",demoted.length,"행정 강등 포함")+'</div>';
-  result+='<section class="panel"><div class="section-heading"><div><h2>'+esc(st.season.replace("-","–"))+' La Liga · 최종 순위</h2><span class="small muted">경기 결과로 재계산 · 동률 상대 전적 확인</span></div><button class="pill active" data-go="table">전체 순위표 보기</button></div><div class="notice">선수·티어·Best XI는 아직 등록하지 않았습니다. '+(data.meta.europeanQualificationVerified?'다음 시즌 유럽대항전 실제 참가 구단은 별도 검증을 마쳤습니다.':'다음 시즌 유럽대항전 참가 여부는 별도 검증 중입니다.')+'</div><div class="relegation-list" style="margin-top:13px">'+leaders.map(r=>'<div class="relegation-item">'+crest(r.club)+'<span>'+esc(r.rank)+'위 '+esc(club(r.club).name)+'</span><b>'+esc(r.points)+' PTS</b></div>').join("")+'</div></section>';
+  let result='<div class="cards">'+statValue("리그 참가 구단",data.standings.length)+statValue("유럽대항전 참가",data.meta.europeanQualificationVerified?(data.qualifiers||[]).length:"—")+statValue("강등 구단",demoted.length)+'</div>';
+  result+='<section class="panel"><div class="section-heading"><div><h2>'+esc(st.season.replace("-","–"))+" "+esc(label())+' · 최종 순위</h2></div><button class="pill active" data-go="table">전체 순위표 보기</button></div><div class="relegation-list" style="margin-top:13px">'+leaders.map(r=>'<div class="relegation-item">'+crest(r.club)+'<span>'+esc(r.rank)+'위 '+esc(club(r.club).name)+'</span><b>'+esc(r.points)+' PTS</b></div>').join("")+'</div></section>';
   if(data.meta.europeanQualificationVerified&&data.qualifiers.length)result+='<section class="panel"><div class="section-heading"><h2>European Qualification · Next Season</h2><span class="status">'+data.qualifiers.length+' CLUBS</span></div><div class="qual-list">'+data.qualifiers.map(qualItem).join("")+'</div></section>';
   if(demoted.length)result+='<section class="panel relegation-overview"><div class="section-heading"><h2>Relegation</h2><span class="relegation-chip">↓ '+demoted.length+' CLUBS</span></div><div class="relegation-list">'+demoted.map(r=>'<div class="relegation-item">'+crest(r.club)+'<span>'+esc(r.rank)+'위 '+esc(club(r.club).name)+(r.outcome==="relegated_administrative"?" · 행정 강등":"")+'</span><b>'+esc(r.points)+' PTS</b></div>').join("")+'</div></section>';
   return result;
  }
 
  const n=(data.players||[]).length,k=qualifiers();
- let result='<div class="cards">'+statValue("유럽대항전 진출 구단",k.length,"평가 시즌 종료 후 다음 시즌 참가")+
- statValue("등록 후보 선수",n,"후보 검토 단계 포함")+
- statValue("승인된 티어",data.meta.status==="approved"?(data.players||[]).filter(p=>p.tier).length:"—","승인 전 평가는 공식 집계 제외")+'</div>';
- result+='<div class="panel"><div class="section-heading"><div><h2>Qualified Clubs</h2><div class="muted small">다음 시즌 실제 UEFA 대회 참가를 기준으로 한 후보 구단</div></div><span class="status">'+k.length+' CLUBS</span></div>';
- if(k.length){result+='<div class="qual-list">'+k.map(qualItem).join("")+'</div><div class="notice">구단을 누르면 해당 구단의 후보 선수 명단으로 이동합니다. 인터토토컵 참가 구단도 포함합니다.</div>'}
+ let result='<div class="cards">'+statValue("유럽대항전 진출 구단",k.length)+
+ statValue("등록 후보 선수",n)+
+ statValue("승인된 티어",data.meta.status==="approved"?(data.players||[]).filter(p=>p.tier).length:"—")+'</div>';
+ result+='<div class="panel"><div class="section-heading"><div><h2>Qualified Clubs</h2></div><span class="status">'+k.length+' CLUBS</span></div>';
+ if(k.length){result+='<div class="qual-list">'+k.map(qualItem).join("")+'</div>'}
  else result+='<div class="empty"><strong>후보 구단 정보가 없습니다.</strong></div>';
  result+='</div>';
  if(n){const counts=positions.map(p=>[p,(data.players||[]).filter(x=>x.position===p).length]).filter(x=>x[1]);
- result+='<div class="panel" style="margin-top:15px"><div class="section-heading"><div><h2>Candidate Progress</h2><span class="small muted">등록된 포지션 후보 — 검수 전 자료 포함</span></div><button class="pill" data-action="candidates">'+(st.showCandidates?'후보 목록 닫기':'전체 후보 보기')+'</button></div><div class="pills">'+counts.map(x=>'<button class="pill" data-pos-go="'+x[0]+'">'+x[0]+' &nbsp; '+x[1]+'</button>').join("")+'</div></div>'}
+ result+='<div class="panel" style="margin-top:15px"><div class="section-heading"><div><h2>Candidate Progress</h2></div><button class="pill" data-action="candidates">'+(st.showCandidates?'후보 목록 닫기':'전체 후보 보기')+'</button></div><div class="pills">'+counts.map(x=>'<button class="pill" data-pos-go="'+x[0]+'">'+x[0]+' &nbsp; '+x[1]+'</button>').join("")+'</div></div>'}
  const relegated=(data.standings||[]).filter(r=>r.outcome==="relegated");
- if(relegated.length)result+='<div class="panel relegation-overview"><div class="section-heading"><div><h2>Relegation</h2><span class="small muted">다음 시즌 2부 리그 강등</span></div><span class="relegation-chip">↓ '+relegated.length+' CLUBS</span></div><div class="relegation-list">'+relegated.map(r=>'<div class="relegation-item">'+crest(r.club)+'<span>'+esc(r.rank)+'위 '+esc(club(r.club).name)+'</span><b>'+esc(r.points)+' PTS</b></div>').join("")+'</div></div>';
+ if(relegated.length)result+='<div class="panel relegation-overview"><div class="section-heading"><div><h2>Relegation</h2></div><span class="relegation-chip">↓ '+relegated.length+' CLUBS</span></div><div class="relegation-list">'+relegated.map(r=>'<div class="relegation-item">'+crest(r.club)+'<span>'+esc(r.rank)+'위 '+esc(club(r.club).name)+'</span><b>'+esc(r.points)+' PTS</b></div>').join("")+'</div></div>';
  if(st.showCandidates&&n)result+=candidatePool();
- if((data.bestXi||[]).length===11&&data.meta.bestXiReview?.status==="proposed_unapproved")result+='<div class="panel" style="margin-top:15px"><div class="section-heading"><div><h2>'+esc(st.season.replace("-","–"))+' Best XI · 1차 선정안</h2><span class="small muted">'+esc(data.meta.formation||"검수 중")+' · 선수와 포지션의 추가 검수가 필요한 비확정 명단</span></div><button class="pill" data-go="formation">베스트 XI 보기</button></div><div class="notice">11명 전원 현재 후보군에서 선정했습니다. 포지션별 순위는 배정되어 있으며, 베스트 XI 확정과 역사적 근거 검증은 진행 중입니다.</div></div>';
- if(data.meta.status==="demo")result+='<div class="banner" style="margin-top:14px"><b>시연 데이터</b> · 2022–23시즌 선수 티어와 순위는 기존 인터랙티브 샘플의 자료입니다. 사용자가 확인한 역사적 최종 평가가 아닙니다.</div>';
- if(data.meta.status==="in_review")result+='<div class="banner" style="margin-top:14px"><b>선수 평가 대기</b> · 등록된 골키퍼 후보의 주전/후보 구분과 선발 기록은 추가 검수 대상입니다. S~D 티어는 아직 정하지 않았습니다.</div>';
+ if((data.bestXi||[]).length===11&&data.meta.bestXiReview?.status==="proposed_unapproved")result+='<div class="panel" style="margin-top:15px"><div class="section-heading"><div><h2>'+esc(st.season.replace("-","–"))+' Best XI · 1차 선정안</h2></div><button class="pill" data-go="formation">베스트 XI 보기</button></div></div>';
  return result
 }
 function toptier(){return ['S','A+','A','A-'].includes(st.tier)?st.tier:"all"}
@@ -182,15 +183,8 @@ function standings(){
  const hasEuropean=rows.some(r=>r.competition);
  const visible=rows.filter(r=>!hasEuropean||!st.qualifiedOnly||r.competition);
  const relegated=rows.filter(r=>r.outcome==="relegated"||r.outcome==="relegated_administrative");
- const hasAdmin=rows.some(r=>r.outcome==="relegated_administrative");
- let note='<div class="banner" style="margin-bottom:14px"><b>'+esc(st.season.replace("-","–"))+' 최종 순위 · 검증 완료</b> · 38경기 승무패·득실점·승점 대조 및 동률 순서 검수</div>';
- if(data.meta.standingsOnly&&!data.meta.europeanQualificationVerified)note+='<div class="relegation-legend">다음 시즌 유럽대항전 진출 여부는 아직 검증되지 않았습니다. 「미검증」은 미진출을 뜻하지 않습니다.</div>';
- if(data.meta.europeanQualificationVerified)note+='<div class="relegation-legend"><b>유럽 진출 검증 완료</b> · 챔피언스리그, UEFA컵/유로파리그, 컨퍼런스리그와 컵대회·우승 특례를 반영했습니다.</div>';
- const penalties=rows.filter(r=>r.pointsDeduction);
- if(penalties.length)note+='<div class="relegation-legend"><b>승점 징계 반영</b> · '+penalties.map(r=>esc(club(r.club).name)+' '+esc(r.pointsDeduction)+'점 ('+esc(3*r.wins+r.draws)+' → '+esc(r.points)+'점)').join(', ')+'</div>';
- if(relegated.length)note+='<div class="relegation-legend"><span class="relegation-chip">↓ 강등</span><span>'+(hasAdmin?'행정 강등·잔류까지 적용한 다음 시즌 실제 강등 구단입니다.':'18–20위 구단이 다음 시즌 2부 리그로 강등됩니다.')+'</span></div>';
- const filterBtn=hasEuropean?'<button class="pill '+(st.qualifiedOnly?"active":"")+'" data-action="qualonly">'+(st.qualifiedOnly?"✓ European clubs":"European clubs only")+'</button>':"";
- let content='<section class="panel"><div class="section-heading"><h2>Final League Table</h2>'+filterBtn+'</div>'+note;
+  const filterBtn=hasEuropean?'<button class="pill '+(st.qualifiedOnly?"active":"")+'" data-action="qualonly">'+(st.qualifiedOnly?"✓ European clubs":"European clubs only")+'</button>':"";
+ let content='<section class="panel"><div class="section-heading"><h2>Final League Table</h2>'+filterBtn+'</div>';
  content+='<div class="table-scroll"><table class="datagrid"><thead><tr><th>#</th><th>CLUB</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>GD</th><th>PTS</th><th>NEXT SEASON</th></tr></thead><tbody>';
  content+=visible.map(r=>{
   const down=r.outcome==="relegated"||r.outcome==="relegated_administrative";
