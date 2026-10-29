@@ -132,3 +132,16 @@ body.is-home #content{min-width:0}
 
 /* League-table special administrative retention (2014-15 Elche/Eibar). */
 .retention-chip{display:inline-flex;white-space:nowrap;padding:4px 8px;font-size:11px;font-weight:800;color:#9ed5c1;background:#193b33;border:1px solid #43836a;border-radius:5px}
+
+/* Adjacent season navigation: always keeps league and current content tab. */
+.season-nav{display:flex;align-items:flex-end;gap:6px;min-width:0}
+.season-nav label{min-width:0}
+.season-nav .season-arrow{flex:none;display:grid;place-items:center;width:40px;height:40px;padding:0;border:1px solid #3c4f5e;border-radius:8px;background:#21313e;color:#ecf1ed;font-size:20px;font-weight:600;line-height:1;transition:background .15s,border-color .15s}
+.season-nav .season-arrow:hover:not(:disabled){background:#354b5c;border-color:#bba573}
+.season-nav .season-arrow:disabled{opacity:.33;cursor:not-allowed}
+@media(max-width:650px){
+ .switchers .season-nav{flex:1 1 100%;width:100%}
+ .switchers .season-nav label{flex:1;min-width:0}
+ .switchers .season-nav select{width:100%;min-width:0}
+ .season-nav .season-arrow{width:44px;height:40px}
+}
