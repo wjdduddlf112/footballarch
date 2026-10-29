@@ -7,14 +7,23 @@
     "status": "draft",
     "standingsOnly": true,
     "standingsStatus": "archived_source_crosschecked",
-    "playerCandidateStatus": "draft_unapproved_all_clubs_first_pass_needs_further_review",
+    "playerCandidateStatus": "all_qualified_clubs_seeding_complete_player_eligibility_and_position_verification_incomplete",
     "candidateCount": 109,
     "candidateCoverage": {
       "qualifiedClubs": 8,
       "clubsWithPlayerCandidates": 8,
       "fullyAuditedClubs": 0,
-      "clubsPending": [],
-      "notes": "All 8 qualified clubs have first-pass shortlist records, not full approved squads; exact starts and primary-position checks remain open."
+      "clubsPending": [
+        "roma",
+        "juventus",
+        "lazio",
+        "parma",
+        "inter",
+        "milan",
+        "fiorentina",
+        "brescia"
+      ],
+      "notes": "All qualified clubs have first-pass researched candidates; no club season's primary-position match-by-match frequency or formation is fully verified. Do not call completed/approved."
     },
     "statsScope": "Serie A league matches only",
     "tierStatus": "not_assessed",
@@ -36,7 +45,9 @@
     ],
     "qualificationNotes": "",
     "playerApprovalUnchanged": true,
-    "lastReview": "2026-10-30"
+    "lastReview": "2026-10-30",
+    "positionValidationStatus": "needs_review_all",
+    "rolesSemantics": "Candidate-slot starter is highest league-start player per fixed position; backup is secondary candidate slot even when historical co-starter. 2 CB starters and up to 1 backup; 2 CM starters and up to 1 backup provisionally. Historical actual formation exception may change positions/CM/CAM eligibility at signoff."
   },
   "clubs": [
     {
@@ -547,14 +558,15 @@
       "leagueStarts": 26,
       "leagueMinutes": 2340,
       "statsScope": "Serie A domestic league only",
-      "positionVerification": "source_crosschecked_provisional",
+      "positionVerification": "needs_review",
       "verificationReasons": [],
       "sources": [
         "https://fbref.com/en/squads/cf74a709/2000-2001/s51/Roma-Stats",
         "https://www.footballsquads.co.uk/italy/2000-2001/seriea/roma.htm",
         "https://www.asroma.com/en/news/58627/matchday-revisited-scudetto-celebrations-in-2001"
       ],
-      "evidence": "https://fbref.com/en/squads/cf74a709/2000-2001/s51/Roma-Stats"
+      "evidence": "https://fbref.com/en/squads/cf74a709/2000-2001/s51/Roma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-01-roma-02",
@@ -575,14 +587,15 @@
       "leagueStarts": 8,
       "leagueMinutes": 720,
       "statsScope": "Serie A domestic league only",
-      "positionVerification": "source_crosschecked_provisional",
+      "positionVerification": "needs_review",
       "verificationReasons": [],
       "sources": [
         "https://fbref.com/en/squads/cf74a709/2000-2001/s51/Roma-Stats",
         "https://www.footballsquads.co.uk/italy/2000-2001/seriea/roma.htm",
         "https://www.asroma.com/en/news/58627/matchday-revisited-scudetto-celebrations-in-2001"
       ],
-      "evidence": "https://fbref.com/en/squads/cf74a709/2000-2001/s51/Roma-Stats"
+      "evidence": "https://fbref.com/en/squads/cf74a709/2000-2001/s51/Roma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-01-roma-03",
@@ -603,7 +616,7 @@
       "leagueStarts": 31,
       "leagueMinutes": 2790,
       "statsScope": "Serie A domestic league only",
-      "positionVerification": "source_crosschecked_provisional",
+      "positionVerification": "needs_review",
       "verificationReasons": [],
       "sources": [
         "https://fbref.com/en/squads/cf74a709/2000-2001/s51/Roma-Stats",
@@ -611,7 +624,8 @@
         "https://www.asroma.com/en/news/58627/matchday-revisited-scudetto-celebrations-in-2001",
         "https://www.transfermarkt.com/walter-samuel/profil/spieler/5938"
       ],
-      "evidence": "https://fbref.com/en/squads/cf74a709/2000-2001/s51/Roma-Stats"
+      "evidence": "https://fbref.com/en/squads/cf74a709/2000-2001/s51/Roma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-01-roma-04",
@@ -632,7 +646,7 @@
       "leagueStarts": 28,
       "leagueMinutes": 2520,
       "statsScope": "Serie A domestic league only",
-      "positionVerification": "source_crosschecked_provisional",
+      "positionVerification": "needs_review",
       "verificationReasons": [],
       "sources": [
         "https://fbref.com/en/squads/cf74a709/2000-2001/s51/Roma-Stats",
@@ -640,7 +654,8 @@
         "https://www.asroma.com/en/news/58627/matchday-revisited-scudetto-celebrations-in-2001",
         "https://www.cucs.it/giocatori/antonio-carlos-zago/"
       ],
-      "evidence": "https://fbref.com/en/squads/cf74a709/2000-2001/s51/Roma-Stats"
+      "evidence": "https://fbref.com/en/squads/cf74a709/2000-2001/s51/Roma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-01-roma-05",
@@ -661,14 +676,15 @@
       "leagueStarts": 21,
       "leagueMinutes": 1703,
       "statsScope": "Serie A domestic league only",
-      "positionVerification": "source_crosschecked_provisional",
+      "positionVerification": "needs_review",
       "verificationReasons": [],
       "sources": [
         "https://fbref.com/en/squads/cf74a709/2000-2001/s51/Roma-Stats",
         "https://www.footballsquads.co.uk/italy/2000-2001/seriea/roma.htm",
         "https://www.asroma.com/en/news/58627/matchday-revisited-scudetto-celebrations-in-2001"
       ],
-      "evidence": "https://fbref.com/en/squads/cf74a709/2000-2001/s51/Roma-Stats"
+      "evidence": "https://fbref.com/en/squads/cf74a709/2000-2001/s51/Roma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-01-roma-06",
@@ -698,7 +714,8 @@
         "https://www.footballsquads.co.uk/italy/2000-2001/seriea/roma.htm",
         "https://www.asroma.com/en/news/58627/matchday-revisited-scudetto-celebrations-in-2001"
       ],
-      "evidence": "https://fbref.com/en/squads/cf74a709/2000-2001/s51/Roma-Stats"
+      "evidence": "https://fbref.com/en/squads/cf74a709/2000-2001/s51/Roma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-01-roma-07",
@@ -728,7 +745,8 @@
         "https://www.footballsquads.co.uk/italy/2000-2001/seriea/roma.htm",
         "https://www.asroma.com/en/news/58627/matchday-revisited-scudetto-celebrations-in-2001"
       ],
-      "evidence": "https://fbref.com/en/squads/cf74a709/2000-2001/s51/Roma-Stats"
+      "evidence": "https://fbref.com/en/squads/cf74a709/2000-2001/s51/Roma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-01-roma-08",
@@ -749,14 +767,15 @@
       "leagueStarts": 31,
       "leagueMinutes": 2755,
       "statsScope": "Serie A domestic league only",
-      "positionVerification": "source_crosschecked_provisional",
+      "positionVerification": "needs_review",
       "verificationReasons": [],
       "sources": [
         "https://fbref.com/en/squads/cf74a709/2000-2001/s51/Roma-Stats",
         "https://www.footballsquads.co.uk/italy/2000-2001/seriea/roma.htm",
         "https://www.asroma.com/en/news/58627/matchday-revisited-scudetto-celebrations-in-2001"
       ],
-      "evidence": "https://fbref.com/en/squads/cf74a709/2000-2001/s51/Roma-Stats"
+      "evidence": "https://fbref.com/en/squads/cf74a709/2000-2001/s51/Roma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-01-roma-09",
@@ -777,7 +796,7 @@
       "leagueStarts": 20,
       "leagueMinutes": 1666,
       "statsScope": "Serie A domestic league only",
-      "positionVerification": "source_crosschecked_provisional",
+      "positionVerification": "needs_review",
       "verificationReasons": [],
       "sources": [
         "https://fbref.com/en/squads/cf74a709/2000-2001/s51/Roma-Stats",
@@ -787,7 +806,8 @@
         "https://www.rsssf.org/miscellaneous/czanetti-intl.html",
         "https://www.inter.it/it/archivio_giocatore/G0682"
       ],
-      "evidence": "https://fbref.com/en/squads/cf74a709/2000-2001/s51/Roma-Stats"
+      "evidence": "https://fbref.com/en/squads/cf74a709/2000-2001/s51/Roma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-01-roma-10",
@@ -817,7 +837,8 @@
         "https://www.footballsquads.co.uk/italy/2000-2001/seriea/roma.htm",
         "https://www.asroma.com/en/news/58627/matchday-revisited-scudetto-celebrations-in-2001"
       ],
-      "evidence": "https://fbref.com/en/squads/cf74a709/2000-2001/s51/Roma-Stats"
+      "evidence": "https://fbref.com/en/squads/cf74a709/2000-2001/s51/Roma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-01-roma-11",
@@ -847,7 +868,8 @@
         "https://www.footballsquads.co.uk/italy/2000-2001/seriea/roma.htm",
         "https://www.asroma.com/en/news/58627/matchday-revisited-scudetto-celebrations-in-2001"
       ],
-      "evidence": "https://fbref.com/en/squads/cf74a709/2000-2001/s51/Roma-Stats"
+      "evidence": "https://fbref.com/en/squads/cf74a709/2000-2001/s51/Roma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-01-roma-12",
@@ -859,7 +881,7 @@
       "clubId": "roma",
       "clubName": "AS Roma",
       "position": "ST",
-      "role": "starter",
+      "role": "backup",
       "starts": 27,
       "tier": null,
       "rank": null,
@@ -868,14 +890,15 @@
       "leagueStarts": 27,
       "leagueMinutes": 2453,
       "statsScope": "Serie A domestic league only",
-      "positionVerification": "source_crosschecked_provisional",
+      "positionVerification": "needs_review",
       "verificationReasons": [],
       "sources": [
         "https://fbref.com/en/squads/cf74a709/2000-2001/s51/Roma-Stats",
         "https://www.footballsquads.co.uk/italy/2000-2001/seriea/roma.htm",
         "https://www.asroma.com/en/news/58627/matchday-revisited-scudetto-celebrations-in-2001"
       ],
-      "evidence": "https://fbref.com/en/squads/cf74a709/2000-2001/s51/Roma-Stats"
+      "evidence": "https://fbref.com/en/squads/cf74a709/2000-2001/s51/Roma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-01-roma-13",
@@ -887,7 +910,7 @@
       "clubId": "roma",
       "clubName": "AS Roma",
       "position": "ST",
-      "role": "backup",
+      "role": "starter",
       "starts": 28,
       "tier": null,
       "rank": null,
@@ -896,7 +919,7 @@
       "leagueStarts": 28,
       "leagueMinutes": 2034,
       "statsScope": "Serie A domestic league only",
-      "positionVerification": "source_crosschecked_provisional",
+      "positionVerification": "needs_review",
       "verificationReasons": [
         "28 league starts, regular co-starter; 'backup' only encodes 1+1 ST candidate slot and NOT actual bench status."
       ],
@@ -905,7 +928,8 @@
         "https://www.footballsquads.co.uk/italy/2000-2001/seriea/roma.htm",
         "https://www.asroma.com/en/news/58627/matchday-revisited-scudetto-celebrations-in-2001"
       ],
-      "evidence": "https://fbref.com/en/squads/cf74a709/2000-2001/s51/Roma-Stats"
+      "evidence": "https://fbref.com/en/squads/cf74a709/2000-2001/s51/Roma-Stats",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-juventus-01",
@@ -935,7 +959,8 @@
       "evidence": "https://fbref.com/en/squads/e0652b02/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-juventus-03",
@@ -947,7 +972,7 @@
       "clubId": "juventus",
       "clubName": "Juventus FC",
       "position": "CB",
-      "role": "starter",
+      "role": "backup",
       "starts": 21,
       "leagueAppearances": 23,
       "leagueStarts": 21,
@@ -966,7 +991,8 @@
       "evidence": "https://fbref.com/en/squads/e0652b02/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-juventus-04",
@@ -997,7 +1023,8 @@
       "evidence": "https://fbref.com/en/squads/e0652b02/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-juventus-05",
@@ -1027,7 +1054,8 @@
       "evidence": "https://fbref.com/en/squads/e0652b02/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-juventus-06",
@@ -1039,7 +1067,7 @@
       "clubId": "juventus",
       "clubName": "Juventus FC",
       "position": "RB",
-      "role": "backup",
+      "role": "starter",
       "starts": 14,
       "leagueAppearances": 19,
       "leagueStarts": 14,
@@ -1058,7 +1086,8 @@
       "evidence": "https://fbref.com/en/squads/e0652b02/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-juventus-07",
@@ -1088,7 +1117,8 @@
       "evidence": "https://fbref.com/en/squads/e0652b02/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-juventus-08",
@@ -1119,7 +1149,8 @@
       "evidence": "https://fbref.com/en/squads/e0652b02/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-juventus-09",
@@ -1131,7 +1162,7 @@
       "clubId": "juventus",
       "clubName": "Juventus FC",
       "position": "CM",
-      "role": "backup",
+      "role": "starter",
       "starts": 14,
       "leagueAppearances": 21,
       "leagueStarts": 14,
@@ -1150,7 +1181,8 @@
       "evidence": "https://fbref.com/en/squads/e0652b02/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-juventus-10",
@@ -1181,7 +1213,8 @@
       "evidence": "https://fbref.com/en/squads/e0652b02/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-juventus-11",
@@ -1193,7 +1226,7 @@
       "clubId": "juventus",
       "clubName": "Juventus FC",
       "position": "RW",
-      "role": "backup",
+      "role": "starter",
       "starts": 19,
       "leagueAppearances": 29,
       "leagueStarts": 19,
@@ -1212,7 +1245,8 @@
       "evidence": "https://fbref.com/en/squads/e0652b02/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-juventus-12",
@@ -1224,7 +1258,7 @@
       "clubId": "juventus",
       "clubName": "Juventus FC",
       "position": "ST",
-      "role": "starter",
+      "role": "backup",
       "starts": 21,
       "leagueAppearances": 25,
       "leagueStarts": 21,
@@ -1243,7 +1277,8 @@
       "evidence": "https://fbref.com/en/squads/e0652b02/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-juventus-13",
@@ -1274,7 +1309,8 @@
       "evidence": "https://fbref.com/en/squads/e0652b02/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-lazio-01",
@@ -1303,7 +1339,8 @@
       "evidence": "https://fbref.com/en/squads/7213da33/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-lazio-02",
@@ -1334,7 +1371,8 @@
       "evidence": "https://fbref.com/en/squads/7213da33/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-lazio-03",
@@ -1363,7 +1401,8 @@
       "evidence": "https://fbref.com/en/squads/7213da33/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-lazio-04",
@@ -1375,7 +1414,7 @@
       "clubId": "lazio",
       "clubName": "SS Lazio",
       "position": "CB",
-      "role": "backup",
+      "role": "starter",
       "starts": 17,
       "leagueAppearances": 18,
       "leagueStarts": 17,
@@ -1394,7 +1433,8 @@
       "evidence": "https://fbref.com/en/squads/7213da33/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-lazio-05",
@@ -1425,7 +1465,8 @@
       "evidence": "https://fbref.com/en/squads/7213da33/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-lazio-06",
@@ -1437,7 +1478,7 @@
       "clubId": "lazio",
       "clubName": "SS Lazio",
       "position": "LB",
-      "role": "starter",
+      "role": "backup",
       "starts": 24,
       "leagueAppearances": 27,
       "leagueStarts": 24,
@@ -1454,7 +1495,8 @@
       "evidence": "https://fbref.com/en/squads/7213da33/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-lazio-07",
@@ -1483,7 +1525,8 @@
       "evidence": "https://fbref.com/en/squads/7213da33/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-lazio-08",
@@ -1512,7 +1555,8 @@
       "evidence": "https://fbref.com/en/squads/7213da33/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-lazio-09",
@@ -1541,7 +1585,8 @@
       "evidence": "https://fbref.com/en/squads/7213da33/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-lazio-10",
@@ -1570,7 +1615,8 @@
       "evidence": "https://fbref.com/en/squads/7213da33/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-lazio-11",
@@ -1599,7 +1645,8 @@
       "evidence": "https://fbref.com/en/squads/7213da33/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-lazio-12",
@@ -1628,7 +1675,8 @@
       "evidence": "https://fbref.com/en/squads/7213da33/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-lazio-13",
@@ -1659,7 +1707,8 @@
       "evidence": "https://fbref.com/en/squads/7213da33/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-lazio-14",
@@ -1690,7 +1739,8 @@
       "evidence": "https://fbref.com/en/squads/7213da33/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-lazio-15",
@@ -1719,7 +1769,8 @@
       "evidence": "https://fbref.com/en/squads/7213da33/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-lazio-16",
@@ -1750,7 +1801,8 @@
       "evidence": "https://fbref.com/en/squads/7213da33/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-parma-01",
@@ -1779,7 +1831,8 @@
       "evidence": "https://fbref.com/en/squads/eab4234c/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-parma-02",
@@ -1808,7 +1861,8 @@
       "evidence": "https://fbref.com/en/squads/eab4234c/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-parma-03",
@@ -1837,7 +1891,8 @@
       "evidence": "https://fbref.com/en/squads/eab4234c/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-parma-04",
@@ -1849,7 +1904,7 @@
       "clubId": "parma",
       "clubName": "Parma Calcio 1913",
       "position": "CB",
-      "role": "starter",
+      "role": "backup",
       "starts": 21,
       "leagueAppearances": 21,
       "leagueStarts": 21,
@@ -1867,7 +1922,8 @@
       "evidence": "https://fbref.com/en/squads/eab4234c/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-parma-05",
@@ -1879,7 +1935,7 @@
       "clubId": "parma",
       "clubName": "Parma Calcio 1913",
       "position": "LB",
-      "role": "backup",
+      "role": "starter",
       "starts": 15,
       "leagueAppearances": 19,
       "leagueStarts": 15,
@@ -1898,7 +1954,8 @@
       "evidence": "https://fbref.com/en/squads/eab4234c/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-parma-06",
@@ -1910,7 +1967,7 @@
       "clubId": "parma",
       "clubName": "Parma Calcio 1913",
       "position": "RB",
-      "role": "backup",
+      "role": "starter",
       "starts": 17,
       "leagueAppearances": 19,
       "leagueStarts": 17,
@@ -1929,7 +1986,8 @@
       "evidence": "https://fbref.com/en/squads/eab4234c/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-parma-07",
@@ -1941,7 +1999,7 @@
       "clubId": "parma",
       "clubName": "Parma Calcio 1913",
       "position": "DM",
-      "role": "backup",
+      "role": "starter",
       "starts": 15,
       "leagueAppearances": 16,
       "leagueStarts": 15,
@@ -1960,7 +2018,8 @@
       "evidence": "https://fbref.com/en/squads/eab4234c/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-parma-08",
@@ -1989,7 +2048,8 @@
       "evidence": "https://fbref.com/en/squads/eab4234c/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-parma-10",
@@ -2019,7 +2079,8 @@
       "evidence": "https://fbref.com/en/squads/eab4234c/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-parma-11",
@@ -2048,7 +2109,8 @@
       "evidence": "https://fbref.com/en/squads/eab4234c/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-parma-12",
@@ -2079,7 +2141,8 @@
       "evidence": "https://fbref.com/en/squads/eab4234c/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-parma-13",
@@ -2091,7 +2154,7 @@
       "clubId": "parma",
       "clubName": "Parma Calcio 1913",
       "position": "ST",
-      "role": "backup",
+      "role": "starter",
       "starts": 19,
       "leagueAppearances": 27,
       "leagueStarts": 19,
@@ -2110,7 +2173,8 @@
       "evidence": "https://fbref.com/en/squads/eab4234c/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-parma-14",
@@ -2141,7 +2205,8 @@
       "evidence": "https://fbref.com/en/squads/eab4234c/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-inter-01",
@@ -2170,7 +2235,8 @@
       "evidence": "https://fbref.com/en/squads/d609edc0/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-inter-02",
@@ -2201,7 +2267,8 @@
       "evidence": "https://fbref.com/en/squads/d609edc0/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-inter-03",
@@ -2230,7 +2297,8 @@
       "evidence": "https://fbref.com/en/squads/d609edc0/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-inter-04",
@@ -2259,7 +2327,8 @@
       "evidence": "https://fbref.com/en/squads/d609edc0/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-inter-05",
@@ -2288,7 +2357,8 @@
       "evidence": "https://fbref.com/en/squads/d609edc0/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-inter-06",
@@ -2319,7 +2389,8 @@
       "evidence": "https://fbref.com/en/squads/d609edc0/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-inter-07",
@@ -2348,7 +2419,8 @@
       "evidence": "https://fbref.com/en/squads/d609edc0/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-inter-08",
@@ -2377,7 +2449,8 @@
       "evidence": "https://fbref.com/en/squads/d609edc0/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-inter-09",
@@ -2389,7 +2462,7 @@
       "clubId": "inter",
       "clubName": "FC Internazionale Milano",
       "position": "CM",
-      "role": "backup",
+      "role": "starter",
       "starts": 18,
       "leagueAppearances": 21,
       "leagueStarts": 18,
@@ -2407,7 +2480,8 @@
       "evidence": "https://fbref.com/en/squads/d609edc0/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-inter-10",
@@ -2419,7 +2493,7 @@
       "clubId": "inter",
       "clubName": "FC Internazionale Milano",
       "position": "CM",
-      "role": "backup",
+      "role": "starter",
       "starts": 14,
       "leagueAppearances": 24,
       "leagueStarts": 14,
@@ -2438,7 +2512,8 @@
       "evidence": "https://fbref.com/en/squads/d609edc0/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-inter-11",
@@ -2469,7 +2544,8 @@
       "evidence": "https://fbref.com/en/squads/d609edc0/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-inter-12",
@@ -2500,7 +2576,8 @@
       "evidence": "https://fbref.com/en/squads/d609edc0/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-inter-13",
@@ -2529,7 +2606,8 @@
       "evidence": "https://fbref.com/en/squads/d609edc0/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-inter-14",
@@ -2558,7 +2636,8 @@
       "evidence": "https://fbref.com/en/squads/d609edc0/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-milan-01",
@@ -2588,7 +2667,8 @@
       "evidence": "https://fbref.com/en/squads/dc56fe14/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-milan-02",
@@ -2619,7 +2699,8 @@
       "evidence": "https://fbref.com/en/squads/dc56fe14/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-milan-03",
@@ -2648,7 +2729,8 @@
       "evidence": "https://fbref.com/en/squads/dc56fe14/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-milan-04",
@@ -2677,7 +2759,8 @@
       "evidence": "https://fbref.com/en/squads/dc56fe14/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-milan-05",
@@ -2708,7 +2791,8 @@
       "evidence": "https://fbref.com/en/squads/dc56fe14/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-milan-06",
@@ -2737,7 +2821,8 @@
       "evidence": "https://fbref.com/en/squads/dc56fe14/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-milan-07",
@@ -2766,7 +2851,8 @@
       "evidence": "https://fbref.com/en/squads/dc56fe14/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-milan-08",
@@ -2795,7 +2881,8 @@
       "evidence": "https://fbref.com/en/squads/dc56fe14/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-milan-09",
@@ -2807,7 +2894,7 @@
       "clubId": "milan",
       "clubName": "AC Milan",
       "position": "DM",
-      "role": "backup",
+      "role": "starter",
       "starts": 19,
       "leagueAppearances": 24,
       "leagueStarts": 19,
@@ -2824,7 +2911,8 @@
       "evidence": "https://fbref.com/en/squads/dc56fe14/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-milan-10",
@@ -2836,7 +2924,7 @@
       "clubId": "milan",
       "clubName": "AC Milan",
       "position": "CM",
-      "role": "backup",
+      "role": "starter",
       "starts": 11,
       "leagueAppearances": 12,
       "leagueStarts": 11,
@@ -2856,7 +2944,8 @@
       "evidence": "https://fbref.com/en/squads/dc56fe14/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-milan-11",
@@ -2868,7 +2957,7 @@
       "clubId": "milan",
       "clubName": "AC Milan",
       "position": "CM",
-      "role": "backup",
+      "role": "starter",
       "starts": 17,
       "leagueAppearances": 24,
       "leagueStarts": 17,
@@ -2886,7 +2975,8 @@
       "evidence": "https://fbref.com/en/squads/dc56fe14/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-milan-12",
@@ -2898,7 +2988,7 @@
       "clubId": "milan",
       "clubName": "AC Milan",
       "position": "CAM",
-      "role": "backup",
+      "role": "starter",
       "starts": 14,
       "leagueAppearances": 22,
       "leagueStarts": 14,
@@ -2918,7 +3008,8 @@
       "evidence": "https://fbref.com/en/squads/dc56fe14/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-milan-13",
@@ -2930,7 +3021,7 @@
       "clubId": "milan",
       "clubName": "AC Milan",
       "position": "LW",
-      "role": "backup",
+      "role": "starter",
       "starts": 16,
       "leagueAppearances": 21,
       "leagueStarts": 16,
@@ -2949,7 +3040,8 @@
       "evidence": "https://fbref.com/en/squads/dc56fe14/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-milan-14",
@@ -2978,7 +3070,8 @@
       "evidence": "https://fbref.com/en/squads/dc56fe14/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-milan-15",
@@ -2990,7 +3083,7 @@
       "clubId": "milan",
       "clubName": "AC Milan",
       "position": "ST",
-      "role": "starter",
+      "role": "backup",
       "starts": 21,
       "leagueAppearances": 27,
       "leagueStarts": 21,
@@ -3008,7 +3101,8 @@
       "evidence": "https://fbref.com/en/squads/dc56fe14/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-fiorentina-01",
@@ -3037,7 +3131,8 @@
       "evidence": "https://fbref.com/en/squads/421387cf/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-fiorentina-02",
@@ -3066,7 +3161,8 @@
       "evidence": "https://fbref.com/en/squads/421387cf/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-fiorentina-03",
@@ -3095,7 +3191,8 @@
       "evidence": "https://fbref.com/en/squads/421387cf/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-fiorentina-04",
@@ -3107,7 +3204,7 @@
       "clubId": "fiorentina",
       "clubName": "ACF Fiorentina",
       "position": "CB",
-      "role": "starter",
+      "role": "backup",
       "starts": 22,
       "leagueAppearances": 25,
       "leagueStarts": 22,
@@ -3126,7 +3223,8 @@
       "evidence": "https://fbref.com/en/squads/421387cf/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-fiorentina-05",
@@ -3155,7 +3253,8 @@
       "evidence": "https://fbref.com/en/squads/421387cf/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-fiorentina-06",
@@ -3167,7 +3266,7 @@
       "clubId": "fiorentina",
       "clubName": "ACF Fiorentina",
       "position": "RB",
-      "role": "backup",
+      "role": "starter",
       "starts": 18,
       "leagueAppearances": 24,
       "leagueStarts": 18,
@@ -3186,7 +3285,8 @@
       "evidence": "https://fbref.com/en/squads/421387cf/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-fiorentina-08",
@@ -3215,7 +3315,8 @@
       "evidence": "https://fbref.com/en/squads/421387cf/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-fiorentina-09",
@@ -3244,7 +3345,8 @@
       "evidence": "https://fbref.com/en/squads/421387cf/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-fiorentina-10",
@@ -3274,7 +3376,8 @@
       "evidence": "https://fbref.com/en/squads/421387cf/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-fiorentina-11",
@@ -3286,7 +3389,7 @@
       "clubId": "fiorentina",
       "clubName": "ACF Fiorentina",
       "position": "RW",
-      "role": "backup",
+      "role": "starter",
       "starts": 14,
       "leagueAppearances": 21,
       "leagueStarts": 14,
@@ -3305,7 +3408,8 @@
       "evidence": "https://fbref.com/en/squads/421387cf/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-fiorentina-12",
@@ -3334,7 +3438,8 @@
       "evidence": "https://fbref.com/en/squads/421387cf/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-fiorentina-13",
@@ -3346,7 +3451,7 @@
       "clubId": "fiorentina",
       "clubName": "ACF Fiorentina",
       "position": "ST",
-      "role": "starter",
+      "role": "backup",
       "starts": 24,
       "leagueAppearances": 30,
       "leagueStarts": 24,
@@ -3363,7 +3468,8 @@
       "evidence": "https://fbref.com/en/squads/421387cf/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-brescia-01",
@@ -3392,7 +3498,8 @@
       "evidence": "https://fbref.com/en/squads/4ef57aeb/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-brescia-02",
@@ -3424,7 +3531,8 @@
       "evidence": "https://fbref.com/en/squads/4ef57aeb/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-brescia-03",
@@ -3453,7 +3561,8 @@
       "evidence": "https://fbref.com/en/squads/4ef57aeb/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-brescia-04",
@@ -3482,7 +3591,8 @@
       "evidence": "https://fbref.com/en/squads/4ef57aeb/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-brescia-05",
@@ -3494,7 +3604,7 @@
       "clubId": "brescia",
       "clubName": "Brescia Calcio",
       "position": "CB",
-      "role": "starter",
+      "role": "backup",
       "starts": 24,
       "leagueAppearances": 25,
       "leagueStarts": 24,
@@ -3511,7 +3621,8 @@
       "evidence": "https://fbref.com/en/squads/4ef57aeb/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-brescia-06",
@@ -3523,7 +3634,7 @@
       "clubId": "brescia",
       "clubName": "Brescia Calcio",
       "position": "LB",
-      "role": "backup",
+      "role": "starter",
       "starts": 8,
       "leagueAppearances": 14,
       "leagueStarts": 8,
@@ -3542,7 +3653,8 @@
       "evidence": "https://fbref.com/en/squads/4ef57aeb/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-brescia-07",
@@ -3571,7 +3683,8 @@
       "evidence": "https://fbref.com/en/squads/4ef57aeb/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-brescia-08",
@@ -3600,7 +3713,8 @@
       "evidence": "https://fbref.com/en/squads/4ef57aeb/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-brescia-09",
@@ -3631,7 +3745,8 @@
       "evidence": "https://fbref.com/en/squads/4ef57aeb/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-brescia-10",
@@ -3662,7 +3777,8 @@
       "evidence": "https://fbref.com/en/squads/4ef57aeb/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-brescia-11",
@@ -3692,7 +3808,8 @@
       "evidence": "https://fbref.com/en/squads/4ef57aeb/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-brescia-12",
@@ -3721,7 +3838,8 @@
       "evidence": "https://fbref.com/en/squads/4ef57aeb/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-brescia-13",
@@ -3750,7 +3868,8 @@
       "evidence": "https://fbref.com/en/squads/4ef57aeb/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     },
     {
       "id": "seriea-2000-juventus-tudor-01",
@@ -3779,7 +3898,8 @@
       "evidence": "https://fbref.com/en/squads/e0652b02/2000-2001/",
       "tier": null,
       "rank": null,
-      "review": "draft_unapproved"
+      "review": "draft_unapproved",
+      "roleSemantics": "candidate_slot_only_not_historical_bench_status"
     }
   ],
   "bestXi": [],
@@ -3875,6 +3995,90 @@
       }
     ],
     "formationNotes": "Roma played 3-4-1-2 with a clear Totti trequartista. This creates a CAM-vs-two-CM cap interpretation conflict: both stored for user review, not a final exception.",
-    "draftCoverageNotice": "7 further clubs sampled from historical FootballSquads rosters and FBref domestic starting records. Unknown values null, no tiers or ranking."
+    "draftCoverageNotice": "7 further clubs sampled from historical FootballSquads rosters and FBref domestic starting records. Unknown values null, no tiers or ranking.",
+    "clubSummaries": {
+      "roma": {
+        "starters": 9,
+        "backups": 4,
+        "players": 13,
+        "positionNeedsReview": 13,
+        "birthDatesMissing": 0,
+        "formationVerification": "needs_review",
+        "rosterStatus": "first_pass_candidates_saved_full_lineup_frequency_audit_pending",
+        "allStartsCaptured": true
+      },
+      "juventus": {
+        "starters": 11,
+        "backups": 2,
+        "players": 13,
+        "positionNeedsReview": 13,
+        "birthDatesMissing": 0,
+        "formationVerification": "needs_review",
+        "rosterStatus": "first_pass_candidates_saved_full_lineup_frequency_audit_pending",
+        "allStartsCaptured": true
+      },
+      "lazio": {
+        "starters": 11,
+        "backups": 5,
+        "players": 16,
+        "positionNeedsReview": 16,
+        "birthDatesMissing": 0,
+        "formationVerification": "needs_review",
+        "rosterStatus": "first_pass_candidates_saved_full_lineup_frequency_audit_pending",
+        "allStartsCaptured": true
+      },
+      "parma": {
+        "starters": 10,
+        "backups": 3,
+        "players": 13,
+        "positionNeedsReview": 13,
+        "birthDatesMissing": 1,
+        "formationVerification": "needs_review",
+        "rosterStatus": "first_pass_candidates_saved_full_lineup_frequency_audit_pending",
+        "allStartsCaptured": true
+      },
+      "inter": {
+        "starters": 11,
+        "backups": 3,
+        "players": 14,
+        "positionNeedsReview": 14,
+        "birthDatesMissing": 2,
+        "formationVerification": "needs_review",
+        "rosterStatus": "first_pass_candidates_saved_full_lineup_frequency_audit_pending",
+        "allStartsCaptured": true
+      },
+      "milan": {
+        "starters": 11,
+        "backups": 4,
+        "players": 15,
+        "positionNeedsReview": 15,
+        "birthDatesMissing": 3,
+        "formationVerification": "needs_review",
+        "rosterStatus": "first_pass_candidates_saved_full_lineup_frequency_audit_pending",
+        "allStartsCaptured": true
+      },
+      "fiorentina": {
+        "starters": 10,
+        "backups": 2,
+        "players": 12,
+        "positionNeedsReview": 12,
+        "birthDatesMissing": 0,
+        "formationVerification": "needs_review",
+        "rosterStatus": "first_pass_candidates_saved_full_lineup_frequency_audit_pending",
+        "allStartsCaptured": true
+      },
+      "brescia": {
+        "starters": 11,
+        "backups": 2,
+        "players": 13,
+        "positionNeedsReview": 13,
+        "birthDatesMissing": 1,
+        "formationVerification": "needs_review",
+        "rosterStatus": "first_pass_candidates_saved_full_lineup_frequency_audit_pending",
+        "allStartsCaptured": true
+      }
+    },
+    "positionReviewNote": "All position assignments explicitly needs_review: FBref bulk DF/MF/FW categories don't verify left/right, centreback vs wingback or CAM-vs-double-CM restrictions. Requires match-by-match lineups before approval.",
+    "qualificationNotes": "2022 Intertoto Italian entries Bologna, Perugia and Torino corroborated against UEFA 15 July 2002 draw and RSSSF uic02. 2001 Brescia entry corroborated against RSSSF ital01 and historical 2001 Intertoto. 2000 Perugia/Udinese against RSSSF UIC 2000."
   }
 }
