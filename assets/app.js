@@ -12,7 +12,7 @@ const slots442=[["ST",35,14],["ST",65,14],["LW",12,40],["CM",42,45],["DM",60,52]
 const slots4231=[["ST",50,12],["LW",14,32],["CAM",50,36],["RW",86,32],["DM",38,56],["CM",62,56],["LB",13,76],["CB",37,79],["CB",63,79],["RB",87,76],["GK",50,92]];
 const q=new URLSearchParams(location.search);
 const st={domain:"domestic",league:"laliga",season:"1999-00",tab:"overview",home:!q.has("league"),showCandidates:q.get("view")==="ranking",position:"all",club:"all",from:"S",to:"D",search:"",tier:"all",age:"all",qualifiedOnly:false};
-let data=null,loading=false;
+let data=null,loading=false,loadSequence=0;
 const yearList=Array.from({length:26},(_,i)=>{let a=1999+i,b=(a+1)%100;return a+"-"+String(b).padStart(2,"0")});
 function esc(a){return String(a??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
 function club(id){return (data&&data.clubs||[]).find(c=>c.id===id)||{id,name:id,abbr:id.slice(0,3).toUpperCase()}}
@@ -34,17 +34,35 @@ function syncSelects(){
  $("domain").value=st.domain;
  $("league").innerHTML=option(competitionGroups[st.domain],st.league);
  $("season").innerHTML=option(yearList.map(x=>[x,x.replace("-","–")]),st.season);
+ const index=yearList.indexOf(st.season);
+ for(const [id,offset,prefix] of [["prevSeason",-1,"이전 시즌"],["nextSeason",1,"다음 시즌"]]){
+   const button=$(id),target=yearList[index+offset];
+   button.disabled=!target;
+   button.title=target?prefix+" · "+target.replace("-","–"):prefix+" 없음";
+   button.setAttribute("aria-label",button.title);
+ }
 }
 function label(){return competitionGroups[st.domain].find(x=>x[0]===st.league)?.[1]||"Football"}
 function seasonEndLabel(){return st.season.split("-")[0]+"–"+(2000+Number(st.season.split("-")[1]))}
 function clearFilters(){st.position="all";st.club="all";st.from="S";st.to="D";st.search="";st.tier="all";st.age="all";st.qualifiedOnly=false;st.showCandidates=false}
 function writeUrl(){st.home=false;let p=new URLSearchParams({league:st.league,season:st.season,view:st.tab});history.replaceState(null,"",location.pathname+"?"+p.toString())}
+function changeSeason(nextSeason){
+ if(!yearList.includes(nextSeason)||nextSeason===st.season)return;
+ st.season=nextSeason;
+ st.home=false;
+ clearFilters();
+ const p=new URLSearchParams({league:st.league,season:st.season,view:st.tab});
+ history.pushState(null,"",location.pathname+"?"+p.toString());
+ load();
+}
 async function load(){
+ const request=++loadSequence;
  loading=true;data=null;render();
  const path="./data/"+st.league+"-"+st.season+".json";
  const req=[fetch(path,{cache:"no-cache"}).then(r=>r.ok?r.json():null).catch(()=>null)];
  if(st.league==="laliga")req.push(fetch("./data/laliga-standings-verified-1999-2025.json",{cache:"no-cache"}).then(r=>r.ok?r.json():null).catch(()=>null));
  const [seasonData,archive]=await Promise.all(req);
+ if(request!==loadSequence)return;
  data=seasonData;
  const verified=archive?.seasons?.[st.season];
  if(verified?.standings?.length===20){
@@ -280,6 +298,11 @@ document.addEventListener("error",event=>{
 },true);
 document.addEventListener("click",ev=>{
  let btn=ev.target.closest("button");if(btn){
+ if(btn.id==="prevSeason"||btn.id==="nextSeason"){
+  const offset=btn.id==="prevSeason"?-1:1;
+  changeSeason(yearList[yearList.indexOf(st.season)+offset]);
+  return;
+ }
  if(btn.dataset.openLeague){openArchive(btn.dataset.openLeague,btn.dataset.openSeason);return}
  if(btn.dataset.tab){st.tab=btn.dataset.tab;st.showCandidates=false;writeUrl();render();return}
  if(btn.dataset.go){st.tab=btn.dataset.go;writeUrl();render();return}
@@ -300,7 +323,7 @@ document.addEventListener("click",ev=>{
 document.addEventListener("keydown",e=>{if(e.key==="Escape")closeModal()});
 $("domain").addEventListener("change",e=>{st.domain=e.target.value;st.league=competitionGroups[st.domain][0][0];setCompetition()});
 $("league").addEventListener("change",e=>{st.league=e.target.value;setCompetition()});
-$("season").addEventListener("change",e=>{st.season=e.target.value;setCompetition()});
+$("season").addEventListener("change",e=>changeSeason(e.target.value));
 $("content").addEventListener("change",e=>{
  const f=e.target.dataset.filter;if(!f)return;
  if(f==="position")st.position=e.target.value;
@@ -323,7 +346,7 @@ if(st.domain==="europe"&&["formation","table"].includes(st.tab))st.tab="overview
 if(st.home)render();else load();
 window.addEventListener("popstate",()=>{
  const p=new URLSearchParams(location.search);
- if(!p.has("league")){st.home=true;data=null;loading=false;render();return}
+ if(!p.has("league")){loadSequence++;st.home=true;data=null;loading=false;render();return}
  const id=p.get("league");
  const domestic=competitionGroups.domestic.some(x=>x[0]===id);
  const european=competitionGroups.europe.some(x=>x[0]===id);
