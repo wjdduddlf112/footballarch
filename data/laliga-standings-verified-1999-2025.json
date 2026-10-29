@@ -21,10 +21,12 @@
       "sourcePolicy": "Modern recognizable published logo sources for missing historical clubs. Football-data IDs and individually linked FootyLogos pages where available. For 9 uncertain CDN asset slugs, actual browser loading not yet independently verified; all have fallback."
     },
     "europeanParticipationCoverage": {
-      "verifiedSeasons": 18,
-      "earlierSeasonStatus": "1999-00 and 2000-01 existing UEFA candidates preserved in their season JSON; 2001-02 to 2006-07 need historical Intertoto/UEFA cup cross-check",
-      "policy": "By actual next season UEFA participation, including Copa, Europa holder and licensing exceptions, not automatic top-seven positions",
-      "source": "Per-season historical Spanish league final qualification tables"
+      "verifiedSeasons": 24,
+      "additionalExistingSeasonFiles": 2,
+      "totalHistoricalSeasons": 26,
+      "earlierSeasonStatus": "1999-00 and 2000-01 next-season competition allocations are maintained in dedicated season JSONs. All 2001-02 to 2024-25 archive seasons covered.",
+      "policy": "Based on actual next season UCL/UEFA Cup/Europa League/Conference League/Intertoto entries including cup route, titleholders and licensing exceptions; qualification is not inferred solely from league rank.",
+      "source": "Historical season qualification and entrant tables; individual source links per season"
     }
   },
   "clubs": [
@@ -1282,7 +1284,27 @@
         "source": "https://github.com/footballcsv/cache.footballdata/tree/master/2001-02",
         "finalRankBasis": "legacy standings ordering, pending independent cross-check",
         "originalSourceDiscrepancies": []
-      }
+      },
+      "europeanParticipation": {
+        "valencia": "UCL",
+        "deportivo": "UCL",
+        "madrid": "UCL",
+        "barca": "UCL",
+        "celta": "UEFA Cup",
+        "betis": "UEFA Cup",
+        "alaves": "UEFA Cup",
+        "malaga": "Intertoto Cup",
+        "villarreal": "Intertoto Cup"
+      },
+      "europeanParticipationStatus": "verified_next_season_uefa_entrant_list",
+      "europeanParticipationNotes": {
+        "alaves": "Copa del Rey finalist under competition reallocation",
+        "malaga": "2002 UEFA Intertoto Cup",
+        "villarreal": "2002 UEFA Intertoto Cup"
+      },
+      "europeanParticipationSources": [
+        "https://en.wikipedia.org/wiki/2001%E2%80%9302_La_Liga"
+      ]
     },
     "2002-03": {
       "standings": [
@@ -1573,7 +1595,27 @@
         "source": "https://github.com/footballcsv/cache.footballdata/tree/master/2002-03",
         "finalRankBasis": "legacy standings ordering, pending independent cross-check",
         "originalSourceDiscrepancies": []
-      }
+      },
+      "europeanParticipation": {
+        "madrid": "UCL",
+        "sociedad": "UCL",
+        "deportivo": "UCL",
+        "celta": "UCL",
+        "valencia": "UEFA Cup",
+        "barca": "UEFA Cup",
+        "mallorca": "UEFA Cup",
+        "villarreal": "Intertoto Cup",
+        "racing": "Intertoto Cup"
+      },
+      "europeanParticipationStatus": "verified_next_season_uefa_entrant_list",
+      "europeanParticipationNotes": {
+        "mallorca": "2002-03 Copa del Rey winner",
+        "villarreal": "2003 Intertoto winner",
+        "racing": "2003 Intertoto entrant"
+      },
+      "europeanParticipationSources": [
+        "https://en.wikipedia.org/wiki/2002%E2%80%9303_La_Liga"
+      ]
     },
     "2003-04": {
       "standings": [
@@ -1869,7 +1911,27 @@
           "Racing Santander -1 point deducted for using an additional non-EU player for three minutes vs Osasuna on 14 December 2003."
         ],
         "officialStandings": "https://www.rsssf.org/tabless/span04.html"
-      }
+      },
+      "europeanParticipation": {
+        "valencia": "UCL",
+        "barca": "UCL",
+        "deportivo": "UCL",
+        "madrid": "UCL",
+        "athletic": "UEFA Cup",
+        "sevilla": "UEFA Cup",
+        "zaragoza": "UEFA Cup",
+        "atleti": "Intertoto Cup",
+        "villarreal": "Intertoto Cup"
+      },
+      "europeanParticipationStatus": "verified_next_season_uefa_entrant_list",
+      "europeanParticipationNotes": {
+        "zaragoza": "2003-04 Copa del Rey winner",
+        "atleti": "2004 Intertoto entrant",
+        "villarreal": "2004 Intertoto winner"
+      },
+      "europeanParticipationSources": [
+        "https://en.wikipedia.org/wiki/2003%E2%80%9304_La_Liga"
+      ]
     },
     "2004-05": {
       "standings": [
@@ -2160,7 +2222,29 @@
         "source": "https://github.com/footballcsv/cache.footballdata/tree/master/2004-05",
         "finalRankBasis": "legacy standings ordering, pending independent cross-check",
         "originalSourceDiscrepancies": []
-      }
+      },
+      "europeanParticipation": {
+        "barca": "UCL",
+        "madrid": "UCL",
+        "villarreal": "UCL",
+        "betis": "UCL",
+        "espanyol": "UEFA Cup",
+        "sevilla": "UEFA Cup",
+        "osasuna": "UEFA Cup",
+        "valencia": "Intertoto Cup",
+        "deportivo": "Intertoto Cup",
+        "athletic": "Intertoto Cup"
+      },
+      "europeanParticipationStatus": "verified_next_season_uefa_entrant_list",
+      "europeanParticipationNotes": {
+        "osasuna": "2004-05 Copa del Rey losing finalist",
+        "valencia": "2005 Intertoto entrant",
+        "deportivo": "2005 Intertoto entrant",
+        "athletic": "2005 Intertoto entrant"
+      },
+      "europeanParticipationSources": [
+        "https://en.wikipedia.org/wiki/2004%E2%80%9305_La_Liga"
+      ]
     },
     "2005-06": {
       "standings": [
@@ -2451,7 +2535,25 @@
         "source": "https://github.com/footballcsv/cache.footballdata/tree/master/2005-06",
         "finalRankBasis": "legacy standings ordering, pending independent cross-check",
         "originalSourceDiscrepancies": []
-      }
+      },
+      "europeanParticipation": {
+        "barca": "UCL",
+        "madrid": "UCL",
+        "valencia": "UCL",
+        "osasuna": "UCL",
+        "sevilla": "UEFA Cup",
+        "celta": "UEFA Cup",
+        "espanyol": "UEFA Cup",
+        "villarreal": "Intertoto Cup"
+      },
+      "europeanParticipationStatus": "verified_next_season_uefa_entrant_list",
+      "europeanParticipationNotes": {
+        "espanyol": "2005-06 Copa del Rey winner",
+        "villarreal": "2006 Intertoto entrant"
+      },
+      "europeanParticipationSources": [
+        "https://en.wikipedia.org/wiki/2005%E2%80%9306_La_Liga"
+      ]
     },
     "2006-07": {
       "standings": [
@@ -2742,7 +2844,25 @@
         "source": "https://github.com/footballcsv/cache.footballdata/tree/master/2006-07",
         "finalRankBasis": "legacy standings ordering, pending independent cross-check",
         "originalSourceDiscrepancies": []
-      }
+      },
+      "europeanParticipation": {
+        "madrid": "UCL",
+        "barca": "UCL",
+        "sevilla": "UCL",
+        "valencia": "UCL",
+        "villarreal": "UEFA Cup",
+        "zaragoza": "UEFA Cup",
+        "getafe": "UEFA Cup",
+        "atleti": "Intertoto Cup"
+      },
+      "europeanParticipationStatus": "verified_next_season_uefa_entrant_list",
+      "europeanParticipationNotes": {
+        "getafe": "2006-07 Copa del Rey runner-up (Sevilla UCL)",
+        "atleti": "2007 Intertoto winner"
+      },
+      "europeanParticipationSources": [
+        "https://en.wikipedia.org/wiki/2006%E2%80%9307_La_Liga"
+      ]
     },
     "2007-08": {
       "standings": [
