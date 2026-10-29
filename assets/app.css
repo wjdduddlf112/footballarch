@@ -145,3 +145,16 @@ body.is-home #content{min-width:0}
  .switchers .season-nav select{width:100%;min-width:0}
  .season-nav .season-arrow{width:44px;height:40px}
 }
+
+/* Season travel controls beside the page title and always reachable on scroll. */
+.pagehead-season-nav{display:flex;align-items:center;gap:12px;min-width:0}
+.pagehead-season-nav h1{flex:none;margin:4px 0;white-space:nowrap}
+.title-season-arrow{display:grid;place-items:center;flex:none;width:44px;height:44px;border:1px solid #3d5663;background:#182936;color:#ebdfc4;border-radius:11px;font-size:24px;line-height:1;transition:background .15s,border-color .15s}
+.title-season-arrow:hover:not(:disabled){background:#2c4554;border-color:#d7c393}
+.title-season-arrow:disabled,.floating-season-nav button:disabled{opacity:.27;cursor:not-allowed}
+.floating-season-nav{position:fixed;right:20px;bottom:23px;z-index:45;display:flex;align-items:center;gap:6px;border:1px solid #607281;border-radius:12px;padding:5px;background:#101c28f2;box-shadow:0 8px 28px #0008;backdrop-filter:blur(14px)}
+.floating-season-nav button{width:37px;height:37px;border:0;border-radius:8px;background:#253847;color:#f0e2be;font-size:21px;font-weight:700}
+.floating-season-nav button:hover:not(:disabled){background:#435a69}
+.floating-season-nav span{min-width:72px;font-size:12px;font-weight:800;text-align:center;white-space:nowrap;letter-spacing:.03em}
+body.is-home .floating-season-nav{display:none}
+@media(max-width:650px){.pagehead-season-nav{gap:6px}.title-season-arrow{width:35px;height:39px;font-size:21px;border-radius:8px}.pagehead-season-nav h1{font-size:clamp(21px,6vw,32px);white-space:normal}.floating-season-nav{right:12px;bottom:12px;padding:4px}.floating-season-nav button{width:36px;height:36px}.floating-season-nav span{min-width:65px;font-size:11px}}
