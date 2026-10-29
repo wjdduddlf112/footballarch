@@ -98,3 +98,16 @@ Player nomination/position/tiers/ranks are a different, user-reviewed workflow. 
 - New standalone `data/ligue1-1999-00.json`: **18 clubs / 34 matches each / 8 French-first-division 2000-01 European participants / three relegated**, backed by RSSSF and L'Équipe plus UEFA and French historical cup sources. League branded *Division 1* at the time.
 - Excluded FC Gueugnon's 2000-01 UEFA Cup participation from the 1999-00 first-division pool because Gueugnon was in Division 2. No player ratings were added.
 - Live browser review, 18 period-correct crest links and 26 additional season tables remain outstanding. Full log `audit/LIGUE1_AUDIT_STATUS_2026-10-29.md`.
+
+
+## Ligue 1 27-season ingestion checkpoint — 2026-10-29 (current; supersedes first-season note)
+
+- Standalone files `data/ligue1-1999-00.json` ... `data/ligue1-2025-26.json` now all exist: **27 seasons**, **528 structurally verified club-season final rows**, **185 season-mapped next-season UEFA/Intertoto entrant links**.
+- Historical league-size rules preserved: 18 teams in 1999-00–2001-02; 20 teams 2002-03–2022-23; 18 teams again 2023-24–2025-26. Special COVID 2019-20: 279 fixtures, PPG ranking and head-to-head. Includes Nantes/Bastia 2013-14 awarded result, Ajaccio 2012-13 -2, Nice/Lyon 2021-22 -1, Montpellier 2023-24 -1, administrative relegation and promotion play-offs.
+- All 27 season JSON files independently re-read from GitHub after insertion; ranks, numeric formulas, points adjustments, competition/qualifier parity, distinct IDs, and season totals checked: **PASS 27/27, zero structural issues**. Repeatable local script `node scripts/verify-ligue1.mjs` committed but **not executed as Node CLI**; the parallel connector-side verification was executed instead. Source-by-source external row audit remains a separate gate.
+- **473/528** club-season crest records now have *provisional modern* football-data.org logo URLs; **55** use initials. Neither image-response success nor seasonal period-correct badges were browser checked; both remain open.
+- Crucial distinction: *JSON existence/parity ≠ independently verified 185 actual UEFA/Intertoto entrances ≠ user-approved player teams*. Multiple historic seasons keep `europeanQualificationVerified:false`; further official competition-entry verification is needed.
+- Existing home design, `index.html`, `assets/app.js`, CSS, champion **C**, Serie A **박탈**, existing players and tiers untouched.
+- **GitHub Pages live browser**: not checked; remote static web reader could not access Pages. Do not mark actual image/network or visual review as completed.
+- Full details and sources: `audit/LIGUE1_AUDIT_STATUS_2026-10-29.md`; reconstructed input audit archives `audit/ligue1-match-derived-2005-2016.json`, `audit/ligue1-match-derived-2017-2025.json`.
+- **Next work**: historical UEFA/Intertoto actual participant per-season certification, authoritative historical club crest assets and HTTP browser checks, deployed standings/overview C/Relegation/season navigation screen audit; obtain user approval before player nomination.
