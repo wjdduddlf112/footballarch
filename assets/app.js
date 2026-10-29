@@ -62,27 +62,27 @@ async function load(){
  loading=true;data=null;render();
  const path="./data/"+st.league+"-"+st.season+".json";
  const req=[fetch(path,{cache:"no-cache"}).then(r=>r.ok?r.json():null).catch(()=>null)];
- if(st.league==="laliga")req.push(fetch("./data/laliga-standings-verified-1999-2026.json",{cache:"no-cache"}).then(r=>r.ok?r.json():null).catch(()=>null));
+ if(st.league==="laliga"||st.league==="seriea"){const archivePath=st.league==="laliga"?"./data/laliga-standings-verified-1999-2026.json":"./data/seriea-standings-verified-1999-2026.json";req.push(fetch(archivePath,{cache:"no-cache"}).then(r=>r.ok?r.json():null).catch(()=>null));}
  const [seasonData,archive]=await Promise.all(req);
  if(request!==loadSequence)return;
  data=seasonData;
  const verified=archive?.seasons?.[st.season];
- if(verified?.standings?.length===20){
-   if(!data)data={meta:{leagueId:"laliga",league:"La Liga",season:st.season,status:"standings_only",label:"순위 검증 완료 · 선수 평가 미진행",standingsOnly:true},clubs:[],qualifiers:[],standings:[],players:[],bestXi:[]};
+ if(verified?.standings?.length>=18){
+   if(!data)data={meta:{leagueId:st.league,league:label(),season:st.season,status:"standings_only",standingsOnly:true},clubs:[],qualifiers:[],standings:[],players:[],bestXi:[]};
    const earlier=new Map((data.standings||[]).map(r=>[r.club,r]));
-   const verifiedEuropean=verified.europeanParticipationStatus==="verified_next_season_uefa_entrant_list";
+   const verifiedEuropean=(verified.europeanParticipationStatus||"").startsWith("verified");const curatedEuropean=verifiedEuropean||st.league==="seriea";
    const european=verified.europeanParticipation||{};
-   data.standings=verified.standings.map(r=>({...r,competition:verifiedEuropean?(european[r.club]||null):(earlier.get(r.club)?.competition||null)}));
-   if(verifiedEuropean){
+   data.standings=verified.standings.map(r=>({...r,competition:curatedEuropean?(european[r.club]||null):(earlier.get(r.club)?.competition||null)}));
+   if(curatedEuropean){
     data.qualifiers=Object.entries(european).map(([club,competition])=>({club,competition,route:verified.europeanParticipationNotes?.[club]||"Verified 2000s UEFA competition entry"}));
-    data.meta.europeanQualificationVerified=true;
+    data.meta.europeanQualificationVerified=verifiedEuropean;
     data.meta.europeanQualificationSource=verified.europeanParticipationSources?.[0];
    }
    const byClub=new Map((archive.clubs||[]).map(c=>[c.id,c]));
    for(const c of data.clubs||[])byClub.set(c.id,{...(byClub.get(c.id)||{}),...c});
    data.clubs=Array.from(byClub.values());
    data.meta.standingsVerified=true;
-   data.meta.standingsSource=verified.validation?.independentFinalTable||verified.validation?.source||archive.meta.finalTablesSource;
+   data.meta.standingsSource=verified.validation?.independentFinalTable||verified.validation?.source||archive.meta.finalTablesSource||archive.meta.source;
    data.meta.relegation={status:"verified",clubs:data.standings.filter(r=>r.outcome==="relegated"||r.outcome==="relegated_administrative").map(r=>r.club),appliesTo:(Number(st.season.slice(0,4))+1)+"-"+String((Number(st.season.slice(0,4))+2)%100).padStart(2,"0")};
  }
  loading=false;render()
