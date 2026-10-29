@@ -195,7 +195,9 @@ function standings(){
  content+=visible.map(r=>{
   const down=r.outcome==="relegated"||r.outcome==="relegated_administrative";
   const adminStay=r.outcome==="retained_administrative";
-  const stat=down?'<span class="relegation-chip">↓ '+(r.outcome==="relegated_administrative"?"행정 강등":"강등")+'</span>':adminStay?'<span class="retention-chip">잔류 · 행정</span>':(data.meta.standingsOnly&&!data.meta.europeanQualificationVerified?'<span class="muted">미검증</span>':comp(r.competition));
+  const euroChecked=data.meta.europeanQualificationVerified||(data.qualifiers||[]).length>0;
+  const euroStatus=r.competition?comp(r.competition):(euroChecked?'<span class="muted">미진출</span>':'<span class="muted">미검증</span>');
+  const stat=down?'<span class="relegation-chip">↓ '+(r.outcome==="relegated_administrative"?"행정 강등":"강등")+'</span>':adminStay?'<span class="retention-chip">잔류 · 행정</span>':euroStatus;
   return '<tr class="'+(down?"table-relegated":"")+'"><td><b>'+esc(r.rank)+'</b></td><td><div style="display:flex;align-items:center;gap:8px">'+crest(r.club)+esc(club(r.club).name)+'</div></td><td>'+esc(r.played)+'</td><td>'+esc(r.wins)+'</td><td>'+esc(r.draws)+'</td><td>'+esc(r.losses)+'</td><td>'+esc(r.goalsFor)+'</td><td>'+esc(r.goalsAgainst)+'</td><td>'+esc(r.gd)+'</td><td><b>'+esc(r.points)+'</b></td><td>'+stat+'</td></tr>';
  }).join("");
  return content+'</tbody></table></div></section>';
