@@ -92,3 +92,9 @@ Player nomination/position/tiers/ranks are a different, user-reviewed workflow. 
 - UI/live-screen gate remains open; champion C and stripped-title rendering code unchanged. Bundesliga completion **partial, not full**.
 - Continue to **Ligue 1** as user-directed league priority, without silently promoting Bundesliga/old player ratings to approved.
 - Detailed source/commit ledger: `audit/BUNDESLIGA_AUDIT_STATUS_2026-10-29.md`.
+
+## Ligue 1 first season work started — 2026-10-29
+
+- New standalone `data/ligue1-1999-00.json`: **18 clubs / 34 matches each / 8 French-first-division 2000-01 European participants / three relegated**, backed by RSSSF and L'Équipe plus UEFA and French historical cup sources. League branded *Division 1* at the time.
+- Excluded FC Gueugnon's 2000-01 UEFA Cup participation from the 1999-00 first-division pool because Gueugnon was in Division 2. No player ratings were added.
+- Live browser review, 18 period-correct crest links and 26 additional season tables remain outstanding. Full log `audit/LIGUE1_AUDIT_STATUS_2026-10-29.md`.
