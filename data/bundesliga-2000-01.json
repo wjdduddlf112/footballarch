@@ -17,10 +17,12 @@
     "playerCandidateSources": [
       "https://de.wikipedia.org/wiki/Kader_der_deutschen_Fu%C3%9Fball-Bundesliga_2000/01",
       "https://schalke04.de/verein/tradition/alle-spiele-alle-tore/bundesliga/bundesliga-saison-20002001/",
-      "https://datencenter.dfb.de/en/data-center/people/viktor-skripnik/player"
+      "https://datencenter.dfb.de/en/data-center/people/viktor-skripnik/player",
+      "https://fbref.com/en/players/d5ec9762/Paulo-Sergio",
+      "https://datencenter.dfb.de/en/data-center/people/paulo-sergio/player"
     ],
     "notes": "Historical appearance-only shortlist. Club match starts, birth dates, seasonal left/right roles need independent confirmation. Player rating and Best XI not selected. Corrections after individual 2000-02 source audit: removed invalid season roster data and low-appearance ineligibles. Nomination role 'backup' indicates the archive's alternate player slot, not proof the player was a real-world bench player in two-forward formations.",
-    "candidateCount": 131,
+    "candidateCount": 132,
     "candidateCoverage": {
       "qualifiedClubs": 9,
       "clubsWithCandidates": 9,
@@ -1091,22 +1093,26 @@
       "born": null,
       "role": "backup",
       "leagueAppearances": 25,
-      "leagueStarts": null,
-      "minutes": null,
+      "leagueStarts": 16,
+      "minutes": 1478,
       "positionVerification": "needs_review",
-      "roleVerification": "starter_equivalent_reserved_ST_slot_candidate; historical_actual_starter_may_be_true",
+      "roleVerification": "25 league games, 16 starts/1478 minutes; third ST nomination slot rather than historical bench. Jancker shared forward starts in season",
       "tier": null,
       "rank": null,
       "review": "draft_unapproved",
       "sources": [
-        "https://de.wikipedia.org/wiki/Kader_der_deutschen_Fu%C3%9Fball-Bundesliga_2000/01"
+        "https://de.wikipedia.org/wiki/Kader_der_deutschen_Fu%C3%9Fball-Bundesliga_2000/01",
+        "https://fbref.com/en/players/20570c32/Carsten-Jancker"
       ],
       "verificationNeeded": [
         "birth_date_missing",
         "match_level_primary_position_missing",
-        "league_start_count_not_cross_checked",
-        "two_striker_system_role_not_a_literal_match_substitute"
-      ]
+        "two_striker_system_role_not_a_literal_match_substitute",
+        "3_ST_2plus1_rotation_exception"
+      ],
+      "starts": 16,
+      "leagueMinutes": 1478,
+      "appearanceSource": "https://fbref.com/en/players/20570c32/Carsten-Jancker"
     },
     {
       "id": "bundesliga-2000-schalke-oliver-reck",
@@ -1485,7 +1491,7 @@
       "nameKo": "에밀 음펜자",
       "club": "schalke",
       "clubNameOriginal": "FC Schalke 04",
-      "born": null,
+      "born": "1978-07-04",
       "role": "starter",
       "leagueAppearances": 27,
       "leagueStarts": null,
@@ -1497,15 +1503,16 @@
       "review": "draft_unapproved",
       "sources": [
         "https://de.wikipedia.org/wiki/Kader_der_deutschen_Fu%C3%9Fball-Bundesliga_2000/01",
-        "https://schalke04.de/verein/tradition/alle-spiele-alle-tore/bundesliga/bundesliga-saison-20002001/"
+        "https://schalke04.de/verein/tradition/alle-spiele-alle-tore/bundesliga/bundesliga-saison-20002001/",
+        "https://datencenter.dfb.de/en/data-center/people/emile-mpenza/player"
       ],
       "verificationNeeded": [
-        "birth_date_missing",
         "match_level_primary_position_missing",
         "league_start_count_not_cross_checked",
         "two_striker_system_role_not_a_literal_match_substitute",
         "two_striker_same_xi_exception"
-      ]
+      ],
+      "birthDateSource": "https://datencenter.dfb.de/en/data-center/people/emile-mpenza/player"
     },
     {
       "id": "bundesliga-2000-dortmund-jens-lehmann",
@@ -4140,6 +4147,38 @@
         "match_level_primary_position_missing",
         "league_start_count_not_cross_checked"
       ]
+    },
+    {
+      "id": "bundesliga-2000-bayern-paulo-sergio",
+      "position": "ST",
+      "name": "Paulo Sérgio",
+      "nameKo": "파울루 세르지우",
+      "club": "bayern",
+      "clubNameOriginal": "FC Bayern München",
+      "born": "1969-06-02",
+      "birthDateSource": "https://datencenter.dfb.de/en/data-center/people/paulo-sergio/player",
+      "role": "starter",
+      "roleVerification": "26 league games, 16 Bundesliga starts /1470 minutes and 9 goals; two actual forward starting slots + Jancker rotation third slot.",
+      "starterEquivalent": true,
+      "leagueAppearances": 26,
+      "leagueStarts": 16,
+      "starts": 16,
+      "minutes": 1470,
+      "leagueMinutes": 1470,
+      "statsScope": "Bundesliga league only",
+      "appearanceSource": "https://fbref.com/en/players/d5ec9762/Paulo-Sergio",
+      "positionVerification": "needs_review",
+      "tier": null,
+      "rank": null,
+      "review": "draft_unapproved",
+      "sources": [
+        "https://fbref.com/en/players/d5ec9762/Paulo-Sergio",
+        "https://datencenter.dfb.de/en/data-center/people/paulo-sergio/player"
+      ],
+      "verificationNeeded": [
+        "FW_MF_vs_center_striker_position_share_unverified",
+        "3_ST_2plus1_rotation_exception"
+      ]
     }
   ],
   "bestXi": [],
@@ -4246,6 +4285,7 @@
         "leagueAppearances": 20,
         "issue": "20 games, midfield space cap; review DM/CM role"
       }
-    ]
+    ],
+    "additionalNote": "Bayern Paulo Sérgio was previously omitted despite 26 Bundesliga matches, 16 starts and 9 goals; now included, with 2+1 starting/rotational ST exception. Jancker also 16 actual starts. Mpenza DOB from DFB."
   }
 }
