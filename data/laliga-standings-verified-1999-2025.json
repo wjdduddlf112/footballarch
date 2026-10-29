@@ -14,7 +14,7 @@
     "clubSeasonRows": 520,
     "matchValidationThrough": "2023-24",
     "latestYearSource": "2024-25 RSSSF final table",
-    "validationNotes": "25 seasons (1999-00 through 2023-24) recalculated from independent 380-result match archives; 2010-11 RSSSF ranks Levante/Real Sociedad in reverse of Spanish official h2h finish; workbook's 14th Levante/15th Sociedad retained after head-to-head validation. 2014-15 Elche administratively demoted despite 13th, Eibar retained despite 18th."
+    "validationNotes": "25 seasons (1999-00 through 2023-24) recalculated from independent 380-result match archives; 2010-11 RSSSF ranks Levante/Real Sociedad in reverse of Spanish official h2h finish; workbook's 14th Levante/15th Sociedad retained after head-to-head validation. 2014-15 Elche administratively demoted despite 13th, Eibar retained despite 18th. Racing Santander 2003-04: official -1 point penalty (earned 43, standings 42)."
   },
   "clubs": [
     {
@@ -1730,9 +1730,10 @@
           "goalsFor": 48,
           "goalsAgainst": 63,
           "gd": -15,
-          "points": 43,
+          "points": 42,
           "competition": null,
-          "outcome": "retained"
+          "outcome": "retained",
+          "pointsDeduction": -1
         },
         {
           "rank": 18,
@@ -1778,11 +1779,15 @@
         }
       ],
       "validation": {
-        "status": "match_recalculated",
+        "status": "verified_match_results_plus_official_disciplinary_deduction",
         "matches": 380,
         "source": "https://github.com/footballcsv/cache.footballdata/tree/master/2003-04",
-        "finalRankBasis": "legacy standings ordering, pending independent cross-check",
-        "originalSourceDiscrepancies": []
+        "finalRankBasis": "Official RSSSF 2003/04 table and race standings after one-point deduction; 16th Espanyol 43, 17th Racing 42.",
+        "originalSourceDiscrepancies": [],
+        "notes": [
+          "Racing Santander -1 point deducted for using an additional non-EU player for three minutes vs Osasuna on 14 December 2003."
+        ],
+        "officialStandings": "https://www.rsssf.org/tabless/span04.html"
       }
     },
     "2004-05": {
