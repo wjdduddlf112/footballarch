@@ -7,7 +7,7 @@
     "status": "standings_only",
     "label": "League Table",
     "standingsOnly": true,
-    "standingsVerified": "match_reconstructed_pending_official_rank_crosscheck",
+    "standingsVerified": true,
     "europeanQualificationVerified": false,
     "assessmentStart": "2009-10",
     "assessmentEnd": "2011-12",
@@ -16,7 +16,13 @@
     "sourceGameCount": 380,
     "pointsDeductions": [],
     "notes": "Match-derived table: official rank, tie-breaking and actual next-season UEFA entrants require source verification. Provisional until verified.",
-    "lastReview": "2026-10-29"
+    "lastReview": "2026-10-29",
+    "standingsSource": "https://www.rsssf.org/tablese/eng2012.html",
+    "standingsCrossChecked": "20/20 independent RSSSF final table (rank, P, W, D, L, GF, GA, pts)",
+    "europeanQualificationReview": "curated historical entrant list; individual UEFA competition record verification pending",
+    "europeanQualificationSources": [
+      "https://www.rsssf.org/tablese/eng2012.html"
+    ]
   },
   "clubs": [
     {
@@ -82,8 +88,7 @@
       "id": "bolton",
       "name": "Bolton Wanderers",
       "abbr": "BOL",
-      "crestUrl": "https://crests.football-data.org/68.png",
-      "crestHistoricalStatus": "modern_reference_historical_version_unverified",
+      "crestHistoricalStatus": "crest_source_unverified",
       "crestSource": "https://www.football-data.org/"
     },
     {
@@ -189,7 +194,71 @@
       "crestSource": "https://www.football-data.org/"
     }
   ],
-  "qualifiers": [],
+  "qualifiers": [
+    {
+      "club": "mancity",
+      "competition": "UCL",
+      "route": "Chelsea entered 2012-13 UCL as defending champion despite 6th place; Tottenham fourth were shifted to Europa League.",
+      "status": "review",
+      "sources": [
+        "https://www.rsssf.org/tablese/eng2012.html"
+      ]
+    },
+    {
+      "club": "manutd",
+      "competition": "UCL",
+      "route": "Chelsea entered 2012-13 UCL as defending champion despite 6th place; Tottenham fourth were shifted to Europa League.",
+      "status": "review",
+      "sources": [
+        "https://www.rsssf.org/tablese/eng2012.html"
+      ]
+    },
+    {
+      "club": "arsenal",
+      "competition": "UCL",
+      "route": "Chelsea entered 2012-13 UCL as defending champion despite 6th place; Tottenham fourth were shifted to Europa League.",
+      "status": "review",
+      "sources": [
+        "https://www.rsssf.org/tablese/eng2012.html"
+      ]
+    },
+    {
+      "club": "chelsea",
+      "competition": "UCL",
+      "route": "Chelsea entered 2012-13 UCL as defending champion despite 6th place; Tottenham fourth were shifted to Europa League.",
+      "status": "review",
+      "sources": [
+        "https://www.rsssf.org/tablese/eng2012.html"
+      ]
+    },
+    {
+      "club": "tottenham",
+      "competition": "UEL",
+      "route": "Chelsea entered 2012-13 UCL as defending champion despite 6th place; Tottenham fourth were shifted to Europa League.",
+      "status": "review",
+      "sources": [
+        "https://www.rsssf.org/tablese/eng2012.html"
+      ]
+    },
+    {
+      "club": "newcastle",
+      "competition": "UEL",
+      "route": "Chelsea entered 2012-13 UCL as defending champion despite 6th place; Tottenham fourth were shifted to Europa League.",
+      "status": "review",
+      "sources": [
+        "https://www.rsssf.org/tablese/eng2012.html"
+      ]
+    },
+    {
+      "club": "liverpool",
+      "competition": "UEL",
+      "route": "Chelsea entered 2012-13 UCL as defending champion despite 6th place; Tottenham fourth were shifted to Europa League.",
+      "status": "review",
+      "sources": [
+        "https://www.rsssf.org/tablese/eng2012.html"
+      ]
+    }
+  ],
   "standings": [
     {
       "rank": 1,
@@ -202,7 +271,7 @@
       "goalsAgainst": 29,
       "gd": 64,
       "points": 89,
-      "competition": null,
+      "competition": "UCL",
       "outcome": "retained"
     },
     {
@@ -216,7 +285,7 @@
       "goalsAgainst": 33,
       "gd": 56,
       "points": 89,
-      "competition": null,
+      "competition": "UCL",
       "outcome": "retained"
     },
     {
@@ -230,7 +299,7 @@
       "goalsAgainst": 49,
       "gd": 25,
       "points": 70,
-      "competition": null,
+      "competition": "UCL",
       "outcome": "retained"
     },
     {
@@ -244,7 +313,7 @@
       "goalsAgainst": 41,
       "gd": 25,
       "points": 69,
-      "competition": null,
+      "competition": "UEL",
       "outcome": "retained"
     },
     {
@@ -258,7 +327,7 @@
       "goalsAgainst": 51,
       "gd": 5,
       "points": 65,
-      "competition": null,
+      "competition": "UEL",
       "outcome": "retained"
     },
     {
@@ -272,7 +341,7 @@
       "goalsAgainst": 46,
       "gd": 19,
       "points": 64,
-      "competition": null,
+      "competition": "UCL",
       "outcome": "retained"
     },
     {
@@ -300,7 +369,7 @@
       "goalsAgainst": 40,
       "gd": 7,
       "points": 52,
-      "competition": null,
+      "competition": "UEL",
       "outcome": "retained"
     },
     {
