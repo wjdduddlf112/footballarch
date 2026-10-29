@@ -7,7 +7,8 @@ const competitionGroups={
 };
 const ranks=["S","A+","A","A-","B+","B","B-","C+","C","C-","D"];
 const positions=["GK","CB","LB","RB","DM","CM","CAM","LW","RW","ST"];
-const slots=[["LW",15,13],["ST",50,11],["RW",85,13],["CM",30,37],["CAM",70,37],["DM",50,54],["LB",13,73],["CB",37,76],["CB",63,76],["RB",87,73],["GK",50,91]];
+const slots433=[["LW",15,13],["ST",50,11],["RW",85,13],["CM",30,37],["CAM",70,37],["DM",50,54],["LB",13,73],["CB",37,76],["CB",63,76],["RB",87,73],["GK",50,91]];
+const slots442=[["ST",35,14],["ST",65,14],["LW",12,40],["CM",42,45],["DM",60,52],["RW",88,40],["LB",13,74],["CB",37,76],["CB",63,76],["RB",87,74],["GK",50,91]];
 const q=new URLSearchParams(location.search);
 const st={domain:"domestic",league:"laliga",season:"1999-00",tab:"overview",home:!q.has("league"),showCandidates:q.get("view")==="ranking",position:"all",club:"all",from:"S",to:"D",search:"",tier:"all",age:"all",qualifiedOnly:false};
 let data=null,loading=false;
@@ -64,6 +65,7 @@ function overview(){
  if(n){const counts=positions.map(p=>[p,(data.players||[]).filter(x=>x.position===p).length]).filter(x=>x[1]);
  result+='<div class="panel" style="margin-top:15px"><div class="section-heading"><div><h2>Candidate Progress</h2><span class="small muted">등록된 포지션 후보 — 검수 전 자료 포함</span></div><button class="pill" data-action="candidates">'+(st.showCandidates?'후보 목록 닫기':'전체 후보 보기')+'</button></div><div class="pills">'+counts.map(x=>'<button class="pill" data-pos-go="'+x[0]+'">'+x[0]+' &nbsp; '+x[1]+'</button>').join("")+'</div></div>'}
  if(st.showCandidates&&n)result+=candidatePool();
+ if((data.bestXi||[]).length===11&&data.meta.bestXiReview?.status==="proposed_unapproved")result+='<div class="panel" style="margin-top:15px"><div class="section-heading"><div><h2>1999–00 Best XI · 1차 선정안</h2><span class="small muted">4-4-2 · 선수와 포지션의 추가 검수가 필요한 비확정 명단</span></div><button class="pill" data-go="formation">베스트 XI 보기</button></div><div class="notice">11명 전원 현재 후보군에서 선정했습니다. 별도의 포지션 순위는 아직 부여하지 않았습니다.</div></div>';
  if(data.meta.status==="demo")result+='<div class="banner" style="margin-top:14px"><b>시연 데이터</b> · 2022–23시즌 선수 티어와 순위는 기존 인터랙티브 샘플의 자료입니다. 사용자가 확인한 역사적 최종 평가가 아닙니다.</div>';
  if(data.meta.status==="in_review")result+='<div class="banner" style="margin-top:14px"><b>선수 평가 대기</b> · 등록된 골키퍼 후보의 주전/후보 구분과 선발 기록은 추가 검수 대상입니다. S~D 티어는 아직 정하지 않았습니다.</div>';
  return result
@@ -99,7 +101,9 @@ function topPage(){
 }
 function formation(){
  let selection=(data.bestXi||[]).slice(0,11),used={};
- let marks=slots.map(x=>{let matches=selection.filter(b=>b.position===x[0]);let index=used[x[0]]||0;used[x[0]]=index+1;let pick=matches[index];let p=data.players.find(y=>y.id===pick?.playerId);return '<button class="slot '+(st.position===x[0]?"active":"")+'" data-position="'+x[0]+'" style="left:'+x[1]+'%;top:'+x[2]+'%"><span class="spot">'+x[0]+'</span><span class="slot-label">'+(p?esc(p.name):"선정 대기")+'</span></button>'}).join("");
+ let formationName=data?.meta?.formation==="4-4-2"?"4-4-2":"4-3-3";
+ let layout=formationName==="4-4-2"?slots442:slots433;
+ let marks=layout.map(x=>{let matches=selection.filter(b=>b.position===x[0]);let index=used[x[0]]||0;used[x[0]]=index+1;let pick=matches[index];let p=data.players.find(y=>y.id===pick?.playerId);return '<button class="slot '+(st.position===x[0]?"active":"")+'" data-position="'+x[0]+'" style="left:'+x[1]+'%;top:'+x[2]+'%"><span class="spot">'+x[0]+'</span><span class="slot-label">'+(p?esc(p.name):"선정 대기")+'</span></button>'}).join("");
  let pos=st.position==="all"?"GK":st.position;
  let candidates=rankPlayers().filter(p=>p.position===pos);
  let side='<div class="panel"><div class="section-heading"><h2>포지션별 순위</h2><span class="status">'+pos+'</span></div><div class="position-nav">'+positions.map(p=>'<button data-position="'+p+'" class="'+(pos===p?"active":"")+'">'+p+'</button>').join("")+'</div>';
@@ -108,7 +112,9 @@ function formation(){
  if(candidates.length){side+=candidates.map(p=>'<button class="rank-row" data-player="'+esc(p.id)+'"><span class="rank-num">'+esc(p.rank??"—")+'</span>'+crest(p.club)+'<span class="rank-label"><b>'+esc(p.name)+'</b><small>'+esc(club(p.club).name)+'</small></span>'+grade(p.tier)+'</button>').join("")}
  else side+='<div class="empty"><strong>아직 후보가 없습니다.</strong></div>';
  side+='</div>';
- return '<div class="panels"><section class="panel"><div class="section-heading"><h2>Season Best XI</h2><span class="small muted">BEST XI · 11 PLAYERS</span></div><div class="pitch"><div class="mid"></div><div class="circle"></div>'+marks+'</div><p class="pitch-note">포메이션은 베스트 11명만 표시합니다. 선수 티어와 포지션 내 순위는 오른쪽에서 확인합니다.</p></section>'+side+'</div>'
+ const proposed=data?.meta?.bestXiReview?.status==="proposed_unapproved";
+ const previewNote=proposed?'<div class="banner formation-review"><b>1차 선정안 · 검수 전</b> · 이 베스트 XI는 공식 확정 명단이 아닙니다. 포지션별 순위는 아직 확정되지 않았으며 선수의 이전 두 시즌 활약과 포지션 배분을 추가 검토합니다.</div>':"";
+ return '<div class="panels"><section class="panel"><div class="section-heading"><h2>Season Best XI</h2><span class="small muted">'+esc(formationName)+' · '+(proposed?"DRAFT XI":"BEST XI")+'</span></div>'+previewNote+'<div class="pitch"><div class="mid"></div><div class="circle"></div>'+marks+'</div><p class="pitch-note">포메이션에는 주 포지션과 선수 이름만 표시합니다. 선수의 티어 및 포지션별 순위는 오른쪽에서 확인합니다.</p></section>'+side+'</div>'
 }
 function standings(){
  let rows=data.standings||[];if(!rows.length)return '<section class="panel"><div class="section-heading"><h2>Final League Table</h2></div><div class="empty"><strong>순위표 검증 중입니다.</strong><p>해당 시즌의 공식 경기 결과를 교차 확인한 뒤 공개합니다. 유럽 참가 구단 목록은 Overview에서 볼 수 있습니다.</p><button class="pill" data-go="overview">Qualified Clubs</button></div></section>';
