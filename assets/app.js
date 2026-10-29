@@ -157,6 +157,8 @@ function standings(){
  const hasAdmin=rows.some(r=>r.outcome==="relegated_administrative");
  let note='<div class="banner" style="margin-bottom:14px"><b>'+esc(st.season.replace("-","–"))+' 최종 순위 · 검증 완료</b> · 38경기 승무패·득실점·승점 대조 및 동률 순서 검수</div>';
  if(data.meta.standingsOnly)note+='<div class="relegation-legend">UEFA 참가 구단 정보는 아직 조사하지 않았습니다. 해당 칸의 공란은 미진출 판정이 아닙니다.</div>';
+ const penalties=rows.filter(r=>r.pointsDeduction);
+ if(penalties.length)note+='<div class="relegation-legend"><b>승점 징계 반영</b> · '+penalties.map(r=>esc(club(r.club).name)+' '+esc(r.pointsDeduction)+'점 ('+esc(3*r.wins+r.draws)+' → '+esc(r.points)+'점)').join(', ')+'</div>';
  if(relegated.length)note+='<div class="relegation-legend"><span class="relegation-chip">↓ 강등</span><span>'+(hasAdmin?'행정 강등·잔류까지 적용한 다음 시즌 실제 강등 구단입니다.':'18–20위 구단이 다음 시즌 2부 리그로 강등됩니다.')+'</span></div>';
  const filterBtn=hasEuropean?'<button class="pill '+(st.qualifiedOnly?"active":"")+'" data-action="qualonly">'+(st.qualifiedOnly?"✓ European clubs":"European clubs only")+'</button>':"";
  let content='<section class="panel"><div class="section-heading"><h2>Final League Table</h2>'+filterBtn+'</div>'+note;
