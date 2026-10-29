@@ -7,7 +7,7 @@
     "status": "standings_only",
     "label": "League Table",
     "standingsOnly": true,
-    "standingsVerified": "match_reconstructed_pending_official_rank_crosscheck",
+    "standingsVerified": true,
     "europeanQualificationVerified": false,
     "assessmentStart": "2007-08",
     "assessmentEnd": "2009-10",
@@ -21,7 +21,13 @@
       }
     ],
     "notes": "Match-derived table: official rank, tie-breaking and actual next-season UEFA entrants require source verification. Provisional until verified.",
-    "lastReview": "2026-10-29"
+    "lastReview": "2026-10-29",
+    "standingsSource": "https://www.rsssf.org/tablese/eng2010.html",
+    "standingsCrossChecked": "20/20 independent RSSSF final table (rank, P, W, D, L, GF, GA, pts)",
+    "europeanQualificationReview": "curated historical entrant list; individual UEFA competition record verification pending",
+    "europeanQualificationSources": [
+      "https://www.rsssf.org/tablese/eng2010.html"
+    ]
   },
   "clubs": [
     {
@@ -61,8 +67,7 @@
       "id": "bolton",
       "name": "Bolton Wanderers",
       "abbr": "BOL",
-      "crestUrl": "https://crests.football-data.org/68.png",
-      "crestHistoricalStatus": "modern_reference_historical_version_unverified",
+      "crestHistoricalStatus": "crest_source_unverified",
       "crestSource": "https://www.football-data.org/"
     },
     {
@@ -188,7 +193,71 @@
       "crestSource": "https://www.football-data.org/"
     }
   ],
-  "qualifiers": [],
+  "qualifiers": [
+    {
+      "club": "chelsea",
+      "competition": "UCL",
+      "route": "League/cup allocation",
+      "status": "review",
+      "sources": [
+        "https://www.rsssf.org/tablese/eng2010.html"
+      ]
+    },
+    {
+      "club": "manutd",
+      "competition": "UCL",
+      "route": "League/cup allocation",
+      "status": "review",
+      "sources": [
+        "https://www.rsssf.org/tablese/eng2010.html"
+      ]
+    },
+    {
+      "club": "arsenal",
+      "competition": "UCL",
+      "route": "League/cup allocation",
+      "status": "review",
+      "sources": [
+        "https://www.rsssf.org/tablese/eng2010.html"
+      ]
+    },
+    {
+      "club": "tottenham",
+      "competition": "UCL",
+      "route": "League/cup allocation",
+      "status": "review",
+      "sources": [
+        "https://www.rsssf.org/tablese/eng2010.html"
+      ]
+    },
+    {
+      "club": "mancity",
+      "competition": "UEL",
+      "route": "League/cup allocation",
+      "status": "review",
+      "sources": [
+        "https://www.rsssf.org/tablese/eng2010.html"
+      ]
+    },
+    {
+      "club": "astonvilla",
+      "competition": "UEL",
+      "route": "League/cup allocation",
+      "status": "review",
+      "sources": [
+        "https://www.rsssf.org/tablese/eng2010.html"
+      ]
+    },
+    {
+      "club": "liverpool",
+      "competition": "UEL",
+      "route": "League/cup allocation",
+      "status": "review",
+      "sources": [
+        "https://www.rsssf.org/tablese/eng2010.html"
+      ]
+    }
+  ],
   "standings": [
     {
       "rank": 1,
@@ -201,7 +270,7 @@
       "goalsAgainst": 32,
       "gd": 71,
       "points": 86,
-      "competition": null,
+      "competition": "UCL",
       "outcome": "retained"
     },
     {
@@ -215,7 +284,7 @@
       "goalsAgainst": 28,
       "gd": 58,
       "points": 85,
-      "competition": null,
+      "competition": "UCL",
       "outcome": "retained"
     },
     {
@@ -229,7 +298,7 @@
       "goalsAgainst": 41,
       "gd": 42,
       "points": 75,
-      "competition": null,
+      "competition": "UCL",
       "outcome": "retained"
     },
     {
@@ -243,7 +312,7 @@
       "goalsAgainst": 41,
       "gd": 26,
       "points": 70,
-      "competition": null,
+      "competition": "UCL",
       "outcome": "retained"
     },
     {
@@ -257,7 +326,7 @@
       "goalsAgainst": 45,
       "gd": 28,
       "points": 67,
-      "competition": null,
+      "competition": "UEL",
       "outcome": "retained"
     },
     {
@@ -271,7 +340,7 @@
       "goalsAgainst": 39,
       "gd": 13,
       "points": 64,
-      "competition": null,
+      "competition": "UEL",
       "outcome": "retained"
     },
     {
@@ -285,7 +354,7 @@
       "goalsAgainst": 35,
       "gd": 26,
       "points": 63,
-      "competition": null,
+      "competition": "UEL",
       "outcome": "retained"
     },
     {
