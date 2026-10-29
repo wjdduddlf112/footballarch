@@ -82,7 +82,7 @@
       "lastDraft": "2026-10-29",
       "selectionLogic": "Historically representative 1999-00 Spanish 4-2-3-1: GK1, RB1, CB2, LB1, DM1, CM1, CAM1, LW1, RW1, ST1. Each pick is #1 or within the top two for CB; positional ranks across all 148 unchanged."
     },
-    "crestSources": "Period crests: Football Kit Archive (Barcelona 1975–2002), football-logos.cc (Atlético 1997–2000), 1999 Liga Este card (Deportivo 1999-00 cropped). Remaining 17 use current-era team images pending individual historical sourcing; attribution in clubs[].crestSource.",
+    "crestSources": "Original independent team crest images from football-data.org, FootyLogos, and other logo sources, with backup URLs where known; historical-era claims are only made for individually verified images.",
     "positionalRanking": {
       "status": "assigned_all_candidates",
       "label": "포지션별 순위 배정 완료",
@@ -113,21 +113,13 @@
     },
     "crestHistoricalReview": {
       "season": "1999-00",
-      "status": "partial_historic_assets_live",
-      "exactEraIndependentLogos": [
-        "barca",
-        "atleti"
-      ],
-      "originalPeriodDocumentCrop": [
-        "deportivo"
-      ],
-      "otherClubEmblems": "17 present-day reference images with unverified season-correct appearance; a historically representative version should replace these when a reliable directly linkable period image is found.",
-      "note": "Deportivo is a crop of an authentic 1999–00 Irureta Panini/Liga Este card, not a clean isolated vector crest; if the image fails load, show its previous reference crest. Barcelona and Atletico are actual period-appropriate crest files. Remaining 17 are recognizable reference crests, not asserted exact 1999 designs.",
-      "sourceCatalogue": "https://soccerstickersfc.net/2025/12/este-la-liga-1999-2000-complete-album/",
-      "historicalDeportivo": [
+      "status": "readability_first_with_history_pending",
+      "note": "For usability, Deportivo and Barcelona were restored to independently illustrated recognizable crests with multiple URL fallbacks. Previous wrongly cropped 1999 Liga Este collectible was removed. Historic 1997–2000 Deportivo and 1975–2002 Barça assets may be substituted only when stable image URLs are confirmed; fallback images remain visible in the meantime.",
+      "historicalReference": [
         "https://www.footballkitarchive.com/deportivo-de-a-coruna-logo-history-t201/",
-        "https://www.euro-soccer-cards.com/es/liga-este-1999-00/irureta-entrenador-deportivo-coruna-este-99-2000"
-      ]
+        "https://www.fcbarcelona.com/en/club/identitat/escut"
+      ],
+      "fixDate": "2026-10-29"
     },
     "relegation": {
       "status": "verified",
@@ -148,26 +140,27 @@
       "id": "deportivo",
       "name": "RC Deportivo de La Coruña",
       "abbr": "DEP",
-      "crestUrl": "https://www.euro-soccer-cards.com/136100-large_default/irureta-entrenador-deportivo-coruna-este-99-2000.jpg",
-      "crestFallbackUrl": "https://assets.football-logos.cc/logos/spain/3000x3000/deportivo-la-coruna.2383dc4b.png",
-      "crestEra": "1999–00",
-      "crestHistoricalStatus": "period_original_crop",
-      "crestSource": "https://www.euro-soccer-cards.com/es/liga-este-1999-00/irureta-entrenador-deportivo-coruna-este-99-2000",
-      "crestCrop": {
-        "imageWidth": 61,
-        "imageHeight": 61,
-        "left": -37,
-        "top": -12
-      }
+      "crestUrl": "https://assets.footylogos.com/previews/deportivo-la-coruna/deportivo-la-coruna-logo-footylogos-1200.webp",
+      "crestEra": "modern_reference",
+      "crestHistoricalStatus": "renderable_independent_reference",
+      "crestSource": "https://www.footylogos.com/es/logos/deportivo-la-coruna",
+      "crestBackupUrls": [
+        "https://assets.football-logos.cc/logos/spain/3000x3000/deportivo-la-coruna.2383dc4b.png",
+        "https://seeklogo.com/images/R/rc-deportivo-la-coruna-1950-s-logo-C8C226FE67-seeklogo.com.png"
+      ]
     },
     {
       "id": "barca",
       "name": "FC Barcelona",
       "abbr": "BAR",
-      "crestUrl": "https://www.footballkitarchive.com/static/logos/JnMbsV2gfLThVuc/fc-barcelona-1975-2002-logo.png",
-      "crestEra": "1975–2002",
-      "crestHistoricalStatus": "period_correct",
-      "crestSource": "https://www.footballkitarchive.com/fc-barcelona-logo-history/"
+      "crestUrl": "https://crests.football-data.org/81.png",
+      "crestEra": "modern_reference",
+      "crestHistoricalStatus": "renderable_independent_reference",
+      "crestSource": "https://docs.football-data.org/general/v4/competition.html",
+      "crestBackupUrls": [
+        "https://crests.football-data.org/81.svg",
+        "https://pngimg.com/uploads/fcb_logo/fcb_logo_PNG25.png"
+      ]
     },
     {
       "id": "valencia",
@@ -176,7 +169,10 @@
       "crestUrl": "https://crests.football-data.org/95.png",
       "crestEra": "modern_reference",
       "crestHistoricalStatus": "historical_version_unverified",
-      "crestSource": "https://www.football-data.org/"
+      "crestSource": "https://www.football-data.org/",
+      "crestBackupUrls": [
+        "https://crests.football-data.org/95.svg"
+      ]
     },
     {
       "id": "madrid",
@@ -185,7 +181,10 @@
       "crestUrl": "https://crests.football-data.org/86.png",
       "crestEra": "modern_reference",
       "crestHistoricalStatus": "historical_version_unverified",
-      "crestSource": "https://www.football-data.org/"
+      "crestSource": "https://www.football-data.org/",
+      "crestBackupUrls": [
+        "https://crests.football-data.org/86.svg"
+      ]
     },
     {
       "id": "zaragoza",
@@ -194,7 +193,8 @@
       "crestUrl": "https://r2.thesportsdb.com/images/media/team/badge/sxpwxs1473503702.png",
       "crestEra": "modern_reference",
       "crestHistoricalStatus": "historical_version_unverified",
-      "crestSource": "https://www.thesportsdb.com/team/133737-real-zaragoza"
+      "crestSource": "https://www.thesportsdb.com/team/133737-real-zaragoza",
+      "crestBackupUrls": []
     },
     {
       "id": "alaves",
@@ -203,7 +203,10 @@
       "crestUrl": "https://crests.football-data.org/263.png",
       "crestEra": "modern_reference",
       "crestHistoricalStatus": "historical_version_unverified",
-      "crestSource": "https://www.football-data.org/"
+      "crestSource": "https://www.football-data.org/",
+      "crestBackupUrls": [
+        "https://crests.football-data.org/263.svg"
+      ]
     },
     {
       "id": "espanyol",
@@ -212,7 +215,10 @@
       "crestUrl": "https://crests.football-data.org/80.png",
       "crestEra": "modern_reference",
       "crestHistoricalStatus": "historical_version_unverified",
-      "crestSource": "https://www.football-data.org/"
+      "crestSource": "https://www.football-data.org/",
+      "crestBackupUrls": [
+        "https://crests.football-data.org/80.svg"
+      ]
     },
     {
       "id": "rayo",
@@ -221,7 +227,10 @@
       "crestUrl": "https://crests.football-data.org/87.png",
       "crestEra": "modern_reference",
       "crestHistoricalStatus": "historical_version_unverified",
-      "crestSource": "https://www.football-data.org/"
+      "crestSource": "https://www.football-data.org/",
+      "crestBackupUrls": [
+        "https://crests.football-data.org/87.svg"
+      ]
     },
     {
       "id": "celta",
@@ -230,7 +239,10 @@
       "crestUrl": "https://crests.football-data.org/558.png",
       "crestEra": "modern_reference",
       "crestHistoricalStatus": "historical_version_unverified",
-      "crestSource": "https://www.football-data.org/"
+      "crestSource": "https://www.football-data.org/",
+      "crestBackupUrls": [
+        "https://crests.football-data.org/558.svg"
+      ]
     },
     {
       "id": "mallorca",
@@ -239,7 +251,10 @@
       "crestUrl": "https://crests.football-data.org/89.png",
       "crestEra": "modern_reference",
       "crestHistoricalStatus": "historical_version_unverified",
-      "crestSource": "https://www.football-data.org/"
+      "crestSource": "https://www.football-data.org/",
+      "crestBackupUrls": [
+        "https://crests.football-data.org/89.svg"
+      ]
     },
     {
       "id": "valladolid",
@@ -248,7 +263,8 @@
       "crestUrl": "https://assets.football-logos.cc/logos/spain/700x700/valladolid.1aca82aa.png",
       "crestEra": "modern_reference",
       "crestHistoricalStatus": "historical_version_unverified",
-      "crestSource": "https://football-logos.cc/spain/valladolid/"
+      "crestSource": "https://football-logos.cc/spain/valladolid/",
+      "crestBackupUrls": []
     },
     {
       "id": "athletic",
@@ -257,7 +273,10 @@
       "crestUrl": "https://crests.football-data.org/77.png",
       "crestEra": "modern_reference",
       "crestHistoricalStatus": "historical_version_unverified",
-      "crestSource": "https://www.football-data.org/"
+      "crestSource": "https://www.football-data.org/",
+      "crestBackupUrls": [
+        "https://crests.football-data.org/77.svg"
+      ]
     },
     {
       "id": "malaga",
@@ -266,7 +285,8 @@
       "crestUrl": "https://images.seeklogo.com/logo-png/28/1/malaga-logo-png_seeklogo-289120.png",
       "crestEra": "modern_reference",
       "crestHistoricalStatus": "historical_version_unverified",
-      "crestSource": "https://seeklogo.com/vector-logo/511240/malaga-cf"
+      "crestSource": "https://seeklogo.com/vector-logo/511240/malaga-cf",
+      "crestBackupUrls": []
     },
     {
       "id": "sociedad",
@@ -275,7 +295,10 @@
       "crestUrl": "https://crests.football-data.org/92.png",
       "crestEra": "modern_reference",
       "crestHistoricalStatus": "historical_version_unverified",
-      "crestSource": "https://www.football-data.org/"
+      "crestSource": "https://www.football-data.org/",
+      "crestBackupUrls": [
+        "https://crests.football-data.org/92.svg"
+      ]
     },
     {
       "id": "racing",
@@ -284,7 +307,8 @@
       "crestUrl": "https://r2.thesportsdb.com/images/media/team/badge/97kkiq1536575158.png",
       "crestEra": "modern_reference",
       "crestHistoricalStatus": "historical_version_unverified",
-      "crestSource": "https://www.thesportsdb.com/team/133726-racing-de-santander"
+      "crestSource": "https://www.thesportsdb.com/team/133726-racing-de-santander",
+      "crestBackupUrls": []
     },
     {
       "id": "oviedo",
@@ -293,7 +317,8 @@
       "crestUrl": "https://pub-3bd35431294c47068cbf31a95d572166.r2.dev/logos/real-oviedo/real-oviedo-logo-footylogos.png",
       "crestEra": "modern_reference",
       "crestHistoricalStatus": "historical_version_unverified",
-      "crestSource": "https://www.footylogos.com/es/logos/real-oviedo"
+      "crestSource": "https://www.footylogos.com/es/logos/real-oviedo",
+      "crestBackupUrls": []
     },
     {
       "id": "numancia",
@@ -302,7 +327,8 @@
       "crestUrl": "https://www.zerozero.pt/img/logos/equipas/2562_imgbank_1700489985.png",
       "crestEra": "modern_reference",
       "crestHistoricalStatus": "historical_version_unverified",
-      "crestSource": "https://www.zerozero.pt/equipa/numancia/2562"
+      "crestSource": "https://www.zerozero.pt/equipa/numancia/2562",
+      "crestBackupUrls": []
     },
     {
       "id": "betis",
@@ -311,7 +337,10 @@
       "crestUrl": "https://crests.football-data.org/90.png",
       "crestEra": "modern_reference",
       "crestHistoricalStatus": "historical_version_unverified",
-      "crestSource": "https://www.football-data.org/"
+      "crestSource": "https://www.football-data.org/",
+      "crestBackupUrls": [
+        "https://crests.football-data.org/90.svg"
+      ]
     },
     {
       "id": "atleti",
@@ -320,7 +349,8 @@
       "crestUrl": "https://assets.football-logos.cc/logos/spain/1500x1500/atletico-madrid--1997-2000.f2baec8c.png",
       "crestEra": "1997–2000",
       "crestHistoricalStatus": "period_correct",
-      "crestSource": "https://football-logos.cc/spain/atletico-madrid/logo-history/"
+      "crestSource": "https://football-logos.cc/spain/atletico-madrid/logo-history/",
+      "crestBackupUrls": []
     },
     {
       "id": "sevilla",
@@ -329,7 +359,10 @@
       "crestUrl": "https://crests.football-data.org/559.png",
       "crestEra": "modern_reference",
       "crestHistoricalStatus": "historical_version_unverified",
-      "crestSource": "https://www.football-data.org/"
+      "crestSource": "https://www.football-data.org/",
+      "crestBackupUrls": [
+        "https://crests.football-data.org/559.svg"
+      ]
     }
   ],
   "qualifiers": [
