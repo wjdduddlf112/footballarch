@@ -196,6 +196,6 @@ Fresh prior-season research established Liverpool Brad Friedel: 1997-98 11 leagu
 
 Chelsea Carlo Cudicini: 1997-98 Castel di Sangro Serie B 14 league appearances, 1998-99 Serie C1 32, 1999-00 Chelsea PL 1 start. Source: https://www.stamford-bridge.com/player/player.php?id=125 and historical career table https://en.wikipedia.org/wiki/Carlo_Cudicini . Conservatively **C DRAFT**, GK rank 15/15; prior league standards are not directly transferable to Premier League.
 
-**Current season assessment: 128/128 individualized provisional grades and 128/128 positional ranks (100% tier input, not 100% complete historic proof).** S 1, A+ 6, A 5, A- 26, B+ 40, B 23, B- 14, C+ 10, C 3, C- 0, D 0. World Class 7; League Top Class 38.
+**Current season assessment: 128/128 individualized provisional grades and 128/128 positional ranks (100% tier input, not 100% complete historic proof).** S 1, A+ 6, A 5, A- 26, B+ 40, B 23, B- 13, C+ 11, C 3, C- 0, D 0. World Class 7; League Top Class 38.
 
 Three-season evidence exists in summarized form for each tier rationale, but individual full 1997-98 and 1998-99 match evidence and primary season tactical majority are still partially unresolved; all evaluations remain **DRAFT / user-unapproved**. Browser/PAGE build are independent gates. There are 27 PL seasons 1999-00 to 2025-26; **only first season** assessed in this run. Stop before 2000-01 until user instructs.
