@@ -8,11 +8,11 @@
     "qualifyingSeason": "2002-03",
     "status": "draft",
     "candidateStatus": "draft_unapproved",
-    "label": "선수 후보군 1차 초안 · 티어·순위 미확정",
+    "label": "9개 구단 선수 후보·잠정 티어·포지션 순위 공개 · 검수 중",
     "standingsStatus": "reused_from_verified_archive",
     "source": "BDFutbol league lineup tables for club-season; La Liga archive for standings and European participants",
     "dataCollected": "2026-10-30",
-    "candidateCount": 135,
+    "candidateCount": 162,
     "sourceScope": "La Liga league-only appearances/starts/minutes, not UEFA Cup/UCL.",
     "positionVerifiedCount": 15,
     "unverifiedPositions": 120,
@@ -32,9 +32,9 @@
       "Attacking central creator, 23 league starts; stored in CM pool only provisionally under 4-2-3-1 no-CAM convention. Actual CAM role must be independently audited.",
       "Málaga 2001-02 4-4-2: RB Josemi, CB Litos/Roteta, LB Fernando Sanz, LM Musampa, RM Gerardo; El País 2002-01-20; subject to season majority audit."
     ],
-    "formationVerification": "needs_review",
-    "bestXiStatus": "not_selected",
-    "tierStatus": "not_evaluated",
+    "formationVerification": "representative_draft_not_modal_verified",
+    "bestXiStatus": "proposed_unapproved",
+    "tierStatus": "first_pass_provisional",
     "existingTiersPreserved": true,
     "birthdatesPopulatedCount": 53,
     "birthdateAudit": "partial; populated birthdates may be inherited from prior draft or manually corroborated; unpopulated are null",
@@ -50,7 +50,87 @@
       "archiveStandingsSource": "data/laliga-standings-verified-1999-2026.json",
       "preservedMainStandings": true,
       "individualThreeSeasonAudit": "pending"
-    }
+    },
+    "lastReview": "2026-10-30",
+    "selectionStage": "all_positions_tiers_ranks_best_xi_preliminary",
+    "formation": "4-4-2",
+    "assessmentWeighting": "2001-02 highest > 2000-01 > 1999-00 qualitative; no quantitative model",
+    "tierProposal": {
+      "status": "published_preliminary_not_final",
+      "candidateCount": 162,
+      "approval": "pending_user_review",
+      "assessmentSeasons": [
+        "1999-00",
+        "2000-01",
+        "2001-02"
+      ],
+      "notes": "Initial qualitative three-season review. Complete per-player prior season comparison pending."
+    },
+    "positionalRanking": {
+      "status": "assigned_all_candidates_provisional",
+      "verified": "pending_match_level_position_audit",
+      "scope": "League-wide per-position rankings not overall ranking."
+    },
+    "bestXiReview": {
+      "status": "proposed_unapproved",
+      "lastDraft": "2026-10-30",
+      "formation": "4-4-2",
+      "notes": "Two-striker provisional lineup, 4-4-2 representative but league-wide use frequency not independently proven."
+    },
+    "positionClassificationReview": {
+      "status": "partially_verified",
+      "examples": [
+        "Iván Helguera CB/DM",
+        "Rivaldo LW/AM",
+        "Málaga Fernando Sanz LB/CB",
+        "Jordi Cruyff CM/AM",
+        "Celta Edú ST/LW"
+      ],
+      "source": "Historical 2001-02 BDFutbol starts and football news; exact primary position remains pending for selected hybrids."
+    },
+    "auditTrail": {
+      "sourceBranch": "data/laliga-candidates-2001-2004-draft",
+      "importedOn": "2026-10-30",
+      "state": "draft_unapproved",
+      "archiveStandingsSource": "data/laliga-standings-verified-1999-2026.json",
+      "preservedMainStandings": true,
+      "individualThreeSeasonAudit": "pending",
+      "candidateSourceCount": 135,
+      "newCandidates": 27,
+      "newIds": [
+        "laliga-200102-valencia-17",
+        "laliga-200102-valencia-18",
+        "laliga-200102-valencia-19",
+        "laliga-200102-deportivo-18",
+        "laliga-200102-deportivo-19",
+        "laliga-200102-madrid-16",
+        "laliga-200102-madrid-17",
+        "laliga-200102-madrid-18",
+        "laliga-200102-madrid-19",
+        "laliga-200102-madrid-20",
+        "laliga-200102-barca-16",
+        "laliga-200102-barca-17",
+        "laliga-200102-barca-18",
+        "laliga-200102-barca-19",
+        "laliga-200102-barca-20",
+        "laliga-200102-celta-18",
+        "laliga-200102-betis-15",
+        "laliga-200102-betis-16",
+        "laliga-200102-betis-17",
+        "laliga-200102-betis-18",
+        "laliga-200102-alaves-15",
+        "laliga-200102-alaves-16",
+        "laliga-200102-alaves-17",
+        "laliga-200102-malaga-13",
+        "laliga-200102-malaga-14",
+        "laliga-200102-malaga-15",
+        "laliga-200102-malaga-16"
+      ],
+      "birthDatesRestored": 25,
+      "reviewState": "DRAFT user approval outstanding",
+      "sourceSnapshot": "main file (existing) preserved and enhanced"
+    },
+    "europeanQualificationReview": "Nine clubs match 2002-03 entrant map in consolidated La Liga archive. Current qualifier route recheck remains draft; Alavés 7th-place route corrected."
   },
   "clubs": [
     {
@@ -505,7 +585,7 @@
     {
       "club": "alaves",
       "competition": "UEFA Cup",
-      "route": "Copa del Rey finalist under competition reallocation",
+      "route": "La Liga 7th; UEFA Cup place passed down since Copa del Rey winner Deportivo and finalist Real Madrid qualified for UCL (Alavés were not the cup finalists)",
       "status": "draft_entry_audit",
       "sources": [
         "https://en.wikipedia.org/wiki/2001%E2%80%9302_La_Liga",
@@ -553,16 +633,25 @@
       "leagueMinutes": 2820,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "verified",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "A+",
+      "rank": 1,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0236.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0236.html"
       ],
       "verificationNotes": [],
       "nameOriginal": "Santiago Cañizares",
-      "clubNameOriginal": "Valencia CF"
+      "clubNameOriginal": "Valencia CF",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-valencia-02",
@@ -580,16 +669,25 @@
       "leagueMinutes": 600,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "verified",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B-",
+      "rank": 14,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0236.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0236.html"
       ],
       "verificationNotes": [],
       "nameOriginal": "Andrés Palop",
-      "clubNameOriginal": "Valencia CF"
+      "clubNameOriginal": "Valencia CF",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-valencia-03",
@@ -599,7 +697,7 @@
       "club": "valencia",
       "clubId": "valencia",
       "clubName": "Valencia CF",
-      "born": null,
+      "born": "1976-12-27",
       "role": "starter",
       "starts": 34,
       "leagueAppearances": 34,
@@ -607,9 +705,9 @@
       "leagueMinutes": 3040,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B+",
+      "rank": 3,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0236.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0236.html"
@@ -619,7 +717,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "Curro Torres",
-      "clubNameOriginal": "Valencia CF"
+      "clubNameOriginal": "Valencia CF",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-valencia-04",
@@ -637,9 +744,9 @@
       "leagueMinutes": 2733,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "A-",
+      "rank": 3,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0236.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0236.html"
@@ -648,7 +755,16 @@
         "Match-by-match majority-position evidence pending; positional assignment is provisional."
       ],
       "nameOriginal": "Amedeo Carboni",
-      "clubNameOriginal": "Valencia CF"
+      "clubNameOriginal": "Valencia CF",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-valencia-05",
@@ -658,7 +774,7 @@
       "club": "valencia",
       "clubId": "valencia",
       "clubName": "Valencia CF",
-      "born": null,
+      "born": "1973-04-14",
       "role": "starter",
       "starts": 29,
       "leagueAppearances": 29,
@@ -666,9 +782,9 @@
       "leagueMinutes": 2604,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "A+",
+      "rank": 1,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0236.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0236.html"
@@ -678,7 +794,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "Roberto Ayala",
-      "clubNameOriginal": "Valencia CF"
+      "clubNameOriginal": "Valencia CF",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-valencia-06",
@@ -696,9 +821,9 @@
       "leagueMinutes": 2592,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "A",
+      "rank": 5,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0236.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0236.html"
@@ -707,7 +832,16 @@
         "Match-by-match majority-position evidence pending; positional assignment is provisional."
       ],
       "nameOriginal": "Mauricio Pellegrino",
-      "clubNameOriginal": "Valencia CF"
+      "clubNameOriginal": "Valencia CF",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-valencia-07",
@@ -725,9 +859,9 @@
       "leagueMinutes": 1301,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B+",
+      "rank": 15,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0236.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0236.html"
@@ -736,7 +870,16 @@
         "Match-by-match majority-position evidence pending; positional assignment is provisional."
       ],
       "nameOriginal": "Miroslav Đukić",
-      "clubNameOriginal": "Valencia CF"
+      "clubNameOriginal": "Valencia CF",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-valencia-08",
@@ -754,9 +897,9 @@
       "leagueMinutes": 2760,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "A",
+      "rank": 4,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0236.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0236.html"
@@ -765,7 +908,16 @@
         "Match-by-match majority-position evidence pending; positional assignment is provisional."
       ],
       "nameOriginal": "David Albelda",
-      "clubNameOriginal": "Valencia CF"
+      "clubNameOriginal": "Valencia CF",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-valencia-09",
@@ -775,7 +927,7 @@
       "club": "valencia",
       "clubId": "valencia",
       "clubName": "Valencia CF",
-      "born": null,
+      "born": "1975-07-11",
       "role": "starter",
       "starts": 15,
       "leagueAppearances": 17,
@@ -783,9 +935,9 @@
       "leagueMinutes": 1251,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "A-",
+      "rank": 6,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0236.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0236.html"
@@ -795,7 +947,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "Rubén Baraja",
-      "clubNameOriginal": "Valencia CF"
+      "clubNameOriginal": "Valencia CF",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-valencia-10",
@@ -805,7 +966,7 @@
       "club": "valencia",
       "clubId": "valencia",
       "clubName": "Valencia CF",
-      "born": null,
+      "born": "1976-11-20",
       "role": "starter",
       "starts": 27,
       "leagueAppearances": 33,
@@ -813,9 +974,9 @@
       "leagueMinutes": 2245,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B+",
+      "rank": 7,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0236.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0236.html"
@@ -825,7 +986,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "Francisco Rufete",
-      "clubNameOriginal": "Valencia CF"
+      "clubNameOriginal": "Valencia CF",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-valencia-11",
@@ -835,7 +1005,7 @@
       "club": "valencia",
       "clubId": "valencia",
       "clubName": "Valencia CF",
-      "born": null,
+      "born": "1981-07-16",
       "role": "starter",
       "starts": 22,
       "leagueAppearances": 31,
@@ -843,9 +1013,9 @@
       "leagueMinutes": 1905,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B+",
+      "rank": 6,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0236.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0236.html"
@@ -855,7 +1025,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "Vicente Rodríguez",
-      "clubNameOriginal": "Valencia CF"
+      "clubNameOriginal": "Valencia CF",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-valencia-12",
@@ -873,9 +1052,9 @@
       "leagueMinutes": 1562,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "A-",
+      "rank": 3,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0236.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0236.html"
@@ -885,7 +1064,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "Kily González",
-      "clubNameOriginal": "Valencia CF"
+      "clubNameOriginal": "Valencia CF",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-valencia-13",
@@ -895,7 +1083,7 @@
       "club": "valencia",
       "clubId": "valencia",
       "clubName": "Valencia CF",
-      "born": null,
+      "born": "1975-05-22",
       "role": "starter",
       "starts": 19,
       "leagueAppearances": 22,
@@ -903,9 +1091,9 @@
       "leagueMinutes": 1573,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B",
+      "rank": 14,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0236.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0236.html"
@@ -915,7 +1103,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "Salva Ballesta",
-      "clubNameOriginal": "Valencia CF"
+      "clubNameOriginal": "Valencia CF",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-valencia-14",
@@ -933,9 +1130,9 @@
       "leagueMinutes": 1188,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B+",
+      "rank": 12,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0236.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0236.html"
@@ -944,7 +1141,16 @@
         "Match-by-match majority-position evidence pending; positional assignment is provisional."
       ],
       "nameOriginal": "Juan Sánchez",
-      "clubNameOriginal": "Valencia CF"
+      "clubNameOriginal": "Valencia CF",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-deportivo-01",
@@ -962,9 +1168,9 @@
       "leagueMinutes": 3240,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "verified",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "A",
+      "rank": 3,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0213.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0213.html"
@@ -973,7 +1179,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "José Molina",
-      "clubNameOriginal": "RC Deportivo de La Coruña"
+      "clubNameOriginal": "RC Deportivo de La Coruña",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-deportivo-02",
@@ -983,7 +1198,7 @@
       "club": "deportivo",
       "clubId": "deportivo",
       "clubName": "RC Deportivo de La Coruña",
-      "born": null,
+      "born": "1978-05-16",
       "role": "starter",
       "starts": 21,
       "leagueAppearances": 25,
@@ -991,9 +1206,9 @@
       "leagueMinutes": 1908,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B+",
+      "rank": 5,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0213.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0213.html"
@@ -1003,7 +1218,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "Lionel Scaloni",
-      "clubNameOriginal": "RC Deportivo de La Coruña"
+      "clubNameOriginal": "RC Deportivo de La Coruña",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-deportivo-03",
@@ -1021,9 +1245,9 @@
       "leagueMinutes": 1636,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B",
+      "rank": 8,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0213.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0213.html"
@@ -1033,7 +1257,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "Héctor Berenguel",
-      "clubNameOriginal": "RC Deportivo de La Coruña"
+      "clubNameOriginal": "RC Deportivo de La Coruña",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-deportivo-04",
@@ -1051,9 +1284,9 @@
       "leagueMinutes": 2134,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B+",
+      "rank": 6,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0213.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0213.html"
@@ -1062,7 +1295,16 @@
         "Match-by-match majority-position evidence pending; positional assignment is provisional."
       ],
       "nameOriginal": "Enrique Romero",
-      "clubNameOriginal": "RC Deportivo de La Coruña"
+      "clubNameOriginal": "RC Deportivo de La Coruña",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-deportivo-05",
@@ -1072,7 +1314,7 @@
       "club": "deportivo",
       "clubId": "deportivo",
       "clubName": "RC Deportivo de La Coruña",
-      "born": null,
+      "born": "1978-02-03",
       "role": "backup",
       "starts": 18,
       "leagueAppearances": 20,
@@ -1080,9 +1322,9 @@
       "leagueMinutes": 1642,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B",
+      "rank": 10,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0213.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0213.html"
@@ -1092,7 +1334,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "Joan Capdevila",
-      "clubNameOriginal": "RC Deportivo de La Coruña"
+      "clubNameOriginal": "RC Deportivo de La Coruña",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-deportivo-06",
@@ -1110,9 +1361,9 @@
       "leagueMinutes": 2157,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "A",
+      "rank": 3,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0213.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0213.html"
@@ -1121,7 +1372,16 @@
         "Match-by-match majority-position evidence pending; positional assignment is provisional."
       ],
       "nameOriginal": "Noureddine Naybet",
-      "clubNameOriginal": "RC Deportivo de La Coruña"
+      "clubNameOriginal": "RC Deportivo de La Coruña",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-deportivo-07",
@@ -1139,9 +1399,9 @@
       "leagueMinutes": 1454,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B+",
+      "rank": 14,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0213.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0213.html"
@@ -1151,7 +1411,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "Donato",
-      "clubNameOriginal": "RC Deportivo de La Coruña"
+      "clubNameOriginal": "RC Deportivo de La Coruña",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-deportivo-08",
@@ -1169,9 +1438,9 @@
       "leagueMinutes": 1278,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B",
+      "rank": 23,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0213.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0213.html"
@@ -1181,7 +1450,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "César Martín",
-      "clubNameOriginal": "RC Deportivo de La Coruña"
+      "clubNameOriginal": "RC Deportivo de La Coruña",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-deportivo-09",
@@ -1199,9 +1477,9 @@
       "leagueMinutes": 2157,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "A+",
+      "rank": 2,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0213.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0213.html"
@@ -1210,7 +1488,16 @@
         "Match-by-match majority-position evidence pending; positional assignment is provisional."
       ],
       "nameOriginal": "Mauro Silva",
-      "clubNameOriginal": "RC Deportivo de La Coruña"
+      "clubNameOriginal": "RC Deportivo de La Coruña",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-deportivo-10",
@@ -1228,9 +1515,9 @@
       "leagueMinutes": 1656,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B+",
+      "rank": 8,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0213.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0213.html"
@@ -1240,7 +1527,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "Aldo Duscher",
-      "clubNameOriginal": "RC Deportivo de La Coruña"
+      "clubNameOriginal": "RC Deportivo de La Coruña",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-deportivo-11",
@@ -1258,9 +1554,9 @@
       "leagueMinutes": 2477,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B+",
+      "rank": 10,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0213.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0213.html"
@@ -1269,7 +1565,16 @@
         "Match-by-match majority-position evidence pending; positional assignment is provisional."
       ],
       "nameOriginal": "Sergio González",
-      "clubNameOriginal": "RC Deportivo de La Coruña"
+      "clubNameOriginal": "RC Deportivo de La Coruña",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-deportivo-12",
@@ -1287,9 +1592,9 @@
       "leagueMinutes": 2242,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "A-",
+      "rank": 4,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0213.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0213.html"
@@ -1299,7 +1604,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "Víctor Sánchez",
-      "clubNameOriginal": "RC Deportivo de La Coruña"
+      "clubNameOriginal": "RC Deportivo de La Coruña",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-deportivo-13",
@@ -1317,9 +1631,9 @@
       "leagueMinutes": 1638,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B+",
+      "rank": 5,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0213.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0213.html"
@@ -1328,7 +1642,16 @@
         "Match-by-match majority-position evidence pending; positional assignment is provisional."
       ],
       "nameOriginal": "Fran González",
-      "clubNameOriginal": "RC Deportivo de La Coruña"
+      "clubNameOriginal": "RC Deportivo de La Coruña",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-deportivo-14",
@@ -1346,9 +1669,9 @@
       "leagueMinutes": 1594,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B",
+      "rank": 10,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0213.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0213.html"
@@ -1358,7 +1681,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "José Amavisca",
-      "clubNameOriginal": "RC Deportivo de La Coruña"
+      "clubNameOriginal": "RC Deportivo de La Coruña",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-deportivo-15",
@@ -1376,9 +1708,9 @@
       "leagueMinutes": 2105,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "A+",
+      "rank": 1,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0213.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0213.html"
@@ -1387,7 +1719,16 @@
         "Match-by-match majority-position evidence pending; positional assignment is provisional."
       ],
       "nameOriginal": "Diego Tristán",
-      "clubNameOriginal": "RC Deportivo de La Coruña"
+      "clubNameOriginal": "RC Deportivo de La Coruña",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-deportivo-16",
@@ -1398,16 +1739,16 @@
       "clubId": "deportivo",
       "clubName": "RC Deportivo de La Coruña",
       "born": "1975-03-09",
-      "role": "starter",
+      "role": "backup",
       "starts": 22,
       "leagueAppearances": 30,
       "leagueStarts": 22,
       "leagueMinutes": 1950,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "A",
+      "rank": 7,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0213.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0213.html"
@@ -1417,7 +1758,16 @@
         "Shared forward starting role with Diego Tristán, not a historical bench player."
       ],
       "nameOriginal": "Roy Makaay",
-      "clubNameOriginal": "RC Deportivo de La Coruña"
+      "clubNameOriginal": "RC Deportivo de La Coruña",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-madrid-01",
@@ -1435,16 +1785,25 @@
       "leagueMinutes": 2250,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "verified",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "A",
+      "rank": 4,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-022.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-022.html"
       ],
       "verificationNotes": [],
       "nameOriginal": "Iker Casillas",
-      "clubNameOriginal": "Real Madrid"
+      "clubNameOriginal": "Real Madrid",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-madrid-02",
@@ -1454,7 +1813,7 @@
       "club": "madrid",
       "clubId": "madrid",
       "clubName": "Real Madrid",
-      "born": null,
+      "born": "1971-09-02",
       "role": "backup",
       "starts": 12,
       "leagueAppearances": 12,
@@ -1462,9 +1821,9 @@
       "leagueMinutes": 1080,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "verified",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B",
+      "rank": 10,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-022.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-022.html"
@@ -1473,7 +1832,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "César Sánchez",
-      "clubNameOriginal": "Real Madrid"
+      "clubNameOriginal": "Real Madrid",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-madrid-03",
@@ -1491,9 +1859,9 @@
       "leagueMinutes": 3032,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "A",
+      "rank": 1,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-022.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-022.html"
@@ -1502,7 +1870,16 @@
         "Match-by-match majority-position evidence pending; positional assignment is provisional."
       ],
       "nameOriginal": "Míchel Salgado",
-      "clubNameOriginal": "Real Madrid"
+      "clubNameOriginal": "Real Madrid",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-madrid-04",
@@ -1520,9 +1897,9 @@
       "leagueMinutes": 2729,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "S",
+      "rank": 1,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-022.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-022.html"
@@ -1531,7 +1908,16 @@
         "Match-by-match majority-position evidence pending; positional assignment is provisional."
       ],
       "nameOriginal": "Roberto Carlos",
-      "clubNameOriginal": "Real Madrid"
+      "clubNameOriginal": "Real Madrid",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-madrid-05",
@@ -1549,9 +1935,9 @@
       "leagueMinutes": 2611,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "A",
+      "rank": 2,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-022.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-022.html"
@@ -1560,7 +1946,16 @@
         "Match-by-match majority-position evidence pending; positional assignment is provisional."
       ],
       "nameOriginal": "Fernando Hierro",
-      "clubNameOriginal": "Real Madrid"
+      "clubNameOriginal": "Real Madrid",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-madrid-06",
@@ -1578,9 +1973,9 @@
       "leagueMinutes": 2368,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B",
+      "rank": 19,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-022.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-022.html"
@@ -1590,7 +1985,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "Francisco Pavón",
-      "clubNameOriginal": "Real Madrid"
+      "clubNameOriginal": "Real Madrid",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-madrid-07",
@@ -1608,9 +2012,9 @@
       "leagueMinutes": 2094,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "A",
+      "rank": 6,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-022.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-022.html"
@@ -1619,7 +2023,16 @@
         "Match-by-match majority-position evidence pending; positional assignment is provisional."
       ],
       "nameOriginal": "Iván Helguera",
-      "clubNameOriginal": "Real Madrid"
+      "clubNameOriginal": "Real Madrid",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-madrid-08",
@@ -1637,9 +2050,9 @@
       "leagueMinutes": 2727,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "A+",
+      "rank": 1,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-022.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-022.html"
@@ -1648,7 +2061,16 @@
         "Match-by-match majority-position evidence pending; positional assignment is provisional."
       ],
       "nameOriginal": "Claude Makélélé",
-      "clubNameOriginal": "Real Madrid"
+      "clubNameOriginal": "Real Madrid",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-madrid-09",
@@ -1666,9 +2088,9 @@
       "leagueMinutes": 2647,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "S",
+      "rank": 1,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-022.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-022.html"
@@ -1677,7 +2099,16 @@
         "Match-by-match majority-position evidence pending; positional assignment is provisional."
       ],
       "nameOriginal": "Zinedine Zidane",
-      "clubNameOriginal": "Real Madrid"
+      "clubNameOriginal": "Real Madrid",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-madrid-10",
@@ -1695,9 +2126,9 @@
       "leagueMinutes": 2393,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "A+",
+      "rank": 1,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-022.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-022.html"
@@ -1706,7 +2137,16 @@
         "Match-by-match majority-position evidence pending; positional assignment is provisional."
       ],
       "nameOriginal": "Luís Figo",
-      "clubNameOriginal": "Real Madrid"
+      "clubNameOriginal": "Real Madrid",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-madrid-11",
@@ -1724,9 +2164,9 @@
       "leagueMinutes": 3085,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "A+",
+      "rank": 2,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-022.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-022.html"
@@ -1735,7 +2175,16 @@
         "Match-by-match majority-position evidence pending; positional assignment is provisional."
       ],
       "nameOriginal": "Raúl González",
-      "clubNameOriginal": "Real Madrid"
+      "clubNameOriginal": "Real Madrid",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-madrid-12",
@@ -1746,16 +2195,16 @@
       "clubId": "madrid",
       "clubName": "Real Madrid",
       "born": "1976-04-05",
-      "role": "starter",
+      "role": "backup",
       "starts": 28,
       "leagueAppearances": 33,
       "leagueStarts": 28,
       "leagueMinutes": 2155,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "A",
+      "rank": 5,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-022.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-022.html"
@@ -1765,7 +2214,16 @@
         "28 league starts: second starting forward, not a historical backup."
       ],
       "nameOriginal": "Fernando Morientes",
-      "clubNameOriginal": "Real Madrid"
+      "clubNameOriginal": "Real Madrid",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-barca-01",
@@ -1783,9 +2241,9 @@
       "leagueMinutes": 2430,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "verified",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B+",
+      "rank": 7,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-021.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-021.html"
@@ -1794,7 +2252,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "Roberto Bonano",
-      "clubNameOriginal": "FC Barcelona"
+      "clubNameOriginal": "FC Barcelona",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-barca-02",
@@ -1812,16 +2279,25 @@
       "leagueMinutes": 990,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "verified",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B",
+      "rank": 11,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-021.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-021.html"
       ],
       "verificationNotes": [],
       "nameOriginal": "José Manuel Reina",
-      "clubNameOriginal": "FC Barcelona"
+      "clubNameOriginal": "FC Barcelona",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-barca-03",
@@ -1839,9 +2315,9 @@
       "leagueMinutes": 2874,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "A-",
+      "rank": 2,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-021.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-021.html"
@@ -1850,27 +2326,36 @@
         "Match-by-match majority-position evidence pending; positional assignment is provisional."
       ],
       "nameOriginal": "Carles Puyol",
-      "clubNameOriginal": "FC Barcelona"
+      "clubNameOriginal": "FC Barcelona",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-barca-04",
-      "position": "RB",
+      "position": "CM",
       "nameKo": "가브리 가르시아",
       "name": "Gabri García",
       "club": "barca",
       "clubId": "barca",
       "clubName": "FC Barcelona",
-      "born": null,
-      "role": "backup",
+      "born": "1979-02-10",
+      "role": "starter",
       "starts": 20,
       "leagueAppearances": 29,
       "leagueStarts": 20,
       "leagueMinutes": 1869,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B",
+      "rank": 16,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-021.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-021.html"
@@ -1880,7 +2365,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "Gabri García",
-      "clubNameOriginal": "FC Barcelona"
+      "clubNameOriginal": "FC Barcelona",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-barca-05",
@@ -1898,9 +2392,9 @@
       "leagueMinutes": 1580,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B",
+      "rank": 11,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-021.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-021.html"
@@ -1910,7 +2404,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "Francesco Coco",
-      "clubNameOriginal": "FC Barcelona"
+      "clubNameOriginal": "FC Barcelona",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-barca-06",
@@ -1928,9 +2431,9 @@
       "leagueMinutes": 2777,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "A",
+      "rank": 4,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-021.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-021.html"
@@ -1939,7 +2442,16 @@
         "Match-by-match majority-position evidence pending; positional assignment is provisional."
       ],
       "nameOriginal": "Frank de Boer",
-      "clubNameOriginal": "FC Barcelona"
+      "clubNameOriginal": "FC Barcelona",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-barca-07",
@@ -1957,9 +2469,9 @@
       "leagueMinutes": 2182,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B",
+      "rank": 18,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-021.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-021.html"
@@ -1969,7 +2481,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "Philippe Christanval",
-      "clubNameOriginal": "FC Barcelona"
+      "clubNameOriginal": "FC Barcelona",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-barca-08",
@@ -1987,9 +2508,9 @@
       "leagueMinutes": 2977,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "A",
+      "rank": 3,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-021.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-021.html"
@@ -1998,7 +2519,16 @@
         "Match-by-match majority-position evidence pending; positional assignment is provisional."
       ],
       "nameOriginal": "Phillip Cocu",
-      "clubNameOriginal": "FC Barcelona"
+      "clubNameOriginal": "FC Barcelona",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-barca-09",
@@ -2016,9 +2546,9 @@
       "leagueMinutes": 2700,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "A-",
+      "rank": 5,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-021.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-021.html"
@@ -2027,7 +2557,16 @@
         "Match-by-match majority-position evidence pending; positional assignment is provisional."
       ],
       "nameOriginal": "Xavi Hernández",
-      "clubNameOriginal": "FC Barcelona"
+      "clubNameOriginal": "FC Barcelona",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-barca-10",
@@ -2045,9 +2584,9 @@
       "leagueMinutes": 1492,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B",
+      "rank": 19,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-021.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-021.html"
@@ -2057,7 +2596,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "Fábio Rochemback",
-      "clubNameOriginal": "FC Barcelona"
+      "clubNameOriginal": "FC Barcelona",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-barca-11",
@@ -2075,9 +2623,9 @@
       "leagueMinutes": 1692,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "A-",
+      "rank": 5,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-021.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-021.html"
@@ -2086,7 +2634,16 @@
         "Match-by-match majority-position evidence pending; positional assignment is provisional."
       ],
       "nameOriginal": "Luis Enrique",
-      "clubNameOriginal": "FC Barcelona"
+      "clubNameOriginal": "FC Barcelona",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-barca-12",
@@ -2104,9 +2661,9 @@
       "leagueMinutes": 1638,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "A",
+      "rank": 1,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-021.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-021.html"
@@ -2115,7 +2672,16 @@
         "Match-by-match majority-position evidence pending; positional assignment is provisional."
       ],
       "nameOriginal": "Rivaldo",
-      "clubNameOriginal": "FC Barcelona"
+      "clubNameOriginal": "FC Barcelona",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-barca-13",
@@ -2133,9 +2699,9 @@
       "leagueMinutes": 2762,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "A+",
+      "rank": 3,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-021.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-021.html"
@@ -2144,7 +2710,16 @@
         "Match-by-match majority-position evidence pending; positional assignment is provisional."
       ],
       "nameOriginal": "Patrick Kluivert",
-      "clubNameOriginal": "FC Barcelona"
+      "clubNameOriginal": "FC Barcelona",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-barca-14",
@@ -2154,17 +2729,17 @@
       "club": "barca",
       "clubId": "barca",
       "clubName": "FC Barcelona",
-      "born": null,
-      "role": "starter",
+      "born": "1981-12-11",
+      "role": "backup",
       "starts": 27,
       "leagueAppearances": 36,
       "leagueStarts": 27,
       "leagueMinutes": 2553,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "A",
+      "rank": 6,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-021.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-021.html"
@@ -2175,7 +2750,16 @@
         "27 league starts and 17 goals; second simultaneous starting striker."
       ],
       "nameOriginal": "Javier Saviola",
-      "clubNameOriginal": "FC Barcelona"
+      "clubNameOriginal": "FC Barcelona",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-celta-01",
@@ -2193,16 +2777,25 @@
       "leagueMinutes": 2863,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "verified",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B+",
+      "rank": 6,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0211.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0211.html"
       ],
       "verificationNotes": [],
       "nameOriginal": "Pablo Cavallero",
-      "clubNameOriginal": "RC Celta"
+      "clubNameOriginal": "RC Celta",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-celta-02",
@@ -2220,36 +2813,45 @@
       "leagueMinutes": 557,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "verified",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B",
+      "rank": 12,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0211.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0211.html"
       ],
       "verificationNotes": [],
       "nameOriginal": "José Manuel Pinto",
-      "clubNameOriginal": "RC Celta"
+      "clubNameOriginal": "RC Celta",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-celta-03",
-      "position": "RB",
+      "position": "CB",
       "nameKo": "세르히오 페르난데스",
       "name": "Sergio Fernández",
       "club": "celta",
       "clubId": "celta",
       "clubName": "RC Celta",
       "born": "1977-05-23",
-      "role": "starter",
+      "role": "backup",
       "starts": 17,
       "leagueAppearances": 20,
       "leagueStarts": 17,
       "leagueMinutes": 1548,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B",
+      "rank": 22,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0211.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0211.html"
@@ -2258,7 +2860,16 @@
         "Match-by-match majority-position evidence pending; positional assignment is provisional."
       ],
       "nameOriginal": "Sergio Fernández",
-      "clubNameOriginal": "RC Celta"
+      "clubNameOriginal": "RC Celta",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-celta-04",
@@ -2276,9 +2887,9 @@
       "leagueMinutes": 1966,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B",
+      "rank": 9,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0211.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0211.html"
@@ -2287,7 +2898,16 @@
         "Match-by-match majority-position evidence pending; positional assignment is provisional."
       ],
       "nameOriginal": "Juanfran García",
-      "clubNameOriginal": "RC Celta"
+      "clubNameOriginal": "RC Celta",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-celta-05",
@@ -2297,7 +2917,7 @@
       "club": "celta",
       "clubId": "celta",
       "clubName": "RC Celta",
-      "born": null,
+      "born": "1974-04-12",
       "role": "backup",
       "starts": 15,
       "leagueAppearances": 23,
@@ -2305,9 +2925,9 @@
       "leagueMinutes": 1453,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B+",
+      "rank": 7,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0211.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0211.html"
@@ -2317,7 +2937,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "Sylvinho",
-      "clubNameOriginal": "RC Celta"
+      "clubNameOriginal": "RC Celta",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-celta-06",
@@ -2335,9 +2964,9 @@
       "leagueMinutes": 2918,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B+",
+      "rank": 9,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0211.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0211.html"
@@ -2346,7 +2975,16 @@
         "Match-by-match majority-position evidence pending; positional assignment is provisional."
       ],
       "nameOriginal": "Fernando Cáceres",
-      "clubNameOriginal": "RC Celta"
+      "clubNameOriginal": "RC Celta",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-celta-07",
@@ -2356,7 +2994,7 @@
       "club": "celta",
       "clubId": "celta",
       "clubName": "RC Celta",
-      "born": null,
+      "born": "1969-11-13",
       "role": "starter",
       "starts": 20,
       "leagueAppearances": 20,
@@ -2364,9 +3002,9 @@
       "leagueMinutes": 1645,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B+",
+      "rank": 13,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0211.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0211.html"
@@ -2376,7 +3014,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "Eduardo Berizzo",
-      "clubNameOriginal": "RC Celta"
+      "clubNameOriginal": "RC Celta",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-celta-08",
@@ -2394,9 +3041,9 @@
       "leagueMinutes": 2799,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B+",
+      "rank": 7,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0211.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0211.html"
@@ -2406,7 +3053,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "Peter Luccin",
-      "clubNameOriginal": "RC Celta"
+      "clubNameOriginal": "RC Celta",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-celta-09",
@@ -2417,16 +3073,16 @@
       "clubId": "celta",
       "clubName": "RC Celta",
       "born": "1970-09-13",
-      "role": "backup",
+      "role": "starter",
       "starts": 18,
       "leagueAppearances": 27,
       "leagueStarts": 18,
       "leagueMinutes": 1752,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B",
+      "rank": 18,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0211.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0211.html"
@@ -2435,7 +3091,16 @@
         "Match-by-match majority-position evidence pending; positional assignment is provisional."
       ],
       "nameOriginal": "Everton Giovanella",
-      "clubNameOriginal": "RC Celta"
+      "clubNameOriginal": "RC Celta",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-celta-10",
@@ -2445,7 +3110,7 @@
       "club": "celta",
       "clubId": "celta",
       "clubName": "RC Celta",
-      "born": null,
+      "born": "1973-03-19",
       "role": "backup",
       "starts": 17,
       "leagueAppearances": 20,
@@ -2453,9 +3118,9 @@
       "leagueMinutes": 1435,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B",
+      "rank": 11,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0211.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0211.html"
@@ -2466,7 +3131,16 @@
         "Changed from CM to provisional DM to avoid omitting main creator Mostovoi; actual primary role pending."
       ],
       "nameOriginal": "Vágner",
-      "clubNameOriginal": "RC Celta"
+      "clubNameOriginal": "RC Celta",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-celta-11",
@@ -2484,9 +3158,9 @@
       "leagueMinutes": 2601,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "A-",
+      "rank": 3,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0211.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0211.html"
@@ -2496,7 +3170,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "Valeri Karpin",
-      "clubNameOriginal": "RC Celta"
+      "clubNameOriginal": "RC Celta",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-celta-12",
@@ -2514,9 +3197,9 @@
       "leagueMinutes": 1456,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B+",
+      "rank": 7,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0211.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0211.html"
@@ -2525,7 +3208,16 @@
         "Match-by-match majority-position evidence pending; positional assignment is provisional."
       ],
       "nameOriginal": "Gustavo López",
-      "clubNameOriginal": "RC Celta"
+      "clubNameOriginal": "RC Celta",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-celta-13",
@@ -2535,7 +3227,7 @@
       "club": "celta",
       "clubId": "celta",
       "clubName": "RC Celta",
-      "born": null,
+      "born": "1978-01-24",
       "role": "backup",
       "starts": 24,
       "leagueAppearances": 35,
@@ -2543,9 +3235,9 @@
       "leagueMinutes": 2084,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B+",
+      "rank": 8,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0211.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0211.html"
@@ -2556,7 +3248,16 @@
         "Right/left-wing majority remains pending lineup review."
       ],
       "nameOriginal": "Jesuli",
-      "clubNameOriginal": "RC Celta"
+      "clubNameOriginal": "RC Celta",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-celta-14",
@@ -2566,7 +3267,7 @@
       "club": "celta",
       "clubId": "celta",
       "clubName": "RC Celta",
-      "born": null,
+      "born": "1972-03-06",
       "role": "starter",
       "starts": 35,
       "leagueAppearances": 38,
@@ -2574,9 +3275,9 @@
       "leagueMinutes": 3026,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "A",
+      "rank": 4,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0211.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0211.html"
@@ -2586,7 +3287,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "Catanha",
-      "clubNameOriginal": "RC Celta"
+      "clubNameOriginal": "RC Celta",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-betis-01",
@@ -2604,9 +3314,9 @@
       "leagueMinutes": 3240,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "verified",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "A",
+      "rank": 2,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-028.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-028.html"
@@ -2615,7 +3325,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "Toni Prats",
-      "clubNameOriginal": "Real Betis"
+      "clubNameOriginal": "Real Betis",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-betis-02",
@@ -2633,9 +3352,9 @@
       "leagueMinutes": 1626,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B",
+      "rank": 9,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-028.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-028.html"
@@ -2645,7 +3364,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "Fernando Varela",
-      "clubNameOriginal": "Real Betis"
+      "clubNameOriginal": "Real Betis",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-betis-03",
@@ -2663,9 +3391,9 @@
       "leagueMinutes": 2383,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B+",
+      "rank": 5,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-028.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-028.html"
@@ -2675,7 +3403,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "Luis Fernández",
-      "clubNameOriginal": "Real Betis"
+      "clubNameOriginal": "Real Betis",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-betis-04",
@@ -2693,9 +3430,9 @@
       "leagueMinutes": 1083,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B-",
+      "rank": 14,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-028.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-028.html"
@@ -2705,7 +3442,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "Mingo",
-      "clubNameOriginal": "Real Betis"
+      "clubNameOriginal": "Real Betis",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-betis-05",
@@ -2723,9 +3469,9 @@
       "leagueMinutes": 1752,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B",
+      "rank": 21,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-028.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-028.html",
@@ -2736,7 +3482,16 @@
         "CB 20 league starts (less than Juanito 23); role label realigned to starts; many rotational starts."
       ],
       "nameOriginal": "Iulian Filipescu",
-      "clubNameOriginal": "Real Betis"
+      "clubNameOriginal": "Real Betis",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-betis-06",
@@ -2754,9 +3509,9 @@
       "leagueMinutes": 2313,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B+",
+      "rank": 11,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-028.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-028.html",
@@ -2766,7 +3521,16 @@
         "Match-by-match majority-position evidence pending; positional assignment is provisional."
       ],
       "nameOriginal": "David Rivas",
-      "clubNameOriginal": "Real Betis"
+      "clubNameOriginal": "Real Betis",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-betis-07",
@@ -2784,9 +3548,9 @@
       "leagueMinutes": 2136,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B+",
+      "rank": 12,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-028.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-028.html"
@@ -2797,7 +3561,16 @@
         "23 league starts and significant CB rotation; historical starter-equivalent despite CB 2+1 cap."
       ],
       "nameOriginal": "Juanito",
-      "clubNameOriginal": "Real Betis"
+      "clubNameOriginal": "Real Betis",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-betis-08",
@@ -2815,9 +3588,9 @@
       "leagueMinutes": 3022,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B+",
+      "rank": 6,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-028.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-028.html"
@@ -2827,7 +3600,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "Ito",
-      "clubNameOriginal": "Real Betis"
+      "clubNameOriginal": "Real Betis",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-betis-09",
@@ -2845,9 +3627,9 @@
       "leagueMinutes": 2939,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B+",
+      "rank": 7,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-028.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-028.html"
@@ -2857,7 +3639,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "Capi",
-      "clubNameOriginal": "Real Betis"
+      "clubNameOriginal": "Real Betis",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-betis-10",
@@ -2868,16 +3659,16 @@
       "clubId": "betis",
       "clubName": "Real Betis",
       "born": null,
-      "role": "backup",
+      "role": "starter",
       "starts": 23,
       "leagueAppearances": 26,
       "leagueStarts": 23,
       "leagueMinutes": 1976,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B",
+      "rank": 14,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-028.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-028.html"
@@ -2887,7 +3678,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "Benjamín Zarandona",
-      "clubNameOriginal": "Real Betis"
+      "clubNameOriginal": "Real Betis",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-betis-11",
@@ -2905,9 +3705,9 @@
       "leagueMinutes": 2786,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "A-",
+      "rank": 2,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-028.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-028.html"
@@ -2917,7 +3717,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "Joaquín Sánchez",
-      "clubNameOriginal": "Real Betis"
+      "clubNameOriginal": "Real Betis",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-betis-12",
@@ -2935,9 +3744,9 @@
       "leagueMinutes": 2827,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "A-",
+      "rank": 2,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-028.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-028.html"
@@ -2947,7 +3756,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "Denílson",
-      "clubNameOriginal": "Real Betis"
+      "clubNameOriginal": "Real Betis",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-betis-13",
@@ -2965,9 +3783,9 @@
       "leagueMinutes": 1210,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B",
+      "rank": 15,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-028.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-028.html"
@@ -2977,7 +3795,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "João Tomás",
-      "clubNameOriginal": "Real Betis"
+      "clubNameOriginal": "Real Betis",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-alaves-01",
@@ -2995,9 +3822,9 @@
       "leagueMinutes": 1678,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "verified",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B",
+      "rank": 9,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-023.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-023.html"
@@ -3006,7 +3833,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "Kike Burgos",
-      "clubNameOriginal": "Deportivo Alavés"
+      "clubNameOriginal": "Deportivo Alavés",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-alaves-02",
@@ -3024,16 +3860,25 @@
       "leagueMinutes": 1742,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "verified",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B-",
+      "rank": 13,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-023.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-023.html"
       ],
       "verificationNotes": [],
       "nameOriginal": "Martín Herrera",
-      "clubNameOriginal": "Deportivo Alavés"
+      "clubNameOriginal": "Deportivo Alavés",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-alaves-03",
@@ -3051,9 +3896,9 @@
       "leagueMinutes": 2919,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B+",
+      "rank": 4,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-023.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-023.html",
@@ -3064,7 +3909,16 @@
         "Match-by-match majority-position evidence pending; positional assignment is provisional."
       ],
       "nameOriginal": "Delfí Geli",
-      "clubNameOriginal": "Deportivo Alavés"
+      "clubNameOriginal": "Deportivo Alavés",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-alaves-04",
@@ -3082,9 +3936,9 @@
       "leagueMinutes": 3214,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "verified",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B+",
+      "rank": 4,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-023.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-023.html",
@@ -3094,7 +3948,16 @@
         "Match-by-match majority-position evidence pending; positional assignment is provisional."
       ],
       "nameOriginal": "Carles Llorens",
-      "clubNameOriginal": "Deportivo Alavés"
+      "clubNameOriginal": "Deportivo Alavés",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-alaves-05",
@@ -3112,9 +3975,9 @@
       "leagueMinutes": 2967,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "A-",
+      "rank": 7,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-023.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-023.html",
@@ -3124,7 +3987,16 @@
         "Match-by-match majority-position evidence pending; positional assignment is provisional."
       ],
       "nameOriginal": "Fabricio Coloccini",
-      "clubNameOriginal": "Deportivo Alavés"
+      "clubNameOriginal": "Deportivo Alavés",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-alaves-06",
@@ -3142,9 +4014,9 @@
       "leagueMinutes": 2627,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B+",
+      "rank": 10,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-023.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-023.html",
@@ -3154,7 +4026,16 @@
         "Match-by-match majority-position evidence pending; positional assignment is provisional."
       ],
       "nameOriginal": "Óscar Téllez",
-      "clubNameOriginal": "Deportivo Alavés"
+      "clubNameOriginal": "Deportivo Alavés",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-alaves-07",
@@ -3172,9 +4053,9 @@
       "leagueMinutes": 1359,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B-",
+      "rank": 25,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-023.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-023.html"
@@ -3184,7 +4065,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "Karmona",
-      "clubNameOriginal": "Deportivo Alavés"
+      "clubNameOriginal": "Deportivo Alavés",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-alaves-08",
@@ -3202,9 +4092,9 @@
       "leagueMinutes": 3323,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B+",
+      "rank": 5,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-023.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-023.html"
@@ -3213,7 +4103,16 @@
         "Match-by-match majority-position evidence pending; positional assignment is provisional."
       ],
       "nameOriginal": "Martín Astudillo",
-      "clubNameOriginal": "Deportivo Alavés"
+      "clubNameOriginal": "Deportivo Alavés",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-alaves-09",
@@ -3231,9 +4130,9 @@
       "leagueMinutes": 2833,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B+",
+      "rank": 8,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-023.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-023.html"
@@ -3242,7 +4141,16 @@
         "Match-by-match majority-position evidence pending; positional assignment is provisional."
       ],
       "nameOriginal": "Pablo Gómez",
-      "clubNameOriginal": "Deportivo Alavés"
+      "clubNameOriginal": "Deportivo Alavés",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-alaves-10",
@@ -3260,9 +4168,9 @@
       "leagueMinutes": 1988,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B",
+      "rank": 13,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-023.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-023.html"
@@ -3272,7 +4180,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "Juan Turiel",
-      "clubNameOriginal": "Deportivo Alavés"
+      "clubNameOriginal": "Deportivo Alavés",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-alaves-11",
@@ -3290,9 +4207,9 @@
       "leagueMinutes": 1937,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B",
+      "rank": 9,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-023.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-023.html"
@@ -3302,7 +4219,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "Magno",
-      "clubNameOriginal": "Deportivo Alavés"
+      "clubNameOriginal": "Deportivo Alavés",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-alaves-12",
@@ -3320,9 +4246,9 @@
       "leagueMinutes": 2247,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B",
+      "rank": 13,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-023.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-023.html"
@@ -3332,7 +4258,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "Rubén Navarro",
-      "clubNameOriginal": "Deportivo Alavés"
+      "clubNameOriginal": "Deportivo Alavés",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-alaves-13",
@@ -3350,9 +4285,9 @@
       "leagueMinutes": 1060,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B-",
+      "rank": 18,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-023.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-023.html"
@@ -3362,7 +4297,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "Iván Alonso",
-      "clubNameOriginal": "Deportivo Alavés"
+      "clubNameOriginal": "Deportivo Alavés",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-malaga-01",
@@ -3380,9 +4324,9 @@
       "leagueMinutes": 3301,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "verified",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B+",
+      "rank": 5,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0223.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0223.html"
@@ -3391,7 +4335,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "Pedro Contreras",
-      "clubNameOriginal": "Málaga CF"
+      "clubNameOriginal": "Málaga CF",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-malaga-02",
@@ -3409,9 +4362,9 @@
       "leagueMinutes": 1943,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B",
+      "rank": 6,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0223.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0223.html",
@@ -3421,7 +4374,16 @@
         "Match-by-match majority-position evidence pending; positional assignment is provisional."
       ],
       "nameOriginal": "Josemi",
-      "clubNameOriginal": "Málaga CF"
+      "clubNameOriginal": "Málaga CF",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-malaga-03",
@@ -3439,9 +4401,9 @@
       "leagueMinutes": 1182,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B-",
+      "rank": 13,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0223.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0223.html"
@@ -3451,7 +4413,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "Rojas",
-      "clubNameOriginal": "Málaga CF"
+      "clubNameOriginal": "Málaga CF",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-malaga-04",
@@ -3469,9 +4440,9 @@
       "leagueMinutes": 3110,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B",
+      "rank": 8,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0223.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0223.html",
@@ -3486,7 +4457,16 @@
         "https://www.transfermarkt.pe/malaga-cf_real-madrid-cf/index/spielbericht/1089693"
       ],
       "nameOriginal": "Fernando Sanz",
-      "clubNameOriginal": "Málaga CF"
+      "clubNameOriginal": "Málaga CF",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-malaga-05",
@@ -3504,9 +4484,9 @@
       "leagueMinutes": 3055,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B+",
+      "rank": 8,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0223.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0223.html",
@@ -3516,7 +4496,16 @@
         "Match-by-match majority-position evidence pending; positional assignment is provisional."
       ],
       "nameOriginal": "Litos",
-      "clubNameOriginal": "Málaga CF"
+      "clubNameOriginal": "Málaga CF",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-malaga-06",
@@ -3534,9 +4523,9 @@
       "leagueMinutes": 2699,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B",
+      "rank": 17,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0223.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0223.html",
@@ -3553,7 +4542,16 @@
         "https://elpais.com/diario/2002/01/20/deportes/1011481201_850215.html"
       ],
       "nameOriginal": "Mikel Roteta",
-      "clubNameOriginal": "Málaga CF"
+      "clubNameOriginal": "Málaga CF",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-malaga-07",
@@ -3571,9 +4569,9 @@
       "leagueMinutes": 2750,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B",
+      "rank": 10,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0223.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0223.html",
@@ -3585,7 +4583,16 @@
         "Position uncertain: Gerardo was not assumed to be a dedicated defensive midfielder."
       ],
       "nameOriginal": "Gerardo",
-      "clubNameOriginal": "Málaga CF"
+      "clubNameOriginal": "Málaga CF",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-malaga-08",
@@ -3603,9 +4610,9 @@
       "leagueMinutes": 2411,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B",
+      "rank": 12,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0223.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0223.html"
@@ -3615,7 +4622,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "Miguel Ángel",
-      "clubNameOriginal": "Málaga CF"
+      "clubNameOriginal": "Málaga CF",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-malaga-09",
@@ -3633,9 +4649,9 @@
       "leagueMinutes": 2982,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B+",
+      "rank": 4,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0223.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0223.html"
@@ -3645,7 +4661,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "Kizito Musampa",
-      "clubNameOriginal": "Málaga CF"
+      "clubNameOriginal": "Málaga CF",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-malaga-10",
@@ -3663,9 +4688,9 @@
       "leagueMinutes": 2977,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "A-",
+      "rank": 8,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0223.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0223.html"
@@ -3675,7 +4700,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "Julio Dely Valdés",
-      "clubNameOriginal": "Málaga CF"
+      "clubNameOriginal": "Málaga CF",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-malaga-11",
@@ -3693,9 +4727,9 @@
       "leagueMinutes": 1888,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B+",
+      "rank": 10,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0223.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0223.html"
@@ -3705,7 +4739,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "Darío Silva",
-      "clubNameOriginal": "Málaga CF"
+      "clubNameOriginal": "Málaga CF",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-villarreal-01",
@@ -3723,9 +4766,9 @@
       "leagueMinutes": 3420,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "verified",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B",
+      "rank": 8,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0238.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0238.html"
@@ -3734,7 +4777,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "Javier López Vallejo",
-      "clubNameOriginal": "Villarreal CF"
+      "clubNameOriginal": "Villarreal CF",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-villarreal-02",
@@ -3752,9 +4804,9 @@
       "leagueMinutes": 1524,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B-",
+      "rank": 12,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0238.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0238.html"
@@ -3765,7 +4817,16 @@
         "Corrected player's identity: BDFutbol lists Jesús Galván Carrillo; 22 appearances, 17 starts, 1524 minutes."
       ],
       "nameOriginal": "Jesús Galván",
-      "clubNameOriginal": "Villarreal CF"
+      "clubNameOriginal": "Villarreal CF",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-villarreal-03",
@@ -3783,9 +4844,9 @@
       "leagueMinutes": 3198,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "A-",
+      "rank": 2,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0238.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0238.html"
@@ -3795,7 +4856,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "Rodolfo Arruabarrena",
-      "clubNameOriginal": "Villarreal CF"
+      "clubNameOriginal": "Villarreal CF",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-villarreal-04",
@@ -3813,9 +4883,9 @@
       "leagueMinutes": 3072,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B",
+      "rank": 16,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0238.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0238.html"
@@ -3825,7 +4895,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "Quique Álvarez",
-      "clubNameOriginal": "Villarreal CF"
+      "clubNameOriginal": "Villarreal CF",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-villarreal-05",
@@ -3843,9 +4922,9 @@
       "leagueMinutes": 1991,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B",
+      "rank": 20,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0238.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0238.html"
@@ -3855,7 +4934,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "Unai Vergara",
-      "clubNameOriginal": "Villarreal CF"
+      "clubNameOriginal": "Villarreal CF",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-villarreal-06",
@@ -3873,9 +4961,9 @@
       "leagueMinutes": 1518,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B-",
+      "rank": 24,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0238.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0238.html"
@@ -3885,7 +4973,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "Sergio Ballesteros",
-      "clubNameOriginal": "Villarreal CF"
+      "clubNameOriginal": "Villarreal CF",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-villarreal-07",
@@ -3903,9 +5000,9 @@
       "leagueMinutes": 3036,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B",
+      "rank": 9,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0238.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0238.html"
@@ -3914,7 +5011,16 @@
         "Match-by-match majority-position evidence pending; positional assignment is provisional."
       ],
       "nameOriginal": "Constantin Gâlcă",
-      "clubNameOriginal": "Villarreal CF"
+      "clubNameOriginal": "Villarreal CF",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-villarreal-08",
@@ -3932,9 +5038,9 @@
       "leagueMinutes": 1974,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B",
+      "rank": 15,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0238.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0238.html"
@@ -3944,7 +5050,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "Guillermo Amor",
-      "clubNameOriginal": "Villarreal CF"
+      "clubNameOriginal": "Villarreal CF",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-villarreal-09",
@@ -3955,16 +5070,16 @@
       "clubId": "villarreal",
       "clubName": "Villarreal CF",
       "born": null,
-      "role": "backup",
+      "role": "starter",
       "starts": 20,
       "leagueAppearances": 27,
       "leagueStarts": 20,
       "leagueMinutes": 1750,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B",
+      "rank": 17,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0238.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0238.html"
@@ -3974,7 +5089,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "Diego Cagna",
-      "clubNameOriginal": "Villarreal CF"
+      "clubNameOriginal": "Villarreal CF",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-villarreal-10",
@@ -3992,9 +5116,9 @@
       "leagueMinutes": 2660,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B+",
+      "rank": 6,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0238.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0238.html"
@@ -4004,7 +5128,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "Jorge López",
-      "clubNameOriginal": "Villarreal CF"
+      "clubNameOriginal": "Villarreal CF",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-villarreal-11",
@@ -4022,9 +5155,9 @@
       "leagueMinutes": 2459,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B",
+      "rank": 8,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0238.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0238.html"
@@ -4034,7 +5167,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "Javier Calleja",
-      "clubNameOriginal": "Villarreal CF"
+      "clubNameOriginal": "Villarreal CF",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-villarreal-12",
@@ -4052,9 +5194,9 @@
       "leagueMinutes": 2892,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "A-",
+      "rank": 9,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0238.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0238.html"
@@ -4064,7 +5206,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "Víctor Fernández",
-      "clubNameOriginal": "Villarreal CF"
+      "clubNameOriginal": "Villarreal CF",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-villarreal-13",
@@ -4082,9 +5233,9 @@
       "leagueMinutes": 1460,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B",
+      "rank": 16,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0238.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0238.html"
@@ -4094,7 +5245,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "Martín Palermo",
-      "clubNameOriginal": "Villarreal CF"
+      "clubNameOriginal": "Villarreal CF",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-malaga-12",
@@ -4112,9 +5272,9 @@
       "leagueMinutes": 2682,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B",
+      "rank": 10,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0223.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0223.html",
@@ -4125,7 +5285,16 @@
         "Birthdate not independently confirmed; null intentionally."
       ],
       "nameOriginal": "Romero",
-      "clubNameOriginal": "Málaga CF"
+      "clubNameOriginal": "Málaga CF",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-valencia-15",
@@ -4135,7 +5304,7 @@
       "club": "valencia",
       "clubId": "valencia",
       "clubName": "Valencia CF",
-      "born": null,
+      "born": "1977-06-23",
       "role": "backup",
       "starts": 21,
       "leagueAppearances": 26,
@@ -4143,9 +5312,9 @@
       "leagueMinutes": 1661,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B+",
+      "rank": 9,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0236.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0236.html"
@@ -4159,7 +5328,16 @@
       ],
       "eligibilityReview": "draft",
       "nameOriginal": "Miguel Ángel Angulo",
-      "clubNameOriginal": "Valencia CF"
+      "clubNameOriginal": "Valencia CF",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-madrid-13",
@@ -4169,7 +5347,7 @@
       "club": "madrid",
       "clubId": "madrid",
       "clubName": "Real Madrid",
-      "born": null,
+      "born": "1976-10-07",
       "role": "starter",
       "starts": 14,
       "leagueAppearances": 28,
@@ -4177,9 +5355,9 @@
       "leagueMinutes": 1309,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B",
+      "rank": 13,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-022.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-022.html"
@@ -4193,7 +5371,16 @@
       ],
       "eligibilityReview": "draft",
       "nameOriginal": "Santiago Solari",
-      "clubNameOriginal": "Real Madrid"
+      "clubNameOriginal": "Real Madrid",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-madrid-14",
@@ -4203,17 +5390,17 @@
       "club": "madrid",
       "clubId": "madrid",
       "clubName": "Real Madrid",
-      "born": null,
-      "role": "backup",
+      "born": "1976-10-31",
+      "role": "starter",
       "starts": 9,
       "leagueAppearances": 29,
       "leagueStarts": 9,
       "leagueMinutes": 1057,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B+",
+      "rank": 11,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-022.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-022.html"
@@ -4227,7 +5414,16 @@
       ],
       "eligibilityReview": "draft",
       "nameOriginal": "Guti",
-      "clubNameOriginal": "Real Madrid"
+      "clubNameOriginal": "Real Madrid",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-madrid-15",
@@ -4237,7 +5433,7 @@
       "club": "madrid",
       "clubId": "madrid",
       "clubName": "Real Madrid",
-      "born": null,
+      "born": "1972-02-11",
       "role": "backup",
       "starts": 13,
       "leagueAppearances": 23,
@@ -4245,9 +5441,9 @@
       "leagueMinutes": 1296,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B",
+      "rank": 11,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-022.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-022.html"
@@ -4261,7 +5457,16 @@
       ],
       "eligibilityReview": "draft",
       "nameOriginal": "Steve McManaman",
-      "clubNameOriginal": "Real Madrid"
+      "clubNameOriginal": "Real Madrid",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-barca-15",
@@ -4271,7 +5476,7 @@
       "club": "barca",
       "clubId": "barca",
       "clubName": "FC Barcelona",
-      "born": null,
+      "born": "1971-12-28",
       "role": "backup",
       "starts": 15,
       "leagueAppearances": 18,
@@ -4279,9 +5484,9 @@
       "leagueMinutes": 1338,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B",
+      "rank": 12,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-021.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-021.html"
@@ -4295,7 +5500,16 @@
       ],
       "eligibilityReview": "draft",
       "nameOriginal": "Sergi Barjuán",
-      "clubNameOriginal": "FC Barcelona"
+      "clubNameOriginal": "FC Barcelona",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-deportivo-17",
@@ -4305,7 +5519,7 @@
       "club": "deportivo",
       "clubId": "deportivo",
       "clubName": "RC Deportivo de La Coruña",
-      "born": null,
+      "born": "1975-06-17",
       "role": "starter",
       "starts": 32,
       "leagueAppearances": 36,
@@ -4313,9 +5527,9 @@
       "leagueMinutes": 2578,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "A",
+      "rank": 3,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0213.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0213.html"
@@ -4329,11 +5543,20 @@
       ],
       "eligibilityReview": "draft",
       "nameOriginal": "Juan Carlos Valerón",
-      "clubNameOriginal": "RC Deportivo de La Coruña"
+      "clubNameOriginal": "RC Deportivo de La Coruña",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-celta-15",
-      "position": "LW",
+      "position": "ST",
       "nameKo": "에두 슈미트",
       "name": "Edú",
       "club": "celta",
@@ -4347,9 +5570,9 @@
       "leagueMinutes": 1867,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B+",
+      "rank": 11,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0211.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0211.html"
@@ -4363,7 +5586,16 @@
       ],
       "eligibilityReview": "draft",
       "nameOriginal": "Edú",
-      "clubNameOriginal": "RC Celta"
+      "clubNameOriginal": "RC Celta",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-celta-16",
@@ -4373,7 +5605,7 @@
       "club": "celta",
       "clubId": "celta",
       "clubName": "RC Celta",
-      "born": null,
+      "born": "1968-08-22",
       "role": "starter",
       "starts": 28,
       "leagueAppearances": 30,
@@ -4381,9 +5613,9 @@
       "leagueMinutes": 2495,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "A+",
+      "rank": 2,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0211.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0211.html"
@@ -4397,7 +5629,16 @@
       ],
       "eligibilityReview": "draft",
       "nameOriginal": "Aleksandr Mostovoi",
-      "clubNameOriginal": "RC Celta"
+      "clubNameOriginal": "RC Celta",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-celta-17",
@@ -4407,17 +5648,17 @@
       "club": "celta",
       "clubId": "celta",
       "clubName": "RC Celta",
-      "born": null,
-      "role": "backup",
+      "born": "1977-05-17",
+      "role": "starter",
       "starts": 15,
       "leagueAppearances": 16,
       "leagueStarts": 15,
       "leagueMinutes": 1270,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B",
+      "rank": 10,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0211.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0211.html"
@@ -4431,7 +5672,16 @@
       ],
       "eligibilityReview": "draft",
       "nameOriginal": "Juan Velasco",
-      "clubNameOriginal": "RC Celta"
+      "clubNameOriginal": "RC Celta",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-betis-14",
@@ -4449,9 +5699,9 @@
       "leagueMinutes": 956,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B",
+      "rank": 17,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-028.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-028.html"
@@ -4465,11 +5715,20 @@
       ],
       "eligibilityReview": "draft",
       "nameOriginal": "Dani",
-      "clubNameOriginal": "Real Betis"
+      "clubNameOriginal": "Real Betis",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-alaves-14",
-      "position": "CAM",
+      "position": "CM",
       "nameKo": "조르디 크라위프",
       "name": "Jordi Cruyff",
       "club": "alaves",
@@ -4483,9 +5742,9 @@
       "leagueMinutes": 2428,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B+",
+      "rank": 9,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-023.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-023.html"
@@ -4499,7 +5758,16 @@
       ],
       "eligibilityReview": "exception_pending_tactical_review",
       "nameOriginal": "Jordi Cruyff",
-      "clubNameOriginal": "Deportivo Alavés"
+      "clubNameOriginal": "Deportivo Alavés",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-villarreal-14",
@@ -4516,10 +5784,10 @@
       "leagueStarts": 22,
       "leagueMinutes": 1965,
       "appearanceScope": "La Liga 2001-02 only",
-      "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "positionVerification": "verified",
+      "tier": "B",
+      "rank": 7,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0238.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0238.html"
@@ -4529,11 +5797,21 @@
       ],
       "verificationNotes": [
         "Right-back assignment provisional, match-level majority not audited",
-        "BDFutbol club-season appearance/starts/minutes checked against lineup listing; majority position NOT confirmed"
+        "BDFutbol club-season appearance/starts/minutes checked against lineup listing; majority position NOT confirmed",
+        "2002-05-24 AS contemporaneous Espanyol transfer identifies right back: https://as.com/futbol/2002/05/24/mas_futbol/1022191213_850215.html"
       ],
       "eligibilityReview": "draft",
       "nameOriginal": "Xavi Roca",
-      "clubNameOriginal": "Villarreal CF"
+      "clubNameOriginal": "Villarreal CF",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-villarreal-15",
@@ -4551,9 +5829,9 @@
       "leagueMinutes": 1551,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "B",
+      "rank": 11,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0238.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0238.html"
@@ -4567,7 +5845,16 @@
       ],
       "eligibilityReview": "draft",
       "nameOriginal": "Antonio Guayre",
-      "clubNameOriginal": "Villarreal CF"
+      "clubNameOriginal": "Villarreal CF",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
     },
     {
       "id": "laliga-200102-valencia-16",
@@ -4577,7 +5864,7 @@
       "club": "valencia",
       "clubId": "valencia",
       "clubName": "Valencia CF",
-      "born": null,
+      "born": "1979-11-03",
       "role": "starter",
       "starts": 23,
       "leagueAppearances": 33,
@@ -4585,9 +5872,9 @@
       "leagueMinutes": 2119,
       "appearanceScope": "La Liga 2001-02 only",
       "positionVerification": "needs_review",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
+      "tier": "A",
+      "rank": 4,
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2001-0236.html",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2001-0236.html"
@@ -4599,10 +5886,936 @@
         "Attacking central creator, 23 league starts; stored in CM pool only provisionally under 4-2-3-1 no-CAM convention. Actual CAM role must be independently audited."
       ],
       "nameOriginal": "Pablo Aimar",
-      "clubNameOriginal": "Valencia CF"
+      "clubNameOriginal": "Valencia CF",
+      "tierReview": "2001-02 current-season strongest, 2000-01 second, 1999-00 third; individual 3-season evidence audit not complete",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit",
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02"
+        ]
+      }
+    },
+    {
+      "id": "laliga-200102-valencia-17",
+      "name": "Fábio Aurélio",
+      "nameKo": "파비우 아우렐리우",
+      "nameOriginal": "Fábio Aurélio",
+      "born": "1979-09-24",
+      "club": "valencia",
+      "clubId": "valencia",
+      "clubName": "Valencia CF",
+      "position": "LB",
+      "role": "backup",
+      "starts": 6,
+      "leagueStarts": 6,
+      "leagueAppearances": null,
+      "leagueMinutes": null,
+      "appearanceScope": "La Liga 2001-02 only",
+      "positionVerification": "needs_review",
+      "review": "preliminary_tier_position_pending_user_approval",
+      "verificationNotes": [
+        "Exact positional majority still requires match-by-match audit"
+      ],
+      "tier": "B-",
+      "rank": 15,
+      "tierReview": "Qualitative 1999-00 to 2001-02; earlier two years not independently checked",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit"
+      },
+      "evidence": "https://www.bdfutbol.com/en/t/t2001-0236.html",
+      "sources": [
+        "https://www.bdfutbol.com/en/t/t2001-0236.html"
+      ]
+    },
+    {
+      "id": "laliga-200102-valencia-18",
+      "name": "Jocelyn Angloma",
+      "nameKo": "조슬랭 앙글로마",
+      "nameOriginal": "Jocelyn Angloma",
+      "born": "1965-08-07",
+      "club": "valencia",
+      "clubId": "valencia",
+      "clubName": "Valencia CF",
+      "position": "RB",
+      "role": "backup",
+      "starts": 2,
+      "leagueStarts": 2,
+      "leagueAppearances": null,
+      "leagueMinutes": null,
+      "appearanceScope": "La Liga 2001-02 only",
+      "positionVerification": "needs_review",
+      "review": "preliminary_tier_position_pending_user_approval",
+      "verificationNotes": [
+        "Exact positional majority still requires match-by-match audit"
+      ],
+      "tier": "B-",
+      "rank": 16,
+      "tierReview": "Qualitative 1999-00 to 2001-02; earlier two years not independently checked",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit"
+      },
+      "evidence": "https://www.bdfutbol.com/en/t/t2001-0236.html",
+      "sources": [
+        "https://www.bdfutbol.com/en/t/t2001-0236.html"
+      ]
+    },
+    {
+      "id": "laliga-200102-valencia-19",
+      "name": "Gonzalo de los Santos",
+      "nameKo": "곤살로 데 로스 산토스",
+      "nameOriginal": "Gonzalo de los Santos",
+      "born": "1976-07-19",
+      "club": "valencia",
+      "clubId": "valencia",
+      "clubName": "Valencia CF",
+      "position": "DM",
+      "role": "backup",
+      "starts": 12,
+      "leagueStarts": 12,
+      "leagueAppearances": null,
+      "leagueMinutes": null,
+      "appearanceScope": "La Liga 2001-02 only",
+      "positionVerification": "needs_review",
+      "review": "preliminary_tier_position_pending_user_approval",
+      "verificationNotes": [
+        "Exact positional majority still requires match-by-match audit"
+      ],
+      "tier": "B-",
+      "rank": 12,
+      "tierReview": "Qualitative 1999-00 to 2001-02; earlier two years not independently checked",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit"
+      },
+      "evidence": "https://www.bdfutbol.com/en/t/t2001-0236.html",
+      "sources": [
+        "https://www.bdfutbol.com/en/t/t2001-0236.html"
+      ]
+    },
+    {
+      "id": "laliga-200102-deportivo-18",
+      "name": "Nuno Espírito Santo",
+      "nameKo": "누누 이스피리투 산투",
+      "nameOriginal": "Nuno Espírito Santo",
+      "born": "1974-01-25",
+      "club": "deportivo",
+      "clubId": "deportivo",
+      "clubName": "RC Deportivo de La Coruña",
+      "position": "GK",
+      "role": "backup",
+      "starts": 2,
+      "leagueStarts": 2,
+      "leagueAppearances": null,
+      "leagueMinutes": null,
+      "appearanceScope": "La Liga 2001-02 only",
+      "positionVerification": "needs_review",
+      "review": "preliminary_tier_position_pending_user_approval",
+      "verificationNotes": [
+        "Exact positional majority still requires match-by-match audit"
+      ],
+      "tier": "B-",
+      "rank": 15,
+      "tierReview": "Qualitative 1999-00 to 2001-02; earlier two years not independently checked",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit"
+      },
+      "evidence": "https://www.bdfutbol.com/en/t/t2001-0213.html",
+      "sources": [
+        "https://www.bdfutbol.com/en/t/t2001-0213.html"
+      ]
+    },
+    {
+      "id": "laliga-200102-deportivo-19",
+      "name": "Djalminha",
+      "nameKo": "잘미냐",
+      "nameOriginal": "Djalminha",
+      "born": "1970-12-09",
+      "club": "deportivo",
+      "clubId": "deportivo",
+      "clubName": "RC Deportivo de La Coruña",
+      "position": "CM",
+      "role": "backup",
+      "starts": 5,
+      "leagueStarts": 5,
+      "leagueAppearances": null,
+      "leagueMinutes": null,
+      "appearanceScope": "La Liga 2001-02 only",
+      "positionVerification": "needs_review",
+      "review": "preliminary_tier_position_pending_user_approval",
+      "verificationNotes": [
+        "Exact positional majority still requires match-by-match audit"
+      ],
+      "tier": "B-",
+      "rank": 23,
+      "tierReview": "Qualitative 1999-00 to 2001-02; earlier two years not independently checked",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit"
+      },
+      "evidence": "https://www.bdfutbol.com/en/t/t2001-0213.html",
+      "sources": [
+        "https://www.bdfutbol.com/en/t/t2001-0213.html"
+      ]
+    },
+    {
+      "id": "laliga-200102-madrid-16",
+      "name": "Raúl Bravo",
+      "nameKo": "라울 브라보",
+      "nameOriginal": "Raúl Bravo",
+      "born": "1981-04-14",
+      "club": "madrid",
+      "clubId": "madrid",
+      "clubName": "Real Madrid",
+      "position": "LB",
+      "role": "backup",
+      "starts": 6,
+      "leagueStarts": 6,
+      "leagueAppearances": null,
+      "leagueMinutes": null,
+      "appearanceScope": "La Liga 2001-02 only",
+      "positionVerification": "needs_review",
+      "review": "preliminary_tier_position_pending_user_approval",
+      "verificationNotes": [
+        "Exact positional majority still requires match-by-match audit"
+      ],
+      "tier": "C+",
+      "rank": 16,
+      "tierReview": "Qualitative 1999-00 to 2001-02; earlier two years not independently checked",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit"
+      },
+      "evidence": "https://fbref.com/en/squads/53a2f082/2001-2002/Real-Madrid-Stats",
+      "sources": [
+        "https://fbref.com/en/squads/53a2f082/2001-2002/Real-Madrid-Stats"
+      ]
+    },
+    {
+      "id": "laliga-200102-madrid-17",
+      "name": "Geremi Njitap",
+      "nameKo": "제레미 은지타프",
+      "nameOriginal": "Geremi Njitap",
+      "born": "1978-12-20",
+      "club": "madrid",
+      "clubId": "madrid",
+      "clubName": "Real Madrid",
+      "position": "RB",
+      "role": "backup",
+      "starts": 4,
+      "leagueStarts": 4,
+      "leagueAppearances": null,
+      "leagueMinutes": null,
+      "appearanceScope": "La Liga 2001-02 only",
+      "positionVerification": "needs_review",
+      "review": "preliminary_tier_position_pending_user_approval",
+      "verificationNotes": [
+        "Exact positional majority still requires match-by-match audit"
+      ],
+      "tier": "B-",
+      "rank": 15,
+      "tierReview": "Qualitative 1999-00 to 2001-02; earlier two years not independently checked",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit"
+      },
+      "evidence": "https://fbref.com/en/squads/53a2f082/2001-2002/Real-Madrid-Stats",
+      "sources": [
+        "https://fbref.com/en/squads/53a2f082/2001-2002/Real-Madrid-Stats"
+      ]
+    },
+    {
+      "id": "laliga-200102-madrid-18",
+      "name": "Flávio Conceição",
+      "nameKo": "플라비우 콘세이상",
+      "nameOriginal": "Flávio Conceição",
+      "born": "1974-06-12",
+      "club": "madrid",
+      "clubId": "madrid",
+      "clubName": "Real Madrid",
+      "position": "DM",
+      "role": "backup",
+      "starts": 7,
+      "leagueStarts": 7,
+      "leagueAppearances": null,
+      "leagueMinutes": null,
+      "appearanceScope": "La Liga 2001-02 only",
+      "positionVerification": "needs_review",
+      "review": "preliminary_tier_position_pending_user_approval",
+      "verificationNotes": [
+        "Exact positional majority still requires match-by-match audit"
+      ],
+      "tier": "B-",
+      "rank": 14,
+      "tierReview": "Qualitative 1999-00 to 2001-02; earlier two years not independently checked",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit"
+      },
+      "evidence": "https://fbref.com/en/squads/53a2f082/2001-2002/Real-Madrid-Stats",
+      "sources": [
+        "https://fbref.com/en/squads/53a2f082/2001-2002/Real-Madrid-Stats"
+      ]
+    },
+    {
+      "id": "laliga-200102-madrid-19",
+      "name": "Albert Celades",
+      "nameKo": "알베르트 셀라데스",
+      "nameOriginal": "Albert Celades",
+      "born": "1975-09-29",
+      "club": "madrid",
+      "clubId": "madrid",
+      "clubName": "Real Madrid",
+      "position": "CM",
+      "role": "backup",
+      "starts": 6,
+      "leagueStarts": 6,
+      "leagueAppearances": null,
+      "leagueMinutes": null,
+      "appearanceScope": "La Liga 2001-02 only",
+      "positionVerification": "needs_review",
+      "review": "preliminary_tier_position_pending_user_approval",
+      "verificationNotes": [
+        "Exact positional majority still requires match-by-match audit"
+      ],
+      "tier": "B",
+      "rank": 20,
+      "tierReview": "Qualitative 1999-00 to 2001-02; earlier two years not independently checked",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit"
+      },
+      "evidence": "https://fbref.com/en/squads/53a2f082/2001-2002/Real-Madrid-Stats",
+      "sources": [
+        "https://fbref.com/en/squads/53a2f082/2001-2002/Real-Madrid-Stats"
+      ]
+    },
+    {
+      "id": "laliga-200102-madrid-20",
+      "name": "Pedro Munitis",
+      "nameKo": "페드로 무니티스",
+      "nameOriginal": "Pedro Munitis",
+      "born": "1975-06-19",
+      "club": "madrid",
+      "clubId": "madrid",
+      "clubName": "Real Madrid",
+      "position": "LW",
+      "role": "backup",
+      "starts": 5,
+      "leagueStarts": 5,
+      "leagueAppearances": null,
+      "leagueMinutes": null,
+      "appearanceScope": "La Liga 2001-02 only",
+      "positionVerification": "needs_review",
+      "review": "preliminary_tier_position_pending_user_approval",
+      "verificationNotes": [
+        "Exact positional majority still requires match-by-match audit"
+      ],
+      "tier": "B-",
+      "rank": 14,
+      "tierReview": "Qualitative 1999-00 to 2001-02; earlier two years not independently checked",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit"
+      },
+      "evidence": "https://fbref.com/en/squads/53a2f082/2001-2002/Real-Madrid-Stats",
+      "sources": [
+        "https://fbref.com/en/squads/53a2f082/2001-2002/Real-Madrid-Stats"
+      ]
+    },
+    {
+      "id": "laliga-200102-barca-16",
+      "name": "Patrik Andersson",
+      "nameKo": "파트리크 안데르손",
+      "nameOriginal": "Patrik Andersson",
+      "born": "1971-08-18",
+      "club": "barca",
+      "clubId": "barca",
+      "clubName": "FC Barcelona",
+      "position": "CB",
+      "role": "backup",
+      "starts": 11,
+      "leagueStarts": 11,
+      "leagueAppearances": null,
+      "leagueMinutes": null,
+      "appearanceScope": "La Liga 2001-02 only",
+      "positionVerification": "needs_review",
+      "review": "preliminary_tier_position_pending_user_approval",
+      "verificationNotes": [
+        "Exact positional majority still requires match-by-match audit"
+      ],
+      "tier": "B-",
+      "rank": 26,
+      "tierReview": "Qualitative 1999-00 to 2001-02; earlier two years not independently checked",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit"
+      },
+      "evidence": "https://fbref.com/en/squads/206d90db/2001-2002/Barcelona-Stats",
+      "sources": [
+        "https://fbref.com/en/squads/206d90db/2001-2002/Barcelona-Stats"
+      ]
+    },
+    {
+      "id": "laliga-200102-barca-17",
+      "name": "Thiago Motta",
+      "nameKo": "티아구 모타",
+      "nameOriginal": "Thiago Motta",
+      "born": "1982-08-28",
+      "club": "barca",
+      "clubId": "barca",
+      "clubName": "FC Barcelona",
+      "position": "DM",
+      "role": "backup",
+      "starts": 7,
+      "leagueStarts": 7,
+      "leagueAppearances": null,
+      "leagueMinutes": null,
+      "appearanceScope": "La Liga 2001-02 only",
+      "positionVerification": "needs_review",
+      "review": "preliminary_tier_position_pending_user_approval",
+      "verificationNotes": [
+        "Exact positional majority still requires match-by-match audit"
+      ],
+      "tier": "B-",
+      "rank": 13,
+      "tierReview": "Qualitative 1999-00 to 2001-02; earlier two years not independently checked",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit"
+      },
+      "evidence": "https://fbref.com/en/squads/206d90db/2001-2002/Barcelona-Stats",
+      "sources": [
+        "https://fbref.com/en/squads/206d90db/2001-2002/Barcelona-Stats"
+      ]
+    },
+    {
+      "id": "laliga-200102-barca-18",
+      "name": "Marc Overmars",
+      "nameKo": "마르크 오버르마르스",
+      "nameOriginal": "Marc Overmars",
+      "born": "1973-03-29",
+      "club": "barca",
+      "clubId": "barca",
+      "clubName": "FC Barcelona",
+      "position": "LW",
+      "role": "backup",
+      "starts": 14,
+      "leagueStarts": 14,
+      "leagueAppearances": null,
+      "leagueMinutes": null,
+      "appearanceScope": "La Liga 2001-02 only",
+      "positionVerification": "needs_review",
+      "review": "preliminary_tier_position_pending_user_approval",
+      "verificationNotes": [
+        "Exact positional majority still requires match-by-match audit"
+      ],
+      "tier": "B",
+      "rank": 12,
+      "tierReview": "Qualitative 1999-00 to 2001-02; earlier two years not independently checked",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit"
+      },
+      "evidence": "https://fbref.com/en/squads/206d90db/2001-2002/Barcelona-Stats",
+      "sources": [
+        "https://fbref.com/en/squads/206d90db/2001-2002/Barcelona-Stats"
+      ]
+    },
+    {
+      "id": "laliga-200102-barca-19",
+      "name": "Geovanni",
+      "nameKo": "조반니",
+      "nameOriginal": "Geovanni",
+      "born": "1980-01-11",
+      "club": "barca",
+      "clubId": "barca",
+      "clubName": "FC Barcelona",
+      "position": "RW",
+      "role": "backup",
+      "starts": 8,
+      "leagueStarts": 8,
+      "leagueAppearances": null,
+      "leagueMinutes": null,
+      "appearanceScope": "La Liga 2001-02 only",
+      "positionVerification": "needs_review",
+      "review": "preliminary_tier_position_pending_user_approval",
+      "verificationNotes": [
+        "Exact positional majority still requires match-by-match audit"
+      ],
+      "tier": "C+",
+      "rank": 13,
+      "tierReview": "Qualitative 1999-00 to 2001-02; earlier two years not independently checked",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit"
+      },
+      "evidence": "https://fbref.com/en/squads/206d90db/2001-2002/Barcelona-Stats",
+      "sources": [
+        "https://fbref.com/en/squads/206d90db/2001-2002/Barcelona-Stats"
+      ]
+    },
+    {
+      "id": "laliga-200102-barca-20",
+      "name": "Michael Reiziger",
+      "nameKo": "미하엘 레이치허르",
+      "nameOriginal": "Michael Reiziger",
+      "born": "1973-05-03",
+      "club": "barca",
+      "clubId": "barca",
+      "clubName": "FC Barcelona",
+      "position": "RB",
+      "role": "backup",
+      "starts": 6,
+      "leagueStarts": 6,
+      "leagueAppearances": null,
+      "leagueMinutes": null,
+      "appearanceScope": "La Liga 2001-02 only",
+      "positionVerification": "needs_review",
+      "review": "preliminary_tier_position_pending_user_approval",
+      "verificationNotes": [
+        "Exact positional majority still requires match-by-match audit"
+      ],
+      "tier": "B",
+      "rank": 11,
+      "tierReview": "Qualitative 1999-00 to 2001-02; earlier two years not independently checked",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit"
+      },
+      "evidence": "https://fbref.com/en/squads/206d90db/2001-2002/Barcelona-Stats",
+      "sources": [
+        "https://fbref.com/en/squads/206d90db/2001-2002/Barcelona-Stats"
+      ]
+    },
+    {
+      "id": "laliga-200102-celta-18",
+      "name": "Pablo Coira",
+      "nameKo": "파블로 코이라",
+      "nameOriginal": "Pablo Coira",
+      "born": "1979-10-18",
+      "club": "celta",
+      "clubId": "celta",
+      "clubName": "RC Celta",
+      "position": "RB",
+      "role": "backup",
+      "starts": null,
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueMinutes": null,
+      "appearanceScope": "La Liga 2001-02 only",
+      "positionVerification": "needs_review",
+      "review": "preliminary_tier_position_pending_user_approval",
+      "verificationNotes": [
+        "Exact positional majority still requires match-by-match audit",
+        "2001-02 league starts not independently verified; null intentional"
+      ],
+      "tier": "C+",
+      "rank": 18,
+      "tierReview": "Qualitative 1999-00 to 2001-02; earlier two years not independently checked",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit"
+      },
+      "evidence": "https://www.bdfutbol.com/en/t/t2001-0211.html",
+      "sources": [
+        "https://www.bdfutbol.com/en/t/t2001-0211.html"
+      ]
+    },
+    {
+      "id": "laliga-200102-betis-15",
+      "name": "Ronny Gaspercic",
+      "nameKo": "로니 가스페르치치",
+      "nameOriginal": "Ronny Gaspercic",
+      "born": "1969-05-09",
+      "club": "betis",
+      "clubId": "betis",
+      "clubName": "Real Betis",
+      "position": "GK",
+      "role": "backup",
+      "starts": null,
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueMinutes": null,
+      "appearanceScope": "La Liga 2001-02 only",
+      "positionVerification": "needs_review",
+      "review": "preliminary_tier_position_pending_user_approval",
+      "verificationNotes": [
+        "Exact positional majority still requires match-by-match audit",
+        "2001-02 league starts not independently verified; null intentional"
+      ],
+      "tier": "C+",
+      "rank": 16,
+      "tierReview": "Qualitative 1999-00 to 2001-02; earlier two years not independently checked",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit"
+      },
+      "evidence": "https://www.bdfutbol.com/en/t/t2001-028.html",
+      "sources": [
+        "https://www.bdfutbol.com/en/t/t2001-028.html"
+      ]
+    },
+    {
+      "id": "laliga-200102-betis-16",
+      "name": "Washington Tais",
+      "nameKo": "워싱턴 타이스",
+      "nameOriginal": "Washington Tais",
+      "born": "1972-12-21",
+      "club": "betis",
+      "clubId": "betis",
+      "clubName": "Real Betis",
+      "position": "RB",
+      "role": "backup",
+      "starts": 11,
+      "leagueStarts": 11,
+      "leagueAppearances": null,
+      "leagueMinutes": null,
+      "appearanceScope": "La Liga 2001-02 only",
+      "positionVerification": "needs_review",
+      "review": "preliminary_tier_position_pending_user_approval",
+      "verificationNotes": [
+        "Exact positional majority still requires match-by-match audit"
+      ],
+      "tier": "B-",
+      "rank": 14,
+      "tierReview": "Qualitative 1999-00 to 2001-02; earlier two years not independently checked",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit"
+      },
+      "evidence": "https://www.bdfutbol.com/en/t/t2001-028.html",
+      "sources": [
+        "https://www.bdfutbol.com/en/t/t2001-028.html"
+      ]
+    },
+    {
+      "id": "laliga-200102-betis-17",
+      "name": "Juanjo Cañas",
+      "nameKo": "후안호 카냐스",
+      "nameOriginal": "Juanjo Cañas",
+      "born": "1972-04-17",
+      "club": "betis",
+      "clubId": "betis",
+      "clubName": "Real Betis",
+      "position": "DM",
+      "role": "backup",
+      "starts": null,
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueMinutes": null,
+      "appearanceScope": "La Liga 2001-02 only",
+      "positionVerification": "needs_review",
+      "review": "preliminary_tier_position_pending_user_approval",
+      "verificationNotes": [
+        "Exact positional majority still requires match-by-match audit",
+        "2001-02 league starts not independently verified; null intentional"
+      ],
+      "tier": "B-",
+      "rank": 15,
+      "tierReview": "Qualitative 1999-00 to 2001-02; earlier two years not independently checked",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit"
+      },
+      "evidence": "https://www.bdfutbol.com/en/t/t2001-028.html",
+      "sources": [
+        "https://www.bdfutbol.com/en/t/t2001-028.html"
+      ]
+    },
+    {
+      "id": "laliga-200102-betis-18",
+      "name": "José Calado",
+      "nameKo": "주제 칼라두",
+      "nameOriginal": "José Calado",
+      "born": "1974-03-01",
+      "club": "betis",
+      "clubId": "betis",
+      "clubName": "Real Betis",
+      "position": "CM",
+      "role": "backup",
+      "starts": 5,
+      "leagueStarts": 5,
+      "leagueAppearances": null,
+      "leagueMinutes": null,
+      "appearanceScope": "La Liga 2001-02 only",
+      "positionVerification": "needs_review",
+      "review": "preliminary_tier_position_pending_user_approval",
+      "verificationNotes": [
+        "Exact positional majority still requires match-by-match audit"
+      ],
+      "tier": "B-",
+      "rank": 22,
+      "tierReview": "Qualitative 1999-00 to 2001-02; earlier two years not independently checked",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit"
+      },
+      "evidence": "https://www.bdfutbol.com/en/t/t2001-028.html",
+      "sources": [
+        "https://www.bdfutbol.com/en/t/t2001-028.html"
+      ]
+    },
+    {
+      "id": "laliga-200102-alaves-15",
+      "name": "Ibon Begoña",
+      "nameKo": "이본 베고냐",
+      "nameOriginal": "Ibon Begoña",
+      "born": "1973-11-17",
+      "club": "alaves",
+      "clubId": "alaves",
+      "clubName": "Deportivo Alavés",
+      "position": "LB",
+      "role": "backup",
+      "starts": null,
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueMinutes": null,
+      "appearanceScope": "La Liga 2001-02 only",
+      "positionVerification": "needs_review",
+      "review": "preliminary_tier_position_pending_user_approval",
+      "verificationNotes": [
+        "Exact positional majority still requires match-by-match audit",
+        "2001-02 league starts not independently verified; null intentional"
+      ],
+      "tier": "B",
+      "rank": 13,
+      "tierReview": "Qualitative 1999-00 to 2001-02; earlier two years not independently checked",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit"
+      },
+      "evidence": "https://www.bdfutbol.com/en/t/t2001-023.html",
+      "sources": [
+        "https://www.bdfutbol.com/en/t/t2001-023.html"
+      ]
+    },
+    {
+      "id": "laliga-200102-alaves-16",
+      "name": "Gustavo Lombardi",
+      "nameKo": "구스타보 롬바르디",
+      "nameOriginal": "Gustavo Lombardi",
+      "born": "1975-09-10",
+      "club": "alaves",
+      "clubId": "alaves",
+      "clubName": "Deportivo Alavés",
+      "position": "RB",
+      "role": "backup",
+      "starts": 3,
+      "leagueStarts": 3,
+      "leagueAppearances": null,
+      "leagueMinutes": null,
+      "appearanceScope": "La Liga 2001-02 only",
+      "positionVerification": "needs_review",
+      "review": "preliminary_tier_position_pending_user_approval",
+      "verificationNotes": [
+        "Exact positional majority still requires match-by-match audit"
+      ],
+      "tier": "C+",
+      "rank": 17,
+      "tierReview": "Qualitative 1999-00 to 2001-02; earlier two years not independently checked",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit"
+      },
+      "evidence": "https://www.bdfutbol.com/en/t/t2001-023.html",
+      "sources": [
+        "https://www.bdfutbol.com/en/t/t2001-023.html"
+      ]
+    },
+    {
+      "id": "laliga-200102-alaves-17",
+      "name": "Bogdan Mara",
+      "nameKo": "보그단 마라",
+      "nameOriginal": "Bogdan Mara",
+      "born": "1977-09-29",
+      "club": "alaves",
+      "clubId": "alaves",
+      "clubName": "Deportivo Alavés",
+      "position": "RW",
+      "role": "starter",
+      "starts": 9,
+      "leagueStarts": 9,
+      "leagueAppearances": null,
+      "leagueMinutes": null,
+      "appearanceScope": "La Liga 2001-02 only",
+      "positionVerification": "needs_review",
+      "review": "preliminary_tier_position_pending_user_approval",
+      "verificationNotes": [
+        "Exact positional majority still requires match-by-match audit"
+      ],
+      "tier": "B-",
+      "rank": 12,
+      "tierReview": "Qualitative 1999-00 to 2001-02; earlier two years not independently checked",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit"
+      },
+      "evidence": "https://www.bdfutbol.com/en/t/t2001-023.html",
+      "sources": [
+        "https://www.bdfutbol.com/en/t/t2001-023.html"
+      ]
+    },
+    {
+      "id": "laliga-200102-malaga-13",
+      "name": "Rafa González",
+      "nameKo": "라파 곤살레스",
+      "nameOriginal": "Rafa González",
+      "born": null,
+      "club": "malaga",
+      "clubId": "malaga",
+      "clubName": "Málaga CF",
+      "position": "GK",
+      "role": "backup",
+      "starts": null,
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueMinutes": null,
+      "appearanceScope": "La Liga 2001-02 only",
+      "positionVerification": "needs_review",
+      "review": "preliminary_tier_position_pending_user_approval",
+      "verificationNotes": [
+        "Exact positional majority still requires match-by-match audit",
+        "2001-02 league starts not independently verified; null intentional"
+      ],
+      "tier": "C+",
+      "rank": 17,
+      "tierReview": "Qualitative 1999-00 to 2001-02; earlier two years not independently checked",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit"
+      },
+      "evidence": "https://www.malagacf.com/en/temporada-2001-2002",
+      "sources": [
+        "https://www.malagacf.com/en/temporada-2001-2002"
+      ]
+    },
+    {
+      "id": "laliga-200102-malaga-14",
+      "name": "Vicente Valcarce",
+      "nameKo": "비센테 발카르세",
+      "nameOriginal": "Vicente Valcarce",
+      "born": "1974-10-19",
+      "club": "malaga",
+      "clubId": "malaga",
+      "clubName": "Málaga CF",
+      "position": "LB",
+      "role": "backup",
+      "starts": null,
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueMinutes": null,
+      "appearanceScope": "La Liga 2001-02 only",
+      "positionVerification": "needs_review",
+      "review": "preliminary_tier_position_pending_user_approval",
+      "verificationNotes": [
+        "Exact positional majority still requires match-by-match audit",
+        "2001-02 league starts not independently verified; null intentional"
+      ],
+      "tier": "C+",
+      "rank": 17,
+      "tierReview": "Qualitative 1999-00 to 2001-02; earlier two years not independently checked",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit"
+      },
+      "evidence": "https://www.malagacf.com/en/temporada-2001-2002",
+      "sources": [
+        "https://www.malagacf.com/en/temporada-2001-2002"
+      ]
+    },
+    {
+      "id": "laliga-200102-malaga-15",
+      "name": "Ariel Zárate",
+      "nameKo": "아리엘 사라테",
+      "nameOriginal": "Ariel Zárate",
+      "born": "1973-07-13",
+      "club": "malaga",
+      "clubId": "malaga",
+      "clubName": "Málaga CF",
+      "position": "CM",
+      "role": "starter",
+      "starts": null,
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueMinutes": null,
+      "appearanceScope": "La Liga 2001-02 only",
+      "positionVerification": "needs_review",
+      "review": "preliminary_tier_position_pending_user_approval",
+      "verificationNotes": [
+        "Exact positional majority still requires match-by-match audit",
+        "2001-02 league starts not independently verified; null intentional"
+      ],
+      "tier": "B",
+      "rank": 21,
+      "tierReview": "Qualitative 1999-00 to 2001-02; earlier two years not independently checked",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit"
+      },
+      "evidence": "https://www.malagacf.com/en/temporada-2001-2002",
+      "sources": [
+        "https://www.malagacf.com/en/temporada-2001-2002"
+      ]
+    },
+    {
+      "id": "laliga-200102-malaga-16",
+      "name": "Sandro",
+      "nameKo": "산드로",
+      "nameOriginal": "Sandro",
+      "born": "1974-10-14",
+      "club": "malaga",
+      "clubId": "malaga",
+      "clubName": "Málaga CF",
+      "position": "CM",
+      "role": "backup",
+      "starts": null,
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueMinutes": null,
+      "appearanceScope": "La Liga 2001-02 only",
+      "positionVerification": "needs_review",
+      "review": "preliminary_tier_position_pending_user_approval",
+      "verificationNotes": [
+        "Exact positional majority still requires match-by-match audit",
+        "2001-02 league starts not independently verified; null intentional"
+      ],
+      "tier": "B-",
+      "rank": 24,
+      "tierReview": "Qualitative 1999-00 to 2001-02; earlier two years not independently checked",
+      "threeSeasonReview": {
+        "status": "needs_individual_history_audit"
+      },
+      "evidence": "https://www.malagacf.com/en/temporada-2001-2002",
+      "sources": [
+        "https://www.malagacf.com/en/temporada-2001-2002"
+      ]
     }
   ],
-  "bestXi": [],
+  "bestXi": [
+    {
+      "position": "GK",
+      "playerId": "laliga-200102-valencia-01"
+    },
+    {
+      "position": "CB",
+      "playerId": "laliga-200102-valencia-05"
+    },
+    {
+      "position": "CB",
+      "playerId": "laliga-200102-madrid-05"
+    },
+    {
+      "position": "LB",
+      "playerId": "laliga-200102-madrid-04"
+    },
+    {
+      "position": "RB",
+      "playerId": "laliga-200102-madrid-03"
+    },
+    {
+      "position": "DM",
+      "playerId": "laliga-200102-madrid-08"
+    },
+    {
+      "position": "CM",
+      "playerId": "laliga-200102-madrid-09"
+    },
+    {
+      "position": "LW",
+      "playerId": "laliga-200102-barca-12"
+    },
+    {
+      "position": "RW",
+      "playerId": "laliga-200102-madrid-10"
+    },
+    {
+      "position": "ST",
+      "playerId": "laliga-200102-deportivo-15"
+    },
+    {
+      "position": "ST",
+      "playerId": "laliga-200102-madrid-11"
+    }
+  ],
   "standings": [
     {
       "rank": 1,
