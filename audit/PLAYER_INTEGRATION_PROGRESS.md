@@ -214,3 +214,11 @@ Three-season evidence exists in summarized form for each tier rationale, but ind
 - Automated validator: `scripts/verify-pl-2000-01-draft.mjs`, checks 141 players/141 tiers/141 ranks, historical 8 clubs, 20 table rows, DOB, position caps, 11 nominal starters per club, tier→rank order, and valid 4-4-2 XI. Executed in JS tool runtime and **PASS**, no structural errors.
 - New deployed-browser workflow: `.github/workflows/verify-pl-2000-01-live.yml` calls `scripts/verify-pl-2000-01-live.mjs`; checks Pages live JSON, five views including modal and candidate list, captures screenshots. **Not executed or browser-confirmed until GitHub Actions run status/result is observed.**
 - User approval remains pending. Site CSS/design, champion C/title stripping marks, crests, existing standings and all other league-season files untouched.
+
+
+### 2000-01 post-merge source correction (2026-10-30)
+
+- Ipswich Town Martijn Reuser moved from provisional LW to RW (2000-01 historical team role lists right midfielder). Existing 141 candidate slots, ratings and qualified clubs unchanged, and position-wide LW/RW ranks recalculated. Season-majority match-position confirmation remains open. Source https://www.national-football-teams.com/club/692/2000_1/Ipswich_Town.html .
+- Newcastle Alan Shearer 1998-99 29 league starts/14 goals, 1999-00 36/23, 2000-01 19/5; Chelsea Mario Stanić 1998-99 Parma Serie A 7/7, 1999-00 Parma 11/5, 2000-01 Chelsea 8/2; complete three-season numerical summaries confirmed by individual FBref pages. Sources: https://fbref.com/en/players/438b3a51/Alan-Shearer and https://fbref.com/en/players/c5c88be5/all_comps/Mario-Stanic-Stats---All-Competitions .
+- Merge PR #9 on main: https://github.com/wjdduddlf112/footballarch/pull/9 (merge SHA `9503485db3194e0e95bdb30637862c309b46080d`); post-merge season JSON correction `b185418914b61ecd5498ece9adebdb0f97a17953`.
+- GitHub connected main data verification: 141/141 graded, 141/141 league-wide ranks, 11 valid proposed 4-4-2 Best XI entries, full 2000-01 roster and historical club/standings arrays. The same external network could not reach GitHub Pages, and no Actions run/status was returned for merge commit; actual Pages publication and browser success **NOT VERIFIED**. Do not report them as successful.
