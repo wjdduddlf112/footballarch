@@ -3,7 +3,7 @@
 Date: 2026-10-30  
 Repository: `wjdduddlf112/footballarch`, branch `main`  
 Deployment target: https://wjdduddlf112.github.io/footballarch/  
-Status: **17/17 candidate season datasets present; 280/2245 provisional tiers; 1965 individual tier reviews outstanding.**
+Status: **17/17 candidate season datasets present; 295/2245 provisional tiers; 1950 individual tier reviews outstanding.**
 
 ## Scope and method
 
@@ -22,7 +22,7 @@ Status: **17/17 candidate season datasets present; 280/2245 provisional tiers; 1
 | La Liga | 2001-02 | 135 | 0 | 0 | 82 | 0 | Not selected | No |
 | La Liga | 2002-03 | 128 | 0 | 0 | 96 | 0 | Not selected | No |
 | La Liga | 2003-04 | 138 | 0 | 0 | 106 | 0 | Not selected | No |
-| Premier League | 1999-00 | 130 | 0 | 0 | 125 | 54 | Not selected | No |
+| Premier League | 1999-00 | 130 | 15 | 0 | 108 | 51 | Not selected | No |
 | Premier League | 2000-01 | 134 | 0 | 0 | 131 | 73 | Not selected | No |
 | Premier League | 2001-02 | 161 | 0 | 0 | 158 | 66 | Not selected | No |
 | Serie A | 1999-00 | 119 | 0 | 0 | 1 | 0 | Not selected | No |
@@ -34,7 +34,7 @@ Status: **17/17 candidate season datasets present; 280/2245 provisional tiers; 1
 | Ligue 1 | 1999-00 | 111 | 0 | 0 | 3 | 19 | Not selected | No |
 | Ligue 1 | 2000-01 | 141 | 0 | 0 | 15 | 20 | Not selected | No |
 | Ligue 1 | 2001-02 | 134 | 0 | 0 | 11 | 6 | Not selected | No |
-| **Total** | **17 seasons** | **2245** | **280** | **280** | **965** | **576** | **2 provisional** | **0/17** |
+| **Total** | **17 seasons** | **2245** | **295** | **280** | **948** | **573** | **2 provisional** | **0/17** |
 
 Tier distribution for the 280 existing La Liga provisional grades: S=9; A+=17; A=24; A-=47. All other tier grades are carried from previously approved-as-draft work and are **not** upgraded to final.
 
@@ -55,8 +55,8 @@ Tier distribution for the 280 existing La Liga provisional grades: S=9; A+=17; A
 | Position enum / birth date format / tier values | **PASS** | No structural errors found in examined records |
 | Positional rank collision / Best XI player references | **PASS** | Two pre-existing La Liga proposals are internally linked; 15 seasons have no rank/XI yet |
 | Starter/backup position slot caps | **OPEN** | 17 over-limit club-position groups (mainly ST) |
-| DOB coverage | **OPEN** | 965 blank |
-| League starts coverage | **OPEN** | 576 blank (`starts` or `leagueStarts`) |
+| DOB coverage | **OPEN** | 948 blank |
+| League starts coverage | **OPEN** | 573 blank (`starts` or `leagueStarts`) |
 | Individual current season / historical 3-season evidence | **OPEN** | 1999-00 La Liga had 21/148 explicitly corroborated in its previous audit; full denominator evidence cannot currently be claimed |
 | Historical Europe actual-entry review | **OPEN** | Some existing `europeanQualificationVerified:false` remain; correction of two specific omissions does not sign off all seasons |
 | Node CLI validator run | **NOT RUN** | Added `scripts/verify-player-integration.mjs`; connector-side validation executed separately |
@@ -80,3 +80,35 @@ Tier distribution for the 280 existing La Liga provisional grades: S=9; A+=17; A
 4. Record team-by-team verification and user feedback without resetting La Liga's existing 280 preliminary tier records.
 5. Add Best XI only after position ranking and formation research. Keep `proposed_unapproved`.
 6. Independently confirm remaining UEFA entrants and browser-test Overview, Best XI, Top Class, League Table, Statistics. Do not mark visual validation complete until actually inspected.
+
+
+## First individual tier assessment — Premier League 1999-00, Manchester United (2026-10-30)
+
+The initial integration was **not the end of tier grading**. Actual 3-season comparison and grading has now started. 17 Manchester United candidates have independent period-squad birth dates filled and 3 missing 1999-00 league starts/appearances have been recovered. 15 players now have **proposed, user-unapproved tiers** with individual Korean rationale and historical source links; Solskjær and Sheringham remain eligible-audit records with null tiers because 4 ST candidates exceed the requested two-player club quota. Yorke (29 starts, 20 league goals) and Cole (23 starts, 19 goals) currently hold the two graded ST slots; extras are retained for reconciliation, not silently dropped.
+
+| Grade | Manchester United first pass |
+|---|---|
+| S | Roy Keane, Jaap Stam |
+| A+ | David Beckham, Ryan Giggs, Dwight Yorke, Andrew Cole |
+| A | Paul Scholes |
+| A- | Denis Irwin, Gary Neville |
+| B+ | Mikaël Silvestre, Phil Neville, Nicky Butt |
+| B | Mark Bosnich, Henning Berg |
+| C+ | Raimond van der Gouw |
+| Not graded (over-cap ST) | Ole Gunnar Solskjær, Teddy Sheringham |
+
+The ratings are explicitly qualitative and provisional. Independent full 1997-98 league figures for Jaap Stam (PSV) and Mikaël Silvestre (non-Manchester seasons) remain incomplete. Position majority of Phil Neville and several outfield defenders must be audited before final role confirmation. No rank has yet been assigned: PL ranks require all eight qualified teams for each position. Team achievements were not used as direct grade bonuses.
+
+Sources: https://footballsquads.co.uk/eng/1999-2000/faprem/manutd.htm ; https://www.rsssf.org/players/manutd-postwarchamps.html ; https://www.statbunker.com/competitions/SeasonAppearances?club_id=3&comp_id=8 ; https://www.statbunker.com/competitions/SeasonAppearances?club_id=3&comp_id=7 ; https://www.statbunker.com/competitions/SeasonAppearances?club_id=3&comp_id=3 ; https://fbref.com/en/awards/pfa_poy/PFA-Players-Player-of-the-Year .
+
+Candidate grading commit: `2b67fd45f79f3300a16aea88627dfb5fb0180956`. Full machine-readable current totals: `audit/player-integration-audit-2026-10-30.json`.
+
+### Updated totals after first club evaluation
+
+- Candidate registrations: **2,245**, unchanged.
+- Provisional tiers: **295** (former La Liga 280, new PL 15).
+- Missing tiers: **1,950**.
+- New top-class additions: S 2, A+ 4, A 1, A- 2. Overall counts: S 11, A+ 21, A 25, A- 49.
+- Missing DOB: **948**; missing recorded starts: **573**.
+- Completed league-wide ranks unchanged at 280 provisional La Liga ranks, 0 new PL ranks.
+- Browser verification still outstanding and no existing UI files modified.
