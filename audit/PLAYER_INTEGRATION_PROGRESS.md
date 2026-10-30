@@ -3,7 +3,7 @@
 Date: 2026-10-30  
 Repository: `wjdduddlf112/footballarch`, branch `main`  
 Deployment target: https://wjdduddlf112.github.io/footballarch/  
-Status: **17/17 currently tracked candidate season datasets; 549/2250 provisional tier proposals; 1701 unrated. PL 1999-00 assessed 128/128 (100% DRAFT tier input).**
+Status: **17/17 currently tracked candidate season datasets; 549/2250 provisional tier proposals; 1701 unrated. PL 1999-00 128/128 and PL 2000-01 141/141 DRAFT tier/rank entries.**
 
 ## Scope and method
 
@@ -209,7 +209,7 @@ Three-season evidence exists in summarized form for each tier rationale, but ind
 - Club candidates: Manchester United 19; Arsenal 17; Liverpool 16; Leeds 18; Ipswich 16; Chelsea 19; Aston Villa 16; Newcastle 20.
 - All **141 players have DOB, Korean name, original name, real club, PL 2000-01 starts, individually written provisional tier rationale, positional rank, DRAFT review flag and source links**. Corrected Chris Makin DOB 1973-05-08 and Robert Pirès DOB 1973-10-29. Historical team formation snapshots used to ensure 11 nominal starters each club (not a claim about literal most-common match lineup).
 - Tiers and ranks: **141/141 provisional tier inputs and 141/141 league-wide per-position ranks**, all unapproved. Distribution S=2; A+=11; A=4; A-=29; B+=49; B=27; B-=10; C+=8; C=1; C-/D=0. World Class S/A+ = 13; League Top Class S/A+/A/A-=46.
-- Proposed 4-4-2 Best XI (all eligible): Fabien Barthez, Jaap Stam, Wes Brown, Sylvinho, Markus Babbel, Roy Keane, Patrick Vieira, Ryan Giggs, David Beckham, Thierry Henry, Jimmy Floyd Hasselbaink. PFA lineup of 2000-01 used as support; qualifying-club RB Markus Babbel replaces ineligible Tottenham Stephen Carr, 23-goal Golden Boot winner Hasselbaink selected in attack. `proposed_unapproved` retained.
+- Proposed 4-4-2 Best XI (all eligible): Fabien Barthez, Jaap Stam, Sami Hyypiä, Sylvinho, Markus Babbel, Roy Keane, Patrick Vieira, Ryan Giggs, David Beckham, Thierry Henry, Jimmy Floyd Hasselbaink. PFA lineup of 2000-01 used as support, with Liverpool Sami Hyypiä replacing Wes Brown by weighted 2000-01 35 plus 1999-00 38 league starts, and qualifying-club RB Markus Babbel replacing ineligible Tottenham Stephen Carr; 23-goal Golden Boot winner Hasselbaink selected in attack. `proposed_unapproved` retained.
 - Caveat: **141 tier inputs do not equal complete three-season historical verification**. 1998-99 individual match-by-match records and season-majority tactical position remain **partially unverified** for many, and early-season split transfers/wingback positions require further qualitative recheck. All published grades are explicitly **DRAFT**. Source-level stat field makes unknown earlier starts null, not invented.
 - Automated validator: `scripts/verify-pl-2000-01-draft.mjs`, checks 141 players/141 tiers/141 ranks, historical 8 clubs, 20 table rows, DOB, position caps, 11 nominal starters per club, tier→rank order, and valid 4-4-2 XI. Executed in JS tool runtime and **PASS**, no structural errors.
 - New deployed-browser workflow: `.github/workflows/verify-pl-2000-01-live.yml` calls `scripts/verify-pl-2000-01-live.mjs`; checks Pages live JSON, five views including modal and candidate list, captures screenshots. **Not executed or browser-confirmed until GitHub Actions run status/result is observed.**
