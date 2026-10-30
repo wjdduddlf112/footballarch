@@ -3,7 +3,7 @@
 Date: 2026-10-30  
 Repository: `wjdduddlf112/footballarch`, branch `main`  
 Deployment target: https://wjdduddlf112.github.io/footballarch/  
-Status: **17/17 candidate season datasets present; 295/2245 provisional tiers; 1950 individual tier reviews outstanding.**
+Status: **17/17 season datasets; 303/2240 provisional tier proposals; 1937 tier reviews outstanding after fresh PL 1999-00 DRAFT rebuild.**
 
 ## Scope and method
 
@@ -22,7 +22,7 @@ Status: **17/17 candidate season datasets present; 295/2245 provisional tiers; 1
 | La Liga | 2001-02 | 135 | 0 | 0 | 82 | 0 | Not selected | No |
 | La Liga | 2002-03 | 128 | 0 | 0 | 96 | 0 | Not selected | No |
 | La Liga | 2003-04 | 138 | 0 | 0 | 106 | 0 | Not selected | No |
-| Premier League | 1999-00 | 130 | 15 | 0 | 108 | 51 | Not selected | No |
+| Premier League | 1999-00 | 125 | 23 | 13 | 0 | 86 | 11 proposed (unapproved) | No |
 | Premier League | 2000-01 | 134 | 0 | 0 | 131 | 73 | Not selected | No |
 | Premier League | 2001-02 | 161 | 0 | 0 | 158 | 66 | Not selected | No |
 | Serie A | 1999-00 | 119 | 0 | 0 | 1 | 0 | Not selected | No |
@@ -34,7 +34,7 @@ Status: **17/17 candidate season datasets present; 295/2245 provisional tiers; 1
 | Ligue 1 | 1999-00 | 111 | 0 | 0 | 3 | 19 | Not selected | No |
 | Ligue 1 | 2000-01 | 141 | 0 | 0 | 15 | 20 | Not selected | No |
 | Ligue 1 | 2001-02 | 134 | 0 | 0 | 11 | 6 | Not selected | No |
-| **Total** | **17 seasons** | **2245** | **295** | **280** | **948** | **573** | **2 provisional** | **0/17** |
+| **Total** | **17 seasons** | **2240** | **303** | **293** | **840** | **608** | **3 provisional** | **0/17** |
 
 Tier distribution for the 280 existing La Liga provisional grades: S=9; A+=17; A=24; A-=47. All other tier grades are carried from previously approved-as-draft work and are **not** upgraded to final.
 
@@ -112,3 +112,45 @@ Candidate grading commit: `2b67fd45f79f3300a16aea88627dfb5fb0180956`. Full machi
 - Missing DOB: **948**; missing recorded starts: **573**.
 - Completed league-wide ranks unchanged at 280 provisional La Liga ranks, 0 new PL ranks.
 - Browser verification still outstanding and no existing UI files modified.
+
+---
+
+## Independent player rebuild checkpoint — Premier League 1999-00, 2026-10-30
+
+This appended record is on branch `draft/pl-1999-00-fresh-verification-20261030` only. The earlier 130 imported Premier League 1999-00 candidates and their 15 old tentative ratings on `main` are retained for forensic comparison; **they are not the source of the new independent nominations**.
+
+### New research artifacts
+
+| Artifact | Count | Verification | Evaluation |
+|---|---:|---|---|
+| `audit/player-research/premierleague-1999-00-gk-fresh-draft.json` | 15 GK | 15/15 season appearances, starts and DOB checked against individual season sources | 15 provisional tiers/ranks; prior two years incomplete |
+| `audit/player-research/premierleague-1999-00-cb-fresh-shortlist.json` | 20 CB | 18/20 league starts checked; season-majority positions still open | 20 tier/rank null |
+| `audit/player-research/premierleague-1999-00-outfield-research-pool.json` | 90 provisional nomination seeds (LB/RB/DM/CM/CAM/LW/RW/ST) | Season-wide majority-position and league-start validation **not finished** | 90 tier/rank null |
+| `audit/player-research/premierleague-1999-00-three-season-tier-proposals.json` | 5 graded stars drawn from those 90 | 1997-98, 1998-99, 1999-00 PL starts individually checked; 1999-00 contemporary PFA/FWA recognition | Roy Keane S, Patrick Vieira A+, David Beckham A+, Harry Kewell A+, Andy Cole A; all DRAFT |
+
+**Research scope: 125 distinct player nomination seeds (15 GK + 20 CB + 90 other), not 125 individually approved season candidates.** There are five additional three-season tier proposals linked to the 90 seeds; do not double count. GK scores remain partial three-season assessments. Team counts: Manchester United 17; Arsenal 17; Leeds 16; Liverpool 16; Chelsea 15; Leicester 13; Aston Villa 15; Bradford 16.
+
+### Verification executed in connected Github session
+
+- **PASS local in-memory source-file structural check**: all four branch research files read and parsed after writing, 125 distinct club/name keys, 125 correctly formatted/real calendar DOB values, no duplicate GK rank, exactly 8 GK starters and 7 GK backups, no club-position exceeding the archival cap (CB <=3, ST <=3, rest <=2 except CM <=3).
+- **PASS link integrity** of the five three-season tier proposals: all five named candidates exist in the independently compiled outfield research pool.
+- **OPEN**: At least 92 outfield seed candidates (90 non-CB, 2 CB) lack independently verified 1999-00 league starts; all 110 outfield seeds require season-majority positional verification and individualized three-season performance review (five have preliminary starts/grades, not full positional audit).
+- **OPEN**: Three-season histories for all 15 GKs; all 125 candidates final individual reviews; cross-club rankings except provisional GK; Best XI; world-class/top-class complete classification.
+- **NOT RUN**: existing Node CLI validator. **NOT VERIFIED**: live GitHub Pages tabs, crests and player detail cards. **NOT DEPLOYED**: main site unchanged.
+- **IMPORTANT** 3-5-2 Aston Villa and Leicester have three actual centre-back tactical starters; 2+1 archive nomination categories are an artificial storage constraint and must not imply the third back was always benched.
+- Historical mismatch (legacy `main` GK removal): independent 1999-00 seasonal league sources show Liverpool Brad Friedel 2 starts, Chelsea Carlo Cudicini 1 start, Aston Villa Peter Enckelman 9 starts.
+- **Do not mark season finished, do not merge this branch as final, and do not advance to Premier League 2000-01 without instruction.**
+
+Existing standings, European participant records, historic C marker/stripped-title marker and UI source files have NOT been altered in this branch.
+
+
+## 2026-10-30: PL 1999-00 deployable DRAFT (newer record, supersedes old PL 130 candidates)
+
+- New 8-club independent pool: **125 candidate seeds**, with **23 proposed tiers**, **13 provisional goalkeeper ranks**, **102 unrated**. Five PFA-supported additional defender/forward tiers plus five 3-season outfield proposals and 13 goalkeeper proposals. Sources and individual qualification notes embedded in player records.
+- **Best XI now proposed**, not approved: 4-4-2; Nigel Martyn; Ian Harte, Jaap Stam, Sami Hyypiä, Gary Kelly; Harry Kewell, Patrick Vieira, Roy Keane, David Beckham; Andy Cole, Dwight Yorke. Ten 1999-00 PFA XI members from eligible eight teams; Sunderland forward Kevin Phillips ineligible for archive scope, Yorke selected using 1997-98 to 1999-00 goals/starts.
+- Retains old final standings, eight UEFA/Intertoto entrants, crest URLs and champion rendering, and all other seasons. Old 130 candidates archived in Git history only; no pre-existing player candidate imported into new selection source.
+- **Evidence pending**: 102 zero-grade candidates; 86 incomplete individual league starts; all outfield season-majority positions; many preceding two seasons; non-GK position ranking; GK preceding two seasons. These are published as DRAFT research, **not signed-off ratings**.
+- Made browser presentation minimal improvements: Korean + original name, starting status, league starts, rank, player detail evidence, and separate World Class / League Top Class counts. No redesign.
+- Static JSON structural tests in connected session: **PASS** (125 unique club-player keys and IDs, 20 league rows unchanged, eight qualifiers unchanged, 11 valid Best XI refs, 13 nonconflicting goalkeeper ranks, no individual position cap errors, valid DOB formats, correct tier-review flags).
+- App JS: V8 syntax parsing **PASS**. Reproducible CLI script created at `scripts/verify-pl-1999-00-draft.mjs` (CLI execution and real browser check remain separate gates).
+- Publication: source-branch-to-main merge and Pages availability must be verified separately; do not confuse GitHub commit with live screen validation.
