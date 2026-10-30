@@ -7,12 +7,12 @@
     "assessmentEnd": "2000-01",
     "qualifyingSeason": "2001-02",
     "status": "draft",
-    "label": "7개 구단 전체 후보·티어·포지션 순위 공개 · 검수 중",
-    "lastReview": "2026-10-29",
-    "note": "All 120 candidate players across ten positions registered for seven verified 2001-02 UEFA-qualified clubs. Tier grades S–D, within-position ranks and 4-2-3-1 Best XI are 1st-pass draft subject to three-season audit. Sources: 2000-01 BDFutbol club lineup/starts. 0 dates of birth intentionally left null instead of inventing dates.",
-    "candidateCount": 120,
-    "selectionStage": "all_positions_tiers_ranks_best_xi_preliminary",
-    "assessmentWeighting": "1998-99 < 1999-00 < 2000-01",
+    "label": "7개 구단 전체 후보·티어·포지션 순위 2차 검수안 (미확정)",
+    "lastReview": "2026-10-30",
+    "note": "Provisional 2000-01 La Liga player classification for 7 UEFA-qualified clubs. Squad starts and primary positions reviewed against 2000-01 records; qualitative tier review uses 2000-01 > 1999-00 > 1998-99. Some exact match positions and prior two season player-by-player comparisons remain unverified. Do not regard positional ranks or Best XI as approved.",
+    "candidateCount": 132,
+    "selectionStage": "all_positions_tiers_ranks_best_xi_second_draft",
+    "assessmentWeighting": "2000-01 highest > 1999-00 > 1998-99; qualitative only (no numerical weight independently calculated)",
     "standingsStatus": "verified",
     "standingsSource": "https://www.rsssf.org/tabless/span01.html",
     "qualifyingSources": [
@@ -51,16 +51,16 @@
     },
     "formation": "4-2-3-1",
     "tierProposal": {
-      "status": "published_preliminary_not_final",
+      "status": "second_draft_published_not_final",
       "assessmentSeasons": [
         "1998-99",
         "1999-00",
         "2000-01"
       ],
       "weights": "recency_priority_no_numeric_weight_claim",
-      "candidateCount": 120,
-      "assessmentNote": "Initial qualitative 2000-01 league impact, 1999-00 continuity and 1998-99 context; historical 3-year player-by-player verification still incomplete. Club league placement not counted as direct tier score.",
-      "approval": "pending_user_review",
+      "candidateCount": 132,
+      "assessmentNote": "Tier adjustments and CM/AM reconciliation against user selection rules; remaining individual 3-season source audit is open.",
+      "approval": "pending_final_user_review",
       "positionAuditPending": [
         "Iván Helguera",
         "Guti",
@@ -77,14 +77,14 @@
       ]
     },
     "positionalRanking": {
-      "status": "assigned_all_candidates",
-      "verified": "pending_three_season_audit",
-      "scope": "1..N separately in each primary position; no global rank; player grades and ranking tentative"
+      "status": "assigned_all_candidates_preliminary",
+      "verified": "pending_match_by_match_position_and_three_season_audit",
+      "scope": "1..N per primary position; draft only"
     },
     "bestXiReview": {
       "status": "proposed_unapproved",
-      "label": "2000–01 4-2-3-1 1차 선정안",
-      "notes": "4-2-3-1 selected as a period-representative lineup, not statistically verified league-wide modal formation. Rivaldo plays CAM as second-striker/advanced-playmaker eligible under flexible user instruction. Each XI player is #1 in their respective ranked primary slot except the second CB, who is #2; Best XI and primary-position allocation subject to correction.",
+      "label": "2000-01 4-2-3-1 잠정 베스트 XI",
+      "notes": "Provisional 4-2-3-1 XI, favoring tactical balance and user-evaluated player tiers. Its 11 IDs resolve to current candidate records; no approval or all-season formation-frequency verification claimed.",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2000-012.html",
         "https://www.bdfutbol.com/en/t/t2000-0113.html",
@@ -94,7 +94,7 @@
         "https://www.bdfutbol.com/en/t/t2000-0111.html",
         "https://www.bdfutbol.com/en/t/t2000-0139.html"
       ],
-      "lastDraft": "2026-10-29"
+      "lastDraft": "2026-10-30"
     },
     "birthDateReview": {
       "status": "all_present",
@@ -155,7 +155,50 @@
       "https://coeffarchive.com/country/spain/2001-2002/",
       "https://www.realzaragoza.com/la-gesta-ante-los-galacticos"
     ],
-    "europeanQualificationReview": "Cross-checked sources and reflected in unified league-standings archive; player candidates/tiers not approved."
+    "europeanQualificationReview": "Cross-checked sources and reflected in unified league-standings archive; player candidates/tiers not approved.",
+    "positionClassificationReview": {
+      "status": "working_draft",
+      "rule": "single primary display position per player based on 2000-01 season, subject to match-by-match checks; CM includes creative central players for 2-CM structures; CAM only exceptional standalone playmaker",
+      "playerRoles": "CB two starters + up to one backup; 2-CM structures two CM starters + one backup; other positions one starter + backup when available; no forced duplicate",
+      "addedCandidateIds": [
+        "laliga-2000-madrid-018",
+        "laliga-2000-madrid-019",
+        "laliga-2000-madrid-020",
+        "laliga-2000-deportivo-018",
+        "laliga-2000-mallorca-018",
+        "laliga-2000-mallorca-019",
+        "laliga-2000-barca-019",
+        "laliga-2000-valencia-018",
+        "laliga-2000-valencia-019",
+        "laliga-2000-celta-019",
+        "laliga-2000-celta-020",
+        "laliga-2000-zaragoza-016",
+        "laliga-2000-zaragoza-017",
+        "laliga-2000-zaragoza-018",
+        "laliga-2000-zaragoza-019"
+      ],
+      "removedCandidateIds": [
+        "laliga-2000-madrid-013",
+        "laliga-2000-celta-019",
+        "laliga-2000-zaragoza-005"
+      ],
+      "caveats": [
+        "Some role-specific league starts need match-by-match verification; the starts field is total league starts, not starts at assigned position.",
+        "Right wing shortage at Real Zaragoza is recorded without falsely moving forwards wide.",
+        "Club results are not direct tier inputs."
+      ],
+      "citations": [
+        "https://www.bdfutbol.com/en/t/t2000-012.html",
+        "https://www.bdfutbol.com/en/t/t2000-0113.html",
+        "https://www.bdfutbol.com/en/t/t2000-0124.html",
+        "https://www.bdfutbol.com/en/t/t2000-011.html",
+        "https://www.bdfutbol.com/en/t/t2000-0136.html",
+        "https://www.bdfutbol.com/en/t/t2000-0111.html",
+        "https://www.bdfutbol.com/en/t/t2000-0139.html",
+        "https://www.pasionzaragocista.com/temporada-2000-01.html",
+        "https://www.national-football-teams.com/app.php/club/2314/2000_1/Rcd_Mallorca.html"
+      ]
+    }
   },
   "clubs": [
     {
@@ -753,12 +796,12 @@
       "starts": 34,
       "tier": "A",
       "rank": 2,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-012.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -773,12 +816,12 @@
       "starts": 4,
       "tier": "B-",
       "rank": 11,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-012.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -793,12 +836,12 @@
       "starts": 33,
       "tier": "B+",
       "rank": 11,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-012.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -811,14 +854,14 @@
       "position": "CB",
       "role": "starter",
       "starts": 28,
-      "tier": "A",
-      "rank": 3,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "tier": "A+",
+      "rank": 2,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-012.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -831,14 +874,14 @@
       "position": "RB",
       "role": "starter",
       "starts": 26,
-      "tier": "A-",
+      "tier": "A",
       "rank": 2,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-012.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -852,13 +895,13 @@
       "role": "backup",
       "starts": 12,
       "tier": "B",
-      "rank": 10,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "rank": 9,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-012.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -873,12 +916,12 @@
       "starts": 36,
       "tier": "S",
       "rank": 1,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-012.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -891,14 +934,14 @@
       "position": "DM",
       "role": "starter",
       "starts": 32,
-      "tier": "A+",
-      "rank": 1,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "tier": "A",
+      "rank": 2,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-012.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -908,18 +951,19 @@
       "nameOriginal": "Albert Celades",
       "born": "1975-09-29",
       "club": "madrid",
-      "position": "DM",
+      "position": "CM",
       "role": "backup",
       "starts": 10,
       "tier": "B",
-      "rank": 12,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "rank": 19,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-012.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
-      }
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
+      },
+      "positionNotes": "CM/AM grouped by contemporary tactical use; prior draft listed DM. Exact match-position review pending."
     },
     {
       "id": "laliga-2000-madrid-010",
@@ -931,14 +975,14 @@
       "position": "CM",
       "role": "starter",
       "starts": 29,
-      "tier": "A-",
-      "rank": 3,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "tier": "A",
+      "rank": 4,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "primary_role_requires_match_by_match_position_audit",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-012.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -948,18 +992,19 @@
       "nameOriginal": "Guti",
       "born": "1976-10-31",
       "club": "madrid",
-      "position": "CAM",
+      "position": "CM",
       "role": "starter",
       "starts": 22,
       "tier": "A-",
-      "rank": 6,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "rank": 8,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "primary_role_requires_match_by_match_position_audit",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-012.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
-      }
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
+      },
+      "positionNotes": "CM/AM grouped by contemporary tactical use; prior draft listed CAM. Exact match-position review pending."
     },
     {
       "id": "laliga-2000-madrid-012",
@@ -972,33 +1017,13 @@
       "role": "starter",
       "starts": 17,
       "tier": "B+",
-      "rank": 9,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "rank": 8,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-012.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
-      }
-    },
-    {
-      "id": "laliga-2000-madrid-013",
-      "name": "Pedro Munitis",
-      "nameKo": "페드로 무니티스",
-      "nameOriginal": "Pedro Munitis Álvarez",
-      "born": "1975-06-19",
-      "club": "madrid",
-      "position": "LW",
-      "role": "backup",
-      "starts": 9,
-      "tier": "B",
-      "rank": 12,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
-      "positionReview": "season_primary_role_provisional",
-      "evidence": "https://www.bdfutbol.com/en/t/t2000-012.html",
-      "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -1013,12 +1038,12 @@
       "starts": 33,
       "tier": "S",
       "rank": 1,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-012.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -1031,14 +1056,14 @@
       "position": "RW",
       "role": "backup",
       "starts": 22,
-      "tier": "A-",
+      "tier": "B+",
       "rank": 6,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-012.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -1053,12 +1078,12 @@
       "starts": 34,
       "tier": "S",
       "rank": 1,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-012.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -1072,13 +1097,13 @@
       "role": "backup",
       "starts": 13,
       "tier": "A-",
-      "rank": 10,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "rank": 8,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-012.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -1091,14 +1116,14 @@
       "position": "GK",
       "role": "starter",
       "starts": 32,
-      "tier": "A",
+      "tier": "A-",
       "rank": 3,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0113.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -1112,13 +1137,13 @@
       "role": "backup",
       "starts": 6,
       "tier": "B",
-      "rank": 10,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "rank": 9,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0113.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -1133,12 +1158,12 @@
       "starts": 28,
       "tier": "A-",
       "rank": 9,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0113.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -1152,13 +1177,13 @@
       "role": "starter",
       "starts": 25,
       "tier": "A",
-      "rank": 2,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "rank": 3,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0113.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -1172,13 +1197,13 @@
       "role": "backup",
       "starts": 18,
       "tier": "B",
-      "rank": 17,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "rank": 18,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0113.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -1191,14 +1216,14 @@
       "position": "RB",
       "role": "starter",
       "starts": 37,
-      "tier": "A-",
+      "tier": "A",
       "rank": 1,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0113.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -1212,13 +1237,13 @@
       "role": "backup",
       "starts": 11,
       "tier": "B",
-      "rank": 11,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "rank": 10,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0113.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -1231,14 +1256,14 @@
       "position": "LB",
       "role": "starter",
       "starts": 28,
-      "tier": "A-",
+      "tier": "B+",
       "rank": 2,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0113.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -1253,12 +1278,12 @@
       "starts": 11,
       "tier": "B",
       "rank": 9,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0113.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -1272,13 +1297,13 @@
       "role": "starter",
       "starts": 31,
       "tier": "A+",
-      "rank": 2,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "rank": 1,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0113.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -1288,18 +1313,19 @@
       "nameOriginal": "Emerson Moisés Costa",
       "born": "1972-04-12",
       "club": "deportivo",
-      "position": "DM",
-      "role": "backup",
+      "position": "CM",
+      "role": "starter",
       "starts": 20,
       "tier": "B+",
-      "rank": 8,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "rank": 12,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0113.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
-      }
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
+      },
+      "positionNotes": "CM/AM grouped by contemporary tactical use; prior draft listed DM. Exact match-position review pending."
     },
     {
       "id": "laliga-2000-deportivo-012",
@@ -1308,18 +1334,19 @@
       "nameOriginal": "Juan Carlos Valerón",
       "born": "1975-06-17",
       "club": "deportivo",
-      "position": "CAM",
+      "position": "CM",
       "role": "starter",
       "starts": 20,
       "tier": "A",
-      "rank": 2,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "rank": 3,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "primary_role_requires_match_by_match_position_audit",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0113.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
-      }
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
+      },
+      "positionNotes": "CM/AM grouped by contemporary tactical use; prior draft listed CAM. Exact match-position review pending."
     },
     {
       "id": "laliga-2000-deportivo-013",
@@ -1328,18 +1355,19 @@
       "nameOriginal": "Djalminha",
       "born": "1970-12-09",
       "club": "deportivo",
-      "position": "CAM",
+      "position": "CM",
       "role": "backup",
       "starts": 17,
-      "tier": "A",
-      "rank": 4,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "tier": "A-",
+      "rank": 7,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "primary_role_requires_match_by_match_position_audit",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0113.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
-      }
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
+      },
+      "positionNotes": "CM/AM grouped by contemporary tactical use; prior draft listed CAM. Exact match-position review pending."
     },
     {
       "id": "laliga-2000-deportivo-014",
@@ -1351,14 +1379,14 @@
       "position": "LW",
       "role": "starter",
       "starts": 26,
-      "tier": "A-",
-      "rank": 4,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "tier": "B+",
+      "rank": 5,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0113.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -1373,12 +1401,12 @@
       "starts": 26,
       "tier": "A-",
       "rank": 4,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0113.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -1389,16 +1417,16 @@
       "born": "1975-03-09",
       "club": "deportivo",
       "position": "ST",
-      "role": "starter",
+      "role": "backup",
       "starts": 21,
-      "tier": "A+",
-      "rank": 2,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "tier": "A",
+      "rank": 3,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0113.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -1409,16 +1437,16 @@
       "born": "1976-01-05",
       "club": "deportivo",
       "position": "ST",
-      "role": "backup",
+      "role": "starter",
       "starts": 22,
       "tier": "A",
       "rank": 4,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0113.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -1431,14 +1459,14 @@
       "position": "GK",
       "role": "starter",
       "starts": 27,
-      "tier": "A-",
+      "tier": "B+",
       "rank": 4,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0124.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -1452,13 +1480,13 @@
       "role": "backup",
       "starts": 5,
       "tier": "C+",
-      "rank": 12,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "rank": 13,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0124.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -1473,12 +1501,12 @@
       "starts": 36,
       "tier": "A-",
       "rank": 7,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0124.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -1493,12 +1521,12 @@
       "starts": 31,
       "tier": "B+",
       "rank": 12,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0124.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -1511,14 +1539,14 @@
       "position": "CB",
       "role": "backup",
       "starts": 8,
-      "tier": "B",
-      "rank": 18,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "tier": "B-",
+      "rank": 20,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0124.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -1533,12 +1561,12 @@
       "starts": 35,
       "tier": "B+",
       "rank": 5,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0124.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -1553,12 +1581,12 @@
       "starts": 13,
       "tier": "B",
       "rank": 8,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0124.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -1573,12 +1601,12 @@
       "starts": 36,
       "tier": "B+",
       "rank": 4,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0124.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -1592,13 +1620,13 @@
       "role": "starter",
       "starts": 31,
       "tier": "B+",
-      "rank": 6,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "rank": 5,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0124.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -1608,18 +1636,19 @@
       "nameOriginal": "Marcos Martín",
       "born": "1968-09-17",
       "club": "mallorca",
-      "position": "DM",
-      "role": "backup",
+      "position": "CM",
+      "role": "starter",
       "starts": 31,
       "tier": "B+",
-      "rank": 5,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "rank": 11,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0124.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
-      }
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
+      },
+      "positionNotes": "CM/AM grouped by contemporary tactical use; prior draft listed DM. Exact match-position review pending."
     },
     {
       "id": "laliga-2000-mallorca-011",
@@ -1629,16 +1658,16 @@
       "born": "1970-03-05",
       "club": "mallorca",
       "position": "CM",
-      "role": "starter",
+      "role": "backup",
       "starts": 7,
-      "tier": "B",
-      "rank": 9,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "tier": "B-",
+      "rank": 20,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0124.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -1648,18 +1677,19 @@
       "nameOriginal": "Ariel Ibagaza",
       "born": "1976-10-27",
       "club": "mallorca",
-      "position": "CAM",
+      "position": "CM",
       "role": "starter",
       "starts": 33,
-      "tier": "A-",
+      "tier": "A",
       "rank": 5,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "primary_role_requires_match_by_match_position_audit",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0124.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
-      }
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
+      },
+      "positionNotes": "CM/AM grouped by contemporary tactical use; prior draft listed CAM. Exact match-position review pending."
     },
     {
       "id": "laliga-2000-mallorca-013",
@@ -1671,14 +1701,14 @@
       "position": "LW",
       "role": "starter",
       "starts": 32,
-      "tier": "B+",
-      "rank": 6,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "tier": "A-",
+      "rank": 4,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0124.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -1693,12 +1723,12 @@
       "starts": 29,
       "tier": "B+",
       "rank": 7,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0124.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -1713,12 +1743,12 @@
       "starts": 12,
       "tier": "B",
       "rank": 10,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0124.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -1732,13 +1762,13 @@
       "role": "starter",
       "starts": 25,
       "tier": "A-",
-      "rank": 8,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "rank": 6,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0124.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -1753,12 +1783,12 @@
       "starts": 6,
       "tier": "B-",
       "rank": 13,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0124.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -1773,12 +1803,12 @@
       "starts": 18,
       "tier": "B",
       "rank": 7,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-011.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -1791,14 +1821,14 @@
       "position": "GK",
       "role": "backup",
       "starts": 15,
-      "tier": "B",
-      "rank": 9,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "tier": "B-",
+      "rank": 10,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-011.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -1813,12 +1843,12 @@
       "starts": 31,
       "tier": "A",
       "rank": 4,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-011.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -1831,14 +1861,14 @@
       "position": "CB",
       "role": "starter",
       "starts": 18,
-      "tier": "B+",
-      "rank": 13,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "tier": "B",
+      "rank": 15,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-011.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -1853,12 +1883,12 @@
       "starts": 22,
       "tier": "B+",
       "rank": 6,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-011.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -1873,12 +1903,12 @@
       "starts": 15,
       "tier": "B+",
       "rank": 7,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-011.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -1891,14 +1921,14 @@
       "position": "LB",
       "role": "starter",
       "starts": 30,
-      "tier": "A-",
+      "tier": "B+",
       "rank": 4,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-011.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -1913,12 +1943,12 @@
       "starts": 21,
       "tier": "A-",
       "rank": 3,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-011.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -1926,20 +1956,21 @@
       "name": "Emmanuel Petit",
       "nameKo": "에마뉘엘 프티",
       "nameOriginal": "Emmanuel Petit",
-      "born": "1976-09-25",
+      "born": "1970-09-22",
       "club": "barca",
       "position": "DM",
       "role": "backup",
       "starts": 13,
-      "tier": "B",
-      "rank": 11,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "tier": "B-",
+      "rank": 9,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-011.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
-      }
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
+      },
+      "positionNotes": "Birth date corrected against Sky Sports."
     },
     {
       "id": "laliga-2000-barca-010",
@@ -1951,14 +1982,14 @@
       "position": "CM",
       "role": "starter",
       "starts": 32,
-      "tier": "A",
-      "rank": 2,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "tier": "A-",
+      "rank": 6,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-011.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -1969,16 +2000,16 @@
       "born": "1980-01-25",
       "club": "barca",
       "position": "CM",
-      "role": "backup",
+      "role": "starter",
       "starts": 15,
-      "tier": "B+",
-      "rank": 6,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "tier": "B",
+      "rank": 14,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-011.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -1992,13 +2023,13 @@
       "role": "backup",
       "starts": 12,
       "tier": "B",
-      "rank": 7,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "rank": 15,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-011.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -2013,13 +2044,14 @@
       "starts": 34,
       "tier": "S",
       "rank": 1,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "primary_role_requires_match_by_match_position_audit",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-011.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
-      }
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
+      },
+      "positionNotes": "Explicit CAM exception: advanced playmaker/second striker; not counted as one of two central midfield starters."
     },
     {
       "id": "laliga-2000-barca-014",
@@ -2032,13 +2064,13 @@
       "role": "starter",
       "starts": 26,
       "tier": "A-",
-      "rank": 1,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "rank": 2,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-011.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -2052,13 +2084,13 @@
       "role": "backup",
       "starts": 20,
       "tier": "B",
-      "rank": 11,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "rank": 9,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-011.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -2073,12 +2105,12 @@
       "starts": 27,
       "tier": "A-",
       "rank": 5,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-011.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -2093,12 +2125,12 @@
       "starts": 20,
       "tier": "B",
       "rank": 9,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "primary_role_requires_match_by_match_position_audit",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-011.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -2112,13 +2144,13 @@
       "role": "starter",
       "starts": 30,
       "tier": "A+",
-      "rank": 3,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "rank": 2,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-011.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -2133,12 +2165,12 @@
       "starts": 37,
       "tier": "A+",
       "rank": 1,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0136.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -2153,12 +2185,12 @@
       "starts": 29,
       "tier": "A-",
       "rank": 8,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0136.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -2173,12 +2205,12 @@
       "starts": 27,
       "tier": "A+",
       "rank": 1,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0136.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -2191,14 +2223,14 @@
       "position": "CB",
       "role": "backup",
       "starts": 24,
-      "tier": "A",
+      "tier": "A-",
       "rank": 5,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0136.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -2211,14 +2243,14 @@
       "position": "LB",
       "role": "starter",
       "starts": 24,
-      "tier": "A-",
+      "tier": "B+",
       "rank": 3,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0136.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -2233,12 +2265,12 @@
       "starts": 7,
       "tier": "B-",
       "rank": 10,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0136.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -2253,12 +2285,12 @@
       "starts": 27,
       "tier": "A-",
       "rank": 3,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0136.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -2272,13 +2304,13 @@
       "role": "starter",
       "starts": 15,
       "tier": "B+",
-      "rank": 9,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "rank": 7,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0136.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -2291,14 +2323,14 @@
       "position": "DM",
       "role": "backup",
       "starts": 7,
-      "tier": "B",
-      "rank": 13,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "tier": "B-",
+      "rank": 10,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0136.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -2312,13 +2344,13 @@
       "role": "starter",
       "starts": 34,
       "tier": "A",
-      "rank": 1,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "rank": 2,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0136.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -2328,18 +2360,19 @@
       "nameOriginal": "Pablo César Aimar",
       "born": "1979-11-03",
       "club": "valencia",
-      "position": "CAM",
+      "position": "CM",
       "role": "starter",
       "starts": 8,
-      "tier": "A-",
-      "rank": 7,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "tier": "B",
+      "rank": 16,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0136.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
-      }
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
+      },
+      "positionNotes": "CM/AM grouped by contemporary tactical use; prior draft listed CAM. Exact match-position review pending."
     },
     {
       "id": "laliga-2000-valencia-012",
@@ -2352,13 +2385,13 @@
       "role": "starter",
       "starts": 20,
       "tier": "B+",
-      "rank": 8,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "rank": 7,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0136.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -2371,14 +2404,14 @@
       "position": "LW",
       "role": "backup",
       "starts": 19,
-      "tier": "A-",
-      "rank": 2,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "tier": "A",
+      "rank": 1,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0136.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -2393,12 +2426,12 @@
       "starts": 31,
       "tier": "A+",
       "rank": 2,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0136.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -2413,12 +2446,12 @@
       "starts": 20,
       "tier": "B+",
       "rank": 8,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0136.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -2431,14 +2464,14 @@
       "position": "ST",
       "role": "starter",
       "starts": 32,
-      "tier": "A",
-      "rank": 5,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "tier": "B+",
+      "rank": 10,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0136.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -2451,14 +2484,14 @@
       "position": "ST",
       "role": "backup",
       "starts": 26,
-      "tier": "B+",
-      "rank": 11,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "tier": "A-",
+      "rank": 9,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0136.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -2473,12 +2506,12 @@
       "starts": 21,
       "tier": "B+",
       "rank": 5,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0111.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -2493,12 +2526,12 @@
       "starts": 17,
       "tier": "B",
       "rank": 8,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0111.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -2513,12 +2546,12 @@
       "starts": 36,
       "tier": "A-",
       "rank": 6,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0111.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -2531,14 +2564,14 @@
       "position": "CB",
       "role": "starter",
       "starts": 18,
-      "tier": "B+",
-      "rank": 14,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "tier": "B",
+      "rank": 16,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0111.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -2552,13 +2585,13 @@
       "role": "backup",
       "starts": 16,
       "tier": "B+",
-      "rank": 15,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "rank": 13,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0111.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -2573,12 +2606,12 @@
       "starts": 26,
       "tier": "B+",
       "rank": 6,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0111.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -2586,20 +2619,21 @@
       "name": "Juan Velasco",
       "nameKo": "후안 벨라스코",
       "nameOriginal": "Juan Velasco",
-      "born": "1977-05-17",
+      "born": "1977-05-15",
       "club": "celta",
       "position": "RB",
       "role": "starter",
       "starts": 33,
       "tier": "B+",
       "rank": 5,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0111.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
-      }
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
+      },
+      "positionNotes": "Birth date reconciled with DFB roster."
     },
     {
       "id": "laliga-2000-celta-008",
@@ -2611,14 +2645,14 @@
       "position": "RB",
       "role": "backup",
       "starts": 7,
-      "tier": "C+",
-      "rank": 12,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "tier": "B-",
+      "rank": 11,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0111.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -2632,13 +2666,13 @@
       "role": "starter",
       "starts": 24,
       "tier": "B+",
-      "rank": 7,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "rank": 6,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0111.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -2652,13 +2686,13 @@
       "role": "backup",
       "starts": 14,
       "tier": "B",
-      "rank": 10,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "rank": 8,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0111.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -2671,14 +2705,14 @@
       "position": "CM",
       "role": "starter",
       "starts": 21,
-      "tier": "B+",
-      "rank": 5,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "tier": "B",
+      "rank": 13,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "primary_role_requires_match_by_match_position_audit",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0111.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -2692,13 +2726,13 @@
       "role": "backup",
       "starts": 12,
       "tier": "B",
-      "rank": 8,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "rank": 18,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0111.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -2708,18 +2742,19 @@
       "nameOriginal": "Aleksandr Mostovoi",
       "born": "1968-08-22",
       "club": "celta",
-      "position": "CAM",
+      "position": "CM",
       "role": "starter",
       "starts": 25,
-      "tier": "A",
-      "rank": 3,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "tier": "A+",
+      "rank": 1,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0111.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
-      }
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
+      },
+      "positionNotes": "CM/AM grouped by contemporary tactical use; prior draft listed CAM. Exact match-position review pending."
     },
     {
       "id": "laliga-2000-celta-014",
@@ -2733,12 +2768,12 @@
       "starts": 30,
       "tier": "A-",
       "rank": 3,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0111.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -2748,18 +2783,19 @@
       "nameOriginal": "Luís Eduardo Schmidt",
       "born": "1979-01-10",
       "club": "celta",
-      "position": "LW",
+      "position": "ST",
       "role": "backup",
       "starts": 20,
-      "tier": "B+",
-      "rank": 7,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "tier": "B",
+      "rank": 12,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "primary_role_requires_match_by_match_position_audit",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0111.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
-      }
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
+      },
+      "positionNotes": "CM/AM grouped by contemporary tactical use; prior draft listed LW. Exact match-position review pending."
     },
     {
       "id": "laliga-2000-celta-016",
@@ -2771,14 +2807,14 @@
       "position": "RW",
       "role": "starter",
       "starts": 26,
-      "tier": "A",
+      "tier": "A-",
       "rank": 3,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0111.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -2793,12 +2829,12 @@
       "starts": 7,
       "tier": "B-",
       "rank": 11,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0111.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -2812,33 +2848,13 @@
       "role": "starter",
       "starts": 35,
       "tier": "A-",
-      "rank": 6,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "rank": 5,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0111.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
-      }
-    },
-    {
-      "id": "laliga-2000-celta-019",
-      "name": "Benni McCarthy",
-      "nameKo": "베니 매카시",
-      "nameOriginal": "Benni McCarthy",
-      "born": "1977-11-12",
-      "club": "celta",
-      "position": "ST",
-      "role": "backup",
-      "starts": 8,
-      "tier": "B-",
-      "rank": 12,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
-      "positionReview": "season_primary_role_provisional",
-      "evidence": "https://www.bdfutbol.com/en/t/t2000-0111.html",
-      "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -2853,12 +2869,12 @@
       "starts": 35,
       "tier": "B",
       "rank": 6,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0139.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -2871,14 +2887,14 @@
       "position": "GK",
       "role": "backup",
       "starts": 3,
-      "tier": "C+",
-      "rank": 13,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "tier": "B-",
+      "rank": 12,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0139.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -2893,12 +2909,12 @@
       "starts": 34,
       "tier": "B+",
       "rank": 10,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0139.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -2912,33 +2928,13 @@
       "role": "starter",
       "starts": 26,
       "tier": "B",
-      "rank": 16,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "rank": 17,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0139.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
-      }
-    },
-    {
-      "id": "laliga-2000-zaragoza-005",
-      "name": "Miguel Rebosio",
-      "nameKo": "미겔 레보시오",
-      "nameOriginal": "Miguel Rebosio",
-      "born": "1976-10-20",
-      "club": "zaragoza",
-      "position": "CB",
-      "role": "backup",
-      "starts": 11,
-      "tier": "B-",
-      "rank": 19,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
-      "positionReview": "season_primary_role_provisional",
-      "evidence": "https://www.bdfutbol.com/en/t/t2000-0139.html",
-      "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -2953,12 +2949,12 @@
       "starts": 17,
       "tier": "B",
       "rank": 7,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0139.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -2973,33 +2969,34 @@
       "starts": 28,
       "tier": "B",
       "rank": 8,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0139.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
       "id": "laliga-2000-zaragoza-008",
-      "name": "Kari Sundgren",
-      "nameKo": "카리 순드그렌",
-      "nameOriginal": "Kari Sundgren",
+      "name": "Gary Sundgren",
+      "nameKo": "게리 순드그렌",
+      "nameOriginal": "Gary Sundgren",
       "born": "1967-10-25",
       "club": "zaragoza",
-      "position": "RB",
+      "position": "CB",
       "role": "backup",
       "starts": 16,
       "tier": "B",
-      "rank": 9,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "rank": 14,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0139.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
-      }
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
+      },
+      "positionNotes": "2000-01 listed as CB in National Football Teams and Transfermarkt."
     },
     {
       "id": "laliga-2000-zaragoza-009",
@@ -3008,18 +3005,19 @@
       "nameOriginal": "Roberto Acuña",
       "born": "1972-03-25",
       "club": "zaragoza",
-      "position": "DM",
+      "position": "CM",
       "role": "starter",
       "starts": 34,
       "tier": "B+",
-      "rank": 4,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "rank": 10,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0139.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
-      }
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
+      },
+      "positionNotes": "Mediocentro (central midfielder) per Zaragoza historical lineup."
     },
     {
       "id": "laliga-2000-zaragoza-010",
@@ -3028,18 +3026,19 @@
       "nameOriginal": "José Ignacio Sáenz Marín",
       "born": "1973-09-28",
       "club": "zaragoza",
-      "position": "CM",
+      "position": "DM",
       "role": "starter",
       "starts": 34,
       "tier": "B+",
       "rank": 4,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0139.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
-      }
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
+      },
+      "positionNotes": "Pivote (holding midfielder) per Zaragoza historical lineup."
     },
     {
       "id": "laliga-2000-zaragoza-011",
@@ -3048,18 +3047,19 @@
       "nameOriginal": "Daniel Montenegro",
       "born": "1979-03-28",
       "club": "zaragoza",
-      "position": "CAM",
-      "role": "starter",
+      "position": "CM",
+      "role": "backup",
       "starts": 20,
-      "tier": "B+",
-      "rank": 8,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "tier": "B",
+      "rank": 17,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "primary_role_requires_match_by_match_position_audit",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0139.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
-      }
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
+      },
+      "positionNotes": "CM/AM grouped by contemporary tactical use; prior draft listed CAM. Exact match-position review pending."
     },
     {
       "id": "laliga-2000-zaragoza-012",
@@ -3072,13 +3072,13 @@
       "role": "starter",
       "starts": 38,
       "tier": "B+",
-      "rank": 5,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "rank": 6,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0139.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     },
     {
@@ -3088,38 +3088,40 @@
       "nameOriginal": "Juan Castaño Quirós",
       "born": "1971-04-10",
       "club": "zaragoza",
-      "position": "LW",
-      "role": "backup",
+      "position": "ST",
+      "role": "starter",
       "starts": 32,
-      "tier": "B",
-      "rank": 10,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "tier": "B+",
+      "rank": 11,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "primary_role_requires_match_by_match_position_audit",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0139.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
-      }
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
+      },
+      "positionNotes": "CM/AM grouped by contemporary tactical use; prior draft listed LW. Exact match-position review pending."
     },
     {
       "id": "laliga-2000-zaragoza-014",
-      "name": "Jamelli",
-      "nameKo": "자멜리",
-      "nameOriginal": "Paulo Roberto Jamelli Júnior",
+      "name": "Paulo Jamelli",
+      "nameKo": "파울루 자멜리",
+      "nameOriginal": "Paulo Jamelli",
       "born": "1974-07-22",
       "club": "zaragoza",
-      "position": "ST",
+      "position": "CM",
       "role": "starter",
       "starts": 30,
       "tier": "A-",
-      "rank": 7,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "rank": 9,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "primary_role_requires_match_by_match_position_audit",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0139.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
-      }
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
+      },
+      "positionNotes": "Attacking CM/second striker hybrid; grouped with CM under agreed flexible CM/AM classification."
     },
     {
       "id": "laliga-2000-zaragoza-015",
@@ -3132,13 +3134,328 @@
       "role": "backup",
       "starts": 17,
       "tier": "A-",
-      "rank": 9,
-      "review": "published_preliminary_pending_three_season_audit",
-      "tierReview": "2000-01 observed performance and qualitative 1998-99/1999-00 historical context; final individual 3-season evidence pending",
+      "rank": 7,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
       "positionReview": "season_primary_role_provisional",
       "evidence": "https://www.bdfutbol.com/en/t/t2000-0139.html",
       "threeSeasonReview": {
-        "status": "2000_01_league_starts_verified_1998_99_and_1999_00_audit_pending"
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-madrid-018",
+      "name": "Iván Campo",
+      "nameKo": "이반 캄포",
+      "nameOriginal": "Iván Campo",
+      "born": "1974-02-21",
+      "club": "madrid",
+      "position": "CB",
+      "role": "backup",
+      "starts": 15,
+      "tier": "B",
+      "rank": 19,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-012.html",
+      "positionNotes": "",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-madrid-019",
+      "name": "Santiago Solari",
+      "nameKo": "산티아고 솔라리",
+      "nameOriginal": "Santiago Solari",
+      "born": "1976-10-07",
+      "club": "madrid",
+      "position": "LW",
+      "role": "backup",
+      "starts": 13,
+      "tier": "B",
+      "rank": 10,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-012.html",
+      "positionNotes": "",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-madrid-020",
+      "name": "Flávio Conceição",
+      "nameKo": "플라비우 콘세이상",
+      "nameOriginal": "Flávio Conceição",
+      "born": "1974-06-12",
+      "club": "madrid",
+      "position": "DM",
+      "role": "backup",
+      "starts": 9,
+      "tier": "B-",
+      "rank": 11,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-012.html",
+      "positionNotes": "",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-deportivo-018",
+      "name": "Aldo Duscher",
+      "nameKo": "아우도 두스체르",
+      "nameOriginal": "Aldo Duscher",
+      "born": "1979-03-22",
+      "club": "deportivo",
+      "position": "DM",
+      "role": "backup",
+      "starts": 10,
+      "tier": "C+",
+      "rank": 13,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0113.html",
+      "positionNotes": "",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-mallorca-018",
+      "name": "Armando Álvarez",
+      "nameKo": "아르만도 알바레스",
+      "nameOriginal": "Armando Álvarez",
+      "born": "1970-07-18",
+      "club": "mallorca",
+      "position": "RB",
+      "role": "backup",
+      "starts": 12,
+      "tier": "C+",
+      "rank": 13,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.national-football-teams.com/app.php/club/2314/2000_1/Rcd_Mallorca.html",
+      "positionNotes": "",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-mallorca-019",
+      "name": "Jovan Stanković",
+      "nameKo": "요반 스탄코비치",
+      "nameOriginal": "Jovan Stanković",
+      "born": "1971-03-04",
+      "club": "mallorca",
+      "position": "LW",
+      "role": "backup",
+      "starts": 10,
+      "tier": "B-",
+      "rank": 12,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.national-football-teams.com/app.php/club/2314/2000_1/Rcd_Mallorca.html",
+      "positionNotes": "",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-barca-019",
+      "name": "Alfonso Pérez",
+      "nameKo": "알폰소 페레스",
+      "nameOriginal": "Alfonso Pérez",
+      "born": "1972-09-26",
+      "club": "barca",
+      "position": "ST",
+      "role": "backup",
+      "starts": 7,
+      "tier": "B-",
+      "rank": 14,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-011.html",
+      "positionNotes": "",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-valencia-018",
+      "name": "Andrés Palop",
+      "nameKo": "안드레스 팔로프",
+      "nameOriginal": "Andrés Palop",
+      "born": "1973-10-22",
+      "club": "valencia",
+      "position": "GK",
+      "role": "backup",
+      "starts": 1,
+      "tier": "C+",
+      "rank": 14,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://fbref.com/en/squads/dcc91a7b/2000-2001/Valencia-Stats",
+      "positionNotes": "",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-valencia-019",
+      "name": "Zlatko Zahovič",
+      "nameKo": "즐라트코 자호비치",
+      "nameOriginal": "Zlatko Zahovič",
+      "born": "1971-02-01",
+      "club": "valencia",
+      "position": "CM",
+      "role": "backup",
+      "starts": 6,
+      "tier": "B-",
+      "rank": 21,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.bdfutbol.com/en/t/t2000-0136.html",
+      "positionNotes": "attacking CM/AM group; match-by-match position pending",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-celta-019",
+      "name": "Manolo Sánchez",
+      "nameKo": "마놀로 산체스",
+      "nameOriginal": "Manolo Sánchez",
+      "born": "1976-01-27",
+      "club": "celta",
+      "position": "LB",
+      "role": "backup",
+      "starts": 9,
+      "tier": "C+",
+      "rank": 11,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://datencenter.dfb.de/competitions/europa-league/seasons/2000-2001/teams/celta-vigo",
+      "positionNotes": "",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-celta-020",
+      "name": "Tomás Hervás",
+      "nameKo": "토마스 에르바스",
+      "nameOriginal": "Tomás Hervás",
+      "born": "1970-11-25",
+      "club": "celta",
+      "position": "LW",
+      "role": "backup",
+      "starts": 8,
+      "tier": "B-",
+      "rank": 13,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://datencenter.dfb.de/competitions/europa-league/seasons/2000-2001/teams/celta-vigo",
+      "positionNotes": "",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-zaragoza-016",
+      "name": "Luis Carlos Cuartero",
+      "nameKo": "카를로스 쿠아르테로",
+      "nameOriginal": "Luis Carlos Cuartero",
+      "born": "1975-08-17",
+      "club": "zaragoza",
+      "position": "RB",
+      "role": "backup",
+      "starts": 8,
+      "tier": "B-",
+      "rank": 12,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.pasionzaragocista.com/temporada-2000-01.html",
+      "positionNotes": "",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-zaragoza-017",
+      "name": "Santiago Aragón",
+      "nameKo": "산티아고 아라곤",
+      "nameOriginal": "Santiago Aragón",
+      "born": "1968-04-03",
+      "club": "zaragoza",
+      "position": "DM",
+      "role": "backup",
+      "starts": 9,
+      "tier": "B-",
+      "rank": 12,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.pasionzaragocista.com/temporada-2000-01.html",
+      "positionNotes": "",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-zaragoza-018",
+      "name": "Ander Garitano",
+      "nameKo": "안데르 가리타노",
+      "nameOriginal": "Ander Garitano",
+      "born": "1969-02-28",
+      "club": "zaragoza",
+      "position": "LW",
+      "role": "backup",
+      "starts": 4,
+      "tier": "B",
+      "rank": 11,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://pasionzaragocista.com/jugador-ander-garitano.html",
+      "positionNotes": "",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
+      }
+    },
+    {
+      "id": "laliga-2000-zaragoza-019",
+      "name": "Marcos Vales",
+      "nameKo": "마르코스 발레스",
+      "nameOriginal": "Marcos Vales",
+      "born": "1975-04-05",
+      "club": "zaragoza",
+      "position": "RW",
+      "role": "starter",
+      "starts": 2,
+      "tier": "C+",
+      "rank": 12,
+      "review": "preliminary_user_review_pending",
+      "tierReview": "User-reviewed qualitative 3-season recency priority; 2000-01 strongest, 1999-00 next, 1998-99 lightest. Full independent per-player audit pending.",
+      "positionReview": "season_primary_role_provisional",
+      "evidence": "https://www.transfermarkt.com/real-zaragoza/startseite/verein/142/saison_id/2000",
+      "positionNotes": "right midfielder; rare 2000-01 starts",
+      "threeSeasonReview": {
+        "status": "2000_01_league_starts_checked_prior_two_seasons_individual_audit_pending"
       }
     }
   ],
@@ -3153,7 +3470,7 @@
     },
     {
       "position": "CB",
-      "playerId": "laliga-2000-deportivo-004"
+      "playerId": "laliga-2000-madrid-004"
     },
     {
       "position": "LB",
@@ -3165,7 +3482,7 @@
     },
     {
       "position": "DM",
-      "playerId": "laliga-2000-madrid-008"
+      "playerId": "laliga-2000-deportivo-010"
     },
     {
       "position": "CM",
@@ -3177,7 +3494,7 @@
     },
     {
       "position": "LW",
-      "playerId": "laliga-2000-barca-014"
+      "playerId": "laliga-2000-valencia-013"
     },
     {
       "position": "RW",
