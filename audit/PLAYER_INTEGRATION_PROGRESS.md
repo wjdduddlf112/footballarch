@@ -3,7 +3,7 @@
 Date: 2026-10-30  
 Repository: `wjdduddlf112/footballarch`, branch `main`  
 Deployment target: https://wjdduddlf112.github.io/footballarch/  
-Status: **17/17 candidate season datasets present; 295/2245 provisional tiers; 1950 individual tier reviews outstanding.**
+Status: **17/17 season datasets; 303/2240 provisional tier proposals; 1937 tier reviews outstanding after fresh PL 1999-00 DRAFT rebuild.**
 
 ## Scope and method
 
@@ -22,7 +22,7 @@ Status: **17/17 candidate season datasets present; 295/2245 provisional tiers; 1
 | La Liga | 2001-02 | 135 | 0 | 0 | 82 | 0 | Not selected | No |
 | La Liga | 2002-03 | 128 | 0 | 0 | 96 | 0 | Not selected | No |
 | La Liga | 2003-04 | 138 | 0 | 0 | 106 | 0 | Not selected | No |
-| Premier League | 1999-00 | 130 | 15 | 0 | 108 | 51 | Not selected | No |
+| Premier League | 1999-00 | 125 | 23 | 13 | 0 | 86 | 11 proposed (unapproved) | No |
 | Premier League | 2000-01 | 134 | 0 | 0 | 131 | 73 | Not selected | No |
 | Premier League | 2001-02 | 161 | 0 | 0 | 158 | 66 | Not selected | No |
 | Serie A | 1999-00 | 119 | 0 | 0 | 1 | 0 | Not selected | No |
@@ -34,7 +34,7 @@ Status: **17/17 candidate season datasets present; 295/2245 provisional tiers; 1
 | Ligue 1 | 1999-00 | 111 | 0 | 0 | 3 | 19 | Not selected | No |
 | Ligue 1 | 2000-01 | 141 | 0 | 0 | 15 | 20 | Not selected | No |
 | Ligue 1 | 2001-02 | 134 | 0 | 0 | 11 | 6 | Not selected | No |
-| **Total** | **17 seasons** | **2245** | **295** | **280** | **948** | **573** | **2 provisional** | **0/17** |
+| **Total** | **17 seasons** | **2240** | **303** | **293** | **840** | **608** | **3 provisional** | **0/17** |
 
 Tier distribution for the 280 existing La Liga provisional grades: S=9; A+=17; A=24; A-=47. All other tier grades are carried from previously approved-as-draft work and are **not** upgraded to final.
 
@@ -142,3 +142,15 @@ This appended record is on branch `draft/pl-1999-00-fresh-verification-20261030`
 - **Do not mark season finished, do not merge this branch as final, and do not advance to Premier League 2000-01 without instruction.**
 
 Existing standings, European participant records, historic C marker/stripped-title marker and UI source files have NOT been altered in this branch.
+
+
+## 2026-10-30: PL 1999-00 deployable DRAFT (newer record, supersedes old PL 130 candidates)
+
+- New 8-club independent pool: **125 candidate seeds**, with **23 proposed tiers**, **13 provisional goalkeeper ranks**, **102 unrated**. Five PFA-supported additional defender/forward tiers plus five 3-season outfield proposals and 13 goalkeeper proposals. Sources and individual qualification notes embedded in player records.
+- **Best XI now proposed**, not approved: 4-4-2; Nigel Martyn; Ian Harte, Jaap Stam, Sami Hyypiä, Gary Kelly; Harry Kewell, Patrick Vieira, Roy Keane, David Beckham; Andy Cole, Dwight Yorke. Ten 1999-00 PFA XI members from eligible eight teams; Sunderland forward Kevin Phillips ineligible for archive scope, Yorke selected using 1997-98 to 1999-00 goals/starts.
+- Retains old final standings, eight UEFA/Intertoto entrants, crest URLs and champion rendering, and all other seasons. Old 130 candidates archived in Git history only; no pre-existing player candidate imported into new selection source.
+- **Evidence pending**: 102 zero-grade candidates; 86 incomplete individual league starts; all outfield season-majority positions; many preceding two seasons; non-GK position ranking; GK preceding two seasons. These are published as DRAFT research, **not signed-off ratings**.
+- Made browser presentation minimal improvements: Korean + original name, starting status, league starts, rank, player detail evidence, and separate World Class / League Top Class counts. No redesign.
+- Static JSON structural tests in connected session: **PASS** (125 unique club-player keys and IDs, 20 league rows unchanged, eight qualifiers unchanged, 11 valid Best XI refs, 13 nonconflicting goalkeeper ranks, no individual position cap errors, valid DOB formats, correct tier-review flags).
+- App JS: V8 syntax parsing **PASS**. Reproducible CLI script created at `scripts/verify-pl-1999-00-draft.mjs` (CLI execution and real browser check remain separate gates).
+- Publication: source-branch-to-main merge and Pages availability must be verified separately; do not confuse GitHub commit with live screen validation.
