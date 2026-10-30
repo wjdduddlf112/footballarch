@@ -111,3 +111,15 @@ Player nomination/position/tiers/ranks are a different, user-reviewed workflow. 
 - **GitHub Pages live browser**: not checked; remote static web reader could not access Pages. Do not mark actual image/network or visual review as completed.
 - Full details and sources: `audit/LIGUE1_AUDIT_STATUS_2026-10-29.md`; reconstructed input audit archives `audit/ligue1-match-derived-2005-2016.json`, `audit/ligue1-match-derived-2017-2025.json`.
 - **Next work**: historical UEFA/Intertoto actual participant per-season certification, authoritative historical club crest assets and HTTP browser checks, deployed standings/overview C/Relegation/season navigation screen audit; obtain user approval before player nomination.
+
+
+## Player draft integration and historical entry corrections — 2026-10-30
+
+The five-league **17 season / 2,245 player** candidate integration on `main` is described separately in `audit/PLAYER_INTEGRATION_PROGRESS.md` and `audit/player-integration-audit-2026-10-30.json`. It is **DRAFT data**, not user-approved historical tiers. Existing La Liga 1999-00 / 2000-01 preliminary 280 tiers and the demo 2022-23 dataset were preserved without changes. Only 280/2,245 players have provisional tiers; 1,965 remain ungraded.
+
+Two previously missing real European entries discovered in the player-club eligibility check were added to the **existing** European qualification data, without altering numeric league table results:
+
+1. **Bundesliga 1999-00 → 2000 Intertoto:** VfL Wolfsburg (DFL, *Bundesliga Report 2008*, actual Intertoto 2000 participation table, p. around 90). The current 27-season Bundesliga archive now has **202** curated European entrant-season records (previous 201); 1999-00 now has nine eligible clubs. Source: https://media.dfl.de/sites/2/2018/11/BL_Report_2008.pdf . Exact 2000 Wolfsburg participation is source-backed; other historical entrants remain subject to full audit.
+2. **Premier League 2001-02 → 2002-03 UEFA Cup:** Ipswich Town, despite Premier League relegation, qualified through the UEFA Fair Play draw officially confirmed on 28 May 2002. The 27-season Premier League qualification archive now contains **205** European entrant-season records (previous 204); 2001-02 has ten eligible clubs. Source: https://www.uefa.com/uefaeuropaleague/news/0185-0e6a457d7fe2-6cc5f81db13d-1000--uefa-cup-bonus-for-ipswich-and-sigma/
+
+**Gate separation:** Existing league table source-checked integrity is preserved; new candidate JSONs have been read/parsed and checked structurally through the GitHub connector; `scripts/verify-player-integration.mjs` exists but its standalone Node CLI execution is still outstanding. The 17 actual live browser views (Overview, Best XI, Top Class, League Table and Statistics), historic crest loading, player detailed performance, individual formation-frequency research and unapproved Best XI checks are **NOT** complete. No UI code or styling was changed in this player integration.
