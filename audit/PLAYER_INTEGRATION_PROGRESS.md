@@ -154,3 +154,20 @@ Existing standings, European participant records, historic C marker/stripped-tit
 - Static JSON structural tests in connected session: **PASS** (125 unique club-player keys and IDs, 20 league rows unchanged, eight qualifiers unchanged, 11 valid Best XI refs, 13 nonconflicting goalkeeper ranks, no individual position cap errors, valid DOB formats, correct tier-review flags).
 - App JS: V8 syntax parsing **PASS**. Reproducible CLI script created at `scripts/verify-pl-1999-00-draft.mjs` (CLI execution and real browser check remain separate gates).
 - Publication: source-branch-to-main merge and Pages availability must be verified separately; do not confuse GitHub commit with live screen validation.
+
+
+## La Liga 2002-03 restart — independent three-season review (2026-10-30)
+
+This checkpoint **supersedes the old La Liga 2002-03 zero-grade row only**. The project moved by explicit user instruction from the previous PL 1999-00 priority to **La Liga 2002-03**; no other season's player data was changed by this continuation.
+
+- Main branch read before modification; repository HEAD originally `abd9e6334d9ece6b7617f4598eb97eeb29aef4d9`.
+- Actual 2003-04 next-season European entrants: **9** (Real Madrid, Real Sociedad, Deportivo, Celta, Valencia, Barcelona, Mallorca, Villarreal, Racing). The two Intertoto teams are Villarreal and Racing. The 20-row season league table and club crest data remain unmodified.
+- Existing season file initially contained **128 historical imported candidate registrations** with **zero** tiers. They are not newly eligible or selected solely because they appear in the file. Nine 2002-03 BDFutbol season squad references have been independently researched, and 14 player profiles independently examined with 2000-01 / 2001-02 / 2002-03 appearances, starts and goals where available. These 14 have a provisional DRAFT tier and individualized 3-season reasoning. **114 old candidate registrations remain un-reselected and ungraded**.
+- Nine reviewed club coverage; **14** players in draft classification; **0** evaluated players have positional league-wide rank. Existing **115/128** player positions require majority-position sign-off, so grades remain provisional.
+- Birthday entries missing in season JSON: **90**. Ronaldo profile birth date conflict (18 vs 22 September 1976) documented in `candidateAudit`; do not silently erase either source.
+- 14 provisional tiers by tier: S=1, A+=5, A=4, A-=2, B+=1, B=1; remaining 114 tiers null. Tier value null does NOT mean D.
+- Best XI: **not selected** (0). Team formations: **not independently certified**. Node CLI tests: **not run through connector**. GitHub Pages interactive browser and image/render checks: **not performed**. User final approval: **not requested or received**.
+- Individual evidence, 9 club season source URLs, field-level details and open gates: [`audit/LALIGA_2002_03_INDEPENDENT_REVIEW.md`](LALIGA_2002_03_INDEPENDENT_REVIEW.md).
+- Write commits: `ff996a5957cdc4deee502035fec1c90027a0e00c`, `32704533ebffec93e69c3a64a687469bef503ba0`, `d941f07005e855e08fc96e45f639a525b5b5b050`, `975fb04c2f868403ee30fe56210641c1c169920f`, `826113824e8efe6b49650cd57a7ac4ffd25ab0d8`.
+
+**Resume:** independently reselect and check 114 existing legacy records and other qualifying candidates from current-season sources, validate match-level primary positions and club formations, collect full three-season evidence, assign peer-compared tiers and position ranks, then propose Best XI. Do not auto-start La Liga 2003-04 without user direction. Keep DRAFT status.
