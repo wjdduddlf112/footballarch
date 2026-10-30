@@ -35,7 +35,7 @@ for(const [pos,ranks] of Object.entries(posRanks)){
  const entries=d.players.filter(p=>p.position===pos&&p.rank!=null).sort((a,b)=>a.rank-b.rank);
  if(entries.some((p,i)=>i&&gradeRanks.indexOf(p.tier)<gradeRanks.indexOf(entries[i-1].tier)))errors.push("Rank tier ordering mismatch "+pos);
 }
-if(d.players.filter(p=>p.tier!=null).length!==126||d.players.filter(p=>p.rank!=null).length!==126)errors.push("1999-00 individual tier/rank count changed");
+if(d.players.filter(p=>p.tier!=null).length!==128||d.players.filter(p=>p.rank!=null).length!==128)errors.push("1999-00 individual tier/rank count changed");
 if(d.players.filter(p=>p.starts==null).length!==0)errors.push("1999-00 league starts evidence not populated for each candidate");
 if(d.players.filter(p=>p.tier==null).some(p=>p.rank!=null))errors.push("Unrated player has a rank");
 if(d.bestXi?.length!==11||new Set(d.bestXi.map(p=>p.playerId)).size!==11||d.bestXi.some(x=>!playerIds.has(x.playerId)||!positions.includes(x.position)))errors.push("Best XI invalid references");
