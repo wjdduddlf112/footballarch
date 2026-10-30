@@ -5,7 +5,7 @@
     "season": "1999-00",
     "qualifyingSeason": "2000-01",
     "status": "draft",
-    "label": "1999-00 신규 조사 DRAFT · 부분 검증 · 사용자 미승인",
+    "label": "독립 자료 재조사 DRAFT · 포지션 재검토 및 전체 후보 평가 진행",
     "standingsOnly": false,
     "standingsStatus": "verified",
     "standingsVerified": true,
@@ -41,7 +41,7 @@
       "status": "draft_unapproved",
       "method": "fresh_research_not_reusing_previous_imported_candidate_pool",
       "qualifyingClubCount": 8,
-      "candidatePoolCount": 125,
+      "candidatePoolCount": 128,
       "verifiedFullThreeSeasonPlayers": 6,
       "partialTierCount": 23,
       "unratedCount": 102,
@@ -52,7 +52,120 @@
         "audit/player-research/premierleague-1999-00-cb-fresh-shortlist.json",
         "audit/player-research/premierleague-1999-00-outfield-research-pool.json",
         "audit/player-research/premierleague-1999-00-three-season-tier-proposals.json"
-      ]
+      ],
+      "correctionsRound2": [
+        {
+          "type": "remove",
+          "player": "Stephen Wright",
+          "club": "bradford",
+          "reason": "1999-00 PL 0 matches/0 starts in Statbunker; cannot nominate as season appearance-confirmed RB.",
+          "originalPosition": "RB"
+        },
+        {
+          "type": "remove",
+          "player": "Lee Hendrie",
+          "club": "astonvilla",
+          "reason": "CM candidate slot limited to 2+1; 1999-00 Gareth Barry 30 midfield starts vs Hendrie 18 and duplicate CM candidate cap.",
+          "originalPosition": "CM"
+        },
+        {
+          "type": "reassign",
+          "player": "Gareth Barry",
+          "club": "astonvilla",
+          "before": {
+            "position": "CB",
+            "role": "backup"
+          },
+          "after": {
+            "position": "CM",
+            "role": "backup"
+          },
+          "reason": "FBref 1999-00 lists Gareth Barry MF with 30 starts, not a main CB; former CB assignment unsupported."
+        },
+        {
+          "type": "reassign",
+          "player": "Paul Merson",
+          "club": "astonvilla",
+          "before": {
+            "position": "CAM",
+            "role": "starter"
+          },
+          "after": {
+            "position": "RW",
+            "role": "starter"
+          },
+          "reason": "Aston Villa contemporaneous seasonal XI labels Merson RM; archive RW used for right midfielder rather than imposing CAM."
+        },
+        {
+          "type": "reassign",
+          "player": "Stephen McPhail",
+          "club": "leeds",
+          "before": {
+            "position": "RW",
+            "role": "starter"
+          },
+          "after": {
+            "position": "LW",
+            "role": "backup"
+          },
+          "reason": "1999-00 left-midfield role in historical club squad references, not RW; no overlapping Kewell starting LW."
+        },
+        {
+          "type": "reassign",
+          "player": "David Hopkin",
+          "club": "leeds",
+          "before": {
+            "position": "RW",
+            "role": "backup"
+          },
+          "after": {
+            "position": "RW",
+            "role": "starter"
+          },
+          "reason": "Leeds season squad labels Hopkin right midfield; McPhail was not a right winger."
+        },
+        {
+          "type": "add",
+          "player": "Robbie Fowler",
+          "club": "liverpool",
+          "position": "ST",
+          "starts": 8,
+          "reason": "1999-00 Liverpool 14 league appearances/8 starts, 3 goals. 1997-98 20 appearances, 1998-99 25 appearances."
+        },
+        {
+          "type": "add",
+          "player": "Colin Calderwood",
+          "club": "astonvilla",
+          "position": "CB",
+          "starts": 15,
+          "reason": "1999-00 Villa centre-back 15 league starts plus 3 bench outings; 1998-99 Tottenham and Villa record confirms history."
+        },
+        {
+          "type": "add",
+          "player": "Alan Thompson",
+          "club": "astonvilla",
+          "position": "LW",
+          "starts": 16,
+          "reason": "1999-00 Aston Villa left midfielder; 21 games/16 starts and prior Bolton/Villa three-season statistical record."
+        },
+        {
+          "type": "add",
+          "player": "Emerson Thome",
+          "club": "chelsea",
+          "position": "CB",
+          "starts": 18,
+          "reason": "1999-00 Chelsea 20 league appearances/18 starts after mid-season transfer from Sheffield Wednesday; CB."
+        },
+        {
+          "type": "add",
+          "player": "Neil Redfearn",
+          "club": "bradford",
+          "position": "CM",
+          "starts": 14,
+          "reason": "1999-00 Bradford 17 appearances, 14 league starts before March transfer to Wigan."
+        }
+      ],
+      "reviewedOn": "2026-10-30"
     },
     "candidateCount": 130,
     "playerAssessmentStatus": "fresh_source_research_partial_tiers",
@@ -1385,44 +1498,38 @@
       "assessmentRationale": null
     },
     {
-      "id": "pl-1999-00-independent-cb-18",
-      "name": "Gareth Barry",
-      "nameOriginal": "Gareth Barry",
-      "nameKo": "개러스 배리",
+      "id": "pl-1999-00-corrected-astonvilla-colin-calderwood",
+      "name": "Colin Calderwood",
+      "nameOriginal": "Colin Calderwood",
+      "nameKo": "콜린 콜더우드",
       "club": "astonvilla",
       "clubNameOriginal": "Aston Villa FC",
-      "born": "1981-02-23",
+      "born": "1965-01-20",
       "position": "CB",
       "role": "backup",
       "season": "1999-00",
-      "leagueAppearances": null,
-      "leagueStarts": 30,
-      "starts": 30,
+      "leagueAppearances": 18,
+      "leagueStarts": 15,
+      "starts": 15,
       "tier": null,
       "rank": null,
       "review": "evidence_pending",
       "evaluationStatus": "source_evidence_pending",
-      "candidateStatus": "research_shortlist_unapproved",
       "positionMajorityVerified": false,
-      "threeSeasonReview": "pending_individual_verification",
-      "threeSeasonStarts": null,
-      "threeSeasonContext": null,
-      "seasonEvidenceStatus": "league_starts_recorded_position_majority_pending",
+      "seasonEvidenceStatus": "league_starts_source_checked_position_role_review_pending",
+      "candidateStatus": "newly_researched_correction",
+      "assessmentRationale": null,
+      "sources": [
+        "https://cobblerspast.com/colin-calderwood/"
+      ],
       "evidence": [
         {
-          "url": "https://fbref.com/en/squads/8602292d/1999-2000/Aston-Villa-Stats",
-          "claim": "Squad statistics, eligibility, historical season player context or contemporary award; subject to player-level verification"
-        },
-        {
-          "url": "https://www.footballsquads.co.uk/eng/1999-2000/faprem/avilla.htm",
-          "claim": "Squad statistics, eligibility, historical season player context or contemporary award; subject to player-level verification"
+          "url": "https://cobblerspast.com/colin-calderwood/",
+          "claim": "1999-00 season appearance or biographical evidence"
         }
       ],
-      "sources": [
-        "https://fbref.com/en/squads/8602292d/1999-2000/Aston-Villa-Stats",
-        "https://www.footballsquads.co.uk/eng/1999-2000/faprem/avilla.htm"
-      ],
-      "assessmentRationale": null
+      "threeSeasonReview": "previous_seasons_to_check",
+      "auditReason": "1999-00 Villa centre-back 15 league starts plus 3 bench outings; 1998-99 Tottenham and Villa record confirms history."
     },
     {
       "id": "pl-1999-00-independent-cb-17",
@@ -1583,6 +1690,51 @@
         "https://www.footballsquads.co.uk/eng/1999-2000/faprem/bradford.htm"
       ],
       "assessmentRationale": null
+    },
+    {
+      "id": "pl-1999-00-corrected-chelsea-emerson-thome",
+      "name": "Emerson Thome",
+      "nameOriginal": "Emerson Thome",
+      "nameKo": "에메르송 토메",
+      "club": "chelsea",
+      "clubNameOriginal": "Chelsea FC",
+      "born": "1972-03-30",
+      "position": "CB",
+      "role": "backup",
+      "season": "1999-00",
+      "leagueAppearances": 20,
+      "leagueStarts": 18,
+      "starts": 18,
+      "tier": null,
+      "rank": null,
+      "review": "evidence_pending",
+      "evaluationStatus": "source_evidence_pending",
+      "positionMajorityVerified": false,
+      "seasonEvidenceStatus": "league_starts_source_checked_position_role_review_pending",
+      "candidateStatus": "newly_researched_correction",
+      "assessmentRationale": null,
+      "sources": [
+        "https://fbref.com/en/players/7dc1b3c9/"
+      ],
+      "evidence": [
+        {
+          "url": "https://fbref.com/en/players/7dc1b3c9/",
+          "claim": "1999-00 season appearance or biographical evidence"
+        }
+      ],
+      "threeSeasonReview": "previous_seasons_to_check",
+      "auditReason": "1999-00 Chelsea 20 league appearances/18 starts after mid-season transfer from Sheffield Wednesday; CB.",
+      "threeSeasonStarts": {
+        "1997-98": 6,
+        "1998-99": 38,
+        "1999-00": 34
+      },
+      "threeSeasonStartsBreakdown": {
+        "1999-00": {
+          "Sheffield Wednesday": 16,
+          "Chelsea": 18
+        }
+      }
     },
     {
       "id": "pl-1999-00-independent-cb-12",
@@ -2725,46 +2877,6 @@
       "assessmentRationale": null
     },
     {
-      "id": "pl-1999-00-independent-outfield-082",
-      "name": "Stephen Wright",
-      "nameOriginal": "Stephen Wright",
-      "nameKo": "스티븐 라이트",
-      "club": "bradford",
-      "clubNameOriginal": "Bradford City AFC",
-      "born": "1971-08-27",
-      "position": "RB",
-      "role": "backup",
-      "season": "1999-00",
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "starts": null,
-      "tier": null,
-      "rank": null,
-      "review": "evidence_pending",
-      "evaluationStatus": "source_evidence_pending",
-      "candidateStatus": "nomination_pool_not_individually_verified",
-      "positionMajorityVerified": false,
-      "threeSeasonReview": "pending_individual_verification",
-      "threeSeasonStarts": null,
-      "threeSeasonContext": null,
-      "seasonEvidenceStatus": "league_starts_pending",
-      "evidence": [
-        {
-          "url": "https://fbref.com/en/squads/3148d79f/1999-2000/Bradford-City-Stats",
-          "claim": "Squad statistics, eligibility, historical season player context or contemporary award; subject to player-level verification"
-        },
-        {
-          "url": "https://www.footballsquads.co.uk/eng/1999-2000/faprem/bradford.htm",
-          "claim": "Squad statistics, eligibility, historical season player context or contemporary award; subject to player-level verification"
-        }
-      ],
-      "sources": [
-        "https://fbref.com/en/squads/3148d79f/1999-2000/Bradford-City-Stats",
-        "https://www.footballsquads.co.uk/eng/1999-2000/faprem/bradford.htm"
-      ],
-      "assessmentRationale": null
-    },
-    {
       "id": "pl-1999-00-independent-outfield-052",
       "name": "Albert Ferrer",
       "nameOriginal": "Albert Ferrer",
@@ -3473,6 +3585,46 @@
       "assessmentRationale": null
     },
     {
+      "id": "pl-1999-00-independent-cb-18",
+      "name": "Gareth Barry",
+      "nameOriginal": "Gareth Barry",
+      "nameKo": "개러스 배리",
+      "club": "astonvilla",
+      "clubNameOriginal": "Aston Villa FC",
+      "born": "1981-02-23",
+      "position": "CM",
+      "role": "backup",
+      "season": "1999-00",
+      "leagueAppearances": 30,
+      "leagueStarts": 30,
+      "starts": 30,
+      "tier": null,
+      "rank": null,
+      "review": "evidence_pending",
+      "evaluationStatus": "source_evidence_pending",
+      "candidateStatus": "research_shortlist_unapproved",
+      "positionMajorityVerified": false,
+      "threeSeasonReview": "pending_individual_verification",
+      "threeSeasonStarts": null,
+      "threeSeasonContext": null,
+      "seasonEvidenceStatus": "league_starts_recorded_position_majority_pending",
+      "evidence": [
+        {
+          "url": "https://fbref.com/en/squads/8602292d/1999-2000/Aston-Villa-Stats",
+          "claim": "Squad statistics, eligibility, historical season player context or contemporary award; subject to player-level verification"
+        },
+        {
+          "url": "https://www.footballsquads.co.uk/eng/1999-2000/faprem/avilla.htm",
+          "claim": "Squad statistics, eligibility, historical season player context or contemporary award; subject to player-level verification"
+        }
+      ],
+      "sources": [
+        "https://fbref.com/en/squads/8602292d/1999-2000/Aston-Villa-Stats",
+        "https://www.footballsquads.co.uk/eng/1999-2000/faprem/avilla.htm"
+      ],
+      "assessmentRationale": null
+    },
+    {
       "id": "pl-1999-00-independent-outfield-071",
       "name": "George Boateng",
       "nameOriginal": "George Boateng",
@@ -3553,46 +3705,6 @@
       "assessmentRationale": null
     },
     {
-      "id": "pl-1999-00-independent-outfield-073",
-      "name": "Lee Hendrie",
-      "nameOriginal": "Lee Hendrie",
-      "nameKo": "리 헨드리",
-      "club": "astonvilla",
-      "clubNameOriginal": "Aston Villa FC",
-      "born": "1977-05-18",
-      "position": "CM",
-      "role": "backup",
-      "season": "1999-00",
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "starts": null,
-      "tier": null,
-      "rank": null,
-      "review": "evidence_pending",
-      "evaluationStatus": "source_evidence_pending",
-      "candidateStatus": "nomination_pool_not_individually_verified",
-      "positionMajorityVerified": false,
-      "threeSeasonReview": "pending_individual_verification",
-      "threeSeasonStarts": null,
-      "threeSeasonContext": null,
-      "seasonEvidenceStatus": "league_starts_pending",
-      "evidence": [
-        {
-          "url": "https://fbref.com/en/squads/8602292d/1999-2000/Aston-Villa-Stats",
-          "claim": "Squad statistics, eligibility, historical season player context or contemporary award; subject to player-level verification"
-        },
-        {
-          "url": "https://www.footballsquads.co.uk/eng/1999-2000/faprem/avilla.htm",
-          "claim": "Squad statistics, eligibility, historical season player context or contemporary award; subject to player-level verification"
-        }
-      ],
-      "sources": [
-        "https://fbref.com/en/squads/8602292d/1999-2000/Aston-Villa-Stats",
-        "https://www.footballsquads.co.uk/eng/1999-2000/faprem/avilla.htm"
-      ],
-      "assessmentRationale": null
-    },
-    {
       "id": "pl-1999-00-independent-outfield-084",
       "name": "Gareth Whalley",
       "nameOriginal": "Gareth Whalley",
@@ -3631,6 +3743,40 @@
         "https://www.footballsquads.co.uk/eng/1999-2000/faprem/bradford.htm"
       ],
       "assessmentRationale": null
+    },
+    {
+      "id": "pl-1999-00-corrected-bradford-neil-redfearn",
+      "name": "Neil Redfearn",
+      "nameOriginal": "Neil Redfearn",
+      "nameKo": "닐 레드펀",
+      "club": "bradford",
+      "clubNameOriginal": "Bradford City AFC",
+      "born": "1965-06-20",
+      "position": "CM",
+      "role": "backup",
+      "season": "1999-00",
+      "leagueAppearances": 17,
+      "leagueStarts": 14,
+      "starts": 14,
+      "tier": null,
+      "rank": null,
+      "review": "evidence_pending",
+      "evaluationStatus": "source_evidence_pending",
+      "positionMajorityVerified": false,
+      "seasonEvidenceStatus": "league_starts_source_checked_position_role_review_pending",
+      "candidateStatus": "newly_researched_correction",
+      "assessmentRationale": null,
+      "sources": [
+        "https://www.statbunker.com/competitions/SeasonAppearances?club_id=6&comp_id=3"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.statbunker.com/competitions/SeasonAppearances?club_id=6&comp_id=3",
+          "claim": "1999-00 season appearance or biographical evidence"
+        }
+      ],
+      "threeSeasonReview": "previous_seasons_to_check",
+      "auditReason": "1999-00 Bradford 17 appearances, 14 league starts before March transfer to Wigan."
     },
     {
       "id": "pl-1999-00-independent-outfield-083",
@@ -3993,46 +4139,6 @@
       "assessmentRationale": null
     },
     {
-      "id": "pl-1999-00-independent-outfield-074",
-      "name": "Paul Merson",
-      "nameOriginal": "Paul Merson",
-      "nameKo": "폴 머슨",
-      "club": "astonvilla",
-      "clubNameOriginal": "Aston Villa FC",
-      "born": "1968-03-20",
-      "position": "CAM",
-      "role": "starter",
-      "season": "1999-00",
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "starts": null,
-      "tier": null,
-      "rank": null,
-      "review": "evidence_pending",
-      "evaluationStatus": "source_evidence_pending",
-      "candidateStatus": "nomination_pool_not_individually_verified",
-      "positionMajorityVerified": false,
-      "threeSeasonReview": "pending_individual_verification",
-      "threeSeasonStarts": null,
-      "threeSeasonContext": null,
-      "seasonEvidenceStatus": "league_starts_pending",
-      "evidence": [
-        {
-          "url": "https://fbref.com/en/squads/8602292d/1999-2000/Aston-Villa-Stats",
-          "claim": "Squad statistics, eligibility, historical season player context or contemporary award; subject to player-level verification"
-        },
-        {
-          "url": "https://www.footballsquads.co.uk/eng/1999-2000/faprem/avilla.htm",
-          "claim": "Squad statistics, eligibility, historical season player context or contemporary award; subject to player-level verification"
-        }
-      ],
-      "sources": [
-        "https://fbref.com/en/squads/8602292d/1999-2000/Aston-Villa-Stats",
-        "https://www.footballsquads.co.uk/eng/1999-2000/faprem/avilla.htm"
-      ],
-      "assessmentRationale": null
-    },
-    {
       "id": "pl-1999-00-independent-outfield-021",
       "name": "Marc Overmars",
       "nameOriginal": "Marc Overmars",
@@ -4071,6 +4177,45 @@
         "https://www.footballsquads.co.uk/eng/1999-2000/faprem/arsenal.htm"
       ],
       "assessmentRationale": null
+    },
+    {
+      "id": "pl-1999-00-corrected-astonvilla-alan-thompson",
+      "name": "Alan Thompson",
+      "nameOriginal": "Alan Thompson",
+      "nameKo": "앨런 톰프슨",
+      "club": "astonvilla",
+      "clubNameOriginal": "Aston Villa FC",
+      "born": "1973-12-22",
+      "position": "LW",
+      "role": "starter",
+      "season": "1999-00",
+      "leagueAppearances": 21,
+      "leagueStarts": 16,
+      "starts": 16,
+      "tier": null,
+      "rank": null,
+      "review": "evidence_pending",
+      "evaluationStatus": "source_evidence_pending",
+      "positionMajorityVerified": false,
+      "seasonEvidenceStatus": "league_starts_source_checked_position_role_review_pending",
+      "candidateStatus": "newly_researched_correction",
+      "assessmentRationale": null,
+      "sources": [
+        "https://fbref.com/en/players/2eaac012/Alan-Thompson"
+      ],
+      "evidence": [
+        {
+          "url": "https://fbref.com/en/players/2eaac012/Alan-Thompson",
+          "claim": "1999-00 season appearance or biographical evidence"
+        }
+      ],
+      "threeSeasonReview": "previous_seasons_to_check",
+      "auditReason": "1999-00 Aston Villa left midfielder; 21 games/16 starts and prior Bolton/Villa three-season statistical record.",
+      "threeSeasonStarts": {
+        "1997-98": 33,
+        "1998-99": 20,
+        "1999-00": 16
+      }
     },
     {
       "id": "pl-1999-00-independent-outfield-086",
@@ -4240,6 +4385,46 @@
         "https://fbref.com/en/players/51ef13b9/Harry-Kewell"
       ],
       "assessmentRationale": "1999-00 36 starts plus decisive individual wing production; rising continuity from 1997-98 and full 1998-99 season, Young Player award."
+    },
+    {
+      "id": "pl-1999-00-independent-outfield-033",
+      "name": "Stephen McPhail",
+      "nameOriginal": "Stephen McPhail",
+      "nameKo": "스티븐 맥페일",
+      "club": "leeds",
+      "clubNameOriginal": "Leeds United AFC",
+      "born": "1979-12-09",
+      "position": "LW",
+      "role": "backup",
+      "season": "1999-00",
+      "leagueAppearances": null,
+      "leagueStarts": null,
+      "starts": null,
+      "tier": null,
+      "rank": null,
+      "review": "evidence_pending",
+      "evaluationStatus": "source_evidence_pending",
+      "candidateStatus": "nomination_pool_not_individually_verified",
+      "positionMajorityVerified": false,
+      "threeSeasonReview": "pending_individual_verification",
+      "threeSeasonStarts": null,
+      "threeSeasonContext": null,
+      "seasonEvidenceStatus": "league_starts_pending",
+      "evidence": [
+        {
+          "url": "https://fbref.com/en/squads/5bfb9659/1999-2000/Leeds-United-Stats",
+          "claim": "Squad statistics, eligibility, historical season player context or contemporary award; subject to player-level verification"
+        },
+        {
+          "url": "https://www.footballsquads.co.uk/eng/1999-2000/faprem/leeds.htm",
+          "claim": "Squad statistics, eligibility, historical season player context or contemporary award; subject to player-level verification"
+        }
+      ],
+      "sources": [
+        "https://fbref.com/en/squads/5bfb9659/1999-2000/Leeds-United-Stats",
+        "https://www.footballsquads.co.uk/eng/1999-2000/faprem/leeds.htm"
+      ],
+      "assessmentRationale": null
     },
     {
       "id": "pl-1999-00-independent-outfield-064",
@@ -4442,6 +4627,46 @@
       "assessmentRationale": null
     },
     {
+      "id": "pl-1999-00-independent-outfield-074",
+      "name": "Paul Merson",
+      "nameOriginal": "Paul Merson",
+      "nameKo": "폴 머슨",
+      "club": "astonvilla",
+      "clubNameOriginal": "Aston Villa FC",
+      "born": "1968-03-20",
+      "position": "RW",
+      "role": "starter",
+      "season": "1999-00",
+      "leagueAppearances": null,
+      "leagueStarts": null,
+      "starts": null,
+      "tier": null,
+      "rank": null,
+      "review": "evidence_pending",
+      "evaluationStatus": "source_evidence_pending",
+      "candidateStatus": "nomination_pool_not_individually_verified",
+      "positionMajorityVerified": false,
+      "threeSeasonReview": "pending_individual_verification",
+      "threeSeasonStarts": null,
+      "threeSeasonContext": null,
+      "seasonEvidenceStatus": "league_starts_pending",
+      "evidence": [
+        {
+          "url": "https://fbref.com/en/squads/8602292d/1999-2000/Aston-Villa-Stats",
+          "claim": "Squad statistics, eligibility, historical season player context or contemporary award; subject to player-level verification"
+        },
+        {
+          "url": "https://www.footballsquads.co.uk/eng/1999-2000/faprem/avilla.htm",
+          "claim": "Squad statistics, eligibility, historical season player context or contemporary award; subject to player-level verification"
+        }
+      ],
+      "sources": [
+        "https://fbref.com/en/squads/8602292d/1999-2000/Aston-Villa-Stats",
+        "https://www.footballsquads.co.uk/eng/1999-2000/faprem/avilla.htm"
+      ],
+      "assessmentRationale": null
+    },
+    {
       "id": "pl-1999-00-independent-outfield-075",
       "name": "Steve Stone",
       "nameOriginal": "Steve Stone",
@@ -4569,46 +4794,6 @@
       "club": "leeds",
       "clubNameOriginal": "Leeds United AFC",
       "born": "1970-08-21",
-      "position": "RW",
-      "role": "backup",
-      "season": "1999-00",
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "starts": null,
-      "tier": null,
-      "rank": null,
-      "review": "evidence_pending",
-      "evaluationStatus": "source_evidence_pending",
-      "candidateStatus": "nomination_pool_not_individually_verified",
-      "positionMajorityVerified": false,
-      "threeSeasonReview": "pending_individual_verification",
-      "threeSeasonStarts": null,
-      "threeSeasonContext": null,
-      "seasonEvidenceStatus": "league_starts_pending",
-      "evidence": [
-        {
-          "url": "https://fbref.com/en/squads/5bfb9659/1999-2000/Leeds-United-Stats",
-          "claim": "Squad statistics, eligibility, historical season player context or contemporary award; subject to player-level verification"
-        },
-        {
-          "url": "https://www.footballsquads.co.uk/eng/1999-2000/faprem/leeds.htm",
-          "claim": "Squad statistics, eligibility, historical season player context or contemporary award; subject to player-level verification"
-        }
-      ],
-      "sources": [
-        "https://fbref.com/en/squads/5bfb9659/1999-2000/Leeds-United-Stats",
-        "https://www.footballsquads.co.uk/eng/1999-2000/faprem/leeds.htm"
-      ],
-      "assessmentRationale": null
-    },
-    {
-      "id": "pl-1999-00-independent-outfield-033",
-      "name": "Stephen McPhail",
-      "nameOriginal": "Stephen McPhail",
-      "nameKo": "스티븐 맥페일",
-      "club": "leeds",
-      "clubNameOriginal": "Leeds United AFC",
-      "born": "1979-12-09",
       "position": "RW",
       "role": "starter",
       "season": "1999-00",
@@ -5569,6 +5754,48 @@
         "https://footballsquads.co.uk/eng/1999-2000/faprem/liverpool.htm"
       ],
       "assessmentRationale": null
+    },
+    {
+      "id": "pl-1999-00-corrected-liverpool-robbie-fowler",
+      "name": "Robbie Fowler",
+      "nameOriginal": "Robbie Fowler",
+      "nameKo": "로비 파울러",
+      "club": "liverpool",
+      "clubNameOriginal": "Liverpool FC",
+      "born": "1975-04-09",
+      "position": "ST",
+      "role": "backup",
+      "season": "1999-00",
+      "leagueAppearances": 14,
+      "leagueStarts": 8,
+      "starts": 8,
+      "tier": null,
+      "rank": null,
+      "review": "evidence_pending",
+      "evaluationStatus": "source_evidence_pending",
+      "positionMajorityVerified": false,
+      "seasonEvidenceStatus": "league_starts_source_checked_position_role_review_pending",
+      "candidateStatus": "newly_researched_correction",
+      "assessmentRationale": null,
+      "sources": [
+        "https://www.lfchistory.net/season-archive/appearances/43",
+        "https://www.theguardian.com/football/2000/aug/04/newsstory.sport2",
+        "https://members.liverpoolfc.com/history/past-players/robbie-fowler"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.lfchistory.net/season-archive/appearances/43",
+          "claim": "1999-00 season appearance or biographical evidence"
+        }
+      ],
+      "threeSeasonReview": "previous_seasons_to_check",
+      "auditReason": "1999-00 Liverpool 14 league appearances/8 starts, 3 goals. 1997-98 20 appearances, 1998-99 25 appearances.",
+      "threeSeasonStarts": null,
+      "threeSeasonAppearances": {
+        "1997-98": 20,
+        "1998-99": 25,
+        "1999-00": 14
+      }
     },
     {
       "id": "pl-1999-00-independent-outfield-049",
