@@ -1,0 +1,48 @@
+name: Verify Football Archive PL 2000-01 DRAFT
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test-draft-and-live:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate JS syntax and PL 2000-01 DRAFT
+        run: |
+          node --check assets/app.js
+          node scripts/verify-pl-2000-01-draft.mjs
+      - name: Install headless Chromium
+        run: |
+          npm install --no-save --no-package-lock playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Check deployed Pages version and five live views
+        env:
+          SITE_URL: https://wjdduddlf112.github.io/footballarch/
+        run: |
+          for attempt in $(seq 1 12); do
+            curl -fsSL --max-time 20 "https://wjdduddlf112.github.io/footballarch/data/premierleague-2000-01.json?sha=${{ github.sha }}" -o /tmp/pl00-live.json || true
+            if node -e "const fs=require('node:fs');const d=JSON.parse(fs.readFileSync('/tmp/pl00-live.json','utf8'));if(d.meta.status!=='draft'||d.players.length!==141||d.players.filter(p=>p.tier).length!==141||d.bestXi.length!==11)process.exit(1)" 2>/dev/null; then
+              echo "Live GitHub Pages JSON contains current PL 2000-01 DRAFT."
+              break
+            fi
+            if [ "$attempt" = 12 ]; then echo "GitHub Pages did not publish expected season JSON"; exit 1; fi
+            sleep 20
+          done
+          node scripts/verify-pl-2000-01-live.mjs
+      - name: Upload real browser screenshots and JSON report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pl-2000-01-pages-live-audit
+          path: audit-artifacts/pl-2000-01-live/
+          if-no-files-found: warn
