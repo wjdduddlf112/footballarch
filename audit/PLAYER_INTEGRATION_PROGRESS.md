@@ -3,7 +3,7 @@
 Date: 2026-10-30  
 Repository: `wjdduddlf112/footballarch`, branch `main`  
 Deployment target: https://wjdduddlf112.github.io/footballarch/  
-Status: **17/17 currently tracked candidate season datasets; 549/2250 provisional tier proposals; 1701 unrated. PL 1999-00 128/128 and PL 2000-01 141/141 DRAFT tier/rank entries.**
+Status: **17 tracked season datasets; 712/2252 provisional player tier proposals; 1540 unrated. PL 1999-00 128/128, PL 2000-01 141/141, PL 2001-02 163/163 DRAFT tier/rank entries.**
 
 ## Scope and method
 
@@ -24,7 +24,7 @@ Status: **17/17 currently tracked candidate season datasets; 549/2250 provisiona
 | La Liga | 2003-04 | 138 | 0 | 0 | 106 | 0 | Not selected | No |
 | Premier League | 1999-00 | 128 | 128 | 128 | 0 | 0 | 11 proposed (unapproved) | No |
 | Premier League | 2000-01 | 141 | 141 | 141 | 0 | 0 | 11 proposed (unapproved) | No |
-| Premier League | 2001-02 | 161 | 0 | 0 | 158 | 66 | Not selected | No |
+| Premier League | 2001-02 | 163 | 163 | 163 | 0 | 0 | 11 proposed (unapproved) | No |
 | Serie A | 1999-00 | 119 | 0 | 0 | 1 | 0 | Not selected | No |
 | Serie A | 2000-01 | 109 | 0 | 0 | 7 | 0 | Not selected | No |
 | Serie A | 2001-02 | 137 | 0 | 0 | 0 | 0 | Not selected | No |
@@ -34,7 +34,7 @@ Status: **17/17 currently tracked candidate season datasets; 549/2250 provisiona
 | Ligue 1 | 1999-00 | 111 | 0 | 0 | 3 | 19 | Not selected | No |
 | Ligue 1 | 2000-01 | 141 | 0 | 0 | 15 | 20 | Not selected | No |
 | Ligue 1 | 2001-02 | 134 | 0 | 0 | 11 | 6 | Not selected | No |
-| **Total** | **17 seasons** | **2250** | **549** | **549** | **709** | **449** | **4 provisional** | **0/17** |
+| **Total** | **17 seasons** | **2252** | **712** | **712** | **551** | **383** | **5 provisional** | **0/17** |
 
 Tier distribution for the 280 existing La Liga provisional grades: S=9; A+=17; A=24; A-=47. All other tier grades are carried from previously approved-as-draft work and are **not** upgraded to final.
 
@@ -222,3 +222,16 @@ Three-season evidence exists in summarized form for each tier rationale, but ind
 - Newcastle Alan Shearer 1998-99 29 league starts/14 goals, 1999-00 36/23, 2000-01 19/5; Chelsea Mario Stanić 1998-99 Parma Serie A 7/7, 1999-00 Parma 11/5, 2000-01 Chelsea 8/2; complete three-season numerical summaries confirmed by individual FBref pages. Sources: https://fbref.com/en/players/438b3a51/Alan-Shearer and https://fbref.com/en/players/c5c88be5/all_comps/Mario-Stanic-Stats---All-Competitions .
 - Merge PR #9 on main: https://github.com/wjdduddlf112/footballarch/pull/9 (merge SHA `9503485db3194e0e95bdb30637862c309b46080d`); post-merge season JSON correction `b185418914b61ecd5498ece9adebdb0f97a17953`.
 - GitHub connected main data verification: 141/141 graded, 141/141 league-wide ranks, 11 valid proposed 4-4-2 Best XI entries, full 2000-01 roster and historical club/standings arrays. The same external network could not reach GitHub Pages, and no Actions run/status was returned for merge commit; actual Pages publication and browser success **NOT VERIFIED**. Do not report them as successful.
+
+
+## Premier League 2001-02 independent player research and provisional grades — 2026-10-30
+
+- **User-directed season:** 2001-02 only, next season 2002-03 UEFA participants: Arsenal, Liverpool, Manchester United, Newcastle (UCL); Leeds, Chelsea, Blackburn, **relegated Ipswich via UEFA 2002 Fair Play draw** (UEFA Cup); Fulham, Aston Villa (2002 Intertoto Cup). Ten club identifiers already present in main, and standings/qualifiers/clubs preserved exactly.
+- Fresh selection of **163 players**, distinct from imported previous 161-player draft (not used to decide memberships). Season-specific sources include 11v11, 2001-02 FootballSquads, individual FBref, Statbunker club-season appearance lists. Reselection archive: `audit/player-research/premierleague-2001-02-fresh-roster.json`.
+- Club counts: Arsenal17 Liverpool16 Manchester United18 Newcastle15 Leeds17 Chelsea18 Blackburn15 Fulham14 Aston Villa16 Ipswich17. Every team has an **11-player nominal tactical starting grouping**; a 'backup' label for a high-start midfielder can mean starter-equivalent rotation rather than literal substitute.
+- Individual information: **163/163 current season league starts recorded** (14 originally missing resolved from individual FBref and Statbunker); 163/163 DOB, Korean/original names, current club, role, provisional grade, positional league-wide rank, tier rationale and source links.
+- Grades: S=3 A+=11 A=7 A-=17 B+=46 B=40 B-=26 C+=13 C=0 C-=0 D=0. **World Class 14; League Top Class 38.** No arbitrary tier quota.
+- 4-4-2 Best XI `proposed_unapproved`: GK Shay Given; LB Ashley Cole, CB Rio Ferdinand/Sami Hyypiä, RB Steve Finnan; LW Robert Pirès, DM Roy Keane, CM Patrick Vieira, RW Freddie Ljungberg; ST Thierry Henry/Ruud van Nistelrooy. Only eligible clubs. Current season PFA honors and Golden Boot considered, earlier 1999-00 and 2000-01 individual records weighted lower.
+- **Method limits:** All 163 nominees have individualized DRAFT grades, but detailed 1999-00/2000-01 performances and match-by-match most-used position remain **partially incomplete** for many. Team lineup classifications are provisional; archive 10-position taxonomy reduces classic LM/RM and wingbacks. A tier-input 100% is **not** historic audit sign-off. Maintain DRAFT until user approval.
+- Reproducible validator `scripts/verify-pl-2001-02-draft.mjs` and headless browser check `scripts/verify-pl-2001-02-live.mjs` with `.github/workflows/verify-pl-2001-02-live.yml`, checking published GitHub Pages five tabs and screenshots; actual live action status **must be separately observed**, not inferred from file presence.
+- Preserve all prior-season data, existing layouts and stylesheet, standings, crests, C champion badges, stripped-title markers, qualifier data and season navigation. Stop before PL 2002-03 absent next explicit user instruction.
