@@ -7,8 +7,8 @@
     "assessmentEnd": "2002-03",
     "qualifyingSeason": "2003-04",
     "status": "draft",
-    "candidateStatus": "draft_unapproved",
-    "label": "선수 후보군 1차 초안 · 티어·순위 미확정",
+    "candidateStatus": "legacy_pool_revalidation_in_progress",
+    "label": "2002-03 독립 재조사 진행 · 4명 3시즌 잠정 티어, 기존 124명 재검증 대기",
     "standingsStatus": "reused_from_verified_archive",
     "dataCollected": "2026-10-30",
     "candidateCount": 128,
@@ -34,24 +34,30 @@
     ],
     "formationVerification": "needs_review",
     "bestXiStatus": "not_selected",
-    "tierStatus": "not_evaluated",
+    "tierStatus": "partial_independently_researched_draft",
     "playerEligibilityStatus": "draft",
     "note": "CM double-starter provisional at Sociedad and Racing; team-specific tactical majority must be checked. No CAM candidates admitted until formation audit.",
-    "birthdatesPopulatedCount": 32,
+    "birthdatesPopulatedCount": 34,
     "birthdateAudit": "partial; populated birthdates may be inherited from prior draft or manually corroborated; unpopulated are null",
     "pendingUnassignedCandidates": [],
     "rosterReaudit": "All nine eligible clubs reviewed against BDFutbol seasonal squads; corrections and missing starter-equivalent candidates preserved under draft. Match-by-match primary positional verification pending.",
     "coverageState": "NEEDS_VERIFICATION",
     "standingsOnly": false,
-    "europeanQualificationVerified": false,
+    "europeanQualificationVerified": true,
     "playerIntegration": {
       "sourceBranch": "data/laliga-candidates-2001-2004-draft",
       "importedOn": "2026-10-30",
       "state": "draft_unapproved",
       "archiveStandingsSource": "data/laliga-standings-verified-1999-2026.json",
       "preservedMainStandings": true,
-      "individualThreeSeasonAudit": "pending"
-    }
+      "individualThreeSeasonAudit": "pending",
+      "reselectionStarted": "2026-10-30",
+      "eligibleClubsSourceCrosschecked": 9,
+      "independentlyReevaluatedCount": 4,
+      "legacyNotIndependentlyReselectedCount": 124,
+      "warning": "Existing 128-record player array is historic legacy pool, not a validated new selection. Four specific players independently selected from BDFutbol current-season squad + 3-season profiles; others remain pending independent re-selection. Do not publish legacy pool as final."
+    },
+    "europeanQualificationVerificationScope": "2003-04 nine Spanish actual UEFA/UIC entrants cross-checked against UEFA historical club listings and contemporary soccer-spain summary; separate from player eligibility verification"
   },
   "clubs": [
     {
@@ -447,83 +453,100 @@
       "club": "madrid",
       "competition": "UCL",
       "route": "Actual European entrant",
-      "status": "draft_entry_audit",
+      "status": "source_cross_checked_actual_entry",
       "sources": [
-        "https://en.wikipedia.org/wiki/2002%E2%80%9303_La_Liga"
+        "https://en.wikipedia.org/wiki/2002%E2%80%9303_La_Liga",
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2003/clubs/",
+        "https://www.soccer-spain.com/ssdocs/history/2002-2003.php"
       ]
     },
     {
       "club": "sociedad",
       "competition": "UCL",
       "route": "Actual European entrant",
-      "status": "draft_entry_audit",
+      "status": "source_cross_checked_actual_entry",
       "sources": [
-        "https://en.wikipedia.org/wiki/2002%E2%80%9303_La_Liga"
+        "https://en.wikipedia.org/wiki/2002%E2%80%9303_La_Liga",
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2003/clubs/",
+        "https://www.soccer-spain.com/ssdocs/history/2002-2003.php"
       ]
     },
     {
       "club": "deportivo",
       "competition": "UCL",
       "route": "Actual European entrant",
-      "status": "draft_entry_audit",
+      "status": "source_cross_checked_actual_entry",
       "sources": [
-        "https://en.wikipedia.org/wiki/2002%E2%80%9303_La_Liga"
+        "https://en.wikipedia.org/wiki/2002%E2%80%9303_La_Liga",
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2003/clubs/",
+        "https://www.soccer-spain.com/ssdocs/history/2002-2003.php"
       ]
     },
     {
       "club": "celta",
       "competition": "UCL",
       "route": "Actual European entrant",
-      "status": "draft_entry_audit",
+      "status": "source_cross_checked_actual_entry",
       "sources": [
-        "https://en.wikipedia.org/wiki/2002%E2%80%9303_La_Liga"
+        "https://en.wikipedia.org/wiki/2002%E2%80%9303_La_Liga",
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2003/clubs/",
+        "https://www.soccer-spain.com/ssdocs/history/2002-2003.php"
       ]
     },
     {
       "club": "valencia",
       "competition": "UEFA Cup",
       "route": "Actual European entrant",
-      "status": "draft_entry_audit",
+      "status": "source_cross_checked_actual_entry",
       "sources": [
-        "https://en.wikipedia.org/wiki/2002%E2%80%9303_La_Liga"
+        "https://en.wikipedia.org/wiki/2002%E2%80%9303_La_Liga",
+        "https://www.uefa.com/uefaeuropaleague/history/seasons/2003/clubs/",
+        "https://www.soccer-spain.com/ssdocs/history/2002-2003.php"
       ]
     },
     {
       "club": "barca",
       "competition": "UEFA Cup",
       "route": "Actual European entrant",
-      "status": "draft_entry_audit",
+      "status": "source_cross_checked_actual_entry",
       "sources": [
-        "https://en.wikipedia.org/wiki/2002%E2%80%9303_La_Liga"
+        "https://en.wikipedia.org/wiki/2002%E2%80%9303_La_Liga",
+        "https://www.uefa.com/uefaeuropaleague/history/seasons/2003/clubs/",
+        "https://www.soccer-spain.com/ssdocs/history/2002-2003.php"
       ]
     },
     {
       "club": "mallorca",
       "competition": "UEFA Cup",
       "route": "2002-03 Copa del Rey winner",
-      "status": "draft_entry_audit",
+      "status": "source_cross_checked_actual_entry",
       "sources": [
-        "https://en.wikipedia.org/wiki/2002%E2%80%9303_La_Liga"
+        "https://en.wikipedia.org/wiki/2002%E2%80%9303_La_Liga",
+        "https://www.uefa.com/uefaeuropaleague/history/seasons/2003/clubs/",
+        "https://www.soccer-spain.com/ssdocs/history/2002-2003.php"
       ]
     },
     {
       "club": "villarreal",
       "competition": "Intertoto Cup",
       "route": "2003 Intertoto winner",
-      "status": "draft_entry_audit",
+      "status": "source_cross_checked_actual_entry",
       "sources": [
         "https://en.wikipedia.org/wiki/2002%E2%80%9303_La_Liga",
-        "https://villarrealcf.es/en/copa-intertoto/"
+        "https://villarrealcf.es/en/copa-intertoto/",
+        "https://www.soccer-spain.com/ssdocs/history/2002-2003.php",
+        "https://www.uefa.com/uefaeuropaleague/history/seasons/2003/clubs/"
       ]
     },
     {
       "club": "racing",
       "competition": "Intertoto Cup",
       "route": "2003 Intertoto entrant",
-      "status": "draft_entry_audit",
+      "status": "source_cross_checked_actual_entry",
       "sources": [
         "https://en.wikipedia.org/wiki/2002%E2%80%9303_La_Liga",
-        "https://as.com/masdeporte/2003/06/24/polideportivo/1056428079_850215.html"
+        "https://as.com/masdeporte/2003/06/24/polideportivo/1056428079_850215.html",
+        "https://www.soccer-spain.com/ssdocs/history/2002-2003.php"
       ]
     }
   ],
@@ -776,18 +799,55 @@
       "leagueMinutes": 2707,
       "appearanceScope": "La Liga 2002-03 only",
       "positionVerification": "needs_review",
-      "tier": null,
+      "tier": "S",
       "rank": null,
-      "review": "draft_unapproved",
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2002-032.html",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2002-032.html"
+        "https://www.bdfutbol.com/en/t/t2002-032.html",
+        "https://www.bdfutbol.com/en/j/j2664.html"
       ],
       "verificationNotes": [
-        "Actual position-majority match-level audit outstanding"
+        "Actual position-majority match-level audit outstanding",
+        "Individual 3-season review independently researched on 2026-10-30; final season-specific primary position and league rank pending full pool audit."
       ],
       "nameOriginal": "Zinedine Zidane",
-      "clubNameOriginal": "Real Madrid"
+      "clubNameOriginal": "Real Madrid",
+      "tierReview": "2002-03 리그 33경기(32선발) 9골, 공격 전개의 창조성과 영향력에서 당대 최고 수준. 이전 두 시즌에도 유벤투스·레알 마드리드에서 주전으로 지속 기용. 구단 우승 여부를 직접 가산하지 않고 개인 영향력 중심으로 잠정 S. 실제 주 포지션(CM/CAM/측면) 경기별 배치는 추가 확인 필요.",
+      "threeSeasonReview": {
+        "status": "source_profile_checked_three_seasons_draft",
+        "priority": [
+          "2002-03",
+          "2001-02",
+          "2000-01"
+        ],
+        "leagueRecords": [
+          {
+            "season": "2000-01",
+            "club": "Juventus",
+            "appearances": 33,
+            "starts": 33,
+            "goals": 2
+          },
+          {
+            "season": "2001-02",
+            "club": "Real Madrid",
+            "appearances": 31,
+            "starts": 31,
+            "goals": 7
+          },
+          {
+            "season": "2002-03",
+            "club": "Real Madrid",
+            "appearances": 33,
+            "starts": 32,
+            "goals": 9
+          }
+        ],
+        "notes": "CM/CAM/WL role-majority remains unresolved; existing CM is not independently signed off.",
+        "source": "https://www.bdfutbol.com/en/j/j2664.html"
+      },
+      "independentSelectionAudit": "profile_and_current_club_2002_03_checked"
     },
     {
       "id": "laliga-200203-madrid-10",
@@ -1244,7 +1304,7 @@
       "club": "sociedad",
       "clubId": "sociedad",
       "clubName": "Real Sociedad",
-      "born": null,
+      "born": "1979-11-23",
       "role": "starter",
       "starts": 35,
       "leagueAppearances": 35,
@@ -1252,20 +1312,64 @@
       "leagueMinutes": 3002,
       "appearanceScope": "La Liga 2002-03 only",
       "positionVerification": "needs_review",
-      "tier": null,
+      "tier": "A",
       "rank": null,
-      "review": "draft_unapproved",
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2002-0330.html",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2002-0330.html"
+        "https://www.bdfutbol.com/en/t/t2002-0330.html",
+        "https://www.bdfutbol.com/en/j/j2088.html"
       ],
       "verificationNotes": [
         "Actual position-majority match-level audit outstanding",
         "DOB unconfirmed; intentionally null",
-        "35/35 league starts and 23 goals: co-starting 4-4-2 forward, not bench backup"
+        "35/35 league starts and 23 goals: co-starting 4-4-2 forward, not bench backup",
+        "Individual 3-season review independently researched on 2026-10-30; final season-specific primary position and league rank pending full pool audit."
       ],
       "nameOriginal": "Nihat Kahveci",
-      "clubNameOriginal": "Real Sociedad"
+      "clubNameOriginal": "Real Sociedad",
+      "tierReview": "2002-03 35경기 전 경기 선발·23골로 해당 시즌 리그 최상위 골 생산성. 2001-02 시즌 베식타시/레알 소시에다드 이적 과정과 그 전 시즌 기록을 감안하면 2002-03의 기량 급상승에 비중을 두는 A 잠정 평가. 이전 기간의 스페인 1부 지속성은 제한적.",
+      "threeSeasonReview": {
+        "status": "source_profile_checked_three_seasons_draft",
+        "priority": [
+          "2002-03",
+          "2001-02",
+          "2000-01"
+        ],
+        "leagueRecords": [
+          {
+            "season": "2000-01",
+            "club": "Beşiktaş",
+            "appearances": 31,
+            "starts": 30,
+            "goals": 5
+          },
+          {
+            "season": "2001-02",
+            "club": "Beşiktaş",
+            "appearances": 13,
+            "starts": 13,
+            "goals": 6
+          },
+          {
+            "season": "2001-02",
+            "club": "Real Sociedad",
+            "appearances": 11,
+            "starts": 6,
+            "goals": 1
+          },
+          {
+            "season": "2002-03",
+            "club": "Real Sociedad",
+            "appearances": 35,
+            "starts": 35,
+            "goals": 23
+          }
+        ],
+        "notes": "Co-starting forward with Darko Kovačević; ST role likely, match-level majority pending.",
+        "source": "https://www.bdfutbol.com/en/j/j2088.html"
+      },
+      "independentSelectionAudit": "profile_and_current_club_2002_03_checked"
     },
     {
       "id": "laliga-200203-deportivo-01",
@@ -1696,18 +1800,56 @@
       "leagueMinutes": 3230,
       "appearanceScope": "La Liga 2002-03 only",
       "positionVerification": "needs_review",
-      "tier": null,
+      "tier": "A+",
       "rank": null,
-      "review": "draft_unapproved",
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2002-0313.html",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2002-0313.html"
+        "https://www.bdfutbol.com/en/t/t2002-0313.html",
+        "https://www.bdfutbol.com/en/j/j2403.html",
+        "https://www.uefa.com/news-media/news/0192-0e6a622799e4-41161eeefe59-1000--esm-golden-shoe-makaay-crowned/"
       ],
       "verificationNotes": [
-        "Actual position-majority match-level audit outstanding"
+        "Actual position-majority match-level audit outstanding",
+        "Individual 3-season review independently researched on 2026-10-30; final season-specific primary position and league rank pending full pool audit."
       ],
       "nameOriginal": "Roy Makaay",
-      "clubNameOriginal": "RC Deportivo de La Coruña"
+      "clubNameOriginal": "RC Deportivo de La Coruña",
+      "tierReview": "2002-03 38경기 38선발 29골, 피치치 및 유러피언 골든슈. 직전 두 시즌에도 각각 16골, 12골을 기록한 상위권 골잡이. 최고 시즌의 결정적 생산성과 직전 2년의 연속성에 근거한 A+ 잠정 평가; S 경계는 동일 포지션 전체 비교 후 재검토.",
+      "threeSeasonReview": {
+        "status": "source_profile_checked_three_seasons_draft",
+        "priority": [
+          "2002-03",
+          "2001-02",
+          "2000-01"
+        ],
+        "leagueRecords": [
+          {
+            "season": "2000-01",
+            "club": "Deportivo de La Coruña",
+            "appearances": 29,
+            "starts": 21,
+            "goals": 16
+          },
+          {
+            "season": "2001-02",
+            "club": "Deportivo de La Coruña",
+            "appearances": 30,
+            "starts": 22,
+            "goals": 12
+          },
+          {
+            "season": "2002-03",
+            "club": "Deportivo de La Coruña",
+            "appearances": 38,
+            "starts": 38,
+            "goals": 29
+          }
+        ],
+        "notes": "Forward/ST evidenced; match-level majority still subject to final role audit.",
+        "source": "https://www.bdfutbol.com/en/j/j2403.html"
+      },
+      "independentSelectionAudit": "profile_and_current_club_2002_03_checked"
     },
     {
       "id": "laliga-200203-deportivo-16",
@@ -2217,7 +2359,7 @@
       "club": "valencia",
       "clubId": "valencia",
       "clubName": "Valencia CF",
-      "born": null,
+      "born": "1973-04-14",
       "role": "starter",
       "starts": 31,
       "leagueAppearances": 31,
@@ -2225,19 +2367,56 @@
       "leagueMinutes": 2683,
       "appearanceScope": "La Liga 2002-03 only",
       "positionVerification": "needs_review",
-      "tier": null,
+      "tier": "A+",
       "rank": null,
-      "review": "draft_unapproved",
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2002-0336.html",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2002-0336.html"
+        "https://www.bdfutbol.com/en/t/t2002-0336.html",
+        "https://www.bdfutbol.com/en/j/j2373.html"
       ],
       "verificationNotes": [
         "Actual position-majority match-level audit outstanding",
-        "DOB unconfirmed; intentionally null"
+        "DOB unconfirmed; intentionally null",
+        "Individual 3-season review independently researched on 2026-10-30; final season-specific primary position and league rank pending full pool audit."
       ],
       "nameOriginal": "Roberto Ayala",
-      "clubNameOriginal": "Valencia CF"
+      "clubNameOriginal": "Valencia CF",
+      "tierReview": "발렌시아 수비의 중심으로 2000-01·2001-02·2002-03 세 시즌 모두 높은 선발 비중과 수비 안정성을 보여준 중앙수비수. 2002-03 31경기 전 경기 선발과 3시즌 연속 주전 역할을 바탕으로 A+ 잠정 평가. 개인 수비 기여의 세부 동시대 자료와 동 포지션 선수 비교는 추가 감사 필요.",
+      "threeSeasonReview": {
+        "status": "source_profile_checked_three_seasons_draft",
+        "priority": [
+          "2002-03",
+          "2001-02",
+          "2000-01"
+        ],
+        "leagueRecords": [
+          {
+            "season": "2000-01",
+            "club": "Valencia CF",
+            "appearances": 28,
+            "starts": 27,
+            "goals": 1
+          },
+          {
+            "season": "2001-02",
+            "club": "Valencia CF",
+            "appearances": 29,
+            "starts": 29,
+            "goals": 2
+          },
+          {
+            "season": "2002-03",
+            "club": "Valencia CF",
+            "appearances": 31,
+            "starts": 31,
+            "goals": 1
+          }
+        ],
+        "notes": "BDFutbol player profile lists central defender; match-level primary role pending.",
+        "source": "https://www.bdfutbol.com/en/j/j2373.html"
+      },
+      "independentSelectionAudit": "profile_and_current_club_2002_03_checked"
     },
     {
       "id": "laliga-200203-valencia-08",
@@ -4799,6 +4978,19 @@
     "eligibleClubCount": 9,
     "researchedClubCount": 9,
     "missingClubs": [],
-    "sourcesScope": "BDFutbol league PM/SM/minute squad data; some individual positioning corroborated by contemporary lineups, mostly not majority-position signed off."
+    "sourcesScope": "BDFutbol league PM/SM/minute squad data; some individual positioning corroborated by contemporary lineups, mostly not majority-position signed off.",
+    "independentReview20261030": {
+      "researchedPlayers": [
+        "laliga-200203-madrid-09",
+        "laliga-200203-deportivo-15",
+        "laliga-200203-sociedad-12",
+        "laliga-200203-valencia-07"
+      ],
+      "count": 4,
+      "pendingUnindependentlyReviewed": 124,
+      "method": "External BDFutbol original 2002-03 squad and player 3-season career pages plus UEFA actual-entry lists; not selected by reproducing historic JSON roster",
+      "positionRankGate": "OPEN",
+      "bestXiGate": "OPEN"
+    }
   }
 }
