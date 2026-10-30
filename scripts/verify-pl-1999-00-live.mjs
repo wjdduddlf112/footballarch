@@ -16,7 +16,7 @@ try{
  await page.goto(url,{waitUntil:"domcontentloaded",timeout:40000});
  await page.waitForFunction(()=>document.querySelector("#content")?.textContent?.includes("European Qualification"),{timeout:30000});
  const json=await page.evaluate(async()=>{let r=await fetch("./data/premierleague-1999-00.json",{cache:"no-store"});if(!r.ok)throw Error("live JSON HTTP "+r.status);let j=await r.json();return {season:j.meta.season,status:j.meta.status,players:j.players.length,tiers:j.players.filter(p=>p.tier).length,unrated:j.players.filter(p=>p.tier===null).length,xi:j.bestXi.length,formation:j.meta.formation}});
- assert(json.players===128&&json.tiers===126&&json.unrated===2&&json.xi===11&&json.status==="draft"&&json.formation==="4-4-2","Live JSON does not match deployed draft: "+JSON.stringify(json));
+ assert(json.players===128&&json.tiers===128&&json.unrated===0&&json.xi===11&&json.status==="draft"&&json.formation==="4-4-2","Live JSON does not match deployed draft: "+JSON.stringify(json));
  report.liveJson=json;
  assert((await page.locator("#stateTag").textContent())?.includes("DRAFT"),"Overview lacks visible DRAFT status");
  assert((await page.locator("#content").textContent()).includes("Players"),"Overview lacks player count");
