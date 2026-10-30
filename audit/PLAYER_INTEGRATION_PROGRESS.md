@@ -3,7 +3,7 @@
 Date: 2026-10-30  
 Repository: `wjdduddlf112/footballarch`, branch `main`  
 Deployment target: https://wjdduddlf112.github.io/footballarch/  
-Status: **17/17 currently tracked candidate season datasets; 406/2243 provisional tier proposals; 1837 unrated. PL 1999-00 reassessed to 126/128 (98.44%).**
+Status: **17/17 currently tracked candidate season datasets; 408/2243 provisional tier proposals; 1835 unrated. PL 1999-00 assessed 128/128 (100% DRAFT tier input).**
 
 ## Scope and method
 
@@ -22,7 +22,7 @@ Status: **17/17 currently tracked candidate season datasets; 406/2243 provisiona
 | La Liga | 2001-02 | 135 | 0 | 0 | 82 | 0 | Not selected | No |
 | La Liga | 2002-03 | 128 | 0 | 0 | 96 | 0 | Not selected | No |
 | La Liga | 2003-04 | 138 | 0 | 0 | 106 | 0 | Not selected | No |
-| Premier League | 1999-00 | 128 | 126 | 126 | 0 | 0 | 11 proposed (unapproved) | No |
+| Premier League | 1999-00 | 128 | 128 | 128 | 0 | 0 | 11 proposed (unapproved) | No |
 | Premier League | 2000-01 | 134 | 0 | 0 | 131 | 73 | Not selected | No |
 | Premier League | 2001-02 | 161 | 0 | 0 | 158 | 66 | Not selected | No |
 | Serie A | 1999-00 | 119 | 0 | 0 | 1 | 0 | Not selected | No |
@@ -34,7 +34,7 @@ Status: **17/17 currently tracked candidate season datasets; 406/2243 provisiona
 | Ligue 1 | 1999-00 | 111 | 0 | 0 | 3 | 19 | Not selected | No |
 | Ligue 1 | 2000-01 | 141 | 0 | 0 | 15 | 20 | Not selected | No |
 | Ligue 1 | 2001-02 | 134 | 0 | 0 | 11 | 6 | Not selected | No |
-| **Total** | **17 seasons** | **2243** | **406** | **406** | **840** | **522** | **3 provisional** | **0/17** |
+| **Total** | **17 seasons** | **2243** | **408** | **408** | **840** | **522** | **3 provisional** | **0/17** |
 
 Tier distribution for the 280 existing La Liga provisional grades: S=9; A+=17; A=24; A-=47. All other tier grades are carried from previously approved-as-draft work and are **not** upgraded to final.
 
@@ -188,3 +188,14 @@ This checkpoint **supersedes the old La Liga 2002-03 zero-grade row only**. The 
 - **Important integrity limits**: source-level 1999-00 appearance evidence is extensive, but full **season-majority tactical role** verified by individual match positional records and detailed **1997-98/1998-99** match-by-match independent source audit remain incomplete for many of the 128 candidates. 126 qualitative grades are explicitly proposals under DRAFT, not 126 definitive evidence-complete grades. Position labels especially for wing-backs, wide midfielders, 3-back Leicester and dual-role players need review. Do not misreport 100% historical certainty.
 - UI source layout/other seasons untouched. 1999-00 local structural checks expanded to rank continuity, grade-to-rank consistency, actual starts, 8 eligible clubs, 4-4-2 XI and full DOB integrity. Automatic actual GitHub Pages headless browser validation is a separate pending gate, not established by the presence of workflow source.
 - **Stop at PL 1999-00**. User-directed progression covers PL 1999-00 through 2025-26 **one season per explicit continuation instruction**, not next year automatically.
+
+
+### 2026-10-30 further GK research — latest, supersedes 126/128 earlier block
+
+Fresh prior-season research established Liverpool Brad Friedel: 1997-98 11 league starts, 1998-99 12, 1999-00 2. Source: https://www.lfchistory.net/players/302 , https://fbref.com/en/players/b8c0a975/Brad-Friedel . Qualified for conservative **C+ DRAFT**, GK rank 13/15.
+
+Chelsea Carlo Cudicini: 1997-98 Castel di Sangro Serie B 14 league appearances, 1998-99 Serie C1 32, 1999-00 Chelsea PL 1 start. Source: https://www.stamford-bridge.com/player/player.php?id=125 and historical career table https://en.wikipedia.org/wiki/Carlo_Cudicini . Conservatively **C DRAFT**, GK rank 15/15; prior league standards are not directly transferable to Premier League.
+
+**Current season assessment: 128/128 individualized provisional grades and 128/128 positional ranks (100% tier input, not 100% complete historic proof).** S 1, A+ 6, A 5, A- 26, B+ 40, B 23, B- 14, C+ 10, C 3, C- 0, D 0. World Class 7; League Top Class 38.
+
+Three-season evidence exists in summarized form for each tier rationale, but individual full 1997-98 and 1998-99 match evidence and primary season tactical majority are still partially unresolved; all evaluations remain **DRAFT / user-unapproved**. Browser/PAGE build are independent gates. There are 27 PL seasons 1999-00 to 2025-26; **only first season** assessed in this run. Stop before 2000-01 until user instructs.
