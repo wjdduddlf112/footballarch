@@ -53,13 +53,32 @@ Sources: [Zidane](https://www.bdfutbol.com/en/j/j2664.html); [Makaay](https://ww
 
 **Grading caveat:** Current season weighted most, the previous season second, and the season before that third. Four grades remain user-unapproved and require positional peer comparison. None has a rank. Team final league placement was not an individual grading bonus.
 
+## Second profile research round — 2026-10-30
+
+Ten additional players were independently assessed using individual BDFutbol 3-season league profiles (the five previously added to the JSON before this audit amendment and five newly added). Every eligible club now has ≥1 independently evaluated player. **This is not a complete league evaluation.** The existing remaining **114** candidate rows retain historical draft status only; ranks remain null.
+
+| Club | Player | Born (date as stored) | Provisional tier | 2002-03 league apps / starts / goals | Player source |
+|---|---|---|---|---|---|
+| Real Madrid | Raúl González | 1977-06-27 | A+ | 31 / 30 / 16 | [BDFutbol](https://www.bdfutbol.com/en/j/j2296.html) |
+| Real Madrid | Ronaldo | 1976-09-18 | A+ | 31 / 29 / 23 | [BDFutbol](https://www.bdfutbol.com/en/j/j2400.html) |
+| Real Sociedad | Darko Kovačević | 1973-11-18 | A | 36 / 36 / 20 | [BDFutbol](https://www.bdfutbol.com/en/j/j507.html) |
+| FC Barcelona | Patrick Kluivert | 1976-07-01 | A+ | 36 / 36 / 16 | [BDFutbol](https://www.bdfutbol.com/en/j/j2193.html) |
+| Valencia | Pablo Aimar | 1979-11-03 | A | 31 / 29 / 8 | [BDFutbol](https://www.bdfutbol.com/en/j/j2174.html) |
+| Deportivo | Mauro Silva | 1968-01-12 | A | 32 / 32 / 0 | [BDFutbol](https://www.bdfutbol.com/en/j/j1956.html) |
+| Celta | Aleksandr Mostovoi | 1968-08-22 | A- | 27 / 24 / 5 | [BDFutbol](https://www.bdfutbol.com/en/j/j104.html) |
+| Mallorca | Samuel Eto'o | 1981-03-10 | A- | 30 / 29 / 14 | [BDFutbol](https://www.bdfutbol.com/en/j/j2444.html) |
+| Villarreal | José Manuel Reina | 1982-08-31 | B | 33 / 33 / n/a | [BDFutbol](https://www.bdfutbol.com/en/j/j1504.html) |
+| Racing | Pedro Munitis | 1975-06-19 | B+ | 30 / 30 / 8 | [BDFutbol](https://www.bdfutbol.com/en/j/j2219.html) |
+
+Ronaldo date of birth has differing source conventions: the incumbent archive and accounts of physical birth use **18 September 1976**, while official Real Madrid legend profile gives **22 September 1976**. The saved player record remains 18 September, and the discrepancy is flagged in JSON; verify a canonical display policy before final approval. [Official Madrid legend profile](https://www.realmadrid.com/en-US/the-club/history/football-legends/ronaldo-luis-nazario-de-lima/).
+
 ## Validation / remaining gates
 
 - [x] Read latest `main`, standing workflow, and season JSON schema.
 - [x] Cross-check the nine actual following-season UEFA/Intertoto entrants against UEFA competition club history and contemporary season summary.
 - [x] Independently retrieve all nine current-season squad references (research input, **not approved 9-club candidate pool**).
-- [x] Independently assess 4 players with their individual 3-season sources.
-- [ ] Complete independent re-selection of starter and substitute players for nine clubs (124 existing draft records not revalidated as current-selection records).
+- [x] Independently assess 14 players with their individual 3-season sources.
+- [ ] Complete independent re-selection of starter and substitute players for nine clubs (114 existing draft records not revalidated as current-selection records).
 - [ ] Verify majority positions and club representative formations from real 2002-03 match lineups; avoid using a schematic as proof.
 - [ ] Validate all birth dates and three-season evidence for newly selected players.
 - [ ] Assign tier and within-position league-wide rank to eligible candidates after peer evaluation.
