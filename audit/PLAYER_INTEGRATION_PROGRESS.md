@@ -3,7 +3,7 @@
 Date: 2026-10-30  
 Repository: `wjdduddlf112/footballarch`, branch `main`  
 Deployment target: https://wjdduddlf112.github.io/footballarch/  
-Status: **17/17 currently tracked candidate season datasets; 408/2243 provisional tier proposals; 1835 unrated. PL 1999-00 assessed 128/128 (100% DRAFT tier input).**
+Status: **17/17 currently tracked candidate season datasets; 549/2250 provisional tier proposals; 1701 unrated. PL 1999-00 assessed 128/128 (100% DRAFT tier input).**
 
 ## Scope and method
 
@@ -23,7 +23,7 @@ Status: **17/17 currently tracked candidate season datasets; 408/2243 provisiona
 | La Liga | 2002-03 | 128 | 0 | 0 | 96 | 0 | Not selected | No |
 | La Liga | 2003-04 | 138 | 0 | 0 | 106 | 0 | Not selected | No |
 | Premier League | 1999-00 | 128 | 128 | 128 | 0 | 0 | 11 proposed (unapproved) | No |
-| Premier League | 2000-01 | 134 | 0 | 0 | 131 | 73 | Not selected | No |
+| Premier League | 2000-01 | 141 | 141 | 141 | 0 | 0 | 11 proposed (unapproved) | No |
 | Premier League | 2001-02 | 161 | 0 | 0 | 158 | 66 | Not selected | No |
 | Serie A | 1999-00 | 119 | 0 | 0 | 1 | 0 | Not selected | No |
 | Serie A | 2000-01 | 109 | 0 | 0 | 7 | 0 | Not selected | No |
@@ -34,7 +34,7 @@ Status: **17/17 currently tracked candidate season datasets; 408/2243 provisiona
 | Ligue 1 | 1999-00 | 111 | 0 | 0 | 3 | 19 | Not selected | No |
 | Ligue 1 | 2000-01 | 141 | 0 | 0 | 15 | 20 | Not selected | No |
 | Ligue 1 | 2001-02 | 134 | 0 | 0 | 11 | 6 | Not selected | No |
-| **Total** | **17 seasons** | **2243** | **408** | **408** | **840** | **522** | **3 provisional** | **0/17** |
+| **Total** | **17 seasons** | **2250** | **549** | **549** | **709** | **449** | **4 provisional** | **0/17** |
 
 Tier distribution for the 280 existing La Liga provisional grades: S=9; A+=17; A=24; A-=47. All other tier grades are carried from previously approved-as-draft work and are **not** upgraded to final.
 
@@ -199,3 +199,18 @@ Chelsea Carlo Cudicini: 1997-98 Castel di Sangro Serie B 14 league appearances, 
 **Current season assessment: 128/128 individualized provisional grades and 128/128 positional ranks (100% tier input, not 100% complete historic proof).** S 1, A+ 6, A 5, A- 26, B+ 40, B 23, B- 13, C+ 11, C 3, C- 0, D 0. World Class 7; League Top Class 38.
 
 Three-season evidence exists in summarized form for each tier rationale, but individual full 1997-98 and 1998-99 match evidence and primary season tactical majority are still partially unresolved; all evaluations remain **DRAFT / user-unapproved**. Browser/PAGE build are independent gates. There are 27 PL seasons 1999-00 to 2025-26; **only first season** assessed in this run. Stop before 2000-01 until user instructs.
+
+
+## Premier League 2000-01 independent player DRAFT, 2026-10-30 — latest seasonal checkpoint
+
+- User explicitly authorized continuation from completed PL 1999-00 to **PL 2000-01 only**, with real deployment; no 2001-02 player research started.
+- Following-season actual 2001-02 European entrants (8): UCL **Manchester United, Arsenal, Liverpool**; UEFA Cup **Leeds United, Ipswich Town, Chelsea**; Intertoto **Aston Villa, Newcastle United**. Newcastle late slot followed Spanish withdrawal (UEFA historical announcement and 2001 Intertoto records). Existing eight `qualifiers` and all 20 league final rows were preserved byte-for-byte at JSON array semantic level.
+- Reselected **141** 2000-01 candidates with contemporary 11v11 season squads, FootballSquads and season-specific league starts; did **not** copy 134 legacy ungraded candidates into new list. Fresh source file: `audit/player-research/premierleague-2000-01-reselected-initial.json`.
+- Club candidates: Manchester United 19; Arsenal 17; Liverpool 16; Leeds 18; Ipswich 16; Chelsea 19; Aston Villa 16; Newcastle 20.
+- All **141 players have DOB, Korean name, original name, real club, PL 2000-01 starts, individually written provisional tier rationale, positional rank, DRAFT review flag and source links**. Corrected Chris Makin DOB 1973-05-08 and Robert Pirès DOB 1973-10-29. Historical team formation snapshots used to ensure 11 nominal starters each club (not a claim about literal most-common match lineup).
+- Tiers and ranks: **141/141 provisional tier inputs and 141/141 league-wide per-position ranks**, all unapproved. Distribution S=2; A+=11; A=4; A-=29; B+=49; B=27; B-=10; C+=8; C=1; C-/D=0. World Class S/A+ = 13; League Top Class S/A+/A/A-=46.
+- Proposed 4-4-2 Best XI (all eligible): Fabien Barthez, Jaap Stam, Wes Brown, Sylvinho, Markus Babbel, Roy Keane, Patrick Vieira, Ryan Giggs, David Beckham, Thierry Henry, Jimmy Floyd Hasselbaink. PFA lineup of 2000-01 used as support; qualifying-club RB Markus Babbel replaces ineligible Tottenham Stephen Carr, 23-goal Golden Boot winner Hasselbaink selected in attack. `proposed_unapproved` retained.
+- Caveat: **141 tier inputs do not equal complete three-season historical verification**. 1998-99 individual match-by-match records and season-majority tactical position remain **partially unverified** for many, and early-season split transfers/wingback positions require further qualitative recheck. All published grades are explicitly **DRAFT**. Source-level stat field makes unknown earlier starts null, not invented.
+- Automated validator: `scripts/verify-pl-2000-01-draft.mjs`, checks 141 players/141 tiers/141 ranks, historical 8 clubs, 20 table rows, DOB, position caps, 11 nominal starters per club, tier→rank order, and valid 4-4-2 XI. Executed in JS tool runtime and **PASS**, no structural errors.
+- New deployed-browser workflow: `.github/workflows/verify-pl-2000-01-live.yml` calls `scripts/verify-pl-2000-01-live.mjs`; checks Pages live JSON, five views including modal and candidate list, captures screenshots. **Not executed or browser-confirmed until GitHub Actions run status/result is observed.**
+- User approval remains pending. Site CSS/design, champion C/title stripping marks, crests, existing standings and all other league-season files untouched.
