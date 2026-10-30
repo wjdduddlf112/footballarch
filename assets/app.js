@@ -89,7 +89,7 @@ async function load(){
 }
 function setCompetition(){st.home=false;clearFilters();st.tab="overview";writeUrl();load()}
 function seasonsStatus(){return data?.meta?.status==="demo"?"demo":data?.meta?.status==="approved"?"approved":"pending"}
-function rankPlayers(){return (data?.players||[]).slice().sort((a,b)=>positions.indexOf(a.position)-positions.indexOf(b.position)||((a.rank||999)-(b.rank||999))||ranks.indexOf(a.tier)-ranks.indexOf(b.tier)||a.name.localeCompare(b.name))}
+function rankPlayers(){return (data?.players||[]).slice().sort((a,b)=>positions.indexOf(a.position)-positions.indexOf(b.position)||((a.rank||999)-(b.rank||999))||((a.tier?ranks.indexOf(a.tier):ranks.length)-(b.tier?ranks.indexOf(b.tier):ranks.length))||a.name.localeCompare(b.name))}
 function hasTop(){return (data?.players||[]).some(p=>top(p))}
 function pageIntro(){
  $("eyebrow").style.display="none";
@@ -99,7 +99,7 @@ function pageIntro(){
  const stage=data?.meta?.status==="demo"?"SAMPLE":data?.meta?.status!=="approved"&&data?.players?.length?"DRAFT":"";
  $("stateTag").textContent=stage;
  $("stateTag").className="status "+(stage==="SAMPLE"?"demo":"pending");
- $("stateTag").style.display=playerView&&stage?"":"none";
+ $("stateTag").style.display=stage?"":"none";
  Array.from(document.querySelectorAll(".main-nav button")).forEach(b=>{b.classList.toggle("active",b.dataset.tab===st.tab);b.disabled=st.domain==="europe"&&["formation","table"].includes(b.dataset.tab)})
 }
 function statValue(label,value,note){return '<div class="metric"><span class="name">'+label+'</span><strong class="value">'+value+'</strong>'+(note?'<small class="note">'+esc(note)+'</small>':"")+'</div>'}
@@ -122,6 +122,7 @@ function overview(){
    result+='<section class="panel"><div class="section-heading"><h2>Players <span class="muted">'+n+'</span></h2><button class="pill" data-action="candidates">'+(st.showCandidates?'닫기':'선수 목록')+'</button></div><div class="pills">'+counts.map(x=>'<button class="pill" data-pos-go="'+x[0]+'">'+x[0]+' &nbsp; '+x[1]+'</button>').join("")+'</div></section>';
   }
  }
+ if(data?.meta?.playerCandidateReview?.method==="fresh_research_not_reusing_previous_imported_candidate_pool"){const evaluated=(data.players||[]).filter(p=>p.tier).length;result+='<section class="panel" style="margin-top:15px"><h2>DRAFT · 신규 선수 조사</h2><p class="muted small" style="margin:6px 0 0">'+(data.players||[]).length+'명은 검토용 후보이며 확정 선정이 아닙니다. 잠정 티어 '+evaluated+'명 / 근거 추가 확인 '+((data.players||[]).length-evaluated)+'명. Best XI·순위·티어 모두 사용자 미승인 상태입니다.</p></section>';}
  if(qualified.length)result+='<section class="panel" style="margin-top:15px"><div class="section-heading"><h2>European Qualification</h2></div><div class="qual-list">'+qualified.map(qualItem).join("")+'</div></section>';
  if(relegated.length)result+='<section class="panel relegation-overview"><div class="section-heading"><h2>Relegation</h2></div><div class="relegation-list">'+relegated.map(r=>'<div class="relegation-item">'+crest(r.club)+'<span>'+esc(r.rank)+'위 '+esc(club(r.club).name)+(r.outcome==="relegated_administrative"?" · 행정":"")+'</span><b>'+esc(r.points)+' PTS</b></div>').join("")+'</div></section>';
  if(st.showCandidates&&data.players?.length)result+=candidatePool();
@@ -143,7 +144,7 @@ function filters(useTop,stats){
 }
 function tablePlayers(rows){
  if(!rows.length)return '<div class="empty">선수 없음</div>';
- return '<div class="table-scroll"><table class="datagrid"><thead><tr><th>POS</th><th>PLAYER</th><th>CLUB</th><th>BORN</th><th>AGE</th><th>TIER</th></tr></thead><tbody>'+rows.map(p=>'<tr data-player="'+esc(p.id)+'"><td><b>'+esc(p.position)+'</b></td><td class="person">'+esc(p.name)+'</td><td><div style="display:flex;align-items:center;gap:8px">'+crest(p.club)+esc(club(p.club).name)+'</div></td><td>'+esc(p.born||"—")+'</td><td>'+esc(age(p)??"—")+'</td><td>'+grade(p.tier)+'</td></tr>').join("")+'</tbody></table></div>'
+ return '<div class="table-scroll"><table class="datagrid"><thead><tr><th>POS</th><th>PLAYER</th><th>CLUB</th><th>BORN</th><th>ROLE</th><th>STARTS</th><th>RANK</th><th>TIER</th></tr></thead><tbody>'+rows.map(p=>'<tr data-player="'+esc(p.id)+'"><td><b>'+esc(p.position)+'</b></td><td class="person">'+esc(p.nameKo||p.name)+'<span class="small muted" style="display:block;font-weight:400">'+esc(p.nameOriginal||p.name)+'</span></td><td><div style="display:flex;align-items:center;gap:8px">'+crest(p.club)+esc(p.clubNameOriginal||club(p.club).name)+'</div></td><td>'+esc(p.born||"—")+'</td><td>'+esc(p.role==="starter"?"주전":p.role==="backup"?"후보":"—")+'</td><td>'+esc(p.starts??p.leagueStarts??"—")+'</td><td>'+esc(p.rank??"—")+'</td><td>'+grade(p.tier)+'</td></tr>').join("")+'</tbody></table></div>'
 }
 function candidatePool(){
  let all=rankPlayers(),rows=filterPlayers(all,false);
@@ -153,7 +154,8 @@ function candidatePool(){
 function topPage(){
  let all=rankPlayers(),filtered=filterPlayers(all,true);let count=t=>all.filter(p=>p.tier===t).length;
  let cards='<div class="top-scores">'+["S","A+","A","A-"].map(t=>'<button class="top-score '+tierClass(t)+' '+(st.tier===t?"active":"")+'" data-toptier="'+t+'"><b>'+t+'</b><small>'+count(t)+' players</small></button>').join("")+'</div>';
- let body='<div class="section-heading"><div><h2>League Top Class</h2></div><button class="pill '+(st.tier==="all"?"active":"")+'" data-toptier="all">All tiers</button></div>'+cards+'<div style="margin-top:15px">'+filters(true,false)+'</div>'+tablePlayers(filtered);
+ let world=all.filter(p=>p.tier==="S"||p.tier==="A+").length;
+ let body='<div class="section-heading"><div><h2>League Top Class</h2><p class="muted small">World Class (S · A+): '+world+'명 / League Top Class (S · A+ · A · A-): '+all.filter(top).length+'명 · 모두 잠정 평가</p></div><button class="pill '+(st.tier==="all"?"active":"")+'" data-toptier="all">All tiers</button></div>'+cards+'<div style="margin-top:15px">'+filters(true,false)+'</div>'+tablePlayers(filtered);
  if(!hasTop())body='<div class="section-heading"><h2>League Top Class</h2></div><div class="empty">등록된 선수 없음</div>';
  return '<section class="panel">'+body+'</section>'
 }
@@ -161,7 +163,7 @@ function formation(){
  let selection=(data.bestXi||[]).slice(0,11),used={};
  let formationName=["4-4-2","4-2-3-1","4-3-3"].includes(data?.meta?.formation)?data.meta.formation:"4-3-3";
  let layout=formationName==="4-2-3-1"?slots4231:formationName==="4-4-2"?slots442:slots433;
- let marks=layout.map(x=>{let matches=selection.filter(b=>b.position===x[0]);let index=used[x[0]]||0;used[x[0]]=index+1;let pick=matches[index];let p=data.players.find(y=>y.id===pick?.playerId);return '<button class="slot '+(st.position===x[0]?"active":"")+'" data-position="'+x[0]+'" style="left:'+x[1]+'%;top:'+x[2]+'%"><span class="spot">'+x[0]+'</span><span class="slot-label">'+(p?esc(p.name):"선정 대기")+'</span></button>'}).join("");
+ let marks=layout.map(x=>{let matches=selection.filter(b=>b.position===x[0]);let index=used[x[0]]||0;used[x[0]]=index+1;let pick=matches[index];let p=data.players.find(y=>y.id===pick?.playerId);return '<button class="slot '+(st.position===x[0]?"active":"")+'" data-position="'+x[0]+'" style="left:'+x[1]+'%;top:'+x[2]+'%"><span class="spot">'+x[0]+'</span><span class="slot-label">'+(p?esc(p.nameKo||p.name):"선정 대기")+'</span></button>'}).join("");
  let pos=st.position==="all"?"GK":st.position;
  let candidates=rankPlayers().filter(p=>p.position===pos);
  let side='<div class="panel"><div class="section-heading"><h2>포지션별 순위</h2><span class="status">'+pos+'</span></div><div class="position-nav">'+positions.map(p=>'<button data-position="'+p+'" class="'+(pos===p?"active":"")+'">'+p+'</button>').join("")+'</div>';
@@ -300,9 +302,13 @@ function render(){
 }
 function playerDetails(id){
  const p=data?.players?.find(x=>x.id===id);if(!p)return;
- const html='<div class="overlay" role="dialog" aria-modal="true" aria-label="Player information"><div class="dialog"><button class="close" data-action="close">✕</button><div class="eyebrow">PLAYER RECORD · '+esc(st.season)+'</div><h2>'+esc(p.name)+'</h2><div style="display:flex;gap:10px;align-items:center;margin:14px 0">'+crest(p.club)+'<b>'+esc(club(p.club).name)+'</b>'+grade(p.tier)+'</div>'+
- [["Position",p.position],["Starting role",p.role==="starter"?"주전":p.role==="backup"?"후보":"—"],["League starts",p.starts??"—"],["Date of birth",p.born??"—"],["Age at Jun 30",age(p)??"—"],["Top Class",p.tier?(top(p)?"YES":"NO"):"미평가"]].map(x=>'<div class="detail-row"><span>'+x[0]+'</span><b>'+esc(x[1])+'</b></div>').join("")+
- '<p class="notice">'+(data.meta.status==="approved"?"":data.meta.status==="demo"?"SAMPLE":"DRAFT")+'</p></div></div>';
+ const source=(p.sources||[]).find(u=>typeof u==="string"&&/^https:\/\//.test(u));
+ const detailRows=[["원어명",p.nameOriginal||p.name],["Position",p.position],["Starting role",p.role==="starter"?"주전":p.role==="backup"?"후보":"—"],["League starts",p.starts??p.leagueStarts??"—"],["Date of birth",p.born??"—"],["소속",p.clubNameOriginal||club(p.club).name],["포지션 순위(잠정)",p.rank??"미평가"],["평가 검증",p.evaluationStatus==="provisional_tier_not_user_approved"?"잠정 티어 · 미승인":"근거 확인 대기"],["World Class",p.tier?(["S","A+"].includes(p.tier)?"잠정 해당":"—"):"미평가"]];
+ const html='<div class="overlay" role="dialog" aria-modal="true" aria-label="Player information"><div class="dialog"><button class="close" data-action="close">✕</button><div class="eyebrow">PLAYER RECORD · '+esc(st.season)+'</div><h2>'+esc(p.nameKo||p.name)+'</h2><p class="muted">'+esc(p.nameOriginal||p.name)+'</p><div style="display:flex;gap:10px;align-items:center;margin:14px 0">'+crest(p.club)+'<b>'+esc(p.clubNameOriginal||club(p.club).name)+'</b>'+grade(p.tier)+'</div>'+
+ detailRows.map(x=>'<div class="detail-row"><span>'+esc(x[0])+'</span><b>'+esc(x[1])+'</b></div>').join("")+
+ (p.assessmentRationale?'<p class="notice" style="margin-top:12px">'+esc(p.assessmentRationale)+'</p>':'')+
+ (source?'<p class="small" style="margin-top:10px"><a href="'+esc(source)+'" target="_blank" rel="noopener noreferrer">조사 출처 확인 ↗</a></p>':'')+
+ '<p class="notice">'+(data.meta.status==="approved"?"":data.meta.status==="demo"?"SAMPLE":"DRAFT · 승인 전, 변경 가능")+'</p></div></div>';
  let layer=document.createElement("div");layer.id="modalLayer";layer.innerHTML=html;document.body.appendChild(layer)
 }
 function closeModal(){document.getElementById("modalLayer")?.remove()}
