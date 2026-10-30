@@ -7,7 +7,7 @@ const positions=["GK","CB","LB","RB","DM","CM","CAM","LW","RW","ST"];
 const grades=new Set(["S","A+","A","A-","B+","B","B-","C+","C","C-","D"]);
 const expectedEurope={manutd:"UCL",arsenal:"UCL",leeds:"UCL",liverpool:"UEFA Cup",chelsea:"UEFA Cup",leicester:"UEFA Cup",astonvilla:"Intertoto Cup",bradford:"Intertoto Cup"};
 if(d.meta?.leagueId!=="premierleague"||d.meta?.season!=="1999-00"||d.meta?.status!=="draft")errors.push("Invalid season, league or review status");
-if(d.players?.length!==125)errors.push("Expected 125 provisional research candidates");
+if(d.players?.length!==128)errors.push("Expected 128 independently researched draft nominations");
 if(d.standings?.length!==20||d.standings.some((r,i)=>r.rank!==i+1))errors.push("Historical PL league table invalid");
 const qualifiers=new Set(d.qualifiers.map(q=>q.club));
 if(qualifiers.size!==8||expected.some(k=>!qualifiers.has(k))||d.qualifiers.some(q=>expectedEurope[q.club]!==q.competition))errors.push("European entrant list incorrect");
@@ -28,8 +28,16 @@ for(const p of d.players){
  if(p.rank!=null){(posRanks[p.position]??=[]).push(p.rank);if(!Number.isInteger(p.rank)||p.rank<1)errors.push("Invalid rank "+p.id);}
  const k=p.club+"/"+p.position;counts[k]=(counts[k]||0)+1;const cap=["CB","CM","ST"].includes(p.position)?3:2;if(counts[k]>cap)errors.push("Position cap "+k);
 }
-for(const [pos,ranks] of Object.entries(posRanks))if(new Set(ranks).size!==ranks.length)errors.push("Duplicate rank within "+pos);
-if(d.players.filter(p=>p.tier!=null).length!==23||d.players.filter(p=>p.rank!=null).length!==13)errors.push("Partial draft tier/rank checkpoint changed");
+for(const [pos,ranks] of Object.entries(posRanks)){
+ if(new Set(ranks).size!==ranks.length)errors.push("Duplicate rank within "+pos);
+ if(ranks.slice().sort((a,b)=>a-b).some((v,i)=>v!==i+1))errors.push("Rank gap within "+pos);
+ const gradeRanks=["S","A+","A","A-","B+","B","B-","C+","C","C-","D"];
+ const entries=d.players.filter(p=>p.position===pos&&p.rank!=null).sort((a,b)=>a.rank-b.rank);
+ if(entries.some((p,i)=>i&&gradeRanks.indexOf(p.tier)<gradeRanks.indexOf(entries[i-1].tier)))errors.push("Rank tier ordering mismatch "+pos);
+}
+if(d.players.filter(p=>p.tier!=null).length!==128||d.players.filter(p=>p.rank!=null).length!==128)errors.push("1999-00 individual tier/rank count changed");
+if(d.players.filter(p=>p.starts==null).length!==0)errors.push("1999-00 league starts evidence not populated for each candidate");
+if(d.players.filter(p=>p.tier==null).some(p=>p.rank!=null))errors.push("Unrated player has a rank");
 if(d.bestXi?.length!==11||new Set(d.bestXi.map(p=>p.playerId)).size!==11||d.bestXi.some(x=>!playerIds.has(x.playerId)||!positions.includes(x.position)))errors.push("Best XI invalid references");
 if(d.meta?.bestXiReview?.status!=="proposed_unapproved")errors.push("Best XI not marked proposed");
 const slotCount={GK:1,CB:2,LB:1,RB:1,DM:1,CM:1,LW:1,RW:1,ST:2};
