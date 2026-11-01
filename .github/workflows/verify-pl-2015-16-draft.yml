@@ -1,0 +1,26 @@
+name: Verify Football Archive PL 2015-16 DRAFT
+on:
+  push:
+    paths:
+      - "data/premierleague-2015-16.json"
+      - "audit/player-research/premierleague-2015-16-*"
+      - "audit/PLAYER_PREMIERLEAGUE_2015-16_DRAFT_REVIEW.md"
+      - "scripts/verify-pl-2015-16-draft.mjs"
+      - ".github/workflows/verify-pl-2015-16-draft.yml"
+  pull_request:
+    paths:
+      - "data/premierleague-2015-16.json"
+      - "audit/player-research/premierleague-2015-16-*"
+      - "audit/PLAYER_PREMIERLEAGUE_2015-16_DRAFT_REVIEW.md"
+      - "scripts/verify-pl-2015-16-draft.mjs"
+      - ".github/workflows/verify-pl-2015-16-draft.yml"
+  workflow_dispatch:
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: node scripts/verify-pl-2015-16-draft.mjs

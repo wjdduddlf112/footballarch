@@ -478,3 +478,11 @@ Source TXT instruction adapted to the **2009-10 season only**. Candidate roster 
 - DOB one seasonal source; individual starts, 3-year stats and majority positions **unverified**, null, evidence-pending; structural check not historical proof.
 - Audit report: audit/PLAYER_PREMIERLEAGUE_2014-15_DRAFT_REVIEW.md; validator scripts/verify-pl-2014-15-draft.mjs.
 - Previous seasons, site UI, champion markers and emblems intentionally untouched. CI and deployment require separate verification.
+
+
+## Premier League 2015-16 DRAFT (2026-11-01)
+- Seven actual 2016-17 UEFA clubs: Leicester, Arsenal, Tottenham, Manchester City, Manchester United, Southampton, West Ham. Liverpool 8th not eligible.
+- 131 fresh candidate records; 7 × 11 preliminary starters, role cap and one backup per role. All position ranks, tier proposals and one 4-2-3-1 proposed Best XI recorded.
+- **Formation 4-2-3-1 is provisional** because exact 2015-16 PL league-wide starting-formation frequency was not independently verified. Leicester specific 4-4-2 in 35/38 PL matches confirmed by PL official.
+- Personal all league starts, appearances, goals, assists retained null. DOB first historical roster source, second source and 3-year individual stat independent verification pending. Structural CI success cannot establish historical accuracy.
+- Updated ONLY 2015-16 season JSON, seven research files, audit report, new validator/workflow, and this progress log. Other seasons, app UI, champion marker and crests unchanged.
