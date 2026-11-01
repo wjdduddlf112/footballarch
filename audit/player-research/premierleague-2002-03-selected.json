@@ -19,7 +19,7 @@
       "DOB from 2002-03 FootballSquads or previous archival season values, to be independently crosschecked",
       "Do not copy 11v11 All Competitions A column to PL league starts; only season-specific FBref Premier League confirmed counts populated"
     ],
-    "verifiedPLStarts": 42,
+    "verifiedPLStarts": 41,
     "nominalStarterCounts": {
       "manutd": 11,
       "arsenal": 11,
@@ -33,7 +33,9 @@
     "corrections": [
       "Scholes CM -> CAM based on October 2002 Ferguson/Scholes tactical evidence",
       "Kevin Horlock CM -> LW",
-      "Newcastle Dabizas 13 PL starts replaced with Woodgate 10 league matches; cap 2+1"
+      "Newcastle Dabizas 13 PL starts replaced with Woodgate 10 league matches; cap 2+1",
+      "Woodgate 10 = league appearances, not starts; start field null",
+      "Remove marginal starter Pahars and Berger"
     ],
     "positionVerificationNote": "Scholes documented supporting-striker/CAM, Dyer right midfield per contemporary 2002-03 profile, team tactical slot labels provisional"
   },
@@ -1025,7 +1027,7 @@
       "born": "1981-07-21",
       "position": "CB",
       "tier": "B",
-      "role": "backup",
+      "role": "starter",
       "rank": null,
       "leagueStarts": null,
       "leagueGoals": null,
@@ -2071,30 +2073,6 @@
       "candidateRationale": "Independently nominated from 2002-03 dated squad and 11v11 player listings; historical role vs starter-equivalent to verify"
     },
     {
-      "id": "pl-2002-03-fresh-liverpool-15",
-      "name": "Patrik Berger",
-      "nameOriginal": "Patrik Berger",
-      "nameKo": "파트리크 베르게르",
-      "club": "liverpool",
-      "clubNameOriginal": "Liverpool FC",
-      "season": "2002-03",
-      "born": "1973-11-10",
-      "position": "LW",
-      "tier": "C+",
-      "role": "backup",
-      "rank": null,
-      "leagueStarts": null,
-      "leagueGoals": null,
-      "review": "draft_unapproved",
-      "positionMajorityVerified": false,
-      "sourceLeagueStartsStatus": "pending_exact_2002_03_PL_filter",
-      "sources": [
-        "https://www.11v11.com/teams/liverpool/tab/players/season/2003/",
-        "https://www.footballsquads.co.uk/eng/2002-2003/faprem/liverpool.htm"
-      ],
-      "candidateRationale": "Independently nominated from 2002-03 dated squad and 11v11 player listings; historical role vs starter-equivalent to verify"
-    },
-    {
       "id": "pl-2002-03-fresh-liverpool-16",
       "name": "Michael Owen",
       "nameOriginal": "Michael Owen",
@@ -3013,30 +2991,6 @@
       "candidateRationale": "Independently nominated from 2002-03 dated squad and 11v11 player listings; historical role vs starter-equivalent to verify"
     },
     {
-      "id": "pl-2002-03-fresh-southampton-17",
-      "name": "Marian Pahars",
-      "nameOriginal": "Marian Pahars",
-      "nameKo": "마리안 파하르스",
-      "club": "southampton",
-      "clubNameOriginal": "Southampton FC",
-      "season": "2002-03",
-      "born": "1976-08-05",
-      "position": "ST",
-      "tier": "B-",
-      "role": "backup",
-      "rank": null,
-      "leagueStarts": null,
-      "leagueGoals": null,
-      "review": "draft_unapproved",
-      "positionMajorityVerified": false,
-      "sourceLeagueStartsStatus": "pending_exact_2002_03_PL_filter",
-      "sources": [
-        "https://www.11v11.com/teams/southampton/tab/players/season/2003/",
-        "https://www.footballsquads.co.uk/eng/2002-2003/faprem/southam.htm"
-      ],
-      "candidateRationale": "Independently nominated from 2002-03 dated squad and 11v11 player listings; historical role vs starter-equivalent to verify"
-    },
-    {
       "id": "pl-2002-03-fresh-mancity-01",
       "name": "Peter Schmeichel",
       "nameOriginal": "Peter Schmeichel",
@@ -3502,16 +3456,17 @@
       "tier": "B+",
       "role": "backup",
       "rank": null,
-      "leagueStarts": 10,
+      "leagueStarts": null,
       "leagueGoals": 0,
       "review": "draft_unapproved",
       "positionMajorityVerified": false,
-      "sourceLeagueStartsStatus": "2002_03_Newcastle_10_league_appearances_start_split_pending",
+      "sourceLeagueStartsStatus": "ten_appearances_not_starts",
       "sources": [
         "https://en.wikipedia.org/wiki/Jonathan_Woodgate",
         "https://www.footballsquads.co.uk/eng/2002-2003/faprem/newcas.htm"
       ],
-      "candidateRationale": "Joined Newcastle February 2003 and played 10 PL matches; stronger individual CB assessment than low-involvement Dabizas, subject to starter cap"
+      "candidateRationale": "Joined Newcastle February 2003 and played 10 PL matches; stronger individual CB assessment than low-involvement Dabizas, subject to starter cap",
+      "leagueAppearances": 10
     }
   ]
 }
