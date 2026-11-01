@@ -1,0 +1,43 @@
+name: Repair Football Archive GitHub Pages source
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/repair-github-pages-source.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+
+jobs:
+  reapply-same-source:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - name: Inspect and re-apply existing Pages source without changing its branch
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          echo "Inspecting GitHub Pages configuration for ${REPO}."
+          if ! gh api "repos/${REPO}/pages" > /tmp/football-pages.json; then
+            echo "::warning::Repository token cannot inspect Pages configuration. Use Settings > Pages."
+            exit 0
+          fi
+          node -e 'const v=require("/tmp/football-pages.json"); console.log(JSON.stringify({status:v.status,build_type:v.build_type,source:v.source,html_url:v.html_url},null,2))'
+          branch="$(node -p 'require("/tmp/football-pages.json").source?.branch||""')"
+          path="$(node -p 'require("/tmp/football-pages.json").source?.path||""')"
+          build="$(node -p 'require("/tmp/football-pages.json").build_type||""')"
+          if [[ "${branch}" != "main" || "${path}" != "/" || "${build}" != "legacy" ]]; then
+            echo "::warning::Source differs from expected main/root legacy. Refusing to change publishing settings automatically."
+            exit 0
+          fi
+          echo "Re-applying the SAME configured source, main/(root), in case Pages internal source state is stale."
+          if gh api -X PUT "repos/${REPO}/pages" -f build_type=legacy -f 'source[branch]=main' -f 'source[path]=/' > /tmp/pages-reset.json; then
+            echo "GitHub Pages source re-applied successfully. A new deployment can now be retried."
+          else
+            echo "::warning::GitHub Actions token cannot change Pages settings (requires repository Administration permission). No source changed."
+          fi
