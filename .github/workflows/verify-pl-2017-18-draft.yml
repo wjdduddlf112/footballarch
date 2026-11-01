@@ -1,0 +1,26 @@
+name: Verify Football Archive PL 2017-18 DRAFT
+on:
+  push:
+    paths:
+      - "data/premierleague-2017-18.json"
+      - "audit/player-research/premierleague-2017-18-*"
+      - "audit/PLAYER_PREMIERLEAGUE_2017-18_DRAFT_REVIEW.md"
+      - "scripts/verify-pl-2017-18-draft.mjs"
+      - ".github/workflows/verify-pl-2017-18-draft.yml"
+  pull_request:
+    paths:
+      - "data/premierleague-2017-18.json"
+      - "audit/player-research/premierleague-2017-18-*"
+      - "audit/PLAYER_PREMIERLEAGUE_2017-18_DRAFT_REVIEW.md"
+      - "scripts/verify-pl-2017-18-draft.mjs"
+      - ".github/workflows/verify-pl-2017-18-draft.yml"
+  workflow_dispatch:
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: node scripts/verify-pl-2017-18-draft.mjs
