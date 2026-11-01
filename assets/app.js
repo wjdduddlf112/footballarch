@@ -61,7 +61,10 @@ async function load(){
  const request=++loadSequence;
  loading=true;data=null;render();
  const path="./data/"+st.league+"-"+st.season+".json";
- const req=[fetch(path,{cache:"no-cache"}).then(r=>r.ok?r.json():null).catch(()=>null)];
+ // GitHub Pages can retain old JSON at an edge or browser cache after a draft correction.
+ // A season-specific immutable revision forces a fresh response for this updated review.
+ const seasonRevision=(st.league==="premierleague"&&st.season==="2009-10")?"?revision=pl200910-xi-ivanovic-evra-20261101":"";
+ const req=[fetch(path+seasonRevision,{cache:"no-store"}).then(r=>r.ok?r.json():null).catch(()=>null)];
  if(["laliga","seriea","bundesliga"].includes(st.league)){const archivePath=st.league==="laliga"?"./data/laliga-standings-verified-1999-2026.json":st.league==="seriea"?"./data/seriea-standings-verified-1999-2026.json":"./data/bundesliga-standings-verified-1999-2026.json";req.push(fetch(archivePath,{cache:"no-cache"}).then(r=>r.ok?r.json():null).catch(()=>null));}
  const [seasonData,archive]=await Promise.all(req);
  if(request!==loadSequence)return;
@@ -163,6 +166,11 @@ function formation(){
  let selection=(data.bestXi||[]).slice(0,11),used={};
  let formationName=["4-4-2","4-2-3-1","4-3-3"].includes(data?.meta?.formation)?data.meta.formation:"4-3-3";
  let layout=formationName==="4-2-3-1"?slots4231:formationName==="4-4-2"?slots442:slots433;
+ // A classic 4-4-2 may contain two CM players rather than one CM plus one DM.
+ // Respect existing 1 CM + 1 DM data for other seasons while rendering both CMs here.
+ if(formationName==="4-4-2"&&selection.filter(p=>p.position==="CM").length===2&&selection.every(p=>p.position!=="DM")){
+  layout=slots442.map(slot=>slot[0]==="DM"?["CM",slot[1],slot[2]]:slot);
+ }
  let marks=layout.map(x=>{let matches=selection.filter(b=>b.position===x[0]);let index=used[x[0]]||0;used[x[0]]=index+1;let pick=matches[index];let p=data.players.find(y=>y.id===pick?.playerId);let selectedPosition=p?.position||x[0];let fieldPosition=pick?.displayPosition||x[0];return '<button class="slot '+(st.position===selectedPosition?"active":"")+'" data-position="'+selectedPosition+'" style="left:'+x[1]+'%;top:'+x[2]+'%"><span class="spot">'+esc(fieldPosition)+'</span><span class="slot-label">'+(p?esc(p.nameKo||p.name):"선정 대기")+'</span></button>'}).join("");
  let pos=st.position==="all"?"GK":st.position;
  let candidates=rankPlayers().filter(p=>p.position===pos);
