@@ -40,7 +40,7 @@ try{
    assert(text.includes("DRAFT"),"Best XI is not flagged DRAFT");
   }
   if(tab==="top")assert(text.includes("World Class")&&text.includes("League Top Class"),"World Class/Top Class missing");
-  if(tab==="table")assert(text.includes("Manchester United")&&text.includes("Bradford"),"League table missing historical clubs");
+  if(tab==="table")assert(text.includes("Manchester United")&&text.includes("Ipswich Town"),"League table missing historical clubs");
   if(tab==="stats")assert(text.includes("Tier Distribution"),"Statistics page missing");
   await page.screenshot({path:outfile+"/"+tab+".png",fullPage:true});
   report.tabs.push(tab);

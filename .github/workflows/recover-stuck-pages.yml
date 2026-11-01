@@ -1,10 +1,6 @@
 name: Recover stuck Football Archive Pages deployment
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - '.github/workflows/recover-stuck-pages.yml'
   workflow_dispatch:
 
 permissions:
@@ -30,9 +26,16 @@ jobs:
           fi
           status="$(node -p 'JSON.parse(require("fs").readFileSync("/tmp/pages-deployment.json","utf8")).status')"
           echo "Previously blocked deployment ${BLOCKED_DEPLOY_SHA} status: ${status}"
-          # GitHub reported "succeed" from this status API while the very next
-          # deploy-pages@v5 request still rejected THIS SAME SHA as "in progress".
-          # Explicitly call its official cancel endpoint once to clear the stale lock.
-          echo "GitHub Pages still rejects new publishes as in progress for ${BLOCKED_DEPLOY_SHA} even when status says ${status}."
-          gh api -X POST "${endpoint}/cancel"
-          echo "Submitted explicit cancellation for the uniquely identified blocking deployment."
+          # Cancel only a truly active deployment. A GitHub Pages backend lock may
+          # inconsistently reject new publishes even when GET reports "succeed";
+          # in that case this endpoint returns HTTP 400 and cannot clear the lock.
+          case "${status}" in
+            in_progress|pending|queued)
+              gh api -X POST "${endpoint}/cancel"
+              echo "Requested cancellation of the identified active deployment."
+              ;;
+            *)
+              echo "Deployment reports ${status}; no destructive action taken."
+              echo "If newer Pages deployments still return 'in progress', the backend state requires GitHub resolution."
+              ;;
+          esac
