@@ -8,7 +8,7 @@
     "qualifyingSeason": "2003-04",
     "status": "draft",
     "candidateStatus": "all_135_provisional_tiers_ranks_and_bestxi_entered",
-    "label": "2002-03 전원 티어·포지션 순위·Best XI 1차 완성 (미승인 DRAFT)",
+    "label": "2002-03 전체 후보 135명 평가·순위·Best XI 1차 완성 · 검증 대기 DRAFT",
     "standingsStatus": "reused_from_verified_archive",
     "dataCollected": "2026-10-30",
     "candidateCount": 135,
@@ -50,7 +50,7 @@
       "state": "draft_unapproved",
       "archiveStandingsSource": "data/laliga-standings-verified-1999-2026.json",
       "preservedMainStandings": true,
-      "individualThreeSeasonAudit": "38_individual_profile_checked_97_current_and_archival_context_based",
+      "individualThreeSeasonAudit": "38_individual_three_season_profile_checked_97_partial_context",
       "reselectionStarted": "2026-10-30",
       "eligibleClubsSourceCrosschecked": 9,
       "independentlyReevaluatedCount": 135,
@@ -61,23 +61,35 @@
     "europeanQualificationVerificationScope": "2003-04 nine Spanish actual UEFA/UIC entrants cross-checked against UEFA historical club listings and contemporary soccer-spain summary; separate from player eligibility verification",
     "automaticSeasonPass": {
       "date": "2026-11-01",
-      "status": "ALL_135_PROVISIONAL_TIERS_RANKS_AND_BESTXI_STORED",
+      "status": "TIER_RANK_XI_DRAFT_PUBLISHED_UNAPPROVED",
       "assessmentSeasons": [
         "2000-01",
         "2001-02",
         "2002-03"
       ],
-      "evaluationOrder": "GK>CB>LB>RB>DM>CM>CAM>LW>RW>ST",
-      "source": "fresh individual BDFutbol 2000-01/2001-02/2002-03 player profiles plus 9 current-season BDFutbol squads",
-      "newlyAssessed": 24,
-      "remainingWithoutGrade": 0,
-      "formationProposal": "4-2-3-1 representative, league-wide modal frequency unverified",
+      "nominees": 135,
+      "graded": 135,
+      "ranked": 135,
+      "xi": 11,
+      "qualifyingClubs": 9,
+      "missingBirthDates": 55,
+      "threeSeasonIndividualProfileVerified": 38,
+      "remainingPartialThreeSeasonAudit": 97,
+      "missingHistoricalSeasonMajorityPositionAudit": "open",
+      "formationProposal": "4-2-3-1",
       "bestXiStatus": "proposed_unapproved",
-      "rankStatus": "135_of_135_provisional",
-      "browserVerified": false,
-      "nodeValidatorRun": false,
-      "freshNominationsAdded": 7,
-      "tierMethod": "Qualitative recent season > prior season > second-prior season; 38 individual 3-season profile checks, 97 based on current squad-source starts and marked partial prior records; unverified historical values never asserted as fact."
+      "validation": {
+        "githubJsonParse": true,
+        "referentialIntegrity": true,
+        "slotCapacity": true,
+        "elevenStartersEachClub": true,
+        "noDuplicatePlayer": true,
+        "allPositionalRanksNoGaps": true,
+        "bestXiPositionsMatch": true,
+        "nodeCLI": false,
+        "independentWebsiteBrowser": false
+      },
+      "nextSeasonNotAuthorized": true
     },
     "formation": "4-2-3-1",
     "formationEvidence": [
@@ -139,7 +151,10 @@
         "https://www.uefa.com/newsfiles/52210.pdf",
         "https://as.com/masdeporte/2003/03/23/polideportivo/1048396559_850215.html"
       ]
-    }
+    },
+    "lastReview": "2026-11-01",
+    "candidateAuditState": "all_135_provisional_tiers_and_ranks_entered_qualitative_individual_historical_source_review_partial",
+    "provisionalEvaluationStatus": "all_135_rated_and_ranked_user_unapproved"
   },
   "clubs": [
     {
@@ -709,7 +724,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "three_season_individual_profile_checked"
     },
     {
       "id": "laliga-200203-madrid-02",
@@ -788,7 +805,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "three_season_individual_profile_checked"
     },
     {
       "id": "laliga-200203-madrid-03",
@@ -867,7 +886,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "three_season_individual_profile_checked"
     },
     {
       "id": "laliga-200203-madrid-04",
@@ -947,7 +968,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_and_legacy_previous_archive_partial"
     },
     {
       "id": "laliga-200203-madrid-05",
@@ -1027,7 +1050,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_and_legacy_previous_archive_partial"
     },
     {
       "id": "laliga-200203-madrid-06",
@@ -1100,7 +1125,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_and_legacy_previous_archive_partial"
     },
     {
       "id": "laliga-200203-madrid-07",
@@ -1179,7 +1206,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "three_season_individual_profile_checked"
     },
     {
       "id": "laliga-200203-madrid-08",
@@ -1244,7 +1273,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_qualitative_prior_seasons_pending"
     },
     {
       "id": "laliga-200203-madrid-09",
@@ -1332,7 +1363,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "three_season_individual_profile_checked"
     },
     {
       "id": "laliga-200203-madrid-10",
@@ -1418,7 +1451,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_and_legacy_previous_archive_partial"
     },
     {
       "id": "laliga-200203-madrid-11",
@@ -1497,7 +1532,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "three_season_individual_profile_checked"
     },
     {
       "id": "laliga-200203-madrid-12",
@@ -1576,7 +1613,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "three_season_individual_profile_checked"
     },
     {
       "id": "laliga-200203-madrid-13",
@@ -1659,7 +1698,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "three_season_individual_profile_checked"
     },
     {
       "id": "laliga-200203-sociedad-01",
@@ -1723,7 +1764,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_qualitative_prior_seasons_pending"
     },
     {
       "id": "laliga-200203-sociedad-02",
@@ -1803,7 +1846,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "three_season_individual_profile_checked"
     },
     {
       "id": "laliga-200203-sociedad-03",
@@ -1868,7 +1913,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_qualitative_prior_seasons_pending"
     },
     {
       "id": "laliga-200203-sociedad-04",
@@ -1933,7 +1980,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_qualitative_prior_seasons_pending"
     },
     {
       "id": "laliga-200203-sociedad-05",
@@ -1998,7 +2047,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_qualitative_prior_seasons_pending"
     },
     {
       "id": "laliga-200203-sociedad-06",
@@ -2063,7 +2114,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_qualitative_prior_seasons_pending"
     },
     {
       "id": "laliga-200203-sociedad-07",
@@ -2151,7 +2204,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "three_season_individual_profile_checked"
     },
     {
       "id": "laliga-200203-sociedad-08",
@@ -2216,7 +2271,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_qualitative_prior_seasons_pending"
     },
     {
       "id": "laliga-200203-sociedad-09",
@@ -2296,7 +2353,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "three_season_individual_profile_checked"
     },
     {
       "id": "laliga-200203-sociedad-10",
@@ -2376,7 +2435,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "three_season_individual_profile_checked"
     },
     {
       "id": "laliga-200203-sociedad-11",
@@ -2463,7 +2524,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "three_season_individual_profile_checked"
     },
     {
       "id": "laliga-200203-sociedad-12",
@@ -2552,7 +2615,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "three_season_individual_profile_checked"
     },
     {
       "id": "laliga-200203-deportivo-01",
@@ -2616,7 +2681,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_qualitative_prior_seasons_pending"
     },
     {
       "id": "laliga-200203-deportivo-02",
@@ -2688,7 +2755,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_and_legacy_previous_archive_partial"
     },
     {
       "id": "laliga-200203-deportivo-03",
@@ -2770,7 +2839,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_and_legacy_previous_archive_partial"
     },
     {
       "id": "laliga-200203-deportivo-04",
@@ -2843,7 +2914,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_and_legacy_previous_archive_partial"
     },
     {
       "id": "laliga-200203-deportivo-05",
@@ -2923,7 +2996,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_and_legacy_previous_archive_partial"
     },
     {
       "id": "laliga-200203-deportivo-06",
@@ -3005,7 +3080,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_and_legacy_previous_archive_partial"
     },
     {
       "id": "laliga-200203-deportivo-07",
@@ -3084,7 +3161,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "three_season_individual_profile_checked"
     },
     {
       "id": "laliga-200203-deportivo-08",
@@ -3157,7 +3236,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_and_legacy_previous_archive_partial"
     },
     {
       "id": "laliga-200203-deportivo-09",
@@ -3230,7 +3311,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_and_legacy_previous_archive_partial"
     },
     {
       "id": "laliga-200203-deportivo-10",
@@ -3309,7 +3392,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "three_season_individual_profile_checked"
     },
     {
       "id": "laliga-200203-deportivo-11",
@@ -3382,7 +3467,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_and_legacy_previous_archive_partial"
     },
     {
       "id": "laliga-200203-deportivo-12",
@@ -3461,7 +3548,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "three_season_individual_profile_checked"
     },
     {
       "id": "laliga-200203-deportivo-13",
@@ -3541,7 +3630,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_and_legacy_previous_archive_partial"
     },
     {
       "id": "laliga-200203-deportivo-14",
@@ -3614,7 +3705,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_and_legacy_previous_archive_partial"
     },
     {
       "id": "laliga-200203-deportivo-15",
@@ -3694,7 +3787,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "three_season_individual_profile_checked"
     },
     {
       "id": "laliga-200203-deportivo-16",
@@ -3778,7 +3873,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_and_legacy_previous_archive_partial"
     },
     {
       "id": "laliga-200203-celta-01",
@@ -3854,7 +3951,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "three_season_individual_profile_checked"
     },
     {
       "id": "laliga-200203-celta-02",
@@ -3936,7 +4035,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_and_legacy_previous_archive_partial"
     },
     {
       "id": "laliga-200203-celta-03",
@@ -4015,7 +4116,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "three_season_individual_profile_checked"
     },
     {
       "id": "laliga-200203-celta-04",
@@ -4095,7 +4198,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_and_legacy_previous_archive_partial"
     },
     {
       "id": "laliga-200203-celta-05",
@@ -4177,7 +4282,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_and_legacy_previous_archive_partial"
     },
     {
       "id": "laliga-200203-celta-06",
@@ -4250,7 +4357,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_and_legacy_previous_archive_partial"
     },
     {
       "id": "laliga-200203-celta-07",
@@ -4315,7 +4424,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_qualitative_prior_seasons_pending"
     },
     {
       "id": "laliga-200203-celta-08",
@@ -4395,7 +4506,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_and_legacy_previous_archive_partial"
     },
     {
       "id": "laliga-200203-celta-09",
@@ -4469,7 +4582,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_and_legacy_previous_archive_partial"
     },
     {
       "id": "laliga-200203-celta-10",
@@ -4544,7 +4659,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_and_legacy_previous_archive_partial"
     },
     {
       "id": "laliga-200203-valencia-01",
@@ -4622,7 +4739,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "three_season_individual_profile_checked"
     },
     {
       "id": "laliga-200203-valencia-02",
@@ -4700,7 +4819,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_and_legacy_previous_archive_partial"
     },
     {
       "id": "laliga-200203-valencia-03",
@@ -4765,7 +4886,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_qualitative_prior_seasons_pending"
     },
     {
       "id": "laliga-200203-valencia-04",
@@ -4839,7 +4962,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_and_legacy_previous_archive_partial"
     },
     {
       "id": "laliga-200203-valencia-05",
@@ -4919,7 +5044,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_and_legacy_previous_archive_partial"
     },
     {
       "id": "laliga-200203-valencia-06",
@@ -5001,7 +5128,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_and_legacy_previous_archive_partial"
     },
     {
       "id": "laliga-200203-valencia-07",
@@ -5081,7 +5210,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "three_season_individual_profile_checked"
     },
     {
       "id": "laliga-200203-valencia-08",
@@ -5161,7 +5292,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_and_legacy_previous_archive_partial"
     },
     {
       "id": "laliga-200203-valencia-09",
@@ -5226,7 +5359,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_qualitative_prior_seasons_pending"
     },
     {
       "id": "laliga-200203-valencia-10",
@@ -5305,7 +5440,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "three_season_individual_profile_checked"
     },
     {
       "id": "laliga-200203-valencia-11",
@@ -5385,7 +5522,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "three_season_individual_profile_checked"
     },
     {
       "id": "laliga-200203-valencia-12",
@@ -5459,7 +5598,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_and_legacy_previous_archive_partial"
     },
     {
       "id": "laliga-200203-valencia-13",
@@ -5539,7 +5680,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "three_season_individual_profile_checked"
     },
     {
       "id": "laliga-200203-valencia-14",
@@ -5604,7 +5747,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_qualitative_prior_seasons_pending"
     },
     {
       "id": "laliga-200203-valencia-15",
@@ -5669,7 +5814,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_qualitative_prior_seasons_pending"
     },
     {
       "id": "laliga-200203-barca-01",
@@ -5741,7 +5888,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_and_legacy_previous_archive_partial"
     },
     {
       "id": "laliga-200203-barca-02",
@@ -5823,7 +5972,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_and_legacy_previous_archive_partial"
     },
     {
       "id": "laliga-200203-barca-03",
@@ -5897,7 +6048,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_and_legacy_previous_archive_partial"
     },
     {
       "id": "laliga-200203-barca-04",
@@ -5977,7 +6130,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_and_legacy_previous_archive_partial"
     },
     {
       "id": "laliga-200203-barca-05",
@@ -6057,7 +6212,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "three_season_individual_profile_checked"
     },
     {
       "id": "laliga-200203-barca-06",
@@ -6137,7 +6294,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_and_legacy_previous_archive_partial"
     },
     {
       "id": "laliga-200203-barca-07",
@@ -6216,7 +6375,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "three_season_individual_profile_checked"
     },
     {
       "id": "laliga-200203-barca-08",
@@ -6290,7 +6451,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_and_legacy_previous_archive_partial"
     },
     {
       "id": "laliga-200203-barca-09",
@@ -6372,7 +6535,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_and_legacy_previous_archive_partial"
     },
     {
       "id": "laliga-200203-barca-10",
@@ -6451,7 +6616,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "three_season_individual_profile_checked"
     },
     {
       "id": "laliga-200203-barca-11",
@@ -6526,7 +6693,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_and_legacy_previous_archive_partial"
     },
     {
       "id": "laliga-200203-mallorca-01",
@@ -6605,7 +6774,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "three_season_individual_profile_checked"
     },
     {
       "id": "laliga-200203-mallorca-02",
@@ -6670,7 +6841,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_qualitative_prior_seasons_pending"
     },
     {
       "id": "laliga-200203-mallorca-03",
@@ -6735,7 +6908,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_qualitative_prior_seasons_pending"
     },
     {
       "id": "laliga-200203-mallorca-04",
@@ -6800,7 +6975,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_qualitative_prior_seasons_pending"
     },
     {
       "id": "laliga-200203-mallorca-05",
@@ -6874,7 +7051,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_and_legacy_previous_archive_partial"
     },
     {
       "id": "laliga-200203-mallorca-06",
@@ -6939,7 +7118,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_qualitative_prior_seasons_pending"
     },
     {
       "id": "laliga-200203-mallorca-07",
@@ -7027,7 +7208,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "three_season_individual_profile_checked"
     },
     {
       "id": "laliga-200203-mallorca-08",
@@ -7120,7 +7303,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "three_season_individual_profile_checked"
     },
     {
       "id": "laliga-200203-mallorca-09",
@@ -7194,7 +7379,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_and_legacy_previous_archive_partial"
     },
     {
       "id": "laliga-200203-mallorca-10",
@@ -7259,7 +7446,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_qualitative_prior_seasons_pending"
     },
     {
       "id": "laliga-200203-mallorca-11",
@@ -7339,7 +7528,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "three_season_individual_profile_checked"
     },
     {
       "id": "laliga-200203-villarreal-01",
@@ -7417,7 +7608,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "three_season_individual_profile_checked"
     },
     {
       "id": "laliga-200203-villarreal-02",
@@ -7482,7 +7675,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_qualitative_prior_seasons_pending"
     },
     {
       "id": "laliga-200203-villarreal-03",
@@ -7561,7 +7756,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "three_season_individual_profile_checked"
     },
     {
       "id": "laliga-200203-villarreal-04",
@@ -7634,7 +7831,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_and_legacy_previous_archive_partial"
     },
     {
       "id": "laliga-200203-villarreal-05",
@@ -7707,7 +7906,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_and_legacy_previous_archive_partial"
     },
     {
       "id": "laliga-200203-villarreal-06",
@@ -7772,7 +7973,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_qualitative_prior_seasons_pending"
     },
     {
       "id": "laliga-200203-villarreal-07",
@@ -7837,7 +8040,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_qualitative_prior_seasons_pending"
     },
     {
       "id": "laliga-200203-villarreal-08",
@@ -7917,7 +8122,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "three_season_individual_profile_checked"
     },
     {
       "id": "laliga-200203-villarreal-09",
@@ -8003,7 +8210,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_and_legacy_previous_archive_partial"
     },
     {
       "id": "laliga-200203-villarreal-10",
@@ -8076,7 +8285,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_and_legacy_previous_archive_partial"
     },
     {
       "id": "laliga-200203-villarreal-11",
@@ -8149,7 +8360,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_and_legacy_previous_archive_partial"
     },
     {
       "id": "laliga-200203-racing-01",
@@ -8213,7 +8426,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_qualitative_prior_seasons_pending"
     },
     {
       "id": "laliga-200203-racing-02",
@@ -8277,7 +8492,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_qualitative_prior_seasons_pending"
     },
     {
       "id": "laliga-200203-racing-03",
@@ -8342,7 +8559,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_qualitative_prior_seasons_pending"
     },
     {
       "id": "laliga-200203-racing-04",
@@ -8407,7 +8626,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_qualitative_prior_seasons_pending"
     },
     {
       "id": "laliga-200203-racing-05",
@@ -8472,7 +8693,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_qualitative_prior_seasons_pending"
     },
     {
       "id": "laliga-200203-racing-06",
@@ -8537,7 +8760,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_qualitative_prior_seasons_pending"
     },
     {
       "id": "laliga-200203-racing-07",
@@ -8602,7 +8827,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_qualitative_prior_seasons_pending"
     },
     {
       "id": "laliga-200203-racing-08",
@@ -8667,7 +8894,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_qualitative_prior_seasons_pending"
     },
     {
       "id": "laliga-200203-racing-09",
@@ -8732,7 +8961,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_qualitative_prior_seasons_pending"
     },
     {
       "id": "laliga-200203-racing-10",
@@ -8801,7 +9032,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_qualitative_prior_seasons_pending"
     },
     {
       "id": "laliga-200203-racing-11",
@@ -8866,7 +9099,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_qualitative_prior_seasons_pending"
     },
     {
       "id": "laliga-200203-racing-12",
@@ -8931,7 +9166,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_qualitative_prior_seasons_pending"
     },
     {
       "id": "laliga-200203-racing-13",
@@ -8996,7 +9233,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_qualitative_prior_seasons_pending"
     },
     {
       "id": "laliga-200203-racing-14",
@@ -9077,7 +9316,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "three_season_individual_profile_checked"
     },
     {
       "id": "laliga-200203-madrid-14",
@@ -9162,7 +9403,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_and_legacy_previous_archive_partial"
     },
     {
       "id": "laliga-200203-deportivo-17",
@@ -9256,7 +9499,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_and_legacy_previous_archive_partial"
     },
     {
       "id": "laliga-200203-celta-11",
@@ -9347,7 +9592,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "three_season_individual_profile_checked"
     },
     {
       "id": "laliga-200203-celta-12",
@@ -9432,7 +9679,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_and_legacy_previous_archive_partial"
     },
     {
       "id": "laliga-200203-celta-13",
@@ -9517,7 +9766,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_and_legacy_previous_archive_partial"
     },
     {
       "id": "laliga-200203-celta-14",
@@ -9585,7 +9836,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_qualitative_prior_seasons_pending"
     },
     {
       "id": "laliga-200203-valencia-16",
@@ -9670,7 +9923,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_and_legacy_previous_archive_partial"
     },
     {
       "id": "laliga-200203-barca-12",
@@ -9738,7 +9993,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_qualitative_prior_seasons_pending"
     },
     {
       "id": "laliga-200203-barca-13",
@@ -9806,7 +10063,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_qualitative_prior_seasons_pending"
     },
     {
       "id": "laliga-200203-barca-14",
@@ -9874,7 +10133,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_qualitative_prior_seasons_pending"
     },
     {
       "id": "laliga-200203-barca-15",
@@ -9951,7 +10212,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_and_legacy_previous_archive_partial"
     },
     {
       "id": "laliga-200203-barca-16",
@@ -10036,7 +10299,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_and_legacy_previous_archive_partial"
     },
     {
       "id": "laliga-200203-villarreal-12",
@@ -10104,7 +10369,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_qualitative_prior_seasons_pending"
     },
     {
       "id": "laliga-200203-valencia-17",
@@ -10203,7 +10470,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "three_season_individual_profile_checked"
     },
     {
       "id": "laliga-200203-barca-17",
@@ -10279,7 +10548,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_qualitative_prior_seasons_pending"
     },
     {
       "id": "laliga-200203-racing-bodipo-fresh",
@@ -10344,7 +10615,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_qualitative_prior_seasons_pending"
     },
     {
       "id": "laliga-200203-mallorca-nino-fresh",
@@ -10409,7 +10682,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_qualitative_prior_seasons_pending"
     },
     {
       "id": "laliga-200203-villarreal-lopez-vallejo-fresh",
@@ -10482,7 +10757,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_and_legacy_previous_archive_partial"
     },
     {
       "id": "laliga-200203-villarreal-unai-vergara-fresh",
@@ -10547,7 +10824,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_qualitative_prior_seasons_pending"
     },
     {
       "id": "laliga-200203-celta-pinto-fresh",
@@ -10612,7 +10891,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_qualitative_prior_seasons_pending"
     },
     {
       "id": "laliga-200203-sociedad-alberto-lopez-fresh",
@@ -10677,7 +10958,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_qualitative_prior_seasons_pending"
     },
     {
       "id": "laliga-200203-mallorca-miki-garro-fresh",
@@ -10750,7 +11033,9 @@
           "same-tier qualitative peer comparison"
         ],
         "notes": "동일 티어 내 세부 순위는 시즌 선발 비중, 역할·공신력 있는 동시대 개인평가에 따른 초안. 3시즌 전체 개인기록 교차 검증이 끝난 확정 순위는 아님."
-      }
+      },
+      "evaluationStatus": "provisional_tier_not_user_approved",
+      "tierEvidenceLevel": "current_season_and_legacy_previous_archive_partial"
     }
   ],
   "bestXi": [
