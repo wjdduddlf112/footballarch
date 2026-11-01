@@ -520,3 +520,12 @@ Source TXT instruction adapted to the **2009-10 season only**. Candidate roster 
 - **DRAFT/unapproved**: all player starts and appearances unknown/null, DOB only period-roster first source, match-majority roles and complete 2016-17 + 2017-18 individual records pending. Specific verified top goals: Salah/Mané/Aubameyang 22 each, Hazard 16G/15A; do not infer zero for others.
 - Only 2018-19 season JSON, seven club fresh DRAFT files, report, 2018-19 validator/workflow, and progress log modified. All previous season datasets and existing app branding, champions, crest assets remain unchanged.
 - GitHub CI, Pages deployment and browser UI must be separately checked.
+
+
+## Premier League 2019-20 DRAFT (2026-11-01)
+- Seven actual 2020/21 UEFA clubs: Liverpool, Man City, Man United, Chelsea UCL groups; Leicester UEL group, Tottenham UEL Q2, Arsenal UEL group via FA Cup despite PL8. Wolves PL7 excluded; official PL 14 Aug 2020 corroboration.
+- PL actual **4-2-3-1 most-used 186/760** team starts per PL official 2 Aug 2020; Liverpool and City club formation 4-3-3.
+- 129 2019/20 draft candidates in 7 independent period squad files, 7 × 11 representative starters, per-role one backup, all individual tiers and 1..N position ranks, 4-2-3-1 Best XI.
+- Personal qualitative latest 60% (2019/20), 30% (2018/19), 10% (2017/18). **DRAFT / unapproved**; no independent full 3-season individual stats or match-by-match role census; all league starts/apps null. Selected official top goals and De Bruyne 20 assists only.
+- Noteworthy FootballSquads James Justin DOB source conflict with England FA and official PL: official 1998-02-23 used, secondary review annotated.
+- No other season JSON, CSS, JavaScript, crest assets, champion C markers changed. GitHub structural validator, Actions workflow and browser Pages inspection must be tracked separately.

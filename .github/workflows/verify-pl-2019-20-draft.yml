@@ -1,0 +1,26 @@
+name: Verify Football Archive PL 2019-20 DRAFT
+on:
+  push:
+    paths:
+      - "data/premierleague-2019-20.json"
+      - "audit/player-research/premierleague-2019-20-*"
+      - "audit/PLAYER_PREMIERLEAGUE_2019-20_DRAFT_REVIEW.md"
+      - "scripts/verify-pl-2019-20-draft.mjs"
+      - ".github/workflows/verify-pl-2019-20-draft.yml"
+  pull_request:
+    paths:
+      - "data/premierleague-2019-20.json"
+      - "audit/player-research/premierleague-2019-20-*"
+      - "audit/PLAYER_PREMIERLEAGUE_2019-20_DRAFT_REVIEW.md"
+      - "scripts/verify-pl-2019-20-draft.mjs"
+      - ".github/workflows/verify-pl-2019-20-draft.yml"
+  workflow_dispatch:
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: node scripts/verify-pl-2019-20-draft.mjs
