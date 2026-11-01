@@ -377,3 +377,20 @@ Three-season evidence exists in summarized form for each tier rationale, but ind
 Commit `2d490a03df322e673a20fd2f1d0c043c3739f02e` added four individually sourced 3-season DRAFT tier proposals: Pablo Cavallero (Celta GK, A+, 2002-03 Zamora winner), Rodolfo Arruabarrena (Villarreal LB, B+), Sylvinho (Celta LB, B+) and Albert Riera (Mallorca LW, B+). See BDFutbol individual player pages: https://www.bdfutbol.com/en/j/j2232.html ; https://www.bdfutbol.com/en/j/j2384.html ; https://www.bdfutbol.com/en/j/j2513.html ; https://www.bdfutbol.com/en/j/j56.html .
 
 **This supersedes the 34-grade count above:** 9 qualified clubs; **135 candidates, 38 provisional 3-season tiers with source notes (2 S, 10 A+, 6 A, 9 A-, 10 B+, 1 B), 97 evidence-pending null tiers, 0 ranks, 0 Best XI**. Date of birth available for 57/135, 78 still missing. Seven independently sourced missing candidates remain among the 97 null-tier candidates. No previously finalized season or site code changed. All tier/rank/Best XI and 2002-03 season completion gates still DRAFT/OPEN; no Node CLI or browser verification performed.
+
+---
+
+## Premier League 2009-10 — 2026-11-01 fresh DRAFT
+
+Source TXT instruction adapted to the **2009-10 season only**. Candidate roster and tier were newly researched rather than copied from historical candidate branches. No future season assessment was initiated.
+
+- Season JSON: `data/premierleague-2009-10.json`; initial integrated DRAFT `03924539fb9af43c43085260cc02fac44ae5361c`; added twelve player three-season league-stat references `8b969ba1c118b51a4bb6e6725ed4147fed467548`.
+- All 7 independently researched team rosters: under `audit/player-research/premierleague-2009-10-{chelsea,manutd,arsenal,tottenham,mancity,astonvilla,liverpool}-fresh-draft.json`.
+- Detailed review, including **all 133** player rows, World Class/League Top Class and XI: `audit/PLAYER_PREMIERLEAGUE_2009-10_DRAFT_REVIEW.md`; commit `9422df1cafbd9aafcd569d29b38f0959b35a4e5c`.
+- 2010-11 actual UEFA entrants: Chelsea, Manchester United, Arsenal, Tottenham (UCL), Manchester City, Aston Villa, Liverpool (UEL). Portsmouth excluded (UEFA license). Qualifiers and `meta.europeanQualificationVerified` updated. No standings/crests/front-end files touched.
+- Research candidate totals: Chelsea 19, Manchester United 19, Arsenal 20, Tottenham 19, Manchester City 20, Aston Villa 17, Liverpool 19 = **133**; all 133 birth dates present; 7 clubs each have 11 preliminarily selected starters; no position caps violated in in-memory schema check.
+- **Tier and positional ranking: 133/133 DRAFT proposals**, 0 user approvals. S 3, A+ 13, A 11, A- 21, B+ 36, B 23, B- 14, C+ 9, C 3; World Class 16; inclusive League Top Class 48. Best XI 11 players, proposed 4-4-2.
+- Player 2009-10 league starts individually sourced: 63/133; missing 70/133. Three-season league starts/goals profiles for 12/133; three-season **complete personal performances not independently verified**. The remaining 121 players' two prior seasons not yet reconciled. Match-level principal-position checks: 0/133.
+- Validation: in-memory schema checks PASS (unique player IDs, eligible clubs, tier enum/DOB syntax, quota starters/backups, position rank uniqueness, eleven Best XI ids valid). **Node CLI test not run**. **Live GitHub Pages UI/badge/crest/browser tabs not independently verified**. Therefore this is *partial research + DRAFT JSON publication*, not a fully validated season.
+- Position concerns: Chelsea Anelka RW/ST, Tottenham Bale LB/LW, Aston Villa Young/Downing sides, Manchester City Kompany CB/DM, Manchester United Giggs LW/CM; lineup-based review required before final tier/rank acceptance.
+- Process stops at Premier League 2009-10; user approval is required for advancing to 2010-11. DRAFT review may be revised without approving ratings.
