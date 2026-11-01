@@ -1,31 +1,41 @@
-# Premier League 2007-08 checkpoint — 2026-11-01
+# Premier League 2007-08 — evidence-based checkpoint (2026-11-01)
 
-Status: **DRAFT; user review pending**. One next season advanced from Premier League 2006-07, which had already been rated and reconciled with its Best XI. No PL 2008-09 player work undertaken.
+**DRAFT, not user approved.** This revises the initial 2007-08 172-player draft after user feedback that real verification and BEST XI quality must precede rigid positional matching.
 
-## Scope
+## Eligible clubs / coverage
 
-- **9** actual 2008-09 Europe-entering clubs: Man Utd, Chelsea, Arsenal, Liverpool UCL; Everton UEFA Cup, Aston Villa 2008 Intertoto (then UEFA Cup), Portsmouth UEFA Cup (FA Cup), Manchester City UEFA Cup (Fair Play), Tottenham UEFA Cup (League Cup).
-- **172 candidate players**, **99 nominal starters** (11 per eligible club), **172 provisional grades**, **172 complete continuous within-position ranks**.
-- Grades: S 4, A+ 27, A 6, A- 30, B+ 53, B 28, B- 21, C+ 3. World Class (S+A+) **31**. League Top Class (S+A++A+A-) **67**.
-- Proposed formation **4-4-2**. Historical Guardian May 2008 survey (cited in University of Brighton thesis) gives **12/20** PL clubs using 4-4-2, with UEFA technical report supporting simultaneous 4-2-3-1 transition among leading teams. Club-specific formations preserved.
-- 2005-06 and 2006-07 individual historical DRAFT data used only as 3-year context; **never copied old candidates to new eligible shortlist**.
+Nine actual 2008-09 UEFA entrants (UCL: Manchester United, Chelsea, Arsenal, Liverpool; UEFA Cup: Everton, Portsmouth, Manchester City, Tottenham; Intertoto: Aston Villa). Exactly **170 candidates**: Manchester United 20, Chelsea 21, Arsenal 19, Liverpool 19, Everton 17, Aston Villa 18, Portsmouth 18, Manchester City 20, Tottenham 18. **99 nominal starters** (11/team).
 
-## Validation
+Grades: S 4, A+ 27, A 6, A- 30, B+ 53, B 28, B- 20, C+ 2. World Class S/A+ = **31**. League Top Class S/A+/A/A- = **67**.
 
-- GitHub-side JavaScript structural validation **PASS, zero errors**: eligible club match to 2008-09 qualifier ledger, unique IDs, 11/club starter allocation, candidate limits per position, DOB ISO syntax, contiguous ordinal ranks, Best XI 11 distinct valid IDs and site-supported 4-4-2 slots.
-- Most importantly after prior user correction, **every Best XI player is rank #1 in one-slot role, and for CB/ST exactly #1 and #2**. 2007-08 XI: David James; Ferdinand / Vidić; Clichy / Sagna; Flamini / Fàbregas; Young / Ronaldo; Torres / Adebayor.
-- League starts recorded **17/172**, missing **155** (left null rather than fabricated). 2007-08 goals recorded **46/172**. **147** players missing archived start values in at least one of 2005-06/2006-07, often because earlier European-only club shortlist was incomplete. Position-majority verification **0/172** pending; dates filled 172/172, not dual-source individually verified.
-- **Node CLI validator NOT EXECUTED. Browser/actual deployed UI NOT independently inspected. User final approval NOT GIVEN.** User previously confirmed site displays through 2005-06.
+## Evidence checks performed
 
-## Repository files
+- **170/170 PL league matches, starts and goals populated from individual 2007-08 league-only team rows.** Nine clubs separately checked against Statbunker, FBref and Everton Encyclopedia. This is single-source complete and partially second-source corroborated, **not** an independent 2-source certification of every individual record.
+- Ineligible or unsuitable players: Liverpool goalkeeper Charles Itandje had 0 league appearances and was removed; Benayoun 30 league apps/15 starts added; Tottenham Ledley King only four PL starts, so Younes Kaboul (19 starts) included; Aston Villa Patrick Berger 0 starts removed. Liverpool Pennant marginal 14 starts replaced by Benayoun 15 in right-side backup limit.
+- **Best XI 11/11 previous 2005-06 and 2006-07 starts recorded.** FBref domestic-year lookup added for David James (Man City / Portsmouth), Nemanja Vidić (Man United), Gaël Clichy (Arsenal), Bacary Sagna (Auxerre Ligue 1), Ashley Young (Watford Championship then Watford/Aston Villa PL), Fernando Torres (Atlético Madrid La Liga), Steven Gerrard (Liverpool). Others already available in archived draft season datasets.
+- **139/170 other candidates still lack at least one previous year league-start value**; their previous performance needs additional independent research. Previous league/club entries are never substituted with zeros.
+- Current 2007-08 170/170 majority playing positions remain **not match-by-match audited**. Current original birthdays 170/170 filled but two-source verification unfinished.
+- Ashley Young: 9 goals on FBref / 11v11 versus Statbunker 8. Use 9 and document the difference. Gerrard: FBref 8 assists versus BeSoccer 9; use 8. Different source scoring conventions are not silently merged.
 
-- Main DRAFT source: `data/premierleague-2007-08.json`
-- Historical European ledger: `data/premierleague-europe-qualification-1999-2026.json`
-- Short research navigation: `audit/player-research/premierleague-2007-08-research.md`
-- Complete 9 club files: `audit/player-research/premierleague-2007-08-{manutd,chelsea,arsenal,liverpool,everton,astonvilla,portsmouth,mancity,tottenham}.md`
-- Combined position ranks: `audit/player-research/premierleague-2007-08-ranks-{1,2}.md`
-- This checkpoint supplements the main aggregate log `audit/PLAYER_INTEGRATION_PROGRESS.md` (the older log's global counters have NOT yet been recalculated to include 2007-08). Updated aggregate should eventually show 23 tracked season datasets, 3102 total candidates, 1562 proposed tiers, 1540 unrated, 11 Best XI drafts.
+## BEST XI outranks tactical slot rigidity
 
-## Stop
+User explicitly instructed that a high-quality CAM may play CM in a four-four-two best XI while remaining a CAM in player rankings. The chosen XI is exactly contemporary 2007-08 PFA XI:
 
-No 2008-09 evaluation authorized; wait for explicit user next-season instruction. Keep pre-existing site, crests, champion markers and all prior season data unchanged.
+David James; Rio Ferdinand, Nemanja Vidić, Gaël Clichy, Bacary Sagna; Steven Gerrard (underlying **CAM**, field **CM**), Cesc Fàbregas (underlying **CM**, other field **CM**), Ashley Young, Cristiano Ronaldo; Fernando Torres, Emmanuel Adebayor.
+
+Changes: `data/premierleague-2007-08.json` includes `bestXi.position` (pitch layout) and optional `bestXi.displayPosition` (shown label), while `players[].position` retains original season classification. `assets/app.js` updated to show displayPosition and open original ranked position on slot click. Ranking order is no longer distorted to force it to match an inflexible holding midfield position.
+
+Contemporary PFA source: https://www.uefa.com/news-media/news/01cc-0e6f54e2f9d2-92ba0828a91e-1000--ronaldo-receives-english-acclaim/
+
+## Audit gates / limits
+
+- **GitHub connector-side JavaScript structured audit passed**, zero errors: 9 actual UEFA entrants, unique IDs, valid birth dates, allowed ranks/tiers, 11 nominal starters per club, position caps, continuous position rankings, all 170 starts/apps/goals valid, 11 unique Best XI IDs and all mapped tactical 4-4-2 slots. Exact PFA XI names cross-checked.
+- **Node CLI script NOT executed**, live deployed site click/tab/crest **NOT independently browser-tested**. The repo CSS, standings and crests unchanged. User had previously confirmed the site through PL 2005-06.
+- Season assessment remains DRAFT; no final approval, do not start PL 2008-09.
+
+## Artifacts
+
+- Season JSON `data/premierleague-2007-08.json`
+- All 9 revised tables `audit/player-research/premierleague-2007-08-{manutd,chelsea,arsenal,liverpool,everton,astonvilla,portsmouth,mancity,tottenham}.md`
+- League rankings `audit/player-research/premierleague-2007-08-ranks-{1,2}.md`
+- Navigation and consolidated XI `audit/player-research/premierleague-2007-08-research.md`
