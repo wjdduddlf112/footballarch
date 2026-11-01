@@ -28,7 +28,7 @@ Status: **22 tracked season datasets; 1390/2930 provisional player tier proposal
 | Premier League | 2002-03 | 132 | 132 | 132 | 0 | 0 | 11 proposed (unapproved) | No |
 | Premier League | 2003-04 | 105 | 105 | 105 | 0 | 0 (entered; not independently checked) | 11 proposed (unapproved) | No |
 | Premier League | 2004-05 | 150 | 150 | 150 | 0 | 0 (season-only data entered) | 11 proposed (unapproved) | No |
-| Premier League | 2005-06 | 142 | 142 | 142 | 0 | 0 (entered; individual audit pending) | 11 proposed (unapproved) | No |
+| Premier League | 2005-06 | 142 | 142 | 142 | 0 | 0 (entered; individual audit pending) | 11 proposed (unapproved) | User confirmed display (2026-11-01); independent browser audit pending |
 | Premier League | 2006-07 | 149 | 149 | 149 | 0 | 83 (not yet sourced) | 11 proposed (unapproved) | Not independently verified |
 | Serie A | 1999-00 | 119 | 0 | 0 | 1 | 0 | Not selected | No |
 | Serie A | 2000-01 | 109 | 0 | 0 | 7 | 0 | Not selected | No |
