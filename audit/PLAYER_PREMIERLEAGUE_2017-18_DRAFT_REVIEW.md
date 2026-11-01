@@ -1,10 +1,10 @@
-# Premier League 2017-18 — full Football Archive DRAFT player review
+# Premier League 2017-18 — Football Archive full 7-club player DRAFT review
 
-**Status DRAFT / unapproved**. Historical independent player starts, full 3-year form and predominant positions remain unverified. This is NOT a complete historical audit.
+**DRAFT / unapproved**. 2015-16 (10%), 2016-17 (30%), 2017-18 (60%) weighted qualitative appraisal; all individual match-start and majority-position verifications pending. Counts and ranks structurally checked separately.
 
-## 1. 2018-19 actual UEFA clubs (all stages)
+## 1. Actual 2018-19 UEFA participants
 
-| Original club name | 2017-18 PL rank | UEFA 2018-19 | Route |
+| Original club | 2017-18 PL | 2018-19 UEFA | Route |
 |---|---:|---|---|
 | Manchester City | 1 | UCL | Premier League champions (1st); 2018-19 Champions League group stage |
 | Manchester United FC | 2 | UCL | Premier League 2nd; 2018-19 Champions League group stage |
@@ -14,34 +14,35 @@
 | Arsenal FC | 6 | UEL | Premier League 6th; 2018-19 Europa League group stage |
 | Burnley FC | 7 | UEL | Premier League 7th; League Cup/FA Cup reallocation; 2018-19 Europa League Q2, Q3 and play-off |
 
-UEFA UCL official: https://www.uefa.com/uefachampionsleague/news/0246-0e98e2deb33b-a3a30f2f14a6-1000--all-you-need-to-know-2018-19-uefa-champions-league/
-UEFA UEL all rounds official: https://www.uefa.com/uefaeuropaleague/news/0248-0e99032e2843-f16460087e05-1000--2018-19-uefa-europa-league-participants/
-RSSSF historical PL table: https://www.rsssf.org/tablese/eng2018.html
+UEFA / RSSSF verification: https://www.uefa.com/uefachampionsleague/news/0246-0e98e2deb33b-a3a30f2f14a6-1000--all-you-need-to-know-2018-19-uefa-champions-league/
+UEFA / RSSSF verification: https://www.uefa.com/uefaeuropaleague/news/0248-0e99032e2843-f16460087e05-1000--2018-19-uefa-europa-league-participants/
+UEFA / RSSSF verification: https://www.rsssf.org/tablese/eng2018.html
 
-## 2. 2017-18 league modal formation and weighting
+## 2. The league's ACTUAL most-used formation: 4-2-3-1
 
-**Verified league most-used 4-2-3-1**: 184 of 760 team-starts (24.21%); versus 4-3-3 127, 4-4-1-1 120, 3-4-2-1 98, 4-4-2 79. Official 24 May 2018 PL tactical review: https://www.premierleague.com/en/news/693265
-Manchester City and Liverpool major 4-3-3; Chelsea 3-4-2-1; Burnley 4-4-1-1. The 4-2-3-1 league XI applies league-wide, not to each club's real starting tactic.
-Individual weighing 2017-18 60%, 2016-17 30%, 2015-16 10%; historical previous-year individual records not yet independently audited; tiers are provisional qualitative judgements.
+Official Premier League analysis dated 24 May 2018: 4-2-3-1 **184/760** team starts, 4-3-3 127, 4-4-1-1 120, 3-4-2-1 98, 4-4-2 79. This is a verified league-wide mode, NOT a claim that each club played the same.
+Source: https://www.premierleague.com/en/news/693265
+Manchester City and Liverpool preferred 4-3-3; Chelsea used three centre-backs plus wingbacks; Burnley mainly 4-4-1-1. All match-level individual role censuses pending.
 
-## 3. Club candidate counts
+## 3. Club-specific candidate totals
 
-| Club | Candidates | XI starters | Reserve candidates | Main formation |
+| Club | Total | Provisional starters | Backups | Club formation |
 |---|---:|---:|---:|---|
 | Manchester City | 16 | 11 | 5 | 4-3-3 |
-| Manchester United FC | 19 | 11 | 8 | 4-2-3-1 / 4-3-3 |
-| Tottenham Hotspur FC | 18 | 11 | 7 | 4-2-3-1 |
+| Manchester United FC | 15 | 11 | 4 | 4-2-3-1 / 4-3-3 |
+| Tottenham Hotspur FC | 17 | 11 | 6 | 4-2-3-1 |
 | Liverpool FC | 18 | 11 | 7 | 4-3-3 |
 | Chelsea FC | 15 | 11 | 4 | 3-4-2-1 / 3-5-2 |
 | Arsenal FC | 19 | 11 | 8 | 4-2-3-1 / late 3-4-2-1 |
 | Burnley FC | 19 | 11 | 8 | 4-4-1-1 |
 
-## 4. All club candidates and personal draft evaluations
+## 4. Every club candidate and personal DRAFT assessment
 
-Dates of birth use period FootballSquads first source (second-source DOB audit pending). Numeric field null means unverified and MUST NOT be interpreted as zero. Starter/back-up and primary slot are DRAFT pending individual match starts and majority position.
+Candidates come from independent 2017-18 FootballSquads season snapshots. DOB first-source only; independent second source pending. Player starts/apps remain null; selected official goals/assists documented in the JSON. Player selected only once even after transfer.
 
 ### Manchester City — 16 candidates
-Source: https://www.footballsquads.co.uk/eng/2017-2018/faprem/mancity.htm
+
+Season roster: https://www.footballsquads.co.uk/eng/2017-2018/faprem/mancity.htm
 
 | POS | 한글명 | Original name | Club original | DOB | Role | Tier | Position league rank | Rationale |
 |---|---|---|---|---|---|---|---:|---|
@@ -58,17 +59,17 @@ Source: https://www.footballsquads.co.uk/eng/2017-2018/faprem/mancity.htm
 | CM | 일카이 귄도안 | İlkay Gündoğan | Manchester City | 1990-10-24 | 후보 | A- | 6 | 중원 로테이션 시 전진 패스와 득점 기여, 복귀 후 경기력 상승. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 | LW | 르로이 사네 | Leroy Sané | Manchester City | 1996-01-11 | 주전 | A+ | 2 | 왼쪽 드리블·어시스트와 날카로운 전진 침투로 리그 최고 측면 공격. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 | RW | 라힘 스털링 | Raheem Sterling | Manchester City | 1994-12-08 | 주전 | A+ | 2 | 오른쪽 침투와 박스 내 움직임·18골로 뛰어난 공격 효율. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
-| RW | 베르나르두 실바 | Bernardo Silva | Manchester City | 1994-08-10 | 후보 | B+ | 7 | 첫 시즌 오른쪽 2선 로테이션으로 연결·볼 운반 기여. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
+| RW | 베르나르두 실바 | Bernardo Silva | Manchester City | 1994-08-10 | 후보 | B+ | 6 | 첫 시즌 오른쪽 2선 로테이션으로 연결·볼 운반 기여. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 | ST | 세르히오 아궤로 | Sergio Agüero | Manchester City | 1988-06-02 | 주전 | A+ | 2 | 리그 21골과 특유의 박스 슈팅·침투 능력 유지. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 | ST | 가브리에우 제주스 | Gabriel Jesus | Manchester City | 1997-04-03 | 후보 | A- | 5 | 다수 리그 선발을 소화하며 전방 압박과 득점 생산 제공. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 
-### Manchester United FC — 19 candidates
-Source: https://www.footballsquads.co.uk/eng/2017-2018/faprem/manutd.htm
+### Manchester United FC — 15 candidates
+
+Season roster: https://www.footballsquads.co.uk/eng/2017-2018/faprem/manutd.htm
 
 | POS | 한글명 | Original name | Club original | DOB | Role | Tier | Position league rank | Rationale |
 |---|---|---|---|---|---|---|---:|---|
 | GK | 다비드 데 헤아 | David de Gea | Manchester United FC | 1990-11-07 | 주전 | S | 1 | 리그 18클린시트 골든글러브와 압도적인 결정적 선방. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
-| GK | 세르히오 로메로 | Sergio Romero | Manchester United FC | 1987-02-22 | 후보 | B- | 10 | 리그 기회는 적지만 컵대회 골문 수비로 고급 백업 역량. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 | CB | 필 존스 | Phil Jones | Manchester United FC | 1992-02-21 | 주전 | B+ | 14 | 중앙 수비 선발을 소화하며 커버와 위치 선정에 기여. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 | CB | 크리스 스몰링 | Chris Smalling | Manchester United FC | 1989-11-22 | 주전 | A- | 8 | 포백의 주요 수비수로 대인 저지와 공중 경합에 꾸준히 기여. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 | CB | 에리크 바이 | Eric Bailly | Manchester United FC | 1994-04-12 | 후보 | B0 | 19 | 부상으로 기회는 줄었지만 복귀하면 강한 대인 수비. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
@@ -76,19 +77,17 @@ Source: https://www.footballsquads.co.uk/eng/2017-2018/faprem/manutd.htm
 | LB | 루크 쇼 | Luke Shaw | Manchester United FC | 1995-07-12 | 후보 | B- | 11 | 왼쪽 풀백 로테이션 선발 기회가 있으나 출전 지속성 제한. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 | RB | 안토니오 발렌시아 | Antonio Valencia | Manchester United FC | 1985-08-04 | 주전 | B+ | 3 | 오른쪽 풀백으로 꾸준한 전진·복귀 수비 제공. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 | DM | 네마냐 마티치 | Nemanja Matić | Manchester United FC | 1988-08-01 | 주전 | A- | 3 | 후방 볼 순환과 넓은 공간 커버, 중원 수비 안정. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
-| DM | 마이클 캐릭 | Michael Carrick | Manchester United FC | 1981-07-28 | 후보 | C+ | 11 | 은퇴 전 마지막 시즌에 제한적 선발과 전개 지도력, 후보 자격 재검토. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 | CM | 폴 포그바 | Paul Pogba | Manchester United FC | 1993-03-15 | 주전 | A- | 5 | 중원 탈압박과 롱패스·득점 연계를 보였으나 기복 존재. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 | CM | 안데르 에레라 | Ander Herrera | Manchester United FC | 1989-08-14 | 후보 | B0 | 12 | 압박과 볼 회수, 중앙 로테이션. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 | CAM | 제시 린가드 | Jesse Lingard | Manchester United FC | 1992-12-15 | 주전 | B+ | 3 | 중앙 2선 전방 압박과 골·박스 침투에 좋은 개인 기여. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
-| CAM | 후안 마타 | Juan Mata | Manchester United FC | 1988-04-28 | 후보 | B0 | 5 | 중앙과 우측 2선 로테이션에서 정확한 패스와 찬스 창출. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
-| LW | 앙토니 마르시알 | Anthony Martial | Manchester United FC | 1995-12-05 | 주전 | B+ | 6 | 왼쪽 공격에서 볼 운반·슈팅과 득점 기여. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
-| LW | 알렉시스 산체스 | Alexis Sánchez | Manchester United FC | 1988-12-19 | 후보 | B0 | 7 | 겨울 합류 후 왼쪽에서 공격 연계 시도, 이적 직후 전력 대비 개인 효율 미흡. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
-| RW | 마커스 래시퍼드 | Marcus Rashford | Manchester United FC | 1997-10-31 | 주전 | B+ | 5 | 좌우 윙과 최전방을 오간 속도·침투 기여, 주 포지션 검증 필요. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
+| LW | 앙토니 마르시알 | Anthony Martial | Manchester United FC | 1995-12-05 | 주전 | B+ | 7 | 왼쪽 공격에서 볼 운반·슈팅과 득점 기여. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
+| LW | 마커스 래시퍼드 | Marcus Rashford | Manchester United FC | 1997-10-31 | 후보 | B+ | 6 | 좌우 윙과 최전방을 오간 속도·침투 기여, 주 포지션 검증 필요. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
+| RW | 후안 마타 | Juan Mata | Manchester United FC | 1988-04-28 | 주전 | B0 | 7 | 오른쪽 측면과 중앙 이동 로테이션에서 정확한 패스와 찬스 창출. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 | ST | 로멜루 루카쿠 | Romelu Lukaku | Manchester United FC | 1993-05-13 | 주전 | A- | 4 | 16골과 강한 전방 경합, 연결 플레이 개선. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
-| ST | 즐라탄 이브라히모비치 | Zlatan Ibrahimović | Manchester United FC | 1981-10-03 | 후보 | C- | 14 | 장기 부상 후 소수 경기만 출전, 실제 후보 선발 자격 미달 가능. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 
-### Tottenham Hotspur FC — 18 candidates
-Source: https://www.footballsquads.co.uk/eng/2017-2018/faprem/tottenham.htm
+### Tottenham Hotspur FC — 17 candidates
+
+Season roster: https://www.footballsquads.co.uk/eng/2017-2018/faprem/tottenham.htm
 
 | POS | 한글명 | Original name | Club original | DOB | Role | Tier | Position league rank | Rationale |
 |---|---|---|---|---|---|---|---:|---|
@@ -109,10 +108,10 @@ Source: https://www.footballsquads.co.uk/eng/2017-2018/faprem/tottenham.htm
 | LW | 에릭 라멜라 | Erik Lamela | Tottenham Hotspur FC | 1992-03-25 | 후보 | B0 | 11 | 장기 결장 후 왼쪽과 오른쪽 2선으로 복귀해 로테이션. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 | RW | 크리스티안 에릭센 | Christian Eriksen | Tottenham Hotspur FC | 1992-02-14 | 주전 | A+ | 3 | 오른쪽으로 기재되지만 실제 중앙 전개에 많이 관여한 플레이메이커. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 | ST | 해리 케인 | Harry Kane | Tottenham Hotspur FC | 1993-07-28 | 주전 | S | 1 | 리그 30골로 최상위 득점과 압도적 슈팅 기여. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
-| ST | 페르난도 요렌테 | Fernando Llorente | Tottenham Hotspur FC | 1985-02-26 | 후보 | C+ | 13 | 전방 제공권을 통한 대체 옵션, 리그 선발 적음. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 
 ### Liverpool FC — 18 candidates
-Source: https://www.footballsquads.co.uk/eng/2017-2018/faprem/liverpool.htm
+
+Season roster: https://www.footballsquads.co.uk/eng/2017-2018/faprem/liverpool.htm
 
 | POS | 한글명 | Original name | Club original | DOB | Role | Tier | Position league rank | Rationale |
 |---|---|---|---|---|---|---|---:|---|
@@ -136,7 +135,8 @@ Source: https://www.footballsquads.co.uk/eng/2017-2018/faprem/liverpool.htm
 | ST | 도미닉 솔랑케 | Dominic Solanke | Liverpool FC | 1997-09-14 | 후보 | B- | 12 | 공격수 로테이션 실전 선발을 소화했으나 득점 생산 미흡. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 
 ### Chelsea FC — 15 candidates
-Source: https://www.footballsquads.co.uk/eng/2017-2018/faprem/chelsea.htm
+
+Season roster: https://www.footballsquads.co.uk/eng/2017-2018/faprem/chelsea.htm
 
 | POS | 한글명 | Original name | Club original | DOB | Role | Tier | Position league rank | Rationale |
 |---|---|---|---|---|---|---|---:|---|
@@ -157,12 +157,13 @@ Source: https://www.footballsquads.co.uk/eng/2017-2018/faprem/chelsea.htm
 | ST | 올리비에 지루 | Olivier Giroud | Chelsea FC | 1986-09-30 | 후보 | B0 | 11 | 겨울 합류해 제공권·포스트 플레이로 대체 선발. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 
 ### Arsenal FC — 19 candidates
-Source: https://www.footballsquads.co.uk/eng/2017-2018/faprem/arsenal.htm
+
+Season roster: https://www.footballsquads.co.uk/eng/2017-2018/faprem/arsenal.htm
 
 | POS | 한글명 | Original name | Club original | DOB | Role | Tier | Position league rank | Rationale |
 |---|---|---|---|---|---|---|---:|---|
 | GK | 페트르 체흐 | Petr Čech | Arsenal FC | 1982-05-20 | 주전 | B+ | 6 | 주전 골문 수비와 경험, 선방 일관성에서 전성기 대비 하락. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
-| GK | 다비드 오스피나 | David Ospina | Arsenal FC | 1988-08-31 | 후보 | B- | 11 | 리그 선발 횟수 적지만 유럽대항전 주전 등 실전 백업. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
+| GK | 다비드 오스피나 | David Ospina | Arsenal FC | 1988-08-31 | 후보 | B- | 10 | 리그 선발 횟수 적지만 유럽대항전 주전 등 실전 백업. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 | CB | 슈코드란 무스타피 | Shkodran Mustafi | Arsenal FC | 1992-04-17 | 주전 | B0 | 17 | 공중볼과 전방 수비에 기여하지만 기복과 실책. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 | CB | 로랑 코시엘니 | Laurent Koscielny | Arsenal FC | 1985-09-10 | 주전 | A- | 6 | 중앙 수비 리딩과 커버, 부상과 기동력 저하에도 핵심. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 | CB | 칼럼 체임버스 | Calum Chambers | Arsenal FC | 1995-01-20 | 후보 | B- | 21 | 중앙 수비 로테이션 선발·커버 역할. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
@@ -182,7 +183,8 @@ Source: https://www.footballsquads.co.uk/eng/2017-2018/faprem/arsenal.htm
 | ST | 피에르에메리크 오바메양 | Pierre-Emerick Aubameyang | Arsenal FC | 1989-06-18 | 후보 | A- | 6 | 겨울 이적 후 빠른 득점 적응과 공간 침투, 소속 기간 제한. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 
 ### Burnley FC — 19 candidates
-Source: https://www.footballsquads.co.uk/eng/2017-2018/faprem/burnley.htm
+
+Season roster: https://www.footballsquads.co.uk/eng/2017-2018/faprem/burnley.htm
 
 | POS | 한글명 | Original name | Club original | DOB | Role | Tier | Position league rank | Rationale |
 |---|---|---|---|---|---|---|---:|---|
@@ -201,17 +203,18 @@ Source: https://www.footballsquads.co.uk/eng/2017-2018/faprem/burnley.htm
 | CAM | 제프 헨드릭 | Jeff Hendrick | Burnley FC | 1992-01-31 | 주전 | B0 | 4 | 중앙 전방 4-4-1-1 세컨드 스트라이커·압박 연결, CAM 역할 매핑. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 | LW | 스콧 아필드 | Scott Arfield | Burnley FC | 1988-11-01 | 주전 | B0 | 9 | 왼쪽 미드필더의 활동량·전진 패스·수비 지원. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 | LW | 로비 브레이디 | Robbie Brady | Burnley FC | 1992-01-14 | 후보 | B0 | 10 | 전반기 왼쪽 윙 주전급 출전 후 장기 부상. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
-| RW | 요한 베르그 그뷔드뮌손 | Jóhann Berg Guðmundsson | Burnley FC | 1990-10-27 | 주전 | B+ | 6 | 오른쪽 미드필더에서 크로스와 전진 기회 창출. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
+| RW | 요한 베르그 그뷔드뮌손 | Jóhann Berg Guðmundsson | Burnley FC | 1990-10-27 | 주전 | B+ | 5 | 오른쪽 미드필더에서 크로스와 전진 기회 창출. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 | RW | 애런 레넌 | Aaron Lennon | Burnley FC | 1987-04-16 | 후보 | B- | 10 | 겨울 영입 후 우측 측면 로테이션 기여. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 | ST | 크리스 우드 | Chris Wood | Burnley FC | 1991-12-07 | 주전 | B+ | 9 | 10골 득점·강한 제공권과 전방 마무리. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 | ST | 애슐리 반스 | Ashley Barnes | Burnley FC | 1989-10-31 | 후보 | B+ | 10 | 다수 선발·강한 전방 경합과 골 기여, 실제 투톱 빈도 대조 필요. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 
-## 5. Continuous position-specific league rankings — all qualified teams
+## 5. COMPLETE position-specific league rank
 
+Every available player is ranked 1..N within original 2017-18 season role across only 7 eligible UEFA teams. Tiers never invert. Match-level role remains provisional.
 
-### GK
+### GK — 10
 
-| Rank | 한글명 | Original | Club | Tier | Individual assessment rationale |
+| Rank | 한글명 | Original | Club | Tier | Individual grounds |
 |---:|---|---|---|---|---|
 | 1 | 다비드 데 헤아 | David de Gea | Manchester United FC | S | 리그 18클린시트 골든글러브와 압도적인 결정적 선방. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 | 2 | 에데르송 | Ederson | Manchester City | A+ | 첫 PL 시즌에 높은 패스 완성도와 전진 수비로 빌드업의 출발점. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
@@ -222,12 +225,11 @@ Source: https://www.footballsquads.co.uk/eng/2017-2018/faprem/burnley.htm
 | 7 | 로리스 카리우스 | Loris Karius | Liverpool FC | B0 | 시즌 후반 골키퍼 주전이 되어 안정적인 선방과 반사신경. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 | 8 | 시몽 미뇰레 | Simon Mignolet | Liverpool FC | B0 | 전반기 주전 이후 선발에서 밀렸지만 실전 로테이션 자격. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 | 9 | 톰 히턴 | Tom Heaton | Burnley FC | B0 | 시즌 초 주전이었으나 장기 부상으로 거의 전부 결장. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
-| 10 | 세르히오 로메로 | Sergio Romero | Manchester United FC | B- | 리그 기회는 적지만 컵대회 골문 수비로 고급 백업 역량. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
-| 11 | 다비드 오스피나 | David Ospina | Arsenal FC | B- | 리그 선발 횟수 적지만 유럽대항전 주전 등 실전 백업. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
+| 10 | 다비드 오스피나 | David Ospina | Arsenal FC | B- | 리그 선발 횟수 적지만 유럽대항전 주전 등 실전 백업. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 
-### CB
+### CB — 21
 
-| Rank | 한글명 | Original | Club | Tier | Individual assessment rationale |
+| Rank | 한글명 | Original | Club | Tier | Individual grounds |
 |---:|---|---|---|---|---|
 | 1 | 얀 베르통언 | Jan Vertonghen | Tottenham Hotspur FC | A+ | 중앙 수비에서 넓은 공간 커버와 정확한 전진 패스. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 | 2 | 니콜라스 오타멘디 | Nicolás Otamendi | Manchester City | A+ | 상대 압박 속 볼 운반과 높은 대인 경합·수비 리딩. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
@@ -251,9 +253,9 @@ Source: https://www.footballsquads.co.uk/eng/2017-2018/faprem/burnley.htm
 | 20 | 케빈 롱 | Kevin Long | Burnley FC | B- | 부상 발생 시 센터백 실전 로테이션과 경합. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 | 21 | 칼럼 체임버스 | Calum Chambers | Arsenal FC | B- | 중앙 수비 로테이션 선발·커버 역할. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 
-### LB
+### LB — 12
 
-| Rank | 한글명 | Original | Club | Tier | Individual assessment rationale |
+| Rank | 한글명 | Original | Club | Tier | Individual grounds |
 |---:|---|---|---|---|---|
 | 1 | 파비안 델프 | Fabian Delph | Manchester City | A- | 미드필더에서 왼쪽 풀백으로 전환해 인버티드 풀백 볼 순환에 핵심. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 | 2 | 벤 데이비스 | Ben Davies | Tottenham Hotspur FC | A- | 왼쪽 풀백 주전으로 포백 균형과 전진 지원. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
@@ -268,9 +270,9 @@ Source: https://www.footballsquads.co.uk/eng/2017-2018/faprem/burnley.htm
 | 11 | 루크 쇼 | Luke Shaw | Manchester United FC | B- | 왼쪽 풀백 로테이션 선발 기회가 있으나 출전 지속성 제한. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 | 12 | 찰리 테일러 | Charlie Taylor | Burnley FC | B- | 왼쪽 풀백 부상 대체로 실전 기용. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 
-### RB
+### RB — 13
 
-| Rank | 한글명 | Original | Club | Tier | Individual assessment rationale |
+| Rank | 한글명 | Original | Club | Tier | Individual grounds |
 |---:|---|---|---|---|---|
 | 1 | 카일 워커 | Kyle Walker | Manchester City | A+ | 넓은 수비 커버와 전진 패스를 결합한 우측 공격의 기반. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 | 2 | 키런 트리피어 | Kieran Trippier | Tottenham Hotspur FC | B+ | 크로스와 전진 지원으로 오른쪽 풀백 선발 경쟁 우위. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
@@ -286,9 +288,9 @@ Source: https://www.footballsquads.co.uk/eng/2017-2018/faprem/burnley.htm
 | 12 | 다비데 차파코스타 | Davide Zappacosta | Chelsea FC | B- | 윙백 로테이션에서 크로스와 출전 분담. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 | 13 | 에인슬리 메이틀랜드나일스 | Ainsley Maitland-Niles | Arsenal FC | B- | 오른쪽과 왼쪽 윙백을 겸해 일부 실전 선발, 최다 역할 확인 필요. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 
-### DM
+### DM — 10
 
-| Rank | 한글명 | Original | Club | Tier | Individual assessment rationale |
+| Rank | 한글명 | Original | Club | Tier | Individual grounds |
 |---:|---|---|---|---|---|
 | 1 | 페르난지뉴 | Fernandinho | Manchester City | A+ | 단일 수비형 미드필더에서 압박 회피와 역습 차단·수비 전환을 수행. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 | 2 | 은골로 캉테 | N'Golo Kanté | Chelsea FC | A+ | 중원의 강력한 볼 회수와 수비 전환·후방 보호. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
@@ -300,11 +302,10 @@ Source: https://www.footballsquads.co.uk/eng/2017-2018/faprem/burnley.htm
 | 8 | 엠레 잔 | Emre Can | Liverpool FC | B+ | 수비형·중앙 중원에서 볼 운반과 압박, 시즌 최다 위치 검증. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 | 9 | 모하메드 엘네니 | Mohamed Elneny | Arsenal FC | B- | 중원 후방 패스의 로테이션 선발. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 | 10 | 빅터 완야마 | Victor Wanyama | Tottenham Hotspur FC | B- | 부상으로 출전량 크게 감소, 복귀 후 강한 경합. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
-| 11 | 마이클 캐릭 | Michael Carrick | Manchester United FC | C+ | 은퇴 전 마지막 시즌에 제한적 선발과 전개 지도력, 후보 자격 재검토. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 
-### CM
+### CM — 16
 
-| Rank | 한글명 | Original | Club | Tier | Individual assessment rationale |
+| Rank | 한글명 | Original | Club | Tier | Individual grounds |
 |---:|---|---|---|---|---|
 | 1 | 케빈 더브라위너 | Kevin De Bruyne | Manchester City | S | 리그 최고 수준의 전진 패스와 16도움으로 중원 공격 창조 주도. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 | 2 | 다비드 실바 | David Silva | Manchester City | A+ | 왼쪽 중앙 미드필더에서 압박 탈출과 점유 전개·찬스 생성. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
@@ -323,50 +324,49 @@ Source: https://www.footballsquads.co.uk/eng/2017-2018/faprem/burnley.htm
 | 15 | 티에무에 바카요코 | Tiemoué Bakayoko | Chelsea FC | B- | 충분한 선발 기회에도 압박 대처·판단 기복. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 | 16 | 해리 윙크스 | Harry Winks | Tottenham Hotspur FC | B- | 부상 탓에 선발 연속성이 낮지만 볼 순환 지원. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 
-### CAM
+### CAM — 4
 
-| Rank | 한글명 | Original | Club | Tier | Individual assessment rationale |
+| Rank | 한글명 | Original | Club | Tier | Individual grounds |
 |---:|---|---|---|---|---|
 | 1 | 델레 알리 | Dele Alli | Tottenham Hotspur FC | A- | 박스 침투·공격 기회 창출, 전시즌 대비 마무리 생산 감소. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 | 2 | 메수트 외질 | Mesut Özil | Arsenal FC | A- | 2선 플레이메이킹의 정확한 패스와 찬스 창출, 출전 결장. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 | 3 | 제시 린가드 | Jesse Lingard | Manchester United FC | B+ | 중앙 2선 전방 압박과 골·박스 침투에 좋은 개인 기여. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 | 4 | 제프 헨드릭 | Jeff Hendrick | Burnley FC | B0 | 중앙 전방 4-4-1-1 세컨드 스트라이커·압박 연결, CAM 역할 매핑. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
-| 5 | 후안 마타 | Juan Mata | Manchester United FC | B0 | 중앙과 우측 2선 로테이션에서 정확한 패스와 찬스 창출. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 
-### LW
+### LW — 11
 
-| Rank | 한글명 | Original | Club | Tier | Individual assessment rationale |
+| Rank | 한글명 | Original | Club | Tier | Individual grounds |
 |---:|---|---|---|---|---|
 | 1 | 에덴 아자르 | Eden Hazard | Chelsea FC | A+ | 왼쪽 인사이드 포워드로 높은 드리블 성공과 공격 창조. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 | 2 | 르로이 사네 | Leroy Sané | Manchester City | A+ | 왼쪽 드리블·어시스트와 날카로운 전진 침투로 리그 최고 측면 공격. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 | 3 | 손흥민 | Son Heung-min | Tottenham Hotspur FC | A+ | 왼쪽 전진·슈팅과 시즌 12골로 공격의 결정적 득점 자원. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 | 4 | 사디오 마네 | Sadio Mané | Liverpool FC | A- | 왼쪽 윙어로 전환해 스피드와 박스 침투·득점 기여. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 | 5 | 알렉시스 산체스 | Alexis Sánchez | Arsenal FC | A- | 시즌 전반기 아스널에서 공격 생산 후 겨울 이적, 평가 기간 제한. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
-| 6 | 앙토니 마르시알 | Anthony Martial | Manchester United FC | B+ | 왼쪽 공격에서 볼 운반·슈팅과 득점 기여. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
-| 7 | 알렉시스 산체스 | Alexis Sánchez | Manchester United FC | B0 | 겨울 합류 후 왼쪽에서 공격 연계 시도, 이적 직후 전력 대비 개인 효율 미흡. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
+| 6 | 마커스 래시퍼드 | Marcus Rashford | Manchester United FC | B+ | 좌우 윙과 최전방을 오간 속도·침투 기여, 주 포지션 검증 필요. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
+| 7 | 앙토니 마르시알 | Anthony Martial | Manchester United FC | B+ | 왼쪽 공격에서 볼 운반·슈팅과 득점 기여. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 | 8 | 알렉스 이워비 | Alex Iwobi | Arsenal FC | B0 | 왼쪽 인사이드 포워드의 볼 운반·연계, 득점 기여 제한. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 | 9 | 스콧 아필드 | Scott Arfield | Burnley FC | B0 | 왼쪽 미드필더의 활동량·전진 패스·수비 지원. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 | 10 | 로비 브레이디 | Robbie Brady | Burnley FC | B0 | 전반기 왼쪽 윙 주전급 출전 후 장기 부상. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 | 11 | 에릭 라멜라 | Erik Lamela | Tottenham Hotspur FC | B0 | 장기 결장 후 왼쪽과 오른쪽 2선으로 복귀해 로테이션. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 
-### RW
+### RW — 10
 
-| Rank | 한글명 | Original | Club | Tier | Individual assessment rationale |
+| Rank | 한글명 | Original | Club | Tier | Individual grounds |
 |---:|---|---|---|---|---|
 | 1 | 모하메드 살라 | Mohamed Salah | Liverpool FC | S | 리그 32골 득점왕과 득점 기록 경신, 폭발적 오른쪽 침투. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 | 2 | 라힘 스털링 | Raheem Sterling | Manchester City | A+ | 오른쪽 침투와 박스 내 움직임·18골로 뛰어난 공격 효율. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 | 3 | 크리스티안 에릭센 | Christian Eriksen | Tottenham Hotspur FC | A+ | 오른쪽으로 기재되지만 실제 중앙 전개에 많이 관여한 플레이메이커. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 | 4 | 윌리안 | Willian | Chelsea FC | A- | 2선 오른쪽에서 압박·드리블·골 기여로 개인 상승세. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
-| 5 | 마커스 래시퍼드 | Marcus Rashford | Manchester United FC | B+ | 좌우 윙과 최전방을 오간 속도·침투 기여, 주 포지션 검증 필요. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
-| 6 | 요한 베르그 그뷔드뮌손 | Jóhann Berg Guðmundsson | Burnley FC | B+ | 오른쪽 미드필더에서 크로스와 전진 기회 창출. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
-| 7 | 베르나르두 실바 | Bernardo Silva | Manchester City | B+ | 첫 시즌 오른쪽 2선 로테이션으로 연결·볼 운반 기여. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
+| 5 | 요한 베르그 그뷔드뮌손 | Jóhann Berg Guðmundsson | Burnley FC | B+ | 오른쪽 미드필더에서 크로스와 전진 기회 창출. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
+| 6 | 베르나르두 실바 | Bernardo Silva | Manchester City | B+ | 첫 시즌 오른쪽 2선 로테이션으로 연결·볼 운반 기여. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
+| 7 | 후안 마타 | Juan Mata | Manchester United FC | B0 | 오른쪽 측면과 중앙 이동 로테이션에서 정확한 패스와 찬스 창출. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 | 8 | 페드로 | Pedro | Chelsea FC | B0 | 공격 2선 침투·선발 로테이션에 기여하나 득점 효율 감소. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 | 9 | 헨리크 미키타리안 | Henrikh Mkhitaryan | Arsenal FC | B0 | 겨울 이적 후 오른쪽 2선에서 전진 패스·연계, 짧은 재적기간. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 | 10 | 애런 레넌 | Aaron Lennon | Burnley FC | B- | 겨울 영입 후 우측 측면 로테이션 기여. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 
-### ST
+### ST — 12
 
-| Rank | 한글명 | Original | Club | Tier | Individual assessment rationale |
+| Rank | 한글명 | Original | Club | Tier | Individual grounds |
 |---:|---|---|---|---|---|
 | 1 | 해리 케인 | Harry Kane | Tottenham Hotspur FC | S | 리그 30골로 최상위 득점과 압도적 슈팅 기여. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 | 2 | 세르히오 아궤로 | Sergio Agüero | Manchester City | A+ | 리그 21골과 특유의 박스 슈팅·침투 능력 유지. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
@@ -380,20 +380,18 @@ Source: https://www.footballsquads.co.uk/eng/2017-2018/faprem/burnley.htm
 | 10 | 애슐리 반스 | Ashley Barnes | Burnley FC | B+ | 다수 선발·강한 전방 경합과 골 기여, 실제 투톱 빈도 대조 필요. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 | 11 | 올리비에 지루 | Olivier Giroud | Chelsea FC | B0 | 겨울 합류해 제공권·포스트 플레이로 대체 선발. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 | 12 | 도미닉 솔랑케 | Dominic Solanke | Liverpool FC | B- | 공격수 로테이션 실전 선발을 소화했으나 득점 생산 미흡. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
-| 13 | 페르난도 요렌테 | Fernando Llorente | Tottenham Hotspur FC | C+ | 전방 제공권을 통한 대체 옵션, 리그 선발 적음. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
-| 14 | 즐라탄 이브라히모비치 | Zlatan Ibrahimović | Manchester United FC | C- | 장기 부상 후 소수 경기만 출전, 실제 후보 선발 자격 미달 가능. 2017-18 경기력 우선(개념적 가중치 60%), 2016-17(30%)·2015-16(10%) 기량 지속성 정성 비교. 이전 두 시즌 독립 검증은 대기. |
 
-## 6. World Class and League Top Class
+## 6. World Class and League Top Class complete sets
 
-World Class (S+A+): **19**. League Top Class (S+A++A0+A-): **46**, including all World Class.
+World Class: **19** S+A+; League Top Class: **46** S+A++A0+A- (includes all World Class).
 - S (4): 케빈 더브라위너 (Manchester City), 다비드 데 헤아 (Manchester United FC), 해리 케인 (Tottenham Hotspur FC), 모하메드 살라 (Liverpool FC)
 - A+ (15): 에데르송 (Manchester City), 니콜라스 오타멘디 (Manchester City), 카일 워커 (Manchester City), 페르난지뉴 (Manchester City), 다비드 실바 (Manchester City), 르로이 사네 (Manchester City), 라힘 스털링 (Manchester City), 세르히오 아궤로 (Manchester City), 얀 베르통언 (Tottenham Hotspur FC), 손흥민 (Tottenham Hotspur FC), 크리스티안 에릭센 (Tottenham Hotspur FC), 호베르투 피르미누 (Liverpool FC), 세사르 아스필리쿠에타 (Chelsea FC), 은골로 캉테 (Chelsea FC), 에덴 아자르 (Chelsea FC)
 - A0 (3): 위고 요리스 (Tottenham Hotspur FC), 무사 뎀벨레 (Tottenham Hotspur FC), 티보 쿠르투아 (Chelsea FC)
 - A- (24): 파비안 델프 (Manchester City), 일카이 귄도안 (Manchester City), 가브리에우 제주스 (Manchester City), 크리스 스몰링 (Manchester United FC), 네마냐 마티치 (Manchester United FC), 폴 포그바 (Manchester United FC), 로멜루 루카쿠 (Manchester United FC), 다빈손 산체스 (Tottenham Hotspur FC), 벤 데이비스 (Tottenham Hotspur FC), 델레 알리 (Tottenham Hotspur FC), 버질 판데이크 (Liverpool FC), 앤드루 로버트슨 (Liverpool FC), 사디오 마네 (Liverpool FC), 안드레아스 크리스텐센 (Chelsea FC), 마르코스 알론소 (Chelsea FC), 윌리안 (Chelsea FC), 로랑 코시엘니 (Arsenal FC), 애런 램지 (Arsenal FC), 메수트 외질 (Arsenal FC), 알렉시스 산체스 (Arsenal FC), 피에르에메리크 오바메양 (Arsenal FC), 닉 포프 (Burnley FC), 제임스 타코프스키 (Burnley FC), 벤 미 (Burnley FC)
 
-## 7. Proposed best XI — 4-2-3-1
+## 7. Proposed 4-2-3-1 Best XI — proposed_unapproved
 
-| POS | 한글명 | Original | Club original | Tier | Same-role league rank |
+| POS | 한글명 | Original | Club | Tier | Role rank |
 |---|---|---|---|---|---:|
 | GK | 다비드 데 헤아 | David de Gea | Manchester United FC | S | 1 |
 | CB | 얀 베르통언 | Jan Vertonghen | Tottenham Hotspur FC | A+ | 1 |
@@ -407,31 +405,28 @@ World Class (S+A+): **19**. League Top Class (S+A++A0+A-): **46**, including all
 | RW | 모하메드 살라 | Mohamed Salah | Liverpool FC | S | 1 |
 | ST | 해리 케인 | Harry Kane | Tottenham Hotspur FC | S | 1 |
 
-The single ST position excludes Agüero (21), Firmino (15) and Lukaku (16) in favor of top ranked Harry Kane (30); Salah's record 32-goal season is represented at RW, not forced into ST. The absence of another CM in the archive's 4-2-3-1 is a formation constraint and not evidence that Silva played worse.
+Single ST means Kane ahead of Agüero, Firmino and Lukaku. Salah stays RW; never shift him to ST to avoid crowded candidates. Nominal 4-2-3-1 excludes second central midfield creator, such as David Silva, due to fixed slot count.
 
-## 8. Distinct structural versus historical verification
+## 8. Independent historical audit status
 
-| Area | State |
+| Check | Verification state |
 |---|---|
-| 7 actual 2018-19 UEFA participants incl Burnley Q2 | Official UEFA validated |
-| 2017-18 20-team standing | Existing verified 20-row table preserved |
-| Season-wide 4-2-3-1 use count | Official Premier League 184/760 |
-| 11 representative players per club / positional backup cap | Structural script validation |
-| DOB | FootballSquads season first-source only; all independent second-source checks pending |
-| League starts/apps | **All pending**, stored null |
-| Individual 3-season statistical track record | **All pending** independent source audit |
-| 2017-18 majority match starting position | **All pending** individual lineup count |
-| Select PL goals/assists | 9 player goal totals and 1 assist total; remaining null |
-| Personal tiers / role ranks | Qualitative DRAFT, not independent verified evaluation |
-| Best XI | proposed_unapproved; role-top-ranked players selected |
-| CI, PR merge, Pages deployment | Must check separately in live GitHub |
-| Actual browser display | Must check separately; CI/deploy success does not prove correct UI |
+| Seven actual 2018/19 UEFA entrants | Official UEFA all phases and RSSSF |
+| Modal shape | Official PL 184 of 760 4-2-3-1 |
+| Seasonal candidate count, ID, one physical player, 11 starters, caps | Automated structure script |
+| DOB | Historical period squad first source; independent DOB second source pending for every player |
+| Exact PL starts and appearances | All stored null pending verification |
+| Majority played position | All unverified, conditional wingback/forward mappings annotated |
+| Complete 3-season individual historical stats | All pending |
+| Selected league goals and assists | Some from Premier League stats/awards; others null |
+| Individual S-D ratings, ranks and XI | Qualitative DRAFT and structurally coherent, user unapproved |
+| GitHub Actions, merge, Pages deployment and actual browser | Independently check after commit, not automatically implied |
 
-## 9. Critical pending review / caveats
+## 9. High-priority review and corrections
 
-- Strict position majority uncertain for Rashford, Eriksen, Son, Alexis Sánchez, Oxlade-Chamberlain, Can, Maitland-Niles, Monreal, Man City Danilo; requires match-by-match starters.
-- Chelsea 3 CB starters plus 2 wingbacks are represented as CB x3, LB and RB, while best league XI follows separate 4-2-3-1.
-- Burnley's 4-4-1-1 puts Jeff Hendrick second striker as archive CAM; Cork/Defour both flat CM roles, mapped nominal DM/CM in taxonomy.
-- Winter transfers: Alexis Sánchez Arsenal to Manchester United, Aubameyang/Dortmund to Arsenal, Mkhitaryan Manchester United to Arsenal, Giroud Arsenal to Chelsea; only played 2017-18 season at named club can count. Sanchez listed for Arsenal and Manchester United in original season squads—current roster independently requires duplicate check and resolution.
-- Backup GK and short-run elite injured players have borderline starting qualification and must not be retained to meet a cap.
-- Existing other season files and UI/emblem logic intentionally unchanged.
+- 2017/18 mid-season transfer: Alexis Sánchez appears at both Arsenal and Manchester United, but is entered only once in the unified 2017/18 shortlist (Arsenal longer spell). Arsenal role is LW. Man U short spell not separately duplicated.
+- Excluded marginal reserve eligibility: Romero, Carrick, Ibrahimović, Spurs Llorente; no quota padding.
+- Manchester United Rashford LW and Mata RW classification currently provisional; strong role mixing. Manchester City Danilo, Tottenham Eriksen, Liverpool Can/Oxlade-Chamberlain require match-start majority census.
+- Burnley Cork/Defour flat CM pair mapped DM/CM, Hendrick support forward mapped CAM; tactical notes preserve actual duties.
+- Chelsea actual 3CB plus two wingbacks vs league 4-2-3-1; Chelsea candidate eleven should not be treated as a fixed four-back squad.
+- Although goal totals from the official 2017-18 summary are used selectively, all other individual statistical fields remain unverified; store null rather than fabricating zeros.

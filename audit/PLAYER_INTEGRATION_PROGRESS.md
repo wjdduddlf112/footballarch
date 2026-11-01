@@ -505,3 +505,9 @@ Source TXT instruction adapted to the **2009-10 season only**. Candidate roster 
 - Club source/role risks: Burnley 4-4-1-1 (Cork DM/Hendrick CAM nominal), Chelsea 3CB wingbacks, Man City/Liverpool 4-3-3. Deadline winter player transfers require scrutiny; no score presumed numeric.
 - Changed only 2017-18 season JSON, seven research JSON, audit report, 2017-18 draft validator/workflow, progress log; all prior seasons and site theme, champion markers, crests maintained.
 - Record CI, PR merge, Pages and actual UI separately after execution.
+
+
+### PL 2017-18 candidate/roster follow-up correction
+- Removed 5 candidates with duplicate cross-club transfer or insufficient on-field starting-capable evidence: Man United Sánchez (Arsenal entry retained), Ibrahimović, Carrick, Romero and Tottenham Llorente.
+- Mapped Man United Rashford into LW and Mata into RW; actual position match-by-match audit remains pending. No player appears for multiple clubs in unified candidates.
+- Updated club-specific JSON, full player table, full ranks and validation script. Current unique player count 119, World Class 19, League Top Class 46.

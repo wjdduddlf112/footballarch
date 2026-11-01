@@ -43,5 +43,6 @@ for(const pos of order){
 assert.equal(d.bestXi.length,11);assert.equal(new Set(d.bestXi.map(x=>x.playerId)).size,11);
 for(const [pos,n] of Object.entries(slots))assert.equal(d.bestXi.filter(x=>x.position===pos).length,n,pos+" XI");
 for(const x of d.bestXi){const p=d.players.find(p=>p.id===x.playerId);assert(p,x.playerId);assert.equal(p.position,x.position);assert(p.rank<=(p.position==="CB"?2:1),p.id);}
+assert.equal(new Set(d.players.map(p=>p.nameOriginal.normalize("NFKC").toLowerCase())).size,d.players.length,"duplicate physical player across mid-season transfer");
 const report=readFileSync("audit/PLAYER_PREMIERLEAGUE_2017-18_DRAFT_REVIEW.md","utf8");assert(report.includes("2015-16")&&report.includes("Burnley")&&report.includes("184")&&report.includes("proposed_unapproved"));
 console.log("PASS: PL 2017-18 STRUCTURAL ONLY: 7 actual 2018-19 UEFA entrants incl Burnley Q2, "+d.players.length+" candidate DRAFT ratings and ranks, 11 starters/team, backups cap, valid XI; independent historical audits pending.");
