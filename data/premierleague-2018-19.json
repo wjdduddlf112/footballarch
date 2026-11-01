@@ -4,11 +4,11 @@
     "league": "Premier League",
     "season": "2018-19",
     "qualifyingSeason": "2019-20",
-    "status": "standings_only",
-    "label": "League Table",
-    "standingsOnly": true,
+    "status": "draft",
+    "label": "Premier League 2018-19 · 7 UEFA entrants · Player DRAFT",
+    "standingsOnly": false,
     "standingsVerified": true,
-    "europeanQualificationVerified": false,
+    "europeanQualificationVerified": true,
     "assessmentStart": "2016-17",
     "assessmentEnd": "2018-19",
     "sourceMatches": "https://github.com/openfootball/england/blob/master/2018-19/1-premierleague.txt",
@@ -19,10 +19,58 @@
     "lastReview": "2026-10-29",
     "standingsSource": "https://www.rsssf.org/tablese/eng2019.html",
     "standingsCrossChecked": "20/20 independent RSSSF final table (rank, P, W, D, L, GF, GA, pts)",
-    "europeanQualificationReview": "curated historical entrant list; individual UEFA competition record verification pending",
+    "europeanQualificationReview": "Official PL 29 May 2019 / UEFA: 4 UCL (City Liverpool Chelsea Spurs), 3 UEL (Arsenal United Wolves from Q2).",
     "europeanQualificationSources": [
-      "https://www.rsssf.org/tablese/eng2019.html"
-    ]
+      "https://www.premierleague.com/en/news/1173904",
+      "https://www.uefa.com/uefachampionsleague/history/seasons/2020/clubs/",
+      "https://www.uefa.com/uefaeuropaleague/news/0253-0e99cc9c58de-5fe3b8b36c26-1000--2019-20-participants/"
+    ],
+    "formation": "4-3-3",
+    "formationNote": "Official PL historical tactical report: 4-3-3 160/760, 4-2-3-1 134, 4-4-2 98. Site 4-3-3 CAM slot treated as advanced central 8, not automatically true #10.",
+    "candidateCount": 122,
+    "playerAssessmentStatus": "qualitative_draft_full_individual_match_position_and_three_year_audit_pending",
+    "playerCandidateReview": {
+      "status": "draft_unapproved",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightConcept": [
+        0.1,
+        0.3,
+        0.6
+      ],
+      "formationByClub": {
+        "mancity": "4-3-3",
+        "liverpool": "4-3-3",
+        "chelsea": "4-3-3",
+        "tottenham": "4-2-3-1 / diamond",
+        "arsenal": "4-2-3-1 / 3-4-2-1",
+        "manutd": "4-3-3 / 4-2-3-1",
+        "wolves": "3-5-2"
+      },
+      "leagueStartsConfirmed": 0,
+      "leagueStartsPending": 122,
+      "majorityPositionVerified": 0,
+      "independentThreeYearComparisonsVerified": 0,
+      "dobSecondSourceVerified": 0,
+      "warnings": [
+        "DOB single period roster source only",
+        "Individual league starts/appearances unknown and null",
+        "Complete 3-year personal numerical audit pending",
+        "4-3-3 CAM slot is advanced CM",
+        "Wolves 3 CB 2 ST in actual 3-5-2",
+        "Premier League 2018-19 player majority role requires match census"
+      ]
+    },
+    "bestXiReview": {
+      "status": "proposed_unapproved",
+      "formation": "4-3-3",
+      "formationBasis": "PL retrospective 4-3-3 160 team-starts",
+      "source": "https://www.premierleague.com/en/news/1658845",
+      "exceptionReason": "CAM means advanced CM no.8; Sterling/Salah both RW so one excluded from XI; Wolves actual 3-5-2."
+    }
   },
   "clubs": [
     {
@@ -202,64 +250,71 @@
     {
       "club": "mancity",
       "competition": "UCL",
-      "route": "League/cup allocation",
-      "status": "review",
+      "route": "PL 1위",
+      "status": "actual_2019_20_entrant_official_crosschecked",
       "sources": [
-        "https://www.rsssf.org/tablese/eng2019.html"
+        "https://www.premierleague.com/en/news/1173904",
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2020/clubs/"
       ]
     },
     {
       "club": "liverpool",
       "competition": "UCL",
-      "route": "League/cup allocation",
-      "status": "review",
+      "route": "PL 2위·UCL 우승",
+      "status": "actual_2019_20_entrant_official_crosschecked",
       "sources": [
-        "https://www.rsssf.org/tablese/eng2019.html"
+        "https://www.premierleague.com/en/news/1173904",
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2020/clubs/"
       ]
     },
     {
       "club": "chelsea",
       "competition": "UCL",
-      "route": "League/cup allocation",
-      "status": "review",
+      "route": "PL 3위·UEL 우승",
+      "status": "actual_2019_20_entrant_official_crosschecked",
       "sources": [
-        "https://www.rsssf.org/tablese/eng2019.html"
+        "https://www.premierleague.com/en/news/1173904",
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2020/clubs/"
       ]
     },
     {
       "club": "tottenham",
       "competition": "UCL",
-      "route": "League/cup allocation",
-      "status": "review",
+      "route": "PL 4위",
+      "status": "actual_2019_20_entrant_official_crosschecked",
       "sources": [
-        "https://www.rsssf.org/tablese/eng2019.html"
+        "https://www.premierleague.com/en/news/1173904",
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2020/clubs/"
       ]
     },
     {
       "club": "arsenal",
       "competition": "UEL",
-      "route": "League/cup allocation",
-      "status": "review",
+      "route": "PL 5위",
+      "status": "actual_2019_20_entrant_official_crosschecked",
       "sources": [
-        "https://www.rsssf.org/tablese/eng2019.html"
+        "https://www.premierleague.com/en/news/1173904",
+        "https://www.uefa.com/uefaeuropaleague/news/0253-0e99cc9c58de-5fe3b8b36c26-1000--2019-20-participants/"
       ]
     },
     {
       "club": "manutd",
       "competition": "UEL",
-      "route": "League/cup allocation",
-      "status": "review",
+      "route": "PL 6위",
+      "status": "actual_2019_20_entrant_official_crosschecked",
       "sources": [
-        "https://www.rsssf.org/tablese/eng2019.html"
+        "https://www.premierleague.com/en/news/1173904",
+        "https://www.uefa.com/uefaeuropaleague/news/0253-0e99cc9c58de-5fe3b8b36c26-1000--2019-20-participants/"
       ]
     },
     {
       "club": "wolves",
       "competition": "UEL",
-      "route": "League/cup allocation",
-      "status": "review",
+      "route": "PL 7위·컵 출전권 재배분, UEL 2차 예선",
+      "status": "actual_2019_20_entrant_official_crosschecked",
       "sources": [
-        "https://www.rsssf.org/tablese/eng2019.html"
+        "https://www.premierleague.com/en/news/1173904",
+        "https://www.uefa.com/uefaeuropaleague/news/0253-0e99cc9c58de-5fe3b8b36c26-1000--2019-20-participants/"
       ]
     }
   ],
@@ -545,6 +600,5941 @@
       "outcome": "relegated"
     }
   ],
-  "players": [],
-  "bestXi": []
+  "players": [
+    {
+      "id": "pl-2018-19-mancity-01",
+      "club": "mancity",
+      "position": "GK",
+      "role": "starter",
+      "name": "Ederson",
+      "nameOriginal": "Ederson",
+      "nameKo": "에데르송",
+      "born": "1993-08-17",
+      "tier": "A+",
+      "clubNameOriginal": "Manchester City",
+      "season": "2018-19",
+      "assessmentRationale": "후방 패스와 역습 방어. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 2,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "GK 2/9 잠정 순위: 후방 패스와 역습 방어. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/mancity.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-mancity-02",
+      "club": "mancity",
+      "position": "CB",
+      "role": "starter",
+      "name": "Aymeric Laporte",
+      "nameOriginal": "Aymeric Laporte",
+      "nameKo": "에므리크 라포르트",
+      "born": "1994-05-27",
+      "tier": "A+",
+      "clubNameOriginal": "Manchester City",
+      "season": "2018-19",
+      "assessmentRationale": "전진 패스와 대인 수비. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 2,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "CB 2/21 잠정 순위: 전진 패스와 대인 수비. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/mancity.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-mancity-03",
+      "club": "mancity",
+      "position": "CB",
+      "role": "starter",
+      "name": "John Stones",
+      "nameOriginal": "John Stones",
+      "nameKo": "존 스톤스",
+      "born": "1994-05-28",
+      "tier": "B+",
+      "clubNameOriginal": "Manchester City",
+      "season": "2018-19",
+      "assessmentRationale": "빌드업과 수비라인 유지. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 11,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "CB 11/21 잠정 순위: 빌드업과 수비라인 유지. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/mancity.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-mancity-04",
+      "club": "mancity",
+      "position": "CB",
+      "role": "backup",
+      "name": "Vincent Kompany",
+      "nameOriginal": "Vincent Kompany",
+      "nameKo": "뱅상 콤파니",
+      "born": "1986-04-10",
+      "tier": "B+",
+      "clubNameOriginal": "Manchester City",
+      "season": "2018-19",
+      "assessmentRationale": "부상 복귀 후 수비 지휘. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 15,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "CB 15/21 잠정 순위: 부상 복귀 후 수비 지휘. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/mancity.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-mancity-05",
+      "club": "mancity",
+      "position": "LB",
+      "role": "starter",
+      "name": "Oleksandr Zinchenko",
+      "nameOriginal": "Oleksandr Zinchenko",
+      "nameKo": "올렉산드르 진첸코",
+      "born": "1996-12-15",
+      "tier": "B+",
+      "clubNameOriginal": "Manchester City",
+      "season": "2018-19",
+      "assessmentRationale": "인버티드 풀백 패스 전개. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 6,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "LB 6/12 잠정 순위: 인버티드 풀백 패스 전개. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/mancity.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-mancity-06",
+      "club": "mancity",
+      "position": "LB",
+      "role": "backup",
+      "name": "Benjamin Mendy",
+      "nameOriginal": "Benjamin Mendy",
+      "nameKo": "벵자맹 멘디",
+      "born": "1994-07-17",
+      "tier": "B-",
+      "clubNameOriginal": "Manchester City",
+      "season": "2018-19",
+      "assessmentRationale": "부상으로 단속적 출전. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 11,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "LB 11/12 잠정 순위: 부상으로 단속적 출전. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/mancity.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-mancity-07",
+      "club": "mancity",
+      "position": "RB",
+      "role": "starter",
+      "name": "Kyle Walker",
+      "nameOriginal": "Kyle Walker",
+      "nameKo": "카일 워커",
+      "born": "1990-05-28",
+      "tier": "A-",
+      "clubNameOriginal": "Manchester City",
+      "season": "2018-19",
+      "assessmentRationale": "우측 회복 속도와 커버. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 3,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "RB 3/11 잠정 순위: 우측 회복 속도와 커버. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/mancity.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-mancity-08",
+      "club": "mancity",
+      "position": "RB",
+      "role": "backup",
+      "name": "Danilo",
+      "nameOriginal": "Danilo",
+      "nameKo": "다닐루",
+      "born": "1991-07-15",
+      "tier": "B",
+      "clubNameOriginal": "Manchester City",
+      "season": "2018-19",
+      "assessmentRationale": "양쪽 풀백 선발 로테이션. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 7,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "RB 7/11 잠정 순위: 양쪽 풀백 선발 로테이션. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/mancity.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-mancity-09",
+      "club": "mancity",
+      "position": "DM",
+      "role": "starter",
+      "name": "Fernandinho",
+      "nameOriginal": "Fernandinho",
+      "nameKo": "페르난지뉴",
+      "born": "1985-05-04",
+      "tier": "A+",
+      "clubNameOriginal": "Manchester City",
+      "season": "2018-19",
+      "assessmentRationale": "단일 피벗과 역습 차단. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 1,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "DM 1/8 잠정 순위: 단일 피벗과 역습 차단. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/mancity.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-mancity-10",
+      "club": "mancity",
+      "position": "CM",
+      "role": "starter",
+      "name": "David Silva",
+      "nameOriginal": "David Silva",
+      "nameKo": "다비드 실바",
+      "born": "1986-01-08",
+      "tier": "A+",
+      "clubNameOriginal": "Manchester City",
+      "season": "2018-19",
+      "assessmentRationale": "왼쪽 8번 압박 탈출. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 1,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "CM 1/15 잠정 순위: 왼쪽 8번 압박 탈출. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/mancity.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-mancity-11",
+      "club": "mancity",
+      "position": "CM",
+      "role": "backup",
+      "name": "İlkay Gündoğan",
+      "nameOriginal": "İlkay Gündoğan",
+      "nameKo": "일카이 귄도안",
+      "born": "1990-10-24",
+      "tier": "A-",
+      "clubNameOriginal": "Manchester City",
+      "season": "2018-19",
+      "assessmentRationale": "중원 패스와 득점. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 4,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "CM 4/15 잠정 순위: 중원 패스와 득점. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/mancity.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-mancity-12",
+      "club": "mancity",
+      "position": "CAM",
+      "role": "starter",
+      "name": "Bernardo Silva",
+      "nameOriginal": "Bernardo Silva",
+      "nameKo": "베르나르두 실바",
+      "born": "1994-08-10",
+      "tier": "A+",
+      "clubNameOriginal": "Manchester City",
+      "season": "2018-19",
+      "assessmentRationale": "전진 8번 압박·활동량. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 1,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "CAM 1/12 잠정 순위: 전진 8번 압박·활동량. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/mancity.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-mancity-13",
+      "club": "mancity",
+      "position": "CAM",
+      "role": "backup",
+      "name": "Kevin De Bruyne",
+      "nameOriginal": "Kevin De Bruyne",
+      "nameKo": "케빈 더브라위너",
+      "born": "1991-06-28",
+      "tier": "B+",
+      "clubNameOriginal": "Manchester City",
+      "season": "2018-19",
+      "assessmentRationale": "부상 후 창조적 패스. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 7,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "CAM 7/12 잠정 순위: 부상 후 창조적 패스. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/mancity.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-mancity-14",
+      "club": "mancity",
+      "position": "LW",
+      "role": "starter",
+      "name": "Leroy Sané",
+      "nameOriginal": "Leroy Sané",
+      "nameKo": "르로이 사네",
+      "born": "1996-01-11",
+      "tier": "A-",
+      "clubNameOriginal": "Manchester City",
+      "season": "2018-19",
+      "assessmentRationale": "좌측 드리블·찬스 창출. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 4,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "LW 4/8 잠정 순위: 좌측 드리블·찬스 창출. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/mancity.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-mancity-15",
+      "club": "mancity",
+      "position": "RW",
+      "role": "starter",
+      "name": "Raheem Sterling",
+      "nameOriginal": "Raheem Sterling",
+      "nameKo": "라힘 스털링",
+      "born": "1994-12-08",
+      "tier": "S",
+      "clubNameOriginal": "Manchester City",
+      "season": "2018-19",
+      "assessmentRationale": "득점·도움과 박스 침투. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 1,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "RW 1/12 잠정 순위: 득점·도움과 박스 침투. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/mancity.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-mancity-16",
+      "club": "mancity",
+      "position": "RW",
+      "role": "backup",
+      "name": "Riyad Mahrez",
+      "nameOriginal": "Riyad Mahrez",
+      "nameKo": "리야드 마레즈",
+      "born": "1991-02-21",
+      "tier": "B+",
+      "clubNameOriginal": "Manchester City",
+      "season": "2018-19",
+      "assessmentRationale": "오른쪽 드리블·슈팅. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 5,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "RW 5/12 잠정 순위: 오른쪽 드리블·슈팅. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/mancity.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-mancity-17",
+      "club": "mancity",
+      "position": "ST",
+      "role": "starter",
+      "name": "Sergio Agüero",
+      "nameOriginal": "Sergio Agüero",
+      "nameKo": "세르히오 아궤로",
+      "born": "1988-06-02",
+      "tier": "A+",
+      "clubNameOriginal": "Manchester City",
+      "season": "2018-19",
+      "assessmentRationale": "21골과 최상급 마무리. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 1,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "ST 1/14 잠정 순위: 21골과 최상급 마무리. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/mancity.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-mancity-18",
+      "club": "mancity",
+      "position": "ST",
+      "role": "backup",
+      "name": "Gabriel Jesus",
+      "nameOriginal": "Gabriel Jesus",
+      "nameKo": "가브리에우 제주스",
+      "born": "1997-04-03",
+      "tier": "B+",
+      "clubNameOriginal": "Manchester City",
+      "season": "2018-19",
+      "assessmentRationale": "압박과 중앙 공격수 교대. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 8,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "ST 8/14 잠정 순위: 압박과 중앙 공격수 교대. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/mancity.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-liverpool-01",
+      "club": "liverpool",
+      "position": "GK",
+      "role": "starter",
+      "name": "Alisson Becker",
+      "nameOriginal": "Alisson Becker",
+      "nameKo": "알리송 베케르",
+      "born": "1992-10-02",
+      "tier": "A+",
+      "clubNameOriginal": "Liverpool FC",
+      "season": "2018-19",
+      "assessmentRationale": "21클린시트·선방 안정. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 1,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "GK 1/9 잠정 순위: 21클린시트·선방 안정. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/liverpool.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-liverpool-02",
+      "club": "liverpool",
+      "position": "CB",
+      "role": "starter",
+      "name": "Virgil van Dijk",
+      "nameOriginal": "Virgil van Dijk",
+      "nameKo": "버질 판데이크",
+      "born": "1991-07-08",
+      "tier": "S",
+      "clubNameOriginal": "Liverpool FC",
+      "season": "2018-19",
+      "assessmentRationale": "최상급 수비 위치선정·제공권. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 1,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "CB 1/21 잠정 순위: 최상급 수비 위치선정·제공권. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/liverpool.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-liverpool-03",
+      "club": "liverpool",
+      "position": "CB",
+      "role": "starter",
+      "name": "Joël Matip",
+      "nameOriginal": "Joël Matip",
+      "nameKo": "조엘 마티프",
+      "born": "1991-08-08",
+      "tier": "A-",
+      "clubNameOriginal": "Liverpool FC",
+      "season": "2018-19",
+      "assessmentRationale": "후반기 수비 안정과 전진. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 7,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "CB 7/21 잠정 순위: 후반기 수비 안정과 전진. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/liverpool.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-liverpool-04",
+      "club": "liverpool",
+      "position": "CB",
+      "role": "backup",
+      "name": "Joe Gomez",
+      "nameOriginal": "Joe Gomez",
+      "nameKo": "조 고메즈",
+      "born": "1997-05-23",
+      "tier": "B+",
+      "clubNameOriginal": "Liverpool FC",
+      "season": "2018-19",
+      "assessmentRationale": "부상 전 넓은 공간 커버. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 10,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "CB 10/21 잠정 순위: 부상 전 넓은 공간 커버. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/liverpool.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-liverpool-05",
+      "club": "liverpool",
+      "position": "LB",
+      "role": "starter",
+      "name": "Andrew Robertson",
+      "nameOriginal": "Andrew Robertson",
+      "nameKo": "앤드루 로버트슨",
+      "born": "1994-03-11",
+      "tier": "A+",
+      "clubNameOriginal": "Liverpool FC",
+      "season": "2018-19",
+      "assessmentRationale": "높은 크로스·도움·수비. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 1,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "LB 1/12 잠정 순위: 높은 크로스·도움·수비. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/liverpool.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-liverpool-06",
+      "club": "liverpool",
+      "position": "RB",
+      "role": "starter",
+      "name": "Trent Alexander-Arnold",
+      "nameOriginal": "Trent Alexander-Arnold",
+      "nameKo": "트렌트 알렉산더아널드",
+      "born": "1998-10-07",
+      "tier": "A+",
+      "clubNameOriginal": "Liverpool FC",
+      "season": "2018-19",
+      "assessmentRationale": "우측 높은 도움 생산. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 1,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "RB 1/11 잠정 순위: 우측 높은 도움 생산. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/liverpool.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-liverpool-07",
+      "club": "liverpool",
+      "position": "DM",
+      "role": "starter",
+      "name": "Fabinho",
+      "nameOriginal": "Fabinho",
+      "nameKo": "파비뉴",
+      "born": "1993-10-23",
+      "tier": "A-",
+      "clubNameOriginal": "Liverpool FC",
+      "season": "2018-19",
+      "assessmentRationale": "수미 자리 장악과 역습 차단. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 2,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "DM 2/8 잠정 순위: 수미 자리 장악과 역습 차단. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/liverpool.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-liverpool-08",
+      "club": "liverpool",
+      "position": "CM",
+      "role": "starter",
+      "name": "Georginio Wijnaldum",
+      "nameOriginal": "Georginio Wijnaldum",
+      "nameKo": "조르지니오 베이날뒴",
+      "born": "1990-11-11",
+      "tier": "A-",
+      "clubNameOriginal": "Liverpool FC",
+      "season": "2018-19",
+      "assessmentRationale": "중원 압박 탈출. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 3,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "CM 3/15 잠정 순위: 중원 압박 탈출. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/liverpool.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-liverpool-09",
+      "club": "liverpool",
+      "position": "CM",
+      "role": "backup",
+      "name": "James Milner",
+      "nameOriginal": "James Milner",
+      "nameKo": "제임스 밀너",
+      "born": "1986-01-04",
+      "tier": "B+",
+      "clubNameOriginal": "Liverpool FC",
+      "season": "2018-19",
+      "assessmentRationale": "중원 로테이션 압박·패스. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 9,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "CM 9/15 잠정 순위: 중원 로테이션 압박·패스. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/liverpool.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-liverpool-10",
+      "club": "liverpool",
+      "position": "CAM",
+      "role": "starter",
+      "name": "Jordan Henderson",
+      "nameOriginal": "Jordan Henderson",
+      "nameKo": "조던 헨더슨",
+      "born": "1990-06-17",
+      "tier": "B+",
+      "clubNameOriginal": "Liverpool FC",
+      "season": "2018-19",
+      "assessmentRationale": "시즌 후반 전진 8번. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 6,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "CAM 6/12 잠정 순위: 시즌 후반 전진 8번. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/liverpool.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-liverpool-11",
+      "club": "liverpool",
+      "position": "CAM",
+      "role": "backup",
+      "name": "Naby Keïta",
+      "nameOriginal": "Naby Keïta",
+      "nameKo": "나비 케이타",
+      "born": "1995-02-10",
+      "tier": "B",
+      "clubNameOriginal": "Liverpool FC",
+      "season": "2018-19",
+      "assessmentRationale": "전진 볼 운반과 부상. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 10,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "CAM 10/12 잠정 순위: 전진 볼 운반과 부상. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/liverpool.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-liverpool-12",
+      "club": "liverpool",
+      "position": "LW",
+      "role": "starter",
+      "name": "Sadio Mané",
+      "nameOriginal": "Sadio Mané",
+      "nameKo": "사디오 마네",
+      "born": "1992-04-10",
+      "tier": "A+",
+      "clubNameOriginal": "Liverpool FC",
+      "season": "2018-19",
+      "assessmentRationale": "22골 득점왕 공동. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": 22,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 2,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "LW 2/8 잠정 순위: 22골 득점왕 공동. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/liverpool.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-liverpool-13",
+      "club": "liverpool",
+      "position": "RW",
+      "role": "starter",
+      "name": "Mohamed Salah",
+      "nameOriginal": "Mohamed Salah",
+      "nameKo": "모하메드 살라",
+      "born": "1992-06-15",
+      "tier": "S",
+      "clubNameOriginal": "Liverpool FC",
+      "season": "2018-19",
+      "assessmentRationale": "22골 공동 득점왕. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": 22,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 2,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "RW 2/12 잠정 순위: 22골 공동 득점왕. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/liverpool.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-liverpool-14",
+      "club": "liverpool",
+      "position": "RW",
+      "role": "backup",
+      "name": "Xherdan Shaqiri",
+      "nameOriginal": "Xherdan Shaqiri",
+      "nameKo": "제르단 샤키리",
+      "born": "1991-10-10",
+      "tier": "B+",
+      "clubNameOriginal": "Liverpool FC",
+      "season": "2018-19",
+      "assessmentRationale": "우측 공격 로테이션. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 7,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "RW 7/12 잠정 순위: 우측 공격 로테이션. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/liverpool.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-liverpool-15",
+      "club": "liverpool",
+      "position": "ST",
+      "role": "starter",
+      "name": "Roberto Firmino",
+      "nameOriginal": "Roberto Firmino",
+      "nameKo": "호베르투 피르미누",
+      "born": "1991-10-02",
+      "tier": "A-",
+      "clubNameOriginal": "Liverpool FC",
+      "season": "2018-19",
+      "assessmentRationale": "전방 압박과 공격 연결. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 6,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "ST 6/14 잠정 순위: 전방 압박과 공격 연결. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/liverpool.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-liverpool-16",
+      "club": "liverpool",
+      "position": "ST",
+      "role": "backup",
+      "name": "Daniel Sturridge",
+      "nameOriginal": "Daniel Sturridge",
+      "nameKo": "대니얼 스터리지",
+      "born": "1989-09-01",
+      "tier": "B-",
+      "clubNameOriginal": "Liverpool FC",
+      "season": "2018-19",
+      "assessmentRationale": "공격수 로테이션 마무리. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 12,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "ST 12/14 잠정 순위: 공격수 로테이션 마무리. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/liverpool.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-chelsea-01",
+      "club": "chelsea",
+      "position": "GK",
+      "role": "starter",
+      "name": "Kepa Arrizabalaga",
+      "nameOriginal": "Kepa Arrizabalaga",
+      "nameKo": "케파 아리사발라가",
+      "born": "1994-10-03",
+      "tier": "B+",
+      "clubNameOriginal": "Chelsea FC",
+      "season": "2018-19",
+      "assessmentRationale": "첫 시즌 골문과 후방 빌드업. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 6,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "GK 6/9 잠정 순위: 첫 시즌 골문과 후방 빌드업. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/chelsea.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-chelsea-02",
+      "club": "chelsea",
+      "position": "CB",
+      "role": "starter",
+      "name": "David Luiz",
+      "nameOriginal": "David Luiz",
+      "nameKo": "다비드 루이스",
+      "born": "1987-04-22",
+      "tier": "A-",
+      "clubNameOriginal": "Chelsea FC",
+      "season": "2018-19",
+      "assessmentRationale": "중앙 수비 롱패스·커버. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 6,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "CB 6/21 잠정 순위: 중앙 수비 롱패스·커버. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/chelsea.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-chelsea-03",
+      "club": "chelsea",
+      "position": "CB",
+      "role": "starter",
+      "name": "Antonio Rüdiger",
+      "nameOriginal": "Antonio Rüdiger",
+      "nameKo": "안토니오 뤼디거",
+      "born": "1993-03-03",
+      "tier": "A-",
+      "clubNameOriginal": "Chelsea FC",
+      "season": "2018-19",
+      "assessmentRationale": "수비 커버와 대인 경합. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 5,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "CB 5/21 잠정 순위: 수비 커버와 대인 경합. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/chelsea.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-chelsea-04",
+      "club": "chelsea",
+      "position": "CB",
+      "role": "backup",
+      "name": "Andreas Christensen",
+      "nameOriginal": "Andreas Christensen",
+      "nameKo": "안드레아스 크리스텐센",
+      "born": "1996-04-10",
+      "tier": "B-",
+      "clubNameOriginal": "Chelsea FC",
+      "season": "2018-19",
+      "assessmentRationale": "로테이션 주로 유럽대항전. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 19,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "CB 19/21 잠정 순위: 로테이션 주로 유럽대항전. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/chelsea.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-chelsea-05",
+      "club": "chelsea",
+      "position": "LB",
+      "role": "starter",
+      "name": "Marcos Alonso",
+      "nameOriginal": "Marcos Alonso",
+      "nameKo": "마르코스 알론소",
+      "born": "1990-12-28",
+      "tier": "B+",
+      "clubNameOriginal": "Chelsea FC",
+      "season": "2018-19",
+      "assessmentRationale": "좌측 전진과 크로스. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 5,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "LB 5/12 잠정 순위: 좌측 전진과 크로스. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/chelsea.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-chelsea-06",
+      "club": "chelsea",
+      "position": "LB",
+      "role": "backup",
+      "name": "Emerson Palmieri",
+      "nameOriginal": "Emerson Palmieri",
+      "nameKo": "에메르송 팔미에리",
+      "born": "1994-08-03",
+      "tier": "B",
+      "clubNameOriginal": "Chelsea FC",
+      "season": "2018-19",
+      "assessmentRationale": "시즌 후반 좌측 로테이션. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 9,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "LB 9/12 잠정 순위: 시즌 후반 좌측 로테이션. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/chelsea.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-chelsea-07",
+      "club": "chelsea",
+      "position": "RB",
+      "role": "starter",
+      "name": "César Azpilicueta",
+      "nameOriginal": "César Azpilicueta",
+      "nameKo": "세사르 아스필리쿠에타",
+      "born": "1989-08-28",
+      "tier": "A-",
+      "clubNameOriginal": "Chelsea FC",
+      "season": "2018-19",
+      "assessmentRationale": "우측 수비 조직과 꾸준함. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 2,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "RB 2/11 잠정 순위: 우측 수비 조직과 꾸준함. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/chelsea.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-chelsea-08",
+      "club": "chelsea",
+      "position": "DM",
+      "role": "starter",
+      "name": "Jorginho",
+      "nameOriginal": "Jorginho",
+      "nameKo": "조르지뉴",
+      "born": "1991-12-20",
+      "tier": "B+",
+      "clubNameOriginal": "Chelsea FC",
+      "season": "2018-19",
+      "assessmentRationale": "점유 패스·수비 전환 약점. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 5,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "DM 5/8 잠정 순위: 점유 패스·수비 전환 약점. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/chelsea.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-chelsea-09",
+      "club": "chelsea",
+      "position": "CM",
+      "role": "starter",
+      "name": "N'Golo Kanté",
+      "nameOriginal": "N'Golo Kanté",
+      "nameKo": "은골로 캉테",
+      "born": "1991-03-29",
+      "tier": "A",
+      "clubNameOriginal": "Chelsea FC",
+      "season": "2018-19",
+      "assessmentRationale": "중앙 8번 전방 압박과 회수. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 2,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "CM 2/15 잠정 순위: 중앙 8번 전방 압박과 회수. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/chelsea.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-chelsea-10",
+      "club": "chelsea",
+      "position": "CM",
+      "role": "backup",
+      "name": "Ruben Loftus-Cheek",
+      "nameOriginal": "Ruben Loftus-Cheek",
+      "nameKo": "루번 로프터스치크",
+      "born": "1996-01-23",
+      "tier": "B+",
+      "clubNameOriginal": "Chelsea FC",
+      "season": "2018-19",
+      "assessmentRationale": "침투·득점·부상. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 11,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "CM 11/15 잠정 순위: 침투·득점·부상. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/chelsea.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-chelsea-11",
+      "club": "chelsea",
+      "position": "CAM",
+      "role": "starter",
+      "name": "Mateo Kovačić",
+      "nameOriginal": "Mateo Kovačić",
+      "nameKo": "마테오 코바치치",
+      "born": "1994-05-06",
+      "tier": "B+",
+      "clubNameOriginal": "Chelsea FC",
+      "season": "2018-19",
+      "assessmentRationale": "왼쪽 8번 탈압박. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 8,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "CAM 8/12 잠정 순위: 왼쪽 8번 탈압박. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/chelsea.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-chelsea-12",
+      "club": "chelsea",
+      "position": "CAM",
+      "role": "backup",
+      "name": "Ross Barkley",
+      "nameOriginal": "Ross Barkley",
+      "nameKo": "로스 바클리",
+      "born": "1993-12-05",
+      "tier": "B",
+      "clubNameOriginal": "Chelsea FC",
+      "season": "2018-19",
+      "assessmentRationale": "중원 로테이션·연계. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 11,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "CAM 11/12 잠정 순위: 중원 로테이션·연계. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/chelsea.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-chelsea-13",
+      "club": "chelsea",
+      "position": "LW",
+      "role": "starter",
+      "name": "Eden Hazard",
+      "nameOriginal": "Eden Hazard",
+      "nameKo": "에덴 아자르",
+      "born": "1991-01-07",
+      "tier": "S",
+      "clubNameOriginal": "Chelsea FC",
+      "season": "2018-19",
+      "assessmentRationale": "16골 15도움 공격 창조. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": 16,
+      "leagueAssists": 15,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 1,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "LW 1/8 잠정 순위: 16골 15도움 공격 창조. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/chelsea.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-chelsea-14",
+      "club": "chelsea",
+      "position": "RW",
+      "role": "starter",
+      "name": "Willian",
+      "nameOriginal": "Willian",
+      "nameKo": "윌리안",
+      "born": "1988-08-09",
+      "tier": "B+",
+      "clubNameOriginal": "Chelsea FC",
+      "season": "2018-19",
+      "assessmentRationale": "오른쪽 찬스 창출. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 6,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "RW 6/12 잠정 순위: 오른쪽 찬스 창출. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/chelsea.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-chelsea-15",
+      "club": "chelsea",
+      "position": "RW",
+      "role": "backup",
+      "name": "Pedro",
+      "nameOriginal": "Pedro",
+      "nameKo": "페드로",
+      "born": "1987-07-28",
+      "tier": "B+",
+      "clubNameOriginal": "Chelsea FC",
+      "season": "2018-19",
+      "assessmentRationale": "박스 침투·득점. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 4,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "RW 4/12 잠정 순위: 박스 침투·득점. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/chelsea.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-chelsea-16",
+      "club": "chelsea",
+      "position": "ST",
+      "role": "starter",
+      "name": "Gonzalo Higuaín",
+      "nameOriginal": "Gonzalo Higuaín",
+      "nameKo": "곤살로 이과인",
+      "born": "1987-12-10",
+      "tier": "B-",
+      "clubNameOriginal": "Chelsea FC",
+      "season": "2018-19",
+      "assessmentRationale": "겨울 합류 뒤 중앙 선발. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 14,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "ST 14/14 잠정 순위: 겨울 합류 뒤 중앙 선발. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/chelsea.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-chelsea-17",
+      "club": "chelsea",
+      "position": "ST",
+      "role": "backup",
+      "name": "Álvaro Morata",
+      "nameOriginal": "Álvaro Morata",
+      "nameKo": "알바로 모라타",
+      "born": "1992-10-23",
+      "tier": "B-",
+      "clubNameOriginal": "Chelsea FC",
+      "season": "2018-19",
+      "assessmentRationale": "겨울 이적 전 중앙 선발. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 11,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "ST 11/14 잠정 순위: 겨울 이적 전 중앙 선발. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/chelsea.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-tottenham-01",
+      "club": "tottenham",
+      "position": "GK",
+      "role": "starter",
+      "name": "Hugo Lloris",
+      "nameOriginal": "Hugo Lloris",
+      "nameKo": "위고 요리스",
+      "born": "1986-12-26",
+      "tier": "A-",
+      "clubNameOriginal": "Tottenham Hotspur FC",
+      "season": "2018-19",
+      "assessmentRationale": "높은 라인 뒤 선방. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 4,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "GK 4/9 잠정 순위: 높은 라인 뒤 선방. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/tottenha.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-tottenham-02",
+      "club": "tottenham",
+      "position": "GK",
+      "role": "backup",
+      "name": "Paulo Gazzaniga",
+      "nameOriginal": "Paulo Gazzaniga",
+      "nameKo": "파울로 가사니가",
+      "born": "1992-01-02",
+      "tier": "B-",
+      "clubNameOriginal": "Tottenham Hotspur FC",
+      "season": "2018-19",
+      "assessmentRationale": "일부 리그 선발 대체. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 8,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "GK 8/9 잠정 순위: 일부 리그 선발 대체. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/tottenha.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-tottenham-03",
+      "club": "tottenham",
+      "position": "CB",
+      "role": "starter",
+      "name": "Toby Alderweireld",
+      "nameOriginal": "Toby Alderweireld",
+      "nameKo": "토비 알데르베이럴트",
+      "born": "1989-03-02",
+      "tier": "A",
+      "clubNameOriginal": "Tottenham Hotspur FC",
+      "season": "2018-19",
+      "assessmentRationale": "중앙 수비 지휘와 전진 패스. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 4,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "CB 4/21 잠정 순위: 중앙 수비 지휘와 전진 패스. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/tottenha.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-tottenham-04",
+      "club": "tottenham",
+      "position": "CB",
+      "role": "starter",
+      "name": "Jan Vertonghen",
+      "nameOriginal": "Jan Vertonghen",
+      "nameKo": "얀 베르통언",
+      "born": "1987-04-24",
+      "tier": "A",
+      "clubNameOriginal": "Tottenham Hotspur FC",
+      "season": "2018-19",
+      "assessmentRationale": "좌측 수비 빌드업과 커버. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 3,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "CB 3/21 잠정 순위: 좌측 수비 빌드업과 커버. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/tottenha.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-tottenham-05",
+      "club": "tottenham",
+      "position": "CB",
+      "role": "backup",
+      "name": "Davinson Sánchez",
+      "nameOriginal": "Davinson Sánchez",
+      "nameKo": "다빈손 산체스",
+      "born": "1996-06-12",
+      "tier": "B+",
+      "clubNameOriginal": "Tottenham Hotspur FC",
+      "season": "2018-19",
+      "assessmentRationale": "센터백 선발 로테이션. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 9,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "CB 9/21 잠정 순위: 센터백 선발 로테이션. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/tottenha.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-tottenham-06",
+      "club": "tottenham",
+      "position": "LB",
+      "role": "starter",
+      "name": "Danny Rose",
+      "nameOriginal": "Danny Rose",
+      "nameKo": "대니 로즈",
+      "born": "1990-07-02",
+      "tier": "B+",
+      "clubNameOriginal": "Tottenham Hotspur FC",
+      "season": "2018-19",
+      "assessmentRationale": "좌측 전진과 대인 수비. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 2,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "LB 2/12 잠정 순위: 좌측 전진과 대인 수비. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/tottenha.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-tottenham-07",
+      "club": "tottenham",
+      "position": "LB",
+      "role": "backup",
+      "name": "Ben Davies",
+      "nameOriginal": "Ben Davies",
+      "nameKo": "벤 데이비스",
+      "born": "1993-04-24",
+      "tier": "B",
+      "clubNameOriginal": "Tottenham Hotspur FC",
+      "season": "2018-19",
+      "assessmentRationale": "왼쪽 수비 로테이션. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 8,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "LB 8/12 잠정 순위: 왼쪽 수비 로테이션. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/tottenha.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-tottenham-08",
+      "club": "tottenham",
+      "position": "RB",
+      "role": "starter",
+      "name": "Kieran Trippier",
+      "nameOriginal": "Kieran Trippier",
+      "nameKo": "키런 트리피어",
+      "born": "1990-09-19",
+      "tier": "B",
+      "clubNameOriginal": "Tottenham Hotspur FC",
+      "season": "2018-19",
+      "assessmentRationale": "크로스와 수비 기복. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 8,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "RB 8/11 잠정 순위: 크로스와 수비 기복. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/tottenha.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-tottenham-09",
+      "club": "tottenham",
+      "position": "RB",
+      "role": "backup",
+      "name": "Serge Aurier",
+      "nameOriginal": "Serge Aurier",
+      "nameKo": "세르주 오리에",
+      "born": "1992-12-24",
+      "tier": "B-",
+      "clubNameOriginal": "Tottenham Hotspur FC",
+      "season": "2018-19",
+      "assessmentRationale": "공격적 우측 로테이션. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 11,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "RB 11/11 잠정 순위: 공격적 우측 로테이션. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/tottenha.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-tottenham-10",
+      "club": "tottenham",
+      "position": "DM",
+      "role": "starter",
+      "name": "Harry Winks",
+      "nameOriginal": "Harry Winks",
+      "nameKo": "해리 윙크스",
+      "born": "1996-02-02",
+      "tier": "B+",
+      "clubNameOriginal": "Tottenham Hotspur FC",
+      "season": "2018-19",
+      "assessmentRationale": "중원 후방 패스 흐름. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 4,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "DM 4/8 잠정 순위: 중원 후방 패스 흐름. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/tottenha.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-tottenham-11",
+      "club": "tottenham",
+      "position": "DM",
+      "role": "backup",
+      "name": "Eric Dier",
+      "nameOriginal": "Eric Dier",
+      "nameKo": "에릭 다이어",
+      "born": "1994-01-15",
+      "tier": "B-",
+      "clubNameOriginal": "Tottenham Hotspur FC",
+      "season": "2018-19",
+      "assessmentRationale": "부상과 수비형 중원 회전. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 8,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "DM 8/8 잠정 순위: 부상과 수비형 중원 회전. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/tottenha.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-tottenham-12",
+      "club": "tottenham",
+      "position": "CM",
+      "role": "starter",
+      "name": "Moussa Sissoko",
+      "nameOriginal": "Moussa Sissoko",
+      "nameKo": "무사 시소코",
+      "born": "1989-08-16",
+      "tier": "A-",
+      "clubNameOriginal": "Tottenham Hotspur FC",
+      "season": "2018-19",
+      "assessmentRationale": "전진 볼 운반·수비 압박. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 6,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "CM 6/15 잠정 순위: 전진 볼 운반·수비 압박. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/tottenha.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-tottenham-13",
+      "club": "tottenham",
+      "position": "CM",
+      "role": "backup",
+      "name": "Victor Wanyama",
+      "nameOriginal": "Victor Wanyama",
+      "nameKo": "빅터 완야마",
+      "born": "1991-06-25",
+      "tier": "B-",
+      "clubNameOriginal": "Tottenham Hotspur FC",
+      "season": "2018-19",
+      "assessmentRationale": "부상으로 중원 출전 제한. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 15,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "CM 15/15 잠정 순위: 부상으로 중원 출전 제한. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/tottenha.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-tottenham-14",
+      "club": "tottenham",
+      "position": "CAM",
+      "role": "starter",
+      "name": "Christian Eriksen",
+      "nameOriginal": "Christian Eriksen",
+      "nameKo": "크리스티안 에릭센",
+      "born": "1992-02-14",
+      "tier": "A",
+      "clubNameOriginal": "Tottenham Hotspur FC",
+      "season": "2018-19",
+      "assessmentRationale": "중앙 플레이메이킹·전진 패스. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 2,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "CAM 2/12 잠정 순위: 중앙 플레이메이킹·전진 패스. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/tottenha.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-tottenham-15",
+      "club": "tottenham",
+      "position": "CAM",
+      "role": "backup",
+      "name": "Dele Alli",
+      "nameOriginal": "Dele Alli",
+      "nameKo": "델레 알리",
+      "born": "1996-04-11",
+      "tier": "B+",
+      "clubNameOriginal": "Tottenham Hotspur FC",
+      "season": "2018-19",
+      "assessmentRationale": "부상 속 박스 침투. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 5,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "CAM 5/12 잠정 순위: 부상 속 박스 침투. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/tottenha.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-tottenham-16",
+      "club": "tottenham",
+      "position": "LW",
+      "role": "starter",
+      "name": "Son Heung-min",
+      "nameOriginal": "Son Heung-min",
+      "nameKo": "손흥민",
+      "born": "1992-07-08",
+      "tier": "A",
+      "clubNameOriginal": "Tottenham Hotspur FC",
+      "season": "2018-19",
+      "assessmentRationale": "12골과 측면 침투. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 3,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "LW 3/8 잠정 순위: 12골과 측면 침투. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/tottenha.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-tottenham-17",
+      "club": "tottenham",
+      "position": "RW",
+      "role": "starter",
+      "name": "Lucas Moura",
+      "nameOriginal": "Lucas Moura",
+      "nameKo": "루카스 모우라",
+      "born": "1992-08-13",
+      "tier": "B+",
+      "clubNameOriginal": "Tottenham Hotspur FC",
+      "season": "2018-19",
+      "assessmentRationale": "전방 속도·득점. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 3,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "RW 3/12 잠정 순위: 전방 속도·득점. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/tottenha.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-tottenham-18",
+      "club": "tottenham",
+      "position": "RW",
+      "role": "backup",
+      "name": "Erik Lamela",
+      "nameOriginal": "Erik Lamela",
+      "nameKo": "에릭 라멜라",
+      "born": "1992-03-25",
+      "tier": "B-",
+      "clubNameOriginal": "Tottenham Hotspur FC",
+      "season": "2018-19",
+      "assessmentRationale": "우측 2선 로테이션. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 12,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "RW 12/12 잠정 순위: 우측 2선 로테이션. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/tottenha.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-tottenham-19",
+      "club": "tottenham",
+      "position": "ST",
+      "role": "starter",
+      "name": "Harry Kane",
+      "nameOriginal": "Harry Kane",
+      "nameKo": "해리 케인",
+      "born": "1993-07-28",
+      "tier": "A+",
+      "clubNameOriginal": "Tottenham Hotspur FC",
+      "season": "2018-19",
+      "assessmentRationale": "17골·공격 연계. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 2,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "ST 2/14 잠정 순위: 17골·공격 연계. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/tottenha.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-tottenham-20",
+      "club": "tottenham",
+      "position": "ST",
+      "role": "backup",
+      "name": "Fernando Llorente",
+      "nameOriginal": "Fernando Llorente",
+      "nameKo": "페르난도 요렌테",
+      "born": "1985-02-26",
+      "tier": "B-",
+      "clubNameOriginal": "Tottenham Hotspur FC",
+      "season": "2018-19",
+      "assessmentRationale": "케인 부상 시 전방 대체. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 13,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "ST 13/14 잠정 순위: 케인 부상 시 전방 대체. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/tottenha.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-arsenal-01",
+      "club": "arsenal",
+      "position": "GK",
+      "role": "starter",
+      "name": "Bernd Leno",
+      "nameOriginal": "Bernd Leno",
+      "nameKo": "베른트 레노",
+      "born": "1992-03-04",
+      "tier": "B+",
+      "clubNameOriginal": "Arsenal FC",
+      "season": "2018-19",
+      "assessmentRationale": "첫 시즌 선방과 빌드업. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 5,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "GK 5/9 잠정 순위: 첫 시즌 선방과 빌드업. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/arsenal.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-arsenal-02",
+      "club": "arsenal",
+      "position": "GK",
+      "role": "backup",
+      "name": "Petr Čech",
+      "nameOriginal": "Petr Čech",
+      "nameKo": "페트르 체흐",
+      "born": "1982-05-20",
+      "tier": "B-",
+      "clubNameOriginal": "Arsenal FC",
+      "season": "2018-19",
+      "assessmentRationale": "초반 선발 이후 교체. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 9,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "GK 9/9 잠정 순위: 초반 선발 이후 교체. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/arsenal.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-arsenal-03",
+      "club": "arsenal",
+      "position": "CB",
+      "role": "starter",
+      "name": "Sokratis Papastathopoulos",
+      "nameOriginal": "Sokratis Papastathopoulos",
+      "nameKo": "소크라티스 파파스타토풀로스",
+      "born": "1988-06-09",
+      "tier": "B+",
+      "clubNameOriginal": "Arsenal FC",
+      "season": "2018-19",
+      "assessmentRationale": "강한 대인 경합. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 13,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "CB 13/21 잠정 순위: 강한 대인 경합. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/arsenal.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-arsenal-04",
+      "club": "arsenal",
+      "position": "CB",
+      "role": "starter",
+      "name": "Shkodran Mustafi",
+      "nameOriginal": "Shkodran Mustafi",
+      "nameKo": "슈코드란 무스타피",
+      "born": "1992-04-17",
+      "tier": "B-",
+      "clubNameOriginal": "Arsenal FC",
+      "season": "2018-19",
+      "assessmentRationale": "출전량 대비 수비 실수. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 21,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "CB 21/21 잠정 순위: 출전량 대비 수비 실수. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/arsenal.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-arsenal-05",
+      "club": "arsenal",
+      "position": "CB",
+      "role": "backup",
+      "name": "Laurent Koscielny",
+      "nameOriginal": "Laurent Koscielny",
+      "nameKo": "로랑 코시엘니",
+      "born": "1985-09-10",
+      "tier": "B+",
+      "clubNameOriginal": "Arsenal FC",
+      "season": "2018-19",
+      "assessmentRationale": "부상 복귀 후 수비 리딩. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 12,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "CB 12/21 잠정 순위: 부상 복귀 후 수비 리딩. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/arsenal.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-arsenal-06",
+      "club": "arsenal",
+      "position": "LB",
+      "role": "starter",
+      "name": "Sead Kolašinac",
+      "nameOriginal": "Sead Kolašinac",
+      "nameKo": "세아드 콜라시나츠",
+      "born": "1993-06-20",
+      "tier": "B+",
+      "clubNameOriginal": "Arsenal FC",
+      "season": "2018-19",
+      "assessmentRationale": "좌측 윙백 전진 기여. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 7,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "LB 7/12 잠정 순위: 좌측 윙백 전진 기여. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/arsenal.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-arsenal-07",
+      "club": "arsenal",
+      "position": "LB",
+      "role": "backup",
+      "name": "Nacho Monreal",
+      "nameOriginal": "Nacho Monreal",
+      "nameKo": "나초 몬레알",
+      "born": "1986-02-26",
+      "tier": "B",
+      "clubNameOriginal": "Arsenal FC",
+      "season": "2018-19",
+      "assessmentRationale": "왼쪽 수비·센터백 겸업. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 10,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "LB 10/12 잠정 순위: 왼쪽 수비·센터백 겸업. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/arsenal.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-arsenal-08",
+      "club": "arsenal",
+      "position": "RB",
+      "role": "starter",
+      "name": "Héctor Bellerín",
+      "nameOriginal": "Héctor Bellerín",
+      "nameKo": "엑토르 베예린",
+      "born": "1995-03-19",
+      "tier": "B+",
+      "clubNameOriginal": "Arsenal FC",
+      "season": "2018-19",
+      "assessmentRationale": "장기 부상 전 우측 주전. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 5,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "RB 5/11 잠정 순위: 장기 부상 전 우측 주전. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/arsenal.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-arsenal-09",
+      "club": "arsenal",
+      "position": "RB",
+      "role": "backup",
+      "name": "Ainsley Maitland-Niles",
+      "nameOriginal": "Ainsley Maitland-Niles",
+      "nameKo": "에인슬리 메이틀랜드나일스",
+      "born": "1997-08-29",
+      "tier": "B",
+      "clubNameOriginal": "Arsenal FC",
+      "season": "2018-19",
+      "assessmentRationale": "후반기 우측 윙백 선발. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 6,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "RB 6/11 잠정 순위: 후반기 우측 윙백 선발. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/arsenal.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-arsenal-10",
+      "club": "arsenal",
+      "position": "DM",
+      "role": "starter",
+      "name": "Lucas Torreira",
+      "nameOriginal": "Lucas Torreira",
+      "nameKo": "루카스 토레이라",
+      "born": "1996-02-11",
+      "tier": "B+",
+      "clubNameOriginal": "Arsenal FC",
+      "season": "2018-19",
+      "assessmentRationale": "강한 볼 회수와 압박. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 6,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "DM 6/8 잠정 순위: 강한 볼 회수와 압박. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/arsenal.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-arsenal-11",
+      "club": "arsenal",
+      "position": "CM",
+      "role": "starter",
+      "name": "Granit Xhaka",
+      "nameOriginal": "Granit Xhaka",
+      "nameKo": "그라니트 자카",
+      "born": "1992-09-27",
+      "tier": "B+",
+      "clubNameOriginal": "Arsenal FC",
+      "season": "2018-19",
+      "assessmentRationale": "중앙 롱패스·빌드업. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 8,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "CM 8/15 잠정 순위: 중앙 롱패스·빌드업. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/arsenal.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-arsenal-12",
+      "club": "arsenal",
+      "position": "CM",
+      "role": "backup",
+      "name": "Matteo Guendouzi",
+      "nameOriginal": "Matteo Guendouzi",
+      "nameKo": "마테오 귀앵두지",
+      "born": "1999-04-14",
+      "tier": "B",
+      "clubNameOriginal": "Arsenal FC",
+      "season": "2018-19",
+      "assessmentRationale": "높은 중원 출전·경험. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 12,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "CM 12/15 잠정 순위: 높은 중원 출전·경험. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/arsenal.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-arsenal-13",
+      "club": "arsenal",
+      "position": "CAM",
+      "role": "starter",
+      "name": "Mesut Özil",
+      "nameOriginal": "Mesut Özil",
+      "nameKo": "메수트 외질",
+      "born": "1988-10-15",
+      "tier": "B+",
+      "clubNameOriginal": "Arsenal FC",
+      "season": "2018-19",
+      "assessmentRationale": "중앙 창조성·선발 감소. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 9,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "CAM 9/12 잠정 순위: 중앙 창조성·선발 감소. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/arsenal.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-arsenal-14",
+      "club": "arsenal",
+      "position": "CAM",
+      "role": "backup",
+      "name": "Aaron Ramsey",
+      "nameOriginal": "Aaron Ramsey",
+      "nameKo": "애런 램지",
+      "born": "1990-12-26",
+      "tier": "B+",
+      "clubNameOriginal": "Arsenal FC",
+      "season": "2018-19",
+      "assessmentRationale": "박스 침투·부상. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 4,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "CAM 4/12 잠정 순위: 박스 침투·부상. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/arsenal.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-arsenal-15",
+      "club": "arsenal",
+      "position": "LW",
+      "role": "starter",
+      "name": "Alex Iwobi",
+      "nameOriginal": "Alex Iwobi",
+      "nameKo": "알렉스 이워비",
+      "born": "1996-05-03",
+      "tier": "B+",
+      "clubNameOriginal": "Arsenal FC",
+      "season": "2018-19",
+      "assessmentRationale": "좌측 공 운반·연결. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 5,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "LW 5/8 잠정 순위: 좌측 공 운반·연결. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/arsenal.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-arsenal-16",
+      "club": "arsenal",
+      "position": "RW",
+      "role": "starter",
+      "name": "Henrikh Mkhitaryan",
+      "nameOriginal": "Henrikh Mkhitaryan",
+      "nameKo": "헨리크 미키타리안",
+      "born": "1989-01-21",
+      "tier": "B",
+      "clubNameOriginal": "Arsenal FC",
+      "season": "2018-19",
+      "assessmentRationale": "오른쪽 전진 연결. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 9,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "RW 9/12 잠정 순위: 오른쪽 전진 연결. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/arsenal.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-arsenal-17",
+      "club": "arsenal",
+      "position": "ST",
+      "role": "starter",
+      "name": "Pierre-Emerick Aubameyang",
+      "nameOriginal": "Pierre-Emerick Aubameyang",
+      "nameKo": "피에르에메리크 오바메양",
+      "born": "1989-06-18",
+      "tier": "A+",
+      "clubNameOriginal": "Arsenal FC",
+      "season": "2018-19",
+      "assessmentRationale": "22골 공동 득점왕. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": 22,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 3,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "ST 3/14 잠정 순위: 22골 공동 득점왕. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/arsenal.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-arsenal-18",
+      "club": "arsenal",
+      "position": "ST",
+      "role": "backup",
+      "name": "Alexandre Lacazette",
+      "nameOriginal": "Alexandre Lacazette",
+      "nameKo": "알렉상드르 라카제트",
+      "born": "1991-05-28",
+      "tier": "A-",
+      "clubNameOriginal": "Arsenal FC",
+      "season": "2018-19",
+      "assessmentRationale": "정교한 공격 연계·마무리. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 4,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "ST 4/14 잠정 순위: 정교한 공격 연계·마무리. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/arsenal.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-manutd-01",
+      "club": "manutd",
+      "position": "GK",
+      "role": "starter",
+      "name": "David de Gea",
+      "nameOriginal": "David de Gea",
+      "nameKo": "다비드 데 헤아",
+      "born": "1990-11-07",
+      "tier": "A-",
+      "clubNameOriginal": "Manchester United FC",
+      "season": "2018-19",
+      "assessmentRationale": "주전 수비 기여와 후반 실수. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 3,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "GK 3/9 잠정 순위: 주전 수비 기여와 후반 실수. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/manutd.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-manutd-02",
+      "club": "manutd",
+      "position": "CB",
+      "role": "starter",
+      "name": "Victor Lindelöf",
+      "nameOriginal": "Victor Lindelöf",
+      "nameKo": "빅토르 린델뢰프",
+      "born": "1994-07-17",
+      "tier": "B+",
+      "clubNameOriginal": "Manchester United FC",
+      "season": "2018-19",
+      "assessmentRationale": "중앙 수비 주전 패스. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 14,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "CB 14/21 잠정 순위: 중앙 수비 주전 패스. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/manutd.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-manutd-03",
+      "club": "manutd",
+      "position": "CB",
+      "role": "starter",
+      "name": "Chris Smalling",
+      "nameOriginal": "Chris Smalling",
+      "nameKo": "크리스 스몰링",
+      "born": "1989-11-22",
+      "tier": "B",
+      "clubNameOriginal": "Manchester United FC",
+      "season": "2018-19",
+      "assessmentRationale": "박스 수비·공중볼 경합. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 17,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "CB 17/21 잠정 순위: 박스 수비·공중볼 경합. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/manutd.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-manutd-04",
+      "club": "manutd",
+      "position": "CB",
+      "role": "backup",
+      "name": "Phil Jones",
+      "nameOriginal": "Phil Jones",
+      "nameKo": "필 존스",
+      "born": "1992-02-21",
+      "tier": "B-",
+      "clubNameOriginal": "Manchester United FC",
+      "season": "2018-19",
+      "assessmentRationale": "수비 로테이션·기복. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 20,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "CB 20/21 잠정 순위: 수비 로테이션·기복. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/manutd.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-manutd-05",
+      "club": "manutd",
+      "position": "LB",
+      "role": "starter",
+      "name": "Luke Shaw",
+      "nameOriginal": "Luke Shaw",
+      "nameKo": "루크 쇼",
+      "born": "1995-07-12",
+      "tier": "B+",
+      "clubNameOriginal": "Manchester United FC",
+      "season": "2018-19",
+      "assessmentRationale": "좌측 주전 공격·수비. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 4,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "LB 4/12 잠정 순위: 좌측 주전 공격·수비. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/manutd.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-manutd-06",
+      "club": "manutd",
+      "position": "RB",
+      "role": "starter",
+      "name": "Ashley Young",
+      "nameOriginal": "Ashley Young",
+      "nameKo": "애슐리 영",
+      "born": "1985-07-09",
+      "tier": "B-",
+      "clubNameOriginal": "Manchester United FC",
+      "season": "2018-19",
+      "assessmentRationale": "우측 풀백 주전 기복. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 9,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "RB 9/11 잠정 순위: 우측 풀백 주전 기복. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/manutd.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-manutd-07",
+      "club": "manutd",
+      "position": "RB",
+      "role": "backup",
+      "name": "Diogo Dalot",
+      "nameOriginal": "Diogo Dalot",
+      "nameKo": "디오구 달로",
+      "born": "1999-03-18",
+      "tier": "B-",
+      "clubNameOriginal": "Manchester United FC",
+      "season": "2018-19",
+      "assessmentRationale": "우측 로테이션 전진. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 10,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "RB 10/11 잠정 순위: 우측 로테이션 전진. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/manutd.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-manutd-08",
+      "club": "manutd",
+      "position": "DM",
+      "role": "starter",
+      "name": "Nemanja Matić",
+      "nameOriginal": "Nemanja Matić",
+      "nameKo": "네마냐 마티치",
+      "born": "1988-08-01",
+      "tier": "B",
+      "clubNameOriginal": "Manchester United FC",
+      "season": "2018-19",
+      "assessmentRationale": "수미 후방 보호·기동력 하락. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 7,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "DM 7/8 잠정 순위: 수미 후방 보호·기동력 하락. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/manutd.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-manutd-09",
+      "club": "manutd",
+      "position": "CM",
+      "role": "starter",
+      "name": "Ander Herrera",
+      "nameOriginal": "Ander Herrera",
+      "nameKo": "안데르 에레라",
+      "born": "1989-08-14",
+      "tier": "B+",
+      "clubNameOriginal": "Manchester United FC",
+      "season": "2018-19",
+      "assessmentRationale": "중원 전방 압박·경합. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 7,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "CM 7/15 잠정 순위: 중원 전방 압박·경합. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/manutd.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-manutd-10",
+      "club": "manutd",
+      "position": "CM",
+      "role": "backup",
+      "name": "Fred",
+      "nameOriginal": "Fred",
+      "nameKo": "프레드",
+      "born": "1993-03-05",
+      "tier": "B-",
+      "clubNameOriginal": "Manchester United FC",
+      "season": "2018-19",
+      "assessmentRationale": "중원 적응과 패스 기복. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 13,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "CM 13/15 잠정 순위: 중원 적응과 패스 기복. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/manutd.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-manutd-11",
+      "club": "manutd",
+      "position": "CAM",
+      "role": "starter",
+      "name": "Paul Pogba",
+      "nameOriginal": "Paul Pogba",
+      "nameKo": "폴 포그바",
+      "born": "1993-03-15",
+      "tier": "A",
+      "clubNameOriginal": "Manchester United FC",
+      "season": "2018-19",
+      "assessmentRationale": "13골과 전진 8번 패스. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 3,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "CAM 3/12 잠정 순위: 13골과 전진 8번 패스. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/manutd.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-manutd-12",
+      "club": "manutd",
+      "position": "CAM",
+      "role": "backup",
+      "name": "Andreas Pereira",
+      "nameOriginal": "Andreas Pereira",
+      "nameKo": "안드레아스 페레이라",
+      "born": "1996-01-01",
+      "tier": "B-",
+      "clubNameOriginal": "Manchester United FC",
+      "season": "2018-19",
+      "assessmentRationale": "전진 중앙 8번 로테이션. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 12,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "CAM 12/12 잠정 순위: 전진 중앙 8번 로테이션. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/manutd.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-manutd-13",
+      "club": "manutd",
+      "position": "LW",
+      "role": "starter",
+      "name": "Anthony Martial",
+      "nameOriginal": "Anthony Martial",
+      "nameKo": "앙토니 마르시알",
+      "born": "1995-12-05",
+      "tier": "B+",
+      "clubNameOriginal": "Manchester United FC",
+      "season": "2018-19",
+      "assessmentRationale": "좌측 드리블·득점. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 6,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "LW 6/8 잠정 순위: 좌측 드리블·득점. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/manutd.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-manutd-14",
+      "club": "manutd",
+      "position": "LW",
+      "role": "backup",
+      "name": "Alexis Sánchez",
+      "nameOriginal": "Alexis Sánchez",
+      "nameKo": "알렉시스 산체스",
+      "born": "1988-12-19",
+      "tier": "C+",
+      "clubNameOriginal": "Manchester United FC",
+      "season": "2018-19",
+      "assessmentRationale": "왼쪽 기용에도 낮은 생산. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 8,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "LW 8/8 잠정 순위: 왼쪽 기용에도 낮은 생산. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/manutd.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-manutd-15",
+      "club": "manutd",
+      "position": "RW",
+      "role": "starter",
+      "name": "Jesse Lingard",
+      "nameOriginal": "Jesse Lingard",
+      "nameKo": "제시 린가드",
+      "born": "1992-12-15",
+      "tier": "B",
+      "clubNameOriginal": "Manchester United FC",
+      "season": "2018-19",
+      "assessmentRationale": "오른쪽 압박·전진. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 10,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "RW 10/12 잠정 순위: 오른쪽 압박·전진. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/manutd.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-manutd-16",
+      "club": "manutd",
+      "position": "RW",
+      "role": "backup",
+      "name": "Juan Mata",
+      "nameOriginal": "Juan Mata",
+      "nameKo": "후안 마타",
+      "born": "1988-04-28",
+      "tier": "B",
+      "clubNameOriginal": "Manchester United FC",
+      "season": "2018-19",
+      "assessmentRationale": "안쪽 이동·패스 연결. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 11,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "RW 11/12 잠정 순위: 안쪽 이동·패스 연결. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/manutd.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-manutd-17",
+      "club": "manutd",
+      "position": "ST",
+      "role": "starter",
+      "name": "Marcus Rashford",
+      "nameOriginal": "Marcus Rashford",
+      "nameKo": "마커스 래시퍼드",
+      "born": "1997-10-31",
+      "tier": "B+",
+      "clubNameOriginal": "Manchester United FC",
+      "season": "2018-19",
+      "assessmentRationale": "침투·득점·양 측면 겸업. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 9,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "ST 9/14 잠정 순위: 침투·득점·양 측면 겸업. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/manutd.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-manutd-18",
+      "club": "manutd",
+      "position": "ST",
+      "role": "backup",
+      "name": "Romelu Lukaku",
+      "nameOriginal": "Romelu Lukaku",
+      "nameKo": "로멜루 루카쿠",
+      "born": "1993-05-13",
+      "tier": "B+",
+      "clubNameOriginal": "Manchester United FC",
+      "season": "2018-19",
+      "assessmentRationale": "12골·중앙 제공권. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 10,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "ST 10/14 잠정 순위: 12골·중앙 제공권. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/manutd.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-wolves-01",
+      "club": "wolves",
+      "position": "GK",
+      "role": "starter",
+      "name": "Rui Patrício",
+      "nameOriginal": "Rui Patrício",
+      "nameKo": "후이 파트리시우",
+      "born": "1988-02-15",
+      "tier": "B+",
+      "clubNameOriginal": "Wolverhampton Wanderers FC",
+      "season": "2018-19",
+      "assessmentRationale": "승격 후 골문 선방. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 7,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "GK 7/9 잠정 순위: 승격 후 골문 선방. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/wolves.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-wolves-02",
+      "club": "wolves",
+      "position": "CB",
+      "role": "starter",
+      "name": "Conor Coady",
+      "nameOriginal": "Conor Coady",
+      "nameKo": "코너 코디",
+      "born": "1993-02-25",
+      "tier": "B+",
+      "clubNameOriginal": "Wolverhampton Wanderers FC",
+      "season": "2018-19",
+      "assessmentRationale": "스리백 중앙 조직·롱패스. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 8,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "CB 8/21 잠정 순위: 스리백 중앙 조직·롱패스. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/wolves.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-wolves-03",
+      "club": "wolves",
+      "position": "CB",
+      "role": "starter",
+      "name": "Willy Boly",
+      "nameOriginal": "Willy Boly",
+      "nameKo": "윌리 볼리",
+      "born": "1991-02-03",
+      "tier": "B+",
+      "clubNameOriginal": "Wolverhampton Wanderers FC",
+      "season": "2018-19",
+      "assessmentRationale": "왼쪽 CB 제공권·대인 수비. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 16,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "CB 16/21 잠정 순위: 왼쪽 CB 제공권·대인 수비. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/wolves.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-wolves-04",
+      "club": "wolves",
+      "position": "CB",
+      "role": "starter",
+      "name": "Ryan Bennett",
+      "nameOriginal": "Ryan Bennett",
+      "nameKo": "라이언 베넷",
+      "born": "1990-03-06",
+      "tier": "B",
+      "clubNameOriginal": "Wolverhampton Wanderers FC",
+      "season": "2018-19",
+      "assessmentRationale": "우측 CB 안정된 커버. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 18,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "CB 18/21 잠정 순위: 우측 CB 안정된 커버. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/wolves.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-wolves-05",
+      "club": "wolves",
+      "position": "LB",
+      "role": "starter",
+      "name": "Jonny",
+      "nameOriginal": "Jonny",
+      "nameKo": "조니",
+      "born": "1994-03-03",
+      "tier": "B+",
+      "clubNameOriginal": "Wolverhampton Wanderers FC",
+      "season": "2018-19",
+      "assessmentRationale": "왼쪽 윙백 공격·수비. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 3,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "LB 3/12 잠정 순위: 왼쪽 윙백 공격·수비. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/wolves.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-wolves-06",
+      "club": "wolves",
+      "position": "LB",
+      "role": "backup",
+      "name": "Rúben Vinagre",
+      "nameOriginal": "Rúben Vinagre",
+      "nameKo": "후벵 비나그르",
+      "born": "1999-04-09",
+      "tier": "B-",
+      "clubNameOriginal": "Wolverhampton Wanderers FC",
+      "season": "2018-19",
+      "assessmentRationale": "좌측 윙백 교대 출전. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 12,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "LB 12/12 잠정 순위: 좌측 윙백 교대 출전. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/wolves.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-wolves-07",
+      "club": "wolves",
+      "position": "RB",
+      "role": "starter",
+      "name": "Matt Doherty",
+      "nameOriginal": "Matt Doherty",
+      "nameKo": "맷 도허티",
+      "born": "1992-01-16",
+      "tier": "A-",
+      "clubNameOriginal": "Wolverhampton Wanderers FC",
+      "season": "2018-19",
+      "assessmentRationale": "우측 윙백 박스 침투·득점. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 4,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "RB 4/11 잠정 순위: 우측 윙백 박스 침투·득점. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/wolves.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-wolves-08",
+      "club": "wolves",
+      "position": "DM",
+      "role": "starter",
+      "name": "Rúben Neves",
+      "nameOriginal": "Rúben Neves",
+      "nameKo": "후벵 네베스",
+      "born": "1997-03-13",
+      "tier": "A-",
+      "clubNameOriginal": "Wolverhampton Wanderers FC",
+      "season": "2018-19",
+      "assessmentRationale": "중원 볼 순환·전진 패스. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 3,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "DM 3/8 잠정 순위: 중원 볼 순환·전진 패스. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/wolves.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-wolves-09",
+      "club": "wolves",
+      "position": "CM",
+      "role": "starter",
+      "name": "João Moutinho",
+      "nameOriginal": "João Moutinho",
+      "nameKo": "주앙 무티뉴",
+      "born": "1986-09-08",
+      "tier": "A-",
+      "clubNameOriginal": "Wolverhampton Wanderers FC",
+      "season": "2018-19",
+      "assessmentRationale": "중원 창조적 전개·압박. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 5,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "CM 5/15 잠정 순위: 중원 창조적 전개·압박. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/wolves.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-wolves-10",
+      "club": "wolves",
+      "position": "CM",
+      "role": "starter",
+      "name": "Leander Dendoncker",
+      "nameOriginal": "Leander Dendoncker",
+      "nameKo": "레안더르 덴동커르",
+      "born": "1995-04-15",
+      "tier": "B+",
+      "clubNameOriginal": "Wolverhampton Wanderers FC",
+      "season": "2018-19",
+      "assessmentRationale": "중원 왕성한 활동량. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 10,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "CM 10/15 잠정 순위: 중원 왕성한 활동량. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/wolves.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-wolves-11",
+      "club": "wolves",
+      "position": "CM",
+      "role": "backup",
+      "name": "Morgan Gibbs-White",
+      "nameOriginal": "Morgan Gibbs-White",
+      "nameKo": "모건 깁스화이트",
+      "born": "2000-01-27",
+      "tier": "B-",
+      "clubNameOriginal": "Wolverhampton Wanderers FC",
+      "season": "2018-19",
+      "assessmentRationale": "젊은 중앙 공격 연결. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 14,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "CM 14/15 잠정 순위: 젊은 중앙 공격 연결. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/wolves.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-wolves-12",
+      "club": "wolves",
+      "position": "LW",
+      "role": "backup",
+      "name": "Ivan Cavaleiro",
+      "nameOriginal": "Ivan Cavaleiro",
+      "nameKo": "이반 카발레이루",
+      "born": "1993-10-18",
+      "tier": "B",
+      "clubNameOriginal": "Wolverhampton Wanderers FC",
+      "season": "2018-19",
+      "assessmentRationale": "좌측 전방 교대. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 7,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "LW 7/8 잠정 순위: 좌측 전방 교대. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/wolves.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-wolves-13",
+      "club": "wolves",
+      "position": "RW",
+      "role": "backup",
+      "name": "Hélder Costa",
+      "nameOriginal": "Hélder Costa",
+      "nameKo": "엘데르 코스타",
+      "born": "1994-01-12",
+      "tier": "B",
+      "clubNameOriginal": "Wolverhampton Wanderers FC",
+      "season": "2018-19",
+      "assessmentRationale": "오른쪽 공격 로테이션. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 8,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "RW 8/12 잠정 순위: 오른쪽 공격 로테이션. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/wolves.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-wolves-14",
+      "club": "wolves",
+      "position": "ST",
+      "role": "starter",
+      "name": "Raúl Jiménez",
+      "nameOriginal": "Raúl Jiménez",
+      "nameKo": "라울 히메네스",
+      "born": "1991-05-05",
+      "tier": "A-",
+      "clubNameOriginal": "Wolverhampton Wanderers FC",
+      "season": "2018-19",
+      "assessmentRationale": "13골·연계·공중볼. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 5,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "ST 5/14 잠정 순위: 13골·연계·공중볼. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/wolves.htm"
+      ]
+    },
+    {
+      "id": "pl-2018-19-wolves-15",
+      "club": "wolves",
+      "position": "ST",
+      "role": "starter",
+      "name": "Diogo Jota",
+      "nameOriginal": "Diogo Jota",
+      "nameKo": "디오구 조타",
+      "born": "1996-12-04",
+      "tier": "B+",
+      "clubNameOriginal": "Wolverhampton Wanderers FC",
+      "season": "2018-19",
+      "assessmentRationale": "투톱 침투·기회 창출. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "leagueStarts": null,
+      "leagueAppearances": null,
+      "leagueGoals": null,
+      "leagueAssists": null,
+      "positionMajorityVerified": false,
+      "positionReview": "매치별 최다 선발 포지션 확인 필요. 4-3-3 CAM은 공격적 CM(8번) 대용으로도 사용.",
+      "review": "draft_unapproved",
+      "rank": 7,
+      "rankStatus": "draft_unapproved",
+      "rankRationale": "ST 7/14 잠정 순위: 투톱 침투·기회 창출. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기).",
+      "assessmentYears": [
+        "2016-17",
+        "2017-18",
+        "2018-19"
+      ],
+      "weightOrder": [
+        "2018-19",
+        "2017-18",
+        "2016-17"
+      ],
+      "previousSeasons": {
+        "2016-17": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        },
+        "2017-18": {
+          "leagueStarts": null,
+          "status": "audit_pending"
+        }
+      },
+      "candidateRationale": "2018-19 기간 선수단과 활동 역할 1차 자료, 개별 PL 선발 검증 대기",
+      "sources": [
+        "https://www.footballsquads.co.uk/eng/2018-2019/engprem/wolves.htm"
+      ]
+    }
+  ],
+  "bestXi": [
+    {
+      "playerId": "pl-2018-19-liverpool-01",
+      "position": "GK",
+      "actualPosition": "GK",
+      "displayPosition": "GK",
+      "reason": "21클린시트·선방 안정. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기)."
+    },
+    {
+      "playerId": "pl-2018-19-liverpool-02",
+      "position": "CB",
+      "actualPosition": "CB",
+      "displayPosition": "CB",
+      "reason": "최상급 수비 위치선정·제공권. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기)."
+    },
+    {
+      "playerId": "pl-2018-19-mancity-02",
+      "position": "CB",
+      "actualPosition": "CB",
+      "displayPosition": "CB",
+      "reason": "전진 패스와 대인 수비. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기)."
+    },
+    {
+      "playerId": "pl-2018-19-liverpool-05",
+      "position": "LB",
+      "actualPosition": "LB",
+      "displayPosition": "LB",
+      "reason": "높은 크로스·도움·수비. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기)."
+    },
+    {
+      "playerId": "pl-2018-19-liverpool-06",
+      "position": "RB",
+      "actualPosition": "RB",
+      "displayPosition": "RB",
+      "reason": "우측 높은 도움 생산. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기)."
+    },
+    {
+      "playerId": "pl-2018-19-mancity-09",
+      "position": "DM",
+      "actualPosition": "DM",
+      "displayPosition": "DM",
+      "reason": "단일 피벗과 역습 차단. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기)."
+    },
+    {
+      "playerId": "pl-2018-19-mancity-10",
+      "position": "CM",
+      "actualPosition": "CM",
+      "displayPosition": "CM",
+      "reason": "왼쪽 8번 압박 탈출. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기)."
+    },
+    {
+      "playerId": "pl-2018-19-mancity-12",
+      "position": "CAM",
+      "actualPosition": "CAM",
+      "displayPosition": "CAM",
+      "reason": "전진 8번 압박·활동량. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기)."
+    },
+    {
+      "playerId": "pl-2018-19-chelsea-13",
+      "position": "LW",
+      "actualPosition": "LW",
+      "displayPosition": "LW",
+      "reason": "16골 15도움 공격 창조. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기)."
+    },
+    {
+      "playerId": "pl-2018-19-mancity-15",
+      "position": "RW",
+      "actualPosition": "RW",
+      "displayPosition": "RW",
+      "reason": "득점·도움과 박스 침투. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기)."
+    },
+    {
+      "playerId": "pl-2018-19-mancity-17",
+      "position": "ST",
+      "actualPosition": "ST",
+      "displayPosition": "ST",
+      "reason": "21골과 최상급 마무리. 2018-19 개인 기여 우선 및 이전 2시즌 지속성 정성 참고(독립 기록 검증 대기)."
+    }
+  ]
 }
