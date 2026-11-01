@@ -511,3 +511,12 @@ Source TXT instruction adapted to the **2009-10 season only**. Candidate roster 
 - Removed 5 candidates with duplicate cross-club transfer or insufficient on-field starting-capable evidence: Man United Sánchez (Arsenal entry retained), Ibrahimović, Carrick, Romero and Tottenham Llorente.
 - Mapped Man United Rashford into LW and Mata into RW; actual position match-by-match audit remains pending. No player appears for multiple clubs in unified candidates.
 - Updated club-specific JSON, full player table, full ranks and validation script. Current unique player count 119, World Class 19, League Top Class 46.
+
+
+## Premier League 2018-19 DRAFT (2026-11-01)
+- Seven actual 2019-20 UEFA entrants: UCL Manchester City, Liverpool, Chelsea, Tottenham. UEL Arsenal, Man United and Wolves (qualifying Q2). Official PL 29 May 2019 and UEFA.
+- **4-3-3 most-used 2018-19**: 160/760 team starts; 4-2-3-1 134. Official PL retrospective. Existing 4-3-3 CAM layout means advanced central midfielder (No.8) in this particular formation.
+- All 122 seasonal candidates drafted, seven team XI starters each, max one backup per position/team, all graded, all rank 1..N and proposed 4-3-3 Best XI. Wolves actual 3-5-2 (three CBs, wingbacks, two STs) represented without inventing starting wingers.
+- **DRAFT/unapproved**: all player starts and appearances unknown/null, DOB only period-roster first source, match-majority roles and complete 2016-17 + 2017-18 individual records pending. Specific verified top goals: Salah/Mané/Aubameyang 22 each, Hazard 16G/15A; do not infer zero for others.
+- Only 2018-19 season JSON, seven club fresh DRAFT files, report, 2018-19 validator/workflow, and progress log modified. All previous season datasets and existing app branding, champions, crest assets remain unchanged.
+- GitHub CI, Pages deployment and browser UI must be separately checked.
