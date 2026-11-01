@@ -413,3 +413,10 @@ Source TXT instruction adapted to the **2009-10 season only**. Candidate roster 
 **Data commit:** `076209996b2e11d10235a8b6c7d4e1e4a773ef29`; previous all-135 tier commit `110bd78971d182661fb1d8c3c81ed660f5c20a50`, ranks/XI `61f17df65c3e28f6d76fe914e4dbd84241444a72`, detailed review flags `8b3399ec1eb9038b6249802e58c1c034d84feb5f`.
 
 **Stop at La Liga 2002-03. Do not start La Liga 2003-04 player evaluation without user direction.**
+
+
+### PL 2009-10 Best XI position-rank repair (2026-11-01)
+- In the freshly integrated 2009-10 `Best XI`, RB Sagna (#2) appeared instead of Ivanović (#1), and LB Ashley Cole (#2) instead of Evra (#1); no explicit tactical rationale existed.
+- Corrected both positions to respective #1 in season JSON; preserved player tiers and rank numbers. Both new fullbacks were in contemporary 2009-10 PFA Premier League Team of the Year; season-3-year individual review remains open.
+- Season JSON repair commit: `32453027d06f55174d18cfa5b03d87b622ec3168`; all-club review report repair: `3731b9d42b88dfc6c635cda61673b5cb6fb9144a`.
+- GitHub Pages direct live page and deployed JSON GET not verified (web tool inaccessible); avoid claiming browser/render validation.
