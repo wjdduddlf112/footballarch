@@ -340,3 +340,34 @@ Three-season evidence exists in summarized form for each tier rationale, but ind
 - **Best XI strongest first, actual player positions retained:** van der Sar; Vidić, Ferdinand; Evra, Bosingwa; Ashley Young, Ronaldo; Lampard (original CM in field CM), Gerrard (original CAM in field CM); Anelka, Torres. Two central midfielder field labels both CM. Ranking list uses underlying roles and was NOT reordered to force XI position. Best XI checked against role and three-year individual form, not copied blindly from PFA XI; Glen Johnson ineligible as Portsmouth not European participant in 2009-10.
 - Structural JS inspection and data checks passed. **Node CLI not run**, actual GitHub Pages browser/crest checks **not independently completed**, and **user approval absent**. Stop before 2009-10.
 - Full navigation and 7 club tables + 2 rank tables: `audit/player-research/premierleague-2008-09-research.md`. Separate verified-vs-pending report: `audit/player-research/premierleague-2008-09-checkpoint.md`.
+
+
+---
+
+## 2026-11-01 — La Liga 2002-03 independent source-backed DRAFT expansion (partial, not a completed season)
+
+**Reference commits**
+- `0222b9bf39b7dda749029221c1a4cde29b0297ef`: 14 further sourced three-season assessments
+- `0ec2608d7eb277f12b3271b1b859166907befe07`: 7 additional independently verified eligible season entrants (not copied from legacy roster)
+- `5a931164ca87949b6c49f30396291acd4d58ab9c`: 6 further sourced three-season assessments
+
+**Current main:** `data/laliga-2002-03.json`, 9 eligible clubs, **135 candidate entries, 34 individual three-season provisional grades, 101 ungraded, 0 positional ranks, 0 Best XI**. Former dataset had 128 candidate entries and 14 graded. New seven out-of-roster entrants are Bodipo (Racing, ST 16 starts), Fernando Niño (Mallorca, CB 20), Javier López Vallejo (Villarreal, GK 4), Unai Vergara (Villarreal, CB 17), José Manuel Pinto (Celta, GK 2), Alberto López (Sociedad, GK 1), and Miquel Garro 'Miki' (Mallorca, GK 2). All have club-season source links, individual profiles, original names and birth dates, but their **tiers remain null** pending individualized 2000-01, 2001-02, 2002-03 comparison and peer evaluation. Names/positions based on independent contemporary squad pages + BDF player profiles, not merely previous roster inclusion.
+
+**20 added provisional graded profiles:** Casillas A+, Cañizares A+, Roberto Carlos S, Figo A+, Makélélé A+, Xabi Alonso A, Puyol A-, Xavi A-, Baraja A-, Vicente B+, Karpin A, Naybet A-, Sergio González B+, Jorge López A-, Míchel Salgado A-, Aitor López Rekarte B+, Albelda B+, Leo Franco B+, Javier de Pedro A-, Ibagaza B+. The existing 14 personally audited proposals are retained. All 34 assessments have individually recorded three-season source URLs and qualitative notes. The positions and intra-position tier order remain unapproved.
+
+**Structural connector check passed:** valid 135-record JSON, 135 unique season IDs and unique club/name keys, 9 qualified clubs only, all have recorded current-season `starts`, no 2-GK/3-CB/2-wing-or-full-back/3-CM/3-ST quota exceedances, all grades in allowed enum and carry a rationale and source, 54 birth dates present/81 missing; all 34 tier entries are unranked. 101 ungraded players retain null tier and null rank. The 135 season-start numbers have not all been independently verified or matched to season-majority positions. This **is NOT a completed individual audit**.
+
+**Outstanding:** independent reselection/season-majority position checks for legacy unreviewed candidates; 3-season personal evidence and relative comparisons for 101 ungraded; BDF's schematic eleven is not proof of actual tactical deployment; CAM / CM / ST tactical allocations for e.g. Aimar, Mostovoi, Ibagaza and others; full club XI starting-slot validity, all league-wide positional rankings, historically supported league modal formation and Best XI; DOB contradictions (Miki: BDFutbol+FBref 1975-09-20 vs Transfermarkt/11v11 1975-12-20; Ronaldo date convention previously flagged); 2003-04 entrant independent review already recorded in prior checkpoint. Existing standings/crests/other seasons untouched. GitHub file read/parse and JS in-memory structural checks performed. **Node CLI validator NOT RUN; live GitHub Pages browser verification NOT DONE; user final approval NOT OBTAINED.**
+
+**Source squads**
+- https://www.bdfutbol.com/en/t/t2002-032.html (Real Madrid)
+- https://www.bdfutbol.com/en/t/t2002-0330.html (Real Sociedad)
+- https://www.bdfutbol.com/en/t/t2002-0313.html (Deportivo)
+- https://www.bdfutbol.com/en/t/t2002-0311.html (Celta)
+- https://www.bdfutbol.com/en/t/t2002-0336.html (Valencia)
+- https://www.bdfutbol.com/en/t/t2002-031.html (Barcelona)
+- https://www.bdfutbol.com/en/t/t2002-0324.html (Mallorca)
+- https://www.bdfutbol.com/en/t/t2002-0338.html (Villarreal)
+- https://www.bdfutbol.com/en/t/t2002-0329.html (Racing)
+
+**Next resumes at the same season; this pass does not authorize 2003-04 player evaluation.**
