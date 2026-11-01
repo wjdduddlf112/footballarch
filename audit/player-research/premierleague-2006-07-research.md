@@ -484,7 +484,7 @@ The following are DRAFT within-position standings, not approved athlete comparis
 - Rated season 2006-07 primary, 2005-06 secondary, 2004-05 tertiary. Previously cached records from earlier PL assessments are DRAFT, not independently approved and not comprehensive for clubs outside previous qualifying sets.
 - **149** club-player records with 11 nominal starters in each of 8 eligible clubs, 149 individual tier and position-wide rank proposals.
 - **66/149** current-season PL starts entered from checked individual seasonal sources; **83** remain null because a corroborated league start count was not extracted. Do not fabricate figures.
-- **83** current league goals remain null. Any zero explicitly entered was supported by a checked league row; null is not zero.
+- **80** current league goals remain null. Any zero explicitly entered was supported by a checked league row; null is not zero.
 - **108** athletes lack a 2004-05 or 2005-06 previous-year league start among the prior season-specific shortlisted files; these entries require coverage of their outside clubs/leagues.
 - **149** nominees have not completed a match-by-match primary-position audit. Many fullbacks/wingers and Everton Phil Neville/RW Mikel Arteta, Bolton Kevin Davies RW are particularly important review cases.
 - Confirmed historical no-league-appearance corrections: Armand Traoré (Arsenal) and Radek Černý (Tottenham) were excluded; Arsenal Philippe Senderos and Spurs Anthony Gardner replaced as limited CB backups by Johan Djourou and Ricardo Rocha, respectively.
