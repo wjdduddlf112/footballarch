@@ -3,7 +3,7 @@
 Date: 2026-11-01  
 Repository: `wjdduddlf112/footballarch`, branch `main`  
 Deployment target: https://wjdduddlf112.github.io/footballarch/  
-Status: **19 tracked season datasets; 949/2489 provisional player tier proposals; 1540 unrated. PL 1999-00 128/128, PL 2000-01 141/141, PL 2001-02 163/163, PL 2002-03 132/132 and PL 2003-04 105/105 DRAFT tier/rank entries.**
+Status: **20 tracked season datasets; 1099/2639 provisional player tier proposals; 1540 unrated. PL 1999-00 128/128, PL 2000-01 141/141, PL 2001-02 163/163, PL 2002-03 132/132 and PL 2003-04 105/105 and PL 2004-05 150/150 DRAFT tier/rank entries.**
 
 ## Scope and method
 
@@ -27,6 +27,7 @@ Status: **19 tracked season datasets; 949/2489 provisional player tier proposals
 | Premier League | 2001-02 | 163 | 163 | 163 | 0 | 0 | 11 proposed (unapproved) | No |
 | Premier League | 2002-03 | 132 | 132 | 132 | 0 | 0 | 11 proposed (unapproved) | No |
 | Premier League | 2003-04 | 105 | 105 | 105 | 0 | 0 (entered; not independently checked) | 11 proposed (unapproved) | No |
+| Premier League | 2004-05 | 150 | 150 | 150 | 0 | 0 (season-only data entered) | 11 proposed (unapproved) | No |
 | Serie A | 1999-00 | 119 | 0 | 0 | 1 | 0 | Not selected | No |
 | Serie A | 2000-01 | 109 | 0 | 0 | 7 | 0 | Not selected | No |
 | Serie A | 2001-02 | 137 | 0 | 0 | 0 | 0 | Not selected | No |
@@ -36,7 +37,7 @@ Status: **19 tracked season datasets; 949/2489 provisional player tier proposals
 | Ligue 1 | 1999-00 | 111 | 0 | 0 | 3 | 19 | Not selected | No |
 | Ligue 1 | 2000-01 | 141 | 0 | 0 | 15 | 20 | Not selected | No |
 | Ligue 1 | 2001-02 | 134 | 0 | 0 | 11 | 6 | Not selected | No |
-| **Total** | **19 seasons** | **2489** | **949** | **949** | **551** | **383** | **7 provisional** | **0/19** |
+| **Total** | **20 seasons** | **2639** | **1099** | **1099** | **551** | **383** | **8 provisional** | **0/20** |
 
 Tier distribution for the 280 existing La Liga provisional grades: S=9; A+=17; A=24; A-=47. All other tier grades are carried from previously approved-as-draft work and are **not** upgraded to final.
 
@@ -264,3 +265,17 @@ Three-season evidence exists in summarized form for each tier rationale, but ind
 - Full six-club candidate list, positional ranking tables, preliminary grades and evidence gaps: `audit/player-research/premierleague-2003-04-research.md`.
 - Player JSON: `data/premierleague-2003-04.json` (draft/unapproved), source standings and existing frontend preserved.
 - Work stops after 2003-04. Do **not** change approved status or begin 2004-05 without explicit permission.
+
+
+## Premier League 2004-05 checkpoint — 2026-11-01
+
+- User gave explicit permission to proceed **one** season from 2003-04 to 2004-05. Status DRAFT only; prior season not auto-approved.
+- Actual 2005-06 European entrants independently reviewed across UCL, UEFA Cup and Intertoto: Chelsea, Arsenal, Manchester United, Everton, Liverpool, Bolton Wanderers, Middlesbrough, Newcastle United (**8 clubs**). Liverpool entered UCL as defending champions despite finishing fifth; Newcastle entered 2005 Intertoto despite league 14th.
+- New **150 candidate** entries from season-specific club squads and Premier League-only appearances; selection did not copy previous season candidate lists.
+- **88** assigned club starters (11 per club), 150 DRAFT tiers, 150 DRAFT position ranks. **17** World Class (S/A+) and **48** League Top Class (S/A+/A/A-). Eleven unapproved 4-4-2 Best XI player references and positional compatibility checked.
+- Tier distribution: S=4, A+=13, A=14, A-=17, B+=45, B=27, B-=17, C+=12, C=1, C-=0, D=0.
+- **99/150** prior-season evidence incomplete (at least one 2002-03 or 2003-04 league-start value null); **150/150** match-by-match primary-position confirmations pending. League-only current starts entered from season pages but not fully audited against a second independent source per player. Historical DOB/content conflicts possible.
+- Source files: data/premierleague-2004-05.json, data/premierleague-europe-qualification-1999-2026.json; all-player research: audit/player-research/premierleague-2004-05-research.md.
+- Structural audit via GitHub connector/JS: 8 club memberships, 11 club starters each, slot caps, unique IDs, continuous per-position ranks, valid tier values and Best XI references. Old validator's hard-coded snapshot counts require update, so claiming it has been executed is prohibited.
+- **Node CLI validation NOT RUN**; **live browser five-tab and image validation NOT VERIFIED**; **user acceptance NOT GIVEN**.
+- No 2005-06 or later Premier League player work authorized; stop at 2004-05.
