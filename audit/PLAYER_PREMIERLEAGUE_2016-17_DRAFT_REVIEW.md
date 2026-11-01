@@ -442,6 +442,14 @@ Harry Kane is the highest-ranked ST. Others excluded by single-ST formation incl
 | GitHub workflow, main merge and Pages | Check actual results independently, not assumed from this report |
 | Browser UI tabs | Independently test after deployed; not assumed from CI |
 
+
+### Verified historical DOB-source conflict: Rob Holding
+
+FootballSquads Arsenal 2016-17 roster reports Rob Holding DOB `09-11-94`, which conflicts with independent references. **Sky Sports** and **Opta Analyst** both report **20 September 1995**, so the DRAFT uses `1995-09-20` and records the disagreement explicitly. This is one independently crosschecked DOB; it does not validate the remaining players.
+
+- https://www.skysports.com/football/player/135941/rob-holding
+- https://theanalyst.com/players/3948/rob-holding
+
 ## 9. Specific risks / manual audit priorities
 
 - Chelsea 3-4-3: Azpilicueta right CB, Alonso LWB, Moses RWB; archive transforms wingback to LB/RB and cannot accurately visualize full club shape in 4-2-3-1 Best XI. Club 3CB+wingback 11 starters preserves team’s actual shape.
