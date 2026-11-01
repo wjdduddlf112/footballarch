@@ -1,0 +1,25 @@
+name: Verify Football Archive PL 2012-13 DRAFT
+on:
+  push:
+    paths:
+      - "data/premierleague-2012-13.json"
+      - "scripts/verify-pl-2012-13-draft.mjs"
+      - ".github/workflows/verify-pl-2012-13-draft.yml"
+  pull_request:
+    paths:
+      - "data/premierleague-2012-13.json"
+      - "scripts/verify-pl-2012-13-draft.mjs"
+      - ".github/workflows/verify-pl-2012-13-draft.yml"
+  workflow_dispatch:
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Verify PL 2012-13 DRAFT structure
+        run: node scripts/verify-pl-2012-13-draft.mjs
