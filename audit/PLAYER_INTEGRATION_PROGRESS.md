@@ -420,3 +420,10 @@ Source TXT instruction adapted to the **2009-10 season only**. Candidate roster 
 - Corrected both positions to respective #1 in season JSON; preserved player tiers and rank numbers. Both new fullbacks were in contemporary 2009-10 PFA Premier League Team of the Year; season-3-year individual review remains open.
 - Season JSON repair commit: `32453027d06f55174d18cfa5b03d87b622ec3168`; all-club review report repair: `3731b9d42b88dfc6c635cda61673b5cb6fb9144a`.
 - GitHub Pages direct live page and deployed JSON GET not verified (web tool inaccessible); avoid claiming browser/render validation.
+
+
+### PL 2009-10 site display follow-up
+- User still saw stale 2009-10 Best XI after the data correction (Ivanović rank #1, Evra rank #1). Live Pages not directly accessible in current environment, so deployment status not confirmed.
+- Front-end cache and formation fix: `assets/app.js` commit `1a603757ef46809358c74bfb7fd0add20f819f59` adds season-specific cache-busted JSON fetch and 4-4-2 conditional two-CM rendering (without affecting DM formations in other years).
+- HTML script cache key updated in `index.html` commit `b5598c22d4b5fc2ec08c6616a5856ef1fecbfddb`.
+- GitHub source re-read confirms LB Evra (#1), RB Ivanović (#1), CM Lampard + Milner; 11 XI player IDs. **Not browser tested**. If site still shows previous XI, verify GitHub Pages `main/(root)` source and `pages build and deployment` Actions run; source-data and live deployment are separate gates.
