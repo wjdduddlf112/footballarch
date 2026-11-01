@@ -1,9 +1,9 @@
 # Football Archive — Player integration checkpoint
 
-Date: 2026-10-30  
+Date: 2026-11-01  
 Repository: `wjdduddlf112/footballarch`, branch `main`  
 Deployment target: https://wjdduddlf112.github.io/footballarch/  
-Status: **17 tracked season datasets; 712/2252 provisional player tier proposals; 1540 unrated. PL 1999-00 128/128, PL 2000-01 141/141, PL 2001-02 163/163 DRAFT tier/rank entries.**
+Status: **18 tracked season datasets; 844/2384 provisional player tier proposals; 1540 unrated. PL 1999-00 128/128, PL 2000-01 141/141, PL 2001-02 163/163, PL 2002-03 132/132 DRAFT tier/rank entries.**
 
 ## Scope and method
 
@@ -25,6 +25,7 @@ Status: **17 tracked season datasets; 712/2252 provisional player tier proposals
 | Premier League | 1999-00 | 128 | 128 | 128 | 0 | 0 | 11 proposed (unapproved) | No |
 | Premier League | 2000-01 | 141 | 141 | 141 | 0 | 0 | 11 proposed (unapproved) | No |
 | Premier League | 2001-02 | 163 | 163 | 163 | 0 | 0 | 11 proposed (unapproved) | No |
+| Premier League | 2002-03 | 132 | 132 | 132 | 0 | 0 | 11 proposed (unapproved) | No |
 | Serie A | 1999-00 | 119 | 0 | 0 | 1 | 0 | Not selected | No |
 | Serie A | 2000-01 | 109 | 0 | 0 | 7 | 0 | Not selected | No |
 | Serie A | 2001-02 | 137 | 0 | 0 | 0 | 0 | Not selected | No |
@@ -34,7 +35,7 @@ Status: **17 tracked season datasets; 712/2252 provisional player tier proposals
 | Ligue 1 | 1999-00 | 111 | 0 | 0 | 3 | 19 | Not selected | No |
 | Ligue 1 | 2000-01 | 141 | 0 | 0 | 15 | 20 | Not selected | No |
 | Ligue 1 | 2001-02 | 134 | 0 | 0 | 11 | 6 | Not selected | No |
-| **Total** | **17 seasons** | **2252** | **712** | **712** | **551** | **383** | **5 provisional** | **0/17** |
+| **Total** | **18 seasons** | **2384** | **844** | **844** | **551** | **383** | **6 provisional** | **0/18** |
 
 Tier distribution for the 280 existing La Liga provisional grades: S=9; A+=17; A=24; A-=47. All other tier grades are carried from previously approved-as-draft work and are **not** upgraded to final.
 
@@ -235,3 +236,16 @@ Three-season evidence exists in summarized form for each tier rationale, but ind
 - **Method limits:** All 163 nominees have individualized DRAFT grades, but detailed 1999-00/2000-01 performances and match-by-match most-used position remain **partially incomplete** for many. Team lineup classifications are provisional; archive 10-position taxonomy reduces classic LM/RM and wingbacks. A tier-input 100% is **not** historic audit sign-off. Maintain DRAFT until user approval.
 - Reproducible validator `scripts/verify-pl-2001-02-draft.mjs` and headless browser check `scripts/verify-pl-2001-02-live.mjs` with `.github/workflows/verify-pl-2001-02-live.yml`, checking published GitHub Pages five tabs and screenshots; actual live action status **must be separately observed**, not inferred from file presence.
 - Preserve all prior-season data, existing layouts and stylesheet, standings, crests, C champion badges, stripped-title markers, qualifier data and season navigation. Stop before PL 2002-03 absent next explicit user instruction.
+
+
+## Premier League 2002-03 season completed to independently tested DRAFT — 2026-11-01
+
+- **User directed PL 2002-03 only** and explicitly approved using the 2002-03-era mainstream **4-4-2**; do not begin the 2003-04 season without a new instruction.
+- Eligible clubs for ACTUAL 2003-04 UEFA participation: Man Utd/Arsenal/Newcastle/Chelsea UCL; Liverpool/Blackburn/Southampton/Manchester City UEFA Cup. Manchester City UEFA Fair Play; Southampton as FA Cup runner-up. 8 participant club IDs and all 20 final table rows preserved exactly. Historical UEFA archive and existing crests unchanged.
+- **132 individual nominees** (after reselecting 142 dated 2002-03 players and excluding players with 0-6 league starts and no plausible significant starting rotation). Removed Alan Kelly, Ed de Goey, Igor Bišćan, Quinton Fortune, John Curtis, Darren Huckerby, Hakan Şükür; excluded non-starters Steve Harper, Robbie Elliott, Patrik Berger and injury-short Marian Pahars. Added 19-PL-start Chelsea CM Jody Morris. Each selected candidate has 2002-03 PL-only starts, DOB, Korean/original names, contemporaneous club, individual 2000-01/2001-02/2002-03 weighted tier rationale, a position-wide league rank and source links.
+- 2002-03 season-specific source: **Statbunker Premier League 02/03 (`comp_id=136`)** for Man Utd3 Arsenal5 Newcastle16 Chelsea8 Liverpool4 Blackburn34 Southampton18 Man City14, checked against FootballSquads season rosters and FBref/Arsenal Soccerbase. Explicitly excluded 11v11 all-competition statistics from PL-only starts. All **132/132 current season league starts verified** from that season filter.
+- Season primary roles reviewed: Chelsea Gallas 36 starts starter/John Terry 16 backup; Zola 30 starts, Hasselbaink 27 starts, Gudjohnsen 20 rotation; Southampton Paul Telfer 26 vs Jason Dodd 13 at RB; Liverpool Djimi Traoré 30 LB and John Arne Riise 31 left wing, with Cheyrou 8 LW backup; Gary Neville is an eligible 2003 Best XI RB because PFA recipient Stephen Carr's Tottenham did not qualify. Manchester City Kevin Horlock used provisionally on left midfield with 22 PL starts.
+- Proposed **4-4-2 Best XI (11 unique eligible IDs)**: GK Brad Friedel; LB Ashley Cole; CB William Gallas, Sol Campbell; RB Gary Neville; DM Roy Keane; CM Patrick Vieira; LW Robert Pirès; RW Kieron Dyer; ST Thierry Henry, Ruud van Nistelrooy. PFA 2002-03 4-4-2 structure and current individual form used; positions are as recorded for season, no artificial out-of-position player placement.
+- Proposed tiers: S=3, A+=11, A=10, A-=27, B+=44, B=21, B-=16, C+=6, C/C-/D=0. World Class S/A+ **14**; League Top Class S/A+/A/A- **51**. All 132 grades and all 132 position-specific ranks remain unapproved.
+- New structural gate `scripts/verify-pl-2002-03-draft.mjs` executed **PASS** after 132 selection update; per-team 11 nominal tactical starters, caps and rank continuity, league starts, eligible-club/Best XI links and preserved standings checked. New live script and `.github/workflows/verify-pl-2002-03-live.yml` checks Pages latest JSON, five UI views and screenshot artifacts, but cannot be called passed until Actions actually runs successfully.
+- Historical audit limitation: a portion of 2000-01/2001-02 detailed match evidence and match-by-match exact predominant player position remains unfinished. Any quality claims are **DRAFT evaluations**, not certified complete historical statistics, and current season starters' status does not mean individual player was always a literal starter in the nominal 4-4-2 grouping.
