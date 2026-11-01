@@ -3,7 +3,7 @@
 Date: 2026-11-01  
 Repository: `wjdduddlf112/footballarch`, branch `main`  
 Deployment target: https://wjdduddlf112.github.io/footballarch/  
-Status: **22 tracked season datasets; 1390/2930 provisional player tier proposals; 1540 unrated. PL 1999-00 128/128, PL 2000-01 141/141, PL 2001-02 163/163, PL 2002-03 132/132 and PL 2003-04 105/105 and PL 2004-05 150/150 and PL 2005-06 142/142 and PL 2006-07 149/149 DRAFT tier/rank entries.**
+Status: **23 tracked season datasets; 1560/3100 provisional player tier proposals; 1540 unrated. PL 1999-00 128/128, PL 2000-01 141/141, PL 2001-02 163/163, PL 2002-03 132/132 and PL 2003-04 105/105 and PL 2004-05 150/150 and PL 2005-06 142/142 and PL 2006-07 149/149 and PL 2007-08 170/170 DRAFT tier/rank entries.**
 
 ## Scope and method
 
@@ -30,6 +30,7 @@ Status: **22 tracked season datasets; 1390/2930 provisional player tier proposal
 | Premier League | 2004-05 | 150 | 150 | 150 | 0 | 0 (season-only data entered) | 11 proposed (unapproved) | No |
 | Premier League | 2005-06 | 142 | 142 | 142 | 0 | 0 (entered; individual audit pending) | 11 proposed (unapproved) | User confirmed display (2026-11-01); independent browser audit pending |
 | Premier League | 2006-07 | 149 | 149 | 149 | 0 | 82 (not yet sourced) | 11 proposed (unapproved) | Not independently verified |
+| Premier League | 2007-08 | 170 | 170 | 170 | 0 | 0 (sourced PL starts/apps/goals, position audit pending) | 11 proposed (unapproved; CAM→CM tactical mapping) | Data structure checked; browser unverified |
 | Serie A | 1999-00 | 119 | 0 | 0 | 1 | 0 | Not selected | No |
 | Serie A | 2000-01 | 109 | 0 | 0 | 7 | 0 | Not selected | No |
 | Serie A | 2001-02 | 137 | 0 | 0 | 0 | 0 | Not selected | No |
@@ -39,7 +40,7 @@ Status: **22 tracked season datasets; 1390/2930 provisional player tier proposal
 | Ligue 1 | 1999-00 | 111 | 0 | 0 | 3 | 19 | Not selected | No |
 | Ligue 1 | 2000-01 | 141 | 0 | 0 | 15 | 20 | Not selected | No |
 | Ligue 1 | 2001-02 | 134 | 0 | 0 | 11 | 6 | Not selected | No |
-| **Total** | **22 seasons** | **2930** | **1390** | **1390** | **551** | **465** | **10 provisional** | **0/22 independently** |
+| **Total** | **23 seasons** | **3100** | **1560** | **1560** | **551** | **465** | **11 provisional** | **0/23 independently** |
 
 Tier distribution for the 280 existing La Liga provisional grades: S=9; A+=17; A=24; A-=47. All other tier grades are carried from previously approved-as-draft work and are **not** upgraded to final.
 
@@ -316,3 +317,14 @@ Three-season evidence exists in summarized form for each tier rationale, but ind
 - Berbatov 2006-07 12 PL goals + 9 assists, 2004-05/2005-06 Bundesliga 20 + 21 goals and PFA XI; McCarthy 2006-07 18 PL goals + 0 assists, prior Porto 11 + 3 league goals. Rooney 14 PL goals + 11 assists is retained ST #3 pending broader subjective reassessment; ranking is not a pure G+A sort.
 - Source `data/premierleague-2006-07.json` updated: per-player rank/Rationale, prior league (Bundesliga/Primeira Liga) evidence, current McCarthy 36 starts and Berbatov 9 assists; source `audit/player-research/premierleague-2006-07-research.md` synced including main ST ranking and club roster tables.
 - Dataset count **149** unchanged; current PL starts filled **67/149**, 82 not confirmed. At least one previous season starts missing for **106** players. **Still DRAFT, not user-approved.**
+
+
+## 2007-08 Premier League source audit and BEST XI mapping revision (2026-11-01)
+
+- User required actual historical verification rather than structure-only checks. 2007-08 began as 172-player DRAFT with only 17 current league starts entered. After reviewing nine club-specific 2007-08 Premier League appearances/starts/goals sources (Statbunker, FBref, Everton Encyclopedia), **170 eligible candidates, 170/170 league starts/apps/goals**, 99 nominal starters, 11 PFA-cross-checked XI references, all 170 tier proposals and consecutive per-position ranks.
+- Removed zero-league-appearance Liverpool Charles Itandje, zero-start Aston Villa Patrik Berger, Tottenham Ledley King (4 starts; replaced with Kaboul 19 starts); Liverpool Jermaine Pennant (14 starts) replaced in RW backup position by Yossi Benayoun (15 starts, 30 appearances). Club counts ManU 20 Chelsea 21 Arsenal 19 Liverpool 19 Everton 17 Aston Villa 18 Portsmouth 18 Man City 20 Tottenham 18.
+- **Best XI strongest individual first, regardless of exact primary position label.** User specifically required Gerrard CAM be allowed in the 4-4-2 field CM. Best XI now David James; Ferdinand, Vidić, Clichy, Sagna; Cristiano Ronaldo, Ashley Young, Steven Gerrard, Cesc Fàbregas; Fernando Torres, Emmanuel Adebayor — precisely contemporary PFA XI. Gerrard player's actual role stays CAM; 4-4-2 selection includes CM tactical slot. Updated `assets/app.js` to support optional pitch displayPosition, so both central midfielders display CM while their original ranking positions remain independent.
+- All 11 Best XI players have 2005-06 and 2006-07 individual domestic league starting-appearance data now recorded, including non-PL seasons in La Liga, Ligue 1 and EFL Championship; **139/170** candidates still missing at least one older starting record. 170/170 field position majority unverified from match-by-match lineups; two-source DOB audit incomplete.
+- Current goals may differ across historical data providers: Ashley Young 9 per FBref/11v11 vs 8 per Statbunker; primary 9. Gerrard 8 assists FBref vs BeSoccer 9; primary 8. Discrepancies remain annotated.
+- **Connector-side JS structural audit passed (0 errors)**: IDs, caps, tiers, ranks, nine clubs / 99 starters, 170 starts/apps/goals, valid 11 unique XI with mapped tactical slots, names identical to 2007-08 PFA best team. **Node CLI not run; actual deployed site interaction/crests not independently verified.** The user's earlier website-confirmation through 2005-06 remains separately recorded. **All evaluation remains user-unapproved DRAFT.**
+- Review files: `audit/player-research/premierleague-2007-08-research.md` plus 9 club tables, 2 position ranking reports and `audit/player-research/premierleague-2007-08-checkpoint.md`. Stop before 2008-09.
