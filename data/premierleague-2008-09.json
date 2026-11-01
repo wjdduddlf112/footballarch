@@ -80,7 +80,9 @@
         "fulham": "https://www.statbunker.com/competitions/SeasonAppearances?club_id=55&comp_id=243",
         "everton": "https://www.statbunker.com/competitions/SeasonAppearances?club_id=10&comp_id=243",
         "chelsea": "https://www.statbunker.com/competitions/SeasonAppearances?club_id=8&comp_id=243"
-      }
+      },
+      "bestXiPreviousStartsComplete": 11,
+      "priorYearOneOrBothMissing": 90
     },
     "bestXiReview": {
       "status": "proposed_unapproved",
@@ -96,7 +98,10 @@
       "Best XI selection explicitly prioritizes strongest players over rigid DM/CM vs CAM field identities and need not equal PFA XI.",
       "No actual browser validation or Node CLI run at this stage; user approval pending.",
       "Excluded 0-start Fábio da Silva (Man Utd), Leon Andreasen (Fulham), Shaun Maloney (Celtic 2008 transfer), Marlon Harewood (0 starts Villa). Inserted 2008-09 Aston Villa Steve Sidwell (11 PL starts) and Emile Heskey (11).",
-      "Some primary goals differ between FBref and Statbunker: 2008-09 Arsenal Clichy FBref 0 Statbunker 1, Everton Arteta FBref 6 Statbunker 5, Pienaar FBref 3 Statbunker 2, Liverpool Xabi Alonso FBref 4 Statbunker 3; conflicts noted explicitly, source priority FBref for goals where individually retrieved."
+      "Some primary goals differ between FBref and Statbunker: 2008-09 Arsenal Clichy FBref 0 Statbunker 1, Everton Arteta FBref 6 Statbunker 5, Pienaar FBref 3 Statbunker 2, Liverpool Xabi Alonso FBref 4 Statbunker 3; conflicts noted explicitly, source priority FBref for goals where individually retrieved.",
+      "2007-08 Nicolas Anelka 18 PL Bolton starts + 10 Chelsea starts = 28 across both clubs, not only 10 Chelsea starts. This matters for 3-year weighted evaluation.",
+      "2008-09 Arsenal Clichy goals FBref zero versus Statbunker one: preferred FBref primary and exception documented.",
+      "2008-09 Best XI 11/11 previous two-season league starts now populated with transfers and overseas leagues separately identified."
     ]
   },
   "clubs": [
@@ -732,14 +737,17 @@
       "review": "draft_unapproved",
       "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
       "sources": [
-        "https://fbref.com/en/squads/19538871/2008-2009/c9/Manchester-United-Stats-Premier-League"
+        "https://fbref.com/en/squads/19538871/2008-2009/c9/Manchester-United-Stats-Premier-League",
+        "https://fbref.com/en/players/4b30b37e/Nemanja-Vidic"
       ],
       "previousSeasons": {
         "2006-07": {
           "club": "manutd",
-          "leagueStarts": null,
-          "leagueGoals": null,
-          "status": "prior_draft_source_pending_double_check"
+          "league": "Premier League",
+          "leagueStarts": 25,
+          "leagueGoals": 3,
+          "status": "FBref_individual_2006_2008_domestic_row_checked",
+          "source": "https://fbref.com/en/players/4b30b37e/Nemanja-Vidic"
         },
         "2007-08": {
           "club": "manutd",
@@ -748,7 +756,7 @@
           "status": "prior_draft_source_pending_double_check"
         }
       },
-      "assessmentRationale": "2008-09 Manchester United FC의 CB 기용 및 개인 영향력을 기준으로 S 잠정 평가. 2008-09 최우선, 2007-08 보조, 2006-07 가장 낮게 가중. 팀의 리그 순위는 선수 티어에 가산하지 않음. 2008-09 PL 선발 33, 골 4; 이전 시즌 타 리그 이력은 추가 증빙 필요.",
+      "assessmentRationale": "2008-09 맨유 리그 34경기·33선발, 4골, 수비 라인 장악과 제공권. 2007-08 32선발·2006-07 25선발의 지속성, 2009 PFA 올해의 팀을 보조 검증. 팀 우승 성적 자체는 가산하지 않음. 최근 시즌 > 직전 > 2년 전 순 가중, 개인 기량 기준 잠정 DRAFT.",
       "candidateRationale": "4-4-2 / 4-2-3-1 계열 당시 전술과 실제 시즌 후보군을 기준으로 신규 선정. 개별 경기 최다 포지션은 추후 전술 시트와 대조.",
       "rankRationale": "2008-09 CB 후보 중 1위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지."
     },
@@ -863,14 +871,17 @@
       "review": "draft_unapproved",
       "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
       "sources": [
-        "https://fbref.com/en/squads/19538871/2008-2009/c9/Manchester-United-Stats-Premier-League"
+        "https://fbref.com/en/squads/19538871/2008-2009/c9/Manchester-United-Stats-Premier-League",
+        "https://fbref.com/en/players/51a3caf1/Patrice-Evra"
       ],
       "previousSeasons": {
         "2006-07": {
           "club": "manutd",
-          "leagueStarts": null,
-          "leagueGoals": null,
-          "status": "prior_draft_source_pending_double_check"
+          "league": "Premier League",
+          "leagueStarts": 22,
+          "leagueGoals": 1,
+          "status": "FBref_individual_2006_2008_domestic_row_checked",
+          "source": "https://fbref.com/en/players/51a3caf1/Patrice-Evra"
         },
         "2007-08": {
           "club": "manutd",
@@ -1318,7 +1329,7 @@
           "status": "prior_draft_source_pending_double_check"
         }
       },
-      "assessmentRationale": "2008-09 Manchester United FC의 RW 기용 및 개인 영향력을 기준으로 S 잠정 평가. 2008-09 최우선, 2007-08 보조, 2006-07 가장 낮게 가중. 팀의 리그 순위는 선수 티어에 가산하지 않음. 2008-09 PL 선발 31, 골 18; 이전 시즌 타 리그 이력은 추가 증빙 필요.",
+      "assessmentRationale": "리그 33경기(31선발) 18골·6도움. 직전 시즌 31골, 그 전 시즌 17골의 연속적인 개인 공격 생산력. 득점만을 기준으로 하지 않고 오른쪽의 침투·창출, 포지션 동료 비교를 최우선, 팀 우승 자체는 가산하지 않음. 최근 시즌 > 직전 > 2년 전 순 가중, 개인 기량 기준 잠정 DRAFT.",
       "candidateRationale": "4-4-2 / 4-2-3-1 계열 당시 전술과 실제 시즌 후보군을 기준으로 신규 선정. 개별 경기 최다 포지션은 추후 전술 시트와 대조.",
       "rankRationale": "2008-09 RW 후보 중 1위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지."
     },
@@ -1911,14 +1922,17 @@
       "review": "draft_unapproved",
       "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
       "sources": [
-        "https://fbref.com/en/squads/822bd0ba/2008-2009/c9/Liverpool-Stats-Premier-League"
+        "https://fbref.com/en/squads/822bd0ba/2008-2009/c9/Liverpool-Stats-Premier-League",
+        "https://fbref.com/en/players/caeb5442/Steven-Gerrard"
       ],
       "previousSeasons": {
         "2006-07": {
           "club": "liverpool",
-          "leagueStarts": null,
-          "leagueGoals": null,
-          "status": "prior_draft_source_pending_double_check"
+          "league": "Premier League",
+          "leagueStarts": 35,
+          "leagueGoals": 7,
+          "status": "FBref_individual_2006_2008_domestic_row_checked",
+          "source": "https://fbref.com/en/players/caeb5442/Steven-Gerrard"
         },
         "2007-08": {
           "club": "liverpool",
@@ -1927,7 +1941,7 @@
           "status": "prior_draft_source_pending_double_check"
         }
       },
-      "assessmentRationale": "2008-09 Liverpool FC의 CAM 기용 및 개인 영향력을 기준으로 S 잠정 평가. 2008-09 최우선, 2007-08 보조, 2006-07 가장 낮게 가중. 팀의 리그 순위는 선수 티어에 가산하지 않음. 2008-09 PL 선발 30, 골 16; 이전 시즌 타 리그 이력은 추가 증빙 필요.",
+      "assessmentRationale": "리버풀 2008-09 리그 31경기(30선발) 16골·9도움, 토레스 후방의 CAM 기용이 개인 창출과 득점에 직접 기여. 직전 2007-08 리그 11골·8도움, 2006-07 7골. BEST XI에서는 4-4-2의 CM 필드 슬롯으로 이동하지만 선수 등록 포지션 CAM과 별도 포지션 랭킹을 유지. 최근 시즌 > 직전 > 2년 전 순 가중, 개인 기량 기준 잠정 DRAFT.",
       "candidateRationale": "4-2-3-1 계열 당시 전술과 실제 시즌 후보군을 기준으로 신규 선정. 개별 경기 최다 포지션은 추후 전술 시트와 대조.",
       "rankRationale": "2008-09 CAM 후보 중 1위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지."
     },
@@ -2129,14 +2143,17 @@
       "currentSeasonStatsStatus": "2008_09_PL_season_statbunker_club_table",
       "sources": [
         "https://fbref.com/en/squads/822bd0ba/2008-2009/c9/Liverpool-Stats-Premier-League",
-        "https://po.statbunker.com/competitions/SeasonAppearances?club_id=4&comp_id=243"
+        "https://po.statbunker.com/competitions/SeasonAppearances?club_id=4&comp_id=243",
+        "https://fbref.com/en/players/bdf7b97d/Fernando-Torres"
       ],
       "previousSeasons": {
         "2006-07": {
-          "club": null,
-          "leagueStarts": null,
-          "leagueGoals": null,
-          "status": "overseas_or_unselected_club_prior_history_pending"
+          "club": "atleticomadrid",
+          "league": "La Liga",
+          "leagueStarts": 36,
+          "leagueGoals": 15,
+          "status": "FBref_individual_2006_2008_domestic_row_checked",
+          "source": "https://fbref.com/en/players/bdf7b97d/Fernando-Torres"
         },
         "2007-08": {
           "club": "liverpool",
@@ -2145,7 +2162,7 @@
           "status": "prior_draft_source_pending_double_check"
         }
       },
-      "assessmentRationale": "2008-09 Liverpool FC의 ST 기용 및 개인 영향력을 기준으로 A+ 잠정 평가. 2008-09 최우선, 2007-08 보조, 2006-07 가장 낮게 가중. 팀의 리그 순위는 선수 티어에 가산하지 않음. 2008-09 PL 선발 자료 미확보, 골 14; 이전 시즌 타 리그 이력은 추가 증빙 필요.",
+      "assessmentRationale": "2008-09 리버풀 24경기 20선발 14골 3도움, 선발당 높은 득점력. 2007-08 리버풀 29선발 24골, 2006-07 Atlético Madrid 라리가 36선발 15골. 최근 시즌 비중 최우선, 타 리그 출전은 보조 이력으로 구분. 최근 시즌 > 직전 > 2년 전 순 가중, 개인 기량 기준 잠정 DRAFT.",
       "candidateRationale": "4-2-3-1 계열 당시 전술과 실제 시즌 후보군을 기준으로 신규 선정. 개별 경기 최다 포지션은 추후 전술 시트와 대조.",
       "rankRationale": "2008-09 ST 후보 중 2위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지."
     },
@@ -2474,23 +2491,28 @@
       "review": "draft_unapproved",
       "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
       "sources": [
-        "https://fbref.com/en/squads/cff3d9bb/2008-2009/c9/Chelsea-Stats-Premier-League"
+        "https://fbref.com/en/squads/cff3d9bb/2008-2009/c9/Chelsea-Stats-Premier-League",
+        "https://fbref.com/en/players/13dd442f/Jose-Bosingwa"
       ],
       "previousSeasons": {
         "2006-07": {
-          "club": null,
-          "leagueStarts": null,
-          "leagueGoals": null,
-          "status": "overseas_or_unselected_club_prior_history_pending"
+          "club": "porto",
+          "league": "Primeira Liga",
+          "leagueStarts": 25,
+          "leagueGoals": 0,
+          "status": "FBref_individual_2006_2008_domestic_row_checked",
+          "source": "https://fbref.com/en/players/13dd442f/Jose-Bosingwa"
         },
         "2007-08": {
-          "club": null,
-          "leagueStarts": null,
-          "leagueGoals": null,
-          "status": "overseas_or_unselected_club_prior_history_pending"
+          "club": "porto",
+          "league": "Primeira Liga",
+          "leagueStarts": 22,
+          "leagueGoals": 1,
+          "status": "FBref_individual_2006_2008_domestic_row_checked",
+          "source": "https://fbref.com/en/players/13dd442f/Jose-Bosingwa"
         }
       },
-      "assessmentRationale": "2008-09 Chelsea FC의 RB 기용 및 개인 영향력을 기준으로 A 잠정 평가. 2008-09 최우선, 2007-08 보조, 2006-07 가장 낮게 가중. 팀의 리그 순위는 선수 티어에 가산하지 않음. 2008-09 PL 선발 34, 골 2; 이전 시즌 타 리그 이력은 추가 증빙 필요.",
+      "assessmentRationale": "2008-09 첼시 PL 34경기 전부 선발, 2골 3도움. 이전 2007-08 Porto Primeira Liga 22선발 1골, 2006-07 25선발 0골. 3시즌 참고하되 현재 시즌의 개인 오른쪽 풀백 기여를 우선. 최근 시즌 > 직전 > 2년 전 순 가중, 개인 기량 기준 잠정 DRAFT.",
       "candidateRationale": "4-3-3 / 4-1-4-1 계열 당시 전술과 실제 시즌 후보군을 기준으로 신규 선정. 개별 경기 최다 포지션은 추후 전술 시트와 대조.",
       "rankRationale": "2008-09 RB 후보 중 1위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지."
     },
@@ -2662,7 +2684,7 @@
           "status": "prior_draft_source_pending_double_check"
         }
       },
-      "assessmentRationale": "2008-09 Chelsea FC의 CM 기용 및 개인 영향력을 기준으로 S 잠정 평가. 2008-09 최우선, 2007-08 보조, 2006-07 가장 낮게 가중. 팀의 리그 순위는 선수 티어에 가산하지 않음. 2008-09 PL 선발 37, 골 12; 이전 시즌 타 리그 이력은 추가 증빙 필요.",
+      "assessmentRationale": "첼시 2008-09 리그 37전 37선발 12골 10도움. 공격과 중원 연결, 페널티박스 침투, 장기적 기여가 독보적. 2006-07 11골·2007-08 10골을 낮은 가중치로 추가. BEST XI에서는 필드 CM, 선수 본래 포지션 CM. 최근 시즌 > 직전 > 2년 전 순 가중, 개인 기량 기준 잠정 DRAFT.",
       "candidateRationale": "4-3-3 / 4-1-4-1 계열 당시 전술과 실제 시즌 후보군을 기준으로 신규 선정. 개별 경기 최다 포지션은 추후 전술 시트와 대조.",
       "rankRationale": "2008-09 CM 후보 중 1위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지."
     },
@@ -2904,7 +2926,8 @@
       "review": "draft_unapproved",
       "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
       "sources": [
-        "https://fbref.com/en/squads/cff3d9bb/2008-2009/c9/Chelsea-Stats-Premier-League"
+        "https://fbref.com/en/squads/cff3d9bb/2008-2009/c9/Chelsea-Stats-Premier-League",
+        "https://fbref.com/en/players/931ed5e9/Nicolas-Anelka"
       ],
       "previousSeasons": {
         "2006-07": {
@@ -2914,13 +2937,27 @@
           "status": "prior_draft_source_pending_double_check"
         },
         "2007-08": {
-          "club": "chelsea",
-          "leagueStarts": 10,
-          "leagueGoals": 1,
-          "status": "prior_draft_source_pending_double_check"
+          "club": "bolton+chelsea",
+          "league": "Premier League",
+          "leagueStarts": 28,
+          "leagueGoals": 11,
+          "segments": [
+            {
+              "club": "bolton",
+              "leagueStarts": 18,
+              "leagueGoals": 10
+            },
+            {
+              "club": "chelsea",
+              "leagueStarts": 10,
+              "leagueGoals": 1
+            }
+          ],
+          "status": "FBref_both_PL_clubs_half_season_reconciled",
+          "source": "https://fbref.com/en/players/931ed5e9/Nicolas-Anelka"
         }
       },
-      "assessmentRationale": "2008-09 Chelsea FC의 ST 기용 및 개인 영향력을 기준으로 S 잠정 평가. 2008-09 최우선, 2007-08 보조, 2006-07 가장 낮게 가중. 팀의 리그 순위는 선수 티어에 가산하지 않음. 2008-09 PL 선발 33, 골 19; 이전 시즌 타 리그 이력은 추가 증빙 필요.",
+      "assessmentRationale": "2008-09 PL 37경기(33선발) 19골로 득점왕. 2007-08에는 볼턴 18선발 10골과 첼시 10선발 1골, 합계 28선발 11골. 2006-07 볼턴 35선발 11골. 3시즌 최근 가중 득점 생산력과 최전방 역할을 반영한 S. 최근 시즌 > 직전 > 2년 전 순 가중, 개인 기량 기준 잠정 DRAFT.",
       "candidateRationale": "4-3-3 / 4-1-4-1 계열 당시 전술과 실제 시즌 후보군을 기준으로 신규 선정. 개별 경기 최다 포지션은 추후 전술 시트와 대조.",
       "rankRationale": "2008-09 ST 후보 중 1위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지."
     },
@@ -3201,7 +3238,7 @@
       "leagueAppearances": 31,
       "leagueStarts": 30,
       "starts": 30,
-      "leagueGoals": 1,
+      "leagueGoals": 0,
       "leagueAssists": 0,
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
@@ -3227,7 +3264,7 @@
       "assessmentRationale": "2008-09 Arsenal FC의 LB 기용 및 개인 영향력을 기준으로 A- 잠정 평가. 2008-09 최우선, 2007-08 보조, 2006-07 가장 낮게 가중. 팀의 리그 순위는 선수 티어에 가산하지 않음. 2008-09 PL 선발 30, 골 0; 이전 시즌 타 리그 이력은 추가 증빙 필요.",
       "candidateRationale": "4-4-2 / 4-2-3-1 계열 당시 전술과 실제 시즌 후보군을 기준으로 신규 선정. 개별 경기 최다 포지션은 추후 전술 시트와 대조.",
       "rankRationale": "2008-09 LB 후보 중 4위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지.",
-      "goalCrossSourceNote": "FBref historical 2008-09 Premier League goals used as primary; Statbunker may differ on some goals/own-goals."
+      "goalCrossSourceNote": "FBref 2008-09 PL: 0 league goals; Statbunker archive labels 1, conflicting historical attribution. Use FBref as primary."
     },
     {
       "id": "pl-2008-09-arsenal-07",
@@ -5026,14 +5063,29 @@
       "review": "draft_unapproved",
       "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
       "sources": [
-        "https://fbref.com/en/squads/8602292d/2008-2009/c9/Aston-Villa-Stats-Premier-League"
+        "https://fbref.com/en/squads/8602292d/2008-2009/c9/Aston-Villa-Stats-Premier-League",
+        "https://fbref.com/en/players/be927d03/Ashley-Young"
       ],
       "previousSeasons": {
         "2006-07": {
-          "club": null,
-          "leagueStarts": null,
-          "leagueGoals": null,
-          "status": "overseas_or_unselected_club_prior_history_pending"
+          "club": "watford+astonvilla",
+          "league": "Premier League",
+          "leagueStarts": 31,
+          "leagueGoals": 5,
+          "status": "FBref_individual_2006_2008_domestic_row_checked",
+          "source": "https://fbref.com/en/players/be927d03/Ashley-Young",
+          "segments": [
+            {
+              "club": "watford",
+              "leagueStarts": 20,
+              "leagueGoals": 3
+            },
+            {
+              "club": "astonvilla",
+              "leagueStarts": 11,
+              "leagueGoals": 2
+            }
+          ]
         },
         "2007-08": {
           "club": "astonvilla",
@@ -5042,7 +5094,7 @@
           "status": "prior_draft_source_pending_double_check"
         }
       },
-      "assessmentRationale": "2008-09 Aston Villa FC의 LW 기용 및 개인 영향력을 기준으로 A+ 잠정 평가. 2008-09 최우선, 2007-08 보조, 2006-07 가장 낮게 가중. 팀의 리그 순위는 선수 티어에 가산하지 않음. 2008-09 PL 선발 36, 골 7; 이전 시즌 타 리그 이력은 추가 증빙 필요.",
+      "assessmentRationale": "2008-09 Aston Villa PL 36전 36선발, 7골 7도움(FBref). 2007-08 동일 구단 9골 14도움. 2006-07 Watford+Villa 합계 31선발 5골. 출전 안정성·좌측 개인 돌파와 기회 창출로 A+, 팀 6위 자체는 가산 제외. 최근 시즌 > 직전 > 2년 전 순 가중, 개인 기량 기준 잠정 DRAFT.",
       "candidateRationale": "4-3-3 / 4-4-2 계열 당시 전술과 실제 시즌 후보군을 기준으로 신규 선정. 개별 경기 최다 포지션은 추후 전술 시트와 대조.",
       "rankRationale": "2008-09 LW 후보 중 1위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지."
     },
