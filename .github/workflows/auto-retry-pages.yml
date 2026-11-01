@@ -1,0 +1,65 @@
+name: Auto-retry Football Archive Pages deployment
+
+on:
+  schedule:
+    - cron: '17 */2 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: write
+
+concurrency:
+  group: football-archive-pages-auto-retry
+  cancel-in-progress: false
+
+jobs:
+  retry-latest-failed-deploy:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - name: Retry only a failed current-HEAD Pages deploy when no deployment is running
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          branch_sha="$(gh api "repos/${REPO}/git/ref/heads/main" --jq ".object.sha")"
+          runs="$(gh api "repos/${REPO}/actions/runs?per_page=100")"
+          active_pages="$(jq '[.workflow_runs[] | select(.name == "pages build and deployment" and (.status == "in_progress" or .status == "queued" or .status == "waiting" or .status == "pending" or .status == "requested"))] | length' <<< "$runs")"
+          if (( active_pages > 0 )); then
+            echo "A Pages run is currently active; skipping to avoid concurrent publishing."
+            exit 0
+          fi
+          latest="$(jq -c --arg sha "$branch_sha" '[.workflow_runs[] | select(.name == "pages build and deployment" and .head_sha == $sha)] | sort_by(.created_at) | last // empty' <<< "$runs")"
+          if [[ -z "$latest" || "$latest" == "null" ]]; then
+            echo "No Pages run associated with current main HEAD; do not retry stale commits."
+            exit 0
+          fi
+          run_id="$(jq -r ".id" <<< "$latest")"
+          conclusion="$(jq -r ".conclusion" <<< "$latest")"
+          attempt="$(jq -r ".run_attempt" <<< "$latest")"
+          echo "Latest Pages run $run_id for $branch_sha: conclusion=$conclusion attempt=$attempt"
+          if [[ "$conclusion" == "success" ]]; then
+            echo "Current main commit is already published; no action needed."
+            exit 0
+          fi
+          if [[ "$conclusion" != "failure" ]]; then
+            echo "Not retrying a non-failed Pages run."
+            exit 0
+          fi
+          if (( attempt >= 12 )); then
+            echo "::warning::Stopped after 12 attempts. GitHub Pages backend may require support."
+            exit 0
+          fi
+          jobs="$(gh api "repos/${REPO}/actions/runs/${run_id}/jobs?per_page=100")"
+          deploy_failed="$(jq '[.jobs[] | select(.name == "deploy" and .conclusion == "failure")] | length' <<< "$jobs")"
+          build_passed="$(jq '[.jobs[] | select(.name == "build" and .conclusion == "success")] | length' <<< "$jobs")"
+          if (( deploy_failed == 0 || build_passed == 0 )); then
+            echo "Only automated retries of successful-build/failed-deployment cases are allowed."
+            exit 0
+          fi
+          echo "Re-running only failed jobs for Pages workflow run $run_id; no changes to site data."
+          gh api -X POST "repos/${REPO}/actions/runs/${run_id}/rerun-failed-jobs" --silent
+          echo "Retry requested; verify the subsequent Pages run attempt for actual result."
