@@ -3,7 +3,7 @@
 Date: 2026-11-01  
 Repository: `wjdduddlf112/footballarch`, branch `main`  
 Deployment target: https://wjdduddlf112.github.io/footballarch/  
-Status: **20 tracked season datasets; 1099/2639 provisional player tier proposals; 1540 unrated. PL 1999-00 128/128, PL 2000-01 141/141, PL 2001-02 163/163, PL 2002-03 132/132 and PL 2003-04 105/105 and PL 2004-05 150/150 DRAFT tier/rank entries.**
+Status: **21 tracked season datasets; 1241/2781 provisional player tier proposals; 1540 unrated. PL 1999-00 128/128, PL 2000-01 141/141, PL 2001-02 163/163, PL 2002-03 132/132 and PL 2003-04 105/105 and PL 2004-05 150/150 and PL 2005-06 142/142 DRAFT tier/rank entries.**
 
 ## Scope and method
 
@@ -28,6 +28,7 @@ Status: **20 tracked season datasets; 1099/2639 provisional player tier proposal
 | Premier League | 2002-03 | 132 | 132 | 132 | 0 | 0 | 11 proposed (unapproved) | No |
 | Premier League | 2003-04 | 105 | 105 | 105 | 0 | 0 (entered; not independently checked) | 11 proposed (unapproved) | No |
 | Premier League | 2004-05 | 150 | 150 | 150 | 0 | 0 (season-only data entered) | 11 proposed (unapproved) | No |
+| Premier League | 2005-06 | 142 | 142 | 142 | 0 | 0 (entered; individual audit pending) | 11 proposed (unapproved) | No |
 | Serie A | 1999-00 | 119 | 0 | 0 | 1 | 0 | Not selected | No |
 | Serie A | 2000-01 | 109 | 0 | 0 | 7 | 0 | Not selected | No |
 | Serie A | 2001-02 | 137 | 0 | 0 | 0 | 0 | Not selected | No |
@@ -37,7 +38,7 @@ Status: **20 tracked season datasets; 1099/2639 provisional player tier proposal
 | Ligue 1 | 1999-00 | 111 | 0 | 0 | 3 | 19 | Not selected | No |
 | Ligue 1 | 2000-01 | 141 | 0 | 0 | 15 | 20 | Not selected | No |
 | Ligue 1 | 2001-02 | 134 | 0 | 0 | 11 | 6 | Not selected | No |
-| **Total** | **20 seasons** | **2639** | **1099** | **1099** | **551** | **383** | **8 provisional** | **0/20** |
+| **Total** | **21 seasons** | **2781** | **1241** | **1241** | **551** | **383** | **9 provisional** | **0/21** |
 
 Tier distribution for the 280 existing La Liga provisional grades: S=9; A+=17; A=24; A-=47. All other tier grades are carried from previously approved-as-draft work and are **not** upgraded to final.
 
@@ -279,3 +280,15 @@ Three-season evidence exists in summarized form for each tier rationale, but ind
 - Structural audit via GitHub connector/JS: 8 club memberships, 11 club starters each, slot caps, unique IDs, continuous per-position ranks, valid tier values and Best XI references. Old validator's hard-coded snapshot counts require update, so claiming it has been executed is prohibited.
 - **Node CLI validation NOT RUN**; **live browser five-tab and image validation NOT VERIFIED**; **user acceptance NOT GIVEN**.
 - No 2005-06 or later Premier League player work authorized; stop at 2004-05.
+
+
+## Premier League 2005-06 checkpoint — 2026-11-01
+
+- User explicitly approved one season beyond 2004-05: **2005-06 only**. All assessments remain **DRAFT, user-unapproved**.
+- 2005-06 PL clubs actually entering 2006-07 Europe: Chelsea, Manchester United, Liverpool, Arsenal (UCL); Tottenham, Blackburn, West Ham (UEFA Cup); Newcastle (Intertoto, later UEFA Cup). The West Ham FA Cup runner-up and Newcastle actual Intertoto appearances are accounted for; Europa entrants matched to the 2006-07 qualification archive.
+- New season-specific roster selection: **142 candidate players**, split Chelsea 21; Manchester United 17; Liverpool 19; Arsenal 18; Tottenham 16; Blackburn 16; Newcastle 18; West Ham 17. Each club has **11 nominal starter slots**. Former season candidate lists were NOT reused as selection lists; only earlier individual season data was consulted for historical context.
+- **142/142 provisional tiers and 142/142 per-position ranks**, World Class **20** (S/A+) and League Top Class **45** (S/A+/A/A-). Tier distribution: S=6, A+=14, A=10, A-=15, B+=54, B=20, B-=14, C+=9, C=0, C-=0, D=0. 11 unique draft Best XI selections in the site's 4-4-2 position layout.
+- **142/142** 2005-06 individual PL starts recorded from historical season-specific sources. Not all have been independently checked against a second source; some goals remain null pending verification. **94** players have missing league starts for one or both of 2003-04 and 2004-05 within earlier shortlisted season datasets, which are not exhaustive for prior transfer clubs. **142/142** need match-by-match verification of their most frequent playing position (exception Gerrard at right midfield supported by explicit former manager statement).
+- Formation: PL-wide mainstream 4-4-2 is a **provisional** selection, not a proven across-all-20-clubs frequency count. Chelsea played 4-3-3; Arsenal used 4-5-1 in Europe but primarily 4-4-2 in the domestic league. Club patterns stored separately and explained in the new season research report.
+- Per-club complete tables, individual tier/rank and evidence caveats stored at `audit/player-research/premierleague-2005-06-research.md`. Source JSON at `data/premierleague-2005-06.json` and qualifier ledger `data/premierleague-europe-qualification-1999-2026.json`.
+- Connector-side JSON structural validation distinct from source corroboration. **Node CLI validation NOT RUN; live GitHub Pages browser/tab/crest verification NOT PERFORMED; user approval NOT GIVEN.** Preserve prior standings, emblem and existing page UI; do not start 2006-07 without another user instruction.
