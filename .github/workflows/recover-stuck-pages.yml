@@ -1,0 +1,41 @@
+name: Recover stuck Football Archive Pages deployment
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/recover-stuck-pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+
+jobs:
+  cancel-stale-pages-deployment:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - name: Inspect and release only the identified blocked Pages deployment
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BLOCKED_DEPLOY_SHA: f93800163ed4d203fe2f8df0b53072427c1cb5b3
+        shell: bash
+        run: |
+          set -euo pipefail
+          endpoint="repos/${GITHUB_REPOSITORY}/pages/deployments/${BLOCKED_DEPLOY_SHA}"
+          if ! gh api "${endpoint}" > /tmp/pages-deployment.json; then
+            echo "The previously blocked deployment is unavailable or no longer exists; no cancellation performed."
+            exit 0
+          fi
+          status="$(node -p 'JSON.parse(require("fs").readFileSync("/tmp/pages-deployment.json","utf8")).status')"
+          echo "Previously blocked deployment ${BLOCKED_DEPLOY_SHA} status: ${status}"
+          case "${status}" in
+            in_progress|pending|queued)
+              gh api -X POST "${endpoint}/cancel"
+              echo "Requested cancellation of the exact blocked deployment SHA; retry the latest Pages build if needed."
+              ;;
+            *)
+              echo "Already finalized; no cancellation performed."
+              ;;
+          esac

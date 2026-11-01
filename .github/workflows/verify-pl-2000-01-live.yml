@@ -3,6 +3,12 @@ name: Verify Football Archive PL 2000-01 DRAFT
 on:
   push:
     branches: [main]
+    paths:
+      - '.github/workflows/verify-pl-2000-01-live.yml'
+      - 'index.html'
+      - 'assets/**'
+      - 'data/premierleague-2000-01.json'
+      - 'scripts/verify-pl-2000-01-*.mjs'
   workflow_dispatch:
 
 permissions:
@@ -10,11 +16,11 @@ permissions:
 
 jobs:
   test-draft-and-live:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with:
           node-version: '22'
       - name: Validate JS syntax and PL 2000-01 DRAFT
@@ -41,7 +47,7 @@ jobs:
           node scripts/verify-pl-2000-01-live.mjs
       - name: Upload real browser screenshots and JSON report
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: pl-2000-01-pages-live-audit
           path: audit-artifacts/pl-2000-01-live/
