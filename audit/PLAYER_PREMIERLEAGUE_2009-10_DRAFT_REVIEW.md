@@ -259,16 +259,23 @@ Representative formation: 4-2-3-1
 | Position | Name | Club | Draft tier |
 |---|---|---|---|
 | GK | 페페 레이나 (Pepe Reina) | Liverpool FC | A+ |
-| LB | 애슐리 콜 (Ashley Cole) | Chelsea FC | A+ |
+| LB | 파트리스 에브라 (Patrice Evra) | Manchester United FC | A+ |
 | CB | 존 테리 (John Terry) | Chelsea FC | A+ |
 | CB | 네마냐 비디치 (Nemanja Vidić) | Manchester United FC | A+ |
-| RB | 바카리 사냐 (Bacary Sagna) | Arsenal FC | A |
+| RB | 브라니슬라프 이바노비치 (Branislav Ivanović) | Chelsea FC | A |
 | LW | 플로랑 말루다 (Florent Malouda) | Chelsea FC | A+ |
 | CM | 프랭크 램퍼드 (Frank Lampard) | Chelsea FC | S |
 | CM | 제임스 밀너 (James Milner) | Aston Villa FC | A+ |
 | RW | 안토니오 발렌시아 (Antonio Valencia) | Manchester United FC | A |
 | ST | 디디에 드로그바 (Didier Drogba) | Chelsea FC | S |
 | ST | 웨인 루니 (Wayne Rooney) | Manchester United FC | S |
+
+### Best XI alignment correction (2026-11-01)
+
+- **RB**: corrected Sagna (position rank #2) → **Branislav Ivanović (position rank #1)**, both preliminary A. The original XI chose rank #2 without an explained tactical exception; Ivanović was in contemporary PFA 2009-10 Team of the Year.
+- **LB**: corrected Ashley Cole (position rank #2) → **Patrice Evra (position rank #1)**, both preliminary A+. The same XI/ranking discrepancy was present and Evra also featured in contemporary PFA XI.
+- Sources: [Sky Sports contemporary PFA Awards, 26 Apr 2010](https://www.skysports.com/football/news/11096/6116747), [11v11 season review](https://www.11v11.com/competitions/premier-league/2010/).
+- Player tiers/position ranks remain **unapproved DRAFT**; full 2007-10 individual weighted verification remains open.
 
 ## Evidence and integrity gates
 
