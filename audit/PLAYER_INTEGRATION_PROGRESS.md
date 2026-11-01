@@ -3,7 +3,7 @@
 Date: 2026-11-01  
 Repository: `wjdduddlf112/footballarch`, branch `main`  
 Deployment target: https://wjdduddlf112.github.io/footballarch/  
-Status: **18 tracked season datasets; 844/2384 provisional player tier proposals; 1540 unrated. PL 1999-00 128/128, PL 2000-01 141/141, PL 2001-02 163/163, PL 2002-03 132/132 DRAFT tier/rank entries.**
+Status: **19 tracked season datasets; 949/2489 provisional player tier proposals; 1540 unrated. PL 1999-00 128/128, PL 2000-01 141/141, PL 2001-02 163/163, PL 2002-03 132/132 and PL 2003-04 105/105 DRAFT tier/rank entries.**
 
 ## Scope and method
 
@@ -26,6 +26,7 @@ Status: **18 tracked season datasets; 844/2384 provisional player tier proposals
 | Premier League | 2000-01 | 141 | 141 | 141 | 0 | 0 | 11 proposed (unapproved) | No |
 | Premier League | 2001-02 | 163 | 163 | 163 | 0 | 0 | 11 proposed (unapproved) | No |
 | Premier League | 2002-03 | 132 | 132 | 132 | 0 | 0 | 11 proposed (unapproved) | No |
+| Premier League | 2003-04 | 105 | 105 | 105 | 0 | 0 (entered; not independently checked) | 11 proposed (unapproved) | No |
 | Serie A | 1999-00 | 119 | 0 | 0 | 1 | 0 | Not selected | No |
 | Serie A | 2000-01 | 109 | 0 | 0 | 7 | 0 | Not selected | No |
 | Serie A | 2001-02 | 137 | 0 | 0 | 0 | 0 | Not selected | No |
@@ -35,7 +36,7 @@ Status: **18 tracked season datasets; 844/2384 provisional player tier proposals
 | Ligue 1 | 1999-00 | 111 | 0 | 0 | 3 | 19 | Not selected | No |
 | Ligue 1 | 2000-01 | 141 | 0 | 0 | 15 | 20 | Not selected | No |
 | Ligue 1 | 2001-02 | 134 | 0 | 0 | 11 | 6 | Not selected | No |
-| **Total** | **18 seasons** | **2384** | **844** | **844** | **551** | **383** | **6 provisional** | **0/18** |
+| **Total** | **19 seasons** | **2489** | **949** | **949** | **551** | **383** | **7 provisional** | **0/19** |
 
 Tier distribution for the 280 existing La Liga provisional grades: S=9; A+=17; A=24; A-=47. All other tier grades are carried from previously approved-as-draft work and are **not** upgraded to final.
 
@@ -249,3 +250,17 @@ Three-season evidence exists in summarized form for each tier rationale, but ind
 - Proposed tiers: S=3, A+=11, A=10, A-=27, B+=44, B=21, B-=16, C+=6, C/C-/D=0. World Class S/A+ **14**; League Top Class S/A+/A/A- **51**. All 132 grades and all 132 position-specific ranks remain unapproved.
 - New structural gate `scripts/verify-pl-2002-03-draft.mjs` executed **PASS** after 132 selection update; per-team 11 nominal tactical starters, caps and rank continuity, league starts, eligible-club/Best XI links and preserved standings checked. New live script and `.github/workflows/verify-pl-2002-03-live.yml` checks Pages latest JSON, five UI views and screenshot artifacts, but cannot be called passed until Actions actually runs successfully.
 - Historical audit limitation: a portion of 2000-01/2001-02 detailed match evidence and match-by-match exact predominant player position remains unfinished. Any quality claims are **DRAFT evaluations**, not certified complete historical statistics, and current season starters' status does not mean individual player was always a literal starter in the nominal 4-4-2 grouping.
+
+
+## Premier League 2003-04 checkpoint — 2026-11-01
+
+- New season-specific candidate investigation, not an import from prior candidate branches; current-season list comprises **105 players from 6 English top-flight 2003-04 clubs** who participated in 2004-05 European competitions: Arsenal, Chelsea, Manchester United, Liverpool, Newcastle United, Middlesbrough.
+- 2004-05 historical UCL/UEFA Cup entries cross-checked against UEFA and 2004 Intertoto competition listing. Millwall FC participated in UEFA Cup but was not a 2003-04 Premier League club; omitted from the PL player pool. Dedicated qualifier archive `data/premierleague-europe-qualification-1999-2026.json` updated.
+- New draft grades and positional ranks **105/105**, World Class **17**, League Top Class **38**, 4-4-2 Best XI (11 unique player references) proposed, not approved.
+- All 105 records have formatted DOB, club and 2003-04 PL league-start input. **Individually cross-checked league starts: 0/105**; all 105 are provisional until player-by-player source corroboration. This number is not a historical verification claim.
+- **50 players** lack at least one earlier individual season starts input for 2001-02 or 2002-03; full match-by-match majority position **105 pending**. No exact missing statistic is fabricated; null remains in prior-season data where not found.
+- Connector-side structural validation: 105 unique IDs, 6 x 11 nominal starters, per-team slot caps, positional rankings 1..N, DOB/date syntax, nonempty rationale/source, XI references passed. One stray `B+ ` whitespace tier was normalized to B+ for Danny Murphy.
+- Local Node CLI validators and independent browser/crest checks were **NOT RUN / NOT VERIFIED**; JSON write to main is verified but actual GitHub Pages display is not independently confirmed.
+- Full six-club candidate list, positional ranking tables, preliminary grades and evidence gaps: `audit/player-research/premierleague-2003-04-research.md`.
+- Player JSON: `data/premierleague-2003-04.json` (draft/unapproved), source standings and existing frontend preserved.
+- Work stops after 2003-04. Do **not** change approved status or begin 2004-05 without explicit permission.
