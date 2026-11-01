@@ -21,7 +21,7 @@ Status: **24 tracked season datasets; 1682/3222 provisional player tier proposal
 | La Liga | 2000-01 | 132 | 132 | 132 | 0 | 0 | 11 proposed | No |
 | La Liga | 2001-02 | 135 | 0 | 0 | 82 | 0 | Not selected | No |
 | La Liga | 2002-03 | 128 | 0 | 0 | 96 | 0 | Not selected | No |
-| La Liga | 2003-04 | 138 | 0 | 0 | 106 | 0 | Not selected | No |
+| La Liga | 2003-04 | 138 | 138 DRAFT | 138 DRAFT | 80 | 0 | 11 proposed (unapproved) | Structural checks passed; browser not checked |
 | Premier League | 1999-00 | 128 | 128 | 128 | 0 | 0 | 11 proposed (unapproved) | No |
 | Premier League | 2000-01 | 141 | 141 | 141 | 0 | 0 | 11 proposed (unapproved) | No |
 | Premier League | 2001-02 | 163 | 163 | 163 | 0 | 0 | 11 proposed (unapproved) | No |
@@ -420,3 +420,19 @@ Source TXT instruction adapted to the **2009-10 season only**. Candidate roster 
 - Corrected both positions to respective #1 in season JSON; preserved player tiers and rank numbers. Both new fullbacks were in contemporary 2009-10 PFA Premier League Team of the Year; season-3-year individual review remains open.
 - Season JSON repair commit: `32453027d06f55174d18cfa5b03d87b622ec3168`; all-club review report repair: `3731b9d42b88dfc6c635cda61673b5cb6fb9144a`.
 - GitHub Pages direct live page and deployed JSON GET not verified (web tool inaccessible); avoid claiming browser/render validation.
+
+
+## 2026-11-01 La Liga 2003-04 automatic evaluation (separate DRAFT branch)
+
+- Review branch: `draft/laliga-2003-04-evaluation-20261101`; [Draft PR #12](https://github.com/wjdduddlf112/footballarch/pull/12); not merged, not on GitHub Pages.
+- 9 actual 2004-05 European entrants checked (4 Champions League, 3 UEFA Cup, 2 Intertoto Cup). Zaragoza qualified via Copa del Rey despite finishing 12th. Atlético de Madrid and Villarreal actually participated in Intertoto.
+- Working candidate selection: 138 existing candidate rows compared against nine reopened BDFutbol club-season squad pages. **A fully clean-slate independent roster reconstruction remains incomplete.** Some tactical role labels and starter/backup assignments corrected.
+- Provisional tier and within-position ranking entered for all 138. Tier distribution: S 2, A+ 12, A 10, A- 20, B+ 43, B 36, B- 9, C+ 5, C 1, C- 0, D 0. Every position has ranked players.
+- World Class: 14; League Top Class: 44. Eleven-player proposed Best XI in working 4-2-3-1.
+- 58 of 138 DOBs populated, 80 remain null. 26 DOBs were reused from earlier archive snapshots and require independent confirmation.
+- Prior-year individual starting data can be traced in old repository files for 98 of 276 player-seasons (2001-02 and 2002-03); full individual three-season primary-source verification is **not complete**.
+- Position audit: only 12 previously marked independently verified; 126 not marked verified, and tactical revisions are provisional. Most-used league formation is not quantitatively verified.
+- Structural validation: 10/10 passed (unique IDs and eligible club IDs, source present, valid tiers and unique ranks, 11 starters/club, 11-player position-consistent Best XI, slot limits).
+- Main-branch JSON and standings, emblems, winner marking, other leagues and seasons unaffected by this branch. No actual GitHub Pages interactive browser check conducted. User approval not inferred.
+- Full [138-player, all-position browser-viewable report](https://github.com/wjdduddlf112/footballarch/blob/draft/laliga-2003-04-evaluation-20261101/audit/LALIGA_2003-04_DRAFT_REVIEW_20261101.md), including Korean and original names, club names, DOB, roles, starts, tiers, ranks, World/League Top and XI.
+- Checkpoint row above refers to this branch only. Main branch historical totals in the first line are a baseline and must not be recalculated as deployed results until merge.
