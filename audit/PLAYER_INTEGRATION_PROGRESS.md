@@ -495,3 +495,19 @@ Source TXT instruction adapted to the **2009-10 season only**. Candidate roster 
 - **DRAFT/unapproved; historical verification pending**: DOB only first source; all league starts/apps/assists null; 8 official top-scorer goal totals filled, all others null; 3-year player-by-player stats/majority positions independently unverified.
 - Only current season JSON, seven research JSON, audit report, validator, workflow, this progress file changed; existing site visual components, previous seasons, standings, champion C and badges, emblems preserved.
 - Structural CI and Pages browser review must be tracked separately. No claim of user approval.
+
+
+## Premier League 2017-18 player DRAFT (2026-11-01)
+- 7 actually qualified for 2018/19 UEFA competition, 4 UCL Manchester City/United/Tottenham/Liverpool, 3 UEL Chelsea/Arsenal/Burnley Q2. Evidence official UEFA and RSSSF.
+- League modal **4-2-3-1**: 184/760, official PL tactical review, versus 4-3-3 127 and 4-4-1-1 120.
+- 124 fresh season roster candidates with 7 x 11 provisional starters, per-position one-backup cap, tier and continuous within-role ranks, proposed 4-2-3-1 best XI.
+- **DRAFT / unapproved.** All league starts/apps null, most goals/assists null, 3-season independent form and true majority starting positions unverified, DOB only first-source. Source-specific top scorer / playmaker selective figures recorded only where verified.
+- Club source/role risks: Burnley 4-4-1-1 (Cork DM/Hendrick CAM nominal), Chelsea 3CB wingbacks, Man City/Liverpool 4-3-3. Deadline winter player transfers require scrutiny; no score presumed numeric.
+- Changed only 2017-18 season JSON, seven research JSON, audit report, 2017-18 draft validator/workflow, progress log; all prior seasons and site theme, champion markers, crests maintained.
+- Record CI, PR merge, Pages and actual UI separately after execution.
+
+
+### PL 2017-18 candidate/roster follow-up correction
+- Removed 5 candidates with duplicate cross-club transfer or insufficient on-field starting-capable evidence: Man United Sánchez (Arsenal entry retained), Ibrahimović, Carrick, Romero and Tottenham Llorente.
+- Mapped Man United Rashford into LW and Mata into RW; actual position match-by-match audit remains pending. No player appears for multiple clubs in unified candidates.
+- Updated club-specific JSON, full player table, full ranks and validation script. Current unique player count 119, World Class 19, League Top Class 46.
