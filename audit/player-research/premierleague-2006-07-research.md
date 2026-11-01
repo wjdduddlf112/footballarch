@@ -51,7 +51,7 @@ PL-only statistical reference: https://fbref.com/en/squads/19538871/2006-2007/c9
 | LW | 키런 리처드슨 | Kieran Richardson | Manchester United FC | 1984-10-21 | 후보 | 미확인 | 미확인 | C+ | 13 |
 | RW | 크리스티아누 호날두 | Cristiano Ronaldo | Manchester United FC | 1985-02-05 | 주전 | 31 | 17 | S | 1 |
 | RW | 박지성 | Park Ji-sung | Manchester United FC | 1981-02-25 | 후보 | 미확인 | 미확인 | B+ | 9 |
-| ST | 웨인 루니 | Wayne Rooney | Manchester United FC | 1985-10-24 | 주전 | 33 | 14 | A+ | 4 |
+| ST | 웨인 루니 | Wayne Rooney | Manchester United FC | 1985-10-24 | 주전 | 33 | 14 | A+ | 3 |
 | ST | 루이 사하 | Louis Saha | Manchester United FC | 1978-08-08 | 주전 | 미확인 | 미확인 | A- | 8 |
 | ST | 올레 군나르 솔샤르 | Ole Gunnar Solskjær | Manchester United FC | 1973-02-26 | 후보 | 미확인 | 미확인 | B+ | 17 |
 
@@ -162,7 +162,7 @@ PL-only statistical reference: https://fbref.com/en/squads/361ca564/2006-2007/c9
 | LW | 테무 타이니오 | Teemu Tainio | Tottenham Hotspur FC | 1979-11-27 | 후보 | 20 | 2 | B | 10 |
 | RW | 애런 레넌 | Aaron Lennon | Tottenham Hotspur FC | 1987-04-16 | 주전 | 22 | 2 | A- | 5 |
 | RW | 호삼 갈리 | Hossam Ghaly | Tottenham Hotspur FC | 1981-12-15 | 후보 | 17 | 1 | B | 11 |
-| ST | 디미타르 베르바토프 | Dimitar Berbatov | Tottenham Hotspur FC | 1981-01-30 | 주전 | 30 | 12 | A+ | 3 |
+| ST | 디미타르 베르바토프 | Dimitar Berbatov | Tottenham Hotspur FC | 1981-01-30 | 주전 | 30 | 12 | A+ | 2 |
 | ST | 로비 킨 | Robbie Keane | Tottenham Hotspur FC | 1980-07-08 | 주전 | 19 | 11 | A- | 9 |
 | ST | 저메인 데포 | Jermain Defoe | Tottenham Hotspur FC | 1982-10-07 | 후보 | 20 | 10 | B+ | 15 |
 
@@ -237,7 +237,7 @@ PL-only statistical reference: https://fbref.com/en/squads/e090f40b/2006-2007/c9
 | CM | 데이비드 던 | David Dunn | Blackburn Rovers | 1979-12-27 | 후보 | 미확인 | 미확인 | B | 11 |
 | LW | 모르텐 감스트 페데르센 | Morten Gamst Pedersen | Blackburn Rovers | 1981-09-08 | 주전 | 미확인 | 미확인 | A- | 2 |
 | RW | 데이비드 벤틀리 | David Bentley | Blackburn Rovers | 1984-08-27 | 주전 | 미확인 | 미확인 | A- | 4 |
-| ST | 베니 매카시 | Benni McCarthy | Blackburn Rovers | 1977-11-12 | 주전 | 미확인 | 18 | A+ | 2 |
+| ST | 베니 매카시 | Benni McCarthy | Blackburn Rovers | 1977-11-12 | 주전 | 36 | 18 | A+ | 4 |
 | ST | 샤바니 농다 | Shabani Nonda | Blackburn Rovers | 1977-03-06 | 주전 | 미확인 | 미확인 | B | 20 |
 | ST | 맷 더비셔 | Matt Derbyshire | Blackburn Rovers | 1986-04-14 | 후보 | 미확인 | 미확인 | B+ | 16 |
 
@@ -423,9 +423,9 @@ The following are DRAFT within-position standings, not approved athlete comparis
 | Rank | 한글명 | Original | Club | Tier | PL starts |
 |---:|---|---|---|---|---:|
 | 1 | 디디에 드로그바 | Didier Drogba | Chelsea FC | S | pending |
-| 2 | 베니 매카시 | Benni McCarthy | Blackburn Rovers | A+ | pending |
-| 3 | 디미타르 베르바토프 | Dimitar Berbatov | Tottenham Hotspur FC | A+ | 30 |
-| 4 | 웨인 루니 | Wayne Rooney | Manchester United FC | A+ | 33 |
+| 2 | 디미타르 베르바토프 | Dimitar Berbatov | Tottenham Hotspur FC | A+ | 30 |
+| 3 | 웨인 루니 | Wayne Rooney | Manchester United FC | A+ | 33 |
+| 4 | 베니 매카시 | Benni McCarthy | Blackburn Rovers | A+ | 36 |
 | 5 | 니콜라 아넬카 | Nicolas Anelka | Bolton Wanderers | A- | 35 |
 | 6 | 앤디 존슨 | Andrew Johnson | Everton FC | A- | 32 |
 | 7 | 디르크 카위트 | Dirk Kuyt | Liverpool FC | A- | pending |
@@ -477,15 +477,32 @@ The following are DRAFT within-position standings, not approved athlete comparis
 | LW | 라이언 긱스 | Ryan Giggs | Manchester United FC | A+ | 2006-07 Manchester United FC의 LW 전술 역할과 개인 영향력, 경기 지속성 및 동포지션 수준을 중심으로 A+ 잠정 티어 산정. 주전 역할 잠정 분류. 2004-05: 26선발(기존 검토 자료, 비독립 검증); 2005-06: 22선발(기존 검토 자료, 비독립 검증). 현 시즌 개인 선발/골 수는 일 |
 | RW | 크리스티아누 호날두 | Cristiano Ronaldo | Manchester United FC | S | 31회 리그 선발, 17골·8도움. PFA 올해의 선수·영플레이어상, FWA 수상. 시즌 개인 돌파와 생산성 중심으로 최고 등급을 부여. |
 | ST | 디디에 드로그바 | Didier Drogba | Chelsea FC | S | 리그 20골 득점왕. 선발 출전량·전방 연계·대인 경합 및 개인 득점 영향력 기준 최고급 평가. |
-| ST | 디미타르 베르바토프 | Dimitar Berbatov | Tottenham Hotspur FC | A+ | 첫 잉글랜드 시즌에도 공격 연계·개인 기술과 12리그골 등 공격 영향력으로 PFA 올해의 팀. |
+| ST | 디미타르 베르바토프 | Dimitar Berbatov | Tottenham Hotspur FC | A+ | ST 순위 2위. 2006-07 PL 12골·9도움 및 2007 PFA 올해의 팀 선정. 2004-05·2005-06 분데스리가 20·21골의 지속적 개인 활약 보조 반영. |
+
+### 2006-07 ST positional-order correction (2026-11-01)
+
+The original DRAFT incorrectly kept **Benni McCarthy ST #2** and **Dimitar Berbatov ST #3**, while choosing Berbatov for Best XI. After comparing current-season production, pre-PL performance in 2004-05/2005-06 and contemporary peer recognition, the consistent order is now **#1 Didier Drogba, #2 Dimitar Berbatov, #3 Wayne Rooney, #4 Benni McCarthy**. Both second-year ranks and the individual evaluation notes were updated, **not** merely the Best XI display.
+
+| Player | 2004-05 goals | 2005-06 goals | 2006-07 PL starts | 2006-07 PL goals | 2006-07 PL assists | Draft ST rank | In Best XI |
+|---|---:|---:|---:|---:|---:|---:|---|
+| Didier Drogba | 10 | 12 | not independently confirmed | 20 | 4 | 1 | Yes |
+| Dimitar Berbatov | 20 (Leverkusen) | 21 (Leverkusen) | 30 | 12 | 9 | 2 | Yes |
+| Wayne Rooney | 11 (Man United) | 16 (Man United) | 33 | 14 | 11 | 3 | No |
+| Benni McCarthy | 11 (Porto) | 3 (Porto) | 36 | 18 | 0 | 4 | No |
+
+Berbatov's 2006-07 21 goals+assists, high creativity, 2007 PFA XI selection, and prior two German-league seasons (20 and 21 goals) justify retaining him over McCarthy despite the latter's superior 2006-07 pure PL goal count (18 vs 12). Rooney's 25 goal involvements are acknowledged; rank 3 is a contestable qualitative comparison rather than a statement that his raw offensive totals were lower. Individual club achievements do not add credit. The source seasons' national leagues differ; the comparison is not an assumption of identical defensive difficulty.
+
+Source links: https://fbref.com/en/players/f5781978/Dimitar-Berbatov ; https://fbref.com/en/players/a6f401c6/Benni-McCarthy ; https://www.tottenhamhotspur.com/news/1045683/hughton-on-berba-honour ; https://www.premierleague.com/en/players/8055/benni-mccarthy/career
+
+**Consistency rule:** The Best XI must use rank 1 for positions with one slot, and ranks 1 and 2 for positions with two slots (CB, ST). Any justified exception requires explicit documentation and approval. A post-correction cross-position check found no other mismatch in this season.
 
 ## G. Three-season review and remaining limitations
 
 - Rated season 2006-07 primary, 2005-06 secondary, 2004-05 tertiary. Previously cached records from earlier PL assessments are DRAFT, not independently approved and not comprehensive for clubs outside previous qualifying sets.
 - **149** club-player records with 11 nominal starters in each of 8 eligible clubs, 149 individual tier and position-wide rank proposals.
-- **66/149** current-season PL starts entered from checked individual seasonal sources; **83** remain null because a corroborated league start count was not extracted. Do not fabricate figures.
+- **67/149** current-season PL starts entered from checked individual seasonal sources; **82** remain null because a corroborated league start count was not extracted. Do not fabricate figures.
 - **80** current league goals remain null. Any zero explicitly entered was supported by a checked league row; null is not zero.
-- **108** athletes lack a 2004-05 or 2005-06 previous-year league start among the prior season-specific shortlisted files; these entries require coverage of their outside clubs/leagues.
+- **106** athletes lack a 2004-05 or 2005-06 previous-year league start among the prior season-specific shortlisted files; these entries require coverage of their outside clubs/leagues.
 - **149** nominees have not completed a match-by-match primary-position audit. Many fullbacks/wingers and Everton Phil Neville/RW Mikel Arteta, Bolton Kevin Davies RW are particularly important review cases.
 - Confirmed historical no-league-appearance corrections: Armand Traoré (Arsenal) and Radek Černý (Tottenham) were excluded; Arsenal Philippe Senderos and Spurs Anthony Gardner replaced as limited CB backups by Johan Djourou and Ricardo Rocha, respectively.
 - Player names, DOB and club allocations have been entered from season rosters and prior archive with partial cross-check, but no claim that 149 birthdates independently corroborated twice.
@@ -515,4 +532,4 @@ Each candidate has individual sources and assessment notes in data/premierleague
 3. Run repository's Node validation (after fixing stale hardcoded historical totals) and verify all five public UI tabs and crest rendering at current season.
 4. User reviews proposed tiers/Best XI and may request corrections. Do not automatically mark approved or start Premier League 2007-08.
 
-Goal cross-check added: Drogba 20, Benni McCarthy 18 and Dirk Kuyt 12, using the Premier League Golden Boot archive and an independent historical goals table; league starts for those players remain null where no exact starts were confirmed.
+Goal cross-check added: Drogba 20, Benni McCarthy 18 and Dirk Kuyt 12, using the Premier League Golden Boot archive and an independent historical goals table; Benni McCarthy's 36 PL starts were additionally source-confirmed; Drogba and Kuyt starts remain null pending precise records.
