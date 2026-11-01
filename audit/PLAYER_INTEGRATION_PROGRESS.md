@@ -427,3 +427,11 @@ Source TXT instruction adapted to the **2009-10 season only**. Candidate roster 
 - Front-end cache and formation fix: `assets/app.js` commit `1a603757ef46809358c74bfb7fd0add20f819f59` adds season-specific cache-busted JSON fetch and 4-4-2 conditional two-CM rendering (without affecting DM formations in other years).
 - HTML script cache key updated in `index.html` commit `b5598c22d4b5fc2ec08c6616a5856ef1fecbfddb`.
 - GitHub source re-read confirms LB Evra (#1), RB Ivanović (#1), CM Lampard + Milner; 11 XI player IDs. **Not browser tested**. If site still shows previous XI, verify GitHub Pages `main/(root)` source and `pages build and deployment` Actions run; source-data and live deployment are separate gates.
+
+
+## Premier League 2010-11 — 2026-11-01 DRAFT integration
+
+- UEFA official 2011-12 UCL/UEL entrant records verify eight 2010-11 PL clubs including fair play/cup exceptions.
+- **145** fresh candidates / **145** tentative individual tiers & ranks / **8** clubs each with 11 tagged starters; all caps and 11-player 4-4-2 XI pass in-connector structural checks. World Class **20** (S2/A+18), inclusive League Top Class **40** (A6/A-14 additional).
+- Main canonical season JSON deliberately leaves all unverified 2010-11 league-start counts **null**; 78 entries link previous season's archived candidate starts but none equals complete independently confirmed 3-season individual study. 145 exact majority-position checks, DOB second-source verification, 5 live Pages views pending. Results remain DRAFT/Best XI proposed_unapproved.
+- Complete tables: `audit/PLAYER_PREMIERLEAGUE_2010-11_DRAFT_REVIEW.md`. CLI validator available at `scripts/verify-pl-2010-11-draft.mjs` but Node CLI not run in connector; in-memory structural equivalent PASS. No other season or site source overwritten.
