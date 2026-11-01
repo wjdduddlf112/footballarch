@@ -486,3 +486,12 @@ Source TXT instruction adapted to the **2009-10 season only**. Candidate roster 
 - **Formation 4-2-3-1 is provisional** because exact 2015-16 PL league-wide starting-formation frequency was not independently verified. Leicester specific 4-4-2 in 35/38 PL matches confirmed by PL official.
 - Personal all league starts, appearances, goals, assists retained null. DOB first historical roster source, second source and 3-year individual stat independent verification pending. Structural CI success cannot establish historical accuracy.
 - Updated ONLY 2015-16 season JSON, seven research files, audit report, new validator/workflow, and this progress log. Other seasons, app UI, champion marker and crests unchanged.
+
+
+## Premier League 2016-17 DRAFT — 2026-11-01
+- Seven ACTUAL 2017-18 UEFA entrants (5 UCL, 2 UEL) sourced PL 25 May 2017, UCL/UEL archived records. Manchester United is 6th but UEL champions. Everton qualified UEL Q3.
+- Fresh 2016-17 FootballSquads roster research on Chelsea, Tottenham, Man City, Liverpool, Arsenal, Man Utd, Everton. **126 candidates** including 77 representatives (11 each); all eligible candidates provisionally tiered and positionally ranked.
+- League 4-2-3-1 is supported as *actual most-used 2016-17* formation by PL official 4 June 2017. Chelsea club tactical 3-4-3 translated to 3 CB starters + Alonso/Moses wingbacks, 11 starters in all.
+- **DRAFT/unapproved; historical verification pending**: DOB only first source; all league starts/apps/assists null; 8 official top-scorer goal totals filled, all others null; 3-year player-by-player stats/majority positions independently unverified.
+- Only current season JSON, seven research JSON, audit report, validator, workflow, this progress file changed; existing site visual components, previous seasons, standings, champion C and badges, emblems preserved.
+- Structural CI and Pages browser review must be tracked separately. No claim of user approval.
