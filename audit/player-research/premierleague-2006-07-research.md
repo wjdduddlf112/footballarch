@@ -80,7 +80,7 @@ PL-only statistical reference: https://fbref.com/en/squads/cff3d9bb/2006-2007/c9
 | LW | 아르연 로번 | Arjen Robben | Chelsea FC | 1984-01-23 | 후보 | 미확인 | 미확인 | A- | 3 |
 | RW | 조 콜 | Joe Cole | Chelsea FC | 1981-11-08 | 후보 | 3 | 0 | B+ | 10 |
 | RW | 숀 라이트필립스 | Shaun Wright-Phillips | Chelsea FC | 1981-10-25 | 후보 | 미확인 | 미확인 | B | 12 |
-| ST | 디디에 드로그바 | Didier Drogba | Chelsea FC | 1978-03-11 | 주전 | 미확인 | 미확인 | S | 1 |
+| ST | 디디에 드로그바 | Didier Drogba | Chelsea FC | 1978-03-11 | 주전 | 미확인 | 20 | S | 1 |
 | ST | 안드리 셰우첸코 | Andriy Shevchenko | Chelsea FC | 1976-09-29 | 주전 | 미확인 | 미확인 | B+ | 12 |
 | ST | 살로몽 칼루 | Salomon Kalou | Chelsea FC | 1985-08-05 | 후보 | 미확인 | 미확인 | B+ | 19 |
 
@@ -108,7 +108,7 @@ PL-only statistical reference: https://fbref.com/en/squads/822bd0ba/2006-2007/c9
 | LW | 마르크 곤살레스 | Mark González | Liverpool FC | 1984-07-10 | 주전 | 미확인 | 미확인 | B- | 12 |
 | RW | 저메인 페넌트 | Jermaine Pennant | Liverpool FC | 1983-01-15 | 주전 | 미확인 | 미확인 | B+ | 6 |
 | RW | 루이스 가르시아 | Luis García | Liverpool FC | 1978-06-24 | 후보 | 미확인 | 미확인 | B+ | 8 |
-| ST | 디르크 카위트 | Dirk Kuyt | Liverpool FC | 1980-07-22 | 주전 | 미확인 | 미확인 | A- | 7 |
+| ST | 디르크 카위트 | Dirk Kuyt | Liverpool FC | 1980-07-22 | 주전 | 미확인 | 12 | A- | 7 |
 | ST | 피터 크라우치 | Peter Crouch | Liverpool FC | 1981-01-30 | 주전 | 미확인 | 미확인 | B+ | 18 |
 | ST | 크레이그 벨러미 | Craig Bellamy | Liverpool FC | 1979-07-13 | 후보 | 미확인 | 미확인 | B+ | 13 |
 
@@ -237,7 +237,7 @@ PL-only statistical reference: https://fbref.com/en/squads/e090f40b/2006-2007/c9
 | CM | 데이비드 던 | David Dunn | Blackburn Rovers | 1979-12-27 | 후보 | 미확인 | 미확인 | B | 11 |
 | LW | 모르텐 감스트 페데르센 | Morten Gamst Pedersen | Blackburn Rovers | 1981-09-08 | 주전 | 미확인 | 미확인 | A- | 2 |
 | RW | 데이비드 벤틀리 | David Bentley | Blackburn Rovers | 1984-08-27 | 주전 | 미확인 | 미확인 | A- | 4 |
-| ST | 베니 매카시 | Benni McCarthy | Blackburn Rovers | 1977-11-12 | 주전 | 미확인 | 미확인 | A+ | 2 |
+| ST | 베니 매카시 | Benni McCarthy | Blackburn Rovers | 1977-11-12 | 주전 | 미확인 | 18 | A+ | 2 |
 | ST | 샤바니 농다 | Shabani Nonda | Blackburn Rovers | 1977-03-06 | 주전 | 미확인 | 미확인 | B | 20 |
 | ST | 맷 더비셔 | Matt Derbyshire | Blackburn Rovers | 1986-04-14 | 후보 | 미확인 | 미확인 | B+ | 16 |
 
@@ -514,3 +514,5 @@ Each candidate has individual sources and assessment notes in data/premierleague
 2. Reassess ambiguous lower tier selections and backup role cap with independent sources.
 3. Run repository's Node validation (after fixing stale hardcoded historical totals) and verify all five public UI tabs and crest rendering at current season.
 4. User reviews proposed tiers/Best XI and may request corrections. Do not automatically mark approved or start Premier League 2007-08.
+
+Goal cross-check added: Drogba 20, Benni McCarthy 18 and Dirk Kuyt 12, using the Premier League Golden Boot archive and an independent historical goals table; league starts for those players remain null where no exact starts were confirmed.
