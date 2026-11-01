@@ -29,7 +29,7 @@ Status: **22 tracked season datasets; 1390/2930 provisional player tier proposal
 | Premier League | 2003-04 | 105 | 105 | 105 | 0 | 0 (entered; not independently checked) | 11 proposed (unapproved) | No |
 | Premier League | 2004-05 | 150 | 150 | 150 | 0 | 0 (season-only data entered) | 11 proposed (unapproved) | No |
 | Premier League | 2005-06 | 142 | 142 | 142 | 0 | 0 (entered; individual audit pending) | 11 proposed (unapproved) | User confirmed display (2026-11-01); independent browser audit pending |
-| Premier League | 2006-07 | 149 | 149 | 149 | 0 | 83 (not yet sourced) | 11 proposed (unapproved) | Not independently verified |
+| Premier League | 2006-07 | 149 | 149 | 149 | 0 | 82 (not yet sourced) | 11 proposed (unapproved) | Not independently verified |
 | Serie A | 1999-00 | 119 | 0 | 0 | 1 | 0 | Not selected | No |
 | Serie A | 2000-01 | 109 | 0 | 0 | 7 | 0 | Not selected | No |
 | Serie A | 2001-02 | 137 | 0 | 0 | 0 | 0 | Not selected | No |
@@ -39,7 +39,7 @@ Status: **22 tracked season datasets; 1390/2930 provisional player tier proposal
 | Ligue 1 | 1999-00 | 111 | 0 | 0 | 3 | 19 | Not selected | No |
 | Ligue 1 | 2000-01 | 141 | 0 | 0 | 15 | 20 | Not selected | No |
 | Ligue 1 | 2001-02 | 134 | 0 | 0 | 11 | 6 | Not selected | No |
-| **Total** | **22 seasons** | **2930** | **1390** | **1390** | **551** | **466** | **10 provisional** | **0/22 independently** |
+| **Total** | **22 seasons** | **2930** | **1390** | **1390** | **551** | **465** | **10 provisional** | **0/22 independently** |
 
 Tier distribution for the 280 existing La Liga provisional grades: S=9; A+=17; A=24; A-=47. All other tier grades are carried from previously approved-as-draft work and are **not** upgraded to final.
 
@@ -301,8 +301,18 @@ Three-season evidence exists in summarized form for each tier rationale, but ind
 - Actual 2007-08 UEFA entrants: 4 UCL (Man United, Chelsea, Liverpool, Arsenal), 3 UEFA Cup (Tottenham, Everton, Bolton), and 2007 UEFA Intertoto **Blackburn**; documented by UEFA Intertoto entry/winner and October 2007 Europa first round reports. Intertoto Blackburn 10th, Reading/Portsmouth left out; no incorrectly presumed 2007 Fair Play entrant.
 - A **fresh 149-player shortlist** for these 8 clubs based on 2006-07 dated rosters and league records. 8 × 11 nominal starter roles; **149/149** preliminary individual qualitative tiers and position-specific rankings, and 11 proposed Best XI player references. No official user approval applied.
 - Tier counts S 3, A+ 22, A 4, A- 25, B+ 54, B 20, B- 16, C+ 5, C 0, C- 0, D 0. **World Class 25; League Top Class 54.**
-- 2006-07 league starts **66/149 individually recorded**, 83 missing; league goals may also be null. Sources for entered stats from dedicated 2006-07 PL rows at FBref, EvertonResults and SpursOdyssey. **108 players** missing at least one prior-year starts value in the 2004-05/2005-06 draft references. Exact missing stats are null, not invented, and tiering remains qualitative DRAFT. **149/149** match-by-match main-position verification pending.
+- 2006-07 league starts **67/149 individually recorded**, 82 missing; league goals may also be null. Sources for entered stats from dedicated 2006-07 PL rows at FBref, EvertonResults and SpursOdyssey. **106 players** missing at least one prior-year starts value in the 2004-05/2005-06 draft references. Exact missing stats are null, not invented, and tiering remains qualitative DRAFT. **149/149** match-by-match main-position verification pending.
 - Zero-league-appearance player exclusions: Armand Traoré (Arsenal), Radek Černý (Tottenham); other marginal CB corrections prefer Djourou and Ricardo Rocha. Chelsea's diamond midfield structure (no nominal starting wingers) preserved. Potential positional ambiguities (Everton Phil Neville, Mikel Arteta; Bolton Davies) require match-by-match audit.
 - Formation: **4-4-2 only provisional** for the league-wide Best XI, NOT a proven 380-match modal frequency. Chelsea 4-4-2 diamond/4-3-3 and Bolton 4-2-3-1/4-3-3 separately preserved in formationByClub. UEFA report and 2006-07 PFA shape consulted.
 - Data: `data/premierleague-2006-07.json`, European archive updated at `data/premierleague-europe-qualification-1999-2026.json`. Entire club-by-club tables, ranks, evidence and 4-4-2 Best XI at `audit/player-research/premierleague-2006-07-research.md`.
 - Pending full player evidence, previous 3-season form, all match-position proofs. Local Node CLI verification NOT run; deployed site interaction and crest checks NOT independently completed. Maintain unapproved DRAFT. Stop after 2006-07, no 2007-08 player evaluation without explicit user request.
+
+
+### 2006-07 correction: Best XI versus ST league ranking (2026-11-01)
+
+- User identified structural contradiction: McCarthy ST #2 while Berbatov ST #3 appeared in the 4-4-2 Best XI.
+- Reviewed season-specific Premier League goals/assists and 2004-05/2005-06 foreign domestic-league records using historical FBref and 2007 PFA contemporary selection.
+- **Now ST #1 Drogba, #2 Berbatov, #3 Rooney, #4 McCarthy. Best XI ST slots #1 + #2, no exception.** All remaining Best XI positions likewise follow positional top ranks (for CB #1 + #2).
+- Berbatov 2006-07 12 PL goals + 9 assists, 2004-05/2005-06 Bundesliga 20 + 21 goals and PFA XI; McCarthy 2006-07 18 PL goals + 0 assists, prior Porto 11 + 3 league goals. Rooney 14 PL goals + 11 assists is retained ST #3 pending broader subjective reassessment; ranking is not a pure G+A sort.
+- Source `data/premierleague-2006-07.json` updated: per-player rank/Rationale, prior league (Bundesliga/Primeira Liga) evidence, current McCarthy 36 starts and Berbatov 9 assists; source `audit/player-research/premierleague-2006-07-research.md` synced including main ST ranking and club roster tables.
+- Dataset count **149** unchanged; current PL starts filled **67/149**, 82 not confirmed. At least one previous season starts missing for **106** players. **Still DRAFT, not user-approved.**
