@@ -3,7 +3,7 @@
 Date: 2026-11-01  
 Repository: `wjdduddlf112/footballarch`, branch `main`  
 Deployment target: https://wjdduddlf112.github.io/footballarch/  
-Status: **23 tracked season datasets; 1560/3100 provisional player tier proposals; 1540 unrated. PL 1999-00 128/128, PL 2000-01 141/141, PL 2001-02 163/163, PL 2002-03 132/132 and PL 2003-04 105/105 and PL 2004-05 150/150 and PL 2005-06 142/142 and PL 2006-07 149/149 and PL 2007-08 170/170 DRAFT tier/rank entries.**
+Status: **24 tracked season datasets; 1682/3222 provisional player tier proposals; 1540 unrated. PL 1999-00 128/128, PL 2000-01 141/141, PL 2001-02 163/163, PL 2002-03 132/132 and PL 2003-04 105/105 and PL 2004-05 150/150 and PL 2005-06 142/142 and PL 2006-07 149/149 and PL 2007-08 170/170 and PL 2008-09 122/122 DRAFT tier/rank entries.**
 
 ## Scope and method
 
@@ -31,6 +31,7 @@ Status: **23 tracked season datasets; 1560/3100 provisional player tier proposal
 | Premier League | 2005-06 | 142 | 142 | 142 | 0 | 0 (entered; individual audit pending) | 11 proposed (unapproved) | User confirmed display (2026-11-01); independent browser audit pending |
 | Premier League | 2006-07 | 149 | 149 | 149 | 0 | 82 (not yet sourced) | 11 proposed (unapproved) | Not independently verified |
 | Premier League | 2007-08 | 170 | 170 | 170 | 0 | 0 (sourced PL starts/apps/goals, position audit pending) | 11 proposed (unapproved; CAM→CM tactical mapping) | Data structure checked; browser unverified |
+| Premier League | 2008-09 | 122 | 122 | 122 | 0 | 0 (122/122 PL starts/apps/goals sourced) | 11 proposed (unapproved; Gerrard CAM→field CM) | Structural checked, browser unverified |
 | Serie A | 1999-00 | 119 | 0 | 0 | 1 | 0 | Not selected | No |
 | Serie A | 2000-01 | 109 | 0 | 0 | 7 | 0 | Not selected | No |
 | Serie A | 2001-02 | 137 | 0 | 0 | 0 | 0 | Not selected | No |
@@ -40,7 +41,7 @@ Status: **23 tracked season datasets; 1560/3100 provisional player tier proposal
 | Ligue 1 | 1999-00 | 111 | 0 | 0 | 3 | 19 | Not selected | No |
 | Ligue 1 | 2000-01 | 141 | 0 | 0 | 15 | 20 | Not selected | No |
 | Ligue 1 | 2001-02 | 134 | 0 | 0 | 11 | 6 | Not selected | No |
-| **Total** | **23 seasons** | **3100** | **1560** | **1560** | **551** | **465** | **11 provisional** | **0/23 independently** |
+| **Total** | **24 seasons** | **3222** | **1682** | **1682** | **551** | **465** | **12 provisional** | **0/24 independently** |
 
 Tier distribution for the 280 existing La Liga provisional grades: S=9; A+=17; A=24; A-=47. All other tier grades are carried from previously approved-as-draft work and are **not** upgraded to final.
 
@@ -328,3 +329,14 @@ Three-season evidence exists in summarized form for each tier rationale, but ind
 - Current goals may differ across historical data providers: Ashley Young 9 per FBref/11v11 vs 8 per Statbunker; primary 9. Gerrard 8 assists FBref vs BeSoccer 9; primary 8. Discrepancies remain annotated.
 - **Connector-side JS structural audit passed (0 errors)**: IDs, caps, tiers, ranks, nine clubs / 99 starters, 170 starts/apps/goals, valid 11 unique XI with mapped tactical slots, names identical to 2007-08 PFA best team. **Node CLI not run; actual deployed site interaction/crests not independently verified.** The user's earlier website-confirmation through 2005-06 remains separately recorded. **All evaluation remains user-unapproved DRAFT.**
 - Review files: `audit/player-research/premierleague-2007-08-research.md` plus 9 club tables, 2 position ranking reports and `audit/player-research/premierleague-2007-08-checkpoint.md`. Stop before 2008-09.
+
+
+## Premier League 2008-09 DRAFT — 2026-11-01
+
+- Seven PL clubs entering 2009-10 UEFA tournaments: Manchester United, Liverpool, Chelsea and Arsenal UCL; Everton, Aston Villa and Fulham Europa League. Intertoto no longer existed in 2009. Clubs selected before player research; league table/crest/champion badge never modified.
+- **122 eligible player nominees**, fresh 2008-09 club-by-club selection; **77 nominal starters** (11 each), full DOB and Korean/native name/club, **122 provisional tiers and 122 contiguous positional ranks**, 4-4-2 Best XI 11 references. Team counts Manchester United 19, Liverpool 17, Chelsea 18, Arsenal 20, Everton 17, Villa 16, Fulham 15.
+- All 122/122 current-season Premier League appearance, start and goals lines entered from 2008-09 season-specific FBref and Statbunker club tables, with mixed-provider disagreements noted. **11/11 Best XI** players' prior 2006-07 and 2007-08 starts populated with foreign domestic leagues differentiated; **90/122** other athletes still missing at least one of those prior year values. Match-by-match **0/122 majority played positions verified**; birth dates entered but not two-source certified. Qualitative three-year evaluation still provisional.
+- Tier counts S 5, A+ 20, A 6, A- 26, B+ 43, B 16, B- 6, C+ 0. World Class 25, League Top 57.
+- **Best XI strongest first, actual player positions retained:** van der Sar; Vidić, Ferdinand; Evra, Bosingwa; Ashley Young, Ronaldo; Lampard (original CM in field CM), Gerrard (original CAM in field CM); Anelka, Torres. Two central midfielder field labels both CM. Ranking list uses underlying roles and was NOT reordered to force XI position. Best XI checked against role and three-year individual form, not copied blindly from PFA XI; Glen Johnson ineligible as Portsmouth not European participant in 2009-10.
+- Structural JS inspection and data checks passed. **Node CLI not run**, actual GitHub Pages browser/crest checks **not independently completed**, and **user approval absent**. Stop before 2009-10.
+- Full navigation and 7 club tables + 2 rank tables: `audit/player-research/premierleague-2008-09-research.md`. Separate verified-vs-pending report: `audit/player-research/premierleague-2008-09-checkpoint.md`.
