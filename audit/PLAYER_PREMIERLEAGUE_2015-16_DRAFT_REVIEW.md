@@ -19,6 +19,11 @@ UEFA UEL official: https://www.uefa.com/uefaeuropaleague/history/seasons/2017/cl
 UEFA allocation UCL: https://www.uefa.com/uefachampionsleague/news/022f-0e957e3f5075-64f6c5b413e2-1000--2016-17-champions-league-all-you-need-to-know/
 UEFA allocation UEL: https://www.uefa.com/uefaeuropaleague/news/0230-0e94a2baa751-7c404fb11d25-1000--2016-17-uefa-europa-league-list-of-participants/
 
+
+### Excluded club clarification
+
+Liverpool FC finished 8th in the 2015-16 Premier League and lost the 2015-16 UEFA Europa League final to Sevilla. The club did not actually participate in the 2016-17 UEFA club competitions and is excluded from this evaluation, despite qualifying during the preceding season. This restriction is independently reflected in the seven-club `qualifiers` array.
+
 ## 2. Formation, weighting and evidence gates
 
 **Provisional league formation 4-2-3-1**; full 2015-16 formation census not available. 2014-15 Opta study and 2016-17 PL official counts are supporting adjacent-season context ONLY, not proof of a precise 2015-16 modal system.
