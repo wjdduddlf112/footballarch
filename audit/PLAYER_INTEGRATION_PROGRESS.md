@@ -371,3 +371,9 @@ Three-season evidence exists in summarized form for each tier rationale, but ind
 - https://www.bdfutbol.com/en/t/t2002-0329.html (Racing)
 
 **Next resumes at the same season; this pass does not authorize 2003-04 player evaluation.**
+
+### 2026-11-01 same-day extension: current authoritative main snapshot
+
+Commit `2d490a03df322e673a20fd2f1d0c043c3739f02e` added four individually sourced 3-season DRAFT tier proposals: Pablo Cavallero (Celta GK, A+, 2002-03 Zamora winner), Rodolfo Arruabarrena (Villarreal LB, B+), Sylvinho (Celta LB, B+) and Albert Riera (Mallorca LW, B+). See BDFutbol individual player pages: https://www.bdfutbol.com/en/j/j2232.html ; https://www.bdfutbol.com/en/j/j2384.html ; https://www.bdfutbol.com/en/j/j2513.html ; https://www.bdfutbol.com/en/j/j56.html .
+
+**This supersedes the 34-grade count above:** 9 qualified clubs; **135 candidates, 38 provisional 3-season tiers with source notes (2 S, 10 A+, 6 A, 9 A-, 10 B+, 1 B), 97 evidence-pending null tiers, 0 ranks, 0 Best XI**. Date of birth available for 57/135, 78 still missing. Seven independently sourced missing candidates remain among the 97 null-tier candidates. No previously finalized season or site code changed. All tier/rank/Best XI and 2002-03 season completion gates still DRAFT/OPEN; no Node CLI or browser verification performed.
