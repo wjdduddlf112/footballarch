@@ -11,7 +11,7 @@ if(d.meta?.status!=="draft"||d.meta?.season!=="2002-03"||d.meta?.leagueId!=="pre
 if(d.standings?.length!==20||d.standings.some((s,i)=>s.rank!==i+1))problems.push("Standings missing or unsorted");
 if(d.qualifiers?.length!==8||d.qualifiers.some(q=>eligible[q.club]!==q.competition)||new Set(d.qualifiers.map(q=>q.club)).size!==8)problems.push("2003-04 actual European competition entrants invalid");
 if(d.standings.some(s=>(s.competition||null)!==(eligible[s.club]||null)))problems.push("Qualifiers not equal standings competition badges");
-if(d.players?.length!==138)problems.push("Expected 138 independently reselected players");
+if(d.players?.length!==132)problems.push("Expected 132 independently reselected players");
 const ids=new Set(),names=new Set(),clubpos={},clubstarter={},bypos={};
 for(const p of d.players||[]){
  const key=p.club+"/"+p.nameOriginal;
