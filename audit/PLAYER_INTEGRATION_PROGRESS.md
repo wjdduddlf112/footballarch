@@ -469,3 +469,12 @@ Source TXT instruction adapted to the **2009-10 season only**. Candidate roster 
 - Evidence limitations: 14 selected 2013-14 goal/assist samples linked to archived league tables; **0/129 independently verified league starts, 0/129 individual majority positions, 0/129 complete independent 2011-12,2012-13,2013-14 assessments**. Earlier DRAFT archive references retained but not mistaken for validated previous form. Player DOB dual-source review pending. These grades and positions are provisional, not historical fact independently certified.
 - Structure test `scripts/verify-pl-2013-14-draft.mjs`; GitHub Actions `.github/workflows/verify-pl-2013-14-draft.yml`. Structural status, CI Node execution, GitHub Pages build/deploy and live 5-tab browser correctness all reported as separate gates. Unapproved XI `proposed_unapproved`.
 - No other seasons, past standings, front-end scripts, CSS, champion C/title-stripping logic, existing crest URLs modified. Work stopped at 2013-14.
+
+
+## Premier League 2014-15 (2026-11-01)
+- Independently selected 8 next-season UEFA entrants, including West Ham via Fair Play. Corrected missing West Ham in season qualifiers and standings competition column.
+- New 2014-15 seasonal roster screening: 143 candidates across 8 clubs; exactly 11 provisional starters per club. Tier/position ranking/Best XI preliminary unapproved.
+- Formation: 4-2-3-1 verified most-used as of 13 March 2015 by Opta/Guardian; precise full-season share pending.
+- DOB one seasonal source; individual starts, 3-year stats and majority positions **unverified**, null, evidence-pending; structural check not historical proof.
+- Audit report: audit/PLAYER_PREMIERLEAGUE_2014-15_DRAFT_REVIEW.md; validator scripts/verify-pl-2014-15-draft.mjs.
+- Previous seasons, site UI, champion markers and emblems intentionally untouched. CI and deployment require separate verification.
