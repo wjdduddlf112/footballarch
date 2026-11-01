@@ -8,7 +8,7 @@
     "qualifyingSeason": "2003-04",
     "status": "draft",
     "candidateStatus": "legacy_pool_revalidation_in_progress",
-    "label": "2002-03 독립 재조사 진행 · 14명 3시즌 잠정 티어, 기존 114명 재검증 대기",
+    "label": "2002-03 독립 3시즌 평가 확대 · 잠정 티어 28명, 잔여 후보 검증 대기",
     "standingsStatus": "reused_from_verified_archive",
     "dataCollected": "2026-10-30",
     "candidateCount": 128,
@@ -37,7 +37,7 @@
     "tierStatus": "partial_independently_researched_draft",
     "playerEligibilityStatus": "draft",
     "note": "CM double-starter provisional at Sociedad and Racing; team-specific tactical majority must be checked. No CAM candidates admitted until formation audit.",
-    "birthdatesPopulatedCount": 38,
+    "birthdatesPopulatedCount": 43,
     "birthdateAudit": "partial; populated birthdates may be inherited from prior draft or manually corroborated; unpopulated are null",
     "pendingUnassignedCandidates": [],
     "rosterReaudit": "All nine eligible clubs reviewed against BDFutbol seasonal squads; corrections and missing starter-equivalent candidates preserved under draft. Match-by-match primary positional verification pending.",
@@ -50,15 +50,33 @@
       "state": "draft_unapproved",
       "archiveStandingsSource": "data/laliga-standings-verified-1999-2026.json",
       "preservedMainStandings": true,
-      "individualThreeSeasonAudit": "pending",
+      "individualThreeSeasonAudit": "partial_28_of_128",
       "reselectionStarted": "2026-10-30",
       "eligibleClubsSourceCrosschecked": 9,
-      "independentlyReevaluatedCount": 14,
-      "legacyNotIndependentlyReselectedCount": 114,
+      "independentlyReevaluatedCount": 28,
+      "legacyNotIndependentlyReselectedCount": 100,
       "warning": "Existing 128-record player array is historic legacy pool, not a validated new selection. Four specific players independently selected from BDFutbol current-season squad + 3-season profiles; others remain pending independent re-selection. Do not publish legacy pool as final.",
       "independentlyReviewedClubCount": 9
     },
-    "europeanQualificationVerificationScope": "2003-04 nine Spanish actual UEFA/UIC entrants cross-checked against UEFA historical club listings and contemporary soccer-spain summary; separate from player eligibility verification"
+    "europeanQualificationVerificationScope": "2003-04 nine Spanish actual UEFA/UIC entrants cross-checked against UEFA historical club listings and contemporary soccer-spain summary; separate from player eligibility verification",
+    "automaticSeasonPass": {
+      "date": "2026-11-01",
+      "status": "INCOMPLETE_EVIDENCE_PENDING",
+      "assessmentSeasons": [
+        "2000-01",
+        "2001-02",
+        "2002-03"
+      ],
+      "evaluationOrder": "GK>CB>LB>RB>DM>CM>CAM>LW>RW>ST",
+      "source": "fresh individual BDFutbol 2000-01/2001-02/2002-03 player profiles plus 9 current-season BDFutbol squads",
+      "newlyAssessed": 14,
+      "remainingWithoutGrade": 100,
+      "formationProposal": "4-2-3-1 (provisional, league-wide modal study pending)",
+      "bestXiStatus": "not_selected_pending_pool_evaluation",
+      "rankStatus": "not_assigned_due_incomplete_pool_review",
+      "browserVerified": false,
+      "nodeValidatorRun": false
+    }
   },
   "clubs": [
     {
@@ -568,16 +586,54 @@
       "leagueMinutes": 3420,
       "appearanceScope": "La Liga 2002-03 only",
       "positionVerification": "verified",
-      "tier": null,
+      "tier": "A+",
       "rank": null,
-      "review": "draft_unapproved",
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2002-032.html",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2002-032.html"
+        "https://www.bdfutbol.com/en/t/t2002-032.html",
+        "https://www.bdfutbol.com/en/j/j1090.html"
       ],
-      "verificationNotes": [],
+      "verificationNotes": [
+        "2000-01~2002-03 league record verified from BDFutbol personal career table; tier remains DRAFT; positional rank pending"
+      ],
       "nameOriginal": "Iker Casillas",
-      "clubNameOriginal": "Real Madrid"
+      "clubNameOriginal": "Real Madrid",
+      "tierReview": "리그 전 경기 38선발·3,420분으로 골문을 책임졌으며 직전 두 시즌에도 34·25경기 선발. 해당 시즌 출전 안정성과 선방 영향력, 지속성을 높게 보아 골키퍼 최상위 A+ 초안. 실점 수만으로 개인 능력을 평가하지 않음.",
+      "threeSeasonReview": {
+        "status": "source_profile_checked_three_seasons_draft",
+        "priority": [
+          "2002-03",
+          "2001-02",
+          "2000-01"
+        ],
+        "leagueRecords": [
+          {
+            "season": "2000-01",
+            "club": "Real Madrid",
+            "appearances": 34,
+            "starts": 34,
+            "goals": 0
+          },
+          {
+            "season": "2001-02",
+            "club": "Real Madrid",
+            "appearances": 25,
+            "starts": 25,
+            "goals": 0
+          },
+          {
+            "season": "2002-03",
+            "club": "Real Madrid",
+            "appearances": 38,
+            "starts": 38,
+            "goals": 0
+          }
+        ],
+        "notes": "개인 3시즌 리그 출전 기록 확인. 순위 및 시즌 다수 출전 포지션 비교 검증 전.",
+        "source": "https://www.bdfutbol.com/en/j/j1090.html"
+      },
+      "independentSelectionAudit": "profile_and_current_club_2002_03_checked"
     },
     {
       "id": "laliga-200203-madrid-02",
@@ -624,18 +680,55 @@
       "leagueMinutes": 3311,
       "appearanceScope": "La Liga 2002-03 only",
       "positionVerification": "needs_review",
-      "tier": null,
+      "tier": "S",
       "rank": null,
-      "review": "draft_unapproved",
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2002-032.html",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2002-032.html"
+        "https://www.bdfutbol.com/en/t/t2002-032.html",
+        "https://www.bdfutbol.com/en/j/j2372.html"
       ],
       "verificationNotes": [
-        "Actual position-majority match-level audit outstanding"
+        "Actual position-majority match-level audit outstanding",
+        "2000-01~2002-03 league record verified from BDFutbol personal career table; tier remains DRAFT; positional rank pending"
       ],
       "nameOriginal": "Roberto Carlos",
-      "clubNameOriginal": "Real Madrid"
+      "clubNameOriginal": "Real Madrid",
+      "tierReview": "풀백으로 2002-03 37경기 모두 선발·5골, 앞선 두 시즌도 36·31선발과 공격 기여. 뛰어난 출전 지속성에 측면 전진·공격 가담을 더한 대체 불가능한 개인 영향력을 근거로 S 초안.",
+      "threeSeasonReview": {
+        "status": "source_profile_checked_three_seasons_draft",
+        "priority": [
+          "2002-03",
+          "2001-02",
+          "2000-01"
+        ],
+        "leagueRecords": [
+          {
+            "season": "2000-01",
+            "club": "Real Madrid",
+            "appearances": 36,
+            "starts": 36,
+            "goals": 5
+          },
+          {
+            "season": "2001-02",
+            "club": "Real Madrid",
+            "appearances": 31,
+            "starts": 31,
+            "goals": 3
+          },
+          {
+            "season": "2002-03",
+            "club": "Real Madrid",
+            "appearances": 37,
+            "starts": 37,
+            "goals": 5
+          }
+        ],
+        "notes": "개인 3시즌 리그 출전 기록 확인. 순위 및 시즌 다수 출전 포지션 비교 검증 전.",
+        "source": "https://www.bdfutbol.com/en/j/j2372.html"
+      },
+      "independentSelectionAudit": "profile_and_current_club_2002_03_checked"
     },
     {
       "id": "laliga-200203-madrid-04",
@@ -741,18 +834,55 @@
       "leagueMinutes": 2518,
       "appearanceScope": "La Liga 2002-03 only",
       "positionVerification": "needs_review",
-      "tier": null,
+      "tier": "A+",
       "rank": null,
-      "review": "draft_unapproved",
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2002-032.html",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2002-032.html"
+        "https://www.bdfutbol.com/en/t/t2002-032.html",
+        "https://www.bdfutbol.com/en/j/j439.html"
       ],
       "verificationNotes": [
-        "Actual position-majority match-level audit outstanding"
+        "Actual position-majority match-level audit outstanding",
+        "2000-01~2002-03 league record verified from BDFutbol personal career table; tier remains DRAFT; positional rank pending"
       ],
       "nameOriginal": "Claude Makélélé",
-      "clubNameOriginal": "Real Madrid"
+      "clubNameOriginal": "Real Madrid",
+      "tierReview": "3시즌 연속 32·32·29차례 리그 선발로 수비형 미드필더 역할을 수행. 득점 아닌 중원 보호·전환 균형·개인 전술 기여를 중심으로 리그 대체 어려운 A+ 잠정 평가.",
+      "threeSeasonReview": {
+        "status": "source_profile_checked_three_seasons_draft",
+        "priority": [
+          "2002-03",
+          "2001-02",
+          "2000-01"
+        ],
+        "leagueRecords": [
+          {
+            "season": "2000-01",
+            "club": "Real Madrid",
+            "appearances": 33,
+            "starts": 32,
+            "goals": 0
+          },
+          {
+            "season": "2001-02",
+            "club": "Real Madrid",
+            "appearances": 32,
+            "starts": 32,
+            "goals": 1
+          },
+          {
+            "season": "2002-03",
+            "club": "Real Madrid",
+            "appearances": 29,
+            "starts": 29,
+            "goals": 0
+          }
+        ],
+        "notes": "개인 3시즌 리그 출전 기록 확인. 순위 및 시즌 다수 출전 포지션 비교 검증 전.",
+        "source": "https://www.bdfutbol.com/en/j/j439.html"
+      },
+      "independentSelectionAudit": "profile_and_current_club_2002_03_checked"
     },
     {
       "id": "laliga-200203-madrid-08",
@@ -896,18 +1026,55 @@
       "leagueMinutes": 2726,
       "appearanceScope": "La Liga 2002-03 only",
       "positionVerification": "needs_review",
-      "tier": null,
+      "tier": "A+",
       "rank": null,
-      "review": "draft_unapproved",
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2002-032.html",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2002-032.html"
+        "https://www.bdfutbol.com/en/t/t2002-032.html",
+        "https://www.bdfutbol.com/en/j/j1803.html"
       ],
       "verificationNotes": [
-        "Actual position-majority match-level audit outstanding"
+        "Actual position-majority match-level audit outstanding",
+        "2000-01~2002-03 league record verified from BDFutbol personal career table; tier remains DRAFT; positional rank pending"
       ],
       "nameOriginal": "Luís Figo",
-      "clubNameOriginal": "Real Madrid"
+      "clubNameOriginal": "Real Madrid",
+      "tierReview": "2002-03 33경기 전 경기 선발·10골. 직전 두 시즌 9·7골로 오른쪽 측면 공격 전개를 지속해서 주도한 선수. 개인 창조성과 득점 생산성을 근거로 A+ 초안.",
+      "threeSeasonReview": {
+        "status": "source_profile_checked_three_seasons_draft",
+        "priority": [
+          "2002-03",
+          "2001-02",
+          "2000-01"
+        ],
+        "leagueRecords": [
+          {
+            "season": "2000-01",
+            "club": "Real Madrid",
+            "appearances": 34,
+            "starts": 33,
+            "goals": 9
+          },
+          {
+            "season": "2001-02",
+            "club": "Real Madrid",
+            "appearances": 28,
+            "starts": 27,
+            "goals": 7
+          },
+          {
+            "season": "2002-03",
+            "club": "Real Madrid",
+            "appearances": 33,
+            "starts": 33,
+            "goals": 10
+          }
+        ],
+        "notes": "개인 3시즌 리그 출전 기록 확인. 순위 및 시즌 다수 출전 포지션 비교 검증 전.",
+        "source": "https://www.bdfutbol.com/en/j/j1803.html"
+      },
+      "independentSelectionAudit": "profile_and_current_club_2002_03_checked"
     },
     {
       "id": "laliga-200203-madrid-12",
@@ -1232,7 +1399,7 @@
       "club": "sociedad",
       "clubId": "sociedad",
       "clubName": "Real Sociedad",
-      "born": null,
+      "born": "1981-11-25",
       "role": "starter",
       "starts": 33,
       "leagueAppearances": 33,
@@ -1240,19 +1407,63 @@
       "leagueMinutes": 2771,
       "appearanceScope": "La Liga 2002-03 only",
       "positionVerification": "needs_review",
-      "tier": null,
+      "tier": "A",
       "rank": null,
-      "review": "draft_unapproved",
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2002-0330.html",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2002-0330.html"
+        "https://www.bdfutbol.com/en/t/t2002-0330.html",
+        "https://www.bdfutbol.com/en/j/j2642.html"
       ],
       "verificationNotes": [
         "Actual position-majority match-level audit outstanding",
-        "DOB unconfirmed; intentionally null"
+        "DOB unconfirmed; intentionally null",
+        "2000-01~2002-03 league record verified from BDFutbol personal career table; tier remains DRAFT; positional rank pending"
       ],
       "nameOriginal": "Xabi Alonso",
-      "clubNameOriginal": "Real Sociedad"
+      "clubNameOriginal": "Real Sociedad",
+      "tierReview": "2002-03 33경기 모두 선발, 3골. 2000-01 에이바르·소시에다드 경험 이후 2001-02 29선발로 입지를 굳힌 성장세와 2002-03 중원 전개의 핵심성을 고려해 A 잠정 평가. 당시 주 포지션 CM/DM 구분은 경기별 검증 필요.",
+      "threeSeasonReview": {
+        "status": "source_profile_checked_three_seasons_draft",
+        "priority": [
+          "2002-03",
+          "2001-02",
+          "2000-01"
+        ],
+        "leagueRecords": [
+          {
+            "season": "2000-01",
+            "club": "Eibar (Segunda División)",
+            "appearances": 14,
+            "starts": 14,
+            "goals": 0
+          },
+          {
+            "season": "2000-01",
+            "club": "Real Sociedad",
+            "appearances": 18,
+            "starts": 15,
+            "goals": 0
+          },
+          {
+            "season": "2001-02",
+            "club": "Real Sociedad",
+            "appearances": 29,
+            "starts": 29,
+            "goals": 3
+          },
+          {
+            "season": "2002-03",
+            "club": "Real Sociedad",
+            "appearances": 33,
+            "starts": 33,
+            "goals": 3
+          }
+        ],
+        "notes": "개인 3시즌 리그 출전 기록 확인. 순위 및 시즌 다수 출전 포지션 비교 검증 전.",
+        "source": "https://www.bdfutbol.com/en/j/j2642.html"
+      },
+      "independentSelectionAudit": "profile_and_current_club_2002_03_checked"
     },
     {
       "id": "laliga-200203-sociedad-08",
@@ -1322,7 +1533,7 @@
       "club": "sociedad",
       "clubId": "sociedad",
       "clubName": "Real Sociedad",
-      "born": null,
+      "born": "1969-02-02",
       "role": "starter",
       "starts": 36,
       "leagueAppearances": 36,
@@ -1330,19 +1541,56 @@
       "leagueMinutes": 3186,
       "appearanceScope": "La Liga 2002-03 only",
       "positionVerification": "needs_review",
-      "tier": null,
+      "tier": "A",
       "rank": null,
-      "review": "draft_unapproved",
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2002-0330.html",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2002-0330.html"
+        "https://www.bdfutbol.com/en/t/t2002-0330.html",
+        "https://www.bdfutbol.com/en/j/j2570.html"
       ],
       "verificationNotes": [
         "Actual position-majority match-level audit outstanding",
-        "DOB unconfirmed; intentionally null"
+        "DOB unconfirmed; intentionally null",
+        "2000-01~2002-03 league record verified from BDFutbol personal career table; tier remains DRAFT; positional rank pending"
       ],
       "nameOriginal": "Valeri Karpin",
-      "clubNameOriginal": "Real Sociedad"
+      "clubNameOriginal": "Real Sociedad",
+      "tierReview": "2002-03 36경기 모두 선발·8골로 오른쪽 측면의 공격 생산성과 지속성 입증. 직전 셀타 시절에도 26·30차례 선발로 높은 수준을 유지하여 A 초안.",
+      "threeSeasonReview": {
+        "status": "source_profile_checked_three_seasons_draft",
+        "priority": [
+          "2002-03",
+          "2001-02",
+          "2000-01"
+        ],
+        "leagueRecords": [
+          {
+            "season": "2000-01",
+            "club": "Celta de Vigo",
+            "appearances": 30,
+            "starts": 26,
+            "goals": 5
+          },
+          {
+            "season": "2001-02",
+            "club": "Celta de Vigo",
+            "appearances": 33,
+            "starts": 30,
+            "goals": 3
+          },
+          {
+            "season": "2002-03",
+            "club": "Real Sociedad",
+            "appearances": 36,
+            "starts": 36,
+            "goals": 8
+          }
+        ],
+        "notes": "개인 3시즌 리그 출전 기록 확인. 순위 및 시즌 다수 출전 포지션 비교 검증 전.",
+        "source": "https://www.bdfutbol.com/en/j/j2570.html"
+      },
+      "independentSelectionAudit": "profile_and_current_club_2002_03_checked"
     },
     {
       "id": "laliga-200203-sociedad-11",
@@ -1686,18 +1934,55 @@
       "leagueMinutes": 2085,
       "appearanceScope": "La Liga 2002-03 only",
       "positionVerification": "needs_review",
-      "tier": null,
+      "tier": "A-",
       "rank": null,
-      "review": "draft_unapproved",
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2002-0313.html",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2002-0313.html"
+        "https://www.bdfutbol.com/en/t/t2002-0313.html",
+        "https://www.bdfutbol.com/en/j/j2095.html"
       ],
       "verificationNotes": [
-        "Actual position-majority match-level audit outstanding"
+        "Actual position-majority match-level audit outstanding",
+        "2000-01~2002-03 league record verified from BDFutbol personal career table; tier remains DRAFT; positional rank pending"
       ],
       "nameOriginal": "Noureddine Naybet",
-      "clubNameOriginal": "RC Deportivo de La Coruña"
+      "clubNameOriginal": "RC Deportivo de La Coruña",
+      "tierReview": "2002-03 25경기 모두 선발, 직전 두 시즌에도 25·24선발의 꾸준한 중앙수비 기여. 개인 수비 안정성과 경험을 높이 평가하되 출전량·동시대 CB 상대 비교가 남아 A- 초안.",
+      "threeSeasonReview": {
+        "status": "source_profile_checked_three_seasons_draft",
+        "priority": [
+          "2002-03",
+          "2001-02",
+          "2000-01"
+        ],
+        "leagueRecords": [
+          {
+            "season": "2000-01",
+            "club": "Deportivo de La Coruña",
+            "appearances": 26,
+            "starts": 25,
+            "goals": 1
+          },
+          {
+            "season": "2001-02",
+            "club": "Deportivo de La Coruña",
+            "appearances": 24,
+            "starts": 24,
+            "goals": 2
+          },
+          {
+            "season": "2002-03",
+            "club": "Deportivo de La Coruña",
+            "appearances": 25,
+            "starts": 25,
+            "goals": 1
+          }
+        ],
+        "notes": "개인 3시즌 리그 출전 기록 확인. 순위 및 시즌 다수 출전 포지션 비교 검증 전.",
+        "source": "https://www.bdfutbol.com/en/j/j2095.html"
+      },
+      "independentSelectionAudit": "profile_and_current_club_2002_03_checked"
     },
     {
       "id": "laliga-200203-deportivo-08",
@@ -1871,18 +2156,55 @@
       "leagueMinutes": 2934,
       "appearanceScope": "La Liga 2002-03 only",
       "positionVerification": "needs_review",
-      "tier": null,
+      "tier": "B+",
       "rank": null,
-      "review": "draft_unapproved",
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2002-0313.html",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2002-0313.html"
+        "https://www.bdfutbol.com/en/t/t2002-0313.html",
+        "https://www.bdfutbol.com/en/j/j2491.html"
       ],
       "verificationNotes": [
-        "Actual position-majority match-level audit outstanding"
+        "Actual position-majority match-level audit outstanding",
+        "2000-01~2002-03 league record verified from BDFutbol personal career table; tier remains DRAFT; positional rank pending"
       ],
       "nameOriginal": "Sergio González",
-      "clubNameOriginal": "RC Deportivo de La Coruña"
+      "clubNameOriginal": "RC Deportivo de La Coruña",
+      "tierReview": "2002-03 37경기·34선발·3골, 직전 두 시즌 38경기씩 출전. 중원에서 높은 가동률과 주전 핵심성으로 B+ 잠정 평가. 구단 성적보다 개인 출전 지속성 중심.",
+      "threeSeasonReview": {
+        "status": "source_profile_checked_three_seasons_draft",
+        "priority": [
+          "2002-03",
+          "2001-02",
+          "2000-01"
+        ],
+        "leagueRecords": [
+          {
+            "season": "2000-01",
+            "club": "Espanyol",
+            "appearances": 38,
+            "starts": 38,
+            "goals": 4
+          },
+          {
+            "season": "2001-02",
+            "club": "Deportivo de La Coruña",
+            "appearances": 38,
+            "starts": 28,
+            "goals": 4
+          },
+          {
+            "season": "2002-03",
+            "club": "Deportivo de La Coruña",
+            "appearances": 37,
+            "starts": 34,
+            "goals": 3
+          }
+        ],
+        "notes": "개인 3시즌 리그 출전 기록 확인. 순위 및 시즌 다수 출전 포지션 비교 검증 전.",
+        "source": "https://www.bdfutbol.com/en/j/j2491.html"
+      },
+      "independentSelectionAudit": "profile_and_current_club_2002_03_checked"
     },
     {
       "id": "laliga-200203-deportivo-13",
@@ -2353,16 +2675,54 @@
       "leagueMinutes": 2668,
       "appearanceScope": "La Liga 2002-03 only",
       "positionVerification": "verified",
-      "tier": null,
+      "tier": "A+",
       "rank": null,
-      "review": "draft_unapproved",
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2002-0336.html",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2002-0336.html"
+        "https://www.bdfutbol.com/en/t/t2002-0336.html",
+        "https://www.bdfutbol.com/en/j/j1558.html"
       ],
-      "verificationNotes": [],
+      "verificationNotes": [
+        "2000-01~2002-03 league record verified from BDFutbol personal career table; tier remains DRAFT; positional rank pending"
+      ],
       "nameOriginal": "Santiago Cañizares",
-      "clubNameOriginal": "Valencia CF"
+      "clubNameOriginal": "Valencia CF",
+      "tierReview": "2002-03 31경기 31선발, 최근 두 시즌 37·32경기 전 경기 선발 출전. 2000-01과 2001-02 사모라상 수상 기록도 동시대 기량의 지속성을 뒷받침. 우승 실적을 가산하지 않고 장기 안정성·골키퍼 역량을 근거로 A+ 초안.",
+      "threeSeasonReview": {
+        "status": "source_profile_checked_three_seasons_draft",
+        "priority": [
+          "2002-03",
+          "2001-02",
+          "2000-01"
+        ],
+        "leagueRecords": [
+          {
+            "season": "2000-01",
+            "club": "Valencia",
+            "appearances": 37,
+            "starts": 37,
+            "goals": 0
+          },
+          {
+            "season": "2001-02",
+            "club": "Valencia",
+            "appearances": 32,
+            "starts": 32,
+            "goals": 0
+          },
+          {
+            "season": "2002-03",
+            "club": "Valencia",
+            "appearances": 31,
+            "starts": 31,
+            "goals": 0
+          }
+        ],
+        "notes": "개인 3시즌 리그 출전 기록 확인. 순위 및 시즌 다수 출전 포지션 비교 검증 전.",
+        "source": "https://www.bdfutbol.com/en/j/j1558.html"
+      },
+      "independentSelectionAudit": "profile_and_current_club_2002_03_checked"
     },
     {
       "id": "laliga-200203-valencia-02",
@@ -2673,7 +3033,7 @@
       "club": "valencia",
       "clubId": "valencia",
       "clubName": "Valencia CF",
-      "born": null,
+      "born": "1975-07-11",
       "role": "starter",
       "starts": 30,
       "leagueAppearances": 35,
@@ -2681,19 +3041,56 @@
       "leagueMinutes": 2595,
       "appearanceScope": "La Liga 2002-03 only",
       "positionVerification": "needs_review",
-      "tier": null,
+      "tier": "A-",
       "rank": null,
-      "review": "draft_unapproved",
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2002-0336.html",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2002-0336.html"
+        "https://www.bdfutbol.com/en/t/t2002-0336.html",
+        "https://www.bdfutbol.com/en/j/j2404.html"
       ],
       "verificationNotes": [
         "Actual position-majority match-level audit outstanding",
-        "DOB unconfirmed; intentionally null"
+        "DOB unconfirmed; intentionally null",
+        "2000-01~2002-03 league record verified from BDFutbol personal career table; tier remains DRAFT; positional rank pending"
       ],
       "nameOriginal": "Rubén Baraja",
-      "clubNameOriginal": "Valencia CF"
+      "clubNameOriginal": "Valencia CF",
+      "tierReview": "2002-03 35경기·30선발·5골로 중앙에서 복귀해 꾸준히 기여. 2000-01 34선발과 2001-02 출전 공백(15선발)을 최근 가중으로 함께 고려해 A- 초안. 우승 가산은 제외.",
+      "threeSeasonReview": {
+        "status": "source_profile_checked_three_seasons_draft",
+        "priority": [
+          "2002-03",
+          "2001-02",
+          "2000-01"
+        ],
+        "leagueRecords": [
+          {
+            "season": "2000-01",
+            "club": "Valencia",
+            "appearances": 35,
+            "starts": 34,
+            "goals": 4
+          },
+          {
+            "season": "2001-02",
+            "club": "Valencia",
+            "appearances": 17,
+            "starts": 15,
+            "goals": 7
+          },
+          {
+            "season": "2002-03",
+            "club": "Valencia",
+            "appearances": 35,
+            "starts": 30,
+            "goals": 5
+          }
+        ],
+        "notes": "개인 3시즌 리그 출전 기록 확인. 순위 및 시즌 다수 출전 포지션 비교 검증 전.",
+        "source": "https://www.bdfutbol.com/en/j/j2404.html"
+      },
+      "independentSelectionAudit": "profile_and_current_club_2002_03_checked"
     },
     {
       "id": "laliga-200203-valencia-12",
@@ -2733,7 +3130,7 @@
       "club": "valencia",
       "clubId": "valencia",
       "clubName": "Valencia CF",
-      "born": null,
+      "born": "1981-07-16",
       "role": "starter",
       "starts": 26,
       "leagueAppearances": 28,
@@ -2741,19 +3138,56 @@
       "leagueMinutes": 2029,
       "appearanceScope": "La Liga 2002-03 only",
       "positionVerification": "needs_review",
-      "tier": null,
+      "tier": "B+",
       "rank": null,
-      "review": "draft_unapproved",
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2002-0336.html",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2002-0336.html"
+        "https://www.bdfutbol.com/en/t/t2002-0336.html",
+        "https://www.bdfutbol.com/en/j/j2583.html"
       ],
       "verificationNotes": [
         "Actual position-majority match-level audit outstanding",
-        "DOB unconfirmed; intentionally null"
+        "DOB unconfirmed; intentionally null",
+        "2000-01~2002-03 league record verified from BDFutbol personal career table; tier remains DRAFT; positional rank pending"
       ],
       "nameOriginal": "Vicente Rodríguez",
-      "clubNameOriginal": "Valencia CF"
+      "clubNameOriginal": "Valencia CF",
+      "tierReview": "2002-03 28경기·26선발로 왼쪽 측면의 실질적 주전. 직전 두 시즌 20·22선발에서 기용 비중이 상승했으나 2002-03 개인 득점 생산성은 제한적이어서 B+ 초안. 2003-04 이후 활약을 소급하지 않음.",
+      "threeSeasonReview": {
+        "status": "source_profile_checked_three_seasons_draft",
+        "priority": [
+          "2002-03",
+          "2001-02",
+          "2000-01"
+        ],
+        "leagueRecords": [
+          {
+            "season": "2000-01",
+            "club": "Valencia",
+            "appearances": 33,
+            "starts": 20,
+            "goals": 5
+          },
+          {
+            "season": "2001-02",
+            "club": "Valencia",
+            "appearances": 31,
+            "starts": 22,
+            "goals": 1
+          },
+          {
+            "season": "2002-03",
+            "club": "Valencia",
+            "appearances": 28,
+            "starts": 26,
+            "goals": 1
+          }
+        ],
+        "notes": "개인 3시즌 리그 출전 기록 확인. 순위 및 시즌 다수 출전 포지션 비교 검증 전.",
+        "source": "https://www.bdfutbol.com/en/j/j2583.html"
+      },
+      "independentSelectionAudit": "profile_and_current_club_2002_03_checked"
     },
     {
       "id": "laliga-200203-valencia-14",
@@ -2949,18 +3383,55 @@
       "leagueMinutes": 2840,
       "appearanceScope": "La Liga 2002-03 only",
       "positionVerification": "needs_review",
-      "tier": null,
+      "tier": "A-",
       "rank": null,
-      "review": "draft_unapproved",
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2002-031.html",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2002-031.html"
+        "https://www.bdfutbol.com/en/t/t2002-031.html",
+        "https://www.bdfutbol.com/en/j/j350.html"
       ],
       "verificationNotes": [
-        "Actual position-majority match-level audit outstanding"
+        "Actual position-majority match-level audit outstanding",
+        "2000-01~2002-03 league record verified from BDFutbol personal career table; tier remains DRAFT; positional rank pending"
       ],
       "nameOriginal": "Carles Puyol",
-      "clubNameOriginal": "FC Barcelona"
+      "clubNameOriginal": "FC Barcelona",
+      "tierReview": "2002-03 32경기 전부 선발, 2001-02에도 33차례 선발. 수비 안정성과 반복된 핵심 기용이 돋보이나 CB/RB 시즌 주 포지션을 확정할 자료가 부족해 A- 잠정 평가·포지션 순위 보류.",
+      "threeSeasonReview": {
+        "status": "source_profile_checked_three_seasons_draft",
+        "priority": [
+          "2002-03",
+          "2001-02",
+          "2000-01"
+        ],
+        "leagueRecords": [
+          {
+            "season": "2000-01",
+            "club": "Barcelona",
+            "appearances": 17,
+            "starts": 15,
+            "goals": 0
+          },
+          {
+            "season": "2001-02",
+            "club": "Barcelona",
+            "appearances": 35,
+            "starts": 33,
+            "goals": 2
+          },
+          {
+            "season": "2002-03",
+            "club": "Barcelona",
+            "appearances": 32,
+            "starts": 32,
+            "goals": 0
+          }
+        ],
+        "notes": "개인 3시즌 리그 출전 기록 확인. 순위 및 시즌 다수 출전 포지션 비교 검증 전.",
+        "source": "https://www.bdfutbol.com/en/j/j350.html"
+      },
+      "independentSelectionAudit": "profile_and_current_club_2002_03_checked"
     },
     {
       "id": "laliga-200203-barca-06",
@@ -3007,18 +3478,55 @@
       "leagueMinutes": 2506,
       "appearanceScope": "La Liga 2002-03 only",
       "positionVerification": "needs_review",
-      "tier": null,
+      "tier": "A-",
       "rank": null,
-      "review": "draft_unapproved",
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2002-031.html",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2002-031.html"
+        "https://www.bdfutbol.com/en/t/t2002-031.html",
+        "https://www.bdfutbol.com/en/j/j2650.html"
       ],
       "verificationNotes": [
-        "Actual position-majority match-level audit outstanding"
+        "Actual position-majority match-level audit outstanding",
+        "2000-01~2002-03 league record verified from BDFutbol personal career table; tier remains DRAFT; positional rank pending"
       ],
       "nameOriginal": "Xavi Hernández",
-      "clubNameOriginal": "FC Barcelona"
+      "clubNameOriginal": "FC Barcelona",
+      "tierReview": "2002-03 29차례 선발, 직전 시즌 31선발을 바탕으로 성장·지속된 중원 기여 확인. 당시 팀 성적을 직접 감점하지 않되 리그 최상위 경쟁력은 추가 검토가 필요해 A- 잠정 평가.",
+      "threeSeasonReview": {
+        "status": "source_profile_checked_three_seasons_draft",
+        "priority": [
+          "2002-03",
+          "2001-02",
+          "2000-01"
+        ],
+        "leagueRecords": [
+          {
+            "season": "2000-01",
+            "club": "Barcelona",
+            "appearances": 20,
+            "starts": 15,
+            "goals": 2
+          },
+          {
+            "season": "2001-02",
+            "club": "Barcelona",
+            "appearances": 35,
+            "starts": 31,
+            "goals": 4
+          },
+          {
+            "season": "2002-03",
+            "club": "Barcelona",
+            "appearances": 29,
+            "starts": 29,
+            "goals": 2
+          }
+        ],
+        "notes": "개인 3시즌 리그 출전 기록 확인. 순위 및 시즌 다수 출전 포지션 비교 검증 전.",
+        "source": "https://www.bdfutbol.com/en/j/j2650.html"
+      },
+      "independentSelectionAudit": "profile_and_current_club_2002_03_checked"
     },
     {
       "id": "laliga-200203-barca-08",
@@ -3796,7 +4304,7 @@
       "club": "villarreal",
       "clubId": "villarreal",
       "clubName": "Villarreal CF",
-      "born": null,
+      "born": "1978-09-19",
       "role": "starter",
       "starts": 36,
       "leagueAppearances": 36,
@@ -3804,19 +4312,56 @@
       "leagueMinutes": 3091,
       "appearanceScope": "La Liga 2002-03 only",
       "positionVerification": "needs_review",
-      "tier": null,
+      "tier": "A-",
       "rank": null,
-      "review": "draft_unapproved",
+      "review": "preliminary_tier_position_pending_user_approval",
       "evidence": "https://www.bdfutbol.com/en/t/t2002-0338.html",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2002-0338.html"
+        "https://www.bdfutbol.com/en/t/t2002-0338.html",
+        "https://www.bdfutbol.com/en/j/j1339.html"
       ],
       "verificationNotes": [
         "Actual position-majority match-level audit outstanding",
-        "DOB unconfirmed; intentionally null"
+        "DOB unconfirmed; intentionally null",
+        "2000-01~2002-03 league record verified from BDFutbol personal career table; tier remains DRAFT; positional rank pending"
       ],
       "nameOriginal": "Jorge López",
-      "clubNameOriginal": "Villarreal CF"
+      "clubNameOriginal": "Villarreal CF",
+      "tierReview": "2002-03 36경기 모두 선발·8골, 이전 두 시즌에도 33선발씩 8골·7골. 리그 순위와 별개로 오른쪽 공격 자원의 높은 지속적 생산성을 인정해 A- 초안.",
+      "threeSeasonReview": {
+        "status": "source_profile_checked_three_seasons_draft",
+        "priority": [
+          "2002-03",
+          "2001-02",
+          "2000-01"
+        ],
+        "leagueRecords": [
+          {
+            "season": "2000-01",
+            "club": "Villarreal",
+            "appearances": 35,
+            "starts": 33,
+            "goals": 8
+          },
+          {
+            "season": "2001-02",
+            "club": "Villarreal",
+            "appearances": 34,
+            "starts": 33,
+            "goals": 7
+          },
+          {
+            "season": "2002-03",
+            "club": "Villarreal",
+            "appearances": 36,
+            "starts": 36,
+            "goals": 8
+          }
+        ],
+        "notes": "개인 3시즌 리그 출전 기록 확인. 순위 및 시즌 다수 출전 포지션 비교 검증 전.",
+        "source": "https://www.bdfutbol.com/en/j/j1339.html"
+      },
+      "independentSelectionAudit": "profile_and_current_club_2002_03_checked"
     },
     {
       "id": "laliga-200203-villarreal-09",
