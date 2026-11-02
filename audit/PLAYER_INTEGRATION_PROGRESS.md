@@ -529,3 +529,13 @@ Source TXT instruction adapted to the **2009-10 season only**. Candidate roster 
 - Personal qualitative latest 60% (2019/20), 30% (2018/19), 10% (2017/18). **DRAFT / unapproved**; no independent full 3-season individual stats or match-by-match role census; all league starts/apps null. Selected official top goals and De Bruyne 20 assists only.
 - Noteworthy FootballSquads James Justin DOB source conflict with England FA and official PL: official 1998-02-23 used, secondary review annotated.
 - No other season JSON, CSS, JavaScript, crest assets, champion C markers changed. GitHub structural validator, Actions workflow and browser Pages inspection must be tracked separately.
+
+
+## Premier League 2020-21 player DRAFT (2026-11-02)
+- Actual 2021-22 UEFA entrants from UEFA archival records: Man City, Man United, Liverpool, Chelsea UCL; Leicester, West Ham UEL; Tottenham inaugural UECL (play-offs). PL 8 Arsenal excluded.
+- **Official PL 2020/21 modal 4-2-3-1: 202 of 760 starts** (PL June 8 2021). Liverpool and City club-specific 4-3-3, Chelsea Tuchel 3-4-2-1 (3 CB, 2 wingbacks) recorded distinctly.
+- 119 first-team DRAFT candidates, seven 11-player club starting representations, maximum one positional backup per team, all S–C tiers and per-role 1..N ranks and proposed 4-2-3-1 Best XI.
+- Intended 3-season individual weighting: 2020-21 60%, 2019-20 30%, 2018-19 10%; **qualitative only**, independent individual player prior season source audit pending. All exact PL starts and appearances null; actual majority positional lineups incomplete.
+- Removed minimal-start names rather than filling quotas (Steffen, Adrian, Van de Beek, Juan Mata, Dele Alli, Aguero and Giroud). James Justin DOB first-source conflict resolved with official 1998-02-23, independently checked.
+- Changed only 2020-21 data, seven period squad research JSONs, full review, season-specific validation/workflow and progress log; previous seasons, site UI, emblems and champion C markers untouched.
+- Treat CI as structural only. Track GH Pages deployment and actual browser render separately. DRAFT/unapproved.
