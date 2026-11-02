@@ -21,7 +21,7 @@ PL confirmed: https://www.premierleague.com/en/news/2142985
 
 ## 2. Formation and weighting
 
-**4-2-3-1 most-used 2020-21**, PL official 2021-06-08: 202 of 760 starts, vs 4-4-2 126 and 4-3-3 113. https://www.premierleague.com/en/news/2165778
+**4-2-3-1 most-used 2020-21: 202/760 team starts**, PL official 2021-06-08: 202 of 760 starts, vs 4-4-2 126 and 4-3-3 113. https://www.premierleague.com/en/news/2165778
 **Three-season concept:** 2018-19 10%, 2019-20 30%, 2020-21 60%. Individual tiers are qualitative, not quantitatively source-verified.
 Liverpool and City actual 4-3-3 and Chelsea Tuchel 3-4-2-1 distinguished from league-wide 4-2-3-1.
 
