@@ -558,3 +558,14 @@ Source TXT instruction adapted to the **2009-10 season only**. Candidate roster 
 - DOB independently sourced from two official records: 0/141 complete. Match-by-match primary position verification: 0/141 complete. Historical three-year full club/league individual verification: open.
 - Tier/position/Best XI status draft_unapproved, full audit at audit/PLAYER_PREMIERLEAGUE_2022-23_DRAFT_REVIEW.md.
 - Structural GitHub CI, Pages deployment and direct browser UI must be checked separately; season 2023-24 not started.
+
+
+## Premier League 2023-24 DRAFT checkpoint — 2026-11-02
+- 2024-25 actual UEFA entrants: 7 clubs; UCL 4 (City Arsenal Liverpool Villa), UEL 2 (Spurs and eighth-placed Manchester United via FA Cup), UECL Chelsea. Newcastle PL 7th excluded.
+- Official PL modal 4-2-3-1 296/760 team starts (1 June 2024).
+- 126 new players, 77 starting roles and 49 backups. Tiers/rankings all DRAFT; 4-2-3-1 Best XI unapproved.
+- Three-season evaluation qualitative priority: 2021-22 10%, 2022-23 30%, 2023-24 60%. No fabricated weighted score. Previous club mirrors incomplete.
+- Mirror club records have loaned-out entries misclassified by club and were intentionally excluded (McAtee, Kaboré, Lokonga, Reguilón, David Datro Fofana, Lewis Hall).
+- Some majority-position evidence available from official PL (Foden early 25 starts 16 RW, Palmer 12 CAM starts), but 126-person complete match-position census not certified.
+- Player starts/goals source mirror and DOB 2nd-source crosschecks remain open. Structural CI and Pages build/deployment tracked separately.
+- Full source/individual rationale/club tables: audit/PLAYER_PREMIERLEAGUE_2023-24_DRAFT_REVIEW.md.
