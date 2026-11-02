@@ -122,3 +122,8 @@ Preserve `main` branch standings, emblems, designs, other seasons, and other lea
 - Resulting `data/laliga-1999-00.json` breakdown: **80/148 fully documented 3-season league-start records**, **64 pending**, **2 partial** (Martín Herrera GK, Cosmin Contra RB), **2 source conflicts** (CB Donato and Gabriel Schürrer). CB: 26/28 complete, 2 conflicts, 0 ordinary pending.
 - Old **148 player entries, IDs, clubs, birthdates, 1999-00 starts, roles, positions, S–D provisional tiers, positional ranks, and Best XI remain unchanged** compared with original `main`. Verified starts include **Segunda** and foreign leagues; these are labeled separately.
 - This checkpoint concerns **historical league-start records only**; weighted personal performance tiers and season-majority positional mapping require additional review. **DRAFT, not approved, not deployed.**
+
+
+### Main-to-DRAFT value-diff correction (2026-11-02)
+
+A final 148-player comparison identified **one legitimate data-field difference** from main: Zaragoza LB **Jesús Solana** 1999-00 league starts **`null` → `5`**. [BDFutbol player record](https://www.bdfutbol.com/es/j/j1259.html) confirms 8 appearances, 5 starts, and 519 minutes; [FBref](https://fbref.com/en/players/a9bea51b/all_comps/Jesus-Solana-Stats---All-Competitions) independently reports 8 appearances, 5 starts (minor minutes disagreement of 519 vs 521). This fills a **formerly missing start statistic** and must not be reported as an unchanged value. No candidate, club, role, position, birth date, S–D tier, positional rank, or Best XI changed. All other recorded 1999-00 starts match main. Preserve the 5 verified starts unless a higher-priority contradictory source appears.
