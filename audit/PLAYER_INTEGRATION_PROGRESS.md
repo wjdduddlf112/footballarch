@@ -569,3 +569,14 @@ Source TXT instruction adapted to the **2009-10 season only**. Candidate roster 
 - Some majority-position evidence available from official PL (Foden early 25 starts 16 RW, Palmer 12 CAM starts), but 126-person complete match-position census not certified.
 - Player starts/goals source mirror and DOB 2nd-source crosschecks remain open. Structural CI and Pages build/deployment tracked separately.
 - Full source/individual rationale/club tables: audit/PLAYER_PREMIERLEAGUE_2023-24_DRAFT_REVIEW.md.
+
+
+## Premier League 2024-25 DRAFT checkpoint — 2026-11-02
+- Nine actual 2025-26 UEFA participants: UCL 6 (top 5 + Europa champion Tottenham finishing PL 17th), UEL 2 (Villa and Forest), UECL 1 (Palace FA Cup winners, UEFA/CAS demoted from UEL for multi-club ownership).
+- PL official 2025-06-05 modal formation 4-2-3-1 408/760 team starts, 3-4-2-1 117, 4-3-3 114.
+- 162 newly curated/graded 2024-25 PL players, 99 starter roles (9x11), 63 backups; all ten position-specific 1-N rankings and proposed 11-person Best XI. DRAFT user unapproved.
+- 2022-23 10%, 2023-24 30%, 2024-25 60% qualitative evaluation (without fabricated numeric composite); prior PL same-team/previous-club mirror snapshots for 16 team sources; foreign/other-club missing stats null.
+- Loan/parent club transfer aggregation explicitly audited, especially Chelsea Chalobah and Villa Rashford, both omitted rather than attributing totals falsely. Long-term injured Man City Rodri with only 1 league start omitted.
+- Unverified in official second source: player-by-player starts/apps, DOB; match-by-match most-played position 0/162 fully audited. Multirole players/Palace 3-4-2-1 require role confirmation.
+- Full roster, original/Korean names, birthdays, grades, rankings, individual reasoning and sources at audit/PLAYER_PREMIERLEAGUE_2024-25_DRAFT_REVIEW.md.
+- Structural CI, GH Pages build/deployment and actual browser QA remain separate steps. Do not move to PL 2025-26 without next instruction.
