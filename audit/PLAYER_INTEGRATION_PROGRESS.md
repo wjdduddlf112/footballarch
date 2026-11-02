@@ -1,5 +1,10 @@
 # Football Archive — Player integration checkpoint
 
+## 2026-11-02 La Liga 1999-00 independent re-selection audit (new DRAFT branch)
+
+Branch `audit/laliga-1999-00-fresh-source-pool-20261102`: independently sourced 200-person BDFutbol pool across all 10 verified European-qualified clubs; narrowed to 167 tentative candidates (110 proposed starters/57 backups) under position caps. 151 DOB filled (some copied only as secondary identity cache), 16 missing; 9 date checks and a previously conflicting Valencia DOB identified. 143 prior player IDs matched only **after** fresh source selection; 24 proposed additions, 5 proposed omissions, 13 tentative position differences. **All new tiers and ranks remain null**, because full independent three-season evidence is not complete. No existing player ratings or site JSON were altered, no CLI/browser gate passed. Read `audit/LALIGA_1999_00_INDEPENDENT_REBUILD_2026-11-02.md`. Season unfinished; do not proceed to next season or imply evaluation complete.
+
+
 Date: 2026-11-01  
 Repository: `wjdduddlf112/footballarch`, branch `main`  
 Deployment target: https://wjdduddlf112.github.io/footballarch/  
