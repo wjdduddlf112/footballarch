@@ -56,14 +56,14 @@ Sources:
 
 **Qualification:** Both Celta keepers started 19 matches: role labels remain `co_starter`, not falsely a settled 1st/2nd choice. Alavés's Martín Herrera started all 38 matches; there is no evidence-based second selected GK under the eligibility rule. Real Madrid's Bizzarri (7) and Illgner (5) are a selection edge case, audited and marked for follow-up; Bizzarri selected based on larger league starts only. Minimal-played GKs are not added just to fill a quota.
 
-**Three-season evaluation and tiers:** The 17 candidates' 1999-00 squad evidence and birth dates have been checked. A genuinely independent comparative assessment for 1997-98 and 1998-99 has NOT been completed for them, so independent tiers and rank remain `null`. This does not indicate poor performance or D tier. Herrera's contemporary Zamora award (38 league starts, 37 goals against) is relevant evidence, not a substitute for the complete three-season comparison ([El País contemporary note](https://elpais.com/diario/2000/05/22/deportes/959551201_850215.html)).
+**Three-season evaluation and tiers:** The 17 candidates' 1999-00 squad evidence and birth dates have been checked. A genuinely independent comparative assessment for 1997-98 and 1998-99 has NOT been completed for them, so independent tiers and rank remain `null`. This does not indicate poor performance or D tier. Herrera's contemporary Zamora award (38 league starts, 37 goals against) is relevant evidence, not a substitute for the complete three-season comparison ([El País contemporary note](https://elpais.com/diario/2000/05/22/deportes/958946402_850215.html)).
 
 Data file: [laliga-1999-00-gk-independent.json](./player-research/laliga-1999-00-gk-independent.json).
 
 ## 3. Contemporary tactical evidence, not final frequency census
 
 - **Deportivo / Celta:** a November 1999 [El País tactical report](https://elpais.com/diario/1999/11/30/deportes/943916401_850215.html) explicitly discusses both clubs' `4-2-3-1` shape. This supports plausible representative lineup structures but does **not** provide a league-wide count of most-used systems.
-- **Valencia:** Héctor Cúper's `4-4-2` double-pivot and occasional diamond variation are discussed in [period coverage](https://elpais.com/diario/1999/11/23/deportes/943311610_850215.html). The exact season-most-frequent shape is not confirmed.
+- **Valencia:** Héctor Cúper's `4-4-2` double-pivot and occasional diamond variation are discussed in [period coverage](https://elpais.com/diario/1999/09/16/deportes/937432804_850215.html). The exact season-most-frequent shape is not confirmed.
 - Other selected clubs: full season-long formation frequency not yet independently verified. No one-match lineup is used as conclusive proof.
 
 ## 4. Validation gates
