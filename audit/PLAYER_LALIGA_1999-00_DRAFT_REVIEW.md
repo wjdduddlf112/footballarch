@@ -74,8 +74,9 @@ Data file: [laliga-1999-00-gk-independent.json](./player-research/laliga-1999-00
 | GK 1999-00 starters & DOB | **Screened** | 17 player profiles and 10 squad season pages |
 | GK preceding 2 seasons | **16 complete; 1 partial** | 13 newly audited; 3 previously audited; Martín Herrera 1997-98 Toluca starts still unverified |
 | GK tier & relative league rank | **Existing DRAFT preserved; not reapproved** | Do not treat new starting counts as independent tier verification |
-| CB historical starting records | **9 confirmed; 2 source conflicts; 17 pending** | 2 previously audited, 7 newly corroborated; Donato and Gabriel Schürrer BDFutbol / FBref disagree for 1999-00 starts |
-| LB, RB, DM, CM, CAM, LW, RW, ST | **Pending** | Historical role and three-season record checks remain |
+| CB historical starting records | **25 complete; 2 source conflicts; 1 partial** | Donato and Gabriel Schürrer BDFutbol / FBref disagree; Björklund 1997-98 Rangers season starts unknown |
+| LB historical starting records | **11 complete** | All 11 LB candidates have 3-season league starting records; Solana 1999-00 previously-null starts corrected to 5; Navas LB/RB and Lanna LB/CB role still pending |
+| RB, DM, CM, CAM, LW, RW, ST | **Pending** | Historical role and three-season record checks remain |
 | 10 teams' season-majority formation | **Not verified** | Specific plausible period reports only |
 | World / League Top classes | **Not independently recalculated** | Dependent on new tier evidence |
 | La Liga Best XI | **Not independently selected** | Old proposed XI remains untouched |
@@ -101,3 +102,13 @@ Preserve `main` branch standings, emblems, designs, other seasons, and other lea
 - Open candidate qualification questions: Real Madrid 3 CB cap vs Iván Campo/Helguera; Zaragoza Kari Sundgren CB vs RB; Frank de Boer CB vs LB season majority; Celta goalkeeper co-starter labels.
 
 **Deployment:** not merged, no production changes, user final approval still pending.
+
+## 7. Reuse-first continued audit checkpoint (2026-11-02)
+
+- **57 to 67 full historical 3-season league-start record audits** (+16 existing CB profiles verified, then +10 LB profiles verified, after the earlier 41), out of 148 total. Unresolved: 77 pending, 2 source conflicts, 2 partial history profiles. Note this is historical participation corroboration, not full weighted personal performance review.
+- **CB**: 25/28 profiles complete, two (Donato/Schürrer) FBref/BDFutbol 1999-00 discrepancies, one (Joachim Björklund) Rangers 1997-98 starting record missing. CB season-majority questions on Sundgren (CB/RB) and Ángel Luis Alcázar (CB/RB).
+- **LB**: 11/11 3-season league-start records now corroborated. Existing 10 previously pending names were matched and updated (Enrique Romero, Sergi Barjuán, Amedeo Carboni, Marco Lanna, Jesús Solana, Víctor Torres Mestre, Juanfran García, Carles Llorens, Miquel Soler, Mauro Navas). Roberto Carlos was already corroborated.
+- **Only one original roster-level field corrected**: Zaragoza Jesús Solana `starts: null → 5` in 1999-00, backed by [BDFutbol season profile](https://www.bdfutbol.com/en/j/j1259.html) and [FBref all-comps statistics](https://fbref.com/en/players/a9bea51b/all_comps/Jesus-Solana-Stats---All-Competitions) (both 8 appearances, 5 starts; their recorded minutes differ by 2). Keep Solana for now pending starter-equivalent backup eligibility.
+- **Position uncertainty not silently corrected**: Mauro Navas may have occupied RB more often than existing LB tag; 2000-05-14 [Athletic Club official match lineup](https://www.athletic-club.eus/en/teams/athletic-club/1999-00/matches/1_2106/) lists him first in Espanyol back four, whereas [RSSSF contemporary lineups](https://www.rsssf.org/tabless/span00ext.html) place him on a different side in other matches. Marco Lanna CB/LB majority also requires review.
+- Proof file: [LB independent three-season audit](./player-research/laliga-1999-00-lb-three-season-gap-audit.json).
+- Player names, IDs, dates of birth, clubs, primary positions, starter/backup labels, tiers, ranks and best XI all equal to `main` in this checkpoint. All prior player `starts` fields remain except the single sourced Jesús Solana correction. Production `main` remains unchanged; PR is unapproved DRAFT.
