@@ -1,0 +1,24 @@
+name: Verify PL 2021-22 DRAFT
+on:
+  push:
+    branches: [main, draft/pl-2021-22-research]
+    paths:
+      - data/premierleague-2021-22.json
+      - audit/player-research/premierleague-2021-22-*
+      - scripts/verify-pl-2021-22-draft.mjs
+      - .github/workflows/verify-pl-2021-22-draft.yml
+  pull_request:
+    paths:
+      - data/premierleague-2021-22.json
+      - audit/player-research/premierleague-2021-22-*
+      - scripts/verify-pl-2021-22-draft.mjs
+      - .github/workflows/verify-pl-2021-22-draft.yml
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node scripts/verify-pl-2021-22-draft.mjs

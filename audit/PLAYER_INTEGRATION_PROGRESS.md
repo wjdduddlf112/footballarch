@@ -539,3 +539,11 @@ Source TXT instruction adapted to the **2009-10 season only**. Candidate roster 
 - Removed minimal-start names rather than filling quotas (Steffen, Adrian, Van de Beek, Juan Mata, Dele Alli, Aguero and Giroud). James Justin DOB first-source conflict resolved with official 1998-02-23, independently checked.
 - Changed only 2020-21 data, seven period squad research JSONs, full review, season-specific validation/workflow and progress log; previous seasons, site UI, emblems and champion C markers untouched.
 - Treat CI as structural only. Track GH Pages deployment and actual browser render separately. DRAFT/unapproved.
+
+
+## PL 2021-22 DRAFT checkpoint (2026-11-02)
+- UEFA qualified clubs: 7 actual; official modal 4-3-3 (185/760).
+- 126 manual research candidates: 77 starters and 49 reserves, DRAFT tiers and all positional ranks, 11 proposed XI.
+- Current starts/apps & DOB mirrored from club public PL data; independent records and DOB second-source verification OPEN.
+- Full match-by-match primary position verification OPEN; prior seasons same-club stats only, other clubs pending.
+- PR and structural CI status must be verified separately. Final user review NOT given.
