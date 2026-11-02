@@ -547,3 +547,14 @@ Source TXT instruction adapted to the **2009-10 season only**. Candidate roster 
 - Current starts/apps & DOB mirrored from club public PL data; independent records and DOB second-source verification OPEN.
 - Full match-by-match primary position verification OPEN; prior seasons same-club stats only, other clubs pending.
 - PR and structural CI status must be verified separately. Final user review NOT given.
+
+
+## Premier League 2022-23 new-season DRAFT checkpoint — 2026-11-02
+- Actual UEFA 2023-24 qualifiers: eight (4 UCL, 3 UEL including West Ham as 2022-23 UECL titleholder, 1 UECL Aston Villa).
+- Premier League official modal 4-2-3-1 261/760 team starts.
+- 141 newly selected player DRAFT records (88 starters + 53 backups), 141/141 provisional tiers and within-position rankings, one proposed_unapproved Best XI.
+- 2022-23 mirror source for appearances/starts/BIO; cross-club transfer correction for Arsenal Trossard and Jorginho. Data-source presence does not equal official independent corroboration for all 141.
+- Previous 2020-21 and 2021-22 same/other club sources within 12 English club archives; outside clubs/leagues may remain NULL. Qualitative priority 10/30/60.
+- DOB independently sourced from two official records: 0/141 complete. Match-by-match primary position verification: 0/141 complete. Historical three-year full club/league individual verification: open.
+- Tier/position/Best XI status draft_unapproved, full audit at audit/PLAYER_PREMIERLEAGUE_2022-23_DRAFT_REVIEW.md.
+- Structural GitHub CI, Pages deployment and direct browser UI must be checked separately; season 2023-24 not started.
