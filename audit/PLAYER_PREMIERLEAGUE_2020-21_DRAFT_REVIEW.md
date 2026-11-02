@@ -208,3 +208,228 @@ Period roster: https://www.footballsquads.co.uk/eng/2020-2021/engprem/tottenha.h
 | RW | 루카스 모우라 | Lucas Moura | Tottenham Hotspur FC | 1992-08-13 | 주전 | B+ | 5 | 측면 전진과 전방 압박 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
 | RW | 개러스 베일 | Gareth Bale | Tottenham Hotspur FC | 1989-07-16 | 후보 | B+ | 6 | 짧은 선발 시간에 11골 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
 | ST | 해리 케인 | Harry Kane | Tottenham Hotspur FC | 1993-07-28 | 주전 | S | 1 | 23골·14도움 리그 1위 동시 달성 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+
+
+## 5. Full league role-specific ranks, every one of 119 players
+
+Rank comparisons cover the seven eligible 2021-22 UEFA-entrant clubs only; individual impact focused, no club table bonus. Positions are DRAFT pending actual majority match starting positions.
+
+### GK: 9 candidates
+
+| Rank | 한글명 | Original | Club | Tier | Individual assessment |
+|---:|---|---|---|---|---|
+| 1 | 에데르송 | Ederson | Manchester City | A+ | 19클린시트와 후방 전개, 골든글러브 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 2 | 에두아르 멘디 | Édouard Mendy | Chelsea FC | A+ | 첫 시즌 16클린시트·높은 선방 안정성 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 3 | 위고 요리스 | Hugo Lloris | Tottenham Hotspur FC | A0 | 골문 선방과 수비 조직 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. A0는 최근 시즌 및 직전 시즌의 리그 정상급 개인 경기력 지속성을 반영한 잠정 등급. |
+| 4 | 알리송 베케르 | Alisson Becker | Liverpool FC | A- | 변화된 수비진 뒤 중요한 선방, 간헐적 실수 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 5 | 카스페르 슈마이켈 | Kasper Schmeichel | Leicester City FC | B+ | 꾸준한 리그 선발과 골문 방어 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 6 | 다비드 데 헤아 | David de Gea | Manchester United FC | B+ | 주전 선방과 출전 분담, 일부 기복 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 7 | 우카시 파비안스키 | Łukasz Fabiański | West Ham United FC | B+ | 안정적 골문 선방·공중볼 처리 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 8 | 딘 헨더슨 | Dean Henderson | Manchester United FC | B+ | 후반기 실질적 선발 기회와 안정적 대체 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 9 | 케파 아리사발라가 | Kepa Arrizabalaga | Chelsea FC | B- | 전반기 몇 차례 골문 선발 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+
+### CB: 21 candidates
+
+| Rank | 한글명 | Original | Club | Tier | Individual assessment |
+|---:|---|---|---|---|---|
+| 1 | 후벵 디아스 | Rúben Dias | Manchester City | S | 32경기 출전과 리그 올해의 선수, 수비 지휘·대인 수비 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 2 | 존 스톤스 | John Stones | Manchester City | A+ | 침착한 후방 전개와 위치 선정, 4골 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 3 | 안토니오 뤼디거 | Antonio Rüdiger | Chelsea FC | A+ | 후반기 왼쪽 센터백 넓은 커버와 대인 저지 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 4 | 웨슬리 포파나 | Wesley Fofana | Leicester City FC | A- | 빠른 수비 커버·첫 PL 시즌 대인 수비 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 5 | 해리 매과이어 | Harry Maguire | Manchester United FC | A- | 높은 선발 출전과 제공권 수비 조직 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 6 | 조니 에번스 | Jonny Evans | Leicester City FC | A- | 센터백 수비 리딩과 전진 패스 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 7 | 치아구 실바 | Thiago Silva | Chelsea FC | A- | 중앙 수비의 경험·전진 패스 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 8 | 세사르 아스필리쿠에타 | César Azpilicueta | Chelsea FC | A- | 오른쪽 3CB 후방 지휘·커버 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 9 | 차을라르 쇠윈쥐 | Çağlar Söyüncü | Leicester City FC | B+ | 강한 대인 수비·중앙 선발 로테이션 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 10 | 빅토르 린델뢰프 | Victor Lindelöf | Manchester United FC | B+ | 후방 커버와 전진 패스 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 11 | 파비뉴 | Fabinho | Liverpool FC | B+ | 수비진 붕괴로 CB에서 임시 선발·후방 전개 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 12 | 토비 알데르베이럴트 | Toby Alderweireld | Tottenham Hotspur FC | B+ | 후방 위치선정·패스와 대인 방어 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 13 | 너새니얼 필립스 | Nathaniel Phillips | Liverpool FC | B+ | 후반기 센터백 공중볼·블록 기여 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 14 | 크레이그 도슨 | Craig Dawson | West Ham United FC | B+ | 높은 공중볼 경합과 세트피스 공격 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 15 | 안젤로 오그본나 | Angelo Ogbonna | West Ham United FC | B+ | 센터백 위치선정과 넓은 커버 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 16 | 에므리크 라포르트 | Aymeric Laporte | Manchester City | B+ | 중앙 수비 로테이션에서 왼발 전진 패스 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 17 | 에릭 다이어 | Eric Dier | Tottenham Hotspur FC | B0 | 중앙 수비 전환과 공중볼·기복 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 18 | 다빈손 산체스 | Davinson Sánchez | Tottenham Hotspur FC | B0 | 대인 수비·선발 로테이션 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 19 | 이사 디오프 | Issa Diop | West Ham United FC | B0 | 리그 중앙 수비 로테이션 선발 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 20 | 에리크 바이 | Eric Bailly | Manchester United FC | B0 | 대인 수비·부상 및 출전 제한 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 21 | 오잔 카바크 | Ozan Kabak | Liverpool FC | B- | 겨울 합류 후 대체 선발 중앙 수비 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+
+### LB: 13 candidates
+
+| Rank | 한글명 | Original | Club | Tier | Individual assessment |
+|---:|---|---|---|---|---|
+| 1 | 루크 쇼 | Luke Shaw | Manchester United FC | A+ | 리그 정상급 왼쪽 수비와 오버래핑·찬스 창출 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 2 | 벤 칠웰 | Ben Chilwell | Chelsea FC | A- | 왼쪽 풀백·윙백 공격·수비 전환 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 3 | 앤드루 로버트슨 | Andrew Robertson | Liverpool FC | A- | 왼쪽 풀백 지속 출전과 크로스·7도움 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 4 | 제임스 저스틴 | James Justin | Leicester City FC | A- | 왼쪽 풀백·윙백 전진, ACL 부상 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 5 | 애런 크레스웰 | Aaron Cresswell | West Ham United FC | A- | 왼쪽 크로스와 리그 8도움 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 6 | 세르히오 레길론 | Sergio Reguilón | Tottenham Hotspur FC | B+ | 왼쪽 전진과 빠른 수비 복귀 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 7 | 올렉산드르 진첸코 | Oleksandr Zinchenko | Manchester City | B+ | 인버티드 풀백의 전진 패스 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 8 | 마르코스 알론소 | Marcos Alonso | Chelsea FC | B0 | 후반기 왼쪽 윙백 대체 선발 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 9 | 루크 토머스 | Luke Thomas | Leicester City FC | B0 | 부상 이후 왼쪽 대체 선발 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 10 | 벤 데이비스 | Ben Davies | Tottenham Hotspur FC | B0 | 왼쪽 풀백 출전 분담 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 11 | 벵자맹 멘디 | Benjamin Mendy | Manchester City | B- | 공격적 크로스·수비 기복 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 12 | 아르튀르 마수아쿠 | Arthur Masuaku | West Ham United FC | B- | 공격적 왼쪽 윙백 대체, 부상 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 13 | 알렉스 텔리스 | Alex Telles | Manchester United FC | B- | 좌측 로테이션 크로스와 세트피스 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+
+### RB: 11 candidates
+
+| Rank | 한글명 | Original | Club | Tier | Individual assessment |
+|---:|---|---|---|---|---|
+| 1 | 주앙 칸셀루 | João Cancelo | Manchester City | A+ | 풀백의 중원 이동과 기술적인 공격 전개 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 2 | 트렌트 알렉산더아널드 | Trent Alexander-Arnold | Liverpool FC | A0 | 우측 전진 패스 7도움과 후반기 반등 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. A0는 최근 시즌 및 직전 시즌의 리그 정상급 개인 경기력 지속성을 반영한 잠정 등급. |
+| 3 | 에런 완비사카 | Aaron Wan-Bissaka | Manchester United FC | A- | 우측 수비의 강한 일대일 차단 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 4 | 블라디미르 초우팔 | Vladimír Coufal | West Ham United FC | A- | 오른쪽 풀백 적극적인 전진·7도움 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 5 | 리스 제임스 | Reece James | Chelsea FC | A- | 오른쪽 윙백·풀백 전진 크로스·대인 방어 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 6 | 카일 워커 | Kyle Walker | Manchester City | A- | 빠른 뒷공간 수비 커버 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 7 | 티모티 카스타뉴 | Timothy Castagne | Leicester City FC | B+ | 양쪽 풀백·윙백에서 전진과 커버 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 8 | 세르주 오리에 | Serge Aurier | Tottenham Hotspur FC | B0 | 오른쪽 공격 전진과 판단 기복 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 9 | 히카르두 페레이라 | Ricardo Pereira | Leicester City FC | B0 | 부상 이후 오른쪽 선발 복귀 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 10 | 맷 도허티 | Matt Doherty | Tottenham Hotspur FC | B- | 우측 풀백 적응 기복 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 11 | 라이언 프레더릭스 | Ryan Fredericks | West Ham United FC | B- | 오른쪽 수비 대체 선발과 전진 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+
+### DM: 11 candidates
+
+| Rank | 한글명 | Original | Club | Tier | Individual assessment |
+|---:|---|---|---|---|---|
+| 1 | 데클런 라이스 | Declan Rice | West Ham United FC | A+ | 광범위한 볼 회수·후방 수비 보호 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 2 | 윌프레드 은디디 | Wilfred Ndidi | Leicester City FC | A0 | 중앙 공 탈취와 6번 수비 보호 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. A0는 최근 시즌 및 직전 시즌의 리그 정상급 개인 경기력 지속성을 반영한 잠정 등급. |
+| 3 | 로드리 | Rodri | Manchester City | A0 | 단일 피벗의 볼 순환과 역습 저지 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. A0는 최근 시즌 및 직전 시즌의 리그 정상급 개인 경기력 지속성을 반영한 잠정 등급. |
+| 4 | 피에르에밀 호이비에르 | Pierre-Emile Højbjerg | Tottenham Hotspur FC | A- | 중원 강한 압박과 풀시즌 활동량 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 5 | 조르지뉴 | Jorginho | Chelsea FC | B+ | 2인 중앙 중원 점유 패스와 수비 전환 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 6 | 프레드 | Fred | Manchester United FC | B+ | 압박·회수와 중원 공수 전환 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 7 | 페르난지뉴 | Fernandinho | Manchester City | B+ | 수미 수비 경합·경험 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 8 | 네마냐 마티치 | Nemanja Matić | Manchester United FC | B0 | 후방 전개·위치선정 로테이션 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 9 | 마크 노블 | Mark Noble | West Ham United FC | B0 | 후방 볼 순환과 중원 위치선정 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 10 | 해리 윙크스 | Harry Winks | Tottenham Hotspur FC | B- | 중앙 깊은 패스 로테이션 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 11 | 함자 차우두리 | Hamza Choudhury | Leicester City FC | B- | 수미 선발 로테이션·태클 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+
+### CM: 15 candidates
+
+| Rank | 한글명 | Original | Club | Tier | Individual assessment |
+|---:|---|---|---|---|---|
+| 1 | 케빈 더브라위너 | Kevin De Bruyne | Manchester City | A+ | 12도움과 수준 높은 공격 기회 창출 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 2 | 일카이 귄도안 | İlkay Gündoğan | Manchester City | A+ | 13골과 중원 후방 전개·박스 침투 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 3 | 유리 틸레만스 | Youri Tielemans | Leicester City FC | A+ | 경기 템포와 전진 패스·높은 출전 지속성 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 4 | 은골로 캉테 | N'Golo Kanté | Chelsea FC | A+ | 중앙 볼 회수와 높은 압박·공수 전환 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 5 | 토마시 소우체크 | Tomáš Souček | West Ham United FC | A+ | 10골·세컨드볼 경합과 공격 침투 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 6 | 폴 포그바 | Paul Pogba | Manchester United FC | A- | 공 운반과 창의적 중앙 패스, 좌측 공격도 겸함 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 7 | 베르나르두 실바 | Bernardo Silva | Manchester City | A- | 중원 8번·우측 공격 패스와 압박 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 8 | 조르지니오 베이날뒴 | Georginio Wijnaldum | Liverpool FC | B+ | 중원 높은 출전량과 볼 보유 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 9 | 조던 헨더슨 | Jordan Henderson | Liverpool FC | B+ | 중원 템포 운영 후 임시 CB와 부상 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 10 | 티아고 알칸타라 | Thiago Alcântara | Liverpool FC | B+ | 첫 시즌 압박 회피와 창의적 패스, 결장 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 11 | 마테오 코바치치 | Mateo Kovačić | Chelsea FC | B+ | 압박 탈출과 중원 공 운반 로테이션 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 12 | 탕기 은돔벨레 | Tanguy Ndombele | Tottenham Hotspur FC | B+ | 중앙 공 운반·탈압박 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 13 | 스콧 맥토미니 | Scott McTominay | Manchester United FC | B+ | 중원 경합과 박스 침투로 실질적인 주전 경쟁 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 14 | 무사 시소코 | Moussa Sissoko | Tottenham Hotspur FC | B- | 대인 경합과 중원 로테이션 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 15 | 데니스 프라트 | Dennis Praet | Leicester City FC | B- | 중앙 패스 로테이션과 부상 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+
+### CAM: 8 candidates
+
+| Rank | 한글명 | Original | Club | Tier | Individual assessment |
+|---:|---|---|---|---|---|
+| 1 | 브루누 페르난데스 | Bruno Fernandes | Manchester United FC | S | 18골 12도움, 2선 창조성과 높은 출전량 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 2 | 메이슨 마운트 | Mason Mount | Chelsea FC | A+ | 6골 5도움과 2선 전방 압박·전진 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 3 | 제임스 매디슨 | James Maddison | Leicester City FC | A- | 중앙 2선 창의적 킥과 8골 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 4 | 제시 린가드 | Jesse Lingard | West Ham United FC | A- | 겨울 합류 후 9골·강한 공간 침투 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 5 | 카이 하베르츠 | Kai Havertz | Chelsea FC | B+ | 공미·가짜9번 역할에서 공격 연계 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 6 | 지오바니 로셀소 | Giovani Lo Celso | Tottenham Hotspur FC | B0 | 공격형 중앙 전진 패스·출전 제한 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 7 | 아요세 페레스 | Ayoze Pérez | Leicester City FC | B- | 중앙·오른쪽 2선 로테이션 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 8 | 마누엘 란시니 | Manuel Lanzini | West Ham United FC | B- | 전진 중앙 로테이션·경기력 기복 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+
+### LW: 12 candidates
+
+| Rank | 한글명 | Original | Club | Tier | Individual assessment |
+|---:|---|---|---|---|---|
+| 1 | 손흥민 | Son Heung-min | Tottenham Hotspur FC | S | 17골 10도움의 역습 공격 효율 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 2 | 필 포든 | Phil Foden | Manchester City | A+ | 9골 5도움과 영플레이어상, 좌측 공격 성장 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 3 | 마커스 래시퍼드 | Marcus Rashford | Manchester United FC | A- | 11골 9도움과 전방 침투 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 4 | 하비 반스 | Harvey Barnes | Leicester City FC | A- | 9골과 왼쪽 공격 돌파, 후반기 부상 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 5 | 라힘 스털링 | Raheem Sterling | Manchester City | B+ | 왼쪽에서 10골, 결정력 일부 하락 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 6 | 사디오 마네 | Sadio Mané | Liverpool FC | B+ | 11골과 전방 압박, 전년보다 효율 하락 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 7 | 파블로 포르날스 | Pablo Fornals | West Ham United FC | B+ | 왼쪽 공격 연계와 적극적 전방 압박 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 8 | 티모 베르너 | Timo Werner | Chelsea FC | B+ | 왼쪽 전방·중앙 공격의 빠른 침투와 8도움 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 9 | 크리스천 풀리식 | Christian Pulisic | Chelsea FC | B0 | 왼쪽 전방 드리블·직접 돌파 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 10 | 사이드 벤라마 | Saïd Benrahma | West Ham United FC | B0 | 왼쪽 공격 드리블·기회 창출 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 11 | 스티븐 베르흐베인 | Steven Bergwijn | Tottenham Hotspur FC | B- | 좌측 침투와 직접 볼 운반, 생산 저조 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 12 | 대니얼 제임스 | Daniel James | Manchester United FC | B- | 좌우 윙 로테이션·속도 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+
+### RW: 8 candidates
+
+| Rank | 한글명 | Original | Club | Tier | Individual assessment |
+|---:|---|---|---|---|---|
+| 1 | 모하메드 살라 | Mohamed Salah | Liverpool FC | A+ | 22골과 오른쪽 결정력의 지속 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 2 | 리야드 마레즈 | Riyad Mahrez | Manchester City | A- | 오른쪽 드리블·왼발 슈팅 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 3 | 메이슨 그린우드 | Mason Greenwood | Manchester United FC | B+ | 오른쪽에서 정확한 슈팅·기량 상승 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 4 | 재러드 보언 | Jarrod Bowen | West Ham United FC | B+ | 오른쪽 공간 침투와 8골 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 5 | 루카스 모우라 | Lucas Moura | Tottenham Hotspur FC | B+ | 측면 전진과 전방 압박 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 6 | 개러스 베일 | Gareth Bale | Tottenham Hotspur FC | B+ | 짧은 선발 시간에 11골 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 7 | 페란 토레스 | Ferran Torres | Manchester City | B+ | 우측 윙·중앙 공격 겸업과 득점 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 8 | 마크 올브라이턴 | Marc Albrighton | Leicester City FC | B0 | 오른쪽 크로스·복귀 수비 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+
+### ST: 11 candidates
+
+| Rank | 한글명 | Original | Club | Tier | Individual assessment |
+|---:|---|---|---|---|---|
+| 1 | 해리 케인 | Harry Kane | Tottenham Hotspur FC | S | 23골·14도움 리그 1위 동시 달성 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 2 | 제이미 바디 | Jamie Vardy | Leicester City FC | A0 | 15골·위협적인 전방 침투 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. A0는 최근 시즌 및 직전 시즌의 리그 정상급 개인 경기력 지속성을 반영한 잠정 등급. |
+| 3 | 디오구 조타 | Diogo Jota | Liverpool FC | A- | 중앙·좌측을 오가며 9골, 부상 기간 존재 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 4 | 미카일 안토니오 | Michail Antonio | West Ham United FC | A- | 중앙 10골·강한 포스트 플레이 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 5 | 에딘손 카바니 | Edinson Cavani | Manchester United FC | B+ | 10골과 중앙 수비 뒷공간 침투 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 6 | 켈레치 이헤아나초 | Kelechi Iheanacho | Leicester City FC | B+ | 후반기 12골과 투톱 연계 개선 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 7 | 호베르투 피르미누 | Roberto Firmino | Liverpool FC | B+ | 중앙 공격 연계와 공간 조성 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 8 | 가브리에우 제주스 | Gabriel Jesus | Manchester City | B+ | 9골, 높은 전방 압박·위치 교환 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 9 | 태미 에이브러햄 | Tammy Abraham | Chelsea FC | B0 | 시즌 전반기 중앙 공격 실질적 선발 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 10 | 앙토니 마르시알 | Anthony Martial | Manchester United FC | B- | 중앙 공격 4골·부상과 효율 저하 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+| 11 | 세바스티앵 알레 | Sébastien Haller | West Ham United FC | B- | 겨울 이적 전 중앙 공격 선발 개인 기록의 2020-21 비중을 가장 높게 평가하고 2019-20 및 2018-19 지속성을 정성 참고했지만 정량적 3시즌 비교는 미검증. |
+
+## 6. World Class / League Top Class
+
+World Class S/A+: **19**; League Top Class S/A+/A0/A-: **48**, inclusive of World Class.
+- S (4): 후벵 디아스 (Manchester City), 브루누 페르난데스 (Manchester United FC), 손흥민 (Tottenham Hotspur FC), 해리 케인 (Tottenham Hotspur FC)
+- A+ (15): 에데르송 (Manchester City), 존 스톤스 (Manchester City), 주앙 칸셀루 (Manchester City), 케빈 더브라위너 (Manchester City), 일카이 귄도안 (Manchester City), 필 포든 (Manchester City), 루크 쇼 (Manchester United FC), 모하메드 살라 (Liverpool FC), 에두아르 멘디 (Chelsea FC), 안토니오 뤼디거 (Chelsea FC), 은골로 캉테 (Chelsea FC), 메이슨 마운트 (Chelsea FC), 유리 틸레만스 (Leicester City FC), 데클런 라이스 (West Ham United FC), 토마시 소우체크 (West Ham United FC)
+- A0 (5): 로드리 (Manchester City), 트렌트 알렉산더아널드 (Liverpool FC), 윌프레드 은디디 (Leicester City FC), 제이미 바디 (Leicester City FC), 위고 요리스 (Tottenham Hotspur FC)
+- A- (24): 카일 워커 (Manchester City), 베르나르두 실바 (Manchester City), 리야드 마레즈 (Manchester City), 해리 매과이어 (Manchester United FC), 에런 완비사카 (Manchester United FC), 폴 포그바 (Manchester United FC), 마커스 래시퍼드 (Manchester United FC), 알리송 베케르 (Liverpool FC), 앤드루 로버트슨 (Liverpool FC), 디오구 조타 (Liverpool FC), 세사르 아스필리쿠에타 (Chelsea FC), 치아구 실바 (Chelsea FC), 벤 칠웰 (Chelsea FC), 리스 제임스 (Chelsea FC), 웨슬리 포파나 (Leicester City FC), 조니 에번스 (Leicester City FC), 제임스 저스틴 (Leicester City FC), 제임스 매디슨 (Leicester City FC), 하비 반스 (Leicester City FC), 애런 크레스웰 (West Ham United FC), 블라디미르 초우팔 (West Ham United FC), 제시 린가드 (West Ham United FC), 미카일 안토니오 (West Ham United FC), 피에르에밀 호이비에르 (Tottenham Hotspur FC)
+
+## 7. Proposed 4-2-3-1 XI — proposed_unapproved
+
+| POS | 한글명 | Original | Club | Tier | Role rank |
+|---|---|---|---|---|---:|
+| GK | 에데르송 | Ederson | Manchester City | A+ | 1 |
+| CB | 후벵 디아스 | Rúben Dias | Manchester City | S | 1 |
+| CB | 존 스톤스 | John Stones | Manchester City | A+ | 2 |
+| LB | 루크 쇼 | Luke Shaw | Manchester United FC | A+ | 1 |
+| RB | 주앙 칸셀루 | João Cancelo | Manchester City | A+ | 1 |
+| DM | 데클런 라이스 | Declan Rice | West Ham United FC | A+ | 1 |
+| CM | 케빈 더브라위너 | Kevin De Bruyne | Manchester City | A+ | 1 |
+| CAM | 브루누 페르난데스 | Bruno Fernandes | Manchester United FC | S | 1 |
+| LW | 손흥민 | Son Heung-min | Tottenham Hotspur FC | S | 1 |
+| RW | 모하메드 살라 | Mohamed Salah | Liverpool FC | A+ | 1 |
+| ST | 해리 케인 | Harry Kane | Tottenham Hotspur FC | S | 1 |
+
+One ST slot goes to Kane (23 goals, 14 assists) rather than forcing Vardy/Iheanacho/Cavani into a wrong positional slot; Son LW and Salah RW remain on correct sides.
+
+## 8. Structural vs historical checks
+
+| Check | State |
+|---|---|
+| Seven actual 2021-22 UCL/UEL/UECL entrants | UEFA archived seasons crosschecked |
+| League-wide modal formation 4-2-3-1 202 of 760 team-starts | Official Premier League tactical analysis |
+| 119 candidates, 7 starters XI, rank continuity, caps, draft flags | Node structural CI only |
+| Independent player DOB check | James Justin officially corrected, remaining dates first source only |
+| Exact player league starts / appearances | All null, independently unverified |
+| Season's most frequently played position | Match-by-match census still unverified |
+| Individual 2018-19 and 2019-20 historical data | Independent three-season personal numerical audit pending |
+| Selected goals and assists | Subset from PL/goal/assists history, others null |
+| Tier, rank and 4-2-3-1 XI | Qualitative DRAFT / unapproved |
+| PR merge and Pages | Must be checked separately |
+| Actual browser render | Must be checked independently |
+
+## 9. Known player-role uncertainties and case review
+
+- Liverpool's Fabinho primarily CB due to VVD/Gomez long injury, per Liverpool FC April 2021 interview; Henderson/Thiago/Wijnaldum are listed as 3 starting CM; no forced club DM or CAM. Virgil van Dijk only five PL appearances and excluded from 2020-21 candidates.
+- Chelsea Tuchel's three CB plus two wingbacks mapped CBx3 LB RB, with Jorginho DM and Kanté CM; Mount advanced second-line central, Werner LW/ST, Abraham first-half ST and Havertz false9; individual most-used positions are open.
+- City Cancelo inverted RB/LB, Foden LW/RW/CM, Sterling LW, De Bruyne and Gundogan as two CMs in 4-3-3; year-by-year best XI is modal PL 4-2-3-1.
+- Leicester Justin ACL injury and disputed FootballSquads DOB corrected: official PL/England FA Feb 23, 1998. West Ham Lingard joined midseason but 16 PL appearances as a regular.
+- Spurs Kane/Son extraordinary separate ST and LW contributions; Bale RW reserve despite 11 goals and lower PL starts; Lo Celso CAM/CM match role provisional.
+- Candidates with minimal PL starts were removed rather than quota padding: Zack Steffen, Adrián, Donny van de Beek, Juan Mata, Dele Alli, Sergio Agüero, Olivier Giroud.
