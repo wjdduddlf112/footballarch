@@ -8,9 +8,9 @@
     "qualifyingSeason": "2000-01",
     "status": "draft",
     "label": "1차 티어·포지션 순위 공개 · 검수 중",
-    "source": "ChatGPT and user discussion; requires further historical validation",
-    "lastReview": "2026-10-29",
-    "note": "PUBLIC PRELIMINARY TIER DRAFT: 148 players have provisional S–D tiers and position-specific ranks, which are not overall rankings. Best XI uses a historically representative 4-2-3-1 with Djalminha as CAM and Raúl as the sole ST. Formation statistical dominance across all 1999-00 league matches has not been independently verified; only 21/148 three-season audits complete.",
+    "source": "Existing 148-player preliminary draft retained; 2026-11-02 historical 3-season GK record evidence added via independent BDFutbol/FBref cross-check; previous user ratings/rankings unchanged",
+    "lastReview": "2026-11-02",
+    "note": "PUBLIC PRELIMINARY TIER DRAFT: 148 players have provisional S–D tiers and position-specific ranks, which are not overall rankings. Best XI uses a historically representative 4-2-3-1 with Djalminha as CAM and Raúl as the sole ST. Formation statistical dominance across all 1999-00 league matches has not been independently verified; 34/148 league-record audits complete, plus 1 partial GK research; weighted performance ratings remain preliminary.",
     "standingsStatus": "verified",
     "standingsSource": "https://www.rsssf.org/tabless/span00.html; https://www.bdfutbol.com/en/t/t1999-00.html",
     "playerCandidateSources": {
@@ -50,13 +50,15 @@
         "Helguera's actual 1999-00 CB vs DM minutes cannot be conclusively established from currently accessible period lineup data; CB 3-player cap requires a choice among Hierro/Karanka/Júlio César/Iván Campo",
         "Revivo listed attacking midfield yet Celta 4-2-3-1 CAM-exclusion rule needs clarification before changing CAM eligibility",
         "Cembranos CM retained provisionally; match-by-match positional role totals not yet verified",
-        "Historical 1997-98 and 1998-99 individual records corroborated for 21 of 148 candidates; remaining 127 need evidence",
-        "Team-level shortlist omissions such as Ronald de Boer, Jari Litmanen and Iván Campo require reassessment under 2-per-position and CB 3-per-team constraints"
+        "Team-level shortlist omissions such as Ronald de Boer, Jari Litmanen and Iván Campo require reassessment under 2-per-position and CB 3-per-team constraints",
+        "2026-11-02: 13 more goalkeeper three-season league-start audits, bringing records-corrobated count to 34/148; Martín Herrera partially audited pending 1997-98 Toluca starts.",
+        "Francesc Arnau DOB unresolved: official FC Barcelona biography lists 1975-05-23 whereas club obituary and BDFutbol indicate 1975-03-23; leave existing DOB unchanged pending resolution.",
+        "Celta Dutruel/Pinto co-starter 19/19 La Liga starts; confirm labels separately; Kasey Keller 1999-00 minute-stat mismatch FBref vs BDFutbol."
       ],
       "auditDate": "2026-10-29",
-      "corroboratedThreeSeasonPlayers": 21,
+      "corroboratedThreeSeasonPlayers": 34,
       "totalCandidatePlayers": 148,
-      "threeSeasonVerificationCoverage": "21/148",
+      "threeSeasonVerificationCoverage": "34/148 complete league-record audits; 1 additional partial GK",
       "positionAudit": {
         "Helguera": "proposed CB, season-level CB-vs-DM starting count still unresolved",
         "Cembranos": "CM retained, evidence does not establish CAM majority",
@@ -535,9 +537,39 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-001.html",
       "proposedTier": "B+",
       "threeSeasonReview": {
-        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+        "status": "three_season_league_record_corrobated",
+        "source": "https://fbref.com/en/players/72817426/Ruud-Hesp",
+        "additionalSources": [],
+        "seasons": [
+          {
+            "season": "1997-98",
+            "club": "FC Barcelona",
+            "division": "La Liga",
+            "starts": 36
+          },
+          {
+            "season": "1998-99",
+            "club": "FC Barcelona",
+            "division": "La Liga",
+            "starts": 37
+          },
+          {
+            "season": "1999-00",
+            "club": "FC Barcelona",
+            "division": "La Liga",
+            "starts": 22
+          }
+        ],
+        "assessmentWeights": {
+          "1997-98": 0.1,
+          "1998-99": 0.3,
+          "1999-00": 0.6
+        },
+        "summary": "UEFA 2002 retrospective records 1999-00 drop in standing after inconsistent start; career peak from prior seasons not ignored",
+        "review": "league_start_records_corrobated_2026-11-02; independent performance tier not approved"
       },
-      "tierReview": "provisional_user_authorized_publish; 1997-98/1998-99 records not fully individually corroborated"
+      "tierReview": "provisional_user_authorized_publish; 1997-98/1998-99 records not fully individually corroborated",
+      "positionReview": "position_based_on_league_starts"
     },
     {
       "id": "laliga-1999-gk-03",
@@ -554,9 +586,52 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-001.html",
       "proposedTier": "B-",
       "threeSeasonReview": {
-        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+        "status": "three_season_league_record_corrobated",
+        "source": "https://fbref.com/en/players/23ab8dc9/Francesc-Arnau",
+        "additionalSources": [
+          "https://players.fcbarcelona.com/en/player/60-arnau-francesc-arnau-grabalosa-1998-2001"
+        ],
+        "seasons": [
+          {
+            "season": "1997-98",
+            "club": "FC Barcelona",
+            "division": "La Liga",
+            "starts": 0
+          },
+          {
+            "season": "1998-99",
+            "club": "FC Barcelona",
+            "division": "La Liga",
+            "starts": 1
+          },
+          {
+            "season": "1999-00",
+            "club": "FC Barcelona",
+            "division": "La Liga",
+            "starts": 16
+          }
+        ],
+        "assessmentWeights": {
+          "1997-98": 0.1,
+          "1998-99": 0.3,
+          "1999-00": 0.6
+        },
+        "summary": "1997-98 Barça B or youth reserve experience not represented by top division 0. FC Barcelona player-profile DOB 23 May vs club news DOB 23 March 1975: leave existing 23 March with birthDateConflict=true, do not silently assert independently settled.",
+        "review": "league_start_records_corrobated_2026-11-02; independent performance tier not approved"
       },
-      "tierReview": "provisional_user_authorized_publish; 1997-98/1998-99 records not fully individually corroborated"
+      "tierReview": "provisional_user_authorized_publish; 1997-98/1998-99 records not fully individually corroborated",
+      "positionReview": "position_based_on_league_starts",
+      "birthDateAudit": {
+        "status": "conflicting_official_fcbarcelona_sources",
+        "storedDateUnchanged": "1975-03-23",
+        "profileDate": "1975-05-23",
+        "clubObituaryDate": "1975-03-23",
+        "sources": [
+          "https://fbref.com/en/players/23ab8dc9/Francesc-Arnau",
+          "https://players.fcbarcelona.com/en/player/60-arnau-francesc-arnau-grabalosa-1998-2001",
+          "https://www.fcbarcelona.com/en/football/first-team/noticies/2153352/mor-lexporter-del-barca-francesc-arnau"
+        ]
+      }
     },
     {
       "id": "laliga-1999-gk-04",
@@ -594,9 +669,39 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0036.html",
       "proposedTier": "B",
       "threeSeasonReview": {
-        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+        "status": "three_season_league_record_corrobated",
+        "source": "https://www.bdfutbol.com/en/j/j164.html",
+        "additionalSources": [],
+        "seasons": [
+          {
+            "season": "1997-98",
+            "club": "Villarreal CF",
+            "division": "Segunda División",
+            "starts": 39
+          },
+          {
+            "season": "1998-99",
+            "club": "Villarreal CF",
+            "division": "La Liga",
+            "starts": 35
+          },
+          {
+            "season": "1999-00",
+            "club": "Valencia CF",
+            "division": "La Liga",
+            "starts": 15
+          }
+        ],
+        "assessmentWeights": {
+          "1997-98": 0.1,
+          "1998-99": 0.3,
+          "1999-00": 0.6
+        },
+        "summary": "1997-98 Segunda División, not La Liga. Villarreal senior starter before Valencia reserve stint.",
+        "review": "league_start_records_corrobated_2026-11-02; independent performance tier not approved"
       },
-      "tierReview": "provisional_user_authorized_publish; 1997-98/1998-99 records not fully individually corroborated"
+      "tierReview": "provisional_user_authorized_publish; 1997-98/1998-99 records not fully individually corroborated",
+      "positionReview": "position_based_on_league_starts"
     },
     {
       "id": "laliga-1999-gk-06",
@@ -613,9 +718,39 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0039.html",
       "proposedTier": "B+",
       "threeSeasonReview": {
-        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+        "status": "three_season_league_record_corrobated",
+        "source": "https://www.bdfutbol.com/en/j/j1685.html",
+        "additionalSources": [],
+        "seasons": [
+          {
+            "season": "1997-98",
+            "club": "Real Zaragoza",
+            "division": "La Liga",
+            "starts": 31
+          },
+          {
+            "season": "1998-99",
+            "club": "Real Zaragoza",
+            "division": "La Liga",
+            "starts": 25
+          },
+          {
+            "season": "1999-00",
+            "club": "Real Zaragoza",
+            "division": "La Liga",
+            "starts": 37
+          }
+        ],
+        "assessmentWeights": {
+          "1997-98": 0.1,
+          "1998-99": 0.3,
+          "1999-00": 0.6
+        },
+        "summary": "Juanmi original display name remains Juan Miguel García Inglés",
+        "review": "league_start_records_corrobated_2026-11-02; independent performance tier not approved"
       },
-      "tierReview": "provisional_user_authorized_publish; 1997-98/1998-99 records not fully individually corroborated"
+      "tierReview": "provisional_user_authorized_publish; 1997-98/1998-99 records not fully individually corroborated",
+      "positionReview": "position_based_on_league_starts"
     },
     {
       "id": "laliga-1999-gk-07",
@@ -632,9 +767,39 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-002.html",
       "proposedTier": "A-",
       "threeSeasonReview": {
-        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+        "status": "three_season_league_record_corrobated",
+        "source": "https://fbref.com/en/players/1ddbb0da/Iker-Casillas",
+        "additionalSources": [],
+        "seasons": [
+          {
+            "season": "1997-98",
+            "club": "Real Madrid CF first team",
+            "division": "La Liga",
+            "starts": 0
+          },
+          {
+            "season": "1998-99",
+            "club": "Real Madrid CF first team",
+            "division": "La Liga",
+            "starts": 0
+          },
+          {
+            "season": "1999-00",
+            "club": "Real Madrid CF",
+            "division": "La Liga",
+            "starts": 26
+          }
+        ],
+        "assessmentWeights": {
+          "1997-98": 0.1,
+          "1998-99": 0.3,
+          "1999-00": 0.6
+        },
+        "summary": "Earlier years' 0 refer to first-team La Liga, not Castilla or youth games; avoid interpreting as inactivity.",
+        "review": "league_start_records_corrobated_2026-11-02; independent performance tier not approved"
       },
-      "tierReview": "provisional_user_authorized_publish; 1997-98/1998-99 records not fully individually corroborated"
+      "tierReview": "provisional_user_authorized_publish; 1997-98/1998-99 records not fully individually corroborated",
+      "positionReview": "position_based_on_league_starts"
     },
     {
       "id": "laliga-1999-gk-08",
@@ -663,9 +828,41 @@
         "note": "7 league and 4 UCL starts constitute genuine starter-equivalent rotation; lower-tier candidate retained; Illgner had 5 league and 1 UCL starts."
       },
       "threeSeasonReview": {
-        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+        "status": "three_season_league_record_corrobated",
+        "source": "https://www.bdfutbol.com/en/j/j44.html",
+        "additionalSources": [
+          "https://www.lanacion.com.ar/deportes/albano-bizarri-ya-es-jugador-de-real-madrid-nid124686/"
+        ],
+        "seasons": [
+          {
+            "season": "1997-98",
+            "club": "Racing Club de Avellaneda",
+            "division": "Argentine Primera División",
+            "starts": 25
+          },
+          {
+            "season": "1998-99",
+            "club": "Racing Club / Real Madrid CF",
+            "division": "Argentine Primera División / La Liga",
+            "starts": 0
+          },
+          {
+            "season": "1999-00",
+            "club": "Real Madrid CF",
+            "division": "La Liga",
+            "starts": 7
+          }
+        ],
+        "assessmentWeights": {
+          "1997-98": 0.1,
+          "1998-99": 0.3,
+          "1999-00": 0.6
+        },
+        "summary": "1998-99 0 first-team league starts in both clubs; Jan 1999 contemporaneous transfer report corroborates club switch.",
+        "review": "league_start_records_corrobated_2026-11-02; independent performance tier not approved"
       },
-      "tierReview": "provisional_user_authorized_publish; 1997-98/1998-99 records not fully individually corroborated"
+      "tierReview": "provisional_user_authorized_publish; 1997-98/1998-99 records not fully individually corroborated",
+      "positionReview": "position_based_on_league_starts"
     },
     {
       "id": "laliga-1999-gk-09",
@@ -682,9 +879,43 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-003.html",
       "proposedTier": "A",
       "threeSeasonReview": {
-        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+        "status": "three_season_league_record_partially_corrobated",
+        "source": "https://www.bdfutbol.com/en/t/t1998-998048.html",
+        "additionalSources": [
+          "https://www.bdfutbol.com/en/t/t1999-003.html",
+          "https://en.wikipedia.org/wiki/Mart%C3%ADn_Herrera"
+        ],
+        "seasons": [
+          {
+            "season": "1997-98",
+            "club": "Deportivo Toluca",
+            "division": "Liga MX",
+            "starts": null,
+            "appearances": 5
+          },
+          {
+            "season": "1998-99",
+            "club": "Ferro Carril Oeste",
+            "division": "Argentine Primera División",
+            "starts": 34
+          },
+          {
+            "season": "1999-00",
+            "club": "Deportivo Alavés",
+            "division": "La Liga",
+            "starts": 38
+          }
+        ],
+        "assessmentWeights": {
+          "1997-98": 0.1,
+          "1998-99": 0.3,
+          "1999-00": 0.6
+        },
+        "summary": "1997-98 Toluca 5 appearances secondary career-summary evidence only, starts not assumed; 1998-99 Ferro 34 verified starts; 1999-00 Alavés 38 starts and 37 GA.",
+        "review": "league_start_records_corrobated_2026-11-02; independent performance tier not approved"
       },
-      "tierReview": "provisional_user_authorized_publish; 1997-98/1998-99 records not fully individually corroborated"
+      "tierReview": "provisional_user_authorized_publish; 1997-98/1998-99 records not fully individually corroborated",
+      "positionReview": "position_based_on_league_starts"
     },
     {
       "id": "laliga-1999-gk-10",
@@ -701,9 +932,39 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0011.html",
       "proposedTier": "B+",
       "threeSeasonReview": {
-        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+        "status": "three_season_league_record_corrobated",
+        "source": "https://fbref.com/en/players/b51c1e29/Richard-Dutruel",
+        "additionalSources": [],
+        "seasons": [
+          {
+            "season": "1997-98",
+            "club": "RC Celta de Vigo",
+            "division": "La Liga",
+            "starts": 36
+          },
+          {
+            "season": "1998-99",
+            "club": "RC Celta de Vigo",
+            "division": "La Liga",
+            "starts": 37
+          },
+          {
+            "season": "1999-00",
+            "club": "RC Celta de Vigo",
+            "division": "La Liga",
+            "starts": 19
+          }
+        ],
+        "assessmentWeights": {
+          "1997-98": 0.1,
+          "1998-99": 0.3,
+          "1999-00": 0.6
+        },
+        "summary": "19 starts in evaluation season identical to Pinto, but substantially stronger immediate 2-season starting sample.",
+        "review": "league_start_records_corrobated_2026-11-02; independent performance tier not approved"
       },
-      "tierReview": "provisional_user_authorized_publish; 1997-98/1998-99 records not fully individually corroborated"
+      "tierReview": "provisional_user_authorized_publish; 1997-98/1998-99 records not fully individually corroborated",
+      "positionReview": "co_starter_19_league_starts_each_role_review_pending"
     },
     {
       "id": "laliga-1999-gk-11",
@@ -720,9 +981,40 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0011.html",
       "proposedTier": "B",
       "threeSeasonReview": {
-        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+        "status": "three_season_league_record_corrobated",
+        "source": "https://fbref.com/en/players/4a3cd9b7/Jose-Manuel-Pinto",
+        "additionalSources": [],
+        "seasons": [
+          {
+            "season": "1997-98",
+            "club": "Real Betis",
+            "division": "La Liga",
+            "starts": 0,
+            "appearances": 1
+          },
+          {
+            "season": "1998-99",
+            "club": "RC Celta de Vigo",
+            "division": "La Liga",
+            "starts": 1
+          },
+          {
+            "season": "1999-00",
+            "club": "RC Celta de Vigo",
+            "division": "La Liga",
+            "starts": 19
+          }
+        ],
+        "assessmentWeights": {
+          "1997-98": 0.1,
+          "1998-99": 0.3,
+          "1999-00": 0.6
+        },
+        "summary": "1997-98 1 appearance as substitute, 0 starts. 1999-00 19 starts equal Dutruel.",
+        "review": "league_start_records_corrobated_2026-11-02; independent performance tier not approved"
       },
-      "tierReview": "provisional_user_authorized_publish; 1997-98/1998-99 records not fully individually corroborated"
+      "tierReview": "provisional_user_authorized_publish; 1997-98/1998-99 records not fully individually corroborated",
+      "positionReview": "co_starter_19_league_starts_each_role_review_pending"
     },
     {
       "id": "laliga-1999-gk-12",
@@ -739,9 +1031,51 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-005.html",
       "proposedTier": "B+",
       "threeSeasonReview": {
-        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+        "status": "three_season_league_record_corrobated",
+        "source": "https://fbref.com/en/players/5b5bcd83/Kasey-Keller",
+        "additionalSources": [
+          "https://www.bdfutbol.com/en/t/t1999-005.html"
+        ],
+        "seasons": [
+          {
+            "season": "1997-98",
+            "club": "Leicester City FC",
+            "division": "Premier League",
+            "starts": 32
+          },
+          {
+            "season": "1998-99",
+            "club": "Leicester City FC",
+            "division": "Premier League",
+            "starts": 36
+          },
+          {
+            "season": "1999-00",
+            "club": "Rayo Vallecano",
+            "division": "La Liga",
+            "starts": 28
+          }
+        ],
+        "assessmentWeights": {
+          "1997-98": 0.1,
+          "1998-99": 0.3,
+          "1999-00": 0.6
+        },
+        "summary": "FBref 1999-00 reported minutes 2610 conflict with BDFutbol 2520 for 28 starts: do not reuse FBref minute value uncritically; league starts match.",
+        "review": "league_start_records_corrobated_2026-11-02; independent performance tier not approved"
       },
-      "tierReview": "provisional_user_authorized_publish; 1997-98/1998-99 records not fully individually corroborated"
+      "tierReview": "provisional_user_authorized_publish; 1997-98/1998-99 records not fully individually corroborated",
+      "positionReview": "position_based_on_league_starts",
+      "minuteStatAudit": {
+        "status": "source_conflict_do_not_use_unverified_minutes",
+        "bdfutbolMinutes": 2520,
+        "fbrefMinutes": 2610,
+        "leagueStarts": 28,
+        "sourceUrls": [
+          "https://fbref.com/en/players/5b5bcd83/Kasey-Keller",
+          "https://www.bdfutbol.com/en/t/t1999-005.html"
+        ]
+      }
     },
     {
       "id": "laliga-1999-gk-13",
@@ -790,9 +1124,39 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0024.html",
       "proposedTier": "B+",
       "threeSeasonReview": {
-        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+        "status": "three_season_league_record_corrobated",
+        "source": "https://fbref.com/en/players/c39a5c6b/Leo-Franco",
+        "additionalSources": [],
+        "seasons": [
+          {
+            "season": "1997-98",
+            "club": "CP Mérida first team",
+            "division": "La Liga",
+            "starts": 0
+          },
+          {
+            "season": "1998-99",
+            "club": "RCD Mallorca first team",
+            "division": "La Liga",
+            "starts": 0
+          },
+          {
+            "season": "1999-00",
+            "club": "RCD Mallorca",
+            "division": "La Liga",
+            "starts": 28
+          }
+        ],
+        "assessmentWeights": {
+          "1997-98": 0.1,
+          "1998-99": 0.3,
+          "1999-00": 0.6
+        },
+        "summary": "0 refers to first-team La Liga; earlier reserve-team minutes not captured.",
+        "review": "league_start_records_corrobated_2026-11-02; independent performance tier not approved"
       },
-      "tierReview": "provisional_user_authorized_publish; 1997-98/1998-99 records not fully individually corroborated"
+      "tierReview": "provisional_user_authorized_publish; 1997-98/1998-99 records not fully individually corroborated",
+      "positionReview": "position_based_on_league_starts"
     },
     {
       "id": "laliga-1999-gk-15",
@@ -809,9 +1173,39 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0024.html",
       "proposedTier": "B",
       "threeSeasonReview": {
-        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+        "status": "three_season_league_record_corrobated",
+        "source": "https://www.bdfutbol.com/en/j/j956.html",
+        "additionalSources": [],
+        "seasons": [
+          {
+            "season": "1997-98",
+            "club": "CA River Plate",
+            "division": "Argentine Primera División",
+            "starts": 20
+          },
+          {
+            "season": "1998-99",
+            "club": "CA River Plate",
+            "division": "Argentine Primera División",
+            "starts": 13
+          },
+          {
+            "season": "1999-00",
+            "club": "RCD Mallorca",
+            "division": "La Liga",
+            "starts": 10
+          }
+        ],
+        "assessmentWeights": {
+          "1997-98": 0.1,
+          "1998-99": 0.3,
+          "1999-00": 0.6
+        },
+        "summary": "BDFutbol Arg seasonal data used for previous years, no misleading La Liga 0 assigned.",
+        "review": "league_start_records_corrobated_2026-11-02; independent performance tier not approved"
       },
-      "tierReview": "provisional_user_authorized_publish; 1997-98/1998-99 records not fully individually corroborated"
+      "tierReview": "provisional_user_authorized_publish; 1997-98/1998-99 records not fully individually corroborated",
+      "positionReview": "position_based_on_league_starts"
     },
     {
       "id": "laliga-1999-gk-16",
@@ -828,9 +1222,39 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0014.html",
       "proposedTier": "B+",
       "threeSeasonReview": {
-        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+        "status": "three_season_league_record_corrobated",
+        "source": "https://www.bdfutbol.com/en/j/j2232.html",
+        "additionalSources": [],
+        "seasons": [
+          {
+            "season": "1997-98",
+            "club": "CA Vélez Sarsfield",
+            "division": "Argentine Primera División",
+            "starts": 1
+          },
+          {
+            "season": "1998-99",
+            "club": "CA Unión de Santa Fe",
+            "division": "Argentine Primera División",
+            "starts": 34
+          },
+          {
+            "season": "1999-00",
+            "club": "RCD Espanyol",
+            "division": "La Liga",
+            "starts": 26
+          }
+        ],
+        "assessmentWeights": {
+          "1997-98": 0.1,
+          "1998-99": 0.3,
+          "1999-00": 0.6
+        },
+        "summary": "Previously an Argentine first-division starter, not a La Liga incumbent before 1999-00.",
+        "review": "league_start_records_corrobated_2026-11-02; independent performance tier not approved"
       },
-      "tierReview": "provisional_user_authorized_publish; 1997-98/1998-99 records not fully individually corroborated"
+      "tierReview": "provisional_user_authorized_publish; 1997-98/1998-99 records not fully individually corroborated",
+      "positionReview": "position_based_on_league_starts"
     },
     {
       "id": "laliga-1999-gk-17",
@@ -847,9 +1271,39 @@
       "evidence": "https://www.bdfutbol.com/en/t/t1999-0014.html",
       "proposedTier": "B",
       "threeSeasonReview": {
-        "status": "pending_individual_1997_98_and_1998_99_corroboration"
+        "status": "three_season_league_record_corrobated",
+        "source": "https://fbref.com/en/players/2e1a7599/Juan-Luis-Mora",
+        "additionalSources": [],
+        "seasons": [
+          {
+            "season": "1997-98",
+            "club": "Real Oviedo",
+            "division": "La Liga",
+            "starts": 7
+          },
+          {
+            "season": "1998-99",
+            "club": "Real Oviedo",
+            "division": "La Liga",
+            "starts": 1
+          },
+          {
+            "season": "1999-00",
+            "club": "RCD Espanyol",
+            "division": "La Liga",
+            "starts": 12
+          }
+        ],
+        "assessmentWeights": {
+          "1997-98": 0.1,
+          "1998-99": 0.3,
+          "1999-00": 0.6
+        },
+        "summary": "One of 13 1999-00 appearances was substitute. Existing 12-start value correct.",
+        "review": "league_start_records_corrobated_2026-11-02; independent performance tier not approved"
       },
-      "tierReview": "provisional_user_authorized_publish; 1997-98/1998-99 records not fully individually corroborated"
+      "tierReview": "provisional_user_authorized_publish; 1997-98/1998-99 records not fully individually corroborated",
+      "positionReview": "position_based_on_league_starts"
     },
     {
       "id": "laliga-1999-deportivo-018",
