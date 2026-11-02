@@ -580,3 +580,13 @@ Source TXT instruction adapted to the **2009-10 season only**. Candidate roster 
 - Unverified in official second source: player-by-player starts/apps, DOB; match-by-match most-played position 0/162 fully audited. Multirole players/Palace 3-4-2-1 require role confirmation.
 - Full roster, original/Korean names, birthdays, grades, rankings, individual reasoning and sources at audit/PLAYER_PREMIERLEAGUE_2024-25_DRAFT_REVIEW.md.
 - Structural CI, GH Pages build/deployment and actual browser QA remain separate steps. Do not move to PL 2025-26 without next instruction.
+
+
+## PL 2025-26 DRAFT — 2026-11-02
+- Actual UEFA 2026-27 nine clubs: five UCL (Arsenal, Man City, Man Utd, Aston Villa, Liverpool); UEL (Bournemouth, Sunderland, Crystal Palace by UECL title); UECL Brighton.
+- League best XI working 4-2-3-1; PL official 2025-26 full 760-start formation frequency still OPEN, not invented.
+- 164 newly selected player DRAFT records, 99 starting roles, 65 backups; entire rank 1..N and 4-2-3-1 proposed 11.
+- Assessment 2023-24/2024-25/2025-26 10/30/60 qualitative tiers, Sunderland previous seasons were in Championship, historical PL values explicitly null.
+- Club-specific corrected transfer snapshots: Bournemouth Semenyo 20/20 10G3A, Palace Guehi 20/20 2G2A, Palace Jorgen Strand Larsen 12/14 3G0A. No combined two-club data for these player records.
+- Most-player official match starts, individual DOB 2nd source, match-by-match primary position remain open; source mirrored PL stats cannot be treated as independent corroboration.
+- All player rankings/Best XI user UNAPPROVED; season JSON status DRAFT. audit/PLAYER_PREMIERLEAGUE_2025-26_DRAFT_REVIEW.md.
