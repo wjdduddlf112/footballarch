@@ -7,7 +7,7 @@
 - Evaluation season: **1999-00** (1997-98: 10%, 1998-99: 30%, 1999-00: 60%)
 - Relevant European participation: **2000-01**
 - Status: **PARTIAL RESEARCH, NOT APPROVED**. This is not a completed independent 148-player evaluation.
-- The existing `data/laliga-1999-00.json` 148-person draft, its old tiers, ranks, and Best XI are **not inputs for new player or tier selection**. They remain unchanged until validated replacement data exists.
+- The existing `data/laliga-1999-00.json` 148-person draft, its old tiers, ranks, and Best XI are **not inputs for new player or tier selection**. The **148-player identity list, player names, birth dates, clubs, positions, roles, league-start values, provisional tiers, ranks and Best XI remain unchanged**. Only historical source-backed three-season evidence, source-conflict tags, and metadata have been updated on this PR branch; deployed `main` is untouched.
 
 ## 1. Actual UEFA participant clubs (10)
 
@@ -56,7 +56,7 @@ Sources:
 
 **Qualification:** Both Celta keepers started 19 matches: role labels remain `co_starter`, not falsely a settled 1st/2nd choice. Alavés's Martín Herrera started all 38 matches; there is no evidence-based second selected GK under the eligibility rule. Real Madrid's Bizzarri (7) and Illgner (5) are a selection edge case, audited and marked for follow-up; Bizzarri selected based on larger league starts only. Minimal-played GKs are not added just to fill a quota.
 
-**Three-season evaluation and tiers:** The 17 candidates' 1999-00 squad evidence and birth dates have been checked. A genuinely independent comparative assessment for 1997-98 and 1998-99 has NOT been completed for them, so independent tiers and rank remain `null`. This does not indicate poor performance or D tier. Herrera's contemporary Zamora award (38 league starts, 37 goals against) is relevant evidence, not a substitute for the complete three-season comparison ([El País contemporary note](https://elpais.com/diario/2000/05/22/deportes/958946402_850215.html)).
+**Three-season evaluation and tiers:** The 17 candidates' 1999-00 squad evidence and birth dates have been checked. A follow-up audit has now obtained three-season league-start records for **16 of 17 GK**, with Martín Herrera still **partial** due to unknown 1997-98 Toluca starts. The old provisional tiers and rank values remain as-is, not reapproved. An evidence-only performance-tier comparison (conceded goals/clean sheets/personal performance and contemporary assessments) is still outstanding. This does not indicate poor performance or D tier. Herrera's contemporary Zamora award (38 league starts, 37 goals against) is relevant evidence, not a substitute for the complete three-season comparison ([El País contemporary note](https://elpais.com/diario/2000/05/22/deportes/958946402_850215.html)).
 
 Data file: [laliga-1999-00-gk-independent.json](./player-research/laliga-1999-00-gk-independent.json).
 
@@ -72,18 +72,32 @@ Data file: [laliga-1999-00-gk-independent.json](./player-research/laliga-1999-00
 | --- | --- | --- |
 | Next-season UEFA participants | **Verified against independent sources** | 10 club entries and exceptional routes |
 | GK 1999-00 starters & DOB | **Screened** | 17 player profiles and 10 squad season pages |
-| GK preceding 2 seasons | **Pending** | Independent detailed review is required |
-| GK tier & relative league rank | **Pending** | `null`; do not copy old published provisional figures |
-| CB, LB, RB, DM, CM, CAM, LW, RW, ST | **Not started in this audit** | Team-by-team source reconstruction required |
+| GK preceding 2 seasons | **16 complete; 1 partial** | 13 newly audited; 3 previously audited; Martín Herrera 1997-98 Toluca starts still unverified |
+| GK tier & relative league rank | **Existing DRAFT preserved; not reapproved** | Do not treat new starting counts as independent tier verification |
+| CB historical starting records | **9 confirmed; 2 source conflicts; 17 pending** | 2 previously audited, 7 newly corroborated; Donato and Gabriel Schürrer BDFutbol / FBref disagree for 1999-00 starts |
+| LB, RB, DM, CM, CAM, LW, RW, ST | **Pending** | Historical role and three-season record checks remain |
 | 10 teams' season-majority formation | **Not verified** | Specific plausible period reports only |
 | World / League Top classes | **Not independently recalculated** | Dependent on new tier evidence |
 | La Liga Best XI | **Not independently selected** | Old proposed XI remains untouched |
-| `data/laliga-1999-00.json` replacement | **Not performed** | Prevents overwriting more complete but still unverified historical draft |
-| Automated validation & site browser | **Not claimed** | Documentation-only branch change |
+| `data/laliga-1999-00.json` evidence update | **PR branch updated** | 148-member roster/tier/rank invariants verified, only historic audit fields and metadata changed |
+| Automated validation & site browser | **Partial / unverified** | In-process structural invariant checks passed (players, tiers, ranks unchanged). Full repository Node verification and deployed browser checks not run |
 | User approval | **Not obtained** | All work remains DRAFT |
 
 ## 5. Preservation and next verification targets
 
-Preserve `main` branch standings, emblems, designs, other seasons, and other leagues. Compare the newly researched complete roster with existing 148-player draft *after* independent candidate selection, recording adds/removals/position/rating changes. Explicitly verify 1999-00 Helguera CB/DM, Cembranos CAM/CM, Revivo side/CAM, Ronald de Boer and Litmanen Barcelona qualification, Iván Campo Madrid CB pool, Djalminha CAM, Raúl ST/second striker, and Makaay role. Do not assume any was included in the final new selection.
+Preserve `main` branch standings, emblems, designs, other seasons, and other leagues. Existing 148-person candidate roster is the **baseline for comparison only**. Newly checked GK group is identical to the old 17-person pool, so do not create duplicates. For other positions, verify only missing evidence and record proposed additions/removals/position changes explicitly, before accepting them. Explicitly verify 1999-00 Helguera CB/DM, Cembranos CAM/CM, Revivo side/CAM, Ronald de Boer and Litmanen Barcelona qualification, Iván Campo Madrid CB pool, Djalminha CAM, Raúl ST/second striker, and Makaay role. Do not assume any was included in the final new selection.
 
 **This file is a traceable research checkpoint, not the completion of the user-requested full-season rating workflow.**
+
+## 6. Incremental reuse-first checkpoint (2026-11-02)
+
+**User direction:** Reuse entries when new independent checks agree with existing records. Work on missing historical evidence first. No redundant GK or CB roster rebuild, no automatic tier resets.
+
+- GK: all 17 existing players match independent selected GK pool; club, date of birth as **stored**, and starting count agree. One DOB conflict (Francesc Arnau: Barça biography May 23 vs official obituary March 23) remains unresolved, so the old field was not changed. League starts verified three-season for 16 GK, 1 partial (Martín Herrera).
+- CB: Existing pool contains 28. Nine now have three-season league-record status corroborated (Noureddine Naybet, Fernando Hierro, Abelardo Fernández, Frank de Boer, Winston Bogarde, Mauricio Pellegrino, Miroslav Đukić, Júlio César Santos, Aitor Karanka). 17 still pending. Donato Gama da Silva and Gabriel Schürrer have prior-season records checked but **1999-00 source disagreements**: BDFutbol says 27 and 18 starts, FBref says 28 and 17 respectively. Old values follow BDFutbol, were not changed, and both are flagged `source_conflict`.
+- Overall: **41/148** three-season league-record audits completed (**21 preexisting + 20 added this PR**), plus **2 source-conflict CB audits** and **1 partial GK**. The residual pending record audits are **104**. These are record-verification figures, *not* completed independent player-performance or final-tier assessments.
+- Historical evidence files: [GK historical audit](./player-research/laliga-1999-00-gk-three-season-gap-audit.json), [CB first audit](./player-research/laliga-1999-00-cb-three-season-gap-audit.json), [CB additional audit](./player-research/laliga-1999-00-cb-more-three-season-audit.json).
+- Changes on this PR branch to `data/laliga-1999-00.json` were limited to `players[].threeSeasonReview`, two specific audit caveat subfields, and `meta` review notes. All 148 player identifiers, roles, tier grades, positional ranks, names, dates, positions and league-start fields remain exactly equal to `main`.
+- Open candidate qualification questions: Real Madrid 3 CB cap vs Iván Campo/Helguera; Zaragoza Kari Sundgren CB vs RB; Frank de Boer CB vs LB season majority; Celta goalkeeper co-starter labels.
+
+**Deployment:** not merged, no production changes, user final approval still pending.
