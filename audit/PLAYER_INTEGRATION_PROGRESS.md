@@ -1,3 +1,12 @@
+## 2026-11-04 — La Liga 2011-12 GitHub Pages PRODUCTION browser PASS; source-led ratings remain DRAFT
+
+- PR **#42** merged to `main`, squash SHA `7cc59689388d4ee245f2395b08d5c394e41d0285`. New `data/laliga-2011-12.json` remains `meta.status=draft` and `userApproved=false`; nominal 134 players/77 starters/57 backups; provisional World Class 18, League Top 42.
+- Draft PR structural Node and local Chromium **PASS** after fixing an accidental IP replacement (first run failed for that test-script typo, not the source data). Corrected successful run: https://github.com/wjdduddlf112/footballarch/actions/runs/41689620649 .
+- GitHub Pages production deployment **SUCCESS**: https://github.com/wjdduddlf112/footballarch/actions/runs/41689837737 .
+- Actual public Pages Chromium **SUCCESS**: https://github.com/wjdduddlf112/footballarch/actions/runs/41689838699 . JSON HTTP 200, 134 player records, 2011-12 DRAFT. All five tabs Overview, Formation (4-2-3-1 DRAFT), Top (18 world, 42 league top), Table (20 teams) and Stats render. Live Casillas player modal includes Korean/original names, 1981-05-20 DOB, Real Madrid, GK positional rank 1, tentative unapproved tier. Zero JS errors. Five screenshots uploaded under Action artifact `laliga-2011-12-live-browser-screenshots`.
+- **Important: browser/structure checks do not validate player-history facts.** 134 candidates' 2009-10 and 2010-11 form, actual most-frequent 2011-12 game positions, DOB double-source audit across roster, and 2011-12 league modal formation remain incomplete. Four DOB conflicts logged, some corrected by additional sources. All tiers/rankings/Best XI explicitly unapproved.
+- 2011-12 report: `audit/LALIGA_2011_12_RATED_SOURCE_DRAFT_2026-11-04.md`. Public URL: https://wjdduddlf112.github.io/footballarch/?league=laliga&season=2011-12&view=overview . **Stop after this season**.
+
 ## 2026-11-04 — La Liga 2011-12 fresh 134-player DRAFT (not user approved)
 
 - User directly initiated the 2011-12 season. Seven *actual* 2012-13 UEFA entrants identified: Real Madrid, Barcelona, Valencia, Málaga (UCL), Atlético, Levante, Athletic Club (UEL; Athletic Cup finalist despite 10th league position). Osasuna rank 7 excluded.
