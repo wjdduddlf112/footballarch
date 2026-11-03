@@ -1,0 +1,76 @@
+{
+  "assessedSeason": "La Liga 2004-05",
+  "createdAt": "2026-11-03",
+  "status": "DRAFT_UNAPPROVED",
+  "dataFile": "data/laliga-2004-05.json",
+  "branch": "draft/laliga-2004-05-evaluation-20261103",
+  "validationMode": "GitHub connected-code in-memory JSON structural checks; not Node CLI, not browser",
+  "checks": {
+    "jsonParsed": true,
+    "tenQualifiers": true,
+    "qualifierClubIDsMatchArchive": true,
+    "qualifierCompetitionsMatchArchive": true,
+    "standingsPreserved": true,
+    "clubsAndCrestsPreserved": true,
+    "uniqueIDs": true,
+    "candidatesInEligibleClubs": true,
+    "positiveCurrentLeagueStarts": true,
+    "noMultiplePrimaryPositions": true,
+    "namesAndValidDOB": true,
+    "allProvisionalTierAssigned": true,
+    "tenClubElevenStarters": true,
+    "roleValuesAllowed": true,
+    "positionRosterLimits": true,
+    "withinPositionRanksContiguous": true,
+    "xiHasExactlyElevenDistinctPlayers": true,
+    "xiPlayerPositionsExistMatch": true,
+    "xiFormationHasRightSlots": true,
+    "draftNotApproved": true
+  },
+  "pass": true,
+  "counts": {
+    "eligibleClubs": 10,
+    "players": 182,
+    "starters": 110,
+    "backups": 72,
+    "DOBNonempty": 182,
+    "grades": {
+      "S": 1,
+      "A+": 12,
+      "A": 7,
+      "A-": 27,
+      "B+": 49,
+      "B": 45,
+      "B-": 25,
+      "C+": 12,
+      "C": 4,
+      "C-": 0,
+      "D": 0
+    },
+    "worldClass": 13,
+    "leagueTop": 47,
+    "xi": 11
+  },
+  "remainingGates": {
+    "independentFullThreeSeasonPerformanceFormAudit": false,
+    "independentSeasonPrimaryPositionFrequency": false,
+    "allDOBIndependentlySecondSourceVerified": false,
+    "leaguewideModalFormationProven": false,
+    "allSourcesIndependentSecondCheck": false,
+    "nodeCLI": false,
+    "liveWebsiteBrowser": false,
+    "deployedOnMain": false,
+    "userApproved": false
+  },
+  "caveats": [
+    "Positive league starts and single declared position do not prove that the player mostly played at that position; match reports would be needed.",
+    "The 2004-05 starter/goals quantitative data reflect BDFutbol-season club tables, but not every 2002-03/2003-04 personal qualitative performance was fully independently verified.",
+    "All 182 dates are entered and calendar-valid, but complete independent biographical checks remain open.",
+    "Earlier two seasons not fully checked, hence ranks/tiers are provisional qualitative proposals, not verified definitive standings.",
+    "No false claim of browser or Node test, PR remains draft."
+  ],
+  "sourceFiles": [
+    "data/laliga-standings-verified-1999-2026.json",
+    "audit/LALIGA_2004_05_RATED_182_FULL_REPORT_2026-11-03.md"
+  ]
+}
