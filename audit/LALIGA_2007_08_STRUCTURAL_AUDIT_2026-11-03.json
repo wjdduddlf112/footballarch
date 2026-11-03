@@ -44,8 +44,7 @@
     "All candidates previous two season source-based individual form outside prior archive",
     "Most played position and 38 rounds positional lineup audit",
     "League-wide modal tactical formation census",
-    "Node CLI scripts",
-    "Live GitHub Pages browser UI verification"
+    "Live production GitHub Pages deployment is intentionally not asserted: only PR-branch local Chromium rendered"
   ],
   "sources": {
     "madrid": "https://www.bdfutbol.com/en/t/t2007-082.html",
@@ -59,5 +58,34 @@
     "standings": "https://github.com/footballcsv/cache.footballdata/tree/master/2007-08",
     "europe": "https://www.rsssf.org/tabless/span08.html",
     "intertoto": "https://www.rsssf.org/tablesu/uic08.html"
+  },
+  "browserValidation": {
+    "status": "pass_draft_branch_chromium_local_http",
+    "run": "https://github.com/wjdduddlf112/footballarch/actions/runs/41660611709",
+    "tabs": [
+      "Overview",
+      "Best XI",
+      "Top Class",
+      "League Table",
+      "Statistics"
+    ],
+    "checks": [
+      "2007-08 JSON loaded 154 members",
+      "five content tabs rendered",
+      "Best XI Casillas and Messi present",
+      "no JavaScript page errors",
+      "no local HTTP >=400 responses",
+      "five screenshots attached as Actions artifact"
+    ],
+    "scope": "local HTTP static site from PR merged-test source, not actual production GitHub Pages; user final approval not performed"
+  },
+  "sourceAvailability": {
+    "bdfutbol_ci": "HTTP 403",
+    "fbref_ci": "HTTP 403",
+    "status": "bot protection prevents bulk 3-season individual-source audit on this runner"
+  },
+  "structuralValidation": {
+    "status": "passed_in_GitHub_Actions",
+    "run": "https://github.com/wjdduddlf112/footballarch/actions/runs/41660611709"
   }
 }
