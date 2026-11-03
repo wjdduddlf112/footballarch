@@ -1,0 +1,23 @@
+import {readFileSync} from "node:fs";
+import {strict as assert} from "node:assert";
+const d=JSON.parse(readFileSync("data/laliga-2008-09.json","utf8"));
+const a=JSON.parse(readFileSync("data/laliga-standings-verified-1999-2026.json","utf8"));
+const P=d.players;
+const positions=["GK","CB","LB","RB","DM","CM","CAM","LW","RW","ST"];
+const tiers=["S","A+","A","A-","B+","B","B-","C+","C","C-"];
+const caps={GK:2,CB:3,LB:2,RB:2,DM:2,CM:3,CAM:2,LW:2,RW:2,ST:3};
+let passed=0;
+function check(label,cb){cb();passed++;console.log("PASS "+label);}
+check("Season DRAFT metadata and approval",()=>{assert.equal(d.meta.season,"2008-09");assert.equal(d.meta.status,"draft");assert.equal(d.meta.userApproved,false);assert.equal(d.meta.bestXiStatus,"proposed_unapproved")});
+check("20 preserved standings",()=>assert.deepEqual(d.standings,a.seasons["2008-09"].standings));
+check("Crest/club catalog preserved",()=>assert.deepEqual(d.clubs,a.clubs));
+check("Actual UEFA entrants match 2009-10 archive",()=>{assert.equal(d.qualifiers.length,7);assert.deepEqual(Object.fromEntries(d.qualifiers.map(x=>[x.club,x.competition])),a.seasons["2008-09"].europeanParticipation)});
+check("129 unique candidate records",()=>{assert.equal(P.length,129);assert.equal(new Set(P.map(x=>x.id)).size,129);assert.ok(P.every(x=>x.name&&x.nameOriginal&&x.nameKo&&x.clubNameOriginal));});
+check("Seven clubs, 11 nominal starters each",()=>{assert.equal(new Set(P.map(x=>x.club)).size,7);for(const c of d.qualifiers){assert.equal(P.filter(x=>x.club===c.club&&x.role==="starter").length,11,c.club)}});
+check("Per-club position caps and backup eligibility",()=>{for(const c of d.qualifiers){for(const pos of positions){const z=P.filter(x=>x.club===c.club&&x.position===pos);assert.ok(z.length<=caps[pos],c.club+" "+pos);assert.ok(z.filter(x=>x.role==="backup").length<=1,c.club+" "+pos)}}});
+check("Plausible source stats and missing birthday honesty",()=>{for(const x of P){assert.ok(Number.isInteger(x.leagueAppearances)&&x.leagueAppearances>0&&x.leagueAppearances<=38,x.name);assert.ok(Number.isInteger(x.leagueStarts)&&x.leagueStarts>=0&&x.leagueStarts<=x.leagueAppearances,x.name);assert.ok(Number.isInteger(x.leagueGoals),x.name);assert.ok(x.sources.length&&x.evidence.seasonPrimarySource,x.name);if(x.born!==null){assert.match(x.born,/^\\d{4}-\\d{2}-\\d{2}$/);assert.equal(new Date(x.born+"T00:00:00Z").toISOString().slice(0,10),x.born)}else assert.match(x.birthAuditStatus,/missing/)}});
+check("Explicitly provisional tier, position, earlier history",()=>{for(const x of P){assert.ok(tiers.includes(x.tier));assert.equal(x.review,"draft_unapproved");assert.equal(x.threeSeasonReview.seasons.join(","),"2006-07,2007-08,2008-09");assert.equal(x.evidence.priorSeasons.length,2);assert.match(x.positionVerification,/pending/)}});
+check("Contiguous unique position ranks and tier order",()=>{for(const p of positions){const z=P.filter(x=>x.position===p).sort((a,b)=>a.rank-b.rank);for(let i=0;i<z.length;i++){assert.equal(z[i].rank,i+1,p);if(i)assert.ok(tiers.indexOf(z[i-1].tier)<=tiers.indexOf(z[i].tier),p)}}});
+check("11 valid no-duplicate best XI",()=>{assert.equal(d.bestXi.length,11);assert.equal(new Set(d.bestXi.map(x=>x.playerId)).size,11);for(const slot of d.bestXi){let p=P.find(x=>x.id===slot.playerId);assert.ok(p);assert.equal(p.position,slot.position)}});
+check("Unverified item counts not mislabeled completed",()=>{assert.equal(P.filter(x=>!x.born).length,d.meta.candidateAudit.birthMissingCount);assert.equal(d.meta.candidateAudit.priorTwoSeasonAudit,"partial_old_archive_references_not_independent");assert.equal(d.meta.browserValidation,false)});
+console.log(JSON.stringify({passed,players:P.length,starters:P.filter(x=>x.role==="starter").length,backups:P.filter(x=>x.role==="backup").length,missingBirth:P.filter(x=>!x.born).length,wc:P.filter(x=>["S","A+"].includes(x.tier)).length,top:P.filter(x=>["S","A+","A","A-"].includes(x.tier)).length,warning:"STRUCTURAL ONLY; NOT historic cross-verification or browser result"},null,2));
