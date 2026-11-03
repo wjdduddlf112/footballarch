@@ -5,9 +5,9 @@ const url="https://wjdduddlf112.github.io/footballarch/?league=laliga&season=200
 const browser=await chromium.launch({headless:true,args:["--no-sandbox"]});
 const page=await browser.newPage({viewport:{width:1280,height:860}});
 const errors=[];
+let observed=null;
 page.on("pageerror",e=>errors.push(String(e)));
 try{
- let observed=null;
  for(let n=0;n<14;n++){
    try{
      await page.goto(url,{waitUntil:"domcontentloaded",timeout:30000});
