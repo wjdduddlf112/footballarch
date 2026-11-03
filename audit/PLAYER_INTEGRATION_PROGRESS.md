@@ -1,3 +1,14 @@
+## 2026-11-04 — La Liga 2009-10 source-led 129-person DRAFT (not historic fact-certified)
+
+- User directed the next season after 2008-09. Scope is **only 2009-10**; 2010-11 player evaluation has not started.
+- Exactly 7 actual 2010-11 European qualifiers: Barcelona, Real Madrid, Valencia and Sevilla (UCL, Sevilla playoff then UEL); Getafe, Villarreal and Atlético (UEL). Mallorca was rank 5 but UEFA licence rejected, Villarreal qualified despite rank 7. Atlético qualified as 2009-10 UEL champion despite rank 9.
+- 129 nominees from 7 direct BDFutbol 2009-10 season lineups: Barcelona 18, Madrid 17, Valencia 21, Sevilla 18, Getafe 19, Villarreal 18, Atlético 18. 77 nominal starters + 52 backups (8 are 19+-start starter-equivalent players). All 129 tentative tiers and unique positional ranks, proposed 11-man 4-4-2 Best XI.
+- Evaluation frame 2007-08, 2008-09, 2009-10 with latest most heavily considered, but **independent historical 3-season player form NOT independently verified for all 129**. Older Football Archive draft data are provisional references, not independent corroboration.
+- 129 ISO dates entered; primary FootballSquads historical squad for many, old draft data for others, targeted public profiles for 10 players; **independent two-source DOB checks incomplete** and Éric Abidal previous DRAFT ISO vs historic roster conflict unresolved.
+- Predominant match-by-match position and league's empirically most common formation NOT checked; 4-4-2 Best XI is a tactical hypothesis only. Individual tiers, rankings, assignments and 11-man XI are **unapproved DRAFT**.
+- New season JSON `data/laliga-2009-10.json`; audit `audit/LALIGA_2009_10_RATED_129_FULL_REPORT_2026-11-04.md`, `audit/LALIGA_2009_10_HISTORICAL_SOURCE_AUDIT_2026-11-04.md`. Scripts/Actions set up for automated structure plus Chromium, separate production Pages checks. Actual test result to be stated after CI.
+- Older 20-club standings, club crests, all previous seasons, user interface and Git history preserved. **STOP after 2009-10; do not begin 2010-11 without user direction.**
+
 ## 2026-11-04 — La Liga 2008-09 new 129-person source-led DRAFT (not independently historical complete)
 
 - Scoped to 2008-09 only, after direct user authorization. Seven actual 2009-10 UEFA entrants checked by UEFA: Barcelona, Real Madrid, Sevilla, Atlético (UCL); Villarreal, Valencia, Athletic (UEL; Copa losing finalist). Deportivo seventh excluded.
