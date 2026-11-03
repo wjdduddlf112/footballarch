@@ -1,5 +1,16 @@
 # Football Archive — Player integration checkpoint
 
+## 2026-11-03 — La Liga 2006-07 143-player DRAFT (user authorized next season, including pages publishing)
+
+- **Qualifiers:** 8 actual 2007-08 UEFA entrants — Real Madrid, Barcelona, Sevilla, Valencia UCL; Villarreal, Zaragoza, Getafe UEFA Cup (Getafe Copa del Rey losing finalist despite 9th); Atlético 2007 Intertoto actual participant.
+- Fresh BDFutbol 2006-07 starter + substitute club-year nomination **143 records**, 8×11=**88 nominal starters**, 55 backups, no more than one backup per position per team, constrained position caps. Current-season league starts/appearances/goals (GK goal field records negative conceded). KO/original names, original club names, positions, provisional birthdates, tiers and consecutive ranks for all 143.
+- Recency weighting 2006-07 > 2005-06 > 2004-05. S1, A+14, A10, A-28, B+43, B32, B-12, C+3; **World Class 15**, **League Top Class 53**. Best XI **4-4-2**, eleven position-valid IDs and `bestXiReview.status=proposed_unapproved`; 4-4-2 is historical tactical hypothesis, not proven 2006-07 league modal count.
+- 143/143 DOB values ISO entered but not all 143 independently double-source verified. Edu (Valencia) / Edú (Betis) and Atlético / Sevilla Antonio López identity collisions explicitly separated. 2005-07 incomplete personal form and played-position-frequency audit explicitly noted.
+- Machine-readable integrity: `audit/LALIGA_2006_07_STRUCTURAL_AUDIT_2026-11-03.json` **30/30 connector-side checks PASS**; full 143-member browser-readable Markdown table by club and position `audit/LALIGA_2006_07_RATED_143_FULL_REPORT_2026-11-03.md`.
+- Preserve all 20 standings, all 42 original club/crest records and all earlier seasons. Only one new season JSON plus this append and two audit files changed before Pages deployment.
+- **Incomplete:** all three years' individual original source form checks, predominant role by match, all DOB independent source pairs, most common actual 38-round formation, Node CLI and GitHub Pages actual browser. Approval: DRAFT only, not final.
+- **Stop at 2006-07.** Publish current season as DRAFT via main only by current user request; do not begin 2007-08.
+
 ## 2026-11-03 — La Liga 2003-04 re-reviewed 138-person DRAFT (one season only)
 - Authorized next season after La Liga 2002-03 (2002-03 main JSON has 135 provisional tiers, positional ranks and 11-player XI; separate remaining DOB/source/position audits persist). Current scope is **only 2003-04**; do not proceed to 2004-05 without user permission.
 - Eligible by actual **2004-05** UEFA entries: **9 clubs**: Valencia, FC Barcelona, Deportivo, Real Madrid (UCL); Athletic, Sevilla, Zaragoza (UEFA Cup, Zaragoza via Copa del Rey); Atlético, Villarreal (2004 Intertoto). Qualification records verified in the season file.

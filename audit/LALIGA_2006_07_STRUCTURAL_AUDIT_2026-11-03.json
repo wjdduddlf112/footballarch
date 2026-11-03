@@ -1,0 +1,111 @@
+{
+  "league": "La Liga",
+  "season": "2006-07",
+  "date": "2026-11-03",
+  "reviewBranch": "draft/laliga-2006-07-review-20261103",
+  "status": "PASS",
+  "checks": {
+    "canParseJSON": true,
+    "eightVerifiedEuropeanClubs": true,
+    "archiveQualifiersExact": true,
+    "archiveCompetitionsExact": true,
+    "retain20OriginalStandings": true,
+    "retain42ClubCrestsAndProfiles": true,
+    "noDuplicatePlayerIDs": true,
+    "allPlayersOnlyEligibleClubs": true,
+    "everyPlayerKoreanOriginalName": true,
+    "everyPlayerOriginalClubName": true,
+    "allDOBCalendarValid": true,
+    "allLeagueStartsPositive": true,
+    "allLeagueAppearancesValid": true,
+    "allLeagueGoalsInteger": true,
+    "allPlayerPositionSingularAndAllowed": true,
+    "everyPlayerRoleValid": true,
+    "exactlyElevenNominalStartersPerClub": true,
+    "backupMaxOneForEachClubPosition": true,
+    "perTeamPositionCaps": true,
+    "everyProvisionalTierValid": true,
+    "everyPositionRankConsecutive": true,
+    "noDuplicatePlayerSeasonNameSameClub": true,
+    "XIExactlyElevenUnique": true,
+    "XIPlayersAndPositionsValid": true,
+    "XIFourFourTwoSlotCount": true,
+    "allDraftNoFinalApproval": true,
+    "recencyWindowCorrect": true,
+    "allHaveCurrentBDFSeasonSource": true,
+    "leagueTopAndWorldCountsMatch": true,
+    "originalSiteAssetsRemainUnchanged": true
+  },
+  "failed": [],
+  "counts": {
+    "players": 143,
+    "clubs": 8,
+    "starters": 88,
+    "backups": 55,
+    "worldClass": 15,
+    "leagueTopClass": 53,
+    "grades": {
+      "S": 1,
+      "A+": 14,
+      "A": 10,
+      "A-": 28,
+      "B+": 43,
+      "B": 32,
+      "B-": 12,
+      "C+": 3,
+      "C": 0,
+      "C-": 0,
+      "D": 0
+    },
+    "clubSizes": {
+      "atleti": 19,
+      "barca": 17,
+      "getafe": 16,
+      "madrid": 17,
+      "sevilla": 19,
+      "valencia": 18,
+      "villarreal": 20,
+      "zaragoza": 17
+    },
+    "xi": 11
+  },
+  "validationType": "Connected GitHub stored JSON in-memory schema/data consistency and canonical league archive parity, not Node CLI or live browser",
+  "verifiedCompetitions": "2007-08 4 UCL, 3 UEFA Cup, 1 actual Intertoto",
+  "sourceURLs": [
+    "https://www.rsssf.org/tabless/span07.html",
+    "https://files.laliga.es/memorias/2007-2008/MemoriaLFP_2007-08.pdf",
+    "https://www.bdfutbol.com/en/t/t2006-072.html",
+    "https://www.bdfutbol.com/en/t/t2006-071.html",
+    "https://www.bdfutbol.com/en/t/t2006-0733.html",
+    "https://www.bdfutbol.com/en/t/t2006-0736.html",
+    "https://www.bdfutbol.com/en/t/t2006-0738.html",
+    "https://www.bdfutbol.com/en/t/t2006-0739.html",
+    "https://www.bdfutbol.com/en/t/t2006-077.html",
+    "https://www.bdfutbol.com/en/t/t2006-0716.html"
+  ],
+  "unresolvedAuditGates": [
+    "2004-05/2005-06 individual quality data not fully independently verified",
+    "DOB values all present but most only one-source/prior DRAFT and not full independent corroboration",
+    "majority actually-played position not match-by-match checked",
+    "representative 4-4-2 not quantified as leaguewide 2006-07 most common",
+    "some role slot assignments are representative tactical constructions despite actual first XI original BDF lineup",
+    "Node CLI and browser rendered UI tests not executed",
+    "GitHub Pages deployment requires merging from branch to main",
+    "User still has not approved each player's definitive grade or rank"
+  ],
+  "sourceIdentityCorrections": [
+    {
+      "name": "Edu",
+      "club": "valencia",
+      "incorrectPriorClub": "betis",
+      "reason": "2004-05 Betis Edú (Luís Eduardo Schmidt) is a different player from Valencia Edu (Eduardo César Daud Gaspar)"
+    },
+    {
+      "name": "Antonio López",
+      "club": "atleti",
+      "incorrectPriorClub": "sevilla",
+      "reason": "Prior Sevilla Antonio López is a different player; current Atlético Antonio López García (1981-09-13)"
+    }
+  ],
+  "provisional": true
+}

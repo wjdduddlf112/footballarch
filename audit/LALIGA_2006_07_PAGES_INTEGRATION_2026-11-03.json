@@ -1,0 +1,34 @@
+{
+  "season": "2006-07",
+  "branch": "draft/laliga-2006-07-review-20261103",
+  "publishIntent": "Make provisional DRAFT dataset visible on existing main-root GitHub Pages, not final football assessment approval",
+  "asOf": "2026-11-03",
+  "status": "PASS",
+  "checks": {
+    "sourceOnFreshMain": true,
+    "onlyFourExpectedFiles": true,
+    "noUIOrOtherSeasonChanged": true,
+    "rankingAndXIAllPresent": true,
+    "originalCanonicalStandingsUnaltered": true,
+    "originalClubProfilesUnaltered": true,
+    "venueNameCompatible": true,
+    "websiteLoadsSeasonJson": true,
+    "websiteDraftBanner": true,
+    "websiteDraftBestXI": true,
+    "websiteFourFourTwoPitch": true,
+    "userApprovalNotClaimed": true
+  },
+  "changedFiles": [
+    "audit/LALIGA_2006_07_RATED_143_FULL_REPORT_2026-11-03.md",
+    "audit/LALIGA_2006_07_STRUCTURAL_AUDIT_2026-11-03.json",
+    "audit/PLAYER_INTEGRATION_PROGRESS.md",
+    "data/laliga-2006-07.json"
+  ],
+  "checksCount": 12,
+  "notes": [
+    "Static code and season JSON contract verified, not an actual browser run.",
+    "Site will expose DRAFT badge and proposed_unapproved XI according to existing app.js, pending GitHub Pages deployed configuration.",
+    "Historical match-by-match position, three-season individual form and DOB independent sources remain pending.",
+    "No changes to 42 club profiles, any existing season or site assets."
+  ]
+}
