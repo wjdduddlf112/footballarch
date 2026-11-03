@@ -1,3 +1,13 @@
+## 2026-11-04 — La Liga 2010-11 (started after user "ㅇㅋ 다음 시작")
+
+- Historical scope 2010-11 La Liga; actual 2011-12 European entrant clubs **Barcelona, Real Madrid, Valencia, Villarreal (UCL); Sevilla, Athletic Club, Atlético (UEL)** — seven teams.
+- 127 manually source-led nomination records from BDFutbol 2010-11 PM/SM/G roster views, 77 tactical starters + 50 backups. 4-2-3-1 era-hypothesis Best XI; all tiers and position ranks entered **DRAFT / user not approved**.
+- DOB ISO 127/127 entered, **90 previous-year DRAFT only**, 35 new publicly named biographies/historic FootballSquads 2010-11 squads, 2 FC Barcelona official/historic roster date conflicts (Abidal and Adriano). Two-source independent DOB not certified.
+- 2008-09 and 2009-10 player-specific recent form and 2010-11 actual predominant per-match player positions **not independently verified**; 4-2-3-1 not established as leaguewide most-frequent 2010-11 by census.
+- Full table: `audit/LALIGA_2010_11_RATED_127_FULL_REPORT_2026-11-04.md`; limitations: `audit/LALIGA_2010_11_SOURCE_AUDIT_2026-11-04.md`.
+- Branch `draft/laliga-2010-11-source-led-20261104`; 2010-11 JSON `data/laliga-2010-11.json`, new Node structural and local Chromium + published Pages Chromium scripts and CI. Historical 20-team standings, crests, previous season data/UI preserved.
+- **Do not start 2011-12 until user specifically directs it.**
+
 ## 2026-11-04 — La Liga 2009-10 actual GitHub Pages production checks (DRAFT)
 
 - PR #40 merged on main at squash SHA `c71f1635bb96ca7c14fa972eb2b71906278be9bd`; prior seasons, 20-team standings and club crests unchanged. 2009-10 remains **129-player DRAFT**, user not approved.
