@@ -1,3 +1,10 @@
+## 2026-11-04 — La Liga 2009-10 actual GitHub Pages production checks (DRAFT)
+
+- PR #40 merged on main at squash SHA `c71f1635bb96ca7c14fa972eb2b71906278be9bd`; prior seasons, 20-team standings and club crests unchanged. 2009-10 remains **129-player DRAFT**, user not approved.
+- GitHub Pages deployment **SUCCESS**: https://github.com/wjdduddlf112/footballarch/actions/runs/41675523591.
+- Real public GitHub Pages Chromium **PASS**: https://github.com/wjdduddlf112/footballarch/actions/runs/41675524506. Public JSON HTTP 200 with 129 players and `meta.status=draft`. Overview / 4-4-2 DRAFT Best XI / 15 world-class + 35 league top / 20-team table / Statistics all shown; real Iker Casillas modal includes Korean/original names, DOB, club, rank and '잠정 티어 · 미승인'; zero JS runtime errors; 5 screenshots collected. Draft branch CI Node structure + Chromium PASS: https://github.com/wjdduddlf112/footballarch/actions/runs/41675243484.
+- **Independent player history still NOT complete:** 129 players need independently sourced previous two-season form and match-by-match primary position. 129 ISO birthdays entered, but 16 previous-DRAFT-only, 1 Abidal source conflict and other independent biography checks remain. Leaguewide most common formation is unproven. CI and browser pass are **not** historical validation.
+
 ## 2026-11-04 — La Liga 2009-10 source-led 129-person DRAFT (not historic fact-certified)
 
 - User directed the next season after 2008-09. Scope is **only 2009-10**; 2010-11 player evaluation has not started.
