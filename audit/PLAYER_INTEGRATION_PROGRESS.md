@@ -1,3 +1,9 @@
+## 2026-11-03 production GitHub Pages verification (La Liga 2007-08)
+
+- The 154-player unapproved DRAFT season merged to `main` via PR #38 (squash commit `ce4b3908fc3b512be562a44b6312a959a5a8440d`).
+- Actual public site https://wjdduddlf112.github.io/footballarch/ returned 2007-08 JSON HTTP 200 with 154 players; Chromium verified Overview, Best XI, Top Class, League Table, Statistics and actual Iker Casillas player modal showing name, DOB, original club and provisional draft grade. GitHub Actions: https://github.com/wjdduddlf112/footballarch/actions/runs/41662794976 — PASS.
+- Historical audit status STILL incomplete: all-player 2005-06/2006-07 independent source history and DOB double-source checks; match-by-match most frequent position and most common league formation. This publication is explicitly DRAFT, not user approved / fact-verified final.
+
 ## 2026-11-03 — La Liga 2007-08 source-led 154-person DRAFT (single-season research; no following season)
 
 - Next-year European participation: exactly eight verified 2008-09 entrants: Madrid, Villarreal, Barcelona, Atlético (UCL); Sevilla, Racing, Valencia (UEFA Cup, Valencia Copa title); Deportivo (actual Intertoto Cup participant, progressed UEFA Cup).
