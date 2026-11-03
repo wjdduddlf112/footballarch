@@ -1,5 +1,15 @@
 # Football Archive — Player integration checkpoint
 
+## 2026-11-03 — La Liga 2000-01 DRAFT assessment complete (user requested next season)
+
+- Source participation verified: **7 Spanish clubs actually participated in 2001-02 UCL/UEFA Cup; no 2001 Spanish Intertoto entrants**. Supported by Liga 2000-01 official annual report, RSSSF and 2001-02 UEFA records.
+- Evaluated **129** role-capped player candidates: **77 starting / 52 backups** in 7 teams. **129/129** have tier, exact within-position rank, original/Korean names, dates of birth, current-season starts and season-specific qualitative assessment note. DRAFT S=4, A+=9, A=14, A-=18, B+=35, B=24, B-=18, C+=7. World Class 13; League Top Class 45. Best XI 4-2-3-1 has 11 valid IDs, pending user approval.
+- Versus preexisting 132 candidate draft: added Pedro Munitis (1998-99 and 1999-00 Racing regular; 2000-01 Madrid 9 league starts); removed over-cap/low-role Solari, Gerard, Zahovič and Marcos Vales. Corrected playing roles: CAM Guti/Valerón/Mostovoi, Zaragoza ST Jamelli and RW Montenegro; Valencia Juan Sánchez restored as second starter striker; Barcelona Xavi to CM backup. Details in season JSON metadata.
+- Updated `data/laliga-2000-01.json` on review branch with assessed 129, rank 129, Best XI 11. Protected `clubs`, `qualifiers`, `standings`, crests and all other seasons. Field-level connector-side verifier PASS 0 errors, validated against active shared La Liga archive. See `audit/LALIGA_2000_01_STRUCTURAL_AUDIT_2026-11-03.json`.
+- Full 129-person readable table + positional ranking + grade rationales: `audit/LALIGA_2000_01_RATED_129_FULL_REPORT_2026-11-03.md`.
+- **Important:** Grading and ranking are completed as a *qualitative DRAFT*, not individually complete source-audited 1998-99 + 1999-00 data for all 129. Some 2000-01 primary-position minutes are working interpretations. Node CLI tests and live-site browser checks not executed, final user approval pending. Do not move to 2001-02 season before separate user instruction.
+
+
 ## 2026-11-03 La Liga 1999-00 — 167/167 DRAFT tier/rank and Best XI assessment completed (supersedes 2026-11-02 unrated checkpoint)
 
 **Assessment dataset:** `data/laliga-1999-00.json` in PR #30 review branch, rated data `audit/laliga-1999-00-rated-167-draft-2026-11-03.json`, complete 167-player browser-readable assessment and rank report `audit/LALIGA_1999_00_RATED_167_FULL_REPORT_2026-11-03.md`.
