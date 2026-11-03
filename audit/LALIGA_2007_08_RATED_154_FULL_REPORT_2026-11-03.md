@@ -11,7 +11,7 @@ All nominated players are in the exact club squad for the 2007-08 domestic seaso
 - Tiers/ranks DRAFT and NOT user approved; 2005-06 and 2006-07 individual quality review incomplete for candidates outside earlier qualified-club archive.
 - BDFutbol season lineup tables are not authoritative match-by-match evidence of predominant left/right or CB/fullback deployment. Atlético and Deportivo roles especially subject to revision.
 - **2007-08 Best XI and 4-4-2 are editorial proposals**, not user approved and not empirically proven league most-common formation.
-- This report does NOT claim Node CLI run or live website browser QA.
+- Node CLI structural audit and Playwright Chromium five-tab local HTTP browser QA actually PASS (GitHub Actions run 41660611709). GitHub Pages production deployment remains UNVERIFIED.
 
 ## Qualified clubs
 
@@ -519,7 +519,7 @@ Tier rating is qualitative 2007-08 > 2006-07 > 2005-06, favoring individual cont
 2. All 154 players' 2005-06 and 2006-07 current/foreign/nonqualified-club records and recency-weighted qualitative evidence.
 3. Actual predominant playing position per player from contemporary lineups, left/right and late-season formation variations.
 4. 380-game leaguewide most common formation assessment.
-5. Node CLI validation, GitHub Pages actual browser visual validation and user final approval.
+5. Live GitHub Pages production deployment and user final approval (Node CLI and five-tab Chromium draft-branch local browser are PASS).
 
 ## Key source references
 
@@ -535,3 +535,10 @@ Tier rating is qualitative 2007-08 > 2006-07 > 2005-06, favoring individual cont
 - 2008 Intertoto participants: https://www.rsssf.org/tablesu/uic08.html
 - Racing Pablo Álvarez: https://www.realracingclub.es/noticias/pablo-lvarez-presentado-como-nuevo-jugador-del-racing
 - Historical league standings: data/laliga-standings-verified-1999-2026.json
+
+## Executed validation on PR branch
+
+- Node `scripts/verify-laliga-2007-08-draft.mjs`: PASS, 14 assertions; `scripts/verify-laliga.mjs`: PASS, 27-season standing archive.
+- Playwright Chromium browser against local HTTP served draft branch: Overview, Best XI, Top Class, League Table, Statistics tabs PASS, 154-player JSON fetch PASS, no page JavaScript errors, no missing local HTTP resource. Screenshots stored in GitHub Actions artifact.
+- Run: https://github.com/wjdduddlf112/footballarch/actions/runs/41660611709
+- **NOT** an assertion of GitHub Pages production deployment; direct BDFutbol/FBref collection in GitHub Actions runner received HTTP 403.
