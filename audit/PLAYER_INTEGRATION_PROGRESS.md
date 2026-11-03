@@ -1,5 +1,16 @@
 # Football Archive — Player integration checkpoint
 
+## 2026-11-03 — La Liga 2001-02 complete 158-player qualitative DRAFT assessment (one season, no next-season advance)
+
+- Eligible clubs **9** (2002-03 actual entry): Valencia, Deportivo, Real Madrid, Barcelona (UCL); Celta, Betis, Alavés (UEFA Cup); Málaga, Villarreal (2002 Intertoto). UEFA historical record specifically confirms both Intertoto appearances and Málaga's UEFA Cup progression.
+- Previously existing 162-person incomplete source draft re-audited against historical club-season BDFutbol starts; **158** selected after removing Celades, Motta, Calado and Sandro under the 1-backup-per-position constraint. All 9 clubs have **11 proposed starters**, total 99 starters/59 backups. Club 4-4-2 or 4-2-3-1 formations recorded as evidence-informed hypotheses, not all-season modal proven.
+- **158/158 provisional tier assignments and unique within-position ranks**. 158/158 DOB, Korean+original names, 2001-02 league starts. 58 previously blank DOB filled with BDFutbol, official club bios, secondary sources. Eight null starts corrected from BDFutbol. Some second-source DOB checks still open.
+- Grades: S2 / A+11 / A18 / A-15 / B+46 / B38 / B-16 / C+11 / C1. WC **13**, league top S–A- **46**.
+- Best XI 4-4-2 **11 valid refs**: Prats; Ayala, Hierro, Roberto Carlos, Salgado; Makélélé, Zidane, Rivaldo, Figo; Tristán, Kluivert. User review pending.
+- Dataset: `data/laliga-2001-02.json`; full readable report: `audit/LALIGA_2001_02_RATED_158_FULL_REPORT_2026-11-03.md`; verification: `audit/LALIGA_2001_02_STRUCTURAL_AUDIT_2026-11-03.json` (connector-side **PASS, zero errors**). Preserved active main standings, club profiles/crests and qualifying-club IDs and competitions. Only qualifier verification/sources revised.
+- **Critical honesty:** 2001-02 qualitative tiers and ranks are **complete as DRAFT**, but older 1999-00/2000-01 individual quality evidence and played-position frequencies are only partially corroborated. No numerical composite score invented. Node CLI scripts and live browser rendering not yet executed. User final approval **not** claimed. Do not move to 2002-03 before user asks.
+
+
 ## 2026-11-03 — La Liga 2000-01 DRAFT assessment complete (user requested next season)
 
 - Source participation verified: **7 Spanish clubs actually participated in 2001-02 UCL/UEFA Cup; no 2001 Spanish Intertoto entrants**. Supported by Liga 2000-01 official annual report, RSSSF and 2001-02 UEFA records.
