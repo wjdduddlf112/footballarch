@@ -1,5 +1,16 @@
 # Football Archive — Player integration checkpoint
 
+## 2026-11-03 — La Liga 2004-05 one-season DRAFT (182 candidates, 10 eligible clubs)
+
+- Authorized by user's explicit "다음 시즌" after 2003-04. **2004-05 only**, evaluation windows 2002-03, 2003-04 and 2004-05 with most weight to 2004-05; 2005-06 must not be started without new authorization.
+- Evaluated clubs are the actual **2005-06 European participants**, not just the top league sides: UCL 4 (Barcelona, Real Madrid, Villarreal, Real Betis); UEFA Cup 3 (Espanyol, Sevilla, Copa del Rey runner-up Osasuna despite 15th league place); 2005 Intertoto actual participants 3 (Valencia, Deportivo, Athletic Club, including Athletic's replacement berth and CFR Cluj appearances).
+- **Fresh 2004-05 BDFutbol lineup-based roster research**: **182 candidates** in 10 clubs, **110 proposed starters** (11 per team) plus **72 backups**. Under one-position-per-player and team position caps (GK 2, CB 3, fullbacks 2 per side, DM 2, CM max3, CAM 2, each wing 2, ST max3). Eligible club-specific contemporary squad/starts and goals sources attached, prior archive candidates not automatically reused.
+- **182/182** current league starting counts, KO/original names, original club, provisional tier, position rank and ISO DOB entry. **Birth dates entered but full independent corroboration remains incomplete**, with conflicting third-party records explicitly logged (Marchena, Guayre, Pochettino, Fernando Fernández, Larsson).
+- Provisional tiers: S 1, A+ 12, A 7, A- 27, B+ 49, B 45, B- 25, C+ 12, C 4. World Class **13**, League Top Class **47**. Best XI **4-2-3-1, 11 player IDs**; `meta.bestXiReview.status=proposed_unapproved` for existing site's DRAFT semantics. Qualitative tier ranks and XI **not** user approved.
+- Full readable report `audit/LALIGA_2004_05_RATED_182_FULL_REPORT_2026-11-03.md`; machine audit `audit/LALIGA_2004_05_STRUCTURAL_AUDIT_2026-11-03.json`. **20 connector-side structural checks PASS**, including current archive parity of standings and crest club objects, actual next-season qualifiers, IDs/caps/slots/DOB format/XI rank integrity. **Not** an independent 3-year personal form audit and **not** Node CLI or browser testing.
+- **Open**: individual 2002-03 and 2003-04 qualitative performance source verification; match-by-match predominant outfield position (especially Sergio Ramos CB/RB, Sorín LW/LB, Baptista CAM/ST); seasonal league-wide formation mode; DOB second-source verification; independent complete player participation/source spotchecks; Node CI checks; GitHub Pages actual browser display and deployment. These cannot be marked complete.
+- Existing `main` design, crests, unified 20-club archive, approved/reviewed earlier seasons untouched. All writes on isolated `draft/laliga-2004-05-evaluation-20261103` branch and review PR, pending approval. **STOP after this season.**
+
 ## 2026-11-03 — La Liga 2001-02 complete 158-player qualitative DRAFT assessment (one season, no next-season advance)
 
 - Eligible clubs **9** (2002-03 actual entry): Valencia, Deportivo, Real Madrid, Barcelona (UCL); Celta, Betis, Alavés (UEFA Cup); Málaga, Villarreal (2002 Intertoto). UEFA historical record specifically confirms both Intertoto appearances and Málaga's UEFA Cup progression.
