@@ -1,3 +1,12 @@
+## 2026-11-04 — La Liga 2011-12 fresh 134-player DRAFT (not user approved)
+
+- User directly initiated the 2011-12 season. Seven *actual* 2012-13 UEFA entrants identified: Real Madrid, Barcelona, Valencia, Málaga (UCL), Atlético, Levante, Athletic Club (UEL; Athletic Cup finalist despite 10th league position). Osasuna rank 7 excluded.
+- New dataset `data/laliga-2011-12.json`: **134** provisional nominees, **77** nominal starters, **57** backup tactical candidates. 4-2-3-1 working Best XI; **18 World Class**, **42 League Top**, all unapproved. Group-by-club and positional tables in `audit/LALIGA_2011_12_RATED_SOURCE_DRAFT_2026-11-04.md`.
+- **Historical limitations intentionally explicit**: 134 current-season SM/PM/G rows transcribed from linked BDFutbol club-year lists, but second independent record check not yet completed; 134 ISO DOBs entered, NOT 134 independently two-source-certified birth dates; previous 2009-10 and 2010-11 personal quality and 38-game primary-role frequency not independently verified. Seasonwide modal formation also unverified. `DRAFT` is not historical verification.
+- Targeted corrections: Arda Turan LW and Adrián López RW using contemporary playing descriptions; Levante Nano born 1980-07-07 (Levante official), Pedro López 1983-11-01 (Transfermarkt/Sofascore vs FootballSquads/Sky conflict), Atlético Eduardo Salvio 1990-07-13 (UEFA/BDFutbol vs Sky conflict). Earlier Abidal and Adriano conflicts continue. Four DOB conflicts documented; further cross-validation remains.
+- Branch `draft/laliga-2011-12-source-led-20261104`, existing standings (20 clubs), crests, all other seasons and site source preserved. New local Node/Chromium and public Pages scripts plus GitHub Actions added, to be reported only after actual status checks. No user-final grades or rankings approved.
+- **Stop after 2011-12** until a new user instruction.
+
 ## 2026-11-04 — La Liga 2010-11 PRODUCTION GitHub Pages verification PASS (DRAFT only)
 
 - PR #41 merged on main at `e8e8de301c79906e077da23b55b206123a9a68b5`; all earlier seasons, standings and club crest catalog preserved. Public dataset: https://wjdduddlf112.github.io/footballarch/?league=laliga&season=2010-11&view=overview.
