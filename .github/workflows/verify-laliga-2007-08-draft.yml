@@ -1,0 +1,65 @@
+name: Verify La Liga 2007-08 DRAFT
+on:
+  pull_request:
+    paths:
+      - 'data/laliga-2007-08.json'
+      - 'scripts/verify-laliga-2007-08-draft.mjs'
+      - '.github/workflows/verify-laliga-2007-08-draft.yml'
+      - 'scripts/verify-laliga-2007-08-browser.mjs'
+  push:
+    branches:
+      - 'draft/laliga-2007-08-researched-20261103'
+    paths:
+      - 'data/laliga-2007-08.json'
+      - 'scripts/verify-laliga-2007-08-draft.mjs'
+      - '.github/workflows/verify-laliga-2007-08-draft.yml'
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Run 2007-08 player structural verifier
+        run: node scripts/verify-laliga-2007-08-draft.mjs
+      - name: Run La Liga historical standings verifier
+        run: node scripts/verify-laliga.mjs
+      - name: Probe original historical data sources (network, non-gating)
+        run: |
+          for u in \
+            'https://www.bdfutbol.com/en/t/t2007-082.html' \
+            'https://fbref.com/en/comps/12/2007-2008/stats/2007-2008-La-Liga-Stats' \
+            'https://fbref.com/en/comps/12/2006-2007/stats/2006-2007-La-Liga-Stats' \
+            'https://fbref.com/en/comps/12/2005-2006/stats/2005-2006-La-Liga-Stats'; do
+            echo "Testing $u"
+            curl -L -s -o /tmp/sourceprobe.html -w 'HTTP %{http_code}, bytes %{size_download}\\n' --max-time 12 --user-agent 'Mozilla/5.0 (compatible; HistoricalResearchBot/1.0)' "$u" || true
+            head -c 80 /tmp/sourceprobe.html || true
+            echo
+          done
+
+  browser:
+    name: Browser UI (Chromium)
+    runs-on: ubuntu-24.04
+    needs: verify
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install Playwright
+        run: |
+          npm install --no-save playwright@1.58.2
+          npx playwright install --with-deps chromium
+      - name: Open and verify all five site tabs in Chromium
+        run: node scripts/verify-laliga-2007-08-browser.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: laliga-2007-08-ui-screenshots
+          path: /tmp/laliga-2007-08-*.png
+          if-no-files-found: ignore
