@@ -1,0 +1,105 @@
+{
+  "kind": "GithubPagesPrepublishIntegrityAudit",
+  "asOf": "2026-11-03",
+  "branch": "publish/laliga-2003-06-draft-20261103",
+  "sourceBranch": "main",
+  "years": [
+    "2003-04",
+    "2004-05",
+    "2005-06"
+  ],
+  "status": "PASS",
+  "checks": {
+    "2003-04": {
+      "statusDraft": true,
+      "qualifiersMatchArchive": true,
+      "competitionsMatchArchive": true,
+      "playersNamesRolesAndTiers": true,
+      "allPlayerIDsUnique": true,
+      "elevenStartersPerEligibleClub": true,
+      "positionRanksCompleteAndContiguous": true,
+      "bestXIExactUniqueAndPositionMatched": true,
+      "clubProfilesAndCrestsPreserved": true,
+      "standingsPreserved": true,
+      "formationSupportedByUI": true,
+      "websiteExpectsAndFindsAllNeededFields": true
+    },
+    "2004-05": {
+      "statusDraft": true,
+      "qualifiersMatchArchive": true,
+      "competitionsMatchArchive": true,
+      "playersNamesRolesAndTiers": true,
+      "allPlayerIDsUnique": true,
+      "elevenStartersPerEligibleClub": true,
+      "positionRanksCompleteAndContiguous": true,
+      "bestXIExactUniqueAndPositionMatched": true,
+      "clubProfilesAndCrestsPreserved": true,
+      "standingsPreserved": true,
+      "formationSupportedByUI": true,
+      "websiteExpectsAndFindsAllNeededFields": true
+    },
+    "2005-06": {
+      "statusDraft": true,
+      "qualifiersMatchArchive": true,
+      "competitionsMatchArchive": true,
+      "playersNamesRolesAndTiers": true,
+      "allPlayerIDsUnique": true,
+      "elevenStartersPerEligibleClub": true,
+      "positionRanksCompleteAndContiguous": true,
+      "bestXIExactUniqueAndPositionMatched": true,
+      "clubProfilesAndCrestsPreserved": true,
+      "standingsPreserved": true,
+      "formationSupportedByUI": true,
+      "websiteExpectsAndFindsAllNeededFields": true
+    }
+  },
+  "uiChecks": {
+    "onMainBranchStaticFrontendAppExpectedPath": true,
+    "draftBannerConditional": true,
+    "bestXiDraftConditional": true,
+    "worldAndLeagueTopClassCountUI": true,
+    "noBuildStepPerREADME": true
+  },
+  "stats": {
+    "2003-04": {
+      "players": 138,
+      "starters": 99,
+      "backups": 39,
+      "qualifyingClubs": 9,
+      "draft": "draft",
+      "bestXi": 11,
+      "failures": []
+    },
+    "2004-05": {
+      "players": 182,
+      "starters": 110,
+      "backups": 72,
+      "qualifyingClubs": 10,
+      "draft": "draft",
+      "bestXi": 11,
+      "failures": []
+    },
+    "2005-06": {
+      "players": 148,
+      "starters": 88,
+      "backups": 60,
+      "qualifyingClubs": 8,
+      "draft": "draft",
+      "bestXi": 11,
+      "failures": []
+    }
+  },
+  "qualityGatesStillOpen": {
+    "independentThreeSeasonQualitativeAudit": true,
+    "matchByMatchActualMainPosition": true,
+    "independentDOBSourceCheck": true,
+    "nodeCliTests": true,
+    "liveBrowserRender": true,
+    "exactGitHubPagesSettingsAndDeploymentJobStatus": true
+  },
+  "dataNotes": [
+    "2003-04 season standings are precisely preserved from main data/laliga-2003-04.json. Unified external standings index contains the same 20 clubs/season results but competition=null before app overlays verified European competition; this difference is not an alteration of the season standings.",
+    "All 3 season records display DRAFT and Best XI proposed_unapproved on current static app UI logic.",
+    "This audit establishes data compatibility by static inspection, not successful user-agent runtime, GitHub Actions run or Pages HTTP fetch."
+  ]
+}
