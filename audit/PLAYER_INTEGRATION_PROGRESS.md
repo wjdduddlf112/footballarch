@@ -1,5 +1,17 @@
 # Football Archive — Player integration checkpoint
 
+## 2026-11-03 La Liga 1999-00 — 167/167 DRAFT tier/rank and Best XI assessment completed (supersedes 2026-11-02 unrated checkpoint)
+
+**Assessment dataset:** `data/laliga-1999-00.json` in PR #30 review branch, rated data `audit/laliga-1999-00-rated-167-draft-2026-11-03.json`, complete 167-player browser-readable assessment and rank report `audit/LALIGA_1999_00_RATED_167_FULL_REPORT_2026-11-03.md`.
+
+- 2000-01 eligible European entrants: 10 verified. Re-selected and assigned 167 candidate records (110 starting hypotheses, 57 backup hypotheses); all 167 have `nameKo`, `nameOriginal`, DOB, club, 1999-00 start count, single position, `tier`, and unique within-position `rank`.
+- Tier totals: **S 5; A+ 11; A 10; A- 25; B+ 59; B 33; B- 12; C+ 8; C 3; C- 1; D 0**. World Class 16 and League Top Class 51. Best XI has 11 valid candidates, representative 4-2-3-1, `proposed_unapproved`.
+- Corrected historical identities: César Láinez (not Iñaki), Nelson Vivas (not Martín), Daniel Fagiani (not Fabio), Manuel Serrano Pulido, Mario Turdó, Yordi, 1999-00 Espanyol Juan Luis Mora (12 starts), Mallorca Ariel Ibagaza (19 starts), and other positions/roles. 167 DOB filled (some source inconsistencies, such as Juan Sánchez, noted in player sources). Stable previous player IDs retained where matched.
+- Protection: all 20 historical standings, all ten qualifiers, all 20 club profiles and crest details unchanged. Other league/season JSON untouched. One-season structural validator directly implemented against active shared La Liga archive: **PASS, 0 errors**. Machine-readable report: `audit/laliga-1999-00-structural-check-2026-11-03.json`.
+- **Important limitation**: This is a **completed qualitative DRAFT rating**, not a fully independent three-season individual audit. Most of the 167 prior two-season per-player evidence links are incomplete, and full played-position match frequency is not independently resolved. Tier statuses are provisional and user approval remains pending. Browser-only UI and CLI Node validation have **not** been executed. DRAFT is not APPROVED.
+- No La Liga 2000-01 season has been newly reassessed by this run.
+
+
 ## 2026-11-02 La Liga 1999-00 independent re-selection audit (new DRAFT branch)
 
 Branch `audit/laliga-1999-00-fresh-source-pool-20261102`: independently sourced 200-person BDFutbol pool across all 10 verified European-qualified clubs; narrowed to 167 tentative candidates (110 proposed starters/57 backups) under position caps. 151 DOB filled (some copied only as secondary identity cache), 16 missing; 9 date checks and a previously conflicting Valencia DOB identified. 143 prior player IDs matched only **after** fresh source selection; 24 proposed additions, 5 proposed omissions, 13 tentative position differences. **All new tiers and ranks remain null**, because full independent three-season evidence is not complete. No existing player ratings or site JSON were altered, no CLI/browser gate passed. Read `audit/LALIGA_1999_00_INDEPENDENT_REBUILD_2026-11-02.md`. Season unfinished; do not proceed to next season or imply evaluation complete.
