@@ -105,7 +105,7 @@
           ]
         }
       ],
-      "birthdayPendingCount": 10,
+      "birthdayPendingCount": 0,
       "birthdayAudit": "prior_archive_or_null_only; no claims of independent double source validation",
       "priorTwoSeasonAudit": "reference_to_prior_drafts_only_not_independent",
       "primaryPositionAudit": "provisional_not_matchwise_verified",
@@ -133,7 +133,7 @@
           "status": "conflict_pending_resolve"
         }
       ],
-      "birthdateAudit": "10 DOB null; 102 supported by FootballSquads roster; 1 older archive vs historical squad conflicts; no double independent evidence certified",
+      "birthdateAudit": "129/129 populated; 102 historical roster corroborations + ten targeted references, 1 prior archive vs historical roster conflict for Abidal; 16 previous DRAFT entries still lack independent birth-date verification; two-source confidence not generalized.",
       "historicalDOBRosterSources": {
         "barca": "https://www.footballsquads.co.uk/spain/2009-2010/laliga/barce.htm",
         "madrid": "https://www.footballsquads.co.uk/spain/2009-2010/laliga/rmadrid.htm",
@@ -141,7 +141,9 @@
         "sevilla": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/sevilla.htm",
         "atleti": "https://www.footballsquads.co.uk/spain/2009-2010/laliga/amadrid.htm",
         "getafe": "https://www.footballsquads.co.uk/spain/2008-2009/laliga/getafe.htm"
-      }
+      },
+      "newIndependentTwoSourceDOB": 6,
+      "starterEquivalentBackupCount": 8
     }
   },
   "clubs": [
@@ -1956,7 +1958,9 @@
         "status": "provisional",
         "criteria": "Proposed tier then current-season start/appearance count; within-tier individual analysis pending.",
         "pool": 14
-      }
+      },
+      "starterEquivalent": true,
+      "starterEquivalentNote": "Back-up designation represents one nominal 11 tactical slot; current-season starts qualify this player as starter-equivalent. Reassess position distribution."
     },
     {
       "id": "laliga-200910-barca-16",
@@ -3396,7 +3400,9 @@
         "status": "provisional",
         "criteria": "Proposed tier then current-season start/appearance count; within-tier individual analysis pending.",
         "pool": 13
-      }
+      },
+      "starterEquivalent": true,
+      "starterEquivalentNote": "Back-up designation represents one nominal 11 tactical slot; current-season starts qualify this player as starter-equivalent. Reassess position distribution."
     },
     {
       "id": "laliga-200910-madrid-14",
@@ -4926,7 +4932,9 @@
         "status": "provisional",
         "criteria": "Proposed tier then current-season start/appearance count; within-tier individual analysis pending.",
         "pool": 21
-      }
+      },
+      "starterEquivalent": true,
+      "starterEquivalentNote": "Back-up designation represents one nominal 11 tactical slot; current-season starts qualify this player as starter-equivalent. Reassess position distribution."
     },
     {
       "id": "laliga-200910-valencia-14",
@@ -5106,7 +5114,9 @@
         "status": "provisional",
         "criteria": "Proposed tier then current-season start/appearance count; within-tier individual analysis pending.",
         "pool": 12
-      }
+      },
+      "starterEquivalent": true,
+      "starterEquivalentNote": "Back-up designation represents one nominal 11 tactical slot; current-season starts qualify this player as starter-equivalent. Reassess position distribution."
     },
     {
       "id": "laliga-200910-valencia-16",
@@ -7273,9 +7283,9 @@
       "name": "Jordi Codina",
       "nameOriginal": "Jordi Codina",
       "nameKo": "호르디 코디나",
-      "born": null,
-      "birthSource": null,
-      "birthAuditStatus": "DOB_pending_independent_biography_source",
+      "born": "1982-04-27",
+      "birthSource": "https://www.realmadrid.com/es-ES/el-club/historia/leyendas-futbol/jordi-codina-rodriguez",
+      "birthAuditStatus": "two_independent_public_birthdates_agree",
       "club": "getafe",
       "clubId": "getafe",
       "clubNameOriginal": "Getafe CF",
@@ -7313,7 +7323,11 @@
             "status": "outside_previous_archive_independent_lookup_pending"
           }
         ],
-        "biographySource": null
+        "biographySource": "https://www.realmadrid.com/es-ES/el-club/historia/leyendas-futbol/jordi-codina-rodriguez",
+        "birthSources": [
+          "https://www.realmadrid.com/es-ES/el-club/historia/leyendas-futbol/jordi-codina-rodriguez",
+          "https://www.premierleague.com/en/players/17911/jordi-codina/overview"
+        ]
       },
       "sources": [
         "https://www.bdfutbol.com/en/t/t2009-1016.html"
@@ -7543,9 +7557,9 @@
       "name": "Mané",
       "nameOriginal": "Mané",
       "nameKo": "호세 마누엘 마네",
-      "born": null,
-      "birthSource": null,
-      "birthAuditStatus": "DOB_pending_independent_biography_source",
+      "born": "1981-12-21",
+      "birthSource": "https://museo.getafe.es/omeka/files/original/Getafe_Capital_N_162_2009-07-09.pdf",
+      "birthAuditStatus": "two_independent_public_birthdates_agree",
       "club": "getafe",
       "clubId": "getafe",
       "clubNameOriginal": "Getafe CF",
@@ -7583,7 +7597,11 @@
             "status": "outside_previous_archive_independent_lookup_pending"
           }
         ],
-        "biographySource": null
+        "biographySource": "https://museo.getafe.es/omeka/files/original/Getafe_Capital_N_162_2009-07-09.pdf",
+        "birthSources": [
+          "https://museo.getafe.es/omeka/files/original/Getafe_Capital_N_162_2009-07-09.pdf",
+          "https://www.transfermarkt.com/mane/profil/spieler/51547"
+        ]
       },
       "sources": [
         "https://www.bdfutbol.com/en/t/t2009-1016.html"
@@ -7723,9 +7741,9 @@
       "name": "Derek Boateng",
       "nameOriginal": "Derek Boateng",
       "nameKo": "데렉 보아텡",
-      "born": null,
-      "birthSource": null,
-      "birthAuditStatus": "DOB_pending_independent_biography_source",
+      "born": "1983-05-02",
+      "birthSource": "https://www.skysports.com/football/player/17645/derek-boateng",
+      "birthAuditStatus": "two_independent_public_birthdates_agree",
       "club": "getafe",
       "clubId": "getafe",
       "clubNameOriginal": "Getafe CF",
@@ -7763,7 +7781,11 @@
             "status": "outside_previous_archive_independent_lookup_pending"
           }
         ],
-        "biographySource": null
+        "biographySource": "https://www.skysports.com/football/player/17645/derek-boateng",
+        "birthSources": [
+          "https://www.skysports.com/football/player/17645/derek-boateng",
+          "https://www.premierleague.com/en/players/8763/derek-boateng/matches"
+        ]
       },
       "sources": [
         "https://www.bdfutbol.com/en/t/t2009-1016.html"
@@ -7903,9 +7925,9 @@
       "name": "Dani Parejo",
       "nameOriginal": "Dani Parejo",
       "nameKo": "다니 파레호",
-      "born": null,
-      "birthSource": null,
-      "birthAuditStatus": "DOB_pending_independent_biography_source",
+      "born": "1989-04-16",
+      "birthSource": "https://www.realmadrid.com/es-ES/el-club/historia/leyendas-futbol/daniel-parejo-munoz",
+      "birthAuditStatus": "two_independent_public_birthdates_agree",
       "club": "getafe",
       "clubId": "getafe",
       "clubNameOriginal": "Getafe CF",
@@ -7943,7 +7965,11 @@
             "status": "outside_previous_archive_independent_lookup_pending"
           }
         ],
-        "biographySource": null
+        "biographySource": "https://www.realmadrid.com/es-ES/el-club/historia/leyendas-futbol/daniel-parejo-munoz",
+        "birthSources": [
+          "https://www.realmadrid.com/es-ES/el-club/historia/leyendas-futbol/daniel-parejo-munoz",
+          "https://www.skysports.com/football/player/2040/daniel-parejo"
+        ]
       },
       "sources": [
         "https://www.bdfutbol.com/en/t/t2009-1016.html"
@@ -8083,9 +8109,9 @@
       "name": "Pedro León",
       "nameOriginal": "Pedro León",
       "nameKo": "페드로 레온",
-      "born": null,
-      "birthSource": null,
-      "birthAuditStatus": "DOB_pending_independent_biography_source",
+      "born": "1986-11-24",
+      "birthSource": "https://www.realmadrid.com/es-ES/el-club/historia/leyendas-futbol/pedro-leon-sanchez-gil",
+      "birthAuditStatus": "single_public_biography_date_second_source_pending",
       "club": "getafe",
       "clubId": "getafe",
       "clubNameOriginal": "Getafe CF",
@@ -8123,7 +8149,10 @@
             "status": "outside_previous_archive_independent_lookup_pending"
           }
         ],
-        "biographySource": null
+        "biographySource": "https://www.realmadrid.com/es-ES/el-club/historia/leyendas-futbol/pedro-leon-sanchez-gil",
+        "birthSources": [
+          "https://www.realmadrid.com/es-ES/el-club/historia/leyendas-futbol/pedro-leon-sanchez-gil"
+        ]
       },
       "sources": [
         "https://www.bdfutbol.com/en/t/t2009-1016.html"
@@ -8526,7 +8555,9 @@
         "status": "provisional",
         "criteria": "Proposed tier then current-season start/appearance count; within-tier individual analysis pending.",
         "pool": 12
-      }
+      },
+      "starterEquivalent": true,
+      "starterEquivalentNote": "Back-up designation represents one nominal 11 tactical slot; current-season starts qualify this player as starter-equivalent. Reassess position distribution."
     },
     {
       "id": "laliga-200910-getafe-15",
@@ -8616,7 +8647,9 @@
         "status": "provisional",
         "criteria": "Proposed tier then current-season start/appearance count; within-tier individual analysis pending.",
         "pool": 14
-      }
+      },
+      "starterEquivalent": true,
+      "starterEquivalentNote": "Back-up designation represents one nominal 11 tactical slot; current-season starts qualify this player as starter-equivalent. Reassess position distribution."
     },
     {
       "id": "laliga-200910-getafe-16",
@@ -8803,9 +8836,9 @@
       "name": "Pedro Ríos",
       "nameOriginal": "Pedro Ríos",
       "nameKo": "페드로 리오스",
-      "born": null,
-      "birthSource": null,
-      "birthAuditStatus": "DOB_pending_independent_biography_source",
+      "born": "1981-12-12",
+      "birthSource": "https://www.transfermarkt.com/pedro-rios/profil/spieler/29187",
+      "birthAuditStatus": "single_public_biography_date_second_source_pending",
       "club": "getafe",
       "clubId": "getafe",
       "clubNameOriginal": "Getafe CF",
@@ -8843,7 +8876,10 @@
             "status": "outside_previous_archive_independent_lookup_pending"
           }
         ],
-        "biographySource": null
+        "biographySource": "https://www.transfermarkt.com/pedro-rios/profil/spieler/29187",
+        "birthSources": [
+          "https://www.transfermarkt.com/pedro-rios/profil/spieler/29187"
+        ]
       },
       "sources": [
         "https://www.bdfutbol.com/en/t/t2009-1016.html"
@@ -8893,9 +8929,9 @@
       "name": "Miku",
       "nameOriginal": "Miku",
       "nameKo": "미쿠",
-      "born": null,
-      "birthSource": null,
-      "birthAuditStatus": "DOB_pending_independent_biography_source",
+      "born": "1985-08-19",
+      "birthSource": "https://www.rayovallecano.es/noticias/miku-nuevo-jugador-del-rayo",
+      "birthAuditStatus": "single_public_biography_date_second_source_pending",
       "club": "getafe",
       "clubId": "getafe",
       "clubNameOriginal": "Getafe CF",
@@ -8933,7 +8969,10 @@
             "status": "outside_previous_archive_independent_lookup_pending"
           }
         ],
-        "biographySource": null
+        "biographySource": "https://www.rayovallecano.es/noticias/miku-nuevo-jugador-del-rayo",
+        "birthSources": [
+          "https://www.rayovallecano.es/noticias/miku-nuevo-jugador-del-rayo"
+        ]
       },
       "sources": [
         "https://www.bdfutbol.com/en/t/t2009-1016.html"
@@ -9793,9 +9832,9 @@
       "name": "Nilmar",
       "nameOriginal": "Nilmar",
       "nameKo": "니우마르",
-      "born": null,
-      "birthSource": null,
-      "birthAuditStatus": "DOB_pending_independent_biography_source",
+      "born": "1984-07-14",
+      "birthSource": "https://www.skysports.com/football/player/11691/nilmar",
+      "birthAuditStatus": "two_independent_public_birthdates_agree",
       "club": "villarreal",
       "clubId": "villarreal",
       "clubNameOriginal": "Villarreal CF",
@@ -9833,7 +9872,11 @@
             "status": "outside_previous_archive_independent_lookup_pending"
           }
         ],
-        "biographySource": null
+        "biographySource": "https://www.skysports.com/football/player/11691/nilmar",
+        "birthSources": [
+          "https://www.skysports.com/football/player/11691/nilmar",
+          "https://en.wikipedia.org/wiki/Nilmar"
+        ]
       },
       "sources": [
         "https://www.bdfutbol.com/en/t/t2009-1038.html"
@@ -9973,9 +10016,9 @@
       "name": "Iván Marcano",
       "nameOriginal": "Iván Marcano",
       "nameKo": "이반 마르카노",
-      "born": null,
-      "birthSource": null,
-      "birthAuditStatus": "DOB_pending_independent_biography_source",
+      "born": "1987-06-23",
+      "birthSource": "https://en.wikipedia.org/wiki/Iv%C3%A1n_Marcano",
+      "birthAuditStatus": "single_public_biography_date_second_source_pending",
       "club": "villarreal",
       "clubId": "villarreal",
       "clubNameOriginal": "Villarreal CF",
@@ -10013,7 +10056,10 @@
             "status": "outside_previous_archive_independent_lookup_pending"
           }
         ],
-        "biographySource": null
+        "biographySource": "https://en.wikipedia.org/wiki/Iv%C3%A1n_Marcano",
+        "birthSources": [
+          "https://en.wikipedia.org/wiki/Iv%C3%A1n_Marcano"
+        ]
       },
       "sources": [
         "https://www.bdfutbol.com/en/t/t2009-1038.html"
@@ -10423,9 +10469,9 @@
       "name": "David Fuster",
       "nameOriginal": "David Fuster",
       "nameKo": "다비드 푸스테르",
-      "born": null,
-      "birthSource": null,
-      "birthAuditStatus": "DOB_pending_independent_biography_source",
+      "born": "1982-02-03",
+      "birthSource": "https://www.skysports.com/football/player/55259/david-fuster",
+      "birthAuditStatus": "two_independent_public_birthdates_agree",
       "club": "villarreal",
       "clubId": "villarreal",
       "clubNameOriginal": "Villarreal CF",
@@ -10463,7 +10509,11 @@
             "status": "outside_previous_archive_independent_lookup_pending"
           }
         ],
-        "biographySource": null
+        "biographySource": "https://www.skysports.com/football/player/55259/david-fuster",
+        "birthSources": [
+          "https://www.skysports.com/football/player/55259/david-fuster",
+          "https://www.transfermarkt.com/david-fuster/profil/spieler/39003"
+        ]
       },
       "sources": [
         "https://www.bdfutbol.com/en/t/t2009-1038.html"
@@ -10596,7 +10646,9 @@
         "status": "provisional",
         "criteria": "Proposed tier then current-season start/appearance count; within-tier individual analysis pending.",
         "pool": 17
-      }
+      },
+      "starterEquivalent": true,
+      "starterEquivalentNote": "Back-up designation represents one nominal 11 tactical slot; current-season starts qualify this player as starter-equivalent. Reassess position distribution."
     },
     {
       "id": "laliga-200910-atleti-01",
@@ -11856,7 +11908,9 @@
         "status": "provisional",
         "criteria": "Proposed tier then current-season start/appearance count; within-tier individual analysis pending.",
         "pool": 12
-      }
+      },
+      "starterEquivalent": true,
+      "starterEquivalentNote": "Back-up designation represents one nominal 11 tactical slot; current-season starts qualify this player as starter-equivalent. Reassess position distribution."
     },
     {
       "id": "laliga-200910-atleti-15",
