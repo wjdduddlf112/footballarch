@@ -1,3 +1,12 @@
+## 2026-11-04 — La Liga 2008-09 new 129-person source-led DRAFT (not independently historical complete)
+
+- Scoped to 2008-09 only, after direct user authorization. Seven actual 2009-10 UEFA entrants checked by UEFA: Barcelona, Real Madrid, Sevilla, Atlético (UCL); Villarreal, Valencia, Athletic (UEL; Copa losing finalist). Deportivo seventh excluded.
+- New BDFutbol 2008-09 league lineup and substitute data organized into 129 **provisional** player records, 77 nominal tactical starters and 52 substitutes, full DRAFT tiers and within-position ranks, proposed 4-4-2 XI, team-by-team source links.
+- 129 DOB ISO dates now populated: 41 newly sourced, 88 from preceding DRAFT. Of 129, 16 Barcelona two independent sources agree; 3 others two-public-source match; 3 official/squad source conflicts documented; 35 one source, 72 previous DRAFT only; 107 lack two-source confirmation. Predominant on-field positions, recency-weighted independent earlier two-season personal play quality and most common league formation NOT validated.
+- Draft branch `draft/laliga-2008-09-source-led-20261104`; files: `data/laliga-2008-09.json`, `audit/LALIGA_2008_09_SOURCE_DRAFT_2026-11-04.md`, corresponding test scripts / PR CI.
+- Player selection, grades, XI remain not user-approved. Branch CI proves JSON/DOM conditions only when green; does not verify historical facts, and PR branch is not GitHub Pages production.
+- Stop after 2008-09; do not start 2009-10 without explicit permission.
+
 ## 2026-11-03 production GitHub Pages verification (La Liga 2007-08)
 
 - The 154-player unapproved DRAFT season merged to `main` via PR #38 (squash commit `ce4b3908fc3b512be562a44b6312a959a5a8440d`).
