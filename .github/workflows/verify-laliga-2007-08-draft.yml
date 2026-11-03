@@ -26,3 +26,15 @@ jobs:
         run: node scripts/verify-laliga-2007-08-draft.mjs
       - name: Run La Liga historical standings verifier
         run: node scripts/verify-laliga.mjs
+      - name: Probe original historical data sources (network, non-gating)
+        run: |
+          for u in \
+            'https://www.bdfutbol.com/en/t/t2007-082.html' \
+            'https://fbref.com/en/comps/12/2007-2008/stats/2007-2008-La-Liga-Stats' \
+            'https://fbref.com/en/comps/12/2006-2007/stats/2006-2007-La-Liga-Stats' \
+            'https://fbref.com/en/comps/12/2005-2006/stats/2005-2006-La-Liga-Stats'; do
+            echo "Testing $u"
+            curl -L -s -o /tmp/sourceprobe.html -w 'HTTP %{http_code}, bytes %{size_download}\\n' --max-time 12 --user-agent 'Mozilla/5.0 (compatible; HistoricalResearchBot/1.0)' "$u" || true
+            head -c 80 /tmp/sourceprobe.html || true
+            echo
+          done
