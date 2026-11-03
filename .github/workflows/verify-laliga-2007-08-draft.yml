@@ -5,6 +5,7 @@ on:
       - 'data/laliga-2007-08.json'
       - 'scripts/verify-laliga-2007-08-draft.mjs'
       - '.github/workflows/verify-laliga-2007-08-draft.yml'
+      - 'scripts/verify-laliga-2007-08-browser.mjs'
   push:
     branches:
       - 'draft/laliga-2007-08-researched-20261103'
@@ -38,3 +39,27 @@ jobs:
             head -c 80 /tmp/sourceprobe.html || true
             echo
           done
+
+  browser:
+    name: Browser UI (Chromium)
+    runs-on: ubuntu-latest
+    needs: verify
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install Playwright
+        run: |
+          npm install --no-save playwright@1.58.2
+          npx playwright install --with-deps chromium
+      - name: Open and verify all five site tabs in Chromium
+        run: node scripts/verify-laliga-2007-08-browser.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: laliga-2007-08-ui-screenshots
+          path: /tmp/laliga-2007-08-*.png
+          if-no-files-found: ignore
