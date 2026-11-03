@@ -103,7 +103,7 @@
           ]
         }
       ],
-      "birthdayMissingCount": 35,
+      "birthdayMissingCount": 0,
       "priorTwoSeasonAudit": "previous_DRAFT_pointer_not_independent_verification",
       "primaryPositionAudit": "tentative_tactical_roles_matchwise_proof_missing",
       "tierStatus": "all_proposed_unapproved",
@@ -116,7 +116,31 @@
         "Athletic Toquero secondary forward alongside Llorente, even though composite XI is 4-2-3-1",
         "Real Madrid Higuaín 16 league starts and 10 goals despite injury, backup not qualitatively penalized for all time",
         "Player histories in earlier season archives are DRAFT only; do not equate structural checks with factual 3-season proof"
-      ]
+      ],
+      "dobKnownUnresolvedConflicts": [
+        {
+          "name": "Éric Abidal",
+          "official": "1979-09-11",
+          "footballsquads": "1979-07-11",
+          "retained": "1979-09-11"
+        },
+        {
+          "name": "Adriano Correia",
+          "officialFCB2012_13": "1984-10-20",
+          "footballsquads": "1984-10-26",
+          "retained": "1984-10-26"
+        }
+      ],
+      "dateRosterSources": {
+        "barca": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/barce.htm",
+        "madrid": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/rmadrid.htm",
+        "valencia": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/valencia.htm",
+        "villarreal": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/villar.htm",
+        "sevilla": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/sevilla.htm",
+        "athletic": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/abilbao.htm",
+        "atleti": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/amadrid.htm"
+      },
+      "dobEvidenceState": "127 of 127 DOB values entered; 35 newly sourced, 92 previous DRAFT dates not automatically independent, two explicit FCB/FootballSquads conflicts unresolved, double-source requirement not satisfied."
     }
   },
   "clubs": [
@@ -858,9 +882,9 @@
       "name": "Gabriel Milito",
       "nameOriginal": "Gabriel Milito",
       "nameKo": "가브리엘 밀리토",
-      "born": null,
-      "birthSource": null,
-      "birthAuditStatus": "DOB_missing_public_biography_pending",
+      "born": "1980-09-07",
+      "birthSource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/barce.htm",
+      "birthAuditStatus": "2010_11_historical_roster_or_named_profile_single_source_verified_DRAFT_not_two_source",
       "club": "barca",
       "clubId": "barca",
       "clubNameOriginal": "FC Barcelona",
@@ -898,7 +922,7 @@
             "status": "historical_independent_lookup_pending"
           }
         ],
-        "biographySource": null,
+        "biographySource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/barce.htm",
         "startsSourceColumn": "SM",
         "appearancesSourceColumn": "PM",
         "goalsSourceColumn": "G"
@@ -953,7 +977,7 @@
       "nameKo": "에리크 아비달",
       "born": "1979-09-11",
       "birthSource": null,
-      "birthAuditStatus": "unverified_previous_DRAFT_date_carryover",
+      "birthAuditStatus": "dob_conflict_official_fcb_sept11_footballsquads_july11",
       "club": "barca",
       "clubId": "barca",
       "clubNameOriginal": "FC Barcelona",
@@ -994,7 +1018,15 @@
         "biographySource": null,
         "startsSourceColumn": "SM",
         "appearancesSourceColumn": "PM",
-        "goalsSourceColumn": "G"
+        "goalsSourceColumn": "G",
+        "birthDateConflict": {
+          "archiveOfficialISO": "1979-09-11",
+          "official": "https://www.fcbarcelona.com/en/football/barca-legends/jugadores/1053733/abidal",
+          "footballSquadsISO": "1979-07-11",
+          "footballSquads": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/barce.htm",
+          "classification": "UNRESOLVED_SOURCE_CONFLICT",
+          "note": "Club 2007-08 / 2009-10 annuals and official FCB Legends agree September 11; independent FootballSquads lists July 11."
+        }
       },
       "sources": [
         "https://www.bdfutbol.com/en/t/t2010-111.html"
@@ -1232,7 +1264,7 @@
       "nameKo": "아드리아누 코헤이아",
       "born": "1984-10-26",
       "birthSource": null,
-      "birthAuditStatus": "unverified_previous_DRAFT_date_carryover",
+      "birthAuditStatus": "dob_conflict_fcb_archive_footballsquads_date",
       "club": "barca",
       "clubId": "barca",
       "clubNameOriginal": "FC Barcelona",
@@ -1273,7 +1305,14 @@
         "biographySource": null,
         "startsSourceColumn": "SM",
         "appearancesSourceColumn": "PM",
-        "goalsSourceColumn": "G"
+        "goalsSourceColumn": "G",
+        "birthDateConflict": {
+          "previousArchiveISO": "1984-10-26",
+          "footballsquadsISO": "1984-10-26",
+          "fcbOfficial2012_13ISO": "1984-10-20",
+          "fcbDocument": "https://media4.fcbarcelona.com/media/asset_publics/resources/000/069/797/original/MEMORIA_CLUB_12_13_CASTELLANO_baixa.v1381154186.pdf",
+          "status": "UNRESOLVED_SOURCE_CONFLICT"
+        }
       },
       "sources": [
         "https://www.bdfutbol.com/en/t/t2010-111.html"
@@ -1416,9 +1455,9 @@
       "name": "Javier Mascherano",
       "nameOriginal": "Javier Mascherano",
       "nameKo": "하비에르 마스체라노",
-      "born": null,
-      "birthSource": null,
-      "birthAuditStatus": "DOB_missing_public_biography_pending",
+      "born": "1984-06-08",
+      "birthSource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/barce.htm",
+      "birthAuditStatus": "2010_11_historical_roster_or_named_profile_single_source_verified_DRAFT_not_two_source",
       "club": "barca",
       "clubId": "barca",
       "clubNameOriginal": "FC Barcelona",
@@ -1456,7 +1495,7 @@
             "status": "historical_independent_lookup_pending"
           }
         ],
-        "biographySource": null,
+        "biographySource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/barce.htm",
         "startsSourceColumn": "SM",
         "appearancesSourceColumn": "PM",
         "goalsSourceColumn": "G"
@@ -1974,9 +2013,9 @@
       "name": "Ibrahim Afellay",
       "nameOriginal": "Ibrahim Afellay",
       "nameKo": "이브라힘 아펠라이",
-      "born": null,
-      "birthSource": null,
-      "birthAuditStatus": "DOB_missing_public_biography_pending",
+      "born": "1986-04-02",
+      "birthSource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/barce.htm",
+      "birthAuditStatus": "2010_11_historical_roster_or_named_profile_single_source_verified_DRAFT_not_two_source",
       "club": "barca",
       "clubId": "barca",
       "clubNameOriginal": "FC Barcelona",
@@ -2014,7 +2053,7 @@
             "status": "historical_independent_lookup_pending"
           }
         ],
-        "biographySource": null,
+        "biographySource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/barce.htm",
         "startsSourceColumn": "SM",
         "appearancesSourceColumn": "PM",
         "goalsSourceColumn": "G"
@@ -2346,9 +2385,9 @@
       "name": "Antonio Adán",
       "nameOriginal": "Antonio Adán",
       "nameKo": "안토니오 아단",
-      "born": null,
-      "birthSource": null,
-      "birthAuditStatus": "DOB_missing_public_biography_pending",
+      "born": "1987-05-13",
+      "birthSource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/rmadrid.htm",
+      "birthAuditStatus": "2010_11_historical_roster_or_named_profile_single_source_verified_DRAFT_not_two_source",
       "club": "madrid",
       "clubId": "madrid",
       "clubNameOriginal": "Real Madrid CF",
@@ -2386,7 +2425,7 @@
             "status": "historical_independent_lookup_pending"
           }
         ],
-        "biographySource": null,
+        "biographySource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/rmadrid.htm",
         "startsSourceColumn": "SM",
         "appearancesSourceColumn": "PM",
         "goalsSourceColumn": "G"
@@ -2439,9 +2478,9 @@
       "name": "Ricardo Carvalho",
       "nameOriginal": "Ricardo Carvalho",
       "nameKo": "히카르두 카르발류",
-      "born": null,
-      "birthSource": null,
-      "birthAuditStatus": "DOB_missing_public_biography_pending",
+      "born": "1978-05-18",
+      "birthSource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/rmadrid.htm",
+      "birthAuditStatus": "2010_11_historical_roster_or_named_profile_single_source_verified_DRAFT_not_two_source",
       "club": "madrid",
       "clubId": "madrid",
       "clubNameOriginal": "Real Madrid CF",
@@ -2479,7 +2518,7 @@
             "status": "historical_independent_lookup_pending"
           }
         ],
-        "biographySource": null,
+        "biographySource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/rmadrid.htm",
         "startsSourceColumn": "SM",
         "appearancesSourceColumn": "PM",
         "goalsSourceColumn": "G"
@@ -3183,9 +3222,9 @@
       "name": "Sami Khedira",
       "nameOriginal": "Sami Khedira",
       "nameKo": "사미 케디라",
-      "born": null,
-      "birthSource": null,
-      "birthAuditStatus": "DOB_missing_public_biography_pending",
+      "born": "1987-04-04",
+      "birthSource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/rmadrid.htm",
+      "birthAuditStatus": "2010_11_historical_roster_or_named_profile_single_source_verified_DRAFT_not_two_source",
       "club": "madrid",
       "clubId": "madrid",
       "clubNameOriginal": "Real Madrid CF",
@@ -3223,7 +3262,7 @@
             "status": "historical_independent_lookup_pending"
           }
         ],
-        "biographySource": null,
+        "biographySource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/rmadrid.htm",
         "startsSourceColumn": "SM",
         "appearancesSourceColumn": "PM",
         "goalsSourceColumn": "G"
@@ -3369,9 +3408,9 @@
       "name": "Mesut Özil",
       "nameOriginal": "Mesut Özil",
       "nameKo": "메수트 외질",
-      "born": null,
-      "birthSource": null,
-      "birthAuditStatus": "DOB_missing_public_biography_pending",
+      "born": "1988-10-15",
+      "birthSource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/rmadrid.htm",
+      "birthAuditStatus": "2010_11_historical_roster_or_named_profile_single_source_verified_DRAFT_not_two_source",
       "club": "madrid",
       "clubId": "madrid",
       "clubNameOriginal": "Real Madrid CF",
@@ -3409,7 +3448,7 @@
             "status": "historical_independent_lookup_pending"
           }
         ],
-        "biographySource": null,
+        "biographySource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/rmadrid.htm",
         "startsSourceColumn": "SM",
         "appearancesSourceColumn": "PM",
         "goalsSourceColumn": "G"
@@ -3648,9 +3687,9 @@
       "name": "Ángel Di María",
       "nameOriginal": "Ángel Di María",
       "nameKo": "앙헬 디 마리아",
-      "born": null,
-      "birthSource": null,
-      "birthAuditStatus": "DOB_missing_public_biography_pending",
+      "born": "1988-02-14",
+      "birthSource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/rmadrid.htm",
+      "birthAuditStatus": "2010_11_historical_roster_or_named_profile_single_source_verified_DRAFT_not_two_source",
       "club": "madrid",
       "clubId": "madrid",
       "clubNameOriginal": "Real Madrid CF",
@@ -3688,7 +3727,7 @@
             "status": "historical_independent_lookup_pending"
           }
         ],
-        "biographySource": null,
+        "biographySource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/rmadrid.htm",
         "startsSourceColumn": "SM",
         "appearancesSourceColumn": "PM",
         "goalsSourceColumn": "G"
@@ -3927,9 +3966,9 @@
       "name": "Vicente Guaita",
       "nameOriginal": "Vicente Guaita",
       "nameKo": "비센테 과이타",
-      "born": null,
-      "birthSource": null,
-      "birthAuditStatus": "DOB_missing_public_biography_pending",
+      "born": "1987-02-18",
+      "birthSource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/valencia.htm",
+      "birthAuditStatus": "2010_11_historical_roster_or_named_profile_single_source_verified_DRAFT_not_two_source",
       "club": "valencia",
       "clubId": "valencia",
       "clubNameOriginal": "Valencia CF",
@@ -3967,7 +4006,7 @@
             "status": "historical_independent_lookup_pending"
           }
         ],
-        "biographySource": null,
+        "biographySource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/valencia.htm",
         "startsSourceColumn": "SM",
         "appearancesSourceColumn": "PM",
         "goalsSourceColumn": "G"
@@ -4113,9 +4152,9 @@
       "name": "Ricardo Costa",
       "nameOriginal": "Ricardo Costa",
       "nameKo": "히카르두 코스타",
-      "born": null,
-      "birthSource": null,
-      "birthAuditStatus": "DOB_missing_public_biography_pending",
+      "born": "1981-05-16",
+      "birthSource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/valencia.htm",
+      "birthAuditStatus": "2010_11_historical_roster_or_named_profile_single_source_verified_DRAFT_not_two_source",
       "club": "valencia",
       "clubId": "valencia",
       "clubNameOriginal": "Valencia CF",
@@ -4153,7 +4192,7 @@
             "status": "historical_independent_lookup_pending"
           }
         ],
-        "biographySource": null,
+        "biographySource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/valencia.htm",
         "startsSourceColumn": "SM",
         "appearancesSourceColumn": "PM",
         "goalsSourceColumn": "G"
@@ -4206,9 +4245,9 @@
       "name": "Marius Stankevičius",
       "nameOriginal": "Marius Stankevičius",
       "nameKo": "마리우스 스탄케비치우스",
-      "born": null,
-      "birthSource": null,
-      "birthAuditStatus": "DOB_missing_public_biography_pending",
+      "born": "1981-07-15",
+      "birthSource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/valencia.htm",
+      "birthAuditStatus": "2010_11_historical_roster_or_named_profile_single_source_verified_DRAFT_not_two_source",
       "club": "valencia",
       "clubId": "valencia",
       "clubNameOriginal": "Valencia CF",
@@ -4246,7 +4285,7 @@
             "status": "historical_independent_lookup_pending"
           }
         ],
-        "biographySource": null,
+        "biographySource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/valencia.htm",
         "startsSourceColumn": "SM",
         "appearancesSourceColumn": "PM",
         "goalsSourceColumn": "G"
@@ -4764,9 +4803,9 @@
       "name": "Mehmet Topal",
       "nameOriginal": "Mehmet Topal",
       "nameKo": "메흐메트 토팔",
-      "born": null,
-      "birthSource": null,
-      "birthAuditStatus": "DOB_missing_public_biography_pending",
+      "born": "1986-03-03",
+      "birthSource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/valencia.htm",
+      "birthAuditStatus": "2010_11_historical_roster_or_named_profile_single_source_verified_DRAFT_not_two_source",
       "club": "valencia",
       "clubId": "valencia",
       "clubNameOriginal": "Valencia CF",
@@ -4804,7 +4843,7 @@
             "status": "historical_independent_lookup_pending"
           }
         ],
-        "biographySource": null,
+        "biographySource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/valencia.htm",
         "startsSourceColumn": "SM",
         "appearancesSourceColumn": "PM",
         "goalsSourceColumn": "G"
@@ -5043,9 +5082,9 @@
       "name": "Tino Costa",
       "nameOriginal": "Tino Costa",
       "nameKo": "티노 코스타",
-      "born": null,
-      "birthSource": null,
-      "birthAuditStatus": "DOB_missing_public_biography_pending",
+      "born": "1985-01-09",
+      "birthSource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/valencia.htm",
+      "birthAuditStatus": "2010_11_historical_roster_or_named_profile_single_source_verified_DRAFT_not_two_source",
       "club": "valencia",
       "clubId": "valencia",
       "clubNameOriginal": "Valencia CF",
@@ -5083,7 +5122,7 @@
             "status": "historical_independent_lookup_pending"
           }
         ],
-        "biographySource": null,
+        "biographySource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/valencia.htm",
         "startsSourceColumn": "SM",
         "appearancesSourceColumn": "PM",
         "goalsSourceColumn": "G"
@@ -5694,9 +5733,9 @@
       "name": "Aritz Aduriz",
       "nameOriginal": "Aritz Aduriz",
       "nameKo": "아리츠 아두리스",
-      "born": null,
-      "birthSource": null,
-      "birthAuditStatus": "DOB_missing_public_biography_pending",
+      "born": "1981-02-11",
+      "birthSource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/valencia.htm",
+      "birthAuditStatus": "2010_11_historical_roster_or_named_profile_single_source_verified_DRAFT_not_two_source",
       "club": "valencia",
       "clubId": "valencia",
       "clubNameOriginal": "Valencia CF",
@@ -5734,7 +5773,7 @@
             "status": "historical_independent_lookup_pending"
           }
         ],
-        "biographySource": null,
+        "biographySource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/valencia.htm",
         "startsSourceColumn": "SM",
         "appearancesSourceColumn": "PM",
         "goalsSourceColumn": "G"
@@ -5880,9 +5919,9 @@
       "name": "Mateo Musacchio",
       "nameOriginal": "Mateo Musacchio",
       "nameKo": "마테오 무사키오",
-      "born": null,
-      "birthSource": null,
-      "birthAuditStatus": "DOB_missing_public_biography_pending",
+      "born": "1990-08-26",
+      "birthSource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/villar.htm",
+      "birthAuditStatus": "2010_11_historical_roster_or_named_profile_single_source_verified_DRAFT_not_two_source",
       "club": "villarreal",
       "clubId": "villarreal",
       "clubNameOriginal": "Villarreal CF",
@@ -5920,7 +5959,7 @@
             "status": "historical_independent_lookup_pending"
           }
         ],
-        "biographySource": null,
+        "biographySource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/villar.htm",
         "startsSourceColumn": "SM",
         "appearancesSourceColumn": "PM",
         "goalsSourceColumn": "G"
@@ -6252,9 +6291,9 @@
       "name": "José Manuel Catalá",
       "nameOriginal": "José Manuel Catalá",
       "nameKo": "호세 마누엘 카탈라",
-      "born": null,
-      "birthSource": null,
-      "birthAuditStatus": "DOB_missing_public_biography_pending",
+      "born": "1984-12-31",
+      "birthSource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/villar.htm",
+      "birthAuditStatus": "2010_11_historical_roster_or_named_profile_single_source_verified_DRAFT_not_two_source",
       "club": "villarreal",
       "clubId": "villarreal",
       "clubNameOriginal": "Villarreal CF",
@@ -6292,7 +6331,7 @@
             "status": "historical_independent_lookup_pending"
           }
         ],
-        "biographySource": null,
+        "biographySource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/villar.htm",
         "startsSourceColumn": "SM",
         "appearancesSourceColumn": "PM",
         "goalsSourceColumn": "G"
@@ -6345,9 +6384,9 @@
       "name": "Mario Gaspar",
       "nameOriginal": "Mario Gaspar",
       "nameKo": "마리오 가스파르",
-      "born": null,
-      "birthSource": null,
-      "birthAuditStatus": "DOB_missing_public_biography_pending",
+      "born": "1990-11-24",
+      "birthSource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/villar.htm",
+      "birthAuditStatus": "2010_11_historical_roster_or_named_profile_single_source_verified_DRAFT_not_two_source",
       "club": "villarreal",
       "clubId": "villarreal",
       "clubNameOriginal": "Villarreal CF",
@@ -6385,7 +6424,7 @@
             "status": "historical_independent_lookup_pending"
           }
         ],
-        "biographySource": null,
+        "biographySource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/villar.htm",
         "startsSourceColumn": "SM",
         "appearancesSourceColumn": "PM",
         "goalsSourceColumn": "G"
@@ -6717,9 +6756,9 @@
       "name": "Borja Valero",
       "nameOriginal": "Borja Valero",
       "nameKo": "보르하 발레로",
-      "born": null,
-      "birthSource": null,
-      "birthAuditStatus": "DOB_missing_public_biography_pending",
+      "born": "1985-01-12",
+      "birthSource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/villar.htm",
+      "birthAuditStatus": "2010_11_historical_roster_or_named_profile_single_source_verified_DRAFT_not_two_source",
       "club": "villarreal",
       "clubId": "villarreal",
       "clubNameOriginal": "Villarreal CF",
@@ -6757,7 +6796,7 @@
             "status": "historical_independent_lookup_pending"
           }
         ],
-        "biographySource": null,
+        "biographySource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/villar.htm",
         "startsSourceColumn": "SM",
         "appearancesSourceColumn": "PM",
         "goalsSourceColumn": "G"
@@ -7182,9 +7221,9 @@
       "name": "Marco Ruben",
       "nameOriginal": "Marco Ruben",
       "nameKo": "마르코 루벤",
-      "born": null,
-      "birthSource": null,
-      "birthAuditStatus": "DOB_missing_public_biography_pending",
+      "born": "1986-10-26",
+      "birthSource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/villar.htm",
+      "birthAuditStatus": "2010_11_historical_roster_or_named_profile_single_source_verified_DRAFT_not_two_source",
       "club": "villarreal",
       "clubId": "villarreal",
       "clubNameOriginal": "Villarreal CF",
@@ -7222,7 +7261,7 @@
             "status": "historical_independent_lookup_pending"
           }
         ],
-        "biographySource": null,
+        "biographySource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/villar.htm",
         "startsSourceColumn": "SM",
         "appearancesSourceColumn": "PM",
         "goalsSourceColumn": "G"
@@ -7554,9 +7593,9 @@
       "name": "Martín Cáceres",
       "nameOriginal": "Martín Cáceres",
       "nameKo": "마르틴 카세레스",
-      "born": null,
-      "birthSource": null,
-      "birthAuditStatus": "DOB_missing_public_biography_pending",
+      "born": "1987-04-07",
+      "birthSource": "https://www.transfermarkt.com/martin-caceres/profil/spieler/54935",
+      "birthAuditStatus": "2010_11_historical_roster_or_named_profile_single_source_verified_DRAFT_not_two_source",
       "club": "sevilla",
       "clubId": "sevilla",
       "clubNameOriginal": "Sevilla FC",
@@ -7594,7 +7633,7 @@
             "status": "historical_independent_lookup_pending"
           }
         ],
-        "biographySource": null,
+        "biographySource": "https://www.transfermarkt.com/martin-caceres/profil/spieler/54935",
         "startsSourceColumn": "SM",
         "appearancesSourceColumn": "PM",
         "goalsSourceColumn": "G"
@@ -7833,9 +7872,9 @@
       "name": "Mouhamadou Dabo",
       "nameOriginal": "Mouhamadou Dabo",
       "nameKo": "무아마두 다보",
-      "born": null,
-      "birthSource": null,
-      "birthAuditStatus": "DOB_missing_public_biography_pending",
+      "born": "1986-11-28",
+      "birthSource": "https://www.skysports.com/football/player/4916/mouhamadou-dabo",
+      "birthAuditStatus": "2010_11_historical_roster_or_named_profile_single_source_verified_DRAFT_not_two_source",
       "club": "sevilla",
       "clubId": "sevilla",
       "clubNameOriginal": "Sevilla FC",
@@ -7873,7 +7912,7 @@
             "status": "historical_independent_lookup_pending"
           }
         ],
-        "biographySource": null,
+        "biographySource": "https://www.skysports.com/football/player/4916/mouhamadou-dabo",
         "startsSourceColumn": "SM",
         "appearancesSourceColumn": "PM",
         "goalsSourceColumn": "G"
@@ -8112,9 +8151,9 @@
       "name": "Gary Medel",
       "nameOriginal": "Gary Medel",
       "nameKo": "가리 메델",
-      "born": null,
-      "birthSource": null,
-      "birthAuditStatus": "DOB_missing_public_biography_pending",
+      "born": "1987-08-03",
+      "birthSource": "https://www.skysports.com/football/player/11421/gary-medel",
+      "birthAuditStatus": "2010_11_historical_roster_or_named_profile_single_source_verified_DRAFT_not_two_source",
       "club": "sevilla",
       "clubId": "sevilla",
       "clubNameOriginal": "Sevilla FC",
@@ -8152,7 +8191,7 @@
             "status": "historical_independent_lookup_pending"
           }
         ],
-        "biographySource": null,
+        "biographySource": "https://www.skysports.com/football/player/11421/gary-medel",
         "startsSourceColumn": "SM",
         "appearancesSourceColumn": "PM",
         "goalsSourceColumn": "G"
@@ -8298,9 +8337,9 @@
       "name": "Ivan Rakitić",
       "nameOriginal": "Ivan Rakitić",
       "nameKo": "이반 라키티치",
-      "born": null,
-      "birthSource": null,
-      "birthAuditStatus": "DOB_missing_public_biography_pending",
+      "born": "1988-03-10",
+      "birthSource": "https://www.uefa.com/uefachampionsleague/clubs/players/97497--ivan-rakitic/",
+      "birthAuditStatus": "2010_11_historical_roster_or_named_profile_single_source_verified_DRAFT_not_two_source",
       "club": "sevilla",
       "clubId": "sevilla",
       "clubNameOriginal": "Sevilla FC",
@@ -8338,7 +8377,7 @@
             "status": "historical_independent_lookup_pending"
           }
         ],
-        "biographySource": null,
+        "biographySource": "https://www.uefa.com/uefachampionsleague/clubs/players/97497--ivan-rakitic/",
         "startsSourceColumn": "SM",
         "appearancesSourceColumn": "PM",
         "goalsSourceColumn": "G"
@@ -8670,9 +8709,9 @@
       "name": "Alejandro Alfaro",
       "nameOriginal": "Alejandro Alfaro",
       "nameKo": "알레한드로 알파로",
-      "born": null,
-      "birthSource": null,
-      "birthAuditStatus": "DOB_missing_public_biography_pending",
+      "born": "1986-11-23",
+      "birthSource": "https://www.skysports.com/football/player/74218/alejandro-alfaro",
+      "birthAuditStatus": "2010_11_historical_roster_or_named_profile_single_source_verified_DRAFT_not_two_source",
       "club": "sevilla",
       "clubId": "sevilla",
       "clubNameOriginal": "Sevilla FC",
@@ -8710,7 +8749,7 @@
             "status": "historical_independent_lookup_pending"
           }
         ],
-        "biographySource": null,
+        "biographySource": "https://www.skysports.com/football/player/74218/alejandro-alfaro",
         "startsSourceColumn": "SM",
         "appearancesSourceColumn": "PM",
         "goalsSourceColumn": "G"
@@ -9135,9 +9174,9 @@
       "name": "Mikel San José",
       "nameOriginal": "Mikel San José",
       "nameKo": "미켈 산호세",
-      "born": null,
-      "birthSource": null,
-      "birthAuditStatus": "DOB_missing_public_biography_pending",
+      "born": "1989-05-30",
+      "birthSource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/abilbao.htm",
+      "birthAuditStatus": "2010_11_historical_roster_or_named_profile_single_source_verified_DRAFT_not_two_source",
       "club": "athletic",
       "clubId": "athletic",
       "clubNameOriginal": "Athletic Club",
@@ -9175,7 +9214,7 @@
             "status": "historical_independent_lookup_pending"
           }
         ],
-        "biographySource": null,
+        "biographySource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/abilbao.htm",
         "startsSourceColumn": "SM",
         "appearancesSourceColumn": "PM",
         "goalsSourceColumn": "G"
@@ -9228,9 +9267,9 @@
       "name": "Borja Ekiza",
       "nameOriginal": "Borja Ekiza",
       "nameKo": "보르하 에키사",
-      "born": null,
-      "birthSource": null,
-      "birthAuditStatus": "DOB_missing_public_biography_pending",
+      "born": "1988-03-06",
+      "birthSource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/abilbao.htm",
+      "birthAuditStatus": "2010_11_historical_roster_or_named_profile_single_source_verified_DRAFT_not_two_source",
       "club": "athletic",
       "clubId": "athletic",
       "clubNameOriginal": "Athletic Club",
@@ -9268,7 +9307,7 @@
             "status": "historical_independent_lookup_pending"
           }
         ],
-        "biographySource": null,
+        "biographySource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/abilbao.htm",
         "startsSourceColumn": "SM",
         "appearancesSourceColumn": "PM",
         "goalsSourceColumn": "G"
@@ -9507,9 +9546,9 @@
       "name": "Xabier Castillo",
       "nameOriginal": "Xabier Castillo",
       "nameKo": "하비에르 카스티요",
-      "born": null,
-      "birthSource": null,
-      "birthAuditStatus": "DOB_missing_public_biography_pending",
+      "born": "1986-03-29",
+      "birthSource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/abilbao.htm",
+      "birthAuditStatus": "2010_11_historical_roster_or_named_profile_single_source_verified_DRAFT_not_two_source",
       "club": "athletic",
       "clubId": "athletic",
       "clubNameOriginal": "Athletic Club",
@@ -9547,7 +9586,7 @@
             "status": "historical_independent_lookup_pending"
           }
         ],
-        "biographySource": null,
+        "biographySource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/abilbao.htm",
         "startsSourceColumn": "SM",
         "appearancesSourceColumn": "PM",
         "goalsSourceColumn": "G"
@@ -9972,9 +10011,9 @@
       "name": "Ander Iturraspe",
       "nameOriginal": "Ander Iturraspe",
       "nameKo": "안데르 이투라스페",
-      "born": null,
-      "birthSource": null,
-      "birthAuditStatus": "DOB_missing_public_biography_pending",
+      "born": "1989-03-08",
+      "birthSource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/abilbao.htm",
+      "birthAuditStatus": "2010_11_historical_roster_or_named_profile_single_source_verified_DRAFT_not_two_source",
       "club": "athletic",
       "clubId": "athletic",
       "clubNameOriginal": "Athletic Club",
@@ -10012,7 +10051,7 @@
             "status": "historical_independent_lookup_pending"
           }
         ],
-        "biographySource": null,
+        "biographySource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/abilbao.htm",
         "startsSourceColumn": "SM",
         "appearancesSourceColumn": "PM",
         "goalsSourceColumn": "G"
@@ -10065,9 +10104,9 @@
       "name": "Iker Muniain",
       "nameOriginal": "Iker Muniain",
       "nameKo": "이케르 무니아인",
-      "born": null,
-      "birthSource": null,
-      "birthAuditStatus": "DOB_missing_public_biography_pending",
+      "born": "1992-12-19",
+      "birthSource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/abilbao.htm",
+      "birthAuditStatus": "2010_11_historical_roster_or_named_profile_single_source_verified_DRAFT_not_two_source",
       "club": "athletic",
       "clubId": "athletic",
       "clubNameOriginal": "Athletic Club",
@@ -10105,7 +10144,7 @@
             "status": "historical_independent_lookup_pending"
           }
         ],
-        "biographySource": null,
+        "biographySource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/abilbao.htm",
         "startsSourceColumn": "SM",
         "appearancesSourceColumn": "PM",
         "goalsSourceColumn": "G"
@@ -10995,9 +11034,9 @@
       "name": "Filipe Luís",
       "nameOriginal": "Filipe Luís",
       "nameKo": "필리피 루이스",
-      "born": null,
-      "birthSource": null,
-      "birthAuditStatus": "DOB_missing_public_biography_pending",
+      "born": "1985-08-09",
+      "birthSource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/amadrid.htm",
+      "birthAuditStatus": "2010_11_historical_roster_or_named_profile_single_source_verified_DRAFT_not_two_source",
       "club": "atleti",
       "clubId": "atleti",
       "clubNameOriginal": "Club Atlético de Madrid",
@@ -11035,7 +11074,7 @@
             "status": "historical_independent_lookup_pending"
           }
         ],
-        "biographySource": null,
+        "biographySource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/amadrid.htm",
         "startsSourceColumn": "SM",
         "appearancesSourceColumn": "PM",
         "goalsSourceColumn": "G"
@@ -11460,9 +11499,9 @@
       "name": "Mario Suárez",
       "nameOriginal": "Mario Suárez",
       "nameKo": "마리오 수아레스",
-      "born": null,
-      "birthSource": null,
-      "birthAuditStatus": "DOB_missing_public_biography_pending",
+      "born": "1987-02-24",
+      "birthSource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/amadrid.htm",
+      "birthAuditStatus": "2010_11_historical_roster_or_named_profile_single_source_verified_DRAFT_not_two_source",
       "club": "atleti",
       "clubId": "atleti",
       "clubNameOriginal": "Club Atlético de Madrid",
@@ -11500,7 +11539,7 @@
             "status": "historical_independent_lookup_pending"
           }
         ],
-        "biographySource": null,
+        "biographySource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/amadrid.htm",
         "startsSourceColumn": "SM",
         "appearancesSourceColumn": "PM",
         "goalsSourceColumn": "G"
@@ -11646,9 +11685,9 @@
       "name": "Koke",
       "nameOriginal": "Koke",
       "nameKo": "코케",
-      "born": null,
-      "birthSource": null,
-      "birthAuditStatus": "DOB_missing_public_biography_pending",
+      "born": "1992-01-08",
+      "birthSource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/amadrid.htm",
+      "birthAuditStatus": "2010_11_historical_roster_or_named_profile_single_source_verified_DRAFT_not_two_source",
       "club": "atleti",
       "clubId": "atleti",
       "clubNameOriginal": "Club Atlético de Madrid",
@@ -11686,7 +11725,7 @@
             "status": "historical_independent_lookup_pending"
           }
         ],
-        "biographySource": null,
+        "biographySource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/amadrid.htm",
         "startsSourceColumn": "SM",
         "appearancesSourceColumn": "PM",
         "goalsSourceColumn": "G"
@@ -11832,9 +11871,9 @@
       "name": "Fran Mérida",
       "nameOriginal": "Fran Mérida",
       "nameKo": "프란 메리다",
-      "born": null,
-      "birthSource": null,
-      "birthAuditStatus": "DOB_missing_public_biography_pending",
+      "born": "1990-03-04",
+      "birthSource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/amadrid.htm",
+      "birthAuditStatus": "2010_11_historical_roster_or_named_profile_single_source_verified_DRAFT_not_two_source",
       "club": "atleti",
       "clubId": "atleti",
       "clubNameOriginal": "Club Atlético de Madrid",
@@ -11872,7 +11911,7 @@
             "status": "historical_independent_lookup_pending"
           }
         ],
-        "biographySource": null,
+        "biographySource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/amadrid.htm",
         "startsSourceColumn": "SM",
         "appearancesSourceColumn": "PM",
         "goalsSourceColumn": "G"
@@ -12018,9 +12057,9 @@
       "name": "Juanfran",
       "nameOriginal": "Juanfran",
       "nameKo": "후안프란",
-      "born": null,
-      "birthSource": null,
-      "birthAuditStatus": "DOB_missing_public_biography_pending",
+      "born": "1985-01-09",
+      "birthSource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/amadrid.htm",
+      "birthAuditStatus": "2010_11_historical_roster_or_named_profile_single_source_verified_DRAFT_not_two_source",
       "club": "atleti",
       "clubId": "atleti",
       "clubNameOriginal": "Club Atlético de Madrid",
@@ -12058,7 +12097,7 @@
             "status": "historical_independent_lookup_pending"
           }
         ],
-        "biographySource": null,
+        "biographySource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/amadrid.htm",
         "startsSourceColumn": "SM",
         "appearancesSourceColumn": "PM",
         "goalsSourceColumn": "G"
@@ -12297,9 +12336,9 @@
       "name": "Diego Costa",
       "nameOriginal": "Diego Costa",
       "nameKo": "디에고 코스타",
-      "born": null,
-      "birthSource": null,
-      "birthAuditStatus": "DOB_missing_public_biography_pending",
+      "born": "1988-10-07",
+      "birthSource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/amadrid.htm",
+      "birthAuditStatus": "2010_11_historical_roster_or_named_profile_single_source_verified_DRAFT_not_two_source",
       "club": "atleti",
       "clubId": "atleti",
       "clubNameOriginal": "Club Atlético de Madrid",
@@ -12337,7 +12376,7 @@
             "status": "historical_independent_lookup_pending"
           }
         ],
-        "biographySource": null,
+        "biographySource": "https://www.footballsquads.co.uk/spain/2010-2011/laliga/amadrid.htm",
         "startsSourceColumn": "SM",
         "appearancesSourceColumn": "PM",
         "goalsSourceColumn": "G"
