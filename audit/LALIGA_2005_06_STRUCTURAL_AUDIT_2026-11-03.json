@@ -1,0 +1,95 @@
+{
+  "auditDate": "2026-11-03",
+  "season": "2005-06",
+  "league": "La Liga",
+  "branch": "draft/laliga-2005-06-evaluation-20261103",
+  "sourceJson": "data/laliga-2005-06.json",
+  "testType": "connector-side in-memory JSON and archive parity, NOT Node or browser",
+  "status": "PASS",
+  "checks": {
+    "jsonParsed": true,
+    "exactlyEightParticipatingClubs": true,
+    "qualifiersEqualMainEuropeanArchive": true,
+    "competitionMatchesArchive": true,
+    "mainStandingsExactlyPreserved": true,
+    "mainClubProfilesExactlyPreserved": true,
+    "playerIDsUnique": true,
+    "playersOnlyInEligibleClubs": true,
+    "playersFromActualLeagueAppearances": true,
+    "leagueGoalsInteger": true,
+    "allNamesAndValidDOB": true,
+    "positionsAllowed": true,
+    "singlePositionPerPlayer": true,
+    "rolesAllowed": true,
+    "eightTimesElevenStarters": true,
+    "perTeamPositionalCaps": true,
+    "gradeValidAndNonNull": true,
+    "eachPositionRankContiguous": true,
+    "elevenXIUniqueIDs": true,
+    "xiPositionsAndRosterMatch": true,
+    "xiValidFor4231": true,
+    "onlyUnapprovedDraft": true,
+    "allCurrentPrimarySourcesProvided": true,
+    "threeSeasonAssessmentWindowCorrect": true
+  },
+  "counts": {
+    "players": 148,
+    "clubs": 8,
+    "starters": 88,
+    "backups": 60,
+    "dobNonempty": 148,
+    "positionRanks": 148,
+    "tierEvaluated": 148,
+    "worldClass": 11,
+    "leagueTop": 42,
+    "tiers": {
+      "S": 2,
+      "A+": 9,
+      "A": 6,
+      "A-": 25,
+      "B+": 51,
+      "B": 28,
+      "B-": 17,
+      "C+": 6,
+      "C": 4,
+      "C-": 0,
+      "D": 0
+    },
+    "bestXi": 11
+  },
+  "completeOnly": {
+    "candidateSelectionSourceLedger": true,
+    "qualifyingClubsActualParticipation": true,
+    "allProvisionalTiers": true,
+    "allProvisionalRanks": true,
+    "bestXiProposed": true,
+    "structuralChecks": true
+  },
+  "notDone": {
+    "independentHistoricalDOBReaudit": true,
+    "previousTwoSeasonsPlayerFormAudit": true,
+    "matchByMatchMostPlayedPositionAudit": true,
+    "leaguewideMostUsedFormationCensus": true,
+    "independentStatsSecondSourceComparison": true,
+    "nodeCliVerifyScripts": true,
+    "liveBrowserRenderedUi": true,
+    "mainBranchDeployment": true,
+    "userFinalApproval": true
+  },
+  "discrepancy": [
+    {
+      "name": "Matías Lequi",
+      "born": "1981-05-13",
+      "prevRecords": [
+        {
+          "season": "2003-04",
+          "born": "1981-03-15",
+          "starts": 34,
+          "club": "atleti"
+        }
+      ]
+    }
+  ],
+  "sourceNotes": "BDFutbol 2005-06 club-year lineup table fields SM=starter matches, PM=played matches; GK negative G = conceded goals. No numerical performance composite invented. Prior archival comparison unapproved.",
+  "doNotAdvance": "2006-07 season cannot begin without explicit user instruction."
+}
