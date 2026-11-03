@@ -1,0 +1,28 @@
+name: Verify La Liga 2007-08 DRAFT
+on:
+  pull_request:
+    paths:
+      - 'data/laliga-2007-08.json'
+      - 'scripts/verify-laliga-2007-08-draft.mjs'
+      - '.github/workflows/verify-laliga-2007-08-draft.yml'
+  push:
+    branches:
+      - 'draft/laliga-2007-08-researched-20261103'
+    paths:
+      - 'data/laliga-2007-08.json'
+      - 'scripts/verify-laliga-2007-08-draft.mjs'
+      - '.github/workflows/verify-laliga-2007-08-draft.yml'
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Run 2007-08 player structural verifier
+        run: node scripts/verify-laliga-2007-08-draft.mjs
+      - name: Run La Liga historical standings verifier
+        run: node scripts/verify-laliga.mjs
