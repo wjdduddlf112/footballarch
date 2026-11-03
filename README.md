@@ -20,7 +20,7 @@ Five domestic leagues (La Liga, Premier League, Serie A, Bundesliga, Ligue 1) an
 
 ## Files
 - `index.html` — static responsive site, no build dependencies
-- `data/laliga-1999-00.json` — candidate clubs and preliminary GK pool (no ratings)
+- `data/laliga-1999-00.json` — 10 UEFA/Intertoto-qualified clubs, 167 source-led player candidates, draft S–C- tiers and within-position ranks, unapproved 4-2-3-1 Best XI (2026-11-03)
 - `data/laliga-2022-23.json` — demonstration-only ratings and rankings
 
 ## Deploy
