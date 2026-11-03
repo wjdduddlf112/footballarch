@@ -33,7 +33,7 @@ try{
    await page.screenshot({path:"/tmp/laliga-2007-08-live-"+t+".png",fullPage:true});
    tabAudit.push({tab:t,chars:body.length,preview:body.slice(0,95)});
  }
- await page.locator('button[data-tab="stats"]').click();
+ await page.locator('button[data-tab="top"]').click();
  const tr=page.locator('[data-player]').first();
  assert.ok(await tr.count(),"Expected actual clickable player");
  await tr.click();
