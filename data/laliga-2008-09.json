@@ -50,7 +50,7 @@
       "formationStatus": "provisional_not_leaguewide_counted",
       "birthMissingCount": 0,
       "priorTwoSeasonAudit": "partial_old_archive_references_not_independent",
-      "birthdateCoverageStatus": "all_129_iso_entered_41_new_historical_roster_or_profile_sources_88_inherited_unverified_many_need_second",
+      "birthdateCoverageStatus": "129_ISO_all_entered;_16_barca_independent_2source,_3_other_public_two_sources,_3_barca_conflicts,_107_not_double_checked",
       "positionStatus": "provisional_profile_and_lineup_roles_not_match_by_match",
       "tierStatus": "all_proposed_unapproved",
       "shortlistLimitations": [
@@ -97,7 +97,38 @@
             "https://en.wikipedia.org/wiki/Renan_(footballer,_born_January_1985)"
           ]
         }
-      }
+      },
+      "birthdateAuditStats": {
+        "isoPopulated": 129,
+        "twoIndependentOfficialClubAndHistoricalSquad": 16,
+        "otherTwoPublicAgree": 3,
+        "sourceConflict": 3,
+        "singleSourceHistoricalRoster": 35,
+        "olderArchiveNoNewCrosscheck": 72
+      },
+      "birthConflicts": [
+        {
+          "ko": "호세 마누엘 핀토",
+          "stored": "1975-11-08",
+          "contemporary": "1975-11-15",
+          "officialCurrent": "https://players.fcbarcelona.com/en/player/681-pinto-jose-manuel-pinto-colorado",
+          "note": "Barca 2008-09 annual and FootballSquads list Nov15, later Barcelona archive biography and 2009-10 annual list Nov08; keep Nov08 but conflict unresolved."
+        },
+        {
+          "ko": "다니 아우베스",
+          "stored": "1983-05-06",
+          "contemporary": "1983-05-05",
+          "officialCurrent": "https://players.fcbarcelona.com/en/player/31-alves-daniel-alves-da-silva",
+          "note": "Barca 2008-09 annual lists May05 while FootballSquads, UEFA 2010 and current club biography list May06; keep May06 with logged conflict."
+        },
+        {
+          "ko": "에리크 아비달",
+          "stored": "1979-09-11",
+          "contemporary": "1979-07-11",
+          "officialCurrent": "https://media1.fcbarcelona.com/media/asset_publics/resources/000/006/571/original/MEMORIA_CLUB_CAST_08-09.v1321548661.pdf",
+          "note": "FootballSquads lists July11 while Barca 2008-09 annual and previous archive list Sep11; keep Sep11 pending another independent source."
+        }
+      ]
     }
   },
   "clubs": [
@@ -561,8 +592,8 @@
       "nameOriginal": "Víctor Valdés",
       "nameKo": "빅토르 발데스",
       "born": "1982-01-14",
-      "birthSource": null,
-      "birthAuditStatus": "previous_archive_iso_not_independently_double_checked",
+      "birthSource": "https://media1.fcbarcelona.com/media/asset_publics/resources/000/006/571/original/MEMORIA_CLUB_CAST_08-09.v1321548661.pdf",
+      "birthAuditStatus": "two_independent_sources_agree_2008_09_club_annual_and_squad",
       "club": "barca",
       "clubId": "barca",
       "clubNameOriginal": "FC Barcelona",
@@ -600,7 +631,11 @@
             "status": "previous_DRAFT_archive_reference_not_independently_revalidated"
           }
         ],
-        "biographySource": null
+        "biographySource": "https://media1.fcbarcelona.com/media/asset_publics/resources/000/006/571/original/MEMORIA_CLUB_CAST_08-09.v1321548661.pdf",
+        "birthSources": [
+          "https://media1.fcbarcelona.com/media/asset_publics/resources/000/006/571/original/MEMORIA_CLUB_CAST_08-09.v1321548661.pdf",
+          "https://footballsquads.co.uk/spain/2008-2009/laliga/barce.htm"
+        ]
       },
       "sources": [
         "https://www.bdfutbol.com/en/t/t2008-091.html"
@@ -651,8 +686,8 @@
       "nameOriginal": "Carles Puyol",
       "nameKo": "카를레스 푸욜",
       "born": "1978-04-13",
-      "birthSource": null,
-      "birthAuditStatus": "previous_archive_iso_not_independently_double_checked",
+      "birthSource": "https://media1.fcbarcelona.com/media/asset_publics/resources/000/006/571/original/MEMORIA_CLUB_CAST_08-09.v1321548661.pdf",
+      "birthAuditStatus": "two_independent_sources_agree_2008_09_club_annual_and_squad",
       "club": "barca",
       "clubId": "barca",
       "clubNameOriginal": "FC Barcelona",
@@ -690,7 +725,11 @@
             "status": "previous_DRAFT_archive_reference_not_independently_revalidated"
           }
         ],
-        "biographySource": null
+        "biographySource": "https://media1.fcbarcelona.com/media/asset_publics/resources/000/006/571/original/MEMORIA_CLUB_CAST_08-09.v1321548661.pdf",
+        "birthSources": [
+          "https://media1.fcbarcelona.com/media/asset_publics/resources/000/006/571/original/MEMORIA_CLUB_CAST_08-09.v1321548661.pdf",
+          "https://footballsquads.co.uk/spain/2008-2009/laliga/barce.htm"
+        ]
       },
       "sources": [
         "https://www.bdfutbol.com/en/t/t2008-091.html"
@@ -741,8 +780,8 @@
       "nameOriginal": "Gerard Piqué",
       "nameKo": "제라르 피케",
       "born": "1987-02-02",
-      "birthSource": null,
-      "birthAuditStatus": "previous_archive_iso_not_independently_double_checked",
+      "birthSource": "https://media1.fcbarcelona.com/media/asset_publics/resources/000/006/571/original/MEMORIA_CLUB_CAST_08-09.v1321548661.pdf",
+      "birthAuditStatus": "two_independent_sources_agree_2008_09_club_annual_and_squad",
       "club": "barca",
       "clubId": "barca",
       "clubNameOriginal": "FC Barcelona",
@@ -780,7 +819,11 @@
             "status": "independent_outside_archive_check_pending"
           }
         ],
-        "biographySource": null
+        "biographySource": "https://media1.fcbarcelona.com/media/asset_publics/resources/000/006/571/original/MEMORIA_CLUB_CAST_08-09.v1321548661.pdf",
+        "birthSources": [
+          "https://media1.fcbarcelona.com/media/asset_publics/resources/000/006/571/original/MEMORIA_CLUB_CAST_08-09.v1321548661.pdf",
+          "https://footballsquads.co.uk/spain/2008-2009/laliga/barce.htm"
+        ]
       },
       "sources": [
         "https://www.bdfutbol.com/en/t/t2008-091.html"
@@ -831,8 +874,8 @@
       "nameOriginal": "Éric Abidal",
       "nameKo": "에리크 아비달",
       "born": "1979-09-11",
-      "birthSource": null,
-      "birthAuditStatus": "previous_archive_iso_not_independently_double_checked",
+      "birthSource": "https://media1.fcbarcelona.com/media/asset_publics/resources/000/006/571/original/MEMORIA_CLUB_CAST_08-09.v1321548661.pdf",
+      "birthAuditStatus": "source_conflict_documented_provisionally_resolved",
       "club": "barca",
       "clubId": "barca",
       "clubNameOriginal": "FC Barcelona",
@@ -870,7 +913,17 @@
             "status": "previous_DRAFT_archive_reference_not_independently_revalidated"
           }
         ],
-        "biographySource": null
+        "biographySource": null,
+        "birthDateConflict": {
+          "currentISO": "1979-09-11",
+          "competingISO": "1979-07-11",
+          "reason": "FootballSquads lists July11 while Barca 2008-09 annual and previous archive list Sep11; keep Sep11 pending another independent source.",
+          "sources": [
+            "https://media1.fcbarcelona.com/media/asset_publics/resources/000/006/571/original/MEMORIA_CLUB_CAST_08-09.v1321548661.pdf",
+            "https://footballsquads.co.uk/spain/2008-2009/laliga/barce.htm",
+            "https://media1.fcbarcelona.com/media/asset_publics/resources/000/006/571/original/MEMORIA_CLUB_CAST_08-09.v1321548661.pdf"
+          ]
+        }
       },
       "sources": [
         "https://www.bdfutbol.com/en/t/t2008-091.html"
@@ -921,8 +974,8 @@
       "nameOriginal": "Dani Alves",
       "nameKo": "다니 아우베스",
       "born": "1983-05-06",
-      "birthSource": null,
-      "birthAuditStatus": "previous_archive_iso_not_independently_double_checked",
+      "birthSource": "https://players.fcbarcelona.com/en/player/31-alves-daniel-alves-da-silva",
+      "birthAuditStatus": "source_conflict_documented_provisionally_resolved",
       "club": "barca",
       "clubId": "barca",
       "clubNameOriginal": "FC Barcelona",
@@ -960,7 +1013,17 @@
             "status": "previous_DRAFT_archive_reference_not_independently_revalidated"
           }
         ],
-        "biographySource": null
+        "biographySource": null,
+        "birthDateConflict": {
+          "currentISO": "1983-05-06",
+          "competingISO": "1983-05-05",
+          "reason": "Barca 2008-09 annual lists May05 while FootballSquads, UEFA 2010 and current club biography list May06; keep May06 with logged conflict.",
+          "sources": [
+            "https://media1.fcbarcelona.com/media/asset_publics/resources/000/006/571/original/MEMORIA_CLUB_CAST_08-09.v1321548661.pdf",
+            "https://footballsquads.co.uk/spain/2008-2009/laliga/barce.htm",
+            "https://players.fcbarcelona.com/en/player/31-alves-daniel-alves-da-silva"
+          ]
+        }
       },
       "sources": [
         "https://www.bdfutbol.com/en/t/t2008-091.html"
@@ -1011,8 +1074,8 @@
       "nameOriginal": "Yaya Touré",
       "nameKo": "야야 투레",
       "born": "1983-05-13",
-      "birthSource": null,
-      "birthAuditStatus": "previous_archive_iso_not_independently_double_checked",
+      "birthSource": "https://media1.fcbarcelona.com/media/asset_publics/resources/000/006/571/original/MEMORIA_CLUB_CAST_08-09.v1321548661.pdf",
+      "birthAuditStatus": "two_independent_sources_agree_2008_09_club_annual_and_squad",
       "club": "barca",
       "clubId": "barca",
       "clubNameOriginal": "FC Barcelona",
@@ -1050,7 +1113,11 @@
             "status": "previous_DRAFT_archive_reference_not_independently_revalidated"
           }
         ],
-        "biographySource": null
+        "biographySource": "https://media1.fcbarcelona.com/media/asset_publics/resources/000/006/571/original/MEMORIA_CLUB_CAST_08-09.v1321548661.pdf",
+        "birthSources": [
+          "https://media1.fcbarcelona.com/media/asset_publics/resources/000/006/571/original/MEMORIA_CLUB_CAST_08-09.v1321548661.pdf",
+          "https://footballsquads.co.uk/spain/2008-2009/laliga/barce.htm"
+        ]
       },
       "sources": [
         "https://www.bdfutbol.com/en/t/t2008-091.html"
@@ -1101,8 +1168,8 @@
       "nameOriginal": "Xavi Hernández",
       "nameKo": "사비 에르난데스",
       "born": "1980-01-25",
-      "birthSource": null,
-      "birthAuditStatus": "previous_archive_iso_not_independently_double_checked",
+      "birthSource": "https://media1.fcbarcelona.com/media/asset_publics/resources/000/006/571/original/MEMORIA_CLUB_CAST_08-09.v1321548661.pdf",
+      "birthAuditStatus": "two_independent_sources_agree_2008_09_club_annual_and_squad",
       "club": "barca",
       "clubId": "barca",
       "clubNameOriginal": "FC Barcelona",
@@ -1140,7 +1207,11 @@
             "status": "previous_DRAFT_archive_reference_not_independently_revalidated"
           }
         ],
-        "biographySource": null
+        "biographySource": "https://media1.fcbarcelona.com/media/asset_publics/resources/000/006/571/original/MEMORIA_CLUB_CAST_08-09.v1321548661.pdf",
+        "birthSources": [
+          "https://media1.fcbarcelona.com/media/asset_publics/resources/000/006/571/original/MEMORIA_CLUB_CAST_08-09.v1321548661.pdf",
+          "https://footballsquads.co.uk/spain/2008-2009/laliga/barce.htm"
+        ]
       },
       "sources": [
         "https://www.bdfutbol.com/en/t/t2008-091.html"
@@ -1191,8 +1262,8 @@
       "nameOriginal": "Andrés Iniesta",
       "nameKo": "안드레스 이니에스타",
       "born": "1984-05-11",
-      "birthSource": null,
-      "birthAuditStatus": "previous_archive_iso_not_independently_double_checked",
+      "birthSource": "https://media1.fcbarcelona.com/media/asset_publics/resources/000/006/571/original/MEMORIA_CLUB_CAST_08-09.v1321548661.pdf",
+      "birthAuditStatus": "two_independent_sources_agree_2008_09_club_annual_and_squad",
       "club": "barca",
       "clubId": "barca",
       "clubNameOriginal": "FC Barcelona",
@@ -1230,7 +1301,11 @@
             "status": "previous_DRAFT_archive_reference_not_independently_revalidated"
           }
         ],
-        "biographySource": null
+        "biographySource": "https://media1.fcbarcelona.com/media/asset_publics/resources/000/006/571/original/MEMORIA_CLUB_CAST_08-09.v1321548661.pdf",
+        "birthSources": [
+          "https://media1.fcbarcelona.com/media/asset_publics/resources/000/006/571/original/MEMORIA_CLUB_CAST_08-09.v1321548661.pdf",
+          "https://footballsquads.co.uk/spain/2008-2009/laliga/barce.htm"
+        ]
       },
       "sources": [
         "https://www.bdfutbol.com/en/t/t2008-091.html"
@@ -1281,8 +1356,8 @@
       "nameOriginal": "Thierry Henry",
       "nameKo": "티에리 앙리",
       "born": "1977-08-17",
-      "birthSource": null,
-      "birthAuditStatus": "previous_archive_iso_not_independently_double_checked",
+      "birthSource": "https://media1.fcbarcelona.com/media/asset_publics/resources/000/006/571/original/MEMORIA_CLUB_CAST_08-09.v1321548661.pdf",
+      "birthAuditStatus": "two_independent_sources_agree_2008_09_club_annual_and_squad",
       "club": "barca",
       "clubId": "barca",
       "clubNameOriginal": "FC Barcelona",
@@ -1320,7 +1395,11 @@
             "status": "previous_DRAFT_archive_reference_not_independently_revalidated"
           }
         ],
-        "biographySource": null
+        "biographySource": "https://media1.fcbarcelona.com/media/asset_publics/resources/000/006/571/original/MEMORIA_CLUB_CAST_08-09.v1321548661.pdf",
+        "birthSources": [
+          "https://media1.fcbarcelona.com/media/asset_publics/resources/000/006/571/original/MEMORIA_CLUB_CAST_08-09.v1321548661.pdf",
+          "https://footballsquads.co.uk/spain/2008-2009/laliga/barce.htm"
+        ]
       },
       "sources": [
         "https://www.bdfutbol.com/en/t/t2008-091.html"
@@ -1371,8 +1450,8 @@
       "nameOriginal": "Lionel Messi",
       "nameKo": "리오넬 메시",
       "born": "1987-06-24",
-      "birthSource": null,
-      "birthAuditStatus": "previous_archive_iso_not_independently_double_checked",
+      "birthSource": "https://media1.fcbarcelona.com/media/asset_publics/resources/000/006/571/original/MEMORIA_CLUB_CAST_08-09.v1321548661.pdf",
+      "birthAuditStatus": "two_independent_sources_agree_2008_09_club_annual_and_squad",
       "club": "barca",
       "clubId": "barca",
       "clubNameOriginal": "FC Barcelona",
@@ -1410,7 +1489,11 @@
             "status": "previous_DRAFT_archive_reference_not_independently_revalidated"
           }
         ],
-        "biographySource": null
+        "biographySource": "https://media1.fcbarcelona.com/media/asset_publics/resources/000/006/571/original/MEMORIA_CLUB_CAST_08-09.v1321548661.pdf",
+        "birthSources": [
+          "https://media1.fcbarcelona.com/media/asset_publics/resources/000/006/571/original/MEMORIA_CLUB_CAST_08-09.v1321548661.pdf",
+          "https://footballsquads.co.uk/spain/2008-2009/laliga/barce.htm"
+        ]
       },
       "sources": [
         "https://www.bdfutbol.com/en/t/t2008-091.html"
@@ -1461,8 +1544,8 @@
       "nameOriginal": "Samuel Eto'o",
       "nameKo": "사뮈엘 에토",
       "born": "1981-03-10",
-      "birthSource": null,
-      "birthAuditStatus": "previous_archive_iso_not_independently_double_checked",
+      "birthSource": "https://media1.fcbarcelona.com/media/asset_publics/resources/000/006/571/original/MEMORIA_CLUB_CAST_08-09.v1321548661.pdf",
+      "birthAuditStatus": "two_independent_sources_agree_2008_09_club_annual_and_squad",
       "club": "barca",
       "clubId": "barca",
       "clubNameOriginal": "FC Barcelona",
@@ -1500,7 +1583,11 @@
             "status": "previous_DRAFT_archive_reference_not_independently_revalidated"
           }
         ],
-        "biographySource": null
+        "biographySource": "https://media1.fcbarcelona.com/media/asset_publics/resources/000/006/571/original/MEMORIA_CLUB_CAST_08-09.v1321548661.pdf",
+        "birthSources": [
+          "https://media1.fcbarcelona.com/media/asset_publics/resources/000/006/571/original/MEMORIA_CLUB_CAST_08-09.v1321548661.pdf",
+          "https://footballsquads.co.uk/spain/2008-2009/laliga/barce.htm"
+        ]
       },
       "sources": [
         "https://www.bdfutbol.com/en/t/t2008-091.html"
@@ -1551,8 +1638,8 @@
       "nameOriginal": "José Manuel Pinto",
       "nameKo": "호세 마누엘 핀토",
       "born": "1975-11-08",
-      "birthSource": null,
-      "birthAuditStatus": "previous_archive_iso_not_independently_double_checked",
+      "birthSource": "https://players.fcbarcelona.com/en/player/681-pinto-jose-manuel-pinto-colorado",
+      "birthAuditStatus": "source_conflict_documented_provisionally_resolved",
       "club": "barca",
       "clubId": "barca",
       "clubNameOriginal": "FC Barcelona",
@@ -1590,7 +1677,17 @@
             "status": "previous_DRAFT_archive_reference_not_independently_revalidated"
           }
         ],
-        "biographySource": null
+        "biographySource": null,
+        "birthDateConflict": {
+          "currentISO": "1975-11-08",
+          "competingISO": "1975-11-15",
+          "reason": "Barca 2008-09 annual and FootballSquads list Nov15, later Barcelona archive biography and 2009-10 annual list Nov08; keep Nov08 but conflict unresolved.",
+          "sources": [
+            "https://media1.fcbarcelona.com/media/asset_publics/resources/000/006/571/original/MEMORIA_CLUB_CAST_08-09.v1321548661.pdf",
+            "https://footballsquads.co.uk/spain/2008-2009/laliga/barce.htm",
+            "https://players.fcbarcelona.com/en/player/681-pinto-jose-manuel-pinto-colorado"
+          ]
+        }
       },
       "sources": [
         "https://www.bdfutbol.com/en/t/t2008-091.html"
@@ -1641,8 +1738,8 @@
       "nameOriginal": "Rafael Márquez",
       "nameKo": "라파엘 마르케스",
       "born": "1979-02-13",
-      "birthSource": null,
-      "birthAuditStatus": "previous_archive_iso_not_independently_double_checked",
+      "birthSource": "https://media1.fcbarcelona.com/media/asset_publics/resources/000/006/571/original/MEMORIA_CLUB_CAST_08-09.v1321548661.pdf",
+      "birthAuditStatus": "two_independent_sources_agree_2008_09_club_annual_and_squad",
       "club": "barca",
       "clubId": "barca",
       "clubNameOriginal": "FC Barcelona",
@@ -1680,7 +1777,11 @@
             "status": "previous_DRAFT_archive_reference_not_independently_revalidated"
           }
         ],
-        "biographySource": null
+        "biographySource": "https://media1.fcbarcelona.com/media/asset_publics/resources/000/006/571/original/MEMORIA_CLUB_CAST_08-09.v1321548661.pdf",
+        "birthSources": [
+          "https://media1.fcbarcelona.com/media/asset_publics/resources/000/006/571/original/MEMORIA_CLUB_CAST_08-09.v1321548661.pdf",
+          "https://footballsquads.co.uk/spain/2008-2009/laliga/barce.htm"
+        ]
       },
       "sources": [
         "https://www.bdfutbol.com/en/t/t2008-091.html"
@@ -1731,8 +1832,8 @@
       "nameOriginal": "Sylvinho",
       "nameKo": "시우비뉴",
       "born": "1974-04-12",
-      "birthSource": null,
-      "birthAuditStatus": "previous_archive_iso_not_independently_double_checked",
+      "birthSource": "https://media1.fcbarcelona.com/media/asset_publics/resources/000/006/571/original/MEMORIA_CLUB_CAST_08-09.v1321548661.pdf",
+      "birthAuditStatus": "two_independent_sources_agree_2008_09_club_annual_and_squad",
       "club": "barca",
       "clubId": "barca",
       "clubNameOriginal": "FC Barcelona",
@@ -1770,7 +1871,11 @@
             "status": "previous_DRAFT_archive_reference_not_independently_revalidated"
           }
         ],
-        "biographySource": null
+        "biographySource": "https://media1.fcbarcelona.com/media/asset_publics/resources/000/006/571/original/MEMORIA_CLUB_CAST_08-09.v1321548661.pdf",
+        "birthSources": [
+          "https://media1.fcbarcelona.com/media/asset_publics/resources/000/006/571/original/MEMORIA_CLUB_CAST_08-09.v1321548661.pdf",
+          "https://footballsquads.co.uk/spain/2008-2009/laliga/barce.htm"
+        ]
       },
       "sources": [
         "https://www.bdfutbol.com/en/t/t2008-091.html"
@@ -1821,8 +1926,8 @@
       "nameOriginal": "Sergio Busquets",
       "nameKo": "세르히오 부스케츠",
       "born": "1988-07-16",
-      "birthSource": "https://footballsquads.co.uk/spain/2008-2009/laliga/barce.htm",
-      "birthAuditStatus": "season_roster_or_profile_source_one_confirmed_second_pending",
+      "birthSource": "https://media1.fcbarcelona.com/media/asset_publics/resources/000/006/571/original/MEMORIA_CLUB_CAST_08-09.v1321548661.pdf",
+      "birthAuditStatus": "two_independent_sources_agree_2008_09_club_annual_and_squad",
       "club": "barca",
       "clubId": "barca",
       "clubNameOriginal": "FC Barcelona",
@@ -1860,8 +1965,9 @@
             "status": "independent_outside_archive_check_pending"
           }
         ],
-        "biographySource": "https://footballsquads.co.uk/spain/2008-2009/laliga/barce.htm",
+        "biographySource": "https://media1.fcbarcelona.com/media/asset_publics/resources/000/006/571/original/MEMORIA_CLUB_CAST_08-09.v1321548661.pdf",
         "birthSources": [
+          "https://media1.fcbarcelona.com/media/asset_publics/resources/000/006/571/original/MEMORIA_CLUB_CAST_08-09.v1321548661.pdf",
           "https://footballsquads.co.uk/spain/2008-2009/laliga/barce.htm"
         ]
       },
@@ -1914,8 +2020,8 @@
       "nameOriginal": "Seydou Keita",
       "nameKo": "세이두 케이타",
       "born": "1980-01-16",
-      "birthSource": null,
-      "birthAuditStatus": "previous_archive_iso_not_independently_double_checked",
+      "birthSource": "https://media1.fcbarcelona.com/media/asset_publics/resources/000/006/571/original/MEMORIA_CLUB_CAST_08-09.v1321548661.pdf",
+      "birthAuditStatus": "two_independent_sources_agree_2008_09_club_annual_and_squad",
       "club": "barca",
       "clubId": "barca",
       "clubNameOriginal": "FC Barcelona",
@@ -1953,7 +2059,11 @@
             "status": "previous_DRAFT_archive_reference_not_independently_revalidated"
           }
         ],
-        "biographySource": null
+        "biographySource": "https://media1.fcbarcelona.com/media/asset_publics/resources/000/006/571/original/MEMORIA_CLUB_CAST_08-09.v1321548661.pdf",
+        "birthSources": [
+          "https://media1.fcbarcelona.com/media/asset_publics/resources/000/006/571/original/MEMORIA_CLUB_CAST_08-09.v1321548661.pdf",
+          "https://footballsquads.co.uk/spain/2008-2009/laliga/barce.htm"
+        ]
       },
       "sources": [
         "https://www.bdfutbol.com/en/t/t2008-091.html"
@@ -2004,8 +2114,8 @@
       "nameOriginal": "Alexander Hleb",
       "nameKo": "알렉산드르 흘레프",
       "born": "1981-05-01",
-      "birthSource": "https://footballsquads.co.uk/spain/2008-2009/laliga/barce.htm",
-      "birthAuditStatus": "season_roster_or_profile_source_one_confirmed_second_pending",
+      "birthSource": "https://media1.fcbarcelona.com/media/asset_publics/resources/000/006/571/original/MEMORIA_CLUB_CAST_08-09.v1321548661.pdf",
+      "birthAuditStatus": "two_independent_sources_agree_2008_09_club_annual_and_squad",
       "club": "barca",
       "clubId": "barca",
       "clubNameOriginal": "FC Barcelona",
@@ -2043,8 +2153,9 @@
             "status": "independent_outside_archive_check_pending"
           }
         ],
-        "biographySource": "https://footballsquads.co.uk/spain/2008-2009/laliga/barce.htm",
+        "biographySource": "https://media1.fcbarcelona.com/media/asset_publics/resources/000/006/571/original/MEMORIA_CLUB_CAST_08-09.v1321548661.pdf",
         "birthSources": [
+          "https://media1.fcbarcelona.com/media/asset_publics/resources/000/006/571/original/MEMORIA_CLUB_CAST_08-09.v1321548661.pdf",
           "https://footballsquads.co.uk/spain/2008-2009/laliga/barce.htm"
         ]
       },
@@ -2097,8 +2208,8 @@
       "nameOriginal": "Pedro Rodríguez",
       "nameKo": "페드로 로드리게스",
       "born": "1987-07-28",
-      "birthSource": "https://footballsquads.co.uk/spain/2008-2009/laliga/barce.htm",
-      "birthAuditStatus": "season_roster_or_profile_source_one_confirmed_second_pending",
+      "birthSource": "https://media1.fcbarcelona.com/media/asset_publics/resources/000/006/571/original/MEMORIA_CLUB_CAST_08-09.v1321548661.pdf",
+      "birthAuditStatus": "two_independent_sources_agree_2008_09_club_annual_and_squad",
       "club": "barca",
       "clubId": "barca",
       "clubNameOriginal": "FC Barcelona",
@@ -2136,8 +2247,9 @@
             "status": "independent_outside_archive_check_pending"
           }
         ],
-        "biographySource": "https://footballsquads.co.uk/spain/2008-2009/laliga/barce.htm",
+        "biographySource": "https://media1.fcbarcelona.com/media/asset_publics/resources/000/006/571/original/MEMORIA_CLUB_CAST_08-09.v1321548661.pdf",
         "birthSources": [
+          "https://media1.fcbarcelona.com/media/asset_publics/resources/000/006/571/original/MEMORIA_CLUB_CAST_08-09.v1321548661.pdf",
           "https://footballsquads.co.uk/spain/2008-2009/laliga/barce.htm"
         ]
       },
@@ -2190,8 +2302,8 @@
       "nameOriginal": "Bojan Krkić",
       "nameKo": "보얀 크르키치",
       "born": "1990-08-28",
-      "birthSource": null,
-      "birthAuditStatus": "previous_archive_iso_not_independently_double_checked",
+      "birthSource": "https://media1.fcbarcelona.com/media/asset_publics/resources/000/006/571/original/MEMORIA_CLUB_CAST_08-09.v1321548661.pdf",
+      "birthAuditStatus": "two_independent_sources_agree_2008_09_club_annual_and_squad",
       "club": "barca",
       "clubId": "barca",
       "clubNameOriginal": "FC Barcelona",
@@ -2229,7 +2341,11 @@
             "status": "previous_DRAFT_archive_reference_not_independently_revalidated"
           }
         ],
-        "biographySource": null
+        "biographySource": "https://media1.fcbarcelona.com/media/asset_publics/resources/000/006/571/original/MEMORIA_CLUB_CAST_08-09.v1321548661.pdf",
+        "birthSources": [
+          "https://media1.fcbarcelona.com/media/asset_publics/resources/000/006/571/original/MEMORIA_CLUB_CAST_08-09.v1321548661.pdf",
+          "https://footballsquads.co.uk/spain/2008-2009/laliga/barce.htm"
+        ]
       },
       "sources": [
         "https://www.bdfutbol.com/en/t/t2008-091.html"
