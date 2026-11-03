@@ -190,13 +190,13 @@
 
 | 순위 | 한국어 | 원어명 | 소속 | 티어 | 선발/출전 |
 |---:|---|---|---|---|---|
-| 5 | 고르카 이라이소스 | Gorka Iraizoz | Athletic Club | B0 | 36/36 |
-| 6 | 레오 프랑코 | Leo Franco | Club Atlético de Madrid | B0 | 32/32 |
-| 7 | 세사르 산체스 | César Sánchez | Valencia CF | B0 | 18/18 |
 | 1 | 이케르 카시야스 | Iker Casillas | Real Madrid CF | S | 38/38 |
 | 2 | 디에고 로페스 | Diego López | Villarreal CF | A0 | 38/38 |
 | 3 | 빅토르 발데스 | Víctor Valdés | FC Barcelona | A0 | 35/35 |
 | 4 | 안드레스 팔로프 | Andrés Palop | Sevilla FC | A- | 35/35 |
+| 5 | 고르카 이라이소스 | Gorka Iraizoz | Athletic Club | B0 | 36/36 |
+| 6 | 레오 프랑코 | Leo Franco | Club Atlético de Madrid | B0 | 32/32 |
+| 7 | 세사르 산체스 | César Sánchez | Valencia CF | B0 | 18/18 |
 | 8 | 헤난 | Renan | Valencia CF | B- | 19/19 |
 | 9 | 그레고리 쿠페 | Grégory Coupet | Club Atlético de Madrid | B- | 6/6 |
 | 10 | 하비 바라스 | Javi Varas | Sevilla FC | C+ | 3/3 |
@@ -207,10 +207,6 @@
 
 | 순위 | 한국어 | 원어명 | 소속 | 티어 | 선발/출전 |
 |---:|---|---|---|---|---|
-| 15 | 루이스 아마란토 페레아 | Luis Amaranto Perea | Club Atlético de Madrid | B0 | 24/26 |
-| 16 | 알렉시스 루아노 | Alexis Ruano | Valencia CF | B0 | 24/24 |
-| 17 | 파블로 이바녜스 | Pablo Ibáñez | Club Atlético de Madrid | B0 | 17/21 |
-| 18 | 파브리시오 푸엔테스 | Fabricio Fuentes | Villarreal CF | B0 | 14/16 |
 | 1 | 카를레스 푸욜 | Carles Puyol | FC Barcelona | A+ | 26/28 |
 | 2 | 제라르 피케 | Gerard Piqué | FC Barcelona | A0 | 25/25 |
 | 3 | 라울 알비올 | Raúl Albiol | Valencia CF | A- | 33/34 |
@@ -225,6 +221,10 @@
 | 12 | 욘 헤이팅아 | John Heitinga | Club Atlético de Madrid | B+ | 26/27 |
 | 13 | 줄리앵 에스퀴데 | Julien Escudé | Sevilla FC | B+ | 25/26 |
 | 14 | 카를로스 마르체나 | Carlos Marchena | Valencia CF | B+ | 24/26 |
+| 15 | 루이스 아마란토 페레아 | Luis Amaranto Perea | Club Atlético de Madrid | B0 | 24/26 |
+| 16 | 알렉시스 루아노 | Alexis Ruano | Valencia CF | B0 | 24/24 |
+| 17 | 파블로 이바녜스 | Pablo Ibáñez | Club Atlético de Madrid | B0 | 17/21 |
+| 18 | 파브리시오 푸엔테스 | Fabricio Fuentes | Villarreal CF | B0 | 14/16 |
 | 19 | 다비드 프리에토 | David Prieto | Sevilla FC | B- | 13/13 |
 | 20 | 우스타리스 알데코아오탈로라 | Ustaritz | Athletic Club | B- | 10/11 |
 | 21 | 크리스토프 메첼더 | Christoph Metzelder | Real Madrid CF | B- | 9/12 |
@@ -233,15 +233,15 @@
 
 | 순위 | 한국어 | 원어명 | 소속 | 티어 | 선발/출전 |
 |---:|---|---|---|---|---|
+| 1 | 호안 카프데빌라 | Joan Capdevila | Villarreal CF | A+ | 36/36 |
+| 2 | 에리크 아비달 | Éric Abidal | FC Barcelona | A0 | 25/25 |
+| 3 | 페르난도 나바로 | Fernando Navarro | Sevilla FC | A- | 30/31 |
 | 4 | 에밀리아노 모레티 | Emiliano Moretti | Valencia CF | B0 | 25/28 |
 | 5 | 가브리엘 에인세 | Gabriel Heinze | Real Madrid CF | B0 | 24/24 |
 | 6 | 미켈 발렌시아가 | Mikel Balenziaga | Athletic Club | B0 | 21/24 |
 | 7 | 코이킬리 레르춘디 | Koikili | Athletic Club | B0 | 18/18 |
 | 8 | 안토니오 로페스 | Antonio López | Club Atlético de Madrid | B0 | 17/19 |
 | 9 | 시우비뉴 | Sylvinho | FC Barcelona | B0 | 10/15 |
-| 1 | 호안 카프데빌라 | Joan Capdevila | Villarreal CF | A+ | 36/36 |
-| 2 | 에리크 아비달 | Éric Abidal | FC Barcelona | A0 | 25/25 |
-| 3 | 페르난도 나바로 | Fernando Navarro | Sevilla FC | A- | 30/31 |
 | 10 | 마리아노 페르니아 | Mariano Pernía | Club Atlético de Madrid | B- | 24/29 |
 | 11 | 이비차 드라구티노비치 | Ivica Dragutinović | Sevilla FC | B- | 11/14 |
 | 12 | 미겔 토레스 | Miguel Torres | Real Madrid CF | B- | 9/14 |
@@ -251,14 +251,14 @@
 
 | 순위 | 한국어 | 원어명 | 소속 | 티어 | 선발/출전 |
 |---:|---|---|---|---|---|
-| 5 | 미겔 몬테이루 | Miguel Monteiro | Valencia CF | B0 | 27/28 |
-| 6 | 하비 벤타 | Javi Venta | Villarreal CF | B0 | 21/22 |
-| 7 | 앙헬 로페스 | Ángel López | Villarreal CF | B0 | 19/21 |
-| 8 | 압둘라예 콩코 | Abdoulay Konko | Sevilla FC | B0 | 11/15 |
 | 1 | 다니 아우베스 | Dani Alves | FC Barcelona | S | 32/34 |
 | 2 | 세르히오 라모스 | Sergio Ramos | Real Madrid CF | A0 | 32/32 |
 | 3 | 안도니 이라올라 | Andoni Iraola | Athletic Club | A- | 33/33 |
 | 4 | 토마시 우이팔루시 | Tomáš Ujfaluši | Club Atlético de Madrid | B+ | 33/33 |
+| 5 | 미겔 몬테이루 | Miguel Monteiro | Valencia CF | B0 | 27/28 |
+| 6 | 하비 벤타 | Javi Venta | Villarreal CF | B0 | 21/22 |
+| 7 | 앙헬 로페스 | Ángel López | Villarreal CF | B0 | 19/21 |
+| 8 | 압둘라예 콩코 | Abdoulay Konko | Sevilla FC | B0 | 11/15 |
 | 9 | 아퀴발도 모스케라 | Aquivaldo Mosquera | Sevilla FC | B- | 16/17 |
 | 10 | 요르고스 세이타리디스 | Georgios Seitaridis | Club Atlético de Madrid | C+ | 10/14 |
 | 11 | 미첼 살가도 | Míchel Salgado | Real Madrid CF | C+ | 6/9 |
@@ -267,12 +267,6 @@
 
 | 순위 | 한국어 | 원어명 | 소속 | 티어 | 선발/출전 |
 |---:|---|---|---|---|---|
-| 8 | 알도 두셰르 | Aldo Duscher | Sevilla FC | B0 | 25/27 |
-| 9 | 페르난도 가고 | Fernando Gago | Real Madrid CF | B0 | 24/26 |
-| 10 | 헤드비허스 마두로 | Hedwiges Maduro | Valencia CF | B0 | 18/22 |
-| 11 | 엔초 마레스카 | Enzo Maresca | Sevilla FC | B0 | 14/21 |
-| 12 | 브루노 소리아노 | Bruno Soriano | Villarreal CF | B0 | 12/25 |
-| 13 | 카를로스 구르페기 | Carlos Gurpegui | Athletic Club | B0 | 10/19 |
 | 1 | 마르코스 세나 | Marcos Senna | Villarreal CF | A+ | 25/27 |
 | 2 | 야야 투레 | Yaya Touré | FC Barcelona | A- | 23/25 |
 | 3 | 파울루 아순상 | Paulo Assunção | Club Atlético de Madrid | B+ | 34/34 |
@@ -280,17 +274,18 @@
 | 5 | 다비드 알벨다 | David Albelda | Valencia CF | B+ | 25/30 |
 | 6 | 라사나 디아라 | Lassana Diarra | Real Madrid CF | B+ | 19/19 |
 | 7 | 세르히오 부스케츠 | Sergio Busquets | FC Barcelona | B+ | 16/24 |
+| 8 | 알도 두셰르 | Aldo Duscher | Sevilla FC | B0 | 25/27 |
+| 9 | 페르난도 가고 | Fernando Gago | Real Madrid CF | B0 | 24/26 |
+| 10 | 헤드비허스 마두로 | Hedwiges Maduro | Valencia CF | B0 | 18/22 |
+| 11 | 엔초 마레스카 | Enzo Maresca | Sevilla FC | B0 | 14/21 |
+| 12 | 브루노 소리아노 | Bruno Soriano | Villarreal CF | B0 | 12/25 |
+| 13 | 카를로스 구르페기 | Carlos Gurpegui | Athletic Club | B0 | 10/19 |
 | 14 | 에베르 바네가 | Éver Banega | Club Atlético de Madrid | B- | 5/24 |
 
 ### CM (15명)
 
 | 순위 | 한국어 | 원어명 | 소속 | 티어 | 선발/출전 |
 |---:|---|---|---|---|---|
-| 11 | 루벤 바라하 | Rubén Baraja | Valencia CF | B0 | 22/28 |
-| 12 | 마누엘 페르난데스 | Manuel Fernandes | Valencia CF | B0 | 20/27 |
-| 13 | 아리엘 이바가사 | Ariel Ibagaza | Villarreal CF | B0 | 19/30 |
-| 14 | 마니시 | Maniche | Club Atlético de Madrid | B0 | 16/21 |
-| 15 | 라파엘 판데르파르트 | Rafael van der Vaart | Real Madrid CF | B0 | 15/32 |
 | 1 | 사비 에르난데스 | Xavi Hernández | FC Barcelona | S | 34/35 |
 | 2 | 안드레스 이니에스타 | Andrés Iniesta | FC Barcelona | A+ | 22/26 |
 | 3 | 로마리크 | Romaric | Sevilla FC | B+ | 30/36 |
@@ -301,6 +296,11 @@
 | 8 | 라울 가르시아 | Raúl García | Club Atlético de Madrid | B+ | 24/36 |
 | 9 | 베슬레이 스네이더르 | Wesley Sneijder | Real Madrid CF | B+ | 18/22 |
 | 10 | 세이두 케이타 | Seydou Keita | FC Barcelona | B+ | 17/29 |
+| 11 | 루벤 바라하 | Rubén Baraja | Valencia CF | B0 | 22/28 |
+| 12 | 마누엘 페르난데스 | Manuel Fernandes | Valencia CF | B0 | 20/27 |
+| 13 | 아리엘 이바가사 | Ariel Ibagaza | Villarreal CF | B0 | 19/30 |
+| 14 | 마니시 | Maniche | Club Atlético de Madrid | B0 | 16/21 |
+| 15 | 라파엘 판데르파르트 | Rafael van der Vaart | Real Madrid CF | B0 | 15/32 |
 
 ### CAM (1명)
 
@@ -312,15 +312,15 @@
 
 | 순위 | 한국어 | 원어명 | 소속 | 티어 | 선발/출전 |
 |---:|---|---|---|---|---|
-| 7 | 프란시스코 예스테 | Francisco Yeste | Athletic Club | B0 | 24/28 |
-| 8 | 디에고 카펠 | Diego Capel | Sevilla FC | B0 | 15/32 |
-| 9 | 비센테 로드리게스 | Vicente Rodríguez | Valencia CF | B0 | 6/27 |
 | 1 | 티에리 앙리 | Thierry Henry | FC Barcelona | A+ | 24/29 |
 | 2 | 후안 마타 | Juan Mata | Valencia CF | A0 | 35/37 |
 | 3 | 시망 사브로자 | Simão Sabrosa | Club Atlético de Madrid | A- | 32/33 |
 | 4 | 로베르 피레스 | Robert Pirès | Villarreal CF | B+ | 24/32 |
 | 5 | 마르셀루 | Marcelo | Real Madrid CF | B+ | 24/27 |
 | 6 | 아드리아누 코헤이아 | Adriano Correia | Sevilla FC | B+ | 22/29 |
+| 7 | 프란시스코 예스테 | Francisco Yeste | Athletic Club | B0 | 24/28 |
+| 8 | 디에고 카펠 | Diego Capel | Sevilla FC | B0 | 15/32 |
+| 9 | 비센테 로드리게스 | Vicente Rodríguez | Valencia CF | B0 | 6/27 |
 | 10 | 이고르 가빌론도 | Igor Gabilondo | Athletic Club | B- | 11/17 |
 | 11 | 알렉산드르 흘레프 | Alexander Hleb | FC Barcelona | B- | 8/19 |
 | 12 | 로이스턴 드렌테 | Royston Drenthe | Real Madrid CF | C+ | 5/20 |
@@ -330,8 +330,6 @@
 
 | 순위 | 한국어 | 원어명 | 소속 | 티어 | 선발/출전 |
 |---:|---|---|---|---|---|
-| 8 | 마르켈 수사에타 | Markel Susaeta | Athletic Club | B0 | 24/34 |
-| 9 | 파블로 에르난데스 | Pablo Hernández | Valencia CF | B0 | 12/21 |
 | 1 | 리오넬 메시 | Lionel Messi | FC Barcelona | S | 27/31 |
 | 2 | 헤수스 나바스 | Jesús Navas | Sevilla FC | A- | 31/35 |
 | 3 | 산티 카솔라 | Santi Cazorla | Villarreal CF | A- | 26/30 |
@@ -339,6 +337,8 @@
 | 5 | 막시 로드리게스 | Maxi Rodríguez | Club Atlético de Madrid | B+ | 29/33 |
 | 6 | 호아킨 | Joaquín | Valencia CF | B+ | 27/31 |
 | 7 | 카니 | Cani | Villarreal CF | B+ | 16/22 |
+| 8 | 마르켈 수사에타 | Markel Susaeta | Athletic Club | B0 | 24/34 |
+| 9 | 파블로 에르난데스 | Pablo Hernández | Valencia CF | B0 | 12/21 |
 | 10 | 호세바 에체베리아 | Joseba Etxeberria | Athletic Club | B- | 7/22 |
 | 11 | 페드로 로드리게스 | Pedro Rodríguez | FC Barcelona | C+ | 4/6 |
 
@@ -346,9 +346,6 @@
 
 | 순위 | 한국어 | 원어명 | 소속 | 티어 | 선발/출전 |
 |---:|---|---|---|---|---|
-| 12 | 이온 벨레스 | Ion Vélez | Athletic Club | B0 | 17/28 |
-| 13 | 클라스얀 휜텔라르 | Klaas-Jan Huntelaar | Real Madrid CF | B0 | 13/20 |
-| 14 | 플로랑 시나마퐁골 | Florent Sinama-Pongolle | Club Atlético de Madrid | B0 | 11/30 |
 | 1 | 사뮈엘 에토 | Samuel Eto'o | FC Barcelona | S | 34/36 |
 | 2 | 디에고 포를란 | Diego Forlán | Club Atlético de Madrid | S | 32/33 |
 | 3 | 세르히오 아궤로 | Sergio Agüero | Club Atlético de Madrid | A+ | 34/37 |
@@ -360,6 +357,9 @@
 | 9 | 페르난도 요렌테 | Fernando Llorente | Athletic Club | B+ | 34/34 |
 | 10 | 호세바 요렌테 | Joseba Llorente | Villarreal CF | B+ | 28/32 |
 | 11 | 루이스 파비아누 | Luís Fabiano | Sevilla FC | B+ | 21/26 |
+| 12 | 이온 벨레스 | Ion Vélez | Athletic Club | B0 | 17/28 |
+| 13 | 클라스얀 휜텔라르 | Klaas-Jan Huntelaar | Real Madrid CF | B0 | 13/20 |
+| 14 | 플로랑 시나마퐁골 | Florent Sinama-Pongolle | Club Atlético de Madrid | B0 | 11/30 |
 | 15 | 가이스카 토케로 | Gaizka Toquero | Athletic Club | B- | 10/20 |
 | 16 | 니하트 카흐베지 | Nihat Kahveci | Villarreal CF | B- | 8/19 |
 | 17 | 페르난도 모리엔테스 | Fernando Morientes | Valencia CF | B- | 7/20 |
