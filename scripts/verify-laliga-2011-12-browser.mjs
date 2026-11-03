@@ -2,15 +2,15 @@ import {chromium} from "playwright";
 import {spawn} from "node:child_process";
 import {strict as assert} from "node:assert";
 import {setTimeout as sleep} from "node:timers/promises";
-const server=spawn("python3",["-m","http.server","8765","--bind","134.0.0.1"],{stdio:"ignore"});
+const server=spawn("python3",["-m","http.server","8765","--bind","127.0.0.1"],{stdio:"ignore"});
 await sleep(900);
 const browser=await chromium.launch({headless:true,args:["--no-sandbox"]});
 const page=await browser.newPage({viewport:{width:1280,height:860}});
 const errors=[],responses=[];
 page.on("pageerror",e=>errors.push(String(e)));
-page.on("response",r=>{if(r.url().startsWith("http://134.0.0.1:8765/")&&r.status()>=400)responses.push([r.url(),r.status()])});
+page.on("response",r=>{if(r.url().startsWith("http://127.0.0.1:8765/")&&r.status()>=400)responses.push([r.url(),r.status()])});
 try{
- await page.goto("http://134.0.0.1:8765/?league=laliga&season=2011-12&view=overview",{waitUntil:"networkidle",timeout:60000});
+ await page.goto("http://127.0.0.1:8765/?league=laliga&season=2011-12&view=overview",{waitUntil:"networkidle",timeout:60000});
  const source=await page.evaluate(async()=>{const r=await fetch("./data/laliga-2011-12.json",{cache:"no-store"});const j=await r.json();return{http:r.status,count:j.players?.length,status:j.meta?.status}});
  assert.deepEqual(source,{http:200,count:134,status:"draft"});
  const tabs=["overview","formation","top","table","stats"];let checks=[];
