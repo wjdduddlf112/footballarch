@@ -1,5 +1,16 @@
 # Football Archive — Player integration checkpoint
 
+## 2026-11-03 — La Liga 2005-06 full 148-player provisional DRAFT (one-season only)
+
+- Authorized by user "ㅇㅋ 다음" following La Liga 2004-05. Reassessed **only 2005-06** with relative weight 2005-06 > 2004-05 > 2003-04. Do not begin 2006-07 without an additional instruction.
+- Actual **2006-07 UEFA participants: 8 clubs**, UCL Barcelona, Real Madrid, Valencia, Osasuna (Osasuna also subsequent UEFA Cup); UEFA Cup Sevilla, Celta, Espanyol (Copa del Rey title despite league 15th); Intertoto Villarreal (UEFA official Maribor July 15/22 2006 match reports).
+- Fresh 2005-06 BDFutbol squad-year league lineup and bench research; historical prior candidate arrays not used to define nominations. **148** eligible player records (**88 starters: 11 × 8, 60 backups**) under GK/CB/side/CM/ST position caps. Registered actual 2005-06 league starts/appearances/goal counts, role and claimed main played position (individual match-level role frequency remains pending). Null/zero league starters were excluded; low-starter actual backups documented.
+- **148/148 provisional tiers and unique local position ranks**, 148/148 KO names, original names, DOB values and club originals, club-year current season URL evidence. **DOB is entered, not 148 fully double-source-verified dates.** Matías Lequi 1981-05-13 from BDFutbol Celta squad conflicts with an earlier unapproved 2003-04 draft 1981-03-15; conflict documented, earlier season not silently changed.
+- Tier totals **S2 / A+9 / A6 / A-25 / B+51 / B28 / B-17 / C+6 / C4**. World Class **11**, League Top **42**. Formation hypothesis **4-2-3-1** and 11-position correct Best XI `proposed_unapproved`. No team title/standing bonuses.
+- **24/24 connector-side JSON + published-archive parity tests PASS**: eight actual entrants, 20-club standings and club crest object preserved, unique players, 11 starters each, caps, tiers, no missing position ranks, XI IDs/slots, draft status. **Node CLI and browser rendering unexecuted**.
+- Files: `data/laliga-2005-06.json`, full tables `audit/LALIGA_2005_06_RATED_148_FULL_REPORT_2026-11-03.md`, JSON structural audit `audit/LALIGA_2005_06_STRUCTURAL_AUDIT_2026-11-03.json`. All changes isolated to `draft/laliga-2005-06-evaluation-20261103` and draft PR; existing main and old reviewed season datasets/crests/HTML/JS/CSS untouched.
+- Still open: previous **2003-04/2004-05 individual qualitative form/position-frequency** verification, full DOB source checks, 38-round leaguewide mode of formation, independent stats double-check, CLI, actual GitHub Pages display, user approval. **STOP after 2005-06**.
+
 ## 2026-11-03 — La Liga 2001-02 complete 158-player qualitative DRAFT assessment (one season, no next-season advance)
 
 - Eligible clubs **9** (2002-03 actual entry): Valencia, Deportivo, Real Madrid, Barcelona (UCL); Celta, Betis, Alavés (UEFA Cup); Málaga, Villarreal (2002 Intertoto). UEFA historical record specifically confirms both Intertoto appearances and Málaga's UEFA Cup progression.
