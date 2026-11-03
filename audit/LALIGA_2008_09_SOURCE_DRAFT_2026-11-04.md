@@ -16,7 +16,7 @@
 - Candidate players: **129**; nominal starters: **77**; backup: **52**
 - Proposed tiers: **129**, NOT independently 3-season validated
 - World Class S/A+: **13**; League Top S/A+/A/A-: **37**
-- ISO birth dates reused from earlier DRAFT archive: **88**, no independent second-source verification. Birth dates pending: **41**.
+- ISO birthdays **129/129 populated** after 41 newly researched and 88 prior archive values; 16 club/independent historical squad agree, 3 other public-source pairs agree, 3 conflicts, 35 one-source, 72 older archive-only. Full DOB evidence audit in `audit/LALIGA_2008_09_BIRTHDATE_EVIDENCE_2026-11-04.md`.
 - Previous season history: non-independent references from 2006-07 and 2007-08 archive, or null where missing. DO NOT read archive reuse as source cross-check.
 - Best XI: proposed only; 4-4-2 is an era hypothesis, not a 380-match census.
 - Position ranks: tied to provisional tiers with appearances/starts sorting; same-tier qualitative review is incomplete.
@@ -37,12 +37,12 @@
 |---|---|---|
 | UEFA 2009-10 actual club participation | checked against UEFA | 7 clubs |
 | BDFutbol season appearances/starts at nominated clubs | copied pending independent confirmation | 129 entries |
-| DOB two independent sources | incomplete | 41 missing; others inherited unverified |
+| DOB two independent sources | partial | 16 Barça official+independent roster, 3 other public pairs, 3 conflicts, 107 lacking full two-source confirmation |
 | 2006-07 and 2007-08 independent historical performances | incomplete | prior archive refs are not independent evidence |
 | Predominant actual position (match by match) | incomplete | cross-position warnings above |
 | Tier / ranking judgement | DRAFT proposal | no user approval |
 | Leaguewide modal formation | incomplete | 4-4-2 hypothesis only |
-| Site browser test | NOT RUN | Must not claim site deployment |
+| Site browser test | branch CI passing in earlier run; latest recheck pending | Local Chromium success on previous SHA; production not yet tested |
 
 ## Priority conflicts
 
@@ -51,8 +51,8 @@
 3. **Athletic**: David López 26 starts versus Ion Vélez 17; tactical base 4-4-2 requires role verification before nominal starters are certified.
 4. **Valencia**: Renan 19 starts, César 18. Goalkeeping starter label is marginal and split-season transfer/usage needs review.
 5. **Sevilla**: Renato (25 starts), Romaric (30), Duscher (25), and various fullback/wing roles require per-match reconstruction.
-6. Historical birthdays, 3-season record comparisons and side allocations remain tentative even when ISO values are present.
+6. Barcelona DOB source conflicts (Dani Alves May 5/6; Pinto Nov 8/15; Éric Abidal July 11/September 11) documented; 2006-07/07-08 individual performance and primary playing positions still need independent cross-check.
 
 ## Change-control
 
-This branch introduces a new 2008-09 player season file; it preserves the original 2007-08 player file and unchanged 20-team archive standings, clubs, crests and UI. Do not merge, deploy or call this complete until automated and public-page checks and user review are documented.
+This branch introduces a new 2008-09 player season file; it preserves the original 2007-08 player file and unchanged 20-team archive standings, clubs, crests and UI. Deployment as **visible DRAFT** is permitted after automated tests; do NOT equate deploying with user approval or historical verification. Final player evaluation remains unapproved.
