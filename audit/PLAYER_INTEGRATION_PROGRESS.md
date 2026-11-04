@@ -1,3 +1,12 @@
+## 2026-11-04 — La Liga 2017-18 PR #48 merged; real production Chromium PASS
+
+- PR #48: https://github.com/wjdduddlf112/footballarch/pull/48 ; squash main commit `9646362afeee76851aa6d643814edf9fa0b97e85`. 135 player candidates, 77 starter slots + 58 backups, 16 provisional World Class + 48 League Top, proposed 4-3-3 Best XI, DRAFT userApproved=false.
+- Initial workflow test script failed after all 13 checks succeeded due a final summary variable typo, corrected, then PR Node structural/local Chromium both **PASS** https://github.com/wjdduddlf112/footballarch/actions/runs/41771298273 .
+- Actual public GitHub Pages deployment **SUCCESS** https://github.com/wjdduddlf112/footballarch/actions/runs/41771435042 . Live production five-tab Chromium test **SUCCESS** https://github.com/wjdduddlf112/footballarch/actions/runs/41771435842 .
+- Full candidate/rank/source report https://github.com/wjdduddlf112/footballarch/blob/main/audit/LALIGA_2017_18_RATED_SOURCE_DRAFT_2026-11-04.md . Actual site https://wjdduddlf112.github.io/footballarch/?league=laliga&season=2017-18&view=overview .
+- **Not historically complete:** 133 players birthday verification not completed against two independent sources, 2015-16 and 2016-17 full personal quality research unverified, all-player 2017-18 game-by-game dominant positions unverified, 380-match modal formation not proven. All grades, ranks and XI remain provisional/unapproved.
+- Stop after season 2017-18. Do not initiate 2018-19 players until user requests next season.
+
 ## 2026-11-04 — La Liga 2017-18 135-person provisional source-led DRAFT
 
 - User explicitly requested subsequent season after 2016-17. Only **2017-18 La Liga** player assessment created; no 2018-19 evaluation.
