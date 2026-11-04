@@ -1,3 +1,15 @@
+## 2026-11-05 — Bundesliga 2001-02 DRAFT 139명 평가, main 실제 배포·브라우저 검증 PASS
+
+- 사용자의 "ㅇㅋ 다음" 지시에 따라 **2001-02 Bundesliga만** 신규 선수 평가. 2002-03 UEFA 실제 참가 9구단: Dortmund, Leverkusen, Bayern(UCL), Hertha, Schalke, Bremen(UEFA Cup), Kaiserslautern, Stuttgart, TSV 1860(2002 Intertoto 실제 참가). Schalke 2002 DFB-Pokal 우승(Leverkusen 준우승), Bremen UEFA Cup 진출 반영. Stuttgart는 Intertoto 경유 UEFA Cup 출전.
+- 기존 138명의 후보를 그대로 티어 복사하지 않고 2001-02 출전·선발 표본 및 공식 2002 Intertoto 실제 참가와 전술을 대조하여 Leverkusen Dimitar Berbatov (리그 24경기/8골) 신규 추가. 결과 **139명 / 시즌 대표 선발 99명 / 대안 후보 40명**, 포지션별 잠정 순위 139명, 티어 S 2 / A+ 14 / A0 27 / A- 16 / B+ 39 / B0 29 / B- 2 / C+ 7 / C0 2 / C- 1 / D 0; **World Class 16 / League Top Class 59**.
+- Best XI **proposed_unapproved** 3-4-1-2: Oliver Kahn; Christian Wörns, Lúcio, Jens Nowotny; Dedê(LWB), Willy Sagnol(RWB); Carsten Ramelow(DM), Michael Ballack(CM), Tomáš Rosický(CAM); Márcio Amoroso, Giovane Élber. 3백·윙백 시대 전술 대리 구성일 뿐 리그 306경기의 *통계적 최빈* 포메이션을 확정한 것은 아님.
+- 각 팀별 대표 전술 별도 기록: Dortmund 3-4-3, Leverkusen 3-5-2, Bayern 4-4-2, Hertha 4-4-2, Schalke 3-4-1-2, Bremen 4-5-1, Kaiserslautern 3-4-1-2, Stuttgart 3-4-2-1, TSV 1860 4-4-1-1 모두 **잠정**. Schalke/Kaiserslautern은 3백 수비 로테이션의 CB 4명 후보 인원 특별 예외를 명시; 조작된 LB/RB 분류를 피하고 원래 역할을 개별 메타데이터에 보존.
+- **자료 수준 분리:** 139명 출전 수치 기재, 선발 횟수 값 기록 52명 중 개별 근거 링크 확인 49명. 생년월일 139명 기재되었지만 2001-02 DFB 명단 직접 개별 확인 34명, 이전 시즌 보존 데이터로 승계 52명, 기존 미재대조 아카이브 53명; **139명 독립 2자료 DOB 검수는 미완료**. DFB/RSSSF 선수별 1999-00/2000-01/2001-02 리그 출전·골 기록 직접 연결 8명(나머지 131명 보류). 필드 선수들의 *전경기 주 포지션 빈도* 독립 검증 0명. 불확실성을 D티어로 처리하지 않음. 모든 티어·순위·Best XI는 사용자 미승인 잠정 결정.
+- 기존 다른 리그/시즌 JSON 미수정, 기존 사이트 UI 재설계 없음. 변경: `data/bundesliga-2001-02.json`; 전체 139명/10포지션 통합 순위 보고 `audit/BUNDESLIGA_2001_02_DRAFT_FULL_REPORT_2026_11_05.md`; 구조 검사 `scripts/verify-bundesliga-2001-02-draft.mjs`; 라이브 Playwright `scripts/verify-bundesliga-2001-02-live.mjs`; 전용 CI `.github/workflows/verify-bundesliga-2001-02-draft-live.yml`; 본 진행 기록.
+- 자동 Node 구조·기존 공통 검증 **PASS/오류 0건**; 실제 Pages GitHub Actions Chromium **PASS_CORE_UI** (Overview/Players/필터/상세/Top/XI/Table/Stats, 139명 DRAFT, Best XI 11, League Top 59, 엠블럼 18/18, JS 경고 0, PL1999/LaLiga1999/Bundesliga1999/Bundesliga2000 회귀 성공): https://github.com/wjdduddlf112/footballarch/actions/runs/41915874451
+- 2001-02 시즌 마지막 데이터 보강/검증 수정본 SHA `ecbe8fcdc3341f9140e30c3dad24b87af2af29ed`; **해당 SHA의 실제 GitHub Pages 배포 성공** https://github.com/wjdduddlf112/footballarch/actions/runs/41915874688 . 검사와 배포 성공 ≠ 역사적 전수 검증 완료. 사이트: https://wjdduddlf112.github.io/footballarch/?league=bundesliga&season=2001-02
+- **2002-03 신규 시즌 자동 시작 금지**, 사용자 별도 "다음" 전까지 이번 평가 범위 종료. `draft` / `proposed_unapproved` 유지.
+
 ## 2026-11-05 — Bundesliga 2000-01 136명 DRAFT 완성 / 실배포·회귀 검사 PASS
 
 - 사용자 "ㅇㅋ 다음" 명령에 따라 **2000-01 Bundesliga만** 평가. 2001-02 실제 UCL: Bayern, Schalke, Dortmund, Leverkusen; UEFA Cup: Hertha, Freiburg; 2001 Intertoto Cup 실제 참가: Bremen, Wolfsburg, TSV 1860. 2000-01 DFB-Pokal 준우승 Union Berlin은 1부 소속이 아니므로 1부 후보 범위에서 제외.
