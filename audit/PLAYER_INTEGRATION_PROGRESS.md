@@ -1,3 +1,13 @@
+## 2026-11-04 — La Liga 2014-15, 130-player source-led unapproved DRAFT
+
+- User explicitly requested next season: **2014-15 La Liga** only. Seven actual 2015-16 UEFA participants: Barcelona, Real Madrid, Atlético, Valencia **plus Sevilla (UEL winner)** into UCL (5 UCL total); Villarreal and Athletic into UEL (2).
+- New `data/laliga-2014-15.json` and complete `audit/LALIGA_2014_15_RATED_SOURCE_DRAFT_2026-11-04.md`: **130 players, 77 tactical starter slots + 53 backup/rotation**, 22 provisional World Class, 50 provisional League Top. Proposed 4-2-3-1 best XI; source-led 2014-15 BDFutbol PM/SM/G per eligible club.
+- Special record: Barcelona goalkeeper **Marc-André ter Stegen 0/0 La Liga** but 13 Champions League + 8 Copa del Rey starts, first-choice cup goalkeeper. Kept separate non-league evidence instead of inventing league appearances. Messi was RW (43 league goals), Neymar LW (22), Suárez central striker (16), Claudio Bravo league keeper (37).
+- All 130 ISO DOBs populated, full independent two-source confirmation **NOT complete**. Adriano Correia and Gameiro conflicting historical sources flagged. Previous 2012-13 and 2013-14 individual personal quality and other clubs/leagues **not independently all rechecked**, previous Football Archive entries are DRAFT pointers only.
+- Predominant 2014-15 game-by-game positions, all-player 3-season personal comparison and season-specific most common formation across 380 La Liga matches remain **unverified**. Several dual-position candidates, starters labeled as backups due positional tactical cap, and 4-3-3 Barcelona versus 4-4-2 Atlético/Villarreal require full match census.
+- All tiers/ranks and Best XI **proposed/unapproved**; no result/title bonus. 20-team original standings, club crests, other seasons and UI source preserved. Node structural and local/production Chromium workflows added to branch `draft/laliga-2014-15-source-led-20261104`. **Do not claim CI or public deployment until actual Actions pass**.
+- Stop after 2014-15; do not automatically proceed to 2015-16.
+
 ## 2026-11-04 — La Liga 2013-14 DRAFT published and live GitHub Pages Chromium PASS
 
 - PR #44 merged on main as squash commit `93137192d720eea6a5173cad8d5d913112ae6254`. `data/laliga-2013-14.json` retains `meta.status=draft`, `userApproved=false`, `bestXiStatus=proposed_unapproved`; **136 players / 77 nominal starters + 59 backups**, 21 provisional World Class / 51 League Top.
