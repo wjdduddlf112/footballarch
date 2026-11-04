@@ -908,3 +908,11 @@ Source TXT instruction adapted to the **2009-10 season only**. Candidate roster 
 - New season JSON, complete Markdown audit, Node validator, Chromium five-tab test, Actions workflow. No past season JSON, original app JS/CSS, standings verification data, crest sources, championship marker modified.
 - **Keep historicalFactVerification=false and userApproved=false.** Track GitHub CI, PR merge, Pages deployment and live Chromium separately; do not call structural PASS historic verification.
 - Stop at 2020-21, do not start 2021-22 until explicit user instruction.
+
+
+### La Liga 2020-21 PR #51 CI and main integration status — 2026-11-04
+- Pull Request #51: https://github.com/wjdduddlf112/footballarch/pull/51
+- Structural checks + local Chromium five-tab/player-modal checks **PASS**, verified GitHub Actions PR run https://github.com/wjdduddlf112/footballarch/actions/runs/41790519190 (both jobs completed success).
+- PR squash-merged into main: commit `8310da3ebb51ad58152bbf02ed5a8befee18c532`. GitHub connector fetched `data/laliga-2020-21.json` on main and confirmed 128 DRAFT candidates, seven UEFA qualifiers, 4-4-2, `userApproved=false`.
+- Separate live Pages workflow file `.github/workflows/verify-laliga-2020-21-live.yml` exists on main; **live GitHub Pages deployment state and actual live Chromium result NOT independently observed** at this checkpoint. Do not conflate local branch QA success with published live QA.
+- Historical DOB/role/three-season independent accuracy limitations remain OPEN, unchanged.
