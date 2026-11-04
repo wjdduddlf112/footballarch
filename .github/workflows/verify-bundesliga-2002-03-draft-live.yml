@@ -1,0 +1,61 @@
+name: Verify Football Archive Bundesliga 2002-03 DRAFT & LIVE
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/verify-bundesliga-2002-03-draft-live.yml'
+      - 'index.html'
+      - 'assets/**'
+      - 'data/bundesliga-2002-03.json'
+      - 'scripts/verify-bundesliga-2002-03-*.mjs'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test-draft-and-live:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+      - name: Check Javascript and candidate structure
+        run: |
+          node --check assets/app.js
+          node --check scripts/verify-bundesliga-2002-03-draft.mjs
+          node --check scripts/verify-bundesliga-2002-03-live.mjs
+          node scripts/verify-bundesliga-2002-03-draft.mjs
+          node scripts/verify-bundesliga.mjs
+          node scripts/verify-player-integration.mjs
+      - name: Install headless Chromium
+        run: |
+          npm install --no-save --no-package-lock playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Verify updated JSON actually served by GitHub Pages
+        run: |
+          for attempt in $(seq 1 12); do
+            curl -fsSL --max-time 20 "https://wjdduddlf112.github.io/footballarch/data/bundesliga-2002-03.json?sha=${{ github.sha }}" -o /tmp/bundesliga02-live.json || true
+            if node -e "const fs=require('node:fs');const d=JSON.parse(fs.readFileSync('/tmp/bundesliga02-live.json','utf8'));if(d.meta.status!=='draft'||d.players.length!==163||d.players.filter(p=>p.tier).length!==163||d.bestXi.length!==11||d.meta.formation!=='4-4-2')process.exit(1)" 2>/dev/null; then
+              echo "Actual GitHub Pages Bundesliga 2002-03 JSON is updated."
+              break
+            fi
+            if [ "$attempt" = 12 ]; then
+              echo "Actual Pages JSON did not match this commit after checks."
+              exit 1
+            fi
+            sleep 20
+          done
+          node scripts/verify-bundesliga-2002-03-live.mjs
+        env:
+          SITE_URL: https://wjdduddlf112.github.io/footballarch/
+      - name: Upload screenshots and result
+        if: always()
+        uses: actions/upload-artifact@v5
+        with:
+          name: bundesliga-2002-03-pages-live-audit
+          path: audit-artifacts/bundesliga-2002-03-live/
+          if-no-files-found: warn
