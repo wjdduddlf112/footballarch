@@ -428,7 +428,10 @@ Selection / exclusion / hybrid-role notes:
 ## D. World Class / League Top Class
 World Class S+A+ = **21**; League Top S+A++A0+A- = **51**; all grades unapproved hypotheses. Tier distribution: {"S":3,"A+":18,"A":0,"A-":30,"B+":42,"B":27,"B-":9,"C+":5,"C":2,"C-":0} (A/B/C native JSON are displayed A0/B0/C0).
 
-## E. Proposed season representative 4-3-3 Best XI (unapproved, not leaguewide modal formation proof)
+## E. Proposed representative 4-2-3-1 Best XI (unapproved, supported by multi-season tactical research; 2013-14 single-year modal not certified)
+
+2012/13–2016/17 multi-season La Liga tactical analysis identifies **4-2-3-1** as the most common general shape across the interval. Source: https://pubmed.ncbi.nlm.nih.gov/37559775/ and https://jhk.termedia.pl/Evolution-of-Tactics-in-Professional-Soccer-nAn-Analysis-of-Team-Formations-from%2C167468%2C0%2C2.html . **No 2013-14-only all-380-match formation census** was completed. Atlético/Villarreal team-specific 4-4-2 and Barça/Real Madrid 4-3-3 preserved.
+
 | Pos | Korean | Original | Original club | DOB | Starts / Apps | Tier |
 |---|---|---|---|---|---:|---|
 | GK | 티보 쿠르투아 | Thibaut Courtois | Atlético de Madrid | 1992-05-11 | 37/37 | A+ |
@@ -438,10 +441,11 @@ World Class S+A+ = **21**; League Top S+A++A0+A- = **51**; all grades unapproved
 | RB | 후안프란 | Juanfran | Atlético de Madrid | 1985-01-09 | 35/35 | A- |
 | DM | 세르히오 부스케츠 | Sergio Busquets | FC Barcelona | 1988-07-16 | 30/32 | A+ |
 | CM | 루카 모드리치 | Luka Modrić | Real Madrid | 1985-09-09 | 29/34 | A+ |
-| CM | 앙헬 디 마리아 | Ángel Di María | Real Madrid | 1988-02-14 | 27/34 | A+ |
+| CAM | 이반 라키티치 | Ivan Rakitić | Sevilla FC | 1988-03-10 | 29/34 | A+ |
 | LW | 크리스티아누 호날두 | Cristiano Ronaldo | Real Madrid | 1985-02-05 | 30/30 | S |
 | RW | 가레스 베일 | Gareth Bale | Real Madrid | 1989-07-16 | 24/27 | A+ |
-| ST | 디에고 코스타 | Diego Costa | Atlético de Madrid | 1988-10-07 | 34/35 | S |
+| ST | 리오넬 메시 | Lionel Messi | FC Barcelona | 1987-06-24 | 29/31 | S |
+
 
 ## F. Validation: mechanical completion vs historical factual verification
 | Gate | Current result |
@@ -451,14 +455,14 @@ World Class S+A+ = **21**; League Top S+A++A0+A- = **51**; all grades unapproved
 | Birthdates | 136 ISO entered from historical squad pages or additional corroboration; **independent two-source certification incomplete** |
 | Three-season personal performance, including moves outside selected clubs | 2011-12 + 2012-13 earlier Football Archive DRAFT pointers only; independently sourced qualitative comparison incomplete |
 | 2013-14 predominant individual positions and left-right | Current season tactical roles proposed; game-by-game 38-match majority unverified |
-| Seasonwide most frequent formation | No leaguewide 380-match census; 4-3-3 era-appropriate Best XI hypothesis |
+| Seasonwide most frequent formation | Multi-season published study 2012/13–2016/17 identifies 4-2-3-1 as common; 2013-14-specific 380-match modal formation not independently proven |
 | Tiers, positional ranks, Best XI | Populated as unapproved provisional relative assessments, not individually certified |
 | GitHub Node checks / local Chromium | To be verified in dedicated Action; a green check is mechanical only |
 | Public Pages Chromium | To be checked separately after deployment; do not infer from merged PR |
 
 ### Explicit date discrepancies and decisions
-- Adriano Correia: current FootballSquads 1984-10-26 vs previously identified Barcelona historical 1984-10-20 discrepancy; retained 1984-10-26, unresolved.
-- Iago Herrerín: current FootballSquads 1988-01-25 vs prior Football Archive 1988-03-13; current FootballSquads date selected provisionally but requires authoritative confirmation.
+- Adriano Correia: official current FC Barcelona legends biography (https://www.fcbarcelona.com/en/football/barca-legends/players/4246202/adriano) and FC Barcelona player archive (https://players.fcbarcelona.com/en/player/8-adriano-adriano-correia-claro) support 1984-10-26; older FCB published roster shows 1984-10-20. Retained 1984-10-26, older official document conflict not erased.
+- Iago Herrerín: 1988-01-25 confirmed by official Athletic Club biography (https://www.athletic-club.eus/en/players/iago-herrerin-buisan/) and FootballSquads historical listing. Earlier Football Archive 1988-03-13 was a DRAFT error, resolved.
 - Kévin Gameiro: FootballSquads 2014-15 gave 1987-04-09, but official French Football Federation and Atlético de Madrid biography report **1987-05-09**. Adopted 1987-05-09; conflict explicitly documented. https://www.fff.fr/equipe-nationale/joueur/8677-gameiro-kevin/fiche.html
 
 **Avoid false data validation:** Merely entering a birth date or carrying over a draft grade is not independent truth verification. No team success bonus in individual grades. 2013-14 > 2012-13 > 2011-12. Do not treat structural/Chromium pass as evidence about 3-season personal performance quality.
