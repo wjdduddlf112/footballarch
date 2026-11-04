@@ -9,6 +9,7 @@ const ranks=["S","A+","A","A-","B+","B","B-","C+","C","C-","D"];
 const positions=["GK","CB","LB","RB","DM","CM","CAM","LW","RW","ST"];
 const slots433=[["LW",15,13],["ST",50,11],["RW",85,13],["CM",30,37],["CAM",70,37],["DM",50,54],["LB",13,73],["CB",37,76],["CB",63,76],["RB",87,73],["GK",50,91]];
 const slots442=[["ST",35,14],["ST",65,14],["LW",12,40],["CM",42,45],["DM",60,52],["RW",88,40],["LB",13,74],["CB",37,76],["CB",63,76],["RB",87,74],["GK",50,91]];
+const slots3412=[["ST",34,13],["ST",66,13],["CAM",50,34],["CM",33,51],["DM",67,51],["LB",9,63],["RB",91,63],["CB",25,77],["CB",50,81],["CB",75,77],["GK",50,93]];
 const slots4231=[["ST",50,12],["LW",14,32],["CAM",50,36],["RW",86,32],["DM",38,56],["CM",62,56],["LB",13,76],["CB",37,79],["CB",63,79],["RB",87,76],["GK",50,92]];
 const q=new URLSearchParams(location.search);
 const st={domain:"domestic",league:"laliga",season:"1999-00",tab:"overview",home:!q.has("league"),showCandidates:q.get("view")==="ranking",position:"all",club:"all",from:"S",to:"D",search:"",tier:"all",age:"all",qualifiedOnly:false};
@@ -26,7 +27,7 @@ function crest(id){
 function comp(name){if(!name)return '<span class="muted">—</span>';const type=name==="UEFA Cup"?"UEFA-Cup":name==="Intertoto Cup"?"Intertoto-Cup":name;let shown=name==="Intertoto Cup"?"Intertoto":name==="UEFA Cup"?"UEFA Cup":name;return '<span class="comp '+esc(type)+'">'+esc(shown)+'</span>'}
 const tierClassNames={"S":"tier-grade-s","A+":"tier-grade-a-plus","A":"tier-grade-a","A-":"tier-grade-a-minus","B+":"tier-grade-b-plus","B":"tier-grade-b","B-":"tier-grade-b-minus","C+":"tier-grade-c-plus","C":"tier-grade-c","C-":"tier-grade-c-minus","D":"tier-grade-d"};
 function tierClass(t){return tierClassNames[t]||""}
-function grade(t){return t?'<span class="tier '+tierClass(t)+' '+(ranks.indexOf(t)<=3?"top":"")+'">'+esc(t)+'</span>':'<span class="placeholder">미평가</span>'}
+function grade(t){const label=({"A":"A0","B":"B0","C":"C0"})[t]||t;return t?'<span class="tier '+tierClass(t)+' '+(ranks.indexOf(t)<=3?"top":"")+'">'+esc(label)+'</span>':'<span class="placeholder">미평가</span>'}
 function top(p){return p.tier&&ranks.indexOf(p.tier)<=3}
 function age(p){if(!p.born)return null;let vals=p.born.split("-").map(Number);if(vals.length!==3||!vals[0])return null;const year=2000+Number(st.season.split("-")[1]);return year-vals[0]-((vals[1]>6)?1:0)}
 function option(items,current){return items.map(x=>'<option value="'+esc(x[0])+'"'+(x[0]===current?' selected':'')+'>'+esc(x[1])+'</option>').join("")}
@@ -108,7 +109,7 @@ function pageIntro(){
 function statValue(label,value,note){return '<div class="metric"><span class="name">'+label+'</span><strong class="value">'+value+'</strong>'+(note?'<small class="note">'+esc(note)+'</small>':"")+'</div>'}
 function qualifiers(){return data?.qualifiers||[]}
 function qualItem(v){
- const body=crest(v.club)+'<span class="qual-title">'+esc(club(v.club).name)+'</span>'+comp(v.competition);
+ const body=crest(v.club)+'<span class="qual-title">'+esc(club(v.club).name)+'</span>'+comp(v.competition)+(v.additionalCompetitions||[]).map(comp).join('');
  return data?.meta?.standingsOnly?'<div class="qual-item static-qual">'+body+'</div>':'<button class="qual-item" data-club-go="'+esc(v.club)+'">'+body+'</button>';
 }
 function overview(){
@@ -127,6 +128,8 @@ function overview(){
  }
  if(data?.meta?.playerCandidateReview?.method==="fresh_research_not_reusing_previous_imported_candidate_pool"){const evaluated=(data.players||[]).filter(p=>p.tier).length;result+='<section class="panel" style="margin-top:15px"><h2>DRAFT · 신규 선수 조사</h2><p class="muted small" style="margin:6px 0 0">'+(data.players||[]).length+'명은 검토용 후보이며 확정 선정이 아닙니다. 잠정 티어 '+evaluated+'명 / 근거 추가 확인 '+((data.players||[]).length-evaluated)+'명. Best XI·순위·티어 모두 사용자 미승인 상태입니다.</p></section>';}
  if(qualified.length)result+='<section class="panel" style="margin-top:15px"><div class="section-heading"><h2>European Qualification</h2></div><div class="qual-list">'+qualified.map(qualItem).join("")+'</div></section>';
+  const tactical=data?.meta?.clubTactics;
+  if(tactical&&!data?.meta?.standingsOnly)result+='<section class="panel" style="margin-top:15px"><div class="section-heading"><h2>구단별 1999-00 대표 전술 <span class="muted">DRAFT</span></h2></div><div class="relegation-list">'+qualified.filter(q=>tactical[q.club]).map(q=>'<div class="relegation-item"><div><b>'+esc(club(q.club).name)+'</b> <span class="small muted">· '+esc(tactical[q.club].formation)+'</span><div class="small muted">'+esc(tactical[q.club].note||"") +'</div></div></div>').join("")+'</div></section>';
  if(relegated.length)result+='<section class="panel relegation-overview"><div class="section-heading"><h2>Relegation</h2></div><div class="relegation-list">'+relegated.map(r=>'<div class="relegation-item">'+crest(r.club)+'<span>'+esc(r.rank)+'위 '+esc(club(r.club).name)+(r.outcome==="relegated_administrative"?" · 행정":"")+'</span><b>'+esc(r.points)+' PTS</b></div>').join("")+'</div></section>';
  if(st.showCandidates&&data.players?.length)result+=candidatePool();
  if((data.bestXi||[]).length===11&&data.meta.bestXiReview?.status==="proposed_unapproved")result+='<section class="panel" style="margin-top:15px"><div class="section-heading"><h2>Best XI <span class="muted">DRAFT</span></h2><button class="pill" data-go="formation">보기</button></div></section>';
@@ -140,7 +143,7 @@ function filterPlayers(arr,useTop){
 function filters(useTop,stats){
  let v='<div class="toolbar"><select data-filter="position" aria-label="Position">'+option([["all","All Positions"],...positions.map(p=>[p,p])],st.position)+'</select>';
  v+='<select data-filter="club" aria-label="Club">'+option([["all","All Clubs"],...qualifiers().map(q=>[q.club,club(q.club).name])],st.club)+'</select>';
- if(!useTop)v+='<select data-filter="from" aria-label="Tier range start">'+option(ranks.map(t=>[t,t]),st.from)+'</select><span class="muted">~</span><select data-filter="to" aria-label="Tier range end">'+option(ranks.map(t=>[t,t]),st.to)+'</select>';
+ if(!useTop)v+='<select data-filter="from" aria-label="Tier range start">'+option(ranks.map(t=>[t,({"A":"A0","B":"B0","C":"C0"})[t]||t]),st.from)+'</select><span class="muted">~</span><select data-filter="to" aria-label="Tier range end">'+option(ranks.map(t=>[t,({"A":"A0","B":"B0","C":"C0"})[t]||t]),st.to)+'</select>';
  if(stats)v+='<select data-filter="age">'+option([["all","All Ages"],["22","22세 이하"],["23","23–27세"],["28","28–32세"],["33","33세 이상"]],st.age)+'</select>';
  else if(!useTop)v+='<input data-filter="search" aria-label="Search player name" placeholder="선수·구단 검색" value="'+esc(st.search)+'">';
  v+='</div>';return v;
@@ -156,7 +159,7 @@ function candidatePool(){
 
 function topPage(){
  let all=rankPlayers(),filtered=filterPlayers(all,true);let count=t=>all.filter(p=>p.tier===t).length;
- let cards='<div class="top-scores">'+["S","A+","A","A-"].map(t=>'<button class="top-score '+tierClass(t)+' '+(st.tier===t?"active":"")+'" data-toptier="'+t+'"><b>'+t+'</b><small>'+count(t)+' players</small></button>').join("")+'</div>';
+ let cards='<div class="top-scores">'+["S","A+","A","A-"].map(t=>'<button class="top-score '+tierClass(t)+' '+(st.tier===t?"active":"")+'" data-toptier="'+t+'"><b>'+(({"A":"A0","B":"B0","C":"C0"})[t]||t)+'</b><small>'+count(t)+' players</small></button>').join("")+'</div>';
  let world=all.filter(p=>p.tier==="S"||p.tier==="A+").length;
  let body='<div class="section-heading"><div><h2>League Top Class</h2><p class="muted small">World Class (S · A+): '+world+'명 / League Top Class (S · A+ · A · A-): '+all.filter(top).length+'명 · 모두 잠정 평가</p></div><button class="pill '+(st.tier==="all"?"active":"")+'" data-toptier="all">All tiers</button></div>'+cards+'<div style="margin-top:15px">'+filters(true,false)+'</div>'+tablePlayers(filtered);
  if(!hasTop())body='<div class="section-heading"><h2>League Top Class</h2></div><div class="empty">등록된 선수 없음</div>';
@@ -164,8 +167,8 @@ function topPage(){
 }
 function formation(){
  let selection=(data.bestXi||[]).slice(0,11),used={};
- let formationName=["4-4-2","4-2-3-1","4-3-3"].includes(data?.meta?.formation)?data.meta.formation:"4-3-3";
- let layout=formationName==="4-2-3-1"?slots4231:formationName==="4-4-2"?slots442:slots433;
+ let formationName=["3-4-1-2","4-4-2","4-2-3-1","4-3-3"].includes(data?.meta?.formation)?data.meta.formation:"4-3-3";
+ let layout=formationName==="3-4-1-2"?slots3412:formationName==="4-2-3-1"?slots4231:formationName==="4-4-2"?slots442:slots433;
  // A classic 4-4-2 may contain two CM players rather than one CM plus one DM.
  // Respect existing 1 CM + 1 DM data for other seasons while rendering both CMs here.
  if(formationName==="4-4-2"&&selection.filter(p=>p.position==="CM").length===2&&selection.every(p=>p.position!=="DM")){
