@@ -462,3 +462,10 @@ The site's representative 4-3-3 is NOT confirmed by a 380-game leaguewide tactic
 - **Public GitHub Pages Chromium all five tabs and player-detail PASS** https://github.com/wjdduddlf112/footballarch/actions/runs/41778404306 .
 - Public URL https://wjdduddlf112.github.io/footballarch/?league=laliga&season=2018-19&view=overview .
 - These are structural and UI proof, **NOT a second-source check of all 128 season league statistics, 127 provisionally sourced DOBs, historical most-played positions and previous two seasons' individual ability**. All grades and XI remain unapproved DRAFT.
+
+### Best XI right-back 3-season draft correction
+
+The originally proposed Santiago Arias RB was revised to **Damián Suárez (Getafe CF)**, in part supported by 2018-19 36 league appearances / 36 starts in both BDFutbol and FBref and 2017-18 33 league starts (FBref). This remains an unapproved tentative selection; 2016-17 player evidence is not independently completed.
+
+- https://fbref.com/en/players/ba5004e1/Damian-Suarez
+- https://www.bdfutbol.com/en/t/t2018-1916.html
