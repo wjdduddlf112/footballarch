@@ -928,3 +928,12 @@ Source TXT instruction adapted to the **2009-10 season only**. Candidate roster 
 - New 2021-22-only season JSON, 131-player readable full audit report, 2021-22 dedicated Node validator, five-tab Chromium browser check and GitHub Actions CI. No previous seasons, standings verification JSON or main UI/emblem/champion marker altered.
 - Review file: audit/LALIGA_2021_22_RATED_SOURCE_DRAFT_2026-11-04.md
 - CI vs historical evidence vs live deployment tracked separately. Stop before 2022-23 pending new user instruction.
+
+
+### La Liga 2021-22 PR #52 final CI and main integration (2026-11-04)
+- Reviewable player roster, 131 tiers/ranks, 4-4-2 provisional Best XI, 7 actual 2022-23 UEFA participants and all 20 historic league standing rows, stored as source-linked DRAFT.
+- Structural Node test + existing La Liga standings validator: PASS. GitHub Actions Chromium all five tabs and Best XI/player modal: PASS **after correcting stale 2020-21 Messi test expectation to 2021-22 Benzema**. Passing workflow: https://github.com/wjdduddlf112/footballarch/actions/runs/41792202627 .
+- PR #52: https://github.com/wjdduddlf112/footballarch/pull/52 — squash merged into main, commit `339fd99ff16ade240a736ed31ab78ab4bc88c830`.
+- The new dedicated GitHub Pages live script/workflow exists on main; public Pages deployment and LIVE Chromium results have NOT been independently observed from the tools used. Must report separate gate as pending.
+- Full individual 2019-20/2020-21 weighted qualitative comparisons, two-source DOB for all, actual per-match majority position and current season second-source player stats remain unverified. Still `historicalFactVerification=false`, `userApproved=false`, `bestXiStatus=proposed_unapproved`.
+- Stop before La Liga 2022-23; only explicit user continuation authorizes.
