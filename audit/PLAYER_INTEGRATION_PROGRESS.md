@@ -1,3 +1,11 @@
+## 2026-11-04 — La Liga 2016-17 DRAFT merged and actual public Pages Chromium PASS
+
+- PR #47 merged into main commit `694e7e5cbf2537b1eada10f5c00e8e0c2bfa90a4`. Total **135 nominees / 77 starter slots / 58 backups; 17 provisional World Class / 50 League Top**; proposed 4-3-3 Best XI remains unapproved.
+- Structural Node and local Chromium **PASS**: https://github.com/wjdduddlf112/footballarch/actions/runs/41769335054 . Actual GitHub Pages build and deployment **SUCCESS**: https://github.com/wjdduddlf112/footballarch/actions/runs/41769445966 . Public site five-tab Chromium and player detail **PASS**: https://github.com/wjdduddlf112/footballarch/actions/runs/41769446919 .
+- Complete full player + position report: https://github.com/wjdduddlf112/footballarch/blob/main/audit/LALIGA_2016_17_RATED_SOURCE_DRAFT_2026-11-04.md . Live browser: https://wjdduddlf112.github.io/footballarch/?league=laliga&season=2016-17&view=overview .
+- **HISTORICAL VALIDATION IS NOT COMPLETE:** DOB presence (135) is not independent double-sourcing; player 2014-15/2015-16 individual form, 2016-17 matchwise role share and 380-match modal tactical formation not independently verified. Current season league stats are BDFutbol team-table 1-source. Scores and tiers remain provisional and userApproved=false.
+- 2017-18 player assessment NOT started. Season 2016-17 stop after this batch pending user request.
+
 ## 2026-11-04 — La Liga 2016-17 source-led 135-player DRAFT, historical checks incomplete
 
 - Season scope changed only on user's explicit “다음” request after 2015-16. Actual 2017-18 Europe participants: Madrid, Barça, Atlético, Sevilla UCL; Villarreal, Real Sociedad, Athletic UEL. UEFA UEFA/RFEF source references in `audit/LALIGA_2016_17_RATED_SOURCE_DRAFT_2026-11-04.md`.
