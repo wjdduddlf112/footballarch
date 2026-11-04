@@ -405,7 +405,7 @@ Formation display: **4-3-3**. Historical source https://www.bdfutbol.com/en/t/t2
 | CB | 디에고 고딘 | Diego Godín | Atlético de Madrid | A+ |
 | CB | 제라르 피케 | Gerard Piqué | FC Barcelona | A+ |
 | LB | 조르디 알바 | Jordi Alba | FC Barcelona | A+ |
-| RB | 산티아고 아리아스 | Santiago Arias | Atlético de Madrid | B+ |
+| RB | 다미안 수아레스 | Damián Suárez | Getafe CF | A- |
 | DM | 세르히오 부스케츠 | Sergio Busquets | FC Barcelona | A+ |
 | CM | 다니 파레호 | Dani Parejo | Valencia CF | A+ |
 | CM | 루카 모드리치 | Luka Modrić | Real Madrid | A0 |
