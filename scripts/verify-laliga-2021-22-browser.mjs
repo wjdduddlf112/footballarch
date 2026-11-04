@@ -24,7 +24,7 @@ try{
   checks.push({tab,length:txt.length,excerpt:txt.slice(0,70)});
  }
  await page.locator('button[data-tab="formation"]').click();
- assert.match(await page.locator("#content").innerText(),/메시|Messi/);
+ assert.match(await page.locator("#content").innerText(),/벤제마|Benzema/);
  await page.locator('button[data-tab="top"]').click();
  const player=page.locator("[data-player]").first();
  assert.ok(await player.count(),"player card absent");
