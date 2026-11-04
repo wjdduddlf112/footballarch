@@ -1,3 +1,14 @@
+## 2026-11-04 — La Liga 2013-14 (user requested next season) 136-player unapproved source-led DRAFT
+
+- 2013-14 La Liga selection restricted to seven **actual** 2014-15 UEFA entrants: Atlético, Barcelona, Madrid, Athletic Club (Champions League); Sevilla, Villarreal, Real Sociedad (Europa League including actual playoff participants).
+- New `data/laliga-2013-14.json`: **136** eligible club player nominees from each 2013-14 BDFutbol PM/SM/G team roster, nominal 77 tactical starters and 59 backups. Provisional grades 3 S / 18 A+ / 30 A- / 42 B+ / 27 B0 / 9 B- / 5 C+ / 2 C0, **World Class 21 / League Top 51**; all individual positions/grades/ranks and Best XI are **DRAFT, not user approved**.
+- Complete team-by-team 136-person table and positional ranks at `audit/LALIGA_2013_14_RATED_SOURCE_DRAFT_2026-11-04.md`. 20-team table, club catalog/crests, all older seasons and static site UI preserved.
+- Nominal era 4-2-3-1 XI supported by **independent multi-season La Liga tactical study** for 2012/13–2016/17 (https://pubmed.ncbi.nlm.nih.gov/37559775/) — **does not certify 2013-14 single-season 380-match modal formation**. Team Atletico 4-4-2, Barca/Madrid 4-3-3, Villarreal 4-4-2 are distinct.
+- ISO DOB populated **136/136** but independent two-source confirmation of all 136 **NOT complete**. Verified Iago Herrerín 1988-01-25 using Athletic official plus historic FootballSquads (correcting old DRAFT 1988-03-13). Adriano 1984-10-26 retained with official current FC Barcelona support; older Barca source disagreement 1984-10-20 still documented. Kévin Gameiro 1987-05-09 supported by France FFF/Atlético official vs FootballSquads conflicting April 9; source preference logged.
+- Full individual previous 2011-12/2012-13 personal form and 2013-14 match-by-match most-frequent position: **NOT independently completed** for all 136. Earlier Football Archive DRAFT pointers do not count as independent proof; no team title/rank bonuses to player grade. Goalkeepers' source negative G is goals conceded, not goals scored; dataset GK goals scored zero.
+- GitHub working branch `draft/laliga-2013-14-source-led-20261104`; new Node structure validator, local and published Chromium scripts plus CI. **Do not assert CI, GitHub Pages or live Chromium PASS until actual workflow result.**
+- **Stop after 2013-14**; preserve all unapproved statuses.
+
 ## 2026-11-04 — La Liga 2012-13 GitHub Pages publication and real Chromium PASS (unapproved DRAFT)
 
 - PR #43 squash merged onto main SHA `51cc59f46764b5794b7209b91369b40c338a428f`. 2012-13 `meta.status=draft`, `userApproved=false` and `bestXiStatus=proposed_unapproved`. Player count 135, nominal 77 tactical starters + 58 backups, provisional World Class 17, League Top 45.
