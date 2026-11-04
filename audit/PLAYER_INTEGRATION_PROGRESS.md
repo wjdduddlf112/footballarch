@@ -1,3 +1,13 @@
+## 2026-11-04 — La Liga 2018-19 PR #49 merged, draft live validation
+
+- User-requested 2018-19 La Liga: Barcelona, Atlético, Madrid, Valencia to 2019-20 UCL; Getafe, Sevilla, Espanyol to UEL, checked against UEFA 2019-20 actual participation.
+- PR https://github.com/wjdduddlf112/footballarch/pull/49 merged main squash `645180a61dfa784aa15aa50b4ec7e60c6badaf3d`. 128 nominees, 77 primary tactical roles, 51 alternate roles, provisional World 11, League Top 44; all tiers and ranks user-unapproved.
+- Node 13 structural + local Chromium **PASS** https://github.com/wjdduddlf112/footballarch/actions/runs/41778191731 . Actual Pages **SUCCESS** https://github.com/wjdduddlf112/footballarch/actions/runs/41778403074 . Production Chromium full 5 tabs and player detail **PASS** https://github.com/wjdduddlf112/footballarch/actions/runs/41778404306 .
+- Initial PR Chromium failure caused stale 135 expected count, corrected to actual 128. First live workflow passed JSON and all five tabs, then failed wrong literal-modal-label assertion (the label does not exist in actual UI), fixed to verify the JSON meta.status=draft. Subsequent production Chromium passed. Do not confuse expected-string test changes with player history verification.
+- Extra cross-check FBref on Getafe RB Damián Suárez confirms 2018-19 36/36 league and prior 2017-18 33/33; candidate provisional Best XI RB changed from Arias to Damián; still DRAFT.
+- Full all-player and positional rankings report https://github.com/wjdduddlf112/footballarch/blob/main/audit/LALIGA_2018_19_RATED_SOURCE_DRAFT_2026-11-04.md ; page https://wjdduddlf112.github.io/footballarch/?league=laliga&season=2018-19&view=overview .
+- **Historical limitations:** 127 DOB not independently two-sourced, 2016-17/2017-18 all-player quality research unfinished, 2018-19 38-game primary positions and league 380-match modal formation unverified; some backups with only 1-4 league starts may not qualify under starter-equivalent criterion and need removal/replacement. No final approval; no 2019-20 season work.
+
 ## 2026-11-04 — La Liga 2018-19 provisional 128-player candidate audit
 
 - User explicit "다음": only 2018-19 La Liga, no 2019-20 assessment. Actual 2019-20 UCL entrants: Barça, Atlético, Real Madrid, Valencia. UEL: Getafe, Sevilla, Espanyol. UEFA officially verified.
