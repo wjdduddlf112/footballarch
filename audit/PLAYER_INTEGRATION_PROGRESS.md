@@ -884,3 +884,15 @@ Source TXT instruction adapted to the **2009-10 season only**. Candidate roster 
 - Club-specific corrected transfer snapshots: Bournemouth Semenyo 20/20 10G3A, Palace Guehi 20/20 2G2A, Palace Jorgen Strand Larsen 12/14 3G0A. No combined two-club data for these player records.
 - Most-player official match starts, individual DOB 2nd source, match-by-match primary position remain open; source mirrored PL stats cannot be treated as independent corroboration.
 - All player rankings/Best XI user UNAPPROVED; season JSON status DRAFT. audit/PLAYER_PREMIERLEAGUE_2025-26_DRAFT_REVIEW.md.
+
+
+
+## La Liga 2019-20 source-led DRAFT checkpoint — 2026-11-04
+- Actual **2020-21 European entrants verified** from UEFA 2020-21 historical UCL/UEL group participants: Real Madrid, FC Barcelona, Atlético de Madrid, Sevilla (UCL); Villarreal, Real Sociedad, Granada (UEL). Reused previously verified 2019-20 final 20-team standings/crests unchanged.
+- Peer-reviewed season-era **La Liga modal 4-4-2**, confirmed as most-used in 2017-18 to 2020-21 study (https://pmc.ncbi.nlm.nih.gov/articles/PMC10407311/); exact standalone 2019-20 380-game frequency remains independently unrecounted.
+- New **132 source-nominated 2019-20 player records** across 7 clubs, 77 nominal 11-person team starters, 55 backups. Each season current club BDFutbol PM/SM/G matched manually once; 2017-18 and 2018-19 prior-DRAFT pointers used only to populate some biographical data and unverified retrospective slots, not to choose new nominees.
+- 132/132 provisional S–C tiers and continuous within-position ranks; **13 tentative World Class**, **39 League Top Class including World Class**; unapproved 4-4-2 Best XI.
+- **DRAFT / UNAPPROVED**: DOB 64 taken from earlier unverified DRAFT, **68 intentionally null**; independently two-source DOB complete **0/132**, current season individual starts/goals double-source **0/132**, full position match-by-match census **0/132**, independent individual three-season comparative quality **0/132**. Explicit positional hazards in Atlético wide midfield/Correa/Llorente, Barcelona RB, Sociedad RW, Villarreal striker/CAM, Granada Fede Vico.
+- One current season JSON, one 132-player Markdown audit, one structural Node validator, one Chromium branch test and one Actions workflow on a separate PR branch. Existing prior seasons and site UI/champion markers/crests untouched.
+- CI/PR status and actual GitHub Pages deployment/browser verification must be reported separately after execution; do NOT treat structural PASS as historical fact proof. Stop before La Liga 2020-21.
+- Complete audit: `audit/LALIGA_2019_20_RATED_SOURCE_DRAFT_2026-11-04.md`.
