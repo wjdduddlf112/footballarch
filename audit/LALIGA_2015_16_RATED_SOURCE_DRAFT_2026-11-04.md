@@ -444,7 +444,7 @@ All slots match the players' **provisionally assigned** listed positions. Format
 | Area | Status | Scope or remaining problem |
 |---|---|---|
 | Data input | Entered (135) | One 2015-16 club table per eligible club; not independent full line-by-line confirmation |
-| Structural integrity | Pending GitHub Actions run | Validation script committed; automated run must be observed |
+| Structural integrity | PASS (GitHub Actions) | Node 14 structural tests and local Chromium PR workflow passed: https://github.com/wjdduddlf112/footballarch/actions/runs/41767864736 |
 | Birth date ISO fields | Present (135/135) | Independent double-source identity checks are **not** complete |
 | Historical birth date conflict | 1 documented | Kévin Gameiro: FootballSquads 2014-15 shows 1987-04-09; French FFF official DOB 1987-05-09, corroborated by L'Équipe and FBref. ISO 1987-05-09 retained. |
 | Current starts/apps/goals | Single-source draft | No full all-135 independent matchwise cross-check completed |
@@ -453,7 +453,7 @@ All slots match the players' **provisionally assigned** listed positions. Format
 | Leaguewide 4-3-3 modal formation | Unverified | 380-match formation census absent |
 | 3-year tier/rank | Provisional 135 | No individual 3-season thorough audit; may change |
 | Best XI | Proposed only (11) | Await independent tactical/3-year verification and user approval |
-| Public Pages | Not verified at report creation | Publishing and real Chromium run must be reported separately |
+| Public Pages | PASS (deployment + real Chromium) | Pages deployment https://github.com/wjdduddlf112/footballarch/actions/runs/41768016403 ; five-tab production Chromium and player detail https://github.com/wjdduddlf112/footballarch/actions/runs/41768016256 |
 
 ### BDFutbol 2015-16 club sources
 
@@ -478,3 +478,12 @@ All slots match the players' **provisionally assigned** listed positions. Format
 ## Data path and approval policy
 
 Data: `data/laliga-2015-16.json`. Validation: `scripts/verify-laliga-2015-16-draft.mjs`, `scripts/verify-laliga-2015-16-browser.mjs`, `scripts/verify-laliga-2015-16-live.mjs`. Approval flags remain `draft`, `userApproved=false`, `proposed_unapproved`.
+
+## Deployment audit addendum — 2026-11-04
+
+- Pull request #46: https://github.com/wjdduddlf112/footballarch/pull/46 — merged into main squash commit `2cf4fd45eebe68ea4972b1377ad94353525d2af7`.
+- PR Node structural and local Chromium browser checks passed: https://github.com/wjdduddlf112/footballarch/actions/runs/41767864736 .
+- Production GitHub Pages build and deployment passed: https://github.com/wjdduddlf112/footballarch/actions/runs/41768016403 .
+- Production public GitHub Pages Chromium five-tab and player modal test passed: https://github.com/wjdduddlf112/footballarch/actions/runs/41768016256 .
+- Live page: https://wjdduddlf112.github.io/footballarch/?league=laliga&season=2015-16&view=overview
+- Historic independent player DOB and position verification, three-year individual performance, and leaguewide modal formation census remain incomplete. **Do not treat deployment/structural successes as this historic audit's completion**.
