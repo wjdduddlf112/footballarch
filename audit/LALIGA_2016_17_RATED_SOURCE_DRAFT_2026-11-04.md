@@ -468,3 +468,12 @@ This XI is **not approved**. Its tactical shape has not been proven to be the mo
 ## 7. Deployment status
 
 To be updated only after observing Node, local Chromium, Pages deployment and live Chromium workflow results. GitHub commits / PR alone are not production validation.
+
+## 8. Production delivery audit (2026-11-04)
+
+- PR [#47](https://github.com/wjdduddlf112/footballarch/pull/47) merged into main squash commit `694e7e5cbf2537b1eada10f5c00e8e0c2bfa90a4`.
+- PR source-validation Node structural job and local Playwright Chromium run **PASS**: https://github.com/wjdduddlf112/footballarch/actions/runs/41769335054
+- GitHub Pages production build and deployment **SUCCESS**: https://github.com/wjdduddlf112/footballarch/actions/runs/41769445966
+- Public production GitHub Pages Chromium UI navigation, tabs and player detail **PASS**: https://github.com/wjdduddlf112/footballarch/actions/runs/41769446919
+- Live site: https://wjdduddlf112.github.io/footballarch/?league=laliga&season=2016-17&view=overview
+- This verifies website rendering only. The **135-person independently corroborated historical DOB, two prior seasons, match-by-match primary position and leaguewide modal formation** remain unverified. All tiers and proposed XI remain user-unapproved DRAFT.
