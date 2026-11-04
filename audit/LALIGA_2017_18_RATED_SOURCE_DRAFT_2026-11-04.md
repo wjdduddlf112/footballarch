@@ -454,8 +454,8 @@ This 4-3-3 shape is a representational site XI, not a verified leaguewide 380-ma
 | Era modal formation | Not verified | 380-match tactical count not done |
 | World class / league top | Provisional counts only | Recency weighting and actual quality still need detailed 3-season evidence |
 | Best XI | Provisional 11, not user-approved | Match role and tactical alignment may change |
-| Structural / local browser | Await GitHub Actions confirmation | Committed test code alone not proof of pass |
-| Production Pages / live Chromium | Await actual deployment result | Commit or PR alone not proof of public display |
+| Structural / local browser | PASS | PR Node structural and local Chromium workflow https://github.com/wjdduddlf112/footballarch/actions/runs/41771298273 |
+| Production Pages / live Chromium | PASS | Actual Pages deploy https://github.com/wjdduddlf112/footballarch/actions/runs/41771435042 and production Chromium https://github.com/wjdduddlf112/footballarch/actions/runs/41771435842 |
 
 ### Official two-source birthday confirmation
 
@@ -483,3 +483,12 @@ This 4-3-3 shape is a representational site XI, not a verified leaguewide 380-ma
 - Sevilla FC: https://www.bdfutbol.com/en/t/t2017-1833.html
 
 **No historical truth verified solely because a source link exists. No user approval. Stop after this 2017-18 season.**
+
+## Actual publication addendum (2026-11-04)
+
+- PR #48 https://github.com/wjdduddlf112/footballarch/pull/48 merged into main, squash commit `9646362afeee76851aa6d643814edf9fa0b97e85`.
+- First CI had a script summary variable typo `checks` (all thirteen checks had logged PASS before the final ReferenceError); corrected to `count` and rerun succeeded. Corrected PR Node + local Chromium **PASS**: https://github.com/wjdduddlf112/footballarch/actions/runs/41771298273
+- Real GitHub Pages build/deployment **SUCCESS**: https://github.com/wjdduddlf112/footballarch/actions/runs/41771435042
+- Real public Pages Chromium five-tab UI test **PASS**: https://github.com/wjdduddlf112/footballarch/actions/runs/41771435842
+- Production page https://wjdduddlf112.github.io/footballarch/?league=laliga&season=2017-18&view=overview
+- These tests **DO NOT certify 133 not-doubly-sourced DOBs, all players' historical 3-season personal performance, actual matchwise position, or leaguewide modal 4-3-3 frequency**; all remain DRAFT and userApproved=false.
