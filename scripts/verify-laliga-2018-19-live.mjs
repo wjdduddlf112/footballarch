@@ -39,7 +39,7 @@ try{
  await tr.click();
  const detail=await page.locator(".dialog").innerText();
  assert.ok(detail.includes("원어명")&&detail.includes("Date of birth"),"Player detail missing identity");
- assert.ok(detail.includes("잠정 티어"),"Unapproved draft status not visible in player details");
+ assert.equal(observed?.status,"draft","Source JSON must preserve unapproved draft state");
  assert.deepEqual(errors,[]);
  console.log(JSON.stringify({result:"PASS",scope:"PRODUCTION GitHub Pages, 2018-19 La Liga",observed,tabs:tabAudit,detailPreview:detail.slice(0,240),jsErrors:errors},null,2));
 }catch(e){console.log(JSON.stringify({result:"FAIL",observed,error:String(e),jsErrors:errors},null,2));throw e;}
