@@ -1,3 +1,14 @@
+## 2026-11-05 — Bundesliga 2000-01 136명 DRAFT 완성 / 실배포·회귀 검사 PASS
+
+- 사용자 "ㅇㅋ 다음" 명령에 따라 **2000-01 Bundesliga만** 평가. 2001-02 실제 UCL: Bayern, Schalke, Dortmund, Leverkusen; UEFA Cup: Hertha, Freiburg; 2001 Intertoto Cup 실제 참가: Bremen, Wolfsburg, TSV 1860. 2000-01 DFB-Pokal 준우승 Union Berlin은 1부 소속이 아니므로 1부 후보 범위에서 제외.
+- 기존 132명 appearance 기반 초안은 정답 취급하지 않고, 구단 공식 DFB 명단·동시대 경기 선발(예: Schalke 전 경기 명단)·FBref 기록을 대조해 **136명, 9구단 주전 99명/후보 37명** 재구성. 기존 명단 외 4명 Sforza, Grodås, Alex Alves, Akpoborie 추가; 빠진 주전급 재분류. 선수별 original tactical role 보존. 구단 주전 XI는 각각 11명으로 검증.
+- 선수 **136명 모두 잠정 tier, 포지션별 1..N rank**. 상위 tier S 1, A+ 13, A0 36, A- 14; World Class **14명**, League Top **64명**. 전술 3-4-1-2 (리그 전체 실제 최빈은 전수 통계 미확인), 각 구단 별 3-4-1-2/3-5-2/4-4-2 패턴 잠정 표시. Best XI 11명 proposed_unapproved.
+- 리그 출전 수치 136명, 선발 수치 독립 대조 50명. 136명 생년월일 저장 및 **2000-01 DFB 구단 출처 링크** 연결(모든 원문 값을 추가 제2 독립출처로 재대조한 것은 아님). 1998-99/1999-00/2000-01 DFB 선수별 출전·득점 직접 연계 **12명**; 나머지 **124명**의 완전한 3시즌 독립 기록 감사 미완료. GK 14명 확인, 나머지 **122명** 실제 경기별 최빈 포지션 감사 필요. 추가 원자료 검토 플래그 **246건(124+122)**. 역사적 검증 미완료를 D티어 배정이나 허위 스탯으로 감추지 않음.
+- 실제 변경 데이터: `data/bundesliga-2000-01.json`; 모든 명단·티어·순위·Best XI 보고: `audit/BUNDESLIGA_2000_01_DRAFT_FULL_REPORT_2026_11_05.md`; 시즌 전용 Node/Playwright 검사: `scripts/verify-bundesliga-2000-01-draft.mjs`, `scripts/verify-bundesliga-2000-01-live.mjs`; Actions `.github/workflows/verify-bundesliga-2000-01-draft-live.yml`.
+- 발견한 UI·회귀 검사 오류: 구단별 전술 헤딩 1999-00 고정 문구와 이전 JS 캐시 키로 인해 초기 2000-01 브라우저 실패 → `assets/app.js`의 동적 시즌 제목 및 `index.html` cache-bust 변경. 기존 1999-00 검사의 옛 2000-01 132명 기대값 → 136명으로 교정(`scripts/verify-bundesliga-1999-00-live.mjs`). **수정 후 두 시즌 전체 브라우저 검사 재통과**.
+- 본 시즌 Node 통합/단독 구조 검사: **PASS / 오류 0건**. 2000-01 실제 Pages Chromium Overview, 136명 후보 전체, GK/club filter, 한글·원어 선수 상세, Top Class(64명), Best XI 11명, League Table, Statistics, 리그 로고 17/17 및 기존 PL 1999-00/La Liga 1999-00/Bundesliga 1999-00 regression PASS. 경고 0건. [2000-01 실제 Pages Chromium 검증 성공](https://github.com/wjdduddlf112/footballarch/actions/runs/41912840037), [1999-00 회귀 성공](https://github.com/wjdduddlf112/footballarch/actions/runs/41912848580), [UI 수정 포함 Pages 배포 성공](https://github.com/wjdduddlf112/footballarch/actions/runs/41912848034).
+- `main`에 반영; 기존 1999-00와 다른 리그·시즌 JSON 미수정. 평가 `status=draft`, Best XI `proposed_unapproved`, 승인 전. **2001-02 신규 평가 자동 시작 금지.**
+
 ## 2026-11-05 — Bundesliga 1999-00 DRAFT 126명 평가·배포·실제 화면 검증
 
 - 사용자 지시에 따라 **1999-00 Bundesliga만** 신규 평가. 유럽대항전 2000-01 실제 참가 9구단(Bayern, Leverkusen, HSV, TSV 1860, Kaiserslautern, Hertha, Wolfsburg [Intertoto], VfB Stuttgart [Intertoto→UEFA Cup], Werder [DFB-Pokal 준우승 UEFA Cup]) 포함.
