@@ -1,3 +1,14 @@
+## 2026-11-04 — La Liga 2014-15 real production Pages Chromium PASS; DRAFT unapproved
+
+- PR **#45** merged to main squash SHA `71c3a900e45b672284337f65f064965a1803d6a4`. Dataset `data/laliga-2014-15.json` still explicitly `status=draft`, `userApproved=false`, `bestXiStatus=proposed_unapproved`; candidate count **130** (77 nominal starter slots + 53 backup/cup-starter), provisional World Class **22** / League Top **50**.
+- Actual 2015-16 UCL: Barcelona, Madrid, Atlético, Valencia, **Sevilla as 2014-15 Europa League winner**; UEL Villarreal, Athletic Club. League's 20-team full table and club/crest catalogue preserved.
+- Structural Node and local Chromium PR verification **SUCCESS**: https://github.com/wjdduddlf112/footballarch/actions/runs/41765515935 .
+- Actual public production Pages Chromium **SUCCESS**: https://github.com/wjdduddlf112/footballarch/actions/runs/41765638157 . Initial rollout GET 404 before new site; next GET **HTTP 200, 2014-15, 130 players, status draft**. All five Overview, 4-2-3-1 formation XI, World 22/League Top 50, 20-team standings, Stats tabs passed. Claudio Bravo player detail displayed Korean/official original name, club, DOB, 37 La Liga starts, tentative A+, pos rank 1; **zero JavaScript errors**. Five live screenshot artifacts saved.
+- Public Pages deployment workflow linked: https://github.com/wjdduddlf112/footballarch/actions/runs/41765637374 . Check exact final conclusion independently; successful public 200/Chromium browser establishes production loading regardless of build job timing.
+- Data/report: `data/laliga-2014-15.json` and `audit/LALIGA_2014_15_RATED_SOURCE_DRAFT_2026-11-04.md`. Cup-starter special case Barcelona ter Stegen **0 league starts / 0 league appearances, 13 UCL + 8 Copa** separately; no fake league starts.
+- **Historical completeness NOT CERTIFIED**: 130 current-season stats single BDFutbol primary club lists without all-player independent second-source audit; ISO DOB 130 entered but all two-source birthdates not confirmed, two conflicts logged (Adriano, Gameiro); previous 2012-13/2013-14 personal quality not independently checked across all players; 2014-15 matchwise predominant roles and 380-game modal formation not fully confirmed. Ratings and positional ranks remain tentative user-unapproved, not proof of completed historic audit.
+- Public URL: https://wjdduddlf112.github.io/footballarch/?league=laliga&season=2014-15&view=overview . **Stop after 2014-15, do not start 2015-16 without user request.**
+
 ## 2026-11-04 — La Liga 2014-15, 130-player source-led unapproved DRAFT
 
 - User explicitly requested next season: **2014-15 La Liga** only. Seven actual 2015-16 UEFA participants: Barcelona, Real Madrid, Atlético, Valencia **plus Sevilla (UEL winner)** into UCL (5 UCL total); Villarreal and Athletic into UEL (2).
