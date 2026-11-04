@@ -31,8 +31,8 @@
     },
     "userApproved": false,
     "historicalFactVerification": false,
-    "browserValidation": false,
-    "nodeCliValidation": false,
+    "browserValidation": true,
+    "nodeCliValidation": true,
     "candidateAudit": {
       "method": "Fresh 2017-18 actual eligible club nomination using individual BDFutbol lineup+sub tables, with conservative caps",
       "candidateCaps": {
@@ -147,7 +147,11 @@
         "World/top/rank from tentative evaluation; not proof of 3-season independent verification."
       ],
       "birthdateIndividuallyTwoSourceVerifiedCount": 2
-    }
+    },
+    "browserValidationScope": "PR Node structural tests and local Chromium; public production GitHub Pages five-tab Chromium; separate from individual historic fact verification",
+    "nodeCliValidationRun": "https://github.com/wjdduddlf112/footballarch/actions/runs/41771298273",
+    "browserValidationRun": "https://github.com/wjdduddlf112/footballarch/actions/runs/41771435842",
+    "productionDeploymentRun": "https://github.com/wjdduddlf112/footballarch/actions/runs/41771435042"
   },
   "clubs": [
     {
