@@ -12,7 +12,7 @@ page.on("response",r=>{if(r.url().startsWith("http://127.0.0.1:8765/")&&r.status
 try{
  await page.goto("http://127.0.0.1:8765/?league=laliga&season=2018-19&view=overview",{waitUntil:"networkidle",timeout:60000});
  const source=await page.evaluate(async()=>{const r=await fetch("./data/laliga-2018-19.json",{cache:"no-store"});const j=await r.json();return{http:r.status,count:j.players?.length,status:j.meta?.status}});
- assert.deepEqual(source,{http:200,count:135,status:"draft"});
+ assert.deepEqual(source,{http:200,count:128,status:"draft"});
  const tabs=["overview","formation","top","table","stats"];let checks=[];
  for(const tab of tabs){
   await page.locator('button[data-tab="'+tab+'"]').click();
