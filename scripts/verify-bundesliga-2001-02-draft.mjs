@@ -72,7 +72,7 @@ const counts=Object.fromEntries(allowed.map(t=>[t,d.players.filter(p=>p.tier===t
 const summary={passed:errors.length===0,season:'2001-02',clubs:clubs.size,candidates:d.players.length,
 starterCount:d.players.filter(p=>p.role==='starter').length,backupCount:d.players.filter(p=>p.role==='backup').length,
 birthRecorded:d.players.filter(p=>p.born!=null).length,birthIndividuallyVerified:d.players.filter(p=>p.birthVerification==='verified_2001_02_DFB_roster_individual').length,
-startsCorroborated:d.players.filter(p=>p.startSource).length,
+startsRecorded:d.players.filter(p=>p.leagueStarts!=null).length,startsWithExplicitSource:d.players.filter(p=>p.leagueStarts!=null&&p.evidence?.startsSource).length,
 threeSeasonIndividuallyVerified:d.players.filter(p=>p.threeSeasonReview?.status==='three_seasons_directly_supported').length,
 worldClass:d.players.filter(p=>['S','A+'].includes(p.tier)).length,
 leagueTopClass:d.players.filter(p=>['S','A+','A','A-'].includes(p.tier)).length,
