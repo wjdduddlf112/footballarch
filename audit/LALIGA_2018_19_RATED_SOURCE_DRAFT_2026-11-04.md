@@ -429,7 +429,7 @@ The site's representative 4-3-3 is NOT confirmed by a 380-game leaguewide tactic
 | Leaguewide 380-game most common shape | NOT verified | 4-3-3 proxy only |
 | S/A+/A0/A-... tiers and within-position rank | All 128 provisional | 2018-19 prioritized qualitative assessment, not comprehensive independent historical proof |
 | Proposed Best XI | 11, user unapproved | Requires further checks |
-| Structural/Chromium/Pages | Await exact GitHub Actions proof | Don't infer from committing code |
+| Structural/Chromium/Pages | PASS (UI and structural only) | PR https://github.com/wjdduddlf112/footballarch/actions/runs/41778191731 , production Pages https://github.com/wjdduddlf112/footballarch/actions/runs/41778403074 , public Chromium https://github.com/wjdduddlf112/footballarch/actions/runs/41778404306 |
 
 ### Issues requiring deliberate historical correction
 
@@ -452,3 +452,13 @@ The site's representative 4-3-3 is NOT confirmed by a 380-game leaguewide tactic
 - RCD Espanyol: https://www.bdfutbol.com/en/t/t2018-1914.html
 
 **Neither player links nor structural test passes independently validate everyone historically. All historical gaps remain open for user correction and approval. No subsequent season work without user request.**
+
+## 8. Verified deployment, CLI and real-browser QA (2026-11-04)
+
+- PR #49 https://github.com/wjdduddlf112/footballarch/pull/49 merged squash into main commit `645180a61dfa784aa15aa50b4ec7e60c6badaf3d`.
+- Initial PR Chromium failed due stale previous-season literal expected count 135 versus actual current-season 128. Corrected and reran: **Node structural + local Chromium PASS** https://github.com/wjdduddlf112/footballarch/actions/runs/41778191731 .
+- Initial production Chromium passed data load and all five tabs but failed an over-specific non-existent modal text assertion; source metadata `meta.status=draft` is the correct explicit draft-state assertion. Corrected and reran.
+- **GitHub Pages deploy SUCCESS** https://github.com/wjdduddlf112/footballarch/actions/runs/41778403074 .
+- **Public GitHub Pages Chromium all five tabs and player-detail PASS** https://github.com/wjdduddlf112/footballarch/actions/runs/41778404306 .
+- Public URL https://wjdduddlf112.github.io/footballarch/?league=laliga&season=2018-19&view=overview .
+- These are structural and UI proof, **NOT a second-source check of all 128 season league statistics, 127 provisionally sourced DOBs, historical most-played positions and previous two seasons' individual ability**. All grades and XI remain unapproved DRAFT.
