@@ -896,3 +896,15 @@ Source TXT instruction adapted to the **2009-10 season only**. Candidate roster 
 - One current season JSON, one 132-player Markdown audit, one structural Node validator, one Chromium branch test and one Actions workflow on a separate PR branch. Existing prior seasons and site UI/champion markers/crests untouched.
 - CI/PR status and actual GitHub Pages deployment/browser verification must be reported separately after execution; do NOT treat structural PASS as historical fact proof. Stop before La Liga 2020-21.
 - Complete audit: `audit/LALIGA_2019_20_RATED_SOURCE_DRAFT_2026-11-04.md`.
+
+
+## La Liga 2020-21 — source-led provisional DRAFT checkpoint (2026-11-04)
+- Seven **actual 2021-22 UEFA entrants** verified: UCL Atlético, Real Madrid, Barcelona, Sevilla, Villarreal (via **2020-21 UEL trophy**, although domestic seventh); UEL Real Sociedad and Betis. UEFA group list sources in season JSON/report. Preserved verified 2020-21 standings and existing crests.
+- Peer-reviewed 2012-2021 La Liga study establishes **modal 4-4-2** from 2017/18 through 2020/21. Team-specific 3-5-2 Atlético, Barça midseason 3CB, Sevilla/Madrid/Villarreal 4-3-3, Sociedad/Betis 4-2-3-1 handled with role approximation notes.
+- Fresh club-by-club **128** candidates from 2020-21 BDFutbol PM/SM/G team pages: **77 provisional starters (7 x 11), 51 alternates**, all single primary position and role cap, no duplicated individuals. Each team candidate dataset freshly constructed without importing old nomination list.
+- **128 tentative tiers and 1..N position rank**, **16 World Class S/A+**, **48 League Top Class S/A+/A/A- (includes World Class)**, one **proposed_unapproved 4-4-2 Best XI**.
+- 2020-21 most weight; 2019-20 then 2018-19. Older season DRAFT values only used as retrospective pointers and birthday strings; **40 DOB null**, 88 older DRAFT DOB not independently double verified. Current single-source BDFutbol appearances/starts/goals not second-sourced; genuine match majority positions 0/128 fully audited; complete individual qualitative comparison across the 3-year period **not independently completed**.
+- Explicit risk inventory notes Atlético 3CB/LWB, Barça split 3CB, Real Madrid Lucas Vázquez RB, Sevilla Papu Gómez LM/RM/CAM ambiguity, Betis Canales RM/CM, Villarreal Rulli only 2 league starts (but Europa final starter), Sociedad Silva injury role.
+- New season JSON, complete Markdown audit, Node validator, Chromium five-tab test, Actions workflow. No past season JSON, original app JS/CSS, standings verification data, crest sources, championship marker modified.
+- **Keep historicalFactVerification=false and userApproved=false.** Track GitHub CI, PR merge, Pages deployment and live Chromium separately; do not call structural PASS historic verification.
+- Stop at 2020-21, do not start 2021-22 until explicit user instruction.
