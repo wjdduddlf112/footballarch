@@ -1,3 +1,13 @@
+## 2026-11-04 — La Liga 2017-18 135-person provisional source-led DRAFT
+
+- User explicitly requested subsequent season after 2016-17. Only **2017-18 La Liga** player assessment created; no 2018-19 evaluation.
+- 2018-19 actual entrants: 2017-18 La Liga top four Barcelona, Atlético, Real Madrid and Valencia UCL; Villarreal, Real Betis and Sevilla UEL. Cross-checked against UEFA season club lists and LaLiga 2018-19 Europa League report.
+- Seven 2017-18 BDFutbol club team-season PM total appearances, SM starting lineups, G outfield goals. New `data/laliga-2017-18.json`: **135 nominees, 77 nominal tactical starter slots, 58 nominal backup/rotation slots**, tentative **World Class 16, League Top 48**, proposed 4-3-3 XI; userApproved=false and bestXiStatus=proposed_unapproved.
+- All 135 ISO DOB fields populated; **2 individually independently 2-source checked**: Marcos Llorente from Real Madrid official & LaLiga, Clément Lenglet from FFF & LaLiga. Other **133 not independently double verified**. Date population must not be mistaken for all-player independent validation.
+- Full independent 2015-16 and 2016-17 player performance and 2017-18 dominant position by 38-game lineup remains incomplete. 4-3-3 site representation is not proven seasonwide modal; Barcelona and Valencia often 4-4-2, Betis varying 3-back structure. All tier/ranks unapproved subjective drafts, no automatic title bonuses.
+- Files: `audit/LALIGA_2017_18_RATED_SOURCE_DRAFT_2026-11-04.md` full 135 names, rankings, sources; dedicated structure + local Chromium + live GitHub Pages checks committed. **Do not claim tests or production deployment until confirmed in Actions**.
+- Preserve 20-club standings, legacy player seasons, badges and UI. Stop before next season pending explicit user instruction.
+
 ## 2026-11-04 — La Liga 2016-17 DRAFT merged and actual public Pages Chromium PASS
 
 - PR #47 merged into main commit `694e7e5cbf2537b1eada10f5c00e8e0c2bfa90a4`. Total **135 nominees / 77 starter slots / 58 backups; 17 provisional World Class / 50 League Top**; proposed 4-3-3 Best XI remains unapproved.
