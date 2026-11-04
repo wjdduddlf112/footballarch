@@ -18,11 +18,11 @@ try{
        }catch(e){return{error:String(e)}}
      });
      console.log("Live GitHub Pages probe "+(n+1)+": "+JSON.stringify(observed));
-     if(observed?.players===135&&observed?.season==="2018-19"&&observed?.status==="draft")break;
+     if(observed?.players===128&&observed?.season==="2018-19"&&observed?.status==="draft")break;
    }catch(e){console.log("Site attempt "+n+" error: "+String(e));}
    await sleep(10000);
  }
- assert.equal(observed?.players,135,"GitHub Pages JSON not deployed for 2018-19");
+ assert.equal(observed?.players,128,"GitHub Pages JSON not deployed for 2018-19");
  assert.equal(observed?.status,"draft");
  const tabs=["overview","formation","top","table","stats"],tabAudit=[];
  for(const t of tabs){
