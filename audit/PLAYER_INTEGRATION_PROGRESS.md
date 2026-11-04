@@ -916,3 +916,15 @@ Source TXT instruction adapted to the **2009-10 season only**. Candidate roster 
 - PR squash-merged into main: commit `8310da3ebb51ad58152bbf02ed5a8befee18c532`. GitHub connector fetched `data/laliga-2020-21.json` on main and confirmed 128 DRAFT candidates, seven UEFA qualifiers, 4-4-2, `userApproved=false`.
 - Separate live Pages workflow file `.github/workflows/verify-laliga-2020-21-live.yml` exists on main; **live GitHub Pages deployment state and actual live Chromium result NOT independently observed** at this checkpoint. Do not conflate local branch QA success with published live QA.
 - Historical DOB/role/three-season independent accuracy limitations remain OPEN, unchanged.
+
+
+## La Liga 2021-22 source-led DRAFT (2026-11-04)
+- **Seven actual 2022-23 European participants:** 4 UCL (Real Madrid/Barcelona/Atlético/Sevilla), 2 UEL (Betis/Real Sociedad) and UECL (Villarreal). Actual UEFA 2022-23 competition lists used; historical 2021-22 top 20 standings and club crest source left untouched.
+- **Formation 4-4-2 PROVISIONAL**: peer-reviewed public study of 2019-20 through 2021-22 La Liga/Segunda says 4-4-2 among most-used forms but does NOT establish single 2021-22 La Liga rank. Avoid treating 2012-2021 study as coverage of 2021-22. Club individual formations preserved as tactical proxies.
+- **131 fresh candidates** from 7 distinct BDFutbol 2021-22 team PM/SM/G season lists. 77 nominal starter positions (=7x11), 54 substitutes. Single-season values directly transcribed from 2021-22 eligible clubs; no old player nomination roster used to select eligibility.
+- 131/131 provisional tiers and within-position continuous ranks; 8 World Class S/A+, 49 League Top Class including World Class; working 4-4-2 Best XI. User final approval FALSE.
+- 2019-20/2020-21/2021-22 weighting present season greatest, earlier seasons less. Previous-season individual quality independently unverified; previous DRAFT league numbers not proof of form. **69 birthdates null**, 62 borrowed provisional earlier DRAFT. Two-source DOB completion 0/131, 2021-22 independent PM/SM/G crosscheck incomplete, match-by-match primary position 0/131 independently certified.
+- Risks: Atlético 3-5-2 Carrasco/Llorente wingback roles, Barcelona second-half Xavi transfers and roles, Betis Canales vs Fekir allocation, Villarreal Gerard Moreno reduced availability, Sevilla mixed wide positions, Sociedad Oyarzabal limited to 22 league appearances. Season standalone 4-4-2 mode pending.
+- New 2021-22-only season JSON, 131-player readable full audit report, 2021-22 dedicated Node validator, five-tab Chromium browser check and GitHub Actions CI. No previous seasons, standings verification JSON or main UI/emblem/champion marker altered.
+- Review file: audit/LALIGA_2021_22_RATED_SOURCE_DRAFT_2026-11-04.md
+- CI vs historical evidence vs live deployment tracked separately. Stop before 2022-23 pending new user instruction.
