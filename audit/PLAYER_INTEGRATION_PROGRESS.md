@@ -1,3 +1,14 @@
+## 2026-11-04 — La Liga 2013-14 DRAFT published and live GitHub Pages Chromium PASS
+
+- PR #44 merged on main as squash commit `93137192d720eea6a5173cad8d5d913112ae6254`. `data/laliga-2013-14.json` retains `meta.status=draft`, `userApproved=false`, `bestXiStatus=proposed_unapproved`; **136 players / 77 nominal starters + 59 backups**, 21 provisional World Class / 51 League Top.
+- 7 verified 2014-15 UEFA entrant clubs: Atlético, Barça, Madrid, Athletic (UCL); Sevilla, Villarreal, Sociedad (UEL); previous archive standings and crests preserved.
+- PR branch structural Node test and local Chromium **PASS**: https://github.com/wjdduddlf112/footballarch/actions/runs/41763641902 .
+- Actual GitHub Pages build & deployment **SUCCESS**: https://github.com/wjdduddlf112/footballarch/actions/runs/41763778862 .
+- Real *public* GitHub Pages Playwright Chromium **PASS**: https://github.com/wjdduddlf112/footballarch/actions/runs/41763779345 . JSON fetched HTTP 200 and showed 136 players, 2013-14 DRAFT. Overview, 4-2-3-1 DRAFT XI, Top Class (World 21 / League Top 51), 20-team League Table and Statistics rendered. Player details for Thibaut Courtois displayed Korean/original name, birthdate, Atlético original club, GK rank, league starts and unapproved tentative A+ grade. **Zero JS errors**, five live screenshots retained as Action artifact.
+- Formation 4-2-3-1 supported by independent 2012-13–2016-17 La Liga multi-season tactics paper, **but 2013-14-only modal count not certified**. Historic accuracy is not established by the green structural or browser checks.
+- **Still unfinished historically:** 136-player 2011-12 & 2012-13 independent individual form/quality, 2013-14 majority individual positions from game-by-game lineups, complete independent two-source DOB corroboration. Iago Herrerín official Athletic DOB correction, Adriano older Barça DOB document conflict, Gameiro official DOB vs FootballSquads discrepancy documented in full source audit: `audit/LALIGA_2013_14_RATED_SOURCE_DRAFT_2026-11-04.md`.
+- Public site: https://wjdduddlf112.github.io/footballarch/?league=laliga&season=2013-14&view=overview . Stop after 2013-14; ratings remain DRAFT and unapproved.
+
 ## 2026-11-04 — La Liga 2013-14 (user requested next season) 136-player unapproved source-led DRAFT
 
 - 2013-14 La Liga selection restricted to seven **actual** 2014-15 UEFA entrants: Atlético, Barcelona, Madrid, Athletic Club (Champions League); Sevilla, Villarreal, Real Sociedad (Europa League including actual playoff participants).
