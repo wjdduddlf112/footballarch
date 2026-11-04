@@ -1,3 +1,11 @@
+## 2026-11-04 — La Liga 2016-17 source-led 135-player DRAFT, historical checks incomplete
+
+- Season scope changed only on user's explicit “다음” request after 2015-16. Actual 2017-18 Europe participants: Madrid, Barça, Atlético, Sevilla UCL; Villarreal, Real Sociedad, Athletic UEL. UEFA UEFA/RFEF source references in `audit/LALIGA_2016_17_RATED_SOURCE_DRAFT_2026-11-04.md`.
+- Separate branch `draft/laliga-2016-17-source-led-20261104`; new dataset `data/laliga-2016-17.json` and complete 135 player/team/position rank audit report. 77 tactical starters, 58 nominal backup candidates, 17 provisional World Class, 50 provisional League Top. Representative 4-3-3 Best XI proposed/unapproved.
+- 2016-17 league apps/starts/goals transcribed from each of seven BDFutbol 2016-17 team pages; all 135 ISO birthday strings populated but **none should be read as completing an individual two-source verification claim**. Previous two seasons reference older DRAFT data; independent 3-season individual comparison is not complete. Game-by-game primary positions and seasonwide modal formation remain unverified; tier/rank provisional.
+- Important correction: 2016-17 Sevilla CB Clément Lenglet not placed at LB artificially to fill backup, excluded by three CB cap; LB backup legitimately remains vacant. Sevilla 4-2-3-1 is display proxy due Sampaoli tactical variability. Matchwise review needed.
+- This note precedes public test confirmation; actual GitHub Actions / Pages statuses recorded only after inspected. Historical facts **NOT certified**. Do not proceed to 2017-18 season without explicit request.
+
 ## 2026-11-04 — La Liga 2015-16 DRAFT production deployment + real Chromium verified
 
 - PR #46 merged commit `2cf4fd45eebe68ea4972b1377ad94353525d2af7` into main. Dataset 135 / 77 starting slots / 58 backup slots; 16 provisional World Class / 45 League Top; 4-3-3 Best XI unapproved.
