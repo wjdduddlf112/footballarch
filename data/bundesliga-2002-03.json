@@ -8,8 +8,8 @@
     "assessmentEnd": "2002-03",
     "status": "draft",
     "standingsOnly": false,
-    "nominationStatus": "roster_source_rebuild_in_progress_unapproved",
-    "label": "2002-03 Bundesliga · 선수 평가 작업 중 DRAFT",
+    "nominationStatus": "source_linked_163_players_provisional_unapproved",
+    "label": "Bundesliga 2002-03 · 9구단 163명 티어·순위·Best XI · DRAFT",
     "europeanQualificationVerified": true,
     "europeanQualificationSources": [
       "https://www.rsssf.org/tablesd/duit03.html",
@@ -121,13 +121,119 @@
     "formation": "4-4-2",
     "formationReview": "2002-03 리그 전체 306경기 포메이션 빈도 전수 집계 없음. 시대 대표 4-4-2 잠정 포메이션",
     "candidateCount": 163,
-    "tierStatus": "in_progress_unapproved",
-    "positionRankStatus": "in_progress_unapproved",
+    "tierStatus": "provisional_163_players",
+    "positionRankStatus": "provisional_ranks_163",
     "bestXiReview": {
       "status": "proposed_unapproved",
       "formation": "4-4-2",
-      "method": "individual 2002-03 first, 2001-02 next, 2000-01 least; no team result bonus"
-    }
+      "method": "individual historical form first; current-season highest weight; 2 older seasons declining; appropriate period positions",
+      "caveat": "4-4-2 most common leaguewide formation not fully statistically measured"
+    },
+    "candidateCoverage": {
+      "qualifiedClubs": 9,
+      "clubsWithCandidates": 9,
+      "fullyAuditedClubs": 0,
+      "clubsPendingMatchLevelPositionAudit": [
+        "bayern",
+        "stuttgart",
+        "dortmund",
+        "hsv",
+        "hertha",
+        "bremen",
+        "schalke",
+        "wolfsburg",
+        "kaiserslautern"
+      ],
+      "status": "source_based_current_season_partial_starts_and_qualifications_confirmed"
+    },
+    "tierProposal": {
+      "status": "provisional_not_user_approved",
+      "assessmentSeasons": [
+        "2000-01",
+        "2001-02",
+        "2002-03"
+      ],
+      "recencyPriority": "2002-03 highest, 2001-02 next, 2000-01 least",
+      "approach": "source-sighted individual 2002-03 performance, previously archived individual prior stats where available; missing games NOT imputed",
+      "teamPerformance": "excluded direct league place and trophies"
+    },
+    "evaluationSummary": {
+      "players": 163,
+      "starters": 99,
+      "backups": 64,
+      "verified2002LeagueAppearances": 102,
+      "currentAppearancesPending": 61,
+      "verifiedCurrentLeagueStarts": 89,
+      "birthDatesRecorded": 163,
+      "birthDatesLinkedDfbRoster": 163,
+      "individualThreeSeasonDirectSources": 0,
+      "priorTwoSeasonsDirectPlayerReauditPending": 163,
+      "worldClass": 16,
+      "leagueTopClass": 50,
+      "tierCounts": {
+        "S": 3,
+        "A+": 13,
+        "A": 19,
+        "A-": 15,
+        "B+": 62,
+        "B": 43,
+        "B-": 3,
+        "C+": 4,
+        "C": 0,
+        "C-": 1,
+        "D": 0
+      },
+      "clubCounts": {
+        "bayern": {
+          "all": 19,
+          "starters": 11,
+          "backups": 8
+        },
+        "stuttgart": {
+          "all": 18,
+          "starters": 11,
+          "backups": 7
+        },
+        "dortmund": {
+          "all": 19,
+          "starters": 11,
+          "backups": 8
+        },
+        "hsv": {
+          "all": 17,
+          "starters": 11,
+          "backups": 6
+        },
+        "hertha": {
+          "all": 18,
+          "starters": 11,
+          "backups": 7
+        },
+        "bremen": {
+          "all": 16,
+          "starters": 11,
+          "backups": 5
+        },
+        "schalke": {
+          "all": 18,
+          "starters": 11,
+          "backups": 7
+        },
+        "wolfsburg": {
+          "all": 19,
+          "starters": 11,
+          "backups": 8
+        },
+        "kaiserslautern": {
+          "all": 19,
+          "starters": 11,
+          "backups": 8
+        }
+      },
+      "pendingHistoricalPositionAudit": 146,
+      "errors": []
+    },
+    "historicalVerificationStatus": "partial_not_claimed_complete"
   },
   "clubs": [
     {
@@ -811,7 +917,7 @@
       "leagueMinutes": null,
       "statsScope": "2002-03 Bundesliga domestic league only",
       "tier": "S",
-      "rank": null,
+      "rank": 1,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_not_user_approved",
       "positionVerification": "verified",
@@ -856,7 +962,8 @@
       "verificationNeeded": [
         "matchwise_primary_position_frequency_pending",
         "past_2000_01_2001_02_independent_performance_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-bayern-stefan-wessels",
@@ -883,7 +990,7 @@
       "leagueMinutes": null,
       "statsScope": "2002-03 Bundesliga domestic league only",
       "tier": "C-",
-      "rank": null,
+      "rank": 17,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_not_user_approved",
       "positionVerification": "verified",
@@ -928,7 +1035,8 @@
       "verificationNeeded": [
         "matchwise_primary_position_frequency_pending",
         "past_2000_01_2001_02_independent_performance_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-bayern-thomas-linke",
@@ -955,7 +1063,7 @@
       "leagueMinutes": null,
       "statsScope": "2002-03 Bundesliga domestic league only",
       "tier": "A",
-      "rank": null,
+      "rank": 5,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_not_user_approved",
       "positionVerification": "matchwise_majority_position_pending",
@@ -1000,7 +1108,8 @@
       "verificationNeeded": [
         "matchwise_primary_position_frequency_pending",
         "past_2000_01_2001_02_independent_performance_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-bayern-robert-kovac",
@@ -1027,7 +1136,7 @@
       "leagueMinutes": null,
       "statsScope": "2002-03 Bundesliga domestic league only",
       "tier": "A",
-      "rank": null,
+      "rank": 6,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_not_user_approved",
       "positionVerification": "matchwise_majority_position_pending",
@@ -1072,7 +1181,8 @@
       "verificationNeeded": [
         "matchwise_primary_position_frequency_pending",
         "past_2000_01_2001_02_independent_performance_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-bayern-samuel-kuffour",
@@ -1099,7 +1209,7 @@
       "leagueMinutes": null,
       "statsScope": "2002-03 Bundesliga domestic league only",
       "tier": "A-",
-      "rank": null,
+      "rank": 10,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_not_user_approved",
       "positionVerification": "matchwise_majority_position_pending",
@@ -1145,7 +1255,8 @@
         "current_starts_unknown",
         "matchwise_primary_position_frequency_pending",
         "past_2000_01_2001_02_independent_performance_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-bayern-bixente-lizarazu",
@@ -1172,7 +1283,7 @@
       "leagueMinutes": null,
       "statsScope": "2002-03 Bundesliga domestic league only",
       "tier": "A+",
-      "rank": null,
+      "rank": 1,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_not_user_approved",
       "positionVerification": "matchwise_majority_position_pending",
@@ -1217,7 +1328,8 @@
       "verificationNeeded": [
         "matchwise_primary_position_frequency_pending",
         "past_2000_01_2001_02_independent_performance_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-bayern-michael-tarnat",
@@ -1244,7 +1356,7 @@
       "leagueMinutes": null,
       "statsScope": "2002-03 Bundesliga domestic league only",
       "tier": "B",
-      "rank": null,
+      "rank": 10,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_not_user_approved",
       "positionVerification": "matchwise_majority_position_pending",
@@ -1290,7 +1402,8 @@
         "current_starts_unknown",
         "matchwise_primary_position_frequency_pending",
         "past_2000_01_2001_02_independent_performance_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-bayern-willy-sagnol",
@@ -1317,7 +1430,7 @@
       "leagueMinutes": null,
       "statsScope": "2002-03 Bundesliga domestic league only",
       "tier": "A",
-      "rank": null,
+      "rank": 3,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_not_user_approved",
       "positionVerification": "matchwise_majority_position_pending",
@@ -1363,7 +1476,8 @@
         "current_starts_unknown",
         "matchwise_primary_position_frequency_pending",
         "past_2000_01_2001_02_independent_performance_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-bayern-jens-jeremies",
@@ -1390,7 +1504,7 @@
       "leagueMinutes": null,
       "statsScope": "2002-03 Bundesliga domestic league only",
       "tier": "A",
-      "rank": null,
+      "rank": 2,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_not_user_approved",
       "positionVerification": "matchwise_majority_position_pending",
@@ -1435,7 +1549,8 @@
       "verificationNeeded": [
         "matchwise_primary_position_frequency_pending",
         "past_2000_01_2001_02_independent_performance_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-bayern-niko-kovac",
@@ -1462,7 +1577,7 @@
       "leagueMinutes": null,
       "statsScope": "2002-03 Bundesliga domestic league only",
       "tier": "B+",
-      "rank": null,
+      "rank": 10,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_not_user_approved",
       "positionVerification": "matchwise_majority_position_pending",
@@ -1508,7 +1623,8 @@
         "current_starts_unknown",
         "matchwise_primary_position_frequency_pending",
         "past_2000_01_2001_02_independent_performance_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-bayern-michael-ballack",
@@ -1535,7 +1651,7 @@
       "leagueMinutes": null,
       "statsScope": "2002-03 Bundesliga domestic league only",
       "tier": "S",
-      "rank": null,
+      "rank": 1,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_not_user_approved",
       "positionVerification": "matchwise_majority_position_pending",
@@ -1580,7 +1696,8 @@
       "verificationNeeded": [
         "matchwise_primary_position_frequency_pending",
         "past_2000_01_2001_02_independent_performance_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-bayern-owen-hargreaves",
@@ -1607,7 +1724,7 @@
       "leagueMinutes": null,
       "statsScope": "2002-03 Bundesliga domestic league only",
       "tier": "B+",
-      "rank": null,
+      "rank": 7,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_not_user_approved",
       "positionVerification": "matchwise_majority_position_pending",
@@ -1653,7 +1770,8 @@
         "current_starts_unknown",
         "matchwise_primary_position_frequency_pending",
         "past_2000_01_2001_02_independent_performance_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-bayern-mehmet-scholl",
@@ -1680,7 +1798,7 @@
       "leagueMinutes": null,
       "statsScope": "2002-03 Bundesliga domestic league only",
       "tier": "B+",
-      "rank": null,
+      "rank": 8,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_not_user_approved",
       "positionVerification": "matchwise_majority_position_pending",
@@ -1726,7 +1844,8 @@
         "current_starts_unknown",
         "matchwise_primary_position_frequency_pending",
         "past_2000_01_2001_02_independent_performance_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-bayern-ze-roberto",
@@ -1753,7 +1872,7 @@
       "leagueMinutes": null,
       "statsScope": "2002-03 Bundesliga domestic league only",
       "tier": "A+",
-      "rank": null,
+      "rank": 1,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_not_user_approved",
       "positionVerification": "matchwise_majority_position_pending",
@@ -1798,7 +1917,8 @@
       "verificationNeeded": [
         "matchwise_primary_position_frequency_pending",
         "past_2000_01_2001_02_independent_performance_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-bayern-bastian-schweinsteiger",
@@ -1825,7 +1945,7 @@
       "leagueMinutes": null,
       "statsScope": "2002-03 Bundesliga domestic league only",
       "tier": "B-",
-      "rank": null,
+      "rank": 9,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_not_user_approved",
       "positionVerification": "matchwise_majority_position_pending",
@@ -1871,7 +1991,8 @@
         "current_starts_unknown",
         "matchwise_primary_position_frequency_pending",
         "past_2000_01_2001_02_independent_performance_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-bayern-hasan-salihamidzic",
@@ -1898,7 +2019,7 @@
       "leagueMinutes": null,
       "statsScope": "2002-03 Bundesliga domestic league only",
       "tier": "B+",
-      "rank": null,
+      "rank": 5,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_not_user_approved",
       "positionVerification": "matchwise_majority_position_pending",
@@ -1944,7 +2065,8 @@
         "current_starts_unknown",
         "matchwise_primary_position_frequency_pending",
         "past_2000_01_2001_02_independent_performance_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-bayern-giovane-elber",
@@ -1971,7 +2093,7 @@
       "leagueMinutes": null,
       "statsScope": "2002-03 Bundesliga domestic league only",
       "tier": "S",
-      "rank": null,
+      "rank": 1,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_not_user_approved",
       "positionVerification": "matchwise_majority_position_pending",
@@ -2016,7 +2138,8 @@
       "verificationNeeded": [
         "matchwise_primary_position_frequency_pending",
         "past_2000_01_2001_02_independent_performance_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-bayern-claudio-pizarro",
@@ -2043,7 +2166,7 @@
       "leagueMinutes": null,
       "statsScope": "2002-03 Bundesliga domestic league only",
       "tier": "A+",
-      "rank": null,
+      "rank": 3,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_not_user_approved",
       "positionVerification": "matchwise_majority_position_pending",
@@ -2088,7 +2211,8 @@
       "verificationNeeded": [
         "matchwise_primary_position_frequency_pending",
         "past_2000_01_2001_02_independent_performance_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-bayern-roque-santa-cruz",
@@ -2115,7 +2239,7 @@
       "leagueMinutes": null,
       "statsScope": "2002-03 Bundesliga domestic league only",
       "tier": "B+",
-      "rank": null,
+      "rank": 16,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_not_user_approved",
       "positionVerification": "matchwise_majority_position_pending",
@@ -2161,7 +2285,8 @@
         "current_starts_unknown",
         "matchwise_primary_position_frequency_pending",
         "past_2000_01_2001_02_independent_performance_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-stuttgart-timo-hildebrand",
@@ -2188,7 +2313,7 @@
       "leagueMinutes": null,
       "statsScope": "2002-03 Bundesliga domestic league only",
       "tier": "B+",
-      "rank": null,
+      "rank": 8,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_not_user_approved",
       "positionVerification": "verified",
@@ -2232,7 +2357,8 @@
       "verificationNeeded": [
         "matchwise_primary_position_frequency_pending",
         "past_2000_01_2001_02_independent_performance_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-stuttgart-thomas-ernst",
@@ -2259,7 +2385,7 @@
       "leagueMinutes": null,
       "statsScope": "2002-03 Bundesliga domestic league only",
       "tier": "B+",
-      "rank": null,
+      "rank": 9,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_not_user_approved",
       "positionVerification": "verified",
@@ -2303,7 +2429,8 @@
       "verificationNeeded": [
         "matchwise_primary_position_frequency_pending",
         "past_2000_01_2001_02_independent_performance_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-stuttgart-marcelo-bordon",
@@ -2330,7 +2457,7 @@
       "leagueMinutes": null,
       "statsScope": "2002-03 Bundesliga domestic league only",
       "tier": "A+",
-      "rank": null,
+      "rank": 1,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_not_user_approved",
       "positionVerification": "matchwise_majority_position_pending",
@@ -2374,7 +2501,8 @@
       "verificationNeeded": [
         "matchwise_primary_position_frequency_pending",
         "past_2000_01_2001_02_independent_performance_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-stuttgart-fernando-meira",
@@ -2401,7 +2529,7 @@
       "leagueMinutes": null,
       "statsScope": "2002-03 Bundesliga domestic league only",
       "tier": "A",
-      "rank": null,
+      "rank": 4,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_not_user_approved",
       "positionVerification": "matchwise_majority_position_pending",
@@ -2445,7 +2573,8 @@
       "verificationNeeded": [
         "matchwise_primary_position_frequency_pending",
         "past_2000_01_2001_02_independent_performance_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-stuttgart-timo-wenzel",
@@ -2472,7 +2601,7 @@
       "leagueMinutes": null,
       "statsScope": "2002-03 Bundesliga domestic league only",
       "tier": "B",
-      "rank": null,
+      "rank": 23,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_not_user_approved",
       "positionVerification": "matchwise_majority_position_pending",
@@ -2516,7 +2645,8 @@
       "verificationNeeded": [
         "matchwise_primary_position_frequency_pending",
         "past_2000_01_2001_02_independent_performance_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-stuttgart-heiko-gerber",
@@ -2543,7 +2673,7 @@
       "leagueMinutes": null,
       "statsScope": "2002-03 Bundesliga domestic league only",
       "tier": "B+",
-      "rank": null,
+      "rank": 4,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_not_user_approved",
       "positionVerification": "matchwise_majority_position_pending",
@@ -2587,7 +2717,8 @@
       "verificationNeeded": [
         "matchwise_primary_position_frequency_pending",
         "past_2000_01_2001_02_independent_performance_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-stuttgart-bradley-carnell",
@@ -2614,7 +2745,7 @@
       "leagueMinutes": null,
       "statsScope": "2002-03 Bundesliga domestic league only",
       "tier": "C+",
-      "rank": null,
+      "rank": 17,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_not_user_approved",
       "positionVerification": "matchwise_majority_position_pending",
@@ -2658,7 +2789,8 @@
       "verificationNeeded": [
         "matchwise_primary_position_frequency_pending",
         "past_2000_01_2001_02_independent_performance_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-stuttgart-andreas-hinkel",
@@ -2685,7 +2817,7 @@
       "leagueMinutes": null,
       "statsScope": "2002-03 Bundesliga domestic league only",
       "tier": "A+",
-      "rank": null,
+      "rank": 2,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_not_user_approved",
       "positionVerification": "matchwise_majority_position_pending",
@@ -2729,7 +2861,8 @@
       "verificationNeeded": [
         "matchwise_primary_position_frequency_pending",
         "past_2000_01_2001_02_independent_performance_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-stuttgart-zvonimir-soldo",
@@ -2756,7 +2889,7 @@
       "leagueMinutes": null,
       "statsScope": "2002-03 Bundesliga domestic league only",
       "tier": "A",
-      "rank": null,
+      "rank": 1,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_not_user_approved",
       "positionVerification": "matchwise_majority_position_pending",
@@ -2800,7 +2933,8 @@
       "verificationNeeded": [
         "matchwise_primary_position_frequency_pending",
         "past_2000_01_2001_02_independent_performance_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-stuttgart-silvio-mei-ner",
@@ -2827,7 +2961,7 @@
       "leagueMinutes": null,
       "statsScope": "2002-03 Bundesliga domestic league only",
       "tier": "B+",
-      "rank": null,
+      "rank": 4,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_not_user_approved",
       "positionVerification": "matchwise_majority_position_pending",
@@ -2871,7 +3005,8 @@
       "verificationNeeded": [
         "matchwise_primary_position_frequency_pending",
         "past_2000_01_2001_02_independent_performance_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-stuttgart-michael-mutzel",
@@ -2898,7 +3033,7 @@
       "leagueMinutes": null,
       "statsScope": "2002-03 Bundesliga domestic league only",
       "tier": "B-",
-      "rank": null,
+      "rank": 17,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_not_user_approved",
       "positionVerification": "matchwise_majority_position_pending",
@@ -2942,7 +3077,8 @@
       "verificationNeeded": [
         "matchwise_primary_position_frequency_pending",
         "past_2000_01_2001_02_independent_performance_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-stuttgart-krassimir-balakow",
@@ -2969,7 +3105,7 @@
       "leagueMinutes": null,
       "statsScope": "2002-03 Bundesliga domestic league only",
       "tier": "A-",
-      "rank": null,
+      "rank": 5,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_not_user_approved",
       "positionVerification": "matchwise_majority_position_pending",
@@ -3013,7 +3149,8 @@
       "verificationNeeded": [
         "matchwise_primary_position_frequency_pending",
         "past_2000_01_2001_02_independent_performance_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-stuttgart-jochen-seitz",
@@ -3040,7 +3177,7 @@
       "leagueMinutes": null,
       "statsScope": "2002-03 Bundesliga domestic league only",
       "tier": "B+",
-      "rank": null,
+      "rank": 5,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_not_user_approved",
       "positionVerification": "matchwise_majority_position_pending",
@@ -3084,7 +3221,8 @@
       "verificationNeeded": [
         "matchwise_primary_position_frequency_pending",
         "past_2000_01_2001_02_independent_performance_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-stuttgart-aljaksandr-hleb",
@@ -3111,7 +3249,7 @@
       "leagueMinutes": null,
       "statsScope": "2002-03 Bundesliga domestic league only",
       "tier": "A",
-      "rank": null,
+      "rank": 2,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_not_user_approved",
       "positionVerification": "matchwise_majority_position_pending",
@@ -3155,7 +3293,8 @@
       "verificationNeeded": [
         "matchwise_primary_position_frequency_pending",
         "past_2000_01_2001_02_independent_performance_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-stuttgart-christian-tiffert",
@@ -3182,7 +3321,7 @@
       "leagueMinutes": null,
       "statsScope": "2002-03 Bundesliga domestic league only",
       "tier": "B",
-      "rank": null,
+      "rank": 10,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_not_user_approved",
       "positionVerification": "matchwise_majority_position_pending",
@@ -3226,7 +3365,8 @@
       "verificationNeeded": [
         "matchwise_primary_position_frequency_pending",
         "past_2000_01_2001_02_independent_performance_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-stuttgart-kevin-kuranyi",
@@ -3253,7 +3393,7 @@
       "leagueMinutes": null,
       "statsScope": "2002-03 Bundesliga domestic league only",
       "tier": "A",
-      "rank": null,
+      "rank": 5,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_not_user_approved",
       "positionVerification": "matchwise_majority_position_pending",
@@ -3297,7 +3437,8 @@
       "verificationNeeded": [
         "matchwise_primary_position_frequency_pending",
         "past_2000_01_2001_02_independent_performance_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-stuttgart-ioannis-amanatidis",
@@ -3324,7 +3465,7 @@
       "leagueMinutes": null,
       "statsScope": "2002-03 Bundesliga domestic league only",
       "tier": "B+",
-      "rank": null,
+      "rank": 14,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_not_user_approved",
       "positionVerification": "matchwise_majority_position_pending",
@@ -3368,7 +3509,8 @@
       "verificationNeeded": [
         "matchwise_primary_position_frequency_pending",
         "past_2000_01_2001_02_independent_performance_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-stuttgart-ioan-viorel-ganea",
@@ -3395,7 +3537,7 @@
       "leagueMinutes": null,
       "statsScope": "2002-03 Bundesliga domestic league only",
       "tier": "B",
-      "rank": null,
+      "rank": 21,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_not_user_approved",
       "positionVerification": "matchwise_majority_position_pending",
@@ -3439,7 +3581,8 @@
       "verificationNeeded": [
         "matchwise_primary_position_frequency_pending",
         "past_2000_01_2001_02_independent_performance_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-dortmund-jens-lehmann",
@@ -3466,7 +3609,7 @@
       "leagueMinutes": null,
       "statsScope": "2002-03 Bundesliga domestic league only",
       "tier": "A",
-      "rank": null,
+      "rank": 5,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_not_user_approved",
       "positionVerification": "verified",
@@ -3510,7 +3653,8 @@
       "verificationNeeded": [
         "matchwise_primary_position_frequency_pending",
         "past_2000_01_2001_02_independent_performance_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-dortmund-roman-weidenfeller",
@@ -3537,7 +3681,7 @@
       "leagueMinutes": null,
       "statsScope": "2002-03 Bundesliga domestic league only",
       "tier": "B+",
-      "rank": null,
+      "rank": 10,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_not_user_approved",
       "positionVerification": "verified",
@@ -3581,7 +3725,8 @@
       "verificationNeeded": [
         "matchwise_primary_position_frequency_pending",
         "past_2000_01_2001_02_independent_performance_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-dortmund-christian-worns",
@@ -3608,7 +3753,7 @@
       "leagueMinutes": null,
       "statsScope": "2002-03 Bundesliga domestic league only",
       "tier": "A+",
-      "rank": null,
+      "rank": 2,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_not_user_approved",
       "positionVerification": "matchwise_majority_position_pending",
@@ -3654,7 +3799,8 @@
         "current_starts_unknown",
         "matchwise_primary_position_frequency_pending",
         "past_2000_01_2001_02_independent_performance_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-dortmund-christoph-metzelder",
@@ -3681,7 +3827,7 @@
       "leagueMinutes": null,
       "statsScope": "2002-03 Bundesliga domestic league only",
       "tier": "A",
-      "rank": null,
+      "rank": 7,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_not_user_approved",
       "positionVerification": "matchwise_majority_position_pending",
@@ -3727,7 +3873,8 @@
         "current_starts_unknown",
         "matchwise_primary_position_frequency_pending",
         "past_2000_01_2001_02_independent_performance_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-dortmund-ahmed-madouni",
@@ -3754,7 +3901,7 @@
       "leagueMinutes": null,
       "statsScope": "2002-03 Bundesliga domestic league only",
       "tier": "B",
-      "rank": null,
+      "rank": 24,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_not_user_approved",
       "positionVerification": "matchwise_majority_position_pending",
@@ -3800,7 +3947,8 @@
         "current_starts_unknown",
         "matchwise_primary_position_frequency_pending",
         "past_2000_01_2001_02_independent_performance_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-dortmund-dede",
@@ -3827,7 +3975,7 @@
       "leagueMinutes": null,
       "statsScope": "2002-03 Bundesliga domestic league only",
       "tier": "A",
-      "rank": null,
+      "rank": 2,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_not_user_approved",
       "positionVerification": "matchwise_majority_position_pending",
@@ -3872,7 +4020,8 @@
         "current_starts_unknown",
         "matchwise_primary_position_frequency_pending",
         "past_2000_01_2001_02_independent_performance_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-dortmund-jorg-heinrich",
@@ -3899,7 +4048,7 @@
       "leagueMinutes": null,
       "statsScope": "2002-03 Bundesliga domestic league only",
       "tier": "B",
-      "rank": null,
+      "rank": 13,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_not_user_approved",
       "positionVerification": "matchwise_majority_position_pending",
@@ -3945,7 +4094,8 @@
         "current_starts_unknown",
         "matchwise_primary_position_frequency_pending",
         "past_2000_01_2001_02_independent_performance_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-dortmund-stefan-reuter",
@@ -3972,7 +4122,7 @@
       "leagueMinutes": null,
       "statsScope": "2002-03 Bundesliga domestic league only",
       "tier": "B+",
-      "rank": null,
+      "rank": 9,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_not_user_approved",
       "positionVerification": "matchwise_majority_position_pending",
@@ -4018,7 +4168,8 @@
         "current_starts_unknown",
         "matchwise_primary_position_frequency_pending",
         "past_2000_01_2001_02_independent_performance_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-dortmund-evanilson",
@@ -4045,7 +4196,7 @@
       "leagueMinutes": null,
       "statsScope": "2002-03 Bundesliga domestic league only",
       "tier": "B",
-      "rank": null,
+      "rank": 11,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_not_user_approved",
       "positionVerification": "matchwise_majority_position_pending",
@@ -4091,7 +4242,8 @@
         "current_starts_unknown",
         "matchwise_primary_position_frequency_pending",
         "past_2000_01_2001_02_independent_performance_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-dortmund-sebastian-kehl",
@@ -4118,7 +4270,7 @@
       "leagueMinutes": null,
       "statsScope": "2002-03 Bundesliga domestic league only",
       "tier": "A-",
-      "rank": null,
+      "rank": 6,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_not_user_approved",
       "positionVerification": "matchwise_majority_position_pending",
@@ -4164,7 +4316,8 @@
         "current_starts_unknown",
         "matchwise_primary_position_frequency_pending",
         "past_2000_01_2001_02_independent_performance_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-dortmund-guy-demel",
@@ -4191,7 +4344,7 @@
       "leagueMinutes": null,
       "statsScope": "2002-03 Bundesliga domestic league only",
       "tier": "B",
-      "rank": null,
+      "rank": 13,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_not_user_approved",
       "positionVerification": "matchwise_majority_position_pending",
@@ -4237,7 +4390,8 @@
         "current_starts_unknown",
         "matchwise_primary_position_frequency_pending",
         "past_2000_01_2001_02_independent_performance_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-dortmund-torsten-frings",
@@ -4264,7 +4418,7 @@
       "leagueMinutes": null,
       "statsScope": "2002-03 Bundesliga domestic league only",
       "tier": "A",
-      "rank": null,
+      "rank": 2,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_not_user_approved",
       "positionVerification": "matchwise_majority_position_pending",
@@ -4310,7 +4464,8 @@
         "current_starts_unknown",
         "matchwise_primary_position_frequency_pending",
         "past_2000_01_2001_02_independent_performance_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-dortmund-lars-ricken",
@@ -4337,7 +4492,7 @@
       "leagueMinutes": null,
       "statsScope": "2002-03 Bundesliga domestic league only",
       "tier": "B+",
-      "rank": null,
+      "rank": 8,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_not_user_approved",
       "positionVerification": "matchwise_majority_position_pending",
@@ -4383,7 +4538,8 @@
         "current_starts_unknown",
         "matchwise_primary_position_frequency_pending",
         "past_2000_01_2001_02_independent_performance_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-dortmund-tomas-rosicky",
@@ -4410,7 +4566,7 @@
       "leagueMinutes": null,
       "statsScope": "2002-03 Bundesliga domestic league only",
       "tier": "A+",
-      "rank": null,
+      "rank": 3,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_not_user_approved",
       "positionVerification": "matchwise_majority_position_pending",
@@ -4456,7 +4612,8 @@
         "current_starts_unknown",
         "matchwise_primary_position_frequency_pending",
         "past_2000_01_2001_02_independent_performance_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-dortmund-ewerthon",
@@ -4483,7 +4640,7 @@
       "leagueMinutes": null,
       "statsScope": "2002-03 Bundesliga domestic league only",
       "tier": "A",
-      "rank": null,
+      "rank": 3,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_not_user_approved",
       "positionVerification": "matchwise_majority_position_pending",
@@ -4528,7 +4685,8 @@
         "current_starts_unknown",
         "matchwise_primary_position_frequency_pending",
         "past_2000_01_2001_02_independent_performance_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-dortmund-otto-addo",
@@ -4555,7 +4713,7 @@
       "leagueMinutes": null,
       "statsScope": "2002-03 Bundesliga domestic league only",
       "tier": "B",
-      "rank": null,
+      "rank": 13,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_not_user_approved",
       "positionVerification": "matchwise_majority_position_pending",
@@ -4601,7 +4759,8 @@
         "current_starts_unknown",
         "matchwise_primary_position_frequency_pending",
         "past_2000_01_2001_02_independent_performance_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-dortmund-jan-koller",
@@ -4628,7 +4787,7 @@
       "leagueMinutes": null,
       "statsScope": "2002-03 Bundesliga domestic league only",
       "tier": "A+",
-      "rank": null,
+      "rank": 4,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_not_user_approved",
       "positionVerification": "matchwise_majority_position_pending",
@@ -4673,7 +4832,8 @@
         "current_starts_unknown",
         "matchwise_primary_position_frequency_pending",
         "past_2000_01_2001_02_independent_performance_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-dortmund-marcio-amoroso",
@@ -4700,7 +4860,7 @@
       "leagueMinutes": null,
       "statsScope": "2002-03 Bundesliga domestic league only",
       "tier": "B+",
-      "rank": null,
+      "rank": 18,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_not_user_approved",
       "positionVerification": "matchwise_majority_position_pending",
@@ -4746,7 +4906,8 @@
         "current_starts_unknown",
         "matchwise_primary_position_frequency_pending",
         "past_2000_01_2001_02_independent_performance_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-dortmund-giuseppe-reina",
@@ -4773,7 +4934,7 @@
       "leagueMinutes": null,
       "statsScope": "2002-03 Bundesliga domestic league only",
       "tier": "B",
-      "rank": null,
+      "rank": 24,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_not_user_approved",
       "positionVerification": "matchwise_majority_position_pending",
@@ -4819,7 +4980,8 @@
         "current_starts_unknown",
         "matchwise_primary_position_frequency_pending",
         "past_2000_01_2001_02_independent_performance_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-hsv-martin-pieckenhagen",
@@ -4846,7 +5008,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "A",
-      "rank": null,
+      "rank": 2,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_unapproved",
       "positionVerification": "verified",
@@ -4890,7 +5052,8 @@
       "verificationNeeded": [
         "matchwise_majority_primary_position_pending",
         "full_individual_2000_01_2001_02_3season_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-hsv-tomas-ujfalusi",
@@ -4917,7 +5080,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "A",
-      "rank": null,
+      "rank": 3,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_unapproved",
       "positionVerification": "matchwise_majority_primary_position_pending",
@@ -4961,7 +5124,8 @@
       "verificationNeeded": [
         "matchwise_majority_primary_position_pending",
         "full_individual_2000_01_2001_02_3season_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-hsv-nico-jan-hoogma",
@@ -4988,7 +5152,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "A-",
-      "rank": null,
+      "rank": 9,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_unapproved",
       "positionVerification": "matchwise_majority_primary_position_pending",
@@ -5032,7 +5196,8 @@
       "verificationNeeded": [
         "matchwise_majority_primary_position_pending",
         "full_individual_2000_01_2001_02_3season_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-hsv-marcel-maltritz",
@@ -5059,7 +5224,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B+",
-      "rank": null,
+      "rank": 14,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_unapproved",
       "positionVerification": "matchwise_majority_primary_position_pending",
@@ -5103,7 +5268,8 @@
       "verificationNeeded": [
         "matchwise_majority_primary_position_pending",
         "full_individual_2000_01_2001_02_3season_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-hsv-bernd-hollerbach",
@@ -5130,7 +5296,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B+",
-      "rank": null,
+      "rank": 5,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_unapproved",
       "positionVerification": "matchwise_majority_primary_position_pending",
@@ -5174,7 +5340,8 @@
       "verificationNeeded": [
         "matchwise_majority_primary_position_pending",
         "full_individual_2000_01_2001_02_3season_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-hsv-stephan-kling",
@@ -5201,7 +5368,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B",
-      "rank": null,
+      "rank": 15,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_unapproved",
       "positionVerification": "matchwise_majority_primary_position_pending",
@@ -5247,7 +5414,8 @@
         "2002_03_starts_pending",
         "matchwise_majority_primary_position_pending",
         "full_individual_2000_01_2001_02_3season_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-hsv-milan-fukal",
@@ -5274,7 +5442,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "A-",
-      "rank": null,
+      "rank": 4,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_unapproved",
       "positionVerification": "matchwise_majority_primary_position_pending",
@@ -5318,7 +5486,8 @@
       "verificationNeeded": [
         "matchwise_majority_primary_position_pending",
         "full_individual_2000_01_2001_02_3season_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-hsv-lars-jacobsen",
@@ -5345,7 +5514,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B",
-      "rank": null,
+      "rank": 12,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_unapproved",
       "positionVerification": "matchwise_majority_primary_position_pending",
@@ -5391,7 +5560,8 @@
         "2002_03_starts_pending",
         "matchwise_majority_primary_position_pending",
         "full_individual_2000_01_2001_02_3season_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-hsv-raphael-wicky",
@@ -5418,7 +5588,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B+",
-      "rank": null,
+      "rank": 11,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_unapproved",
       "positionVerification": "matchwise_majority_primary_position_pending",
@@ -5464,7 +5634,8 @@
         "2002_03_starts_pending",
         "matchwise_majority_primary_position_pending",
         "full_individual_2000_01_2001_02_3season_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-hsv-rodolfo-cardoso",
@@ -5491,7 +5662,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B+",
-      "rank": null,
+      "rank": 9,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_unapproved",
       "positionVerification": "matchwise_majority_primary_position_pending",
@@ -5537,7 +5708,8 @@
         "2002_03_starts_pending",
         "matchwise_majority_primary_position_pending",
         "full_individual_2000_01_2001_02_3season_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-hsv-martin-groth",
@@ -5564,7 +5736,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B",
-      "rank": null,
+      "rank": 15,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_unapproved",
       "positionVerification": "matchwise_majority_primary_position_pending",
@@ -5610,7 +5782,8 @@
         "2002_03_starts_pending",
         "matchwise_majority_primary_position_pending",
         "full_individual_2000_01_2001_02_3season_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-hsv-christian-rahn",
@@ -5637,7 +5810,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B+",
-      "rank": null,
+      "rank": 6,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_unapproved",
       "positionVerification": "matchwise_majority_primary_position_pending",
@@ -5683,7 +5856,8 @@
         "2002_03_starts_pending",
         "matchwise_majority_primary_position_pending",
         "full_individual_2000_01_2001_02_3season_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-hsv-mehdi-mahdavikia",
@@ -5710,7 +5884,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "A+",
-      "rank": null,
+      "rank": 1,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_unapproved",
       "positionVerification": "matchwise_majority_primary_position_pending",
@@ -5754,7 +5928,8 @@
       "verificationNeeded": [
         "matchwise_majority_primary_position_pending",
         "full_individual_2000_01_2001_02_3season_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-hsv-collin-benjamin",
@@ -5781,7 +5956,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B+",
-      "rank": null,
+      "rank": 6,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_unapproved",
       "positionVerification": "matchwise_majority_primary_position_pending",
@@ -5827,7 +6002,8 @@
         "2002_03_starts_pending",
         "matchwise_majority_primary_position_pending",
         "full_individual_2000_01_2001_02_3season_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-hsv-bernardo-romeo",
@@ -5854,7 +6030,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "A",
-      "rank": null,
+      "rank": 6,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_unapproved",
       "positionVerification": "matchwise_majority_primary_position_pending",
@@ -5898,7 +6074,8 @@
       "verificationNeeded": [
         "matchwise_majority_primary_position_pending",
         "full_individual_2000_01_2001_02_3season_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-hsv-sergej-barbarez",
@@ -5925,7 +6102,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "A-",
-      "rank": null,
+      "rank": 8,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_unapproved",
       "positionVerification": "matchwise_majority_primary_position_pending",
@@ -5969,7 +6146,8 @@
       "verificationNeeded": [
         "matchwise_majority_primary_position_pending",
         "full_individual_2000_01_2001_02_3season_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-hsv-erik-meijer",
@@ -5996,7 +6174,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B",
-      "rank": null,
+      "rank": 23,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_unapproved",
       "positionVerification": "matchwise_majority_primary_position_pending",
@@ -6042,7 +6220,8 @@
         "2002_03_starts_pending",
         "matchwise_majority_primary_position_pending",
         "full_individual_2000_01_2001_02_3season_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-hertha-gabor-kiraly",
@@ -6069,7 +6248,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "A",
-      "rank": null,
+      "rank": 4,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_unapproved",
       "positionVerification": "verified",
@@ -6113,7 +6292,8 @@
       "verificationNeeded": [
         "matchwise_majority_primary_position_pending",
         "full_individual_2000_01_2001_02_3season_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-hertha-christian-fiedler",
@@ -6140,7 +6320,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "C+",
-      "rank": null,
+      "rank": 16,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_unapproved",
       "positionVerification": "verified",
@@ -6186,7 +6366,8 @@
         "2002_03_starts_pending",
         "matchwise_majority_primary_position_pending",
         "full_individual_2000_01_2001_02_3season_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-hertha-josip-simunic",
@@ -6213,7 +6394,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B+",
-      "rank": null,
+      "rank": 15,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_unapproved",
       "positionVerification": "matchwise_majority_primary_position_pending",
@@ -6257,7 +6438,8 @@
       "verificationNeeded": [
         "matchwise_majority_primary_position_pending",
         "full_individual_2000_01_2001_02_3season_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-hertha-marko-rehmer",
@@ -6284,7 +6466,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B+",
-      "rank": null,
+      "rank": 18,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_unapproved",
       "positionVerification": "matchwise_majority_primary_position_pending",
@@ -6328,7 +6510,8 @@
       "verificationNeeded": [
         "matchwise_majority_primary_position_pending",
         "full_individual_2000_01_2001_02_3season_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-hertha-dick-van-burik",
@@ -6355,7 +6538,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B",
-      "rank": null,
+      "rank": 22,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_unapproved",
       "positionVerification": "matchwise_majority_primary_position_pending",
@@ -6399,7 +6582,8 @@
       "verificationNeeded": [
         "matchwise_majority_primary_position_pending",
         "full_individual_2000_01_2001_02_3season_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-hertha-michael-hartmann",
@@ -6426,7 +6610,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B+",
-      "rank": null,
+      "rank": 3,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_unapproved",
       "positionVerification": "matchwise_majority_primary_position_pending",
@@ -6470,7 +6654,8 @@
       "verificationNeeded": [
         "matchwise_majority_primary_position_pending",
         "full_individual_2000_01_2001_02_3season_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-hertha-arne-friedrich",
@@ -6497,7 +6682,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "A+",
-      "rank": null,
+      "rank": 1,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_unapproved",
       "positionVerification": "matchwise_majority_primary_position_pending",
@@ -6541,7 +6726,8 @@
       "verificationNeeded": [
         "matchwise_majority_primary_position_pending",
         "full_individual_2000_01_2001_02_3season_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-hertha-andreas-schmidt",
@@ -6568,7 +6754,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B",
-      "rank": null,
+      "rank": 10,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_unapproved",
       "positionVerification": "matchwise_majority_primary_position_pending",
@@ -6612,7 +6798,8 @@
       "verificationNeeded": [
         "matchwise_majority_primary_position_pending",
         "full_individual_2000_01_2001_02_3season_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-hertha-pal-dardai",
@@ -6639,7 +6826,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "A-",
-      "rank": null,
+      "rank": 4,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_unapproved",
       "positionVerification": "matchwise_majority_primary_position_pending",
@@ -6683,7 +6870,8 @@
       "verificationNeeded": [
         "matchwise_majority_primary_position_pending",
         "full_individual_2000_01_2001_02_3season_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-hertha-thorben-marx",
@@ -6710,7 +6898,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B+",
-      "rank": null,
+      "rank": 5,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_unapproved",
       "positionVerification": "matchwise_majority_primary_position_pending",
@@ -6754,7 +6942,8 @@
       "verificationNeeded": [
         "matchwise_majority_primary_position_pending",
         "full_individual_2000_01_2001_02_3season_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-hertha-stefan-beinlich",
@@ -6781,7 +6970,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B",
-      "rank": null,
+      "rank": 12,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_unapproved",
       "positionVerification": "matchwise_majority_primary_position_pending",
@@ -6825,7 +7014,8 @@
       "verificationNeeded": [
         "matchwise_majority_primary_position_pending",
         "full_individual_2000_01_2001_02_3season_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-hertha-marcelinho",
@@ -6852,7 +7042,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "A+",
-      "rank": null,
+      "rank": 1,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_unapproved",
       "positionVerification": "matchwise_majority_primary_position_pending",
@@ -6896,7 +7086,8 @@
       "verificationNeeded": [
         "matchwise_majority_primary_position_pending",
         "full_individual_2000_01_2001_02_3season_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-hertha-bart-goor",
@@ -6923,7 +7114,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "A-",
-      "rank": null,
+      "rank": 2,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_unapproved",
       "positionVerification": "matchwise_majority_primary_position_pending",
@@ -6967,7 +7158,8 @@
       "verificationNeeded": [
         "matchwise_majority_primary_position_pending",
         "full_individual_2000_01_2001_02_3season_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-hertha-andreas-neuendorf",
@@ -6994,7 +7186,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B",
-      "rank": null,
+      "rank": 7,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_unapproved",
       "positionVerification": "matchwise_majority_primary_position_pending",
@@ -7040,7 +7232,8 @@
         "2002_03_starts_pending",
         "matchwise_majority_primary_position_pending",
         "full_individual_2000_01_2001_02_3season_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-hertha-roberto-pinto",
@@ -7067,7 +7260,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B+",
-      "rank": null,
+      "rank": 8,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_unapproved",
       "positionVerification": "matchwise_majority_primary_position_pending",
@@ -7113,7 +7306,8 @@
         "2002_03_starts_pending",
         "matchwise_majority_primary_position_pending",
         "full_individual_2000_01_2001_02_3season_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-hertha-michael-preetz",
@@ -7140,7 +7334,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "A-",
-      "rank": null,
+      "rank": 9,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_unapproved",
       "positionVerification": "matchwise_majority_primary_position_pending",
@@ -7184,7 +7378,8 @@
       "verificationNeeded": [
         "matchwise_majority_primary_position_pending",
         "full_individual_2000_01_2001_02_3season_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-hertha-alex-alves",
@@ -7211,7 +7406,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B+",
-      "rank": null,
+      "rank": 15,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_unapproved",
       "positionVerification": "matchwise_majority_primary_position_pending",
@@ -7255,7 +7450,8 @@
       "verificationNeeded": [
         "matchwise_majority_primary_position_pending",
         "full_individual_2000_01_2001_02_3season_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-hertha-luizao",
@@ -7282,7 +7478,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B",
-      "rank": null,
+      "rank": 20,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_unapproved",
       "positionVerification": "matchwise_majority_primary_position_pending",
@@ -7326,7 +7522,8 @@
       "verificationNeeded": [
         "matchwise_majority_primary_position_pending",
         "full_individual_2000_01_2001_02_3season_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-bremen-pascal-borel",
@@ -7353,7 +7550,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B",
-      "rank": null,
+      "rank": 11,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_unapproved",
       "positionVerification": "verified",
@@ -7397,7 +7594,8 @@
       "verificationNeeded": [
         "matchwise_majority_primary_position_pending",
         "full_individual_2000_01_2001_02_3season_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-bremen-jakub-wierzchowski",
@@ -7424,7 +7622,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "C+",
-      "rank": null,
+      "rank": 14,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_unapproved",
       "positionVerification": "verified",
@@ -7468,7 +7666,8 @@
       "verificationNeeded": [
         "matchwise_majority_primary_position_pending",
         "full_individual_2000_01_2001_02_3season_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-bremen-mladen-krstajic",
@@ -7495,7 +7694,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "A-",
-      "rank": null,
+      "rank": 8,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_unapproved",
       "positionVerification": "matchwise_majority_primary_position_pending",
@@ -7539,7 +7738,8 @@
       "verificationNeeded": [
         "matchwise_majority_primary_position_pending",
         "full_individual_2000_01_2001_02_3season_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-bremen-frank-verlaat",
@@ -7566,7 +7766,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B+",
-      "rank": null,
+      "rank": 12,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_unapproved",
       "positionVerification": "matchwise_majority_primary_position_pending",
@@ -7610,7 +7810,8 @@
       "verificationNeeded": [
         "matchwise_majority_primary_position_pending",
         "full_individual_2000_01_2001_02_3season_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-bremen-viktor-skripnik",
@@ -7637,7 +7838,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B+",
-      "rank": null,
+      "rank": 9,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_unapproved",
       "positionVerification": "matchwise_majority_primary_position_pending",
@@ -7683,7 +7884,8 @@
         "2002_03_starts_pending",
         "matchwise_majority_primary_position_pending",
         "full_individual_2000_01_2001_02_3season_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-bremen-ludovic-magnin",
@@ -7710,7 +7912,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B",
-      "rank": null,
+      "rank": 14,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_unapproved",
       "positionVerification": "matchwise_majority_primary_position_pending",
@@ -7756,7 +7958,8 @@
         "2002_03_starts_pending",
         "matchwise_majority_primary_position_pending",
         "full_individual_2000_01_2001_02_3season_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-bremen-paul-stalteri",
@@ -7783,7 +7986,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B+",
-      "rank": null,
+      "rank": 5,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_unapproved",
       "positionVerification": "matchwise_majority_primary_position_pending",
@@ -7827,7 +8030,8 @@
       "verificationNeeded": [
         "matchwise_majority_primary_position_pending",
         "full_individual_2000_01_2001_02_3season_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-bremen-frank-baumann",
@@ -7854,7 +8058,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "A",
-      "rank": null,
+      "rank": 3,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_unapproved",
       "positionVerification": "matchwise_majority_primary_position_pending",
@@ -7900,7 +8104,8 @@
         "2002_03_starts_pending",
         "matchwise_majority_primary_position_pending",
         "full_individual_2000_01_2001_02_3season_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-bremen-fabian-ernst",
@@ -7927,7 +8132,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B+",
-      "rank": null,
+      "rank": 3,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_unapproved",
       "positionVerification": "matchwise_majority_primary_position_pending",
@@ -7971,7 +8176,8 @@
       "verificationNeeded": [
         "matchwise_majority_primary_position_pending",
         "full_individual_2000_01_2001_02_3season_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-bremen-tim-borowski",
@@ -7998,7 +8204,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B+",
-      "rank": null,
+      "rank": 11,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_unapproved",
       "positionVerification": "matchwise_majority_primary_position_pending",
@@ -8044,7 +8250,8 @@
         "2002_03_starts_pending",
         "matchwise_majority_primary_position_pending",
         "full_individual_2000_01_2001_02_3season_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-bremen-johan-micoud",
@@ -8071,7 +8278,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "A+",
-      "rank": null,
+      "rank": 2,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_unapproved",
       "positionVerification": "matchwise_majority_primary_position_pending",
@@ -8115,7 +8322,8 @@
       "verificationNeeded": [
         "matchwise_majority_primary_position_pending",
         "full_individual_2000_01_2001_02_3season_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-bremen-krisztian-lisztes",
@@ -8142,7 +8350,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B+",
-      "rank": null,
+      "rank": 6,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_unapproved",
       "positionVerification": "matchwise_majority_primary_position_pending",
@@ -8186,7 +8394,8 @@
       "verificationNeeded": [
         "matchwise_majority_primary_position_pending",
         "full_individual_2000_01_2001_02_3season_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-bremen-marco-reich",
@@ -8213,7 +8422,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B",
-      "rank": null,
+      "rank": 12,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_unapproved",
       "positionVerification": "matchwise_majority_primary_position_pending",
@@ -8259,7 +8468,8 @@
         "2002_03_starts_pending",
         "matchwise_majority_primary_position_pending",
         "full_individual_2000_01_2001_02_3season_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-bremen-ailton",
@@ -8286,7 +8496,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "A+",
-      "rank": null,
+      "rank": 2,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_unapproved",
       "positionVerification": "matchwise_majority_primary_position_pending",
@@ -8330,7 +8540,8 @@
       "verificationNeeded": [
         "matchwise_majority_primary_position_pending",
         "full_individual_2000_01_2001_02_3season_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-bremen-angelos-charisteas",
@@ -8357,7 +8568,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B+",
-      "rank": null,
+      "rank": 13,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_unapproved",
       "positionVerification": "matchwise_majority_primary_position_pending",
@@ -8401,7 +8612,8 @@
       "verificationNeeded": [
         "matchwise_majority_primary_position_pending",
         "full_individual_2000_01_2001_02_3season_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-bremen-ivan-klasnic",
@@ -8428,7 +8640,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B",
-      "rank": null,
+      "rank": 25,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_unapproved",
       "positionVerification": "matchwise_majority_primary_position_pending",
@@ -8474,7 +8686,8 @@
         "2002_03_starts_pending",
         "matchwise_majority_primary_position_pending",
         "full_individual_2000_01_2001_02_3season_audit_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-schalke-frank-rost",
@@ -8501,7 +8714,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "A",
-      "rank": null,
+      "rank": 3,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_not_user_approved",
       "positionVerification": "verified",
@@ -8545,7 +8758,8 @@
       "verificationNeeded": [
         "primary_season_position_match_frequencies_pending",
         "prior_two_seasons_direct_individual_stats_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-schalke-oliver-reck",
@@ -8572,7 +8786,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "C+",
-      "rank": null,
+      "rank": 15,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_not_user_approved",
       "positionVerification": "verified",
@@ -8616,7 +8830,8 @@
       "verificationNeeded": [
         "primary_season_position_match_frequencies_pending",
         "prior_two_seasons_direct_individual_stats_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-schalke-tomasz-wa-doch",
@@ -8643,7 +8858,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B+",
-      "rank": null,
+      "rank": 20,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_not_user_approved",
       "positionVerification": "matchwise_season_primary_position_pending",
@@ -8689,7 +8904,8 @@
         "2002_03_starts_pending",
         "primary_season_position_match_frequencies_pending",
         "prior_two_seasons_direct_individual_stats_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-schalke-tomasz-hajto",
@@ -8716,7 +8932,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B+",
-      "rank": null,
+      "rank": 13,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_not_user_approved",
       "positionVerification": "matchwise_season_primary_position_pending",
@@ -8760,7 +8976,8 @@
       "verificationNeeded": [
         "primary_season_position_match_frequencies_pending",
         "prior_two_seasons_direct_individual_stats_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-schalke-marco-van-hoogdalem",
@@ -8787,7 +9004,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B+",
-      "rank": null,
+      "rank": 17,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_not_user_approved",
       "positionVerification": "matchwise_season_primary_position_pending",
@@ -8831,7 +9048,8 @@
       "verificationNeeded": [
         "primary_season_position_match_frequencies_pending",
         "prior_two_seasons_direct_individual_stats_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-schalke-nico-van-kerckhoven",
@@ -8858,7 +9076,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B+",
-      "rank": null,
+      "rank": 7,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_not_user_approved",
       "positionVerification": "matchwise_season_primary_position_pending",
@@ -8904,7 +9122,8 @@
         "2002_03_starts_pending",
         "primary_season_position_match_frequencies_pending",
         "prior_two_seasons_direct_individual_stats_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-schalke-dario-rodriguez",
@@ -8931,7 +9150,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B+",
-      "rank": null,
+      "rank": 6,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_not_user_approved",
       "positionVerification": "matchwise_season_primary_position_pending",
@@ -8977,7 +9196,8 @@
         "2002_03_starts_pending",
         "primary_season_position_match_frequencies_pending",
         "prior_two_seasons_direct_individual_stats_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-schalke-niels-oude-kamphuis",
@@ -9004,7 +9224,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B+",
-      "rank": null,
+      "rank": 7,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_not_user_approved",
       "positionVerification": "matchwise_season_primary_position_pending",
@@ -9048,7 +9268,8 @@
       "verificationNeeded": [
         "primary_season_position_match_frequencies_pending",
         "prior_two_seasons_direct_individual_stats_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-schalke-christian-poulsen",
@@ -9075,7 +9296,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "A-",
-      "rank": null,
+      "rank": 5,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_not_user_approved",
       "positionVerification": "matchwise_season_primary_position_pending",
@@ -9119,7 +9340,8 @@
       "verificationNeeded": [
         "primary_season_position_match_frequencies_pending",
         "prior_two_seasons_direct_individual_stats_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-schalke-sven-kmetsch",
@@ -9146,7 +9368,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B",
-      "rank": null,
+      "rank": 14,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_not_user_approved",
       "positionVerification": "matchwise_season_primary_position_pending",
@@ -9192,7 +9414,8 @@
         "2002_03_starts_pending",
         "primary_season_position_match_frequencies_pending",
         "prior_two_seasons_direct_individual_stats_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-schalke-sven-vermant",
@@ -9219,7 +9442,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B+",
-      "rank": null,
+      "rank": 6,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_not_user_approved",
       "positionVerification": "matchwise_season_primary_position_pending",
@@ -9263,7 +9486,8 @@
       "verificationNeeded": [
         "primary_season_position_match_frequencies_pending",
         "prior_two_seasons_direct_individual_stats_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-schalke-andreas-moller",
@@ -9290,7 +9514,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B+",
-      "rank": null,
+      "rank": 9,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_not_user_approved",
       "positionVerification": "matchwise_season_primary_position_pending",
@@ -9336,7 +9560,8 @@
         "2002_03_starts_pending",
         "primary_season_position_match_frequencies_pending",
         "prior_two_seasons_direct_individual_stats_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-schalke-jorg-bohme",
@@ -9363,7 +9588,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B+",
-      "rank": null,
+      "rank": 4,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_not_user_approved",
       "positionVerification": "matchwise_season_primary_position_pending",
@@ -9407,7 +9632,8 @@
       "verificationNeeded": [
         "primary_season_position_match_frequencies_pending",
         "prior_two_seasons_direct_individual_stats_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-schalke-gustavo-varela",
@@ -9434,7 +9660,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B+",
-      "rank": null,
+      "rank": 7,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_not_user_approved",
       "positionVerification": "matchwise_season_primary_position_pending",
@@ -9480,7 +9706,8 @@
         "2002_03_starts_pending",
         "primary_season_position_match_frequencies_pending",
         "prior_two_seasons_direct_individual_stats_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-schalke-gerald-asamoah",
@@ -9507,7 +9734,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B+",
-      "rank": null,
+      "rank": 4,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_not_user_approved",
       "positionVerification": "matchwise_season_primary_position_pending",
@@ -9551,7 +9778,8 @@
       "verificationNeeded": [
         "primary_season_position_match_frequencies_pending",
         "prior_two_seasons_direct_individual_stats_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-schalke-ebbe-sand",
@@ -9578,7 +9806,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B+",
-      "rank": null,
+      "rank": 12,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_not_user_approved",
       "positionVerification": "matchwise_season_primary_position_pending",
@@ -9622,7 +9850,8 @@
       "verificationNeeded": [
         "primary_season_position_match_frequencies_pending",
         "prior_two_seasons_direct_individual_stats_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-schalke-victor-agali",
@@ -9649,7 +9878,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B+",
-      "rank": null,
+      "rank": 19,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_not_user_approved",
       "positionVerification": "matchwise_season_primary_position_pending",
@@ -9695,7 +9924,8 @@
         "2002_03_starts_pending",
         "primary_season_position_match_frequencies_pending",
         "prior_two_seasons_direct_individual_stats_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-schalke-emile-mpenza",
@@ -9722,7 +9952,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B",
-      "rank": null,
+      "rank": 22,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_not_user_approved",
       "positionVerification": "matchwise_season_primary_position_pending",
@@ -9768,7 +9998,8 @@
         "2002_03_starts_pending",
         "primary_season_position_match_frequencies_pending",
         "prior_two_seasons_direct_individual_stats_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-wolfsburg-claus-reitmaier",
@@ -9795,7 +10026,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B+",
-      "rank": null,
+      "rank": 6,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_not_user_approved",
       "positionVerification": "verified",
@@ -9839,7 +10070,8 @@
       "verificationNeeded": [
         "primary_season_position_match_frequencies_pending",
         "prior_two_seasons_direct_individual_stats_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-wolfsburg-sead-ramovic",
@@ -9866,7 +10098,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B",
-      "rank": null,
+      "rank": 13,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_not_user_approved",
       "positionVerification": "verified",
@@ -9912,7 +10144,8 @@
         "2002_03_starts_pending",
         "primary_season_position_match_frequencies_pending",
         "prior_two_seasons_direct_individual_stats_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-wolfsburg-stefan-schnoor",
@@ -9939,7 +10172,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B+",
-      "rank": null,
+      "rank": 11,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_not_user_approved",
       "positionVerification": "matchwise_season_primary_position_pending",
@@ -9983,7 +10216,8 @@
       "verificationNeeded": [
         "primary_season_position_match_frequencies_pending",
         "prior_two_seasons_direct_individual_stats_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-wolfsburg-marino-biliskov",
@@ -10010,7 +10244,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B",
-      "rank": null,
+      "rank": 26,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_not_user_approved",
       "positionVerification": "matchwise_season_primary_position_pending",
@@ -10056,7 +10290,8 @@
         "2002_03_starts_pending",
         "primary_season_position_match_frequencies_pending",
         "prior_two_seasons_direct_individual_stats_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-wolfsburg-kim-madsen",
@@ -10083,7 +10318,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B",
-      "rank": null,
+      "rank": 25,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_not_user_approved",
       "positionVerification": "matchwise_season_primary_position_pending",
@@ -10129,7 +10364,8 @@
         "2002_03_starts_pending",
         "primary_season_position_match_frequencies_pending",
         "prior_two_seasons_direct_individual_stats_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-wolfsburg-tobias-rau",
@@ -10156,7 +10392,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B+",
-      "rank": null,
+      "rank": 8,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_not_user_approved",
       "positionVerification": "matchwise_season_primary_position_pending",
@@ -10202,7 +10438,8 @@
         "2002_03_starts_pending",
         "primary_season_position_match_frequencies_pending",
         "prior_two_seasons_direct_individual_stats_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-wolfsburg-hans-sarpei",
@@ -10229,7 +10466,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B",
-      "rank": null,
+      "rank": 12,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_not_user_approved",
       "positionVerification": "matchwise_season_primary_position_pending",
@@ -10275,7 +10512,8 @@
         "2002_03_starts_pending",
         "primary_season_position_match_frequencies_pending",
         "prior_two_seasons_direct_individual_stats_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-wolfsburg-thomas-rytter",
@@ -10302,7 +10540,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B+",
-      "rank": null,
+      "rank": 6,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_not_user_approved",
       "positionVerification": "matchwise_season_primary_position_pending",
@@ -10346,7 +10584,8 @@
       "verificationNeeded": [
         "primary_season_position_match_frequencies_pending",
         "prior_two_seasons_direct_individual_stats_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-wolfsburg-patrick-weiser",
@@ -10373,7 +10612,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B",
-      "rank": null,
+      "rank": 13,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_not_user_approved",
       "positionVerification": "matchwise_season_primary_position_pending",
@@ -10419,7 +10658,8 @@
         "2002_03_starts_pending",
         "primary_season_position_match_frequencies_pending",
         "prior_two_seasons_direct_individual_stats_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-wolfsburg-miroslav-karhan",
@@ -10446,7 +10686,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B+",
-      "rank": null,
+      "rank": 7,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_not_user_approved",
       "positionVerification": "matchwise_season_primary_position_pending",
@@ -10490,7 +10730,8 @@
       "verificationNeeded": [
         "primary_season_position_match_frequencies_pending",
         "prior_two_seasons_direct_individual_stats_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-wolfsburg-charles-akonnor",
@@ -10517,7 +10758,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B",
-      "rank": null,
+      "rank": 12,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_not_user_approved",
       "positionVerification": "matchwise_season_primary_position_pending",
@@ -10563,7 +10804,8 @@
         "2002_03_starts_pending",
         "primary_season_position_match_frequencies_pending",
         "prior_two_seasons_direct_individual_stats_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-wolfsburg-stefan-effenberg",
@@ -10590,7 +10832,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B+",
-      "rank": null,
+      "rank": 10,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_not_user_approved",
       "positionVerification": "matchwise_season_primary_position_pending",
@@ -10636,7 +10878,8 @@
         "2002_03_starts_pending",
         "primary_season_position_match_frequencies_pending",
         "prior_two_seasons_direct_individual_stats_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-wolfsburg-dorinel-munteanu",
@@ -10663,7 +10906,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B",
-      "rank": null,
+      "rank": 13,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_not_user_approved",
       "positionVerification": "matchwise_season_primary_position_pending",
@@ -10709,7 +10952,8 @@
         "2002_03_starts_pending",
         "primary_season_position_match_frequencies_pending",
         "prior_two_seasons_direct_individual_stats_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-wolfsburg-robson-ponte",
@@ -10736,7 +10980,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "A-",
-      "rank": null,
+      "rank": 4,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_not_user_approved",
       "positionVerification": "matchwise_season_primary_position_pending",
@@ -10780,7 +11024,8 @@
       "verificationNeeded": [
         "primary_season_position_match_frequencies_pending",
         "prior_two_seasons_direct_individual_stats_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-wolfsburg-martin-petrov",
@@ -10807,7 +11052,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "A-",
-      "rank": null,
+      "rank": 3,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_not_user_approved",
       "positionVerification": "matchwise_season_primary_position_pending",
@@ -10853,7 +11098,8 @@
         "2002_03_starts_pending",
         "primary_season_position_match_frequencies_pending",
         "prior_two_seasons_direct_individual_stats_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-wolfsburg-sven-muller",
@@ -10880,7 +11126,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B",
-      "rank": null,
+      "rank": 14,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_not_user_approved",
       "positionVerification": "matchwise_season_primary_position_pending",
@@ -10926,7 +11172,8 @@
         "2002_03_starts_pending",
         "primary_season_position_match_frequencies_pending",
         "prior_two_seasons_direct_individual_stats_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-wolfsburg-tomislav-maric",
@@ -10953,7 +11200,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "A-",
-      "rank": null,
+      "rank": 10,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_not_user_approved",
       "positionVerification": "matchwise_season_primary_position_pending",
@@ -10998,7 +11245,8 @@
         "2002_03_starts_pending",
         "primary_season_position_match_frequencies_pending",
         "prior_two_seasons_direct_individual_stats_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-wolfsburg-diego-klimowicz",
@@ -11025,7 +11273,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B+",
-      "rank": null,
+      "rank": 17,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_not_user_approved",
       "positionVerification": "matchwise_season_primary_position_pending",
@@ -11071,7 +11319,8 @@
         "2002_03_starts_pending",
         "primary_season_position_match_frequencies_pending",
         "prior_two_seasons_direct_individual_stats_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-wolfsburg-peter-madsen",
@@ -11098,7 +11347,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B",
-      "rank": null,
+      "rank": 27,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_not_user_approved",
       "positionVerification": "matchwise_season_primary_position_pending",
@@ -11144,7 +11393,8 @@
         "2002_03_starts_pending",
         "primary_season_position_match_frequencies_pending",
         "prior_two_seasons_direct_individual_stats_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-kaiserslautern-tim-wiese",
@@ -11171,7 +11421,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B+",
-      "rank": null,
+      "rank": 7,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_not_user_approved",
       "positionVerification": "verified",
@@ -11215,7 +11465,8 @@
       "verificationNeeded": [
         "primary_season_position_match_frequencies_pending",
         "prior_two_seasons_direct_individual_stats_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-kaiserslautern-georg-koch",
@@ -11242,7 +11493,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B",
-      "rank": null,
+      "rank": 12,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_not_user_approved",
       "positionVerification": "verified",
@@ -11286,7 +11537,8 @@
       "verificationNeeded": [
         "primary_season_position_match_frequencies_pending",
         "prior_two_seasons_direct_individual_stats_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-kaiserslautern-thomas-hengen",
@@ -11313,7 +11565,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B+",
-      "rank": null,
+      "rank": 19,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_not_user_approved",
       "positionVerification": "matchwise_season_primary_position_pending",
@@ -11359,7 +11611,8 @@
         "2002_03_starts_pending",
         "primary_season_position_match_frequencies_pending",
         "prior_two_seasons_direct_individual_stats_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-kaiserslautern-harry-koch",
@@ -11386,7 +11639,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B+",
-      "rank": null,
+      "rank": 16,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_not_user_approved",
       "positionVerification": "matchwise_season_primary_position_pending",
@@ -11430,7 +11683,8 @@
       "verificationNeeded": [
         "primary_season_position_match_frequencies_pending",
         "prior_two_seasons_direct_individual_stats_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-kaiserslautern-hany-ramzy",
@@ -11457,7 +11711,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B",
-      "rank": null,
+      "rank": 21,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_not_user_approved",
       "positionVerification": "matchwise_season_primary_position_pending",
@@ -11501,7 +11755,8 @@
       "verificationNeeded": [
         "primary_season_position_match_frequencies_pending",
         "prior_two_seasons_direct_individual_stats_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-kaiserslautern-bill-tchato",
@@ -11528,7 +11783,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B",
-      "rank": null,
+      "rank": 11,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_not_user_approved",
       "positionVerification": "matchwise_season_primary_position_pending",
@@ -11574,7 +11829,8 @@
         "2002_03_starts_pending",
         "primary_season_position_match_frequencies_pending",
         "prior_two_seasons_direct_individual_stats_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-kaiserslautern-petr-gabriel",
@@ -11601,7 +11857,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B-",
-      "rank": null,
+      "rank": 16,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_not_user_approved",
       "positionVerification": "matchwise_season_primary_position_pending",
@@ -11647,7 +11903,8 @@
         "2002_03_starts_pending",
         "primary_season_position_match_frequencies_pending",
         "prior_two_seasons_direct_individual_stats_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-kaiserslautern-herve-nzelo-lembi",
@@ -11674,7 +11931,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B+",
-      "rank": null,
+      "rank": 8,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_not_user_approved",
       "positionVerification": "matchwise_season_primary_position_pending",
@@ -11720,7 +11977,8 @@
         "2002_03_starts_pending",
         "primary_season_position_match_frequencies_pending",
         "prior_two_seasons_direct_individual_stats_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-kaiserslautern-dimitrios-grammozis",
@@ -11747,7 +12005,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B+",
-      "rank": null,
+      "rank": 8,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_not_user_approved",
       "positionVerification": "matchwise_season_primary_position_pending",
@@ -11791,7 +12049,8 @@
       "verificationNeeded": [
         "primary_season_position_match_frequencies_pending",
         "prior_two_seasons_direct_individual_stats_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-kaiserslautern-ciriaco-sforza",
@@ -11818,7 +12077,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B+",
-      "rank": null,
+      "rank": 9,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_not_user_approved",
       "positionVerification": "matchwise_season_primary_position_pending",
@@ -11862,7 +12121,8 @@
       "verificationNeeded": [
         "primary_season_position_match_frequencies_pending",
         "prior_two_seasons_direct_individual_stats_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-kaiserslautern-nenad-bjelica",
@@ -11889,7 +12149,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B",
-      "rank": null,
+      "rank": 16,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_not_user_approved",
       "positionVerification": "matchwise_season_primary_position_pending",
@@ -11935,7 +12195,8 @@
         "2002_03_starts_pending",
         "primary_season_position_match_frequencies_pending",
         "prior_two_seasons_direct_individual_stats_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-kaiserslautern-marijan-christow",
@@ -11962,7 +12223,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B",
-      "rank": null,
+      "rank": 14,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_not_user_approved",
       "positionVerification": "matchwise_season_primary_position_pending",
@@ -12008,7 +12269,8 @@
         "2002_03_starts_pending",
         "primary_season_position_match_frequencies_pending",
         "prior_two_seasons_direct_individual_stats_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-kaiserslautern-lincoln",
@@ -12035,7 +12297,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B+",
-      "rank": null,
+      "rank": 7,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_not_user_approved",
       "positionVerification": "matchwise_season_primary_position_pending",
@@ -12079,7 +12341,8 @@
       "verificationNeeded": [
         "primary_season_position_match_frequencies_pending",
         "prior_two_seasons_direct_individual_stats_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-kaiserslautern-ratinho",
@@ -12106,7 +12369,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B",
-      "rank": null,
+      "rank": 8,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_not_user_approved",
       "positionVerification": "matchwise_season_primary_position_pending",
@@ -12152,7 +12415,8 @@
         "2002_03_starts_pending",
         "primary_season_position_match_frequencies_pending",
         "prior_two_seasons_direct_individual_stats_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-kaiserslautern-mario-basler",
@@ -12179,7 +12443,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B",
-      "rank": null,
+      "rank": 9,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_not_user_approved",
       "positionVerification": "matchwise_season_primary_position_pending",
@@ -12223,7 +12487,8 @@
       "verificationNeeded": [
         "primary_season_position_match_frequencies_pending",
         "prior_two_seasons_direct_individual_stats_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-kaiserslautern-jose-dominguez",
@@ -12250,7 +12515,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B",
-      "rank": null,
+      "rank": 11,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_not_user_approved",
       "positionVerification": "matchwise_season_primary_position_pending",
@@ -12296,7 +12561,8 @@
         "2002_03_starts_pending",
         "primary_season_position_match_frequencies_pending",
         "prior_two_seasons_direct_individual_stats_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-kaiserslautern-miroslav-klose",
@@ -12323,7 +12589,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "A-",
-      "rank": null,
+      "rank": 7,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_not_user_approved",
       "positionVerification": "matchwise_season_primary_position_pending",
@@ -12367,7 +12633,8 @@
       "verificationNeeded": [
         "primary_season_position_match_frequencies_pending",
         "prior_two_seasons_direct_individual_stats_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-kaiserslautern-vratislav-lokvenc",
@@ -12394,7 +12661,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B+",
-      "rank": null,
+      "rank": 11,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_not_user_approved",
       "positionVerification": "matchwise_season_primary_position_pending",
@@ -12438,7 +12705,8 @@
       "verificationNeeded": [
         "primary_season_position_match_frequencies_pending",
         "prior_two_seasons_direct_individual_stats_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     },
     {
       "id": "bundesliga-2002-kaiserslautern-michael-mifsud",
@@ -12465,7 +12733,7 @@
       "leagueMinutes": null,
       "statsScope": "Bundesliga 2002-03 only",
       "tier": "B",
-      "rank": null,
+      "rank": 26,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_not_user_approved",
       "positionVerification": "matchwise_season_primary_position_pending",
@@ -12511,10 +12779,133 @@
         "2002_03_starts_pending",
         "primary_season_position_match_frequencies_pending",
         "prior_two_seasons_direct_individual_stats_pending"
-      ]
+      ],
+      "rankStatus": "source_evidence_plus_tier_provisional"
     }
   ],
-  "bestXi": [],
+  "bestXi": [
+    {
+      "position": "GK",
+      "displayPosition": "GK",
+      "playerId": "bundesliga-2002-bayern-oliver-kahn",
+      "reason": "33경기·33선발, 전경기 수준의 골문 지휘 및 2000-02 연속 수비 기여. 유럽/대표팀 성적 보너스 없음.",
+      "alternates": [
+        "Jens Lehmann",
+        "Martin Pieckenhagen"
+      ],
+      "status": "proposed_unapproved"
+    },
+    {
+      "position": "CB",
+      "displayPosition": "CB",
+      "playerId": "bundesliga-2002-stuttgart-marcelo-bordon",
+      "reason": "26경기·26선발, 전진 수비·대인 방어와 중앙 조율의 개인 기여.",
+      "alternates": [
+        "Christian Wörns",
+        "Fernando Meira"
+      ],
+      "status": "proposed_unapproved"
+    },
+    {
+      "position": "CB",
+      "displayPosition": "CB",
+      "playerId": "bundesliga-2002-dortmund-christian-worns",
+      "reason": "후방 수비 조율과 최근 세 시즌 수비 지속성. 2002-03 개인 선발 횟수 검증 대기.",
+      "alternates": [
+        "Tomáš Ujfaluši",
+        "Fernando Meira"
+      ],
+      "status": "proposed_unapproved"
+    },
+    {
+      "position": "LB",
+      "displayPosition": "LB",
+      "playerId": "bundesliga-2002-bayern-bixente-lizarazu",
+      "reason": "26경기·25선발, 왼쪽 수비·전진과 직전 2시즌의 수비 지속성.",
+      "alternates": [
+        "Dedê",
+        "Heiko Gerber"
+      ],
+      "status": "proposed_unapproved"
+    },
+    {
+      "position": "RB",
+      "displayPosition": "RB",
+      "playerId": "bundesliga-2002-stuttgart-andreas-hinkel",
+      "reason": "33경기·32선발, 오른쪽 측면 수비·전환 지원의 지속적 출전·개인 기량.",
+      "alternates": [
+        "Willy Sagnol",
+        "Arne Friedrich"
+      ],
+      "status": "proposed_unapproved"
+    },
+    {
+      "position": "DM",
+      "displayPosition": "DM",
+      "playerId": "bundesliga-2002-bayern-jens-jeremies",
+      "reason": "29경기·28선발, 중앙 볼 탈취·전진 압박·전환 안정성을 제공.",
+      "alternates": [
+        "Sebastian Kehl",
+        "Zvonimir Soldo"
+      ],
+      "status": "proposed_unapproved"
+    },
+    {
+      "position": "CM",
+      "displayPosition": "CM",
+      "playerId": "bundesliga-2002-bayern-michael-ballack",
+      "reason": "구단 공식 26경기 10골, 중원 공격 가담과 2001-02 시즌 17득점의 지속적 결정력.",
+      "alternates": [
+        "Torsten Frings",
+        "Fabian Ernst"
+      ],
+      "status": "proposed_unapproved"
+    },
+    {
+      "position": "LW",
+      "displayPosition": "LW",
+      "playerId": "bundesliga-2002-bayern-ze-roberto",
+      "reason": "31경기·26선발·10도움, 왼쪽 볼 운반과 찬스 생산. 이전 2시즌 높은 전진 기여도.",
+      "alternates": [
+        "Martin Petrov",
+        "Bart Goor"
+      ],
+      "status": "proposed_unapproved"
+    },
+    {
+      "position": "RW",
+      "displayPosition": "RW",
+      "playerId": "bundesliga-2002-hsv-mehdi-mahdavikia",
+      "reason": "26경기·26선발, 14도움으로 당시 리그 도움 1위의 직접 찬스 기여.",
+      "alternates": [
+        "Aljaksandr Hleb",
+        "Ewerthon"
+      ],
+      "status": "proposed_unapproved"
+    },
+    {
+      "position": "ST",
+      "displayPosition": "ST",
+      "playerId": "bundesliga-2002-bayern-giovane-elber",
+      "reason": "33경기·21골, 2000-01 15골·2001-02 17골의 일관성. 팀 우승 여부를 직접 점수화하지 않음.",
+      "alternates": [
+        "Kevin Kurányi",
+        "Aílton"
+      ],
+      "status": "proposed_unapproved"
+    },
+    {
+      "position": "ST",
+      "displayPosition": "ST",
+      "playerId": "bundesliga-2002-dortmund-jan-koller",
+      "reason": "34경기·13골, 최전방 연계·공중볼과 이전 시즌 11골의 지속성.",
+      "alternates": [
+        "Aílton",
+        "Kevin Kurányi"
+      ],
+      "status": "proposed_unapproved"
+    }
+  ],
   "candidateAudit": {
     "method": "2002-03 DFB roster and birth dates; FBref and club season statistics selectively crosschecked. Unverified appearances null; not imputed.",
     "pending": "Individual current appearances/starts and two earlier season matchwise majority position verification."
