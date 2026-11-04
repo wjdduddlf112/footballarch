@@ -166,8 +166,8 @@
       "verifiedCurrentLeagueStarts": 89,
       "birthDatesRecorded": 163,
       "birthDatesLinkedDfbRoster": 163,
-      "individualThreeSeasonDirectSources": 0,
-      "priorTwoSeasonsDirectPlayerReauditPending": 163,
+      "individualThreeSeasonDirectSources": 5,
+      "priorTwoSeasonsDirectPlayerReauditPending": 158,
       "worldClass": 16,
       "leagueTopClass": 50,
       "tierCounts": {
@@ -231,9 +231,23 @@
         }
       },
       "pendingHistoricalPositionAudit": 146,
-      "errors": []
+      "errors": [],
+      "directThreeSeasonNames": [
+        "Oliver Kahn",
+        "Michael Ballack",
+        "Giovane Élber",
+        "Aílton",
+        "Mehdi Mahdavikia"
+      ],
+      "individualSeasonEvidenceScope": "DFB verified appearances and goals only; full 3-season positional/qualitative impact not independently audited."
     },
-    "historicalVerificationStatus": "partial_not_claimed_complete"
+    "historicalVerificationStatus": "partial_not_claimed_complete",
+    "dataIntegrityWarnings": [
+      "Ballack 2002-03 DFB/Bayern official league goals=10, FBref sometimes 11; official DFB count 10 adopted.",
+      "Bundesliga goalkeeper cameo by Jan Koller does not change seasonal primary ST.",
+      "Some players are roster-verified but actual 2002-03 Bundesliga appearances remain null until confirmed.",
+      "DFB 3-season individual player evidence directly checked for only 5 of 163; all ratings remain draft."
+    ]
   },
   "clubs": [
     {
@@ -925,43 +939,44 @@
       "sources": [
         "https://datencenter.dfb.de/competitions/bundesliga/seasons/2002-2003/teams/bayern-muenchen",
         "https://fbref.com/en/squads/054efa67/2002-2003/Bayern-Munich-Stats",
-        "https://fcbayern.com/de/club/erfolge/deutscher-meister/saison-2002-2003"
+        "https://fcbayern.com/de/club/erfolge/deutscher-meister/saison-2002-2003",
+        "https://datencenter.dfb.de/en/people/oliver-kahn/player"
       ],
       "evidence": {
         "officialRoster": "https://datencenter.dfb.de/competitions/bundesliga/seasons/2002-2003/teams/bayern-muenchen",
         "currentSeason": "https://fbref.com/en/squads/054efa67/2002-2003/Bayern-Munich-Stats",
         "starts": "https://fbref.com/en/squads/054efa67/2002-2003/Bayern-Munich-Stats",
-        "sourceStatus": "specific_league_record_linked"
+        "sourceStatus": "specific_league_record_linked",
+        "threeSeasonVerified": "https://datencenter.dfb.de/en/people/oliver-kahn/player"
       },
       "threeSeasonReview": {
-        "seasons": [
+        "assessmentSeasons": [
           "2000-01",
           "2001-02",
           "2002-03"
         ],
-        "weighting": "2002-03 highest > 2001-02 > 2000-01",
-        "status": "2002_source_and_prior_football_archive_partial_not_independent_complete",
-        "archivalPast": [
-          {
-            "season": "2000-01",
-            "team": "FC Bayern München",
-            "apps": 32,
-            "priorPlayerId": "bundesliga-2000-bayern-oliver-kahn",
-            "sourceStatus": "prior_archived_pending_independent_double_check"
+        "weighting": "2002-03 > 2001-02 > 2000-01; qualitative recency no fabricated numeric total",
+        "status": "DFB_three_bundesliga_seasons_individual_appearances_goals_verified",
+        "records": {
+          "2000-01": {
+            "appearances": 32,
+            "goals": 0
           },
-          {
-            "season": "2001-02",
-            "team": "FC Bayern München",
-            "apps": 32,
-            "priorPlayerId": "bundesliga-2001-bayern-oliver-kahn",
-            "sourceStatus": "prior_archived_pending_independent_double_check"
+          "2001-02": {
+            "appearances": 32,
+            "goals": 0
+          },
+          "2002-03": {
+            "appearances": 33,
+            "goals": 0
           }
-        ]
+        },
+        "source": "https://datencenter.dfb.de/en/people/oliver-kahn/player",
+        "verifiedScope": "Only per-season 1st Bundesliga appearances and league goals individually verified from official DFB; position minute-by-minute and rating remain provisional"
       },
-      "tierReview": "2002-03 33경기, 선발 33회, 0골, 0도움. 해당 구단 전술 역할과 2000-01·2001-02 앞선 두 시즌 자료를 최근시즌 우선 가중으로 평가한 S 잠정 등급. 팀 순위는 직접 가점 없음.",
+      "tierReview": "DFB 3시즌 1부 출전·득점 직접 확인: 2000-01 32경기 0골, 2001-02 32경기 0골, 2002-03 33경기 0골. 2002-03 33경기, 선발 33회, 0골, 0도움. 해당 구단 전술 역할과 2000-01·2001-02 앞선 두 시즌 자료를 최근시즌 우선 가중으로 평가한 S 잠정 등급. 팀 순위는 직접 가점 없음.",
       "verificationNeeded": [
-        "matchwise_primary_position_frequency_pending",
-        "past_2000_01_2001_02_independent_performance_audit_pending"
+        "matchwise_primary_position_frequency_pending"
       ],
       "rankStatus": "source_evidence_plus_tier_provisional"
     },
@@ -1659,43 +1674,44 @@
       "sources": [
         "https://datencenter.dfb.de/competitions/bundesliga/seasons/2002-2003/teams/bayern-muenchen",
         "https://fbref.com/en/squads/054efa67/2002-2003/Bayern-Munich-Stats",
-        "https://fcbayern.com/de/club/erfolge/deutscher-meister/saison-2002-2003"
+        "https://fcbayern.com/de/club/erfolge/deutscher-meister/saison-2002-2003",
+        "https://datencenter.dfb.de/en/people/michael-ballack/player"
       ],
       "evidence": {
         "officialRoster": "https://datencenter.dfb.de/competitions/bundesliga/seasons/2002-2003/teams/bayern-muenchen",
         "currentSeason": "https://fbref.com/en/squads/054efa67/2002-2003/Bayern-Munich-Stats",
         "starts": "https://fbref.com/en/squads/054efa67/2002-2003/Bayern-Munich-Stats",
-        "sourceStatus": "specific_league_record_linked"
+        "sourceStatus": "specific_league_record_linked",
+        "threeSeasonVerified": "https://datencenter.dfb.de/en/people/michael-ballack/player"
       },
       "threeSeasonReview": {
-        "seasons": [
+        "assessmentSeasons": [
           "2000-01",
           "2001-02",
           "2002-03"
         ],
-        "weighting": "2002-03 highest > 2001-02 > 2000-01",
-        "status": "2002_source_and_prior_football_archive_partial_not_independent_complete",
-        "archivalPast": [
-          {
-            "season": "2000-01",
-            "team": "Bayer 04 Leverkusen",
-            "apps": 27,
-            "priorPlayerId": "bundesliga-2000-leverkusen-michael-ballack",
-            "sourceStatus": "prior_archived_pending_independent_double_check"
+        "weighting": "2002-03 > 2001-02 > 2000-01; qualitative recency no fabricated numeric total",
+        "status": "DFB_three_bundesliga_seasons_individual_appearances_goals_verified",
+        "records": {
+          "2000-01": {
+            "appearances": 27,
+            "goals": 7
           },
-          {
-            "season": "2001-02",
-            "team": "Bayer 04 Leverkusen",
-            "apps": 29,
-            "priorPlayerId": "bundesliga-2001-leverkusen-michael-ballack",
-            "sourceStatus": "prior_archived_pending_independent_double_check"
+          "2001-02": {
+            "appearances": 29,
+            "goals": 17
+          },
+          "2002-03": {
+            "appearances": 26,
+            "goals": 10
           }
-        ]
+        },
+        "source": "https://datencenter.dfb.de/en/people/michael-ballack/player",
+        "verifiedScope": "Only per-season 1st Bundesliga appearances and league goals individually verified from official DFB; position minute-by-minute and rating remain provisional"
       },
-      "tierReview": "2002-03 26경기, 선발 26회, 10골, 6도움. 해당 구단 전술 역할과 2000-01·2001-02 앞선 두 시즌 자료를 최근시즌 우선 가중으로 평가한 S 잠정 등급. 팀 순위는 직접 가점 없음.",
+      "tierReview": "DFB 3시즌 1부 출전·득점 직접 확인: 2000-01 27경기 7골, 2001-02 29경기 17골, 2002-03 26경기 10골. 2002-03 26경기, 선발 26회, 10골, 6도움. 해당 구단 전술 역할과 2000-01·2001-02 앞선 두 시즌 자료를 최근시즌 우선 가중으로 평가한 S 잠정 등급. 팀 순위는 직접 가점 없음.",
       "verificationNeeded": [
-        "matchwise_primary_position_frequency_pending",
-        "past_2000_01_2001_02_independent_performance_audit_pending"
+        "matchwise_primary_position_frequency_pending"
       ],
       "rankStatus": "source_evidence_plus_tier_provisional"
     },
@@ -2101,43 +2117,44 @@
       "sources": [
         "https://datencenter.dfb.de/competitions/bundesliga/seasons/2002-2003/teams/bayern-muenchen",
         "https://fbref.com/en/squads/054efa67/2002-2003/Bayern-Munich-Stats",
-        "https://fcbayern.com/de/club/erfolge/deutscher-meister/saison-2002-2003"
+        "https://fcbayern.com/de/club/erfolge/deutscher-meister/saison-2002-2003",
+        "https://datencenter.dfb.de/en/people/giovane-elber/player/matches-in-season/champions-league/2002-2003/bayern-munich"
       ],
       "evidence": {
         "officialRoster": "https://datencenter.dfb.de/competitions/bundesliga/seasons/2002-2003/teams/bayern-muenchen",
         "currentSeason": "https://fbref.com/en/squads/054efa67/2002-2003/Bayern-Munich-Stats",
         "starts": "https://fbref.com/en/squads/054efa67/2002-2003/Bayern-Munich-Stats",
-        "sourceStatus": "specific_league_record_linked"
+        "sourceStatus": "specific_league_record_linked",
+        "threeSeasonVerified": "https://datencenter.dfb.de/en/people/giovane-elber/player/matches-in-season/champions-league/2002-2003/bayern-munich"
       },
       "threeSeasonReview": {
-        "seasons": [
+        "assessmentSeasons": [
           "2000-01",
           "2001-02",
           "2002-03"
         ],
-        "weighting": "2002-03 highest > 2001-02 > 2000-01",
-        "status": "2002_source_and_prior_football_archive_partial_not_independent_complete",
-        "archivalPast": [
-          {
-            "season": "2000-01",
-            "team": "FC Bayern München",
-            "apps": 27,
-            "priorPlayerId": "bundesliga-2000-bayern-giovane-elber",
-            "sourceStatus": "prior_archived_pending_independent_double_check"
+        "weighting": "2002-03 > 2001-02 > 2000-01; qualitative recency no fabricated numeric total",
+        "status": "DFB_three_bundesliga_seasons_individual_appearances_goals_verified",
+        "records": {
+          "2000-01": {
+            "appearances": 27,
+            "goals": 15
           },
-          {
-            "season": "2001-02",
-            "team": "FC Bayern München",
-            "apps": 30,
-            "priorPlayerId": "bundesliga-2001-bayern-giovane-elber",
-            "sourceStatus": "prior_archived_pending_independent_double_check"
+          "2001-02": {
+            "appearances": 30,
+            "goals": 17
+          },
+          "2002-03": {
+            "appearances": 33,
+            "goals": 21
           }
-        ]
+        },
+        "source": "https://datencenter.dfb.de/en/people/giovane-elber/player/matches-in-season/champions-league/2002-2003/bayern-munich",
+        "verifiedScope": "Only per-season 1st Bundesliga appearances and league goals individually verified from official DFB; position minute-by-minute and rating remain provisional"
       },
-      "tierReview": "2002-03 33경기, 선발 32회, 21골, 5도움. 해당 구단 전술 역할과 2000-01·2001-02 앞선 두 시즌 자료를 최근시즌 우선 가중으로 평가한 S 잠정 등급. 팀 순위는 직접 가점 없음.",
+      "tierReview": "DFB 3시즌 1부 출전·득점 직접 확인: 2000-01 27경기 15골, 2001-02 30경기 17골, 2002-03 33경기 21골. 2002-03 33경기, 선발 32회, 21골, 5도움. 해당 구단 전술 역할과 2000-01·2001-02 앞선 두 시즌 자료를 최근시즌 우선 가중으로 평가한 S 잠정 등급. 팀 순위는 직접 가점 없음.",
       "verificationNeeded": [
-        "matchwise_primary_position_frequency_pending",
-        "past_2000_01_2001_02_independent_performance_audit_pending"
+        "matchwise_primary_position_frequency_pending"
       ],
       "rankStatus": "source_evidence_plus_tier_provisional"
     },
@@ -5891,43 +5908,44 @@
       "roleVerification": "source_recorded_starts",
       "sources": [
         "https://datencenter.dfb.de/bundesliga/2002-2003/mannschaft/hamburger-sv",
-        "https://fbref.com/en/squads/26790c6a/2002-2003/Hamburger-SV-Stats"
+        "https://fbref.com/en/squads/26790c6a/2002-2003/Hamburger-SV-Stats",
+        "https://datencenter.dfb.de/datencenter/personen/mehdi-mahdavikia/spieler"
       ],
       "evidence": {
         "officialRoster": "https://datencenter.dfb.de/bundesliga/2002-2003/mannschaft/hamburger-sv",
         "currentSeason": "https://fbref.com/en/squads/26790c6a/2002-2003/Hamburger-SV-Stats",
         "starts": "https://fbref.com/en/squads/26790c6a/2002-2003/Hamburger-SV-Stats",
-        "sourceStatus": "season_league_record_linked"
+        "sourceStatus": "season_league_record_linked",
+        "threeSeasonVerified": "https://datencenter.dfb.de/datencenter/personen/mehdi-mahdavikia/spieler"
       },
       "threeSeasonReview": {
-        "seasons": [
+        "assessmentSeasons": [
           "2000-01",
           "2001-02",
           "2002-03"
         ],
-        "weighting": "2002-03 > 2001-02 > 2000-01",
-        "status": "2002_source_prior_archives_partially_matched_not_independent",
-        "archivalPast": [
-          {
-            "season": "2000-01",
-            "team": null,
-            "apps": null,
-            "priorPlayerId": null,
-            "sourceStatus": "not_recorded_in_eligible_club"
+        "weighting": "2002-03 > 2001-02 > 2000-01; qualitative recency no fabricated numeric total",
+        "status": "DFB_three_bundesliga_seasons_individual_appearances_goals_verified",
+        "records": {
+          "2000-01": {
+            "appearances": 29,
+            "goals": 5
           },
-          {
-            "season": "2001-02",
-            "team": null,
-            "apps": null,
-            "priorPlayerId": null,
-            "sourceStatus": "not_recorded_in_eligible_club"
+          "2001-02": {
+            "appearances": 11,
+            "goals": 1
+          },
+          "2002-03": {
+            "appearances": 26,
+            "goals": 2
           }
-        ]
+        },
+        "source": "https://datencenter.dfb.de/datencenter/personen/mehdi-mahdavikia/spieler",
+        "verifiedScope": "Only per-season 1st Bundesliga appearances and league goals individually verified from official DFB; position minute-by-minute and rating remain provisional"
       },
-      "tierReview": "2002-03 26경기·26선발·2골·14도움. 구단 개인 역할, 2001-02와 2000-01(검증된 자료만) 최근 순 가중의 A+ 잠정 등급. 팀 순위 자체는 가점 없음.",
+      "tierReview": "DFB 3시즌 1부 출전·득점 직접 확인: 2000-01 29경기 5골, 2001-02 11경기 1골, 2002-03 26경기 2골. 2002-03 26경기·26선발·2골·14도움. 구단 개인 역할, 2001-02와 2000-01(검증된 자료만) 최근 순 가중의 A+ 잠정 등급. 팀 순위 자체는 가점 없음.",
       "verificationNeeded": [
-        "matchwise_majority_primary_position_pending",
-        "full_individual_2000_01_2001_02_3season_audit_pending"
+        "matchwise_majority_primary_position_pending"
       ],
       "rankStatus": "source_evidence_plus_tier_provisional"
     },
@@ -8503,43 +8521,44 @@
       "roleVerification": "source_recorded_starts",
       "sources": [
         "https://datencenter.dfb.de/competitions/bundesliga/seasons/2002-2003/teams/werder-bremen",
-        "https://fbref.com/en/squads/62add3bf/2002-2003/Werder-Bremen-Stats"
+        "https://fbref.com/en/squads/62add3bf/2002-2003/Werder-Bremen-Stats",
+        "https://datencenter.dfb.de/en/data-center/people/ailton/player"
       ],
       "evidence": {
         "officialRoster": "https://datencenter.dfb.de/competitions/bundesliga/seasons/2002-2003/teams/werder-bremen",
         "currentSeason": "https://fbref.com/en/squads/62add3bf/2002-2003/Werder-Bremen-Stats",
         "starts": "https://fbref.com/en/squads/62add3bf/2002-2003/Werder-Bremen-Stats",
-        "sourceStatus": "season_league_record_linked"
+        "sourceStatus": "season_league_record_linked",
+        "threeSeasonVerified": "https://datencenter.dfb.de/en/data-center/people/ailton/player"
       },
       "threeSeasonReview": {
-        "seasons": [
+        "assessmentSeasons": [
           "2000-01",
           "2001-02",
           "2002-03"
         ],
-        "weighting": "2002-03 > 2001-02 > 2000-01",
-        "status": "2002_source_prior_archives_partially_matched_not_independent",
-        "archivalPast": [
-          {
-            "season": "2000-01",
-            "team": "SV Werder Bremen",
-            "apps": 31,
-            "priorPlayerId": "bundesliga-2000-bremen-ailton",
-            "sourceStatus": "prior_archive_requires_independent_check"
+        "weighting": "2002-03 > 2001-02 > 2000-01; qualitative recency no fabricated numeric total",
+        "status": "DFB_three_bundesliga_seasons_individual_appearances_goals_verified",
+        "records": {
+          "2000-01": {
+            "appearances": 31,
+            "goals": 14
           },
-          {
-            "season": "2001-02",
-            "team": "SV Werder Bremen",
-            "apps": 33,
-            "priorPlayerId": "bundesliga-2001-bremen-ailton",
-            "sourceStatus": "prior_archive_requires_independent_check"
+          "2001-02": {
+            "appearances": 33,
+            "goals": 16
+          },
+          "2002-03": {
+            "appearances": 31,
+            "goals": 16
           }
-        ]
+        },
+        "source": "https://datencenter.dfb.de/en/data-center/people/ailton/player",
+        "verifiedScope": "Only per-season 1st Bundesliga appearances and league goals individually verified from official DFB; position minute-by-minute and rating remain provisional"
       },
-      "tierReview": "2002-03 31경기·26선발·16골·9도움. 구단 개인 역할, 2001-02와 2000-01(검증된 자료만) 최근 순 가중의 A+ 잠정 등급. 팀 순위 자체는 가점 없음.",
+      "tierReview": "DFB 3시즌 1부 출전·득점 직접 확인: 2000-01 31경기 14골, 2001-02 33경기 16골, 2002-03 31경기 16골. 2002-03 31경기·26선발·16골·9도움. 구단 개인 역할, 2001-02와 2000-01(검증된 자료만) 최근 순 가중의 A+ 잠정 등급. 팀 순위 자체는 가점 없음.",
       "verificationNeeded": [
-        "matchwise_majority_primary_position_pending",
-        "full_individual_2000_01_2001_02_3season_audit_pending"
+        "matchwise_majority_primary_position_pending"
       ],
       "rankStatus": "source_evidence_plus_tier_provisional"
     },
