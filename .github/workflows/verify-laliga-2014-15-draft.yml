@@ -1,0 +1,48 @@
+name: Verify La Liga 2014-15 source-led DRAFT
+on:
+  pull_request:
+    paths:
+      - 'data/laliga-2014-15.json'
+      - 'scripts/verify-laliga-2014-15-draft.mjs'
+      - 'scripts/verify-laliga-2014-15-browser.mjs'
+      - '.github/workflows/verify-laliga-2014-15-draft.yml'
+  push:
+    branches:
+      - 'draft/laliga-2014-15-source-led-20261104'
+    paths:
+      - 'data/laliga-2014-15.json'
+      - 'scripts/verify-laliga-2014-15-draft.mjs'
+      - '.github/workflows/verify-laliga-2014-15-draft.yml'
+jobs:
+  structure:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node scripts/verify-laliga-2014-15-draft.mjs
+      - run: node scripts/verify-laliga.mjs
+  chromium:
+    runs-on: ubuntu-24.04
+    needs: structure
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install Playwright Chromium
+        run: |
+          npm install --no-save playwright@1.58.2
+          npx playwright install --with-deps chromium
+      - run: node scripts/verify-laliga-2014-15-browser.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: laliga-2014-15-draft-ui
+          path: /tmp/laliga-2014-15-*.png
+          if-no-files-found: ignore
