@@ -161,7 +161,24 @@
         "1998-99",
         "1999-00"
       ],
-      "method": "Contemporaneous league appearances and verified individual starts/goals where available; weighted prior seasons evaluated qualitatively only with source; missing player-level historical detail explicitly pending."
+      "method": "Contemporaneous league appearances and verified individual starts/goals where available; weighted prior seasons evaluated qualitatively only with source; missing player-level historical detail explicitly pending.",
+      "officialThreeSeasonEvidenceAdded": {
+        "playerCount": 11,
+        "directDfbVerifiedPlayerCount": 10,
+        "records": [
+          "Oliver Kahn",
+          "Stefan Effenberg",
+          "Jens Jeremies",
+          "Bixente Lizarazu",
+          "Emerson",
+          "Ulf Kirsten",
+          "Jens Nowotny",
+          "Hans-Jörg Butt",
+          "Martin Max",
+          "Giovane Élber"
+        ],
+        "scope": "official appearances/goals only"
+      }
     },
     "candidateRebuild": {
       "date": "2026-11-05",
@@ -273,10 +290,10 @@
         "stuttgart": 15,
         "bremen": 13
       },
-      "birthdatesPresent": 71,
-      "birthdatesIndividuallySourceVerified": 3,
+      "birthdatesPresent": 72,
+      "birthdatesIndividuallySourceVerified": 13,
       "startsExplicitlyCorroborated": 62,
-      "threeSeasonEvidenceConfirmed": 1,
+      "threeSeasonEvidenceConfirmed": 11,
       "evaluatedWithProvisionalTiers": 126,
       "positionProvisional": 110,
       "bestXi": [
@@ -292,7 +309,21 @@
         "Martin Max",
         "Ulf Kirsten"
       ],
-      "validationErrors": []
+      "validationErrors": [],
+      "verifiedThreeSeasonEvidenceScope": "DFB official Bundesliga appearances/goals and original DOB; no exhaustive player rating/tactical-match verification.",
+      "verifiedThreeSeasonPlayers": [
+        "Oliver Kahn",
+        "Bixente Lizarazu",
+        "Jens Jeremies",
+        "Stefan Effenberg",
+        "Giovane Élber",
+        "Jens Nowotny",
+        "Emerson",
+        "Ulf Kirsten",
+        "Hans-Jörg Butt",
+        "Martin Max",
+        "Jonathan Akpoborie"
+      ]
     }
   },
   "clubs": [
@@ -985,12 +1016,11 @@
         "https://de.wikipedia.org/wiki/Kader_der_deutschen_Fu%C3%9Fball-Bundesliga_1999/2000",
         "https://datencenter.dfb.de/bundesliga/1999-2000/mannschaft/bayern-muenchen",
         "https://fbref.com/en/squads/054efa67/1999-2000/c20/Bayern-Munich-Stats-Bundesliga",
-        "https://www.transfermarkt.com/bayern-munich/spielplan/verein/27/saison_id/1999/plus/1"
+        "https://www.transfermarkt.com/bayern-munich/spielplan/verein/27/saison_id/1999/plus/1",
+        "https://datencenter.dfb.de/en/people/oliver-kahn/player"
       ],
       "verificationNeeded": [
-        "league_start_count_not_cross_checked",
-        "full_1997_98_1998_99_player_evidence",
-        "birthdate_source_confirmation"
+        "league_start_count_not_cross_checked"
       ],
       "season": "1999-00",
       "clubId": "bayern",
@@ -1003,12 +1033,31 @@
       "evidence": {
         "currentSeason": "https://fbref.com/en/squads/054efa67/1999-2000/c20/Bayern-Munich-Stats-Bundesliga",
         "goals": null,
-        "previousTwoSeasons": [],
-        "birthSource": null
+        "previousTwoSeasons": [
+          "https://datencenter.dfb.de/en/people/oliver-kahn/player"
+        ],
+        "birthSource": "https://datencenter.dfb.de/en/people/oliver-kahn/player",
+        "officialDfbSeasonRecords": {
+          "1997-98": {
+            "club": "bayern",
+            "appearances": 34,
+            "goals": 0
+          },
+          "1998-99": {
+            "club": "bayern",
+            "appearances": 30,
+            "goals": 0
+          },
+          "1999-00": {
+            "club": "bayern",
+            "appearances": 27,
+            "goals": 0
+          }
+        }
       },
       "starts": 27,
       "startSource": "https://fbref.com/en/squads/054efa67/1999-2000/c20/Bayern-Munich-Stats-Bundesliga",
-      "birthVerification": "evidence_pending",
+      "birthVerification": "verified_named_source",
       "originalTacticalRole": "GK",
       "positionReview": "당시 전술과 주요 기용 위치에 근거한 잠정 단일 포지션. 세부 좌우·리베로·윙백의 경기별 출전 비중은 추가 감사 필요.",
       "evaluationStatus": "provisional_tier_not_user_approved",
@@ -1018,12 +1067,33 @@
           "1998-99",
           "1999-00"
         ],
-        "weighting": "current > previous > two seasons prior; no fabricated weighted score",
-        "status": "earlier_two_seasons_individual_evidence_pending",
-        "note": "1999-00 appearance records and subset of individual starts/goals checked. Full player-level 1997-98/1998-99 quantitative evidence pending, so grade is provisional."
+        "weighting": "1999-00 > 1998-99 > 1997-98; individual contributions weighted qualitatively",
+        "status": "three_seasons_directly_supported",
+        "verifiedScope": "official_DFB_league_appearances_goals_only_not_90min_position_or_subjective_quality",
+        "source": "https://datencenter.dfb.de/en/people/oliver-kahn/player",
+        "records": {
+          "1997-98": {
+            "club": "bayern",
+            "appearances": 34,
+            "goals": 0
+          },
+          "1998-99": {
+            "club": "bayern",
+            "appearances": 30,
+            "goals": 0
+          },
+          "1999-00": {
+            "club": "bayern",
+            "appearances": 27,
+            "goals": 0
+          }
+        },
+        "note": "DFB Bundesliga 1997-98 34경기 0골 / 1998-99 30경기 0골 / 1999-00 27경기 0골 기록 확인. 출전·득점 자료 검증이며 경기별 역할과 정성적 티어의 완전 검증을 의미하지 않음."
       },
-      "tierReview": "경기 지휘와 선방 영향력을 종합하되 27경기 출전으로 가용성 제한 고려. 과거 2시즌 개별 증거는 완전한 감사가 아니며 우승 실적·이후 명성은 가산하지 않음.",
-      "assessmentRationale": "경기 지휘와 선방 영향력을 종합하되 27경기 출전으로 가용성 제한 고려. 과거 2시즌 개별 증거는 완전한 감사가 아니며 우승 실적·이후 명성은 가산하지 않음."
+      "tierReview": "DFB Bundesliga 1997-98 34경기 0골 / 1998-99 30경기 0골 / 1999-00 27경기 0골 기록 확인. 출전·득점 자료 검증이며 경기별 역할과 정성적 티어의 완전 검증을 의미하지 않음. 올리버 칸의 1999-00 시즌 전술적 핵심성 및 지속성을 직전 2시즌 출전·득점과 비교하여 S 잠정 부여. 이후 팀 성적·후대 평판은 직접 가산하지 않음.",
+      "assessmentRationale": "DFB Bundesliga 1997-98 34경기 0골 / 1998-99 30경기 0골 / 1999-00 27경기 0골 기록 확인. 출전·득점 자료 검증이며 경기별 역할과 정성적 티어의 완전 검증을 의미하지 않음. 올리버 칸의 1999-00 시즌 전술적 핵심성 및 지속성을 직전 2시즌 출전·득점과 비교하여 S 잠정 부여. 이후 팀 성적·후대 평판은 직접 가산하지 않음.",
+      "goals1999": 0,
+      "birthSource": "https://datencenter.dfb.de/en/people/oliver-kahn/player"
     },
     {
       "id": "bundesliga-1999-bayern-bernd-dreher",
@@ -1292,13 +1362,12 @@
         "https://de.wikipedia.org/wiki/Kader_der_deutschen_Fu%C3%9Fball-Bundesliga_1999/2000",
         "https://datencenter.dfb.de/bundesliga/1999-2000/mannschaft/bayern-muenchen",
         "https://fbref.com/en/squads/054efa67/1999-2000/c20/Bayern-Munich-Stats-Bundesliga",
-        "https://www.transfermarkt.com/bayern-munich/spielplan/verein/27/saison_id/1999/plus/1"
+        "https://www.transfermarkt.com/bayern-munich/spielplan/verein/27/saison_id/1999/plus/1",
+        "https://datencenter.dfb.de/en/data-center/people/bixente-lizarazu/player"
       ],
       "verificationNeeded": [
         "match_level_primary_position_missing",
-        "full_1997_98_1998_99_player_evidence",
-        "match_by_match_primary_position",
-        "birthdate_source_confirmation"
+        "match_by_match_primary_position"
       ],
       "starts": 20,
       "leagueMinutes": 1768,
@@ -1313,10 +1382,29 @@
       "evidence": {
         "currentSeason": "https://fbref.com/en/squads/054efa67/1999-2000/c20/Bayern-Munich-Stats-Bundesliga",
         "goals": null,
-        "previousTwoSeasons": [],
-        "birthSource": null
+        "previousTwoSeasons": [
+          "https://datencenter.dfb.de/en/data-center/people/bixente-lizarazu/player"
+        ],
+        "birthSource": "https://datencenter.dfb.de/en/data-center/people/bixente-lizarazu/player",
+        "officialDfbSeasonRecords": {
+          "1997-98": {
+            "club": "bayern",
+            "appearances": 19,
+            "goals": 0
+          },
+          "1998-99": {
+            "club": "bayern",
+            "appearances": 19,
+            "goals": 2
+          },
+          "1999-00": {
+            "club": "bayern",
+            "appearances": 22,
+            "goals": 1
+          }
+        }
       },
-      "birthVerification": "evidence_pending",
+      "birthVerification": "verified_named_source",
       "originalTacticalRole": "left_wingback_left_fullback",
       "positionReview": "당시 전술과 주요 기용 위치에 근거한 잠정 단일 포지션. 세부 좌우·리베로·윙백의 경기별 출전 비중은 추가 감사 필요.",
       "evaluationStatus": "provisional_tier_not_user_approved",
@@ -1326,12 +1414,33 @@
           "1998-99",
           "1999-00"
         ],
-        "weighting": "current > previous > two seasons prior; no fabricated weighted score",
-        "status": "earlier_two_seasons_individual_evidence_pending",
-        "note": "1999-00 appearance records and subset of individual starts/goals checked. Full player-level 1997-98/1998-99 quantitative evidence pending, so grade is provisional."
+        "weighting": "1999-00 > 1998-99 > 1997-98; individual contributions weighted qualitatively",
+        "status": "three_seasons_directly_supported",
+        "verifiedScope": "official_DFB_league_appearances_goals_only_not_90min_position_or_subjective_quality",
+        "source": "https://datencenter.dfb.de/en/data-center/people/bixente-lizarazu/player",
+        "records": {
+          "1997-98": {
+            "club": "bayern",
+            "appearances": 19,
+            "goals": 0
+          },
+          "1998-99": {
+            "club": "bayern",
+            "appearances": 19,
+            "goals": 2
+          },
+          "1999-00": {
+            "club": "bayern",
+            "appearances": 22,
+            "goals": 1
+          }
+        },
+        "note": "DFB Bundesliga 1997-98 19경기 0골 / 1998-99 19경기 2골 / 1999-00 22경기 1골 기록 확인. 출전·득점 자료 검증이며 경기별 역할과 정성적 티어의 완전 검증을 의미하지 않음."
       },
-      "tierReview": "22경기·20선발. left_wingback_left_fullback 포지션에서 주전 구상 기여를 평가한 정성적 잠정 판단. 과거 2시즌 개별 증거는 완전한 감사가 아니며 우승 실적·이후 명성은 가산하지 않음.",
-      "assessmentRationale": "22경기·20선발. left_wingback_left_fullback 포지션에서 주전 구상 기여를 평가한 정성적 잠정 판단. 과거 2시즌 개별 증거는 완전한 감사가 아니며 우승 실적·이후 명성은 가산하지 않음."
+      "tierReview": "DFB Bundesliga 1997-98 19경기 0골 / 1998-99 19경기 2골 / 1999-00 22경기 1골 기록 확인. 출전·득점 자료 검증이며 경기별 역할과 정성적 티어의 완전 검증을 의미하지 않음. 빅상트 리자라쥐의 1999-00 시즌 전술적 핵심성 및 지속성을 직전 2시즌 출전·득점과 비교하여 A+ 잠정 부여. 이후 팀 성적·후대 평판은 직접 가산하지 않음.",
+      "assessmentRationale": "DFB Bundesliga 1997-98 19경기 0골 / 1998-99 19경기 2골 / 1999-00 22경기 1골 기록 확인. 출전·득점 자료 검증이며 경기별 역할과 정성적 티어의 완전 검증을 의미하지 않음. 빅상트 리자라쥐의 1999-00 시즌 전술적 핵심성 및 지속성을 직전 2시즌 출전·득점과 비교하여 A+ 잠정 부여. 이후 팀 성적·후대 평판은 직접 가산하지 않음.",
+      "goals1999": 1,
+      "birthSource": "https://datencenter.dfb.de/en/data-center/people/bixente-lizarazu/player"
     },
     {
       "id": "bundesliga-1999-bayern-michael-tarnat",
@@ -1479,14 +1588,13 @@
         "https://de.wikipedia.org/wiki/Kader_der_deutschen_Fu%C3%9Fball-Bundesliga_1999/2000",
         "https://datencenter.dfb.de/en/bundesliga/1999-2000/team/bayern-munich",
         "https://fbref.com/en/squads/054efa67/1999-2000/c20/Bayern-Munich-Stats-Bundesliga",
-        "https://www.transfermarkt.com/bayern-munich/spielplan/verein/27/saison_id/1999/plus/1"
+        "https://www.transfermarkt.com/bayern-munich/spielplan/verein/27/saison_id/1999/plus/1",
+        "https://datencenter.dfb.de/en/data-center/people/jens-jeremies/player"
       ],
       "verificationNeeded": [
         "match_level_primary_position_missing",
         "league_start_count_not_cross_checked",
-        "full_1997_98_1998_99_player_evidence",
-        "match_by_match_primary_position",
-        "birthdate_source_confirmation"
+        "match_by_match_primary_position"
       ],
       "birthDateSource": "https://datencenter.dfb.de/en/bundesliga/1999-2000/team/bayern-munich",
       "season": "1999-00",
@@ -1503,13 +1611,32 @@
           "value": 3,
           "source": "https://datencenter.dfb.de/en/competitions/bundesliga/seasons/1999-2000/top_scorer?datacenter_name=data-center"
         },
-        "previousTwoSeasons": [],
-        "birthSource": null
+        "previousTwoSeasons": [
+          "https://datencenter.dfb.de/en/data-center/people/jens-jeremies/player"
+        ],
+        "birthSource": "https://datencenter.dfb.de/en/data-center/people/jens-jeremies/player",
+        "officialDfbSeasonRecords": {
+          "1997-98": {
+            "club": "munich1860",
+            "appearances": 22,
+            "goals": 0
+          },
+          "1998-99": {
+            "club": "bayern",
+            "appearances": 30,
+            "goals": 1
+          },
+          "1999-00": {
+            "club": "bayern",
+            "appearances": 30,
+            "goals": 3
+          }
+        }
       },
       "starts": 28,
       "startSource": "https://fbref.com/en/squads/054efa67/1999-2000/c20/Bayern-Munich-Stats-Bundesliga",
       "goals1999": 3,
-      "birthVerification": "evidence_pending",
+      "birthVerification": "verified_named_source",
       "originalTacticalRole": "DM",
       "positionReview": "당시 전술과 주요 기용 위치에 근거한 잠정 단일 포지션. 세부 좌우·리베로·윙백의 경기별 출전 비중은 추가 감사 필요.",
       "evaluationStatus": "provisional_tier_not_user_approved",
@@ -1519,12 +1646,32 @@
           "1998-99",
           "1999-00"
         ],
-        "weighting": "current > previous > two seasons prior; no fabricated weighted score",
-        "status": "earlier_two_seasons_individual_evidence_pending",
-        "note": "1999-00 appearance records and subset of individual starts/goals checked. Full player-level 1997-98/1998-99 quantitative evidence pending, so grade is provisional."
+        "weighting": "1999-00 > 1998-99 > 1997-98; individual contributions weighted qualitatively",
+        "status": "three_seasons_directly_supported",
+        "verifiedScope": "official_DFB_league_appearances_goals_only_not_90min_position_or_subjective_quality",
+        "source": "https://datencenter.dfb.de/en/data-center/people/jens-jeremies/player",
+        "records": {
+          "1997-98": {
+            "club": "munich1860",
+            "appearances": 22,
+            "goals": 0
+          },
+          "1998-99": {
+            "club": "bayern",
+            "appearances": 30,
+            "goals": 1
+          },
+          "1999-00": {
+            "club": "bayern",
+            "appearances": 30,
+            "goals": 3
+          }
+        },
+        "note": "DFB Bundesliga 1997-98 22경기 0골 / 1998-99 30경기 1골 / 1999-00 30경기 3골 기록 확인. 출전·득점 자료 검증이며 경기별 역할과 정성적 티어의 완전 검증을 의미하지 않음."
       },
-      "tierReview": "28회 선발, 중앙 압박·수비 전환·커버 기여가 큰 핵심. 과거 2시즌 개별 증거는 완전한 감사가 아니며 우승 실적·이후 명성은 가산하지 않음.",
-      "assessmentRationale": "28회 선발, 중앙 압박·수비 전환·커버 기여가 큰 핵심. 과거 2시즌 개별 증거는 완전한 감사가 아니며 우승 실적·이후 명성은 가산하지 않음."
+      "tierReview": "DFB Bundesliga 1997-98 22경기 0골 / 1998-99 30경기 1골 / 1999-00 30경기 3골 기록 확인. 출전·득점 자료 검증이며 경기별 역할과 정성적 티어의 완전 검증을 의미하지 않음. 옌스 예레미스의 1999-00 시즌 전술적 핵심성 및 지속성을 직전 2시즌 출전·득점과 비교하여 A+ 잠정 부여. 이후 팀 성적·후대 평판은 직접 가산하지 않음.",
+      "assessmentRationale": "DFB Bundesliga 1997-98 22경기 0골 / 1998-99 30경기 1골 / 1999-00 30경기 3골 기록 확인. 출전·득점 자료 검증이며 경기별 역할과 정성적 티어의 완전 검증을 의미하지 않음. 옌스 예레미스의 1999-00 시즌 전술적 핵심성 및 지속성을 직전 2시즌 출전·득점과 비교하여 A+ 잠정 부여. 이후 팀 성적·후대 평판은 직접 가산하지 않음.",
+      "birthSource": "https://datencenter.dfb.de/en/data-center/people/jens-jeremies/player"
     },
     {
       "id": "bundesliga-1999-bayern-thorsten-fink",
@@ -1610,14 +1757,13 @@
         "https://de.wikipedia.org/wiki/Kader_der_deutschen_Fu%C3%9Fball-Bundesliga_1999/2000",
         "https://datencenter.dfb.de/en/bundesliga/1999-2000/team/bayern-munich",
         "https://fbref.com/en/squads/054efa67/1999-2000/c20/Bayern-Munich-Stats-Bundesliga",
-        "https://www.transfermarkt.com/bayern-munich/spielplan/verein/27/saison_id/1999/plus/1"
+        "https://www.transfermarkt.com/bayern-munich/spielplan/verein/27/saison_id/1999/plus/1",
+        "https://datencenter.dfb.de/en/people/stefan-effenberg/player"
       ],
       "verificationNeeded": [
         "match_level_primary_position_missing",
         "league_start_count_not_cross_checked",
-        "full_1997_98_1998_99_player_evidence",
-        "match_by_match_primary_position",
-        "birthdate_source_confirmation"
+        "match_by_match_primary_position"
       ],
       "birthDateSource": "https://datencenter.dfb.de/en/bundesliga/1999-2000/team/bayern-munich",
       "season": "1999-00",
@@ -1634,13 +1780,32 @@
           "value": 2,
           "source": "https://datencenter.dfb.de/en/competitions/bundesliga/seasons/1999-2000/top_scorer?datacenter_name=data-center"
         },
-        "previousTwoSeasons": [],
-        "birthSource": null
+        "previousTwoSeasons": [
+          "https://datencenter.dfb.de/en/people/stefan-effenberg/player"
+        ],
+        "birthSource": "https://datencenter.dfb.de/en/people/stefan-effenberg/player",
+        "officialDfbSeasonRecords": {
+          "1997-98": {
+            "club": "gladbach",
+            "appearances": 28,
+            "goals": 8
+          },
+          "1998-99": {
+            "club": "bayern",
+            "appearances": 31,
+            "goals": 8
+          },
+          "1999-00": {
+            "club": "bayern",
+            "appearances": 27,
+            "goals": 2
+          }
+        }
       },
       "starts": 26,
       "startSource": "https://fbref.com/en/squads/054efa67/1999-2000/c20/Bayern-Munich-Stats-Bundesliga",
       "goals1999": 2,
-      "birthVerification": "evidence_pending",
+      "birthVerification": "verified_named_source",
       "originalTacticalRole": "CM",
       "positionReview": "당시 전술과 주요 기용 위치에 근거한 잠정 단일 포지션. 세부 좌우·리베로·윙백의 경기별 출전 비중은 추가 감사 필요.",
       "evaluationStatus": "provisional_tier_not_user_approved",
@@ -1650,12 +1815,32 @@
           "1998-99",
           "1999-00"
         ],
-        "weighting": "current > previous > two seasons prior; no fabricated weighted score",
-        "status": "earlier_two_seasons_individual_evidence_pending",
-        "note": "1999-00 appearance records and subset of individual starts/goals checked. Full player-level 1997-98/1998-99 quantitative evidence pending, so grade is provisional."
+        "weighting": "1999-00 > 1998-99 > 1997-98; individual contributions weighted qualitatively",
+        "status": "three_seasons_directly_supported",
+        "verifiedScope": "official_DFB_league_appearances_goals_only_not_90min_position_or_subjective_quality",
+        "source": "https://datencenter.dfb.de/en/people/stefan-effenberg/player",
+        "records": {
+          "1997-98": {
+            "club": "gladbach",
+            "appearances": 28,
+            "goals": 8
+          },
+          "1998-99": {
+            "club": "bayern",
+            "appearances": 31,
+            "goals": 8
+          },
+          "1999-00": {
+            "club": "bayern",
+            "appearances": 27,
+            "goals": 2
+          }
+        },
+        "note": "DFB Bundesliga 1997-98 28경기 8골 / 1998-99 31경기 8골 / 1999-00 27경기 2골 기록 확인. 출전·득점 자료 검증이며 경기별 역할과 정성적 티어의 완전 검증을 의미하지 않음."
       },
-      "tierReview": "26회 선발·12도움, 중원 전개와 창조성의 탁월한 개인 영향력. 과거 2시즌 개별 증거는 완전한 감사가 아니며 우승 실적·이후 명성은 가산하지 않음.",
-      "assessmentRationale": "26회 선발·12도움, 중원 전개와 창조성의 탁월한 개인 영향력. 과거 2시즌 개별 증거는 완전한 감사가 아니며 우승 실적·이후 명성은 가산하지 않음."
+      "tierReview": "DFB Bundesliga 1997-98 28경기 8골 / 1998-99 31경기 8골 / 1999-00 27경기 2골 기록 확인. 출전·득점 자료 검증이며 경기별 역할과 정성적 티어의 완전 검증을 의미하지 않음. 슈테판 에펜베르크의 1999-00 시즌 전술적 핵심성 및 지속성을 직전 2시즌 출전·득점과 비교하여 S 잠정 부여. 이후 팀 성적·후대 평판은 직접 가산하지 않음.",
+      "assessmentRationale": "DFB Bundesliga 1997-98 28경기 8골 / 1998-99 31경기 8골 / 1999-00 27경기 2골 기록 확인. 출전·득점 자료 검증이며 경기별 역할과 정성적 티어의 완전 검증을 의미하지 않음. 슈테판 에펜베르크의 1999-00 시즌 전술적 핵심성 및 지속성을 직전 2시즌 출전·득점과 비교하여 S 잠정 부여. 이후 팀 성적·후대 평판은 직접 가산하지 않음.",
+      "birthSource": "https://datencenter.dfb.de/en/people/stefan-effenberg/player"
     },
     {
       "id": "bundesliga-1999-bayern-mehmet-scholl",
@@ -1810,14 +1995,13 @@
         "https://de.wikipedia.org/wiki/Kader_der_deutschen_Fu%C3%9Fball-Bundesliga_1999/2000",
         "https://datencenter.dfb.de/en/bundesliga/1999-2000/team/bayern-munich",
         "https://fbref.com/en/squads/054efa67/1999-2000/c20/Bayern-Munich-Stats-Bundesliga",
-        "https://www.transfermarkt.com/bayern-munich/spielplan/verein/27/saison_id/1999/plus/1"
+        "https://www.transfermarkt.com/bayern-munich/spielplan/verein/27/saison_id/1999/plus/1",
+        "https://datencenter.dfb.de/en/people/giovane-elber/player/matches-in-season/bundesliga/1997-1998/bayern-munich"
       ],
       "verificationNeeded": [
         "match_level_primary_position_missing",
         "3_ST_two_starting_plus_one_rotation_exception",
-        "full_1997_98_1998_99_player_evidence",
-        "match_by_match_primary_position",
-        "birthdate_source_confirmation"
+        "match_by_match_primary_position"
       ],
       "birthDateSource": "https://datencenter.dfb.de/en/bundesliga/1999-2000/team/bayern-munich",
       "starts": 16,
@@ -1836,11 +2020,30 @@
           "value": 14,
           "source": "https://datencenter.dfb.de/en/competitions/bundesliga/seasons/1999-2000/top_scorer?datacenter_name=data-center"
         },
-        "previousTwoSeasons": [],
-        "birthSource": null
+        "previousTwoSeasons": [
+          "https://datencenter.dfb.de/en/people/giovane-elber/player/matches-in-season/bundesliga/1997-1998/bayern-munich"
+        ],
+        "birthSource": "https://datencenter.dfb.de/en/people/giovane-elber/player/matches-in-season/bundesliga/1997-1998/bayern-munich",
+        "officialDfbSeasonRecords": {
+          "1997-98": {
+            "club": "bayern",
+            "appearances": 28,
+            "goals": 11
+          },
+          "1998-99": {
+            "club": "bayern",
+            "appearances": 21,
+            "goals": 13
+          },
+          "1999-00": {
+            "club": "bayern",
+            "appearances": 26,
+            "goals": 14
+          }
+        }
       },
       "goals1999": 14,
-      "birthVerification": "evidence_pending",
+      "birthVerification": "verified_named_source",
       "originalTacticalRole": "ST",
       "positionReview": "당시 전술과 주요 기용 위치에 근거한 잠정 단일 포지션. 세부 좌우·리베로·윙백의 경기별 출전 비중은 추가 감사 필요.",
       "evaluationStatus": "provisional_tier_not_user_approved",
@@ -1850,12 +2053,32 @@
           "1998-99",
           "1999-00"
         ],
-        "weighting": "current > previous > two seasons prior; no fabricated weighted score",
-        "status": "earlier_two_seasons_individual_evidence_pending",
-        "note": "1999-00 appearance records and subset of individual starts/goals checked. Full player-level 1997-98/1998-99 quantitative evidence pending, so grade is provisional."
+        "weighting": "1999-00 > 1998-99 > 1997-98; individual contributions weighted qualitatively",
+        "status": "three_seasons_directly_supported",
+        "verifiedScope": "official_DFB_league_appearances_goals_only_not_90min_position_or_subjective_quality",
+        "source": "https://datencenter.dfb.de/en/people/giovane-elber/player/matches-in-season/bundesliga/1997-1998/bayern-munich",
+        "records": {
+          "1997-98": {
+            "club": "bayern",
+            "appearances": 28,
+            "goals": 11
+          },
+          "1998-99": {
+            "club": "bayern",
+            "appearances": 21,
+            "goals": 13
+          },
+          "1999-00": {
+            "club": "bayern",
+            "appearances": 26,
+            "goals": 14
+          }
+        },
+        "note": "DFB Bundesliga 1997-98 28경기 11골 / 1998-99 21경기 13골 / 1999-00 26경기 14골 기록 확인. 출전·득점 자료 검증이며 경기별 역할과 정성적 티어의 완전 검증을 의미하지 않음."
       },
-      "tierReview": "시즌 14득점, 침투·연계·마무리 수준에 근거. 과거 2시즌 개별 증거는 완전한 감사가 아니며 우승 실적·이후 명성은 가산하지 않음.",
-      "assessmentRationale": "시즌 14득점, 침투·연계·마무리 수준에 근거. 과거 2시즌 개별 증거는 완전한 감사가 아니며 우승 실적·이후 명성은 가산하지 않음."
+      "tierReview": "DFB Bundesliga 1997-98 28경기 11골 / 1998-99 21경기 13골 / 1999-00 26경기 14골 기록 확인. 출전·득점 자료 검증이며 경기별 역할과 정성적 티어의 완전 검증을 의미하지 않음. 지오바니 에우베르의 1999-00 시즌 전술적 핵심성 및 지속성을 직전 2시즌 출전·득점과 비교하여 A+ 잠정 부여. 이후 팀 성적·후대 평판은 직접 가산하지 않음.",
+      "assessmentRationale": "DFB Bundesliga 1997-98 28경기 11골 / 1998-99 21경기 13골 / 1999-00 26경기 14골 기록 확인. 출전·득점 자료 검증이며 경기별 역할과 정성적 티어의 완전 검증을 의미하지 않음. 지오바니 에우베르의 1999-00 시즌 전술적 핵심성 및 지속성을 직전 2시즌 출전·득점과 비교하여 A+ 잠정 부여. 이후 팀 성적·후대 평판은 직접 가산하지 않음.",
+      "birthSource": "https://datencenter.dfb.de/en/people/giovane-elber/player/matches-in-season/bundesliga/1997-1998/bayern-munich"
     },
     {
       "id": "bundesliga-1999-bayern-paulo-sergio",
@@ -2069,14 +2292,13 @@
         "https://de.wikipedia.org/wiki/Kader_der_deutschen_Fu%C3%9Fball-Bundesliga_1999/2000",
         "https://datencenter.dfb.de/competitions/bundesliga/seasons/1999-2000/teams/bayer-leverkusen",
         "https://fbref.com/en/squads/c7a9f859/1999-2000/Leverkusen-Stats",
-        "https://www.bayer04.de/de-de/page/historie/alle-spiele-alle-tore-bundesliga/saison-199900"
+        "https://www.bayer04.de/de-de/page/historie/alle-spiele-alle-tore-bundesliga/saison-199900",
+        "https://datencenter.dfb.de/datencenter/personen/jens-nowotny/spieler"
       ],
       "verificationNeeded": [
         "match_level_primary_position_missing",
         "league_start_count_not_cross_checked",
-        "full_1997_98_1998_99_player_evidence",
-        "match_by_match_primary_position",
-        "birthdate_source_confirmation"
+        "match_by_match_primary_position"
       ],
       "birthDateSource": "https://datencenter.dfb.de/competitions/bundesliga/seasons/1999-2000/teams/bayer-leverkusen",
       "season": "1999-00",
@@ -2090,12 +2312,31 @@
       "evidence": {
         "currentSeason": "https://fbref.com/en/squads/c7a9f859/1999-2000/Leverkusen-Stats",
         "goals": null,
-        "previousTwoSeasons": [],
-        "birthSource": null
+        "previousTwoSeasons": [
+          "https://datencenter.dfb.de/datencenter/personen/jens-nowotny/spieler"
+        ],
+        "birthSource": "https://datencenter.dfb.de/datencenter/personen/jens-nowotny/spieler",
+        "officialDfbSeasonRecords": {
+          "1997-98": {
+            "club": "leverkusen",
+            "appearances": 23,
+            "goals": 0
+          },
+          "1998-99": {
+            "club": "leverkusen",
+            "appearances": 33,
+            "goals": 1
+          },
+          "1999-00": {
+            "club": "leverkusen",
+            "appearances": 33,
+            "goals": 1
+          }
+        }
       },
       "starts": 33,
       "startSource": "https://fbref.com/en/squads/c7a9f859/1999-2000/Leverkusen-Stats",
-      "birthVerification": "evidence_pending",
+      "birthVerification": "verified_named_source",
       "originalTacticalRole": "CB",
       "positionReview": "당시 전술과 주요 기용 위치에 근거한 잠정 단일 포지션. 세부 좌우·리베로·윙백의 경기별 출전 비중은 추가 감사 필요.",
       "evaluationStatus": "provisional_tier_not_user_approved",
@@ -2105,12 +2346,33 @@
           "1998-99",
           "1999-00"
         ],
-        "weighting": "current > previous > two seasons prior; no fabricated weighted score",
-        "status": "earlier_two_seasons_individual_evidence_pending",
-        "note": "1999-00 appearance records and subset of individual starts/goals checked. Full player-level 1997-98/1998-99 quantitative evidence pending, so grade is provisional."
+        "weighting": "1999-00 > 1998-99 > 1997-98; individual contributions weighted qualitatively",
+        "status": "three_seasons_directly_supported",
+        "verifiedScope": "official_DFB_league_appearances_goals_only_not_90min_position_or_subjective_quality",
+        "source": "https://datencenter.dfb.de/datencenter/personen/jens-nowotny/spieler",
+        "records": {
+          "1997-98": {
+            "club": "leverkusen",
+            "appearances": 23,
+            "goals": 0
+          },
+          "1998-99": {
+            "club": "leverkusen",
+            "appearances": 33,
+            "goals": 1
+          },
+          "1999-00": {
+            "club": "leverkusen",
+            "appearances": 33,
+            "goals": 1
+          }
+        },
+        "note": "DFB Bundesliga 1997-98 23경기 0골 / 1998-99 33경기 1골 / 1999-00 33경기 1골 기록 확인. 출전·득점 자료 검증이며 경기별 역할과 정성적 티어의 완전 검증을 의미하지 않음."
       },
-      "tierReview": "33회 선발, 후방 조직과 출전 안정성. 과거 2시즌 개별 증거는 완전한 감사가 아니며 우승 실적·이후 명성은 가산하지 않음.",
-      "assessmentRationale": "33회 선발, 후방 조직과 출전 안정성. 과거 2시즌 개별 증거는 완전한 감사가 아니며 우승 실적·이후 명성은 가산하지 않음."
+      "tierReview": "DFB Bundesliga 1997-98 23경기 0골 / 1998-99 33경기 1골 / 1999-00 33경기 1골 기록 확인. 출전·득점 자료 검증이며 경기별 역할과 정성적 티어의 완전 검증을 의미하지 않음. 옌스 노보트니의 1999-00 시즌 전술적 핵심성 및 지속성을 직전 2시즌 출전·득점과 비교하여 A+ 잠정 부여. 이후 팀 성적·후대 평판은 직접 가산하지 않음.",
+      "assessmentRationale": "DFB Bundesliga 1997-98 23경기 0골 / 1998-99 33경기 1골 / 1999-00 33경기 1골 기록 확인. 출전·득점 자료 검증이며 경기별 역할과 정성적 티어의 완전 검증을 의미하지 않음. 옌스 노보트니의 1999-00 시즌 전술적 핵심성 및 지속성을 직전 2시즌 출전·득점과 비교하여 A+ 잠정 부여. 이후 팀 성적·후대 평판은 직접 가산하지 않음.",
+      "goals1999": 1,
+      "birthSource": "https://datencenter.dfb.de/datencenter/personen/jens-nowotny/spieler"
     },
     {
       "id": "bundesliga-1999-leverkusen-robert-kovac",
@@ -2261,14 +2523,13 @@
         "https://de.wikipedia.org/wiki/Kader_der_deutschen_Fu%C3%9Fball-Bundesliga_1999/2000",
         "https://datencenter.dfb.de/competitions/bundesliga/seasons/1999-2000/teams/bayer-leverkusen",
         "https://fbref.com/en/squads/c7a9f859/1999-2000/Leverkusen-Stats",
-        "https://www.bayer04.de/de-de/page/historie/alle-spiele-alle-tore-bundesliga/saison-199900"
+        "https://www.bayer04.de/de-de/page/historie/alle-spiele-alle-tore-bundesliga/saison-199900",
+        "https://datencenter.dfb.de/en/data-center/people/emerson/player"
       ],
       "verificationNeeded": [
         "match_level_primary_position_missing",
         "league_start_count_not_cross_checked",
-        "full_1997_98_1998_99_player_evidence",
-        "match_by_match_primary_position",
-        "birthdate_source_confirmation"
+        "match_by_match_primary_position"
       ],
       "birthDateSource": "https://datencenter.dfb.de/competitions/bundesliga/seasons/1999-2000/teams/bayer-leverkusen",
       "season": "1999-00",
@@ -2282,12 +2543,31 @@
       "evidence": {
         "currentSeason": "https://fbref.com/en/squads/c7a9f859/1999-2000/Leverkusen-Stats",
         "goals": null,
-        "previousTwoSeasons": [],
-        "birthSource": null
+        "previousTwoSeasons": [
+          "https://datencenter.dfb.de/en/data-center/people/emerson/player"
+        ],
+        "birthSource": "https://datencenter.dfb.de/en/data-center/people/emerson/player",
+        "officialDfbSeasonRecords": {
+          "1997-98": {
+            "club": "leverkusen",
+            "appearances": 25,
+            "goals": 1
+          },
+          "1998-99": {
+            "club": "leverkusen",
+            "appearances": 28,
+            "goals": 5
+          },
+          "1999-00": {
+            "club": "leverkusen",
+            "appearances": 29,
+            "goals": 5
+          }
+        }
       },
       "starts": 29,
       "startSource": "https://fbref.com/en/squads/c7a9f859/1999-2000/Leverkusen-Stats",
-      "birthVerification": "evidence_pending",
+      "birthVerification": "verified_named_source",
       "originalTacticalRole": "DM",
       "positionReview": "당시 전술과 주요 기용 위치에 근거한 잠정 단일 포지션. 세부 좌우·리베로·윙백의 경기별 출전 비중은 추가 감사 필요.",
       "evaluationStatus": "provisional_tier_not_user_approved",
@@ -2297,12 +2577,33 @@
           "1998-99",
           "1999-00"
         ],
-        "weighting": "current > previous > two seasons prior; no fabricated weighted score",
-        "status": "earlier_two_seasons_individual_evidence_pending",
-        "note": "1999-00 appearance records and subset of individual starts/goals checked. Full player-level 1997-98/1998-99 quantitative evidence pending, so grade is provisional."
+        "weighting": "1999-00 > 1998-99 > 1997-98; individual contributions weighted qualitatively",
+        "status": "three_seasons_directly_supported",
+        "verifiedScope": "official_DFB_league_appearances_goals_only_not_90min_position_or_subjective_quality",
+        "source": "https://datencenter.dfb.de/en/data-center/people/emerson/player",
+        "records": {
+          "1997-98": {
+            "club": "leverkusen",
+            "appearances": 25,
+            "goals": 1
+          },
+          "1998-99": {
+            "club": "leverkusen",
+            "appearances": 28,
+            "goals": 5
+          },
+          "1999-00": {
+            "club": "leverkusen",
+            "appearances": 29,
+            "goals": 5
+          }
+        },
+        "note": "DFB Bundesliga 1997-98 25경기 1골 / 1998-99 28경기 5골 / 1999-00 29경기 5골 기록 확인. 출전·득점 자료 검증이며 경기별 역할과 정성적 티어의 완전 검증을 의미하지 않음."
       },
-      "tierReview": "29회 선발과 중앙 경기 장악·수비 보호. 과거 2시즌 개별 증거는 완전한 감사가 아니며 우승 실적·이후 명성은 가산하지 않음.",
-      "assessmentRationale": "29회 선발과 중앙 경기 장악·수비 보호. 과거 2시즌 개별 증거는 완전한 감사가 아니며 우승 실적·이후 명성은 가산하지 않음."
+      "tierReview": "DFB Bundesliga 1997-98 25경기 1골 / 1998-99 28경기 5골 / 1999-00 29경기 5골 기록 확인. 출전·득점 자료 검증이며 경기별 역할과 정성적 티어의 완전 검증을 의미하지 않음. 에메르송의 1999-00 시즌 전술적 핵심성 및 지속성을 직전 2시즌 출전·득점과 비교하여 A+ 잠정 부여. 이후 팀 성적·후대 평판은 직접 가산하지 않음.",
+      "assessmentRationale": "DFB Bundesliga 1997-98 25경기 1골 / 1998-99 28경기 5골 / 1999-00 29경기 5골 기록 확인. 출전·득점 자료 검증이며 경기별 역할과 정성적 티어의 완전 검증을 의미하지 않음. 에메르송의 1999-00 시즌 전술적 핵심성 및 지속성을 직전 2시즌 출전·득점과 비교하여 A+ 잠정 부여. 이후 팀 성적·후대 평판은 직접 가산하지 않음.",
+      "goals1999": 5,
+      "birthSource": "https://datencenter.dfb.de/en/data-center/people/emerson/player"
     },
     {
       "id": "bundesliga-1999-leverkusen-carsten-ramelow",
@@ -2718,14 +3019,13 @@
         "https://de.wikipedia.org/wiki/Kader_der_deutschen_Fu%C3%9Fball-Bundesliga_1999/2000",
         "https://datencenter.dfb.de/competitions/bundesliga/seasons/1999-2000/teams/bayer-leverkusen",
         "https://fbref.com/en/squads/c7a9f859/1999-2000/Leverkusen-Stats",
-        "https://www.bayer04.de/de-de/page/historie/alle-spiele-alle-tore-bundesliga/saison-199900"
+        "https://www.bayer04.de/de-de/page/historie/alle-spiele-alle-tore-bundesliga/saison-199900",
+        "https://datencenter.dfb.de/en/people/3158/player"
       ],
       "verificationNeeded": [
         "match_level_primary_position_missing",
         "league_start_count_not_cross_checked",
-        "full_1997_98_1998_99_player_evidence",
-        "match_by_match_primary_position",
-        "birthdate_source_confirmation"
+        "match_by_match_primary_position"
       ],
       "birthDateSource": "https://datencenter.dfb.de/competitions/bundesliga/seasons/1999-2000/teams/bayer-leverkusen",
       "season": "1999-00",
@@ -2742,13 +3042,32 @@
           "value": 17,
           "source": "https://datencenter.dfb.de/en/competitions/bundesliga/seasons/1999-2000/top_scorer?datacenter_name=data-center"
         },
-        "previousTwoSeasons": [],
-        "birthSource": null
+        "previousTwoSeasons": [
+          "https://datencenter.dfb.de/en/people/3158/player"
+        ],
+        "birthSource": "https://datencenter.dfb.de/en/people/3158/player",
+        "officialDfbSeasonRecords": {
+          "1997-98": {
+            "club": "leverkusen",
+            "appearances": 27,
+            "goals": 22
+          },
+          "1998-99": {
+            "club": "leverkusen",
+            "appearances": 31,
+            "goals": 19
+          },
+          "1999-00": {
+            "club": "leverkusen",
+            "appearances": 27,
+            "goals": 17
+          }
+        }
       },
       "starts": 27,
       "startSource": "https://fbref.com/en/squads/c7a9f859/1999-2000/Leverkusen-Stats",
       "goals1999": 17,
-      "birthVerification": "evidence_pending",
+      "birthVerification": "verified_named_source",
       "originalTacticalRole": "ST",
       "positionReview": "당시 전술과 주요 기용 위치에 근거한 잠정 단일 포지션. 세부 좌우·리베로·윙백의 경기별 출전 비중은 추가 감사 필요.",
       "evaluationStatus": "provisional_tier_not_user_approved",
@@ -2758,12 +3077,32 @@
           "1998-99",
           "1999-00"
         ],
-        "weighting": "current > previous > two seasons prior; no fabricated weighted score",
-        "status": "earlier_two_seasons_individual_evidence_pending",
-        "note": "1999-00 appearance records and subset of individual starts/goals checked. Full player-level 1997-98/1998-99 quantitative evidence pending, so grade is provisional."
+        "weighting": "1999-00 > 1998-99 > 1997-98; individual contributions weighted qualitatively",
+        "status": "three_seasons_directly_supported",
+        "verifiedScope": "official_DFB_league_appearances_goals_only_not_90min_position_or_subjective_quality",
+        "source": "https://datencenter.dfb.de/en/people/3158/player",
+        "records": {
+          "1997-98": {
+            "club": "leverkusen",
+            "appearances": 27,
+            "goals": 22
+          },
+          "1998-99": {
+            "club": "leverkusen",
+            "appearances": 31,
+            "goals": 19
+          },
+          "1999-00": {
+            "club": "leverkusen",
+            "appearances": 27,
+            "goals": 17
+          }
+        },
+        "note": "DFB Bundesliga 1997-98 27경기 22골 / 1998-99 31경기 19골 / 1999-00 27경기 17골 기록 확인. 출전·득점 자료 검증이며 경기별 역할과 정성적 티어의 완전 검증을 의미하지 않음."
       },
-      "tierReview": "27회 선발 17득점의 꾸준한 문전 생산성. 과거 2시즌 개별 증거는 완전한 감사가 아니며 우승 실적·이후 명성은 가산하지 않음.",
-      "assessmentRationale": "27회 선발 17득점의 꾸준한 문전 생산성. 과거 2시즌 개별 증거는 완전한 감사가 아니며 우승 실적·이후 명성은 가산하지 않음."
+      "tierReview": "DFB Bundesliga 1997-98 27경기 22골 / 1998-99 31경기 19골 / 1999-00 27경기 17골 기록 확인. 출전·득점 자료 검증이며 경기별 역할과 정성적 티어의 완전 검증을 의미하지 않음. 울프 키르스텐의 1999-00 시즌 전술적 핵심성 및 지속성을 직전 2시즌 출전·득점과 비교하여 A+ 잠정 부여. 이후 팀 성적·후대 평판은 직접 가산하지 않음.",
+      "assessmentRationale": "DFB Bundesliga 1997-98 27경기 22골 / 1998-99 31경기 19골 / 1999-00 27경기 17골 기록 확인. 출전·득점 자료 검증이며 경기별 역할과 정성적 티어의 완전 검증을 의미하지 않음. 울프 키르스텐의 1999-00 시즌 전술적 핵심성 및 지속성을 직전 2시즌 출전·득점과 비교하여 A+ 잠정 부여. 이후 팀 성적·후대 평판은 직접 가산하지 않음.",
+      "birthSource": "https://datencenter.dfb.de/en/people/3158/player"
     },
     {
       "id": "bundesliga-1999-leverkusen-oliver-neuville",
@@ -2850,12 +3189,11 @@
         "https://de.wikipedia.org/wiki/Kader_der_deutschen_Fu%C3%9Fball-Bundesliga_1999/2000",
         "https://datencenter.dfb.de/competitions/bundesliga/seasons/1999-2000/teams/hamburger-sv",
         "https://fbref.com/en/squads/26790c6a/1999-2000/Hamburger-SV-Stats",
-        "https://www.transfermarkt.com/hamburger-sv/spielplan/verein/41/saison_id/1999"
+        "https://www.transfermarkt.com/hamburger-sv/spielplan/verein/41/saison_id/1999",
+        "https://datencenter.dfb.de/en/people/hans-jorg-butt/player"
       ],
       "verificationNeeded": [
-        "league_start_count_not_cross_checked",
-        "full_1997_98_1998_99_player_evidence",
-        "birthdate_source_confirmation"
+        "league_start_count_not_cross_checked"
       ],
       "birthDateSource": "https://datencenter.dfb.de/competitions/bundesliga/seasons/1999-2000/teams/hamburger-sv",
       "season": "1999-00",
@@ -2872,13 +3210,32 @@
           "value": 9,
           "source": "https://datencenter.dfb.de/en/competitions/bundesliga/seasons/1999-2000/top_scorer?datacenter_name=data-center"
         },
-        "previousTwoSeasons": [],
-        "birthSource": null
+        "previousTwoSeasons": [
+          "https://datencenter.dfb.de/en/people/hans-jorg-butt/player"
+        ],
+        "birthSource": "https://datencenter.dfb.de/en/people/hans-jorg-butt/player",
+        "officialDfbSeasonRecords": {
+          "1997-98": {
+            "club": "hsv",
+            "appearances": 33,
+            "goals": 0
+          },
+          "1998-99": {
+            "club": "hsv",
+            "appearances": 34,
+            "goals": 7
+          },
+          "1999-00": {
+            "club": "hsv",
+            "appearances": 34,
+            "goals": 9
+          }
+        }
       },
       "starts": 34,
       "startSource": "https://fbref.com/en/squads/26790c6a/1999-2000/Hamburger-SV-Stats",
       "goals1999": 9,
-      "birthVerification": "evidence_pending",
+      "birthVerification": "verified_named_source",
       "originalTacticalRole": "GK",
       "positionReview": "당시 전술과 주요 기용 위치에 근거한 잠정 단일 포지션. 세부 좌우·리베로·윙백의 경기별 출전 비중은 추가 감사 필요.",
       "evaluationStatus": "provisional_tier_not_user_approved",
@@ -2888,12 +3245,32 @@
           "1998-99",
           "1999-00"
         ],
-        "weighting": "current > previous > two seasons prior; no fabricated weighted score",
-        "status": "earlier_two_seasons_individual_evidence_pending",
-        "note": "1999-00 appearance records and subset of individual starts/goals checked. Full player-level 1997-98/1998-99 quantitative evidence pending, so grade is provisional."
+        "weighting": "1999-00 > 1998-99 > 1997-98; individual contributions weighted qualitatively",
+        "status": "three_seasons_directly_supported",
+        "verifiedScope": "official_DFB_league_appearances_goals_only_not_90min_position_or_subjective_quality",
+        "source": "https://datencenter.dfb.de/en/people/hans-jorg-butt/player",
+        "records": {
+          "1997-98": {
+            "club": "hsv",
+            "appearances": 33,
+            "goals": 0
+          },
+          "1998-99": {
+            "club": "hsv",
+            "appearances": 34,
+            "goals": 7
+          },
+          "1999-00": {
+            "club": "hsv",
+            "appearances": 34,
+            "goals": 9
+          }
+        },
+        "note": "DFB Bundesliga 1997-98 33경기 0골 / 1998-99 34경기 7골 / 1999-00 34경기 9골 기록 확인. 출전·득점 자료 검증이며 경기별 역할과 정성적 티어의 완전 검증을 의미하지 않음."
       },
-      "tierReview": "34회 선발·12회 무실점·PK 9골, 골키퍼로 이례적 공격 기여. 과거 2시즌 개별 증거는 완전한 감사가 아니며 우승 실적·이후 명성은 가산하지 않음.",
-      "assessmentRationale": "34회 선발·12회 무실점·PK 9골, 골키퍼로 이례적 공격 기여. 과거 2시즌 개별 증거는 완전한 감사가 아니며 우승 실적·이후 명성은 가산하지 않음."
+      "tierReview": "DFB Bundesliga 1997-98 33경기 0골 / 1998-99 34경기 7골 / 1999-00 34경기 9골 기록 확인. 출전·득점 자료 검증이며 경기별 역할과 정성적 티어의 완전 검증을 의미하지 않음. 한스외르크 부트의 1999-00 시즌 전술적 핵심성 및 지속성을 직전 2시즌 출전·득점과 비교하여 A+ 잠정 부여. 이후 팀 성적·후대 평판은 직접 가산하지 않음.",
+      "assessmentRationale": "DFB Bundesliga 1997-98 33경기 0골 / 1998-99 34경기 7골 / 1999-00 34경기 9골 기록 확인. 출전·득점 자료 검증이며 경기별 역할과 정성적 티어의 완전 검증을 의미하지 않음. 한스외르크 부트의 1999-00 시즌 전술적 핵심성 및 지속성을 직전 2시즌 출전·득점과 비교하여 A+ 잠정 부여. 이후 팀 성적·후대 평판은 직접 가산하지 않음.",
+      "birthSource": "https://datencenter.dfb.de/en/people/hans-jorg-butt/player"
     },
     {
       "id": "bundesliga-1999-hsv-alexander-bade",
@@ -4328,7 +4705,7 @@
       "nameKo": "마르틴 막스",
       "club": "munich1860",
       "clubNameOriginal": "TSV 1860 München",
-      "born": null,
+      "born": "1968-08-07",
       "role": "starter",
       "leagueAppearances": 32,
       "leagueStarts": null,
@@ -4340,15 +4717,14 @@
       "review": "draft_unapproved",
       "sources": [
         "https://de.wikipedia.org/wiki/Kader_der_deutschen_Fu%C3%9Fball-Bundesliga_1999/2000",
-        "https://fbref.com/en/squads/2fbdf057/1999-2000/1860-Munich-Stats"
+        "https://fbref.com/en/squads/2fbdf057/1999-2000/1860-Munich-Stats",
+        "https://datencenter.dfb.de/datencenter/personen/martin-max/spieler"
       ],
       "verificationNeeded": [
         "birth_date_missing",
         "match_level_primary_position_missing",
         "league_start_count_not_cross_checked",
-        "full_1997_98_1998_99_player_evidence",
-        "match_by_match_primary_position",
-        "birthdate_source_confirmation"
+        "match_by_match_primary_position"
       ],
       "season": "1999-00",
       "clubId": "munich1860",
@@ -4364,11 +4740,30 @@
           "value": 19,
           "source": "https://datencenter.dfb.de/en/competitions/bundesliga/seasons/1999-2000/top_scorer?datacenter_name=data-center"
         },
-        "previousTwoSeasons": [],
-        "birthSource": null
+        "previousTwoSeasons": [
+          "https://datencenter.dfb.de/datencenter/personen/martin-max/spieler"
+        ],
+        "birthSource": "https://datencenter.dfb.de/datencenter/personen/martin-max/spieler",
+        "officialDfbSeasonRecords": {
+          "1997-98": {
+            "club": "schalke",
+            "appearances": 19,
+            "goals": 4
+          },
+          "1998-99": {
+            "club": "schalke",
+            "appearances": 28,
+            "goals": 6
+          },
+          "1999-00": {
+            "club": "munich1860",
+            "appearances": 32,
+            "goals": 19
+          }
+        }
       },
       "goals1999": 19,
-      "birthVerification": "evidence_pending",
+      "birthVerification": "verified_named_source",
       "originalTacticalRole": "ST",
       "positionReview": "당시 전술과 주요 기용 위치에 근거한 잠정 단일 포지션. 세부 좌우·리베로·윙백의 경기별 출전 비중은 추가 감사 필요.",
       "evaluationStatus": "provisional_tier_not_user_approved",
@@ -4378,12 +4773,32 @@
           "1998-99",
           "1999-00"
         ],
-        "weighting": "current > previous > two seasons prior; no fabricated weighted score",
-        "status": "earlier_two_seasons_individual_evidence_pending",
-        "note": "1999-00 appearance records and subset of individual starts/goals checked. Full player-level 1997-98/1998-99 quantitative evidence pending, so grade is provisional."
+        "weighting": "1999-00 > 1998-99 > 1997-98; individual contributions weighted qualitatively",
+        "status": "three_seasons_directly_supported",
+        "verifiedScope": "official_DFB_league_appearances_goals_only_not_90min_position_or_subjective_quality",
+        "source": "https://datencenter.dfb.de/datencenter/personen/martin-max/spieler",
+        "records": {
+          "1997-98": {
+            "club": "schalke",
+            "appearances": 19,
+            "goals": 4
+          },
+          "1998-99": {
+            "club": "schalke",
+            "appearances": 28,
+            "goals": 6
+          },
+          "1999-00": {
+            "club": "munich1860",
+            "appearances": 32,
+            "goals": 19
+          }
+        },
+        "note": "DFB Bundesliga 1997-98 19경기 4골 / 1998-99 28경기 6골 / 1999-00 32경기 19골 기록 확인. 출전·득점 자료 검증이며 경기별 역할과 정성적 티어의 완전 검증을 의미하지 않음."
       },
-      "tierReview": "19골 리그 득점왕. 개인 득점·기회 포착으로 높은 티어. 과거 2시즌 개별 증거는 완전한 감사가 아니며 우승 실적·이후 명성은 가산하지 않음.",
-      "assessmentRationale": "19골 리그 득점왕. 개인 득점·기회 포착으로 높은 티어. 과거 2시즌 개별 증거는 완전한 감사가 아니며 우승 실적·이후 명성은 가산하지 않음."
+      "tierReview": "DFB Bundesliga 1997-98 19경기 4골 / 1998-99 28경기 6골 / 1999-00 32경기 19골 기록 확인. 출전·득점 자료 검증이며 경기별 역할과 정성적 티어의 완전 검증을 의미하지 않음. 마르틴 막스의 1999-00 시즌 전술적 핵심성 및 지속성을 직전 2시즌 출전·득점과 비교하여 A+ 잠정 부여. 이후 팀 성적·후대 평판은 직접 가산하지 않음.",
+      "assessmentRationale": "DFB Bundesliga 1997-98 19경기 4골 / 1998-99 28경기 6골 / 1999-00 32경기 19골 기록 확인. 출전·득점 자료 검증이며 경기별 역할과 정성적 티어의 완전 검증을 의미하지 않음. 마르틴 막스의 1999-00 시즌 전술적 핵심성 및 지속성을 직전 2시즌 출전·득점과 비교하여 A+ 잠정 부여. 이후 팀 성적·후대 평판은 직접 가산하지 않음.",
+      "birthSource": "https://datencenter.dfb.de/datencenter/personen/martin-max/spieler"
     },
     {
       "id": "bundesliga-1999-munich1860-bernhard-winkler",
@@ -9145,7 +9560,7 @@
       "fullyAuditedClubs": 0,
       "status": "SOURCE_CORRELATED_NOT_FINAL"
     },
-    "pending": "All player-level 1997-98 and 1998-99 comparisons, DOB individual sourcing for legacy 68 filled values, complete tactical-match primary roles",
+    "pending": "Full 1997-98/1998-99 player-level quantitative evidence for 115 players; precise tactical match positions and remaining DOB validation.",
     "evaluation": "draft_unapproved",
     "rebuild": {
       "date": "2026-11-05",
@@ -9227,6 +9642,58 @@
           "reason": "ST cap of three, 24 appearances but selected Rink for ten goals in 16 games; pending manual verification"
         }
       ]
-    }
+    },
+    "threeSeasonVerifiedDFB": [
+      {
+        "name": "Oliver Kahn",
+        "source": "https://datencenter.dfb.de/en/people/oliver-kahn/player",
+        "dob": "1969-06-15"
+      },
+      {
+        "name": "Stefan Effenberg",
+        "source": "https://datencenter.dfb.de/en/people/stefan-effenberg/player",
+        "dob": "1968-08-02"
+      },
+      {
+        "name": "Jens Jeremies",
+        "source": "https://datencenter.dfb.de/en/data-center/people/jens-jeremies/player",
+        "dob": "1974-03-05"
+      },
+      {
+        "name": "Bixente Lizarazu",
+        "source": "https://datencenter.dfb.de/en/data-center/people/bixente-lizarazu/player",
+        "dob": "1969-12-09"
+      },
+      {
+        "name": "Emerson",
+        "source": "https://datencenter.dfb.de/en/data-center/people/emerson/player",
+        "dob": "1976-04-04"
+      },
+      {
+        "name": "Ulf Kirsten",
+        "source": "https://datencenter.dfb.de/en/people/3158/player",
+        "dob": "1965-12-04"
+      },
+      {
+        "name": "Jens Nowotny",
+        "source": "https://datencenter.dfb.de/datencenter/personen/jens-nowotny/spieler",
+        "dob": "1974-01-11"
+      },
+      {
+        "name": "Hans-Jörg Butt",
+        "source": "https://datencenter.dfb.de/en/people/hans-jorg-butt/player",
+        "dob": "1974-05-28"
+      },
+      {
+        "name": "Martin Max",
+        "source": "https://datencenter.dfb.de/datencenter/personen/martin-max/spieler",
+        "dob": "1968-08-07"
+      },
+      {
+        "name": "Giovane Élber",
+        "source": "https://datencenter.dfb.de/en/people/giovane-elber/player/matches-in-season/bundesliga/1997-1998/bayern-munich",
+        "dob": "1972-07-23"
+      }
+    ]
   }
 }
