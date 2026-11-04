@@ -1,0 +1,31 @@
+name: Verify La Liga 2018-19 live GitHub Pages
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/laliga-2018-19.json'
+      - 'scripts/verify-laliga-2018-19-live.mjs'
+      - '.github/workflows/verify-laliga-2018-19-live.yml'
+  workflow_dispatch:
+jobs:
+  live:
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install Playwright Chromium
+        run: |
+          npm install --no-save playwright@1.58.2
+          npx playwright install --with-deps chromium
+      - name: Verify 2018-19 on real public GitHub Pages
+        run: node scripts/verify-laliga-2018-19-live.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: laliga-2018-19-live-browser-screenshots
+          path: /tmp/laliga-2018-19-live-*.png
+          if-no-files-found: ignore

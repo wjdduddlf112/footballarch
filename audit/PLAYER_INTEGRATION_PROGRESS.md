@@ -1,3 +1,12 @@
+## 2026-11-04 — La Liga 2018-19 provisional 128-player candidate audit
+
+- User explicit "다음": only 2018-19 La Liga, no 2019-20 assessment. Actual 2019-20 UCL entrants: Barça, Atlético, Real Madrid, Valencia. UEL: Getafe, Sevilla, Espanyol. UEFA officially verified.
+- New season data `data/laliga-2018-19.json`: 128 nominated, 77 XI tactical starter slots + 51 alternate candidates, 11 provisional World Class, 44 League Top, 4-3-3 proposed XI. `userApproved=false`, `historicalFactVerification=false`.
+- Every team 2018-19 BDFutbol league squad source: individual appearances PM, starts SM, goals G; no global independent two-source transcription check. Seven teams newly nominated rather than copied from prior.
+- All 128 ISO DOB fields populated but **only Daniel Wass DOB confirmed with DBU and Danish Lexicon**; other 127 have provisional dates, not two-source verified. 2016-17 and 2017-18 individual recency-weighted history independently unverified. Every player's matchwise primary position, tactical wing-back side and 380-game modal league formation unverified. High reserve count doesn't certify starter-equivalent status for 1-4 appearance players, reconsider in review.
+- Valencia Daniel Wass listed only once at RB (32 appearances/26 starts), not duplicated as CM. Sevilla Promes once at LW, Espanyol Melendo once at RW. Sevilla 4-2-3-1 is display proxy, actual Machín side extensively used 3-5-2 and wingbacks.
+- Complete report `audit/LALIGA_2018_19_RATED_SOURCE_DRAFT_2026-11-04.md`; specific structural and local/production Chromium scripts/workflows created. **Do not call tests PASS or production deployed until Actions confirms**. Preserve other seasons' records and original league table and club crests.
+
 ## 2026-11-04 — La Liga 2017-18 PR #48 merged; real production Chromium PASS
 
 - PR #48: https://github.com/wjdduddlf112/footballarch/pull/48 ; squash main commit `9646362afeee76851aa6d643814edf9fa0b97e85`. 135 player candidates, 77 starter slots + 58 backups, 16 provisional World Class + 48 League Top, proposed 4-3-3 Best XI, DRAFT userApproved=false.
