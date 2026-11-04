@@ -546,3 +546,216 @@ Best XI 상태: `proposed_unapproved` · 사용자 최종 검수 전.
 
 ---
 이 시즌은 사용자 공식 승인 전까지 반드시 DRAFT 상태를 유지. 2000-01 시즌 자동 작업 금지.
+
+---
+
+## H. 필수 완료 조건 — S~D·미평가 전 선수 명단 (GitHub Pages 검증)
+
+이번 확장 보고서는 기존 B절 **구단별 126명 전원**, C절 **포지션별 통합 126명 전원**과 연결되며, 아래 표에서 모든 선수의 티어와 포지션 순위를 중복 없이 확인할 수 있다. 선수 이름을 클릭해 세부 평가 근거를 확인하는 UI는 사이트 내 `All Tiers` 메뉴에 있다. `A/B/C`는 내부 JSON 저장값이며 화면에서는 각각 **A0/B0/C0**로 표기한다.
+
+| 티어 | 인원 | 티어 | 인원 |
+|---|---:|---|---:|
+| S | 2 | B- | 0 |
+| A+ | 8 | C+ | 5 |
+| A0 | 22 | C0 | 2 |
+| A- | 12 | C- | 1 |
+| B+ | 38 | D | 0 |
+| B0 | 36 | 미평가 | 0 |
+
+- 전체 선수: **126명** / 티어 합계: **126명** / 미평가: **0명** / World Class: **10명** / League Top Class: **44명**.
+- 이 표는 **잠정 티어 전체 명단**이다. 1997-98·1998-99·1999-00 세 시즌 정량·정성 근거가 126명 전원에 대해 검증되었다는 뜻이 아니다.
+
+### S — 2명
+
+| 포지션 | 한글 이름 | 원어명 | 소속 구단 원어명 | 구분 | 포지션 순위 |
+|---|---|---|---|---|---:|
+| GK | 올리버 칸 | Oliver Kahn | FC Bayern München | 주전 | 1 |
+| CM | 슈테판 에펜베르크 | Stefan Effenberg | FC Bayern München | 주전 | 1 |
+
+### A+ — 8명
+
+| 포지션 | 한글 이름 | 원어명 | 소속 구단 원어명 | 구분 | 포지션 순위 |
+|---|---|---|---|---|---:|
+| GK | 한스외르크 부트 | Hans-Jörg Butt | Hamburger SV | 주전 | 2 |
+| CB | 옌스 노보트니 | Jens Nowotny | Bayer 04 Leverkusen | 주전 | 1 |
+| LB | 빅상트 리자라쥐 | Bixente Lizarazu | FC Bayern München | 주전 | 1 |
+| DM | 옌스 예레미스 | Jens Jeremies | FC Bayern München | 주전 | 1 |
+| DM | 에메르송 | Emerson | Bayer 04 Leverkusen | 주전 | 2 |
+| ST | 마르틴 막스 | Martin Max | TSV 1860 München | 주전 | 1 |
+| ST | 울프 키르스텐 | Ulf Kirsten | Bayer 04 Leverkusen | 주전 | 2 |
+| ST | 지오바니 에우베르 | Giovane Élber | FC Bayern München | 주전 | 3 |
+
+### A0 — 22명
+
+| 포지션 | 한글 이름 | 원어명 | 소속 구단 원어명 | 구분 | 포지션 순위 |
+|---|---|---|---|---|---:|
+| GK | 가보르 키라이 | Gábor Király | Hertha BSC | 주전 | 3 |
+| CB | 니코얀 호흐마 | Nico-Jan Hoogma | Hamburger SV | 주전 | 2 |
+| CB | 로베르트 코바치 | Robert Kovač | Bayer 04 Leverkusen | 주전 | 3 |
+| CB | 토마스 링케 | Thomas Linke | FC Bayern München | 주전 | 4 |
+| RB | 마르쿠스 바벨 | Markus Babbel | FC Bayern München | 주전 | 1 |
+| DM | 치리아코 스포르차 | Ciriaco Sforza | 1.FC Kaiserslautern | 주전 | 3 |
+| DM | 카르스텐 라멜로 | Carsten Ramelow | Bayer 04 Leverkusen | 주전 | 4 |
+| CM | 슈테판 바인리히 | Stefan Beinlich | Bayer 04 Leverkusen | 주전 | 2 |
+| CAM | 유리 조르카에프 | Youri Djorkaeff | 1.FC Kaiserslautern | 주전 | 1 |
+| CAM | 메메트 숄 | Mehmet Scholl | FC Bayern München | 주전 | 2 |
+| CAM | 토마스 헤슬러 | Thomas Häßler | TSV 1860 München | 주전 | 3 |
+| CAM | 크라시미르 발라코프 | Krassimir Balakow | VfB Stuttgart | 주전 | 4 |
+| CAM | 안드레아스 헤어초크 | Andreas Herzog | SV Werder Bremen | 주전 | 5 |
+| LW | 마르코 보데 | Marco Bode | SV Werder Bremen | 주전 | 1 |
+| LW | 제 호베르투 | Zé Roberto | Bayer 04 Leverkusen | 주전 | 2 |
+| ST | 파울루 세르지우 | Paulo Sérgio | FC Bayern München | 주전 | 4 |
+| ST | 미하엘 프레츠 | Michael Preetz | Hertha BSC | 주전 | 5 |
+| ST | 조너선 악포보리에 | Jonathan Akpoborie | VfL Wolfsburg | 주전 | 6 |
+| ST | 아일통 | Aílton | SV Werder Bremen | 주전 | 7 |
+| ST | 안제이 유스코비아크 | Andrzej Juskowiak | VfL Wolfsburg | 주전 | 8 |
+| ST | 로이 프레거 | Roy Präger | Hamburger SV | 주전 | 9 |
+| ST | 올리버 뇌빌 | Oliver Neuville | Bayer 04 Leverkusen | 주전 | 10 |
+
+### A- — 12명
+
+| 포지션 | 한글 이름 | 원어명 | 소속 구단 원어명 | 구분 | 포지션 순위 |
+|---|---|---|---|---|---:|
+| CB | 프랑크 바우만 | Frank Baumann | SV Werder Bremen | 주전 | 5 |
+| CB | 사무엘 쿠포르 | Samuel Kuffour | FC Bayern München | 주전 | 6 |
+| RB | 메흐디 마다비키아 | Mehdi Mahdavikia | Hamburger SV | 주전 | 2 |
+| DM | 니코 코바치 | Niko Kovač | Hamburger SV | 주전 | 5 |
+| DM | 디터 아일츠 | Dieter Eilts | SV Werder Bremen | 주전 | 6 |
+| DM | 즈보니미르 솔도 | Zvonimir Soldo | VfB Stuttgart | 주전 | 7 |
+| CAM | 다리우시 보시 | Dariusz Wosz | Hertha BSC | 주전 | 6 |
+| LW | 도리넬 문테아누 | Dorinel Munteanu | VfL Wolfsburg | 주전 | 3 |
+| RW | 하산 살리하미지치 | Hasan Salihamidžić | FC Bayern München | 주전 | 1 |
+| RW | 베른트 슈나이더 | Bernd Schneider | Bayer 04 Leverkusen | 주전 | 2 |
+| RW | 하랄트 체르니 | Harald Cerny | TSV 1860 München | 주전 | 3 |
+| ST | 파울루 링크 | Paulo Rink | Bayer 04 Leverkusen | 후보 | 11 |
+
+### B+ — 38명
+
+| 포지션 | 한글 이름 | 원어명 | 소속 구단 원어명 | 구분 | 포지션 순위 |
+|---|---|---|---|---|---:|
+| GK | 클라우스 라이트마이어 | Claus Reitmaier | VfL Wolfsburg | 주전 | 4 |
+| GK | 프랑크 로스트 | Frank Rost | SV Werder Bremen | 주전 | 5 |
+| GK | 아담 마티세크 | Adam Matysek | Bayer 04 Leverkusen | 주전 | 6 |
+| GK | 다니엘 호프만 | Daniel Hoffmann | TSV 1860 München | 주전 | 7 |
+| CB | 하리 코흐 | Harry Koch | 1.FC Kaiserslautern | 주전 | 7 |
+| CB | 제프 스트라서 | Jeff Strasser | 1.FC Kaiserslautern | 주전 | 8 |
+| CB | 미하엘 쇤베르그 | Michael Schjønberg | 1.FC Kaiserslautern | 주전 | 9 |
+| CB | 잉고 헤르츠슈 | Ingo Hertzsch | Hamburger SV | 주전 | 10 |
+| CB | 마르코 레머 | Marko Rehmer | Hertha BSC | 주전 | 11 |
+| CB | 보리스 지브코비치 | Boris Živković | Bayer 04 Leverkusen | 후보 | 12 |
+| CB | 안드레이 파나디치 | Andrej Panadić | Hamburger SV | 주전 | 13 |
+| CB | 마르코 쿠르츠 | Marco Kurz | TSV 1860 München | 주전 | 14 |
+| CB | 딕 판 뷔리크 | Dick van Burik | Hertha BSC | 주전 | 15 |
+| CB | 마르셀루 보르동 | Marcelo Bordon | VfB Stuttgart | 주전 | 16 |
+| CB | 파트리크 안데르손 | Patrik Andersson | FC Bayern München | 후보 | 17 |
+| LB | 미하엘 타르나트 | Michael Tarnat | FC Bayern München | 후보 | 2 |
+| LB | 하이코 게르버 | Heiko Gerber | VfB Stuttgart | 주전 | 3 |
+| RB | 졸탄 제베첸 | Zoltan Sebescen | VfL Wolfsburg | 후보 | 3 |
+| RB | 파트리크 바이저 | Patrick Weiser | VfL Wolfsburg | 주전 | 4 |
+| RB | 슈테판 파슬라크 | Stephan Paßlack | TSV 1860 München | 주전 | 5 |
+| DM | 에이욜푸르 스베리손 | Eyjólfur Sverrisson | Hertha BSC | 주전 | 8 |
+| DM | 파블로 티암 | Pablo Thiam | VfB Stuttgart | 후보 | 9 |
+| DM | 토마스 그라베센 | Thomas Gravesen | Hamburger SV | 주전 | 10 |
+| DM | 로만 티체 | Roman Týce | TSV 1860 München | 주전 | 11 |
+| CM | 미하엘 발라크 | Michael Ballack | Bayer 04 Leverkusen | 주전 | 3 |
+| CM | 크시슈토프 노바크 | Krzysztof Nowak | VfL Wolfsburg | 주전 | 4 |
+| CM | 프랑크 그라이너 | Frank Greiner | VfL Wolfsburg | 주전 | 5 |
+| CM | 안드레아스 슈미트 | Andreas Schmidt | Hertha BSC | 주전 | 6 |
+| CM | 크리스티안 리스트슈 | Krisztián Lisztes | VfB Stuttgart | 주전 | 7 |
+| CAM | 로돌포 카르도소 | Rodolfo Cardoso | Hamburger SV | 주전 | 7 |
+| RW | 제바스티안 다이슬러 | Sebastian Deisler | Hertha BSC | 주전 | 4 |
+| RW | 토르스텐 프링스 | Torsten Frings | SV Werder Bremen | 주전 | 5 |
+| RW | 마리오 바슬러 | Mario Basler | 1.FC Kaiserslautern | 주전 | 6 |
+| ST | 카르스텐 얀커 | Carsten Jancker | FC Bayern München | 후보 | 12 |
+| ST | 이오안 비오렐 가네아 | Ioan Viorel Ganea | VfB Stuttgart | 주전 | 13 |
+| ST | 숀 던디 | Sean Dundee | VfB Stuttgart | 주전 | 14 |
+| ST | 클라우디오 피사로 | Claudio Pizarro | SV Werder Bremen | 주전 | 15 |
+| ST | 앤서니 예보아 | Anthony Yeboah | Hamburger SV | 주전 | 16 |
+
+### B0 — 36명
+
+| 포지션 | 한글 이름 | 원어명 | 소속 구단 원어명 | 구분 | 포지션 순위 |
+|---|---|---|---|---|---:|
+| GK | 프란츠 볼파르트 | Franz Wohlfahrt | VfB Stuttgart | 주전 | 8 |
+| GK | 안드레아스 라인케 | Andreas Reinke | 1.FC Kaiserslautern | 주전 | 9 |
+| CB | 클라우스 톰센 | Claus Thomsen | VfL Wolfsburg | 주전 | 18 |
+| CB | 마리노 빌리슈코프 | Marino Biliškov | VfL Wolfsburg | 주전 | 19 |
+| CB | 마르셀 말트리츠 | Marcel Maltritz | VfL Wolfsburg | 후보 | 20 |
+| CB | 토마스 베르톨트 | Thomas Berthold | VfB Stuttgart | 주전 | 21 |
+| CB | 마르틴 슈트란츨 | Martin Stranzl | TSV 1860 München | 주전 | 22 |
+| CB | 베른하르트 트라레스 | Bernhard Trares | SV Werder Bremen | 주전 | 23 |
+| CB | 홀거 그라일리히 | Holger Greilich | TSV 1860 München | 후보 | 24 |
+| LB | 발데마르 크리거 | Waldemar Kryger | VfL Wolfsburg | 주전 | 4 |
+| LB | 브래들리 카넬 | Bradley Carnell | VfB Stuttgart | 후보 | 5 |
+| LB | 베른트 홀러바흐 | Bernd Hollerbach | Hamburger SV | 주전 | 6 |
+| RB | 헨드리크 헤르초크 | Hendrik Herzog | Hertha BSC | 주전 | 6 |
+| RB | 안드레 비데너 | Andree Wiedener | SV Werder Bremen | 주전 | 7 |
+| RB | 옌스 켈러 | Jens Keller | VfB Stuttgart | 주전 | 8 |
+| DM | 토르스텐 핑크 | Thorsten Fink | FC Bayern München | 후보 | 12 |
+| DM | 찰스 아코너 | Charles Akonnor | VfL Wolfsburg | 주전 | 13 |
+| CM | 유리 막시모프 | Jurij Maximow | SV Werder Bremen | 주전 | 8 |
+| CM | 브라이언 오닐 | Brian O'Neil | VfL Wolfsburg | 후보 | 9 |
+| CM | 크리스토프 다브로프스키 | Christoph Dabrowski | SV Werder Bremen | 후보 | 10 |
+| CM | 안드레아스 부크 | Andreas Buck | 1.FC Kaiserslautern | 주전 | 11 |
+| CM | 필리프 타팔로비치 | Filip Tapalović | TSV 1860 München | 주전 | 12 |
+| CM | 마리안 흐리스토프 | Marian Hristov | 1.FC Kaiserslautern | 주전 | 13 |
+| CM | 파비안 에른스트 | Fabian Ernst | Hamburger SV | 후보 | 14 |
+| LW | 미하엘 하르트만 | Michael Hartmann | Hertha BSC | 주전 | 4 |
+| LW | 다니엘 보리미로프 | Daniel Borimirow | TSV 1860 München | 주전 | 5 |
+| RW | 홉손 폰치 | Robson Ponte | Bayer 04 Leverkusen | 후보 | 7 |
+| RW | 호베르투 핀투 | Roberto Pinto | VfB Stuttgart | 주전 | 8 |
+| ST | 알렉스 아우베스 | Alex Alves | Hertha BSC | 후보 | 17 |
+| ST | 라데 보그다노비치 | Rade Bogdanović | SV Werder Bremen | 후보 | 18 |
+| ST | 알리 다에이 | Ali Daei | Hertha BSC | 주전 | 19 |
+| ST | 예르겐 페테르손 | Jörgen Pettersson | 1.FC Kaiserslautern | 주전 | 20 |
+| ST | 올라프 마르샬 | Olaf Marschall | 1.FC Kaiserslautern | 후보 | 21 |
+| ST | 베른하르트 빙클러 | Bernhard Winkler | TSV 1860 München | 주전 | 22 |
+| ST | 이글리 타레 | Igli Tare | 1.FC Kaiserslautern | 주전 | 23 |
+| ST | 파벨 쿠카 | Pavel Kuka | VfB Stuttgart | 후보 | 24 |
+
+### B- — 0명
+
+해당 선수 없음.
+
+### C+ — 5명
+
+| 포지션 | 한글 이름 | 원어명 | 소속 구단 원어명 | 구분 | 포지션 순위 |
+|---|---|---|---|---|---:|
+| GK | 게오르크 코흐 | Georg Koch | 1.FC Kaiserslautern | 후보 | 10 |
+| GK | 크리스티안 피들러 | Christian Fiedler | Hertha BSC | 후보 | 11 |
+| GK | 베른트 드레어 | Bernd Dreher | FC Bayern München | 후보 | 12 |
+| GK | 티모 힐데브란트 | Timo Hildebrand | VfB Stuttgart | 후보 | 13 |
+| ST | 위르겐 리셰 | Jürgen Rische | VfL Wolfsburg | 후보 | 25 |
+
+### C0 — 2명
+
+| 포지션 | 한글 이름 | 원어명 | 소속 구단 원어명 | 구분 | 포지션 순위 |
+|---|---|---|---|---|---:|
+| GK | 프랭크 유리치 | Frank Juric | Bayer 04 Leverkusen | 후보 | 14 |
+| GK | 미하엘 호프만 | Michael Hofmann | TSV 1860 München | 후보 | 15 |
+
+### C- — 1명
+
+| 포지션 | 한글 이름 | 원어명 | 소속 구단 원어명 | 구분 | 포지션 순위 |
+|---|---|---|---|---|---:|
+| GK | 알렉산더 바데 | Alexander Bade | Hamburger SV | 후보 | 16 |
+
+### D — 0명
+
+해당 선수 없음.
+
+### 미평가 — 0명
+
+해당 선수 없음.
+
+### 실제 웹 화면·배포 검증
+
+- 1999-00 전체 티어 디렉터리: https://wjdduddlf112.github.io/footballarch/?league=bundesliga&season=1999-00&view=tiers
+- GitHub 커밋: [`bc2d1055eb358cdc59c8900bd997503675066ccd`](https://github.com/wjdduddlf112/footballarch/commit/bc2d1055eb358cdc59c8900bd997503675066ccd)
+- GitHub Pages 배포: **SUCCESS**, [실행 #41925084258](https://github.com/wjdduddlf112/footballarch/actions/runs/41925084258)
+- 실제 Chromium/Playwright 검사: **SUCCESS**, [실행 #41925086286](https://github.com/wjdduddlf112/footballarch/actions/runs/41925086286)
+- 실제 화면에서 전체 구단 표 9개/126명, 전체 포지션 표 10개/126명, 티어 표 12개/126명, Best XI 티어 배지 11개 및 근거 11개를 검사해 모두 통과.
+- 이전 시즌 표시 회귀 워크플로우들 역시 성공. 이는 **구조·화면 검증**이며 역사 기록의 완전한 사실 검증과는 구별한다.
+- 역사적 미해결: 3시즌 출전/득점 독립 연계 확인 **11/126명**; 생년월일 누락 **54명**; 경기별 주 포지션 전수 검사 미완료. 기존 잠정 평가값은 사용자 최종 승인 전까지 DRAFT 유지.
+- 2000-01 시즌 후보·평가 데이터에는 이번 작업으로 인한 변경 없음.
+
