@@ -1,3 +1,13 @@
+## 2026-11-05 — Bundesliga 1999-00 DRAFT 126명 평가·배포·실제 화면 검증
+
+- 사용자 지시에 따라 **1999-00 Bundesliga만** 신규 평가. 유럽대항전 2000-01 실제 참가 9구단(Bayern, Leverkusen, HSV, TSV 1860, Kaiserslautern, Hertha, Wolfsburg [Intertoto], VfB Stuttgart [Intertoto→UEFA Cup], Werder [DFB-Pokal 준우승 UEFA Cup]) 포함.
+- 기존 출전 기록 기반 후보 118명을 신규 독립 대조하고, 9명 후보 추가/1명 제외, 3백-윙백/중앙 2선 역할 조정. 신규 126명(9구단×11명 주전 조합=99 starter slots; 후보 27); 티어·포지션별 순위 모두 **provisional**. World Class **10**, League Top **44**, Best XI 3-4-1-2 **11명** proposed_unapproved.
+- 본 시즌 JSON `data/bundesliga-1999-00.json`, 소규모 3백·전술 UI `assets/app.js`, 전체 126인 및 전원 순위 보고 `audit/BUNDESLIGA_1999_00_DRAFT_FULL_REPORT_2026_11_05.md`, 본 시즌 전용 검증 `scripts/verify-bundesliga-1999-00-draft.mjs`, Playwright `scripts/verify-bundesliga-1999-00-live.mjs`, Actions `.github/workflows/verify-bundesliga-1999-00-draft-live.yml`.
+- **데이터 독립 역사 검증 한계:** 126명 중 1999-00 출전 기록 기재 126명, 직접 대조한 선발 수치 62명, 생년월일 값 72명 중 13명 개별 공식/인적 출처 확인, DFB 공식 리그 출전·골 기록 1997-98 / 1998-99 / 1999-00 직접 연결 **11명**. 나머지 115명 3시즌 개인 자료, 54명 DOB 미기재, 경기별 실제 주포지션·좌우·당시 포메이션 최빈 빈도는 추가 검수 대상. 자료 부족을 D티어로 대체하지 않음.
+- **구조 검증:** 본 시즌 Node 검증 PASS(0 오류, 290 unresolved evidence checks/flags), 기존 Bundesliga·player integration verifier PASS, JavaScript syntax PASS. 라이브 Chromium 검증에서 실제 Pages JSON, Overview/Players/club+position filter/modal, Top Class 44, Best XI 11, League Table, Statistics, 회귀 표본 PL 1999-00/La Liga 1999-00/Bundesliga 2000-01 모두 PASS.
+- 실제 GitHub Pages 배포 성공(DFB 증거 보강 후): https://github.com/wjdduddlf112/footballarch/actions/runs/41909372551 , Bundesliga 본 시즌 실배포 Chrome 검증 PASS: https://github.com/wjdduddlf112/footballarch/actions/runs/41909279882 , 검증 산출물 screenshots/report.json Actions artifact.
+- **구분:** Pages 배포 및 구조·실브라우저 검증 완료 ≠ 모든 역사적 출전·생년월일·3시즌 경기력 교차 검증 완료. 사용자 최종 승인은 별도: `status=draft`, `bestXiReview.status=proposed_unapproved`. 2000-01 신규 평가 시작하지 않음.
+
 ## 2026-11-04 — La Liga 2018-19 PR #49 merged, draft live validation
 
 - User-requested 2018-19 La Liga: Barcelona, Atlético, Madrid, Valencia to 2019-20 UCL; Getafe, Sevilla, Espanyol to UEL, checked against UEFA 2019-20 actual participation.
