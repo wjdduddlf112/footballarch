@@ -1,3 +1,11 @@
+## 2026-11-04 — La Liga 2015-16 DRAFT production deployment + real Chromium verified
+
+- PR #46 merged commit `2cf4fd45eebe68ea4972b1377ad94353525d2af7` into main. Dataset 135 / 77 starting slots / 58 backup slots; 16 provisional World Class / 45 League Top; 4-3-3 Best XI unapproved.
+- PR 2015-16 structural / local Chromium workflow **PASS**: https://github.com/wjdduddlf112/footballarch/actions/runs/41767864736 .
+- Actual GitHub Pages build/deploy **PASS**: https://github.com/wjdduddlf112/footballarch/actions/runs/41768016403 . Public production five-tab Chromium with player detail **PASS**: https://github.com/wjdduddlf112/footballarch/actions/runs/41768016256 .
+- Historical fact verification **NOT COMPLETED** (135 three-season individual research, 135 matchwise dominant position, 135 independently double-source birthday checks, full 380-match modal formation census); candidate list and tier/ranks are provisional DRAFT. Gameiro DOB conflict retained with preferred FFF official 1987-05-09. Final user approval false.
+- Data: https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2015-16.json ; full all-player audit: https://github.com/wjdduddlf112/footballarch/blob/main/audit/LALIGA_2015_16_RATED_SOURCE_DRAFT_2026-11-04.md ; live: https://wjdduddlf112.github.io/footballarch/?league=laliga&season=2015-16&view=overview .
+
 ## 2026-11-04 — La Liga 2015-16 135-player source-led DRAFT (user approval NOT granted)
 
 - Current changes: `data/laliga-2015-16.json`, `audit/LALIGA_2015_16_RATED_SOURCE_DRAFT_2026-11-04.md`, `scripts/verify-laliga-2015-16-{draft,browser,live}.mjs`, associated GitHub Actions workflows. Branch `draft/laliga-2015-16-source-led-20261104`.
