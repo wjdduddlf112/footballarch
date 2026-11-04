@@ -1,3 +1,12 @@
+## 2026-11-04 — La Liga 2012-13 GitHub Pages publication and real Chromium PASS (unapproved DRAFT)
+
+- PR #43 squash merged onto main SHA `51cc59f46764b5794b7209b91369b40c338a428f`. 2012-13 `meta.status=draft`, `userApproved=false` and `bestXiStatus=proposed_unapproved`. Player count 135, nominal 77 tactical starters + 58 backups, provisional World Class 17, League Top 45.
+- Local structural Node + Chromium PR run **SUCCESS**: https://github.com/wjdduddlf112/footballarch/actions/runs/41757992897 .
+- Production GitHub Pages deployment **SUCCESS**: https://github.com/wjdduddlf112/footballarch/actions/runs/41758121347 .
+- Real publicly deployed GitHub Pages Chromium **SUCCESS**: https://github.com/wjdduddlf112/footballarch/actions/runs/41758121723 . First two probes returned 404 during deployment rollout; third returned **HTTP 200 / 135 players / 2012-13 / draft**. Overview, 4-2-3-1 DRAFT XI, Top 17/45, 20-team league table, and Stats tabs all rendered. Actual Courtois player modal shows Korean/original name, Atlético, DOB, 37 starts, rank and unapproved provisional tier. **Zero JavaScript errors** and five live screenshots stored as a CI artifact.
+- **Independent historical audit still incomplete:** full 135-player previous 2010-11/2011-12 career form, predominant matchwise position, DOB double-check and 380-match La Liga modal formation are **NOT** certified by passing structural/Chromium tests. See `audit/LALIGA_2012_13_RATED_SOURCE_DRAFT_2026-11-04.md` for complete nominations/known DOB conflicts. **All tiers and rankings remain draft pending user review. Stop after 2012-13.**
+- Public page: https://wjdduddlf112.github.io/footballarch/?league=laliga&season=2012-13&view=overview
+
 ## 2026-11-04 — La Liga 2012-13 source-led 135-player DRAFT (not user approved)
 
 - **User explicitly authorized** starting La Liga 2012-13, the season after 2011-12. Only current 2012-13 player evaluation is added. Seven actual 2013-14 entrants: Barcelona, Real Madrid, Atlético, Real Sociedad (UCL); Valencia, Betis, Sevilla (UEL). Málaga rank 6 UEFA excluded; Rayo rank 8 license denied; Sevilla rank 9 entered, so standings rank alone is insufficient.
