@@ -12,7 +12,7 @@ const slots442=[["ST",35,14],["ST",65,14],["LW",12,40],["CM",42,45],["DM",60,52]
 const slots3412=[["ST",34,13],["ST",66,13],["CAM",50,34],["CM",33,51],["DM",67,51],["LB",9,63],["RB",91,63],["CB",25,77],["CB",50,81],["CB",75,77],["GK",50,93]];
 const slots4231=[["ST",50,12],["LW",14,32],["CAM",50,36],["RW",86,32],["DM",38,56],["CM",62,56],["LB",13,76],["CB",37,79],["CB",63,79],["RB",87,76],["GK",50,92]];
 const q=new URLSearchParams(location.search);
-const st={domain:"domestic",league:"laliga",season:"1999-00",tab:"overview",home:!q.has("league"),showCandidates:q.get("view")==="ranking",position:"all",club:"all",from:"S",to:"D",search:"",tier:"all",age:"all",qualifiedOnly:false};
+const st={domain:"domestic",league:"laliga",season:"1999-00",tab:"overview",home:!q.has("league"),showCandidates:q.get("view")==="ranking",position:"all",club:"all",from:"S",to:"D",search:"",tier:"all",tierView:"clubs",age:"all",qualifiedOnly:false};
 let data=null,loading=false,loadSequence=0;
 const yearList=Array.from({length:27},(_,i)=>{let a=1999+i,b=(a+1)%100;return a+"-"+String(b).padStart(2,"0")});
 function esc(a){return String(a??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
@@ -25,6 +25,7 @@ function crest(id){
  return '<img class="crest" alt="" loading="lazy" src="'+esc(c.crestUrl)+'" data-backups="'+esc(JSON.stringify(backups))+'" data-fallback="'+esc(fallback)+'">';
 }
 function comp(name){if(!name)return '<span class="muted">—</span>';const type=name==="UEFA Cup"?"UEFA-Cup":name==="Intertoto Cup"?"Intertoto-Cup":name;let shown=name==="Intertoto Cup"?"Intertoto":name==="UEFA Cup"?"UEFA Cup":name;return '<span class="comp '+esc(type)+'">'+esc(shown)+'</span>'}
+function tierName(t){return t?({"A":"A0","B":"B0","C":"C0"}[t]||t):"미평가"}
 const tierClassNames={"S":"tier-grade-s","A+":"tier-grade-a-plus","A":"tier-grade-a","A-":"tier-grade-a-minus","B+":"tier-grade-b-plus","B":"tier-grade-b","B-":"tier-grade-b-minus","C+":"tier-grade-c-plus","C":"tier-grade-c","C-":"tier-grade-c-minus","D":"tier-grade-d"};
 function tierClass(t){return tierClassNames[t]||""}
 function grade(t){const label=({"A":"A0","B":"B0","C":"C0"})[t]||t;return t?'<span class="tier '+tierClass(t)+' '+(ranks.indexOf(t)<=3?"top":"")+'">'+esc(label)+'</span>':'<span class="placeholder">미평가</span>'}
@@ -47,7 +48,7 @@ function syncSelects(){
 }
 function label(){return competitionGroups[st.domain].find(x=>x[0]===st.league)?.[1]||"Football"}
 function seasonEndLabel(){return st.season.split("-")[0]+"–"+(2000+Number(st.season.split("-")[1]))}
-function clearFilters(){st.position="all";st.club="all";st.from="S";st.to="D";st.search="";st.tier="all";st.age="all";st.qualifiedOnly=false;st.showCandidates=false}
+function clearFilters(){st.position="all";st.club="all";st.from="S";st.to="D";st.search="";st.tier="all";st.tierView="clubs";st.age="all";st.qualifiedOnly=false;st.showCandidates=false}
 function writeUrl(){st.home=false;let p=new URLSearchParams({league:st.league,season:st.season,view:st.tab});history.replaceState(null,"",location.pathname+"?"+p.toString())}
 function changeSeason(nextSeason){
  if(!yearList.includes(nextSeason)||nextSeason===st.season)return;
@@ -99,7 +100,10 @@ function pageIntro(){
  $("eyebrow").style.display="none";
  $("heading").textContent=label()+"  /  "+st.season.replace("-","–");
  $("subheading").style.display="none";
- const playerView=["formation","top","stats"].includes(st.tab);
+ const tierSeason=st.league==="bundesliga"&&st.season==="1999-00";
+ const tierTab=$("allTiersTab");if(tierTab)tierTab.style.display=tierSeason?"":"none";
+ if(st.tab==="tiers"&&!tierSeason)st.tab="overview";
+ const playerView=["formation","top","tiers","stats"].includes(st.tab);
  const stage=data?.meta?.status==="demo"?"SAMPLE":data?.meta?.status!=="approved"&&data?.players?.length?"DRAFT":"";
  $("stateTag").textContent=stage;
  $("stateTag").className="status "+(stage==="SAMPLE"?"demo":"pending");
@@ -157,6 +161,34 @@ function candidatePool(){
  return '<section class="panel candidate-pool" id="candidate-pool"><div class="section-heading"><h2>Players <span class="muted">'+rows.length+' / '+all.length+'</span></h2><button class="pill" data-action="reset">초기화</button></div>'+filters(false,false)+tablePlayers(rows)+'</section>'
 }
 
+function tierDirectory(){
+ const all=rankPlayers(),view=st.tierView||"clubs",allowed=[...ranks,null],count=t=>all.filter(p=>p.tier===t).length;
+ const tally=allowed.map(t=>tierName(t)+" "+count(t)).join(" · ");
+ const sum=allowed.reduce((n,t)=>n+count(t),0);
+ const wc=all.filter(p=>["S","A+"].includes(p.tier)).length,lt=all.filter(p=>["S","A+","A","A-"].includes(p.tier)).length;
+ const menu=[["clubs","구단별 전체 명단"],["positions","포지션별 통합 순위"],["tiers","티어별 전체 명단"]];
+ let h='<section class="panel tier-directory-head"><div class="section-heading"><div><h2>전체 선수 티어 · '+all.length+'명 <span class="muted">DRAFT</span></h2><p class="muted small">1999-00 분데스리가 · 9개 구단 · 주전과 후보 전원 · 사용자 미승인</p></div><button class="pill" data-go="top">World / League Top Class</button></div>';
+ h+='<p class="small muted">World Class '+wc+'명 (S+A+) · League Top Class '+lt+'명 (S~A-) · 티어 합계 '+sum+'/'+all.length+'명 '+(sum===all.length?'(일치)':'(오류)')+'</p><p class="small tier-counts">'+esc(tally)+'</p><div class="pills tier-directory-nav">'+menu.map(x=>'<button class="pill '+(view===x[0]?'active':'')+'" data-tier-view="'+x[0]+'">'+x[1]+'</button>').join("")+'</div></section>';
+ if(view==="clubs"){
+  for(const q of qualifiers()){
+   const ps=all.filter(p=>p.club===q.club);
+   const counts=allowed.filter(t=>ps.some(p=>p.tier===t)).map(t=>tierName(t)+" "+ps.filter(p=>p.tier===t).length).join(" · ");
+   h+='<section class="panel tier-directory-section"><div class="section-heading"><h2>'+esc(club(q.club).name)+' <span class="muted">'+ps.length+'명 (주전 '+ps.filter(p=>p.role==="starter").length+' / 후보 '+ps.filter(p=>p.role==="backup").length+')</span></h2></div><p class="small muted">'+esc(counts)+'</p>'+tablePlayers(ps)+'</section>';
+  }
+ }else if(view==="positions"){
+  for(const position of positions){
+   const ps=all.filter(p=>p.position===position).sort((a,b)=>(a.rank??999)-(b.rank??999));
+   h+='<section class="panel tier-directory-section"><div class="section-heading"><h2>'+position+' <span class="muted">'+ps.length+'명</span></h2></div><div class="table-scroll"><table class="datagrid"><thead><tr><th>순위</th><th>포지션</th><th>한글 이름 / 원어명</th><th>소속 구단</th><th>티어</th><th>주전/후보</th></tr></thead><tbody>'+ps.map(p=>'<tr data-player="'+esc(p.id)+'"><td>'+esc(p.rank??"—")+'</td><td>'+esc(p.position)+'</td><td class="person">'+esc(p.nameKo||p.name)+'<span class="small muted" style="display:block">'+esc(p.nameOriginal||p.name)+'</span></td><td>'+esc(p.clubNameOriginal||club(p.club).name)+'</td><td>'+grade(p.tier)+'</td><td>'+esc(p.role==="starter"?"주전":"후보")+'</td></tr>').join("")+'</tbody></table></div></section>';
+  }
+ }else{
+  for(const tier of allowed){
+   const ps=all.filter(p=>p.tier===tier);
+   h+='<section class="panel tier-directory-section"><div class="section-heading"><h2>'+tierName(tier)+' <span class="muted">'+ps.length+'명</span></h2></div>'+(ps.length?'<div class="table-scroll"><table class="datagrid"><thead><tr><th>포지션</th><th>한글 이름 / 원어명</th><th>소속 구단</th><th>포지션 순위</th><th>티어</th></tr></thead><tbody>'+ps.map(p=>'<tr data-player="'+esc(p.id)+'"><td>'+esc(p.position)+'</td><td class="person">'+esc(p.nameKo||p.name)+'<span class="small muted" style="display:block">'+esc(p.nameOriginal||p.name)+'</span></td><td>'+esc(p.clubNameOriginal||club(p.club).name)+'</td><td>'+esc(p.rank??"—")+'</td><td>'+grade(p.tier)+'</td></tr>').join("")+'</tbody></table></div>':'<p class="small muted">해당 선수 없음 (0명)</p>')+'</section>';
+  }
+ }
+ return h
+}
+
 function topPage(){
  let all=rankPlayers(),filtered=filterPlayers(all,true);let count=t=>all.filter(p=>p.tier===t).length;
  let cards='<div class="top-scores">'+["S","A+","A","A-"].map(t=>'<button class="top-score '+tierClass(t)+' '+(st.tier===t?"active":"")+'" data-toptier="'+t+'"><b>'+(({"A":"A0","B":"B0","C":"C0"})[t]||t)+'</b><small>'+count(t)+' players</small></button>').join("")+'</div>';
@@ -174,7 +206,7 @@ function formation(){
  if(formationName==="4-4-2"&&selection.filter(p=>p.position==="CM").length===2&&selection.every(p=>p.position!=="DM")){
   layout=slots442.map(slot=>slot[0]==="DM"?["CM",slot[1],slot[2]]:slot);
  }
- let marks=layout.map(x=>{let matches=selection.filter(b=>b.position===x[0]);let index=used[x[0]]||0;used[x[0]]=index+1;let pick=matches[index];let p=data.players.find(y=>y.id===pick?.playerId);let selectedPosition=p?.position||x[0];let fieldPosition=pick?.displayPosition||x[0];return '<button class="slot '+(st.position===selectedPosition?"active":"")+'" data-position="'+selectedPosition+'" style="left:'+x[1]+'%;top:'+x[2]+'%"><span class="spot">'+esc(fieldPosition)+'</span><span class="slot-label">'+(p?esc(p.nameKo||p.name):"선정 대기")+'</span></button>'}).join("");
+ let marks=layout.map(x=>{let matches=selection.filter(b=>b.position===x[0]);let index=used[x[0]]||0;used[x[0]]=index+1;let pick=matches[index];let p=data.players.find(y=>y.id===pick?.playerId);let selectedPosition=p?.position||x[0];let fieldPosition=pick?.displayPosition||x[0];return '<button class="slot '+(st.position===selectedPosition?"active":"")+'" data-position="'+selectedPosition+'" style="left:'+x[1]+'%;top:'+x[2]+'%"><span class="spot">'+esc(fieldPosition)+'</span><span class="slot-label">'+(p?esc(p.nameKo||p.name):"선정 대기")+'</span>'+(p?'<span class="slot-tier">'+grade(p.tier)+'</span>':'')+'</button>'}).join("");
  let pos=st.position==="all"?"GK":st.position;
  let candidates=rankPlayers().filter(p=>p.position===pos);
  let side='<div class="panel"><div class="section-heading"><h2>포지션별 순위</h2><span class="status">'+pos+'</span></div><div class="position-nav">'+positions.map(p=>'<button data-position="'+p+'" class="'+(pos===p?"active":"")+'">'+p+'</button>').join("")+'</div>';
@@ -185,7 +217,8 @@ function formation(){
  side+='</div>';
  const proposed=data?.meta?.bestXiReview?.status==="proposed_unapproved";
  const previewNote="";
- return '<div class="panels"><section class="panel"><div class="section-heading"><h2>Season Best XI</h2><span class="small muted">'+esc(formationName)+' · '+(data?.meta?.status==="demo"?"SAMPLE":proposed?"DRAFT":"BEST XI")+'</span></div>'+previewNote+'<div class="pitch"><div class="mid"></div><div class="circle"></div>'+marks+'</div></section>'+side+'</div>'
+ const xiTable=st.league==="bundesliga"&&st.season==="1999-00"?'<div class="xi-detail-list"><h3>Best XI · 11명 개별 티어 및 선정 근거</h3><div class="table-scroll"><table class="datagrid"><thead><tr><th>전술 위치</th><th>한글 이름 / 원어명</th><th>구단</th><th>실제 주 포지션</th><th>티어</th><th>선정 근거</th></tr></thead><tbody>'+selection.map(s=>{const p=data.players.find(x=>x.id===s.playerId);return '<tr data-player="'+esc(s.playerId)+'"><td>'+esc(s.displayPosition||s.position)+'</td><td class="person">'+esc(p?.nameKo||"—")+'<span class="small muted" style="display:block">'+esc(p?.nameOriginal||p?.name||"—")+'</span></td><td>'+esc(p?.clubNameOriginal||"—")+'</td><td>'+esc(p?.position||"—")+'</td><td>'+grade(p?.tier)+'</td><td>'+esc(s.reason||"근거 확인 대기")+'</td></tr>'}).join("")+'</tbody></table></div></div>':"";
+ return '<div class="panels"><section class="panel"><div class="section-heading"><h2>Season Best XI</h2><span class="small muted">'+esc(formationName)+' · '+(data?.meta?.status==="demo"?"SAMPLE":proposed?"DRAFT":"BEST XI")+'</span></div>'+previewNote+'<div class="pitch"><div class="mid"></div><div class="circle"></div>'+marks+'</div>'+xiTable+'</section>'+side+'</div>'
 }
 function championStatus(r){
  if(st.domain!=="domestic"||!data?.standings?.length)return "";
@@ -217,7 +250,7 @@ function stats(){
  const ps=filterPlayers(rankPlayers(),false),total=ps.length,topN=ps.filter(top).length,ages=ps.map(age).filter(n=>n!=null),avg=ages.length?(ages.reduce((a,b)=>a+b,0)/ages.length).toFixed(1):"—";
  let n=ps.filter(p=>p.tier).length;let mid='<div class="cards">'+statValue("Matching Players",total)+statValue("League Top Class",topN)+statValue("Average Age",avg)+'</div>';
  mid+='<section class="panel"><div class="section-heading"><h2>Filters</h2><button class="pill" data-action="reset">Reset</button></div>'+filters(false,true)+'</section>';
- mid+='<div class="stat-grid" style="margin-top:14px"><div class="panel"><h2>Tier Distribution</h2>'+(n?bars(ranks.map(t=>[t,ps.filter(p=>p.tier===t).length])):'<div class="empty"><strong>티어 평가 전입니다.</strong></div>')+'</div><div class="panel"><h2>Position Distribution</h2>'+bars(positions.map(t=>[t,ps.filter(p=>p.position===t).length]))+'</div><div class="panel"><h2>Club Representation</h2>'+bars(qualifiers().map(q=>[club(q.club).name,ps.filter(p=>p.club===q.club).length]))+'</div><div class="panel"><h2>Age Breakdown</h2>'+bars([["≤22",ps.filter(p=>age(p)<=22).length],["23–27",ps.filter(p=>age(p)>=23&&age(p)<=27).length],["28–32",ps.filter(p=>age(p)>=28&&age(p)<=32).length],["33+",ps.filter(p=>age(p)>=33).length]])+'</div></div>';
+ mid+='<div class="stat-grid" style="margin-top:14px"><div class="panel"><h2>Tier Distribution</h2>'+(n?bars([...ranks.map(t=>[tierName(t),ps.filter(p=>p.tier===t).length]),["미평가",ps.filter(p=>p.tier==null).length]]):'<div class="empty"><strong>티어 평가 전입니다.</strong></div>')+'</div><div class="panel"><h2>Position Distribution</h2>'+bars(positions.map(t=>[t,ps.filter(p=>p.position===t).length]))+'</div><div class="panel"><h2>Club Representation</h2>'+bars(qualifiers().map(q=>[club(q.club).name,ps.filter(p=>p.club===q.club).length]))+'</div><div class="panel"><h2>Age Breakdown</h2>'+bars([["≤22",ps.filter(p=>age(p)<=22).length],["23–27",ps.filter(p=>age(p)>=23&&age(p)<=27).length],["28–32",ps.filter(p=>age(p)>=28&&age(p)<=32).length],["33+",ps.filter(p=>age(p)>=33).length]])+'</div></div>';
  return mid
 }
 
@@ -309,7 +342,7 @@ function render(){
  document.title=label()+" "+st.season+" | FOOTBALL ARCHIVE";
  syncSelects();pageIntro();const el=$("content");if(loading){el.innerHTML='<div class="empty"><strong>데이터를 불러오는 중입니다.</strong></div>';return}
  if(!data){el.innerHTML=unregistered();return}
- if(st.tab==="overview")el.innerHTML=overview();else if(st.tab==="formation")el.innerHTML=formation();else if(st.tab==="top")el.innerHTML=topPage();else if(st.tab==="table")el.innerHTML=standings();else el.innerHTML=stats()
+ if(st.tab==="overview")el.innerHTML=overview();else if(st.tab==="formation")el.innerHTML=formation();else if(st.tab==="top")el.innerHTML=topPage();else if(st.tab==="tiers")el.innerHTML=tierDirectory();else if(st.tab==="table")el.innerHTML=standings();else el.innerHTML=stats()
 }
 function playerDetails(id){
  const p=data?.players?.find(x=>x.id===id);if(!p)return;
@@ -358,6 +391,7 @@ document.addEventListener("click",ev=>{
  if(btn.dataset.posGo){st.tab="overview";st.showCandidates=true;st.position=btn.dataset.posGo;st.club="all";writeUrl();render();document.getElementById("candidate-pool")?.scrollIntoView({behavior:"smooth",block:"start"});return}
  if(btn.dataset.clubGo){st.tab="overview";st.showCandidates=true;st.club=btn.dataset.clubGo;st.position="all";st.from="S";st.to="D";writeUrl();render();document.getElementById("candidate-pool")?.scrollIntoView({behavior:"smooth",block:"start"});return}
  if(btn.dataset.toptier){st.tier=btn.dataset.toptier;render();return}
+ if(btn.dataset.tierView){st.tierView=btn.dataset.tierView;render();return}
  if(btn.dataset.player){playerDetails(btn.dataset.player);return}
  if(btn.dataset.action==="close"){closeModal();return}
  if(btn.dataset.action==="candidates"){st.showCandidates=!st.showCandidates;render();if(st.showCandidates)document.getElementById("candidate-pool")?.scrollIntoView({behavior:"smooth",block:"start"});return}
@@ -388,7 +422,7 @@ $("content").addEventListener("input",e=>{
 if(competitionGroups.domestic.some(x=>x[0]===q.get("league")))st.league=q.get("league");
 else if(competitionGroups.europe.some(x=>x[0]===q.get("league"))){st.domain="europe";st.league=q.get("league")}
 if(yearList.includes(q.get("season")))st.season=q.get("season");
-if(["overview","formation","top","table","stats"].includes(q.get("view")))st.tab=q.get("view");
+if(["overview","formation","top","tiers","table","stats"].includes(q.get("view")))st.tab=q.get("view");
 if(q.get("view")==="ranking")st.showCandidates=true;
 if(st.domain==="europe"&&["formation","table"].includes(st.tab))st.tab="overview";
 if(st.home)render();else load();
@@ -401,7 +435,7 @@ window.addEventListener("popstate",()=>{
  if(!domestic&&!europe){st.home=true;data=null;loading=false;render();return}
  st.home=false;st.domain=domestic?"domestic":"europe";st.league=id;
  st.season=yearList.includes(p.get("season"))?p.get("season"):"1999-00";
- st.tab=["overview","formation","top","table","stats"].includes(p.get("view"))?p.get("view"):"overview";
+ st.tab=["overview","formation","top","tiers","table","stats"].includes(p.get("view"))?p.get("view"):"overview";
  if(st.domain==="europe"&&["formation","table"].includes(st.tab))st.tab="overview";
  clearFilters();if(p.get("view")==="ranking")st.showCandidates=true;load();
 });

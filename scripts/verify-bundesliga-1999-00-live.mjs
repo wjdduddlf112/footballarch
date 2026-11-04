@@ -37,7 +37,7 @@ try{
  await page.locator(".overlay [data-action=close]").click();
  await page.screenshot({path:outfile+"/overview.png",fullPage:true});
  report.tabs.push("overview");
- for(const tab of ["formation","top","table","stats"]){
+ for(const tab of ["formation","top","tiers","table","stats"]){
   await page.locator('[data-tab="'+tab+'"]').click();
   await page.waitForTimeout(300);
   const text=await page.locator("#content").textContent();
@@ -45,11 +45,23 @@ try{
   if(tab==="formation"){
    assert((await page.locator(".slot").count())===11,"Best XI formation has not 11 slots");
    assert(!text.includes("선정 대기"),"Best XI contains empty slot");
+   assert((await page.locator(".slot .slot-tier .tier").count())===11,"Missing 11 pitch tier badges");
+   assert((await page.locator(".xi-detail-list tr[data-player]").count())===11,"Missing 11 XI tier/rationale rows");
    assert(text.includes("DRAFT"),"Best XI is not flagged DRAFT");
   }
   if(tab==="top"){assert(text.includes("World Class")&&text.includes("League Top Class"),"World Class/Top Class missing");assert((await page.locator("tr[data-player]").count())===44,"Expected 44 league-top players");}
+  if(tab==="tiers"){
+   assert(text.includes("티어 합계 126/126명"),"Tier total missing");
+   assert((await page.locator(".tier-directory-section").count())===9,"Missing nine clubs");
+   assert((await page.locator(".tier-directory-section tr[data-player]").count())===126,"Club tiers do not show all players");
+   await page.locator("[data-tier-view=positions]").click();
+   assert((await page.locator(".tier-directory-section tr[data-player]").count())===126,"Position ranks incomplete");
+   await page.locator("[data-tier-view=tiers]").click();
+   assert((await page.locator(".tier-directory-section").count())===12,"Missing some tier groups");
+   assert((await page.locator(".tier-directory-section tr[data-player]").count())===126,"Tier groups incomplete");
+  }
   if(tab==="table")assert(text.includes("FC Bayern München")&&text.includes("Werder Bremen"),"League table missing historical clubs");
-  if(tab==="stats")assert(text.includes("Tier Distribution"),"Statistics page missing");
+  if(tab==="stats"){assert(text.includes("Tier Distribution"),"Statistics page missing");assert(text.includes("A0")&&text.includes("B0")&&text.includes("C0")&&text.includes("미평가"),"Tier labels missing");}
   await page.screenshot({path:outfile+"/"+tab+".png",fullPage:true});
   report.tabs.push(tab);
  }
