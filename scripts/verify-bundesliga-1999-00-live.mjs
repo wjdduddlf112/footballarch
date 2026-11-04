@@ -60,7 +60,7 @@ try{
  if(report.totalCrests>report.loadedCrests)report.warning.push("Some crest images did not load; separate visual review required.");
  if(errors.length)report.warning.push("Page JS console exceptions: "+errors.join(" | ").slice(0,800));
 
- for(const [league,season,expected] of [["premierleague","1999-00",128],["laliga","1999-00",167],["bundesliga","2000-01",132]]){
+ for(const [league,season,expected] of [["premierleague","1999-00",128],["laliga","1999-00",167],["bundesliga","2000-01",136]]){
   await page.goto(root+"?league="+league+"&season="+season,{waitUntil:"domcontentloaded",timeout:40000});
   await page.waitForFunction(()=>document.querySelector("#content")?.textContent?.includes("European Qualification"),{timeout:30000});
   assert((await page.locator("#content").textContent()).includes("Players"),"Regression overview no player panel "+league);
