@@ -1,3 +1,12 @@
+## 2026-11-04 — La Liga 2015-16 135-player source-led DRAFT (user approval NOT granted)
+
+- Current changes: `data/laliga-2015-16.json`, `audit/LALIGA_2015_16_RATED_SOURCE_DRAFT_2026-11-04.md`, `scripts/verify-laliga-2015-16-{draft,browser,live}.mjs`, associated GitHub Actions workflows. Branch `draft/laliga-2015-16-source-led-20261104`.
+- Actual 2016-17 Europe: FC Barcelona, Real Madrid, Atlético, Villarreal (UCL play-off before UEL), Sevilla (UEL titleholder -> UCL), Athletic and RC Celta. Existing 2015-16 twenty-team standings, crests, older-season player files, and app UI preserved.
+- Current 2015-16 dataset: **135 candidates across 7 clubs** (77 nominal first XI tactical slots, 58 backup candidates), provisional **World Class 16**, **League Top 45**, proposal **4-3-3 XI**, all unapproved draft. Each player's 2015-16 league stats uses one BDFutbol club table and is **not** fully independently cross-checked. 2013-14 and 2014-15 older-season references are DRAFT records, not independent 3-season evaluation.
+- **135 ISO birthdates entered, but independent two-source checks are incomplete.** Kévin Gameiro official FFF DOB 1987-05-09 versus historical FootballSquads 1987-04-09 explicitly documented with preferred official source. Specific Villarreal birthdays referenced with FFF/LaLiga/Villarreal/other sources.
+- Main-position matchwise census **not completed** (135); per-match tactical leaguewide 380-fixture modal 4-3-3 **not verified**; positional role conflicts flagged. All tiers and positional ranks are provisional and do not equate to a verified historic appraisal. User final approval remains false.
+- Structural Node and local Chromium tests prepared; production GitHub Pages and actual workflow statuses **must be checked separately**, not assumed from file commit alone. Do not start 2016-17 without explicit user request.
+
 ## 2026-11-04 — La Liga 2014-15 real production Pages Chromium PASS; DRAFT unapproved
 
 - PR **#45** merged to main squash SHA `71c3a900e45b672284337f65f064965a1803d6a4`. Dataset `data/laliga-2014-15.json` still explicitly `status=draft`, `userApproved=false`, `bestXiStatus=proposed_unapproved`; candidate count **130** (77 nominal starter slots + 53 backup/cup-starter), provisional World Class **22** / League Top **50**.
