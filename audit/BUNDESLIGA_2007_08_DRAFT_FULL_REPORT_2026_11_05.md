@@ -876,3 +876,19 @@ All previously missing DOBs are filled: **40** values, 25 from direct DFB/Bayern
 - **André Lima** Hertha birth and transfer identity supported by his next club São Paulo's 2008 official announcement (DOB 1985-05-03); 2005-06 European club appearances remain unverified. https://www.saopaulofc.net/sao-paulo-define-contratacao-de-andre-lima/ .
 
 **Historical 3-season complete player verification remains 0 / 149.** All 149 tier rankings remain DRAFT. One player has documented small statistical source disagreement. Source links for all players and pending checks are in current JSON.
+
+---
+
+## 13. Independently observed GitHub deployment, Actions checks and real Chromium browser QA
+
+This section supersedes the provisional pre-test placeholders in §10. It does **not** amend the historical validation status of 0/149 fully verified player evaluations.
+
+- Current player data/biographical audit commit: `3838a6daf56d08624ceba637f3ba10016c479b8f`; original full 149-player nomination commit: `649c789c739d134c273b19a578ad02437d50f5fa`.
+- Pages deployment run: **SUCCESS** on data commit. https://github.com/wjdduddlf112/footballarch/actions/runs/41972273489
+- GitHub Actions structural/JavaScript validator: **PASS** in `Structure and JavaScript` step. https://github.com/wjdduddlf112/footballarch/actions/runs/41972274561
+- Actual Playwright Chromium GitHub Pages browser: **PASS_CORE_UI**, 2026-11-05T05:10:38Z. Passed Overview, candidate detail, filters, 8 UEFA qualified clubs, Best XI (11), World/League Top (54), All Tiers by club, position, grade, League Table, Statistics; prior Bundesliga 2006-07 127-player regression. No browser test warnings. https://github.com/wjdduddlf112/footballarch/actions/runs/41972274561
+- Raw screenshots and machine run report uploaded in artifact: https://github.com/wjdduddlf112/footballarch/actions/runs/41972274561/artifacts/13390386605
+- Live Pages delivered **149** players, **8** eligible clubs, **11** proposed XI. All 149 current-year tiers are **provisional** and no athlete has all three seasons of individual performance/role independently certified.
+- All player birthdates now non-null, but 15 were recovered from historical Football Archive DRAFT and remain **not individually source-certified**, rather than being misreported as verified.
+- One documented individual source conflict remains: Rudolf Skácel 2007-08 minutes (BDFutbol 1302 versus FBref 1298), stored as `verificationStatus: conflicting_sources`.
+- Final approval **not given** and next season Bundesliga 2008-09 **not started**.
