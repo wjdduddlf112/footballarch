@@ -693,3 +693,18 @@ World Class S/A+: 12; League Top Class S/A+/A0/A-: 48
 Misimović assists Transfermarkt 20, StatMuse 19, FBref 15. BDFutbol current-season goals 6 while some retrospectives 7. Özil assists BeSoccer 14, StatMuse 15, FBref 11. Provider definitions are not harmonized; do not represent an unqualified source count as settled.
 
 Verification: 6 UEFA participants sourced, 117 current-year stats linked, 117 provisional grades, 11 proposed XI; 0/117 full independent 3-year qualitative verifications. CI/Pages/Playwright status appended only after actual run. User did not approve. Do not auto-start Bundesliga 2009-10.
+
+---
+
+## 12. Actual live browser and GitHub Actions production validation (2026-11-05)
+
+**Real GitHub Pages Chromium PASS_CORE_UI, no warnings. This is a UI test and structural test, NOT independent verification of 3 seasons of historical individual performance.**
+
+- Raw/current-season data commit: `e7aecb5b2698627020d502ccf61ba79a882e143a`.
+- Structural + JavaScript PASS on actual GitHub Actions: https://github.com/wjdduddlf112/footballarch/actions/runs/41974783437
+- GitHub Pages production deploy SUCCESS on `2d38cf...`: https://github.com/wjdduddlf112/footballarch/actions/runs/41974782781
+- Chromium Pages `PASS_CORE_UI`, verified 117 players, 6 UEFA entrants, 48 top tier, 11 XI, 18 Wolfsburg candidate filter, GK filter, player detail dialog, all tiers groups, overview, formation, league table, statistics, previous Bundesliga 2007-08 149-player regression. 0 warnings.
+- Screenshot/test-result artifact: https://github.com/wjdduddlf112/footballarch/actions/runs/41974783437/artifacts/13390953871
+- User approval: NOT RECEIVED. Independent three-year player-quality audits: **0/117 fully independently audited**.
+- One preserved methodological warning: different assist providers disagree for Misimović and Özil; no false universally certified assist total.
+- No auto-start of 2009-10 Bundesliga.
