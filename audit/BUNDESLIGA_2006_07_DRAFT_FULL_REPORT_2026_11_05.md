@@ -610,3 +610,15 @@ Contemporaneous S grade context: Werder Bremen on 31 May 2007 reported a kicker 
 | Hamburger SV | ST | Paolo Guerrero | Prior archive DRAFT (unverified) | Prior archive DRAFT (unverified) | BDFutbol apps/starts/goals + DFB roster | partially_verified |
 
 Player by player individual source URLs, goals/appearances, DOB and pending checks live in data/bundesliga-2006-07.json. No auto-progression to Bundesliga 2007-08.
+
+
+## 10. Final in-chat structural review versus actual GitHub contents
+
+The GitHub-connected data object was freshly fetched and its in-memory structural rules independently rechecked after the Best XI correction. **PASS (errors: 0)** for: JSON parse; 7 qualifying clubs; 18 Bundesliga standings rows identical to shared verified archive; unique player IDs; exactly 128 nominated club-season records; 103 starter-equivalent and 25 backup; backup max one per club/position; every player having each of three season review fields; valid grade and one numbered rank in each position; exactly 11 unique proposed-unapproved XI entries matching actual nominated positions; correct 4-4-2 diamond CM×2, DM×1, CAM×1; 12 World Class and 51 League Top Class. This was a connector data invariant check in the conversation, not a claim that GitHub Actions Node script executed.
+
+GitHub Actions / Pages actual browser test: workflow and Playwright tests are committed, but the available Actions query did **not** provide a run result or log for this push. Status is therefore **NOT CONFIRMED**, not PASS. A web fetch of the live Pages JSON also failed through the available browser source. No direct visual or Chromium screenshot evidence has been obtained in this session. Do not use this row as an assertion of live deployment success.
+
+The evaluation JSON and Playwright smoke test were updated again after the initial audit. Current site UI source shows per-player historical verification status, 3-season source flags and additional missing-evidence descriptions; the test covers All Tiers club/position/tier views, individual modal, World/League Top, Best XI, table, stats and earlier seasons. They require a real successful run before any live-browser gate can be closed.
+
+**Historical validation full completion:** 0 / 128; **DFB three-season matches-and-goals subset only:** 4 / 128; **Grades entered:** 128 / 128 (provisional, not validated); **Final approval:** not given.
+
