@@ -439,157 +439,157 @@
 
 ## 7. Best XI — 4-2-3-1 (잠정 제안)
 
-2010-11 이후 성과나 단순 팀 순위를 제외하고 2009-10 개인 활약, 보조적으로 직전 두 시즌의 지속성 및 당시의 실전 주 포지션을 고려하여 선정한 **proposed_unapproved** 구성. 4-2-3-1의 리그 최빈 빈도는 미확정.
+전술 포메이션 빈도는 미확정이며 개인 주 포지션과 출전 기록을 고려한 미승인 제안 (`proposed_unapproved`).
 
-| 전술 위치 | 선수 (한글 / 원어명) | 구단 | 선수 주 포지션 | 티어 | 선정 근거 (잠정) |
+| 위치 | 선수 (한글 / 원어명) | 구단 | 주 포지션 | 티어 | 선정 근거 |
 |---|---|---|---|---|---|
-| GK | 마누엘 노이어 / Manuel Neuer | FC Schalke 04 | GK | A+ | 리그 34경기 전 경기 선발, 3060분 및 실점 31. 전 경기 지속성·선방력과 수비 뒤 공간 통제력을 우선 평가. 2007-08, 2008-09 개별 기록은 추가 확인 대상. |
+| GK | 마누엘 노이어 / Manuel Neuer | FC Schalke 04 | GK | A+ | 2007-08 FC Schalke 04 34경기 0골; 2008-09 FC Schalke 04 27경기 0골; 2009-10 FC Schalke 04 34경기 0골. 현재 시즌에 가장 높은 비중을 두며 이전 두 시즌 기록은 직접 외부 출처로 확인. 시즌별 포지션 빈도와 정성적 기량 전수 검증은 별도 필요. |
 | RB | 필리프 람 / Philipp Lahm | FC Bayern München | RB | A+ | 34경기 전 경기 풀타임 3060분. 오른쪽 풀백으로 높은 출전 지속성과 공격 가담. 2007-08, 2008-09 개별 기록은 추가 확인 대상. |
 | CB | 페어 메르테자커 / Per Mertesacker | SV Werder Bremen | CB | A0 | 33경기 전 경기 선발 2970분 5골. 센터백 주전성과 공중볼·세트피스 기여. 2007-08, 2008-09 개별 기록은 추가 확인 대상. |
 | CB | 마츠 훔멜스 / Mats Hummels | BV 09 Borussia Dortmund | CB | A0 | 30경기 27선발 5골. 후방 빌드업과 공중볼 경쟁력으로 평가하는 잠정 상위 중앙수비수. 2007-08, 2008-09 개별 기록은 추가 확인 대상. |
 | LB | 홀거 바트슈투버 / Holger Badstuber | FC Bayern München | LB | B+ | 2009-10 Bundesliga 33경기 33선발 2926분, 1득점. B+는 현재 시즌 기용과 개인 활약을 우선한 DRAFT 잠정 평가. 직전 두 시즌의 개인 경기력·포지션별 실제 출전 빈도 독립 검증 필요. 팀 성적 가산점 없음. |
 | DM | 마르크 판 보멀 / Mark van Bommel | FC Bayern München | DM | A- | 2009-10 Bundesliga 25경기 25선발 2169분, 1득점. A-는 현재 시즌 기용과 개인 활약을 우선한 DRAFT 잠정 평가. 직전 두 시즌의 개인 경기력·포지션별 실제 출전 빈도 독립 검증 필요. 팀 성적 가산점 없음. |
-| CM | 바스티안 슈바인슈타이거 / Bastian Schweinsteiger | FC Bayern München | CM | A+ | 33경기 33선발 2908분. 중앙 전환 후 경기 전개·공격 지원·수비 간격 조율 핵심, 경기별 역할 검증 대기. 2007-08, 2008-09 개별 기록은 추가 확인 대상. |
+| CM | 바스티안 슈바인슈타이거 / Bastian Schweinsteiger | FC Bayern München | CM | A+ | 2007-08 FC Bayern München 30경기 1골; 2008-09 FC Bayern München 31경기 5골; 2009-10 FC Bayern München 33경기 2골. 현재 시즌에 가장 높은 비중을 두며 이전 두 시즌 기록은 직접 외부 출처로 확인. 시즌별 포지션 빈도와 정성적 기량 전수 검증은 별도 필요. |
 | LW | 마르코 마린 / Marko Marin | SV Werder Bremen | LW | A0 | 2009-10 Bundesliga 32경기 30선발 2419분, 4득점. A0는 현재 시즌 기용과 개인 활약을 우선한 DRAFT 잠정 평가. 직전 두 시즌의 개인 경기력·포지션별 실제 출전 빈도 독립 검증 필요. 팀 성적 가산점 없음. |
-| CAM | 메수트 외질 / Mesut Özil | SV Werder Bremen | CAM | A+ | 31경기 29선발 9골, 공격 전개와 기회 창출에 큰 영향. 도움은 weltfussball 17 / FBref 14로 정의 불일치. 2007-08, 2008-09 개별 기록은 추가 확인 대상. |
-| RW | 아르연 로번 / Arjen Robben | FC Bayern München | RW | S | 24경기 18선발 16골로 경기당 득점 효율이 극히 높았고 우측 돌파·결정력이 시즌 개인 평가의 핵심. 부상으로 제한된 출전은 별도 반영. 2007-08, 2008-09 개별 기록은 추가 확인 대상. |
-| ST | 슈테판 키슬링 / Stefan Kießling | Bayer 04 Leverkusen | ST | A+ | 33경기 전 경기 선발 21골로 선정 6개 구단 중 최고 리그 득점. 상시 출전·마무리 기여. 2007-08, 2008-09 개별 기록은 추가 확인 대상. |
+| CAM | 메수트 외질 / Mesut Özil | SV Werder Bremen | CAM | A+ | 2007-08 FC Schalke 04 → SV Werder Bremen 23경기 1골; 2008-09 SV Werder Bremen 28경기 3골; 2009-10 SV Werder Bremen 31경기 9골. 현재 시즌에 가장 높은 비중을 두며 이전 두 시즌 기록은 직접 외부 출처로 확인. 시즌별 포지션 빈도와 정성적 기량 전수 검증은 별도 필요. |
+| RW | 아르연 로번 / Arjen Robben | FC Bayern München | RW | S | 2007-08 Real Madrid CF 21경기 4골; 2008-09 Real Madrid CF 29경기 7골; 2009-10 FC Bayern München 24경기 16골. 현재 시즌에 가장 높은 비중을 두며 이전 두 시즌 기록은 직접 외부 출처로 확인. 시즌별 포지션 빈도와 정성적 기량 전수 검증은 별도 필요. |
+| ST | 슈테판 키슬링 / Stefan Kießling | Bayer 04 Leverkusen | ST | A+ | 2007-08 Bayer 04 Leverkusen 31경기 9골; 2008-09 Bayer 04 Leverkusen 34경기 12골; 2009-10 Bayer 04 Leverkusen 33경기 21골. 현재 시즌에 가장 높은 비중을 두며 이전 두 시즌 기록은 직접 외부 출처로 확인. 시즌별 포지션 빈도와 정성적 기량 전수 검증은 별도 필요. |
 
-**경쟁 선수 대비 우위 판정의 한계:** 각 포지션에서 다른 후보 대비 티어 및 주전 출전량을 고려했지만, 대체 선수와의 경기별 전술 수치 교차검증은 진행 중이어서 모든 Best XI 자리는 잠정이다.
+포지션별 경기단위 대조와 개인 기량 정성 비교 미완료. 경쟁자 대비 우위는 잠정.
 
 ## 8. 선수별 3시즌 기록·검증 상태 전수표
 
-| 선수 | 구단 | 2007-08 | 2008-09 | 2009-10 경기/선발/분/골 | 개인 평가 상태 | 추가 독립 검증 |
+| 선수 | 구단 | 2007-08 | 2008-09 | 2009-10 경기/선발/분/골 | 검증 상태 | 독립 확인 범위 |
 |---|---|---|---|---|---|---|
-| 한스외르크 부트 (GK) | FC Bayern München | 미확인 | 기존 DRAFT 8경기/0골 (미검증) | 31/31/2746/0 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 미하엘 렌징 (GK) | FC Bayern München | 기존 DRAFT 10경기/0골 (미검증) | 기존 DRAFT 26경기/0골 (미검증) | 4/3/314/0 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 다니엘 판 바위턴 (CB) | FC Bayern München | 기존 DRAFT 19경기/1골 (미검증) | 기존 DRAFT 18경기/3골 (미검증) | 31/31/2633/6 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 마르틴 데미첼리스 (CB) | FC Bayern München | 기존 DRAFT 28경기/1골 (미검증) | 기존 DRAFT 29경기/4골 (미검증) | 21/17/1574/1 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 홀거 바트슈투버 (LB) | FC Bayern München | 미확인 | 미확인 | 33/33/2926/1 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 디에고 콘텐토 (LB) | FC Bayern München | 미확인 | 미확인 | 9/8/747/0 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 필리프 람 (RB) | FC Bayern München | 기존 DRAFT 22경기/0골 (미검증) | 기존 DRAFT 28경기/3골 (미검증) | 34/34/3060/0 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 마르크 판 보멀 (DM) | FC Bayern München | 기존 DRAFT 27경기/2골 (미검증) | 기존 DRAFT 29경기/2골 (미검증) | 25/25/2169/1 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 아나톨리 티모슈크 (DM) | FC Bayern München | 미확인 | 미확인 | 21/11/1048/0 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 바스티안 슈바인슈타이거 (CM) | FC Bayern München | 기존 DRAFT 30경기/1골 (미검증) | 기존 DRAFT 31경기/5골 (미검증) | 33/33/2908/2 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 토마스 뮐러 (CAM) | FC Bayern München | 미확인 | 미확인 | 34/29/2642/13 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 프랑크 리베리 (LW) | FC Bayern München | 기존 DRAFT 28경기/11골 (미검증) | 기존 DRAFT 25경기/9골 (미검증) | 19/10/1085/4 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 다니엘 프라니치 (LW) | FC Bayern München | 미확인 | 미확인 | 20/14/1205/1 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 아르연 로번 (RW) | FC Bayern München | 미확인 | 미확인 | 24/18/1777/16 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 하미트 알튼토프 (RW) | FC Bayern München | 기존 DRAFT 23경기/3골 (미검증) | 미확인 | 15/7/537/0 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 이비차 올리치 (ST) | FC Bayern München | 기존 DRAFT 32경기/14골 (미검증) | 기존 DRAFT 31경기/10골 (미검증) | 29/23/1794/11 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 마리오 고메스 (ST) | FC Bayern München | 기존 DRAFT 25경기/19골 (미검증) | 기존 DRAFT 32경기/24골 (미검증) | 29/21/1935/10 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 미로슬라프 클로제 (ST) | FC Bayern München | 기존 DRAFT 27경기/10골 (미검증) | 기존 DRAFT 26경기/10골 (미검증) | 25/11/1071/3 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 마누엘 노이어 (GK) | FC Schalke 04 | 기존 DRAFT 34경기/0골 (미검증) | 미확인 | 34/34/3060/0 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 베네딕트 회베데스 (CB) | FC Schalke 04 | 기존 DRAFT 6경기/0골 (미검증) | 미확인 | 33/32/2831/3 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 마르셀루 보르동 (CB) | FC Schalke 04 | 기존 DRAFT 31경기/5골 (미검증) | 미확인 | 30/30/2700/0 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 하이코 베스터만 (CB) | FC Schalke 04 | 기존 DRAFT 32경기/4골 (미검증) | 미확인 | 27/27/2430/2 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 카를로스 삼브라노 (CB) | FC Schalke 04 | 미확인 | 미확인 | 16/14/1280/0 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 루카스 슈미츠 (LB) | FC Schalke 04 | 미확인 | 미확인 | 29/27/2322/2 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 하피냐 (RB) | FC Schalke 04 | 기존 DRAFT 32경기/2골 (미검증) | 미확인 | 31/30/2671/1 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 크리스토프 모리츠 (DM) | FC Schalke 04 | 미확인 | 미확인 | 28/18/1677/1 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 조엘 마티프 (DM) | FC Schalke 04 | 미확인 | 미확인 | 20/17/1392/3 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 페어 클루게 (DM) | FC Schalke 04 | 미확인 | 미확인 | 13/13/884/0 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 미네이루 (DM) | FC Schalke 04 | 기존 DRAFT 26경기/1골 (미검증) | 미확인 | 7/5/435/0 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 이반 라키티치 (CM) | FC Schalke 04 | 기존 DRAFT 29경기/3골 (미검증) | 미확인 | 29/25/2127/7 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 레반 케니아 (CAM) | FC Schalke 04 | 미확인 | 미확인 | 10/4/488/0 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 비센테 산체스 (LW) | FC Schalke 04 | 기존 DRAFT 14경기/1골 (미검증) | 미확인 | 14/7/582/2 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 제페르손 파르판 (RW) | FC Schalke 04 | 미확인 | 미확인 | 33/32/2833/8 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 하오쥔민 (RW) | FC Schalke 04 | 미확인 | 미확인 | 8/5/440/0 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 케빈 쿠라니 (ST) | FC Schalke 04 | 기존 DRAFT 32경기/15골 (미검증) | 미확인 | 33/31/2802/18 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 에두 (ST) | FC Schalke 04 | 미확인 | 미확인 | 13/7/714/2 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 게랄트 아사모아 (ST) | FC Schalke 04 | 기존 DRAFT 31경기/7골 (미검증) | 미확인 | 8/2/225/1 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 팀 비제 (GK) | SV Werder Bremen | 기존 DRAFT 31경기/0골 (미검증) | 기존 DRAFT 29경기/0골 (미검증) | 31/31/2761/0 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 제바스티안 밀리츠 (GK) | SV Werder Bremen | 미확인 | 미확인 | 2/2/180/0 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 페어 메르테자커 (CB) | SV Werder Bremen | 기존 DRAFT 32경기/1골 (미검증) | 기존 DRAFT 23경기/2골 (미검증) | 33/33/2970/5 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 나우두 (CB) | SV Werder Bremen | 기존 DRAFT 32경기/3골 (미검증) | 기존 DRAFT 28경기/3골 (미검증) | 31/31/2762/5 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 제바스티안 프뢰들 (CB) | SV Werder Bremen | 미확인 | 기존 DRAFT 22경기/0골 (미검증) | 9/5/488/1 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 페트리 파사넨 (LB) | SV Werder Bremen | 기존 DRAFT 28경기/2골 (미검증) | 기존 DRAFT 16경기/0골 (미검증) | 19/16/1499/0 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 제바스티안 뵈니슈 (LB) | SV Werder Bremen | 미확인 | 기존 DRAFT 24경기/0골 (미검증) | 17/16/1444/0 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 클레멘스 프리츠 (RB) | SV Werder Bremen | 기존 DRAFT 23경기/1골 (미검증) | 기존 DRAFT 24경기/0골 (미검증) | 30/30/2593/1 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 토르스텐 프링스 (DM) | SV Werder Bremen | 기존 DRAFT 11경기/1골 (미검증) | 기존 DRAFT 30경기/4골 (미검증) | 30/29/2531/6 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 필리프 바르크프레데 (DM) | SV Werder Bremen | 미확인 | 미확인 | 23/20/1665/0 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 페터 니마이어 (DM) | SV Werder Bremen | 미확인 | 기존 DRAFT 15경기/0골 (미검증) | 11/4/426/1 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 팀 보로프스키 (CM) | SV Werder Bremen | 기존 DRAFT 21경기/2골 (미검증) | 기존 DRAFT 26경기/5골 (미검증) | 28/20/1771/4 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 다니엘 옌센 (CM) | SV Werder Bremen | 기존 DRAFT 27경기/2골 (미검증) | 기존 DRAFT 11경기/0골 (미검증) | 13/5/519/0 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 메수트 외질 (CAM) | SV Werder Bremen | 미확인 | 기존 DRAFT 28경기/3골 (미검증) | 31/29/2601/9 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 마르코 마린 (LW) | SV Werder Bremen | 미확인 | 미확인 | 32/30/2419/4 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 아론 훈트 (RW) | SV Werder Bremen | 기존 DRAFT 14경기/1골 (미검증) | 기존 DRAFT 18경기/2골 (미검증) | 32/26/2313/9 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 클라우디오 피사로 (ST) | SV Werder Bremen | 미확인 | 기존 DRAFT 26경기/17골 (미검증) | 26/23/2130/16 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 우구 알메이다 (ST) | SV Werder Bremen | 기존 DRAFT 23경기/11골 (미검증) | 기존 DRAFT 27경기/9골 (미검증) | 26/13/1340/7 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 마르쿠스 로젠베리 (ST) | SV Werder Bremen | 기존 DRAFT 30경기/14골 (미검증) | 기존 DRAFT 29경기/7골 (미검증) | 17/3/435/1 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 레네 아들러 (GK) | Bayer 04 Leverkusen | 미확인 | 미확인 | 31/31/2790/0 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 파비안 기퍼 (GK) | Bayer 04 Leverkusen | 미확인 | 미확인 | 3/3/270/0 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 사미 휘피애 (CB) | Bayer 04 Leverkusen | 미확인 | 미확인 | 32/32/2864/2 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 마누엘 프리드리히 (CB) | Bayer 04 Leverkusen | 미확인 | 미확인 | 31/31/2776/3 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 미할 카들레츠 (LB) | Bayer 04 Leverkusen | 미확인 | 미확인 | 23/17/1701/1 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 곤살로 카스트로 (RB) | Bayer 04 Leverkusen | 미확인 | 미확인 | 29/27/2142/1 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 다니엘 슈바프 (RB) | Bayer 04 Leverkusen | 미확인 | 미확인 | 27/24/1985/0 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 슈테판 라이나르츠 (DM) | Bayer 04 Leverkusen | 미확인 | 미확인 | 27/23/2055/2 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 지몬 롤페스 (DM) | Bayer 04 Leverkusen | 미확인 | 미확인 | 11/8/772/4 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 아르투로 비달 (CM) | Bayer 04 Leverkusen | 미확인 | 미확인 | 31/31/2683/1 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 라르스 벤더 (CM) | Bayer 04 Leverkusen | 미확인 | 미확인 | 20/6/723/1 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 토니 크로스 (CAM) | Bayer 04 Leverkusen | 미확인 | 미확인 | 33/26/2357/9 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 트란퀼로 바르네타 (LW) | Bayer 04 Leverkusen | 미확인 | 미확인 | 32/31/2564/4 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 헤나투 아우구스투 (RW) | Bayer 04 Leverkusen | 미확인 | 미확인 | 17/11/948/0 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 슈테판 키슬링 (ST) | Bayer 04 Leverkusen | 미확인 | 미확인 | 33/33/2924/21 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 에렌 데르디요크 (ST) | Bayer 04 Leverkusen | 미확인 | 미확인 | 33/32/2618/12 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 파트리크 헬메스 (ST) | Bayer 04 Leverkusen | 미확인 | 미확인 | 12/2/318/2 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 로만 바이덴펠러 (GK) | BV 09 Borussia Dortmund | 기존 DRAFT 14경기/0골 (미검증) | 미확인 | 30/30/2631/0 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 마르크 치글러 (GK) | BV 09 Borussia Dortmund | 기존 DRAFT 15경기/0골 (미검증) | 미확인 | 5/4/429/0 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 마츠 훔멜스 (CB) | BV 09 Borussia Dortmund | 기존 DRAFT 13경기/0골 (미검증) | 미확인 | 30/27/2521/5 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 네벤 수보티치 (CB) | BV 09 Borussia Dortmund | 미확인 | 미확인 | 34/34/3060/3 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 펠리피 산타나 (CB) | BV 09 Borussia Dortmund | 미확인 | 미확인 | 25/13/1273/0 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 마르첼 슈멜처 (LB) | BV 09 Borussia Dortmund | 미확인 | 미확인 | 28/24/2300/0 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 데데 (LB) | BV 09 Borussia Dortmund | 기존 DRAFT 30경기/1골 (미검증) | 미확인 | 16/11/924/0 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 파트리크 오보모옐라 (RB) | BV 09 Borussia Dortmund | 미확인 | 미확인 | 33/33/2936/1 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 스벤 벤더 (DM) | BV 09 Borussia Dortmund | 미확인 | 미확인 | 19/17/1489/0 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 제바스티안 켈 (DM) | BV 09 Borussia Dortmund | 기존 DRAFT 14경기/3골 (미검증) | 미확인 | 6/5/381/1 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 누리 샤힌 (CM) | BV 09 Borussia Dortmund | 미확인 | 미확인 | 33/33/2902/4 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 팅가 (CM) | BV 09 Borussia Dortmund | 기존 DRAFT 33경기/4골 (미검증) | 미확인 | 7/7/544/0 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 모하메드 지단 (CAM) | BV 09 Borussia Dortmund | 기존 DRAFT 21경기/2골 (미검증) | 미확인 | 27/24/1777/6 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 터마시 허이널 (CAM) | BV 09 Borussia Dortmund | 미확인 | 미확인 | 21/10/1116/0 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 케빈 그로스크로이츠 (LW) | BV 09 Borussia Dortmund | 미확인 | 미확인 | 32/21/2024/5 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 야쿠프 브와슈치코프스키 (RW) | BV 09 Borussia Dortmund | 기존 DRAFT 24경기/1골 (미검증) | 미확인 | 32/30/2401/1 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 루카스 바리오스 (ST) | BV 09 Borussia Dortmund | 미확인 | 미확인 | 33/30/2623/19 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 넬손 발데스 (ST) | BV 09 Borussia Dortmund | 기존 DRAFT 27경기/3골 (미검증) | 미확인 | 28/18/1701/5 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 옌스 레만 (GK) | VfB Stuttgart | 미확인 | 기존 DRAFT 34경기/0골 (미검증) | 31/31/2788/0 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 스벤 울라이히 (GK) | VfB Stuttgart | 기존 DRAFT 11경기/0골 (미검증) | 미확인 | 4/3/271/0 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 마티외 델피에르 (CB) | VfB Stuttgart | 기존 DRAFT 22경기/0골 (미검증) | 기존 DRAFT 22경기/1골 (미검증) | 27/27/2430/0 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 세르다르 타스치 (CB) | VfB Stuttgart | 기존 DRAFT 21경기/1골 (미검증) | 기존 DRAFT 27경기/1골 (미검증) | 27/27/2430/2 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 게오르크 니더마이어 (CB) | VfB Stuttgart | 미확인 | 기존 DRAFT 5경기/0골 (미검증) | 12/12/1080/1 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 크리스티안 몰리나로 (LB) | VfB Stuttgart | 미확인 | 미확인 | 17/17/1530/0 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 아르튀르 보카 (LB) | VfB Stuttgart | 기존 DRAFT 17경기/0골 (미검증) | 기존 DRAFT 18경기/0골 (미검증) | 14/12/1100/0 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 뤼도비크 마냉 (LB) | VfB Stuttgart | 기존 DRAFT 27경기/0골 (미검증) | 기존 DRAFT 23경기/0골 (미검증) | 6/5/451/0 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 스테파노 첼로치 (RB) | VfB Stuttgart | 미확인 | 미확인 | 21/18/1527/0 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 리카르도 오소리오 (RB) | VfB Stuttgart | 기존 DRAFT 22경기/0골 (미검증) | 기존 DRAFT 17경기/0골 (미검증) | 7/6/397/0 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 크리스티안 트레슈 (DM) | VfB Stuttgart | 미확인 | 기존 DRAFT 19경기/1골 (미검증) | 29/28/2540/3 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 토마스 히츨슈페르거 (DM) | VfB Stuttgart | 기존 DRAFT 25경기/5골 (미검증) | 기존 DRAFT 32경기/5골 (미검증) | 12/11/904/1 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 사미 케디라 (CM) | VfB Stuttgart | 기존 DRAFT 24경기/1골 (미검증) | 기존 DRAFT 27경기/7골 (미검증) | 25/24/2103/2 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 즈드라브코 쿠즈마노비치 (CM) | VfB Stuttgart | 미확인 | 미확인 | 26/14/1460/3 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 알렉산드르 흘레프 (LW) | VfB Stuttgart | 미확인 | 미확인 | 27/24/1843/0 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 제바스티안 루디 (LW) | VfB Stuttgart | 미확인 | 미확인 | 13/5/587/0 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 티모 게브하르트 (RW) | VfB Stuttgart | 미확인 | 기존 DRAFT 11경기/0골 (미검증) | 28/23/1851/2 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 로베르토 힐베르트 (RW) | VfB Stuttgart | 기존 DRAFT 32경기/4골 (미검증) | 기존 DRAFT 31경기/3골 (미검증) | 23/12/1132/2 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 카카우 (ST) | VfB Stuttgart | 기존 DRAFT 27경기/9골 (미검증) | 기존 DRAFT 25경기/7골 (미검증) | 25/19/1741/13 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 치프리안 마리카 (ST) | VfB Stuttgart | 기존 DRAFT 28경기/2골 (미검증) | 기존 DRAFT 27경기/4골 (미검증) | 25/18/1519/10 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 파벨 포그레브냐크 (ST) | VfB Stuttgart | 미확인 | 미확인 | 28/22/2040/6 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
-| 율리안 시버 (ST) | VfB Stuttgart | 미확인 | 미확인 | 19/6/748/3 | partially_verified | 경기별 포지션·기량 비교·최근 3시즌 독립 확인 필요 |
+| 한스외르크 부트 (GK) | FC Bayern München | 미확인 | 기존 DRAFT 8경기/0골 (독립 미검증) | 31/31/2746/0 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 미하엘 렌징 (GK) | FC Bayern München | 기존 DRAFT 10경기/0골 (독립 미검증) | 기존 DRAFT 26경기/0골 (독립 미검증) | 4/3/314/0 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 다니엘 판 바위턴 (CB) | FC Bayern München | 기존 DRAFT 19경기/1골 (독립 미검증) | 기존 DRAFT 18경기/3골 (독립 미검증) | 31/31/2633/6 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 마르틴 데미첼리스 (CB) | FC Bayern München | 기존 DRAFT 28경기/1골 (독립 미검증) | 기존 DRAFT 29경기/4골 (독립 미검증) | 21/17/1574/1 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 홀거 바트슈투버 (LB) | FC Bayern München | 미확인 | 미확인 | 33/33/2926/1 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 디에고 콘텐토 (LB) | FC Bayern München | 미확인 | 미확인 | 9/8/747/0 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 필리프 람 (RB) | FC Bayern München | 기존 DRAFT 22경기/0골 (독립 미검증) | 기존 DRAFT 28경기/3골 (독립 미검증) | 34/34/3060/0 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 마르크 판 보멀 (DM) | FC Bayern München | 기존 DRAFT 27경기/2골 (독립 미검증) | 기존 DRAFT 29경기/2골 (독립 미검증) | 25/25/2169/1 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 아나톨리 티모슈크 (DM) | FC Bayern München | 미확인 | 미확인 | 21/11/1048/0 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 바스티안 슈바인슈타이거 (CM) | FC Bayern München | FC Bayern München 30경기/1골 (독립 통계 출처) | FC Bayern München 31경기/5골 (독립 통계 출처) | 33/33/2908/2 | partially_verified | 직전 두 시즌 출전·득점 직접 대조, 경기력 검증 미완료 |
+| 토마스 뮐러 (CAM) | FC Bayern München | 미확인 | 미확인 | 34/29/2642/13 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 프랑크 리베리 (LW) | FC Bayern München | FC Bayern München 28경기/11골 (독립 통계 출처) | FC Bayern München 25경기/9골 (독립 통계 출처) | 19/10/1085/4 | partially_verified | 직전 두 시즌 출전·득점 직접 대조, 경기력 검증 미완료 |
+| 다니엘 프라니치 (LW) | FC Bayern München | 미확인 | 미확인 | 20/14/1205/1 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 아르연 로번 (RW) | FC Bayern München | Real Madrid CF 21경기/4골 (독립 통계 출처) | Real Madrid CF 29경기/7골 (독립 통계 출처) | 24/18/1777/16 | partially_verified | 직전 두 시즌 출전·득점 직접 대조, 경기력 검증 미완료 |
+| 하미트 알튼토프 (RW) | FC Bayern München | 기존 DRAFT 23경기/3골 (독립 미검증) | 미확인 | 15/7/537/0 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 이비차 올리치 (ST) | FC Bayern München | 기존 DRAFT 32경기/14골 (독립 미검증) | 기존 DRAFT 31경기/10골 (독립 미검증) | 29/23/1794/11 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 마리오 고메스 (ST) | FC Bayern München | 기존 DRAFT 25경기/19골 (독립 미검증) | 기존 DRAFT 32경기/24골 (독립 미검증) | 29/21/1935/10 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 미로슬라프 클로제 (ST) | FC Bayern München | 기존 DRAFT 27경기/10골 (독립 미검증) | 기존 DRAFT 26경기/10골 (독립 미검증) | 25/11/1071/3 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 마누엘 노이어 (GK) | FC Schalke 04 | FC Schalke 04 34경기/0골 (독립 통계 출처) | FC Schalke 04 27경기/0골 (독립 통계 출처) | 34/34/3060/0 | partially_verified | 직전 두 시즌 출전·득점 직접 대조, 경기력 검증 미완료 |
+| 베네딕트 회베데스 (CB) | FC Schalke 04 | 기존 DRAFT 6경기/0골 (독립 미검증) | 미확인 | 33/32/2831/3 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 마르셀루 보르동 (CB) | FC Schalke 04 | 기존 DRAFT 31경기/5골 (독립 미검증) | 미확인 | 30/30/2700/0 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 하이코 베스터만 (CB) | FC Schalke 04 | 기존 DRAFT 32경기/4골 (독립 미검증) | 미확인 | 27/27/2430/2 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 카를로스 삼브라노 (CB) | FC Schalke 04 | 미확인 | 미확인 | 16/14/1280/0 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 루카스 슈미츠 (LB) | FC Schalke 04 | 미확인 | 미확인 | 29/27/2322/2 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 하피냐 (RB) | FC Schalke 04 | 기존 DRAFT 32경기/2골 (독립 미검증) | 미확인 | 31/30/2671/1 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 크리스토프 모리츠 (DM) | FC Schalke 04 | 미확인 | 미확인 | 28/18/1677/1 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 조엘 마티프 (DM) | FC Schalke 04 | 미확인 | 미확인 | 20/17/1392/3 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 페어 클루게 (DM) | FC Schalke 04 | 미확인 | 미확인 | 13/13/884/0 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 미네이루 (DM) | FC Schalke 04 | 기존 DRAFT 26경기/1골 (독립 미검증) | 미확인 | 7/5/435/0 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 이반 라키티치 (CM) | FC Schalke 04 | 기존 DRAFT 29경기/3골 (독립 미검증) | 미확인 | 29/25/2127/7 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 레반 케니아 (CAM) | FC Schalke 04 | 미확인 | 미확인 | 10/4/488/0 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 비센테 산체스 (LW) | FC Schalke 04 | 기존 DRAFT 14경기/1골 (독립 미검증) | 미확인 | 14/7/582/2 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 제페르손 파르판 (RW) | FC Schalke 04 | 미확인 | 미확인 | 33/32/2833/8 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 하오쥔민 (RW) | FC Schalke 04 | 미확인 | 미확인 | 8/5/440/0 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 케빈 쿠라니 (ST) | FC Schalke 04 | FC Schalke 04 32경기/15골 (독립 통계 출처) | FC Schalke 04 33경기/13골 (독립 통계 출처) | 33/31/2802/18 | partially_verified | 직전 두 시즌 출전·득점 직접 대조, 경기력 검증 미완료 |
+| 에두 (ST) | FC Schalke 04 | 미확인 | 미확인 | 13/7/714/2 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 게랄트 아사모아 (ST) | FC Schalke 04 | 기존 DRAFT 31경기/7골 (독립 미검증) | 미확인 | 8/2/225/1 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 팀 비제 (GK) | SV Werder Bremen | 기존 DRAFT 31경기/0골 (독립 미검증) | 기존 DRAFT 29경기/0골 (독립 미검증) | 31/31/2761/0 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 제바스티안 밀리츠 (GK) | SV Werder Bremen | 미확인 | 미확인 | 2/2/180/0 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 페어 메르테자커 (CB) | SV Werder Bremen | 기존 DRAFT 32경기/1골 (독립 미검증) | 기존 DRAFT 23경기/2골 (독립 미검증) | 33/33/2970/5 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 나우두 (CB) | SV Werder Bremen | 기존 DRAFT 32경기/3골 (독립 미검증) | 기존 DRAFT 28경기/3골 (독립 미검증) | 31/31/2762/5 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 제바스티안 프뢰들 (CB) | SV Werder Bremen | 미확인 | 기존 DRAFT 22경기/0골 (독립 미검증) | 9/5/488/1 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 페트리 파사넨 (LB) | SV Werder Bremen | 기존 DRAFT 28경기/2골 (독립 미검증) | 기존 DRAFT 16경기/0골 (독립 미검증) | 19/16/1499/0 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 제바스티안 뵈니슈 (LB) | SV Werder Bremen | 미확인 | 기존 DRAFT 24경기/0골 (독립 미검증) | 17/16/1444/0 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 클레멘스 프리츠 (RB) | SV Werder Bremen | 기존 DRAFT 23경기/1골 (독립 미검증) | 기존 DRAFT 24경기/0골 (독립 미검증) | 30/30/2593/1 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 토르스텐 프링스 (DM) | SV Werder Bremen | 기존 DRAFT 11경기/1골 (독립 미검증) | 기존 DRAFT 30경기/4골 (독립 미검증) | 30/29/2531/6 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 필리프 바르크프레데 (DM) | SV Werder Bremen | 미확인 | 미확인 | 23/20/1665/0 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 페터 니마이어 (DM) | SV Werder Bremen | 미확인 | 기존 DRAFT 15경기/0골 (독립 미검증) | 11/4/426/1 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 팀 보로프스키 (CM) | SV Werder Bremen | 기존 DRAFT 21경기/2골 (독립 미검증) | 기존 DRAFT 26경기/5골 (독립 미검증) | 28/20/1771/4 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 다니엘 옌센 (CM) | SV Werder Bremen | 기존 DRAFT 27경기/2골 (독립 미검증) | 기존 DRAFT 11경기/0골 (독립 미검증) | 13/5/519/0 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 메수트 외질 (CAM) | SV Werder Bremen | FC Schalke 04 → SV Werder Bremen 23경기/1골 (독립 통계 출처) | SV Werder Bremen 28경기/3골 (독립 통계 출처) | 31/29/2601/9 | partially_verified | 직전 두 시즌 출전·득점 직접 대조, 경기력 검증 미완료 |
+| 마르코 마린 (LW) | SV Werder Bremen | 미확인 | 미확인 | 32/30/2419/4 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 아론 훈트 (RW) | SV Werder Bremen | 기존 DRAFT 14경기/1골 (독립 미검증) | 기존 DRAFT 18경기/2골 (독립 미검증) | 32/26/2313/9 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 클라우디오 피사로 (ST) | SV Werder Bremen | Chelsea FC 21경기/2골 (독립 통계 출처) | SV Werder Bremen 26경기/17골 (독립 통계 출처) | 26/23/2130/16 | partially_verified | 직전 두 시즌 출전·득점 직접 대조, 경기력 검증 미완료 |
+| 우구 알메이다 (ST) | SV Werder Bremen | 기존 DRAFT 23경기/11골 (독립 미검증) | 기존 DRAFT 27경기/9골 (독립 미검증) | 26/13/1340/7 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 마르쿠스 로젠베리 (ST) | SV Werder Bremen | 기존 DRAFT 30경기/14골 (독립 미검증) | 기존 DRAFT 29경기/7골 (독립 미검증) | 17/3/435/1 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 레네 아들러 (GK) | Bayer 04 Leverkusen | 미확인 | 미확인 | 31/31/2790/0 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 파비안 기퍼 (GK) | Bayer 04 Leverkusen | 미확인 | 미확인 | 3/3/270/0 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 사미 휘피애 (CB) | Bayer 04 Leverkusen | 미확인 | 미확인 | 32/32/2864/2 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 마누엘 프리드리히 (CB) | Bayer 04 Leverkusen | 미확인 | 미확인 | 31/31/2776/3 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 미할 카들레츠 (LB) | Bayer 04 Leverkusen | 미확인 | 미확인 | 23/17/1701/1 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 곤살로 카스트로 (RB) | Bayer 04 Leverkusen | 미확인 | 미확인 | 29/27/2142/1 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 다니엘 슈바프 (RB) | Bayer 04 Leverkusen | 미확인 | 미확인 | 27/24/1985/0 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 슈테판 라이나르츠 (DM) | Bayer 04 Leverkusen | 미확인 | 미확인 | 27/23/2055/2 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 지몬 롤페스 (DM) | Bayer 04 Leverkusen | 미확인 | 미확인 | 11/8/772/4 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 아르투로 비달 (CM) | Bayer 04 Leverkusen | 미확인 | 미확인 | 31/31/2683/1 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 라르스 벤더 (CM) | Bayer 04 Leverkusen | 미확인 | 미확인 | 20/6/723/1 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 토니 크로스 (CAM) | Bayer 04 Leverkusen | 미확인 | 미확인 | 33/26/2357/9 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 트란퀼로 바르네타 (LW) | Bayer 04 Leverkusen | 미확인 | 미확인 | 32/31/2564/4 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 헤나투 아우구스투 (RW) | Bayer 04 Leverkusen | 미확인 | 미확인 | 17/11/948/0 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 슈테판 키슬링 (ST) | Bayer 04 Leverkusen | Bayer 04 Leverkusen 31경기/9골 (독립 통계 출처) | Bayer 04 Leverkusen 34경기/12골 (독립 통계 출처) | 33/33/2924/21 | partially_verified | 직전 두 시즌 출전·득점 직접 대조, 경기력 검증 미완료 |
+| 에렌 데르디요크 (ST) | Bayer 04 Leverkusen | 미확인 | 미확인 | 33/32/2618/12 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 파트리크 헬메스 (ST) | Bayer 04 Leverkusen | 미확인 | 미확인 | 12/2/318/2 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 로만 바이덴펠러 (GK) | BV 09 Borussia Dortmund | 기존 DRAFT 14경기/0골 (독립 미검증) | 미확인 | 30/30/2631/0 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 마르크 치글러 (GK) | BV 09 Borussia Dortmund | 기존 DRAFT 15경기/0골 (독립 미검증) | 미확인 | 5/4/429/0 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 마츠 훔멜스 (CB) | BV 09 Borussia Dortmund | 기존 DRAFT 13경기/0골 (독립 미검증) | 미확인 | 30/27/2521/5 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 네벤 수보티치 (CB) | BV 09 Borussia Dortmund | 미확인 | 미확인 | 34/34/3060/3 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 펠리피 산타나 (CB) | BV 09 Borussia Dortmund | 미확인 | 미확인 | 25/13/1273/0 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 마르첼 슈멜처 (LB) | BV 09 Borussia Dortmund | 미확인 | 미확인 | 28/24/2300/0 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 데데 (LB) | BV 09 Borussia Dortmund | 기존 DRAFT 30경기/1골 (독립 미검증) | 미확인 | 16/11/924/0 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 파트리크 오보모옐라 (RB) | BV 09 Borussia Dortmund | 미확인 | 미확인 | 33/33/2936/1 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 스벤 벤더 (DM) | BV 09 Borussia Dortmund | 미확인 | 미확인 | 19/17/1489/0 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 제바스티안 켈 (DM) | BV 09 Borussia Dortmund | 기존 DRAFT 14경기/3골 (독립 미검증) | 미확인 | 6/5/381/1 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 누리 샤힌 (CM) | BV 09 Borussia Dortmund | 미확인 | 미확인 | 33/33/2902/4 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 팅가 (CM) | BV 09 Borussia Dortmund | 기존 DRAFT 33경기/4골 (독립 미검증) | 미확인 | 7/7/544/0 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 모하메드 지단 (CAM) | BV 09 Borussia Dortmund | 기존 DRAFT 21경기/2골 (독립 미검증) | 미확인 | 27/24/1777/6 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 터마시 허이널 (CAM) | BV 09 Borussia Dortmund | 미확인 | 미확인 | 21/10/1116/0 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 케빈 그로스크로이츠 (LW) | BV 09 Borussia Dortmund | 미확인 | 미확인 | 32/21/2024/5 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 야쿠프 브와슈치코프스키 (RW) | BV 09 Borussia Dortmund | 기존 DRAFT 24경기/1골 (독립 미검증) | 미확인 | 32/30/2401/1 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 루카스 바리오스 (ST) | BV 09 Borussia Dortmund | 미확인 | 미확인 | 33/30/2623/19 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 넬손 발데스 (ST) | BV 09 Borussia Dortmund | 기존 DRAFT 27경기/3골 (독립 미검증) | 미확인 | 28/18/1701/5 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 옌스 레만 (GK) | VfB Stuttgart | 미확인 | 기존 DRAFT 34경기/0골 (독립 미검증) | 31/31/2788/0 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 스벤 울라이히 (GK) | VfB Stuttgart | 기존 DRAFT 11경기/0골 (독립 미검증) | 미확인 | 4/3/271/0 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 마티외 델피에르 (CB) | VfB Stuttgart | 기존 DRAFT 22경기/0골 (독립 미검증) | 기존 DRAFT 22경기/1골 (독립 미검증) | 27/27/2430/0 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 세르다르 타스치 (CB) | VfB Stuttgart | 기존 DRAFT 21경기/1골 (독립 미검증) | 기존 DRAFT 27경기/1골 (독립 미검증) | 27/27/2430/2 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 게오르크 니더마이어 (CB) | VfB Stuttgart | 미확인 | 기존 DRAFT 5경기/0골 (독립 미검증) | 12/12/1080/1 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 크리스티안 몰리나로 (LB) | VfB Stuttgart | 미확인 | 미확인 | 17/17/1530/0 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 아르튀르 보카 (LB) | VfB Stuttgart | 기존 DRAFT 17경기/0골 (독립 미검증) | 기존 DRAFT 18경기/0골 (독립 미검증) | 14/12/1100/0 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 뤼도비크 마냉 (LB) | VfB Stuttgart | 기존 DRAFT 27경기/0골 (독립 미검증) | 기존 DRAFT 23경기/0골 (독립 미검증) | 6/5/451/0 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 스테파노 첼로치 (RB) | VfB Stuttgart | 미확인 | 미확인 | 21/18/1527/0 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 리카르도 오소리오 (RB) | VfB Stuttgart | 기존 DRAFT 22경기/0골 (독립 미검증) | 기존 DRAFT 17경기/0골 (독립 미검증) | 7/6/397/0 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 크리스티안 트레슈 (DM) | VfB Stuttgart | 미확인 | 기존 DRAFT 19경기/1골 (독립 미검증) | 29/28/2540/3 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 토마스 히츨슈페르거 (DM) | VfB Stuttgart | 기존 DRAFT 25경기/5골 (독립 미검증) | 기존 DRAFT 32경기/5골 (독립 미검증) | 12/11/904/1 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 사미 케디라 (CM) | VfB Stuttgart | 기존 DRAFT 24경기/1골 (독립 미검증) | 기존 DRAFT 27경기/7골 (독립 미검증) | 25/24/2103/2 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 즈드라브코 쿠즈마노비치 (CM) | VfB Stuttgart | 미확인 | 미확인 | 26/14/1460/3 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 알렉산드르 흘레프 (LW) | VfB Stuttgart | 미확인 | 미확인 | 27/24/1843/0 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 제바스티안 루디 (LW) | VfB Stuttgart | 미확인 | 미확인 | 13/5/587/0 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 티모 게브하르트 (RW) | VfB Stuttgart | 미확인 | 기존 DRAFT 11경기/0골 (독립 미검증) | 28/23/1851/2 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 로베르토 힐베르트 (RW) | VfB Stuttgart | 기존 DRAFT 32경기/4골 (독립 미검증) | 기존 DRAFT 31경기/3골 (독립 미검증) | 23/12/1132/2 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 카카우 (ST) | VfB Stuttgart | 기존 DRAFT 27경기/9골 (독립 미검증) | 기존 DRAFT 25경기/7골 (독립 미검증) | 25/19/1741/13 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 치프리안 마리카 (ST) | VfB Stuttgart | 기존 DRAFT 28경기/2골 (독립 미검증) | 기존 DRAFT 27경기/4골 (독립 미검증) | 25/18/1519/10 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 파벨 포그레브냐크 (ST) | VfB Stuttgart | 미확인 | 미확인 | 28/22/2040/6 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
+| 율리안 시버 (ST) | VfB Stuttgart | 미확인 | 미확인 | 19/6/748/3 | partially_verified | 이전 시즌 일부/전체 독립 미검증 |
 
-당해 시즌 숫자와 링크만 연결되었다는 사실은 개인 활약 수준을 전면 검증했다는 뜻이 아니다. 해당 선수의 2007-08 / 2008-09 데이터가 없을 때는 **0경기**로 기재하지 않고 **미확인/null**로 보존했다. 두 직전 시즌의 DRAFT 기록은 `archived_Football_Archive_DRAFT_not_independently_validated`로 저장했다.
+기존 DRAFT를 원출처 독립 검증으로 취급하지 않으며 미확인 숫자를 0으로 채우지 않는다.
 
 ### 검증 상태 집계
 
 | 항목 | 인원/현황 |
 |---|---:|
-| 현재 시즌 리그 통계 연결 | 113 |
-| 2007-08 과거 DRAFT 기록 연결 (독립 검증 아님) | 52 |
-| 2008-09 과거 DRAFT 기록 연결 (독립 검증 아님) | 41 |
-| 2007-08 근거 없음 | 61 |
-| 2008-09 근거 없음 | 72 |
-| 3시즌 전체 독립 검증 완료 | **0** |
-| 선수별 경기 단위 포지션 검증 완료 | **0** |
-| 잠정 티어 입력 | **113** |
-| 사용자 최종 승인 | **아니오** |
+| 2009-10 시즌 통계 연결 | 113명 |
+| 2007-08 과거 DRAFT 후보 연결 | 52명 |
+| 2008-09 과거 DRAFT 후보 연결 | 41명 |
+| 2007-08·2008-09 출전·득점 외부 출처 독립 대조 | **8명** |
+| 2007-08 미확인 | 57명 |
+| 2008-09 미확인 | 68명 |
+| 개인 기량·경기별 포지션 3시즌 독립 검증 완료 | **0명** |
+| 잠정 티어 등록 | 113명 |
+| 최종 승인 | 아니오 |
 
 ## 9. 출처 차이와 보류 사항
 
@@ -597,7 +597,7 @@
 - **생년월일:** DFB 구단 명단 참고값을 연결했고 2007-08/2008-09 아카이브와 이름·생년월일 일치 여부를 기계적으로 점검했다(매칭된 기록 52/41명에서 불일치 0건). 그러나 113명 전체의 공식 **개별 선수 프로필 재확인**을 마쳤다는 뜻은 아니다.
 - **포지션:** GK, CB, LB, RB, DM, CM, CAM, LW, RW, ST에 시즌 대표 역할로 1회만 등록했다. 경기 단위 주 포지션 빈도 독립 전수 검증과 LM/RM·세컨드 스트라이커 세부 분류는 추가 필요.
 - **티어:** A0/B0/C0 표시와 A/B/C 저장 대응. 주전 인원 제한 없음. S~D 분포 강제 없음. 과거 두 시즌의 실제 기량을 조사하지 못한 경우 현재 시즌 중심 **잠정 평가**이며 완성된 3시즌 가중 평가가 아니다.
-- **역사적 오류를 발견해 수정한 선수 기록:** 이번 확인 범위에서 외부 원출처와 직접 대조하여 확정적으로 수정한 선수 개인 사실 오류는 **없음**. 기존 자료를 최신 결과로 간주하거나 근거 없는 수정을 하지 않았다.
+- **역사적 경력 누락 보완·JSON 수정:** Mesut Özil의 2007-08 Schalke 04(11경기 0골) → Werder Bremen(12경기 1골, 2008-01-31 이적)을 DFB로 직접 확인해 누락된 두 구단 기록을 보완. Arjen Robben의 Real Madrid 2007-08(21경기 4골), 2008-09(29경기 7골)를 FBref로 추가. Claudio Pizarro의 Chelsea 2007-08(21경기 2골), Werder Bremen 2008-09(26경기 17골)를 RSSSF/DFB로 보완. Manuel Neuer, Bastian Schweinsteiger, Stefan Kießling, Kevin Kurányi, Franck Ribéry의 직전 2시즌 출전·득점은 DFB 공식 선수 페이지로 확인. 이 8명은 출전·득점 대조일 뿐 전체 역사적 개인 기량 검증 완료가 아니다.
 - **실제 발견해 수정한 홈페이지 코드 오류:** All Tiers 2008-09까지만 노출되는 조건을 2009-10으로 확대. 선수 상세에 2004-05/2005-06/2006-07 기간과 '2006-07 출처' 문구가 하드코딩되었던 오류를 현재 선택 시즌의 평가기간을 사용하도록 수정. 베스트 11명 개별 선정 근거 표가 2005-06까지만 표시되던 조건을 모든 Bundesliga 유효 Best XI로 확대.
 
 ## 10. GitHub 반영·구조·실배포 검증 기록
@@ -605,7 +605,8 @@
 | 구분 | 상태 | 구체 사항 |
 |---|---|---|
 | 실데이터 저장 | **완료** | [`data/bundesliga-2009-10.json`](../data/bundesliga-2009-10.json), 113명 / 6팀 / 11명 Best XI / 10개 포지션 |
-| 이전 시즌 보조 기록 추가 | **완료** | 2007-08 52명, 2008-09 41명 DRAFT 연결만 수행 |
+| 이전 시즌 보조 기록 추가 | **완료** | 2007-08 52명, 2008-09 41명 DRAFT 연결 및 이 가운데/이외 8명 독립 통계 대조 |
+| 8명 직전 2시즌 출전·득점 직접 대조 | **완료 (한정 범위)** | DFB/RSSSF/FBref; 전수 개인 기량 검증은 미완료 |
 | 프런트엔드 갱신 | **완료** | [`assets/app.js`](../assets/app.js), 티어 탭·동적 시즌 증거·Best XI 선정 근거 |
 | 구조 JS 확인 | **통과 (경량 검사)** | ID 중복 0, 10개 포지션 순위 연속, 6팀, 백업 1명 제한 위반 0, Best XI 포지션 충돌 0, 본문 합계 113 |
 | 정식 구조 Python 검사 | **스크립트 저장, Actions 실행 결과 별도 확인 필요** | [`scripts/validate_bundesliga_2009_10.py`](../scripts/validate_bundesliga_2009_10.py) |
@@ -626,6 +627,8 @@
 - [`8abfa22eae`](https://github.com/wjdduddlf112/footballarch/commit/8abfa22eae960e41342c875c1ffc5aa2fb035967) — GitHub Actions 워크플로
 - [`9f2d8124ea`](https://github.com/wjdduddlf112/footballarch/commit/9f2d8124eac15dbedd247679d358d33ec1400d84) — 이전 시즌 DRAFT 연결
 
+- [`db10f9f101`](https://github.com/wjdduddlf112/footballarch/commit/db10f9f101f3fccebee49977c4b01d8934aed7fe) — 8명 직전 두 시즌 독립 출전/득점 대조 및 외질·로번·피사로 경력 누락 보완
+
 ## 11. 최종 완료 판정 및 다음 작업
 
 | 판정 요소 | 결과 |
@@ -644,6 +647,19 @@
 | 사용자 최종 승인 | 미승인 |
 
 **중단 위치:** Bundesliga 2009-10 시즌. 이 보고서가 작성되었다고 Bundesliga 2010-11 평가를 시작하지 않는다. 다음 시즌 진행은 사용자의 별도 명시적 지시를 받아야 한다.
+
+### 직전 2시즌 직접 대조한 선수별 원출처 (8명)
+
+- **Arjen Robben:** https://fbref.com/en/players/09586899/Arjen-Robben
+- **Manuel Neuer:** https://datencenter.dfb.de/en/people/manuel-neuer/player
+- **Bastian Schweinsteiger:** https://datencenter.dfb.de/personen/bastian-schweinsteiger/spieler
+- **Stefan Kießling:** https://datencenter.dfb.de/en/people/stefan-kiessling/player
+- **Kevin Kurányi:** https://datencenter.dfb.de/en/people/kevin-kuranyi/player
+- **Mesut Özil:** https://datencenter.dfb.de/personen/10451/spieler
+- **Franck Ribéry:** https://datencenter.dfb.de/en/people/franck-ribery/player
+- **Claudio Pizarro:** https://www.rsssf.org/players/cpizarrodata.html / https://datencenter.dfb.de/datencenter/personen/claudio-pizarro/spieler
+
+**추가 확인된 출처 불일치:** Robben 2009-10 출전 시간 BDFutbol 1777분 / FBref 1778분. 2009-10 JSON은 BDFutbol 숫자를 유지하고 불일치를 별도로 기록했다.
 
 ## 주요 1차/통계 원출처
 
