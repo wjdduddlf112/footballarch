@@ -717,3 +717,13 @@ Verification: 6 UEFA participants sourced, 117 current-year stats linked, 117 pr
 - **Marko Babić DOB unresolved**: DFB season club listing 21 January 1981; Sky Sports 28 January 1981. Current display retains DFB 1981-01-21 while JSON explicitly marks conflicting birth sources. https://datencenter.dfb.de/bundesliga/2008-2009/mannschaft/hertha-bsc ; https://www.skysports.com/football/player/9711/marko-babic
 
 No tier, rank or Best XI has been changed by this specific factual correction. Individual holistic three-season quality audits still **0/117 independently fully verified**, formation remains proposed, no final approval.
+
+## 14. Latest corrected-commit production revalidation (supersedes earlier validation run)
+
+- Corrected player-data commit: `36efa2815e1a582fb078d03d65a73a497908ded8`.
+- 2008-09 structural validation **PASS**, real Playwright Chromium browser **PASS_CORE_UI**, zero warnings, full 117 player deployed page, all tabs and filtering: https://github.com/wjdduddlf112/footballarch/actions/runs/41975621831
+- 2008-09 screenshots / machine results: https://github.com/wjdduddlf112/footballarch/actions/runs/41975621831/artifacts/13391322107
+- 2007-08 modified DOB historical regression structural **PASS** and live Chromium **PASS_CORE_UI** with zero warnings: https://github.com/wjdduddlf112/footballarch/actions/runs/41975621871
+- 2007-08 screenshots artifact: https://github.com/wjdduddlf112/footballarch/actions/runs/41975621871/artifacts/13391198338
+- Latest corrected-commit GitHub Pages deploy **SUCCESS**: https://github.com/wjdduddlf112/footballarch/actions/runs/41975621566
+- These are production/browser/structural checks, NOT approval or full independent personal qualitative three-year review. Source conflicts remain documented and explicitly unapproved.

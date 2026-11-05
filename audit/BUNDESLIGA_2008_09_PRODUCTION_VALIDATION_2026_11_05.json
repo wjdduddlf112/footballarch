@@ -39,15 +39,15 @@
   ],
   "structuralCheck": {
     "status": "PASS",
-    "runId": 41974783437,
+    "runId": 41975621831,
     "errors": [],
     "scope": "club/position selection; 117 player IDs and roles; backup cap; tier order; 11 XI; no quality independent certification"
   },
   "browserCheck": {
     "status": "PASS_CORE_UI",
     "engine": "Chromium with Playwright",
-    "runId": 41974783437,
-    "time": "2026-11-05T05:34:09.082Z",
+    "runId": 41975621831,
+    "time": "2026-11-05T05:42:17Z",
     "checks": [
       "real deployed JSON 117 players/6 clubs/11 XI",
       "overview",
@@ -62,16 +62,59 @@
       "Bundesliga 2007-08 regression 149"
     ],
     "warnings": [],
-    "runUrl": "https://github.com/wjdduddlf112/footballarch/actions/runs/41974783437",
-    "artifactId": 13390953871,
-    "artifactUrl": "https://github.com/wjdduddlf112/footballarch/actions/runs/41974783437/artifacts/13390953871"
+    "runUrl": "https://github.com/wjdduddlf112/footballarch/actions/runs/41975621831",
+    "artifactId": 13391322107,
+    "artifactUrl": "https://github.com/wjdduddlf112/footballarch/actions/runs/41975621831/artifacts/13391322107"
   },
   "pages": {
     "status": "SUCCESS",
-    "runId": 41974782781,
-    "runUrl": "https://github.com/wjdduddlf112/footballarch/actions/runs/41974782781",
+    "runId": 41975621566,
+    "runUrl": "https://github.com/wjdduddlf112/footballarch/actions/runs/41975621566",
     "site": "https://wjdduddlf112.github.io/footballarch/?league=bundesliga&season=2008-09"
   },
   "nextSeason": "NOT_STARTED",
-  "approved": false
+  "approved": false,
+  "lastDataCorrectionCommit": "36efa2815e1a582fb078d03d65a73a497908ded8",
+  "lastValidatedCommit": "36efa2815e1a582fb078d03d65a73a497908ded8",
+  "prevSeasonRegression": {
+    "season": "2007-08",
+    "runId": 41975621871,
+    "status": "PASS_CORE_UI",
+    "warnings": [],
+    "url": "https://github.com/wjdduddlf112/footballarch/actions/runs/41975621871",
+    "artifactId": 13391198338
+  },
+  "historicalCorrections": [
+    {
+      "player": "Sascha Riether",
+      "field": "birthDate",
+      "previous": "1983-03-28",
+      "corrected": "1983-03-23",
+      "officialSources": [
+        "https://datencenter.dfb.de/en/data-center/people/sascha-riether/player",
+        "https://www.bundesliga.com/en/player/sascha-riether"
+      ],
+      "affectedSeasons": [
+        "2007-08",
+        "2008-09"
+      ]
+    },
+    {
+      "player": "Zvjezdan Misimović",
+      "field": "2006-07/2007-08 club league quantified records",
+      "source": "https://fbref.com/en/players/0b51984b/Zvjezdan-Misimovic",
+      "correctedRecords": "2006-07 Bochum 30/30/2598/7/11, 2007-08 Nürnberg 28/23/2068/10/4"
+    },
+    {
+      "player": "Zvjezdan Misimović",
+      "field": "2008-09 goals/minutes",
+      "crossSourceDispute": "BDF+DFB 6 goals, BDF 2733 minutes vs FBref 7 goals, 2721 minutes; both preserved"
+    },
+    {
+      "player": "Marko Babić",
+      "field": "birthDate",
+      "crossSourceDispute": "DFB 1981-01-21 vs Sky Sports 1981-01-28; DFB retained, flagged conflict"
+    }
+  ],
+  "productionEvidenceStatus": "PASS_latest_corrected_commit_actual_Pages_and_two_real_Chromium_regressions"
 }
