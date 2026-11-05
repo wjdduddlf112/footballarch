@@ -16,7 +16,7 @@ try{
  await page.goto(url,{waitUntil:"domcontentloaded",timeout:40000});
  await page.waitForFunction(()=>document.querySelector("#content")?.textContent?.includes("European Qualification"),{timeout:30000});
  const json=await page.evaluate(async()=>{let r=await fetch("./data/bundesliga-2006-07.json",{cache:"no-store"});if(!r.ok)throw Error("live JSON HTTP "+r.status);let j=await r.json();return {season:j.meta.season,status:j.meta.status,players:j.players.length,tiers:j.players.filter(p=>p.tier).length,unrated:j.players.filter(p=>p.tier===null).length,xi:j.bestXi.length,formation:j.meta.formation}});
- assert(json.players===128&&json.tiers===128&&json.unrated===0&&json.xi===11&&json.status==="draft"&&json.formation==="4-4-2","Live JSON does not match deployed draft: "+JSON.stringify(json));
+ assert(json.players===127&&json.tiers===127&&json.unrated===0&&json.xi===11&&json.status==="draft"&&json.formation==="4-4-2","Live JSON does not match deployed draft: "+JSON.stringify(json));
  report.liveJson=json;
  assert((await page.locator("#stateTag").textContent())?.includes("DRAFT"),"Overview lacks visible DRAFT status");
  assert((await page.locator("#content").textContent()).includes("Players"),"Overview lacks player count");
@@ -24,9 +24,9 @@ try{
  assert((await page.locator(".qual-item").count())===7,"Expected 7 actual European entrants");
  await page.locator('[data-action="candidates"]').first().click();
  await page.waitForSelector('tr[data-player]');
- assert((await page.locator('tr[data-player]').count())===128,"Overview candidate grid does not render all 128 players");
+ assert((await page.locator('tr[data-player]').count())===127,"Overview candidate grid does not render all 127 players");
  await page.locator('select[data-filter="position"]').selectOption("GK");
- assert((await page.locator("tr[data-player]").count())>0&&(await page.locator("tr[data-player]").count())<128,"GK filter broken");
+ assert((await page.locator("tr[data-player]").count())>0&&(await page.locator("tr[data-player]").count())<127,"GK filter broken");
  await page.locator('select[data-filter="position"]').selectOption("all");
  await page.locator('select[data-filter="club"]').selectOption("bayern");
  assert((await page.locator("tr[data-player]").count())===18,"Bayern filter count mismatch");
@@ -51,12 +51,12 @@ try{
   }
   if(tab==="top"){assert(text.includes("World Class")&&text.includes("League Top Class"),"World Class/Top Class missing");assert((await page.locator("tr[data-player]").count())===51,"Expected 51 league-top players");}
   if(tab==="tiers"){
-   assert(text.includes("전체 선수 티어")&&text.includes("128명"),"All Tiers clubwise missing");
-   assert((await page.locator("tr[data-player]").count())===128,"All Tiers clubwise count mismatch");
+   assert(text.includes("전체 선수 티어")&&text.includes("127명"),"All Tiers clubwise missing");
+   assert((await page.locator("tr[data-player]").count())===127,"All Tiers clubwise count mismatch");
    await page.locator('[data-tier-view="positions"]').click();
-   assert((await page.locator("tr[data-player]").count())===128,"All Tiers positional rankings mismatch");
+   assert((await page.locator("tr[data-player]").count())===127,"All Tiers positional rankings mismatch");
    await page.locator('[data-tier-view="tiers"]').click();
-   assert((await page.locator("tr[data-player]").count())===128,"All Tiers tierwise count mismatch");
+   assert((await page.locator("tr[data-player]").count())===127,"All Tiers tierwise count mismatch");
    await page.locator('[data-tier-view="clubs"]').click();
   }
   if(tab==="table")assert(text.includes("FC Bayern München")&&text.includes("Werder Bremen"),"League table missing historical clubs");
@@ -71,7 +71,7 @@ try{
  if(report.totalCrests>report.loadedCrests)report.warning.push("Some crest images did not load; separate visual review required.");
  if(errors.length)report.warning.push("Page JS console exceptions: "+errors.join(" | ").slice(0,800));
 
- for(const [league,season,expected] of [["premierleague","1999-00",128],["laliga","1999-00",167],["bundesliga","1999-00",126],["bundesliga","2000-01",136],["bundesliga","2001-02",139],["bundesliga","2002-03",163],["bundesliga","2004-05",209],["bundesliga","2005-06",136]]){
+ for(const [league,season,expected] of [["premierleague","1999-00",127],["laliga","1999-00",167],["bundesliga","1999-00",126],["bundesliga","2000-01",136],["bundesliga","2001-02",139],["bundesliga","2002-03",163],["bundesliga","2004-05",209],["bundesliga","2005-06",136]]){
   await page.goto(root+"?league="+league+"&season="+season,{waitUntil:"domcontentloaded",timeout:40000});
   await page.waitForFunction(()=>document.querySelector("#content")?.textContent?.includes("European Qualification"),{timeout:30000});
   assert((await page.locator("#content").textContent()).includes("Players"),"Regression overview no player panel "+league);

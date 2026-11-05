@@ -39,7 +39,7 @@ jobs:
         run: |
           for attempt in $(seq 1 12); do
             curl -fsSL --max-time 20 "https://wjdduddlf112.github.io/footballarch/data/bundesliga-2006-07.json?sha=${{ github.sha }}" -o /tmp/bundesliga02-live.json || true
-            if node -e "const fs=require('node:fs');const d=JSON.parse(fs.readFileSync('/tmp/bundesliga02-live.json','utf8'));if(d.meta.status!=='draft'||d.players.length!==128||d.players.filter(p=>p.tier).length!==128||d.bestXi.length!==11||d.meta.formation!=='4-4-2')process.exit(1)" 2>/dev/null; then
+            if node -e "const fs=require('node:fs');const d=JSON.parse(fs.readFileSync('/tmp/bundesliga02-live.json','utf8'));if(d.meta.status!=='draft'||d.players.length!==127||d.players.filter(p=>p.tier).length!==127||d.bestXi.length!==11||d.meta.formation!=='4-4-2')process.exit(1)" 2>/dev/null; then
               echo "Actual GitHub Pages Bundesliga 2006-07 JSON is updated."
               break
             fi

@@ -25,11 +25,14 @@ for(const q of d.qualifiers){
  assert(Array.isArray(q.sources)&&q.sources.length>0,"source missing for qualifying club "+q.club);
 }
 assert(d.players.length===d.meta.candidateCount,"candidate count mismatch");
-const ids=new Set(),identities=new Set(),roles=new Map(),byPos=new Map(),counts={};
+assert(d.players.filter(p=>p.nameOriginal==="Markus Rosenberg"&&p.club==="bremen"&&p.role==="backup").length===1,"Rosenberg historical backup correction missing");
+assert(!d.players.some(p=>p.nameOriginal==="Ivan Klasnić"&&p.club==="bremen"),"Klasnic must be documented as excluded when Rosenberg occupies the only Bremen ST backup spot");
+assert(d.candidateAudit?.excludedAfterVerification?.some(x=>x.nameOriginal==="Ivan Klasnić"),"Klasnic removal must have source-linked audit trail");
+const ids=new Set(),identities=new Set(),physicalPeople=new Set(),roles=new Map(),byPos=new Map(),counts={};
 for(const p of d.players){
  assert(p.id&&!ids.has(p.id),"duplicate or empty ID "+p.id);ids.add(p.id);
  const identity=p.club+"|"+p.born+"|"+p.nameOriginal;
- assert(!identities.has(identity),"duplicate current team player "+identity);identities.add(identity);
+ assert(!identities.has(identity),"duplicate current team player "+identity);identities.add(identity);physicalPeople.add(p.nameOriginal+"|"+p.born);
  assert(qualified.has(p.club),"invalid club "+p.id);
  assert(p.season==="2006-07","wrong season "+p.id);
  assert(p.clubNameOriginal&&p.nameKo&&p.nameOriginal,"missing player names "+p.id);
@@ -57,6 +60,10 @@ for(const p of d.players){
  (byPos.get(p.position)||byPos.set(p.position,[]).get(p.position)).push(p);
  counts[p.tier??"미평가"]=(counts[p.tier??"미평가"]||0)+1;
 }
+assert(physicalPeople.size===d.meta.uniquePhysicalPlayersCount,"unique physical player count mismatch");
+const ross=d.players.filter(p=>p.nameOriginal==="Frank Rost");
+assert(ross.length===2&&ross.every(p=>p.position==="GK")&&ross.some(p=>p.club==="hsv")&&ross.some(p=>p.club==="schalke"),"Frank Rost documented transfer-club segments missing");
+assert(d.candidateAudit?.documentedMidseasonTransfers?.some(x=>x.playerName==="Frank Rost"&&x.combinedApps===24),"Frank Rost transfer needs documented aggregate");
 for(const [pos,arr] of byPos){
  const ranked=arr.filter(x=>x.tier!==null).sort((a,b)=>a.rank-b.rank);
  const seen=new Set();
@@ -81,6 +88,6 @@ for(const p of d.bestXi){
  assert(p.status==="proposed_unapproved","XI user approval must be pending "+p.playerId);
 }
 for(const pos of positions)assert((shapeUsed[pos]||0)===shape[pos],"wrong XI slot "+pos);
-const report={status:errors.length?"FAIL":"PASS",errors,pendingCount:pending.length,players:d.players.length,clubs:qualified.size,starters:d.players.filter(p=>p.role==="starter").length,backups:d.players.filter(p=>p.role==="backup").length,worldClass:wc,leagueTop:top,bestXi:d.bestXi.length,threeSeasonDirectDFBPlayers:d.candidateAudit?.threeSeasonDirectDFBPlayerNames||[],fullHistoricallyVerified:d.players.filter(p=>p.verificationStatus==="verified").length,notes:"PASS means JSON structural consistency; it is NOT full 3-season historical verification and NOT browser verification."};
+const report={status:errors.length?"FAIL":"PASS",errors,pendingCount:pending.length,players:d.players.length,uniquePhysicalPlayers:physicalPeople.size,clubs:qualified.size,starters:d.players.filter(p=>p.role==="starter").length,backups:d.players.filter(p=>p.role==="backup").length,worldClass:wc,leagueTop:top,bestXi:d.bestXi.length,threeSeasonDirectDFBPlayers:d.candidateAudit?.threeSeasonDirectDFBPlayerNames||[],fullHistoricallyVerified:d.players.filter(p=>p.verificationStatus==="verified").length,notes:"PASS means JSON structural consistency; it is NOT full 3-season historical verification and NOT browser verification."};
 console.log(JSON.stringify(report,null,2));
 if(errors.length)process.exitCode=1;
