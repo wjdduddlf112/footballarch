@@ -34,10 +34,12 @@ try{
  await page.locator('tr[data-player]').first().click();
  assert(await page.locator(".overlay .dialog").isVisible(),"Player details modal missing");
  assert((await page.locator(".overlay .dialog").textContent()).includes("원어명"),"Original player name not visible in details");
+ assert((await page.locator(".overlay .dialog").textContent()).includes("실제 역사 검증"),"History verification status not visible");
+ assert((await page.locator(".overlay .dialog").textContent()).includes("2004-05 개인기록"),"Three-season history missing from details");
  await page.locator(".overlay [data-action=close]").click();
  await page.screenshot({path:outfile+"/overview.png",fullPage:true});
  report.tabs.push("overview");
- for(const tab of ["formation","top","table","stats"]){
+ for(const tab of ["formation","top","tiers","table","stats"]){
   await page.locator('[data-tab="'+tab+'"]').click();
   await page.waitForTimeout(300);
   const text=await page.locator("#content").textContent();
@@ -48,6 +50,15 @@ try{
    assert(text.includes("DRAFT"),"Best XI is not flagged DRAFT");
   }
   if(tab==="top"){assert(text.includes("World Class")&&text.includes("League Top Class"),"World Class/Top Class missing");assert((await page.locator("tr[data-player]").count())===51,"Expected 51 league-top players");}
+  if(tab==="tiers"){
+   assert(text.includes("전체 선수 티어")&&text.includes("128명"),"All Tiers clubwise missing");
+   assert((await page.locator("tr[data-player]").count())===128,"All Tiers clubwise count mismatch");
+   await page.locator('[data-tier-view="positions"]').click();
+   assert((await page.locator("tr[data-player]").count())===128,"All Tiers positional rankings mismatch");
+   await page.locator('[data-tier-view="tiers"]').click();
+   assert((await page.locator("tr[data-player]").count())===128,"All Tiers tierwise count mismatch");
+   await page.locator('[data-tier-view="clubs"]').click();
+  }
   if(tab==="table")assert(text.includes("FC Bayern München")&&text.includes("Werder Bremen"),"League table missing historical clubs");
   if(tab==="stats")assert(text.includes("Tier Distribution"),"Statistics page missing");
   await page.screenshot({path:outfile+"/"+tab+".png",fullPage:true});
