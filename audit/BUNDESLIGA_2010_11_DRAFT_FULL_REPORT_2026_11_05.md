@@ -482,122 +482,141 @@ World Class **12명**, League Top Class **28명**.
 
 ## H. 선수별 3시즌 근거 및 미검증 전수 목록
 
-이 표의 '이전 DRAFT'는 기존 아카이브 기록을 연결한 것이지 **독립적인 검증 완료가 아니다**. 원출처를 직접 대조하지 않은 기록은 `verified`로 변경하지 않는다.
+**2008-09/2009-10 DFB 개별 프로필에서 출전·득점을 직접 재확인한 선수 12명**과 기존 Football Archive DRAFT만 연결된 선수를 구분한다. 특히 괴체의 2008-09 기록은 성인 1부가 아닌 U19 리그. 독립 출전·득점 대조는 수비·창조 지표·경기별 포지션·종합 기량의 전수 검증 완료가 아니다.
 
-| 선수 (포지션) | 구단 | 2008-09 정보 | 2009-10 정보 | 2010-11 경기/선발/분/골 | 3시즌 평가 상태 | 미검증 사항 |
+| 선수 (포지션) | 구단 | 2008-09 | 2009-10 | 2010-11 경기/선발/분/골 | 검증 상태 | 미검증 핵심 |
 |---|---|---|---|---|---|---|
-| 로만 바이덴펠러 (GK) | BV 09 Borussia Dortmund | 미확인 (null) | 아카이브 DRAFT 30경기/0골 (독립 검증 전) | 33/33/2970/0 | partially_verified / A0 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 미첼 랑게라크 (GK) | BV 09 Borussia Dortmund | 미확인 (null) | 미확인 (null) | 1/1/90/0 | partially_verified / C+ 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 마츠 훔멜스 (CB) | BV 09 Borussia Dortmund | 미확인 (null) | 아카이브 DRAFT 30경기/5골 (독립 검증 전) | 32/32/2834/5 | partially_verified / A+ 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 네벤 수보티치 (CB) | BV 09 Borussia Dortmund | 미확인 (null) | 아카이브 DRAFT 34경기/3골 (독립 검증 전) | 31/31/2773/1 | partially_verified / A0 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 펠리피 산타나 (CB) | BV 09 Borussia Dortmund | 미확인 (null) | 아카이브 DRAFT 25경기/0골 (독립 검증 전) | 13/5/523/0 | partially_verified / B0 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 마르첼 슈멜처 (LB) | BV 09 Borussia Dortmund | 미확인 (null) | 아카이브 DRAFT 28경기/0골 (독립 검증 전) | 34/34/3060/0 | partially_verified / A0 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 우카시 피슈체크 (RB) | BV 09 Borussia Dortmund | 아카이브 DRAFT 13경기/0골 (독립 검증 전) | 미확인 (null) | 33/29/2662/0 | partially_verified / A0 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 파트리크 오보모옐라 (RB) | BV 09 Borussia Dortmund | 미확인 (null) | 아카이브 DRAFT 33경기/1골 (독립 검증 전) | 6/5/447/0 | partially_verified / C+ 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 누리 샤힌 (DM) | BV 09 Borussia Dortmund | 미확인 (null) | 아카이브 DRAFT 33경기/4골 (독립 검증 전) | 30/30/2595/6 | partially_verified / S 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 스벤 벤더 (DM) | BV 09 Borussia Dortmund | 미확인 (null) | 아카이브 DRAFT 19경기/0골 (독립 검증 전) | 31/29/2442/1 | partially_verified / A0 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 안토니우 다 시우바 (CM) | BV 09 Borussia Dortmund | 미확인 (null) | 미확인 (null) | 22/5/745/1 | partially_verified / B- 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 마리오 괴체 (CAM) | BV 09 Borussia Dortmund | 미확인 (null) | 미확인 (null) | 33/29/2541/6 | partially_verified / A+ 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 가가와 신지 (CAM) | BV 09 Borussia Dortmund | 미확인 (null) | 미확인 (null) | 18/17/1371/8 | partially_verified / A0 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 케빈 그로스크로이츠 (LW) | BV 09 Borussia Dortmund | 미확인 (null) | 아카이브 DRAFT 32경기/5골 (독립 검증 전) | 34/32/2603/8 | partially_verified / B+ 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 야쿠프 브와슈치코프스키 (RW) | BV 09 Borussia Dortmund | 미확인 (null) | 아카이브 DRAFT 32경기/1골 (독립 검증 전) | 29/15/1525/3 | partially_verified / B+ 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 루카스 바리오스 (ST) | BV 09 Borussia Dortmund | 미확인 (null) | 아카이브 DRAFT 33경기/19골 (독립 검증 전) | 32/29/2477/16 | partially_verified / A+ 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 로베르트 레반도프스키 (ST) | BV 09 Borussia Dortmund | 미확인 (null) | 미확인 (null) | 33/15/1582/8 | partially_verified / B+ 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 레네 아들러 (GK) | Bayer 04 Leverkusen | 미확인 (null) | 아카이브 DRAFT 31경기/0골 (독립 검증 전) | 32/32/2880/0 | partially_verified / A0 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 파비안 기퍼 (GK) | Bayer 04 Leverkusen | 미확인 (null) | 아카이브 DRAFT 3경기/0골 (독립 검증 전) | 2/2/180/0 | partially_verified / C+ 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 슈테판 라이나르츠 (CB) | Bayer 04 Leverkusen | 미확인 (null) | 아카이브 DRAFT 27경기/2골 (독립 검증 전) | 31/29/2637/2 | partially_verified / B+ 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 사미 휘피애 (CB) | Bayer 04 Leverkusen | 미확인 (null) | 아카이브 DRAFT 32경기/2골 (독립 검증 전) | 21/20/1668/1 | partially_verified / B+ 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 마누엘 프리드리히 (CB) | Bayer 04 Leverkusen | 미확인 (null) | 아카이브 DRAFT 31경기/3골 (독립 검증 전) | 19/17/1457/0 | partially_verified / B+ 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 미할 카들레츠 (LB) | Bayer 04 Leverkusen | 미확인 (null) | 아카이브 DRAFT 23경기/1골 (독립 검증 전) | 32/30/2647/2 | partially_verified / B+ 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 곤살로 카스트로 (RB) | Bayer 04 Leverkusen | 미확인 (null) | 아카이브 DRAFT 29경기/1골 (독립 검증 전) | 23/19/1712/3 | partially_verified / A- 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 다니엘 슈바프 (RB) | Bayer 04 Leverkusen | 미확인 (null) | 아카이브 DRAFT 27경기/0골 (독립 검증 전) | 30/28/2453/0 | partially_verified / B+ 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 지몬 롤페스 (DM) | Bayer 04 Leverkusen | 미확인 (null) | 아카이브 DRAFT 11경기/4골 (독립 검증 전) | 28/21/1899/5 | partially_verified / B+ 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 하노 발리치 (DM) | Bayer 04 Leverkusen | 미확인 (null) | 미확인 (null) | 24/9/897/3 | partially_verified / B0 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 아르투로 비달 (CM) | Bayer 04 Leverkusen | 미확인 (null) | 아카이브 DRAFT 31경기/1골 (독립 검증 전) | 33/31/2708/10 | partially_verified / A+ 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 라르스 벤더 (CM) | Bayer 04 Leverkusen | 미확인 (null) | 아카이브 DRAFT 20경기/1골 (독립 검증 전) | 27/10/1201/3 | partially_verified / B+ 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 미하엘 발라크 (CM) | Bayer 04 Leverkusen | 미확인 (null) | 미확인 (null) | 17/13/1174/0 | partially_verified / B0 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 헤나투 아우구스투 (CAM) | Bayer 04 Leverkusen | 미확인 (null) | 아카이브 DRAFT 17경기/0골 (독립 검증 전) | 27/26/2219/7 | partially_verified / A0 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 트란퀼로 바르네타 (LW) | Bayer 04 Leverkusen | 미확인 (null) | 아카이브 DRAFT 32경기/4골 (독립 검증 전) | 24/19/1514/2 | partially_verified / B+ 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 시드니 샘 (RW) | Bayer 04 Leverkusen | 미확인 (null) | 미확인 (null) | 30/26/2167/7 | partially_verified / B+ 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 에렌 데르디요크 (ST) | Bayer 04 Leverkusen | 미확인 (null) | 아카이브 DRAFT 33경기/12골 (독립 검증 전) | 32/18/1950/6 | partially_verified / B+ 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 슈테판 키슬링 (ST) | Bayer 04 Leverkusen | 미확인 (null) | 아카이브 DRAFT 33경기/21골 (독립 검증 전) | 22/15/1344/7 | partially_verified / B+ 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 파트리크 헬메스 (ST) | Bayer 04 Leverkusen | 미확인 (null) | 아카이브 DRAFT 12경기/2골 (독립 검증 전) | 11/8/700/5 | partially_verified / B0 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 한스외르크 부트 (GK) | FC Bayern München | 아카이브 DRAFT 8경기/0골 (독립 검증 전) | 아카이브 DRAFT 31경기/0골 (독립 검증 전) | 23/22/2024/0 | partially_verified / B0 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 토마스 크라프트 (GK) | FC Bayern München | 미확인 (null) | 미확인 (null) | 12/12/1036/0 | partially_verified / B0 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 아나톨리 티모슈크 (CB) | FC Bayern München | 미확인 (null) | 아카이브 DRAFT 21경기/0골 (독립 검증 전) | 26/23/1994/3 | partially_verified / B+ 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 홀거 바트슈투버 (CB) | FC Bayern München | 미확인 (null) | 아카이브 DRAFT 33경기/1골 (독립 검증 전) | 23/21/1846/0 | partially_verified / B+ 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 다니엘 판 바위턴 (CB) | FC Bayern München | 아카이브 DRAFT 18경기/3골 (독립 검증 전) | 아카이브 DRAFT 31경기/6골 (독립 검증 전) | 21/18/1603/2 | partially_verified / B0 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 브레누 (CB) | FC Bayern München | 미확인 (null) | 미확인 (null) | 13/7/731/0 | partially_verified / B- 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 다니엘 프라니치 (LB) | FC Bayern München | 미확인 (null) | 아카이브 DRAFT 20경기/1골 (독립 검증 전) | 28/22/1995/0 | partially_verified / B0 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 디에고 콘텐토 (LB) | FC Bayern München | 미확인 (null) | 아카이브 DRAFT 9경기/0골 (독립 검증 전) | 14/12/1110/0 | partially_verified / B0 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 필리프 람 (RB) | FC Bayern München | 아카이브 DRAFT 28경기/3골 (독립 검증 전) | 아카이브 DRAFT 34경기/0골 (독립 검증 전) | 34/34/3060/3 | partially_verified / A+ 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 루이스 구스타부 (DM) | FC Bayern München | 미확인 (null) | 미확인 (null) | 14/13/1077/1 | partially_verified / B+ 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 마르크 판 보멀 (DM) | FC Bayern München | 아카이브 DRAFT 29경기/2골 (독립 검증 전) | 아카이브 DRAFT 25경기/1골 (독립 검증 전) | 13/12/1089/0 | partially_verified / B+ 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 안드레아스 오틀 (DM) | FC Bayern München | 아카이브 DRAFT 22경기/0골 (독립 검증 전) | 미확인 (null) | 15/9/913/0 | partially_verified / B0 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 바스티안 슈바인슈타이거 (CM) | FC Bayern München | 아카이브 DRAFT 31경기/5골 (독립 검증 전) | 아카이브 DRAFT 33경기/2골 (독립 검증 전) | 32/31/2728/4 | partially_verified / A+ 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 토니 크로스 (CM) | FC Bayern München | 미확인 (null) | 아카이브 DRAFT 33경기/9골 (독립 검증 전) | 27/19/1727/1 | partially_verified / B+ 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 토마스 뮐러 (CAM) | FC Bayern München | 미확인 (null) | 아카이브 DRAFT 34경기/13골 (독립 검증 전) | 34/32/2795/12 | partially_verified / A+ 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 프랑크 리베리 (LW) | FC Bayern München | 아카이브 DRAFT 25경기/9골 (독립 검증 전) | 아카이브 DRAFT 19경기/4골 (독립 검증 전) | 25/22/1964/7 | partially_verified / A+ 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 아르연 로번 (RW) | FC Bayern München | 미확인 (null) | 아카이브 DRAFT 24경기/16골 (독립 검증 전) | 14/13/1133/12 | partially_verified / A+ 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 하미트 알튼토프 (RW) | FC Bayern München | 미확인 (null) | 아카이브 DRAFT 15경기/0골 (독립 검증 전) | 14/8/729/2 | partially_verified / B0 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 마리오 고메스 (ST) | FC Bayern München | 아카이브 DRAFT 32경기/24골 (독립 검증 전) | 아카이브 DRAFT 29경기/10골 (독립 검증 전) | 32/27/2444/28 | partially_verified / S 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 미로슬라프 클로제 (ST) | FC Bayern München | 아카이브 DRAFT 26경기/10골 (독립 검증 전) | 아카이브 DRAFT 25경기/3골 (독립 검증 전) | 20/9/873/1 | partially_verified / B- 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 론로베르트 칠러 (GK) | Hannover 96 | 미확인 (null) | 미확인 (null) | 15/15/1312/0 | partially_verified / B+ 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 플로리안 프롬로비츠 (GK) | Hannover 96 | 미확인 (null) | 미확인 (null) | 20/19/1748/0 | partially_verified / B0 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 에마누엘 포가테츠 (CB) | Hannover 96 | 미확인 (null) | 미확인 (null) | 28/28/2435/0 | partially_verified / B+ 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 카림 하귀 (CB) | Hannover 96 | 미확인 (null) | 미확인 (null) | 25/25/2227/1 | partially_verified / B+ 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 마리오 에기만 (CB) | Hannover 96 | 미확인 (null) | 미확인 (null) | 12/7/639/0 | partially_verified / B0 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 크리스티안 슐츠 (LB) | Hannover 96 | 미확인 (null) | 미확인 (null) | 33/33/2941/4 | partially_verified / B+ 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 콩스탕 자크파 (LB) | Hannover 96 | 미확인 (null) | 미확인 (null) | 14/5/605/0 | partially_verified / B- 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 스티븐 체룬돌로 (RB) | Hannover 96 | 미확인 (null) | 미확인 (null) | 33/33/2875/0 | partially_verified / B+ 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 소피안 샤헤트 (RB) | Hannover 96 | 아카이브 DRAFT 13경기/0골 (독립 검증 전) | 미확인 (null) | 18/2/421/0 | partially_verified / C+ 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 마누엘 슈미데바흐 (DM) | Hannover 96 | 미확인 (null) | 미확인 (null) | 32/31/2648/0 | partially_verified / B+ 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 세르지우 핀투 (CM) | Hannover 96 | 미확인 (null) | 미확인 (null) | 31/31/2619/5 | partially_verified / B+ 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 콘스탄틴 라우슈 (LW) | Hannover 96 | 미확인 (null) | 미확인 (null) | 34/34/2843/5 | partially_verified / B+ 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 라르스 슈틴들 (RW) | Hannover 96 | 미확인 (null) | 미확인 (null) | 33/23/2229/2 | partially_verified / B+ 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 모리츠 슈토펠캄프 (RW) | Hannover 96 | 미확인 (null) | 미확인 (null) | 23/10/1028/0 | partially_verified / B0 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 디디에 야 코난 (ST) | Hannover 96 | 미확인 (null) | 미확인 (null) | 28/28/2461/14 | partially_verified / A- 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 모하메드 압델라웨 (ST) | Hannover 96 | 미확인 (null) | 미확인 (null) | 26/26/2098/10 | partially_verified / B+ 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 얀 슐라우드라프 (ST) | Hannover 96 | 미확인 (null) | 미확인 (null) | 21/16/1369/4 | partially_verified / B0 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 크리스티안 베트클로 (GK) | 1.FSV Mainz 05 | 미확인 (null) | 미확인 (null) | 24/24/2095/0 | partially_verified / B0 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 하인츠 뮐러 (GK) | 1.FSV Mainz 05 | 미확인 (null) | 미확인 (null) | 10/10/900/0 | partially_verified / B0 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 니콜체 노베스키 (CB) | 1.FSV Mainz 05 | 미확인 (null) | 미확인 (null) | 32/32/2788/2 | partially_verified / B+ 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 니코 붕게르트 (CB) | 1.FSV Mainz 05 | 미확인 (null) | 미확인 (null) | 28/26/2275/1 | partially_verified / B+ 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 보 스벤손 (CB) | 1.FSV Mainz 05 | 미확인 (null) | 미확인 (null) | 19/19/1684/0 | partially_verified / B0 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 얀 키르히호프 (CB) | 1.FSV Mainz 05 | 미확인 (null) | 미확인 (null) | 10/8/760/0 | partially_verified / B0 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 크리스티안 푹스 (LB) | 1.FSV Mainz 05 | 미확인 (null) | 미확인 (null) | 31/30/2647/0 | partially_verified / A0 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 말리크 파티 (LB) | 1.FSV Mainz 05 | 미확인 (null) | 미확인 (null) | 19/17/1407/0 | partially_verified / B0 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 라도슬라프 자바브니크 (RB) | 1.FSV Mainz 05 | 미확인 (null) | 미확인 (null) | 20/18/1627/0 | partially_verified / B0 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 오이겐 폴란스키 (DM) | 1.FSV Mainz 05 | 미확인 (null) | 미확인 (null) | 28/25/2212/0 | partially_verified / B+ 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 미로슬라프 카르한 (DM) | 1.FSV Mainz 05 | 미확인 (null) | 미확인 (null) | 13/9/826/0 | partially_verified / B0 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 엘킨 소토 (CM) | 1.FSV Mainz 05 | 미확인 (null) | 미확인 (null) | 26/21/1904/4 | partially_verified / B+ 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 마르코 칼리주리 (CM) | 1.FSV Mainz 05 | 미확인 (null) | 미확인 (null) | 22/17/1618/1 | partially_verified / B0 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 루이스 홀트비 (CAM) | 1.FSV Mainz 05 | 미확인 (null) | 미확인 (null) | 30/23/2024/4 | partially_verified / A- 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 안드레아스 이반시츠 (CAM) | 1.FSV Mainz 05 | 미확인 (null) | 미확인 (null) | 20/13/1020/3 | partially_verified / B0 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 안드레 쉬를레 (LW) | 1.FSV Mainz 05 | 미확인 (null) | 미확인 (null) | 33/26/2479/15 | partially_verified / A0 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 마르첼 리세 (RW) | 1.FSV Mainz 05 | 미확인 (null) | 미확인 (null) | 25/12/1282/2 | partially_verified / B0 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 플로리안 헬러 (RW) | 1.FSV Mainz 05 | 미확인 (null) | 미확인 (null) | 19/7/643/1 | partially_verified / B- 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 사미 알라기 (ST) | 1.FSV Mainz 05 | 미확인 (null) | 미확인 (null) | 28/18/1570/10 | partially_verified / B+ 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 아담 설러이 (ST) | 1.FSV Mainz 05 | 미확인 (null) | 미확인 (null) | 20/14/1280/4 | partially_verified / B0 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 마누엘 노이어 (GK) | FC Schalke 04 | 미확인 (null) | 아카이브 DRAFT 34경기/0골 (독립 검증 전) | 34/34/3060/0 | partially_verified / S 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 베네딕트 회베데스 (CB) | FC Schalke 04 | 미확인 (null) | 아카이브 DRAFT 33경기/3골 (독립 검증 전) | 30/30/2594/1 | partially_verified / A- 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 크리스토프 메첼더 (CB) | FC Schalke 04 | 미확인 (null) | 미확인 (null) | 32/32/2690/1 | partially_verified / B+ 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 키리아코스 파파도풀로스 (CB) | FC Schalke 04 | 미확인 (null) | 미확인 (null) | 18/10/980/0 | partially_verified / B0 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 루카스 슈미츠 (LB) | FC Schalke 04 | 미확인 (null) | 아카이브 DRAFT 29경기/2골 (독립 검증 전) | 23/21/1865/0 | partially_verified / B0 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 한스 사르페이 (LB) | FC Schalke 04 | 미확인 (null) | 미확인 (null) | 9/6/565/0 | partially_verified / B- 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 우치다 아쓰토 (RB) | FC Schalke 04 | 미확인 (null) | 미확인 (null) | 26/24/2149/0 | partially_verified / B+ 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 페어 클루게 (DM) | FC Schalke 04 | 미확인 (null) | 아카이브 DRAFT 13경기/0골 (독립 검증 전) | 22/18/1558/1 | partially_verified / B0 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 조엘 마티프 (DM) | FC Schalke 04 | 미확인 (null) | 아카이브 DRAFT 20경기/3골 (독립 검증 전) | 26/14/1481/0 | partially_verified / B0 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 저메인 존스 (DM) | FC Schalke 04 | 미확인 (null) | 미확인 (null) | 10/10/743/1 | partially_verified / B0 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 앤서니 아난 (DM) | FC Schalke 04 | 미확인 (null) | 미확인 (null) | 9/8/694/0 | partially_verified / B0 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 크리스토프 모리츠 (DM) | FC Schalke 04 | 미확인 (null) | 아카이브 DRAFT 28경기/1골 (독립 검증 전) | 12/8/728/0 | partially_verified / B- 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 이반 라키티치 (CM) | FC Schalke 04 | 미확인 (null) | 아카이브 DRAFT 29경기/7골 (독립 검증 전) | 16/14/1213/1 | partially_verified / B+ 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 호세 마누엘 후라도 (LW) | FC Schalke 04 | 미확인 (null) | 미확인 (null) | 28/21/1791/3 | partially_verified / B0 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 율리안 드락슬러 (LW) | FC Schalke 04 | 미확인 (null) | 미확인 (null) | 15/3/501/1 | partially_verified / C+ 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 제페르손 파르판 (RW) | FC Schalke 04 | 미확인 (null) | 아카이브 DRAFT 33경기/8골 (독립 검증 전) | 28/26/2338/3 | partially_verified / A- 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 라울 곤살레스 (ST) | FC Schalke 04 | 미확인 (null) | 미확인 (null) | 34/34/2895/13 | partially_verified / A0 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 클라스얀 휜텔라르 (ST) | FC Schalke 04 | 미확인 (null) | 미확인 (null) | 24/22/1988/8 | partially_verified / B+ 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
-| 에두 (ST) | FC Schalke 04 | 미확인 (null) | 아카이브 DRAFT 13경기/2골 (독립 검증 전) | 28/15/1449/3 | partially_verified / B0 잠정 | matchwise_primary_position_2010_11; individual_2008_09_2009_10_independent_full_review; defensive_creative_game_impact; individual_DOB_crosscheck |
+| 로만 바이덴펠러 (GK) | BV 09 Borussia Dortmund | 미확인 (null) | 기존 DRAFT 30경기/0골 (독립 미확인) | 33/33/2970/0 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 미첼 랑게라크 (GK) | BV 09 Borussia Dortmund | 미확인 (null) | 미확인 (null) | 1/1/90/0 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 마츠 훔멜스 (CB) | BV 09 Borussia Dortmund | DFB 확인 Borussia Dortmund 12경기/1골 | DFB 확인 Borussia Dortmund 30경기/5골 | 32/32/2834/5 | partially_verified | 2시즌 득점·출전 확인, 기타 경기력·포지션 검증 대기 |
+| 네벤 수보티치 (CB) | BV 09 Borussia Dortmund | DFB 확인 Borussia Dortmund 33경기/6골 | DFB 확인 Borussia Dortmund 34경기/3골 | 31/31/2773/1 | partially_verified | 2시즌 득점·출전 확인, 기타 경기력·포지션 검증 대기 |
+| 펠리피 산타나 (CB) | BV 09 Borussia Dortmund | 미확인 (null) | 기존 DRAFT 25경기/0골 (독립 미확인) | 13/5/523/0 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 마르첼 슈멜처 (LB) | BV 09 Borussia Dortmund | DFB 확인 Borussia Dortmund 12경기/0골 | DFB 확인 Borussia Dortmund 28경기/0골 | 34/34/3060/0 | partially_verified | 2시즌 득점·출전 확인, 기타 경기력·포지션 검증 대기 |
+| 우카시 피슈체크 (RB) | BV 09 Borussia Dortmund | 기존 DRAFT 13경기/0골 (독립 미확인) | 미확인 (null) | 33/29/2662/0 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 파트리크 오보모옐라 (RB) | BV 09 Borussia Dortmund | 미확인 (null) | 기존 DRAFT 33경기/1골 (독립 미확인) | 6/5/447/0 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 누리 샤힌 (DM) | BV 09 Borussia Dortmund | DFB 확인 Borussia Dortmund 25경기/2골 | DFB 확인 Borussia Dortmund 33경기/4골 | 30/30/2595/6 | partially_verified | 2시즌 득점·출전 확인, 기타 경기력·포지션 검증 대기 |
+| 스벤 벤더 (DM) | BV 09 Borussia Dortmund | 미확인 (null) | 기존 DRAFT 19경기/0골 (독립 미확인) | 31/29/2442/1 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 안토니우 다 시우바 (CM) | BV 09 Borussia Dortmund | 미확인 (null) | 미확인 (null) | 22/5/745/1 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 마리오 괴체 (CAM) | BV 09 Borussia Dortmund | DFB 확인 Borussia Dortmund U19 13경기/8골 [Under-19 Bundesliga West, non-senior] | DFB 확인 Borussia Dortmund 5경기/0골 [Bundesliga] | 33/29/2541/6 | partially_verified | 2시즌 득점·출전 확인, 기타 경기력·포지션 검증 대기 |
+| 가가와 신지 (CAM) | BV 09 Borussia Dortmund | 미확인 (null) | 미확인 (null) | 18/17/1371/8 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 케빈 그로스크로이츠 (LW) | BV 09 Borussia Dortmund | 미확인 (null) | 기존 DRAFT 32경기/5골 (독립 미확인) | 34/32/2603/8 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 야쿠프 브와슈치코프스키 (RW) | BV 09 Borussia Dortmund | 미확인 (null) | 기존 DRAFT 32경기/1골 (독립 미확인) | 29/15/1525/3 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 루카스 바리오스 (ST) | BV 09 Borussia Dortmund | 미확인 (null) | 기존 DRAFT 33경기/19골 (독립 미확인) | 32/29/2477/16 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 로베르트 레반도프스키 (ST) | BV 09 Borussia Dortmund | 미확인 (null) | 미확인 (null) | 33/15/1582/8 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 레네 아들러 (GK) | Bayer 04 Leverkusen | 미확인 (null) | 기존 DRAFT 31경기/0골 (독립 미확인) | 32/32/2880/0 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 파비안 기퍼 (GK) | Bayer 04 Leverkusen | 미확인 (null) | 기존 DRAFT 3경기/0골 (독립 미확인) | 2/2/180/0 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 슈테판 라이나르츠 (CB) | Bayer 04 Leverkusen | 미확인 (null) | 기존 DRAFT 27경기/2골 (독립 미확인) | 31/29/2637/2 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 사미 휘피애 (CB) | Bayer 04 Leverkusen | 미확인 (null) | 기존 DRAFT 32경기/2골 (독립 미확인) | 21/20/1668/1 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 마누엘 프리드리히 (CB) | Bayer 04 Leverkusen | 미확인 (null) | 기존 DRAFT 31경기/3골 (독립 미확인) | 19/17/1457/0 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 미할 카들레츠 (LB) | Bayer 04 Leverkusen | 미확인 (null) | 기존 DRAFT 23경기/1골 (독립 미확인) | 32/30/2647/2 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 곤살로 카스트로 (RB) | Bayer 04 Leverkusen | 미확인 (null) | 기존 DRAFT 29경기/1골 (독립 미확인) | 23/19/1712/3 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 다니엘 슈바프 (RB) | Bayer 04 Leverkusen | 미확인 (null) | 기존 DRAFT 27경기/0골 (독립 미확인) | 30/28/2453/0 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 지몬 롤페스 (DM) | Bayer 04 Leverkusen | 미확인 (null) | 기존 DRAFT 11경기/4골 (독립 미확인) | 28/21/1899/5 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 하노 발리치 (DM) | Bayer 04 Leverkusen | 미확인 (null) | 미확인 (null) | 24/9/897/3 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 아르투로 비달 (CM) | Bayer 04 Leverkusen | DFB 확인 Bayer 04 Leverkusen 29경기/3골 | DFB 확인 Bayer 04 Leverkusen 31경기/1골 | 33/31/2708/10 | partially_verified | 2시즌 득점·출전 확인, 기타 경기력·포지션 검증 대기 |
+| 라르스 벤더 (CM) | Bayer 04 Leverkusen | 미확인 (null) | 기존 DRAFT 20경기/1골 (독립 미확인) | 27/10/1201/3 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 미하엘 발라크 (CM) | Bayer 04 Leverkusen | 미확인 (null) | 미확인 (null) | 17/13/1174/0 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 헤나투 아우구스투 (CAM) | Bayer 04 Leverkusen | 미확인 (null) | 기존 DRAFT 17경기/0골 (독립 미확인) | 27/26/2219/7 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 트란퀼로 바르네타 (LW) | Bayer 04 Leverkusen | 미확인 (null) | 기존 DRAFT 32경기/4골 (독립 미확인) | 24/19/1514/2 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 시드니 샘 (RW) | Bayer 04 Leverkusen | 미확인 (null) | 미확인 (null) | 30/26/2167/7 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 에렌 데르디요크 (ST) | Bayer 04 Leverkusen | 미확인 (null) | 기존 DRAFT 33경기/12골 (독립 미확인) | 32/18/1950/6 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 슈테판 키슬링 (ST) | Bayer 04 Leverkusen | 미확인 (null) | 기존 DRAFT 33경기/21골 (독립 미확인) | 22/15/1344/7 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 파트리크 헬메스 (ST) | Bayer 04 Leverkusen | 미확인 (null) | 기존 DRAFT 12경기/2골 (독립 미확인) | 11/8/700/5 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 한스외르크 부트 (GK) | FC Bayern München | 기존 DRAFT 8경기/0골 (독립 미확인) | 기존 DRAFT 31경기/0골 (독립 미확인) | 23/22/2024/0 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 토마스 크라프트 (GK) | FC Bayern München | 미확인 (null) | 미확인 (null) | 12/12/1036/0 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 아나톨리 티모슈크 (CB) | FC Bayern München | 미확인 (null) | 기존 DRAFT 21경기/0골 (독립 미확인) | 26/23/1994/3 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 홀거 바트슈투버 (CB) | FC Bayern München | 미확인 (null) | 기존 DRAFT 33경기/1골 (독립 미확인) | 23/21/1846/0 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 다니엘 판 바위턴 (CB) | FC Bayern München | 기존 DRAFT 18경기/3골 (독립 미확인) | 기존 DRAFT 31경기/6골 (독립 미확인) | 21/18/1603/2 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 브레누 (CB) | FC Bayern München | 미확인 (null) | 미확인 (null) | 13/7/731/0 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 다니엘 프라니치 (LB) | FC Bayern München | 미확인 (null) | 기존 DRAFT 20경기/1골 (독립 미확인) | 28/22/1995/0 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 디에고 콘텐토 (LB) | FC Bayern München | 미확인 (null) | 기존 DRAFT 9경기/0골 (독립 미확인) | 14/12/1110/0 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 필리프 람 (RB) | FC Bayern München | DFB 확인 FC Bayern München 28경기/3골 | DFB 확인 FC Bayern München 34경기/0골 | 34/34/3060/3 | partially_verified | 2시즌 득점·출전 확인, 기타 경기력·포지션 검증 대기 |
+| 루이스 구스타부 (DM) | FC Bayern München | 미확인 (null) | 미확인 (null) | 14/13/1077/1 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 마르크 판 보멀 (DM) | FC Bayern München | 기존 DRAFT 29경기/2골 (독립 미확인) | 기존 DRAFT 25경기/1골 (독립 미확인) | 13/12/1089/0 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 안드레아스 오틀 (DM) | FC Bayern München | 기존 DRAFT 22경기/0골 (독립 미확인) | 미확인 (null) | 15/9/913/0 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 바스티안 슈바인슈타이거 (CM) | FC Bayern München | DFB 확인 FC Bayern München 31경기/5골 | DFB 확인 FC Bayern München 33경기/2골 | 32/31/2728/4 | partially_verified | 2시즌 득점·출전 확인, 기타 경기력·포지션 검증 대기 |
+| 토니 크로스 (CM) | FC Bayern München | 미확인 (null) | 기존 DRAFT 33경기/9골 (독립 미확인) | 27/19/1727/1 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 토마스 뮐러 (CAM) | FC Bayern München | DFB 확인 FC Bayern München 4경기/0골 | DFB 확인 FC Bayern München 34경기/13골 | 34/32/2795/12 | partially_verified | 2시즌 득점·출전 확인, 기타 경기력·포지션 검증 대기 |
+| 프랑크 리베리 (LW) | FC Bayern München | DFB 확인 FC Bayern München 25경기/9골 | DFB 확인 FC Bayern München 19경기/4골 | 25/22/1964/7 | partially_verified | 2시즌 득점·출전 확인, 기타 경기력·포지션 검증 대기 |
+| 아르연 로번 (RW) | FC Bayern München | 미확인 (null) | 기존 DRAFT 24경기/16골 (독립 미확인) | 14/13/1133/12 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 하미트 알튼토프 (RW) | FC Bayern München | 미확인 (null) | 기존 DRAFT 15경기/0골 (독립 미확인) | 14/8/729/2 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 마리오 고메스 (ST) | FC Bayern München | DFB 확인 VfB Stuttgart 32경기/24골 | DFB 확인 FC Bayern München 29경기/10골 | 32/27/2444/28 | partially_verified | 2시즌 득점·출전 확인, 기타 경기력·포지션 검증 대기 |
+| 미로슬라프 클로제 (ST) | FC Bayern München | 기존 DRAFT 26경기/10골 (독립 미확인) | 기존 DRAFT 25경기/3골 (독립 미확인) | 20/9/873/1 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 론로베르트 칠러 (GK) | Hannover 96 | 미확인 (null) | 미확인 (null) | 15/15/1312/0 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 플로리안 프롬로비츠 (GK) | Hannover 96 | 미확인 (null) | 미확인 (null) | 20/19/1748/0 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 에마누엘 포가테츠 (CB) | Hannover 96 | 미확인 (null) | 미확인 (null) | 28/28/2435/0 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 카림 하귀 (CB) | Hannover 96 | 미확인 (null) | 미확인 (null) | 25/25/2227/1 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 마리오 에기만 (CB) | Hannover 96 | 미확인 (null) | 미확인 (null) | 12/7/639/0 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 크리스티안 슐츠 (LB) | Hannover 96 | 미확인 (null) | 미확인 (null) | 33/33/2941/4 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 콩스탕 자크파 (LB) | Hannover 96 | 미확인 (null) | 미확인 (null) | 14/5/605/0 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 스티븐 체룬돌로 (RB) | Hannover 96 | 미확인 (null) | 미확인 (null) | 33/33/2875/0 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 소피안 샤헤트 (RB) | Hannover 96 | 기존 DRAFT 13경기/0골 (독립 미확인) | 미확인 (null) | 18/2/421/0 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 마누엘 슈미데바흐 (DM) | Hannover 96 | 미확인 (null) | 미확인 (null) | 32/31/2648/0 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 세르지우 핀투 (CM) | Hannover 96 | 미확인 (null) | 미확인 (null) | 31/31/2619/5 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 콘스탄틴 라우슈 (LW) | Hannover 96 | 미확인 (null) | 미확인 (null) | 34/34/2843/5 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 라르스 슈틴들 (RW) | Hannover 96 | 미확인 (null) | 미확인 (null) | 33/23/2229/2 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 모리츠 슈토펠캄프 (RW) | Hannover 96 | 미확인 (null) | 미확인 (null) | 23/10/1028/0 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 디디에 야 코난 (ST) | Hannover 96 | 미확인 (null) | 미확인 (null) | 28/28/2461/14 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 모하메드 압델라웨 (ST) | Hannover 96 | 미확인 (null) | 미확인 (null) | 26/26/2098/10 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 얀 슐라우드라프 (ST) | Hannover 96 | 미확인 (null) | 미확인 (null) | 21/16/1369/4 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 크리스티안 베트클로 (GK) | 1.FSV Mainz 05 | 미확인 (null) | 미확인 (null) | 24/24/2095/0 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 하인츠 뮐러 (GK) | 1.FSV Mainz 05 | 미확인 (null) | 미확인 (null) | 10/10/900/0 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 니콜체 노베스키 (CB) | 1.FSV Mainz 05 | 미확인 (null) | 미확인 (null) | 32/32/2788/2 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 니코 붕게르트 (CB) | 1.FSV Mainz 05 | 미확인 (null) | 미확인 (null) | 28/26/2275/1 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 보 스벤손 (CB) | 1.FSV Mainz 05 | 미확인 (null) | 미확인 (null) | 19/19/1684/0 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 얀 키르히호프 (CB) | 1.FSV Mainz 05 | 미확인 (null) | 미확인 (null) | 10/8/760/0 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 크리스티안 푹스 (LB) | 1.FSV Mainz 05 | 미확인 (null) | 미확인 (null) | 31/30/2647/0 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 말리크 파티 (LB) | 1.FSV Mainz 05 | 미확인 (null) | 미확인 (null) | 19/17/1407/0 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 라도슬라프 자바브니크 (RB) | 1.FSV Mainz 05 | 미확인 (null) | 미확인 (null) | 20/18/1627/0 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 오이겐 폴란스키 (DM) | 1.FSV Mainz 05 | 미확인 (null) | 미확인 (null) | 28/25/2212/0 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 미로슬라프 카르한 (DM) | 1.FSV Mainz 05 | 미확인 (null) | 미확인 (null) | 13/9/826/0 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 엘킨 소토 (CM) | 1.FSV Mainz 05 | 미확인 (null) | 미확인 (null) | 26/21/1904/4 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 마르코 칼리주리 (CM) | 1.FSV Mainz 05 | 미확인 (null) | 미확인 (null) | 22/17/1618/1 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 루이스 홀트비 (CAM) | 1.FSV Mainz 05 | 미확인 (null) | 미확인 (null) | 30/23/2024/4 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 안드레아스 이반시츠 (CAM) | 1.FSV Mainz 05 | 미확인 (null) | 미확인 (null) | 20/13/1020/3 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 안드레 쉬를레 (LW) | 1.FSV Mainz 05 | 미확인 (null) | 미확인 (null) | 33/26/2479/15 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 마르첼 리세 (RW) | 1.FSV Mainz 05 | 미확인 (null) | 미확인 (null) | 25/12/1282/2 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 플로리안 헬러 (RW) | 1.FSV Mainz 05 | 미확인 (null) | 미확인 (null) | 19/7/643/1 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 사미 알라기 (ST) | 1.FSV Mainz 05 | 미확인 (null) | 미확인 (null) | 28/18/1570/10 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 아담 설러이 (ST) | 1.FSV Mainz 05 | 미확인 (null) | 미확인 (null) | 20/14/1280/4 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 마누엘 노이어 (GK) | FC Schalke 04 | DFB 확인 FC Schalke 04 27경기/0골 | DFB 확인 FC Schalke 04 34경기/0골 | 34/34/3060/0 | partially_verified | 2시즌 득점·출전 확인, 기타 경기력·포지션 검증 대기 |
+| 베네딕트 회베데스 (CB) | FC Schalke 04 | 미확인 (null) | 기존 DRAFT 33경기/3골 (독립 미확인) | 30/30/2594/1 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 크리스토프 메첼더 (CB) | FC Schalke 04 | 미확인 (null) | 미확인 (null) | 32/32/2690/1 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 키리아코스 파파도풀로스 (CB) | FC Schalke 04 | 미확인 (null) | 미확인 (null) | 18/10/980/0 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 루카스 슈미츠 (LB) | FC Schalke 04 | 미확인 (null) | 기존 DRAFT 29경기/2골 (독립 미확인) | 23/21/1865/0 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 한스 사르페이 (LB) | FC Schalke 04 | 미확인 (null) | 미확인 (null) | 9/6/565/0 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 우치다 아쓰토 (RB) | FC Schalke 04 | 미확인 (null) | 미확인 (null) | 26/24/2149/0 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 페어 클루게 (DM) | FC Schalke 04 | 미확인 (null) | 기존 DRAFT 13경기/0골 (독립 미확인) | 22/18/1558/1 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 조엘 마티프 (DM) | FC Schalke 04 | 미확인 (null) | 기존 DRAFT 20경기/3골 (독립 미확인) | 26/14/1481/0 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 저메인 존스 (DM) | FC Schalke 04 | 미확인 (null) | 미확인 (null) | 10/10/743/1 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 앤서니 아난 (DM) | FC Schalke 04 | 미확인 (null) | 미확인 (null) | 9/8/694/0 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 크리스토프 모리츠 (DM) | FC Schalke 04 | 미확인 (null) | 기존 DRAFT 28경기/1골 (독립 미확인) | 12/8/728/0 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 이반 라키티치 (CM) | FC Schalke 04 | 미확인 (null) | 기존 DRAFT 29경기/7골 (독립 미확인) | 16/14/1213/1 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 호세 마누엘 후라도 (LW) | FC Schalke 04 | 미확인 (null) | 미확인 (null) | 28/21/1791/3 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 율리안 드락슬러 (LW) | FC Schalke 04 | 미확인 (null) | 미확인 (null) | 15/3/501/1 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 제페르손 파르판 (RW) | FC Schalke 04 | 미확인 (null) | 기존 DRAFT 33경기/8골 (독립 미확인) | 28/26/2338/3 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 라울 곤살레스 (ST) | FC Schalke 04 | 미확인 (null) | 미확인 (null) | 34/34/2895/13 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 클라스얀 휜텔라르 (ST) | FC Schalke 04 | 미확인 (null) | 미확인 (null) | 24/22/1988/8 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+| 에두 (ST) | FC Schalke 04 | 미확인 (null) | 기존 DRAFT 13경기/2골 (독립 미확인) | 28/15/1449/3 | partially_verified | 과거 2시즌 독립 재확인 및 주 포지션·기량 검증 대기 |
+
+### 직접 확인한 12명 DFB 개인 출처
+
+| 선수 | 개인 프로필 원출처 | 확인 범위 |
+|---|---|---|
+| Nuri Şahin | [DFB 개인 기록](https://datencenter.dfb.de/en/people/nuri-sahin/player) | 2008-09, 2009-10 출전·골 |
+| Mario Gómez | [DFB 개인 기록](https://datencenter.dfb.de/en/people/mario-gomez/player) | 2008-09, 2009-10 출전·골 |
+| Manuel Neuer | [DFB 개인 기록](https://datencenter.dfb.de/en/people/manuel-neuer/player) | 2008-09, 2009-10 출전·골 |
+| Mats Hummels | [DFB 개인 기록](https://datencenter.dfb.de/en/people/mats-hummels/player) | 2008-09, 2009-10 출전·골 |
+| Philipp Lahm | [DFB 개인 기록](https://datencenter.dfb.de/en/people/philipp-lahm/player) | 2008-09, 2009-10 출전·골 |
+| Arturo Vidal | [DFB 개인 기록](https://datencenter.dfb.de/en/people/arturo-vidal/player) | 2008-09, 2009-10 출전·골 |
+| Neven Subotić | [DFB 개인 기록](https://datencenter.dfb.de/en/data-center/people/neven-subotic/player) | 2008-09, 2009-10 출전·골 |
+| Thomas Müller | [DFB 개인 기록](https://datencenter.dfb.de/en/people/thomas-muller/player) | 2008-09, 2009-10 출전·골 |
+| Franck Ribéry | [DFB 개인 기록](https://datencenter.dfb.de/en/people/franck-ribery/player) | 2008-09, 2009-10 출전·골 |
+| Bastian Schweinsteiger | [DFB 개인 기록](https://datencenter.dfb.de/en/people/bastian-schweinsteiger/player) | 2008-09, 2009-10 출전·골 |
+| Marcel Schmelzer | [DFB 개인 기록](https://datencenter.dfb.de/en/people/marcel-schmelzer/player) | 2008-09, 2009-10 출전·골 |
+| Mario Götze | [DFB 개인 기록](https://datencenter.dfb.de/en/data-center/people/mario-gotze/player) | 2008-09, 2009-10 출전·골 (2008-09 U19 리그) |
+
+**전체 역사적 검증 완료 0명:** 이 12명의 출전·득점 기록 검증은 정성적 경기력 및 경기별 실제 위치까지 완료한 것이 아니다.
 
 ## I. 실질적인 역사적 오류 수정, 위험과 검증 상태
 
@@ -608,6 +627,8 @@ World Class **12명**, League Top Class **28명**.
 - **시즌 중 주전 교체:** Bayern GK Hans-Jörg Butt / Thomas Kraft, Hannover GK Florian Fromlowitz / Ron-Robert Zieler, Mainz GK Christian Wetklo / Heinz Müller 모두 복수 주전급 인정. 11명 고정 주전 제한 금지.
 - **이적 및 다중 포지션:** Nuri Şahin (CM/DM), Mario Götze (CAM/RW), José Manuel Jurado (CAM/LW), Anatoliy Tymoshchuk (DM/CB) 등 경계선은 세부 경기 출장 위치 전수 검증 이전의 잠정 배정. 라울은 처진 공격 역할을 수행해도 실전 최전방/ST로 평가.
 
+- **2008-09·2009-10 독립 근거 보강:** Nuri Şahin, Mario Gómez, Manuel Neuer, Mats Hummels, Philipp Lahm, Arturo Vidal, Neven Subotić, Thomas Müller, Franck Ribéry, Bastian Schweinsteiger, Marcel Schmelzer, Mario Götze 등 12명의 출전·득점 기록을 DFB 개별 페이지로 확인해 JSON을 직접 갱신했다. 괴체의 2008-09 U19 경력을 성인 리그 기록과 분리했다. 기존 DRAFT의 도르트문트 구단 표기와 DFB 일반 표기를 정규화했다. 팀 성적에 따른 개인 가산점은 부여하지 않았다.
+
 ### 검증 집계
 
 | 항목 | 현황 |
@@ -616,6 +637,7 @@ World Class **12명**, League Top Class **28명**.
 | 2008-09 Football Archive DRAFT 후보 연결 | 11 |
 | 2009-10 Football Archive DRAFT 후보 연결 | 52 |
 | 전 선수 3시즌 개인 경기력 독립 전수 검증 | **0명** |
+| 2008-09/2009-10 출전·득점 독립 원출처 대조 | **12명** |
 | 개별 선수 경기별 주 포지션 전수 검증 완료 | **0명** |
 | 전체 선수 개별 공식 인물 프로필 DOB 독립 대조 | **0명** |
 | 잠정 티어·포지션 순위 기록 | **112명** |
@@ -647,6 +669,8 @@ World Class **12명**, League Top Class **28명**.
 - Hannover 96 2010-11 [BDFutbol 선수별 출전 테이블](https://www.bdfutbol.com/en/t/t2010-111012.html), [DFB 팀 시즌 데이터](https://datencenter.dfb.de/competitions/bundesliga/seasons/2010-2011/teams/hannover-96)
 - 1.FSV Mainz 05 2010-11 [BDFutbol 선수별 출전 테이블](https://www.bdfutbol.com/en/t/t2010-111013.html), [DFB 팀 시즌 데이터](https://datencenter.dfb.de/en/competitions/bundesliga/seasons/2010-2011/teams/1-fsv-mainz-05)
 - FC Schalke 04 2010-11 [BDFutbol 선수별 출전 테이블](https://www.bdfutbol.com/en/t/t2010-111006.html), [DFB 팀 시즌 데이터](https://datencenter.dfb.de/en/bundesliga/2010-2011/team/fc-schalke-04)
+
+- [`5b493d36273e`](https://github.com/wjdduddlf112/footballarch/commit/5b493d36273ef7492021f9498436fd0e0c25352c): DFB 개인 프로필로 12명의 직전 2시즌 출전·득점 검증 및 괴체 U19 구분 반영.
 
 ## K. 주요 GitHub 커밋 및 다음 단계 중단
 
