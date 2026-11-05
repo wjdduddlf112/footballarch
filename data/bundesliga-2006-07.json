@@ -109,7 +109,9 @@
       "independentCurrentSeasonAppearancesLinked": 128,
       "birthdatesDFBRosterLinked": 128,
       "matchwisePositionAuditComplete": 0,
-      "allGradesDraft": true
+      "allGradesDraft": true,
+      "fullThreeSeasonIndependentAppearancesGoalsVerified": 4,
+      "notes": "4 key players independently confirmed 3-season DFB league appearances/goals; zero fully certified all-metrics historical evaluations."
     }
   },
   "clubs": [
@@ -2108,13 +2110,15 @@
       "evaluationStatus": "provisional_tier_current_season_correlated_prior_three_season_independent_audit_pending",
       "sources": [
         "https://datencenter.dfb.de/competitions/bundesliga/seasons/2006-2007/teams/vfb-stuttgart",
-        "https://www.bdfutbol.com/en/t/t2006-071002.html"
+        "https://www.bdfutbol.com/en/t/t2006-071002.html",
+        "https://datencenter.dfb.de/personen/mario-gomez/spieler"
       ],
       "evidence": {
         "officialRoster": "https://datencenter.dfb.de/competitions/bundesliga/seasons/2006-2007/teams/vfb-stuttgart",
         "currentSeason": "https://www.bdfutbol.com/en/t/t2006-071002.html",
         "sourceStatus": "DFB_2006_07_roster_and_BDFutbol_2006_07_league_apps_starts_goals_linked",
-        "statScope": "team season BDFutbol data; matchwise positions/assists unverified"
+        "statScope": "team season BDFutbol data; matchwise positions/assists unverified",
+        "individualThreeSeasonDFB": "https://datencenter.dfb.de/personen/mario-gomez/spieler"
       },
       "threeSeasonReview": {
         "assessmentSeasons": [
@@ -2125,20 +2129,20 @@
         "weighting": "2006-07 strongest > 2005-06 > 2004-05; club ranking/trophy not direct grade bonus",
         "records": {
           "2004-05": {
-            "club": null,
-            "appearances": null,
+            "club": "VfB Stuttgart",
+            "appearances": 8,
             "starts": null,
-            "goals": null,
-            "verification": "independent_evidence_pending",
-            "source": null
+            "goals": 0,
+            "verification": "DFB_individual_season_league_appearances_goals_directly_verified",
+            "source": "https://datencenter.dfb.de/personen/mario-gomez/spieler"
           },
           "2005-06": {
-            "club": null,
-            "appearances": null,
+            "club": "VfB Stuttgart",
+            "appearances": 30,
             "starts": null,
-            "goals": null,
-            "verification": "independent_evidence_pending",
-            "source": null
+            "goals": 6,
+            "verification": "DFB_individual_season_league_appearances_goals_directly_verified",
+            "source": "https://datencenter.dfb.de/personen/mario-gomez/spieler"
           },
           "2006-07": {
             "club": "VfB Stuttgart",
@@ -2146,17 +2150,17 @@
             "starts": 22,
             "goals": 14,
             "minutes": null,
-            "verification": "BDFutbol_season_stats_crosslinked_DFB_registered",
-            "source": "https://www.bdfutbol.com/en/t/t2006-071002.html"
+            "verification": "DFB_individual_season_league_appearances_goals_directly_verified",
+            "source": "https://datencenter.dfb.de/personen/mario-gomez/spieler"
           }
         },
-        "status": "2006-07_independent_squad_stats_and_prior_archived_DRAFT_only",
-        "verifiedScope": "Current season season stats correlated against independent source; 2004-05 and 2005-06 independent per-player historical impact audit pending"
+        "status": "DFB_3_seasons_individual_league_appearances_goals_verified",
+        "verifiedScope": "DFB verified all three seasons individual league appearances/goals; matchwise primary position, starts, qualitative form and assists still pending."
       },
-      "tierReview": "2006-07 VfB Stuttgart에서 리그 25경기·선발 22회·14골; ST 실질적 주전/교대 주전 역할 근거의 A+ 잠정 티어. 2006-07 활약을 가장 크게 고려하며 2005-06·2004-05 개인 기록은 과거 아카이브의 미독립검증 자료와 비교해 보완 중. 팀 최종 순위 자체는 점수 가산하지 않음.",
-      "assessmentRationale": "2006-07 VfB Stuttgart에서 리그 25경기·선발 22회·14골; ST 실질적 주전/교대 주전 역할 근거의 A+ 잠정 티어. 2006-07 활약을 가장 크게 고려하며 2005-06·2004-05 개인 기록은 과거 아카이브의 미독립검증 자료와 비교해 보완 중. 팀 최종 순위 자체는 점수 가산하지 않음.",
+      "tierReview": "DFB 개인기록 확인: 2004-05 8경기/0골(VfB Stuttgart), 2005-06 30경기/6골(VfB Stuttgart), 2006-07 25경기/14골(VfB Stuttgart). 최근 시즌 비중 최상위로 A+ 잠정 평가. 선발·실제 포지션별 경기 및 정성적 경기력은 추가 검증 필요.",
+      "assessmentRationale": "DFB 개인기록 확인: 2004-05 8경기/0골(VfB Stuttgart), 2005-06 30경기/6골(VfB Stuttgart), 2006-07 25경기/14골(VfB Stuttgart). 최근 시즌 비중 최상위로 A+ 잠정 평가. 선발·실제 포지션별 경기 및 정성적 경기력은 추가 검증 필요.",
       "verificationNeeded": [
-        "2004_05_2005_06_independent_player_performance_verification_pending",
+        "three_season_qualitative_impact_and_starts_pending",
         "matchwise_main_position_share_pending",
         "independent_biographical_crosscheck_pending",
         "assist_and_defensive_advanced_stats_pending"
@@ -3604,13 +3608,15 @@
       "evaluationStatus": "provisional_tier_current_season_correlated_prior_three_season_independent_audit_pending",
       "sources": [
         "https://datencenter.dfb.de/competitions/bundesliga/seasons/2006-2007/teams/fc-schalke-04",
-        "https://www.bdfutbol.com/en/t/t2006-071006.html"
+        "https://www.bdfutbol.com/en/t/t2006-071006.html",
+        "https://datencenter.dfb.de/en/people/kevin-kuranyi/player"
       ],
       "evidence": {
         "officialRoster": "https://datencenter.dfb.de/competitions/bundesliga/seasons/2006-2007/teams/fc-schalke-04",
         "currentSeason": "https://www.bdfutbol.com/en/t/t2006-071006.html",
         "sourceStatus": "DFB_2006_07_roster_and_BDFutbol_2006_07_league_apps_starts_goals_linked",
-        "statScope": "team season BDFutbol data; matchwise positions/assists unverified"
+        "statScope": "team season BDFutbol data; matchwise positions/assists unverified",
+        "individualThreeSeasonDFB": "https://datencenter.dfb.de/en/people/kevin-kuranyi/player"
       },
       "threeSeasonReview": {
         "assessmentSeasons": [
@@ -3625,16 +3631,16 @@
             "appearances": 29,
             "starts": null,
             "goals": 13,
-            "verification": "historical_archive_DRAFT_not_independently_verified",
-            "source": "https://fbref.com/en/squads/598bc722/2004-2005/Stuttgart-Stats"
+            "verification": "DFB_individual_season_league_appearances_goals_directly_verified",
+            "source": "https://datencenter.dfb.de/en/people/kevin-kuranyi/player"
           },
           "2005-06": {
             "club": "FC Schalke 04",
             "appearances": 30,
             "starts": null,
             "goals": 10,
-            "verification": "historical_archive_DRAFT_not_independently_verified",
-            "source": "https://fbref.com/en/squads/c539e393/2005-2006/Schalke-04-Stats"
+            "verification": "DFB_individual_season_league_appearances_goals_directly_verified",
+            "source": "https://datencenter.dfb.de/en/people/kevin-kuranyi/player"
           },
           "2006-07": {
             "club": "FC Schalke 04",
@@ -3642,17 +3648,17 @@
             "starts": 33,
             "goals": 15,
             "minutes": null,
-            "verification": "BDFutbol_season_stats_crosslinked_DFB_registered",
-            "source": "https://www.bdfutbol.com/en/t/t2006-071006.html"
+            "verification": "DFB_individual_season_league_appearances_goals_directly_verified",
+            "source": "https://datencenter.dfb.de/en/people/kevin-kuranyi/player"
           }
         },
-        "status": "2006-07_independent_squad_stats_and_prior_archived_DRAFT_only",
-        "verifiedScope": "Current season season stats correlated against independent source; 2004-05 and 2005-06 independent per-player historical impact audit pending"
+        "status": "DFB_3_seasons_individual_league_appearances_goals_verified",
+        "verifiedScope": "DFB verified all three seasons individual league appearances/goals; matchwise primary position, starts, qualitative form and assists still pending."
       },
-      "tierReview": "2006-07 FC Schalke 04에서 리그 34경기·선발 33회·15골; ST 실질적 주전/교대 주전 역할 근거의 A+ 잠정 티어. 2006-07 활약을 가장 크게 고려하며 2005-06·2004-05 개인 기록은 과거 아카이브의 미독립검증 자료와 비교해 보완 중. 팀 최종 순위 자체는 점수 가산하지 않음.",
-      "assessmentRationale": "2006-07 FC Schalke 04에서 리그 34경기·선발 33회·15골; ST 실질적 주전/교대 주전 역할 근거의 A+ 잠정 티어. 2006-07 활약을 가장 크게 고려하며 2005-06·2004-05 개인 기록은 과거 아카이브의 미독립검증 자료와 비교해 보완 중. 팀 최종 순위 자체는 점수 가산하지 않음.",
+      "tierReview": "DFB 개인기록 확인: 2004-05 29경기/13골(VfB Stuttgart), 2005-06 30경기/10골(FC Schalke 04), 2006-07 34경기/15골(FC Schalke 04). 최근 시즌 비중 최상위로 A+ 잠정 평가. 선발·실제 포지션별 경기 및 정성적 경기력은 추가 검증 필요.",
+      "assessmentRationale": "DFB 개인기록 확인: 2004-05 29경기/13골(VfB Stuttgart), 2005-06 30경기/10골(FC Schalke 04), 2006-07 34경기/15골(FC Schalke 04). 최근 시즌 비중 최상위로 A+ 잠정 평가. 선발·실제 포지션별 경기 및 정성적 경기력은 추가 검증 필요.",
       "verificationNeeded": [
-        "2004_05_2005_06_independent_player_performance_verification_pending",
+        "three_season_qualitative_impact_and_starts_pending",
         "matchwise_main_position_share_pending",
         "independent_biographical_crosscheck_pending",
         "assist_and_defensive_advanced_stats_pending"
@@ -4660,13 +4666,15 @@
       "evaluationStatus": "provisional_tier_current_season_correlated_prior_three_season_independent_audit_pending",
       "sources": [
         "https://datencenter.dfb.de/competitions/bundesliga/seasons/2006-2007/teams/werder-bremen",
-        "https://www.bdfutbol.com/en/t/t2006-071009.html"
+        "https://www.bdfutbol.com/en/t/t2006-071009.html",
+        "https://datencenter.dfb.de/datencenter/personen/torsten-frings/spieler"
       ],
       "evidence": {
         "officialRoster": "https://datencenter.dfb.de/competitions/bundesliga/seasons/2006-2007/teams/werder-bremen",
         "currentSeason": "https://www.bdfutbol.com/en/t/t2006-071009.html",
         "sourceStatus": "DFB_2006_07_roster_and_BDFutbol_2006_07_league_apps_starts_goals_linked",
-        "statScope": "team season BDFutbol data; matchwise positions/assists unverified"
+        "statScope": "team season BDFutbol data; matchwise positions/assists unverified",
+        "individualThreeSeasonDFB": "https://datencenter.dfb.de/datencenter/personen/torsten-frings/spieler"
       },
       "threeSeasonReview": {
         "assessmentSeasons": [
@@ -4678,37 +4686,37 @@
         "records": {
           "2004-05": {
             "club": "FC Bayern München",
-            "appearances": null,
+            "appearances": 29,
             "starts": null,
-            "goals": null,
-            "verification": "historical_archive_DRAFT_not_independently_verified",
-            "source": "https://fbref.com/en/squads/054efa67/2004-2005/Bayern-Munich-Stats"
+            "goals": 3,
+            "verification": "DFB_individual_season_league_appearances_goals_directly_verified",
+            "source": "https://datencenter.dfb.de/datencenter/personen/torsten-frings/spieler"
           },
           "2005-06": {
-            "club": "SV Werder Bremen",
+            "club": "Werder Bremen",
             "appearances": 28,
             "starts": 28,
             "goals": 3,
-            "verification": "historical_archive_DRAFT_not_independently_verified",
-            "source": "https://fbref.com/en/squads/62add3bf/2005-2006/Werder-Bremen-Stats"
+            "verification": "DFB_individual_season_league_appearances_goals_directly_verified",
+            "source": "https://datencenter.dfb.de/datencenter/personen/torsten-frings/spieler"
           },
           "2006-07": {
-            "club": "SV Werder Bremen",
+            "club": "Werder Bremen",
             "appearances": 33,
             "starts": 33,
             "goals": 1,
             "minutes": null,
-            "verification": "BDFutbol_season_stats_crosslinked_DFB_registered",
-            "source": "https://www.bdfutbol.com/en/t/t2006-071009.html"
+            "verification": "DFB_individual_season_league_appearances_goals_directly_verified",
+            "source": "https://datencenter.dfb.de/datencenter/personen/torsten-frings/spieler"
           }
         },
-        "status": "2006-07_independent_squad_stats_and_prior_archived_DRAFT_only",
-        "verifiedScope": "Current season season stats correlated against independent source; 2004-05 and 2005-06 independent per-player historical impact audit pending"
+        "status": "DFB_3_seasons_individual_league_appearances_goals_verified",
+        "verifiedScope": "DFB verified all three seasons individual league appearances/goals; matchwise primary position, starts, qualitative form and assists still pending."
       },
-      "tierReview": "2006-07 SV Werder Bremen에서 리그 33경기·선발 33회·1골; DM 실질적 주전/교대 주전 역할 근거의 A+ 잠정 티어. 2006-07 활약을 가장 크게 고려하며 2005-06·2004-05 개인 기록은 과거 아카이브의 미독립검증 자료와 비교해 보완 중. 팀 최종 순위 자체는 점수 가산하지 않음.",
-      "assessmentRationale": "2006-07 SV Werder Bremen에서 리그 33경기·선발 33회·1골; DM 실질적 주전/교대 주전 역할 근거의 A+ 잠정 티어. 2006-07 활약을 가장 크게 고려하며 2005-06·2004-05 개인 기록은 과거 아카이브의 미독립검증 자료와 비교해 보완 중. 팀 최종 순위 자체는 점수 가산하지 않음.",
+      "tierReview": "DFB 개인기록 확인: 2004-05 29경기/3골(FC Bayern München), 2005-06 28경기/3골(Werder Bremen), 2006-07 33경기/1골(Werder Bremen). 최근 시즌 비중 최상위로 A+ 잠정 평가. 선발·실제 포지션별 경기 및 정성적 경기력은 추가 검증 필요.",
+      "assessmentRationale": "DFB 개인기록 확인: 2004-05 29경기/3골(FC Bayern München), 2005-06 28경기/3골(Werder Bremen), 2006-07 33경기/1골(Werder Bremen). 최근 시즌 비중 최상위로 A+ 잠정 평가. 선발·실제 포지션별 경기 및 정성적 경기력은 추가 검증 필요.",
       "verificationNeeded": [
-        "2004_05_2005_06_independent_player_performance_verification_pending",
+        "three_season_qualitative_impact_and_starts_pending",
         "matchwise_main_position_share_pending",
         "independent_biographical_crosscheck_pending",
         "assist_and_defensive_advanced_stats_pending"
@@ -5276,13 +5284,15 @@
       "evaluationStatus": "provisional_tier_current_season_correlated_prior_three_season_independent_audit_pending",
       "sources": [
         "https://datencenter.dfb.de/competitions/bundesliga/seasons/2006-2007/teams/werder-bremen",
-        "https://www.bdfutbol.com/en/t/t2006-071009.html"
+        "https://www.bdfutbol.com/en/t/t2006-071009.html",
+        "https://datencenter.dfb.de/en/people/3205/player"
       ],
       "evidence": {
         "officialRoster": "https://datencenter.dfb.de/competitions/bundesliga/seasons/2006-2007/teams/werder-bremen",
         "currentSeason": "https://www.bdfutbol.com/en/t/t2006-071009.html",
         "sourceStatus": "DFB_2006_07_roster_and_BDFutbol_2006_07_league_apps_starts_goals_linked",
-        "statScope": "team season BDFutbol data; matchwise positions/assists unverified"
+        "statScope": "team season BDFutbol data; matchwise positions/assists unverified",
+        "individualThreeSeasonDFB": "https://datencenter.dfb.de/en/people/3205/player"
       },
       "threeSeasonReview": {
         "assessmentSeasons": [
@@ -5293,38 +5303,38 @@
         "weighting": "2006-07 strongest > 2005-06 > 2004-05; club ranking/trophy not direct grade bonus",
         "records": {
           "2004-05": {
-            "club": "SV Werder Bremen",
+            "club": "Werder Bremen",
             "appearances": 32,
             "starts": null,
             "goals": 15,
-            "verification": "historical_archive_DRAFT_not_independently_verified",
-            "source": "https://fbref.com/en/squads/62add3bf/2004-2005/Werder-Bremen-Stats"
+            "verification": "DFB_individual_season_league_appearances_goals_directly_verified",
+            "source": "https://datencenter.dfb.de/en/people/3205/player"
           },
           "2005-06": {
-            "club": "SV Werder Bremen",
+            "club": "Werder Bremen",
             "appearances": 26,
             "starts": 25,
             "goals": 25,
-            "verification": "historical_archive_DRAFT_not_independently_verified",
-            "source": "https://fbref.com/en/squads/62add3bf/2005-2006/Werder-Bremen-Stats"
+            "verification": "DFB_individual_season_league_appearances_goals_directly_verified",
+            "source": "https://datencenter.dfb.de/en/people/3205/player"
           },
           "2006-07": {
-            "club": "SV Werder Bremen",
+            "club": "Werder Bremen",
             "appearances": 31,
             "starts": 31,
             "goals": 13,
             "minutes": null,
-            "verification": "BDFutbol_season_stats_crosslinked_DFB_registered",
-            "source": "https://www.bdfutbol.com/en/t/t2006-071009.html"
+            "verification": "DFB_individual_season_league_appearances_goals_directly_verified",
+            "source": "https://datencenter.dfb.de/en/people/3205/player"
           }
         },
-        "status": "2006-07_independent_squad_stats_and_prior_archived_DRAFT_only",
-        "verifiedScope": "Current season season stats correlated against independent source; 2004-05 and 2005-06 independent per-player historical impact audit pending"
+        "status": "DFB_3_seasons_individual_league_appearances_goals_verified",
+        "verifiedScope": "DFB verified all three seasons individual league appearances/goals; matchwise primary position, starts, qualitative form and assists still pending."
       },
-      "tierReview": "2006-07 SV Werder Bremen에서 리그 31경기·선발 31회·13골; ST 실질적 주전/교대 주전 역할 근거의 A+ 잠정 티어. 2006-07 활약을 가장 크게 고려하며 2005-06·2004-05 개인 기록은 과거 아카이브의 미독립검증 자료와 비교해 보완 중. 팀 최종 순위 자체는 점수 가산하지 않음.",
-      "assessmentRationale": "2006-07 SV Werder Bremen에서 리그 31경기·선발 31회·13골; ST 실질적 주전/교대 주전 역할 근거의 A+ 잠정 티어. 2006-07 활약을 가장 크게 고려하며 2005-06·2004-05 개인 기록은 과거 아카이브의 미독립검증 자료와 비교해 보완 중. 팀 최종 순위 자체는 점수 가산하지 않음.",
+      "tierReview": "DFB 개인기록 확인: 2004-05 32경기/15골(Werder Bremen), 2005-06 26경기/25골(Werder Bremen), 2006-07 31경기/13골(Werder Bremen). 최근 시즌 비중 최상위로 A+ 잠정 평가. 선발·실제 포지션별 경기 및 정성적 경기력은 추가 검증 필요.",
+      "assessmentRationale": "DFB 개인기록 확인: 2004-05 32경기/15골(Werder Bremen), 2005-06 26경기/25골(Werder Bremen), 2006-07 31경기/13골(Werder Bremen). 최근 시즌 비중 최상위로 A+ 잠정 평가. 선발·실제 포지션별 경기 및 정성적 경기력은 추가 검증 필요.",
       "verificationNeeded": [
-        "2004_05_2005_06_independent_player_performance_verification_pending",
+        "three_season_qualitative_impact_and_starts_pending",
         "matchwise_main_position_share_pending",
         "independent_biographical_crosscheck_pending",
         "assist_and_defensive_advanced_stats_pending"
@@ -12121,6 +12131,12 @@
     "threeSeasonEvaluationStatus": "partially_verified_all_previous_DRAFT_stats_not_independently_verified",
     "notes": "No invented zero for missing assists/minutes; all missing as null. VerificationStatus=partially_verified for all until entire personal record evidence independently audited.",
     "rolePolicy": "Unlimited starter-equivalent participants; one backup per club per position maximum; historic primary position provisional.",
-    "draftApproved": false
+    "draftApproved": false,
+    "threeSeasonDirectDFBPlayerNames": [
+      "Miroslav Klose",
+      "Kevin Kurányi",
+      "Torsten Frings",
+      "Mario Gómez"
+    ]
   }
 }
