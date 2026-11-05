@@ -70,7 +70,7 @@ for(const [pos,arr] of byPos){
 for(const tier of tiers)assert((d.meta.tierSummary?.[tier==="A"?"A0":tier==="B"?"B0":tier==="C"?"C0":tier]||0)===(counts[tier]||0),"tier count "+tier);
 const wc=d.players.filter(p=>["S","A+"].includes(p.tier)).length, top=d.players.filter(p=>["S","A+","A","A-"].includes(p.tier)).length;
 assert(d.meta.worldClassCount===wc&&d.meta.leagueTopClassCount===top,"World / League top count mismatch");
-assert(d.bestXi.length===11&&d.meta.formation==="4-3-1-2","Best XI shape or count bad");
+assert(d.bestXi.length===11&&d.meta.formation==="4-4-2","Best XI shape or count bad");
 const shape={GK:1,CB:2,LB:1,RB:1,DM:1,CM:2,CAM:1,LW:0,RW:0,ST:2};
 const shapeUsed={},xiIds=new Set();
 for(const p of d.bestXi){
