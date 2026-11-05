@@ -1,0 +1,51 @@
+name: Verify Football Archive Bundesliga 2007-08 DRAFT & LIVE
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/bundesliga-2007-08.json'
+      - 'assets/app.js'
+      - 'index.html'
+      - 'scripts/verify-bundesliga-2007-08-*.mjs'
+      - '.github/workflows/verify-bundesliga-2007-08-draft-live.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify-draft-and-pages:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+      - name: Structure and JavaScript
+        run: |
+          node --check assets/app.js
+          node --check scripts/verify-bundesliga-2007-08-draft.mjs
+          node --check scripts/verify-bundesliga-2007-08-live.mjs
+          node scripts/verify-bundesliga-2007-08-draft.mjs
+          node scripts/verify-bundesliga.mjs
+      - name: Install Chromium
+        run: |
+          npm install --no-save --no-package-lock playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Confirm Pages JSON and use real browser
+        run: |
+          for i in $(seq 1 12); do
+            curl -fsSL --max-time 20 "https://wjdduddlf112.github.io/footballarch/data/bundesliga-2007-08.json?sha=${{ github.sha }}" -o /tmp/bundesliga-2007-08-pages.json || true
+            if node -e "const d=require('/tmp/bundesliga-2007-08-pages.json');if(d.players.length!==149||d.qualifiers.length!==8||d.bestXi.length!==11)process.exit(1)" 2>/dev/null; then break; fi
+            if [ "$i" = 12 ]; then echo "Pages did not deploy verified JSON";exit 1;fi
+            sleep 20
+          done
+          node scripts/verify-bundesliga-2007-08-live.mjs
+        env:
+          SITE_URL: https://wjdduddlf112.github.io/footballarch/
+      - name: Upload Playwright screenshots
+        if: always()
+        uses: actions/upload-artifact@v5
+        with:
+          name: bundesliga-2007-08-pages-live-audit
+          path: audit-artifacts/bundesliga-2007-08-live/
+          if-no-files-found: warn
