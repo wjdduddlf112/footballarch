@@ -1,0 +1,44 @@
+name: Bundesliga 2010-11 historical DRAFT checks
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - data/bundesliga-2010-11.json
+      - scripts/validate_bundesliga_2010_11.py
+      - scripts/browser_smoke_bundesliga_2010_11.cjs
+      - assets/app.js
+      - .github/workflows/validate-bundesliga-2010-11.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  structure:
+    name: 2010-11 JSON structural validation
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate all 112 player records and 6 qualified clubs
+        run: python scripts/validate_bundesliga_2010_11.py
+
+  browser:
+    name: LIVE Football Archive browser smoke and 2009-10 regression
+    needs: structure
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install Playwright in CI workspace
+        run: |
+          npm install --no-save playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Test published 2010-11 pages and earlier season regression
+        run: node scripts/browser_smoke_bundesliga_2010_11.cjs
