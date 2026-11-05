@@ -430,7 +430,7 @@ Season-representative diamond four-back shape, technically 4-3-1-2 role arrangem
 | LB | 필리프 람 / Philipp Lahm | FC Bayern München | A+ | 34 fullback starts and high two-way consistency. Peer head-to-head and matchwise main role are pending. |
 | RB | 하피냐 / Rafinha | FC Schalke 04 | A0 | 31 starts, impactful attacking fullback. Peer head-to-head and matchwise main role are pending. |
 | DM | 토르스텐 프링스 / Torsten Frings | SV Werder Bremen | A+ | 33 starts, deep-midfield control and ball recovery. Peer head-to-head and matchwise main role are pending. |
-| CM | 파벨 파르도 / Pável Pardo | VfB Stuttgart | A0 | 33 starts, Stuttgart's midfield organisation. Peer head-to-head and matchwise main role are pending. |
+| CM | 토마스 히츨슈페르거 / Thomas Hitzlsperger | VfB Stuttgart | A0 | 30 league games, 25 starts, seven goals as actual CM; preferred over position-inappropriate Pardo (a DM). Other CM comparators remain provisional. |
 | CM | 마르크 판 보멀 / Mark van Bommel | FC Bayern München | A0 | 29 starts and six goals with central passing/press resistance. Peer head-to-head and matchwise main role are pending. |
 | CAM | 지에구 / Diego | SV Werder Bremen | S | 33 starts and 13 goals, primary attacking orchestration. Peer head-to-head and matchwise main role are pending. |
 | ST | 마리오 고메스 / Mario Gómez | VfB Stuttgart | A+ | 14 goals in 25 games as leading young striker. Peer head-to-head and matchwise main role are pending. |
@@ -455,6 +455,7 @@ Contemporaneous S grade context: Werder Bremen on 31 May 2007 reported a kicker 
 - Rost transfer club-season split: Schalke 7 league games then Hamburger SV 17, both entries are deliberate club-specific assignments, not a mistaken duplicated player. The individual winter transfer date needs external date-specific citation if required.
 - Schalke 2006-07 goalkeeper Neuer 27 starts and Bayer Leverkusen's Adler 11 starts were not dropped merely to force a fixed 11-per-team line-up.
 - Actual JSON source corrected after first commit: website did not directly recognize 4-3-1-2 string in Best XI rendering. Changed to supported 4-4-2 with role-accurate diamond slot mapping and synchronized the structural checker. This correction is in GitHub player-season JSON.
+- Best XI position error corrected in GitHub player-season JSON: Pável Pardo was initially assigned as CM although classified as DM; to preserve true primary role and the 4-4-2 diamond slots, CM Thomas Hitzlsperger (30 appearances, 7 league goals) now replaces Pardo in the XI. Pardo stays in the DM positional rankings. 2006-07 contribution corroboration: https://www.bundesliga.com/en/bundesliga/news/iconic-teams-stuttgart-2006-07-title-winners-khedira-hitzlsperger-gomez-24931 .
 - No existing 2006-07 player JSON file preceded this task; do not claim player-data errors in prior 2006-07 JSON were found and repaired. The current roster and tiers may still require revisions after independent historical auditing.
 - Outstanding: recheck 124 previous-two-seasons player profiles; all players' match-by-match majority positions, starts relative to club competition, left/right usage, assists and defending; verify every DOB from individual DFB pages; source referee-reviewed personal ratings; fix any newly proven errors in JSON, not just this Markdown.
 
