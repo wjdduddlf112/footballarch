@@ -696,3 +696,14 @@
 - 전체 티어 화면: 구단별/포지션별/티어별 136명, World Class·League Top, Best XI 개인 11명 티어.
 - 구조 검사 및 GitHub Pages Chromium 실제 브라우저 검사 상태는 GitHub Actions에서 별도 검증 후 기록한다. 문서 작성 자체를 배포 PASS로 간주하지 않는다.
 - **다음 시즌 2006-07**은 사용자 '다음' 지시 전까지 시작하지 않는다.
+
+## I. 실제 GitHub Pages 배포 및 Playwright Chromium 검증 결과
+
+- **배포 PASS**: [GitHub Pages #41959941101](https://github.com/wjdduddlf112/footballarch/actions/runs/41959941101), 검증 기준 커밋 `00262cc493572b92584884e8ccaf2b045af38b7b`.
+- **실제 Chromium 페이지 테스트 PASS**: [Bundesliga 2005-06 DRAFT & LIVE #41959941333](https://github.com/wjdduddlf112/footballarch/actions/runs/41959941333).
+- Live JSON: 2005-06 DRAFT, 실제 7개 구단, 후보 136명, 티어 136명, 포지션별 순위 136명, Best XI 11명.
+- 렌더링: All Tiers 구단별 **7개** 그룹에 136명, 포지션별 10개 그룹에 136명, S~D/미평가 **12개** 그룹에 136명, 선수 상세 티어 설명 및 증거 대기 상태, 개별 11명 Best XI 다이아몬드 포메이션·티어·선정 근거 표시 확인.
+- World Class **23명** (S+A+) / League Top Class **53명** (S+A++A0+A-), Statistics의 A0/B0/C0/미평가 표기도 검증.
+- 이전 분데스리가 1999-00~2004-05 총 **6개 시즌** 전체 티어 화면 회귀 검사 PASS.
+- 스크린샷 및 기계 판독 결과 `bundesliga-2005-06-pages-live-audit`는 [GitHub Actions 실행 페이지의 Artifacts](https://github.com/wjdduddlf112/footballarch/actions/runs/41959941333)에서 제공.
+- **구조·브라우저 테스트 PASS는 독립 역사적 전수 검증과 다르다**. 136명 전원의 2003-04~2005-06 개인 경기력·선발·주 포지션 분석은 미완료이므로 사용자 승인 전 티어·XI·순위는 `DRAFT` 유지.
