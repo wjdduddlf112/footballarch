@@ -76,7 +76,7 @@ async function load(){
  if(verified?.standings?.length>=18){
    if(!data)data={meta:{leagueId:st.league,league:label(),season:st.season,status:"standings_only",standingsOnly:true},clubs:[],qualifiers:[],standings:[],players:[],bestXi:[]};
    const earlier=new Map((data.standings||[]).map(r=>[r.club,r]));
-   const verifiedEuropean=(verified.europeanParticipationStatus||"").startsWith("verified");const curatedEuropean=verifiedEuropean||["seriea","bundesliga"].includes(st.league);
+   const verifiedEuropean=(verified.europeanParticipationStatus||"").startsWith("verified");const trustedSeasonQualifiers=Boolean(seasonData?.meta?.europeanQualificationVerified&&(seasonData.qualifiers||[]).length);const curatedEuropean=verifiedEuropean||(!trustedSeasonQualifiers&&["seriea","bundesliga"].includes(st.league));
    const european=verified.europeanParticipation||{};
    data.standings=verified.standings.map(r=>({...r,competition:curatedEuropean?(european[r.club]||null):(earlier.get(r.club)?.competition||null)}));
    if(curatedEuropean){
