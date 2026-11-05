@@ -930,3 +930,15 @@ Best XI 11명 `proposed_unapproved` 및 구단 순위 자체 가산 없음. 각 
 - 메뉴: All Tiers > 구단별 209명 / 포지션별 209명 / 티어별 209명, 선수 상세 평가 근거, Best XI 11명 티어, Statistics 티어 분포.
 - GitHub Actions 검증 워크플로우가 실제 원격 GitHub Pages 배포와 렌더링을 확인한 후만 `PASS`로 보고한다. 데이터 저장 성공 자체가 실배포 검증은 아니다.
 - 2005-06 시즌은 사용자 '다음' 지시 전에는 평가하지 않는다.
+
+## I. GitHub Pages 실제 배포 및 Chromium 화면 검증 성공
+
+- **배포 성공:** [pages build and deployment #41956927610](https://github.com/wjdduddlf112/footballarch/actions/runs/41956927610), 검사 기준 커밋 `e0dd46c26f502126c239e22c31ec7bc535956eab`.
+- **실제 배포 사이트 Chromium 검증 성공:** [Verify Bundesliga 2004-05 DRAFT & LIVE #41956927542](https://github.com/wjdduddlf112/footballarch/actions/runs/41956927542).
+- **스크린샷 및 결과 JSON:** 해당 Actions 실행 화면의 아티팩트 `bundesliga-2004-05-pages-live-audit`.
+- GitHub Pages 실제 원격 JSON 209명·잠정 티어 209명·포지션 순위 209명·Best XI 11명 확인.
+- 사이트 `All Tiers` 메뉴: 구단별 10개 표 총 209명, 포지션별 10개 표 총 209명, S~D 및 미평가 12개 그룹 총 209명 확인.
+- 선수 상세 화면 개별 티어/평가 검증 상태 및 근거 문구 확인, Best XI 전술 배치도 11개 개인 티어와 상세 선정 사유 11명 확인.
+- World Class **19명**, League Top Class **63명**, Statistics A0/B0/C0·미평가 표시 확인.
+- 분데스리가 1999-00, 2000-01, 2001-02, 2002-03, 2003-04 전체 티어 화면 회귀 검사 모두 성공.
+- 위 **구조 검사·실제 화면 검증 성공은 시즌별 선수 개인 역사적 기록의 독립 전수 검증과는 별개**이며, 선수 209명 전원의 등급/순위는 사용자 미승인 DRAFT 상태로 유지.
