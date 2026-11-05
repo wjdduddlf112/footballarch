@@ -654,11 +654,11 @@ World Class **12명**, League Top Class **28명**.
 | 실사이트 Playwright 테스트 | **GitHub 반영, 실행 결과 별도 확인** | [`scripts/browser_smoke_bundesliga_2010_11.cjs`](../scripts/browser_smoke_bundesliga_2010_11.cjs) |
 | 자동화 워크플로 | **GitHub 반영, 실행 결과 별도 확인** | [`.github/workflows/validate-bundesliga-2010-11.yml`](../.github/workflows/validate-bundesliga-2010-11.yml) |
 | 프런트엔드 | **GitHub 반영** | [`assets/app.js`](../assets/app.js), All Tiers 조건에 2010-11 포함 |
-| JSON 핵심 구조 검사 | **커밋 당시 경량 코드 검사** | 중복 player ID 0, 후보 초과 0, 18팀 순위 기록, 10개 포지션, 11 Best XI |
+| JSON 핵심 구조 검사 | **PASS — 최신 GitHub JSON 직접 읽기 JS 검사** | 선수 112명·6팀·10개 포지션 연속 순위·ID 중복 0·후보 위반 0·Best XI 11명·WC 12명·Top 28명 |
 | Python 전체 구조 검증 | **스크립트 저장 (CI/로컬 실행 확인 별도)** | 실제 검사 결과를 성공으로 주장하기 전 실행 필요 |
 | 역사적 전수 검증 | **미완료** | 원출처와 경기별 활약을 선수마다 직접 교차 검증 필요 |
 | GitHub Pages 실제 브라우저 검사 | **미검증** | URL은 하단. CI 브라우저 테스트가 실제 성공한 뒤만 검증 성공 처리 |
-| 기존 2009-10 시즌 회귀 검사 | **CI 테스트 추가, 실행 확인 필요** | 이전 113명·기능 유지 |
+| 기존 2009-10 시즌 회귀 검사 | **파일 재조회 113명 유지 확인 / 실제 브라우저 회귀 테스트 미확인** | 2009-10 기존 JSON blob SHA `8430bb6be54ccea8bdfc2773df7576ca45bb69b1` 유지 |
 | 사용자 승인 | **미승인** | Best XI `proposed_unapproved` |
 
 ### 주요 소스
@@ -672,6 +672,10 @@ World Class **12명**, League Top Class **28명**.
 
 - [`5b493d36273e`](https://github.com/wjdduddlf112/footballarch/commit/5b493d36273ef7492021f9498436fd0e0c25352c): DFB 개인 프로필로 12명의 직전 2시즌 출전·득점 검증 및 괴체 U19 구분 반영.
 
+### 개별 검증 결과 로그
+
+- [`audit/BUNDESLIGA_2010_11_PRODUCTION_VALIDATION_2026_11_05.json`](./BUNDESLIGA_2010_11_PRODUCTION_VALIDATION_2026_11_05.json): 확인된 커밋 및 구조 PASS, 12명 DFB 직접 검증, 전체 3시즌 질적 전수검증 0명, GitHub Actions/실사이트 브라우저 테스트 미확인 상태를 독립 저장.
+
 ## K. 주요 GitHub 커밋 및 다음 단계 중단
 
 - [`6c972274f2f2`](https://github.com/wjdduddlf112/footballarch/commit/6c972274f2f2be67ff427dcf5de14451a5491b0e): 2010-11 112명 DRAFT JSON 저장.
@@ -679,5 +683,7 @@ World Class **12명**, League Top Class **28명**.
 - [`7f1e075e4753`](https://github.com/wjdduddlf112/footballarch/commit/7f1e075e475366fca31e5e4c0d1368daa89cae5c): JSON 구조 검사 스크립트.
 - [`43affc2f58d3`](https://github.com/wjdduddlf112/footballarch/commit/43affc2f58d3b7adf5e689b038d3dcae8808f0ad): 실제 사이트 브라우저 테스트 및 2009-10 회귀 검사.
 - [`d06bb0283cfd`](https://github.com/wjdduddlf112/footballarch/commit/d06bb0283cfde1031e9488108f639ab7bef42786): GitHub Actions 자동 검사 구성.
+
+- [`dd69f8904e3b`](https://github.com/wjdduddlf112/footballarch/commit/dd69f8904e3b1b754b600b0c1fd25c23ba73cf2f): 구조·역사·브라우저 검증을 분리한 프로덕션 판정 로그.
 
 **현재 시즌 Bundesliga 2010-11만 실행한다. Bundesliga 2011-12로 자동 이동하지 않는다. 사용자가 명시적으로 다음 시즌을 승인하지 않으면 중단한다.**
