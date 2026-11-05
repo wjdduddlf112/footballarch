@@ -728,3 +728,24 @@ Season cell format: Club appearances/starts/goals. `?` means actual evidence mis
 Unverified individual prior-season stats often originate from older Football Archive DRAFT JSON. Such copied figures are explicitly labelled unverified, never counted as independent historic proof. Qualitative comparisons by position and minutes/assists/defensive contributions remain unfinished for many.
 
 **Stop after 2006-07; do not automatically evaluate 2007-08.**
+
+---
+
+## 11. Verified GitHub Actions and deployed browser result (2026-11-05)
+
+This section records tests observed **after** the data/history correction and actual on-site All Tiers navigation repair. It supersedes the older 'not independently observed' placeholder in section 10, without changing the **historical full verification: 0 / 127** disclosure.
+
+- **Historical correction data commit:** `cb503e9d86291c8b9e6a78c5e0678d4e7fa3f149` — 127 candidate club-stints, 126 distinct people, 102 starter-equivalent / 25 backup, 12 World Class, 51 League Top Class, Best XI 11 proposed.
+- **UI repair commit:** `ba1b017bdabceb573409b9185e1ddcb93cd1b159` — include 2006-07 in All Tiers navigation eligibility; previously hidden navigation caused real Playwright failure.
+- **Regression test repair + full successful test commit:** `e3eef7aae5b7186ccaf19523c5bd7c805e037e1c` — correct 1999-00 Premier League expected record count, preserving the existing data.
+- **Structural validation:** PASS in GitHub Actions step `Check Javascript and candidate structure` at `https://github.com/wjdduddlf112/footballarch/actions/runs/41969665109`. Includes 2006-07 structural script and cross-archive check. This is not a full historical individual-performance assessment.
+- **GitHub Pages deployment:** SUCCESS; run `https://github.com/wjdduddlf112/footballarch/actions/runs/41969664231`, on test code commit `e3eef7aae5b7186ccaf19523c5bd7c805e037e1c`.
+- **Real Playwright Chromium site check:** SUCCESS, `PASS_CORE_UI`, run `https://github.com/wjdduddlf112/footballarch/actions/runs/41969665109`, test code SHA `e3eef7aae5b7186ccaf19523c5bd7c805e037e1c`. Actual pages JSON: 127 nominated club-spell records; 127 provisional tiers; 0 unrated; proposed XI 11; 4-4-2 diamond-compatible display.
+- **Tabs actually tested:** overview, formation/Best XI, top/World-and-League-Top, All Tiers clubwise, All Tiers positional, All Tiers tierwise, league standings, statistics, player detail modal, position/club filters. All passed.
+- **Crests:** 18/18 checked images loaded in actual browser. Playwright report warning list empty.
+- **Previously working seasons regression PASS:** Premier League 1999-00 (128), La Liga 1999-00 (167), Bundesliga 1999-00 (126), 2000-01 (136), 2001-02 (139), 2002-03 (163), 2004-05 (209), 2005-06 (136).
+- **Screenshots and machine test output artifact:** `https://github.com/wjdduddlf112/footballarch/actions/runs/41969665109/artifacts/13389401557`.
+- **Historical individual performance verification still NOT complete:** 0 / 127 fully certified 3-season comprehensive cases. Limited three-season appearances/goals crosschecked for five people; qualitative positions/match impact and missing 3-season evidence remain pending. Grade entry 127/127 does not mean full independent historical verification.
+- **User formal approval:** NOT given. Best XI, all tiers and positional rankings remain DRAFT; no automatic work on Bundesliga 2007-08.
+
+The site checks reported here are actual successful GitHub-hosted Playwright Chromium browser checks with logs/screenshots, not mere inference from file contents.
