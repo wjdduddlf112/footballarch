@@ -686,7 +686,7 @@
 | 2010-11 이전 아카이브 DRAFT 참고 | 72명 |
 | 2개 직전 시즌 DFB 개인 출전·득점 직접 교차검증 | **10명** |
 | DFB 독립 개별 신원·생년월일 확인 | **5명** |
-| 128명 전체 3시즌 개인 기량 질적 검증 완료? | **아니오: 현재 126명 중 0명** |
+| 126명 전체 3시즌 개인 기량 질적 검증 완료 | **0명** |
 | 경기별 최빈 포지션 독립 전수검증 | **0명** |
 | 잠정 티어 입력 | 126명 |
 | 사용자 최종 승인 | **미승인** |
@@ -715,14 +715,19 @@
 | 검사 항목 | 기준/실행 | 현재 기록 |
 |---|---|---|
 | 시즌 JSON | 신규 7팀 후보·포지션 순위·3시즌 평가·Best XI | [`data/bundesliga-2011-12.json`](../data/bundesliga-2011-12.json) `main` 커밋 |
-| JSON 무결성 | 중복 ID/주전 인원 상한 금지/후보 최대 1명/10개 위치/11명 XI | 검증 스크립트 저장. 실제 검사 결과 별도 로그 확인 |
+| JSON 무결성 | GitHub `main` JSON을 재조회한 별도 JS 구조검증 | **PASS:** 7팀·126명·ID 중복 0·포지션별 후보 제한 위반 0·10개 순위 연속·Best XI 11명·World Class 17명·League Top 38명 |
 | 구조 검증 스크립트 | Python | [`scripts/validate_bundesliga_2011_12.py`](../scripts/validate_bundesliga_2011_12.py) |
 | 페이지 브라우저 검사 스크립트 | LIVE GitHub Pages URL 접속, 126명·7팀·XI·상세·이전 시즌 회귀 | [`scripts/browser_smoke_bundesliga_2011_12.cjs`](../scripts/browser_smoke_bundesliga_2011_12.cjs) 저장, 실브라우저 성공 기록 별도 확인 필요 |
 | GitHub Actions | 구조 → LIVE 브라우저 테스트 | [`.github/workflows/validate-bundesliga-2011-12.yml`](../.github/workflows/validate-bundesliga-2011-12.yml) 반영. 실제 run 성공 별도 확인 |
 | 홈페이지 JS | All Tiers 2011-12 활성화 | [`assets/app.js`](../assets/app.js) 반영 |
 | 개인 역사적 검증 | 직전 2시즌 DFB 10명 직접 확인, 126명 전체 3시즌 경기력 검증 0명 | **부분 완료** |
-| 기존 2010-11 회귀 | 기존 JSON 112명 유지와 라이브 UI 회귀 | 데이터는 이전 파일 보존. 라이브 UI 테스트 성공은 별도 확인 |
+| 기존 2010-11 회귀 | 기존 JSON 112명 유지와 라이브 UI 회귀 | 기존 시즌 GitHub JSON blob `f56238725b544cf486455f489399f8611a8bdfd9` 유지 확인; **라이브 브라우저 회귀 실행은 미확인** |
 | 최종 승인 | 사용자의 명시적 승인 | **미승인** |
+
+### 독립 검증 판정 로그
+
+- [구조·역사·브라우저 판정 JSON](./BUNDESLIGA_2011_12_PRODUCTION_VALIDATION_2026_11_05.json): 실제 파일 재조회 구조 PASS, 독립 개인 기록 10명, 전체 3시즌 정성 검증 0명, 실배포 브라우저 미검증을 구분.
+- **홈페이지 출전권 덮어쓰기 수정:** 기존 standings JSON이 신규 유럽 참가 데이터를 덮어쓰지 않도록, 시즌 JSON에 독립적으로 확인된 qualifier 명단이 있으면 이를 우선하도록 `assets/app.js` 갱신. Gladbach `UCL → UEL` 이력 보존 ([코드 커밋](https://github.com/wjdduddlf112/footballarch/commit/e43e44fd1cc3b808d255a1e6f7bc498325dcd4df)).
 
 ### 이번 시즌 파일 및 GitHub 커밋
 - [최초 시즌 JSON 커밋 `b27678844f3e`](https://github.com/wjdduddlf112/footballarch/commit/b27678844f3eaaa0e6b6792d35ddd8741718b2fb)
@@ -731,6 +736,8 @@
 - [실브라우저 테스트 스크립트 `0f94ff6fd8d2`](https://github.com/wjdduddlf112/footballarch/commit/0f94ff6fd8d249f065fd382c3100823212112b4d)
 - [GitHub Actions 워크플로 `e1f94ad08272`](https://github.com/wjdduddlf112/footballarch/commit/e1f94ad082729211eda90577a0dbe0aa4208ebef)
 - [All Tiers UI 적용 `e260ea54ecdd`](https://github.com/wjdduddlf112/footballarch/commit/e260ea54ecdd70cfede42718f27075658a41cee7)
+
+- [프로덕션 검증 로그 `1b0e02aeaeb1`](https://github.com/wjdduddlf112/footballarch/commit/1b0e02aeaeb19eebd3631819f790dc812a027110)
 
 **사이트:** [Football Archive Bundesliga 2011-12](https://wjdduddlf112.github.io/footballarch/?league=bundesliga&season=2011-12&view=tiers)
 
@@ -747,7 +754,7 @@
 | 4-2-3-1 / Best XI 11명 | `proposed_unapproved` |
 | GitHub 실데이터·보고서 커밋 | 완료 |
 | 구조 무결성 검사 | GitHub 최신 파일 재조회/검증 후 별도 기록 |
-| GitHub Actions/홈페이지 실제 브라우저 테스트 | 성공 확인 전까지 미완료 |
+| GitHub Actions/홈페이지 실제 브라우저 테스트 | **미검증:** Actions 파일은 반영했지만 실행 결과 성공 기록 확인 불가. GitHub Pages 실브라우저 실행 없음 |
 | 최종 사용자 승인 | 미승인 |
 
 **시즌 경계:** Bundesliga 2011-12만 처리했으며 Bundesliga 2012-13 자동 진행 금지. 사용자가 다음 시즌을 명시적으로 지시하기 전까지 진행하지 않는다.
