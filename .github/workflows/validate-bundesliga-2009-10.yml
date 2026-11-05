@@ -1,0 +1,44 @@
+name: Bundesliga 2009-10 DRAFT validation
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - data/bundesliga-2009-10.json
+      - scripts/validate_bundesliga_2009_10.py
+      - scripts/browser_smoke_bundesliga_2009_10.cjs
+      - assets/app.js
+      - .github/workflows/validate-bundesliga-2009-10.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  structure:
+    name: JSON structural validation
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check actual Bundesliga 2009-10 data integrity
+        run: python scripts/validate_bundesliga_2009_10.py
+
+  browser:
+    name: Published GitHub Pages browser smoke test
+    needs: structure
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install Playwright in the CI workspace
+        run: |
+          npm install --no-save playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Verify LIVE season pages and prior-season regression
+        run: node scripts/browser_smoke_bundesliga_2009_10.cjs
