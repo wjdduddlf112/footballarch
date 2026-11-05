@@ -29,7 +29,7 @@ New 2007-08 roster obtained from **each club's season appearance/starts/minutes/
 
 Ranking order GK → CB → LB → RB → DM → CM → CAM → LW → RW → ST. Unlimited starter-equivalent players per club; no cap of exactly 11; at most 1 backup per club+position. Relative ranks strictly tier-first and then 2007-08 playing time/starting and position-sensitive goals, provisional until full history review. No title/league placing bonus.
 
-149 club-season records, 122 starter-equivalent, 27 backups. DOB missing 40. No duplicate IDs. 8 clubs.
+149 club-season records, 122 starter-equivalent, 27 backups. DOB missing 0 (reconciled in historical audit patch; 15 newly filled values remain prior-DRAFT-only). No duplicate IDs. 8 clubs.
 
 ## 3. Complete club-by-club selected players
 
@@ -93,7 +93,7 @@ Tactics (provisional): 4-3-1-2 — Diego creative 10 with Rosenberg/Almeida/Sano
 | GK | 마누엘 노이어 | Manuel Neuer | FC Schalke 04 | 1986-03-27 | starter | 34/34/3060/0 | A+ | 1 | partially_verified |
 | CB | 마르셀루 보르동 | Marcelo Bordon | FC Schalke 04 | 1976-01-07 | starter | 31/31/2769/5 | A+ | 1 | partially_verified |
 | CB | 믈라덴 크르스타이치 | Mladen Krstajić | FC Schalke 04 | 1974-03-04 | starter | 23/23/2001/2 | A- | 10 | partially_verified |
-| CB | 베네딕트 회베데스 | Benedikt Höwedes | FC Schalke 04 | null (pending) | backup | 6/3/294/0 | C+ | 25 | partially_verified |
+| CB | 베네딕트 회베데스 | Benedikt Höwedes | FC Schalke 04 | 1988-02-29 | backup | 6/3/294/0 | C+ | 25 | partially_verified |
 | LB | 하이코 베스터만 | Heiko Westermann | FC Schalke 04 | 1983-08-14 | starter | 32/31/2784/4 | A0 | 3 | partially_verified |
 | LB | 크리스티안 판더 | Christian Pander | FC Schalke 04 | 1983-08-28 | starter | 17/17/1455/1 | B+ | 6 | partially_verified |
 | RB | 하피냐 | Rafinha | FC Schalke 04 | 1985-09-07 | starter | 32/31/2796/2 | A0 | 1 | partially_verified |
@@ -104,7 +104,7 @@ Tactics (provisional): 4-3-1-2 — Diego creative 10 with Rosenberg/Almeida/Sano
 | CAM | 이반 라키티치 | Ivan Rakitić | FC Schalke 04 | 1988-03-10 | starter | 29/23/1972/3 | A- | 5 | partially_verified |
 | LW | 페테르 뢰벤크란스 | Peter Løvenkrands | FC Schalke 04 | 1980-01-29 | backup | 20/6/809/0 | B- | 7 | partially_verified |
 | RW | 게랄트 아사모아 | Gerald Asamoah | FC Schalke 04 | 1978-10-03 | starter | 31/23/1904/7 | B+ | 5 | partially_verified |
-| RW | 비센테 산체스 | Vicente Sánchez | FC Schalke 04 | null (pending) | backup | 14/5/563/1 | C+ | 10 | partially_verified |
+| RW | 비센테 산체스 | Vicente Sánchez | FC Schalke 04 | 1979-12-07 | backup | 14/5/563/1 | C+ | 10 | partially_verified |
 | ST | 케빈 쿠라니 | Kevin Kurányi | FC Schalke 04 | 1982-03-02 | starter | 32/31/2750/15 | A+ | 3 | partially_verified |
 | ST | 할릴 알튼토프 | Halil Altıntop | FC Schalke 04 | 1982-12-08 | starter | 25/17/1330/6 | B+ | 16 | partially_verified |
 
@@ -122,16 +122,16 @@ Tactics (provisional): 4-3-1-2 — Kurányi forward; Rakitić behind, Jones and 
 | LB | 티모테 아투바 | Thimothée Atouba | Hamburger SV | 1982-02-17 | starter | 22/18/1574/0 | B+ | 7 | partially_verified |
 | RB | 제롬 보아텡 | Jérôme Boateng | Hamburger SV | 1988-09-03 | starter | 27/26/2156/0 | B+ | 5 | partially_verified |
 | RB | 기 드멜 | Guy Demel | Hamburger SV | 1981-06-13 | starter | 26/24/2123/0 | B+ | 6 | partially_verified |
-| RB | 미쇼 브레츠코 | Mišo Brečko | Hamburger SV | null (pending) | backup | 14/5/603/0 | C+ | 14 | partially_verified |
+| RB | 미쇼 브레츠코 | Mišo Brečko | Hamburger SV | 1984-05-01 | backup | 14/5/603/0 | C+ | 14 | partially_verified |
 | DM | 나이절 더용 | Nigel de Jong | Hamburger SV | 1984-11-30 | starter | 29/28/2488/1 | A0 | 2 | partially_verified |
 | CM | 다비트 야롤림 | David Jarolím | Hamburger SV | 1979-05-17 | starter | 28/27/2231/2 | B+ | 7 | partially_verified |
 | CAM | 라파엘 판데르파르트 | Rafael van der Vaart | Hamburger SV | 1983-02-11 | starter | 29/28/2524/12 | A+ | 2 | partially_verified |
 | LW | 표트르 트로호프스키 | Piotr Trochowski | Hamburger SV | 1984-03-22 | starter | 32/25/2112/1 | A- | 2 | partially_verified |
 | RW | 콜린 벤저민 | Collin Benjamin | Hamburger SV | 1978-08-03 | starter | 17/12/1078/1 | B0 | 9 | partially_verified |
-| RW | 로메오 카스텔렌 | Romeo Castelen | Hamburger SV | null (pending) | backup | 13/7/696/0 | C+ | 11 | partially_verified |
+| RW | 로메오 카스텔렌 | Romeo Castelen | Hamburger SV | 1983-05-03 | backup | 13/7/696/0 | C+ | 11 | partially_verified |
 | ST | 이비차 올리치 | Ivica Olić | Hamburger SV | 1979-09-14 | starter | 32/28/2433/14 | A+ | 4 | partially_verified |
 | ST | 파올로 게레로 | Paolo Guerrero | Hamburger SV | 1984-01-01 | starter | 29/24/2061/9 | A- | 12 | partially_verified |
-| ST | 모하메드 지단 | Mohamed Zidan | Hamburger SV | null (pending) | backup | 21/8/829/2 | B- | 24 | partially_verified |
+| ST | 모하메드 지단 | Mohamed Zidan | Hamburger SV | 1981-12-11 | backup | 21/8/829/2 | B- | 24 | partially_verified |
 
 Original 2007-08 squad statistics: https://www.bdfutbol.com/en/t/t2007-081008.html
 Tactics (provisional): 4-2-3-1 — Van der Vaart creative playmaker, De Jong holding, Trochowski wide, Olić and Guerrero attack rotation.
@@ -141,24 +141,24 @@ Tactics (provisional): 4-2-3-1 — Van der Vaart creative playmaker, De Jong hol
 | Pos | Korean | Original | Original club | DOB | Nomination | Apps / starts / min / goals | Tier | Rank | Verification |
 |---|---|---|---|---|---|---|---|---:|---|
 | GK | 디에고 베날리오 | Diego Benaglio | VfL Wolfsburg | 1983-09-08 | starter | 17/17/1530/0 | A- | 5 | partially_verified |
-| GK | 지몬 옌츠슈 | Simon Jentzsch | VfL Wolfsburg | null (pending) | starter | 15/15/1306/0 | B0 | 8 | partially_verified |
-| CB | 얀 시무네크 | Jan Šimůnek | VfL Wolfsburg | null (pending) | starter | 30/26/2340/0 | B+ | 12 | partially_verified |
+| GK | 지몬 옌츠슈 | Simon Jentzsch | VfL Wolfsburg | 1976-05-04 | starter | 15/15/1306/0 | B0 | 8 | partially_verified |
+| CB | 얀 시무네크 | Jan Šimůnek | VfL Wolfsburg | 1987-02-20 | starter | 30/26/2340/0 | B+ | 12 | partially_verified |
 | CB | 알렉산더 마들룽 | Alexander Madlung | VfL Wolfsburg | 1982-07-11 | starter | 27/23/2138/1 | B+ | 13 | partially_verified |
-| CB | 히카르두 코스타 | Ricardo Costa | VfL Wolfsburg | null (pending) | starter | 20/19/1696/2 | B+ | 14 | partially_verified |
+| CB | 히카르두 코스타 | Ricardo Costa | VfL Wolfsburg | 1981-05-16 | starter | 20/19/1696/2 | B+ | 14 | partially_verified |
 | LB | 마르셀 셰퍼 | Marcel Schäfer | VfL Wolfsburg | 1984-06-07 | starter | 29/28/2472/6 | A0 | 2 | partially_verified |
 | RB | 사샤 리터 | Sascha Riether | VfL Wolfsburg | 1983-03-28 | starter | 27/25/2171/1 | B+ | 4 | partially_verified |
-| RB | 파쿤도 키로가 | Facundo Quiroga | VfL Wolfsburg | null (pending) | backup | 12/10/781/0 | B- | 12 | partially_verified |
+| RB | 파쿤도 키로가 | Facundo Quiroga | VfL Wolfsburg | 1978-01-10 | backup | 12/10/781/0 | B- | 12 | partially_verified |
 | DM | 조주에 | Josué | VfL Wolfsburg | 1979-07-19 | starter | 30/28/2395/1 | A0 | 4 | partially_verified |
-| DM | 호나탄 산타나 | Jonathan Santana | VfL Wolfsburg | null (pending) | backup | 10/7/652/0 | B- | 14 | partially_verified |
+| DM | 호나탄 산타나 | Jonathan Santana | VfL Wolfsburg | 1981-10-19 | backup | 10/7/652/0 | B- | 14 | partially_verified |
 | CM | 크리스티안 겐트너 | Christian Gentner | VfL Wolfsburg | 1985-08-14 | starter | 31/26/2252/3 | A- | 4 | partially_verified |
-| CM | 하세베 마코토 | Makoto Hasebe | VfL Wolfsburg | null (pending) | starter | 16/13/1117/1 | B0 | 12 | partially_verified |
-| CM | 다니엘 바이어 | Daniel Baier | VfL Wolfsburg | null (pending) | backup | 15/9/889/0 | B- | 16 | partially_verified |
+| CM | 하세베 마코토 | Makoto Hasebe | VfL Wolfsburg | 1984-01-18 | starter | 16/13/1117/1 | B0 | 12 | partially_verified |
+| CM | 다니엘 바이어 | Daniel Baier | VfL Wolfsburg | 1984-05-18 | backup | 15/9/889/0 | B- | 16 | partially_verified |
 | CAM | 마르셀리뉴 | Marcelinho | VfL Wolfsburg | 1975-05-17 | starter | 33/33/2744/7 | A0 | 3 | partially_verified |
 | LW | 야체크 크시누베크 | Jacek Krzynówek | VfL Wolfsburg | 1976-05-15 | starter | 19/11/921/4 | B+ | 3 | partially_verified |
 | RW | 아슈칸 데자가 | Ashkan Dejagah | VfL Wolfsburg | 1986-07-05 | starter | 31/19/1880/8 | A- | 1 | partially_verified |
 | ST | 그라피테 | Grafite | VfL Wolfsburg | 1979-04-02 | starter | 24/22/1871/11 | A- | 9 | partially_verified |
 | ST | 에딘 제코 | Edin Džeko | VfL Wolfsburg | 1986-03-17 | starter | 28/17/1802/8 | B+ | 14 | partially_verified |
-| ST | 세르지우 라두 | Sergiu Radu | VfL Wolfsburg | null (pending) | backup | 11/4/397/2 | C+ | 25 | partially_verified |
+| ST | 세르지우 라두 | Sergiu Radu | VfL Wolfsburg | 1977-08-10 | backup | 11/4/397/2 | C+ | 25 | partially_verified |
 
 Original 2007-08 squad statistics: https://www.bdfutbol.com/en/t/t2007-081001.html
 Tactics (provisional): 4-2-3-1 — Marcelinho creator, Josué controlling midfielder; Grafite/Džeko rotate or partner, Dejagah right.
@@ -168,14 +168,14 @@ Tactics (provisional): 4-2-3-1 — Marcelinho creator, Josué controlling midfie
 | Pos | Korean | Original | Original club | DOB | Nomination | Apps / starts / min / goals | Tier | Rank | Verification |
 |---|---|---|---|---|---|---|---|---:|---|
 | GK | 라파엘 셰퍼 | Raphael Schäfer | VfB Stuttgart | 1979-01-30 | starter | 23/23/2070/0 | B0 | 7 | partially_verified |
-| GK | 스벤 울라이히 | Sven Ulreich | VfB Stuttgart | null (pending) | starter | 11/11/990/0 | B- | 11 | partially_verified |
+| GK | 스벤 울라이히 | Sven Ulreich | VfB Stuttgart | 1988-08-03 | starter | 11/11/990/0 | B- | 11 | partially_verified |
 | CB | 페르난두 메이라 | Fernando Meira | VfB Stuttgart | 1978-06-05 | starter | 28/27/2294/3 | A- | 7 | partially_verified |
 | CB | 마티외 델피에르 | Matthieu Delpierre | VfB Stuttgart | 1981-04-26 | starter | 22/22/1959/0 | B+ | 15 | partially_verified |
 | CB | 세르다르 타슈치 | Serdar Taşçı | VfB Stuttgart | 1987-04-24 | starter | 21/20/1681/1 | B+ | 17 | partially_verified |
 | LB | 루도비크 마냉 | Ludovic Magnin | VfB Stuttgart | 1979-04-20 | starter | 27/21/1912/0 | B0 | 10 | partially_verified |
 | LB | 아르튀르 보카 | Arthur Boka | VfB Stuttgart | 1983-04-02 | starter | 17/11/1047/0 | B- | 13 | partially_verified |
 | RB | 리카르도 오소리오 | Ricardo Osorio | VfB Stuttgart | 1980-03-30 | starter | 22/20/1744/0 | B+ | 8 | partially_verified |
-| RB | 안드레아스 베크 | Andreas Beck | VfB Stuttgart | null (pending) | starter | 18/12/1069/1 | B0 | 9 | partially_verified |
+| RB | 안드레아스 베크 | Andreas Beck | VfB Stuttgart | 1987-03-13 | starter | 18/12/1069/1 | B0 | 9 | partially_verified |
 | DM | 파벨 파르도 | Pável Pardo | VfB Stuttgart | 1976-07-26 | starter | 29/29/2483/2 | A0 | 1 | partially_verified |
 | CM | 토마스 히츨슈페르거 | Thomas Hitzlsperger | VfB Stuttgart | 1982-04-05 | starter | 25/23/1985/5 | A- | 2 | partially_verified |
 | CM | 사미 케디라 | Sami Khedira | VfB Stuttgart | 1987-04-04 | starter | 24/19/1722/1 | B+ | 9 | partially_verified |
@@ -184,8 +184,8 @@ Tactics (provisional): 4-2-3-1 — Marcelinho creator, Josué controlling midfie
 | RW | 로베르토 힐베르트 | Roberto Hilbert | VfB Stuttgart | 1984-10-16 | starter | 32/30/2543/4 | A- | 2 | partially_verified |
 | ST | 마리오 고메스 | Mario Gómez | VfB Stuttgart | 1985-07-10 | starter | 25/23/1968/19 | A+ | 2 | partially_verified |
 | ST | 카카우 | Cacau | VfB Stuttgart | 1981-03-27 | starter | 27/24/2063/9 | A- | 11 | partially_verified |
-| ST | 치프리안 마리카 | Ciprian Marica | VfB Stuttgart | null (pending) | starter | 28/15/1464/2 | B0 | 21 | partially_verified |
-| ST | 에베르통 | Ewerthon | VfB Stuttgart | null (pending) | backup | 11/3/375/1 | C+ | 26 | partially_verified |
+| ST | 치프리안 마리카 | Ciprian Marica | VfB Stuttgart | 1985-10-02 | starter | 28/15/1464/2 | B0 | 21 | partially_verified |
+| ST | 에베르통 | Ewerthon | VfB Stuttgart | 1981-06-10 | backup | 11/3/375/1 | C+ | 26 | partially_verified |
 
 Original 2007-08 squad statistics: https://www.bdfutbol.com/en/t/t2007-081002.html
 Tactics (provisional): 4-4-2 — Gómez and Cacau lead the attack; Baştürk 10, Pardo deep, Hilbert right, several rotating defenders.
@@ -197,21 +197,21 @@ Tactics (provisional): 4-4-2 — Gómez and Cacau lead the attack; Baştürk 10,
 | GK | 야로슬라프 드로브니 | Jaroslav Drobný | Hertha BSC | 1979-10-18 | starter | 34/34/3060/0 | B+ | 6 | partially_verified |
 | CB | 아르네 프리드리히 | Arne Friedrich | Hertha BSC | 1979-05-29 | starter | 30/30/2625/0 | A- | 8 | partially_verified |
 | CB | 요시프 시무니치 | Josip Šimunić | Hertha BSC | 1978-02-18 | starter | 29/29/2610/0 | A- | 9 | partially_verified |
-| CB | 슈테브 폰 베르겐 | Steve von Bergen | Hertha BSC | null (pending) | starter | 25/21/1980/0 | B+ | 16 | partially_verified |
+| CB | 슈테브 폰 베르겐 | Steve von Bergen | Hertha BSC | 1983-06-10 | starter | 25/21/1980/0 | B+ | 16 | partially_verified |
 | LB | 말리크 파티 | Malik Fathi | Hertha BSC | 1983-10-29 | starter | 22/22/1936/1 | B0 | 9 | partially_verified |
 | LB | 지우베르투 | Gilberto | Hertha BSC | 1976-04-25 | starter | 15/14/1236/1 | B0 | 11 | partially_verified |
-| RB | 소피안 샤헤드 | Sofian Chahed | Hertha BSC | null (pending) | starter | 33/31/2696/4 | B+ | 2 | partially_verified |
-| DM | 미네이루 | Mineiro | Hertha BSC | null (pending) | starter | 26/17/1648/1 | B+ | 9 | partially_verified |
+| RB | 소피안 샤헤드 | Sofian Chahed | Hertha BSC | 1983-04-18 | starter | 33/31/2696/4 | B+ | 2 | partially_verified |
+| DM | 미네이루 | Mineiro | Hertha BSC | 1975-08-02 | starter | 26/17/1648/1 | B+ | 9 | partially_verified |
 | DM | 팔 다르더이 | Pál Dárdai | Hertha BSC | 1976-03-16 | starter | 23/13/1278/0 | B0 | 11 | partially_verified |
-| CM | 파비안 루스텐베르거 | Fabian Lustenberger | Hertha BSC | null (pending) | starter | 24/18/1405/1 | B+ | 10 | partially_verified |
+| CM | 파비안 루스텐베르거 | Fabian Lustenberger | Hertha BSC | 1988-05-02 | starter | 24/18/1405/1 | B+ | 10 | partially_verified |
 | CM | 고이코 카차르 | Gojko Kačar | Hertha BSC | 1987-01-26 | starter | 17/17/1441/1 | B+ | 11 | partially_verified |
 | CAM | 하파에우 | Raffael | Hertha BSC | 1985-03-28 | starter | 15/15/1302/4 | A- | 6 | partially_verified |
-| LW | 루돌프 스카첼 | Rudolf Skácel | Hertha BSC | null (pending) | starter | 16/15/1302/2 | B0 | 4 | partially_verified |
-| RW | 파트리크 에베르트 | Patrick Ebert | Hertha BSC | null (pending) | starter | 27/25/2087/1 | B+ | 6 | partially_verified |
+| LW | 루돌프 스카첼 | Rudolf Skácel | Hertha BSC | 1979-07-17 | starter | 16/15/1302/2 | B0 | 4 | partially_verified |
+| RW | 파트리크 에베르트 | Patrick Ebert | Hertha BSC | 1987-03-17 | starter | 27/25/2087/1 | B+ | 6 | partially_verified |
 | RW | 우카시 피슈체크 | Łukasz Piszczek | Hertha BSC | 1985-06-03 | starter | 24/12/1206/1 | B0 | 8 | partially_verified |
 | ST | 마르코 판텔리치 | Marko Pantelić | Hertha BSC | 1978-09-15 | starter | 28/27/2282/13 | A- | 8 | partially_verified |
-| ST | 안드레 리마 | André Lima | Hertha BSC | null (pending) | starter | 16/10/968/2 | B0 | 22 | partially_verified |
-| ST | 솔로몬 오코롱크워 | Solomon Okoronkwo | Hertha BSC | null (pending) | backup | 22/3/571/4 | B- | 23 | partially_verified |
+| ST | 안드레 리마 | André Lima | Hertha BSC | 1985-05-03 | starter | 16/10/968/2 | B0 | 22 | partially_verified |
+| ST | 솔로몬 오코롱크워 | Solomon Okoronkwo | Hertha BSC | 1987-03-02 | backup | 22/3/571/4 | B- | 23 | partially_verified |
 
 Original 2007-08 squad statistics: https://www.bdfutbol.com/en/t/t2007-081011.html
 Tactics (provisional): 4-2-3-1 — Pantelić main striker, winter arrival Raffael 10, Ebert wide; Favre's shape subject to match-level audit.
@@ -221,26 +221,26 @@ Tactics (provisional): 4-2-3-1 — Pantelić main striker, winter arrival Raffae
 | Pos | Korean | Original | Original club | DOB | Nomination | Apps / starts / min / goals | Tier | Rank | Verification |
 |---|---|---|---|---|---|---|---|---:|---|
 | GK | 마르크 지글러 | Marc Ziegler | BV 09 Borussia Dortmund | 1976-06-13 | starter | 15/15/1306/0 | B- | 9 | partially_verified |
-| GK | 로만 바이덴펠러 | Roman Weidenfeller | BV 09 Borussia Dortmund | null (pending) | starter | 14/14/1260/0 | B- | 10 | partially_verified |
-| GK | 마르셀 회테케 | Marcel Höttecke | BV 09 Borussia Dortmund | null (pending) | backup | 5/5/450/0 | C+ | 13 | partially_verified |
-| CB | 크리스티안 뵈른스 | Christian Wörns | BV 09 Borussia Dortmund | null (pending) | starter | 20/19/1722/1 | B0 | 20 | partially_verified |
-| CB | 로베르트 코바치 | Robert Kovač | BV 09 Borussia Dortmund | null (pending) | starter | 22/20/1818/0 | B0 | 21 | partially_verified |
+| GK | 로만 바이덴펠러 | Roman Weidenfeller | BV 09 Borussia Dortmund | 1980-08-06 | starter | 14/14/1260/0 | B- | 10 | partially_verified |
+| GK | 마르셀 회테케 | Marcel Höttecke | BV 09 Borussia Dortmund | 1987-04-25 | backup | 5/5/450/0 | C+ | 13 | partially_verified |
+| CB | 크리스티안 뵈른스 | Christian Wörns | BV 09 Borussia Dortmund | 1972-05-10 | starter | 20/19/1722/1 | B0 | 20 | partially_verified |
+| CB | 로베르트 코바치 | Robert Kovač | BV 09 Borussia Dortmund | 1974-04-06 | starter | 22/20/1818/0 | B0 | 21 | partially_verified |
 | CB | 마츠 후멜스 | Mats Hummels | BV 09 Borussia Dortmund | 1988-12-16 | starter | 13/10/879/0 | B0 | 22 | partially_verified |
 | CB | 마르틴 아메디크 | Martin Amedick | BV 09 Borussia Dortmund | 1982-09-06 | starter | 16/11/1028/0 | B- | 23 | partially_verified |
-| CB | 마르쿠스 브르젠스카 | Markus Brzenska | BV 09 Borussia Dortmund | null (pending) | backup | 12/11/991/0 | B- | 24 | partially_verified |
-| LB | 데데 | Dedê | BV 09 Borussia Dortmund | null (pending) | starter | 30/30/2628/1 | B+ | 4 | partially_verified |
+| CB | 마르쿠스 브르젠스카 | Markus Brzenska | BV 09 Borussia Dortmund | 1984-05-25 | backup | 12/11/991/0 | B- | 24 | partially_verified |
+| LB | 데데 | Dedê | BV 09 Borussia Dortmund | 1978-04-18 | starter | 30/30/2628/1 | B+ | 4 | partially_verified |
 | RB | 안토니오 루카비나 | Antonio Rukavina | BV 09 Borussia Dortmund | 1984-01-26 | starter | 14/14/1226/0 | B0 | 10 | partially_verified |
-| RB | 필리프 데겐 | Philipp Degen | BV 09 Borussia Dortmund | null (pending) | starter | 10/10/848/0 | B- | 11 | partially_verified |
-| DM | 팅가 | Tinga | BV 09 Borussia Dortmund | null (pending) | starter | 33/33/2782/4 | B+ | 7 | partially_verified |
-| DM | 제바스티안 켈 | Sebastian Kehl | BV 09 Borussia Dortmund | null (pending) | starter | 14/14/1221/3 | B0 | 10 | partially_verified |
-| DM | 마르크안드레 크루스카 | Marc-André Kruska | BV 09 Borussia Dortmund | null (pending) | backup | 23/13/1243/0 | B- | 12 | partially_verified |
-| CM | 플로리안 크링게 | Florian Kringe | BV 09 Borussia Dortmund | null (pending) | starter | 27/25/2101/5 | B+ | 6 | partially_verified |
-| CAM | 조반니 페데리코 | Giovanni Federico | BV 09 Borussia Dortmund | null (pending) | starter | 30/25/1987/4 | B+ | 7 | partially_verified |
-| LW | 델론 버클리 | Delron Buckley | BV 09 Borussia Dortmund | null (pending) | starter | 31/11/1411/1 | B- | 5 | partially_verified |
+| RB | 필리프 데겐 | Philipp Degen | BV 09 Borussia Dortmund | 1983-02-15 | starter | 10/10/848/0 | B- | 11 | partially_verified |
+| DM | 팅가 | Tinga | BV 09 Borussia Dortmund | 1978-01-13 | starter | 33/33/2782/4 | B+ | 7 | partially_verified |
+| DM | 제바스티안 켈 | Sebastian Kehl | BV 09 Borussia Dortmund | 1980-02-13 | starter | 14/14/1221/3 | B0 | 10 | partially_verified |
+| DM | 마르크안드레 크루스카 | Marc-André Kruska | BV 09 Borussia Dortmund | 1987-06-29 | backup | 23/13/1243/0 | B- | 12 | partially_verified |
+| CM | 플로리안 크링게 | Florian Kringe | BV 09 Borussia Dortmund | 1982-08-18 | starter | 27/25/2101/5 | B+ | 6 | partially_verified |
+| CAM | 조반니 페데리코 | Giovanni Federico | BV 09 Borussia Dortmund | 1980-10-04 | starter | 30/25/1987/4 | B+ | 7 | partially_verified |
+| LW | 델론 버클리 | Delron Buckley | BV 09 Borussia Dortmund | 1977-12-07 | starter | 31/11/1411/1 | B- | 5 | partially_verified |
 | RW | 야쿠프 브와슈치코프스키 | Jakub Błaszczykowski | BV 09 Borussia Dortmund | 1985-12-14 | starter | 24/22/1817/1 | B+ | 7 | partially_verified |
 | ST | 믈라덴 페트리치 | Mladen Petrić | BV 09 Borussia Dortmund | 1981-01-01 | starter | 29/28/2382/13 | A- | 7 | partially_verified |
-| ST | 알렉산더 프라이 | Alexander Frei | BV 09 Borussia Dortmund | null (pending) | backup | 13/9/942/6 | B+ | 17 | partially_verified |
-| ST | 디에고 클리모비치 | Diego Klimowicz | BV 09 Borussia Dortmund | null (pending) | starter | 28/13/1298/6 | B0 | 19 | partially_verified |
+| ST | 알렉산더 프라이 | Alexander Frei | BV 09 Borussia Dortmund | 1979-07-15 | backup | 13/9/942/6 | B+ | 17 | partially_verified |
+| ST | 디에고 클리모비치 | Diego Klimowicz | BV 09 Borussia Dortmund | 1974-07-06 | starter | 28/13/1298/6 | B0 | 19 | partially_verified |
 | ST | 넬손 발데스 | Nelson Valdez | BV 09 Borussia Dortmund | 1983-11-28 | starter | 27/18/1634/3 | B0 | 20 | partially_verified |
 
 Original 2007-08 squad statistics: https://www.bdfutbol.com/en/t/t2007-081003.html
@@ -618,7 +618,7 @@ Cells are `club: appearances/starts/goals [verification]`; `?` is missing eviden
 | Hertha BSC | CM | Fabian Lustenberger | club pending: ?/?/? [evidence_pending] | club pending: ?/?/? [evidence_pending] | Hertha BSC: 24/18/1 [BDFutbol_2007_08_team_season_player_stats] | evidence_pending |
 | Hertha BSC | CM | Gojko Kačar | club pending: ?/?/? [evidence_pending] | club pending: ?/?/? [evidence_pending] | Hertha BSC: 17/17/1 [BDFutbol_2007_08_team_season_player_stats] | secondary_biographical_date_independent_profile_pending |
 | Hertha BSC | CAM | Raffael | club pending: ?/?/? [evidence_pending] | club pending: ?/?/? [evidence_pending] | Hertha BSC: 15/15/4 [BDFutbol_2007_08_team_season_player_stats] | secondary_biographical_date_independent_profile_pending |
-| Hertha BSC | LW | Rudolf Skácel | club pending: ?/?/? [evidence_pending] | club pending: ?/?/? [evidence_pending] | Hertha BSC: 16/15/2 [BDFutbol_2007_08_team_season_player_stats] | evidence_pending |
+| Hertha BSC | LW | Rudolf Skácel | Heart of Midlothian: 35/33/16 [independently_verified_FBref_season_player_record] | Southampton: 37/32/3 [independently_verified_FBref_season_player_record] | Hertha BSC: 16/15/2 [BDFutbol_2007_08_team_season_player_stats] | evidence_pending |
 | Hertha BSC | RW | Patrick Ebert | club pending: ?/?/? [evidence_pending] | club pending: ?/?/? [evidence_pending] | Hertha BSC: 27/25/1 [BDFutbol_2007_08_team_season_player_stats] | evidence_pending |
 | Hertha BSC | RW | Łukasz Piszczek | club pending: ?/?/? [evidence_pending] | club pending: ?/?/? [evidence_pending] | Hertha BSC: 24/12/1 [BDFutbol_2007_08_team_season_player_stats] | secondary_biographical_date_independent_profile_pending |
 | Hertha BSC | ST | Marko Pantelić | Hertha BSC: 28/26/? [prior_Football_Archive_DRAFT_unverified] | club pending: ?/?/? [evidence_pending] | Hertha BSC: 28/27/13 [BDFutbol_2007_08_team_season_player_stats] | prior_DRAFT_biography_not_independent |
@@ -635,7 +635,7 @@ Cells are `club: appearances/starts/goals [verification]`; `?` is missing eviden
 | BV 09 Borussia Dortmund | LB | Dedê | club pending: ?/?/? [evidence_pending] | club pending: ?/?/? [evidence_pending] | BV 09 Borussia Dortmund: 30/30/1 [BDFutbol_2007_08_team_season_player_stats] | evidence_pending |
 | BV 09 Borussia Dortmund | RB | Antonio Rukavina | club pending: ?/?/? [evidence_pending] | club pending: ?/?/? [evidence_pending] | BV 09 Borussia Dortmund: 14/14/0 [BDFutbol_2007_08_team_season_player_stats] | secondary_biographical_date_independent_profile_pending |
 | BV 09 Borussia Dortmund | RB | Philipp Degen | club pending: ?/?/? [evidence_pending] | club pending: ?/?/? [evidence_pending] | BV 09 Borussia Dortmund: 10/10/0 [BDFutbol_2007_08_team_season_player_stats] | evidence_pending |
-| BV 09 Borussia Dortmund | DM | Tinga | club pending: ?/?/? [evidence_pending] | club pending: ?/?/? [evidence_pending] | BV 09 Borussia Dortmund: 33/33/4 [BDFutbol_2007_08_team_season_player_stats] | evidence_pending |
+| BV 09 Borussia Dortmund | DM | Tinga | BV 09 Borussia Dortmund: 31/?/4 [independently_verified_DFB_current_and_previous_season_appearance_goals] | club pending: ?/?/? [evidence_pending] | BV 09 Borussia Dortmund: 33/33/4 [BDFutbol_2007_08_team_season_player_stats] | evidence_pending |
 | BV 09 Borussia Dortmund | DM | Sebastian Kehl | club pending: ?/?/? [evidence_pending] | club pending: ?/?/? [evidence_pending] | BV 09 Borussia Dortmund: 14/14/3 [BDFutbol_2007_08_team_season_player_stats] | evidence_pending |
 | BV 09 Borussia Dortmund | DM | Marc-André Kruska | club pending: ?/?/? [evidence_pending] | club pending: ?/?/? [evidence_pending] | BV 09 Borussia Dortmund: 23/13/0 [BDFutbol_2007_08_team_season_player_stats] | evidence_pending |
 | BV 09 Borussia Dortmund | CM | Florian Kringe | club pending: ?/?/? [evidence_pending] | club pending: ?/?/? [evidence_pending] | BV 09 Borussia Dortmund: 27/25/5 [BDFutbol_2007_08_team_season_player_stats] | evidence_pending |
@@ -810,7 +810,7 @@ Cells are `club: appearances/starts/goals [verification]`; `?` is missing eviden
 | Starter count / backups | No arbitrary starter count; all 8 clubs backup max 1 per position |
 | Tier populated / position ranking | 149 / 149 DRAFT only, not verified individual-history |
 | 2005-06 and 2006-07 personal archival data | Present when available as **unverified hints**, otherwise null |
-| DOB | Missing exact dates retained null, other dates independent profile verification pending |
+| DOB | All DOB fields filled after profile lookup; 15 of newly recovered dates still require independent person-level confirmation |
 | Full 3-season individual historical verification | **0 / 149**, NOT completed |
 | Season formation modal-frequency verification | Provisional; no leaguewide frequency data |
 | Best XI | 11 proposed, **proposed_unapproved** |
@@ -823,3 +823,56 @@ Cells are `club: appearances/starts/goals [verification]`; `?` is missing eviden
 Important transfer/role issues: Franck Ribéry, Luca Toni, and Zé Roberto were new Bayern players; Gómez led Stuttgart with 19 goals despite 25 appearances; VfL Wolfsburg changed first-choice GK from Jentzsch to Benaglio in winter; Hertha registered Raffael and Kačar in winter and lost Fathi/Gilberto. Dortmund rotated goalkeepers and centre-backs due to injuries. Diego, Ribéry, Van der Vaart and Rakitić positions must be based on season roles, not later reputations. These all remain matchwise verification points.
 
 Do not auto-start Bundesliga 2008-09. All grades, ranks, XI remain DRAFT pending user approval.
+
+## 12. Historical audit patch — exact DOB reconciliation and independently checked individual records (2026-11-05)
+
+All previously missing DOBs are filled: **40** values, 25 from direct DFB/Bayern/São Paulo individual profiles and 15 from older Football Archive DRAFT roster references (not independently certified as individual person records). **0 DOB left null**. Other previously populated DOBs remain individually not independently audited.
+
+| Player | Date of birth | New information source and status |
+|---|---|---|
+| Benedikt Höwedes | 1988-02-29 | verified_official_individual_profile: https://datencenter.dfb.de/en/data-center/people/benedikt-howedes/player |
+| Vicente Sánchez | 1979-12-07 | verified_official_individual_profile: https://datencenter.dfb.de/en/people/vicente-sanchez/player |
+| Mišo Brečko | 1984-05-01 | prior_Football_Archive_DRAFT_birthday_unverified: https://datencenter.dfb.de/competitions/bundesliga/seasons/2004-2005/teams/hamburger-sv |
+| Romeo Castelen | 1983-05-03 | verified_official_individual_profile: https://datencenter.dfb.de/en/data-center/people/romeo-castelen/player |
+| Mohamed Zidan | 1981-12-11 | verified_official_individual_profile: https://datencenter.dfb.de/en/data-center/people/mohamed-zidan/player |
+| Simon Jentzsch | 1976-05-04 | prior_Football_Archive_DRAFT_birthday_unverified: https://datencenter.dfb.de/competitions/bundesliga/seasons/2004-2005/teams/vfl-wolfsburg |
+| Jan Šimůnek | 1987-02-20 | verified_official_individual_profile: https://datencenter.dfb.de/en/data-center/people/jan-simunek/player |
+| Ricardo Costa | 1981-05-16 | verified_official_individual_profile: https://datencenter.dfb.de/en/data-center/people/ricardo-costa/player |
+| Facundo Quiroga | 1978-01-10 | prior_Football_Archive_DRAFT_birthday_unverified: https://datencenter.dfb.de/competitions/bundesliga/seasons/2004-2005/teams/vfl-wolfsburg |
+| Jonathan Santana | 1981-10-19 | verified_official_individual_profile: https://datencenter.dfb.de/en/data-center/people/jonathan-santana/player |
+| Makoto Hasebe | 1984-01-18 | verified_official_individual_profile: https://datencenter.dfb.de/en/data-center/people/makoto-hasebe/player |
+| Daniel Baier | 1984-05-18 | verified_official_individual_profile: https://datencenter.dfb.de/en/data-center/people/daniel-baier/player |
+| Sergiu Radu | 1977-08-10 | verified_official_individual_profile: https://datencenter.dfb.de/en/data-center/people/sergiu-radu/player |
+| Sven Ulreich | 1988-08-03 | verified_official_individual_profile: https://fcbayern.com/en/teams/first-team/sven-ulreich |
+| Andreas Beck | 1987-03-13 | verified_official_individual_profile: https://datencenter.dfb.de/en/people/andreas-beck/player |
+| Ciprian Marica | 1985-10-02 | verified_official_individual_profile: https://datencenter.dfb.de/en/data-center/people/ciprian-marica/player |
+| Ewerthon | 1981-06-10 | prior_Football_Archive_DRAFT_birthday_unverified: https://datencenter.dfb.de/competitions/bundesliga/seasons/2004-2005/teams/borussia-dortmund |
+| Steve von Bergen | 1983-06-10 | verified_official_individual_profile: https://datencenter.dfb.de/en/data-center/people/steve-von-bergen/player |
+| Sofian Chahed | 1983-04-18 | prior_Football_Archive_DRAFT_birthday_unverified: https://datencenter.dfb.de/competitions/bundesliga/seasons/2004-2005/teams/hertha-bsc |
+| Mineiro | 1975-08-02 | verified_official_individual_profile: https://datencenter.dfb.de/en/data-center/people/mineiro/player |
+| Fabian Lustenberger | 1988-05-02 | verified_official_individual_profile: https://datencenter.dfb.de/en/people/fabian-lustenberger/player |
+| Rudolf Skácel | 1979-07-17 | verified_official_individual_profile: https://datencenter.dfb.de/en/data-center/people/rudi-skacel/player |
+| Patrick Ebert | 1987-03-17 | verified_official_individual_profile: https://datencenter.dfb.de/en/data-center/people/patrick-ebert/player |
+| André Lima | 1985-05-03 | verified_official_individual_profile: https://www.saopaulofc.net/sao-paulo-define-contratacao-de-andre-lima/ |
+| Solomon Okoronkwo | 1987-03-02 | verified_official_individual_profile: https://datencenter.dfb.de/en/data-center/people/solomon-okoronkwo/player |
+| Roman Weidenfeller | 1980-08-06 | prior_Football_Archive_DRAFT_birthday_unverified: https://datencenter.dfb.de/competitions/bundesliga/seasons/2004-2005/teams/borussia-dortmund |
+| Marcel Höttecke | 1987-04-25 | verified_official_individual_profile: https://datencenter.dfb.de/en/data-center/people/marcel-hottecke/player |
+| Robert Kovač | 1974-04-06 | prior_Football_Archive_DRAFT_birthday_unverified: https://datencenter.dfb.de/competitions/bundesliga/seasons/2004-2005/teams/bayern-muenchen |
+| Christian Wörns | 1972-05-10 | prior_Football_Archive_DRAFT_birthday_unverified: https://datencenter.dfb.de/competitions/bundesliga/seasons/2004-2005/teams/borussia-dortmund |
+| Markus Brzenska | 1984-05-25 | prior_Football_Archive_DRAFT_birthday_unverified: https://datencenter.dfb.de/competitions/bundesliga/seasons/2004-2005/teams/borussia-dortmund |
+| Dedê | 1978-04-18 | prior_Football_Archive_DRAFT_birthday_unverified: https://datencenter.dfb.de/competitions/bundesliga/seasons/2004-2005/teams/borussia-dortmund |
+| Philipp Degen | 1983-02-15 | verified_official_individual_profile: https://datencenter.dfb.de/en/data-center/people/philipp-degen/player |
+| Tinga | 1978-01-13 | verified_official_individual_profile: https://datencenter.dfb.de/en/data-center/people/tinga/player |
+| Sebastian Kehl | 1980-02-13 | prior_Football_Archive_DRAFT_birthday_unverified: https://datencenter.dfb.de/competitions/bundesliga/seasons/2004-2005/teams/borussia-dortmund |
+| Marc-André Kruska | 1987-06-29 | prior_Football_Archive_DRAFT_birthday_unverified: https://datencenter.dfb.de/competitions/bundesliga/seasons/2004-2005/teams/borussia-dortmund |
+| Florian Kringe | 1982-08-18 | prior_Football_Archive_DRAFT_birthday_unverified: https://datencenter.dfb.de/competitions/bundesliga/seasons/2004-2005/teams/borussia-dortmund |
+| Giovanni Federico | 1980-10-04 | verified_official_individual_profile: https://datencenter.dfb.de/en/data-center/people/giovanni-federico/player |
+| Delron Buckley | 1977-12-07 | prior_Football_Archive_DRAFT_birthday_unverified: https://datencenter.dfb.de/competitions/bundesliga/seasons/2003-2004/teams/vfl-bochum |
+| Diego Klimowicz | 1974-07-06 | prior_Football_Archive_DRAFT_birthday_unverified: https://datencenter.dfb.de/competitions/bundesliga/seasons/2004-2005/teams/vfl-wolfsburg |
+| Alexander Frei | 1979-07-15 | verified_official_individual_profile: https://datencenter.dfb.de/en/data-center/people/alexander-frei/player |
+
+- **Rudolf Skácel**: corrected actual pre-Bundesliga English/Scottish records: 2005-06 Heart of Midlothian 35 appearances 33 starts 16 goals 11 assists, 2006-07 Southampton English Championship 37 apps 32 starts 3 goals 8 assists. FBref direct season profile: https://fbref.com/en/players/9c5ac02e/Rudi-Skacel . 2007-08 BDFutbol's 1302 minutes conflicts with FBref's 1298 minutes. Thus `conflicting_sources` in player JSON; no invented reconciliation.
+- **Tinga**: DFB player record confirms 2006-07 Dortmund Bundesliga 31 league games, 4 goals, and 2007-08 Bundesliga 33 games, 4 goals. https://datencenter.dfb.de/en/data-center/people/tinga/player . Still needs 2005-06 Brazil evidence, tactical frequency and full personal impact verification.
+- **André Lima** Hertha birth and transfer identity supported by his next club São Paulo's 2008 official announcement (DOB 1985-05-03); 2005-06 European club appearances remain unverified. https://www.saopaulofc.net/sao-paulo-define-contratacao-de-andre-lima/ .
+
+**Historical 3-season complete player verification remains 0 / 149.** All 149 tier rankings remain DRAFT. One player has documented small statistical source disagreement. Source links for all players and pending checks are in current JSON.
