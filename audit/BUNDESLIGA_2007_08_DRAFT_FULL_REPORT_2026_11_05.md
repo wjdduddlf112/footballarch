@@ -146,7 +146,7 @@ Tactics (provisional): 4-2-3-1 — Van der Vaart creative playmaker, De Jong hol
 | CB | 알렉산더 마들룽 | Alexander Madlung | VfL Wolfsburg | 1982-07-11 | starter | 27/23/2138/1 | B+ | 13 | partially_verified |
 | CB | 히카르두 코스타 | Ricardo Costa | VfL Wolfsburg | 1981-05-16 | starter | 20/19/1696/2 | B+ | 14 | partially_verified |
 | LB | 마르셀 셰퍼 | Marcel Schäfer | VfL Wolfsburg | 1984-06-07 | starter | 29/28/2472/6 | A0 | 2 | partially_verified |
-| RB | 사샤 리터 | Sascha Riether | VfL Wolfsburg | 1983-03-28 | starter | 27/25/2171/1 | B+ | 4 | partially_verified |
+| RB | 사샤 리터 | Sascha Riether | VfL Wolfsburg | 1983-03-23 | starter | 27/25/2171/1 | B+ | 4 | partially_verified |
 | RB | 파쿤도 키로가 | Facundo Quiroga | VfL Wolfsburg | 1978-01-10 | backup | 12/10/781/0 | B- | 12 | partially_verified |
 | DM | 조주에 | Josué | VfL Wolfsburg | 1979-07-19 | starter | 30/28/2395/1 | A0 | 4 | partially_verified |
 | DM | 호나탄 산타나 | Jonathan Santana | VfL Wolfsburg | 1981-10-19 | backup | 10/7/652/0 | B- | 14 | partially_verified |
@@ -892,3 +892,7 @@ This section supersedes the provisional pre-test placeholders in §10. It does *
 - All player birthdates now non-null, but 15 were recovered from historical Football Archive DRAFT and remain **not individually source-certified**, rather than being misreported as verified.
 - One documented individual source conflict remains: Rudolf Skácel 2007-08 minutes (BDFutbol 1302 versus FBref 1298), stored as `verificationStatus: conflicting_sources`.
 - Final approval **not given** and next season Bundesliga 2008-09 **not started**.
+
+## 14. Post-audit biographical identity correction (2026-11-05)
+
+- Sascha Riether's inherited DOB 1983-03-28 was wrong. Updated the 2007-08 player JSON and all 2007-08 report occurrences to official **1983-03-23**, independently confirmed by DFB Datencenter, official Bundesliga and Schalke. No changes to his 2007-08 performance rank or player grade. Sources: https://datencenter.dfb.de/en/data-center/people/sascha-riether/player ; https://www.bundesliga.com/en/player/sascha-riether ; https://schalke04.de/personal/s04-verpflichtet-sascha-riether/index.html.

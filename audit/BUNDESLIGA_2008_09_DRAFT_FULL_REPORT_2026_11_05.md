@@ -39,7 +39,7 @@ All birth dates are populated, but their underlying historical source/provenance
 | CB | 얀 시무네크 | Jan Šimůnek | VfL Wolfsburg | 1987-02-20 | starter | 17/14/1288/0 | B+ | 18 |
 | CB | 히카르두 코스타 | Ricardo Costa | VfL Wolfsburg | 1981-05-16 | starter | 11/10/877/3 | B0 | 19 |
 | LB | 마르셀 셰퍼 | Marcel Schäfer | VfL Wolfsburg | 1984-06-07 | starter | 34/34/3038/0 | A0 | 2 |
-| RB | 사샤 리터 | Sascha Riether | VfL Wolfsburg | 1983-03-28 | starter | 28/26/2285/2 | A- | 1 |
+| RB | 사샤 리터 | Sascha Riether | VfL Wolfsburg | 1983-03-23 | starter | 28/26/2285/2 | A- | 1 |
 | RB | 페테르 페카리크 | Peter Pekarík | VfL Wolfsburg | 1986-10-30 | starter | 16/13/1145/0 | B+ | 8 |
 | RB | 크리스티안 차카르도 | Cristian Zaccardo | VfL Wolfsburg | 1981-12-21 | backup | 14/8/704/1 | B- | 13 |
 | DM | 조주에 | Josué | VfL Wolfsburg | 1979-07-19 | starter | 33/32/2873/0 | A0 | 2 |
@@ -462,7 +462,7 @@ World Class S/A+: 12; League Top Class S/A+/A0/A-: 48
 | VfL Wolfsburg | CM | Christian Gentner | VfB Stuttgart 15/3/0 [archived_DRAFT_not_independently_validated] | VfL Wolfsburg 31/26/3 [archived_DRAFT_not_independently_validated] | VfL Wolfsburg 34/32/4 [2008_09_BDFutbol_team_player_table] |
 | VfL Wolfsburg | CM | Makoto Hasebe | club pending ?/?/? [evidence_pending] | VfL Wolfsburg 16/13/1 [archived_DRAFT_not_independently_validated] | VfL Wolfsburg 25/16/0 [2008_09_BDFutbol_team_player_table] |
 | VfL Wolfsburg | CM | Jonathan Santana | club pending ?/?/? [evidence_pending] | VfL Wolfsburg 10/7/0 [archived_DRAFT_not_independently_validated] | VfL Wolfsburg 6/3/0 [2008_09_BDFutbol_team_player_table] |
-| VfL Wolfsburg | CAM | Zvjezdan Misimović | club pending ?/?/? [evidence_pending] | club pending ?/?/? [evidence_pending] | VfL Wolfsburg 33/33/6 [2008_09_BDFutbol_team_player_table] |
+| VfL Wolfsburg | CAM | Zvjezdan Misimović | VfL Bochum 30/30/7 [independent_FBref_2006_07_league_player_row] | 1. FC Nürnberg 28/23/10 [independent_FBref_2007_08_league_player_row] | VfL Wolfsburg 33/33/6 [2008_09_BDFutbol_team_player_table] |
 | VfL Wolfsburg | RW | Ashkan Dejagah | club pending ?/?/? [evidence_pending] | VfL Wolfsburg 31/19/8 [archived_DRAFT_not_independently_validated] | VfL Wolfsburg 27/13/3 [2008_09_BDFutbol_team_player_table] |
 | VfL Wolfsburg | ST | Edin Džeko | club pending ?/?/? [evidence_pending] | VfL Wolfsburg 28/17/8 [archived_DRAFT_not_independently_validated] | VfL Wolfsburg 32/29/26 [2008_09_BDFutbol_team_player_table] |
 | VfL Wolfsburg | ST | Grafite | club pending ?/?/? [evidence_pending] | VfL Wolfsburg 24/22/11 [archived_DRAFT_not_independently_validated] | VfL Wolfsburg 25/25/28 [2008_09_BDFutbol_team_player_table] |
@@ -708,3 +708,12 @@ Verification: 6 UEFA participants sourced, 117 current-year stats linked, 117 pr
 - User approval: NOT RECEIVED. Independent three-year player-quality audits: **0/117 fully independently audited**.
 - One preserved methodological warning: different assist providers disagree for Misimović and Özil; no false universally certified assist total.
 - No auto-start of 2009-10 Bundesliga.
+
+## 13. Direct official-source crosscheck and historical player record corrections
+
+- **Sascha Riether DOB corrected to 1983-03-23** from previously inherited 1983-03-28. Independent sources: https://datencenter.dfb.de/en/data-center/people/sascha-riether/player ; https://www.bundesliga.com/en/player/sascha-riether ; https://schalke04.de/personal/s04-verpflichtet-sascha-riether/index.html. Both Bundesliga 2007-08 and 2008-09 current-season rows changed. Bundesliga confirms right-back as primary 2008-09 role with midfield rotation; exact matchwise frequencies pending.
+- **Zvjezdan Misimović previous years** (FBref personal statistical row) 2006-07 VfL Bochum 30 appearances/30 starts/2598 minutes/7 goals/11 assists; 2007-08 1. FC Nürnberg 28/23/2068 minutes/10 goals/4 assists. https://fbref.com/en/players/0b51984b/Zvjezdan-Misimovic. These two years now have independent quantitative evidence but full qualitative 3-year impact remains UNVERIFIED.
+- **Misimović 2008-09 mismatch**: DFB and BDFutbol 33 league appearances and **6** goals; FBref 33 and **7** goals. BDFutbol 2733 minutes vs FBref 2721. Original primary BDF values preserved; contrary provider source metadata retained. https://datencenter.dfb.de/datencenter/personen/zvjezdan-misimovic/spieler ; https://fbref.com/en/players/0b51984b/Zvjezdan-Misimovic
+- **Marko Babić DOB unresolved**: DFB season club listing 21 January 1981; Sky Sports 28 January 1981. Current display retains DFB 1981-01-21 while JSON explicitly marks conflicting birth sources. https://datencenter.dfb.de/bundesliga/2008-2009/mannschaft/hertha-bsc ; https://www.skysports.com/football/player/9711/marko-babic
+
+No tier, rank or Best XI has been changed by this specific factual correction. Individual holistic three-season quality audits still **0/117 independently fully verified**, formation remains proposed, no final approval.
