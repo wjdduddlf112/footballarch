@@ -1,0 +1,117 @@
+{
+  "season": "Bundesliga 2011-12",
+  "recordedAt": "2026-11-05",
+  "repository": "wjdduddlf112/footballarch",
+  "branch": "main",
+  "result": "DRAFT_NOT_APPROVED",
+  "scope": "Actual GitHub file re-read and evaluated, separate from official historical verification or deployed browser success.",
+  "gitHubReadback": {
+    "json": "data/bundesliga-2011-12.json",
+    "jsonBlobSHA": "b1d6d9d0fc8a63014edd67400648d753691dcb9b",
+    "report": "audit/BUNDESLIGA_2011_12_DRAFT_FULL_REPORT_2026_11_05.md",
+    "reportBlobSHA": "5f566edf5dff3ab622453052239f428256f26c56",
+    "frontend": "assets/app.js",
+    "frontendBlobSHA": "9b73ee3e8ef900a76efd3ee69abe8b01c1b815e2",
+    "validator": "scripts/validate_bundesliga_2011_12.py",
+    "browserScript": "scripts/browser_smoke_bundesliga_2011_12.cjs",
+    "workflow": ".github/workflows/validate-bundesliga-2011-12.yml",
+    "branchFileReadbackConfirmed": true
+  },
+  "structural": {
+    "status": "PASS",
+    "method": "in-session JavaScript validation of GitHub main fetched JSON; Python validator script independently authored but not executed here",
+    "clubs": 7,
+    "players": 126,
+    "starterPlayers": 106,
+    "backupPlayers": 20,
+    "eligibleClubs": [
+      "dortmund",
+      "bayern",
+      "schalke",
+      "gladbach",
+      "leverkusen",
+      "stuttgart",
+      "hannover"
+    ],
+    "clubCounts": {
+      "dortmund": 20,
+      "bayern": 17,
+      "schalke": 20,
+      "gladbach": 16,
+      "leverkusen": 18,
+      "stuttgart": 18,
+      "hannover": 17
+    },
+    "positions": {
+      "GK": 10,
+      "CB": 22,
+      "LB": 13,
+      "RB": 12,
+      "DM": 13,
+      "CM": 11,
+      "CAM": 8,
+      "LW": 10,
+      "RW": 9,
+      "ST": 18
+    },
+    "noDuplicateIds": true,
+    "backupPerClubPositionMaxOne": true,
+    "noStarterQuota": true,
+    "ranks": "All ten position ranks contiguous 1..N and sorted by tier",
+    "bestXi": "Exactly 11 distinct IDs, actual assigned positions, proposed_unapproved",
+    "tierSumMatches": true,
+    "worldClass": 17,
+    "leagueTopClass": 38,
+    "scriptSyntax": {
+      "frontendJS": "PASS",
+      "browserSmokeJS": "PASS"
+    },
+    "priorSeasonRegression": {
+      "season": "2010-11",
+      "playerCount": 112,
+      "sourceBlob": "f56238725b544cf486455f489399f8611a8bdfd9",
+      "status": "same original JSON; browser regression not run"
+    }
+  },
+  "historical": {
+    "status": "PARTIAL",
+    "currentSeasonSquadSourceLinkedPlayers": 126,
+    "independentPreviousTwoSeasonsDFBAppsGoalsVerifiedPlayers": 10,
+    "individualDOBDFBProfileVerified": 5,
+    "earlierArchiveReferences": {
+      "2009-10": 51,
+      "2010-11": 72
+    },
+    "allThreeSeasonIndependentPerformanceVerifiedPlayers": 0,
+    "matchwisePositionFullyVerifiedPlayers": 0,
+    "evidencePending": "remaining 116 players lack two-prior-year independent quantitative crosscheck; every player still requires full performance/position review",
+    "corrections": [
+      "2012-13 Gladbach UCL playoff and Europa League transition",
+      "Stuttgart/Hannover Europa qualification from 2011-12 DFB cup passdown",
+      "excluded negligible GK Giefer and extra Schalke striker Marica",
+      "Perisic reclassified starter to backup",
+      "10 prior-season player DFB official appearance/goal verification",
+      "kept Reus and Dante in Gladbach for 2011-12"
+    ],
+    "statusOfAllPlayerTiers": "provisional_unapproved"
+  },
+  "actions": {
+    "workflowFileCommitted": true,
+    "combinedCommitStatusResult": "statuses array empty for recent commit, does not prove success or failure",
+    "workflowRunLookup": "connector returns no PR-associated workflow runs; does not establish push-triggered run results",
+    "workflowRunSuccessful": "NOT_VERIFIED"
+  },
+  "homepage": {
+    "url": "https://wjdduddlf112.github.io/footballarch/?league=bundesliga&season=2011-12&view=tiers",
+    "sourceCodeUpdated": true,
+    "retainsExplicitSeasonQualifiers": true,
+    "actualBrowserExecuted": false,
+    "liveSiteBrowserResult": "NOT_VERIFIED",
+    "reason": "No browser automation execution was available for published site in this conversation. Published URL web fetch was inaccessible; cannot claim actual browser pass."
+  },
+  "userApproval": {
+    "season": "draft_unapproved",
+    "bestXI": "proposed_unapproved",
+    "nextSeasonStarted": false
+  }
+}
