@@ -815,3 +815,12 @@
 - 자동 구조검사: `scripts/verify-bundesliga-2003-04-draft.mjs`
 - GitHub Pages 실배포 검증: 자동 워크플로우 실행 결과를 확인해 보고서에 추가해야 함. 데이터 저장·JSON 구조·실제 화면 검증을 혼동하지 않는다.
 - 다음 시즌 2004-05은 명시적 지시 전에는 시작하지 않는다.
+
+## I. 실제 GitHub Pages 화면 검증 (Chromium / Playwright)
+
+- **구조 검사 PASS**: Node.js 검사 `node scripts/verify-bundesliga-2003-04-draft.mjs`와 공통 Bundesliga/player integration 검사가 Actions에서 성공.
+- **실제 브라우저 검사 PASS**: [2026-11-05 GitHub Actions run #41954016645](https://github.com/wjdduddlf112/footballarch/actions/runs/41954016645), 커밋 `f37d2e57a355ff66bc8431ab805d4a6ae422b0d5`.
+- 검사 대상: 9개 유럽 참가 구단에 174명 등급 표시, 10개 포지션 174명 개별 순위, 12개 티어/미평가 그룹에 174명, 티어별 인원 174명 합계, Best XI 11명 피치 티어·선정 근거·CAM 다이아몬드, 선수 상세 평가 근거, 상위 티어 22명/59명, 통계, 기존 분데스리가 1999-00부터 2002-03까지 시즌 전체 티어 화면 회귀 검사.
+- 실행 워크플로에서 `GitHub Pages` 라이브 JSON을 받고 실제 원격 브라우저에서 렌더링 확인. 검증 결과 JSON과 전체 스크린샷은 [GitHub Actions 실행 #41954016645 아티팩트](https://github.com/wjdduddlf112/footballarch/actions/runs/41954016645#artifacts)에 저장.
+- GitHub Pages 웹주소: https://wjdduddlf112.github.io/footballarch/?league=bundesliga&season=2003-04&view=tiers
+- 구조 및 UI가 PASS여도 174명 전원의 2001-02~2003-04 **개별 역사적 경기력 전수 검증**을 완료한 것은 아니다(3시즌 리그 출전/득점 직접 대조 2/174명). 모든 등급·순위·Best XI는 여전히 DRAFT이며 사용자 승인 전 확정하지 않는다.
