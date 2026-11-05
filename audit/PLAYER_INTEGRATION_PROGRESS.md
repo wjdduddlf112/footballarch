@@ -1,3 +1,12 @@
+## 2026-11-05 — Bundesliga 2006-07 DRAFT 128명 구성·개인 검증 상태 분리
+
+- 2007-08 유럽대항전 실제 참가 7구단: VfB Stuttgart, FC Schalke 04, SV Werder Bremen (UCL), FC Bayern München, Bayer 04 Leverkusen, 1. FC Nürnberg (UEFA Cup; Nürnberg DFB-Pokal 우승), Hamburger SV (2007 Intertoto 실제 참가 후 UEFA Cup).
+- 신규 `data/bundesliga-2006-07.json` 실제 main 생성, 7개 구단 전체 128명(주전급 103명, 후보 25명), 구단별 주전 인원 고정 11명 제한 없음, 같은 구단/포지션 후보 최대 1명. GK~ST 잠정 티어·순위·명단, 4-4-2 다이아몬드(4-3-1-2 역할) 11명 Best XI `proposed_unapproved`.
+- S 1, A+ 11, A0 11, A- 28, B+ 38, B0 20, B- 13, C+ 5, C0 0, C- 1, D 0. World Class 12, League Top Class 51. 모든 선수 현재 시즌 BDFutbol 출전/선발/득점과 공식 DFB 시즌 구단명단 연결. 전원 `partially_verified`; 전체 3시즌 개인 기량 검증 완료 0명. DFB 선수별 2004-05/2005-06/2006-07 분데스리가 출전·득점 직접 대조 4명(클로제, 쿠라니, 프링스, 마리오 고메스); 나머지 124명 과거 두 시즌 독립 개인 검증 필요.
+- 실제 JSON 수정: 렌더러 미지원 `4-3-1-2` 표시 값을 `4-4-2` 다이아몬드 호환으로 수정. DM인 파르도를 CM 자리에 배치했던 Best XI 포지션 오류를 실제 CM 히츨슈페르거로 교체. 프랑크 로스트 샬케/HSV 겨울 이적 출전 구분 유지.
+- 감사 보고서 `audit/BUNDESLIGA_2006_07_DRAFT_FULL_REPORT_2026_11_05.md`, 구조 검사 `scripts/verify-bundesliga-2006-07-draft.mjs`, Playwright `scripts/verify-bundesliga-2006-07-live.mjs`, Actions `.github/workflows/verify-bundesliga-2006-07-draft-live.yml` 생성. 앱 기존 UI 최소 변경으로 선수 상세 3시즌 검증 근거/상태 표시.
+- 연결된 GitHub 최신 선수 JSON 메모리상 독립 구조 검사 PASS(errors=[]), 128명/7구단/11명XI/전 포지션 순위/후보 제한/World Class/League Top/공유 스탠딩 일치. 단 **Actions 실행·GitHub Pages Chromium 실제 검증 결과는 확인 불가이며 미완료**, 성공으로 보고하지 않음. 전체 3시즌 역사 검증도 여전히 부분 검증. 다음 시즌 2007-08 자동 진행 금지, 사용자 승인 없음.
+
 ## 2026-11-05 — Bundesliga 2002-03 신규 DRAFT 163명 구축 / 실제 Pages·Chromium 검증 PASS
 
 - "ㅇㅋ 다음" 지시에 따라 2001-02 다음 시즌인 **Bundesliga 2002-03만 신규 작업**, 2003-04 평가로 진행하지 않음. 2003-04 실제 대회 참가 9구단: FC Bayern München, VfB Stuttgart, Borussia Dortmund (UCL), Hamburger SV, Hertha BSC, 1.FC Kaiserslautern (UEFA Cup), SV Werder Bremen, FC Schalke 04, VfL Wolfsburg (실제 2003 Intertoto); 리그 14위 Kaiserslautern은 2002-03 DFB-Pokal 준우승이므로 예외 포함. DSFS 2002-03 시즌표, RSSSF 최종 순위·컵·Intertoto 실제 기록을 근거로 확정.
