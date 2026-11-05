@@ -101,7 +101,7 @@ function pageIntro(){
  $("eyebrow").style.display="none";
  $("heading").textContent=label()+"  /  "+st.season.replace("-","–");
  $("subheading").style.display="none";
- const tierSeason=st.league==="bundesliga"&&["1999-00","2000-01","2001-02","2002-03","2003-04","2004-05","2005-06","2006-07","2007-08","2008-09","2009-10","2010-11"].includes(st.season);
+ const tierSeason=st.league==="bundesliga"&&["1999-00","2000-01","2001-02","2002-03","2003-04","2004-05","2005-06","2006-07","2007-08","2008-09","2009-10","2010-11","2011-12"].includes(st.season);
  const tierTab=$("allTiersTab");if(tierTab)tierTab.style.display=tierSeason?"":"none";
  if(st.tab==="tiers"&&!tierSeason)st.tab="overview";
  const playerView=["formation","top","tiers","stats"].includes(st.tab);
