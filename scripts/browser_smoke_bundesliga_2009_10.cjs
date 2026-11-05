@@ -18,7 +18,7 @@ async function waitForSite(page, season) {
         const tab = document.querySelector("#allTiersTab");
         return h?.textContent?.includes("Bundesliga") &&
           tag?.textContent?.trim() === "DRAFT" && !!tab && getComputedStyle(tab).display !== "none";
-      }, { timeout: 10000 });
+      }, null, { timeout: 10000 });
       return;
     } catch {
       await sleep(15000);
