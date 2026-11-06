@@ -103,7 +103,9 @@
         "freiburg": 17,
         "frankfurt": 17,
         "stuttgart": 18
-      }
+      },
+      "partialIndividualPriorYearsAppsGoalsRechecked": 1,
+      "conflictingSourcePlayers": 1
     },
     "notes": "BDFutbol 2012-13 appearance/starts/minutes/goals, DFB roster DOB linked, contemporary 2012-13 VDV XI. All 3-season qualitative independent checks pending; historical prior-year Football Archive drafts never treated as verified. App source should not imply full historical certification."
   },
@@ -12352,18 +12354,32 @@
       "rank": 7,
       "rankStatus": "provisional",
       "review": "draft_unapproved",
-      "verificationStatus": "partially_verified",
-      "evaluationStatus": "current2012_13_appearance_and_goals_verified_prior_2_years_and_qualitative_audit_pending",
+      "verificationStatus": "conflicting_sources",
+      "evaluationStatus": "2012_13_5goals_DFB_BDF_vs_6goals_FBref_conflict_older_appearances_goals_DFB_checked",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2012-131002.html",
         "https://datencenter.dfb.de/bundesliga/2012-2013/mannschaft/vfb-stuttgart",
-        "https://www.bdfutbol.com/en/t/t2011-121002.html"
+        "https://www.bdfutbol.com/en/t/t2011-121002.html",
+        "https://datencenter.dfb.de/personen/martin-harnik/spieler",
+        "https://fbref.com/en/players/99b7584f/Martin-Harnik"
       ],
       "evidence": {
         "currentSeason": "https://www.bdfutbol.com/en/t/t2012-131002.html",
         "identity": "https://datencenter.dfb.de/bundesliga/2012-2013/mannschaft/vfb-stuttgart",
         "scope": "2012-13 league appearances starts minutes goals; assists not supplied in BDF table",
-        "contemporaryRecognition": null
+        "contemporaryRecognition": null,
+        "goalsSourceConflict": {
+          "competition": "2012-13 Bundesliga",
+          "dfbGoalCount": 5,
+          "bdfGoalCount": 5,
+          "fbrefGoalCount": 6,
+          "description": "DFB official record and BDFutbol both list 5 Bundesliga goals; FBref and historical reference guide list 6. Keep provider-specific 5 and conflict status until match-by-match reconciliation.",
+          "sources": [
+            "https://datencenter.dfb.de/personen/martin-harnik/spieler",
+            "https://www.bdfutbol.com/en/t/t2012-131002.html",
+            "https://fbref.com/en/players/99b7584f/Martin-Harnik"
+          ]
+        }
       },
       "threeSeasonReview": {
         "assessmentSeasons": [
@@ -12374,14 +12390,14 @@
         "weighting": "2012-13 highest, 2011-12 medium, 2010-11 least; team honours no direct bonus",
         "records": {
           "2010-11": {
-            "club": null,
-            "appearances": null,
+            "club": "VfB Stuttgart",
+            "appearances": 32,
             "starts": null,
             "minutes": null,
-            "goals": null,
+            "goals": 9,
             "assists": null,
-            "source": null,
-            "verification": "reused_old_draft_not_independently_reverified"
+            "source": "https://datencenter.dfb.de/personen/martin-harnik/spieler",
+            "verification": "official_DFB_appearances_goals_rechecked_starts_minutes_other_statistics_unverified"
           },
           "2011-12": {
             "club": "VfB Stuttgart",
@@ -12390,8 +12406,8 @@
             "minutes": 2783,
             "goals": 17,
             "assists": null,
-            "source": "https://www.bdfutbol.com/en/t/t2011-121002.html",
-            "verification": "reused_old_draft_not_independently_reverified"
+            "source": "https://datencenter.dfb.de/personen/martin-harnik/spieler",
+            "verification": "official_DFB_appearances_goals_rechecked_starts_minutes_other_statistics_unverified"
           },
           "2012-13": {
             "club": "VfB Stuttgart",
@@ -12404,15 +12420,16 @@
             "verification": "2012_13_bdfutbol_season_squad_source_checked"
           }
         },
-        "status": "current_season_supported_prior_years_archive_or_pending"
+        "status": "DFB_older_years_appearances_and_goals_checked_current2012_13_goal_count_conflict"
       },
-      "tierReview": "2012-13: 30 league appearances, 29 starts, 2509 minutes, 5 goals. Provisional peer-relative RW grade B+; previous two seasons and full qualitative contributions await independent validation.",
+      "tierReview": "2012-13: 30 league appearances, 29 starts, 2509 minutes, 5 goals. Provisional peer-relative RW grade B+; previous two seasons and full qualitative contributions await independent validation. CONFLICT: Bundesliga goals 2012-13 DFB/BDFutbol 5 vs FBref 6; record provisional. DFB direct check: 2010-11 32 matches/9 goals, 2011-12 34/17.",
       "assessmentRationale": "2012-13 regularity (29 starts; 2509 min) and current-season role; 5 goals where applicable. Prior years are subordinate and not independently confirmed; no trophy bonus.",
       "verificationNeeded": [
         "independent_DFB_prior_two_years_club_specific_apps_goals",
         "independent_2012_13_role_majority_by_match",
         "secondary_identity_DOB_crosscheck",
-        "qualitative_creative_defensive_comparison"
+        "qualitative_creative_defensive_comparison",
+        "resolve_2012_13_Bundesliga_goal_total_DFB_BDF_5_vs_FBref_6_by_match_event_review"
       ],
       "evidencePending": true
     },
@@ -12727,7 +12744,8 @@
       "all_2012_13_matchwise_positions",
       "all_DOB_independent_secondary_check",
       "all_team_player_role_club_specific_starter_backup_quality",
-      "formation_modal_frequency_not_certified"
+      "formation_modal_frequency_not_certified",
+      "martin_harnik_2012_13_goal_conflict_5_DFB_BDF_vs_6_FBref"
     ],
     "userApproved": false
   }
