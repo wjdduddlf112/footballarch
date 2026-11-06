@@ -526,7 +526,7 @@ Source: https://www.bvb.de/de/de/aktuelles/news/news.html/News/Uebersicht/Robert
 - Known historical disagreements corrected through independent dual-source audit: **0**, no claim of complete audit.
 - CI structural workflow outcome and full live-browser interaction outcome: **pending at report creation**.
 - Best XI: **11**, `proposed_unapproved`.
-- Player verification status: {"verified":0,"partially_verified":130,"evidence_pending":0,"conflicting_sources":0}.
+- Player verification status: {"verified":0,"partially_verified":129,"evidence_pending":0,"conflicting_sources":1}.
 
 ## 10. Reference URLs
 - FC Bayern München: [Bundesliga appearances](https://www.bdfutbol.com/en/t/t2012-131016.html); [DFB player identities and birthdates](https://datencenter.dfb.de/bundesliga/2012-2013/mannschaft/bayern-muenchen)
@@ -540,6 +540,16 @@ Source: https://www.bvb.de/de/de/aktuelles/news/news.html/News/Uebersicht/Robert
 - [RSSSF 2012-13 final table](https://www.rsssf.org/tablesd/duit2013.html)
 - [2013-14 Champions League entrants](https://www.uefa.com/uefachampionsleague/history/seasons/2014/clubs/)
 - [2013-14 Europa League entrants](https://www.uefa.com/uefaeuropaleague/history/seasons/2014/clubs/)
+
+## 10A. Corrected historical evidence conflict (Martin Harnik, VfB Stuttgart)
+
+**Actual JSON updated; not merely recorded in this report.**
+- DFB official player's Bundesliga 2012-13 entry: 30 appearances, 5 goals; [DFB data center](https://datencenter.dfb.de/personen/martin-harnik/spieler).
+- [BDFutbol's 2012-13 Stuttgart Bundesliga squad table](https://www.bdfutbol.com/en/t/t2012-131002.html) records 30 appearances, 29 starts, 2,509 minutes, **5 goals**.
+- [FBref 2012-13 Bundesliga player statistics](https://fbref.com/en/players/99b7584f/Martin-Harnik) records 30 appearances, 29 starts, 2,500 minutes, **6 goals**, as does an additional historical guide. This cannot be dismissed as rounding, and the 9-minute difference also requires review.
+- JSON preserves provider-specific `goals2012:5` from DFB/BDF but updates player `verificationStatus` to `conflicting_sources`, adds URLs and the explicit 5-vs-6 conflict; player is **not marked verified**.
+- DFB independent Bundesliga checks of previous seasons: 2010-11 **32 appearances/9 goals**, 2011-12 **34 appearances/17 goals**. Those records' appearance/goal/source fields were corrected in JSON. Starts, minutes, assists, and 3-year qualitative assessment remain unverified.
+- Reconciliation requires all 30 2012-13 Bundesliga match logs from official and comparative sources; until then no single goal total should be represented as definitively harmonized.
 
 ## 11. Outstanding work and auto-next gating
 1. Independently verify 2010-11 and 2011-12 appearances and individual impact for **all 130 players**, including earlier clubs/leagues.
