@@ -1010,3 +1010,21 @@ Source TXT instruction adapted to the **2009-10 season only**. Candidate roster 
 - Public Pages live workflow exists `.github/workflows/verify-laliga-2022-23-live.yml`; **no independently observed live production Pages Chromium success/deployment at this checkpoint**, despite PR branch Chromium success. Keep production gate pending.
 - 2022-23 single-season most common formation, independent current individual stats corroboration, match-majority positions, 2020-21 + 2021-22 full player-quality comparisons and DOB two-source checks remain OPEN. 4-4-2 and all positional/tier/Best XI choices are UNAPPROVED.
 - STOP; user must explicitly request La Liga 2023-24 before any work on that season.
+
+
+---
+
+## 2026-11-06 — Bundesliga 2012-13 (AUTO_NEXT_SEASON=YES, DRAFT)
+
+- Target: 2012-13; reference seasons: 2010-11/2011-12/2012-13; 2013-14 UEFA actual participant requirement.
+- Qualified seven clubs independently crosschecked: Bayern, Dortmund, Leverkusen, Schalke, Freiburg, Eintracht Frankfurt, Stuttgart (DFB Cup finalist despite Bundesliga 12th).
+- Current-season newly sourced 2012-13 BDFutbol nominees: **130** (22/19/17/20/17/17/18 by listed clubs).
+- Current-season 2012-13 league appearances, starts, minutes, goals tied to BDFutbol source per player; DOB attached to official 2012-13 DFB squad page.
+- Provisional tiers all 130; provisional position ranks all 130; Best XI 11 proposed/unapproved; World Class 16; League Top Class 38.
+- Current-year personal quantitative source links: 130; 2011-12 inherited DRAFT source links: 76; 2010-11 inherited DRAFT source links: 49. All earlier-year inherited data explicitly marked **NOT independently reverified**; missing numbers null.
+- Historical three-season independently verified complete: **0**; matchwise position-majority complete: **0**; independent player DOB double checks complete: **0**.
+- JSON schema/structural consistency: PASS via live data validation script; `scripts/validate_bundesliga_2012_13.py` was saved on main, but **GitHub Actions for 2012-13 NOT created** due connector safety restriction.
+- New Bundesliga All Tiers visibility changed from static 1999-2011 whitelist to data-based availability; index.html JavaScript cache bust updated.
+- GitHub Pages build-and-deployment run **42168562934** for head `eec940e8e7e18325a32fc3270296487a9c8de7cc` status **success**. This is not a full interactive browser verification.
+- Main files: `data/bundesliga-2012-13.json`, `audit/BUNDESLIGA_2012_13_RESEARCH_SCOPE_2026_11_06.md`, `audit/BUNDESLIGA_2012_13_DRAFT_FULL_REPORT_2026_11_06.md`, `scripts/validate_bundesliga_2012_13.py`, `assets/app.js`, `index.html`.
+- Explicit user command: **AUTO_NEXT_SEASON=YES**. Next target 2013-14 remains queued, not started, because full prior-two-year quality review and browser historical verification for current season are outstanding. No claim of asynchronous continuation.
