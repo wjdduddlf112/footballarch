@@ -1,0 +1,38 @@
+name: Verify Bundesliga 2018-19 draft and live Pages
+on:
+  push:
+    branches: [main]
+    paths:
+      - data/bundesliga-2018-19.json
+      - audit/BUNDESLIGA_2018_19_DRAFT_FULL_REPORT.md
+      - scripts/verify-bundesliga-2018-19-draft.mjs
+      - scripts/verify-bundesliga-2018-19-live.mjs
+      - .github/workflows/verify-bundesliga-2018-19-draft-live.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  structure:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check historical DRAFT structure
+        run: node scripts/verify-bundesliga-2018-19-draft.mjs
+  browser:
+    needs: structure
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Prepare Chromium
+        run: |
+          npm install --no-save playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Real deployed site smoke plus 2017-18 regression
+        run: node scripts/verify-bundesliga-2018-19-live.mjs
