@@ -792,3 +792,24 @@ Representative league 4-2-3-1 selected provisionally; **no exhaustive 306-match 
 ## 9. GitHub & browser test gate
 Data `data/bundesliga-2017-18.json`; this report `audit/BUNDESLIGA_2017_18_DRAFT_FULL_REPORT_2026_11_07.md`.
 Dedicated structure-only and **real Chromium browser test** files. Their pass/fail must be read from GitHub Actions after push. Browser test passes do **not** certify historical three-season player quality.
+
+
+## 2026-11-07 post-commit independent previous-season quantitative audit addendum
+
+**New evidence:** seven missing player-year records independently researched for four players, plus Ulreich 2016-17 appearance crosschecked against DFB. Source coverage: 2015-16 **48→52 /135**; 2016-17 **59→62 /135**; 2017-18 **135/135** unchanged. **0/135 fully three-season qualitative player audits or matchwise position-frequency audits**. No tiers, ranks, position roles or Best XI were changed. All DRAFT.
+
+| Player | Historical season | Previous season team/league | Apps | Starts | Minutes | Scored goals | Assists | Source |
+|---|---|---|---:|---:|---:|---:|---:|---|
+| Sven Ulreich | 2015-16 | FC Bayern München · Bundesliga | 1 | pending | pending | GK— | pending | [source](https://datencenter.dfb.de/personen/sven-ulreich/spieler) |
+| Naldo | 2015-16 | VfL Wolfsburg · Bundesliga | 29 | pending | pending | 0 | pending | [source](https://datencenter.dfb.de/en/data-center/people/naldo/player) |
+| Naldo | 2016-17 | FC Schalke 04 · Bundesliga | 19 | pending | pending | 1 | pending | [source](https://datencenter.dfb.de/en/data-center/people/naldo/player) |
+| James Rodríguez | 2015-16 | Real Madrid CF · La Liga | 26 | 17 | 1515 | 7 | 8 | [source](https://fbref.com/en/players/715bf047/James-Rodriguez) |
+| James Rodríguez | 2016-17 | Real Madrid CF · La Liga | 22 | 13 | 1181 | 8 | 6 | [source](https://fbref.com/en/players/715bf047/James-Rodriguez) |
+| Leon Bailey | 2015-16 | KRC Genk · Belgian Pro League | 35 | 30 | 2503 | 6 | 9 | [source](https://fbref.com/en/players/3a233281/Leon-Bailey-Stats) |
+| Leon Bailey | 2016-17 | KRC Genk / Bayer 04 Leverkusen · Belgian First Division A / Bundesliga | 27 | 17 | 1530 | 2 | 5 | [source](https://fbref.com/en/players/3a233281/Leon-Bailey-Stats) |
+
+- **Ulreich**: 2015-16 Bayern only 1 Bundesliga game; 2016-17 5 games officially corroborated. Keeper scored goals stored `null` (BDF G-notation is conceded, not scored). Starts/minutes 2015-16 unknown.
+- **Naldo**: Official DFB records Wolfsburg 2015-16 29 league apps 0 goals, Schalke 2016-17 19 apps 1 goal; don't fabricate starts/minutes.
+- **James Rodríguez**: Earlier **Real Madrid La Liga**, not Bayern/Dortmund, 2015-16 26 apps/7 goals/8 assists and 2016-17 22 apps/8 goals/6 assists. Complete matchwise impact assessment still needed.
+- **Leon Bailey**: FBref 2015-16 Genk Belgian Pro League 35 apps/2,503 minutes/6 goals/9 assists; **Opta Analyst reports 37 apps/2,634 minutes/6 goals/10 assists**. This discrepancy remains explicitly unresolved rather than presenting both as equivalent. In **2016-17** Genk Belgian First Division A 19 apps/1,390 minutes/2 goals/5 assists plus Leverkusen Bundesliga 8 apps/140 minutes/0 goals; segment records persisted. Opta has a different minute count (Genk 1,395, Leverkusen 132). Do not mislabel 27 aggregated apps as Bundesliga-only stats.
+- Addendum is only quantitative evidence. Relative quality of league opponents, role verification, availability and primary position across all 3 seasons require manual expert historical review; **all ratings remain DRAFT**.

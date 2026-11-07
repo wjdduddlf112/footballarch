@@ -1,3 +1,8 @@
+## 2026-11-07 — Bundesliga 2017-18 additional independent prior-year evidence
+- Post initial 135-candidate DRAFT: 7 missing old-year league records for Ulreich, Naldo, James Rodríguez and Leon Bailey independently sourced DFB and FBref; Ulreich 2016-17 5 appearances independently corroborated.
+- Old season linkage **2015-16 48→52**, **2016-17 59→62**, current 2017-18 **135**. No player independently fully 3-season qualitatively verified; 0/135. All tiers, rankings, XI still DRAFT, no next season.
+- Bailey FBref/Opta conflict 2015-16 Genk games/assists and 2016-17 minutes; 2016-17 Genk/Leverkusen stored as separated Belgian/German leagues. Ulreich GK goals scored null, not conceded goals. See updated `audit/BUNDESLIGA_2017_18_DRAFT_FULL_REPORT_2026_11_07.md`.
+
 ## 2026-11-07 — `ㄷㅇ` user requested next: Bundesliga 2017-18 single season DRAFT
 - AUTO_NEXT_SEASON=no. Previous 2016-17 → 2017-18 only. Scope eligibility actual 2018-19 UEFA entrants Bayern/Schalke/Hoffenheim/Dortmund UCL, Leverkusen/Leipzig/Frankfurt UEL. Frankfurt was 8th and 2017-18 DFB-Pokal winner; 7th Stuttgart excluded.
 - New BDFutbol research with official DFB 2017-18 squad DOB links; **135 individuals** counts {"bayern":21,"schalke":17,"hoffenheim":19,"dortmund":23,"leverkusen":18,"leipzig":19,"frankfurt":18}, all 2017-18 league appearances/starts/minutes/goals directly source linked. At most 1 backup/position/club, multi-starter seasonal equivalence allowed.

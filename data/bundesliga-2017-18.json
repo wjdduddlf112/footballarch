@@ -104,8 +104,8 @@
       "individualFullThreeSeasonQualitativeVerified": 0,
       "sourceLinked2017_18SeasonPlayers": 135,
       "priorSeasonRecordCounts": {
-        "2015-16": 48,
-        "2016-17": 59,
+        "2015-16": 52,
+        "2016-17": 62,
         "2017-18": 135
       },
       "independentDOBDoubleChecked": 0,
@@ -122,7 +122,23 @@
         "frankfurt": 18
       }
     },
-    "notes": "2017-18 BDFutbol Bundesliga current-season appearances starts minutes goals linked, DFB official player DOB roster; past two seasons records from earlier Football Archive DRAFT where available and NOT independently verified; multi-club prior-year coverage missing. Full 3-year quality 0. Positions role frequency and lineup style provisional; 2017-18 VDV contemporary vote supports top individuals."
+    "notes": "2017-18 BDFutbol Bundesliga current-season appearances starts minutes goals linked, DFB official player DOB roster; past two seasons records from earlier Football Archive DRAFT where available and NOT independently verified; multi-club prior-year coverage missing. Full 3-year quality 0. Positions role frequency and lineup style provisional; 2017-18 VDV contemporary vote supports top individuals.",
+    "postAudit20261107": {
+      "additionalIndependentPriorSeasonRecords": 7,
+      "individualsAffected": 4,
+      "sourceDiscrepancies": [
+        "Leon Bailey 2015-16 FBref vs Opta club league games/minutes/assists",
+        "Leon Bailey 2016-17 Belgium and Germany 4+8 min differences by provider"
+      ],
+      "pastSeasonCoverage": {
+        "2015-16": 52,
+        "2016-17": 62,
+        "2017-18": 135
+      },
+      "independentFullThreeSeasonQualitativeVerified": 0,
+      "approved": false,
+      "notes": "Ulreich GK goals scored remain null rather than 0; Real Madrid La Liga old records handled independently; Bailey split-country year per-club records."
+    }
   },
   "clubs": [
     {
@@ -563,7 +579,8 @@
       "evaluationStatus": "provisional_current_season_BDF_stats_previous_two_season_archival_DRAFT_or_missing",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2017-181016.html",
-        "https://datencenter.dfb.de/bundesliga/2017-2018/mannschaft/bayern-muenchen"
+        "https://datencenter.dfb.de/bundesliga/2017-2018/mannschaft/bayern-muenchen",
+        "https://datencenter.dfb.de/personen/sven-ulreich/spieler"
       ],
       "evidence": {
         "currentSeason": "https://www.bdfutbol.com/en/t/t2017-181016.html",
@@ -579,14 +596,15 @@
         "weighting": "2017-18 highest; 2016-17 second; 2015-16 least; club trophy and table position no player bonus",
         "records": {
           "2015-16": {
-            "club": null,
-            "appearances": null,
+            "club": "FC Bayern München",
+            "appearances": 1,
             "starts": null,
             "minutes": null,
             "goals": null,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_older_club_not_in_archive_or_different_league"
+            "source": "https://datencenter.dfb.de/personen/sven-ulreich/spieler",
+            "verification": "DFB_official_individual_Bundesliga_2015_16_1_game_goals_scored_null_for_GK",
+            "league": "Bundesliga"
           },
           "2016-17": {
             "club": "FC Bayern München",
@@ -596,7 +614,8 @@
             "goals": null,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2016-171016.html",
-            "verification": "prior_FootballArchive_DRAFT_NOT_independently_reverified"
+            "verification": "DFB_independently_confirmed_2016_17_5_Bundesliga_games_BDF_old_draft_starts_minutes_pending_independent_recheck",
+            "corrobSource": "https://datencenter.dfb.de/personen/sven-ulreich/spieler"
           },
           "2017-18": {
             "club": "FC Bayern München",
@@ -609,10 +628,13 @@
             "verification": "BDFutbol_2017_18_club_league_lineup_stats_directly_read"
           }
         },
-        "status": "2017_18_current_stats_source_linked_prior_years_partial_archive_DRAFT_or_pending"
+        "status": "2017_18_current_stats_source_linked_prior_years_partial_archive_DRAFT_or_pending",
+        "independentPriorSeasonSources": [
+          "https://datencenter.dfb.de/personen/sven-ulreich/spieler"
+        ]
       },
-      "tierReview": "2017-18 current league 29 apps, 29 starts, 2610 minutes; A+ provisional assessment of role, sustained individual contribution and 2016-17/2015-16 season evidence where present; standings/trophy not graded.",
-      "assessmentRationale": "Current-year games/starts/minutes verified from BDFutbol. Prior-year 2015-16 and 2016-17 references are incomplete and not independent historic audits; positional quality and peer ranking still provisional.",
+      "tierReview": "2017-18 current league 29 apps, 29 starts, 2610 minutes; A+ provisional assessment of role, sustained individual contribution and 2016-17/2015-16 season evidence where present; standings/trophy not graded. Historical supplemental 2015-16: 1 league games, n/a goals.",
+      "assessmentRationale": "Current-year games/starts/minutes verified from BDFutbol. Prior-year 2015-16 and 2016-17 references are incomplete and not independent historic audits; positional quality and peer ranking still provisional. Independently checked 2015-16: 1 league appearances at FC Bayern München; see separate source record.",
       "verificationNeeded": [
         "independent_2015_16_and_2016_17_yearly_league_records_for_all_current_clubs_and_foreign_leagues",
         "2017_18_matchwise_position_frequency",
@@ -1373,7 +1395,8 @@
       "evaluationStatus": "provisional_current_season_BDF_stats_previous_two_season_archival_DRAFT_or_missing",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2017-181006.html",
-        "https://datencenter.dfb.de/competitions/bundesliga/seasons/2017-2018/teams/fc-schalke-04"
+        "https://datencenter.dfb.de/competitions/bundesliga/seasons/2017-2018/teams/fc-schalke-04",
+        "https://datencenter.dfb.de/en/data-center/people/naldo/player"
       ],
       "evidence": {
         "currentSeason": "https://www.bdfutbol.com/en/t/t2017-181006.html",
@@ -1389,24 +1412,26 @@
         "weighting": "2017-18 highest; 2016-17 second; 2015-16 least; club trophy and table position no player bonus",
         "records": {
           "2015-16": {
-            "club": null,
-            "appearances": null,
+            "club": "VfL Wolfsburg",
+            "appearances": 29,
             "starts": null,
             "minutes": null,
-            "goals": null,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_older_club_not_in_archive_or_different_league"
+            "source": "https://datencenter.dfb.de/en/data-center/people/naldo/player",
+            "verification": "DFB_official_2015_16_Bundesliga_29_games_0_goals_only",
+            "league": "Bundesliga"
           },
           "2016-17": {
-            "club": null,
-            "appearances": null,
+            "club": "FC Schalke 04",
+            "appearances": 19,
             "starts": null,
             "minutes": null,
-            "goals": null,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_older_club_not_in_archive_or_different_league"
+            "source": "https://datencenter.dfb.de/en/data-center/people/naldo/player",
+            "verification": "DFB_official_2016_17_Bundesliga_19_games_1_goal_only",
+            "league": "Bundesliga"
           },
           "2017-18": {
             "club": "FC Schalke 04",
@@ -1419,10 +1444,13 @@
             "verification": "BDFutbol_2017_18_club_league_lineup_stats_directly_read"
           }
         },
-        "status": "2017_18_current_stats_source_linked_prior_years_partial_archive_DRAFT_or_pending"
+        "status": "2017_18_current_stats_source_linked_prior_years_partial_archive_DRAFT_or_pending",
+        "independentPriorSeasonSources": [
+          "https://datencenter.dfb.de/en/data-center/people/naldo/player"
+        ]
       },
-      "tierReview": "2017-18 current league 34 apps, 34 starts, 3060 minutes, 7 goals; A+ provisional assessment of role, sustained individual contribution and 2016-17/2015-16 season evidence where present; standings/trophy not graded.",
-      "assessmentRationale": "Current-year games/starts/minutes/goals verified from BDFutbol. Prior-year 2015-16 and 2016-17 references are incomplete and not independent historic audits; positional quality and peer ranking still provisional.",
+      "tierReview": "2017-18 current league 34 apps, 34 starts, 3060 minutes, 7 goals; A+ provisional assessment of role, sustained individual contribution and 2016-17/2015-16 season evidence where present; standings/trophy not graded. Historical supplemental 2015-16: 29 league games, 0 goals. Historical supplemental 2016-17: 19 league games, 1 goals.",
+      "assessmentRationale": "Current-year games/starts/minutes/goals verified from BDFutbol. Prior-year 2015-16 and 2016-17 references are incomplete and not independent historic audits; positional quality and peer ranking still provisional. Independently checked 2015-16: 29 league appearances at VfL Wolfsburg; see separate source record. Independently checked 2016-17: 19 league appearances at FC Schalke 04; see separate source record.",
       "verificationNeeded": [
         "independent_2015_16_and_2016_17_yearly_league_records_for_all_current_clubs_and_foreign_leagues",
         "2017_18_matchwise_position_frequency",
@@ -8487,7 +8515,8 @@
       "sources": [
         "https://www.bdfutbol.com/en/t/t2017-181016.html",
         "https://datencenter.dfb.de/bundesliga/2017-2018/mannschaft/bayern-muenchen",
-        "https://datencenter.dfb.de/datencenter/ranglisten/bundesliga/2017-18"
+        "https://datencenter.dfb.de/datencenter/ranglisten/bundesliga/2017-18",
+        "https://fbref.com/en/players/715bf047/James-Rodriguez"
       ],
       "evidence": {
         "currentSeason": "https://www.bdfutbol.com/en/t/t2017-181016.html",
@@ -8503,24 +8532,26 @@
         "weighting": "2017-18 highest; 2016-17 second; 2015-16 least; club trophy and table position no player bonus",
         "records": {
           "2015-16": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "assists": null,
-            "source": null,
-            "verification": "evidence_pending_older_club_not_in_archive_or_different_league"
+            "club": "Real Madrid CF",
+            "appearances": 26,
+            "starts": 17,
+            "minutes": 1515,
+            "goals": 7,
+            "assists": 8,
+            "source": "https://fbref.com/en/players/715bf047/James-Rodriguez",
+            "verification": "FBref_independent_2015_16_RealMadrid_LaLiga_apps_starts_minutes_goals_assists",
+            "league": "La Liga"
           },
           "2016-17": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "assists": null,
-            "source": null,
-            "verification": "evidence_pending_older_club_not_in_archive_or_different_league"
+            "club": "Real Madrid CF",
+            "appearances": 22,
+            "starts": 13,
+            "minutes": 1181,
+            "goals": 8,
+            "assists": 6,
+            "source": "https://fbref.com/en/players/715bf047/James-Rodriguez",
+            "verification": "FBref_independent_2016_17_RealMadrid_LaLiga_apps_starts_minutes_goals_assists",
+            "league": "La Liga"
           },
           "2017-18": {
             "club": "FC Bayern München",
@@ -8533,10 +8564,13 @@
             "verification": "BDFutbol_2017_18_club_league_lineup_stats_directly_read"
           }
         },
-        "status": "2017_18_current_stats_source_linked_prior_years_partial_archive_DRAFT_or_pending"
+        "status": "2017_18_current_stats_source_linked_prior_years_partial_archive_DRAFT_or_pending",
+        "independentPriorSeasonSources": [
+          "https://fbref.com/en/players/715bf047/James-Rodriguez"
+        ]
       },
-      "tierReview": "2017-18 current league 23 apps, 19 starts, 1625 minutes, 7 goals; A+ provisional assessment of role, sustained individual contribution and 2016-17/2015-16 season evidence where present; standings/trophy not graded.",
-      "assessmentRationale": "Current-year games/starts/minutes/goals verified from BDFutbol. Prior-year 2015-16 and 2016-17 references are incomplete and not independent historic audits; positional quality and peer ranking still provisional.",
+      "tierReview": "2017-18 current league 23 apps, 19 starts, 1625 minutes, 7 goals; A+ provisional assessment of role, sustained individual contribution and 2016-17/2015-16 season evidence where present; standings/trophy not graded. Historical supplemental 2015-16: 26 league games, 7 goals. Historical supplemental 2016-17: 22 league games, 8 goals.",
+      "assessmentRationale": "Current-year games/starts/minutes/goals verified from BDFutbol. Prior-year 2015-16 and 2016-17 references are incomplete and not independent historic audits; positional quality and peer ranking still provisional. Independently checked 2015-16: 26 league appearances at Real Madrid CF; see separate source record. Independently checked 2016-17: 22 league appearances at Real Madrid CF; see separate source record.",
       "verificationNeeded": [
         "independent_2015_16_and_2016_17_yearly_league_records_for_all_current_clubs_and_foreign_leagues",
         "2017_18_matchwise_position_frequency",
@@ -9209,7 +9243,8 @@
       "sources": [
         "https://www.bdfutbol.com/en/t/t2017-181014.html",
         "https://datencenter.dfb.de/competitions/bundesliga/seasons/2017-2018/teams/bayer-leverkusen",
-        "https://datencenter.dfb.de/datencenter/ranglisten/bundesliga/2017-18"
+        "https://datencenter.dfb.de/datencenter/ranglisten/bundesliga/2017-18",
+        "https://fbref.com/en/players/3a233281/Leon-Bailey-Stats"
       ],
       "evidence": {
         "currentSeason": "https://www.bdfutbol.com/en/t/t2017-181014.html",
@@ -9225,24 +9260,50 @@
         "weighting": "2017-18 highest; 2016-17 second; 2015-16 least; club trophy and table position no player bonus",
         "records": {
           "2015-16": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "assists": null,
-            "source": null,
-            "verification": "evidence_pending_older_club_not_in_archive_or_different_league"
+            "club": "KRC Genk",
+            "appearances": 35,
+            "starts": 30,
+            "minutes": 2503,
+            "goals": 6,
+            "assists": 9,
+            "source": "https://fbref.com/en/players/3a233281/Leon-Bailey-Stats",
+            "verification": "FBref_independent_2015_16_KRCGenk_BelgianTopDivision_source_discrepancy_Opta_not_harmonized",
+            "league": "Belgian Pro League",
+            "discrepancy": "FBref 35 apps/2503 minutes/9 assists versus Opta Analyst 37 apps/2634 minutes/10 assists; provider definition and/or competitions diverge, unresolved",
+            "crossSource": "https://theanalyst.com/players/3799/leon-bailey/career"
           },
           "2016-17": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "assists": null,
-            "source": null,
-            "verification": "evidence_pending_older_club_not_in_archive_or_different_league"
+            "club": "KRC Genk / Bayer 04 Leverkusen",
+            "appearances": 27,
+            "starts": 17,
+            "minutes": 1530,
+            "goals": 2,
+            "assists": 5,
+            "source": "https://fbref.com/en/players/3a233281/Leon-Bailey-Stats",
+            "verification": "FBref_independent_2016_17_two_league_segments_Belgian_and_German_27_combined_appearances",
+            "league": "Belgian First Division A / Bundesliga",
+            "segments": [
+              {
+                "club": "KRC Genk",
+                "league": "Belgian First Division A",
+                "appearances": 19,
+                "starts": 17,
+                "minutes": 1390,
+                "goals": 2,
+                "assists": 5
+              },
+              {
+                "club": "Bayer 04 Leverkusen",
+                "league": "Bundesliga",
+                "appearances": 8,
+                "starts": 0,
+                "minutes": 140,
+                "goals": 0,
+                "assists": 0
+              }
+            ],
+            "discrepancy": "FBref Genk 1390min Bayer 140min versus Opta Analyst Genk 1395 Bayer 132; both providers agree 19+8 games, 2+0 goals, 5+0 assists",
+            "crossSource": "https://theanalyst.com/players/3799/leon-bailey/career"
           },
           "2017-18": {
             "club": "Bayer 04 Leverkusen",
@@ -9255,10 +9316,13 @@
             "verification": "BDFutbol_2017_18_club_league_lineup_stats_directly_read"
           }
         },
-        "status": "2017_18_current_stats_source_linked_prior_years_partial_archive_DRAFT_or_pending"
+        "status": "2017_18_current_stats_source_linked_prior_years_partial_archive_DRAFT_or_pending",
+        "independentPriorSeasonSources": [
+          "https://fbref.com/en/players/3a233281/Leon-Bailey-Stats"
+        ]
       },
-      "tierReview": "2017-18 current league 30 apps, 25 starts, 2221 minutes, 9 goals; A+ provisional assessment of role, sustained individual contribution and 2016-17/2015-16 season evidence where present; standings/trophy not graded.",
-      "assessmentRationale": "Current-year games/starts/minutes/goals verified from BDFutbol. Prior-year 2015-16 and 2016-17 references are incomplete and not independent historic audits; positional quality and peer ranking still provisional.",
+      "tierReview": "2017-18 current league 30 apps, 25 starts, 2221 minutes, 9 goals; A+ provisional assessment of role, sustained individual contribution and 2016-17/2015-16 season evidence where present; standings/trophy not graded. Historical supplemental 2015-16: 35 league games, 6 goals. Historical supplemental 2016-17: 27 league games, 2 goals.",
+      "assessmentRationale": "Current-year games/starts/minutes/goals verified from BDFutbol. Prior-year 2015-16 and 2016-17 references are incomplete and not independent historic audits; positional quality and peer ranking still provisional. Independently checked 2015-16: 35 league appearances at KRC Genk; see separate source record. Independently checked 2016-17: 27 league appearances at KRC Genk / Bayer 04 Leverkusen; see separate source record.",
       "verificationNeeded": [
         "independent_2015_16_and_2016_17_yearly_league_records_for_all_current_clubs_and_foreign_leagues",
         "2017_18_matchwise_position_frequency",
