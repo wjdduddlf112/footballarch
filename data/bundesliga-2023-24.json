@@ -10,7 +10,7 @@
     "dataStatus": "draft_unapproved",
     "standingsOnly": false,
     "nominationStatus": "fresh_2023_24_eight_actual_2024_25_uefa_entrants_source_linked_BDF_lineups",
-    "candidateCount": 151,
+    "candidateCount": 150,
     "candidateCoverage": {
       "qualifiedClubs": 8,
       "clubsWithCandidates": 8,
@@ -99,7 +99,7 @@
       "B+": 58,
       "B": 20,
       "B-": 10,
-      "C+": 4,
+      "C+": 3,
       "C": 0,
       "C-": 0,
       "D": 0,
@@ -110,25 +110,28 @@
     "verificationSummary": {
       "fullThreeSeasonIndependentVerified": 0,
       "matchwisePositionAuditComplete": 0,
-      "sourceLinkedCurrentYearPlayers": 151,
-      "DFBBirthdateReferenceLinked": 151,
+      "sourceLinkedCurrentYearPlayers": 150,
+      "DFBBirthdateReferenceLinked": 150,
       "previousYearLinkedRecordCounts": {
-        "2021-22": 56,
-        "2022-23": 69
+        "2021-22": 58,
+        "2022-23": 70
       },
       "clubCandidateCounts": {
         "leverkusen": 19,
         "stuttgart": 19,
         "bayern": 21,
         "leipzig": 19,
-        "dortmund": 22,
+        "dortmund": 21,
         "frankfurt": 17,
         "hoffenheim": 18,
         "heidenheim": 16
       },
-      "allGradesDraft": true
+      "allGradesDraft": true,
+      "independentlySourcedPriorYearStatRecords": 4,
+      "DFB2023_24SourcedAssists": 8,
+      "currentYearPersonLevelIndependentDoubleChecked": 0
     },
-    "notes": "2023-24 manually transcribed 8 BDFutbol team current stats as linked primary season source; birth dates per 2023-24 DFB team rosters sourced where accessible (individual secondary check pending); foreign-league old years missing null. Existing prior FootballArchive 2021/2022 are unapproved references NOT independent evidence. Entire historical three-season qualitative audit and matchwise position audit incomplete. Wingbacks mapped to fullbacks with original role and warnings. 2023-24 league assist fields remain null until provider verified."
+    "notes": "2023-24 manually transcribed 8 BDFutbol team current stats as linked primary season source; birth dates per 2023-24 DFB team rosters sourced where accessible (individual secondary check pending); foreign-league old years missing null. Existing prior FootballArchive 2021/2022 are unapproved references NOT independent evidence. Entire historical three-season qualitative audit and matchwise position audit incomplete. Wingbacks mapped to fullbacks with original role and warnings. 2023-24 league assist fields remain null until provider verified. Source followup: removed Dortmund Haller low-minute ST (rather than invented season starter equivalent), official DFB 2023-24 assists recorded for 8 leaders, and four selected Arsenal/Tottenham prior-year league records from independent Premier League/Statbunker sources. Full independent 3-year QUALITY certification remains 0."
   },
   "clubs": [
     {
@@ -1223,7 +1226,7 @@
       "leagueMinutes": 2787,
       "starts": 31,
       "goals2023": 10,
-      "assists2023": null,
+      "assists2023": 13,
       "tier": "A+",
       "rank": 1,
       "rankStatus": "provisional_personal_2023_24_form_primary_prior_unapproved_DRAFT_references",
@@ -1232,12 +1235,13 @@
       "evaluationStatus": "current_year_individual_club_lineup_and_DFB_DOB_references_prior_DRAFT_or_missing",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2023-241014.html",
-        "https://datencenter.dfb.de/competitions/bundesliga/seasons/2023-24/teams/bayer-leverkusen"
+        "https://datencenter.dfb.de/competitions/bundesliga/seasons/2023-24/teams/bayer-leverkusen",
+        "https://datencenter.dfb.de/ranglisten/bundesliga/2023-24"
       ],
       "evidence": {
         "currentSeason": "https://www.bdfutbol.com/en/t/t2023-241014.html",
         "identity": "https://datencenter.dfb.de/competitions/bundesliga/seasons/2023-24/teams/bayer-leverkusen",
-        "assists": null,
+        "assists": "https://datencenter.dfb.de/ranglisten/bundesliga/2023-24",
         "scope": "Bundesliga 2023-24 league BDFutbol appearances/starts/minutes/goals; goalkeeper negative G conceded, not scored"
       },
       "threeSeasonReview": {
@@ -1277,15 +1281,17 @@
             "starts": 31,
             "minutes": 2787,
             "goals": 10,
-            "assists": null,
+            "assists": 13,
             "source": "https://www.bdfutbol.com/en/t/t2023-241014.html",
-            "verification": "current_2023_24_BDFutbol_team_lineup_individual_row_manual_transcription"
+            "verification": "current_2023_24_BDFutbol_team_lineup_individual_row_manual_transcription",
+            "assistsProvider": "DFB Datencenter",
+            "assistsSource": "https://datencenter.dfb.de/ranglisten/bundesliga/2023-24"
           }
         },
         "status": "2023_24_current_source_record_2021_22_2022_23_archive_draft_or_missing_not_full_independent_verified"
       },
-      "tierReview": "2023-24 리그 33경기 31선발 2787분 10골. 현 시즌 공격·수비 기여 및 역할 LWB / left midfielder: mapped to LB for site position schema을 가장 높게 평가하고 2022-23, 2021-22의 기량 연속성을 보조 반영한 A+ 미승인 정성 등급. 이전 두 시즌의 미승인 아카이브 출전 기록 연결 0/2, 별도 독립 검증 전. 팀 순위·우승 가산 없음.",
-      "assessmentRationale": "2023-24 리그 33경기 31선발 2787분 10골. 현 시즌 공격·수비 기여 및 역할 LWB / left midfielder: mapped to LB for site position schema을 가장 높게 평가하고 2022-23, 2021-22의 기량 연속성을 보조 반영한 A+ 미승인 정성 등급. 이전 두 시즌의 미승인 아카이브 출전 기록 연결 0/2, 별도 독립 검증 전. 팀 순위·우승 가산 없음.",
+      "tierReview": "2023-24 리그 33경기 31선발 2787분 10골. 현 시즌 공격·수비 기여 및 역할 LWB / left midfielder: mapped to LB for site position schema을 가장 높게 평가하고 2022-23, 2021-22의 기량 연속성을 보조 반영한 A+ 미승인 정성 등급. 이전 두 시즌의 미승인 아카이브 출전 기록 연결 0/2, 별도 독립 검증 전. 팀 순위·우승 가산 없음. DFB 공식 2023-24 도움 집계 13개(DFB 제공자 기준).",
+      "assessmentRationale": "2023-24 리그 33경기 31선발 2787분 10골. 현 시즌 공격·수비 기여 및 역할 LWB / left midfielder: mapped to LB for site position schema을 가장 높게 평가하고 2022-23, 2021-22의 기량 연속성을 보조 반영한 A+ 미승인 정성 등급. 이전 두 시즌의 미승인 아카이브 출전 기록 연결 0/2, 별도 독립 검증 전. 팀 순위·우승 가산 없음. DFB 공식 2023-24 도움 집계 13개(DFB 제공자 기준).",
       "verificationNeeded": [
         "primary_position_matchwise_minutes",
         "full_independent_three_year_qualitative_review",
@@ -1420,7 +1426,8 @@
       "evaluationStatus": "current_year_individual_club_lineup_and_DFB_DOB_references_prior_DRAFT_or_missing",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2023-241014.html",
-        "https://datencenter.dfb.de/competitions/bundesliga/seasons/2023-24/teams/bayer-leverkusen"
+        "https://datencenter.dfb.de/competitions/bundesliga/seasons/2023-24/teams/bayer-leverkusen",
+        "https://www.statbunker.com/players/GetHistoryStats?comps_id=-1&comps_type=EPL&player_id=36827"
       ],
       "evidence": {
         "currentSeason": "https://www.bdfutbol.com/en/t/t2023-241014.html",
@@ -1437,26 +1444,30 @@
         "weighting": "2023-24 strongest, 2022-23 second, 2021-22 least, individual performance priority, no team trophy/finish bonus",
         "records": {
           "2021-22": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "assists": null,
-            "source": null,
-            "verification": "evidence_pending_not_zero"
+            "name": "Granit Xhaka",
+            "year": "2021-22",
+            "club": "Arsenal FC",
+            "league": "Premier League",
+            "appearances": 27,
+            "starts": 27,
+            "minutes": 2331,
+            "goals": 1,
+            "assists": 2,
+            "source": "https://www.statbunker.com/players/GetHistoryStats?comps_id=-1&comps_type=EPL&player_id=36827",
+            "verification": "external_independent_prior_year_stat_source_specific_claims_not_full_qualitative_3year_audit"
           },
           "2022-23": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "assists": null,
-            "source": null,
-            "verification": "evidence_pending_not_zero"
+            "name": "Granit Xhaka",
+            "year": "2022-23",
+            "club": "Arsenal FC",
+            "league": "Premier League",
+            "appearances": 37,
+            "starts": 36,
+            "minutes": 3004,
+            "goals": 7,
+            "assists": 7,
+            "source": "https://www.statbunker.com/players/GetHistoryStats?comps_id=-1&comps_type=EPL&player_id=36827",
+            "verification": "external_independent_prior_year_stat_source_specific_claims_not_full_qualitative_3year_audit"
           },
           "2023-24": {
             "club": "Bayer 04 Leverkusen",
@@ -1472,8 +1483,8 @@
         },
         "status": "2023_24_current_source_record_2021_22_2022_23_archive_draft_or_missing_not_full_independent_verified"
       },
-      "tierReview": "2023-24 리그 33경기 32선발 2828분 3골. 현 시즌 공격·수비 기여 및 역할 DM을 가장 높게 평가하고 2022-23, 2021-22의 기량 연속성을 보조 반영한 A+ 미승인 정성 등급. 이전 두 시즌의 미승인 아카이브 출전 기록 연결 0/2, 별도 독립 검증 전. 팀 순위·우승 가산 없음.",
-      "assessmentRationale": "2023-24 리그 33경기 32선발 2828분 3골. 현 시즌 공격·수비 기여 및 역할 DM을 가장 높게 평가하고 2022-23, 2021-22의 기량 연속성을 보조 반영한 A+ 미승인 정성 등급. 이전 두 시즌의 미승인 아카이브 출전 기록 연결 0/2, 별도 독립 검증 전. 팀 순위·우승 가산 없음.",
+      "tierReview": "2023-24 리그 33경기 32선발 2828분 3골. 현 시즌 공격·수비 기여 및 역할 DM을 가장 높게 평가하고 2022-23, 2021-22의 기량 연속성을 보조 반영한 A+ 미승인 정성 등급. 이전 두 시즌의 미승인 아카이브 출전 기록 연결 0/2, 별도 독립 검증 전. 팀 순위·우승 가산 없음. 2021-22 Arsenal FC Premier League 27경기 1골 (해당 리그 기록 별도 출처 확인). 2022-23 Arsenal FC Premier League 37경기 7골 (해당 리그 기록 별도 출처 확인).",
+      "assessmentRationale": "2023-24 리그 33경기 32선발 2828분 3골. 현 시즌 공격·수비 기여 및 역할 DM을 가장 높게 평가하고 2022-23, 2021-22의 기량 연속성을 보조 반영한 A+ 미승인 정성 등급. 이전 두 시즌의 미승인 아카이브 출전 기록 연결 0/2, 별도 독립 검증 전. 팀 순위·우승 가산 없음. 2021-22 Arsenal FC Premier League 27경기 1골 (해당 리그 기록 별도 출처 확인). 2022-23 Arsenal FC Premier League 37경기 7골 (해당 리그 기록 별도 출처 확인).",
       "verificationNeeded": [
         "primary_position_matchwise_minutes",
         "full_independent_three_year_qualitative_review",
@@ -1693,7 +1704,7 @@
       "leagueMinutes": 2382,
       "starts": 26,
       "goals2023": 11,
-      "assists2023": null,
+      "assists2023": 11,
       "tier": "S",
       "rank": 1,
       "rankStatus": "provisional_personal_2023_24_form_primary_prior_unapproved_DRAFT_references",
@@ -1702,12 +1713,13 @@
       "evaluationStatus": "current_year_individual_club_lineup_and_DFB_DOB_references_prior_DRAFT_or_missing",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2023-241014.html",
-        "https://datencenter.dfb.de/competitions/bundesliga/seasons/2023-24/teams/bayer-leverkusen"
+        "https://datencenter.dfb.de/competitions/bundesliga/seasons/2023-24/teams/bayer-leverkusen",
+        "https://datencenter.dfb.de/ranglisten/bundesliga/2023-24"
       ],
       "evidence": {
         "currentSeason": "https://www.bdfutbol.com/en/t/t2023-241014.html",
         "identity": "https://datencenter.dfb.de/competitions/bundesliga/seasons/2023-24/teams/bayer-leverkusen",
-        "assists": null,
+        "assists": "https://datencenter.dfb.de/ranglisten/bundesliga/2023-24",
         "scope": "Bundesliga 2023-24 league BDFutbol appearances/starts/minutes/goals; goalkeeper negative G conceded, not scored"
       },
       "threeSeasonReview": {
@@ -1747,15 +1759,17 @@
             "starts": 26,
             "minutes": 2382,
             "goals": 11,
-            "assists": null,
+            "assists": 11,
             "source": "https://www.bdfutbol.com/en/t/t2023-241014.html",
-            "verification": "current_2023_24_BDFutbol_team_lineup_individual_row_manual_transcription"
+            "verification": "current_2023_24_BDFutbol_team_lineup_individual_row_manual_transcription",
+            "assistsProvider": "DFB Datencenter",
+            "assistsSource": "https://datencenter.dfb.de/ranglisten/bundesliga/2023-24"
           }
         },
         "status": "2023_24_current_source_record_2021_22_2022_23_archive_draft_or_missing_not_full_independent_verified"
       },
-      "tierReview": "2023-24 리그 32경기 26선발 2382분 11골. 현 시즌 공격·수비 기여 및 역할 CAM을 가장 높게 평가하고 2022-23, 2021-22의 기량 연속성을 보조 반영한 S 미승인 정성 등급. 이전 두 시즌의 미승인 아카이브 출전 기록 연결 2/2, 별도 독립 검증 전. 팀 순위·우승 가산 없음.",
-      "assessmentRationale": "2023-24 리그 32경기 26선발 2382분 11골. 현 시즌 공격·수비 기여 및 역할 CAM을 가장 높게 평가하고 2022-23, 2021-22의 기량 연속성을 보조 반영한 S 미승인 정성 등급. 이전 두 시즌의 미승인 아카이브 출전 기록 연결 2/2, 별도 독립 검증 전. 팀 순위·우승 가산 없음.",
+      "tierReview": "2023-24 리그 32경기 26선발 2382분 11골. 현 시즌 공격·수비 기여 및 역할 CAM을 가장 높게 평가하고 2022-23, 2021-22의 기량 연속성을 보조 반영한 S 미승인 정성 등급. 이전 두 시즌의 미승인 아카이브 출전 기록 연결 2/2, 별도 독립 검증 전. 팀 순위·우승 가산 없음. DFB 공식 2023-24 도움 집계 11개(DFB 제공자 기준).",
+      "assessmentRationale": "2023-24 리그 32경기 26선발 2382분 11골. 현 시즌 공격·수비 기여 및 역할 CAM을 가장 높게 평가하고 2022-23, 2021-22의 기량 연속성을 보조 반영한 S 미승인 정성 등급. 이전 두 시즌의 미승인 아카이브 출전 기록 연결 2/2, 별도 독립 검증 전. 팀 순위·우승 가산 없음. DFB 공식 2023-24 도움 집계 11개(DFB 제공자 기준).",
       "verificationNeeded": [
         "primary_position_matchwise_minutes",
         "full_independent_three_year_qualitative_review",
@@ -4043,7 +4057,7 @@
       "leagueMinutes": 2098,
       "starts": 23,
       "goals2023": 18,
-      "assists2023": null,
+      "assists2023": 10,
       "tier": "A+",
       "rank": 4,
       "rankStatus": "provisional_personal_2023_24_form_primary_prior_unapproved_DRAFT_references",
@@ -4052,12 +4066,13 @@
       "evaluationStatus": "current_year_individual_club_lineup_and_DFB_DOB_references_prior_DRAFT_or_missing",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2023-241002.html",
-        "https://datencenter.dfb.de/competitions/bundesliga/seasons/2023-24/teams/vfb-stuttgart"
+        "https://datencenter.dfb.de/competitions/bundesliga/seasons/2023-24/teams/vfb-stuttgart",
+        "https://datencenter.dfb.de/ranglisten/bundesliga/2023-24"
       ],
       "evidence": {
         "currentSeason": "https://www.bdfutbol.com/en/t/t2023-241002.html",
         "identity": "https://datencenter.dfb.de/competitions/bundesliga/seasons/2023-24/teams/vfb-stuttgart",
-        "assists": null,
+        "assists": "https://datencenter.dfb.de/ranglisten/bundesliga/2023-24",
         "scope": "Bundesliga 2023-24 league BDFutbol appearances/starts/minutes/goals; goalkeeper negative G conceded, not scored"
       },
       "threeSeasonReview": {
@@ -4097,15 +4112,17 @@
             "starts": 23,
             "minutes": 2098,
             "goals": 18,
-            "assists": null,
+            "assists": 10,
             "source": "https://www.bdfutbol.com/en/t/t2023-241002.html",
-            "verification": "current_2023_24_BDFutbol_team_lineup_individual_row_manual_transcription"
+            "verification": "current_2023_24_BDFutbol_team_lineup_individual_row_manual_transcription",
+            "assistsProvider": "DFB Datencenter",
+            "assistsSource": "https://datencenter.dfb.de/ranglisten/bundesliga/2023-24"
           }
         },
         "status": "2023_24_current_source_record_2021_22_2022_23_archive_draft_or_missing_not_full_independent_verified"
       },
-      "tierReview": "2023-24 리그 30경기 23선발 2098분 18골. 현 시즌 공격·수비 기여 및 역할 ST을 가장 높게 평가하고 2022-23, 2021-22의 기량 연속성을 보조 반영한 A+ 미승인 정성 등급. 이전 두 시즌의 미승인 아카이브 출전 기록 연결 0/2, 별도 독립 검증 전. 팀 순위·우승 가산 없음.",
-      "assessmentRationale": "2023-24 리그 30경기 23선발 2098분 18골. 현 시즌 공격·수비 기여 및 역할 ST을 가장 높게 평가하고 2022-23, 2021-22의 기량 연속성을 보조 반영한 A+ 미승인 정성 등급. 이전 두 시즌의 미승인 아카이브 출전 기록 연결 0/2, 별도 독립 검증 전. 팀 순위·우승 가산 없음.",
+      "tierReview": "2023-24 리그 30경기 23선발 2098분 18골. 현 시즌 공격·수비 기여 및 역할 ST을 가장 높게 평가하고 2022-23, 2021-22의 기량 연속성을 보조 반영한 A+ 미승인 정성 등급. 이전 두 시즌의 미승인 아카이브 출전 기록 연결 0/2, 별도 독립 검증 전. 팀 순위·우승 가산 없음. DFB 공식 2023-24 도움 집계 10개(DFB 제공자 기준).",
+      "assessmentRationale": "2023-24 리그 30경기 23선발 2098분 18골. 현 시즌 공격·수비 기여 및 역할 ST을 가장 높게 평가하고 2022-23, 2021-22의 기량 연속성을 보조 반영한 A+ 미승인 정성 등급. 이전 두 시즌의 미승인 아카이브 출전 기록 연결 0/2, 별도 독립 검증 전. 팀 순위·우승 가산 없음. DFB 공식 2023-24 도움 집계 10개(DFB 제공자 기준).",
       "verificationNeeded": [
         "primary_position_matchwise_minutes",
         "full_independent_three_year_qualitative_review",
@@ -4308,9 +4325,9 @@
       "clubId": "bayern",
       "clubNameOriginal": "FC Bayern München",
       "season": "2023-24",
-      "name": "Min-jae Kim",
-      "nameOriginal": "Min-jae Kim",
-      "originalName": "Min-jae Kim",
+      "name": "Min-Jae Kim",
+      "nameOriginal": "Min-Jae Kim",
+      "originalName": "Min-Jae Kim",
       "nameKo": "김민재",
       "born": "1996-11-15",
       "birthSource": "https://datencenter.dfb.de/competitions/bundesliga/seasons/2023-24/teams/bayern-muenchen",
@@ -5457,7 +5474,7 @@
       "leagueMinutes": 1659,
       "starts": 20,
       "goals2023": 5,
-      "assists2023": null,
+      "assists2023": 10,
       "tier": "A-",
       "rank": 6,
       "rankStatus": "provisional_personal_2023_24_form_primary_prior_unapproved_DRAFT_references",
@@ -5466,12 +5483,13 @@
       "evaluationStatus": "current_year_individual_club_lineup_and_DFB_DOB_references_prior_DRAFT_or_missing",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2023-241016.html",
-        "https://datencenter.dfb.de/competitions/bundesliga/seasons/2023-24/teams/bayern-muenchen"
+        "https://datencenter.dfb.de/competitions/bundesliga/seasons/2023-24/teams/bayern-muenchen",
+        "https://datencenter.dfb.de/ranglisten/bundesliga/2023-24"
       ],
       "evidence": {
         "currentSeason": "https://www.bdfutbol.com/en/t/t2023-241016.html",
         "identity": "https://datencenter.dfb.de/competitions/bundesliga/seasons/2023-24/teams/bayern-muenchen",
-        "assists": null,
+        "assists": "https://datencenter.dfb.de/ranglisten/bundesliga/2023-24",
         "scope": "Bundesliga 2023-24 league BDFutbol appearances/starts/minutes/goals; goalkeeper negative G conceded, not scored"
       },
       "threeSeasonReview": {
@@ -5511,15 +5529,17 @@
             "starts": 20,
             "minutes": 1659,
             "goals": 5,
-            "assists": null,
+            "assists": 10,
             "source": "https://www.bdfutbol.com/en/t/t2023-241016.html",
-            "verification": "current_2023_24_BDFutbol_team_lineup_individual_row_manual_transcription"
+            "verification": "current_2023_24_BDFutbol_team_lineup_individual_row_manual_transcription",
+            "assistsProvider": "DFB Datencenter",
+            "assistsSource": "https://datencenter.dfb.de/ranglisten/bundesliga/2023-24"
           }
         },
         "status": "2023_24_current_source_record_2021_22_2022_23_archive_draft_or_missing_not_full_independent_verified"
       },
-      "tierReview": "2023-24 리그 31경기 20선발 1659분 5골. 현 시즌 공격·수비 기여 및 역할 CAM을 가장 높게 평가하고 2022-23, 2021-22의 기량 연속성을 보조 반영한 A- 미승인 정성 등급. 이전 두 시즌의 미승인 아카이브 출전 기록 연결 2/2, 별도 독립 검증 전. 팀 순위·우승 가산 없음.",
-      "assessmentRationale": "2023-24 리그 31경기 20선발 1659분 5골. 현 시즌 공격·수비 기여 및 역할 CAM을 가장 높게 평가하고 2022-23, 2021-22의 기량 연속성을 보조 반영한 A- 미승인 정성 등급. 이전 두 시즌의 미승인 아카이브 출전 기록 연결 2/2, 별도 독립 검증 전. 팀 순위·우승 가산 없음.",
+      "tierReview": "2023-24 리그 31경기 20선발 1659분 5골. 현 시즌 공격·수비 기여 및 역할 CAM을 가장 높게 평가하고 2022-23, 2021-22의 기량 연속성을 보조 반영한 A- 미승인 정성 등급. 이전 두 시즌의 미승인 아카이브 출전 기록 연결 2/2, 별도 독립 검증 전. 팀 순위·우승 가산 없음. DFB 공식 2023-24 도움 집계 10개(DFB 제공자 기준).",
+      "assessmentRationale": "2023-24 리그 31경기 20선발 1659분 5골. 현 시즌 공격·수비 기여 및 역할 CAM을 가장 높게 평가하고 2022-23, 2021-22의 기량 연속성을 보조 반영한 A- 미승인 정성 등급. 이전 두 시즌의 미승인 아카이브 출전 기록 연결 2/2, 별도 독립 검증 전. 팀 순위·우승 가산 없음. DFB 공식 2023-24 도움 집계 10개(DFB 제공자 기준).",
       "verificationNeeded": [
         "primary_position_matchwise_minutes",
         "full_independent_three_year_qualitative_review",
@@ -5739,7 +5759,7 @@
       "leagueMinutes": 2142,
       "starts": 25,
       "goals2023": 8,
-      "assists2023": null,
+      "assists2023": 11,
       "tier": "A",
       "rank": 1,
       "rankStatus": "provisional_personal_2023_24_form_primary_prior_unapproved_DRAFT_references",
@@ -5748,12 +5768,13 @@
       "evaluationStatus": "current_year_individual_club_lineup_and_DFB_DOB_references_prior_DRAFT_or_missing",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2023-241016.html",
-        "https://datencenter.dfb.de/competitions/bundesliga/seasons/2023-24/teams/bayern-muenchen"
+        "https://datencenter.dfb.de/competitions/bundesliga/seasons/2023-24/teams/bayern-muenchen",
+        "https://datencenter.dfb.de/ranglisten/bundesliga/2023-24"
       ],
       "evidence": {
         "currentSeason": "https://www.bdfutbol.com/en/t/t2023-241016.html",
         "identity": "https://datencenter.dfb.de/competitions/bundesliga/seasons/2023-24/teams/bayern-muenchen",
-        "assists": null,
+        "assists": "https://datencenter.dfb.de/ranglisten/bundesliga/2023-24",
         "scope": "Bundesliga 2023-24 league BDFutbol appearances/starts/minutes/goals; goalkeeper negative G conceded, not scored"
       },
       "threeSeasonReview": {
@@ -5793,15 +5814,17 @@
             "starts": 25,
             "minutes": 2142,
             "goals": 8,
-            "assists": null,
+            "assists": 11,
             "source": "https://www.bdfutbol.com/en/t/t2023-241016.html",
-            "verification": "current_2023_24_BDFutbol_team_lineup_individual_row_manual_transcription"
+            "verification": "current_2023_24_BDFutbol_team_lineup_individual_row_manual_transcription",
+            "assistsProvider": "DFB Datencenter",
+            "assistsSource": "https://datencenter.dfb.de/ranglisten/bundesliga/2023-24"
           }
         },
         "status": "2023_24_current_source_record_2021_22_2022_23_archive_draft_or_missing_not_full_independent_verified"
       },
-      "tierReview": "2023-24 리그 27경기 25선발 2142분 8골. 현 시즌 공격·수비 기여 및 역할 RW을 가장 높게 평가하고 2022-23, 2021-22의 기량 연속성을 보조 반영한 A0 미승인 정성 등급. 이전 두 시즌의 미승인 아카이브 출전 기록 연결 2/2, 별도 독립 검증 전. 팀 순위·우승 가산 없음.",
-      "assessmentRationale": "2023-24 리그 27경기 25선발 2142분 8골. 현 시즌 공격·수비 기여 및 역할 RW을 가장 높게 평가하고 2022-23, 2021-22의 기량 연속성을 보조 반영한 A0 미승인 정성 등급. 이전 두 시즌의 미승인 아카이브 출전 기록 연결 2/2, 별도 독립 검증 전. 팀 순위·우승 가산 없음.",
+      "tierReview": "2023-24 리그 27경기 25선발 2142분 8골. 현 시즌 공격·수비 기여 및 역할 RW을 가장 높게 평가하고 2022-23, 2021-22의 기량 연속성을 보조 반영한 A0 미승인 정성 등급. 이전 두 시즌의 미승인 아카이브 출전 기록 연결 2/2, 별도 독립 검증 전. 팀 순위·우승 가산 없음. DFB 공식 2023-24 도움 집계 11개(DFB 제공자 기준).",
+      "assessmentRationale": "2023-24 리그 27경기 25선발 2142분 8골. 현 시즌 공격·수비 기여 및 역할 RW을 가장 높게 평가하고 2022-23, 2021-22의 기량 연속성을 보조 반영한 A0 미승인 정성 등급. 이전 두 시즌의 미승인 아카이브 출전 기록 연결 2/2, 별도 독립 검증 전. 팀 순위·우승 가산 없음. DFB 공식 2023-24 도움 집계 11개(DFB 제공자 기준).",
       "verificationNeeded": [
         "primary_position_matchwise_minutes",
         "full_independent_three_year_qualitative_review",
@@ -5936,7 +5959,8 @@
       "evaluationStatus": "current_year_individual_club_lineup_and_DFB_DOB_references_prior_DRAFT_or_missing",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2023-241016.html",
-        "https://datencenter.dfb.de/competitions/bundesliga/seasons/2023-24/teams/bayern-muenchen"
+        "https://datencenter.dfb.de/competitions/bundesliga/seasons/2023-24/teams/bayern-muenchen",
+        "https://www.premierleague.com/en/players/78830/harry-kane/career"
       ],
       "evidence": {
         "currentSeason": "https://www.bdfutbol.com/en/t/t2023-241016.html",
@@ -5953,26 +5977,30 @@
         "weighting": "2023-24 strongest, 2022-23 second, 2021-22 least, individual performance priority, no team trophy/finish bonus",
         "records": {
           "2021-22": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
+            "name": "Harry Kane",
+            "year": "2021-22",
+            "club": "Tottenham Hotspur FC",
+            "league": "Premier League",
+            "appearances": 37,
+            "starts": 36,
             "minutes": null,
-            "goals": null,
-            "assists": null,
-            "source": null,
-            "verification": "evidence_pending_not_zero"
+            "goals": 17,
+            "assists": 9,
+            "source": "https://www.premierleague.com/en/players/78830/harry-kane/career",
+            "verification": "external_independent_prior_year_stat_source_specific_claims_not_full_qualitative_3year_audit"
           },
           "2022-23": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
+            "name": "Harry Kane",
+            "year": "2022-23",
+            "club": "Tottenham Hotspur FC",
+            "league": "Premier League",
+            "appearances": 38,
+            "starts": 38,
             "minutes": null,
-            "goals": null,
-            "assists": null,
-            "source": null,
-            "verification": "evidence_pending_not_zero"
+            "goals": 30,
+            "assists": 3,
+            "source": "https://www.premierleague.com/en/players/78830/harry-kane/career",
+            "verification": "external_independent_prior_year_stat_source_specific_claims_not_full_qualitative_3year_audit"
           },
           "2023-24": {
             "club": "FC Bayern München",
@@ -5988,8 +6016,8 @@
         },
         "status": "2023_24_current_source_record_2021_22_2022_23_archive_draft_or_missing_not_full_independent_verified"
       },
-      "tierReview": "2023-24 리그 32경기 32선발 2844분 36골. 현 시즌 공격·수비 기여 및 역할 ST을 가장 높게 평가하고 2022-23, 2021-22의 기량 연속성을 보조 반영한 S 미승인 정성 등급. 이전 두 시즌의 미승인 아카이브 출전 기록 연결 0/2, 별도 독립 검증 전. 팀 순위·우승 가산 없음.",
-      "assessmentRationale": "2023-24 리그 32경기 32선발 2844분 36골. 현 시즌 공격·수비 기여 및 역할 ST을 가장 높게 평가하고 2022-23, 2021-22의 기량 연속성을 보조 반영한 S 미승인 정성 등급. 이전 두 시즌의 미승인 아카이브 출전 기록 연결 0/2, 별도 독립 검증 전. 팀 순위·우승 가산 없음.",
+      "tierReview": "2023-24 리그 32경기 32선발 2844분 36골. 현 시즌 공격·수비 기여 및 역할 ST을 가장 높게 평가하고 2022-23, 2021-22의 기량 연속성을 보조 반영한 S 미승인 정성 등급. 이전 두 시즌의 미승인 아카이브 출전 기록 연결 0/2, 별도 독립 검증 전. 팀 순위·우승 가산 없음. 2021-22 Tottenham Hotspur FC Premier League 37경기 17골 (해당 리그 기록 별도 출처 확인). 2022-23 Tottenham Hotspur FC Premier League 38경기 30골 (해당 리그 기록 별도 출처 확인).",
+      "assessmentRationale": "2023-24 리그 32경기 32선발 2844분 36골. 현 시즌 공격·수비 기여 및 역할 ST을 가장 높게 평가하고 2022-23, 2021-22의 기량 연속성을 보조 반영한 S 미승인 정성 등급. 이전 두 시즌의 미승인 아카이브 출전 기록 연결 0/2, 별도 독립 검증 전. 팀 순위·우승 가산 없음. 2021-22 Tottenham Hotspur FC Premier League 37경기 17골 (해당 리그 기록 별도 출처 확인). 2022-23 Tottenham Hotspur FC Premier League 38경기 30골 (해당 리그 기록 별도 출처 확인).",
       "verificationNeeded": [
         "primary_position_matchwise_minutes",
         "full_independent_three_year_qualitative_review",
@@ -7525,7 +7553,7 @@
       "leagueMinutes": 2675,
       "starts": 32,
       "goals2023": 8,
-      "assists2023": null,
+      "assists2023": 13,
       "tier": "A+",
       "rank": 1,
       "rankStatus": "provisional_personal_2023_24_form_primary_prior_unapproved_DRAFT_references",
@@ -7534,12 +7562,13 @@
       "evaluationStatus": "current_year_individual_club_lineup_and_DFB_DOB_references_prior_DRAFT_or_missing",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2023-241049.html",
-        "https://datencenter.dfb.de/competitions/bundesliga/seasons/2023-24/teams/rb-leipzig"
+        "https://datencenter.dfb.de/competitions/bundesliga/seasons/2023-24/teams/rb-leipzig",
+        "https://datencenter.dfb.de/ranglisten/bundesliga/2023-24"
       ],
       "evidence": {
         "currentSeason": "https://www.bdfutbol.com/en/t/t2023-241049.html",
         "identity": "https://datencenter.dfb.de/competitions/bundesliga/seasons/2023-24/teams/rb-leipzig",
-        "assists": null,
+        "assists": "https://datencenter.dfb.de/ranglisten/bundesliga/2023-24",
         "scope": "Bundesliga 2023-24 league BDFutbol appearances/starts/minutes/goals; goalkeeper negative G conceded, not scored"
       },
       "threeSeasonReview": {
@@ -7579,15 +7608,17 @@
             "starts": 32,
             "minutes": 2675,
             "goals": 8,
-            "assists": null,
+            "assists": 13,
             "source": "https://www.bdfutbol.com/en/t/t2023-241049.html",
-            "verification": "current_2023_24_BDFutbol_team_lineup_individual_row_manual_transcription"
+            "verification": "current_2023_24_BDFutbol_team_lineup_individual_row_manual_transcription",
+            "assistsProvider": "DFB Datencenter",
+            "assistsSource": "https://datencenter.dfb.de/ranglisten/bundesliga/2023-24"
           }
         },
         "status": "2023_24_current_source_record_2021_22_2022_23_archive_draft_or_missing_not_full_independent_verified"
       },
-      "tierReview": "2023-24 리그 32경기 32선발 2675분 8골. 현 시즌 공격·수비 기여 및 역할 left advanced half-space midfielder / left wing in fluid 4-2-2-2; LW is provisional을 가장 높게 평가하고 2022-23, 2021-22의 기량 연속성을 보조 반영한 A+ 미승인 정성 등급. 이전 두 시즌의 미승인 아카이브 출전 기록 연결 0/2, 별도 독립 검증 전. 팀 순위·우승 가산 없음.",
-      "assessmentRationale": "2023-24 리그 32경기 32선발 2675분 8골. 현 시즌 공격·수비 기여 및 역할 left advanced half-space midfielder / left wing in fluid 4-2-2-2; LW is provisional을 가장 높게 평가하고 2022-23, 2021-22의 기량 연속성을 보조 반영한 A+ 미승인 정성 등급. 이전 두 시즌의 미승인 아카이브 출전 기록 연결 0/2, 별도 독립 검증 전. 팀 순위·우승 가산 없음.",
+      "tierReview": "2023-24 리그 32경기 32선발 2675분 8골. 현 시즌 공격·수비 기여 및 역할 left advanced half-space midfielder / left wing in fluid 4-2-2-2; LW is provisional을 가장 높게 평가하고 2022-23, 2021-22의 기량 연속성을 보조 반영한 A+ 미승인 정성 등급. 이전 두 시즌의 미승인 아카이브 출전 기록 연결 0/2, 별도 독립 검증 전. 팀 순위·우승 가산 없음. DFB 공식 2023-24 도움 집계 13개(DFB 제공자 기준).",
+      "assessmentRationale": "2023-24 리그 32경기 32선발 2675분 8골. 현 시즌 공격·수비 기여 및 역할 left advanced half-space midfielder / left wing in fluid 4-2-2-2; LW is provisional을 가장 높게 평가하고 2022-23, 2021-22의 기량 연속성을 보조 반영한 A+ 미승인 정성 등급. 이전 두 시즌의 미승인 아카이브 출전 기록 연결 0/2, 별도 독립 검증 전. 팀 순위·우승 가산 없음. DFB 공식 2023-24 도움 집계 13개(DFB 제공자 기준).",
       "verificationNeeded": [
         "primary_position_matchwise_minutes",
         "full_independent_three_year_qualitative_review",
@@ -9123,7 +9154,7 @@
       "leagueMinutes": 2230,
       "starts": 26,
       "goals2023": 7,
-      "assists2023": null,
+      "assists2023": 12,
       "tier": "A",
       "rank": 2,
       "rankStatus": "provisional_personal_2023_24_form_primary_prior_unapproved_DRAFT_references",
@@ -9132,12 +9163,13 @@
       "evaluationStatus": "current_year_individual_club_lineup_and_DFB_DOB_references_prior_DRAFT_or_missing",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2023-241003.html",
-        "https://datencenter.dfb.de/competitions/bundesliga/seasons/2023-24/teams/borussia-dortmund"
+        "https://datencenter.dfb.de/competitions/bundesliga/seasons/2023-24/teams/borussia-dortmund",
+        "https://datencenter.dfb.de/ranglisten/bundesliga/2023-24"
       ],
       "evidence": {
         "currentSeason": "https://www.bdfutbol.com/en/t/t2023-241003.html",
         "identity": "https://datencenter.dfb.de/competitions/bundesliga/seasons/2023-24/teams/borussia-dortmund",
-        "assists": null,
+        "assists": "https://datencenter.dfb.de/ranglisten/bundesliga/2023-24",
         "scope": "Bundesliga 2023-24 league BDFutbol appearances/starts/minutes/goals; goalkeeper negative G conceded, not scored"
       },
       "threeSeasonReview": {
@@ -9177,15 +9209,17 @@
             "starts": 26,
             "minutes": 2230,
             "goals": 7,
-            "assists": null,
+            "assists": 12,
             "source": "https://www.bdfutbol.com/en/t/t2023-241003.html",
-            "verification": "current_2023_24_BDFutbol_team_lineup_individual_row_manual_transcription"
+            "verification": "current_2023_24_BDFutbol_team_lineup_individual_row_manual_transcription",
+            "assistsProvider": "DFB Datencenter",
+            "assistsSource": "https://datencenter.dfb.de/ranglisten/bundesliga/2023-24"
           }
         },
         "status": "2023_24_current_source_record_2021_22_2022_23_archive_draft_or_missing_not_full_independent_verified"
       },
-      "tierReview": "2023-24 리그 32경기 26선발 2230분 7골. 현 시즌 공격·수비 기여 및 역할 CAM을 가장 높게 평가하고 2022-23, 2021-22의 기량 연속성을 보조 반영한 A0 미승인 정성 등급. 이전 두 시즌의 미승인 아카이브 출전 기록 연결 2/2, 별도 독립 검증 전. 팀 순위·우승 가산 없음.",
-      "assessmentRationale": "2023-24 리그 32경기 26선발 2230분 7골. 현 시즌 공격·수비 기여 및 역할 CAM을 가장 높게 평가하고 2022-23, 2021-22의 기량 연속성을 보조 반영한 A0 미승인 정성 등급. 이전 두 시즌의 미승인 아카이브 출전 기록 연결 2/2, 별도 독립 검증 전. 팀 순위·우승 가산 없음.",
+      "tierReview": "2023-24 리그 32경기 26선발 2230분 7골. 현 시즌 공격·수비 기여 및 역할 CAM을 가장 높게 평가하고 2022-23, 2021-22의 기량 연속성을 보조 반영한 A0 미승인 정성 등급. 이전 두 시즌의 미승인 아카이브 출전 기록 연결 2/2, 별도 독립 검증 전. 팀 순위·우승 가산 없음. DFB 공식 2023-24 도움 집계 12개(DFB 제공자 기준).",
+      "assessmentRationale": "2023-24 리그 32경기 26선발 2230분 7골. 현 시즌 공격·수비 기여 및 역할 CAM을 가장 높게 평가하고 2022-23, 2021-22의 기량 연속성을 보조 반영한 A0 미승인 정성 등급. 이전 두 시즌의 미승인 아카이브 출전 기록 연결 2/2, 별도 독립 검증 전. 팀 순위·우승 가산 없음. DFB 공식 2023-24 도움 집계 12개(DFB 제공자 기준).",
       "verificationNeeded": [
         "primary_position_matchwise_minutes",
         "full_independent_three_year_qualitative_review",
@@ -9844,100 +9878,6 @@
       },
       "tierReview": "2023-24 리그 20경기 4선발 613분 5골. 현 시즌 공격·수비 기여 및 역할 ST을 가장 높게 평가하고 2022-23, 2021-22의 기량 연속성을 보조 반영한 B- 미승인 정성 등급. 이전 두 시즌의 미승인 아카이브 출전 기록 연결 1/2, 별도 독립 검증 전. 팀 순위·우승 가산 없음.",
       "assessmentRationale": "2023-24 리그 20경기 4선발 613분 5골. 현 시즌 공격·수비 기여 및 역할 ST을 가장 높게 평가하고 2022-23, 2021-22의 기량 연속성을 보조 반영한 B- 미승인 정성 등급. 이전 두 시즌의 미승인 아카이브 출전 기록 연결 1/2, 별도 독립 검증 전. 팀 순위·우승 가산 없음.",
-      "verificationNeeded": [
-        "primary_position_matchwise_minutes",
-        "full_independent_three_year_qualitative_review",
-        "previous_years_outside_selected_clubs_and_foreign_leagues",
-        "current_person_level_second_stat_source",
-        "individual_DOB_second_source"
-      ]
-    },
-    {
-      "id": "bundesliga-2023-dortmund-sebastienhaller",
-      "club": "dortmund",
-      "clubId": "dortmund",
-      "clubNameOriginal": "BV 09 Borussia Dortmund",
-      "season": "2023-24",
-      "name": "Sébastien Haller",
-      "nameOriginal": "Sébastien Haller",
-      "originalName": "Sébastien Haller",
-      "nameKo": "세바스티앵 알레",
-      "born": "1994-06-22",
-      "birthSource": "https://datencenter.dfb.de/competitions/bundesliga/seasons/2023-24/teams/borussia-dortmund",
-      "birthVerification": "DFB_2023_24_team_historical_roster_reference_individual_secondary_DOB_check_pending",
-      "position": "ST",
-      "originalTacticalRole": "ST",
-      "positionVerification": "provisional_real_role_matchwise_frequency_pending",
-      "role": "starter",
-      "roleVerification": "BDFutbol 2023-24 14 appearances / 5 league starts / 393 minutes; seasonal starter-equivalent assessment provisional; partial-season rotational starter-equivalent pending independent tactical audit",
-      "leagueAppearances": 14,
-      "leagueStarts": 5,
-      "leagueMinutes": 393,
-      "starts": 5,
-      "goals2023": 0,
-      "assists2023": null,
-      "tier": "C+",
-      "rank": 21,
-      "rankStatus": "provisional_personal_2023_24_form_primary_prior_unapproved_DRAFT_references",
-      "review": "draft_unapproved",
-      "verificationStatus": "partially_verified",
-      "evaluationStatus": "current_year_individual_club_lineup_and_DFB_DOB_references_prior_DRAFT_or_missing",
-      "sources": [
-        "https://www.bdfutbol.com/en/t/t2023-241003.html",
-        "https://datencenter.dfb.de/competitions/bundesliga/seasons/2023-24/teams/borussia-dortmund"
-      ],
-      "evidence": {
-        "currentSeason": "https://www.bdfutbol.com/en/t/t2023-241003.html",
-        "identity": "https://datencenter.dfb.de/competitions/bundesliga/seasons/2023-24/teams/borussia-dortmund",
-        "assists": null,
-        "scope": "Bundesliga 2023-24 league BDFutbol appearances/starts/minutes/goals; goalkeeper negative G conceded, not scored"
-      },
-      "threeSeasonReview": {
-        "assessmentSeasons": [
-          "2021-22",
-          "2022-23",
-          "2023-24"
-        ],
-        "weighting": "2023-24 strongest, 2022-23 second, 2021-22 least, individual performance priority, no team trophy/finish bonus",
-        "records": {
-          "2021-22": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "assists": null,
-            "source": null,
-            "verification": "evidence_pending_not_zero"
-          },
-          "2022-23": {
-            "club": "BV 09 Borussia Dortmund",
-            "league": "Bundesliga",
-            "appearances": 19,
-            "starts": 15,
-            "minutes": 1232,
-            "goals": 9,
-            "assists": null,
-            "source": "https://www.bdfutbol.com/en/t/t2022-231003.html",
-            "verification": "prior_FootballArchive_UNAPPROVED_DRAFT_only_needs_independent_check"
-          },
-          "2023-24": {
-            "club": "BV 09 Borussia Dortmund",
-            "league": "Bundesliga",
-            "appearances": 14,
-            "starts": 5,
-            "minutes": 393,
-            "goals": 0,
-            "assists": null,
-            "source": "https://www.bdfutbol.com/en/t/t2023-241003.html",
-            "verification": "current_2023_24_BDFutbol_team_lineup_individual_row_manual_transcription"
-          }
-        },
-        "status": "2023_24_current_source_record_2021_22_2022_23_archive_draft_or_missing_not_full_independent_verified"
-      },
-      "tierReview": "2023-24 리그 14경기 5선발 393분 0골. 현 시즌 공격·수비 기여 및 역할 ST을 가장 높게 평가하고 2022-23, 2021-22의 기량 연속성을 보조 반영한 C+ 미승인 정성 등급. 이전 두 시즌의 미승인 아카이브 출전 기록 연결 1/2, 별도 독립 검증 전. 팀 순위·우승 가산 없음.",
-      "assessmentRationale": "2023-24 리그 14경기 5선발 393분 0골. 현 시즌 공격·수비 기여 및 역할 ST을 가장 높게 평가하고 2022-23, 2021-22의 기량 연속성을 보조 반영한 C+ 미승인 정성 등급. 이전 두 시즌의 미승인 아카이브 출전 기록 연결 1/2, 별도 독립 검증 전. 팀 순위·우승 가산 없음.",
       "verificationNeeded": [
         "primary_position_matchwise_minutes",
         "full_independent_three_year_qualitative_review",
@@ -14293,7 +14233,7 @@
       "leagueMinutes": 2626,
       "starts": 31,
       "goals2023": 8,
-      "assists2023": null,
+      "assists2023": 12,
       "tier": "A",
       "rank": 3,
       "rankStatus": "provisional_personal_2023_24_form_primary_prior_unapproved_DRAFT_references",
@@ -14302,12 +14242,13 @@
       "evaluationStatus": "current_year_individual_club_lineup_and_DFB_DOB_references_prior_DRAFT_or_missing",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2023-241057.html",
-        "https://datencenter.dfb.de/competitions/bundesliga/seasons/2023-24/teams/1-fc-heidenheim"
+        "https://datencenter.dfb.de/competitions/bundesliga/seasons/2023-24/teams/1-fc-heidenheim",
+        "https://datencenter.dfb.de/ranglisten/bundesliga/2023-24"
       ],
       "evidence": {
         "currentSeason": "https://www.bdfutbol.com/en/t/t2023-241057.html",
         "identity": "https://datencenter.dfb.de/competitions/bundesliga/seasons/2023-24/teams/1-fc-heidenheim",
-        "assists": null,
+        "assists": "https://datencenter.dfb.de/ranglisten/bundesliga/2023-24",
         "scope": "Bundesliga 2023-24 league BDFutbol appearances/starts/minutes/goals; goalkeeper negative G conceded, not scored"
       },
       "threeSeasonReview": {
@@ -14347,15 +14288,17 @@
             "starts": 31,
             "minutes": 2626,
             "goals": 8,
-            "assists": null,
+            "assists": 12,
             "source": "https://www.bdfutbol.com/en/t/t2023-241057.html",
-            "verification": "current_2023_24_BDFutbol_team_lineup_individual_row_manual_transcription"
+            "verification": "current_2023_24_BDFutbol_team_lineup_individual_row_manual_transcription",
+            "assistsProvider": "DFB Datencenter",
+            "assistsSource": "https://datencenter.dfb.de/ranglisten/bundesliga/2023-24"
           }
         },
         "status": "2023_24_current_source_record_2021_22_2022_23_archive_draft_or_missing_not_full_independent_verified"
       },
-      "tierReview": "2023-24 리그 31경기 31선발 2626분 8골. 현 시즌 공격·수비 기여 및 역할 LW을 가장 높게 평가하고 2022-23, 2021-22의 기량 연속성을 보조 반영한 A0 미승인 정성 등급. 이전 두 시즌의 미승인 아카이브 출전 기록 연결 0/2, 별도 독립 검증 전. 팀 순위·우승 가산 없음.",
-      "assessmentRationale": "2023-24 리그 31경기 31선발 2626분 8골. 현 시즌 공격·수비 기여 및 역할 LW을 가장 높게 평가하고 2022-23, 2021-22의 기량 연속성을 보조 반영한 A0 미승인 정성 등급. 이전 두 시즌의 미승인 아카이브 출전 기록 연결 0/2, 별도 독립 검증 전. 팀 순위·우승 가산 없음.",
+      "tierReview": "2023-24 리그 31경기 31선발 2626분 8골. 현 시즌 공격·수비 기여 및 역할 LW을 가장 높게 평가하고 2022-23, 2021-22의 기량 연속성을 보조 반영한 A0 미승인 정성 등급. 이전 두 시즌의 미승인 아카이브 출전 기록 연결 0/2, 별도 독립 검증 전. 팀 순위·우승 가산 없음. DFB 공식 2023-24 도움 집계 12개(DFB 제공자 기준).",
+      "assessmentRationale": "2023-24 리그 31경기 31선발 2626분 8골. 현 시즌 공격·수비 기여 및 역할 LW을 가장 높게 평가하고 2022-23, 2021-22의 기량 연속성을 보조 반영한 A0 미승인 정성 등급. 이전 두 시즌의 미승인 아카이브 출전 기록 연결 0/2, 별도 독립 검증 전. 팀 순위·우승 가산 없음. DFB 공식 2023-24 도움 집계 12개(DFB 제공자 기준).",
       "verificationNeeded": [
         "primary_position_matchwise_minutes",
         "full_independent_three_year_qualitative_review",
@@ -14747,7 +14690,7 @@
       "displayPosition": "GK",
       "playerId": "bundesliga-2023-dortmund-gregorkobel",
       "status": "proposed_unapproved",
-      "reason": "2023-24 27선발 / 2366분 / 골 미확인골; 현재 시즌 개인 활약과 4-2-3-1 역할 적합성 우선. 이전 두 시즌 전체 독립 정성 검증 대기. 3백 전용 측면 윙백을 포백 풀백에 억지 배치하지 않음.",
+      "reason": "2023-24 분데스리가 27경기 27선발 2366분. 2023-24 개인 활약과 해당 포지션 전술적 적합성 고려. 2021-22/2022-23 개인 활약은 낮은 비중으로 참조하되 전원 독립적 3시즌 정성 검증 미완료. 팀 우승/성적 자체 가산점 없음.",
       "alternates": []
     },
     {
@@ -14755,7 +14698,7 @@
       "displayPosition": "CB",
       "playerId": "bundesliga-2023-leverkusen-jonathantah",
       "status": "proposed_unapproved",
-      "reason": "2023-24 30선발 / 2633분 / 4골; 현재 시즌 개인 활약과 4-2-3-1 역할 적합성 우선. 이전 두 시즌 전체 독립 정성 검증 대기. 3백 전용 측면 윙백을 포백 풀백에 억지 배치하지 않음.",
+      "reason": "2023-24 분데스리가 31경기 30선발 2633분 4골. 2023-24 개인 활약과 해당 포지션 전술적 적합성 고려. 2021-22/2022-23 개인 활약은 낮은 비중으로 참조하되 전원 독립적 3시즌 정성 검증 미완료. 팀 우승/성적 자체 가산점 없음.",
       "alternates": []
     },
     {
@@ -14763,7 +14706,7 @@
       "displayPosition": "CB",
       "playerId": "bundesliga-2023-dortmund-nicoschlotterbeck",
       "status": "proposed_unapproved",
-      "reason": "2023-24 32선발 / 2861분 / 2골; 현재 시즌 개인 활약과 4-2-3-1 역할 적합성 우선. 이전 두 시즌 전체 독립 정성 검증 대기. 3백 전용 측면 윙백을 포백 풀백에 억지 배치하지 않음.",
+      "reason": "2023-24 분데스리가 33경기 32선발 2861분 2골. 2023-24 개인 활약과 해당 포지션 전술적 적합성 고려. 2021-22/2022-23 개인 활약은 낮은 비중으로 참조하되 전원 독립적 3시즌 정성 검증 미완료. 팀 우승/성적 자체 가산점 없음.",
       "alternates": []
     },
     {
@@ -14771,7 +14714,7 @@
       "displayPosition": "LB",
       "playerId": "bundesliga-2023-stuttgart-maximilianmittelstadt",
       "status": "proposed_unapproved",
-      "reason": "2023-24 23선발 / 2104분 / 2골; 현재 시즌 개인 활약과 4-2-3-1 역할 적합성 우선. 이전 두 시즌 전체 독립 정성 검증 대기. 3백 전용 측면 윙백을 포백 풀백에 억지 배치하지 않음.",
+      "reason": "2023-24 분데스리가 31경기 23선발 2104분 2골. 2023-24 개인 활약과 해당 포지션 전술적 적합성 고려. 2021-22/2022-23 개인 활약은 낮은 비중으로 참조하되 전원 독립적 3시즌 정성 검증 미완료. 팀 우승/성적 자체 가산점 없음.",
       "alternates": []
     },
     {
@@ -14779,7 +14722,7 @@
       "displayPosition": "RB",
       "playerId": "bundesliga-2023-bayern-joshuakimmich",
       "status": "proposed_unapproved",
-      "reason": "2023-24 27선발 / 2185분 / 1골; 현재 시즌 개인 활약과 4-2-3-1 역할 적합성 우선. 이전 두 시즌 전체 독립 정성 검증 대기. 3백 전용 측면 윙백을 포백 풀백에 억지 배치하지 않음.",
+      "reason": "2023-24 분데스리가 28경기 27선발 2185분 1골. 2023-24 개인 활약과 해당 포지션 전술적 적합성 고려. 2021-22/2022-23 개인 활약은 낮은 비중으로 참조하되 전원 독립적 3시즌 정성 검증 미완료. 팀 우승/성적 자체 가산점 없음.",
       "alternates": []
     },
     {
@@ -14787,7 +14730,7 @@
       "displayPosition": "DM",
       "playerId": "bundesliga-2023-leverkusen-granitxhaka",
       "status": "proposed_unapproved",
-      "reason": "2023-24 32선발 / 2828분 / 3골; 현재 시즌 개인 활약과 4-2-3-1 역할 적합성 우선. 이전 두 시즌 전체 독립 정성 검증 대기. 3백 전용 측면 윙백을 포백 풀백에 억지 배치하지 않음.",
+      "reason": "2023-24 분데스리가 33경기 32선발 2828분 3골. 2023-24 개인 활약과 해당 포지션 전술적 적합성 고려. 2021-22/2022-23 개인 활약은 낮은 비중으로 참조하되 전원 독립적 3시즌 정성 검증 미완료. 팀 우승/성적 자체 가산점 없음.",
       "alternates": []
     },
     {
@@ -14795,7 +14738,7 @@
       "displayPosition": "CM",
       "playerId": "bundesliga-2023-stuttgart-angelostiller",
       "status": "proposed_unapproved",
-      "reason": "2023-24 30선발 / 2697분 / 1골; 현재 시즌 개인 활약과 4-2-3-1 역할 적합성 우선. 이전 두 시즌 전체 독립 정성 검증 대기. 3백 전용 측면 윙백을 포백 풀백에 억지 배치하지 않음.",
+      "reason": "2023-24 분데스리가 31경기 30선발 2697분 1골. 2023-24 개인 활약과 해당 포지션 전술적 적합성 고려. 2021-22/2022-23 개인 활약은 낮은 비중으로 참조하되 전원 독립적 3시즌 정성 검증 미완료. 팀 우승/성적 자체 가산점 없음.",
       "alternates": []
     },
     {
@@ -14803,7 +14746,7 @@
       "displayPosition": "CAM",
       "playerId": "bundesliga-2023-leverkusen-florianwirtz",
       "status": "proposed_unapproved",
-      "reason": "2023-24 26선발 / 2382분 / 11골; 현재 시즌 개인 활약과 4-2-3-1 역할 적합성 우선. 이전 두 시즌 전체 독립 정성 검증 대기. 3백 전용 측면 윙백을 포백 풀백에 억지 배치하지 않음.",
+      "reason": "2023-24 분데스리가 32경기 26선발 2382분 11골 DFB 11도움. 2023-24 개인 활약과 해당 포지션 전술적 적합성 고려. 2021-22/2022-23 개인 활약은 낮은 비중으로 참조하되 전원 독립적 3시즌 정성 검증 미완료. 팀 우승/성적 자체 가산점 없음.",
       "alternates": []
     },
     {
@@ -14811,7 +14754,7 @@
       "displayPosition": "LW",
       "playerId": "bundesliga-2023-stuttgart-chrisfuhrich",
       "status": "proposed_unapproved",
-      "reason": "2023-24 33선발 / 2593분 / 8골; 현재 시즌 개인 활약과 4-2-3-1 역할 적합성 우선. 이전 두 시즌 전체 독립 정성 검증 대기. 3백 전용 측면 윙백을 포백 풀백에 억지 배치하지 않음.",
+      "reason": "2023-24 분데스리가 34경기 33선발 2593분 8골. 2023-24 개인 활약과 해당 포지션 전술적 적합성 고려. 2021-22/2022-23 개인 활약은 낮은 비중으로 참조하되 전원 독립적 3시즌 정성 검증 미완료. 팀 우승/성적 자체 가산점 없음.",
       "alternates": []
     },
     {
@@ -14819,7 +14762,7 @@
       "displayPosition": "RW",
       "playerId": "bundesliga-2023-bayern-leroysane",
       "status": "proposed_unapproved",
-      "reason": "2023-24 25선발 / 2142분 / 8골; 현재 시즌 개인 활약과 4-2-3-1 역할 적합성 우선. 이전 두 시즌 전체 독립 정성 검증 대기. 3백 전용 측면 윙백을 포백 풀백에 억지 배치하지 않음.",
+      "reason": "2023-24 분데스리가 27경기 25선발 2142분 8골 DFB 11도움. 2023-24 개인 활약과 해당 포지션 전술적 적합성 고려. 2021-22/2022-23 개인 활약은 낮은 비중으로 참조하되 전원 독립적 3시즌 정성 검증 미완료. 팀 우승/성적 자체 가산점 없음.",
       "alternates": []
     },
     {
@@ -14827,7 +14770,7 @@
       "displayPosition": "ST",
       "playerId": "bundesliga-2023-bayern-harrykane",
       "status": "proposed_unapproved",
-      "reason": "2023-24 32선발 / 2844분 / 36골; 현재 시즌 개인 활약과 4-2-3-1 역할 적합성 우선. 이전 두 시즌 전체 독립 정성 검증 대기. 3백 전용 측면 윙백을 포백 풀백에 억지 배치하지 않음.",
+      "reason": "2023-24 분데스리가 32경기 32선발 2844분 36골. 2023-24 개인 활약과 해당 포지션 전술적 적합성 고려. 2021-22/2022-23 개인 활약은 낮은 비중으로 참조하되 전원 독립적 3시즌 정성 검증 미완료. 팀 우승/성적 자체 가산점 없음.",
       "alternates": []
     }
   ],
@@ -14868,9 +14811,7 @@
       }
     },
     "researchMethod": "fresh historical 2023-24 team lineups, 2021-22 and 2022-23 prior unapproved archive referential only",
-    "starterEquivalenceIssues": [
-      "Reclassified low-start Sébastien Haller dortmund/ST as starter-equivalent to preserve one backup cap; must recheck"
-    ],
+    "starterEquivalenceIssues": [],
     "limits": [
       "individual DOB second validation incomplete",
       "current BDF league stats manually transcribed; secondary player-row crosscheck pending",
@@ -14879,6 +14820,28 @@
       "tier comparison involves qualitative judgement not fully independent three-season performance audit",
       "GK negative goals conceded not counted as goals scored",
       "site 4-2-3-1 does not exactly reflect every qualifying club three-back tactical shape"
+    ],
+    "excludedAfterReview": [
+      {
+        "name": "Sébastien Haller",
+        "club": "dortmund",
+        "reason": "Only 5 Bundesliga starts and 393 minutes in the assessment season. Dortmund ST already has the established starter Füllkrug and the meaningful substitute Moukoko; do not relabel a minor-usage player as starter-equivalent just to bypass one-backup limit.",
+        "source": "https://www.bdfutbol.com/en/t/t2023-241003.html"
+      }
+    ],
+    "providerDiscrepancy": "DFB 2023-24 assist figures Grimaldo 13, Xavi Simons 13, Brandt 12, Beste 12, Wirtz 11, Sané 11, Müller 10, Undav 10; Bundesliga.com Opta counting can differ, do not mix.",
+    "historicalCorrections": [
+      {
+        "name": "Sébastien Haller",
+        "club": "dortmund",
+        "action": "excluded",
+        "reason": "Only 5 Bundesliga starts and 393 minutes in the assessment season. Dortmund ST already has the established starter Füllkrug and the meaningful substitute Moukoko; do not relabel a minor-usage player as starter-equivalent just to bypass one-backup limit."
+      },
+      {
+        "name": "Min-Jae Kim",
+        "club": "bayern",
+        "action": "corrected original name capitalization"
+      }
     ]
   }
 }
