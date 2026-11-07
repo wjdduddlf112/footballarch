@@ -1,3 +1,12 @@
+## 2026-11-07 — user `ㄷㅇ` interpreted as `다음`, Bundesliga 2016-17 only
+- AUTO_NEXT_SEASON=false; user advanced 2015-16 → **2016-17**, not 2017-18.
+- Actual 2017-18 UEFA 7: Bayern/Leipzig/Dortmund/Hoffenheim UCL (Hoffenheim played qualifier then UEL), Köln/Hertha/Freiburg UEL (Freiburg qualifier), verified UEFA historical entrant lists plus 2016-17 RSSSF and cup rules.
+- Freshly researched BDFutbol 2016-17 seven actual teams: 130 nominees, counts {"bayern":20,"leipzig":17,"dortmund":20,"hoffenheim":16,"koln":20,"hertha":19,"freiburg":18}; all seven current-year apps/starts/min/goals source-linked. 10 positions; at most 1 backup club/position; multiple seasonal starter-equivalent allowed. Official DFB squad used as birth-date primary evidence; secondary independent check pending.
+- New provisional grades {"S":3,"A+":11,"A0":5,"A-":15,"B+":58,"B0":27,"B-":8,"C+":3,"C0":0,"C-":0,"D":0}, World Class 14, League Top Class 34, position ranks all distinct. Assessment 2014-15 / 2015-16 / 2016-17 (recent higher). Prior-year source linkage {"2014-15":29,"2015-16":50,"2016-17":130} but *previous* Football Archive DRAFT, not independently revalidated. Full individual three-year qualitative verified **0/130**, position match audit **0/130**. All DRAFT unapproved.
+- Representative 4-4-2 (provisional; league modal not established) mirrors 2016-17 VDV XI shape but uses DM Weigl, CM Keïta due site role schema; XI Neuer, Hummels, Süle, Alaba, Lahm, Weigl, Keïta, Forsberg, Dembélé, Lewandowski, Aubameyang. Thiago close CM competitor and VDV XI.
+- Historical role ambiguities documented, especially Forsberg LM/LW, Kramarić ST/SS, Köln Hector DM/LB, Dortmund Guerreiro LB/CM, Hoffenheim Zuber LWB.
+- Audit/report `audit/BUNDESLIGA_2016_17_DRAFT_FULL_REPORT_2026_11_07.md`; data `data/bundesliga-2016-17.json`; dedicated structure and actual Chromium live test workflow. CI result and site verification must be checked separately after push.
+
 ## 2026-11-07 — User-directed `다음`: Bundesliga 2015-16 single-season DRAFT
 - Explicit user instruction moves from 2014-15 to **2015-16 only**. Auto-next season still **NO**; 2016-17 not started.
 - Seven actual 2016-17 UEFA entrants: Bayern, Dortmund, Leverkusen, Gladbach (UCL); Schalke, Mainz, Hertha (UEL, with Hertha 3rd qualifier). Verified against UEFA 2016/17 and Hertha vs Brøndby contemporary match records; Bayern won DFB Cup and already had UCL, resulting in league route to UEL for Mainz and Hertha.
