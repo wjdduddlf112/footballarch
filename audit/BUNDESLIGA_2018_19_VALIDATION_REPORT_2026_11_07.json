@@ -1,0 +1,48 @@
+{
+  "season": "2018-19",
+  "league": "Bundesliga",
+  "recordedAt": "2026-11-07",
+  "reviewState": "draft_unapproved",
+  "structureCheck": {
+    "method": "connector-side in-memory cross-check of GitHub JSON and independent archive standings, not local Node CLI execution",
+    "result": "PASS",
+    "playerCount": 133,
+    "clubCount": 7,
+    "seasonCurrentStatsSourceLinked": 133,
+    "uniquePlayerIds": 133,
+    "allPositionsRanked": true,
+    "bestXIUnique": 11,
+    "backupsPerClubPositionMax": 1,
+    "qualifierListVerifiedAgainstUEFA": true,
+    "priorSeason2017_18ReadOnlyRegression": "PASS: existing prior-season JSON still has 135 records",
+    "errors": []
+  },
+  "historicalQualityAudit": {
+    "fullThreeSeasonIndependentVerified": 0,
+    "yearRecordsAvailable": {
+      "2016-17": 39,
+      "2017-18": 71,
+      "2018-19": 133
+    },
+    "sourceNotes": "2018-19 manually transcribed from BDFutbol, prior years linked from unapproved archived player files; not independently rechecked",
+    "positionMatchwiseVerified": 0,
+    "individualDobSecondIndependentSourceVerified": 0,
+    "conclusion": "PARTIALLY_VERIFIED_ONLY"
+  },
+  "bestXI": {
+    "status": "proposed_unapproved",
+    "formation": "4-2-3-1",
+    "n": 11
+  },
+  "deployment": {
+    "newGithubPagesWorkflowName": "Verify Bundesliga 2018-19 draft and live Pages",
+    "latestRunUrl": "https://github.com/wjdduddlf112/footballarch/actions/runs/42383943549",
+    "runStatusAtLog": "queued",
+    "liveBrowserVerification": "pending_running_github_actions",
+    "pagesDeployReference": "https://github.com/wjdduddlf112/footballarch/actions/runs/42383616594",
+    "pagesDataCommitDeploy": "success",
+    "mostRecentMainDeployment": "pending_at_log"
+  },
+  "unapproved": true,
+  "nextSeasonAutoadvance": false
+}
