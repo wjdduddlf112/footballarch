@@ -15,7 +15,8 @@
     "backupsPerClubPositionMax": 1,
     "qualifierListVerifiedAgainstUEFA": true,
     "priorSeason2017_18ReadOnlyRegression": "PASS: existing prior-season JSON still has 135 records",
-    "errors": []
+    "errors": [],
+    "githubActionsCliExecution": "PASS: node scripts/verify-bundesliga-2018-19-draft.mjs in Actions structure job"
   },
   "historicalQualityAudit": {
     "fullThreeSeasonIndependentVerified": 0,
@@ -37,11 +38,16 @@
   "deployment": {
     "newGithubPagesWorkflowName": "Verify Bundesliga 2018-19 draft and live Pages",
     "latestRunUrl": "https://github.com/wjdduddlf112/footballarch/actions/runs/42383943549",
-    "runStatusAtLog": "queued",
-    "liveBrowserVerification": "pending_running_github_actions",
-    "pagesDeployReference": "https://github.com/wjdduddlf112/footballarch/actions/runs/42383616594",
+    "runStatusAtLog": "completed_success",
+    "liveBrowserVerification": "PASS: Chromium Playwright smoke checked 2018-19 draft, 7 clubs, 133 player rows in all three All Tiers tabs, detail first record, Best XI 11, Top, Table, Stats, previous 2017-18 regression 135",
+    "pagesDeployReference": "https://github.com/wjdduddlf112/footballarch/actions/runs/42383943215",
     "pagesDataCommitDeploy": "success",
-    "mostRecentMainDeployment": "pending_at_log"
+    "mostRecentMainDeployment": "pending_at_log",
+    "uncertifiedVisuals": [
+      "133 individual detail screens not individually opened",
+      "crest files' exact 2018-19 historical variants not inspected",
+      "independent source-by-source 3-year individual performance verification not complete"
+    ]
   },
   "unapproved": true,
   "nextSeasonAutoadvance": false
