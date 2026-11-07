@@ -1,0 +1,54 @@
+{
+  "season": "2019-20",
+  "league": "Bundesliga",
+  "loggedAt": "2026-11-08",
+  "dataStatus": "draft_unapproved",
+  "userApproval": false,
+  "nextSeasonAutoadvance": false,
+  "structuralCheck": {
+    "result": "PASS",
+    "method": "Connector-side in-memory comparison of committed season JSON, historical league archive, and 2018-19 prior-season JSON",
+    "uniquePlayers": 142,
+    "qualifiers": 7,
+    "backupsPerClubPositionMax": 1,
+    "positionRanksContinuous": true,
+    "tiersAndRankOrderConsistent": true,
+    "bestXiElevenUnique": true,
+    "uefaQualificationIncludesWolfsburgUELQualifiers": true,
+    "previous2018_19DraftPreserved": true,
+    "errors": []
+  },
+  "historicalAudit": {
+    "fullThreeSeasonQualitativeIndependentVerified": 0,
+    "sourceLinkedRecords": {
+      "2017-18": 64,
+      "2018-19": 89,
+      "2019-20": 142
+    },
+    "numericalPastRecordsWerePreviousUnapprovedDraftReferences": true,
+    "currentSeasonManuallyTranscribedSourceTables": "BDFutbol 2019-20 teams",
+    "independentDuplicateStatsRecheck": "pending",
+    "individualDOBSecondSourceVerified": 0,
+    "matchwisePrimaryPositionVerified": 0,
+    "conclusion": "PARTIALLY_VERIFIED"
+  },
+  "tiers": {
+    "graded": 142,
+    "worldClass": 11,
+    "leagueTopClass": 46,
+    "userApproved": 0
+  },
+  "bestXI": {
+    "n": 11,
+    "status": "proposed_unapproved",
+    "formation": "4-2-3-1"
+  },
+  "deploy": {
+    "newWorkflow": ".github/workflows/verify-bundesliga-2019-20-draft-live.yml",
+    "structureJob": "pending",
+    "browserJob": "pending",
+    "pagesPublishedForThisRevision": "pending",
+    "all142IndividualDetailsInspected": false,
+    "allHistoricalCrestsVerified": false
+  }
+}
