@@ -1,3 +1,12 @@
+## 2026-11-07 — User-directed `다음`: Bundesliga 2015-16 single-season DRAFT
+- Explicit user instruction moves from 2014-15 to **2015-16 only**. Auto-next season still **NO**; 2016-17 not started.
+- Seven actual 2016-17 UEFA entrants: Bayern, Dortmund, Leverkusen, Gladbach (UCL); Schalke, Mainz, Hertha (UEL, with Hertha 3rd qualifier). Verified against UEFA 2016/17 and Hertha vs Brøndby contemporary match records; Bayern won DFB Cup and already had UCL, resulting in league route to UEL for Mainz and Hertha.
+- Newly researched 2015-16 season BDFutbol/FBref squads: **132 candidates** {"bayern":21,"dortmund":20,"leverkusen":20,"gladbach":18,"schalke":18,"mainz":18,"hertha":17}; each current league apps/starts/minutes/goals linked; GK goal column not conflated with goals conceded. Official DFB roster date linked; DOB gaps 0.
+- Ten positions GK/CB/LB/RB/DM/CM/CAM/LW/RW/ST, one backup max/club/position, no fixed 11 starter cap. Provisional tier and unique per-position ranks for all 132. Tier distribution {"S":4,"A+":9,"A0":5,"A-":23,"B+":52,"B0":24,"B-":11,"C+":4,"C0":0,"C-":0,"D":0}; World Class 13; League Top 41.
+- Past review 2013-14 58/132 linked old archival DRAFT, 2014-15 72/132 linked old archival DRAFT; **0/132 independent 3-season full qualitative verification**. Actual predominant positions pending. Missing historical values null; not replaced by zero.
+- Best XI 4-2-3-1 proposed: GK Manuel Neuer; CB Jérôme Boateng; CB Mats Hummels; LB David Alaba; RB Philipp Lahm; DM Julian Weigl; CM Arturo Vidal; CAM Thomas Müller; LW Douglas Costa; RW Henrikh Mkhitaryan; ST Robert Lewandowski. Aubameyang (2015-16 VDV Player of Year and 25 league goals) remains notable ST alternative to Lewandowski 30 league goals in one-striker representative formation. XI not approved.
+- Data `data/bundesliga-2015-16.json` and full audit `audit/BUNDESLIGA_2015_16_DRAFT_FULL_REPORT_2026_11_07.md`. Structure and browser CI scripts added, but outcome must be checked after push and deployment. No other season data altered.
+
 ## 2026-11-07 — User-selected Bundesliga 2014-15 ONLY; additional independent 3-year evidence
 - User explicitly chose **② no auto-next**; do not start 2015-16. This run re-audited existing 2014-15 141-player DRAFT rather than copying older draft candidate pools.
 - Independently matched seven 2015-16 UEFA entrants with official 2015/16 UEFA historical UCL/UEL lists and 2015-16 UEFA national-club report. Previously saved 141 candidate allocations and provisional tiers were retained.
