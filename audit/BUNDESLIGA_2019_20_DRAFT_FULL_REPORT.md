@@ -1796,3 +1796,13 @@ World Class (S+A+) **11명**. League Top Class (S+A++A0+A-) **46명**.
 - [Integration progress](./PLAYER_INTEGRATION_PROGRESS.md)
 
 **한 시즌만 진행, 2020-21 자동 평가 실행하지 않음. 2018-19 기존 DRAFT도 공식 승인하지 않음.**
+
+
+## 9. GitHub Actions 자동 구조·실제 홈페이지 Chromium 검증 결과 (2026-11-08)
+- 검증 workflow: https://github.com/wjdduddlf112/footballarch/actions/runs/42387080433
+- 구조 job `structure`: **PASS**. `node scripts/verify-bundesliga-2019-20-draft.mjs` 실행. 7 UEFA 팀 / 142 후보 / 후보 포지션 제한 / DOB 포맷 / 3개 시즌 참조 정책 / 티어 인원·순위 정합성 / 11 Best XI / 2018-19 133명 DRAFT 회귀 확인.
+- 실제 브라우저 job `browser`: **PASS**. Chromium Playwright `node scripts/verify-bundesliga-2019-20-live.mjs`로 배포 GitHub Pages 실행 화면 확인. 2019-20 DRAFT 상태, 7개 구단별 명단, 구단별/포지션별/티어별 각 142명, 개별 선수 첫 상세의 2017-18·2018-19·2019-20 세 연도 및 `partially_verified`, Best XI 11명, League Top Class, League Table, Statistics, 2018-19 이전 133명 회귀, 브라우저 JS 에러 없음.
+- 실제 GitHub Pages 성공 배포: https://github.com/wjdduddlf112/footballarch/actions/runs/42387080555 (평가 관련 workflow 커밋 배포); 변경된 2019-20 선수 JSON 최초 배포 성공: https://github.com/wjdduddlf112/footballarch/actions/runs/42386602156
+- **브라우저 테스트 범위 제한:** 첫 번째 선수 상세를 검사했으나 142명 개별 상세 화면을 전수 클릭하지 않았고, 시즌 당시 엠블럼 외관·개별 사진의 시대 정확성은 검증하지 않았다.
+- **역사적 검증은 미완료:** 과거 두 시즌 독립 개인 경기력 감사 0명; CI와 Pages 성공은 이를 대체하지 않는다.
+- 홈페이지: https://wjdduddlf112.github.io/footballarch/?league=bundesliga&season=2019-20&view=tiers
