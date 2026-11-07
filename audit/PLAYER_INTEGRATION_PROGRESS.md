@@ -1,3 +1,10 @@
+## 2026-11-07 — Bundesliga 2016-17: independent 3-season source supplement after initial DRAFT commit
+- 15 previously missing old-season records for 8 players independently checked from DFB/Opta/FBref: Forsberg, Keïta, Dembélé, Modeste, Werner, Süle, Weigl, Kramarić. Lower league/foreign leagues and multi-team season parts explicitly noted.
+- Old record coverage updated **2014-15 29→37 /130**, **2015-16 50→57 /130**, current **2016-17 130/130**. All tiers and Best XI remain unapproved and unchanged. Complete independent player qualitative 3-year verified remains **0/130**; matchwise position verified 0/130.
+- Süle 2014-15 minute source discrepancy Opta 1270 vs FBref 1269, Kramarić dual-league season aggregates with explicit segments, Dembélé Rennes reserves National 2 vs senior Ligue 1 distinction documented.
+- Source links and player-level update recorded in `data/bundesliga-2016-17.json` and `audit/BUNDESLIGA_2016_17_DRAFT_FULL_REPORT_2026_11_07.md`.
+- This is the **2016-17 season only**. AUTO_NEXT_SEASON=false. New commit CI/Pages status must be checked independently.
+
 ## 2026-11-07 — user `ㄷㅇ` interpreted as `다음`, Bundesliga 2016-17 only
 - AUTO_NEXT_SEASON=false; user advanced 2015-16 → **2016-17**, not 2017-18.
 - Actual 2017-18 UEFA 7: Bayern/Leipzig/Dortmund/Hoffenheim UCL (Hoffenheim played qualifier then UEL), Köln/Hertha/Freiburg UEL (Freiburg qualifier), verified UEFA historical entrant lists plus 2016-17 RSSSF and cup rules.

@@ -481,3 +481,34 @@ No previous DRAFT automatically elevated to verified.
 - Player tiers, roles and XI are `draft_unapproved` / `proposed_unapproved`; independent full 3-season qualitative validation 0/130. Current-year player appearance stats linked for 130/130.
 ## 10. Remaining tasks
 - Independently verify prior-season player records and league transfer origins, manual match-by-match position frequency for 130 players, contemporaneous quantitative defensive/shot-stopping metrics, second-source DOB verification, tier recalibration, independent user final approval. GitHub Pages latest deployment/action results tracked separately.
+
+
+## 2026-11-07 — Independent prior-season quantitative evidence addendum
+
+GitHub DRAFT is source-led, but **not fully historically verified**: 0/130 individual three-season qualitative audits and 0/130 predominant-position matchwise audits have been completed. New prior two-year source-linked records increased **2014-15 29→37**, **2015-16 50→57**, and current 2016-17 remains **130/130**. New entries **15 season-level records / 8 players**; grades, positions and rankings remain `draft_unapproved`. Sources are real DFB, Opta and FBref records, distinct from existing Football Archive DRAFT.
+
+| Player | Historical season | Independently supported league performance | Verified source |
+|---|---|---|---|
+| Emil Forsberg | 2014-15 | RB Leipzig · 2. Bundesliga · 14 apps / ? starts / 1232 min / 0 goals / 3 assists | [source](https://theanalyst.com/players/12940/emil-forsberg/career) |
+| Emil Forsberg | 2015-16 | RB Leipzig · 2. Bundesliga · 32 apps / ? starts / 2579 min / 8 goals / 6 assists | [source](https://theanalyst.com/players/12940/emil-forsberg/career) |
+| Naby Keïta | 2014-15 | FC Red Bull Salzburg · Austrian Bundesliga · 30 apps / ? starts / 2297 min / 5 goals / 2 assists | [source](https://theanalyst.com/players/441/naby-keita/career) |
+| Naby Keïta | 2015-16 | FC Red Bull Salzburg · Austrian Bundesliga · 29 apps / ? starts / 2179 min / 12 goals / 7 assists | [source](https://theanalyst.com/players/441/naby-keita/career) |
+| Ousmane Dembélé | 2014-15 | Stade Rennais FC II · Championnat National 2 (reserve team) · 18 apps / ? starts / 1343 min / 13 goals / ? assists | [source](https://theanalyst.com/players/3545/ousmane-dembele/career) |
+| Ousmane Dembélé | 2015-16 | Stade Rennais FC · Ligue 1 · 26 apps / ? starts / 1936 min / 12 goals / 5 assists | [source](https://theanalyst.com/players/3545/ousmane-dembele/career) |
+| Anthony Modeste | 2014-15 | TSG 1899 Hoffenheim · Bundesliga · 26 apps / ? starts / ? min / 7 goals / ? assists | [source](https://datencenter.dfb.de/en/data-center/people/anthony-modeste/player) |
+| Anthony Modeste | 2015-16 | 1. FC Köln · Bundesliga · 34 apps / ? starts / ? min / 15 goals / ? assists | [source](https://datencenter.dfb.de/en/data-center/people/anthony-modeste/player) |
+| Timo Werner | 2014-15 | VfB Stuttgart · Bundesliga · 32 apps / ? starts / ? min / 3 goals / ? assists | [source](https://datencenter.dfb.de/personen/263930/spieler) |
+| Timo Werner | 2015-16 | VfB Stuttgart · Bundesliga · 33 apps / ? starts / ? min / 6 goals / ? assists | [source](https://datencenter.dfb.de/personen/263930/spieler) |
+| Niklas Süle | 2014-15 | TSG 1899 Hoffenheim · Bundesliga · 15 apps / 15 starts / 1270 min / 1 goals / 0 assists | [source](https://theanalyst.com/players/102/niklas-sule/career) |
+| Niklas Süle | 2015-16 | TSG 1899 Hoffenheim · Bundesliga · 33 apps / 33 starts / 2970 min / 0 goals / 1 assists | [source](https://theanalyst.com/players/102/niklas-sule/career) |
+| Julian Weigl | 2014-15 | TSV 1860 München · 2. Bundesliga · 24 apps / 20 starts / 1818 min / 0 goals / 1 assists | [source](https://fbref.com/en/players/346d51d9/Julian-Weigl) |
+| Andrej Kramarić | 2014-15 | HNK Rijeka / Leicester City FC · Croatian HNL / English Premier League · 31 apps / 24 starts / 2128 min / 23 goals / 4 assists | [source](https://fbref.com/en/players/603cb947/Andrej-Kramaric) |
+| Andrej Kramarić | 2015-16 | Leicester City FC / TSG 1899 Hoffenheim · English Premier League / Bundesliga · 17 apps / 12 starts / 1109 min / 5 goals / 2 assists | [source](https://fbref.com/en/players/603cb947/Andrej-Kramaric) |
+
+Historical interpretation notes:
+- Forsberg's 2014-15 and 2015-16 **2.Bundesliga** stats, and Keïta's two **Austrian Bundesliga** seasons, are valid individual form evidence even though those old clubs were outside the target current-year qualified club cohort. League strength is a qualitative consideration, not a reason to erase those records.
+- Dembélé 2014-15 **Stade Rennais II** National 2 reserve team figures represent a lower level than Ligue 1; they must **not** be treated as 13 French top-flight goals. His Rennes 2015-16 senior 26 Ligue 1 appearances/12 goals/5 assists are separately preserved.
+- Kramarić changed leagues within both 2014-15 and 2015-16. The `segments` field explicitly preserves Rijeka/Leicester and Leicester/Hoffenheim per-league contributions, with aggregate counts recorded for convenience. These cannot be casually described as single-league Bundesliga statistics.
+- Süle's 2014-15 minutes **Opta 1,270 vs FBref 1,269** is retained as an unresolved one-minute provider discrepancy; no fictitious harmonization. His major injury/return season affects sustained-quality assessment.
+- Weigl's 2014-15 1860 München second-division season is recorded separately from 2015-16 and 2016-17 Dortmund first-division seasons; his 2015-16 older Football Archive DRAFT starts/minutes remain provisional.
+- This addendum is a **quantitative prior-season source supplement**; current 2016-17 match-by-match positional classification, independent 3-year qualitative comparison of ALL 130 candidates, and individual DOB cross-check remain incomplete.

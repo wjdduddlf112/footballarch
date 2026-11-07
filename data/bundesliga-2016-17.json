@@ -92,8 +92,8 @@
     "verificationSummary": {
       "sourceLinked2016_17SeasonPlayers": 130,
       "priorSeasonRecordCounts": {
-        "2014-15": 29,
-        "2015-16": 50,
+        "2014-15": 37,
+        "2015-16": 57,
         "2016-17": 130
       },
       "fullThreeSeasonIndependentVerified": 0,
@@ -113,7 +113,19 @@
       },
       "missingBirthDates": []
     },
-    "notes": "Historical audit is PARTIAL. Current-year BDFutbol 7 league team squad statistics directly read; DOB linked official DFB and prior candidate identity references. Old season values from prior FOOTBALL ARCHIVE DRAFT when present, not individually independently verified; 0 full 3-season qualitative. Provisional role conversions wingback/LM/second striker documented. 2016-17 VDV XI contemporaneous external recognition, not automatic XI."
+    "notes": "Historical audit is PARTIAL. Current-year BDFutbol 7 league team squad statistics directly read; DOB linked official DFB and prior candidate identity references. Old season values from prior FOOTBALL ARCHIVE DRAFT when present, not individually independently verified; 0 full 3-season qualitative. Provisional role conversions wingback/LM/second striker documented. 2016-17 VDV XI contemporaneous external recognition, not automatic XI.",
+    "postAudit20261107": {
+      "scope": "2016-17 only",
+      "additionalIndependentPriorSeasonQuantitativeRecords": 15,
+      "playersAffected": 8,
+      "priorYearCoverage": {
+        "2014-15": 37,
+        "2015-16": 57,
+        "2016-17": 130
+      },
+      "fullThreeSeasonQualitativeVerified": 0,
+      "notes": "Includes lower-division and foreign-league past seasons; Kramaric 2014-15 and 2015-16 multi-league records are segmented and summed explicitly; position/final tier historical quality review still pending."
+    }
   },
   "clubs": [
     {
@@ -1457,7 +1469,8 @@
       "evaluationStatus": "provisional_tier_individual_2016_17_impact_2015_16_2014_15_partial",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2016-171015.html",
-        "https://datencenter.dfb.de/competitions/bundesliga/seasons/2016-2017/teams/tsg-hoffenheim"
+        "https://datencenter.dfb.de/competitions/bundesliga/seasons/2016-2017/teams/tsg-hoffenheim",
+        "https://theanalyst.com/players/102/niklas-sule/career"
       ],
       "evidence": {
         "currentSeason": "https://www.bdfutbol.com/en/t/t2016-171015.html",
@@ -1474,24 +1487,27 @@
         "weighting": "2016-17 highest, 2015-16 second, 2014-15 least; individual rather than league table performance",
         "records": {
           "2014-15": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "club": "TSG 1899 Hoffenheim",
+            "appearances": 15,
+            "starts": 15,
+            "minutes": 1270,
+            "goals": 1,
+            "assists": 0,
+            "source": "https://theanalyst.com/players/102/niklas-sule/career",
+            "verification": "Opta_independent_Bundesliga_2014_15_DFB_apps_goals_crosschecked_minutes_1min_conflict",
+            "league": "Bundesliga",
+            "minuteDiscrepancy": "Opta 1270 vs FBref 1269"
           },
           "2015-16": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "club": "TSG 1899 Hoffenheim",
+            "appearances": 33,
+            "starts": 33,
+            "minutes": 2970,
+            "goals": 0,
+            "assists": 1,
+            "source": "https://theanalyst.com/players/102/niklas-sule/career",
+            "verification": "Opta_independent_Bundesliga_2015_16_DFB_apps_goals_crosschecked",
+            "league": "Bundesliga"
           },
           "2016-17": {
             "club": "TSG 1899 Hoffenheim",
@@ -1504,10 +1520,17 @@
             "verification": "2016_17_BDFutbol_lineup_direct_and_season_specific_current_year"
           }
         },
-        "status": "current_stats_direct_prior_two_years_partial_prior_FootballArchive_DRAFT_or_pending"
+        "status": "current_stats_direct_prior_two_years_partial_prior_FootballArchive_DRAFT_or_pending",
+        "independentPriorSources": [
+          "https://theanalyst.com/players/102/niklas-sule/career"
+        ],
+        "individualHistoricalAudit20261107": [
+          "2014-15 Hoffenheim Bundesliga 15 apps/starts, 1,270 min per Opta (FBref 1,269), 1 goal",
+          "2015-16 Hoffenheim Bundesliga 33 apps/starts, 2,970 min, 0 goals, 1 assist"
+        ]
       },
-      "tierReview": "2016-17: 33 league appearances, 33 starts, 2887 minutes, 2 goals. Previous 2 seasons linked 0/2 from separate DRAFT where present. Tier A+ is provisional personal on-field role and sustained quality judgment, not based on club final rank.",
-      "assessmentRationale": "2016-17 direct season use and position-specific attacking/defensive contribution; 2015-16 > 2014-15 continuity where available. 2014-15: 소속/자료 미확인, —회 출전, —골 / 2015-16: 소속/자료 미확인, —회 출전, —골 / 2016-17: TSG 1899 Hoffenheim, 33회 출전, 2골. Source gaps are not zero performance.",
+      "tierReview": "2016-17: 33 league appearances, 33 starts, 2887 minutes, 2 goals. Previous 2 seasons linked 0/2 from separate DRAFT where present. Tier A+ is provisional personal on-field role and sustained quality judgment, not based on club final rank. Three-season supplement: 2014-15 Hoffenheim Bundesliga 15 apps/starts, 1,270 min per Opta (FBref 1,269), 1 goal. Three-season supplement: 2015-16 Hoffenheim Bundesliga 33 apps/starts, 2,970 min, 0 goals, 1 assist.",
+      "assessmentRationale": "2016-17 direct season use and position-specific attacking/defensive contribution; 2015-16 > 2014-15 continuity where available. 2014-15: 소속/자료 미확인, —회 출전, —골 / 2015-16: 소속/자료 미확인, —회 출전, —골 / 2016-17: TSG 1899 Hoffenheim, 33회 출전, 2골. Source gaps are not zero performance. Independently sourced past-season league record: 2014-15 Hoffenheim Bundesliga 15 apps/starts, 1,270 min per Opta (FBref 1,269), 1 goal. Independently sourced past-season league record: 2015-16 Hoffenheim Bundesliga 33 apps/starts, 2,970 min, 0 goals, 1 assist.",
       "verificationNeeded": [
         "independent_2014_15_2015_16_full_record_all_teams_including_other_leagues",
         "2016_17_matchwise_position_frequency_and_wingback",
@@ -6008,7 +6031,8 @@
       "evaluationStatus": "provisional_tier_individual_2016_17_impact_2015_16_2014_15_partial",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2016-171003.html",
-        "https://datencenter.dfb.de/competitions/bundesliga/seasons/2016-2017/teams/borussia-dortmund"
+        "https://datencenter.dfb.de/competitions/bundesliga/seasons/2016-2017/teams/borussia-dortmund",
+        "https://fbref.com/en/players/346d51d9/Julian-Weigl"
       ],
       "evidence": {
         "currentSeason": "https://www.bdfutbol.com/en/t/t2016-171003.html",
@@ -6025,14 +6049,15 @@
         "weighting": "2016-17 highest, 2015-16 second, 2014-15 least; individual rather than league table performance",
         "records": {
           "2014-15": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "club": "TSV 1860 München",
+            "appearances": 24,
+            "starts": 20,
+            "minutes": 1818,
+            "goals": 0,
+            "assists": 1,
+            "source": "https://fbref.com/en/players/346d51d9/Julian-Weigl",
+            "verification": "FBref_independent_2014_15_second_division_appearances_starts_minutes_goals_assists",
+            "league": "2. Bundesliga"
           },
           "2015-16": {
             "club": "BV 09 Borussia Dortmund",
@@ -6055,10 +6080,16 @@
             "verification": "2016_17_BDFutbol_lineup_direct_and_season_specific_current_year"
           }
         },
-        "status": "current_stats_direct_prior_two_years_partial_prior_FootballArchive_DRAFT_or_pending"
+        "status": "current_stats_direct_prior_two_years_partial_prior_FootballArchive_DRAFT_or_pending",
+        "independentPriorSources": [
+          "https://fbref.com/en/players/346d51d9/Julian-Weigl"
+        ],
+        "individualHistoricalAudit20261107": [
+          "2014-15 1860 München 2.Bundesliga 24 apps, 20 starts, 1,818 min, 0 goals, 1 assist"
+        ]
       },
-      "tierReview": "2016-17: 30 league appearances, 27 starts, 2416 minutes, 0 goals. Previous 2 seasons linked 1/2 from separate DRAFT where present. Tier A0 is provisional personal on-field role and sustained quality judgment, not based on club final rank.",
-      "assessmentRationale": "2016-17 direct season use and position-specific attacking/defensive contribution; 2015-16 > 2014-15 continuity where available. 2014-15: 소속/자료 미확인, —회 출전, —골 / 2015-16: BV 09 Borussia Dortmund, 30회 출전, 0골 / 2016-17: BV 09 Borussia Dortmund, 30회 출전, 0골. Source gaps are not zero performance.",
+      "tierReview": "2016-17: 30 league appearances, 27 starts, 2416 minutes, 0 goals. Previous 2 seasons linked 1/2 from separate DRAFT where present. Tier A0 is provisional personal on-field role and sustained quality judgment, not based on club final rank. Three-season supplement: 2014-15 1860 München 2.Bundesliga 24 apps, 20 starts, 1,818 min, 0 goals, 1 assist.",
+      "assessmentRationale": "2016-17 direct season use and position-specific attacking/defensive contribution; 2015-16 > 2014-15 continuity where available. 2014-15: 소속/자료 미확인, —회 출전, —골 / 2015-16: BV 09 Borussia Dortmund, 30회 출전, 0골 / 2016-17: BV 09 Borussia Dortmund, 30회 출전, 0골. Source gaps are not zero performance. Independently sourced past-season league record: 2014-15 1860 München 2.Bundesliga 24 apps, 20 starts, 1,818 min, 0 goals, 1 assist.",
       "verificationNeeded": [
         "independent_2014_15_2015_16_full_record_all_teams_including_other_leagues",
         "2016_17_matchwise_position_frequency_and_wingback",
@@ -7101,7 +7132,8 @@
       "sources": [
         "https://www.bdfutbol.com/en/t/t2016-171049.html",
         "https://datencenter.dfb.de/competitions/bundesliga/seasons/2016-2017/teams/rb-leipzig",
-        "https://www.fussballtransfers.com/deutschland/bundesliga/2016-2017/vorlagengeber"
+        "https://www.fussballtransfers.com/deutschland/bundesliga/2016-2017/vorlagengeber",
+        "https://theanalyst.com/players/441/naby-keita/career"
       ],
       "evidence": {
         "currentSeason": "https://www.bdfutbol.com/en/t/t2016-171049.html",
@@ -7118,24 +7150,26 @@
         "weighting": "2016-17 highest, 2015-16 second, 2014-15 least; individual rather than league table performance",
         "records": {
           "2014-15": {
-            "club": null,
-            "appearances": null,
+            "club": "FC Red Bull Salzburg",
+            "appearances": 30,
             "starts": null,
-            "minutes": null,
-            "goals": null,
-            "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "minutes": 2297,
+            "goals": 5,
+            "assists": 2,
+            "source": "https://theanalyst.com/players/441/naby-keita/career",
+            "verification": "Opta_independent_Austrian_Bundesliga_2014_15",
+            "league": "Austrian Bundesliga"
           },
           "2015-16": {
-            "club": null,
-            "appearances": null,
+            "club": "FC Red Bull Salzburg",
+            "appearances": 29,
             "starts": null,
-            "minutes": null,
-            "goals": null,
-            "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "minutes": 2179,
+            "goals": 12,
+            "assists": 7,
+            "source": "https://theanalyst.com/players/441/naby-keita/career",
+            "verification": "Opta_independent_Austrian_Bundesliga_2015_16",
+            "league": "Austrian Bundesliga"
           },
           "2016-17": {
             "club": "RB Leipzig",
@@ -7148,10 +7182,17 @@
             "verification": "2016_17_BDFutbol_lineup_direct_and_season_specific_current_year"
           }
         },
-        "status": "current_stats_direct_prior_two_years_partial_prior_FootballArchive_DRAFT_or_pending"
+        "status": "current_stats_direct_prior_two_years_partial_prior_FootballArchive_DRAFT_or_pending",
+        "independentPriorSources": [
+          "https://theanalyst.com/players/441/naby-keita/career"
+        ],
+        "individualHistoricalAudit20261107": [
+          "2014-15 Salzburg Austrian Bundesliga 30 apps, 2,297 min, 5 goals, 2 assists",
+          "2015-16 Salzburg Austrian Bundesliga 29 apps, 2,179 min, 12 goals, 7 assists"
+        ]
       },
-      "tierReview": "2016-17: 31 league appearances, 29 starts, 2416 minutes, 8 goals, 7 league assists (assists provider defined). Previous 2 seasons linked 0/2 from separate DRAFT where present. Tier A+ is provisional personal on-field role and sustained quality judgment, not based on club final rank.",
-      "assessmentRationale": "2016-17 direct season use and position-specific attacking/defensive contribution; 2015-16 > 2014-15 continuity where available. 2014-15: 소속/자료 미확인, —회 출전, —골 / 2015-16: 소속/자료 미확인, —회 출전, —골 / 2016-17: RB Leipzig, 31회 출전, 8골. Source gaps are not zero performance.",
+      "tierReview": "2016-17: 31 league appearances, 29 starts, 2416 minutes, 8 goals, 7 league assists (assists provider defined). Previous 2 seasons linked 0/2 from separate DRAFT where present. Tier A+ is provisional personal on-field role and sustained quality judgment, not based on club final rank. Three-season supplement: 2014-15 Salzburg Austrian Bundesliga 30 apps, 2,297 min, 5 goals, 2 assists. Three-season supplement: 2015-16 Salzburg Austrian Bundesliga 29 apps, 2,179 min, 12 goals, 7 assists.",
+      "assessmentRationale": "2016-17 direct season use and position-specific attacking/defensive contribution; 2015-16 > 2014-15 continuity where available. 2014-15: 소속/자료 미확인, —회 출전, —골 / 2015-16: 소속/자료 미확인, —회 출전, —골 / 2016-17: RB Leipzig, 31회 출전, 8골. Source gaps are not zero performance. Independently sourced past-season league record: 2014-15 Salzburg Austrian Bundesliga 30 apps, 2,297 min, 5 goals, 2 assists. Independently sourced past-season league record: 2015-16 Salzburg Austrian Bundesliga 29 apps, 2,179 min, 12 goals, 7 assists.",
       "verificationNeeded": [
         "independent_2014_15_2015_16_full_record_all_teams_including_other_leagues",
         "2016_17_matchwise_position_frequency_and_wingback",
@@ -9200,7 +9241,8 @@
       "sources": [
         "https://www.bdfutbol.com/en/t/t2016-171049.html",
         "https://datencenter.dfb.de/competitions/bundesliga/seasons/2016-2017/teams/rb-leipzig",
-        "https://www.fussballtransfers.com/deutschland/bundesliga/2016-2017/vorlagengeber"
+        "https://www.fussballtransfers.com/deutschland/bundesliga/2016-2017/vorlagengeber",
+        "https://theanalyst.com/players/12940/emil-forsberg/career"
       ],
       "evidence": {
         "currentSeason": "https://www.bdfutbol.com/en/t/t2016-171049.html",
@@ -9217,24 +9259,26 @@
         "weighting": "2016-17 highest, 2015-16 second, 2014-15 least; individual rather than league table performance",
         "records": {
           "2014-15": {
-            "club": null,
-            "appearances": null,
+            "club": "RB Leipzig",
+            "appearances": 14,
             "starts": null,
-            "minutes": null,
-            "goals": null,
-            "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "minutes": 1232,
+            "goals": 0,
+            "assists": 3,
+            "source": "https://theanalyst.com/players/12940/emil-forsberg/career",
+            "verification": "Opta_independent_2014_15_second_division_appearances_minutes_goals_assists",
+            "league": "2. Bundesliga"
           },
           "2015-16": {
-            "club": null,
-            "appearances": null,
+            "club": "RB Leipzig",
+            "appearances": 32,
             "starts": null,
-            "minutes": null,
-            "goals": null,
-            "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "minutes": 2579,
+            "goals": 8,
+            "assists": 6,
+            "source": "https://theanalyst.com/players/12940/emil-forsberg/career",
+            "verification": "Opta_independent_2015_16_second_division_appearances_minutes_goals_assists",
+            "league": "2. Bundesliga"
           },
           "2016-17": {
             "club": "RB Leipzig",
@@ -9247,10 +9291,17 @@
             "verification": "2016_17_BDFutbol_lineup_direct_and_season_specific_current_year"
           }
         },
-        "status": "current_stats_direct_prior_two_years_partial_prior_FootballArchive_DRAFT_or_pending"
+        "status": "current_stats_direct_prior_two_years_partial_prior_FootballArchive_DRAFT_or_pending",
+        "independentPriorSources": [
+          "https://theanalyst.com/players/12940/emil-forsberg/career"
+        ],
+        "individualHistoricalAudit20261107": [
+          "2014-15 Leipzig 2.Bundesliga 14 apps, 1,232 min, 0 goals, 3 assists",
+          "2015-16 Leipzig 2.Bundesliga 32 apps, 2,579 min, 8 goals, 6 assists"
+        ]
       },
-      "tierReview": "2016-17: 30 league appearances, 27 starts, 2349 minutes, 8 goals, 19 league assists (assists provider defined). Previous 2 seasons linked 0/2 from separate DRAFT where present. Tier A+ is provisional personal on-field role and sustained quality judgment, not based on club final rank.",
-      "assessmentRationale": "2016-17 direct season use and position-specific attacking/defensive contribution; 2015-16 > 2014-15 continuity where available. 2014-15: 소속/자료 미확인, —회 출전, —골 / 2015-16: 소속/자료 미확인, —회 출전, —골 / 2016-17: RB Leipzig, 30회 출전, 8골. Source gaps are not zero performance.",
+      "tierReview": "2016-17: 30 league appearances, 27 starts, 2349 minutes, 8 goals, 19 league assists (assists provider defined). Previous 2 seasons linked 0/2 from separate DRAFT where present. Tier A+ is provisional personal on-field role and sustained quality judgment, not based on club final rank. Three-season supplement: 2014-15 Leipzig 2.Bundesliga 14 apps, 1,232 min, 0 goals, 3 assists. Three-season supplement: 2015-16 Leipzig 2.Bundesliga 32 apps, 2,579 min, 8 goals, 6 assists.",
+      "assessmentRationale": "2016-17 direct season use and position-specific attacking/defensive contribution; 2015-16 > 2014-15 continuity where available. 2014-15: 소속/자료 미확인, —회 출전, —골 / 2015-16: 소속/자료 미확인, —회 출전, —골 / 2016-17: RB Leipzig, 30회 출전, 8골. Source gaps are not zero performance. Independently sourced past-season league record: 2014-15 Leipzig 2.Bundesliga 14 apps, 1,232 min, 0 goals, 3 assists. Independently sourced past-season league record: 2015-16 Leipzig 2.Bundesliga 32 apps, 2,579 min, 8 goals, 6 assists.",
       "verificationNeeded": [
         "independent_2014_15_2015_16_full_record_all_teams_including_other_leagues",
         "2016_17_matchwise_position_frequency_and_wingback",
@@ -10024,7 +10075,8 @@
       "sources": [
         "https://www.bdfutbol.com/en/t/t2016-171003.html",
         "https://datencenter.dfb.de/competitions/bundesliga/seasons/2016-2017/teams/borussia-dortmund",
-        "https://www.fussballtransfers.com/deutschland/bundesliga/2016-2017/vorlagengeber"
+        "https://www.fussballtransfers.com/deutschland/bundesliga/2016-2017/vorlagengeber",
+        "https://theanalyst.com/players/3545/ousmane-dembele/career"
       ],
       "evidence": {
         "currentSeason": "https://www.bdfutbol.com/en/t/t2016-171003.html",
@@ -10041,24 +10093,26 @@
         "weighting": "2016-17 highest, 2015-16 second, 2014-15 least; individual rather than league table performance",
         "records": {
           "2014-15": {
-            "club": null,
-            "appearances": null,
+            "club": "Stade Rennais FC II",
+            "appearances": 18,
             "starts": null,
-            "minutes": null,
-            "goals": null,
+            "minutes": 1343,
+            "goals": 13,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://theanalyst.com/players/3545/ousmane-dembele/career",
+            "verification": "Opta_independent_2014_15_Rennes_reserves_National_2_not_topflight",
+            "league": "Championnat National 2 (reserve team)"
           },
           "2015-16": {
-            "club": null,
-            "appearances": null,
+            "club": "Stade Rennais FC",
+            "appearances": 26,
             "starts": null,
-            "minutes": null,
-            "goals": null,
-            "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "minutes": 1936,
+            "goals": 12,
+            "assists": 5,
+            "source": "https://theanalyst.com/players/3545/ousmane-dembele/career",
+            "verification": "Opta_independent_2015_16_Ligue1",
+            "league": "Ligue 1"
           },
           "2016-17": {
             "club": "BV 09 Borussia Dortmund",
@@ -10071,10 +10125,17 @@
             "verification": "2016_17_BDFutbol_lineup_direct_and_season_specific_current_year"
           }
         },
-        "status": "current_stats_direct_prior_two_years_partial_prior_FootballArchive_DRAFT_or_pending"
+        "status": "current_stats_direct_prior_two_years_partial_prior_FootballArchive_DRAFT_or_pending",
+        "independentPriorSources": [
+          "https://theanalyst.com/players/3545/ousmane-dembele/career"
+        ],
+        "individualHistoricalAudit20261107": [
+          "2014-15 Rennes II National 2 (reserve team, not top-flight) 18 matches, 1,343 min, 13 goals; downweight against senior first division",
+          "2015-16 Rennes Ligue 1 26 apps, 1,936 min, 12 goals, 5 assists"
+        ]
       },
-      "tierReview": "2016-17: 32 league appearances, 22 starts, 2040 minutes, 6 goals, 12 league assists (assists provider defined). Previous 2 seasons linked 0/2 from separate DRAFT where present. Tier A+ is provisional personal on-field role and sustained quality judgment, not based on club final rank.",
-      "assessmentRationale": "2016-17 direct season use and position-specific attacking/defensive contribution; 2015-16 > 2014-15 continuity where available. 2014-15: 소속/자료 미확인, —회 출전, —골 / 2015-16: 소속/자료 미확인, —회 출전, —골 / 2016-17: BV 09 Borussia Dortmund, 32회 출전, 6골. Source gaps are not zero performance.",
+      "tierReview": "2016-17: 32 league appearances, 22 starts, 2040 minutes, 6 goals, 12 league assists (assists provider defined). Previous 2 seasons linked 0/2 from separate DRAFT where present. Tier A+ is provisional personal on-field role and sustained quality judgment, not based on club final rank. Three-season supplement: 2014-15 Rennes II National 2 (reserve team, not top-flight) 18 matches, 1,343 min, 13 goals; downweight against senior first division. Three-season supplement: 2015-16 Rennes Ligue 1 26 apps, 1,936 min, 12 goals, 5 assists.",
+      "assessmentRationale": "2016-17 direct season use and position-specific attacking/defensive contribution; 2015-16 > 2014-15 continuity where available. 2014-15: 소속/자료 미확인, —회 출전, —골 / 2015-16: 소속/자료 미확인, —회 출전, —골 / 2016-17: BV 09 Borussia Dortmund, 32회 출전, 6골. Source gaps are not zero performance. Independently sourced past-season league record: 2014-15 Rennes II National 2 (reserve team, not top-flight) 18 matches, 1,343 min, 13 goals; downweight against senior first division. Independently sourced past-season league record: 2015-16 Rennes Ligue 1 26 apps, 1,936 min, 12 goals, 5 assists.",
       "verificationNeeded": [
         "independent_2014_15_2015_16_full_record_all_teams_including_other_leagues",
         "2016_17_matchwise_position_frequency_and_wingback",
@@ -11118,7 +11179,8 @@
       "evaluationStatus": "provisional_tier_individual_2016_17_impact_2015_16_2014_15_partial",
       "sources": [
         "https://www.bdfutbol.com/es/t/t2016-171004.html",
-        "https://datencenter.dfb.de/bundesliga/2016-2017/mannschaft/1-fc-koeln"
+        "https://datencenter.dfb.de/bundesliga/2016-2017/mannschaft/1-fc-koeln",
+        "https://datencenter.dfb.de/en/data-center/people/anthony-modeste/player"
       ],
       "evidence": {
         "currentSeason": "https://www.bdfutbol.com/es/t/t2016-171004.html",
@@ -11135,24 +11197,26 @@
         "weighting": "2016-17 highest, 2015-16 second, 2014-15 least; individual rather than league table performance",
         "records": {
           "2014-15": {
-            "club": null,
-            "appearances": null,
+            "club": "TSG 1899 Hoffenheim",
+            "appearances": 26,
             "starts": null,
             "minutes": null,
-            "goals": null,
+            "goals": 7,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://datencenter.dfb.de/en/data-center/people/anthony-modeste/player",
+            "verification": "DFB_official_2014_15_Bundesliga_games_goals_only",
+            "league": "Bundesliga"
           },
           "2015-16": {
-            "club": null,
-            "appearances": null,
+            "club": "1. FC Köln",
+            "appearances": 34,
             "starts": null,
             "minutes": null,
-            "goals": null,
+            "goals": 15,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://datencenter.dfb.de/en/data-center/people/anthony-modeste/player",
+            "verification": "DFB_official_2015_16_Bundesliga_games_goals_only",
+            "league": "Bundesliga"
           },
           "2016-17": {
             "club": "1. FC Köln",
@@ -11165,10 +11229,17 @@
             "verification": "2016_17_BDFutbol_lineup_direct_and_season_specific_current_year"
           }
         },
-        "status": "current_stats_direct_prior_two_years_partial_prior_FootballArchive_DRAFT_or_pending"
+        "status": "current_stats_direct_prior_two_years_partial_prior_FootballArchive_DRAFT_or_pending",
+        "independentPriorSources": [
+          "https://datencenter.dfb.de/en/data-center/people/anthony-modeste/player"
+        ],
+        "individualHistoricalAudit20261107": [
+          "2014-15 Hoffenheim Bundesliga 26 apps, 7 goals, starts/minutes pending",
+          "2015-16 Köln Bundesliga 34 apps, 15 goals, starts/minutes pending"
+        ]
       },
-      "tierReview": "2016-17: 34 league appearances, 34 starts, 2979 minutes, 25 goals. Previous 2 seasons linked 0/2 from separate DRAFT where present. Tier A+ is provisional personal on-field role and sustained quality judgment, not based on club final rank.",
-      "assessmentRationale": "2016-17 direct season use and position-specific attacking/defensive contribution; 2015-16 > 2014-15 continuity where available. 2014-15: 소속/자료 미확인, —회 출전, —골 / 2015-16: 소속/자료 미확인, —회 출전, —골 / 2016-17: 1. FC Köln, 34회 출전, 25골. Source gaps are not zero performance.",
+      "tierReview": "2016-17: 34 league appearances, 34 starts, 2979 minutes, 25 goals. Previous 2 seasons linked 0/2 from separate DRAFT where present. Tier A+ is provisional personal on-field role and sustained quality judgment, not based on club final rank. Three-season supplement: 2014-15 Hoffenheim Bundesliga 26 apps, 7 goals, starts/minutes pending. Three-season supplement: 2015-16 Köln Bundesliga 34 apps, 15 goals, starts/minutes pending.",
+      "assessmentRationale": "2016-17 direct season use and position-specific attacking/defensive contribution; 2015-16 > 2014-15 continuity where available. 2014-15: 소속/자료 미확인, —회 출전, —골 / 2015-16: 소속/자료 미확인, —회 출전, —골 / 2016-17: 1. FC Köln, 34회 출전, 25골. Source gaps are not zero performance. Independently sourced past-season league record: 2014-15 Hoffenheim Bundesliga 26 apps, 7 goals, starts/minutes pending. Independently sourced past-season league record: 2015-16 Köln Bundesliga 34 apps, 15 goals, starts/minutes pending.",
       "verificationNeeded": [
         "independent_2014_15_2015_16_full_record_all_teams_including_other_leagues",
         "2016_17_matchwise_position_frequency_and_wingback",
@@ -11210,7 +11281,8 @@
       "sources": [
         "https://www.bdfutbol.com/en/t/t2016-171049.html",
         "https://datencenter.dfb.de/competitions/bundesliga/seasons/2016-2017/teams/rb-leipzig",
-        "https://www.fussballtransfers.com/deutschland/bundesliga/2016-2017/vorlagengeber"
+        "https://www.fussballtransfers.com/deutschland/bundesliga/2016-2017/vorlagengeber",
+        "https://datencenter.dfb.de/personen/263930/spieler"
       ],
       "evidence": {
         "currentSeason": "https://www.bdfutbol.com/en/t/t2016-171049.html",
@@ -11227,24 +11299,26 @@
         "weighting": "2016-17 highest, 2015-16 second, 2014-15 least; individual rather than league table performance",
         "records": {
           "2014-15": {
-            "club": null,
-            "appearances": null,
+            "club": "VfB Stuttgart",
+            "appearances": 32,
             "starts": null,
             "minutes": null,
-            "goals": null,
+            "goals": 3,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://datencenter.dfb.de/personen/263930/spieler",
+            "verification": "DFB_official_2014_15_Bundesliga_games_goals_only",
+            "league": "Bundesliga"
           },
           "2015-16": {
-            "club": null,
-            "appearances": null,
+            "club": "VfB Stuttgart",
+            "appearances": 33,
             "starts": null,
             "minutes": null,
-            "goals": null,
+            "goals": 6,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://datencenter.dfb.de/personen/263930/spieler",
+            "verification": "DFB_official_2015_16_Bundesliga_games_goals_only",
+            "league": "Bundesliga"
           },
           "2016-17": {
             "club": "RB Leipzig",
@@ -11257,10 +11331,17 @@
             "verification": "2016_17_BDFutbol_lineup_direct_and_season_specific_current_year"
           }
         },
-        "status": "current_stats_direct_prior_two_years_partial_prior_FootballArchive_DRAFT_or_pending"
+        "status": "current_stats_direct_prior_two_years_partial_prior_FootballArchive_DRAFT_or_pending",
+        "independentPriorSources": [
+          "https://datencenter.dfb.de/personen/263930/spieler"
+        ],
+        "individualHistoricalAudit20261107": [
+          "2014-15 Stuttgart Bundesliga 32 apps, 3 goals, starts/minutes pending",
+          "2015-16 Stuttgart Bundesliga 33 apps, 6 goals, starts/minutes pending"
+        ]
       },
-      "tierReview": "2016-17: 31 league appearances, 28 starts, 2433 minutes, 21 goals, 5 league assists (assists provider defined). Previous 2 seasons linked 0/2 from separate DRAFT where present. Tier A+ is provisional personal on-field role and sustained quality judgment, not based on club final rank.",
-      "assessmentRationale": "2016-17 direct season use and position-specific attacking/defensive contribution; 2015-16 > 2014-15 continuity where available. 2014-15: 소속/자료 미확인, —회 출전, —골 / 2015-16: 소속/자료 미확인, —회 출전, —골 / 2016-17: RB Leipzig, 31회 출전, 21골. Source gaps are not zero performance.",
+      "tierReview": "2016-17: 31 league appearances, 28 starts, 2433 minutes, 21 goals, 5 league assists (assists provider defined). Previous 2 seasons linked 0/2 from separate DRAFT where present. Tier A+ is provisional personal on-field role and sustained quality judgment, not based on club final rank. Three-season supplement: 2014-15 Stuttgart Bundesliga 32 apps, 3 goals, starts/minutes pending. Three-season supplement: 2015-16 Stuttgart Bundesliga 33 apps, 6 goals, starts/minutes pending.",
+      "assessmentRationale": "2016-17 direct season use and position-specific attacking/defensive contribution; 2015-16 > 2014-15 continuity where available. 2014-15: 소속/자료 미확인, —회 출전, —골 / 2015-16: 소속/자료 미확인, —회 출전, —골 / 2016-17: RB Leipzig, 31회 출전, 21골. Source gaps are not zero performance. Independently sourced past-season league record: 2014-15 Stuttgart Bundesliga 32 apps, 3 goals, starts/minutes pending. Independently sourced past-season league record: 2015-16 Stuttgart Bundesliga 33 apps, 6 goals, starts/minutes pending.",
       "verificationNeeded": [
         "independent_2014_15_2015_16_full_record_all_teams_including_other_leagues",
         "2016_17_matchwise_position_frequency_and_wingback",
@@ -11302,7 +11383,8 @@
       "sources": [
         "https://www.bdfutbol.com/en/t/t2016-171015.html",
         "https://datencenter.dfb.de/competitions/bundesliga/seasons/2016-2017/teams/tsg-hoffenheim",
-        "https://www.fussballtransfers.com/deutschland/bundesliga/2016-2017/vorlagengeber"
+        "https://www.fussballtransfers.com/deutschland/bundesliga/2016-2017/vorlagengeber",
+        "https://fbref.com/en/players/603cb947/Andrej-Kramaric"
       ],
       "evidence": {
         "currentSeason": "https://www.bdfutbol.com/en/t/t2016-171015.html",
@@ -11319,24 +11401,66 @@
         "weighting": "2016-17 highest, 2015-16 second, 2014-15 least; individual rather than league table performance",
         "records": {
           "2014-15": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "club": "HNK Rijeka / Leicester City FC",
+            "appearances": 31,
+            "starts": 24,
+            "minutes": 2128,
+            "goals": 23,
+            "assists": 4,
+            "source": "https://fbref.com/en/players/603cb947/Andrej-Kramaric",
+            "verification": "FBref_2014_15_two_leagues_segmented_sum_independently_checked",
+            "league": "Croatian HNL / English Premier League",
+            "segments": [
+              {
+                "club": "HNK Rijeka",
+                "league": "Croatian HNL",
+                "appearances": 18,
+                "starts": 18,
+                "minutes": 1551,
+                "goals": 21,
+                "assists": 2
+              },
+              {
+                "club": "Leicester City FC",
+                "league": "English Premier League",
+                "appearances": 13,
+                "starts": 6,
+                "minutes": 577,
+                "goals": 2,
+                "assists": 2
+              }
+            ]
           },
           "2015-16": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "club": "Leicester City FC / TSG 1899 Hoffenheim",
+            "appearances": 17,
+            "starts": 12,
+            "minutes": 1109,
+            "goals": 5,
+            "assists": 2,
+            "source": "https://fbref.com/en/players/603cb947/Andrej-Kramaric",
+            "verification": "FBref_2015_16_two_leagues_segmented_sum_independently_checked",
+            "league": "English Premier League / Bundesliga",
+            "segments": [
+              {
+                "club": "Leicester City FC",
+                "league": "English Premier League",
+                "appearances": 2,
+                "starts": 0,
+                "minutes": 24,
+                "goals": 0,
+                "assists": 0
+              },
+              {
+                "club": "TSG 1899 Hoffenheim",
+                "league": "Bundesliga",
+                "appearances": 15,
+                "starts": 12,
+                "minutes": 1085,
+                "goals": 5,
+                "assists": 2
+              }
+            ]
           },
           "2016-17": {
             "club": "TSG 1899 Hoffenheim",
@@ -11349,10 +11473,17 @@
             "verification": "2016_17_BDFutbol_lineup_direct_and_season_specific_current_year"
           }
         },
-        "status": "current_stats_direct_prior_two_years_partial_prior_FootballArchive_DRAFT_or_pending"
+        "status": "current_stats_direct_prior_two_years_partial_prior_FootballArchive_DRAFT_or_pending",
+        "independentPriorSources": [
+          "https://fbref.com/en/players/603cb947/Andrej-Kramaric"
+        ],
+        "individualHistoricalAudit20261107": [
+          "2014-15 Rijeka Croatian HNL 18 apps/21 goals plus Leicester EPL 13 apps/2 goals; aggregate 31 apps 23 goals, different leagues segregated",
+          "2015-16 Leicester EPL 2 apps and Hoffenheim BL 15 apps; aggregate 17 apps 5 goals, split sources preserved"
+        ]
       },
-      "tierReview": "2016-17: 34 league appearances, 28 starts, 2373 minutes, 15 goals, 8 league assists (assists provider defined). Previous 2 seasons linked 0/2 from separate DRAFT where present. Tier A0 is provisional personal on-field role and sustained quality judgment, not based on club final rank.",
-      "assessmentRationale": "2016-17 direct season use and position-specific attacking/defensive contribution; 2015-16 > 2014-15 continuity where available. 2014-15: 소속/자료 미확인, —회 출전, —골 / 2015-16: 소속/자료 미확인, —회 출전, —골 / 2016-17: TSG 1899 Hoffenheim, 34회 출전, 15골. Source gaps are not zero performance.",
+      "tierReview": "2016-17: 34 league appearances, 28 starts, 2373 minutes, 15 goals, 8 league assists (assists provider defined). Previous 2 seasons linked 0/2 from separate DRAFT where present. Tier A0 is provisional personal on-field role and sustained quality judgment, not based on club final rank. Three-season supplement: 2014-15 Rijeka Croatian HNL 18 apps/21 goals plus Leicester EPL 13 apps/2 goals; aggregate 31 apps 23 goals, different leagues segregated. Three-season supplement: 2015-16 Leicester EPL 2 apps and Hoffenheim BL 15 apps; aggregate 17 apps 5 goals, split sources preserved.",
+      "assessmentRationale": "2016-17 direct season use and position-specific attacking/defensive contribution; 2015-16 > 2014-15 continuity where available. 2014-15: 소속/자료 미확인, —회 출전, —골 / 2015-16: 소속/자료 미확인, —회 출전, —골 / 2016-17: TSG 1899 Hoffenheim, 34회 출전, 15골. Source gaps are not zero performance. Independently sourced past-season league record: 2014-15 Rijeka Croatian HNL 18 apps/21 goals plus Leicester EPL 13 apps/2 goals; aggregate 31 apps 23 goals, different leagues segregated. Independently sourced past-season league record: 2015-16 Leicester EPL 2 apps and Hoffenheim BL 15 apps; aggregate 17 apps 5 goals, split sources preserved.",
       "verificationNeeded": [
         "independent_2014_15_2015_16_full_record_all_teams_including_other_leagues",
         "2016_17_matchwise_position_frequency_and_wingback",
