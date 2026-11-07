@@ -1,5 +1,7 @@
 
 ## 2026-11-07 — Bundesliga 2013-14 fresh DRAFT roster + UEFA scope + provisional tiers/ranks
+- **2026-11-07 DFB historical partial revalidation:** five S-tier players (Neuer, Lahm, Robben, Reus, Lewandowski), all 2011-12 and 2012-13 DFB Bundesliga individual league **appearances/goals** compared against official player profiles, 10 player-year records updated in `data/bundesliga-2013-14.json`. Unverified older starts/minutes reset null for those records. **5/139 partial prior-year apps/goals checked; 0/139 fully independent 3-year qualitative quality checks**. Audit report section 8A updated. Remaining per-match position, qualitative criteria, source cross-validation incomplete.
+
 
 - **User command:** `다음` after Bundesliga 2012-13 and prior AUTO_NEXT_SEASON=yes setting. Proceeded to **2013-14**; target qualifying season **2014-15**. Current 3-year weighting 2011-12 < 2012-13 < 2013-14. User has NOT approved this season's tiers.
 - **Seven actual 2014-15 UEFA participants:** Bayern, Dortmund, Schalke, Leverkusen (UCL), Wolfsburg, Borussia Mönchengladbach, Mainz (UEL). Mainz *actually played* Europa League third qualifier vs Asteras on July 31/Aug 7 2014 (2-3 aggregate), so included. Domestic cup finalists both already Champions League-qualified; Mainz 7th eligible.
