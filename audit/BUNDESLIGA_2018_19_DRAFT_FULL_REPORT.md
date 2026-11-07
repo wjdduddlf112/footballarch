@@ -1735,3 +1735,11 @@
 - Github Actions, full source-by-source historic quality audit, matchwise frequency, secondary birth check, and true browser visual audit must be reported separately, never inferred from JSON existence.
 
 **최종 상태: `draft_unapproved`**. 다음 시즌 2019-20 자동진행 금지.
+
+## K. 2018-19 GitHub Actions / 실제 Chromium 검증 결과 (2026-11-07)
+- 구조 검사: **PASS** (GitHub Actions job `structure`; `node scripts/verify-bundesliga-2018-19-draft.mjs`).
+- 실제 홈페이지 Chromium Playwright smoke: **PASS** (job `browser`; `node scripts/verify-bundesliga-2018-19-live.mjs`).
+- 검사 화면: 2018-19 DRAFT 표기, 평가 자격 구단 7, 구단별/포지션별/티어별 All Tiers 각각 133개 row, 첫 선수 상세의 2016-17/2017-18/2018-19 기간·부분검증 표기, Best XI 11명, Top Class, League Table, Statistics, 2017-18 과거 135명 회귀, 페이지 에러 없음.
+- 확인 URL: https://github.com/wjdduddlf112/footballarch/actions/runs/42383943549 (두 job 모두 성공); Pages 배포 성공: https://github.com/wjdduddlf112/footballarch/actions/runs/42383943215.
+- **범위 제외**: 모든 133명 상세를 독립적으로 각각 클릭한 것은 아님; 전체 선수의 생년월일 2차 출처·경기별 실제 포지션·과거 3시즌 질적 평가와 시각적 엠블럼 시대 적합성은 검증 미완료. CI 성공은 역사적 완전 검증을 뜻하지 않음.
+- GitHub Pages: https://wjdduddlf112.github.io/footballarch/?league=bundesliga&season=2018-19&view=tiers
