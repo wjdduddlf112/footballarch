@@ -562,6 +562,20 @@ The strings below show **exactly what is substantiated** (current-year appearanc
 - GitHub Pages deployment and interactive Chromium checks: **must be checked separately**, workflow status not inferred from structural script.
 - No prior season JSON modified.
 
+## 8A. Independent DFB player-profile check: five S-tier players (partial historical verification)
+
+This extra audit changed the **actual 2013-14 JSON**, not only this report. DFB individual Bundesliga profile totals were checked for both prior seasons. **Scope is appearances and goals only**, not matchwise played position, starts, minutes, assists, and not complete three-season qualitative impact verification.
+
+| Player | 2011-12 club | 2011-12 apps/goals | 2012-13 club | 2012-13 apps/goals | Official source |
+|---|---|---|---|---|---|
+| Manuel Neuer | FC Bayern München | 33 / 0 | FC Bayern München | 31 / 0 | [DFB](https://datencenter.dfb.de/datencenter/personen/manuel-neuer/spieler) |
+| Philipp Lahm | FC Bayern München | 31 / 0 | FC Bayern München | 29 / 0 | [DFB](https://datencenter.dfb.de/datencenter/personen/philipp-lahm/spieler) |
+| Arjen Robben | FC Bayern München | 24 / 12 | FC Bayern München | 16 / 5 | [DFB](https://datencenter.dfb.de/personen/arjen-robben/spieler) |
+| Marco Reus | VfL Borussia Mönchengladbach | 32 / 18 | BV 09 Borussia Dortmund | 32 / 14 | [DFB](https://datencenter.dfb.de/datencenter/personen/marco-reus/spieler) |
+| Robert Lewandowski | BV 09 Borussia Dortmund | 34 / 22 | BV 09 Borussia Dortmund | 31 / 24 | [DFB](https://datencenter.dfb.de/personen/robert-lewandowski/spieler) |
+
+For these five historical records, starts and minutes inherited from older DRAFT were set back to `null` when not independently confirmed, eliminating false precision. Their `threeSeasonReview` and `sources` fields now point to the DFB primary source. All five still have `verificationStatus=partially_verified` and the full three-season qualitative verification count is still **0/139**. Neither these figures nor the VDV vote constitutes independent verification of the other 134 players.
+
 ## 9. Source lists and next actions
 
 - FC Bayern München: [BDFutbol 2013-14 current league player stats](https://www.bdfutbol.com/en/t/t2013-141016.html) / [DFB Bundesliga 2013-14 roster and birthdays](https://datencenter.dfb.de/bundesliga/2013-2014/mannschaft/bayern-muenchen)
