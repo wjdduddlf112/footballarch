@@ -417,13 +417,13 @@ No quotas or fixed tier distribution were applied.
 
 | Assessment season | Players with linked record/source URL | Full independently validated 3-season personal qualitative performance |
 |---|---:|---:|
-| 2012-13 | 59 | 0 |
-| 2013-14 | 88 | 0 |
+| 2012-13 | 64 | 0 |
+| 2013-14 | 90 | 0 |
 | 2014-15 | 141 | 0 |
 
 - 2014-15 current season source-linked: **141/141**.
-- 2013-14 **88** have an old Football Archive draft link/value; their `verification` says `prior_FootballArchive_DRAFT_not_independently_verified`.
-- 2012-13 **59** have a source link, including the independently rechecked DFB and Opta records for Kevin De Bruyne; remaining records with earlier Football Archive draft links are not independently verified.
+- 2013-14 **90** have a source link/value; their `verification` says `prior_FootballArchive_DRAFT_not_independently_verified`.
+- 2012-13 **64** have a source link, including the independently rechecked DFB and Opta records for Kevin De Bruyne; remaining records with earlier Football Archive draft links are not independently verified.
 - Remaining historical reference values `null` and record-level `evidence_pending`.
 - All 141 personal verification statuses **partially_verified**; full three-year individual qualitative independently certified = **0**.
 - Each candidate's current-year `goals2014` and `assists2014` are distinct. The sole quantified assist value from a direct independent contemporaneous source is Kevin De Bruyne's **20 Bundesliga assists**, plus 10 goals from BDFutbol and VDV. Other candidate assists remain `null` unless separately sourced.
@@ -645,3 +645,23 @@ C. Production:
 5. GitHub Actions structure + live browser smoke and exact commit deployment check, plus prior 2013-14 regression.
 6. Continue 2015-16 only as part of actual subsequent execution under AUTO_NEXT_SEASON yes; do not claim background continuation after chat turn.
 
+
+
+## 2026-11-07 single-season independent historical re-audit addendum
+
+**Approval:** remains `draft_unapproved`; automation explicitly **NO**. This audit does not start Bundesliga 2015-16. Earlier 59 / 88 values recorded in the original project progress were the pre-addendum coverage snapshot; current season-linked old-year coverage is **64 in 2012-13** and **90 in 2013-14**, with 141/141 for 2014-15. Prior two-season source linkage does not establish complete historical quality verification: **0/141 fully three-season qualitatively verified; 0/141 matchwise primary positions independently certified**.
+
+Official 2015/16 UEFA lists independently confirm the seven club entrants listed above (Leverkusen first competed in UCL and subsequently also played UEL after group phase); UEFA's 2015/16 original [German qualification table](https://editorial.uefa.com/resources/0224-0f842ac9bf08-281f7e5c371c-1000/first_division_clubs_in_europe_2015_16.pdf) crosschecks domestic qualification. The historical 4-2-3-1 best-XI lineup matches 10 of 11 positions in the contemporaneous VDV best XI, with Son instead of excluded Eintracht player Alexander Meier. **Do not treat contemporaneous VDV selection as proof of full 3-year individual evaluation or exact predominant position.**
+
+### Supplemented prior-season records (only verified fields filled)
+
+| Player | 2012-13 independently sourced league record | 2013-14 independent verification | Basis |
+|---|---|---|---|
+| Juan Bernat | Valencia: 12 apps, 6 starts, 502 min, 0 goals, 2 assists | Valencia: 32 apps, 26 starts, 2,493 min, 1 goal, 2 assists | [FBref](https://fbref.com/en/players/433dc9a2/Juan-Bernat) |
+| Yann Sommer | Basel: 36 apps/starts, 3,240 min, 0 goals | Basel: 35 apps/starts, 3,122 min, 0 goals | [FBref](https://fbref.com/en/players/420c18a1/Yann-Sommer) |
+| Naldo | Wolfsburg: 31 apps, 6 goals; starts/minutes remain null | Wolfsburg: 33 apps, 3 goals crosschecked; old starts/min unverified | [DFB](https://datencenter.dfb.de/en/data-center/people/naldo/player) |
+| Ricardo Rodríguez | Wolfsburg: 24 apps, 0 goals; starts/minutes remain null | Wolfsburg: 34 apps, 5 goals crosschecked; old starts/min unverified | [DFB](https://datencenter.dfb.de/datencenter/personen/ricardo-rodriguez/spieler) |
+| Pierre-Emerick Aubameyang | Saint-Étienne: 37 Ligue 1 apps, 3,214 min, 19 goals, 9 assists | Dortmund: 32 apps, 13 goals, 4 assists; BDF and Opta minute discrepancy 1,955 vs 1,956 remains flagged | [Opta](https://theanalyst.com/players/6603/pierre-emerick-aubameyang/career) |
+| Robert Lewandowski | Dortmund: 31 apps, 2,594 min, 24 goals independently corroborated | Dortmund: 33 apps, 2,803 min, 20 goals corroborated | [Opta](https://theanalyst.com/players/1404/robert-lewandowski/career) |
+
+**Statistics policy:** Goals / apps / minutes were added only when independently sourced. Unverified starts and minutes remain `null`. Goalkeeper goals are not the goals-conceded column. No re-tiering was justified by these factual supplements; provisional rankings and Best XI remain as recorded. 2014-15 DFB and [VDV XI](https://www.spielergewerkschaft.de/de/vdv11/archiv/120/VDV%2011%2020142015%20De%20Bruyne%20San%20und%20Favre%20auf%20dem%20Thron.htm) were separately checked. The live Chromium browser test and structure tests on commit f3bf595 were previously successful (GitHub Actions run 42339993445); any subsequent new commit still requires its own deployment/CI status check. 
