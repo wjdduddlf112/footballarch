@@ -44,7 +44,7 @@ try{
  const dialog=page.locator('[role="dialog"]');
  await dialog.waitFor();
  const detail=await dialog.innerText();
- for(const year of ["2012-13","2014-15","2015-16"])assert(detail.includes(year),"missing per-player review year "+year);
+ for(const year of ["2013-14","2014-15","2015-16"])assert(detail.includes(year),"missing per-player review year "+year);
  assert(detail.includes("partially_verified"),"historical state must remain visible");
  await page.locator('button[data-action="close"]').click();
  await page.locator('button[data-tab="formation"]').click();
