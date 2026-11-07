@@ -1,3 +1,18 @@
+
+## 2026-11-07 — Bundesliga 2013-14 fresh DRAFT roster + UEFA scope + provisional tiers/ranks
+
+- **User command:** `다음` after Bundesliga 2012-13 and prior AUTO_NEXT_SEASON=yes setting. Proceeded to **2013-14**; target qualifying season **2014-15**. Current 3-year weighting 2011-12 < 2012-13 < 2013-14. User has NOT approved this season's tiers.
+- **Seven actual 2014-15 UEFA participants:** Bayern, Dortmund, Schalke, Leverkusen (UCL), Wolfsburg, Borussia Mönchengladbach, Mainz (UEL). Mainz *actually played* Europa League third qualifier vs Asteras on July 31/Aug 7 2014 (2-3 aggregate), so included. Domestic cup finalists both already Champions League-qualified; Mainz 7th eligible.
+- **Newly selected current 2013-14 Bundesliga BDFutbol club rosters:** 139 players total: Bayern 20, Dortmund 20, Schalke 23, Leverkusen 19, Wolfsburg 20, Gladbach 16, Mainz 21. DFB 2013-14 squad birth-date URLs present, 139/139 DOB entered; 5 previously missing independently resolved from contemporary DFB/club/K-League sources. Selection did not copy old Football Archive player candidate lists.
+- **All 139 current-year appearance/starts/minutes/field-goal counts sourced from 2013-14 Bundesliga BDFutbol team tables;** past 2011-12 historical DRAFT reference available for 64, past 2012-13 draft reference available for 63; earlier numbers are explicitly **NOT** independent three-season verification. Other earlier values are null. All player `verificationStatus=partially_verified`; independently completed full 3-season qualitative player checks **0/139**; matchwise majority-position checks **0/139**.
+- **Provisional 10-position rankings & all tiers:** S=5, A+=11, A0=8, A-=22, B+=44, B0=25, B-=22, C+=2, C0/C-/D=0. **World Class 16, League Top Class 46**. No arbitrary quota or team starter=11 limit. Team/position at most one `backup` each. All ratings/user approval status DRAFT.
+- 4-2-3-1 representative formation (not statistically proven league-wide modal). Best XI `proposed_unapproved`: Neuer; Dante, Hummels; Alaba, Rafinha; Lahm (DM role in Guardiola season), Kroos; Götze; Reus (LW), Robben (RW); Lewandowski (ST). Position caveats Lahm VDV right-back vs Guardiola DM, Reus VDV CAM vs actual left attacker, Aubameyang 2013-14 wide forward vs later ST.
+- Primary independent contemporaneous recognition: [VDV player union 2013-14 poll](https://www.spielergewerkschaft.de/de/vdv11/archiv/121/VDV%2011%2020132014%20Trophen%20gehen%20an%20Reus%20Weinzierl%20und%20Hahn.htm) — Reus 28.6%, Lewandowski 20.3%, Robben 10.1%; not exclusive tier evidence.
+- Files added to main: `data/bundesliga-2013-14.json`, `audit/BUNDESLIGA_2013_14_DRAFT_FULL_REPORT_2026_11_07.md`, `scripts/verify-bundesliga-2013-14-draft.mjs` and `scripts/verify-bundesliga-2013-14-live.mjs`.
+- **Direct GitHub JSON structural integrity audit PASS (errors=[])**: IDs, status, clubs, sources, DOB, appearances/starts/minutes, per-position ranks, tier ordering, Best XI. Validator was saved but independent GitHub Actions runtime has not yet been certified for 2013-14.
+- **Open:** individual three-season independent qualitative audit, complete matchwise role check, additional DOB profile cross-verification, dedicated Actions/Chromium live smoke, and earlier-season regression.
+- **AUTO_NEXT_SEASON=yes remains set**, next target 2014-15, but actual work not started as of this entry; no background continuation assumed.
+
 ## 2026-11-05 — Bundesliga 2006-07 DRAFT 128명 구성·개인 검증 상태 분리
 
 - 2007-08 유럽대항전 실제 참가 7구단: VfB Stuttgart, FC Schalke 04, SV Werder Bremen (UCL), FC Bayern München, Bayer 04 Leverkusen, 1. FC Nürnberg (UEFA Cup; Nürnberg DFB-Pokal 우승), Hamburger SV (2007 Intertoto 실제 참가 후 UEFA Cup).
