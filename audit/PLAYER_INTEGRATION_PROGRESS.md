@@ -1,3 +1,11 @@
+## 2026-11-07 — `ㄷㅇ` user requested next: Bundesliga 2017-18 single season DRAFT
+- AUTO_NEXT_SEASON=no. Previous 2016-17 → 2017-18 only. Scope eligibility actual 2018-19 UEFA entrants Bayern/Schalke/Hoffenheim/Dortmund UCL, Leverkusen/Leipzig/Frankfurt UEL. Frankfurt was 8th and 2017-18 DFB-Pokal winner; 7th Stuttgart excluded.
+- New BDFutbol research with official DFB 2017-18 squad DOB links; **135 individuals** counts {"bayern":21,"schalke":17,"hoffenheim":19,"dortmund":23,"leverkusen":18,"leipzig":19,"frankfurt":18}, all 2017-18 league appearances/starts/minutes/goals directly source linked. At most 1 backup/position/club, multi-starter seasonal equivalence allowed.
+- Grades {"S":1,"A+":6,"A0":8,"A-":29,"B+":61,"B0":26,"B-":3,"C+":1,"C0":0,"C-":0,"D":0}, World Class 7, League Top Class 44; unique position ranks all 10; draft unapproved.
+- Prior year records: 2015-16 48/135, 2016-17 59/135, current 2017-18 135/135. Prior links only previous Football Archive DRAFT, **not full independent audit**. Individual full 3-year personal quality verified **0/135** and matchwise primary position audited **0/135**.
+- Representative provisional 4-2-3-1; Best XI GK Sven Ulreich; CB Naldo; CB Mats Hummels; LB David Alaba; RB Joshua Kimmich; DM Javi Martínez; CM Naby Keïta; CAM James Rodríguez; LW Leon Bailey; RW Thomas Müller; ST Robert Lewandowski. Reasoned GK Ulreich 29/29 rather than injured Neuer 3/3, Frankfurt cup entrant, Hoffenheim and Schalke wingbacks. No trophy bonus.
+- Full candidates, positions, DOB, tiers, ranks, rationales and missing older sources `audit/BUNDESLIGA_2017_18_DRAFT_FULL_REPORT_2026_11_07.md` + JSON data. CI and browser verification need action check after pushing; pages availability alone not enough.
+
 ## 2026-11-07 — Bundesliga 2016-17: independent 3-season source supplement after initial DRAFT commit
 - 15 previously missing old-season records for 8 players independently checked from DFB/Opta/FBref: Forsberg, Keïta, Dembélé, Modeste, Werner, Süle, Weigl, Kramarić. Lower league/foreign leagues and multi-team season parts explicitly noted.
 - Old record coverage updated **2014-15 29→37 /130**, **2015-16 50→57 /130**, current **2016-17 130/130**. All tiers and Best XI remain unapproved and unchanged. Complete independent player qualitative 3-year verified remains **0/130**; matchwise position verified 0/130.
