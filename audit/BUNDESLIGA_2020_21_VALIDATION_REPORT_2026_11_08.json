@@ -1,0 +1,121 @@
+{
+  "season": "2020-21",
+  "league": "Bundesliga",
+  "recordedAt": "2026-11-08",
+  "status": "draft_unapproved",
+  "approval": false,
+  "autoNext": false,
+  "qualifyingTeams": {
+    "count": 7,
+    "competitions": {
+      "UCL": 4,
+      "UEL": 2,
+      "UECL": 1
+    },
+    "sourceStatus": "actual_2021_22_participation_Uefa_reference",
+    "inauguralUECLUnionBerlinIncluded": true
+  },
+  "nomination": {
+    "players": 144,
+    "clubCounts": {
+      "bayern": 21,
+      "leipzig": 21,
+      "dortmund": 21,
+      "wolfsburg": 20,
+      "frankfurt": 19,
+      "leverkusen": 21,
+      "union": 21
+    },
+    "byPosition": {
+      "GK": 14,
+      "CB": 27,
+      "LB": 13,
+      "RB": 15,
+      "DM": 10,
+      "CM": 18,
+      "CAM": 13,
+      "LW": 8,
+      "RW": 9,
+      "ST": 17
+    },
+    "backups": 34,
+    "verifiedLeagueStartMinutesSourceLinked": 144,
+    "tierCounts": {
+      "S": 1,
+      "A+": 10,
+      "A0": 13,
+      "A-": 13,
+      "B+": 52,
+      "B0": 36,
+      "B-": 10,
+      "C+": 9,
+      "C0": 0,
+      "C-": 0,
+      "D": 0
+    },
+    "worldClass": 11,
+    "leagueTopClass": 37,
+    "bestXI": 11,
+    "bestXIStatus": "proposed_unapproved"
+  },
+  "threeSeasonQuality": {
+    "period": [
+      "2018-19",
+      "2019-20",
+      "2020-21"
+    ],
+    "priorDataSourceLinked": {
+      "2018-19": 70,
+      "2019-20": 83,
+      "2020-21": 144
+    },
+    "fullyIndependentHistoricalThreeSeasonQualitativeVerified": 0,
+    "independentlyDoubleCheckedDob": 0,
+    "matchwiseMainPositionFrequencyChecked": 0,
+    "numericalPastSeasonsPriorArchiveUnapprovedDraftOnly": true,
+    "missingYearsKeptNull": true,
+    "currentSeasonManuallyTranscribedAllStatsRecheckedIndependentProvider": false,
+    "assistsWarning": "Bundesliga.com Müller 18, Kostić 14; DFB DataCenter Müller 22, Kostić 16"
+  },
+  "structure": {
+    "status": "PASS",
+    "method": "Github Actions real Node verifier",
+    "workflowRun": "https://github.com/wjdduddlf112/footballarch/actions/runs/42389566442",
+    "checked": [
+      "7 qualified clubs actual competition parity with archive and Union UECL",
+      "144 unique IDs, every player current league apps/starts/minutes and date string",
+      "max one backup per club per position",
+      "all ten position ranks contiguous and tier monotonic",
+      "tier counts/world class/league top parity",
+      "Best XI 11 unique registered-position match",
+      "previous 2019-20 142 DRAFT regression"
+    ]
+  },
+  "liveBrowser": {
+    "status": "PASS",
+    "method": "real Chromium Playwright on deployed GitHub Pages",
+    "workflowRun": "https://github.com/wjdduddlf112/footballarch/actions/runs/42389566442",
+    "checked": [
+      "2020-21 DRAFT banner",
+      "7 qualified club sections",
+      "144 rows on club-view, position-view and tier-view",
+      "first player detail has 2018-19, 2019-20 and 2020-21 references and partially_verified",
+      "Best XI eleven rows",
+      "Top Class, League Table, Statistics",
+      "2019-20 season 142 players regression",
+      "zero JS page errors"
+    ],
+    "limitations": [
+      "all 144 players individual detail modals not individually visited",
+      "era-correct historical crest images not verified",
+      "all individual date of births not independently second sourced",
+      "all season matchwise primary positions unverified"
+    ]
+  },
+  "githubPages": {
+    "status": "PASS",
+    "run": "https://github.com/wjdduddlf112/footballarch/actions/runs/42389566062",
+    "publishedUrl": "https://wjdduddlf112.github.io/footballarch/?league=bundesliga&season=2020-21&view=tiers",
+    "historicalQualityValidatedByDeploy": false
+  }
+}
