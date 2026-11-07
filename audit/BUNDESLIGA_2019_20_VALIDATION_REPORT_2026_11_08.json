@@ -16,7 +16,8 @@
     "bestXiElevenUnique": true,
     "uefaQualificationIncludesWolfsburgUELQualifiers": true,
     "previous2018_19DraftPreserved": true,
-    "errors": []
+    "errors": [],
+    "nodeCLI": "PASS: 2019-20 dedicated GitHub Actions structure job executed"
   },
   "historicalAudit": {
     "fullThreeSeasonQualitativeIndependentVerified": 0,
@@ -45,10 +46,22 @@
   },
   "deploy": {
     "newWorkflow": ".github/workflows/verify-bundesliga-2019-20-draft-live.yml",
-    "structureJob": "pending",
-    "browserJob": "pending",
-    "pagesPublishedForThisRevision": "pending",
+    "structureJob": "completed_success",
+    "browserJob": "completed_success",
+    "pagesPublishedForThisRevision": "PASS: 2019-20 data was published; verified current season in Chromium",
     "all142IndividualDetailsInspected": false,
-    "allHistoricalCrestsVerified": false
+    "allHistoricalCrestsVerified": false,
+    "workflowRunUrl": "https://github.com/wjdduddlf112/footballarch/actions/runs/42387080433",
+    "browserChecks": [
+      "DRAFT season 2019-20 correctly shown",
+      "7 club sections",
+      "142 rows each in all three All Tiers tabs",
+      "first player detail contains 2017-18, 2018-19, 2019-20 and partially_verified",
+      "Best XI 11",
+      "League Top Class, League Table, Statistics",
+      "no browser page errors",
+      "2018-19 133-player DRAFT regression"
+    ],
+    "pagesWorkflowUrl": "https://github.com/wjdduddlf112/footballarch/actions/runs/42387080555"
   }
 }
