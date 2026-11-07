@@ -126,9 +126,10 @@
         "leverkusen": 18,
         "frankfurt": 19
       },
-      "allGradesDraft": true
+      "allGradesDraft": true,
+      "officialBundesligaAssistsSelected": 3
     },
-    "notes": "Manual transcription of 7 current-year BDFutbol team lineup/squad tables; each player exact source URL; current stat double-check still required. Prior years reference previous unapproved FootballArchive drafts only, missing years null; no full independent qualitative 3-year verification. 3back team wingback role mapped LB/RB for site; Nkunku/Becker support forwards kept ST; no forced positions. GK G negative are conceded, stored scored=null."
+    "notes": "Manual transcription of 7 current-year BDFutbol team lineup/squad tables; each player exact source URL; current stat double-check still required. Prior years reference previous unapproved FootballArchive drafts only, missing years null; no full independent qualitative 3-year verification. 3back team wingback role mapped LB/RB for site; Nkunku/Becker support forwards kept ST; no forced positions. GK G negative are conceded, stored scored=null. Three individual official Bundesliga.com assists independently matched from season overview (Guerreiro 12, Kolo Muani 11, Musiala 10). Bayern CM backup role comparison corrected (Gravenberch backup, Sabitzer interim starter equivalent)."
   },
   "clubs": [
     {
@@ -1735,8 +1736,8 @@
       "position": "CM",
       "originalTacticalRole": "CM",
       "positionVerification": "tactical_role_based_from_2022_23_club_setup_matchwise_frequency_pending",
-      "role": "backup",
-      "roleVerification": "BDFutbol 2022-23 Bundesliga 15 apps / 7 starts / 626 min; multiple starter-equivalents allowed",
+      "role": "starter",
+      "roleVerification": "BDFutbol 2022-23 Bundesliga 15 apps / 7 starts / 626 min; multiple starter-equivalents allowed; 7 league starts 626 minutes before winter departure, transitional starter-equivalent (provisional)",
       "leagueAppearances": 15,
       "leagueStarts": 7,
       "leagueMinutes": 626,
@@ -1827,8 +1828,8 @@
       "position": "CM",
       "originalTacticalRole": "CM",
       "positionVerification": "tactical_role_based_from_2022_23_club_setup_matchwise_frequency_pending",
-      "role": "starter",
-      "roleVerification": "BDFutbol 2022-23 Bundesliga 24 apps / 3 starts / 559 min; multiple starter-equivalents allowed; seasonal rotation starter-equivalent provisional, competition not conclusively audited",
+      "role": "backup",
+      "roleVerification": "BDFutbol 2022-23 Bundesliga 24 apps / 3 starts / 559 min; multiple starter-equivalents allowed; seasonal rotation starter-equivalent provisional, competition not conclusively audited; 3 starts 559 minutes, reserve contribution within one CM backup per club",
       "leagueAppearances": 24,
       "leagueStarts": 3,
       "leagueMinutes": 559,
@@ -1926,7 +1927,7 @@
       "leagueMinutes": 2209,
       "starts": 26,
       "goals2022": 12,
-      "assists2022": null,
+      "assists2022": 10,
       "tier": "A+",
       "rank": 1,
       "rankStatus": "provisional_2022_current_form_and_tier_recency_weighted",
@@ -1935,12 +1936,14 @@
       "evaluationStatus": "current_league_stat_source_previous_draft_references_or_missing_full_qualitative_audit_pending",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2022-231016.html",
-        "https://datencenter.dfb.de/competitions/bundesliga/seasons/2022-23/teams/bayern-muenchen"
+        "https://datencenter.dfb.de/competitions/bundesliga/seasons/2022-23/teams/bayern-muenchen",
+        "https://www.bundesliga.com/en/bundesliga/stats/overview/2022-2023"
       ],
       "evidence": {
         "currentSeason": "https://www.bdfutbol.com/en/t/t2022-231016.html",
         "identity": "https://datencenter.dfb.de/competitions/bundesliga/seasons/2022-23/teams/bayern-muenchen",
-        "scope": "2022-23 Bundesliga PM apps SM starts Min minutes G outfield goals; goalkeeper negative G = conceded only (scored null)"
+        "scope": "2022-23 Bundesliga PM apps SM starts Min minutes G outfield goals; goalkeeper negative G = conceded only (scored null)",
+        "assists": "https://www.bundesliga.com/en/bundesliga/stats/overview/2022-2023"
       },
       "threeSeasonReview": {
         "assessmentSeasons": [
@@ -1979,15 +1982,17 @@
             "starts": 26,
             "minutes": 2209,
             "goals": 12,
-            "assists": null,
+            "assists": 10,
             "source": "https://www.bdfutbol.com/en/t/t2022-231016.html",
-            "verification": "BDFutbol_2022_23_team_league_stats_read_and_transcribed_person_level_secondary_check_pending"
+            "verification": "BDFutbol_2022_23_team_league_stats_read_and_transcribed_person_level_secondary_check_pending",
+            "assistsSource": "https://www.bundesliga.com/en/bundesliga/stats/overview/2022-2023",
+            "assistsProvider": "Bundesliga.com"
           }
         },
         "status": "current_club_roster_stats_prior_ARCHIVE_DRAFT_or_missing_not_independent_full_three_year"
       },
-      "tierReview": "2022-23 리그 33경기 26선발 2209분 12골. 해당 시즌 개인 기용량·CAM 역할·전술적 영향력을 중점 고려한 A+ 잠정 평가. 2021-22·2020-21 기록은 연결 2/2개 시즌의 이전 미승인 아카이브 참고, 또는 자료 미확보이며 독립 검증이 아님. 팀 순위 및 우승 가산 없음. 당시 역할: CAM.",
-      "assessmentRationale": "2022-23 리그 33경기 26선발 2209분 12골. 해당 시즌 개인 기용량·CAM 역할·전술적 영향력을 중점 고려한 A+ 잠정 평가. 2021-22·2020-21 기록은 연결 2/2개 시즌의 이전 미승인 아카이브 참고, 또는 자료 미확보이며 독립 검증이 아님. 팀 순위 및 우승 가산 없음. 당시 역할: CAM.",
+      "tierReview": "2022-23 리그 33경기 26선발 2209분 12골. 해당 시즌 개인 기용량·CAM 역할·전술적 영향력을 중점 고려한 A+ 잠정 평가. 2021-22·2020-21 기록은 연결 2/2개 시즌의 이전 미승인 아카이브 참고, 또는 자료 미확보이며 독립 검증이 아님. 팀 순위 및 우승 가산 없음. 당시 역할: CAM. 공식 Bundesliga.com 도움 10개(해당 집계 기준).",
+      "assessmentRationale": "2022-23 리그 33경기 26선발 2209분 12골. 해당 시즌 개인 기용량·CAM 역할·전술적 영향력을 중점 고려한 A+ 잠정 평가. 2021-22·2020-21 기록은 연결 2/2개 시즌의 이전 미승인 아카이브 참고, 또는 자료 미확보이며 독립 검증이 아님. 팀 순위 및 우승 가산 없음. 당시 역할: CAM. 공식 Bundesliga.com 도움 10개(해당 집계 기준).",
       "verificationNeeded": [
         "independent_player_current_stat_secondary_crosscheck",
         "full_2020_21_2021_22_research_including_other_clubs_leagues",
@@ -3122,7 +3127,7 @@
       "leagueMinutes": 2296,
       "starts": 26,
       "goals2022": 4,
-      "assists2022": null,
+      "assists2022": 12,
       "tier": "A",
       "rank": 1,
       "rankStatus": "provisional_2022_current_form_and_tier_recency_weighted",
@@ -3131,12 +3136,14 @@
       "evaluationStatus": "current_league_stat_source_previous_draft_references_or_missing_full_qualitative_audit_pending",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2022-231003.html",
-        "https://datencenter.dfb.de/competitions/bundesliga/seasons/2022-23/teams/borussia-dortmund"
+        "https://datencenter.dfb.de/competitions/bundesliga/seasons/2022-23/teams/borussia-dortmund",
+        "https://www.bundesliga.com/en/bundesliga/stats/overview/2022-2023"
       ],
       "evidence": {
         "currentSeason": "https://www.bdfutbol.com/en/t/t2022-231003.html",
         "identity": "https://datencenter.dfb.de/competitions/bundesliga/seasons/2022-23/teams/borussia-dortmund",
-        "scope": "2022-23 Bundesliga PM apps SM starts Min minutes G outfield goals; goalkeeper negative G = conceded only (scored null)"
+        "scope": "2022-23 Bundesliga PM apps SM starts Min minutes G outfield goals; goalkeeper negative G = conceded only (scored null)",
+        "assists": "https://www.bundesliga.com/en/bundesliga/stats/overview/2022-2023"
       },
       "threeSeasonReview": {
         "assessmentSeasons": [
@@ -3175,15 +3182,17 @@
             "starts": 26,
             "minutes": 2296,
             "goals": 4,
-            "assists": null,
+            "assists": 12,
             "source": "https://www.bdfutbol.com/en/t/t2022-231003.html",
-            "verification": "BDFutbol_2022_23_team_league_stats_read_and_transcribed_person_level_secondary_check_pending"
+            "verification": "BDFutbol_2022_23_team_league_stats_read_and_transcribed_person_level_secondary_check_pending",
+            "assistsSource": "https://www.bundesliga.com/en/bundesliga/stats/overview/2022-2023",
+            "assistsProvider": "Bundesliga.com"
           }
         },
         "status": "current_club_roster_stats_prior_ARCHIVE_DRAFT_or_missing_not_independent_full_three_year"
       },
-      "tierReview": "2022-23 리그 27경기 26선발 2296분 4골. 해당 시즌 개인 기용량·LB 역할·전술적 영향력을 중점 고려한 A0 잠정 평가. 2021-22·2020-21 기록은 연결 2/2개 시즌의 이전 미승인 아카이브 참고, 또는 자료 미확보이며 독립 검증이 아님. 팀 순위 및 우승 가산 없음. 당시 역할: LB.",
-      "assessmentRationale": "2022-23 리그 27경기 26선발 2296분 4골. 해당 시즌 개인 기용량·LB 역할·전술적 영향력을 중점 고려한 A0 잠정 평가. 2021-22·2020-21 기록은 연결 2/2개 시즌의 이전 미승인 아카이브 참고, 또는 자료 미확보이며 독립 검증이 아님. 팀 순위 및 우승 가산 없음. 당시 역할: LB.",
+      "tierReview": "2022-23 리그 27경기 26선발 2296분 4골. 해당 시즌 개인 기용량·LB 역할·전술적 영향력을 중점 고려한 A0 잠정 평가. 2021-22·2020-21 기록은 연결 2/2개 시즌의 이전 미승인 아카이브 참고, 또는 자료 미확보이며 독립 검증이 아님. 팀 순위 및 우승 가산 없음. 당시 역할: LB. 공식 Bundesliga.com 도움 12개(해당 집계 기준).",
+      "assessmentRationale": "2022-23 리그 27경기 26선발 2296분 4골. 해당 시즌 개인 기용량·LB 역할·전술적 영향력을 중점 고려한 A0 잠정 평가. 2021-22·2020-21 기록은 연결 2/2개 시즌의 이전 미승인 아카이브 참고, 또는 자료 미확보이며 독립 검증이 아님. 팀 순위 및 우승 가산 없음. 당시 역할: LB. 공식 Bundesliga.com 도움 12개(해당 집계 기준).",
       "verificationNeeded": [
         "independent_player_current_stat_secondary_crosscheck",
         "full_2020_21_2021_22_research_including_other_clubs_leagues",
@@ -13242,7 +13251,7 @@
       "leagueMinutes": 2647,
       "starts": 31,
       "goals2022": 15,
-      "assists2022": null,
+      "assists2022": 11,
       "tier": "A+",
       "rank": 1,
       "rankStatus": "provisional_2022_current_form_and_tier_recency_weighted",
@@ -13251,12 +13260,14 @@
       "evaluationStatus": "current_league_stat_source_previous_draft_references_or_missing_full_qualitative_audit_pending",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2022-231010.html",
-        "https://datencenter.dfb.de/competitions/bundesliga/seasons/2022-23/teams/eintracht-frankfurt"
+        "https://datencenter.dfb.de/competitions/bundesliga/seasons/2022-23/teams/eintracht-frankfurt",
+        "https://www.bundesliga.com/en/bundesliga/stats/overview/2022-2023"
       ],
       "evidence": {
         "currentSeason": "https://www.bdfutbol.com/en/t/t2022-231010.html",
         "identity": "https://datencenter.dfb.de/competitions/bundesliga/seasons/2022-23/teams/eintracht-frankfurt",
-        "scope": "2022-23 Bundesliga PM apps SM starts Min minutes G outfield goals; goalkeeper negative G = conceded only (scored null)"
+        "scope": "2022-23 Bundesliga PM apps SM starts Min minutes G outfield goals; goalkeeper negative G = conceded only (scored null)",
+        "assists": "https://www.bundesliga.com/en/bundesliga/stats/overview/2022-2023"
       },
       "threeSeasonReview": {
         "assessmentSeasons": [
@@ -13295,15 +13306,17 @@
             "starts": 31,
             "minutes": 2647,
             "goals": 15,
-            "assists": null,
+            "assists": 11,
             "source": "https://www.bdfutbol.com/en/t/t2022-231010.html",
-            "verification": "BDFutbol_2022_23_team_league_stats_read_and_transcribed_person_level_secondary_check_pending"
+            "verification": "BDFutbol_2022_23_team_league_stats_read_and_transcribed_person_level_secondary_check_pending",
+            "assistsSource": "https://www.bundesliga.com/en/bundesliga/stats/overview/2022-2023",
+            "assistsProvider": "Bundesliga.com"
           }
         },
         "status": "current_club_roster_stats_prior_ARCHIVE_DRAFT_or_missing_not_independent_full_three_year"
       },
-      "tierReview": "2022-23 리그 32경기 31선발 2647분 15골. 해당 시즌 개인 기용량·ST 역할·전술적 영향력을 중점 고려한 A+ 잠정 평가. 2021-22·2020-21 기록은 연결 0/2개 시즌의 이전 미승인 아카이브 참고, 또는 자료 미확보이며 독립 검증이 아님. 팀 순위 및 우승 가산 없음. 당시 역할: ST.",
-      "assessmentRationale": "2022-23 리그 32경기 31선발 2647분 15골. 해당 시즌 개인 기용량·ST 역할·전술적 영향력을 중점 고려한 A+ 잠정 평가. 2021-22·2020-21 기록은 연결 0/2개 시즌의 이전 미승인 아카이브 참고, 또는 자료 미확보이며 독립 검증이 아님. 팀 순위 및 우승 가산 없음. 당시 역할: ST.",
+      "tierReview": "2022-23 리그 32경기 31선발 2647분 15골. 해당 시즌 개인 기용량·ST 역할·전술적 영향력을 중점 고려한 A+ 잠정 평가. 2021-22·2020-21 기록은 연결 0/2개 시즌의 이전 미승인 아카이브 참고, 또는 자료 미확보이며 독립 검증이 아님. 팀 순위 및 우승 가산 없음. 당시 역할: ST. 공식 Bundesliga.com 도움 11개(해당 집계 기준).",
+      "assessmentRationale": "2022-23 리그 32경기 31선발 2647분 15골. 해당 시즌 개인 기용량·ST 역할·전술적 영향력을 중점 고려한 A+ 잠정 평가. 2021-22·2020-21 기록은 연결 0/2개 시즌의 이전 미승인 아카이브 참고, 또는 자료 미확보이며 독립 검증이 아님. 팀 순위 및 우승 가산 없음. 당시 역할: ST. 공식 Bundesliga.com 도움 11개(해당 집계 기준).",
       "verificationNeeded": [
         "independent_player_current_stat_secondary_crosscheck",
         "full_2020_21_2021_22_research_including_other_clubs_leagues",
@@ -13466,7 +13479,7 @@
       "displayPosition": "CAM",
       "playerId": "bundesliga-2022-bayern-jamalmusiala",
       "status": "proposed_unapproved",
-      "reason": "2022-23 개인 영향력 및 CAM 전술적 적합성; 현 시즌 26선발 2209분 12골. VDV 2022-23 동료 투표는 참고 증거이지 그 자체로 확정 평가가 아님. 이전 2시즌 독립적 정성 검증 미완료.",
+      "reason": "2022-23 개인 영향력 및 CAM 전술적 적합성; 현 시즌 26선발 2209분 12골. VDV 2022-23 동료 투표는 참고 증거이지 그 자체로 확정 평가가 아님. 이전 2시즌 독립적 정성 검증 미완료. Bundesliga.com 시즌 도움 10.",
       "alternates": []
     },
     {
@@ -13490,7 +13503,7 @@
       "displayPosition": "ST",
       "playerId": "bundesliga-2022-frankfurt-randalkolomuani",
       "status": "proposed_unapproved",
-      "reason": "2022-23 개인 영향력 및 ST 전술적 적합성; 현 시즌 31선발 2647분 15골. VDV 2022-23 동료 투표는 참고 증거이지 그 자체로 확정 평가가 아님. 이전 2시즌 독립적 정성 검증 미완료.",
+      "reason": "2022-23 개인 영향력 및 ST 전술적 적합성; 현 시즌 31선발 2647분 15골. VDV 2022-23 동료 투표는 참고 증거이지 그 자체로 확정 평가가 아님. 이전 2시즌 독립적 정성 검증 미완료. Bundesliga.com 시즌 도움 11.",
       "alternates": []
     }
   ],
@@ -13537,8 +13550,8 @@
       "widespread 4-2-3-1 representative is provisional not matchwise modal"
     ],
     "starterEquivalenceIssues": [
-      "multiple low-start candidates in bayern/CM: Ryan Gravenberch reclassified provisional",
-      "multiple low-start candidates in freiburg/CAM: Daniel-Kofi Kyereh reclassified provisional"
+      "Bayern CM: Sabitzer 7 starts and winter exit judged transitional starter-equivalent, Gravenberch 3 starts kept sole backup",
+      "Freiburg CAM Kyereh 7 starts winter injury starter-equivalent provisional; Jeong 4 starts kept sole backup"
     ]
   }
 }
