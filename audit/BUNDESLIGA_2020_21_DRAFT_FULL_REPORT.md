@@ -2131,3 +2131,13 @@
 - Pages: https://wjdduddlf112.github.io/footballarch/?league=bundesliga&season=2020-21&view=tiers
 
 **한 시즌 2020-21만 실행. 2021-22 다음 시즌은 자동 실행하지 않고, 기존 평가들 승인 처리하지 않음.**
+
+
+## 9. GitHub Actions 구조 검사 및 실제 배포 홈페이지 Chromium 결과 (2026-11-08)
+- **Node schema structure test**: `PASS` (GitHub Actions `structure` job). `node scripts/verify-bundesliga-2020-21-draft.mjs` invoked on actual checked-out repo.
+- **Live GitHub Pages Chromium Playwright**: `PASS` (GitHub Actions `browser` job). `node scripts/verify-bundesliga-2020-21-live.mjs` used deployed site. DRAFT label, seven participating clubs, all **144** rows in three All Tiers views (clubs/positions/tiers), first athlete detail years 2018-19/2019-20/2020-21 with `partially_verified`, Best XI **11**, League Top Class, Table and Statistics, no JS page errors, and prior 2019-20 **142** player regression all passed.
+- **GitHub Actions proof:** https://github.com/wjdduddlf112/footballarch/actions/runs/42389566442 — both jobs completed successfully.
+- **GitHub Pages proof:** https://github.com/wjdduddlf112/footballarch/actions/runs/42389566062 — publishing succeeded.
+- **Published site:** https://wjdduddlf112.github.io/footballarch/?league=bundesliga&season=2020-21&view=tiers
+- **Validation JSON:** [BUNDESLIGA_2020_21_VALIDATION_REPORT_2026_11_08.json](./BUNDESLIGA_2020_21_VALIDATION_REPORT_2026_11_08.json).
+- Limits: **144 individual modals have not each been opened**, historical period-correct team crests not audited, all individual DOB secondary checks incomplete, match-by-match primary positions incomplete, and **independent full 3-year qualitative player audit remains 0**. UI/CI success must not be treated as historical approval. Next season 2021-22 NOT started.
