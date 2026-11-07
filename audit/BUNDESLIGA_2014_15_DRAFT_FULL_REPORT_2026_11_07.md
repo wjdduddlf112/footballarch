@@ -417,13 +417,13 @@ No quotas or fixed tier distribution were applied.
 
 | Assessment season | Players with linked record/source URL | Full independently validated 3-season personal qualitative performance |
 |---|---:|---:|
-| 2012-13 | 58 | 0 |
+| 2012-13 | 59 | 0 |
 | 2013-14 | 88 | 0 |
 | 2014-15 | 141 | 0 |
 
 - 2014-15 current season source-linked: **141/141**.
 - 2013-14 **88** have an old Football Archive draft link/value; their `verification` says `prior_FootballArchive_DRAFT_not_independently_verified`.
-- 2012-13 **58** have old Football Archive draft links/values; not newly independently verified.
+- 2012-13 **59** have a source link, including the independently rechecked DFB and Opta records for Kevin De Bruyne; remaining records with earlier Football Archive draft links are not independently verified.
 - Remaining historical reference values `null` and record-level `evidence_pending`.
 - All 141 personal verification statuses **partially_verified**; full three-year individual qualitative independently certified = **0**.
 - Each candidate's current-year `goals2014` and `assists2014` are distinct. The sole quantified assist value from a direct independent contemporaneous source is Kevin De Bruyne's **20 Bundesliga assists**, plus 10 goals from BDFutbol and VDV. Other candidate assists remain `null` unless separately sourced.
@@ -590,6 +590,33 @@ The following are traceable CURRENT-SEASON playing-time/goal evidence and explic
 - **ST #13: 니콜라 주르지치 / Nikola Đurđić** · FC Augsburg · B- — 2014-15: 16 Bundesliga appearances, 7 starts, 631 minutes, 1 goals. Provisional B- among ST based on current role, contemporaneous impact and preceding two years where sources exist; not independently three-season fully verified. Prior years: 2012-13: evidence pending; 2013-14: evidence pending. [League record](https://www.bdfutbol.com/en/t/t2014-151029.html), [DFB squad](https://datencenter.dfb.de/bundesliga/2014-2015/mannschaft/fc-augsburg).
 - **ST #14: 니클라스 벤트네르 / Nicklas Bendtner** · VfL Wolfsburg · B- — 2014-15: 18 Bundesliga appearances, 5 starts, 564 minutes, 1 goals. Provisional B- among ST based on current role, contemporaneous impact and preceding two years where sources exist; not independently three-season fully verified. Prior years: 2012-13: evidence pending; 2013-14: evidence pending. [League record](https://www.bdfutbol.com/en/t/t2014-151001.html), [DFB squad](https://datencenter.dfb.de/bundesliga/2014-2015/mannschaft/vfl-wolfsburg).
 - **ST #15: 클라우디오 피사로 / Claudio Pizarro** · FC Bayern München · C+ — 2014-15: 13 Bundesliga appearances, 2 starts, 320 minutes, 0 goals. Provisional C+ among ST based on current role, contemporaneous impact and preceding two years where sources exist; not independently three-season fully verified. Prior years: 2012-13: 20 league appearances, previous DRAFT not independently verified; 2013-14: 17 league appearances, previous DRAFT not independently verified. [League record](https://www.bdfutbol.com/en/t/t2014-151016.html), [DFB squad](https://datencenter.dfb.de/bundesliga/2014-2015/mannschaft/bayern-muenchen).
+
+### 8A. Independently documented three-season correction — Kevin De Bruyne and Arjen Robben
+
+Historical corrections were applied directly to `data/bundesliga-2014-15.json`, not just noted in this report. This additional work changes the 2012-13 linked-source coverage to **59/141** (previously 58/141) and does not imply a full three-season qualitative audit.
+
+**Kevin De Bruyne — Bundesliga individual years plus Chelsea 2013-14 stint**
+
+| Season | Club and league | Appearances | Goals | Assists | Minutes | Source/verification |
+|---|---|---:|---:|---:|---:|---|
+| 2012-13 | SV Werder Bremen, Bundesliga | 33 | 10 | 9 | 2,966 | DFB official apps/goals + Opta minutes/assists |
+| 2013-14 | VfL Wolfsburg, Bundesliga | 16 | 3 | 6 | 1,419 | DFB official apps/goals + Opta minutes/assists |
+| 2013-14 | Chelsea FC, Premier League | 3 | 0 | 1 | 132 | Opta, separately recorded other-league stint |
+| 2014-15 | VfL Wolfsburg, Bundesliga | 34 | 10 | 20 | 3,052 | BDFutbol current-year apps and goals, Opta assists |
+
+Direct source links: [DFB player-level Bundesliga history](https://datencenter.dfb.de/en/data-center/people/kevin-de-bruyne/player) and [Opta Analyst all clubs and leagues](https://theanalyst.com/players/4141/kevin-de-bruyne/career). The 2012-13 Werder Bremen loan was previously entirely missing from the player history because Werder was not a qualifying candidate in 2014-15. The underlying original 2014-15 club eligibility is **unaffected**; an earlier nonqualified club is valid within the 3-season *evaluation context*.
+
+**Arjen Robben — independent historical appearances/goals cross-check**
+
+| Season | Bayern Munich Bundesliga matches | Bundesliga goals |
+|---|---:|---:|
+| 2012-13 | 16 | 5 |
+| 2013-14 | 28 | 11 |
+| 2014-15 | 21 | 17 |
+
+Source: [RSSSF Arjen Robben season-by-season performance](https://www.rsssf.org/players/robbendata.html).
+
+For Robben's two prior years, older unconfirmed starts/minutes/assists were left as `null`, not falsely certified. For both players, `verificationStatus` remains `partially_verified`; complete independent qualitative creative/defensive/position evidence for each of the three seasons remains **pending**.
 
 ## 9. STRUCTURAL/HISTORICAL/BROWSER AUDIT — DIFFERENT GATES
 
