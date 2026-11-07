@@ -182,6 +182,7 @@
 - Prior two season entries copied only when a matching individual is found in prior **DRAFT** season JSONs; otherwise saved as `null` pending verification. The existence of a linked prior DRAFT is not treated as historical audit.
 - DOB matched to DFB historical squad pages (individual secondary validation pending).
 - A0 / B0 / C0 are persisted as A / B / C for frontend compatibility.
+- Historical prior-year match correction (2026-11-08): require DOB match and Unicode-safe identity. Matched prior records: 121 of 272; unavailable: 151; 37 candidates have both previous-year archived records.
 - 3-4-2-1 players registered as LB/RB wingbacks in supported website positions with original tactical roles saved. Mainz does not use forced LW/RW.
 - Tier/ranks and Best XI require user final approval. The website must be inspected in a real browser after deployment; JSON checks do not mean this gate passed.
 
@@ -197,7 +198,7 @@
 - 2025-26 UEFA actual clubs: https://www.bundesliga.com/en/bundesliga/news/race-for-europe-2025-dortmund-leipzig-frankfurt-stuttgart-gladbach-bremen-30254
 
 ## Pending
-- Full independent 3-season individual qualitative verification and person-level metric review
+- Full independent 3-season individual qualitative verification and person-level metric review; previously generated false year-to-person matches corrected before audit completion
 - Position time-allocation check for tactical hybrids and flexible roles
 - Independent birth-date second-source verification
 - GitHub Pages live browser UI confirmation
