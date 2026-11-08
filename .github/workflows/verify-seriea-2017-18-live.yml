@@ -1,0 +1,31 @@
+name: Serie A 2017-18 LIVE Chrome and regression
+on:
+  push:
+    paths:
+      - 'scripts/verify-seriea-2017-18-live.mjs'
+      - '.github/workflows/verify-seriea-2017-18-live.yml'
+  workflow_dispatch:
+jobs:
+  live:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install Playwright core for runner preinstalled Chrome
+        run: npm install --no-save playwright-core@1.56.1
+      - name: Run real hosted GitHub Pages in Google Chrome
+        run: node scripts/verify-seriea-2017-18-live.mjs
+      - name: Preserve screenshot and JSON test evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: seriea-2017-18-live-evidence
+          path: audit-artifacts/seriea-2017-18-live/
+          if-no-files-found: warn
