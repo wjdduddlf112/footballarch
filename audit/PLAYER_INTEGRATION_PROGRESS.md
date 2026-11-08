@@ -1,3 +1,24 @@
+## 2026-11-08 — Serie A 2004-05 ONLY: 8 clubs, 151 provisional players, best XI and structural checks (DRAFT)
+
+- **Season**: 2004-05; assessment 2002-03 (least) / 2003-04 / 2004-05 (highest); 2005-06 actual European competition participation.
+- **Eligible clubs**: Juventus, Milan, Inter, Udinese (UCL); Sampdoria and Palermo (UEFA Cup); Roma (Coppa Italia losing finalist, UEFA Cup); Lazio (actual Intertoto entry after Messina/Livorno declined).
+- **Historical exceptions**: 2004-05 Juventus Scudetto stripped in July 2006; preserved original unawarded season standings. Lazio 44-point tie stored as rank 10 in RSSSF archive while head-to-head-separated tables show 13, do not overwrite league standings without reconciliation.
+- **Player DRAFT**: 151 unique nominated players across all 8 clubs; 11 nominated starter functional positions each, one backup at most for each registered club position; 3-CB Udinese example and alternate 3-4-3 needs fuller tactical audit. IDs, Korean/original names, birth dates, club, role, position, provisional S-D tier and continuous provisional league rank recorded.
+- **Tier distribution**: S 10, A+ 12, A0 17, A- 20, B+ 38, B0 31, B- 19, C+ 4. World Class 22; League Top Class 59. These are **working proposals**, not completed evidence-based historical quality findings or user-approved ratings.
+- **Numeric source coverage**: independently linked 2004-05 league appearances for **27/151**; current season league appearances missing for 124; prior **both 2002-03 & 2003-04 numbers** now attached for **69/151**, but mostly inherited with explicit previous-DRAFT not-independently-checked flags. Fully independently confirmed three-season personal qualitative form **0/151**.
+- **New independently checked key player records**: Shevchenko 2002-03/2003-04/2004-05 24/5g, 32/24g, 29/17g; Montella 29/9g, 11/5g, 37/21g; Luca Toni 2002-03 Brescia Serie A 16/2g, 2003-04 Palermo **Serie B** 45/30g, 2004-05 Palermo Serie A 35/20g; Ibrahimovic Ajax 25/13g, Ajax 22/13g, Juventus 35/16g; Adriano 2003-04 Parma 9/8g + Inter 16/9g (25/17 combined), 2004-05 Inter 30/16g. Sources RSSSF/FBref/Ajax official-linked and Inter own archive. These are numeric checks, not a complete position-specific three-season assessment.
+- **Best XI**: proposed 4-3-1-2: Buffon; Cannavaro, Nesta, Zambrotta, Cafu; Pirlo, Seedorf, Gattuso, Kaká; Shevchenko, Adriano. Same-position quality comparison and season-modal formations still provisional.
+- **Structural verification**: independently executed in-session JavaScript checks on the actual GitHub JSON: **0 errors** for parse, eligible club count, duplicate IDs, names/DOB, allowed positions/tiers, 11 starting slots/team, max one backup/position, continuous within-position ranks and unique position-valid XI.
+- **Validator**: created `scripts/verify-seriea-2004-05.mjs`; file creation verified. Direct `node scripts/verify-seriea-2004-05.mjs` execution in repository checkout **not performed**; equivalent source-independent in-session structure checks performed.
+- **Site support**: existing `assets/app.js` already gates Serie A All Tiers on nonempty player arrays; not modified. Actual GitHub Pages interactive browser test **NOT CONFIRMED**; `web` retrieval of live GitHub Pages JSON/page was unsuccessful.
+- **User approval**: remains **unapproved**. Next season 2005-06 **NOT started**.
+- **Data commits**: `acaaa354f4da514354fe3b2defc34851e647964b` (initial), `d401f548f1d18b4733be4a0fa10909ed454b3772` (independent key numeric research).
+- **Audit commits**: `f994f72f467097a29215324ada9b0aebcd890de9` (report), `0c5da2bb8b43945d3d60303325f6281384b01c86` (reconciled individual numeric), `e990afdd23b78be84493ad9256dc1fd1cae61d23` (standalone validator).
+- **Unfinished**: all 124 current-year individual league appearance/starts/minutes checks, missing past seasons incl. other domestic leagues, season dominant position and actual 38-match starting role check, complete 3-year personally weighted quality evaluations, Best XI source comparisons, independent site browser and deployment confirmation. No unsupported missing values set to zero.
+- **Files**: `data/seriea-2004-05.json`, `audit/SERIEA_2004-05_DRAFT_FULL_REPORT.md`, `scripts/verify-seriea-2004-05.mjs`.
+
+---
+
 ## 2026-11-08 — Serie A 2003-04 ONLY: seven European clubs and 118-player provisional DRAFT (AUTO_NEXT_SEASON=false)
 - Evaluation years 2001-02 (lower), 2002-03, 2003-04 (highest): evaluate individual personal form, not trophies or club league placing. Next season Serie A 2004-05 NOT started; user approval remains unapproved.
 - Qualifying actual 2004-05 UEFA entrants: AC Milan (1 UCL), Roma (2 UCL), Juventus (3 UCL), Inter (4 UCL), Parma (5 UEFA Cup), Lazio (6 UEFA Cup), Udinese (7 UEFA Cup). 2004 Intertoto no Italian team entered; RSSSF says German VfL Wolfsburg used the Italian slot.
