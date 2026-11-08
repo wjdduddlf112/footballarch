@@ -1,0 +1,31 @@
+name: Serie A 2016-17 LIVE Pages smoke verification
+on:
+  push:
+    paths:
+      - 'scripts/verify-seriea-2016-17-live.mjs'
+      - '.github/workflows/verify-seriea-2016-17-live.yml'
+  workflow_dispatch:
+jobs:
+  live:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+      - name: Install Node 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install Playwright core only
+        run: npm install --no-save playwright-core@1.56.1
+      - name: Test real deployed Pages in preinstalled Google Chrome
+        run: node scripts/verify-seriea-2016-17-live.mjs
+      - name: Preserve browser evidence and screenshot
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: seriea-2016-17-live-evidence
+          path: audit-artifacts/seriea-2016-17-live/
+          if-no-files-found: warn
