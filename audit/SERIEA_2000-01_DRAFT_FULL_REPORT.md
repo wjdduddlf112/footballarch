@@ -90,6 +90,10 @@ Cross-check: https://www.rsssf.org/tablesi/ital01.html ; https://www.rsssf.org/t
 5. Seven originally null DOBs populated from club/national federation/career archives: Stefano Torrisi, Vladimir Jugović, Álvaro Recoba, Christian Abbiati, Federico Giunti, Oliver Bierhoff, Luca Castellazzi.
 6. **No silent conflict resolution:** Cannavaro 2000-01 Serie A apps FBref 29 vs RSSSF and Parma archive 33; Montella 2000-01 goals FBref and RSSSF league scorer list 14 vs RSSSF personal biography 13; Marcelo Salas 2000-01 appearances FBref 22 vs LazioStories 21. Fields preserve provisional selected numbers, conflict sources, and flags in JSON.
 
+### Assunção candidate-cap decision (not silently omitted)
+
+Marcos Assunção is independently documented with **12 Serie A games / 6 starts / 580 minutes / 2 goals / 3 assists in 2000-01** (https://fbref.com/en/players/2c563885/Marcos-Assuncao); he is **not** one of the maximum three Roma CM candidate slots currently occupied by Tommasi, Cristiano Zanetti, Emerson. Current-season starts are lower than Emerson (13 matches / 10 starts). His 1999-00 21 apps / 20 starts are noted; revisiting his relative personal quality and possible DM role is still warranted. This exclusion is a provisional shortlist-cap choice, not a claim he was absent from the club or league.
+
 ## 4. Full candidate registry — all clubs
 
 **Important:** `Starter` / `Backup` indicates candidate slot, not irrefutable full-season depth chart. Primary positions are the one registered site position; LM/RM/RWB/LWB preserve original tactical role separately. `—` means unconfirmed numeric value, not zero.
