@@ -148,7 +148,8 @@
         "seriea-1999-00-perugia-massimiliano-esposito",
         "seriea-1999-00-perugia-roberto-ripa"
       ]
-    }
+    },
+    "historicalExceptionInterPlayoff": "2000 Inter-Parma play-off excluded from 34 league fixtures: Baggio 18/4 regular + playoff 1/2 = Inter official 19/6; Recoba 27/10 regular + playoff 1/0 = Inter official 28/10. Sources RSSSF player stats, Inter player official archives, FBref."
   },
   "clubs": [
     {
@@ -8026,7 +8027,7 @@
       "originalTacticalRole": "ST",
       "role": "backup",
       "starts": 17,
-      "leagueAppearances": 28,
+      "leagueAppearances": 27,
       "leagueStarts": 17,
       "leagueMinutes": 1594,
       "leagueGoals": 10,
@@ -8035,7 +8036,7 @@
       "tier": "A",
       "rank": 8,
       "review": "draft_unapproved",
-      "verificationStatus": "conflicting_sources",
+      "verificationStatus": "partially_verified",
       "positionVerification": "provisional_matchwise_check_pending",
       "evaluationStatus": "three_season_league_record_attached_pending_full_qualitative_independent_review",
       "sources": [
@@ -8081,28 +8082,36 @@
           "1999-00": {
             "club": "FC Internazionale Milano",
             "league": "Serie A",
-            "appearances": 28,
+            "appearances": 27,
             "starts": 17,
             "minutes": 1594,
             "goals": 10,
             "assists": 6,
             "source": "https://www.inter.it/en/archivio_giocatore/G0535",
-            "verification": "conflicting_sources_apps_goals"
+            "verification": "regular_league_scope_reconciled_Inter_playoff_excluded"
           }
         }
       },
-      "sourceConflict": {
-        "field": "1999-00 league appearances",
-        "officialClub": 28,
-        "FBref": 27,
-        "chosen": 28,
-        "explanation": "Official Inter club player archive reports 28 league games; FBref 27/17/1594. Starting and minute counts are from FBref pending match-level reconciliation.",
+      "rankStatus": "provisional_rank_within_evaluated_subset_only_ungraded_players_unranked",
+      "historicalScopeReconciliation": {
+        "regularSeason": {
+          "appearances": 27,
+          "goals": 10
+        },
+        "championsLeaguePlacePlayoff": {
+          "appearances": 1,
+          "goals": 0
+        },
+        "officialInterLeagueIncludesPlayoff": {
+          "appearances": 28,
+          "goals": 10
+        },
+        "explanation": "Official club archival 'Domestic league' includes 1999-00 Inter-Parma Champions League berth playoff; FBref and RSSSF regular 34-game Serie A exclude it. Separate playoff stats to avoid double count.",
         "sources": [
           "https://www.inter.it/en/archivio_giocatore/G0535",
           "https://fbref.com/en/players/25b11ac7/Alvaro-Recoba"
         ]
-      },
-      "rankStatus": "provisional_rank_within_evaluated_subset_only_ungraded_players_unranked"
+      }
     },
     {
       "id": "seriea-1999-00-inter-roberto-baggio",
@@ -8123,23 +8132,24 @@
       "leagueStarts": 7,
       "leagueMinutes": 767,
       "leagueGoals": 4,
-      "leagueAssists": 3,
+      "leagueAssists": 4,
       "statsScope": "1999-00 Serie A league; goalkeepers goals against excluded",
       "tier": "B+",
       "rank": 7,
       "review": "draft_unapproved",
-      "verificationStatus": "conflicting_sources",
+      "verificationStatus": "partially_verified",
       "positionVerification": "provisional_matchwise_check_pending",
       "evaluationStatus": "three_season_league_record_attached_pending_full_qualitative_independent_review",
       "sources": [
-        "https://fbref.com/en/players/2bd30258/Roberto-Baggio"
+        "https://fbref.com/en/players/2bd30258/Roberto-Baggio",
+        "https://www.inter.it/en/archivio_giocatore/G0028"
       ],
       "evidence": {
         "currentSeason": "https://fbref.com/en/players/2bd30258/Roberto-Baggio",
         "identity": "independent DOB references checked; see audit report",
         "priorSeasons": "pending"
       },
-      "tierReason": "1999-00 intermittent 18 appearances/7 starts per FBref (official Inter season discrepancy), 4 goals/3 assists; prior 1997-98 Bologna 22 goals and 1998-99 Inter 5 goals. Not graded based on career reputation.",
+      "tierReason": "1997-98 Bologna 30 league games/22 goals, 1998-99 Inter 23/5 and 1999-00 18 regular-season appearances/7 starts/4 goals/4 assists (plus 2 goals in UCL-place playoff). Reduced current usage limits grade; assessment provisional.",
       "threeSeasonReview": {
         "assessmentSeasons": [
           "1997-98",
@@ -8177,22 +8187,32 @@
             "starts": 7,
             "minutes": 767,
             "goals": 4,
-            "assists": 3,
+            "assists": 4,
             "source": "https://fbref.com/en/players/2bd30258/Roberto-Baggio",
-            "verification": "conflicting_sources_apps_goals"
+            "verification": "regular_league_scope_reconciled_Inter_playoff_excluded"
           }
         }
       },
-      "sourceConflict": {
-        "field": "1999-00 league appearances/goals",
-        "FBref": "18 apps, 4 goals",
-        "officialInter": "different seasonal entry, independently reconcile before verified",
+      "rankStatus": "provisional_rank_within_evaluated_subset_only_ungraded_players_unranked",
+      "historicalScopeReconciliation": {
+        "regularSeason": {
+          "appearances": 18,
+          "goals": 4
+        },
+        "championsLeaguePlacePlayoff": {
+          "appearances": 1,
+          "goals": 2
+        },
+        "officialInterLeagueIncludesPlayoff": {
+          "appearances": 19,
+          "goals": 6
+        },
+        "explanation": "Official club archival 'Domestic league' includes 1999-00 Inter-Parma Champions League berth playoff; FBref and RSSSF regular 34-game Serie A exclude it. Separate playoff stats to avoid double count.",
         "sources": [
-          "https://fbref.com/en/players/2bd30258/Roberto-Baggio",
-          "https://www.inter.it/en/archivio_giocatore/G0043"
+          "https://www.inter.it/en/archivio_giocatore/G0028",
+          "https://www.rsssf.org/players/baggiodata.html"
         ]
-      },
-      "rankStatus": "provisional_rank_within_evaluated_subset_only_ungraded_players_unranked"
+      }
     },
     {
       "id": "seriea-1999-00-milan-leonardo-nascimento-de-araujo",
