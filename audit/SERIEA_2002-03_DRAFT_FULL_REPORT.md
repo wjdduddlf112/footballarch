@@ -15,7 +15,7 @@
 | FC Internazionale Milano | 2 | UCL | 2nd Serie A, actual 2003-04 UCL |
 | AC Milan | 3 | UCL | 3rd Serie A and 2002-03 UCL winner, actual 2003-04 UCL |
 | SS Lazio | 4 | UCL | 4th Serie A; played 2003-04 UCL third qualifying |
-| Parma FC | 5 | UEFA Cup | 5th Serie A, 2003-04 UEFA Cup |
+| Parma Associazione Calcio | 5 | UEFA Cup | 5th Serie A, 2003-04 UEFA Cup |
 | Udinese Calcio | 6 | UEFA Cup | 6th Serie A, 2003-04 UEFA Cup |
 | AS Roma | 8 | UEFA Cup | 8th Serie A, Italian Cup losing finalist because Coppa winner AC Milan already qualified UCL; actual 2003-04 UEFA Cup |
 | Brescia Calcio | 9 | Intertoto Cup | 9th Serie A, actually played 2003 UEFA Intertoto vs Villarreal |
@@ -61,7 +61,7 @@
 | FC Internazionale Milano | 18 | 11 | 7 | 6 |
 | AC Milan | 17 | 11 | 6 | 5 |
 | SS Lazio | 18 | 11 | 7 | 11 |
-| Parma FC | 14 | 11 | 3 | 8 |
+| Parma Associazione Calcio | 14 | 11 | 3 | 8 |
 | Udinese Calcio | 15 | 11 | 4 | 12 |
 | AS Roma | 15 | 11 | 4 | 5 |
 | Brescia Calcio | 16 | 11 | 5 | 16 |
@@ -170,24 +170,24 @@ Column originalName/clubNameOriginal are period original forms. A0/B0/C0 are JSO
 | ST | 베르나르도 코라디 | Bernardo Corradi | SS Lazio | 1976-03-30 | 주전 | 32/29/2638 | 10/1 | B+ | 11 |
 | ST | 시모네 인차기 | Simone Inzaghi | SS Lazio | 1976-04-05 | 후보 | 18/5/530 | 4/1 | B- | 25 |
 
-### Parma FC — 14 players, 4-3-1-2 provisional
+### Parma Associazione Calcio — 14 players, 4-3-1-2 provisional
 
 | Position | 한국어 이름 | Original name | Original club | Born | Status | Serie A apps/starts/min | Goals/assists | Tier | Position rank |
 |---|---|---|---|---|---|---|---|---|---:|
-| GK | 세바스티앵 프레이 | Sébastien Frey | Parma FC | 1980-03-18 | 주전 | 34/34/3060 | 0/0 | A0 | 3 |
-| CB | 다니엘레 보네라 | Daniele Bonera | Parma FC | 1981-05-31 | 주전 | 32/32/2780 | 1/0 | B+ | 12 |
-| CB | 마테오 페라리 | Matteo Ferrari | Parma FC | 1979-12-05 | 주전 | 32/32/2811 | 2/1 | B+ | 14 |
-| CB | 주세페 카르도네 | Giuseppe Cardone | Parma FC | 1974-03-03 | 후보 | 13/13/1061 | 1/0 | B0 | 27 |
-| LB | 주니오르 | Júnior | Parma FC | 1973-06-20 | 주전 | 27/27/2309 | 0/1 | B+ | 8 |
-| RB | 안토니오 베나리보 | Antonio Benarrivo | Parma FC | 1968-08-21 | 주전 | 19/16/1445 | 0/0 | B0 | 10 |
-| DM | 시모네 바로네 | Simone Barone | Parma FC | 1978-04-30 | 주전 | 29/26/2256 | 1/2 | B+ | 7 |
-| CM | 에마누엘레 필리피니 | Emanuele Filippini | Parma FC | 1973-07-03 | 주전 | 30/29/2465 | 2/3 | B+ | 6 |
-| CM | 사브리 라무시 | Sabri Lamouchi | Parma FC | 1971-11-09 | 주전 | 30/28/2454 | 2/3 | B+ | 7 |
-| CM | 마테오 브리기 | Matteo Brighi | Parma FC | 1981-02-14 | 후보 | 22/13/1240 | 1/1 | B0 | 20 |
-| CAM | 나카타 히데토시 | Hidetoshi Nakata | Parma FC | 1977-01-22 | 주전 | 31/29/2386 | 4/6 | A- | 4 |
-| ST | 아드리안 무투 | Adrian Mutu | Parma FC | 1979-01-08 | 주전 | 31/31/2628 | 17/12 | S | 1 |
-| ST | 아드리아누 | Adriano | Parma FC | 1982-02-17 | 주전 | 28/26/2215 | 16/3 | A+ | 4 |
-| ST | 알베르토 질라르디노 | Alberto Gilardino | Parma FC | 1982-07-05 | 후보 | 24/4/617 | 4/0 | C+ | 26 |
+| GK | 세바스티앵 프레이 | Sébastien Frey | Parma Associazione Calcio | 1980-03-18 | 주전 | 34/34/3060 | 0/0 | A0 | 3 |
+| CB | 다니엘레 보네라 | Daniele Bonera | Parma Associazione Calcio | 1981-05-31 | 주전 | 32/32/2780 | 1/0 | B+ | 12 |
+| CB | 마테오 페라리 | Matteo Ferrari | Parma Associazione Calcio | 1979-12-05 | 주전 | 32/32/2811 | 2/1 | B+ | 14 |
+| CB | 주세페 카르도네 | Giuseppe Cardone | Parma Associazione Calcio | 1974-03-03 | 후보 | 13/13/1061 | 1/0 | B0 | 27 |
+| LB | 주니오르 | Júnior | Parma Associazione Calcio | 1973-06-20 | 주전 | 27/27/2309 | 0/1 | B+ | 8 |
+| RB | 안토니오 베나리보 | Antonio Benarrivo | Parma Associazione Calcio | 1968-08-21 | 주전 | 19/16/1445 | 0/0 | B0 | 10 |
+| DM | 시모네 바로네 | Simone Barone | Parma Associazione Calcio | 1978-04-30 | 주전 | 29/26/2256 | 1/2 | B+ | 7 |
+| CM | 에마누엘레 필리피니 | Emanuele Filippini | Parma Associazione Calcio | 1973-07-03 | 주전 | 30/29/2465 | 2/3 | B+ | 6 |
+| CM | 사브리 라무시 | Sabri Lamouchi | Parma Associazione Calcio | 1971-11-09 | 주전 | 30/28/2454 | 2/3 | B+ | 7 |
+| CM | 마테오 브리기 | Matteo Brighi | Parma Associazione Calcio | 1981-02-14 | 후보 | 22/13/1240 | 1/1 | B0 | 20 |
+| CAM | 나카타 히데토시 | Hidetoshi Nakata | Parma Associazione Calcio | 1977-01-22 | 주전 | 31/29/2386 | 4/6 | A- | 4 |
+| ST | 아드리안 무투 | Adrian Mutu | Parma Associazione Calcio | 1979-01-08 | 주전 | 31/31/2628 | 17/12 | S | 1 |
+| ST | 아드리아누 | Adriano | Parma Associazione Calcio | 1982-02-17 | 주전 | 28/26/2215 | 16/3 | A+ | 4 |
+| ST | 알베르토 질라르디노 | Alberto Gilardino | Parma Associazione Calcio | 1982-07-05 | 후보 | 24/4/617 | 4/0 | C+ | 26 |
 
 ### Udinese Calcio — 15 players, 3-5-2 provisional
 
@@ -280,7 +280,7 @@ The exact ordinal among same-tier nominees is a tiebreak using current Serie A s
 |---:|---|---|---|---|---|
 | 1 | 잔루이지 부폰 | Gianluigi Buffon | Juventus FC | S | 32/32 |
 | 2 | 지다 | Dida | AC Milan | A+ | 30/30 |
-| 3 | 세바스티앵 프레이 | Sébastien Frey | Parma FC | A0 | 34/34 |
+| 3 | 세바스티앵 프레이 | Sébastien Frey | Parma Associazione Calcio | A0 | 34/34 |
 | 4 | 프란체스코 톨도 | Francesco Toldo | FC Internazionale Milano | A0 | 32/32 |
 | 5 | 안젤로 페루치 | Angelo Peruzzi | SS Lazio | A0 | 30/30 |
 | 6 | 모르간 데 산크티스 | Morgan De Sanctis | Udinese Calcio | A- | 34/34 |
@@ -310,9 +310,9 @@ The exact ordinal among same-tier nominees is a tiebreak using current Serie A s
 | 9 | 시니샤 미하일로비치 | Siniša Mihajlović | SS Lazio | A- | 21/21 |
 | 10 | 파올로 몬테로 | Paolo Montero | Juventus FC | A- | 21/19 |
 | 11 | 질베르토 마르티네스 | Gilberto Martínez | Brescia Calcio | B+ | 34/34 |
-| 12 | 다니엘레 보네라 | Daniele Bonera | Parma FC | B+ | 32/32 |
+| 12 | 다니엘레 보네라 | Daniele Bonera | Parma Associazione Calcio | B+ | 32/32 |
 | 13 | 마르코 디 로레토 | Marco Di Loreto | AC Perugia | B+ | 32/32 |
-| 14 | 마테오 페라리 | Matteo Ferrari | Parma FC | B+ | 32/32 |
+| 14 | 마테오 페라리 | Matteo Ferrari | Parma Associazione Calcio | B+ | 32/32 |
 | 15 | 파비오 페트루치 | Fabio Petruzzi | Brescia Calcio | B+ | 31/31 |
 | 16 | 마우로 밀라네세 | Mauro Milanese | AC Perugia | B+ | 31/31 |
 | 17 | 크리스티안 파누치 | Christian Panucci | AS Roma | B+ | 29/29 |
@@ -325,7 +325,7 @@ The exact ordinal among same-tier nominees is a tiebreak using current Serie A s
 | 24 | 마르코 마테라치 | Marco Materazzi | FC Internazionale Milano | B+ | 20/18 |
 | 25 | 션 솔리아노 | Sean Sogliano | AC Perugia | B0 | 20/19 |
 | 26 | 페르난두 쿠투 | Fernando Couto | SS Lazio | B0 | 15/15 |
-| 27 | 주세페 카르도네 | Giuseppe Cardone | Parma FC | B0 | 13/13 |
+| 27 | 주세페 카르도네 | Giuseppe Cardone | Parma Associazione Calcio | B0 | 13/13 |
 | 28 | 알레산드로 코스타쿠르타 | Alessandro Costacurta | AC Milan | B0 | 17/12 |
 | 29 | 라흐만 레자에이 | Rahman Rezaei | AC Perugia | B0 | 13/12 |
 | 30 | 알다이르 | Aldair | AS Roma | B- | 17/15 |
@@ -342,7 +342,7 @@ The exact ordinal among same-tier nominees is a tiebreak using current Serie A s
 | 5 | 뱅상 캉델라 | Vincent Candela | AS Roma | A- | 23/23 |
 | 6 | 마레크 얀쿨로프스키 | Marek Jankulovski | Udinese Calcio | A- | 26/22 |
 | 7 | 안토니 셰리치 | Anthony Šerić | Brescia Calcio | B+ | 30/28 |
-| 8 | 주니오르 | Júnior | Parma FC | B+ | 27/27 |
+| 8 | 주니오르 | Júnior | Parma Associazione Calcio | B+ | 27/27 |
 | 9 | 프란체스코 코코 | Francesco Coco | FC Internazionale Milano | B+ | 19/16 |
 | 10 | 미르코 피에리 | Mirko Pieri | Udinese Calcio | B0 | 22/20 |
 | 11 | 조반니 파스콸레 | Giovanni Pasquale | FC Internazionale Milano | B0 | 18/13 |
@@ -362,7 +362,7 @@ The exact ordinal among same-tier nominees is a tiebreak using current Serie A s
 | 7 | 안토니오 필리피니 | Antonio Filippini | Brescia Calcio | B+ | 28/21 |
 | 8 | 알베르투 발렌칭 | Alberto Valentim | Udinese Calcio | B0 | 20/20 |
 | 9 | 파올로 네그로 | Paolo Negro | SS Lazio | B0 | 19/18 |
-| 10 | 안토니오 베나리보 | Antonio Benarrivo | Parma FC | B0 | 19/16 |
+| 10 | 안토니오 베나리보 | Antonio Benarrivo | Parma Associazione Calcio | B0 | 19/16 |
 | 11 | 알레산드로 비린델리 | Alessandro Birindelli | Juventus FC | B0 | 17/14 |
 
 ### DM — 10 people
@@ -375,7 +375,7 @@ The exact ordinal among same-tier nominees is a tiebreak using current Serie A s
 | 4 | 알레시오 타키나르디 | Alessio Tacchinardi | Juventus FC | A- | 27/22 |
 | 5 | 마투잘렝 | Matuzalém | Brescia Calcio | B+ | 29/29 |
 | 6 | 마누엘레 블라시 | Manuele Blasi | AC Perugia | B+ | 27/27 |
-| 7 | 시모네 바로네 | Simone Barone | Parma FC | B+ | 29/26 |
+| 7 | 시모네 바로네 | Simone Barone | Parma Associazione Calcio | B+ | 29/26 |
 | 8 | 루이지 디 비아조 | Luigi Di Biagio | FC Internazionale Milano | B+ | 25/21 |
 | 9 | 줄리아노 잔니케다 | Giuliano Giannichedda | SS Lazio | B+ | 25/18 |
 | 10 | 파비오 리베라니 | Fabio Liverani | SS Lazio | B+ | 21/9 |
@@ -389,8 +389,8 @@ The exact ordinal among same-tier nominees is a tiebreak using current Serie A s
 | 3 | 클라렌스 세이도르프 | Clarence Seedorf | AC Milan | A0 | 28/23 |
 | 4 | 스티븐 아피아 | Stephen Appiah | Brescia Calcio | A- | 31/31 |
 | 5 | 잠피에로 핀치 | Giampiero Pinzi | Udinese Calcio | A- | 28/28 |
-| 6 | 에마누엘레 필리피니 | Emanuele Filippini | Parma FC | B+ | 30/29 |
-| 7 | 사브리 라무시 | Sabri Lamouchi | Parma FC | B+ | 30/28 |
+| 6 | 에마누엘레 필리피니 | Emanuele Filippini | Parma Associazione Calcio | B+ | 30/29 |
+| 7 | 사브리 라무시 | Sabri Lamouchi | Parma Associazione Calcio | B+ | 30/28 |
 | 8 | 프란시스쿠 리마 | Francisco Lima | AS Roma | B+ | 28/27 |
 | 9 | 조반니 테데스코 | Giovanni Tedesco | AC Perugia | B+ | 27/26 |
 | 10 | 마르틴 예르겐센 | Martin Jørgensen | Udinese Calcio | B+ | 27/24 |
@@ -403,7 +403,7 @@ The exact ordinal among same-tier nominees is a tiebreak using current Serie A s
 | 17 | 젠나로 가투소 | Gennaro Gattuso | AC Milan | B0 | 25/23 |
 | 18 | 펩 과르디올라 | Pep Guardiola | Brescia Calcio | B0 | 16/15 |
 | 19 | 마티아스 알메이다 | Matías Almeyda | FC Internazionale Milano | B0 | 16/13 |
-| 20 | 마테오 브리기 | Matteo Brighi | Parma FC | B0 | 22/13 |
+| 20 | 마테오 브리기 | Matteo Brighi | Parma Associazione Calcio | B0 | 22/13 |
 | 21 | 마시모 암브로시니 | Massimo Ambrosini | AC Milan | B- | 21/17 |
 | 22 | 마시밀리아노 푸사니 | Massimiliano Fusani | AC Perugia | B- | 19/14 |
 
@@ -414,7 +414,7 @@ The exact ordinal among same-tier nominees is a tiebreak using current Serie A s
 | 1 | 프란체스코 토티 | Francesco Totti | AS Roma | S | 24/23 |
 | 2 | 로베르토 바조 | Roberto Baggio | Brescia Calcio | A+ | 32/32 |
 | 3 | 알바로 레코바 | Álvaro Recoba | FC Internazionale Milano | A0 | 27/23 |
-| 4 | 나카타 히데토시 | Hidetoshi Nakata | Parma FC | A- | 31/29 |
+| 4 | 나카타 히데토시 | Hidetoshi Nakata | Parma Associazione Calcio | A- | 31/29 |
 | 5 | 후이 코스타 | Rui Costa | AC Milan | A- | 24/23 |
 | 6 | 히바우두 | Rivaldo | AC Milan | B+ | 22/16 |
 | 7 | 도메니코 모르페오 | Domenico Morfeo | FC Internazionale Milano | B- | 17/11 |
@@ -442,10 +442,10 @@ The exact ordinal among same-tier nominees is a tiebreak using current Serie A s
 
 | Pos rank | Korean | Original | Club original name | Tier | Current season apps/starts |
 |---:|---|---|---|---|---|
-| 1 | 아드리안 무투 | Adrian Mutu | Parma FC | S | 31/31 |
+| 1 | 아드리안 무투 | Adrian Mutu | Parma Associazione Calcio | S | 31/31 |
 | 2 | 클라우디오 로페스 | Claudio López | SS Lazio | S | 34/30 |
 | 3 | 크리스티안 비에리 | Christian Vieri | FC Internazionale Milano | S | 23/22 |
-| 4 | 아드리아누 | Adriano | Parma FC | A+ | 28/26 |
+| 4 | 아드리아누 | Adriano | Parma Associazione Calcio | A+ | 28/26 |
 | 5 | 필리포 인자기 | Filippo Inzaghi | AC Milan | A+ | 29/26 |
 | 6 | 알레산드로 델 피에로 | Alessandro Del Piero | Juventus FC | A+ | 24/20 |
 | 7 | 에르난 크레스포 | Hernán Crespo | FC Internazionale Milano | A0 | 18/14 |
@@ -467,7 +467,7 @@ The exact ordinal among same-tier nominees is a tiebreak using current Serie A s
 | 23 | 루카 토니 | Luca Toni | Brescia Calcio | B- | 16/15 |
 | 24 | 가브리엘 바티스투타 | Gabriel Batistuta | FC Internazionale Milano | B- | 12/9 |
 | 25 | 시모네 인차기 | Simone Inzaghi | SS Lazio | B- | 18/5 |
-| 26 | 알베르토 질라르디노 | Alberto Gilardino | Parma FC | C+ | 24/4 |
+| 26 | 알베르토 질라르디노 | Alberto Gilardino | Parma Associazione Calcio | C+ | 24/4 |
 
 ## 6. World Class complete 17-player list
 
@@ -479,7 +479,7 @@ The exact ordinal among same-tier nominees is a tiebreak using current Serie A s
 | S | LW | 파벨 네드베트 | Pavel Nedvěd | Juventus FC | 1972-08-30 | 8/11 |
 | S | ST | 크리스티안 비에리 | Christian Vieri | FC Internazionale Milano | 1973-07-12 | 24/0 |
 | S | ST | 클라우디오 로페스 | Claudio López | SS Lazio | 1974-07-17 | 15/13 |
-| S | ST | 아드리안 무투 | Adrian Mutu | Parma FC | 1979-01-08 | 17/12 |
+| S | ST | 아드리안 무투 | Adrian Mutu | Parma Associazione Calcio | 1979-01-08 | 17/12 |
 | A+ | GK | 지다 | Dida | AC Milan | 1973-10-07 | 0/0 |
 | A+ | CB | 파올로 말디니 | Paolo Maldini | AC Milan | 1968-06-26 | 2/1 |
 | A+ | CB | 왈테르 사무엘 | Walter Samuel | AS Roma | 1978-03-23 | 2/0 |
@@ -489,7 +489,7 @@ The exact ordinal among same-tier nominees is a tiebreak using current Serie A s
 | A+ | CAM | 로베르토 바조 | Roberto Baggio | Brescia Calcio | 1967-02-18 | 12/9 |
 | A+ | ST | 알레산드로 델 피에로 | Alessandro Del Piero | Juventus FC | 1974-11-09 | 16/8 |
 | A+ | ST | 필리포 인자기 | Filippo Inzaghi | AC Milan | 1973-08-09 | 16/5 |
-| A+ | ST | 아드리아누 | Adriano | Parma FC | 1982-02-17 | 16/3 |
+| A+ | ST | 아드리아누 | Adriano | Parma Associazione Calcio | 1982-02-17 | 16/3 |
 
 ## 7. League Top Class complete 55-player provisional list
 
@@ -501,7 +501,7 @@ The exact ordinal among same-tier nominees is a tiebreak using current Serie A s
 | S | LW | 파벨 네드베트 | Pavel Nedvěd | Juventus FC |
 | S | ST | 크리스티안 비에리 | Christian Vieri | FC Internazionale Milano |
 | S | ST | 클라우디오 로페스 | Claudio López | SS Lazio |
-| S | ST | 아드리안 무투 | Adrian Mutu | Parma FC |
+| S | ST | 아드리안 무투 | Adrian Mutu | Parma Associazione Calcio |
 | A+ | GK | 지다 | Dida | AC Milan |
 | A+ | CB | 파올로 말디니 | Paolo Maldini | AC Milan |
 | A+ | CB | 왈테르 사무엘 | Walter Samuel | AS Roma |
@@ -511,10 +511,10 @@ The exact ordinal among same-tier nominees is a tiebreak using current Serie A s
 | A+ | CAM | 로베르토 바조 | Roberto Baggio | Brescia Calcio |
 | A+ | ST | 알레산드로 델 피에로 | Alessandro Del Piero | Juventus FC |
 | A+ | ST | 필리포 인자기 | Filippo Inzaghi | AC Milan |
-| A+ | ST | 아드리아누 | Adriano | Parma FC |
+| A+ | ST | 아드리아누 | Adriano | Parma Associazione Calcio |
 | A0 | GK | 프란체스코 톨도 | Francesco Toldo | FC Internazionale Milano |
 | A0 | GK | 안젤로 페루치 | Angelo Peruzzi | SS Lazio |
-| A0 | GK | 세바스티앵 프레이 | Sébastien Frey | Parma FC |
+| A0 | GK | 세바스티앵 프레이 | Sébastien Frey | Parma Associazione Calcio |
 | A0 | CB | 이반 코르도바 | Iván Córdoba | FC Internazionale Milano |
 | A0 | CB | 파비오 칸나바로 | Fabio Cannavaro | FC Internazionale Milano |
 | A0 | CB | 야프 스탐 | Jaap Stam | SS Lazio |
@@ -545,7 +545,7 @@ The exact ordinal among same-tier nominees is a tiebreak using current Serie A s
 | A- | CM | 잠피에로 핀치 | Giampiero Pinzi | Udinese Calcio |
 | A- | CM | 스티븐 아피아 | Stephen Appiah | Brescia Calcio |
 | A- | CAM | 후이 코스타 | Rui Costa | AC Milan |
-| A- | CAM | 나카타 히데토시 | Hidetoshi Nakata | Parma FC |
+| A- | CAM | 나카타 히데토시 | Hidetoshi Nakata | Parma Associazione Calcio |
 | A- | RW | 마우로 카모라네시 | Mauro Camoranesi | Juventus FC |
 | A- | ST | 다비드 트레제게 | David Trezeguet | Juventus FC |
 | A- | ST | 안토니오 카사노 | Antonio Cassano | AS Roma |
@@ -567,7 +567,7 @@ The exact ordinal among same-tier nominees is a tiebreak using current Serie A s
 | LW | 파벨 네드베트 | Pavel Nedvěd | Juventus FC | S | 2002-03 29 games 8 FBref goals and 11 assists, 2001-02 32 games 4g11a, 2000-01 Lazio 31 games 8g6a. High chance creation and versatility; 9-goal records in other sources flagged separately. |
 | RW | 데얀 스탄코비치 | Dejan Stanković | SS Lazio | A0 | 2002-03 29 regular Serie A matches / 29 starts / 2524 minutes, 6 goals; provisional individual form and tactical responsibilities within registered RW role. Prior two years weighted less and many not fully independently documented. Trophy/team finish NOT a tier bonus. |
 | ST | 크리스티안 비에리 | Christian Vieri | FC Internazionale Milano | S | 2002-03 23 Serie A games, 24 goals, 1.04 goals per game; prior 2001-02 Inter 25/22 and 2000-01 27/18. Long-term elite production despite availability; no club results premium. |
-| ST | 아드리안 무투 | Adrian Mutu | Parma FC | S | 2002-03 Parma 31 Serie A matches, FBref 17 goals and 12 assists (RSSSF/Transfermarkt 18 goals unresolved). At Verona 2000-01 25/4, 2001-02 32/12; dual scorer/creator as first-choice second striker. |
+| ST | 아드리안 무투 | Adrian Mutu | Parma Associazione Calcio | S | 2002-03 Parma 31 Serie A matches, FBref 17 goals and 12 assists (RSSSF/Transfermarkt 18 goals unresolved). At Verona 2000-01 25/4, 2001-02 32/12; dual scorer/creator as first-choice second striker. |
 
 ### Primary competitive judgments and limitations
 
@@ -593,7 +593,7 @@ Each column lists **team / domestic apps / domestic goals**. League histories ex
 | S | 파벨 네드베트 | SS Lazio / 31 / 8 | Juventus FC / 32 / 4 | Juventus FC / 29 / 8 | Yes, not fully verified |
 | S | 크리스티안 비에리 | FC Internazionale Milano / 27 / 18 | FC Internazionale Milano / 25 / 22 | FC Internazionale Milano / 23 / 24 | Yes, not fully verified |
 | S | 클라우디오 로페스 | SS Lazio / 16 / 0 | SS Lazio / 29 / 10 | SS Lazio / 34 / 15 | Yes, not fully verified |
-| S | 아드리안 무투 | Hellas Verona FC / 25 / 4 | Hellas Verona FC / 32 / 12 | Parma FC / 31 / 17 | Yes, not fully verified |
+| S | 아드리안 무투 | Hellas Verona FC / 25 / 4 | Hellas Verona FC / 32 / 12 | Parma Associazione Calcio / 31 / 17 | Yes, not fully verified |
 | A+ | 지다 | — / — / — | — / — / — | AC Milan / 30 / 0 | No |
 | A+ | 파올로 말디니 | AC Milan / 31 / — | AC Milan / 15 / — | AC Milan / 28 / 2 | Yes, not fully verified |
 | A+ | 왈테르 사무엘 | AS Roma / 31 / — | AS Roma / 30 / — | AS Roma / 31 / 2 | Yes, not fully verified |
@@ -603,10 +603,10 @@ Each column lists **team / domestic apps / domestic goals**. League histories ex
 | A+ | 로베르토 바조 | Brescia Calcio / 24 / 10 | — / — / — | Brescia Calcio / 32 / 12 | No |
 | A+ | 알레산드로 델 피에로 | Juventus FC / 25 / — | Juventus FC / 32 / 16 | Juventus FC / 24 / 16 | Yes, not fully verified |
 | A+ | 필리포 인자기 | Juventus FC / 28 / 11 | AC Milan / 20 / — | AC Milan / 29 / 16 | Yes, not fully verified |
-| A+ | 아드리아누 | — / — / — | — / — / — | Parma FC / 28 / 16 | No |
+| A+ | 아드리아누 | — / — / — | — / — / — | Parma Associazione Calcio / 28 / 16 | No |
 | A0 | 프란체스코 톨도 | ACF Fiorentina / 32 / — | FC Internazionale Milano / 33 / — | FC Internazionale Milano / 32 / 1 | Yes, not fully verified |
 | A0 | 안젤로 페루치 | SS Lazio / 29 / — | SS Lazio / 27 / — | SS Lazio / 30 / 0 | Yes, not fully verified |
-| A0 | 세바스티앵 프레이 | FC Internazionale Milano / 28 / — | Parma Associazione Calcio / 29 / — | Parma FC / 34 / 0 | Yes, not fully verified |
+| A0 | 세바스티앵 프레이 | FC Internazionale Milano / 28 / — | Parma Associazione Calcio / 29 / — | Parma Associazione Calcio / 34 / 0 | Yes, not fully verified |
 | A0 | 이반 코르도바 | FC Internazionale Milano / 23 / — | FC Internazionale Milano / 30 / — | FC Internazionale Milano / 28 / 1 | Yes, not fully verified |
 | A0 | 파비오 칸나바로 | Parma Associazione Calcio / 29 / — | Parma Associazione Calcio / 26 / — | FC Internazionale Milano / 28 / 0 | Yes, not fully verified |
 | A0 | 야프 스탐 | — / — / — | SS Lazio / 13 / — | SS Lazio / 28 / 0 | No |
@@ -637,7 +637,7 @@ Each column lists **team / domestic apps / domestic goals**. League histories ex
 | A- | 잠피에로 핀치 | — / — / — | — / — / — | Udinese Calcio / 28 / 3 | No |
 | A- | 스티븐 아피아 | Parma AC / 15 / 0 | — / — / — | Brescia Calcio / 31 / 7 | No |
 | A- | 후이 코스타 | ACF Fiorentina / 29 / 6 | AC Milan / 22 / — | AC Milan / 24 / 0 | Yes, not fully verified |
-| A- | 나카타 히데토시 | AS Roma / 15 / 2 | Parma Associazione Calcio / 24 / — | Parma FC / 31 / 4 | Yes, not fully verified |
+| A- | 나카타 히데토시 | AS Roma / 15 / 2 | Parma Associazione Calcio / 24 / — | Parma Associazione Calcio / 31 / 4 | Yes, not fully verified |
 | A- | 마우로 카모라네시 | — / — / — | — / — / — | Juventus FC / 30 / 4 | No |
 | A- | 다비드 트레제게 | Juventus FC / 25 / 14 | Juventus FC / 34 / 24 | Juventus FC / 17 / 9 | Yes, not fully verified |
 | A- | 안토니오 카사노 | — / — / — | — / — / — | AS Roma / 27 / 9 | No |
