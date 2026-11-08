@@ -1,0 +1,22 @@
+name: Verify Serie A 2016-17 DRAFT
+on:
+  push:
+    paths:
+      - 'data/seriea-2016-17.json'
+      - 'scripts/verify-seriea-2016-17.mjs'
+      - '.github/workflows/verify-seriea-2016-17.yml'
+  workflow_dispatch:
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout main source
+        uses: actions/checkout@v4
+      - name: Install Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate 2016-17 Serie A DRAFT structure
+        run: node scripts/verify-seriea-2016-17.mjs
