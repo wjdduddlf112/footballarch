@@ -1,3 +1,14 @@
+## 2026-11-08 — Serie A 1999-00 initial DRAFT evidence review (AUTO_NEXT_SEASON=false)
+- Scope: **1999-00 Serie A only**. Three-season weighting: 1997-98 / 1998-99 / 1999-00 (current strongest). **2000-01 Serie A was NOT started**.
+- 2000-01 Europe: 9 clubs (Lazio, Juventus, Milan, Inter, Parma, Roma, Fiorentina, Udinese, Perugia), including 2000 Intertoto (Udinese/Perugia). Inter-Parma playoff excluded from the 34 regular-league match totals; club official Recoba/Baggio appearances include playoff, reconciled in the JSON with separate competition scope.
+- Candidate data: old 119 unapproved archive rows retained as audit baseline; **13 new missing real-season candidates** added; **132 rows**. No claim of completed new independent nominations or matchwise positional audit. Di Livio Fiorentina provisionally reclassified CM→RW based 1999 match formation; Milan Rapaić DOB corrected against Croatian FA.
+- Provisional individual assessments: **76 graded and provisionally ranked**, **56 deliberately null tier/rank**; World Class **14**; League Top Class **38**. Only **13/132** have numerical records for BOTH prior seasons attached, and **0/132** have full individually independently signed off 3-season performance verification.
+- 11-player Best XI is a **4-3-1-2** unapproved proposal, NOT a verified most frequent league formation. All Tiers tab opened for Serie A in app.js and explicit slots4312 formation layout added, Bundesliga behavior preserved.
+- Repeated structural validation equivalent executed in tool context: **PASS, 0 structural errors**, with 3 evidence/verification warnings. Source file **scripts/verify-seriea-1999-00-players.mjs** committed; standalone Node CLI has not yet run in a checked-out local repository.
+- Browser UI interaction and GitHub Pages deployment confirmation tracked separately; no claim of interactive approval or completed audit.
+- See **audit/SERIEA_1999-00_DRAFT_FULL_REPORT.md** for complete 132-candidate club tables, provisional ranks and references.
+- User approval: **NO**. State: **draft_unapproved**. No automatic progression.
+
 ## 2026-11-08 — User 'ㅇㅋ 다음': Bundesliga 2023-24 ONLY (AUTO_NEXT_SEASON=false)
 - Scope **2023-24 Bundesliga only**, 3-year assessment 2021-22 / 2022-23 / 2023-24 (latest weight highest). The next 2024-25 Bundesliga was **not** started.
 - Real 2024-25 UEFA entrants **eight**: Leverkusen (1, UCL), Stuttgart (2, UCL), Bayern (3, UCL), Leipzig (4, UCL), Dortmund (5, UCL via German European Performance Spot), Frankfurt (6, UEL), Hoffenheim (7, UEL), Heidenheim (8, UECL playoff). DFB-Pokal winner Leverkusen already UCL, resulting in league-based reallocation. UEFA/Bundesliga club entries verified against 2023-24 final standings.
