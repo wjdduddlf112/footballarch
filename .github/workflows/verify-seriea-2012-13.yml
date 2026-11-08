@@ -1,0 +1,22 @@
+name: Verify Serie A 2012-13 DRAFT
+on:
+  push:
+    paths:
+      - 'data/seriea-2012-13.json'
+      - 'scripts/verify-seriea-2012-13.mjs'
+      - '.github/workflows/verify-seriea-2012-13.yml'
+  workflow_dispatch:
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout existing repository
+        uses: actions/checkout@v4
+      - name: Set up Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate 2012-13 Serie A season DRAFT data
+        run: node scripts/verify-seriea-2012-13.mjs
