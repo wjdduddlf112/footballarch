@@ -101,7 +101,7 @@ function pageIntro(){
  $("eyebrow").style.display="none";
  $("heading").textContent=label()+"  /  "+st.season.replace("-","–");
  $("subheading").style.display="none";
- const tierSeason=st.league==="bundesliga"&&Boolean(data?.players?.length)&&data?.meta?.standingsOnly!==true;
+ const tierSeason=["bundesliga","seriea"].includes(st.league)&&Boolean(data?.players?.length)&&data?.meta?.standingsOnly!==true;
  const tierTab=$("allTiersTab");if(tierTab)tierTab.style.display=tierSeason?"":"none";
  if(st.tab==="tiers"&&!tierSeason)st.tab="overview";
  const playerView=["formation","top","tiers","stats"].includes(st.tab);
@@ -168,7 +168,7 @@ function tierDirectory(){
  const sum=allowed.reduce((n,t)=>n+count(t),0);
  const wc=all.filter(p=>["S","A+"].includes(p.tier)).length,lt=all.filter(p=>["S","A+","A","A-"].includes(p.tier)).length;
  const menu=[["clubs","구단별 전체 명단"],["positions","포지션별 통합 순위"],["tiers","티어별 전체 명단"]];
- let h='<section class="panel tier-directory-head"><div class="section-heading"><div><h2>전체 선수 티어 · '+all.length+'명 <span class="muted">DRAFT</span></h2><p class="muted small">'+esc(st.season)+' 분데스리가 · '+qualifiers().length+'개 구단 · 주전과 후보 전원 · 사용자 미승인</p></div><button class="pill" data-go="top">World / League Top Class</button></div>';
+ let h='<section class="panel tier-directory-head"><div class="section-heading"><div><h2>전체 선수 티어 · '+all.length+'명 <span class="muted">DRAFT</span></h2><p class="muted small">'+esc(st.season)+' '+esc(label())+' · '+qualifiers().length+'개 구단 · 주전과 후보 전원 · 사용자 미승인</p></div><button class="pill" data-go="top">World / League Top Class</button></div>';
  h+='<p class="small muted">World Class '+wc+'명 (S+A+) · League Top Class '+lt+'명 (S~A-) · 티어 합계 '+sum+'/'+all.length+'명 '+(sum===all.length?'(일치)':'(오류)')+'</p><p class="small tier-counts">'+esc(tally)+'</p><div class="pills tier-directory-nav">'+menu.map(x=>'<button class="pill '+(view===x[0]?'active':'')+'" data-tier-view="'+x[0]+'">'+x[1]+'</button>').join("")+'</div></section>';
  if(view==="clubs"){
   for(const q of qualifiers()){
@@ -200,8 +200,8 @@ function topPage(){
 }
 function formation(){
  let selection=(data.bestXi||[]).slice(0,11),used={};
- let formationName=["3-4-1-2","4-4-2","4-2-3-1","4-3-3"].includes(data?.meta?.formation)?data.meta.formation:"4-3-3";
- let layout=formationName==="3-4-1-2"?slots3412:formationName==="4-2-3-1"?slots4231:formationName==="4-4-2"?slots442:slots433;
+ let formationName=["3-4-1-2","4-3-1-2","4-4-2","4-2-3-1","4-3-3"].includes(data?.meta?.formation)?data.meta.formation:"4-3-3";
+ let layout=formationName==="3-4-1-2"?slots3412:formationName==="4-3-1-2"?slots4312:formationName==="4-2-3-1"?slots4231:formationName==="4-4-2"?slots442:slots433;
  // A classic 4-4-2 may contain two CM players rather than one CM plus one DM.
  // Respect existing 1 CM + 1 DM data for other seasons while rendering both CMs here.
  if(formationName==="4-4-2"&&selection.filter(p=>p.position==="CM").length===2&&selection.filter(p=>p.position==="CAM").length===1&&selection.filter(p=>p.position==="DM").length===1){
