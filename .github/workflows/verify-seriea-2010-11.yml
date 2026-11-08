@@ -1,0 +1,22 @@
+name: Verify Serie A 2010-11 DRAFT
+on:
+  push:
+    paths:
+      - 'data/seriea-2010-11.json'
+      - 'scripts/verify-seriea-2010-11.mjs'
+      - '.github/workflows/verify-seriea-2010-11.yml'
+  workflow_dispatch:
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+      - name: Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate 2010-11 Serie A DRAFT structural and role checks
+        run: node scripts/verify-seriea-2010-11.mjs
