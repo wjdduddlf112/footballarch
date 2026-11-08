@@ -38,7 +38,7 @@ for(const club of clubIds){
  if(["juventus","udinese","napoli"].includes(club))fail(pp.filter(p=>p.position==="CB"&&p.role==="starter").length===3,"Three-back team lacks third starting CB "+club);
 }
 const counts=Object.fromEntries(tiers.map(t=>[t,d.players.filter(p=>p.tier===t).length]));
-for(const tier of tiers)fail(counts[t]===(d.meta?.tierDistribution?.[tier]??0),"Tier count wrong "+tier);
+for(const tier of tiers)fail(counts[tier]===(d.meta?.tierDistribution?.[tier]??0),"Tier count wrong "+tier);
 for(const position of pos){
  const pp=d.players.filter(p=>p.position===position).sort((a,b)=>(a.rank??999)-(b.rank??999));
  fail(pp.every((p,i)=>p.rank===i+1),"Rank ordinal gap "+position);
