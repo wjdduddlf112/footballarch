@@ -211,6 +211,12 @@ function formation(){
  if(formationName==="4-4-2"&&selection.filter(p=>p.position==="CM").length===2&&selection.every(p=>p.position!=="DM")){
   layout=slots442.map(slot=>slot[0]==="DM"?["CM",slot[1],slot[2]]:slot);
  }
+ // Real 4-3-3 can use two mezzale/central midfielders plus a single regista.
+ // Reuse the CAM *field coordinate* for the second CM only when the nominated XI has 2 CM and 0 CAM.
+ // All earlier 4-3-3 datasets with an actual CAM retain their previous layout unchanged.
+ if(formationName==="4-3-3"&&selection.filter(p=>p.position==="CM").length===2&&selection.every(p=>p.position!=="CAM")){
+  layout=slots433.map(slot=>slot[0]==="CAM"?["CM",slot[1],slot[2]]:slot);
+ }
  let marks=layout.map(x=>{let matches=selection.filter(b=>b.position===x[0]);let index=used[x[0]]||0;used[x[0]]=index+1;let pick=matches[index];let p=data.players.find(y=>y.id===pick?.playerId);let selectedPosition=p?.position||x[0];let fieldPosition=pick?.displayPosition||x[0];return '<button class="slot '+(st.position===selectedPosition?"active":"")+'" data-position="'+selectedPosition+'" style="left:'+x[1]+'%;top:'+x[2]+'%"><span class="spot">'+esc(fieldPosition)+'</span><span class="slot-label">'+(p?esc(p.nameKo||p.name):"선정 대기")+'</span>'+(p?'<span class="slot-tier">'+grade(p.tier)+'</span>':'')+'</button>'}).join("");
  let pos=st.position==="all"?"GK":st.position;
  let candidates=rankPlayers().filter(p=>p.position===pos);
