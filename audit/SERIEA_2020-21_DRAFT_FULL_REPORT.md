@@ -500,13 +500,13 @@ The midfield choice was made for 3-5-2 fit rather than picking all 3 top individ
 
 ### 크리스티안 로메로 (Cristian Romero) — CB, Atalanta BC, S
 
-공식 최우수 수비수, 볼 회수·압박 범위·공중 경합에서 3백 중앙을 지탱. 2018-19·2019-20 제노아 주전 경력은 기록 독립 검증 대기. 앞선 두 시즌: 2018-19 미연결; 2019-20 미연결. 2020-21 55%, 2019-20 30%, 2018-19 15% 순으로 평가하며 팀 우승/순위 자체는 개인 가산점 제외. 미연결 수치는 0점으로 취급하지 않음. S DRAFT.
+공식 최우수 수비수, 볼 회수·압박 범위·공중 경합에서 3백 중앙을 지탱. 2018-19·2019-20 제노아 주전 경력은 기록 독립 검증 대기. 앞선 두 시즌: 2018-19 27경기/2골(독립 출처 대조); 2019-20 30경기/1골(독립 출처 대조). 2020-21 55%, 2019-20 30%, 2018-19 15% 순으로 평가하며 팀 우승/순위 자체는 개인 가산점 제외. 미연결 수치는 0점으로 취급하지 않음. S DRAFT.
 
 Current season: 31 appearances, 29 starts, 2546 minutes, 2 goals, assists not independently verified; roster source: https://www.bdfutbol.com/en/t/t2020-213017.html. Previous two seasons in `threeSeasonReview.records`, including explicit `null` if not linked.
 
 ### 로멜루 루카쿠 (Romelu Lukaku) — ST, FC Internazionale Milano, S
 
-공식 시즌 전체 MVP, 리그 24골·11도움. 전년도 리그 23골에 이은 연속 최정상 공격 퍼포먼스, 볼 지킴과 연계를 결합. 앞선 두 시즌: 2018-19 미연결; 2019-20 36경기/23골(미승인 자료). 2020-21 55%, 2019-20 30%, 2018-19 15% 순으로 평가하며 팀 우승/순위 자체는 개인 가산점 제외. 미연결 수치는 0점으로 취급하지 않음. S DRAFT.
+공식 시즌 전체 MVP, 리그 24골·11도움. 전년도 리그 23골에 이은 연속 최정상 공격 퍼포먼스, 볼 지킴과 연계를 결합. 앞선 두 시즌: 2018-19 32경기/12골(독립 출처 대조); 2019-20 36경기/23골(미승인 자료). 2020-21 55%, 2019-20 30%, 2018-19 15% 순으로 평가하며 팀 우승/순위 자체는 개인 가산점 제외. 미연결 수치는 0점으로 취급하지 않음. S DRAFT.
 
 Current season: 36 appearances, 32 starts, 2887 minutes, 24 goals, assists 11 (AS.com table); roster source: https://www.bdfutbol.com/en/t/t2020-213008.html. Previous two seasons in `threeSeasonReview.records`, including explicit `null` if not linked.
 
@@ -518,7 +518,7 @@ Current season: 33 appearances, 31 starts, 2803 minutes, 29 goals, assists not i
 
 ### 잔루이지 돈나룸마 (Gianluigi Donnarumma) — GK, AC Milan, A+
 
-37경기 37선발, 시즌 공식 최우수 골키퍼, 다년간 높은 선방 지속성. 앞선 두 시즌: 2018-19 미연결; 2019-20 36경기/0골(미승인 자료). 2020-21 55%, 2019-20 30%, 2018-19 15% 순으로 평가하며 팀 우승/순위 자체는 개인 가산점 제외. 미연결 수치는 0점으로 취급하지 않음. A+ DRAFT.
+37경기 37선발, 시즌 공식 최우수 골키퍼, 다년간 높은 선방 지속성. 앞선 두 시즌: 2018-19 36경기/0골(독립 출처 대조); 2019-20 36경기/0골(미승인 자료). 2020-21 55%, 2019-20 30%, 2018-19 15% 순으로 평가하며 팀 우승/순위 자체는 개인 가산점 제외. 미연결 수치는 0점으로 취급하지 않음. A+ DRAFT.
 
 Current season: 37 appearances, 37 starts, 3330 minutes, 0 goals, assists not independently verified; roster source: https://www.bdfutbol.com/en/t/t2020-213015.html. Previous two seasons in `threeSeasonReview.records`, including explicit `null` if not linked.
 
@@ -566,19 +566,19 @@ Current season: 32 appearances, 30 starts, 2538 minutes, 10 goals, assists 6 (AS
 
 ### 테오 에르난데스 (Theo Hernández) — LB, AC Milan, A+
 
-33경기 7골, 직전 시즌 6골에 이어 풀백의 전진 운반·박스 공격 능력 지속. 앞선 두 시즌: 2018-19 미연결; 2019-20 33경기/6골(미승인 자료). 2020-21 55%, 2019-20 30%, 2018-19 15% 순으로 평가하며 팀 우승/순위 자체는 개인 가산점 제외. 미연결 수치는 0점으로 취급하지 않음. A+ DRAFT.
+33경기 7골, 직전 시즌 6골에 이어 풀백의 전진 운반·박스 공격 능력 지속. 앞선 두 시즌: 2018-19 24경기/1골(독립 출처 대조); 2019-20 33경기/6골(미승인 자료). 2020-21 55%, 2019-20 30%, 2018-19 15% 순으로 평가하며 팀 우승/순위 자체는 개인 가산점 제외. 미연결 수치는 0점으로 취급하지 않음. A+ DRAFT.
 
 Current season: 33 appearances, 33 starts, 2935 minutes, 7 goals, assists not independently verified; roster source: https://www.bdfutbol.com/en/t/t2020-213015.html. Previous two seasons in `threeSeasonReview.records`, including explicit `null` if not linked.
 
 ### 아슈라프 하키미 (Achraf Hakimi) — RB, FC Internazionale Milano, A+
 
-오른쪽 윙백 7골·8도움, 전진 속도·공수 넓은 가담과 찬스 창출. 앞선 두 시즌: 2018-19 미연결; 2019-20 미연결. 2020-21 55%, 2019-20 30%, 2018-19 15% 순으로 평가하며 팀 우승/순위 자체는 개인 가산점 제외. 미연결 수치는 0점으로 취급하지 않음. A+ DRAFT.
+오른쪽 윙백 7골·8도움, 전진 속도·공수 넓은 가담과 찬스 창출. 앞선 두 시즌: 2018-19 21경기/2골(독립 출처 대조); 2019-20 33경기/5골(독립 출처 대조). 2020-21 55%, 2019-20 30%, 2018-19 15% 순으로 평가하며 팀 우승/순위 자체는 개인 가산점 제외. 미연결 수치는 0점으로 취급하지 않음. A+ DRAFT.
 
 Current season: 37 appearances, 29 starts, 2672 minutes, 7 goals, assists 8 (AS.com table); roster source: https://www.bdfutbol.com/en/t/t2020-213008.html. Previous two seasons in `threeSeasonReview.records`, including explicit `null` if not linked.
 
 ### 후안 콰드라도 (Juan Cuadrado) — RB, Juventus FC, A+
 
-2골·10도움, 우측 풀백에서 넓은 공격 전개·크로스와 압박 탈출. 앞선 두 시즌: 2018-19 미연결; 2019-20 33경기/2골(미승인 자료). 2020-21 55%, 2019-20 30%, 2018-19 15% 순으로 평가하며 팀 우승/순위 자체는 개인 가산점 제외. 미연결 수치는 0점으로 취급하지 않음. A+ DRAFT.
+2골·10도움, 우측 풀백에서 넓은 공격 전개·크로스와 압박 탈출. 앞선 두 시즌: 2018-19 18경기/1골(독립 출처 대조); 2019-20 33경기/2골(미승인 자료). 2020-21 55%, 2019-20 30%, 2018-19 15% 순으로 평가하며 팀 우승/순위 자체는 개인 가산점 제외. 미연결 수치는 0점으로 취급하지 않음. A+ DRAFT.
 
 Current season: 30 appearances, 26 starts, 2180 minutes, 2 goals, assists 10 (AS.com table); roster source: https://www.bdfutbol.com/en/t/t2020-213004.html. Previous two seasons in `threeSeasonReview.records`, including explicit `null` if not linked.
 
@@ -590,7 +590,7 @@ Current season: 33 appearances, 29 starts, 2585 minutes, 2 goals, assists 6 (AS.
 
 ### 니콜로 바렐라 (Nicolò Barella) — CM, FC Internazionale Milano, A+
 
-공식 최우수 미드필더, 36경기·32선발·7도움, 중앙의 높은 압박·전진·볼 소유를 겸비. 앞선 두 시즌: 2018-19 미연결; 2019-20 27경기/1골(미승인 자료). 2020-21 55%, 2019-20 30%, 2018-19 15% 순으로 평가하며 팀 우승/순위 자체는 개인 가산점 제외. 미연결 수치는 0점으로 취급하지 않음. A+ DRAFT.
+공식 최우수 미드필더, 36경기·32선발·7도움, 중앙의 높은 압박·전진·볼 소유를 겸비. 앞선 두 시즌: 2018-19 35경기/1골(독립 출처 대조); 2019-20 27경기/1골(미승인 자료). 2020-21 55%, 2019-20 30%, 2018-19 15% 순으로 평가하며 팀 우승/순위 자체는 개인 가산점 제외. 미연결 수치는 0점으로 취급하지 않음. A+ DRAFT.
 
 Current season: 36 appearances, 32 starts, 2901 minutes, 3 goals, assists 7 (AS.com table); roster source: https://www.bdfutbol.com/en/t/t2020-213008.html. Previous two seasons in `threeSeasonReview.records`, including explicit `null` if not linked.
 
@@ -614,7 +614,7 @@ Current season: 34 appearances, 33 starts, 2641 minutes, 9 goals, assists not in
 
 ### 헨리크 미키타리안 (Henrikh Mkhitaryan) — CAM, AS Roma, A+
 
-13골·10도움, 로마 안쪽 공격 공간의 연계·전진·득점 기여. 앞선 두 시즌: 2018-19 미연결; 2019-20 22경기/9골(미승인 자료). 2020-21 55%, 2019-20 30%, 2018-19 15% 순으로 평가하며 팀 우승/순위 자체는 개인 가산점 제외. 미연결 수치는 0점으로 취급하지 않음. A+ DRAFT.
+13골·10도움, 로마 안쪽 공격 공간의 연계·전진·득점 기여. 앞선 두 시즌: 2018-19 25경기/6골(독립 출처 대조); 2019-20 22경기/9골(미승인 자료). 2020-21 55%, 2019-20 30%, 2018-19 15% 순으로 평가하며 팀 우승/순위 자체는 개인 가산점 제외. 미연결 수치는 0점으로 취급하지 않음. A+ DRAFT.
 
 Current season: 34 appearances, 30 starts, 2745 minutes, 13 goals, assists 10 (AS.com table); roster source: https://www.bdfutbol.com/en/t/t2020-213009.html. Previous two seasons in `threeSeasonReview.records`, including explicit `null` if not linked.
 
@@ -638,7 +638,7 @@ Current season: 35 appearances, 33 starts, 2872 minutes, 19 goals, assists 7 (AS
 
 ### 페데리코 키에사 (Federico Chiesa) — LW, Juventus FC, A+
 
-8골·8도움, 왼쪽 측면 침투와 직접 득점·전진 드리블. 앞선 두 시즌: 2018-19 미연결; 2019-20 미연결. 2020-21 55%, 2019-20 30%, 2018-19 15% 순으로 평가하며 팀 우승/순위 자체는 개인 가산점 제외. 미연결 수치는 0점으로 취급하지 않음. A+ DRAFT.
+8골·8도움, 왼쪽 측면 침투와 직접 득점·전진 드리블. 앞선 두 시즌: 2018-19 37경기/6골(독립 출처 대조); 2019-20 34경기/10골(독립 출처 대조). 2020-21 55%, 2019-20 30%, 2018-19 15% 순으로 평가하며 팀 우승/순위 자체는 개인 가산점 제외. 미연결 수치는 0점으로 취급하지 않음. A+ DRAFT.
 
 Current season: 30 appearances, 28 starts, 2227 minutes, 8 goals, assists 8 (AS.com table); roster source: https://www.bdfutbol.com/en/t/t2020-213004.html. Previous two seasons in `threeSeasonReview.records`, including explicit `null` if not linked.
 
@@ -833,13 +833,29 @@ Current season: 29 appearances, 18 starts, 1463 minutes, 9 goals, assists 8 (AS.
 - Fresh 2020-21 candidate roster source: seven distinct current-season BDFutbol club domestic Serie A roster tables, preserving AP/starts/minutes/goals and each player's club. All 126 have >0 domestic matches; backups may have starter-equivalent activity. Main tactical position independently verifying 38 match lineups **still outstanding**.
 - Assist source (partial): https://as.com/resultados/futbol/italia/2020_2021/ranking/jugadores/asistencias-de-gol/. **20** selected leaders' 2020-21 assists are transcribed, other players are **null**, not 0. Provider definitions of assists may vary (e.g. Chiesa 8 vs 9 across statistical sources).
 - Historical recency weighting 2020-21 (55%), 2019-20 (30%), 2018-19 (15%) is qualitative; no score was algorithmically calculated. Club table rank/championship not a personal rating bonus.
-- Previous two season availability: **53** players with both earlier league appearance counts linked, **41** with one, **32** with neither. **105** historical year slots currently null out of 252. Previous year links are matched by full original name AND DOB against earlier *unapproved* 2018-19/2019-20 archive, not independent corroboration. Complete three-year independent player-vs-player review is **0 certified**.
+- Previous two season availability after targeted individual high-tier research: **62** players with both prior league appearance counts linked, **35** with one, **29** with neither. **93** historical player-year slots remain null out of 252. Exactly **12** additional previously blank historical numeric slots for 9 top-tier players were independently sourced from Opta / FBref / Premier League / RSSSF in the follow-up audit. Other previously linked old DRAFT records are **not** independently corroborated; full 3-year peer assessment remains pending.
 - Identity matching was initially unable to resolve Lazio defender Patric. Correct player: Patric Gabarrón, DOB 1993-04-17. Correctly resolved before creation of JSON. Duván Zapata and Cristián Zapata are not confused; Ionuț Andrei Radu (GK Inter) is distinct from Lazio's Ștefan Radu.
 - Main position flags for manual review: Juventus Danilo played as a versatile left/right fullback and auxiliary centre-back; LB assignment provisional pending full 38-match positional frequency count. Juventus Chiesa also played on multiple flanks; left-role assessment provisional. Roma Cristante coded CB for 3-back use despite midfielder history. Atalanta Gómez left mid-season with only 10 current-year Serie A appearances; prior-year level must not overrule current-year availability.
 - Representative era formation **3-5-2**, widely used by Conte's Inter and Inzaghi's Lazio. No 380-fixture league modal formation census, so 3-5-2 is not claimed as a verified mathematical most-used formation. Atalanta and Roma maintained 3-back variations, while other clubs also used 4-2-3-1.
 - Supporting individual league awards: Lukaku MVP, Donnarumma GK, Romero DEF, Barella MID, Cristiano Ronaldo ATT. League awards include other Italian domestic competitions in their evaluation methodology; used as context only, not pure domestic-league statistics. See https://www.inter.it/en/news/2021-05-31-lukaku-2020-21-serie-a-mvp.
 - Structural JavaScript check on current connected GitHub file and existing 20-team historical standings archive validates unique names/IDs, DOB shapes, 7 eligibility, 126 current-season candidates, AP/starts/minutes bounds, GK scoring, starter/backups caps, 10 continuous positional rankings with no tier inversion, tier distribution, 11 distinct position-matched XI and historical null count. This checks data consistency, **not** independent historical correctness.
 - No prior season JSON was modified. 2020-21 season and audit files stored on GitHub `main`; user approval **not** provided. Standalone Node script committed; whether it ran through external CI is separately unverified. GitHub Pages deployment/browser click-flow remains **not confirmed** unless independently viewed. Do not mark final/approved.
+
+### Targeted independently sourced prior-season records (9 top-tier players)
+
+| Player | Newly cross-checked prior seasons | Sources |
+|---|---|---|
+| Achraf Hakimi | 2018-19 Bundesliga 21 apps 2 goals; 2019-20 Bundesliga 33 apps 5 goals | https://theanalyst.com/players/3528/achraf-hakimi/career |
+| Cristian Romero | 2018-19 Serie A 27 apps 2 goals; 2019-20 Serie A 30 apps 1 goals | https://theanalyst.com/players/4284/cristian-romero/career |
+| Federico Chiesa | 2018-19 Serie A 37 apps 6 goals; 2019-20 Serie A 34 apps 10 goals | https://theanalyst.com/players/4110/federico-chiesa/career |
+| Nicolò Barella | 2018-19 Serie A 35 apps 1 goals | https://theanalyst.com/players/4665/nicolo-barella/career |
+| Romelu Lukaku | 2018-19 Premier League 32 apps 12 goals | https://theanalyst.com/players/4855/romelu-lukaku/career |
+| Gianluigi Donnarumma | 2018-19 Serie A 36 apps 0 goals | https://fbref.com/en/players/08f5afaa/ |
+| Theo Hernández | 2018-19 La Liga 24 apps 1 goals | https://theanalyst.com/players/2162/theo-hernandez/career |
+| Juan Cuadrado | 2018-19 Serie A 18 apps 1 goals | https://theanalyst.com/players/4511/juan-cuadrado/career |
+| Henrikh Mkhitaryan | 2018-19 Premier League 25 apps 6 goals | https://www.premierleague.com/en/players/57249/henrikh-mkhitaryan/career |
+
+For those prior rows, appearances, minutes and goals were sourced independently; starts and assists are null unless that source independently reported them. League differences are explicit (Bundesliga, Premier League, La Liga, Serie A). Cross-source differences in minutes and assists can exist. Individual superiority and all 126 DOB/position reviews still require separate audits.
 
 ## 8. Repository locations
 
