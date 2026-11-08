@@ -1,0 +1,31 @@
+name: Serie A 2015-16 LIVE Pages smoke verification
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/verify-seriea-2015-16-live.mjs'
+      - '.github/workflows/verify-seriea-2015-16-live.yml'
+jobs:
+  live:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout current repository
+        uses: actions/checkout@v4
+      - name: Install Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install Playwright core only (use preinstalled Chrome)
+        run: npm install --no-save playwright-core@1.56.1
+      - name: Run browser test against deployed GitHub Pages
+        run: node scripts/verify-seriea-2015-16-live.mjs
+      - name: Save screenshot and browser evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: seriea-2015-16-live-evidence
+          path: audit-artifacts/seriea-2015-16-live/
+          if-no-files-found: warn
