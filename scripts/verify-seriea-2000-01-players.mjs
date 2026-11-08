@@ -35,7 +35,7 @@ for(const p of d.players||[]){
 }
 for(const [key,num] of Object.entries(perClubPos)){
  const [club,pos]=key.split("/");
- const back3=["roma","inter","milan","fiorentina","parma","lazio"].includes(club);
+ const back3=["roma","juventus","lazio","parma","inter","milan","fiorentina","brescia"].includes(club); // back-three documented in sampled historical league matches; season modal may differ
  const ceiling=pos==="CB"?(back3?4:3):["CM","ST"].includes(pos)?3:2;
  if(num>ceiling)warnings.push("Potential slot maximum "+key+" "+num+">"+ceiling);
 }
