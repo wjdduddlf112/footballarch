@@ -49,7 +49,7 @@ Legend: **S** = nominated functional representative starter; **B** = club altern
 | CAM | 루이스 피구 | Luís Figo | Football Club Internazionale Milano | 1972-11-04 | B | B0 | 7 | 22 | 11 | 1053 | 1 | 3 |
 | ST | 즐라탄 이브라히모비치 | Zlatan Ibrahimović | Football Club Internazionale Milano | 1981-10-03 | S | S | 1 | 35 | 35 | 3133 | 25 | 7 |
 | ST | 마리오 발로텔리 | Mario Balotelli | Football Club Internazionale Milano | 1990-08-12 | S | B+ | 12 | 22 | 15 | 1354 | 8 | 1 |
-| ST | 아드리아누 | Adriano | Football Club Internazionale Milano | 1982-02-17 | B | B0 | 13 | 12 | 9 | 805 | 3 | — |
+| ST | 아드리아누 | Adriano | Football Club Internazionale Milano | 1982-02-17 | B | B0 | 13 | 12 | 9 | 805 | 3 | 3 |
 Source for 2008-09 domestic league individual stats: https://fbref.com/en/squads/d609edc0/2008-2009/Internazionale-Stats
 ### Juventus Football Club — 20 nominees (11 S / 9 B)
 | Position | Korean name | Original name | Original club | DOB | S/B | Grade | Pos rank | 2008-09 apps | Starts | Minutes | Goals | Assists |
@@ -493,7 +493,7 @@ Source for 2008-09 domestic league individual stats: https://fbref.com/en/squads
 - Source crosscheck current league data: [Inter](https://fbref.com/en/squads/d609edc0/2008-2009/Internazionale-Stats), [Juventus](https://fbref.com/en/squads/e0652b02/2008-2009/c11/Juventus-Stats-Serie-A), [Milan](https://fbref.com/en/squads/dc56fe14/2008-2009/Milan-Stats), [Fiorentina](https://fbref.com/en/squads/421387cf/2008-2009/Fiorentina-Stats), [Genoa](https://fbref.com/en/squads/658bf2de/2008-2009/Genoa-Stats), [Roma](https://fbref.com/en/squads/cf74a709/2008-2009/Roma-Stats), [Lazio](https://fbref.com/en/squads/7213da33/2008-2009/Lazio-Stats). Distinct from all-competitions tables.
 - With expanded player data, **128/128 current 2008-09 league appearances, starts, minutes, goals and assists** have numerically sourced entries. Unknown scorer/assist values remain NULL rather than invented 0 if any source gap reopens. Small cross-source minute/assist disagreements may exist and require full match log reconciliation.
 - Note actual 2009-10 UEFA Europa League was first season after UEFA Cup rebranding, correct event label in qualifiers. No UEFA Intertoto Cup in 2009.
-- Supplemental final domestic scoring source pass: Juventus Giovinco 2g/4a, Salihamidžić 1g/1a; Milan Ronaldinho 8g/5a, Inzaghi 13g/2a, Gattuso 0g/2a; Fiorentina Jørgensen 1g/0a, Zauri 1g/0a, Semioli 0g/3a, sourced from same-season FBref tables.
+- Supplemental final domestic scoring source pass: Inter Adriano 3 goals / 3 assists verified from [individual 2008-09 FBref career row](https://fbref.com/en/players/4ec73d8a/Adriano); Juventus Giovinco 2g/4a, Salihamidžić 1g/1a; Milan Ronaldinho 8g/5a, Inzaghi 13g/2a, Gattuso 0g/2a; Fiorentina Jørgensen 1g/0a, Zauri 1g/0a, Semioli 0g/3a, sourced from same-season FBref tables.
 
 ## 11. Quantified verification checklist (do not conflate data structure with historical accuracy)
 | Gate | Actual state |
