@@ -65,7 +65,7 @@ Legend: **S** = registered nominal starter role, **B** = registered alternate ro
 | LW | 파벨 네드베드 | Pavel Nedvěd | 1972-08-30 | S | A+ | 1 | — | — |
 | RW | 마우로 카모라네시 | Mauro Camoranesi | 1976-10-04 | S | A0 | 1 | — | — |
 | RW | 루벤 올리베라 | Rubén Olivera | 1983-05-04 | B | B- | 8 | 18 | 6 |
-| ST | 즐라탄 이브라히모비치 | Zlatan Ibrahimović | 1981-10-03 | S | A+ | 5 | — | — |
+| ST | 즐라탄 이브라히모비치 | Zlatan Ibrahimović | 1981-10-03 | S | A+ | 5 | 35 | 31 |
 | ST | 알레산드로 델 피에로 | Alessandro Del Piero | 1974-11-09 | S | A0 | 8 | — | — |
 | ST | 다비드 트레제게 | David Trezeguet | 1977-10-15 | B | A- | 11 | 18 | 14 |
 
@@ -90,7 +90,7 @@ Source roster: https://www.footballsquads.co.uk/italy/2004-2005/seriea/juventus.
 | CM | 크리스티안 브로키 | Cristian Brocchi | 1976-01-30 | B | B0 | 15 | — | — |
 | CAM | 카카 | Kaká | 1982-04-22 | S | S | 1 | 36 | 33 |
 | CAM | 후이 코스타 | Rui Costa | 1972-03-29 | B | B+ | 7 | — | — |
-| ST | 안드리 셰우첸코 | Andriy Shevchenko | 1976-09-29 | S | S | 2 | — | — |
+| ST | 안드리 셰우첸코 | Andriy Shevchenko | 1976-09-29 | S | S | 2 | 29 | — |
 | ST | 에르난 크레스포 | Hernán Crespo | 1975-07-05 | S | A0 | 10 | — | — |
 | ST | 욘 달 토마손 | Jon Dahl Tomasson | 1976-08-29 | B | B+ | 18 | — | — |
 
@@ -116,7 +116,7 @@ Source roster: https://footballsquads.co.uk/italy/2004-2005/seriea/milan.htm
 | LW | 킬리 곤살레스 | Kily González | 1974-08-04 | B | B- | 7 | — | — |
 | RW | 앤디 판데르메이데 | Andy van der Meyde | 1979-09-30 | S | B0 | 4 | — | — |
 | RW | 엠레 벨뢰졸루 | Emre Belözoğlu | 1980-09-07 | B | B0 | 7 | — | — |
-| ST | 아드리아누 | Adriano | 1982-02-17 | S | S | 1 | — | — |
+| ST | 아드리아누 | Adriano | 1982-02-17 | S | S | 1 | 30 | 26 |
 | ST | 크리스티안 비에리 | Christian Vieri | 1973-07-12 | S | A- | 13 | — | — |
 | ST | 오바페미 마르틴스 | Obafemi Martins | 1984-10-28 | B | A- | 14 | — | — |
 
@@ -192,7 +192,7 @@ Source roster: https://www.eurofotbal.cz/kluby/italie/uc-sampdoria/soupiska/2004
 | CAM | 프랑코 브리엔차 | Franco Brienza | 1979-03-19 | S | A- | 3 | — | — |
 | CAM | 람베르토 차울리 | Lamberto Zauli | 1971-07-19 | S | B+ | 5 | — | — |
 | CAM | 마리오 산타나 | Mario Santana | 1981-12-23 | B | B+ | 6 | — | — |
-| ST | 루카 토니 | Luca Toni | 1977-05-26 | S | A+ | 3 | — | — |
+| ST | 루카 토니 | Luca Toni | 1977-05-26 | S | A+ | 3 | 35 | — |
 
 Source roster: https://www.footballsquads.co.uk/italy/2004-2005/seriea/palermo.htm
 
@@ -213,7 +213,7 @@ Source roster: https://www.footballsquads.co.uk/italy/2004-2005/seriea/palermo.h
 | CM | 알베르토 아퀼라니 | Alberto Aquilani | 1984-07-07 | B | B0 | 14 | — | — |
 | CAM | 프란체스코 토티 | Francesco Totti | 1976-09-27 | S | A+ | 2 | — | — |
 | RW | 만시니 | Mancini | 1980-08-01 | B | A- | 2 | — | — |
-| ST | 빈첸초 몬텔라 | Vincenzo Montella | 1974-06-18 | S | A+ | 4 | — | — |
+| ST | 빈첸초 몬텔라 | Vincenzo Montella | 1974-06-18 | S | A+ | 4 | 37 | — |
 | ST | 안토니오 카사노 | Antonio Cassano | 1982-07-12 | S | A0 | 9 | — | — |
 | ST | 미도 | Mido | 1983-02-23 | B | B- | 22 | — | — |
 
@@ -563,9 +563,9 @@ Best XI is a candidate only. Individual historical dominance, opposite-position 
 
 ## 9. Prior-year evidence and player-performance limits
 
-- 2004-05 individual Serie A appearance count directly represented in archive for 22/151; 129 missing. This is **not** 22/151 independently fully rated athletes.
+- 2004-05 individual Serie A appearance count directly represented in archive for 27/151; 124 missing. This is **not** 22/151 independently fully rated athletes.
 
-- Direct previous DRAFT 2002-03 AND 2003-04 numeric cross-links: 67/151; these prior numbers have **not been newly independently verified**.
+- Direct previous DRAFT 2002-03 AND 2003-04 numeric cross-links: 69/151; these prior numbers have **not been newly independently verified**.
 
 - Complete independently verified three-season player-quality review: **0**. Thus EVERY grade/rank remains `draft_unapproved` and cannot be used as established fact.
 
@@ -650,3 +650,17 @@ Best XI is a candidate only. Individual historical dominance, opposite-position 
 4. Re-evaluate 151 tier proposals and ordinal position ranks based on independent individual seasonal evidence; review one alternative per role and missing true co-starters.
 
 5. Reassess Best XI with independent comparison; only then mark historical status verified; await user signoff separately.
+
+## 14. Same-turn independent individual source crosschecks (supplement)
+
+- **파비오 칸나바로 (Fabio Cannavaro, Juventus Football Club)**: 2004-05 Juventus 38 league appearances/2 goals, 2003-04 Inter 22/2, 2002-03 Inter 28/0. Full current league presence and elite individual defending; S draft not derived from retroactively revoked club title. [historical sources](https://rsssf.org/players/cannavarodata.html)
+- **즐라탄 이브라히모비치 (Zlatan Ibrahimović, Juventus Football Club)**: 2004-05 Juventus Serie A 35 apps/31 starts/2764 min/16 goals/5 assists. Ajax Eredivisie 2002-03 25/13 and 2003-04 22/13 show prior potential, but cross-league context matters; A+ preliminary. [historical sources](https://fbref.com/en/players/4cde5509/Zlatan-Ibrahimovic)
+- **카카 (Kaká, Associazione Calcio Milan)**: 2004-05 Milan 36 Serie A apps/33 starts/2931 min/7 goals/13 assists; 2003-04 30/25 starts/10 goals/5 assists. Elite chance creation and sustained creator role merit provisional S; 2002-03 earlier Brazil period remains season mapping pending. [historical sources](https://fbref.com/en/players/b2d6ea70/Kaka)
+- **안드리 셰우첸코 (Andriy Shevchenko, Associazione Calcio Milan)**: 2004-05 29 Serie A appearances/17 goals, after 2003-04 32/24 and 2002-03 24/5. 2004 and 2003 goals plus movement/finishing underpin S draft; no team trophy bonus. [historical sources](https://www.rsssf.org/players/shevchenkodata.html)
+- **아드리아누 (Adriano, Football Club Internazionale Milano)**: 2004-05 Inter 30 Serie A apps/26 starts/2274 min/16 goals. 2002-03 Parma 28/16; 2003-04 Parma 9/8 and Inter 16/9 (25/17 aggregated, two club stints stored separately). S draft for repeat individual forward production, not trophies. [historical sources](https://fbref.com/en/players/4ec73d8a/Adriano)
+- **루카 토니 (Luca Toni, Unione Sportiva Città di Palermo)**: 2004-05 Palermo Serie A 35/20, after 2003-04 Serie B Palermo 45/30 and 2002-03 Brescia Serie A 16/2. Current output and prior upward trend support A+ proposal without promoting Serie B output to Serie A. [historical sources](https://rsssf.org/players/tonidata.html)
+- **빈첸초 몬텔라 (Vincenzo Montella, Associazione Sportiva Roma)**: 2004-05 37 Serie A appearances/21 goals with Roma, after 11/5 (2003-04) and 29/9 (2002-03). Major current-year finishing surge; A+ provisional given uneven prior two seasons. [historical sources](https://www.rsssf.org/players/montelladata.html)
+
+- Current 2004-05 league appearances now individually sourced: **27/151**. Both prior seasons with numeric appearances: **69/151**; not every matchminute or qualitative assessment is complete.
+- Source usage carefully distinguishes 2003-04 Palermo Serie B 45 appearances/30 goals (Luca Toni) from Serie A. Adriano 2003-04 Parma/Inter split recorded without assigning combined stats to a single club.
+- Full independent three-season *quality* audit remains **0/151** despite numeric records; all tiers and ranks remain unapproved proposals.
