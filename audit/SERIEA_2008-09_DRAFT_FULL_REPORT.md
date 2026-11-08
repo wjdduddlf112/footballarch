@@ -62,13 +62,13 @@ Source for 2008-09 domestic league individual stats: https://fbref.com/en/squads
 | LB | 크리스티안 몰리나로 | Cristian Molinaro | Juventus Football Club | 1983-07-30 | S | B+ | 6 | 29 | 29 | 2559 | 0 | 0 |
 | LB | 파올로 데 첼리에 | Paolo De Ceglie | Juventus Football Club | 1986-09-17 | B | B0 | 13 | 19 | 11 | 1078 | 0 | 1 |
 | RB | 즈데네크 그리게라 | Zdeněk Grygera | Juventus Football Club | 1980-05-14 | S | B+ | 4 | 31 | 28 | 2438 | 2 | 2 |
-| RB | 하산 살리하미지치 | Hasan Salihamidžić | Juventus Football Club | 1977-01-01 | B | B0 | 12 | 11 | 7 | 690 | — | — |
+| RB | 하산 살리하미지치 | Hasan Salihamidžić | Juventus Football Club | 1977-01-01 | B | B0 | 12 | 11 | 7 | 690 | 1 | 1 |
 | DM | 모하메드 시소코 | Mohamed Sissoko | Juventus Football Club | 1985-01-22 | S | A- | 7 | 21 | 20 | 1661 | 2 | 1 |
 | DM | 크리스티안 폴센 | Christian Poulsen | Juventus Football Club | 1980-02-28 | B | B0 | 11 | 23 | 14 | 1358 | 1 | 2 |
 | CM | 클라우디오 마르키시오 | Claudio Marchisio | Juventus Football Club | 1986-01-19 | S | B+ | 11 | 24 | 20 | 1867 | 3 | 2 |
 | CM | 티아구 | Tiago | Juventus Football Club | 1981-05-02 | B | B0 | 14 | 15 | 12 | 934 | 0 | 0 |
 | LW | 파벨 네드베드 | Pavel Nedvěd | Juventus Football Club | 1972-08-30 | S | A- | 5 | 32 | 28 | 2505 | 7 | 6 |
-| LW | 세바스티안 조빈코 | Sebastian Giovinco | Juventus Football Club | 1987-01-26 | B | B+ | 7 | 19 | 9 | 897 | — | — |
+| LW | 세바스티안 조빈코 | Sebastian Giovinco | Juventus Football Club | 1987-01-26 | B | B+ | 7 | 19 | 9 | 897 | 2 | 4 |
 | RW | 마우로 카모라네시 | Mauro Camoranesi | Juventus Football Club | 1976-10-04 | S | A- | 1 | 19 | 14 | 1196 | 1 | 2 |
 | RW | 마르코 마르키오니 | Marco Marchionni | Juventus Football Club | 1980-07-22 | B | B+ | 3 | 27 | 19 | 1760 | 1 | 4 |
 | ST | 알레산드로 델 피에로 | Alessandro Del Piero | Juventus Football Club | 1974-11-09 | S | A0 | 6 | 31 | 28 | 2361 | 13 | 9 |
@@ -88,14 +88,14 @@ Source for 2008-09 domestic league individual stats: https://fbref.com/en/squads
 | RB | 잔루카 참브로타 | Gianluca Zambrotta | Associazione Calcio Milan | 1977-02-19 | S | A0 | 2 | 34 | 33 | 2946 | 1 | 0 |
 | RB | 루카 안토니니 | Luca Antonini | Associazione Calcio Milan | 1982-08-04 | B | B- | 13 | 11 | 4 | 372 | 0 | 0 |
 | DM | 안드레아 피를로 | Andrea Pirlo | Associazione Calcio Milan | 1979-05-19 | S | A0 | 4 | 26 | 26 | 2323 | 1 | 2 |
-| DM | 젠나로 가투소 | Gennaro Gattuso | Associazione Calcio Milan | 1978-01-09 | B | B+ | 9 | 12 | 11 | 961 | 0 | — |
+| DM | 젠나로 가투소 | Gennaro Gattuso | Associazione Calcio Milan | 1978-01-09 | B | B+ | 9 | 12 | 11 | 961 | 0 | 2 |
 | CM | 클라렌스 세도르프 | Clarence Seedorf | Associazione Calcio Milan | 1976-04-01 | S | A0 | 3 | 33 | 30 | 2614 | 6 | 5 |
 | CM | 마시모 암브로시니 | Massimo Ambrosini | Associazione Calcio Milan | 1977-05-29 | S | B+ | 9 | 28 | 24 | 2065 | 7 | 3 |
 | CM | 데이비드 베컴 | David Beckham | Associazione Calcio Milan | 1975-05-02 | B | B+ | 12 | 18 | 18 | 1425 | 2 | 5 |
 | CAM | 카카 | Kaká | Associazione Calcio Milan | 1982-04-22 | S | S | 1 | 31 | 28 | 2558 | 16 | 9 |
-| CAM | 호나우지뉴 | Ronaldinho | Associazione Calcio Milan | 1980-03-21 | S | A- | 4 | 29 | 16 | 1612 | 8 | — |
+| CAM | 호나우지뉴 | Ronaldinho | Associazione Calcio Milan | 1980-03-21 | S | A- | 4 | 29 | 16 | 1612 | 8 | 5 |
 | ST | 알레샨드리 파투 | Alexandre Pato | Associazione Calcio Milan | 1989-09-02 | S | A0 | 7 | 36 | 27 | 2274 | 15 | 4 |
-| ST | 필리포 인차기 | Filippo Inzaghi | Associazione Calcio Milan | 1973-08-09 | B | A- | 10 | 26 | 15 | 1408 | 13 | — |
+| ST | 필리포 인차기 | Filippo Inzaghi | Associazione Calcio Milan | 1973-08-09 | B | A- | 10 | 26 | 15 | 1408 | 13 | 2 |
 Source for 2008-09 domestic league individual stats: https://fbref.com/en/squads/dc56fe14/2008-2009/Milan-Stats
 ### Associazione Calcio Fiorentina — 19 nominees (11 S / 8 B)
 | Position | Korean name | Original name | Original club | DOB | S/B | Grade | Pos rank | 2008-09 apps | Starts | Minutes | Goals | Assists |
@@ -108,16 +108,16 @@ Source for 2008-09 domestic league individual stats: https://fbref.com/en/squads
 | LB | 후안 마누엘 바르가스 | Juan Manuel Vargas | Associazione Calcio Fiorentina | 1983-10-05 | S | A- | 4 | 27 | 24 | 2006 | 3 | 2 |
 | LB | 마누엘 파스콸 | Manuel Pasqual | Associazione Calcio Fiorentina | 1982-03-13 | B | B+ | 8 | 19 | 15 | 1418 | 1 | 2 |
 | RB | 잔루카 코모토 | Gianluca Comotto | Associazione Calcio Fiorentina | 1978-10-16 | S | B+ | 5 | 28 | 25 | 2250 | 0 | 0 |
-| RB | 루차노 차우리 | Luciano Zauri | Associazione Calcio Fiorentina | 1978-01-20 | B | B0 | 9 | 18 | 13 | 1216 | 1 | — |
+| RB | 루차노 차우리 | Luciano Zauri | Associazione Calcio Fiorentina | 1978-01-20 | B | B0 | 9 | 18 | 13 | 1216 | 1 | 0 |
 | DM | 펠리피 멜루 | Felipe Melo | Associazione Calcio Fiorentina | 1983-06-26 | S | A0 | 3 | 29 | 29 | 2556 | 2 | 1 |
 | DM | 마르코 도나델 | Marco Donadel | Associazione Calcio Fiorentina | 1983-04-21 | B | B0 | 10 | 29 | 19 | 1733 | 0 | 1 |
 | CM | 리카르도 몬톨리보 | Riccardo Montolivo | Associazione Calcio Fiorentina | 1985-01-18 | S | A0 | 2 | 34 | 32 | 2852 | 4 | 6 |
 | CM | 즈드라브코 쿠즈마노비치 | Zdravko Kuzmanović | Associazione Calcio Fiorentina | 1987-09-22 | S | B+ | 7 | 32 | 25 | 2054 | 2 | 2 |
-| CM | 마르틴 예르겐센 | Martin Jørgensen | Associazione Calcio Fiorentina | 1975-10-06 | B | B0 | 16 | 10 | 5 | 498 | — | — |
+| CM | 마르틴 예르겐센 | Martin Jørgensen | Associazione Calcio Fiorentina | 1975-10-06 | B | B0 | 16 | 10 | 5 | 498 | 1 | 0 |
 | LW | 아드리안 무투 | Adrian Mutu | Associazione Calcio Fiorentina | 1979-01-08 | S | A0 | 3 | 19 | 19 | 1578 | 13 | 3 |
 | LW | 스테반 요베티치 | Stevan Jovetić | Associazione Calcio Fiorentina | 1989-11-02 | B | B+ | 6 | 29 | 19 | 1640 | 2 | 0 |
 | RW | 마리오 산타나 | Mario Santana | Associazione Calcio Fiorentina | 1981-12-23 | S | B+ | 5 | 20 | 17 | 1438 | 1 | 3 |
-| RW | 프랑코 세미올리 | Franco Semioli | Associazione Calcio Fiorentina | 1980-06-20 | B | B0 | 8 | 21 | 13 | 1218 | 0 | — |
+| RW | 프랑코 세미올리 | Franco Semioli | Associazione Calcio Fiorentina | 1980-06-20 | B | B0 | 8 | 21 | 13 | 1218 | 0 | 3 |
 | ST | 알베르토 질라르디노 | Alberto Gilardino | Associazione Calcio Fiorentina | 1982-07-05 | S | A+ | 3 | 35 | 34 | 2958 | 19 | 2 |
 Source for 2008-09 domestic league individual stats: https://fbref.com/en/squads/421387cf/2008-2009/Fiorentina-Stats
 ### Genoa Cricket and Football Club — 17 nominees (11 S / 6 B)
@@ -261,7 +261,7 @@ Source for 2008-09 domestic league individual stats: https://fbref.com/en/squads
 | 9 | 루차노 차우리 | Luciano Zauri | Associazione Calcio Fiorentina | B0 | 18 | 13 | 1216 | 1 |
 | 10 | 로렌초 데 실베스트리 | Lorenzo De Silvestri | Società Sportiva Lazio | B0 | 21 | 12 | 1069 | 0 |
 | 11 | 마르코 모타 | Marco Motta | Associazione Sportiva Roma | B0 | 13 | 11 | 1065 | 0 |
-| 12 | 하산 살리하미지치 | Hasan Salihamidžić | Juventus Football Club | B0 | 11 | 7 | 690 | — |
+| 12 | 하산 살리하미지치 | Hasan Salihamidžić | Juventus Football Club | B0 | 11 | 7 | 690 | 1 |
 | 13 | 루카 안토니니 | Luca Antonini | Associazione Calcio Milan | B- | 11 | 4 | 372 | 0 |
 ### DM (12)
 | Rank | Korean | Original | Original club | Tier | Apps | Starts | Min | Goals |
@@ -296,7 +296,7 @@ Source for 2008-09 domestic league individual stats: https://fbref.com/en/squads
 | 13 | 마투잘렝 | Matuzalém | Società Sportiva Lazio | B0 | 14 | 13 | 1113 | 0 |
 | 14 | 티아구 | Tiago | Juventus Football Club | B0 | 15 | 12 | 934 | 0 |
 | 15 | 파트리크 비에이라 | Patrick Vieira | Football Club Internazionale Milano | B0 | 19 | 10 | 994 | 1 |
-| 16 | 마르틴 예르겐센 | Martin Jørgensen | Associazione Calcio Fiorentina | B0 | 10 | 5 | 498 | — |
+| 16 | 마르틴 예르겐센 | Martin Jørgensen | Associazione Calcio Fiorentina | B0 | 10 | 5 | 498 | 1 |
 ### CAM (8)
 | Rank | Korean | Original | Original club | Tier | Apps | Starts | Min | Goals |
 |---:|---|---|---|:---:|---:|---:|---:|---:|
@@ -317,7 +317,7 @@ Source for 2008-09 domestic league individual stats: https://fbref.com/en/squads
 | 4 | 주세페 스쿨리 | Giuseppe Sculli | Genoa Cricket and Football Club | A- | 35 | 28 | 2309 | 8 |
 | 5 | 파벨 네드베드 | Pavel Nedvěd | Juventus Football Club | A- | 32 | 28 | 2505 | 7 |
 | 6 | 스테반 요베티치 | Stevan Jovetić | Associazione Calcio Fiorentina | B+ | 29 | 19 | 1640 | 2 |
-| 7 | 세바스티안 조빈코 | Sebastian Giovinco | Juventus Football Club | B+ | 19 | 9 | 897 | — |
+| 7 | 세바스티안 조빈코 | Sebastian Giovinco | Juventus Football Club | B+ | 19 | 9 | 897 | 2 |
 | 8 | 제레미 메네즈 | Jérémy Ménez | Associazione Sportiva Roma | B0 | 29 | 13 | 1294 | 4 |
 ### RW (8)
 | Rank | Korean | Original | Original club | Tier | Apps | Starts | Min | Goals |
@@ -491,8 +491,10 @@ Source for 2008-09 domestic league individual stats: https://fbref.com/en/squads
 - **Actual domestic Serie A status of backup goalkeeper:** Fiorentina Vlada Avramov appeared in **zero** 2008-09 Serie A games, despite earlier tentative shortlist. Replaced before final by **Marco Storari** (1977-01-07), one 2008-09 league start, 90 minutes. This fulfills starter/co-starter selection and is explicitly supported by [FBref 2008-09 Fiorentina goalkeepers](https://fbref.com/en/squads/421387cf/2008-2009/Fiorentina-Stats) and [UEFA 2009-10 Official Handbook](https://www.uefa.com/MultimediaFiles/Download/Publications/uefaorg/Publications/01/44/79/55/1447955_DOWNLOAD.pdf). Updated candidate original shortlist separately, no zero-appearance Avramov record in player JSON.
 - All 128 player date-of-birth fields present. Four previously missing entries Walter Samuel, Marco Marchionni, Christian Abbiati, Ousmane Dabo filled from period squad and French football federation sources. DOB field completion is not assertion that all 128 DOBs were independently multi-source verified.
 - Source crosscheck current league data: [Inter](https://fbref.com/en/squads/d609edc0/2008-2009/Internazionale-Stats), [Juventus](https://fbref.com/en/squads/e0652b02/2008-2009/c11/Juventus-Stats-Serie-A), [Milan](https://fbref.com/en/squads/dc56fe14/2008-2009/Milan-Stats), [Fiorentina](https://fbref.com/en/squads/421387cf/2008-2009/Fiorentina-Stats), [Genoa](https://fbref.com/en/squads/658bf2de/2008-2009/Genoa-Stats), [Roma](https://fbref.com/en/squads/cf74a709/2008-2009/Roma-Stats), [Lazio](https://fbref.com/en/squads/7213da33/2008-2009/Lazio-Stats). Distinct from all-competitions tables.
-- With expanded player data, **128/128 current 2008-09 league apps, 128/128 starts and minutes, 125/128 goals, 119/128 assists** are source-backed. Unknown scorer/assists values remain NULL rather than 0. Small cross-source minute/assist disagreements may exist and require full match log reconciliation.
+- With expanded player data, **128/128 current 2008-09 league appearances, starts, minutes, goals and assists** have numerically sourced entries. Unknown scorer/assist values remain NULL rather than invented 0 if any source gap reopens. Small cross-source minute/assist disagreements may exist and require full match log reconciliation.
 - Note actual 2009-10 UEFA Europa League was first season after UEFA Cup rebranding, correct event label in qualifiers. No UEFA Intertoto Cup in 2009.
+- Supplemental final domestic scoring source pass: Juventus Giovinco 2g/4a, Salihamidžić 1g/1a; Milan Ronaldinho 8g/5a, Inzaghi 13g/2a, Gattuso 0g/2a; Fiorentina Jørgensen 1g/0a, Zauri 1g/0a, Semioli 0g/3a, sourced from same-season FBref tables.
+
 ## 11. Quantified verification checklist (do not conflate data structure with historical accuracy)
 | Gate | Actual state |
 |---|---|
