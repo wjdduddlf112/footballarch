@@ -22,6 +22,16 @@ try{
  const allText=await page.locator('#content').innerText();
  record('Higuain shown in All Tiers',allText.includes('곤살로 이과인'),true);
  record('Sassuolo shown in All Tiers',allText.includes('Sassuolo'),true);
+ await page.locator('tr[data-player="seriea-2015-16-napoli-gonzalohiguain"]').first().click();
+ await page.locator('#modalLayer [role="dialog"]').waitFor();
+ const detail=await page.locator('#modalLayer').innerText();
+ record('Player detail birthdate / tier / team',detail.includes('곤살로 이과인')&&detail.includes('1987-12-10')&&detail.includes('Napoli')&&detail.includes('DRAFT'),true);
+ await page.locator('#modalLayer [data-action="close"]').click();
+ await page.locator('[data-tier-view="positions"]').click();
+ record('Position-group view 116 rows',await page.locator('#content table.datagrid tbody tr').count(),116);
+ await page.locator('[data-tier-view="tiers"]').click();
+ record('Tier-group view 116 rows',await page.locator('#content table.datagrid tbody tr').count(),116);
+ await page.locator('[data-tier-view="clubs"]').click();
  await page.locator('[data-tab="formation"]').click();
  await page.waitForTimeout(300);
  record('Best XI 11 slots',await page.locator('#content .slot').count(),11);
@@ -43,6 +53,12 @@ try{
  record('Statistics panel has content',(await page.locator('#content').innerText()).length>100,true);
  mkdirSync('audit-artifacts/seriea-2015-16-live',{recursive:true});
  await page.screenshot({path:'audit-artifacts/seriea-2015-16-live/stats.png',fullPage:true});
+ await page.goto('https://wjdduddlf112.github.io/footballarch/?league=seriea&season=2014-15',{waitUntil:'domcontentloaded',timeout:60000});
+ await page.waitForFunction(()=>document.querySelector('#stateTag')?.textContent==='DRAFT',{timeout:55000});
+ await page.locator('[data-tab="formation"]').click();
+ const olderSlots=await page.locator('#content .slot .spot').allTextContents();
+ record('Prior 2014-15 4-3-3 still has CAM',olderSlots.filter(x=>x.trim()==='CAM').length,1);
+ record('Prior 2014-15 CM preserved',olderSlots.filter(x=>x.trim()==='CM').length,1);
 }catch(e){result.errors.push(e?.stack||String(e))}
 finally{mkdirSync('audit-artifacts/seriea-2015-16-live',{recursive:true});writeFileSync('audit-artifacts/seriea-2015-16-live/result.json',JSON.stringify(result,null,2));await b.close();}
 console.log(JSON.stringify(result,null,2));if(result.errors.length)process.exit(1);
