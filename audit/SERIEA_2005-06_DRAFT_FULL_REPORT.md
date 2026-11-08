@@ -172,8 +172,8 @@ Independent 2005-06 league squad rows: https://www.adamoli.org/almanacco/serie-a
 | GK | 루카 부치 | Luca Bucci | Parma Football Club | 1969-03-13 | S | B+ | 6 | 22 | 21 | 1895 | 0 | — |
 | GK | 크리스티아노 루파텔리 | Cristiano Lupatelli | Parma Football Club | 1978-06-21 | B | B- | 12 | 8 | 7 | 581 | 0 | — |
 | CB | 마테오 콘티니 | Matteo Contini | Parma Football Club | 1980-04-16 | S | B+ | 12 | 32 | 31 | 2723 | 1 | — |
-| CB | 주세페 카르도네 | Giuseppe Cardone | Parma Football Club | 1974-03-03 | S | B0 | 18 | 24 | 23 | 1949 | 1 | — |
-| CB | 파올로 칸나바로 | Paolo Cannavaro | Parma Football Club | 1981-06-26 | B | B+ | 14 | 29 | 25 | 2315 | 3 | — |
+| CB | 주세페 카르도네 | Giuseppe Cardone | Parma Football Club | 1974-03-03 | B | B0 | 18 | 24 | 23 | 1949 | 1 | — |
+| CB | 파올로 칸나바로 | Paolo Cannavaro | Parma Football Club | 1981-06-26 | S | B+ | 14 | 29 | 25 | 2315 | 3 | — |
 | LB | 조반니 파스콸레 | Giovanni Pasquale | Parma Football Club | 1982-01-05 | S | B0 | 9 | 22 | 16 | 1439 | 0 | — |
 | RB | 다니엘레 보네라 | Daniele Bonera | Parma Football Club | 1981-05-31 | S | B+ | 6 | 23 | 22 | 1957 | 0 | — |
 | RB | 다미아노 페로네티 | Damiano Ferronetti | Parma Football Club | 1984-11-01 | B | B- | 11 | 12 | 10 | 911 | 0 | — |
@@ -484,6 +484,8 @@ Ranking method: provisional tier first, then 2005-06 league starts and goals in 
 - FBref/Adamoli Kaká 2005-06 league goals 14, a separate L'Équipe goals list shows 15; keep primary statistical source 14, flag unresolved disagreement. Sources: https://fbref.com/en/players/b2d6ea70/Kaka ; https://www.lequipe.fr/Football/championnat-d-italie/saison-2005-2006/page-classement-individuel/buteurs
 - Roma Totti 2005-06 24 appearances and 15 league goals but sidelined Feb-Apr 2006; missing the rest due injury is NOT treated as lower intrinsic technique. See https://www.uefa.com/news-media/news/01b4-0e6d84a637ce-6f504fb047d1-1000--totti-delighted-with-early-return/
 - Palermo 2005-06 **Luca Toni NOT ELIGIBLE**: he played for Fiorentina 2005-06 despite previous-season Palermo 2004-05 top goals. Fiorentina excluded from 2006-07 UEFA.
+- Parma 2005-06 defender role correction: Paolo Cannavaro (29 apps/25 starts) nominated starting CB; Giuseppe Cardone (24/23) alternate, under at-most-one CB alternate rule; corroborating contemporary 2006-01-08 Gazzetta Parma lineup: https://www.gazzetta.it/Calcio/Squadre/Milan/Primo_Piano/2006/01_Gennaio/08/tab.shtml
+
 ## 11. Structural and historical test status
 | Gate | Status |
 |---|---|
