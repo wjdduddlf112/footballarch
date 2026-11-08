@@ -560,6 +560,16 @@
 - Inter contemporary lineup 4-2-3-1: https://www.inter.it/en/match_center/4154
 - Sassuolo 2015-16 actual qualification and 2016-17 Europa debut: https://www.sassuolocalcio.it/en/club/our-history/main-characters-in-serie-a/
 
+
+## 12. 실서비스 검증 결과 — Google Chrome LIVE SUCCESS
+
+- GitHub Actions Node.js 시즌 구조 감사: **SUCCESS**, https://github.com/wjdduddlf112/footballarch/actions/runs/42495944917
+- 실제 GitHub Pages 화면 Chrome 검증: **18/18 성공**, https://github.com/wjdduddlf112/footballarch/actions/runs/42496358136
+- 화면 검증 범위: 2015-16 DRAFT 상태, All Tiers 116명 구단별/포지션별/티어별, 이과인 선수 상세, 리그 표, Top Class, Statistics, Best XI 11명(2 CM, 0 CAM 강제).
+- 전 시즌 2014-15 4-3-3의 원래 1 CM + 1 CAM 유지도 실제 브라우저로 회귀 검증 성공.
+- Chrome 검증 아티팩트(결과 JSON 및 스크린샷): https://github.com/wjdduddlf112/footballarch/actions/runs/42496358136/artifacts/13624185103
+- 이 결과는 UI의 선택한 항목을 실제 브라우저로 확인했다는 뜻이며, 116명 전원의 역사적 수치·3시즌 동포지션 질적 평가에 대한 독립 자료 검증을 완료했다는 뜻은 아니다.
+
 ## 11. 미완료 항목
 
 1. 모든 선수의 직전 두 시즌(2013-14/2014-15) 독립적 출전·선발·기여도 및 위치 자료(타국 리그 포함) 확인.
