@@ -1,0 +1,22 @@
+name: Verify Serie A 2011-12 DRAFT
+on:
+  push:
+    paths:
+      - 'data/seriea-2011-12.json'
+      - 'scripts/verify-seriea-2011-12.mjs'
+      - '.github/workflows/verify-seriea-2011-12.yml'
+  workflow_dispatch:
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Run 2011-12 Serie A 109-player structural audit
+        run: node scripts/verify-seriea-2011-12.mjs
