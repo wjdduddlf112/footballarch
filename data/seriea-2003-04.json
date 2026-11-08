@@ -7,7 +7,7 @@
     "status": "draft_unapproved",
     "standingsOnly": false,
     "standingsStatus": "archived_RSSSF_2003_04_crosschecked",
-    "playerCandidateStatus": "new_from_scratch_2003_04_archived_squad_FootballSquads_and_FBref_current_data_numeric_partial",
+    "playerCandidateStatus": "fresh_2003_04_118_nominees_all_current_regular_league_apps_starts_minutes_checked_strict_two_prior_year_identity_audit_partial",
     "candidateCount": 118,
     "candidateCoverage": {
       "qualifiedClubs": 7,
@@ -45,7 +45,33 @@
         "Dejan Stanković Lazio/Inter"
       ],
       "singleNominationRule": "register only at 2003-04 club with more Serie A appearances/minutes; other club spell preserved separately"
-    }
+    },
+    "shortlistExclusions": [
+      {
+        "club": "inter",
+        "name": "Julio Ricardo Cruz",
+        "leagueAppearances": 22,
+        "leagueStarts": 17,
+        "leagueGoals": 7,
+        "leagueAssists": 3,
+        "reason": "2003-04 Inter 22 games, 17 starts, 7 goals, 3 assists vs Obafemi Martins 24 games, 11 starts, 7 goals and 6 assists. Select latter third ST option due higher individual goal contribution despite fewer starts. Cruz was important regular and merits a re-evaluation if user weights starts more."
+      }
+    ],
+    "statDiscrepancies": [
+      {
+        "name": "Obafemi Martins",
+        "field": "2003-04 Serie A appearances",
+        "fbref": 24,
+        "interArchive": 25,
+        "goals": 7,
+        "status": "unresolved_matchwise",
+        "sources": [
+          "https://fbref.com/en/players/70849fc2/Obafemi-Martins",
+          "https://www.inter.it/en/archivio_giocatore/G0745/obafemi-martins"
+        ]
+      }
+    ],
+    "currentYearStatsVerification": "118/118 numeric, 14 previously null resolved via 2003-04 squad sources, 2003-04 Obafemi 24 vs Inter archived 25 preserved as conflict"
   },
   "clubs": [
     {
@@ -863,21 +889,22 @@
       "originalTacticalRole": "GK",
       "role": "backup",
       "roleSemantics": "Provisional 2003-04 squad XI/backup position slot not matchwise complete",
-      "starts": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
+      "starts": 2,
+      "leagueAppearances": 2,
+      "leagueStarts": 2,
+      "leagueMinutes": 180,
       "leagueGoals": 0,
       "leagueAssists": 0,
       "statsScope": "Serie A regular 2003-04 only",
       "tier": null,
       "rank": null,
       "review": "draft_unapproved",
-      "verificationStatus": "current_appearance_start_minute_unverified_NULL",
+      "verificationStatus": "fbref_2003_04_serie_a_regular_individual_record_verified_draft",
       "positionVerification": "season_dominant_position_pending_matchwise",
       "sources": [
         "https://fbref.com/en/squads/dc56fe14/2003-2004/c11/Milan-Stats-Serie-A",
-        "https://www.footballsquads.co.uk/italy/2003-2004/seriea/milan.htm"
+        "https://www.footballsquads.co.uk/italy/2003-2004/seriea/milan.htm",
+        "https://fbref.com/en/squads/dc56fe14/2003-2004/Milan-Stats"
       ],
       "evidence": {
         "seasonStats": "https://fbref.com/en/squads/dc56fe14/2003-2004/c11/Milan-Stats-Serie-A",
@@ -916,13 +943,13 @@
           "2003-04": {
             "club": "Associazione Calcio Milan",
             "league": "Serie A",
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
+            "appearances": 2,
+            "starts": 2,
+            "minutes": 180,
             "goals": 0,
             "assists": 0,
-            "source": "https://fbref.com/en/squads/dc56fe14/2003-2004/c11/Milan-Stats-Serie-A",
-            "verification": "current_appearance_start_minute_unverified_NULL"
+            "source": "https://fbref.com/en/squads/dc56fe14/2003-2004/Milan-Stats",
+            "verification": "individually_checked_2003_04_FBref_regular_season_row"
           }
         }
       }
@@ -3629,21 +3656,22 @@
       "originalTacticalRole": "GK",
       "role": "backup",
       "roleSemantics": "Provisional 2003-04 squad XI/backup position slot not matchwise complete",
-      "starts": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
+      "starts": 2,
+      "leagueAppearances": 2,
+      "leagueStarts": 2,
+      "leagueMinutes": 180,
       "leagueGoals": 0,
       "leagueAssists": 0,
       "statsScope": "Serie A regular 2003-04 only",
       "tier": null,
       "rank": null,
       "review": "draft_unapproved",
-      "verificationStatus": "current_appearance_start_minute_unverified_NULL",
+      "verificationStatus": "fbref_2003_04_serie_a_regular_individual_record_verified_draft",
       "positionVerification": "season_dominant_position_pending_matchwise",
       "sources": [
         "https://fbref.com/en/squads/e0652b02/2003-2004/Juventus-Stats",
-        "https://www.footballsquads.co.uk/italy/2003-2004/seriea/juventus.htm"
+        "https://www.footballsquads.co.uk/italy/2003-2004/seriea/juventus.htm",
+        "https://www.myjuve.it/season-2003-04-juventus/serie_a-players-SerA-108.aspx"
       ],
       "evidence": {
         "seasonStats": "https://fbref.com/en/squads/e0652b02/2003-2004/Juventus-Stats",
@@ -3682,13 +3710,13 @@
           "2003-04": {
             "club": "Juventus Football Club",
             "league": "Serie A",
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
+            "appearances": 2,
+            "starts": 2,
+            "minutes": 180,
             "goals": 0,
             "assists": 0,
-            "source": "https://fbref.com/en/squads/e0652b02/2003-2004/Juventus-Stats",
-            "verification": "current_appearance_start_minute_unverified_NULL"
+            "source": "https://www.myjuve.it/season-2003-04-juventus/serie_a-players-SerA-108.aspx",
+            "verification": "individually_checked_2003_04_FBref_regular_season_row"
           }
         }
       }
@@ -3787,17 +3815,17 @@
       "originalTacticalRole": "CB",
       "role": "backup",
       "roleSemantics": "Provisional 2003-04 squad XI/backup position slot not matchwise complete",
-      "starts": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
-      "leagueGoals": null,
-      "leagueAssists": null,
+      "starts": 15,
+      "leagueAppearances": 17,
+      "leagueStarts": 15,
+      "leagueMinutes": 1325,
+      "leagueGoals": 1,
+      "leagueAssists": 0,
       "statsScope": "Serie A regular 2003-04 only",
       "tier": null,
       "rank": null,
       "review": "draft_unapproved",
-      "verificationStatus": "current_appearance_start_minute_unverified_NULL",
+      "verificationStatus": "fbref_2003_04_serie_a_regular_individual_record_verified_draft",
       "positionVerification": "season_dominant_position_pending_matchwise",
       "sources": [
         "https://fbref.com/en/squads/e0652b02/2003-2004/Juventus-Stats",
@@ -3840,13 +3868,13 @@
           "2003-04": {
             "club": "Juventus Football Club",
             "league": "Serie A",
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "assists": null,
+            "appearances": 17,
+            "starts": 15,
+            "minutes": 1325,
+            "goals": 1,
+            "assists": 0,
             "source": "https://fbref.com/en/squads/e0652b02/2003-2004/Juventus-Stats",
-            "verification": "current_appearance_start_minute_unverified_NULL"
+            "verification": "individually_checked_2003_04_FBref_regular_season_row"
           }
         }
       }
@@ -3866,17 +3894,17 @@
       "originalTacticalRole": "CB",
       "role": "backup",
       "roleSemantics": "Provisional 2003-04 squad XI/backup position slot not matchwise complete",
-      "starts": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
+      "starts": 17,
+      "leagueAppearances": 19,
+      "leagueStarts": 17,
+      "leagueMinutes": 1449,
       "leagueGoals": 1,
-      "leagueAssists": null,
+      "leagueAssists": 0,
       "statsScope": "Serie A regular 2003-04 only",
       "tier": null,
       "rank": null,
       "review": "draft_unapproved",
-      "verificationStatus": "current_appearance_start_minute_unverified_NULL",
+      "verificationStatus": "fbref_2003_04_serie_a_regular_individual_record_verified_draft",
       "positionVerification": "season_dominant_position_pending_matchwise",
       "sources": [
         "https://fbref.com/en/squads/e0652b02/2003-2004/Juventus-Stats",
@@ -3919,13 +3947,13 @@
           "2003-04": {
             "club": "Juventus Football Club",
             "league": "Serie A",
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
+            "appearances": 19,
+            "starts": 17,
+            "minutes": 1449,
             "goals": 1,
-            "assists": null,
+            "assists": 0,
             "source": "https://fbref.com/en/squads/e0652b02/2003-2004/Juventus-Stats",
-            "verification": "current_appearance_start_minute_unverified_NULL"
+            "verification": "individually_checked_2003_04_FBref_regular_season_row"
           }
         }
       }
@@ -4024,17 +4052,17 @@
       "originalTacticalRole": "LB",
       "role": "backup",
       "roleSemantics": "Provisional 2003-04 squad XI/backup position slot not matchwise complete",
-      "starts": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
-      "leagueGoals": null,
-      "leagueAssists": null,
+      "starts": 9,
+      "leagueAppearances": 18,
+      "leagueStarts": 9,
+      "leagueMinutes": 807,
+      "leagueGoals": 0,
+      "leagueAssists": 0,
       "statsScope": "Serie A regular 2003-04 only",
       "tier": null,
       "rank": null,
       "review": "draft_unapproved",
-      "verificationStatus": "current_appearance_start_minute_unverified_NULL",
+      "verificationStatus": "fbref_2003_04_serie_a_regular_individual_record_verified_draft",
       "positionVerification": "season_dominant_position_pending_matchwise",
       "sources": [
         "https://fbref.com/en/squads/e0652b02/2003-2004/Juventus-Stats",
@@ -4077,13 +4105,13 @@
           "2003-04": {
             "club": "Juventus Football Club",
             "league": "Serie A",
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "assists": null,
+            "appearances": 18,
+            "starts": 9,
+            "minutes": 807,
+            "goals": 0,
+            "assists": 0,
             "source": "https://fbref.com/en/squads/e0652b02/2003-2004/Juventus-Stats",
-            "verification": "current_appearance_start_minute_unverified_NULL"
+            "verification": "individually_checked_2003_04_FBref_regular_season_row"
           }
         }
       }
@@ -4182,17 +4210,17 @@
       "originalTacticalRole": "RB",
       "role": "backup",
       "roleSemantics": "Provisional 2003-04 squad XI/backup position slot not matchwise complete",
-      "starts": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
-      "leagueGoals": null,
-      "leagueAssists": null,
+      "starts": 14,
+      "leagueAppearances": 19,
+      "leagueStarts": 14,
+      "leagueMinutes": 1312,
+      "leagueGoals": 0,
+      "leagueAssists": 1,
       "statsScope": "Serie A regular 2003-04 only",
       "tier": null,
       "rank": null,
       "review": "draft_unapproved",
-      "verificationStatus": "current_appearance_start_minute_unverified_NULL",
+      "verificationStatus": "fbref_2003_04_serie_a_regular_individual_record_verified_draft",
       "positionVerification": "season_dominant_position_pending_matchwise",
       "sources": [
         "https://fbref.com/en/squads/e0652b02/2003-2004/Juventus-Stats",
@@ -4235,13 +4263,13 @@
           "2003-04": {
             "club": "Juventus Football Club",
             "league": "Serie A",
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "assists": null,
+            "appearances": 19,
+            "starts": 14,
+            "minutes": 1312,
+            "goals": 0,
+            "assists": 1,
             "source": "https://fbref.com/en/squads/e0652b02/2003-2004/Juventus-Stats",
-            "verification": "current_appearance_start_minute_unverified_NULL"
+            "verification": "individually_checked_2003_04_FBref_regular_season_row"
           }
         }
       }
@@ -4419,17 +4447,17 @@
       "originalTacticalRole": "CM",
       "role": "backup",
       "roleSemantics": "Provisional 2003-04 squad XI/backup position slot not matchwise complete",
-      "starts": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
-      "leagueGoals": null,
-      "leagueAssists": null,
+      "starts": 13,
+      "leagueAppearances": 20,
+      "leagueStarts": 13,
+      "leagueMinutes": 1131,
+      "leagueGoals": 3,
+      "leagueAssists": 4,
       "statsScope": "Serie A regular 2003-04 only",
       "tier": null,
       "rank": null,
       "review": "draft_unapproved",
-      "verificationStatus": "current_appearance_start_minute_unverified_NULL",
+      "verificationStatus": "fbref_2003_04_serie_a_regular_individual_record_verified_draft",
       "positionVerification": "season_dominant_position_pending_matchwise",
       "sources": [
         "https://fbref.com/en/squads/e0652b02/2003-2004/Juventus-Stats",
@@ -4472,13 +4500,13 @@
           "2003-04": {
             "club": "Juventus Football Club",
             "league": "Serie A",
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "assists": null,
+            "appearances": 20,
+            "starts": 13,
+            "minutes": 1131,
+            "goals": 3,
+            "assists": 4,
             "source": "https://fbref.com/en/squads/e0652b02/2003-2004/Juventus-Stats",
-            "verification": "current_appearance_start_minute_unverified_NULL"
+            "verification": "individually_checked_2003_04_FBref_regular_season_row"
           }
         }
       }
@@ -4735,17 +4763,17 @@
       "originalTacticalRole": "ST",
       "role": "backup",
       "roleSemantics": "Provisional 2003-04 squad XI/backup position slot not matchwise complete",
-      "starts": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
+      "starts": 18,
+      "leagueAppearances": 22,
+      "leagueStarts": 18,
+      "leagueMinutes": 1469,
       "leagueGoals": 8,
-      "leagueAssists": null,
+      "leagueAssists": 4,
       "statsScope": "Serie A regular 2003-04 only",
       "tier": null,
       "rank": null,
       "review": "draft_unapproved",
-      "verificationStatus": "current_appearance_start_minute_unverified_NULL",
+      "verificationStatus": "fbref_2003_04_serie_a_regular_individual_record_verified_draft",
       "positionVerification": "season_dominant_position_pending_matchwise",
       "sources": [
         "https://fbref.com/en/squads/e0652b02/2003-2004/Juventus-Stats",
@@ -4788,13 +4816,13 @@
           "2003-04": {
             "club": "Juventus Football Club",
             "league": "Serie A",
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
+            "appearances": 22,
+            "starts": 18,
+            "minutes": 1469,
             "goals": 8,
-            "assists": null,
+            "assists": 4,
             "source": "https://fbref.com/en/squads/e0652b02/2003-2004/Juventus-Stats",
-            "verification": "current_appearance_start_minute_unverified_NULL"
+            "verification": "individually_checked_2003_04_FBref_regular_season_row"
           }
         }
       }
@@ -4814,17 +4842,17 @@
       "originalTacticalRole": "ST",
       "role": "backup",
       "roleSemantics": "Provisional 2003-04 squad XI/backup position slot not matchwise complete",
-      "starts": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
+      "starts": 15,
+      "leagueAppearances": 29,
+      "leagueStarts": 15,
+      "leagueMinutes": 1510,
       "leagueGoals": 11,
-      "leagueAssists": null,
+      "leagueAssists": 2,
       "statsScope": "Serie A regular 2003-04 only",
       "tier": null,
       "rank": null,
       "review": "draft_unapproved",
-      "verificationStatus": "current_appearance_start_minute_unverified_NULL",
+      "verificationStatus": "fbref_2003_04_serie_a_regular_individual_record_verified_draft",
       "positionVerification": "season_dominant_position_pending_matchwise",
       "sources": [
         "https://fbref.com/en/squads/e0652b02/2003-2004/Juventus-Stats",
@@ -4867,13 +4895,13 @@
           "2003-04": {
             "club": "Juventus Football Club",
             "league": "Serie A",
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
+            "appearances": 29,
+            "starts": 15,
+            "minutes": 1510,
             "goals": 11,
-            "assists": null,
+            "assists": 2,
             "source": "https://fbref.com/en/squads/e0652b02/2003-2004/Juventus-Stats",
-            "verification": "current_appearance_start_minute_unverified_NULL"
+            "verification": "individually_checked_2003_04_FBref_regular_season_row"
           }
         }
       }
@@ -4972,17 +5000,17 @@
       "originalTacticalRole": "GK",
       "role": "backup",
       "roleSemantics": "Provisional 2003-04 squad XI/backup position slot not matchwise complete",
-      "starts": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
+      "starts": 2,
+      "leagueAppearances": 2,
+      "leagueStarts": 2,
+      "leagueMinutes": 180,
       "leagueGoals": 0,
       "leagueAssists": 0,
       "statsScope": "Serie A regular 2003-04 only",
       "tier": null,
       "rank": null,
       "review": "draft_unapproved",
-      "verificationStatus": "current_appearance_start_minute_unverified_NULL",
+      "verificationStatus": "fbref_2003_04_serie_a_regular_individual_record_verified_draft",
       "positionVerification": "season_dominant_position_pending_matchwise",
       "sources": [
         "https://fbref.com/en/squads/d609edc0/2003-2004/Internazionale-Stats",
@@ -5025,13 +5053,13 @@
           "2003-04": {
             "club": "Football Club Internazionale Milano",
             "league": "Serie A",
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
+            "appearances": 2,
+            "starts": 2,
+            "minutes": 180,
             "goals": 0,
             "assists": 0,
             "source": "https://fbref.com/en/squads/d609edc0/2003-2004/Internazionale-Stats",
-            "verification": "current_appearance_start_minute_unverified_NULL"
+            "verification": "individually_checked_2003_04_FBref_regular_season_row"
           }
         }
       }
@@ -5683,21 +5711,22 @@
       "originalTacticalRole": "CM",
       "role": "backup",
       "roleSemantics": "Provisional 2003-04 squad XI/backup position slot not matchwise complete",
-      "starts": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
-      "leagueGoals": null,
-      "leagueAssists": null,
+      "starts": 2,
+      "leagueAppearances": 9,
+      "leagueStarts": 2,
+      "leagueMinutes": 329,
+      "leagueGoals": 0,
+      "leagueAssists": 0,
       "statsScope": "Serie A regular 2003-04 only",
       "tier": null,
       "rank": null,
       "review": "draft_unapproved",
-      "verificationStatus": "current_appearance_start_minute_unverified_NULL",
+      "verificationStatus": "fbref_2003_04_serie_a_regular_individual_record_verified_draft",
       "positionVerification": "season_dominant_position_pending_matchwise",
       "sources": [
         "https://fbref.com/en/squads/d609edc0/2003-2004/Internazionale-Stats",
-        "https://www.footballsquads.co.uk/italy/2003-2004/seriea/inter.htm"
+        "https://www.footballsquads.co.uk/italy/2003-2004/seriea/inter.htm",
+        "https://fbref.com/en/players/ed2192d0/Giorgos-Karagounis"
       ],
       "evidence": {
         "seasonStats": "https://fbref.com/en/squads/d609edc0/2003-2004/Internazionale-Stats",
@@ -5736,13 +5765,13 @@
           "2003-04": {
             "club": "Football Club Internazionale Milano",
             "league": "Serie A",
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "assists": null,
-            "source": "https://fbref.com/en/squads/d609edc0/2003-2004/Internazionale-Stats",
-            "verification": "current_appearance_start_minute_unverified_NULL"
+            "appearances": 9,
+            "starts": 2,
+            "minutes": 329,
+            "goals": 0,
+            "assists": 0,
+            "source": "https://fbref.com/en/players/ed2192d0/Giorgos-Karagounis",
+            "verification": "individually_checked_2003_04_FBref_regular_season_row"
           }
         }
       }
@@ -6149,85 +6178,6 @@
         "goals": 8,
         "source": "https://fbref.com/en/squads/eab4234c/2003-2004/Parma-Stats",
         "rule": "register once with Inter 16 appearances 13 starts versus Parma 9 apps/8 starts; combined Serie A 25 games 17 goals"
-      }
-    },
-    {
-      "id": "seriea-2003-04-inter-julioricardocruz",
-      "name": "Julio Ricardo Cruz",
-      "nameKo": "훌리오 리카르도 크루스",
-      "nameOriginal": "Julio Ricardo Cruz",
-      "originalName": "Julio Ricardo Cruz",
-      "born": "1974-10-10",
-      "club": "inter",
-      "clubId": "inter",
-      "clubName": "Football Club Internazionale Milano",
-      "clubNameOriginal": "Football Club Internazionale Milano",
-      "position": "ST",
-      "originalTacticalRole": "ST",
-      "role": "backup",
-      "roleSemantics": "Provisional 2003-04 squad XI/backup position slot not matchwise complete",
-      "starts": 17,
-      "leagueAppearances": 22,
-      "leagueStarts": 17,
-      "leagueMinutes": 1296,
-      "leagueGoals": 7,
-      "leagueAssists": 3,
-      "statsScope": "Serie A regular 2003-04 only",
-      "tier": null,
-      "rank": null,
-      "review": "draft_unapproved",
-      "verificationStatus": "current_FBref_2003_04_league_numeric",
-      "positionVerification": "season_dominant_position_pending_matchwise",
-      "sources": [
-        "https://fbref.com/en/squads/d609edc0/2003-2004/Internazionale-Stats",
-        "https://www.footballsquads.co.uk/italy/2003-2004/seriea/inter.htm"
-      ],
-      "evidence": {
-        "seasonStats": "https://fbref.com/en/squads/d609edc0/2003-2004/Internazionale-Stats",
-        "seasonRoster": "https://www.footballsquads.co.uk/italy/2003-2004/seriea/inter.htm"
-      },
-      "threeSeasonReview": {
-        "assessmentSeasons": [
-          "2001-02",
-          "2002-03",
-          "2003-04"
-        ],
-        "weighting": "2003-04 highest > 2002-03 > 2001-02, evaluate player not team finish/trophy",
-        "records": {
-          "2001-02": {
-            "club": "Bologna FC",
-            "league": "Serie A",
-            "appearances": 33,
-            "starts": 32,
-            "minutes": 2775,
-            "goals": null,
-            "assists": null,
-            "source": "https://fbref.com/en/squads/1d8099f8/2001-2002/Bologna-Stats",
-            "verification": "prior_DRAFT_exact_original_name_not_new_independently_verified"
-          },
-          "2002-03": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "assists": null,
-            "source": null,
-            "verification": "unknown_prior_career_may_be_outside_Serie_A_never_assume_zero"
-          },
-          "2003-04": {
-            "club": "Football Club Internazionale Milano",
-            "league": "Serie A",
-            "appearances": 22,
-            "starts": 17,
-            "minutes": 1296,
-            "goals": 7,
-            "assists": 3,
-            "source": "https://fbref.com/en/squads/d609edc0/2003-2004/Internazionale-Stats",
-            "verification": "current_FBref_2003_04_league_numeric"
-          }
-        }
       }
     },
     {
@@ -9177,17 +9127,17 @@
       "originalTacticalRole": "CB",
       "role": "backup",
       "roleSemantics": "Provisional 2003-04 squad XI/backup position slot not matchwise complete",
-      "starts": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
-      "leagueGoals": null,
-      "leagueAssists": null,
+      "starts": 9,
+      "leagueAppearances": 19,
+      "leagueStarts": 9,
+      "leagueMinutes": 966,
+      "leagueGoals": 0,
+      "leagueAssists": 0,
       "statsScope": "Serie A regular 2003-04 only",
       "tier": null,
       "rank": null,
       "review": "draft_unapproved",
-      "verificationStatus": "current_appearance_start_minute_unverified_NULL",
+      "verificationStatus": "fbref_2003_04_serie_a_regular_individual_record_verified_draft",
       "positionVerification": "season_dominant_position_pending_matchwise",
       "sources": [
         "https://fbref.com/en/squads/04eea015/2003-2004/Udinese-Stats",
@@ -9230,13 +9180,13 @@
           "2003-04": {
             "club": "Udinese Calcio",
             "league": "Serie A",
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "assists": null,
+            "appearances": 19,
+            "starts": 9,
+            "minutes": 966,
+            "goals": 0,
+            "assists": 0,
             "source": "https://fbref.com/en/squads/04eea015/2003-2004/Udinese-Stats",
-            "verification": "current_appearance_start_minute_unverified_NULL"
+            "verification": "individually_checked_2003_04_FBref_regular_season_row"
           }
         }
       }
@@ -9335,17 +9285,17 @@
       "originalTacticalRole": "LB",
       "role": "backup",
       "roleSemantics": "Provisional 2003-04 squad XI/backup position slot not matchwise complete",
-      "starts": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
-      "leagueGoals": null,
-      "leagueAssists": null,
+      "starts": 9,
+      "leagueAppearances": 13,
+      "leagueStarts": 9,
+      "leagueMinutes": 872,
+      "leagueGoals": 0,
+      "leagueAssists": 1,
       "statsScope": "Serie A regular 2003-04 only",
       "tier": null,
       "rank": null,
       "review": "draft_unapproved",
-      "verificationStatus": "current_appearance_start_minute_unverified_NULL",
+      "verificationStatus": "fbref_2003_04_serie_a_regular_individual_record_verified_draft",
       "positionVerification": "season_dominant_position_pending_matchwise",
       "sources": [
         "https://fbref.com/en/squads/04eea015/2003-2004/Udinese-Stats",
@@ -9388,13 +9338,13 @@
           "2003-04": {
             "club": "Udinese Calcio",
             "league": "Serie A",
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "assists": null,
+            "appearances": 13,
+            "starts": 9,
+            "minutes": 872,
+            "goals": 0,
+            "assists": 1,
             "source": "https://fbref.com/en/squads/04eea015/2003-2004/Udinese-Stats",
-            "verification": "current_appearance_start_minute_unverified_NULL"
+            "verification": "individually_checked_2003_04_FBref_regular_season_row"
           }
         }
       }
@@ -10046,17 +9996,17 @@
       "originalTacticalRole": "ST",
       "role": "backup",
       "roleSemantics": "Provisional 2003-04 squad XI/backup position slot not matchwise complete",
-      "starts": null,
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
-      "leagueGoals": null,
-      "leagueAssists": null,
+      "starts": 2,
+      "leagueAppearances": 15,
+      "leagueStarts": 2,
+      "leagueMinutes": 302,
+      "leagueGoals": 1,
+      "leagueAssists": 0,
       "statsScope": "Serie A regular 2003-04 only",
       "tier": null,
       "rank": null,
       "review": "draft_unapproved",
-      "verificationStatus": "current_appearance_start_minute_unverified_NULL",
+      "verificationStatus": "fbref_2003_04_serie_a_regular_individual_record_verified_draft",
       "positionVerification": "season_dominant_position_pending_matchwise",
       "sources": [
         "https://fbref.com/en/squads/04eea015/2003-2004/Udinese-Stats",
@@ -10099,13 +10049,96 @@
           "2003-04": {
             "club": "Udinese Calcio",
             "league": "Serie A",
+            "appearances": 15,
+            "starts": 2,
+            "minutes": 302,
+            "goals": 1,
+            "assists": 0,
+            "source": "https://fbref.com/en/squads/04eea015/2003-2004/Udinese-Stats",
+            "verification": "individually_checked_2003_04_FBref_regular_season_row"
+          }
+        }
+      }
+    },
+    {
+      "id": "seriea-2003-04-inter-obafemimartins",
+      "name": "Obafemi Martins",
+      "nameKo": "오바페미 마르틴스",
+      "originalName": "Obafemi Martins",
+      "nameOriginal": "Obafemi Martins",
+      "born": "1984-10-28",
+      "club": "inter",
+      "clubId": "inter",
+      "clubName": "Football Club Internazionale Milano",
+      "clubNameOriginal": "Football Club Internazionale Milano",
+      "position": "ST",
+      "originalTacticalRole": "Striker / forward and frequent impact substitute with 11 league starts and 13 more appearances",
+      "role": "backup",
+      "roleSemantics": "Third nominated striker option by 2003-04 current personal goal/assist creative return; Cruz remains historic actual Inter member but shortlist cap excludes",
+      "starts": 11,
+      "leagueAppearances": 24,
+      "leagueStarts": 11,
+      "leagueMinutes": 1291,
+      "leagueGoals": 7,
+      "leagueAssists": 6,
+      "statsScope": "2003-04 regular Serie A only; FBref independent from 9 European matches",
+      "tier": null,
+      "rank": null,
+      "review": "draft_unapproved",
+      "verificationStatus": "individual_FBref_2003_04_serie_a_24_vs_Inter_official_archive_25_match_conflict",
+      "positionVerification": "center-forward_attack_rotation_11_league_starts",
+      "sources": [
+        "https://fbref.com/en/players/70849fc2/Obafemi-Martins",
+        "https://www.inter.it/en/archivio_giocatore/G0745/obafemi-martins"
+      ],
+      "sourceConflict": {
+        "field": "2003-04 Inter domestic league appearances",
+        "fbref": 24,
+        "interOfficial": 25,
+        "goals": 7,
+        "selected": "24 FBref for standardized regular-season starts/assist/minutes",
+        "status": "unresolved_pending_lineup_by_lineup_reconciliation"
+      },
+      "threeSeasonReview": {
+        "assessmentSeasons": [
+          "2001-02",
+          "2002-03",
+          "2003-04"
+        ],
+        "weighting": "2003-04 greatest; 2002-03 moderate; 2001-02 lowest; quality individual only",
+        "records": {
+          "2001-02": {
+            "club": "FC Internazionale Milano",
+            "league": "Serie A",
             "appearances": null,
             "starts": null,
             "minutes": null,
             "goals": null,
             "assists": null,
-            "source": "https://fbref.com/en/squads/04eea015/2003-2004/Udinese-Stats",
-            "verification": "current_appearance_start_minute_unverified_NULL"
+            "source": null,
+            "verification": "not_found_before_debut_not_assumed_without_historical_match_log"
+          },
+          "2002-03": {
+            "club": "FC Internazionale Milano",
+            "league": "Serie A",
+            "appearances": 4,
+            "starts": 3,
+            "minutes": 263,
+            "goals": 1,
+            "assists": 1,
+            "source": "https://fbref.com/en/players/70849fc2/Obafemi-Martins",
+            "verification": "independent_FBref_person_season_row"
+          },
+          "2003-04": {
+            "club": "Football Club Internazionale Milano",
+            "league": "Serie A",
+            "appearances": 24,
+            "starts": 11,
+            "minutes": 1291,
+            "goals": 7,
+            "assists": 6,
+            "source": "https://fbref.com/en/players/70849fc2/Obafemi-Martins",
+            "verification": "independent_FBref_person_season_row_disagreement_official_inter_archive_apps"
           }
         }
       }
@@ -10137,21 +10170,6 @@
       "udinese": "https://www.footballsquads.co.uk/italy/2003-2004/seriea/udinese.htm"
     },
     "unknownDOB": [],
-    "unknownCurrentLeagueNumerics": [
-      "seriea-2003-04-milan-christianabbiati",
-      "seriea-2003-04-juventus-antoniochimenti",
-      "seriea-2003-04-juventus-ciroferrara",
-      "seriea-2003-04-juventus-paolomontero",
-      "seriea-2003-04-juventus-gianlucapessotto",
-      "seriea-2003-04-juventus-alessandrobirindelli",
-      "seriea-2003-04-juventus-enzomaresca",
-      "seriea-2003-04-juventus-alessandrodelpiero",
-      "seriea-2003-04-juventus-marcodivaio",
-      "seriea-2003-04-inter-albertofontana",
-      "seriea-2003-04-inter-giorgoskaragounis",
-      "seriea-2003-04-udinese-alessandropierini",
-      "seriea-2003-04-udinese-mirkopieri",
-      "seriea-2003-04-udinese-carstenjancker"
-    ]
+    "unknownCurrentLeagueNumerics": []
   }
 }
