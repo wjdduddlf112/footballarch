@@ -37,20 +37,20 @@ Legend: S = nominal starter role, B = alternate, including co-starters when legi
 |---|---|---|---|---|:---:|:---:|---:|---:|---:|---:|---:|---:|
 | GK | 줄리우 세자르 | Júlio César | Football Club Internazionale Milano | 1979-09-03 | S | A+ | 1 | 32 | 32 | 2880 | 0 | — |
 | GK | 프란체스코 톨도 | Francesco Toldo | Football Club Internazionale Milano | 1971-12-02 | B | B0 | 11 | 6 | 6 | 540 | 0 | — |
-| CB | 마르코 마테라치 | Marco Materazzi | Football Club Internazionale Milano | 1973-08-19 | S | A+ | 1 | 28 | 27 | 2374 | 10 | — |
+| CB | 마르코 마테라치 | Marco Materazzi | Football Club Internazionale Milano | 1973-08-19 | S | A+ | 1 | 28 | 27 | 2374 | 10 | 0 |
 | CB | 이반 코르도바 | Iván Córdoba | Football Club Internazionale Milano | 1976-08-11 | S | A+ | 2 | 29 | 25 | 2271 | 0 | — |
 | CB | 니콜라스 부르디소 | Nicolás Burdisso | Football Club Internazionale Milano | 1981-04-12 | B | B+ | 14 | 24 | 19 | 1884 | 2 | — |
 | LB | 파비오 그로소 | Fabio Grosso | Football Club Internazionale Milano | 1977-11-28 | S | A- | 4 | 23 | 22 | 1624 | 2 | — |
 | LB | 막스웰 | Maxwell | Football Club Internazionale Milano | 1981-08-27 | B | B+ | 8 | 22 | 14 | 1229 | 1 | — |
-| RB | 마이콩 | Maicon | Football Club Internazionale Milano | 1981-07-26 | S | A+ | 1 | 32 | 27 | 2592 | 2 | — |
-| DM | 파트리크 비에이라 | Patrick Vieira | Football Club Internazionale Milano | 1976-06-23 | S | A+ | 3 | 20 | 19 | 1695 | 1 | — |
+| RB | 마이콩 | Maicon | Football Club Internazionale Milano | 1981-07-26 | S | A+ | 1 | 32 | 27 | 2592 | 2 | 8 |
+| DM | 파트리크 비에이라 | Patrick Vieira | Football Club Internazionale Milano | 1976-06-23 | S | A+ | 3 | 20 | 19 | 1695 | 1 | 3 |
 | DM | 올리비에 다쿠르 | Olivier Dacourt | Football Club Internazionale Milano | 1974-09-29 | B | B+ | 9 | 24 | 18 | 1484 | 0 | — |
 | CM | 하비에르 사네티 | Javier Zanetti | Football Club Internazionale Milano | 1973-08-10 | S | A+ | 1 | 37 | 34 | 3130 | 1 | — |
 | CM | 데얀 스탄코비치 | Dejan Stanković | Football Club Internazionale Milano | 1978-09-11 | S | A+ | 2 | 34 | 31 | 2723 | 6 | — |
 | CM | 에스테반 캄비아소 | Esteban Cambiasso | Football Club Internazionale Milano | 1980-08-18 | B | A+ | 3 | 21 | 18 | 1596 | 3 | — |
 | CAM | 루이스 피구 | Luís Figo | Football Club Internazionale Milano | 1972-11-04 | S | A0 | 4 | 32 | 19 | 2021 | 2 | — |
 | CAM | 알바로 레코바 | Álvaro Recoba | Football Club Internazionale Milano | 1976-03-17 | B | B- | 9 | 13 | 6 | 451 | 1 | — |
-| ST | 즐라탄 이브라히모비치 | Zlatan Ibrahimović | Football Club Internazionale Milano | 1981-10-03 | S | S | 2 | 27 | 25 | 2156 | 15 | — |
+| ST | 즐라탄 이브라히모비치 | Zlatan Ibrahimović | Football Club Internazionale Milano | 1981-10-03 | S | S | 2 | 27 | 25 | 2156 | 15 | 7 |
 | ST | 에르난 크레스포 | Hernán Crespo | Football Club Internazionale Milano | 1975-07-05 | S | A+ | 3 | 29 | 22 | 1857 | 14 | — |
 | ST | 아드리아누 | Adriano | Football Club Internazionale Milano | 1982-02-17 | B | B0 | 19 | 23 | 14 | 1413 | 5 | — |
 Contemporary original 2006-07 league player source: https://www.adamoli.org/almanacco/serie-a-2006-2007-marcatori-Inter.html
@@ -114,7 +114,7 @@ Contemporary original 2006-07 league player source: https://www.adamoli.org/alma
 | CM | 클라렌스 세도르프 | Clarence Seedorf | Associazione Calcio Milan | 1976-04-01 | S | A0 | 5 | 32 | 26 | 2276 | 7 | — |
 | CM | 젠나로 가투소 | Gennaro Gattuso | Associazione Calcio Milan | 1978-01-09 | S | A0 | 6 | 30 | 24 | 2173 | 1 | — |
 | CM | 크리스티안 브로키 | Cristian Brocchi | Associazione Calcio Milan | 1976-01-30 | B | B+ | 12 | 29 | 25 | 2153 | 1 | — |
-| CAM | 카카 | Kaká | Associazione Calcio Milan | 1982-04-22 | S | A+ | 1 | 31 | 30 | 2655 | 8 | — |
+| CAM | 카카 | Kaká | Associazione Calcio Milan | 1982-04-22 | S | A+ | 1 | 31 | 30 | 2655 | 8 | 6 |
 | CAM | 요안 구르퀴프 | Yoann Gourcuff | Associazione Calcio Milan | 1986-07-11 | B | B- | 8 | 21 | 9 | 963 | 1 | — |
 | ST | 알베르토 질라르디노 | Alberto Gilardino | Associazione Calcio Milan | 1982-07-05 | S | A0 | 6 | 30 | 25 | 2103 | 12 | — |
 | ST | 호나우두 | Ronaldo | Associazione Calcio Milan | 1976-09-18 | S | A- | 13 | 14 | 12 | 1060 | 7 | — |
@@ -159,7 +159,7 @@ Contemporary original 2006-07 league player source: https://www.adamoli.org/alma
 | CM | 마르코 도나델 | Marco Donadel | ACF Fiorentina | 1983-04-21 | B | B+ | 18 | 19 | 19 | 1666 | 0 | — |
 | CAM | 마르틴 예르겐센 | Martin Jørgensen | ACF Fiorentina | 1975-10-06 | S | B+ | 6 | 35 | 26 | 2255 | 3 | — |
 | ST | 아드리안 무투 | Adrian Mutu | ACF Fiorentina | 1979-01-08 | S | A+ | 4 | 33 | 33 | 2820 | 16 | — |
-| ST | 루카 토니 | Luca Toni | ACF Fiorentina | 1977-05-26 | S | A+ | 5 | 29 | 27 | 2328 | 16 | — |
+| ST | 루카 토니 | Luca Toni | ACF Fiorentina | 1977-05-26 | S | A+ | 5 | 29 | 27 | 2328 | 16 | 4 |
 | ST | 잠파올로 파치니 | Giampaolo Pazzini | ACF Fiorentina | 1984-08-02 | B | B+ | 15 | 24 | 9 | 1084 | 7 | — |
 Contemporary original 2006-07 league player source: https://www.adamoli.org/almanacco/serie-a-2006-2007-marcatori-Fiorentina.html
 ### Empoli Football Club — 16 candidates
@@ -541,6 +541,8 @@ Contemporary original 2006-07 league player source: https://www.adamoli.org/alma
 - Sampdoria Pietro Accardi CB 19 central-left [04] versus LB 4 [05]; Mirko Pieri LB 15 [05]. Contemporary Adamoli numeric positions and full source lines checked; main position retained CB and LB respectively.
 - The current-year individual 2006-07 appearance/starting/minute figures were completed 140/140. For Lazio, Fiorentina, Sampdoria, source field **MC (minutes total)** used, never just MT (starter-only minutes). Roma FBref directly sourced. Source discrepancies in historic minutes are not independently match-by-match reconciled.
 - Future trophies, 2007-08 form, later fame or 2006 World Cup legacy were not assigned additional credit.
+- Current 2006-07 FBref historical assists independently added and reconciled to JSON and club tables: Ibrahimović 7, Maicon 8, Vieira 3, Toni 4, Kaká 6, Materazzi 0. Adamoli 2006-07 minutes source remains primary; e.g. Kaká Adamoli 2655 vs FBref 2657 and Materazzi Adamoli 2374 vs FBref 2376 — retained as documented unresolved source differences.
+
 ## 11. Status gates / quantified verification
 | Gate | Result |
 |---|---|
