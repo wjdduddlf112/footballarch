@@ -1,0 +1,22 @@
+name: Verify Serie A 2009-10 DRAFT
+on:
+  push:
+    paths:
+      - 'data/seriea-2009-10.json'
+      - 'scripts/verify-seriea-2009-10.mjs'
+      - '.github/workflows/verify-seriea-2009-10.yml'
+  workflow_dispatch:
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout current repository
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify Serie A 2009-10 structural consistency
+        run: node scripts/verify-seriea-2009-10.mjs
