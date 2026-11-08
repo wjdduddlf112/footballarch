@@ -30,7 +30,7 @@ Sarri 4-3-3; Cuadrado right back, Ronaldo left attack, Dybala usually central se
 
 | Pos | 한글명 | Original name | Club (original) | Birth | Role | Tier | Position rank | AP/Starts/Minutes/G/A |
 |---|---|---|---|---|---|---|---:|---|
-| GK | 보이치에흐 슈쳉스니 | Wojciech Szczęsny | Juventus Football Club | 1990-04-18 | 주전 | A+ | 4 | 29/29/2592/0/? |
+| GK | 보이치에흐 슈쳉스니 | Wojciech Szczęsny | Juventus Football Club | 1990-04-18 | 주전 | A+ | 1 | 29/29/2592/0/? |
 | GK | 잔루이지 부폰 | Gianluigi Buffon | Juventus Football Club | 1978-01-28 | 후보 | B+ | 9 | 9/9/810/0/? |
 | CB | 레오나르도 보누치 | Leonardo Bonucci | Juventus Football Club | 1987-05-01 | 주전 | A+ | 2 | 35/35/3085/3/? |
 | CB | 마테이스 더리흐트 | Matthijs de Ligt | Juventus Football Club | 1999-08-12 | 주전 | A- | 9 | 29/26/2448/4/? |
@@ -47,7 +47,7 @@ Sarri 4-3-3; Cuadrado right back, Ronaldo left attack, Dybala usually central se
 | LW | 크리스티아누 호날두 | Cristiano Ronaldo dos Santos Aveiro | Juventus Football Club | 1985-02-05 | 주전 | S | 1 | 33/33/2919/31/? |
 | RW | 페데리코 베르나르데스키 | Federico Bernardeschi | Juventus Football Club | 1994-02-16 | 주전 | B0 | 7 | 29/19/1575/1/? |
 | RW | 도글라스 코스타 | Douglas Costa | Juventus Football Club | 1990-09-14 | 후보 | B+ | 4 | 23/7/792/1/? |
-| ST | 파울로 디발라 | Paulo Dybala | Juventus Football Club | 1993-11-15 | 주전 | A+ | 6 | 33/25/2165/11/6 |
+| ST | 파울로 디발라 | Paulo Dybala | Juventus Football Club | 1993-11-15 | 주전 | A+ | 2 | 33/25/2165/11/6 |
 | ST | 곤살로 이과인 | Gonzalo Higuaín | Juventus Football Club | 1987-12-10 | 후보 | B+ | 13 | 32/20/1867/8/? |
 
 2019-20 primary source: https://www.bdfutbol.com/en/t/t2019-203004.html
@@ -58,7 +58,7 @@ Conte 3-5-2; de Vrij central CB, Skriniar/Bastoni/Godin other CB, Candreva right
 
 | Pos | 한글명 | Original name | Club (original) | Birth | Role | Tier | Position rank | AP/Starts/Minutes/G/A |
 |---|---|---|---|---|---|---|---:|---|
-| GK | 사미르 한다노비치 | Samir Handanović | Football Club Internazionale Milano | 1984-07-14 | 주전 | A+ | 3 | 35/35/3150/0/? |
+| GK | 사미르 한다노비치 | Samir Handanović | Football Club Internazionale Milano | 1984-07-14 | 주전 | A+ | 2 | 35/35/3150/0/? |
 | GK | 다니엘레 파델리 | Daniele Padelli | Football Club Internazionale Milano | 1985-10-25 | 후보 | C+ | 12 | 3/3/270/0/? |
 | CB | 스테판 더 프레이 | Stefan de Vrij | Football Club Internazionale Milano | 1992-02-05 | 주전 | S | 1 | 34/32/2830/4/? |
 | CB | 밀란 슈크리니아르 | Milan Škriniar | Football Club Internazionale Milano | 1995-02-11 | 주전 | A+ | 5 | 32/30/2628/0/? |
@@ -74,7 +74,7 @@ Conte 3-5-2; de Vrij central CB, Skriniar/Bastoni/Godin other CB, Candreva right
 | CM | 마티아스 베시노 | Matías Vecino | Football Club Internazionale Milano | 1991-08-24 | 후보 | B0 | 16 | 20/14/1281/2/? |
 | CAM | 스테파노 센시 | Stefano Sensi | Football Club Internazionale Milano | 1995-08-05 | 주전 | B+ | 7 | 12/9/727/3/? |
 | CAM | 크리스티안 에릭센 | Christian Eriksen | Football Club Internazionale Milano | 1992-02-14 | 후보 | B+ | 8 | 17/8/701/1/? |
-| ST | 로멜루 루카쿠 | Romelu Lukaku | Football Club Internazionale Milano | 1993-05-13 | 주전 | A+ | 2 | 36/33/2984/23/? |
+| ST | 로멜루 루카쿠 | Romelu Lukaku | Football Club Internazionale Milano | 1993-05-13 | 주전 | A+ | 3 | 36/33/2984/23/? |
 | ST | 라우타로 마르티네스 | Lautaro Javier Martínez | Football Club Internazionale Milano | 1997-08-22 | 주전 | A0 | 7 | 35/29/2466/14/? |
 | ST | 알렉시스 산체스 | Alexis Sánchez | Football Club Internazionale Milano | 1988-12-19 | 후보 | B+ | 14 | 22/10/917/4/8 |
 
@@ -98,11 +98,11 @@ Gasperini 3-4-2-1; three centrebacks, Gosens/Hateboer wingbacks, Gomez left atta
 | DM | 마르턴 더 론 | Marten de Roon | Atalanta Bergamasca Calcio | 1991-03-29 | 주전 | A- | 3 | 35/29/2717/2/? |
 | CM | 마리오 파샬리치 | Mario Pašalić | Atalanta Bergamasca Calcio | 1995-02-09 | 주전 | A0 | 3 | 35/30/2426/9/? |
 | CM | 레모 프로일러 | Remo Freuler | Atalanta Bergamasca Calcio | 1992-04-15 | 주전 | B+ | 11 | 31/28/2344/2/? |
-| CAM | 파푸 고메스 | Alejandro Gómez | Atalanta Bergamasca Calcio | 1988-02-15 | 주전 | A+ | 2 | 36/34/2860/7/16 |
+| CAM | 파푸 고메스 | Alejandro Gómez | Atalanta Bergamasca Calcio | 1988-02-15 | 주전 | A+ | 1 | 36/34/2860/7/16 |
 | CAM | 루슬란 말리노우스키 | Ruslan Malinovskyi | Atalanta Bergamasca Calcio | 1993-05-04 | 후보 | A- | 3 | 34/12/1521/8/? |
 | RW | 요시프 일리치치 | Josip Iličić | Atalanta Bergamasca Calcio | 1988-01-29 | 주전 | A+ | 1 | 26/21/1672/15/? |
-| ST | 두반 사파타 | Duván Zapata | Atalanta Bergamasca Calcio | 1991-04-01 | 주전 | A+ | 3 | 28/25/2037/18/6 |
-| ST | 루이스 무리엘 | Luis Muriel | Atalanta Bergamasca Calcio | 1991-04-16 | 후보 | A+ | 4 | 34/10/1244/18/? |
+| ST | 두반 사파타 | Duván Zapata | Atalanta Bergamasca Calcio | 1991-04-01 | 주전 | A+ | 4 | 28/25/2037/18/6 |
+| ST | 루이스 무리엘 | Luis Muriel | Atalanta Bergamasca Calcio | 1991-04-16 | 후보 | A+ | 5 | 34/10/1244/18/? |
 
 2019-20 primary source: https://www.bdfutbol.com/en/t/t2019-203017.html
 
@@ -112,7 +112,7 @@ Inzaghi 3-5-2; three CB, Lulic/Jony left wingback, Lazzari right; Lucas holding,
 
 | Pos | 한글명 | Original name | Club (original) | Birth | Role | Tier | Position rank | AP/Starts/Minutes/G/A |
 |---|---|---|---|---|---|---|---:|---|
-| GK | 토마스 스트라코샤 | Thomas Strakosha | Società Sportiva Lazio | 1995-03-19 | 주전 | A+ | 1 | 38/38/3420/0/? |
+| GK | 토마스 스트라코샤 | Thomas Strakosha | Società Sportiva Lazio | 1995-03-19 | 주전 | A+ | 4 | 38/38/3420/0/? |
 | CB | 프란체스코 아체르비 | Francesco Acerbi | Società Sportiva Lazio | 1988-02-10 | 주전 | A+ | 3 | 36/36/3166/2/? |
 | CB | 루이스 펠리피 | Luiz Felipe | Società Sportiva Lazio | 1997-03-22 | 주전 | A- | 13 | 26/24/2029/1/? |
 | CB | 슈테판 라두 | Ștefan Radu | Società Sportiva Lazio | 1986-10-22 | 주전 | B+ | 15 | 29/28/2315/1/? |
@@ -156,7 +156,7 @@ Fonseca often 4-2-3-1 but shifted some late matches to three CB; Pellegrini/Zani
 | LW | 저스틴 클라위버르트 | Justin Kluivert | Associazione Sportiva Roma | 1999-05-05 | 후보 | B+ | 6 | 22/19/1523/4/? |
 | RW | 젱기즈 윈데르 | Cengiz Ünder | Associazione Sportiva Roma | 1997-07-14 | 주전 | B0 | 5 | 18/10/873/3/? |
 | RW | 카를레스 페레스 | Carles Pérez | Associazione Sportiva Roma | 1998-02-16 | 후보 | B0 | 9 | 14/5/562/1/? |
-| ST | 에딘 제코 | Edin Džeko | Associazione Sportiva Roma | 1986-03-17 | 주전 | A+ | 5 | 35/31/2854/16/7 |
+| ST | 에딘 제코 | Edin Džeko | Associazione Sportiva Roma | 1986-03-17 | 주전 | A+ | 6 | 35/31/2854/16/7 |
 | ST | 니콜라 칼리니치 | Nikola Kalinić | Associazione Sportiva Roma | 1988-01-05 | 후보 | B0 | 15 | 15/6/565/5/? |
 
 2019-20 primary source: https://www.bdfutbol.com/en/t/t2019-203009.html
@@ -167,7 +167,7 @@ Giampaolo first 7, Pioli rest of season. Pioli 4-2-3-1 with Bennacer and Kessie 
 
 | Pos | 한글명 | Original name | Club (original) | Birth | Role | Tier | Position rank | AP/Starts/Minutes/G/A |
 |---|---|---|---|---|---|---|---:|---|
-| GK | 잔루이지 돈나룸마 | Gianluigi Donnarumma | Associazione Calcio Milan | 1999-02-25 | 주전 | A+ | 2 | 36/36/3202/0/? |
+| GK | 잔루이지 돈나룸마 | Gianluigi Donnarumma | Associazione Calcio Milan | 1999-02-25 | 주전 | A+ | 3 | 36/36/3202/0/? |
 | GK | 아스미르 베고비치 | Asmir Begović | Associazione Calcio Milan | 1987-06-20 | 후보 | C+ | 13 | 2/1/128/0/? |
 | CB | 알레시오 로마뇰리 | Alessio Romagnoli | Associazione Calcio Milan | 1995-01-12 | 주전 | A0 | 6 | 35/35/3092/1/? |
 | CB | 마테오 무사키오 | Mateo Musacchio | Associazione Calcio Milan | 1990-08-26 | 주전 | B0 | 22 | 18/17/1467/0/? |
@@ -180,7 +180,7 @@ Giampaolo first 7, Pioli rest of season. Pioli 4-2-3-1 with Bennacer and Kessie 
 | DM | 루카스 비글리아 | Lucas Biglia | Associazione Calcio Milan | 1986-01-30 | 후보 | B- | 11 | 14/8/683/0/? |
 | CM | 프랑크 케시에 | Franck Kessié | Associazione Calcio Milan | 1996-12-19 | 주전 | A- | 7 | 35/33/2910/4/? |
 | CM | 자코모 보나벤투라 | Giacomo Bonaventura | Associazione Calcio Milan | 1989-08-22 | 후보 | B+ | 13 | 29/13/1327/3/? |
-| CAM | 하칸 찰하놀루 | Hakan Çalhanoğlu | Associazione Calcio Milan | 1994-02-08 | 주전 | A+ | 1 | 35/34/2718/9/9 |
+| CAM | 하칸 찰하놀루 | Hakan Çalhanoğlu | Associazione Calcio Milan | 1994-02-08 | 주전 | A+ | 2 | 35/34/2718/9/9 |
 | CAM | 루카스 파케타 | Lucas Paquetá | Associazione Calcio Milan | 1997-08-27 | 후보 | B0 | 9 | 24/12/1101/0/? |
 | LW | 안테 레비치 | Ante Rebić | Associazione Calcio Milan | 1993-09-21 | 주전 | A0 | 2 | 26/15/1397/11/? |
 | LW | 하파엘 레앙 | Rafael Leão | Associazione Calcio Milan | 1999-06-10 | 후보 | B+ | 5 | 31/12/1392/6/? |
@@ -222,190 +222,192 @@ Ancelotti early 4-4-2, Gattuso second half mainly 4-3-3 with Di Lorenzo RB, Alla
 
 ## 3. Position-by-position total rankings (all 133)
 
-Ranks are continuous within each position; tier and current-year player-specific contribution are primary, recent two-season history secondary. Within-tier ordering is DRAFT and the historical peer audit is pending. A player is listed in exactly one position.
+All within-position rankings are provisional individual assessments; corrected within-tier GK/CAM/ST comparisons explicitly consider season league awards and creative influence, not merely appearances or goals.
 
 ### GK — 13
 
 | Rank | 한국어 이름 | Original | Club | Tier | AP/Goals |
 |---:|---|---|---|---|---|
-| 1 | 토마스 스트라코샤 | Thomas Strakosha | SS Lazio | A+ | 38/0 |
-| 2 | 잔루이지 돈나룸마 | Gianluigi Donnarumma | AC Milan | A+ | 36/0 |
-| 3 | 사미르 한다노비치 | Samir Handanović | FC Internazionale Milano | A+ | 35/0 |
-| 4 | 보이치에흐 슈쳉스니 | Wojciech Szczęsny | Juventus FC | A+ | 29/0 |
-| 5 | 피에를루이지 골리니 | Pierluigi Gollini | Atalanta BC | A- | 33/0 |
-| 6 | 파우 로페스 | Pau López | AS Roma | B+ | 32/0 |
-| 7 | 알렉스 메레트 | Alex Meret | SSC Napoli | B+ | 22/0 |
-| 8 | 다비드 오스피나 | David Ospina | SSC Napoli | B+ | 17/0 |
-| 9 | 잔루이지 부폰 | Gianluigi Buffon | Juventus FC | B+ | 9/0 |
-| 10 | 마르코 스포르티엘로 | Marco Sportiello | Atalanta BC | B0 | 6/0 |
-| 11 | 안토니오 미란테 | Antonio Mirante | AS Roma | B0 | 5/0 |
-| 12 | 다니엘레 파델리 | Daniele Padelli | FC Internazionale Milano | C+ | 3/0 |
-| 13 | 아스미르 베고비치 | Asmir Begović | AC Milan | C+ | 2/0 |
+| 1 | 보이치에흐 슈쳉스니 | Wojciech Szczęsny | Juventus Football Club | A+ | 29/0 |
+| 2 | 사미르 한다노비치 | Samir Handanović | Football Club Internazionale Milano | A+ | 35/0 |
+| 3 | 잔루이지 돈나룸마 | Gianluigi Donnarumma | Associazione Calcio Milan | A+ | 36/0 |
+| 4 | 토마스 스트라코샤 | Thomas Strakosha | Società Sportiva Lazio | A+ | 38/0 |
+| 5 | 피에를루이지 골리니 | Pierluigi Gollini | Atalanta Bergamasca Calcio | A- | 33/0 |
+| 6 | 파우 로페스 | Pau López | Associazione Sportiva Roma | B+ | 32/0 |
+| 7 | 알렉스 메레트 | Alex Meret | Società Sportiva Calcio Napoli | B+ | 22/0 |
+| 8 | 다비드 오스피나 | David Ospina | Società Sportiva Calcio Napoli | B+ | 17/0 |
+| 9 | 잔루이지 부폰 | Gianluigi Buffon | Juventus Football Club | B+ | 9/0 |
+| 10 | 마르코 스포르티엘로 | Marco Sportiello | Atalanta Bergamasca Calcio | B0 | 6/0 |
+| 11 | 안토니오 미란테 | Antonio Mirante | Associazione Sportiva Roma | B0 | 5/0 |
+| 12 | 다니엘레 파델리 | Daniele Padelli | Football Club Internazionale Milano | C+ | 3/0 |
+| 13 | 아스미르 베고비치 | Asmir Begović | Associazione Calcio Milan | C+ | 2/0 |
 
 ### CB — 24
 
 | Rank | 한국어 이름 | Original | Club | Tier | AP/Goals |
 |---:|---|---|---|---|---|
-| 1 | 스테판 더 프레이 | Stefan de Vrij | FC Internazionale Milano | S | 34/4 |
-| 2 | 레오나르도 보누치 | Leonardo Bonucci | Juventus FC | A+ | 35/3 |
-| 3 | 프란체스코 아체르비 | Francesco Acerbi | SS Lazio | A+ | 36/2 |
-| 4 | 크리스 스몰링 | Chris Smalling | AS Roma | A+ | 30/3 |
-| 5 | 밀란 슈크리니아르 | Milan Škriniar | FC Internazionale Milano | A+ | 32/0 |
-| 6 | 알레시오 로마뇰리 | Alessio Romagnoli | AC Milan | A0 | 35/1 |
-| 7 | 하파에우 톨로이 | Rafael Tolói | Atalanta BC | A0 | 33/2 |
-| 8 | 칼리두 쿨리발리 | Kalidou Koulibaly | SSC Napoli | A0 | 25/0 |
-| 9 | 마테이스 더리흐트 | Matthijs de Ligt | Juventus FC | A- | 29/4 |
-| 10 | 코스타스 마놀라스 | Kostas Manolas | SSC Napoli | A- | 26/4 |
-| 11 | 베라트 짐시티 | Berat Djimsiti | Atalanta BC | A- | 34/2 |
-| 12 | 잔루카 만치니 | Gianluca Mancini | AS Roma | A- | 32/1 |
-| 13 | 루이스 펠리피 | Luiz Felipe | SS Lazio | A- | 26/1 |
-| 14 | 호세 루이스 팔로미노 | José Luis Palomino | Atalanta BC | B+ | 30/2 |
-| 15 | 슈테판 라두 | Ștefan Radu | SS Lazio | B+ | 29/1 |
-| 16 | 알레산드로 바스토니 | Alessandro Bastoni | FC Internazionale Milano | B+ | 25/2 |
-| 17 | 니콜라 막시모비치 | Nikola Maksimović | SSC Napoli | B+ | 22/1 |
-| 18 | 디에고 고딘 | Diego Godín | FC Internazionale Milano | B+ | 23/1 |
-| 19 | 시몬 키예르 | Simon Kjær | AC Milan | B+ | 15/0 |
-| 20 | 파트리크 가바론 | Patric Gabarrón | SS Lazio | B0 | 21/0 |
-| 21 | 페데리코 파시오 | Federico Fazio | AS Roma | B0 | 16/1 |
-| 22 | 마테오 무사키오 | Mateo Musacchio | AC Milan | B0 | 18/0 |
-| 23 | 마티아 칼다라 | Mattia Caldara | Atalanta BC | B0 | 14/0 |
-| 24 | 다니엘레 루가니 | Daniele Rugani | Juventus FC | B- | 10/0 |
+| 1 | 스테판 더 프레이 | Stefan de Vrij | Football Club Internazionale Milano | S | 34/4 |
+| 2 | 레오나르도 보누치 | Leonardo Bonucci | Juventus Football Club | A+ | 35/3 |
+| 3 | 프란체스코 아체르비 | Francesco Acerbi | Società Sportiva Lazio | A+ | 36/2 |
+| 4 | 크리스 스몰링 | Chris Smalling | Associazione Sportiva Roma | A+ | 30/3 |
+| 5 | 밀란 슈크리니아르 | Milan Škriniar | Football Club Internazionale Milano | A+ | 32/0 |
+| 6 | 알레시오 로마뇰리 | Alessio Romagnoli | Associazione Calcio Milan | A0 | 35/1 |
+| 7 | 하파에우 톨로이 | Rafael Tolói | Atalanta Bergamasca Calcio | A0 | 33/2 |
+| 8 | 칼리두 쿨리발리 | Kalidou Koulibaly | Società Sportiva Calcio Napoli | A0 | 25/0 |
+| 9 | 마테이스 더리흐트 | Matthijs de Ligt | Juventus Football Club | A- | 29/4 |
+| 10 | 코스타스 마놀라스 | Kostas Manolas | Società Sportiva Calcio Napoli | A- | 26/4 |
+| 11 | 베라트 짐시티 | Berat Djimsiti | Atalanta Bergamasca Calcio | A- | 34/2 |
+| 12 | 잔루카 만치니 | Gianluca Mancini | Associazione Sportiva Roma | A- | 32/1 |
+| 13 | 루이스 펠리피 | Luiz Felipe | Società Sportiva Lazio | A- | 26/1 |
+| 14 | 호세 루이스 팔로미노 | José Luis Palomino | Atalanta Bergamasca Calcio | B+ | 30/2 |
+| 15 | 슈테판 라두 | Ștefan Radu | Società Sportiva Lazio | B+ | 29/1 |
+| 16 | 알레산드로 바스토니 | Alessandro Bastoni | Football Club Internazionale Milano | B+ | 25/2 |
+| 17 | 니콜라 막시모비치 | Nikola Maksimović | Società Sportiva Calcio Napoli | B+ | 22/1 |
+| 18 | 디에고 고딘 | Diego Godín | Football Club Internazionale Milano | B+ | 23/1 |
+| 19 | 시몬 키예르 | Simon Kjær | Associazione Calcio Milan | B+ | 15/0 |
+| 20 | 파트리크 가바론 | Patric Gabarrón | Società Sportiva Lazio | B0 | 21/0 |
+| 21 | 페데리코 파시오 | Federico Fazio | Associazione Sportiva Roma | B0 | 16/1 |
+| 22 | 마테오 무사키오 | Mateo Musacchio | Associazione Calcio Milan | B0 | 18/0 |
+| 23 | 마티아 칼다라 | Mattia Caldara | Atalanta Bergamasca Calcio | B0 | 14/0 |
+| 24 | 다니엘레 루가니 | Daniele Rugani | Juventus Football Club | B- | 10/0 |
 
 ### LB — 13
 
 | Rank | 한국어 이름 | Original | Club | Tier | AP/Goals |
 |---:|---|---|---|---|---|
-| 1 | 로빈 고젠스 | Robin Gosens | Atalanta BC | A+ | 34/9 |
-| 2 | 테오 에르난데스 | Theo Hernández | AC Milan | A+ | 33/6 |
-| 3 | 알렉산다르 콜라로프 | Aleksandar Kolarov | AS Roma | A0 | 32/7 |
-| 4 | 알렉스 산드루 | Alex Sandro | Juventus FC | A0 | 29/1 |
-| 5 | 애슐리 영 | Ashley Young | FC Internazionale Milano | B+ | 18/4 |
-| 6 | 크리스티아노 비라기 | Cristiano Biraghi | FC Internazionale Milano | B+ | 26/2 |
-| 7 | 마리우 후이 | Mário Rui | SSC Napoli | B+ | 24/0 |
-| 8 | 레오나르도 스피나촐라 | Leonardo Spinazzola | AS Roma | B+ | 24/1 |
-| 9 | 세나드 룰리치 | Senad Lulić | SS Lazio | B+ | 20/0 |
-| 10 | 호니 로드리게스 | Jony Rodríguez | SS Lazio | B0 | 24/0 |
-| 11 | 마티아 데 실리오 | Mattia De Sciglio | Juventus FC | B- | 9/0 |
-| 12 | 리카르도 로드리게스 | Ricardo Rodríguez | AC Milan | C+ | 5/0 |
-| 13 | 파우지 굴람 | Faouzi Ghoulam | SSC Napoli | C+ | 9/0 |
+| 1 | 로빈 고젠스 | Robin Gosens | Atalanta Bergamasca Calcio | A+ | 34/9 |
+| 2 | 테오 에르난데스 | Theo Hernández | Associazione Calcio Milan | A+ | 33/6 |
+| 3 | 알렉산다르 콜라로프 | Aleksandar Kolarov | Associazione Sportiva Roma | A0 | 32/7 |
+| 4 | 알렉스 산드루 | Alex Sandro | Juventus Football Club | A0 | 29/1 |
+| 5 | 애슐리 영 | Ashley Young | Football Club Internazionale Milano | B+ | 18/4 |
+| 6 | 크리스티아노 비라기 | Cristiano Biraghi | Football Club Internazionale Milano | B+ | 26/2 |
+| 7 | 마리우 후이 | Mário Rui | Società Sportiva Calcio Napoli | B+ | 24/0 |
+| 8 | 레오나르도 스피나촐라 | Leonardo Spinazzola | Associazione Sportiva Roma | B+ | 24/1 |
+| 9 | 세나드 룰리치 | Senad Lulić | Società Sportiva Lazio | B+ | 20/0 |
+| 10 | 호니 로드리게스 | Jony Rodríguez | Società Sportiva Lazio | B0 | 24/0 |
+| 11 | 마티아 데 실리오 | Mattia De Sciglio | Juventus Football Club | B- | 9/0 |
+| 12 | 리카르도 로드리게스 | Ricardo Rodríguez | Associazione Calcio Milan | C+ | 5/0 |
+| 13 | 파우지 굴람 | Faouzi Ghoulam | Società Sportiva Calcio Napoli | C+ | 9/0 |
 
 ### RB — 14
 
 | Rank | 한국어 이름 | Original | Club | Tier | AP/Goals |
 |---:|---|---|---|---|---|
-| 1 | 조반니 디 로렌초 | Giovanni Di Lorenzo | SSC Napoli | A- | 33/3 |
-| 2 | 안토니오 칸드레바 | Antonio Candreva | FC Internazionale Milano | A- | 32/5 |
-| 3 | 후안 콰드라도 | Juan Cuadrado | Juventus FC | A- | 33/2 |
-| 4 | 마누엘 라차리 | Manuel Lazzari | SS Lazio | A- | 32/0 |
-| 5 | 다닐로 담브로시오 | Danilo D'Ambrosio | FC Internazionale Milano | B+ | 22/4 |
-| 6 | 한스 하테부르 | Hans Hateboer | Atalanta BC | B+ | 32/0 |
-| 7 | 다닐루 | Danilo Luiz da Silva | Juventus FC | B+ | 22/2 |
-| 8 | 티모시 카스타뉴 | Timothy Castagne | Atalanta BC | B+ | 27/1 |
-| 9 | 엘세이드 히사이 | Elseid Hysaj | SSC Napoli | B+ | 20/1 |
-| 10 | 브루누 페레스 | Bruno Peres | AS Roma | B+ | 16/2 |
-| 11 | 아담 마루시치 | Adam Marušić | SS Lazio | B+ | 15/2 |
-| 12 | 안드레아 콘티 | Andrea Conti | AC Milan | B0 | 23/0 |
-| 13 | 다비데 칼라브리아 | Davide Calabria | AC Milan | B0 | 25/1 |
-| 14 | 다비데 산톤 | Davide Santon | AS Roma | B0 | 15/0 |
+| 1 | 조반니 디 로렌초 | Giovanni Di Lorenzo | Società Sportiva Calcio Napoli | A- | 33/3 |
+| 2 | 안토니오 칸드레바 | Antonio Candreva | Football Club Internazionale Milano | A- | 32/5 |
+| 3 | 후안 콰드라도 | Juan Cuadrado | Juventus Football Club | A- | 33/2 |
+| 4 | 마누엘 라차리 | Manuel Lazzari | Società Sportiva Lazio | A- | 32/0 |
+| 5 | 다닐로 담브로시오 | Danilo D'Ambrosio | Football Club Internazionale Milano | B+ | 22/4 |
+| 6 | 한스 하테부르 | Hans Hateboer | Atalanta Bergamasca Calcio | B+ | 32/0 |
+| 7 | 다닐루 | Danilo Luiz da Silva | Juventus Football Club | B+ | 22/2 |
+| 8 | 티모시 카스타뉴 | Timothy Castagne | Atalanta Bergamasca Calcio | B+ | 27/1 |
+| 9 | 엘세이드 히사이 | Elseid Hysaj | Società Sportiva Calcio Napoli | B+ | 20/1 |
+| 10 | 브루누 페레스 | Bruno Peres | Associazione Sportiva Roma | B+ | 16/2 |
+| 11 | 아담 마루시치 | Adam Marušić | Società Sportiva Lazio | B+ | 15/2 |
+| 12 | 안드레아 콘티 | Andrea Conti | Associazione Calcio Milan | B0 | 23/0 |
+| 13 | 다비데 칼라브리아 | Davide Calabria | Associazione Calcio Milan | B0 | 25/1 |
+| 14 | 다비데 산톤 | Davide Santon | Associazione Sportiva Roma | B0 | 15/0 |
 
 ### DM — 11
 
 | Rank | 한국어 이름 | Original | Club | Tier | AP/Goals |
 |---:|---|---|---|---|---|
-| 1 | 마르첼로 브로조비치 | Marcelo Brozović | FC Internazionale Milano | A+ | 32/3 |
-| 2 | 미랄렘 피아니치 | Miralem Pjanić | Juventus FC | A+ | 30/3 |
-| 3 | 마르턴 더 론 | Marten de Roon | Atalanta BC | A- | 35/2 |
-| 4 | 이스마엘 베나세르 | Ismaël Bennacer | AC Milan | A- | 31/1 |
-| 5 | 루카스 레이바 | Lucas Leiva | SS Lazio | A- | 25/0 |
-| 6 | 알란 | Allan Marques Loureiro | SSC Napoli | B+ | 23/2 |
-| 7 | 아마두 디아와라 | Amadou Diawara | AS Roma | B+ | 22/1 |
-| 8 | 브리안 크리스탄테 | Bryan Cristante | AS Roma | B+ | 26/1 |
-| 9 | 디에고 데메 | Diego Demme | SSC Napoli | B+ | 15/1 |
-| 10 | 다닐로 카탈디 | Danilo Cataldi | SS Lazio | B0 | 21/1 |
-| 11 | 루카스 비글리아 | Lucas Biglia | AC Milan | B- | 14/0 |
+| 1 | 마르첼로 브로조비치 | Marcelo Brozović | Football Club Internazionale Milano | A+ | 32/3 |
+| 2 | 미랄렘 피아니치 | Miralem Pjanić | Juventus Football Club | A+ | 30/3 |
+| 3 | 마르턴 더 론 | Marten de Roon | Atalanta Bergamasca Calcio | A- | 35/2 |
+| 4 | 이스마엘 베나세르 | Ismaël Bennacer | Associazione Calcio Milan | A- | 31/1 |
+| 5 | 루카스 레이바 | Lucas Leiva | Società Sportiva Lazio | A- | 25/0 |
+| 6 | 알란 | Allan Marques Loureiro | Società Sportiva Calcio Napoli | B+ | 23/2 |
+| 7 | 아마두 디아와라 | Amadou Diawara | Associazione Sportiva Roma | B+ | 22/1 |
+| 8 | 브리안 크리스탄테 | Bryan Cristante | Associazione Sportiva Roma | B+ | 26/1 |
+| 9 | 디에고 데메 | Diego Demme | Società Sportiva Calcio Napoli | B+ | 15/1 |
+| 10 | 다닐로 카탈디 | Danilo Cataldi | Società Sportiva Lazio | B0 | 21/1 |
+| 11 | 루카스 비글리아 | Lucas Biglia | Associazione Calcio Milan | B- | 14/0 |
 
 ### CM — 17
 
 | Rank | 한국어 이름 | Original | Club | Tier | AP/Goals |
 |---:|---|---|---|---|---|
-| 1 | 루이스 알베르토 | Luis Alberto | SS Lazio | S | 36/6 |
-| 2 | 세르게이 밀린코비치사비치 | Sergej Milinković-Savić | SS Lazio | A+ | 37/7 |
-| 3 | 마리오 파샬리치 | Mario Pašalić | Atalanta BC | A0 | 35/9 |
-| 4 | 파비안 루이스 | Fabián Ruiz Peña | SSC Napoli | A0 | 33/3 |
-| 5 | 피오트르 지엘린스키 | Piotr Zieliński | SSC Napoli | A0 | 37/2 |
-| 6 | 조르당 베레투 | Jordan Veretout | AS Roma | A- | 33/6 |
-| 7 | 프랑크 케시에 | Franck Kessié | AC Milan | A- | 35/4 |
-| 8 | 니콜로 바렐라 | Nicolò Barella | FC Internazionale Milano | A- | 27/1 |
-| 9 | 로드리고 벤탄쿠르 | Rodrigo Bentancur | Juventus FC | A- | 30/0 |
-| 10 | 로베르토 갈리아르디니 | Roberto Gagliardini | FC Internazionale Milano | B+ | 24/4 |
-| 11 | 레모 프로일러 | Remo Freuler | Atalanta BC | B+ | 31/2 |
-| 12 | 아드리앵 라비오 | Adrien Rabiot | Juventus FC | B+ | 28/1 |
-| 13 | 자코모 보나벤투라 | Giacomo Bonaventura | AC Milan | B+ | 29/3 |
-| 14 | 블레즈 마튀디 | Blaise Matuidi | Juventus FC | B+ | 35/0 |
-| 15 | 마르코 파롤로 | Marco Parolo | SS Lazio | B+ | 29/1 |
-| 16 | 마티아스 베시노 | Matías Vecino | FC Internazionale Milano | B0 | 20/2 |
-| 17 | 엘리프 엘마스 | Eljif Elmas | SSC Napoli | B0 | 26/1 |
+| 1 | 루이스 알베르토 | Luis Alberto | Società Sportiva Lazio | S | 36/6 |
+| 2 | 세르게이 밀린코비치사비치 | Sergej Milinković-Savić | Società Sportiva Lazio | A+ | 37/7 |
+| 3 | 마리오 파샬리치 | Mario Pašalić | Atalanta Bergamasca Calcio | A0 | 35/9 |
+| 4 | 파비안 루이스 | Fabián Ruiz Peña | Società Sportiva Calcio Napoli | A0 | 33/3 |
+| 5 | 피오트르 지엘린스키 | Piotr Zieliński | Società Sportiva Calcio Napoli | A0 | 37/2 |
+| 6 | 조르당 베레투 | Jordan Veretout | Associazione Sportiva Roma | A- | 33/6 |
+| 7 | 프랑크 케시에 | Franck Kessié | Associazione Calcio Milan | A- | 35/4 |
+| 8 | 니콜로 바렐라 | Nicolò Barella | Football Club Internazionale Milano | A- | 27/1 |
+| 9 | 로드리고 벤탄쿠르 | Rodrigo Bentancur | Juventus Football Club | A- | 30/0 |
+| 10 | 로베르토 갈리아르디니 | Roberto Gagliardini | Football Club Internazionale Milano | B+ | 24/4 |
+| 11 | 레모 프로일러 | Remo Freuler | Atalanta Bergamasca Calcio | B+ | 31/2 |
+| 12 | 아드리앵 라비오 | Adrien Rabiot | Juventus Football Club | B+ | 28/1 |
+| 13 | 자코모 보나벤투라 | Giacomo Bonaventura | Associazione Calcio Milan | B+ | 29/3 |
+| 14 | 블레즈 마튀디 | Blaise Matuidi | Juventus Football Club | B+ | 35/0 |
+| 15 | 마르코 파롤로 | Marco Parolo | Società Sportiva Lazio | B+ | 29/1 |
+| 16 | 마티아스 베시노 | Matías Vecino | Football Club Internazionale Milano | B0 | 20/2 |
+| 17 | 엘리프 엘마스 | Eljif Elmas | Società Sportiva Calcio Napoli | B0 | 26/1 |
 
 ### CAM — 9
 
 | Rank | 한국어 이름 | Original | Club | Tier | AP/Goals |
 |---:|---|---|---|---|---|
-| 1 | 하칸 찰하놀루 | Hakan Çalhanoğlu | AC Milan | A+ | 35/9 |
-| 2 | 파푸 고메스 | Alejandro Gómez | Atalanta BC | A+ | 36/7 |
-| 3 | 루슬란 말리노우스키 | Ruslan Malinovskyi | Atalanta BC | A- | 34/8 |
-| 4 | 니콜로 차니올로 | Nicolò Zaniolo | AS Roma | A- | 26/6 |
-| 5 | 로렌초 펠레그리니 | Lorenzo Pellegrini | AS Roma | A- | 27/1 |
-| 6 | 애런 램지 | Aaron Ramsey | Juventus FC | B+ | 24/3 |
-| 7 | 스테파노 센시 | Stefano Sensi | FC Internazionale Milano | B+ | 12/3 |
-| 8 | 크리스티안 에릭센 | Christian Eriksen | FC Internazionale Milano | B+ | 17/1 |
-| 9 | 루카스 파케타 | Lucas Paquetá | AC Milan | B0 | 24/0 |
+| 1 | 파푸 고메스 | Alejandro Gómez | Atalanta Bergamasca Calcio | A+ | 36/7 |
+| 2 | 하칸 찰하놀루 | Hakan Çalhanoğlu | Associazione Calcio Milan | A+ | 35/9 |
+| 3 | 루슬란 말리노우스키 | Ruslan Malinovskyi | Atalanta Bergamasca Calcio | A- | 34/8 |
+| 4 | 니콜로 차니올로 | Nicolò Zaniolo | Associazione Sportiva Roma | A- | 26/6 |
+| 5 | 로렌초 펠레그리니 | Lorenzo Pellegrini | Associazione Sportiva Roma | A- | 27/1 |
+| 6 | 애런 램지 | Aaron Ramsey | Juventus Football Club | B+ | 24/3 |
+| 7 | 스테파노 센시 | Stefano Sensi | Football Club Internazionale Milano | B+ | 12/3 |
+| 8 | 크리스티안 에릭센 | Christian Eriksen | Football Club Internazionale Milano | B+ | 17/1 |
+| 9 | 루카스 파케타 | Lucas Paquetá | Associazione Calcio Milan | B0 | 24/0 |
 
 ### LW — 7
 
 | Rank | 한국어 이름 | Original | Club | Tier | AP/Goals |
 |---:|---|---|---|---|---|
-| 1 | 크리스티아누 호날두 | Cristiano Ronaldo dos Santos Aveiro | Juventus FC | S | 33/31 |
-| 2 | 안테 레비치 | Ante Rebić | AC Milan | A0 | 26/11 |
-| 3 | 로렌초 인시녜 | Lorenzo Insigne | SSC Napoli | A0 | 37/8 |
-| 4 | 헨리크 미키타리안 | Henrikh Mkhitaryan | AS Roma | A- | 22/9 |
-| 5 | 하파엘 레앙 | Rafael Leão | AC Milan | B+ | 31/6 |
-| 6 | 저스틴 클라위버르트 | Justin Kluivert | AS Roma | B+ | 22/4 |
-| 7 | 이르빙 로사노 | Hirving Lozano | SSC Napoli | B0 | 26/4 |
+| 1 | 크리스티아누 호날두 | Cristiano Ronaldo dos Santos Aveiro | Juventus Football Club | S | 33/31 |
+| 2 | 안테 레비치 | Ante Rebić | Associazione Calcio Milan | A0 | 26/11 |
+| 3 | 로렌초 인시녜 | Lorenzo Insigne | Società Sportiva Calcio Napoli | A0 | 37/8 |
+| 4 | 헨리크 미키타리안 | Henrikh Mkhitaryan | Associazione Sportiva Roma | A- | 22/9 |
+| 5 | 하파엘 레앙 | Rafael Leão | Associazione Calcio Milan | B+ | 31/6 |
+| 6 | 저스틴 클라위버르트 | Justin Kluivert | Associazione Sportiva Roma | B+ | 22/4 |
+| 7 | 이르빙 로사노 | Hirving Lozano | Società Sportiva Calcio Napoli | B0 | 26/4 |
 
 ### RW — 9
 
 | Rank | 한국어 이름 | Original | Club | Tier | AP/Goals |
 |---:|---|---|---|---|---|
-| 1 | 요시프 일리치치 | Josip Iličić | Atalanta BC | A+ | 26/15 |
-| 2 | 호세 카예혼 | José Callejón | SSC Napoli | B+ | 33/4 |
-| 3 | 사무 카스티예호 | Samu Castillejo | AC Milan | B+ | 22/2 |
-| 4 | 도글라스 코스타 | Douglas Costa | Juventus FC | B+ | 23/1 |
-| 5 | 젱기즈 윈데르 | Cengiz Ünder | AS Roma | B0 | 18/3 |
-| 6 | 마테오 폴리타노 | Matteo Politano | SSC Napoli | B0 | 15/2 |
-| 7 | 페데리코 베르나르데스키 | Federico Bernardeschi | Juventus FC | B0 | 29/1 |
-| 8 | 수소 | Suso | AC Milan | B0 | 16/1 |
-| 9 | 카를레스 페레스 | Carles Pérez | AS Roma | B0 | 14/1 |
+| 1 | 요시프 일리치치 | Josip Iličić | Atalanta Bergamasca Calcio | A+ | 26/15 |
+| 2 | 호세 카예혼 | José Callejón | Società Sportiva Calcio Napoli | B+ | 33/4 |
+| 3 | 사무 카스티예호 | Samu Castillejo | Associazione Calcio Milan | B+ | 22/2 |
+| 4 | 도글라스 코스타 | Douglas Costa | Juventus Football Club | B+ | 23/1 |
+| 5 | 젱기즈 윈데르 | Cengiz Ünder | Associazione Sportiva Roma | B0 | 18/3 |
+| 6 | 마테오 폴리타노 | Matteo Politano | Società Sportiva Calcio Napoli | B0 | 15/2 |
+| 7 | 페데리코 베르나르데스키 | Federico Bernardeschi | Juventus Football Club | B0 | 29/1 |
+| 8 | 수소 | Suso | Associazione Calcio Milan | B0 | 16/1 |
+| 9 | 카를레스 페레스 | Carles Pérez | Associazione Sportiva Roma | B0 | 14/1 |
 
 ### ST — 16
 
 | Rank | 한국어 이름 | Original | Club | Tier | AP/Goals |
 |---:|---|---|---|---|---|
-| 1 | 치로 임모빌레 | Ciro Immobile | SS Lazio | S | 37/36 |
-| 2 | 로멜루 루카쿠 | Romelu Lukaku | FC Internazionale Milano | A+ | 36/23 |
-| 3 | 두반 사파타 | Duván Zapata | Atalanta BC | A+ | 28/18 |
-| 4 | 루이스 무리엘 | Luis Muriel | Atalanta BC | A+ | 34/18 |
-| 5 | 에딘 제코 | Edin Džeko | AS Roma | A+ | 35/16 |
-| 6 | 파울로 디발라 | Paulo Dybala | Juventus FC | A+ | 33/11 |
-| 7 | 라우타로 마르티네스 | Lautaro Javier Martínez | FC Internazionale Milano | A0 | 35/14 |
-| 8 | 아르카디우시 밀리크 | Arkadiusz Milik | SSC Napoli | A- | 26/11 |
-| 9 | 즐라탄 이브라히모비치 | Zlatan Ibrahimović | AC Milan | A- | 18/10 |
-| 10 | 호아킨 코레아 | Joaquín Correa | SS Lazio | A- | 30/9 |
-| 11 | 드리스 메르턴스 | Dries Mertens | SSC Napoli | A- | 31/9 |
-| 12 | 펠리페 카이세도 | Felipe Caicedo | SS Lazio | B+ | 30/9 |
-| 13 | 곤살로 이과인 | Gonzalo Higuaín | Juventus FC | B+ | 32/8 |
-| 14 | 알렉시스 산체스 | Alexis Sánchez | FC Internazionale Milano | B+ | 22/4 |
-| 15 | 니콜라 칼리니치 | Nikola Kalinić | AS Roma | B0 | 15/5 |
-| 16 | 크시슈토프 피옹테크 | Krzysztof Piątek | AC Milan | B- | 18/4 |
+| 1 | 치로 임모빌레 | Ciro Immobile | Società Sportiva Lazio | S | 37/36 |
+| 2 | 파울로 디발라 | Paulo Dybala | Juventus Football Club | A+ | 33/11 |
+| 3 | 로멜루 루카쿠 | Romelu Lukaku | Football Club Internazionale Milano | A+ | 36/23 |
+| 4 | 두반 사파타 | Duván Zapata | Atalanta Bergamasca Calcio | A+ | 28/18 |
+| 5 | 루이스 무리엘 | Luis Muriel | Atalanta Bergamasca Calcio | A+ | 34/18 |
+| 6 | 에딘 제코 | Edin Džeko | Associazione Sportiva Roma | A+ | 35/16 |
+| 7 | 라우타로 마르티네스 | Lautaro Javier Martínez | Football Club Internazionale Milano | A0 | 35/14 |
+| 8 | 아르카디우시 밀리크 | Arkadiusz Milik | Società Sportiva Calcio Napoli | A- | 26/11 |
+| 9 | 즐라탄 이브라히모비치 | Zlatan Ibrahimović | Associazione Calcio Milan | A- | 18/10 |
+| 10 | 호아킨 코레아 | Joaquín Correa | Società Sportiva Lazio | A- | 30/9 |
+| 11 | 드리스 메르턴스 | Dries Mertens | Società Sportiva Calcio Napoli | A- | 31/9 |
+| 12 | 펠리페 카이세도 | Felipe Caicedo | Società Sportiva Lazio | B+ | 30/9 |
+| 13 | 곤살로 이과인 | Gonzalo Higuaín | Juventus Football Club | B+ | 32/8 |
+| 14 | 알렉시스 산체스 | Alexis Sánchez | Football Club Internazionale Milano | B+ | 22/4 |
+| 15 | 니콜라 칼리니치 | Nikola Kalinić | Associazione Sportiva Roma | B0 | 15/5 |
+| 16 | 크시슈토프 피옹테크 | Krzysztof Piątek | Associazione Calcio Milan | B- | 18/4 |
+
+**2026-11-09 ranking correction:** GK best goalkeeper Szczęsny 1, Handanović 2, Donnarumma 3, Strakosha 4; CAM official best midfielder Gómez 1, Çalhanoğlu 2; ST league MVP Dybala 2, Lukaku 3, Zapata 4, Muriel 5, Džeko 6 (Immobile remains 1). All are DRAFT, not user approved.
 
 ## 4. Full tier distribution
 
