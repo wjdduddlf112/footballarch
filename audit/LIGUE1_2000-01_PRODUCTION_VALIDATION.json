@@ -72,14 +72,15 @@
   ],
   "missingBirthDates": [],
   "tests": {
-    "staticNode": "PASS previous 166 data release; latest data rerun pending",
-    "localChromium": "PASS previous 166 data release; current updated dataset rerun pending",
-    "publicChromium": "PASS previous 166 data release; current updated dataset rerun pending",
-    "githubPagesDeployment": "PASS prior released commit; latest changes awaiting deployment",
-    "threeSeasonIndependentHistory": "INCOMPLETE",
-    "fullPositionFrequency": "incomplete",
-    "leagueModalFormation": "unquantified",
-    "completeIndependentDOBs": "INCOMPLETE (fields 166/166 populated; verified recent corrections only)"
+    "staticNode": "PASS 2026-11-09: 166 candidates, 10 actual UEFA clubs, 110 starters, 56 backups, distinct IDs, continuous 10-position ranks, 11 valid XI refs",
+    "localChromium": "PASS 2026-11-09: 166 rows, ten club tables, 10 position tables, grades, 11 pitch slots, player modal, league standings and League Top tabs, no JS exceptions",
+    "publicChromium": "PASS 2026-11-09: live https://wjdduddlf112.github.io/footballarch/?league=ligue1&season=2000-01 166-player and other browser interaction checks",
+    "githubActions": "PASS run 42595127902 https://github.com/wjdduddlf112/footballarch/actions/runs/42595127902 on final 166-player data commit 055560bbf2ac833ca69561c31c776c8b8658f66f",
+    "githubPagesDeployment": "PASS run 42595204779 https://github.com/wjdduddlf112/footballarch/actions/runs/42595204779 on latest report/audit commit e7226de3596cd1e6c261a49eb9f8578ce5793bc0",
+    "threeSeasonIndependentHistory": "INCOMPLETE: 1998-99 and 1999-00 individual match evidence for all 166 not fully cross-verified",
+    "completeIndependentDOBs": "INCOMPLETE: 166/166 date fields present, targeted corrections verified, older 155 are not entirely individually reaudited",
+    "matchByMatchPosition": "INCOMPLETE: flexible players need primary-position frequency review",
+    "leagueModalFormation": "INCOMPLETE: 4-4-2 historically plausible, actual full-season tactical mode not counted"
   },
   "sourceCorrections": [
     {
@@ -106,5 +107,10 @@
     "Stéphane Dalmat PSG 19/14 before Inter move",
     "Fabio Celestini DOB 1975-10-31",
     "Jérôme Rothen DOB 1978-03-31"
-  ]
+  ],
+  "githubActionsRunId": 42595127902,
+  "githubPagesDeploymentRunId": 42595204779,
+  "lastKnownValidatedDataSha": "055560bbf2ac833ca69561c31c776c8b8658f66f",
+  "lastKnownDeployedCommitBeforeAudit": "e7226de3596cd1e6c261a49eb9f8578ce5793bc0",
+  "publicSeasonUrl": "https://wjdduddlf112.github.io/footballarch/?league=ligue1&season=2000-01"
 }
