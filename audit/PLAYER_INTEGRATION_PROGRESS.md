@@ -1697,3 +1697,10 @@ Source TXT instruction adapted to the **2009-10 season only**. Candidate roster 
 - **Files on GitHub `main`**: `data/seriea-2025-26.json`; `audit/SERIEA_2025-26_RAW_ROSTER_TRANSCRIPTION.txt`; `audit/SERIEA_2025-26_DRAFT_FULL_REPORT.md`; `audit/SERIEA_2025-26_PRODUCTION_VALIDATION_2026_11_09.json`; `scripts/verify-seriea-2025-26.mjs`; local and public browser scripts; `.github/workflows/verify-seriea-2025-26.yml`. No changes to existing app JS/CSS, standings master or prior season dataset.
 - **Automated validation EXECUTED SUCCESS**: GitHub Actions [42563824580](https://github.com/wjdduddlf112/footballarch/actions/runs/42563824580) structure and browser jobs both success: correct 7 clubs/131 roster, exact restored standings, tier/ranks, DOB fields, XI; checked-out local Chromium six site tabs and detail modal; public GitHub Pages live six tabs and modal. Public [Pages deployment 42563824337](https://github.com/wjdduddlf112/footballarch/actions/runs/42563824337) SUCCESS at commit `5c398cd94cff901959d6bed90a5151e54e4bdd1c`. Subsequent audit-only commits trigger a newer Pages run and must be checked separately before declaring exact newest HEAD deployed.
 - **Review**: All tiers, positional ranks and XI remain `draft_unapproved`. The test proves structural correctness and displayed data but does not establish independent historical player-quality accuracy. Stop after 2025-26 and await explicit user instruction for another season.
+
+
+## 2026-11-10 Ligue 1 2003-04 qualifying-team correction
+- Discovered 2004 actual UEFA Intertoto Cup participant OGC Nice (Esbjerg second-round, July 3 and July 11). Old seven-team list had missed Nice.
+- Restored the eligible team: 8 clubs, 138 players, 88 starters, 50 backups; 17 Nice candidates evaluated with source citations and recency weighting; all GK/ST positional ranks re-indexed.
+- Source Nice 2003-04 BDFutbol: https://www.bdfutbol.com/en/t/t2003-044015.html. Historical independent verification remains partial for two prior seasons. No approval; DRAFT only.
+- Full report: audit/LIGUE1_2003-04_DRAFT_FULL_REPORT.md; static + browser tests to be checked after commit.

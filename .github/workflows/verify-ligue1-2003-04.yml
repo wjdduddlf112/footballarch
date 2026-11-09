@@ -30,10 +30,10 @@ jobs:
       - name: Check local Football Archive page
         env:
           TARGET_URL: http://127.0.0.1:8871/?league=ligue1&season=2003-04
-          EXPECTED_PLAYERS: '121'
+          EXPECTED_PLAYERS: '138'
         run: node scripts/verify-ligue1-2003-04-browser.mjs
       - name: Check published GitHub Pages page
         env:
           TARGET_URL: https://wjdduddlf112.github.io/footballarch/?league=ligue1&season=2003-04
-          EXPECTED_PLAYERS: '121'
+          EXPECTED_PLAYERS: '138'
         run: node scripts/verify-ligue1-2003-04-browser.mjs

@@ -8,7 +8,7 @@
 import { chromium } from "playwright";
 
 const url=process.env.TARGET_URL||"http://127.0.0.1:8871/?league=ligue1&season=2003-04";
-const expected=Number(process.env.EXPECTED_PLAYERS||121);
+const expected=Number(process.env.EXPECTED_PLAYERS||138);
 const browser=await chromium.launch({headless:true,args:["--no-sandbox"]});
 const page=await browser.newPage({viewport:{width:1440,height:900}});
 const pageErrors=[],failedRequests=[],steps=[];
@@ -30,7 +30,7 @@ try{
  const title=await page.locator(".tier-directory-head h2").innerText();
  check(title.includes(String(expected)),"Full roster total",title);
  const clubs=await page.locator(".tier-directory-section").count();
- check(clubs===7,"Qualified club sections",clubs);
+ check(clubs===8,"Qualified club sections",clubs);
  const rows=await page.locator(".tier-directory-section tbody tr").count();
  check(rows===expected,"Club roster table rows",rows);
  await page.locator('[data-tier-view="positions"]').click();

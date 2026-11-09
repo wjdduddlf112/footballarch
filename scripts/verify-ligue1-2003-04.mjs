@@ -12,11 +12,11 @@ const norm=s=>String(s||'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toL
 assert(d.meta?.leagueId==='ligue1'&&d.meta?.season==='2003-04'&&d.meta?.qualifyingSeason==='2004-05','season metadata');
 assert(d.meta?.status==='draft'&&d.meta?.bestXiReview?.status==='proposed_unapproved','approval lock');
 assert(d.meta?.europeanQualificationVerified===true,'verified actual entrants flag');
-assert(clubs.length===7&&new Set(clubs).size===7,'eligible clubs must be 7');
+assert(clubs.length===8&&new Set(clubs).size===8,'eligible clubs must be 8');
 assert(d.standings?.length===20,'historic standings must be 20 clubs');
-assert(ps.length===121,'121 newly selected candidates');
-assert(ps.filter(p=>p.role==='starter').length===77,'77 representative starters');
-assert(ps.filter(p=>p.role==='backup').length===44,'44 backups');
+assert(ps.length===138,'138 newly selected candidates');
+assert(ps.filter(p=>p.role==='starter').length===88,'88 representative starters');
+assert(ps.filter(p=>p.role==='backup').length===50,'50 backups');
 assert(new Set(ps.map(p=>p.id)).size===ps.length,'duplicate player IDs');
 assert(new Set(ps.map(p=>norm(p.nameOriginal))).size===ps.length,'duplicate player cross-team');
 assert(ps.every(p=>p.nameKo&&p.nameOriginal&&p.clubNameOriginal),'missing player display name');
@@ -41,5 +41,5 @@ assert(xi.every(x=>ps.some(p=>p.id===x.playerId&&p.position===x.position)),'Best
 const count=t=>ps.filter(p=>p.tier===t).length;
 assert(d.meta.worldClassCount===count('S')+count('A+'),'World Class total');
 assert(d.meta.leagueTopClassCount===['S','A+','A','A-'].reduce((n,t)=>n+count(t),0),'League Top Class total');
-const r={pass:errors.length===0,qualifierClubs:clubs.length,players:ps.length,starters:77,backups:44,missingDOB:ps.filter(p=>!p.born).length,worldClass:d.meta.worldClassCount,leagueTopClass:d.meta.leagueTopClassCount,BestXI:xi.length,errors,scope:'schema and structural checks, NOT full independent historical fact verification'};
+const r={pass:errors.length===0,qualifierClubs:clubs.length,players:ps.length,starters:88,backups:50,missingDOB:ps.filter(p=>!p.born).length,worldClass:d.meta.worldClassCount,leagueTopClass:d.meta.leagueTopClassCount,BestXI:xi.length,errors,scope:'schema and structural checks, NOT full independent historical fact verification'};
 console.log(JSON.stringify(r,null,2));if(errors.length)process.exitCode=1;

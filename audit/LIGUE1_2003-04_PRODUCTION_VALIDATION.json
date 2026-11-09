@@ -4,12 +4,10 @@
   "qualificationSeason": "2004-05",
   "savedAtKST": "2026-11-10",
   "approval": "draft_unapproved",
-  "dataCommit": "f236ab4fe0a777dd90af100d82d11bfb53d381f2",
-  "verifiedCodeHead": "5624cb15085088f7d237ee9ef8f4c0fd07965869",
-  "qualifierClubs": 7,
-  "candidates": 121,
-  "starters": 77,
-  "backups": 44,
+  "qualifierClubs": 8,
+  "candidates": 138,
+  "starters": 88,
+  "backups": 50,
   "perClub": {
     "lyon": {
       "players": 17,
@@ -38,6 +36,10 @@
     "lille": {
       "players": 18,
       "starters": 11
+    },
+    "nice": {
+      "players": 17,
+      "starters": 11
     }
   },
   "tierCounts": {
@@ -45,9 +47,9 @@
     "A+": 8,
     "A": 17,
     "A-": 17,
-    "B+": 39,
-    "B": 25,
-    "B-": 8,
+    "B+": 48,
+    "B": 31,
+    "B-": 10,
     "C+": 5,
     "C": 0,
     "C-": 0,
@@ -56,74 +58,40 @@
   "worldClass": 10,
   "leagueTopClass": 44,
   "missingBirthdates": 21,
-  "missingOriginalNames": 0,
-  "missingKoreanNames": 0,
   "BestXI": 11,
   "checks": {
-    "seasonJsonSchemaAndData": {
-      "status": "PASS",
-      "runId": 42682621827
-    },
-    "javascriptSyntax": {
-      "status": "PASS",
-      "runId": 42682621827
+    "staticJSDataStructural": {
+      "status": "PENDING_GITHUB_ACTIONS"
     },
     "localChromium": {
-      "status": "PASS",
-      "runId": 42682621827,
-      "checked": [
-        "All Tiers 121",
-        "7 team sections",
-        "10 position sections",
-        "ranked entries 121",
-        "Best XI 11",
-        "modal",
-        "20 team standings",
-        "League Top Class",
-        "no JS exceptions",
-        "no failed season JSON requests"
-      ]
+      "status": "PENDING_GITHUB_ACTIONS"
     },
     "publishedChromium": {
-      "status": "PASS",
-      "runId": 42682621827,
-      "checked": [
-        "same as local"
-      ]
+      "status": "PENDING_GITHUB_ACTIONS"
     },
     "GitHubPagesDeploy": {
-      "status": "PASS",
-      "runId": 42682621801
+      "status": "PENDING_DEPLOY"
     },
     "independentHistoricalAccuracy": {
       "status": "PARTIAL",
       "limitations": [
-        "21 missing birth dates",
-        "most previously inherited birthdate field values not newly independently sourced",
-        "2001-02 and 2002-03 previous season personal performance not independently audited for all",
-        "actual per-position match minutes and team 4-4-2 modal frequency not proven",
-        "some team role mappings remain tactical hypotheses"
+        "Prior two seasons not individually independently audited for many players",
+        "Nice LM/RM and full season per-position frequency is provisional",
+        "BDFutbol vs FBref slight appearances/minutes differences",
+        "21 originally unverified birth dates remain"
       ]
     }
   },
   "sources": [
     "https://www.rsssf.org/tablesf/fran04.html",
-    "https://www.uefa.com/uefachampionsleague/history/seasons/2004/clubs/",
-    "https://www.rsssf.org/tablesu/uic04det.html",
-    "https://www.losc.fr/actualites/2024-08-19/il-y-20-ans-le-losc-soulevait-une-coupe-deurope",
-    "https://www.bdfutbol.com/en/t/t2003-044017.html",
-    "https://www.bdfutbol.com/en/t/t2003-044002.html",
-    "https://www.bdfutbol.com/en/t/t2003-044018.html",
-    "https://www.bdfutbol.com/en/t/t2003-044025.html",
-    "https://www.bdfutbol.com/en/t/t2003-044024.html",
-    "https://www.bdfutbol.com/en/t/t2003-044013.html",
-    "https://www.bdfutbol.com/en/t/t2003-044009.html"
+    "https://www.rsssf.org/tablesu/uic04.html",
+    "https://www.bdfutbol.com/en/t/t2003-044015.html",
+    "https://fbref.com/en/squads/132ebc33/2003-2004/Nice-Stats",
+    "https://ogcnissa.com/articles-1212-ligue-1-nice-nantes-1-0"
   ],
   "urls": {
     "website": "https://wjdduddlf112.github.io/footballarch/?league=ligue1&season=2003-04",
-    "verify": "https://github.com/wjdduddlf112/footballarch/actions/runs/42682621827",
-    "deployment": "https://github.com/wjdduddlf112/footballarch/actions/runs/42682621801",
-    "fullReport": "https://github.com/wjdduddlf112/footballarch/blob/main/audit/LIGUE1_2003-04_DRAFT_FULL_REPORT.md",
-    "rawRoster": "https://github.com/wjdduddlf112/footballarch/blob/main/audit/LIGUE1_2003-04_RAW_ROSTER_TRANSCRIPTION.txt"
+    "verify": "https://github.com/wjdduddlf112/footballarch/actions/workflows/verify-ligue1-2003-04.yml",
+    "report": "https://github.com/wjdduddlf112/footballarch/blob/main/audit/LIGUE1_2003-04_DRAFT_FULL_REPORT.md"
   }
 }
