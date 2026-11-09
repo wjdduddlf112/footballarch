@@ -1,38 +1,49 @@
 {
-  "candidateCount": 136,
-  "previousCandidateCount": 111,
+  "timestamp": "2026-11-09",
+  "season": "1999-00",
+  "league": "Division 1",
+  "candidateCount": 135,
+  "previousUnapprovedCandidateCount": 111,
   "clubs": {
     "monaco": {
       "all": 18,
-      "starters": 11
+      "starters": 11,
+      "backups": 7
     },
     "psg": {
       "all": 17,
-      "starters": 11
+      "starters": 11,
+      "backups": 6
     },
     "lyon": {
       "all": 17,
-      "starters": 11
+      "starters": 11,
+      "backups": 6
     },
     "bordeaux": {
       "all": 16,
-      "starters": 11
-    },
-    "lens": {
-      "all": 17,
-      "starters": 11
-    },
-    "sedan": {
-      "all": 18,
-      "starters": 11
-    },
-    "auxerre": {
-      "all": 15,
-      "starters": 11
+      "starters": 11,
+      "backups": 5
     },
     "nantes": {
       "all": 18,
-      "starters": 11
+      "starters": 11,
+      "backups": 7
+    },
+    "lens": {
+      "all": 17,
+      "starters": 11,
+      "backups": 6
+    },
+    "sedan": {
+      "all": 17,
+      "starters": 11,
+      "backups": 6
+    },
+    "auxerre": {
+      "all": 15,
+      "starters": 11,
+      "backups": 4
     }
   },
   "tiers": {
@@ -42,7 +53,7 @@
     "A-": 14,
     "B+": 45,
     "B": 36,
-    "B-": 12,
+    "B-": 11,
     "C+": 9,
     "C": 4,
     "C-": 0,
@@ -50,30 +61,85 @@
   },
   "worldClass": 6,
   "leagueTopClass": 30,
-  "bornUnverified": 0,
-  "startsUnverified": 9,
-  "rosterWithSourceUrls": 136,
-  "positionRanked": 136,
-  "bestXiCount": 11,
-  "checks": {
-    "static_structure": "pass_local_in_connector_script",
-    "independent_3_year_player_data": "incomplete",
-    "club_selection": "existing_independently_verified",
-    "individual_1999_00_bdf_7_clubs": "partial_cross_check",
-    "sedan_1999_00_starters": "incomplete",
-    "github_pages_browser": "not_yet_executed",
-    "github_actions": "not_yet_checked"
+  "startCount": 88,
+  "backupCount": 47,
+  "missingBirthDate": 0,
+  "independentBirthDatesChecked": "partial",
+  "unknownSeasonLeagueStarts": 8,
+  "positionalRankingCount": 135,
+  "bestXI": [
+    {
+      "position": "GK",
+      "playerId": "ligue1-1999-00-psg-bernard-lama"
+    },
+    {
+      "position": "RB",
+      "playerId": "ligue1-1999-00-monaco-willy-sagnol"
+    },
+    {
+      "position": "CB",
+      "playerId": "ligue1-1999-00-monaco-rafael-marquez"
+    },
+    {
+      "position": "CB",
+      "playerId": "ligue1-1999-00-monaco-philippe-christanval"
+    },
+    {
+      "position": "LB",
+      "playerId": "ligue1-1999-00-bordeaux-jerome-bonnissel"
+    },
+    {
+      "position": "DM",
+      "playerId": "ligue1-1999-00-lens-olivier-dacourt"
+    },
+    {
+      "position": "CM",
+      "playerId": "ligue1-1999-00-psg-ali-benarbia"
+    },
+    {
+      "position": "CM",
+      "playerId": "ligue1-1999-00-bordeaux-johan-micoud"
+    },
+    {
+      "position": "CAM",
+      "playerId": "ligue1-1999-00-monaco-marcelo-gallardo"
+    },
+    {
+      "position": "ST",
+      "playerId": "ligue1-1999-00-lyon-sonny-anderson"
+    },
+    {
+      "position": "ST",
+      "playerId": "ligue1-1999-00-monaco-marco-simone"
+    }
+  ],
+  "tests": {
+    "local_in_memory_structure": "pass",
+    "github_node_workflow": "pending",
+    "production_browser_interaction": "not_verified",
+    "production_json_url": "not_yet_checked",
+    "historical_independent_full_3season": "incomplete",
+    "sedan_1999_starters": "incomplete"
   },
-  "issues": [],
-  "notes": [
-    "Historically named Division 1. 8 next-season actual UEFA/Intertoto clubs only; 18-club standings retained intact.",
-    "One-site-primary-position per player; the representative eleven is 11 for each eligible club; backups <=1 per site position.",
-    "1999-00 league start figures of 7 BDFutbol source-backed clubs were transcribed independently of the imported shortlist. Sedan club membership, goals and many identities source-backed, individual league starts incomplete.",
-    "Some fullback and tactical wing identities remain pending historical match-by-match checks, especially Sedan and Monaco. 'Starter' reflects a season representative eleven, not necessarily a literal simultaneous match sheet.",
-    "Qualitative S-D tiers and per-position ranks are DRAFT, not an approved or independently complete 3-season assessment. Older two-season quantitative records are pending for most players.",
-    "Contemporaneous UNFP honors and annual scoring awards inform the higher grades. Team trophies/rank never applied as player score bonuses.",
-    "1999-00 most common 4-4-2 is treated as period representative; exact league-wide statistical modal formation is unverified. Narrow 4-3-1-2 Best XI is a period-appropriate 4-4-2 diamond variant, not an assertion of the exact mode.",
-    "Do not infer exact minutes or assist values where unsupported. Official historic records and BDFutbol may differ by a few minutes; stale inherited minutes remain provisional.",
-    "User approval pending; no future-season advancement or final designation."
-  ]
+  "historicalAudit": {
+    "exclusions": [
+      "Excluded Christophe Borbiconi: 1998-99 Sedan loan only; played 1999-00 at Louhans-Cuiseaux, not eligible (https://en.wikipedia.org/wiki/Christophe_Borbiconi).",
+      "Excluded Salif Diao from Sedan 1999-00 (Monaco appearances instead).",
+      "David Trezeguet and Tony Vairelles promoted from imported backup assumption to starting strikers.",
+      "Nicolas Savinaud and Christophe Delmotte included as 1999-00 regular starters.",
+      "Club names and 1999-00 UEFA entrants/18-team standings remain as previously independently verified.",
+      "Jean-Louis Montero (not Juan-Luis) 34 Sedan appearances, left versus right match role requires independent verification.",
+      "Alex Di Rocco: 8/9 goals depending source, eight provisional; explicitly marked conflicting."
+    ],
+    "sourceDirectory": {
+      "monaco": "https://www.bdfutbol.com/en/t/t1999-004018.html",
+      "psg": "https://www.bdfutbol.com/en/t/t1999-004002.html",
+      "lyon": "https://www.bdfutbol.com/en/t/t1999-004017.html",
+      "bordeaux": "https://www.bdfutbol.com/en/t/t1999-004012.html",
+      "lens": "https://www.bdfutbol.com/en/t/t1999-004014.html",
+      "sedan": "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999",
+      "auxerre": "https://www.bdfutbol.com/en/t/t1999-004025.html",
+      "nantes": "https://www.bdfutbol.com/en/t/t1999-004013.html"
+    }
+  }
 }
