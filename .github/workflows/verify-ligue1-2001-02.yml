@@ -1,0 +1,47 @@
+name: Verify Ligue 1 2001-02 DRAFT (structure, local and public Chromium)
+on:
+  push:
+    paths:
+      - 'data/ligue1-2001-02.json'
+      - 'scripts/verify-ligue1-2001-02.mjs'
+      - 'scripts/verify-ligue1-2001-02-browser.mjs'
+      - '.github/workflows/verify-ligue1-2001-02.yml'
+  workflow_dispatch:
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate draft roster and rankings
+        run: node scripts/verify-ligue1-2001-02.mjs
+      - name: Check site JavaScript parsing
+        run: node --check assets/app.js
+  browser-local:
+    runs-on: ubuntu-24.04
+    needs: validate
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install Playwright and Chromium
+        run: |
+          npm install --no-save --no-package-lock playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Run local website for test
+        run: |
+          nohup python3 -m http.server 8871 --bind 127.0.0.1 > /tmp/ligue1-2001-02-server.log 2>&1 &
+          sleep 3
+      - name: Check local Football Archive UI
+        env:
+          TARGET_URL: http://127.0.0.1:8871/?league=ligue1&season=2001-02
+          EXPECTED_PLAYERS: '155'
+        run: node scripts/verify-ligue1-2001-02-browser.mjs
+      - name: Check real public GitHub Pages in Chromium
+        env:
+          TARGET_URL: https://wjdduddlf112.github.io/footballarch/?league=ligue1&season=2001-02
+          EXPECTED_PLAYERS: '155'
+        run: node scripts/verify-ligue1-2001-02-browser.mjs
