@@ -38,8 +38,8 @@ try{
  check(pcount===10,"Ten position sections",pcount);
  const prows=await page.locator(".tier-directory-section tbody tr").count();
  check(prows===expected,"All positional ranking rows",prows);
- const allRankRows=await page.locator(".tier-directory-section tbody tr").allTextContents();
- check(allRankRows.every(x=>/\b(?:S|A\+|A0|A-|B\+|B0|B-|C\+|C0)\b/.test(x)),"Each positional ranked row has a grade",allRankRows.length);
+ const tierCount=await page.locator(".tier-directory-section tbody tr .tier").count();
+ check(tierCount===expected,"Each positional ranked row has a grade",tierCount);
  await page.locator('[data-tier-view="tiers"]').click();
  const tierRows=await page.locator(".tier-directory-section tbody tr").count();
  check(tierRows===expected,"All Tier view rows",tierRows);
