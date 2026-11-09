@@ -1,0 +1,106 @@
+{
+  "season": "2025-26",
+  "league": "Serie A",
+  "qualifyingSeason": "2026-27",
+  "recordedAt": "2026-11-09",
+  "review": "draft_unapproved",
+  "dataset": "data/seriea-2025-26.json",
+  "rawRoster": "audit/SERIEA_2025-26_RAW_ROSTER_TRANSCRIPTION.txt",
+  "fullReport": "audit/SERIEA_2025-26_DRAFT_FULL_REPORT.md",
+  "qualification": {
+    "clubs": 7,
+    "verified": true,
+    "competitions": {
+      "UCL": [
+        "inter",
+        "napoli",
+        "roma",
+        "como"
+      ],
+      "UEL": [
+        "milan",
+        "juventus"
+      ],
+      "UECL": [
+        "atalanta"
+      ]
+    }
+  },
+  "nominees": 131,
+  "clubCount": {
+    "inter": 17,
+    "napoli": 21,
+    "roma": 18,
+    "como": 18,
+    "milan": 18,
+    "juventus": 20,
+    "atalanta": 19
+  },
+  "tiers": {
+    "S": 3,
+    "A+": 28,
+    "A0": 11,
+    "A-": 25,
+    "B+": 34,
+    "B0": 18,
+    "B-": 9,
+    "C+": 3,
+    "C0": 0,
+    "C-": 0,
+    "D": 0
+  },
+  "worldClass": 31,
+  "leagueTopClass": 67,
+  "positionRankings": "all 10 ordinal provisional",
+  "representativeClubStarters": 11,
+  "oneBackupMaxPerSitePosition": true,
+  "bestXI": {
+    "formation": "3-4-1-2",
+    "nominees": 11,
+    "status": "proposed_unapproved"
+  },
+  "verification": {
+    "structure": {
+      "workflowRun": 42563824580,
+      "job": "structure",
+      "conclusion": "success",
+      "executable": "scripts/verify-seriea-2025-26.mjs"
+    },
+    "localBrowser": {
+      "workflowRun": 42563824580,
+      "job": "browser",
+      "step": "Test local site tabs, player modal, season JSON in browser",
+      "conclusion": "success"
+    },
+    "publicGitHubPagesBrowser": {
+      "workflowRun": 42563824580,
+      "job": "browser",
+      "step": "Test public GitHub Pages 2025-26 real browser",
+      "conclusion": "success",
+      "url": "https://wjdduddlf112.github.io/footballarch/?league=seriea&season=2025-26"
+    },
+    "githubPagesDeployment": {
+      "workflowRun": 42563824337,
+      "headSHA": "5c398cd94cff901959d6bed90a5151e54e4bdd1c",
+      "conclusion": "success"
+    }
+  },
+  "sourceLimits": {
+    "currentSeasonCurrentStats": "one provider BDFutbol transcription, secondary per-row check pending",
+    "olderSeasons": "108 of 262 player-season previous appearances linked from unapproved archive; not independently validated",
+    "individualCompleteIndependentThreeSeasonReviews": 0,
+    "datesOfBirth": {
+      "filled": 131,
+      "checkedAsMissingDuringThisTurn": 25,
+      "remainingIndependentSecondaryIdentityChecks": 106
+    },
+    "mostCommonLeagueFormation": "not independently established",
+    "playerRanks": "provisional"
+  },
+  "preservation": {
+    "standingsUnchanged": true,
+    "otherSeasonsUnchanged": true,
+    "websiteAssetsUnchanged": true
+  },
+  "approval": "not approved; next season needs explicit instruction"
+}
