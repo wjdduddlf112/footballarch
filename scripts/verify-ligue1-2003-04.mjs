@@ -1,0 +1,45 @@
+#!/usr/bin/env node
+import {readFileSync} from 'node:fs';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const d=JSON.parse(readFileSync(path.join(root,'data/ligue1-2003-04.json'),'utf8'));
+const clubs=d.qualifiers.map(x=>x.club),ps=d.players||[];
+const grades=['S','A+','A','A-','B+','B','B-','C+','C','C-','D'];
+const positions=['GK','CB','LB','RB','DM','CM','CAM','LW','RW','ST'];
+const errors=[];const assert=(yes,msg)=>{if(!yes)errors.push(msg)};
+const norm=s=>String(s||'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]/g,'');
+assert(d.meta?.leagueId==='ligue1'&&d.meta?.season==='2003-04'&&d.meta?.qualifyingSeason==='2004-05','season metadata');
+assert(d.meta?.status==='draft'&&d.meta?.bestXiReview?.status==='proposed_unapproved','approval lock');
+assert(d.meta?.europeanQualificationVerified===true,'verified actual entrants flag');
+assert(clubs.length===7&&new Set(clubs).size===7,'eligible clubs must be 7');
+assert(d.standings?.length===20,'historic standings must be 20 clubs');
+assert(ps.length===121,'121 newly selected candidates');
+assert(ps.filter(p=>p.role==='starter').length===77,'77 representative starters');
+assert(ps.filter(p=>p.role==='backup').length===44,'44 backups');
+assert(new Set(ps.map(p=>p.id)).size===ps.length,'duplicate player IDs');
+assert(new Set(ps.map(p=>norm(p.nameOriginal))).size===ps.length,'duplicate player cross-team');
+assert(ps.every(p=>p.nameKo&&p.nameOriginal&&p.clubNameOriginal),'missing player display name');
+assert(ps.every(p=>p.born===null||/^\d{4}-\d\d-\d\d$/.test(p.born)),'DOB must be date or explicit null');
+assert(ps.filter(p=>!p.born).length===d.meta.historicalValidation.birthDatesMissing,'missing DOB count mismatch');
+assert(ps.every(p=>clubs.includes(p.club)&&positions.includes(p.position)),'invalid club or position');
+assert(ps.every(p=>grades.includes(p.tier)&&p.review==='draft_unapproved'),'tier or approval lock');
+assert(ps.every(p=>p.season==='2003-04'&&p.leagueAppearances>0&&p.leagueStarts>=0&&p.leagueStarts<=p.leagueAppearances),'appearance record invalid');
+assert(ps.every(p=>p.threeSeasonReview?.assessmentSeasons?.join(',')==='2001-02,2002-03,2003-04'),'three-season periods');
+assert(ps.every(p=>p.sources?.length>0),'sources absent');
+for(const c of clubs){const list=ps.filter(p=>p.club===c);
+ assert(list.filter(p=>p.role==='starter').length===11,c+' 11 starters');
+ for(const pos of positions)assert(list.filter(p=>p.position===pos&&p.role==='backup').length<=1,c+' '+pos+' backup exceeds 1');
+}
+for(const pos of positions){const group=ps.filter(p=>p.position===pos).sort((a,b)=>a.rank-b.rank);
+ assert(group.every((p,i)=>p.rank===i+1),pos+' rank missing or duplicated');
+ assert(group.every((p,i)=>i===0||grades.indexOf(group[i-1].tier)<=grades.indexOf(p.tier)),pos+' tier/rank out of order');
+}
+const xi=d.bestXi||[];
+assert(xi.length===11&&new Set(xi.map(x=>x.playerId)).size===11,'Best XI size / duplicate');
+assert(xi.every(x=>ps.some(p=>p.id===x.playerId&&p.position===x.position)),'Best XI assigned off-position');
+const count=t=>ps.filter(p=>p.tier===t).length;
+assert(d.meta.worldClassCount===count('S')+count('A+'),'World Class total');
+assert(d.meta.leagueTopClassCount===['S','A+','A','A-'].reduce((n,t)=>n+count(t),0),'League Top Class total');
+const r={pass:errors.length===0,qualifierClubs:clubs.length,players:ps.length,starters:77,backups:44,missingDOB:ps.filter(p=>!p.born).length,worldClass:d.meta.worldClassCount,leagueTopClass:d.meta.leagueTopClassCount,BestXI:xi.length,errors,scope:'schema and structural checks, NOT full independent historical fact verification'};
+console.log(JSON.stringify(r,null,2));if(errors.length)process.exitCode=1;
