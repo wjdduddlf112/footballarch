@@ -22,7 +22,7 @@
 - 2000-01 highest weight, 1999-00 intermediate, 1998-99 lowest; 1999-00 prior DRAFT archive is not independent historical evidence in itself.
 - 166 new candidate selections (110 representative starting XI players, 56 backups); previous unapproved 141 was not copied as the shortlist.
 - 10 eligible teams and each 11 starters, single primary position/player and <=1 backup per site position per club.
-- 166/166 original names, Korean labels, date of birth (individual source-linked), clubs, ranks and provisional tiers.
+- 166/166 original names, Korean labels, populated date-of-birth fields, clubs, ranks and provisional tiers. Eleven previously missing or incorrect dates were source-checked; independent DOB evidence for every remaining record has not been individually reaudited.
 - Some previous two-season match records are independently verified individually, but most do not have full historical verification. All tiers and final XI are still DRAFT.
 - Midseason Tony Vairelles Lyon 11 starts vs Bordeaux 8 starts: retain once for Lyon (more starting time); exclude second-club duplicate.
 - Identity repairs: Samuel Boutal (not Khaled Boutal), Mathieu Verschuère (not Frédéric), Yannick Zambernardi (not Nicolas), Pascal Renier (not misleading Christophe Monier), Laurent Casanova DM (not CB), Philippe Celdran LM/LW, Bastia Yann Lachuer CAM.
