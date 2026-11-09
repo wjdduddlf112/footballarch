@@ -1,3 +1,8 @@
+### 2026-11-09 verification outcome — Ligue 1 1999-00 historical DRAFT
+- **GitHub Actions PASS**: [run 42585535908](https://github.com/wjdduddlf112/footballarch/actions/runs/42585535908): static Node 135-player checks, JavaScript parsing, local Playwright Chromium and actual public GitHub Pages Playwright Chromium all passed. All Tiers 135 rows, 8 club sections, 10 position tables with all 135 ranks/grade badges, Best XI 11, player detail, league table, top tier, no JS page exceptions/failed season JSON loads.
+- **GitHub Pages PASS**: [deployment 42585535434](https://github.com/wjdduddlf112/footballarch/actions/runs/42585535434), public page https://wjdduddlf112.github.io/footballarch/?league=ligue1&season=1999-00.
+- **Historical qualification**: these are software/website verification passes, NOT independent 3-season completeness. Older player-season stats, Sedan lineup data, side-usage and league 4-4-2 frequency still pending. 135 ratings remain **draft_unapproved**.
+
 ### Correction, 2026-11-09 — contemporaneous positions supersede imported assumptions
 - PSG 1999-00: Benarbia RW (1999 winger/creator, later moved centrally in 2000), Okocha CM, Ducrocq DM, Aliou Cissé CB; structure checks remain 11 starters.
 - Bordeaux 1999-00: Wiltord ST alongside Laslandes, verified via 2000-03 Bordeaux vs Manchester United period 4-4-2 match report.
