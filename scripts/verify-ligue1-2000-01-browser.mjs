@@ -23,7 +23,7 @@ const check=(ok,name,actual)=>{
 try{
  await page.goto(url,{waitUntil:"domcontentloaded",timeout:60000});
  await page.waitForFunction(()=>document.querySelector("#allTiersTab")?.style.display!=="none" && document.querySelector("#stateTag")?.textContent==="DRAFT",{timeout:45000});
- check((await page.locator("#heading").innerText()).includes("1999"),"2000-01 heading",await page.locator("#heading").innerText());
+ check((await page.locator("#heading").innerText()).replaceAll("–","-").includes("2000-01"),"2000-01 heading",await page.locator("#heading").innerText());
  check(await page.locator("#allTiersTab").isVisible(),"All Tiers tab visible",true);
  await page.locator("#allTiersTab").click();
  await page.locator(".tier-directory-head").waitFor({timeout:15000});
