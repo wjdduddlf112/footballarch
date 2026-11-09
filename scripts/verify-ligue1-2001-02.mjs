@@ -1,0 +1,47 @@
+#!/usr/bin/env node
+import {readFileSync} from 'node:fs';
+import {fileURLToPath} from 'node:url';
+import path from 'node:path';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const doc=JSON.parse(readFileSync(path.join(root,'data/ligue1-2001-02.json'),'utf8'));
+const grades=['S','A+','A','A-','B+','B','B-','C+','C','C-','D'];
+const positions=['GK','CB','LB','RB','DM','CM','CAM','LW','RW','ST'];
+const pts=doc.players||[], clubs=doc.qualifiers.map(q=>q.club),errors=[];
+const fail=(condition,note)=>{if(!condition)errors.push(note);};
+const norm=x=>(x||'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]/g,'');
+fail(doc.meta?.season==='2001-02','wrong season');
+fail(doc.meta?.qualifyingSeason==='2002-03','wrong qualifying season');
+fail(doc.meta?.status==='draft','ratings must be DRAFT');
+fail(doc.meta?.europeanQualificationVerified===true,'following-season entrants not verified');
+fail(doc.meta?.bestXiReview?.status==='proposed_unapproved','best XI review gate');
+fail(doc.standings?.length===18,'must preserve final 18-team league table');
+fail(clubs.length===9&&new Set(clubs).size===9,'expected exactly 9 2002-03 actual eligible clubs');
+fail(pts.length===155,'expected exactly 155 newly selected candidates');
+fail(new Set(pts.map(p=>p.id)).size===pts.length,'duplicate player IDs');
+fail(new Set(pts.map(p=>norm(p.nameOriginal))).size===pts.length,'duplicate identity across two clubs');
+fail(pts.every(p=>p.born&&/^\d{4}-\d\d-\d\d$/.test(p.born)),'birth date missing/invalid');
+fail(pts.every(p=>p.nameKo&&p.nameOriginal&&p.clubNameOriginal),'player display fields missing');
+fail(pts.every(p=>clubs.includes(p.club)&&positions.includes(p.position)),'invalid club or position');
+fail(pts.every(p=>grades.includes(p.tier)&&p.review==='draft_unapproved'),'tier or approval violation');
+fail(pts.every(p=>p.season==='2001-02'&&p.leagueAppearances>0&&p.leagueStarts>=0),'season/appearance violation');
+fail(pts.every(p=>p.threeSeasonReview?.assessmentSeasons?.join(',')==='1999-00,2000-01,2001-02'),'three-season time window');
+fail(pts.every(p=>Array.isArray(p.sources)&&p.sources.length>0),'source URL missing');
+fail(pts.filter(p=>p.role==='starter').length===99,'must be 99 representative starters');
+fail(pts.filter(p=>p.role==='backup').length===56,'must be 56 backups');
+for(const club of clubs){const squad=pts.filter(p=>p.club===club),xi=squad.filter(p=>p.role==='starter');
+ fail(xi.length===11,club+' not exactly 11 starters');
+ for(const pos of positions)fail(squad.filter(p=>p.position===pos&&p.role==='backup').length<=1,club+' '+pos+' backup >1');
+}
+for(const pos of positions){const group=pts.filter(p=>p.position===pos).sort((a,b)=>a.rank-b.rank);
+ fail(group.every((p,i)=>p.rank===i+1),pos+' ranks discontinuous or duplicate');
+ fail(group.every((p,i)=>i===0||grades.indexOf(group[i-1].tier)<=grades.indexOf(p.tier)),pos+' ranks out of grade order');
+}
+const xi=doc.bestXi||[];
+fail(xi.length===11&&new Set(xi.map(x=>x.playerId)).size===11,'Best XI size or unique ID');
+fail(xi.every(x=>pts.some(p=>p.id===x.playerId&&p.position===x.position)),'Best XI must use same-position registered candidates');
+const countTier=t=>pts.filter(p=>p.tier===t).length;
+fail(doc.meta.worldClassCount===countTier('S')+countTier('A+'),'World Class mismatch');
+fail(doc.meta.leagueTopClassCount===['S','A+','A','A-'].reduce((a,x)=>a+countTier(x),0),'League Top Class mismatch');
+const output={pass:errors.length===0,season:'2001-02',qualifiedClubs:clubs.length,total:pts.length,starters:99,backups:56,worldClass:doc.meta.worldClassCount,leagueTop:doc.meta.leagueTopClassCount,missingDOB:pts.filter(p=>!p.born).length,missingKoreanName:pts.filter(p=>!p.nameKo).length,errors,scope:'structure and display fields only; NOT full 3-season independent historical accuracy verification'};
+console.log(JSON.stringify(output,null,2));
+if(errors.length)process.exitCode=1;
