@@ -1704,3 +1704,11 @@ Source TXT instruction adapted to the **2009-10 season only**. Candidate roster 
 - Restored the eligible team: 8 clubs, 138 players, 88 starters, 50 backups; 17 Nice candidates evaluated with source citations and recency weighting; all GK/ST positional ranks re-indexed.
 - Source Nice 2003-04 BDFutbol: https://www.bdfutbol.com/en/t/t2003-044015.html. Historical independent verification remains partial for two prior seasons. No approval; DRAFT only.
 - Full report: audit/LIGUE1_2003-04_DRAFT_FULL_REPORT.md; static + browser tests to be checked after commit.
+
+
+## 2026-11-10 Ligue 1 2004-05 full player DRAFT
+- Evaluated 2005-06 UEFA actual participants (UCL Lyon Lille Monaco; UEFA Cup Rennes Auxerre Strasbourg; Intertoto Marseille Lens Saint-Étienne), 9 clubs.
+- 2004-05 150 newly selected player candidates: 99 starting XI members (11 per club), 51 backups; 16 missing DOB remain null.
+- Tier grades and 10 positional ranks computed, World Class 7, League Top Class 48; 4-4-2 provisional unapproved Best XI.
+- Some past 2002-03/2003-04 data is derived from unapproved Football Archive and is not individually independently verified; 2004-05 BDFutbol is main current source. Two disputed goal stats preserved and flagged (Moussilou, Kallon).
+- User approval has not been granted. Draft artifacts: data/ligue1-2004-05.json, audit/LIGUE1_2004-05_DRAFT_FULL_REPORT.md, audit/LIGUE1_2004-05_RAW_ROSTER_TRANSCRIPTION.txt, audit/LIGUE1_2004-05_PRODUCTION_VALIDATION.json; scripts/workflow. GitHub Actions results should be checked separately after deployment.
