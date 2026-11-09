@@ -40,3 +40,8 @@ jobs:
           TARGET_URL: http://127.0.0.1:8871/?league=ligue1&season=1999-00
           EXPECTED_PLAYERS: '135'
         run: node scripts/verify-ligue1-1999-00-browser.mjs
+      - name: Check published GitHub Pages in real Chromium
+        env:
+          TARGET_URL: https://wjdduddlf112.github.io/footballarch/?league=ligue1&season=1999-00
+          EXPECTED_PLAYERS: '135'
+        run: node scripts/verify-ligue1-1999-00-browser.mjs
