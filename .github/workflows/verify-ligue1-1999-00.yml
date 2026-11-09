@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 jobs:
   validate:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -20,7 +20,7 @@ jobs:
       - name: Check JavaScript parsing
         run: node --check assets/app.js
   browser-local:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     needs: validate
     steps:
       - uses: actions/checkout@v4
