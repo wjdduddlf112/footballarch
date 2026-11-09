@@ -40,7 +40,7 @@
     "playerApprovalUnchanged": true,
     "lastReview": "2026-11-09",
     "competitionNote": "The league was called Division 1 at the time; 'Ligue 1' is today's archive grouping. 2000-01 UEFA Cup entrant FC Gueugnon was a Division 2 club, outside this 1999-00 Division 1 player candidate pool.",
-    "candidateCount": 136,
+    "candidateCount": 135,
     "tierStatus": "provisional_all_candidates_ranked_historical_audit_incomplete",
     "playerCandidateReview": "reselected_season_lineups_2026-11-09_independent_BDFutbol_TM_crosscheck",
     "playerIntegration": {
@@ -51,14 +51,14 @@
       "preservedMainQualifiers": true,
       "threeSeasonEvidence": "current_season_7_club_BDF_tables_and_sedan_TM;prior_two_seasons_incomplete",
       "previousUnapprovedRosterSize": 111,
-      "reviewedCandidateCount": 136
+      "reviewedCandidateCount": 135
     },
     "formation": "4-3-1-2",
     "formationEvidence": {
       "selectionStatus": "period_representative_not_counted_as_modal",
       "representativeLeagueFormation": "4-4-2 and diamond variants",
       "bestXIFormation": "4-3-1-2",
-      "note": "A tactical variant of 4-4-2 selected for period fit and true primary positions; no season-wide lineup frequency count exists in this audit."
+      "note": "1999-00 period-representative, not statistically confirmed league mode. 4-3-1-2 diamond used for historical positional fit."
     },
     "bestXiReview": {
       "status": "proposed_unapproved",
@@ -74,7 +74,7 @@
       "A-": 14,
       "B+": 45,
       "B": 36,
-      "B-": 12,
+      "B-": 11,
       "C+": 9,
       "C": 4,
       "C-": 0,
@@ -83,7 +83,7 @@
     "worldClassCount": 6,
     "leagueTopClassCount": 30,
     "historicalValidation": {
-      "status": "partial",
+      "status": "partial_not_independent_all_three_seasons",
       "sources": {
         "monaco": "https://www.bdfutbol.com/en/t/t1999-004018.html",
         "psg": "https://www.bdfutbol.com/en/t/t1999-004002.html",
@@ -95,10 +95,16 @@
         "nantes": "https://www.bdfutbol.com/en/t/t1999-004013.html"
       },
       "pending": [
-        "1979-80 fullback side independent season verification",
-        "individual 1997-98 and 1998-99 appearances/goals for all candidates",
-        "Sedan full season league starters",
-        "independent birth checks for added athletes"
+        "per-player 1997-98 / 1998-99 match history",
+        "Sedan season starters and side role",
+        "period tactical shape distribution"
+      ],
+      "corrections": [
+        "Borbiconi 1998-99 Sedan loanee, 1999-00 elsewhere; removed",
+        "Sachy DOB 1967-10-23 via L'Equipe",
+        "Devineau DOB 1979-08-02 via FFF",
+        "Jean-Louis Montero name and 34 league matches corrected",
+        "Di Rocco scoring conflicting records (8 and 9), adopted 8 provisionally."
       ]
     },
     "reviewNotes": [
@@ -110,7 +116,10 @@
       "Contemporaneous UNFP honors and annual scoring awards inform the higher grades. Team trophies/rank never applied as player score bonuses.",
       "1999-00 most common 4-4-2 is treated as period representative; exact league-wide statistical modal formation is unverified. Narrow 4-3-1-2 Best XI is a period-appropriate 4-4-2 diamond variant, not an assertion of the exact mode.",
       "Do not infer exact minutes or assist values where unsupported. Official historic records and BDFutbol may differ by a few minutes; stale inherited minutes remain provisional.",
-      "User approval pending; no future-season advancement or final designation."
+      "User approval pending; no future-season advancement or final designation.",
+      "Final external identity checks excluded Christophe Borbiconi (Sedan only 1998-99); 135, not 136 eligible candidates. Missing backup places are left empty rather than filled without appearance evidence.",
+      "Birth checks: Nicolas Sachy 1967-10-23 (L'Équipe), Charles Devineau 1979-08-02 (FFF); Montero name is Jean-Louis (L'Équipe).",
+      "Sedan striker Di Rocco goal total differs by provider (8/9). Current working figure eight pending primary record adjudication."
     ]
   },
   "clubs": [
@@ -4423,7 +4432,7 @@
       "role": "backup",
       "tier": "C+",
       "displayTier": "C+",
-      "rank": 13,
+      "rank": 12,
       "season": "1999-00",
       "review": "draft_unapproved",
       "nameKo": "다비드 제말리",
@@ -6172,7 +6181,7 @@
       "name": "Nicolas Sachy",
       "nameOriginal": "Nicolas Sachy",
       "nameKo": "니콜라 사시",
-      "born": "1967-10-21",
+      "born": "1967-10-23",
       "club": "sedan",
       "clubNameOriginal": "CS Sedan-Ardennes",
       "role": "starter",
@@ -6190,12 +6199,16 @@
       "sources": [
         "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999",
         "https://fbref.com/en/squads/e4e952b9/1999-2000/Sedan-Stats",
-        "https://www.footballsquads.co.uk/france/1999-2000/div1/sedan.htm"
+        "https://www.footballsquads.co.uk/france/1999-2000/div1/sedan.htm",
+        "https://www.lequipe.fr/fiche/nicolas-sachy/238294"
       ],
       "evidence": {
         "currentSeason": "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999",
         "birthSource": null,
-        "previousTwoSeasons": []
+        "previousTwoSeasons": [],
+        "contextualSources": [
+          "https://www.lequipe.fr/fiche/nicolas-sachy/238294"
+        ]
       },
       "season": "1999-00",
       "originalTacticalRole": "GK",
@@ -6212,10 +6225,16 @@
         "weighting": "1999-00 highest, 1998-99 next, 1997-98 lowest",
         "records": {
           "1997-98": {
-            "verification": "independent_player_season_check_pending"
+            "club": "CS Sedan-Ardennes",
+            "appearances": 36,
+            "verification": "L_Equipe_player_season_history_context_needs_division_label_review",
+            "source": "https://www.lequipe.fr/fiche/nicolas-sachy/238294"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "club": "CS Sedan-Ardennes",
+            "appearances": 38,
+            "verification": "L_Equipe_Division_2_1998_99_player_history",
+            "source": "https://www.lequipe.fr/fiche/nicolas-sachy/238294"
           },
           "1999-00": {
             "appearances": 34,
@@ -6227,7 +6246,7 @@
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "대표 선발; 34회 리그 선발/34회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료, 당해 리그 선발 기록 및 좌우 포지션 보강 필요.",
+      "tierReview": "대표 선발; 34회 리그 선발/34회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료, 당해 리그 선발 기록 및 좌우 포지션 보강 필요. 1998-99 2부 리그 38경기, 1997-98 36경기 출전 이력은 L'Équipe에서 확인; 이전 대회 분류는 추가 점검.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록",
         "1999-00 실전 좌우 포지션 확인"
@@ -6438,9 +6457,9 @@
     {
       "id": "ligue1-1999-00-sedan-juan-luis-montero",
       "position": "LB",
-      "name": "Juan-Luis Montero",
-      "nameOriginal": "Juan-Luis Montero",
-      "nameKo": "후안루이스 몬테로",
+      "name": "Jean-Louis Montero",
+      "nameOriginal": "Jean-Louis Montero",
+      "nameKo": "장루이 몬테로",
       "born": "1971-04-28",
       "club": "sedan",
       "clubNameOriginal": "CS Sedan-Ardennes",
@@ -6449,7 +6468,7 @@
       "tier": "B",
       "rank": 4,
       "review": "draft_unapproved",
-      "leagueAppearances": 30,
+      "leagueAppearances": 34,
       "leagueStarts": 26,
       "leagueMinutes": 2351,
       "appearanceScope": "domestic_league_only",
@@ -6459,18 +6478,22 @@
       "sources": [
         "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999",
         "https://fbref.com/en/squads/e4e952b9/1999-2000/Sedan-Stats",
-        "https://www.footballsquads.co.uk/france/1999-2000/div1/sedan.htm"
+        "https://www.footballsquads.co.uk/france/1999-2000/div1/sedan.htm",
+        "https://www.lequipe.fr/fiche/jean-louis-montero/238297"
       ],
       "evidence": {
-        "currentSeason": "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999",
+        "currentSeason": "https://www.lequipe.fr/fiche/jean-louis-montero/238297",
         "birthSource": null,
-        "previousTwoSeasons": []
+        "previousTwoSeasons": [],
+        "contextualSources": [
+          "https://www.lequipe.fr/fiche/jean-louis-montero/238297"
+        ]
       },
       "season": "1999-00",
       "originalTacticalRole": "LB",
       "displayTier": "B0",
       "leagueGoals": null,
-      "verificationStatus": "season_membership_confirmed_individual_league_starts_incomplete",
+      "verificationStatus": "L_Equipe_34_appearances_independent_starts_LB_role_partially_unverified",
       "threeSeasonReview": {
         "status": "prior_two_seasons_not_fully_independently_verified",
         "assessmentSeasons": [
@@ -6487,7 +6510,7 @@
             "verification": "independent_player_season_check_pending"
           },
           "1999-00": {
-            "appearances": 30,
+            "appearances": 34,
             "starts": 26,
             "goals": null,
             "verification": "historical_club_roster_verified_individual_stats_partial",
@@ -6499,7 +6522,8 @@
       "tierReview": "대표 선발; 26회 리그 선발/30회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료, 당해 리그 선발 기록 및 좌우 포지션 보강 필요.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록",
-        "1999-00 실전 좌우 포지션 확인"
+        "1999-00 실전 좌우 포지션 확인",
+        "팀 내 1999-00 왼쪽 수비 위치 경기별 대조"
       ]
     },
     {
@@ -6560,70 +6584,6 @@
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
       "tierReview": "대표 선발; 미확인회 리그 선발/미확인회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료, 당해 리그 선발 기록 및 좌우 포지션 보강 필요.",
-      "verificationNeeded": [
-        "1999-00 리그 선발 횟수",
-        "1997-98 / 1998-99 개인 경기 기록",
-        "1999-00 실전 좌우 포지션 확인"
-      ]
-    },
-    {
-      "id": "ligue1-1999-00-sedan-christophe-borbiconi",
-      "name": "Christophe Borbiconi",
-      "nameOriginal": "Christophe Borbiconi",
-      "club": "sedan",
-      "clubNameOriginal": "CS Sedan-Ardennes",
-      "position": "RB",
-      "originalTacticalRole": "RB",
-      "role": "backup",
-      "tier": "B-",
-      "displayTier": "B-",
-      "rank": 12,
-      "season": "1999-00",
-      "review": "draft_unapproved",
-      "nameKo": "크리스토프 보르비코니",
-      "born": "1975-01-22",
-      "starts": null,
-      "leagueStarts": null,
-      "leagueAppearances": null,
-      "leagueGoals": null,
-      "leagueMinutes": null,
-      "appearanceScope": "domestic_league_only",
-      "candidateStatus": "draft",
-      "verificationStatus": "season_membership_confirmed_individual_league_starts_incomplete",
-      "sources": [
-        "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999"
-      ],
-      "evidence": {
-        "currentSeason": "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999",
-        "birthSource": "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999",
-        "previousTwoSeasons": []
-      },
-      "threeSeasonReview": {
-        "status": "prior_two_seasons_not_fully_independently_verified",
-        "assessmentSeasons": [
-          "1997-98",
-          "1998-99",
-          "1999-00"
-        ],
-        "weighting": "1999-00 highest, 1998-99 next, 1997-98 lowest",
-        "records": {
-          "1997-98": {
-            "verification": "independent_player_season_check_pending"
-          },
-          "1998-99": {
-            "verification": "independent_player_season_check_pending"
-          },
-          "1999-00": {
-            "appearances": null,
-            "starts": null,
-            "goals": null,
-            "verification": "historical_club_roster_verified_individual_stats_partial",
-            "source": "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999"
-          }
-        },
-        "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
-      },
-      "tierReview": "주요 후보; 미확인회 리그 선발/미확인회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B- 잠정 평가. 이전 두 시즌 정량 교차검증 미완료, 당해 리그 선발 기록 및 좌우 포지션 보강 필요.",
       "verificationNeeded": [
         "1999-00 리그 선발 횟수",
         "1997-98 / 1998-99 개인 경기 기록",
@@ -7255,7 +7215,7 @@
       "season": "1999-00",
       "originalTacticalRole": "ST",
       "displayTier": "B+",
-      "leagueGoals": 9,
+      "leagueGoals": 8,
       "verificationStatus": "season_membership_confirmed_individual_league_starts_incomplete",
       "threeSeasonReview": {
         "status": "prior_two_seasons_not_fully_independently_verified",
@@ -7275,14 +7235,14 @@
           "1999-00": {
             "appearances": null,
             "starts": null,
-            "goals": 9,
+            "goals": 8,
             "verification": "historical_club_roster_verified_individual_stats_partial",
             "source": "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999"
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "대표 선발; 미확인회 리그 선발/미확인회 출전, 9골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료, 당해 리그 선발 기록 및 좌우 포지션 보강 필요.",
+      "tierReview": "대표 선발; 미확인회 리그 선발/미확인회 출전, 9골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료, 당해 리그 선발 기록 및 좌우 포지션 보강 필요. 시즌 골 수는 출처별 상이(8골과 9골); L'Équipe/FBref 자료의 8골 기준, 독립 재확인 필요.",
       "verificationNeeded": [
         "1999-00 리그 선발 횟수",
         "1997-98 / 1998-99 개인 경기 기록",
@@ -7307,19 +7267,23 @@
       "born": "1974-07-08",
       "starts": null,
       "leagueStarts": null,
-      "leagueAppearances": null,
+      "leagueAppearances": 23,
       "leagueGoals": 7,
       "leagueMinutes": null,
       "appearanceScope": "domestic_league_only",
       "candidateStatus": "draft",
       "verificationStatus": "season_membership_confirmed_individual_league_starts_incomplete",
       "sources": [
-        "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999"
+        "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999",
+        "https://www.lequipe.fr/fiche/cedric-mionnet/238300"
       ],
       "evidence": {
         "currentSeason": "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999",
         "birthSource": "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999",
-        "previousTwoSeasons": []
+        "previousTwoSeasons": [],
+        "contextualSources": [
+          "https://www.lequipe.fr/fiche/cedric-mionnet/238300"
+        ]
       },
       "threeSeasonReview": {
         "status": "prior_two_seasons_not_fully_independently_verified",
@@ -7331,13 +7295,21 @@
         "weighting": "1999-00 highest, 1998-99 next, 1997-98 lowest",
         "records": {
           "1997-98": {
-            "verification": "independent_player_season_check_pending"
+            "club": "CS Sedan-Ardennes",
+            "appearances": 38,
+            "goals": 7,
+            "verification": "L_Equipe_player_history_division_label_pending_check",
+            "source": "https://www.lequipe.fr/fiche/cedric-mionnet/238300"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "club": "CS Sedan-Ardennes",
+            "appearances": 37,
+            "goals": 17,
+            "verification": "L_Equipe_1998_99_Division_2_season",
+            "source": "https://www.lequipe.fr/fiche/cedric-mionnet/238300"
           },
           "1999-00": {
-            "appearances": null,
+            "appearances": 23,
             "starts": null,
             "goals": 7,
             "verification": "historical_club_roster_verified_individual_stats_partial",
@@ -7346,7 +7318,7 @@
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "주요 후보; 미확인회 리그 선발/미확인회 출전, 7골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료, 당해 리그 선발 기록 및 좌우 포지션 보강 필요.",
+      "tierReview": "1999-00 Sedan 리그 23경기 7골 및 1998-99 2부 리그 37경기 17골 실적을 가중 평가. 1997-98 38경기 7골 이력은 대회 분류를 별도 검증 중. 선발 횟수 미확인.",
       "verificationNeeded": [
         "1999-00 리그 선발 횟수",
         "1997-98 / 1998-99 개인 경기 기록",
@@ -8805,7 +8777,7 @@
       "role": "backup",
       "starts": 3,
       "tier": "C+",
-      "rank": 14,
+      "rank": 13,
       "review": "draft_unapproved",
       "leagueAppearances": 6,
       "leagueStarts": 3,
@@ -9002,7 +8974,7 @@
       "season": "1999-00",
       "review": "draft_unapproved",
       "nameKo": "샤를 드비노",
-      "born": "1979-08-04",
+      "born": "1979-08-02",
       "starts": 16,
       "leagueStarts": 16,
       "leagueAppearances": 19,
@@ -9012,12 +8984,16 @@
       "candidateStatus": "draft",
       "verificationStatus": "league_appearance_starts_crosschecked_BDFutbol_partial_position_verification",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t1999-004013.html"
+        "https://www.bdfutbol.com/en/t/t1999-004013.html",
+        "https://www.fff.fr/equipe-nationale/joueur/10135-devineau-charles/fiche.html"
       ],
       "evidence": {
         "currentSeason": "https://www.bdfutbol.com/en/t/t1999-004013.html",
         "birthSource": null,
-        "previousTwoSeasons": []
+        "previousTwoSeasons": [],
+        "contextualSources": [
+          "https://www.fff.fr/equipe-nationale/joueur/10135-devineau-charles/fiche.html"
+        ]
       },
       "threeSeasonReview": {
         "status": "prior_two_seasons_not_fully_independently_verified",
