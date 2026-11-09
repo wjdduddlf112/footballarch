@@ -1,3 +1,10 @@
+## 2026-11-09 — 2000-01 Division 1 166-player DRAFT source correction addendum
+- **FINAL candidate count** 166 = 110 representative starters + 56 backups; not 167/168 intermediate. Removed duplicate Bordeaux Tony Vairelles; Lyon season part (11 starts) takes priority over Bordeaux (8 starts).
+- **Real name/role corrections**: Troyes Pascal Renier (CB) replaces misidentified Christophe Monier, Yannick Zambernardi LB replaces Nicolas; Bastia Laurent Casanova DM rather than CB; Sedan Philippe Celdran LM→LW and Mathieu Verschuère DM; PSG Sylvain Distin LB; Bastia Yann Lachuer CAM. Squad 166 players across 10 actual UEFA clubs; all 10 positions ranked.
+- **Midseason player season records**: Strasbourg Brahim Hemdani only 12 domestic matches 11 starts before Marseille move; PSG Stéphane Dalmat 19 domestic matches 14 starts before Inter move; Bastia Pierre Laurent 22 matches 8 starts.
+- **Birth dates**: all 166 DOB fields populated after recent source checks (11 missing identities resolved and Rothen/Celestini corrected); completeness of independent source verification for ALL existing birth records not asserted.
+- **Historical caveat**: complete individually independent 1998-99 and 1999-00 performance and precise role frequency not yet achieved; all tiers remain `draft_unapproved`. No 2001-02 season begun.
+
 ## 2026-11-09 — Ligue 1 / Division 1 2000-01, complete season DRAFT
 
 - **Qualifiers**: 10 actual participants 2001-02 UEFA/2001 Intertoto; Nantes, Lyon, Lille UCL; Bordeaux, Sedan UEFA; Strasbourg French cup winner relegated but UEFA; PSG and Troyes Intertoto→UEFA; Rennes and Bastia Intertoto.
