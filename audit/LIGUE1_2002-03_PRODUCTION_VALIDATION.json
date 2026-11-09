@@ -1,0 +1,76 @@
+{
+  "season": "2002-03",
+  "league": "ligue1",
+  "historicalLeagueName": "Ligue 1",
+  "qualifyingSeason": "2003-04",
+  "review": "draft_unapproved",
+  "runDateKST": "2026-11-10",
+  "dataCommit": "fa0e12c39e4fb7ba8ed50880e52d0525e944fce1",
+  "testAndDeployCommit": "520590821884b368fd1e963f4f11d928231c51a4",
+  "qualifierClubs": 10,
+  "candidates": 172,
+  "starters": 110,
+  "backups": 62,
+  "playersMissingBorn": 54,
+  "playersMissingKoreanName": 0,
+  "worldClass": 9,
+  "leagueTopClass": 47,
+  "provisionalTierCounts": {
+    "S": 1,
+    "A+": 8,
+    "A": 15,
+    "A-": 23,
+    "B+": 55,
+    "B": 34,
+    "B-": 21,
+    "C+": 15,
+    "C": 0,
+    "C-": 0,
+    "D": 0
+  },
+  "BestXI": 11,
+  "checks": {
+    "staticDataStructure": {
+      "status": "passed",
+      "workflowRun": 42680333057,
+      "notes": "172 player IDs unique; 10 eligible clubs; 110 representative starters; per-position backups <= 1; 10 complete 1..N rankings; tier order, 11 ID-linked XI and DRAFT gate."
+    },
+    "JavaScriptSyntax": {
+      "status": "passed",
+      "workflowRun": 42680333057
+    },
+    "localChromium": {
+      "status": "passed",
+      "workflowRun": 42680333057,
+      "notes": "172 players, all tiers, 10 clubs, 10 position ranking groups, player detail, Best XI, full 20-team standings, zero runtime exceptions, zero failed season JSON requests."
+    },
+    "publicPagesChromium": {
+      "status": "passed",
+      "workflowRun": 42680333057,
+      "notes": "Same Chromium checks against actual published 2002-03 GitHub Pages URL."
+    },
+    "pagesDeployment": {
+      "status": "passed",
+      "workflowRun": 42680331502
+    },
+    "independentHistoricalValidation": {
+      "status": "partial",
+      "notes": "2002-03 club-season lineup and headline league leaders source-led; incomplete full 2000-01 and 2001-02 player-level independent review, exact position appearance frequency, 54 player birth dates, and 4-4-2 modal statistical proof."
+    },
+    "birthdates": {
+      "fieldCount": 118,
+      "missing": 54,
+      "status": "not fully independently verified; missing null not guessed",
+      "conflict": "Eric Cubilier conflicting primary/secondary dates 1979-05-09 and 1979-08-09 left null pending a conclusive source audit"
+    }
+  },
+  "links": {
+    "website": "https://wjdduddlf112.github.io/footballarch/?league=ligue1&season=2002-03",
+    "validation": "https://github.com/wjdduddlf112/footballarch/actions/runs/42680333057",
+    "deployment": "https://github.com/wjdduddlf112/footballarch/actions/runs/42680331502",
+    "fullReport": "https://github.com/wjdduddlf112/footballarch/blob/main/audit/LIGUE1_2002-03_DRAFT_FULL_REPORT.md",
+    "rawRoster": "https://github.com/wjdduddlf112/footballarch/blob/main/audit/LIGUE1_2002-03_RAW_ROSTER_TRANSCRIPTION.txt"
+  },
+  "approval": "pending_user_review",
+  "scopeWarning": "Structure/browser/deployment success is not player-by-player historical verification."
+}
