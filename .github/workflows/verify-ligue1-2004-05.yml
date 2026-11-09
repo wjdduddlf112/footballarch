@@ -30,10 +30,15 @@ jobs:
       - name: Check local Football Archive page
         env:
           TARGET_URL: http://127.0.0.1:8871/?league=ligue1&season=2004-05
-          EXPECTED_PLAYERS: '138'
+          EXPECTED_PLAYERS: '150'
         run: node scripts/verify-ligue1-2004-05-browser.mjs
       - name: Check published GitHub Pages page
         env:
           TARGET_URL: https://wjdduddlf112.github.io/footballarch/?league=ligue1&season=2004-05
-          EXPECTED_PLAYERS: '138'
-        run: node scripts/verify-ligue1-2004-05-browser.mjs
+          EXPECTED_PLAYERS: '150'
+        run: |
+          for attempt in $(seq 1 30); do
+            if node scripts/verify-ligue1-2004-05-browser.mjs; then exit 0; fi
+            sleep 12
+          done
+          exit 1

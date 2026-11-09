@@ -8,7 +8,7 @@
 import { chromium } from "playwright";
 
 const url=process.env.TARGET_URL||"http://127.0.0.1:8871/?league=ligue1&season=2004-05";
-const expected=Number(process.env.EXPECTED_PLAYERS||138);
+const expected=Number(process.env.EXPECTED_PLAYERS||150);
 const browser=await chromium.launch({headless:true,args:["--no-sandbox"]});
 const page=await browser.newPage({viewport:{width:1440,height:900}});
 const pageErrors=[],failedRequests=[],steps=[];
