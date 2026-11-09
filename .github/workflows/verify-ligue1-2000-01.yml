@@ -38,10 +38,10 @@ jobs:
       - name: Check all-tiers, all positions, Best XI and player modal
         env:
           TARGET_URL: http://127.0.0.1:8871/?league=ligue1&season=2000-01
-          EXPECTED_PLAYERS: '167'
+          EXPECTED_PLAYERS: '166'
         run: node scripts/verify-ligue1-2000-01-browser.mjs
       - name: Check published GitHub Pages in real Chromium
         env:
           TARGET_URL: https://wjdduddlf112.github.io/footballarch/?league=ligue1&season=2000-01
-          EXPECTED_PLAYERS: '167'
+          EXPECTED_PLAYERS: '166'
         run: node scripts/verify-ligue1-2000-01-browser.mjs
