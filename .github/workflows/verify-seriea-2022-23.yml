@@ -1,0 +1,40 @@
+name: Verify Serie A 2022-23 DRAFT and browser
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/seriea-2022-23.json'
+      - 'scripts/verify-seriea-2022-23.mjs'
+      - 'scripts/verify-seriea-2022-23-browser.mjs'
+      - '.github/workflows/verify-seriea-2022-23.yml'
+  workflow_dispatch:
+jobs:
+  structure:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify Serie A 2022-23 player JSON and historical standings
+        run: |
+          node scripts/verify-seriea-2022-23.mjs
+          node scripts/verify-seriea.mjs
+  browser:
+    needs: structure
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install Playwright chromium
+        run: |
+          npm install --no-save playwright@1.58.2
+          npx playwright install --with-deps chromium
+      - name: Test site tabs, player modal, season JSON in browser
+        run: node scripts/verify-seriea-2022-23-browser.mjs
