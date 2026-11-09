@@ -70,60 +70,16 @@
       "playerId": "ligue1-2000-01-bordeaux-pauleta"
     }
   ],
-  "missingBirthDates": [
-    {
-      "name": "Brahim Hemdani",
-      "club": "strasbourg"
-    },
-    {
-      "name": "Fabien Debec",
-      "club": "rennes"
-    },
-    {
-      "name": "Mario Turdó",
-      "club": "rennes"
-    },
-    {
-      "name": "Christophe Monier",
-      "club": "troyes"
-    },
-    {
-      "name": "Nicolas Zambernardi",
-      "club": "troyes"
-    },
-    {
-      "name": "David Hamed",
-      "club": "troyes"
-    },
-    {
-      "name": "Laurent Casanova",
-      "club": "bastia"
-    },
-    {
-      "name": "Pierre Laurent",
-      "club": "bastia"
-    },
-    {
-      "name": "Talal El Karkouri",
-      "club": "psg"
-    },
-    {
-      "name": "Bernard Mendy",
-      "club": "psg"
-    },
-    {
-      "name": "Stéphane Dalmat",
-      "club": "psg"
-    }
-  ],
+  "missingBirthDates": [],
   "tests": {
-    "staticNode": "pending",
-    "localChromium": "pending",
-    "publicChromium": "pending",
-    "githubPagesDeployment": "pending",
-    "threeSeasonIndependentHistory": "incomplete",
+    "staticNode": "PASS previous 166 data release; latest data rerun pending",
+    "localChromium": "PASS previous 166 data release; current updated dataset rerun pending",
+    "publicChromium": "PASS previous 166 data release; current updated dataset rerun pending",
+    "githubPagesDeployment": "PASS prior released commit; latest changes awaiting deployment",
+    "threeSeasonIndependentHistory": "INCOMPLETE",
     "fullPositionFrequency": "incomplete",
-    "leagueModalFormation": "unquantified"
+    "leagueModalFormation": "unquantified",
+    "completeIndependentDOBs": "INCOMPLETE (fields 166/166 populated; verified recent corrections only)"
   },
   "sourceCorrections": [
     {
@@ -136,5 +92,19 @@
       "election": "Lyon only",
       "source": "https://www.fff.fr/equipe-nationale/joueur/8647-vairelles-tony/fiche.html"
     }
+  ],
+  "birthDateFieldPopulation": 166,
+  "birthDateAudit": "Source checked corrections for 11 previously missing/incorrect birthdays; all 166 DOB fields now populated, but completeness of independent per-player DOB proof not audited for the rest.",
+  "correspondingSourceCorrections": [
+    "Samuel Boutal Troyes ST",
+    "Mathieu Verschuère Sedan DM",
+    "Tony Vairelles Lyon only",
+    "Pascal Renier Troyes CB (not Christophe Monier)",
+    "Yannick Zambernardi Troyes LB (not Nicolas)",
+    "Laurent Casanova Bastia DM (not CB)",
+    "Brahim Hemdani Strasbourg 12/11 before Marseille move",
+    "Stéphane Dalmat PSG 19/14 before Inter move",
+    "Fabio Celestini DOB 1975-10-31",
+    "Jérôme Rothen DOB 1978-03-31"
   ]
 }
