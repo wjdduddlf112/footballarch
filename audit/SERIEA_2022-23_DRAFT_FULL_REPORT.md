@@ -535,3 +535,12 @@ The line-up has exactly 11 unique IDs, their stored site position matches the se
 - This full audit report: `audit/SERIEA_2022-23_DRAFT_FULL_REPORT.md`.
 - Each season requires its own user instruction; **no 2023-24 new player assessment to be started from this file alone**.
 
+## 11. Executed GitHub Actions and public live browser verification (2026-11-09)
+
+- **Structural script actually executed:** `node scripts/verify-seriea-2022-23.mjs` and `node scripts/verify-seriea.mjs` passed in GitHub Actions run [42553320096](https://github.com/wjdduddlf112/footballarch/actions/runs/42553320096). This includes player IDs, dates, 132 rows, 7 qualifiers excluding Juventus, uninterrupted ranking numbers, one team/position backup, 11 distinct XI and verified 20-club league table unchanged.
+- **Local Chromium browser actually executed:** the same run's `browser` job passed checks for all 6 major tabs (overview, formation, top, tiers, table, stats), draft JSON 132 players/7 qualifiers, and clickable player detail modal showing original name and date of birth.
+- **PUBLIC Github Pages browser actually executed:** `node scripts/verify-seriea-2022-23-live.mjs` passed in the `browser` job at https://wjdduddlf112.github.io/footballarch/?league=seriea&season=2022-23. The test loaded public JSON at HTTP 200, confirmed 2022-23/132/7/11/DRAFT, visited all six views, opened the Ivan Provedel player record, checked original name and DOB fields, and observed no runtime JS exceptions or 400+ response errors from the Football Archive origin.
+- **Screenshot evidence:** `seriea-2022-23-public-browser` artifact uploaded by [Actions run 42553320096](https://github.com/wjdduddlf112/footballarch/actions/runs/42553320096).
+- **GitHub Pages latest main publication before these appended logs:** [Pages run 42553432019](https://github.com/wjdduddlf112/footballarch/actions/runs/42553432019) succeeded at commit `c1dfac5d3ba361a6c13cb2d12b917d32e29d7c61`. This report-only update requires a new Pages run for the newest head, but player JSON and UI code remain unchanged.
+- **Remaining caveat:** structural/browser pass is not equivalent to player-by-player independent 3-season historical certification, nor user approval. No change to `draft_unapproved` status.
+
