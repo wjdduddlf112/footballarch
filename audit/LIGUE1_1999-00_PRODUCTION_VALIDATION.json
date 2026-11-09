@@ -114,13 +114,15 @@
     }
   ],
   "tests": {
-    "local_in_memory_structure": "pass",
-    "github_node_workflow": "passed_on_2026_11_09_135_player_commit_2db3c0",
-    "production_browser_interaction": "github_chromium_test_ubuntu_24_04_scheduled",
-    "production_json_url": "unconfirmed",
-    "historical_independent_full_3season": "incomplete",
-    "sedan_1999_starters": "incomplete",
-    "github_pages_deployment": "latest_pending"
+    "static_structure": "PASS: 135 players, 8 qualifying clubs, 88 starters, 47 backups, 10 continuous positional rankings, valid 11 XI ID references",
+    "github_node_workflow": "PASS 2026-11-09: https://github.com/wjdduddlf112/footballarch/actions/runs/42585535908",
+    "local_chromium_browser": "PASS 2026-11-09: full table, 135 players, 8 clubs, 10 positional groups, grade badges, 11 XI slots, modal, league table, league top, zero JS exceptions",
+    "public_github_pages_chromium": "PASS 2026-11-09 on https://wjdduddlf112.github.io/footballarch/?league=ligue1&season=1999-00 ; same tests as local; source GitHub Actions run 42585535908",
+    "github_pages_deployment": "PASS: https://github.com/wjdduddlf112/footballarch/actions/runs/42585535434",
+    "historical_independent_full_3season": "INCOMPLETE: prior 1997-98 and 1998-99 individual player-season evidence not fully independently checked",
+    "player_position_match_by_match": "INCOMPLETE: especially Sedan and flexible midfield roles",
+    "historical_all_league_442_count": "INCOMPLETE: period representative only",
+    "crest_period_correct_visuals": "INCOMPLETE: historical variants for all clubs not separately audited"
   },
   "historicalAudit": {
     "exclusions": [
@@ -173,5 +175,10 @@
         "https://www.theguardian.com/football/2000/mar/07/championsleague.sport1"
       ]
     }
-  }
+  },
+  "lastVerifiedUtc": "2026-11-09T08:24:00Z",
+  "githubActionsRunId": 42585535908,
+  "githubPagesRunId": 42585535434,
+  "githubPagesUrl": "https://wjdduddlf112.github.io/footballarch/?league=ligue1&season=1999-00",
+  "githubCommitVerified": "22580a660d9fe6401a8cbb47ca0cbe0bd3d753ed"
 }
