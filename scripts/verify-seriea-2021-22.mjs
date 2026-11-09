@@ -25,7 +25,7 @@ for(const player of p.players){
   check(player.club===player.clubId && qualifierIds.includes(player.club),"Invalid eligible club: "+player.id);
   check(pos.includes(player.position),"Invalid position: "+player.id);
   check(validGrades.includes(player.tier),"Invalid grade: "+player.id);
-  check(Boolean(player.nameKo&&player.nameOriginal&&/^\\d{4}-\\d{2}-\\d{2}$/.test(player.born||"")),"Identity missing: "+player.id);
+  check(Boolean(player.nameKo&&player.nameOriginal&&/^\d{4}-\d{2}-\d{2}$/.test(player.born||"")),"Identity missing: "+player.id);
   check(player.leagueAppearances>0 && player.leagueStarts>=0 && player.leagueStarts<=player.leagueAppearances,"App/start mismatch: "+player.id);
   check(player.leagueMinutes>=0 && player.leagueMinutes<=player.leagueAppearances*100,"Minutes invalid: "+player.id);
   check(player.review==="draft_unapproved","Player not DRAFT: "+player.id);
@@ -59,7 +59,7 @@ check(p.players.filter(x=>["S","A+","A","A-"].includes(x.tier)).length===47,"Lea
 const d=p.players.filter(x=>x.name==="Dušan Vlahović");
 check(d.length===2&&d.some(x=>x.club==="fiorentina"&&x.leagueGoals===17)&&d.some(x=>x.club==="juventus"&&x.leagueGoals===7),"Two eligible Vlahović club spells missing");
 if(errors.length){
-  console.error("Serie A 2021-22 verification FAILED:",errors.join("\\n- "));
+  console.error("Serie A 2021-22 verification FAILED:",errors.join("\n- "));
   process.exitCode=1;
 }else{
   const positionCounts=Object.fromEntries(pos.map(x=>[x,p.players.filter(v=>v.position===x).length]));
