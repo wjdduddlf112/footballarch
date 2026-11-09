@@ -27,7 +27,7 @@ Atalanta seventh enters UECL. Bologna, Fiorentina and Lazio do not enter 2026-27
 - Provisional tiers/ranks may change with deeper individual peer review. All remain draft_unapproved.
 - Model representative Best XI 3-4-1-2; across-league 380-fixture modal formation not verified. Club-specific systems listed in JSON.
 - League standings are the unchanged RSSSF source snapshot present in `data/seriea-standings-verified-1999-2026.json`.
-- Dimarco BDF 7 goals, Lega early MVP release 6 goals, provider-defined 16 vs 18 assists discrepancy; do not merge into one unsupported count.
+- Dimarco 22 May MVP notice recorded 6 goals *before* the final fixture; he scored a free kick in Bologna–Inter on 23 May, making 7 league goals at season end. Official 18 assists vs FBref 16 still reflect distinct provider attribution.
 - Bartesaghi 2005-12-29 corroborated by UEFA/Lega; one AC Milan club bio header is inconsistent.
 
 ## C. Grade distribution
@@ -459,7 +459,7 @@ Atalanta seventh enters UECL. Bologna, Fiorentina and Lazio do not enter 2026-27
 - **CB** 알레산드로 바스토니 (Alessandro Bastoni, FC Internazionale Milano) — A+. 28경기 28선발 2250분 1골. 2025-26 대표 전술의 주요 선발 자원. 개인 기여도·출전 가동률·최근 2시즌 수준을 질적으로 가중 평가한 잠정 등급이며, 전 시즌 정밀 비교 감사는 진행 전.
 - **CB** 마누엘 아칸지 (Manuel Akanji, FC Internazionale Milano) — A+. 33경기 31선발, 2골. 스리백 수비 조율과 후방 빌드업에 안정적 기여, 전 소속 Manchester City에서의 2023-25 기록도 질적 맥락으로 평가.
 - **CB** 에반 은디카 (Evan Ndicka, AS Roma) — A+. 31경기 31선발 2684분 3골. 2025-26 대표 전술의 주요 선발 자원. 개인 기여도·출전 가동률·최근 2시즌 수준을 질적으로 가중 평가한 잠정 등급이며, 전 시즌 정밀 비교 감사는 진행 전.
-- **LB** 페데리코 디마르코 (Federico Dimarco, FC Internazionale Milano) — S. 35경기 30선발, BDFutbol 기준 7골. 리그 공식 전체 MVP로 선정됐으며, 공식 도움 기록은 통계 업체별 정의 차이가 있으므로 16~18개로 출처를 구분한다. 지난 2시즌에도 핵심 좌측 윙백이었고 세트피스·전진 패스·득점기회 창출의 비대체성을 인정.
+- **LB** 페데리코 디마르코 (Federico Dimarco, FC Internazionale Milano) — S. 35경기 30선발 2702분 7골(BDFutbol 시즌 최종치). 2026년 5월 22일 리그 MVP 공식 발표 당시 6골이었으나, 5월 23일 볼로냐전 프리킥 득점으로 최종 7골. 리그·구단 공식 발표 도움 18개와 FBref의 16개는 제공자 산정 차이를 분리 기록. 2023-24~2025-26 여러 시즌 좌측 윙백의 창출·전진 패스·세트피스·높은 가동률과 역할 대체 불가를 종합해 S 잠정 평가.
 - **RB** 알렉시스 살레마커르스 (Alexis Saelemaekers, AC Milan) — A+. 35경기 33선발 2802분 3골. 2025-26 대표 전술의 주요 선발 자원. 개인 기여도·출전 가동률·최근 2시즌 수준을 질적으로 가중 평가한 잠정 등급이며, 전 시즌 정밀 비교 감사는 진행 전.
 - **DM** 마누엘 로카텔리 (Manuel Locatelli, Juventus FC) — A+. 36경기 36선발 3007분 1골. 2025-26 대표 전술의 주요 선발 자원. 개인 기여도·출전 가동률·최근 2시즌 수준을 질적으로 가중 평가한 잠정 등급이며, 전 시즌 정밀 비교 감사는 진행 전.
 - **CM** 스콧 맥토미니 (Scott McTominay, SSC Napoli) — A+. 33경기 31선발 10골. 2024-25 리그 MVP 이후에도 박스 침투와 중원 활동량 높은 수준 유지.
@@ -475,7 +475,7 @@ Atalanta seventh enters UECL. Bologna, Fiorentina and Lazio do not enter 2026-27
 - **CB · 마누엘 아칸지** (Manuel Akanji, FC Internazionale Milano, A+, rank 2): 33경기 31선발, 2골. 스리백 수비 조율과 후방 빌드업에 안정적 기여, 전 소속 Manchester City에서의 2023-25 기록도 질적 맥락으로 평가.
 - **CB · 얀 비세크** (Yann Bisseck, FC Internazionale Milano, A-, rank 15): 23경기 21선발 1924분 3골. 2025-26 대표 전술의 주요 선발 자원. 개인 기여도·출전 가동률·최근 2시즌 수준을 질적으로 가중 평가한 잠정 등급이며, 전 시즌 정밀 비교 감사는 진행 전.
 - **CB · 프란체스코 아체르비** (Francesco Acerbi, FC Internazionale Milano, B0, rank 23): 18경기 15선발 1377분 0골. 2025-26 동일 포지션의 교체·대체 선발 자원. 개인 기여도·출전 가동률·최근 2시즌 수준을 질적으로 가중 평가한 잠정 등급이며, 전 시즌 정밀 비교 감사는 진행 전.
-- **LB · 페데리코 디마르코** (Federico Dimarco, FC Internazionale Milano, S, rank 1): 35경기 30선발, BDFutbol 기준 7골. 리그 공식 전체 MVP로 선정됐으며, 공식 도움 기록은 통계 업체별 정의 차이가 있으므로 16~18개로 출처를 구분한다. 지난 2시즌에도 핵심 좌측 윙백이었고 세트피스·전진 패스·득점기회 창출의 비대체성을 인정.
+- **LB · 페데리코 디마르코** (Federico Dimarco, FC Internazionale Milano, S, rank 1): 35경기 30선발 2702분 7골(BDFutbol 시즌 최종치). 2026년 5월 22일 리그 MVP 공식 발표 당시 6골이었으나, 5월 23일 볼로냐전 프리킥 득점으로 최종 7골. 리그·구단 공식 발표 도움 18개와 FBref의 16개는 제공자 산정 차이를 분리 기록. 2023-24~2025-26 여러 시즌 좌측 윙백의 창출·전진 패스·세트피스·높은 가동률과 역할 대체 불가를 종합해 S 잠정 평가.
 - **LB · 카를루스 아우구스투** (Carlos Augusto, FC Internazionale Milano, B+, rank 8): 34경기 18선발 1755분 1골. 2025-26 동일 포지션의 교체·대체 선발 자원. 개인 기여도·출전 가동률·최근 2시즌 수준을 질적으로 가중 평가한 잠정 등급이며, 전 시즌 정밀 비교 감사는 진행 전.
 - **RB · 루이스 엔히키** (Luis Henrique, FC Internazionale Milano, B+, rank 9): 30경기 18선발 1621분 1골. 2025-26 대표 전술의 주요 선발 자원. 개인 기여도·출전 가동률·최근 2시즌 수준을 질적으로 가중 평가한 잠정 등급이며, 전 시즌 정밀 비교 감사는 진행 전.
 - **RB · 덴절 뒴프리스** (Denzel Dumfries, FC Internazionale Milano, A-, rank 6): 20경기 15선발 1329분 3골. 2025-26 동일 포지션의 교체·대체 선발 자원. 개인 기여도·출전 가동률·최근 2시즌 수준을 질적으로 가중 평가한 잠정 등급이며, 전 시즌 정밀 비교 감사는 진행 전.
