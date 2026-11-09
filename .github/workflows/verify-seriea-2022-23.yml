@@ -6,6 +6,7 @@ on:
       - 'data/seriea-2022-23.json'
       - 'scripts/verify-seriea-2022-23.mjs'
       - 'scripts/verify-seriea-2022-23-browser.mjs'
+      - 'scripts/verify-seriea-2022-23-live.mjs'
       - '.github/workflows/verify-seriea-2022-23.yml'
   workflow_dispatch:
 jobs:
@@ -36,5 +37,14 @@ jobs:
         run: |
           npm install --no-save playwright@1.58.2
           npx playwright install --with-deps chromium
-      - name: Test site tabs, player modal, season JSON in browser
+      - name: Test local site tabs, player modal, season JSON in browser
         run: node scripts/verify-seriea-2022-23-browser.mjs
+      - name: Test public GitHub Pages 2022-23 real browser
+        run: node scripts/verify-seriea-2022-23-live.mjs
+      - name: Preserve public browser evidence image
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: seriea-2022-23-public-browser
+          path: /tmp/seriea-2022-23-live-player.png
+          if-no-files-found: ignore
