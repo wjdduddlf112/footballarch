@@ -94,7 +94,7 @@
     },
     {
       "position": "CM",
-      "playerId": "ligue1-1999-00-psg-ali-benarbia"
+      "playerId": "ligue1-1999-00-monaco-sabri-lamouchi"
     },
     {
       "position": "CM",
@@ -115,11 +115,12 @@
   ],
   "tests": {
     "local_in_memory_structure": "pass",
-    "github_node_workflow": "pending",
-    "production_browser_interaction": "not_verified",
-    "production_json_url": "not_yet_checked",
+    "github_node_workflow": "passed_on_2026_11_09_135_player_commit_2db3c0",
+    "production_browser_interaction": "github_chromium_test_ubuntu_24_04_scheduled",
+    "production_json_url": "unconfirmed",
     "historical_independent_full_3season": "incomplete",
-    "sedan_1999_starters": "incomplete"
+    "sedan_1999_starters": "incomplete",
+    "github_pages_deployment": "latest_pending"
   },
   "historicalAudit": {
     "exclusions": [
@@ -140,6 +141,37 @@
       "sedan": "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999",
       "auxerre": "https://www.bdfutbol.com/en/t/t1999-004025.html",
       "nantes": "https://www.bdfutbol.com/en/t/t1999-004013.html"
+    },
+    "positionCorrections": {
+      "psg": [
+        [
+          "Ali Benarbia",
+          "RW"
+        ],
+        [
+          "Jay-Jay Okocha",
+          "CM"
+        ],
+        [
+          "Pierre Ducrocq",
+          "DM"
+        ],
+        [
+          "Aliou Cissé",
+          "CB"
+        ]
+      ],
+      "bordeaux": [
+        [
+          "Sylvain Wiltord",
+          "ST"
+        ]
+      ],
+      "sources": [
+        "https://www.psgmag.net/1104-PSG-1999-2000-mieux-qu-une-saison.html",
+        "https://www.leparisien.fr/sports/paris-prepare-la-vie-sans-okocha-01-08-2000-2001538620.php",
+        "https://www.theguardian.com/football/2000/mar/07/championsleague.sport1"
+      ]
     }
   }
 }
