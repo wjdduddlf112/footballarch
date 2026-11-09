@@ -8,7 +8,7 @@ on:
       - '.github/workflows/verify-ligue1-2001-02.yml'
   workflow_dispatch:
 jobs:
-  validate:
+  verify:
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
@@ -17,16 +17,8 @@ jobs:
           node-version: '22'
       - name: Validate draft roster and rankings
         run: node scripts/verify-ligue1-2001-02.mjs
-      - name: Check site JavaScript parsing
+      - name: Check site JavaScript syntax
         run: node --check assets/app.js
-  browser-local:
-    runs-on: ubuntu-24.04
-    needs: validate
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '22'
       - name: Install Playwright and Chromium
         run: |
           npm install --no-save --no-package-lock playwright@1.56.1
@@ -40,7 +32,7 @@ jobs:
           TARGET_URL: http://127.0.0.1:8871/?league=ligue1&season=2001-02
           EXPECTED_PLAYERS: '155'
         run: node scripts/verify-ligue1-2001-02-browser.mjs
-      - name: Check real public GitHub Pages in Chromium
+      - name: Check real published GitHub Pages in Chromium
         env:
           TARGET_URL: https://wjdduddlf112.github.io/footballarch/?league=ligue1&season=2001-02
           EXPECTED_PLAYERS: '155'
