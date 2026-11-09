@@ -1,3 +1,9 @@
+### Correction, 2026-11-09 — contemporaneous positions supersede imported assumptions
+- PSG 1999-00: Benarbia RW (1999 winger/creator, later moved centrally in 2000), Okocha CM, Ducrocq DM, Aliou Cissé CB; structure checks remain 11 starters.
+- Bordeaux 1999-00: Wiltord ST alongside Laslandes, verified via 2000-03 Bordeaux vs Manchester United period 4-4-2 match report.
+- 4-3-1-2 XI correct primary positions: Benarbia RW no longer artificially assigned CM; Sabri Lamouchi CM occupies the second CM slot with Micoud. World/Top tiers unchanged (6/30).
+- Older imported positions cannot be trusted without season-specific formations and contemporary evidence.
+
 ## 2026-11-09 — France Division 1 1999-00 ONLY: rescouted 135 candidates, 8 UEFA/Intertoto clubs, all 10 position ranks and 4-3-1-2 Best XI (DRAFT)
 
 - **Scope**: 2000-01 actual UEFA qualification, 1997-98 / 1998-99 / 1999-00 with highest season weight, historic "Division 1".
