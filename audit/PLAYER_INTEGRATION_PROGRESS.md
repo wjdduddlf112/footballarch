@@ -1,3 +1,16 @@
+## 2026-11-09 — France Division 1 1999-00 ONLY: rescouted 135 candidates, 8 UEFA/Intertoto clubs, all 10 position ranks and 4-3-1-2 Best XI (DRAFT)
+
+- **Scope**: 2000-01 actual UEFA qualification, 1997-98 / 1998-99 / 1999-00 with highest season weight, historic "Division 1".
+- **Eligible**: Monaco, Paris Saint-Germain, Lyon, Bordeaux, Lens, Sedan, Auxerre, Nantes. Coupe de France Nantes eligible; FC Gueugnon excluded as second division.
+- **Full roster**: 135 reselected candidates (11 starters each club, 47 backups). Existing unapproved 111 are not treated as selected. 10 positions ranked 1..N; max one backup per site position per club.
+- **Draft grades**: S 1 / A+ 5 / A0 10 / A- 14 / B+ 45 / B0 36 / B- 11 / C+ 9 / C0 4 / C- 0 / D 0. World Class 6; League Top 30.
+- **Best XI draft (4-3-1-2 diamond)**: Bernard Lama; Willy Sagnol, Rafael Márquez, Philippe Christanval, Jérôme Bonnissel; Olivier Dacourt; Ali Benarbia, Johan Micoud; Marcelo Gallardo; Sonny Anderson, Marco Simone.
+- **Identity corrections**: exclude Christophe Borbiconi (1999-00 not Sedan); Sachy 1967-10-23, Devineau 1979-08-02, Jean-Louis Montero spelling, 1999-00 Sedan 34 league appearances. Alex Di Rocco goals 8/9 source conflict, 8 provisionally.
+- **Historical verification**: complete independent 3-season quantitative records NOT achieved; various players have null 1999-00 starter counts (Sedan). The league-wide most used formation is NOT independently counted; 4-4-2 is a historically representative working hypothesis. Ratings **draft_unapproved**.
+- **Preservation**: same 18-team final table, crests, club IDs, other leagues untouched. Website UI minimal patch for Ligue 1 All Tiers tab and XI detailed rows.
+- **Files**: `data/ligue1-1999-00.json`, `audit/LIGUE1_1999-00_RAW_ROSTER_TRANSCRIPTION.txt`, `audit/LIGUE1_1999-00_DRAFT_FULL_REPORT.md`, `audit/LIGUE1_1999-00_PRODUCTION_VALIDATION.json`, `scripts/verify-ligue1-1999-00.mjs`, `.github/workflows/verify-ligue1-1999-00.yml`.
+- **Deployment**: GitHub Actions, static JSON and real interactive browser verification are distinct checks. Do not assert success until checked. User approval not requested for this season and next season not started.
+
 ## 2026-11-09 — Serie A 2023-24 ONLY: 8 UEFA actual clubs, 151 newly selected candidates, complete provisional ranks/XI; local and public Chromium passed
 
 - **Eligible clubs**: 2024-25 actual UEFA: Inter (#1), Milan (#2), Juventus (#3), Atalanta (#4), Bologna (#5) UCL; Roma (#6), Lazio (#7) UEL; Fiorentina (#8) UECL. European Performance Spot added fifth Italian UCL team (Bologna). Atalanta's UEL title overlaps league qualification and does not make a ninth Italian entrant. Napoli (#10) excluded.
