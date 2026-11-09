@@ -1,38 +1,32 @@
-# Division 1 1999-00 — Entire Draft Player Roster, 3-Season Assessment and Best XI
+# 1999-00 Division 1 — complete provisional re-scouted season file
 
-> **DRAFT / user unapproved / incomplete independent historical verification.** This is not a final three-year corroborated rating.
+> DRAFT / Not approved. 3-season individual records not independently verified for every player. Match-by-match position proof incomplete for several players.
 
-## Scope
-- Assessment years: 1997-98 (lowest), 1998-99 (middle), **1999-00 (highest)**.
-- Eight 2000-01 actual UEFA/Intertoto participants and club selection: AS Monaco, Paris Saint-Germain, Olympique Lyonnais, Girondins de Bordeaux, RC Lens, CS Sedan-Ardennes, AJ Auxerre, FC Nantes Atlantique.
-- 1999-00 official league name Division 1; in-site archive key `ligue1`.
+## Scope and participation
 
-## Historical verification controls
-- Historically named Division 1. 8 next-season actual UEFA/Intertoto clubs only; 18-club standings retained intact.
-- One-site-primary-position per player; the representative eleven is 11 for each eligible club; backups <=1 per site position.
-- 1999-00 league start figures of 7 BDFutbol source-backed clubs were transcribed independently of the imported shortlist. Sedan club membership, goals and many identities source-backed, individual league starts incomplete.
-- Some fullback and tactical wing identities remain pending historical match-by-match checks, especially Sedan and Monaco. 'Starter' reflects a season representative eleven, not necessarily a literal simultaneous match sheet.
-- Qualitative S-D tiers and per-position ranks are DRAFT, not an approved or independently complete 3-season assessment. Older two-season quantitative records are pending for most players.
-- Contemporaneous UNFP honors and annual scoring awards inform the higher grades. Team trophies/rank never applied as player score bonuses.
-- 1999-00 most common 4-4-2 is treated as period representative; exact league-wide statistical modal formation is unverified. Narrow 4-3-1-2 Best XI is a period-appropriate 4-4-2 diamond variant, not an assertion of the exact mode.
-- Do not infer exact minutes or assist values where unsupported. Official historic records and BDFutbol may differ by a few minutes; stale inherited minutes remain provisional.
-- User approval pending; no future-season advancement or final designation.
+Selected 8 clubs from 2000-01 UEFA Champions League, UEFA Cup and 2000 Intertoto actual entrants: **AS Monaco FC, Paris Saint-Germain, Olympique Lyonnais, FC Girondins de Bordeaux, RC Lens, CS Sedan-Ardennes, AJ Auxerre, FC Nantes Atlantique**. FC Gueugnon excluded as a second-division club in assessment season.
 
-## Original candidate vs new selection
-- Prior unapproved shortlist: 111; newly researched candidate count: 136.
-- Source data and minutes are limited to same-season club appearances. Null means not independently confirmed; it does not mean zero.
+## Stats
 
-- Salif Diao: 1999-00 Sedan listing excluded; BDFutbol records 4 minutes as Monaco substitute, with Sedan transfer in 2000-01.
-- Philippe Celdran: previously assigned Sedan 1999-00 right back, but historical role left midfielder and not confirmed 1999-00 starter; excluded.
-- Tony Vairelles: corrected from backup to Lyon starting striker (31 starts, 6 goals).
-- David Trezeguet: corrected from backup to Monaco starting striker (28 starts, 22 goals).
-- Nicolas Savinaud (Nantes) and Christophe Delmotte (Lyon), originally missing, added based on 28 and 20 league starts.
-- 1999-00 player Sylvain Legwinski appears in both Bordeaux and Monaco records due to mid-season transfer; selected once, for Bordeaux (13 starts), omitted 4-start Monaco stint.
-- Sedan Montero/Elzéard fullback side and the individual midfield roles require match-by-match confirmation.
+- Prior, unapproved shortlist: 111. First re-scouted working list 136; corrected to **135** after excluding a wrong-season club member.
+- 8 clubs × 11 representative starters = **88** starters, **47** backups.
+- Source-backed provisional S through D grades: S 1, A+ 5, A 10, A- 14, B+ 45, B 36, B- 11, C+ 9, C 4, C- 0, D 0.
+- World Class (S or A+): 6; League Top Class (S/A+/A0/A-): 30.
+- 3-year weighting: 1999-00 highest, 1998-99 middle, 1997-98 lowest. Quantitative old-season data in many records is not independently verified.
+- League formation: period-representative 4-4-2; Best XI uses 4-3-1-2 diamond variant. No quantitative proof of league-wide modal tactical arrangement.
 
-## Source-linked eight-club full roster and grades
+## Corrections and audit caveats
+- Excluded Christophe Borbiconi: 1998-99 Sedan loan only; played 1999-00 at Louhans-Cuiseaux, not eligible (https://en.wikipedia.org/wiki/Christophe_Borbiconi).
+- Excluded Salif Diao from Sedan 1999-00 (Monaco appearances instead).
+- David Trezeguet and Tony Vairelles promoted from imported backup assumption to starting strikers.
+- Nicolas Savinaud and Christophe Delmotte included as 1999-00 regular starters.
+- Club names and 1999-00 UEFA entrants/18-team standings remain as previously independently verified.
+- Jean-Louis Montero (not Juan-Luis) 34 Sedan appearances, left versus right match role requires independent verification.
+- Alex Di Rocco: 8/9 goals depending source, eight provisional; explicitly marked conflicting.
 
-| Club | Pos | Korean | Original name | DOB | Role | 99-00 starts | Appearances | Goals | Tier | Rank |
+## Clubwise complete list
+
+| Club | Pos | Korean | Original | Date of Birth | Role | 1999-00 Starts | Apps | Goals | Display Tier | Position Rank |
 |---|---|---|---|---|---|---:|---:|---:|---|---:|
 | AS Monaco FC | GK | 파비앵 바르테즈 | Fabien Barthez | 1971-06-28 | starter | 24 | 24 | — | A0 | 2 |
 | AS Monaco FC | GK | 토니 실바 | Tony Sylva | 1975-05-17 | backup | 5 | 6 | — | B- | 9 |
@@ -92,7 +86,7 @@
 | FC Girondins de Bordeaux | CB | 니샤 사벨리치 | Niša Saveljić | 1970-03-27 | backup | 21 | 21 | 2 | B+ | 15 |
 | FC Girondins de Bordeaux | LB | 제롬 보니셀 | Jérôme Bonnissel | 1973-04-11 | starter | 25 | 26 | 0 | B+ | 1 |
 | FC Girondins de Bordeaux | RB | 프랑수아 그르네 | François Grenet | 1975-03-08 | starter | 30 | 31 | 0 | B+ | 3 |
-| FC Girondins de Bordeaux | RB | 다비드 제말리 | David Jemmali | 1974-12-13 | backup | 5 | 12 | 0 | C+ | 13 |
+| FC Girondins de Bordeaux | RB | 다비드 제말리 | David Jemmali | 1974-12-13 | backup | 5 | 12 | 0 | C+ | 12 |
 | FC Girondins de Bordeaux | DM | 미셸 파봉 | Michel Pavon | 1968-11-07 | starter | 28 | 28 | 1 | B+ | 3 |
 | FC Girondins de Bordeaux | CM | 요앙 미쿠 | Johan Micoud | 1973-07-24 | starter | 31 | 31 | 6 | A0 | 2 |
 | FC Girondins de Bordeaux | CM | 라시나 디아바테 | Lassina Diabaté | 1974-09-16 | starter | 18 | 24 | 0 | B0 | 12 |
@@ -102,6 +96,24 @@
 | FC Girondins de Bordeaux | RW | 실뱅 윌토르 | Sylvain Wiltord | 1974-05-10 | starter | 27 | 32 | 13 | A+ | 1 |
 | FC Girondins de Bordeaux | ST | 릴리앙 라슬랑드 | Lilian Laslandes | 1971-09-04 | starter | 27 | 31 | 14 | A- | 5 |
 | FC Girondins de Bordeaux | ST | 크리스토프 뒤가리 | Christophe Dugarry | 1972-03-24 | backup | 12 | 12 | 3 | B0 | 18 |
+| FC Nantes Atlantique | GK | 미카엘 랑드로 | Mickaël Landreau | 1979-05-14 | starter | 33 | 33 | — | A0 | 4 |
+| FC Nantes Atlantique | GK | 윌리 그롱댕 | Willy Grondin | 1974-10-12 | backup | 1 | 1 | — | C0 | 12 |
+| FC Nantes Atlantique | CB | 네스토르 파브리 | Néstor Fabbri | 1968-04-29 | starter | 22 | 22 | 0 | B+ | 14 |
+| FC Nantes Atlantique | CB | 니콜라 질레 | Nicolas Gillet | 1976-11-08 | starter | 20 | 25 | 1 | B+ | 16 |
+| FC Nantes Atlantique | CB | 파스칼 델롬모 | Pascal Delhommeau | 1978-08-14 | backup | 6 | 7 | 0 | C+ | 24 |
+| FC Nantes Atlantique | LB | 스테판 리에브르 | Stéphane Lièvre | 1972-10-03 | starter | 21 | 21 | 0 | B0 | 5 |
+| FC Nantes Atlantique | RB | 장마르크 샤늘레 | Jean-Marc Chanelet | 1968-07-23 | starter | 32 | 32 | 1 | B+ | 4 |
+| FC Nantes Atlantique | RB | 이브 드로프 | Yves Deroff | 1978-08-29 | backup | 3 | 6 | 0 | C+ | 13 |
+| FC Nantes Atlantique | DM | 니콜라 사비노 | Nicolas Savinaud | 1975-11-20 | starter | 28 | 28 | 1 | B+ | 6 |
+| FC Nantes Atlantique | CM | 세바스티앵 피오셀 | Sébastien Piocelle | 1978-11-10 | starter | 19 | 21 | 0 | B0 | 11 |
+| FC Nantes Atlantique | CM | 샤를 드비노 | Charles Devineau | 1979-08-02 | backup | 16 | 19 | 2 | B0 | 13 |
+| FC Nantes Atlantique | CAM | 에리크 카리에르 | Éric Carrière | 1973-05-24 | starter | 32 | 32 | 5 | A- | 3 |
+| FC Nantes Atlantique | LW | 살로몽 올렘베 | Salomon Olembé | 1980-12-08 | starter | 17 | 22 | 2 | B+ | 5 |
+| FC Nantes Atlantique | LW | 마라마 바이루아 | Marama Vahirua | 1980-05-12 | backup | 7 | 12 | 1 | C+ | 10 |
+| FC Nantes Atlantique | RW | 프레데리크 다 로샤 | Frédéric Da Rocha | 1974-09-16 | starter | 30 | 32 | 6 | B+ | 5 |
+| FC Nantes Atlantique | RW | 하산 아마다 | Hassan Ahamada | 1981-04-13 | backup | 8 | 17 | 0 | C+ | 9 |
+| FC Nantes Atlantique | ST | 앙투안 시비에르스키 | Antoine Sibierski | 1974-08-05 | starter | 28 | 28 | 13 | A- | 7 |
+| FC Nantes Atlantique | ST | 올리비에 몽테루비오 | Olivier Monterrubio | 1976-08-08 | backup | 15 | 17 | 3 | B0 | 17 |
 | RC Lens | GK | 기욤 바르뮈즈 | Guillaume Warmuz | 1970-05-22 | starter | 32 | 32 | — | B+ | 8 |
 | RC Lens | GK | 세바스티앵 샤베르 | Sébastien Chabbert | 1978-05-15 | backup | 2 | 2 | — | C0 | 10 |
 | RC Lens | CB | 발레리앙 이스마엘 | Valérien Ismaël | 1975-09-28 | starter | 30 | 30 | 1 | B+ | 4 |
@@ -119,13 +131,12 @@
 | RC Lens | ST | 라민 사코 | Lamine Sakho | 1977-09-28 | starter | 17 | 23 | 8 | B+ | 10 |
 | RC Lens | ST | 파스칼 누마 | Pascal Nouma | 1972-01-06 | starter | 12 | 19 | 8 | B+ | 13 |
 | RC Lens | ST | 조제프데지레 조브 | Joseph-Désiré Job | 1977-12-01 | backup | 15 | 24 | 4 | B0 | 16 |
-| CS Sedan-Ardennes | GK | 니콜라 사시 | Nicolas Sachy | 1967-10-21 | starter | 34 | 34 | — | B+ | 7 |
+| CS Sedan-Ardennes | GK | 니콜라 사시 | Nicolas Sachy | 1967-10-23 | starter | 34 | 34 | — | B+ | 7 |
 | CS Sedan-Ardennes | CB | 루이스 사토라 | Luis Satorra | 1969-09-13 | starter | 28 | 28 | — | B+ | 8 |
 | CS Sedan-Ardennes | CB | 에두아르두 올리베이라 | Eduardo Oliveira | 1972-09-28 | starter | 25 | 27 | — | B+ | 13 |
 | CS Sedan-Ardennes | CB | 에디 카프롱 | Eddy Capron | 1971-01-15 | backup | — | — | — | B0 | 23 |
-| CS Sedan-Ardennes | LB | 후안루이스 몬테로 | Juan-Luis Montero | 1971-04-28 | starter | 26 | 30 | — | B0 | 4 |
+| CS Sedan-Ardennes | LB | 장루이 몬테로 | Jean-Louis Montero | 1971-04-28 | starter | 26 | 34 | — | B0 | 4 |
 | CS Sedan-Ardennes | RB | 세드리크 엘제아르 | Cédric Elzéard | 1975-04-01 | starter | — | — | — | B0 | 9 |
-| CS Sedan-Ardennes | RB | 크리스토프 보르비코니 | Christophe Borbiconi | 1975-01-22 | backup | — | — | — | B- | 12 |
 | CS Sedan-Ardennes | DM | 로랑 위아르 | Laurent Huard | 1973-08-26 | starter | 25 | 31 | — | B0 | 9 |
 | CS Sedan-Ardennes | DM | 에리크 크로니에 | Éric Crosnier | 1972-12-22 | backup | — | — | — | B- | 11 |
 | CS Sedan-Ardennes | CM | 마지드 아자우드 | Madjid Adjaoud | 1971-08-23 | starter | 21 | 25 | — | B0 | 9 |
@@ -135,8 +146,8 @@
 | CS Sedan-Ardennes | RW | 피에르 드블로크 | Pierre Deblock | 1973-05-01 | starter | 33 | 34 | 8 | A- | 3 |
 | CS Sedan-Ardennes | RW | 빌렐 지리 | Billel Dziri | 1972-01-21 | backup | — | — | — | B- | 8 |
 | CS Sedan-Ardennes | ST | 피우스 은디에피 | Pius N'Diefi | 1975-07-05 | starter | 23 | 25 | 5 | B+ | 9 |
-| CS Sedan-Ardennes | ST | 알렉스 디 로코 | Alex Di Rocco | 1970-12-30 | starter | — | — | 9 | B+ | 14 |
-| CS Sedan-Ardennes | ST | 세드리크 미오네 | Cédric Mionnet | 1974-07-08 | backup | — | — | 7 | B+ | 15 |
+| CS Sedan-Ardennes | ST | 알렉스 디 로코 | Alex Di Rocco | 1970-12-30 | starter | — | — | 8 | B+ | 14 |
+| CS Sedan-Ardennes | ST | 세드리크 미오네 | Cédric Mionnet | 1974-07-08 | backup | — | 23 | 7 | B+ | 15 |
 | AJ Auxerre | GK | 파비앵 쿨 | Fabien Cool | 1972-08-29 | starter | 34 | 34 | — | B+ | 6 |
 | AJ Auxerre | CB | 페드로 레예스 | Pedro Reyes | 1972-11-13 | starter | 30 | 30 | 0 | B+ | 6 |
 | AJ Auxerre | CB | 토마시 크워스 | Tomasz Kłos | 1973-03-07 | starter | 25 | 26 | 0 | B+ | 12 |
@@ -152,29 +163,12 @@
 | AJ Auxerre | RW | 스티브 마를레 | Steve Marlet | 1974-01-10 | starter | 33 | 33 | 9 | A- | 4 |
 | AJ Auxerre | ST | 스테판 기바르슈 | Stéphane Guivarc'h | 1970-09-06 | starter | 32 | 32 | 14 | A- | 6 |
 | AJ Auxerre | ST | 알렉상드르 코미세티 | Alexandre Comisetti | 1973-07-21 | backup | 12 | 19 | 1 | C+ | 21 |
-| FC Nantes Atlantique | GK | 미카엘 랑드로 | Mickaël Landreau | 1979-05-14 | starter | 33 | 33 | — | A0 | 4 |
-| FC Nantes Atlantique | GK | 윌리 그롱댕 | Willy Grondin | 1974-10-12 | backup | 1 | 1 | — | C0 | 12 |
-| FC Nantes Atlantique | CB | 네스토르 파브리 | Néstor Fabbri | 1968-04-29 | starter | 22 | 22 | 0 | B+ | 14 |
-| FC Nantes Atlantique | CB | 니콜라 질레 | Nicolas Gillet | 1976-11-08 | starter | 20 | 25 | 1 | B+ | 16 |
-| FC Nantes Atlantique | CB | 파스칼 델롬모 | Pascal Delhommeau | 1978-08-14 | backup | 6 | 7 | 0 | C+ | 24 |
-| FC Nantes Atlantique | LB | 스테판 리에브르 | Stéphane Lièvre | 1972-10-03 | starter | 21 | 21 | 0 | B0 | 5 |
-| FC Nantes Atlantique | RB | 장마르크 샤늘레 | Jean-Marc Chanelet | 1968-07-23 | starter | 32 | 32 | 1 | B+ | 4 |
-| FC Nantes Atlantique | RB | 이브 드로프 | Yves Deroff | 1978-08-29 | backup | 3 | 6 | 0 | C+ | 14 |
-| FC Nantes Atlantique | DM | 니콜라 사비노 | Nicolas Savinaud | 1975-11-20 | starter | 28 | 28 | 1 | B+ | 6 |
-| FC Nantes Atlantique | CM | 세바스티앵 피오셀 | Sébastien Piocelle | 1978-11-10 | starter | 19 | 21 | 0 | B0 | 11 |
-| FC Nantes Atlantique | CM | 샤를 드비노 | Charles Devineau | 1979-08-04 | backup | 16 | 19 | 2 | B0 | 13 |
-| FC Nantes Atlantique | CAM | 에리크 카리에르 | Éric Carrière | 1973-05-24 | starter | 32 | 32 | 5 | A- | 3 |
-| FC Nantes Atlantique | LW | 살로몽 올렘베 | Salomon Olembé | 1980-12-08 | starter | 17 | 22 | 2 | B+ | 5 |
-| FC Nantes Atlantique | LW | 마라마 바이루아 | Marama Vahirua | 1980-05-12 | backup | 7 | 12 | 1 | C+ | 10 |
-| FC Nantes Atlantique | RW | 프레데리크 다 로샤 | Frédéric Da Rocha | 1974-09-16 | starter | 30 | 32 | 6 | B+ | 5 |
-| FC Nantes Atlantique | RW | 하산 아마다 | Hassan Ahamada | 1981-04-13 | backup | 8 | 17 | 0 | C+ | 9 |
-| FC Nantes Atlantique | ST | 앙투안 시비에르스키 | Antoine Sibierski | 1974-08-05 | starter | 28 | 28 | 13 | A- | 7 |
-| FC Nantes Atlantique | ST | 올리비에 몽테루비오 | Olivier Monterrubio | 1976-08-08 | backup | 15 | 17 | 3 | B0 | 17 |
 
-## 10-position unified draft ordering
+## League-wide rankings, every position
 
 ### GK
-| Rank | Player | Club | Role | Tier | League starts |
+
+| Rank | Korean (original) | Club | Role | Tier | Starts |
 |---:|---|---|---|---|---:|
 | 1 | 베르나르 라마 (Bernard Lama) | Paris Saint-Germain FC | starter | A0 | 33 |
 | 2 | 파비앵 바르테즈 (Fabien Barthez) | AS Monaco FC | starter | A0 | 24 |
@@ -191,7 +185,8 @@
 | 13 | 앙젤로 위그 (Angelo Hugues) | Olympique Lyonnais | backup | C0 | 0 |
 
 ### CB
-| Rank | Player | Club | Role | Tier | League starts |
+
+| Rank | Korean (original) | Club | Role | Tier | Starts |
 |---:|---|---|---|---|---:|
 | 1 | 라파엘 마르케스 (Rafael Márquez) | AS Monaco FC | starter | A- | 22 |
 | 2 | 필리프 크리스탕발 (Philippe Christanval) | AS Monaco FC | starter | A- | 25 |
@@ -219,12 +214,13 @@
 | 24 | 파스칼 델롬모 (Pascal Delhommeau) | FC Nantes Atlantique | backup | C+ | 6 |
 
 ### LB
-| Rank | Player | Club | Role | Tier | League starts |
+
+| Rank | Korean (original) | Club | Role | Tier | Starts |
 |---:|---|---|---|---|---:|
 | 1 | 제롬 보니셀 (Jérôme Bonnissel) | FC Girondins de Bordeaux | starter | B+ | 25 |
 | 2 | 필리프 레오나르 (Philippe Léonard) | AS Monaco FC | starter | B+ | 17 |
 | 3 | 요앙 라쇼르 (Yohan Lachor) | RC Lens | starter | B0 | 19 |
-| 4 | 후안루이스 몬테로 (Juan-Luis Montero) | CS Sedan-Ardennes | starter | B0 | 26 |
+| 4 | 장루이 몬테로 (Jean-Louis Montero) | CS Sedan-Ardennes | starter | B0 | 26 |
 | 5 | 스테판 리에브르 (Stéphane Lièvre) | FC Nantes Atlantique | starter | B0 | 21 |
 | 6 | 세르주 블랑 (Serge Blanc) | Olympique Lyonnais | starter | B0 | 20 |
 | 7 | 에리크 아사티 (Éric Assati) | AJ Auxerre | starter | B0 | 20 |
@@ -235,7 +231,8 @@
 | 12 | 제레미 브레셰 (Jérémie Bréchet) | Olympique Lyonnais | backup | C+ | 8 |
 
 ### RB
-| Rank | Player | Club | Role | Tier | League starts |
+
+| Rank | Korean (original) | Club | Role | Tier | Starts |
 |---:|---|---|---|---|---:|
 | 1 | 윌리 사뇰 (Willy Sagnol) | AS Monaco FC | starter | A0 | 25 |
 | 2 | 에리크 시코라 (Éric Sikora) | RC Lens | starter | B+ | 29 |
@@ -248,12 +245,12 @@
 | 9 | 세드리크 엘제아르 (Cédric Elzéard) | CS Sedan-Ardennes | starter | B0 | — |
 | 10 | 브뤼노 이를레스 (Bruno Irles) | AS Monaco FC | backup | B- | 7 |
 | 11 | 페르디낭 콜리 (Ferdinand Coly) | RC Lens | backup | B- | 7 |
-| 12 | 크리스토프 보르비코니 (Christophe Borbiconi) | CS Sedan-Ardennes | backup | B- | — |
-| 13 | 다비드 제말리 (David Jemmali) | FC Girondins de Bordeaux | backup | C+ | 5 |
-| 14 | 이브 드로프 (Yves Deroff) | FC Nantes Atlantique | backup | C+ | 3 |
+| 12 | 다비드 제말리 (David Jemmali) | FC Girondins de Bordeaux | backup | C+ | 5 |
+| 13 | 이브 드로프 (Yves Deroff) | FC Nantes Atlantique | backup | C+ | 3 |
 
 ### DM
-| Rank | Player | Club | Role | Tier | League starts |
+
+| Rank | Korean (original) | Club | Role | Tier | Starts |
 |---:|---|---|---|---|---:|
 | 1 | 올리비에 다쿠르 (Olivier Dacourt) | RC Lens | starter | A- | 25 |
 | 2 | 코스티냐 (Costinha) | AS Monaco FC | starter | A- | 25 |
@@ -268,7 +265,8 @@
 | 11 | 에리크 크로니에 (Éric Crosnier) | CS Sedan-Ardennes | backup | B- | — |
 
 ### CM
-| Rank | Player | Club | Role | Tier | League starts |
+
+| Rank | Korean (original) | Club | Role | Tier | Starts |
 |---:|---|---|---|---|---:|
 | 1 | 알리 베나르비아 (Ali Benarbia) | Paris Saint-Germain FC | starter | A+ | 27 |
 | 2 | 요앙 미쿠 (Johan Micoud) | FC Girondins de Bordeaux | starter | A0 | 31 |
@@ -289,7 +287,8 @@
 | 17 | 에드빈 무라티 (Edvin Murati) | Paris Saint-Germain FC | backup | B- | 8 |
 
 ### CAM
-| Rank | Player | Club | Role | Tier | League starts |
+
+| Rank | Korean (original) | Club | Role | Tier | Starts |
 |---:|---|---|---|---|---:|
 | 1 | 마르셀로 가야르도 (Marcelo Gallardo) | AS Monaco FC | starter | A+ | 27 |
 | 2 | 제이제이 오코차 (Jay-Jay Okocha) | Paris Saint-Germain FC | starter | A- | 22 |
@@ -298,7 +297,8 @@
 | 5 | 폰투스 파르네루드 (Pontus Farnerud) | AS Monaco FC | backup | C+ | 5 |
 
 ### LW
-| Rank | Player | Club | Role | Tier | League starts |
+
+| Rank | Korean (original) | Club | Role | Tier | Starts |
 |---:|---|---|---|---|---:|
 | 1 | 로랑 로베르 (Laurent Robert) | Paris Saint-Germain FC | starter | A0 | 28 |
 | 2 | 올리비에 캥트 (Olivier Quint) | CS Sedan-Ardennes | starter | A- | 32 |
@@ -312,7 +312,8 @@
 | 10 | 마라마 바이루아 (Marama Vahirua) | FC Nantes Atlantique | backup | C+ | 7 |
 
 ### RW
-| Rank | Player | Club | Role | Tier | League starts |
+
+| Rank | Korean (original) | Club | Role | Tier | Starts |
 |---:|---|---|---|---|---:|
 | 1 | 실뱅 윌토르 (Sylvain Wiltord) | FC Girondins de Bordeaux | starter | A+ | 27 |
 | 2 | 뤼도비크 지울리 (Ludovic Giuly) | AS Monaco FC | starter | A0 | 28 |
@@ -325,7 +326,8 @@
 | 9 | 하산 아마다 (Hassan Ahamada) | FC Nantes Atlantique | backup | C+ | 8 |
 
 ### ST
-| Rank | Player | Club | Role | Tier | League starts |
+
+| Rank | Korean (original) | Club | Role | Tier | Starts |
 |---:|---|---|---|---|---:|
 | 1 | 소니 안데르송 (Sonny Anderson) | Olympique Lyonnais | starter | S | 32 |
 | 2 | 마르코 시모네 (Marco Simone) | AS Monaco FC | starter | A+ | 34 |
@@ -349,69 +351,185 @@
 | 20 | 알랭 카브글리아 (Alain Caveglia) | Olympique Lyonnais | backup | B- | 4 |
 | 21 | 알렉상드르 코미세티 (Alexandre Comisetti) | AJ Auxerre | backup | C+ | 12 |
 
-## Draft tier distribution
-| Tier | Count |
-|---|---:|
-| S | 1 |
-| A+ | 5 |
-| A0 | 10 |
-| A- | 14 |
-| B+ | 45 |
-| B0 | 36 |
-| B- | 12 |
-| C+ | 9 |
-| C0 | 4 |
-| C- | 0 |
-| D | 0 |
+## Best XI — 4-3-1-2, DRAFT
 
-**World Class S/A+** 6 · **League Top S/A+/A0/A-** 30 (World Class subset).
+| Position | Korean | Original | Club | Tier |
+|---|---|---|---|---|
+| GK | 베르나르 라마 | Bernard Lama | Paris Saint-Germain FC | A0 |
+| RB | 윌리 사뇰 | Willy Sagnol | AS Monaco FC | A0 |
+| CB | 라파엘 마르케스 | Rafael Márquez | AS Monaco FC | A- |
+| CB | 필리프 크리스탕발 | Philippe Christanval | AS Monaco FC | A- |
+| LB | 제롬 보니셀 | Jérôme Bonnissel | FC Girondins de Bordeaux | B+ |
+| DM | 올리비에 다쿠르 | Olivier Dacourt | RC Lens | A- |
+| CM | 알리 베나르비아 | Ali Benarbia | Paris Saint-Germain FC | A+ |
+| CM | 요앙 미쿠 | Johan Micoud | FC Girondins de Bordeaux | A0 |
+| CAM | 마르셀로 가야르도 | Marcelo Gallardo | AS Monaco FC | A+ |
+| ST | 소니 안데르송 | Sonny Anderson | Olympique Lyonnais | S |
+| ST | 마르코 시모네 | Marco Simone | AS Monaco FC | A+ |
 
-## 4-3-1-2 DRAFT Best XI
-| Position | Player | Club | Tier |
-|---|---|---|---|
-| GK | 베르나르 라마 (Bernard Lama) | Paris Saint-Germain FC | A0 |
-| RB | 윌리 사뇰 (Willy Sagnol) | AS Monaco FC | A0 |
-| CB | 라파엘 마르케스 (Rafael Márquez) | AS Monaco FC | A- |
-| CB | 필리프 크리스탕발 (Philippe Christanval) | AS Monaco FC | A- |
-| LB | 제롬 보니셀 (Jérôme Bonnissel) | FC Girondins de Bordeaux | B+ |
-| DM | 올리비에 다쿠르 (Olivier Dacourt) | RC Lens | A- |
-| CM | 알리 베나르비아 (Ali Benarbia) | Paris Saint-Germain FC | A+ |
-| CM | 요앙 미쿠 (Johan Micoud) | FC Girondins de Bordeaux | A0 |
-| CAM | 마르셀로 가야르도 (Marcelo Gallardo) | AS Monaco FC | A+ |
-| ST | 소니 안데르송 (Sonny Anderson) | Olympique Lyonnais | S |
-| ST | 마르코 시모네 (Marco Simone) | AS Monaco FC | A+ |
+## Player-specific performance assessment (provisional)
+- **파비앵 바르테즈 (Fabien Barthez) — GK, A0**: 대표 선발; 24회 리그 선발/24회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 A0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **토니 실바 (Tony Sylva) — GK, B-**: 주요 후보; 5회 리그 선발/6회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B- 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **라파엘 마르케스 (Rafael Márquez) — CB, A-**: 대표 선발; 22회 리그 선발/23회 출전, 3골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 A- 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **필리프 크리스탕발 (Philippe Christanval) — CB, A-**: 대표 선발; 25회 리그 선발/25회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 A- 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **파블로 콘트레라스 (Pablo Contreras) — CB, B0**: 주요 후보; 15회 리그 선발/17회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **필리프 레오나르 (Philippe Léonard) — LB, B+**: 대표 선발; 17회 리그 선발/19회 출전, 2골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **욘 아르네 리세 (John Arne Riise) — LB, B-**: 주요 후보; 10회 리그 선발/21회 출전, 1골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B- 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **윌리 사뇰 (Willy Sagnol) — RB, A0**: 대표 선발; 25회 리그 선발/26회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 A0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **브뤼노 이를레스 (Bruno Irles) — RB, B-**: 주요 후보; 7회 리그 선발/8회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B- 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **코스티냐 (Costinha) — DM, A-**: 대표 선발; 25회 리그 선발/28회 출전, 1골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 A- 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **마르탱 제투 (Martin Djetou) — DM, B+**: 주요 후보; 20회 리그 선발/22회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **사브리 라무시 (Sabri Lamouchi) — CM, A-**: 대표 선발; 31회 리그 선발/32회 출전, 3골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 A- 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **마르셀로 가야르도 (Marcelo Gallardo) — CAM, A+**: 1999-00 27회 선발 8득점; 2000년 UNFP 올해의 선수. 1997-98/1998-99 River Plate 활약은 추가 시즌별 자료 확인 전까지 정성 참고에 한정.
+- **폰투스 파르네루드 (Pontus Farnerud) — CAM, C+**: 주요 후보; 5회 리그 선발/15회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 C+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **뤼도비크 지울리 (Ludovic Giuly) — RW, A0**: 대표 선발; 28회 리그 선발/33회 출전, 5골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 A0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **마르코 시모네 (Marco Simone) — ST, A+**: 1999-00 34회 선발 21득점, 1998년 UNFP 올해의 선수 경력 등 전 시즌 영향력을 가중 반영. 최근 시즌 21골의 압도적인 생산성.
+- **다비드 트레제게 (David Trezeguet) — ST, A+**: 1999-00 28회 선발 22골. 실질적인 선발 투톱이며 후보로 분류해서는 안 됨. 1997-98/1998-99 득점 추세 확인 필요.
+- **다도 프르쇼 (Dado Pršo) — ST, B-**: 주요 후보; 7회 리그 선발/20회 출전, 2골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B- 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **베르나르 라마 (Bernard Lama) — GK, A0**: 대표 선발; 33회 리그 선발/33회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 A0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **도미니크 카사그랑드 (Dominique Casagrande) — GK, C0**: 주요 후보; 1회 리그 선발/1회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 C0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **에리크 라베상드라타나 (Éric Rabésandratana) — CB, B+**: 대표 선발; 33회 리그 선발/33회 출전, 1골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **피에르 뒤크로크 (Pierre Ducrocq) — CB, B+**: 대표 선발; 33회 리그 선발/33회 출전, 1골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **고드윈 오크파라 (Godwin Okpara) — CB, B0**: 주요 후보; 14회 리그 선발/15회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **니콜라 라스팔 (Nicolas Laspalles) — LB, B0**: 대표 선발; 18회 리그 선발/21회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **이고르 야노프스키 (Igor Yanovski) — LB, B0**: 주요 후보; 15회 리그 선발/23회 출전, 2골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **지미 알제리노 (Jimmy Algerino) — RB, B0**: 대표 선발; 19회 리그 선발/20회 출전, 2골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **알리우 시세 (Aliou Cissé) — DM, B+**: 대표 선발; 21회 리그 선발/25회 출전, 1골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **에두아르 시세 (Édouard Cissé) — DM, B0**: 주요 후보; 13회 리그 선발/28회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **알리 베나르비아 (Ali Benarbia) — CM, A+**: 1998-99 UNFP 올해의 선수(보르도); 1999-00 PSG 이적 후 27회 선발하며 중원 창조성을 유지. 팀 성적 직접 가산 없음.
+- **에드빈 무라티 (Edvin Murati) — CM, B-**: 주요 후보; 8회 리그 선발/16회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B- 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **제이제이 오코차 (Jay-Jay Okocha) — CAM, A-**: 대표 선발; 22회 리그 선발/23회 출전, 2골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 A- 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **로랑 로베르 (Laurent Robert) — LW, A0**: 1999-00 PSG 28회 선발 9골, 왼쪽 측면의 직선적 공격 가담과 세트피스 위협; 세부 도움은 미확인.
+- **크리스티앙 (Christian) — ST, A0**: 대표 선발; 27회 리그 선발/29회 출전, 16골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 A0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **미카엘 마다르 (Mickaël Madar) — ST, B+**: 대표 선발; 16회 리그 선발/21회 출전, 8골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **로랑 르루아 (Laurent Leroy) — ST, B+**: 주요 후보; 16회 리그 선발/27회 출전, 8골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **그레고리 쿠페 (Grégory Coupet) — GK, A0**: 대표 선발; 34회 리그 선발/34회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 A0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **앙젤로 위그 (Angelo Hugues) — GK, C0**: 주요 후보; 0회 리그 선발/1회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 C0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **플로랑 라빌 (Florent Laville) — CB, B+**: 대표 선발; 28회 리그 선발/28회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **크리스토프 델모트 (Christophe Delmotte) — CB, B0**: 대표 선발; 20회 리그 선발/26회 출전, 2골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **위베르 푸르니에 (Hubert Fournier) — CB, B0**: 주요 후보; 17회 리그 선발/20회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **세르주 블랑 (Serge Blanc) — LB, B0**: 대표 선발; 20회 리그 선발/24회 출전, 2골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **제레미 브레셰 (Jérémie Bréchet) — LB, C+**: 주요 후보; 8회 리그 선발/16회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 C+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **파트리스 카르트롱 (Patrice Carteron) — RB, B+**: 대표 선발; 31회 리그 선발/31회 출전, 2골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **세드리크 위라스 (Cédric Uras) — RB, B0**: 주요 후보; 10회 리그 선발/16회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **필리프 비올로 (Philippe Violeau) — DM, B+**: 대표 선발; 31회 리그 선발/31회 출전, 1골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **비카시 도라수 (Vikash Dhorasoo) — CM, A-**: 대표 선발; 32회 리그 선발/32회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 A- 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **다비드 리나레스 (David Linarès) — CM, B+**: 주요 후보; 23회 리그 선발/29회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **피에르 레글 (Pierre Laigle) — LW, B0**: 대표 선발; 15회 리그 선발/17회 출전, 2골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **스티드 말브랑크 (Steed Malbranque) — RW, B+**: 대표 선발; 19회 리그 선발/28회 출전, 3골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **소니 안데르송 (Sonny Anderson) — ST, S**: 1999-00 32회 선발 23득점으로 리그 득점 1위. 1997-98 모나코에서의 높은 생산성과 1998-99 바르셀로나 출전을 연속성 판단에 정성 반영; 최근 시즌에 최대 가중.
+- **토니 베렐 (Tony Vairelles) — ST, B+**: 대표 선발; 31회 리그 선발/33회 출전, 6골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **알랭 카브글리아 (Alain Caveglia) — ST, B-**: 주요 후보; 4회 리그 선발/13회 출전, 1골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B- 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **울리히 라메 (Ulrich Ramé) — GK, A0**: 대표 선발; 34회 리그 선발/34회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 A0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **에르베 알리카르트 (Hervé Alicarte) — CB, B+**: 대표 선발; 27회 리그 선발/27회 출전, 5골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **코조 아파누 (Kodjo Afanou) — CB, B+**: 대표 선발; 26회 리그 선발/27회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **니샤 사벨리치 (Niša Saveljić) — CB, B+**: 주요 후보; 21회 리그 선발/21회 출전, 2골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **제롬 보니셀 (Jérôme Bonnissel) — LB, B+**: 대표 선발; 25회 리그 선발/26회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **프랑수아 그르네 (François Grenet) — RB, B+**: 대표 선발; 30회 리그 선발/31회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **다비드 제말리 (David Jemmali) — RB, C+**: 주요 후보; 5회 리그 선발/12회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 C+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **미셸 파봉 (Michel Pavon) — DM, B+**: 대표 선발; 28회 리그 선발/28회 출전, 1골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **요앙 미쿠 (Johan Micoud) — CM, A0**: 1999-00 보르도 31회 선발 6골, 공격 전개의 중심. 1998-99 활약 지속성은 정성 반영, 이전 두 시즌 개인 수치 재확인 필요.
+- **라시나 디아바테 (Lassina Diabaté) — CM, B0**: 대표 선발; 18회 리그 선발/24회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **실뱅 레그뱅스키 (Sylvain Legwinski) — CM, B0**: 주요 후보; 13회 리그 선발/13회 출전, 1골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **코랑탱 마르탱스 (Corentin Martins) — CAM, B0**: 주요 후보; 15회 리그 선발/21회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **스테판 지아니 (Stéphane Ziani) — LW, B+**: 대표 선발; 17회 리그 선발/20회 출전, 6골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **실뱅 윌토르 (Sylvain Wiltord) — RW, A+**: 1998-99 프랑스 1부 득점왕(22골) 이후 1999-00 27회 선발 13골을 기록하여 2시즌 연속 개인 공격 경쟁력을 입증.
+- **릴리앙 라슬랑드 (Lilian Laslandes) — ST, A-**: 대표 선발; 27회 리그 선발/31회 출전, 14골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 A- 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **크리스토프 뒤가리 (Christophe Dugarry) — ST, B0**: 2000년 1월 마르세유에서 보르도로 이적, 해당 클럽 정규리그 12회 선발 3골. 1999-00 전반기 타 클럽에서의 활약을 보르도 출전으로 합산하지 않음.
+- **기욤 바르뮈즈 (Guillaume Warmuz) — GK, B+**: 대표 선발; 32회 리그 선발/32회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **세바스티앵 샤베르 (Sébastien Chabbert) — GK, C0**: 주요 후보; 2회 리그 선발/2회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 C0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **발레리앙 이스마엘 (Valérien Ismaël) — CB, B+**: 대표 선발; 30회 리그 선발/30회 출전, 1골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **조제카를 피에르팡팡 (José-Karl Pierre-Fanfan) — CB, B+**: 대표 선발; 25회 리그 선발/26회 출전, 2골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **프랑크 케드뤼 (Franck Queudrue) — CB, B0**: 주요 후보; 12회 리그 선발/16회 출전, 1골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **요앙 라쇼르 (Yohan Lachor) — LB, B0**: 대표 선발; 19회 리그 선발/23회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **시릴 룰 (Cyril Rool) — LB, B-**: 주요 후보; 15회 리그 선발/15회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B- 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **에리크 시코라 (Éric Sikora) — RB, B+**: 대표 선발; 29회 리그 선발/29회 출전, 2골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **페르디낭 콜리 (Ferdinand Coly) — RB, B-**: 주요 후보; 7회 리그 선발/10회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B- 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **올리비에 다쿠르 (Olivier Dacourt) — DM, A-**: 대표 선발; 25회 리그 선발/26회 출전, 2골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 A- 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **조슬랭 블랑샤르 (Jocelyn Blanchard) — CM, B+**: 대표 선발; 27회 리그 선발/27회 출전, 1골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **앨릭스 냐르코 (Alex Nyarko) — CM, B0**: 주요 후보; 20회 리그 선발/21회 출전, 1골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **필리프 브뤼넬 (Philippe Brunel) — LW, B0**: 대표 선발; 27회 리그 선발/32회 출전, 2골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **샤를에두아르 코리동 (Charles-Édouard Coridon) — RW, B0**: 대표 선발; 18회 리그 선발/28회 출전, 2골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **라민 사코 (Lamine Sakho) — ST, B+**: 대표 선발; 17회 리그 선발/23회 출전, 8골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **파스칼 누마 (Pascal Nouma) — ST, B+**: 대표 선발; 12회 리그 선발/19회 출전, 8골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **조제프데지레 조브 (Joseph-Désiré Job) — ST, B0**: 주요 후보; 15회 리그 선발/24회 출전, 4골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **니콜라 사시 (Nicolas Sachy) — GK, B+**: 대표 선발; 34회 리그 선발/34회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료, 당해 리그 선발 기록 및 좌우 포지션 보강 필요. 1998-99 2부 리그 38경기, 1997-98 36경기 출전 이력은 L'Équipe에서 확인; 이전 대회 분류는 추가 점검.
+- **루이스 사토라 (Luis Satorra) — CB, B+**: 대표 선발; 28회 리그 선발/28회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료, 당해 리그 선발 기록 및 좌우 포지션 보강 필요.
+- **에두아르두 올리베이라 (Eduardo Oliveira) — CB, B+**: 대표 선발; 25회 리그 선발/27회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료, 당해 리그 선발 기록 및 좌우 포지션 보강 필요.
+- **에디 카프롱 (Eddy Capron) — CB, B0**: 주요 후보; 미확인회 리그 선발/미확인회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료, 당해 리그 선발 기록 및 좌우 포지션 보강 필요.
+- **장루이 몬테로 (Jean-Louis Montero) — LB, B0**: 대표 선발; 26회 리그 선발/30회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료, 당해 리그 선발 기록 및 좌우 포지션 보강 필요.
+- **세드리크 엘제아르 (Cédric Elzéard) — RB, B0**: 대표 선발; 미확인회 리그 선발/미확인회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료, 당해 리그 선발 기록 및 좌우 포지션 보강 필요.
+- **로랑 위아르 (Laurent Huard) — DM, B0**: 대표 선발; 25회 리그 선발/31회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료, 당해 리그 선발 기록 및 좌우 포지션 보강 필요.
+- **에리크 크로니에 (Éric Crosnier) — DM, B-**: 주요 후보; 미확인회 리그 선발/미확인회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B- 잠정 평가. 이전 두 시즌 정량 교차검증 미완료, 당해 리그 선발 기록 및 좌우 포지션 보강 필요.
+- **마지드 아자우드 (Madjid Adjaoud) — CM, B0**: 대표 선발; 21회 리그 선발/25회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료, 당해 리그 선발 기록 및 좌우 포지션 보강 필요.
+- **장필리프 포르 (Jean-Philippe Faure) — CM, B0**: 주요 후보; 미확인회 리그 선발/미확인회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료, 당해 리그 선발 기록 및 좌우 포지션 보강 필요.
+- **올리비에 캥트 (Olivier Quint) — LW, A-**: 1999-00 세당 7골과 왼쪽 미드필드에서의 핵심성. 최근 승격 이후 개인 기여 인정, 1997-98/1998-99 Division 2 기록 재확인 필요.
+- **조니 노바크 (Dzoni Novak) — LW, B-**: 주요 후보; 미확인회 리그 선발/미확인회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B- 잠정 평가. 이전 두 시즌 정량 교차검증 미완료, 당해 리그 선발 기록 및 좌우 포지션 보강 필요.
+- **피에르 드블로크 (Pierre Deblock) — RW, A-**: 1999-00 세당 8골, 오른쪽 측면 중원 핵심. 리그 선발 33회는 구 데이터 잠정치이므로 BDFutbol 등 독립 대조 필요.
+- **빌렐 지리 (Billel Dziri) — RW, B-**: 주요 후보; 미확인회 리그 선발/미확인회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B- 잠정 평가. 이전 두 시즌 정량 교차검증 미완료, 당해 리그 선발 기록 및 좌우 포지션 보강 필요.
+- **피우스 은디에피 (Pius N'Diefi) — ST, B+**: 대표 선발; 23회 리그 선발/25회 출전, 5골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료, 당해 리그 선발 기록 및 좌우 포지션 보강 필요.
+- **알렉스 디 로코 (Alex Di Rocco) — ST, B+**: 대표 선발; 미확인회 리그 선발/미확인회 출전, 9골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료, 당해 리그 선발 기록 및 좌우 포지션 보강 필요. 시즌 골 수는 출처별 상이(8골과 9골); L'Équipe/FBref 자료의 8골 기준, 독립 재확인 필요.
+- **세드리크 미오네 (Cédric Mionnet) — ST, B+**: 1999-00 Sedan 리그 23경기 7골 및 1998-99 2부 리그 37경기 17골 실적을 가중 평가. 1997-98 38경기 7골 이력은 대회 분류를 별도 검증 중. 선발 횟수 미확인.
+- **파비앵 쿨 (Fabien Cool) — GK, B+**: 대표 선발; 34회 리그 선발/34회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **페드로 레예스 (Pedro Reyes) — CB, B+**: 대표 선발; 30회 리그 선발/30회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **토마시 크워스 (Tomasz Kłos) — CB, B+**: 대표 선발; 25회 리그 선발/26회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **로랑 시에셸스키 (Laurent Ciechelski) — CB, B0**: 주요 후보; 20회 리그 선발/22회 출전, 2골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **에리크 아사티 (Éric Assati) — LB, B0**: 대표 선발; 20회 리그 선발/20회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **프레데리크 제 (Frédéric Jay) — RB, B0**: 대표 선발; 26회 리그 선발/32회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **시릴 죈샹 (Cyril Jeunechamp) — DM, B+**: 대표 선발; 29회 리그 선발/30회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **스테판 카르노 (Stéphane Carnot) — CM, B+**: 대표 선발; 25회 리그 선발/30회 출전, 1골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **콰미 아그보 (Kuami Agboh) — CM, B0**: 대표 선발; 23회 리그 선발/26회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **테무 타이니오 (Teemu Tainio) — CM, B0**: 주요 후보; 15회 리그 선발/25회 출전, 3골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **베르나르 디오메드 (Bernard Diomède) — LW, B+**: 대표 선발; 19회 리그 선발/19회 출전, 3골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **올리비에 카포 (Olivier Kapo) — LW, C+**: 주요 후보; 7회 리그 선발/15회 출전, 3골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 C+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **스티브 마를레 (Steve Marlet) — RW, A-**: 대표 선발; 33회 리그 선발/33회 출전, 9골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 A- 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **스테판 기바르슈 (Stéphane Guivarc'h) — ST, A-**: 1997-98 프랑스 1부 득점왕(21골)과 1999-00 오세르 32회 선발 14골을 함께 고려. 1998-99 국외 이적기의 기여/출전은 독립 자료 보강 필요.
+- **알렉상드르 코미세티 (Alexandre Comisetti) — ST, C+**: 주요 후보; 12회 리그 선발/19회 출전, 1골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 C+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **미카엘 랑드로 (Mickaël Landreau) — GK, A0**: 대표 선발; 33회 리그 선발/33회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 A0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **윌리 그롱댕 (Willy Grondin) — GK, C0**: 주요 후보; 1회 리그 선발/1회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 C0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **네스토르 파브리 (Néstor Fabbri) — CB, B+**: 대표 선발; 22회 리그 선발/22회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **니콜라 질레 (Nicolas Gillet) — CB, B+**: 대표 선발; 20회 리그 선발/25회 출전, 1골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **파스칼 델롬모 (Pascal Delhommeau) — CB, C+**: 주요 후보; 6회 리그 선발/7회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 C+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **스테판 리에브르 (Stéphane Lièvre) — LB, B0**: 대표 선발; 21회 리그 선발/21회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **장마르크 샤늘레 (Jean-Marc Chanelet) — RB, B+**: 대표 선발; 32회 리그 선발/32회 출전, 1골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **이브 드로프 (Yves Deroff) — RB, C+**: 주요 후보; 3회 리그 선발/6회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 C+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **니콜라 사비노 (Nicolas Savinaud) — DM, B+**: 대표 선발; 28회 리그 선발/28회 출전, 1골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **세바스티앵 피오셀 (Sébastien Piocelle) — CM, B0**: 대표 선발; 19회 리그 선발/21회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **샤를 드비노 (Charles Devineau) — CM, B0**: 주요 후보; 16회 리그 선발/19회 출전, 2골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **에리크 카리에르 (Éric Carrière) — CAM, A-**: 대표 선발; 32회 리그 선발/32회 출전, 5골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 A- 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **살로몽 올렘베 (Salomon Olembé) — LW, B+**: 대표 선발; 17회 리그 선발/22회 출전, 2골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **마라마 바이루아 (Marama Vahirua) — LW, C+**: 주요 후보; 7회 리그 선발/12회 출전, 1골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 C+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **프레데리크 다 로샤 (Frédéric Da Rocha) — RW, B+**: 대표 선발; 30회 리그 선발/32회 출전, 6골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **하산 아마다 (Hassan Ahamada) — RW, C+**: 주요 후보; 8회 리그 선발/17회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 C+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **앙투안 시비에르스키 (Antoine Sibierski) — ST, A-**: 대표 선발; 28회 리그 선발/28회 출전, 13골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 A- 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
+- **올리비에 몽테루비오 (Olivier Monterrubio) — ST, B0**: 주요 후보; 15회 리그 선발/17회 출전, 3골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.
 
-### Individual rationale
-- **Sonny Anderson**: 1999-00 32회 선발 23득점으로 리그 득점 1위. 1997-98 모나코에서의 높은 생산성과 1998-99 바르셀로나 출전을 연속성 판단에 정성 반영; 최근 시즌에 최대 가중.
-- **Marcelo Gallardo**: 1999-00 27회 선발 8득점; 2000년 UNFP 올해의 선수. 1997-98/1998-99 River Plate 활약은 추가 시즌별 자료 확인 전까지 정성 참고에 한정.
-- **Marco Simone**: 1999-00 34회 선발 21득점, 1998년 UNFP 올해의 선수 경력 등 전 시즌 영향력을 가중 반영. 최근 시즌 21골의 압도적인 생산성.
-- **David Trezeguet**: 1999-00 28회 선발 22골. 실질적인 선발 투톱이며 후보로 분류해서는 안 됨. 1997-98/1998-99 득점 추세 확인 필요.
-- **Sylvain Wiltord**: 1998-99 프랑스 1부 득점왕(22골) 이후 1999-00 27회 선발 13골을 기록하여 2시즌 연속 개인 공격 경쟁력을 입증.
-- **Ali Benarbia**: 1998-99 UNFP 올해의 선수(보르도); 1999-00 PSG 이적 후 27회 선발하며 중원 창조성을 유지. 팀 성적 직접 가산 없음.
-- **Laurent Robert**: 1999-00 PSG 28회 선발 9골, 왼쪽 측면의 직선적 공격 가담과 세트피스 위협; 세부 도움은 미확인.
-- **Johan Micoud**: 1999-00 보르도 31회 선발 6골, 공격 전개의 중심. 1998-99 활약 지속성은 정성 반영, 이전 두 시즌 개인 수치 재확인 필요.
-- **Stéphane Guivarc'h**: 1997-98 프랑스 1부 득점왕(21골)과 1999-00 오세르 32회 선발 14골을 함께 고려. 1998-99 국외 이적기의 기여/출전은 독립 자료 보강 필요.
-- **Pierre Deblock**: 1999-00 세당 8골, 오른쪽 측면 중원 핵심. 리그 선발 33회는 구 데이터 잠정치이므로 BDFutbol 등 독립 대조 필요.
-- **Olivier Quint**: 1999-00 세당 7골과 왼쪽 미드필드에서의 핵심성. 최근 승격 이후 개인 기여 인정, 1997-98/1998-99 Division 2 기록 재확인 필요.
-- **Christophe Dugarry**: 2000년 1월 마르세유에서 보르도로 이적, 해당 클럽 정규리그 12회 선발 3골. 1999-00 전반기 타 클럽에서의 활약을 보르도 출전으로 합산하지 않음.
+## Major individual historical evaluation notes
+- 1999-00 UNFP Player of the Year: Marcelo Gallardo (Monaco), 1998-99: Ali Benarbia, 1997-98: Marco Simone; relevant to three-year recency-sensitive assessment.
+- Sonny Anderson scored 23 Ligue 1 goals in 1999-00; David Trezeguet 22 and Marco Simone 21; all current-season club scoring high points.
+- Trezeguet and Simone are both starting strikers for Monaco, not one starter and one backup.
+- Sylvain Wiltord won the previous season's goal-scoring title; strong prior-year impact supports A+ assessment in 1999-00.
 
-## Club source directory
-- AS Monaco FC: https://www.bdfutbol.com/en/t/t1999-004018.html
-- Paris Saint-Germain FC: https://www.bdfutbol.com/en/t/t1999-004002.html
-- Olympique Lyonnais: https://www.bdfutbol.com/en/t/t1999-004017.html
-- FC Girondins de Bordeaux: https://www.bdfutbol.com/en/t/t1999-004012.html
-- RC Lens: https://www.bdfutbol.com/en/t/t1999-004014.html
-- CS Sedan-Ardennes: https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999
-- AJ Auxerre: https://www.bdfutbol.com/en/t/t1999-004025.html
-- FC Nantes Atlantique: https://www.bdfutbol.com/en/t/t1999-004013.html
-- French 2000 UNFP award chronology: https://www.ligue1.com/en/articles/l1_article_858-les-trophees-unfp-past-winners
-- 1999-00 and historical goal-scorers: https://www.ligue1.com/
-- Sedan 1999-00 goal leaders: https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999
-- Dugarry transfer contemporary notice: https://www.lemonde.fr/archives/article/2000/01/09/christophe-dugarry-retour-chez-les-girondins_3586559_1819218.html
+## Sources and proof limitations
+- UNFP contemporary awards (official): https://ligue1.fr/fr/articles/l1_article_285-trophees-unfp-palmares-des-meilleurs-joueurs-l1
+- Historic league goal leaders: https://ligue1.com/fr/articles/l1_article_80-historique-et-records-du-classement-des-buteurs-l1
+- Nicolas Sachy Sedan biography and match list: https://www.lequipe.fr/fiche/nicolas-sachy/238294
+- Jean-Louis Montero Sedan appearances: https://www.lequipe.fr/fiche/jean-louis-montero/238297
+- Charles Devineau FFF identity: https://www.fff.fr/equipe-nationale/joueur/10135-devineau-charles/fiche.html
+- Christophe Borbiconi transfer timeline: https://en.wikipedia.org/wiki/Christophe_Borbiconi
+- monaco: https://www.bdfutbol.com/en/t/t1999-004018.html
+- psg: https://www.bdfutbol.com/en/t/t1999-004002.html
+- lyon: https://www.bdfutbol.com/en/t/t1999-004017.html
+- bordeaux: https://www.bdfutbol.com/en/t/t1999-004012.html
+- lens: https://www.bdfutbol.com/en/t/t1999-004014.html
+- sedan: https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999
+- auxerre: https://www.bdfutbol.com/en/t/t1999-004025.html
+- nantes: https://www.bdfutbol.com/en/t/t1999-004013.html
 
-## Pending before full historical approval
-- Match-by-match left/right classification for Sedan's Montero/Elzéard and several versatile players.
-- Individually independently verified birth dates for newly added cases.
-- Individual 1997-98 and 1998-99 competition appearances and goals for the full 136-player set.
-- Independent quantitative league-wide formation frequency; here 4-4-2 diamond used as a contemporary plausible formation.
-- Browser rendering and public deployment confirmation are separate tests and are not asserted by this report.
+### Still unverified independently
+- Full individual 1997-98 and 1998-99 lines for each of 135 athletes.
+- Sedan per-player starters (many null), and historical left/right match usage.
+- Numeric count of league formation usage across the 1999-00 season.
+- Each athlete's photo/crest historical period appearance, browser interactions, and public deployment require separate checks.
+- Current year data fields where sources conflict (e.g. Di Rocco 8 versus 9 league goals).
+
