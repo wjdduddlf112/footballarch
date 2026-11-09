@@ -1,3 +1,17 @@
+## 2026-11-09 — Ligue 1 / Division 1 2000-01, complete season DRAFT
+
+- **Qualifiers**: 10 actual participants 2001-02 UEFA/2001 Intertoto; Nantes, Lyon, Lille UCL; Bordeaux, Sedan UEFA; Strasbourg French cup winner relegated but UEFA; PSG and Troyes Intertoto→UEFA; Rennes and Bastia Intertoto.
+- **Eligible roster**: 167 independently reselected 2000-01 candidates, 110 representative starters, 57 backups, 10 positions rank 1..N, all S–D provisional grades. Prior unapproved 141 not copied.
+- **Club totals**: nantes 17; lyon 16; lille 17; bordeaux 16; sedan 16; strasbourg 16; rennes 19; troyes 15; bastia 16; psg 19.
+- **Tier distribution**: S 1 / A+ 5 / A0 13 / A- 20 / B+ 63 / B0 38 / B- 16 / C+ 7 / C0 4 / C- 0 / D 0. World Class 6; League Top 39.
+- **4-3-1-2 unapproved XI**: GK Lionel Letizi; RB François Grenet; CB Pascal Cygan; CB Edmílson; LB Jérôme Bonnissel; DM Mathieu Berson; CM Vikash Dhorasoo; CM Marc-Vivien Foé; CAM Éric Carrière; ST Sonny Anderson; ST Pauleta. Period 4-4-2 representative; statistical season-wide modal formation not independently counted.
+- **New historic corrections**: Samuel Boutal (not Khaled; ST), Mathieu Verschuère (not Frédéric; DM), Philippe Celdran LM→LW, Bastia Yann Lachuer CAM and PSG Sylvain Distin LB based on period reports. Rennes/Troyes identity dates source checked; 11 missing DOB still null.
+- **Evidence status**: current 2000-01 BDFutbol team lineups/bench independently transcribed; 1998-99 and 1999-00 per-player independent record completion lacking. Do not treat this DRAFT as independent complete three-season proof.
+- **Preservation**: original 18-club officially adjudicated final standings and existing crest/club IDs unchanged; 1999-00 and other seasons intact.
+- **Artifacts**: `data/ligue1-2000-01.json`, `audit/LIGUE1_2000-01_RAW_ROSTER_TRANSCRIPTION.txt`, `audit/LIGUE1_2000-01_DRAFT_FULL_REPORT.md`, `audit/LIGUE1_2000-01_PRODUCTION_VALIDATION.json`, `scripts/verify-ligue1-2000-01.mjs`, `scripts/verify-ligue1-2000-01-browser.mjs`, `.github/workflows/verify-ligue1-2000-01.yml`.
+- **GitHub Actions and public browser status**: pending at time of initial report generation; will be checked separately.
+- **Approval**: all evaluation records remain DRAFT, next 2001-02 season not started.
+
 ### 2026-11-09 verification outcome — Ligue 1 1999-00 historical DRAFT
 - **GitHub Actions PASS**: [run 42585535908](https://github.com/wjdduddlf112/footballarch/actions/runs/42585535908): static Node 135-player checks, JavaScript parsing, local Playwright Chromium and actual public GitHub Pages Playwright Chromium all passed. All Tiers 135 rows, 8 club sections, 10 position tables with all 135 ranks/grade badges, Best XI 11, player detail, league table, top tier, no JS page exceptions/failed season JSON loads.
 - **GitHub Pages PASS**: [deployment 42585535434](https://github.com/wjdduddlf112/footballarch/actions/runs/42585535434), public page https://wjdduddlf112.github.io/footballarch/?league=ligue1&season=1999-00.
