@@ -102,7 +102,7 @@ function pageIntro(){
  $("eyebrow").style.display="none";
  $("heading").textContent=label()+"  /  "+st.season.replace("-","–");
  $("subheading").style.display="none";
- const tierSeason=["bundesliga","seriea"].includes(st.league)&&Boolean(data?.players?.length)&&data?.meta?.standingsOnly!==true;
+ const tierSeason=["bundesliga","seriea","ligue1"].includes(st.league)&&Boolean(data?.players?.length)&&data?.meta?.standingsOnly!==true;
  const tierTab=$("allTiersTab");if(tierTab)tierTab.style.display=tierSeason?"":"none";
  if(st.tab==="tiers"&&!tierSeason)st.tab="overview";
  const playerView=["formation","top","tiers","stats"].includes(st.tab);
@@ -228,7 +228,7 @@ function formation(){
  side+='</div>';
  const proposed=data?.meta?.bestXiReview?.status==="proposed_unapproved";
  const previewNote="";
- const xiTable=["bundesliga","seriea"].includes(st.league)&&Array.isArray(data.bestXi)&&data.bestXi.length===11?'<div class="xi-detail-list"><h3>Best XI · 11명 개별 티어 및 선정 근거</h3><div class="table-scroll"><table class="datagrid"><thead><tr><th>전술 위치</th><th>한글 이름 / 원어명</th><th>구단</th><th>실제 주 포지션</th><th>티어</th><th>선정 근거</th></tr></thead><tbody>'+selection.map(s=>{const p=data.players.find(x=>x.id===s.playerId);return '<tr data-player="'+esc(s.playerId)+'"><td>'+esc(s.displayPosition||s.position)+'</td><td class="person">'+esc(p?.nameKo||"—")+'<span class="small muted" style="display:block">'+esc(p?.nameOriginal||p?.name||"—")+'</span></td><td>'+esc(p?.clubNameOriginal||"—")+'</td><td>'+esc(p?.position||"—")+'</td><td>'+grade(p?.tier)+'</td><td>'+esc(s.reason||"근거 확인 대기")+'</td></tr>'}).join("")+'</tbody></table></div></div>':"";
+ const xiTable=["bundesliga","seriea","ligue1"].includes(st.league)&&Array.isArray(data.bestXi)&&data.bestXi.length===11?'<div class="xi-detail-list"><h3>Best XI · 11명 개별 티어 및 선정 근거</h3><div class="table-scroll"><table class="datagrid"><thead><tr><th>전술 위치</th><th>한글 이름 / 원어명</th><th>구단</th><th>실제 주 포지션</th><th>티어</th><th>선정 근거</th></tr></thead><tbody>'+selection.map(s=>{const p=data.players.find(x=>x.id===s.playerId);return '<tr data-player="'+esc(s.playerId)+'"><td>'+esc(s.displayPosition||s.position)+'</td><td class="person">'+esc(p?.nameKo||"—")+'<span class="small muted" style="display:block">'+esc(p?.nameOriginal||p?.name||"—")+'</span></td><td>'+esc(p?.clubNameOriginal||"—")+'</td><td>'+esc(p?.position||"—")+'</td><td>'+grade(p?.tier)+'</td><td>'+esc(s.reason||"근거 확인 대기")+'</td></tr>'}).join("")+'</tbody></table></div></div>':"";
  return '<div class="panels"><section class="panel"><div class="section-heading"><h2>Season Best XI</h2><span class="small muted">'+esc(formationName)+' · '+(data?.meta?.status==="demo"?"SAMPLE":proposed?"DRAFT":"BEST XI")+'</span></div>'+previewNote+'<div class="pitch"><div class="mid"></div><div class="circle"></div>'+marks+'</div>'+xiTable+'</section>'+side+'</div>'
 }
 function championStatus(r){
