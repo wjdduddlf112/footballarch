@@ -1,3 +1,9 @@
+### 2026-11-09 — Division 1 2000-01 DRAFT website verification PASSED
+- **Actual candidates**: 166 = 110 starters + 56 backups, 10 actual following-season UEFA/Intertoto clubs, 10 full primary-position rankings 1..N, XI 11, birthdate fields 166/166 present. World Class 6, League Top Class 39.
+- **Structure + browser**: [GitHub Actions PASS run 42595127902](https://github.com/wjdduddlf112/footballarch/actions/runs/42595127902) for last full player JSON revision; static Node, local Chromium and real public GitHub Pages Chromium all passed. Full 166, position + tier filters, player modals and league table rendered with zero JS exceptions.
+- **Pages deployment**: [successful run 42595204779](https://github.com/wjdduddlf112/footballarch/actions/runs/42595204779). Public URL: https://wjdduddlf112.github.io/footballarch/?league=ligue1&season=2000-01.
+- **Approval**: user has not approved individual player grades; all records and XI DRAFT. Missing independent full 1998-99 and 1999-00 individual performance checks, precise match-by-match role and formation mode proof noted, not marked complete.
+
 ## 2026-11-09 — 2000-01 Division 1 166-player DRAFT source correction addendum
 - **FINAL candidate count** 166 = 110 representative starters + 56 backups; not 167/168 intermediate. Removed duplicate Bordeaux Tony Vairelles; Lyon season part (11 starts) takes priority over Bordeaux (8 starts).
 - **Real name/role corrections**: Troyes Pascal Renier (CB) replaces misidentified Christophe Monier, Yannick Zambernardi LB replaces Nicolas; Bastia Laurent Casanova DM rather than CB; Sedan Philippe Celdran LM→LW and Mathieu Verschuère DM; PSG Sylvain Distin LB; Bastia Yann Lachuer CAM. Squad 166 players across 10 actual UEFA clubs; all 10 positions ranked.
