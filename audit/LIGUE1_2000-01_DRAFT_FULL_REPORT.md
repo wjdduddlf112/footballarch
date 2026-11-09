@@ -22,7 +22,7 @@
 ## B. Evidence and weighting
 - 2000-01 highest recency weight, 1999-00 next, 1998-99 lowest. Team placement/trophies are NOT direct individual tier bonus.
 - Ten BDFutbol club-season first-XI/substitution tables independently consulted. Existing 141 unapproved candidates are not a normative selection list.
-- All 167 players have season-linked names, original clubs, a first XI / backup label, one primary position, and individual provisional tier/rank.
+- All 166 players have season-linked names, original clubs, a first XI / backup label, one primary position, and individual provisional tier/rank.
 - Exact matches, goals and assists that have no individually confirmed source remain null. No fabricated minutes/assists.
 - All older 1998-99 and 1999-00 individual records are NOT independently complete; previous archived 1999-00 DRAFT alone is not independent historical evidence.
 - Identity corrections: actual Troyes striker is **Samuel Boutal**, not Khaled Boutal; Sedan DM **Mathieu Verschuère**, not Frédéric; Sedan left midfielder **Philippe Celdran**, not CM. PSG Distin LB and Bastia Lachuer CAM based on match reporting.
@@ -96,7 +96,6 @@
 | RW | 마르크 빌모츠 | Marc Wilmots | FC Girondins de Bordeaux | 1969-02-22 | 주전 | 26 | 28 | 8 | B+ | 5 |
 | ST | 파울레타 | Pauleta | FC Girondins de Bordeaux | 1973-04-28 | 주전 | 28 | 28 | 20 | A+ | 2 |
 | ST | 릴리앙 라슬랑드 | Lilian Laslandes | FC Girondins de Bordeaux | 1971-09-04 | 주전 | 19 | 27 | 4 | B0 | 21 |
-| ST | 토니 바레유 | Tony Vairelles | FC Girondins de Bordeaux | 1973-04-10 | 후보 | 8 | 14 | 1 | B- | 27 |
 | GK | 니콜라 사시 | Nicolas Sachy | CS Sedan-Ardennes | 1967-10-23 | 주전 | 28 | 28 | — | B+ | 9 |
 | GK | 파트리크 르뇨 | Patrick Regnault | CS Sedan-Ardennes | 1974-03-01 | 후보 | 6 | 6 | — | B- | 13 |
 | CB | 에두아르두 올리베이라 | Eduardo Oliveira | CS Sedan-Ardennes | 1972-09-28 | 주전 | 32 | 32 | — | B+ | 6 |
@@ -395,7 +394,7 @@ Total 12 candidates
 | 12 | 반데르 (Vânder) | Stade Rennais FC | B- | 10 | backup |
 
 ### ST
-Total 28 candidates
+Total 27 candidates
 
 | Rank | Korean (original) | Team | Tier | Starts | Role |
 |---:|---|---|---|---:|---|
@@ -425,8 +424,7 @@ Total 28 candidates
 | 24 | 로랑 르루아 (Laurent Leroy) | Paris Saint-Germain FC | B0 | 13 | backup |
 | 25 | 마리오 투르도 (Mario Turdó) | Stade Rennais FC | B- | 11 | backup |
 | 26 | 토니 바레유 (Tony Vairelles) | Olympique Lyonnais | B- | 11 | backup |
-| 27 | 토니 바레유 (Tony Vairelles) | FC Girondins de Bordeaux | B- | 8 | backup |
-| 28 | 피에르 로랑 (Pierre Laurent) | SC Bastia | B- | 7 | backup |
+| 27 | 피에르 로랑 (Pierre Laurent) | SC Bastia | B- | 7 | backup |
 
 ## E. Individual class tiers
 
@@ -438,14 +436,13 @@ Total 28 candidates
 | A- | 20 |
 | B+ | 63 |
 | B0 | 38 |
-| B- | 16 |
+| B- | 15 |
 | C+ | 7 |
 | C0 | 4 |
 | C- | 0 |
 | D | 0 |
 
 **World Class (S + A+) 6 players; League Top Class (S + A+ + A0 + A-) 39 players, including all World Class players.**
-
 ## F. Best XI 4-3-1-2 (period 4-4-2 diamond), proposed/unapproved
 
 | Position | Korean | Original | Club | Tier |
@@ -464,7 +461,7 @@ Total 28 candidates
 
 **Tactical caveat**: 4-4-2 variants are era-representative, not quantitatively proven to be the modal system in every 2000-01 Division 1 match. The diamond XI contains an actual CAM (Carrière), single DM (Berson) and two actual ST (Anderson, Pauleta).
 
-## G. Individual assessment notes, all 167 players
+## G. Individual assessment notes, all 166 players
 
 - **GK · 미카엘 랑드로 (Mickaël Landreau), A0 · FC Nantes Atlantique** — 2000-01 리그 33회 선발, 33회 출전. 선발 핵심성과 최근 개인 기여를 반영한 A 잠정 티어. 1999-00 및 1998-99의 개인 기록은 아직 독립 검증이 완결되지 않았음.
 - **GK · 윌리 그롱댕 (Willy Grondin), C0 · FC Nantes Atlantique** — 2000-01 리그 1회 선발, 1회 출전. 실질적 대체·로테이션 역할과 최근 개인 기여를 반영한 C 잠정 티어. 1999-00 및 1998-99의 개인 기록은 아직 독립 검증이 완결되지 않았음.
@@ -531,7 +528,6 @@ Total 28 candidates
 - **RW · 마르크 빌모츠 (Marc Wilmots), B+ · FC Girondins de Bordeaux** — 2000-01 리그 26회 선발, 28회 출전, 8득점. 선발 핵심성과 최근 개인 기여를 반영한 B+ 잠정 티어. 1999-00 및 1998-99의 개인 기록은 아직 독립 검증이 완결되지 않았음.
 - **ST · 파울레타 (Pauleta), A+ · FC Girondins de Bordeaux** — 2000-01 보르도 28경기 20골. 이전 두 시즌 라리가에서 뛰었으므로 타 리그 개인 성과 독립 검증이 필요. 현재 시즌 최상급 공격력에 A+ 잠정.
 - **ST · 릴리앙 라슬랑드 (Lilian Laslandes), B0 · FC Girondins de Bordeaux** — 2000-01 리그 19회 선발, 27회 출전, 4득점. 선발 핵심성과 최근 개인 기여를 반영한 B 잠정 티어. 1999-00 및 1998-99의 개인 기록은 아직 독립 검증이 완결되지 않았음.
-- **ST · 토니 바레유 (Tony Vairelles), B- · FC Girondins de Bordeaux** — 2000-01 리그 8회 선발, 14회 출전, 1득점. 실질적 대체·로테이션 역할과 최근 개인 기여를 반영한 B- 잠정 티어. 1999-00 및 1998-99의 개인 기록은 아직 독립 검증이 완결되지 않았음.
 - **GK · 니콜라 사시 (Nicolas Sachy), B+ · CS Sedan-Ardennes** — 2000-01 리그 28회 선발, 28회 출전. 선발 핵심성과 최근 개인 기여를 반영한 B+ 잠정 티어. 1999-00 및 1998-99의 개인 기록은 아직 독립 검증이 완결되지 않았음.
 - **GK · 파트리크 르뇨 (Patrick Regnault), B- · CS Sedan-Ardennes** — 2000-01 리그 6회 선발, 6회 출전. 실질적 대체·로테이션 역할과 최근 개인 기여를 반영한 B- 잠정 티어. 1999-00 및 1998-99의 개인 기록은 아직 독립 검증이 완결되지 않았음.
 - **CB · 에두아르두 올리베이라 (Eduardo Oliveira), B+ · CS Sedan-Ardennes** — 2000-01 리그 32회 선발, 32회 출전. 선발 핵심성과 최근 개인 기여를 반영한 B+ 잠정 티어. 1999-00 및 1998-99의 개인 기록은 아직 독립 검증이 완결되지 않았음.
@@ -659,6 +655,7 @@ Total 28 candidates
 - Rennes identity DOB: https://www.deux-zero.com/stade-rennais/effectifs/edition/2000-2001
 
 ## I. Historical verification pending
+- Tony Vairelles played for Lyon (11 league starts, 15 apps, 3 goals) and Bordeaux (8 starts, 11 apps, 2 goals) in 2000-01. Listed ONCE at Lyon (larger team-season contribution); Bordeaux loan evidence retained outside candidate record. Source: FFF and FBref.
 - 1998-99 and 1999-00 independent player match history incomplete; 2000-01 dominates all provisional ratings.
 - Eleven unresolved individual birth dates remain null rather than invented.
 - Several flexible flank roles (Lille, Sedan, Troyes, Rennes) still need every-match position frequency corroboration.
