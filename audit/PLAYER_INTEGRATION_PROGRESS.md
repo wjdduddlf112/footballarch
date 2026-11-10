@@ -1,3 +1,11 @@
+## 2026-11-10 — Ligue 1 2006-07 125-PLAYER NEW DRAFT (USER UNAPPROVED)
+- 2007-08 actual UEFA/Intertoto French 1st-division entrants (7): Lyon, Marseille, Toulouse, Rennes, Lens, Bordeaux, Sochaux. Lens Intertoto; Bordeaux League Cup; Sochaux French Cup.
+- Freshly researched seven 2006-07 BDFutbol club lineups; 125 players = 77 starters + 48 backups, no duplicate player IDs, 10 positional ranking groups, 4-4-2 proposed XI.
+- Provisional tiers: S=0, A+=8, A0=11, A-=9, B+=47, B0=24, B-=11, C+=8, C0=7, C-=0, D=0; World 8, League Top 28.
+- DOB null 79; prior DRAFT archive links 2004-05 36, 2005-06 51; not independent verification, all ratings DRAFT.
+- Output: [full report](LIGUE1_2006-07_DRAFT_FULL_REPORT.md), [raw transcription](LIGUE1_2006-07_RAW_ROSTER_TRANSCRIPTION.txt), [season JSON](../data/ligue1-2006-07.json), [QA JSON](LIGUE1_2006-07_PRODUCTION_VALIDATION.json).
+- Current season 2006-07 league data acquired from one BDFutbol source per club; player-level multi-source corroboration and 3-season full audits incomplete. CI and Pages live browser results require separate actual runs.
+
 ## 2026-11-10 — Ligue 1 2003-04 COMPLETE STRUCTURAL DRAFT (UNAPPROVED; historical validation partial)
 - **2004-05 actual European entrants (7):** UCL Lyon, PSG, Monaco; UEFA Cup Auxerre, Coupe de la Ligue winner Sochaux; 2004 Intertoto Cup Lille, Nantes. PSG won French Cup but League 2 runner-up Châteauroux took UEFA Cup spot, excluded from first division player pool. Lille qualified through actual Intertoto after Marseille/Lens/Rennes declined.
 - **Re-selected players:** 121 (77 starter-equivalent: seven XI of 11; 44 backups, <=1 per position). Lyon17 PSG17 Monaco16 Auxerre17 Sochaux18 Nantes18 Lille18. 2003-04 BDFutbol individual club lineup/starts/minutes, not previous candidate list. Position GK > CB > LB > RB > DM > CM > CAM > LW > RW > ST and full 1..N ranking. Duplicate names/IDs none.
