@@ -73,22 +73,49 @@
   "bestXi": 11,
   "checks": {
     "staticStructural": {
-      "status": "PENDING_GITHUB_ACTIONS"
+      "status": "PASS",
+      "runId": 42775919908
     },
     "localChromium": {
-      "status": "PENDING_GITHUB_ACTIONS"
+      "status": "PASS",
+      "runId": 42775919908,
+      "checked": [
+        "142 player draft",
+        "8 qualified clubs",
+        "10 position sections",
+        "Best XI 11",
+        "20 clubs preserved",
+        "no JavaScript exceptions",
+        "modal and filter views"
+      ]
     },
     "publicChromium": {
-      "status": "PENDING_DEPLOYMENT"
+      "status": "PASS",
+      "runId": 42775919908,
+      "checked": [
+        "published 2005-06 season page",
+        "All Tiers 142",
+        "eight team sections",
+        "positional ranks",
+        "Best XI 11",
+        "player detail modal"
+      ]
     },
     "GitHubPagesDeploy": {
-      "status": "PENDING"
+      "status": "IN_PROGRESS",
+      "runId": 42775918774,
+      "headSha": "2dac79c2b817fc4239d203fe33ae07ac9f8ca818",
+      "note": "The prior data-version 2392dd3 Pages deploy succeeded and live Chromium passed; this subsequent script-correction deploy was still in progress at audit update."
     },
     "independentHistoricalAccuracy": {
       "status": "PARTIAL",
       "missingBirthDates": 60,
       "priorYearIndividualIndependentCheck": false,
       "individualRoleFrequencyVerified": false
+    },
+    "javascriptSyntax": {
+      "status": "PASS",
+      "runId": 42775919908
     }
   },
   "sources": [
@@ -107,6 +134,9 @@
   "urls": {
     "website": "https://wjdduddlf112.github.io/footballarch/?league=ligue1&season=2005-06",
     "report": "https://github.com/wjdduddlf112/footballarch/blob/main/audit/LIGUE1_2005-06_DRAFT_FULL_REPORT.md",
-    "workflow": "https://github.com/wjdduddlf112/footballarch/actions/workflows/verify-ligue1-2005-06.yml"
-  }
+    "workflow": "https://github.com/wjdduddlf112/footballarch/actions/workflows/verify-ligue1-2005-06.yml",
+    "verifyRun": "https://github.com/wjdduddlf112/footballarch/actions/runs/42775919908",
+    "pagesDeployRun": "https://github.com/wjdduddlf112/footballarch/actions/runs/42775918774"
+  },
+  "dataCommit": "2dac79c2b817fc4239d203fe33ae07ac9f8ca818"
 }
