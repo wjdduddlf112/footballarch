@@ -1,3 +1,9 @@
+## 2026-11-11 — Ligue 1 2016-17 FINAL TECHNICAL VALIDATION (DRAFT, USER UNAPPROVED)
+- Latest [Actions #42884069836](https://github.com/wjdduddlf112/footballarch/actions/runs/42884069836) **SUCCESS after official table correction**: Node structural, app syntax, local Playwright, public Pages 117-player JSON, public Playwright all passed.
+- 117 players, 66 starters + 51 backups, 116 graded, 1 GK pending, 10 contiguous positional rankings, Best XI 11, 6 actual 2017-18 UEFA participants. World 15, League Top 41 incl World. Monaco/PSG UCL, Nice UCL qualifiers→UEL, Lyon/Marseille/Bordeaux UEL.
+- History limits: two earlier seasons linked to previous Archive drafts, not fully independently verified; match-level primary position audit and per-person independent DOB double-source verification pending. User approval stays `draft_unapproved`.
+- Only 2016-17 source table goals Lyon GF 77 and Bastia GA 54 corrected per RSSSF, L'Équipe and DFB; other seasons untouched.
+
 ## 2026-11-11 — Ligue 1 2016-17 initial technical validation and standings historical correction
 - [Actions #42883915210](https://github.com/wjdduddlf112/footballarch/actions/runs/42883915210) **PASS**: structural Node, local browser, updated public 117-player JSON, public browser. Latest correction run [#42884069836](https://github.com/wjdduddlf112/footballarch/actions/runs/42884069836) pending at report observation.
 - GitHub readback: 117 distinct people, 66 starting XI slots, 51 backups, 116 graded, one pending Brice Samba (zero league appearances), 10 continuous ranks, 11 XI, World 15, Top 41.
