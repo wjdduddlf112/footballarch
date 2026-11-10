@@ -458,3 +458,11 @@ S 0명; A+ 8명; A0 14명; A- 23명; B+ 32명; B0 30명; B- 10명; C+ 13명; C0 
 - 선수 실제 주 포지션, 경기별 시즌 대표 전술 빈도와 전술 배치 교차검증 (Lyon Bodmer CB, Marseille 4-3-1-2, Saint-Étienne Perrin RB, Rennes diamond 등)
 - BDFutbol 2007-08 선수 개별 기록의 두 번째 독립 출처 재확인
 - 리그 도움 기록 미확인으로 null 유지, 골키퍼 실점은 득점으로 변환하지 않음
+
+## I. GitHub Actions and production status (actual observed on 2026-11-10)
+
+- Initial season DRAFT commit: [c34df181e81f62c72b0a6f9634d3d9c4595cb1fc](https://github.com/wjdduddlf112/footballarch/commit/c34df181e81f62c72b0a6f9634d3d9c4595cb1fc).
+- [GitHub Actions workflow 42799863565](https://github.com/wjdduddlf112/footballarch/actions/runs/42799863565): **overall FAIL**, first run + re-run attempt 2, both on public GitHub Pages Chromium waitForFunction timeout. No logged runtime JS exceptions or failed JSON responses during timeout. Do not interpret as successful public deployment.
+- Both attempts: local Node roster structure checks PASS, JS syntax PASS, local Chromium PASS including overview, filters, stats, All Tiers, full 130 players, 7 clubs, position ranking views, XI 11, and player modal.
+- [GitHub Pages build/deploy 42799862868](https://github.com/wjdduddlf112/footballarch/actions/runs/42799862868) still **in_progress** on observation; NOT marked successful.
+- Remaining operational steps: Pages deployment completion, public browser re-run after release, update this audit with verified outcome. All player tiers and XI remain DRAFT.

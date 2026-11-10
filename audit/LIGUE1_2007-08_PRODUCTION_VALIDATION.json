@@ -36,9 +36,18 @@
   },
   "individualFullyIndependentVerified": 0,
   "structurePreflight": "PASS",
-  "ci": "PENDING",
+  "ci": "FAIL overall (public Pages check timed out; all local steps passed)",
   "localBrowser": "PENDING",
   "publicBrowser": "PENDING",
   "pagesDeploy": "PENDING",
-  "notes": "Direct BDFutbol source (one database per player), contemporaneous 2008 UNFP award check for select players; previous two years unverified independently."
+  "notes": "Direct BDFutbol source (one database per player), contemporaneous 2008 UNFP award check for select players; previous two years unverified independently.",
+  "sourceMainCommit": "c34df181e81f62c72b0a6f9634d3d9c4595cb1fc",
+  "structuralCheck": "PASS GitHub Actions 42799863565 both attempts",
+  "localChromium": "PASS both attempts all page features and filters",
+  "publicChromium": "FAIL two attempts page.waitForFunction timeout while Pages deployment still in_progress",
+  "pagesDeployment": "IN_PROGRESS at 2026-11-10T10:36Z; NOT VERIFIED SUCCESS",
+  "githubActionsRunUrl": "https://github.com/wjdduddlf112/footballarch/actions/runs/42799863565",
+  "pagesActionsRunUrl": "https://github.com/wjdduddlf112/footballarch/actions/runs/42799862868",
+  "historicalIndependentReview": "PARTIAL single BDFutbol 2007-08 record source; selected UNFP contemporary award crosschecks; prior seasons not independently reverified",
+  "auditNote": "CI failure is NOT hidden; no claim of live deployment success until Pages and public browser confirm."
 }
