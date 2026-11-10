@@ -25,7 +25,7 @@ check(ps.filter(p=>!p.born).length===d.meta.historicalValidation.birthDatesMissi
 check(ps.every(p=>clubs.includes(p.club)&&positions.includes(p.position)),'unknown club or position');
 check(ps.every(p=>p.clubNameOriginal===d.clubs.find(q=>q.id===p.club)?.name),'incorrect club original name');
 check(ps.every(p=>grades.includes(p.tier)&&p.review==='draft_unapproved'),'tier or final user approval');
-check(ps.every(p=>p.season==='2004-05'&&p.leagueAppearances>0&&p.leagueStarts>=0&&p.leagueStarts<=p.leagueAppearances&&p.leagueMinutes>0&&p.leagueMinutes<=p.leagueAppearances*90+150),'current league appearances');
+check(ps.every(p=>p.season==='2005-06'&&p.leagueAppearances>0&&p.leagueStarts>=0&&p.leagueStarts<=p.leagueAppearances&&p.leagueMinutes>0&&p.leagueMinutes<=p.leagueAppearances*90+150),'current league appearances');
 check(ps.every(p=>p.leagueGoals>=0&&p.leagueAssists!==0||p.leagueAssists===0&&p.assistsSource),'goals/assists provenance');
 check(ps.every(p=>p.sources?.length>0),'sources');
 check(ps.every(p=>p.threeSeasonReview?.assessmentSeasons?.join(',')==='2003-04,2004-05,2005-06'),'three-season window');
