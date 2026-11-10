@@ -1,0 +1,91 @@
+{
+  "league": "Ligue 1",
+  "season": "2011-12",
+  "assessmentWindow": [
+    "2009-10",
+    "2010-11",
+    "2011-12"
+  ],
+  "qualifyingSeason": "2012-13",
+  "userApproval": "DRAFT_UNAPPROVED",
+  "reportCreated": "2026-11-11",
+  "totals": {
+    "clubs": 6,
+    "players": 113,
+    "starters": 66,
+    "backups": 47,
+    "graded": 110,
+    "ungraded": 3,
+    "worldClass": 10,
+    "leagueTopClass": 36,
+    "perTier": {
+      "S": 1,
+      "A+": 9,
+      "A": 4,
+      "A-": 22,
+      "B+": 32,
+      "B": 27,
+      "B-": 2,
+      "C+": 7,
+      "C": 3,
+      "C-": 3,
+      "D": 0,
+      "unrated": 3
+    },
+    "clubCounts": {
+      "montpellier": 19,
+      "psg": 19,
+      "lille": 18,
+      "lyon": 19,
+      "bordeaux": 19,
+      "marseille": 19
+    },
+    "positionCounts": {
+      "GK": 12,
+      "CB": 19,
+      "LB": 12,
+      "RB": 11,
+      "DM": 10,
+      "CM": 13,
+      "CAM": 4,
+      "LW": 11,
+      "RW": 10,
+      "ST": 11
+    }
+  },
+  "checks": {
+    "inMemoryStaticIntegration": {
+      "status": "PASS",
+      "errors": [],
+      "notes": "Read-back from GitHub after commit. Not a substitute for independent Node CI."
+    },
+    "nodeValidatorActualExecution": "not_confirmed",
+    "localChromium": "not_confirmed",
+    "publicGitHubPagesChromium": "not_confirmed",
+    "ActionsRun": "not_confirmed",
+    "PagesDeployment": "not_confirmed",
+    "independentAllThreeSeasonPlayerStats": "incomplete",
+    "allMatchLevelPrimaryPositions": "incomplete",
+    "allDOBIndependentlyVerified": "incomplete"
+  },
+  "auditFindings": [
+    "Prior 20-team standings/club crests retained; data entered as draft for user review.",
+    "Six direct 2011-12 BDFutbol team lineup sources with 113 fresh candidates, full source transcription preserved.",
+    "66 selected starter slots across clubs, 47 reserves; exactly 11 first XI entries per club and no duplicate players.",
+    "2011-12 eligible from next UEFA season, Marseille ranked tenth but qualified through French League Cup.",
+    "Three league-zero GK bench members Vincent Enyeama, Nicolas Douchez, Gennaro Bracigliano remain null tier rather than assigning unjustified poor grade.",
+    "Ludovic Obraniak chose Bordeaux rather than Lille, where he played only 12 first-half matches.",
+    "Best XI 4-2-3-1 has eleven unique IDs. Hazard occupies LW rather than incorrectly moving Nenê from his actual 2011-12 LW.",
+    "Bordeaux three-CB variant and mixed roles (Stambouli, Biševac, Umtiti) still require match-level verification.",
+    "Previous 2009-10/2010-11 Archive drafts linked contextually; not independent verification for all 113 players.",
+    "New workflow and scripts committed, but no successful execution or Pages status established."
+  ],
+  "paths": [
+    "data/ligue1-2011-12.json",
+    "audit/LIGUE1_2011-12_RAW_ROSTER_TRANSCRIPTION.txt",
+    "audit/LIGUE1_2011-12_DRAFT_FULL_REPORT.md",
+    "scripts/verify-ligue1-2011-12.mjs",
+    "scripts/verify-ligue1-2011-12-browser.mjs",
+    ".github/workflows/verify-ligue1-2011-12.yml"
+  ]
+}
