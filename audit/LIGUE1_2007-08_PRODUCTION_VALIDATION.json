@@ -36,18 +36,39 @@
   },
   "individualFullyIndependentVerified": 0,
   "structurePreflight": "PASS",
-  "ci": "FAIL overall (public Pages check timed out; all local steps passed)",
+  "ci": "PASS attempt 3; initial attempts 1,2 failed when Pages not yet deployed",
   "localBrowser": "PENDING",
   "publicBrowser": "PENDING",
   "pagesDeploy": "PENDING",
   "notes": "Direct BDFutbol source (one database per player), contemporaneous 2008 UNFP award check for select players; previous two years unverified independently.",
   "sourceMainCommit": "c34df181e81f62c72b0a6f9634d3d9c4595cb1fc",
   "structuralCheck": "PASS GitHub Actions 42799863565 both attempts",
-  "localChromium": "PASS both attempts all page features and filters",
-  "publicChromium": "FAIL two attempts page.waitForFunction timeout while Pages deployment still in_progress",
-  "pagesDeployment": "IN_PROGRESS at 2026-11-10T10:36Z; NOT VERIFIED SUCCESS",
+  "localChromium": "PASS attempt 3",
+  "publicChromium": "PASS attempt 3",
+  "pagesDeployment": "PASS run 42800688012",
   "githubActionsRunUrl": "https://github.com/wjdduddlf112/footballarch/actions/runs/42799863565",
   "pagesActionsRunUrl": "https://github.com/wjdduddlf112/footballarch/actions/runs/42799862868",
   "historicalIndependentReview": "PARTIAL single BDFutbol 2007-08 record source; selected UNFP contemporary award crosschecks; prior seasons not independently reverified",
-  "auditNote": "CI failure is NOT hidden; no claim of live deployment success until Pages and public browser confirm."
+  "auditNote": "CI failure is NOT hidden; no claim of live deployment success until Pages and public browser confirm.",
+  "finalVerification": {
+    "dateUTC": "2026-11-10",
+    "commit": "3746ea7b7030cd51b2ee115685ead185e5a7fd18",
+    "githubAction": {
+      "runId": 42799863565,
+      "attempt": 3,
+      "status": "PASS",
+      "url": "https://github.com/wjdduddlf112/footballarch/actions/runs/42799863565"
+    },
+    "pages": {
+      "runId": 42800688012,
+      "status": "PASS",
+      "url": "https://github.com/wjdduddlf112/footballarch/actions/runs/42800688012"
+    },
+    "structural": "PASS",
+    "jsSyntax": "PASS",
+    "localChromium": "PASS",
+    "publicPagesChromium": "PASS",
+    "history": "Attempts 1 and 2 FAIL at public Pages due deployment pending; attempt 3 PASS after Pages deployment successful",
+    "historicalValidation": "PARTIAL, NOT fully independently verified: 92 DOB null, 2005-06/2006-07 sources incomplete"
+  }
 }

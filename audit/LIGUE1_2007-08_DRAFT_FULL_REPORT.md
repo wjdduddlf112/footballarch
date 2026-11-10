@@ -466,3 +466,10 @@ S 0명; A+ 8명; A0 14명; A- 23명; B+ 32명; B0 30명; B- 10명; C+ 13명; C0 
 - Both attempts: local Node roster structure checks PASS, JS syntax PASS, local Chromium PASS including overview, filters, stats, All Tiers, full 130 players, 7 clubs, position ranking views, XI 11, and player modal.
 - [GitHub Pages build/deploy 42799862868](https://github.com/wjdduddlf112/footballarch/actions/runs/42799862868) still **in_progress** on observation; NOT marked successful.
 - Remaining operational steps: Pages deployment completion, public browser re-run after release, update this audit with verified outcome. All player tiers and XI remain DRAFT.
+
+## J. 후속 배포 및 최종 재검증 성공 (2026-11-10)
+
+- 기존 감사 내용의 초기 2회 공개 Chromium 검사 실패는 삭제하지 않는다. 당시 Pages 배포가 완료되지 않아 타임아웃이 발생한 이력이다.
+- [GitHub Pages 빌드·배포 42800688012](https://github.com/wjdduddlf112/footballarch/actions/runs/42800688012): **SUCCESS**. 구버전 배포 실행 42799862868은 새로운 커밋으로 취소된 이력이 있다.
+- [GitHub Actions 42799863565, attempt 3](https://github.com/wjdduddlf112/footballarch/actions/runs/42799863565): **SUCCESS**, Node 구조·JS syntax·로컬 Chromium·공개 Pages Chromium 모두 PASS.
+- 배포 성공과 브라우저 검증 성공은 별도로 확인했다. 구조 자동 검증의 역사적 사실 완전 검증은 **아님**: 선수별 지난 2시즌 기록 및 92명 생년월일 등 추가 확인 필요. 모든 티어·Best XI 미승인 DRAFT 유지.
