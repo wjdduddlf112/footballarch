@@ -1712,3 +1712,11 @@ Source TXT instruction adapted to the **2009-10 season only**. Candidate roster 
 - Tier grades and 10 positional ranks computed, World Class 7, League Top Class 48; 4-4-2 provisional unapproved Best XI.
 - Some past 2002-03/2003-04 data is derived from unapproved Football Archive and is not individually independently verified; 2004-05 BDFutbol is main current source. Two disputed goal stats preserved and flagged (Moussilou, Kallon).
 - User approval has not been granted. Draft artifacts: data/ligue1-2004-05.json, audit/LIGUE1_2004-05_DRAFT_FULL_REPORT.md, audit/LIGUE1_2004-05_RAW_ROSTER_TRANSCRIPTION.txt, audit/LIGUE1_2004-05_PRODUCTION_VALIDATION.json; scripts/workflow. GitHub Actions results should be checked separately after deployment.
+
+
+## 2026-11-10 — Ligue 1 2005-06 FULL POSITION DRAFT (UNAPPROVED)
+- Eligible European clubs for 2006-07: 8 — Lyon, Bordeaux, Lille, Lens, PSG, Nancy, Marseille (2006 Intertoto), Auxerre (2006 Intertoto).
+- Source-led 2005-06 player roster: 142 (starting XI 88 = 11*8; backups 54), 10 roles with 1..N ranks and provisional grades; missing DOB 60 explicit null.
+- UNFP award evidence: Juninho player of season, Coupet goalkeeper, Ribéry newcomer; Pauleta 21 goals. 4-4-2 season XI is proposed_unapproved.
+- Prior 2003-04 Archive links 54, prior 2004-05 Archive links 64; historical independent audit partial, current BDFutbol club season lineups used, positional shares incomplete.
+- DRAFT artifacts: data/ligue1-2005-06.json, audit/LIGUE1_2005-06_RAW_ROSTER_TRANSCRIPTION.txt, audit/LIGUE1_2005-06_DRAFT_FULL_REPORT.md, scripts/verify-ligue1-2005-06.mjs, workflow; CI statuses reported separately after deployment.
