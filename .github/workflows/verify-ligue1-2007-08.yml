@@ -1,0 +1,39 @@
+name: Verify Ligue 1 2007-08 DRAFT (structure + local and public Chromium)
+on:
+  push:
+    paths:
+      - 'data/ligue1-2007-08.json'
+      - 'scripts/verify-ligue1-2007-08.mjs'
+      - 'scripts/verify-ligue1-2007-08-browser.mjs'
+      - '.github/workflows/verify-ligue1-2007-08.yml'
+  workflow_dispatch:
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Structure validation
+        run: node scripts/verify-ligue1-2007-08.mjs
+      - name: JavaScript syntax
+        run: node --check assets/app.js
+      - name: Install Chromium
+        run: |
+          npm install --no-save --no-package-lock playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Start local server
+        run: |
+          nohup python3 -m http.server 8871 --bind 127.0.0.1 >/tmp/l1-2007-08.log 2>&1 &
+          sleep 3
+      - name: Local Chromium
+        env:
+          TARGET_URL: http://127.0.0.1:8871/?league=ligue1&season=2007-08
+          EXPECTED_PLAYERS: '130'
+        run: node scripts/verify-ligue1-2007-08-browser.mjs
+      - name: Public GitHub Pages Chromium
+        env:
+          TARGET_URL: https://wjdduddlf112.github.io/footballarch/?league=ligue1&season=2007-08
+          EXPECTED_PLAYERS: '130'
+        run: node scripts/verify-ligue1-2007-08-browser.mjs

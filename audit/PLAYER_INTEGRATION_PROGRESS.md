@@ -1,3 +1,11 @@
+## 2026-11-10 — Ligue 1 2007-08 130-player DRAFT, USER UNAPPROVED
+- 2008-09 actual European entrant clubs (7): Lyon, Bordeaux, Marseille (UCL); Nancy, Saint-Étienne, PSG (UEFA Cup); Rennes (2008 Intertoto → UEFA Cup). PSG qualified through League Cup from 16th.
+- New 2007-08 BDFutbol 7 club source transcriptions: 130 players, 77 first XIs (7x11), 53 backups. All positions 1..N ranks.
+- Tiers S:0, A+:8, A0:14, A-:23, B+:32, B0:30, B-:10, C+:13, C0:0, C-:0, D:0. World Class 8, League Top Class 45 incl World Class. 4-4-2 Best XI DRAFT GK Steve Mandanda / CB Sébastien Puygrenier / CB Souleymane Diawara / LB Taye Taiwo / RB Laurent Bonnart / DM Jérémy Toulalan / CM Benoît Cheyrou / LW Wendel / RW Mathieu Valbuena / ST Karim Benzema / ST Mamadou Niang.
+- Unknown DOB 92; prior 2005-06 draft links 52, 2006-07 draft links 55 — NOT independently verified. 2008 UNFP performance awards crosschecked.
+- Full [report](LIGUE1_2007-08_DRAFT_FULL_REPORT.md) / [raw](LIGUE1_2007-08_RAW_ROSTER_TRANSCRIPTION.txt) / [QA](LIGUE1_2007-08_PRODUCTION_VALIDATION.json) / [JSON](../data/ligue1-2007-08.json).
+- CI, local Chromium, public Pages Chromium must be checked after commit. Historical player-level full multi-source proof still pending.
+
 ## 2026-11-10 — Ligue 1 2006-07 125-PLAYER NEW DRAFT (USER UNAPPROVED)
 - 2007-08 actual UEFA/Intertoto French 1st-division entrants (7): Lyon, Marseille, Toulouse, Rennes, Lens, Bordeaux, Sochaux. Lens Intertoto; Bordeaux League Cup; Sochaux French Cup.
 - Freshly researched seven 2006-07 BDFutbol club lineups; 125 players = 77 starters + 48 backups, no duplicate player IDs, 10 positional ranking groups, 4-4-2 proposed XI.
