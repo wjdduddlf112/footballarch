@@ -25,6 +25,27 @@ try{
  await page.waitForFunction(()=>document.querySelector("#allTiersTab")?.style.display!=="none" && document.querySelector("#stateTag")?.textContent==="DRAFT",{timeout:45000});
  check((await page.locator("#heading").innerText()).replaceAll("–","-").includes("2006-07"),"2006-07 heading",await page.locator("#heading").innerText());
  check(await page.locator("#allTiersTab").isVisible(),"All Tiers tab visible",true);
+
+ await page.locator('[data-tab="overview"]').click();
+ const overviewText=await page.locator("#content").innerText();
+ check(overviewText.includes("European Qualification")&&overviewText.includes("Players"),"Overview qualification and roster overview",true);
+ await page.locator('[data-action="candidates"]').click();
+ check(await page.locator("#candidate-pool tbody tr").count()===expected,"Overview roster count",await page.locator("#candidate-pool tbody tr").count());
+ await page.locator('select[data-filter="position"]').selectOption("GK");
+ check(await page.locator("#candidate-pool tbody tr").count()===10,"GK position filter 10 players",await page.locator("#candidate-pool tbody tr").count());
+ await page.locator('select[data-filter="club"]').selectOption("lyon");
+ check(await page.locator("#candidate-pool tbody tr").count()===2,"Combined club + GK filter 2 Lyon players",await page.locator("#candidate-pool tbody tr").count());
+ await page.locator('select[data-filter="from"]').selectOption("A+");
+ await page.locator('select[data-filter="to"]').selectOption("A+");
+ check(await page.locator("#candidate-pool tbody tr").count()===1,"Combined tier A+ filter Coupet only",await page.locator("#candidate-pool tbody tr").count());
+ await page.locator("#candidate-pool [data-action='reset']").click();
+ check(await page.locator("#candidate-pool tbody tr").count()===expected,"Filters reset to all players",await page.locator("#candidate-pool tbody tr").count());
+ await page.locator('[data-tab="stats"]').click();
+ check((await page.locator("#content").innerText()).includes("Matching Players"),"Statistics screen visible",true);
+ check((await page.locator("#content .metric .value").first().innerText()).includes(String(expected)),"Statistics 125 players",await page.locator("#content .metric .value").first().innerText());
+ await page.locator('select[data-filter="club"]').selectOption("sochaux");
+ check((await page.locator("#content .metric .value").first().innerText())==="18","Statistics Sochaux club filter",await page.locator("#content .metric .value").first().innerText());
+ await page.locator('[data-tab="overview"]').click();
  await page.locator("#allTiersTab").click();
  await page.locator(".tier-directory-head").waitFor({timeout:15000});
  const title=await page.locator(".tier-directory-head h2").innerText();
@@ -43,6 +64,12 @@ try{
  await page.locator('[data-tier-view="tiers"]').click();
  const tierRows=await page.locator(".tier-directory-section tbody tr").count();
  check(tierRows===expected,"All Tier view rows",tierRows);
+
+ await page.locator('[data-tier-view="clubs"]').click();
+ await page.locator('[data-player="ligue1-2006-07-lyon-gregorycoupet"]').first().click();
+ const detail=await page.locator(".dialog").innerText();
+ check(detail.includes("Grégory Coupet")&&detail.includes("1972-12-31"),"Player modal original name & DOB",detail.slice(0,180));
+ await page.locator('[data-action="close"]').click();
  await page.locator('[data-tab="formation"]').click();
  const slots=await page.locator(".pitch .slot").count();
  check(slots===11,"Best XI pitch slots",slots);
