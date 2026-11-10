@@ -28,7 +28,7 @@ try{
  check(await page.locator(".tier-directory-section").count()===10,"10 positions");
  check(await page.locator(".tier-directory-section tbody tr").count()===117,"117 positional rows");
  await page.locator('[data-tier-view="clubs"]').click();
- await page.locator('[data-player="ligue1-2015-16-saintetienne-stevemandanda"]').first().click();
+ await page.locator('[data-player="ligue1-2015-16-psg-zlatanibrahimovic"]').first().click();
  const detail=await page.locator(".dialog").innerText();
  check(detail.includes("Zlatan Ibrahimović")&&detail.includes("1981-10-03"),"DOB and original name");
  await page.locator('[data-action="close"]').click();
