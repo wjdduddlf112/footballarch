@@ -1,0 +1,47 @@
+name: Verify Ligue 1 2012-13 DRAFT (structure and browsers)
+on:
+  push:
+    paths:
+      - 'data/ligue1-2012-13.json'
+      - 'scripts/verify-ligue1-2012-13.mjs'
+      - 'scripts/verify-ligue1-2012-13-browser.mjs'
+      - '.github/workflows/verify-ligue1-2012-13.yml'
+  workflow_dispatch:
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate season data
+        run: node scripts/verify-ligue1-2012-13.mjs
+      - name: Check application syntax
+        run: node --check assets/app.js
+      - name: Install Chromium
+        run: |
+          npm install --no-save --no-package-lock playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Start local server
+        run: |
+          nohup python3 -m http.server 8873 --bind 127.0.0.1 >/tmp/l1-2012-13.log 2>&1 &
+          sleep 3
+      - name: Check local browser
+        env:
+          TARGET_URL: http://127.0.0.1:8873/?league=ligue1&season=2012-13
+        run: node scripts/verify-ligue1-2012-13-browser.mjs
+      - name: Wait for public Pages updated JSON
+        run: |
+          for attempt in $(seq 1 50); do
+            if curl -fsSL --max-time 20 -H 'Cache-Control: no-cache' "https://wjdduddlf112.github.io/footballarch/data/ligue1-2012-13.json?v=2012-13" |
+              node -e 'let s="";process.stdin.on("data",c=>s+=c);process.stdin.on("end",()=>{try{const d=JSON.parse(s);process.exit(d.meta?.status==="draft"&&d.players?.length===114?0:1)}catch(e){process.exit(1)}})'; then
+              echo "Public Pages currently serves 114-player 2012-13 DRAFT"; exit 0
+            fi
+            sleep 10
+          done
+          echo "Published DRAFT JSON not yet confirmed"; exit 1
+      - name: Check public browser
+        env:
+          TARGET_URL: https://wjdduddlf112.github.io/footballarch/?league=ligue1&season=2012-13
+        run: node scripts/verify-ligue1-2012-13-browser.mjs
