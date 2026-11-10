@@ -7,7 +7,7 @@
     "status": "draft",
     "standingsOnly": false,
     "standingsVerified": true,
-    "standingsStatus": "source_checked_rsssf",
+    "standingsStatus": "cross_checked_RSSSF_LEQUIPE_DFB_with_corrections",
     "europeanQualificationVerified": true,
     "europeanQualificationReview": "2017-18 actual participants Monaco PSG UCL, Nice UCL qualifier then UEL, Lyon Marseille Bordeaux UEL. PSG won both 2017 domestic cups; Bordeaux's sixth place obtained European ticket.",
     "standingsSource": "https://www.rsssf.org/tablesf/fran2017.html",
@@ -147,7 +147,36 @@
       "Brice Samba backup GK had 0 league appearances, tier null evidence_pending.",
       "Nice UCL qualifiers and Europa League both actually played, primary qualifier UCL.",
       "UNFP 2017 player Cavani, goalkeeper Subašić, young player Mbappé, XI used as contemporary independent qualitative evidence."
-    ]
+    ],
+    "standingsCorrections": {
+      "reviewedOn": "2026-11-11",
+      "changes": [
+        {
+          "club": "lyon",
+          "oldGF": 80,
+          "oldGA": 48,
+          "oldGD": 32,
+          "newGF": 77,
+          "newGA": 48,
+          "newGD": 29
+        },
+        {
+          "club": "bastia",
+          "oldGF": 29,
+          "oldGA": 57,
+          "oldGD": -28,
+          "newGF": 29,
+          "newGA": 54,
+          "newGD": -25
+        }
+      ],
+      "sources": [
+        "https://www.rsssf.org/tablesf/fran2017.html",
+        "https://www.lequipe.fr/Football/ligue-1/saison-2016-2017/page-classement-equipes/general",
+        "https://datencenter.dfb.de/en/data-center/ligue-1/2016-2017/current"
+      ],
+      "reason": "2017 Lyon-Bastia administrative win recorded as 0-0 official, not 3-0; original imported standings erroneously awarded Lyon +3 goals/Bastia +3 conceded without changing points."
+    }
   },
   "clubs": [
     {
@@ -359,9 +388,9 @@
       "wins": 21,
       "draws": 4,
       "losses": 13,
-      "goalsFor": 80,
+      "goalsFor": 77,
       "goalsAgainst": 48,
-      "gd": 32,
+      "gd": 29,
       "points": 67,
       "competition": "UEL",
       "outcome": "retained"
@@ -584,8 +613,8 @@
       "draws": 10,
       "losses": 20,
       "goalsFor": 29,
-      "goalsAgainst": 57,
-      "gd": -28,
+      "goalsAgainst": 54,
+      "gd": -25,
       "points": 34,
       "competition": null,
       "outcome": "relegated"
