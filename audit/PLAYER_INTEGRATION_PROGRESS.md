@@ -1,3 +1,12 @@
+## 2026-11-11 — Ligue 1 2010-11 117-PLAYER WHOLE-SEASON NEW DRAFT (USER UNAPPROVED)
+- 2011-12 UEFA actual entrants 6 clubs: Lille, Marseille, Lyon (UCL); Paris Saint-Germain, Sochaux, Rennes (UEL). Lille Coupe de France and Marseille Coupe de la Ligue winners both already Champions League.
+- Six direct BDFutbol 2010-11 club lineup pages; 117 candidates = 66 starters + 51 backups across 6 clubs. Rennes completed together with first 5 clubs.
+- S 0, A+ 10, A0 9, A- 19, B+ 24, B0 20, B- 8, C+ 14, C0 6, C- 5, D 0, ungraded 2 (league-zero actual backup GK). World 10; League Top 38 incl World.
+- Full continuous position ranks (all tiered players); 4-2-3-1 proposed Best XI, unapproved. Rod Fanni Rennes first-half appearances not duplicated; Marseille selected as current qualified-club evaluation with more league minutes.
+- Preserved 20-club standings and crests. Three-season independent player checks, match-level positional modal and some DOB independent checks pending. No fabricated goalkeeper negative goal counts, minutes or assists.
+- [Full report](LIGUE1_2010-11_DRAFT_FULL_REPORT.md) / [Production QA record](LIGUE1_2010-11_PRODUCTION_VALIDATION.json) / [Season JSON](../data/ligue1-2010-11.json) / [Structural validator](../scripts/verify-ligue1-2010-11.mjs).
+- Connector preflight structural validation passed. GitHub Actions/Pages public real-browser validation NOT independently confirmed; user approval pending.
+
 ## 2026-11-10 — Ligue 1 2009-10 106-PLAYER NEW DRAFT (USER UNAPPROVED)
 - Eligibility 2010-11 **6 actual French Ligue 1 European teams**: Marseille, Lyon, Auxerre UCL; Lille, Montpellier UEL; Paris Saint-Germain UEL (2010 Coupe de France winners from 13th). Marseille Coupe de la Ligue winners already UCL; fifth Montpellier cascaded; ineligible sixth Bordeaux excluded; Intertoto ended in 2008.
 - Six fresh BDFutbol 2009-10 lineup pages, 106 candidates (66 starters + 40 backups), 10 contiguous positional rankings, 4-3-3 provisional season Best XI. Transfer Garry Bocaly dropped OM, kept Montpellier (785 > 247 league mins).
