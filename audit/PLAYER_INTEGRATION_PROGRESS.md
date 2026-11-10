@@ -1,3 +1,8 @@
+## 2026-11-11 — Ligue 1 2015-16 role and identity independent corrections
+- Confirmed Wallyson Mallmann birth 1994-02-16 via FBref and zerozero; date has two independent references. All 117 DOB slots now filled, most still require distinct second-source audit.
+- Lille 4-3-3 corroborated by Lille OSC historical club retrospective: Benzia ST XI, Éder ST backup (valuable mid-season late arrival), Lenny Nangis LW backup; dropped Junior Tallo from maximum one backup ST. Count still 117; other teams and earlier seasons not changed.
+- Structural/Pages verification rerun required due current-data changes. [Source](https://losc.fr/actualites-foot-lille/losc-bordeaux-en-cinq-matchs-m%C3%A9morables).
+
 ## 2026-11-11 — Ligue 1 2015-16 6-club 117-player DRAFT (USER UNAPPROVED)
 - Eligible 2016-17 UEFA actual clubs: PSG, Lyon, Monaco (UCL), Nice, Lille, Saint-Étienne (UEL). PSG won both domestic cups and cascade extended to sixth Saint-Étienne; Marseille excluded.
 - 117 newly selected individual candidates, 66 starters / 51 backups. 116 rated, 1 evidence_pending. No duplicate names across six teams.
