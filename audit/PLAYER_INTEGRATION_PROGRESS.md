@@ -4,7 +4,7 @@
 - Tiers S:0 A+:12 A0:8 A-:15 B+:18 B0:20 B-:12 C+:8 C0:1 C-:0 D:0, World Class 12, League Top Class 35. Proposed 4-2-3-1 XI: GK Hugo Lloris; CB Vitorino Hilton; CB Souleymane Diawara; LB Taye Taiwo; RB Laurent Bonnart; DM Jérémy Toulalan; CM Benoît Cheyrou; CAM Yoann Gourcuff; LW Michel Bastos; RW Ludovic Obraniak; ST André-Pierre Gignac.
 - Missing DOB 76; 2006-07 previous DRAFT links 43; 2007-08 links 42. Historical three-season independent verification incomplete.
 - [Report](LIGUE1_2008-09_DRAFT_FULL_REPORT.md) · [Raw transcription](LIGUE1_2008-09_RAW_ROSTER_TRANSCRIPTION.txt) · [Validation](LIGUE1_2008-09_PRODUCTION_VALIDATION.json) · [JSON](../data/ligue1-2008-09.json).
-- User unapproved DRAFT; no next season without instruction. CI and public Pages must be checked after writing.
+- User unapproved DRAFT; no next season without instruction. [CI PASS 42817059404](https://github.com/wjdduddlf112/footballarch/actions/runs/42817059404) and [Pages SUCCESS 42817058869](https://github.com/wjdduddlf112/footballarch/actions/runs/42817058869). Local and PUBLIC Chromium both checked 94 candidates, 5 clubs, 10 positions, Best XI 11 and modal and filters. Historical independent verification still incomplete.
 
 ## 2026-11-10 — Ligue 1 2007-08 130-player DRAFT, USER UNAPPROVED
 - 2008-09 actual European entrant clubs (7): Lyon, Bordeaux, Marseille (UCL); Nancy, Saint-Étienne, PSG (UEFA Cup); Rennes (2008 Intertoto → UEFA Cup). PSG qualified through League Cup from 16th.

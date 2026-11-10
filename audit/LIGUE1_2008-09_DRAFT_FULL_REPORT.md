@@ -371,3 +371,12 @@ Best XI는 2009 UNFP 팀을 그대로 복사하지 않는다. 해당 선정에 �
 - 2008-09 개별 출전·선발·시간·득점의 두 번째 독립 원자료 확보.
 - 구단별 경기별 실제 주 전술과 선수별 포지션 사용 비중 확인.
 - 선수 티어 및 Best XI는 사용자 미승인 DRAFT로 유지, 다음 시즌 자동 진행 금지.
+
+## I. GitHub Actions 및 실제 Pages 검증 — 2026-11-10 완료 기록
+
+- 선수/포지션 DRAFT 최초 커밋: [36eaa4f184f4f90242b9d4135bbc6df36c30b686](https://github.com/wjdduddlf112/footballarch/commit/36eaa4f184f4f90242b9d4135bbc6df36c30b686).
+- [GitHub Actions 42817059404](https://github.com/wjdduddlf112/footballarch/actions/runs/42817059404): **SUCCESS**. 94명 구조 검사, JavaScript 문법, 로컬 Playwright Chromium 및 실제 공개 GitHub Pages Chromium 전부 PASS.
+- [Pages 배포 42817058869](https://github.com/wjdduddlf112/footballarch/actions/runs/42817058869): **SUCCESS**. 공개 브라우저 확인 이전에 새 JSON(2008-09 · 94명) 배포 감지 대기 성공.
+- Chrome 검사: Overview/Statistics/5개 구단/10개 포지션/94개 후보 행/티어 필터/구단·포지션 복합 필터/초기화/원어명·DOB 상세/Best XI 11명/리그 전체 순위표/Top Class 모두 정상. JavaScript 예외 0건, 시즌 JSON 실패 응답 0건.
+- 역사 검증 별도: 일부 지난 2시즌은 미승인 Archive만 연결했고 76명 DOB null, 대다수 기록은 2008-09 BDFutbol 단일 데이터베이스 출처. **구조·브라우저 PASS는 선수 개인 이력 완전 독립 검증이 아님.**
+- 전원 미승인 DRAFT / Best XI proposed_unapproved; 사용자 승인 없이 다음 시즌으로 이동하지 않음.
