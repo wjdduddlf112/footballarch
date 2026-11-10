@@ -35,7 +35,7 @@ try{
  await page.locator('[data-tab="formation"]').click();
  check(await page.locator(".pitch .slot").count()===11,"Best XI 11 slots");
  await page.locator('[data-tab="table"]').click();
- check((await page.locator("#content").innerText()).includes("Rennes"),"league table");
+ check((await page.locator("#content").innerText()).includes("Monaco"),"league table");
  await page.locator('[data-tab="stats"]').click();
  check((await page.locator("#content").innerText()).includes("Matching Players"),"statistics visible");
  check(errors.length===0,"no JavaScript errors: "+errors.join("; "));
