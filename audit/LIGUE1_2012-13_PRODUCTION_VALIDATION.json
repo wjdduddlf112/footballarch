@@ -1,0 +1,135 @@
+{
+  "league": "Ligue 1",
+  "season": "2012-13",
+  "qualifyingSeason": "2013-14",
+  "checkedAt": "2026-11-11",
+  "userApproval": "DRAFT_UNAPPROVED",
+  "totals": {
+    "clubs": 6,
+    "players": 114,
+    "starters": 66,
+    "backups": 48,
+    "graded": 111,
+    "pending": 3,
+    "worldClass": 8,
+    "leagueTopClass": 34,
+    "perTier": {
+      "S": 1,
+      "A+": 7,
+      "A": 9,
+      "A-": 17,
+      "B+": 36,
+      "B": 30,
+      "B-": 0,
+      "C+": 11,
+      "C": 0,
+      "C-": 0,
+      "D": 0,
+      "unrated": 3
+    },
+    "perClub": {
+      "psg": {
+        "name": "Paris Saint-Germain FC",
+        "players": 20,
+        "starters": 11
+      },
+      "marseille": {
+        "name": "Olympique de Marseille",
+        "players": 19,
+        "starters": 11
+      },
+      "lyon": {
+        "name": "Olympique Lyonnais",
+        "players": 20,
+        "starters": 11
+      },
+      "nice": {
+        "name": "OGC Nice",
+        "players": 19,
+        "starters": 11
+      },
+      "saintetienne": {
+        "name": "AS Saint-Étienne",
+        "players": 17,
+        "starters": 11
+      },
+      "bordeaux": {
+        "name": "FC Girondins de Bordeaux",
+        "players": 19,
+        "starters": 11
+      }
+    },
+    "byPosition": {
+      "GK": 12,
+      "CB": 18,
+      "LB": 10,
+      "RB": 10,
+      "DM": 11,
+      "CM": 12,
+      "CAM": 8,
+      "LW": 10,
+      "RW": 11,
+      "ST": 12
+    }
+  },
+  "checks": {
+    "independentReadbackStructuralJS": {
+      "status": "PASS",
+      "result": "All 114 players in six clubs, 66 starters, unique identities, 10 contiguous position ranks, XI 11 valid IDs, 3 ungraded GK, tier counts and 20 league table preserved"
+    },
+    "nodeValidatorOnCheckout": {
+      "status": "NOT_CONFIRMED",
+      "path": "scripts/verify-ligue1-2012-13.mjs"
+    },
+    "githubActionWorkflow": {
+      "status": "NOT_CONFIRMED",
+      "path": ".github/workflows/verify-ligue1-2012-13.yml"
+    },
+    "localPlaywrightBrowser": {
+      "status": "NOT_CONFIRMED",
+      "path": "scripts/verify-ligue1-2012-13-browser.mjs"
+    },
+    "publicGitHubPagesBrowser": {
+      "status": "NOT_CONFIRMED",
+      "path": "https://wjdduddlf112.github.io/footballarch/?league=ligue1&season=2012-13"
+    },
+    "publicPagesDeployment": {
+      "status": "NOT_CONFIRMED",
+      "note": "Public JSON direct fetch could not be verified from active web runtime"
+    },
+    "historicalFullIndependent3SeasonPlayerAudit": {
+      "status": "INCOMPLETE",
+      "note": "Previous user-unapproved 2010-11 and 2011-12 archive datasets are contextual, not independent verification"
+    },
+    "majorityPositionMatchLevelAudit": {
+      "status": "INCOMPLETE",
+      "note": "Saint Etienne diamond, Nice wing roles, Lyon Lisandro left usage and Bordeaux three-CB tactical consistency require match-level study"
+    },
+    "playerDOBIndependent2ndSource": {
+      "status": "PARTIAL",
+      "note": "Current Nice and Saint-Etienne birthdate rosters crossreferenced, several other DOB from older drafts"
+    }
+  },
+  "historicalExceptions": [
+    "2013-14 actual UEFA clubs PSG, Marseille, Lyon, Nice, Saint-Etienne, Bordeaux. Lyon UCL qualifying then UEL.",
+    "2012-13 sixth Lille excluded. Saint-Etienne Coupe de la Ligue winners and Bordeaux Coupe de France winners eligible.",
+    "2012-13 Saint-Etienne Aubameyang registered ST, not forcibly a RW, despite possibility wide usage in some matches; match-level majority not fully verified.",
+    "PSG Nenê exited midseason and was kept at LW backup because 2012-13 low appearances. Ibrahimovic 30 goals.",
+    "Lyon Lloris played two league matches prior to departure and not selected as starting goalkeeper. 31-game Vercoutre starter.",
+    "Bordeaux Gouffran moved in January; actual 2012-13 Bordeaux season 20 league matches.",
+    "League-negative goalkeeper BDF goals-conceded not treated as goal scoring, all goalkeeper scorer fields null.",
+    "Bordeaux provisional 3CB and Saint-Etienne provisional narrow diamond not established as mathematically modal match formations.",
+    "Three zero-app backup GKs remain tier null, not artificially downrated.",
+    "2013 UNFP Best XI used corroboratively; Lille Payet ineligible since Lille outside next-season UEFA club list."
+  ],
+  "links": {
+    "sourceRosters": "audit/LIGUE1_2012-13_RAW_ROSTER_TRANSCRIPTION.txt",
+    "report": "audit/LIGUE1_2012-13_DRAFT_FULL_REPORT.md",
+    "data": "data/ligue1-2012-13.json",
+    "scripts": [
+      "scripts/verify-ligue1-2012-13.mjs",
+      "scripts/verify-ligue1-2012-13-browser.mjs"
+    ],
+    "workflow": ".github/workflows/verify-ligue1-2012-13.yml"
+  }
+}
