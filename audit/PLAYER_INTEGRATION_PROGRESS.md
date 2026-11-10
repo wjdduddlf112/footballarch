@@ -1,3 +1,11 @@
+## 2026-11-10 — Ligue 1 2008-09 94-PLAYER DRAFT (USER UNAPPROVED, historical audit partial)
+- 2009-10 five actual top-tier European entrants: Bordeaux, Marseille, Lyon (UCL) and Toulouse, Lille (UEL). 2009 Coupe de France winner Ligue2 Guingamp excluded; Bordeaux Coupe de la Ligue vacancy transferred to Lille; last Intertoto 2008.
+- Five fresh BDFutbol 2008-09 complete team lineup pages, 94 candidates, 5x11=55 starters, 39 backups, unique primary positions, 10 full position ranks.
+- Tiers S:0 A+:12 A0:8 A-:15 B+:18 B0:20 B-:12 C+:8 C0:1 C-:0 D:0, World Class 12, League Top Class 35. Proposed 4-2-3-1 XI: GK Hugo Lloris; CB Vitorino Hilton; CB Souleymane Diawara; LB Taye Taiwo; RB Laurent Bonnart; DM Jérémy Toulalan; CM Benoît Cheyrou; CAM Yoann Gourcuff; LW Michel Bastos; RW Ludovic Obraniak; ST André-Pierre Gignac.
+- Missing DOB 76; 2006-07 previous DRAFT links 43; 2007-08 links 42. Historical three-season independent verification incomplete.
+- [Report](LIGUE1_2008-09_DRAFT_FULL_REPORT.md) · [Raw transcription](LIGUE1_2008-09_RAW_ROSTER_TRANSCRIPTION.txt) · [Validation](LIGUE1_2008-09_PRODUCTION_VALIDATION.json) · [JSON](../data/ligue1-2008-09.json).
+- User unapproved DRAFT; no next season without instruction. CI and public Pages must be checked after writing.
+
 ## 2026-11-10 — Ligue 1 2007-08 130-player DRAFT, USER UNAPPROVED
 - 2008-09 actual European entrant clubs (7): Lyon, Bordeaux, Marseille (UCL); Nancy, Saint-Étienne, PSG (UEFA Cup); Rennes (2008 Intertoto → UEFA Cup). PSG qualified through League Cup from 16th.
 - New 2007-08 BDFutbol 7 club source transcriptions: 130 players, 77 first XIs (7x11), 53 backups. All positions 1..N ranks.
