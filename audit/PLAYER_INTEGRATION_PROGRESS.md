@@ -4,7 +4,7 @@
 - Tier counts S 0 A+ 8 A0 13 A- 15 B+ 34 B0 17 B- 14 C+ 5 C0 0 C- 0 D 0; World 8, League Top 36 incl World. 2010 UNFP POY Lisandro, GK Lloris, youth Hazard, UNFP XI corroboration.
 - DOB direct independent 2009-10 NFT source 65, missing 36; earlier DRAFT-inherited DOB 5 (not independently verified). Prior year DRAFT links 2007-08=30, 2008-09=36, not full independent three-season.
 - [Full report](LIGUE1_2009-10_DRAFT_FULL_REPORT.md) / [raw source transcription](LIGUE1_2009-10_RAW_ROSTER_TRANSCRIPTION.txt) / [QA record](LIGUE1_2009-10_PRODUCTION_VALIDATION.json) / [season JSON](../data/ligue1-2009-10.json).
-- CI and live deployment status must be verified separately after initial commit. All data user-unapproved, no auto next season.
+- [GitHub Actions 42824143162](https://github.com/wjdduddlf112/footballarch/actions/runs/42824143162) PASS including local/public Chromium; [Pages 42824140375](https://github.com/wjdduddlf112/footballarch/actions/runs/42824140375) SUCCESS. Historic full independent 3-season player verification still incomplete. All data user-unapproved, no auto next season.
 
 ## 2026-11-10 — Ligue 1 2008-09 94-PLAYER DRAFT (USER UNAPPROVED, historical audit partial)
 - 2009-10 five actual top-tier European entrants: Bordeaux, Marseille, Lyon (UCL) and Toulouse, Lille (UEL). 2009 Coupe de France winner Ligue2 Guingamp excluded; Bordeaux Coupe de la Ligue vacancy transferred to Lille; last Intertoto 2008.

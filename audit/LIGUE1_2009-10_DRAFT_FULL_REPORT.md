@@ -404,3 +404,11 @@ Transfers audit: Bocaly appeared for Marseille 4 L1 matches 247 minutes then Mon
 - 2009-10 individual second statistics database and any contradictory BDFutbol source rows (especially PSG old goalkeeper minutes / starts).
 - Match-level season modal club tactics and positional split, especially multi-role M'Bia, Niang, Grichting, Jallet, Yanga-Mbiwa.
 - All player tiers, ranks and XI are DRAFT awaiting user review; prior season approvals not implied by a 'next' instruction.
+
+## I. GitHub Actions + GitHub Pages 실제 검증 결과 (2026-11-10)
+
+- 초기 평가 커밋 [f3dfa2143480b31453995e955ea4efe9612861ce](https://github.com/wjdduddlf112/footballarch/commit/f3dfa2143480b31453995e955ea4efe9612861ce).
+- [정적 검사·로컬/공개 Chromium 42824143162](https://github.com/wjdduddlf112/footballarch/actions/runs/42824143162) **PASS (첫 실행)**. 6개 구단, 선수 106명, 10개 포지션, 11인 Best XI, Overview/Statistics/All Tiers/Top Class/20팀 순위표, 포지션·구단·티어 복합 필터, 선수 상세창을 검증. JavaScript 예외 0, 시즌 JSON 요청 실패 0.
+- [Pages 빌드·배포 42824140375](https://github.com/wjdduddlf112/footballarch/actions/runs/42824140375) **SUCCESS**. 브라우저 검증 실행 전 공개 Pages가 최신 2009-10 선수 106명 DRAFT JSON을 반환하는 것까지 확인.
+- **역사 검증과 구조/화면 검증 구분:** 2009-10 BDFutbol 원자료 1개 데이터베이스에 의존하는 개별 경기 기록, 지난 2시즌 전원 독립 검증 미완료, DOB 공란 36명과 과거 DRAFT에서 승계한 미승인 5명, 선수별 경기 실제 주 포지션 빈도 확인 미완료. 이 결과는 완전한 역사적 독립 검증 PASS가 아님.
+- 시즌 전체 티어·순위·Best XI 사용자 미승인 DRAFT 상태 유지. 다른 시즌 데이터·기존 순위표·사이트 코드 미수정.
