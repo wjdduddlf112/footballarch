@@ -1,3 +1,12 @@
+## 2026-11-11 — Ligue 1 2012-13 114-PLAYER SIX-CLUB DRAFT (USER UNAPPROVED)
+- 2013-14 actual UEFA participants: PSG, Marseille, Lyon (UCL, Lyon moved to UEL after qualifiers); Nice, Saint-Étienne, Bordeaux (UEL). Saint-Étienne 2013 Coupe de la Ligue winners and Bordeaux 2013 Coupe de France winners; sixth Lille excluded.
+- Six fresh BDFutbol team-by-team 2012-13 starting and substitute records: **114 players, 66 starter slots, 48 reserves**, 10 complete positional league rankings for 111 evaluated players. 3 GK substitutes no domestic league apps have tier null and evidence_pending.
+- Tier S 1, A+ 7, A0 9, A- 17, B+ 36, B0 30, B- 0, C+ 11, C0 0, C- 0, D 0; World Class 8, League Top Class 34 including World.
+- 4-2-3-1 proposed Best XI position-aligned to actual candidate primary roles. Zlatan 30 goals / 2013 UNFP POY. Aubameyang listed ST, not artificially moved to wing to fit XI. Saint-Étienne 4-1-2-1-2 and Bordeaux 3-4-2-1 are role-based historical approximations pending independent match-by-match modal counts.
+- Current 2012-13 six separate original league roster sources captured. Previous 2010-11 and 2011-12 Archive data used only as unapproved context, not as independent 3-season verification. Critical transfer and zero-minute backup exceptions audited; 20-team original standings and crests preserved.
+- [Full 114-player report](LIGUE1_2012-13_DRAFT_FULL_REPORT.md) / [Raw roster](LIGUE1_2012-13_RAW_ROSTER_TRANSCRIPTION.txt) / [Quality & limitation log](LIGUE1_2012-13_PRODUCTION_VALIDATION.json) / [DRAFT JSON](../data/ligue1-2012-13.json).
+- Post-commit independent structural JS reread PASS. Node check, GitHub Actions CI and public/local Chromium/Pages success NOT CONFIRMED; historical three-season full independent verification and player position-frequency review INCOMPLETE. User approval still pending, no auto next season.
+
 ## 2026-11-11 — Ligue 1 2011-12 113-PLAYER WHOLE-SEASON NEW DRAFT (USER UNAPPROVED)
 - Eligible 2012-13 European teams: Montpellier, Paris Saint-Germain, Lille (UCL); Lyon, Bordeaux, Marseille (UEL). Marseille 10th entered via Coupe de la Ligue; sixth Rennes excluded.
 - Six fresh BDFutbol 2011-12 lineup pages, 113 candidates (66 starting slots and 47 backups), 10 contiguous positional rankings, proposed 4-2-3-1 Best XI, all DRAFT.
