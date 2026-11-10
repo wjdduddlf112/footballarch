@@ -405,3 +405,9 @@ Source: https://www.unfp.org/2018/05/neymar-jr-marque-son-territoire/ .
 5. Only six 2018-19 actual participants. Awards from players at **non-European qualified clubs** do not override eligibility (for example Benjamin Lecomte/Angers Toko-Ekambi are excluded).
 6. Every rating and Best XI is explicitly **DRAFT**, not published as final user-approved historical judgment.
 7. Local Chromium and public GitHub Pages tests are tracked independently in [production validation](LIGUE1_2017-18_PRODUCTION_VALIDATION.json). A committed JSON file alone is not proof of a deployed browser PASS.
+
+## H. GitHub technical validation — completed
+
+[Workflow run #42887127606](https://github.com/wjdduddlf112/footballarch/actions/runs/42887127606) **SUCCESS**. Node data structure (110 unique players, 66 XI + 44 backups, 10 ranked positions, Best XI 11, DRAFT), JS source syntax, local Chromium interactive page, public Pages published 110-player data, and public Chromium browser all passed. An earlier run #42886592854 failed only on the browser test's erroneous league table substring "Rennes" (the displayed original club is "Stade Rennais"); changed the assertion to "Monaco" and reran. No historical ratings or player data were changed by the test fix.
+
+Historical identity, three-season individual-stat independent checks and match-by-match principal positional role audits remain pending. Automated technical PASS is not user approval.
