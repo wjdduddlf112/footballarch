@@ -79,11 +79,11 @@
     "tenRankSequences": true,
     "bestXI11AndPosition": true,
     "DRAFT": true,
-    "githubReadback": false,
-    "nodeStructural": "not_executed",
-    "localBrowser": "not_executed",
-    "publicPagesJSON": "not_confirmed",
-    "publicBrowser": "not_executed"
+    "githubReadback": true,
+    "nodeStructural": "PASS previous Github Actions run #42883915210; latest corrected standings rerun #42884069836 pending",
+    "localBrowser": "PASS previous GitHub Actions run #42883915210; latest rerun pending",
+    "publicPagesJSON": "PASS previous GitHub Actions run #42883915210; latest standings-corrected version rerun pending",
+    "publicBrowser": "PASS previous GitHub Actions run #42883915210; latest rerun pending"
   },
   "warnings": [
     "Current-source BDFutbol per-stat independent validation pending; no invented goal assists",
@@ -91,5 +91,86 @@
     "Some exact tactical positions not independently match-counted",
     "GK zero league appearance evidence pending",
     "Club standings preserved; no user approval."
-  ]
+  ],
+  "auditReadback": {
+    "players": 117,
+    "starters": 66,
+    "backups": 51,
+    "uniqueIDs": 117,
+    "uniquePeople": 117,
+    "graded": 116,
+    "pending": [
+      "Brice Samba"
+    ],
+    "bestXI": 11,
+    "allRanksContinuous": true,
+    "worldClass": 15,
+    "leagueTopClass": 41,
+    "lyon": {
+      "rank": 4,
+      "club": "lyon",
+      "played": 38,
+      "wins": 21,
+      "draws": 4,
+      "losses": 13,
+      "goalsFor": 77,
+      "goalsAgainst": 48,
+      "gd": 29,
+      "points": 67,
+      "competition": "UEL",
+      "outcome": "retained"
+    },
+    "bastia": {
+      "rank": 20,
+      "club": "bastia",
+      "played": 38,
+      "wins": 8,
+      "draws": 10,
+      "losses": 20,
+      "goalsFor": 29,
+      "goalsAgainst": 54,
+      "gd": -25,
+      "points": 34,
+      "competition": null,
+      "outcome": "relegated"
+    }
+  },
+  "standingsCorrections": {
+    "reviewedOn": "2026-11-11",
+    "changes": [
+      {
+        "club": "lyon",
+        "oldGF": 80,
+        "oldGA": 48,
+        "oldGD": 32,
+        "newGF": 77,
+        "newGA": 48,
+        "newGD": 29
+      },
+      {
+        "club": "bastia",
+        "oldGF": 29,
+        "oldGA": 57,
+        "oldGD": -28,
+        "newGF": 29,
+        "newGA": 54,
+        "newGD": -25
+      }
+    ],
+    "sources": [
+      "https://www.rsssf.org/tablesf/fran2017.html",
+      "https://www.lequipe.fr/Football/ligue-1/saison-2016-2017/page-classement-equipes/general",
+      "https://datencenter.dfb.de/en/data-center/ligue-1/2016-2017/current"
+    ],
+    "reason": "2017 Lyon-Bastia administrative win recorded as 0-0 official, not 3-0; original imported standings erroneously awarded Lyon +3 goals/Bastia +3 conceded without changing points."
+  },
+  "githubActions": {
+    "previousPassedRun": 42883915210,
+    "latestRun": 42884069836,
+    "latestStateAtReview": "in_progress",
+    "urls": [
+      "https://github.com/wjdduddlf112/footballarch/actions/runs/42883915210",
+      "https://github.com/wjdduddlf112/footballarch/actions/runs/42884069836"
+    ]
+  }
 }
