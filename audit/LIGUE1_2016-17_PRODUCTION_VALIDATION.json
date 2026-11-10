@@ -80,10 +80,10 @@
     "bestXI11AndPosition": true,
     "DRAFT": true,
     "githubReadback": true,
-    "nodeStructural": "PASS previous Github Actions run #42883915210; latest corrected standings rerun #42884069836 pending",
-    "localBrowser": "PASS previous GitHub Actions run #42883915210; latest rerun pending",
-    "publicPagesJSON": "PASS previous GitHub Actions run #42883915210; latest standings-corrected version rerun pending",
-    "publicBrowser": "PASS previous GitHub Actions run #42883915210; latest rerun pending"
+    "nodeStructural": "PASS GitHub Actions #42884069836 after 2016-17 standings correction",
+    "localBrowser": "PASS GitHub Actions #42884069836 Playwright Chromium local",
+    "publicPagesJSON": "PASS updated 117-player 2016-17 JSON deployed and read by Actions #42884069836",
+    "publicBrowser": "PASS GitHub Actions #42884069836 public Pages Playwright browser"
   },
   "warnings": [
     "Current-source BDFutbol per-stat independent validation pending; no invented goal assists",
@@ -167,10 +167,20 @@
   "githubActions": {
     "previousPassedRun": 42883915210,
     "latestRun": 42884069836,
-    "latestStateAtReview": "in_progress",
+    "latestStateAtReview": "completed_success",
     "urls": [
       "https://github.com/wjdduddlf112/footballarch/actions/runs/42883915210",
       "https://github.com/wjdduddlf112/footballarch/actions/runs/42884069836"
+    ],
+    "latestRunConclusion": "success",
+    "latestRunStepsPassed": [
+      "Validate player and season JSON",
+      "Check application JS syntax",
+      "Install Chromium",
+      "Start local HTTP server",
+      "Check local browser",
+      "Wait for public Pages updated JSON",
+      "Check public browser"
     ]
   }
 }
