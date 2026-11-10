@@ -1,3 +1,10 @@
+## 2026-11-11 — Ligue 1 2014-15 114-PLAYER SIX-CLUB DRAFT (USER UNAPPROVED)
+- Six 2015-16 actual UEFA entrants: PSG, Lyon, Monaco (UCL qualifiers; Monaco then UEL), Marseille, Saint-Étienne, Bordeaux (UEL). PSG domestic cup double cascaded slots to sixth Bordeaux.
+- Fresh six-team 2014-15 BDFutbol lineups/substitution records; 114 candidates, 66 starter slots, 48 positional backups. Monaco–Marseille midseason Ocampos appears in each eligible club with separate minutes and entries; club-scoped IDs, flag cross-club duplication for manual policy review.
+- Tiers {"A0":8,"C+":4,"A+":10,"A-":25,"B0":22,"B+":28,"S":2,"null":3,"B-":9,"C0":1,"C-":2}; World 12, League Top 45. Ten contiguous ranked positions excluding evidence-pending unused backup keepers. Best XI 4-2-3-1 DRAFT.
+- Current source independently recorded for each team from BDFutbol. Prior two years largely unapproved Archive context; birth dates and actual majority tactical positions not fully second-source audited. No local/public browser or Pages status asserted.
+- [Full report](LIGUE1_2014-15_DRAFT_FULL_REPORT.md) / [Raw roster](LIGUE1_2014-15_RAW_ROSTER_TRANSCRIPTION.txt) / [Validation](LIGUE1_2014-15_PRODUCTION_VALIDATION.json) / [Season JSON](../data/ligue1-2014-15.json).
+
 ## 2026-11-11 — Ligue 1 2013-14 SIX-CLUB 113-PLAYER DRAFT (USER UNAPPROVED)
 - 2014-15 actual UEFA qualified Ligue1 clubs: Paris Saint-Germain, Monaco, Lille (UCL); Saint-Etienne, Lyon, Guingamp (UEL). Guingamp Coupe de France winner from league 16th; Marseille 6th excluded. PSG Coupe de la Ligue already Champions League, Lyon 5th UEFA qualified.
 - Six 2013-14 direct club season BDFutbol lineup pages, Guingamp additional FBref and Eurofotbal substitute source; 113 players = 66 starters + 47 role/position backups. 10 continuous rank lists across 111 graded candidates. No repeated person within qualified clubs. Exactly one backup maximum per position, and exactly two CB starter slots each.
