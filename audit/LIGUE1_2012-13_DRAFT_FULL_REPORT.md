@@ -371,11 +371,11 @@ DOB/source crosscheck: https://www.bdfutbol.com/en/t/t2012-134012.html
 - DM: 블레즈 마튀디 / Blaise Matuidi, Paris Saint-Germain FC, A+
 - CM: 마르코 베라티 / Marco Verratti, Paris Saint-Germain FC, A0
 - CAM: 마티외 발뷔에나 / Mathieu Valbuena, Olympique de Marseille, A+
-- LW: 리산드로 로페스 / Lisandro López, Olympique Lyonnais, A-
+- LW: 앙드레 아예우 / André Ayew, Olympique de Marseille, A-
 - RW: 제레미 메네즈 / Jérémy Ménez, Paris Saint-Germain FC, A-
 - ST: 즐라탄 이브라히모비치 / Zlatan Ibrahimović, Paris Saint-Germain FC, S
 
-Aubameyang and Ibrahimović are both actual central-forward primary-position candidates, so no artificial switching to RW merely to fit a second striker. Nice striker Cvitanich also remains ST, with strong A0 rating.
+Aubameyang and Ibrahimović are both actual central-forward primary-position candidates, so no artificial switching to RW merely to fit a second striker. André Ayew (LW rank 1) occupies the left slot over Lisandro López (LW rank 3). Nice striker Cvitanich also remains ST, with strong A0 rating.
 
 ## F. High-tier individual assessment / recency-weighted reasoning
 
