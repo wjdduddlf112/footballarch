@@ -75,10 +75,10 @@
     "yearWindow": true,
     "allBornISO": true,
     "githubReadback": true,
-    "nodeStructural": "not_run",
-    "localBrowser": "not_run",
-    "publicPagesJSON": "not_run",
-    "publicBrowser": "not_run"
+    "nodeStructural": "PASS GitHub Actions #42887127606",
+    "localBrowser": "PASS GitHub Actions #42887127606",
+    "publicPagesJSON": "PASS GitHub Actions #42887127606",
+    "publicBrowser": "PASS GitHub Actions #42887127606"
   },
   "historicalOpen": [
     "Previous 2015-16 and 2016-17 independent individual stats audit incomplete",
@@ -133,9 +133,22 @@
     "userApproval": "draft_unapproved"
   },
   "actions": {
-    "runId": 42886592854,
-    "url": "https://github.com/wjdduddlf112/footballarch/actions/runs/42886592854",
-    "statusAtLastObservation": "in_progress",
-    "historicalReview": "unapproved DRAFT"
+    "runId": 42887127606,
+    "url": "https://github.com/wjdduddlf112/footballarch/actions/runs/42887127606",
+    "conclusion": "success",
+    "verifiedSteps": [
+      "Validate player and season JSON",
+      "Check application JS syntax",
+      "Install Chromium",
+      "Start local HTTP server",
+      "Check local browser",
+      "Wait for public Pages updated JSON",
+      "Check public browser"
+    ],
+    "priorFailure": {
+      "runId": 42886592854,
+      "cause": "Browser assertion searched Rennes but official table displays Stade Rennais; updated assertion to Monaco. Player data unchanged.",
+      "correctedInCommit": "20f8afbba41fb078fe8d7ce48f9b8187fc01a566"
+    }
   }
 }
