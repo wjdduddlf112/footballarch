@@ -405,7 +405,11 @@ World Class (S+A+) **15**. League Top Class (S+A++A0+A-) **41** including World 
 - **알렉상드르 라카제트 / Alexandre Lacazette (ST; Olympique Lyonnais; A+)** — 30경기 28골, 2014-15의 27골과 2015-16의 21골을 잇는 리그 최정상급 득점 지속성.
 - **플로리앙 토뱅 / Florian Thauvin (RW; Olympique de Marseille; A+)** — 38경기 36선발·16골로 마르세유 공격의 우측 창조·마무리 중심; 최근 두 시즌보다 크게 발전한 개인 경기력.
 
-## G. Historical caution, verification, and user-approval boundaries
+## G. Correction to original 2016-17 league table
+
+The previous archive imported **Lyon 80 goals for / +32** and **Bastia 57 goals against / -28**, whereas RSSSF, L’Équipe and DFB all state **Lyon 77 goals for / +29**, **Bastia 54 conceded / -25**. Corrected only those 2016-17 goals fields and GD in the original standings (unchanged ranks, wins, draws, points); 2017 Lyon–Bastia fixture was officially awarded 0-0 instead of simulated 3-0. Sources: https://www.rsssf.org/tablesf/fran2017.html , https://www.lequipe.fr/Football/ligue-1/saison-2016-2017/page-classement-equipes/general , https://datencenter.dfb.de/en/data-center/ligue-1/2016-2017/current .
+
+## H. Historical caution, verification, and user-approval boundaries
 
 - Directly transcribed 2016-17 appearances, starts, minutes and goals from six BDFutbol *domestic Ligue 1* team pages; current year records are one primary source per player and not all independently double-checked. GK goals are null because site G field means goals conceded.
 - Historical name/DOB confirmation cross-referenced with 2016-17 FootballSquads where listed; every displayed date is provisional until independent biographical two-source verification. No missing dates in the DRAFT, but populated != fully independently verified.
@@ -413,3 +417,7 @@ World Class (S+A+) **15**. League Top Class (S+A++A0+A-) **41** including World 
 - Position is an editorial primary 2016-17 role based on team composition and lineups. Some role ambiguous (e.g., Nice Ricardo Pereira RB/RW, Monaco Fabinho DM after prior RB seasons, PSG Di María changing side), so match-level positional majority remains pending.
 - Marseille reserve GK Brice Samba played 0 Ligue 1 matches: `tier: null`, `review: evidence_pending` not an invented low grade.
 - Github Actions Node / local Chromium / public Pages verification statuses appear separately in [the validation record](LIGUE1_2016-17_PRODUCTION_VALIDATION.json). Site acceptance is not itself historical correctness.
+
+## I. Technical validation observation
+
+GitHub Actions 2016-17 workflow run [#42883915210](https://github.com/wjdduddlf112/footballarch/actions/runs/42883915210) PASS: Node structural validation, JS syntax, local Chromium and public Pages JSON/browser. Subsequent correction of Lyon/Bastia standings triggered [#42884069836](https://github.com/wjdduddlf112/footballarch/actions/runs/42884069836); this latest rerun must be checked before claiming corrected standings public browser revalidation. Ratings remain user-unapproved.
