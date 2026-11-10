@@ -1,7 +1,7 @@
 {
   "season": "2014-15",
   "generatedOn": "2026-11-11",
-  "stage": "connector_github_write_not_production_verified",
+  "stage": "github_readback_and_node_local_browser_pass_public_pages_pending",
   "selection": {
     "clubs": 6,
     "players": 113,
@@ -111,10 +111,10 @@
     "onlyUEFAClubIds": true,
     "allNameOriginalAndKorean": true,
     "threeSeasonPeriod": true,
-    "dataReadBackVerified": false,
-    "repositoryNodeScript": "not_run",
-    "localBrowser": "not_run",
-    "publicPagesBrowser": "not_run",
+    "dataReadBackVerified": true,
+    "repositoryNodeScript": "PASS_GithubActions_run_42878478791",
+    "localBrowser": "PASS_GithubActions_Playwright_run_42878478791",
+    "publicPagesBrowser": "not_confirmed_waiting_for_Pages",
     "deployment": "not_confirmed",
     "historicalPositionsMatchByMatch": "not_complete",
     "priorSeasonIndependent": "not_complete",
@@ -135,5 +135,24 @@
     ],
     "representation": "once_in_Monaco_with_other_stint_metadata",
     "separateSource": "https://fbref.com/en/players/a08b974a/Lucas-Ocampos"
-  }
+  },
+  "githubActions": {
+    "runId": 42878478791,
+    "url": "https://github.com/wjdduddlf112/footballarch/actions/runs/42878478791",
+    "statusAtReview": "in_progress",
+    "observedCompletedSteps": [
+      "Validate player and season JSON",
+      "Check application JS syntax",
+      "Check local browser"
+    ],
+    "awaited": [
+      "Wait for public Pages updated JSON",
+      "Check public browser"
+    ]
+  },
+  "historyNotes": [
+    "JSON readback confirmed 113 unique IDs and names, 66 starter slots, 47 backup slots, 11 Best XI, unapproved DRAFT.",
+    "GitHub Actions runner passed structural validation, JS syntax, Chromium local browser filters/all tiers/details/Best XI.",
+    "Public Pages updated JSON and browser result not yet observed."
+  ]
 }
