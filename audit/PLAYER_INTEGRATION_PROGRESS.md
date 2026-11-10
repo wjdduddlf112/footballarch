@@ -1,3 +1,9 @@
+## 2026-11-11 — Ligue 1 2015-16 6-club 117-player DRAFT (USER UNAPPROVED)
+- Eligible 2016-17 UEFA actual clubs: PSG, Lyon, Monaco (UCL), Nice, Lille, Saint-Étienne (UEL). PSG won both domestic cups and cascade extended to sixth Saint-Étienne; Marseille excluded.
+- 117 newly selected individual candidates, 66 starters / 51 backups. 116 rated, 1 evidence_pending. No duplicate names across six teams.
+- Grades {"S":1,"A+":8,"A":8,"A-":20,"B+":31,"B":24,"B-":11,"C+":11,"C":1,"C-":1,"D":0,"unrated":1}; World 9, League Top 37. Best XI 4-2-3-1 proposed only. Previous years largely unapproved Archive context; match-level role and birthdays second-source audit pending.
+- [Full report](LIGUE1_2015-16_DRAFT_FULL_REPORT.md), [raw roster](LIGUE1_2015-16_RAW_ROSTER_TRANSCRIPTION.txt), [validation](LIGUE1_2015-16_PRODUCTION_VALIDATION.json), [JSON](../data/ligue1-2015-16.json).
+
 ## 2026-11-11 — Ligue 1 2014-15 verification progress (run 42878478791)
 - Confirmed GitHub 2014-15 JSON readback: 113 unique persons, 6 valid UEFA entrants, 66 starters, 47 reserves, Best XI 11, DRAFT. **GitHub Actions Node structural and Chromium local browser PASS**; public Pages updated data and browser verification not yet confirmed at observation.
 - [GitHub Actions 2014-15](https://github.com/wjdduddlf112/footballarch/actions/runs/42878478791).
