@@ -1,0 +1,47 @@
+name: Verify Ligue 1 2016-17 DRAFT (structure and browsers)
+on:
+  push:
+    paths:
+      - 'data/ligue1-2016-17.json'
+      - 'scripts/verify-ligue1-2016-17.mjs'
+      - 'scripts/verify-ligue1-2016-17-browser.mjs'
+      - '.github/workflows/verify-ligue1-2016-17.yml'
+  workflow_dispatch:
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate player and season JSON
+        run: node scripts/verify-ligue1-2016-17.mjs
+      - name: Check application JS syntax
+        run: node --check assets/app.js
+      - name: Install Chromium
+        run: |
+          npm install --no-save --no-package-lock playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Start local HTTP server
+        run: |
+          nohup python3 -m http.server 8877 --bind 127.0.0.1 >/tmp/l1-2016-17.log 2>&1 &
+          sleep 3
+      - name: Check local browser
+        env:
+          TARGET_URL: http://127.0.0.1:8877/?league=ligue1&season=2016-17
+        run: node scripts/verify-ligue1-2016-17-browser.mjs
+      - name: Wait for public Pages updated JSON
+        run: |
+          for attempt in $(seq 1 36); do
+            if curl -fsSL --max-time 20 -H 'Cache-Control: no-cache' "https://wjdduddlf112.github.io/footballarch/data/ligue1-2016-17.json?v=2016-17" |
+              node -e 'let s="";process.stdin.on("data",c=>s+=c);process.stdin.on("end",()=>{try{const d=JSON.parse(s);process.exit(d.meta?.status==="draft"&&d.players?.length===117?0:1)}catch(e){process.exit(1)}})'; then
+              echo "Public Pages serving 117-player 2016-17 DRAFT"; exit 0
+            fi
+            sleep 10
+          done
+          echo "Public Pages DRAFT deployment not confirmed"; exit 1
+      - name: Check public browser
+        env:
+          TARGET_URL: https://wjdduddlf112.github.io/footballarch/?league=ligue1&season=2016-17
+        run: node scripts/verify-ligue1-2016-17-browser.mjs
