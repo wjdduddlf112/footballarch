@@ -1,3 +1,7 @@
+## 2026-11-11 — Ligue 1 2014-15 verification progress (run 42878478791)
+- Confirmed GitHub 2014-15 JSON readback: 113 unique persons, 6 valid UEFA entrants, 66 starters, 47 reserves, Best XI 11, DRAFT. **GitHub Actions Node structural and Chromium local browser PASS**; public Pages updated data and browser verification not yet confirmed at observation.
+- [GitHub Actions 2014-15](https://github.com/wjdduddlf112/footballarch/actions/runs/42878478791).
+
 ## 2026-11-11 — 2014-15 Ligue 1 DRAFT correction / duplication fix
 - Reduced 114 club-scoped entries to **113 distinct players** (66 starting places + 47 backups), 110 rated and 3 GK evidence_pending, by representing the Monaco/Marseille Ocampos winter transfer as one position-ranked Monaco player with Marseille stint metadata. No other season modified.
 - Corrected André Poko birth date to **1993-03-07** after crosscheck of BDFutbol Bordeaux season squad page; Monaco actual UCL/UEL pathway kept in qualification notes while primary `competition` is UCL.
