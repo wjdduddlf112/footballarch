@@ -410,6 +410,6 @@ Lacazette's 27 league goals and 2015 UNFP POY place him above Ibrahimović in th
 4. André Poko's birth date was corrected to **1993-03-07** from BDFutbol's 2014-15 Bordeaux squad page. The other dates are not all double-verified.
 5. Three reserve goalkeepers had zero league appearances and are included as role-specific backup DRAFT candidates with `tier:null` and `review:evidence_pending`. Their entry is **not confirmed as a league-appearance-based player candidate**.
 6. Provisional tactical shape and individual role positions remain pending a match-by-match majority-position audit. Ratings are qualitative editorial assessments, not automated ordinal metrics.
-7. The independent code-based structural checks and real browser rendering require separate execution; this report must not be described as a verified Pages deployment.
+7. GitHub Actions workflow [run 42878478791](https://github.com/wjdduddlf112/footballarch/actions/runs/42878478791) independently passed **Node structural validation, JS syntax check, and Playwright local Chromium browser** for the 113-player DRAFT. At report review, public GitHub Pages updated JSON and public browser verification are **still pending**; the GitHub commit is not proof of Pages deployment.
 
 Sources: https://www.rsssf.org/tablesf/fran2015.html ; https://www.uefa.com/uefaeuropaleague/history/seasons/2016/clubs/ ; https://www.lequipe.fr/Football/Actualites/Trophees-unfp-l-equipe-type-de-ligue-1-de-la-saison/559438 ; https://www.unfp.org/wp-content/uploads/2016/03/pf2015-2.pdf .
