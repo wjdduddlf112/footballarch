@@ -420,4 +420,4 @@ The previous archive imported **Lyon 80 goals for / +32** and **Bastia 57 goals 
 
 ## I. Technical validation observation
 
-GitHub Actions 2016-17 workflow run [#42883915210](https://github.com/wjdduddlf112/footballarch/actions/runs/42883915210) PASS: Node structural validation, JS syntax, local Chromium and public Pages JSON/browser. Subsequent correction of Lyon/Bastia standings triggered [#42884069836](https://github.com/wjdduddlf112/footballarch/actions/runs/42884069836); this latest rerun must be checked before claiming corrected standings public browser revalidation. Ratings remain user-unapproved.
+GitHub Actions 2016-17 workflow run [#42883915210](https://github.com/wjdduddlf112/footballarch/actions/runs/42883915210) PASS: Node structural validation, JS syntax, local Chromium and public Pages JSON/browser. Subsequent correction of Lyon/Bastia standings was also validated with **[GitHub Actions #42884069836](https://github.com/wjdduddlf112/footballarch/actions/runs/42884069836): SUCCESS**. Structural Node, local Chromium, updated public 117-player JSON and Playwright public website all PASS. Ratings remain user-unapproved.
