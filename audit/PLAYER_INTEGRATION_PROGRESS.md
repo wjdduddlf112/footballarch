@@ -1,3 +1,10 @@
+## 2026-11-11 — Ligue 1 2017-18 FINAL TECHNICAL VALIDATION (USER UNAPPROVED)
+- [GitHub Actions #42887127606](https://github.com/wjdduddlf112/footballarch/actions/runs/42887127606) **SUCCESS**: Node structural, app syntax, Playwright local browser, updated Pages 110-player JSON and Playwright public browser all passed.
+- Exactly **110 distinct players**, 66 starter slots, 44 eligible backups; 10 contiguous rank lists and 11 Best XI; grades 2 S, 15 A+, 7 A0, 16 A-, 32 B+, 26 B0, 5 B-, 6 C+, 0 C0, 1 C-, no D; World Class 17, League Top Class 40 (incl. World).
+- First workflow #42886592854 failed on an incorrect browser assertion "Rennes" instead of original "Stade Rennais" for league table (fixed to known "Monaco"); final run all checks green. No roster/rating changes from the assertion fix.
+- Previous two years and primary positions not independently comprehensively confirmed. DRAFT unapproved, no automatic next season.
+- [Full report](LIGUE1_2017-18_DRAFT_FULL_REPORT.md) / [Raw roster](LIGUE1_2017-18_RAW_ROSTER_TRANSCRIPTION.txt) / [Validation](LIGUE1_2017-18_PRODUCTION_VALIDATION.json) / [Season JSON](../data/ligue1-2017-18.json).
+
 ## 2026-11-11 — Ligue 1 2017-18 SIX-CLUB 110-PLAYER DRAFT (USER UNAPPROVED)
 - Actual 2018-19 UEFA entrants PSG Monaco Lyon UCL; Marseille Rennes Bordeaux UEL. French domestic cup double PSG and sixth Bordeaux participation checked vs Reuters/RSSSF.
 - **110 separate players**, 66 XI + 44 up-to-one-per-position reserves, all 110 given provisional tiers, 10 continuous positional rank lists; 11 Best XI 4-2-3-1, 17 World Class (S+A+), 40 League Top Class (S+A++A0+A- inclusive). All 110 dates populated (second-source identity audit incomplete). GitHub 2017-18 DRAFT readback verified.
