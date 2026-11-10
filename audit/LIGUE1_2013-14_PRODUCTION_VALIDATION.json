@@ -1,0 +1,124 @@
+{
+  "league": "Ligue 1",
+  "season": "2013-14",
+  "qualifyingSeason": "2014-15",
+  "reviewDate": "2026-11-11",
+  "approval": "DRAFT_UNAPPROVED",
+  "currentRosters": 6,
+  "players": 113,
+  "starterSlots": 66,
+  "backupSlots": 47,
+  "graded": 111,
+  "unrated": 2,
+  "worldClass": 14,
+  "leagueTopClass": 36,
+  "perTier": {
+    "S": 1,
+    "A+": 13,
+    "A": 2,
+    "A-": 20,
+    "B+": 33,
+    "B": 30,
+    "B-": 2,
+    "C+": 9,
+    "C": 0,
+    "C-": 1,
+    "D": 0,
+    "unrated": 2
+  },
+  "perClub": {
+    "psg": {
+      "players": 18,
+      "starters": 11
+    },
+    "monaco": {
+      "players": 19,
+      "starters": 11
+    },
+    "lille": {
+      "players": 18,
+      "starters": 11
+    },
+    "saintetienne": {
+      "players": 20,
+      "starters": 11
+    },
+    "lyon": {
+      "players": 19,
+      "starters": 11
+    },
+    "guingamp": {
+      "players": 19,
+      "starters": 11
+    }
+  },
+  "perPosition": {
+    "GK": 12,
+    "CB": 18,
+    "LB": 12,
+    "RB": 10,
+    "DM": 10,
+    "CM": 14,
+    "CAM": 6,
+    "LW": 8,
+    "RW": 9,
+    "ST": 14
+  },
+  "checks": {
+    "postCommitGitHubReadbackStructural": {
+      "status": "PASS",
+      "issues": []
+    },
+    "nodeOnRealCheckout": {
+      "status": "NOT_CONFIRMED"
+    },
+    "githubActions": {
+      "status": "NOT_CONFIRMED",
+      "workflow": ".github/workflows/verify-ligue1-2013-14.yml"
+    },
+    "localPlaywrightChromium": {
+      "status": "NOT_CONFIRMED"
+    },
+    "publicPagesChromium": {
+      "status": "NOT_CONFIRMED"
+    },
+    "publishedJSONDirectWeb": {
+      "status": "UNAVAILABLE",
+      "note": "Web tool unable to fetch target GitHub Pages JSON, cannot claim deployed"
+    },
+    "historicalIndependentThreeSeasons": {
+      "status": "INCOMPLETE",
+      "note": "Two preceding seasons contextual Archive DRAFT links not all independently checked"
+    },
+    "historicalMatchModalFormation": {
+      "status": "INCOMPLETE",
+      "note": "PSG, Monaco, Lille, Saint, Lyon and Guingamp representative shapes are editorial rather than match-by-match modal tallies"
+    },
+    "playerDominantPosition": {
+      "status": "PARTIAL",
+      "note": "Some versatile players and secondary-wing Guingamp assignments require match-by-match check"
+    },
+    "secondSourceDOB": {
+      "status": "PARTIAL",
+      "note": "Selected player DOB from profile/squad memory and sources; many lack independent crosscheck"
+    }
+  },
+  "exceptions": [
+    "2014-15 actual UEFA entrants six from Ligue1, Guingamp French Cup qualified despite 16th. Marseille 6th excluded.",
+    "Guingamp Samassa and N'Dy both 19 first division league apps; starter/backup editorial slot only.",
+    "Guingamp substitution starts unavailable from secondary sources for several players; null rather than guessing.",
+    "Goalkeeper Elana Lille and Moulin Saint-Etienne each league 0 appearances: grade null.",
+    "UNFP 2014 Aurier played Toulouse, ineligible. François Clerc RB tentative choice.",
+    "Other elite eligible candidates Lacazette, Matuidi, Enyeama, Ruffier graded A+ even when omitted from proposed positional XI.",
+    "Monaco Falcao first-half 17 appearances due injury, previous Atletico 2 seasons high; current weighting penalizes availability.",
+    "No other seasons edited, standings original 20 preserved, all data user unapproved."
+  ],
+  "paths": [
+    "data/ligue1-2013-14.json",
+    "audit/LIGUE1_2013-14_RAW_ROSTER_TRANSCRIPTION.txt",
+    "audit/LIGUE1_2013-14_DRAFT_FULL_REPORT.md",
+    "scripts/verify-ligue1-2013-14.mjs",
+    "scripts/verify-ligue1-2013-14-browser.mjs",
+    ".github/workflows/verify-ligue1-2013-14.yml"
+  ]
+}
