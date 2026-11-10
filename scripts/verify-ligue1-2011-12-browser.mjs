@@ -1,0 +1,46 @@
+#!/usr/bin/env node
+import {chromium} from "playwright";
+const url=process.env.TARGET_URL||"http://127.0.0.1:8872/?league=ligue1&season=2011-12";
+const browser=await chromium.launch({headless:true,args:["--no-sandbox"]});
+const page=await browser.newPage({viewport:{width:1440,height:900}});
+const errors=[],failed=[];
+page.on("pageerror",e=>errors.push(e.message));
+page.on("response",r=>{if(r.url().includes("ligue1-2011-12.json")&&r.status()>=400)failed.push(r.status())});
+const check=(yes,name)=>{if(!yes)throw Error(name)};
+try{
+ await page.goto(url,{waitUntil:"domcontentloaded",timeout:60000});
+ await page.waitForFunction(()=>document.querySelector("#stateTag")?.textContent==="DRAFT",{timeout:45000});
+ check((await page.locator("#heading").innerText()).replaceAll("–","-").includes("2011-12"),"season heading");
+ check(await page.locator("#allTiersTab").isVisible(),"All Tiers tab visible");
+ await page.locator('[data-tab="overview"]').click();
+ await page.locator('[data-action="candidates"]').click();
+ check(await page.locator("#candidate-pool tbody tr").count()===113,"113 candidates shown");
+ await page.locator('select[data-filter="position"]').selectOption("GK");
+ check(await page.locator("#candidate-pool tbody tr").count()===12,"GK filter all 12");
+ await page.locator('select[data-filter="club"]').selectOption("lyon");
+ check(await page.locator("#candidate-pool tbody tr").count()===2,"Lyon GK filter");
+ await page.locator("#candidate-pool [data-action='reset']").click();
+ check(await page.locator("#candidate-pool tbody tr").count()===113,"filters reset");
+ await page.locator('[data-tab="overview"]').click();
+ await page.locator("#allTiersTab").click();
+ await page.locator(".tier-directory-head").waitFor({timeout:20000});
+ check(await page.locator(".tier-directory-section").count()===6,"6 qualifying clubs");
+ check(await page.locator(".tier-directory-section tbody tr").count()===113,"all 113 club rows");
+ await page.locator('[data-tier-view="positions"]').click();
+ check(await page.locator(".tier-directory-section").count()===10,"10 positions");
+ check(await page.locator(".tier-directory-section tbody tr").count()===113,"113 positional rows");
+ await page.locator('[data-tier-view="clubs"]').click();
+ await page.locator('[data-player="ligue1-2011-12-lyon-hugolloris"]').first().click();
+ const detail=await page.locator(".dialog").innerText();
+ check(detail.includes("Hugo Lloris")&&detail.includes("1986-12-26"),"player modal DOB and original name");
+ await page.locator('[data-action="close"]').click();
+ await page.locator('[data-tab="formation"]').click();
+ check(await page.locator(".pitch .slot").count()===11,"Best XI has 11 slots");
+ await page.locator('[data-tab="table"]').click();
+ check((await page.locator("#content").innerText()).includes("Montpellier"),"league table");
+ await page.locator('[data-tab="stats"]').click();
+ check((await page.locator("#content").innerText()).includes("Matching Players"),"stats visible");
+ check(errors.length===0,"JS errors: "+errors.join("; "));
+ check(failed.length===0,"Failed player data: "+failed.join(","));
+ console.log(JSON.stringify({status:"PASS",url,expectedPlayers:113,areas:["Overview","Filters","All Tiers","Positions","Player modal","Best XI","League Table","Statistics"]}));
+}finally{await browser.close()}
