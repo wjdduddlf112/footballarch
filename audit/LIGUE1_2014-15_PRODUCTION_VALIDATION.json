@@ -4,9 +4,9 @@
   "stage": "connector_github_write_not_production_verified",
   "selection": {
     "clubs": 6,
-    "players": 114,
+    "players": 113,
     "starters": 66,
-    "backups": 48,
+    "backups": 47,
     "teamStats": {
       "psg": {
         "total": 20,
@@ -24,9 +24,9 @@
         "backups": 8
       },
       "marseille": {
-        "total": 18,
+        "total": 17,
         "starters": 11,
-        "backups": 7
+        "backups": 6
       },
       "saintetienne": {
         "total": 20,
@@ -49,7 +49,7 @@
     "B+": 28,
     "S": 2,
     "null": 3,
-    "B-": 9,
+    "B-": 8,
     "C0": 1,
     "C-": 2
   },
@@ -85,7 +85,7 @@
       "unranked": 0
     },
     "LW": {
-      "ranked": 8,
+      "ranked": 7,
       "unranked": 0
     },
     "RW": {
@@ -99,18 +99,9 @@
   },
   "birthdates": {
     "missing": 0,
-    "partialIndependentCheckRequired": 114
+    "partialIndependentCheckRequired": 113
   },
-  "crossClubNames": [
-    {
-      "name": "lucasocampos",
-      "clubs": [
-        "monaco",
-        "marseille"
-      ],
-      "issue": "same player may have transferred during season; do not conflate club records"
-    }
-  ],
+  "crossClubNames": [],
   "checks": {
     "starters11PerClub": true,
     "uniqueIds": true,
@@ -126,9 +117,23 @@
     "publicPagesBrowser": "not_run",
     "deployment": "not_confirmed",
     "historicalPositionsMatchByMatch": "not_complete",
-    "priorSeasonIndependent": "not_complete"
+    "priorSeasonIndependent": "not_complete",
+    "uniquePersonAcrossClubRecords": true
   },
   "warnings": [
-    "multi-club same-season player records: lucasocampos=monaco/marseille"
-  ]
+    "Three reserve GK with zero Ligue 1 appearances have null tier and evidence_pending (Gorgelin, Samba, Moulin).",
+    "Previous two-season independent per-player source review not complete.",
+    "2014-15 exact positional match-by-match modal counts not complete.",
+    "Some dates have one historical source or previous DRAFT context only; full independent corroboration pending.",
+    "Actual GitHub Pages interactive browser tests not performed; deployment status unverified."
+  ],
+  "transferException": {
+    "player": "Lucas Ocampos",
+    "seasonClubs": [
+      "monaco",
+      "marseille"
+    ],
+    "representation": "once_in_Monaco_with_other_stint_metadata",
+    "separateSource": "https://fbref.com/en/players/a08b974a/Lucas-Ocampos"
+  }
 }
