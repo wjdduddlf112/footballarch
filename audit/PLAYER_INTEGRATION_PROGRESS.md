@@ -1,3 +1,10 @@
+## 2026-11-11 — Ligue 1 2017-18 SIX-CLUB 110-PLAYER DRAFT (USER UNAPPROVED)
+- Actual 2018-19 UEFA entrants PSG Monaco Lyon UCL; Marseille Rennes Bordeaux UEL. French domestic cup double PSG and sixth Bordeaux participation checked vs Reuters/RSSSF.
+- **110 separate players**, 66 XI + 44 up-to-one-per-position reserves, all 110 given provisional tiers, 10 continuous positional rank lists; 11 Best XI 4-2-3-1, 17 World Class (S+A+), 40 League Top Class (S+A++A0+A- inclusive). All 110 dates populated (second-source identity audit incomplete). GitHub 2017-18 DRAFT readback verified.
+- Main current-season data 6 directly inspected BDFutbol Ligue 1 team lineup/substitute pages; previous 2016-17 and 2015-16 Archive DRAFTs linked with lower weight, not independently fully audited. Exact match-by-match main roles and most popular formation unverified.
+- GitHub Actions [#42886592854](https://github.com/wjdduddlf112/footballarch/actions/runs/42886592854) launched for Node structure, JS syntax, Chromium local and public Pages browser; do not mark PASS until confirmed.
+- [Full report](LIGUE1_2017-18_DRAFT_FULL_REPORT.md) / [raw six-team rosters](LIGUE1_2017-18_RAW_ROSTER_TRANSCRIPTION.txt) / [validation](LIGUE1_2017-18_PRODUCTION_VALIDATION.json) / [season JSON](../data/ligue1-2017-18.json).
+
 ## 2026-11-11 — Ligue 1 2016-17 FINAL TECHNICAL VALIDATION (DRAFT, USER UNAPPROVED)
 - Latest [Actions #42884069836](https://github.com/wjdduddlf112/footballarch/actions/runs/42884069836) **SUCCESS after official table correction**: Node structural, app syntax, local Playwright, public Pages 117-player JSON, public Playwright all passed.
 - 117 players, 66 starters + 51 backups, 116 graded, 1 GK pending, 10 contiguous positional rankings, Best XI 11, 6 actual 2017-18 UEFA participants. World 15, League Top 41 incl World. Monaco/PSG UCL, Nice UCL qualifiers→UEL, Lyon/Marseille/Bordeaux UEL.
