@@ -7,7 +7,7 @@ const pos=["GK","CB","LB","RB","DM","CM","CAM","LW","RW","ST"];
 const tiers=["S","A+","A","A-","B+","B","B-","C+","C","C-","D"];
 const errors=[],check=(condition,label)=>{if(!condition)errors.push(label)};
 const norm=s=>String(s||"").normalize("NFKD").replace(/[\u0300-\u036f]/g,"").replace(/[^a-z0-9]/gi,"").toLowerCase();
-check(d.meta.leagueId==="ligue1"&&d.meta.season==="2013-14"&&d.meta.qualifyingSeason==="2013-14","season identifiers");
+check(d.meta.leagueId==="ligue1"&&d.meta.season==="2013-14"&&d.meta.qualifyingSeason==="2014-15","season identifiers");
 check(d.meta.status==="draft"&&!d.meta.standingsOnly&&d.meta.playerIntegration?.state==="draft_unapproved","DRAFT lock");
 check(d.meta.bestXiReview?.status==="proposed_unapproved","Best XI approval lock");
 check(d.standings?.length===20&&d.meta.standingsVerified,"preserve historical standings");
