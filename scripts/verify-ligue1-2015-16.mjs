@@ -44,6 +44,6 @@ for(const t of tiers)check(d.meta.provisionalTierCounts?.[t]===players.filter(p=
 check(d.meta.provisionalTierCounts?.unrated===ungraded.length,"unrated count matches");
 check(d.meta.worldClassCount===players.filter(p=>["S","A+"].includes(p.tier)).length,"World class count");
 check(d.meta.leagueTopClassCount===players.filter(p=>["S","A+","A","A-"].includes(p.tier)).length,"League Top class count");
-check(players.filter(p=>p.born===null).length===1&&players.some(p=>p.nameOriginal==="Wallyson Mallmann"&&p.born===null),"unverified Mallmann DOB flagged");
+check(players.every(p=>/^\d{4}-\d{2}-\d{2}$/.test(p.born||"")),"birth dates populated (independence not established for all)");
 console.log(JSON.stringify({result:errors.length?"FAIL":"PASS",scope:"Structural checks only; historical three-season and match-level positions remain partly unverified.",clubs:6,players:players.length,starters:66,backups:51,graded:players.length-ungraded.length,ungraded:ungraded.length,world:d.meta.worldClassCount,top:d.meta.leagueTopClassCount,errors},null,2));
 if(errors.length)process.exitCode=1;
