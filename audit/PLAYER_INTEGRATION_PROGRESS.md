@@ -1,3 +1,11 @@
+## 2026-11-10 — Ligue 1 2009-10 106-PLAYER NEW DRAFT (USER UNAPPROVED)
+- Eligibility 2010-11 **6 actual French Ligue 1 European teams**: Marseille, Lyon, Auxerre UCL; Lille, Montpellier UEL; Paris Saint-Germain UEL (2010 Coupe de France winners from 13th). Marseille Coupe de la Ligue winners already UCL; fifth Montpellier cascaded; ineligible sixth Bordeaux excluded; Intertoto ended in 2008.
+- Six fresh BDFutbol 2009-10 lineup pages, 106 candidates (66 starters + 40 backups), 10 contiguous positional rankings, 4-3-3 provisional season Best XI. Transfer Garry Bocaly dropped OM, kept Montpellier (785 > 247 league mins).
+- Tier counts S 0 A+ 8 A0 13 A- 15 B+ 34 B0 17 B- 14 C+ 5 C0 0 C- 0 D 0; World 8, League Top 36 incl World. 2010 UNFP POY Lisandro, GK Lloris, youth Hazard, UNFP XI corroboration.
+- DOB direct independent 2009-10 NFT source 65, missing 36; earlier DRAFT-inherited DOB 5 (not independently verified). Prior year DRAFT links 2007-08=30, 2008-09=36, not full independent three-season.
+- [Full report](LIGUE1_2009-10_DRAFT_FULL_REPORT.md) / [raw source transcription](LIGUE1_2009-10_RAW_ROSTER_TRANSCRIPTION.txt) / [QA record](LIGUE1_2009-10_PRODUCTION_VALIDATION.json) / [season JSON](../data/ligue1-2009-10.json).
+- CI and live deployment status must be verified separately after initial commit. All data user-unapproved, no auto next season.
+
 ## 2026-11-10 — Ligue 1 2008-09 94-PLAYER DRAFT (USER UNAPPROVED, historical audit partial)
 - 2009-10 five actual top-tier European entrants: Bordeaux, Marseille, Lyon (UCL) and Toulouse, Lille (UEL). 2009 Coupe de France winner Ligue2 Guingamp excluded; Bordeaux Coupe de la Ligue vacancy transferred to Lille; last Intertoto 2008.
 - Five fresh BDFutbol 2008-09 complete team lineup pages, 94 candidates, 5x11=55 starters, 39 backups, unique primary positions, 10 full position ranks.
