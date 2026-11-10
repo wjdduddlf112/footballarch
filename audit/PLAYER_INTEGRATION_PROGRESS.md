@@ -1,3 +1,13 @@
+## 2026-11-11 — Ligue 1 2013-14 SIX-CLUB 113-PLAYER DRAFT (USER UNAPPROVED)
+- 2014-15 actual UEFA qualified Ligue1 clubs: Paris Saint-Germain, Monaco, Lille (UCL); Saint-Etienne, Lyon, Guingamp (UEL). Guingamp Coupe de France winner from league 16th; Marseille 6th excluded. PSG Coupe de la Ligue already Champions League, Lyon 5th UEFA qualified.
+- Six 2013-14 direct club season BDFutbol lineup pages, Guingamp additional FBref and Eurofotbal substitute source; 113 players = 66 starters + 47 role/position backups. 10 continuous rank lists across 111 graded candidates. No repeated person within qualified clubs. Exactly one backup maximum per position, and exactly two CB starter slots each.
+- Tier S 1, A+ 13, A0 2, A- 20, B+ 33, B0 30, B- 2, C+ 9, C0 0, C- 1, D 0, ungraded 2. World 14; League Top 36 including World.
+- 2014 UNFP POY Ibrahimovic, GK Sirigu, youth Verratti; UNFP XI corroborates Perrin, Kurzawa, Motta, Rodríguez, Cavani, Thiago Silva. Aurier (Toulouse) excluded from Best XI eligible pool; chosen François Clerc RB. Best XI is position-matched 4-2-3-1 proposal.
+- Lille zero-league-app Steeve Elana GK and Saint-Etienne Jessy Moulin GK left tier=null evidence_pending. Guingamp goalkeepers Samassa and N'Dy Assembé split 19 league starts each; one selected representational starter only. Six Guingamp backup source records lack exact starts and use null.
+- 2011-12 and 2012-13 older Archive DRAFTs linked for context only, not full independent historical three-season verification. 2013-14 season most recent priority. 2013-14 formation match-by-match mode and per-player dominant position partly unverified.
+- [Full report](LIGUE1_2013-14_DRAFT_FULL_REPORT.md) / [Raw 113 roster](LIGUE1_2013-14_RAW_ROSTER_TRANSCRIPTION.txt) / [Validation and remaining checks](LIGUE1_2013-14_PRODUCTION_VALIDATION.json) / [Season JSON](../data/ligue1-2013-14.json).
+- GitHub readback structural checks PASS. Node on repository checkout, local/public browser and Pages deployment success not confirmed. User unapproved, no automatic next season.
+
 ## 2026-11-11 — Ligue 1 2012-13 114-PLAYER SIX-CLUB DRAFT (USER UNAPPROVED)
 - 2013-14 actual UEFA participants: PSG, Marseille, Lyon (UCL, Lyon moved to UEL after qualifiers); Nice, Saint-Étienne, Bordeaux (UEL). Saint-Étienne 2013 Coupe de la Ligue winners and Bordeaux 2013 Coupe de France winners; sixth Lille excluded.
 - Six fresh BDFutbol team-by-team 2012-13 starting and substitute records: **114 players, 66 starter slots, 48 reserves**, 10 complete positional league rankings for 111 evaluated players. 3 GK substitutes no domestic league apps have tier null and evidence_pending.
