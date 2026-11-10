@@ -1,3 +1,9 @@
+## 2026-11-11 — Ligue 1 2016-17 initial technical validation and standings historical correction
+- [Actions #42883915210](https://github.com/wjdduddlf112/footballarch/actions/runs/42883915210) **PASS**: structural Node, local browser, updated public 117-player JSON, public browser. Latest correction run [#42884069836](https://github.com/wjdduddlf112/footballarch/actions/runs/42884069836) pending at report observation.
+- GitHub readback: 117 distinct people, 66 starting XI slots, 51 backups, 116 graded, one pending Brice Samba (zero league appearances), 10 continuous ranks, 11 XI, World 15, Top 41.
+- Corrected pre-existing 2016-17 league standings Lyon GF 80→77 GD +32→+29, Bastia GA 57→54 GD -28→-25 based on RSSSF/L'Équipe/DFB. All table points and other seasons untouched.
+- [Full report](LIGUE1_2016-17_DRAFT_FULL_REPORT.md) / [Validation](LIGUE1_2016-17_PRODUCTION_VALIDATION.json) / [2016-17 JSON](../data/ligue1-2016-17.json).
+
 ## 2026-11-11 — Ligue 1 2015-16 FINAL TECHNICAL VALIDATION (USER UNAPPROVED)
 - Main [2015-16 DRAFT JSON](../data/ligue1-2015-16.json) GitHub readback confirmed **117 unique players (66 XI, 51 reserves)**, **116 rated, 1 evidence_pending**, ten continuous ranked positions, **11 Best XI**, six 2016-17 actual UEFA teams, and tier counts; user approval status remains `draft_unapproved`.
 - GitHub Actions [run #42881242499](https://github.com/wjdduddlf112/footballarch/actions/runs/42881242499) **SUCCESS**: Node season structure, assets/app.js syntax, Playwright local browser, public Pages serving updated 117-player JSON, and Playwright **public website browser** all passed.
