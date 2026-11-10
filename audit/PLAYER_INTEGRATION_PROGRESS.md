@@ -1,3 +1,9 @@
+## 2026-11-11 — Ligue 1 2015-16 FINAL TECHNICAL VALIDATION (USER UNAPPROVED)
+- Main [2015-16 DRAFT JSON](../data/ligue1-2015-16.json) GitHub readback confirmed **117 unique players (66 XI, 51 reserves)**, **116 rated, 1 evidence_pending**, ten continuous ranked positions, **11 Best XI**, six 2016-17 actual UEFA teams, and tier counts; user approval status remains `draft_unapproved`.
+- GitHub Actions [run #42881242499](https://github.com/wjdduddlf112/footballarch/actions/runs/42881242499) **SUCCESS**: Node season structure, assets/app.js syntax, Playwright local browser, public Pages serving updated 117-player JSON, and Playwright **public website browser** all passed.
+- All 117 birthdates now populated, but independent biographical double-check for every person not complete. Previous 2013-14/2014-15 player-by-player and match-level main-position historical audit remain incomplete. Historical accuracy is not equated with automated technical validation.
+- [Full report](LIGUE1_2015-16_DRAFT_FULL_REPORT.md) / [Raw rosters](LIGUE1_2015-16_RAW_ROSTER_TRANSCRIPTION.txt) / [Detailed validation](LIGUE1_2015-16_PRODUCTION_VALIDATION.json).
+
 ## 2026-11-11 — Ligue 1 2015-16 role and identity independent corrections
 - Confirmed Wallyson Mallmann birth 1994-02-16 via FBref and zerozero; date has two independent references. All 117 DOB slots now filled, most still require distinct second-source audit.
 - Lille 4-3-3 corroborated by Lille OSC historical club retrospective: Benzia ST XI, Éder ST backup (valuable mid-season late arrival), Lenny Nangis LW backup; dropped Junior Tallo from maximum one backup ST. Count still 117; other teams and earlier seasons not changed.
