@@ -436,3 +436,11 @@ S 0명 / A+ 8명 / A0 11명 / A- 9명 / B+ 47명 / B0 24명 / B- 11명 / C+ 8명
 
 - 추가 출처의 동시대 각 선수 2004-05/2005-06 기록, 구단별 경기별 실제 포지션/포메이션, DOB 추가 검증 필요.
 - 현재 모든 티어와 상대 순위, Best XI는 `draft_unapproved` / `proposed_unapproved`.
+
+## I. 실제 배포·브라우저 테스트 확인 (2026-11-10)
+
+- 첫 GitHub main 통합 커밋: [b0c00e17b42676c80e17e96e0d53fb8315420a8c](https://github.com/wjdduddlf112/footballarch/commit/b0c00e17b42676c80e17e96e0d53fb8315420a8c).
+- [Actions 검증 PASS](https://github.com/wjdduddlf112/footballarch/actions/runs/42779344734): Node 구조 규칙, 웹사이트 JavaScript 문법, Playwright 로컬 Chromium 및 공개 GitHub Pages Chromium 전체 성공.
+- [Pages 빌드·배포 PASS](https://github.com/wjdduddlf112/footballarch/actions/runs/42779342754).
+- 실제 공개 브라우저에서 125명의 전체 후보, 7개 구단, 10개 포지션, Best XI 11명, 20개 구단 순위표, 선수 상세창과 Top Class, JavaScript 오류 0건, 시즌 JSON 요청 실패 0건 확인.
+- 역사적 검증 별도: 2006-07 출전·선발·출전시간 1개 원자료를 확인했지만, 선수 개개인의 다중 독립 자료 및 과거 2개 시즌 완전 검증은 아직 미완료.
