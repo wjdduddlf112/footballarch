@@ -1,0 +1,90 @@
+{
+  "season": "2010-11",
+  "league": "Ligue 1",
+  "updatedAt": "2026-11-11",
+  "approval": "draft_unapproved",
+  "dataPath": "data/ligue1-2010-11.json",
+  "roster": {
+    "clubs": 6,
+    "players": 117,
+    "starters": 66,
+    "backups": 51,
+    "tiered": 115,
+    "evidencePending": 2,
+    "perClub": {
+      "lille": {
+        "players": 19,
+        "starters": 11
+      },
+      "marseille": {
+        "players": 19,
+        "starters": 11
+      },
+      "lyon": {
+        "players": 20,
+        "starters": 11
+      },
+      "psg": {
+        "players": 20,
+        "starters": 11
+      },
+      "sochaux": {
+        "players": 19,
+        "starters": 11
+      },
+      "rennes": {
+        "players": 20,
+        "starters": 11
+      }
+    },
+    "positions": {
+      "GK": 12,
+      "CB": 18,
+      "LB": 11,
+      "RB": 12,
+      "DM": 12,
+      "CM": 14,
+      "CAM": 2,
+      "LW": 10,
+      "RW": 12,
+      "ST": 14
+    }
+  },
+  "tiers": {
+    "S": 0,
+    "A+": 10,
+    "A": 9,
+    "A-": 19,
+    "B+": 24,
+    "B": 20,
+    "B-": 8,
+    "C+": 14,
+    "C": 6,
+    "C-": 5,
+    "D": 0,
+    "unrated": 2
+  },
+  "worldClass": 10,
+  "leagueTopClass": 38,
+  "checks": {
+    "server_preflight_validation": "pass",
+    "independent_second_pass_structure_check": "pass",
+    "node_on_actual_checkout": "not_run_local_environment_has_no_repository_checkout",
+    "githubActions": "not_confirmed",
+    "publicGitHubPagesBrowser": "not_verified",
+    "pagesDeployment": "not_confirmed",
+    "historicThreeSeasonsFullIndependent": "incomplete",
+    "candidateDobIndependentAllPlayers": "incomplete",
+    "playerPositionMajorityMatchLogs": "incomplete",
+    "qualifyingClubs": "six_verified_UEFA_2011_12"
+  },
+  "auditNotes": [
+    "Main file updated preserving prior 20-club standings and crest structures.",
+    "Direct 2010-11 league roster BDFutbol for each of the six clubs.",
+    "Rennes added, Fanni from Rennes excluded to prevent duplicate with Marseille.",
+    "Two league-zero backup goalkeepers retained in squad as evidence_pending, no falsely downgraded tiers.",
+    "Birthdate and dominant positions still require independent full audit.",
+    "Static checks in JS connector passed; CI and actual site browser not confirmed."
+  ],
+  "latestKnownGitCommit": "77d75e0c29566ffbfc40a02a4562e909677a7771"
+}
