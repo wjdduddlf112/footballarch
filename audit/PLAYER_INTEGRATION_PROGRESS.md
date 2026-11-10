@@ -1,3 +1,9 @@
+## 2026-11-11 — 2014-15 Ligue 1 DRAFT correction / duplication fix
+- Reduced 114 club-scoped entries to **113 distinct players** (66 starting places + 47 backups), 110 rated and 3 GK evidence_pending, by representing the Monaco/Marseille Ocampos winter transfer as one position-ranked Monaco player with Marseille stint metadata. No other season modified.
+- Corrected André Poko birth date to **1993-03-07** after crosscheck of BDFutbol Bordeaux season squad page; Monaco actual UCL/UEL pathway kept in qualification notes while primary `competition` is UCL.
+- New tiers {"A0":8,"C+":4,"A+":10,"A-":25,"B0":22,"B+":28,"S":2,"null":3,"B-":8,"C0":1,"C-":2}, World Class 12, League Top Class 45. Exact season position modal and prior two years remain partly unverified. No browser validation claimed.
+- [Report](LIGUE1_2014-15_DRAFT_FULL_REPORT.md) / [Validation](LIGUE1_2014-15_PRODUCTION_VALIDATION.json) / [JSON](../data/ligue1-2014-15.json).
+
 ## 2026-11-11 — Ligue 1 2014-15 114-PLAYER SIX-CLUB DRAFT (USER UNAPPROVED)
 - Six 2015-16 actual UEFA entrants: PSG, Lyon, Monaco (UCL qualifiers; Monaco then UEL), Marseille, Saint-Étienne, Bordeaux (UEL). PSG domestic cup double cascaded slots to sixth Bordeaux.
 - Fresh six-team 2014-15 BDFutbol lineups/substitution records; 114 candidates, 66 starter slots, 48 positional backups. Monaco–Marseille midseason Ocampos appears in each eligible club with separate minutes and entries; club-scoped IDs, flag cross-club duplication for manual policy review.
