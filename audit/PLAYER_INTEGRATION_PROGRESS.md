@@ -1,3 +1,12 @@
+## 2026-11-11 — Ligue 1 2011-12 113-PLAYER WHOLE-SEASON NEW DRAFT (USER UNAPPROVED)
+- Eligible 2012-13 European teams: Montpellier, Paris Saint-Germain, Lille (UCL); Lyon, Bordeaux, Marseille (UEL). Marseille 10th entered via Coupe de la Ligue; sixth Rennes excluded.
+- Six fresh BDFutbol 2011-12 lineup pages, 113 candidates (66 starting slots and 47 backups), 10 contiguous positional rankings, proposed 4-2-3-1 Best XI, all DRAFT.
+- Tier counts S 1 A+ 9 A0 4 A- 22 B+ 32 B0 27 B- 2 C+ 7 C0 3 C- 3 D 0, ungraded 3. World 10, League Top 36 (includes World).
+- Three league-zero backup GKs (Vincent Enyeama, Nicolas Douchez, Gennaro Bracigliano) tier null. 2011-12 winter transfer Ludovic Obraniak deduped into Bordeaux 17 games rather than Lille 12 games.
+- [Full report](LIGUE1_2011-12_DRAFT_FULL_REPORT.md) / [Raw roster](LIGUE1_2011-12_RAW_ROSTER_TRANSCRIPTION.txt) / [QA](LIGUE1_2011-12_PRODUCTION_VALIDATION.json) / [Season JSON](../data/ligue1-2011-12.json).
+- Readback structural integrity PASSED. Validation script and GitHub Actions workflow committed; successful CI, local/public Chromium and Pages deployment NOT confirmed.
+- All 3-year independent player audits, full match-by-match positional role checks and 100% DOB second-source checks remain incomplete. User approval pending. No next season auto started.
+
 ## 2026-11-11 — Ligue 1 2010-11 117-PLAYER WHOLE-SEASON NEW DRAFT (USER UNAPPROVED)
 - 2011-12 UEFA actual entrants 6 clubs: Lille, Marseille, Lyon (UCL); Paris Saint-Germain, Sochaux, Rennes (UEL). Lille Coupe de France and Marseille Coupe de la Ligue winners both already Champions League.
 - Six direct BDFutbol 2010-11 club lineup pages; 117 candidates = 66 starters + 51 backups across 6 clubs. Rennes completed together with first 5 clubs.
