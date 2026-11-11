@@ -392,6 +392,10 @@ Current-season source: https://www.bdfutbol.com/en/t/t2023-244014.html. Secondar
 
 ## F. Individual evaluation evidence (key players)
 
+UNFP official 13 May 2024 awards support Mbappé (player of year), Donnarumma (goalkeeper), Zaïre-Emery (young player), and official XI featuring Donnarumma/Hakimi/Yoro/Marquinhos/Locko/Vitinha/Lees-Melou/Dembélé/Mbappé from eligible teams. Marseille Aubameyang was also in official XI but not eligible under the 2024-25-UEFA-participation club selection rule; his award is not a reason to add an ineligible club. Official awards are corroborating individual form, not automatic tier assignment. Source: https://www.unfp.org/2024/05/5-comme-les-anneaux-olympiques/
+
+
+
 - **잔루이지 돈나룸마 (Gianluigi Donnarumma)** [A+]: 2023-24 리그 25경기, 선발 25회, 2170분. 평가 시즌의 실전 영향력·역할 수행·공수 기여와 2022-23·2021-22의 활약 지속성을 차등 반영. 구단 순위 및 우승 자체의 가산점 없음.
 - **마르키뉴스 (Marquinhos)** [A+]: 2023-24 리그 21경기, 선발 18회, 1539분, 0골. 평가 시즌의 실전 영향력·역할 수행·공수 기여와 2022-23·2021-22의 활약 지속성을 차등 반영. 구단 순위 및 우승 자체의 가산점 없음.
 - **레니 요로 (Leny Yoro)** [A+]: 2023-24 리그 32경기, 선발 30회, 2672분, 2골. 평가 시즌의 실전 영향력·역할 수행·공수 기여와 2022-23·2021-22의 활약 지속성을 차등 반영. 구단 순위 및 우승 자체의 가산점 없음.
@@ -432,7 +436,7 @@ Current-season source: https://www.bdfutbol.com/en/t/t2023-244014.html. Secondar
 - https://www.transfermarkt.com/ogc-nice/kader/verein/417/saison_id/2023/plus/1
 - https://www.transfermarkt.com/olympique-lyon/kader/verein/1041/saison_id/2023/plus/1
 - https://www.footballsquads.co.uk/france/2023-2024/ligue1/lens.htm
-- https://www.unfp.org/2024/05/trophees-unfp-2024-le-palmares-complet/
+- https://www.unfp.org/2024/05/5-comme-les-anneaux-olympiques/
 - https://www.uefa.com/uefachampionsleague/history/seasons/2025/
 - https://www.uefa.com/uefaeuropaleague/history/seasons/2025/
 - https://www.uefa.com/uefaconferenceleague/history/seasons/2025/
