@@ -1,3 +1,10 @@
+## 2026-11-11 — Ligue 1 2022-23 111 PLAYER / 6 CLUB FULL DRAFT (USER UNAPPROVED; CI PENDING)
+- 2023-24 actual UEFA participants PSG, Lens, Marseille (UCL qualification then UEL), Rennes, Lille and Toulouse (Cup winner 13th). Monaco sixth excluded.
+- Total 111 (66 starters +45 backups), 10 complete position ranks, Best XI 4-2-3-1 eleven; World 13 and League Top 47 inclusive; tier counts {"S":2,"A+":11,"A":16,"A-":18,"B+":33,"B":21,"B-":7,"C+":3,"C":0,"C-":0,"D":0,"unrated":0}.
+- Six sourced 2022-23 BDFutbol squad tables and Toulouse official historical roster; previous 2020-21/2021-22 when matched previous USER UNAPPROVED Archive, independent re-audit open; full match role/side and two-source DOB audit pending.
+- Technical CI and Pages results **not yet confirmed at initial commit**. Do not treat static script as full history verification. USER UNAPPROVED DRAFT.
+- [Full report](LIGUE1_2022-23_DRAFT_FULL_REPORT.md) / [raw roster](LIGUE1_2022-23_RAW_ROSTER_TRANSCRIPTION.txt) / [season JSON](../data/ligue1-2022-23.json) / [production audit](LIGUE1_2022-23_PRODUCTION_VALIDATION.json) / [live page](https://wjdduddlf112.github.io/footballarch/?league=ligue1&season=2022-23).
+
 ## 2026-11-11 — Ligue 1 2021-22 FINAL TECHNICAL VALIDATION SUCCESS (USER UNAPPROVED)
 - [GitHub Actions #42955452558](https://github.com/wjdduddlf112/footballarch/actions/runs/42955452558) **SUCCESS**: 110 players / 66 starters / 44 backups, 10 position ranks, 11 Best XI; Node structural, app JS syntax, Playwright local, public 110-player JSON and live public browser PASS.
 - [GitHub Pages #42955451747](https://github.com/wjdduddlf112/footballarch/actions/runs/42955451747) **SUCCESS** for full upload. World 13 / League Top 40 inclusive, league-modal 4-2-3-1.
