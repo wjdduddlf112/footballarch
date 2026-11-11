@@ -443,7 +443,9 @@ UNFP official 13 May 2024 awards support Mbappé (player of year), Donnarumma (g
 
 ## I. Deployment and workflow outcomes
 
-Production record file `audit/LIGUE1_2023-24_PRODUCTION_VALIDATION.json` captures technical and web checks separately. Do not infer success from a saved commit.
+**Technical validation PASS:** [GitHub Actions #42971244980](https://github.com/wjdduddlf112/footballarch/actions/runs/42971244980) completed SUCCESS for 126 candidates, 77 starters, 10 positional ranking groups, app JavaScript syntax, local browser overview/filters/modal/Best XI/tables/stats and public GitHub Pages browser. [GitHub Pages deployment #42971243967](https://github.com/wjdduddlf112/footballarch/actions/runs/42971243967) SUCCESS for the complete report and source-script revision. Technical success is **not** independent 3-season historical or DOB certification. User approval is still absent.
+
+Production record file `audit/LIGUE1_2023-24_PRODUCTION_VALIDATION.json` details separate outcomes.
 - [Player season JSON](../data/ligue1-2023-24.json)
 - [Raw squad transcription](LIGUE1_2023-24_RAW_ROSTER_TRANSCRIPTION.txt)
 - [Live Football Archive 2023-24 page](https://wjdduddlf112.github.io/footballarch/?league=ligue1&season=2023-24)
