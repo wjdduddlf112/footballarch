@@ -1,3 +1,10 @@
+## 2026-11-11 — Ligue 1 2019-20 FINAL TECHNICAL VALIDATION SUCCESS / USER UNAPPROVED
+- [GitHub Actions #42950408412](https://github.com/wjdduddlf112/footballarch/actions/runs/42950408412) **SUCCESS** for revised 2019-20 DRAFT (Rajković starting goalkeeper in Best XI); Node structure, app syntax, Playwright local, updated live Pages JSON 104, public browser all passed.
+- [Pages deployment #42950415217](https://github.com/wjdduddlf112/footballarch/actions/runs/42950415217) **SUCCESS** for follow-on historical report update. Current production can serve 104-player JSON.
+- Exactly 104 candidates, 66 XI, 38 reserves, 10 continuous position rank lists and 11-player 4-3-3 Best XI, World 10 / Top 38 inclusive. No 2020 UNFP awards were held; independent L'Équipe 2020 ratings support Rajković GK first.
+- Three-season prior individual records and main-position match majority / universal DOB second-source checks incomplete; review state remains **draft_unapproved**.
+- [Full report](LIGUE1_2019-20_DRAFT_FULL_REPORT.md), [Original season JSON](../data/ligue1-2019-20.json), [Validation](LIGUE1_2019-20_PRODUCTION_VALIDATION.json), [Public view](https://wjdduddlf112.github.io/footballarch/?league=ligue1&season=2019-20).
+
 ## 2026-11-11 — Ligue 1 2019-20 104-player complete six-club DRAFT, technical validation pending
 - COVID early-season PPG final ranking; actual 2020-21 UCL PSG Marseille Rennes, UEL Lille Nice Reims (Reims actual qualifying rounds). PSG 2020 domestic cup double leads route to 5th/6th.
 - **104 distinct candidates, 66 XI, 38 backups**, 10 continuous position rank lists, proposed XI 4-3-3; World 10, League Top 38 inclusive; grades {"S":2,"A+":8,"A":5,"A-":23,"B+":34,"B":22,"B-":1,"C+":8,"C":1,"C-":0,"D":0,"unrated":0}.
