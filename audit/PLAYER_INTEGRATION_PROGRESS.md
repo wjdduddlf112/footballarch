@@ -1,3 +1,12 @@
+## 2026-11-11 — UCL 2002-03 full match archive, 292-player candidate register (PARTIAL, UNAPPROVED)
+- [Season JSON](../data/ucl-2002-03.json) · [32-club, all 12 group tables, all 292-player audit](UCL_2002-03_DRAFT_REPORT.md) · [public season URL](https://wjdduddlf112.github.io/footballarch/?league=ucl&season=2002-03).
+- Competition: 32 entrants, 16 second-group eligibility clubs, 8 first-stage + 4 second-stage tables, 144 group + 13 knockout = 157 matches; 431 goals. Group wins/draws/losses and goals/points were recomputed against results; 157 dates recorded. Quarter/semi second-leg score orientation corrected in 5 cases and aggregate qualification reconciled.
+- Player source research: 292 registry leads across all 16 eligible clubs, 177 source-identified individual one-match starters (at least 11 per club; extra Nedvěd 2003-05-14 semifinal start); only 179 with a match or scorer evidence flag, remaining entries not certified actual participants. 162 DOBs populated (independent double-source audit incomplete). Actual 16 season-long XI, one backup per real position, dominant left/right role and complete starts/minutes **NOT** certified.
+- UEFA individual awards and 2002-03 scoring statistics cross-checked. 30 individually reasoned provisional DRAFT tiers: S 5, A+ 13, A(=A0) 8, A- 4. World Class 18, European Top Class 30 **within currently graded sample only**. 262 not tiered; all position ranks null and Best XI empty. No promotion for winning the title itself.
+- Existing app UCL winner/runner-up bug for a champion listed as away fixed; index.html JS asset query advanced. Syntactic tests passed, **live browser and Pages deployment unverified**.
+- Main competition file commit `d46eb122f12a6cd388439ea54db2d01961ecbb3a`, correcting legs `dfdd175cbec0c4f52201ccc5d8b3c937eb83be0d`, 30 provisional tier evidence `7cd581e259bc05b54389a555e8323b79e42514e2`, report `55d0110d9ea52b59c2064ec048baa3338b28951f`.
+- Status **DRAFT, PARTIAL, USER UNAPPROVED**: do not claim player research complete or advance 2003-04 automatically.
+
 ## 2026-11-11 — UCL 2001-02 historic match archive and 131-candidate PARTIAL DRAFT
 - [Full audit report](UCL_2001-02_DRAFT_REPORT.md) · [season JSON](../data/ucl-2001-02.json)
 - 32 clubs; 16 second-group evaluation clubs; 8+4 group standings, 144 group and 13 knockout results (157 total); 393 goals. All 12 group tables recalculated from match scores; 157 entered dates. Competition data structural verification succeeded.
