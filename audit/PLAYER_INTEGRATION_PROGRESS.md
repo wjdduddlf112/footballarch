@@ -1,3 +1,10 @@
+## 2026-11-11 — Ligue 1 2024-25 SEVEN UEFA CLUBS 128-PLAYER DRAFT; CI PENDING
+- Actual UEFA 2025-26 entrants PSG Marseille Monaco Nice (UCL qualifiers, then UEL), Lille Lyon (UEL), Strasbourg (UECL). Preserved verified 18-club, 34-match standings.
+- 128 players, 77 starters / 51 backups; all 10 positional ranks; proposed Best XI 4-2-3-1 eleven. World 15 / League Top 62 inclusive; grades {"S":1,"A+":14,"A":24,"A-":23,"B+":37,"B":23,"B-":2,"C+":4,"C":0,"C-":0,"D":0,"unrated":0}.
+- Fresh seven current-year BDFutbol team squad tables; 2022-23 and 2023-24 only linked from previous unapproved drafts when identity matched (15 both), independent past-year, DOB double-source and 34-game main position audits incomplete; modal formation provisional.
+- Technical CI newly added, not yet confirmed in initial report. **USER UNAPPROVED DRAFT.**
+- [Report](LIGUE1_2024-25_DRAFT_FULL_REPORT.md) / [Raw](LIGUE1_2024-25_RAW_ROSTER_TRANSCRIPTION.txt) / [JSON](../data/ligue1-2024-25.json) / [Live](https://wjdduddlf112.github.io/footballarch/?league=ligue1&season=2024-25).
+
 ## 2026-11-11 — Ligue 1 2023-24 FINAL TECHNICAL SUCCESS (USER UNAPPROVED)
 - [GitHub Actions #42971244980](https://github.com/wjdduddlf112/footballarch/actions/runs/42971244980) **SUCCESS**: 126 players, 77 starters and 49 backups, 10 position ranks, 11-player 4-2-3-1 proposed XI; structural, Node syntax, Playwright local & live public browser PASS.
 - [Pages deployment #42971243967](https://github.com/wjdduddlf112/footballarch/actions/runs/42971243967) **SUCCESS** after full report/scripts/workflow. Later source-only metadata correction CI at commit 445792f69459b2bf60adbf4fa973a495b528e046 also PASSED, official UNFP reference now verified.
