@@ -1,3 +1,11 @@
+## 2026-11-11 — Ligue 1 2025-26 7 qualified teams, full 133-player DRAFT (CI pending)
+- Actual 2026-27 UEFA participants PSG Lens Lille Lyon Marseille Rennes Monaco; 18-club standings preserved.
+- 133 players, 77 starting roles + 56 backups; 10 ranked positions and 11-person 4-2-3-1 proposed XI. World 15, League Top 69 inclusive; draft grades {"S":2,"A+":13,"A":26,"A-":28,"B+":41,"B":23,"B-":0,"C+":0,"C":0,"C-":0,"D":0,"unrated":0}.
+- Current league 2025-26 direct BDFutbol (PSG Marseille Monaco) and FotMob (Lens Lille Lyon Rennes) stats. 75/133 unverified starts NULL and 13 missing non-GK goals NULL; no guessed values.
+- Prior 2023-24 & 2024-25 individual records linked from earlier user-unapproved Archive for 27/133 matching both; full independent three-season verification incomplete. Full 34-game dominant role and two-source DOB review incomplete. 4-2-3-1 league mode is provisional.
+- User has NOT approved tiers or XI; CI and public Pages browser checks pending.
+- [Full report](LIGUE1_2025-26_DRAFT_FULL_REPORT.md), [Raw](LIGUE1_2025-26_RAW_ROSTER_TRANSCRIPTION.txt), [JSON](../data/ligue1-2025-26.json), [Live](https://wjdduddlf112.github.io/footballarch/?league=ligue1&season=2025-26).
+
 ## 2026-11-11 — Ligue 1 2024-25 FINAL TECHNICAL PASS (USER UNAPPROVED)
 - [GitHub Actions #42982798054](https://github.com/wjdduddlf112/footballarch/actions/runs/42982798054) **SUCCESS**: source structural verification 128 players / 77 starters / 51 backups, 10 positional consecutive ranks, 11 best XI, JavaScript syntax, Playwright local AND public live browser check, public 128-player JSON.
 - [GitHub Pages deployment #42982798384](https://github.com/wjdduddlf112/footballarch/actions/runs/42982798384) **SUCCESS**. World 15, League Top 62 inclusive, league representative 4-2-3-1 provisional.
