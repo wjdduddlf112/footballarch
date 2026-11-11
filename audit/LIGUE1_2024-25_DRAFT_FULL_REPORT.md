@@ -436,4 +436,4 @@ UNFP 2025 individual awards and Opta 2024-25 team-of-season are supporting conte
 - [Player data](../data/ligue1-2024-25.json)
 - [Raw squad source transcription](LIGUE1_2024-25_RAW_ROSTER_TRANSCRIPTION.txt)
 - [Production validation](LIGUE1_2024-25_PRODUCTION_VALIDATION.json)
-- Until CI and public page checks are reported as succeeded, commits alone do not constitute completed validation.
+- **TECHNICAL CI / LIVE PASS**: [2024-25 GitHub Actions #42982798054](https://github.com/wjdduddlf112/footballarch/actions/runs/42982798054) verified all 128 candidates, 77 starters and 51 backups, consecutive position ranks, 11-player Best XI, application JS syntax, local Playwright browser, publicly deployed 128-player Pages JSON and public Playwright tabs/filters/modal/tables/statistics. [GitHub Pages deployment #42982798384](https://github.com/wjdduddlf112/footballarch/actions/runs/42982798384) **SUCCESS**. Historical three-year independent re-verification, player DOB 2-source, all-game primary position checks and true 2024-25 modal lineup still incomplete. All results **USER UNAPPROVED DRAFT**.
