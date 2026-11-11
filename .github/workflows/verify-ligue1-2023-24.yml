@@ -1,0 +1,47 @@
+name: Verify Ligue 1 2023-24 DRAFT structure, local & public browsers
+on:
+  push:
+    paths:
+      - 'data/ligue1-2023-24.json'
+      - 'scripts/verify-ligue1-2023-24.mjs'
+      - 'scripts/verify-ligue1-2023-24-browser.mjs'
+      - '.github/workflows/verify-ligue1-2023-24.yml'
+  workflow_dispatch:
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate 126-player season schema and website script
+        run: |
+          node scripts/verify-ligue1-2023-24.mjs
+          node --check assets/app.js
+      - name: Install Chromium
+        run: |
+          npm install --no-save --no-package-lock playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Start local HTTP server
+        run: |
+          nohup python3 -m http.server 8878 --bind 127.0.0.1 >/tmp/l1-2023-24.log 2>&1 &
+          sleep 3
+      - name: Check local browser
+        env:
+          TARGET_URL: http://127.0.0.1:8878/?league=ligue1&season=2023-24
+        run: node scripts/verify-ligue1-2023-24-browser.mjs
+      - name: Confirm public Pages has current 126 candidate JSON
+        run: |
+          for attempt in $(seq 1 36); do
+            if curl -fsSL --max-time 20 -H 'Cache-Control: no-cache' "https://wjdduddlf112.github.io/footballarch/data/ligue1-2023-24.json?v=2023-24" |
+              node -e 'let s="";process.stdin.on("data",c=>s+=c);process.stdin.on("end",()=>{try{const d=JSON.parse(s);process.exit(d.meta?.status==="draft"&&d.players?.length===126?0:1)}catch(e){process.exit(1)}})'; then
+              echo "Public Pages serving 126-player DRAFT"; exit 0
+            fi
+            sleep 10
+          done
+          echo "Public deployment not yet established"; exit 1
+      - name: Check live public browser
+        env:
+          TARGET_URL: https://wjdduddlf112.github.io/footballarch/?league=ligue1&season=2023-24
+        run: node scripts/verify-ligue1-2023-24-browser.mjs

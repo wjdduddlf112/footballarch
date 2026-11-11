@@ -1,3 +1,10 @@
+## 2026-11-11 — Ligue 1 2023-24 SEVEN TEAM COMPLETE 126 PLAYER DRAFT (USER UNAPPROVED, CI PENDING)
+- Actual 2024-25 UEFA entrant clubs PSG, Monaco, Brest, Lille (UCL), Nice, Lyon (UEL), Lens (UECL playoff).
+- 126 players, 77 starters plus 49 backups, per-club XI 11, 10 complete positional ranks, 11-person proposed 4-2-3-1 Best XI. World 10, Top 52 inclusive. Counts {"S":1,"A+":9,"A":19,"A-":23,"B+":51,"B":14,"B-":2,"C+":7,"C":0,"C-":0,"D":0,"unrated":0}.
+- Seven source-led BDFutbol 2023-24 squad rosters, 18-club 34-match standings preserved. Older 2021-22/2022-23 records linked only where matched prior user-unapproved Archive, full two-source DOB and per-fixture primary position check pending. 2023-24 actual league modal formation frequency not established (4-2-3-1 proposed representative only).
+- Technical CI and Pages **not yet established**, independent historical claims remain outstanding, all USER UNAPPROVED.
+- [Full report](LIGUE1_2023-24_DRAFT_FULL_REPORT.md) / [raw](LIGUE1_2023-24_RAW_ROSTER_TRANSCRIPTION.txt) / [JSON](../data/ligue1-2023-24.json) / [live](https://wjdduddlf112.github.io/footballarch/?league=ligue1&season=2023-24).
+
 ## 2026-11-11 — Ligue 1 2022-23 111 PLAYER / 6 CLUB FULL DRAFT (USER UNAPPROVED; CI PENDING)
 - 2023-24 actual UEFA participants PSG, Lens, Marseille (UCL qualification then UEL), Rennes, Lille and Toulouse (Cup winner 13th). Monaco sixth excluded.
 - Total 111 (66 starters +45 backups), 10 complete position ranks, Best XI 4-2-3-1 eleven; World 13 and League Top 47 inclusive; tier counts {"S":2,"A+":11,"A":16,"A-":18,"B+":33,"B":21,"B-":7,"C+":3,"C":0,"C-":0,"D":0,"unrated":0}.
