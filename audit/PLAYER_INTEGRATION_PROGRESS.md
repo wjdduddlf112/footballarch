@@ -1,3 +1,10 @@
+## 2026-11-11 — Ligue 1 2021-22: 110-player six-UEFA-club DRAFT, technical CI pending
+- Actual next-season UEFA 2022-23 entrants PSG Marseille Monaco Rennes Nice Nantes; Nantes 9th Coupe de France winner; Strasbourg 6th excluded. Official 2021-22 name FC Nantes corrected in season metadata.
+- 110 players, 66 starters and 44 up-to-one positional backups, 10 contiguous position league rankings, Best XI 4-2-3-1 (11). World 13, League Top 40 including World, tier counts {"S":1,"A+":12,"A":15,"A-":12,"B+":45,"B":24,"B-":0,"C+":1,"C":0,"C-":0,"D":0,"unrated":0}.
+- Current-season stats sourced via 5 BDFutbol club squad tables and Nantes FBref/Statbunker and historical FC Nantes record. UNFP 2022 individual honors independent reference; no team placement grades.
+- Older seasons 2019-20/2020-21 linked from user-unapproved previous Archive when matched; independent full older player-year audit, two-source dates, all 38 games position-frequency audit incomplete. All USER UNAPPROVED DRAFT.
+- [Report](LIGUE1_2021-22_DRAFT_FULL_REPORT.md) / [Raw](LIGUE1_2021-22_RAW_ROSTER_TRANSCRIPTION.txt) / [JSON](../data/ligue1-2021-22.json). CI/public browser not yet confirmed.
+
 ## 2026-11-11 — Ligue 1 2020-21 FINAL TECHNICAL SUCCESS / USER UNAPPROVED
 - [GitHub Actions #42952669674](https://github.com/wjdduddlf112/footballarch/actions/runs/42952669674) **SUCCESS**: structural 113 players / 66 XI / 47 backups, 10 position ranking groups, 11 Best XI; app JS syntax, Playwright local browser, live public Pages 113-player JSON and Playwright public browser all passed.
 - [GitHub Pages deployment #42952669439](https://github.com/wjdduddlf112/footballarch/actions/runs/42952669439) **SUCCESS** on 2020-21 draft upload commit. World 14, League Top 44 inclusive. 4-2-3-1 league modal per Transfermarkt retrospective and Best XI proposal.
