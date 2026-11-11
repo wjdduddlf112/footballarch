@@ -1,3 +1,12 @@
+## 2026-11-11 — UCL 2001-02 historic match archive and 131-candidate PARTIAL DRAFT
+- [Full audit report](UCL_2001-02_DRAFT_REPORT.md) · [season JSON](../data/ucl-2001-02.json)
+- 32 clubs; 16 second-group evaluation clubs; 8+4 group standings, 144 group and 13 knockout results (157 total); 393 goals. All 12 group tables recalculated from match scores; 157 entered dates. Competition data structural verification succeeded.
+- 131 source-associated player candidates from all 16 eligible clubs, including 22 recorded final starting players and 6 substitutes. 27 individual starts/minute records, 26 verified DOBs. Candidate presence alone does not establish season-long starting XI or starter-equivalent backup.
+- 9 unapproved provisional tiers: Zidane S, Kahn S, Roberto Carlos S, Raúl S, Figo A+, Michael Ballack A+, Van Nistelrooy A+, Thierry Henry A+, David Trezeguet A+. Other 122 tiers and all ranks pending; Best XI not selected.
+- Assessment period 1999-00/2000-01/2001-02. All ratings DRAFT; UEFA-only player statistics differentiated from domestic and qualifiers.
+- Group match dates still require independent second-source verification; match venues unavailable except final. Historical player and Pages live browser tests incomplete. Never claim full season complete.
+- Data commit: `0ef2d9b7aeb4ca0a76016850941dfad284e22132`; expanded player evidence commit: `7c799a6273d7f955c1baef48c18dd9300c976fa0`; audit report commit: `f4c33332b34a6ea0ae6baa0089d9e78c1f35f05f`.
+
 ## 2026-11-11 — UEFA Champions League 2000-01 match archive (PLAYER EVALUATION INCOMPLETE)
 - Created `data/ucl-2000-01.json`: 32 first-group participants, 16 second-group evaluated clubs, 12 group tables, 157 match scores (144 group + 13 knockout), 449 match goals. Recomputed all W/D/L/GF/GA/points from recorded scores and matched 12 RSSSF standings.
 - Added 40 traceable player leads across all 16 evaluated clubs: Bayern and Valencia's 22 final starters plus 18 additional appearance/scorer candidates. Six evidence-led provisional tiers (Kahn S, Raúl S, Figo S, Effenberg A+, Mendieta A+, Ayala A+) are DRAFT and user-unapproved; 34 other candidate tiers, positional rankings and season-long XI/reserve determinations remain evidence_pending. 11 Bayern birthdates from DFB, remaining birthdays unknown where not cross-verified. Final lineups alone do not establish representative season-long starters.
