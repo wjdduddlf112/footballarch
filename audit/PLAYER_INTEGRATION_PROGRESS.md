@@ -1,3 +1,11 @@
+## 2026-11-11 — UEFA Champions League 2000-01 match archive (PLAYER EVALUATION INCOMPLETE)
+- Created `data/ucl-2000-01.json`: 32 first-group participants, 16 second-group evaluated clubs, 12 group tables, 157 match scores (144 group + 13 knockout), 449 match goals. Recomputed all W/D/L/GF/GA/points from recorded scores and matched 12 RSSSF standings.
+- Added 33 traceable player leads: Bayern and Valencia's 22 final starters, plus 11 other confirmed scorers. All individual tiers, positional rankings and season-long XI/reserve determinations remain evidence_pending and user-unapproved. 11 Bayern birthdates from DFB, remaining birthdays unknown where not cross-verified. Final lineups alone do not establish representative season-long starters.
+- Match dates for 144 group fixtures remain null; knockout fixture dates and 2001-05-23 final are sourced. No fabricated starts, minutes, assists or unsupported DOBs. `bestXi` stays empty.
+- Updated UCL browser headings/winner to use season JSON rather than 1999-00 hardcoded strings, and added penalty-shootout label. Pending CI and production UI verification.
+- Sources: [UEFA 2000-01 clubs](https://www.uefa.com/uefachampionsleague/history/seasons/2000/clubs/), [UEFA final report](https://www.uefa.com/newsfiles/461370.pdf), [RSSSF 2000-01](https://www.rsssf.org/ec/ec200001.html), [DFB 2000-01 Bayern squad](https://datencenter.dfb.de/en/competitions/champions-league/seasons/2000-2001/teams/bayern-munich).
+- Main data commit: `d417e775604bbefe8375f26c1c259513abf8533b`. Interface commits: `d5d91a0a3c2cf8ce3a73f6fa901601898be80065`, `1f52f61530bcb1b7718dcf3a4989ee9ce8c18701`.
+
 ## 2026-11-11 — Ligue 1 2025-26 FINAL TECHNICAL SUCCESS (USER UNAPPROVED)
 - [CI #42984960763](https://github.com/wjdduddlf112/footballarch/actions/runs/42984960763) **SUCCESS**: 133 players / 77 starters / 56 backups, 10 consecutive positional ranks, 11 Best XI, static schema and JavaScript syntax, local and public Playwright browsers, public Pages JSON 133.
 - [Pages #42984958380](https://github.com/wjdduddlf112/footballarch/actions/runs/42984958380) **SUCCESS**; 7 actual next-year UEFA clubs PSG Lens Lille Lyon Marseille Rennes Monaco; World 15 and League Top 69 inclusive.
