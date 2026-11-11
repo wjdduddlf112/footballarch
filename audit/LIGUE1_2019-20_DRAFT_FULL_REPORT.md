@@ -357,7 +357,7 @@ Main 2019-20 squad appearance/starts/minutes/goals: https://www.bdfutbol.com/en/
 
 |Position|Korean|Original|Club|Tier|
 |---|---|---|---|---|
-|GK|스티브 만단다|Steve Mandanda|Olympique de Marseille|A+|
+|GK|프레드라그 라이코비치|Predrag Rajković|Stade de Reims|A+|
 |CB|치아구 실바|Thiago Silva|Paris Saint-Germain FC|A+|
 |CB|유니스 압델하미드|Yunis Abdelhamid|Stade de Reims|A0|
 |LB|후안 베르나트|Juan Bernat|Paris Saint-Germain FC|A-|
@@ -386,6 +386,10 @@ Main 2019-20 squad appearance/starts/minutes/goals: https://www.bdfutbol.com/en/
 - Osimhen A0 (ST): 27 games, 25 starts, 13 goals in his first Ligue 1 season; current season high, one-season continuity limits A+.
 - Camavinga A- (CM): 25/24 in an elite breakout at young age; no future Real Madrid fame factored into historic appraisal.
 - Sanches A- (CM): 19 games 16 starts and 3 goals, powerful ball carrying; current season recovery marked more than prior team wins.
+
+Contemporaneous L'Équipe 2019-20 goalkeeper ratings listed Rajković first (6.10/10) ahead of Mandanda (5.96/10); Rajković named Best XI goalkeeper for higher priority 2019-20 performance, despite Mandanda's strong prior-year profile. Source: https://www.lequipe.fr/Football/Actualites/Le-bilan-de-la-saison-de-ligue-1-par-les-Notes-de-L-Equipe/1131416
+
+**No official UNFP 2020 season-end player awards were presented.** The 2020 ceremony and prizes were cancelled due to COVID. Do not invent an official 2019-20 UNFP Best XI.
 
 ## G. Validation scope and historical limitations
 
