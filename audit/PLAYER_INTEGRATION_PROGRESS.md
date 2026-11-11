@@ -1,3 +1,11 @@
+## 2026-11-11 — Ligue 1 2019-20 104-player complete six-club DRAFT, technical validation pending
+- COVID early-season PPG final ranking; actual 2020-21 UCL PSG Marseille Rennes, UEL Lille Nice Reims (Reims actual qualifying rounds). PSG 2020 domestic cup double leads route to 5th/6th.
+- **104 distinct candidates, 66 XI, 38 backups**, 10 continuous position rank lists, proposed XI 4-3-3; World 10, League Top 38 inclusive; grades {"S":2,"A+":8,"A":5,"A-":23,"B+":34,"B":22,"B-":1,"C+":8,"C":1,"C-":0,"D":0,"unrated":0}.
+- Six direct BDFutbol 2019-20 original squad apps/starts/minutes/goals. Prior 2018-19/2017-18 only partially linked from unapproved Archive drafts, no false complete independent verification claim.
+- Formation 4-2-3-1 survey vs other 4-4-2 frequency classification disputed; 4-3-3 Best XI distinct to preserve primary roles. Main-season individual dominant positions and historical biographical double-source checks remain incomplete.
+- Source data / drafts / scripts committed; do not mark browser/Pages success until GitHub Actions run confirms. USER UNAPPROVED.
+- [2019-20 Full report](LIGUE1_2019-20_DRAFT_FULL_REPORT.md) / [Raw transcription](LIGUE1_2019-20_RAW_ROSTER_TRANSCRIPTION.txt) / [Season JSON](../data/ligue1-2019-20.json).
+
 ## 2026-11-11 — Ligue 1 2018-19 FINAL TECHNICAL VALIDATION SUCCESS (USER UNAPPROVED)
 - [GitHub Actions #42948028004](https://github.com/wjdduddlf112/footballarch/actions/runs/42948028004) **SUCCESS**: Node structural, JavaScript syntax, Playwright local browser, public Pages live 110-player JSON and Playwright public browser all passed, job #130285438075.
 - Exactly 110 distinct players, 66 starters, 44 backups; 10 continuous position rank lists; Best XI 11 (4-3-3); World 13, League Top 34 inclusive. Full report audit/LIGUE1_2018-19_DRAFT_FULL_REPORT.md.
