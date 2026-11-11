@@ -11,7 +11,7 @@ This report distinguishes the **completely transcribed 2003-04 competition resul
 - **96 group fixtures** plus **16 round-of-16**, **8 quarter-final**, **4 semi-final** and **1 final** = **125 fixtures**.
 - **309 goals** per independently reproduced match results and UEFA technical 2003-04 season total; group W/D/L/GF/GA/points recomputed directly from recorded 12 fixtures per group.
 - Competition champion **FC Porto**. Final **2004-05-26**, **AS Monaco FC 0–3 FC Porto**, Arena AufSchalke, Gelsenkirchen.
-- Any venue unconfirmed from first source remains `null` in JSON (except final).
+- Venues unconfirmed from the first source remain `null`; the final and two source-documented relocated group fixtures have confirmed venue/neutral fields.
 
 ### All 32 group-stage participants, selection, progression
 
@@ -290,8 +290,6 @@ This report distinguishes the **completely transcribed 2003-04 competition resul
 
 ## 5. Full candidate register, grouped by club
 
-| Position | Korean name | Original name | Original club | DOB | 2003-04 confirmation | Goals | Assists | Draft tier | Position rank |
-|---|---|---|---|---|---|---:|---:|---|---:|
 
 ### Olympique Lyonnais
 
@@ -467,7 +465,7 @@ This report distinguishes the **completely transcribed 2003-04 competition resul
 | CB | 리오 퍼디난드 | Rio Ferdinand | Manchester United FC | — | single-match starter | — | — | — | — |
 | LB | 존 오셰이 | John O'Shea | Manchester United FC | — | single-match starter | — | — | — | — |
 | RB | 게리 네빌 | Gary Neville | Manchester United FC | — | single-match starter | — | — | — | — |
-| RB | 필 네빌 | Phil Neville | Manchester United FC | — | single-match starter | — | — | — | — |
+| DM | 필 네빌 | Phil Neville | Manchester United FC | — | single-match starter | — | — | — | — |
 | DM | 니키 버트 | Nicky Butt | Manchester United FC | — | single-match starter | — | — | — | — |
 | CM | 대런 플레처 | Darren Fletcher | Manchester United FC | — | appearance pending | — | — | — | — |
 | CM | 폴 스콜스 | Paul Scholes | Manchester United FC | — | appearance pending | — | — | — | — |
@@ -617,7 +615,7 @@ This report distinguishes the **completely transcribed 2003-04 competition resul
 | LB | 후안프란 | Juanfran | RC Celta de Vigo | — | single-match starter | — | — | — | — |
 | LB | 시우비뉴 | Sylvinho | RC Celta de Vigo | — | appearance pending | — | — | — | — |
 | RB | 앙헬 로페스 | Ángel López | RC Celta de Vigo | — | single-match starter | — | — | — | — |
-| DM | 에두아르도 베리소 | Eduardo Berizzo | RC Celta de Vigo | — | single-match starter | — | — | — | — |
+| CB | 에두아르도 베리소 | Eduardo Berizzo | RC Celta de Vigo | — | single-match starter | — | — | — | — |
 | CM | 호세 이그나시오 | José Ignacio | RC Celta de Vigo | — | single-match starter | — | — | — | — |
 | CM | 피터 뤼생 | Peter Luccin | RC Celta de Vigo | — | appearance pending | — | — | — | — |
 | CM | 바그네르 | Vágner | RC Celta de Vigo | — | single-match starter | — | — | — | — |
