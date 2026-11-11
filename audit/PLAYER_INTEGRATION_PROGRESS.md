@@ -1,3 +1,9 @@
+## 2026-11-11 — Ligue 1 2020-21 FINAL TECHNICAL SUCCESS / USER UNAPPROVED
+- [GitHub Actions #42952669674](https://github.com/wjdduddlf112/footballarch/actions/runs/42952669674) **SUCCESS**: structural 113 players / 66 XI / 47 backups, 10 position ranking groups, 11 Best XI; app JS syntax, Playwright local browser, live public Pages 113-player JSON and Playwright public browser all passed.
+- [GitHub Pages deployment #42952669439](https://github.com/wjdduddlf112/footballarch/actions/runs/42952669439) **SUCCESS** on 2020-21 draft upload commit. World 14, League Top 44 inclusive. 4-2-3-1 league modal per Transfermarkt retrospective and Best XI proposal.
+- Historic completeness separate: past 2018-19 and 2019-20 independent person re-verification, primary-role all 38 matches, DOB universal second independent source unfinished. User approval remains **DRAFT / unapproved**.
+- [Full report](LIGUE1_2020-21_DRAFT_FULL_REPORT.md) / [Raw roster](LIGUE1_2020-21_RAW_ROSTER_TRANSCRIPTION.txt) / [Production validation](LIGUE1_2020-21_PRODUCTION_VALIDATION.json) / [JSON](../data/ligue1-2020-21.json) / [Public site](https://wjdduddlf112.github.io/footballarch/?league=ligue1&season=2020-21).
+
 ## 2026-11-11 — Ligue 1 2020-21 six-eligible-club complete DRAFT (113 players), CI pending
 - 2021-22 UEFA: Lille PSG Monaco (UCL), Lyon Marseille (UEL), Rennes (UECL). Monaco started in CL qualifiers then UEL, Marseille UEL then UECL; PSG domestic cup winner already CL-qualified.
 - Six direct 2020-21 BDFutbol lineup and bench squad tables, 113 unique candidates, 66 XI, 47 reserves, 10 positional ranking lists, Best XI 4-2-3-1 (11). World Class 14, League Top 44 incl World. Tier counts {"S":1,"A+":13,"A":9,"A-":21,"B+":39,"B":27,"B-":0,"C+":2,"C":1,"C-":0,"D":0,"unrated":0}.
