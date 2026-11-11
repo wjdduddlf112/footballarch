@@ -473,4 +473,4 @@ Individually assessed 2025-26 primary roles & recency: Risser; Pacho-Sarr; Nuno 
 - [JSON for this season](../data/ligue1-2025-26.json)
 - [Source raw roster transcription](LIGUE1_2025-26_RAW_ROSTER_TRANSCRIPTION.txt)
 - [Production validation status](LIGUE1_2025-26_PRODUCTION_VALIDATION.json)
-- Actual CI and Pages success must be checked and recorded in this document before calling technical delivery complete.
+- **TECHNICAL CI / LOCAL + LIVE BROWSER PASS**: [GitHub Actions #42984960763](https://github.com/wjdduddlf112/footballarch/actions/runs/42984960763) **SUCCESS** — 133 players, 77 starters + 56 backups, ten positional rank groups, DRAFT-only status, valid dates, per-team XI & max one backup per position, 11-person Best XI, Node JS syntax, Playwright local UI filters/detail/statistics and Playwright public UI; published Pages JSON 133 count confirmed. [GitHub Pages deployment #42984958380](https://github.com/wjdduddlf112/footballarch/actions/runs/42984958380) **SUCCESS**. Distinguish passing technical tests from incomplete historical independent three-season audit, 2-source DOB and true 2025-26 most-used formation. USER UNAPPROVED DRAFT.
