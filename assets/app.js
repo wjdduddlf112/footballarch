@@ -128,7 +128,7 @@ function uclTable(g){
 }
 function uclTournament(){
  let groups=data.groups||[],ms=data.matches||[];
- let h='<section class="panel"><div class="section-heading"><h2>1999–00 UCL · 본선 전체 경기</h2><button class="pill" data-go="overview">Overview</button></div><p class="muted small">출처: UEFA 공식 기록 / RSSSF · 본선 32팀, 1차 8개 조, 2차 4개 조, 8강~결승</p><div class="cards">'+statValue("Clubs",(data.participants||[]).length)+statValue("Matches",ms.length)+statValue("Goals",ms.reduce((n,m)=>n+m.homeGoals+m.awayGoals,0))+'</div></section>';
+ let h='<section class="panel"><div class="section-heading"><h2>UCL '+esc(data.meta.season.replace("-","–"))+' · 본선 전체 경기</h2><button class="pill" data-go="overview">Overview</button></div><p class="muted small">출처: UEFA 공식 기록 / RSSSF · 본선 32팀, 1차 8개 조, 2차 4개 조, 8강~결승</p><div class="cards">'+statValue("Clubs",(data.participants||[]).length)+statValue("Matches",ms.length)+statValue("Goals",ms.reduce((n,m)=>n+m.homeGoals+m.awayGoals,0))+'</div></section>';
  for(const stage of [1,2]){
   h+='<section class="panel" style="margin-top:15px"><h2>'+(stage===1?"First group stage · 32 clubs":"Second group stage · 16 clubs")+'</h2>';
   for(const g of groups.filter(x=>x.stage===stage)){
@@ -141,12 +141,12 @@ function uclTournament(){
 }
 function uclOverview(){
  const groups=data.groups||[],people=data.players||[],qualifiers=data.evaluatedClubs||[];
- let h='<section class="panel"><div class="section-heading"><div><h2>UEFA Champions League · 1999–00</h2><p class="muted small">우승 Real Madrid CF · 준우승 Valencia CF</p></div><button class="pill" data-go="table">모든 경기 및 조별리그</button></div><div class="cards">'+statValue("Clubs",(data.participants||[]).length)+statValue("Evaluated clubs",qualifiers.length)+statValue("Games",(data.matches||[]).length)+statValue("Goals",(data.matches||[]).reduce((n,m)=>n+m.homeGoals+m.awayGoals,0))+'</div></section>';
+ let h='<section class="panel"><div class="section-heading"><div><h2>UEFA Champions League · '+esc(data.meta.season.replace("-","–"))+'</h2><p class="muted small">우승 '+esc(club(data.knockout.find(k=>k.stage==="final")?.winner).name)+' · 준우승 '+esc(club(data.knockout.find(k=>k.stage==="final")?.away).name)+'</p></div><button class="pill" data-go="table">모든 경기 및 조별리그</button></div><div class="cards">'+statValue("Clubs",(data.participants||[]).length)+statValue("Evaluated clubs",qualifiers.length)+statValue("Games",(data.matches||[]).length)+statValue("Goals",(data.matches||[]).reduce((n,m)=>n+m.homeGoals+m.awayGoals,0))+'</div></section>';
  h+='<section class="panel" style="margin-top:15px"><h2>1차 조별리그 · 참가 32개 구단</h2>';
  for(const g of groups.filter(g=>g.stage===1))h+='<p class="small" style="margin-top:12px"><b>Group '+esc(g.code)+'</b> · '+g.table.map(t=>esc(club(t.club).name)+(qualifiers.includes(t.club)?" ✓":"")).join(" · ")+'</p>';
  h+='<p class="muted small">✓ 2차 조별리그 진출 · 선수 평가 대상</p></section><section class="panel" style="margin-top:15px"><h2>2차 조별리그 · 평가 16개 구단</h2>';
  for(const g of groups.filter(g=>g.stage===2))h+='<div style="margin-top:18px"><h3>Group '+esc(g.code)+'</h3>'+uclTable(g)+'</div>';
- h+='</section><section class="panel" style="margin-top:15px"><div class="section-heading"><h2>선수 평가 · 자료 수집 중</h2></div><p class="muted">경기 결과는 전수 기록했습니다. 선수 주전 11명·후보, 3시즌 개인 평가, 티어·순위와 Best XI는 아직 미완료입니다.</p><button class="pill" data-action="candidates">확인된 득점 선수 '+people.length+'명</button></section>';
+ h+='</section><section class="panel" style="margin-top:15px"><div class="section-heading"><h2>선수 평가 · 자료 수집 중</h2></div><p class="muted">경기 결과는 전수 기록했습니다. 선수 주전 11명·후보, 3시즌 개인 평가, 티어·순위와 Best XI는 아직 미완료입니다.</p><button class="pill" data-action="candidates">자료에 등록된 선수 '+people.length+'명</button></section>';
  if(st.showCandidates)h+=candidatePool();
  return h;
 }
