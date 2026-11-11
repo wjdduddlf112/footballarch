@@ -123,30 +123,34 @@ function qualItem(v){
 
 function uclTable(g){
  let t='<div class="table-scroll"><table class="datagrid"><thead><tr><th>#</th><th>CLUB</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>GD</th><th>PTS</th><th>RESULT</th></tr></thead><tbody>';
- for(const a of g.table)t+='<tr><td>'+esc(a.rank)+'</td><td>'+esc(club(a.club).name)+'</td><td>'+esc(a.played)+'</td><td>'+esc(a.wins)+'</td><td>'+esc(a.draws)+'</td><td>'+esc(a.losses)+'</td><td>'+esc(a.goalsFor)+'</td><td>'+esc(a.goalsAgainst)+'</td><td>'+esc(a.gd)+'</td><td>'+esc(a.points)+'</td><td>'+esc(a.status==="second_group_stage"?"2차 조별리그":a.status==="quarter_finals"?"8강":a.status==="uefa_cup"?"UEFA Cup":"탈락")+'</td></tr>';
+ for(const a of g.table)t+='<tr><td>'+esc(a.rank)+'</td><td>'+esc(club(a.club).name)+'</td><td>'+esc(a.played)+'</td><td>'+esc(a.wins)+'</td><td>'+esc(a.draws)+'</td><td>'+esc(a.losses)+'</td><td>'+esc(a.goalsFor)+'</td><td>'+esc(a.goalsAgainst)+'</td><td>'+esc(a.gd)+'</td><td>'+esc(a.points)+'</td><td>'+esc(a.status==="second_group_stage"?"2차 조별리그":a.status==="round_of_16"?"16강":a.status==="quarter_finals"?"8강":a.status==="uefa_cup"?"UEFA Cup":"탈락")+'</td></tr>';
  return t+'</tbody></table></div>';
 }
 function uclTournament(){
  let groups=data.groups||[],ms=data.matches||[];
- let h='<section class="panel"><div class="section-heading"><h2>UCL '+esc(data.meta.season.replace("-","–"))+' · 본선 전체 경기</h2><button class="pill" data-go="overview">Overview</button></div><p class="muted small">출처: UEFA 공식 기록 / RSSSF · 본선 32팀, 1차 8개 조, 2차 4개 조, 8강~결승</p><div class="cards">'+statValue("Clubs",(data.participants||[]).length)+statValue("Matches",ms.length)+statValue("Goals",ms.reduce((n,m)=>n+m.homeGoals+m.awayGoals,0))+'</div></section>';
- for(const stage of [1,2]){
-  h+='<section class="panel" style="margin-top:15px"><h2>'+(stage===1?"First group stage · 32 clubs":"Second group stage · 16 clubs")+'</h2>';
+ const hasSecondGroup=groups.some(g=>g.stage===2);
+ const knockouts=hasSecondGroup?["quarter_final","semi_final","final"]:["round_of_16","quarter_final","semi_final","final"];
+ let h='<section class="panel"><div class="section-heading"><h2>UCL '+esc(data.meta.season.replace("-","–"))+' · 본선 전체 경기</h2><button class="pill" data-go="overview">Overview</button></div><p class="muted small">출처: UEFA 공식 기록 / RSSSF · 본선 32팀, '+(hasSecondGroup?'1차 8개 조, 2차 4개 조, 8강~결승':'8개 조, 16강~결승')+'</p><div class="cards">'+statValue("Clubs",(data.participants||[]).length)+statValue("Matches",ms.length)+statValue("Goals",ms.reduce((n,m)=>n+m.homeGoals+m.awayGoals,0))+'</div></section>';
+ for(const stage of (hasSecondGroup?[1,2]:[1])){
+  h+='<section class="panel" style="margin-top:15px"><h2>'+(stage===1?(hasSecondGroup?"First group stage · 32 clubs":"Group stage · 32 clubs"):"Second group stage · 16 clubs")+'</h2>';
   for(const g of groups.filter(x=>x.stage===stage)){
    let gs=ms.filter(m=>m.stage===stage&&m.group===g.code);
    h+='<div style="margin-top:18px"><h3>Group '+esc(g.code)+'</h3>'+uclTable(g)+'<details style="margin-top:8px" '+(stage===2?'open':'')+'><summary class="small muted" style="cursor:pointer">12경기 결과</summary><div class="table-scroll"><table class="datagrid"><thead><tr><th>DATE</th><th>HOME</th><th>SCORE</th><th>AWAY</th></tr></thead><tbody>'+gs.map(m=>'<tr><td>'+esc(m.date)+'</td><td>'+esc(club(m.home).name)+'</td><td><b>'+esc(m.homeGoals+' : '+m.awayGoals)+'</b></td><td>'+esc(club(m.away).name)+'</td></tr>').join("")+'</tbody></table></div></details></div>';
   }h+='</section>';
  }
- h+='<section class="panel" style="margin-top:15px"><h2>Knockout phase · 8강 / 4강 / 결승</h2><div class="table-scroll"><table class="datagrid"><thead><tr><th>ROUND</th><th>DATE</th><th>HOME</th><th>SCORE</th><th>AWAY</th></tr></thead><tbody>'+ms.filter(m=>["quarter_final","semi_final","final"].includes(m.round)).map(m=>'<tr><td>'+esc(m.round==="quarter_final"?"8강":m.round==="semi_final"?"4강":"결승")+'</td><td>'+esc(m.date)+'</td><td>'+esc(club(m.home).name)+'</td><td><b>'+esc(m.homeGoals+' : '+m.awayGoals+(m.penaltyShootout?' (PK '+m.penaltyShootout.home+'–'+m.penaltyShootout.away+')':''))+'</b></td><td>'+esc(club(m.away).name)+'</td></tr>').join("")+'</tbody></table></div></section>';
+ h+='<section class="panel" style="margin-top:15px"><h2>Knockout phase · '+(hasSecondGroup?'8강 / 4강 / 결승':'16강 / 8강 / 4강 / 결승')+'</h2><div class="table-scroll"><table class="datagrid"><thead><tr><th>ROUND</th><th>DATE</th><th>HOME</th><th>SCORE</th><th>AWAY</th></tr></thead><tbody>'+ms.filter(m=>knockouts.includes(m.round)).map(m=>'<tr><td>'+esc(m.round==="round_of_16"?"16강":m.round==="quarter_final"?"8강":m.round==="semi_final"?"4강":"결승")+'</td><td>'+esc(m.date)+'</td><td>'+esc(club(m.home).name)+'</td><td><b>'+esc(m.homeGoals+' : '+m.awayGoals+(m.penaltyShootout?' (PK '+m.penaltyShootout.home+'–'+m.penaltyShootout.away+')':''))+'</b></td><td>'+esc(club(m.away).name)+'</td></tr>').join("")+'</tbody></table></div></section>';
  return h;
 }
 function uclOverview(){
  const groups=data.groups||[],people=data.players||[],qualifiers=data.evaluatedClubs||[];
+ const hasSecondGroup=groups.some(g=>g.stage===2);
  let h='<section class="panel"><div class="section-heading"><div><h2>UEFA Champions League · '+esc(data.meta.season.replace("-","–"))+'</h2><p class="muted small">우승 '+esc(club(data.knockout.find(k=>k.stage==="final")?.winner).name)+' · 준우승 '+esc(club((()=>{const f=data.knockout.find(k=>k.stage==="final");return f?.winner===f?.home?f?.away:f?.home})()).name)+'</p></div><button class="pill" data-go="table">모든 경기 및 조별리그</button></div><div class="cards">'+statValue("Clubs",(data.participants||[]).length)+statValue("Evaluated clubs",qualifiers.length)+statValue("Games",(data.matches||[]).length)+statValue("Goals",(data.matches||[]).reduce((n,m)=>n+m.homeGoals+m.awayGoals,0))+'</div></section>';
- h+='<section class="panel" style="margin-top:15px"><h2>1차 조별리그 · 참가 32개 구단</h2>';
+ h+='<section class="panel" style="margin-top:15px"><h2>'+(hasSecondGroup?'1차 조별리그':'조별리그')+' · 참가 32개 구단</h2>';
  for(const g of groups.filter(g=>g.stage===1))h+='<p class="small" style="margin-top:12px"><b>Group '+esc(g.code)+'</b> · '+g.table.map(t=>esc(club(t.club).name)+(qualifiers.includes(t.club)?" ✓":"")).join(" · ")+'</p>';
- h+='<p class="muted small">✓ 2차 조별리그 진출 · 선수 평가 대상</p></section><section class="panel" style="margin-top:15px"><h2>2차 조별리그 · 평가 16개 구단</h2>';
- for(const g of groups.filter(g=>g.stage===2))h+='<div style="margin-top:18px"><h3>Group '+esc(g.code)+'</h3>'+uclTable(g)+'</div>';
- h+='</section><section class="panel" style="margin-top:15px"><div class="section-heading"><h2>선수 평가 · 자료 수집 중</h2></div><p class="muted">경기 결과는 전수 기록했습니다. 선수 주전 11명·후보, 3시즌 개인 평가, 티어·순위와 Best XI는 아직 미완료입니다.</p><button class="pill" data-action="candidates">자료에 등록된 선수 '+people.length+'명</button></section>';
+ h+='<p class="muted small">✓ '+(hasSecondGroup?'2차 조별리그':'16강')+' 진출 · 선수 평가 대상</p></section>';
+ if(hasSecondGroup)h+='<section class="panel" style="margin-top:15px"><h2>2차 조별리그 · 평가 16개 구단</h2>';
+ if(hasSecondGroup){for(const g of groups.filter(g=>g.stage===2))h+='<div style="margin-top:18px"><h3>Group '+esc(g.code)+'</h3>'+uclTable(g)+'</div>';h+='</section>';}
+ h+='<section class="panel" style="margin-top:15px"><div class="section-heading"><h2>선수 평가 · 자료 수집 중</h2></div><p class="muted">경기 결과는 전수 기록했습니다. 선수 주전 11명·후보, 3시즌 개인 평가, 티어·순위와 Best XI는 아직 미완료입니다.</p><button class="pill" data-action="candidates">자료에 등록된 선수 '+people.length+'명</button></section>';
  if(st.showCandidates)h+=candidatePool();
  return h;
 }
