@@ -1,3 +1,10 @@
+## 2026-11-11 — Ligue 1 2021-22 FINAL TECHNICAL VALIDATION SUCCESS (USER UNAPPROVED)
+- [GitHub Actions #42955452558](https://github.com/wjdduddlf112/footballarch/actions/runs/42955452558) **SUCCESS**: 110 players / 66 starters / 44 backups, 10 position ranks, 11 Best XI; Node structural, app JS syntax, Playwright local, public 110-player JSON and live public browser PASS.
+- [GitHub Pages #42955451747](https://github.com/wjdduddlf112/footballarch/actions/runs/42955451747) **SUCCESS** for full upload. World 13 / League Top 40 inclusive, league-modal 4-2-3-1.
+- The six UEFA 2022-23 clubs are PSG Marseille Monaco Rennes Nice FC Nantes (French Cup); 6th Strasbourg excluded. Historic name corrected FC Nantes, no league standings changed.
+- Historic validation remains incomplete: 2019-20 & 2020-21 independently re-confirm all players, some 2021-22 main-position modality and flank side audit, all two-source DOB checks. User review state remains **DRAFT unapproved**.
+- [Full report](LIGUE1_2021-22_DRAFT_FULL_REPORT.md), [Raw roster](LIGUE1_2021-22_RAW_ROSTER_TRANSCRIPTION.txt), [Production validation](LIGUE1_2021-22_PRODUCTION_VALIDATION.json), [Season JSON](../data/ligue1-2021-22.json), [Live view](https://wjdduddlf112.github.io/footballarch/?league=ligue1&season=2021-22).
+
 ## 2026-11-11 — Ligue 1 2021-22: 110-player six-UEFA-club DRAFT, technical CI pending
 - Actual next-season UEFA 2022-23 entrants PSG Marseille Monaco Rennes Nice Nantes; Nantes 9th Coupe de France winner; Strasbourg 6th excluded. Official 2021-22 name FC Nantes corrected in season metadata.
 - 110 players, 66 starters and 44 up-to-one positional backups, 10 contiguous position league rankings, Best XI 4-2-3-1 (11). World 13, League Top 40 including World, tier counts {"S":1,"A+":12,"A":15,"A-":12,"B+":45,"B":24,"B-":0,"C+":1,"C":0,"C-":0,"D":0,"unrated":0}.
