@@ -99,10 +99,12 @@ function seasonsStatus(){return data?.meta?.status==="demo"?"demo":data?.meta?.s
 function rankPlayers(){return (data?.players||[]).slice().sort((a,b)=>positions.indexOf(a.position)-positions.indexOf(b.position)||((a.rank||999)-(b.rank||999))||((a.tier?ranks.indexOf(a.tier):ranks.length)-(b.tier?ranks.indexOf(b.tier):ranks.length))||a.name.localeCompare(b.name))}
 function hasTop(){return (data?.players||[]).some(p=>top(p))}
 function pageIntro(){
+ const tab=document.querySelector('[data-tab="table"]'); if(tab)tab.textContent=st.domain==="europe"?"Tournament":"League Table";
+ const topTab=document.querySelector('[data-tab="top"]'); if(topTab)topTab.textContent=st.domain==="europe"?"European Top Class":"Top Class";
  $("eyebrow").style.display="none";
  $("heading").textContent=label()+"  /  "+st.season.replace("-","–");
  $("subheading").style.display="none";
- const tierSeason=["bundesliga","seriea","ligue1"].includes(st.league)&&Boolean(data?.players?.length)&&data?.meta?.standingsOnly!==true;
+ const tierSeason=(["bundesliga","seriea","ligue1"].includes(st.league)||st.domain==="europe")&&Boolean(data?.players?.length)&&data?.meta?.standingsOnly!==true;
  const tierTab=$("allTiersTab");if(tierTab)tierTab.style.display=tierSeason?"":"none";
  if(st.tab==="tiers"&&!tierSeason)st.tab="overview";
  const playerView=["formation","top","tiers","stats"].includes(st.tab);
@@ -110,7 +112,7 @@ function pageIntro(){
  $("stateTag").textContent=stage;
  $("stateTag").className="status "+(stage==="SAMPLE"?"demo":"pending");
  $("stateTag").style.display=stage?"":"none";
- Array.from(document.querySelectorAll(".main-nav button")).forEach(b=>{b.classList.toggle("active",b.dataset.tab===st.tab);b.disabled=st.domain==="europe"&&["formation","table"].includes(b.dataset.tab)})
+ Array.from(document.querySelectorAll(".main-nav button")).forEach(b=>{b.classList.toggle("active",b.dataset.tab===st.tab);b.disabled=st.domain==="europe"&&!(data?.meta?.competitionId==="ucl"&&data?.groups?.length)&&["formation","table"].includes(b.dataset.tab)})
 }
 function statValue(label,value,note){return '<div class="metric"><span class="name">'+label+'</span><strong class="value">'+value+'</strong>'+(note?'<small class="note">'+esc(note)+'</small>':"")+'</div>'}
 function qualifiers(){return data?.qualifiers||[]}
@@ -118,7 +120,39 @@ function qualItem(v){
  const body=crest(v.club)+'<span class="qual-title">'+esc(club(v.club).name)+'</span>'+comp(v.competition)+(v.additionalCompetitions||[]).map(comp).join('');
  return data?.meta?.standingsOnly?'<div class="qual-item static-qual">'+body+'</div>':'<button class="qual-item" data-club-go="'+esc(v.club)+'">'+body+'</button>';
 }
+
+function uclTable(g){
+ let t='<div class="table-scroll"><table class="datagrid"><thead><tr><th>#</th><th>CLUB</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>GD</th><th>PTS</th><th>RESULT</th></tr></thead><tbody>';
+ for(const a of g.table)t+='<tr><td>'+esc(a.rank)+'</td><td>'+esc(club(a.club).name)+'</td><td>'+esc(a.played)+'</td><td>'+esc(a.wins)+'</td><td>'+esc(a.draws)+'</td><td>'+esc(a.losses)+'</td><td>'+esc(a.goalsFor)+'</td><td>'+esc(a.goalsAgainst)+'</td><td>'+esc(a.gd)+'</td><td>'+esc(a.points)+'</td><td>'+esc(a.status==="second_group_stage"?"2차 조별리그":a.status==="quarter_finals"?"8강":a.status==="uefa_cup"?"UEFA Cup":"탈락")+'</td></tr>';
+ return t+'</tbody></table></div>';
+}
+function uclTournament(){
+ let groups=data.groups||[],ms=data.matches||[];
+ let h='<section class="panel"><div class="section-heading"><h2>1999–00 UCL · 본선 전체 경기</h2><button class="pill" data-go="overview">Overview</button></div><p class="muted small">출처: UEFA 공식 기록 / RSSSF · 본선 32팀, 1차 8개 조, 2차 4개 조, 8강~결승</p><div class="cards">'+statValue("Clubs",(data.participants||[]).length)+statValue("Matches",ms.length)+statValue("Goals",ms.reduce((n,m)=>n+m.homeGoals+m.awayGoals,0))+'</div></section>';
+ for(const stage of [1,2]){
+  h+='<section class="panel" style="margin-top:15px"><h2>'+(stage===1?"First group stage · 32 clubs":"Second group stage · 16 clubs")+'</h2>';
+  for(const g of groups.filter(x=>x.stage===stage)){
+   let gs=ms.filter(m=>m.stage===stage&&m.group===g.code);
+   h+='<div style="margin-top:18px"><h3>Group '+esc(g.code)+'</h3>'+uclTable(g)+'<details style="margin-top:8px" '+(stage===2?'open':'')+'><summary class="small muted" style="cursor:pointer">12경기 결과</summary><div class="table-scroll"><table class="datagrid"><thead><tr><th>DATE</th><th>HOME</th><th>SCORE</th><th>AWAY</th></tr></thead><tbody>'+gs.map(m=>'<tr><td>'+esc(m.date)+'</td><td>'+esc(club(m.home).name)+'</td><td><b>'+esc(m.homeGoals+' : '+m.awayGoals)+'</b></td><td>'+esc(club(m.away).name)+'</td></tr>').join("")+'</tbody></table></div></details></div>';
+  }h+='</section>';
+ }
+ h+='<section class="panel" style="margin-top:15px"><h2>Knockout phase · 8강 / 4강 / 결승</h2><div class="table-scroll"><table class="datagrid"><thead><tr><th>ROUND</th><th>DATE</th><th>HOME</th><th>SCORE</th><th>AWAY</th></tr></thead><tbody>'+ms.filter(m=>["quarter_final","semi_final","final"].includes(m.round)).map(m=>'<tr><td>'+esc(m.round==="quarter_final"?"8강":m.round==="semi_final"?"4강":"결승")+'</td><td>'+esc(m.date)+'</td><td>'+esc(club(m.home).name)+'</td><td><b>'+esc(m.homeGoals+' : '+m.awayGoals)+'</b></td><td>'+esc(club(m.away).name)+'</td></tr>').join("")+'</tbody></table></div></section>';
+ return h;
+}
+function uclOverview(){
+ const groups=data.groups||[],people=data.players||[],qualifiers=data.evaluatedClubs||[];
+ let h='<section class="panel"><div class="section-heading"><div><h2>UEFA Champions League · 1999–00</h2><p class="muted small">우승 Real Madrid CF · 준우승 Valencia CF</p></div><button class="pill" data-go="table">모든 경기 및 조별리그</button></div><div class="cards">'+statValue("Clubs",(data.participants||[]).length)+statValue("Evaluated clubs",qualifiers.length)+statValue("Games",(data.matches||[]).length)+statValue("Goals",(data.matches||[]).reduce((n,m)=>n+m.homeGoals+m.awayGoals,0))+'</div></section>';
+ h+='<section class="panel" style="margin-top:15px"><h2>1차 조별리그 · 참가 32개 구단</h2>';
+ for(const g of groups.filter(g=>g.stage===1))h+='<p class="small" style="margin-top:12px"><b>Group '+esc(g.code)+'</b> · '+g.table.map(t=>esc(club(t.club).name)+(qualifiers.includes(t.club)?" ✓":"")).join(" · ")+'</p>';
+ h+='<p class="muted small">✓ 2차 조별리그 진출 · 선수 평가 대상</p></section><section class="panel" style="margin-top:15px"><h2>2차 조별리그 · 평가 16개 구단</h2>';
+ for(const g of groups.filter(g=>g.stage===2))h+='<div style="margin-top:18px"><h3>Group '+esc(g.code)+'</h3>'+uclTable(g)+'</div>';
+ h+='</section><section class="panel" style="margin-top:15px"><div class="section-heading"><h2>선수 평가 · 자료 수집 중</h2></div><p class="muted">경기 결과는 전수 기록했습니다. 선수 주전 11명·후보, 3시즌 개인 평가, 티어·순위와 Best XI는 아직 미완료입니다.</p><button class="pill" data-action="candidates">확인된 득점 선수 '+people.length+'명</button></section>';
+ if(st.showCandidates)h+=candidatePool();
+ return h;
+}
+
 function overview(){
+ if(st.domain==="europe"&&data?.meta?.competitionId==="ucl"&&data?.groups?.length)return uclOverview();
  const qualified=qualifiers();
  const relegated=(data.standings||[]).filter(r=>r.outcome==="relegated"||r.outcome==="relegated_administrative");
  let result="";
@@ -240,6 +274,7 @@ function championStatus(r){
  return winner?'<span class="champion-badge" title="리그 공식 우승" aria-label="리그 공식 우승">C</span>':"";
 }
 function standings(){
+ if(st.domain==="europe"&&data?.meta?.competitionId==="ucl"&&data?.groups?.length)return uclTournament();
  const rows=data.standings||[];
  if(!rows.length)return '<section class="panel"><div class="section-heading"><h2>Final League Table</h2></div><div class="empty"><strong>순위표 검증 중입니다.</strong></div></section>';
  const hasEuropean=rows.some(r=>r.competition);
@@ -438,7 +473,7 @@ else if(competitionGroups.europe.some(x=>x[0]===q.get("league"))){st.domain="eur
 if(yearList.includes(q.get("season")))st.season=q.get("season");
 if(["overview","formation","top","tiers","table","stats"].includes(q.get("view")))st.tab=q.get("view");
 if(q.get("view")==="ranking")st.showCandidates=true;
-if(st.domain==="europe"&&["formation","table"].includes(st.tab))st.tab="overview";
+if(st.domain==="europe"&&["formation","table"].includes(st.tab)&&!(st.league==="ucl"&&st.season==="1999-00"))st.tab="overview";
 if(st.home)render();else load();
 window.addEventListener("popstate",()=>{
  const p=new URLSearchParams(location.search);
