@@ -1,0 +1,44 @@
+#!/usr/bin/env node
+import {chromium} from "playwright";
+const url=process.env.TARGET_URL||"http://127.0.0.1:8878/?league=ligue1&season=2021-22";
+const browser=await chromium.launch({headless:true,args:["--no-sandbox"]});
+const page=await browser.newPage({viewport:{width:1440,height:900}});
+const errors=[],failed=[];
+page.on("pageerror",e=>errors.push(e.message));
+page.on("response",r=>{if(r.url().includes("ligue1-2021-22.json")&&r.status()>=400)failed.push(r.status())});
+const check=(yes,label)=>{if(!yes)throw Error(label)};
+try{
+ await page.goto(url,{waitUntil:"domcontentloaded",timeout:60000});
+ await page.waitForFunction(()=>document.querySelector("#stateTag")?.textContent==="DRAFT",{timeout:45000});
+ check((await page.locator("#heading").innerText()).replaceAll("–","-").includes("2021-22"),"season heading");
+ await page.locator('[data-tab="overview"]').click();
+ await page.locator('[data-action="candidates"]').click();
+ check(await page.locator("#candidate-pool tbody tr").count()===110,"110 candidates");
+ await page.locator('select[data-filter="position"]').selectOption("GK");
+ check(await page.locator("#candidate-pool tbody tr").count()===10,"GK has 10 entries");
+ await page.locator('select[data-filter="club"]').selectOption("psg");
+ check(await page.locator("#candidate-pool tbody tr").count()===2,"PSG 2 GKs");
+ await page.locator("#candidate-pool [data-action='reset']").click();
+ check(await page.locator("#candidate-pool tbody tr").count()===110,"reset filter");
+ await page.locator("#allTiersTab").click();
+ await page.locator(".tier-directory-head").waitFor({timeout:20000});
+ check(await page.locator(".tier-directory-section").count()===6,"6 clubs");
+ check(await page.locator(".tier-directory-section tbody tr").count()===110,"110 club ranking rows");
+ await page.locator('[data-tier-view="positions"]').click();
+ check(await page.locator(".tier-directory-section").count()===10,"10 positions");
+ check(await page.locator(".tier-directory-section tbody tr").count()===110,"110 positional rows");
+ await page.locator('[data-tier-view="clubs"]').click();
+ await page.locator('[data-player="ligue1-2021-22-psg-neymar"]').first().click();
+ const detail=await page.locator(".dialog").innerText();
+ check(detail.includes("Neymar")&&detail.includes("1992-02-05"),"DOB and original name");
+ await page.locator('[data-action="close"]').click();
+ await page.locator('[data-tab="formation"]').click();
+ check(await page.locator(".pitch .slot").count()===11,"Best XI 11 slots");
+ await page.locator('[data-tab="table"]').click();
+ check((await page.locator("#content").innerText()).includes("Monaco"),"league table");
+ await page.locator('[data-tab="stats"]').click();
+ check((await page.locator("#content").innerText()).includes("Matching Players"),"statistics visible");
+ check(errors.length===0,"no JavaScript errors: "+errors.join("; "));
+ check(failed.length===0,"no failed JSON requests: "+failed.join("; "));
+ console.log(JSON.stringify({result:"PASS",url,players:110,checks:["Overview","Filters","All Tiers","Positional ranks","Modal","Best XI","Table","Statistics"]}));
+}finally{await browser.close();}
