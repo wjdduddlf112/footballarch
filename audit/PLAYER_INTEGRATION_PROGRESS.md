@@ -1,3 +1,11 @@
+## 2026-11-11 — Ligue 1 2018-19 full six-club 110-player DRAFT (UNAPPROVED)
+- 2019-20 actual UEFA clubs PSG Lille Lyon Saint-Étienne Rennes Strasbourg; French Cup Rennes / League Cup Strasbourg, including Strasbourg UEFA qualifying participation.
+- Exactly 110 distinct players, 66 starters, 44 backups; 10 contiguous position-specific rank lists, 11 positional Best XI in 4-3-3. World Class 13, League Top 34 inclusive. Provisional tier counts {"S":2,"A+":11,"A":5,"A-":16,"B+":42,"B":24,"B-":1,"C+":7,"C":2,"C-":0,"D":0,"unrated":0}.
+- Direct main-season BDFutbol team lineup/bench sources for each of six clubs; previous two years only partially linked from previous UNAPPROVED Archive context, NOT independently confirmed per player.
+- Match-level primary positions and full DOB two-source verification not completed. Strasbourg 3CB+wingbacks mapped site LB/RB; Lille no actual league backup GK. 4-3-3 league statistical mode not established.
+- DRAFT stored; technical GitHub Actions and public Pages verification require separate run result. NEVER treat DRAFT as user-approved.
+- [Full report](LIGUE1_2018-19_DRAFT_FULL_REPORT.md) / [Raw roster](LIGUE1_2018-19_RAW_ROSTER_TRANSCRIPTION.txt) / [Season JSON](../data/ligue1-2018-19.json).
+
 ## 2026-11-11 — Ligue 1 2017-18 FINAL TECHNICAL VALIDATION (USER UNAPPROVED)
 - [GitHub Actions #42887127606](https://github.com/wjdduddlf112/footballarch/actions/runs/42887127606) **SUCCESS**: Node structural, app syntax, Playwright local browser, updated Pages 110-player JSON and Playwright public browser all passed.
 - Exactly **110 distinct players**, 66 starter slots, 44 eligible backups; 10 contiguous rank lists and 11 Best XI; grades 2 S, 15 A+, 7 A0, 16 A-, 32 B+, 26 B0, 5 B-, 6 C+, 0 C0, 1 C-, no D; World Class 17, League Top Class 40 (incl. World).
