@@ -2038,3 +2038,10 @@ Source TXT instruction adapted to the **2009-10 season only**. Candidate roster 
 - Existing site preserved, adding only 4-4-1-1 pitch slots. Other seasons and domestic data not changed.
 - Independent 278-player UEFA appearance/starting stats, season modal roles, comprehensive recency-weighted historical evidence still pending. Individual tiers are explicitly a draft, **not completed historical validation**.
 - Regression/Browser test workflow: `verify-ucl-2006-07-draft-live.yml`. Structure and live statuses must be read from GitHub Actions, not inferred from commit.
+
+### 2006-07 UCL deployment validation — 2026-11-12
+
+- **DRAFT structural validation: success** (32 clubs, 8 groups, all 125 games, 309 goals, 278 player slots, tiers/ranks/11 Best XI).
+- **Actual Playwright Chromium GitHub Pages browser smoke: success**, after fixing Best XI detail-table rendering for UEFA pages. Verified published 2006-07 UCL 278 entries / 16 club tables / 11-person XI / tournament display, plus 2005-06 UCL 248-player regression.
+- GitHub Actions successful run: https://github.com/wjdduddlf112/footballarch/actions/runs/43158089302
+- Full historical verification of each player's official UCL appearances, starts, actual majority position, and past two seasons is still **pending**; success is for structure and the browser integration only.
