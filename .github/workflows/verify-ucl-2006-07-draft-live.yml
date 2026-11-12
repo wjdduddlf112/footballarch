@@ -1,0 +1,38 @@
+name: Verify UCL 2006-07 DRAFT and LIVE Pages
+on:
+  push:
+    branches: [main]
+    paths:
+      - data/ucl-2006-07.json
+      - assets/app.js
+      - scripts/verify-ucl-2006-07-draft.mjs
+      - scripts/verify-ucl-2006-07-live.mjs
+      - .github/workflows/verify-ucl-2006-07-draft-live.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  structure:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate 2006-07 UCL DRAFT data structure
+        run: node scripts/verify-ucl-2006-07-draft.mjs
+  live:
+    needs: structure
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install browser tooling
+        run: |
+          npm install --no-save playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Verify published 2006-07 UCL and 2005-06 regression in Chromium
+        run: node scripts/verify-ucl-2006-07-live.mjs
