@@ -1,3 +1,11 @@
+## 2026-11-12 — UCL 2004-05 independent readback and official-source cross-check
+- Re-fetched [2004-05 JSON](../data/ucl-2004-05.json) and [research report](UCL_2004-05_DRAFT_REPORT.md) from GitHub `main`. No earlier seasons modified.
+- Independently recalculated every team row in eight UCL group tables (**32/32 pass**) using 96 recorded group fixtures, checked 14 two-leg knockout aggregates (**14/14 pass**), 125 total games, 246 unique player IDs with 16 qualifying clubs represented and all 96 grades unapproved.
+- UEFA 2004/05 official historical statistics and UEFA 2005 technical report verify **331 real goals**; adjudicated scoreboard sums **335** due to two 0–1 abandoned fixtures awarded 0–3. Both verdicts explicitly recorded as `awardedResult` with actual score at abandonment; app uses 331 instead of misleading score sum.
+- Confirmed official final **Liverpool 3–3 AC Milan**, **Liverpool win penalty shootout 3–2**. Confirmed official 2004-05 UCL top scorer **Ruud van Nistelrooy, 8 goals**; the JSON's 8 goals matches UEFA record.
+- 2004-05 still **PARTIAL / DRAFT / USER UNAPPROVED**. Full 16-team season-long starter-plus-backup eligibility, all player positions and 3-season independent source verification, rankings and Best XI are pending. GitHub JS parser passes, but public Pages live browser and CI deployment NOT verified.
+- Primary references: [UEFA 2004-05 statistics](https://www.uefa.com/uefachampionsleague/history/seasons/2004/statistics/), [UEFA 2005 Technical Report](https://www.uefa.com/newsfiles/368100.pdf), [RSSSF 2004-05 full European Cup results](https://www.rsssf.org/ec/ec200405.html).
+
 ## 2026-11-12 — UEFA Champions League 2004-05: 125-match archive and 246-candidate PARTIAL, UNAPPROVED DRAFT
 - [2004-05 UCL JSON](../data/ucl-2004-05.json) · [full scores, 32 group standings entries, knockout, 246-player register, 96 individual rating rationales](UCL_2004-05_DRAFT_REPORT.md) · [public site URL (NOT browser-verified)](https://wjdduddlf112.github.io/footballarch/?league=ucl&season=2004-05).
 - Structure: 32 groups entrants; 16 eligible R16 clubs; 8 groups, 96 group matches, 16 R16, 8 QF, 4 SF, 1 final = 125 match records. All group W/D/L/GF/GA/PTS calculated from match scores. 2005-05-25 final Liverpool 3-3 Milan, Liverpool win 3-2 on penalties.
