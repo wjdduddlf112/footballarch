@@ -152,7 +152,9 @@ function uclOverview(){
  h+='<p class="muted small">✓ '+(hasSecondGroup?'2차 조별리그':'16강')+' 진출 · 선수 평가 대상</p></section>';
  if(hasSecondGroup)h+='<section class="panel" style="margin-top:15px"><h2>2차 조별리그 · 평가 16개 구단</h2>';
  if(hasSecondGroup){for(const g of groups.filter(g=>g.stage===2))h+='<div style="margin-top:18px"><h3>Group '+esc(g.code)+'</h3>'+uclTable(g)+'</div>';h+='</section>';}
- h+='<section class="panel" style="margin-top:15px"><div class="section-heading"><h2>선수 평가 · 자료 수집 중</h2></div><p class="muted">경기 결과는 전수 기록했습니다. 선수 주전 11명·후보, 3시즌 개인 평가, 티어·순위와 Best XI는 아직 미완료입니다.</p><button class="pill" data-action="candidates">자료에 등록된 선수 '+people.length+'명</button></section>';
+ const rated=people.filter(p=>Boolean(p.tier)).length;
+ const xiCount=(data.bestXi||[]).length;
+ h+='<section class="panel" style="margin-top:15px"><div class="section-heading"><h2>선수 평가 · '+(rated||xiCount?"DRAFT · 미승인":"자료 수집 중")+'</h2></div><p class="muted">경기 결과 전수 기록 · 후보 '+people.length+'명 · 잠정 티어 '+rated+'명 · 미평가 '+(people.length-rated)+'명 · Best XI '+(xiCount===11?"11명 제안(미승인)":"미완료")+'. 출전·전술·과거 3시즌 독립 검증은 계속 필요합니다.</p><button class="pill" data-action="candidates">후보 '+people.length+'명 전체 보기</button></section>';
  if(st.showCandidates)h+=candidatePool();
  return h;
 }
