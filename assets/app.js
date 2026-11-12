@@ -238,8 +238,8 @@ function topPage(){
  let all=rankPlayers(),filtered=filterPlayers(all,true);let count=t=>all.filter(p=>p.tier===t).length;
  let cards='<div class="top-scores">'+["S","A+","A","A-"].map(t=>'<button class="top-score '+tierClass(t)+' '+(st.tier===t?"active":"")+'" data-toptier="'+t+'"><b>'+(({"A":"A0","B":"B0","C":"C0"})[t]||t)+'</b><small>'+count(t)+' players</small></button>').join("")+'</div>';
  let world=all.filter(p=>p.tier==="S"||p.tier==="A+").length;
- let body='<div class="section-heading"><div><h2>League Top Class</h2><p class="muted small">World Class (S · A+): '+world+'명 / League Top Class (S · A+ · A · A-): '+all.filter(top).length+'명 · 모두 잠정 평가</p></div><button class="pill '+(st.tier==="all"?"active":"")+'" data-toptier="all">All tiers</button></div>'+cards+'<div style="margin-top:15px">'+filters(true,false)+'</div>'+tablePlayers(filtered);
- if(!hasTop())body='<div class="section-heading"><h2>League Top Class</h2></div><div class="empty">등록된 선수 없음</div>';
+ let body='<div class="section-heading"><div><h2>'+(st.domain==="europe"?"European Top Class":"League Top Class")+'</h2><p class="muted small">World Class (S · A+): '+world+'명 / League Top Class (S · A+ · A · A-): '+all.filter(top).length+'명 · 모두 잠정 평가</p></div><button class="pill '+(st.tier==="all"?"active":"")+'" data-toptier="all">All tiers</button></div>'+cards+'<div style="margin-top:15px">'+filters(true,false)+'</div>'+tablePlayers(filtered);
+ if(!hasTop())body='<div class="section-heading"><h2>'+(st.domain==="europe"?"European Top Class":"League Top Class")+'</h2></div><div class="empty">등록된 선수 없음</div>';
  return '<section class="panel">'+body+'</section>'
 }
 function formation(){
@@ -482,7 +482,7 @@ else if(competitionGroups.europe.some(x=>x[0]===q.get("league"))){st.domain="eur
 if(yearList.includes(q.get("season")))st.season=q.get("season");
 if(["overview","formation","top","tiers","table","stats"].includes(q.get("view")))st.tab=q.get("view");
 if(q.get("view")==="ranking")st.showCandidates=true;
-if(st.domain==="europe"&&["formation","table"].includes(st.tab)&&!(st.league==="ucl"&&st.season==="1999-00"))st.tab="overview";
+if(st.domain==="europe"&&st.league!=="ucl"&&["formation","table"].includes(st.tab))st.tab="overview";
 if(st.home)render();else load();
 window.addEventListener("popstate",()=>{
  const p=new URLSearchParams(location.search);
@@ -494,7 +494,7 @@ window.addEventListener("popstate",()=>{
  st.home=false;st.domain=domestic?"domestic":"europe";st.league=id;
  st.season=yearList.includes(p.get("season"))?p.get("season"):"1999-00";
  st.tab=["overview","formation","top","tiers","table","stats"].includes(p.get("view"))?p.get("view"):"overview";
- if(st.domain==="europe"&&["formation","table"].includes(st.tab))st.tab="overview";
+ if(st.domain==="europe"&&st.league!=="ucl"&&["formation","table"].includes(st.tab))st.tab="overview";
  clearFilters();if(p.get("view")==="ranking")st.showCandidates=true;load();
 });
 })();
