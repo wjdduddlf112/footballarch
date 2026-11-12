@@ -1,0 +1,38 @@
+name: Verify UCL 2011-12 DRAFT and LIVE Pages
+on:
+  push:
+    branches: [main]
+    paths:
+      - data/ucl-2011-12.json
+      - assets/app.js
+      - scripts/verify-ucl-2011-12-draft.mjs
+      - scripts/verify-ucl-2011-12-live.mjs
+      - .github/workflows/verify-ucl-2011-12-draft-live.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  structure:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate 32 clubs, 125 results, 287 provisional UCL candidates
+        run: node scripts/verify-ucl-2011-12-draft.mjs
+  live:
+    needs: structure
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install Chromium Playwright
+        run: |
+          npm install --no-save playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Test UCL 2011-12 live page and 2010-11 regression
+        run: node scripts/verify-ucl-2011-12-live.mjs
