@@ -79,7 +79,7 @@ for(const pos of positions){
  for(let i=1;i<a.length;i++) assert(tiers.indexOf(a[i-1].tier)<=tiers.indexOf(a[i].tier),"tier rank inversion "+pos);
 }
 assert.equal(d.bestXi.length,11);
-assert.equal(d.knockout.find(k=>k.stage==="final")?.winner,"barcelona");
+assert.equal(d.knockout.find(k=>k.stage==="final")?.winner,"inter");
 assert.equal(d.qualifiers.length,16);
 assert.equal(d.meta.verification.approvedPlayerTiers,0);
 assert.equal(d.meta.verification.independentThreeSeasonPlayerAuditComplete,false);
