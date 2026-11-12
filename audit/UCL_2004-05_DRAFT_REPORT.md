@@ -19,7 +19,7 @@
 | Other confirmed substitutions / participation | 54 | Verify exact starts/role minutes for all candidates |
 | Official final starting XI | 22 (11 each) | 2005 final XI is not representative for whole season |
 | Used final substitutes | 6 | Three from each final club |
-| Birth dates | 206 populated | Most reused from existing Football Archive domestic league datasets, themselves DRAFT; two-source DOB audit incomplete |
+| Birth dates | 210 populated | Most reused from existing Football Archive domestic league datasets, themselves DRAFT; two-source DOB audit incomplete |
 | 2004-05 domestic league cross-links | 195 | Domestic 2004-05 starts are **NOT UCL starts** |
 | Current UCL detailed starts/minutes | 1 / 1 | Do not infer from domestic match starts |
 | 3-season qualitative provisional tiers | 96 graded / 150 unrated | Provisional, all user-unapproved |
@@ -461,13 +461,13 @@ Sources: [UEFA 2004-05 stats](https://www.uefa.com/uefachampionsleague/history/s
 |---|---|---|---|---|---:|---:|---:|---:|---:|---|
 | GK | 에드빈 주테비어 | Edwin Zoetebier | — | One-match starter | — | — | — | — | — | — |
 | GK | 에우렐류 고메스 | Heurelho Gomes | 1981-02-15 | One-match starter | — | — | — | — | — | A0 |
-| CB | 알렉스 | Alex | — | One-match starter | — | — | — | — | — | A0 |
+| CB | 알렉스 | Alex | 1982-06-17 | One-match starter | — | — | — | — | — | A0 |
 | CB | 빌프레트 바우마 | Wilfred Bouma | — | One-match starter | — | — | — | — | — | — |
 | LB | 이영표 | Lee Young-pyo | 1977-04-23 | One-match starter | — | — | — | — | — | A0 |
 | RB | 안드레 오이에르 | André Ooijer | — | One-match starter | — | — | — | — | — | — |
 | DM | 요한 포겔 | Johann Vogel | — | One-match starter | — | — | — | — | — | — |
-| CM | 마르크 판보멀 | Mark van Bommel | — | One-match starter | — | — | — | — | — | A+ |
-| CM | 필립 코쿠 | Phillip Cocu | — | One-match starter | — | — | — | — | — | A0 |
+| CM | 마르크 판보멀 | Mark van Bommel | 1977-04-22 | One-match starter | — | — | — | — | — | A+ |
+| CM | 필립 코쿠 | Phillip Cocu | 1970-10-29 | One-match starter | — | — | — | — | — | A0 |
 | CAM | 욘 더 용 | John de Jong | — | Substitute verified | — | — | — | — | — | — |
 | LW | 다마커스 비즐리 | DaMarcus Beasley | — | One-match starter | — | — | — | — | — | — |
 | RW | 박지성 | Park Ji-sung | 1981-02-25 | One-match starter | — | — | — | — | — | A0 |
@@ -590,7 +590,7 @@ Sources: [UEFA 2004-05 stats](https://www.uefa.com/uefachampionsleague/history/s
 | CM | 마니시 | Maniche | 1977-11-11 | One-match starter | — | — | — | — | — | A0 |
 | CAM | 디에구 | Diego | — | One-match starter | — | — | — | — | — | — |
 | RW | 카를루스 알베르투 | Carlos Alberto | — | One-match starter | — | — | — | — | — | — |
-| RW | 히카르두 콰레스마 | Ricardo Quaresma | — | One-match starter | — | — | — | — | — | B+ |
+| RW | 히카르두 콰레스마 | Ricardo Quaresma | 1983-09-26 | One-match starter | — | — | — | — | — | B+ |
 | ST | 베니 매카시 | Benni McCarthy | — | Substitute verified | — | — | — | — | — | — |
 | ST | 데를레이 | Derlei | — | One-match starter | — | — | — | — | — | — |
 | ST | 엘데르 포스티가 | Hélder Postiga | — | One-match starter | — | — | — | — | — | — |
@@ -632,7 +632,7 @@ Sources: [UEFA 2004-05 stats](https://www.uefa.com/uefachampionsleague/history/s
 | DM | 안드레아 피를로 | Andrea Pirlo | AC Milan | 1979-05-19 | A+ | 2002-03부터 2004-05 밀란의 레지스타 역할에서 경기 조율과 2004-05 UCL 4도움을 입증 |
 | DM | 클로드 마켈렐레 | Claude Makélélé | Chelsea FC | 1973-02-18 | A+ | 2002-03 레알 마드리드 중원 스크린 이후 2003-04·2004-05 첼시 수비형 중원에서 지속적인 전술적 대체 난이도 |
 | CM | 에메르송 | Emerson | Juventus FC | 1976-04-04 | A+ | 2002-03·2003-04 로마에서의 공수 균형과 2004-05 유벤투스 중앙의 전환 차단·경기 조율을 연결 |
-| CM | 마르크 판보멀 | Mark van Bommel | PSV Eindhoven | — | A+ | 2002-03·2003-04 PSV 중앙의 공격적 경기 조율이 2004-05 UCL 강팀 상대 압박과 전개까지 이어짐 |
+| CM | 마르크 판보멀 | Mark van Bommel | PSV Eindhoven | 1977-04-22 | A+ | 2002-03·2003-04 PSV 중앙의 공격적 경기 조율이 2004-05 UCL 강팀 상대 압박과 전개까지 이어짐 |
 | CM | 마이클 에시엔 | Michael Essien | Olympique Lyonnais | 1982-12-03 | A+ | 2002-03 바스티아 시기 이후 2003-04·2004-05 리옹에서 볼 회수·운반·UCL 5골로 중원 영향력 급상승 |
 | CM | 파트리크 비에이라 | Patrick Vieira | Arsenal FC | 1976-06-23 | A+ | 2002-03~2004-05 아스널 중원 볼 회수·전진 운반 및 위치 선정에서 최고 수준의 개인 기여 지속 |
 | CM | 사비 에르난데스 | Xavi Hernández | FC Barcelona | 1980-01-25 | A+ | 2002-03~2004-05 바르셀로나 중원 패스 조율의 핵심 가동률과 창조성을 평가 |
@@ -655,7 +655,7 @@ Sources: [UEFA 2004-05 stats](https://www.uefa.com/uefachampionsleague/history/s
 | GK | 에우렐류 고메스 | Heurelho Gomes | PSV Eindhoven | 1981-02-15 | A0 | 2004-05 PSV의 선발 골키퍼로 유럽 상위 토너먼트까지 높은 선방 기여; 유럽 무대 이전 2시즌 경험은 제한적 |
 | GK | 예지 두데크 | Jerzy Dudek | Liverpool FC | 1973-03-23 | A0 | 2004-05 결승 연속 선방 및 승부차기 기여에 가중하되 앞선 시즌의 경기력 기복과 주전 경쟁도 반영 |
 | GK | 비토르 바이아 | Vítor Baía | FC Porto | 1969-10-15 | A0 | 2002-03 UEFA컵·2003-04 UCL 골키퍼 개인상의 높은 수준 뒤 2004-05에도 포르투 골문을 지켰으나 최고점보다 기량·가동률 변화 반영 |
-| CB | 알렉스 | Alex | PSV Eindhoven | — | A0 | 2004-05 PSV 중앙 수비 주전으로 대인 방어와 공중볼 처리에 기여; 직전 유럽 대항전 2시즌 실적은 제한적 |
+| CB | 알렉스 | Alex | PSV Eindhoven | 1982-06-17 | A0 | 2004-05 PSV 중앙 수비 주전으로 대인 방어와 공중볼 처리에 기여; 직전 유럽 대항전 2시즌 실적은 제한적 |
 | CB | 크리스 | Cris | Olympique Lyonnais | 1977-06-03 | A0 | 2004-05 합류 후 리옹 중앙 수비에서 경기 지배력·대인 방어 수행, 앞선 2시즌 유럽 무대 지속성은 상대적으로 짧음 |
 | CB | 콜로 투레 | Kolo Touré | Arsenal FC | 1981-03-19 | A0 | 2003-04부터 안정적으로 성장한 중앙 수비 대인 능력과 2004-05 주전 역할을 평가 |
 | CB | 라파엘 마르케스 | Rafael Márquez | FC Barcelona | 1979-02-13 | A0 | 2003-04부터 바르셀로나 수비와 수미를 연결한 빌드업 및 2004-05 후방 역할 유지 |
@@ -670,7 +670,7 @@ Sources: [UEFA 2004-05 stats](https://www.uefa.com/uefachampionsleague/history/s
 | CM | 클라렌스 세도르프 | Clarence Seedorf | AC Milan | 1976-04-01 | A0 | 2002-03~2004-05 밀란 중원 볼 운반·전환 공격의 지속적인 개인 기여 |
 | CM | 후안 세바스티안 베론 | Juan Sebastián Verón | FC Internazionale Milano | 1975-03-09 | A0 | 2002-03 맨유, 2003-04 첼시와 2004-05 인테르 사이 출전 편차를 반영하되 당해 중원 패스 능력 평가 |
 | CM | 마니시 | Maniche | FC Porto | 1977-11-11 | A0 | 2002-03 UEFA컵, 2003-04 UCL의 강한 중원 득점 기여를 이어 2004-05에도 포르투 전진형 미드필더 기능 유지 |
-| CM | 필립 코쿠 | Phillip Cocu | PSV Eindhoven | — | A0 | 2002-03·2003-04 바르셀로나에서의 경기 운영 능력을 2004-05 PSV 중앙 수비·중원 역할로 연결 |
+| CM | 필립 코쿠 | Phillip Cocu | PSV Eindhoven | 1970-10-29 | A0 | 2002-03·2003-04 바르셀로나에서의 경기 운영 능력을 2004-05 PSV 중앙 수비·중원 역할로 연결 |
 | CM | 사비 알론소 | Xabi Alonso | Liverpool FC | 1981-11-25 | A0 | 2002-03·2003-04 소시에다드 경기 조율 경험에 2004-05 리버풀 중원 전개와 결승 득점 기여를 반영 |
 | CAM | 조 콜 | Joe Cole | Chelsea FC | 1981-11-08 | A0 | 2002-03 웨스트햄, 2003-04 첼시 적응에서 2004-05 공격적 중원 기술·찬스 창출 핵심으로 성장 |
 | CAM | 요안 미쿠 | Johan Micoud | SV Werder Bremen | 1973-07-24 | A0 | 2002-03·2003-04 베르더 중원 창조성 유지에 2004-05 UCL 전진 패스와 공격 전개 역할 반영 |
@@ -698,7 +698,7 @@ Sources: [UEFA 2004-05 stats](https://www.uefa.com/uefachampionsleague/history/s
 | RB | 스티브 피넌 | Steve Finnan | Liverpool FC | 1976-04-20 | B+ | 2003-04와 2004-05 오른쪽 풀백의 꾸준한 가동률·수비 밸런스, UCL 13경기 출전을 고려 |
 | DM | 아키스 지코스 | Akis Zikos | AS Monaco FC | 1974-06-01 | B+ | 모나코 수비형 중원의 위치 선정과 전환 차단을 2003-04에서 2004-05까지 이어감 |
 | CM | 팀 보로프스키 | Tim Borowski | SV Werder Bremen | 1980-05-02 | B+ | 2002-03~2004-05 베르더 중앙의 공격 연결과 활동량에서 꾸준한 주전 기여 |
-| RW | 히카르두 콰레스마 | Ricardo Quaresma | FC Porto | — | B+ | 2002-03 스포르팅 성장 이후 2003-04 바르셀로나 제한된 기용을 거쳐 2004-05 포르투 오른쪽 측면에서 재기 |
+| RW | 히카르두 콰레스마 | Ricardo Quaresma | FC Porto | 1983-09-26 | B+ | 2002-03 스포르팅 성장 이후 2003-04 바르셀로나 제한된 기용을 거쳐 2004-05 포르투 오른쪽 측면에서 재기 |
 | ST | 하비에르 사비올라 | Javier Saviola | AS Monaco FC | 1981-12-11 | B+ | 2002-03 바르셀로나 전방 활약과 2004-05 모나코에서의 골문 앞 움직임을 비교; 꾸준한 정상급 여부 유보 |
 
 ### Individual source provenance
