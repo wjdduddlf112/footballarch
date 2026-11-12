@@ -2045,3 +2045,17 @@ Source TXT instruction adapted to the **2009-10 season only**. Candidate roster 
 - **Actual Playwright Chromium GitHub Pages browser smoke: success**, after fixing Best XI detail-table rendering for UEFA pages. Verified published 2006-07 UCL 278 entries / 16 club tables / 11-person XI / tournament display, plus 2005-06 UCL 248-player regression.
 - GitHub Actions successful run: https://github.com/wjdduddlf112/footballarch/actions/runs/43158089302
 - Full historical verification of each player's official UCL appearances, starts, actual majority position, and past two seasons is still **pending**; success is for structure and the browser integration only.
+
+
+## 2026-11-12 — UEFA Champions League 2007-08 (DRAFT, source-led but historical player audit pending)
+
+- Competition: **2007-08 UCL exclusively**, not the UEFA Cup. 2005-06 / 2006-07 / 2007-08 recency-weighted evaluation (latest highest), individual influence prioritized above team finish.
+- `data/ucl-2007-08.json`: 32 group-stage clubs, 8 groups, 96 group matches plus 29 knockout matches, 125 matches and 330 goals. All group P/W/D/L/GF/GA/points independently recomputed from collected fixtures.
+- 16 clubs that reached the round of 16; per-club 11 provisional starters (176 total), max 1 explicit backup per position (123 backups); **299 player records**.
+- All 299 have Korean+original names, original club name, birth date; **source-quality note**: large portion reused from previous domestic DRAFT archives, not independently double-sourced. Olympiacos Cristian Ledesma DOB conflict awaits resolution.
+- All 299 provisional qualitative individual tiers and within-position rankings have been staged, **none user-approved**. S 2 / A+ 51 / A 83 / A- 71 / B+ 82 / B 10. World Class 53, European Top Class 207 (inclusive).
+- UEFA 2007-08 official statistical summary attached to 17 selected player goal figures, 6 assists figures, 5 goalkeeper saves figures; unknown per-player starts, minutes, and detailed appearances remain null.
+- Best XI `4-2-3-1` includes Čech; Daniel Alves, Terry, Ferdinand, Evra; Carrick, Lampard; Gerrard, Babel, Cristiano Ronaldo; Drogba. All provisional, matching selected role positions.
+- Source report `audit/UCL_2007_08_DRAFT_REPORT.md` contains all 32 standings, 125 results, 16 team full candidate tables, 299 player position rankings, tier distribution, and 11 nominated Best XI.
+- **Live GitHub Pages and structural audit PASS:** GitHub Actions [run 43166785305](https://github.com/wjdduddlf112/footballarch/actions/runs/43166785305). Tests confirmed 16 detailed club tables/299 rows, 11 XI player rows, 2006-07 UCL regression. GitHub Pages build [run 43166785160](https://github.com/wjdduddlf112/footballarch/actions/runs/43166785160) succeeded.
+- **Not yet verified:** independently proving each 2007-08 UEFA main-stage appearance/start/minute, actual predominant position, past-two-season original-source individual contributions, or full independent dual-sourced dates of birth. Official approval = **0**.
