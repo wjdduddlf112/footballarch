@@ -9,6 +9,7 @@ const ranks=["S","A+","A","A-","B+","B","B-","C+","C","C-","D"];
 const positions=["GK","CB","LB","RB","DM","CM","CAM","LW","RW","ST"];
 const slots433=[["LW",15,13],["ST",50,11],["RW",85,13],["CM",30,37],["CAM",70,37],["DM",50,54],["LB",13,73],["CB",37,76],["CB",63,76],["RB",87,73],["GK",50,91]];
 const slots442=[["ST",35,14],["ST",65,14],["LW",12,40],["CM",42,45],["DM",60,52],["RW",88,40],["LB",13,74],["CB",37,76],["CB",63,76],["RB",87,74],["GK",50,91]];
+const slots4411=[["ST",50,12],["CAM",50,28],["LW",12,45],["CM",40,53],["DM",61,56],["RW",88,45],["LB",13,76],["CB",37,79],["CB",63,79],["RB",87,76],["GK",50,92]];
 const slots4312=[["ST",33,12],["ST",67,12],["CAM",50,31],["CM",29,47],["CM",71,47],["DM",50,59],["LB",13,76],["CB",37,79],["CB",63,79],["RB",87,76],["GK",50,91]];
 const slots3412=[["ST",34,13],["ST",66,13],["CAM",50,34],["CM",33,51],["DM",67,51],["LB",9,63],["RB",91,63],["CB",25,77],["CB",50,81],["CB",75,77],["GK",50,93]];
 const slots352=[["ST",34,13],["ST",66,13],["CM",30,43],["CM",70,43],["DM",50,55],["LB",10,62],["RB",90,62],["CB",25,78],["CB",50,81],["CB",75,78],["GK",50,93]];
@@ -243,8 +244,8 @@ function topPage(){
 }
 function formation(){
  let selection=(data.bestXi||[]).slice(0,11),used={};
- let formationName=["3-4-1-2","3-5-2","4-3-1-2","4-4-2","4-2-3-1","4-3-3"].includes(data?.meta?.formation)?data.meta.formation:"4-3-3";
- let layout=formationName==="3-5-2"?slots352:formationName==="3-4-1-2"?slots3412:formationName==="4-3-1-2"?slots4312:formationName==="4-2-3-1"?slots4231:formationName==="4-4-2"?slots442:slots433;
+ let formationName=["3-4-1-2","3-5-2","4-3-1-2","4-4-1-1","4-4-2","4-2-3-1","4-3-3"].includes(data?.meta?.formation)?data.meta.formation:"4-3-3";
+ let layout=formationName==="3-5-2"?slots352:formationName==="3-4-1-2"?slots3412:formationName==="4-3-1-2"?slots4312:formationName==="4-2-3-1"?slots4231:formationName==="4-4-1-1"?slots4411:formationName==="4-4-2"?slots442:slots433;
  // A classic 4-4-2 may contain two CM players rather than one CM plus one DM.
  // Respect existing 1 CM + 1 DM data for other seasons while rendering both CMs here.
  if(formationName==="4-4-2"&&selection.filter(p=>p.position==="CM").length===2&&selection.filter(p=>p.position==="CAM").length===1&&selection.filter(p=>p.position==="DM").length===1){
