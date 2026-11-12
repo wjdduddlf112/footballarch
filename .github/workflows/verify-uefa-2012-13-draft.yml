@@ -1,0 +1,19 @@
+name: Verify UEFA 2012-13 DRAFT archive
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/ucl-2012-13.json'
+      - 'data/uel-2012-13.json'
+      - 'scripts/verify-uefa-2012-13-draft.mjs'
+      - '.github/workflows/verify-uefa-2012-13-draft.yml'
+  workflow_dispatch:
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate both competitions and all group tables
+        run: node scripts/verify-uefa-2012-13-draft.mjs
