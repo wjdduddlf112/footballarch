@@ -57,7 +57,7 @@ for(const spec of REQUIRED){
  if(spec.id==="ucl"){
   assert.equal(champion.winner,"barcelona");
   assert.deepEqual(champion.score,[3,1]);
-  assert.equal(fmatch.extraTime,true);
+  assert.equal(fmatch.extraTime,false);
   const qualified=new Set(d.groups.flatMap(g=>g.table.slice(0,2).map(t=>t.club)));
   assert.deepEqual(new Set(d.evaluatedClubs),qualified,fail("16 UCL qualifiers"));
  }else{
