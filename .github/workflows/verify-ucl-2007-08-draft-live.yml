@@ -1,0 +1,38 @@
+name: Verify UCL 2007-08 DRAFT and LIVE Pages
+on:
+  push:
+    branches: [main]
+    paths:
+      - data/ucl-2007-08.json
+      - assets/app.js
+      - scripts/verify-ucl-2007-08-draft.mjs
+      - scripts/verify-ucl-2007-08-live.mjs
+      - .github/workflows/verify-ucl-2007-08-draft-live.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  structure:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate UCL 2007-08 match results and DRAFT player roster
+        run: node scripts/verify-ucl-2007-08-draft.mjs
+  live:
+    needs: structure
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install Chromium Playwright
+        run: |
+          npm install --no-save playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Test real UCL 2007-08 Pages and 2006-07 regression
+        run: node scripts/verify-ucl-2007-08-live.mjs
