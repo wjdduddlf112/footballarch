@@ -1,19 +1,42 @@
-name: Verify UEFA 2012-13 DRAFT archive
+name: Verify UEFA 2012-13 DRAFT archive and LIVE Pages
 on:
   push:
     branches: [main]
     paths:
       - 'data/ucl-2012-13.json'
       - 'data/uel-2012-13.json'
+      - 'assets/app.js'
+      - 'index.html'
       - 'scripts/verify-uefa-2012-13-draft.mjs'
+      - 'scripts/verify-uefa-2012-13-live.mjs'
       - '.github/workflows/verify-uefa-2012-13-draft.yml'
   workflow_dispatch:
+permissions:
+  contents: read
 jobs:
-  audit:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
+  structure:
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
-      - name: Validate both competitions and all group tables
-        run: node scripts/verify-uefa-2012-13-draft.mjs
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate JavaScript and both UEFA 2012-13 tournament files
+        run: |
+          node --check assets/app.js
+          node scripts/verify-uefa-2012-13-draft.mjs
+  live-browser:
+    needs: structure
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install Playwright Chromium
+        run: |
+          npm install --no-save playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Browser smoke - UCL and UEL plus regression
+        run: node scripts/verify-uefa-2012-13-live.mjs
