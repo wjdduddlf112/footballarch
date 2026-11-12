@@ -2009,3 +2009,18 @@ Source TXT instruction adapted to the **2009-10 season only**. Candidate roster 
 - UNFP award evidence: Juninho player of season, Coupet goalkeeper, Ribéry newcomer; Pauleta 21 goals. 4-4-2 season XI is proposed_unapproved.
 - Prior 2003-04 Archive links 54, prior 2004-05 Archive links 64; historical independent audit partial, current BDFutbol club season lineups used, positional shares incomplete.
 - DRAFT artifacts: data/ligue1-2005-06.json, audit/LIGUE1_2005-06_RAW_ROSTER_TRANSCRIPTION.txt, audit/LIGUE1_2005-06_DRAFT_FULL_REPORT.md, scripts/verify-ligue1-2005-06.mjs, workflow; CI statuses reported separately after deployment.
+
+
+## 2026-11-12 — UEFA Champions League 2005-06 (DRAFT, partially verified)
+
+- Data: `data/ucl-2005-06.json`; report: `audit/UCL_2005_06_DRAFT_REPORT.md`.
+- 32 confirmed group-stage clubs; 8 groups; 96 group fixtures and 29 knockout fixtures = 125 scored fixtures; 285 recorded goals.
+- All eight group tables recomputed from underlying fixtures; 16 round-of-16 evaluated clubs matched.
+- 16 provisional representative starting XIs (176 starter candidates) and 72 position-specific backup candidates = **248** candidates.
+- Birth dates and Korean display names are present for 248/248. Some imported historical DOB evidence has not yet been independently rechecked.
+- UCL-specific appearance/start/minute/goal/assist facts populated only for **18** players whose competition tables were examined. All other unknowns are null, not zero.
+- Individual qualitative tier drafts: **129** players, with rank within their current position and status `draft_unapproved`. Unrated **119** players remain `evidence_pending`, `tier:null`, `rank:null`.
+- Proposed unapproved 4-4-2 Best XI: Jens Lehmann; Emmanuel Eboué, Kolo Touré, Carles Puyol, Giovanni van Bronckhorst; Andrea Pirlo, Deco, Ronaldinho, Ludovic Giuly; Thierry Henry, Samuel Eto'o.
+- The 2005-06 UCL per-club XI / player position selection remains **provisional** and not verified against all match lineups, and the last 2 seasons of each individual are not fully independently audited.
+- Results, tier list, rankings and lineup remain `draft_unapproved`. No final user approval.
+- Browser runtime integration verification, individual eligibility, 3-season corroboration and history audit are separately pending.
