@@ -52,7 +52,7 @@ try{
  await waitSeason("2008-09",292);
  await page.locator('button[data-tab="tiers"]').click();
  assert.equal(await page.locator(".tier-directory-section").count(),16,"2008-09 regression club groups");
- assert.equal(await page.locator("tr[data-player]").count(),299,"2008-09 regression candidates");
+ assert.equal(await page.locator("tr[data-player]").count(),292,"2008-09 regression candidates");
  assert.deepEqual(errors,[],"browser JavaScript exceptions");
  console.log("PASS: UCL 2009-10 deployed site 32 clubs, 125 matches, 288 candidate rows, 16 club groups, 11 formation selections; UCL 2008-09 regression");
 }finally{await browser.close();}
