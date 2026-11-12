@@ -10,7 +10,9 @@
     "assessmentEnd": "2007-08",
     "playerSelectionStatus": "16_club_provisional_11_starters_per_club_plus_one_backup_per_position_pending_UCL_matchwise_qualification",
     "bestXiReview": {
-      "status": "evidence_pending"
+      "status": "proposed_unapproved",
+      "formation": "4-2-3-1",
+      "notes": "Eleven rated candidates matched to actual provisional primary positions. Top performers not selected due to positional competition remain eligible for revisions. 4-2-3-1 period-representative, not independently established exact tournament-wide mode."
     },
     "verification": {
       "totalClubs": 32,
@@ -45,9 +47,12 @@
       },
       "verifiedSelectedUclGoalNumbers": 17,
       "verifiedSelectedUclAssistsNumbers": 6,
-      "verifiedSelectedUclSavesNumbers": 5
+      "verifiedSelectedUclSavesNumbers": 5,
+      "proposedBestXiCount": 11
     },
-    "playerTierStatus": "2007_08_provisional_tier_ranking_threeseason_not_independently_verified"
+    "playerTierStatus": "2007_08_provisional_tier_ranking_threeseason_not_independently_verified",
+    "formation": "4-2-3-1",
+    "formationBasis": "2007-08 UEFA technical report lists 4-2-3-1 as a contemporary formation for major participating clubs, including Liverpool and Roma; not statistically proven most frequent across the whole competition"
   },
   "clubs": [
     {
@@ -18292,7 +18297,74 @@
       "rankStatus": "draft_within_tier_order_pending_individual_match_audit"
     }
   ],
-  "bestXi": [],
+  "bestXi": [
+    {
+      "position": "GK",
+      "playerId": "ucl-2007-08-chelsea-petrcech",
+      "reason": "UEFA 2008 최우수 골키퍼, 결승까지의 안정적인 수비 기여",
+      "status": "proposed_unapproved"
+    },
+    {
+      "position": "RB",
+      "playerId": "ucl-2007-08-sevilla-danialves",
+      "reason": "공격 가담과 후방 연결을 동반한 최상위 측면 개인 활약",
+      "status": "proposed_unapproved"
+    },
+    {
+      "position": "CB",
+      "playerId": "ucl-2007-08-chelsea-johnterry",
+      "reason": "2008 UEFA 최우수 수비수, 수비 지휘와 1대1 대응",
+      "status": "proposed_unapproved"
+    },
+    {
+      "position": "CB",
+      "playerId": "ucl-2007-08-manutd-rioferdinand",
+      "reason": "상위 강팀 상대 중앙 수비 리더십과 안정적인 빌드업",
+      "status": "proposed_unapproved"
+    },
+    {
+      "position": "LB",
+      "playerId": "ucl-2007-08-manutd-patriceevra",
+      "reason": "왼쪽 1대1 수비와 공간 회복, 공격 전환 지원",
+      "status": "proposed_unapproved"
+    },
+    {
+      "position": "DM",
+      "playerId": "ucl-2007-08-manutd-michaelcarrick",
+      "reason": "중원 수비 커버와 후방 전진 패스의 균형",
+      "status": "proposed_unapproved"
+    },
+    {
+      "position": "CM",
+      "playerId": "ucl-2007-08-chelsea-franklampard",
+      "reason": "2008 UEFA 최우수 미드필더, 중원 전진과 공격 연결",
+      "status": "proposed_unapproved"
+    },
+    {
+      "position": "CAM",
+      "playerId": "ucl-2007-08-liverpool-stevengerrard",
+      "reason": "2007-08 UCL 6골·4도움, 2선 공격과 경기 전환",
+      "status": "proposed_unapproved"
+    },
+    {
+      "position": "LW",
+      "playerId": "ucl-2007-08-liverpool-ryanbabel",
+      "reason": "2007-08 UCL 5득점, 왼쪽에서 전진 침투와 슈팅",
+      "status": "proposed_unapproved"
+    },
+    {
+      "position": "RW",
+      "playerId": "ucl-2007-08-manutd-cristianoronaldo",
+      "reason": "2008 UEFA 올해의 클럽 선수·최우수 공격수, UCL 8득점",
+      "status": "proposed_unapproved"
+    },
+    {
+      "position": "ST",
+      "playerId": "ucl-2007-08-chelsea-didierdrogba",
+      "reason": "UEFA 본선 6득점과 강팀 상대 1대1·전방 공중볼 영향력",
+      "status": "proposed_unapproved"
+    }
+  ],
   "sources": [
     {
       "url": "https://www.rsssf.org/ec/ec200708.html",
@@ -18309,6 +18381,10 @@
     {
       "url": "https://www.uefa.com/uefasupercup/news/0250-0c50f4c79042-d6e8d7b8e348-1000--inter-monopolise-uefa-club-football-awards/",
       "kind": "UEFA 2008 club football best player, position awards"
+    },
+    {
+      "url": "https://www.skysports.com/football/news/4061861/ronaldo-scoops-uefa-prize",
+      "kind": "2008 UEFA Club Football Awards actual winners: Cech Terry Lampard Ronaldo"
     }
   ],
   "audit": {
@@ -18322,7 +18398,8 @@
       "Corrected Olympiacos defender Júlio César birth date to 1978-11-18; avoid conflation with Inter goalkeeper",
       "Olympiacos 2007 period source, Lyon official DFB Champions League squad, Porto DFB UEFA squad, and Celtic player records used to fill DOB",
       "299 source-led provisional tiers graded with unique ranks per position; period 2007-08 weighted over previous 2 seasons",
-      "UEFA 2007-08 individual leader statistics for selected players, unknowns left null; UEFA 2008 official season positional awards sourced"
+      "UEFA 2007-08 individual leader statistics for selected players, unknowns left null; UEFA 2008 official season positional awards sourced",
+      "Best XI contains 11 different 2007-08 UCL qualifying-club candidates, matching eligible nomination positions and 4-2-3-1 slots"
     ],
     "unresolved": [
       "All UCL match identities and dates sourced to RSSSF; UEFA fixture-by-fixture independent cross-check still pending",
@@ -18331,7 +18408,8 @@
       "Backup includes few players not yet independently confirmed appearing UCL main competition; candidate eligibility review remains required",
       "Cristian Ledesma DOB 1978-11-29 on contemporary 2007 squad guide and historic team registers, but later biographies say 1978-12-29; marked source conflict, pending resolution",
       "0 ungraded candidates require source verification",
-      "All tier/rank approval pending full UCL season and previous 2 seasons individual original data, no invented appearances/starts"
+      "All tier/rank approval pending full UCL season and previous 2 seasons individual original data, no invented appearances/starts",
+      "Best XI is unapproved and depends on individual historical verification and most-common formation research"
     ],
     "review": "draft_unapproved",
     "clubDraftFormations": {
