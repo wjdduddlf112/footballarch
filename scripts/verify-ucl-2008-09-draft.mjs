@@ -69,7 +69,7 @@ for(const p of d.players){
   assert.equal(p.review,"draft_unapproved");
   assert(Number.isInteger(p.rank)&&p.rank>0);
   assert(p.tierReview?.length>10);
-  assert.deepEqual(p.threeSeasonAssessment?.seasons,["2006-07","2006-07","2008-09"]);
+  assert.deepEqual(p.threeSeasonAssessment?.seasons,["2006-07","2007-08","2008-09"]);
  }
 }
 for(const pos of positions){
