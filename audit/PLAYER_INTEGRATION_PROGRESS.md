@@ -2024,3 +2024,17 @@ Source TXT instruction adapted to the **2009-10 season only**. Candidate roster 
 - The 2005-06 UCL per-club XI / player position selection remains **provisional** and not verified against all match lineups, and the last 2 seasons of each individual are not fully independently audited.
 - Results, tier list, rankings and lineup remain `draft_unapproved`. No final user approval.
 - Browser runtime integration verification, individual eligibility, 3-season corroboration and history audit are separately pending.
+
+## 2026-11-12 — UEFA Champions League 2006-07 (DRAFT, partial verification)
+
+- Competition scope **only UCL 2006-07**; no UEL executed. Status `draft_unapproved`.
+- Data: `data/ucl-2006-07.json`; full audit report: `audit/UCL_2006_07_DRAFT_REPORT.md`.
+- Groups: 32 unique clubs across 8 groups, 96 matches; knockout 29 matches = 125 games and 309 goals.
+- 16 round-of-16 clubs; 176 provisional XI candidates (11 per club) and 102 backups = 278 player entries.
+- Date of birth, Korean and original player names, and historic club name populated 278/278. Some domestic DRAFT imports lack independent cross-check.
+- 198 candidate tiers with provisional within-position ranks; 80 candidates `tier: null` `review: evidence_pending`. No approval.
+- Official UEFA 2006-07 individual statistics and 2007 awards used for selected evidence-backed individual facts (Kaká, Petr Čech, Seedorf, Maldini, Giggs, Cristiano Ronaldo, Drogba, etc.). Unknown starts, minutes, goals and assists remain null, not zero.
+- UEFA 2006/07 technical report says the 4-4-2 and offshoots (4-5-1 / 4-4-1-1) were preferred by 10/16 sides; nominated Best XI is **4-4-1-1**, eleven distinct players, `proposed_unapproved`.
+- Existing site preserved, adding only 4-4-1-1 pitch slots. Other seasons and domestic data not changed.
+- Independent 278-player UEFA appearance/starting stats, season modal roles, comprehensive recency-weighted historical evidence still pending. Individual tiers are explicitly a draft, **not completed historical validation**.
+- Regression/Browser test workflow: `verify-ucl-2006-07-draft-live.yml`. Structure and live statuses must be read from GitHub Actions, not inferred from commit.
