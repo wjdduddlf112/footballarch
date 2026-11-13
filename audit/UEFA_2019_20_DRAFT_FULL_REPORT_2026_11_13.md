@@ -297,7 +297,7 @@ Covid-19: UCL QF onward single-leg, UEL QF onward single-leg plus Sevilla/Roma a
 | CB | 주전 | 프레스넬 킴펨베 | Presnel Kimpembe | 1995-08-13 | B+ | 29 | Individual match unverified |
 | CB | 후보 | 압두 디알로 | Abdou Diallo | 1996-05-04 | B+ | 39 | Individual match unverified |
 | LB | 주전 | 후안 베르나트 | Juan Bernat | 1993-03-01 | A- | 9 | Individual match unverified |
-| LB | 후보 | 레뱅 퀴르자와 | Layvin Kurzawa | 1992-09-04 | B0 | 21 | Individual match unverified |
+| LB | 후보 | 레뱅 퀴르자와 | Layvin Kurzawa | 1992-09-04 | B0 | 23 | Individual match unverified |
 | RB | 주전 | 틸로 케러 | Thilo Kehrer | 1996-09-21 | B+ | 17 | Individual match unverified |
 | RB | 후보 | 토마 뫼니에 | Thomas Meunier | 1991-09-12 | B+ | 19 | Individual match unverified |
 | DM | 주전 | 마르키뉴스 | Marquinhos | 1994-05-14 | A+ | 2 | Official observer verified |
@@ -321,7 +321,7 @@ Covid-19: UCL QF onward single-leg, UEL QF onward single-leg plus Sevilla/Roma a
 | CB | 주전 | 라파엘 바란 | Raphaël Varane | 1993-04-25 | A0 | 8 | Individual match unverified |
 | CB | 후보 | 에데르 밀리탕 | Éder Militão | 1998-01-18 | B+ | 40 | Individual match unverified |
 | LB | 주전 | 페를랑 멘디 | Ferland Mendy | 1995-06-08 | A- | 8 | Individual match unverified |
-| LB | 후보 | 마르셀루 | Marcelo | 1988-05-12 | B0 | 19 | Individual match unverified |
+| LB | 후보 | 마르셀루 | Marcelo | 1988-05-12 | B0 | 21 | Individual match unverified |
 | RB | 주전 | 다니 카르바할 | Dani Carvajal | 1992-01-11 | A- | 6 | Individual match unverified |
 | RB | 후보 | 나초 페르난데스 | Nacho Fernández | 1990-01-18 | B0 | 25 | Individual match unverified |
 | DM | 주전 | 카세미루 | Casemiro | 1992-02-23 | A0 | 4 | Individual match unverified |
@@ -345,7 +345,7 @@ Covid-19: UCL QF onward single-leg, UEL QF onward single-leg plus Sevilla/Roma a
 | CB | 주전 | 다비드 알라바 | David Alaba | 1992-06-24 | A+ | 1 | Official observer verified |
 | CB | 후보 | 니클라스 쥘레 | Niklas Süle | 1995-09-03 | B+ | 42 | Individual match unverified |
 | LB | 주전 | 알폰소 데이비스 | Alphonso Davies | 2000-11-02 | A+ | 1 | Official observer verified |
-| LB | 후보 | 뤼카 에르난데스 | Lucas Hernández | 1996-02-14 | B0 | 20 | Individual match unverified |
+| LB | 후보 | 뤼카 에르난데스 | Lucas Hernández | 1996-02-14 | B0 | 22 | Individual match unverified |
 | RB | 주전 | 요주아 키미히 | Joshua Kimmich | 1995-02-08 | A+ | 1 | Official observer verified |
 | RB | 후보 | 벤자맹 파바르 | Benjamin Pavard | 1996-03-28 | A0 | 4 | Individual match unverified |
 | DM | 주전 | 티아고 알칸타라 | Thiago Alcântara | 1991-04-11 | A+ | 1 | Official observer verified |
@@ -368,9 +368,9 @@ Covid-19: UCL QF onward single-leg, UEL QF onward single-leg plus Sevilla/Roma a
 | GK | 후보 | 파울로 가사니가 | Paulo Gazzaniga | 1992-01-02 | B0 | 19 | Individual match unverified |
 | CB | 주전 | 토비 알데르베이럴트 | Toby Alderweireld | 1989-03-02 | A- | 26 | Individual match unverified |
 | CB | 주전 | 다빈손 산체스 | Davinson Sánchez | 1996-06-12 | B+ | 31 | Individual match unverified |
-| CB | 후보 | 얀 베르통언 | Jan Vertonghen | 1987-04-24 | B+ | 43 | Individual match unverified |
-| LB | 주전 | 벤 데이비스 | Ben Davies | 1993-04-24 | B0 | 15 | Individual match unverified |
-| LB | 후보 | 라이언 세세뇽 | Ryan Sessegnon | 2000-05-18 | B- | 27 | Individual match unverified |
+| CB | 후보 | 얀 베르통언 | Jan Vertonghen | 1987-04-24 | B+ | 44 | Individual match unverified |
+| LB | 주전 | 벤 데이비스 | Ben Davies | 1993-04-24 | B0 | 17 | Individual match unverified |
+| LB | 후보 | 라이언 세세뇽 | Ryan Sessegnon | 2000-05-18 | B- | 29 | Individual match unverified |
 | RB | 주전 | 세르주 오리에 | Serge Aurier | 1992-12-24 | B+ | 16 | Individual match unverified |
 | DM | 주전 | 해리 윙크스 | Harry Winks | 1996-02-02 | B+ | 15 | Individual match unverified |
 | DM | 후보 | 에릭 다이어 | Eric Dier | 1994-01-15 | B0 | 26 | Individual match unverified |
@@ -392,9 +392,9 @@ Covid-19: UCL QF onward single-leg, UEL QF onward single-leg plus Sevilla/Roma a
 | GK | 후보 | 클라우디오 브라보 | Claudio Bravo | 1983-04-13 | C+ | 30 | Individual match unverified |
 | CB | 주전 | 에므리크 라포르트 | Aymeric Laporte | 1994-05-27 | A- | 24 | Individual match unverified |
 | CB | 주전 | 페르난지뉴 | Fernandinho | 1985-05-04 | B+ | 32 | Individual match unverified |
-| CB | 후보 | 니콜라스 오타멘디 | Nicolás Otamendi | 1988-02-12 | B0 | 49 | Individual match unverified |
-| LB | 주전 | 벵자맹 멘디 | Benjamin Mendy | 1994-07-17 | B0 | 16 | Individual match unverified |
-| LB | 후보 | 올렉산드르 진첸코 | Oleksandr Zinchenko | 1996-12-15 | B0 | 23 | Individual match unverified |
+| CB | 후보 | 니콜라스 오타멘디 | Nicolás Otamendi | 1988-02-12 | B0 | 50 | Individual match unverified |
+| LB | 주전 | 벵자맹 멘디 | Benjamin Mendy | 1994-07-17 | B0 | 18 | Individual match unverified |
+| LB | 후보 | 올렉산드르 진첸코 | Oleksandr Zinchenko | 1996-12-15 | B0 | 25 | Individual match unverified |
 | RB | 주전 | 카일 워커 | Kyle Walker | 1990-05-28 | A- | 8 | Individual match unverified |
 | RB | 후보 | 주앙 칸셀루 | João Cancelo | 1994-05-27 | B0 | 24 | Individual match unverified |
 | DM | 주전 | 로드리 | Rodri | 1996-06-22 | A- | 12 | Individual match unverified |
@@ -417,7 +417,7 @@ Covid-19: UCL QF onward single-leg, UEL QF onward single-leg plus Sevilla/Roma a
 | CB | 주전 | 하파에우 톨로이 | Rafael Tolói | 1990-10-10 | A0 | 10 | Individual match unverified |
 | CB | 주전 | 호세 루이스 팔로미노 | José Luis Palomino | 1990-01-05 | A- | 18 | Individual match unverified |
 | CB | 주전 | 베라트 짐시티 | Berat Djimsiti | 1993-02-19 | A- | 15 | Individual match unverified |
-| CB | 후보 | 마티아 칼다라 | Mattia Caldara | 1994-05-05 | B0 | 47 | Individual match unverified |
+| CB | 후보 | 마티아 칼다라 | Mattia Caldara | 1994-05-05 | B0 | 48 | Individual match unverified |
 | LB | 주전 | 로빈 고젠스 | Robin Gosens | 1994-07-05 | A0 | 4 | Individual match unverified |
 | RB | 주전 | 한스 하테부르 | Hans Hateboer | 1994-01-09 | A- | 7 | Individual match unverified |
 | DM | 주전 | 마르턴 더 론 | Marten de Roon | 1991-03-29 | A- | 8 | Individual match unverified |
@@ -439,7 +439,7 @@ Covid-19: UCL QF onward single-leg, UEL QF onward single-leg plus Sevilla/Roma a
 | CB | 주전 | 마테이스 더리흐트 | Matthijs de Ligt | 1999-08-12 | A- | 20 | Individual match unverified |
 | CB | 후보 | 조르조 키엘리니 | Giorgio Chiellini | 1984-08-14 | A+ | 5 | Individual match unverified |
 | LB | 주전 | 알렉스 산드루 | Alex Sandro | 1991-01-26 | A- | 6 | Individual match unverified |
-| LB | 후보 | 다닐루 | Danilo | 1991-07-15 | B0 | 22 | Individual match unverified |
+| LB | 후보 | 다닐루 | Danilo | 1991-07-15 | B0 | 24 | Individual match unverified |
 | RB | 주전 | 후안 콰드라도 | Juan Cuadrado | 1988-05-26 | B+ | 9 | Individual match unverified |
 | RB | 후보 | 마티아 데 실리오 | Mattia De Sciglio | 1992-10-20 | B- | 26 | Individual match unverified |
 | DM | 주전 | 미랄렘 피아니치 | Miralem Pjanić | 1990-04-02 | A+ | 3 | Individual match unverified |
@@ -461,7 +461,7 @@ Covid-19: UCL QF onward single-leg, UEL QF onward single-leg plus Sevilla/Roma a
 | CB | 주전 | 펠리피 | Felipe | 1989-05-16 | A- | 22 | Individual match unverified |
 | CB | 후보 | 호세 마리아 히메네스 | José María Giménez | 1995-01-20 | B+ | 38 | Individual match unverified |
 | LB | 주전 | 헤낭 로디 | Renan Lodi | 1998-04-08 | B+ | 10 | Individual match unverified |
-| LB | 후보 | 마누 산체스 | Manu Sánchez | 2000-08-24 | C+ | 28 | Individual match unverified |
+| LB | 후보 | 마누 산체스 | Manu Sánchez | 2000-08-24 | C+ | 30 | Individual match unverified |
 | RB | 주전 | 키어런 트리피어 | Kieran Trippier | 1990-09-19 | B+ | 11 | Individual match unverified |
 | RB | 후보 | 산티아고 아리아스 | Santiago Arias | 1992-01-13 | B0 | 22 | Individual match unverified |
 | DM | 주전 | 토마스 파르티 | Thomas Partey | 1993-06-13 | A0 | 6 | Individual match unverified |
@@ -483,9 +483,9 @@ Covid-19: UCL QF onward single-leg, UEL QF onward single-leg plus Sevilla/Roma a
 | GK | 후보 | 아드리안 | Adrián | 1987-01-03 | B0 | 18 | Individual match unverified |
 | CB | 주전 | 버질 판데이크 | Virgil van Dijk | 1991-07-08 | A+ | 2 | Official observer verified |
 | CB | 주전 | 조 고메즈 | Joe Gomez | 1997-05-23 | A+ | 4 | Individual match unverified |
-| CB | 후보 | 데얀 로브렌 | Dejan Lovren | 1989-07-05 | C+ | 51 | Individual match unverified |
+| CB | 후보 | 데얀 로브렌 | Dejan Lovren | 1989-07-05 | B+ | 43 | Individual match unverified |
 | LB | 주전 | 앤드루 로버트슨 | Andy Robertson | 1994-03-11 | A+ | 2 | Individual match unverified |
-| LB | 후보 | 제임스 밀너 | James Milner | 1986-01-04 | B+ | 13 | Individual match unverified |
+| LB | 후보 | 제임스 밀너 | James Milner | 1986-01-04 | B+ | 14 | Individual match unverified |
 | RB | 주전 | 트렌트 알렉산더아널드 | Trent Alexander-Arnold | 1998-10-07 | A+ | 2 | Individual match unverified |
 | DM | 주전 | 파비뉴 | Fabinho | 1993-10-23 | A0 | 7 | Individual match unverified |
 | DM | 후보 | 나비 케이타 | Naby Keïta | 1995-02-10 | B0 | 27 | Individual match unverified |
@@ -509,7 +509,7 @@ Covid-19: UCL QF onward single-leg, UEL QF onward single-leg plus Sevilla/Roma a
 | CB | 주전 | 코스타스 마놀라스 | Kostas Manolas | 1991-06-14 | A- | 21 | Individual match unverified |
 | CB | 후보 | 니콜라 막시모비치 | Nikola Maksimović | 1991-11-25 | B+ | 37 | Individual match unverified |
 | LB | 주전 | 마리우 후이 | Mário Rui | 1991-05-27 | B+ | 11 | Individual match unverified |
-| LB | 후보 | 파우지 굴람 | Faouzi Ghoulam | 1991-02-01 | C+ | 29 | Individual match unverified |
+| LB | 후보 | 파우지 굴람 | Faouzi Ghoulam | 1991-02-01 | C+ | 31 | Individual match unverified |
 | RB | 주전 | 조반니 디 로렌초 | Giovanni Di Lorenzo | 1993-08-04 | A- | 5 | Individual match unverified |
 | DM | 주전 | 알랑 | Allan | 1991-01-08 | B0 | 21 | Individual match unverified |
 | DM | 후보 | 디에고 데메 | Diego Demme | 1991-11-21 | B+ | 17 | Individual match unverified |
@@ -531,9 +531,9 @@ Covid-19: UCL QF onward single-leg, UEL QF onward single-leg plus Sevilla/Roma a
 | GK | 후보 | 네투 | Neto | 1989-07-19 | C+ | 26 | Individual match unverified |
 | CB | 주전 | 제라르 피케 | Gerard Piqué | 1987-02-02 | A0 | 7 | Individual match unverified |
 | CB | 주전 | 클레망 랑글레 | Clément Lenglet | 1995-06-17 | A- | 17 | Individual match unverified |
-| CB | 후보 | 사뮈엘 움티티 | Samuel Umtiti | 1993-11-14 | B- | 50 | Individual match unverified |
+| CB | 후보 | 사뮈엘 움티티 | Samuel Umtiti | 1993-11-14 | B- | 51 | Individual match unverified |
 | LB | 주전 | 조르디 알바 | Jordi Alba | 1989-03-21 | A0 | 5 | Individual match unverified |
-| LB | 후보 | 주니오르 피르포 | Júnior Firpo | 1996-08-22 | B- | 24 | Individual match unverified |
+| LB | 후보 | 주니오르 피르포 | Júnior Firpo | 1996-08-22 | B- | 26 | Individual match unverified |
 | RB | 주전 | 넬송 세메두 | Nélson Semedo | 1993-11-16 | B+ | 10 | Individual match unverified |
 | RB | 후보 | 세르지 로베르토 | Sergi Roberto | 1992-02-07 | B+ | 18 | Individual match unverified |
 | DM | 주전 | 세르히오 부스케츠 | Sergio Busquets | 1988-07-16 | A0 | 5 | Individual match unverified |
@@ -557,7 +557,7 @@ Covid-19: UCL QF onward single-leg, UEL QF onward single-leg plus Sevilla/Roma a
 | CB | 주전 | 단악셀 자가두 | Dan-Axel Zagadou | 1999-06-03 | B+ | 30 | Individual match unverified |
 | CB | 후보 | 우카시 피슈체크 | Łukasz Piszczek | 1985-06-03 | B+ | 36 | Individual match unverified |
 | LB | 주전 | 하파엘 게헤이루 | Raphaël Guerreiro | 1993-12-22 | A- | 7 | Individual match unverified |
-| LB | 후보 | 마르첼 슈멜처 | Marcel Schmelzer | 1988-01-22 | B- | 26 | Individual match unverified |
+| LB | 후보 | 마르첼 슈멜처 | Marcel Schmelzer | 1988-01-22 | B- | 28 | Individual match unverified |
 | RB | 주전 | 아슈라프 하키미 | Achraf Hakimi | 1998-11-04 | A0 | 3 | Individual match unverified |
 | DM | 주전 | 악셀 비첼 | Axel Witsel | 1989-01-12 | A- | 10 | Individual match unverified |
 | DM | 후보 | 토마스 델라니 | Thomas Delaney | 1991-09-03 | B0 | 23 | Individual match unverified |
@@ -578,10 +578,10 @@ Covid-19: UCL QF onward single-leg, UEL QF onward single-leg plus Sevilla/Roma a
 | GK | 후보 | 치프리안 터터루샤누 | Ciprian Tătărușanu | 1986-02-09 | C+ | 29 | Individual match unverified |
 | CB | 주전 | 마르셀루 | Marcelo | 1987-05-20 | B+ | 35 | Individual match unverified |
 | CB | 주전 | 제이슨 데나이어 | Jason Denayer | 1995-06-28 | A- | 25 | Individual match unverified |
-| CB | 주전 | 마르사우 | Marçal | 1989-02-19 | B0 | 45 | Individual match unverified |
+| CB | 주전 | 마르사우 | Marçal | 1989-02-19 | B0 | 46 | Individual match unverified |
 | CB | 후보 | 요아킴 안데르센 | Joachim Andersen | 1996-05-31 | C+ | 52 | Individual match unverified |
 | LB | 주전 | 막스웰 코르네 | Maxwel Cornet | 1996-09-27 | B+ | 12 | Individual match unverified |
-| LB | 후보 | 유수프 코네 | Youssouf Koné | 1995-07-05 | B+ | 14 | Individual match unverified |
+| LB | 후보 | 유수프 코네 | Youssouf Koné | 1995-07-05 | B+ | 16 | Individual match unverified |
 | RB | 주전 | 레오 뒤부아 | Léo Dubois | 1994-09-14 | B+ | 15 | Individual match unverified |
 | RB | 후보 | 하파엘 다 시우바 | Rafael | 1990-07-09 | C+ | 27 | Individual match unverified |
 | DM | 주전 | 브루누 기마랑이스 | Bruno Guimarães | 1997-11-16 | B+ | 14 | Individual match unverified |
@@ -604,7 +604,7 @@ Covid-19: UCL QF onward single-leg, UEL QF onward single-leg plus Sevilla/Roma a
 | CB | 주전 | 마르첼 할스텐베르크 | Marcel Halstenberg | 1991-09-27 | A- | 19 | Individual match unverified |
 | CB | 후보 | 빌리 오르반 | Willi Orban | 1992-11-03 | B+ | 41 | Individual match unverified |
 | LB | 주전 | 앙헬리뇨 | Angeliño | 1997-01-04 | A0 | 3 | Official observer verified |
-| LB | 후보 | 아데몰라 루크먼 | Ademola Lookman | 1997-10-20 | C+ | 30 | Individual match unverified |
+| LB | 후보 | 아데몰라 루크먼 | Ademola Lookman | 1997-10-20 | B+ | 13 | Individual match unverified |
 | RB | 주전 | 노르디 무키엘레 | Nordi Mukiele | 1997-11-01 | B+ | 12 | Individual match unverified |
 | RB | 후보 | 타일러 애덤스 | Tyler Adams | 1999-02-14 | B0 | 23 | Individual match unverified |
 | DM | 주전 | 콘라트 라이머 | Konrad Laimer | 1997-05-27 | A- | 9 | Individual match unverified |
@@ -623,11 +623,11 @@ Covid-19: UCL QF onward single-leg, UEL QF onward single-leg plus Sevilla/Roma a
 |---|---|---|---|---|---|---:|---|
 | GK | 주전 | 케파 아리사발라가 | Kepa Arrizabalaga | 1994-10-03 | B- | 21 | Individual match unverified |
 | GK | 후보 | 윌리 카바예로 | Willy Caballero | 1981-09-28 | B- | 22 | Individual match unverified |
-| CB | 주전 | 안토니오 뤼디거 | Antonio Rüdiger | 1993-03-03 | B0 | 44 | Individual match unverified |
+| CB | 주전 | 안토니오 뤼디거 | Antonio Rüdiger | 1993-03-03 | B0 | 45 | Individual match unverified |
 | CB | 주전 | 커트 주마 | Kurt Zouma | 1994-10-27 | B+ | 34 | Individual match unverified |
-| CB | 후보 | 안드레아스 크리스텐센 | Andreas Christensen | 1996-04-10 | B0 | 48 | Individual match unverified |
-| LB | 주전 | 마르코스 알론소 | Marcos Alonso | 1990-12-28 | B0 | 18 | Individual match unverified |
-| LB | 후보 | 에메르송 팔미에리 | Emerson Palmieri | 1994-08-03 | B- | 25 | Individual match unverified |
+| CB | 후보 | 안드레아스 크리스텐센 | Andreas Christensen | 1996-04-10 | B0 | 49 | Individual match unverified |
+| LB | 주전 | 마르코스 알론소 | Marcos Alonso | 1990-12-28 | B0 | 20 | Individual match unverified |
+| LB | 후보 | 에메르송 팔미에리 | Emerson Palmieri | 1994-08-03 | B- | 27 | Individual match unverified |
 | RB | 주전 | 세사르 아스필리쿠에타 | César Azpilicueta | 1989-08-28 | B+ | 13 | Individual match unverified |
 | RB | 후보 | 리스 제임스 | Reece James | 1999-12-08 | B+ | 21 | Individual match unverified |
 | DM | 주전 | 조르지뉴 | Jorginho | 1991-12-20 | B+ | 16 | Individual match unverified |
@@ -648,10 +648,10 @@ Covid-19: UCL QF onward single-leg, UEL QF onward single-leg plus Sevilla/Roma a
 | GK | 주전 | 야스퍼르 실레선 | Jasper Cillessen | 1989-04-22 | C+ | 23 | Individual match unverified |
 | GK | 후보 | 하우메 도메네크 | Jaume Doménech | 1990-11-05 | C+ | 31 | Individual match unverified |
 | CB | 주전 | 가브리에우 파울리스타 | Gabriel Paulista | 1990-11-26 | B+ | 33 | Individual match unverified |
-| CB | 주전 | 무크타르 디아카비 | Mouctar Diakhaby | 1996-12-19 | B0 | 46 | Individual match unverified |
+| CB | 주전 | 무크타르 디아카비 | Mouctar Diakhaby | 1996-12-19 | B0 | 47 | Individual match unverified |
 | CB | 후보 | 에세키엘 가라이 | Ezequiel Garay | 1986-10-10 | A- | 27 | Individual match unverified |
-| LB | 주전 | 호세 루이스 가야 | José Luis Gayà | 1995-05-25 | B0 | 17 | Individual match unverified |
-| LB | 후보 | 하우메 코스타 | Jaume Costa | 1988-03-18 | C+ | 31 | Individual match unverified |
+| LB | 주전 | 호세 루이스 가야 | José Luis Gayà | 1995-05-25 | B0 | 19 | Individual match unverified |
+| LB | 후보 | 하우메 코스타 | Jaume Costa | 1988-03-18 | B+ | 15 | Individual match unverified |
 | RB | 주전 | 다니엘 바스 | Daniel Wass | 1989-05-31 | B+ | 14 | Individual match unverified |
 | RB | 후보 | 크리스티아노 피치니 | Cristiano Piccini | 1992-09-26 | B+ | 20 | Individual match unverified |
 | DM | 주전 | 조프레 콩도그비아 | Geoffrey Kondogbia | 1993-02-15 | A- | 11 | Individual match unverified |
@@ -750,15 +750,15 @@ Covid-19: UCL QF onward single-leg, UEL QF onward single-leg plus Sevilla/Roma a
 | 40 | B+ | 에데르 밀리탕 | Éder Militão | 레알 마드리드 (Real Madrid CF) | backup | Pending |
 | 41 | B+ | 빌리 오르반 | Willi Orban | RB 라이프치히 (RB Leipzig) | backup | Pending |
 | 42 | B+ | 니클라스 쥘레 | Niklas Süle | 바이에른 뮌헨 (FC Bayern München) | backup | Pending |
-| 43 | B+ | 얀 베르통언 | Jan Vertonghen | 토트넘 홋스퍼 (Tottenham Hotspur FC) | backup | Pending |
-| 44 | B0 | 안토니오 뤼디거 | Antonio Rüdiger | 첼시 (Chelsea FC) | starter | Pending |
-| 45 | B0 | 마르사우 | Marçal | 리옹 (Olympique Lyonnais) | starter | Pending |
-| 46 | B0 | 무크타르 디아카비 | Mouctar Diakhaby | 발렌시아 (Valencia CF) | starter | Pending |
-| 47 | B0 | 마티아 칼다라 | Mattia Caldara | 아탈란타 (Atalanta BC) | backup | Pending |
-| 48 | B0 | 안드레아스 크리스텐센 | Andreas Christensen | 첼시 (Chelsea FC) | backup | Pending |
-| 49 | B0 | 니콜라스 오타멘디 | Nicolás Otamendi | 맨체스터 시티 (Manchester City FC) | backup | Pending |
-| 50 | B- | 사뮈엘 움티티 | Samuel Umtiti | 바르셀로나 (FC Barcelona) | backup | Pending |
-| 51 | C+ | 데얀 로브렌 | Dejan Lovren | 리버풀 (Liverpool FC) | backup | Pending |
+| 43 | B+ | 데얀 로브렌 | Dejan Lovren | 리버풀 (Liverpool FC) | backup | Pending |
+| 44 | B+ | 얀 베르통언 | Jan Vertonghen | 토트넘 홋스퍼 (Tottenham Hotspur FC) | backup | Pending |
+| 45 | B0 | 안토니오 뤼디거 | Antonio Rüdiger | 첼시 (Chelsea FC) | starter | Pending |
+| 46 | B0 | 마르사우 | Marçal | 리옹 (Olympique Lyonnais) | starter | Pending |
+| 47 | B0 | 무크타르 디아카비 | Mouctar Diakhaby | 발렌시아 (Valencia CF) | starter | Pending |
+| 48 | B0 | 마티아 칼다라 | Mattia Caldara | 아탈란타 (Atalanta BC) | backup | Pending |
+| 49 | B0 | 안드레아스 크리스텐센 | Andreas Christensen | 첼시 (Chelsea FC) | backup | Pending |
+| 50 | B0 | 니콜라스 오타멘디 | Nicolás Otamendi | 맨체스터 시티 (Manchester City FC) | backup | Pending |
+| 51 | B- | 사뮈엘 움티티 | Samuel Umtiti | 바르셀로나 (FC Barcelona) | backup | Pending |
 | 52 | C+ | 요아킴 안데르센 | Joachim Andersen | 리옹 (Olympique Lyonnais) | backup | Pending |
 
 ### LB
@@ -777,25 +777,25 @@ Covid-19: UCL QF onward single-leg, UEL QF onward single-leg plus Sevilla/Roma a
 | 10 | B+ | 헤낭 로디 | Renan Lodi | 아틀레티코 마드리드 (Atlético de Madrid) | starter | Pending |
 | 11 | B+ | 마리우 후이 | Mário Rui | 나폴리 (SSC Napoli) | starter | Pending |
 | 12 | B+ | 막스웰 코르네 | Maxwel Cornet | 리옹 (Olympique Lyonnais) | starter | Pending |
-| 13 | B+ | 제임스 밀너 | James Milner | 리버풀 (Liverpool FC) | backup | Pending |
-| 14 | B+ | 유수프 코네 | Youssouf Koné | 리옹 (Olympique Lyonnais) | backup | Pending |
-| 15 | B0 | 벤 데이비스 | Ben Davies | 토트넘 홋스퍼 (Tottenham Hotspur FC) | starter | Pending |
-| 16 | B0 | 벵자맹 멘디 | Benjamin Mendy | 맨체스터 시티 (Manchester City FC) | starter | Pending |
-| 17 | B0 | 호세 루이스 가야 | José Luis Gayà | 발렌시아 (Valencia CF) | starter | Pending |
-| 18 | B0 | 마르코스 알론소 | Marcos Alonso | 첼시 (Chelsea FC) | starter | Pending |
-| 19 | B0 | 마르셀루 | Marcelo | 레알 마드리드 (Real Madrid CF) | backup | Pending |
-| 20 | B0 | 뤼카 에르난데스 | Lucas Hernández | 바이에른 뮌헨 (FC Bayern München) | backup | Pending |
-| 21 | B0 | 레뱅 퀴르자와 | Layvin Kurzawa | 파리 생제르맹 (Paris Saint-Germain) | backup | Pending |
-| 22 | B0 | 다닐루 | Danilo | 유벤투스 (Juventus FC) | backup | Pending |
-| 23 | B0 | 올렉산드르 진첸코 | Oleksandr Zinchenko | 맨체스터 시티 (Manchester City FC) | backup | Pending |
-| 24 | B- | 주니오르 피르포 | Júnior Firpo | 바르셀로나 (FC Barcelona) | backup | Pending |
-| 25 | B- | 에메르송 팔미에리 | Emerson Palmieri | 첼시 (Chelsea FC) | backup | Pending |
-| 26 | B- | 마르첼 슈멜처 | Marcel Schmelzer | 도르트문트 (Borussia Dortmund) | backup | Pending |
-| 27 | B- | 라이언 세세뇽 | Ryan Sessegnon | 토트넘 홋스퍼 (Tottenham Hotspur FC) | backup | Pending |
-| 28 | C+ | 마누 산체스 | Manu Sánchez | 아틀레티코 마드리드 (Atlético de Madrid) | backup | Pending |
-| 29 | C+ | 파우지 굴람 | Faouzi Ghoulam | 나폴리 (SSC Napoli) | backup | Pending |
-| 30 | C+ | 아데몰라 루크먼 | Ademola Lookman | RB 라이프치히 (RB Leipzig) | backup | Pending |
-| 31 | C+ | 하우메 코스타 | Jaume Costa | 발렌시아 (Valencia CF) | backup | Pending |
+| 13 | B+ | 아데몰라 루크먼 | Ademola Lookman | RB 라이프치히 (RB Leipzig) | backup | Pending |
+| 14 | B+ | 제임스 밀너 | James Milner | 리버풀 (Liverpool FC) | backup | Pending |
+| 15 | B+ | 하우메 코스타 | Jaume Costa | 발렌시아 (Valencia CF) | backup | Pending |
+| 16 | B+ | 유수프 코네 | Youssouf Koné | 리옹 (Olympique Lyonnais) | backup | Pending |
+| 17 | B0 | 벤 데이비스 | Ben Davies | 토트넘 홋스퍼 (Tottenham Hotspur FC) | starter | Pending |
+| 18 | B0 | 벵자맹 멘디 | Benjamin Mendy | 맨체스터 시티 (Manchester City FC) | starter | Pending |
+| 19 | B0 | 호세 루이스 가야 | José Luis Gayà | 발렌시아 (Valencia CF) | starter | Pending |
+| 20 | B0 | 마르코스 알론소 | Marcos Alonso | 첼시 (Chelsea FC) | starter | Pending |
+| 21 | B0 | 마르셀루 | Marcelo | 레알 마드리드 (Real Madrid CF) | backup | Pending |
+| 22 | B0 | 뤼카 에르난데스 | Lucas Hernández | 바이에른 뮌헨 (FC Bayern München) | backup | Pending |
+| 23 | B0 | 레뱅 퀴르자와 | Layvin Kurzawa | 파리 생제르맹 (Paris Saint-Germain) | backup | Pending |
+| 24 | B0 | 다닐루 | Danilo | 유벤투스 (Juventus FC) | backup | Pending |
+| 25 | B0 | 올렉산드르 진첸코 | Oleksandr Zinchenko | 맨체스터 시티 (Manchester City FC) | backup | Pending |
+| 26 | B- | 주니오르 피르포 | Júnior Firpo | 바르셀로나 (FC Barcelona) | backup | Pending |
+| 27 | B- | 에메르송 팔미에리 | Emerson Palmieri | 첼시 (Chelsea FC) | backup | Pending |
+| 28 | B- | 마르첼 슈멜처 | Marcel Schmelzer | 도르트문트 (Borussia Dortmund) | backup | Pending |
+| 29 | B- | 라이언 세세뇽 | Ryan Sessegnon | 토트넘 홋스퍼 (Tottenham Hotspur FC) | backup | Pending |
+| 30 | C+ | 마누 산체스 | Manu Sánchez | 아틀레티코 마드리드 (Atlético de Madrid) | backup | Pending |
+| 31 | C+ | 파우지 굴람 | Faouzi Ghoulam | 나폴리 (SSC Napoli) | backup | Pending |
 
 ### RB
 
@@ -1484,8 +1484,8 @@ Covid-19: UCL QF onward single-leg, UEL QF onward single-leg plus Sevilla/Roma a
 | CM | 주전 | 에베르 바네가 | Éver Banega | 1988-06-29 | A0 | 1 | Official observer verified |
 | CM | 주전 | 호안 호르단 | Joan Jordán | 1994-07-06 | A- | 5 | Individual match unverified |
 | CM | 후보 | 올리베르 토레스 | Óliver Torres | 1994-11-10 | B+ | 13 | Individual match unverified |
-| LW | 주전 | 루카스 오캄포스 | Lucas Ocampos | 1994-07-11 | A0 | 1 | Official observer verified |
-| LW | 후보 | 호니 로페스 | Rony Lopes | 1995-12-28 | C+ | 13 | Individual match unverified |
+| LW | 주전 | 루카스 오캄포스 | Lucas Ocampos | 1994-07-11 | A0 | 2 | Official observer verified |
+| LW | 후보 | 호니 로페스 | Rony Lopes | 1995-12-28 | A+ | 1 | Individual match unverified |
 | RW | 주전 | 수소 | Suso | 1993-11-19 | B0 | 9 | Individual match unverified |
 | RW | 후보 | 무니르 엘하다디 | Munir El Haddadi | 1995-09-01 | A- | 1 | Official observer verified |
 | ST | 주전 | 뤼크 더 용 | Luuk de Jong | 1990-08-27 | A- | 5 | Official observer verified |
@@ -1522,7 +1522,7 @@ Covid-19: UCL QF onward single-leg, UEL QF onward single-leg plus Sevilla/Roma a
 | GK | 후보 | 다비드 데 헤아 | David de Gea | 1990-11-07 | B+ | 9 | Individual match unverified |
 | CB | 주전 | 해리 매과이어 | Harry Maguire | 1993-03-05 | A- | 9 | Individual match unverified |
 | CB | 주전 | 빅토르 린델뢰프 | Victor Lindelöf | 1994-07-17 | B+ | 19 | Individual match unverified |
-| CB | 후보 | 에리크 바이 | Eric Bailly | 1994-04-12 | C+ | 25 | Individual match unverified |
+| CB | 후보 | 에리크 바이 | Eric Bailly | 1994-04-12 | B0 | 23 | Individual match unverified |
 | LB | 주전 | 브랜던 윌리엄스 | Brandon Williams | 2000-09-03 | B0 | 9 | Individual match unverified |
 | LB | 후보 | 루크 쇼 | Luke Shaw | 1995-07-12 | B+ | 8 | Individual match unverified |
 | RB | 주전 | 에런 완비사카 | Aaron Wan-Bissaka | 1997-11-26 | A- | 2 | Individual match unverified |
@@ -1533,8 +1533,8 @@ Covid-19: UCL QF onward single-leg, UEL QF onward single-leg plus Sevilla/Roma a
 | CM | 후보 | 폴 포그바 | Paul Pogba | 1993-03-15 | A- | 8 | Individual match unverified |
 | CAM | 주전 | 브루누 페르난데스 | Bruno Fernandes | 1994-09-08 | A+ | 2 | Official observer verified |
 | CAM | 후보 | 후안 마타 | Juan Mata | 1988-04-28 | B0 | 5 | Individual match unverified |
-| LW | 주전 | 마커스 래시퍼드 | Marcus Rashford | 1997-10-31 | A0 | 2 | Official observer verified |
-| LW | 후보 | 대니얼 제임스 | Daniel James | 1997-11-10 | B0 | 9 | Individual match unverified |
+| LW | 주전 | 마커스 래시퍼드 | Marcus Rashford | 1997-10-31 | A0 | 3 | Official observer verified |
+| LW | 후보 | 대니얼 제임스 | Daniel James | 1997-11-10 | B0 | 10 | Individual match unverified |
 | RW | 주전 | 메이슨 그린우드 | Mason Greenwood | 2001-10-01 | A- | 4 | Individual match unverified |
 | ST | 주전 | 앙토니 마르시알 | Anthony Martial | 1995-12-05 | A0 | 3 | Individual match unverified |
 | ST | 후보 | 오디온 이갈로 | Odion Ighalo | 1989-06-16 | C+ | 16 | Individual match unverified |
@@ -1555,8 +1555,8 @@ Covid-19: UCL QF onward single-leg, UEL QF onward single-leg plus Sevilla/Roma a
 | DM | 주전 | 제카 | Zeca | 1988-08-31 | B+ | 8 | Individual match unverified |
 | CM | 주전 | 라스무스 포크 | Rasmus Falk | 1992-01-15 | B+ | 10 | Individual match unverified |
 | CM | 후보 | 옌스 스타게 | Jens Stage | 1996-11-08 | C+ | 16 | Individual match unverified |
-| LW | 주전 | 빅토르 피셔 | Viktor Fischer | 1994-06-09 | B+ | 7 | Individual match unverified |
-| LW | 후보 | 모하메드 다라미 | Mohamed Daramy | 2002-01-07 | C+ | 10 | Individual match unverified |
+| LW | 주전 | 빅토르 피셔 | Viktor Fischer | 1994-06-09 | B+ | 8 | Individual match unverified |
+| LW | 후보 | 모하메드 다라미 | Mohamed Daramy | 2002-01-07 | C+ | 11 | Individual match unverified |
 | RW | 주전 | 페프 비엘 | Pep Biel | 1996-09-05 | B+ | 7 | Individual match unverified |
 | ST | 주전 | 요나스 빈 | Jonas Wind | 1999-02-07 | B+ | 10 | Individual match unverified |
 | ST | 주전 | 다메 은도예 | Dame N'Doye | 1985-02-21 | B+ | 9 | Individual match unverified |
@@ -1580,7 +1580,7 @@ Covid-19: UCL QF onward single-leg, UEL QF onward single-leg plus Sevilla/Roma a
 | CM | 주전 | 케렘 데미르바이 | Kerem Demirbay | 1993-07-03 | B+ | 9 | Individual match unverified |
 | CM | 후보 | 나디엠 아미리 | Nadiem Amiri | 1996-10-27 | B+ | 12 | Individual match unverified |
 | CAM | 주전 | 카이 하베르츠 | Kai Havertz | 1999-06-11 | A+ | 1 | Official observer verified |
-| LW | 주전 | 무사 디아비 | Moussa Diaby | 1999-07-07 | B+ | 5 | Individual match unverified |
+| LW | 주전 | 무사 디아비 | Moussa Diaby | 1999-07-07 | B+ | 6 | Individual match unverified |
 | RW | 주전 | 레온 베일리 | Leon Bailey | 1997-08-09 | B+ | 6 | Individual match unverified |
 | RW | 후보 | 카림 벨라라비 | Karim Bellarabi | 1990-04-08 | B+ | 8 | Individual match unverified |
 | ST | 주전 | 케빈 폴란트 | Kevin Volland | 1992-07-30 | B+ | 8 | Individual match unverified |
@@ -1593,7 +1593,7 @@ Covid-19: UCL QF onward single-leg, UEL QF onward single-leg plus Sevilla/Roma a
 | GK | 주전 | 안드리 피아토우 | Andriy Pyatov | 1984-06-28 | A- | 5 | Individual match unverified |
 | CB | 주전 | 세르히 크리우초우 | Serhiy Kryvtsov | 1991-03-15 | B+ | 18 | Individual match unverified |
 | CB | 주전 | 미콜라 마트비옌코 | Mykola Matviyenko | 1996-05-02 | B+ | 15 | Individual match unverified |
-| CB | 후보 | 다비트 호촐라바 | Davit Khocholava | 1993-02-08 | C+ | 23 | Individual match unverified |
+| CB | 후보 | 다비트 호촐라바 | Davit Khocholava | 1993-02-08 | C+ | 24 | Individual match unverified |
 | LB | 주전 | 이스마일리 | Ismaily | 1990-01-11 | A- | 2 | Individual match unverified |
 | RB | 주전 | 도도 | Dodô | 1998-11-17 | B+ | 7 | Individual match unverified |
 | DM | 주전 | 타라스 스테파넨코 | Taras Stepanenko | 1989-08-08 | B+ | 7 | Individual match unverified |
@@ -1601,8 +1601,8 @@ Covid-19: UCL QF onward single-leg, UEL QF onward single-leg plus Sevilla/Roma a
 | CM | 주전 | 알란 파트리크 | Alan Patrick | 1991-05-13 | A- | 6 | Individual match unverified |
 | CM | 후보 | 빅토르 코발렌코 | Viktor Kovalenko | 1996-02-14 | C+ | 18 | Individual match unverified |
 | CAM | 주전 | 마르코스 안토니우 | Marcos Antônio | 2000-06-13 | A- | 3 | Individual match unverified |
-| LW | 주전 | 타이송 | Taison | 1988-01-13 | A- | 3 | Official observer verified |
-| LW | 후보 | 마노르 솔로몬 | Manor Solomon | 1999-07-24 | B+ | 8 | Individual match unverified |
+| LW | 주전 | 타이송 | Taison | 1988-01-13 | A- | 4 | Official observer verified |
+| LW | 후보 | 마노르 솔로몬 | Manor Solomon | 1999-07-24 | B+ | 9 | Individual match unverified |
 | RW | 주전 | 마를루스 | Marlos | 1988-06-07 | A- | 3 | Individual match unverified |
 | RW | 후보 | 테테 | Tete | 2000-02-15 | C+ | 12 | Individual match unverified |
 | ST | 주전 | 주니오르 모라이스 | Júnior Moraes | 1987-04-04 | A- | 7 | Individual match unverified |
@@ -1616,7 +1616,7 @@ Covid-19: UCL QF onward single-leg, UEL QF onward single-leg plus Sevilla/Roma a
 | GK | 후보 | 조르제 니콜리치 | Đorđe Nikolić | 1997-04-13 | C+ | 12 | Individual match unverified |
 | CB | 주전 | 에라이 죄메르트 | Eray Cömert | 1998-02-04 | B+ | 14 | Individual match unverified |
 | CB | 주전 | 오마르 알데레테 | Omar Alderete | 1996-12-26 | B+ | 16 | Individual match unverified |
-| CB | 후보 | 에밀 베리스트룀 | Emil Bergström | 1993-05-19 | C+ | 24 | Individual match unverified |
+| CB | 후보 | 에밀 베리스트룀 | Emil Bergström | 1993-05-19 | C+ | 25 | Individual match unverified |
 | LB | 주전 | 블라스 리베로스 | Blas Riveros | 1998-02-03 | B+ | 6 | Individual match unverified |
 | LB | 후보 | 라울 페트레타 | Raoul Petretta | 1997-03-24 | C+ | 15 | Individual match unverified |
 | RB | 주전 | 실반 비드머 | Silvan Widmer | 1993-03-05 | A- | 3 | Individual match unverified |
@@ -1625,8 +1625,8 @@ Covid-19: UCL QF onward single-leg, UEL QF onward single-leg plus Sevilla/Roma a
 | CM | 주전 | 파비안 프라이 | Fabian Frei | 1989-01-08 | A- | 4 | Official observer verified |
 | CM | 후보 | 오르게스 분자쿠 | Orges Bunjaku | 2001-07-05 | C+ | 17 | Individual match unverified |
 | CAM | 주전 | 사무엘레 캄포 | Samuele Campo | 1995-07-06 | B+ | 4 | Individual match unverified |
-| LW | 주전 | 아피미코 풀룰루 | Afimico Pululu | 1999-03-23 | B+ | 6 | Individual match unverified |
-| LW | 후보 | 노아 오카포르 | Noah Okafor | 2000-05-24 | C+ | 11 | Individual match unverified |
+| LW | 주전 | 아피미코 풀룰루 | Afimico Pululu | 1999-03-23 | B+ | 7 | Individual match unverified |
+| LW | 후보 | 노아 오카포르 | Noah Okafor | 2000-05-24 | C+ | 12 | Individual match unverified |
 | RW | 주전 | 발렌틴 슈토커 | Valentin Stocker | 1989-04-12 | A- | 5 | Individual match unverified |
 | RW | 후보 | 에돈 제그로바 | Edon Zhegrova | 1999-03-31 | C+ | 11 | Individual match unverified |
 | ST | 주전 | 아르투르 카브라우 | Arthur Cabral | 1998-04-25 | A- | 6 | Individual match unverified |
@@ -1649,8 +1649,8 @@ Covid-19: UCL QF onward single-leg, UEL QF onward single-leg plus Sevilla/Roma a
 | DM | 후보 | 모건 깁스화이트 | Morgan Gibbs-White | 2000-01-27 | B- | 14 | Individual match unverified |
 | CM | 주전 | 주앙 무티뉴 | João Moutinho | 1986-09-08 | A0 | 3 | Individual match unverified |
 | CM | 후보 | 브루누 조르당 | Bruno Jordão | 1998-10-12 | C+ | 15 | Individual match unverified |
-| LW | 주전 | 디오구 조타 | Diogo Jota | 1996-12-04 | A- | 4 | Individual match unverified |
-| LW | 후보 | 페드루 네투 | Pedro Neto | 2000-03-09 | C+ | 12 | Individual match unverified |
+| LW | 주전 | 디오구 조타 | Diogo Jota | 1996-12-04 | A- | 5 | Individual match unverified |
+| LW | 후보 | 페드루 네투 | Pedro Neto | 2000-03-09 | C+ | 13 | Individual match unverified |
 | RW | 주전 | 아다마 트라오레 | Adama Traoré | 1996-01-25 | A- | 2 | Individual match unverified |
 | RW | 후보 | 다니엘 포덴스 | Daniel Podence | 1995-10-21 | C+ | 10 | Individual match unverified |
 | ST | 주전 | 라울 히메네스 | Raúl Jiménez | 1991-05-05 | A0 | 4 | Individual match unverified |
@@ -1704,9 +1704,9 @@ Covid-19: UCL QF onward single-leg, UEL QF onward single-leg plus Sevilla/Roma a
 | 20 | B+ | 빅토르 넬손 | Victor Nelsson | 코펜하겐 (FC København) | starter | Pending |
 | 21 | B+ | 윌리 볼리 | Willy Boly | 울버햄프턴 (Wolverhampton Wanderers) | starter | Pending |
 | 22 | B+ | 세르지 고메스 | Sergi Gómez | 세비야 (Sevilla FC) | backup | Pending |
-| 23 | C+ | 다비트 호촐라바 | Davit Khocholava | 샤흐타르 도네츠크 (FC Shakhtar Donetsk) | backup | Pending |
-| 24 | C+ | 에밀 베리스트룀 | Emil Bergström | 바젤 (FC Basel 1893) | backup | Pending |
-| 25 | C+ | 에리크 바이 | Eric Bailly | 맨체스터 유나이티드 (Manchester United FC) | backup | Pending |
+| 23 | B0 | 에리크 바이 | Eric Bailly | 맨체스터 유나이티드 (Manchester United FC) | backup | Pending |
+| 24 | C+ | 다비트 호촐라바 | Davit Khocholava | 샤흐타르 도네츠크 (FC Shakhtar Donetsk) | backup | Pending |
+| 25 | C+ | 에밀 베리스트룀 | Emil Bergström | 바젤 (FC Basel 1893) | backup | Pending |
 | 26 | C+ | 소티리오스 파파얀노풀로스 | Sotirios Papagiannopoulos | 코펜하겐 (FC København) | backup | Pending |
 
 ### LB
@@ -1803,19 +1803,19 @@ Covid-19: UCL QF onward single-leg, UEL QF onward single-leg plus Sevilla/Roma a
 
 | Rank | Tier | Korean | Original | Club | Role | UEFA evidence |
 |---:|---|---|---|---|---|---|
-| 1 | A0 | 루카스 오캄포스 | Lucas Ocampos | 세비야 (Sevilla FC) | starter | Observer verified |
-| 2 | A0 | 마커스 래시퍼드 | Marcus Rashford | 맨체스터 유나이티드 (Manchester United FC) | starter | Observer verified |
-| 3 | A- | 타이송 | Taison | 샤흐타르 도네츠크 (FC Shakhtar Donetsk) | starter | Observer verified |
-| 4 | A- | 디오구 조타 | Diogo Jota | 울버햄프턴 (Wolverhampton Wanderers) | starter | Pending |
-| 5 | B+ | 무사 디아비 | Moussa Diaby | 바이어 레버쿠젠 (Bayer 04 Leverkusen) | starter | Pending |
-| 6 | B+ | 아피미코 풀룰루 | Afimico Pululu | 바젤 (FC Basel 1893) | starter | Pending |
-| 7 | B+ | 빅토르 피셔 | Viktor Fischer | 코펜하겐 (FC København) | starter | Pending |
-| 8 | B+ | 마노르 솔로몬 | Manor Solomon | 샤흐타르 도네츠크 (FC Shakhtar Donetsk) | backup | Pending |
-| 9 | B0 | 대니얼 제임스 | Daniel James | 맨체스터 유나이티드 (Manchester United FC) | backup | Pending |
-| 10 | C+ | 모하메드 다라미 | Mohamed Daramy | 코펜하겐 (FC København) | backup | Pending |
-| 11 | C+ | 노아 오카포르 | Noah Okafor | 바젤 (FC Basel 1893) | backup | Pending |
-| 12 | C+ | 페드루 네투 | Pedro Neto | 울버햄프턴 (Wolverhampton Wanderers) | backup | Pending |
-| 13 | C+ | 호니 로페스 | Rony Lopes | 세비야 (Sevilla FC) | backup | Pending |
+| 1 | A+ | 호니 로페스 | Rony Lopes | 세비야 (Sevilla FC) | backup | Pending |
+| 2 | A0 | 루카스 오캄포스 | Lucas Ocampos | 세비야 (Sevilla FC) | starter | Observer verified |
+| 3 | A0 | 마커스 래시퍼드 | Marcus Rashford | 맨체스터 유나이티드 (Manchester United FC) | starter | Observer verified |
+| 4 | A- | 타이송 | Taison | 샤흐타르 도네츠크 (FC Shakhtar Donetsk) | starter | Observer verified |
+| 5 | A- | 디오구 조타 | Diogo Jota | 울버햄프턴 (Wolverhampton Wanderers) | starter | Pending |
+| 6 | B+ | 무사 디아비 | Moussa Diaby | 바이어 레버쿠젠 (Bayer 04 Leverkusen) | starter | Pending |
+| 7 | B+ | 아피미코 풀룰루 | Afimico Pululu | 바젤 (FC Basel 1893) | starter | Pending |
+| 8 | B+ | 빅토르 피셔 | Viktor Fischer | 코펜하겐 (FC København) | starter | Pending |
+| 9 | B+ | 마노르 솔로몬 | Manor Solomon | 샤흐타르 도네츠크 (FC Shakhtar Donetsk) | backup | Pending |
+| 10 | B0 | 대니얼 제임스 | Daniel James | 맨체스터 유나이티드 (Manchester United FC) | backup | Pending |
+| 11 | C+ | 모하메드 다라미 | Mohamed Daramy | 코펜하겐 (FC København) | backup | Pending |
+| 12 | C+ | 노아 오카포르 | Noah Okafor | 바젤 (FC Basel 1893) | backup | Pending |
+| 13 | C+ | 페드루 네투 | Pedro Neto | 울버햄프턴 (Wolverhampton Wanderers) | backup | Pending |
 
 ### RW
 
