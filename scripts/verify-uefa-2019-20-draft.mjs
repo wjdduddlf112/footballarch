@@ -97,6 +97,11 @@ for(const e of checks){
   assert(p.rank>0&&Number.isInteger(p.rank));
   assert(p.tierRationale?.length>80);
   assert.deepEqual(p.threeSeasonAssessment.seasons,["2017-18","2018-19","2019-20"]);
+  assert.deepEqual(p.threeSeasonAssessment.gradeProxyWeights,{"2019-20":0.6,"2018-19":0.3,"2017-18":0.1},"recency-weight tier audit proxy");
+  assert(Number.isFinite(p.threeSeasonAssessment.draftWeightedTierIndicator),"missing 3-season weighted tier proxy");
+  assert(p.threeSeasonAssessment.draftWeightedTierIndicator>=0&&p.threeSeasonAssessment.draftWeightedTierIndicator<=10,"proxy indicator outside grading range");
+  assert.equal(typeof p.threeSeasonAssessment.previousSeasons["2017-18"].review,"string");
+  assert.equal(typeof p.threeSeasonAssessment.previousSeasons["2018-19"].review,"string");
   assert.equal(p.uefaObserverListed,p.uefaAppearanceVerified);
   if(p.appearances!==null)assert(p.uefaObserverListed&&p.appearances>0);
   if(!p.uefaObserverListed)assert.match(p.verificationStatus,/NOT yet verified/);
