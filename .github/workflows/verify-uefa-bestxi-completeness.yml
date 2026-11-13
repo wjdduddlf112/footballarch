@@ -1,0 +1,40 @@
+name: Verify UEFA Best XI completeness and early UCL browser
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/ucl-*.json'
+      - 'data/uel-*.json'
+      - 'data/uecl-*.json'
+      - 'scripts/verify-uefa-best-xi-completeness.mjs'
+      - 'scripts/verify-ucl-early-best-xi-browser.mjs'
+      - '.github/workflows/verify-uefa-bestxi-completeness.yml'
+  workflow_dispatch:
+jobs:
+  completeness:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Fail if any scored UEFA season has missing Best XI
+        run: node scripts/verify-uefa-best-xi-completeness.mjs
+  browser:
+    needs: completeness
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install Chromium for Playwright
+        run: |
+          npm install --no-save playwright@1.58.2
+          npx playwright install --with-deps chromium
+      - name: Verify 1999-2005 UCL local and public pitch with real browser
+        run: node scripts/verify-ucl-early-best-xi-browser.mjs
