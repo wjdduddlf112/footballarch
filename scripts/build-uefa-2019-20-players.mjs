@@ -11,7 +11,7 @@ const tr=t=>({A:"A0",B:"B0",C:"C0"}[t]||t||"미평가");
 const spec=rd("audit/UEFA_2019_20_NOMINATION_SPEC_DRAFT.json");
 const bios=rd("audit/UEFA_2019_20_IDENTITY_DOB_DRAFT.json").identities;
 const grades=rd("audit/UEFA_2019_20_TIER_SOURCE_DRAFT.json");
-const srcs=["premierleague","laliga","seriea","bundesliga","ligue1"].flatMap(s=>[s+"-2019-20",s+"-2018-19"])
+const srcs=["premierleague","laliga","seriea","bundesliga","ligue1"].flatMap(s=>[s+"-2019-20",s+"-2018-19",s+"-2017-18"])
  .concat(["ucl-2018-19","uel-2018-19","ucl-2017-18","uel-2017-18"]);
 const ix=new Map();
 for(const file of srcs){for(const p of rd("data/"+file+".json").players||[]){
@@ -63,14 +63,18 @@ for(const id of ["ucl","uel"]){
       L.includes(domesticTier)?"2019-20 domestic tier hypothesis":L.includes(prevTier)?"previous Archive provisional tier":"LOW-CONFIDENCE role-based placeholder";
      const histories={};
      for(const yr of ["2017-18","2018-19"]){const z=refs.find(x=>x.file.endsWith(yr)&&eq(club,x.p.club))||refs.find(x=>x.file.endsWith(yr));
-      histories[yr]=z?{club:z.p.club,archive:z.file,starts:z.p.leagueStarts??z.p.starts??null,appearances:z.p.leagueAppearances??z.p.appearances??null,source:z.p.sources?.[0]||null,review:"earlier DRAFT requires independent reassessment"}:{club:null,archive:null,starts:null,appearances:null,source:null,review:"evidence_pending"};
+      histories[yr]=z?{club:z.p.club,archive:z.file,tier:z.p.tier??null,starts:z.p.leagueStarts??z.p.starts??null,appearances:z.p.leagueAppearances??z.p.appearances??null,source:z.p.sources?.[0]||null,review:"earlier DRAFT requires independent reassessment"}:{club:null,archive:null,tier:null,starts:null,appearances:null,source:null,review:"evidence_pending"};
      }
      const currentContext=current?{archive:current.file,club:current.p.club,starts:current.p.leagueStarts??current.p.starts??null,
        appearances:current.p.leagueAppearances??null,goals:current.p.leagueGoals??null,source:current.p.sources?.[0]||null,scope:"domestic ONLY, not UEFA"}:null;
      const note=String(current?.p.assessmentRationale||current?.p.tierReason||current?.p.tierReview||"").replace(/\s+/g," ").slice(0,170);
+     const histDesc=["2017-18","2018-19"].map(y=>y+" "+(histories[y].tier||"미확인")+" ("+(histories[y].archive||"archive pending")+")").join(" / ");
+     const weightedParts=[["2019-20",tier,0.6],["2018-19",histories["2018-19"].tier,0.3],["2017-18",histories["2017-18"].tier,0.1]].filter(x=>L.includes(x[1]));
+     const weightDenom=weightedParts.reduce((sum,x)=>sum+x[2],0);
+     const weightedIndicator=Math.round(weightedParts.reduce((sum,x)=>sum+(10-L.indexOf(x[1]))*x[2],0)/weightDenom*100)/100;
      const rationale=name+" ("+cl.nameOriginal+"), "+position+" "+role+": "+traits[position]+
        ". 2019-20 individual contribution and use emphasized. "+(o?"Official UEFA Technical Observers' squad confirms participation. ":"")+
-       "Grade provenance: "+evidence+". "+(note?"2019-20 domestic source: "+note+". ":"Individual UEFA appearance audit pending. ")+
+       "Grade provenance: "+evidence+". Historical context: "+histDesc+". Provisional tier indicator (60/30/10, available years renormalized, not verified match performance) "+weightedIndicator+". "+(note?"2019-20 domestic source: "+note+". ":"Individual UEFA appearance audit pending. ")+
        "Assessment 2019-20 > 2018-19 > 2017-18. Team trophy/rank not a personal bonus. Historical independent peer audit incomplete.";
      const sources=[...new Set([officialURL,...(current?.p.sources||[]),...(prev?.p.sources||[]),...(manual.sources||[])].filter(x=>typeof x==="string"))].slice(0,6);
      const p={id:id+"-2019-20-"+club+"-"+k,nameOriginal:name,nameKo:ko,born,position,role,club,
@@ -81,7 +85,7 @@ for(const id of ["ucl","uel"]){
        candidateSelectionEvidence:o?"Official 2019-20 UEFA observer squad":current?"2019-20 domestic current club and tactical candidate; UEFA match audit outstanding":"historical/tactical candidate; UEFA match audit outstanding",
        tierRationale:rationale,
        threeSeasonAssessment:{seasons:["2017-18","2018-19","2019-20"],weighting:"2019-20 > 2018-19 > 2017-18",
-         review:"Independent 2017-18 / 2018-19 qualitative comparison NOT complete",previousSeasons:histories,currentSeasonDomesticContext:currentContext},
+         review:"Independent 2017-18 / 2018-19 qualitative comparison NOT complete",gradeProxyWeights:{"2019-20":0.6,"2018-19":0.3,"2017-18":0.1},draftWeightedTierIndicator:weightedIndicator,weightingAudit:"Simple tier-ordinal proxy over available unapproved years, renormalized; NOT factual three-season performance or player-equivalent WAR",previousSeasons:histories,currentSeasonDomesticContext:currentContext},
        sources,verificationStatus:o?"2019-20 UEFA individual main-stage competition appearance verified by UEFA official technical observers":"Individual 2019-20 UEFA main-stage appearance NOT yet verified; nomination CONDITIONAL",
        gradeEvidenceStatus:evidence,evaluationStatus:"unapproved_conditional_quality_assessment",uefaObserverListed:o,uefaAppearanceVerified:o,
        birthSourceStatus:manual.verification||"previous unapproved Archive or roster biography; independent double-source check needed"};
