@@ -331,7 +331,7 @@ Covid-19: UCL QF onward single-leg, UEL QF onward single-leg plus Sevilla/Roma a
 | LW | 주전 | 비니시우스 주니오르 | Vinícius Júnior | 2000-07-12 | B+ | 16 | Individual match unverified |
 | LW | 후보 | 에덴 아자르 | Eden Hazard | 1991-01-07 | B0 | 22 | Individual match unverified |
 | RW | 주전 | 호드리구 | Rodrygo | 2001-01-09 | B+ | 11 | Individual match unverified |
-| RW | 후보 | 가레스 베일 | Gareth Bale | 1989-07-16 | B- | 21 | Individual match unverified |
+| RW | 후보 | 가레스 베일 | Gareth Bale | 1989-07-16 | B- | 22 | Individual match unverified |
 | ST | 주전 | 카림 벤제마 | Karim Benzema | 1987-12-19 | A+ | 3 | Individual match unverified |
 | ST | 후보 | 루카 요비치 | Luka Jović | 1997-12-23 | C+ | 31 | Individual match unverified |
 
@@ -381,7 +381,7 @@ Covid-19: UCL QF onward single-leg, UEL QF onward single-leg plus Sevilla/Roma a
 | LW | 주전 | 손흥민 | Son Heung-min | 1992-07-08 | A+ | 4 | Individual match unverified |
 | LW | 후보 | 에릭 라멜라 | Erik Lamela | 1992-03-25 | B- | 27 | Individual match unverified |
 | RW | 주전 | 루카스 모우라 | Lucas Moura | 1992-08-13 | A- | 7 | Individual match unverified |
-| RW | 후보 | 스티븐 베르흐베인 | Steven Bergwijn | 1997-10-08 | B0 | 19 | Individual match unverified |
+| RW | 후보 | 스티븐 베르흐베인 | Steven Bergwijn | 1997-10-08 | B0 | 20 | Individual match unverified |
 | ST | 주전 | 해리 케인 | Harry Kane | 1993-07-28 | A+ | 7 | Individual match unverified |
 
 ### 맨체스터 시티 (Manchester City FC) (4-3-3)
@@ -398,13 +398,13 @@ Covid-19: UCL QF onward single-leg, UEL QF onward single-leg plus Sevilla/Roma a
 | RB | 주전 | 카일 워커 | Kyle Walker | 1990-05-28 | A- | 8 | Individual match unverified |
 | RB | 후보 | 주앙 칸셀루 | João Cancelo | 1994-05-27 | B0 | 24 | Individual match unverified |
 | DM | 주전 | 로드리 | Rodri | 1996-06-22 | A- | 12 | Individual match unverified |
-| DM | 후보 | 필 포든 | Phil Foden | 2000-05-28 | B0 | 28 | Individual match unverified |
 | CM | 주전 | 케빈 더브라위너 | Kevin De Bruyne | 1991-06-28 | A+ | 2 | Official observer verified |
 | CM | 주전 | 일카이 귄도안 | İlkay Gündoğan | 1990-10-24 | A- | 20 | Individual match unverified |
 | CM | 후보 | 다비드 실바 | David Silva | 1986-01-08 | A- | 25 | Individual match unverified |
 | LW | 주전 | 라힘 스털링 | Raheem Sterling | 1994-12-08 | A+ | 2 | Official observer verified |
 | LW | 후보 | 베르나르두 실바 | Bernardo Silva | 1994-08-10 | B+ | 20 | Individual match unverified |
 | RW | 주전 | 리야드 마레즈 | Riyad Mahrez | 1991-02-21 | A- | 8 | Individual match unverified |
+| RW | 후보 | 필 포든 | Phil Foden | 2000-05-28 | B0 | 19 | Individual match unverified |
 | ST | 주전 | 가브리에우 제주스 | Gabriel Jesus | 1997-04-03 | B+ | 22 | Individual match unverified |
 | ST | 후보 | 세르히오 아궤로 | Sergio Agüero | 1988-06-02 | A- | 19 | Individual match unverified |
 
@@ -566,7 +566,7 @@ Covid-19: UCL QF onward single-leg, UEL QF onward single-leg plus Sevilla/Roma a
 | LW | 주전 | 토르강 아자르 | Thorgan Hazard | 1993-03-29 | A- | 13 | Individual match unverified |
 | LW | 후보 | 마르코 로이스 | Marco Reus | 1989-05-31 | A0 | 10 | Individual match unverified |
 | RW | 주전 | 제이든 산초 | Jadon Sancho | 2000-03-25 | A+ | 3 | Individual match unverified |
-| RW | 후보 | 조반니 레이나 | Giovanni Reyna | 2002-11-13 | C+ | 22 | Individual match unverified |
+| RW | 후보 | 조반니 레이나 | Giovanni Reyna | 2002-11-13 | C+ | 23 | Individual match unverified |
 | ST | 주전 | 엘링 홀란 | Erling Haaland | 2000-07-21 | A+ | 6 | Individual match unverified |
 | ST | 후보 | 파코 알카세르 | Paco Alcácer | 1993-08-30 | B+ | 26 | Individual match unverified |
 
@@ -631,7 +631,7 @@ Covid-19: UCL QF onward single-leg, UEL QF onward single-leg plus Sevilla/Roma a
 | RB | 주전 | 세사르 아스필리쿠에타 | César Azpilicueta | 1989-08-28 | B+ | 13 | Individual match unverified |
 | RB | 후보 | 리스 제임스 | Reece James | 1999-12-08 | B+ | 21 | Individual match unverified |
 | DM | 주전 | 조르지뉴 | Jorginho | 1991-12-20 | B+ | 16 | Individual match unverified |
-| DM | 후보 | 빌리 길모어 | Billy Gilmour | 2001-06-11 | C+ | 29 | Individual match unverified |
+| DM | 후보 | 빌리 길모어 | Billy Gilmour | 2001-06-11 | C+ | 28 | Individual match unverified |
 | CM | 주전 | 마테오 코바치치 | Mateo Kovačić | 1994-05-06 | A- | 21 | Individual match unverified |
 | CM | 주전 | 은골로 캉테 | N'Golo Kanté | 1991-03-29 | A- | 22 | Individual match unverified |
 | CM | 후보 | 메이슨 마운트 | Mason Mount | 1999-01-10 | B+ | 37 | Individual match unverified |
@@ -660,7 +660,7 @@ Covid-19: UCL QF onward single-leg, UEL QF onward single-leg plus Sevilla/Roma a
 | CM | 후보 | 카를로스 솔레르 | Carlos Soler | 1997-01-02 | B+ | 35 | Individual match unverified |
 | LW | 주전 | 곤살루 게드스 | Gonçalo Guedes | 1996-11-29 | A- | 15 | Individual match unverified |
 | LW | 후보 | 데니스 체리셰프 | Denis Cheryshev | 1990-12-26 | B+ | 21 | Individual match unverified |
-| RW | 주전 | 페란 토레스 | Ferran Torres | 2000-02-29 | B- | 20 | Individual match unverified |
+| RW | 주전 | 페란 토레스 | Ferran Torres | 2000-02-29 | B- | 21 | Individual match unverified |
 | ST | 주전 | 로드리고 모레노 | Rodrigo Moreno | 1991-03-06 | A- | 17 | Individual match unverified |
 | ST | 주전 | 막시 고메스 | Maxi Gómez | 1996-08-14 | B0 | 29 | Individual match unverified |
 | ST | 후보 | 케빈 가메이로 | Kevin Gameiro | 1987-05-09 | B+ | 27 | Individual match unverified |
@@ -860,8 +860,7 @@ Covid-19: UCL QF onward single-leg, UEL QF onward single-leg plus Sevilla/Roma a
 | 25 | B0 | 아마두 아이다라 | Amadou Haidara | RB 라이프치히 (RB Leipzig) | backup | Pending |
 | 26 | B0 | 에릭 다이어 | Eric Dier | 토트넘 홋스퍼 (Tottenham Hotspur FC) | backup | Pending |
 | 27 | B0 | 나비 케이타 | Naby Keïta | 리버풀 (Liverpool FC) | backup | Pending |
-| 28 | B0 | 필 포든 | Phil Foden | 맨체스터 시티 (Manchester City FC) | backup | Pending |
-| 29 | C+ | 빌리 길모어 | Billy Gilmour | 첼시 (Chelsea FC) | backup | Pending |
+| 28 | C+ | 빌리 길모어 | Billy Gilmour | 첼시 (Chelsea FC) | backup | Pending |
 
 ### CM
 
@@ -972,10 +971,11 @@ Covid-19: UCL QF onward single-leg, UEL QF onward single-leg plus Sevilla/Roma a
 | 16 | B0 | 페데리코 베르나르데스키 | Federico Bernardeschi | 유벤투스 (Juventus FC) | starter | Pending |
 | 17 | B0 | 비톨로 | Vitolo | 아틀레티코 마드리드 (Atlético de Madrid) | backup | Pending |
 | 18 | B0 | 마테오 폴리타노 | Matteo Politano | 나폴리 (SSC Napoli) | backup | Pending |
-| 19 | B0 | 스티븐 베르흐베인 | Steven Bergwijn | 토트넘 홋스퍼 (Tottenham Hotspur FC) | backup | Pending |
-| 20 | B- | 페란 토레스 | Ferran Torres | 발렌시아 (Valencia CF) | starter | Pending |
-| 21 | B- | 가레스 베일 | Gareth Bale | 레알 마드리드 (Real Madrid CF) | backup | Pending |
-| 22 | C+ | 조반니 레이나 | Giovanni Reyna | 도르트문트 (Borussia Dortmund) | backup | Pending |
+| 19 | B0 | 필 포든 | Phil Foden | 맨체스터 시티 (Manchester City FC) | backup | Pending |
+| 20 | B0 | 스티븐 베르흐베인 | Steven Bergwijn | 토트넘 홋스퍼 (Tottenham Hotspur FC) | backup | Pending |
+| 21 | B- | 페란 토레스 | Ferran Torres | 발렌시아 (Valencia CF) | starter | Pending |
+| 22 | B- | 가레스 베일 | Gareth Bale | 레알 마드리드 (Real Madrid CF) | backup | Pending |
+| 23 | C+ | 조반니 레이나 | Giovanni Reyna | 도르트문트 (Borussia Dortmund) | backup | Pending |
 
 ### ST
 
