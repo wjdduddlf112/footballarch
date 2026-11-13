@@ -4,7 +4,7 @@ import fs from "node:fs";
 import assert from "node:assert/strict";
 const REQUIRED=[
  {id:"ucl",teams:32,groupTeams:32,evaluated:16,groups:8,groupGames:96,knockoutGames:29,goals:380,nominal:176,allCandidates:295},
- {id:"uel",teams:56,groupTeams:48,evaluated:8,groups:12,groupGames:144,knockoutGames:61,goals:565,nominal:88,allCandidates:145}
+ {id:"uel",teams:56,groupTeams:48,evaluated:8,groups:12,groupGames:144,knockoutGames:61,goals:565,nominal:88,allCandidates:144}
 ];
 const positions=["GK","CB","LB","RB","DM","CM","CAM","LW","RW","ST"];
 const tiers=["S","A+","A","A-","B+","B","B-","C+","C","C-","D"];
