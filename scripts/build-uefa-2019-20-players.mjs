@@ -3,7 +3,7 @@
 import fs from "node:fs";
 import assert from "node:assert/strict";
 const rd=p=>JSON.parse(fs.readFileSync(p,"utf8"));
-const wr=(p,x)=>fs.writeFileSync(p,JSON.stringify(x,null,2)+"\n");
+const wr=(p,x)=>fs.writeFileSync(p,JSON.stringify(x)+"\n");
 const norm=s=>String(s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^a-z0-9]/g,"");
 const P=["GK","CB","LB","RB","DM","CM","CAM","LW","RW","ST"];
 const L=["S","A+","A","A-","B+","B","B-","C+","C","C-","D"];
