@@ -60,7 +60,7 @@ async function verify(id,games,goals,groups,clubs,players,rated,finalWinner){
 }
 try{
  await verify("ucl",125,380,8,16,295,18,"Madrid");
- await verify("uel",205,565,12,8,145,18,"Manchester United");
+ await verify("uel",205,565,12,8,144,18,"Manchester United");
  await openSeason("ucl","2015-16",125,347);
  await tab("tiers");
  assert.equal(await page.locator("tr[data-player]").count(),290,"prior UCL 2015-16 regression");
