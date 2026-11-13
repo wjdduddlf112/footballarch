@@ -131,4 +131,6 @@ for(const [h,a] of [["sevilla","roma"],["inter","getafe"]]){
 }
 assert.equal(uel.filter(m=>m.round==="round_of_16").length,14);
 assert.equal(records.ucl.matches.filter(m=>m.round==="quarter_finals").length,4);
+assert.equal(records.ucl.players.find(p=>p.nameOriginal==="Phil Foden"&&p.club==="mancity")?.position,"RW","Foden cannot be assigned defensive midfield in 2019-20");
+assert.equal(records.uel.players.find(p=>p.nameOriginal==="Munir El Haddadi"&&p.club==="sevilla")?.position,"RW","wide-attacker 2019-20 proposed XI tactical position");
 console.log("PASS: 2019-20 full European DRAFT match/tier/position structure; historic player eligibility and comparative tier evidence remain provisional");
