@@ -1,3 +1,17 @@
+## UEFA 2019–20 UCL + UEL — FULL NOMINEE GRADE DRAFT, 2026-11-13
+
+- 사용자의 다음 지시로 2019–20 UCL/UEL 동시 처리. 다음 2020–21 시즌은 별도 지시 전 자동 진행 금지.
+- 본선 참가 UCL 32개 클럽/8개 조/119경기 386골, Bayern Munich 우승 1–0 PSG; UEL 56개 참가 엔트리(조별 48개+UCL 3위 8개)/12개 조/197경기 548골, Sevilla 우승 3–2 Inter. 코로나19로 UCL 8강부터 단판, UEL 8강부터 단판과 16강 특수 단판 경기 구별.
+- 2019년 9월부터 2020년 8월까지 316개 실경기를 대회별 JSON 파일에 저장. 2020년 3월 취소된 Sevilla–Roma, Inter–Getafe 경기는 개최 기록이 아님. 출처 FixtureDownload 2019–20 HTML-embedded 경기 결과, UEFA 공식 일정, openfootball UCL 교차 대조.
+- UCL 16개 평가 클럽 298명(주전176/백업122) + UEL 8개 클럽 148명(주전88/백업60) = 총 24개 평가 클럽 446명. GK/CB/LB/RB/DM/CM/CAM/LW/RW/ST 포지션 구분; 한글/원어 선수 이름 및 원어 구단명, 출생일 필드 전원; 잠정 전체 선수 티어/포지션 순위.
+- 3시즌 우선순위 2019–20 > 2018–19 > 2017–18 및 개인 퍼포먼스 중심 (팀 성적 가산 제외). 이전 2시즌 국내리그/UEFA 미승인 DRAFT 티어를 사용 가능한 범위에서 60/30/10로 가중한 등급 프록시 저장. 누락 기록은 0으로 단정하지 않으며 과거 질적 성과가 독립적으로 인증된 것은 아님.
+- UEFA 공식 Technical Observers 2019–20 우수선수 명단 UCL 23명+UEL 23명 = 46명 실제 대회 참가 근거 확인. 다른 400명은 선수별 유럽본선 출전/선발/시간 및 포지션 최빈값 확인 미완료. 이들에 대한 등급은 조건부 의견이지 실제 본선 출전 확인이나 완전한 개인 활약 검증이 아님.
+- 446명 DOB 기입. 일부 과거 Archive 초안/편집상 약력값은 이중 독립 원천 재검증 대기. 사용자 승인 등급 0. Best XI는 각 대회 11명 잠정 제안이고 UEFA 공식 XI가 아님.
+- 결과 파일: data/ucl-2019-20.json, data/uel-2019-20.json, audit/UEFA_2019_20_DRAFT_FULL_REPORT_2026_11_13.md. 후보 스펙: audit/UEFA_2019_20_NOMINATION_SPEC_DRAFT.json 및 IDENTITY_DOB_DRAFT, TIER_SOURCE_DRAFT. 생성 재현: scripts/build-uefa-2019-20-players.mjs.
+- CI 검증: scripts/verify-uefa-2019-20-draft.mjs + scripts/verify-uefa-2019-20-live.mjs, GitHub Actions run 43399425730 structure + Chromium browser 모두 성공. 기존 2018–19 UCL/UEL 페이지 회귀도 통과.
+- 사이트: https://wjdduddlf112.github.io/footballarch/?league=ucl&season=2019-20 및 https://wjdduddlf112.github.io/footballarch/?league=uel&season=2019-20
+
+---
 ## UEFA 2018–19 UCL + UEL — DRAFT, 2026-11-13
 
 - 참가 구단 UCL 32 / UEL 56(조별리그 48 + UCL 조 3위 8), 그룹 UCL 8/UEL 12, 전경기 **UCL 125경기 366골 / UEL 205경기 565골**, 공개 역사 경기 CSV와 UEFA 2018-19 기술보고서 대조.
@@ -8,7 +22,7 @@
 - 원본 데이터: `data/ucl-2018-19.json`, `data/uel-2018-19.json`. 명단 분리: `audit/UEFA_2018_19_NOMINATION_SPEC_DRAFT.json`; 전체 자료 330경기+397명 1364행 상세: `audit/UEFA_2018_19_DRAFT_FULL_REPORT_2026_11_13.md`.
 - CI: `scripts/verify-uefa-2018-19-draft.mjs` 및 `scripts/verify-uefa-2018-19-live.mjs`, workflow `.github/workflows/verify-uefa-2018-19-draft-live.yml`. GitHub Actions 43381866408 **structure+real Chromium live-browser SUCCESS** (2018–19 UCL/UEL, 2017–18 regressions). 최근 DOB 수정 후 데이터 검증은 CI 재실행 여부 확인.
 - Pages: https://wjdduddlf112.github.io/footballarch/?league=ucl&season=2018-19 ; https://wjdduddlf112.github.io/footballarch/?league=uel&season=2018-19
-- 다음 시즌 2019–20은 **사용자 지시 전 진행 금지**.
+- 이후 2019–20은 사용자 지시로 진행됨(문서 최상단 참고).
 
 ---
 
