@@ -6,10 +6,10 @@
 
 - 참가 구단은 UCL **16강 진출 16팀**, UEL **8강 진출 8팀**만 평가한다. 두 대회 본선 참가 팀 전원은 별도로 토너먼트·조별리그·경기 테이블에 모두 포함한다.
 - UCL 본선 125경기 380골, UEL 본선 205경기 565골. **승부차기 득점은 경기 득점에서 제외**하며, UEL 베식타시–리옹 2017-04-20의 원천 CSV `8-8`을 **정규·연장 2-1, 승부차기 베식타시 6-7 리옹**으로 바로잡았다. UCL 레알–바이에른 2차전 및 UEL 맨유–안데를레흐트·샬케–아약스의 연장 경기도 별도 표기했다.
-- 구단별 11명은 **2016-17 대표 포메이션의 대회 선발 가능 주전 가설**이며, 일부는 실제 해당 시즌 유럽대항전 경기 선발 명단을 사용했다. **시즌 모든 UEFA 경기에서 가장 많이 선발된 XI로 확정됐다는 뜻은 아니다.** 유럽대항전 등록 상태·출전 시간·최다 활동 포지션을 440명 전수 검증하지 않았다.
+- 구단별 11명은 **2016-17 대표 포메이션의 대회 선발 가능 주전 가설**이며, 일부는 실제 해당 시즌 유럽대항전 경기 선발 명단을 사용했다. **시즌 모든 UEFA 경기에서 가장 많이 선발된 XI로 확정됐다는 뜻은 아니다.** 유럽대항전 등록 상태·출전 시간·최다 활동 포지션을 439명 전수 검증하지 않았다.
 - UEFA 2016-17 기술위원회(Squad of the Season) 선정 18명씩 총 36명의 개인 기록과 기술 보고를 활용해 **편집상의 잠정 S~A- 티어**를 제안했다. UEFA가 선수를 S/A로 직접 등급화했다는 뜻은 아니다. 나머지 선수는 `tier:null`, `evidence_pending`으로 남는다.
 - **2014-15/2015-16 선수 개인 활약과 동 포지션 비교를 독립적으로 완전 검증하지 못했다.** 티어는 2016-17 당대 UEFA 관찰과 정성적 연속성 판단에 기초한 부분 가설이고 공식 확정이 아니다. 구단 우승 자체에 가산점은 부여하지 않는다.
-- 잠정 순위는 티어를 부여한 **36명 내부 순위**이며 440명 전체를 대상으로 하는 최종 포지션 순위는 아니다. Best XI는 `proposed_unapproved`, 선수 미확인 생일은 `null`이다.
+- 잠정 순위는 티어를 부여한 **36명 내부 순위**이며 439명 전체를 대상으로 하는 최종 포지션 순위는 아니다. Best XI는 `proposed_unapproved`, 선수 미확인 생일은 `null`이다.
 
 ## 1. 전체 통계
 
@@ -23,12 +23,12 @@
 | 대회 전체 경기 | 125 | 205 | 330 |
 | 대회 전체 득점 | 380 | 565 | 945 |
 | 예상 주전 11명 | 176 | 88 | 264 |
-| 후보 선수 | 119 | 57 | 176 |
-| 선수 후보 합계 | 295 | 145 | 440 |
+| 후보 선수 | 119 | 56 | 175 |
+| 선수 후보 합계 | 295 | 144 | 439 |
 | UEFA 기술 보고서에 근거한 잠정 티어 | 18 | 18 | 36 |
-| 아직 티어를 매기지 않은 선수 | 277 | 127 | 404 |
+| 아직 티어를 매기지 않은 선수 | 277 | 126 | 403 |
 | 생년월일 확인 대기 | 44 | 77 | 121 |
-| 한글 이름 등록 | 295 | 145 | 440 |
+| 한글 이름 등록 | 295 | 144 | 439 |
 
 ### 티어별 분포 (사용자 미승인 잠정안)
 
@@ -45,7 +45,7 @@
 | C0 | 0 | 0 | 0 |
 | C- | 0 | 0 | 0 |
 | D | 0 | 0 | 0 |
-| 미평가 | 277 | 127 | 404 |
+| 미평가 | 277 | 126 | 403 |
 | **World Class (S·A+)** | 14 | 4 | 18 |
 | **European Top Class (S·A+·A0·A-)** | 18 | 18 | 36 |
 
@@ -457,7 +457,6 @@
 | 포지션 | 한글 이름 | 원어 이름 | 당시 소속 구단 | 생년월일 | 선발/후보 | 잠정 티어 | 잠정 순위 |
 |---|---|---|---|---|---|---|---:|
 | GK | 다비드 오스피나 | David Ospina | Arsenal FC | 1988-08-31 | 주전 | 미평가 | — |
-| GK | 페트르 체흐 | Petr Čech | Arsenal FC | 1982-05-20 | 후보 | 미평가 | — |
 | CB | 슈코드란 무스타피 | Shkodran Mustafi | Arsenal FC | 1992-04-17 | 주전 | 미평가 | — |
 | CB | 로랑 코시엘니 | Laurent Koscielny | Arsenal FC | 1985-09-10 | 주전 | 미평가 | — |
 | CB | 롭 홀딩 | Rob Holding | Arsenal FC | 1995-09-20 | 후보 | 미평가 | — |
@@ -531,21 +530,22 @@
 | GK | 클라우디오 브라보 | Claudio Bravo | Manchester City FC | 1983-04-13 | 후보 | 미평가 | — |
 | CB | 니콜라스 오타멘디 | Nicolás Otamendi | Manchester City FC | 1988-02-12 | 주전 | 미평가 | — |
 | CB | 존 스톤스 | John Stones | Manchester City FC | 1994-05-28 | 주전 | 미평가 | — |
-| CB | 뱅상 콤파니 | Vincent Kompany | Manchester City FC | 1986-04-10 | 후보 | 미평가 | — |
-| LB | 가엘 클리시 | Gaël Clichy | Manchester City FC | 1985-07-26 | 주전 | 미평가 | — |
-| RB | 바카리 사냐 | Bacary Sagna | Manchester City FC | 1983-02-14 | 주전 | 미평가 | — |
-| RB | 파블로 사발레타 | Pablo Zabaleta | Manchester City FC | 1985-01-16 | 후보 | 미평가 | — |
+| CB | 토신 아다라비오요 | Tosin Adarabioyo | Manchester City FC | 1997-09-24 | 후보 | 미평가 | — |
+| LB | 알렉산다르 콜라로프 | Aleksandar Kolarov | Manchester City FC | 1985-11-10 | 주전 | 미평가 | — |
+| LB | 가엘 클리시 | Gaël Clichy | Manchester City FC | 1985-07-26 | 후보 | 미평가 | — |
+| RB | 파블로 사발레타 | Pablo Zabaleta | Manchester City FC | 1985-01-16 | 주전 | 미평가 | — |
+| RB | 바카리 사냐 | Bacary Sagna | Manchester City FC | 1983-02-14 | 후보 | 미평가 | — |
 | DM | 페르난지뉴 | Fernandinho | Manchester City FC | 1985-05-04 | 주전 | 미평가 | — |
 | DM | 페르난두 | Fernando | Manchester City FC | 1987-07-25 | 후보 | 미평가 | — |
 | CM | 다비드 실바 | David Silva | Manchester City FC | 1986-01-08 | 주전 | 미평가 | — |
 | CM | 케빈 더브라위너 | Kevin De Bruyne | Manchester City FC | 1991-06-28 | 주전 | 미평가 | — |
-| CM | 야야 투레 | Yaya Touré | Manchester City FC | 1983-05-13 | 후보 | 미평가 | — |
+| CM | 일카이 귄도안 | İlkay Gündoğan | Manchester City FC | 1990-10-24 | 후보 | 미평가 | — |
 | LW | 르로이 사네 | Leroy Sané | Manchester City FC | 1996-01-11 | 주전 | 미평가 | — |
 | LW | 놀리토 | Nolito | Manchester City FC | 1986-10-15 | 후보 | 미평가 | — |
 | RW | 라힘 스털링 | Raheem Sterling | Manchester City FC | 1994-12-08 | 주전 | 미평가 | — |
 | RW | 헤수스 나바스 | Jesús Navas | Manchester City FC | 1985-11-21 | 후보 | 미평가 | — |
 | ST | 세르히오 아궤로 | Sergio Agüero | Manchester City FC | 1988-06-02 | 주전 | 미평가 | — |
-| ST | 가브리에우 제주스 | Gabriel Jesus | Manchester City FC | 1997-04-03 | 후보 | 미평가 | — |
+| ST | 켈레치 이헤아나초 | Kelechi Iheanacho | Manchester City FC | 1996-10-03 | 후보 | 미평가 | — |
 
 ### 10. AS 모나코 (AS Monaco FC) — 4-4-2
 
@@ -1422,7 +1422,6 @@
 | CM | 세르히 다르데르 | Sergi Darder | Olympique Lyonnais | 1993-12-22 | 후보 | 미평가 | — |
 | CAM | 나빌 페키르 | Nabil Fekir | Olympique Lyonnais | 1993-07-18 | 주전 | 미평가 | — |
 | LW | 마티외 발뷔에나 | Mathieu Valbuena | Olympique Lyonnais | 1984-09-28 | 주전 | 미평가 | — |
-| LW | 멤피스 데파이 | Memphis Depay | Olympique Lyonnais | 1994-02-13 | 후보 | 미평가 | — |
 | RW | 막스웰 코르네 | Maxwel Cornet | Olympique Lyonnais | 1996-09-27 | 주전 | 미평가 | — |
 | RW | 라시드 게잘 | Rachid Ghezzal | Olympique Lyonnais | 1992-05-09 | 후보 | 미평가 | — |
 | ST | 알렉상드르 라카제트 | Alexandre Lacazette | Olympique Lyonnais | 1991-05-28 | 주전 | A+ | 2 |
@@ -1556,7 +1555,7 @@
 - **UEFA 2016-17 Europa League technical-observer season 18-player selection, provisional player grade source:** https://www.uefa.com/uefaeuropaleague/news/0253-0d8227a747d5-c25ebf5c91c9-1000--uefa-europa-league-squad-of-the-2016-17-season/
 - **2016-17 UEFA UEL individual top-scoring, assist, saves, tackles and recoveries statistics:** https://www.uefa.com/uefaeuropaleague/history/seasons/2017/statistics/
 
-- 미평가 127명, 생일 미확인 77명, 개별 UEFA 시즌 출전·최다 포지션 및 2014-15/2015-16 성과 비교의 독립 검증 필요.
+- 미평가 126명, 생일 미확인 77명, 개별 UEFA 시즌 출전·최다 포지션 및 2014-15/2015-16 성과 비교의 독립 검증 필요.
 - 원자료의 UEFA 공식 득점 합계·경기 수와 내부 경기표의 계산 일치는 **경기 결과 구조 검증**이며, 개별 선수의 3시즌 역사 평가가 완결됐다는 의미가 아님.
 
 ---
@@ -1564,9 +1563,16 @@
 ## J. GitHub 저장 및 운영 검증 상태
 
 - GitHub JSON: `data/ucl-2016-17.json`, `data/uel-2016-17.json`
-- 구조 검사: `scripts/verify-uefa-2016-17-draft.mjs` (330경기/24구단/440명/잠정 티어 36명/Best XI 2개/지난 시즌 데이터 보존).
+- 구조 검사: `scripts/verify-uefa-2016-17-draft.mjs` (330경기/24구단/439명/잠정 티어 36명/Best XI 2개/지난 시즌 데이터 보존).
 - 실제 브라우저 검사: `scripts/verify-uefa-2016-17-live.mjs`, GitHub Actions `.github/workflows/verify-uefa-2016-17-draft-live.yml`.
 - 실제 사이트: https://wjdduddlf112.github.io/footballarch/?league=ucl&season=2016-17 및 https://wjdduddlf112.github.io/footballarch/?league=uel&season=2016-17 .
 - CI 및 Pages 실제 배포 성공 결과는 보고서 후속 검증 부록에 별도 기록한다.
 - 사용자 확정 지시가 없으므로 선수 티어·순위·Best XI는 모두 `draft_unapproved` / `proposed_unapproved`.
 - **2017-18 신규 시즌 평가를 시작하지 않는다.**
+
+## K. UEFA 선수 자격 및 선발 명단 추가 교차검증 (2026-11-13)
+
+- **아스널:** 페트르 체흐(Petr Čech)는 2016-17 UCL 출전이 0경기여서 후보에서 제외. 다비드 오스피나(David Ospina)는 UCL 본선 8경기 전부 선발(720분). 단순 리그 기록 전이는 배제. 출처: https://fbref.com/en/squads/18bb7c10/2016-2017/c8/Arsenal-Stats-Champions-League
+- **맨체스터 시티:** UEFA 2016-17 기술 보고서 경기/선발/분 자료로 기존 잘못된 대표 역할 교정. RB 파블로 사발레타 5선발(445분) ↔ 바카리 사냐 3선발(292분), 왼쪽 수비수 알렉산다르 콜라로프 6선발(540분), 가엘 클리시 3선발(289분). 골키퍼 카바예로 4선발/393분과 브라보 4선발/323분. UCL 0경기 뱅상 콤파니·가브리에우 제주스를 제외하고 토신 아다라비오요(1선발)·켈레치 이헤아나초(3출전) 추가. 야야 투레 대신 6선발 일카이 귄도안 후보 등록. 왼쪽 수비수의 개별 경기 CB/LB 활동 비중은 추가 확인. 출처: https://dr.statbunker.com/competitions/SeasonAppearances?club_id=14&comp_id=571 , https://www.uefa.com/MultimediaFiles/Download/uefaorg/General/02/49/98/04/2499804_DOWNLOAD.pdf
+- **리옹:** 멤피스 데파이(Memphis Depay)는 맨체스터 유나이티드 소속으로 같은 시즌 UEL에 먼저 출전해 리옹에서는 출전 자격이 없었으므로 리옹의 UEL 후보에서 삭제(맨유 소속 대회 출전 자체는 별개). 출처: https://www.lequipe.fr/Football/Actualites/Lyon-au-complet-face-a-la-roma-en-ligue-europa/783939 , https://ligue1.com/en/articles/l1_article_909-almost-a-shot-at-glory-lyon-in-the-2017-europa-league
+- **최신 총계:** UCL 295명(주전176/후보119, 잠정 티어18/미평가277), UEL 144명(주전88/후보56, 잠정 티어18/미평가126), 합계 439명(주전264/후보175, 잠정 티어36/미평가403). 생년월일 미검증 121명. 유럽대항전 실제 출전 자격은 남은 선수도 독립 전수 검증 필요.
