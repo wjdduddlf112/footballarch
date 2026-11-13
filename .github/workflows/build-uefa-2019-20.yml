@@ -1,0 +1,31 @@
+name: Build 2019-20 UEFA complete DRAFT player grades and report
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/build-uefa-2019-20-players.mjs'
+      - 'audit/UEFA_2019_20_NOMINATION_SPEC_DRAFT.json'
+      - 'audit/UEFA_2019_20_IDENTITY_DOB_DRAFT.json'
+      - 'audit/UEFA_2019_20_TIER_SOURCE_DRAFT.json'
+      - '.github/workflows/build-uefa-2019-20.yml'
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Build all 24 club squads and 446 provisional grades and full report
+        run: |
+          node --check scripts/build-uefa-2019-20-players.mjs
+          node scripts/build-uefa-2019-20-players.mjs
+      - name: Commit generated 2019-20 data and report
+        run: |
+          git config user.name "football-archive-data-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/ucl-2019-20.json data/uel-2019-20.json audit/UEFA_2019_20_DRAFT_FULL_REPORT_2026_11_13.md
+          git diff --cached --quiet || (git commit -m "feat(uefa): all 2019-20 grades, ranks and audit report DRAFT" && git push)
