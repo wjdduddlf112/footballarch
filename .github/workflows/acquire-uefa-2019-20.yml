@@ -1,0 +1,21 @@
+name: Acquire UEFA 2019-20 match sources
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  acquire:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Fetch historical match lists
+        run: node scripts/fetch-uefa-2019-20-sources.mjs
+      - name: Commit provenance and source lists
+        run: |
+          git config user.name "football-archive-data-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add audit/UEFA_2019_20_*
+          git diff --cached --quiet || (git commit -m "data(uefa): obtain 2019-20 match source snapshots" && git push)
