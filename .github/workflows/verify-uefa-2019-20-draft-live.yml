@@ -1,0 +1,42 @@
+name: Verify UEFA 2019-20 complete DRAFT + LIVE Pages
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/ucl-2019-20.json'
+      - 'data/uel-2019-20.json'
+      - 'assets/app.js'
+      - 'index.html'
+      - 'scripts/verify-uefa-2019-20-draft.mjs'
+      - 'scripts/verify-uefa-2019-20-live.mjs'
+      - '.github/workflows/verify-uefa-2019-20-draft-live.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  structure:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify all 2019-20 data and 446 provisional grades (not independent historical quality proof)
+        run: |
+          node --check assets/app.js
+          node scripts/verify-uefa-2019-20-draft.mjs
+  live-browser:
+    needs: structure
+    runs-on: ubuntu-24.04
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install Playwright chromium
+        run: |
+          npm install --no-save playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Validate 2019-20 Pages and 2018-19 regression
+        run: node scripts/verify-uefa-2019-20-live.mjs
