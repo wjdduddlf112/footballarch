@@ -1,6 +1,11 @@
 name: Acquire UEFA 2019-20 match sources
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/fetch-uefa-2019-20-sources.mjs'
+      - '.github/workflows/acquire-uefa-2019-20.yml'
 permissions:
   contents: write
 jobs:
