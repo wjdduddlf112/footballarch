@@ -1528,3 +1528,11 @@
 - Site URLs: https://wjdduddlf112.github.io/footballarch/?league=ucl&season=2015-16 ; https://wjdduddlf112.github.io/footballarch/?league=uel&season=2015-16
 - Structural CI and Chromium/Pages CI results must be checked separately from source-linked provisional player ratings and user approval.
 - Season 2016-17 has NOT been started. No prior season records were intentionally replaced.
+
+## I. Final CI and public GitHub Pages verification — 2026-11-13
+
+- **Structural CI:** PASS for all 32/56 main-stage entrants, 20 groups, 330 match results, 883 non-shootout goals, 24 eligible clubs, 433 draft nominations, exactly 11 nominal starters per club, 34 provisional-rated names, pending 399 names, 22 proposed Best XI places and historical UCL-to-UEL transfers. New validator: `scripts/verify-uefa-2015-16-draft.mjs`.
+- **Real Chromium browser:** PASS 2015-16 UCL (125 matches, 347 goals, eight groups, 16 evaluated clubs, 290 player rows, 18 preliminary rated players), PASS 2015-16 UEL (205 matches, 536 goals, 12 groups, eight evaluated clubs, 143 player rows, 16 preliminary rated players), including overview, tournament, tiers, formation, top class, stats; also PASS 2014-15 UCL/UEL regression tabs and no uncaught page errors. Browser CI verified after historical regression test's 2014-15 goal assertions were corrected.
+- **GitHub Actions:** [2015-16 UEFA DRAFT and LIVE Pages check — SUCCESS](https://github.com/wjdduddlf112/footballarch/actions/runs/43369573940), success SHA `aea5cf757e9ac2c63840ed11576e1fc232d146f9`.
+- **GitHub Pages build/deployment:** [SUCCESS for same SHA](https://github.com/wjdduddlf112/footballarch/actions/runs/43369573014).
+- **Important limitation:** automated structure, deployment and browser results do **not** validate 433 individual UEFA candidate appearances or every player’s preceding two seasons, DOB and ratings; 399 candidates and 141 DOB remain awaiting individual historical research. Never mark the full player-historical audit as completed.
