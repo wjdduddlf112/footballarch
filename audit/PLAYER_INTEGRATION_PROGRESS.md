@@ -1,3 +1,9 @@
+### UEFA 2016-17 CI / actual browser / Pages confirmed — 2026-11-13
+
+- Latest post-correction [2016-17 UEFA GitHub Actions 43372908338](https://github.com/wjdduddlf112/footballarch/actions/runs/43372908338) **SUCCESS**: `structure` success and `live-browser` success. 2016-17 UCL 295 player rows and UEL 144 player rows, 330 tournament matches, 945 goals, club/position filters, both Best XIs, top-tier screens, 2015-16 regression checks. No claim of complete three-season individual player evaluation.
+- Same-code [GitHub Pages deploy run 43372907549](https://github.com/wjdduddlf112/footballarch/actions/runs/43372907549) **SUCCESS** for commit `516c15dde22cf2fe6fae2ffdb505361fcb7623ad`. Later audit-document commits do not change season player data; latest document Pages task status may differ.
+- Full record and candidate audit: [UEFA_2016_17_DRAFT_FULL_REPORT_2026_11_13.md](UEFA_2016_17_DRAFT_FULL_REPORT_2026_11_13.md). **24 clubs / 439 nominees / 36 TSG source-linked provisional hypotheses / 403 pending / 121 DOB unresolved / both XI unapproved**.
+
 ## 2026-11-13 — UEFA 2016-17 UCL/UEL 330-match archive, 24-club player nominations and technical-report-linked DRAFT
 
 - **Season scope:** 2016-17 only. 2016-17 individual play highest weight; 2015-16 second, 2014-15 third. [Complete per-club/player/group/fixture report](UEFA_2016_17_DRAFT_FULL_REPORT_2026_11_13.md). No 2017-18 evaluation undertaken. Every player grade and both Best XIs remain **unapproved drafts**.
