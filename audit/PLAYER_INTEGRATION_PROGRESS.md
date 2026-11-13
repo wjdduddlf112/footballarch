@@ -1,3 +1,19 @@
+## UEFA 2020–21 UCL — DRAFT roster and match archive, 2026-11-13
+
+- 요청 범위: 2020–21 UEFA Champions League ONLY (UEL/UECL 이 시즌 실행 대상 아님). 상태 `draft_unapproved`; 사용자 최종 승인 없음.
+- 본선 32개 구단, 조별리그 A~H 8개 조/96경기, 토너먼트 29경기(16강 16, 8강 8, 4강 4, 결승 1), 총 125경기 366득점. UEFA 16강 진출 16개 평가 구단. 2021-05-29 Chelsea 1–0 Manchester City, Porto 결승. CC0 openfootball UCL 2020-21 원자료와 UEFA 기록 교차 확인.
+- 16개 구단 대표 주전 11명씩 총 176명, 후보 116명, 전체 292명. 위치 GK/CB/LB/RB/DM/CM/CAM/LW/RW/ST별 1~N DRAFT 잠정 순위와 잠정 S~D 티어. 선수 한국어/원어명 및 생년월일 292명 모두 기재. 구단 포메이션 메타데이터 및 4-2-3-1 잠정 Best XI 11명 연결.
+- 최근 3시즌: 2018-19(낮음) / 2019-20(중간) / 2020-21(높음) 순. 2018-19·2019-20 국내 리그 기존 DRAFT 파일을 이름으로 참고 연결: 양 시즌 169명 / 한 시즌 69명 / 모두 없음 54명. **독립적인 3시즌 UEFA 개인 활약 검증을 완료한 것은 아님.** 예전 리그 DRAFT 평가값을 현재 시즌 검증완료로 해석 금지.
+- 2020–21 UCL 출전 근거 개별 확보: **57/292명**(UEFA 공식 Technical Observer 23인 발표, Chelsea FC 2020/21 UEFA 출전 통계, FBref Porto/Borussia Mönchengladbach 2020/21 UCL, UEFA 득점·도움 통계와 ESPN 경기 수). **235명은 당해 UCL 본선 개인 출전 검증 대기**. 미검증 선수는 `uefaAppearanceVerified:false`, 출전·선발·시간 필드는 임의 추정하지 않고 `null`; 일부 후보는 실제 해당 대회 출전 자격 재검토가 필요할 수 있다.
+- 생년월일 21개 보완: 직전 시즌 Archive 초안 참조 20건(독립 교차검증 필요), Martin Braithwaite는 FC Barcelona 공식 출생 정보. 성적에 의한 티어 가산 없음.
+- 팀별 대표 포메이션·포지션·티어는 잠정안이며 시즌 전체 실제 주 포지션 확인이 완료되지 않았다. 우승 팀이라는 사유로 개인 티어 가산하지 않았고, 개별 UEFA 리그 전 경기 출전 기록·2시즌 전후 개인 경기력을 근거로 한 완전한 독립 검증은 진행 중이다.
+- 검증: JSON 32개 구단/8개 조/125경기/16개 평가 구단, 출전 기록 정합성, 구단별 11명 주전과 포지션당 후보 최대 1명, 292명 중복 ID 없음, 포지션별 순위, Best XI 중복 및 포지션 정합성. 경기장별 코로나19 중립경기 기록과 개별 UEFA 경기 전수 독립 대조는 아직 필요하다.
+- 사용자 페이지: https://wjdduddlf112.github.io/footballarch/?league=ucl&season=2020-21 ; 파일: `data/ucl-2020-21.json`; 사이트 실제 브라우저/Playwright 검증과 GitHub Pages 배포 확정 별도 확인 필요.
+- 참고 출처: https://github.com/openfootball/champions-league/blob/master/2020-21/cl.txt ; https://www.uefa.com/uefachampionsleague/news/0269-12688c451cdd-b6efcb4ce948-1000--squad-of-the-season/ ; https://www.chelseafc.com/en/news/article/chelsea-s-2020-21-champions-league-campaign-in-numbers ; https://www.uefa.com/uefachampionsleague/history/seasons/2021/statistics/ ; https://fbref.com/en/squads/5e876ee6/2020-2021/c8/Porto-Stats-Champions-League ; https://fbref.com/en/squads/32f3ee20/2020-2021/c8/Monchengladbach-Stats-Champions-League .
+- 신규 `data/ucl-2020-21.json`은 2020-21 이전 승인 기록에 영향을 주지 않도록 새 시즌 파일만 추가/수정했다. 수정 이력은 GitHub 커밋 기록으로 확인.
+
+---
+
 ## UEFA 2019–20 UCL + UEL — FULL NOMINEE GRADE DRAFT, 2026-11-13
 
 - 사용자의 다음 지시로 2019–20 UCL/UEL 동시 처리. 다음 2020–21 시즌은 별도 지시 전 자동 진행 금지.
