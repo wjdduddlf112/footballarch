@@ -1,0 +1,42 @@
+name: Verify UEFA 2018-19 DRAFT and LIVE Pages
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/ucl-2018-19.json'
+      - 'data/uel-2018-19.json'
+      - 'assets/app.js'
+      - 'index.html'
+      - 'scripts/verify-uefa-2018-19-draft.mjs'
+      - 'scripts/verify-uefa-2018-19-live.mjs'
+      - '.github/workflows/verify-uefa-2018-19-draft-live.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  structure:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Structural validation, independent per-player audit not claimed
+        run: |
+          node --check assets/app.js
+          node scripts/verify-uefa-2018-19-draft.mjs
+  live-browser:
+    needs: structure
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install Playwright Chromium
+        run: |
+          npm install --no-save playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Validate 2018-19 Pages and 2017-18 regression
+        run: node scripts/verify-uefa-2018-19-live.mjs
