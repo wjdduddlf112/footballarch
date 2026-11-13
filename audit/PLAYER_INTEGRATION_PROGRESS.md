@@ -1,3 +1,17 @@
+## UEFA 2018–19 UCL + UEL — DRAFT, 2026-11-13
+
+- 참가 구단 UCL 32 / UEL 56(조별리그 48 + UCL 조 3위 8), 그룹 UCL 8/UEL 12, 전경기 **UCL 125경기 366골 / UEL 205경기 565골**, 공개 역사 경기 CSV와 UEFA 2018-19 기술보고서 대조.
+- 2019-05-09 첼시-프랑크푸르트 경기는 CSV의 승부차기 혼입 5–4를 정규/연장 1–1, 승부차기 4–3으로 교정. PSG–맨체스터 유나이티드 UCL 16강 및 벤피카–프랑크푸르트 UEL 8강 원정다득점 진출도 대진 자료에서 명시적으로 재검산.
+- UCL 16강 16개 구단 **264명(주전 176+후보 88)**, UEL 8강 8개 구단 **133명(주전 88+후보 45)**. 총 397명 **한국어·원어명·출생일 전원 필드** 및 원 소속, 좌/우 전술 포지션, 후보 구분. 30개 DOB 빈칸은 DFB/Goal/FootballSquads 시즌 명단으로 보완. 나머지 신원 필드의 이중 독립 확인 미완료.
+- UEFA 기술보고서 2018-19 observer-squad **UCL 20명·UEL 18명**에 한해서만 현재 UEFA 대회 참여를 우수선수 선정 기록으로 확인하고 등급 및 **부분집합** 포지션 순위를 제안. **나머지 359명**은 선수별 실제 출전·분 기록 미확인으로 미평가. UEFA 전체 선수 출전(예비 후보) 승인이라고 주장하지 않음.
+- 해당 시즌 베스트 XI 각각 11명 구성, 둘 다 **proposed_unapproved**, 선수 등급 **draft_unapproved**, 완전한 개인 2016-17 / 2017-18 / 2018-19 시즌 근거 검증 미완료, approvedPlayerTiers=0 유지.
+- 원본 데이터: `data/ucl-2018-19.json`, `data/uel-2018-19.json`. 명단 분리: `audit/UEFA_2018_19_NOMINATION_SPEC_DRAFT.json`; 전체 자료 330경기+397명 1364행 상세: `audit/UEFA_2018_19_DRAFT_FULL_REPORT_2026_11_13.md`.
+- CI: `scripts/verify-uefa-2018-19-draft.mjs` 및 `scripts/verify-uefa-2018-19-live.mjs`, workflow `.github/workflows/verify-uefa-2018-19-draft-live.yml`. GitHub Actions 43381866408 **structure+real Chromium live-browser SUCCESS** (2018–19 UCL/UEL, 2017–18 regressions). 최근 DOB 수정 후 데이터 검증은 CI 재실행 여부 확인.
+- Pages: https://wjdduddlf112.github.io/footballarch/?league=ucl&season=2018-19 ; https://wjdduddlf112.github.io/footballarch/?league=uel&season=2018-19
+- 다음 시즌 2019–20은 **사용자 지시 전 진행 금지**.
+
+---
+
 ### UEFA 2017-18 full UCL + UEL source-led DRAFT, confirmed CI/Chromium/Pages — 2026-11-13
 
 - **Scope:** UEFA Champions League 2017-18 and UEFA Europa League 2017-18 ONLY. Historical period for individual assessment: 2015-16 (lowest), 2016-17 (middle), 2017-18 (highest). All tiers/ranks and Best XIs `draft_unapproved` or `proposed_unapproved`; no user approvals inferred.
