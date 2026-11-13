@@ -1,18 +1,17 @@
-## UEFA 2020–21 UCL — DRAFT roster and match archive, 2026-11-13
+## UEFA 2020–21 UCL — DRAFT main-stage archive and 16-club nomination, 2026-11-13
 
-- 요청 범위: 2020–21 UEFA Champions League ONLY (UEL/UECL 이 시즌 실행 대상 아님). 상태 `draft_unapproved`; 사용자 최종 승인 없음.
-- 본선 32개 구단, 조별리그 A~H 8개 조/96경기, 토너먼트 29경기(16강 16, 8강 8, 4강 4, 결승 1), 총 125경기 366득점. UEFA 16강 진출 16개 평가 구단. 2021-05-29 Chelsea 1–0 Manchester City, Porto 결승. CC0 openfootball UCL 2020-21 원자료와 UEFA 기록 교차 확인.
-- 16개 구단 대표 주전 11명씩 총 176명, 후보 116명, 전체 292명. 위치 GK/CB/LB/RB/DM/CM/CAM/LW/RW/ST별 1~N DRAFT 잠정 순위와 잠정 S~D 티어. 선수 한국어/원어명 및 생년월일 292명 모두 기재. 구단 포메이션 메타데이터 및 4-2-3-1 잠정 Best XI 11명 연결.
-- 최근 3시즌: 2018-19(낮음) / 2019-20(중간) / 2020-21(높음) 순. 2018-19·2019-20 국내 리그 기존 DRAFT 파일을 이름으로 참고 연결: 양 시즌 169명 / 한 시즌 69명 / 모두 없음 54명. **독립적인 3시즌 UEFA 개인 활약 검증을 완료한 것은 아님.** 예전 리그 DRAFT 평가값을 현재 시즌 검증완료로 해석 금지.
-- 2020–21 UCL 출전 근거 개별 확보: **57/292명**(UEFA 공식 Technical Observer 23인 발표, Chelsea FC 2020/21 UEFA 출전 통계, FBref Porto/Borussia Mönchengladbach 2020/21 UCL, UEFA 득점·도움 통계와 ESPN 경기 수). **235명은 당해 UCL 본선 개인 출전 검증 대기**. 미검증 선수는 `uefaAppearanceVerified:false`, 출전·선발·시간 필드는 임의 추정하지 않고 `null`; 일부 후보는 실제 해당 대회 출전 자격 재검토가 필요할 수 있다.
-- 생년월일 21개 보완: 직전 시즌 Archive 초안 참조 20건(독립 교차검증 필요), Martin Braithwaite는 FC Barcelona 공식 출생 정보. 성적에 의한 티어 가산 없음.
-- 팀별 대표 포메이션·포지션·티어는 잠정안이며 시즌 전체 실제 주 포지션 확인이 완료되지 않았다. 우승 팀이라는 사유로 개인 티어 가산하지 않았고, 개별 UEFA 리그 전 경기 출전 기록·2시즌 전후 개인 경기력을 근거로 한 완전한 독립 검증은 진행 중이다.
-- 검증: JSON 32개 구단/8개 조/125경기/16개 평가 구단, 출전 기록 정합성, 구단별 11명 주전과 포지션당 후보 최대 1명, 292명 중복 ID 없음, 포지션별 순위, Best XI 중복 및 포지션 정합성. 경기장별 코로나19 중립경기 기록과 개별 UEFA 경기 전수 독립 대조는 아직 필요하다.
-- 사용자 페이지: https://wjdduddlf112.github.io/footballarch/?league=ucl&season=2020-21 ; 파일: `data/ucl-2020-21.json`; 사이트 실제 브라우저/Playwright 검증과 GitHub Pages 배포 확정 별도 확인 필요.
-- 참고 출처: https://github.com/openfootball/champions-league/blob/master/2020-21/cl.txt ; https://www.uefa.com/uefachampionsleague/news/0269-12688c451cdd-b6efcb4ce948-1000--squad-of-the-season/ ; https://www.chelseafc.com/en/news/article/chelsea-s-2020-21-champions-league-campaign-in-numbers ; https://www.uefa.com/uefachampionsleague/history/seasons/2021/statistics/ ; https://fbref.com/en/squads/5e876ee6/2020-2021/c8/Porto-Stats-Champions-League ; https://fbref.com/en/squads/32f3ee20/2020-2021/c8/Monchengladbach-Stats-Champions-League .
-- 신규 `data/ucl-2020-21.json`은 2020-21 이전 승인 기록에 영향을 주지 않도록 새 시즌 파일만 추가/수정했다. 수정 이력은 GitHub 커밋 기록으로 확인.
-
----
+- **범위:** UEFA Champions League 2020–21만. 다른 유럽대항전은 이번 지시로 작업하지 않음. 새 파일 `data/ucl-2020-21.json`은 `draft_unapproved`; Best XI는 `proposed_unapproved`.
+- **공식 대회 구조:** 본선 32개 구단/조별리그 A~H 8개 조/96경기, 16강 16경기+8강 8경기+4강 4경기+결승 1경기 = 총 **125경기, 366골**. 평가 대상은 16강 진출 16개 구단. Chelsea FC 1–0 Manchester City FC, 2021-05-29 Estádio do Dragão, Porto. 출처 UEFA 시즌 대회 통계, CC0 openfootball 경기 원자료 및 FBref 개별 자료.
+- **선수:** 16개 구단에서 대표 XI 11명씩 **176명** + 포지션별 후보 최대 1명씩 **112명**, 총 **288명**. 선수 288명 전원 2020–21 UCL 본선 실제 출전 사실, 생년월일·한글명·원어명·당시 구단명을 보유. 개인 출전 확인 288/288명. 개인 경기 수·선발·분·득점·도움은 출처로 확인한 필드만 입력하고 미확인 값은 `null`.
+- **구단별 명단 크기:** bayern 21; atleti 15; realmadrid 18; gladbach 18; mancity 19; porto 17; liverpool 15; atalanta 17; chelsea 17; sevilla 19; dortmund 19; lazio 17; juventus 19; barcelona 18; psg 20; leipzig 19.
+- **포지션·티어·순위:** GK→CB→LB→RB→DM→CM→CAM→LW→RW→ST 순으로 각 선수 1포지션, 포지션별 1~N 잠정 순위, S/A+/A/A-/B+/B/B-/C+/C/C-/D 중 잠정 티어 1개. **전원 티어가 3시즌 역사적 개인활약 독립검증을 통과한 것은 아님.** 대부분의 티어는 2020–21 국내리그 임시 평가를 참고한 재검토 대상 초안. 우승·팀 토너먼트 진출 그 자체는 개인 점수에 직접 가산하지 않음.
+- **최근 3시즌:** 가중순위 2020–21 > 2019–20 > 2018–19. 기존 5대 리그 DRAFT 기록으로 직전 2시즌 참고자료 연결: 양 시즌 168명, 한 시즌 66명, 두 시즌 자료 없음 54명. 기존 국내리그 데이터는 **독립 3시즌 UCL 경기력 검증이 아님**.
+- **선발 수정:** Atalanta GK Sportiello(5 선발) > Gollini(3), Dortmund GK Hitz(6) > Bürki(4), Atletico ST João Félix(8 선발) > Correa(5), Lazio CB Hoedt(5) > Radu(1), Bayern LB Lucas Hernández > Alphonso Davies, RW Leroy Sané > Gnabry, Liverpool Curtis Jones > Thiago. Chelsea 후보 ST Olivier Giroud(8경기·6골)로 교체. UEFA 2020–21 0출전 Aleix Vidal 및 비적격 3명 제외.
+- **Best XI:** 4-2-3-1 잠정 11명, 실제 같은 구단 소속·포지션 일치, 중복 없음. 사용자 명시적 승인 전 확정 금지.
+- **자동 구조 검증:** 32개 참가팀, 8개 그룹, 실제 125경기, 16개 평가팀, 주전 각 11명, 후보 포지션당 최대 1명, ID 중복 없음, 출생일/한글명 누락 없음, 포지션별 연속 순위, Best XI 구성 검증.
+- **남은 작업:** 288명에 대한 2018–19/2019–20/2020–21 **독립적인 3시즌 개인 활약·정성 티어 전수감사**, 대부분 선수의 UEFA 경기별 포지션/출전 시간·도움 전수검증, UEFA 토너먼트 개최지/중립 경기 표기 개별 정합성. FBref·Statbunker 일부 경기 수 출처 차이(예: Porto Sérgio Oliveira, Juventus Matthijs de Ligt)는 재검증 대기.
+- **커밋과 배포는 별개:** GitHub `main` 파일 업데이트 확인. GitHub Pages 사이트 실제 브라우저·JavaScript 검증과 Actions/Pages 배포 성공은 이 실행에서 확정하지 못함. URL https://wjdduddlf112.github.io/footballarch/?league=ucl&season=2020-21
+- **참고:** https://www.uefa.com/uefachampionsleague/history/seasons/2021/statistics/ ; https://github.com/openfootball/champions-league/blob/master/2020-21/cl.txt ; https://www.uefa.com/uefachampionsleague/news/0269-12688c451cdd-b6efcb4ce948-1000--squad-of-the-season/ ; 2020-21 각 구단 FBref UCL 개별 통계(선수별 `sources`에 링크 저장).
 
 ## UEFA 2019–20 UCL + UEL — FULL NOMINEE GRADE DRAFT, 2026-11-13
 
