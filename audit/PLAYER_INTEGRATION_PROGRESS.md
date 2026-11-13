@@ -1,3 +1,8 @@
+### 2026-11-13 UEFA 2015-16 verification addendum — structural, live browser and Pages all SUCCESS
+
+- 2015-16 UEFA run [43369573940](https://github.com/wjdduddlf112/footballarch/actions/runs/43369573940) completed SUCCESS: `structure` SUCCESS and `live-browser` SUCCESS. Actual Chromium confirmed 2015-16 UCL and UEL all six tabs and 2014-15 both competitions regression, no unhandled JS errors.
+- Public [Pages deploy 43369573014](https://github.com/wjdduddlf112/footballarch/actions/runs/43369573014) SUCCESS for checked SHA `aea5cf757e9ac2c63840ed11576e1fc232d146f9`. Historical player evidence completeness remains separately UNVERIFIED; see season report.
+
 ## 2026-11-13 — UEFA 2015-16 UCL + UEL entire main-stage archive, 24-club nominee DRAFT, provisional grade audit
 
 - **Scope:** exclusively 2015-16; current 2015-16 individual performance weighted above 2014-15 and 2013-14. NO 2016-17 advancement; all grades and Best XIs unapproved. [Full 1531-line, 330-match and 433-nominee report](UEFA_2015_16_DRAFT_FULL_REPORT_2026_11_13.md).
