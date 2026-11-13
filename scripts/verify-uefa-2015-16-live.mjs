@@ -61,10 +61,10 @@ async function verify(id,games,goals,groups,clubs,players,rated,finalWinner){
 try{
  await verify("ucl",125,347,8,16,290,18,"Madrid");
  await verify("uel",205,536,12,8,143,16,"Sevilla");
- await openSeason("ucl","2014-15",125,362);
+ await openSeason("ucl","2014-15",125,361);
  await tab("tiers");
  assert.equal(await page.locator("tr[data-player]").count(),302,"prior UCL 2014-15 regression");
- await openSeason("uel","2014-15",205,475);
+ await openSeason("uel","2014-15",205,548);
  await tab("tiers");
  assert.equal(await page.locator("tr[data-player]").count(),153,"prior UEL 2014-15 regression");
  assert.deepEqual(errors,[],"Unhandled JavaScript errors");
