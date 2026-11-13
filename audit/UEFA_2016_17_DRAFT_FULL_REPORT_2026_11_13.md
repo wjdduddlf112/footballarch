@@ -1576,3 +1576,11 @@
 - **맨체스터 시티:** UEFA 2016-17 기술 보고서 경기/선발/분 자료로 기존 잘못된 대표 역할 교정. RB 파블로 사발레타 5선발(445분) ↔ 바카리 사냐 3선발(292분), 왼쪽 수비수 알렉산다르 콜라로프 6선발(540분), 가엘 클리시 3선발(289분). 골키퍼 카바예로 4선발/393분과 브라보 4선발/323분. UCL 0경기 뱅상 콤파니·가브리에우 제주스를 제외하고 토신 아다라비오요(1선발)·켈레치 이헤아나초(3출전) 추가. 야야 투레 대신 6선발 일카이 귄도안 후보 등록. 왼쪽 수비수의 개별 경기 CB/LB 활동 비중은 추가 확인. 출처: https://dr.statbunker.com/competitions/SeasonAppearances?club_id=14&comp_id=571 , https://www.uefa.com/MultimediaFiles/Download/uefaorg/General/02/49/98/04/2499804_DOWNLOAD.pdf
 - **리옹:** 멤피스 데파이(Memphis Depay)는 맨체스터 유나이티드 소속으로 같은 시즌 UEL에 먼저 출전해 리옹에서는 출전 자격이 없었으므로 리옹의 UEL 후보에서 삭제(맨유 소속 대회 출전 자체는 별개). 출처: https://www.lequipe.fr/Football/Actualites/Lyon-au-complet-face-a-la-roma-en-ligue-europa/783939 , https://ligue1.com/en/articles/l1_article_909-almost-a-shot-at-glory-lyon-in-the-2017-europa-league
 - **최신 총계:** UCL 295명(주전176/후보119, 잠정 티어18/미평가277), UEL 144명(주전88/후보56, 잠정 티어18/미평가126), 합계 439명(주전264/후보175, 잠정 티어36/미평가403). 생년월일 미검증 121명. 유럽대항전 실제 출전 자격은 남은 선수도 독립 전수 검증 필요.
+
+## L. 최종 2016-17 구조·브라우저·배포 검증 (2026-11-13)
+
+- **자동 구조 검사 PASS:** UCL 32팀/8개 조/125경기/380골/16개 평가 구단/295명의 DRAFT 후보, UEL 56팀/12개 조/205경기/565골/8개 평가 구단/144명의 DRAFT 후보; 조별 승점·득실·선수 중복·주전 11명·후보 포지션별 상한·티어/순위 구조·각 Best XI 11명; UCL 3위 8팀 UEL 편입 대조.
+- **실제 Chromium 브라우저 PASS:** 2016-17 UCL 및 UEL Overview, Tournament, Player Tiers (구단별/포지션별), Best XI, European Top Class, Statistics 화면 표시 검증, 2015-16 UCL/UEL 회귀 검사. GitHub Actions [2016-17 검증 성공 기록](https://github.com/wjdduddlf112/footballarch/actions/runs/43372908338) — 두 개의 job(`structure`, `live-browser`) 모두 SUCCESS, 검증 SHA `516c15dde22cf2fe6fae2ffdb505361fcb7623ad`.
+- **GitHub Pages 배포 PASS:** [검증한 코드 SHA와 일치하는 Pages 성공 기록](https://github.com/wjdduddlf112/footballarch/actions/runs/43372907549) — SUCCESS.
+- 검증된 소스와 시즌 데이터는 GitHub `main`에 있으며 그 이후 발생한 감사 문서 편집만으로 2016-17 선수 평가가 확정되는 것은 아니다.
+- **미완료:** 전체 439명 실출전·등록 자격 독립 전수검증, 121명 DOB 추가 검증, 403명 티어 미평가, 2014-15/2015-16 개별 선수 경기력·포지션 비교 평가. 36개 잠정 등급과 두 Best XI는 사용자 승인을 받지 않았다. 구조·브라우저 PASS ≠ 역사적 개인 평가 100% 완료.
