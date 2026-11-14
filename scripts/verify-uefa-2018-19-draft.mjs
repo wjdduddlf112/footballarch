@@ -100,7 +100,7 @@ for(const s of expectations){
   for(let i=1;i<rated.length;i++)assert(levels.indexOf(rated[i-1].tier)<=levels.indexOf(rated[i].tier),f+" rank tier reversal");
  }
  assert.equal(p.length,s.id==="ucl"?264:133,f+" roster population");
- assert.equal(p.filter(x=>x.tier!==null).length,s.id==="ucl"?21:18,f+" independently UEFA-confirmed provisional rated player count");
+ assert.equal(p.filter(x=>x.appearances!==null).length,s.id==="ucl"?21:18,f+" independently UEFA-confirmed appearances baseline");
  assert.equal(d.bestXi.length,s.bestXi,f+" best XI size");
  assertUnique(d.bestXi.map(x=>x.playerId),f+" Best XI duplicate player");
  for(const x of d.bestXi){
@@ -111,7 +111,7 @@ for(const s of expectations){
  assert.equal(d.meta.verification.approvedPlayerTiers,0,f+" no unilateral approvals");
  assert.equal(d.meta.verification.independentThreeSeasonPlayerAuditComplete,false,f+" no false historical audit");
  assert.equal(d.meta.verification.playerCandidateCount,p.length,f+" counts");
- assert.equal(d.meta.verification.individuallyUEFAAppearancesConfirmed,p.filter(x=>x.tier!==null).length,f+" UEFA observer award confirmed presence count");
+ assert.equal(d.meta.verification.individuallyUEFAAppearancesConfirmed,p.filter(x=>x.appearances!==null).length,f+" independently UEFA-confirmed appearances count; do not conflate conditional domestic proxy ratings");
  assert.equal(d.meta.verification.provisionalTiers,p.filter(x=>x.tier!==null).length,f+" ratings counts");
  assert.equal(d.meta.verification.nameKoPresent,p.filter(x=>/[가-힣]/.test(x.nameKo)).length,f+" Korean name count");
  assert.equal(d.meta.verification.birthDatesPresent,p.filter(x=>!!x.born).length,f+" DOB count");
