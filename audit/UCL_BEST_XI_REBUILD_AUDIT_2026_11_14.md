@@ -103,7 +103,7 @@ Following a fresh inspection of all 22 `data/ucl-*.json` entries, five more *DRA
 | 2009-10 | CM | Bastian Schweinsteiger (Bayern) | Xavi Hernández (Barcelona) | Both appeared in contemporary UEFA technical season recognition; Xavi's sustained individual midfield impact across the weighting window is preferred. Strong alternative: Schweinsteiger, whose 2009-10 positional transition and performance warrant further check. |
 | 2013-14 | RW | Gareth Bale (Real Madrid) | Arjen Robben (Bayern) | Robben is on UEFA's contemporary 18-player technical selection and is graded A+, position rank 1; Bale was not on that list and was ungraded in the archive. Bale's contributions, including the final, remain important but are not automatically a criterion. |
 | 2013-14 | ST | Karim Benzema (Real Madrid) | Zlatan Ibrahimović (PSG) | 10 goals (second-best in tournament), technical season squad, 2011-14 individual consistency; Benzema has five UEFA assists and remains a credible alternative. |
-| 2018-19 | CM | Moussa Sissoko (Tottenham) | Jordan Henderson (Liverpool) | UEFA's official midfielder award placed Henderson third (59 pts) vs Sissoko sixth (22 pts), with Henderson playing 11 matches, 799 minutes, two assists. Both remain valid season squad contenders. Henderson's independent historical tier remains `null` pending assessment. |
+| 2018-19 | CM | Moussa Sissoko (Tottenham) | Jordan Henderson (Liverpool) | UEFA's official midfielder award placed Henderson third (59 pts) vs Sissoko sixth (22 pts), with Henderson playing 11 matches, 799 minutes, two assists. Both remain valid season squad contenders. Henderson was subsequently assigned a **provisional A+** tier and CM rank 2, explicitly pending independent 2016-17 / 2017-18 source-level assessment. |
 
 ### Evidence links for these changes
 - 2007-08 season statistics: https://www.uefa.com/uefachampionsleague/history/seasons/2008/statistics/
@@ -125,3 +125,9 @@ Following a fresh inspection of all 22 `data/ucl-*.json` entries, five more *DRA
 - Official UEFA technical **squads** and calendar-year fan teams are secondary reference material; neither constitutes an official season-specific 11.
 - No title/finalist bonus, no forced 4-3-3, no cross-positional reassignment without match evidence.
 - No final user approval given. All changes on `main` are draft data amendments, not final publication approvals.
+
+### 2026-11-14 internal ranking consistency follow-up
+- 2007-08 LW: Robinho A / #1, Ryan Babel A / #2 (draft swap).
+- 2009-10 CM: Xavi S / #1, Frank Lampard S / #2 (draft swap); Bastian Schweinsteiger stays A+ / #4.
+- 2018-19 CM: Georginio Wijnaldum A+ / #1, Jordan Henderson **provisional A+ / #2**, Moussa Sissoko A- / #3, Tanguy Ndombele A- / #4, Kevin De Bruyne A- / #5. De Bruyne's four current-year UCL appearances require independent review against the stronger two earlier seasons.
+- Ranking changes are provisional relative judgments and **not** a statement that the independent three-season assessment is fully completed.
