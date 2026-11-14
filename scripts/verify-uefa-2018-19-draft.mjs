@@ -100,7 +100,7 @@ for(const s of expectations){
   for(let i=1;i<rated.length;i++)assert(levels.indexOf(rated[i-1].tier)<=levels.indexOf(rated[i].tier),f+" rank tier reversal");
  }
  assert.equal(p.length,s.id==="ucl"?264:133,f+" roster population");
- assert.equal(p.filter(x=>x.tier!==null).length,s.id==="ucl"?20:18,f+" observer inclusion count");
+ assert.equal(p.filter(x=>x.tier!==null).length,s.id==="ucl"?21:18,f+" independently UEFA-confirmed provisional rated player count");
  assert.equal(d.bestXi.length,s.bestXi,f+" best XI size");
  assertUnique(d.bestXi.map(x=>x.playerId),f+" Best XI duplicate player");
  for(const x of d.bestXi){
