@@ -22,15 +22,19 @@
 | 2009-10 | LW Best XI | Goran Pandev | Cristiano Ronaldo | `3a8db18` |
 | 2012-13 | CM Best XI | İlkay Gündoğan | Bastian Schweinsteiger | `0e9e1aa` |
 | 2012-13 | CAM Best XI | Thomas Müller | Mario Götze | `0e9e1aa` |
+| 2014-15 | GK Best XI | Marc-André ter Stegen | Gianluigi Buffon | `a8f81b1` |
 | All UCL seasons | Validator | Early-era only primary-position assertion | Mandatory position vs primary roster slot and suspicious duplicate Korean name assertion for every UCL season | `b486b1b` |
 
 ### Reasons for selection changes
 - **2009-10 LW:** Data had Goran Pandev B+ (provisional positional rank 12) in Best XI, but Cristiano Ronaldo S (rank 1) in the same LW role and seven UCL goals. That was inconsistent with individual-performance-first methodology. Inter winning the trophy is not an independent player-selection criterion.
 - **2012-13 CAM:** Müller was listed as RW in the player pool, yet selected at CAM. Götze is an actual CAM at Dortmund with considerable competition impact. His selection avoids the direct position contradiction.
+- **2014-15 GK:** Both Buffon and ter Stegen played all 1,170 UCL minutes and were selected in UEFA's contemporaneous technical squad. However, the existing independent DRAFT goalkeeper evaluation ranked Buffon A+, first, and ter Stegen A, third. A weighted prior-3-season assessment also favors Buffon's established performance. Draft replacement does not itself settle the head-to-head statistically.
 - **2012-13 CM:** Schweinsteiger was central to Bayern's midfield role over the season and acknowledged in UEFA's contemporary technical selection. Comparing Schweinsteiger and Gündoğan remains a nuanced historical decision; this is a DRAFT recommendation rather than a conclusively proven superiority.
 
 ### References
 - https://www.uefa.com/uefachampionsleague/history/seasons/2010/statistics/
+- https://www.uefa.com/uefachampionsleague/history/seasons/2015/statistics/players/
+- https://www.uefa.com/uefachampionsleague/news/0253-0d802a501f23-68765bf409b3-1000--uefa-champions-league-squad-of-the-season/
 - https://www.uefa.com/MultimediaFiles/Download/TechnicalReport/competitions/UCL/01/99/10/79/1991079_DOWNLOAD.pdf
 - `audit/UCL_1999_2005_BEST_XI_RESTORATION_2026_11_14.md`
 
