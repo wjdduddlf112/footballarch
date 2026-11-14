@@ -22,6 +22,17 @@ for(const file of files){
    const player=d.players.find(p=>p.id===pick.playerId);
    if(player)chk(pick.position===player.position,file+": XI/primary role mismatch: "+player.nameOriginal+" XI="+pick.position+" roster="+player.position);
   }
+  // Prevent a positional rank leader from being silently excluded from the XI.
+  // For multiple CB/CM/ST places, the chosen set must match the top N rated
+  // candidates, rather than merely containing position rank #1.
+  for(const pos of [...new Set(xi.map(x=>x.position))]){
+   const picks=xi.filter(x=>x.position===pos);
+   const ranked=d.players.filter(p=>p.position===pos&&p.tier!=null&&Number.isInteger(p.rank)&&p.rank>0).sort((a,b)=>a.rank-b.rank);
+   if(ranked.length<picks.length)continue; // explicitly ungraded early-era pools stay under review
+   const chosen=new Set(picks.map(x=>x.playerId));
+   const expected=ranked.slice(0,picks.length);
+   chk(expected.every(p=>chosen.has(p.id)),file+": Best XI/rank top-"+picks.length+" mismatch "+pos+": expected "+expected.map(p=>p.nameOriginal+"#"+p.rank).join(", ")+", picked "+picks.map(x=>d.players.find(p=>p.id===x.playerId)?.nameOriginal||x.playerId).join(", "));
+  }
   const koToOriginals=new Map();
   for(const player of d.players){
    if(!player.nameKo||!player.nameOriginal)continue;
