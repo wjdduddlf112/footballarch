@@ -157,7 +157,7 @@ function uclOverview(){
  if(hasSecondGroup){for(const g of groups.filter(g=>g.stage===2))h+='<div style="margin-top:18px"><h3>Group '+esc(g.code)+'</h3>'+uclTable(g)+'</div>';h+='</section>';}
  const rated=people.filter(p=>Boolean(p.tier)).length;
  const xiCount=(data.bestXi||[]).length;
- h+='<section class="panel" style="margin-top:15px"><div class="section-heading"><h2>선수 평가 · '+(rated||xiCount?"DRAFT · 미승인":"자료 수집 중")+'</h2></div><p class="muted">경기 결과 전수 기록 · 후보 '+people.length+'명 · 잠정 티어 '+rated+'명 · 미평가 '+(people.length-rated)+'명 · Best XI '+(xiCount===11?"11명 제안(미승인)":"미완료")+'. 출전·전술·과거 3시즌 독립 검증은 계속 필요합니다.</p><button class="pill" data-action="candidates">후보 '+people.length+'명 전체 보기</button></section>';
+ h+='<section class="panel" style="margin-top:15px"><div class="section-heading"><h2>선수 평가 · '+(rated||xiCount?"DRAFT · 미승인":"자료 수집 중")+'</h2></div><p class="muted">경기 결과 전수 기록 · 후보 '+people.length+'명 · 잠정 티어 '+rated+'명 · 미평가 '+(people.length-rated)+'명 · Best XI '+(xiCount===11?"11명 제안(미승인)":"미완료")+'. 출전·전술·과거 3시즌 독립 검증은 계속 필요합니다.</p>'+tierEvidenceNotice()+'<button class="pill" data-action="candidates">후보 '+people.length+'명 전체 보기</button></section>';
  if(st.showCandidates)h+=candidatePool();
  return h;
 }
@@ -203,9 +203,14 @@ function tablePlayers(rows){
  if(!rows.length)return '<div class="empty">선수 없음</div>';
  return '<div class="table-scroll"><table class="datagrid"><thead><tr><th>POS</th><th>PLAYER</th><th>CLUB</th><th>BORN</th><th>ROLE</th><th>STARTS</th><th>RANK</th><th>TIER</th></tr></thead><tbody>'+rows.map(p=>'<tr data-player="'+esc(p.id)+'"><td><b>'+esc(p.position)+'</b></td><td class="person">'+esc(p.nameKo||p.name)+'<span class="small muted" style="display:block;font-weight:400">'+esc(p.nameOriginal||p.name)+'</span></td><td><div style="display:flex;align-items:center;gap:8px">'+crest(p.club)+esc(p.clubNameOriginal||club(p.club).name)+'</div></td><td>'+esc(p.born||"—")+'</td><td>'+esc(p.role==="starter"?"주전":p.role==="backup"?"후보":"—")+'</td><td>'+esc(p.starts??p.leagueStarts??"—")+'</td><td>'+esc(p.rank??"—")+'</td><td>'+grade(p.tier)+'</td></tr>').join("")+'</tbody></table></div>'
 }
+function tierEvidenceNotice(){
+ const a=data?.audit?.tierImport;
+ if(st.domain!=="europe"||data?.meta?.competitionId!=="ucl"||!a)return "";
+ return '<p class="small muted" style="margin:9px 0">평가 근거 구분: '+esc(a.added||0)+'명은 해당 시즌 국내 리그 DRAFT 개인 티어를 참조해 표시한 <b>조건부 잠정 등급</b>입니다. UCL 3시즌 개인 활약을 독립 검증한 최종 티어가 아니며, '+esc(a.stillPending||0)+'명은 근거 부족으로 평가 대기 상태입니다. Best XI도 사용자 미승인입니다.</p>';
+}
 function candidatePool(){
  let all=rankPlayers(),rows=filterPlayers(all,false);
- return '<section class="panel candidate-pool" id="candidate-pool"><div class="section-heading"><h2>Players <span class="muted">'+rows.length+' / '+all.length+'</span></h2><button class="pill" data-action="reset">초기화</button></div>'+filters(false,false)+tablePlayers(rows)+'</section>'
+ return '<section class="panel candidate-pool" id="candidate-pool"><div class="section-heading"><h2>Players <span class="muted">'+rows.length+' / '+all.length+'</span></h2><button class="pill" data-action="reset">초기화</button></div>'+tierEvidenceNotice()+filters(false,false)+tablePlayers(rows)+'</section>'
 }
 
 function tierDirectory(){
@@ -215,7 +220,7 @@ function tierDirectory(){
  const wc=all.filter(p=>["S","A+"].includes(p.tier)).length,lt=all.filter(p=>["S","A+","A","A-"].includes(p.tier)).length;
  const menu=[["clubs","구단별 전체 명단"],["positions","포지션별 통합 순위"],["tiers","티어별 전체 명단"]];
  let h='<section class="panel tier-directory-head"><div class="section-heading"><div><h2>전체 선수 티어 · '+all.length+'명 <span class="muted">DRAFT</span></h2><p class="muted small">'+esc(st.season)+' '+esc(label())+' · '+qualifiers().length+'개 구단 · 주전과 후보 전원 · 사용자 미승인</p></div><button class="pill" data-go="top">World / League Top Class</button></div>';
- h+='<p class="small muted">World Class '+wc+'명 (S+A+) · League Top Class '+lt+'명 (S~A-) · 티어 합계 '+sum+'/'+all.length+'명 '+(sum===all.length?'(일치)':'(오류)')+'</p><p class="small tier-counts">'+esc(tally)+'</p><div class="pills tier-directory-nav">'+menu.map(x=>'<button class="pill '+(view===x[0]?'active':'')+'" data-tier-view="'+x[0]+'">'+x[1]+'</button>').join("")+'</div></section>';
+ h+='<p class="small muted">World Class '+wc+'명 (S+A+) · League Top Class '+lt+'명 (S~A-) · 티어 합계 '+sum+'/'+all.length+'명 '+(sum===all.length?'(일치)':'(오류)')+'</p>'+tierEvidenceNotice()+'<p class="small tier-counts">'+esc(tally)+'</p><div class="pills tier-directory-nav">'+menu.map(x=>'<button class="pill '+(view===x[0]?'active':'')+'" data-tier-view="'+x[0]+'">'+x[1]+'</button>').join("")+'</div></section>';
  if(view==="clubs"){
   for(const q of qualifiers()){
    const ps=all.filter(p=>p.club===q.club);
@@ -240,7 +245,7 @@ function topPage(){
  let all=rankPlayers(),filtered=filterPlayers(all,true);let count=t=>all.filter(p=>p.tier===t).length;
  let cards='<div class="top-scores">'+["S","A+","A","A-"].map(t=>'<button class="top-score '+tierClass(t)+' '+(st.tier===t?"active":"")+'" data-toptier="'+t+'"><b>'+(({"A":"A0","B":"B0","C":"C0"})[t]||t)+'</b><small>'+count(t)+' players</small></button>').join("")+'</div>';
  let world=all.filter(p=>p.tier==="S"||p.tier==="A+").length;
- let body='<div class="section-heading"><div><h2>'+(st.domain==="europe"?"European Top Class":"League Top Class")+'</h2><p class="muted small">World Class (S · A+): '+world+'명 / League Top Class (S · A+ · A · A-): '+all.filter(top).length+'명 · 모두 잠정 평가</p></div><button class="pill '+(st.tier==="all"?"active":"")+'" data-toptier="all">All tiers</button></div>'+cards+'<div style="margin-top:15px">'+filters(true,false)+'</div>'+tablePlayers(filtered);
+ let body='<div class="section-heading"><div><h2>'+(st.domain==="europe"?"European Top Class":"League Top Class")+'</h2><p class="muted small">World Class (S · A+): '+world+'명 / League Top Class (S · A+ · A · A-): '+all.filter(top).length+'명 · 모두 잠정 평가</p></div><button class="pill '+(st.tier==="all"?"active":"")+'" data-toptier="all">All tiers</button></div>'+tierEvidenceNotice()+cards+'<div style="margin-top:15px">'+filters(true,false)+'</div>'+tablePlayers(filtered);
  if(!hasTop())body='<div class="section-heading"><h2>'+(st.domain==="europe"?"European Top Class":"League Top Class")+'</h2></div><div class="empty">등록된 선수 없음</div>';
  return '<section class="panel">'+body+'</section>'
 }
@@ -272,7 +277,7 @@ function formation(){
  else side+='<div class="empty"><strong>아직 후보가 없습니다.</strong></div>';
  side+='</div>';
  const proposed=data?.meta?.bestXiReview?.status==="proposed_unapproved";
- const previewNote="";
+ const previewNote=tierEvidenceNotice();
  const xiTable=(["bundesliga","seriea","ligue1"].includes(st.league)||st.domain==="europe")&&Array.isArray(data.bestXi)&&data.bestXi.length===11?'<div class="xi-detail-list"><h3>Best XI · 11명 개별 티어 및 선정 근거</h3><div class="table-scroll"><table class="datagrid"><thead><tr><th>전술 위치</th><th>한글 이름 / 원어명</th><th>구단</th><th>실제 주 포지션</th><th>티어</th><th>선정 근거</th></tr></thead><tbody>'+selection.map(s=>{const p=data.players.find(x=>x.id===s.playerId);return '<tr data-player="'+esc(s.playerId)+'"><td>'+esc(s.displayPosition||s.position)+'</td><td class="person">'+esc(p?.nameKo||"—")+'<span class="small muted" style="display:block">'+esc(p?.nameOriginal||p?.name||"—")+'</span></td><td>'+esc(p?.clubNameOriginal||"—")+'</td><td>'+esc(p?.position||"—")+'</td><td>'+grade(p?.tier)+'</td><td>'+esc(s.reason||"근거 확인 대기")+'</td></tr>'}).join("")+'</tbody></table></div></div>':"";
  return '<div class="panels"><section class="panel"><div class="section-heading"><h2>Season Best XI</h2><span class="small muted">'+esc(formationName)+' · '+(data?.meta?.status==="demo"?"SAMPLE":proposed?"DRAFT":"BEST XI")+'</span></div>'+previewNote+'<div class="pitch"><div class="mid"></div><div class="circle"></div>'+marks+'</div>'+xiTable+'</section>'+side+'</div>'
 }
