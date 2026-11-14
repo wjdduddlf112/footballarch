@@ -14,6 +14,24 @@ for(const file of files){
  chk(xi.length===11,file+": Best XI must have 11; actual "+xi.length);
  chk(new Set(xi.map(p=>p.playerId)).size===xi.length,file+": duplicate best XI player IDs");
  for(const pick of xi)chk(idSet.has(pick.playerId),file+": unknown XI player ID "+pick.playerId);
+
+ // UCL-wide checks: every XI player's field slot must match their registered
+ // primary season role. Also catch the 2005-07 goalkeeper-name propagation bug.
+ if(competition==="ucl"){
+  for(const pick of xi){
+   const player=d.players.find(p=>p.id===pick.playerId);
+   if(player)chk(pick.position===player.position,file+": XI/primary role mismatch: "+player.nameOriginal+" XI="+pick.position+" roster="+player.position);
+  }
+  const koToOriginals=new Map();
+  for(const player of d.players){
+   if(!player.nameKo||!player.nameOriginal)continue;
+   if(!koToOriginals.has(player.nameKo))koToOriginals.set(player.nameKo,new Set());
+   koToOriginals.get(player.nameKo).add(player.nameOriginal);
+  }
+  for(const [ko,originalNames] of koToOriginals)
+   chk(originalNames.size<4,file+": possible copied Korean name "+ko+" assigned to "+originalNames.size+" different original names");
+ }
+
  if(competition==="ucl"&&exactYears.has(season)){
   chk(d.meta?.bestXiReview?.status==="proposed_unapproved",file+": must be DRAFT, not approved");
   chk(xi.every(p=>p.status==="proposed_unapproved"&&p.reason?.length>30),file+": missing rationale/DRAFT status");
