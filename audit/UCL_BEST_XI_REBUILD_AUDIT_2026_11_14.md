@@ -74,3 +74,13 @@ Repository inspection after revisions (22 files):
 
 ## Next stage
 Re-evaluate each season's 11 roles **from the full eligible pool**, consulting UEFA records and contemporary match data, score **current season > previous > two seasons prior**, and record rejected alternatives by role. No famous-player role-shifting and no cup-win bonus. Keep Best XI `proposed_unapproved` until user approval.
+
+
+## Contemporary evidence caveats (cross-checked)
+- UEFA Technical Study Group's 2013-14 18-player **squad**, not a fixed XI, included **both Thibaut Courtois and Manuel Neuer** at GK. Therefore either selection must be argued on sustained player performance and 3-season weighting, rather than assuming Courtois was obviously erroneous.
+  - https://www.uefa.com/uefachampionsleague/news/0252-0ce44643bfcd-c32e4b484ab1-1000--uefa-champions-league-squad-of-the-season/
+- UEFA Technical Observers' 2018-19 **20-player squad** included Moussa Sissoko, and contemporary 2018-19 UEFA midfield position awards ranked **Jordan Henderson above Sissoko**. This creates a legitimate multi-candidate evaluation, *not* proof that Sissoko had no place in a squad.
+  - https://www.uefa.com/uefachampionsleague/news/0252-0e99c3f9c0f4-c762bb0ec7f4-1000--uefa-champions-league-squad-of-the-season/?lang=en
+  - https://www.uefa.com/uefachampionsleague/news/0254-0e99d2a5caed-1a4f7686212d-1000--champions-league-positional-awards-meet-the-nominees/
+- UEFA's 2017-18 technical squad explicitly acknowledged that Van Dijk joined Liverpool in January but distinguished his knock-out-round impact. Under current-season priority this is a relevant argument **for** retaining him, while historical sustained 3-season consistency remains a counterweight.
+  - https://www.uefa.com/uefachampionsleague/news/0253-0d8222ae4584-fc81fa8bf4d6-1000--uefa-champions-league-squad-of-the-season/?lang=en
