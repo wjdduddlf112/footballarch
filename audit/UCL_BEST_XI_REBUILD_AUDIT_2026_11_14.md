@@ -91,3 +91,37 @@ Re-evaluate each season's 11 roles **from the full eligible pool**, consulting U
   - https://www.uefa.com/uefachampionsleague/news/0254-0e99d2a5caed-1a4f7686212d-1000--champions-league-positional-awards-meet-the-nominees/
 - UEFA's 2017-18 technical squad explicitly acknowledged that Van Dijk joined Liverpool in January but distinguished his knock-out-round impact. Under current-season priority this is a relevant argument **for** retaining him, while historical sustained 3-season consistency remains a counterweight.
   - https://www.uefa.com/uefachampionsleague/news/0253-0d8222ae4584-fc81fa8bf4d6-1000--uefa-champions-league-squad-of-the-season/?lang=en
+
+
+## 2026-11-14 independent follow-up: direct historical evidence challenges
+
+Following a fresh inspection of all 22 `data/ucl-*.json` entries, five more *DRAFT* Best XI substitutions were applied to `main`. Each substitution retains exactly 11 players, uses the nominee's recorded positional slot, preserves the full player pool, and retains `proposed_unapproved`. This is **not a complete 22-season independent 3-year audit**.
+
+| Season | Slot | Removed | New DRAFT pick | Rationale |
+|---|---|---|---|---|
+| 2007-08 | LW | Ryan Babel (Liverpool) | Robinho (Real Madrid) | UEFA records show Robinho with 4 goals and 4 assists in six tournament matches, against Babel's five goals in eleven. Different minutes and earlier seasons still require detailed comparison; this is a current-year individual impact judgment, not a team-result adjustment. |
+| 2009-10 | CM | Bastian Schweinsteiger (Bayern) | Xavi Hernández (Barcelona) | Both appeared in contemporary UEFA technical season recognition; Xavi's sustained individual midfield impact across the weighting window is preferred. Strong alternative: Schweinsteiger, whose 2009-10 positional transition and performance warrant further check. |
+| 2013-14 | RW | Gareth Bale (Real Madrid) | Arjen Robben (Bayern) | Robben is on UEFA's contemporary 18-player technical selection and is graded A+, position rank 1; Bale was not on that list and was ungraded in the archive. Bale's contributions, including the final, remain important but are not automatically a criterion. |
+| 2013-14 | ST | Karim Benzema (Real Madrid) | Zlatan Ibrahimović (PSG) | 10 goals (second-best in tournament), technical season squad, 2011-14 individual consistency; Benzema has five UEFA assists and remains a credible alternative. |
+| 2018-19 | CM | Moussa Sissoko (Tottenham) | Jordan Henderson (Liverpool) | UEFA's official midfielder award placed Henderson third (59 pts) vs Sissoko sixth (22 pts), with Henderson playing 11 matches, 799 minutes, two assists. Both remain valid season squad contenders. Henderson's independent historical tier remains `null` pending assessment. |
+
+### Evidence links for these changes
+- 2007-08 season statistics: https://www.uefa.com/uefachampionsleague/history/seasons/2008/statistics/
+- 2009-10 season statistics: https://www.uefa.com/uefachampionsleague/history/seasons/2010/statistics/
+- 2013-14 UEFA technical squad (18 players, **not official XI**): https://www.uefa.com/uefachampionsleague/news/0252-0ce44643bfcd-c32e4b484ab1-1000--uefa-champions-league-squad-of-the-season/
+- 2013-14 UEFA season statistics: https://www.uefa.com/uefachampionsleague/history/seasons/2014/statistics/
+- 2018-19 UEFA coach/journalist midfielder award voting: https://www.uefa.com/uefachampionsleague/news/0254-0e99ddf91193-3a1ed0d12675-1000--frenkie-de-jong-champions-league-midfielder-of-the-season/
+- 2018-19 UEFA official observations: https://www.uefa.com/uefachampionsleague/news/0252-0e99c3f9c0f4-c762bb0ec7f4-1000--uefa-champions-league-squad-of-the-season/?lang=en
+
+### Further important findings; **do not silently correct these from flawed ranks**
+- UCL 2020-21: João Cancelo is nominally the #1 RB in the roster, but a match-log source explicitly places him at **LB** for multiple knockout games (vs Gladbach, Dortmund and PSG); Kyle Walker is the confirmed RB at the final. A full all-match majority-position count is required before changing either the roster role or XI. Relevant URLs: https://fbref.com/en/players/bd6351cd/matchlogs/2020-2021/c8/Joao-Cancelo-Match-Logs and https://www.uefa.com/uefachampionsleague/news/0269-123dcf8aa21b-86a3b64061cd-1000--final-preview-city-vs-chelsea/
+- UCL 2020-21: Ben Chilwell is a genuine Chelsea **left wing-back**, not necessarily the nominal left-back in a flat four. UEFA's 2020-21 technical 23-player squad included Chilwell. A candidate rank of 6 from an unrelated provisional tier calculation does not alone disqualify him: https://www.uefa.com/uefachampionsleague/news/0269-12688c451cdd-b6efcb4ce948-1000--uefa-champions-league-squad-of-the-season/
+- UCL 2009-10: the seemingly stronger tiered LB Ashley Cole suffered a February ankle fracture and missed Chelsea's Inter knockout matches. Do not automatically replace Inter's Chivu with Cole based on the archive's league-wide draft rank: https://www.uefa.com/uefachampionsleague/news/01e2-0e73c3327d5c-9a5863bc277e-1000--ashley-cole-out-for-three-months/
+- UCL 2018-19: Kevin De Bruyne is provisionally listed as #2 CM despite only four UCL appearances in the current season; his three-year prestige must not mechanically beat a player contributing throughout the current tournament. A proper per-match review remains required.
+- UCL 1999-00 and 2000-01 player pools of 28 and 40 are **structurally inadequate for comprehensive 16-club all-position comparisons**. Any XI is provisional until missing candidates are recruited and verified.
+
+### Remaining status
+- All 22 existing season proposals still require position-by-position player-vs-player analysis using current tournament season first, previous season second and two seasons prior third.
+- Official UEFA technical **squads** and calendar-year fan teams are secondary reference material; neither constitutes an official season-specific 11.
+- No title/finalist bonus, no forced 4-3-3, no cross-positional reassignment without match evidence.
+- No final user approval given. All changes on `main` are draft data amendments, not final publication approvals.
