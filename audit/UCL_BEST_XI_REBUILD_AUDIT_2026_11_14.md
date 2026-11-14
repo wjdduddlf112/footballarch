@@ -131,3 +131,9 @@ Following a fresh inspection of all 22 `data/ucl-*.json` entries, five more *DRA
 - 2009-10 CM: Xavi S / #1, Frank Lampard S / #2 (draft swap); Bastian Schweinsteiger stays A+ / #4.
 - 2018-19 CM: Georginio Wijnaldum A+ / #1, Jordan Henderson **provisional A+ / #2**, Moussa Sissoko A- / #3, Tanguy Ndombele A- / #4, Kevin De Bruyne A- / #5. De Bruyne's four current-year UCL appearances require independent review against the stronger two earlier seasons.
 - Ranking changes are provisional relative judgments and **not** a statement that the independent three-season assessment is fully completed.
+
+### Source-count correction and CI recovery (same day)
+- Henderson is additionally verified by UEFA's positional award player statistics: 2018-19 UCL **11 appearances, 799 minutes, 2 assists**. Since the 2018-19 technical observer `squad` did not list him, a distinct category is necessary: **20 technical squad players + 1 UEFA positional award nominee = 21 independently confirmed rated players**.
+- `data/ucl-2018-19.json` and `scripts/verify-uefa-2018-19-draft.mjs` were updated together; prior CI failures resulted from hard-coded 20-player expectations after adding Henderson. The 2018-19 Draft/Live GitHub Actions workflow passed on commit `805d79cf`. The GitHub Pages deployment workflow also succeeded for that commit.
+- UEFA original source: https://www.uefa.com/uefachampionsleague/news/0254-0e99d2b5ab3f-637f7ec2d60d-1000--champions-league-positional-awards-facts-and-figures/
+- These CI successes confirm script/browser checks, **not** independent completion of all 3-season player performance evaluations or manual inspection of the deployed site.
