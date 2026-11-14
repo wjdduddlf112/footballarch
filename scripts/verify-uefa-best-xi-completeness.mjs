@@ -32,6 +32,37 @@ for(const file of files){
    chk(originalNames.size<4,file+": possible copied Korean name "+ko+" assigned to "+originalNames.size+" different original names");
  }
 
+ // 2012-13 through 2018-19: provisional source-linked tier previews are NOT
+ // equivalent to independently verified Champions League personal ratings.
+ if(competition==="ucl"&&/^201[2-8]-/.test(season)){
+  const a=d.audit?.tierImport;
+  chk(Boolean(a),file+": missing tier recovery provenance audit");
+  const graded=d.players.filter(p=>p.tier!=null);
+  const unresolved=d.players.filter(p=>p.tier==null);
+  const imported=d.players.filter(p=>p.tierEvidenceStatus==="current_domestic_archival_draft_only"||p.tierEvidenceStatus==="same_season_domestic_archive_draft_only");
+  const levels=["S","A+","A","A-","B+","B","B-","C+","C","C-"];
+  chk(graded.length===d.meta?.verification?.provisionalTiers,file+": tier count verification");
+  chk(graded.length===d.meta?.verification?.provisionalRanks,file+": rank count verification");
+  chk(a?.provisionalRated===graded.length,file+": tier audit graded count");
+  chk(a?.stillPending===unresolved.length,file+": tier audit pending count");
+  chk(a?.added===imported.length,file+": tier import count");
+  chk(d.meta?.verification?.independentThreeSeasonPlayerAuditComplete===false,file+": false UCL 3-year audit completion");
+  chk(d.meta?.bestXiReview?.status==="proposed_unapproved",file+": Best XI falsely approved");
+  for(const p of graded){
+   chk(levels.includes(p.tier),file+": invalid tier "+p.id);
+   chk(p.review==="draft_unapproved",file+": graded player review status "+p.id);
+   chk(Number.isInteger(p.rank)&&p.rank>0,file+": graded player missing rank "+p.id);
+   chk((p.tierRationale||"").length>=60,file+": missing individual tier source narrative "+p.id);
+  }
+  for(const p of unresolved){chk(p.rank==null&&p.review==="evidence_pending",file+": unrated player must remain pending "+p.id);}
+  for(const pos of ["GK","CB","LB","RB","DM","CM","CAM","LW","RW","ST"]){
+   const ranked=graded.filter(p=>p.position===pos).sort((a,b)=>a.rank-b.rank);
+   for(let i=0;i<ranked.length;i++){
+    chk(ranked[i].rank===i+1,file+": non-contiguous draft position rank "+pos+" "+ranked[i].id);
+    if(i)chk(levels.indexOf(ranked[i-1].tier)<=levels.indexOf(ranked[i].tier),file+": tier/rank order contradiction "+pos);
+   }
+  }
+ }
  if(competition==="ucl"&&exactYears.has(season)){
   chk(d.meta?.bestXiReview?.status==="proposed_unapproved",file+": must be DRAFT, not approved");
   chk(xi.every(p=>p.status==="proposed_unapproved"&&p.reason?.length>30),file+": missing rationale/DRAFT status");
