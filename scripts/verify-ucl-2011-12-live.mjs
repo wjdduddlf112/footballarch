@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import {createRequire} from "node:module";
 const require=createRequire(import.meta.url);
 const {chromium}=require("playwright");
-const base="https://wjdduddlf111.github.io/footballarch/";
+const base="https://wjdduddlf112.github.io/footballarch/";
 const u=(season)=>base+"?league=ucl&season="+season+"&view=overview";
 const sleep=ms=>new Promise(resolve=>setTimeout(resolve,ms));
 const browser=await chromium.launch({headless:true});
