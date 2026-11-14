@@ -69,11 +69,22 @@ for(const req of seasons){
  for(const p of players){
   assert.ok(evaluatedClubs.includes(p.club),err("player not in evaluated club"));
   assert.ok(positions.includes(p.position),err("invalid position "+p.position));
-  assert.equal(p.review,"evidence_pending",err("unverified candidate review should remain pending"));
+  if(p.tier==null){assert.equal(p.review,"evidence_pending",err("unrated nominee still pending"));assert.equal(p.rank,null,err("unrated nominee ranked"));}
+  else{assert.equal(req.id,"ucl",err("only UCL domestic-source conditional grade migration enabled"));assert.ok(["S","A+","A","A-","B+","B","B-","C+","C","C-"].includes(p.tier),err("invalid provisional tier"));assert.equal(p.review,"draft_unapproved",err("provisional tier should remain draft"));assert.ok(p.tierRationale?.length>=60,err("conditional grade must cite provenance"));assert.ok(Number.isInteger(p.rank)&&p.rank>0,err("provisional rank required"));}
   const k=p.club+":"+p.nameOriginal;
   assert.ok(!seenNameByClub.has(k),err("duplicate player in club: "+k));seenNameByClub.add(k);
   assert.ok(p.nameKo&&p.nameOriginal,err("missing names"));
-  assert.ok(!p.tier,err("UEFA tier populated without independent research"));
+
+ }
+ if(req.id==="ucl"){
+  const lvl=["S","A+","A","A-","B+","B","B-","C+","C","C-"];
+  const rated=players.filter(p=>p.tier!=null);
+  assert.equal(rated.length,meta.verification.provisionalTiers||0,err("provisional tier metadata count"));
+  assert.equal(rated.length,meta.verification.provisionalRanks||0,err("provisional rank metadata count"));
+  for(const pos of positions){const xs=rated.filter(p=>p.position===pos).sort((a,b)=>a.rank-b.rank);
+   assert.deepEqual(xs.map(p=>p.rank),xs.map((p,i)=>i+1),err("noncontinuous conditional ranks "+pos));
+   for(let j=1;j<xs.length;j++)assert.ok(lvl.indexOf(xs[j-1].tier)<=lvl.indexOf(xs[j].tier),err("rank/tier inversion "+pos));
+  }
  }
  for(const club of evaluatedClubs){
   const group=players.filter(p=>p.club===club);
