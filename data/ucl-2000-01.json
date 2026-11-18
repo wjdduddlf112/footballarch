@@ -8,11 +8,11 @@
     "status": "draft_unapproved",
     "assessmentStart": "1998-99",
     "assessmentEnd": "2000-01",
-    "playerSelectionStatus": "partial_final_lineups_verified",
+    "playerSelectionStatus": "existing_40_nominees_preserved; 40_source_guided_DRAFT_tiers_and_position_ranks; whole_16_club_pool_incomplete",
     "bestXiReview": {
       "status": "proposed_unapproved",
       "formation": "4-3-3",
-      "updatedAt": "2026-11-14",
+      "updatedAt": "2026-11-18",
       "sourceBasis": "UEFA historical match and season stats, official UEFA period individual awards and final/round reports, supplemented by existing historic candidate identities.",
       "sources": [
         "https://www.uefa.com/uefachampionsleague/history/seasons/2000/",
@@ -23,7 +23,12 @@
       "isHistoricalSeasonComplete": false,
       "independentThreeSeasonAuditPending": true,
       "leagueWideOrCompetitionWideModalFormationVerified": false,
-      "caveat": "Best XI is source-guided DRAFT; full roster, all player tiers and all three-season historical audits remain separate incomplete tasks; do not mark season fully approved."
+      "caveat": "Only 40 existing nominees; independent 3-season player audits and representative formation prevalence remain unverified. Do not mark approved.",
+      "rankReconciliation": "2000-01_source_guided_40_candidate_DRAFT",
+      "changedSlots": [
+        "RB: Sagnol -> Angloma",
+        "DM: Hargreaves -> Baraja"
+      ]
     },
     "verification": {
       "totalClubs": 32,
@@ -44,7 +49,11 @@
       "individuallyRecordedPlayerCandidates": 40,
       "tierProvisionalCount": 6,
       "verifiedCandidateClubCoverage": 16,
-      "bestXiStatus": "11_selected_DRAFT_only_not_independently_three_season_verified"
+      "bestXiStatus": "existing_40_candidate_rank_aligned_best_xi_DRAFT",
+      "playerCandidateCount": 40,
+      "provisionalTiers": 40,
+      "provisionalRanks": 40,
+      "unratedCandidates": 0
     },
     "formation": "4-3-3"
   },
@@ -4625,7 +4634,7 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
+      "rank": 1,
       "tier": "S",
       "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
@@ -4635,16 +4644,26 @@
           "1999-00",
           "2000-01"
         ],
-        "review": "qualitative_evidence_partial",
-        "rationale": "1998-99·1999-00·2000-01 UEFA 올해의 골키퍼 연속 수상, 2001 결승 승부차기 세 차례 선방 및 경기 최우수. 당해 유럽 최고 수준의 개인 영향력."
+        "review": "provisional_partial_historical_evidence_independent_three_season_audit_pending",
+        "rationale": "UCL 16경기 출전, 결승 승부차기 결정적 선방과 UEFA 최우수 골키퍼 3년 연속 수상. 1998-99·1999-00 기량 지속성까지 감안해 후보 골키퍼 1위.",
+        "weighting": "2000-01 > 1999-00 > 1998-99",
+        "independentUCLThreeSeasonAuditComplete": false
       },
       "sources": [
         "https://www.uefa.com/newsfiles/461370.pdf",
         "https://datencenter.dfb.de/en/competitions/champions-league/seasons/2000-2001/teams/bayern-munich",
         "https://www.uefa.com/uefachampionsleague/news/0180-0e6a891a3e93-bf2b35bcfd10-1000--uefa-com-team-of-2001-goalkeepers/",
-        "https://www.rsssf.org/miscellaneous/uefa-awards.html"
+        "https://www.rsssf.org/miscellaneous/uefa-awards.html",
+        "https://fbref.com/en/squads/054efa67/2000-2001/c8/Bayern-Munich-Stats-Champions-League",
+        "https://www.uefa.com/uefasupercup/news/0250-0c50f4c79042-d6e8d7b8e348-1000--inter-monopolise-uefa-club-football-awards/"
       ],
-      "tierRationale": "1998-99·1999-00·2000-01 UEFA 올해의 골키퍼 연속 수상, 2001 결승 승부차기 세 차례 선방 및 경기 최우수. 당해 유럽 최고 수준의 개인 영향력."
+      "tierRationale": "UCL 16경기 출전, 결승 승부차기 결정적 선방과 UEFA 최우수 골키퍼 3년 연속 수상. 1998-99·1999-00 기량 지속성까지 감안해 후보 골키퍼 1위.",
+      "proposedTier": "S",
+      "displayTier": "S",
+      "tierReason": "UCL 16경기 출전, 결승 승부차기 결정적 선방과 UEFA 최우수 골키퍼 3년 연속 수상. 1998-99·1999-00 기량 지속성까지 감안해 후보 골키퍼 1위.",
+      "tierReview": "2000-01 UCL source-guided provisional relative assessment; full weighted 3-season player audit pending",
+      "tierEvidenceStatus": "2000-01_UCL_current_season_primary_and_partial_prior_years",
+      "rankStatus": "ucl_2000-01_existing_40_player_position_rank_DRAFT"
     },
     {
       "id": "ucl-2000-01-willy-sagnol",
@@ -4663,7 +4682,7 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
+      "rank": 2,
       "tier": "A-",
       "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
@@ -4673,15 +4692,23 @@
           "1999-00",
           "2000-01"
         ],
-        "review": "evidence_pending"
+        "review": "provisional_partial_historical_evidence_independent_three_season_audit_pending",
+        "weighting": "2000-01 > 1999-00 > 1998-99",
+        "rationale": "바이에른 합류 첫 시즌 UCL 14경기 출전, 오른쪽 측면을 지킨 주전급. 평가 시즌 활약은 좋으나 직전 2시즌 UCL 지속성에서 앙글로마보다 뒤.",
+        "independentUCLThreeSeasonAuditComplete": false
       },
       "sources": [
         "https://www.uefa.com/newsfiles/461370.pdf",
-        "https://datencenter.dfb.de/en/competitions/champions-league/seasons/2000-2001/teams/bayern-munich"
+        "https://datencenter.dfb.de/en/competitions/champions-league/seasons/2000-2001/teams/bayern-munich",
+        "https://fbref.com/en/squads/054efa67/2000-2001/c8/Bayern-Munich-Stats-Champions-League"
       ],
       "displayTier": "A-",
-      "tierReview": "provisional_from_UCL_season_evidence_prior_3_seasons_pending",
-      "tierReason": "바이에른 오른쪽 풀백으로 결승까지 수비 가담과 전진 지원. 직전 두 시즌을 포함한 독립적인 전체 평가가 남아 있어 잠정 등급."
+      "tierReview": "2000-01 UCL source-guided provisional relative assessment; full weighted 3-season player audit pending",
+      "tierReason": "바이에른 합류 첫 시즌 UCL 14경기 출전, 오른쪽 측면을 지킨 주전급. 평가 시즌 활약은 좋으나 직전 2시즌 UCL 지속성에서 앙글로마보다 뒤.",
+      "proposedTier": "A-",
+      "tierRationale": "바이에른 합류 첫 시즌 UCL 14경기 출전, 오른쪽 측면을 지킨 주전급. 평가 시즌 활약은 좋으나 직전 2시즌 UCL 지속성에서 앙글로마보다 뒤.",
+      "tierEvidenceStatus": "2000-01_UCL_current_season_primary_and_partial_prior_years",
+      "rankStatus": "ucl_2000-01_existing_40_player_position_rank_DRAFT"
     },
     {
       "id": "ucl-2000-01-bixente-lizarazu",
@@ -4700,7 +4727,7 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
+      "rank": 1,
       "tier": "A",
       "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
@@ -4710,15 +4737,23 @@
           "1999-00",
           "2000-01"
         ],
-        "review": "evidence_pending"
+        "review": "provisional_partial_historical_evidence_independent_three_season_audit_pending",
+        "weighting": "2000-01 > 1999-00 > 1998-99",
+        "rationale": "바이에른 왼쪽 풀백으로 UCL 10경기 및 결승 출전. 1998-99 이후 수비·전환의 안정성과 국제대회 경험을 반영.",
+        "independentUCLThreeSeasonAuditComplete": false
       },
       "sources": [
         "https://www.uefa.com/newsfiles/461370.pdf",
-        "https://datencenter.dfb.de/en/competitions/champions-league/seasons/2000-2001/teams/bayern-munich"
+        "https://datencenter.dfb.de/en/competitions/champions-league/seasons/2000-2001/teams/bayern-munich",
+        "https://fbref.com/en/squads/054efa67/2000-2001/c8/Bayern-Munich-Stats-Champions-League"
       ],
-      "displayTier": "A0",
-      "tierReview": "provisional_from_UCL_season_evidence_prior_3_seasons_pending",
-      "tierReason": "바이에른 측면 수비와 전환에서 핵심 역할. 직전 두 시즌을 포함한 독립적인 전체 평가가 남아 있어 잠정 등급."
+      "displayTier": "A",
+      "tierReview": "2000-01 UCL source-guided provisional relative assessment; full weighted 3-season player audit pending",
+      "tierReason": "바이에른 왼쪽 풀백으로 UCL 10경기 및 결승 출전. 1998-99 이후 수비·전환의 안정성과 국제대회 경험을 반영.",
+      "proposedTier": "A",
+      "tierRationale": "바이에른 왼쪽 풀백으로 UCL 10경기 및 결승 출전. 1998-99 이후 수비·전환의 안정성과 국제대회 경험을 반영.",
+      "tierEvidenceStatus": "2000-01_UCL_current_season_primary_and_partial_prior_years",
+      "rankStatus": "ucl_2000-01_existing_40_player_position_rank_DRAFT"
     },
     {
       "id": "ucl-2000-01-samuel-kuffour",
@@ -4737,8 +4772,8 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
-      "tier": "A",
+      "rank": 2,
+      "tier": "A+",
       "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
@@ -4747,15 +4782,23 @@
           "1999-00",
           "2000-01"
         ],
-        "review": "evidence_pending"
+        "review": "provisional_partial_historical_evidence_independent_three_season_audit_pending",
+        "weighting": "2000-01 > 1999-00 > 1998-99",
+        "rationale": "UEFA 최우수 수비수 후보, 바이에른 UCL 13경기 활약. 1998-99 준우승 시즌을 포함한 후방 안정성의 지속성을 반영.",
+        "independentUCLThreeSeasonAuditComplete": false
       },
       "sources": [
         "https://www.uefa.com/newsfiles/461370.pdf",
-        "https://datencenter.dfb.de/en/competitions/champions-league/seasons/2000-2001/teams/bayern-munich"
+        "https://datencenter.dfb.de/en/competitions/champions-league/seasons/2000-2001/teams/bayern-munich",
+        "https://fbref.com/en/squads/054efa67/2000-2001/c8/Bayern-Munich-Stats-Champions-League"
       ],
-      "displayTier": "A0",
-      "tierReview": "provisional_from_UCL_season_evidence_prior_3_seasons_pending",
-      "tierReason": "UEFA 최우수 수비수 후보로 지목된 바이에른 중앙 수비 핵심. 직전 두 시즌을 포함한 독립적인 전체 평가가 남아 있어 잠정 등급."
+      "displayTier": "A+",
+      "tierReview": "2000-01 UCL source-guided provisional relative assessment; full weighted 3-season player audit pending",
+      "tierReason": "UEFA 최우수 수비수 후보, 바이에른 UCL 13경기 활약. 1998-99 준우승 시즌을 포함한 후방 안정성의 지속성을 반영.",
+      "proposedTier": "A+",
+      "tierRationale": "UEFA 최우수 수비수 후보, 바이에른 UCL 13경기 활약. 1998-99 준우승 시즌을 포함한 후방 안정성의 지속성을 반영.",
+      "tierEvidenceStatus": "2000-01_UCL_current_season_primary_and_partial_prior_years",
+      "rankStatus": "ucl_2000-01_existing_40_player_position_rank_DRAFT"
     },
     {
       "id": "ucl-2000-01-patrik-andersson",
@@ -4774,9 +4817,9 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 6,
+      "tier": "A-",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -4784,12 +4827,23 @@
           "1999-00",
           "2000-01"
         ],
-        "review": "evidence_pending"
+        "review": "provisional_partial_historical_evidence_independent_three_season_audit_pending",
+        "weighting": "2000-01 > 1999-00 > 1998-99",
+        "rationale": "바이에른 UCL 12경기 모두 선발로 결승까지 중앙 수비 기여. 동일 팀 링케·쿠포르보다 출전량이 적어 후순위.",
+        "independentUCLThreeSeasonAuditComplete": false
       },
       "sources": [
         "https://www.uefa.com/newsfiles/461370.pdf",
-        "https://datencenter.dfb.de/en/competitions/champions-league/seasons/2000-2001/teams/bayern-munich"
-      ]
+        "https://datencenter.dfb.de/en/competitions/champions-league/seasons/2000-2001/teams/bayern-munich",
+        "https://fbref.com/en/squads/054efa67/2000-2001/c8/Bayern-Munich-Stats-Champions-League"
+      ],
+      "proposedTier": "A-",
+      "displayTier": "A-",
+      "tierReason": "바이에른 UCL 12경기 모두 선발로 결승까지 중앙 수비 기여. 동일 팀 링케·쿠포르보다 출전량이 적어 후순위.",
+      "tierRationale": "바이에른 UCL 12경기 모두 선발로 결승까지 중앙 수비 기여. 동일 팀 링케·쿠포르보다 출전량이 적어 후순위.",
+      "tierReview": "2000-01 UCL source-guided provisional relative assessment; full weighted 3-season player audit pending",
+      "tierEvidenceStatus": "2000-01_UCL_current_season_primary_and_partial_prior_years",
+      "rankStatus": "ucl_2000-01_existing_40_player_position_rank_DRAFT"
     },
     {
       "id": "ucl-2000-01-thomas-linke",
@@ -4808,9 +4862,9 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 5,
+      "tier": "A",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -4818,12 +4872,23 @@
           "1999-00",
           "2000-01"
         ],
-        "review": "evidence_pending"
+        "review": "provisional_partial_historical_evidence_independent_three_season_audit_pending",
+        "weighting": "2000-01 > 1999-00 > 1998-99",
+        "rationale": "바이에른 UCL 15경기 출전·1골. 1998-99·1999-00에 이어 주요 경기에서 수비 조직을 안정적으로 이끈 점을 반영.",
+        "independentUCLThreeSeasonAuditComplete": false
       },
       "sources": [
         "https://www.uefa.com/newsfiles/461370.pdf",
-        "https://datencenter.dfb.de/en/competitions/champions-league/seasons/2000-2001/teams/bayern-munich"
-      ]
+        "https://datencenter.dfb.de/en/competitions/champions-league/seasons/2000-2001/teams/bayern-munich",
+        "https://fbref.com/en/squads/054efa67/2000-2001/c8/Bayern-Munich-Stats-Champions-League"
+      ],
+      "proposedTier": "A",
+      "displayTier": "A",
+      "tierReason": "바이에른 UCL 15경기 출전·1골. 1998-99·1999-00에 이어 주요 경기에서 수비 조직을 안정적으로 이끈 점을 반영.",
+      "tierRationale": "바이에른 UCL 15경기 출전·1골. 1998-99·1999-00에 이어 주요 경기에서 수비 조직을 안정적으로 이끈 점을 반영.",
+      "tierReview": "2000-01 UCL source-guided provisional relative assessment; full weighted 3-season player audit pending",
+      "tierEvidenceStatus": "2000-01_UCL_current_season_primary_and_partial_prior_years",
+      "rankStatus": "ucl_2000-01_existing_40_player_position_rank_DRAFT"
     },
     {
       "id": "ucl-2000-01-owen-hargreaves",
@@ -4842,8 +4907,8 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
-      "tier": "B+",
+      "rank": 2,
+      "tier": "B",
       "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
@@ -4852,15 +4917,23 @@
           "1999-00",
           "2000-01"
         ],
-        "review": "evidence_pending"
+        "review": "provisional_partial_historical_evidence_independent_three_season_audit_pending",
+        "weighting": "2000-01 > 1999-00 > 1998-99",
+        "rationale": "바이에른 UCL 4경기 출전 중 결승 선발로 후반기 기여가 중요했지만 시즌 전체 붙박이 주전은 아니므로 기존 B+에서 B0로 조정.",
+        "independentUCLThreeSeasonAuditComplete": false
       },
       "sources": [
         "https://www.uefa.com/newsfiles/461370.pdf",
-        "https://datencenter.dfb.de/en/competitions/champions-league/seasons/2000-2001/teams/bayern-munich"
+        "https://datencenter.dfb.de/en/competitions/champions-league/seasons/2000-2001/teams/bayern-munich",
+        "https://fbref.com/en/squads/054efa67/2000-2001/c8/Bayern-Munich-Stats-Champions-League"
       ],
-      "displayTier": "B+",
-      "tierReview": "provisional_from_UCL_season_evidence_prior_3_seasons_pending",
-      "tierReason": "대회 후반 바이에른 중원 수비 역할, 결승 출전. 직전 두 시즌을 포함한 독립적인 전체 평가가 남아 있어 잠정 등급."
+      "displayTier": "B",
+      "tierReview": "2000-01 UCL source-guided provisional relative assessment; full weighted 3-season player audit pending",
+      "tierReason": "바이에른 UCL 4경기 출전 중 결승 선발로 후반기 기여가 중요했지만 시즌 전체 붙박이 주전은 아니므로 기존 B+에서 B0로 조정.",
+      "proposedTier": "B",
+      "tierRationale": "바이에른 UCL 4경기 출전 중 결승 선발로 후반기 기여가 중요했지만 시즌 전체 붙박이 주전은 아니므로 기존 B+에서 B0로 조정.",
+      "tierEvidenceStatus": "2000-01_UCL_current_season_primary_and_partial_prior_years",
+      "rankStatus": "ucl_2000-01_existing_40_player_position_rank_DRAFT"
     },
     {
       "id": "ucl-2000-01-stefan-effenberg",
@@ -4879,8 +4952,8 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
-      "tier": "A+",
+      "rank": 1,
+      "tier": "S",
       "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
@@ -4889,16 +4962,26 @@
           "1999-00",
           "2000-01"
         ],
-        "review": "qualitative_evidence_partial",
-        "rationale": "1998-99부터 바이에른의 핵심 중원으로 활약, 2000-01 시즌 UEFA 클럽 올해의 선수(MVP), 결승 동점 페널티킥과 주장으로서 전술·리더십 기여. 명성 아닌 당해 개인 활약 기준."
+        "review": "provisional_partial_historical_evidence_independent_three_season_audit_pending",
+        "rationale": "UEFA 2000-01 클럽 올해의 선수 수상과 결승 동점 페널티킥. 1998-99·1999-00 중원 영향력의 지속성을 반영하여 기존 A+에서 S로 상향.",
+        "weighting": "2000-01 > 1999-00 > 1998-99",
+        "independentUCLThreeSeasonAuditComplete": false
       },
       "sources": [
         "https://www.uefa.com/newsfiles/461370.pdf",
         "https://datencenter.dfb.de/en/competitions/champions-league/seasons/2000-2001/teams/bayern-munich",
         "https://www.uefa.com/uefachampionsleague/news/0180-0e6a891a391f-e6da75ace93d-1000--uefa-com-team-of-2001-central-midfielders/",
-        "https://www.uefa.com/news-media/news/0250-0c50f2666894-2dc4aa6b21c3-1000--ronaldinho-reigns-in-monaco/"
+        "https://www.uefa.com/news-media/news/0250-0c50f2666894-2dc4aa6b21c3-1000--ronaldinho-reigns-in-monaco/",
+        "https://fbref.com/en/squads/054efa67/2000-2001/c8/Bayern-Munich-Stats-Champions-League",
+        "https://www.uefa.com/uefasupercup/news/0250-0c50f4c79042-d6e8d7b8e348-1000--inter-monopolise-uefa-club-football-awards/"
       ],
-      "tierRationale": "1998-99부터 바이에른의 핵심 중원으로 활약, 2000-01 시즌 UEFA 클럽 올해의 선수(MVP), 결승 동점 페널티킥과 주장으로서 전술·리더십 기여. 명성 아닌 당해 개인 활약 기준."
+      "tierRationale": "UEFA 2000-01 클럽 올해의 선수 수상과 결승 동점 페널티킥. 1998-99·1999-00 중원 영향력의 지속성을 반영하여 기존 A+에서 S로 상향.",
+      "proposedTier": "S",
+      "displayTier": "S",
+      "tierReason": "UEFA 2000-01 클럽 올해의 선수 수상과 결승 동점 페널티킥. 1998-99·1999-00 중원 영향력의 지속성을 반영하여 기존 A+에서 S로 상향.",
+      "tierReview": "2000-01 UCL source-guided provisional relative assessment; full weighted 3-season player audit pending",
+      "tierEvidenceStatus": "2000-01_UCL_current_season_primary_and_partial_prior_years",
+      "rankStatus": "ucl_2000-01_existing_40_player_position_rank_DRAFT"
     },
     {
       "id": "ucl-2000-01-mehmet-scholl",
@@ -4917,9 +5000,9 @@
       "minutes": null,
       "goals": 5,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 1,
+      "tier": "A+",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -4927,13 +5010,24 @@
           "1999-00",
           "2000-01"
         ],
-        "review": "evidence_pending"
+        "review": "provisional_partial_historical_evidence_independent_three_season_audit_pending",
+        "weighting": "2000-01 > 1999-00 > 1998-99",
+        "rationale": "바이에른 UCL 16경기 5골·3도움. 지난 두 시즌의 꾸준한 공격 전개 역할에 이어 평가 시즌 CAM의 개인 영향력이 가장 높음.",
+        "independentUCLThreeSeasonAuditComplete": false
       },
       "sources": [
         "https://www.uefa.com/newsfiles/461370.pdf",
         "https://datencenter.dfb.de/en/competitions/champions-league/seasons/2000-2001/teams/bayern-munich",
-        "https://by.statbunker.com/competitions/TopGoalScorers?comp_id=20"
-      ]
+        "https://by.statbunker.com/competitions/TopGoalScorers?comp_id=20",
+        "https://fbref.com/en/squads/054efa67/2000-2001/c8/Bayern-Munich-Stats-Champions-League"
+      ],
+      "proposedTier": "A+",
+      "displayTier": "A+",
+      "tierReason": "바이에른 UCL 16경기 5골·3도움. 지난 두 시즌의 꾸준한 공격 전개 역할에 이어 평가 시즌 CAM의 개인 영향력이 가장 높음.",
+      "tierRationale": "바이에른 UCL 16경기 5골·3도움. 지난 두 시즌의 꾸준한 공격 전개 역할에 이어 평가 시즌 CAM의 개인 영향력이 가장 높음.",
+      "tierReview": "2000-01 UCL source-guided provisional relative assessment; full weighted 3-season player audit pending",
+      "tierEvidenceStatus": "2000-01_UCL_current_season_primary_and_partial_prior_years",
+      "rankStatus": "ucl_2000-01_existing_40_player_position_rank_DRAFT"
     },
     {
       "id": "ucl-2000-01-hasan-salihamidzic",
@@ -4952,9 +5046,9 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 2,
+      "tier": "A",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -4962,12 +5056,23 @@
           "1999-00",
           "2000-01"
         ],
-        "review": "evidence_pending"
+        "review": "provisional_partial_historical_evidence_independent_three_season_audit_pending",
+        "weighting": "2000-01 > 1999-00 > 1998-99",
+        "rationale": "바이에른 UCL 15경기 모두 선발·2골, 오른쪽 측면의 압박·수비 가담과 전진 기여. 다년간 꾸준한 전술적 활용도를 반영.",
+        "independentUCLThreeSeasonAuditComplete": false
       },
       "sources": [
         "https://www.uefa.com/newsfiles/461370.pdf",
-        "https://datencenter.dfb.de/en/competitions/champions-league/seasons/2000-2001/teams/bayern-munich"
-      ]
+        "https://datencenter.dfb.de/en/competitions/champions-league/seasons/2000-2001/teams/bayern-munich",
+        "https://fbref.com/en/squads/054efa67/2000-2001/c8/Bayern-Munich-Stats-Champions-League"
+      ],
+      "proposedTier": "A",
+      "displayTier": "A",
+      "tierReason": "바이에른 UCL 15경기 모두 선발·2골, 오른쪽 측면의 압박·수비 가담과 전진 기여. 다년간 꾸준한 전술적 활용도를 반영.",
+      "tierRationale": "바이에른 UCL 15경기 모두 선발·2골, 오른쪽 측면의 압박·수비 가담과 전진 기여. 다년간 꾸준한 전술적 활용도를 반영.",
+      "tierReview": "2000-01 UCL source-guided provisional relative assessment; full weighted 3-season player audit pending",
+      "tierEvidenceStatus": "2000-01_UCL_current_season_primary_and_partial_prior_years",
+      "rankStatus": "ucl_2000-01_existing_40_player_position_rank_DRAFT"
     },
     {
       "id": "ucl-2000-01-giovane-elber",
@@ -4986,9 +5091,9 @@
       "minutes": null,
       "goals": 6,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 2,
+      "tier": "A+",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -4996,13 +5101,24 @@
           "1999-00",
           "2000-01"
         ],
-        "review": "evidence_pending"
+        "review": "provisional_partial_historical_evidence_independent_three_season_audit_pending",
+        "weighting": "2000-01 > 1999-00 > 1998-99",
+        "rationale": "바이에른 UCL 16경기 6골, UEFA 최우수 공격수 후보. 앞선 두 시즌의 주전 득점 기여와 평가 시즌 개인 영향력을 반영.",
+        "independentUCLThreeSeasonAuditComplete": false
       },
       "sources": [
         "https://www.uefa.com/newsfiles/461370.pdf",
         "https://datencenter.dfb.de/en/competitions/champions-league/seasons/2000-2001/teams/bayern-munich",
-        "https://by.statbunker.com/competitions/TopGoalScorers?comp_id=20"
-      ]
+        "https://by.statbunker.com/competitions/TopGoalScorers?comp_id=20",
+        "https://fbref.com/en/squads/054efa67/2000-2001/c8/Bayern-Munich-Stats-Champions-League"
+      ],
+      "proposedTier": "A+",
+      "displayTier": "A+",
+      "tierReason": "바이에른 UCL 16경기 6골, UEFA 최우수 공격수 후보. 앞선 두 시즌의 주전 득점 기여와 평가 시즌 개인 영향력을 반영.",
+      "tierRationale": "바이에른 UCL 16경기 6골, UEFA 최우수 공격수 후보. 앞선 두 시즌의 주전 득점 기여와 평가 시즌 개인 영향력을 반영.",
+      "tierReview": "2000-01 UCL source-guided provisional relative assessment; full weighted 3-season player audit pending",
+      "tierEvidenceStatus": "2000-01_UCL_current_season_primary_and_partial_prior_years",
+      "rankStatus": "ucl_2000-01_existing_40_player_position_rank_DRAFT"
     },
     {
       "id": "ucl-2000-01-santiago-canizares",
@@ -5021,9 +5137,9 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 2,
+      "tier": "A+",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -5031,11 +5147,22 @@
           "1999-00",
           "2000-01"
         ],
-        "review": "evidence_pending"
+        "review": "provisional_partial_historical_evidence_independent_three_season_audit_pending",
+        "weighting": "2000-01 > 1999-00 > 1998-99",
+        "rationale": "UEFA 최우수 골키퍼 후보로 결승까지 활약. 1999-00에도 UCL 결승에 오른 발렌시아의 골문을 지킨 지속성을 인정하되 칸의 결승 영향력이 더 컸음.",
+        "independentUCLThreeSeasonAuditComplete": false
       },
       "sources": [
-        "https://www.uefa.com/newsfiles/461370.pdf"
-      ]
+        "https://www.uefa.com/newsfiles/461370.pdf",
+        "https://fbref.com/en/squads/dcc91a7b/2000-2001/c8/Valencia-Stats-Champions-League"
+      ],
+      "proposedTier": "A+",
+      "displayTier": "A+",
+      "tierReason": "UEFA 최우수 골키퍼 후보로 결승까지 활약. 1999-00에도 UCL 결승에 오른 발렌시아의 골문을 지킨 지속성을 인정하되 칸의 결승 영향력이 더 컸음.",
+      "tierRationale": "UEFA 최우수 골키퍼 후보로 결승까지 활약. 1999-00에도 UCL 결승에 오른 발렌시아의 골문을 지킨 지속성을 인정하되 칸의 결승 영향력이 더 컸음.",
+      "tierReview": "2000-01 UCL source-guided provisional relative assessment; full weighted 3-season player audit pending",
+      "tierEvidenceStatus": "2000-01_UCL_current_season_primary_and_partial_prior_years",
+      "rankStatus": "ucl_2000-01_existing_40_player_position_rank_DRAFT"
     },
     {
       "id": "ucl-2000-01-jocelyn-angloma",
@@ -5054,9 +5181,9 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 1,
+      "tier": "A",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -5064,11 +5191,22 @@
           "1999-00",
           "2000-01"
         ],
-        "review": "evidence_pending"
+        "review": "provisional_partial_historical_evidence_independent_three_season_audit_pending",
+        "weighting": "2000-01 > 1999-00 > 1998-99",
+        "rationale": "발렌시아 UCL 16경기 15선발로 오른쪽 수비와 전진 지원에서 핵심. 1999-00 결승 진출 시즌부터 이어진 활약을 반영.",
+        "independentUCLThreeSeasonAuditComplete": false
       },
       "sources": [
-        "https://www.uefa.com/newsfiles/461370.pdf"
-      ]
+        "https://www.uefa.com/newsfiles/461370.pdf",
+        "https://fbref.com/en/squads/dcc91a7b/2000-2001/c8/Valencia-Stats-Champions-League"
+      ],
+      "proposedTier": "A",
+      "displayTier": "A",
+      "tierReason": "발렌시아 UCL 16경기 15선발로 오른쪽 수비와 전진 지원에서 핵심. 1999-00 결승 진출 시즌부터 이어진 활약을 반영.",
+      "tierRationale": "발렌시아 UCL 16경기 15선발로 오른쪽 수비와 전진 지원에서 핵심. 1999-00 결승 진출 시즌부터 이어진 활약을 반영.",
+      "tierReview": "2000-01 UCL source-guided provisional relative assessment; full weighted 3-season player audit pending",
+      "tierEvidenceStatus": "2000-01_UCL_current_season_primary_and_partial_prior_years",
+      "rankStatus": "ucl_2000-01_existing_40_player_position_rank_DRAFT"
     },
     {
       "id": "ucl-2000-01-roberto-ayala",
@@ -5087,7 +5225,7 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
+      "rank": 1,
       "tier": "A+",
       "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
@@ -5097,16 +5235,26 @@
           "1999-00",
           "2000-01"
         ],
-        "review": "qualitative_evidence_partial",
-        "rationale": "1998-99 AC Milan 주전 수비수로 세리에 A 우승 시즌 개인 기량을 입증했고, 2000-01 Valencia 이적 이후 수비 중심축으로 활약. UEFA 2000-01 클럽 올해의 수비수 수상. 팀 준우승 자체에 추가 가점은 부여하지 않음."
+        "review": "provisional_partial_historical_evidence_independent_three_season_audit_pending",
+        "rationale": "UEFA 2000-01 최우수 수비수 수상. UCL 9경기에 출전해 압박과 대인 방어의 핵심 역할을 수행했고 개인상과 경기당 영향력에서 비교 우위.",
+        "weighting": "2000-01 > 1999-00 > 1998-99",
+        "independentUCLThreeSeasonAuditComplete": false
       },
       "sources": [
         "https://www.uefa.com/newsfiles/461370.pdf",
         "https://www.uefa.com/news-media/news/0250-0c50f3c50f55-b45453ac72d2-1000--uefa-club-defender-of-the-year/",
         "https://www.uefa.com/uefachampionsleague/news/0180-0e6a891a44aa-498fbfe6eda7-1000--uefa-com-team-of-2001-central-defenders/",
-        "https://www.olympedia.org/athletes/23901"
+        "https://www.olympedia.org/athletes/23901",
+        "https://fbref.com/en/squads/dcc91a7b/2000-2001/c8/Valencia-Stats-Champions-League",
+        "https://www.uefa.com/uefasupercup/news/0250-0c50f4c79042-d6e8d7b8e348-1000--inter-monopolise-uefa-club-football-awards/"
       ],
-      "tierRationale": "1998-99 AC Milan 주전 수비수로 세리에 A 우승 시즌 개인 기량을 입증했고, 2000-01 Valencia 이적 이후 수비 중심축으로 활약. UEFA 2000-01 클럽 올해의 수비수 수상. 팀 준우승 자체에 추가 가점은 부여하지 않음."
+      "tierRationale": "UEFA 2000-01 최우수 수비수 수상. UCL 9경기에 출전해 압박과 대인 방어의 핵심 역할을 수행했고 개인상과 경기당 영향력에서 비교 우위.",
+      "proposedTier": "A+",
+      "displayTier": "A+",
+      "tierReason": "UEFA 2000-01 최우수 수비수 수상. UCL 9경기에 출전해 압박과 대인 방어의 핵심 역할을 수행했고 개인상과 경기당 영향력에서 비교 우위.",
+      "tierReview": "2000-01 UCL source-guided provisional relative assessment; full weighted 3-season player audit pending",
+      "tierEvidenceStatus": "2000-01_UCL_current_season_primary_and_partial_prior_years",
+      "rankStatus": "ucl_2000-01_existing_40_player_position_rank_DRAFT"
     },
     {
       "id": "ucl-2000-01-mauricio-pellegrino",
@@ -5125,9 +5273,9 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 4,
+      "tier": "A",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -5135,11 +5283,22 @@
           "1999-00",
           "2000-01"
         ],
-        "review": "evidence_pending"
+        "review": "provisional_partial_historical_evidence_independent_three_season_audit_pending",
+        "weighting": "2000-01 > 1999-00 > 1998-99",
+        "rationale": "발렌시아의 2년 연속 UCL 결승 시기 주전 중앙 수비수로 지속적 공헌. 득점과 개인상 성과에서는 상위 3인에 근소 열세.",
+        "independentUCLThreeSeasonAuditComplete": false
       },
       "sources": [
-        "https://www.uefa.com/newsfiles/461370.pdf"
-      ]
+        "https://www.uefa.com/newsfiles/461370.pdf",
+        "https://fbref.com/en/squads/dcc91a7b/2000-2001/c8/Valencia-Stats-Champions-League"
+      ],
+      "proposedTier": "A",
+      "displayTier": "A",
+      "tierReason": "발렌시아의 2년 연속 UCL 결승 시기 주전 중앙 수비수로 지속적 공헌. 득점과 개인상 성과에서는 상위 3인에 근소 열세.",
+      "tierRationale": "발렌시아의 2년 연속 UCL 결승 시기 주전 중앙 수비수로 지속적 공헌. 득점과 개인상 성과에서는 상위 3인에 근소 열세.",
+      "tierReview": "2000-01 UCL source-guided provisional relative assessment; full weighted 3-season player audit pending",
+      "tierEvidenceStatus": "2000-01_UCL_current_season_primary_and_partial_prior_years",
+      "rankStatus": "ucl_2000-01_existing_40_player_position_rank_DRAFT"
     },
     {
       "id": "ucl-2000-01-amedeo-carboni",
@@ -5158,9 +5317,9 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 2,
+      "tier": "A-",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -5168,11 +5327,22 @@
           "1999-00",
           "2000-01"
         ],
-        "review": "evidence_pending"
+        "review": "provisional_partial_historical_evidence_independent_three_season_audit_pending",
+        "weighting": "2000-01 > 1999-00 > 1998-99",
+        "rationale": "발렌시아 UCL 12경기 모두 선발, 왼쪽 수비의 안정적 경기 운영을 인정. 3시즌 비교 시 리자라쥐의 국제대회 지속성에 근소 열세.",
+        "independentUCLThreeSeasonAuditComplete": false
       },
       "sources": [
-        "https://www.uefa.com/newsfiles/461370.pdf"
-      ]
+        "https://www.uefa.com/newsfiles/461370.pdf",
+        "https://fbref.com/en/squads/dcc91a7b/2000-2001/c8/Valencia-Stats-Champions-League"
+      ],
+      "proposedTier": "A-",
+      "displayTier": "A-",
+      "tierReason": "발렌시아 UCL 12경기 모두 선발, 왼쪽 수비의 안정적 경기 운영을 인정. 3시즌 비교 시 리자라쥐의 국제대회 지속성에 근소 열세.",
+      "tierRationale": "발렌시아 UCL 12경기 모두 선발, 왼쪽 수비의 안정적 경기 운영을 인정. 3시즌 비교 시 리자라쥐의 국제대회 지속성에 근소 열세.",
+      "tierReview": "2000-01 UCL source-guided provisional relative assessment; full weighted 3-season player audit pending",
+      "tierEvidenceStatus": "2000-01_UCL_current_season_primary_and_partial_prior_years",
+      "rankStatus": "ucl_2000-01_existing_40_player_position_rank_DRAFT"
     },
     {
       "id": "ucl-2000-01-ruben-baraja",
@@ -5191,9 +5361,9 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 1,
+      "tier": "A",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -5201,11 +5371,22 @@
           "1999-00",
           "2000-01"
         ],
-        "review": "evidence_pending"
+        "review": "provisional_partial_historical_evidence_independent_three_season_audit_pending",
+        "weighting": "2000-01 > 1999-00 > 1998-99",
+        "rationale": "발렌시아 UCL 14경기 모두 선발·2골. 중원 볼 회수와 전진 배급을 모두 담당, 해당 시즌 출전 비중이 하그리브스보다 명백히 높음.",
+        "independentUCLThreeSeasonAuditComplete": false
       },
       "sources": [
-        "https://www.uefa.com/newsfiles/461370.pdf"
-      ]
+        "https://www.uefa.com/newsfiles/461370.pdf",
+        "https://fbref.com/en/squads/dcc91a7b/2000-2001/c8/Valencia-Stats-Champions-League"
+      ],
+      "proposedTier": "A",
+      "displayTier": "A",
+      "tierReason": "발렌시아 UCL 14경기 모두 선발·2골. 중원 볼 회수와 전진 배급을 모두 담당, 해당 시즌 출전 비중이 하그리브스보다 명백히 높음.",
+      "tierRationale": "발렌시아 UCL 14경기 모두 선발·2골. 중원 볼 회수와 전진 배급을 모두 담당, 해당 시즌 출전 비중이 하그리브스보다 명백히 높음.",
+      "tierReview": "2000-01 UCL source-guided provisional relative assessment; full weighted 3-season player audit pending",
+      "tierEvidenceStatus": "2000-01_UCL_current_season_primary_and_partial_prior_years",
+      "rankStatus": "ucl_2000-01_existing_40_player_position_rank_DRAFT"
     },
     {
       "id": "ucl-2000-01-gaizka-mendieta",
@@ -5224,8 +5405,8 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
-      "tier": "A+",
+      "rank": 2,
+      "tier": "S",
       "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
@@ -5234,16 +5415,26 @@
           "1999-00",
           "2000-01"
         ],
-        "review": "qualitative_evidence_partial",
-        "rationale": "1998-99 발렌시아 주축으로 국왕컵 우승에 기여, 1999-00과 2000-01 UEFA 클럽 올해의 미드필더 2연속 수상. 2001 결승 페널티킥 득점과 연속적인 중원 영향력을 최중시."
+        "review": "provisional_partial_historical_evidence_independent_three_season_audit_pending",
+        "rationale": "UEFA 최우수 미드필더 2000·2001 연속 수상, 당해 UCL 14경기 2골·7도움으로 핵심 창출자. 기존 A+에서 S로 상향하되 올해의 선수 에펜베르크에 이어 CM 2위.",
+        "weighting": "2000-01 > 1999-00 > 1998-99",
+        "independentUCLThreeSeasonAuditComplete": false
       },
       "sources": [
         "https://www.uefa.com/newsfiles/461370.pdf",
         "https://www.uefa.com/news-media/news/0250-0c50f3c5160c-9596532f4487-1000--uefa-club-midfielder-of-the-year/",
         "https://www.olympedia.org/athletes/24917",
-        "https://www.bbc.co.uk/sport/football/articles/c4gdn4dzvpxo"
+        "https://www.bbc.co.uk/sport/football/articles/c4gdn4dzvpxo",
+        "https://fbref.com/en/squads/dcc91a7b/2000-2001/c8/Valencia-Stats-Champions-League",
+        "https://www.uefa.com/uefasupercup/news/0250-0c50f4c79042-d6e8d7b8e348-1000--inter-monopolise-uefa-club-football-awards/"
       ],
-      "tierRationale": "1998-99 발렌시아 주축으로 국왕컵 우승에 기여, 1999-00과 2000-01 UEFA 클럽 올해의 미드필더 2연속 수상. 2001 결승 페널티킥 득점과 연속적인 중원 영향력을 최중시."
+      "tierRationale": "UEFA 최우수 미드필더 2000·2001 연속 수상, 당해 UCL 14경기 2골·7도움으로 핵심 창출자. 기존 A+에서 S로 상향하되 올해의 선수 에펜베르크에 이어 CM 2위.",
+      "proposedTier": "S",
+      "displayTier": "S",
+      "tierReason": "UEFA 최우수 미드필더 2000·2001 연속 수상, 당해 UCL 14경기 2골·7도움으로 핵심 창출자. 기존 A+에서 S로 상향하되 올해의 선수 에펜베르크에 이어 CM 2위.",
+      "tierReview": "2000-01 UCL source-guided provisional relative assessment; full weighted 3-season player audit pending",
+      "tierEvidenceStatus": "2000-01_UCL_current_season_primary_and_partial_prior_years",
+      "rankStatus": "ucl_2000-01_existing_40_player_position_rank_DRAFT"
     },
     {
       "id": "ucl-2000-01-kily-gonzalez",
@@ -5262,7 +5453,7 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
+      "rank": 1,
       "tier": "A-",
       "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
@@ -5272,14 +5463,22 @@
           "1999-00",
           "2000-01"
         ],
-        "review": "evidence_pending"
+        "review": "provisional_partial_historical_evidence_independent_three_season_audit_pending",
+        "weighting": "2000-01 > 1999-00 > 1998-99",
+        "rationale": "발렌시아 UCL 13경기 모두 선발·2골로 왼쪽 측면 돌파와 압박 역할. 1999-00에 이어 연속된 주전 기여를 반영, 기존 A- 유지.",
+        "independentUCLThreeSeasonAuditComplete": false
       },
       "sources": [
-        "https://www.uefa.com/newsfiles/461370.pdf"
+        "https://www.uefa.com/newsfiles/461370.pdf",
+        "https://fbref.com/en/squads/dcc91a7b/2000-2001/c8/Valencia-Stats-Champions-League"
       ],
       "displayTier": "A-",
-      "tierReview": "provisional_from_UCL_season_evidence_prior_3_seasons_pending",
-      "tierReason": "발렌시아의 왼쪽 돌파와 역습 전개 담당. 직전 두 시즌을 포함한 독립적인 전체 평가가 남아 있어 잠정 등급."
+      "tierReview": "2000-01 UCL source-guided provisional relative assessment; full weighted 3-season player audit pending",
+      "tierReason": "발렌시아 UCL 13경기 모두 선발·2골로 왼쪽 측면 돌파와 압박 역할. 1999-00에 이어 연속된 주전 기여를 반영, 기존 A- 유지.",
+      "proposedTier": "A-",
+      "tierRationale": "발렌시아 UCL 13경기 모두 선발·2골로 왼쪽 측면 돌파와 압박 역할. 1999-00에 이어 연속된 주전 기여를 반영, 기존 A- 유지.",
+      "tierEvidenceStatus": "2000-01_UCL_current_season_primary_and_partial_prior_years",
+      "rankStatus": "ucl_2000-01_existing_40_player_position_rank_DRAFT"
     },
     {
       "id": "ucl-2000-01-juan-sanchez",
@@ -5298,9 +5497,9 @@
       "minutes": null,
       "goals": 5,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 9,
+      "tier": "A-",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -5308,12 +5507,23 @@
           "1999-00",
           "2000-01"
         ],
-        "review": "evidence_pending"
+        "review": "provisional_partial_historical_evidence_independent_three_season_audit_pending",
+        "weighting": "2000-01 > 1999-00 > 1998-99",
+        "rationale": "발렌시아 UCL 14경기 5골·1도움. 평가 시즌 결정력은 우수하지만 최근 3시즌 유럽 최상급 지속성은 상위 공격수보다 제한.",
+        "independentUCLThreeSeasonAuditComplete": false
       },
       "sources": [
         "https://www.uefa.com/newsfiles/461370.pdf",
-        "https://by.statbunker.com/competitions/TopGoalScorers?comp_id=20"
-      ]
+        "https://by.statbunker.com/competitions/TopGoalScorers?comp_id=20",
+        "https://fbref.com/en/squads/dcc91a7b/2000-2001/c8/Valencia-Stats-Champions-League"
+      ],
+      "proposedTier": "A-",
+      "displayTier": "A-",
+      "tierReason": "발렌시아 UCL 14경기 5골·1도움. 평가 시즌 결정력은 우수하지만 최근 3시즌 유럽 최상급 지속성은 상위 공격수보다 제한.",
+      "tierRationale": "발렌시아 UCL 14경기 5골·1도움. 평가 시즌 결정력은 우수하지만 최근 3시즌 유럽 최상급 지속성은 상위 공격수보다 제한.",
+      "tierReview": "2000-01 UCL source-guided provisional relative assessment; full weighted 3-season player audit pending",
+      "tierEvidenceStatus": "2000-01_UCL_current_season_primary_and_partial_prior_years",
+      "rankStatus": "ucl_2000-01_existing_40_player_position_rank_DRAFT"
     },
     {
       "id": "ucl-2000-01-pablo-aimar",
@@ -5332,9 +5542,9 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 3,
+      "tier": "B+",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -5342,11 +5552,22 @@
           "1999-00",
           "2000-01"
         ],
-        "review": "evidence_pending"
+        "review": "provisional_partial_historical_evidence_independent_three_season_audit_pending",
+        "weighting": "2000-01 > 1999-00 > 1998-99",
+        "rationale": "2001년 겨울 발렌시아 합류 후 UCL 8경기 6선발과 결승 선발. 이전 남미 활약은 인정하지만 대회 전체 출전량이 제한적이라 A권은 유보.",
+        "independentUCLThreeSeasonAuditComplete": false
       },
       "sources": [
-        "https://www.uefa.com/newsfiles/461370.pdf"
-      ]
+        "https://www.uefa.com/newsfiles/461370.pdf",
+        "https://fbref.com/en/squads/dcc91a7b/2000-2001/c8/Valencia-Stats-Champions-League"
+      ],
+      "proposedTier": "B+",
+      "displayTier": "B+",
+      "tierReason": "2001년 겨울 발렌시아 합류 후 UCL 8경기 6선발과 결승 선발. 이전 남미 활약은 인정하지만 대회 전체 출전량이 제한적이라 A권은 유보.",
+      "tierRationale": "2001년 겨울 발렌시아 합류 후 UCL 8경기 6선발과 결승 선발. 이전 남미 활약은 인정하지만 대회 전체 출전량이 제한적이라 A권은 유보.",
+      "tierReview": "2000-01 UCL source-guided provisional relative assessment; full weighted 3-season player audit pending",
+      "tierEvidenceStatus": "2000-01_UCL_current_season_primary_and_partial_prior_years",
+      "rankStatus": "ucl_2000-01_existing_40_player_position_rank_DRAFT"
     },
     {
       "id": "ucl-2000-01-john-carew",
@@ -5365,9 +5586,9 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 10,
+      "tier": "A-",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -5375,11 +5596,22 @@
           "1999-00",
           "2000-01"
         ],
-        "review": "evidence_pending"
+        "review": "provisional_partial_historical_evidence_independent_three_season_audit_pending",
+        "weighting": "2000-01 > 1999-00 > 1998-99",
+        "rationale": "발렌시아 UCL 17경기 3골·1도움으로 전방 버팀목과 연계 수행. 결승 승부차기에도 성공했으며 출전량과 전술적 기여를 중시.",
+        "independentUCLThreeSeasonAuditComplete": false
       },
       "sources": [
-        "https://www.uefa.com/newsfiles/461370.pdf"
-      ]
+        "https://www.uefa.com/newsfiles/461370.pdf",
+        "https://fbref.com/en/squads/dcc91a7b/2000-2001/c8/Valencia-Stats-Champions-League"
+      ],
+      "proposedTier": "A-",
+      "displayTier": "A-",
+      "tierReason": "발렌시아 UCL 17경기 3골·1도움으로 전방 버팀목과 연계 수행. 결승 승부차기에도 성공했으며 출전량과 전술적 기여를 중시.",
+      "tierRationale": "발렌시아 UCL 17경기 3골·1도움으로 전방 버팀목과 연계 수행. 결승 승부차기에도 성공했으며 출전량과 전술적 기여를 중시.",
+      "tierReview": "2000-01 UCL source-guided provisional relative assessment; full weighted 3-season player audit pending",
+      "tierEvidenceStatus": "2000-01_UCL_current_season_primary_and_partial_prior_years",
+      "rankStatus": "ucl_2000-01_existing_40_player_position_rank_DRAFT"
     },
     {
       "id": "ucl-2000-01-raul",
@@ -5396,7 +5628,7 @@
       "minutes": null,
       "goals": 7,
       "assists": null,
-      "rank": null,
+      "rank": 1,
       "tier": "S",
       "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
@@ -5406,17 +5638,26 @@
           "1999-00",
           "2000-01"
         ],
-        "review": "qualitative_evidence_partial",
-        "rationale": "1998-99 UCL 3득점, 1999-00 10득점, 2000-01 7득점으로 2년 연속 득점왕. 2000-01 UEFA 클럽 올해의 공격수. 3시즌 점증적 영향력과 최고 수준 결정력."
+        "review": "provisional_partial_historical_evidence_independent_three_season_audit_pending",
+        "rationale": "2000-01 UCL 7골 득점왕이자 UEFA 최우수 공격수. 1998-99·1999-00을 포함한 대회 최상급 결정력의 지속성 인정.",
+        "weighting": "2000-01 > 1999-00 > 1998-99",
+        "independentUCLThreeSeasonAuditComplete": false
       },
       "sources": [
         "https://by.statbunker.com/competitions/TopGoalScorers?comp_id=20",
         "https://www.uefa.com/uefachampionsleague/history/seasons/2000/statistics/",
         "https://www.rsssf.org/players/raul-in-ec.html",
         "https://www.realmadrid.com/en-US/the-club/history/football-legends/raul-gonzalez-blanco",
-        "https://rfef.es/sites/default/files/pdf/revista/revista_120_0.pdf"
+        "https://rfef.es/sites/default/files/pdf/revista/revista_120_0.pdf",
+        "https://www.uefa.com/uefasupercup/news/0250-0c50f4c79042-d6e8d7b8e348-1000--inter-monopolise-uefa-club-football-awards/"
       ],
-      "tierRationale": "1998-99 UCL 3득점, 1999-00 10득점, 2000-01 7득점으로 2년 연속 득점왕. 2000-01 UEFA 클럽 올해의 공격수. 3시즌 점증적 영향력과 최고 수준 결정력."
+      "tierRationale": "2000-01 UCL 7골 득점왕이자 UEFA 최우수 공격수. 1998-99·1999-00을 포함한 대회 최상급 결정력의 지속성 인정.",
+      "proposedTier": "S",
+      "displayTier": "S",
+      "tierReason": "2000-01 UCL 7골 득점왕이자 UEFA 최우수 공격수. 1998-99·1999-00을 포함한 대회 최상급 결정력의 지속성 인정.",
+      "tierReview": "2000-01 UCL source-guided provisional relative assessment; full weighted 3-season player audit pending",
+      "tierEvidenceStatus": "2000-01_UCL_current_season_primary_and_partial_prior_years",
+      "rankStatus": "ucl_2000-01_existing_40_player_position_rank_DRAFT"
     },
     {
       "id": "ucl-2000-01-ivan-helguera",
@@ -5433,9 +5674,9 @@
       "minutes": null,
       "goals": 6,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 3,
+      "tier": "A+",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -5443,12 +5684,22 @@
           "1999-00",
           "2000-01"
         ],
-        "review": "evidence_pending"
+        "review": "provisional_partial_historical_evidence_independent_three_season_audit_pending",
+        "weighting": "2000-01 > 1999-00 > 1998-99",
+        "rationale": "레알 마드리드 중앙 수비·중원에서 UCL 6골로 비정상적으로 높은 득점 기여. 1999-00 우승 당시 수비 역할을 함께 참고하되 최빈 포지션 검증 필요.",
+        "independentUCLThreeSeasonAuditComplete": false
       },
       "sources": [
         "https://by.statbunker.com/competitions/TopGoalScorers?comp_id=20",
         "https://www.uefa.com/uefachampionsleague/history/seasons/2000/statistics/"
-      ]
+      ],
+      "proposedTier": "A+",
+      "displayTier": "A+",
+      "tierReason": "레알 마드리드 중앙 수비·중원에서 UCL 6골로 비정상적으로 높은 득점 기여. 1999-00 우승 당시 수비 역할을 함께 참고하되 최빈 포지션 검증 필요.",
+      "tierRationale": "레알 마드리드 중앙 수비·중원에서 UCL 6골로 비정상적으로 높은 득점 기여. 1999-00 우승 당시 수비 역할을 함께 참고하되 최빈 포지션 검증 필요.",
+      "tierReview": "2000-01 UCL source-guided provisional relative assessment; full weighted 3-season player audit pending",
+      "tierEvidenceStatus": "2000-01_UCL_current_season_primary_and_partial_prior_years",
+      "rankStatus": "ucl_2000-01_existing_40_player_position_rank_DRAFT"
     },
     {
       "id": "ucl-2000-01-paul-scholes",
@@ -5465,9 +5716,9 @@
       "minutes": null,
       "goals": 6,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 3,
+      "tier": "A+",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -5475,12 +5726,23 @@
           "1999-00",
           "2000-01"
         ],
-        "review": "evidence_pending"
+        "review": "provisional_partial_historical_evidence_independent_three_season_audit_pending",
+        "weighting": "2000-01 > 1999-00 > 1998-99",
+        "rationale": "맨체스터 유나이티드 UCL 12경기 6골·1도움, 중앙 미드필더의 뛰어난 공격 기여. 1998-99 우승을 포함한 최근 3시즌 지속성 반영.",
+        "independentUCLThreeSeasonAuditComplete": false
       },
       "sources": [
         "https://by.statbunker.com/competitions/TopGoalScorers?comp_id=20",
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2000/statistics/"
-      ]
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2000/statistics/",
+        "https://fbref.com/en/squads/19538871/2000-2001/c8/Manchester-United-Stats-Champions-League"
+      ],
+      "proposedTier": "A+",
+      "displayTier": "A+",
+      "tierReason": "맨체스터 유나이티드 UCL 12경기 6골·1도움, 중앙 미드필더의 뛰어난 공격 기여. 1998-99 우승을 포함한 최근 3시즌 지속성 반영.",
+      "tierRationale": "맨체스터 유나이티드 UCL 12경기 6골·1도움, 중앙 미드필더의 뛰어난 공격 기여. 1998-99 우승을 포함한 최근 3시즌 지속성 반영.",
+      "tierReview": "2000-01 UCL source-guided provisional relative assessment; full weighted 3-season player audit pending",
+      "tierEvidenceStatus": "2000-01_UCL_current_season_primary_and_partial_prior_years",
+      "rankStatus": "ucl_2000-01_existing_40_player_position_rank_DRAFT"
     },
     {
       "id": "ucl-2000-01-lee-bowyer",
@@ -5497,9 +5759,9 @@
       "minutes": null,
       "goals": 6,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 4,
+      "tier": "A+",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -5507,12 +5769,23 @@
           "1999-00",
           "2000-01"
         ],
-        "review": "evidence_pending"
+        "review": "provisional_partial_historical_evidence_independent_three_season_audit_pending",
+        "weighting": "2000-01 > 1999-00 > 1998-99",
+        "rationale": "리즈 UCL 13경기 모두 선발·6골·2도움. 1999-00부터 이어진 중원 주전의 성장과 당해 UCL 개인 생산성을 높게 평가.",
+        "independentUCLThreeSeasonAuditComplete": false
       },
       "sources": [
         "https://by.statbunker.com/competitions/TopGoalScorers?comp_id=20",
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2000/statistics/"
-      ]
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2000/statistics/",
+        "https://fbref.com/en/squads/5bfb9659/2000-2001/c8/Leeds-United-Stats-Champions-League"
+      ],
+      "proposedTier": "A+",
+      "displayTier": "A+",
+      "tierReason": "리즈 UCL 13경기 모두 선발·6골·2도움. 1999-00부터 이어진 중원 주전의 성장과 당해 UCL 개인 생산성을 높게 평가.",
+      "tierRationale": "리즈 UCL 13경기 모두 선발·6골·2도움. 1999-00부터 이어진 중원 주전의 성장과 당해 UCL 개인 생산성을 높게 평가.",
+      "tierReview": "2000-01 UCL source-guided provisional relative assessment; full weighted 3-season player audit pending",
+      "tierEvidenceStatus": "2000-01_UCL_current_season_primary_and_partial_prior_years",
+      "rankStatus": "ucl_2000-01_existing_40_player_position_rank_DRAFT"
     },
     {
       "id": "ucl-2000-01-mario-jardel",
@@ -5529,9 +5802,9 @@
       "minutes": null,
       "goals": 6,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 3,
+      "tier": "A+",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -5539,12 +5812,22 @@
           "1999-00",
           "2000-01"
         ],
-        "review": "evidence_pending"
+        "review": "provisional_partial_historical_evidence_independent_three_season_audit_pending",
+        "weighting": "2000-01 > 1999-00 > 1998-99",
+        "rationale": "갈라타사라이 UCL 6골. 1999-00 포르투의 UCL 10골과 1998-99 득점 지속성을 고려하여 클럽 성적에 무관하게 상위권 평가.",
+        "independentUCLThreeSeasonAuditComplete": false
       },
       "sources": [
         "https://by.statbunker.com/competitions/TopGoalScorers?comp_id=20",
         "https://www.uefa.com/uefachampionsleague/history/seasons/2000/statistics/"
-      ]
+      ],
+      "proposedTier": "A+",
+      "displayTier": "A+",
+      "tierReason": "갈라타사라이 UCL 6골. 1999-00 포르투의 UCL 10골과 1998-99 득점 지속성을 고려하여 클럽 성적에 무관하게 상위권 평가.",
+      "tierRationale": "갈라타사라이 UCL 6골. 1999-00 포르투의 UCL 10골과 1998-99 득점 지속성을 고려하여 클럽 성적에 무관하게 상위권 평가.",
+      "tierReview": "2000-01 UCL source-guided provisional relative assessment; full weighted 3-season player audit pending",
+      "tierEvidenceStatus": "2000-01_UCL_current_season_primary_and_partial_prior_years",
+      "rankStatus": "ucl_2000-01_existing_40_player_position_rank_DRAFT"
     },
     {
       "id": "ucl-2000-01-andriy-shevchenko",
@@ -5561,9 +5844,9 @@
       "minutes": null,
       "goals": 5,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 4,
+      "tier": "A+",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -5571,12 +5854,22 @@
           "1999-00",
           "2000-01"
         ],
-        "review": "evidence_pending"
+        "review": "provisional_partial_historical_evidence_independent_three_season_audit_pending",
+        "weighting": "2000-01 > 1999-00 > 1998-99",
+        "rationale": "AC 밀란 소속 UCL 5골. 1998-99 디나모 키이우와 1999-00 밀란에서의 공격수 실적을 보조 고려하여 지속성에 높은 점수.",
+        "independentUCLThreeSeasonAuditComplete": false
       },
       "sources": [
         "https://by.statbunker.com/competitions/TopGoalScorers?comp_id=20",
         "https://www.uefa.com/uefachampionsleague/history/seasons/2000/statistics/"
-      ]
+      ],
+      "proposedTier": "A+",
+      "displayTier": "A+",
+      "tierReason": "AC 밀란 소속 UCL 5골. 1998-99 디나모 키이우와 1999-00 밀란에서의 공격수 실적을 보조 고려하여 지속성에 높은 점수.",
+      "tierRationale": "AC 밀란 소속 UCL 5골. 1998-99 디나모 키이우와 1999-00 밀란에서의 공격수 실적을 보조 고려하여 지속성에 높은 점수.",
+      "tierReview": "2000-01 UCL source-guided provisional relative assessment; full weighted 3-season player audit pending",
+      "tierEvidenceStatus": "2000-01_UCL_current_season_primary_and_partial_prior_years",
+      "rankStatus": "ucl_2000-01_existing_40_player_position_rank_DRAFT"
     },
     {
       "id": "ucl-2000-01-walter-pandiani",
@@ -5593,9 +5886,9 @@
       "minutes": null,
       "goals": 5,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 13,
+      "tier": "B+",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -5603,12 +5896,22 @@
           "1999-00",
           "2000-01"
         ],
-        "review": "evidence_pending"
+        "review": "provisional_partial_historical_evidence_independent_three_season_audit_pending",
+        "weighting": "2000-01 > 1999-00 > 1998-99",
+        "rationale": "데포르티보 UCL 5골로 결정력을 보여줬으나 평가 시즌 전체 선발 비중 및 과거 2시즌 최고 수준의 검증 근거는 상대적으로 부족.",
+        "independentUCLThreeSeasonAuditComplete": false
       },
       "sources": [
         "https://by.statbunker.com/competitions/TopGoalScorers?comp_id=20",
         "https://www.uefa.com/uefachampionsleague/history/seasons/2000/statistics/"
-      ]
+      ],
+      "proposedTier": "B+",
+      "displayTier": "B+",
+      "tierReason": "데포르티보 UCL 5골로 결정력을 보여줬으나 평가 시즌 전체 선발 비중 및 과거 2시즌 최고 수준의 검증 근거는 상대적으로 부족.",
+      "tierRationale": "데포르티보 UCL 5골로 결정력을 보여줬으나 평가 시즌 전체 선발 비중 및 과거 2시즌 최고 수준의 검증 근거는 상대적으로 부족.",
+      "tierReview": "2000-01 UCL source-guided provisional relative assessment; full weighted 3-season player audit pending",
+      "tierEvidenceStatus": "2000-01_UCL_current_season_primary_and_partial_prior_years",
+      "rankStatus": "ucl_2000-01_existing_40_player_position_rank_DRAFT"
     },
     {
       "id": "ucl-2000-01-alan-smith",
@@ -5625,9 +5928,9 @@
       "minutes": null,
       "goals": 5,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 11,
+      "tier": "A-",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -5635,12 +5938,23 @@
           "1999-00",
           "2000-01"
         ],
-        "review": "evidence_pending"
+        "review": "provisional_partial_historical_evidence_independent_three_season_audit_pending",
+        "weighting": "2000-01 > 1999-00 > 1998-99",
+        "rationale": "리즈 UCL 14경기 모두 선발·5골, 전방 압박과 연결에도 기여. 1998-99 이후 성장세를 반영하되 최상급 지속성에는 미달.",
+        "independentUCLThreeSeasonAuditComplete": false
       },
       "sources": [
         "https://by.statbunker.com/competitions/TopGoalScorers?comp_id=20",
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2000/statistics/"
-      ]
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2000/statistics/",
+        "https://fbref.com/en/squads/5bfb9659/2000-2001/c8/Leeds-United-Stats-Champions-League"
+      ],
+      "proposedTier": "A-",
+      "displayTier": "A-",
+      "tierReason": "리즈 UCL 14경기 모두 선발·5골, 전방 압박과 연결에도 기여. 1998-99 이후 성장세를 반영하되 최상급 지속성에는 미달.",
+      "tierRationale": "리즈 UCL 14경기 모두 선발·5골, 전방 압박과 연결에도 기여. 1998-99 이후 성장세를 반영하되 최상급 지속성에는 미달.",
+      "tierReview": "2000-01 UCL source-guided provisional relative assessment; full weighted 3-season player audit pending",
+      "tierEvidenceStatus": "2000-01_UCL_current_season_primary_and_partial_prior_years",
+      "rankStatus": "ucl_2000-01_existing_40_player_position_rank_DRAFT"
     },
     {
       "id": "ucl-2000-01-teddy-sheringham",
@@ -5657,9 +5971,9 @@
       "minutes": null,
       "goals": 5,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 6,
+      "tier": "A",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -5667,12 +5981,23 @@
           "1999-00",
           "2000-01"
         ],
-        "review": "evidence_pending"
+        "review": "provisional_partial_historical_evidence_independent_three_season_audit_pending",
+        "weighting": "2000-01 > 1999-00 > 1998-99",
+        "rationale": "맨체스터 유나이티드 UCL 5골과 2000-01 잉글랜드 리그의 높은 득점 기여. 1998-99 UCL 결승 득점 등 지속성도 참작.",
+        "independentUCLThreeSeasonAuditComplete": false
       },
       "sources": [
         "https://by.statbunker.com/competitions/TopGoalScorers?comp_id=20",
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2000/statistics/"
-      ]
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2000/statistics/",
+        "https://fbref.com/en/squads/19538871/2000-2001/c8/Manchester-United-Stats-Champions-League"
+      ],
+      "proposedTier": "A",
+      "displayTier": "A",
+      "tierReason": "맨체스터 유나이티드 UCL 5골과 2000-01 잉글랜드 리그의 높은 득점 기여. 1998-99 UCL 결승 득점 등 지속성도 참작.",
+      "tierRationale": "맨체스터 유나이티드 UCL 5골과 2000-01 잉글랜드 리그의 높은 득점 기여. 1998-99 UCL 결승 득점 등 지속성도 참작.",
+      "tierReview": "2000-01 UCL source-guided provisional relative assessment; full weighted 3-season player audit pending",
+      "tierEvidenceStatus": "2000-01_UCL_current_season_primary_and_partial_prior_years",
+      "rankStatus": "ucl_2000-01_existing_40_player_position_rank_DRAFT"
     },
     {
       "id": "ucl-2000-01-tomasz-radzinski",
@@ -5689,9 +6014,9 @@
       "minutes": null,
       "goals": 5,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 12,
+      "tier": "A-",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -5699,12 +6024,23 @@
           "1999-00",
           "2000-01"
         ],
-        "review": "evidence_pending"
+        "review": "provisional_partial_historical_evidence_independent_three_season_audit_pending",
+        "weighting": "2000-01 > 1999-00 > 1998-99",
+        "rationale": "안데를레흐트 UCL 12경기 모두 선발·5골과 2000-01 벨기에 리그 20골. 최근 득점 지속성은 좋지만 후보 내 최상위 선수보다 낮은 영향력.",
+        "independentUCLThreeSeasonAuditComplete": false
       },
       "sources": [
         "https://by.statbunker.com/competitions/TopGoalScorers?comp_id=20",
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2000/statistics/"
-      ]
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2000/statistics/",
+        "https://fbref.com/en/squads/08ad393c/2000-2001/c8/Anderlecht-Stats-Champions-League"
+      ],
+      "proposedTier": "A-",
+      "displayTier": "A-",
+      "tierReason": "안데를레흐트 UCL 12경기 모두 선발·5골과 2000-01 벨기에 리그 20골. 최근 득점 지속성은 좋지만 후보 내 최상위 선수보다 낮은 영향력.",
+      "tierRationale": "안데를레흐트 UCL 12경기 모두 선발·5골과 2000-01 벨기에 리그 20골. 최근 득점 지속성은 좋지만 후보 내 최상위 선수보다 낮은 영향력.",
+      "tierReview": "2000-01 UCL source-guided provisional relative assessment; full weighted 3-season player audit pending",
+      "tierEvidenceStatus": "2000-01_UCL_current_season_primary_and_partial_prior_years",
+      "rankStatus": "ucl_2000-01_existing_40_player_position_rank_DRAFT"
     },
     {
       "id": "ucl-2000-01-luis-figo",
@@ -5721,7 +6057,7 @@
       "minutes": null,
       "goals": 5,
       "assists": null,
-      "rank": null,
+      "rank": 1,
       "tier": "S",
       "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
@@ -5731,8 +6067,10 @@
           "1999-00",
           "2000-01"
         ],
-        "review": "qualitative_evidence_partial",
-        "rationale": "1998-99·1999-00 바르셀로나 리그 34경기 7골·32경기 9골, 1999-00 UCL 9도움, 2000-01 레알 마드리드 리그 34경기 9골 및 UCL 5골. 2000 발롱도르 수상으로 최고 수준의 지속성 확인."
+        "review": "provisional_partial_historical_evidence_independent_three_season_audit_pending",
+        "rationale": "레알 마드리드 UCL 14경기 5골과 우측 플레이메이킹. 1998-99·1999-00 바르셀로나 시절부터 지속된 최정상급 기량과 2000 발롱도르 수상 참고.",
+        "weighting": "2000-01 > 1999-00 > 1998-99",
+        "independentUCLThreeSeasonAuditComplete": false
       },
       "sources": [
         "https://by.statbunker.com/competitions/TopGoalScorers?comp_id=20",
@@ -5741,7 +6079,13 @@
         "https://theanalyst.com/articles/most-assists-in-a-champions-league-season",
         "https://ballondor.com/players/luis-figo-27692"
       ],
-      "tierRationale": "1998-99·1999-00 바르셀로나 리그 34경기 7골·32경기 9골, 1999-00 UCL 9도움, 2000-01 레알 마드리드 리그 34경기 9골 및 UCL 5골. 2000 발롱도르 수상으로 최고 수준의 지속성 확인."
+      "tierRationale": "레알 마드리드 UCL 14경기 5골과 우측 플레이메이킹. 1998-99·1999-00 바르셀로나 시절부터 지속된 최정상급 기량과 2000 발롱도르 수상 참고.",
+      "proposedTier": "S",
+      "displayTier": "S",
+      "tierReason": "레알 마드리드 UCL 14경기 5골과 우측 플레이메이킹. 1998-99·1999-00 바르셀로나 시절부터 지속된 최정상급 기량과 2000 발롱도르 수상 참고.",
+      "tierReview": "2000-01 UCL source-guided provisional relative assessment; full weighted 3-season player audit pending",
+      "tierEvidenceStatus": "2000-01_UCL_current_season_primary_and_partial_prior_years",
+      "rankStatus": "ucl_2000-01_existing_40_player_position_rank_DRAFT"
     },
     {
       "id": "ucl-2000-01-thierry-henry",
@@ -5758,9 +6102,9 @@
       "minutes": 1180,
       "goals": 4,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 5,
+      "tier": "A+",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -5768,11 +6112,21 @@
           "1999-00",
           "2000-01"
         ],
-        "review": "evidence_pending"
+        "review": "provisional_partial_historical_evidence_independent_three_season_audit_pending",
+        "weighting": "2000-01 > 1999-00 > 1998-99",
+        "rationale": "아스널 UCL 14경기 4골, UEFA 최우수 공격수 후보. 직전 두 시즌 영국 무대의 성장과 2000-01 현장 기여를 반영.",
+        "independentUCLThreeSeasonAuditComplete": false
       },
       "sources": [
         "https://fbref.com/en/squads/18bb7c10/2000-2001/c8/Arsenal-Stats-Champions-League"
-      ]
+      ],
+      "proposedTier": "A+",
+      "displayTier": "A+",
+      "tierReason": "아스널 UCL 14경기 4골, UEFA 최우수 공격수 후보. 직전 두 시즌 영국 무대의 성장과 2000-01 현장 기여를 반영.",
+      "tierRationale": "아스널 UCL 14경기 4골, UEFA 최우수 공격수 후보. 직전 두 시즌 영국 무대의 성장과 2000-01 현장 기여를 반영.",
+      "tierReview": "2000-01 UCL source-guided provisional relative assessment; full weighted 3-season player audit pending",
+      "tierEvidenceStatus": "2000-01_UCL_current_season_primary_and_partial_prior_years",
+      "rankStatus": "ucl_2000-01_existing_40_player_position_rank_DRAFT"
     },
     {
       "id": "ucl-2000-01-sidney-govou",
@@ -5789,9 +6143,9 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 14,
+      "tier": "C+",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -5799,11 +6153,22 @@
           "1999-00",
           "2000-01"
         ],
-        "review": "evidence_pending"
+        "review": "provisional_partial_historical_evidence_independent_three_season_audit_pending",
+        "weighting": "2000-01 > 1999-00 > 1998-99",
+        "rationale": "리옹 UCL 8경기 2선발 2골, 바이에른전 2골로 제한 출전 중 인상적 기여. 1999-00 리그 출전도 적어 붙박이 주전급 티어보다는 C+가 부합.",
+        "independentUCLThreeSeasonAuditComplete": false
       },
       "sources": [
-        "https://www.uefa.com/uefachampionsleague/news/01e4-0e746165d2f4-1c75b4c24387-1000--lyon-hope-home-rule-will-see-them-through/"
-      ]
+        "https://www.uefa.com/uefachampionsleague/news/01e4-0e746165d2f4-1c75b4c24387-1000--lyon-hope-home-rule-will-see-them-through/",
+        "https://fbref.com/en/squads/d53c0b06/2000-2001/c8/Lyon-Stats-Champions-League"
+      ],
+      "proposedTier": "C+",
+      "displayTier": "C+",
+      "tierReason": "리옹 UCL 8경기 2선발 2골, 바이에른전 2골로 제한 출전 중 인상적 기여. 1999-00 리그 출전도 적어 붙박이 주전급 티어보다는 C+가 부합.",
+      "tierRationale": "리옹 UCL 8경기 2선발 2골, 바이에른전 2골로 제한 출전 중 인상적 기여. 1999-00 리그 출전도 적어 붙박이 주전급 티어보다는 C+가 부합.",
+      "tierReview": "2000-01 UCL source-guided provisional relative assessment; full weighted 3-season player audit pending",
+      "tierEvidenceStatus": "2000-01_UCL_current_season_primary_and_partial_prior_years",
+      "rankStatus": "ucl_2000-01_existing_40_player_position_rank_DRAFT"
     },
     {
       "id": "ucl-2000-01-yegor-titov",
@@ -5820,9 +6185,9 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 2,
+      "tier": "A",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -5830,11 +6195,22 @@
           "1999-00",
           "2000-01"
         ],
-        "review": "evidence_pending"
+        "review": "provisional_partial_historical_evidence_independent_three_season_audit_pending",
+        "weighting": "2000-01 > 1999-00 > 1998-99",
+        "rationale": "스파르타크 모스크바 UCL 12경기 4골. 1998-99·1999-00 러시아 무대의 주축 창조적 역할을 보조 판단하며 숄 다음 순위.",
+        "independentUCLThreeSeasonAuditComplete": false
       },
       "sources": [
-        "https://spartakmoskva.ru/match/2183-spartak-moskva-bajer-04-germanija-liga-chempionov-2000-09-12"
-      ]
+        "https://spartakmoskva.ru/match/2183-spartak-moskva-bajer-04-germanija-liga-chempionov-2000-09-12",
+        "https://www.rsssf.org/players/yetitov-in-ec.html"
+      ],
+      "proposedTier": "A",
+      "displayTier": "A",
+      "tierReason": "스파르타크 모스크바 UCL 12경기 4골. 1998-99·1999-00 러시아 무대의 주축 창조적 역할을 보조 판단하며 숄 다음 순위.",
+      "tierRationale": "스파르타크 모스크바 UCL 12경기 4골. 1998-99·1999-00 러시아 무대의 주축 창조적 역할을 보조 판단하며 숄 다음 순위.",
+      "tierReview": "2000-01 UCL source-guided provisional relative assessment; full weighted 3-season player audit pending",
+      "tierEvidenceStatus": "2000-01_UCL_current_season_primary_and_partial_prior_years",
+      "rankStatus": "ucl_2000-01_existing_40_player_position_rank_DRAFT"
     },
     {
       "id": "ucl-2000-01-hernan-crespo",
@@ -5851,9 +6227,9 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 8,
+      "tier": "A",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -5861,11 +6237,22 @@
           "1999-00",
           "2000-01"
         ],
-        "review": "evidence_pending"
+        "review": "provisional_partial_historical_evidence_independent_three_season_audit_pending",
+        "weighting": "2000-01 > 1999-00 > 1998-99",
+        "rationale": "라치오 UCL 6경기 2골. 2000-01 세리에A 26골 등 최근 3시즌 공격 수준은 높으나 이번 UCL 실제 영향력은 다른 상위 공격수보다 제한적.",
+        "independentUCLThreeSeasonAuditComplete": false
       },
       "sources": [
-        "https://www.rsssf.org/tablesi/ital-ec.html"
-      ]
+        "https://www.rsssf.org/tablesi/ital-ec.html",
+        "https://fbref.com/en/squads/7213da33/2000-2001/c8/Lazio-Stats"
+      ],
+      "proposedTier": "A",
+      "displayTier": "A",
+      "tierReason": "라치오 UCL 6경기 2골. 2000-01 세리에A 26골 등 최근 3시즌 공격 수준은 높으나 이번 UCL 실제 영향력은 다른 상위 공격수보다 제한적.",
+      "tierRationale": "라치오 UCL 6경기 2골. 2000-01 세리에A 26골 등 최근 3시즌 공격 수준은 높으나 이번 UCL 실제 영향력은 다른 상위 공격수보다 제한적.",
+      "tierReview": "2000-01 UCL source-guided provisional relative assessment; full weighted 3-season player audit pending",
+      "tierEvidenceStatus": "2000-01_UCL_current_season_primary_and_partial_prior_years",
+      "rankStatus": "ucl_2000-01_existing_40_player_position_rank_DRAFT"
     },
     {
       "id": "ucl-2000-01-nicolas-anelka",
@@ -5882,9 +6269,9 @@
       "minutes": 734,
       "goals": 5,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 7,
+      "tier": "A",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -5892,11 +6279,22 @@
           "1999-00",
           "2000-01"
         ],
-        "review": "evidence_pending"
+        "review": "provisional_partial_historical_evidence_independent_three_season_audit_pending",
+        "weighting": "2000-01 > 1999-00 > 1998-99",
+        "rationale": "파리 생제르맹 UCL 10경기 5골. 1998-99 아스널 및 1999-00 레알 마드리드의 중요 경기 활약과 연결하여 평가.",
+        "independentUCLThreeSeasonAuditComplete": false
       },
       "sources": [
-        "https://www.statbunker.com/players/GetHistoryStats?comps_id=-1&comps_type=UCL&player_id=2066"
-      ]
+        "https://www.statbunker.com/players/GetHistoryStats?comps_id=-1&comps_type=UCL&player_id=2066",
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2000/statistics/"
+      ],
+      "proposedTier": "A",
+      "displayTier": "A",
+      "tierReason": "파리 생제르맹 UCL 10경기 5골. 1998-99 아스널 및 1999-00 레알 마드리드의 중요 경기 활약과 연결하여 평가.",
+      "tierRationale": "파리 생제르맹 UCL 10경기 5골. 1998-99 아스널 및 1999-00 레알 마드리드의 중요 경기 활약과 연결하여 평가.",
+      "tierReview": "2000-01 UCL source-guided provisional relative assessment; full weighted 3-season player audit pending",
+      "tierEvidenceStatus": "2000-01_UCL_current_season_primary_and_partial_prior_years",
+      "rankStatus": "ucl_2000-01_existing_40_player_position_rank_DRAFT"
     },
     {
       "id": "ucl-2000-01-giorgos-karagounis",
@@ -5913,9 +6311,9 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 5,
+      "tier": "B+",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -5923,11 +6321,22 @@
           "1999-00",
           "2000-01"
         ],
-        "review": "evidence_pending"
+        "review": "provisional_partial_historical_evidence_independent_three_season_audit_pending",
+        "weighting": "2000-01 > 1999-00 > 1998-99",
+        "rationale": "파나티나이코스 UCL 12경기 모두 선발·1골. 연속적인 중원 기여는 인정하지만 후보 중 상위 4인의 대회 공격 생산성에는 미치지 못함.",
+        "independentUCLThreeSeasonAuditComplete": false
       },
       "sources": [
-        "https://www.panathinaikospress.com/2000/11/manchesterunited-panathinaikos-2000-2001.html"
-      ]
+        "https://www.panathinaikospress.com/2000/11/manchesterunited-panathinaikos-2000-2001.html",
+        "https://fbref.com/en/squads/f3a5726c/2000-2001/c8/Panathinaikos-Stats-Champions-League"
+      ],
+      "proposedTier": "B+",
+      "displayTier": "B+",
+      "tierReason": "파나티나이코스 UCL 12경기 모두 선발·1골. 연속적인 중원 기여는 인정하지만 후보 중 상위 4인의 대회 공격 생산성에는 미치지 못함.",
+      "tierRationale": "파나티나이코스 UCL 12경기 모두 선발·1골. 연속적인 중원 기여는 인정하지만 후보 중 상위 4인의 대회 공격 생산성에는 미치지 못함.",
+      "tierReview": "2000-01 UCL source-guided provisional relative assessment; full weighted 3-season player audit pending",
+      "tierEvidenceStatus": "2000-01_UCL_current_season_primary_and_partial_prior_years",
+      "rankStatus": "ucl_2000-01_existing_40_player_position_rank_DRAFT"
     },
     {
       "id": "ucl-2000-01-markus-schopp",
@@ -5944,9 +6353,9 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 3,
+      "tier": "A-",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -5954,11 +6363,22 @@
           "1999-00",
           "2000-01"
         ],
-        "review": "evidence_pending"
+        "review": "provisional_partial_historical_evidence_independent_three_season_audit_pending",
+        "weighting": "2000-01 > 1999-00 > 1998-99",
+        "rationale": "슈투름 그라츠의 UCL 4골로 주요 득점원 역할. 당해 시즌 인상적이나 이전 2시즌 유럽 최고 수준 검증은 제한적.",
+        "independentUCLThreeSeasonAuditComplete": false
       },
       "sources": [
-        "https://www.thestatszone.com/sturm-grazs-records-and-stats-in-the-european-cup-uefa-champions-league-100541"
-      ]
+        "https://www.thestatszone.com/sturm-grazs-records-and-stats-in-the-european-cup-uefa-champions-league-100541",
+        "https://fbref.com/en/squads/3f4fe568/2000-2001/Sturm-Graz-Stats"
+      ],
+      "proposedTier": "A-",
+      "displayTier": "A-",
+      "tierReason": "슈투름 그라츠의 UCL 4골로 주요 득점원 역할. 당해 시즌 인상적이나 이전 2시즌 유럽 최고 수준 검증은 제한적.",
+      "tierRationale": "슈투름 그라츠의 UCL 4골로 주요 득점원 역할. 당해 시즌 인상적이나 이전 2시즌 유럽 최고 수준 검증은 제한적.",
+      "tierReview": "2000-01 UCL source-guided provisional relative assessment; full weighted 3-season player audit pending",
+      "tierEvidenceStatus": "2000-01_UCL_current_season_primary_and_partial_prior_years",
+      "rankStatus": "ucl_2000-01_existing_40_player_position_rank_DRAFT"
     }
   ],
   "bestXi": [
@@ -5975,13 +6395,12 @@
     },
     {
       "position": "RB",
-      "playerId": "ucl-2000-01-willy-sagnol",
+      "playerId": "ucl-2000-01-jocelyn-angloma",
       "status": "proposed_unapproved",
-      "reason": "바이에른 오른쪽 풀백으로 결승까지 수비 가담과 전진 지원. 3시즌 전체 자료 및 정밀 비교 검증은 미완료 상태이므로 Best XI 잠정 선정.",
+      "reason": "발렌시아 UCL 16경기 15선발로 오른쪽 수비와 전진 지원에서 핵심. 1999-00 결승 진출 시즌부터 이어진 활약을 반영. 기존 후보의 포지션별 1위 반영한 DRAFT 선정.",
       "sources": [
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2000/",
-        "https://www.uefa.com/uefachampionsleague/news/0250-0c50f100ffeb-3a3b0ec790a0-1000/",
-        "https://www.rsssf.org/miscellaneous/uefa-awards.html"
+        "https://www.uefa.com/newsfiles/461370.pdf",
+        "https://fbref.com/en/squads/dcc91a7b/2000-2001/c8/Valencia-Stats-Champions-League"
       ]
     },
     {
@@ -6019,13 +6438,12 @@
     },
     {
       "position": "DM",
-      "playerId": "ucl-2000-01-owen-hargreaves",
+      "playerId": "ucl-2000-01-ruben-baraja",
       "status": "proposed_unapproved",
-      "reason": "대회 후반 바이에른 중원 수비 역할, 결승 출전. 3시즌 전체 자료 및 정밀 비교 검증은 미완료 상태이므로 Best XI 잠정 선정.",
+      "reason": "발렌시아 UCL 14경기 모두 선발·2골. 중원 볼 회수와 전진 배급을 모두 담당, 해당 시즌 출전 비중이 하그리브스보다 명백히 높음. 기존 후보의 포지션별 1위 반영한 DRAFT 선정.",
       "sources": [
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2000/",
-        "https://www.uefa.com/uefachampionsleague/news/0250-0c50f100ffeb-3a3b0ec790a0-1000/",
-        "https://www.rsssf.org/miscellaneous/uefa-awards.html"
+        "https://www.uefa.com/newsfiles/461370.pdf",
+        "https://fbref.com/en/squads/dcc91a7b/2000-2001/c8/Valencia-Stats-Champions-League"
       ]
     },
     {
