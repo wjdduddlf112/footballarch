@@ -722,3 +722,9 @@
 ## Commit linkage
 - Season data commit `5c2d415d140bb334130a6b9357da242882a29467`
 - Report's own creation commit shared in ChatGPT response.
+
+## Metadata-only follow-up (2026-11-19)
+- Corrected `meta.playerSelectionStatus` in `data/ucl-2013-14.json` to reflect **297/297 provisional tier and positional-rank entries** rather than the stale pre-assessment value of 209/297.
+- The correction is **metadata only**: no candidate IDs, player attributes, tier values, positional ranks, team or match data, or Best XI selections were altered.
+- **0/297 independent 2011-12 to 2013-14 matchwise player audits** remain complete; the dataset remains an unapproved DRAFT.
+- Metadata correction commit: `97baa1b0b170736debb4106d87bb66cbc222f669`.
