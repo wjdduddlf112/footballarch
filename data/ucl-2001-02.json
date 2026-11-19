@@ -12,7 +12,7 @@
     "bestXiReview": {
       "status": "proposed_unapproved",
       "formation": "4-3-1-2",
-      "updatedAt": "2026-11-14",
+      "updatedAt": "2026-11-19",
       "sourceBasis": "UEFA historical match and season stats, official UEFA period individual awards and final/round reports, supplemented by existing historic candidate identities.",
       "sources": [
         "https://www.uefa.com/uefachampionsleague/history/seasons/2001/",
@@ -23,7 +23,7 @@
       "isHistoricalSeasonComplete": false,
       "independentThreeSeasonAuditPending": true,
       "leagueWideOrCompetitionWideModalFormationVerified": false,
-      "caveat": "Best XI is source-guided DRAFT; full roster, all player tiers and all three-season historical audits remain separate incomplete tasks; do not mark season fully approved."
+      "caveat": "Ranked players are provisional from 2001-02 evidence, UEFA 2002 technical all-star nominations and stored verified-style per-player records. Remaining candidates lack sufficient evidence; full three-season individual validation is incomplete. User approval pending."
     },
     "verification": {
       "totalClubs": 32,
@@ -42,11 +42,14 @@
       "siteTestPending": true,
       "playerCandidateCount": 131,
       "clubPlayerCoverage": 16,
-      "provisionalTierCount": 9,
-      "tierProvisionalCount": 9,
+      "provisionalTierCount": 87,
+      "tierProvisionalCount": 87,
       "playersWithVerifiedStarts": 27,
       "playersWithVerifiedMinutes": 27,
-      "bestXiStatus": "11_selected_DRAFT_only_not_independently_three_season_verified"
+      "bestXiStatus": "11_selected_DRAFT_revised_after_UEFA_individual_comparison",
+      "playerRankProvisionalCount": 87,
+      "playerEvidencePendingCount": 44,
+      "UEFA2002AllStarNomineesInExistingRoster": 49
     },
     "formation": "4-3-1-2"
   },
@@ -4617,9 +4620,9 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 10,
+      "tier": "B+",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -4627,13 +4630,20 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
-        "https://www.rsssf.org/ec/ec200102.html"
+        "https://www.rsssf.org/ec/ec200102.html",
+        "https://www.uefa.com/newsfiles/24981.pdf",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
       ],
       "finalStarter": true,
-      "finalMatchDate": "2002-05-15"
+      "finalMatchDate": "2002-05-15",
+      "displayTier": "B+",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-michel-salgado",
@@ -4650,7 +4660,7 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
+      "rank": 2,
       "tier": "A-",
       "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
@@ -4660,16 +4670,20 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
-        "https://www.rsssf.org/ec/ec200102.html"
+        "https://www.rsssf.org/ec/ec200102.html",
+        "https://www.uefa.com/newsfiles/24981.pdf",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
       ],
       "finalStarter": true,
       "finalMatchDate": "2002-05-15",
       "displayTier": "A-",
-      "tierReview": "provisional_from_UCL_season_evidence_prior_3_seasons_pending",
-      "tierReason": "레알 마드리드 우측 수비의 주전, 후방 지원. 직전 두 시즌을 포함한 독립적인 전체 평가가 남아 있어 잠정 등급."
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-fernando-hierro",
@@ -4686,8 +4700,8 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
-      "tier": "A-",
+      "rank": 3,
+      "tier": "A",
       "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
@@ -4696,16 +4710,20 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
-        "https://www.rsssf.org/ec/ec200102.html"
+        "https://www.rsssf.org/ec/ec200102.html",
+        "https://www.uefa.com/newsfiles/24981.pdf",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
       ],
       "finalStarter": true,
       "finalMatchDate": "2002-05-15",
-      "displayTier": "A-",
-      "tierReview": "provisional_from_UCL_season_evidence_prior_3_seasons_pending",
-      "tierReason": "레알 마드리드 중앙 수비 조직과 배급. 직전 두 시즌을 포함한 독립적인 전체 평가가 남아 있어 잠정 등급."
+      "displayTier": "A0",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-ivan-helguera",
@@ -4722,9 +4740,9 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 4,
+      "tier": "A-",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -4732,13 +4750,20 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
-        "https://www.rsssf.org/ec/ec200102.html"
+        "https://www.rsssf.org/ec/ec200102.html",
+        "https://www.uefa.com/newsfiles/24981.pdf",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
       ],
       "finalStarter": true,
-      "finalMatchDate": "2002-05-15"
+      "finalMatchDate": "2002-05-15",
+      "displayTier": "A-",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-roberto-carlos",
@@ -4755,7 +4780,7 @@
       "minutes": null,
       "goals": null,
       "assists": 4,
-      "rank": null,
+      "rank": 1,
       "tier": "S",
       "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
@@ -4765,18 +4790,24 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "qualitative_evidence_partial",
-        "rationale": "2001-02 UEFA 클럽 올해의 수비수, UCL 4도움, 결승 선발과 지단 골 크로스. 최근 3시즌 지속적인 세계 최정상 공격형 왼쪽 풀백의 수비·공격 기여."
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "rationale": "UEFA 2002 최우수 수비수 수상; 2001-02 UCL 도움 4개, 결승전 좌측 전개 관여. UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 2002 UEFA 개인 부문 수상기록과 교차 확인. 기존 JSON의 2001-02 UCL 기록: 4도움(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님.",
+        "priority": "2001-02 > 2000-01 > 1999-00"
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
         "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
         "https://www.uefa.com/uefasupercup/news/0250-0c50f1e0d4bc-53b6c60fce80-1000--zidane-honoured-at-gala-night/",
-        "https://www.realmadrid.com/en-US/the-club/history/football-legends/roberto-carlos-da-silva/"
+        "https://www.realmadrid.com/en-US/the-club/history/football-legends/roberto-carlos-da-silva/",
+        "https://www.uefa.com/newsfiles/24981.pdf",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
       ],
       "finalStarter": true,
       "finalMatchDate": "2002-05-15",
-      "tierRationale": "2001-02 UEFA 클럽 올해의 수비수, UCL 4도움, 결승 선발과 지단 골 크로스. 최근 3시즌 지속적인 세계 최정상 공격형 왼쪽 풀백의 수비·공격 기여."
+      "tierRationale": "2001-02 UEFA 클럽 올해의 수비수, UCL 4도움, 결승 선발과 지단 골 크로스. 최근 3시즌 지속적인 세계 최정상 공격형 왼쪽 풀백의 수비·공격 기여.",
+      "displayTier": "S",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "UEFA 2002 최우수 수비수 수상; 2001-02 UCL 도움 4개, 결승전 좌측 전개 관여. UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 2002 UEFA 개인 부문 수상기록과 교차 확인. 기존 JSON의 2001-02 UCL 기록: 4도움(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-luis-figo",
@@ -4793,7 +4824,7 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
+      "rank": 2,
       "tier": "A+",
       "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
@@ -4803,17 +4834,23 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "qualitative_evidence_partial",
-        "rationale": "1999-00 UCL 도움 선두권, 2000 발롱도르 및 2001 FIFA 올해의 선수 수상으로 3시즌 지속적 세계 정상급 수준 입증. 2001-02 레알 마드리드에서도 오른쪽 측면 핵심."
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "rationale": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님.",
+        "priority": "2001-02 > 2000-01 > 1999-00"
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
         "https://www.uefa.com/uefachampionsleague/news/0180-0e6a340ea8e4-c8435f566c25-1000--figo-lands-fifa-award/",
-        "https://www.realmadrid.com/en-US/the-club/history/football-legends/luis-figo"
+        "https://www.realmadrid.com/en-US/the-club/history/football-legends/luis-figo",
+        "https://www.uefa.com/newsfiles/24981.pdf",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
       ],
       "finalStarter": true,
       "finalMatchDate": "2002-05-15",
-      "tierRationale": "1999-00 UCL 도움 선두권, 2000 발롱도르 및 2001 FIFA 올해의 선수 수상으로 3시즌 지속적 세계 정상급 수준 입증. 2001-02 레알 마드리드에서도 오른쪽 측면 핵심."
+      "tierRationale": "1999-00 UCL 도움 선두권, 2000 발롱도르 및 2001 FIFA 올해의 선수 수상으로 3시즌 지속적 세계 정상급 수준 입증. 2001-02 레알 마드리드에서도 오른쪽 측면 핵심.",
+      "displayTier": "A+",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-claude-makelele",
@@ -4830,7 +4867,7 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
+      "rank": 2,
       "tier": "A+",
       "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
@@ -4840,16 +4877,19 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
-        "https://www.rsssf.org/ec/ec200102.html"
+        "https://www.rsssf.org/ec/ec200102.html",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
       ],
       "finalStarter": true,
       "finalMatchDate": "2002-05-15",
       "displayTier": "A+",
-      "tierReview": "provisional_from_UCL_season_evidence_prior_3_seasons_pending",
-      "tierReason": "레알 마드리드 중원 수비 차단과 공격 전환의 기반. 직전 두 시즌을 포함한 독립적인 전체 평가가 남아 있어 잠정 등급."
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-zinedine-zidane",
@@ -4866,7 +4906,7 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
+      "rank": 1,
       "tier": "S",
       "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
@@ -4876,17 +4916,23 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "qualitative_evidence_partial",
-        "rationale": "2001-02 UEFA 클럽 올해의 선수(MVP). 1999-00과 2000-01 유벤투스에서도 유럽 최상위 플레이메이킹을 지속했으며, 레알 마드리드 첫 시즌 결승 결정골. 우승 결과 자체는 티어 가산점으로 사용하지 않음."
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "rationale": "UEFA 2002 최우수 클럽 선수; 결승전 결승골. 1999-00~2001-02 개인 기량의 지속성 반영. UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 2002 UEFA 개인 부문 수상기록과 교차 확인. 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님.",
+        "priority": "2001-02 > 2000-01 > 1999-00"
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
         "https://www.uefa.com/uefasupercup/news/0250-0c50f1e0d4bc-53b6c60fce80-1000--zidane-honoured-at-gala-night/",
-        "https://www.realmadrid.com/en-US/the-club/history/football-legends/zinedine-zidane"
+        "https://www.realmadrid.com/en-US/the-club/history/football-legends/zinedine-zidane",
+        "https://www.uefa.com/newsfiles/24981.pdf",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
       ],
       "finalStarter": true,
       "finalMatchDate": "2002-05-15",
-      "tierRationale": "2001-02 UEFA 클럽 올해의 선수(MVP). 1999-00과 2000-01 유벤투스에서도 유럽 최상위 플레이메이킹을 지속했으며, 레알 마드리드 첫 시즌 결승 결정골. 우승 결과 자체는 티어 가산점으로 사용하지 않음."
+      "tierRationale": "2001-02 UEFA 클럽 올해의 선수(MVP). 1999-00과 2000-01 유벤투스에서도 유럽 최상위 플레이메이킹을 지속했으며, 레알 마드리드 첫 시즌 결승 결정골. 우승 결과 자체는 티어 가산점으로 사용하지 않음.",
+      "displayTier": "S",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "UEFA 2002 최우수 클럽 선수; 결승전 결승골. 1999-00~2001-02 개인 기량의 지속성 반영. UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 2002 UEFA 개인 부문 수상기록과 교차 확인. 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-santiago-solari",
@@ -4903,9 +4949,9 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 5,
+      "tier": "B+",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -4913,13 +4959,20 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "2002-05-15 결승전 출전/경기 기록으로 당해 시즌 기여 일부 확인(시즌 전체 선발 증거는 아님). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
-        "https://www.rsssf.org/ec/ec200102.html"
+        "https://www.rsssf.org/ec/ec200102.html",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/",
+        "https://www.uefa.com/uefachampionsleague/news/0185-0e6a414977dc-840dff896fae-1000/"
       ],
       "finalStarter": true,
-      "finalMatchDate": "2002-05-15"
+      "finalMatchDate": "2002-05-15",
+      "displayTier": "B+",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "2002-05-15 결승전 출전/경기 기록으로 당해 시즌 기여 일부 확인(시즌 전체 선발 증거는 아님). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-raul-gonzalez",
@@ -4936,7 +4989,7 @@
       "minutes": null,
       "goals": 6,
       "assists": null,
-      "rank": null,
+      "rank": 2,
       "tier": "S",
       "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
@@ -4946,18 +4999,24 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "qualitative_evidence_partial",
-        "rationale": "1999-00 UCL 10골, 2000-01 UCL 7골, 2001-02 UCL 6골. 1999-00~2001-02 결정력의 지속성, UEFA 2001-02 올해의 공격수 수상. 팀 우승의 티어 직접 가산 없음."
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "rationale": "UEFA 2002 최우수 공격수; UCL 6골 및 결승전 득점. 직전 시즌들에서도 높은 기여. UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 2002 UEFA 개인 부문 수상기록과 교차 확인. 기존 JSON의 2001-02 UCL 기록: 6골(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님.",
+        "priority": "2001-02 > 2000-01 > 1999-00"
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
         "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
         "https://www.rsssf.org/miscellaneous/uefa-awards.html",
-        "https://www.realmadrid.com/en-US/the-club/history/football-legends/raul-gonzalez-blanco"
+        "https://www.realmadrid.com/en-US/the-club/history/football-legends/raul-gonzalez-blanco",
+        "https://www.uefa.com/newsfiles/24981.pdf",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
       ],
       "finalStarter": true,
       "finalMatchDate": "2002-05-15",
-      "tierRationale": "1999-00 UCL 10골, 2000-01 UCL 7골, 2001-02 UCL 6골. 1999-00~2001-02 결정력의 지속성, UEFA 2001-02 올해의 공격수 수상. 팀 우승의 티어 직접 가산 없음."
+      "tierRationale": "1999-00 UCL 10골, 2000-01 UCL 7골, 2001-02 UCL 6골. 1999-00~2001-02 결정력의 지속성, UEFA 2001-02 올해의 공격수 수상. 팀 우승의 티어 직접 가산 없음.",
+      "displayTier": "S",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "UEFA 2002 최우수 공격수; UCL 6골 및 결승전 득점. 직전 시즌들에서도 높은 기여. UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 2002 UEFA 개인 부문 수상기록과 교차 확인. 기존 JSON의 2001-02 UCL 기록: 6골(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-fernando-morientes",
@@ -4974,9 +5033,9 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 13,
+      "tier": "B+",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -4984,13 +5043,20 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "2002 UCL 결승 선발. 3시즌 출전·득점 세부 수치 별도 조사 전의 잠정 등급. 2002-05-15 결승전 출전/경기 기록으로 당해 시즌 기여 일부 확인(시즌 전체 선발 증거는 아님). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
-        "https://www.rsssf.org/ec/ec200102.html"
+        "https://www.rsssf.org/ec/ec200102.html",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/",
+        "https://www.uefa.com/uefachampionsleague/news/0185-0e6a414977dc-840dff896fae-1000/"
       ],
       "finalStarter": true,
-      "finalMatchDate": "2002-05-15"
+      "finalMatchDate": "2002-05-15",
+      "displayTier": "B+",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "2002 UCL 결승 선발. 3시즌 출전·득점 세부 수치 별도 조사 전의 잠정 등급. 2002-05-15 결승전 출전/경기 기록으로 당해 시즌 기여 일부 확인(시즌 전체 선발 증거는 아님). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-hans-jorg-butt",
@@ -5007,9 +5073,9 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 3,
+      "tier": "A-",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -5017,14 +5083,21 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/"
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/",
+        "https://www.uefa.com/newsfiles/24981.pdf",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
       ],
       "finalStarter": true,
-      "finalMatchDate": "2002-05-15"
+      "finalMatchDate": "2002-05-15",
+      "displayTier": "A-",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-zoltan-sebescen",
@@ -5041,9 +5114,9 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 4,
+      "tier": "B-",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -5051,13 +5124,20 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "2002-05-15 결승전 출전/경기 기록으로 당해 시즌 기여 일부 확인(시즌 전체 선발 증거는 아님). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
-        "https://www.rsssf.org/ec/ec200102.html"
+        "https://www.rsssf.org/ec/ec200102.html",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/",
+        "https://www.uefa.com/uefachampionsleague/news/0185-0e6a414977dc-840dff896fae-1000/"
       ],
       "finalStarter": true,
-      "finalMatchDate": "2002-05-15"
+      "finalMatchDate": "2002-05-15",
+      "displayTier": "B-",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "2002-05-15 결승전 출전/경기 기록으로 당해 시즌 기여 일부 확인(시즌 전체 선발 증거는 아님). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-boris-zivkovic",
@@ -5074,9 +5154,9 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 6,
+      "tier": "B+",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -5084,13 +5164,20 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "2002 UCL 결승 선발, UEFA 결승전 보도의 라울 저지 수비 기록 확인. 2002-05-15 결승전 출전/경기 기록으로 당해 시즌 기여 일부 확인(시즌 전체 선발 증거는 아님). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
-        "https://www.rsssf.org/ec/ec200102.html"
+        "https://www.rsssf.org/ec/ec200102.html",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/",
+        "https://www.uefa.com/uefachampionsleague/news/0185-0e6a414977dc-840dff896fae-1000/"
       ],
       "finalStarter": true,
-      "finalMatchDate": "2002-05-15"
+      "finalMatchDate": "2002-05-15",
+      "displayTier": "B+",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "2002 UCL 결승 선발, UEFA 결승전 보도의 라울 저지 수비 기록 확인. 2002-05-15 결승전 출전/경기 기록으로 당해 시즌 기여 일부 확인(시즌 전체 선발 증거는 아님). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-lucio",
@@ -5107,8 +5194,8 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
-      "tier": "A-",
+      "rank": 2,
+      "tier": "A",
       "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
@@ -5117,16 +5204,20 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "UEFA 2001-02 올스타 후보 및 결승전 득점. 전진 수비 역할도 반영. UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
-        "https://www.rsssf.org/ec/ec200102.html"
+        "https://www.rsssf.org/ec/ec200102.html",
+        "https://www.uefa.com/newsfiles/24981.pdf",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
       ],
       "finalStarter": true,
       "finalMatchDate": "2002-05-15",
-      "displayTier": "A-",
-      "tierReview": "provisional_from_UCL_season_evidence_prior_3_seasons_pending",
-      "tierReason": "레버쿠젠 중앙 수비와 전진 역할, 결승에서 득점. 직전 두 시즌을 포함한 독립적인 전체 평가가 남아 있어 잠정 등급."
+      "displayTier": "A0",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "UEFA 2001-02 올스타 후보 및 결승전 득점. 전진 수비 역할도 반영. UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-diego-placente",
@@ -5143,9 +5234,9 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 3,
+      "tier": "B+",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -5153,13 +5244,20 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "2002-05-15 결승전 출전/경기 기록으로 당해 시즌 기여 일부 확인(시즌 전체 선발 증거는 아님). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
-        "https://www.rsssf.org/ec/ec200102.html"
+        "https://www.rsssf.org/ec/ec200102.html",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/",
+        "https://www.uefa.com/uefachampionsleague/news/0185-0e6a414977dc-840dff896fae-1000/"
       ],
       "finalStarter": true,
-      "finalMatchDate": "2002-05-15"
+      "finalMatchDate": "2002-05-15",
+      "displayTier": "B+",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "2002-05-15 결승전 출전/경기 기록으로 당해 시즌 기여 일부 확인(시즌 전체 선발 증거는 아님). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-bernd-schneider",
@@ -5176,9 +5274,9 @@
       "minutes": null,
       "goals": null,
       "assists": 5,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 3,
+      "tier": "A+",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -5186,15 +5284,22 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "레버쿠젠의 17경기 출전 및 5도움(UEFA 공동 1위), UEFA 시즌 올스타 후보. UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 기존 JSON의 2001-02 UCL 기록: 17경기 / 5도움(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
         "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/"
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/",
+        "https://www.uefa.com/newsfiles/24981.pdf",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
       ],
       "finalStarter": true,
-      "finalMatchDate": "2002-05-15"
+      "finalMatchDate": "2002-05-15",
+      "displayTier": "A+",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "레버쿠젠의 17경기 출전 및 5도움(UEFA 공동 1위), UEFA 시즌 올스타 후보. UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 기존 JSON의 2001-02 UCL 기록: 17경기 / 5도움(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-carsten-ramelow",
@@ -5211,9 +5316,9 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 5,
+      "tier": "B+",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -5221,13 +5326,20 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "2002 UCL 결승전 주장 및 선발, 결승전 UEFA 공식 경기 보고서 확인. 2002-05-15 결승전 출전/경기 기록으로 당해 시즌 기여 일부 확인(시즌 전체 선발 증거는 아님). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
-        "https://www.rsssf.org/ec/ec200102.html"
+        "https://www.rsssf.org/ec/ec200102.html",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/",
+        "https://www.uefa.com/uefachampionsleague/news/0185-0e6a414977dc-840dff896fae-1000/"
       ],
       "finalStarter": true,
-      "finalMatchDate": "2002-05-15"
+      "finalMatchDate": "2002-05-15",
+      "displayTier": "B+",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "2002 UCL 결승전 주장 및 선발, 결승전 UEFA 공식 경기 보고서 확인. 2002-05-15 결승전 출전/경기 기록으로 당해 시즌 기여 일부 확인(시즌 전체 선발 증거는 아님). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-yildiray-basturk",
@@ -5244,9 +5356,9 @@
       "minutes": null,
       "goals": null,
       "assists": 4,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 2,
+      "tier": "A",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -5254,15 +5366,22 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "레버쿠젠 17경기·4도움 및 UEFA 시즌 올스타 후보. UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 기존 JSON의 2001-02 UCL 기록: 17경기 / 4도움(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
         "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/"
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/",
+        "https://www.uefa.com/newsfiles/24981.pdf",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
       ],
       "finalStarter": true,
-      "finalMatchDate": "2002-05-15"
+      "finalMatchDate": "2002-05-15",
+      "displayTier": "A0",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "레버쿠젠 17경기·4도움 및 UEFA 시즌 올스타 후보. UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 기존 JSON의 2001-02 UCL 기록: 17경기 / 4도움(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-michael-ballack",
@@ -5279,8 +5398,8 @@
       "minutes": null,
       "goals": 6,
       "assists": null,
-      "rank": null,
-      "tier": "A+",
+      "rank": 1,
+      "tier": "S",
       "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
@@ -5289,18 +5408,24 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "qualitative_evidence_partial",
-        "rationale": "1999-00·2000-01 분데스리가 핵심 성장세, 2001-02 레버쿠젠 소속 UCL 6골·15경기, UEFA 클럽 올해의 미드필더 수상, 독일 올해의 선수. 레버쿠젠 소속으로 평가하며 여름 이적한 바이에른과 혼동 금지."
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "rationale": "UEFA 2002 최우수 MF; UCL 6골과 레버쿠젠의 전방 가담. 2001-02 활약을 최우선 평가. UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 2002 UEFA 개인 부문 수상기록과 교차 확인. 기존 JSON의 2001-02 UCL 기록: 6골(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님.",
+        "priority": "2001-02 > 2000-01 > 1999-00"
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
         "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
         "https://www.bayer04.de/en-us/news/bayer04/michael-ballack-turns-50-happy-birthday-balle",
-        "https://www.uefa.com/uefasupercup/news/0250-0c50f1e0d4bc-53b6c60fce80-1000--zidane-honoured-at-gala-night/"
+        "https://www.uefa.com/uefasupercup/news/0250-0c50f1e0d4bc-53b6c60fce80-1000--zidane-honoured-at-gala-night/",
+        "https://www.uefa.com/newsfiles/24981.pdf",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
       ],
       "finalStarter": true,
       "finalMatchDate": "2002-05-15",
-      "tierRationale": "1999-00·2000-01 분데스리가 핵심 성장세, 2001-02 레버쿠젠 소속 UCL 6골·15경기, UEFA 클럽 올해의 미드필더 수상, 독일 올해의 선수. 레버쿠젠 소속으로 평가하며 여름 이적한 바이에른과 혼동 금지."
+      "tierRationale": "1999-00·2000-01 분데스리가 핵심 성장세, 2001-02 레버쿠젠 소속 UCL 6골·15경기, UEFA 클럽 올해의 미드필더 수상, 독일 올해의 선수. 레버쿠젠 소속으로 평가하며 여름 이적한 바이에른과 혼동 금지.",
+      "displayTier": "S",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "UEFA 2002 최우수 MF; UCL 6골과 레버쿠젠의 전방 가담. 2001-02 활약을 최우선 평가. UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 2002 UEFA 개인 부문 수상기록과 교차 확인. 기존 JSON의 2001-02 UCL 기록: 6골(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-oliver-neuville",
@@ -5317,9 +5442,9 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 10,
+      "tier": "A-",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -5327,13 +5452,20 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
-        "https://www.rsssf.org/ec/ec200102.html"
+        "https://www.rsssf.org/ec/ec200102.html",
+        "https://www.uefa.com/newsfiles/24981.pdf",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
       ],
       "finalStarter": true,
-      "finalMatchDate": "2002-05-15"
+      "finalMatchDate": "2002-05-15",
+      "displayTier": "A-",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-thomas-brdaric",
@@ -5350,9 +5482,9 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 16,
+      "tier": "B-",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -5360,13 +5492,20 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "2002-05-15 결승전 출전/경기 기록으로 당해 시즌 기여 일부 확인(시즌 전체 선발 증거는 아님). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
-        "https://www.rsssf.org/ec/ec200102.html"
+        "https://www.rsssf.org/ec/ec200102.html",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/",
+        "https://www.uefa.com/uefachampionsleague/news/0185-0e6a414977dc-840dff896fae-1000/"
       ],
       "finalStarter": true,
-      "finalMatchDate": "2002-05-15"
+      "finalMatchDate": "2002-05-15",
+      "displayTier": "B-",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "2002-05-15 결승전 출전/경기 기록으로 당해 시즌 기여 일부 확인(시즌 전체 선발 증거는 아님). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-iker-casillas",
@@ -5383,9 +5522,9 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 11,
+      "tier": "B+",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -5393,13 +5532,20 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "2002 UCL 결승 교체 출전 및 위기 상황 선방. 시즌 전체 선발 비중 검증 대기. 2002-05-15 결승전 출전/경기 기록으로 당해 시즌 기여 일부 확인(시즌 전체 선발 증거는 아님). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
-        "https://www.rsssf.org/ec/ec200102.html"
+        "https://www.rsssf.org/ec/ec200102.html",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/",
+        "https://www.uefa.com/uefachampionsleague/news/0185-0e6a414977dc-840dff896fae-1000/"
       ],
       "finalSubstitute": true,
-      "finalMatchDate": "2002-05-15"
+      "finalMatchDate": "2002-05-15",
+      "displayTier": "B+",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "2002 UCL 결승 교체 출전 및 위기 상황 선방. 시즌 전체 선발 비중 검증 대기. 2002-05-15 결승전 출전/경기 기록으로 당해 시즌 기여 일부 확인(시즌 전체 선발 증거는 아님). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-steve-mcmanaman",
@@ -5426,13 +5572,19 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "evidence_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
       },
       "sources": [
-        "https://www.rsssf.org/ec/ec200102.html"
+        "https://www.rsssf.org/ec/ec200102.html",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
       ],
       "finalSubstitute": true,
-      "finalMatchDate": "2002-05-15"
+      "finalMatchDate": "2002-05-15",
+      "displayTier": null,
+      "tierReview": "evidence_pending_no_sufficient_individual_season_data",
+      "tierReason": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
     },
     {
       "id": "ucl-2001-02-flavio-conceicao",
@@ -5459,13 +5611,19 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "evidence_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
       },
       "sources": [
-        "https://www.rsssf.org/ec/ec200102.html"
+        "https://www.rsssf.org/ec/ec200102.html",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
       ],
       "finalSubstitute": true,
-      "finalMatchDate": "2002-05-15"
+      "finalMatchDate": "2002-05-15",
+      "displayTier": null,
+      "tierReview": "evidence_pending_no_sufficient_individual_season_data",
+      "tierReason": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
     },
     {
       "id": "ucl-2001-02-ulf-kirsten",
@@ -5492,13 +5650,19 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "evidence_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
       },
       "sources": [
-        "https://www.rsssf.org/ec/ec200102.html"
+        "https://www.rsssf.org/ec/ec200102.html",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
       ],
       "finalSubstitute": true,
-      "finalMatchDate": "2002-05-15"
+      "finalMatchDate": "2002-05-15",
+      "displayTier": null,
+      "tierReview": "evidence_pending_no_sufficient_individual_season_data",
+      "tierReason": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
     },
     {
       "id": "ucl-2001-02-marko-babic",
@@ -5525,13 +5689,19 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "evidence_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
       },
       "sources": [
-        "https://www.rsssf.org/ec/ec200102.html"
+        "https://www.rsssf.org/ec/ec200102.html",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
       ],
       "finalSubstitute": true,
-      "finalMatchDate": "2002-05-15"
+      "finalMatchDate": "2002-05-15",
+      "displayTier": null,
+      "tierReview": "evidence_pending_no_sufficient_individual_season_data",
+      "tierReason": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
     },
     {
       "id": "ucl-2001-02-dimitar-berbatov",
@@ -5558,13 +5728,19 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "evidence_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
       },
       "sources": [
-        "https://www.rsssf.org/ec/ec200102.html"
+        "https://www.rsssf.org/ec/ec200102.html",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
       ],
       "finalSubstitute": true,
-      "finalMatchDate": "2002-05-15"
+      "finalMatchDate": "2002-05-15",
+      "displayTier": null,
+      "tierReview": "evidence_pending_no_sufficient_individual_season_data",
+      "tierReason": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
     },
     {
       "id": "ucl-2001-02-ruud-van-nistelrooy",
@@ -5581,8 +5757,8 @@
       "minutes": null,
       "goals": 10,
       "assists": 5,
-      "rank": null,
-      "tier": "A+",
+      "rank": 1,
+      "tier": "S",
       "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
@@ -5591,15 +5767,21 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "qualitative_evidence_partial",
-        "rationale": "2001-02 UCL 10골·5도움, 2001-02 UEFA 올해의 공격수 후보 수준의 개인 영향력. 이전 1999-00 PSV 시기 탁월한 득점력에 비해 2000-01 부상 공백은 지속성 평가에서 감안."
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "rationale": "UEFA 기록 2001-02 UCL 10골·5도움으로 득점 공동이 아닌 단독 선두. 2000-01 부상 공백은 3시즌 평가의 제한 요인. UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 기존 JSON의 2001-02 UCL 기록: 10골 / 5도움(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님.",
+        "priority": "2001-02 > 2000-01 > 1999-00"
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
         "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
-        "https://www.manutd.com/en/players-and-staff/detail/ruud-van-nistelrooy"
+        "https://www.manutd.com/en/players-and-staff/detail/ruud-van-nistelrooy",
+        "https://www.uefa.com/newsfiles/24981.pdf",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
       ],
-      "tierRationale": "2001-02 UCL 10골·5도움, 2001-02 UEFA 올해의 공격수 후보 수준의 개인 영향력. 이전 1999-00 PSV 시기 탁월한 득점력에 비해 2000-01 부상 공백은 지속성 평가에서 감안."
+      "tierRationale": "2001-02 UCL 10골·5도움, 2001-02 UEFA 올해의 공격수 후보 수준의 개인 영향력. 이전 1999-00 PSV 시기 탁월한 득점력에 비해 2000-01 부상 공백은 지속성 평가에서 감안.",
+      "displayTier": "S",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "UEFA 기록 2001-02 UCL 10골·5도움으로 득점 공동이 아닌 단독 선두. 2000-01 부상 공백은 3시즌 평가의 제한 요인. UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 기존 JSON의 2001-02 UCL 기록: 10골 / 5도움(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-ole-gunnar-solskjaer",
@@ -5616,9 +5798,9 @@
       "minutes": null,
       "goals": 7,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 8,
+      "tier": "A-",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -5626,12 +5808,18 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "2001-02 UCL 7골(UEFA 득점 공동 3위). 주전/교체 활용 비중 추가 조사 필요. 기존 JSON의 2001-02 UCL 기록: 7골(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/"
-      ]
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": "A-",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "2001-02 UCL 7골(UEFA 득점 공동 3위). 주전/교체 활용 비중 추가 조사 필요. 기존 JSON의 2001-02 UCL 기록: 7골(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-david-beckham",
@@ -5648,9 +5836,9 @@
       "minutes": null,
       "goals": null,
       "assists": 4,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 1,
+      "tier": "A+",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -5658,12 +5846,19 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "UEFA 2002 미드필더 후보, 기존 UCL 4도움. 높은 창출력을 반영. UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 기존 JSON의 2001-02 UCL 기록: 4도움(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/"
-      ]
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
+        "https://www.uefa.com/newsfiles/24981.pdf",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": "A+",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "UEFA 2002 미드필더 후보, 기존 UCL 4도움. 높은 창출력을 반영. UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 기존 JSON의 2001-02 UCL 기록: 4도움(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-juan-sebastian-veron",
@@ -5680,9 +5875,9 @@
       "minutes": null,
       "goals": null,
       "assists": 5,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 2,
+      "tier": "A",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -5690,12 +5885,18 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "UEFA 2001-02 UCL 최다 도움 공동 1위(5도움). 최근 시즌 UCL 공격 전개 기여를 에펜베르크와 상대평가. 기존 JSON의 2001-02 UCL 기록: 5도움(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/"
-      ]
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": "A0",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "UEFA 2001-02 UCL 최다 도움 공동 1위(5도움). 최근 시즌 UCL 공격 전개 기여를 에펜베르크와 상대평가. 기존 JSON의 2001-02 UCL 기록: 5도움(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-ryan-giggs",
@@ -5712,9 +5913,9 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 2,
+      "tier": "A+",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -5722,12 +5923,19 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/"
-      ]
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
+        "https://www.uefa.com/newsfiles/24981.pdf",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": "A+",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-roy-keane",
@@ -5744,9 +5952,9 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 1,
+      "tier": "A+",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -5754,12 +5962,19 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "UEFA 2002 시즌 최우수 선수 후보이며 UCL 올스타 후보; 수비 전환과 중원 경기 지배. UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/"
-      ]
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
+        "https://www.uefa.com/newsfiles/24981.pdf",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": "A+",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "UEFA 2002 시즌 최우수 선수 후보이며 UCL 올스타 후보; 수비 전환과 중원 경기 지배. UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-paul-scholes",
@@ -5776,9 +5991,9 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 4,
+      "tier": "A-",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -5786,12 +6001,19 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/"
-      ]
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
+        "https://www.uefa.com/newsfiles/24981.pdf",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": "A-",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-laurent-blanc",
@@ -5808,9 +6030,9 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 5,
+      "tier": "B+",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -5818,12 +6040,19 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/"
-      ]
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
+        "https://www.uefa.com/newsfiles/24981.pdf",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": "B+",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-oliver-kahn",
@@ -5840,7 +6069,7 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
+      "rank": 1,
       "tier": "S",
       "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
@@ -5850,16 +6079,22 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "qualitative_evidence_partial",
-        "rationale": "1998-99부터 2001-02까지 UEFA 클럽 올해의 골키퍼 연속 수상, 1999-00·2000-01·2001-02 모두 세계 정상급 선방 기량 유지. 2001-02 개인 수상에 비중."
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "rationale": "UEFA 2002 최우수 GK 수상과 올스타 후보. 2000-01 수상에 이어 세계 정상급 유지. UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 2002 UEFA 개인 부문 수상기록과 교차 확인. 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님.",
+        "priority": "2001-02 > 2000-01 > 1999-00"
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
         "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
         "https://www.rsssf.org/miscellaneous/uefa-awards.html",
-        "https://datencenter.dfb.de/en/people/oliver-kahn/player"
+        "https://datencenter.dfb.de/en/people/oliver-kahn/player",
+        "https://www.uefa.com/newsfiles/24981.pdf",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
       ],
-      "tierRationale": "1998-99부터 2001-02까지 UEFA 클럽 올해의 골키퍼 연속 수상, 1999-00·2000-01·2001-02 모두 세계 정상급 선방 기량 유지. 2001-02 개인 수상에 비중."
+      "tierRationale": "1998-99부터 2001-02까지 UEFA 클럽 올해의 골키퍼 연속 수상, 1999-00·2000-01·2001-02 모두 세계 정상급 선방 기량 유지. 2001-02 개인 수상에 비중.",
+      "displayTier": "S",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "UEFA 2002 최우수 GK 수상과 올스타 후보. 2000-01 수상에 이어 세계 정상급 유지. UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 2002 UEFA 개인 부문 수상기록과 교차 확인. 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-hasan-salihamidzic",
@@ -5876,9 +6111,9 @@
       "minutes": null,
       "goals": null,
       "assists": 5,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 4,
+      "tier": "A-",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -5886,12 +6121,18 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "2001-02 UCL 도움 5개로 UEFA 공식 공동 1위. 기존 JSON의 2001-02 UCL 기록: 5도움(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/"
-      ]
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": "A-",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "2001-02 UCL 도움 5개로 UEFA 공식 공동 1위. 기존 JSON의 2001-02 UCL 기록: 5도움(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-giovane-elber",
@@ -5908,9 +6149,9 @@
       "minutes": null,
       "goals": 6,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 9,
+      "tier": "A-",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -5918,12 +6159,19 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 기존 JSON의 2001-02 UCL 기록: 6골(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/"
-      ]
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
+        "https://www.uefa.com/newsfiles/24981.pdf",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": "A-",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 기존 JSON의 2001-02 UCL 기록: 6골(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-claudio-pizarro",
@@ -5950,12 +6198,18 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "evidence_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/"
-      ]
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": null,
+      "tierReview": "evidence_pending_no_sufficient_individual_season_data",
+      "tierReason": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
     },
     {
       "id": "ucl-2001-02-stefan-effenberg",
@@ -5972,8 +6226,8 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
-      "tier": "A+",
+      "rank": 3,
+      "tier": "A",
       "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
@@ -5982,15 +6236,19 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "UEFA 2001 올해의 클럽 선수 및 2001-02 올스타 후보. 이전 시즌 최고점과 2001-02 실적 사이를 구분하여 A+에서 A0로 조정. UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/"
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
+        "https://www.uefa.com/newsfiles/24981.pdf",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
       ],
-      "displayTier": "A+",
-      "tierReview": "provisional_from_UCL_season_evidence_prior_3_seasons_pending",
-      "tierReason": "바이에른 중원 지휘, 지난 시즌 공식 MVP 이후의 기량 지속성. 직전 두 시즌을 포함한 독립적인 전체 평가가 남아 있어 잠정 등급."
+      "displayTier": "A0",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "UEFA 2001 올해의 클럽 선수 및 2001-02 올스타 후보. 이전 시즌 최고점과 2001-02 실적 사이를 구분하여 A+에서 A0로 조정. UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-roque-santa-cruz",
@@ -6017,12 +6275,18 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "evidence_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/"
-      ]
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": null,
+      "tierReview": "evidence_pending_no_sufficient_individual_season_data",
+      "tierReason": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
     },
     {
       "id": "ucl-2001-02-jens-jeremies",
@@ -6039,9 +6303,9 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 4,
+      "tier": "A-",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -6049,12 +6313,19 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/"
-      ]
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
+        "https://www.uefa.com/newsfiles/24981.pdf",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": "A-",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-silva-boavista",
@@ -6071,9 +6342,9 @@
       "minutes": 649,
       "goals": 4,
       "assists": 1,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 15,
+      "tier": "B+",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -6081,14 +6352,20 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "기존 JSON의 2001-02 UCL 기록: 11경기 / 9선발 / 649분 / 4골 / 1도움(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
         "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
         "https://www.uefa.com/uefachampionsleague/history/clubs/52819/",
-        "https://fbref.com/en/squads/37b7e9e2/2001-2002/c8/Boavista-Stats-Champions-League"
-      ]
+        "https://fbref.com/en/squads/37b7e9e2/2001-2002/c8/Boavista-Stats-Champions-League",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": "B+",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "기존 JSON의 2001-02 UCL 기록: 11경기 / 9선발 / 649분 / 4골 / 1도움(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-martelinho",
@@ -6115,13 +6392,19 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "evidence_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
         "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
-        "https://fbref.com/en/squads/37b7e9e2/2001-2002/c8/Boavista-Stats-Champions-League"
-      ]
+        "https://fbref.com/en/squads/37b7e9e2/2001-2002/c8/Boavista-Stats-Champions-League",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": null,
+      "tierReview": "evidence_pending_no_sufficient_individual_season_data",
+      "tierReason": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
     },
     {
       "id": "ucl-2001-02-alexandre-goulart",
@@ -6138,9 +6421,9 @@
       "minutes": 738,
       "goals": 1,
       "assists": 2,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 7,
+      "tier": "B",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -6148,14 +6431,20 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "기존 JSON의 2001-02 UCL 기록: 12경기 / 8선발 / 738분 / 1골 / 2도움(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
         "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
         "https://www.uefa.com/uefachampionsleague/history/clubs/52819/",
-        "https://fbref.com/en/squads/37b7e9e2/2001-2002/c8/Boavista-Stats-Champions-League"
-      ]
+        "https://fbref.com/en/squads/37b7e9e2/2001-2002/c8/Boavista-Stats-Champions-League",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": "B0",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "기존 JSON의 2001-02 UCL 기록: 12경기 / 8선발 / 738분 / 1골 / 2도움(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-viorel-moldovan",
@@ -6182,12 +6471,18 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "evidence_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/"
-      ]
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": null,
+      "tierReview": "evidence_pending_no_sufficient_individual_season_data",
+      "tierReason": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
     },
     {
       "id": "ucl-2001-02-hassan-ahamada",
@@ -6214,13 +6509,19 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "evidence_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
         "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
-        "https://www.uefa.com/uefachampionsleague/news/025a-0eab06c93fa9-23ad2312b8d6-1000--lacklustre-bayern-leave-it-late/"
-      ]
+        "https://www.uefa.com/uefachampionsleague/news/025a-0eab06c93fa9-23ad2312b8d6-1000--lacklustre-bayern-leave-it-late/",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": null,
+      "tierReview": "evidence_pending_no_sufficient_individual_season_data",
+      "tierReason": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
     },
     {
       "id": "ucl-2001-02-sylvain-armand",
@@ -6237,9 +6538,9 @@
       "minutes": 990,
       "goals": 1,
       "assists": 4,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 2,
+      "tier": "A-",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -6247,13 +6548,19 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "기존 UCL 기록 11경기 선발·1골·4도움, 측면 공격 기여 우수. 출처 교차 검증은 진행 중. 기존 JSON의 2001-02 UCL 기록: 11경기 / 11선발 / 990분 / 1골 / 4도움(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
         "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
-        "https://fbref.com/en/squads/d7a486cd/2001-2002/c8/Nantes-Stats-Liga-de-Campeones"
-      ]
+        "https://fbref.com/en/squads/d7a486cd/2001-2002/c8/Nantes-Stats-Liga-de-Campeones",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": "A-",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "기존 UCL 기록 11경기 선발·1골·4도움, 측면 공격 기여 우수. 출처 교차 검증은 진행 중. 기존 JSON의 2001-02 UCL 기록: 11경기 / 11선발 / 990분 / 1골 / 4도움(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-frederic-da-rocha",
@@ -6280,13 +6587,19 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "evidence_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
         "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
-        "https://www.uefa.com/uefachampionsleague/news/025a-0eab09297f62-f0252091086c-1000--nantes-send-boavista-crashing/"
-      ]
+        "https://www.uefa.com/uefachampionsleague/news/025a-0eab09297f62-f0252091086c-1000--nantes-send-boavista-crashing/",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": null,
+      "tierReview": "evidence_pending_no_sufficient_individual_season_data",
+      "tierReason": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
     },
     {
       "id": "ucl-2001-02-patrick-kluivert",
@@ -6303,9 +6616,9 @@
       "minutes": null,
       "goals": 6,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 7,
+      "tier": "A",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -6313,13 +6626,20 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 기존 JSON의 2001-02 UCL 기록: 6골(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
         "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
-        "https://datencenter.dfb.de/competitions/champions-league/seasons/2001-2002/teams/fc-barcelona?datacenter_name=datencenter"
-      ]
+        "https://datencenter.dfb.de/competitions/champions-league/seasons/2001-2002/teams/fc-barcelona?datacenter_name=datencenter",
+        "https://www.uefa.com/newsfiles/24981.pdf",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": "A0",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 기존 JSON의 2001-02 UCL 기록: 6골(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-javier-saviola",
@@ -6336,9 +6656,9 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 14,
+      "tier": "B+",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -6346,13 +6666,20 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
         "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
-        "https://datencenter.dfb.de/competitions/champions-league/seasons/2001-2002/teams/fc-barcelona?datacenter_name=datencenter"
-      ]
+        "https://datencenter.dfb.de/competitions/champions-league/seasons/2001-2002/teams/fc-barcelona?datacenter_name=datencenter",
+        "https://www.uefa.com/newsfiles/24981.pdf",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": "B+",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-rivaldo",
@@ -6369,9 +6696,9 @@
       "minutes": null,
       "goals": null,
       "assists": 4,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 3,
+      "tier": "A",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -6379,13 +6706,20 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 기존 JSON의 2001-02 UCL 기록: 4도움(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
         "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
-        "https://datencenter.dfb.de/competitions/champions-league/seasons/2001-2002/teams/fc-barcelona?datacenter_name=datencenter"
-      ]
+        "https://datencenter.dfb.de/competitions/champions-league/seasons/2001-2002/teams/fc-barcelona?datacenter_name=datencenter",
+        "https://www.uefa.com/newsfiles/24981.pdf",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": "A0",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 기존 JSON의 2001-02 UCL 기록: 4도움(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-luis-enrique",
@@ -6402,9 +6736,9 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 5,
+      "tier": "A-",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -6412,13 +6746,20 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
         "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
-        "https://datencenter.dfb.de/competitions/champions-league/seasons/2001-2002/teams/fc-barcelona?datacenter_name=datencenter"
-      ]
+        "https://datencenter.dfb.de/competitions/champions-league/seasons/2001-2002/teams/fc-barcelona?datacenter_name=datencenter",
+        "https://www.uefa.com/newsfiles/24981.pdf",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": "A-",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-marc-overmars",
@@ -6445,13 +6786,19 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "evidence_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
         "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
-        "https://datencenter.dfb.de/competitions/champions-league/seasons/2001-2002/teams/fc-barcelona?datacenter_name=datencenter"
-      ]
+        "https://datencenter.dfb.de/competitions/champions-league/seasons/2001-2002/teams/fc-barcelona?datacenter_name=datencenter",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": null,
+      "tierReview": "evidence_pending_no_sufficient_individual_season_data",
+      "tierReason": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
     },
     {
       "id": "ucl-2001-02-fabio-rochemback",
@@ -6478,13 +6825,19 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "evidence_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
         "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
-        "https://datencenter.dfb.de/competitions/champions-league/seasons/2001-2002/teams/fc-barcelona?datacenter_name=datencenter"
-      ]
+        "https://datencenter.dfb.de/competitions/champions-league/seasons/2001-2002/teams/fc-barcelona?datacenter_name=datencenter",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": null,
+      "tierReview": "evidence_pending_no_sufficient_individual_season_data",
+      "tierReason": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
     },
     {
       "id": "ucl-2001-02-michael-owen",
@@ -6501,9 +6854,9 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 6,
+      "tier": "A",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -6511,12 +6864,19 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/"
-      ]
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
+        "https://www.uefa.com/newsfiles/24981.pdf",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": "A0",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-emile-heskey",
@@ -6543,12 +6903,18 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "evidence_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/"
-      ]
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": null,
+      "tierReview": "evidence_pending_no_sufficient_individual_season_data",
+      "tierReason": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
     },
     {
       "id": "ucl-2001-02-jari-litmanen",
@@ -6575,12 +6941,18 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "evidence_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/"
-      ]
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": null,
+      "tierReview": "evidence_pending_no_sufficient_individual_season_data",
+      "tierReason": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
     },
     {
       "id": "ucl-2001-02-sami-hyypia",
@@ -6597,9 +6969,9 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 1,
+      "tier": "A+",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -6607,12 +6979,19 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "2002 UEFA 최우수 선수 후보 및 올스타 후보. 리버풀의 해당 시즌 UCL 최다 팀 클린시트(8회)에 기여. UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/"
-      ]
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
+        "https://www.uefa.com/newsfiles/24981.pdf",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": "A+",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "2002 UEFA 최우수 선수 후보 및 올스타 후보. 리버풀의 해당 시즌 UCL 최다 팀 클린시트(8회)에 기여. UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-steven-gerrard",
@@ -6629,9 +7008,9 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 5,
+      "tier": "A-",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -6639,12 +7018,19 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/"
-      ]
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
+        "https://www.uefa.com/newsfiles/24981.pdf",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": "A-",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-danny-murphy",
@@ -6671,12 +7057,18 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "evidence_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/"
-      ]
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": null,
+      "tierReview": "evidence_pending_no_sufficient_individual_season_data",
+      "tierReason": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
     },
     {
       "id": "ucl-2001-02-francesco-totti",
@@ -6693,9 +7085,9 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 3,
+      "tier": "A",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -6703,13 +7095,20 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
         "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
-        "https://datencenter.dfb.de/en/competitions/champions-league/seasons/2001-2002/teams/as-roma?datacenter_name=data-center"
-      ]
+        "https://datencenter.dfb.de/en/competitions/champions-league/seasons/2001-2002/teams/as-roma?datacenter_name=data-center",
+        "https://www.uefa.com/newsfiles/24981.pdf",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": "A0",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-cafu",
@@ -6726,9 +7125,9 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 1,
+      "tier": "A",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -6736,13 +7135,20 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
         "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
-        "https://datencenter.dfb.de/en/competitions/champions-league/seasons/2001-2002/teams/as-roma?datacenter_name=data-center"
-      ]
+        "https://datencenter.dfb.de/en/competitions/champions-league/seasons/2001-2002/teams/as-roma?datacenter_name=data-center",
+        "https://www.uefa.com/newsfiles/24981.pdf",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": "A0",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-cristian-panucci",
@@ -6769,13 +7175,19 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "evidence_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
         "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
-        "https://datencenter.dfb.de/en/competitions/champions-league/seasons/2001-2002/teams/as-roma?datacenter_name=data-center"
-      ]
+        "https://datencenter.dfb.de/en/competitions/champions-league/seasons/2001-2002/teams/as-roma?datacenter_name=data-center",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": null,
+      "tierReview": "evidence_pending_no_sufficient_individual_season_data",
+      "tierReason": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
     },
     {
       "id": "ucl-2001-02-emerson",
@@ -6802,13 +7214,19 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "evidence_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
         "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
-        "https://datencenter.dfb.de/en/competitions/champions-league/seasons/2001-2002/teams/as-roma?datacenter_name=data-center"
-      ]
+        "https://datencenter.dfb.de/en/competitions/champions-league/seasons/2001-2002/teams/as-roma?datacenter_name=data-center",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": null,
+      "tierReview": "evidence_pending_no_sufficient_individual_season_data",
+      "tierReason": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
     },
     {
       "id": "ucl-2001-02-vincenzo-montella",
@@ -6835,13 +7253,19 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "evidence_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
         "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
-        "https://datencenter.dfb.de/en/competitions/champions-league/seasons/2001-2002/teams/as-roma?datacenter_name=data-center"
-      ]
+        "https://datencenter.dfb.de/en/competitions/champions-league/seasons/2001-2002/teams/as-roma?datacenter_name=data-center",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": null,
+      "tierReview": "evidence_pending_no_sufficient_individual_season_data",
+      "tierReason": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
     },
     {
       "id": "ucl-2001-02-damiano-tommasi",
@@ -6868,13 +7292,19 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "evidence_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
         "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
-        "https://datencenter.dfb.de/en/competitions/champions-league/seasons/2001-2002/teams/as-roma?datacenter_name=data-center"
-      ]
+        "https://datencenter.dfb.de/en/competitions/champions-league/seasons/2001-2002/teams/as-roma?datacenter_name=data-center",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": null,
+      "tierReview": "evidence_pending_no_sufficient_individual_season_data",
+      "tierReason": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
     },
     {
       "id": "ucl-2001-02-umit-karan",
@@ -6901,12 +7331,18 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "evidence_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/"
-      ]
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": null,
+      "tierReview": "evidence_pending_no_sufficient_individual_season_data",
+      "tierReason": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
     },
     {
       "id": "ucl-2001-02-sergen-yalcin",
@@ -6933,12 +7369,18 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "evidence_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/"
-      ]
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": null,
+      "tierReview": "evidence_pending_no_sufficient_individual_season_data",
+      "tierReason": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
     },
     {
       "id": "ucl-2001-02-arif-erdem",
@@ -6965,12 +7407,18 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "evidence_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/"
-      ]
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": null,
+      "tierReview": "evidence_pending_no_sufficient_individual_season_data",
+      "tierReason": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
     },
     {
       "id": "ucl-2001-02-cosmin-contra-niculescu",
@@ -6997,12 +7445,18 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "evidence_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/"
-      ]
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": null,
+      "tierReview": "evidence_pending_no_sufficient_individual_season_data",
+      "tierReason": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
     },
     {
       "id": "ucl-2001-02-michalis-konstantinou",
@@ -7019,9 +7473,9 @@
       "minutes": null,
       "goals": 6,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 12,
+      "tier": "A-",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -7029,12 +7483,18 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "2001-02 UCL 6골(UEFA 공식 득점표 상위권); 파나티나이코스 핵심 공격 기여. 기존 JSON의 2001-02 UCL 기록: 6골(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/"
-      ]
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": "A-",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "2001-02 UCL 6골(UEFA 공식 득점표 상위권); 파나티나이코스 핵심 공격 기여. 기존 JSON의 2001-02 UCL 기록: 6골(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-giorgos-karagounis",
@@ -7061,12 +7521,18 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "evidence_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/"
-      ]
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": null,
+      "tierReview": "evidence_pending_no_sufficient_individual_season_data",
+      "tierReason": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
     },
     {
       "id": "ucl-2001-02-angelos-basinas",
@@ -7093,12 +7559,18 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "evidence_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/"
-      ]
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": null,
+      "tierReview": "evidence_pending_no_sufficient_individual_season_data",
+      "tierReason": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
     },
     {
       "id": "ucl-2001-02-emmanuel-olisadebe",
@@ -7125,12 +7597,18 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "evidence_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/"
-      ]
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": null,
+      "tierReview": "evidence_pending_no_sufficient_individual_season_data",
+      "tierReason": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
     },
     {
       "id": "ucl-2001-02-goran-vlaovic",
@@ -7157,12 +7635,18 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "evidence_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/"
-      ]
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": null,
+      "tierReview": "evidence_pending_no_sufficient_individual_season_data",
+      "tierReason": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
     },
     {
       "id": "ucl-2001-02-jan-michaelsen",
@@ -7179,9 +7663,9 @@
       "minutes": null,
       "goals": null,
       "assists": 4,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 6,
+      "tier": "B+",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -7189,12 +7673,18 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "기존 JSON의 2001-02 UCL 기록: 4도움(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/"
-      ]
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": "B+",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "기존 JSON의 2001-02 UCL 기록: 4도움(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-libor-sionko",
@@ -7211,9 +7701,9 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 7,
+      "tier": "B+",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -7221,12 +7711,19 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/"
-      ]
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
+        "https://www.uefa.com/newsfiles/24981.pdf",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": "B+",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-jiri-jarosik",
@@ -7253,12 +7750,18 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "evidence_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/"
-      ]
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": null,
+      "tierReview": "evidence_pending_no_sufficient_individual_season_data",
+      "tierReason": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
     },
     {
       "id": "ucl-2001-02-marek-kincl",
@@ -7285,12 +7788,18 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "evidence_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/"
-      ]
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": null,
+      "tierReview": "evidence_pending_no_sufficient_individual_season_data",
+      "tierReason": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
     },
     {
       "id": "ucl-2001-02-petr-michalik",
@@ -7317,12 +7826,18 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "evidence_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/"
-      ]
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": null,
+      "tierReview": "evidence_pending_no_sufficient_individual_season_data",
+      "tierReason": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
     },
     {
       "id": "ucl-2001-02-deco",
@@ -7339,9 +7854,9 @@
       "minutes": 1037,
       "goals": 2,
       "assists": 2,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 5,
+      "tier": "A-",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -7349,13 +7864,20 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 기존 JSON의 2001-02 UCL 기록: 12경기 / 12선발 / 1037분 / 2골 / 2도움(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
         "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
-        "https://fbref.com/en/squads/5e876ee6/2001-2002/c8/Porto-Stats-Champions-League"
-      ]
+        "https://fbref.com/en/squads/5e876ee6/2001-2002/c8/Porto-Stats-Champions-League",
+        "https://www.uefa.com/newsfiles/24981.pdf",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": "A-",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 기존 JSON의 2001-02 UCL 기록: 12경기 / 12선발 / 1037분 / 2골 / 2도움(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-pena",
@@ -7382,12 +7904,18 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "evidence_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/"
-      ]
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": null,
+      "tierReview": "evidence_pending_no_sufficient_individual_season_data",
+      "tierReason": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
     },
     {
       "id": "ucl-2001-02-capucho",
@@ -7404,9 +7932,9 @@
       "minutes": 1037,
       "goals": 1,
       "assists": 3,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 6,
+      "tier": "B+",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -7414,13 +7942,19 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "기존 JSON의 2001-02 UCL 기록: 12경기 / 12선발 / 1037분 / 1골 / 3도움(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
         "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
-        "https://fbref.com/en/squads/5e876ee6/2001-2002/c8/Porto-Stats-Champions-League"
-      ]
+        "https://fbref.com/en/squads/5e876ee6/2001-2002/c8/Porto-Stats-Champions-League",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": "B+",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "기존 JSON의 2001-02 UCL 기록: 12경기 / 12선발 / 1037분 / 1골 / 3도움(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-diego-tristan",
@@ -7437,9 +7971,9 @@
       "minutes": null,
       "goals": 6,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 5,
+      "tier": "A",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -7447,12 +7981,19 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 기존 JSON의 2001-02 UCL 기록: 6골(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/"
-      ]
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
+        "https://www.uefa.com/newsfiles/24981.pdf",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": "A0",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 기존 JSON의 2001-02 UCL 기록: 6골(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-roy-makaay",
@@ -7479,12 +8020,18 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "evidence_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/"
-      ]
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": null,
+      "tierReview": "evidence_pending_no_sufficient_individual_season_data",
+      "tierReason": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
     },
     {
       "id": "ucl-2001-02-juan-carlos-valeron",
@@ -7501,9 +8048,9 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 4,
+      "tier": "A",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -7511,12 +8058,19 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/"
-      ]
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
+        "https://www.uefa.com/newsfiles/24981.pdf",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": "A0",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-noureddine-naybet",
@@ -7543,12 +8097,18 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "evidence_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/"
-      ]
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": null,
+      "tierReview": "evidence_pending_no_sufficient_individual_season_data",
+      "tierReason": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
     },
     {
       "id": "ucl-2001-02-walter-pandiani",
@@ -7575,12 +8135,18 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "evidence_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/"
-      ]
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": null,
+      "tierReview": "evidence_pending_no_sufficient_individual_season_data",
+      "tierReason": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
     },
     {
       "id": "ucl-2001-02-djalminha",
@@ -7607,12 +8173,18 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "evidence_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/"
-      ]
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": null,
+      "tierReview": "evidence_pending_no_sufficient_individual_season_data",
+      "tierReason": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
     },
     {
       "id": "ucl-2001-02-thierry-henry",
@@ -7629,7 +8201,7 @@
       "minutes": null,
       "goals": 7,
       "assists": null,
-      "rank": null,
+      "rank": 3,
       "tier": "A+",
       "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
@@ -7639,15 +8211,21 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "qualitative_evidence_partial",
-        "rationale": "2001-02 UCL 7골과 아스널 리그 득점왕 시즌, 1999-00·2000-01부터 축적한 포워드 성장을 함께 반영. 팀 최종 2차 조별리그 탈락 자체는 감점하지 않음."
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "rationale": "UEFA 2001-02 득점 7골, 2002 공격수상 후보. UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 기존 JSON의 2001-02 UCL 기록: 7골(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님.",
+        "priority": "2001-02 > 2000-01 > 1999-00"
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
         "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
-        "https://www.arsenal.com/historic/players/thierry-henry"
+        "https://www.arsenal.com/historic/players/thierry-henry",
+        "https://www.uefa.com/newsfiles/24981.pdf",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
       ],
-      "tierRationale": "2001-02 UCL 7골과 아스널 리그 득점왕 시즌, 1999-00·2000-01부터 축적한 포워드 성장을 함께 반영. 팀 최종 2차 조별리그 탈락 자체는 감점하지 않음."
+      "tierRationale": "2001-02 UCL 7골과 아스널 리그 득점왕 시즌, 1999-00·2000-01부터 축적한 포워드 성장을 함께 반영. 팀 최종 2차 조별리그 탈락 자체는 감점하지 않음.",
+      "displayTier": "A+",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "UEFA 2001-02 득점 7골, 2002 공격수상 후보. UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 기존 JSON의 2001-02 UCL 기록: 7골(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-robert-pires",
@@ -7664,9 +8242,9 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 1,
+      "tier": "A+",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -7674,12 +8252,19 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "UEFA 2002 최우수 MF 후보 및 올스타 후보. 경기 가용성(시즌 후반 부상) 조정 반영. UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/"
-      ]
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
+        "https://www.uefa.com/newsfiles/24981.pdf",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": "A+",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "UEFA 2002 최우수 MF 후보 및 올스타 후보. 경기 가용성(시즌 후반 부상) 조정 반영. UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-patrick-vieira",
@@ -7696,9 +8281,9 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 3,
+      "tier": "A+",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -7706,12 +8291,19 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/"
-      ]
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
+        "https://www.uefa.com/newsfiles/24981.pdf",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": "A+",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-fredrik-ljungberg",
@@ -7738,12 +8330,18 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "evidence_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/"
-      ]
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": null,
+      "tierReview": "evidence_pending_no_sufficient_individual_season_data",
+      "tierReason": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
     },
     {
       "id": "ucl-2001-02-dennis-bergkamp",
@@ -7770,12 +8368,18 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "evidence_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/"
-      ]
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": null,
+      "tierReview": "evidence_pending_no_sufficient_individual_season_data",
+      "tierReason": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
     },
     {
       "id": "ucl-2001-02-sylvain-wiltord",
@@ -7802,12 +8406,18 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "evidence_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/"
-      ]
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": null,
+      "tierReview": "evidence_pending_no_sufficient_individual_season_data",
+      "tierReason": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
     },
     {
       "id": "ucl-2001-02-david-trezeguet",
@@ -7824,7 +8434,7 @@
       "minutes": null,
       "goals": 8,
       "assists": null,
-      "rank": null,
+      "rank": 4,
       "tier": "A+",
       "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
@@ -7834,15 +8444,21 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "qualitative_evidence_partial",
-        "rationale": "2001-02 UCL 8골로 득점 2위, 같은 시즌 세리에 A 공동 득점왕. 1999-00 AS Monaco, 2000-01 Juventus 시기와 비교해 2001-02의 최고점과 지속성 평가."
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "rationale": "UEFA 2001-02 득점 8골 및 2002 최우수 공격수 후보. UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 기존 JSON의 2001-02 UCL 기록: 8골(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님.",
+        "priority": "2001-02 > 2000-01 > 1999-00"
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
         "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
-        "https://www.juventus.com/en/club/history/legends/david-trezeguet"
+        "https://www.juventus.com/en/club/history/legends/david-trezeguet",
+        "https://www.uefa.com/newsfiles/24981.pdf",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
       ],
-      "tierRationale": "2001-02 UCL 8골로 득점 2위, 같은 시즌 세리에 A 공동 득점왕. 1999-00 AS Monaco, 2000-01 Juventus 시기와 비교해 2001-02의 최고점과 지속성 평가."
+      "tierRationale": "2001-02 UCL 8골로 득점 2위, 같은 시즌 세리에 A 공동 득점왕. 1999-00 AS Monaco, 2000-01 Juventus 시기와 비교해 2001-02의 최고점과 지속성 평가.",
+      "displayTier": "A+",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "UEFA 2001-02 득점 8골 및 2002 최우수 공격수 후보. UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 기존 JSON의 2001-02 UCL 기록: 8골(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-alessandro-del-piero",
@@ -7859,9 +8475,9 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 11,
+      "tier": "A-",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -7869,12 +8485,19 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/"
-      ]
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
+        "https://www.uefa.com/newsfiles/24981.pdf",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": "A-",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-igor-tudor",
@@ -7901,12 +8524,18 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "evidence_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/"
-      ]
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": null,
+      "tierReview": "evidence_pending_no_sufficient_individual_season_data",
+      "tierReason": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
     },
     {
       "id": "ucl-2001-02-marcelo-zalayeta",
@@ -7933,12 +8562,18 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "evidence_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200102.html",
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/"
-      ]
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": null,
+      "tierReview": "evidence_pending_no_sufficient_individual_season_data",
+      "tierReason": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
     },
     {
       "id": "ucl-2001-02-ze-roberto",
@@ -7955,9 +8590,9 @@
       "minutes": null,
       "goals": null,
       "assists": 4,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 4,
+      "tier": "A",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -7965,11 +8600,18 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 기존 JSON의 2001-02 UCL 기록: 4도움(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/"
-      ]
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
+        "https://www.uefa.com/newsfiles/24981.pdf",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": "A0",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 기존 JSON의 2001-02 UCL 기록: 4도움(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-erwin-sanchez",
@@ -7986,9 +8628,9 @@
       "minutes": 949,
       "goals": 3,
       "assists": 1,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 6,
+      "tier": "B+",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -7996,12 +8638,18 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "기존 JSON의 2001-02 UCL 기록: 12경기 / 11선발 / 949분 / 3골 / 1도움(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
         "https://www.uefa.com/uefachampionsleague/news/025a-0eab0d42c6da-50acf9ea01b3-1000--sanchez-strike-sends-boavista-top/",
-        "https://fbref.com/en/squads/37b7e9e2/2001-2002/c8/Boavista-Stats-Champions-League"
-      ]
+        "https://fbref.com/en/squads/37b7e9e2/2001-2002/c8/Boavista-Stats-Champions-League",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": "B+",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "기존 JSON의 2001-02 UCL 기록: 12경기 / 11선발 / 949분 / 3골 / 1도움(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-ricardo-soares",
@@ -8018,9 +8666,9 @@
       "minutes": 1080,
       "goals": 0,
       "assists": 0,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 14,
+      "tier": "B",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -8028,13 +8676,19 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "기존 JSON의 2001-02 UCL 기록: 12경기 / 12선발 / 1080분 / 0골 / 0도움(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
         "https://www.uefa.com/uefachampionsleague/news/025a-0eab0d0eb876-ae2df5ccef02-1000--united-show-their-class/",
         "https://www.uefa.com/newsfiles/461350.pdf",
-        "https://fbref.com/en/squads/37b7e9e2/2001-2002/c8/Boavista-Stats-Champions-League"
-      ]
+        "https://fbref.com/en/squads/37b7e9e2/2001-2002/c8/Boavista-Stats-Champions-League",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": "B0",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "기존 JSON의 2001-02 UCL 기록: 12경기 / 12선발 / 1080분 / 0골 / 0도움(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-pedro-emanuel",
@@ -8051,9 +8705,9 @@
       "minutes": 980,
       "goals": 0,
       "assists": 0,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 9,
+      "tier": "B",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -8061,12 +8715,18 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "기존 JSON의 2001-02 UCL 기록: 11경기 / 11선발 / 980분 / 0골 / 0도움(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
         "https://www.uefa.com/uefachampionsleague/history/clubs/52819/",
-        "https://fbref.com/en/squads/37b7e9e2/2001-2002/c8/Boavista-Stats-Champions-League"
-      ]
+        "https://fbref.com/en/squads/37b7e9e2/2001-2002/c8/Boavista-Stats-Champions-League",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": "B0",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "기존 JSON의 2001-02 UCL 기록: 11경기 / 11선발 / 980분 / 0골 / 0도움(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-petit",
@@ -8083,9 +8743,9 @@
       "minutes": 763,
       "goals": 0,
       "assists": 1,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 6,
+      "tier": "B",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -8093,12 +8753,18 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "기존 JSON의 2001-02 UCL 기록: 9경기 / 8선발 / 763분 / 0골 / 1도움(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
         "https://www.uefa.com/uefachampionsleague/news/025a-0eab09da3763-a9b37d821dc5-1000--bayern-edge-out-boavista/",
-        "https://fbref.com/en/squads/37b7e9e2/2001-2002/c8/Boavista-Stats-Champions-League"
-      ]
+        "https://fbref.com/en/squads/37b7e9e2/2001-2002/c8/Boavista-Stats-Champions-League",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": "B0",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "기존 JSON의 2001-02 UCL 기록: 9경기 / 8선발 / 763분 / 0골 / 1도움(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-mickael-landreau",
@@ -8115,9 +8781,9 @@
       "minutes": 990,
       "goals": 0,
       "assists": 0,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 8,
+      "tier": "B+",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -8125,13 +8791,19 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "기존 JSON의 2001-02 UCL 기록: 11경기 / 11선발 / 990분 / 0골 / 0도움(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
         "https://www.uefa.com/uefachampionsleague/news/025a-0eab0c1fcbac-1af1d4379734-1000--nantes-seek-stability/",
         "https://www.uefa.com/uefachampionsleague/news/0180-0e6a891a3e93-bf2b35bcfd10-1000--uefa-com-team-of-2001-goalkeepers/",
-        "https://fbref.com/en/squads/d7a486cd/2001-2002/c8/Nantes-Stats-Liga-de-Campeones"
-      ]
+        "https://fbref.com/en/squads/d7a486cd/2001-2002/c8/Nantes-Stats-Liga-de-Campeones",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": "B+",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "기존 JSON의 2001-02 UCL 기록: 11경기 / 11선발 / 990분 / 0골 / 0도움(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-fabien-barthez",
@@ -8148,9 +8820,9 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 4,
+      "tier": "A-",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -8158,11 +8830,18 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
-        "https://fbref.com/en/squads/19538871/2001-2002/c8/Manchester-United-Stats-Champions-League"
-      ]
+        "https://fbref.com/en/squads/19538871/2001-2002/c8/Manchester-United-Stats-Champions-League",
+        "https://www.uefa.com/newsfiles/24981.pdf",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": "A-",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-roberto-bonano",
@@ -8179,9 +8858,9 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 13,
+      "tier": "B",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -8189,12 +8868,18 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
         "https://datencenter.dfb.de/competitions/champions-league/seasons/2001-2002/teams/fc-barcelona?datacenter_name=datencenter",
-        "https://datencenter.dfb.de/competitions/champions-league/seasons/2001-2002/teams/fc-barcelona?datacenter_name=datencenter"
-      ]
+        "https://www.uefa.com/newsfiles/24981.pdf",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": "B0",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-jerzy-dudek",
@@ -8211,9 +8896,9 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 2,
+      "tier": "A",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -8221,11 +8906,18 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
-        "https://www.rsssf.org/miscellaneous/uefa-awards.html"
-      ]
+        "https://www.rsssf.org/miscellaneous/uefa-awards.html",
+        "https://www.uefa.com/newsfiles/24981.pdf",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": "A0",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-francesco-antonioli",
@@ -8252,12 +8944,17 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "evidence_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
       },
       "sources": [
         "https://datencenter.dfb.de/en/competitions/champions-league/seasons/2001-2002/teams/as-roma?datacenter_name=data-center",
-        "https://datencenter.dfb.de/en/competitions/champions-league/seasons/2001-2002/teams/as-roma?datacenter_name=data-center"
-      ]
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": null,
+      "tierReview": "evidence_pending_no_sufficient_individual_season_data",
+      "tierReason": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
     },
     {
       "id": "ucl-2001-02-faryd-mondragon",
@@ -8274,9 +8971,9 @@
       "minutes": 1080,
       "goals": 0,
       "assists": 0,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 9,
+      "tier": "B+",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -8284,12 +8981,18 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "기존 JSON의 2001-02 UCL 기록: 12경기 / 12선발 / 1080분 / 0골 / 0도움(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
         "https://fbref.com/en/comps/8/2001-2002/2001-2002-Champions-League-Stats",
-        "https://fbref.com/en/squads/ecd11ca2/2001-2002/c8/Galatasaray-Stats-Champions-League"
-      ]
+        "https://fbref.com/en/squads/ecd11ca2/2001-2002/c8/Galatasaray-Stats-Champions-League",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": "B+",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "기존 JSON의 2001-02 UCL 기록: 12경기 / 12선발 / 1080분 / 0골 / 0도움(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-antonis-nikopolidis",
@@ -8306,9 +9009,9 @@
       "minutes": 1260,
       "goals": null,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 6,
+      "tier": "B+",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -8316,11 +9019,18 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 기존 JSON의 2001-02 UCL 기록: 14경기 / 14선발 / 1260분(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
-        "https://fbref.com/en/squads/f3a5726c/2001-2002/c8/Panathinaikos-Stats-Champions-League"
-      ]
+        "https://fbref.com/en/squads/f3a5726c/2001-2002/c8/Panathinaikos-Stats-Champions-League",
+        "https://www.uefa.com/newsfiles/24981.pdf",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": "B+",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 기존 JSON의 2001-02 UCL 기록: 14경기 / 14선발 / 1260분(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-petr-cech",
@@ -8337,9 +9047,9 @@
       "minutes": 1080,
       "goals": null,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 7,
+      "tier": "B+",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -8347,12 +9057,18 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "기존 JSON의 2001-02 UCL 기록: 12경기 / 12선발 / 1080분(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
         "https://www.uefa.com/uefachampionsleague/news/025a-0eab088aaf5e-d0285e499040-1000--sparta-bow-out-in-madrid/",
-        "https://fbref.com/en/players/71672fa0/matchlogs/2001-2002/keeper/Petr-Cech-Match-Logs"
-      ]
+        "https://fbref.com/en/players/71672fa0/matchlogs/2001-2002/keeper/Petr-Cech-Match-Logs",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": "B+",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "기존 JSON의 2001-02 UCL 기록: 12경기 / 12선발 / 1080분(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-vitor-baia",
@@ -8379,11 +9095,17 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "evidence_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
       },
       "sources": [
-        "https://fbref.com/en/players/a99fbdaa/matchlogs/2001-2002/c8/keeper/Vitor-Baia-Match-Logs"
-      ]
+        "https://fbref.com/en/players/a99fbdaa/matchlogs/2001-2002/c8/keeper/Vitor-Baia-Match-Logs",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": null,
+      "tierReview": "evidence_pending_no_sufficient_individual_season_data",
+      "tierReason": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
     },
     {
       "id": "ucl-2001-02-jose-molina",
@@ -8400,9 +9122,9 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 12,
+      "tier": "B+",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -8410,11 +9132,18 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
-        "https://fbref.com/en/comps/8/2001-2002/2001-2002-Champions-League-Stats"
-      ]
+        "https://fbref.com/en/comps/8/2001-2002/2001-2002-Champions-League-Stats",
+        "https://www.uefa.com/newsfiles/24981.pdf",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": "B+",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-david-seaman",
@@ -8441,11 +9170,17 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "evidence_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
       },
       "sources": [
-        "https://fbref.com/en/comps/8/2001-2002/2001-2002-Champions-League-Stats"
-      ]
+        "https://fbref.com/en/comps/8/2001-2002/2001-2002-Champions-League-Stats",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": null,
+      "tierReview": "evidence_pending_no_sufficient_individual_season_data",
+      "tierReason": "현재 등록 자료만으로 2001-02 UCL 시즌 전체 출전량·주 역할·개인 영향력을 상대평가할 수 없어 등급과 순위를 보류."
     },
     {
       "id": "ucl-2001-02-gianluigi-buffon",
@@ -8462,9 +9197,9 @@
       "minutes": null,
       "goals": null,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 5,
+      "tier": "A-",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -8472,11 +9207,18 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
-        "https://www.rsssf.org/miscellaneous/uefa-awards.html"
-      ]
+        "https://www.rsssf.org/miscellaneous/uefa-awards.html",
+        "https://www.uefa.com/newsfiles/24981.pdf",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": "A-",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "UEFA 기술연구그룹의 2001-02 대회 올스타 후보 63명에 포함됨(선정·수상과 구별). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-duda",
@@ -8493,9 +9235,9 @@
       "minutes": 910,
       "goals": 1,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 6,
+      "tier": "B",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -8503,11 +9245,17 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "기존 JSON의 2001-02 UCL 기록: 12경기 / 10선발 / 910분 / 1골(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
-        "https://fbref.com/en/squads/37b7e9e2/2001-2002/c8/Boavista-Stats-Champions-League"
-      ]
+        "https://fbref.com/en/squads/37b7e9e2/2001-2002/c8/Boavista-Stats-Champions-League",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": "B0",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "기존 JSON의 2001-02 UCL 기록: 12경기 / 10선발 / 910분 / 1골(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-erivan",
@@ -8524,9 +9272,9 @@
       "minutes": 900,
       "goals": 0,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 11,
+      "tier": "B",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -8534,11 +9282,17 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "기존 JSON의 2001-02 UCL 기록: 10경기 / 10선발 / 900분 / 0골(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
-        "https://fbref.com/en/squads/37b7e9e2/2001-2002/c8/Boavista-Stats-Champions-League"
-      ]
+        "https://fbref.com/en/squads/37b7e9e2/2001-2002/c8/Boavista-Stats-Champions-League",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": "B0",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "기존 JSON의 2001-02 UCL 기록: 10경기 / 10선발 / 900분 / 0골(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-nuno-frechaut",
@@ -8555,9 +9309,9 @@
       "minutes": 900,
       "goals": 0,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 3,
+      "tier": "B",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -8565,11 +9319,17 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "기존 JSON의 2001-02 UCL 기록: 10경기 / 10선발 / 900분 / 0골(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
-        "https://fbref.com/en/squads/37b7e9e2/2001-2002/c8/Boavista-Stats-Champions-League"
-      ]
+        "https://fbref.com/en/squads/37b7e9e2/2001-2002/c8/Boavista-Stats-Champions-League",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": "B0",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "기존 JSON의 2001-02 UCL 기록: 10경기 / 10선발 / 900분 / 0골(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-paulo-turra",
@@ -8586,9 +9346,9 @@
       "minutes": 900,
       "goals": 0,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 12,
+      "tier": "B",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -8596,11 +9356,17 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "기존 JSON의 2001-02 UCL 기록: 10경기 / 10선발 / 900분 / 0골(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
-        "https://fbref.com/en/squads/37b7e9e2/2001-2002/c8/Boavista-Stats-Champions-League"
-      ]
+        "https://fbref.com/en/squads/37b7e9e2/2001-2002/c8/Boavista-Stats-Champions-League",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": "B0",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "기존 JSON의 2001-02 UCL 기록: 10경기 / 10선발 / 900분 / 0골(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-mario-loja",
@@ -8617,9 +9383,9 @@
       "minutes": 450,
       "goals": 0,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 6,
+      "tier": "B-",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -8627,11 +9393,17 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "기존 JSON의 2001-02 UCL 기록: 5경기 / 5선발 / 450분 / 0골(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
-        "https://fbref.com/en/squads/37b7e9e2/2001-2002/c8/Boavista-Stats-Champions-League"
-      ]
+        "https://fbref.com/en/squads/37b7e9e2/2001-2002/c8/Boavista-Stats-Champions-League",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": "B-",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "기존 JSON의 2001-02 UCL 기록: 5경기 / 5선발 / 450분 / 0골(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-jose-bosingwa",
@@ -8648,9 +9420,9 @@
       "minutes": 346,
       "goals": 0,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 5,
+      "tier": "C+",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -8658,11 +9430,17 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "기존 JSON의 2001-02 UCL 기록: 8경기 / 4선발 / 346분 / 0골(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
-        "https://fbref.com/en/squads/37b7e9e2/2001-2002/c8/Boavista-Stats-Champions-League"
-      ]
+        "https://fbref.com/en/squads/37b7e9e2/2001-2002/c8/Boavista-Stats-Champions-League",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": "C+",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "기존 JSON의 2001-02 UCL 기록: 8경기 / 4선발 / 346분 / 0골(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-nestor-fabbri",
@@ -8679,9 +9457,9 @@
       "minutes": 900,
       "goals": 1,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 8,
+      "tier": "B+",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -8689,11 +9467,17 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "기존 JSON의 2001-02 UCL 기록: 10경기 / 10선발 / 900분 / 1골(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
-        "https://fbref.com/en/squads/d7a486cd/2001-2002/c8/Nantes-Stats-Liga-de-Campeones"
-      ]
+        "https://fbref.com/en/squads/d7a486cd/2001-2002/c8/Nantes-Stats-Liga-de-Campeones",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": "B+",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "기존 JSON의 2001-02 UCL 기록: 10경기 / 10선발 / 900분 / 1골(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-nicolas-gillet",
@@ -8710,9 +9494,9 @@
       "minutes": 720,
       "goals": 0,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 13,
+      "tier": "B",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -8720,11 +9504,17 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "기존 JSON의 2001-02 UCL 기록: 8경기 / 8선발 / 720분 / 0골(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
-        "https://fbref.com/en/squads/d7a486cd/2001-2002/c8/Nantes-Stats-Liga-de-Campeones"
-      ]
+        "https://fbref.com/en/squads/d7a486cd/2001-2002/c8/Nantes-Stats-Liga-de-Campeones",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": "B0",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "기존 JSON의 2001-02 UCL 기록: 8경기 / 8선발 / 720분 / 0골(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-stephane-ziani",
@@ -8741,9 +9531,9 @@
       "minutes": 705,
       "goals": 1,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 7,
+      "tier": "B+",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -8751,11 +9541,17 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "기존 JSON의 2001-02 UCL 기록: 9경기 / 8선발 / 705분 / 1골(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
-        "https://fbref.com/en/squads/d7a486cd/2001-2002/c8/Nantes-Stats-Liga-de-Campeones"
-      ]
+        "https://fbref.com/en/squads/d7a486cd/2001-2002/c8/Nantes-Stats-Liga-de-Campeones",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": "B+",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "기존 JSON의 2001-02 UCL 기록: 9경기 / 8선발 / 705분 / 1골(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-jorge-andrade",
@@ -8772,9 +9568,9 @@
       "minutes": 1080,
       "goals": 0,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 7,
+      "tier": "B+",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -8782,11 +9578,17 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "기존 JSON의 2001-02 UCL 기록: 12경기 / 12선발 / 1080분 / 0골(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
-        "https://fbref.com/en/squads/5e876ee6/2001-2002/c8/Porto-Stats-Champions-League"
-      ]
+        "https://fbref.com/en/squads/5e876ee6/2001-2002/c8/Porto-Stats-Champions-League",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": "B+",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "기존 JSON의 2001-02 UCL 기록: 12경기 / 12선발 / 1080분 / 0골(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-mario-silva",
@@ -8803,9 +9605,9 @@
       "minutes": 938,
       "goals": 1,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 5,
+      "tier": "B",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -8813,11 +9615,17 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "기존 JSON의 2001-02 UCL 기록: 11경기 / 11선발 / 938분 / 1골(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
-        "https://fbref.com/en/squads/5e876ee6/2001-2002/c8/Porto-Stats-Champions-League"
-      ]
+        "https://fbref.com/en/squads/5e876ee6/2001-2002/c8/Porto-Stats-Champions-League",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": "B0",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "기존 JSON의 2001-02 UCL 기록: 11경기 / 11선발 / 938분 / 1골(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-emre-asik",
@@ -8834,9 +9642,9 @@
       "minutes": 990,
       "goals": 0,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 10,
+      "tier": "B",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -8844,11 +9652,17 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "기존 JSON의 2001-02 UCL 기록: 11경기 / 11선발 / 990분 / 0골(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
-        "https://fbref.com/en/squads/ecd11ca2/2001-2002/c8/Galatasaray-Stats-Champions-League"
-      ]
+        "https://fbref.com/en/squads/ecd11ca2/2001-2002/c8/Galatasaray-Stats-Champions-League",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": "B0",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "기존 JSON의 2001-02 UCL 기록: 11경기 / 11선발 / 990분 / 0골(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     },
     {
       "id": "ucl-2001-02-ergun-penbe",
@@ -8865,9 +9679,9 @@
       "minutes": 990,
       "goals": 0,
       "assists": null,
-      "rank": null,
-      "tier": null,
-      "review": "evidence_pending",
+      "rank": 4,
+      "tier": "B+",
+      "review": "draft_unapproved",
       "positionReview": "dominant_role_pending",
       "threeSeasonAssessment": {
         "seasons": [
@@ -8875,11 +9689,17 @@
           "2000-01",
           "2001-02"
         ],
-        "review": "evidence_pending"
+        "review": "qualitative_evidence_partial_prior_seasons_pending",
+        "priority": "2001-02 > 2000-01 > 1999-00",
+        "rationale": "기존 JSON의 2001-02 UCL 기록: 11경기 / 11선발 / 990분 / 0골(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
       },
       "sources": [
-        "https://fbref.com/en/squads/ecd11ca2/2001-2002/c8/Galatasaray-Stats-Champions-League"
-      ]
+        "https://fbref.com/en/squads/ecd11ca2/2001-2002/c8/Galatasaray-Stats-Champions-League",
+        "https://www.uefa.com/news-media/news/0250-0c50f41f3c36-73a920d50345-1000--uefa-club-football-awards/"
+      ],
+      "displayTier": "B+",
+      "tierReview": "provisional_source_led_independent_three_season_verification_pending",
+      "tierReason": "기존 JSON의 2001-02 UCL 기록: 11경기 / 11선발 / 990분 / 0골(외부 개별 경기 로그 재대조 필요). 티어는 기존 후보군 내 정성적 비교 초안. 1999-00·2000-01 개별 경기 및 UCL 역할 검증이 미완료이므로 확정 평가 아님."
     }
   ],
   "bestXi": [
@@ -8951,13 +9771,12 @@
     },
     {
       "position": "CM",
-      "playerId": "ucl-2001-02-stefan-effenberg",
+      "playerId": "ucl-2001-02-juan-sebastian-veron",
       "status": "proposed_unapproved",
-      "reason": "바이에른 중원 지휘, 지난 시즌 공식 MVP 이후의 기량 지속성. 3시즌 전체 자료 및 정밀 비교 검증은 미완료 상태이므로 Best XI 잠정 선정.",
+      "reason": "UEFA 2001-02 최다 도움 공동 1위(5개)의 베론을 2001-02 개인 기여 우선 원칙으로 에펜베르크보다 앞세운 잠정 교체. 직전 2시즌의 세부 자료 검증이 남았으므로 Best XI는 DRAFT.",
       "sources": [
-        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/",
-        "https://www.uefa.com/uefachampionsleague/news/0180-0e6a891a3e93-bf2b35bcfd10-1000--uefa-com-team-of-2001-goalkeepers/",
-        "https://www.rsssf.org/miscellaneous/uefa-awards.html"
+        "https://www.uefa.com/uefachampionsleague/history/seasons/2001/statistics/",
+        "https://www.uefa.com/newsfiles/24981.pdf"
       ]
     },
     {
@@ -9058,6 +9877,17 @@
       "sourceLed": true,
       "threeSeasonIndependentAudit": "pending",
       "allEligibleClubRostersComplete": false
+    },
+    "seasonReview20261119": {
+      "status": "draft_unapproved_partial_evidence",
+      "candidateCount": 131,
+      "provisionalTiers": 87,
+      "provisionalRanks": 87,
+      "evidencePending": 44,
+      "UEFAAllStarMatched": 49,
+      "source": "UEFA 2002 technical all-star short-list, official 2001-02 player statistics, existing legacy player records",
+      "unverified": "44 players remain evidence-pending; all assigned tiers and ranks remain provisional (not independent 3-season validation)",
+      "date": "2026-11-19"
     }
   }
 }
