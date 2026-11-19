@@ -15,7 +15,7 @@
       "notes": "Indicative contemporary two-forward setup; squad representation, roles and full season historical review pending",
       "rankReconciliation": "provisional_UCL_current_season_evidence_rank_aligned_2026_11_14",
       "updatedAt": "2026-11-19",
-      "caveat": "Full 2005-06 248-row DRAFT; 3 wrong-position goalkeeper duplicate records retained as D-error marker only pending cleanup. Actual historical 3-season validation pending."
+      "caveat": "Complete DRAFT for all 248 existing qualified candidate records and 11 Best XI; 3 previously corrupted Korean-name/DOB fields repaired using original ID/name and external records. Per-player 3-season historical validation still pending."
     },
     "verification": {
       "totalClubs": 32,
@@ -47,10 +47,9 @@
         "A": 39,
         "A-": 39,
         "B+": 88,
-        "B": 33,
-        "B-": 11,
-        "C+": 1,
-        "D": 3
+        "B": 35,
+        "B-": 12,
+        "C+": 1
       },
       "verifiedAppearanceSpecificStartsCount": 18,
       "rankedProvisionalCandidates": 248,
@@ -58,16 +57,17 @@
       "tierProvisionalCount": 248,
       "playerRankProvisionalCount": 248,
       "playerEvidencePendingCount": 0,
-      "invalidDuplicatePositionRecords": 3,
-      "distinctCandidateRecordsAfterIdentityFlag": 245,
+      "invalidDuplicatePositionRecords": 0,
+      "distinctCandidateRecordsAfterIdentityFlag": 248,
       "tierDraftComplete": true,
       "rankDraftComplete": true,
       "initialDraftComplete": true,
       "independentThreeSeasonReviewComplete": false,
       "worldClassProvisional": 34,
-      "competitionTopClassProvisional": 112
+      "competitionTopClassProvisional": 112,
+      "repairedPlayerIdentityNameDOB": 3
     },
-    "playerTierStatus": "complete_248_rows_with_3_invalid_identity_duplicates_quarantined",
+    "playerTierStatus": "complete_248_player_draft_all_identity_anomalies_repaired",
     "formation": "4-4-2",
     "nameKoRepair": {
       "date": "2026-11-14",
@@ -13460,8 +13460,8 @@
       "id": "ucl-2005-06-inter-alvarorecoba",
       "name": "Álvaro Recoba",
       "nameOriginal": "Álvaro Recoba",
-      "nameKo": "프란체스코 톨도",
-      "born": "1971-12-02",
+      "nameKo": "알바로 레코바",
+      "born": "1976-03-17",
       "club": "inter",
       "clubNameOriginal": "FC Internazionale Milano",
       "position": "LW",
@@ -13472,9 +13472,9 @@
       "goals": null,
       "assists": null,
       "rank": 19,
-      "tier": "D",
+      "tier": "B",
       "review": "draft_unapproved",
-      "positionReview": "INVALID_DUPLICATE_WRONG_POSITION",
+      "positionReview": "original_position_retained_dominant_role_pending",
       "candidateSelectionEvidence": "2005-06 UCL provisional nomination via historical club squads and knockout lineups; individual qualifying group/knockout appearance not yet confirmed for every candidate",
       "threeSeasonAssessment": {
         "seasons": [
@@ -13482,20 +13482,21 @@
           "2004-05",
           "2005-06"
         ],
-        "review": "invalid_identity_duplicate_pending_cleanup",
+        "review": "first_pass_draft_identity_repaired_individual_three_season_review_pending",
         "priority": "2005-06 > 2004-05 > 2003-04",
-        "rationale": "DATA ERROR / NOT A PERFORMANCE TIER. 프란체스코 톨도가 실제 GK임에도 동일 시즌 동일 구단에서 LW 선수로 중복 등록됐다. 원본 ID 삭제 없이 보존하고 D는 격리 마커로만 사용한다. 잘못된 후보 행으로서 정밀 검증 후 삭제 대상."
+        "rationale": "원본 ID 및 원어명(Álvaro Recoba)이 기존 한글 이름·생년월일과 충돌한 오류를 수정. 2005-06 인테르 UCL 6경기 3선발 247분, 도움 1개를 기록한 교체·부분 선발 측면 공격 자원. 2003-04·2004-05 기여를 보조 반영. 2005-06 > 2004-05 > 2003-04 가중치에 따른 수정 가능한 전체 DRAFT."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200506det.html",
-        "https://github.com/wjdduddlf112/footballarch/blob/main/data/seriea-2005-06.json"
+        "https://github.com/wjdduddlf112/footballarch/blob/main/data/seriea-2005-06.json",
+        "https://fbref.com/en/squads/d609edc0/2005-2006/c8/Internazionale-Stats-Champions-League"
       ],
       "birthEvidenceStatus": "reused_ucl_2004_05_DRAFT_not_independently_double_checked",
-      "displayTier": "D",
-      "tierReview": "invalid_duplicate_same_human_wrong_position",
-      "evaluationConfidence": "invalid_duplicate_position_not_performance_evaluation",
-      "tierReason": "DATA ERROR / NOT A PERFORMANCE TIER. 프란체스코 톨도가 실제 GK임에도 동일 시즌 동일 구단에서 LW 선수로 중복 등록됐다. 원본 ID 삭제 없이 보존하고 D는 격리 마커로만 사용한다. 잘못된 후보 행으로서 정밀 검증 후 삭제 대상.",
-      "rosterReview": "invalid_duplicate_same_person_wrong_position_pending_cleanup"
+      "displayTier": "B0",
+      "tierReview": "identity_and_dob_repaired_from_original_name_and_external_match",
+      "evaluationConfidence": "historical_identity_verified_qualitative_tier_draft",
+      "tierReason": "원본 ID 및 원어명(Álvaro Recoba)이 기존 한글 이름·생년월일과 충돌한 오류를 수정. 2005-06 인테르 UCL 6경기 3선발 247분, 도움 1개를 기록한 교체·부분 선발 측면 공격 자원. 2003-04·2004-05 기여를 보조 반영. 2005-06 > 2004-05 > 2003-04 가중치에 따른 수정 가능한 전체 DRAFT.",
+      "rosterReview": "verified_original_identity_repaired_wrong_korean_name_dob"
     },
     {
       "id": "ucl-2005-06-inter-obafemimartins",
@@ -14110,8 +14111,8 @@
       "id": "ucl-2005-06-bayern-mehmetscholl",
       "name": "Mehmet Scholl",
       "nameOriginal": "Mehmet Scholl",
-      "nameKo": "올리버 칸",
-      "born": "1969-06-15",
+      "nameKo": "메흐메트 숄",
+      "born": "1970-10-16",
       "club": "bayern",
       "clubNameOriginal": "FC Bayern München",
       "position": "LW",
@@ -14122,9 +14123,9 @@
       "goals": null,
       "assists": null,
       "rank": 20,
-      "tier": "D",
+      "tier": "B",
       "review": "draft_unapproved",
-      "positionReview": "INVALID_DUPLICATE_WRONG_POSITION",
+      "positionReview": "original_position_retained_dominant_role_pending",
       "candidateSelectionEvidence": "2005-06 UCL provisional nomination via historical club squads and knockout lineups; individual qualifying group/knockout appearance not yet confirmed for every candidate",
       "threeSeasonAssessment": {
         "seasons": [
@@ -14132,20 +14133,21 @@
           "2004-05",
           "2005-06"
         ],
-        "review": "invalid_identity_duplicate_pending_cleanup",
+        "review": "first_pass_draft_identity_repaired_individual_three_season_review_pending",
         "priority": "2005-06 > 2004-05 > 2003-04",
-        "rationale": "DATA ERROR / NOT A PERFORMANCE TIER. 올리버 칸가 실제 GK임에도 동일 시즌 동일 구단에서 LW 선수로 중복 등록됐다. 원본 ID 삭제 없이 보존하고 D는 격리 마커로만 사용한다. 잘못된 후보 행으로서 정밀 검증 후 삭제 대상."
+        "rationale": "원본 ID 및 원어명(Mehmet Scholl)이 기존 한글 이름·생년월일과 충돌한 오류를 수정. 바이에른 공격형/왼쪽 미드필드의 베테랑 기술 자원으로 2005-06 UCL 출전은 주전이 아닌 로테이션. 직전 두 시즌의 경험을 보조 반영. 2005-06 > 2004-05 > 2003-04 가중치에 따른 수정 가능한 전체 DRAFT."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200506det.html",
-        "https://github.com/wjdduddlf112/footballarch/blob/main/data/bundesliga-2005-06.json"
+        "https://github.com/wjdduddlf112/footballarch/blob/main/data/bundesliga-2005-06.json",
+        "https://datencenter.dfb.de/en/champions-league/2005-2006/team/bayern-munich"
       ],
       "birthEvidenceStatus": "reused_ucl_2004_05_DRAFT_not_independently_double_checked",
-      "displayTier": "D",
-      "tierReview": "invalid_duplicate_same_human_wrong_position",
-      "evaluationConfidence": "invalid_duplicate_position_not_performance_evaluation",
-      "tierReason": "DATA ERROR / NOT A PERFORMANCE TIER. 올리버 칸가 실제 GK임에도 동일 시즌 동일 구단에서 LW 선수로 중복 등록됐다. 원본 ID 삭제 없이 보존하고 D는 격리 마커로만 사용한다. 잘못된 후보 행으로서 정밀 검증 후 삭제 대상.",
-      "rosterReview": "invalid_duplicate_same_person_wrong_position_pending_cleanup"
+      "displayTier": "B0",
+      "tierReview": "identity_and_dob_repaired_from_original_name_and_external_match",
+      "evaluationConfidence": "historical_identity_verified_qualitative_tier_draft",
+      "tierReason": "원본 ID 및 원어명(Mehmet Scholl)이 기존 한글 이름·생년월일과 충돌한 오류를 수정. 바이에른 공격형/왼쪽 미드필드의 베테랑 기술 자원으로 2005-06 UCL 출전은 주전이 아닌 로테이션. 직전 두 시즌의 경험을 보조 반영. 2005-06 > 2004-05 > 2003-04 가중치에 따른 수정 가능한 전체 DRAFT.",
+      "rosterReview": "verified_original_identity_repaired_wrong_korean_name_dob"
     },
     {
       "id": "ucl-2005-06-bayern-sebastiandeisler",
@@ -14191,8 +14193,8 @@
       "id": "ucl-2005-06-bayern-josepaologuerrero",
       "name": "José Paolo Guerrero",
       "nameOriginal": "José Paolo Guerrero",
-      "nameKo": "올리버 칸",
-      "born": "1969-06-15",
+      "nameKo": "파올로 게레로",
+      "born": "1984-01-01",
       "club": "bayern",
       "clubNameOriginal": "FC Bayern München",
       "position": "ST",
@@ -14203,9 +14205,9 @@
       "goals": null,
       "assists": null,
       "rank": 37,
-      "tier": "D",
+      "tier": "B-",
       "review": "draft_unapproved",
-      "positionReview": "INVALID_DUPLICATE_WRONG_POSITION",
+      "positionReview": "original_position_retained_dominant_role_pending",
       "candidateSelectionEvidence": "2005-06 UCL provisional nomination via historical club squads and knockout lineups; individual qualifying group/knockout appearance not yet confirmed for every candidate",
       "threeSeasonAssessment": {
         "seasons": [
@@ -14213,20 +14215,21 @@
           "2004-05",
           "2005-06"
         ],
-        "review": "invalid_identity_duplicate_pending_cleanup",
+        "review": "first_pass_draft_identity_repaired_individual_three_season_review_pending",
         "priority": "2005-06 > 2004-05 > 2003-04",
-        "rationale": "DATA ERROR / NOT A PERFORMANCE TIER. 올리버 칸가 실제 GK임에도 동일 시즌 동일 구단에서 ST 선수로 중복 등록됐다. 원본 ID 삭제 없이 보존하고 D는 격리 마커로만 사용한다. 잘못된 후보 행으로서 정밀 검증 후 삭제 대상."
+        "rationale": "원본 ID 및 원어명(José Paolo Guerrero)이 기존 한글 이름·생년월일과 충돌한 오류를 수정. 바이에른 2005-06 UCL 공격진의 젊은 교체 자원으로 최전방 기용이 있었지만 당시 UCL 출전과 영향력은 주전 공격수보다 제한적. 2005-06 > 2004-05 > 2003-04 가중치에 따른 수정 가능한 전체 DRAFT."
       },
       "sources": [
         "https://www.rsssf.org/ec/ec200506det.html",
-        "https://github.com/wjdduddlf112/footballarch/blob/main/data/bundesliga-2005-06.json"
+        "https://github.com/wjdduddlf112/footballarch/blob/main/data/bundesliga-2005-06.json",
+        "https://www.uefa.com/uefachampionsleague/match/82413--bayern-munchen-vs-milan/lineups/"
       ],
       "birthEvidenceStatus": "reused_ucl_2004_05_DRAFT_not_independently_double_checked",
-      "displayTier": "D",
-      "tierReview": "invalid_duplicate_same_human_wrong_position",
-      "evaluationConfidence": "invalid_duplicate_position_not_performance_evaluation",
-      "tierReason": "DATA ERROR / NOT A PERFORMANCE TIER. 올리버 칸가 실제 GK임에도 동일 시즌 동일 구단에서 ST 선수로 중복 등록됐다. 원본 ID 삭제 없이 보존하고 D는 격리 마커로만 사용한다. 잘못된 후보 행으로서 정밀 검증 후 삭제 대상.",
-      "rosterReview": "invalid_duplicate_same_person_wrong_position_pending_cleanup"
+      "displayTier": "B-",
+      "tierReview": "identity_and_dob_repaired_from_original_name_and_external_match",
+      "evaluationConfidence": "historical_identity_verified_qualitative_tier_draft",
+      "tierReason": "원본 ID 및 원어명(José Paolo Guerrero)이 기존 한글 이름·생년월일과 충돌한 오류를 수정. 바이에른 2005-06 UCL 공격진의 젊은 교체 자원으로 최전방 기용이 있었지만 당시 UCL 출전과 영향력은 주전 공격수보다 제한적. 2005-06 > 2004-05 > 2003-04 가중치에 따른 수정 가능한 전체 DRAFT.",
+      "rosterReview": "verified_original_identity_repaired_wrong_korean_name_dob"
     },
     {
       "id": "ucl-2005-06-werder-petripasanen",
@@ -15505,8 +15508,8 @@
       "originalTiered": 129,
       "originalRanked": 129,
       "addedTiers": 119,
-      "validNewPlayerTiers": 116,
-      "invalidRosterDuplicateRows": 3,
+      "validNewPlayerTiers": 119,
+      "invalidRosterDuplicateRows": 0,
       "allRowsTiered": 248,
       "allRowsRanked": 248,
       "zeroUnrated": true,
@@ -15520,9 +15523,13 @@
         "https://www.uefa.com/uefachampionsleague/history/seasons/2005/statistics/",
         "https://www.uefa.com/news-media/news/0250-0c50f2666894-2dc4aa6b21c3-1000--ronaldinho-reigns-in-monaco/",
         "https://www.uefa.com/uefachampionsleague/news/01b5-0e10a5cf03fb-af9966fa957b-1000--2005-06-ronaldinho-delivers-for-barca/",
-        "https://www.uefa.com/uefachampionsleague/news/0254-0d7b9bda7048-f02946ac9dba-1000/"
+        "https://www.uefa.com/uefachampionsleague/news/0254-0d7b9bda7048-f02946ac9dba-1000/",
+        "https://fbref.com/en/squads/d609edc0/2005-2006/c8/Internazionale-Stats-Champions-League",
+        "https://datencenter.dfb.de/en/champions-league/2005-2006/team/bayern-munich",
+        "https://www.uefa.com/uefachampionsleague/match/82413--bayern-munchen-vs-milan/lineups/"
       ],
-      "note": "D on three duplicate mispositioned goalkeeper rows is a DATA ERROR marker, not a player assessment."
+      "note": "Three records initially appeared false duplicates: IDs/original names proved they were real players Álvaro Recoba, Mehmet Scholl, José Paolo Guerrero. Restored Korean name/DOB and valid position tiers; no roster deletions.",
+      "repairedCorruptNameDOBRows": 3
     }
   }
 }
