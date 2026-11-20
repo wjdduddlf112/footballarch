@@ -68,7 +68,8 @@
       "birthDatesCorrected": 0,
       "independentlyUclStatLineReviewed": 12,
       "individuallyUEFAStatLinesConfirmed": 12,
-      "individualUEFAStatLinesEvidencePending": 286
+      "individualUEFAStatLinesEvidencePending": 286,
+      "highPriorityIndividualReviewAlerts": 2
     }
   },
   "clubs": [
@@ -15444,7 +15445,16 @@
       "birthVerificationReviewedAt": "2026-11-20",
       "birthVerificationNote": "Name/club and existing DOB matched to linked independent roster or official player biography; no correction required.",
       "independentThreeSeasonAuditComplete": false,
-      "individualUclReviewStatus": "not_independently_audited_2019_20"
+      "individualUclReviewStatus": "not_independently_audited_2019_20",
+      "historicalVerificationAlert": {
+        "severity": "high",
+        "status": "independent_match_evidence_review_pending",
+        "description": "UEFA official Dec 2019 fact sheet confirms absent from group-stage Champions League squad because of knee injury; later added for knockout but season UCL appearance count suspected zero in independent season statistics. Existing A+ CB rank 5 therefore lacks 2019-20 UCL support; full 2019-20 match log and rank/tier correction pending.",
+        "sources": [
+          "https://www.uefa.com/uefachampionsleague/news/0258-0e9a159405de-9ed6eaa46400-1000--leverkusen-v-juventus-facts/",
+          "https://www.livesoccertv.com/player/g-chiellini/17817/"
+        ]
+      }
     },
     {
       "id": "ucl-2019-20-juventus-danilo",
@@ -26669,7 +26679,16 @@
       "birthVerificationReviewedAt": "2026-11-20",
       "birthVerificationNote": "Name/club and existing DOB matched to linked independent roster or official player biography; no correction required.",
       "independentThreeSeasonAuditComplete": false,
-      "individualUclReviewStatus": "not_independently_audited_2019_20"
+      "individualUclReviewStatus": "not_independently_audited_2019_20",
+      "historicalVerificationAlert": {
+        "severity": "high",
+        "status": "independent_match_evidence_review_pending",
+        "description": "FBref 2019-20 Leipzig UCL match log identifies one 68-minute start at FW vs Zenit (2019-10-23), not LB. Existing LB rank 13 and B+ tier conflict with one-off forward appearance; left/right forward subposition must be verified before moving the candidate.",
+        "sources": [
+          "https://fbref.com/en/players/7c104bb7/matchlogs/2019-2020/c8/summary/Ademola-Lookman-Match-Logs",
+          "https://www.uefa.com/newsfiles/UCL/2020/2027060_FR.pdf"
+        ]
+      }
     },
     {
       "id": "ucl-2019-20-leipzig-tyleradams",
@@ -30416,6 +30435,18 @@
       "participationEvidence": 24,
       "participationEvidencePending": 274
     },
-    "reviewStatus": "draft_unapproved"
+    "reviewStatus": "draft_unapproved",
+    "highPriorityIndividualReviewAlerts": [
+      {
+        "club": "juventus",
+        "player": "Giorgio Chiellini",
+        "severity": "high"
+      },
+      {
+        "club": "leipzig",
+        "player": "Ademola Lookman",
+        "severity": "high"
+      }
+    ]
   }
 }
