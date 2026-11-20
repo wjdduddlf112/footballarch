@@ -1,13 +1,14 @@
 # UCL 2016-17 — existing 295 candidates, UEFA-grounded tier and rank DRAFT (2026-11-20)
 
 > **DRAFT — user not approved.** Full 2014-15/2015-16/2016-17 match-by-match retrospective audit and UCL position verification remain incomplete. A tier filled in JSON is NOT proof of verified performance.
-**Data commit SHA (latest):** `e2af30bc955b253d21cfed5dcf367434e46b0aa0` (supersedes initial `e2344cf04766714e46a094b786b8e1a891f19b05`)
+**Data commit SHA (latest):** `36294d9cc8bee9c781d34cd18e63c014b13a4064` (supersedes initial `e2344cf04766714e46a094b786b8e1a891f19b05`)
 
 ## Scope and baseline
 - GitHub pre-read player count: 295; existing tiers: 220; existing ranks: 220.
 - Post-assessment provisional tiers/ranks: 293/295; no-on-field-data holds: 2.
 - Source-grounded newly graded: 73. Previously graded players with new UEFA-referenced individual-stat review: 30. **Total UEFA 2016-17 individual season aggregates confirmed: 103; retained existing domestic-only conditional proxy grades: 190; no on-field evidence holds: 2.** 2014-15/2015-16 individual three-season review incomplete.
 - Existing baseline conditional domestic-proxy grades and relative ranks remain in the rest; not represented as a fully independent UCL 3-season analysis.
+- Among the 190 domestic-proxy tier records, 16 Manchester City players already had UCL appearance/minute fields in the initial archive; those data fields do not independently validate their UCL-specific tier. Accordingly **119/295 have non-null UCL appearance data**, but only **103/295 individual season rows were newly reviewed/rechecked with the UEFA report in this audit**.
 - All original IDs, clubs, position strings, names, fixtures, groups, participants and existing source links retained.
 - Historical source weighting (conceptual): **2016-17 > 2015-16 > 2014-15**. Earlier seasons not exhaustively checked.
 - Source of current-season UEFA per-club App / Mins / G / A: https://www.uefa.com/MultimediaFiles/Download/uefaorg/General/02/49/98/04/2499804_DOWNLOAD.pdf
