@@ -1,7 +1,7 @@
 # UCL 2019-20 — 기존 후보 전원 티어·포지션 순위·생년월일 재검토 감사
 
 **작성일:** 2026-11-20  | **상태:** `draft_unapproved` / Best XI `proposed_unapproved`
-**데이터 GitHub 커밋 SHA:** `86de10f880bfaf9cba2b34a55c2f0d4a28d8964f` (초기 검증 데이터 커밋: `24c3475134d8b5402e80241b6338f682576247f7`)
+**데이터 GitHub 커밋 SHA:** `4fb165a52d6d33db8ea5cc087bf428e917934bad` (검증 중간 커밋: `86de10f880bfaf9cba2b34a55c2f0d4a28d8964f`; 초기 커밋: `24c3475134d8b5402e80241b6338f682576247f7`)
 **데이터 파일:** [`data/ucl-2019-20.json`](../data/ucl-2019-20.json)
 
 ## 1. 범위 및 한계
@@ -434,3 +434,10 @@ Atalanta 골키퍼 Pierluigi Gollini와 공격수 Luis Muriel은 해당 시즌 D
 | 실제 GitHub Pages 브라우저 UI / GitHub Actions CI | 미실시 |
 
 보고서와 JSON의 상태는 사용자 승인 전 `draft_unapproved`를 유지한다. 위 12명 외 개인 기록 및 기존 포지션별 순위는 독립적으로 검증 완료라고 표기하지 않는다.
+
+## 11. 추가 조사 중 확인한 고위험 오류 가능성
+
+- **Giorgio Chiellini (Juventus, CB 5위, A+):** [UEFA 2019년 12월 공식 기록](https://www.uefa.com/uefachampionsleague/news/0258-0e9a159405de-9ed6eaa46400-1000--leverkusen-v-juventus-facts/)에서 무릎 부상으로 조별리그 UCL 명단에 포함되지 않았음을 확인했다. 토너먼트 등록 후 실제 UCL 출전 여부도 재확인이 필요하다. [시즌 출전 데이터베이스](https://www.livesoccertv.com/player/g-chiellini/17817/)는 해당 시즌 UCL 출전 0회로 표시한다. 기존 A+ 및 높은 순위는 경기력상 재검토 우선 대상이다. **UEFA 전 경기 검증 전에는 기존 잠정 등급을 확정하지 않는다.**
+- **Ademola Lookman (RB Leipzig, LB 13위, B+):** [FBref 2019-20 UCL 경기 로그](https://fbref.com/en/players/7c104bb7/matchlogs/2019-2020/c8/summary/Ademola-Lookman-Match-Logs)는 2019-10-23 제니트전 68분 선발 및 경기 포지션을 `FW`로 기록한다. [UEFA 경기 보고서](https://www.uefa.com/newsfiles/UCL/2020/2027060_FR.pdf)에서 선수 등록을 확인할 수 있다. 주 포지션 `LB` 및 B+ 근거가 약해 보이며 LW/ST 등 실제 공격 포지션을 더 조사한 뒤 수정해야 한다. **외부 자료가 LW인지 ST인지 확정하지 않으므로 본 커밋에서는 기존 포지션을 이동하지 않았다.**
+
+위 고위험 사항은 기존 298명 후보를 보존한 채 `historicalVerificationAlert`에 기록했다. 해당 선수는 기존 임시 티어·순위를 최종 평가로 사용해서는 안 된다.
