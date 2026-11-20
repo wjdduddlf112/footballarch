@@ -1,7 +1,7 @@
 # Football Archive — UCL 2017-18 / existing 256 candidate tier and position-rank review
 
 > **DRAFT — user not approved.** 2017/18 UEFA technical-report individual aggregates verified for all existing candidate names, but 2015/16 and 2016/17 all-player independent match-by-match audits are incomplete. A full three-season individual historical certification is NOT claimed.
-**Latest data commit:** `80ccce0a5a7f4e9c9e16feafa20f7e9de672c206`
+**Latest data commit:** `2e56b2dc48c4c94d0475aa79867bca20168fba71` (supersedes `80ccce0a5a7f4e9c9e16feafa20f7e9de672c206`)
 
 ## Scope and comparison
 - Original existing candidates: **256**; previously tiered and ranked: **193**; originally blank: **63**.
@@ -13,6 +13,7 @@
 - UEFA technical observers' season team (18 players): https://www.uefa.com/uefachampionsleague/news/0253-0d8222ae4584-fc81fa8bf4d6-1000--uefa-champions-league-squad-of-the-season/
 - UEFA 2017/18 positional awards: https://www.uefa.com/uefachampionsleague/news/0248-0f8e632f00b8-0d24eb652107-1000--pernille-harder-and-luka-modric-voted-uefa-players-of-the/
 - **DO NOT** equate 2017/18 official season aggregate row coverage with complete 3-season validation.
+- **256/256 candidates still have a pending independent comprehensive 2015/16–2017/18 three-season review**; `tierEvidenceIncomplete: 256` explicitly marks historical evaluation incompleteness, not missing current-season appearances.
 
 ## Data integrity and issues
 - Machine validation prior to write: 256 IDs in original order, unique; original club, original-language name and position preserved, all graded ranks unique and contiguous by position and tier-consistent, Best XI 11 valid unique candidate IDs with correct stored position.
