@@ -22,23 +22,23 @@
       "groupStandingsCrossVerified": true,
       "playerCandidateCount": 132,
       "playerRosterComplete": false,
-      "birthDatesPresent": 129,
-      "birthDatesVerified": 129,
+      "birthDatesPresent": 132,
+      "birthDatesVerified": 132,
       "threeSeasonAuditComplete": 0,
       "modalPositionVerified": 0,
       "bestXiCount": 11,
       "siteTestPending": true,
       "verifiedMatchCount": 221,
       "birthDatesFullRosterSource": 122,
-      "birthDatesSearchExcerpt": 7,
+      "birthDatesSearchExcerpt": 10,
       "appearanceEvidenceCount": 132,
       "provisionalTierCount": 132,
       "provisionalRankCount": 62,
-      "playersWithThreeSeasonLeagueRecords": 3,
+      "playersWithThreeSeasonLeagueRecords": 4,
       "existingPlayerIdsReused": 21
     },
-    "formationDetail": "4-4-2 proposed; competition-wide modal not verified; Kiessling RW/CF ambiguity remains",
-    "bestXiNote": "Ribéry and Arshavin both provisional LW, Ribéry preferred on stronger documented domestic history; Arshavin free role may change XI. Kießling right-forward mapping based on Leverkusen 16th round lineup; primary role unverified."
+    "formationDetail": "4-4-2 proposed; competition-wide modal formation not verified.",
+    "bestXiNote": "Ribéry and Arshavin both provisionally LW; Ribéry selected, Arshavin free attacking role unresolved. Kießling RW/CF conflict: Schweinsteiger provisionally selected as a wide player instead."
   },
   "clubs": [
     {
@@ -10051,8 +10051,8 @@
       "birthDateSource": "https://en.wikipedia.org/wiki/2008_FC_Zenit_Saint_Petersburg_season",
       "birthDateAlternatives": null,
       "eligibilityStatus": "sample_match_appearance_evidenced",
-      "positionStatus": "provisional_match_sample_not_modal_verified",
-      "positionEvidence": "UEFA 4도움, 1라운드 두 골 및 8강 득점, 자유로운 측면 공격",
+      "positionStatus": "provisional_free_attacker_LW_unverified",
+      "positionEvidence": "UEFA 4도움, 1라운드 두 골 및 8강 득점, 자유로운 측면 공격; UEFA 결승 기사에서 좌우 자유 이동 확인",
       "appearances": null,
       "starts": null,
       "minutes": null,
@@ -10110,7 +10110,8 @@
         "https://www.rsssf.org/ec/ec200708det.html",
         "https://en.wikipedia.org/wiki/2008_FC_Zenit_Saint_Petersburg_season",
         "https://www.uefa.com/uefaeuropaleague/history/seasons/2008/statistics/",
-        "https://en.wikipedia.org/wiki/2007_Russian_Premier_League"
+        "https://en.wikipedia.org/wiki/2007_Russian_Premier_League",
+        "https://www.uefa.com/news-media/news/0250-0c50f24dd62e-16c90f4a34e2-1000--polished-arshavin-runs-rangers-ragged/"
       ],
       "evidence": [
         {
@@ -10124,6 +10125,12 @@
           "claim": "생년월일 1981-05-29",
           "sources": [
             "https://en.wikipedia.org/wiki/2008_FC_Zenit_Saint_Petersburg_season"
+          ]
+        },
+        {
+          "claim": "결승에서 좌우 측면 모두 이동한 자유 공격 역할",
+          "sources": [
+            "https://www.uefa.com/news-media/news/0250-0c50f24dd62e-16c90f4a34e2-1000--polished-arshavin-runs-rangers-ragged/"
           ]
         }
       ]
@@ -15447,8 +15454,8 @@
       "birthDateSource": "https://www.footballsquads.co.uk/ger/2007-2008/bundes/bayerlev.htm",
       "birthDateAlternatives": null,
       "eligibilityStatus": "sample_match_appearance_evidenced",
-      "positionStatus": "provisional_match_sample_not_modal_verified",
-      "positionEvidence": "UEFA 7골 3도움, 16강 측면 선발, 전방 기용도 있음",
+      "positionStatus": "provisional_RW_CF_conflict",
+      "positionEvidence": "UEFA 7골 3도움, 16강 측면 선발, 전방 기용도 있음; NFT 통산 주 포지션 CF, 시즌 최다 포지션 미검증",
       "appearances": null,
       "starts": null,
       "minutes": null,
@@ -15477,12 +15484,33 @@
             "https://www.uefa.com/uefaeuropaleague/history/seasons/2008/statistics/"
           ]
         },
-        "independentLeagueRecords": [],
-        "missingSeasons": [
-          "2005-06",
-          "2006-07",
-          "2007-08"
+        "independentLeagueRecords": [
+          {
+            "season": "2005-06",
+            "club": "1.FC Nürnberg",
+            "appearances": 31,
+            "goals": 10,
+            "competition": "domestic league",
+            "source": "https://www.national-football-teams.com/player/21464/Stefan_Kiessling.html"
+          },
+          {
+            "season": "2006-07",
+            "club": "Bayer 04 Leverkusen",
+            "appearances": 32,
+            "goals": 8,
+            "competition": "domestic league",
+            "source": "https://www.national-football-teams.com/player/21464/Stefan_Kiessling.html"
+          },
+          {
+            "season": "2007-08",
+            "club": "Bayer 04 Leverkusen",
+            "appearances": 31,
+            "goals": 9,
+            "competition": "domestic league",
+            "source": "https://www.national-football-teams.com/player/21464/Stefan_Kiessling.html"
+          }
         ],
+        "missingSeasons": [],
         "priorArchive": {
           "id": "uel-2006-07-bayer-leverkusen-stefankieling",
           "season": "2006-07",
@@ -15490,12 +15518,13 @@
         }
       },
       "assessmentStatus": "provisional_incomplete_three_season",
-      "tierReason": "UEFA 7골 3도움, 16강 측면 선발, 전방 기용도 있음; 3시즌 비교 미완료",
+      "tierReason": "UEFA 7골 3도움, 16강 측면 선발, 전방 기용도 있음; 3시즌 비교 미완료; 국내리그 31/10,32/8,31/9 (경기/골); RW 적격성 미확정",
       "rankStatus": "provisional_tier_order",
       "sources": [
         "https://www.rsssf.org/ec/ec200708det.html",
         "https://www.footballsquads.co.uk/ger/2007-2008/bundes/bayerlev.htm",
-        "https://www.uefa.com/uefaeuropaleague/history/seasons/2008/statistics/"
+        "https://www.uefa.com/uefaeuropaleague/history/seasons/2008/statistics/",
+        "https://www.national-football-teams.com/player/21464/Stefan_Kiessling.html"
       ],
       "evidence": [
         {
@@ -15928,7 +15957,7 @@
       "name": "Daniel Díaz",
       "nameOriginal": "Daniel Díaz",
       "nameKo": "다니엘 디아스",
-      "born": null,
+      "born": "1979-07-13",
       "club": "getafe",
       "clubNameOriginal": "Getafe CF",
       "position": "CB",
@@ -15938,8 +15967,8 @@
       "displayTier": "A0",
       "rank": 10,
       "review": "draft_unapproved",
-      "birthDateStatus": "needs_birth_crosscheck",
-      "birthDateSource": null,
+      "birthDateStatus": "source_recorded_search_excerpt",
+      "birthDateSource": "https://en.atleticodemadrid.com/jugadores/daniel-alberto-diaz-cata-diaz",
       "birthDateAlternatives": [
         {
           "value": "1979-03-13",
@@ -15997,13 +16026,20 @@
       "rankStatus": "provisional_comparative_order",
       "sources": [
         "https://www.rsssf.org/ec/ec200708det.html",
-        "https://www.national-football-teams.com/club/2325/2007/Getafe_Cf.html"
+        "https://www.national-football-teams.com/club/2325/2007/Getafe_Cf.html",
+        "https://en.atleticodemadrid.com/jugadores/daniel-alberto-diaz-cata-diaz"
       ],
       "evidence": [
         {
           "claim": "16강 1차전 선발, 국내리그 30경기",
           "sources": [
             "https://www.rsssf.org/ec/ec200708det.html"
+          ]
+        },
+        {
+          "claim": "생년월일 교차 확인 (검색 발췌): 1979-07-13",
+          "sources": [
+            "https://en.atleticodemadrid.com/jugadores/daniel-alberto-diaz-cata-diaz"
           ]
         }
       ]
@@ -16091,7 +16127,7 @@
       "name": "Manuel Tena",
       "nameOriginal": "Manuel Tena",
       "nameKo": "마누엘 테나",
-      "born": null,
+      "born": "1978-02-03",
       "club": "getafe",
       "clubNameOriginal": "Getafe CF",
       "position": "CB",
@@ -16101,8 +16137,8 @@
       "displayTier": "B+",
       "rank": null,
       "review": "draft_unapproved",
-      "birthDateStatus": "conflicting_sources",
-      "birthDateSource": null,
+      "birthDateStatus": "source_recorded_search_excerpt",
+      "birthDateSource": "https://www.bdfutbol.com/en/p/j1854.html",
       "birthDateAlternatives": [
         {
           "value": "1978-02-03",
@@ -16157,13 +16193,20 @@
       "sources": [
         "https://www.rsssf.org/ec/ec200708det.html",
         "https://www.statmuse.com/fc/club/getafe-cf-149/roster/2008",
-        "https://www.footballsquads.co.uk/spain/2007-2008/laliga/getafe.htm"
+        "https://www.footballsquads.co.uk/spain/2007-2008/laliga/getafe.htm",
+        "https://www.bdfutbol.com/en/p/j1854.html"
       ],
       "evidence": [
         {
           "claim": "16강 2차전 및 8강 두 경기 선발",
           "sources": [
             "https://www.rsssf.org/ec/ec200708det.html"
+          ]
+        },
+        {
+          "claim": "생년월일 교차 확인 (검색 발췌): 1978-02-03",
+          "sources": [
+            "https://www.bdfutbol.com/en/p/j1854.html"
           ]
         }
       ]
@@ -16665,7 +16708,7 @@
       "name": "Javier Casquero",
       "nameOriginal": "Javier Casquero",
       "nameKo": "하비에르 카스케로",
-      "born": null,
+      "born": "1976-03-11",
       "club": "getafe",
       "clubNameOriginal": "Getafe CF",
       "position": "CM",
@@ -16675,8 +16718,8 @@
       "displayTier": "A0",
       "rank": 8,
       "review": "draft_unapproved",
-      "birthDateStatus": "conflicting_sources",
-      "birthDateSource": null,
+      "birthDateStatus": "source_recorded_search_excerpt",
+      "birthDateSource": "https://www.bdfutbol.com/es/j/j844.html",
       "birthDateAlternatives": [
         {
           "value": "1976-03-11",
@@ -16731,13 +16774,20 @@
       "sources": [
         "https://www.rsssf.org/ec/ec200708det.html",
         "https://www.statmuse.com/fc/club/getafe-cf-149/roster/2008",
-        "https://www.footballsquads.co.uk/spain/2007-2008/laliga/getafe.htm"
+        "https://www.footballsquads.co.uk/spain/2007-2008/laliga/getafe.htm",
+        "https://www.bdfutbol.com/es/j/j844.html"
       ],
       "evidence": [
         {
           "claim": "8강 2차전 연장 득점, 중원 선발",
           "sources": [
             "https://www.rsssf.org/ec/ec200708det.html"
+          ]
+        },
+        {
+          "claim": "생년월일 교차 확인 (검색 발췌): 1976-03-11",
+          "sources": [
+            "https://www.bdfutbol.com/es/j/j844.html"
           ]
         }
       ]
@@ -19633,9 +19683,9 @@
     },
     {
       "position": "RW",
-      "playerId": "uel-2006-07-bayer-leverkusen-stefankieling",
+      "playerId": "uel-2007-08-bayern-munchen-bastianschweinsteiger",
       "status": "proposed_unapproved",
-      "reason": "UEFA 7골 3도움, 16강 측면 선발, 전방 기용도 있음; 3시즌 비교 미완료"
+      "reason": "8강 및 4강 선발, 측면 역할; 3시즌 비교 미완료; 키슬링 RW 적격성 미확정으로 측면 선수 우선"
     },
     {
       "position": "ST",
@@ -19827,9 +19877,10 @@
     "notes": [
       "All played main tournament scores transcribed from RSSSF; group tables independently recomputed and compared to source. Round dates from RSSSF incl listed exceptions; venues and qualifying paths incomplete.",
       "UEFA display 442 matches, exactly twice 221 actual fixtures; goal totals independently checked.",
-      "All player ratings, role assignments and positions provisional: sampled lineups, not full tournament start counts. Three-season league rows available for Toni, Mutu, Ribéry; full weighted comparison not completed. Russian calendar-year 2007 recorded as calendar year rather than fabricated European season; mapping and previous-year comparisons pending.",
-      "Getafe Tena and Casquero conflicting birth dates, Daniel Díaz NFT date requires identity/date verification; left null. Some squad sources only accessible search excerpts. UEFA goals/assists/saves fields only official top-list values; other match goals described in notes.",
-      "4-4-2 XI provisional, Arshavin free attacking role and Kießling right-sided/striker role must be audited; team results not a formal tier factor."
+      "All player ratings, role assignments and positions provisional: sampled lineups, not full tournament start counts. Three-season league rows available for Toni, Mutu, Ribéry, Kießling; full weighted comparison not completed. Russian calendar-year 2007 recorded as calendar year rather than fabricated European season; mapping and previous-year comparisons pending.",
+      "Getafe Tena/Casquero/Díaz birth date conflicts addressed via BDFutbol and Atlético official player profile excerpts; original alternatives retained. Other dates are single-source or excerpt only. UEFA goal/assist/save fields limited to official top-list values.",
+      "4-4-2 XI provisional, Arshavin free attacking role and Kießling right-sided/striker role must be audited; team results not a formal tier factor.",
+      "UEFA final report describes Arshavin moving across both flanks; actual primary position unresolved. Kießling listed CF in career profile; RW season mapping remains provisional, excluded from XI in favor of Schweinsteiger. 8th-round official lineup PDF screenshot unavailable; not relied on for additional positional confirmation."
     ],
     "tierCounts": {
       "S": 3,
