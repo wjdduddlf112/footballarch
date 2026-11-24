@@ -27,20 +27,29 @@
       "leagueTableRecomputed": true,
       "leagueTablePointsGoalsComparedWithPublishedTable": true,
       "leagueTableTieBreakOrder": "published order; full tie-break audit pending",
-      "candidateCount": 139,
+      "candidateCount": 138,
       "candidateCompleteness": "not_certified",
-      "namesPresent": 139,
-      "birthDatesPresent": 139,
-      "birthDatesRosterSourceChecked": 70,
-      "priorArchiveBirthDateMatches": 9,
-      "mainDrawAppearanceIndividuallyConfirmed": 117,
-      "provisionalTiers": 139,
+      "namesPresent": 138,
+      "birthDatesPresent": 138,
+      "birthDatesRosterSourceChecked": 76,
+      "priorArchiveBirthDateMatches": 5,
+      "mainDrawAppearanceIndividuallyConfirmed": 138,
+      "provisionalTiers": 138,
       "rankedProvisionalCandidates": 31,
       "threeSeasonFullAudit": 0,
       "modalFormationAudit": 0,
       "reusedIds": 10,
       "bestXiCount": 11,
-      "siteTestPending": true
+      "siteTestPending": true,
+      "partialThreeSeasonBaselines": 2,
+      "excludedCandidates": [
+        {
+          "name": "Matija Kavčič",
+          "club": "celje",
+          "reason": "0 main draw appearances",
+          "source": "https://www.repubblica.it/sport/dirette/calcio/conference-league-2024/rosa/celje-t1790/"
+        }
+      ]
     },
     "sources": [
       "https://www.uefa.com/uefaconferenceleague/news/0290-1bbee2bdd4c2-dac8802cf83b-1000--2024-25-conference-league-all-the-results/",
@@ -3224,7 +3233,7 @@
       "rank": null,
       "review": "draft_unapproved",
       "birthDateStatus": "entered_unverified",
-      "eligibilityStatus": "individual_appearance_audit_pending",
+      "eligibilityStatus": "main_draw_appearance_confirmed",
       "positionStatus": "modal_position_audit_pending",
       "idStatus": "repository_reconciliation_pending",
       "threeSeasonAudit": "pending",
@@ -3232,13 +3241,18 @@
       "evidence": [
         {
           "type": "provisional_evaluation",
-          "note": "first-half rotation, winter departure; appearance audit pending",
+          "note": "first-half rotation, winter departure",
           "scope": "current-season editorial assessment; prior two seasons not independently audited"
         },
         {
           "type": "season_roster_reference",
           "url": "https://www.footballsquads.co.uk/eng/2024-2025/engprem/chelsea.htm",
           "scope": "reference only; independent DOB check pending"
+        },
+        {
+          "type": "main_draw_appearance_followup",
+          "note": "League phase captain against Shamrock Rovers; appearance confirmed.",
+          "url": "https://fbref.com/en/squads/cff3d9bb/2024-2025/c882/Chelsea-Stats-Conference-League"
         }
       ],
       "rankRange": [
@@ -3297,7 +3311,7 @@
       "rank": null,
       "review": "draft_unapproved",
       "birthDateStatus": "entered_unverified",
-      "eligibilityStatus": "individual_appearance_audit_pending",
+      "eligibilityStatus": "main_draw_appearance_confirmed",
       "positionStatus": "modal_position_audit_pending",
       "idStatus": "repository_reconciliation_pending",
       "threeSeasonAudit": "pending",
@@ -3305,13 +3319,18 @@
       "evidence": [
         {
           "type": "provisional_evaluation",
-          "note": "first-half rotation; individual appearance audit pending",
+          "note": "first-half rotation",
           "scope": "current-season editorial assessment; prior two seasons not independently audited"
         },
         {
           "type": "season_roster_reference",
           "url": "https://www.footballsquads.co.uk/eng/2024-2025/engprem/chelsea.htm",
           "scope": "reference only; independent DOB check pending"
+        },
+        {
+          "type": "main_draw_appearance_followup",
+          "note": "6 starts, 540 minutes, 2 goals, 1 assist.",
+          "url": "https://fbref.com/en/squads/cff3d9bb/2024-2025/c882/Chelsea-Stats-Conference-League"
         }
       ],
       "rankRange": [
@@ -3415,7 +3434,7 @@
       "rank": 1,
       "review": "draft_unapproved",
       "birthDateStatus": "roster_source_checked",
-      "eligibilityStatus": "individual_appearance_audit_pending",
+      "eligibilityStatus": "main_draw_appearance_confirmed",
       "positionStatus": "modal_position_audit_pending",
       "idStatus": "repository_reconciliation_pending",
       "threeSeasonAudit": "pending",
@@ -3423,13 +3442,18 @@
       "evidence": [
         {
           "type": "provisional_evaluation",
-          "note": "domestic midfield anchor; main-draw individual appearance audit pending",
+          "note": "domestic midfield anchor",
           "scope": "current-season editorial assessment; prior two seasons not independently audited"
         },
         {
           "type": "season_roster_reference",
           "url": "https://www.footballsquads.co.uk/eng/2024-2025/engprem/chelsea.htm",
           "scope": "birth date matched to visible roster or search excerpt"
+        },
+        {
+          "type": "main_draw_appearance_followup",
+          "note": "Scored in the final against Real Betis.",
+          "url": "https://www.chelseafc.com/en/news/article/chelsea-2024-25-revisited-midfielders"
         }
       ]
     },
@@ -3569,7 +3593,7 @@
       "eligibilityStatus": "main_draw_appearance_confirmed",
       "positionStatus": "modal_position_audit_pending",
       "idStatus": "repository_reconciliation_pending",
-      "threeSeasonAudit": "pending",
+      "threeSeasonAudit": "partial_competition_baseline",
       "assessmentStatus": "provisional_current_season_led",
       "evidence": [
         {
@@ -3591,6 +3615,26 @@
           "type": "official_award",
           "url": "https://www.uefa.com/uefaconferenceleague/news/0299-1ddf88ed7508-8d7f67b21f73-1000--2024-25-uefa-conference-league-team-of-the-season/",
           "scope": "UEFA team or individual award; individual award links in meta"
+        }
+      ],
+      "threeSeasonEvidence": [
+        {
+          "season": "2022-23",
+          "competition": "Premier League",
+          "note": "Limited Manchester City first-team role.",
+          "url": "https://theanalyst.com/players/3933/cole-palmer/career"
+        },
+        {
+          "season": "2023-24",
+          "competition": "Premier League",
+          "note": "22 goals, 11 assists.",
+          "url": "https://www.statmuse.com/fc/ask/how-many-goals-and-assists-does-palmer-have-2023-24-to-2024-25"
+        },
+        {
+          "season": "2024-25",
+          "competition": "Premier League",
+          "note": "37 appearances, 15 goals, 8 assists.",
+          "url": "https://fbref.com/en/players/dc7f8a28/"
         }
       ]
     },
@@ -3933,7 +3977,7 @@
       "rank": null,
       "review": "draft_unapproved",
       "birthDateStatus": "entered_unverified",
-      "eligibilityStatus": "individual_appearance_audit_pending",
+      "eligibilityStatus": "main_draw_appearance_confirmed",
       "positionStatus": "modal_position_audit_pending",
       "idStatus": "repository_reconciliation_pending",
       "threeSeasonAudit": "pending",
@@ -3941,13 +3985,18 @@
       "evidence": [
         {
           "type": "provisional_evaluation",
-          "note": "backup; main-draw minutes audit pending",
+          "note": "backup",
           "scope": "current-season editorial assessment; prior two seasons not independently audited"
         },
         {
           "type": "season_roster_reference",
           "url": "https://www.footballsquads.co.uk/spain/2024-2025/laliga/betis.htm",
           "scope": "reference only; independent DOB check pending"
+        },
+        {
+          "type": "main_draw_appearance_followup",
+          "note": "7 starts in main draw.",
+          "url": "https://fbref.com/en/squads/fc536746/2024-2025/c882/Real-Betis-Stats-Conference-League"
         }
       ],
       "rankRange": [
@@ -4052,7 +4101,7 @@
       "rank": null,
       "review": "draft_unapproved",
       "birthDateStatus": "roster_source_checked",
-      "eligibilityStatus": "individual_appearance_audit_pending",
+      "eligibilityStatus": "main_draw_appearance_confirmed",
       "positionStatus": "modal_position_audit_pending",
       "idStatus": "repository_reconciliation_pending",
       "threeSeasonAudit": "pending",
@@ -4060,13 +4109,18 @@
       "evidence": [
         {
           "type": "provisional_evaluation",
-          "note": "central defensive rotation; individual minutes pending",
+          "note": "central defensive rotation",
           "scope": "current-season editorial assessment; prior two seasons not independently audited"
         },
         {
           "type": "season_roster_reference",
           "url": "https://www.footballsquads.co.uk/spain/2024-2025/laliga/betis.htm",
           "scope": "birth date matched to visible roster or search excerpt"
+        },
+        {
+          "type": "main_draw_appearance_followup",
+          "note": "8 appearances, 554 minutes.",
+          "url": "https://fbref.com/en/squads/fc536746/2024-2025/c882/Real-Betis-Stats-Conference-League"
         }
       ],
       "rankRange": [
@@ -4427,7 +4481,7 @@
       "eligibilityStatus": "main_draw_appearance_confirmed",
       "positionStatus": "modal_position_audit_pending",
       "idStatus": "repository_reconciliation_pending",
-      "threeSeasonAudit": "pending",
+      "threeSeasonAudit": "partial_competition_baseline",
       "assessmentStatus": "provisional_current_season_led",
       "evidence": [
         {
@@ -4444,6 +4498,26 @@
           "type": "official_award",
           "url": "https://www.uefa.com/uefaconferenceleague/news/0299-1ddf88ed7508-8d7f67b21f73-1000--2024-25-uefa-conference-league-team-of-the-season/",
           "scope": "UEFA team or individual award; individual award links in meta"
+        }
+      ],
+      "threeSeasonEvidence": [
+        {
+          "season": "2022-23",
+          "competition": "La Liga",
+          "note": "Sevilla: 12 appearances, 799 minutes (FBref).",
+          "url": "https://fbref.com/en/players/a0b4bb3e/Isco"
+        },
+        {
+          "season": "2023-24",
+          "competition": "La Liga",
+          "note": "Betis: 29 appearances, 8 goals, 5 assists.",
+          "url": "https://fbref.com/en/players/a0b4bb3e/"
+        },
+        {
+          "season": "2024-25",
+          "competition": "UECL",
+          "note": "9 appearances, 631 minutes, 2 goals, 3 assists; UEFA player of the season.",
+          "url": "https://theanalyst.com/players/1527/isco/career"
         }
       ]
     },
@@ -4622,7 +4696,7 @@
       "rank": null,
       "review": "draft_unapproved",
       "birthDateStatus": "roster_source_checked",
-      "eligibilityStatus": "individual_appearance_audit_pending",
+      "eligibilityStatus": "main_draw_appearance_confirmed",
       "positionStatus": "modal_position_audit_pending",
       "idStatus": "repository_reconciliation_pending",
       "threeSeasonAudit": "pending",
@@ -4630,13 +4704,18 @@
       "evidence": [
         {
           "type": "provisional_evaluation",
-          "note": "first-half striker; appearance audit pending",
+          "note": "first-half striker",
           "scope": "current-season editorial assessment; prior two seasons not independently audited"
         },
         {
           "type": "season_roster_reference",
           "url": "https://www.footballsquads.co.uk/spain/2024-2025/laliga/betis.htm",
           "scope": "birth date matched to visible roster or search excerpt"
+        },
+        {
+          "type": "main_draw_appearance_followup",
+          "note": "7 appearances, 285 minutes.",
+          "url": "https://fbref.com/en/squads/fc536746/2024-2025/c882/Real-Betis-Stats-Conference-League"
         }
       ],
       "rankRange": [
@@ -4657,8 +4736,8 @@
       "tier": "B+",
       "rank": null,
       "review": "draft_unapproved",
-      "birthDateStatus": "prior_archive_match_not_independent",
-      "eligibilityStatus": "individual_appearance_audit_pending",
+      "birthDateStatus": "roster_source_checked",
+      "eligibilityStatus": "main_draw_appearance_confirmed",
       "positionStatus": "modal_position_audit_pending",
       "idStatus": "reused_prior_archive_id",
       "threeSeasonAudit": "pending",
@@ -4687,6 +4766,15 @@
           "playerId": "pietro-terracciano",
           "source": "data/uecl-2023-24.json",
           "scope": "identity only; not prior tier reuse"
+        },
+        {
+          "type": "main_draw_appearance_followup",
+          "note": "6 starts, 540 minutes.",
+          "url": "https://fbref.com/en/squads/421387cf/2024-2025/c882/Fiorentina-Stats-Conference-League"
+        },
+        {
+          "type": "birth_date_confirmation",
+          "url": "https://www.uefa.com/news-media/mediaservices/informationkits/competitions/uefaconferenceleague/2025/match/2042321/printmatchpresskits/"
         }
       ],
       "rankRange": [
@@ -4707,7 +4795,7 @@
       "tier": "A-",
       "rank": null,
       "review": "draft_unapproved",
-      "birthDateStatus": "entered_unverified",
+      "birthDateStatus": "roster_source_checked",
       "eligibilityStatus": "main_draw_appearance_confirmed",
       "positionStatus": "modal_position_audit_pending",
       "idStatus": "repository_reconciliation_pending",
@@ -4728,6 +4816,10 @@
           "type": "main_draw_match",
           "url": "https://www.skysports.com/football/fiorentina-vs-nk-celje/teams/528781",
           "scope": "appearance in cited knockout match or additional report"
+        },
+        {
+          "type": "birth_date_confirmation",
+          "url": "https://www.uefa.com/news-media/mediaservices/informationkits/competitions/uefaconferenceleague/2025/match/2042321/printmatchpresskits/"
         }
       ],
       "rankRange": [
@@ -4748,7 +4840,7 @@
       "tier": "A",
       "rank": 4,
       "review": "draft_unapproved",
-      "birthDateStatus": "prior_archive_match_not_independent",
+      "birthDateStatus": "roster_source_checked",
       "eligibilityStatus": "main_draw_appearance_confirmed",
       "positionStatus": "modal_position_audit_pending",
       "idStatus": "reused_prior_archive_id",
@@ -4776,6 +4868,10 @@
           "playerId": "luca-ranieri",
           "source": "data/uecl-2023-24.json",
           "scope": "identity only; not prior tier reuse"
+        },
+        {
+          "type": "birth_date_confirmation",
+          "url": "https://www.uefa.com/news-media/mediaservices/informationkits/competitions/uefaconferenceleague/2025/match/2042321/printmatchpresskits/"
         }
       ]
     },
@@ -4792,7 +4888,7 @@
       "tier": "B+",
       "rank": null,
       "review": "draft_unapproved",
-      "birthDateStatus": "entered_unverified",
+      "birthDateStatus": "roster_source_checked",
       "eligibilityStatus": "main_draw_appearance_confirmed",
       "positionStatus": "modal_position_audit_pending",
       "idStatus": "repository_reconciliation_pending",
@@ -4813,6 +4909,10 @@
           "type": "main_draw_match",
           "url": "https://www.skysports.com/football/fiorentina-vs-nk-celje/teams/528781",
           "scope": "appearance in cited knockout match or additional report"
+        },
+        {
+          "type": "birth_date_confirmation",
+          "url": "https://www.uefa.com/news-media/mediaservices/informationkits/competitions/uefaconferenceleague/2025/match/2042321/printmatchpresskits/"
         }
       ],
       "rankRange": [
@@ -4854,6 +4954,10 @@
           "type": "main_draw_match",
           "url": "https://www.skysports.com/football/fiorentina-vs-nk-celje/teams/528781",
           "scope": "appearance in cited knockout match or additional report"
+        },
+        {
+          "type": "birth_date_confirmation",
+          "url": "https://www.uefa.com/news-media/mediaservices/informationkits/competitions/uefaconferenceleague/2025/match/2042321/printmatchpresskits/"
         }
       ],
       "rankRange": [
@@ -4874,7 +4978,7 @@
       "tier": "A+",
       "rank": 1,
       "review": "draft_unapproved",
-      "birthDateStatus": "entered_unverified",
+      "birthDateStatus": "roster_source_checked",
       "eligibilityStatus": "main_draw_appearance_confirmed",
       "positionStatus": "modal_position_audit_pending",
       "idStatus": "repository_reconciliation_pending",
@@ -4900,6 +5004,10 @@
           "type": "official_award",
           "url": "https://www.uefa.com/uefaconferenceleague/news/0299-1ddf88ed7508-8d7f67b21f73-1000--2024-25-uefa-conference-league-team-of-the-season/",
           "scope": "UEFA team or individual award; individual award links in meta"
+        },
+        {
+          "type": "birth_date_confirmation",
+          "url": "https://www.uefa.com/news-media/mediaservices/informationkits/competitions/uefaconferenceleague/2025/match/2042321/printmatchpresskits/"
         }
       ]
     },
@@ -4916,7 +5024,7 @@
       "tier": "B+",
       "rank": null,
       "review": "draft_unapproved",
-      "birthDateStatus": "prior_archive_match_not_independent",
+      "birthDateStatus": "roster_source_checked",
       "eligibilityStatus": "main_draw_appearance_confirmed",
       "positionStatus": "modal_position_audit_pending",
       "idStatus": "reused_prior_archive_id",
@@ -4944,6 +5052,10 @@
           "playerId": "fabiano-parisi",
           "source": "data/uecl-2023-24.json",
           "scope": "identity only; not prior tier reuse"
+        },
+        {
+          "type": "birth_date_confirmation",
+          "url": "https://www.uefa.com/news-media/mediaservices/informationkits/competitions/uefaconferenceleague/2025/match/2042321/printmatchpresskits/"
         }
       ],
       "rankRange": [
@@ -4964,8 +5076,8 @@
       "tier": "A-",
       "rank": null,
       "review": "draft_unapproved",
-      "birthDateStatus": "prior_archive_match_not_independent",
-      "eligibilityStatus": "individual_appearance_audit_pending",
+      "birthDateStatus": "roster_source_checked",
+      "eligibilityStatus": "main_draw_appearance_confirmed",
       "positionStatus": "modal_position_audit_pending",
       "idStatus": "reused_prior_archive_id",
       "threeSeasonAudit": "pending",
@@ -4973,7 +5085,7 @@
       "evidence": [
         {
           "type": "provisional_evaluation",
-          "note": "regular wing-back; individual main-draw audit pending",
+          "note": "regular wing-back",
           "scope": "current-season editorial assessment; prior two seasons not independently audited"
         },
         {
@@ -4994,6 +5106,15 @@
           "playerId": "dodo",
           "source": "data/uecl-2023-24.json",
           "scope": "identity only; not prior tier reuse"
+        },
+        {
+          "type": "main_draw_appearance_followup",
+          "note": "Appeared against Pafos in league phase.",
+          "url": "https://fbref.com/en/squads/421387cf/2024-2025/c882/Fiorentina-Stats-Conference-League"
+        },
+        {
+          "type": "birth_date_confirmation",
+          "url": "https://www.uefa.com/news-media/mediaservices/informationkits/competitions/uefaconferenceleague/2025/match/2042321/printmatchpresskits/"
         }
       ],
       "rankRange": [
@@ -5015,7 +5136,7 @@
       "rank": null,
       "review": "draft_unapproved",
       "birthDateStatus": "prior_archive_match_not_independent",
-      "eligibilityStatus": "individual_appearance_audit_pending",
+      "eligibilityStatus": "main_draw_appearance_confirmed",
       "positionStatus": "modal_position_audit_pending",
       "idStatus": "reused_prior_archive_id",
       "threeSeasonAudit": "pending",
@@ -5023,7 +5144,7 @@
       "evidence": [
         {
           "type": "provisional_evaluation",
-          "note": "first-half rotation; individual appearance audit pending",
+          "note": "first-half rotation",
           "scope": "current-season editorial assessment; prior two seasons not independently audited"
         },
         {
@@ -5037,6 +5158,11 @@
           "playerId": "michael-kayode",
           "source": "data/uecl-2023-24.json",
           "scope": "identity only; not prior tier reuse"
+        },
+        {
+          "type": "main_draw_appearance_followup",
+          "note": "5 appearances, 356 minutes, 1 assist.",
+          "url": "https://fbref.com/en/squads/421387cf/2024-2025/c882/Fiorentina-Stats-Conference-League"
         }
       ],
       "rankRange": [
@@ -5363,7 +5489,7 @@
       "rank": null,
       "review": "draft_unapproved",
       "birthDateStatus": "prior_archive_match_not_independent",
-      "eligibilityStatus": "individual_appearance_audit_pending",
+      "eligibilityStatus": "main_draw_appearance_confirmed",
       "positionStatus": "modal_position_audit_pending",
       "idStatus": "reused_prior_archive_id",
       "threeSeasonAudit": "pending",
@@ -5371,7 +5497,7 @@
       "evidence": [
         {
           "type": "provisional_evaluation",
-          "note": "first-half wide rotation; individual appearance audit pending",
+          "note": "first-half wide rotation",
           "scope": "current-season editorial assessment; prior two seasons not independently audited"
         },
         {
@@ -5392,6 +5518,11 @@
           "playerId": "riccardo-sottil",
           "source": "data/uecl-2023-24.json",
           "scope": "identity only; not prior tier reuse"
+        },
+        {
+          "type": "main_draw_appearance_followup",
+          "note": "4 appearances, 269 minutes, 2 goals.",
+          "url": "https://fbref.com/en/squads/421387cf/2024-2025/c882/Fiorentina-Stats-Conference-League"
         }
       ],
       "rankRange": [
@@ -5413,7 +5544,7 @@
       "rank": null,
       "review": "draft_unapproved",
       "birthDateStatus": "prior_archive_match_not_independent",
-      "eligibilityStatus": "individual_appearance_audit_pending",
+      "eligibilityStatus": "main_draw_appearance_confirmed",
       "positionStatus": "modal_position_audit_pending",
       "idStatus": "reused_prior_archive_id",
       "threeSeasonAudit": "pending",
@@ -5421,7 +5552,7 @@
       "evidence": [
         {
           "type": "provisional_evaluation",
-          "note": "first-half wide rotation; individual appearance audit pending",
+          "note": "first-half wide rotation",
           "scope": "current-season editorial assessment; prior two seasons not independently audited"
         },
         {
@@ -5442,6 +5573,11 @@
           "playerId": "jonathan-ikone",
           "source": "data/uecl-2023-24.json",
           "scope": "identity only; not prior tier reuse"
+        },
+        {
+          "type": "main_draw_appearance_followup",
+          "note": "6 starts, 483 minutes, 4 goals.",
+          "url": "https://fbref.com/en/squads/421387cf/2024-2025/c882/Fiorentina-Stats-Conference-League"
         }
       ],
       "rankRange": [
@@ -6886,7 +7022,7 @@
       "rank": null,
       "review": "draft_unapproved",
       "birthDateStatus": "roster_source_checked",
-      "eligibilityStatus": "individual_appearance_audit_pending",
+      "eligibilityStatus": "main_draw_appearance_confirmed",
       "positionStatus": "modal_position_audit_pending",
       "idStatus": "repository_reconciliation_pending",
       "threeSeasonAudit": "pending",
@@ -6901,6 +7037,11 @@
           "type": "season_roster_reference",
           "url": "https://www.transfermarkt.com/nk-celje/kader/verein/710/saison_id/2024/plus/1",
           "scope": "birth date matched to visible roster or search excerpt"
+        },
+        {
+          "type": "main_draw_appearance_followup",
+          "note": "4 appearances.",
+          "url": "https://www.repubblica.it/sport/dirette/calcio/conference-league-2024/rosa/celje-t1790/"
         }
       ],
       "rankRange": [
@@ -7073,42 +7214,6 @@
       ]
     },
     {
-      "id": "matija-kavcic",
-      "name": "Matija Kavčič",
-      "nameOriginal": "Matija Kavčič",
-      "nameKo": "마티야 카브치치",
-      "born": "1997-07-11",
-      "club": "celje",
-      "clubNameOriginal": "NK Celje",
-      "position": "LB",
-      "role": "backup",
-      "tier": "B",
-      "rank": null,
-      "review": "draft_unapproved",
-      "birthDateStatus": "roster_source_checked",
-      "eligibilityStatus": "individual_appearance_audit_pending",
-      "positionStatus": "modal_position_audit_pending",
-      "idStatus": "repository_reconciliation_pending",
-      "threeSeasonAudit": "pending",
-      "assessmentStatus": "provisional_current_season_led",
-      "evidence": [
-        {
-          "type": "provisional_evaluation",
-          "note": "natural left-back, appearance audit pending",
-          "scope": "current-season editorial assessment; prior two seasons not independently audited"
-        },
-        {
-          "type": "season_roster_reference",
-          "url": "https://www.transfermarkt.com/nk-celje/kader/verein/710/saison_id/2024/plus/1",
-          "scope": "birth date matched to visible roster or search excerpt"
-        }
-      ],
-      "rankRange": [
-        12,
-        14
-      ]
-    },
-    {
       "id": "aljosa-matko",
       "name": "Aljoša Matko",
       "nameOriginal": "Aljoša Matko",
@@ -7204,7 +7309,7 @@
       "rank": null,
       "review": "draft_unapproved",
       "birthDateStatus": "roster_source_checked",
-      "eligibilityStatus": "individual_appearance_audit_pending",
+      "eligibilityStatus": "main_draw_appearance_confirmed",
       "positionStatus": "modal_position_audit_pending",
       "idStatus": "repository_reconciliation_pending",
       "threeSeasonAudit": "pending",
@@ -7212,13 +7317,18 @@
       "evidence": [
         {
           "type": "provisional_evaluation",
-          "note": "midfield rotation; individual main-draw audit pending",
+          "note": "midfield rotation",
           "scope": "current-season editorial assessment; prior two seasons not independently audited"
         },
         {
           "type": "season_roster_reference",
           "url": "https://www.transfermarkt.com/nk-celje/kader/verein/710/saison_id/2024/plus/1",
           "scope": "birth date matched to visible roster or search excerpt"
+        },
+        {
+          "type": "main_draw_appearance_followup",
+          "note": "8 appearances.",
+          "url": "https://www.repubblica.it/sport/dirette/calcio/conference-league-2024/rosa/celje-t1790/"
         }
       ],
       "rankRange": [
@@ -7570,7 +7680,7 @@
       "rank": null,
       "review": "draft_unapproved",
       "birthDateStatus": "entered_unverified",
-      "eligibilityStatus": "individual_appearance_audit_pending",
+      "eligibilityStatus": "main_draw_appearance_confirmed",
       "positionStatus": "modal_position_audit_pending",
       "idStatus": "repository_reconciliation_pending",
       "threeSeasonAudit": "pending",
@@ -7578,13 +7688,18 @@
       "evidence": [
         {
           "type": "provisional_evaluation",
-          "note": "defensive rotation; individual appearance pending",
+          "note": "defensive rotation",
           "scope": "current-season editorial assessment; prior two seasons not independently audited"
         },
         {
           "type": "season_roster_reference",
           "url": "https://rankinguefa.pl/jagiellonia-bialystok-w-europejskich-pucharach-2024-25/",
           "scope": "reference only; independent DOB check pending"
+        },
+        {
+          "type": "main_draw_appearance_followup",
+          "note": "10 appearances, 710 minutes.",
+          "url": "https://fbref.com/en/squads/4f7b798d/2024-2025/c882/Jagiellonia-Stats-Conference-League"
         }
       ],
       "rankRange": [
@@ -7811,7 +7926,7 @@
       "rank": 15,
       "review": "draft_unapproved",
       "birthDateStatus": "roster_source_checked",
-      "eligibilityStatus": "individual_appearance_audit_pending",
+      "eligibilityStatus": "main_draw_appearance_confirmed",
       "positionStatus": "modal_position_audit_pending",
       "idStatus": "repository_reconciliation_pending",
       "threeSeasonAudit": "pending",
@@ -7819,13 +7934,18 @@
       "evidence": [
         {
           "type": "provisional_evaluation",
-          "note": "winter midfield addition; main-draw appearance audit pending",
+          "note": "winter midfield addition",
           "scope": "current-season editorial assessment; prior two seasons not independently audited"
         },
         {
           "type": "season_roster_reference",
           "url": "https://rankinguefa.pl/jagiellonia-bialystok-w-europejskich-pucharach-2024-25/",
           "scope": "birth date matched to visible roster or search excerpt"
+        },
+        {
+          "type": "main_draw_appearance_followup",
+          "note": "5 appearances, 398 minutes.",
+          "url": "https://fbref.com/en/squads/4f7b798d/2024-2025/c882/Jagiellonia-Stats-Conference-League"
         }
       ]
     },
@@ -8132,7 +8252,7 @@
       "rank": null,
       "review": "draft_unapproved",
       "birthDateStatus": "roster_source_checked",
-      "eligibilityStatus": "individual_appearance_audit_pending",
+      "eligibilityStatus": "main_draw_appearance_confirmed",
       "positionStatus": "modal_position_audit_pending",
       "idStatus": "repository_reconciliation_pending",
       "threeSeasonAudit": "pending",
@@ -8140,13 +8260,22 @@
       "evidence": [
         {
           "type": "provisional_evaluation",
-          "note": "earlier goalkeeper; main-draw minutes audit pending",
+          "note": "earlier goalkeeper",
           "scope": "current-season editorial assessment; prior two seasons not independently audited"
         },
         {
           "type": "season_roster_reference",
           "url": "https://rankinguefa.pl/legia-warszawa-w-europejskich-pucharach-2024-25/",
           "scope": "birth date matched to visible roster or search excerpt"
+        },
+        {
+          "type": "main_draw_appearance_followup",
+          "note": "4 starts, 390 minutes.",
+          "url": "https://fbref.com/en/squads/a73408a7/2024-2025/c882/Legia-Warsaw-Stats-Conference-League"
+        },
+        {
+          "type": "birth_date_confirmation",
+          "url": "https://www.uefa.com/news-media/mediaservices/informationkits/competitions/uefaconferenceleague/2024/match/2039960/"
         }
       ],
       "rankRange": [
@@ -8188,6 +8317,10 @@
           "type": "main_draw_match",
           "url": "https://www.skysports.com/football/chelsea-vs-legia-warsaw/teams/528782",
           "scope": "appearance in cited knockout match or additional report"
+        },
+        {
+          "type": "birth_date_confirmation",
+          "url": "https://www.uefa.com/news-media/mediaservices/informationkits/competitions/uefaconferenceleague/2024/match/2039960/"
         }
       ],
       "rankRange": [
@@ -8229,6 +8362,10 @@
           "type": "main_draw_match",
           "url": "https://www.skysports.com/football/chelsea-vs-legia-warsaw/teams/528782",
           "scope": "appearance in cited knockout match or additional report"
+        },
+        {
+          "type": "birth_date_confirmation",
+          "url": "https://www.uefa.com/news-media/mediaservices/informationkits/competitions/uefaconferenceleague/2024/match/2039960/"
         }
       ],
       "rankRange": [
@@ -8328,7 +8465,7 @@
       "rank": null,
       "review": "draft_unapproved",
       "birthDateStatus": "roster_source_checked",
-      "eligibilityStatus": "individual_appearance_audit_pending",
+      "eligibilityStatus": "main_draw_appearance_confirmed",
       "positionStatus": "modal_position_audit_pending",
       "idStatus": "repository_reconciliation_pending",
       "threeSeasonAudit": "pending",
@@ -8336,13 +8473,18 @@
       "evidence": [
         {
           "type": "provisional_evaluation",
-          "note": "regular right-back/wing-back; individual appearance audit pending",
+          "note": "regular right-back/wing-back",
           "scope": "current-season editorial assessment; prior two seasons not independently audited"
         },
         {
           "type": "season_roster_reference",
           "url": "https://rankinguefa.pl/legia-warszawa-w-europejskich-pucharach-2024-25/",
           "scope": "birth date matched to visible roster or search excerpt"
+        },
+        {
+          "type": "main_draw_appearance_followup",
+          "note": "9 appearances.",
+          "url": "https://fbref.com/en/squads/a73408a7/2024-2025/c882/Legia-Warsaw-Stats-Conference-League"
         }
       ],
       "rankRange": [
@@ -8364,7 +8506,7 @@
       "rank": null,
       "review": "draft_unapproved",
       "birthDateStatus": "roster_source_checked",
-      "eligibilityStatus": "individual_appearance_audit_pending",
+      "eligibilityStatus": "main_draw_appearance_confirmed",
       "positionStatus": "modal_position_audit_pending",
       "idStatus": "repository_reconciliation_pending",
       "threeSeasonAudit": "pending",
@@ -8372,13 +8514,22 @@
       "evidence": [
         {
           "type": "provisional_evaluation",
-          "note": "defensive cover; individual appearance audit pending",
+          "note": "defensive cover",
           "scope": "current-season editorial assessment; prior two seasons not independently audited"
         },
         {
           "type": "season_roster_reference",
           "url": "https://rankinguefa.pl/legia-warszawa-w-europejskich-pucharach-2024-25/",
           "scope": "birth date matched to visible roster or search excerpt"
+        },
+        {
+          "type": "main_draw_appearance_followup",
+          "note": "5 appearances; round-of-16 second leg lineup.",
+          "url": "https://fbref.com/en/squads/a73408a7/2024-2025/c882/Legia-Warsaw-Stats-Conference-League"
+        },
+        {
+          "type": "birth_date_confirmation",
+          "url": "https://www.uefa.com/news-media/mediaservices/informationkits/competitions/uefaconferenceleague/2024/match/2039960/"
         }
       ],
       "rankRange": [
@@ -8400,7 +8551,7 @@
       "rank": null,
       "review": "draft_unapproved",
       "birthDateStatus": "roster_source_checked",
-      "eligibilityStatus": "individual_appearance_audit_pending",
+      "eligibilityStatus": "main_draw_appearance_confirmed",
       "positionStatus": "modal_position_audit_pending",
       "idStatus": "repository_reconciliation_pending",
       "threeSeasonAudit": "pending",
@@ -8408,13 +8559,22 @@
       "evidence": [
         {
           "type": "provisional_evaluation",
-          "note": "holding midfielder; individual main-draw audit pending",
+          "note": "holding midfielder",
           "scope": "current-season editorial assessment; prior two seasons not independently audited"
         },
         {
           "type": "season_roster_reference",
           "url": "https://rankinguefa.pl/legia-warszawa-w-europejskich-pucharach-2024-25/",
           "scope": "birth date matched to visible roster or search excerpt"
+        },
+        {
+          "type": "main_draw_appearance_followup",
+          "note": "8 appearances, 498 minutes.",
+          "url": "https://fbref.com/en/squads/a73408a7/2024-2025/c882/Legia-Warsaw-Stats-Conference-League"
+        },
+        {
+          "type": "birth_date_confirmation",
+          "url": "https://www.uefa.com/news-media/mediaservices/informationkits/competitions/uefaconferenceleague/2024/match/2039960/"
         }
       ],
       "rankRange": [
@@ -8559,7 +8719,7 @@
       "rank": null,
       "review": "draft_unapproved",
       "birthDateStatus": "roster_source_checked",
-      "eligibilityStatus": "individual_appearance_audit_pending",
+      "eligibilityStatus": "main_draw_appearance_confirmed",
       "positionStatus": "modal_position_audit_pending",
       "idStatus": "repository_reconciliation_pending",
       "threeSeasonAudit": "pending",
@@ -8567,13 +8727,18 @@
       "evidence": [
         {
           "type": "provisional_evaluation",
-          "note": "creative midfield; individual appearance audit pending",
+          "note": "creative midfield",
           "scope": "current-season editorial assessment; prior two seasons not independently audited"
         },
         {
           "type": "season_roster_reference",
           "url": "https://rankinguefa.pl/legia-warszawa-w-europejskich-pucharach-2024-25/",
           "scope": "birth date matched to visible roster or search excerpt"
+        },
+        {
+          "type": "main_draw_appearance_followup",
+          "note": "7 appearances, 613 minutes.",
+          "url": "https://fbref.com/en/squads/a73408a7/2024-2025/c882/Legia-Warsaw-Stats-Conference-League"
         }
       ],
       "rankRange": [
@@ -8615,6 +8780,10 @@
           "type": "main_draw_match",
           "url": "https://www.skysports.com/football/chelsea-vs-legia-warsaw/teams/528782",
           "scope": "appearance in cited knockout match or additional report"
+        },
+        {
+          "type": "birth_date_confirmation",
+          "url": "https://www.uefa.com/news-media/mediaservices/informationkits/competitions/uefaconferenceleague/2024/match/2039960/"
         }
       ],
       "rankRange": [
@@ -8718,7 +8887,7 @@
       "rank": null,
       "review": "draft_unapproved",
       "birthDateStatus": "entered_unverified",
-      "eligibilityStatus": "individual_appearance_audit_pending",
+      "eligibilityStatus": "main_draw_appearance_confirmed",
       "positionStatus": "modal_position_audit_pending",
       "idStatus": "repository_reconciliation_pending",
       "threeSeasonAudit": "pending",
@@ -8726,13 +8895,18 @@
       "evidence": [
         {
           "type": "provisional_evaluation",
-          "note": "regular domestic forward; individual main-draw appearance pending",
+          "note": "regular domestic forward",
           "scope": "current-season editorial assessment; prior two seasons not independently audited"
         },
         {
           "type": "season_roster_reference",
           "url": "https://rankinguefa.pl/legia-warszawa-w-europejskich-pucharach-2024-25/",
           "scope": "reference only; independent DOB check pending"
+        },
+        {
+          "type": "main_draw_appearance_followup",
+          "note": "8 appearances, 609 minutes.",
+          "url": "https://fbref.com/en/squads/a73408a7/2024-2025/c882/Legia-Warsaw-Stats-Conference-League"
         }
       ],
       "rankRange": [
