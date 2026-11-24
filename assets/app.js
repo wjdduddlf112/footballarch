@@ -17,7 +17,7 @@ const slots4231=[["ST",50,12],["LW",14,32],["CAM",50,36],["RW",86,32],["DM",38,5
 const q=new URLSearchParams(location.search);
 const st={domain:"domestic",league:"laliga",season:"1999-00",tab:"overview",home:!q.has("league"),showCandidates:q.get("view")==="ranking",position:"all",club:"all",from:"S",to:"D",search:"",tier:"all",tierView:"clubs",age:"all",qualifiedOnly:false};
 let data=null,loading=false,loadSequence=0;
-const yearList=Array.from({length:27},(_,i)=>{let a=1999+i,b=(a+1)%100;return a+"-"+String(b).padStart(2,"0")});
+const yearList=Array.from({length:28},(_,i)=>{let a=1999+i,b=(a+1)%100;return a+"-"+String(b).padStart(2,"0")});
 function esc(a){return String(a??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
 function club(id){return (data&&data.clubs||[]).find(c=>c.id===id)||{id,name:id,abbr:id.slice(0,3).toUpperCase()}}
 function crest(id){
@@ -124,14 +124,14 @@ function qualItem(v){
 
 function uclTable(g){
  let t='<div class="table-scroll"><table class="datagrid"><thead><tr><th>#</th><th>CLUB</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>GD</th><th>PTS</th><th>RESULT</th></tr></thead><tbody>';
- for(const a of g.table)t+='<tr><td>'+esc(a.rank)+'</td><td>'+esc(club(a.club).name)+'</td><td>'+esc(a.played)+'</td><td>'+esc(a.wins)+'</td><td>'+esc(a.draws)+'</td><td>'+esc(a.losses)+'</td><td>'+esc(a.goalsFor)+'</td><td>'+esc(a.goalsAgainst)+'</td><td>'+esc(a.gd)+'</td><td>'+esc(a.points)+'</td><td>'+esc(a.status==="knockout_playoffs"?"플레이오프":a.status==="second_group_stage"?"2차 조별리그":a.status==="round_of_32"?"32강":a.status==="round_of_16"?"16강":a.status==="quarter_finals"?"8강":a.status==="uefa_cup"?"UEFA Cup":"탈락")+'</td></tr>';
+ for(const a of g.table)t+='<tr><td>'+esc(a.rank)+'</td><td>'+esc(club(a.club).name)+'</td><td>'+esc(a.played)+'</td><td>'+esc(a.wins)+'</td><td>'+esc(a.draws)+'</td><td>'+esc(a.losses)+'</td><td>'+esc(a.goalsFor)+'</td><td>'+esc(a.goalsAgainst)+'</td><td>'+esc(a.gd)+'</td><td>'+esc(a.points)+'</td><td>'+esc(a.status==="in_progress"?"진행 중":a.status==="knockout_playoffs"?"플레이오프":a.status==="second_group_stage"?"2차 조별리그":a.status==="round_of_32"?"32강":a.status==="round_of_16"?"16강":a.status==="quarter_finals"?"8강":a.status==="uefa_cup"?"UEFA Cup":"탈락")+'</td></tr>';
  return t+'</tbody></table></div>';
 }
 function uclTournament(){
  if(data.leaguePhase?.table?.length){
  const ms=data.matches||[];
  const matchTable=items=>'<div class="table-scroll"><table class="datagrid"><thead><tr><th>DATE</th><th>HOME</th><th>SCORE</th><th>AWAY</th></tr></thead><tbody>'+items.map(m=>'<tr><td>'+esc(m.date)+'</td><td>'+esc(club(m.home).name)+'</td><td><b>'+esc(m.homeGoals+' : '+m.awayGoals+(m.penaltyShootout?' (PK '+m.penaltyShootout.home+'–'+m.penaltyShootout.away+')':''))+'</b></td><td>'+esc(club(m.away).name)+'</td></tr>').join("")+'</tbody></table></div>';
- return '<section class="panel"><div class="section-heading"><h2>League phase · 36 clubs</h2><button class="pill" data-go="overview">Overview</button></div>'+uclTable(data.leaguePhase)+'</section>'+Array.from({length:8},(_,i)=>'<section class="panel" style="margin-top:15px"><h2>Matchday '+(i+1)+'</h2>'+matchTable(ms.filter(m=>m.round==="league_phase"&&m.matchday===i+1))+'</section>').join("")+Object.entries({knockout_playoffs:"Knockout phase play-offs",round_of_16:"16강",quarter_final:"8강",semi_final:"4강",final:"결승"}).map(([r,title])=>'<section class="panel" style="margin-top:15px"><h2>'+title+'</h2>'+matchTable(ms.filter(m=>m.round===r))+'</section>').join("");
+ return '<section class="panel"><div class="section-heading"><h2>League phase · 36 clubs</h2><button class="pill" data-go="overview">Overview</button></div>'+uclTable(data.leaguePhase)+'</section>'+Array.from({length:data.meta.competitionId==="uecl"?6:8},(_,i)=>'<section class="panel" style="margin-top:15px"><h2>Matchday '+(i+1)+'</h2>'+matchTable(ms.filter(m=>m.round==="league_phase"&&m.matchday===i+1))+'</section>').join("")+Object.entries({knockout_playoffs:"Knockout phase play-offs",round_of_16:"16강",quarter_final:"8강",semi_final:"4강",final:"결승"}).map(([r,title])=>'<section class="panel" style="margin-top:15px"><h2>'+title+'</h2>'+matchTable(ms.filter(m=>m.round===r))+'</section>').join("");
  }
 
  let groups=data.groups||[],ms=data.matches||[];
@@ -153,7 +153,7 @@ function uclTournament(){
 function uclOverview(){
  if(data.leaguePhase?.table?.length){
  const people=data.players||[],f=data.knockout.find(k=>k.stage==="final"),rated=people.filter(p=>p.tier).length;
- return '<section class="panel"><div class="section-heading"><div><h2>'+esc(label())+' · '+esc(data.meta.season)+'</h2><p class="muted small">우승 '+esc(club(f.winner).name)+' · 준우승 '+esc(club(f.away).name)+'</p></div><button class="pill" data-go="table">리그 페이즈 · 전체 경기</button></div><div class="cards">'+statValue("Clubs",data.participants.length)+statValue("Evaluated clubs",data.evaluatedClubs.length)+statValue("Games",data.matches.length)+statValue("Goals",data.meta.verification.totalGoals)+'</div></section><section class="panel" style="margin-top:15px"><h2>League phase · 36 clubs</h2>'+uclTable(data.leaguePhase)+'</section><section class="panel" style="margin-top:15px"><h2>선수 평가 · DRAFT · 미승인</h2><p class="muted">후보 '+people.length+'명 · 잠정 티어 '+rated+'명 · Best XI '+((data.bestXi||[]).length===11?'11명 제안':'평가 대기')+' · 독립 검증 미완료</p><button class="pill" data-action="candidates">후보 '+people.length+'명 전체 보기</button></section>'+(st.showCandidates?candidatePool():"");
+ return '<section class="panel"><div class="section-heading"><div><h2>'+esc(label())+' · '+esc(data.meta.season)+'</h2><p class="muted small">'+(f?'우승 '+esc(club(f.winner).name)+' · 준우승 '+esc(club(f.winner===f.home?f.away:f.home).name):'시즌 진행 중 · '+esc(data.leaguePhase.completedMatchdays??"")+'경기일 완료 · 경기 결과 기반 잠정 순위')+'</p></div><button class="pill" data-go="table">리그 페이즈 · 전체 경기</button></div><div class="cards">'+statValue("Clubs",data.participants.length)+statValue("Evaluated clubs",data.evaluatedClubs.length)+statValue("Games",data.matches.length)+statValue("Goals",data.meta.verification.totalGoals)+'</div></section><section class="panel" style="margin-top:15px"><h2>League phase · 36 clubs</h2>'+uclTable(data.leaguePhase)+'</section><section class="panel" style="margin-top:15px"><h2>선수 평가 · DRAFT · 미승인</h2><p class="muted">후보 '+people.length+'명 · 잠정 티어 '+rated+'명 · Best XI '+((data.bestXi||[]).length===11?'11명 제안':'평가 대기')+' · 독립 검증 미완료</p><button class="pill" data-action="candidates">후보 '+people.length+'명 전체 보기</button></section>'+(st.showCandidates?candidatePool():"");
  }
 
  const groups=data.groups||[],people=data.players||[],qualifiers=data.evaluatedClubs||[];
