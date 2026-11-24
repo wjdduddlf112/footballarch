@@ -1,3 +1,5 @@
+> **DOB 보완 (2026-11-24):** 296/296 기입 완료, 누락 0. 아래 내용은 최초 평가의 역사적 스냅샷이며, 최신 생년월일과 근거는 [시즌 JSON](../data/ucl-2024-25.json) 및 [DOB 감사](UCL_2024_26_DOB_BACKFILL_2026-11-24.json)를 참조. 기존 티어와 순위는 그대로 유지.
+
 # UCL 2024-25 — full candidate provisional audit
 
 DRAFT · user approval false. New season. 36 clubs, 189 matches, 618 goals; round-of-16 evaluation only. Actual role frequencies and independent three-season evaluations remain pending. Current and 2023-24 secondary player CSVs retrieved; 2022-23 archive reference only. Birth dates from matching archive rows, not newly independently verified. All tiers/ranks provisional, not a complete historical audit.

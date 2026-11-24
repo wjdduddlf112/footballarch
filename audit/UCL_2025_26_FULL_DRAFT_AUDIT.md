@@ -1,3 +1,5 @@
+> **DOB 보완 (2026-11-24):** 296/296 기입 완료, 누락 0. 아래 내용은 최초 평가의 역사적 스냅샷이며, 최신 생년월일과 근거는 [시즌 JSON](../data/ucl-2025-26.json) 및 [DOB 감사](UCL_2024_26_DOB_BACKFILL_2026-11-24.json)를 참조. 기존 티어와 순위는 그대로 유지.
+
 # UCL 2025-26 — full candidate DRAFT audit
 
 New season; user approval false. 36 teams, 189 matches, 655 goals, one shootout. 16 actual round-of-16 clubs. Current player stats derived from UEFA match reports (including stoppage time), assists from ESPN; previous two seasons secondary CSV. Formation/position mapping and tiers/ranks are provisional editorial choices, not independently verified frequency or complete qualitative audit. Birth dates reused only from matching existing archive records, not independent verification.
