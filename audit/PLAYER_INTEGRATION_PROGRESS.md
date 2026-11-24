@@ -2199,3 +2199,5 @@ Source TXT instruction adapted to the **2009-10 season only**. Candidate roster 
 - Source report `audit/UCL_2007_08_DRAFT_REPORT.md` contains all 32 standings, 125 results, 16 team full candidate tables, 299 player position rankings, tier distribution, and 11 nominated Best XI.
 - **Live GitHub Pages and structural audit PASS:** GitHub Actions [run 43166785305](https://github.com/wjdduddlf112/footballarch/actions/runs/43166785305). Tests confirmed 16 detailed club tables/299 rows, 11 XI player rows, 2006-07 UCL regression. GitHub Pages build [run 43166785160](https://github.com/wjdduddlf112/footballarch/actions/runs/43166785160) succeeded.
 - **Not yet verified:** independently proving each 2007-08 UEFA main-stage appearance/start/minute, actual predominant position, past-two-season original-source individual contributions, or full independent dual-sourced dates of birth. Official approval = **0**.
+
+- **2023-24 추가 검증:** 생년월일 282/282 직접 대조 완료 (공식 101, 시즌 명단 181), 수정 1건. 3시즌 독립 검증 및 최빈 포지션 미완료. 

@@ -366,7 +366,7 @@
 |---:|---|---|---|---|---|---|---:|---:|---:|---:|---:|---|
 | 7 | GK | 디오구 코스타 | Diogo Costa | FC Porto | 1999-09-19 | starter | 8 | ? | 750 | 0 | 0 | A0 |
 | 11 | CB | 페페 | Pepe | FC Porto | 1983-02-26 | starter | 7 | ? | 660 | 2 | 0 | A0 |
-| 42 | CB | 다비드 카르무 | David Carmo | FC Porto | 1999-07-20 | starter | 4 | ? | 360 | 0 | 0 | B0 |
+| 42 | CB | 다비드 카르무 | David Carmo | FC Porto | 1999-07-19 | starter | 4 | ? | 360 | 0 | 0 | B0 |
 | 45 | CB | 파비우 카르도주 | Fábio Cardoso | FC Porto | 1994-04-19 | backup | 3 | ? | 269 | 0 | 0 | B0 |
 | 17 | LB | 웬데우 | Wendell | FC Porto | 1993-07-20 | starter | 5 | ? | 388 | 0 | 0 | B+ |
 | 24 | LB | 자이두 사누시 | Zaidu Sanusi | FC Porto | 1997-06-13 | backup | 4 | ? | 308 | 0 | 0 | B0 |
@@ -458,7 +458,7 @@
 | 39 | CB | 주앙 제주스 | Juan Jesus | SSC Napoli | 1991-06-10 | backup | 5 | ? | 430 | 0 | 0 | B0 |
 | 40 | CB | 안드레 라말류 | André Ramalho | PSV Eindhoven | 1992-02-16 | starter | 6 | ? | 424 | 0 | 0 | B0 |
 | 41 | CB | 스테판 사비치 | Stefan Savić | Club Atlético de Madrid | 1991-01-08 | backup | 6 | ? | 414 | 0 | 0 | B0 |
-| 42 | CB | 다비드 카르무 | David Carmo | FC Porto | 1999-07-20 | starter | 4 | ? | 360 | 0 | 0 | B0 |
+| 42 | CB | 다비드 카르무 | David Carmo | FC Porto | 1999-07-19 | starter | 4 | ? | 360 | 0 | 0 | B0 |
 | 43 | CB | 루카스 클로스터만 | Lukas Klostermann | RB Leipzig | 1996-06-03 | backup | 6 | ? | 353 | 0 | 0 | B0 |
 | 44 | CB | 이니고 마르티네스 | Iñigo Martínez | FC Barcelona | 1991-05-17 | backup | 4 | ? | 318 | 0 | 0 | B0 |
 | 45 | CB | 파비우 카르도주 | Fábio Cardoso | FC Porto | 1994-04-19 | backup | 3 | ? | 269 | 0 | 0 | B0 |
@@ -1025,3 +1025,305 @@
 - 2022-23, 2021-22 기존 Archive UCL 기록 연결, 원자료 재개방 및 독립 3시즌 질적 전수 검증 미완료. 이전 티어 복사 없음. 팀 성적 가산 없음.
 - 대표 4-3-3 DM/CM/CAM 슬롯 제안. 대회 전체 최빈 포메이션 미검증. 주요 동일 티어 순서는 개별 정성 비교 후 포지션별 통계/출전량을 보조 정렬. Best XI는 순위 1위(CB 1,2위). UEFA 공식 XI와 구별.
 - Bayern CB의 Eric Dier 등 근접 경쟁 후보는 포지션별 후보 1명 제한에 따라 제외하였으나 실제 선발 빈도 교차검증 후 재선정 가능. Real Madrid Courtois 결승 90분만 출전, 후보 제한에 따라 제외. PSG Kolo Muani 등 이적 후 구단별 기록 구분.
+
+
+## 추가 생년월일 검증 (2026-11-24)
+- 전체 282명 직접 출처 대조 완료: 공식 구단·협회·DFB 101명, FootballSquads 시즌 명단 181명.
+- 수정: David Carmo 1999-07-20 → 1999-07-19.
+- 상충 시 공식 출처 우선. 이전 시즌 평가의 독립 검증 및 최빈 포지션 확인은 미완료.
+
+| 선수 | 확인 생년월일 | 공식 출처 |
+|---|---|---|
+| Elias Jelert | 2003-06-12 | https://fck.dk/en/player/elias-jelert |
+| Ben White | 1997-10-08 | https://www.englandfootball.com/england/mens-senior-team/squad/Ben-White |
+| Jorginho | 1991-12-20 | https://datencenter.dfb.de/competitions/premier-league/seasons/2023-24/teams/fc-arsenal?datacenter_name=datencenter |
+| Walter Benítez | 1993-01-19 | https://www.psv.nl/en/teams/player/walter-benitez |
+| Nahuel Molina | 1998-04-06 | https://en.atleticodemadrid.com/noticias/molina-is-now-a-red-white-player |
+| Raphinha | 1996-12-14 | https://www.fcbarcelona.com/en/football/first-team/jugadores/24156/raphinha |
+| David Carmo | 1999-07-19 | https://www.olympiacos.org/en/2024/01/27/david-carmo-joins-olympiacos/ |
+
+### 후보별 생년월일 검증 원장 (최신)
+| 구단 | 선수 | 생년월일 | 검증 분류 | 출처 |
+|---|---|---|---|---|
+| FC Bayern München | Manuel Neuer | 1986-03-27 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/bayern-muenchen |
+| FC Bayern München | Sven Ulreich | 1988-08-03 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/bayern-muenchen |
+| FC Bayern München | Kim Min-jae | 1996-11-15 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/bayern-muenchen |
+| FC Bayern München | Dayot Upamecano | 1998-10-27 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/bayern-muenchen |
+| FC Bayern München | Matthijs de Ligt | 1999-08-12 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/bayern-muenchen |
+| FC Bayern München | Alphonso Davies | 2000-11-02 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/bayern-muenchen |
+| FC Bayern München | Noussair Mazraoui | 1997-11-14 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/bayern-muenchen |
+| FC Bayern München | Joshua Kimmich | 1995-02-08 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/bayern-muenchen |
+| FC Bayern München | Konrad Laimer | 1997-05-27 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/bayern-muenchen |
+| FC Bayern München | Aleksandar Pavlović | 2004-05-03 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/bayern-muenchen |
+| FC Bayern München | Leon Goretzka | 1995-02-06 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/bayern-muenchen |
+| FC Bayern München | Raphaël Guerreiro | 1993-12-22 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/bayern-muenchen |
+| FC Bayern München | Jamal Musiala | 2003-02-26 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/bayern-muenchen |
+| FC Bayern München | Thomas Müller | 1989-09-13 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/bayern-muenchen |
+| FC Bayern München | Kingsley Coman | 1996-06-13 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/bayern-muenchen |
+| FC Bayern München | Serge Gnabry | 1995-07-14 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/bayern-muenchen |
+| FC Bayern München | Leroy Sané | 1996-01-11 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/bayern-muenchen |
+| FC Bayern München | Harry Kane | 1993-07-28 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/bayern-muenchen |
+| FC Bayern München | Mathys Tel | 2005-04-27 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/bayern-muenchen |
+| FC København | Kamil Grabara | 1999-01-08 | verified_secondary | https://www.footballsquads.co.uk/denmark/2023-2024/supliga/koben.htm |
+| FC København | Denis Vavro | 1996-04-10 | verified_secondary | https://www.footballsquads.co.uk/denmark/2023-2024/supliga/koben.htm |
+| FC København | Kevin Diks | 1996-10-06 | verified_secondary | https://www.footballsquads.co.uk/denmark/2023-2024/supliga/koben.htm |
+| FC København | Scott McKenna | 1996-11-12 | verified_secondary | https://www.footballsquads.co.uk/denmark/2023-2024/supliga/koben.htm |
+| FC København | Elias Jelert | 2003-06-12 | verified_official | https://fck.dk/en/player/elias-jelert |
+| FC København | Birger Meling | 1994-12-17 | verified_secondary | https://www.footballsquads.co.uk/denmark/2023-2024/supliga/koben.htm |
+| FC København | Peter Ankersen | 1990-09-22 | verified_secondary | https://www.footballsquads.co.uk/denmark/2023-2024/supliga/koben.htm |
+| FC København | Rasmus Falk | 1992-01-15 | verified_secondary | https://www.footballsquads.co.uk/denmark/2023-2024/supliga/koben.htm |
+| FC København | Lukas Lerager | 1993-07-12 | verified_secondary | https://www.footballsquads.co.uk/denmark/2023-2024/supliga/koben.htm |
+| FC København | Diogo Gonçalves | 1997-02-06 | verified_secondary | https://www.footballsquads.co.uk/denmark/2023-2024/supliga/koben.htm |
+| FC København | Magnus Mattsson | 1999-02-25 | verified_secondary | https://www.footballsquads.co.uk/denmark/2023-2024/supliga/koben.htm |
+| FC København | Elias Achouri | 1999-02-10 | verified_secondary | https://www.footballsquads.co.uk/denmark/2023-2024/supliga/koben.htm |
+| FC København | Mohamed Elyounoussi | 1994-08-04 | verified_secondary | https://www.footballsquads.co.uk/denmark/2023-2024/supliga/koben.htm |
+| FC København | Roony Bardghji | 2005-11-15 | verified_secondary | https://www.footballsquads.co.uk/denmark/2023-2024/supliga/koben.htm |
+| FC København | Viktor Claesson | 1992-01-02 | verified_secondary | https://www.footballsquads.co.uk/denmark/2023-2024/supliga/koben.htm |
+| FC København | Orri Óskarsson | 2004-08-29 | verified_secondary | https://www.footballsquads.co.uk/denmark/2023-2024/supliga/koben.htm |
+| Arsenal FC | David Raya | 1995-09-15 | verified_secondary | https://www.footballsquads.co.uk/eng/2023-2024/engprem/arsenal.htm |
+| Arsenal FC | Aaron Ramsdale | 1998-05-14 | verified_secondary | https://www.footballsquads.co.uk/eng/2023-2024/engprem/arsenal.htm |
+| Arsenal FC | William Saliba | 2001-03-24 | verified_secondary | https://www.footballsquads.co.uk/eng/2023-2024/engprem/arsenal.htm |
+| Arsenal FC | Gabriel Magalhães | 1997-12-19 | verified_secondary | https://www.footballsquads.co.uk/eng/2023-2024/engprem/arsenal.htm |
+| Arsenal FC | Jakub Kiwior | 2000-02-15 | verified_secondary | https://www.footballsquads.co.uk/eng/2023-2024/engprem/arsenal.htm |
+| Arsenal FC | Oleksandr Zinchenko | 1996-12-15 | verified_secondary | https://www.footballsquads.co.uk/eng/2023-2024/engprem/arsenal.htm |
+| Arsenal FC | Ben White | 1997-10-08 | verified_official | https://www.englandfootball.com/england/mens-senior-team/squad/Ben-White |
+| Arsenal FC | Takehiro Tomiyasu | 1998-11-05 | verified_secondary | https://www.footballsquads.co.uk/eng/2023-2024/engprem/arsenal.htm |
+| Arsenal FC | Declan Rice | 1999-01-14 | verified_secondary | https://www.footballsquads.co.uk/eng/2023-2024/engprem/arsenal.htm |
+| Arsenal FC | Jorginho | 1991-12-20 | verified_official | https://datencenter.dfb.de/competitions/premier-league/seasons/2023-24/teams/fc-arsenal?datacenter_name=datencenter |
+| Arsenal FC | Kai Havertz | 1999-06-11 | verified_secondary | https://www.footballsquads.co.uk/eng/2023-2024/engprem/arsenal.htm |
+| Arsenal FC | Martin Ødegaard | 1998-12-17 | verified_secondary | https://www.footballsquads.co.uk/eng/2023-2024/engprem/arsenal.htm |
+| Arsenal FC | Leandro Trossard | 1994-12-04 | verified_secondary | https://www.footballsquads.co.uk/eng/2023-2024/engprem/arsenal.htm |
+| Arsenal FC | Gabriel Martinelli | 2001-06-18 | verified_secondary | https://www.footballsquads.co.uk/eng/2023-2024/engprem/arsenal.htm |
+| Arsenal FC | Bukayo Saka | 2001-09-05 | verified_secondary | https://www.footballsquads.co.uk/eng/2023-2024/engprem/arsenal.htm |
+| Arsenal FC | Reiss Nelson | 1999-12-10 | verified_secondary | https://www.footballsquads.co.uk/eng/2023-2024/engprem/arsenal.htm |
+| Arsenal FC | Gabriel Jesus | 1997-04-03 | verified_secondary | https://www.footballsquads.co.uk/eng/2023-2024/engprem/arsenal.htm |
+| Arsenal FC | Eddie Nketiah | 1999-05-30 | verified_secondary | https://www.footballsquads.co.uk/eng/2023-2024/engprem/arsenal.htm |
+| PSV Eindhoven | Walter Benítez | 1993-01-19 | verified_official | https://www.psv.nl/en/teams/player/walter-benitez |
+| PSV Eindhoven | Olivier Boscagli | 1997-11-18 | verified_secondary | https://www.footballsquads.co.uk/netherl/2023-2024/ere/psv.htm |
+| PSV Eindhoven | André Ramalho | 1992-02-16 | verified_secondary | https://www.footballsquads.co.uk/netherl/2023-2024/ere/psv.htm |
+| PSV Eindhoven | Armando Obispo | 1999-03-05 | verified_secondary | https://www.footballsquads.co.uk/netherl/2023-2024/ere/psv.htm |
+| PSV Eindhoven | Sergiño Dest | 2000-11-03 | verified_secondary | https://www.footballsquads.co.uk/netherl/2023-2024/ere/psv.htm |
+| PSV Eindhoven | Mauro Júnior | 1999-05-06 | verified_secondary | https://www.footballsquads.co.uk/netherl/2023-2024/ere/psv.htm |
+| PSV Eindhoven | Jordan Teze | 1999-09-30 | verified_secondary | https://www.footballsquads.co.uk/netherl/2023-2024/ere/psv.htm |
+| PSV Eindhoven | Jerdy Schouten | 1997-01-12 | verified_secondary | https://www.footballsquads.co.uk/netherl/2023-2024/ere/psv.htm |
+| PSV Eindhoven | Joey Veerman | 1998-11-19 | verified_secondary | https://www.footballsquads.co.uk/netherl/2023-2024/ere/psv.htm |
+| PSV Eindhoven | Malik Tillman | 2002-05-28 | verified_secondary | https://www.footballsquads.co.uk/netherl/2023-2024/ere/psv.htm |
+| PSV Eindhoven | Ismael Saibari | 2001-01-28 | verified_secondary | https://www.footballsquads.co.uk/netherl/2023-2024/ere/psv.htm |
+| PSV Eindhoven | Hirving Lozano | 1995-07-30 | verified_secondary | https://www.footballsquads.co.uk/netherl/2023-2024/ere/psv.htm |
+| PSV Eindhoven | Noa Lang | 1999-06-17 | verified_secondary | https://www.footballsquads.co.uk/netherl/2023-2024/ere/psv.htm |
+| PSV Eindhoven | Johan Bakayoko | 2003-04-20 | verified_secondary | https://www.footballsquads.co.uk/netherl/2023-2024/ere/psv.htm |
+| PSV Eindhoven | Luuk de Jong | 1990-08-27 | verified_secondary | https://www.footballsquads.co.uk/netherl/2023-2024/ere/psv.htm |
+| PSV Eindhoven | Ricardo Pepi | 2003-01-09 | verified_secondary | https://www.footballsquads.co.uk/netherl/2023-2024/ere/psv.htm |
+| Real Madrid CF | Andriy Lunin | 1999-02-11 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/real-madrid |
+| Real Madrid CF | Kepa Arrizabalaga | 1994-10-03 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/real-madrid |
+| Real Madrid CF | Antonio Rüdiger | 1993-03-03 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/real-madrid |
+| Real Madrid CF | Nacho Fernández | 1990-01-18 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/real-madrid |
+| Real Madrid CF | David Alaba | 1992-06-24 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/real-madrid |
+| Real Madrid CF | Ferland Mendy | 1995-06-08 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/real-madrid |
+| Real Madrid CF | Fran García | 1999-08-14 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/real-madrid |
+| Real Madrid CF | Dani Carvajal | 1992-01-11 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/real-madrid |
+| Real Madrid CF | Lucas Vázquez | 1991-07-01 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/real-madrid |
+| Real Madrid CF | Toni Kroos | 1990-01-04 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/real-madrid |
+| Real Madrid CF | Aurélien Tchouaméni | 2000-01-27 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/real-madrid |
+| Real Madrid CF | Federico Valverde | 1998-07-22 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/real-madrid |
+| Real Madrid CF | Eduardo Camavinga | 2002-11-10 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/real-madrid |
+| Real Madrid CF | Luka Modrić | 1985-09-09 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/real-madrid |
+| Real Madrid CF | Jude Bellingham | 2003-06-29 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/real-madrid |
+| Real Madrid CF | Brahim Díaz | 1999-08-03 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/real-madrid |
+| Real Madrid CF | Vinícius Júnior | 2000-07-12 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/real-madrid |
+| Real Madrid CF | Rodrygo | 2001-01-09 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/real-madrid |
+| Real Madrid CF | Joselu | 1990-03-27 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/real-madrid |
+| SSC Napoli | Alex Meret | 1997-03-22 | verified_secondary | https://www.footballsquads.co.uk/italy/2023-2024/seriea/napoli.htm |
+| SSC Napoli | Amir Rrahmani | 1994-02-24 | verified_secondary | https://www.footballsquads.co.uk/italy/2023-2024/seriea/napoli.htm |
+| SSC Napoli | Natan | 2001-02-06 | verified_secondary | https://www.footballsquads.co.uk/italy/2023-2024/seriea/napoli.htm |
+| SSC Napoli | Juan Jesus | 1991-06-10 | verified_secondary | https://www.footballsquads.co.uk/italy/2023-2024/seriea/napoli.htm |
+| SSC Napoli | Mathías Olivera | 1997-10-31 | verified_secondary | https://www.footballsquads.co.uk/italy/2023-2024/seriea/napoli.htm |
+| SSC Napoli | Mário Rui | 1991-05-27 | verified_secondary | https://www.footballsquads.co.uk/italy/2023-2024/seriea/napoli.htm |
+| SSC Napoli | Giovanni Di Lorenzo | 1993-08-04 | verified_secondary | https://www.footballsquads.co.uk/italy/2023-2024/seriea/napoli.htm |
+| SSC Napoli | Stanislav Lobotka | 1994-11-25 | verified_secondary | https://www.footballsquads.co.uk/italy/2023-2024/seriea/napoli.htm |
+| SSC Napoli | André-Frank Zambo Anguissa | 1995-11-16 | verified_secondary | https://www.footballsquads.co.uk/italy/2023-2024/seriea/napoli.htm |
+| SSC Napoli | Piotr Zieliński | 1994-05-20 | verified_secondary | https://www.footballsquads.co.uk/italy/2023-2024/seriea/napoli.htm |
+| SSC Napoli | Jens Cajuste | 1999-08-10 | verified_secondary | https://www.footballsquads.co.uk/italy/2023-2024/seriea/napoli.htm |
+| SSC Napoli | Khvicha Kvaratskhelia | 2001-02-12 | verified_secondary | https://www.footballsquads.co.uk/italy/2023-2024/seriea/napoli.htm |
+| SSC Napoli | Matteo Politano | 1993-08-03 | verified_secondary | https://www.footballsquads.co.uk/italy/2023-2024/seriea/napoli.htm |
+| SSC Napoli | Victor Osimhen | 1998-12-29 | verified_secondary | https://www.footballsquads.co.uk/italy/2023-2024/seriea/napoli.htm |
+| SSC Napoli | Giacomo Raspadori | 2000-02-18 | verified_secondary | https://www.footballsquads.co.uk/italy/2023-2024/seriea/napoli.htm |
+| Real Sociedad de Fútbol | Álex Remiro | 1995-03-24 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/real-sociedad |
+| Real Sociedad de Fútbol | Igor Zubeldia | 1997-03-30 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/real-sociedad |
+| Real Sociedad de Fútbol | Robin Le Normand | 1996-11-11 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/real-sociedad |
+| Real Sociedad de Fútbol | Jon Pacheco | 2001-01-08 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/real-sociedad |
+| Real Sociedad de Fútbol | Aihen Muñoz | 1997-08-16 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/real-sociedad |
+| Real Sociedad de Fútbol | Javi Galán | 1994-11-19 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/real-sociedad |
+| Real Sociedad de Fútbol | Hamari Traoré | 1992-01-27 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/real-sociedad |
+| Real Sociedad de Fútbol | Aritz Elustondo | 1994-03-28 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/real-sociedad |
+| Real Sociedad de Fútbol | Martín Zubimendi | 1999-02-02 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/real-sociedad |
+| Real Sociedad de Fútbol | Mikel Merino | 1996-06-22 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/real-sociedad |
+| Real Sociedad de Fútbol | Brais Méndez | 1997-01-07 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/real-sociedad |
+| Real Sociedad de Fútbol | Beñat Turrientes | 2002-01-31 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/real-sociedad |
+| Real Sociedad de Fútbol | Ander Barrenetxea | 2001-12-27 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/real-sociedad |
+| Real Sociedad de Fútbol | Arsen Zakharyan | 2003-05-26 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/real-sociedad |
+| Real Sociedad de Fútbol | Takefusa Kubo | 2001-06-04 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/real-sociedad |
+| Real Sociedad de Fútbol | Mikel Oyarzabal | 1997-04-21 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/real-sociedad |
+| Real Sociedad de Fútbol | Umar Sadiq | 1997-02-02 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/real-sociedad |
+| FC Internazionale Milano | Yann Sommer | 1988-12-17 | verified_secondary | https://www.footballsquads.co.uk/italy/2023-2024/seriea/inter.htm |
+| FC Internazionale Milano | Emil Audero | 1997-01-18 | verified_secondary | https://www.footballsquads.co.uk/italy/2023-2024/seriea/inter.htm |
+| FC Internazionale Milano | Alessandro Bastoni | 1999-04-13 | verified_secondary | https://www.footballsquads.co.uk/italy/2023-2024/seriea/inter.htm |
+| FC Internazionale Milano | Benjamin Pavard | 1996-03-28 | verified_secondary | https://www.footballsquads.co.uk/italy/2023-2024/seriea/inter.htm |
+| FC Internazionale Milano | Stefan de Vrij | 1992-02-05 | verified_secondary | https://www.footballsquads.co.uk/italy/2023-2024/seriea/inter.htm |
+| FC Internazionale Milano | Francesco Acerbi | 1988-02-10 | verified_secondary | https://www.footballsquads.co.uk/italy/2023-2024/seriea/inter.htm |
+| FC Internazionale Milano | Federico Dimarco | 1997-11-10 | verified_secondary | https://www.footballsquads.co.uk/italy/2023-2024/seriea/inter.htm |
+| FC Internazionale Milano | Carlos Augusto | 1999-01-07 | verified_secondary | https://www.footballsquads.co.uk/italy/2023-2024/seriea/inter.htm |
+| FC Internazionale Milano | Matteo Darmian | 1989-12-02 | verified_secondary | https://www.footballsquads.co.uk/italy/2023-2024/seriea/inter.htm |
+| FC Internazionale Milano | Denzel Dumfries | 1996-04-18 | verified_secondary | https://www.footballsquads.co.uk/italy/2023-2024/seriea/inter.htm |
+| FC Internazionale Milano | Hakan Çalhanoğlu | 1994-02-08 | verified_secondary | https://www.footballsquads.co.uk/italy/2023-2024/seriea/inter.htm |
+| FC Internazionale Milano | Kristjan Asllani | 2002-03-09 | verified_secondary | https://www.footballsquads.co.uk/italy/2023-2024/seriea/inter.htm |
+| FC Internazionale Milano | Nicolò Barella | 1997-02-07 | verified_secondary | https://www.footballsquads.co.uk/italy/2023-2024/seriea/inter.htm |
+| FC Internazionale Milano | Henrikh Mkhitaryan | 1989-01-21 | verified_secondary | https://www.footballsquads.co.uk/italy/2023-2024/seriea/inter.htm |
+| FC Internazionale Milano | Davide Frattesi | 1999-09-22 | verified_secondary | https://www.footballsquads.co.uk/italy/2023-2024/seriea/inter.htm |
+| FC Internazionale Milano | Lautaro Martínez | 1997-08-22 | verified_secondary | https://www.footballsquads.co.uk/italy/2023-2024/seriea/inter.htm |
+| FC Internazionale Milano | Marcus Thuram | 1997-08-06 | verified_secondary | https://www.footballsquads.co.uk/italy/2023-2024/seriea/inter.htm |
+| FC Internazionale Milano | Alexis Sánchez | 1988-12-19 | verified_secondary | https://www.footballsquads.co.uk/italy/2023-2024/seriea/inter.htm |
+| Club Atlético de Madrid | Jan Oblak | 1993-01-07 | verified_secondary | https://footballsquads.co.uk/spain/2023-2024/laliga/amadrid.htm |
+| Club Atlético de Madrid | Axel Witsel | 1989-01-12 | verified_secondary | https://footballsquads.co.uk/spain/2023-2024/laliga/amadrid.htm |
+| Club Atlético de Madrid | Mario Hermoso | 1995-06-18 | verified_secondary | https://footballsquads.co.uk/spain/2023-2024/laliga/amadrid.htm |
+| Club Atlético de Madrid | José María Giménez | 1995-01-20 | verified_secondary | https://footballsquads.co.uk/spain/2023-2024/laliga/amadrid.htm |
+| Club Atlético de Madrid | Stefan Savić | 1991-01-08 | verified_secondary | https://footballsquads.co.uk/spain/2023-2024/laliga/amadrid.htm |
+| Club Atlético de Madrid | Samuel Lino | 1999-12-23 | verified_secondary | https://footballsquads.co.uk/spain/2023-2024/laliga/amadrid.htm |
+| Club Atlético de Madrid | Rodrigo Riquelme | 2000-04-02 | verified_secondary | https://footballsquads.co.uk/spain/2023-2024/laliga/amadrid.htm |
+| Club Atlético de Madrid | Nahuel Molina | 1998-04-06 | verified_official | https://en.atleticodemadrid.com/noticias/molina-is-now-a-red-white-player |
+| Club Atlético de Madrid | César Azpilicueta | 1989-08-28 | verified_secondary | https://footballsquads.co.uk/spain/2023-2024/laliga/amadrid.htm |
+| Club Atlético de Madrid | Koke | 1992-01-08 | verified_secondary | https://footballsquads.co.uk/spain/2023-2024/laliga/amadrid.htm |
+| Club Atlético de Madrid | Rodrigo De Paul | 1994-05-24 | verified_secondary | https://footballsquads.co.uk/spain/2023-2024/laliga/amadrid.htm |
+| Club Atlético de Madrid | Marcos Llorente | 1995-01-30 | verified_secondary | https://footballsquads.co.uk/spain/2023-2024/laliga/amadrid.htm |
+| Club Atlético de Madrid | Saúl Ñíguez | 1994-11-21 | verified_secondary | https://footballsquads.co.uk/spain/2023-2024/laliga/amadrid.htm |
+| Club Atlético de Madrid | Antoine Griezmann | 1991-03-21 | verified_secondary | https://footballsquads.co.uk/spain/2023-2024/laliga/amadrid.htm |
+| Club Atlético de Madrid | Álvaro Morata | 1992-10-23 | verified_secondary | https://footballsquads.co.uk/spain/2023-2024/laliga/amadrid.htm |
+| Club Atlético de Madrid | Ángel Correa | 1995-03-09 | verified_secondary | https://footballsquads.co.uk/spain/2023-2024/laliga/amadrid.htm |
+| SS Lazio | Ivan Provedel | 1994-03-17 | verified_secondary | https://footballsquads.co.uk/italy/2023-2024/seriea/lazio.htm |
+| SS Lazio | Alessio Romagnoli | 1995-01-12 | verified_secondary | https://footballsquads.co.uk/italy/2023-2024/seriea/lazio.htm |
+| SS Lazio | Patric | 1993-04-17 | verified_secondary | https://footballsquads.co.uk/italy/2023-2024/seriea/lazio.htm |
+| SS Lazio | Mario Gila | 2000-08-29 | verified_secondary | https://footballsquads.co.uk/italy/2023-2024/seriea/lazio.htm |
+| SS Lazio | Adam Marušić | 1992-10-17 | verified_secondary | https://footballsquads.co.uk/italy/2023-2024/seriea/lazio.htm |
+| SS Lazio | Luca Pellegrini | 1999-03-07 | verified_secondary | https://footballsquads.co.uk/italy/2023-2024/seriea/lazio.htm |
+| SS Lazio | Manuel Lazzari | 1993-11-29 | verified_secondary | https://footballsquads.co.uk/italy/2023-2024/seriea/lazio.htm |
+| SS Lazio | Elseid Hysaj | 1994-02-02 | verified_secondary | https://footballsquads.co.uk/italy/2023-2024/seriea/lazio.htm |
+| SS Lazio | Matías Vecino | 1991-08-24 | verified_secondary | https://footballsquads.co.uk/italy/2023-2024/seriea/lazio.htm |
+| SS Lazio | Danilo Cataldi | 1994-08-06 | verified_secondary | https://footballsquads.co.uk/italy/2023-2024/seriea/lazio.htm |
+| SS Lazio | Matteo Guendouzi | 1999-04-14 | verified_secondary | https://footballsquads.co.uk/italy/2023-2024/seriea/lazio.htm |
+| SS Lazio | Luis Alberto | 1992-09-28 | verified_secondary | https://footballsquads.co.uk/italy/2023-2024/seriea/lazio.htm |
+| SS Lazio | Daichi Kamada | 1996-08-05 | verified_secondary | https://footballsquads.co.uk/italy/2023-2024/seriea/lazio.htm |
+| SS Lazio | Mattia Zaccagni | 1995-06-16 | verified_secondary | https://footballsquads.co.uk/italy/2023-2024/seriea/lazio.htm |
+| SS Lazio | Pedro Rodríguez | 1987-07-28 | verified_secondary | https://footballsquads.co.uk/italy/2023-2024/seriea/lazio.htm |
+| SS Lazio | Felipe Anderson | 1993-04-15 | verified_secondary | https://footballsquads.co.uk/italy/2023-2024/seriea/lazio.htm |
+| SS Lazio | Gustav Isaksen | 2001-04-19 | verified_secondary | https://footballsquads.co.uk/italy/2023-2024/seriea/lazio.htm |
+| SS Lazio | Ciro Immobile | 1990-02-20 | verified_secondary | https://footballsquads.co.uk/italy/2023-2024/seriea/lazio.htm |
+| SS Lazio | Valentín Castellanos | 1998-10-03 | verified_secondary | https://footballsquads.co.uk/italy/2023-2024/seriea/lazio.htm |
+| Borussia Dortmund | Gregor Kobel | 1997-12-06 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/borussia-dortmund |
+| Borussia Dortmund | Alexander Meyer | 1991-04-13 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/borussia-dortmund |
+| Borussia Dortmund | Mats Hummels | 1988-12-16 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/borussia-dortmund |
+| Borussia Dortmund | Nico Schlotterbeck | 1999-12-01 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/borussia-dortmund |
+| Borussia Dortmund | Niklas Süle | 1995-09-03 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/borussia-dortmund |
+| Borussia Dortmund | Ian Maatsen | 2002-03-10 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/borussia-dortmund |
+| Borussia Dortmund | Ramy Bensebaini | 1995-04-16 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/borussia-dortmund |
+| Borussia Dortmund | Julian Ryerson | 1997-11-17 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/borussia-dortmund |
+| Borussia Dortmund | Marius Wolf | 1995-05-27 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/borussia-dortmund |
+| Borussia Dortmund | Emre Can | 1994-01-12 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/borussia-dortmund |
+| Borussia Dortmund | Salih Özcan | 1998-01-11 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/borussia-dortmund |
+| Borussia Dortmund | Marcel Sabitzer | 1994-03-17 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/borussia-dortmund |
+| Borussia Dortmund | Felix Nmecha | 2000-10-10 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/borussia-dortmund |
+| Borussia Dortmund | Julian Brandt | 1996-05-02 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/borussia-dortmund |
+| Borussia Dortmund | Marco Reus | 1989-05-31 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/borussia-dortmund |
+| Borussia Dortmund | Karim Adeyemi | 2002-01-18 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/borussia-dortmund |
+| Borussia Dortmund | Jamie Bynoe-Gittens | 2004-08-08 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/borussia-dortmund |
+| Borussia Dortmund | Jadon Sancho | 2000-03-25 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/borussia-dortmund |
+| Borussia Dortmund | Donyell Malen | 1999-01-19 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/borussia-dortmund |
+| Borussia Dortmund | Niclas Füllkrug | 1993-02-09 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/borussia-dortmund |
+| Borussia Dortmund | Sébastien Haller | 1994-06-22 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/borussia-dortmund |
+| Paris Saint-Germain FC | Gianluigi Donnarumma | 1999-02-25 | verified_secondary | https://footballsquads.co.uk/france/2023-2024/ligue1/psg.htm |
+| Paris Saint-Germain FC | Marquinhos | 1994-05-14 | verified_secondary | https://footballsquads.co.uk/france/2023-2024/ligue1/psg.htm |
+| Paris Saint-Germain FC | Milan Škriniar | 1995-02-11 | verified_secondary | https://footballsquads.co.uk/france/2023-2024/ligue1/psg.htm |
+| Paris Saint-Germain FC | Lucas Beraldo | 2003-11-24 | verified_secondary | https://footballsquads.co.uk/france/2023-2024/ligue1/psg.htm |
+| Paris Saint-Germain FC | Lucas Hernández | 1996-02-14 | verified_secondary | https://footballsquads.co.uk/france/2023-2024/ligue1/psg.htm |
+| Paris Saint-Germain FC | Nuno Mendes | 2002-06-19 | verified_secondary | https://footballsquads.co.uk/france/2023-2024/ligue1/psg.htm |
+| Paris Saint-Germain FC | Achraf Hakimi | 1998-11-04 | verified_secondary | https://footballsquads.co.uk/france/2023-2024/ligue1/psg.htm |
+| Paris Saint-Germain FC | Manuel Ugarte | 2001-04-11 | verified_secondary | https://footballsquads.co.uk/france/2023-2024/ligue1/psg.htm |
+| Paris Saint-Germain FC | Vitinha | 2000-02-13 | verified_secondary | https://footballsquads.co.uk/france/2023-2024/ligue1/psg.htm |
+| Paris Saint-Germain FC | Warren Zaïre-Emery | 2006-03-08 | verified_secondary | https://footballsquads.co.uk/france/2023-2024/ligue1/psg.htm |
+| Paris Saint-Germain FC | Fabián Ruiz | 1996-04-03 | verified_secondary | https://footballsquads.co.uk/france/2023-2024/ligue1/psg.htm |
+| Paris Saint-Germain FC | Bradley Barcola | 2002-09-02 | verified_secondary | https://footballsquads.co.uk/france/2023-2024/ligue1/psg.htm |
+| Paris Saint-Germain FC | Ousmane Dembélé | 1997-05-15 | verified_secondary | https://footballsquads.co.uk/france/2023-2024/ligue1/psg.htm |
+| Paris Saint-Germain FC | Lee Kang-in | 2001-02-19 | verified_secondary | https://footballsquads.co.uk/france/2023-2024/ligue1/psg.htm |
+| Paris Saint-Germain FC | Kylian Mbappé | 1998-12-20 | verified_secondary | https://footballsquads.co.uk/france/2023-2024/ligue1/psg.htm |
+| Paris Saint-Germain FC | Randal Kolo Muani | 1998-12-05 | verified_secondary | https://footballsquads.co.uk/france/2023-2024/ligue1/psg.htm |
+| Manchester City FC | Ederson | 1993-08-17 | verified_secondary | https://www.footballsquads.co.uk/eng/2023-2024/engprem/mancity.htm |
+| Manchester City FC | Stefan Ortega | 1992-11-06 | verified_secondary | https://www.footballsquads.co.uk/eng/2023-2024/engprem/mancity.htm |
+| Manchester City FC | Rúben Dias | 1997-05-14 | verified_secondary | https://www.footballsquads.co.uk/eng/2023-2024/engprem/mancity.htm |
+| Manchester City FC | Manuel Akanji | 1995-07-19 | verified_secondary | https://www.footballsquads.co.uk/eng/2023-2024/engprem/mancity.htm |
+| Manchester City FC | John Stones | 1994-05-28 | verified_secondary | https://www.footballsquads.co.uk/eng/2023-2024/engprem/mancity.htm |
+| Manchester City FC | Joško Gvardiol | 2002-01-23 | verified_secondary | https://www.footballsquads.co.uk/eng/2023-2024/engprem/mancity.htm |
+| Manchester City FC | Nathan Aké | 1995-02-18 | verified_secondary | https://www.footballsquads.co.uk/eng/2023-2024/engprem/mancity.htm |
+| Manchester City FC | Kyle Walker | 1990-05-28 | verified_secondary | https://www.footballsquads.co.uk/eng/2023-2024/engprem/mancity.htm |
+| Manchester City FC | Rico Lewis | 2004-11-21 | verified_secondary | https://www.footballsquads.co.uk/eng/2023-2024/engprem/mancity.htm |
+| Manchester City FC | Rodri | 1996-06-22 | verified_secondary | https://www.footballsquads.co.uk/eng/2023-2024/engprem/mancity.htm |
+| Manchester City FC | Mateo Kovačić | 1994-05-06 | verified_secondary | https://www.footballsquads.co.uk/eng/2023-2024/engprem/mancity.htm |
+| Manchester City FC | Phil Foden | 2000-05-28 | verified_secondary | https://www.footballsquads.co.uk/eng/2023-2024/engprem/mancity.htm |
+| Manchester City FC | Kevin De Bruyne | 1991-06-28 | verified_secondary | https://www.footballsquads.co.uk/eng/2023-2024/engprem/mancity.htm |
+| Manchester City FC | Jack Grealish | 1995-09-10 | verified_secondary | https://www.footballsquads.co.uk/eng/2023-2024/engprem/mancity.htm |
+| Manchester City FC | Jérémy Doku | 2002-05-27 | verified_secondary | https://www.footballsquads.co.uk/eng/2023-2024/engprem/mancity.htm |
+| Manchester City FC | Bernardo Silva | 1994-08-10 | verified_secondary | https://www.footballsquads.co.uk/eng/2023-2024/engprem/mancity.htm |
+| Manchester City FC | Oscar Bobb | 2003-07-12 | verified_secondary | https://www.footballsquads.co.uk/eng/2023-2024/engprem/mancity.htm |
+| Manchester City FC | Erling Haaland | 2000-07-21 | verified_secondary | https://www.footballsquads.co.uk/eng/2023-2024/engprem/mancity.htm |
+| Manchester City FC | Julián Álvarez | 2000-01-31 | verified_secondary | https://www.footballsquads.co.uk/eng/2023-2024/engprem/mancity.htm |
+| RB Leipzig | Janis Blaswich | 1991-05-02 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/rb-leipzig |
+| RB Leipzig | Péter Gulácsi | 1990-05-06 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/rb-leipzig |
+| RB Leipzig | Mohamed Simakan | 2000-05-03 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/rb-leipzig |
+| RB Leipzig | Castello Lukeba | 2002-12-17 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/rb-leipzig |
+| RB Leipzig | Lukas Klostermann | 1996-06-03 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/rb-leipzig |
+| RB Leipzig | David Raum | 1998-04-22 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/rb-leipzig |
+| RB Leipzig | Christopher Lenz | 1994-09-22 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/rb-leipzig |
+| RB Leipzig | Benjamin Henrichs | 1997-02-23 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/rb-leipzig |
+| RB Leipzig | Xaver Schlager | 1997-09-28 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/rb-leipzig |
+| RB Leipzig | Nicolas Seiwald | 2001-05-04 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/rb-leipzig |
+| RB Leipzig | Amadou Haidara | 1998-01-31 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/rb-leipzig |
+| RB Leipzig | Kevin Kampl | 1990-10-09 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/rb-leipzig |
+| RB Leipzig | Xavi Simons | 2003-04-21 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/rb-leipzig |
+| RB Leipzig | Emil Forsberg | 1991-10-23 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/rb-leipzig |
+| RB Leipzig | Dani Olmo | 1998-05-07 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/rb-leipzig |
+| RB Leipzig | Loïs Openda | 2000-02-16 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/rb-leipzig |
+| RB Leipzig | Benjamin Šeško | 2003-05-31 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/rb-leipzig |
+| RB Leipzig | Yussuf Poulsen | 1994-06-15 | verified_official | https://datencenter.dfb.de/competitions/champions-league/seasons/2023-24/teams/rb-leipzig |
+| FC Barcelona | Marc-André ter Stegen | 1992-04-30 | verified_secondary | https://footballsquads.co.uk/spain/2023-2024/laliga/barce.htm |
+| FC Barcelona | Iñaki Peña | 1999-03-02 | verified_secondary | https://footballsquads.co.uk/spain/2023-2024/laliga/barce.htm |
+| FC Barcelona | Ronald Araújo | 1999-03-07 | verified_secondary | https://footballsquads.co.uk/spain/2023-2024/laliga/barce.htm |
+| FC Barcelona | Pau Cubarsí | 2007-01-22 | verified_secondary | https://footballsquads.co.uk/spain/2023-2024/laliga/barce.htm |
+| FC Barcelona | Iñigo Martínez | 1991-05-17 | verified_secondary | https://footballsquads.co.uk/spain/2023-2024/laliga/barce.htm |
+| FC Barcelona | João Cancelo | 1994-05-27 | verified_secondary | https://footballsquads.co.uk/spain/2023-2024/laliga/barce.htm |
+| FC Barcelona | Alejandro Balde | 2003-10-18 | verified_secondary | https://footballsquads.co.uk/spain/2023-2024/laliga/barce.htm |
+| FC Barcelona | Jules Koundé | 1998-11-12 | verified_secondary | https://footballsquads.co.uk/spain/2023-2024/laliga/barce.htm |
+| FC Barcelona | Andreas Christensen | 1996-04-10 | verified_secondary | https://footballsquads.co.uk/spain/2023-2024/laliga/barce.htm |
+| FC Barcelona | Oriol Romeu | 1991-09-24 | verified_secondary | https://footballsquads.co.uk/spain/2023-2024/laliga/barce.htm |
+| FC Barcelona | İlkay Gündoğan | 1990-10-24 | verified_secondary | https://footballsquads.co.uk/spain/2023-2024/laliga/barce.htm |
+| FC Barcelona | Frenkie de Jong | 1997-05-12 | verified_secondary | https://footballsquads.co.uk/spain/2023-2024/laliga/barce.htm |
+| FC Barcelona | Pedri | 2002-11-25 | verified_secondary | https://footballsquads.co.uk/spain/2023-2024/laliga/barce.htm |
+| FC Barcelona | João Félix | 1999-11-10 | verified_secondary | https://footballsquads.co.uk/spain/2023-2024/laliga/barce.htm |
+| FC Barcelona | Ferran Torres | 2000-02-29 | verified_secondary | https://footballsquads.co.uk/spain/2023-2024/laliga/barce.htm |
+| FC Barcelona | Raphinha | 1996-12-14 | verified_official | https://www.fcbarcelona.com/en/football/first-team/jugadores/24156/raphinha |
+| FC Barcelona | Lamine Yamal | 2007-07-13 | verified_secondary | https://footballsquads.co.uk/spain/2023-2024/laliga/barce.htm |
+| FC Barcelona | Robert Lewandowski | 1988-08-21 | verified_secondary | https://footballsquads.co.uk/spain/2023-2024/laliga/barce.htm |
+| FC Porto | Diogo Costa | 1999-09-19 | verified_secondary | https://footballsquads.co.uk/portugal/2023-2024/primeira/porto.htm |
+| FC Porto | Pepe | 1983-02-26 | verified_secondary | https://footballsquads.co.uk/portugal/2023-2024/primeira/porto.htm |
+| FC Porto | David Carmo | 1999-07-19 | verified_official | https://www.olympiacos.org/en/2024/01/27/david-carmo-joins-olympiacos/ |
+| FC Porto | Fábio Cardoso | 1994-04-19 | verified_secondary | https://footballsquads.co.uk/portugal/2023-2024/primeira/porto.htm |
+| FC Porto | Wendell | 1993-07-20 | verified_secondary | https://footballsquads.co.uk/portugal/2023-2024/primeira/porto.htm |
+| FC Porto | Zaidu Sanusi | 1997-06-13 | verified_secondary | https://footballsquads.co.uk/portugal/2023-2024/primeira/porto.htm |
+| FC Porto | João Mário | 2000-01-03 | verified_secondary | https://footballsquads.co.uk/portugal/2023-2024/primeira/porto.htm |
+| FC Porto | Jorge Sánchez | 1997-12-10 | verified_secondary | https://footballsquads.co.uk/portugal/2023-2024/primeira/porto.htm |
+| FC Porto | Alan Varela | 2001-07-04 | verified_secondary | https://footballsquads.co.uk/portugal/2023-2024/primeira/porto.htm |
+| FC Porto | Stephen Eustáquio | 1996-12-21 | verified_secondary | https://footballsquads.co.uk/portugal/2023-2024/primeira/porto.htm |
+| FC Porto | Nico González | 2002-01-03 | verified_secondary | https://footballsquads.co.uk/portugal/2023-2024/primeira/porto.htm |
+| FC Porto | Pepê | 1997-02-24 | verified_secondary | https://footballsquads.co.uk/portugal/2023-2024/primeira/porto.htm |
+| FC Porto | André Franco | 1998-04-12 | verified_secondary | https://footballsquads.co.uk/portugal/2023-2024/primeira/porto.htm |
+| FC Porto | Galeno | 1997-10-22 | verified_secondary | https://footballsquads.co.uk/portugal/2023-2024/primeira/porto.htm |
+| FC Porto | Francisco Conceição | 2002-12-14 | verified_secondary | https://footballsquads.co.uk/portugal/2023-2024/primeira/porto.htm |
+| FC Porto | Evanilson | 1999-10-06 | verified_secondary | https://footballsquads.co.uk/portugal/2023-2024/primeira/porto.htm |
+| FC Porto | Mehdi Taremi | 1992-07-18 | verified_secondary | https://footballsquads.co.uk/portugal/2023-2024/primeira/porto.htm |
