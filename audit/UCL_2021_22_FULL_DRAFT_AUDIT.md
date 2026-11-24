@@ -1381,3 +1381,12 @@ Competition Top Class: 에데르송, 후벵 디아스, 주앙 칸셀루, 베르�
 ## 자동 검증
 
 PASS: 125경기/96조별경기/32구단/16평가 구단/380골/중복 ID 없음/구단별 11주전/포지션별 최대 1후보/11명 Best XI. FAIL/PENDING: 독립 3시즌 경기력 전체, 생년 전원, 실제 선발 및 포지션 빈도, 모든 선수 티어 및 전체 순위, 실제 브라우저, CI.
+
+## 추가 저장 및 검증 기록
+
+- 최초 구축 커밋: https://github.com/wjdduddlf112/footballarch/commit/9a7c1c9c86bea277ca01a5447e56c8bce4d92925
+- 공식 시즌 베스트 XI 출처로 본선 출전 자체를 독립 확인한 후보 11명: Kevin De Bruyne, Kylian Mbappé, Virgil van Dijk, Andrew Robertson, Trent Alexander-Arnold, Fabinho, Thibaut Courtois, Luka Modrić, Vinícius Júnior, Karim Benzema, Antonio Rüdiger. 정확한 출전 횟수는 별도 대조 필요. 다른 후보의 공식 개별 출전 검증은 보류.
+- 생년월일 기입 203명(독립 확인 49명, 기존 자료 참고 154명), 미기입 91명.
+- 추가 재검토 대상: Timo Werner의 2021-22 UCL 득점 기여 및 Chelsea 공격 포지션 경쟁; 현 후보 명단에서 제외된 이유의 독립 검증 필요.
+- 전체 후보 294명, 잠정 티어 37명, 보류 257명. 전원에 대한 3시즌 평가 완결로 간주하지 않음.
+- JSON 재조회와 구조 확인 완료. 실제 웹 브라우저 렌더링과 CI 통과 미확인.

@@ -1,3 +1,11 @@
+## UEFA 2021–22 UCL — 신규 구축 / 부분 검증 DRAFT, 2026-11-24
+
+- 범위: UCL 2021–22만. 2019–20, 2020–21, 2021–22 개인 평가 기간. 사용자 승인 없음.
+- 본선 32팀, 8개 조, 125경기, 380골; 16강 진출 16팀 평가 대상. 조별 경기 기록 재계산 완료.
+- 후보 294명(주전 제안 176명, 후보 118명), 보조 출전 자료 294명, 공식 시즌 베스트 XI로 출전 확인 11명. 생년월일 독립 확인 49명, 기입 203명. 잠정 티어/순위 37명, 근거 부족 257명. 완전한 독립 3시즌 평가 및 포지션별 실제 출전 빈도 검증 미완료.
+- Best XI: 4-3-3 proposed_unapproved. JSON: [ucl-2021-22.json](../data/ucl-2021-22.json), 전체 후보 및 근거: [UCL_2021_22_FULL_DRAFT_AUDIT.md](UCL_2021_22_FULL_DRAFT_AUDIT.md).
+- 최초 구축 커밋: 9a7c1c9c86bea277ca01a5447e56c8bce4d92925. JSON 구조 재조회 완료. CI 및 실사이트 렌더링 미확인. 다음 시즌 진행하지 않음.
+
 ## UEFA 2020–21 UCL — DRAFT main-stage archive and 16-club nomination, 2026-11-13
 
 - **범위:** UEFA Champions League 2020–21만. 다른 유럽대항전은 이번 지시로 작업하지 않음. 새 파일 `data/ucl-2020-21.json`은 `draft_unapproved`; Best XI는 `proposed_unapproved`.
