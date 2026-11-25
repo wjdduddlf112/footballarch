@@ -7,6 +7,7 @@ const competitionGroups={
 };
 const ranks=["S","A+","A","A-","B+","B","B-","C+","C","C-","D"];
 const positions=["GK","CB","LB","RB","DM","CM","CAM","LW","RW","ST"];
+const slots343=[["LW",17,15],["ST",50,11],["RW",83,15],["LB",10,49],["DM",37,53],["CM",63,53],["RB",90,49],["CB",25,77],["CB",50,81],["CB",75,77],["GK",50,93]];
 const slots433=[["LW",15,13],["ST",50,11],["RW",85,13],["CM",30,37],["CAM",70,37],["DM",50,54],["LB",13,73],["CB",37,76],["CB",63,76],["RB",87,73],["GK",50,91]];
 const slots442=[["ST",35,14],["ST",65,14],["LW",12,40],["CM",42,45],["DM",60,52],["RW",88,40],["LB",13,74],["CB",37,76],["CB",63,76],["RB",87,74],["GK",50,91]];
 const slots4411=[["ST",50,12],["CAM",50,28],["LW",12,45],["CM",40,53],["DM",61,56],["RW",88,45],["LB",13,76],["CB",37,79],["CB",63,79],["RB",87,76],["GK",50,92]];
@@ -262,8 +263,8 @@ function topPage(){
 }
 function formation(){
  let selection=(data.bestXi||[]).slice(0,11),used={};
- let formationName=["3-4-1-2","3-5-2","4-3-1-2","4-4-1-1","4-4-2","4-2-3-1","4-3-3"].includes(data?.meta?.formation)?data.meta.formation:"4-3-3";
- let layout=formationName==="3-5-2"?slots352:formationName==="3-4-1-2"?slots3412:formationName==="4-3-1-2"?slots4312:formationName==="4-2-3-1"?slots4231:formationName==="4-4-1-1"?slots4411:formationName==="4-4-2"?slots442:slots433;
+ let formationName=["3-4-3","3-4-1-2","3-5-2","4-3-1-2","4-4-1-1","4-4-2","4-2-3-1","4-3-3"].includes(data?.meta?.formation)?data.meta.formation:"4-3-3";
+ let layout=formationName==="3-4-3"?slots343:formationName==="3-5-2"?slots352:formationName==="3-4-1-2"?slots3412:formationName==="4-3-1-2"?slots4312:formationName==="4-2-3-1"?slots4231:formationName==="4-4-1-1"?slots4411:formationName==="4-4-2"?slots442:slots433;
  // A classic 4-4-2 may contain two CM players rather than one CM plus one DM.
  // Respect existing 1 CM + 1 DM data for other seasons while rendering both CMs here.
  if(formationName==="4-4-2"&&selection.filter(p=>p.position==="CM").length===2&&selection.filter(p=>p.position==="CAM").length===1&&selection.filter(p=>p.position==="DM").length===1){
