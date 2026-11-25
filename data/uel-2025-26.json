@@ -34,8 +34,8 @@
       "candidateCount": 142,
       "birthDatesPresent": 142,
       "independentDobAuditComplete": false,
-      "provisionalTiers": 41,
-      "provisionalRanks": 41,
+      "provisionalTiers": 56,
+      "provisionalRanks": 56,
       "priorBothSeasonsProxyCoverage": 25,
       "priorOneSeasonProxyCoverage": 34,
       "threeSeasonFullAudit": 0,
@@ -43,7 +43,9 @@
       "siteTestPending": true,
       "minutesSourced": 32,
       "worldClassCount": 5,
-      "competitionTopClassCount": 25
+      "competitionTopClassCount": 25,
+      "provisionalTierCount": 56,
+      "provisionalRankCount": 56
     }
   },
   "clubs": [
@@ -3698,7 +3700,7 @@
       },
       "assessmentStatus": "provisional current-season usage/performance; prior archive proxy where available; not full individual audit",
       "currentSeasonEditorialTier": "A+",
-      "rankStatus": "partial candidate ranking; unassessed candidates excluded",
+      "rankStatus": "provisional_tier_then_existing_rank_archive_proxy",
       "minutes": 990,
       "minutesSource": "https://m.aiscore.com/tournament-uefa-europa-league/2jr7owi6es1q0em/playerminutesplayed/59gklzig0oh87xd",
       "minutesStatus": "third-party published minutes; independent UEFA confirmation pending",
@@ -3714,8 +3716,8 @@
       "clubNameOriginal": "Aston Villa FC",
       "position": "GK",
       "role": "backup",
-      "tier": null,
-      "rank": null,
+      "tier": "B-",
+      "rank": 6,
       "review": "evidence_pending",
       "positionStatus": "QF lineup-based editorial assignment; season modal position pending",
       "roleStatus": "provisional; full tournament starts pending",
@@ -3723,9 +3725,10 @@
       "eligibilityStatus": "main-draw appearance in statistical snapshot",
       "sources": [
         "https://www.statbunker.com/competitions/SeasonAppearances?club_id=24&comp_id=784",
-        "https://footballsquads.co.uk/eng/2025-2026/engprem/avilla.htm"
+        "https://footballsquads.co.uk/eng/2025-2026/engprem/avilla.htm",
+        "https://github.com/wjdduddlf112/footballarch/blob/main/data/premierleague-2025-26.json"
       ],
-      "tierReason": null,
+      "tierReason": "동일 인물의 2025-26 premierleague 기존 DRAFT 개인 평가 B-를 조건부 참고. UEL 자체의 3시즌 개인 경기력 비교는 미완료.",
       "threeSeasonAssessment": {
         "seasons": [
           "2023-24",
@@ -3740,7 +3743,19 @@
         "independentAuditComplete": false,
         "previousSeasons": {}
       },
-      "assessmentStatus": "evidence_pending"
+      "assessmentStatus": "provisional_same_year_archive_proxy_not_independent_uel_assessment",
+      "displayTier": "B-",
+      "proposedTier": "B-",
+      "tierRationale": "동일 인물의 2025-26 premierleague 기존 DRAFT 개인 평가 B-를 조건부 참고. UEL 자체의 3시즌 개인 경기력 비교는 미완료.",
+      "tierSource": {
+        "archive": "data/premierleague-2025-26.json",
+        "referenceTier": "B-",
+        "scope": "same-season non-UEL archive proxy",
+        "referenceClub": "astonvilla",
+        "referenceAppearances": 7
+      },
+      "evidencePending": true,
+      "rankStatus": "provisional_tier_then_existing_rank_archive_proxy"
     },
     {
       "id": "uel-2025-26-astonvilla-ezri-konsa-1997-10-23",
@@ -3808,7 +3823,7 @@
       "minutesSource": "https://m.aiscore.com/tournament-uefa-europa-league/2jr7owi6es1q0em/playerminutesplayed/59gklzig0oh87xd",
       "minutesStatus": "third-party published minutes; independent UEFA confirmation pending",
       "currentSeasonEditorialTier": "B+",
-      "rankStatus": "partial candidate ranking; unassessed candidates excluded"
+      "rankStatus": "provisional_tier_then_existing_rank_archive_proxy"
     },
     {
       "id": "uel-2025-26-astonvilla-pau-torres-1997-01-16",
@@ -3876,7 +3891,7 @@
       "minutesSource": "https://m.aiscore.com/tournament-uefa-europa-league/2jr7owi6es1q0em/playerminutesplayed/59gklzig0oh87xd",
       "minutesStatus": "third-party published minutes; independent UEFA confirmation pending",
       "currentSeasonEditorialTier": "B+",
-      "rankStatus": "partial candidate ranking; unassessed candidates excluded"
+      "rankStatus": "provisional_tier_then_existing_rank_archive_proxy"
     },
     {
       "id": "uel-2025-26-astonvilla-victor-lindelof-1994-07-17",
@@ -3991,7 +4006,7 @@
       },
       "assessmentStatus": "provisional current-season usage/performance; prior archive proxy where available; not full individual audit",
       "currentSeasonEditorialTier": "A-",
-      "rankStatus": "partial candidate ranking; unassessed candidates excluded"
+      "rankStatus": "provisional_tier_then_existing_rank_archive_proxy"
     },
     {
       "id": "uel-2025-26-astonvilla-ian-maatsen-2002-03-10",
@@ -4003,8 +4018,8 @@
       "clubNameOriginal": "Aston Villa FC",
       "position": "LB",
       "role": "backup",
-      "tier": null,
-      "rank": null,
+      "tier": "B+",
+      "rank": 3,
       "review": "evidence_pending",
       "positionStatus": "QF lineup-based editorial assignment; season modal position pending",
       "roleStatus": "provisional; full tournament starts pending",
@@ -4012,9 +4027,10 @@
       "eligibilityStatus": "main-draw appearance in statistical snapshot",
       "sources": [
         "https://www.statbunker.com/competitions/SeasonAppearances?club_id=24&comp_id=784",
-        "https://footballsquads.co.uk/eng/2025-2026/engprem/avilla.htm"
+        "https://footballsquads.co.uk/eng/2025-2026/engprem/avilla.htm",
+        "https://github.com/wjdduddlf112/footballarch/blob/main/data/premierleague-2025-26.json"
       ],
-      "tierReason": null,
+      "tierReason": "동일 인물의 2025-26 premierleague 기존 DRAFT 개인 평가 B+를 조건부 참고. UEL 자체의 3시즌 개인 경기력 비교는 미완료.",
       "threeSeasonAssessment": {
         "seasons": [
           "2023-24",
@@ -4050,7 +4066,19 @@
           ]
         }
       },
-      "assessmentStatus": "evidence_pending"
+      "assessmentStatus": "provisional_same_year_archive_proxy_not_independent_uel_assessment",
+      "displayTier": "B+",
+      "proposedTier": "B+",
+      "tierRationale": "동일 인물의 2025-26 premierleague 기존 DRAFT 개인 평가 B+를 조건부 참고. UEL 자체의 3시즌 개인 경기력 비교는 미완료.",
+      "tierSource": {
+        "archive": "data/premierleague-2025-26.json",
+        "referenceTier": "B+",
+        "scope": "same-season non-UEL archive proxy",
+        "referenceClub": "astonvilla",
+        "referenceAppearances": 30
+      },
+      "evidencePending": true,
+      "rankStatus": "provisional_tier_then_existing_rank_archive_proxy"
     },
     {
       "id": "uel-2025-26-astonvilla-matty-cash-1997-08-07",
@@ -4062,8 +4090,8 @@
       "clubNameOriginal": "Aston Villa FC",
       "position": "RB",
       "role": "starter",
-      "tier": null,
-      "rank": null,
+      "tier": "A-",
+      "rank": 3,
       "review": "evidence_pending",
       "positionStatus": "QF lineup-based editorial assignment; season modal position pending",
       "roleStatus": "provisional; full tournament starts pending",
@@ -4072,9 +4100,10 @@
       "sources": [
         "https://www.skysports.com/football/bologna-vs-aston-villa/teams/554954",
         "https://www.skysports.com/football/aston-villa-vs-bologna/teams/554958",
-        "https://footballsquads.co.uk/eng/2025-2026/engprem/avilla.htm"
+        "https://footballsquads.co.uk/eng/2025-2026/engprem/avilla.htm",
+        "https://github.com/wjdduddlf112/footballarch/blob/main/data/premierleague-2025-26.json"
       ],
-      "tierReason": null,
+      "tierReason": "동일 인물의 2025-26 premierleague 기존 DRAFT 개인 평가 A-를 조건부 참고. UEL 자체의 3시즌 개인 경기력 비교는 미완료.",
       "threeSeasonAssessment": {
         "seasons": [
           "2023-24",
@@ -4110,7 +4139,19 @@
           ]
         }
       },
-      "assessmentStatus": "evidence_pending"
+      "assessmentStatus": "provisional_same_year_archive_proxy_not_independent_uel_assessment",
+      "displayTier": "A-",
+      "proposedTier": "A-",
+      "tierRationale": "동일 인물의 2025-26 premierleague 기존 DRAFT 개인 평가 A-를 조건부 참고. UEL 자체의 3시즌 개인 경기력 비교는 미완료.",
+      "tierSource": {
+        "archive": "data/premierleague-2025-26.json",
+        "referenceTier": "A-",
+        "scope": "same-season non-UEL archive proxy",
+        "referenceClub": "astonvilla",
+        "referenceAppearances": 35
+      },
+      "evidencePending": true,
+      "rankStatus": "provisional_tier_then_existing_rank_archive_proxy"
     },
     {
       "id": "uel-2025-26-astonvilla-andres-garcia-2003-02-07",
@@ -4204,7 +4245,7 @@
       },
       "assessmentStatus": "provisional current-season usage/performance; prior archive proxy where available; not full individual audit",
       "currentSeasonEditorialTier": "A",
-      "rankStatus": "partial candidate ranking; unassessed candidates excluded"
+      "rankStatus": "provisional_tier_then_existing_rank_archive_proxy"
     },
     {
       "id": "uel-2025-26-astonvilla-boubacar-kamara-1999-11-23",
@@ -4216,8 +4257,8 @@
       "clubNameOriginal": "Aston Villa FC",
       "position": "DM",
       "role": "backup",
-      "tier": null,
-      "rank": null,
+      "tier": "B",
+      "rank": 4,
       "review": "evidence_pending",
       "positionStatus": "QF lineup-based editorial assignment; season modal position pending",
       "roleStatus": "provisional; full tournament starts pending",
@@ -4225,9 +4266,10 @@
       "eligibilityStatus": "main-draw appearance in statistical snapshot",
       "sources": [
         "https://www.statbunker.com/competitions/SeasonAppearances?club_id=24&comp_id=784",
-        "https://footballsquads.co.uk/eng/2025-2026/engprem/avilla.htm"
+        "https://footballsquads.co.uk/eng/2025-2026/engprem/avilla.htm",
+        "https://github.com/wjdduddlf112/footballarch/blob/main/data/premierleague-2025-26.json"
       ],
-      "tierReason": null,
+      "tierReason": "동일 인물의 2025-26 premierleague 기존 DRAFT 개인 평가 B를 조건부 참고. UEL 자체의 3시즌 개인 경기력 비교는 미완료.",
       "threeSeasonAssessment": {
         "seasons": [
           "2023-24",
@@ -4263,7 +4305,19 @@
           ]
         }
       },
-      "assessmentStatus": "evidence_pending"
+      "assessmentStatus": "provisional_same_year_archive_proxy_not_independent_uel_assessment",
+      "displayTier": "B",
+      "proposedTier": "B",
+      "tierRationale": "동일 인물의 2025-26 premierleague 기존 DRAFT 개인 평가 B를 조건부 참고. UEL 자체의 3시즌 개인 경기력 비교는 미완료.",
+      "tierSource": {
+        "archive": "data/premierleague-2025-26.json",
+        "referenceTier": "B",
+        "scope": "same-season non-UEL archive proxy",
+        "referenceClub": "astonvilla",
+        "referenceAppearances": 18
+      },
+      "evidencePending": true,
+      "rankStatus": "provisional_tier_then_existing_rank_archive_proxy"
     },
     {
       "id": "uel-2025-26-astonvilla-youri-tielemans-1997-05-07",
@@ -4330,7 +4384,7 @@
       },
       "assessmentStatus": "provisional current-season usage/performance; prior archive proxy where available; not full individual audit",
       "currentSeasonEditorialTier": "A",
-      "rankStatus": "partial candidate ranking; unassessed candidates excluded"
+      "rankStatus": "provisional_tier_then_existing_rank_archive_proxy"
     },
     {
       "id": "uel-2025-26-astonvilla-douglas-luiz-1998-05-09",
@@ -4448,7 +4502,7 @@
       },
       "assessmentStatus": "provisional current-season usage/performance; prior archive proxy where available; not full individual audit",
       "currentSeasonEditorialTier": "A+",
-      "rankStatus": "partial candidate ranking; unassessed candidates excluded",
+      "rankStatus": "provisional_tier_then_existing_rank_archive_proxy",
       "minutes": 1087,
       "minutesSource": "https://m.aiscore.com/tournament-uefa-europa-league/2jr7owi6es1q0em/playerminutesplayed/59gklzig0oh87xd",
       "minutesStatus": "third-party published minutes; independent UEFA confirmation pending",
@@ -4499,7 +4553,7 @@
       },
       "assessmentStatus": "provisional current-season usage/performance; prior archive proxy where available; not full individual audit",
       "currentSeasonEditorialTier": "A+",
-      "rankStatus": "partial candidate ranking; unassessed candidates excluded",
+      "rankStatus": "provisional_tier_then_existing_rank_archive_proxy",
       "minutes": 994,
       "minutesSource": "https://m.aiscore.com/tournament-uefa-europa-league/2jr7owi6es1q0em/playerminutesplayed/59gklzig0oh87xd",
       "minutesStatus": "third-party published minutes; independent UEFA confirmation pending",
@@ -4515,8 +4569,8 @@
       "clubNameOriginal": "Aston Villa FC",
       "position": "LW",
       "role": "backup",
-      "tier": null,
-      "rank": null,
+      "tier": "B-",
+      "rank": 5,
       "review": "evidence_pending",
       "positionStatus": "QF lineup-based editorial assignment; season modal position pending",
       "roleStatus": "provisional; full tournament starts pending",
@@ -4525,9 +4579,10 @@
       "sources": [
         "https://www.skysports.com/football/bologna-vs-aston-villa/teams/554954",
         "https://www.skysports.com/football/aston-villa-vs-bologna/teams/554958",
-        "https://footballsquads.co.uk/eng/2025-2026/engprem/avilla.htm"
+        "https://footballsquads.co.uk/eng/2025-2026/engprem/avilla.htm",
+        "https://github.com/wjdduddlf112/footballarch/blob/main/data/premierleague-2025-26.json"
       ],
-      "tierReason": null,
+      "tierReason": "동일 인물의 2025-26 premierleague 기존 DRAFT 개인 평가 B-를 조건부 참고. UEL 자체의 3시즌 개인 경기력 비교는 미완료.",
       "threeSeasonAssessment": {
         "seasons": [
           "2023-24",
@@ -4563,7 +4618,19 @@
           ]
         }
       },
-      "assessmentStatus": "evidence_pending"
+      "assessmentStatus": "provisional_same_year_archive_proxy_not_independent_uel_assessment",
+      "displayTier": "B-",
+      "proposedTier": "B-",
+      "tierRationale": "동일 인물의 2025-26 premierleague 기존 DRAFT 개인 평가 B-를 조건부 참고. UEL 자체의 3시즌 개인 경기력 비교는 미완료.",
+      "tierSource": {
+        "archive": "data/premierleague-2025-26.json",
+        "referenceTier": "B-",
+        "scope": "same-season non-UEL archive proxy",
+        "referenceClub": "astonvilla",
+        "referenceAppearances": 23
+      },
+      "evidencePending": true,
+      "rankStatus": "provisional_tier_then_existing_rank_archive_proxy"
     },
     {
       "id": "uel-2025-26-astonvilla-john-mcginn-1994-10-18",
@@ -4631,7 +4698,7 @@
       },
       "assessmentStatus": "provisional current-season usage/performance; prior archive proxy where available; not full individual audit",
       "currentSeasonEditorialTier": "A+",
-      "rankStatus": "partial candidate ranking; unassessed candidates excluded",
+      "rankStatus": "provisional_tier_then_existing_rank_archive_proxy",
       "uefaObserverListed": true
     },
     {
@@ -4760,7 +4827,7 @@
       },
       "assessmentStatus": "provisional current-season usage/performance; prior archive proxy where available; not full individual audit",
       "currentSeasonEditorialTier": "A",
-      "rankStatus": "partial candidate ranking; unassessed candidates excluded",
+      "rankStatus": "provisional_tier_then_existing_rank_archive_proxy",
       "minutes": 912,
       "minutesSource": "https://m.aiscore.com/tournament-uefa-europa-league/2jr7owi6es1q0em/playerminutesplayed/59gklzig0oh87xd",
       "minutesStatus": "third-party published minutes; independent UEFA confirmation pending"
@@ -4859,7 +4926,7 @@
       },
       "assessmentStatus": "provisional current-season usage/performance; prior archive proxy where available; not full individual audit",
       "currentSeasonEditorialTier": "A",
-      "rankStatus": "partial candidate ranking; unassessed candidates excluded",
+      "rankStatus": "provisional_tier_then_existing_rank_archive_proxy",
       "minutes": 1350,
       "minutesSource": "https://m.aiscore.com/tournament-uefa-europa-league/2jr7owi6es1q0em/playerminutesplayed/59gklzig0oh87xd",
       "minutesStatus": "third-party published minutes; independent UEFA confirmation pending"
@@ -4920,7 +4987,7 @@
       },
       "assessmentStatus": "provisional current-season usage/performance; prior archive proxy where available; not full individual audit",
       "currentSeasonEditorialTier": "A+",
-      "rankStatus": "partial candidate ranking; unassessed candidates excluded",
+      "rankStatus": "provisional_tier_then_existing_rank_archive_proxy",
       "minutes": 1350,
       "minutesSource": "https://m.aiscore.com/tournament-uefa-europa-league/2jr7owi6es1q0em/playerminutesplayed/59gklzig0oh87xd",
       "minutesStatus": "third-party published minutes; independent UEFA confirmation pending",
@@ -4936,8 +5003,8 @@
       "clubNameOriginal": "SC Freiburg",
       "position": "CB",
       "role": "starter",
-      "tier": null,
-      "rank": null,
+      "tier": "B+",
+      "rank": 12,
       "review": "evidence_pending",
       "positionStatus": "QF lineup-based editorial assignment; season modal position pending",
       "roleStatus": "provisional; full tournament starts pending",
@@ -4946,9 +5013,10 @@
       "sources": [
         "https://www.skysports.com/football/sc-freiburg-vs-celta-vigo/teams/554952",
         "https://www.skysports.com/football/celta-vigo-vs-sc-freiburg/teams/554956",
-        "https://www.footballsquads.co.uk/ger/2025-2026/bundes/freiburg.htm"
+        "https://www.footballsquads.co.uk/ger/2025-2026/bundes/freiburg.htm",
+        "https://github.com/wjdduddlf112/footballarch/blob/main/data/bundesliga-2025-26.json"
       ],
-      "tierReason": null,
+      "tierReason": "동일 인물의 2025-26 bundesliga 기존 DRAFT 개인 평가 B+를 조건부 참고. UEL 자체의 3시즌 개인 경기력 비교는 미완료.",
       "threeSeasonAssessment": {
         "seasons": [
           "2023-24",
@@ -4974,7 +5042,19 @@
           ]
         }
       },
-      "assessmentStatus": "evidence_pending"
+      "assessmentStatus": "provisional_same_year_archive_proxy_not_independent_uel_assessment",
+      "displayTier": "B+",
+      "proposedTier": "B+",
+      "tierRationale": "동일 인물의 2025-26 bundesliga 기존 DRAFT 개인 평가 B+를 조건부 참고. UEL 자체의 3시즌 개인 경기력 비교는 미완료.",
+      "tierSource": {
+        "archive": "data/bundesliga-2025-26.json",
+        "referenceTier": "B+",
+        "scope": "same-season non-UEL archive proxy",
+        "referenceClub": "freiburg",
+        "referenceAppearances": 20
+      },
+      "evidencePending": true,
+      "rankStatus": "provisional_tier_then_existing_rank_archive_proxy"
     },
     {
       "id": "uel-2025-26-freiburg-bruno-ogbus-2005-12-17",
@@ -4986,8 +5066,8 @@
       "clubNameOriginal": "SC Freiburg",
       "position": "CB",
       "role": "backup",
-      "tier": null,
-      "rank": null,
+      "tier": "B",
+      "rank": 13,
       "review": "evidence_pending",
       "positionStatus": "QF lineup-based editorial assignment; season modal position pending",
       "roleStatus": "provisional; full tournament starts pending",
@@ -4996,9 +5076,10 @@
       "sources": [
         "https://www.skysports.com/football/sc-freiburg-vs-celta-vigo/teams/554952",
         "https://www.skysports.com/football/celta-vigo-vs-sc-freiburg/teams/554956",
-        "https://www.footballsquads.co.uk/ger/2025-2026/bundes/freiburg.htm"
+        "https://www.footballsquads.co.uk/ger/2025-2026/bundes/freiburg.htm",
+        "https://github.com/wjdduddlf112/footballarch/blob/main/data/bundesliga-2025-26.json"
       ],
-      "tierReason": null,
+      "tierReason": "동일 인물의 2025-26 bundesliga 기존 DRAFT 개인 평가 B를 조건부 참고. UEL 자체의 3시즌 개인 경기력 비교는 미완료.",
       "threeSeasonAssessment": {
         "seasons": [
           "2023-24",
@@ -5013,7 +5094,19 @@
         "independentAuditComplete": false,
         "previousSeasons": {}
       },
-      "assessmentStatus": "evidence_pending"
+      "assessmentStatus": "provisional_same_year_archive_proxy_not_independent_uel_assessment",
+      "displayTier": "B",
+      "proposedTier": "B",
+      "tierRationale": "동일 인물의 2025-26 bundesliga 기존 DRAFT 개인 평가 B를 조건부 참고. UEL 자체의 3시즌 개인 경기력 비교는 미완료.",
+      "tierSource": {
+        "archive": "data/bundesliga-2025-26.json",
+        "referenceTier": "B",
+        "scope": "same-season non-UEL archive proxy",
+        "referenceClub": "freiburg",
+        "referenceAppearances": 18
+      },
+      "evidencePending": true,
+      "rankStatus": "provisional_tier_then_existing_rank_archive_proxy"
     },
     {
       "id": "uel-2025-26-freiburg-jordy-makengo-2001-08-03",
@@ -5025,8 +5118,8 @@
       "clubNameOriginal": "SC Freiburg",
       "position": "LB",
       "role": "starter",
-      "tier": null,
-      "rank": null,
+      "tier": "B",
+      "rank": 4,
       "review": "evidence_pending",
       "positionStatus": "QF lineup-based editorial assignment; season modal position pending",
       "roleStatus": "provisional; full tournament starts pending",
@@ -5035,9 +5128,10 @@
       "sources": [
         "https://www.skysports.com/football/sc-freiburg-vs-celta-vigo/teams/554952",
         "https://www.skysports.com/football/celta-vigo-vs-sc-freiburg/teams/554956",
-        "https://www.footballsquads.co.uk/ger/2025-2026/bundes/freiburg.htm"
+        "https://www.footballsquads.co.uk/ger/2025-2026/bundes/freiburg.htm",
+        "https://github.com/wjdduddlf112/footballarch/blob/main/data/bundesliga-2025-26.json"
       ],
-      "tierReason": null,
+      "tierReason": "동일 인물의 2025-26 bundesliga 기존 DRAFT 개인 평가 B를 조건부 참고. UEL 자체의 3시즌 개인 경기력 비교는 미완료.",
       "threeSeasonAssessment": {
         "seasons": [
           "2023-24",
@@ -5063,7 +5157,19 @@
           ]
         }
       },
-      "assessmentStatus": "evidence_pending"
+      "assessmentStatus": "provisional_same_year_archive_proxy_not_independent_uel_assessment",
+      "displayTier": "B",
+      "proposedTier": "B",
+      "tierRationale": "동일 인물의 2025-26 bundesliga 기존 DRAFT 개인 평가 B를 조건부 참고. UEL 자체의 3시즌 개인 경기력 비교는 미완료.",
+      "tierSource": {
+        "archive": "data/bundesliga-2025-26.json",
+        "referenceTier": "B",
+        "scope": "same-season non-UEL archive proxy",
+        "referenceClub": "freiburg",
+        "referenceAppearances": 20
+      },
+      "evidencePending": true,
+      "rankStatus": "provisional_tier_then_existing_rank_archive_proxy"
     },
     {
       "id": "uel-2025-26-freiburg-philipp-treu-2000-12-03",
@@ -5076,7 +5182,7 @@
       "position": "RB",
       "role": "starter",
       "tier": "B+",
-      "rank": 3,
+      "rank": 4,
       "review": "draft_unapproved",
       "positionStatus": "QF lineup-based editorial assignment; season modal position pending",
       "roleStatus": "provisional; full tournament starts pending",
@@ -5110,7 +5216,7 @@
       "minutesSource": "https://m.aiscore.com/tournament-uefa-europa-league/2jr7owi6es1q0em/playerminutesplayed/59gklzig0oh87xd",
       "minutesStatus": "third-party published minutes; independent UEFA confirmation pending",
       "currentSeasonEditorialTier": "B+",
-      "rankStatus": "partial candidate ranking; unassessed candidates excluded"
+      "rankStatus": "provisional_tier_then_existing_rank_archive_proxy"
     },
     {
       "id": "uel-2025-26-freiburg-lukas-kubler-1992-08-30",
@@ -5122,8 +5228,8 @@
       "clubNameOriginal": "SC Freiburg",
       "position": "RB",
       "role": "backup",
-      "tier": null,
-      "rank": null,
+      "tier": "B+",
+      "rank": 5,
       "review": "evidence_pending",
       "positionStatus": "QF lineup-based editorial assignment; season modal position pending",
       "roleStatus": "provisional; full tournament starts pending",
@@ -5132,9 +5238,10 @@
       "sources": [
         "https://www.skysports.com/football/sc-freiburg-vs-celta-vigo/teams/554952",
         "https://www.skysports.com/football/celta-vigo-vs-sc-freiburg/teams/554956",
-        "https://www.footballsquads.co.uk/ger/2025-2026/bundes/freiburg.htm"
+        "https://www.footballsquads.co.uk/ger/2025-2026/bundes/freiburg.htm",
+        "https://github.com/wjdduddlf112/footballarch/blob/main/data/bundesliga-2025-26.json"
       ],
-      "tierReason": null,
+      "tierReason": "동일 인물의 2025-26 bundesliga 기존 DRAFT 개인 평가 B+를 조건부 참고. UEL 자체의 3시즌 개인 경기력 비교는 미완료.",
       "threeSeasonAssessment": {
         "seasons": [
           "2023-24",
@@ -5160,7 +5267,19 @@
           ]
         }
       },
-      "assessmentStatus": "evidence_pending"
+      "assessmentStatus": "provisional_same_year_archive_proxy_not_independent_uel_assessment",
+      "displayTier": "B+",
+      "proposedTier": "B+",
+      "tierRationale": "동일 인물의 2025-26 bundesliga 기존 DRAFT 개인 평가 B+를 조건부 참고. UEL 자체의 3시즌 개인 경기력 비교는 미완료.",
+      "tierSource": {
+        "archive": "data/bundesliga-2025-26.json",
+        "referenceTier": "B+",
+        "scope": "same-season non-UEL archive proxy",
+        "referenceClub": "freiburg",
+        "referenceAppearances": 23
+      },
+      "evidencePending": true,
+      "rankStatus": "provisional_tier_then_existing_rank_archive_proxy"
     },
     {
       "id": "uel-2025-26-freiburg-maximilian-eggestein-1996-12-08",
@@ -5218,7 +5337,7 @@
       },
       "assessmentStatus": "provisional current-season usage/performance; prior archive proxy where available; not full individual audit",
       "currentSeasonEditorialTier": "A+",
-      "rankStatus": "partial candidate ranking; unassessed candidates excluded",
+      "rankStatus": "provisional_tier_then_existing_rank_archive_proxy",
       "minutes": 1223,
       "minutesSource": "https://m.aiscore.com/tournament-uefa-europa-league/2jr7owi6es1q0em/playerminutesplayed/59gklzig0oh87xd",
       "minutesStatus": "third-party published minutes; independent UEFA confirmation pending",
@@ -5329,7 +5448,7 @@
       },
       "assessmentStatus": "provisional current-season usage/performance; prior archive proxy where available; not full individual audit",
       "currentSeasonEditorialTier": "A",
-      "rankStatus": "partial candidate ranking; unassessed candidates excluded",
+      "rankStatus": "provisional_tier_then_existing_rank_archive_proxy",
       "minutes": 1103,
       "minutesSource": "https://m.aiscore.com/tournament-uefa-europa-league/2jr7owi6es1q0em/playerminutesplayed/59gklzig0oh87xd",
       "minutesStatus": "third-party published minutes; independent UEFA confirmation pending"
@@ -5344,8 +5463,8 @@
       "clubNameOriginal": "SC Freiburg",
       "position": "CAM",
       "role": "starter",
-      "tier": null,
-      "rank": null,
+      "tier": "B+",
+      "rank": 4,
       "review": "evidence_pending",
       "positionStatus": "QF lineup-based editorial assignment; season modal position pending",
       "roleStatus": "provisional; full tournament starts pending",
@@ -5354,9 +5473,10 @@
       "sources": [
         "https://www.skysports.com/football/sc-freiburg-vs-celta-vigo/teams/554952",
         "https://www.skysports.com/football/celta-vigo-vs-sc-freiburg/teams/554956",
-        "https://www.footballsquads.co.uk/ger/2025-2026/bundes/freiburg.htm"
+        "https://www.footballsquads.co.uk/ger/2025-2026/bundes/freiburg.htm",
+        "https://github.com/wjdduddlf112/footballarch/blob/main/data/bundesliga-2025-26.json"
       ],
-      "tierReason": null,
+      "tierReason": "동일 인물의 2025-26 bundesliga 기존 DRAFT 개인 평가 B+를 조건부 참고. UEL 자체의 3시즌 개인 경기력 비교는 미완료.",
       "threeSeasonAssessment": {
         "seasons": [
           "2023-24",
@@ -5371,7 +5491,19 @@
         "independentAuditComplete": false,
         "previousSeasons": {}
       },
-      "assessmentStatus": "evidence_pending"
+      "assessmentStatus": "provisional_same_year_archive_proxy_not_independent_uel_assessment",
+      "displayTier": "B+",
+      "proposedTier": "B+",
+      "tierRationale": "동일 인물의 2025-26 bundesliga 기존 DRAFT 개인 평가 B+를 조건부 참고. UEL 자체의 3시즌 개인 경기력 비교는 미완료.",
+      "tierSource": {
+        "archive": "data/bundesliga-2025-26.json",
+        "referenceTier": "B+",
+        "scope": "same-season non-UEL archive proxy",
+        "referenceClub": "freiburg",
+        "referenceAppearances": 25
+      },
+      "evidencePending": true,
+      "rankStatus": "provisional_tier_then_existing_rank_archive_proxy"
     },
     {
       "id": "uel-2025-26-freiburg-lucas-holer-1994-07-10",
@@ -5383,8 +5515,8 @@
       "clubNameOriginal": "SC Freiburg",
       "position": "CAM",
       "role": "backup",
-      "tier": null,
-      "rank": null,
+      "tier": "B+",
+      "rank": 5,
       "review": "evidence_pending",
       "positionStatus": "QF lineup-based editorial assignment; season modal position pending",
       "roleStatus": "provisional; full tournament starts pending",
@@ -5393,9 +5525,10 @@
       "sources": [
         "https://www.skysports.com/football/sc-freiburg-vs-celta-vigo/teams/554952",
         "https://www.skysports.com/football/celta-vigo-vs-sc-freiburg/teams/554956",
-        "https://www.footballsquads.co.uk/ger/2025-2026/bundes/freiburg.htm"
+        "https://www.footballsquads.co.uk/ger/2025-2026/bundes/freiburg.htm",
+        "https://github.com/wjdduddlf112/footballarch/blob/main/data/bundesliga-2025-26.json"
       ],
-      "tierReason": null,
+      "tierReason": "동일 인물의 2025-26 bundesliga 기존 DRAFT 개인 평가 B+를 조건부 참고. UEL 자체의 3시즌 개인 경기력 비교는 미완료.",
       "threeSeasonAssessment": {
         "seasons": [
           "2023-24",
@@ -5421,7 +5554,19 @@
           ]
         }
       },
-      "assessmentStatus": "evidence_pending"
+      "assessmentStatus": "provisional_same_year_archive_proxy_not_independent_uel_assessment",
+      "displayTier": "B+",
+      "proposedTier": "B+",
+      "tierRationale": "동일 인물의 2025-26 bundesliga 기존 DRAFT 개인 평가 B+를 조건부 참고. UEL 자체의 3시즌 개인 경기력 비교는 미완료.",
+      "tierSource": {
+        "archive": "data/bundesliga-2025-26.json",
+        "referenceTier": "B+",
+        "scope": "same-season non-UEL archive proxy",
+        "referenceClub": "freiburg",
+        "referenceAppearances": 32
+      },
+      "evidencePending": true,
+      "rankStatus": "provisional_tier_then_existing_rank_archive_proxy"
     },
     {
       "id": "uel-2025-26-freiburg-vincenzo-grifo-1993-04-07",
@@ -5480,7 +5625,7 @@
       "minutesSource": "https://m.aiscore.com/tournament-uefa-europa-league/2jr7owi6es1q0em/playerminutesplayed/59gklzig0oh87xd",
       "minutesStatus": "third-party published minutes; independent UEFA confirmation pending",
       "currentSeasonEditorialTier": "A",
-      "rankStatus": "partial candidate ranking; unassessed candidates excluded"
+      "rankStatus": "provisional_tier_then_existing_rank_archive_proxy"
     },
     {
       "id": "uel-2025-26-freiburg-derry-scherhant-2002-11-10",
@@ -5492,8 +5637,8 @@
       "clubNameOriginal": "SC Freiburg",
       "position": "LW",
       "role": "backup",
-      "tier": null,
-      "rank": null,
+      "tier": "B",
+      "rank": 4,
       "review": "evidence_pending",
       "positionStatus": "QF lineup-based editorial assignment; season modal position pending",
       "roleStatus": "provisional; full tournament starts pending",
@@ -5502,9 +5647,10 @@
       "sources": [
         "https://www.skysports.com/football/sc-freiburg-vs-celta-vigo/teams/554952",
         "https://www.skysports.com/football/celta-vigo-vs-sc-freiburg/teams/554956",
-        "https://www.footballsquads.co.uk/ger/2025-2026/bundes/freiburg.htm"
+        "https://www.footballsquads.co.uk/ger/2025-2026/bundes/freiburg.htm",
+        "https://github.com/wjdduddlf112/footballarch/blob/main/data/bundesliga-2025-26.json"
       ],
-      "tierReason": null,
+      "tierReason": "동일 인물의 2025-26 bundesliga 기존 DRAFT 개인 평가 B를 조건부 참고. UEL 자체의 3시즌 개인 경기력 비교는 미완료.",
       "threeSeasonAssessment": {
         "seasons": [
           "2023-24",
@@ -5519,7 +5665,19 @@
         "independentAuditComplete": false,
         "previousSeasons": {}
       },
-      "assessmentStatus": "evidence_pending"
+      "assessmentStatus": "provisional_same_year_archive_proxy_not_independent_uel_assessment",
+      "displayTier": "B",
+      "proposedTier": "B",
+      "tierRationale": "동일 인물의 2025-26 bundesliga 기존 DRAFT 개인 평가 B를 조건부 참고. UEL 자체의 3시즌 개인 경기력 비교는 미완료.",
+      "tierSource": {
+        "archive": "data/bundesliga-2025-26.json",
+        "referenceTier": "B",
+        "scope": "same-season non-UEL archive proxy",
+        "referenceClub": "freiburg",
+        "referenceAppearances": 31
+      },
+      "evidencePending": true,
+      "rankStatus": "provisional_tier_then_existing_rank_archive_proxy"
     },
     {
       "id": "uel-2025-26-freiburg-jan-niklas-beste-1999-01-04",
@@ -5577,7 +5735,7 @@
       "minutesSource": "https://m.aiscore.com/tournament-uefa-europa-league/2jr7owi6es1q0em/playerminutesplayed/59gklzig0oh87xd",
       "minutesStatus": "third-party published minutes; independent UEFA confirmation pending",
       "currentSeasonEditorialTier": "B+",
-      "rankStatus": "partial candidate ranking; unassessed candidates excluded"
+      "rankStatus": "provisional_tier_then_existing_rank_archive_proxy"
     },
     {
       "id": "uel-2025-26-freiburg-cyriaque-irie-2005-06-20",
@@ -5589,8 +5747,8 @@
       "clubNameOriginal": "SC Freiburg",
       "position": "RW",
       "role": "backup",
-      "tier": null,
-      "rank": null,
+      "tier": "B-",
+      "rank": 4,
       "review": "evidence_pending",
       "positionStatus": "QF lineup-based editorial assignment; season modal position pending",
       "roleStatus": "provisional; full tournament starts pending",
@@ -5599,9 +5757,10 @@
       "sources": [
         "https://www.skysports.com/football/sc-freiburg-vs-celta-vigo/teams/554952",
         "https://www.skysports.com/football/celta-vigo-vs-sc-freiburg/teams/554956",
-        "https://www.footballsquads.co.uk/ger/2025-2026/bundes/freiburg.htm"
+        "https://www.footballsquads.co.uk/ger/2025-2026/bundes/freiburg.htm",
+        "https://github.com/wjdduddlf112/footballarch/blob/main/data/bundesliga-2025-26.json"
       ],
-      "tierReason": null,
+      "tierReason": "동일 인물의 2025-26 bundesliga 기존 DRAFT 개인 평가 B-를 조건부 참고. UEL 자체의 3시즌 개인 경기력 비교는 미완료.",
       "threeSeasonAssessment": {
         "seasons": [
           "2023-24",
@@ -5616,7 +5775,19 @@
         "independentAuditComplete": false,
         "previousSeasons": {}
       },
-      "assessmentStatus": "evidence_pending"
+      "assessmentStatus": "provisional_same_year_archive_proxy_not_independent_uel_assessment",
+      "displayTier": "B-",
+      "proposedTier": "B-",
+      "tierRationale": "동일 인물의 2025-26 bundesliga 기존 DRAFT 개인 평가 B-를 조건부 참고. UEL 자체의 3시즌 개인 경기력 비교는 미완료.",
+      "tierSource": {
+        "archive": "data/bundesliga-2025-26.json",
+        "referenceTier": "B-",
+        "scope": "same-season non-UEL archive proxy",
+        "referenceClub": "freiburg",
+        "referenceAppearances": 10
+      },
+      "evidencePending": true,
+      "rankStatus": "provisional_tier_then_existing_rank_archive_proxy"
     },
     {
       "id": "uel-2025-26-freiburg-igor-matanovic-2003-03-31",
@@ -5672,7 +5843,7 @@
       },
       "assessmentStatus": "provisional current-season usage/performance; prior archive proxy where available; not full individual audit",
       "currentSeasonEditorialTier": "B+",
-      "rankStatus": "partial candidate ranking; unassessed candidates excluded"
+      "rankStatus": "provisional_tier_then_existing_rank_archive_proxy"
     },
     {
       "id": "uel-2025-26-nottinghamforest-stefan-ortega-1992-11-06",
@@ -5849,7 +6020,7 @@
       },
       "assessmentStatus": "provisional current-season usage/performance; prior archive proxy where available; not full individual audit",
       "currentSeasonEditorialTier": "A+",
-      "rankStatus": "partial candidate ranking; unassessed candidates excluded",
+      "rankStatus": "provisional_tier_then_existing_rank_archive_proxy",
       "minutes": 1154,
       "minutesSource": "https://m.aiscore.com/tournament-uefa-europa-league/2jr7owi6es1q0em/playerminutesplayed/59gklzig0oh87xd",
       "minutesStatus": "third-party published minutes; independent UEFA confirmation pending",
@@ -5920,7 +6091,7 @@
       },
       "assessmentStatus": "provisional current-season usage/performance; prior archive proxy where available; not full individual audit",
       "currentSeasonEditorialTier": "A",
-      "rankStatus": "partial candidate ranking; unassessed candidates excluded",
+      "rankStatus": "provisional_tier_then_existing_rank_archive_proxy",
       "minutes": 1120,
       "minutesSource": "https://m.aiscore.com/tournament-uefa-europa-league/2jr7owi6es1q0em/playerminutesplayed/59gklzig0oh87xd",
       "minutesStatus": "third-party published minutes; independent UEFA confirmation pending"
@@ -6031,7 +6202,7 @@
       "minutesSource": "https://m.aiscore.com/tournament-uefa-europa-league/2jr7owi6es1q0em/playerminutesplayed/59gklzig0oh87xd",
       "minutesStatus": "third-party published minutes; independent UEFA confirmation pending",
       "currentSeasonEditorialTier": "B+",
-      "rankStatus": "partial candidate ranking; unassessed candidates excluded"
+      "rankStatus": "provisional_tier_then_existing_rank_archive_proxy"
     },
     {
       "id": "uel-2025-26-nottinghamforest-ola-aina-1996-10-08",
@@ -6228,7 +6399,7 @@
       "minutesSource": "https://m.aiscore.com/tournament-uefa-europa-league/2jr7owi6es1q0em/playerminutesplayed/59gklzig0oh87xd",
       "minutesStatus": "third-party published minutes; independent UEFA confirmation pending",
       "currentSeasonEditorialTier": "B+",
-      "rankStatus": "partial candidate ranking; unassessed candidates excluded"
+      "rankStatus": "provisional_tier_then_existing_rank_archive_proxy"
     },
     {
       "id": "uel-2025-26-nottinghamforest-morgan-gibbs-white-2000-01-27",
@@ -6285,7 +6456,7 @@
       },
       "assessmentStatus": "provisional current-season usage/performance; prior archive proxy where available; not full individual audit",
       "currentSeasonEditorialTier": "A-",
-      "rankStatus": "partial candidate ranking; unassessed candidates excluded",
+      "rankStatus": "provisional_tier_then_existing_rank_archive_proxy",
       "minutes": 936,
       "minutesSource": "https://m.aiscore.com/tournament-uefa-europa-league/2jr7owi6es1q0em/playerminutesplayed/59gklzig0oh87xd",
       "minutesStatus": "third-party published minutes; independent UEFA confirmation pending"
@@ -6561,7 +6732,7 @@
       },
       "assessmentStatus": "provisional current-season usage/performance; prior archive proxy where available; not full individual audit",
       "currentSeasonEditorialTier": "A+",
-      "rankStatus": "partial candidate ranking; unassessed candidates excluded",
+      "rankStatus": "provisional_tier_then_existing_rank_archive_proxy",
       "uefaObserverListed": true
     },
     {
@@ -6658,7 +6829,7 @@
       },
       "assessmentStatus": "provisional current-season usage/performance; prior archive proxy where available; not full individual audit",
       "currentSeasonEditorialTier": "A-",
-      "rankStatus": "partial candidate ranking; unassessed candidates excluded",
+      "rankStatus": "provisional_tier_then_existing_rank_archive_proxy",
       "minutes": 1260,
       "minutesSource": "https://m.aiscore.com/tournament-uefa-europa-league/2jr7owi6es1q0em/playerminutesplayed/59gklzig0oh87xd",
       "minutesStatus": "third-party published minutes; independent UEFA confirmation pending"
@@ -6707,7 +6878,7 @@
       },
       "assessmentStatus": "provisional current-season usage/performance; prior archive proxy where available; not full individual audit",
       "currentSeasonEditorialTier": "A",
-      "rankStatus": "partial candidate ranking; unassessed candidates excluded",
+      "rankStatus": "provisional_tier_then_existing_rank_archive_proxy",
       "minutes": 1199,
       "minutesSource": "https://m.aiscore.com/tournament-uefa-europa-league/2jr7owi6es1q0em/playerminutesplayed/59gklzig0oh87xd",
       "minutesStatus": "third-party published minutes; independent UEFA confirmation pending"
@@ -6757,7 +6928,7 @@
       "minutesSource": "https://m.aiscore.com/tournament-uefa-europa-league/2jr7owi6es1q0em/playerminutesplayed/59gklzig0oh87xd",
       "minutesStatus": "third-party published minutes; independent UEFA confirmation pending",
       "currentSeasonEditorialTier": "B+",
-      "rankStatus": "partial candidate ranking; unassessed candidates excluded"
+      "rankStatus": "provisional_tier_then_existing_rank_archive_proxy"
     },
     {
       "id": "uel-2025-26-braga-sikou-niakate-1999-07-10",
@@ -6921,7 +7092,7 @@
       },
       "assessmentStatus": "provisional current-season usage/performance; prior archive proxy where available; not full individual audit",
       "currentSeasonEditorialTier": "A+",
-      "rankStatus": "partial candidate ranking; unassessed candidates excluded",
+      "rankStatus": "provisional_tier_then_existing_rank_archive_proxy",
       "minutes": 1125,
       "minutesSource": "https://m.aiscore.com/tournament-uefa-europa-league/2jr7owi6es1q0em/playerminutesplayed/59gklzig0oh87xd",
       "minutesStatus": "third-party published minutes; independent UEFA confirmation pending",
@@ -7061,7 +7232,7 @@
       "minutesSource": "https://m.aiscore.com/tournament-uefa-europa-league/2jr7owi6es1q0em/playerminutesplayed/59gklzig0oh87xd",
       "minutesStatus": "third-party published minutes; independent UEFA confirmation pending",
       "currentSeasonEditorialTier": "B+",
-      "rankStatus": "partial candidate ranking; unassessed candidates excluded"
+      "rankStatus": "provisional_tier_then_existing_rank_archive_proxy"
     },
     {
       "id": "uel-2025-26-braga-joao-moutinho-1986-09-08",
@@ -7146,7 +7317,7 @@
       },
       "assessmentStatus": "provisional current-season usage/performance; prior archive proxy where available; not full individual audit",
       "currentSeasonEditorialTier": "A",
-      "rankStatus": "partial candidate ranking; unassessed candidates excluded",
+      "rankStatus": "provisional_tier_then_existing_rank_archive_proxy",
       "minutes": 1010,
       "minutesSource": "https://m.aiscore.com/tournament-uefa-europa-league/2jr7owi6es1q0em/playerminutesplayed/59gklzig0oh87xd",
       "minutesStatus": "third-party published minutes; independent UEFA confirmation pending"
@@ -7352,7 +7523,7 @@
       "minutesSource": "https://m.aiscore.com/tournament-uefa-europa-league/2jr7owi6es1q0em/playerminutesplayed/59gklzig0oh87xd",
       "minutesStatus": "third-party published minutes; independent UEFA confirmation pending",
       "currentSeasonEditorialTier": "B+",
-      "rankStatus": "partial candidate ranking; unassessed candidates excluded"
+      "rankStatus": "provisional_tier_then_existing_rank_archive_proxy"
     },
     {
       "id": "uel-2025-26-porto-thiago-silva-1984-09-22",
@@ -7449,7 +7620,7 @@
       "minutesSource": "https://m.aiscore.com/tournament-uefa-europa-league/2jr7owi6es1q0em/playerminutesplayed/59gklzig0oh87xd",
       "minutesStatus": "third-party published minutes; independent UEFA confirmation pending",
       "currentSeasonEditorialTier": "B+",
-      "rankStatus": "partial candidate ranking; unassessed candidates excluded"
+      "rankStatus": "provisional_tier_then_existing_rank_archive_proxy"
     },
     {
       "id": "uel-2025-26-porto-jakub-kiwior-2000-02-15",
@@ -7712,7 +7883,7 @@
       "minutesSource": "https://m.aiscore.com/tournament-uefa-europa-league/2jr7owi6es1q0em/playerminutesplayed/59gklzig0oh87xd",
       "minutesStatus": "third-party published minutes; independent UEFA confirmation pending",
       "currentSeasonEditorialTier": "B+",
-      "rankStatus": "partial candidate ranking; unassessed candidates excluded"
+      "rankStatus": "provisional_tier_then_existing_rank_archive_proxy"
     },
     {
       "id": "uel-2025-26-porto-alan-varela-2001-07-04",
@@ -7763,8 +7934,8 @@
       "clubNameOriginal": "FC Porto",
       "position": "CM",
       "role": "starter",
-      "tier": null,
-      "rank": null,
+      "tier": "B",
+      "rank": 6,
       "review": "evidence_pending",
       "positionStatus": "QF lineup-based editorial assignment; season modal position pending",
       "roleStatus": "provisional; full tournament starts pending",
@@ -7773,9 +7944,10 @@
       "sources": [
         "https://www.skysports.com/football/fc-porto-vs-nottingham-forest/teams/554953",
         "https://www.skysports.com/football/nottingham-forest-vs-fc-porto/teams/554957",
-        "https://footballsquads.co.uk/portugal/2025-2026/primeira/porto.htm"
+        "https://footballsquads.co.uk/portugal/2025-2026/primeira/porto.htm",
+        "https://github.com/wjdduddlf112/footballarch/blob/main/data/ligue1-2025-26.json"
       ],
-      "tierReason": null,
+      "tierReason": "동일 인물의 2025-26 ligue1 기존 DRAFT 개인 평가 B를 조건부 참고. UEL 자체의 3시즌 개인 경기력 비교는 미완료.",
       "threeSeasonAssessment": {
         "seasons": [
           "2023-24",
@@ -7790,7 +7962,19 @@
         "independentAuditComplete": false,
         "previousSeasons": {}
       },
-      "assessmentStatus": "evidence_pending"
+      "assessmentStatus": "provisional_same_year_archive_proxy_not_independent_uel_assessment",
+      "displayTier": "B",
+      "proposedTier": "B",
+      "tierRationale": "동일 인물의 2025-26 ligue1 기존 DRAFT 개인 평가 B를 조건부 참고. UEL 자체의 3시즌 개인 경기력 비교는 미완료.",
+      "tierSource": {
+        "archive": "data/ligue1-2025-26.json",
+        "referenceTier": "B",
+        "scope": "same-season non-UEL archive proxy",
+        "referenceClub": "rennes",
+        "referenceAppearances": 12
+      },
+      "evidencePending": true,
+      "rankStatus": "provisional_tier_then_existing_rank_archive_proxy"
     },
     {
       "id": "uel-2025-26-porto-gabri-veiga-2002-05-27",
@@ -8746,7 +8930,7 @@
       },
       "assessmentStatus": "provisional current-season usage/performance; prior archive proxy where available; not full individual audit",
       "currentSeasonEditorialTier": "A+",
-      "rankStatus": "partial candidate ranking; unassessed candidates excluded",
+      "rankStatus": "provisional_tier_then_existing_rank_archive_proxy",
       "uefaObserverListed": true
     },
     {
@@ -8991,7 +9175,7 @@
       },
       "assessmentStatus": "provisional current-season usage/performance; prior archive proxy where available; not full individual audit",
       "currentSeasonEditorialTier": "A",
-      "rankStatus": "partial candidate ranking; unassessed candidates excluded",
+      "rankStatus": "provisional_tier_then_existing_rank_archive_proxy",
       "minutes": 930,
       "minutesSource": "https://m.aiscore.com/tournament-uefa-europa-league/2jr7owi6es1q0em/playerminutesplayed/59gklzig0oh87xd",
       "minutesStatus": "third-party published minutes; independent UEFA confirmation pending"
@@ -9134,8 +9318,8 @@
       "clubNameOriginal": "Bologna FC 1909",
       "position": "RB",
       "role": "starter",
-      "tier": null,
-      "rank": null,
+      "tier": "B-",
+      "rank": 6,
       "review": "evidence_pending",
       "positionStatus": "QF lineup-based editorial assignment; season modal position pending",
       "roleStatus": "provisional; full tournament starts pending",
@@ -9144,9 +9328,10 @@
       "sources": [
         "https://www.skysports.com/football/bologna-vs-aston-villa/teams/554954",
         "https://www.skysports.com/football/aston-villa-vs-bologna/teams/554958",
-        "https://www.footballsquads.co.uk/italy/2025-2026/seriea/bologna.htm"
+        "https://www.footballsquads.co.uk/italy/2025-2026/seriea/bologna.htm",
+        "https://github.com/wjdduddlf112/footballarch/blob/main/data/seriea-2025-26.json"
       ],
-      "tierReason": null,
+      "tierReason": "동일 인물의 2025-26 seriea 기존 DRAFT 개인 평가 B-를 조건부 참고. UEL 자체의 3시즌 개인 경기력 비교는 미완료.",
       "threeSeasonAssessment": {
         "seasons": [
           "2023-24",
@@ -9161,7 +9346,19 @@
         "independentAuditComplete": false,
         "previousSeasons": {}
       },
-      "assessmentStatus": "evidence_pending"
+      "assessmentStatus": "provisional_same_year_archive_proxy_not_independent_uel_assessment",
+      "displayTier": "B-",
+      "proposedTier": "B-",
+      "tierRationale": "동일 인물의 2025-26 seriea 기존 DRAFT 개인 평가 B-를 조건부 참고. UEL 자체의 3시즌 개인 경기력 비교는 미완료.",
+      "tierSource": {
+        "archive": "data/seriea-2025-26.json",
+        "referenceTier": "B-",
+        "scope": "same-season non-UEL archive proxy",
+        "referenceClub": "juventus",
+        "referenceAppearances": 10
+      },
+      "evidencePending": true,
+      "rankStatus": "provisional_tier_then_existing_rank_archive_proxy"
     },
     {
       "id": "uel-2025-26-bologna-nadir-zortea-1999-06-19",
@@ -9328,7 +9525,7 @@
       "minutesSource": "https://m.aiscore.com/tournament-uefa-europa-league/2jr7owi6es1q0em/playerminutesplayed/59gklzig0oh87xd",
       "minutesStatus": "third-party published minutes; independent UEFA confirmation pending",
       "currentSeasonEditorialTier": "B+",
-      "rankStatus": "partial candidate ranking; unassessed candidates excluded"
+      "rankStatus": "provisional_tier_then_existing_rank_archive_proxy"
     },
     {
       "id": "uel-2025-26-bologna-tommaso-pobega-1999-07-15",
@@ -9772,7 +9969,7 @@
       "minutesSource": "https://m.aiscore.com/tournament-uefa-europa-league/2jr7owi6es1q0em/playerminutesplayed/59gklzig0oh87xd",
       "minutesStatus": "third-party published minutes; independent UEFA confirmation pending",
       "currentSeasonEditorialTier": "B+",
-      "rankStatus": "partial candidate ranking; unassessed candidates excluded"
+      "rankStatus": "provisional_tier_then_existing_rank_archive_proxy"
     },
     {
       "id": "uel-2025-26-celta-javi-rodriguez-2003-06-27",
@@ -9819,7 +10016,7 @@
       "minutesSource": "https://m.aiscore.com/tournament-uefa-europa-league/2jr7owi6es1q0em/playerminutesplayed/59gklzig0oh87xd",
       "minutesStatus": "third-party published minutes; independent UEFA confirmation pending",
       "currentSeasonEditorialTier": "B+",
-      "rankStatus": "partial candidate ranking; unassessed candidates excluded"
+      "rankStatus": "provisional_tier_then_existing_rank_archive_proxy"
     },
     {
       "id": "uel-2025-26-celta-marcos-alonso-1990-12-28",
@@ -9866,7 +10063,7 @@
       "minutesSource": "https://m.aiscore.com/tournament-uefa-europa-league/2jr7owi6es1q0em/playerminutesplayed/59gklzig0oh87xd",
       "minutesStatus": "third-party published minutes; independent UEFA confirmation pending",
       "currentSeasonEditorialTier": "B+",
-      "rankStatus": "partial candidate ranking; unassessed candidates excluded"
+      "rankStatus": "provisional_tier_then_existing_rank_archive_proxy"
     },
     {
       "id": "uel-2025-26-celta-joseph-aidoo-1995-09-29",
@@ -10029,7 +10226,7 @@
       },
       "assessmentStatus": "provisional current-season usage/performance; prior archive proxy where available; not full individual audit",
       "currentSeasonEditorialTier": "A+",
-      "rankStatus": "partial candidate ranking; unassessed candidates excluded",
+      "rankStatus": "provisional_tier_then_existing_rank_archive_proxy",
       "uefaObserverListed": true
     },
     {
@@ -10321,7 +10518,7 @@
       },
       "assessmentStatus": "provisional current-season usage/performance; prior archive proxy where available; not full individual audit",
       "currentSeasonEditorialTier": "A",
-      "rankStatus": "partial candidate ranking; unassessed candidates excluded"
+      "rankStatus": "provisional_tier_then_existing_rank_archive_proxy"
     },
     {
       "id": "uel-2025-26-celta-ferran-jutgla-1999-02-01",
@@ -10601,6 +10798,11 @@
       "Birth dates transcribed from season roster references, independent second-source audit pending.",
       "Published table points and goals matched for 36 of 36 clubs.",
       "Tielemans is not official UEFA XI; Eggestein is. Corrected explicit award data."
-    ]
+    ],
+    "repair20261125": {
+      "archiveProxyAdded": 15,
+      "remaining": 86,
+      "independentThreeSeasonComplete": false
+    }
   }
 }
