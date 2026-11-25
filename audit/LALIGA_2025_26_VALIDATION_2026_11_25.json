@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "players": 148,
+  "dates": 148,
+  "birthMultiSource": 148,
+  "birthCorrections": 6,
+  "starts": 148,
+  "statCrosscheck": 144,
+  "tiers": 148,
+  "ranks": 148,
+  "prior": {
+    "0": 16,
+    "1": 43,
+    "2": 89
+  },
+  "worldClass": 13,
+  "leagueTopClass": 52,
+  "xi": 11,
+  "clubs": 8,
+  "standings": 20,
+  "checkedAt": "2026-11-25",
+  "dataBlobSha": "5758e9fe6a5fd0ade5a1761b3f9e171ba8888210",
+  "scope": "JavaScript structural checks on canonical main readback. Birth date comparison and season-stat checks separately noted. No full historical quality or live browser certification.",
+  "limitations": [
+    "148 date values corroborated by roster + April Transfermarkt snapshot, or official correction and snapshot, or official club and individual profile; does not mean independent official profile directly opened for each player.",
+    "144 candidates agree on club league apps, goals, and minutes tolerance 5 across BDFutbol and partial Opta snapshot; four BDFutbol-only players: Cancelo, Partey, Jon Martín, Pablo Marín. Starts BDFutbol single source for all.",
+    "89 players both earlier seasons linked, 43 one, 16 none. Other league references are prior DRAFTs; independent three-season evaluation and matchwise positions pending.",
+    "4-2-3-1 mode by team-minutes, not starting lineup count.",
+    "Celta and Getafe third CB cap, zero-minute backup GKs excluded.",
+    "Live browser QA and CI status not verified.",
+    "Earlier canonical 2023-24 and 2024-25 DOB corrections were applied separately, preserving IDs; older audit reports are historical snapshots."
+  ]
+}
