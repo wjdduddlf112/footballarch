@@ -27,9 +27,9 @@
       "https://www.premierleague.com/en/news/2579604"
     ],
     "formation": "4-3-3",
-    "formationNote": "Premier League official 2022-06-07: 4-3-3 185/760 team starts; 4-2-3-1 163; classic 4-4-2 90; 3-4-2-1 68; 3-5-2 57.",
+    "formationNote": "External review opta_inferred_shape: 4-3-3 185/760 known team starts (760 total); inferred_mode_guaranteed. Previous independent source note: Premier League official 2022-06-07: 4-3-3 185/760 team starts; 4-2-3-1 163; classic 4-4-2 90; 3-4-2-1 68; 3-5-2 57.",
     "candidateCount": 126,
-    "playerAssessmentStatus": "draft_candidate_tier_ranking_source_mirror_position_census_pending",
+    "playerAssessmentStatus": "external_fact_review_applied_qualitative_three_season_and_linked_positions_pending",
     "playerCandidateReview": {
       "status": "draft_unapproved",
       "assessmentYears": [
@@ -57,21 +57,213 @@
       "independentThreeYearComparisonsVerified": 0,
       "dobSecondSourceVerified": 0,
       "warnings": [
+        "All 126 retained players have populated current PL appearances, starts, goals and assists from the supplied external review; this is not final independent qualitative certification.",
+        "Unresolved position competition, prior seasons and some source disagreements remain. See meta.externalAuditSegment3.",
+        "Historical same-club data available only if player appears in club historical mirror; transferred players need original club/league review.",
+        "DOB independent official verification pending.",
+        "Match by match most played position pending for all, with special focus on multi-position and 3-4-2-1 wingback roles.",
+        "Mirrored parent club data may attribute loan-player matches incorrectly; known loans deliberately omitted.",
+        "All tiers, ranks and proposed XI are unapproved."
+      ],
+      "warningsBeforeExternalReview": [
         "2021-22 league stats from public PL/PulseLive reproduction, not independently cross-checked player by player.",
         "Historical same-club data available only if player appears in club historical mirror; transferred players need original club/league review.",
         "DOB independent official verification pending.",
         "Match by match most played position pending for all, with special focus on multi-position and 3-4-2-1 wingback roles.",
         "Mirrored parent club data may attribute loan-player matches incorrectly; known loans deliberately omitted.",
         "All tiers, ranks and proposed XI are unapproved."
-      ]
+      ],
+      "externalReviewCurrentStatsComplete": 126
     },
     "bestXiReview": {
       "status": "proposed_unapproved",
       "formation": "4-3-3",
-      "formationBasis": "2021-22 PL modal 4-3-3 185 team-starts (official 2022-06-07)",
+      "formationBasis": "opta_inferred_shape: 760/760 team lineups; most frequent 4-3-3, 185 uses; inferred_mode_guaranteed.",
       "source": "https://www.premierleague.com/en/news/2640968",
       "exceptionReason": "Club 3-back wingback arrangements and actual club formations separate from league Best XI."
-    }
+    },
+    "formationCoverage": {
+      "knownTeamLineups": 760,
+      "totalTeamLineups": 760,
+      "rankedKnown": [
+        [
+          "4-3-3",
+          185
+        ],
+        [
+          "4-2-3-1",
+          163
+        ],
+        [
+          "4-4-2",
+          90
+        ],
+        [
+          "3-5-2",
+          76
+        ],
+        [
+          "3-4-2-1",
+          68
+        ],
+        [
+          "4-1-4-1",
+          41
+        ],
+        [
+          "3-4-3",
+          32
+        ],
+        [
+          "4-4-1-1",
+          23
+        ],
+        [
+          "3-6-1",
+          16
+        ],
+        [
+          "3-4-1-2",
+          15
+        ],
+        [
+          "4-3-1-2",
+          12
+        ],
+        [
+          "4-1-2-1-2",
+          10
+        ],
+        [
+          "4-5-1",
+          7
+        ],
+        [
+          "3-3-3-1",
+          6
+        ],
+        [
+          "4-3-2-1",
+          6
+        ],
+        [
+          "4-2-2-2",
+          6
+        ],
+        [
+          "3-1-2-2-2",
+          4
+        ]
+      ],
+      "status": "inferred_mode_guaranteed",
+      "formationMode": "4-3-3",
+      "sourceType": "opta_inferred_shape",
+      "sources": [
+        "https://github.com/peteowen1/pannadata/releases/tag/opta-latest",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/match_details.csv"
+      ]
+    },
+    "externalAuditSegment3": {
+      "reportBaseCommit": "cad000501e02bcdaea4ac3cc2461439e033b4464",
+      "appliedToCommit": "08c2e3c8fa41a011d638d3604625362a3ddbb65f",
+      "report": "FOOTBALL_AUDIT_PL_SEGMENT_3_FULL_REVIEW.json",
+      "status": "draft_unapproved",
+      "before": 126,
+      "after": 126,
+      "corrections": 0,
+      "fills": 0,
+      "removedFills": 0,
+      "removedCorrections": 0,
+      "added": 0,
+      "removed": 0,
+      "positions": 0,
+      "roles": 0,
+      "ranks": 0,
+      "xi": false,
+      "formation": "4-3-3",
+      "formationCount": 185,
+      "lineups": 760,
+      "formationStatus": "inferred_mode_guaranteed",
+      "missing": {
+        "leagueAppearances": 0,
+        "leagueStarts": 0,
+        "leagueGoals": 0,
+        "leagueAssists": 0
+      },
+      "heldCount": 3,
+      "removedPlayers": [],
+      "addedPlayers": [],
+      "removedPlayerFactChanges": [],
+      "held": [
+        {
+          "playerId": "pl-2021-22-chelsea-126187",
+          "nameKo": "루벤 로프터스치크",
+          "nameOriginal": "Ruben Loftus-Cheek",
+          "old": "RB",
+          "suggested": "CM",
+          "reason": "13선발 중 CM 11·RWB 2. 첼시 중앙 후보 자리와 연동.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/match_details.csv",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games",
+            "https://github.com/peteowen1/pannadata/releases/tag/opta-latest"
+          ],
+          "status": "linked_role_review_pending"
+        },
+        {
+          "competition": "PL",
+          "season": "2021-22",
+          "path": "data/premierleague-2021-22.json",
+          "playerId": "pl-2021-22-chelsea-116594",
+          "nameKo": "은골로 캉테",
+          "nameOriginal": "N'Golo Kanté",
+          "club": "chelsea",
+          "field": "leagueMinutes",
+          "old": 1777,
+          "proposed": null,
+          "reason": "경기 집계와 별도 집계에서 값이 일치하지 않아 적용 보류.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+            "https://github.com/peteowen1/pannadata/releases/tag/opta-latest"
+          ],
+          "status": "evidence_pending",
+          "action": "replace",
+          "oldFieldPresent": true,
+          "externalValues": {
+            "match": 1778,
+            "secondary": 1777
+          }
+        },
+        {
+          "competition": "PL",
+          "season": "2021-22",
+          "path": "data/premierleague-2021-22.json",
+          "playerId": "pl-2021-22-chelsea-91651",
+          "nameKo": "마테오 코바치치",
+          "nameOriginal": "Mateo Kovacic",
+          "club": "chelsea",
+          "field": "leagueMinutes",
+          "old": 1557,
+          "proposed": null,
+          "reason": "경기 집계와 별도 집계에서 값이 일치하지 않아 적용 보류.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+            "https://github.com/peteowen1/pannadata/releases/tag/opta-latest"
+          ],
+          "status": "evidence_pending",
+          "action": "replace",
+          "oldFieldPresent": true,
+          "externalValues": {
+            "match": 1556,
+            "secondary": 1557
+          }
+        }
+      ],
+      "note": "Structured audited stats supersede earlier narrative text. Qualitative three-season review and unresolved position/candidate evidence remain draft."
+    },
+    "formationNoteBeforeExternalReview": "Premier League official 2022-06-07: 4-3-3 185/760 team starts; 4-2-3-1 163; classic 4-4-2 90; 3-4-2-1 68; 3-5-2 57.",
+    "formationVerification": "inferred_mode_guaranteed"
   },
   "clubs": [
     {
@@ -657,7 +849,8 @@
       ],
       "rank": 1,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "GK 전체 9명 중 잠정 1위; A+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "GK 전체 9명 중 잠정 1위; A+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-mancity-121160",
@@ -713,7 +906,8 @@
       ],
       "rank": 2,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "GK 전체 9명 중 잠정 2위; A+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "GK 전체 9명 중 잠정 2위; A+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-tottenham-37915",
@@ -769,7 +963,8 @@
       ],
       "rank": 3,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "GK 전체 9명 중 잠정 3위; A+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "GK 전체 9명 중 잠정 3위; A+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-chelsea-228286",
@@ -825,7 +1020,8 @@
       ],
       "rank": 4,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "GK 전체 9명 중 잠정 4위; A+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "GK 전체 9명 중 잠정 4위; A+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-manutd-51940",
@@ -881,7 +1077,8 @@
       ],
       "rank": 5,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "GK 전체 9명 중 잠정 5위; A- 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "GK 전체 9명 중 잠정 5위; A- 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-arsenal-225321",
@@ -937,7 +1134,8 @@
       ],
       "rank": 6,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "GK 전체 9명 중 잠정 6위; A- 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "GK 전체 9명 중 잠정 6위; A- 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-westham-37096",
@@ -993,7 +1191,8 @@
       ],
       "rank": 7,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "GK 전체 9명 중 잠정 7위; B+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "GK 전체 9명 중 잠정 7위; B+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-chelsea-109745",
@@ -1049,7 +1248,8 @@
       ],
       "rank": 8,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "GK 전체 9명 중 잠정 8위; B- 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "GK 전체 9명 중 잠정 8위; B- 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-arsenal-80201",
@@ -1105,7 +1305,8 @@
       ],
       "rank": 9,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "GK 전체 9명 중 잠정 9위; B- 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "GK 전체 9명 중 잠정 9위; B- 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-liverpool-97032",
@@ -1161,7 +1362,8 @@
       ],
       "rank": 1,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "CB 전체 23명 중 잠정 1위; S 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "CB 전체 23명 중 잠정 1위; S 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-mancity-171314",
@@ -1217,7 +1419,8 @@
       ],
       "rank": 2,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "CB 전체 23명 중 잠정 2위; A+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "CB 전체 23명 중 잠정 2위; A+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-chelsea-102380",
@@ -1273,7 +1476,8 @@
       ],
       "rank": 3,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "CB 전체 23명 중 잠정 3위; A+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "CB 전체 23명 중 잠정 3위; A+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-mancity-146941",
@@ -1329,7 +1533,8 @@
       ],
       "rank": 4,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "CB 전체 23명 중 잠정 4위; A 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "CB 전체 23명 중 잠정 4위; A 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-liverpool-60914",
@@ -1385,7 +1590,8 @@
       ],
       "rank": 5,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "CB 전체 23명 중 잠정 5위; A 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "CB 전체 23명 중 잠정 5위; A 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-chelsea-51090",
@@ -1441,7 +1647,8 @@
       ],
       "rank": 6,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "CB 전체 23명 중 잠정 6위; A 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "CB 전체 23명 중 잠정 6위; A 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-tottenham-221632",
@@ -1497,7 +1704,8 @@
       ],
       "rank": 7,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "CB 전체 23명 중 잠정 7위; A- 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "CB 전체 23명 중 잠정 7위; A- 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-arsenal-226597",
@@ -1553,7 +1761,8 @@
       ],
       "rank": 8,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "CB 전체 23명 중 잠정 8위; B+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "CB 전체 23명 중 잠정 8위; B+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-tottenham-93264",
@@ -1609,7 +1818,8 @@
       ],
       "rank": 9,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "CB 전체 23명 중 잠정 9위; B+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "CB 전체 23명 중 잠정 9위; B+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-arsenal-198869",
@@ -1665,7 +1875,8 @@
       ],
       "rank": 10,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "CB 전체 23명 중 잠정 10위; B+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "CB 전체 23명 중 잠정 10위; B+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-westham-60232",
@@ -1721,7 +1932,8 @@
       ],
       "rank": 11,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "CB 전체 23명 중 잠정 11위; B+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "CB 전체 23명 중 잠정 11위; B+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-tottenham-115556",
@@ -1777,7 +1989,8 @@
       ],
       "rank": 12,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "CB 전체 23명 중 잠정 12위; B+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "CB 전체 23명 중 잠정 12위; B+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-chelsea-41328",
@@ -1833,7 +2046,8 @@
       ],
       "rank": 13,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "CB 전체 23명 중 잠정 13위; B+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "CB 전체 23명 중 잠정 13위; B+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-westham-103192",
@@ -1889,7 +2103,8 @@
       ],
       "rank": 14,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "CB 전체 23명 중 잠정 14위; B+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "CB 전체 23명 중 잠정 14위; B+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-manutd-90152",
@@ -1945,7 +2160,8 @@
       ],
       "rank": 15,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "CB 전체 23명 중 잠정 15위; B+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "CB 전체 23명 중 잠정 15위; B+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-chelsea-135363",
@@ -2001,7 +2217,8 @@
       ],
       "rank": 16,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "CB 전체 23명 중 잠정 16위; B+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "CB 전체 23명 중 잠정 16위; B+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-mancity-97299",
@@ -2057,7 +2274,8 @@
       ],
       "rank": 17,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "CB 전체 23명 중 잠정 17위; B+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "CB 전체 23명 중 잠정 17위; B+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-liverpool-204716",
@@ -2113,7 +2331,8 @@
       ],
       "rank": 18,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "CB 전체 23명 중 잠정 18위; B+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "CB 전체 23명 중 잠정 18위; B+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-manutd-184667",
@@ -2169,7 +2388,8 @@
       ],
       "rank": 19,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "CB 전체 23명 중 잠정 19위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "CB 전체 23명 중 잠정 19위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-tottenham-173904",
@@ -2225,7 +2445,8 @@
       ],
       "rank": 20,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "CB 전체 23명 중 잠정 20위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "CB 전체 23명 중 잠정 20위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-westham-40669",
@@ -2281,7 +2502,8 @@
       ],
       "rank": 21,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "CB 전체 23명 중 잠정 21위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "CB 전체 23명 중 잠정 21위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-arsenal-156074",
@@ -2337,7 +2559,8 @@
       ],
       "rank": 22,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "CB 전체 23명 중 잠정 22위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "CB 전체 23명 중 잠정 22위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-manutd-95658",
@@ -2393,7 +2616,8 @@
       ],
       "rank": 23,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "CB 전체 23명 중 잠정 23위; B- 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "CB 전체 23명 중 잠정 23위; B- 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-mancity-121145",
@@ -2449,7 +2673,8 @@
       ],
       "rank": 1,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "LB 전체 14명 중 잠정 1위; A+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "LB 전체 14명 중 잠정 1위; A+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-liverpool-122798",
@@ -2505,7 +2730,8 @@
       ],
       "rank": 2,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "LB 전체 14명 중 잠정 2위; A+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "LB 전체 14명 중 잠정 2위; A+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-westham-55459",
@@ -2561,7 +2787,8 @@
       ],
       "rank": 3,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "LB 전체 14명 중 잠정 3위; B+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "LB 전체 14명 중 잠정 3위; B+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-chelsea-82263",
@@ -2617,7 +2844,8 @@
       ],
       "rank": 4,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "LB 전체 14명 중 잠정 4위; B+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "LB 전체 14명 중 잠정 4위; B+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-arsenal-192895",
@@ -2673,7 +2901,8 @@
       ],
       "rank": 5,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "LB 전체 14명 중 잠정 5위; B+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "LB 전체 14명 중 잠정 5위; B+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-chelsea-172850",
@@ -2729,7 +2958,8 @@
       ],
       "rank": 6,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "LB 전체 14명 중 잠정 6위; B+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "LB 전체 14명 중 잠정 6위; B+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-tottenham-199249",
@@ -2785,7 +3015,8 @@
       ],
       "rank": 7,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "LB 전체 14명 중 잠정 7위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "LB 전체 14명 중 잠정 7위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-manutd-106760",
@@ -2841,7 +3072,8 @@
       ],
       "rank": 8,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "LB 전체 14명 중 잠정 8위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "LB 전체 14명 중 잠정 8위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-tottenham-184349",
@@ -2897,7 +3129,8 @@
       ],
       "rank": 9,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "LB 전체 14명 중 잠정 9위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "LB 전체 14명 중 잠정 9위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-mancity-206325",
@@ -2953,7 +3186,8 @@
       ],
       "rank": 10,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "LB 전체 14명 중 잠정 10위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "LB 전체 14명 중 잠정 10위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-liverpool-214285",
@@ -3009,7 +3243,8 @@
       ],
       "rank": 11,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "LB 전체 14명 중 잠정 11위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "LB 전체 14명 중 잠정 11위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-manutd-152590",
@@ -3065,7 +3300,8 @@
       ],
       "rank": 12,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "LB 전체 14명 중 잠정 12위; B- 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "LB 전체 14명 중 잠정 12위; B- 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-arsenal-437626",
@@ -3121,7 +3357,8 @@
       ],
       "rank": 13,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "LB 전체 14명 중 잠정 13위; B- 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "LB 전체 14명 중 잠정 13위; B- 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-westham-105717",
@@ -3177,7 +3414,8 @@
       ],
       "rank": 14,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "LB 전체 14명 중 잠정 14위; C+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "LB 전체 14명 중 잠정 14위; C+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-liverpool-169187",
@@ -3233,7 +3471,8 @@
       ],
       "rank": 1,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "RB 전체 13명 중 잠정 1위; S 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "RB 전체 13명 중 잠정 1위; S 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-chelsea-225796",
@@ -3289,7 +3528,8 @@
       ],
       "rank": 2,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "RB 전체 13명 중 잠정 2위; A+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "RB 전체 13명 중 잠정 2위; A+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-mancity-58621",
@@ -3345,7 +3585,8 @@
       ],
       "rank": 3,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "RB 전체 13명 중 잠정 3위; A- 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "RB 전체 13명 중 잠정 3위; A- 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-arsenal-223723",
@@ -3401,7 +3642,8 @@
       ],
       "rank": 4,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "RB 전체 13명 중 잠정 4위; B+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "RB 전체 13명 중 잠정 4위; B+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-tottenham-241157",
@@ -3457,7 +3699,8 @@
       ],
       "rank": 5,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "RB 전체 13명 중 잠정 5위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "RB 전체 13명 중 잠정 5위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-westham-164555",
@@ -3513,7 +3756,8 @@
       ],
       "rank": 6,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "RB 전체 13명 중 잠정 6위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "RB 전체 13명 중 잠정 6위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-manutd-216051",
@@ -3569,7 +3813,8 @@
       ],
       "rank": 7,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "RB 전체 13명 중 잠정 7위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "RB 전체 13명 중 잠정 7위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-arsenal-58822",
@@ -3625,7 +3870,8 @@
       ],
       "rank": 8,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "RB 전체 13명 중 잠정 8위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "RB 전체 13명 중 잠정 8위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-westham-222018",
@@ -3681,7 +3927,8 @@
       ],
       "rank": 9,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "RB 전체 13명 중 잠정 9위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "RB 전체 13명 중 잠정 9위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-chelsea-126187",
@@ -3737,7 +3984,8 @@
       ],
       "rank": 10,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "RB 전체 13명 중 잠정 10위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "RB 전체 13명 중 잠정 10위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-tottenham-87835",
@@ -3793,7 +4041,8 @@
       ],
       "rank": 11,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "RB 전체 13명 중 잠정 11위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "RB 전체 13명 중 잠정 11위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-manutd-214590",
@@ -3849,7 +4098,8 @@
       ],
       "rank": 12,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "RB 전체 13명 중 잠정 12위; B- 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "RB 전체 13명 중 잠정 12위; B- 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-liverpool-171287",
@@ -3905,7 +4155,8 @@
       ],
       "rank": 13,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "RB 전체 13명 중 잠정 13위; B- 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "RB 전체 13명 중 잠정 13위; B- 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-mancity-220566",
@@ -3961,7 +4212,8 @@
       ],
       "rank": 1,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "DM 전체 11명 중 잠정 1위; A+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "DM 전체 11명 중 잠정 1위; A+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-liverpool-116643",
@@ -4017,7 +4269,8 @@
       ],
       "rank": 2,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "DM 전체 11명 중 잠정 2위; A+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "DM 전체 11명 중 잠정 2위; A+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-westham-204480",
@@ -4073,7 +4326,8 @@
       ],
       "rank": 3,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "DM 전체 11명 중 잠정 3위; A 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "DM 전체 11명 중 잠정 3위; A 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-chelsea-85955",
@@ -4129,7 +4383,8 @@
       ],
       "rank": 4,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "DM 전체 11명 중 잠정 4위; A- 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "DM 전체 11명 중 잠정 4위; A- 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-tottenham-132015",
@@ -4185,7 +4440,8 @@
       ],
       "rank": 5,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "DM 전체 11명 중 잠정 5위; B+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "DM 전체 11명 중 잠정 5위; B+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-arsenal-167199",
@@ -4241,7 +4497,8 @@
       ],
       "rank": 6,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "DM 전체 11명 중 잠정 6위; B+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "DM 전체 11명 중 잠정 6위; B+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-manutd-195851",
@@ -4297,7 +4554,8 @@
       ],
       "rank": 7,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "DM 전체 11명 중 잠정 7위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "DM 전체 11명 중 잠정 7위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-tottenham-209042",
@@ -4353,7 +4611,8 @@
       ],
       "rank": 8,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "DM 전체 11명 중 잠정 8위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "DM 전체 11명 중 잠정 8위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-arsenal-153256",
@@ -4409,7 +4668,8 @@
       ],
       "rank": 9,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "DM 전체 11명 중 잠정 9위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "DM 전체 11명 중 잠정 9위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-manutd-62398",
@@ -4465,7 +4725,8 @@
       ],
       "rank": 10,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "DM 전체 11명 중 잠정 10위; B- 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "DM 전체 11명 중 잠정 10위; B- 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-mancity-27789",
@@ -4521,7 +4782,8 @@
       ],
       "rank": 11,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "DM 전체 11명 중 잠정 11위; B- 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "DM 전체 11명 중 잠정 11위; B- 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-mancity-61366",
@@ -4577,7 +4839,8 @@
       ],
       "rank": 1,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "CM 전체 15명 중 잠정 1위; S 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "CM 전체 15명 중 잠정 1위; S 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-mancity-165809",
@@ -4633,7 +4896,8 @@
       ],
       "rank": 2,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "CM 전체 15명 중 잠정 2위; A+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "CM 전체 15명 중 잠정 2위; A+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-chelsea-116594",
@@ -4689,7 +4953,8 @@
       ],
       "rank": 3,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "CM 전체 15명 중 잠정 3위; A 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "CM 전체 15명 중 잠정 3위; A 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-mancity-59859",
@@ -4745,7 +5010,8 @@
       ],
       "rank": 4,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "CM 전체 15명 중 잠정 4위; A 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "CM 전체 15명 중 잠정 4위; A 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-liverpool-61558",
@@ -4801,7 +5067,8 @@
       ],
       "rank": 5,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "CM 전체 15명 중 잠정 5위; A 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "CM 전체 15명 중 잠정 5위; A 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-liverpool-56979",
@@ -4857,7 +5124,8 @@
       ],
       "rank": 6,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "CM 전체 15명 중 잠정 6위; A- 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "CM 전체 15명 중 잠정 6위; A- 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-chelsea-91651",
@@ -4913,7 +5181,8 @@
       ],
       "rank": 7,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "CM 전체 15명 중 잠정 7위; A- 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "CM 전체 15명 중 잠정 7위; A- 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-westham-215439",
@@ -4969,7 +5238,8 @@
       ],
       "rank": 8,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "CM 전체 15명 중 잠정 8위; B+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "CM 전체 15명 중 잠정 8위; B+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-arsenal-84450",
@@ -5025,7 +5295,8 @@
       ],
       "rank": 9,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "CM 전체 15명 중 잠정 9위; B+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "CM 전체 15명 중 잠정 9위; B+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-tottenham-202993",
@@ -5081,7 +5352,8 @@
       ],
       "rank": 10,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "CM 전체 15명 중 잠정 10위; B+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "CM 전체 15명 중 잠정 10위; B+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-manutd-101582",
@@ -5137,7 +5409,8 @@
       ],
       "rank": 11,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "CM 전체 15명 중 잠정 11위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "CM 전체 15명 중 잠정 11위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-manutd-74208",
@@ -5193,7 +5466,8 @@
       ],
       "rank": 12,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "CM 전체 15명 중 잠정 12위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "CM 전체 15명 중 잠정 12위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-liverpool-175592",
@@ -5249,7 +5523,8 @@
       ],
       "rank": 13,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "CM 전체 15명 중 잠정 13위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "CM 전체 15명 중 잠정 13위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-arsenal-437742",
@@ -5305,7 +5580,8 @@
       ],
       "rank": 14,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "CM 전체 15명 중 잠정 14위; B- 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "CM 전체 15명 중 잠정 14위; B- 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-tottenham-157668",
@@ -5361,7 +5637,8 @@
       ],
       "rank": 15,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "CM 전체 15명 중 잠정 15위; B- 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "CM 전체 15명 중 잠정 15위; B- 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-chelsea-184341",
@@ -5417,7 +5694,8 @@
       ],
       "rank": 1,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "CAM 전체 6명 중 잠정 1위; A 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "CAM 전체 6명 중 잠정 1위; A 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-manutd-141746",
@@ -5473,7 +5751,8 @@
       ],
       "rank": 2,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "CAM 전체 6명 중 잠정 2위; A- 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "CAM 전체 6명 중 잠정 2위; A- 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-arsenal-184029",
@@ -5529,7 +5808,8 @@
       ],
       "rank": 3,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "CAM 전체 6명 중 잠정 3위; A- 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "CAM 전체 6명 중 잠정 3위; A- 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-westham-86934",
@@ -5585,7 +5865,8 @@
       ],
       "rank": 4,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "CAM 전체 6명 중 잠정 4위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "CAM 전체 6명 중 잠정 4위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-chelsea-124183",
@@ -5641,7 +5922,8 @@
       ],
       "rank": 5,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "CAM 전체 6명 중 잠정 5위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "CAM 전체 6명 중 잠정 5위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-westham-180151",
@@ -5697,7 +5979,8 @@
       ],
       "rank": 6,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "CAM 전체 6명 중 잠정 6위; C+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "CAM 전체 6명 중 잠정 6위; C+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-tottenham-85971",
@@ -5753,7 +6036,8 @@
       ],
       "rank": 1,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "LW 전체 14명 중 잠정 1위; S 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "LW 전체 14명 중 잠정 1위; S 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-liverpool-110979",
@@ -5809,7 +6093,8 @@
       ],
       "rank": 2,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "LW 전체 14명 중 잠정 2위; A+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "LW 전체 14명 중 잠정 2위; A+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-mancity-103955",
@@ -5865,7 +6150,8 @@
       ],
       "rank": 3,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "LW 전체 14명 중 잠정 3위; A- 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "LW 전체 14명 중 잠정 3위; A- 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-arsenal-209289",
@@ -5921,7 +6207,8 @@
       ],
       "rank": 4,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "LW 전체 14명 중 잠정 4위; A- 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "LW 전체 14명 중 잠정 4위; A- 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-liverpool-244731",
@@ -5977,7 +6264,8 @@
       ],
       "rank": 5,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "LW 전체 14명 중 잠정 5위; A- 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "LW 전체 14명 중 잠정 5위; A- 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-westham-217593",
@@ -6033,7 +6321,8 @@
       ],
       "rank": 6,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "LW 전체 14명 중 잠정 6위; B+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "LW 전체 14명 중 잠정 6위; B+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-westham-172841",
@@ -6089,7 +6378,8 @@
       ],
       "rank": 7,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "LW 전체 14명 중 잠정 7위; B+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "LW 전체 14명 중 잠정 7위; B+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-arsenal-444145",
@@ -6145,7 +6435,8 @@
       ],
       "rank": 8,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "LW 전체 14명 중 잠정 8위; B+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "LW 전체 14명 중 잠정 8위; B+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-mancity-114283",
@@ -6201,7 +6492,8 @@
       ],
       "rank": 9,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "LW 전체 14명 중 잠정 9위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "LW 전체 14명 중 잠정 9위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-manutd-209243",
@@ -6257,7 +6549,8 @@
       ],
       "rank": 10,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "LW 전체 14명 중 잠정 10위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "LW 전체 14명 중 잠정 10위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-chelsea-165153",
@@ -6313,7 +6606,8 @@
       ],
       "rank": 11,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "LW 전체 14명 중 잠정 11위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "LW 전체 14명 중 잠정 11위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-chelsea-176413",
@@ -6369,7 +6663,8 @@
       ],
       "rank": 12,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "LW 전체 14명 중 잠정 12위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "LW 전체 14명 중 잠정 12위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-manutd-176297",
@@ -6425,7 +6720,8 @@
       ],
       "rank": 13,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "LW 전체 14명 중 잠정 13위; B- 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "LW 전체 14명 중 잠정 13위; B- 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-tottenham-194252",
@@ -6481,7 +6777,8 @@
       ],
       "rank": 14,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "LW 전체 14명 중 잠정 14위; C+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "LW 전체 14명 중 잠정 14위; C+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-liverpool-118748",
@@ -6537,7 +6834,8 @@
       ],
       "rank": 1,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "RW 전체 10명 중 잠정 1위; S 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "RW 전체 10명 중 잠정 1위; S 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-arsenal-223340",
@@ -6593,7 +6891,8 @@
       ],
       "rank": 2,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "RW 전체 10명 중 잠정 2위; A 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "RW 전체 10명 중 잠정 2위; A 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-westham-178186",
@@ -6649,7 +6948,8 @@
       ],
       "rank": 3,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "RW 전체 10명 중 잠정 3위; A 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "RW 전체 10명 중 잠정 3위; A 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-mancity-103025",
@@ -6705,7 +7005,8 @@
       ],
       "rank": 4,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "RW 전체 10명 중 잠정 4위; A- 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "RW 전체 10명 중 잠정 4위; A- 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-tottenham-445044",
@@ -6761,7 +7062,8 @@
       ],
       "rank": 5,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "RW 전체 10명 중 잠정 5위; A- 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "RW 전체 10명 중 잠정 5위; A- 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-mancity-205651",
@@ -6817,7 +7119,8 @@
       ],
       "rank": 6,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "RW 전체 10명 중 잠정 6위; B+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "RW 전체 10명 중 잠정 6위; B+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-tottenham-95715",
@@ -6873,7 +7176,8 @@
       ],
       "rank": 7,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "RW 전체 10명 중 잠정 7위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "RW 전체 10명 중 잠정 7위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-manutd-220688",
@@ -6929,7 +7233,8 @@
       ],
       "rank": 8,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "RW 전체 10명 중 잠정 8위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "RW 전체 10명 중 잠정 8위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-arsenal-195735",
@@ -6985,7 +7290,8 @@
       ],
       "rank": 9,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "RW 전체 10명 중 잠정 9위; B- 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "RW 전체 10명 중 잠정 9위; B- 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-manutd-449434",
@@ -7041,7 +7347,8 @@
       ],
       "rank": 10,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "RW 전체 10명 중 잠정 10위; C+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "RW 전체 10명 중 잠정 10위; C+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-tottenham-78830",
@@ -7097,7 +7404,8 @@
       ],
       "rank": 1,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "ST 전체 11명 중 잠정 1위; A+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "ST 전체 11명 중 잠정 1위; A+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-manutd-14937",
@@ -7153,7 +7461,8 @@
       ],
       "rank": 2,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "ST 전체 11명 중 잠정 2위; A 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "ST 전체 11명 중 잠정 2위; A 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-liverpool-194634",
@@ -7209,7 +7518,8 @@
       ],
       "rank": 3,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "ST 전체 11명 중 잠정 3위; A 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "ST 전체 11명 중 잠정 3위; A 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-mancity-209244",
@@ -7265,7 +7575,8 @@
       ],
       "rank": 4,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "ST 전체 11명 중 잠정 4위; A 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "ST 전체 11명 중 잠정 4위; A 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-westham-57531",
@@ -7321,7 +7632,8 @@
       ],
       "rank": 5,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "ST 전체 11명 중 잠정 5위; B+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "ST 전체 11명 중 잠정 5위; B+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-chelsea-219847",
@@ -7377,7 +7689,8 @@
       ],
       "rank": 6,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "ST 전체 11명 중 잠정 6위; B+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "ST 전체 11명 중 잠정 6위; B+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-liverpool-92217",
@@ -7433,7 +7746,8 @@
       ],
       "rank": 7,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "ST 전체 11명 중 잠정 7위; B+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "ST 전체 11명 중 잠정 7위; B+ 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-arsenal-59966",
@@ -7489,7 +7803,8 @@
       ],
       "rank": 8,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "ST 전체 11명 중 잠정 8위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "ST 전체 11명 중 잠정 8위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-chelsea-66749",
@@ -7545,7 +7860,8 @@
       ],
       "rank": 9,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "ST 전체 11명 중 잠정 9위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "ST 전체 11명 중 잠정 9위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-arsenal-205533",
@@ -7601,7 +7917,8 @@
       ],
       "rank": 10,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "ST 전체 11명 중 잠정 10위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "ST 전체 11명 중 잠정 10위; B 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2021-22-manutd-40720",
@@ -7657,7 +7974,8 @@
       ],
       "rank": 11,
       "rankStatus": "draft_unapproved",
-      "rankRationale": "ST 전체 11명 중 잠정 11위; B- 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전."
+      "rankRationale": "ST 전체 11명 중 잠정 11위; B- 티어 순서 및 2021-22 개인 활약·직전 2시즌 기량·전술적 역할 비교. 경기별 주 포지션 검증 전.",
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     }
   ],
   "bestXi": [

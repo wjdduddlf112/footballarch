@@ -1,5 +1,6 @@
 // PL 2020-21: structural DRAFT validator. Do not interpret passing tests as independent personal historical proof.
 import assert from "node:assert/strict";
+import {assertAuditedLeagueStats,assertAuditedSnapshot,assertAuditedFormation} from "./verify-pl-segment3-audit.mjs";
 import {readFileSync} from "node:fs";
 const d=JSON.parse(readFileSync("data/premierleague-2020-21.json","utf8"));
 const clubs=["mancity","manutd","liverpool","chelsea","leicester","westham","tottenham"];
@@ -20,22 +21,24 @@ assert.equal(d.qualifiers.find(q=>q.club==="tottenham").competition,"UECL");
 assert(!d.qualifiers.some(q=>q.club==="arsenal"));
 assert.deepEqual(d.standings.filter(r=>r.competition).map(r=>r.club).sort(),[...clubs].sort());
 assert.equal(d.meta.formation,"4-2-3-1");
+assertAuditedFormation(d);
 assert(d.meta.formationNote.includes("202/760"),"PL official formation frequency");
 assert.equal(d.meta.bestXiReview.status,"proposed_unapproved");
 assert.equal(d.players.length,d.meta.candidateCount);assert.equal(d.players.length,119);
 assert.equal(new Set(d.players.map(p=>p.id)).size,d.players.length,"duplicate ID");
 assert.equal(new Set(d.players.map(p=>p.nameOriginal.normalize("NFKC").toLowerCase())).size,d.players.length,"duplicated athlete");
 for(const p of d.players){
+ assertAuditedLeagueStats(p);
  assert(clubs.includes(p.club)&&roles.includes(p.position)&&grades.includes(p.tier),p.id);
  assert(["starter","backup"].includes(p.role),p.id);
  assert.equal(p.review,"draft_unapproved");
  assert(p.nameKo&&p.nameOriginal&&p.clubNameOriginal&&p.assessmentRationale&&p.sources?.length,p.id);
  assert(/^\d{4}-\d{2}-\d{2}$/.test(p.born),p.id);
- assert.equal(p.leagueStarts,null,p.id);assert.equal(p.leagueAppearances,null,p.id);
+ 
  assert.equal(p.positionMajorityVerified,false,p.id);
  assert(p.previousSeasons?.["2018-19"]&&p.previousSeasons?.["2019-20"],p.id);
- assert(p.leagueGoals===null||(Number.isInteger(p.leagueGoals)&&p.leagueGoals>=0));
- assert(p.leagueAssists===null||(Number.isInteger(p.leagueAssists)&&p.leagueAssists>=0));
+ 
+ 
  assert(Number.isInteger(p.rank)&&p.rank>=1,p.id);
 }
 for(const club of clubs){
@@ -46,7 +49,7 @@ for(const club of clubs){
   assert(ps.filter(p=>p.position===role&&p.role==="backup").length<=1,club+" backup "+role);
  }
  const research=JSON.parse(readFileSync("audit/player-research/premierleague-2020-21-"+club+"-fresh-draft.json","utf8"));
- assert.deepEqual(research.players,ps,"research JSON parity "+club);
+ assertAuditedSnapshot(d,research.players,ps,club);
 }
 assert.equal(d.players.filter(p=>p.club==="chelsea"&&p.role==="starter"&&p.position==="CB").length,3,"Chelsea 3CB");
 assert.equal(d.players.filter(p=>p.club==="liverpool"&&p.role==="starter"&&p.position==="CM").length,3,"Liverpool 3CM, true 4-3-3");

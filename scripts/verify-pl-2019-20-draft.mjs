@@ -1,5 +1,6 @@
 // Premier League 2019-20 STRUCTURAL DRAFT test; individual historical match starts and roles are NOT verified.
 import assert from "node:assert/strict";
+import {assertAuditedLeagueStats,assertAuditedSnapshot,assertAuditedFormation} from "./verify-pl-segment3-audit.mjs";
 import {readFileSync} from "node:fs";
 const d=JSON.parse(readFileSync("data/premierleague-2019-20.json","utf8"));
 const clubs=["liverpool","mancity","manutd","chelsea","leicester","tottenham","arsenal"];
@@ -19,22 +20,24 @@ assert.equal(d.qualifiers.filter(q=>q.competition==="UEL").length,3);
 assert.equal(d.qualifiers.find(q=>q.club==="arsenal").competition,"UEL");
 assert(!d.qualifiers.some(q=>q.club==="wolves"),"Wolves did not qualify 2020/21");
 assert.deepEqual(d.standings.filter(s=>s.competition).map(s=>s.club).sort(),[...clubs].sort());
-assert.equal(d.meta.formation,"4-2-3-1");assert(d.meta.formationNote.includes("186"));
+assert.equal(d.meta.formation,"4-2-3-1");
+assertAuditedFormation(d);assert(d.meta.formationNote.includes("186"));
 assert.equal(d.meta.bestXiReview.status,"proposed_unapproved");
 assert.equal(d.players.length,d.meta.candidateCount);
 assert.equal(new Set(d.players.map(p=>p.id)).size,d.players.length);
 assert.equal(new Set(d.players.map(p=>p.nameOriginal.normalize("NFKC").toLowerCase())).size,d.players.length,"duplicate player");
 for(const p of d.players){
+ assertAuditedLeagueStats(p);
  assert(clubs.includes(p.club)&&roles.includes(p.position)&&grades.includes(p.tier),p.id);
  assert(["starter","backup"].includes(p.role),p.id);
  assert.equal(p.review,"draft_unapproved");
  assert(p.nameKo&&p.nameOriginal&&p.clubNameOriginal&&p.assessmentRationale&&p.sources?.length,p.id);
  assert(/^\d{4}-\d{2}-\d{2}$/.test(p.born),p.id);
- assert.equal(p.leagueStarts,null);assert.equal(p.leagueAppearances,null);
+ 
  assert.equal(p.positionMajorityVerified,false);
  assert(p.previousSeasons?.["2017-18"]&&p.previousSeasons?.["2018-19"],p.id);
- assert(p.leagueGoals===null||(Number.isInteger(p.leagueGoals)&&p.leagueGoals>=0));
- assert(p.leagueAssists===null||(Number.isInteger(p.leagueAssists)&&p.leagueAssists>=0));
+ 
+ 
  assert(Number.isInteger(p.rank)&&p.rank>0,p.id);
 }
 for(const c of clubs){
@@ -45,7 +48,7 @@ for(const c of clubs){
   assert(ps.filter(p=>p.position===pos&&p.role==="backup").length<=1,c+" backup "+pos);
  }
  const r=JSON.parse(readFileSync("audit/player-research/premierleague-2019-20-"+c+"-fresh-draft.json","utf8"));
- assert.deepEqual(r.players,ps,c+" research parity");
+ assertAuditedSnapshot(d,r.players,ps,c);
 }
 assert.equal(d.players.find(p=>p.nameOriginal==="James Justin").born,"1998-02-23","conflicting FootballSquads DOB corrected");
 assert.equal(d.players.find(p=>p.nameOriginal==="Kevin De Bruyne").leagueAssists,20);

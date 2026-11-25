@@ -28,9 +28,9 @@
       "https://www.premierleague.com/en/news/3532038"
     ],
     "formation": "4-2-3-1",
-    "formationNote": "Official Premier League 9 June 2023: 4-2-3-1 261/760 starts, 4-3-3 222, 3-4-2-1 64, 4-4-2 62, 3-5-2 23.",
+    "formationNote": "External review opta_inferred_shape: 4-2-3-1 256/740 known team starts (760 total); inferred_mode_guaranteed. Previous independent source note: Official Premier League 9 June 2023: 4-2-3-1 261/760 starts, 4-3-3 222, 3-4-2-1 64, 4-4-2 62, 3-5-2 23.",
     "candidateCount": 141,
-    "playerAssessmentStatus": "tier_rank_XI_DRAFT_2022_23_third_party_stats_match_position_audit_pending",
+    "playerAssessmentStatus": "external_fact_review_applied_qualitative_three_season_and_linked_positions_pending",
     "playerCandidateReview": {
       "status": "draft_unapproved",
       "assessmentYears": [
@@ -59,20 +59,187 @@
       "independentThreeYearComparisonsVerified": 0,
       "dobSecondSourceVerified": 0,
       "warnings": [
+        "All 141 retained players have populated current PL appearances, starts, goals and assists from the supplied external review; this is not final independent qualitative certification.",
+        "Unresolved position competition, prior seasons and some source disagreements remain. See meta.externalAuditSegment3.",
+        "Trossard and Jorginho club-specific transfer corrections verified via FBref/PL; other on-loan data anomalies omitted from roster.",
+        "Some previous foreign-league / other-club records unavailable, recorded as null.",
+        "Position roles tactical; exact season majority position audit pending.",
+        "All ratings & Best XI are DRAFT; browser review pending."
+      ],
+      "warningsBeforeExternalReview": [
         "Source stats mirrored rather than independently checked per player.",
         "Trossard and Jorginho club-specific transfer corrections verified via FBref/PL; other on-loan data anomalies omitted from roster.",
         "Some previous foreign-league / other-club records unavailable, recorded as null.",
         "Position roles tactical; exact season majority position audit pending.",
         "All ratings & Best XI are DRAFT; browser review pending."
-      ]
+      ],
+      "externalReviewCurrentStatsComplete": 141
     },
     "bestXiReview": {
       "status": "proposed_unapproved",
       "formation": "4-2-3-1",
-      "formationBasis": "Official PL most-used shape: 261 of 760 team-starts",
+      "formationBasis": "opta_inferred_shape: 740/760 team lineups; most frequent 4-2-3-1, 256 uses; inferred_mode_guaranteed.",
       "source": "https://www.premierleague.com/en/news/3531804",
       "exceptionReason": "Individual actual positional roles used, separate from club formation notes."
-    }
+    },
+    "formationCoverage": {
+      "knownTeamLineups": 740,
+      "totalTeamLineups": 760,
+      "rankedKnown": [
+        [
+          "4-2-3-1",
+          256
+        ],
+        [
+          "4-3-3",
+          216
+        ],
+        [
+          "3-4-2-1",
+          62
+        ],
+        [
+          "4-4-2",
+          60
+        ],
+        [
+          "3-5-2",
+          39
+        ],
+        [
+          "4-1-4-1",
+          21
+        ],
+        [
+          "3-4-3",
+          16
+        ],
+        [
+          "3-2-4-1",
+          11
+        ],
+        [
+          "3-4-1-2",
+          9
+        ],
+        [
+          "4-3-2-1",
+          8
+        ],
+        [
+          "4-5-1",
+          7
+        ],
+        [
+          "3-6-1",
+          6
+        ],
+        [
+          "4-3-1-2",
+          6
+        ],
+        [
+          "4-4-1-1",
+          6
+        ],
+        [
+          "3-5-1-1",
+          5
+        ],
+        [
+          "4-1-2-1-2",
+          4
+        ],
+        [
+          "3-1-2-2-2",
+          3
+        ],
+        [
+          "4-2-2-2",
+          3
+        ],
+        [
+          "3-3-3-1",
+          1
+        ],
+        [
+          "3-1-2-1-3",
+          1
+        ]
+      ],
+      "status": "inferred_mode_guaranteed",
+      "formationMode": "4-2-3-1",
+      "sourceType": "opta_inferred_shape",
+      "sources": [
+        "https://github.com/peteowen1/pannadata/releases/tag/opta-latest",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/match_details.csv"
+      ]
+    },
+    "externalAuditSegment3": {
+      "reportBaseCommit": "cad000501e02bcdaea4ac3cc2461439e033b4464",
+      "appliedToCommit": "08c2e3c8fa41a011d638d3604625362a3ddbb65f",
+      "report": "FOOTBALL_AUDIT_PL_SEGMENT_3_FULL_REVIEW.json",
+      "status": "draft_unapproved",
+      "before": 141,
+      "after": 141,
+      "corrections": 8,
+      "fills": 0,
+      "removedFills": 0,
+      "removedCorrections": 0,
+      "added": 0,
+      "removed": 0,
+      "positions": 0,
+      "roles": 0,
+      "ranks": 0,
+      "xi": false,
+      "formation": "4-2-3-1",
+      "formationCount": 256,
+      "lineups": 740,
+      "formationStatus": "inferred_mode_guaranteed",
+      "missing": {
+        "leagueAppearances": 0,
+        "leagueStarts": 0,
+        "leagueGoals": 0,
+        "leagueAssists": 0
+      },
+      "heldCount": 2,
+      "removedPlayers": [],
+      "addedPlayers": [],
+      "removedPlayerFactChanges": [],
+      "held": [
+        {
+          "playerId": "pl-2022-23-newcastle-180974",
+          "nameKo": "조엘린통",
+          "nameOriginal": "Joelinton",
+          "old": "LW",
+          "suggested": "CM",
+          "reason": "30선발 중 CM 19·LW 11. Willock·Longstaff·Anderson과 주전/후보를 함께 비교해야 한다.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/match_details.csv",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games",
+            "https://github.com/peteowen1/pannadata/releases/tag/opta-latest"
+          ],
+          "status": "linked_role_review_pending"
+        },
+        {
+          "playerId": "pl-2022-23-westham-201057",
+          "nameKo": "틸로 케러",
+          "nameOriginal": "Thilo Kehrer",
+          "old": "RB",
+          "suggested": "CB",
+          "reason": "25선발 중 CB 15·RB 8·LB 1·미확인 1. 웨스트햄 CB·RB 동시 검토.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/match_details.csv",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games",
+            "https://github.com/peteowen1/pannadata/releases/tag/opta-latest"
+          ],
+          "status": "linked_role_review_pending"
+        }
+      ],
+      "note": "Structured audited stats supersede earlier narrative text. Qualitative three-season review and unresolved position/candidate evidence remain draft."
+    },
+    "formationNoteBeforeExternalReview": "Official Premier League 9 June 2023: 4-2-3-1 261/760 starts, 4-3-3 222, 3-4-2-1 64, 4-4-2 62, 3-5-2 23.",
+    "formationVerification": "inferred_mode_guaranteed"
   },
   "clubs": [
     {
@@ -635,7 +802,7 @@
       "leagueMinutes": 3330,
       "leagueGoals": 0,
       "leagueAssists": 1,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3의 GK 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -671,7 +838,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-newcastle-98747",
@@ -694,7 +862,7 @@
       "leagueMinutes": 3262,
       "leagueGoals": 0,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3의 GK 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -730,7 +898,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-mancity-121160",
@@ -753,7 +922,7 @@
       "leagueMinutes": 3150,
       "leagueGoals": 0,
       "leagueAssists": 1,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3 / 3-2-4-1의 GK 역할. 경기별 최다 출전 위치 집계 미완료. 시즌 후반기 3-2-4-1 전술에 따른 포지션 변화",
       "previousSeasons": {
@@ -789,7 +958,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-arsenal-225321",
@@ -812,7 +982,7 @@
       "leagueMinutes": 3420,
       "leagueGoals": 0,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3의 GK 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -848,7 +1018,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-astonvilla-98980",
@@ -871,7 +1042,7 @@
       "leagueMinutes": 3140,
       "leagueGoals": 0,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-4-2 / 4-4-1-1의 GK 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -907,7 +1078,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-manutd-51940",
@@ -930,7 +1102,7 @@
       "leagueMinutes": 3420,
       "leagueGoals": 0,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-2-3-1의 GK 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -966,7 +1138,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_Utd_1/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_Utd_1/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-brighton-49262",
@@ -989,7 +1162,7 @@
       "leagueMinutes": 1350,
       "leagueGoals": 0,
       "leagueAssists": 1,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-2-3-1의 GK 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -1025,7 +1198,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Brighton_36/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Brighton_36/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-westham-37096",
@@ -1048,7 +1222,7 @@
       "leagueMinutes": 3113,
       "leagueGoals": 0,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-2-3-1의 GK 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -1084,7 +1258,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/West_Ham_21/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/West_Ham_21/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-brighton-215059",
@@ -1107,7 +1282,7 @@
       "leagueMinutes": 2070,
       "leagueGoals": 0,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-2-3-1의 GK 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -1143,7 +1318,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Brighton_36/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Brighton_36/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-mancity-88248",
@@ -1166,7 +1342,7 @@
       "leagueMinutes": 270,
       "leagueGoals": 0,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3 / 3-2-4-1의 GK 역할. 경기별 최다 출전 위치 집계 미완료. 시즌 후반기 3-2-4-1 전술에 따른 포지션 변화",
       "previousSeasons": {
@@ -1202,7 +1378,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-westham-84182",
@@ -1225,7 +1402,7 @@
       "leagueMinutes": 307,
       "leagueGoals": 0,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-2-3-1의 GK 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -1261,7 +1438,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/West_Ham_21/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/West_Ham_21/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-mancity-171314",
@@ -1284,7 +1462,7 @@
       "leagueMinutes": 1997,
       "leagueGoals": 0,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3 / 3-2-4-1의 CB 역할. 경기별 최다 출전 위치 집계 미완료. 시즌 후반기 3-2-4-1 전술에 따른 포지션 변화",
       "previousSeasons": {
@@ -1320,7 +1498,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-arsenal-462424",
@@ -1343,7 +1522,7 @@
       "leagueMinutes": 2416,
       "leagueGoals": 2,
       "leagueAssists": 1,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3의 CB 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -1379,7 +1558,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-mancity-97299",
@@ -1402,7 +1582,7 @@
       "leagueMinutes": 1848,
       "leagueGoals": 2,
       "leagueAssists": 2,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3 / 3-2-4-1의 CB 역할. 경기별 최다 출전 위치 집계 미완료. 시즌 후반기 3-2-4-1 전술에 따른 포지션 변화",
       "previousSeasons": {
@@ -1438,7 +1618,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-arsenal-226597",
@@ -1461,7 +1642,7 @@
       "leagueMinutes": 3411,
       "leagueGoals": 3,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3의 CB 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -1497,7 +1678,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-newcastle-220237",
@@ -1520,7 +1702,7 @@
       "leagueMinutes": 3129,
       "leagueGoals": 0,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3의 CB 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -1556,7 +1738,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-liverpool-97032",
@@ -1579,7 +1762,7 @@
       "leagueMinutes": 2835,
       "leagueGoals": 3,
       "leagueAssists": 1,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3의 CB 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -1615,7 +1798,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-manutd-221820",
@@ -1638,7 +1822,7 @@
       "leagueMinutes": 2115,
       "leagueGoals": 1,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-2-3-1의 CB 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -1674,7 +1858,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_Utd_1/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_Utd_1/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-newcastle-119471",
@@ -1697,7 +1882,7 @@
       "leagueMinutes": 3208,
       "leagueGoals": 1,
       "leagueAssists": 3,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3의 CB 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -1733,7 +1918,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-brighton-83299",
@@ -1756,7 +1942,7 @@
       "leagueMinutes": 3239,
       "leagueGoals": 1,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-2-3-1의 CB 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -1792,7 +1978,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Brighton_36/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Brighton_36/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-mancity-211975",
@@ -1815,7 +2002,7 @@
       "leagueMinutes": 2287,
       "leagueGoals": 0,
       "leagueAssists": 1,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3 / 3-2-4-1의 CB 역할. 경기별 최다 출전 위치 집계 미완료. 시즌 후반기 3-2-4-1 전술에 따른 포지션 변화",
       "previousSeasons": {
@@ -1851,7 +2038,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-astonvilla-199798",
@@ -1874,7 +2062,7 @@
       "leagueMinutes": 3323,
       "leagueGoals": 0,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-4-2 / 4-4-1-1의 CB 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -1910,7 +2098,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-astonvilla-149484",
@@ -1933,7 +2122,7 @@
       "leagueMinutes": 3150,
       "leagueGoals": 1,
       "leagueAssists": 2,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-4-2 / 4-4-1-1의 CB 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -1969,7 +2158,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-manutd-90152",
@@ -1992,7 +2182,7 @@
       "leagueMinutes": 1916,
       "leagueGoals": 0,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-2-3-1의 CB 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -2028,7 +2218,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_Utd_1/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_Utd_1/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-liverpool-204716",
@@ -2051,7 +2242,7 @@
       "leagueMinutes": 1551,
       "leagueGoals": 0,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3의 CB 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -2087,7 +2278,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-brighton-460028",
@@ -2110,7 +2302,7 @@
       "leagueMinutes": 1220,
       "leagueGoals": 0,
       "leagueAssists": 2,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-2-3-1의 CB 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -2146,7 +2338,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Brighton_36/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Brighton_36/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-westham-103192",
@@ -2169,7 +2362,7 @@
       "leagueMinutes": 1990,
       "leagueGoals": 2,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-2-3-1의 CB 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -2205,7 +2398,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/West_Ham_21/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/West_Ham_21/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-brighton-110735",
@@ -2228,7 +2422,7 @@
       "leagueMinutes": 1988,
       "leagueGoals": 0,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-2-3-1의 CB 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -2264,7 +2458,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Brighton_36/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Brighton_36/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-westham-210494",
@@ -2287,7 +2482,7 @@
       "leagueMinutes": 1595,
       "leagueGoals": 2,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-2-3-1의 CB 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -2323,7 +2518,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/West_Ham_21/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/West_Ham_21/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-manutd-184667",
@@ -2346,7 +2542,7 @@
       "leagueMinutes": 1360,
       "leagueGoals": 0,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-2-3-1의 CB 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -2382,7 +2578,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_Utd_1/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_Utd_1/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-liverpool-171287",
@@ -2405,7 +2602,7 @@
       "leagueMinutes": 1461,
       "leagueGoals": 0,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3의 CB 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -2441,7 +2638,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-westham-40669",
@@ -2464,7 +2662,7 @@
       "leagueMinutes": 1236,
       "leagueGoals": 0,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-2-3-1의 CB 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -2500,7 +2698,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/West_Ham_21/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/West_Ham_21/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-arsenal-156074",
@@ -2523,7 +2722,7 @@
       "leagueMinutes": 562,
       "leagueGoals": 1,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3의 CB 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -2559,7 +2758,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-liverpool-122798",
@@ -2582,7 +2782,7 @@
       "leagueMinutes": 2588,
       "leagueGoals": 0,
       "leagueAssists": 8,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3의 LB 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -2618,7 +2818,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-brighton-204214",
@@ -2641,7 +2842,7 @@
       "leagueMinutes": 2682,
       "leagueGoals": 1,
       "leagueAssists": 5,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-2-3-1의 LB 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -2677,7 +2878,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Brighton_36/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Brighton_36/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-manutd-106760",
@@ -2700,7 +2902,7 @@
       "leagueMinutes": 2555,
       "leagueGoals": 1,
       "leagueAssists": 2,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-2-3-1의 LB 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -2736,7 +2938,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_Utd_1/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_Utd_1/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-arsenal-206325",
@@ -2759,7 +2962,7 @@
       "leagueMinutes": 2132,
       "leagueGoals": 1,
       "leagueAssists": 2,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3의 LB 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -2795,7 +2998,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-mancity-126184",
@@ -2818,7 +3022,7 @@
       "leagueMinutes": 1876,
       "leagueGoals": 1,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3 / 3-2-4-1의 LB 역할. 경기별 최다 출전 위치 집계 미완료. 시즌 후반기 3-2-4-1 전술에 따른 포지션 변화",
       "previousSeasons": {
@@ -2854,7 +3058,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-newcastle-78916",
@@ -2877,7 +3082,7 @@
       "leagueMinutes": 3115,
       "leagueGoals": 1,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3의 LB 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -2892,10 +3097,11 @@
         "2021-22": {
           "leagueStarts": 28,
           "leagueAppearances": 29,
-          "leagueGoals": 1,
+          "leagueGoals": 0,
           "leagueAssists": 1,
           "club": "newcastle",
-          "verification": "historical_Premier_League_mirror"
+          "verification": "historical_Premier_League_mirror",
+          "auditStatus": "specific_field_corrected_other_fields_not_reverified"
         }
       },
       "assessmentYears": [
@@ -2912,8 +3118,27 @@
       "candidateRationale": "2022-23 PL 35선발 38출전; 해당 팀 starter과 시즌 전술 근거의 신규 선정",
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/players_stats/2022-23_players_stats.csv",
-        "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/squad/2022-23_squad.csv"
-      ]
+        "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/squad/2022-23_squad.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv"
+      ],
+      "externalAuditSegment3": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "previousSeasons.2021-22.leagueGoals",
+            "old": 1,
+            "proposed": 0,
+            "action": "replace",
+            "reason": "2021-22 Newcastle United의 PL 원기록과 기존 이전 시즌 필드가 다르다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv"
+        ]
+      },
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-mancity-121145",
@@ -2936,7 +3161,7 @@
       "leagueMinutes": 1278,
       "leagueGoals": 2,
       "leagueAssists": 1,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3 / 3-2-4-1의 LB 역할. 경기별 최다 출전 위치 집계 미완료. 시즌 후반기 3-2-4-1 전술에 따른 포지션 변화",
       "previousSeasons": {
@@ -2972,7 +3197,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-astonvilla-106468",
@@ -2995,7 +3221,7 @@
       "leagueMinutes": 1335,
       "leagueGoals": 0,
       "leagueAssists": 3,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-4-2 / 4-4-1-1의 LB 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -3031,7 +3257,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-westham-55459",
@@ -3054,7 +3281,7 @@
       "leagueMinutes": 2235,
       "leagueGoals": 0,
       "leagueAssists": 1,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-2-3-1의 LB 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -3090,7 +3317,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/West_Ham_21/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/West_Ham_21/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-astonvilla-101188",
@@ -3113,7 +3341,7 @@
       "leagueMinutes": 1499,
       "leagueGoals": 1,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-4-2 / 4-4-1-1의 LB 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -3149,7 +3377,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-manutd-222690",
@@ -3172,7 +3401,7 @@
       "leagueMinutes": 1393,
       "leagueGoals": 0,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-2-3-1의 LB 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -3208,7 +3437,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_Utd_1/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_Utd_1/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-arsenal-192895",
@@ -3231,7 +3461,7 @@
       "leagueMinutes": 778,
       "leagueGoals": 0,
       "leagueAssists": 1,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3의 LB 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -3267,7 +3497,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-westham-109533",
@@ -3290,7 +3521,7 @@
       "leagueMinutes": 1321,
       "leagueGoals": 1,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-2-3-1의 LB 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -3326,7 +3557,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/West_Ham_21/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/West_Ham_21/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-liverpool-214285",
@@ -3349,7 +3581,7 @@
       "leagueMinutes": 768,
       "leagueGoals": 0,
       "leagueAssists": 4,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3의 LB 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -3385,7 +3617,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-newcastle-169359",
@@ -3408,7 +3641,7 @@
       "leagueMinutes": 603,
       "leagueGoals": 0,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3의 LB 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -3423,10 +3656,11 @@
         "2021-22": {
           "leagueStarts": 33,
           "leagueAppearances": 33,
-          "leagueGoals": 1,
-          "leagueAssists": 1,
+          "leagueGoals": 0,
+          "leagueAssists": 0,
           "club": "newcastle",
-          "verification": "historical_Premier_League_mirror"
+          "verification": "historical_Premier_League_mirror",
+          "auditStatus": "specific_field_corrected_other_fields_not_reverified"
         }
       },
       "assessmentYears": [
@@ -3443,8 +3677,34 @@
       "candidateRationale": "2022-23 PL 6선발 17출전; 해당 팀 backup과 시즌 전술 근거의 신규 선정",
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/players_stats/2022-23_players_stats.csv",
-        "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/squad/2022-23_squad.csv"
-      ]
+        "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/squad/2022-23_squad.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv"
+      ],
+      "externalAuditSegment3": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "previousSeasons.2021-22.leagueGoals",
+            "old": 1,
+            "proposed": 0,
+            "action": "replace",
+            "reason": "2021-22 Newcastle United의 PL 원기록과 기존 이전 시즌 필드가 다르다."
+          },
+          {
+            "field": "previousSeasons.2021-22.leagueAssists",
+            "old": 1,
+            "proposed": 0,
+            "action": "replace",
+            "reason": "2021-22 Newcastle United의 PL 원기록과 기존 이전 시즌 필드가 다르다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv"
+        ]
+      },
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-newcastle-77794",
@@ -3467,7 +3727,7 @@
       "leagueMinutes": 3347,
       "leagueGoals": 1,
       "leagueAssists": 7,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3의 RB 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -3503,7 +3763,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-liverpool-169187",
@@ -3526,7 +3787,7 @@
       "leagueMinutes": 2931,
       "leagueGoals": 2,
       "leagueAssists": 9,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3의 RB 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -3562,7 +3823,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-arsenal-198869",
@@ -3585,7 +3847,7 @@
       "leagueMinutes": 3067,
       "leagueGoals": 2,
       "leagueAssists": 5,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3의 RB 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -3621,7 +3883,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-mancity-58621",
@@ -3644,7 +3907,7 @@
       "leagueMinutes": 1956,
       "leagueGoals": 0,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3 / 3-2-4-1의 RB 역할. 경기별 최다 출전 위치 집계 미완료. 시즌 후반기 3-2-4-1 전술에 따른 포지션 변화",
       "previousSeasons": {
@@ -3680,7 +3943,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-brighton-111478",
@@ -3703,7 +3967,7 @@
       "leagueMinutes": 2194,
       "leagueGoals": 1,
       "leagueAssists": 1,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-2-3-1의 RB 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -3739,7 +4003,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Brighton_36/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Brighton_36/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-manutd-216051",
@@ -3762,7 +4027,7 @@
       "leagueMinutes": 2155,
       "leagueGoals": 1,
       "leagueAssists": 2,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-2-3-1의 RB 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -3798,7 +4063,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_Utd_1/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_Utd_1/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-westham-201057",
@@ -3821,7 +4087,7 @@
       "leagueMinutes": 2230,
       "leagueGoals": 0,
       "leagueAssists": 2,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-2-3-1의 RB 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -3857,7 +4123,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/West_Ham_21/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/West_Ham_21/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-westham-164555",
@@ -3880,7 +4147,7 @@
       "leagueMinutes": 2137,
       "leagueGoals": 0,
       "leagueAssists": 1,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-2-3-1의 RB 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -3916,7 +4183,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/West_Ham_21/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/West_Ham_21/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-astonvilla-18892",
@@ -3939,7 +4207,7 @@
       "leagueMinutes": 2038,
       "leagueGoals": 1,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-4-2 / 4-4-1-1의 RB 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -3975,7 +4243,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-astonvilla-199796",
@@ -3998,7 +4267,7 @@
       "leagueMinutes": 1820,
       "leagueGoals": 0,
       "leagueAssists": 1,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-4-2 / 4-4-1-1의 RB 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -4034,7 +4303,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-manutd-214590",
@@ -4057,7 +4327,7 @@
       "leagueMinutes": 1436,
       "leagueGoals": 0,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-2-3-1의 RB 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -4093,7 +4363,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_Utd_1/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_Utd_1/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-arsenal-223723",
@@ -4116,7 +4387,7 @@
       "leagueMinutes": 653,
       "leagueGoals": 0,
       "leagueAssists": 1,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3의 RB 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -4152,7 +4423,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-mancity-477064",
@@ -4175,7 +4447,7 @@
       "leagueMinutes": 903,
       "leagueGoals": 0,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3 / 3-2-4-1의 RB 역할. 경기별 최다 출전 위치 집계 미완료. 시즌 후반기 3-2-4-1 전술에 따른 포지션 변화",
       "previousSeasons": {
@@ -4211,7 +4483,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-brighton-232792",
@@ -4234,7 +4507,7 @@
       "leagueMinutes": 441,
       "leagueGoals": 0,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-2-3-1의 RB 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -4270,7 +4543,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Brighton_36/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Brighton_36/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-mancity-220566",
@@ -4293,7 +4567,7 @@
       "leagueMinutes": 2920,
       "leagueGoals": 2,
       "leagueAssists": 6,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3 / 3-2-4-1의 DM 역할. 경기별 최다 출전 위치 집계 미완료. 시즌 후반기 3-2-4-1 전술에 따른 포지션 변화",
       "previousSeasons": {
@@ -4329,7 +4603,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-westham-204480",
@@ -4352,7 +4627,7 @@
       "leagueMinutes": 3272,
       "leagueGoals": 4,
       "leagueAssists": 2,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-2-3-1의 DM 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -4388,7 +4663,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/West_Ham_21/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/West_Ham_21/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-manutd-61256",
@@ -4411,7 +4687,7 @@
       "leagueMinutes": 2125,
       "leagueGoals": 4,
       "leagueAssists": 3,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-2-3-1의 DM 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -4447,7 +4723,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_Utd_1/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_Utd_1/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-newcastle-208706",
@@ -4470,7 +4747,7 @@
       "leagueMinutes": 2733,
       "leagueGoals": 4,
       "leagueAssists": 5,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3의 DM 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -4506,7 +4783,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-brighton-486672",
@@ -4529,7 +4807,7 @@
       "leagueMinutes": 3140,
       "leagueGoals": 1,
       "leagueAssists": 1,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-2-3-1의 DM 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -4565,7 +4843,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Brighton_36/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Brighton_36/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-arsenal-167199",
@@ -4588,7 +4867,7 @@
       "leagueMinutes": 2485,
       "leagueGoals": 3,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3의 DM 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -4624,7 +4903,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-astonvilla-226944",
@@ -4647,7 +4927,7 @@
       "leagueMinutes": 1778,
       "leagueGoals": 0,
       "leagueAssists": 1,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-4-2 / 4-4-1-1의 DM 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -4683,7 +4963,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-arsenal-85955",
@@ -4703,10 +4984,10 @@
       "rankRationale": "DM 전체 14명 중 8위. 3시즌 가중 경기력·영향력·동일 티어 비교를 바탕으로 한 미승인 초안.",
       "leagueStarts": 9,
       "leagueAppearances": 14,
-      "leagueMinutes": 855,
+      "leagueMinutes": 852,
       "leagueGoals": 0,
       "leagueAssists": 1,
-      "currentSeasonDataVerification": "club_specific_independent_split",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3의 DM 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -4742,8 +5023,29 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/squad/2022-23_squad.csv",
-        "https://fbref.com/en/players/45db685d/Jorginho"
-      ]
+        "https://fbref.com/en/players/45db685d/Jorginho",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/peteowen1/pannadata/releases/tag/opta-latest"
+      ],
+      "externalAuditSegment3": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "leagueMinutes",
+            "old": 855,
+            "proposed": 852,
+            "action": "replace",
+            "reason": "해당 구단만 집계한 PL 공식 시즌 출전 시간으로 정리. 이적 전 구단 기록과 출전 시간 집계 기준을 분리했다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+          "https://github.com/peteowen1/pannadata/releases/tag/opta-latest"
+        ]
+      },
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-liverpool-116643",
@@ -4766,7 +5068,7 @@
       "leagueMinutes": 2677,
       "leagueGoals": 0,
       "leagueAssists": 2,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3의 DM 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -4802,7 +5104,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-manutd-195851",
@@ -4825,7 +5128,7 @@
       "leagueMinutes": 1151,
       "leagueGoals": 1,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-2-3-1의 DM 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -4861,7 +5164,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_Utd_1/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_Utd_1/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-astonvilla-151589",
@@ -4879,12 +5183,12 @@
       "rank": 11,
       "rankStatus": "draft_unapproved",
       "rankRationale": "DM 전체 14명 중 11위. 3시즌 가중 경기력·영향력·동일 티어 비교를 바탕으로 한 미승인 초안.",
-      "leagueStarts": 9,
-      "leagueAppearances": 24,
-      "leagueMinutes": 901,
+      "leagueStarts": 7,
+      "leagueAppearances": 20,
+      "leagueMinutes": 688,
       "leagueGoals": 0,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-4-2 / 4-4-1-1의 DM 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -4919,8 +5223,45 @@
       "candidateRationale": "2022-23 PL 9선발 24출전; 해당 팀 backup과 시즌 전술 근거의 신규 선정",
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/players_stats/2022-23_players_stats.csv",
-        "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/squad/2022-23_squad.csv"
-      ]
+        "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/squad/2022-23_squad.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/peteowen1/pannadata/releases/tag/opta-latest",
+        "https://theanalyst.com/players/6160/leander-dendoncker/career"
+      ],
+      "externalAuditSegment3": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "leagueStarts",
+            "old": 9,
+            "proposed": 7,
+            "action": "replace",
+            "reason": "해당 구단 PL 경기의 선발 라인업을 집계했고, 확보된 독립 배치 기록과 교차 확인했다."
+          },
+          {
+            "field": "leagueAppearances",
+            "old": 24,
+            "proposed": 20,
+            "action": "replace",
+            "reason": "동일 구단 PL의 경기 집계와 시즌 집계가 일치한다."
+          },
+          {
+            "field": "leagueMinutes",
+            "old": 901,
+            "proposed": 688,
+            "action": "replace",
+            "reason": "해당 구단만 집계한 PL 공식 시즌 출전 시간으로 정리. 이적 전 구단 기록과 출전 시간 집계 기준을 분리했다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+          "https://github.com/peteowen1/pannadata/releases/tag/opta-latest",
+          "https://theanalyst.com/players/6160/leander-dendoncker/career"
+        ]
+      },
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-brighton-243568",
@@ -4943,7 +5284,7 @@
       "leagueMinutes": 508,
       "leagueGoals": 0,
       "leagueAssists": 1,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-2-3-1의 DM 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -4979,7 +5320,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Brighton_36/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Brighton_36/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-liverpool-535928",
@@ -5002,7 +5344,7 @@
       "leagueMinutes": 526,
       "leagueGoals": 1,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3의 DM 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -5038,7 +5380,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-westham-220585",
@@ -5061,7 +5404,7 @@
       "leagueMinutes": 758,
       "leagueGoals": 0,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-2-3-1의 DM 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -5097,7 +5440,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/West_Ham_21/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/West_Ham_21/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-mancity-61366",
@@ -5120,7 +5464,7 @@
       "leagueMinutes": 2425,
       "leagueGoals": 7,
       "leagueAssists": 16,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3 / 3-2-4-1의 CM 역할. 경기별 최다 출전 위치 집계 미완료. 시즌 후반기 3-2-4-1 전술에 따른 포지션 변화",
       "previousSeasons": {
@@ -5156,7 +5500,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-arsenal-184029",
@@ -5179,7 +5524,7 @@
       "leagueMinutes": 3143,
       "leagueGoals": 15,
       "leagueAssists": 7,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3의 CM 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -5215,7 +5560,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-mancity-59859",
@@ -5238,7 +5584,7 @@
       "leagueMinutes": 2357,
       "leagueGoals": 8,
       "leagueAssists": 4,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3 / 3-2-4-1의 CM 역할. 경기별 최다 출전 위치 집계 미완료. 시즌 후반기 3-2-4-1 전술에 따른 포지션 변화",
       "previousSeasons": {
@@ -5274,7 +5620,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-brighton-243016",
@@ -5297,7 +5644,7 @@
       "leagueMinutes": 2886,
       "leagueGoals": 10,
       "leagueAssists": 2,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-2-3-1의 CM 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -5333,7 +5680,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Brighton_36/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Brighton_36/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-mancity-165809",
@@ -5356,7 +5704,7 @@
       "leagueMinutes": 2203,
       "leagueGoals": 4,
       "leagueAssists": 5,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3 / 3-2-4-1의 CM 역할. 경기별 최다 출전 위치 집계 미완료. 시즌 후반기 3-2-4-1 전술에 따른 포지션 변화",
       "previousSeasons": {
@@ -5392,7 +5740,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-arsenal-84450",
@@ -5415,7 +5764,7 @@
       "leagueMinutes": 3004,
       "leagueGoals": 7,
       "leagueAssists": 7,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3의 CM 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -5451,7 +5800,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-astonvilla-230046",
@@ -5474,7 +5824,7 @@
       "leagueMinutes": 2933,
       "leagueGoals": 6,
       "leagueAssists": 6,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-4-2 / 4-4-1-1의 CM 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -5510,7 +5860,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-newcastle-200089",
@@ -5533,7 +5884,7 @@
       "leagueMinutes": 2577,
       "leagueGoals": 3,
       "leagueAssists": 6,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3의 CM 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -5569,7 +5920,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-newcastle-180135",
@@ -5592,7 +5944,7 @@
       "leagueMinutes": 2515,
       "leagueGoals": 1,
       "leagueAssists": 4,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3의 CM 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -5628,7 +5980,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-manutd-80607",
@@ -5651,7 +6004,7 @@
       "leagueMinutes": 2061,
       "leagueGoals": 1,
       "leagueAssists": 8,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-2-3-1의 CM 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -5687,7 +6040,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_Utd_1/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_Utd_1/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-liverpool-61558",
@@ -5710,7 +6064,7 @@
       "leagueMinutes": 1254,
       "leagueGoals": 0,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3의 CM 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -5746,7 +6100,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-westham-215439",
@@ -5769,7 +6124,7 @@
       "leagueMinutes": 2819,
       "leagueGoals": 2,
       "leagueAssists": 3,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-2-3-1의 CM 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -5805,7 +6160,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/West_Ham_21/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/West_Ham_21/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-liverpool-56979",
@@ -5828,7 +6184,7 @@
       "leagueMinutes": 2075,
       "leagueGoals": 0,
       "leagueAssists": 2,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3의 CM 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -5864,7 +6220,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-liverpool-444884",
@@ -5887,7 +6244,7 @@
       "leagueMinutes": 1612,
       "leagueGoals": 1,
       "leagueAssists": 2,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3의 CM 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -5923,7 +6280,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-manutd-101582",
@@ -5946,7 +6304,7 @@
       "leagueMinutes": 1234,
       "leagueGoals": 2,
       "leagueAssists": 2,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-2-3-1의 CM 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -5982,7 +6340,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_Utd_1/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_Utd_1/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-arsenal-438098",
@@ -6005,7 +6364,7 @@
       "leagueMinutes": 499,
       "leagueGoals": 1,
       "leagueAssists": 2,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3의 CM 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -6041,7 +6400,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-newcastle-215379",
@@ -6064,7 +6424,7 @@
       "leagueMinutes": 396,
       "leagueGoals": 0,
       "leagueAssists": 1,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3의 CM 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -6100,7 +6460,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-manutd-141746",
@@ -6123,7 +6484,7 @@
       "leagueMinutes": 3318,
       "leagueGoals": 8,
       "leagueAssists": 8,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-2-3-1의 CAM 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -6159,7 +6520,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_Utd_1/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_Utd_1/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-brighton-60307",
@@ -6182,7 +6544,7 @@
       "leagueMinutes": 3245,
       "leagueGoals": 9,
       "leagueAssists": 8,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-2-3-1의 CAM 역할. 경기별 최다 출전 위치 집계 미완료. RB/CM/CAM 기용 비중 검증 필요",
       "previousSeasons": {
@@ -6218,7 +6580,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Brighton_36/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Brighton_36/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-westham-224024",
@@ -6241,7 +6604,7 @@
       "leagueMinutes": 2168,
       "leagueGoals": 4,
       "leagueAssists": 3,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-2-3-1의 CAM 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -6277,7 +6640,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/West_Ham_21/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/West_Ham_21/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-astonvilla-195546",
@@ -6300,7 +6664,7 @@
       "leagueMinutes": 2421,
       "leagueGoals": 5,
       "leagueAssists": 2,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-4-2 / 4-4-1-1의 CAM 역할. 경기별 최다 출전 위치 집계 미완료. 4-4-2의 처진 공격수 및 중앙 창조자 CAM으로 매핑",
       "previousSeasons": {
@@ -6336,7 +6700,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-brighton-474120",
@@ -6359,7 +6724,7 @@
       "leagueMinutes": 800,
       "leagueGoals": 4,
       "leagueAssists": 2,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-2-3-1의 CAM 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -6395,7 +6760,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Brighton_36/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Brighton_36/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-astonvilla-84583",
@@ -6418,7 +6784,7 @@
       "leagueMinutes": 783,
       "leagueGoals": 1,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-4-2 / 4-4-1-1의 CAM 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -6454,7 +6820,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-manutd-101338",
@@ -6477,7 +6844,7 @@
       "leagueMinutes": 628,
       "leagueGoals": 0,
       "leagueAssists": 1,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-2-3-1의 CAM 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -6513,7 +6880,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_Utd_1/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_Utd_1/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-manutd-176297",
@@ -6536,7 +6904,7 @@
       "leagueMinutes": 2888,
       "leagueGoals": 17,
       "leagueAssists": 5,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-2-3-1의 LW 역할. 경기별 최다 출전 위치 집계 미완료. LW/ST 기용 비중 검증 필요",
       "previousSeasons": {
@@ -6572,7 +6940,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_Utd_1/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_Utd_1/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-arsenal-444145",
@@ -6595,7 +6964,7 @@
       "leagueMinutes": 2805,
       "leagueGoals": 15,
       "leagueAssists": 5,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3의 LW 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -6631,7 +7000,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-brighton-451340",
@@ -6654,7 +7024,7 @@
       "leagueMinutes": 2315,
       "leagueGoals": 7,
       "leagueAssists": 5,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-2-3-1의 LW 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -6690,7 +7060,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Brighton_36/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Brighton_36/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-newcastle-180974",
@@ -6713,7 +7084,7 @@
       "leagueMinutes": 2662,
       "leagueGoals": 6,
       "leagueAssists": 1,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3의 LW 역할. 경기별 최다 출전 위치 집계 미완료. LW/CM 기용 비중 확인 필요",
       "previousSeasons": {
@@ -6749,7 +7120,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-mancity-114283",
@@ -6772,7 +7144,7 @@
       "leagueMinutes": 2063,
       "leagueGoals": 5,
       "leagueAssists": 7,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3 / 3-2-4-1의 LW 역할. 경기별 최다 출전 위치 집계 미완료. 시즌 후반기 3-2-4-1 전술에 따른 포지션 변화",
       "previousSeasons": {
@@ -6808,7 +7180,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-mancity-209244",
@@ -6831,7 +7204,7 @@
       "leagueMinutes": 1843,
       "leagueGoals": 11,
       "leagueAssists": 5,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3 / 3-2-4-1의 LW 역할. 경기별 최다 출전 위치 집계 미완료. 시즌 후반기 3-2-4-1 전술에 따른 포지션 변화",
       "previousSeasons": {
@@ -6867,7 +7240,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-arsenal-116216",
@@ -6887,10 +7261,10 @@
       "rankRationale": "LW 전체 14명 중 7위. 3시즌 가중 경기력·영향력·동일 티어 비교를 바탕으로 한 미승인 초안.",
       "leagueStarts": 10,
       "leagueAppearances": 20,
-      "leagueMinutes": 931,
+      "leagueMinutes": 929,
       "leagueGoals": 1,
       "leagueAssists": 10,
-      "currentSeasonDataVerification": "club_specific_independent_split",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3의 LW 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -6926,8 +7300,29 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/squad/2022-23_squad.csv",
-        "https://fbref.com/en/players/38ceb24a/Leandro-Trossard"
-      ]
+        "https://fbref.com/en/players/38ceb24a/Leandro-Trossard",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/peteowen1/pannadata/releases/tag/opta-latest"
+      ],
+      "externalAuditSegment3": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "leagueMinutes",
+            "old": 931,
+            "proposed": 929,
+            "action": "replace",
+            "reason": "해당 구단만 집계한 PL 공식 시즌 출전 시간으로 정리. 이적 전 구단 기록과 출전 시간 집계 기준을 분리했다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+          "https://github.com/peteowen1/pannadata/releases/tag/opta-latest"
+        ]
+      },
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-astonvilla-232653",
@@ -6950,7 +7345,7 @@
       "leagueMinutes": 2644,
       "leagueGoals": 6,
       "leagueAssists": 7,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-4-2 / 4-4-1-1의 LW 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -6986,7 +7381,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-westham-172841",
@@ -7009,7 +7405,7 @@
       "leagueMinutes": 2070,
       "leagueGoals": 6,
       "leagueAssists": 3,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-2-3-1의 LW 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -7045,7 +7441,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/West_Ham_21/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/West_Ham_21/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-liverpool-447203",
@@ -7068,7 +7465,7 @@
       "leagueMinutes": 1699,
       "leagueGoals": 9,
       "leagueAssists": 3,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3의 LW 역할. 경기별 최다 출전 위치 집계 미완료. LW/ST 다중 역할 검증 필요",
       "previousSeasons": {
@@ -7104,7 +7501,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-liverpool-194634",
@@ -7127,7 +7525,7 @@
       "leagueMinutes": 1131,
       "leagueGoals": 7,
       "leagueAssists": 4,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3의 LW 역할. 경기별 최다 출전 위치 집계 미완료. LW/ST 다중 역할 검증 필요",
       "previousSeasons": {
@@ -7163,7 +7561,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-newcastle-170137",
@@ -7186,7 +7585,7 @@
       "leagueMinutes": 1116,
       "leagueGoals": 1,
       "leagueAssists": 5,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3의 LW 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -7222,7 +7621,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-manutd-209243",
@@ -7245,7 +7645,7 @@
       "leagueMinutes": 1698,
       "leagueGoals": 6,
       "leagueAssists": 3,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-2-3-1의 LW 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -7281,7 +7681,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_Utd_1/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_Utd_1/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-westham-217593",
@@ -7304,7 +7705,7 @@
       "leagueMinutes": 1501,
       "leagueGoals": 3,
       "leagueAssists": 1,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-2-3-1의 LW 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -7340,7 +7741,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/West_Ham_21/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/West_Ham_21/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-liverpool-118748",
@@ -7363,7 +7765,7 @@
       "leagueMinutes": 3294,
       "leagueGoals": 19,
       "leagueAssists": 12,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3의 RW 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -7399,7 +7801,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-arsenal-223340",
@@ -7422,7 +7825,7 @@
       "leagueMinutes": 3191,
       "leagueGoals": 14,
       "leagueAssists": 11,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3의 RW 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -7458,7 +7861,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-newcastle-179018",
@@ -7481,7 +7885,7 @@
       "leagueMinutes": 2507,
       "leagueGoals": 11,
       "leagueAssists": 2,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3의 RW 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -7517,7 +7921,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-mancity-103025",
@@ -7540,7 +7945,7 @@
       "leagueMinutes": 1923,
       "leagueGoals": 5,
       "leagueAssists": 10,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3 / 3-2-4-1의 RW 역할. 경기별 최다 출전 위치 집계 미완료. 시즌 후반기 3-2-4-1 전술에 따른 포지션 변화",
       "previousSeasons": {
@@ -7576,7 +7981,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-westham-178186",
@@ -7599,7 +8005,7 @@
       "leagueMinutes": 3236,
       "leagueGoals": 6,
       "leagueAssists": 5,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-2-3-1의 RW 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -7635,7 +8041,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/West_Ham_21/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/West_Ham_21/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-brighton-109345",
@@ -7658,7 +8065,7 @@
       "leagueMinutes": 2724,
       "leagueGoals": 7,
       "leagueAssists": 7,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-2-3-1의 RW 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -7694,7 +8101,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Brighton_36/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Brighton_36/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-astonvilla-122806",
@@ -7717,7 +8125,7 @@
       "leagueMinutes": 2695,
       "leagueGoals": 1,
       "leagueAssists": 3,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-4-2 / 4-4-1-1의 RW 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -7753,7 +8161,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-astonvilla-215711",
@@ -7776,7 +8185,7 @@
       "leagueMinutes": 1983,
       "leagueGoals": 4,
       "leagueAssists": 4,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-4-2 / 4-4-1-1의 RW 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -7812,7 +8221,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-manutd-467169",
@@ -7835,7 +8245,7 @@
       "leagueMinutes": 1816,
       "leagueGoals": 4,
       "leagueAssists": 2,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-2-3-1의 RW 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -7871,7 +8281,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_Utd_1/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_Utd_1/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-newcastle-114243",
@@ -7894,7 +8305,7 @@
       "leagueMinutes": 1243,
       "leagueGoals": 4,
       "leagueAssists": 2,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3의 RW 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -7930,7 +8341,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-brighton-536916",
@@ -7953,7 +8365,7 @@
       "leagueMinutes": 563,
       "leagueGoals": 1,
       "leagueAssists": 1,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-2-3-1의 RW 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -7989,7 +8401,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Brighton_36/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Brighton_36/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-manutd-449434",
@@ -8012,7 +8425,7 @@
       "leagueMinutes": 422,
       "leagueGoals": 0,
       "leagueAssists": 1,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-2-3-1의 RW 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -8048,7 +8461,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_Utd_1/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_Utd_1/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-mancity-223094",
@@ -8071,7 +8485,7 @@
       "leagueMinutes": 2776,
       "leagueGoals": 36,
       "leagueAssists": 8,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3 / 3-2-4-1의 ST 역할. 경기별 최다 출전 위치 집계 미완료. 시즌 후반기 3-2-4-1 전술에 따른 포지션 변화",
       "previousSeasons": {
@@ -8107,7 +8521,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-astonvilla-178301",
@@ -8130,7 +8545,7 @@
       "leagueMinutes": 3134,
       "leagueGoals": 15,
       "leagueAssists": 6,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-4-2 / 4-4-1-1의 ST 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -8166,7 +8581,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-newcastle-75115",
@@ -8189,7 +8605,7 @@
       "leagueMinutes": 1885,
       "leagueGoals": 18,
       "leagueAssists": 5,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3의 ST 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -8225,7 +8641,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-arsenal-205651",
@@ -8248,7 +8665,7 @@
       "leagueMinutes": 2074,
       "leagueGoals": 11,
       "leagueAssists": 6,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3의 ST 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -8284,7 +8701,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-newcastle-219168",
@@ -8307,7 +8725,7 @@
       "leagueMinutes": 1524,
       "leagueGoals": 10,
       "leagueAssists": 1,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3의 ST 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -8343,7 +8761,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-mancity-461358",
@@ -8366,7 +8785,7 @@
       "leagueMinutes": 1453,
       "leagueGoals": 9,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3 / 3-2-4-1의 ST 역할. 경기별 최다 출전 위치 집계 미완료. 시즌 후반기 3-2-4-1 전술에 따른 포지션 변화",
       "previousSeasons": {
@@ -8402,7 +8821,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-liverpool-243298",
@@ -8425,7 +8845,7 @@
       "leagueMinutes": 1465,
       "leagueGoals": 7,
       "leagueAssists": 2,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3의 ST 역할. 경기별 최다 출전 위치 집계 미완료. LW/ST 다중 역할 검증 필요",
       "previousSeasons": {
@@ -8461,7 +8881,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-liverpool-92217",
@@ -8484,7 +8905,7 @@
       "leagueMinutes": 1212,
       "leagueGoals": 11,
       "leagueAssists": 4,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3의 ST 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -8520,7 +8941,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-brighton-487117",
@@ -8543,7 +8965,7 @@
       "leagueMinutes": 951,
       "leagueGoals": 6,
       "leagueAssists": 2,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-2-3-1의 ST 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -8579,7 +9001,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Brighton_36/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Brighton_36/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-brighton-50175",
@@ -8602,7 +9025,7 @@
       "leagueMinutes": 1856,
       "leagueGoals": 6,
       "leagueAssists": 3,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-2-3-1의 ST 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -8638,7 +9061,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Brighton_36/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Brighton_36/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-westham-57531",
@@ -8661,7 +9085,7 @@
       "leagueMinutes": 1835,
       "leagueGoals": 5,
       "leagueAssists": 3,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-2-3-1의 ST 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -8697,7 +9121,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/West_Ham_21/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/West_Ham_21/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-arsenal-205533",
@@ -8720,7 +9145,7 @@
       "leagueMinutes": 1070,
       "leagueGoals": 4,
       "leagueAssists": 1,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-3-3의 ST 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -8756,7 +9181,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-manutd-148225",
@@ -8779,7 +9205,7 @@
       "leagueMinutes": 979,
       "leagueGoals": 6,
       "leagueAssists": 2,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-2-3-1의 ST 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -8815,7 +9241,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_Utd_1/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_Utd_1/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-westham-195899",
@@ -8838,7 +9265,7 @@
       "leagueMinutes": 928,
       "leagueGoals": 3,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-2-3-1의 ST 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -8874,7 +9301,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/West_Ham_21/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/West_Ham_21/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2022-23-manutd-120202",
@@ -8897,7 +9325,7 @@
       "leagueMinutes": 797,
       "leagueGoals": 0,
       "leagueAssists": 1,
-      "currentSeasonDataVerification": "third_party_mirror_not_independently_crosschecked",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "4-2-3-1의 ST 역할. 경기별 최다 출전 위치 집계 미완료. ",
       "previousSeasons": {
@@ -8933,7 +9361,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_Utd_1/players_stats/2022-23_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_Utd_1/squad/2022-23_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     }
   ],
   "bestXi": [

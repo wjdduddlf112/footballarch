@@ -1,5 +1,6 @@
 // Structural DRAFT validator for Premier League 2024-25; not proof of player match histories.
 import assert from "node:assert/strict";
+import {assertAuditedLeagueStats,assertAuditedSnapshot,assertAuditedFormation} from "./verify-pl-segment3-audit.mjs";
 import { readFileSync } from "node:fs";
 const read=path=>JSON.parse(readFileSync(path,"utf8"));
 const d=read("data/premierleague-2024-25.json");
@@ -13,6 +14,7 @@ assert.equal(d.meta.status,"draft");
 assert.equal(d.meta.standingsOnly,false);
 assert.equal(d.meta.europeanQualificationVerified,true);
 assert.equal(d.meta.formation,"4-2-3-1");
+assertAuditedFormation(d);
 assert(d.meta.formationNote.includes("408"));
 assert.equal(d.standings.length,20);
 assert.deepEqual(d.standings.map(s=>s.rank),Array.from({length:20},(_,i)=>i+1));
@@ -27,16 +29,17 @@ assert.equal(d.qualifiers.find(q=>q.club==="tottenham").competition,"UCL");
 assert.equal(d.standings.find(s=>s.club==="tottenham").rank,17);
 assert.equal(d.standings.find(s=>s.club==="crystalpalace").rank,12);
 assert.deepEqual(d.standings.filter(s=>s.competition).map(s=>s.club).sort(),clubs.slice().sort());
-assert.equal(d.players.length,162);
-assert.equal(d.meta.candidateCount,162);
-assert.equal(new Set(d.players.map(p=>p.id)).size,162);
+assert.equal(d.players.length,161);
+assert.equal(d.meta.candidateCount,161);
+assert.equal(new Set(d.players.map(p=>p.id)).size,161);
 assert.equal(d.players.filter(p=>p.role==="starter").length,99);
-assert.equal(d.players.filter(p=>p.role==="backup").length,63);
+assert.equal(d.players.filter(p=>p.role==="backup").length,62);
 for(const p of d.players){
+ assertAuditedLeagueStats(p);
  assert(clubs.includes(p.club)&&pos.includes(p.position)&&tiers.includes(p.tier),p.id);
  assert(["starter","backup"].includes(p.role),p.id);
  assert.equal(p.review,"draft_unapproved",p.id);
- assert.equal(p.rankStatus,"draft_unapproved",p.id);
+ assert.equal(p.rankStatus,(p.externalAuditSegment3?.changes?.some(x=>x.field==="rank")||d.meta.externalAuditSegment3.addedPlayers.some(x=>x.record.id===p.id))?"proposed_unapproved":"draft_unapproved",p.id);
  assert(p.nameKo&&p.nameOriginal&&p.clubNameOriginal&&p.assessmentRationale&&p.sources.length>=2,p.id);
  assert(/^\d{4}-\d{2}-\d{2}$/.test(p.born),p.id);
  assert(Number.isInteger(p.leagueStarts)&&p.leagueStarts>0,p.id);
@@ -54,7 +57,7 @@ for(const club of clubs){
   assert(group.filter(p=>p.role==="backup").length<=1,club+"/"+position+" duplicate backups");
  }
  const file=read("audit/player-research/premierleague-2024-25-"+club+"-fresh-draft.json");
- assert.deepEqual(file.players,a,club+" source parity");
+ assertAuditedSnapshot(d,file.players,a,club);
 }
 for(const position of pos){
  const group=d.players.filter(p=>p.position===position);
@@ -79,4 +82,4 @@ const isak=d.players.find(p=>p.club==="newcastle"&&p.nameOriginal==="Alexander I
 assert(isak&&isak.leagueGoals===23);
 const palace=d.players.filter(p=>p.club==="crystalpalace");
 assert.equal(palace.filter(p=>p.role==="starter"&&p.position==="CB").length,3);
-console.log("PASS: PL 2024-25 structural DRAFT, 9 UEFA clubs, 162 newly selected players, 4-2-3-1 Best XI.");
+console.log("PASS: PL 2024-25 structural DRAFT, 9 UEFA clubs, 161 retained players, 4-2-3-1 Best XI.");

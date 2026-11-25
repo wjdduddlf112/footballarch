@@ -26,9 +26,9 @@
       "https://www.premierleague.com/en/news/4373298/crystal-palaces-appeal-to-play-in-europa-league-rejected-by-cas"
     ],
     "formation": "4-2-3-1",
-    "formationNote": "Official 5 Jun 2025 PL tactical analysis: 4-2-3-1 408 of 760 team starting formations; 3-4-2-1 117; 4-3-3 114; 4-1-4-1 27; 4-4-2 20.",
-    "candidateCount": 162,
-    "playerAssessmentStatus": "full_2024_25_club_tier_rank_XI_DRAFT_individual_historical_audit_open",
+    "formationNote": "External review opta_inferred_shape: 4-2-3-1 408/760 known team starts (760 total); inferred_mode_guaranteed. Previous independent source note: Official 5 Jun 2025 PL tactical analysis: 4-2-3-1 408 of 760 team starting formations; 3-4-2-1 117; 4-3-3 114; 4-1-4-1 27; 4-4-2 20.",
+    "candidateCount": 161,
+    "playerAssessmentStatus": "external_fact_review_applied_qualitative_three_season_and_linked_positions_pending",
     "playerCandidateReview": {
       "status": "draft_unapproved",
       "assessmentYears": [
@@ -52,27 +52,248 @@
         "nottingham": "4-2-3-1",
         "crystalpalace": "3-4-2-1"
       },
-      "leagueStartsSourceEntries": 162,
+      "leagueStartsSourceEntries": 161,
       "leagueStartsIndependentlyVerified": 0,
       "majorityPositionVerified": 0,
       "independentThreeYearComparisonsVerified": 0,
       "dobSecondSourceVerified": 0,
       "warnings": [
+        "All 161 retained players have populated current PL appearances, starts, goals and assists from the supplied external review; this is not final independent qualitative certification.",
+        "Unresolved position competition, prior seasons and some source disagreements remain. See meta.externalAuditSegment3.",
+        "All DOBs from one mirror squad source; independent second source pending.",
+        "Historical 2022-23 and 2023-24 stats from sixteen PL club sources; foreign leagues or other clubs may remain null and transferred player 2023-24 data may be aggregate in source.",
+        "Match-by-match majority primary position remains unverified, notably Liverpool Diaz/Gakpo, Arsenal Rice, Chelsea Neto, Tottenham Kulusevski, Palace Sarr/Lerma and Villa Rogers.",
+        "Mirrored club feed sometimes includes a former/parent club with a loanee's all-clubs stats. Omitted Villa Marcus Rashford (combined Man Utd + Villa total), Chelsea Trevoh Chalobah (Palace + Chelsea combined starts), and City Rodri (only one PL start due injury).",
+        "All tiers and rankings and XI are proposed DRAFT pending user review."
+      ],
+      "warningsBeforeExternalReview": [
         "All 162 candidate 2024-25 starts/apps sourced to third-party publicly mirrored PL stats, not independently checked against official match logs.",
         "All DOBs from one mirror squad source; independent second source pending.",
         "Historical 2022-23 and 2023-24 stats from sixteen PL club sources; foreign leagues or other clubs may remain null and transferred player 2023-24 data may be aggregate in source.",
         "Match-by-match majority primary position remains unverified, notably Liverpool Diaz/Gakpo, Arsenal Rice, Chelsea Neto, Tottenham Kulusevski, Palace Sarr/Lerma and Villa Rogers.",
         "Mirrored club feed sometimes includes a former/parent club with a loanee's all-clubs stats. Omitted Villa Marcus Rashford (combined Man Utd + Villa total), Chelsea Trevoh Chalobah (Palace + Chelsea combined starts), and City Rodri (only one PL start due injury).",
         "All tiers and rankings and XI are proposed DRAFT pending user review."
-      ]
+      ],
+      "externalReviewCurrentStatsComplete": 161
     },
     "bestXiReview": {
       "status": "proposed_unapproved",
       "formation": "4-2-3-1",
-      "formationBasis": "PL 2024-25 modal formation 4-2-3-1, 408 of 760 team starts",
+      "formationBasis": "opta_inferred_shape: 760/760 team lineups; most frequent 4-2-3-1, 408 uses; inferred_mode_guaranteed.",
       "source": "https://www.premierleague.com/en/news/4323030/season-trends",
       "exceptionReason": "Three-CB Palace club tactics and multirole athletes separate from nominal XI formation."
-    }
+    },
+    "formationCoverage": {
+      "knownTeamLineups": 760,
+      "totalTeamLineups": 760,
+      "rankedKnown": [
+        [
+          "4-2-3-1",
+          408
+        ],
+        [
+          "3-4-2-1",
+          117
+        ],
+        [
+          "4-3-3",
+          114
+        ],
+        [
+          "4-1-4-1",
+          27
+        ],
+        [
+          "4-4-2",
+          20
+        ],
+        [
+          "3-5-2",
+          17
+        ],
+        [
+          "3-6-1",
+          15
+        ],
+        [
+          "3-4-3",
+          12
+        ],
+        [
+          "3-4-1-2",
+          9
+        ],
+        [
+          "4-4-1-1",
+          6
+        ],
+        [
+          "4-3-1-2",
+          4
+        ],
+        [
+          "3-2-4-1",
+          3
+        ],
+        [
+          "4-5-1",
+          3
+        ],
+        [
+          "3-1-2-2-2",
+          2
+        ],
+        [
+          "4-2-2-2",
+          2
+        ],
+        [
+          "4-1-2-1-2",
+          1
+        ]
+      ],
+      "status": "inferred_mode_guaranteed",
+      "formationMode": "4-2-3-1",
+      "sourceType": "opta_inferred_shape",
+      "sources": [
+        "https://github.com/peteowen1/pannadata/releases/tag/opta-latest",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/match_details.csv"
+      ]
+    },
+    "externalAuditSegment3": {
+      "reportBaseCommit": "cad000501e02bcdaea4ac3cc2461439e033b4464",
+      "appliedToCommit": "08c2e3c8fa41a011d638d3604625362a3ddbb65f",
+      "report": "FOOTBALL_AUDIT_PL_SEGMENT_3_FULL_REVIEW.json",
+      "status": "draft_unapproved",
+      "before": 162,
+      "after": 161,
+      "corrections": 5,
+      "fills": 0,
+      "removedFills": 0,
+      "removedCorrections": 0,
+      "added": 0,
+      "removed": 1,
+      "positions": 0,
+      "roles": 0,
+      "ranks": 1,
+      "xi": false,
+      "formation": "4-2-3-1",
+      "formationCount": 408,
+      "lineups": 760,
+      "formationStatus": "inferred_mode_guaranteed",
+      "missing": {
+        "leagueAppearances": 0,
+        "leagueStarts": 0,
+        "leagueGoals": 0,
+        "leagueAssists": 0
+      },
+      "heldCount": 4,
+      "removedPlayers": [
+        {
+          "path": "data/premierleague-2024-25.json",
+          "player": {
+            "id": "pl-2024-25-arsenal-69752",
+            "name": "Neto",
+            "nameKo": "네투",
+            "nameOriginal": "Neto",
+            "club": "arsenal",
+            "clubNameOriginal": "Arsenal FC"
+          },
+          "status": "removal_recommended",
+          "reason": "아스널 소속 PL 출전 0경기. 기존 2선발은 임대 전 본머스에서 뛴 경기다.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://theanalyst.com/players/3757/neto/career",
+            "https://www.reuters.com/sports/soccer/bournemouth-keeper-neto-joins-arsenal-loan-2024-08-30/"
+          ]
+        }
+      ],
+      "addedPlayers": [],
+      "removedPlayerFactChanges": [],
+      "held": [
+        {
+          "playerId": "pl-2024-25-crystalpalace-152551",
+          "nameKo": "헤페르손 레르마",
+          "nameOriginal": "Jefferson Lerma",
+          "old": "CB",
+          "suggested": "CM",
+          "reason": "26선발 중 CM 20·CB 5·DM 1. 팰리스 중앙 및 스리백 후보 슬롯과 연동.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/match_details.csv",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games",
+            "https://github.com/peteowen1/pannadata/releases/tag/opta-latest"
+          ],
+          "status": "linked_role_review_pending"
+        },
+        {
+          "playerId": "pl-2024-25-tottenham-547701",
+          "nameKo": "아치 그레이",
+          "nameOriginal": "Archie Gray",
+          "old": "RB",
+          "suggested": "CB 우선 비교",
+          "reason": "19선발 중 CB 10, RB 3, LB 1, 중앙 5. 토트넘 CB 후보 정원과 연동.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/match_details.csv",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games",
+            "https://github.com/peteowen1/pannadata/releases/tag/opta-latest"
+          ],
+          "status": "linked_role_review_pending"
+        },
+        {
+          "competition": "PL",
+          "season": "2024-25",
+          "path": "data/premierleague-2024-25.json",
+          "playerId": "pl-2024-25-liverpool-243016",
+          "nameKo": "알렉시스 마크 알리스테르",
+          "nameOriginal": "Alexis Mac Allister",
+          "club": "liverpool",
+          "field": "leagueMinutes",
+          "old": 2607,
+          "proposed": null,
+          "reason": "경기 집계와 별도 집계에서 값이 일치하지 않아 적용 보류.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+            "https://github.com/peteowen1/pannadata/releases/tag/opta-latest"
+          ],
+          "status": "evidence_pending",
+          "action": "replace",
+          "oldFieldPresent": true,
+          "externalValues": {
+            "match": 2606,
+            "secondary": 2607
+          }
+        },
+        {
+          "competition": "PL",
+          "season": "2024-25",
+          "path": "data/premierleague-2024-25.json",
+          "playerId": "pl-2024-25-liverpool-244731",
+          "nameKo": "루이스 디아스",
+          "nameOriginal": "Luis Díaz",
+          "club": "liverpool",
+          "field": "leagueMinutes",
+          "old": 2410,
+          "proposed": null,
+          "reason": "경기 집계와 별도 집계에서 값이 일치하지 않아 적용 보류.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+            "https://github.com/peteowen1/pannadata/releases/tag/opta-latest"
+          ],
+          "status": "evidence_pending",
+          "action": "replace",
+          "oldFieldPresent": true,
+          "externalValues": {
+            "match": 2411,
+            "secondary": 2413
+          }
+        }
+      ],
+      "note": "Structured audited stats supersede earlier narrative text. Qualitative three-season review and unresolved position/candidate evidence remain draft."
+    },
+    "formationNoteBeforeExternalReview": "Official 5 Jun 2025 PL tactical analysis: 4-2-3-1 408 of 760 team starting formations; 3-4-2-1 117; 4-3-3 114; 4-1-4-1 27; 4-4-2 20.",
+    "formationVerification": "inferred_mode_guaranteed"
   },
   "clubs": [
     {
@@ -652,7 +873,7 @@
       "leagueMinutes": 3420,
       "leagueGoals": 0,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 GK 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -689,7 +910,8 @@
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Forest_17/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Forest_17/squad/2024-25_squad.csv",
         "https://www.premierleague.com/en/news/4316253/selsraya-claims-golden-glove-awards"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-arsenal-154561",
@@ -712,7 +934,7 @@
       "leagueMinutes": 3420,
       "leagueGoals": 0,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-3-3의 GK 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -749,7 +971,8 @@
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/squad/2024-25_squad.csv",
         "https://www.premierleague.com/en/news/4316253/selsraya-claims-golden-glove-awards"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-liverpool-116535",
@@ -772,7 +995,7 @@
       "leagueMinutes": 2509,
       "leagueGoals": 0,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 GK 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -808,7 +1031,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-crystalpalace-172649",
@@ -831,7 +1055,7 @@
       "leagueMinutes": 3420,
       "leagueGoals": 0,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 3-4-2-1의 GK 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -867,7 +1091,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Palace_31/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Palace_31/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-astonvilla-98980",
@@ -890,7 +1115,7 @@
       "leagueMinutes": 3195,
       "leagueGoals": 0,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 GK 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -926,7 +1151,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-mancity-121160",
@@ -949,7 +1175,7 @@
       "leagueMinutes": 2321,
       "leagueGoals": 0,
       "leagueAssists": 4,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1 / 3-2-4-1의 GK 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -985,7 +1211,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-newcastle-98747",
@@ -1008,7 +1235,7 @@
       "leagueMinutes": 2520,
       "leagueGoals": 0,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-3-3의 GK 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -1044,7 +1271,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-chelsea-215059",
@@ -1067,7 +1295,7 @@
       "leagueMinutes": 2880,
       "leagueGoals": 0,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 GK 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -1103,7 +1331,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Chelsea_8/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Chelsea_8/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-tottenham-184254",
@@ -1126,7 +1355,7 @@
       "leagueMinutes": 2160,
       "leagueGoals": 0,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-3-3 / 4-2-3-1의 GK 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -1162,7 +1391,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Spurs_6/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Spurs_6/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-liverpool-200720",
@@ -1185,7 +1415,7 @@
       "leagueMinutes": 900,
       "leagueGoals": 0,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 GK 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -1221,7 +1451,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-mancity-88248",
@@ -1244,7 +1475,7 @@
       "leagueMinutes": 1099,
       "leagueGoals": 0,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1 / 3-2-4-1의 GK 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -1280,7 +1511,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-newcastle-67089",
@@ -1303,7 +1535,7 @@
       "leagueMinutes": 900,
       "leagueGoals": 0,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-3-3의 GK 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -1339,7 +1571,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-tottenham-485055",
@@ -1362,7 +1595,7 @@
       "leagueMinutes": 540,
       "leagueGoals": 0,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-3-3 / 4-2-3-1의 GK 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -1398,7 +1631,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Spurs_6/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Spurs_6/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-chelsea-508479",
@@ -1421,7 +1655,7 @@
       "leagueMinutes": 540,
       "leagueGoals": 0,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 GK 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -1457,66 +1691,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Chelsea_8/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Chelsea_8/squad/2024-25_squad.csv"
-      ]
-    },
-    {
-      "id": "pl-2024-25-arsenal-69752",
-      "club": "arsenal",
-      "position": "GK",
-      "role": "backup",
-      "name": "Neto",
-      "nameOriginal": "Neto",
-      "nameKo": "네투",
-      "clubNameOriginal": "Arsenal FC",
-      "born": "1989-07-19",
-      "season": "2024-25",
-      "tier": "C+",
-      "review": "draft_unapproved",
-      "rank": 15,
-      "rankStatus": "draft_unapproved",
-      "rankRationale": "GK 15/16. 2024-25 개인 경기력 중심·2023-24/2022-23 감쇠 반영한 티어 내 순위 DRAFT.",
-      "leagueStarts": 2,
-      "leagueAppearances": 2,
-      "leagueMinutes": 180,
-      "leagueGoals": 0,
-      "leagueAssists": 0,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
-      "positionMajorityVerified": false,
-      "positionReview": "2024-25 4-3-3의 GK 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
-      "previousSeasons": {
-        "2022-23": {
-          "club": "bournemouth",
-          "leagueStarts": 27,
-          "leagueAppearances": 27,
-          "leagueGoals": 0,
-          "leagueAssists": 0,
-          "source": "mirrored_prior_PL_candidate_unverified_for_transfers"
-        },
-        "2023-24": {
-          "club": "bournemouth",
-          "leagueStarts": 32,
-          "leagueAppearances": 32,
-          "leagueGoals": 0,
-          "leagueAssists": 0,
-          "source": "mirrored_prior_PL_candidate_unverified_for_transfers"
-        }
-      },
-      "assessmentYears": [
-        "2022-23",
-        "2023-24",
-        "2024-25"
       ],
-      "weightOrder": [
-        "2024-25",
-        "2023-24",
-        "2022-23"
-      ],
-      "assessmentRationale": "2024-25 PL 2선발, 2출전, 0골, 0도움 및 4-3-3 GK 기여를 60% 우선 고려; 2023-24 30%, 2022-23 10% 참조 (2022-23 bournemouth 27선발 27출전; 2023-24 bournemouth 32선발 32출전). 경기 영향·안정성·동료 지원 및 대체가능성을 고려한 C+ 잠정 티어. 최종 팀 순위는 점수로 가산하지 않음. 2024-25 4-3-3의 GK 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
-      "candidateRationale": "2024-25 2선발 2출전 및 팀의 backup 경기 역할로 선정",
-      "sources": [
-        "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/players_stats/2024-25_players_stats.csv",
-        "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/squad/2024-25_squad.csv"
-      ]
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-astonvilla-111782",
@@ -1531,15 +1707,15 @@
       "season": "2024-25",
       "tier": "C+",
       "review": "draft_unapproved",
-      "rank": 16,
-      "rankStatus": "draft_unapproved",
-      "rankRationale": "GK 16/16. 2024-25 개인 경기력 중심·2023-24/2022-23 감쇠 반영한 티어 내 순위 DRAFT.",
+      "rank": 15,
+      "rankStatus": "proposed_unapproved",
+      "rankRationale": "제외·후보 교체·포지션 이동 뒤 기존 상대 순서를 최대한 유지한다.",
       "leagueStarts": 1,
       "leagueAppearances": 4,
       "leagueMinutes": 225,
       "leagueGoals": 0,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 GK 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -1574,8 +1750,25 @@
       "candidateRationale": "2024-25 1선발 4출전 및 팀의 backup 경기 역할로 선정",
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/players_stats/2024-25_players_stats.csv",
-        "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/squad/2024-25_squad.csv"
-      ]
+        "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/squad/2024-25_squad.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv"
+      ],
+      "externalAuditSegment3": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "rank",
+            "old": 16,
+            "proposed": 15,
+            "action": "reassessment_recommended",
+            "reason": "제외·후보 교체·포지션 이동 뒤 기존 상대 순서를 최대한 유지한다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv"
+        ]
+      },
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-liverpool-97032",
@@ -1598,7 +1791,7 @@
       "leagueMinutes": 3330,
       "leagueGoals": 3,
       "leagueAssists": 1,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 CB 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -1634,7 +1827,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-arsenal-462424",
@@ -1657,7 +1851,7 @@
       "leagueMinutes": 3041,
       "leagueGoals": 2,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-3-3의 CB 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -1693,7 +1887,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-crystalpalace-209036",
@@ -1716,7 +1911,7 @@
       "leagueMinutes": 3059,
       "leagueGoals": 3,
       "leagueAssists": 2,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 3-4-2-1의 CB 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -1752,7 +1947,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Palace_31/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Palace_31/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-arsenal-226597",
@@ -1775,7 +1971,7 @@
       "leagueMinutes": 2365,
       "leagueGoals": 3,
       "leagueAssists": 1,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-3-3의 CB 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -1811,7 +2007,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-nottingham-227444",
@@ -1834,7 +2031,7 @@
       "leagueMinutes": 3330,
       "leagueGoals": 5,
       "leagueAssists": 2,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 CB 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -1870,7 +2067,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Forest_17/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Forest_17/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-newcastle-78916",
@@ -1893,7 +2091,7 @@
       "leagueMinutes": 3330,
       "leagueGoals": 1,
       "leagueAssists": 1,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-3-3의 CB 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -1929,7 +2127,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-nottingham-575476",
@@ -1952,7 +2151,7 @@
       "leagueMinutes": 3191,
       "leagueGoals": 2,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 CB 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -1988,7 +2187,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Forest_17/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Forest_17/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-liverpool-204716",
@@ -2011,7 +2211,7 @@
       "leagueMinutes": 2565,
       "leagueGoals": 1,
       "leagueAssists": 2,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 CB 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -2047,7 +2247,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-crystalpalace-437499",
@@ -2070,7 +2271,7 @@
       "leagueMinutes": 3118,
       "leagueGoals": 1,
       "leagueAssists": 1,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 3-4-2-1의 CB 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -2106,7 +2307,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Palace_31/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Palace_31/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-newcastle-119471",
@@ -2129,7 +2331,7 @@
       "leagueMinutes": 2937,
       "leagueGoals": 4,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-3-3의 CB 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -2165,7 +2367,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-astonvilla-199798",
@@ -2188,7 +2391,7 @@
       "leagueMinutes": 2937,
       "leagueGoals": 2,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 CB 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -2224,7 +2427,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-mancity-171314",
@@ -2247,7 +2451,7 @@
       "leagueMinutes": 2269,
       "leagueGoals": 0,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1 / 3-2-4-1의 CB 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -2283,7 +2487,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-tottenham-221632",
@@ -2306,7 +2511,7 @@
       "leagueMinutes": 1420,
       "leagueGoals": 1,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-3-3 / 4-2-3-1의 CB 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -2342,7 +2547,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Spurs_6/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Spurs_6/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-chelsea-460028",
@@ -2365,7 +2571,7 @@
       "leagueMinutes": 3149,
       "leagueGoals": 2,
       "leagueAssists": 1,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 CB 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -2401,7 +2607,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Chelsea_8/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Chelsea_8/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-mancity-211975",
@@ -2424,7 +2631,7 @@
       "leagueMinutes": 2014,
       "leagueGoals": 0,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1 / 3-2-4-1의 CB 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -2460,7 +2667,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-astonvilla-244954",
@@ -2483,7 +2691,7 @@
       "leagueMinutes": 2020,
       "leagueGoals": 0,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 CB 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -2519,7 +2727,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-crystalpalace-427623",
@@ -2542,7 +2751,7 @@
       "leagueMinutes": 1924,
       "leagueGoals": 1,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 3-4-2-1의 CB 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -2578,7 +2787,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Palace_31/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Palace_31/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-chelsea-109646",
@@ -2601,7 +2811,7 @@
       "leagueMinutes": 1404,
       "leagueGoals": 1,
       "leagueAssists": 1,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 CB 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -2637,7 +2847,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Chelsea_8/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Chelsea_8/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-tottenham-491279",
@@ -2660,7 +2871,7 @@
       "leagueMinutes": 1018,
       "leagueGoals": 0,
       "leagueAssists": 2,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-3-3 / 4-2-3-1의 CB 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -2696,7 +2907,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Spurs_6/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Spurs_6/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-arsenal-440854",
@@ -2719,7 +2931,7 @@
       "leagueMinutes": 1117,
       "leagueGoals": 1,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-3-3의 CB 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -2755,7 +2967,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-crystalpalace-152551",
@@ -2778,7 +2991,7 @@
       "leagueMinutes": 2276,
       "leagueGoals": 0,
       "leagueAssists": 1,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "CB/DM을 겸하며 3백 우측 CB 백업으로 분류. 시즌 최빈은 별도 집계 필요.",
       "previousSeasons": {
@@ -2814,7 +3027,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Palace_31/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Palace_31/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-chelsea-444463",
@@ -2837,7 +3051,7 @@
       "leagueMinutes": 1176,
       "leagueGoals": 0,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 CB 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -2873,7 +3087,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Chelsea_8/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Chelsea_8/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-astonvilla-149484",
@@ -2896,7 +3111,7 @@
       "leagueMinutes": 1121,
       "leagueGoals": 0,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 CB 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -2932,7 +3147,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-tottenham-493125",
@@ -2955,7 +3171,7 @@
       "leagueMinutes": 1251,
       "leagueGoals": 0,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-3-3 / 4-2-3-1의 CB 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -2991,7 +3207,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Spurs_6/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Spurs_6/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-mancity-97299",
@@ -3014,7 +3231,7 @@
       "leagueMinutes": 545,
       "leagueGoals": 2,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1 / 3-2-4-1의 CB 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -3050,7 +3267,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-nottingham-485047",
@@ -3073,7 +3291,7 @@
       "leagueMinutes": 893,
       "leagueGoals": 0,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 CB 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -3109,7 +3327,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Forest_17/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Forest_17/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-newcastle-220237",
@@ -3132,7 +3351,7 @@
       "leagueMinutes": 414,
       "leagueGoals": 0,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-3-3의 CB 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -3168,7 +3387,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-liverpool-441428",
@@ -3191,7 +3411,7 @@
       "leagueMinutes": 488,
       "leagueGoals": 0,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 CB 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -3227,7 +3447,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-mancity-477424",
@@ -3250,7 +3471,7 @@
       "leagueMinutes": 3279,
       "leagueGoals": 5,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1 / 3-2-4-1의 LB 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -3286,7 +3507,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-chelsea-179268",
@@ -3309,7 +3531,7 @@
       "leagueMinutes": 2989,
       "leagueGoals": 5,
       "leagueAssists": 1,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 LB 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -3345,7 +3567,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Chelsea_8/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Chelsea_8/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-newcastle-487838",
@@ -3368,7 +3591,7 @@
       "leagueMinutes": 2192,
       "leagueGoals": 0,
       "leagueAssists": 4,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-3-3의 LB 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -3404,7 +3627,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-nottingham-215136",
@@ -3427,7 +3651,7 @@
       "leagueMinutes": 2590,
       "leagueGoals": 1,
       "leagueAssists": 3,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 LB 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -3463,7 +3687,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Forest_17/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Forest_17/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-crystalpalace-244723",
@@ -3486,7 +3711,7 @@
       "leagueMinutes": 3102,
       "leagueGoals": 0,
       "leagueAssists": 5,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 3-4-2-1의 LB 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -3522,7 +3747,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Palace_31/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Palace_31/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-liverpool-122798",
@@ -3545,7 +3771,7 @@
       "leagueMinutes": 2492,
       "leagueGoals": 0,
       "leagueAssists": 1,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 LB 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -3581,7 +3807,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-astonvilla-101188",
@@ -3604,7 +3831,7 @@
       "leagueMinutes": 2358,
       "leagueGoals": 0,
       "leagueAssists": 4,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 LB 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -3640,7 +3867,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-tottenham-487053",
@@ -3663,7 +3891,7 @@
       "leagueMinutes": 1931,
       "leagueGoals": 0,
       "leagueAssists": 1,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-3-3 / 4-2-3-1의 LB 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -3699,7 +3927,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Spurs_6/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Spurs_6/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-tottenham-232859",
@@ -3722,7 +3951,7 @@
       "leagueMinutes": 1790,
       "leagueGoals": 1,
       "leagueAssists": 2,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-3-3 / 4-2-3-1의 LB 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -3758,7 +3987,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Spurs_6/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Spurs_6/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-arsenal-499169",
@@ -3781,7 +4011,7 @@
       "leagueMinutes": 1370,
       "leagueGoals": 1,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-3-3의 LB 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -3817,7 +4047,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-arsenal-466075",
@@ -3840,7 +4071,7 @@
       "leagueMinutes": 984,
       "leagueGoals": 2,
       "leagueAssists": 1,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-3-3의 LB 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -3876,7 +4107,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-astonvilla-441302",
@@ -3899,7 +4131,7 @@
       "leagueMinutes": 1128,
       "leagueGoals": 1,
       "leagueAssists": 2,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 LB 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -3935,7 +4167,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-nottingham-106468",
@@ -3958,7 +4191,7 @@
       "leagueMinutes": 959,
       "leagueGoals": 0,
       "leagueAssists": 1,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 LB 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -3994,7 +4227,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Forest_17/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Forest_17/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-liverpool-214285",
@@ -4017,7 +4251,7 @@
       "leagueMinutes": 833,
       "leagueGoals": 0,
       "leagueAssists": 1,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 LB 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -4053,7 +4287,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-mancity-126184",
@@ -4076,7 +4311,7 @@
       "leagueMinutes": 682,
       "leagueGoals": 0,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1 / 3-2-4-1의 LB 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -4112,7 +4347,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-liverpool-169187",
@@ -4135,7 +4371,7 @@
       "leagueMinutes": 2377,
       "leagueGoals": 3,
       "leagueAssists": 6,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 RB 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -4171,7 +4407,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-crystalpalace-247348",
@@ -4194,7 +4431,7 @@
       "leagueMinutes": 3233,
       "leagueGoals": 4,
       "leagueAssists": 5,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 3-4-2-1의 RB 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -4230,7 +4467,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Palace_31/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Palace_31/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-arsenal-445122",
@@ -4253,7 +4491,7 @@
       "leagueMinutes": 2422,
       "leagueGoals": 1,
       "leagueAssists": 3,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-3-3의 RB 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -4289,7 +4527,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-nottingham-159506",
@@ -4312,7 +4551,7 @@
       "leagueMinutes": 3003,
       "leagueGoals": 2,
       "leagueAssists": 1,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 RB 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -4348,7 +4587,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Forest_17/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Forest_17/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-newcastle-441191",
@@ -4371,7 +4611,7 @@
       "leagueMinutes": 2842,
       "leagueGoals": 0,
       "leagueAssists": 1,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-3-3의 RB 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -4407,7 +4647,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-tottenham-441164",
@@ -4430,7 +4671,7 @@
       "leagueMinutes": 2608,
       "leagueGoals": 2,
       "leagueAssists": 6,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-3-3 / 4-2-3-1의 RB 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -4466,7 +4707,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Spurs_6/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Spurs_6/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-astonvilla-199796",
@@ -4489,7 +4731,7 @@
       "leagueMinutes": 2077,
       "leagueGoals": 1,
       "leagueAssists": 1,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 RB 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -4525,7 +4767,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-mancity-465351",
@@ -4548,7 +4791,7 @@
       "leagueMinutes": 1673,
       "leagueGoals": 1,
       "leagueAssists": 6,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "시즌 중반 이후 RB 기용을 포함하는 멀티롤. 시즌 전체 RB 최다 선발인지 경기 단위 검증 필요.",
       "previousSeasons": {
@@ -4584,7 +4827,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-chelsea-482609",
@@ -4607,7 +4851,7 @@
       "leagueMinutes": 1858,
       "leagueGoals": 0,
       "leagueAssists": 1,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 RB 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -4643,7 +4887,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Chelsea_8/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Chelsea_8/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-newcastle-77794",
@@ -4666,7 +4911,7 @@
       "leagueMinutes": 1308,
       "leagueGoals": 0,
       "leagueAssists": 3,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-3-3의 RB 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -4702,7 +4947,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-arsenal-198869",
@@ -4725,7 +4971,7 @@
       "leagueMinutes": 1198,
       "leagueGoals": 0,
       "leagueAssists": 2,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-3-3의 RB 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -4761,7 +5007,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-liverpool-492777",
@@ -4784,7 +5031,7 @@
       "leagueMinutes": 748,
       "leagueGoals": 0,
       "leagueAssists": 2,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 RB 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -4820,7 +5067,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-mancity-477064",
@@ -4843,7 +5091,7 @@
       "leagueMinutes": 1891,
       "leagueGoals": 1,
       "leagueAssists": 2,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1 / 3-2-4-1의 RB 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -4879,7 +5127,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-tottenham-547701",
@@ -4902,7 +5151,7 @@
       "leagueMinutes": 1743,
       "leagueGoals": 0,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "부상 공백 시 수비수/수미/RB 겸임. RB 백업은 유틸리티 전술 선정.",
       "previousSeasons": {
@@ -4938,7 +5187,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Spurs_6/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Spurs_6/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-chelsea-225796",
@@ -4961,7 +5211,7 @@
       "leagueMinutes": 1064,
       "leagueGoals": 1,
       "leagueAssists": 1,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 RB 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -4997,7 +5247,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Chelsea_8/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Chelsea_8/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-crystalpalace-57328",
@@ -5020,7 +5271,7 @@
       "leagueMinutes": 481,
       "leagueGoals": 0,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 3-4-2-1의 RB 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -5056,7 +5307,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Palace_31/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Palace_31/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-liverpool-441266",
@@ -5079,7 +5331,7 @@
       "leagueMinutes": 3168,
       "leagueGoals": 0,
       "leagueAssists": 4,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 DM 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -5115,7 +5367,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-chelsea-486672",
@@ -5138,7 +5391,7 @@
       "leagueMinutes": 3356,
       "leagueGoals": 1,
       "leagueAssists": 2,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 DM 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -5174,7 +5427,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Chelsea_8/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Chelsea_8/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-newcastle-432422",
@@ -5197,7 +5451,7 @@
       "leagueMinutes": 2631,
       "leagueGoals": 4,
       "leagueAssists": 2,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-3-3의 DM 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -5233,7 +5487,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-arsenal-167199",
@@ -5256,7 +5511,7 @@
       "leagueMinutes": 2799,
       "leagueGoals": 4,
       "leagueAssists": 2,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-3-3의 DM 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -5292,7 +5547,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-mancity-91651",
@@ -5315,7 +5571,7 @@
       "leagueMinutes": 2202,
       "leagueGoals": 6,
       "leagueAssists": 2,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1 / 3-2-4-1의 DM 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -5351,7 +5607,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-nottingham-215379",
@@ -5374,7 +5631,7 @@
       "leagueMinutes": 2742,
       "leagueGoals": 2,
       "leagueAssists": 6,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "CM/DM 겸용. DM 주전 표기는 이중 피벗 중앙 수비적 역할 반영.",
       "previousSeasons": {
@@ -5410,7 +5667,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Forest_17/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Forest_17/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-astonvilla-226944",
@@ -5433,7 +5691,7 @@
       "leagueMinutes": 1725,
       "leagueGoals": 1,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 DM 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -5469,7 +5727,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-crystalpalace-496221",
@@ -5492,7 +5751,7 @@
       "leagueMinutes": 1326,
       "leagueGoals": 0,
       "leagueAssists": 2,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 3-4-2-1의 DM 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -5528,7 +5787,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Palace_31/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Palace_31/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-astonvilla-449871",
@@ -5551,7 +5811,7 @@
       "leagueMinutes": 1624,
       "leagueGoals": 3,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 DM 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -5587,7 +5847,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-tottenham-202993",
@@ -5610,7 +5871,7 @@
       "leagueMinutes": 1653,
       "leagueGoals": 2,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-3-3 / 4-2-3-1의 DM 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -5646,7 +5907,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Spurs_6/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Spurs_6/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-nottingham-204968",
@@ -5669,7 +5931,7 @@
       "leagueMinutes": 1904,
       "leagueGoals": 2,
       "leagueAssists": 1,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 DM 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -5705,7 +5967,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Forest_17/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Forest_17/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-arsenal-85955",
@@ -5728,7 +5991,7 @@
       "leagueMinutes": 702,
       "leagueGoals": 0,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-3-3의 DM 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -5736,9 +5999,10 @@
           "club": "arsenal",
           "leagueStarts": 24,
           "leagueAppearances": 32,
-          "leagueGoals": 2,
+          "leagueGoals": 0,
           "leagueAssists": 1,
-          "source": "mirrored_prior_PL_candidate_unverified_for_transfers"
+          "source": "mirrored_prior_PL_candidate_unverified_for_transfers",
+          "auditStatus": "specific_field_corrected_other_fields_not_reverified"
         },
         "2023-24": {
           "club": "arsenal",
@@ -5763,8 +6027,27 @@
       "candidateRationale": "2024-25 9선발 15출전 및 팀의 backup 경기 역할로 선정",
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/players_stats/2024-25_players_stats.csv",
-        "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/squad/2024-25_squad.csv"
-      ]
+        "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/squad/2024-25_squad.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv"
+      ],
+      "externalAuditSegment3": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "previousSeasons.2022-23.leagueGoals",
+            "old": 2,
+            "proposed": 0,
+            "action": "replace",
+            "reason": "2022-23 Arsenal의 PL 원기록과 기존 이전 시즌 필드가 다르다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv"
+        ]
+      },
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-tottenham-227127",
@@ -5787,7 +6070,7 @@
       "leagueMinutes": 1405,
       "leagueGoals": 2,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-3-3 / 4-2-3-1의 DM 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -5823,7 +6106,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Spurs_6/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Spurs_6/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-chelsea-514356",
@@ -5846,7 +6130,7 @@
       "leagueMinutes": 801,
       "leagueGoals": 0,
       "leagueAssists": 1,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 DM 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -5882,7 +6166,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Chelsea_8/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Chelsea_8/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-mancity-465694",
@@ -5905,7 +6190,7 @@
       "leagueMinutes": 763,
       "leagueGoals": 1,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1 / 3-2-4-1의 DM 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -5941,7 +6226,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-crystalpalace-438464",
@@ -5964,7 +6250,7 @@
       "leagueMinutes": 445,
       "leagueGoals": 0,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 3-4-2-1의 DM 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -6000,7 +6286,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Palace_31/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Palace_31/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-liverpool-158983",
@@ -6023,7 +6310,7 @@
       "leagueMinutes": 261,
       "leagueGoals": 0,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 DM 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -6059,7 +6346,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-arsenal-204480",
@@ -6082,7 +6370,7 @@
       "leagueMinutes": 2833,
       "leagueGoals": 4,
       "leagueAssists": 7,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "Rice는 수미와 왼쪽 No.8 역할 겸임. CM 주 포지션 배정은 2024-25의 전진 활용을 반영한 잠정 분류.",
       "previousSeasons": {
@@ -6118,7 +6406,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-liverpool-243016",
@@ -6141,7 +6430,7 @@
       "leagueMinutes": 2607,
       "leagueGoals": 5,
       "leagueAssists": 5,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 CM 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -6177,7 +6466,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-newcastle-208706",
@@ -6200,7 +6490,7 @@
       "leagueMinutes": 3282,
       "leagueGoals": 5,
       "leagueAssists": 6,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-3-3의 CM 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -6236,7 +6526,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-astonvilla-166989",
@@ -6259,7 +6550,7 @@
       "leagueMinutes": 3032,
       "leagueGoals": 3,
       "leagueAssists": 7,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 CM 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -6295,7 +6586,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-mancity-165809",
@@ -6318,7 +6610,7 @@
       "leagueMinutes": 2667,
       "leagueGoals": 4,
       "leagueAssists": 4,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1 / 3-2-4-1의 CM 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -6354,7 +6646,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-chelsea-448047",
@@ -6377,7 +6670,7 @@
       "leagueMinutes": 2946,
       "leagueGoals": 6,
       "leagueAssists": 7,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 CM 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -6413,7 +6706,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Chelsea_8/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Chelsea_8/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-newcastle-180974",
@@ -6436,7 +6730,7 @@
       "leagueMinutes": 2404,
       "leagueGoals": 4,
       "leagueAssists": 3,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "왼쪽 중앙 미드필더와 공격 지원 역할 혼재. CM 주 포지션 임시.",
       "previousSeasons": {
@@ -6472,7 +6766,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-astonvilla-122806",
@@ -6495,7 +6790,7 @@
       "leagueMinutes": 2230,
       "leagueGoals": 1,
       "leagueAssists": 4,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 CM 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -6531,7 +6826,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-crystalpalace-108413",
@@ -6554,7 +6850,7 @@
       "leagueMinutes": 2118,
       "leagueGoals": 0,
       "leagueAssists": 3,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 3-4-2-1의 CM 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -6590,7 +6886,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Palace_31/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Palace_31/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-nottingham-250199",
@@ -6613,7 +6910,7 @@
       "leagueMinutes": 1970,
       "leagueGoals": 0,
       "leagueAssists": 1,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 CM 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -6649,7 +6946,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Forest_17/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Forest_17/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-liverpool-206915",
@@ -6672,7 +6970,7 @@
       "leagueMinutes": 1710,
       "leagueGoals": 3,
       "leagueAssists": 3,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 CM 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -6708,7 +7006,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-arsenal-195384",
@@ -6731,7 +7030,7 @@
       "leagueMinutes": 1581,
       "leagueGoals": 7,
       "leagueAssists": 2,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-3-3의 CM 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -6767,7 +7066,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-mancity-59859",
@@ -6790,7 +7090,7 @@
       "leagueMinutes": 2227,
       "leagueGoals": 1,
       "leagueAssists": 6,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1 / 3-2-4-1의 CM 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -6826,7 +7126,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-tottenham-482442",
@@ -6849,7 +7150,7 @@
       "leagueMinutes": 1913,
       "leagueGoals": 3,
       "leagueAssists": 2,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-3-3 / 4-2-3-1의 CM 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -6885,7 +7186,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Spurs_6/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Spurs_6/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-tottenham-570526",
@@ -6908,7 +7210,7 @@
       "leagueMinutes": 1206,
       "leagueGoals": 0,
       "leagueAssists": 1,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-3-3 / 4-2-3-1의 CM 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -6944,7 +7246,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Spurs_6/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Spurs_6/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-newcastle-200089",
@@ -6967,7 +7270,7 @@
       "leagueMinutes": 1074,
       "leagueGoals": 0,
       "leagueAssists": 2,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-3-3의 CM 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -7003,7 +7306,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-nottingham-513046",
@@ -7026,7 +7330,7 @@
       "leagueMinutes": 275,
       "leagueGoals": 0,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 CM 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -7062,7 +7366,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Forest_17/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Forest_17/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-chelsea-244851",
@@ -7085,7 +7390,7 @@
       "leagueMinutes": 3195,
       "leagueGoals": 15,
       "leagueAssists": 8,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 CAM 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -7121,7 +7426,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Chelsea_8/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Chelsea_8/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-crystalpalace-232413",
@@ -7144,7 +7450,7 @@
       "leagueMinutes": 2600,
       "leagueGoals": 8,
       "leagueAssists": 8,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 3-4-2-1의 CAM 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -7180,7 +7486,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Palace_31/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Palace_31/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-astonvilla-244850",
@@ -7203,7 +7510,7 @@
       "leagueMinutes": 3129,
       "leagueGoals": 8,
       "leagueAssists": 10,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "CAM / 왼쪽 하프스페이스/윙 역할을 겸함; 최빈 포지션 공식 기록 필요.",
       "previousSeasons": {
@@ -7239,7 +7546,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-nottingham-222531",
@@ -7262,7 +7570,7 @@
       "leagueMinutes": 2822,
       "leagueGoals": 7,
       "leagueAssists": 8,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 CAM 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -7298,7 +7606,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Forest_17/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Forest_17/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-liverpool-424876",
@@ -7321,7 +7630,7 @@
       "leagueMinutes": 2496,
       "leagueGoals": 6,
       "leagueAssists": 6,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 CAM 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -7357,7 +7666,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-arsenal-184029",
@@ -7380,7 +7690,7 @@
       "leagueMinutes": 2328,
       "leagueGoals": 3,
       "leagueAssists": 8,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "실전 4-3-3 오른쪽 No.8이나 사이트 4-2-3-1 CAM 위치에 전술적 매핑, 실제 최빈 4-3-3 위치 별도.",
       "previousSeasons": {
@@ -7416,7 +7726,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-tottenham-445044",
@@ -7439,7 +7750,7 @@
       "leagueMinutes": 2391,
       "leagueGoals": 7,
       "leagueAssists": 4,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "RW/CAM/중앙 역할을 시즌 중 병행. CAM 주 역할 최빈 선발 검증 필요.",
       "previousSeasons": {
@@ -7475,7 +7786,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Spurs_6/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Spurs_6/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-mancity-209244",
@@ -7498,7 +7810,7 @@
       "leagueMinutes": 1779,
       "leagueGoals": 7,
       "leagueAssists": 2,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 전반에는 중앙 No.10/오른쪽 윙어 혼합 기용. CAM 최다 위치 전수 검증 대기.",
       "previousSeasons": {
@@ -7534,7 +7846,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-mancity-61366",
@@ -7557,7 +7870,7 @@
       "leagueMinutes": 1704,
       "leagueGoals": 4,
       "leagueAssists": 7,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1 / 3-2-4-1의 CAM 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -7593,7 +7906,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-tottenham-172780",
@@ -7616,7 +7930,7 @@
       "leagueMinutes": 1816,
       "leagueGoals": 9,
       "leagueAssists": 7,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-3-3 / 4-2-3-1의 CAM 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -7652,7 +7966,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Spurs_6/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Spurs_6/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-arsenal-499175",
@@ -7675,7 +7990,7 @@
       "leagueMinutes": 889,
       "leagueGoals": 4,
       "leagueAssists": 2,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-3-3의 CAM 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -7711,7 +8026,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-astonvilla-174292",
@@ -7734,7 +8050,7 @@
       "leagueMinutes": 745,
       "leagueGoals": 3,
       "leagueAssists": 1,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 CAM 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -7770,7 +8086,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-crystalpalace-209400",
@@ -7793,7 +8110,7 @@
       "leagueMinutes": 1554,
       "leagueGoals": 0,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 3-4-2-1의 CAM 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -7829,7 +8146,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Palace_31/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Palace_31/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-chelsea-213198",
@@ -7852,7 +8170,7 @@
       "leagueMinutes": 911,
       "leagueGoals": 3,
       "leagueAssists": 2,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 CAM 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -7888,7 +8206,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Chelsea_8/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Chelsea_8/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-liverpool-444884",
@@ -7911,7 +8230,7 @@
       "leagueMinutes": 360,
       "leagueGoals": 1,
       "leagueAssists": 2,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 CAM 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -7947,7 +8266,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-liverpool-243298",
@@ -7970,7 +8290,7 @@
       "leagueMinutes": 1938,
       "leagueGoals": 10,
       "leagueAssists": 4,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 좌측 윙어와 중앙 공격수 혼합 역할. LW 주전 배치 잠정.",
       "previousSeasons": {
@@ -8006,7 +8326,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-tottenham-85971",
@@ -8029,7 +8350,7 @@
       "leagueMinutes": 2116,
       "leagueGoals": 7,
       "leagueAssists": 9,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-3-3 / 4-2-3-1의 LW 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -8065,7 +8386,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Spurs_6/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Spurs_6/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-arsenal-116216",
@@ -8088,7 +8410,7 @@
       "leagueMinutes": 2550,
       "leagueGoals": 8,
       "leagueAssists": 7,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-3-3의 LW 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -8096,9 +8418,10 @@
           "club": "arsenal",
           "leagueStarts": 26,
           "leagueAppearances": 36,
-          "leagueGoals": 8,
-          "leagueAssists": 12,
-          "source": "mirrored_prior_PL_candidate_unverified_for_transfers"
+          "leagueGoals": 1,
+          "leagueAssists": 10,
+          "source": "mirrored_prior_PL_candidate_unverified_for_transfers",
+          "auditStatus": "specific_field_corrected_other_fields_not_reverified"
         },
         "2023-24": {
           "club": "arsenal",
@@ -8123,8 +8446,34 @@
       "candidateRationale": "2024-25 28선발 38출전 및 팀의 starter 경기 역할로 선정",
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/players_stats/2024-25_players_stats.csv",
-        "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/squad/2024-25_squad.csv"
-      ]
+        "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/squad/2024-25_squad.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv"
+      ],
+      "externalAuditSegment3": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "previousSeasons.2022-23.leagueGoals",
+            "old": 8,
+            "proposed": 1,
+            "action": "replace",
+            "reason": "2022-23 Arsenal의 PL 원기록과 기존 이전 시즌 필드가 다르다."
+          },
+          {
+            "field": "previousSeasons.2022-23.leagueAssists",
+            "old": 12,
+            "proposed": 10,
+            "action": "replace",
+            "reason": "2022-23 Arsenal의 PL 원기록과 기존 이전 시즌 필드가 다르다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv"
+        ]
+      },
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-newcastle-232826",
@@ -8147,7 +8496,7 @@
       "leagueMinutes": 2444,
       "leagueGoals": 6,
       "leagueAssists": 5,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-3-3의 LW 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -8155,9 +8504,10 @@
           "club": "newcastle",
           "leagueStarts": 16,
           "leagueAppearances": 32,
-          "leagueGoals": 4,
+          "leagueGoals": 1,
           "leagueAssists": 0,
-          "source": "mirrored_prior_PL_candidate_unverified_for_transfers"
+          "source": "mirrored_prior_PL_candidate_unverified_for_transfers",
+          "auditStatus": "specific_field_corrected_other_fields_not_reverified"
         },
         "2023-24": {
           "club": "newcastle",
@@ -8182,8 +8532,27 @@
       "candidateRationale": "2024-25 28선발 34출전 및 팀의 starter 경기 역할로 선정",
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/players_stats/2024-25_players_stats.csv",
-        "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/squad/2024-25_squad.csv"
-      ]
+        "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/squad/2024-25_squad.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv"
+      ],
+      "externalAuditSegment3": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "previousSeasons.2022-23.leagueGoals",
+            "old": 4,
+            "proposed": 1,
+            "action": "replace",
+            "reason": "2022-23 Newcastle United의 PL 원기록과 기존 이전 시즌 필드가 다르다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv"
+        ]
+      },
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-arsenal-444145",
@@ -8206,7 +8575,7 @@
       "leagueMinutes": 2300,
       "leagueGoals": 8,
       "leagueAssists": 4,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-3-3의 LW 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -8242,7 +8611,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-nottingham-209046",
@@ -8265,7 +8635,7 @@
       "leagueMinutes": 2201,
       "leagueGoals": 5,
       "leagueAssists": 2,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 LW 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -8301,7 +8671,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Forest_17/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Forest_17/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-chelsea-247632",
@@ -8324,7 +8695,7 @@
       "leagueMinutes": 2268,
       "leagueGoals": 4,
       "leagueAssists": 6,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "LW 및 RW 기용 혼재, 실제 주 포지션 통계 재검증 필요.",
       "previousSeasons": {
@@ -8360,7 +8731,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Chelsea_8/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Chelsea_8/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-newcastle-201666",
@@ -8383,7 +8755,7 @@
       "leagueMinutes": 1755,
       "leagueGoals": 9,
       "leagueAssists": 4,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-3-3의 LW 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -8419,7 +8791,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-mancity-248875",
@@ -8442,7 +8815,7 @@
       "leagueMinutes": 1513,
       "leagueGoals": 3,
       "leagueAssists": 6,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1 / 3-2-4-1의 LW 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -8478,7 +8851,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-mancity-438234",
@@ -8501,7 +8875,7 @@
       "leagueMinutes": 1182,
       "leagueGoals": 7,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "겨울 이적 후 LW/세컨드 스트라이커/CF 혼합. LW 후보 배정은 전술 가설.",
       "previousSeasons": {
@@ -8537,7 +8911,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-chelsea-209243",
@@ -8560,7 +8935,7 @@
       "leagueMinutes": 1764,
       "leagueGoals": 3,
       "leagueAssists": 4,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 LW 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -8596,7 +8971,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Chelsea_8/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Chelsea_8/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-astonvilla-232653",
@@ -8619,7 +8995,7 @@
       "leagueMinutes": 1628,
       "leagueGoals": 1,
       "leagueAssists": 3,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 LW 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -8655,7 +9031,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-tottenham-511499",
@@ -8678,7 +9055,7 @@
       "leagueMinutes": 913,
       "leagueGoals": 2,
       "leagueAssists": 1,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-3-3 / 4-2-3-1의 LW 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -8714,7 +9091,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Spurs_6/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Spurs_6/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-liverpool-118748",
@@ -8737,7 +9115,7 @@
       "leagueMinutes": 3377,
       "leagueGoals": 29,
       "leagueAssists": 18,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 RW 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -8774,7 +9152,8 @@
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/squad/2024-25_squad.csv",
         "https://www.premierleague.com/en/news/4314803/salah-sweeps-202425-player-of-the-season-golden-boot-and-playmaker-awards"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-arsenal-223340",
@@ -8797,7 +9176,7 @@
       "leagueMinutes": 1735,
       "leagueGoals": 6,
       "leagueAssists": 10,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-3-3의 RW 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -8833,7 +9212,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-newcastle-114243",
@@ -8856,7 +9236,7 @@
       "leagueMinutes": 2379,
       "leagueGoals": 8,
       "leagueAssists": 12,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-3-3의 RW 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -8892,7 +9272,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-crystalpalace-232185",
@@ -8915,7 +9296,7 @@
       "leagueMinutes": 2714,
       "leagueGoals": 8,
       "leagueAssists": 6,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "3-4-2-1에서 오른쪽 AM/공격수 역할, RW 카테고리로 전술 매핑한 잠정 분류.",
       "previousSeasons": {
@@ -8951,7 +9332,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Palace_31/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Palace_31/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-nottingham-449434",
@@ -8974,7 +9356,7 @@
       "leagueMinutes": 2507,
       "leagueGoals": 6,
       "leagueAssists": 11,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 RW 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -9010,7 +9392,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Forest_17/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Forest_17/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-chelsea-248857",
@@ -9033,7 +9416,7 @@
       "leagueMinutes": 2046,
       "leagueGoals": 7,
       "leagueAssists": 3,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 RW 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -9069,7 +9452,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Chelsea_8/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Chelsea_8/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-tottenham-242898",
@@ -9092,7 +9476,7 @@
       "leagueMinutes": 2179,
       "leagueGoals": 11,
       "leagueAssists": 3,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-3-3 / 4-2-3-1의 RW 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -9128,7 +9512,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Spurs_6/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Spurs_6/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-mancity-510281",
@@ -9151,7 +9536,7 @@
       "leagueMinutes": 1770,
       "leagueGoals": 1,
       "leagueAssists": 8,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1 / 3-2-4-1의 RW 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -9187,7 +9572,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-astonvilla-215711",
@@ -9210,7 +9596,7 @@
       "leagueMinutes": 1143,
       "leagueGoals": 1,
       "leagueAssists": 2,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 RW 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -9246,7 +9632,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-nottingham-510500",
@@ -9269,7 +9656,7 @@
       "leagueMinutes": 840,
       "leagueGoals": 3,
       "leagueAssists": 1,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 RW 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -9305,7 +9692,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Forest_17/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Forest_17/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-newcastle-219168",
@@ -9328,7 +9716,7 @@
       "leagueMinutes": 2769,
       "leagueGoals": 23,
       "leagueAssists": 6,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-3-3의 ST 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -9364,7 +9752,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-nottingham-60689",
@@ -9387,7 +9776,7 @@
       "leagueMinutes": 2976,
       "leagueGoals": 20,
       "leagueAssists": 3,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 ST 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -9395,9 +9784,10 @@
           "club": "nottingham",
           "leagueStarts": 9,
           "leagueAppearances": 25,
-          "leagueGoals": 3,
+          "leagueGoals": 1,
           "leagueAssists": 0,
-          "source": "mirrored_prior_PL_candidate_unverified_for_transfers"
+          "source": "mirrored_prior_PL_candidate_unverified_for_transfers",
+          "auditStatus": "specific_field_corrected_other_fields_not_reverified"
         },
         "2023-24": {
           "club": "nottingham",
@@ -9422,8 +9812,27 @@
       "candidateRationale": "2024-25 35선발 36출전 및 팀의 starter 경기 역할로 선정",
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Forest_17/players_stats/2024-25_players_stats.csv",
-        "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Forest_17/squad/2024-25_squad.csv"
-      ]
+        "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Forest_17/squad/2024-25_squad.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv"
+      ],
+      "externalAuditSegment3": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "previousSeasons.2022-23.leagueGoals",
+            "old": 3,
+            "proposed": 1,
+            "action": "replace",
+            "reason": "2022-23 Nottingham Forest의 PL 원기록과 기존 이전 시즌 필드가 다르다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv"
+        ]
+      },
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-mancity-223094",
@@ -9446,7 +9855,7 @@
       "leagueMinutes": 2741,
       "leagueGoals": 22,
       "leagueAssists": 3,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1 / 3-2-4-1의 ST 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -9482,7 +9891,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Man_City_43/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-astonvilla-178301",
@@ -9505,7 +9915,7 @@
       "leagueMinutes": 2610,
       "leagueGoals": 16,
       "leagueAssists": 8,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 ST 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -9541,7 +9951,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-crystalpalace-231747",
@@ -9564,7 +9975,7 @@
       "leagueMinutes": 2654,
       "leagueGoals": 14,
       "leagueAssists": 2,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 3-4-2-1의 ST 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -9600,7 +10011,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Palace_31/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Palace_31/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-liverpool-244731",
@@ -9623,7 +10035,7 @@
       "leagueMinutes": 2410,
       "leagueGoals": 13,
       "leagueAssists": 5,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 Luis Díaz LW/CF 겸임, 팀 4-2-3-1의 중앙 공격수 배치는 임시. 최빈 출전 포지션 게임 단위 재검증 필요.",
       "previousSeasons": {
@@ -9659,7 +10071,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-arsenal-219847",
@@ -9682,7 +10095,7 @@
       "leagueMinutes": 1874,
       "leagueGoals": 9,
       "leagueAssists": 3,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-3-3의 ST 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -9718,7 +10131,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-chelsea-517052",
@@ -9741,7 +10155,7 @@
       "leagueMinutes": 2238,
       "leagueGoals": 10,
       "leagueAssists": 5,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 ST 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -9777,7 +10191,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Chelsea_8/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Chelsea_8/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-tottenham-154566",
@@ -9800,7 +10215,7 @@
       "leagueMinutes": 2206,
       "leagueGoals": 9,
       "leagueAssists": 3,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-3-3 / 4-2-3-1의 ST 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -9836,7 +10251,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Spurs_6/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Spurs_6/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-liverpool-194634",
@@ -9859,7 +10275,7 @@
       "leagueMinutes": 1194,
       "leagueGoals": 6,
       "leagueAssists": 3,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 ST 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -9895,7 +10311,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Liverpool_14/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-crystalpalace-205533",
@@ -9918,7 +10335,7 @@
       "leagueMinutes": 1026,
       "leagueGoals": 3,
       "leagueAssists": 1,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 3-4-2-1의 ST 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -9954,7 +10371,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Palace_31/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Palace_31/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-arsenal-205651",
@@ -9977,7 +10395,7 @@
       "leagueMinutes": 603,
       "leagueGoals": 3,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-3-3의 ST 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -10013,7 +10431,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Arsenal_3/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-nottingham-210156",
@@ -10036,7 +10455,7 @@
       "leagueMinutes": 400,
       "leagueGoals": 1,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 ST 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -10072,7 +10491,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Forest_17/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Forest_17/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-astonvilla-204646",
@@ -10095,7 +10515,7 @@
       "leagueMinutes": 298,
       "leagueGoals": 3,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-2-3-1의 ST 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -10131,7 +10551,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Villa_7/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     },
     {
       "id": "pl-2024-25-newcastle-75115",
@@ -10154,7 +10575,7 @@
       "leagueMinutes": 357,
       "leagueGoals": 0,
       "leagueAssists": 0,
-      "currentSeasonDataVerification": "public_PL_mirror_independent_official_player_verification_pending",
+      "currentSeasonDataVerification": "external_review_current_four_league_stats_complete_other_fields_and_qualitative_review_partial",
       "positionMajorityVerified": false,
       "positionReview": "2024-25 4-3-3의 ST 전술 역할. 시즌 경기별 최다 위치의 독립 대조는 미완료.",
       "previousSeasons": {
@@ -10190,7 +10611,8 @@
       "sources": [
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/players_stats/2024-25_players_stats.csv",
         "https://raw.githubusercontent.com/imadeddine-belkat/Premier-League-Stats/main/pl_stats/Newcastle_4/squad/2024-25_squad.csv"
-      ]
+      ],
+      "currentSeasonStatsStatus": "external_review_segment3_current_league_stats_complete_2026_11_26"
     }
   ],
   "bestXi": [

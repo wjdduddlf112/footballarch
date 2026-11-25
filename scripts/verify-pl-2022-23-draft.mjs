@@ -1,5 +1,6 @@
 // PL 2022-23 DRAFT structural validator — not historical player proof.
 import assert from "node:assert/strict";
+import {assertAuditedLeagueStats,assertAuditedSnapshot,assertAuditedFormation} from "./verify-pl-segment3-audit.mjs";
 import { readFileSync } from "node:fs";
 const get = p => JSON.parse(readFileSync(p, "utf8"));
 const d = get("data/premierleague-2022-23.json");
@@ -13,6 +14,7 @@ assert.equal(d.meta.status, "draft");
 assert.equal(d.meta.standingsOnly, false);
 assert.equal(d.meta.europeanQualificationVerified, true);
 assert.equal(d.meta.formation, "4-2-3-1");
+assertAuditedFormation(d);
 assert(d.meta.formationNote.includes("261/760"));
 assert.equal(d.standings.length, 20);
 assert.deepEqual(d.standings.map(x=>x.rank),Array.from({length:20},(_,i)=>i+1));
@@ -29,10 +31,11 @@ assert.equal(d.players.length,141);
 assert.equal(new Set(d.players.map(p=>p.id)).size,d.players.length);
 assert.equal(new Set(d.players.map(p=>p.nameOriginal.normalize("NFKC").toLowerCase())).size,d.players.length);
 for(const p of d.players){
+ assertAuditedLeagueStats(p);
   assert(clubs.includes(p.club)&&positions.includes(p.position)&&tiers.includes(p.tier),p.id);
   assert(["starter","backup"].includes(p.role),p.id);
   assert.equal(p.review,"draft_unapproved",p.id);
-  assert.equal(p.rankStatus,"draft_unapproved",p.id);
+  assert.equal(p.rankStatus,(p.externalAuditSegment3?.changes?.some(x=>x.field==="rank")||d.meta.externalAuditSegment3.addedPlayers.some(x=>x.record.id===p.id))?"proposed_unapproved":"draft_unapproved",p.id);
   assert(p.nameKo&&p.nameOriginal&&p.clubNameOriginal&&p.assessmentRationale&&p.sources.length>=2,p.id);
   assert(/^\d{4}-\d{2}-\d{2}$/.test(p.born),p.id);
   assert(Number.isInteger(p.leagueStarts)&&p.leagueStarts>0,p.id);
@@ -50,7 +53,7 @@ for(const club of clubs){
     assert(group.filter(p=>p.role==="backup").length<=1,club+"/"+pos+" backup cap");
   }
   const research=get("audit/player-research/premierleague-2022-23-"+club+"-fresh-draft.json");
-  assert.deepEqual(research.players,ps,club+" club/global parity");
+  assertAuditedSnapshot(d,research.players,ps,club);
 }
 for(const pos of positions){
   const group=d.players.filter(p=>p.position===pos);
