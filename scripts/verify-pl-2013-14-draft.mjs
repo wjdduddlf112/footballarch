@@ -1,5 +1,6 @@
 // Premier League 2013-14 DRAFT structural validator — does not independently audit personal 3-year stats.
 import assert from "node:assert/strict";
+import {assertAuditedLeagueStats,assertAuditedSnapshot} from "./verify-pl-external-audit.mjs";
 import {readFileSync} from "node:fs";
 const d=JSON.parse(readFileSync("data/premierleague-2013-14.json","utf8"));
 const eligible=["mancity","liverpool","chelsea","arsenal","everton","tottenham","hull"];
@@ -21,9 +22,10 @@ assert.equal(d.qualifiers.filter(x=>x.competition==="UEL").length,3);
 assert.equal(d.qualifiers.find(x=>x.club==="hull").competition,"UEL");
 assert(!d.qualifiers.some(x=>x.club==="manutd"),"7th place United not eligible");
 const ids=new Set(d.players.map(x=>x.id));
-assert.equal(d.players.length,129);
+assert.equal(d.players.length,128);
 assert.equal(ids.size,d.players.length);
 for(const p of d.players){
+ assertAuditedLeagueStats(p);
  assert(eligible.includes(p.club),"ineligible team "+p.id);
  assert(order.includes(p.position),"bad position "+p.id);
  assert(tier.includes(p.tier),"bad tier "+p.id);
@@ -31,7 +33,7 @@ for(const p of d.players){
  assert(p.nameKo&&p.nameOriginal&&p.assessmentRationale&&p.sources.length,"missing fields "+p.id);
  assert(["starter","backup"].includes(p.role),"role "+p.id);
  assert.equal(p.review,"draft_unapproved");
- assert.equal(p.leagueStarts,null,"unverified individual league starts must be null: "+p.id);
+ 
  assert(p.previousSeasons?.["2011-12"]&&p.previousSeasons?.["2012-13"],"3-season status absent "+p.id);
  assert(Number.isInteger(p.rank)&&p.rank>0);
 }
@@ -56,6 +58,6 @@ for(const slot of d.bestXi){
  assert.equal(slot.position,p.position,"incorrect mapped XI position "+p.name);
  assert(p.rank<=(p.position==="CB"?2:1),"Best XI must use top ranked role "+p.name);
 }
-assert.equal(d.players.filter(x=>x.leagueGoals!==null).length,14);
-assert.equal(d.players.filter(x=>x.leagueAssists!==null).length,14);
-console.log("PASS 2013-14: 7 actual 2014-15 UEFA clubs, 129 provisional players, each club 11 starters, continuous tier rankings, 4-2-3-1 mapped best XI, selected 14 stats (STRUCTURAL ONLY)");
+assert.equal(d.players.filter(x=>Number.isInteger(x.leagueGoals)).length,d.players.length);
+assert.equal(d.players.filter(x=>Number.isInteger(x.leagueAssists)).length,d.players.length);
+console.log("PASS 2013-14: 7 actual 2014-15 UEFA clubs, 128 provisional players, each club 11 starters, continuous tier rankings, 4-2-3-1 mapped best XI, complete current league stats (STRUCTURAL ONLY)");

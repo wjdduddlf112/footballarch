@@ -1,5 +1,6 @@
 // PL 2012-13 structural DRAFT check, not independent validation of individual historical performances.
 import assert from "node:assert/strict";
+import {assertAuditedLeagueStats,assertAuditedSnapshot} from "./verify-pl-external-audit.mjs";
 import {readFileSync} from "node:fs";
 const d=JSON.parse(readFileSync("data/premierleague-2012-13.json","utf8"));
 const selected=["manutd","mancity","chelsea","arsenal","tottenham","swansea","wigan"];
@@ -24,13 +25,14 @@ const ids=new Set(d.players.map(p=>p.id));
 assert.equal(d.players.length,128);
 assert.equal(ids.size,d.players.length);
 for(const p of d.players){
+ assertAuditedLeagueStats(p);
  assert(selected.includes(p.club),"not eligible: "+p.id);
  assert(positions.includes(p.position),"invalid position: "+p.id);
  assert(grades.includes(p.tier),"unknown tier "+p.id);
  assert(p.nameOriginal&&p.nameKo&&p.assessmentRationale&&p.sources?.length,p.id+" missing identity/rationale/source");
  assert(/^\d{4}-\d{2}-\d{2}$/.test(p.born),"birth formatting "+p.id);
  assert.equal(p.review,"draft_unapproved");
- assert.equal(p.leagueStarts,null,"unverified starts cannot be populated "+p.id);
+ 
  assert(Number.isInteger(p.rank)&&p.rank>0,"rank "+p.id);
  assert(p.previousSeasons?.["2010-11"]&&p.previousSeasons?.["2011-12"],"prior year status missing "+p.id);
 }
@@ -55,6 +57,6 @@ for(const slot of d.bestXi){
  assert.equal(slot.position,p.position,"XI player out of natural 2012-13 slot "+p.name);
  assert(p.rank<=(p.position==="CB"?2:1),"XI lower ranked without exception "+p.name);
 }
-assert.equal(d.players.filter(p=>p.leagueGoals!==null).length,8);
-assert.equal(d.players.filter(p=>p.leagueAssists!==null).length,4);
+assert.equal(d.players.filter(p=>Number.isInteger(p.leagueGoals)).length,d.players.length);
+assert.equal(d.players.filter(p=>Number.isInteger(p.leagueAssists)).length,d.players.length);
 console.log("PASS: 2012-13 PL DRAFT 7 real 2013-14 UEFA clubs / 128 candidates / 11-starter tags / rank and tier ordering / 4-2-3-1 XI (STRUCTURE ONLY)");

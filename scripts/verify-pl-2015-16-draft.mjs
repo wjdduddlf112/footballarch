@@ -1,5 +1,6 @@
 // 2015-16 Premier League DRAFT structural checks; DOES NOT independently verify historical personal performances.
 import assert from "node:assert/strict";
+import {assertAuditedLeagueStats,assertAuditedSnapshot} from "./verify-pl-external-audit.mjs";
 import {readFileSync} from "node:fs";
 const d=JSON.parse(readFileSync("data/premierleague-2015-16.json","utf8"));
 const clubs=["leicester","arsenal","tottenham","mancity","manutd","southampton","westham"];
@@ -16,14 +17,16 @@ assert.deepEqual(d.qualifiers.map(x=>x.club).sort(),[...clubs].sort());assert.eq
 assert.equal(d.qualifiers.find(x=>x.club==="westham").competition,"UEL");assert(!d.qualifiers.some(x=>x.club==="liverpool"));
 assert.deepEqual(d.standings.filter(x=>x.competition).map(x=>x.club).sort(),[...clubs].sort());
 assert.equal(d.meta.formation,"4-2-3-1");assert.equal(d.meta.bestXiReview.status,"proposed_unapproved");
+assert.equal(d.meta.formationCoverage.status,"mode_guaranteed");assert.equal(d.meta.formationCoverage.formationMode,"4-2-3-1");
 const ids=new Set(d.players.map(x=>x.id));assert.equal(ids.size,d.players.length);assert.equal(d.players.length,d.meta.candidateCount);
 for(const p of d.players){
+ assertAuditedLeagueStats(p);
  assert(clubs.includes(p.club),"invalid club "+p.id);assert(positions.includes(p.position),"position "+p.id);
  assert(grades.includes(p.tier),"tier "+p.id);assert(["starter","backup"].includes(p.role),"role "+p.id);
  assert.equal(p.review,"draft_unapproved");assert(/^\d{4}-\d{2}-\d{2}$/.test(p.born),"date "+p.id);
  assert(p.nameKo&&p.nameOriginal&&p.clubNameOriginal&&p.assessmentRationale&&p.sources?.length);
- assert.equal(p.leagueStarts,null);assert.equal(p.leagueAppearances,null);
- assert.equal(p.leagueGoals,null);assert.equal(p.leagueAssists,null);
+ 
+ 
  assert.equal(p.positionMajorityVerified,false);assert(p.previousSeasons?.["2013-14"]&&p.previousSeasons?.["2014-15"]);
  assert(Number.isInteger(p.rank)&&p.rank>0);
 }
@@ -34,7 +37,7 @@ for(const club of clubs){
   assert(ps.filter(p=>p.position===pos&&p.role==="backup").length<=1,club+" backup "+pos);
  }
  const clubDraft=JSON.parse(readFileSync("audit/player-research/premierleague-2015-16-"+club+"-fresh-draft.json","utf8"));
- assert.deepEqual(clubDraft.players,ps,"club draft parity "+club);
+ assertAuditedSnapshot(d,clubDraft.players,ps,club);
 }
 for(const pos of positions){
  const ps=d.players.filter(p=>p.position===pos).sort((a,b)=>a.rank-b.rank);

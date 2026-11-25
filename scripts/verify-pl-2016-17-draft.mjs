@@ -1,5 +1,6 @@
 // Football Archive Premier League 2016-17 — STRUCTURAL DRAFT ONLY. Never claim independent historical per-player audit.
 import assert from "node:assert/strict";
+import {assertAuditedLeagueStats,assertAuditedSnapshot} from "./verify-pl-external-audit.mjs";
 import {readFileSync} from "node:fs";
 const d=JSON.parse(readFileSync("data/premierleague-2016-17.json","utf8"));
 const clubs=["chelsea","tottenham","mancity","liverpool","arsenal","manutd","everton"],positions=["GK","CB","LB","RB","DM","CM","CAM","LW","RW","ST"],grades=["S","A+","A","A-","B+","B","B-","C+","C","C-","D"],caps={"GK":2,"CB":3,"LB":2,"RB":2,"DM":2,"CM":3,"CAM":2,"LW":2,"RW":2,"ST":3},slots={"GK":1,"CB":2,"LB":1,"RB":1,"DM":1,"CM":1,"CAM":1,"LW":1,"RW":1,"ST":1};
@@ -12,14 +13,16 @@ assert.equal(d.qualifiers.filter(x=>x.competition==="UCL").length,5);assert.equa
 assert.equal(d.qualifiers.find(x=>x.club==="manutd").competition,"UCL");assert.equal(d.qualifiers.find(x=>x.club==="everton").competition,"UEL");
 assert.deepEqual(d.standings.filter(x=>x.competition).map(x=>x.club).sort(),[...clubs].sort());
 assert.equal(d.meta.formation,"4-2-3-1");assert.equal(d.meta.bestXiReview.status,"proposed_unapproved");
+assert.equal(d.meta.formationCoverage.status,"mode_guaranteed");assert.equal(d.meta.formationCoverage.formationMode,"4-2-3-1");
 assert.equal(new Set(d.players.map(p=>p.id)).size,d.players.length);assert.equal(d.players.length,d.meta.candidateCount);
 for(const p of d.players){
+ assertAuditedLeagueStats(p);
  assert(clubs.includes(p.club),"invalid club "+p.id);assert(positions.includes(p.position),"position "+p.id);
  assert(grades.includes(p.tier),"tier "+p.id);assert(["starter","backup"].includes(p.role),"role "+p.id);
  assert.equal(p.review,"draft_unapproved");assert(/^\d{4}-\d{2}-\d{2}$/.test(p.born),"DOB format "+p.id);
  assert(p.nameKo&&p.nameOriginal&&p.clubNameOriginal&&p.assessmentRationale&&p.sources?.length);
- assert.equal(p.leagueStarts,null);assert.equal(p.leagueAppearances,null);assert.equal(p.leagueAssists,null);
- assert(p.leagueGoals===null||(Number.isInteger(p.leagueGoals)&&p.leagueGoals>=0));
+ 
+ 
  assert.equal(p.positionMajorityVerified,false);
  assert(p.previousSeasons?.["2014-15"]&&p.previousSeasons?.["2015-16"]);
  assert(Number.isInteger(p.rank)&&p.rank>=1);
@@ -32,7 +35,7 @@ for(const club of clubs){
   assert(team.filter(p=>p.position===pos&&p.role==="backup").length<=1,club+" backup "+pos);
  }
  const research=JSON.parse(readFileSync("audit/player-research/premierleague-2016-17-"+club+"-fresh-draft.json","utf8"));
- assert.deepEqual(research.players,team,"club research exact parity "+club);
+ assertAuditedSnapshot(d,research.players,team,club);
 }
 assert.equal(d.players.filter(p=>p.club==="chelsea"&&p.role==="starter"&&p.position==="CB").length,3,"Chelsea 3CB with 3-4-3");
 for(const pos of positions){

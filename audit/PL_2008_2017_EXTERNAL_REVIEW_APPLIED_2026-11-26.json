@@ -40,7 +40,7 @@
     },
     "2009-10": {
       "path": "data/premierleague-2009-10.json",
-      "blob": "1e84d1700ee0232c289fba8c8c1418b44325580b",
+      "blob": "d313cc02d64089296a99db42654b75043f591d71",
       "before": 133,
       "after": 131,
       "corrections": 3,
@@ -54,7 +54,8 @@
       "bestXiChanged": true,
       "held": 0,
       "formation": null,
-      "missingCurrentStatFields": 0
+      "missingCurrentStatFields": 0,
+      "initialAppliedBlob": "1e84d1700ee0232c289fba8c8c1418b44325580b"
     },
     "2010-11": {
       "path": "data/premierleague-2010-11.json",
@@ -148,7 +149,7 @@
     },
     "2015-16": {
       "path": "data/premierleague-2015-16.json",
-      "blob": "b114f95858350f39372572c37026ca36b1bddc96",
+      "blob": "b3626b1bcc8afddde0b2e5e808dd7eeafdeb2fe1",
       "before": 131,
       "after": 131,
       "corrections": 2,
@@ -167,11 +168,12 @@
         "total": 760,
         "count": 363
       },
-      "missingCurrentStatFields": 0
+      "missingCurrentStatFields": 0,
+      "initialAppliedBlob": "b114f95858350f39372572c37026ca36b1bddc96"
     },
     "2016-17": {
       "path": "data/premierleague-2016-17.json",
-      "blob": "b54fb19a5616017586f998146938fb6a8bad900f",
+      "blob": "d6b95ffd41d28270c8161ede2b681ede1b1c3ddd",
       "before": 126,
       "after": 126,
       "corrections": 1,
@@ -190,7 +192,8 @@
         "total": 760,
         "count": 246
       },
-      "missingCurrentStatFields": 0
+      "missingCurrentStatFields": 0,
+      "initialAppliedBlob": "b54fb19a5616017586f998146938fb6a8bad900f"
     }
   },
   "detailLocation": "Each retained player: externalAuditSegment2.changes and sources. Each season: meta.externalAuditSegment2 includes removed-player records, removed-player fact changes and held recommendations; meta.formationCoverage records lineup evidence.",
@@ -198,6 +201,7 @@
     "All 4,111 proposed fact field changes were processed. Of 4,075 fill recommendations, 12 are on replaced player records and are archived instead of in the final candidate list. Replacement players have all four current PL fields populated.",
     "No tier changes or final qualitative approval. Most-started position coverage is incomplete, nine linked tactical reviews held. Seven seasons' formation mode remains unverified.",
     "Validation: original standings, clubs, qualifiers unchanged; player counts and IDs; contiguous tier-consistent ranks; positional caps; unique 11 valid XI players; changed XI slots match registered positions; starts <= appearances; no missing current league appearances, starts, goals, assists in retained players.",
-    "This applies the supplied review, not an independent re-research of each source. Live site browser verification separate."
+    "This applies the supplied review, not an independent re-research of each source. Live site browser verification separate.",
+    "CI follow-up: replacement players have explicit removed-player IDs and structured prior starts where the supplied report provides them; unknown prior values remain null. Historic club draft snapshots remain unchanged; validators now test audited deltas and complete current-season stats."
   ]
 }

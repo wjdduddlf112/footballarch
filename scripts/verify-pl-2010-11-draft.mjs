@@ -1,6 +1,7 @@
 // Premier League 2010-11 DRAFT structural verification; not live/browser or history audit
 import {readFileSync} from "node:fs";
 import assert from "node:assert/strict";
+import {assertAuditedLeagueStats,assertAuditedSnapshot} from "./verify-pl-external-audit.mjs";
 const d=JSON.parse(readFileSync("data/premierleague-2010-11.json","utf8"));
 const positions=["GK","CB","LB","RB","DM","CM","CAM","LW","RW","ST"];
 const tiers=["S","A+","A","A-","B+","B","B-","C+","C","C-","D"];
@@ -16,6 +17,7 @@ const qualified=new Set(d.qualifiers.map(q=>q.club));
 assert.equal(d.players.length,145);
 assert.equal(new Set(d.players.map(p=>p.id)).size,145);
 for(const p of d.players){
+ assertAuditedLeagueStats(p);
  assert(qualified.has(p.club),p.id+" ineligible");
  assert(positions.includes(p.position),p.id+" invalid position");
  assert(tiers.includes(p.tier),p.id+" invalid tier");
@@ -23,7 +25,7 @@ for(const p of d.players){
  assert(p.nameKo&&p.nameOriginal&&p.assessmentRationale&&p.sources?.length,p.id+" lacks fields");
  assert(p.rank>0&&Number.isInteger(p.rank),p.id+" rank");
  assert.equal(p.review,"draft_unapproved");
- assert.equal(p.leagueStarts,null,"unverified starts published "+p.id);
+ 
 }
 for(const club of qualified){
  const ps=d.players.filter(p=>p.club===club);

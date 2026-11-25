@@ -1,5 +1,6 @@
 // 2011-12 PL draft structure validator; historical performance/majority position are separate gates.
 import assert from "node:assert/strict";
+import {assertAuditedLeagueStats,assertAuditedSnapshot} from "./verify-pl-external-audit.mjs";
 import {readFileSync} from "node:fs";
 const d=JSON.parse(readFileSync("data/premierleague-2011-12.json","utf8"));
 const pos=["GK","CB","LB","RB","DM","CM","CAM","LW","RW","ST"];
@@ -24,6 +25,7 @@ const validClubs=new Set(expected);
 assert.equal(d.players.length,126);
 assert.equal(ids.size,126);
 for(const p of d.players){
+ assertAuditedLeagueStats(p);
  assert(validClubs.has(p.club),"not eligible "+p.id);
  assert(pos.includes(p.position),"invalid position "+p.id);
  assert(tiers.includes(p.tier),"invalid tier "+p.id);
@@ -55,5 +57,5 @@ for(const x of d.bestXi){
  assert.equal(x.position,p.position,"XI slot mismatch "+p.name);
  assert(p.rank<=(["CB","ST"].includes(p.position)?2:1),"XI ignored top rank "+p.name);
 }
-assert.equal(d.players.filter(p=>p.leagueStarts!==null).length,9);
-console.log("PASS: 2011-12 PL DRAFT 7 eligible / 126 unique / tiers and positions / 4-4-2 XI with DM+CM / 9 individually sourced starts (STRUCTURAL ONLY)");
+assert.equal(d.players.filter(p=>Number.isInteger(p.leagueStarts)).length,d.players.length);
+console.log("PASS: 2011-12 PL DRAFT 7 eligible / 126 unique / tiers and positions / 4-4-2 XI with DM+CM / 126 externally reviewed starts (STRUCTURAL ONLY)");
