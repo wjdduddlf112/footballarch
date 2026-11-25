@@ -32,7 +32,7 @@
       "playerCandidateCount": 139,
       "provisionalRepresentativeStarterCandidates": 88,
       "provisionalBackupCandidates": 51,
-      "birthDatesPresent": 133,
+      "birthDatesPresent": 139,
       "nameKoPresent": 139,
       "provisionalTiers": 53,
       "provisionalRanks": 53,
@@ -40,7 +40,8 @@
       "officialAppearanceCount": 139,
       "threeSeasonAuditComplete": 0,
       "modalPositionVerified": 0,
-      "playersWithThreeSeasonLeagueRecords": 10
+      "playersWithThreeSeasonLeagueRecords": 11,
+      "birthDatesSourceLinked": 80
     },
     "clubFormations": {
       "leipzig": "4-4-2",
@@ -8599,7 +8600,7 @@
     {
       "id": "uel-2017-18-marseille-luizgustavo",
       "nameOriginal": "Luiz Gustavo",
-      "nameKo": "스티브 만단다",
+      "nameKo": "루이스 구스타부",
       "born": "1987-07-23",
       "position": "CB",
       "role": "starter",
@@ -8690,7 +8691,8 @@
           ]
         }
       ],
-      "rankReason": "잠정 티어·기술진 선정·포지션별 공격 기여·출전 비중 비교; 전체 3시즌 평가 아님"
+      "rankReason": "잠정 티어·기술진 선정·포지션별 공격 기여·출전 비중 비교; 전체 3시즌 평가 아님",
+      "identityCorrection": "기존 다른 선수 한글명 오기 수정"
     },
     {
       "id": "uel-2017-18-marseille-jordanamavi",
@@ -12163,11 +12165,11 @@
       "club": "salzburg",
       "clubNameOriginal": "Red Bull Salzburg",
       "name": "Hee-Chan Hwang",
-      "starts": null,
+      "starts": 6,
       "appearances": 9,
       "minutes": 520,
       "goals": 2,
-      "assists": null,
+      "assists": 0,
       "appearanceScope": "UEL main stage only; qualifying excluded",
       "tier": "B+",
       "rank": 8,
@@ -12175,7 +12177,7 @@
       "rankStatus": "provisional_evidenced_subset",
       "positionReview": "4-1-2-1-2 provisional UEFA tactical assignment; dominant match-by-match UEFA position supported by official squad appearance but still requires field-role cross-check",
       "candidateSelectionEvidence": "UEFA 2017-18 technical report individual named squad, actual appearances and minutes",
-      "tierRationale": "9경기 520분 2골, 기술진이 Dabbur와의 공격 조합 언급. 이전 두 시즌 전체 경기력 감사 미완료.",
+      "tierRationale": "9경기 520분 2골, 기술진이 Dabbur와의 공격 조합 언급. 이전 두 시즌 전체 경기력 감사 미완료. 2015-16 2부 18경기 11골 및 1부 13경기 0골, 2016-17 1부 26경기 12골, 2017-18 20경기 5골. 공식 520분과 FBref 521분 차이 기록. 주전 여부는 Gulbrandsen과 비교 필요.",
       "threeSeasonAssessment": {
         "seasons": [
           "2015-16",
@@ -12188,7 +12190,9 @@
       "sources": [
         "https://www.uefa.com/MultimediaFiles/Download/Publications/uefaorg/General/02/56/86/70/2568670_DOWNLOAD.pdf",
         "https://de.uefa.com/MultimediaFiles/Download/Publications/uefaorg/General/02/56/86/73/2568673_DOWNLOAD.pdf",
-        "https://www.footballsquads.co.uk/austria/2017-2018/bundes/rbsalz.htm"
+        "https://www.footballsquads.co.uk/austria/2017-2018/bundes/rbsalz.htm",
+        "https://en.wikipedia.org/wiki/Hwang_Hee-chan",
+        "https://fbref.com/en/players/169fd162/all_comps/Hwang-Hee-chan-Stats---All-Competitions"
       ],
       "verificationStatus": "UEFA 2017-18 individual appearance/minutes confirmed; 3-season independent performance audit incomplete",
       "eligibilityStatus": "official_technical_report_appearance_verified",
@@ -12216,27 +12220,63 @@
           "appearances": 9,
           "minutes": 520,
           "goals": 2,
-          "assists": null,
-          "source": "https://de.uefa.com/MultimediaFiles/Download/Publications/uefaorg/General/02/56/86/73/2568673_DOWNLOAD.pdf"
+          "assists": 0,
+          "source": "https://de.uefa.com/MultimediaFiles/Download/Publications/uefaorg/General/02/56/86/73/2568673_DOWNLOAD.pdf",
+          "starts": 6,
+          "secondarySource": "https://fbref.com/en/players/169fd162/all_comps/Hwang-Hee-chan-Stats---All-Competitions",
+          "secondaryMinutes": 521
         },
         "previousArchiveRecords": [],
-        "independentLeagueRecords": [],
-        "missingSeasons": [
-          "2015-16",
-          "2016-17"
-        ]
+        "independentLeagueRecords": [
+          {
+            "season": "2015-16",
+            "club": "FC Liefering",
+            "appearances": 18,
+            "goals": 11,
+            "level": 2,
+            "source": "https://en.wikipedia.org/wiki/Hwang_Hee-chan"
+          },
+          {
+            "season": "2015-16",
+            "club": "FC Salzburg",
+            "appearances": 13,
+            "goals": 0,
+            "level": 1,
+            "source": "https://en.wikipedia.org/wiki/Hwang_Hee-chan"
+          },
+          {
+            "season": "2016-17",
+            "club": "FC Salzburg",
+            "appearances": 26,
+            "goals": 12,
+            "level": 1,
+            "source": "https://en.wikipedia.org/wiki/Hwang_Hee-chan"
+          },
+          {
+            "season": "2017-18",
+            "club": "FC Salzburg",
+            "appearances": 20,
+            "goals": 5,
+            "level": 1,
+            "source": "https://en.wikipedia.org/wiki/Hwang_Hee-chan"
+          }
+        ],
+        "missingSeasons": [],
+        "leagueRecordsComplete": true
       },
       "displayTier": "B+",
       "proposedTier": "B+",
       "assessmentStatus": "provisional_current_quality_not_full_three_season",
-      "tierReason": "9경기 520분 2골, 기술진이 Dabbur와의 공격 조합 언급. 이전 두 시즌 전체 경기력 감사 미완료.",
+      "tierReason": "9경기 520분 2골, 기술진이 Dabbur와의 공격 조합 언급. 이전 두 시즌 전체 경기력 감사 미완료. 2015-16 2부 18경기 11골 및 1부 13경기 0골, 2016-17 1부 26경기 12골, 2017-18 20경기 5골. 공식 520분과 FBref 521분 차이 기록. 주전 여부는 Gulbrandsen과 비교 필요.",
       "evidence": [
         {
-          "claim": "9경기 520분 2골, 기술진이 Dabbur와의 공격 조합 언급. 이전 두 시즌 전체 경기력 감사 미완료.",
+          "claim": "9경기 520분 2골, 기술진이 Dabbur와의 공격 조합 언급. 이전 두 시즌 전체 경기력 감사 미완료. 2015-16 2부 18경기 11골 및 1부 13경기 0골, 2016-17 1부 26경기 12골, 2017-18 20경기 5골. 공식 520분과 FBref 521분 차이 기록. 주전 여부는 Gulbrandsen과 비교 필요.",
           "sources": [
             "https://www.uefa.com/MultimediaFiles/Download/Publications/uefaorg/General/02/56/86/70/2568670_DOWNLOAD.pdf",
             "https://de.uefa.com/MultimediaFiles/Download/Publications/uefaorg/General/02/56/86/73/2568673_DOWNLOAD.pdf",
-            "https://www.footballsquads.co.uk/austria/2017-2018/bundes/rbsalz.htm"
+            "https://www.footballsquads.co.uk/austria/2017-2018/bundes/rbsalz.htm",
+            "https://en.wikipedia.org/wiki/Hwang_Hee-chan",
+            "https://fbref.com/en/players/169fd162/all_comps/Hwang-Hee-chan-Stats---All-Competitions"
           ]
         }
       ],
@@ -16060,7 +16100,7 @@
     {
       "id": "uel-2017-18-atleti-koke",
       "nameOriginal": "Koke",
-      "nameKo": "얀 오블라크",
+      "nameKo": "코케",
       "born": "1992-01-08",
       "position": "LW",
       "role": "starter",
@@ -16149,12 +16189,13 @@
           ]
         }
       ],
-      "rankReason": "잠정 티어·기술진 선정·포지션별 공격 기여·출전 비중 비교; 전체 3시즌 평가 아님"
+      "rankReason": "잠정 티어·기술진 선정·포지션별 공격 기여·출전 비중 비교; 전체 3시즌 평가 아님",
+      "identityCorrection": "기존 다른 선수 한글명 오기 수정"
     },
     {
       "id": "uel-2017-18-atleti-saulniguez",
       "nameOriginal": "Saúl Ñíguez",
-      "nameKo": "얀 오블라크",
+      "nameKo": "사울 니게스",
       "born": "1994-11-21",
       "position": "CM",
       "role": "starter",
@@ -16243,7 +16284,8 @@
           ]
         }
       ],
-      "rankReason": "잠정 티어·기술진 선정·포지션별 공격 기여·출전 비중 비교; 전체 3시즌 평가 아님"
+      "rankReason": "잠정 티어·기술진 선정·포지션별 공격 기여·출전 비중 비교; 전체 3시즌 평가 아님",
+      "identityCorrection": "기존 다른 선수 한글명 오기 수정"
     },
     {
       "id": "uel-2017-18-atleti-antoinegriezmann",
@@ -16281,7 +16323,8 @@
         "https://www.uefa.com/MultimediaFiles/Download/Publications/uefaorg/General/02/56/86/70/2568670_DOWNLOAD.pdf",
         "https://www.uefa.com/uefaeuropaleague/news/0245-0e98cea4ee1c-d6da1165e8ef-1000--uefa-europa-league-squad-of-the-2017-18-season/",
         "https://de.uefa.com/MultimediaFiles/Download/Publications/uefaorg/General/02/56/86/73/2568673_DOWNLOAD.pdf",
-        "https://11footy.com/players/antoine-griezmann?tab=career"
+        "https://11footy.com/players/antoine-griezmann?tab=career",
+        "https://www.uefa.com/uefaeuropaleague/news/0253-0d81f637df0f-b368e0f20f93-1000/"
       ],
       "verificationStatus": "UEFA 2017-18 individual appearance/minutes confirmed; 3-season independent performance audit incomplete",
       "birthSourceStatus": "2017-18 domestic archive reference, independently recheck against official player profile",
@@ -16352,7 +16395,8 @@
             "https://www.uefa.com/MultimediaFiles/Download/Publications/uefaorg/General/02/56/86/70/2568670_DOWNLOAD.pdf",
             "https://www.uefa.com/uefaeuropaleague/news/0245-0e98cea4ee1c-d6da1165e8ef-1000--uefa-europa-league-squad-of-the-2017-18-season/",
             "https://de.uefa.com/MultimediaFiles/Download/Publications/uefaorg/General/02/56/86/73/2568673_DOWNLOAD.pdf",
-            "https://11footy.com/players/antoine-griezmann?tab=career"
+            "https://11footy.com/players/antoine-griezmann?tab=career",
+            "https://www.uefa.com/uefaeuropaleague/news/0253-0d81f637df0f-b368e0f20f93-1000/"
           ]
         }
       ],
@@ -19072,7 +19116,7 @@
       "nameKo": "바스토스",
       "position": "CB",
       "role": "backup",
-      "born": null,
+      "born": "1991-03-27",
       "appearances": 6,
       "minutes": 514,
       "starts": null,
@@ -19085,7 +19129,7 @@
       "positionStatus": "provisional_not_modal_verified",
       "positionEvidence": "https://de.uefa.com/MultimediaFiles/Download/Publications/uefaorg/General/02/56/86/73/2568673_DOWNLOAD.pdf",
       "priorProposedTier": null,
-      "birthDateStatus": "missing",
+      "birthDateStatus": "single_source_roster",
       "threeSeasonAudit": {
         "seasons": [
           "2015-16",
@@ -19121,19 +19165,22 @@
       "tierReason": "UEL 6경기 514분 확보; 개인 경기력 근거 보강 전 평가 보류.",
       "tierRationale": "UEL 6경기 514분 확보; 개인 경기력 근거 보강 전 평가 보류.",
       "sources": [
-        "https://de.uefa.com/MultimediaFiles/Download/Publications/uefaorg/General/02/56/86/73/2568673_DOWNLOAD.pdf"
+        "https://de.uefa.com/MultimediaFiles/Download/Publications/uefaorg/General/02/56/86/73/2568673_DOWNLOAD.pdf",
+        "https://en.wikipedia.org/wiki/Bastos_(footballer,_born_1991)"
       ],
       "evidence": [
         {
           "claim": "UEL 6경기 514분 확보; 개인 경기력 근거 보강 전 평가 보류.",
           "sources": [
-            "https://de.uefa.com/MultimediaFiles/Download/Publications/uefaorg/General/02/56/86/73/2568673_DOWNLOAD.pdf"
+            "https://de.uefa.com/MultimediaFiles/Download/Publications/uefaorg/General/02/56/86/73/2568673_DOWNLOAD.pdf",
+            "https://en.wikipedia.org/wiki/Bastos_(footballer,_born_1991)"
           ]
         }
       ],
       "rank": null,
       "rankStatus": "pending",
-      "evidencePending": true
+      "evidencePending": true,
+      "birthDateSource": "https://en.wikipedia.org/wiki/Bastos_(footballer,_born_1991)"
     },
     {
       "id": "uel-2017-18-arsenal-petrcech",
@@ -19144,7 +19191,7 @@
       "nameKo": "페트르 체흐",
       "position": "GK",
       "role": "backup",
-      "born": null,
+      "born": "1982-05-20",
       "appearances": 3,
       "minutes": 270,
       "starts": 3,
@@ -19157,7 +19204,7 @@
       "positionStatus": "provisional_not_modal_verified",
       "positionEvidence": "https://de.uefa.com/MultimediaFiles/Download/Publications/uefaorg/General/02/56/86/73/2568673_DOWNLOAD.pdf",
       "priorProposedTier": null,
-      "birthDateStatus": "missing",
+      "birthDateStatus": "single_source_roster",
       "threeSeasonAudit": {
         "seasons": [
           "2015-16",
@@ -19193,19 +19240,22 @@
       "tierReason": "UEL 3경기 270분 확보; 개인 경기력 근거 보강 전 평가 보류.",
       "tierRationale": "UEL 3경기 270분 확보; 개인 경기력 근거 보강 전 평가 보류.",
       "sources": [
-        "https://de.uefa.com/MultimediaFiles/Download/Publications/uefaorg/General/02/56/86/73/2568673_DOWNLOAD.pdf"
+        "https://de.uefa.com/MultimediaFiles/Download/Publications/uefaorg/General/02/56/86/73/2568673_DOWNLOAD.pdf",
+        "https://www.footballsquads.co.uk/eng/2017-2018/faprem/arsenal.htm"
       ],
       "evidence": [
         {
           "claim": "UEL 3경기 270분 확보; 개인 경기력 근거 보강 전 평가 보류.",
           "sources": [
-            "https://de.uefa.com/MultimediaFiles/Download/Publications/uefaorg/General/02/56/86/73/2568673_DOWNLOAD.pdf"
+            "https://de.uefa.com/MultimediaFiles/Download/Publications/uefaorg/General/02/56/86/73/2568673_DOWNLOAD.pdf",
+            "https://www.footballsquads.co.uk/eng/2017-2018/faprem/arsenal.htm"
           ]
         }
       ],
       "rank": null,
       "rankStatus": "pending",
-      "evidencePending": true
+      "evidencePending": true,
+      "birthDateSource": "https://www.footballsquads.co.uk/eng/2017-2018/faprem/arsenal.htm"
     },
     {
       "id": "uel-2017-18-arsenal-robholding",
@@ -19216,7 +19266,7 @@
       "nameKo": "롭 홀딩",
       "position": "CB",
       "role": "backup",
-      "born": null,
+      "born": "1994-11-09",
       "appearances": 8,
       "minutes": 595,
       "starts": null,
@@ -19229,7 +19279,7 @@
       "positionStatus": "provisional_not_modal_verified",
       "positionEvidence": "https://de.uefa.com/MultimediaFiles/Download/Publications/uefaorg/General/02/56/86/73/2568673_DOWNLOAD.pdf",
       "priorProposedTier": null,
-      "birthDateStatus": "missing",
+      "birthDateStatus": "single_source_roster",
       "threeSeasonAudit": {
         "seasons": [
           "2015-16",
@@ -19265,19 +19315,22 @@
       "tierReason": "UEL 8경기 595분 확보; 개인 경기력 근거 보강 전 평가 보류.",
       "tierRationale": "UEL 8경기 595분 확보; 개인 경기력 근거 보강 전 평가 보류.",
       "sources": [
-        "https://de.uefa.com/MultimediaFiles/Download/Publications/uefaorg/General/02/56/86/73/2568673_DOWNLOAD.pdf"
+        "https://de.uefa.com/MultimediaFiles/Download/Publications/uefaorg/General/02/56/86/73/2568673_DOWNLOAD.pdf",
+        "https://www.footballsquads.co.uk/eng/2017-2018/faprem/arsenal.htm"
       ],
       "evidence": [
         {
           "claim": "UEL 8경기 595분 확보; 개인 경기력 근거 보강 전 평가 보류.",
           "sources": [
-            "https://de.uefa.com/MultimediaFiles/Download/Publications/uefaorg/General/02/56/86/73/2568673_DOWNLOAD.pdf"
+            "https://de.uefa.com/MultimediaFiles/Download/Publications/uefaorg/General/02/56/86/73/2568673_DOWNLOAD.pdf",
+            "https://www.footballsquads.co.uk/eng/2017-2018/faprem/arsenal.htm"
           ]
         }
       ],
       "rank": null,
       "rankStatus": "pending",
-      "evidencePending": true
+      "evidencePending": true,
+      "birthDateSource": "https://www.footballsquads.co.uk/eng/2017-2018/faprem/arsenal.htm"
     },
     {
       "id": "uel-2017-18-arsenal-dannywelbeck",
@@ -19288,7 +19341,7 @@
       "nameKo": "대니 웰벡",
       "position": "LW",
       "role": "starter",
-      "born": null,
+      "born": "1990-11-26",
       "appearances": 10,
       "minutes": 760,
       "starts": null,
@@ -19301,7 +19354,7 @@
       "positionStatus": "provisional_not_modal_verified",
       "positionEvidence": "https://de.uefa.com/MultimediaFiles/Download/Publications/uefaorg/General/02/56/86/73/2568673_DOWNLOAD.pdf",
       "priorProposedTier": null,
-      "birthDateStatus": "missing",
+      "birthDateStatus": "single_source_roster",
       "threeSeasonAudit": {
         "seasons": [
           "2015-16",
@@ -19337,20 +19390,23 @@
       "tierReason": "10경기 760분 3골. 이전 두 시즌 전체 경기력 감사 미완료.",
       "tierRationale": "10경기 760분 3골. 이전 두 시즌 전체 경기력 감사 미완료.",
       "sources": [
-        "https://de.uefa.com/MultimediaFiles/Download/Publications/uefaorg/General/02/56/86/73/2568673_DOWNLOAD.pdf"
+        "https://de.uefa.com/MultimediaFiles/Download/Publications/uefaorg/General/02/56/86/73/2568673_DOWNLOAD.pdf",
+        "https://www.footballsquads.co.uk/eng/2017-2018/faprem/arsenal.htm"
       ],
       "evidence": [
         {
           "claim": "10경기 760분 3골. 이전 두 시즌 전체 경기력 감사 미완료.",
           "sources": [
-            "https://de.uefa.com/MultimediaFiles/Download/Publications/uefaorg/General/02/56/86/73/2568673_DOWNLOAD.pdf"
+            "https://de.uefa.com/MultimediaFiles/Download/Publications/uefaorg/General/02/56/86/73/2568673_DOWNLOAD.pdf",
+            "https://www.footballsquads.co.uk/eng/2017-2018/faprem/arsenal.htm"
           ]
         }
       ],
       "rank": 4,
       "rankStatus": "provisional_evidenced_subset",
       "evidencePending": true,
-      "rankReason": "잠정 티어·기술진 선정·포지션별 공격 기여·출전 비중 비교; 전체 3시즌 평가 아님"
+      "rankReason": "잠정 티어·기술진 선정·포지션별 공격 기여·출전 비중 비교; 전체 3시즌 평가 아님",
+      "birthDateSource": "https://www.footballsquads.co.uk/eng/2017-2018/faprem/arsenal.htm"
     },
     {
       "id": "uel-2017-18-arsenal-theowalcott",
@@ -19361,7 +19417,7 @@
       "nameKo": "테오 월컷",
       "position": "RW",
       "role": "starter",
-      "born": null,
+      "born": "1989-03-16",
       "appearances": 5,
       "minutes": 424,
       "starts": null,
@@ -19374,7 +19430,7 @@
       "positionStatus": "provisional_not_modal_verified",
       "positionEvidence": "https://de.uefa.com/MultimediaFiles/Download/Publications/uefaorg/General/02/56/86/73/2568673_DOWNLOAD.pdf",
       "priorProposedTier": null,
-      "birthDateStatus": "missing",
+      "birthDateStatus": "single_source_roster",
       "threeSeasonAudit": {
         "seasons": [
           "2015-16",
@@ -19410,19 +19466,22 @@
       "tierReason": "UEL 5경기 424분 확보; 개인 경기력 근거 보강 전 평가 보류.",
       "tierRationale": "UEL 5경기 424분 확보; 개인 경기력 근거 보강 전 평가 보류.",
       "sources": [
-        "https://de.uefa.com/MultimediaFiles/Download/Publications/uefaorg/General/02/56/86/73/2568673_DOWNLOAD.pdf"
+        "https://de.uefa.com/MultimediaFiles/Download/Publications/uefaorg/General/02/56/86/73/2568673_DOWNLOAD.pdf",
+        "https://www.footballsquads.co.uk/eng/2017-2018/faprem/arsenal.htm"
       ],
       "evidence": [
         {
           "claim": "UEL 5경기 424분 확보; 개인 경기력 근거 보강 전 평가 보류.",
           "sources": [
-            "https://de.uefa.com/MultimediaFiles/Download/Publications/uefaorg/General/02/56/86/73/2568673_DOWNLOAD.pdf"
+            "https://de.uefa.com/MultimediaFiles/Download/Publications/uefaorg/General/02/56/86/73/2568673_DOWNLOAD.pdf",
+            "https://www.footballsquads.co.uk/eng/2017-2018/faprem/arsenal.htm"
           ]
         }
       ],
       "rank": null,
       "rankStatus": "pending",
-      "evidencePending": true
+      "evidencePending": true,
+      "birthDateSource": "https://www.footballsquads.co.uk/eng/2017-2018/faprem/arsenal.htm"
     },
     {
       "id": "uel-2017-18-arsenal-oliviergiroud",
@@ -19433,7 +19492,7 @@
       "nameKo": "올리비에 지루",
       "position": "ST",
       "role": "starter",
-      "born": null,
+      "born": "1986-09-30",
       "appearances": 6,
       "minutes": 540,
       "starts": null,
@@ -19446,7 +19505,7 @@
       "positionStatus": "provisional_not_modal_verified",
       "positionEvidence": "https://de.uefa.com/MultimediaFiles/Download/Publications/uefaorg/General/02/56/86/73/2568673_DOWNLOAD.pdf",
       "priorProposedTier": null,
-      "birthDateStatus": "missing",
+      "birthDateStatus": "single_source_roster",
       "threeSeasonAudit": {
         "seasons": [
           "2015-16",
@@ -19482,19 +19541,22 @@
       "tierReason": "UEL 6경기 540분 확보; 개인 경기력 근거 보강 전 평가 보류.",
       "tierRationale": "UEL 6경기 540분 확보; 개인 경기력 근거 보강 전 평가 보류.",
       "sources": [
-        "https://de.uefa.com/MultimediaFiles/Download/Publications/uefaorg/General/02/56/86/73/2568673_DOWNLOAD.pdf"
+        "https://de.uefa.com/MultimediaFiles/Download/Publications/uefaorg/General/02/56/86/73/2568673_DOWNLOAD.pdf",
+        "https://www.footballsquads.co.uk/eng/2017-2018/faprem/arsenal.htm"
       ],
       "evidence": [
         {
           "claim": "UEL 6경기 540분 확보; 개인 경기력 근거 보강 전 평가 보류.",
           "sources": [
-            "https://de.uefa.com/MultimediaFiles/Download/Publications/uefaorg/General/02/56/86/73/2568673_DOWNLOAD.pdf"
+            "https://de.uefa.com/MultimediaFiles/Download/Publications/uefaorg/General/02/56/86/73/2568673_DOWNLOAD.pdf",
+            "https://www.footballsquads.co.uk/eng/2017-2018/faprem/arsenal.htm"
           ]
         }
       ],
       "rank": null,
       "rankStatus": "pending",
-      "evidencePending": true
+      "evidencePending": true,
+      "birthDateSource": "https://www.footballsquads.co.uk/eng/2017-2018/faprem/arsenal.htm"
     },
     {
       "id": "uel-2017-18-cska-viktorvasin",
@@ -19809,6 +19871,26 @@
     {
       "url": "https://en.wikipedia.org/wiki/Stefan_Lainer",
       "type": "re_audit"
+    },
+    {
+      "url": "https://www.footballsquads.co.uk/eng/2017-2018/faprem/arsenal.htm",
+      "type": "additional_audit"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Bastos_(footballer,_born_1991)",
+      "type": "additional_audit"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Hwang_Hee-chan",
+      "type": "additional_audit"
+    },
+    {
+      "url": "https://fbref.com/en/players/169fd162/all_comps/Hwang-Hee-chan-Stats---All-Competitions",
+      "type": "additional_audit"
+    },
+    {
+      "url": "https://www.uefa.com/uefaeuropaleague/news/0253-0d81f637df0f-b368e0f20f93-1000/",
+      "type": "additional_audit"
     }
   ],
   "audit": {
@@ -19827,12 +19909,12 @@
     "counts": {
       "players": 139,
       "appearance": 139,
-      "born": 133,
-      "birthSource": 74,
+      "born": 139,
+      "birthSource": 80,
       "birthConflict": 1,
       "tiers": 53,
       "ranks": 53,
-      "threeSeasonLeagueRecords": 10,
+      "threeSeasonLeagueRecords": 11,
       "priorArchive": 7,
       "threeSeasonComplete": 0,
       "modalPositionVerified": 0,
@@ -19904,12 +19986,13 @@
       "주전·후보는 출전시간 및 전술 근거에 따른 잠정 선정. 경기별 최빈 포지션 및 선발 횟수 미확정. 이적 전 출전은 인정.",
       "3시즌 국내리그 기록 확보와 3시즌 종합 경기력 평가는 구분. 기존 아카이브는 별도 미재검증 자료.",
       "출전시간만으로 티어를 자동 부여하지 않음. 근거 부족 선수 보류.",
-      "Luiz Gustavo, Koke, Saúl 생년월일 수정; Ahmed Musa 자료 충돌. 황희찬 UEFA 9경기 520분 2골, FBref 521분과 1분 차이는 출처별 집계 차이로 기록."
+      "Luiz Gustavo, Koke, Saúl 생년월일 수정; Ahmed Musa 자료 충돌. 황희찬 UEFA 9경기 520분 2골, FBref 521분과 1분 차이는 출처별 집계 차이로 기록.",
+      "한글명 교차 점검에서 Luiz Gustavo, Koke, Saúl Ñíguez에 다른 선수 이름이 연결된 오류 수정. 추가 6명 생년월일 확인. 황희찬의 3시즌 국내리그 기록과 FBref 6선발을 추가. 2015-16 1·2부 구분."
     ],
     "pending": [
       "전원 3시즌 개인 경기력 평가",
       "경기별 주포지션, 선발 및 포메이션 최빈값",
-      "생년월일 미입력/기존값 독립 검증 및 충돌 해결",
+      "기존 생년월일 독립 검증 및 Ahmed Musa 출처 충돌 해결",
       "경기별 날짜/장소 및 동률 규정",
       "Pages UI"
     ]
