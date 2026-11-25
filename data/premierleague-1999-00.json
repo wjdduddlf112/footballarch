@@ -241,6 +241,19 @@
       "status": "partial_not_integrated",
       "path": "audit/player-research/premierleague-1999-00-independent-20261125.json",
       "note": "New research separate from existing 128-player draft; no prior player ratings overwritten pending complete selection/position/assessment audit."
+    },
+    "externalAudit20261126": {
+      "baseCommit": "078c124cc365fab971be8263e2cbcacce5999719",
+      "report": "audit/PL_1999_2004_EXTERNAL_REVIEW_APPLIED_2026-11-26.json",
+      "status": "draft_unapproved",
+      "players": 128,
+      "facts": 5,
+      "ranks": 3,
+      "tiers": 2,
+      "replacements": 1,
+      "xi": false,
+      "held": 4,
+      "note": "Structured corrected values supersede conflicting legacy text. Detailed positions, qualitative tiers and formation frequency not finally verified."
     }
   },
   "clubs": [
@@ -827,7 +840,7 @@
       "leagueAppearances": 15,
       "leagueStarts": 14,
       "starts": 14,
-      "tier": "B",
+      "tier": "B-",
       "rank": 8,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_not_user_approved",
@@ -849,11 +862,27 @@
       ],
       "sources": [
         "https://fbref.com/en/squads/18bb7c10/1999-2000/Arsenal-Stats",
-        "https://www.footballsquads.co.uk/eng/1999-2000/faprem/arsenal.htm"
+        "https://www.footballsquads.co.uk/eng/1999-2000/faprem/arsenal.htm",
+        "https://fbref.com/en/squads/18bb7c10/1998-1999/Arsenal-Stats",
+        "https://fbref.com/en/squads/18bb7c10/1997-1998/Arsenal-Stats"
       ],
-      "assessmentRationale": "1999-00 14선발·15출전·5클린시트. 1997-98 및 1998-99 출전과 경기력 차등 비교 대기.",
+      "assessmentRationale": "직전 두 시즌 13선발·10클린시트에서 1999-00 14선발·65.2%. 주전 공백을 상당 기간 메웠으나 세 시즌의 기용과 당해 지표를 종합해 B- 권고.",
       "rankStatus": "proposed_unapproved",
-      "rankRationale": "GK 리그 전체 15명 중 잠정 8위. 티어와 현재 시즌 14선발, 선방·클린시트 기여 및 1997-98·1998-99의 역할을 재검토. GK 세부 플레이 평가는 잠정."
+      "rankRationale": "GK 리그 전체 15명 중 잠정 8위. 티어와 현재 시즌 14선발, 선방·클린시트 기여 및 1997-98·1998-99의 역할을 재검토. GK 세부 플레이 평가는 잠정.",
+      "externalAuditCorrections": [
+        {
+          "field": "tier",
+          "old": "B",
+          "proposed": "B-",
+          "reason": "직전 두 시즌 13선발·10클린시트에서 1999-00 14선발·65.2%. 주전 공백을 상당 기간 메웠으나 세 시즌의 기용과 당해 지표를 종합해 B- 권고.",
+          "sources": [
+            "https://fbref.com/en/squads/18bb7c10/1998-1999/Arsenal-Stats",
+            "https://fbref.com/en/squads/18bb7c10/1997-1998/Arsenal-Stats",
+            "https://fbref.com/en/squads/18bb7c10/1999-2000/Arsenal-Stats"
+          ],
+          "status": "reassessment_recommended"
+        }
+      ]
     },
     {
       "id": "pl-1999-00-independent-gk-04",
@@ -995,8 +1024,8 @@
       "leagueAppearances": 11,
       "leagueStarts": 11,
       "starts": 11,
-      "tier": "C",
-      "rank": 14,
+      "tier": "C+",
+      "rank": 13,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_not_user_approved",
       "candidateStatus": "fresh_research_shortlist",
@@ -1017,11 +1046,37 @@
       ],
       "sources": [
         "https://fbref.com/en/squads/3148d79f/1999-2000/Bradford-City-Stats",
-        "https://www.footballsquads.co.uk/eng/1999-2000/faprem/bradford.htm"
+        "https://www.footballsquads.co.uk/eng/1999-2000/faprem/bradford.htm",
+        "https://iiab.live/kiwix/content/wikipedia_en_top1m_maxi_2024-05/A/Gary_Walsh",
+        "https://fbref.com/en/squads/3148d79f/1999-2000/s38/Bradford-City-Stats"
       ],
-      "assessmentRationale": "1999-00 11선발, 77.3% 선방률·2클린시트. 선발 기용은 확인되나 직전 두 시즌 개별 경기력 분석 미완료.",
+      "assessmentRationale": "승격 전 두 시즌 주전, 당해 PL 11선발·77.3%. C0→C+. 프리델보다 대상 시즌 기여 범위가 넓다.",
       "rankStatus": "proposed_unapproved",
-      "rankRationale": "GK 리그 전체 15명 중 잠정 14위. 티어와 현재 시즌 11선발, 선방·클린시트 기여 및 1997-98·1998-99의 역할을 재검토. GK 세부 플레이 평가는 잠정."
+      "rankRationale": "승격 전 두 시즌 주전, 당해 PL 11선발·77.3%. C0→C+. 프리델보다 대상 시즌 기여 범위가 넓다.",
+      "externalAuditCorrections": [
+        {
+          "field": "tier",
+          "old": "C",
+          "proposed": "C+",
+          "reason": "승격 전 두 시즌 주전, 당해 PL 11선발·77.3%. C0→C+. 프리델보다 대상 시즌 기여 범위가 넓다.",
+          "sources": [
+            "https://iiab.live/kiwix/content/wikipedia_en_top1m_maxi_2024-05/A/Gary_Walsh",
+            "https://fbref.com/en/squads/3148d79f/1999-2000/s38/Bradford-City-Stats"
+          ],
+          "status": "reassessment_recommended"
+        },
+        {
+          "field": "rank",
+          "old": 14,
+          "proposed": 13,
+          "reason": "승격 전 두 시즌 주전, 당해 PL 11선발·77.3%. C0→C+. 프리델보다 대상 시즌 기여 범위가 넓다.",
+          "sources": [
+            "https://iiab.live/kiwix/content/wikipedia_en_top1m_maxi_2024-05/A/Gary_Walsh",
+            "https://fbref.com/en/squads/3148d79f/1999-2000/s38/Bradford-City-Stats"
+          ],
+          "status": "reassessment_recommended"
+        }
+      ]
     },
     {
       "id": "pl-1999-00-independent-gk-09",
@@ -1302,7 +1357,7 @@
       "leagueStarts": 2,
       "starts": 2,
       "tier": "C+",
-      "rank": 13,
+      "rank": 14,
       "review": "draft_unapproved",
       "evaluationStatus": "historical_three_season_comparison_tentative_low_current_sample",
       "candidateStatus": "fresh_research_shortlist",
@@ -1333,7 +1388,20 @@
       ],
       "assessmentRationale": "1999-00 리버풀 리그 2선발·1클린시트로 시즌 기여가 제한적이다. 다만 1997-98 11선발, 1998-99 12선발로 이전 두 시즌 PL 경험과 주전 경쟁력이 확인돼 C+ 잠정. 이후 블랙번 시절 활약은 소급 반영하지 않음.",
       "rankStatus": "proposed_unapproved",
-      "rankRationale": "GK 리그 전체 15명 중 잠정 13위. 티어와 현재 시즌 2선발, 선방·클린시트 기여 및 1997-98·1998-99의 역할을 재검토. GK 세부 플레이 평가는 잠정."
+      "rankRationale": "이전 두 시즌 출전을 반영해 C+ 유지. 대상 시즌 2선발을 고려해 한 계단 내린다.",
+      "externalAuditCorrections": [
+        {
+          "field": "rank",
+          "old": 13,
+          "proposed": 14,
+          "reason": "이전 두 시즌 출전을 반영해 C+ 유지. 대상 시즌 2선발을 고려해 한 계단 내린다.",
+          "sources": [
+            "https://www.lfchistory.net/players/302",
+            "https://fbref.com/en/squads/822bd0ba/1999-2000/Liverpool-Stats"
+          ],
+          "status": "reassessment_recommended"
+        }
+      ]
     },
     {
       "id": "pl-1999-00-independent-gk-03",
@@ -1957,7 +2025,7 @@
       "nameKo": "마르셀 드사이",
       "club": "chelsea",
       "clubNameOriginal": "Chelsea FC",
-      "born": "1968-09-17",
+      "born": "1968-09-07",
       "position": "CB",
       "role": "starter",
       "season": "1999-00",
@@ -1986,7 +2054,11 @@
       ],
       "sources": [
         "https://fbref.com/en/squads/cff3d9bb/1999-2000/Chelsea-Stats",
-        "https://www.footballsquads.co.uk/eng/1999-2000/faprem/chelsea.htm"
+        "https://www.footballsquads.co.uk/eng/1999-2000/faprem/chelsea.htm",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/2908.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/2935.json"
       ],
       "assessmentRationale": "첼시 23선발의 수비 중심. 1998-99 주전 기여도와 과거 AC 밀란 활약의 지속성을 고려하되 당해 적은 출전 감점.",
       "historicalReviewPeriod": [
@@ -1996,7 +2068,22 @@
       ],
       "historicalWeights": "1999-00 highest > 1998-99 > 1997-98",
       "rankStatus": "proposed_unapproved",
-      "rankRationale": "CB 21명 리그 전체 후보 중 6위 DRAFT. 티어 우선, 1999-00 개인 경기 기여와 리그 선발 23회, 직전 두 시즌의 지속성을 비교."
+      "rankRationale": "CB 21명 리그 전체 후보 중 6위 DRAFT. 티어 우선, 1999-00 개인 경기 기여와 리그 선발 23회, 직전 두 시즌의 지속성을 비교.",
+      "externalAuditCorrections": [
+        {
+          "field": "born",
+          "old": "1968-09-17",
+          "proposed": "1968-09-07",
+          "reason": "같은 이름·구단의 PL 시즌 선수표와 당시 경기 라인업의 생년월일이 일치한다.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/2908.json",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/2935.json"
+          ],
+          "status": "correction_required"
+        }
+      ]
     },
     {
       "id": "pl-1999-00-independent-cb-07",
@@ -2899,7 +2986,7 @@
       "nameKo": "도미닉 마테오",
       "club": "liverpool",
       "clubNameOriginal": "Liverpool FC",
-      "born": "1974-04-24",
+      "born": "1974-04-28",
       "position": "LB",
       "role": "starter",
       "season": "1999-00",
@@ -2928,7 +3015,11 @@
       ],
       "sources": [
         "https://fbref.com/en/squads/822bd0ba/1999-2000/Liverpool-Stats",
-        "https://footballsquads.co.uk/eng/1999-2000/faprem/liverpool.htm"
+        "https://footballsquads.co.uk/eng/1999-2000/faprem/liverpool.htm",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/2913.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/2928.json"
       ],
       "assessmentRationale": "리버풀 32선발, 좌측 수비·중앙 수비를 오가는 수비 자원. 주 포지션이 LB인지 최종 시즌별 라인업 점검이 필요.",
       "historicalReviewPeriod": [
@@ -2938,7 +3029,22 @@
       ],
       "historicalWeights": "1999-00 highest > 1998-99 > 1997-98",
       "rankStatus": "proposed_unapproved",
-      "rankRationale": "LB 12명 리그 전체 후보 중 3위 DRAFT. 티어 우선, 1999-00 개인 경기 기여와 리그 선발 32회, 직전 두 시즌의 지속성을 비교."
+      "rankRationale": "LB 12명 리그 전체 후보 중 3위 DRAFT. 티어 우선, 1999-00 개인 경기 기여와 리그 선발 32회, 직전 두 시즌의 지속성을 비교.",
+      "externalAuditCorrections": [
+        {
+          "field": "born",
+          "old": "1974-04-24",
+          "proposed": "1974-04-28",
+          "reason": "같은 이름·구단의 PL 시즌 선수표와 당시 경기 라인업의 생년월일이 일치한다.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/2913.json",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/2928.json"
+          ],
+          "status": "correction_required"
+        }
+      ]
     },
     {
       "id": "pl-1999-00-independent-outfield-039",
@@ -3138,52 +3244,55 @@
       "rankRationale": "RB 12명 리그 전체 후보 중 4위 DRAFT. 티어 우선, 1999-00 개인 경기 기여와 리그 선발 28회, 직전 두 시즌의 지속성을 비교."
     },
     {
-      "id": "pl-1999-00-independent-outfield-017",
-      "name": "Nelson Vivas",
-      "nameOriginal": "Nelson Vivas",
-      "nameKo": "넬손 비바스",
+      "id": "pl-1999-00-audit-proposed-arsenal-1642",
+      "name": "Oleg Luzhny",
+      "nameOriginal": "Олег Лужний",
+      "nameKo": "올레흐 루즈니",
+      "born": "1968-08-05",
       "club": "arsenal",
       "clubNameOriginal": "Arsenal FC",
-      "born": "1969-10-18",
       "position": "RB",
       "role": "backup",
-      "season": "1999-00",
-      "leagueAppearances": null,
-      "leagueStarts": 1,
-      "starts": 1,
-      "tier": "C",
-      "rank": 12,
+      "tier": "B-",
+      "rank": 11,
+      "leagueStarts": 16,
+      "starts": 16,
+      "leagueAppearances": 21,
+      "leagueGoals": 0,
+      "leagueAssists": 1,
       "review": "draft_unapproved",
-      "evaluationStatus": "individual_provisional_grade_current_season_source_previous_two_context_partial",
-      "candidateStatus": "nomination_pool_not_individually_verified",
-      "positionMajorityVerified": false,
-      "threeSeasonReview": "current_year_priority_prior_two_years_qualitative_context_recheck_pending",
-      "threeSeasonStarts": null,
-      "threeSeasonContext": null,
-      "seasonEvidenceStatus": "season_specific_stat_source_logged",
+      "season": "1999-00",
+      "sources": [
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://fbref.com/en/players/d39e96f7/",
+        "https://www.transfermarkt.com/arsenal-fc/kader/verein/11/saison_id/1999/plus/1",
+        "https://en.wikipedia.org/wiki/Oleh_Luzhnyi"
+      ],
       "evidence": [
         {
-          "url": "https://fbref.com/en/squads/18bb7c10/1999-2000/Arsenal-Stats",
-          "claim": "Squad statistics, eligibility, historical season player context or contemporary award; subject to player-level verification"
+          "url": "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "claim": "Dixon의 주전 자리를 유지하고, 오른쪽 수비수 후보를 1선발의 비바스에서 16선발의 루즈니로 교체. 넓은 수비 분류만으로 우측을 판정하지 않고 당시 선수단의 우측 수비 분류와 앞선 시즌의 역할을 함께 확인."
         },
         {
-          "url": "https://www.footballsquads.co.uk/eng/1999-2000/faprem/arsenal.htm",
-          "claim": "Squad statistics, eligibility, historical season player context or contemporary award; subject to player-level verification"
+          "url": "https://fbref.com/en/players/d39e96f7/",
+          "claim": "Dixon의 주전 자리를 유지하고, 오른쪽 수비수 후보를 1선발의 비바스에서 16선발의 루즈니로 교체. 넓은 수비 분류만으로 우측을 판정하지 않고 당시 선수단의 우측 수비 분류와 앞선 시즌의 역할을 함께 확인."
+        },
+        {
+          "url": "https://www.transfermarkt.com/arsenal-fc/kader/verein/11/saison_id/1999/plus/1",
+          "claim": "Dixon의 주전 자리를 유지하고, 오른쪽 수비수 후보를 1선발의 비바스에서 16선발의 루즈니로 교체. 넓은 수비 분류만으로 우측을 판정하지 않고 당시 선수단의 우측 수비 분류와 앞선 시즌의 역할을 함께 확인."
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Oleh_Luzhnyi",
+          "claim": "Dixon의 주전 자리를 유지하고, 오른쪽 수비수 후보를 1선발의 비바스에서 16선발의 루즈니로 교체. 넓은 수비 분류만으로 우측을 판정하지 않고 당시 선수단의 우측 수비 분류와 앞선 시즌의 역할을 함께 확인."
         }
       ],
-      "sources": [
-        "https://fbref.com/en/squads/18bb7c10/1999-2000/Arsenal-Stats",
-        "https://www.footballsquads.co.uk/eng/1999-2000/faprem/arsenal.htm"
-      ],
-      "assessmentRationale": "아스널 해당 시즌 1선발에 그쳤고 셀타 비고 임대 경력이 있어 리그 기여가 매우 제한됨. 이전 두 시즌 수비 능력 인정하되 최신 시즌 출전량이 최우선.",
-      "historicalReviewPeriod": [
-        "1997-98",
-        "1998-99",
-        "1999-00"
-      ],
-      "historicalWeights": "1999-00 highest > 1998-99 > 1997-98",
+      "positionMajorityVerified": false,
+      "candidateRationale": "Dixon의 주전 자리를 유지하고, 오른쪽 수비수 후보를 1선발의 비바스에서 16선발의 루즈니로 교체. 넓은 수비 분류만으로 우측을 판정하지 않고 당시 선수단의 우측 수비 분류와 앞선 시즌의 역할을 함께 확인.",
+      "assessmentRationale": "직전 두 시즌 Dynamo Kyiv의 우측 수비 주전으로 챔피언스리그에서 활약했다. 1999-00 PL 21경기·16선발. Dixon의 주전 자리를 유지하고, 오른쪽 수비수 후보를 1선발의 비바스에서 16선발의 루즈니로 교체. 넓은 수비 분류만으로 우측을 판정하지 않고 당시 선수단의 우측 수비 분류와 앞선 시즌의 역할을 함께 확인.",
+      "rankRationale": "Dixon의 주전 자리를 유지하고, 오른쪽 수비수 후보를 1선발의 비바스에서 16선발의 루즈니로 교체. 넓은 수비 분류만으로 우측을 판정하지 않고 당시 선수단의 우측 수비 분류와 앞선 시즌의 역할을 함께 확인.",
       "rankStatus": "proposed_unapproved",
-      "rankRationale": "RB 12명 리그 전체 후보 중 12위 DRAFT. 티어 우선, 1999-00 개인 경기 기여와 리그 선발 1회, 직전 두 시즌의 지속성을 비교."
+      "evaluationStatus": "draft_qualitative_three_season_sources_incomplete",
+      "candidateStatus": "audit_replacement_draft"
     },
     {
       "id": "pl-1999-00-independent-outfield-070",
@@ -3546,7 +3655,7 @@
       "leagueStarts": 10,
       "starts": 10,
       "tier": "B-",
-      "rank": 11,
+      "rank": 12,
       "review": "draft_unapproved",
       "evaluationStatus": "individual_provisional_grade_current_season_source_previous_two_context_partial",
       "candidateStatus": "nomination_pool_not_individually_verified",
@@ -3567,7 +3676,8 @@
       ],
       "sources": [
         "https://fbref.com/en/squads/822bd0ba/1999-2000/Liverpool-Stats",
-        "https://footballsquads.co.uk/eng/1999-2000/faprem/liverpool.htm"
+        "https://footballsquads.co.uk/eng/1999-2000/faprem/liverpool.htm",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv"
       ],
       "assessmentRationale": "리버풀 10선발, 시즌 중 신체 상태·기용 경쟁으로 출전량 감소. 직전 시즌 출전은 보조 참고.",
       "historicalReviewPeriod": [
@@ -3577,7 +3687,19 @@
       ],
       "historicalWeights": "1999-00 highest > 1998-99 > 1997-98",
       "rankStatus": "proposed_unapproved",
-      "rankRationale": "RB 12명 리그 전체 후보 중 11위 DRAFT. 티어 우선, 1999-00 개인 경기 기여와 리그 선발 10회, 직전 두 시즌의 지속성을 비교."
+      "rankRationale": "후보 교체 후 기존 상대 순서를 보존한 연동 순위 조정.",
+      "externalAuditCorrections": [
+        {
+          "field": "rank",
+          "old": 11,
+          "proposed": 12,
+          "reason": "후보 교체 후 기존 상대 순서를 보존한 연동 순위 조정.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv"
+          ],
+          "status": "reassessment_recommended"
+        }
+      ]
     },
     {
       "id": "pl-1999-00-independent-outfield-003",
@@ -5632,7 +5754,7 @@
       "nameKo": "앤디 임피",
       "club": "leicester",
       "clubNameOriginal": "Leicester City FC",
-      "born": "1971-09-13",
+      "born": "1971-09-30",
       "position": "RW",
       "role": "starter",
       "season": "1999-00",
@@ -5661,7 +5783,11 @@
       ],
       "sources": [
         "https://fbref.com/en/squads/a2d435b3/1999-2000/Leicester-City-Stats",
-        "https://footballsquads.co.uk/eng/1999-2000/faprem/leicester.htm"
+        "https://footballsquads.co.uk/eng/1999-2000/faprem/leicester.htm",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/2907.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/2922.json"
       ],
       "assessmentRationale": "레스터 28선발, 실제 3백의 오른쪽 윙백/측면 수비·진출 기여. 과거 두 시즌 경험 참고, 순수 윙어 아님.",
       "historicalReviewPeriod": [
@@ -5671,7 +5797,22 @@
       ],
       "historicalWeights": "1999-00 > 1998-99 > 1997-98",
       "rankStatus": "proposed_unapproved",
-      "rankRationale": "RW 10명 리그 전체 후보 중 5위 DRAFT. 티어 우선, 1999-00 개인 경기 기여와 리그 선발 28회, 직전 두 시즌의 지속성을 비교."
+      "rankRationale": "RW 10명 리그 전체 후보 중 5위 DRAFT. 티어 우선, 1999-00 개인 경기 기여와 리그 선발 28회, 직전 두 시즌의 지속성을 비교.",
+      "externalAuditCorrections": [
+        {
+          "field": "born",
+          "old": "1971-09-13",
+          "proposed": "1971-09-30",
+          "reason": "같은 이름·구단의 PL 시즌 선수표와 당시 경기 라인업의 생년월일이 일치한다.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/2907.json",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/2922.json"
+          ],
+          "status": "correction_required"
+        }
+      ]
     },
     {
       "id": "pl-1999-00-independent-outfield-046",
@@ -5833,7 +5974,7 @@
       "nameKo": "데니스 베르캄프",
       "club": "arsenal",
       "clubNameOriginal": "Arsenal FC",
-      "born": "1969-05-18",
+      "born": "1969-05-10",
       "position": "ST",
       "role": "backup",
       "season": "1999-00",
@@ -5862,7 +6003,11 @@
       ],
       "sources": [
         "https://fbref.com/en/squads/18bb7c10/1999-2000/Arsenal-Stats",
-        "https://www.footballsquads.co.uk/eng/1999-2000/faprem/arsenal.htm"
+        "https://www.footballsquads.co.uk/eng/1999-2000/faprem/arsenal.htm",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/2907.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/2918.json"
       ],
       "assessmentRationale": "아스널 23선발·6골, 투톱에서 연계·창조성으로 핵심 역할. 전 두 시즌 높은 찬스 메이킹 수준, 당해 선발 경쟁 심화 고려.",
       "historicalReviewPeriod": [
@@ -5872,7 +6017,22 @@
       ],
       "historicalWeights": "1999-00 > 1998-99 > 1997-98",
       "rankStatus": "proposed_unapproved",
-      "rankRationale": "ST 총 24명 잠정 8위; 티어, 1999-00 개인 득점 영향, 23선발과 앞선 두 시즌 지속성 비교."
+      "rankRationale": "ST 총 24명 잠정 8위; 티어, 1999-00 개인 득점 영향, 23선발과 앞선 두 시즌 지속성 비교.",
+      "externalAuditCorrections": [
+        {
+          "field": "born",
+          "old": "1969-05-18",
+          "proposed": "1969-05-10",
+          "reason": "같은 이름·구단의 PL 시즌 선수표와 당시 경기 라인업의 생년월일이 일치한다.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/2907.json",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/2918.json"
+          ],
+          "status": "correction_required"
+        }
+      ]
     },
     {
       "id": "pl-1999-00-independent-outfield-024",
@@ -5977,7 +6137,7 @@
       "nameKo": "베니토 카르보네",
       "club": "astonvilla",
       "clubNameOriginal": "Aston Villa FC",
-      "born": "1971-05-14",
+      "born": "1971-08-14",
       "position": "ST",
       "role": "backup",
       "season": "1999-00",
@@ -6006,7 +6166,11 @@
       ],
       "sources": [
         "https://fbref.com/en/squads/8602292d/1999-2000/Aston-Villa-Stats",
-        "https://www.footballsquads.co.uk/eng/1999-2000/faprem/avilla.htm"
+        "https://www.footballsquads.co.uk/eng/1999-2000/faprem/avilla.htm",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/3013.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/3028.json"
       ],
       "assessmentRationale": "애스턴 빌라 22선발, 뒤에서 연계와 기회 창출. 전 두 시즌 셰필드 웬즈데이 주전 기여와 현재 변화 반영.",
       "historicalReviewPeriod": [
@@ -6016,7 +6180,22 @@
       ],
       "historicalWeights": "1999-00 > 1998-99 > 1997-98",
       "rankStatus": "proposed_unapproved",
-      "rankRationale": "ST 총 24명 잠정 18위; 티어, 1999-00 개인 득점 영향, 22선발과 앞선 두 시즌 지속성 비교."
+      "rankRationale": "ST 총 24명 잠정 18위; 티어, 1999-00 개인 득점 영향, 22선발과 앞선 두 시즌 지속성 비교.",
+      "externalAuditCorrections": [
+        {
+          "field": "born",
+          "old": "1971-05-14",
+          "proposed": "1971-08-14",
+          "reason": "같은 이름·구단의 PL 시즌 선수표와 당시 경기 라인업의 생년월일이 일치한다.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/3013.json",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/3028.json"
+          ],
+          "status": "correction_required"
+        }
+      ]
     },
     {
       "id": "pl-1999-00-independent-outfield-076",

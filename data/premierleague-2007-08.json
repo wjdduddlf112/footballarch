@@ -87,10 +87,10 @@
     "bestXiReview": {
       "status": "proposed_unapproved",
       "formation": "4-4-2",
-      "basis": "Individual best XI prioritized over rigid tactical slot identity. 2007-08 contemporary PFA Premier League XI used as independent cross-check; both Steven Gerrard (actual CAM) and Cesc Fàbregas (actual CM) are included as 4-4-2 field CMs.",
-      "mappingPolicy": "bestXi.position indicates 4-4-2 FIELD SLOT and bestXi.displayPosition labels tactical display; players[].position remains season primary playing position. CAM -> CM allowed for XI. DM position field used for second tactical central-midfield slot but displayPosition CM.",
+      "basis": "기존 4-4-2 포지션 슬롯과 선수 등록이 어긋난다. Fàbregas를 CM으로 이동, 기존 DM 1위 Flamini를 편입하고 CAM Gerrard는 명단에서 제외한다. 기존 9자리 유지.",
+      "mappingPolicy": "Revised Best XI slots match registered season positions.",
       "source": "https://www.uefa.com/news-media/news/01cc-0e6f54e2f9d2-92ba0828a91e-1000--ronaldo-receives-english-acclaim/",
-      "validation": "all selected players unique, field XI 11, display midfield CM+CM; exact XI matches 2007-08 PFA published squad. Positional rank leaderboard stays on actual-position basis, not forced to equal field position."
+      "validation": "11 unique registered player IDs; revised slots match registered positions; historical assessment provisional."
     },
     "auditWarnings": [
       "Single-season player selection newly researched, manual DOB assignments and role selections require 2-source per-person DOB/position corroboration.",
@@ -103,7 +103,20 @@
       "Eligibility audit removed zero-PL-start GK Charles Itandje, removed marginal Liverpool Jermaine Pennant in favor of Yossi Benayoun (30 apps, 15 starts), Spurs Ledley King (4 league starts) in favor of Younes Kaboul 19, Aston Villa Patrick Berger (0 starts) excluded; Maloney to LW backup, CB high-start nominees promoted.",
       "2007-08 starts & appearances differentiated. One-season-only Statbunker (7 clubs + Spurs), Everton Encyclopedia and FBref Manchester City used; note source definitions for some goal-assignment discrepancies. Official/PremierLeague/11v11 cross-check preferentially used for disputed goals.",
       "Best XI history audit: sourced 14 previously absent/uncorroborated 2005-06 or 2006-07 domestic-league individual season rows at FBref for David James Vidic Clichy Sagna Ashley Young Torres Gerrard; overseas league records distinguish Ligue1/LaLiga from English PL, and Watford 2005-06 Championship is not PL."
-    ]
+    ],
+    "externalAudit20261126": {
+      "baseCommit": "078c124cc365fab971be8263e2cbcacce5999719",
+      "report": "audit/PL_2004_2008_EXTERNAL_REVIEW_APPLIED_2026-11-26.json",
+      "status": "draft_unapproved",
+      "players": 170,
+      "facts": 9,
+      "ranks": 4,
+      "tiers": 0,
+      "replacements": 1,
+      "xi": true,
+      "held": 2,
+      "note": "Structured corrected values supersede conflicting legacy text. Detailed positions, qualitative tiers and formation frequency not finally verified."
+    }
   },
   "clubs": [
     {
@@ -889,7 +902,12 @@
       "sources": [
         "https://www.footballsquads.co.uk/eng/2007-2008/faprem/manutd.htm",
         "https://fbref.com/en/comps/9/2007-2008/stats/2007-2008-Premier-League-Stats",
-        "https://blog.statbunker.com/competitions/SeasonAppearances?club_id=3&comp_id=200"
+        "https://blog.statbunker.com/competitions/SeasonAppearances?club_id=3&comp_id=200",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6025.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6035.json",
+        "https://fbref.com/en/squads/19538871/2007-2008/roster/Manchester-United-Roster-Details"
       ],
       "review": "draft_unapproved",
       "positionMajorityVerified": false,
@@ -913,9 +931,25 @@
       "evaluationStatus": "draft_qualitative_three_season_sources_incomplete",
       "rankStatus": "proposed_unapproved",
       "rankRationale": "2007-08 CB 전체 27 후보 중 DRAFT 27위. 포지션 개별 순위는 선수의 그 시즌 실제 주 위치를 기준으로 매기며 Best XI의 전술적 슬롯 이동과 무관하다.",
-      "leagueAppearances": 8,
+      "leagueAppearances": 9,
       "evidenceNotes": [
         "2007-08 Premier League 8 apps, 5 starts, 0 goals; verified against season-only team table. Not a match-by-match position proof."
+      ],
+      "externalAuditCorrections": [
+        {
+          "field": "leagueAppearances",
+          "old": 8,
+          "proposed": 9,
+          "reason": "같은 구단·같은 PL 시즌의 경기 단위 집계와 시즌 선수표의 수치가 일치한다.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6025.json",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6035.json",
+            "https://fbref.com/en/squads/19538871/2007-2008/roster/Manchester-United-Roster-Details"
+          ],
+          "status": "correction_required"
+        }
       ]
     },
     {
@@ -1330,7 +1364,11 @@
       "sources": [
         "https://www.footballsquads.co.uk/eng/2007-2008/faprem/manutd.htm",
         "https://fbref.com/en/comps/9/2007-2008/stats/2007-2008-Premier-League-Stats",
-        "https://blog.statbunker.com/competitions/SeasonAppearances?club_id=3&comp_id=200"
+        "https://blog.statbunker.com/competitions/SeasonAppearances?club_id=3&comp_id=200",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5255.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5327.json"
       ],
       "review": "draft_unapproved",
       "positionMajorityVerified": false,
@@ -1341,8 +1379,9 @@
         "2005-06": {
           "club": "manutd",
           "leagueStarts": 22,
-          "leagueGoals": 2,
-          "status": "previous_season_archived_DRAFT_not_source_double_checked"
+          "leagueGoals": 3,
+          "status": "previous_season_archived_DRAFT_not_source_double_checked",
+          "auditStatus": "specific_field_corrected_2026_11_26_other_fields_not_reverified"
         },
         "2006-07": {
           "club": "manutd",
@@ -1357,6 +1396,21 @@
       "leagueAppearances": 31,
       "evidenceNotes": [
         "2007-08 Premier League 31 apps, 26 starts, 3 goals; verified against season-only team table. Not a match-by-match position proof."
+      ],
+      "externalAuditCorrections": [
+        {
+          "field": "previousSeasons.2005-06.leagueGoals",
+          "old": 2,
+          "proposed": 3,
+          "reason": "2005-06 Manchester United PL의 원출전 기록을 대조. 현재 시즌 보관 파일에 들어간 직전 시즌 수치.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5255.json",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5327.json"
+          ],
+          "status": "correction_required"
+        }
       ]
     },
     {
@@ -1620,7 +1674,7 @@
       "position": "ST",
       "role": "backup",
       "tier": "B+",
-      "rank": 14,
+      "rank": 15,
       "starts": 6,
       "leagueStarts": 6,
       "leagueGoals": 5,
@@ -1628,7 +1682,8 @@
       "sources": [
         "https://www.footballsquads.co.uk/eng/2007-2008/faprem/manutd.htm",
         "https://fbref.com/en/comps/9/2007-2008/stats/2007-2008-Premier-League-Stats",
-        "https://blog.statbunker.com/competitions/SeasonAppearances?club_id=3&comp_id=200"
+        "https://blog.statbunker.com/competitions/SeasonAppearances?club_id=3&comp_id=200",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv"
       ],
       "review": "draft_unapproved",
       "positionMajorityVerified": false,
@@ -1651,10 +1706,22 @@
       },
       "evaluationStatus": "draft_qualitative_three_season_sources_incomplete",
       "rankStatus": "proposed_unapproved",
-      "rankRationale": "2007-08 ST 전체 25 후보 중 DRAFT 14위. 포지션 개별 순위는 선수의 그 시즌 실제 주 위치를 기준으로 매기며 Best XI의 전술적 슬롯 이동과 무관하다.",
+      "rankRationale": "후보 교체 후 기존 상대 순서를 보존한 연동 순위 조정.",
       "leagueAppearances": 17,
       "evidenceNotes": [
         "2007-08 Premier League 17 apps, 6 starts, 5 goals; verified against season-only team table. Not a match-by-match position proof."
+      ],
+      "externalAuditCorrections": [
+        {
+          "field": "rank",
+          "old": 14,
+          "proposed": 15,
+          "reason": "후보 교체 후 기존 상대 순서를 보존한 연동 순위 조정.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv"
+          ],
+          "status": "reassessment_recommended"
+        }
       ]
     },
     {
@@ -2465,7 +2532,11 @@
         "https://www.footballsquads.co.uk/eng/2007-2008/faprem/chelsea.htm",
         "https://fbref.com/en/comps/9/2007-2008/stats/2007-2008-Premier-League-Stats",
         "https://www.11v11.com/competitions/premier-league/2008/goal-scorers/",
-        "https://www.statbunker.com/competitions/SeasonAppearances?club_id=8&comp_id=200"
+        "https://www.statbunker.com/competitions/SeasonAppearances?club_id=8&comp_id=200",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5213.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5217.json"
       ],
       "review": "draft_unapproved",
       "positionMajorityVerified": false,
@@ -2476,8 +2547,9 @@
         "2005-06": {
           "club": "chelsea",
           "leagueStarts": 26,
-          "leagueGoals": 8,
-          "status": "previous_season_archived_DRAFT_not_source_double_checked"
+          "leagueGoals": 7,
+          "status": "previous_season_archived_DRAFT_not_source_double_checked",
+          "auditStatus": "specific_field_corrected_2026_11_26_other_fields_not_reverified"
         },
         "2006-07": {
           "club": "chelsea",
@@ -2492,6 +2564,21 @@
       "leagueAppearances": 33,
       "evidenceNotes": [
         "2007-08 Premier League 33 apps, 28 starts, 7 goals; verified against season-only team table. Not a match-by-match position proof."
+      ],
+      "externalAuditCorrections": [
+        {
+          "field": "previousSeasons.2005-06.leagueGoals",
+          "old": 8,
+          "proposed": 7,
+          "reason": "2005-06 Chelsea PL의 원출전 기록을 대조. 현재 시즌 보관 파일에 들어간 직전 시즌 수치.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5213.json",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5217.json"
+          ],
+          "status": "correction_required"
+        }
       ]
     },
     {
@@ -2605,7 +2692,7 @@
       "position": "ST",
       "role": "backup",
       "tier": "B+",
-      "rank": 16,
+      "rank": 17,
       "starts": 10,
       "leagueStarts": 10,
       "leagueGoals": 1,
@@ -2613,7 +2700,8 @@
       "sources": [
         "https://www.footballsquads.co.uk/eng/2007-2008/faprem/chelsea.htm",
         "https://fbref.com/en/comps/9/2007-2008/stats/2007-2008-Premier-League-Stats",
-        "https://www.statbunker.com/competitions/SeasonAppearances?club_id=8&comp_id=200"
+        "https://www.statbunker.com/competitions/SeasonAppearances?club_id=8&comp_id=200",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv"
       ],
       "review": "draft_unapproved",
       "positionMajorityVerified": false,
@@ -2636,10 +2724,22 @@
       },
       "evaluationStatus": "draft_qualitative_three_season_sources_incomplete",
       "rankStatus": "proposed_unapproved",
-      "rankRationale": "2007-08 ST 전체 25 후보 중 DRAFT 16위. 포지션 개별 순위는 선수의 그 시즌 실제 주 위치를 기준으로 매기며 Best XI의 전술적 슬롯 이동과 무관하다.",
+      "rankRationale": "후보 교체 후 기존 상대 순서를 보존한 연동 순위 조정.",
       "leagueAppearances": 14,
       "evidenceNotes": [
         "2007-08 Premier League 14 apps, 10 starts, 1 goals; verified against season-only team table. Not a match-by-match position proof."
+      ],
+      "externalAuditCorrections": [
+        {
+          "field": "rank",
+          "old": 16,
+          "proposed": 17,
+          "reason": "후보 교체 후 기존 상대 순서를 보존한 연동 순위 조정.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv"
+          ],
+          "status": "reassessment_recommended"
+        }
       ]
     },
     {
@@ -3605,7 +3705,7 @@
       "position": "ST",
       "role": "backup",
       "tier": "B+",
-      "rank": 15,
+      "rank": 16,
       "starts": 7,
       "leagueStarts": 7,
       "leagueGoals": 5,
@@ -3613,7 +3713,8 @@
       "sources": [
         "https://www.footballsquads.co.uk/eng/2007-2008/faprem/arsenal.htm",
         "https://fbref.com/en/comps/9/2007-2008/stats/2007-2008-Premier-League-Stats",
-        "https://www.statbunker.com/competitions/SeasonAppearances?club_id=5&comp_id=200"
+        "https://www.statbunker.com/competitions/SeasonAppearances?club_id=5&comp_id=200",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv"
       ],
       "review": "draft_unapproved",
       "positionMajorityVerified": false,
@@ -3636,10 +3737,22 @@
       },
       "evaluationStatus": "draft_qualitative_three_season_sources_incomplete",
       "rankStatus": "proposed_unapproved",
-      "rankRationale": "2007-08 ST 전체 25 후보 중 DRAFT 15위. 포지션 개별 순위는 선수의 그 시즌 실제 주 위치를 기준으로 매기며 Best XI의 전술적 슬롯 이동과 무관하다.",
+      "rankRationale": "후보 교체 후 기존 상대 순서를 보존한 연동 순위 조정.",
       "leagueAppearances": 27,
       "evidenceNotes": [
         "2007-08 Premier League 27 apps, 7 starts, 5 goals; verified against season-only team table. Not a match-by-match position proof."
+      ],
+      "externalAuditCorrections": [
+        {
+          "field": "rank",
+          "old": 15,
+          "proposed": 16,
+          "reason": "후보 교체 후 기존 상대 순서를 보존한 연동 순위 조정.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv"
+          ],
+          "status": "reassessment_recommended"
+        }
       ]
     },
     {
@@ -4458,7 +4571,7 @@
       "position": "ST",
       "role": "backup",
       "tier": "B+",
-      "rank": 17,
+      "rank": 18,
       "starts": 9,
       "leagueStarts": 9,
       "leagueGoals": 5,
@@ -4466,7 +4579,8 @@
       "sources": [
         "https://www.footballsquads.co.uk/eng/2007-2008/faprem/liverpool.htm",
         "https://fbref.com/en/comps/9/2007-2008/stats/2007-2008-Premier-League-Stats",
-        "https://www.statbunker.com/competitions/SeasonAppearances?club_id=4&comp_id=200"
+        "https://www.statbunker.com/competitions/SeasonAppearances?club_id=4&comp_id=200",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv"
       ],
       "review": "draft_unapproved",
       "positionMajorityVerified": false,
@@ -4489,10 +4603,22 @@
       },
       "evaluationStatus": "draft_qualitative_three_season_sources_incomplete",
       "rankStatus": "proposed_unapproved",
-      "rankRationale": "2007-08 ST 전체 25 후보 중 DRAFT 17위. 포지션 개별 순위는 선수의 그 시즌 실제 주 위치를 기준으로 매기며 Best XI의 전술적 슬롯 이동과 무관하다.",
+      "rankRationale": "후보 교체 후 기존 상대 순서를 보존한 연동 순위 조정.",
       "leagueAppearances": 21,
       "evidenceNotes": [
         "2007-08 Premier League 21 apps, 9 starts, 5 goals; verified against season-only team table. Not a match-by-match position proof."
+      ],
+      "externalAuditCorrections": [
+        {
+          "field": "rank",
+          "old": 17,
+          "proposed": 18,
+          "reason": "후보 교체 후 기존 상대 순서를 보존한 연동 순위 조정.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv"
+          ],
+          "status": "reassessment_recommended"
+        }
       ]
     },
     {
@@ -4854,14 +4980,19 @@
       "role": "backup",
       "tier": "B+",
       "rank": 6,
-      "starts": 17,
-      "leagueStarts": 17,
+      "starts": 13,
+      "leagueStarts": 13,
       "leagueGoals": 0,
       "leagueAssists": null,
       "sources": [
         "https://www.footballsquads.co.uk/eng/2007-2008/faprem/everton.htm",
         "https://fbref.com/en/comps/9/2007-2008/stats/2007-2008-Premier-League-Stats",
-        "https://www.evertonencyclopedia.com/season/2007-2008/"
+        "https://www.evertonencyclopedia.com/season/2007-2008/",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5979.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5984.json",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://www.premierleague.com/en/news/61438"
       ],
       "review": "draft_unapproved",
       "positionMajorityVerified": false,
@@ -4885,9 +5016,37 @@
       "evaluationStatus": "draft_qualitative_three_season_sources_incomplete",
       "rankStatus": "proposed_unapproved",
       "rankRationale": "2007-08 LB 전체 15 후보 중 DRAFT 6위. 포지션 개별 순위는 선수의 그 시즌 실제 주 위치를 기준으로 매기며 Best XI의 전술적 슬롯 이동과 무관하다.",
-      "leagueAppearances": 29,
+      "leagueAppearances": 22,
       "evidenceNotes": [
         "2007-08 Premier League 29 apps, 17 starts, 0 goals; verified against season-only team table. Not a match-by-match position proof."
+      ],
+      "externalAuditCorrections": [
+        {
+          "field": "leagueStarts",
+          "old": 17,
+          "proposed": 13,
+          "reason": "선발 라인업 집계에서 값 확인. 소속 구단의 PL 경기만 집계.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5979.json",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5984.json"
+          ],
+          "status": "correction_required"
+        },
+        {
+          "field": "leagueAppearances",
+          "old": 29,
+          "proposed": 22,
+          "reason": "같은 구단·같은 PL 시즌의 경기 단위 집계와 시즌 선수표의 수치가 일치한다.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5979.json",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5984.json",
+            "https://www.premierleague.com/en/news/61438"
+          ],
+          "status": "correction_required"
+        }
       ]
     },
     {
@@ -4910,7 +5069,11 @@
       "sources": [
         "https://www.footballsquads.co.uk/eng/2007-2008/faprem/everton.htm",
         "https://fbref.com/en/comps/9/2007-2008/stats/2007-2008-Premier-League-Stats",
-        "https://www.evertonencyclopedia.com/season/2007-2008/"
+        "https://www.evertonencyclopedia.com/season/2007-2008/",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5569.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5580.json"
       ],
       "review": "draft_unapproved",
       "positionMajorityVerified": false,
@@ -4927,8 +5090,9 @@
         "2006-07": {
           "club": "everton",
           "leagueStarts": 35,
-          "leagueGoals": 0,
-          "status": "previous_season_archived_DRAFT_not_source_double_checked"
+          "leagueGoals": 1,
+          "status": "previous_season_archived_DRAFT_not_source_double_checked",
+          "auditStatus": "specific_field_corrected_2026_11_26_other_fields_not_reverified"
         }
       },
       "evaluationStatus": "draft_qualitative_three_season_sources_incomplete",
@@ -4937,6 +5101,21 @@
       "leagueAppearances": 37,
       "evidenceNotes": [
         "2007-08 Premier League 37 apps, 37 starts, 2 goals; verified against season-only team table. Not a match-by-match position proof."
+      ],
+      "externalAuditCorrections": [
+        {
+          "field": "previousSeasons.2006-07.leagueGoals",
+          "old": 0,
+          "proposed": 1,
+          "reason": "2006-07 Everton PL의 원출전 기록을 대조. 현재 시즌 보관 파일에 들어간 직전 시즌 수치.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5569.json",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5580.json"
+          ],
+          "status": "correction_required"
+        }
       ]
     },
     {
@@ -5333,53 +5512,60 @@
       ]
     },
     {
-      "id": "pl-2007-08-everton-17",
-      "name": "Victor Anichebe",
-      "nameOriginal": "Victor Anichebe",
-      "nameKo": "빅터 아니체베",
-      "born": "1988-04-23",
+      "id": "pl-2007-08-audit-proposed-everton-1195",
+      "name": "Andrew Johnson",
+      "nameOriginal": "Andrew Johnson",
+      "nameKo": "앤드루 존슨",
+      "born": "1981-02-10",
       "club": "everton",
       "clubNameOriginal": "Everton FC",
-      "season": "2007-08",
       "position": "ST",
       "role": "backup",
-      "tier": "B",
-      "rank": 18,
-      "starts": 10,
-      "leagueStarts": 10,
-      "leagueGoals": 1,
-      "leagueAssists": null,
-      "sources": [
-        "https://www.footballsquads.co.uk/eng/2007-2008/faprem/everton.htm",
-        "https://fbref.com/en/comps/9/2007-2008/stats/2007-2008-Premier-League-Stats",
-        "https://www.evertonencyclopedia.com/season/2007-2008/"
-      ],
+      "tier": "B+",
+      "rank": 14,
+      "leagueStarts": 20,
+      "starts": 20,
+      "leagueAppearances": 29,
+      "leagueGoals": 6,
+      "leagueAssists": 4,
       "review": "draft_unapproved",
-      "positionMajorityVerified": false,
-      "statVerification": "single_season_2007_08_league_only_everton_statbunker_or_EvertonEncyclopedia_FBref",
-      "candidateRationale": "2007-08 Everton FC 시즌 등록·출전 명단 기반 신규 선정. 당시 4-4-1-1 / 4-5-1 전술 고려. ST 최다 출전 포지션은 개별 경기 검증 전 잠정 배치.",
-      "assessmentRationale": "2007-08 개인 활약을 최우선, 2006-07 및 2005-06 낮은 가중치로 평가한 ST B 잠정 티어. 구단 리그 순위 자동 가점 없음. 출전·득점 미확증시 값 null 유지.",
-      "previousSeasons": {
-        "2005-06": {
-          "club": null,
-          "leagueStarts": null,
-          "leagueGoals": null,
-          "status": "historical_club_or_country_data_missing"
+      "season": "2007-08",
+      "sources": [
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://fbref.com/en/squads/d3fd31cc/2007-2008/Everton-Stats",
+        "https://fbref.com/en/players/facd1b3e/",
+        "https://www.evertonencyclopedia.com/season/2007-2008/",
+        "https://www.evertonresults.com/match08122007.html"
+      ],
+      "evidence": [
+        {
+          "url": "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "claim": "Yakubu 주전 유지. 같은 스트라이커 후보 슬롯에서 Johnson이 Anichebe보다 10선발과 5골 앞섰다. 최근 리그 공헌과 직전 시즌 주전 이력을 합쳐 B+ 내 14위 제안."
         },
-        "2006-07": {
-          "club": "everton",
-          "leagueStarts": 5,
-          "leagueGoals": 3,
-          "status": "previous_season_archived_DRAFT_not_source_double_checked"
+        {
+          "url": "https://fbref.com/en/squads/d3fd31cc/2007-2008/Everton-Stats",
+          "claim": "Yakubu 주전 유지. 같은 스트라이커 후보 슬롯에서 Johnson이 Anichebe보다 10선발과 5골 앞섰다. 최근 리그 공헌과 직전 시즌 주전 이력을 합쳐 B+ 내 14위 제안."
+        },
+        {
+          "url": "https://fbref.com/en/players/facd1b3e/",
+          "claim": "Yakubu 주전 유지. 같은 스트라이커 후보 슬롯에서 Johnson이 Anichebe보다 10선발과 5골 앞섰다. 최근 리그 공헌과 직전 시즌 주전 이력을 합쳐 B+ 내 14위 제안."
+        },
+        {
+          "url": "https://www.evertonencyclopedia.com/season/2007-2008/",
+          "claim": "Yakubu 주전 유지. 같은 스트라이커 후보 슬롯에서 Johnson이 Anichebe보다 10선발과 5골 앞섰다. 최근 리그 공헌과 직전 시즌 주전 이력을 합쳐 B+ 내 14위 제안."
+        },
+        {
+          "url": "https://www.evertonresults.com/match08122007.html",
+          "claim": "Yakubu 주전 유지. 같은 스트라이커 후보 슬롯에서 Johnson이 Anichebe보다 10선발과 5골 앞섰다. 최근 리그 공헌과 직전 시즌 주전 이력을 합쳐 B+ 내 14위 제안."
         }
-      },
-      "evaluationStatus": "draft_qualitative_three_season_sources_incomplete",
+      ],
+      "positionMajorityVerified": false,
+      "candidateRationale": "Yakubu 주전 유지. 같은 스트라이커 후보 슬롯에서 Johnson이 Anichebe보다 10선발과 5골 앞섰다. 최근 리그 공헌과 직전 시즌 주전 이력을 합쳐 B+ 내 14위 제안.",
+      "assessmentRationale": "2005-06 Crystal Palace 2부 30선발·15골, 2006-07 Everton PL 32선발·11골, 2007-08 Everton PL 20선발·6골·4도움. Yakubu 주전 유지. 같은 스트라이커 후보 슬롯에서 Johnson이 Anichebe보다 10선발과 5골 앞섰다. 최근 리그 공헌과 직전 시즌 주전 이력을 합쳐 B+ 내 14위 제안.",
+      "rankRationale": "Yakubu 주전 유지. 같은 스트라이커 후보 슬롯에서 Johnson이 Anichebe보다 10선발과 5골 앞섰다. 최근 리그 공헌과 직전 시즌 주전 이력을 합쳐 B+ 내 14위 제안.",
       "rankStatus": "proposed_unapproved",
-      "rankRationale": "2007-08 ST 전체 25 후보 중 DRAFT 18위. 포지션 개별 순위는 선수의 그 시즌 실제 주 위치를 기준으로 매기며 Best XI의 전술적 슬롯 이동과 무관하다.",
-      "leagueAppearances": 27,
-      "evidenceNotes": [
-        "2007-08 Premier League 27 apps, 10 starts, 1 goals; verified against season-only team table. Not a match-by-match position proof."
-      ]
+      "evaluationStatus": "draft_qualitative_three_season_sources_incomplete",
+      "candidateStatus": "audit_replacement_draft"
     },
     {
       "id": "pl-2007-08-astonvilla-01",
@@ -8866,7 +9052,11 @@
       "sources": [
         "https://www.footballsquads.co.uk/eng/2007-2008/faprem/tottenha.htm",
         "https://fbref.com/en/comps/9/2007-2008/stats/2007-2008-Premier-League-Stats",
-        "https://www.statbunker.com/competitions/SeasonAppearances?club_id=19&comp_id=200"
+        "https://www.statbunker.com/competitions/SeasonAppearances?club_id=19&comp_id=200",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5568.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5577.json"
       ],
       "review": "draft_unapproved",
       "positionMajorityVerified": false,
@@ -8883,8 +9073,9 @@
         "2006-07": {
           "club": "tottenham",
           "leagueStarts": 22,
-          "leagueGoals": 2,
-          "status": "previous_season_archived_DRAFT_not_source_double_checked"
+          "leagueGoals": 3,
+          "status": "previous_season_archived_DRAFT_not_source_double_checked",
+          "auditStatus": "specific_field_corrected_2026_11_26_other_fields_not_reverified"
         }
       },
       "evaluationStatus": "draft_qualitative_three_season_sources_incomplete",
@@ -8893,6 +9084,21 @@
       "leagueAppearances": 29,
       "evidenceNotes": [
         "2007-08 Premier League 29 apps, 25 starts, 2 goals; verified against season-only team table. Not a match-by-match position proof."
+      ],
+      "externalAuditCorrections": [
+        {
+          "field": "previousSeasons.2006-07.leagueGoals",
+          "old": 2,
+          "proposed": 3,
+          "reason": "2006-07 Tottenham Hotspur PL의 원출전 기록을 대조. 현재 시즌 보관 파일에 들어간 직전 시즌 수치.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5568.json",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5577.json"
+          ],
+          "status": "correction_required"
+        }
       ]
     },
     {
@@ -8911,13 +9117,17 @@
       "starts": 33,
       "leagueStarts": 33,
       "leagueGoals": 15,
-      "leagueAssists": 10,
+      "leagueAssists": 9,
       "sources": [
         "https://www.footballsquads.co.uk/eng/2007-2008/faprem/tottenha.htm",
         "https://fbref.com/en/comps/9/2007-2008/stats/2007-2008-Premier-League-Stats",
         "https://www.11v11.com/competitions/premier-league/2008/goal-scorers/",
         "https://www.besoccer.com/competition/rankings/premier_league/2008/assists",
-        "https://www.statbunker.com/competitions/SeasonAppearances?club_id=19&comp_id=200"
+        "https://www.statbunker.com/competitions/SeasonAppearances?club_id=19&comp_id=200",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5952.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5957.json"
       ],
       "review": "draft_unapproved",
       "positionMajorityVerified": false,
@@ -8944,6 +9154,21 @@
       "leagueAppearances": 36,
       "evidenceNotes": [
         "2007-08 Premier League 36 apps, 33 starts, 15 goals; verified against season-only team table. Not a match-by-match position proof."
+      ],
+      "externalAuditCorrections": [
+        {
+          "field": "leagueAssists",
+          "old": 10,
+          "proposed": 9,
+          "reason": "같은 구단·같은 PL 시즌의 경기 단위 집계와 시즌 선수표의 수치가 일치한다. PL 원천의 도움 집계 기준을 적용할 때의 수정값이다.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5952.json",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5957.json"
+          ],
+          "status": "correction_required"
+        }
       ]
     },
     {
@@ -8967,7 +9192,11 @@
         "https://www.footballsquads.co.uk/eng/2007-2008/faprem/tottenha.htm",
         "https://fbref.com/en/comps/9/2007-2008/stats/2007-2008-Premier-League-Stats",
         "https://www.11v11.com/competitions/premier-league/2008/goal-scorers/",
-        "https://www.statbunker.com/competitions/SeasonAppearances?club_id=19&comp_id=200"
+        "https://www.statbunker.com/competitions/SeasonAppearances?club_id=19&comp_id=200",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5577.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5589.json"
       ],
       "review": "draft_unapproved",
       "positionMajorityVerified": false,
@@ -8983,9 +9212,10 @@
         },
         "2006-07": {
           "club": "tottenham",
-          "leagueStarts": 19,
+          "leagueStarts": 18,
           "leagueGoals": 11,
-          "status": "previous_season_archived_DRAFT_not_source_double_checked"
+          "status": "previous_season_archived_DRAFT_not_source_double_checked",
+          "auditStatus": "specific_field_corrected_2026_11_26_other_fields_not_reverified"
         }
       },
       "evaluationStatus": "draft_qualitative_three_season_sources_incomplete",
@@ -8994,6 +9224,21 @@
       "leagueAppearances": 36,
       "evidenceNotes": [
         "2007-08 Premier League 36 apps, 32 starts, 15 goals; verified against season-only team table. Not a match-by-match position proof."
+      ],
+      "externalAuditCorrections": [
+        {
+          "field": "previousSeasons.2006-07.leagueStarts",
+          "old": 19,
+          "proposed": 18,
+          "reason": "2006-07 Tottenham Hotspur PL의 원출전 기록을 대조. 현재 시즌 보관 파일에 들어간 직전 시즌 수치.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5577.json",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5589.json"
+          ],
+          "status": "correction_required"
+        }
       ]
     },
     {
@@ -9140,17 +9385,13 @@
     },
     {
       "position": "DM",
-      "playerId": "pl-2007-08-arsenal-11",
-      "displayPosition": "CM",
-      "actualPosition": "CM",
-      "reason": "2007-08 PFA 공식 XI 중앙 미드필더. 7골·17도움(해당 출처 기준), PFA 올해의 영플레이어. 4-4-2 필드 두 CM 중 왼쪽 CM 배치, 선수 등록 포지션 CM 유지."
+      "playerId": "pl-2007-08-arsenal-09",
+      "reason": "기존 4-4-2 포지션 슬롯과 선수 등록이 어긋난다. Fàbregas를 CM으로 이동, 기존 DM 1위 Flamini를 편입하고 CAM Gerrard는 명단에서 제외한다. 기존 9자리 유지."
     },
     {
       "position": "CM",
-      "playerId": "pl-2007-08-liverpool-13",
-      "displayPosition": "CM",
-      "actualPosition": "CAM",
-      "reason": "2007-08 PFA 공식 XI 중앙 미드필더, 34리그 경기·11골·9도움, 토레스 뒤 CAM 활용. Best XI에서는 4-4-2의 CM 슬롯, 선수 고유 포지션 CAM 유지."
+      "playerId": "pl-2007-08-arsenal-11",
+      "reason": "기존 4-4-2 포지션 슬롯과 선수 등록이 어긋난다. Fàbregas를 CM으로 이동, 기존 DM 1위 Flamini를 편입하고 CAM Gerrard는 명단에서 제외한다. 기존 9자리 유지."
     }
   ]
 }

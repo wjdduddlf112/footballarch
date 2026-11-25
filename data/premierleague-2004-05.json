@@ -76,7 +76,20 @@
       "Past two-year league starts unavailable for some historic transfers/non-selected club records; these remain null.",
       "Birth dates taken from season squad sources and supplementary player biographies where conflicts identified; full independent 2-source DOB audit pending.",
       "No Node CLI or real GitHub Pages browser audit in this connector task; data/standing preserved."
-    ]
+    ],
+    "externalAudit20261126": {
+      "baseCommit": "078c124cc365fab971be8263e2cbcacce5999719",
+      "report": "audit/PL_2004_2008_EXTERNAL_REVIEW_APPLIED_2026-11-26.json",
+      "status": "draft_unapproved",
+      "players": 150,
+      "facts": 17,
+      "ranks": 0,
+      "tiers": 0,
+      "replacements": 0,
+      "xi": false,
+      "held": 0,
+      "note": "Structured corrected values supersede conflicting legacy text. Detailed positions, qualitative tiers and formation frequency not finally verified."
+    }
   },
   "clubs": [
     {
@@ -1984,7 +1997,7 @@
       "name": "Robert Pirès",
       "nameKo": "로베르 피레스",
       "nameOriginal": "Robert Pirès",
-      "born": "1973-01-29",
+      "born": "1973-10-29",
       "club": "arsenal",
       "clubNameOriginal": "Arsenal FC",
       "season": "2004-05",
@@ -1998,7 +2011,11 @@
       "review": "draft_unapproved",
       "sources": [
         "https://www.11v11.com/teams/arsenal/tab/players/season/2005/comp/1/",
-        "https://www.footballsquads.co.uk/eng/2004-2005/faprem/arsenal.htm"
+        "https://www.footballsquads.co.uk/eng/2004-2005/faprem/arsenal.htm",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4829.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4841.json"
       ],
       "seasonLeagueStartsEvidenceStatus": "sourced_2004_05_11v11_or_Statbunker_individual_match_listing_manual_extraction",
       "positionMajorityVerified": false,
@@ -2019,7 +2036,22 @@
       "candidateRationale": "2004-05 Arsenal FC 당시 등록 명단과 프리미어리그 출전 기록에서 새로 선정; LW 주 포지션은 추가 검토 필요.",
       "assessmentRationale": "26선발 14골로 왼쪽 미드필더에서 독보적인 득점 생산력. 이전 두 시즌은 낮은 가중치로 고려: 2002-03 21선발(기존 DRAFT, 재검증 전); 2003-04 33선발(기존 DRAFT, 재검증 전).",
       "threeSeasonReview": "2004_05_highest_2003_04_secondary_2002_03_tertiary_incomplete_historical_quantitative",
-      "rankRationale": "LW 14명 중 시즌 잠정 1위: A+, 2004-05 PL 26선발 14득점, 시즌 영향력/직전2시즌 지속성 비교. 2004-05 최우선. 주 포지션 경기별 검증 대기."
+      "rankRationale": "LW 14명 중 시즌 잠정 1위: A+, 2004-05 PL 26선발 14득점, 시즌 영향력/직전2시즌 지속성 비교. 2004-05 최우선. 주 포지션 경기별 검증 대기.",
+      "externalAuditCorrections": [
+        {
+          "field": "born",
+          "old": "1973-01-29",
+          "proposed": "1973-10-29",
+          "reason": "같은 이름·구단의 PL 시즌 선수표와 당시 경기 라인업의 생년월일이 일치한다.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4829.json",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4841.json"
+          ],
+          "status": "correction_required"
+        }
+      ]
     },
     {
       "id": "pl-2004-05-fresh-arsenal-14",
@@ -2152,7 +2184,7 @@
       "name": "Dennis Bergkamp",
       "nameKo": "데니스 베르캄프",
       "nameOriginal": "Dennis Bergkamp",
-      "born": "1969-05-18",
+      "born": "1969-05-10",
       "club": "arsenal",
       "clubNameOriginal": "Arsenal FC",
       "season": "2004-05",
@@ -2166,7 +2198,11 @@
       "review": "draft_unapproved",
       "sources": [
         "https://www.11v11.com/teams/arsenal/tab/players/season/2005/comp/1/",
-        "https://www.footballsquads.co.uk/eng/2004-2005/faprem/arsenal.htm"
+        "https://www.footballsquads.co.uk/eng/2004-2005/faprem/arsenal.htm",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4816.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4825.json"
       ],
       "seasonLeagueStartsEvidenceStatus": "sourced_2004_05_11v11_or_Statbunker_individual_match_listing_manual_extraction",
       "positionMajorityVerified": false,
@@ -2187,7 +2223,22 @@
       "candidateRationale": "2004-05 Arsenal FC 당시 등록 명단과 프리미어리그 출전 기록에서 새로 선정; ST 주 포지션은 추가 검토 필요.",
       "assessmentRationale": "2004-05 리그 20선발 8골. 실제 시즌 기용 비중·전술 기여·동포지션 비교로 A 잠정 평가함. 우승/리그 순위 자체에 보너스를 주지 않음. 이전 두 시즌은 낮은 가중치로 고려: 2002-03 23선발(기존 DRAFT, 재검증 전); 2003-04 21선발(기존 DRAFT, 재검증 전).",
       "threeSeasonReview": "2004_05_highest_2003_04_secondary_2002_03_tertiary_incomplete_historical_quantitative",
-      "rankRationale": "ST 21명 중 시즌 잠정 3위: A, 2004-05 PL 20선발 8득점, 시즌 영향력/직전2시즌 지속성 비교. 2004-05 최우선. 주 포지션 경기별 검증 대기."
+      "rankRationale": "ST 21명 중 시즌 잠정 3위: A, 2004-05 PL 20선발 8득점, 시즌 영향력/직전2시즌 지속성 비교. 2004-05 최우선. 주 포지션 경기별 검증 대기.",
+      "externalAuditCorrections": [
+        {
+          "field": "born",
+          "old": "1969-05-18",
+          "proposed": "1969-05-10",
+          "reason": "같은 이름·구단의 PL 시즌 선수표와 당시 경기 라인업의 생년월일이 일치한다.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4816.json",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4825.json"
+          ],
+          "status": "correction_required"
+        }
+      ]
     },
     {
       "id": "pl-2004-05-fresh-arsenal-18",
@@ -2750,11 +2801,15 @@
       "rank": 3,
       "leagueStarts": 26,
       "starts": 26,
-      "leagueGoals": 6,
+      "leagueGoals": 5,
       "review": "draft_unapproved",
       "sources": [
         "https://www.statbunker.com/competitions/SeasonAppearances?club_id=3&comp_id=172",
-        "https://www.footballsquads.co.uk/eng/2004-2005/faprem/manutd.htm"
+        "https://www.footballsquads.co.uk/eng/2004-2005/faprem/manutd.htm",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4815.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4822.json"
       ],
       "seasonLeagueStartsEvidenceStatus": "sourced_2004_05_11v11_or_Statbunker_individual_match_listing_manual_extraction",
       "positionMajorityVerified": false,
@@ -2775,7 +2830,22 @@
       "candidateRationale": "2004-05 Manchester United FC 당시 등록 명단과 프리미어리그 출전 기록에서 새로 선정; LW 주 포지션은 추가 검토 필요.",
       "assessmentRationale": "2004-05 리그 26선발 6골. 실제 시즌 기용 비중·전술 기여·동포지션 비교로 A 잠정 평가함. 우승/리그 순위 자체에 보너스를 주지 않음. 이전 두 시즌은 낮은 가중치로 고려: 2002-03 32선발(기존 DRAFT, 재검증 전); 2003-04 29선발(기존 DRAFT, 재검증 전).",
       "threeSeasonReview": "2004_05_highest_2003_04_secondary_2002_03_tertiary_incomplete_historical_quantitative",
-      "rankRationale": "LW 14명 중 시즌 잠정 3위: A, 2004-05 PL 26선발 6득점, 시즌 영향력/직전2시즌 지속성 비교. 2004-05 최우선. 주 포지션 경기별 검증 대기."
+      "rankRationale": "LW 14명 중 시즌 잠정 3위: A, 2004-05 PL 26선발 6득점, 시즌 영향력/직전2시즌 지속성 비교. 2004-05 최우선. 주 포지션 경기별 검증 대기.",
+      "externalAuditCorrections": [
+        {
+          "field": "leagueGoals",
+          "old": 6,
+          "proposed": 5,
+          "reason": "같은 구단·같은 PL 시즌의 경기 단위 집계와 시즌 선수표의 수치가 일치한다.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4815.json",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4822.json"
+          ],
+          "status": "correction_required"
+        }
+      ]
     },
     {
       "id": "pl-2004-05-fresh-manutd-14",
@@ -3294,13 +3364,16 @@
       "role": "backup",
       "tier": "B",
       "rank": 11,
-      "leagueStarts": 15,
-      "starts": 15,
+      "leagueStarts": 5,
+      "starts": 5,
       "leagueGoals": 0,
       "review": "draft_unapproved",
       "sources": [
         "https://www.statbunker.com/competitions/SeasonAppearances?comp_id=172",
-        "https://www.footballsquads.co.uk/eng/2004-2005/faprem/everton.htm"
+        "https://www.footballsquads.co.uk/eng/2004-2005/faprem/everton.htm",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4816.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4819.json"
       ],
       "seasonLeagueStartsEvidenceStatus": "sourced_2004_05_11v11_or_Statbunker_individual_match_listing_manual_extraction",
       "positionMajorityVerified": false,
@@ -3321,7 +3394,21 @@
       "candidateRationale": "2004-05 Everton FC 당시 등록 명단과 프리미어리그 출전 기록에서 새로 선정; LB 주 포지션은 추가 검토 필요.",
       "assessmentRationale": "2004-05 리그 15선발 0골. 실제 시즌 기용 비중·전술 기여·동포지션 비교로 B 잠정 평가함. 우승/리그 순위 자체에 보너스를 주지 않음. 이전 두 시즌은 낮은 가중치로 고려: 2002-03 수치 누락/외부리그 조사 대기; 2003-04 수치 누락/외부리그 조사 대기.",
       "threeSeasonReview": "2004_05_highest_2003_04_secondary_2002_03_tertiary_incomplete_historical_quantitative",
-      "rankRationale": "LB 15명 중 시즌 잠정 11위: B, 2004-05 PL 15선발 0득점, 시즌 영향력/직전2시즌 지속성 비교. 2004-05 최우선. 주 포지션 경기별 검증 대기."
+      "rankRationale": "LB 15명 중 시즌 잠정 11위: B, 2004-05 PL 15선발 0득점, 시즌 영향력/직전2시즌 지속성 비교. 2004-05 최우선. 주 포지션 경기별 검증 대기.",
+      "externalAuditCorrections": [
+        {
+          "field": "leagueStarts",
+          "old": 15,
+          "proposed": 5,
+          "reason": "선발 라인업 집계에서 값 확인. 소속 구단의 PL 경기만 집계.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4816.json",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4819.json"
+          ],
+          "status": "correction_required"
+        }
+      ]
     },
     {
       "id": "pl-2004-05-fresh-everton-08",
@@ -3756,13 +3843,17 @@
       "role": "backup",
       "tier": "B-",
       "rank": 21,
-      "leagueStarts": 9,
-      "starts": 9,
-      "leagueGoals": 2,
+      "leagueStarts": 7,
+      "starts": 7,
+      "leagueGoals": 1,
       "review": "draft_unapproved",
       "sources": [
         "https://www.statbunker.com/competitions/SeasonAppearances?comp_id=172",
-        "https://www.footballsquads.co.uk/eng/2004-2005/faprem/everton.htm"
+        "https://www.footballsquads.co.uk/eng/2004-2005/faprem/everton.htm",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5036.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5040.json",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv"
       ],
       "seasonLeagueStartsEvidenceStatus": "sourced_2004_05_11v11_or_Statbunker_individual_match_listing_manual_extraction",
       "positionMajorityVerified": false,
@@ -3783,7 +3874,34 @@
       "candidateRationale": "2004-05 Everton FC 당시 등록 명단과 프리미어리그 출전 기록에서 새로 선정; ST 주 포지션은 추가 검토 필요.",
       "assessmentRationale": "2004-05 리그 9선발 2골. 실제 시즌 기용 비중·전술 기여·동포지션 비교로 B- 잠정 평가함. 우승/리그 순위 자체에 보너스를 주지 않음. 이전 두 시즌은 낮은 가중치로 고려: 2002-03 35선발(기존 DRAFT, 재검증 전); 2003-04 수치 누락/외부리그 조사 대기.",
       "threeSeasonReview": "2004_05_highest_2003_04_secondary_2002_03_tertiary_incomplete_historical_quantitative",
-      "rankRationale": "ST 21명 중 시즌 잠정 21위: B-, 2004-05 PL 9선발 2득점, 시즌 영향력/직전2시즌 지속성 비교. 2004-05 최우선. 주 포지션 경기별 검증 대기."
+      "rankRationale": "ST 21명 중 시즌 잠정 21위: B-, 2004-05 PL 9선발 2득점, 시즌 영향력/직전2시즌 지속성 비교. 2004-05 최우선. 주 포지션 경기별 검증 대기.",
+      "externalAuditCorrections": [
+        {
+          "field": "leagueStarts",
+          "old": 9,
+          "proposed": 7,
+          "reason": "선발 라인업 집계에서 값 확인. 소속 구단의 PL 경기만 집계.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5036.json",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5040.json"
+          ],
+          "status": "correction_required"
+        },
+        {
+          "field": "leagueGoals",
+          "old": 2,
+          "proposed": 1,
+          "reason": "같은 구단·같은 PL 시즌의 경기 단위 집계와 시즌 선수표의 수치가 일치한다.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5036.json",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5040.json"
+          ],
+          "status": "correction_required"
+        }
+      ]
     },
     {
       "id": "pl-2004-05-fresh-liverpool-01",
@@ -4134,13 +4252,16 @@
       "role": "backup",
       "tier": "B-",
       "rank": 14,
-      "leagueStarts": 11,
-      "starts": 11,
+      "leagueStarts": 13,
+      "starts": 13,
       "leagueGoals": 0,
       "review": "draft_unapproved",
       "sources": [
         "https://po.statbunker.com/competitions/SeasonAppearances?club_id=4&comp_id=172",
-        "https://www.footballsquads.co.uk/eng/2004-2005/faprem/liverpool.htm"
+        "https://www.footballsquads.co.uk/eng/2004-2005/faprem/liverpool.htm",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4814.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4821.json"
       ],
       "seasonLeagueStartsEvidenceStatus": "sourced_2004_05_11v11_or_Statbunker_individual_match_listing_manual_extraction",
       "positionMajorityVerified": false,
@@ -4161,7 +4282,21 @@
       "candidateRationale": "2004-05 Liverpool FC 당시 등록 명단과 프리미어리그 출전 기록에서 새로 선정; RB 주 포지션은 추가 검토 필요.",
       "assessmentRationale": "2004-05 리그 11선발 0골. 실제 시즌 기용 비중·전술 기여·동포지션 비교로 B- 잠정 평가함. 우승/리그 순위 자체에 보너스를 주지 않음. 이전 두 시즌은 낮은 가중치로 고려: 2002-03 수치 누락/외부리그 조사 대기; 2003-04 수치 누락/외부리그 조사 대기.",
       "threeSeasonReview": "2004_05_highest_2003_04_secondary_2002_03_tertiary_incomplete_historical_quantitative",
-      "rankRationale": "RB 16명 중 시즌 잠정 14위: B-, 2004-05 PL 11선발 0득점, 시즌 영향력/직전2시즌 지속성 비교. 2004-05 최우선. 주 포지션 경기별 검증 대기."
+      "rankRationale": "RB 16명 중 시즌 잠정 14위: B-, 2004-05 PL 11선발 0득점, 시즌 영향력/직전2시즌 지속성 비교. 2004-05 최우선. 주 포지션 경기별 검증 대기.",
+      "externalAuditCorrections": [
+        {
+          "field": "leagueStarts",
+          "old": 11,
+          "proposed": 13,
+          "reason": "선발 라인업 집계에서 값 확인. 소속 구단의 PL 경기만 집계.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4814.json",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4821.json"
+          ],
+          "status": "correction_required"
+        }
+      ]
     },
     {
       "id": "pl-2004-05-fresh-liverpool-10",
@@ -4462,7 +4597,7 @@
       "name": "Antonio Núñez",
       "nameKo": "안토니오 누녜스",
       "nameOriginal": "Antonio Núñez",
-      "born": "1979-01-19",
+      "born": "1979-01-15",
       "club": "liverpool",
       "clubNameOriginal": "Liverpool FC",
       "season": "2004-05",
@@ -4476,7 +4611,11 @@
       "review": "draft_unapproved",
       "sources": [
         "https://po.statbunker.com/competitions/SeasonAppearances?club_id=4&comp_id=172",
-        "https://www.footballsquads.co.uk/eng/2004-2005/faprem/liverpool.htm"
+        "https://www.footballsquads.co.uk/eng/2004-2005/faprem/liverpool.htm",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4957.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4976.json"
       ],
       "seasonLeagueStartsEvidenceStatus": "sourced_2004_05_11v11_or_Statbunker_individual_match_listing_manual_extraction",
       "positionMajorityVerified": false,
@@ -4497,7 +4636,22 @@
       "candidateRationale": "2004-05 Liverpool FC 당시 등록 명단과 프리미어리그 출전 기록에서 새로 선정; RW 주 포지션은 추가 검토 필요.",
       "assessmentRationale": "2004-05 리그 8선발 0골. 실제 시즌 기용 비중·전술 기여·동포지션 비교로 C+ 잠정 평가함. 우승/리그 순위 자체에 보너스를 주지 않음. 이전 두 시즌은 낮은 가중치로 고려: 2002-03 수치 누락/외부리그 조사 대기; 2003-04 수치 누락/외부리그 조사 대기.",
       "threeSeasonReview": "2004_05_highest_2003_04_secondary_2002_03_tertiary_incomplete_historical_quantitative",
-      "rankRationale": "RW 13명 중 시즌 잠정 12위: C+, 2004-05 PL 8선발 0득점, 시즌 영향력/직전2시즌 지속성 비교. 2004-05 최우선. 주 포지션 경기별 검증 대기."
+      "rankRationale": "RW 13명 중 시즌 잠정 12위: C+, 2004-05 PL 8선발 0득점, 시즌 영향력/직전2시즌 지속성 비교. 2004-05 최우선. 주 포지션 경기별 검증 대기.",
+      "externalAuditCorrections": [
+        {
+          "field": "born",
+          "old": "1979-01-19",
+          "proposed": "1979-01-15",
+          "reason": "같은 이름·구단의 PL 시즌 선수표와 당시 경기 라인업의 생년월일이 일치한다.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4957.json",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4976.json"
+          ],
+          "status": "correction_required"
+        }
+      ]
     },
     {
       "id": "pl-2004-05-fresh-liverpool-18",
@@ -4966,7 +5120,7 @@
       "name": "Anthony Barness",
       "nameKo": "앤서니 바네스",
       "nameOriginal": "Anthony Barness",
-      "born": "1973-03-25",
+      "born": "1973-02-25",
       "club": "bolton",
       "clubNameOriginal": "Bolton Wanderers",
       "season": "2004-05",
@@ -4980,7 +5134,11 @@
       "review": "draft_unapproved",
       "sources": [
         "https://po.statbunker.com/competitions/SeasonAppearances?club_id=29&comp_id=172",
-        "https://www.footballsquads.co.uk/eng/2004-2005/faprem/bolton.htm"
+        "https://www.footballsquads.co.uk/eng/2004-2005/faprem/bolton.htm",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4847.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4979.json"
       ],
       "seasonLeagueStartsEvidenceStatus": "sourced_2004_05_11v11_or_Statbunker_individual_match_listing_manual_extraction",
       "positionMajorityVerified": false,
@@ -5001,7 +5159,22 @@
       "candidateRationale": "2004-05 Bolton Wanderers 당시 등록 명단과 프리미어리그 출전 기록에서 새로 선정; RB 주 포지션은 추가 검토 필요.",
       "assessmentRationale": "2004-05 리그 5선발 0골. 실제 시즌 기용 비중·전술 기여·동포지션 비교로 C+ 잠정 평가함. 우승/리그 순위 자체에 보너스를 주지 않음. 이전 두 시즌은 낮은 가중치로 고려: 2002-03 수치 누락/외부리그 조사 대기; 2003-04 수치 누락/외부리그 조사 대기.",
       "threeSeasonReview": "2004_05_highest_2003_04_secondary_2002_03_tertiary_incomplete_historical_quantitative",
-      "rankRationale": "RB 16명 중 시즌 잠정 15위: C+, 2004-05 PL 5선발 0득점, 시즌 영향력/직전2시즌 지속성 비교. 2004-05 최우선. 주 포지션 경기별 검증 대기."
+      "rankRationale": "RB 16명 중 시즌 잠정 15위: C+, 2004-05 PL 5선발 0득점, 시즌 영향력/직전2시즌 지속성 비교. 2004-05 최우선. 주 포지션 경기별 검증 대기.",
+      "externalAuditCorrections": [
+        {
+          "field": "born",
+          "old": "1973-03-25",
+          "proposed": "1973-02-25",
+          "reason": "같은 이름·구단의 PL 시즌 선수표와 당시 경기 라인업의 생년월일이 일치한다.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4847.json",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4979.json"
+          ],
+          "status": "correction_required"
+        }
+      ]
     },
     {
       "id": "pl-2004-05-fresh-bolton-10",
@@ -5436,13 +5609,17 @@
       "role": "backup",
       "tier": "C+",
       "rank": 14,
-      "leagueStarts": 3,
-      "starts": 3,
+      "leagueStarts": 5,
+      "starts": 5,
       "leagueGoals": 0,
       "review": "draft_unapproved",
       "sources": [
         "https://www.statbunker.com/competitions/SeasonAppearances?club_id=15&comp_id=172",
-        "https://www.footballsquads.co.uk/eng/2004-2005/faprem/middles.htm"
+        "https://www.footballsquads.co.uk/eng/2004-2005/faprem/middles.htm",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://fbref.com/en/squads/7f59c601/2004-2005/Middlesbrough-Stats",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5120.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5133.json"
       ],
       "seasonLeagueStartsEvidenceStatus": "sourced_2004_05_11v11_or_Statbunker_individual_match_listing_manual_extraction",
       "positionMajorityVerified": false,
@@ -5463,7 +5640,22 @@
       "candidateRationale": "2004-05 Middlesbrough FC 당시 등록 명단과 프리미어리그 출전 기록에서 새로 선정; GK 주 포지션은 추가 검토 필요.",
       "assessmentRationale": "2004-05 리그 3선발 0골. 실제 시즌 기용 비중·전술 기여·동포지션 비교로 C+ 잠정 평가함. 우승/리그 순위 자체에 보너스를 주지 않음. 이전 두 시즌은 낮은 가중치로 고려: 2002-03 수치 누락/외부리그 조사 대기; 2003-04 수치 누락/외부리그 조사 대기.",
       "threeSeasonReview": "2004_05_highest_2003_04_secondary_2002_03_tertiary_incomplete_historical_quantitative",
-      "rankRationale": "GK 16명 중 시즌 잠정 14위: C+, 2004-05 PL 3선발 0득점, 시즌 영향력/직전2시즌 지속성 비교. 2004-05 최우선. 주 포지션 경기별 검증 대기."
+      "rankRationale": "GK 16명 중 시즌 잠정 14위: C+, 2004-05 PL 3선발 0득점, 시즌 영향력/직전2시즌 지속성 비교. 2004-05 최우선. 주 포지션 경기별 검증 대기.",
+      "externalAuditCorrections": [
+        {
+          "field": "leagueStarts",
+          "old": 3,
+          "proposed": 5,
+          "reason": "선발 라인업 집계에서 값 확인. 소속 구단의 PL 경기만 집계.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://fbref.com/en/squads/7f59c601/2004-2005/Middlesbrough-Stats",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5120.json",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5133.json"
+          ],
+          "status": "correction_required"
+        }
+      ]
     },
     {
       "id": "pl-2004-05-fresh-middlesbrough-03",
@@ -5562,13 +5754,17 @@
       "role": "backup",
       "tier": "B",
       "rank": 20,
-      "leagueStarts": 17,
-      "starts": 17,
-      "leagueGoals": 1,
+      "leagueStarts": 9,
+      "starts": 9,
+      "leagueGoals": 0,
       "review": "draft_unapproved",
       "sources": [
         "https://www.statbunker.com/competitions/SeasonAppearances?club_id=15&comp_id=172",
-        "https://www.footballsquads.co.uk/eng/2004-2005/faprem/middles.htm"
+        "https://www.footballsquads.co.uk/eng/2004-2005/faprem/middles.htm",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4811.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4851.json",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv"
       ],
       "seasonLeagueStartsEvidenceStatus": "sourced_2004_05_11v11_or_Statbunker_individual_match_listing_manual_extraction",
       "positionMajorityVerified": false,
@@ -5589,14 +5785,41 @@
       "candidateRationale": "2004-05 Middlesbrough FC 당시 등록 명단과 프리미어리그 출전 기록에서 새로 선정; CB 주 포지션은 추가 검토 필요.",
       "assessmentRationale": "2004-05 리그 17선발 1골. 실제 시즌 기용 비중·전술 기여·동포지션 비교로 B 잠정 평가함. 우승/리그 순위 자체에 보너스를 주지 않음. 이전 두 시즌은 낮은 가중치로 고려: 2002-03 수치 누락/외부리그 조사 대기; 2003-04 16선발(기존 DRAFT, 재검증 전).",
       "threeSeasonReview": "2004_05_highest_2003_04_secondary_2002_03_tertiary_incomplete_historical_quantitative",
-      "rankRationale": "CB 24명 중 시즌 잠정 20위: B, 2004-05 PL 17선발 1득점, 시즌 영향력/직전2시즌 지속성 비교. 2004-05 최우선. 주 포지션 경기별 검증 대기."
+      "rankRationale": "CB 24명 중 시즌 잠정 20위: B, 2004-05 PL 17선발 1득점, 시즌 영향력/직전2시즌 지속성 비교. 2004-05 최우선. 주 포지션 경기별 검증 대기.",
+      "externalAuditCorrections": [
+        {
+          "field": "leagueStarts",
+          "old": 17,
+          "proposed": 9,
+          "reason": "선발 라인업 집계에서 값 확인. 소속 구단의 PL 경기만 집계.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4811.json",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4851.json"
+          ],
+          "status": "correction_required"
+        },
+        {
+          "field": "leagueGoals",
+          "old": 1,
+          "proposed": 0,
+          "reason": "같은 구단·같은 PL 시즌의 경기 단위 집계와 시즌 선수표의 수치가 일치한다.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4811.json",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4851.json"
+          ],
+          "status": "correction_required"
+        }
+      ]
     },
     {
       "id": "pl-2004-05-fresh-middlesbrough-06",
       "name": "Franck Queudrue",
       "nameKo": "프랑크 케드뤼",
       "nameOriginal": "Franck Queudrue",
-      "born": "1978-08-25",
+      "born": "1978-08-27",
       "club": "middlesbrough",
       "clubNameOriginal": "Middlesbrough FC",
       "season": "2004-05",
@@ -5610,7 +5833,11 @@
       "review": "draft_unapproved",
       "sources": [
         "https://www.statbunker.com/competitions/SeasonAppearances?club_id=15&comp_id=172",
-        "https://www.footballsquads.co.uk/eng/2004-2005/faprem/middles.htm"
+        "https://www.footballsquads.co.uk/eng/2004-2005/faprem/middles.htm",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4825.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4831.json"
       ],
       "seasonLeagueStartsEvidenceStatus": "sourced_2004_05_11v11_or_Statbunker_individual_match_listing_manual_extraction",
       "positionMajorityVerified": false,
@@ -5631,7 +5858,22 @@
       "candidateRationale": "2004-05 Middlesbrough FC 당시 등록 명단과 프리미어리그 출전 기록에서 새로 선정; LB 주 포지션은 추가 검토 필요.",
       "assessmentRationale": "2004-05 리그 31선발 5골. 실제 시즌 기용 비중·전술 기여·동포지션 비교로 B+ 잠정 평가함. 우승/리그 순위 자체에 보너스를 주지 않음. 이전 두 시즌은 낮은 가중치로 고려: 2002-03 수치 누락/외부리그 조사 대기; 2003-04 31선발(기존 DRAFT, 재검증 전).",
       "threeSeasonReview": "2004_05_highest_2003_04_secondary_2002_03_tertiary_incomplete_historical_quantitative",
-      "rankRationale": "LB 15명 중 시즌 잠정 5위: B+, 2004-05 PL 31선발 5득점, 시즌 영향력/직전2시즌 지속성 비교. 2004-05 최우선. 주 포지션 경기별 검증 대기."
+      "rankRationale": "LB 15명 중 시즌 잠정 5위: B+, 2004-05 PL 31선발 5득점, 시즌 영향력/직전2시즌 지속성 비교. 2004-05 최우선. 주 포지션 경기별 검증 대기.",
+      "externalAuditCorrections": [
+        {
+          "field": "born",
+          "old": "1978-08-25",
+          "proposed": "1978-08-27",
+          "reason": "같은 이름·구단의 PL 시즌 선수표와 당시 경기 라인업의 생년월일이 일치한다.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4825.json",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4831.json"
+          ],
+          "status": "correction_required"
+        }
+      ]
     },
     {
       "id": "pl-2004-05-fresh-middlesbrough-07",
@@ -6024,13 +6266,16 @@
       "role": "starter",
       "tier": "B+",
       "rank": 14,
-      "leagueStarts": 16,
-      "starts": 16,
+      "leagueStarts": 15,
+      "starts": 15,
       "leagueGoals": 5,
       "review": "draft_unapproved",
       "sources": [
         "https://www.statbunker.com/competitions/SeasonAppearances?club_id=15&comp_id=172",
-        "https://www.footballsquads.co.uk/eng/2004-2005/faprem/middles.htm"
+        "https://www.footballsquads.co.uk/eng/2004-2005/faprem/middles.htm",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4831.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4840.json"
       ],
       "seasonLeagueStartsEvidenceStatus": "sourced_2004_05_11v11_or_Statbunker_individual_match_listing_manual_extraction",
       "positionMajorityVerified": false,
@@ -6051,7 +6296,21 @@
       "candidateRationale": "2004-05 Middlesbrough FC 당시 등록 명단과 프리미어리그 출전 기록에서 새로 선정; ST 주 포지션은 추가 검토 필요.",
       "assessmentRationale": "2004-05 리그 16선발 5골. 실제 시즌 기용 비중·전술 기여·동포지션 비교로 B+ 잠정 평가함. 우승/리그 순위 자체에 보너스를 주지 않음. 이전 두 시즌은 낮은 가중치로 고려: 2002-03 수치 누락/외부리그 조사 대기; 2003-04 수치 누락/외부리그 조사 대기.",
       "threeSeasonReview": "2004_05_highest_2003_04_secondary_2002_03_tertiary_incomplete_historical_quantitative",
-      "rankRationale": "ST 21명 중 시즌 잠정 14위: B+, 2004-05 PL 16선발 5득점, 시즌 영향력/직전2시즌 지속성 비교. 2004-05 최우선. 주 포지션 경기별 검증 대기."
+      "rankRationale": "ST 21명 중 시즌 잠정 14위: B+, 2004-05 PL 16선발 5득점, 시즌 영향력/직전2시즌 지속성 비교. 2004-05 최우선. 주 포지션 경기별 검증 대기.",
+      "externalAuditCorrections": [
+        {
+          "field": "leagueStarts",
+          "old": 16,
+          "proposed": 15,
+          "reason": "선발 라인업 집계에서 값 확인. 소속 구단의 PL 경기만 집계.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4831.json",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4840.json"
+          ],
+          "status": "correction_required"
+        }
+      ]
     },
     {
       "id": "pl-2004-05-fresh-middlesbrough-17",
@@ -6068,11 +6327,15 @@
       "rank": 16,
       "leagueStarts": 18,
       "starts": 18,
-      "leagueGoals": 6,
+      "leagueGoals": 4,
       "review": "draft_unapproved",
       "sources": [
         "https://www.statbunker.com/competitions/SeasonAppearances?club_id=15&comp_id=172",
-        "https://www.footballsquads.co.uk/eng/2004-2005/faprem/middles.htm"
+        "https://www.footballsquads.co.uk/eng/2004-2005/faprem/middles.htm",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4851.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4863.json"
       ],
       "seasonLeagueStartsEvidenceStatus": "sourced_2004_05_11v11_or_Statbunker_individual_match_listing_manual_extraction",
       "positionMajorityVerified": false,
@@ -6093,14 +6356,29 @@
       "candidateRationale": "2004-05 Middlesbrough FC 당시 등록 명단과 프리미어리그 출전 기록에서 새로 선정; ST 주 포지션은 추가 검토 필요.",
       "assessmentRationale": "2004-05 리그 18선발 6골. 실제 시즌 기용 비중·전술 기여·동포지션 비교로 B 잠정 평가함. 우승/리그 순위 자체에 보너스를 주지 않음. 이전 두 시즌은 낮은 가중치로 고려: 2002-03 수치 누락/외부리그 조사 대기; 2003-04 17선발(기존 DRAFT, 재검증 전).",
       "threeSeasonReview": "2004_05_highest_2003_04_secondary_2002_03_tertiary_incomplete_historical_quantitative",
-      "rankRationale": "ST 21명 중 시즌 잠정 16위: B, 2004-05 PL 18선발 6득점, 시즌 영향력/직전2시즌 지속성 비교. 2004-05 최우선. 주 포지션 경기별 검증 대기."
+      "rankRationale": "ST 21명 중 시즌 잠정 16위: B, 2004-05 PL 18선발 6득점, 시즌 영향력/직전2시즌 지속성 비교. 2004-05 최우선. 주 포지션 경기별 검증 대기.",
+      "externalAuditCorrections": [
+        {
+          "field": "leagueGoals",
+          "old": 6,
+          "proposed": 4,
+          "reason": "같은 구단·같은 PL 시즌의 경기 단위 집계와 시즌 선수표의 수치가 일치한다.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4851.json",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4863.json"
+          ],
+          "status": "correction_required"
+        }
+      ]
     },
     {
       "id": "pl-2004-05-fresh-newcastle-01",
       "name": "Shay Given",
       "nameKo": "셰이 기븐",
       "nameOriginal": "Shay Given",
-      "born": "1976-04-24",
+      "born": "1976-04-20",
       "club": "newcastle",
       "clubNameOriginal": "Newcastle United FC",
       "season": "2004-05",
@@ -6114,7 +6392,11 @@
       "review": "draft_unapproved",
       "sources": [
         "https://www.11v11.com/teams/newcastle-united/tab/players/season/2005/comp/1/",
-        "https://www.footballsquads.co.uk/eng/2004-2005/faprem/newcas.htm"
+        "https://www.footballsquads.co.uk/eng/2004-2005/faprem/newcas.htm",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4811.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4823.json"
       ],
       "seasonLeagueStartsEvidenceStatus": "sourced_2004_05_11v11_or_Statbunker_individual_match_listing_manual_extraction",
       "positionMajorityVerified": false,
@@ -6135,7 +6417,22 @@
       "candidateRationale": "2004-05 Newcastle United FC 당시 등록 명단과 프리미어리그 출전 기록에서 새로 선정; GK 주 포지션은 추가 검토 필요.",
       "assessmentRationale": "36선발. 잦은 수비 부담에도 개인 선방 능력과 장기 지속성은 높게 평가. 이전 두 시즌은 낮은 가중치로 고려: 2002-03 38선발(기존 DRAFT, 재검증 전); 2003-04 38선발(기존 DRAFT, 재검증 전).",
       "threeSeasonReview": "2004_05_highest_2003_04_secondary_2002_03_tertiary_incomplete_historical_quantitative",
-      "rankRationale": "GK 16명 중 시즌 잠정 2위: A, 2004-05 PL 36선발 0득점, 시즌 영향력/직전2시즌 지속성 비교. 2004-05 최우선. 주 포지션 경기별 검증 대기."
+      "rankRationale": "GK 16명 중 시즌 잠정 2위: A, 2004-05 PL 36선발 0득점, 시즌 영향력/직전2시즌 지속성 비교. 2004-05 최우선. 주 포지션 경기별 검증 대기.",
+      "externalAuditCorrections": [
+        {
+          "field": "born",
+          "old": "1976-04-24",
+          "proposed": "1976-04-20",
+          "reason": "같은 이름·구단의 PL 시즌 선수표와 당시 경기 라인업의 생년월일이 일치한다.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4811.json",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4823.json"
+          ],
+          "status": "correction_required"
+        }
+      ]
     },
     {
       "id": "pl-2004-05-fresh-newcastle-02",
@@ -6226,7 +6523,7 @@
       "name": "Titus Bramble",
       "nameKo": "타이터스 브램블",
       "nameOriginal": "Titus Bramble",
-      "born": "1981-07-21",
+      "born": "1981-07-31",
       "club": "newcastle",
       "clubNameOriginal": "Newcastle United FC",
       "season": "2004-05",
@@ -6240,7 +6537,11 @@
       "review": "draft_unapproved",
       "sources": [
         "https://www.11v11.com/teams/newcastle-united/tab/players/season/2005/comp/1/",
-        "https://www.footballsquads.co.uk/eng/2004-2005/faprem/newcas.htm"
+        "https://www.footballsquads.co.uk/eng/2004-2005/faprem/newcas.htm",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4934.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4938.json"
       ],
       "seasonLeagueStartsEvidenceStatus": "sourced_2004_05_11v11_or_Statbunker_individual_match_listing_manual_extraction",
       "positionMajorityVerified": false,
@@ -6261,7 +6562,22 @@
       "candidateRationale": "2004-05 Newcastle United FC 당시 등록 명단과 프리미어리그 출전 기록에서 새로 선정; CB 주 포지션은 추가 검토 필요.",
       "assessmentRationale": "2004-05 리그 18선발 1골. 실제 시즌 기용 비중·전술 기여·동포지션 비교로 B- 잠정 평가함. 우승/리그 순위 자체에 보너스를 주지 않음. 이전 두 시즌은 낮은 가중치로 고려: 2002-03 13선발(기존 DRAFT, 재검증 전); 2003-04 27선발(기존 DRAFT, 재검증 전).",
       "threeSeasonReview": "2004_05_highest_2003_04_secondary_2002_03_tertiary_incomplete_historical_quantitative",
-      "rankRationale": "CB 24명 중 시즌 잠정 21위: B-, 2004-05 PL 18선발 1득점, 시즌 영향력/직전2시즌 지속성 비교. 2004-05 최우선. 주 포지션 경기별 검증 대기."
+      "rankRationale": "CB 24명 중 시즌 잠정 21위: B-, 2004-05 PL 18선발 1득점, 시즌 영향력/직전2시즌 지속성 비교. 2004-05 최우선. 주 포지션 경기별 검증 대기.",
+      "externalAuditCorrections": [
+        {
+          "field": "born",
+          "old": "1981-07-21",
+          "proposed": "1981-07-31",
+          "reason": "같은 이름·구단의 PL 시즌 선수표와 당시 경기 라인업의 생년월일이 일치한다.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4934.json",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4938.json"
+          ],
+          "status": "correction_required"
+        }
+      ]
     },
     {
       "id": "pl-2004-05-fresh-newcastle-05",

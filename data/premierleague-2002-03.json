@@ -85,11 +85,12 @@
     "bestXiReview": {
       "status": "proposed_unapproved",
       "formation": "4-4-2",
-      "basis": "era-mainstream PFA 4-4-2 with only actually eligible 2003-04 European participant clubs; 3-season weighted individual impact not forcing CAM Scholes into CM",
+      "basis": "PFA에 포함된 Dyer의 당해 시즌 성과를 인정한다. Dyer의 우측·중앙 혼용이 확인됐고 Beckham은 당해 27선발·6골·8도움에 앞선 두 시즌 우측 활약을 합쳐 RW 1위 및 Best XI 변경을 권고.",
       "sources": [
         "https://www.11v11.com/competitions/premier-league/2003/",
         "https://www.premierleague.com/en/news/59015"
-      ]
+      ],
+      "validation": "11 unique registered player IDs; revised slots match registered positions; historical assessment provisional."
     },
     "auditWarnings": [
       "132/132 2002-03 PL starts source-scope verified; full match-by-match majority positions and two prior seasons still need deeper audit",
@@ -105,6 +106,19 @@
       "liverpool": 11,
       "mancity": 11,
       "arsenal": 11
+    },
+    "externalAudit20261126": {
+      "baseCommit": "078c124cc365fab971be8263e2cbcacce5999719",
+      "report": "audit/PL_1999_2004_EXTERNAL_REVIEW_APPLIED_2026-11-26.json",
+      "status": "draft_unapproved",
+      "players": 132,
+      "facts": 13,
+      "ranks": 2,
+      "tiers": 0,
+      "replacements": 0,
+      "xi": true,
+      "held": 3,
+      "note": "Structured corrected values supersede conflicting legacy text. Detailed positions, qualitative tiers and formation frequency not finally verified."
     }
   },
   "clubs": [
@@ -738,7 +752,7 @@
       "club": "newcastle",
       "clubNameOriginal": "Newcastle United FC",
       "season": "2002-03",
-      "born": "1976-04-24",
+      "born": "1976-04-20",
       "position": "GK",
       "tier": "A",
       "role": "starter",
@@ -752,7 +766,11 @@
         "https://www.11v11.com/teams/newcastle-united/tab/players/season/2003/",
         "https://www.footballsquads.co.uk/eng/2002-2003/faprem/newcas.htm",
         "https://fbref.com/en/squads/b2b47a98/2002-2003/Newcastle-United-Stats",
-        "https://www.11v11.com/competitions/premier-league/2003/"
+        "https://www.11v11.com/competitions/premier-league/2003/",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4056.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4061.json"
       ],
       "candidateRationale": "Independently nominated from 2002-03 dated squad and 11v11 player listings; historical role vs starter-equivalent to verify",
       "starts": 38,
@@ -772,7 +790,22 @@
       "threeSeasonReview": "numeric_starts_across_all_three_years_not_complete_tactical_review",
       "evaluationStatus": "individual_DRAFT_grade_historical_audit_unapproved",
       "rankStatus": "proposed_unapproved",
-      "rankRationale": "2002-03 GK 리그 전체 13명 중 잠정 3위. 2002-03 PL 38선발·개인 경기 기여와 2001-02 및 2000-01 지속성을 비교; 전체 시즌 최다 전술 위치 확증은 DRAFT 단계."
+      "rankRationale": "2002-03 GK 리그 전체 13명 중 잠정 3위. 2002-03 PL 38선발·개인 경기 기여와 2001-02 및 2000-01 지속성을 비교; 전체 시즌 최다 전술 위치 확증은 DRAFT 단계.",
+      "externalAuditCorrections": [
+        {
+          "field": "born",
+          "old": "1976-04-24",
+          "proposed": "1976-04-20",
+          "reason": "같은 이름·구단의 PL 시즌 선수표와 당시 경기 라인업의 생년월일이 일치한다.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4056.json",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4061.json"
+          ],
+          "status": "correction_required"
+        }
+      ]
     },
     {
       "id": "pl-2002-03-fresh-manutd-01",
@@ -1401,7 +1434,7 @@
       "club": "chelsea",
       "clubNameOriginal": "Chelsea FC",
       "season": "2002-03",
-      "born": "1968-09-17",
+      "born": "1968-09-07",
       "position": "CB",
       "tier": "A-",
       "role": "starter",
@@ -1415,7 +1448,11 @@
         "https://www.11v11.com/teams/chelsea/tab/players/season/2003/",
         "https://www.footballsquads.co.uk/eng/2002-2003/faprem/chelsea.htm",
         "https://statbunker.com/competitions/SeasonAppearances?club_id=8&comp_id=136",
-        "https://www.11v11.com/competitions/premier-league/2003/"
+        "https://www.11v11.com/competitions/premier-league/2003/",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4048.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4057.json"
       ],
       "candidateRationale": "Independently nominated from 2002-03 dated squad and 11v11 player listings; historical role vs starter-equivalent to verify",
       "starts": 30,
@@ -1435,7 +1472,22 @@
       "threeSeasonReview": "numeric_starts_across_all_three_years_not_complete_tactical_review",
       "evaluationStatus": "individual_DRAFT_grade_historical_audit_unapproved",
       "rankStatus": "proposed_unapproved",
-      "rankRationale": "2002-03 CB 리그 전체 23명 중 잠정 5위. 2002-03 PL 30선발·개인 경기 기여와 2001-02 및 2000-01 지속성을 비교; 전체 시즌 최다 전술 위치 확증은 DRAFT 단계."
+      "rankRationale": "2002-03 CB 리그 전체 23명 중 잠정 5위. 2002-03 PL 30선발·개인 경기 기여와 2001-02 및 2000-01 지속성을 비교; 전체 시즌 최다 전술 위치 확증은 DRAFT 단계.",
+      "externalAuditCorrections": [
+        {
+          "field": "born",
+          "old": "1968-09-17",
+          "proposed": "1968-09-07",
+          "reason": "같은 이름·구단의 PL 시즌 선수표와 당시 경기 라인업의 생년월일이 일치한다.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4048.json",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4057.json"
+          ],
+          "status": "correction_required"
+        }
+      ]
     },
     {
       "id": "pl-2002-03-fresh-chelsea-04",
@@ -1774,10 +1826,14 @@
         "https://www.footballsquads.co.uk/eng/2002-2003/faprem/mancity.htm",
         "https://fbref.com/en/squads/b8fd03ef/2002-2003/Manchester-City-Stats",
         "https://dr.statbunker.com/competitions/SeasonAppearances?club_id=14&comp_id=136",
-        "https://www.11v11.com/competitions/premier-league/2003/"
+        "https://www.11v11.com/competitions/premier-league/2003/",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4147.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4159.json"
       ],
       "candidateRationale": "Independently nominated from 2002-03 dated squad and 11v11 player listings; historical role vs starter-equivalent to verify",
-      "leagueAssists": 0,
+      "leagueAssists": 1,
       "starts": 24,
       "assessmentRationale": "2002-03 Manchester City의 CB 역할로 PL 24선발·0득점. 센터백 대인 수비·공간 커버 및 실제 선발 비중을 근거로 B+ 잠정 판단했고, 팀의 최종 성적을 가산점으로 삼지 않았다. 2001-02 개인 선발 기록 추가 검증, 2000-01 개인 선발 기록 추가 검증를 낮은 순서의 가중치로 반영하고 2002-03 실제 활약을 최우선했다.",
       "previousSeasons": {
@@ -1795,7 +1851,22 @@
       "threeSeasonReview": "current_season_source_confirmed_prior_two_year_quantitative_partial",
       "evaluationStatus": "individual_DRAFT_grade_historical_audit_unapproved",
       "rankStatus": "proposed_unapproved",
-      "rankRationale": "2002-03 CB 리그 전체 23명 중 잠정 13위. 2002-03 PL 24선발·개인 경기 기여와 2001-02 및 2000-01 지속성을 비교; 전체 시즌 최다 전술 위치 확증은 DRAFT 단계."
+      "rankRationale": "2002-03 CB 리그 전체 23명 중 잠정 13위. 2002-03 PL 24선발·개인 경기 기여와 2001-02 및 2000-01 지속성을 비교; 전체 시즌 최다 전술 위치 확증은 DRAFT 단계.",
+      "externalAuditCorrections": [
+        {
+          "field": "leagueAssists",
+          "old": 0,
+          "proposed": 1,
+          "reason": "같은 구단·같은 PL 시즌의 경기 단위 집계와 시즌 선수표의 수치가 일치한다. PL 원천의 도움 집계 기준을 적용할 때의 수정값이다.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4147.json",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4159.json"
+          ],
+          "status": "correction_required"
+        }
+      ]
     },
     {
       "id": "pl-2002-03-fresh-arsenal-04",
@@ -2159,7 +2230,7 @@
       "club": "newcastle",
       "clubNameOriginal": "Newcastle United FC",
       "season": "2002-03",
-      "born": "1981-07-21",
+      "born": "1981-07-31",
       "position": "CB",
       "tier": "B",
       "role": "starter",
@@ -2173,7 +2244,11 @@
         "https://www.11v11.com/teams/newcastle-united/tab/players/season/2003/",
         "https://www.footballsquads.co.uk/eng/2002-2003/faprem/newcas.htm",
         "https://fbref.com/en/squads/b2b47a98/2002-2003/Newcastle-United-Stats",
-        "https://www.11v11.com/competitions/premier-league/2003/"
+        "https://www.11v11.com/competitions/premier-league/2003/",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4056.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4061.json"
       ],
       "candidateRationale": "Independently nominated from 2002-03 dated squad and 11v11 player listings; historical role vs starter-equivalent to verify",
       "starts": 13,
@@ -2193,7 +2268,22 @@
       "threeSeasonReview": "numeric_starts_across_all_three_years_not_complete_tactical_review",
       "evaluationStatus": "individual_DRAFT_grade_historical_audit_unapproved",
       "rankStatus": "proposed_unapproved",
-      "rankRationale": "2002-03 CB 리그 전체 23명 중 잠정 22위. 2002-03 PL 13선발·개인 경기 기여와 2001-02 및 2000-01 지속성을 비교; 전체 시즌 최다 전술 위치 확증은 DRAFT 단계."
+      "rankRationale": "2002-03 CB 리그 전체 23명 중 잠정 22위. 2002-03 PL 13선발·개인 경기 기여와 2001-02 및 2000-01 지속성을 비교; 전체 시즌 최다 전술 위치 확증은 DRAFT 단계.",
+      "externalAuditCorrections": [
+        {
+          "field": "born",
+          "old": "1981-07-21",
+          "proposed": "1981-07-31",
+          "reason": "같은 이름·구단의 PL 시즌 선수표와 당시 경기 라인업의 생년월일이 일치한다.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4056.json",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4061.json"
+          ],
+          "status": "correction_required"
+        }
+      ]
     },
     {
       "id": "pl-2002-03-fresh-southampton-05",
@@ -2261,10 +2351,14 @@
         "https://www.11v11.com/teams/arsenal/tab/players/season/2003/",
         "https://www.footballsquads.co.uk/eng/2002-2003/faprem/arsenal.htm",
         "https://fbref.com/en/squads/18bb7c10/2002-2003/Arsenal-Stats",
-        "https://www.11v11.com/competitions/premier-league/2003/"
+        "https://www.11v11.com/competitions/premier-league/2003/",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4054.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4066.json"
       ],
       "candidateRationale": "Independently nominated from 2002-03 dated squad and 11v11 player listings; historical role vs starter-equivalent to verify",
-      "leagueAssists": 1,
+      "leagueAssists": 4,
       "starts": 30,
       "assessmentRationale": "30선발·1득점, PFA 올해의 팀. 전년도 아스널 주전 정착과 비교해 왼쪽 일대일 수비·전진 성장이 두드러진다. 2001-02 29선발, 2000-01 15선발를 낮은 순서의 가중치로 반영하고 2002-03 실제 활약을 최우선했다.",
       "previousSeasons": {
@@ -2282,7 +2376,22 @@
       "threeSeasonReview": "numeric_starts_across_all_three_years_not_complete_tactical_review",
       "evaluationStatus": "individual_DRAFT_grade_historical_audit_unapproved",
       "rankStatus": "proposed_unapproved",
-      "rankRationale": "2002-03 LB 리그 전체 12명 중 잠정 1위. 2002-03 PL 30선발·개인 경기 기여와 2001-02 및 2000-01 지속성을 비교; 전체 시즌 최다 전술 위치 확증은 DRAFT 단계."
+      "rankRationale": "2002-03 LB 리그 전체 12명 중 잠정 1위. 2002-03 PL 30선발·개인 경기 기여와 2001-02 및 2000-01 지속성을 비교; 전체 시즌 최다 전술 위치 확증은 DRAFT 단계.",
+      "externalAuditCorrections": [
+        {
+          "field": "leagueAssists",
+          "old": 1,
+          "proposed": 4,
+          "reason": "같은 구단·같은 PL 시즌의 경기 단위 집계와 시즌 선수표의 수치가 일치한다. PL 원천의 도움 집계 기준을 적용할 때의 수정값이다.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4054.json",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4066.json"
+          ],
+          "status": "correction_required"
+        }
+      ]
     },
     {
       "id": "pl-2002-03-fresh-southampton-06",
@@ -2397,10 +2506,14 @@
         "https://footballsquads.co.uk/eng/2002-2003/faprem/manutd.htm",
         "https://fbref.com/en/squads/19538871/2002-2003/Manchester-United-Stats",
         "https://www.statbunker.com/competitions/SeasonAppearances?club_id=3&comp_id=136",
-        "https://www.11v11.com/competitions/premier-league/2003/"
+        "https://www.11v11.com/competitions/premier-league/2003/",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4052.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4057.json"
       ],
       "candidateRationale": "Independently nominated from 2002-03 dated squad and 11v11 player listings; historical role vs starter-equivalent to verify",
-      "leagueAssists": 1,
+      "leagueAssists": 6,
       "starts": 34,
       "assessmentRationale": "2002-03 Manchester United FC의 LB 역할로 PL 34선발·1득점. 왼쪽 측면 수비·전진 및 실제 선발 비중을 근거로 A- 잠정 판단했고, 팀의 최종 성적을 가산점으로 삼지 않았다. 2001-02 31선발, 2000-01 25선발를 낮은 순서의 가중치로 반영하고 2002-03 실제 활약을 최우선했다.",
       "previousSeasons": {
@@ -2418,7 +2531,22 @@
       "threeSeasonReview": "numeric_starts_across_all_three_years_not_complete_tactical_review",
       "evaluationStatus": "individual_DRAFT_grade_historical_audit_unapproved",
       "rankStatus": "proposed_unapproved",
-      "rankRationale": "2002-03 LB 리그 전체 12명 중 잠정 4위. 2002-03 PL 34선발·개인 경기 기여와 2001-02 및 2000-01 지속성을 비교; 전체 시즌 최다 전술 위치 확증은 DRAFT 단계."
+      "rankRationale": "2002-03 LB 리그 전체 12명 중 잠정 4위. 2002-03 PL 34선발·개인 경기 기여와 2001-02 및 2000-01 지속성을 비교; 전체 시즌 최다 전술 위치 확증은 DRAFT 단계.",
+      "externalAuditCorrections": [
+        {
+          "field": "leagueAssists",
+          "old": 1,
+          "proposed": 6,
+          "reason": "같은 구단·같은 PL 시즌의 경기 단위 집계와 시즌 선수표의 수치가 일치한다. PL 원천의 도움 집계 기준을 적용할 때의 수정값이다.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4052.json",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4057.json"
+          ],
+          "status": "correction_required"
+        }
+      ]
     },
     {
       "id": "pl-2002-03-fresh-mancity-06",
@@ -3061,10 +3189,14 @@
         "https://www.footballsquads.co.uk/eng/2002-2003/faprem/mancity.htm",
         "https://fbref.com/en/squads/b8fd03ef/2002-2003/Manchester-City-Stats",
         "https://dr.statbunker.com/competitions/SeasonAppearances?club_id=14&comp_id=136",
-        "https://www.11v11.com/competitions/premier-league/2003/"
+        "https://www.11v11.com/competitions/premier-league/2003/",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4051.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4061.json"
       ],
       "candidateRationale": "Independently nominated from 2002-03 dated squad and 11v11 player listings; historical role vs starter-equivalent to verify",
-      "leagueAssists": 0,
+      "leagueAssists": 2,
       "starts": 25,
       "assessmentRationale": "2002-03 Manchester City의 RB 역할로 PL 25선발·2득점. 오른쪽 측면 수비·전진 및 실제 선발 비중을 근거로 B+ 잠정 판단했고, 팀의 최종 성적을 가산점으로 삼지 않았다. 2001-02 개인 선발 기록 추가 검증, 2000-01 개인 선발 기록 추가 검증를 낮은 순서의 가중치로 반영하고 2002-03 실제 활약을 최우선했다.",
       "previousSeasons": {
@@ -3082,7 +3214,22 @@
       "threeSeasonReview": "current_season_source_confirmed_prior_two_year_quantitative_partial",
       "evaluationStatus": "individual_DRAFT_grade_historical_audit_unapproved",
       "rankStatus": "proposed_unapproved",
-      "rankRationale": "2002-03 RB 리그 전체 13명 중 잠정 7위. 2002-03 PL 25선발·개인 경기 기여와 2001-02 및 2000-01 지속성을 비교; 전체 시즌 최다 전술 위치 확증은 DRAFT 단계."
+      "rankRationale": "2002-03 RB 리그 전체 13명 중 잠정 7위. 2002-03 PL 25선발·개인 경기 기여와 2001-02 및 2000-01 지속성을 비교; 전체 시즌 최다 전술 위치 확증은 DRAFT 단계.",
+      "externalAuditCorrections": [
+        {
+          "field": "leagueAssists",
+          "old": 0,
+          "proposed": 2,
+          "reason": "같은 구단·같은 PL 시즌의 경기 단위 집계와 시즌 선수표의 수치가 일치한다. PL 원천의 도움 집계 기준을 적용할 때의 수정값이다.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4051.json",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4061.json"
+          ],
+          "status": "correction_required"
+        }
+      ]
     },
     {
       "id": "pl-2002-03-fresh-manutd-09",
@@ -3317,7 +3464,7 @@
       "tier": "B-",
       "role": "backup",
       "rank": 13,
-      "leagueStarts": 10,
+      "leagueStarts": 11,
       "leagueGoals": null,
       "review": "draft_unapproved",
       "positionMajorityVerified": false,
@@ -3326,10 +3473,13 @@
         "https://www.11v11.com/teams/arsenal/tab/players/season/2003/",
         "https://www.footballsquads.co.uk/eng/2002-2003/faprem/arsenal.htm",
         "https://www.soccerbase.com/teams/team.sd?season_id=132&teamTabs=stats&team_id=142",
-        "https://www.11v11.com/competitions/premier-league/2003/"
+        "https://www.11v11.com/competitions/premier-league/2003/",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4085.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4096.json"
       ],
       "candidateRationale": "Independently nominated from 2002-03 dated squad and 11v11 player listings; historical role vs starter-equivalent to verify",
-      "starts": 10,
+      "starts": 11,
       "assessmentRationale": "2002-03 Arsenal FC의 RB 역할로 PL 10선발. 오른쪽 측면 수비·전진 및 실제 선발 비중을 근거로 B- 잠정 판단했고, 팀의 최종 성적을 가산점으로 삼지 않았다. 2001-02 15선발, 2000-01 개인 선발 기록 추가 검증를 낮은 순서의 가중치로 반영하고 2002-03 실제 활약을 최우선했다.",
       "previousSeasons": {
         "2001-02": {
@@ -3346,7 +3496,21 @@
       "threeSeasonReview": "current_season_source_confirmed_prior_two_year_quantitative_partial",
       "evaluationStatus": "individual_DRAFT_grade_historical_audit_unapproved",
       "rankStatus": "proposed_unapproved",
-      "rankRationale": "2002-03 RB 리그 전체 13명 중 잠정 13위. 2002-03 PL 10선발·개인 경기 기여와 2001-02 및 2000-01 지속성을 비교; 전체 시즌 최다 전술 위치 확증은 DRAFT 단계."
+      "rankRationale": "2002-03 RB 리그 전체 13명 중 잠정 13위. 2002-03 PL 10선발·개인 경기 기여와 2001-02 및 2000-01 지속성을 비교; 전체 시즌 최다 전술 위치 확증은 DRAFT 단계.",
+      "externalAuditCorrections": [
+        {
+          "field": "leagueStarts",
+          "old": 10,
+          "proposed": 11,
+          "reason": "선발 라인업 집계에서 값 확인. 소속 구단의 PL 경기만 집계.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4085.json",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4096.json"
+          ],
+          "status": "correction_required"
+        }
+      ]
     },
     {
       "id": "pl-2002-03-fresh-manutd-10",
@@ -3975,7 +4139,7 @@
       "club": "southampton",
       "clubNameOriginal": "Southampton FC",
       "season": "2002-03",
-      "born": "1969-10-03",
+      "born": "1969-01-03",
       "position": "CM",
       "tier": "B+",
       "role": "starter",
@@ -3990,7 +4154,11 @@
         "https://www.footballsquads.co.uk/eng/2002-2003/faprem/southam.htm",
         "https://fbref.com/en/squads/33c895d4/2002-2003/Southampton-Stats",
         "https://ww.statbunker.com/competitions/SeasonAppearances?club_id=18&comp_id=136",
-        "https://www.11v11.com/competitions/premier-league/2003/"
+        "https://www.11v11.com/competitions/premier-league/2003/",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4053.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4060.json"
       ],
       "candidateRationale": "Independently nominated from 2002-03 dated squad and 11v11 player listings; historical role vs starter-equivalent to verify",
       "leagueAssists": 3,
@@ -4011,7 +4179,22 @@
       "threeSeasonReview": "current_season_source_confirmed_prior_two_year_quantitative_partial",
       "evaluationStatus": "individual_DRAFT_grade_historical_audit_unapproved",
       "rankStatus": "proposed_unapproved",
-      "rankRationale": "2002-03 CM 리그 전체 15명 중 잠정 6위. 2002-03 PL 30선발·개인 경기 기여와 2001-02 및 2000-01 지속성을 비교; 전체 시즌 최다 전술 위치 확증은 DRAFT 단계."
+      "rankRationale": "2002-03 CM 리그 전체 15명 중 잠정 6위. 2002-03 PL 30선발·개인 경기 기여와 2001-02 및 2000-01 지속성을 비교; 전체 시즌 최다 전술 위치 확증은 DRAFT 단계.",
+      "externalAuditCorrections": [
+        {
+          "field": "born",
+          "old": "1969-10-03",
+          "proposed": "1969-01-03",
+          "reason": "같은 이름·구단의 PL 시즌 선수표와 당시 경기 라인업의 생년월일이 일치한다.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4053.json",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4060.json"
+          ],
+          "status": "correction_required"
+        }
+      ]
     },
     {
       "id": "pl-2002-03-fresh-mancity-12",
@@ -4608,10 +4791,14 @@
         "https://footballsquads.co.uk/eng/2002-2003/faprem/manutd.htm",
         "https://fbref.com/en/squads/19538871/2002-2003/Manchester-United-Stats",
         "https://www.statbunker.com/competitions/SeasonAppearances?club_id=3&comp_id=136",
-        "https://www.11v11.com/competitions/premier-league/2003/"
+        "https://www.11v11.com/competitions/premier-league/2003/",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4052.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4057.json"
       ],
       "candidateRationale": "Independently nominated from 2002-03 dated squad and 11v11 player listings; historical role vs starter-equivalent to verify",
-      "leagueAssists": 5,
+      "leagueAssists": 10,
       "starts": 32,
       "assessmentRationale": "2002-03 Manchester United FC의 LW 역할로 PL 32선발·8득점. 왼쪽 전진·기회 창출 및 실제 선발 비중을 근거로 A 잠정 판단했고, 팀의 최종 성적을 가산점으로 삼지 않았다. 2001-02 18선발, 2000-01 24선발를 낮은 순서의 가중치로 반영하고 2002-03 실제 활약을 최우선했다.",
       "previousSeasons": {
@@ -4629,7 +4816,22 @@
       "threeSeasonReview": "numeric_starts_across_all_three_years_not_complete_tactical_review",
       "evaluationStatus": "individual_DRAFT_grade_historical_audit_unapproved",
       "rankStatus": "proposed_unapproved",
-      "rankRationale": "2002-03 LW 리그 전체 9명 중 잠정 3위. 2002-03 PL 32선발·개인 경기 기여와 2001-02 및 2000-01 지속성을 비교; 전체 시즌 최다 전술 위치 확증은 DRAFT 단계."
+      "rankRationale": "2002-03 LW 리그 전체 9명 중 잠정 3위. 2002-03 PL 32선발·개인 경기 기여와 2001-02 및 2000-01 지속성을 비교; 전체 시즌 최다 전술 위치 확증은 DRAFT 단계.",
+      "externalAuditCorrections": [
+        {
+          "field": "leagueAssists",
+          "old": 5,
+          "proposed": 10,
+          "reason": "같은 구단·같은 PL 시즌의 경기 단위 집계와 시즌 선수표의 수치가 일치한다. PL 원천의 도움 집계 기준을 적용할 때의 수정값이다.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4052.json",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4057.json"
+          ],
+          "status": "correction_required"
+        }
+      ]
     },
     {
       "id": "pl-2002-03-fresh-newcastle-13",
@@ -4910,7 +5112,7 @@
       "position": "RW",
       "tier": "A",
       "role": "starter",
-      "rank": 1,
+      "rank": 2,
       "leagueStarts": 33,
       "leagueGoals": null,
       "review": "draft_unapproved",
@@ -4920,7 +5122,10 @@
         "https://www.11v11.com/teams/newcastle-united/tab/players/season/2003/",
         "https://www.footballsquads.co.uk/eng/2002-2003/faprem/newcas.htm",
         "https://fbref.com/en/squads/b2b47a98/2002-2003/Newcastle-United-Stats",
-        "https://www.11v11.com/competitions/premier-league/2003/"
+        "https://www.11v11.com/competitions/premier-league/2003/",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://www.theguardian.com/football/2002/dec/23/match.sport14",
+        "https://www.nufc.com/html/2002-03html/2002-11-16southampton-h.html"
       ],
       "candidateRationale": "Independently nominated from 2002-03 dated squad and 11v11 player listings; historical role vs starter-equivalent to verify",
       "starts": 33,
@@ -4940,7 +5145,21 @@
       "threeSeasonReview": "numeric_starts_across_all_three_years_not_complete_tactical_review",
       "evaluationStatus": "individual_DRAFT_grade_historical_audit_unapproved",
       "rankStatus": "proposed_unapproved",
-      "rankRationale": "2002-03 RW 리그 전체 15명 중 잠정 1위. 2002-03 PL 33선발·개인 경기 기여와 2001-02 및 2000-01 지속성을 비교; 전체 시즌 최다 전술 위치 확증은 DRAFT 단계."
+      "rankRationale": "PFA에 포함된 Dyer의 당해 시즌 성과를 인정한다. Dyer의 우측·중앙 혼용이 확인됐고 Beckham은 당해 27선발·6골·8도움에 앞선 두 시즌 우측 활약을 합쳐 RW 1위 및 Best XI 변경을 권고.",
+      "externalAuditCorrections": [
+        {
+          "field": "rank",
+          "old": 1,
+          "proposed": 2,
+          "reason": "PFA에 포함된 Dyer의 당해 시즌 성과를 인정한다. Dyer의 우측·중앙 혼용이 확인됐고 Beckham은 당해 27선발·6골·8도움에 앞선 두 시즌 우측 활약을 합쳐 RW 1위 및 Best XI 변경을 권고.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://www.theguardian.com/football/2002/dec/23/match.sport14",
+            "https://www.nufc.com/html/2002-03html/2002-11-16southampton-h.html"
+          ],
+          "status": "reassessment_recommended"
+        }
+      ]
     },
     {
       "id": "pl-2002-03-fresh-manutd-16",
@@ -4954,7 +5173,7 @@
       "position": "RW",
       "tier": "A",
       "role": "starter",
-      "rank": 2,
+      "rank": 1,
       "leagueStarts": 27,
       "leagueGoals": 6,
       "review": "draft_unapproved",
@@ -4964,7 +5183,10 @@
         "https://www.11v11.com/teams/manchester-united/tab/players/season/2003/",
         "https://footballsquads.co.uk/eng/2002-2003/faprem/manutd.htm",
         "https://www.statbunker.com/competitions/SeasonAppearances?club_id=3&comp_id=136",
-        "https://www.11v11.com/competitions/premier-league/2003/"
+        "https://www.11v11.com/competitions/premier-league/2003/",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://www.theguardian.com/football/2002/dec/23/match.sport14",
+        "https://www.nufc.com/html/2002-03html/2002-11-16southampton-h.html"
       ],
       "candidateRationale": "Independently nominated from 2002-03 dated squad and 11v11 player listings; historical role vs starter-equivalent to verify",
       "starts": 27,
@@ -4984,7 +5206,21 @@
       "threeSeasonReview": "numeric_starts_across_all_three_years_not_complete_tactical_review",
       "evaluationStatus": "individual_DRAFT_grade_historical_audit_unapproved",
       "rankStatus": "proposed_unapproved",
-      "rankRationale": "2002-03 RW 리그 전체 15명 중 잠정 2위. 2002-03 PL 27선발·개인 경기 기여와 2001-02 및 2000-01 지속성을 비교; 전체 시즌 최다 전술 위치 확증은 DRAFT 단계."
+      "rankRationale": "PFA에 포함된 Dyer의 당해 시즌 성과를 인정한다. Dyer의 우측·중앙 혼용이 확인됐고 Beckham은 당해 27선발·6골·8도움에 앞선 두 시즌 우측 활약을 합쳐 RW 1위 및 Best XI 변경을 권고.",
+      "externalAuditCorrections": [
+        {
+          "field": "rank",
+          "old": 2,
+          "proposed": 1,
+          "reason": "PFA에 포함된 Dyer의 당해 시즌 성과를 인정한다. Dyer의 우측·중앙 혼용이 확인됐고 Beckham은 당해 27선발·6골·8도움에 앞선 두 시즌 우측 활약을 합쳐 RW 1위 및 Best XI 변경을 권고.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://www.theguardian.com/football/2002/dec/23/match.sport14",
+            "https://www.nufc.com/html/2002-03html/2002-11-16southampton-h.html"
+          ],
+          "status": "reassessment_recommended"
+        }
+      ]
     },
     {
       "id": "pl-2002-03-fresh-liverpool-12",
@@ -5317,10 +5553,14 @@
         "https://www.footballsquads.co.uk/eng/2002-2003/faprem/mancity.htm",
         "https://fbref.com/en/squads/b8fd03ef/2002-2003/Manchester-City-Stats",
         "https://dr.statbunker.com/competitions/SeasonAppearances?club_id=14&comp_id=136",
-        "https://www.11v11.com/competitions/premier-league/2003/"
+        "https://www.11v11.com/competitions/premier-league/2003/",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4051.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4061.json"
       ],
       "candidateRationale": "Independently nominated from 2002-03 dated squad and 11v11 player listings; historical role vs starter-equivalent to verify",
-      "leagueAssists": 1,
+      "leagueAssists": 3,
       "starts": 23,
       "assessmentRationale": "2002-03 Manchester City의 RW 역할로 PL 23선발·1득점. 오른쪽 전개·크로스 및 실제 선발 비중을 근거로 B+ 잠정 판단했고, 팀의 최종 성적을 가산점으로 삼지 않았다. 2001-02 개인 선발 기록 추가 검증, 2000-01 개인 선발 기록 추가 검증를 낮은 순서의 가중치로 반영하고 2002-03 실제 활약을 최우선했다.",
       "previousSeasons": {
@@ -5338,7 +5578,22 @@
       "threeSeasonReview": "current_season_source_confirmed_prior_two_year_quantitative_partial",
       "evaluationStatus": "individual_DRAFT_grade_historical_audit_unapproved",
       "rankStatus": "proposed_unapproved",
-      "rankRationale": "2002-03 RW 리그 전체 15명 중 잠정 10위. 2002-03 PL 23선발·개인 경기 기여와 2001-02 및 2000-01 지속성을 비교; 전체 시즌 최다 전술 위치 확증은 DRAFT 단계."
+      "rankRationale": "2002-03 RW 리그 전체 15명 중 잠정 10위. 2002-03 PL 23선발·개인 경기 기여와 2001-02 및 2000-01 지속성을 비교; 전체 시즌 최다 전술 위치 확증은 DRAFT 단계.",
+      "externalAuditCorrections": [
+        {
+          "field": "leagueAssists",
+          "old": 1,
+          "proposed": 3,
+          "reason": "같은 구단·같은 PL 시즌의 경기 단위 집계와 시즌 선수표의 수치가 일치한다. PL 원천의 도움 집계 기준을 적용할 때의 수정값이다.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4051.json",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4061.json"
+          ],
+          "status": "correction_required"
+        }
+      ]
     },
     {
       "id": "pl-2002-03-fresh-chelsea-11",
@@ -5628,10 +5883,14 @@
         "https://footballsquads.co.uk/eng/2002-2003/faprem/manutd.htm",
         "https://fbref.com/en/squads/19538871/2002-2003/Manchester-United-Stats",
         "https://www.statbunker.com/competitions/SeasonAppearances?club_id=3&comp_id=136",
-        "https://www.11v11.com/competitions/premier-league/2003/"
+        "https://www.11v11.com/competitions/premier-league/2003/",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4052.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4057.json"
       ],
       "candidateRationale": "Independently nominated from 2002-03 dated squad and 11v11 player listings; historical role vs starter-equivalent to verify",
-      "leagueAssists": 3,
+      "leagueAssists": 4,
       "starts": 33,
       "assessmentRationale": "33선발·25득점으로 해당 시즌 득점왕 및 리그 올해의 선수. 2001-02 리그 23득점에 이어 박스 안 위치선정과 마무리의 재현성이 뛰어나다. 2001-02 29선발, 2000-01 개인 선발 기록 추가 검증를 낮은 순서의 가중치로 반영하고 2002-03 실제 활약을 최우선했다.",
       "previousSeasons": {
@@ -5649,7 +5908,22 @@
       "threeSeasonReview": "current_season_source_confirmed_prior_two_year_quantitative_partial",
       "evaluationStatus": "individual_DRAFT_grade_historical_audit_unapproved",
       "rankStatus": "proposed_unapproved",
-      "rankRationale": "2002-03 ST 리그 전체 21명 중 잠정 2위. 2002-03 PL 33선발·개인 경기 기여와 2001-02 및 2000-01 지속성을 비교; 전체 시즌 최다 전술 위치 확증은 DRAFT 단계."
+      "rankRationale": "2002-03 ST 리그 전체 21명 중 잠정 2위. 2002-03 PL 33선발·개인 경기 기여와 2001-02 및 2000-01 지속성을 비교; 전체 시즌 최다 전술 위치 확증은 DRAFT 단계.",
+      "externalAuditCorrections": [
+        {
+          "field": "leagueAssists",
+          "old": 3,
+          "proposed": 4,
+          "reason": "같은 구단·같은 PL 시즌의 경기 단위 집계와 시즌 선수표의 수치가 일치한다. PL 원천의 도움 집계 기준을 적용할 때의 수정값이다.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4052.json",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4057.json"
+          ],
+          "status": "correction_required"
+        }
+      ]
     },
     {
       "id": "pl-2002-03-fresh-newcastle-16",
@@ -6015,7 +6289,7 @@
       "club": "arsenal",
       "clubNameOriginal": "Arsenal FC",
       "season": "2002-03",
-      "born": "1969-05-18",
+      "born": "1969-05-10",
       "position": "ST",
       "tier": "A-",
       "role": "starter",
@@ -6029,7 +6303,11 @@
         "https://www.11v11.com/teams/arsenal/tab/players/season/2003/",
         "https://www.footballsquads.co.uk/eng/2002-2003/faprem/arsenal.htm",
         "https://www.soccerbase.com/teams/team.sd?season_id=132&teamTabs=stats&team_id=142",
-        "https://www.11v11.com/competitions/premier-league/2003/"
+        "https://www.11v11.com/competitions/premier-league/2003/",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4054.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4066.json"
       ],
       "candidateRationale": "Independently nominated from 2002-03 dated squad and 11v11 player listings; historical role vs starter-equivalent to verify",
       "starts": 23,
@@ -6049,7 +6327,22 @@
       "threeSeasonReview": "numeric_starts_across_all_three_years_not_complete_tactical_review",
       "evaluationStatus": "individual_DRAFT_grade_historical_audit_unapproved",
       "rankStatus": "proposed_unapproved",
-      "rankRationale": "2002-03 ST 리그 전체 21명 중 잠정 11위. 2002-03 PL 23선발·개인 경기 기여와 2001-02 및 2000-01 지속성을 비교; 전체 시즌 최다 전술 위치 확증은 DRAFT 단계."
+      "rankRationale": "2002-03 ST 리그 전체 21명 중 잠정 11위. 2002-03 PL 23선발·개인 경기 기여와 2001-02 및 2000-01 지속성을 비교; 전체 시즌 최다 전술 위치 확증은 DRAFT 단계.",
+      "externalAuditCorrections": [
+        {
+          "field": "born",
+          "old": "1969-05-18",
+          "proposed": "1969-05-10",
+          "reason": "같은 이름·구단의 PL 시즌 선수표와 당시 경기 라인업의 생년월일이 일치한다.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4054.json",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4066.json"
+          ],
+          "status": "correction_required"
+        }
+      ]
     },
     {
       "id": "pl-2002-03-fresh-chelsea-15",
@@ -6534,9 +6827,9 @@
       "reason": "21선발·14골, PFA 올해의 팀"
     },
     {
-      "playerId": "pl-2002-03-fresh-newcastle-14",
       "position": "RW",
-      "reason": "33선발·PFA 올해의 팀·오른쪽 공격 전진"
+      "playerId": "pl-2002-03-fresh-manutd-16",
+      "reason": "PFA에 포함된 Dyer의 당해 시즌 성과를 인정한다. Dyer의 우측·중앙 혼용이 확인됐고 Beckham은 당해 27선발·6골·8도움에 앞선 두 시즌 우측 활약을 합쳐 RW 1위 및 Best XI 변경을 권고."
     },
     {
       "playerId": "pl-2002-03-fresh-arsenal-16",

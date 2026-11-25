@@ -72,7 +72,20 @@
       "Previous dataset DOB/source contradictions exist (e.g. Riise, Pirès, Ferdinand, Bellamy); resolved here using independently consistent historical birth dates.",
       "No browser UI validation performed via connector-only inspection.",
       "105 current-season league-start values were entered as preliminary inputs; no full player-by-player external reconciliation was performed. Treat individual figures as UNVERIFIED pending audit."
-    ]
+    ],
+    "externalAudit20261126": {
+      "baseCommit": "078c124cc365fab971be8263e2cbcacce5999719",
+      "report": "audit/PL_1999_2004_EXTERNAL_REVIEW_APPLIED_2026-11-26.json",
+      "status": "draft_unapproved",
+      "players": 105,
+      "facts": 5,
+      "ranks": 4,
+      "tiers": 0,
+      "replacements": 0,
+      "xi": false,
+      "held": 0,
+      "note": "Structured corrected values supersede conflicting legacy text. Detailed positions, qualitative tiers and formation frequency not finally verified."
+    }
   },
   "clubs": [
     {
@@ -965,7 +978,7 @@
       "position": "CM",
       "role": "starter",
       "tier": "S",
-      "rank": 2,
+      "rank": 1,
       "leagueStarts": 29,
       "starts": 29,
       "leagueGoals": 3,
@@ -974,7 +987,9 @@
       "sourceLeagueStartsStatus": "provisional_2003_04_club_source_individual_stats_unverified",
       "sources": [
         "https://www.statbunker.com/competitions/SeasonAppearances?club_id=5&comp_id=163",
-        "https://www.footballsquads.co.uk/eng/2003-2004/faprem/arsenal.htm"
+        "https://www.footballsquads.co.uk/eng/2003-2004/faprem/arsenal.htm",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://www.11v11.com/competitions/premier-league/2004/"
       ],
       "candidateRationale": "2003-04 시즌 Arsenal FC 리그 출전과 구단 전술을 바탕으로 신규 후보 선정",
       "evaluationStatus": "individual_DRAFT_grade_historical_audit_unapproved",
@@ -994,7 +1009,20 @@
       "assessmentRationale": "29선발. 볼 탈취와 전진 운반을 겸한 4-4-2 중원 핵심. 직전 두 시즌은 낮은 가중치 적용: 2001-02 35선발(기존 DRAFT, 재검증 필요); 2002-03 24선발(기존 DRAFT, 재검증 필요).",
       "threeSeasonReview": "current_season_starts_sourced_prior_two_seasons_partial_DRAFT",
       "positionReviewNote": null,
-      "rankRationale": "2003-04 CM 총 10명 중 DRAFT 2위. S 티어 및 리그 29선발·3골을 기준으로 현재 시즌 최우선, 이전 2002-03·2001-02를 보조 가중. 다기능 선수의 주 포지션은 재검증 대상."
+      "rankRationale": "기존 티어 순서와 불일치한 CM 랭킹을 정렬. 같은 티어 내부 상대 순서는 유지한다.",
+      "externalAuditCorrections": [
+        {
+          "field": "rank",
+          "old": 2,
+          "proposed": 1,
+          "reason": "기존 티어 순서와 불일치한 CM 랭킹을 정렬. 같은 티어 내부 상대 순서는 유지한다.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://www.11v11.com/competitions/premier-league/2004/"
+          ],
+          "status": "reassessment_recommended"
+        }
+      ]
     },
     {
       "id": "pl-2003-04-fresh-arsenal-10",
@@ -1259,7 +1287,7 @@
       "name": "Dennis Bergkamp",
       "nameKo": "데니스 베르캄프",
       "nameOriginal": "Dennis Bergkamp",
-      "born": "1969-05-18",
+      "born": "1969-05-10",
       "club": "arsenal",
       "clubNameOriginal": "Arsenal FC",
       "season": "2003-04",
@@ -1275,7 +1303,11 @@
       "sourceLeagueStartsStatus": "provisional_2003_04_club_source_individual_stats_unverified",
       "sources": [
         "https://www.statbunker.com/competitions/SeasonAppearances?club_id=5&comp_id=163",
-        "https://www.footballsquads.co.uk/eng/2003-2004/faprem/arsenal.htm"
+        "https://www.footballsquads.co.uk/eng/2003-2004/faprem/arsenal.htm",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4485.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4434.json"
       ],
       "candidateRationale": "2003-04 시즌 Arsenal FC 리그 출전과 구단 전술을 바탕으로 신규 후보 선정",
       "evaluationStatus": "individual_DRAFT_grade_historical_audit_unapproved",
@@ -1295,7 +1327,22 @@
       "assessmentRationale": "21회 리그 선발, 4골. ST에서 출전 비중과 개인 역할을 중심으로 A 잠정 평가; 팀 순위는 직접 가산하지 않음. 직전 두 시즌은 낮은 가중치 적용: 2001-02 22선발(기존 DRAFT, 재검증 필요); 2002-03 23선발(기존 DRAFT, 재검증 필요).",
       "threeSeasonReview": "current_season_starts_sourced_prior_two_seasons_partial_DRAFT",
       "positionReviewNote": null,
-      "rankRationale": "2003-04 ST 총 16명 중 DRAFT 5위. A 티어 및 리그 21선발·4골을 기준으로 현재 시즌 최우선, 이전 2002-03·2001-02를 보조 가중. 다기능 선수의 주 포지션은 재검증 대상."
+      "rankRationale": "2003-04 ST 총 16명 중 DRAFT 5위. A 티어 및 리그 21선발·4골을 기준으로 현재 시즌 최우선, 이전 2002-03·2001-02를 보조 가중. 다기능 선수의 주 포지션은 재검증 대상.",
+      "externalAuditCorrections": [
+        {
+          "field": "born",
+          "old": "1969-05-18",
+          "proposed": "1969-05-10",
+          "reason": "같은 이름·구단의 PL 시즌 선수표와 당시 경기 라인업의 생년월일이 일치한다.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4485.json",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4434.json"
+          ],
+          "status": "correction_required"
+        }
+      ]
     },
     {
       "id": "pl-2003-04-fresh-arsenal-17",
@@ -1517,7 +1564,7 @@
       "name": "Marcel Desailly",
       "nameKo": "마르셀 드사이",
       "nameOriginal": "Marcel Desailly",
-      "born": "1968-09-17",
+      "born": "1968-09-07",
       "club": "chelsea",
       "clubNameOriginal": "Chelsea FC",
       "season": "2003-04",
@@ -1533,7 +1580,11 @@
       "sourceLeagueStartsStatus": "provisional_2003_04_club_source_individual_stats_unverified",
       "sources": [
         "https://www.statbunker.com/competitions/SeasonAppearances?club_id=8&comp_id=163",
-        "https://www.footballsquads.co.uk/eng/2003-2004/faprem/chelsea.htm"
+        "https://www.footballsquads.co.uk/eng/2003-2004/faprem/chelsea.htm",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4598.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4637.json"
       ],
       "candidateRationale": "2003-04 시즌 Chelsea FC 리그 출전과 구단 전술을 바탕으로 신규 후보 선정",
       "evaluationStatus": "individual_DRAFT_grade_historical_audit_unapproved",
@@ -1553,7 +1604,22 @@
       "assessmentRationale": "15회 리그 선발, 0골. CB에서 출전 비중과 개인 역할을 중심으로 B 잠정 평가; 팀 순위는 직접 가산하지 않음. 직전 두 시즌은 낮은 가중치 적용: 2001-02 24선발(기존 DRAFT, 재검증 필요); 2002-03 30선발(기존 DRAFT, 재검증 필요).",
       "threeSeasonReview": "current_season_starts_sourced_prior_two_seasons_partial_DRAFT",
       "positionReviewNote": null,
-      "rankRationale": "2003-04 CB 총 18명 중 DRAFT 13위. B 티어 및 리그 15선발·0골을 기준으로 현재 시즌 최우선, 이전 2002-03·2001-02를 보조 가중. 다기능 선수의 주 포지션은 재검증 대상."
+      "rankRationale": "2003-04 CB 총 18명 중 DRAFT 13위. B 티어 및 리그 15선발·0골을 기준으로 현재 시즌 최우선, 이전 2002-03·2001-02를 보조 가중. 다기능 선수의 주 포지션은 재검증 대상.",
+      "externalAuditCorrections": [
+        {
+          "field": "born",
+          "old": "1968-09-17",
+          "proposed": "1968-09-07",
+          "reason": "같은 이름·구단의 PL 시즌 선수표와 당시 경기 라인업의 생년월일이 일치한다.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4598.json",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4637.json"
+          ],
+          "status": "correction_required"
+        }
+      ]
     },
     {
       "id": "pl-2003-04-fresh-chelsea-06",
@@ -1825,7 +1891,7 @@
       "position": "CM",
       "role": "starter",
       "tier": "A+",
-      "rank": 3,
+      "rank": 2,
       "leagueStarts": 38,
       "starts": 38,
       "leagueGoals": 10,
@@ -1834,7 +1900,9 @@
       "sourceLeagueStartsStatus": "provisional_2003_04_club_source_individual_stats_unverified",
       "sources": [
         "https://www.statbunker.com/competitions/SeasonAppearances?club_id=8&comp_id=163",
-        "https://www.footballsquads.co.uk/eng/2003-2004/faprem/chelsea.htm"
+        "https://www.footballsquads.co.uk/eng/2003-2004/faprem/chelsea.htm",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://www.11v11.com/competitions/premier-league/2004/"
       ],
       "candidateRationale": "2003-04 시즌 Chelsea FC 리그 출전과 구단 전술을 바탕으로 신규 후보 선정",
       "evaluationStatus": "individual_DRAFT_grade_historical_audit_unapproved",
@@ -1854,7 +1922,20 @@
       "assessmentRationale": "38선발 10골, PFA 올해의 팀. 중원 득점과 전진 능력. 직전 두 시즌은 낮은 가중치 적용: 2001-02 34선발(기존 DRAFT, 재검증 필요); 2002-03 37선발(기존 DRAFT, 재검증 필요).",
       "threeSeasonReview": "current_season_starts_sourced_prior_two_seasons_partial_DRAFT",
       "positionReviewNote": null,
-      "rankRationale": "2003-04 CM 총 10명 중 DRAFT 3위. A+ 티어 및 리그 38선발·10골을 기준으로 현재 시즌 최우선, 이전 2002-03·2001-02를 보조 가중. 다기능 선수의 주 포지션은 재검증 대상."
+      "rankRationale": "기존 티어 순서와 불일치한 CM 랭킹을 정렬. 같은 티어 내부 상대 순서는 유지한다.",
+      "externalAuditCorrections": [
+        {
+          "field": "rank",
+          "old": 3,
+          "proposed": 2,
+          "reason": "기존 티어 순서와 불일치한 CM 랭킹을 정렬. 같은 티어 내부 상대 순서는 유지한다.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://www.11v11.com/competitions/premier-league/2004/"
+          ],
+          "status": "reassessment_recommended"
+        }
+      ]
     },
     {
       "id": "pl-2003-04-fresh-chelsea-13",
@@ -3330,7 +3411,7 @@
       "position": "CM",
       "role": "starter",
       "tier": "A+",
-      "rank": 4,
+      "rank": 3,
       "leagueStarts": 34,
       "starts": 34,
       "leagueGoals": 4,
@@ -3339,7 +3420,9 @@
       "sourceLeagueStartsStatus": "provisional_2003_04_club_source_individual_stats_unverified",
       "sources": [
         "https://fbref.com/en/squads/822bd0ba/2003-2004/c9/Liverpool-Stats-Premier-League",
-        "https://footballsquads.co.uk/eng/2003-2004/faprem/liverpool.htm"
+        "https://footballsquads.co.uk/eng/2003-2004/faprem/liverpool.htm",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://www.11v11.com/competitions/premier-league/2004/"
       ],
       "candidateRationale": "2003-04 시즌 Liverpool FC 리그 출전과 구단 전술을 바탕으로 신규 후보 선정",
       "evaluationStatus": "individual_DRAFT_grade_historical_audit_unapproved",
@@ -3359,7 +3442,20 @@
       "assessmentRationale": "34선발 4골. 장거리 전개·볼 회수·활동량의 중심, PFA 올해의 팀. 직전 두 시즌은 낮은 가중치 적용: 2001-02 26선발(기존 DRAFT, 재검증 필요); 2002-03 32선발(기존 DRAFT, 재검증 필요).",
       "threeSeasonReview": "current_season_starts_sourced_prior_two_seasons_partial_DRAFT",
       "positionReviewNote": null,
-      "rankRationale": "2003-04 CM 총 10명 중 DRAFT 4위. A+ 티어 및 리그 34선발·4골을 기준으로 현재 시즌 최우선, 이전 2002-03·2001-02를 보조 가중. 다기능 선수의 주 포지션은 재검증 대상."
+      "rankRationale": "기존 티어 순서와 불일치한 CM 랭킹을 정렬. 같은 티어 내부 상대 순서는 유지한다.",
+      "externalAuditCorrections": [
+        {
+          "field": "rank",
+          "old": 4,
+          "proposed": 3,
+          "reason": "기존 티어 순서와 불일치한 CM 랭킹을 정렬. 같은 티어 내부 상대 순서는 유지한다.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://www.11v11.com/competitions/premier-league/2004/"
+          ],
+          "status": "reassessment_recommended"
+        }
+      ]
     },
     {
       "id": "pl-2003-04-fresh-liverpool-11",
@@ -3373,7 +3469,7 @@
       "position": "CM",
       "role": "backup",
       "tier": "B+",
-      "rank": 1,
+      "rank": 4,
       "leagueStarts": 19,
       "starts": 19,
       "leagueGoals": 5,
@@ -3382,7 +3478,9 @@
       "sourceLeagueStartsStatus": "provisional_2003_04_club_source_individual_stats_unverified",
       "sources": [
         "https://fbref.com/en/squads/822bd0ba/2003-2004/c9/Liverpool-Stats-Premier-League",
-        "https://footballsquads.co.uk/eng/2003-2004/faprem/liverpool.htm"
+        "https://footballsquads.co.uk/eng/2003-2004/faprem/liverpool.htm",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://www.11v11.com/competitions/premier-league/2004/"
       ],
       "candidateRationale": "2003-04 시즌 Liverpool FC 리그 출전과 구단 전술을 바탕으로 신규 후보 선정",
       "evaluationStatus": "individual_DRAFT_grade_historical_audit_unapproved",
@@ -3402,7 +3500,20 @@
       "assessmentRationale": "19회 리그 선발, 5골. CM에서 출전 비중과 개인 역할을 중심으로 B+ 잠정 평가; 팀 순위는 직접 가산하지 않음. 직전 두 시즌은 낮은 가중치 적용: 2001-02 31선발(기존 DRAFT, 재검증 필요); 2002-03 36선발(기존 DRAFT, 재검증 필요).",
       "threeSeasonReview": "current_season_starts_sourced_prior_two_seasons_partial_DRAFT",
       "positionReviewNote": null,
-      "rankRationale": "2003-04 CM 총 10명 중 DRAFT 1위. B+  티어 및 리그 19선발·5골을 기준으로 현재 시즌 최우선, 이전 2002-03·2001-02를 보조 가중. 다기능 선수의 주 포지션은 재검증 대상."
+      "rankRationale": "기존 티어 순서와 불일치한 CM 랭킹을 정렬. 같은 티어 내부 상대 순서는 유지한다.",
+      "externalAuditCorrections": [
+        {
+          "field": "rank",
+          "old": 1,
+          "proposed": 4,
+          "reason": "기존 티어 순서와 불일치한 CM 랭킹을 정렬. 같은 티어 내부 상대 순서는 유지한다.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://www.11v11.com/competitions/premier-league/2004/"
+          ],
+          "status": "reassessment_recommended"
+        }
+      ]
     },
     {
       "id": "pl-2003-04-fresh-liverpool-12",
@@ -3710,7 +3821,7 @@
       "name": "Shay Given",
       "nameKo": "셰이 기븐",
       "nameOriginal": "Shay Given",
-      "born": "1976-04-24",
+      "born": "1976-04-20",
       "club": "newcastle",
       "clubNameOriginal": "Newcastle United FC",
       "season": "2003-04",
@@ -3726,7 +3837,11 @@
       "sourceLeagueStartsStatus": "provisional_2003_04_club_source_individual_stats_unverified",
       "sources": [
         "https://www.statbunker.com/competitions/SeasonAppearances?club_id=16&comp_id=163",
-        "https://footballsquads.co.uk/eng/2003-2004/faprem/newcas.htm"
+        "https://footballsquads.co.uk/eng/2003-2004/faprem/newcas.htm",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4464.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4462.json"
       ],
       "candidateRationale": "2003-04 시즌 Newcastle United FC 리그 출전과 구단 전술을 바탕으로 신규 후보 선정",
       "evaluationStatus": "individual_DRAFT_grade_historical_audit_unapproved",
@@ -3746,14 +3861,29 @@
       "assessmentRationale": "38경기 전부 선발. 지속적 출전과 슈팅 방어 기여. 직전 두 시즌은 낮은 가중치 적용: 2001-02 38선발(기존 DRAFT, 재검증 필요); 2002-03 38선발(기존 DRAFT, 재검증 필요).",
       "threeSeasonReview": "current_season_starts_sourced_prior_two_seasons_partial_DRAFT",
       "positionReviewNote": null,
-      "rankRationale": "2003-04 GK 총 10명 중 DRAFT 2위. A+ 티어 및 리그 38선발·0골을 기준으로 현재 시즌 최우선, 이전 2002-03·2001-02를 보조 가중. 다기능 선수의 주 포지션은 재검증 대상."
+      "rankRationale": "2003-04 GK 총 10명 중 DRAFT 2위. A+ 티어 및 리그 38선발·0골을 기준으로 현재 시즌 최우선, 이전 2002-03·2001-02를 보조 가중. 다기능 선수의 주 포지션은 재검증 대상.",
+      "externalAuditCorrections": [
+        {
+          "field": "born",
+          "old": "1976-04-24",
+          "proposed": "1976-04-20",
+          "reason": "같은 이름·구단의 PL 시즌 선수표와 당시 경기 라인업의 생년월일이 일치한다.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4464.json",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4462.json"
+          ],
+          "status": "correction_required"
+        }
+      ]
     },
     {
       "id": "pl-2003-04-fresh-newcastle-02",
       "name": "Titus Bramble",
       "nameKo": "타이터스 브램블",
       "nameOriginal": "Titus Bramble",
-      "born": "1981-07-21",
+      "born": "1981-07-31",
       "club": "newcastle",
       "clubNameOriginal": "Newcastle United FC",
       "season": "2003-04",
@@ -3769,7 +3899,11 @@
       "sourceLeagueStartsStatus": "provisional_2003_04_club_source_individual_stats_unverified",
       "sources": [
         "https://www.statbunker.com/competitions/SeasonAppearances?club_id=16&comp_id=163",
-        "https://footballsquads.co.uk/eng/2003-2004/faprem/newcas.htm"
+        "https://footballsquads.co.uk/eng/2003-2004/faprem/newcas.htm",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4462.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4736.json"
       ],
       "candidateRationale": "2003-04 시즌 Newcastle United FC 리그 출전과 구단 전술을 바탕으로 신규 후보 선정",
       "evaluationStatus": "individual_DRAFT_grade_historical_audit_unapproved",
@@ -3789,7 +3923,22 @@
       "assessmentRationale": "27회 리그 선발, 0골. CB에서 출전 비중과 개인 역할을 중심으로 B- 잠정 평가; 팀 순위는 직접 가산하지 않음. 직전 두 시즌은 낮은 가중치 적용: 2001-02 16선발(기존 DRAFT, 재검증 필요); 2002-03 13선발(기존 DRAFT, 재검증 필요).",
       "threeSeasonReview": "current_season_starts_sourced_prior_two_seasons_partial_DRAFT",
       "positionReviewNote": null,
-      "rankRationale": "2003-04 CB 총 18명 중 DRAFT 17위. B- 티어 및 리그 27선발·0골을 기준으로 현재 시즌 최우선, 이전 2002-03·2001-02를 보조 가중. 다기능 선수의 주 포지션은 재검증 대상."
+      "rankRationale": "2003-04 CB 총 18명 중 DRAFT 17위. B- 티어 및 리그 27선발·0골을 기준으로 현재 시즌 최우선, 이전 2002-03·2001-02를 보조 가중. 다기능 선수의 주 포지션은 재검증 대상.",
+      "externalAuditCorrections": [
+        {
+          "field": "born",
+          "old": "1981-07-21",
+          "proposed": "1981-07-31",
+          "reason": "같은 이름·구단의 PL 시즌 선수표와 당시 경기 라인업의 생년월일이 일치한다.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4462.json",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4736.json"
+          ],
+          "status": "correction_required"
+        }
+      ]
     },
     {
       "id": "pl-2003-04-fresh-newcastle-03",
@@ -4613,7 +4762,7 @@
       "name": "Franck Queudrue",
       "nameKo": "프랑크 케드뤼",
       "nameOriginal": "Franck Queudrue",
-      "born": "1978-08-25",
+      "born": "1978-08-27",
       "club": "middlesbrough",
       "clubNameOriginal": "Middlesbrough FC",
       "season": "2003-04",
@@ -4629,7 +4778,11 @@
       "sourceLeagueStartsStatus": "provisional_2003_04_club_source_individual_stats_unverified",
       "sources": [
         "https://www.statbunker.com/competitions/SeasonAppearances?club_id=15&comp_id=163",
-        "https://footballsquads.co.uk/eng/2003-2004/faprem/middles.htm"
+        "https://footballsquads.co.uk/eng/2003-2004/faprem/middles.htm",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4596.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4686.json"
       ],
       "candidateRationale": "2003-04 시즌 Middlesbrough FC 리그 출전과 구단 전술을 바탕으로 신규 후보 선정",
       "evaluationStatus": "individual_DRAFT_grade_historical_audit_unapproved",
@@ -4649,7 +4802,22 @@
       "assessmentRationale": "31회 리그 선발, 0골. LB에서 출전 비중과 개인 역할을 중심으로 B+ 잠정 평가; 팀 순위는 직접 가산하지 않음. 직전 두 시즌은 낮은 가중치 적용: 2001-02 개별 통계 미확보; 2002-03 개별 통계 미확보.",
       "threeSeasonReview": "current_season_starts_sourced_prior_two_seasons_partial_DRAFT",
       "positionReviewNote": null,
-      "rankRationale": "2003-04 LB 총 10명 중 DRAFT 5위. B+ 티어 및 리그 31선발·0골을 기준으로 현재 시즌 최우선, 이전 2002-03·2001-02를 보조 가중. 다기능 선수의 주 포지션은 재검증 대상."
+      "rankRationale": "2003-04 LB 총 10명 중 DRAFT 5위. B+ 티어 및 리그 31선발·0골을 기준으로 현재 시즌 최우선, 이전 2002-03·2001-02를 보조 가중. 다기능 선수의 주 포지션은 재검증 대상.",
+      "externalAuditCorrections": [
+        {
+          "field": "born",
+          "old": "1978-08-25",
+          "proposed": "1978-08-27",
+          "reason": "같은 이름·구단의 PL 시즌 선수표와 당시 경기 라인업의 생년월일이 일치한다.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4596.json",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/4686.json"
+          ],
+          "status": "correction_required"
+        }
+      ]
     },
     {
       "id": "pl-2003-04-fresh-middlesbrough-07",

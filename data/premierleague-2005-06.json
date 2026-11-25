@@ -84,7 +84,20 @@
       "No user approval. Do not change standings, frontend, title badges or other seasons.",
       "Initial position corrections: removed Djimi Traoré incorrectly listed at LW, excluded Kieran Richardson's uncertain RW nomination and marginal Abou Diaby, relocated Mathieu Flamini to CM provisionally, used Cygan at LB based on era lineup source, and used Arsenal starter Campbell over Senderos (20 vs 19 PL starts).",
       "All current-season PL league starts filled from season-isolated Statbunker/FBref entries; 14 especially missing/incorrect rows cross-refreshed from FBref, while full source-by-source reconciliation remains open."
-    ]
+    ],
+    "externalAudit20261126": {
+      "baseCommit": "078c124cc365fab971be8263e2cbcacce5999719",
+      "report": "audit/PL_2004_2008_EXTERNAL_REVIEW_APPLIED_2026-11-26.json",
+      "status": "draft_unapproved",
+      "players": 142,
+      "facts": 6,
+      "ranks": 0,
+      "tiers": 0,
+      "replacements": 0,
+      "xi": false,
+      "held": 0,
+      "note": "Structured corrected values supersede conflicting legacy text. Detailed positions, qualitative tiers and formation frequency not finally verified."
+    }
   },
   "clubs": [
     {
@@ -1323,13 +1336,17 @@
       "rank": 2,
       "leagueStarts": 26,
       "starts": 26,
-      "leagueGoals": 8,
+      "leagueGoals": 7,
       "review": "draft_unapproved",
       "positionMajorityVerified": false,
       "sourceLeagueStartsStatus": "statbunker_fbref_2005_06_single_source_draft",
       "sources": [
         "https://www.footballsquads.co.uk/eng/2005-2006/faprem/chelsea.htm",
-        "https://statbunker.com/competitions/SeasonAppearances?club_id=8&comp_id=179"
+        "https://statbunker.com/competitions/SeasonAppearances?club_id=8&comp_id=179",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5213.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5217.json"
       ],
       "candidateRationale": "2005-06 Chelsea FC 동시대 시즌 명단과 리그 선발 명세를 바탕으로 신규 선정. 주 포지션은 시즌 전술을 참고한 잠정 분류.",
       "evaluationStatus": "individual_DRAFT_partial_three_year_review",
@@ -1348,7 +1365,22 @@
       },
       "assessmentRationale": "26선발 8골·PFA 올해의 팀. 오른쪽 측면의 창의적 돌파와 박스 침투. 2005-06 개인 경기력 최우선, 2004-05·2003-04 순으로 보조 가중. 2003-04 18선발(기존 잠정 입력); 2004-05 19선발(기존 잠정 입력). 팀 리그 성적에 따른 자동 가점 없음.",
       "threeSeasonReview": "2005_06_primary_2004_05_secondary_2003_04_tertiary_previous_records_partial",
-      "rankRationale": "2005-06 RW 후보 14명 중 미승인 DRAFT 2위. A+, 당해 시즌 개인 출전·기여 및 2004-05·2003-04 지속성(보조 가중); 경기별 포지션 검토 필요."
+      "rankRationale": "2005-06 RW 후보 14명 중 미승인 DRAFT 2위. A+, 당해 시즌 개인 출전·기여 및 2004-05·2003-04 지속성(보조 가중); 경기별 포지션 검토 필요.",
+      "externalAuditCorrections": [
+        {
+          "field": "leagueGoals",
+          "old": 8,
+          "proposed": 7,
+          "reason": "같은 구단·같은 PL 시즌의 경기 단위 집계와 시즌 선수표의 수치가 일치한다.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5213.json",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5217.json"
+          ],
+          "status": "correction_required"
+        }
+      ]
     },
     {
       "id": "pl-2005-06-fresh-chelsea-18",
@@ -1998,13 +2030,17 @@
       "rank": 4,
       "leagueStarts": 22,
       "starts": 22,
-      "leagueGoals": 2,
+      "leagueGoals": 3,
       "review": "draft_unapproved",
       "positionMajorityVerified": false,
       "sourceLeagueStartsStatus": "statbunker_fbref_2005_06_single_source_draft",
       "sources": [
         "https://www.footballsquads.co.uk/eng/2005-2006/faprem/manutd.htm",
-        "https://www.statbunker.com/competitions/SeasonAppearances?club_id=3&comp_id=179"
+        "https://www.statbunker.com/competitions/SeasonAppearances?club_id=3&comp_id=179",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5255.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5327.json"
       ],
       "candidateRationale": "2005-06 Manchester United FC 동시대 시즌 명단과 리그 선발 명세를 바탕으로 신규 선정. 주 포지션은 시즌 전술을 참고한 잠정 분류.",
       "evaluationStatus": "individual_DRAFT_partial_three_year_review",
@@ -2023,7 +2059,22 @@
       },
       "assessmentRationale": "2005-06 PL 22회 선발, 2골. LW의 팀 내 주전·후보 역할, 동일 포지션 비교 및 경기 영향력에 근거해 A- 잠정 평가. 2005-06 개인 경기력 최우선, 2004-05·2003-04 순으로 보조 가중. 2003-04 29선발(기존 잠정 입력); 2004-05 26선발(기존 잠정 입력). 팀 리그 성적에 따른 자동 가점 없음.",
       "threeSeasonReview": "2005_06_primary_2004_05_secondary_2003_04_tertiary_previous_records_partial",
-      "rankRationale": "2005-06 LW 후보 12명 중 미승인 DRAFT 4위. A-, 당해 시즌 개인 출전·기여 및 2004-05·2003-04 지속성(보조 가중); 경기별 포지션 검토 필요."
+      "rankRationale": "2005-06 LW 후보 12명 중 미승인 DRAFT 4위. A-, 당해 시즌 개인 출전·기여 및 2004-05·2003-04 지속성(보조 가중); 경기별 포지션 검토 필요.",
+      "externalAuditCorrections": [
+        {
+          "field": "leagueGoals",
+          "old": 2,
+          "proposed": 3,
+          "reason": "같은 구단·같은 PL 시즌의 경기 단위 집계와 시즌 선수표의 수치가 일치한다.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5255.json",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5327.json"
+          ],
+          "status": "correction_required"
+        }
+      ]
     },
     {
       "id": "pl-2005-06-fresh-manutd-13",
@@ -3461,7 +3512,7 @@
       "name": "Robert Pirès",
       "nameOriginal": "Robert Pirès",
       "nameKo": "로베르 피레스",
-      "born": "1973-01-29",
+      "born": "1973-10-29",
       "club": "arsenal",
       "clubNameOriginal": "Arsenal FC",
       "season": "2005-06",
@@ -3477,7 +3528,11 @@
       "sourceLeagueStartsStatus": "statbunker_fbref_2005_06_single_source_draft",
       "sources": [
         "https://www.footballsquads.co.uk/eng/2005-2006/faprem/arsenal.htm",
-        "https://betl.statbunker.com/competitions/SeasonAppearances?club_id=5&comp_id=179"
+        "https://betl.statbunker.com/competitions/SeasonAppearances?club_id=5&comp_id=179",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5195.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5206.json"
       ],
       "candidateRationale": "2005-06 Arsenal FC 동시대 시즌 명단과 리그 선발 명세를 바탕으로 신규 선정. 주 포지션은 시즌 전술을 참고한 잠정 분류.",
       "evaluationStatus": "individual_DRAFT_partial_three_year_review",
@@ -3496,7 +3551,22 @@
       },
       "assessmentRationale": "2005-06 PL 23회 선발, 7골. LW의 팀 내 주전·후보 역할, 동일 포지션 비교 및 경기 영향력에 근거해 B+ 잠정 평가. 2005-06 개인 경기력 최우선, 2004-05·2003-04 순으로 보조 가중. 2003-04 33선발(기존 잠정 입력); 2004-05 26선발(기존 잠정 입력). 팀 리그 성적에 따른 자동 가점 없음.",
       "threeSeasonReview": "2005_06_primary_2004_05_secondary_2003_04_tertiary_previous_records_partial",
-      "rankRationale": "2005-06 LW 후보 12명 중 미승인 DRAFT 11위. B+, 당해 시즌 개인 출전·기여 및 2004-05·2003-04 지속성(보조 가중); 경기별 포지션 검토 필요."
+      "rankRationale": "2005-06 LW 후보 12명 중 미승인 DRAFT 11위. B+, 당해 시즌 개인 출전·기여 및 2004-05·2003-04 지속성(보조 가중); 경기별 포지션 검토 필요.",
+      "externalAuditCorrections": [
+        {
+          "field": "born",
+          "old": "1973-01-29",
+          "proposed": "1973-10-29",
+          "reason": "같은 이름·구단의 PL 시즌 선수표와 당시 경기 라인업의 생년월일이 일치한다.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5195.json",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5206.json"
+          ],
+          "status": "correction_required"
+        }
+      ]
     },
     {
       "id": "pl-2005-06-fresh-arsenal-13",
@@ -5101,7 +5171,7 @@
       "name": "Shay Given",
       "nameOriginal": "Shay Given",
       "nameKo": "셰이 기븐",
-      "born": "1976-04-24",
+      "born": "1976-04-20",
       "club": "newcastle",
       "clubNameOriginal": "Newcastle United FC",
       "season": "2005-06",
@@ -5117,7 +5187,11 @@
       "sourceLeagueStartsStatus": "statbunker_fbref_2005_06_single_source_draft",
       "sources": [
         "https://www.footballsquads.co.uk/eng/2005-2006/faprem/newcas.htm",
-        "https://fbref.com/en/squads/b2b47a98/2005-2006/Newcastle-United-Stats"
+        "https://fbref.com/en/squads/b2b47a98/2005-2006/Newcastle-United-Stats",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5195.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5202.json"
       ],
       "candidateRationale": "2005-06 Newcastle United FC 동시대 시즌 명단과 리그 선발 명세를 바탕으로 신규 선정. 주 포지션은 시즌 전술을 참고한 잠정 분류.",
       "evaluationStatus": "individual_DRAFT_partial_three_year_review",
@@ -5136,7 +5210,22 @@
       },
       "assessmentRationale": "38회 선발·PFA 올해의 팀 선정. 팀 최종 순위와 독립적으로 반사신경·지속성을 높게 평가함. 2005-06 개인 경기력 최우선, 2004-05·2003-04 순으로 보조 가중. 2003-04 38선발(기존 잠정 입력); 2004-05 36선발(기존 잠정 입력). 팀 리그 성적에 따른 자동 가점 없음.",
       "threeSeasonReview": "2005_06_primary_2004_05_secondary_2003_04_tertiary_previous_records_partial",
-      "rankRationale": "2005-06 GK 후보 11명 중 미승인 DRAFT 1위. S, 당해 시즌 개인 출전·기여 및 2004-05·2003-04 지속성(보조 가중); 경기별 포지션 검토 필요."
+      "rankRationale": "2005-06 GK 후보 11명 중 미승인 DRAFT 1위. S, 당해 시즌 개인 출전·기여 및 2004-05·2003-04 지속성(보조 가중); 경기별 포지션 검토 필요.",
+      "externalAuditCorrections": [
+        {
+          "field": "born",
+          "old": "1976-04-24",
+          "proposed": "1976-04-20",
+          "reason": "같은 이름·구단의 PL 시즌 선수표와 당시 경기 라인업의 생년월일이 일치한다.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5195.json",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5202.json"
+          ],
+          "status": "correction_required"
+        }
+      ]
     },
     {
       "id": "pl-2005-06-fresh-newcastle-02",
@@ -5185,7 +5274,7 @@
       "name": "Titus Bramble",
       "nameOriginal": "Titus Bramble",
       "nameKo": "타이터스 브램블",
-      "born": "1981-07-21",
+      "born": "1981-07-31",
       "club": "newcastle",
       "clubNameOriginal": "Newcastle United FC",
       "season": "2005-06",
@@ -5201,7 +5290,11 @@
       "sourceLeagueStartsStatus": "statbunker_fbref_2005_06_single_source_draft",
       "sources": [
         "https://www.footballsquads.co.uk/eng/2005-2006/faprem/newcas.htm",
-        "https://fbref.com/en/squads/b2b47a98/2005-2006/Newcastle-United-Stats"
+        "https://fbref.com/en/squads/b2b47a98/2005-2006/Newcastle-United-Stats",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5228.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5248.json"
       ],
       "candidateRationale": "2005-06 Newcastle United FC 동시대 시즌 명단과 리그 선발 명세를 바탕으로 신규 선정. 주 포지션은 시즌 전술을 참고한 잠정 분류.",
       "evaluationStatus": "individual_DRAFT_partial_three_year_review",
@@ -5220,7 +5313,22 @@
       },
       "assessmentRationale": "2005-06 PL 21회 선발, 2골. CB의 팀 내 주전·후보 역할, 동일 포지션 비교 및 경기 영향력에 근거해 B- 잠정 평가. 2005-06 개인 경기력 최우선, 2004-05·2003-04 순으로 보조 가중. 2003-04 27선발(기존 잠정 입력); 2004-05 18선발(기존 잠정 입력). 팀 리그 성적에 따른 자동 가점 없음.",
       "threeSeasonReview": "2005_06_primary_2004_05_secondary_2003_04_tertiary_previous_records_partial",
-      "rankRationale": "2005-06 CB 후보 24명 중 미승인 DRAFT 22위. B-, 당해 시즌 개인 출전·기여 및 2004-05·2003-04 지속성(보조 가중); 경기별 포지션 검토 필요."
+      "rankRationale": "2005-06 CB 후보 24명 중 미승인 DRAFT 22위. B-, 당해 시즌 개인 출전·기여 및 2004-05·2003-04 지속성(보조 가중); 경기별 포지션 검토 필요.",
+      "externalAuditCorrections": [
+        {
+          "field": "born",
+          "old": "1981-07-21",
+          "proposed": "1981-07-31",
+          "reason": "같은 이름·구단의 PL 시즌 선수표와 당시 경기 라인업의 생년월일이 일치한다.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5228.json",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5248.json"
+          ],
+          "status": "correction_required"
+        }
+      ]
     },
     {
       "id": "pl-2005-06-fresh-newcastle-04",
@@ -6025,7 +6133,7 @@
       "name": "James Collins",
       "nameOriginal": "James Collins",
       "nameKo": "제임스 콜린스",
-      "born": "1983-04-23",
+      "born": "1983-08-23",
       "club": "westham",
       "clubNameOriginal": "West Ham United FC",
       "season": "2005-06",
@@ -6041,7 +6149,11 @@
       "sourceLeagueStartsStatus": "statbunker_fbref_2005_06_single_source_draft",
       "sources": [
         "https://www.footballsquads.co.uk/eng/2005-2006/faprem/westham.htm",
-        "https://fbref.com/en/squads/7c21e445/2005-2006/c9/West-Ham-United-Stats-Premier-League"
+        "https://fbref.com/en/squads/7c21e445/2005-2006/c9/West-Ham-United-Stats-Premier-League",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5343.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5350.json"
       ],
       "candidateRationale": "2005-06 West Ham United FC 동시대 시즌 명단과 리그 선발 명세를 바탕으로 신규 선정. 주 포지션은 시즌 전술을 참고한 잠정 분류.",
       "evaluationStatus": "individual_DRAFT_partial_three_year_review",
@@ -6060,7 +6172,22 @@
       },
       "assessmentRationale": "2005-06 PL 13회 선발, 2골. CB의 팀 내 주전·후보 역할, 동일 포지션 비교 및 경기 영향력에 근거해 B 잠정 평가. 2005-06 개인 경기력 최우선, 2004-05·2003-04 순으로 보조 가중. 2003-04 출전 수치 미확보; 2004-05 출전 수치 미확보. 팀 리그 성적에 따른 자동 가점 없음.",
       "threeSeasonReview": "2005_06_primary_2004_05_secondary_2003_04_tertiary_previous_records_partial",
-      "rankRationale": "2005-06 CB 후보 24명 중 미승인 DRAFT 19위. B, 당해 시즌 개인 출전·기여 및 2004-05·2003-04 지속성(보조 가중); 경기별 포지션 검토 필요."
+      "rankRationale": "2005-06 CB 후보 24명 중 미승인 DRAFT 19위. B, 당해 시즌 개인 출전·기여 및 2004-05·2003-04 지속성(보조 가중); 경기별 포지션 검토 필요.",
+      "externalAuditCorrections": [
+        {
+          "field": "born",
+          "old": "1983-04-23",
+          "proposed": "1983-08-23",
+          "reason": "같은 이름·구단의 PL 시즌 선수표와 당시 경기 라인업의 생년월일이 일치한다.",
+          "sources": [
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+            "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5343.json",
+            "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5350.json"
+          ],
+          "status": "correction_required"
+        }
+      ]
     },
     {
       "id": "pl-2005-06-fresh-westham-06",
