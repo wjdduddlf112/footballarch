@@ -1,3 +1,12 @@
+# Premier League 1999–00 — independent reassessment (2026-11-25)
+
+- Verified actual 2000–01 European participation for eight clubs; synchronized season JSON and qualification archive. Original standings, clubs, 128-player live draft and XI preserved.
+- Independent working pool: 134 nominees, 134 positive current league appearances, 134 populated DOB values (not all cross-checked), 75 provisional tiers and subset ranks, 59 pending. Both prior seasons' numerical club records: 71; one: 19. Full qualitative evaluation and primary position verification are incomplete.
+- Source-linked [research JSON](player-research/premierleague-1999-00-independent-20261125.json) and [club/position tables](PL_1999_00_INDEPENDENT_RESEARCH_2026-11-25.md). New 4-4-2 XI remains proposed; independent research not deployed to player interface. No user approval or subsequent season work.
+- Structural checks passed; full actual browser verification not performed.
+
+---
+
 ## UCL 2024–25 / 2025–26 — 생년월일 누락 일괄 보완, 2026-11-24
 
 - 2024-25: 73건 추가, 296/296. 2025-26: 133건 추가, 296/296. 총 206건 보완, 잔여 0건. 선수 후보·티어·순위·Best XI 변경 없음. 출처별 매칭 기록: [DOB backfill](UCL_2024_26_DOB_BACKFILL_2026-11-24.json). 일부는 외부 보조 데이터/기존 아카이브 재사용, 개인별 공식 재검증 완료를 의미하지 않음. 아래 과거 감사 결과의 누락 수치는 이 수정 이전의 기록임.
