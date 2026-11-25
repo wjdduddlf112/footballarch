@@ -87,9 +87,10 @@
     "bestXiReview": {
       "status": "proposed_unapproved",
       "formation": "4-4-2",
-      "basis": "Best individual first, player CAM Steven Gerrard and CM Frank Lampard chosen as central XI. XI field slots CM/DM are labeled CM without modifying underlying player position.",
-      "mappingPolicy": "bestXi.position is tactical slot, bestXi.displayPosition printed slot, players.position remains actual season position. CAM may appear as CM.",
-      "independentReference": "https://en.wikipedia.org/wiki/PFA_Team_of_the_Year_%282000s%29"
+      "basis": "기존 XI는 CM 램파드를 DM, CAM 제라드를 CM에 배치했다. 4-4-2의 두 중앙 역할을 맞춰 등록 DM 1위 캐릭을 넣고 램파드는 CM으로 복귀시킨다. 제라드는 Torres 뒤에서 뛴 CAM으로 등록을 유지한다. 4-4-2 빈도는 수집된 36개 배치에서만 확인된다.",
+      "mappingPolicy": "Revised XI uses registered primary positions; remains draft.",
+      "independentReference": "https://en.wikipedia.org/wiki/PFA_Team_of_the_Year_%282000s%29",
+      "validation": "11 unique registered player IDs."
     },
     "auditWarnings": [
       "Pending starts/goals are null rather than fabricated for players whose season-only table was not retrieved.",
@@ -102,7 +103,74 @@
       "2007-08 Nicolas Anelka 18 PL Bolton starts + 10 Chelsea starts = 28 across both clubs, not only 10 Chelsea starts. This matters for 3-year weighted evaluation.",
       "2008-09 Arsenal Clichy goals FBref zero versus Statbunker one: preferred FBref primary and exception documented.",
       "2008-09 Best XI 11/11 previous two-season league starts now populated with transfers and overseas leagues separately identified."
-    ]
+    ],
+    "formationCoverage": {
+      "knownTeamLineups": 36,
+      "totalTeamLineups": 760,
+      "rankedKnown": [
+        [
+          "4-4-2",
+          22
+        ],
+        [
+          "4-5-1",
+          4
+        ],
+        [
+          "4-1-2-1-2",
+          3
+        ],
+        [
+          "4-4-1-1",
+          3
+        ],
+        [
+          "4-3-3",
+          2
+        ],
+        [
+          "4-3-2-1",
+          1
+        ],
+        [
+          "4-2-3-1",
+          1
+        ]
+      ],
+      "status": "sample_only",
+      "formationMode": null,
+      "sources": [
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/match_details.csv"
+      ]
+    },
+    "externalAuditSegment2": {
+      "reportBaseCommit": "078c124cc365fab971be8263e2cbcacce5999719",
+      "appliedToCommit": "cad000501e02bcdaea4ac3cc2461439e033b4464",
+      "report": "FOOTBALL_AUDIT_PL_SEGMENT_2_FULL_REVIEW.json",
+      "status": "draft_unapproved",
+      "before": 122,
+      "after": 122,
+      "corrections": 15,
+      "fills": 38,
+      "removedFactFields": 0,
+      "replacements": 0,
+      "zeroRemovals": 0,
+      "positions": 0,
+      "ranks": 0,
+      "xi": true,
+      "formation": null,
+      "missing": {
+        "leagueAppearances": 0,
+        "leagueStarts": 0,
+        "leagueGoals": 0,
+        "leagueAssists": 0
+      },
+      "held": [],
+      "removedPlayers": [],
+      "removedPlayerFactChanges": [],
+      "note": "Structured audited stats supersede earlier narrative text. Current league statistics review is distinct from outstanding 3-season qualitative review and most-started position verification."
+    }
   },
   "clubs": [
     {
@@ -648,7 +716,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/19538871/2008-2009/c9/Manchester-United-Stats-Premier-League"
       ],
@@ -687,14 +755,18 @@
       "leagueStarts": 3,
       "starts": 3,
       "leagueGoals": 0,
-      "leagueAssists": null,
+      "leagueAssists": 0,
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "2008_09_PL_season_statbunker_club_table",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/19538871/2008-2009/c9/Manchester-United-Stats-Premier-League",
-        "https://dr.statbunker.com/competitions/SeasonAppearances?club_id=3&comp_id=243"
+        "https://dr.statbunker.com/competitions/SeasonAppearances?club_id=3&comp_id=243",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6423.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6579.json"
       ],
       "previousSeasons": {
         "2006-07": {
@@ -712,7 +784,25 @@
       },
       "assessmentRationale": "2008-09 Manchester United FC의 GK 기용 및 개인 영향력을 기준으로 B 잠정 평가. 2008-09 최우선, 2007-08 보조, 2006-07 가장 낮게 가중. 팀의 리그 순위는 선수 티어에 가산하지 않음. 2008-09 PL 선발 자료 미확보, 골 자료 미확보; 이전 시즌 타 리그 이력은 추가 증빙 필요.",
       "candidateRationale": "4-4-2 / 4-2-3-1 계열 당시 전술과 실제 시즌 후보군을 기준으로 신규 선정. 개별 경기 최다 포지션은 추후 전술 시트와 대조.",
-      "rankRationale": "2008-09 GK 후보 중 8위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지."
+      "rankRationale": "2008-09 GK 후보 중 8위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지.",
+      "externalAuditSegment2": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "leagueAssists",
+            "old": null,
+            "proposed": 0,
+            "action": "fill_missing",
+            "reason": "동일 구단 PL의 경기 집계와 시즌 집계가 일치한다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6423.json",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6579.json"
+        ]
+      }
     },
     {
       "id": "pl-2008-09-manutd-03",
@@ -735,7 +825,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/19538871/2008-2009/c9/Manchester-United-Stats-Premier-League",
         "https://fbref.com/en/players/4b30b37e/Nemanja-Vidic"
@@ -777,14 +867,18 @@
       "leagueStarts": 24,
       "starts": 24,
       "leagueGoals": 0,
-      "leagueAssists": null,
+      "leagueAssists": 0,
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "2008_09_PL_season_statbunker_club_table",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/19538871/2008-2009/c9/Manchester-United-Stats-Premier-League",
-        "https://dr.statbunker.com/competitions/SeasonAppearances?club_id=3&comp_id=243"
+        "https://dr.statbunker.com/competitions/SeasonAppearances?club_id=3&comp_id=243",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6336.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6346.json"
       ],
       "previousSeasons": {
         "2006-07": {
@@ -802,7 +896,25 @@
       },
       "assessmentRationale": "2008-09 Manchester United FC의 CB 기용 및 개인 영향력을 기준으로 A+ 잠정 평가. 2008-09 최우선, 2007-08 보조, 2006-07 가장 낮게 가중. 팀의 리그 순위는 선수 티어에 가산하지 않음. 2008-09 PL 선발 자료 미확보, 골 자료 미확보; 이전 시즌 타 리그 이력은 추가 증빙 필요.",
       "candidateRationale": "4-4-2 / 4-2-3-1 계열 당시 전술과 실제 시즌 후보군을 기준으로 신규 선정. 개별 경기 최다 포지션은 추후 전술 시트와 대조.",
-      "rankRationale": "2008-09 CB 후보 중 2위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지."
+      "rankRationale": "2008-09 CB 후보 중 2위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지.",
+      "externalAuditSegment2": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "leagueAssists",
+            "old": null,
+            "proposed": 0,
+            "action": "fill_missing",
+            "reason": "동일 구단 PL의 경기 집계와 시즌 집계가 일치한다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6336.json",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6346.json"
+        ]
+      }
     },
     {
       "id": "pl-2008-09-manutd-05",
@@ -821,14 +933,18 @@
       "leagueStarts": 16,
       "starts": 16,
       "leagueGoals": 0,
-      "leagueAssists": null,
+      "leagueAssists": 0,
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "2008_09_PL_season_statbunker_club_table",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/19538871/2008-2009/c9/Manchester-United-Stats-Premier-League",
-        "https://dr.statbunker.com/competitions/SeasonAppearances?club_id=3&comp_id=243"
+        "https://dr.statbunker.com/competitions/SeasonAppearances?club_id=3&comp_id=243",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6371.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6450.json"
       ],
       "previousSeasons": {
         "2006-07": {
@@ -846,7 +962,25 @@
       },
       "assessmentRationale": "2008-09 Manchester United FC의 CB 기용 및 개인 영향력을 기준으로 B+ 잠정 평가. 2008-09 최우선, 2007-08 보조, 2006-07 가장 낮게 가중. 팀의 리그 순위는 선수 티어에 가산하지 않음. 2008-09 PL 선발 자료 미확보, 골 자료 미확보; 이전 시즌 타 리그 이력은 추가 증빙 필요.",
       "candidateRationale": "4-4-2 / 4-2-3-1 계열 당시 전술과 실제 시즌 후보군을 기준으로 신규 선정. 개별 경기 최다 포지션은 추후 전술 시트와 대조.",
-      "rankRationale": "2008-09 CB 후보 중 19위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지."
+      "rankRationale": "2008-09 CB 후보 중 19위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지.",
+      "externalAuditSegment2": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "leagueAssists",
+            "old": null,
+            "proposed": 0,
+            "action": "fill_missing",
+            "reason": "동일 구단 PL의 경기 집계와 시즌 집계가 일치한다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6371.json",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6450.json"
+        ]
+      }
     },
     {
       "id": "pl-2008-09-manutd-06",
@@ -869,7 +1003,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/19538871/2008-2009/c9/Manchester-United-Stats-Premier-League",
         "https://fbref.com/en/players/51a3caf1/Patrice-Evra"
@@ -911,14 +1045,18 @@
       "leagueStarts": 20,
       "starts": 20,
       "leagueGoals": 0,
-      "leagueAssists": null,
+      "leagueAssists": 3,
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "2008_09_PL_season_statbunker_club_table",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/19538871/2008-2009/c9/Manchester-United-Stats-Premier-League",
-        "https://dr.statbunker.com/competitions/SeasonAppearances?club_id=3&comp_id=243"
+        "https://dr.statbunker.com/competitions/SeasonAppearances?club_id=3&comp_id=243",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6346.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6450.json"
       ],
       "previousSeasons": {
         "2006-07": {
@@ -936,7 +1074,25 @@
       },
       "assessmentRationale": "2008-09 Manchester United FC의 RB 기용 및 개인 영향력을 기준으로 B+ 잠정 평가. 2008-09 최우선, 2007-08 보조, 2006-07 가장 낮게 가중. 팀의 리그 순위는 선수 티어에 가산하지 않음. 2008-09 PL 선발 자료 미확보, 골 자료 미확보; 이전 시즌 타 리그 이력은 추가 증빙 필요.",
       "candidateRationale": "4-4-2 / 4-2-3-1 계열 당시 전술과 실제 시즌 후보군을 기준으로 신규 선정. 개별 경기 최다 포지션은 추후 전술 시트와 대조.",
-      "rankRationale": "2008-09 RB 후보 중 7위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지."
+      "rankRationale": "2008-09 RB 후보 중 7위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지.",
+      "externalAuditSegment2": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "leagueAssists",
+            "old": null,
+            "proposed": 3,
+            "action": "fill_missing",
+            "reason": "동일 구단 PL의 경기 집계와 시즌 집계가 일치한다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6346.json",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6450.json"
+        ]
+      }
     },
     {
       "id": "pl-2008-09-manutd-09",
@@ -955,14 +1111,18 @@
       "leagueStarts": 12,
       "starts": 12,
       "leagueGoals": 1,
-      "leagueAssists": null,
+      "leagueAssists": 0,
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "2008_09_PL_season_statbunker_club_table",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/19538871/2008-2009/c9/Manchester-United-Stats-Premier-League",
-        "https://dr.statbunker.com/competitions/SeasonAppearances?club_id=3&comp_id=243"
+        "https://dr.statbunker.com/competitions/SeasonAppearances?club_id=3&comp_id=243",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6401.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6423.json"
       ],
       "previousSeasons": {
         "2006-07": {
@@ -980,7 +1140,25 @@
       },
       "assessmentRationale": "2008-09 Manchester United FC의 RB 기용 및 개인 영향력을 기준으로 B+ 잠정 평가. 2008-09 최우선, 2007-08 보조, 2006-07 가장 낮게 가중. 팀의 리그 순위는 선수 티어에 가산하지 않음. 2008-09 PL 선발 자료 미확보, 골 자료 미확보; 이전 시즌 타 리그 이력은 추가 증빙 필요.",
       "candidateRationale": "4-4-2 / 4-2-3-1 계열 당시 전술과 실제 시즌 후보군을 기준으로 신규 선정. 개별 경기 최다 포지션은 추후 전술 시트와 대조.",
-      "rankRationale": "2008-09 RB 후보 중 8위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지."
+      "rankRationale": "2008-09 RB 후보 중 8위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지.",
+      "externalAuditSegment2": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "leagueAssists",
+            "old": null,
+            "proposed": 0,
+            "action": "fill_missing",
+            "reason": "동일 구단 PL의 경기 집계와 시즌 집계가 일치한다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6401.json",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6423.json"
+        ]
+      }
     },
     {
       "id": "pl-2008-09-manutd-10",
@@ -999,14 +1177,18 @@
       "leagueStarts": 24,
       "starts": 24,
       "leagueGoals": 4,
-      "leagueAssists": null,
+      "leagueAssists": 5,
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "2008_09_PL_season_statbunker_club_table",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/19538871/2008-2009/c9/Manchester-United-Stats-Premier-League",
-        "https://dr.statbunker.com/competitions/SeasonAppearances?club_id=3&comp_id=243"
+        "https://dr.statbunker.com/competitions/SeasonAppearances?club_id=3&comp_id=243",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6336.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6358.json"
       ],
       "previousSeasons": {
         "2006-07": {
@@ -1024,7 +1206,25 @@
       },
       "assessmentRationale": "2008-09 Manchester United FC의 DM 기용 및 개인 영향력을 기준으로 A 잠정 평가. 2008-09 최우선, 2007-08 보조, 2006-07 가장 낮게 가중. 팀의 리그 순위는 선수 티어에 가산하지 않음. 2008-09 PL 선발 자료 미확보, 골 자료 미확보; 이전 시즌 타 리그 이력은 추가 증빙 필요.",
       "candidateRationale": "4-4-2 / 4-2-3-1 계열 당시 전술과 실제 시즌 후보군을 기준으로 신규 선정. 개별 경기 최다 포지션은 추후 전술 시트와 대조.",
-      "rankRationale": "2008-09 DM 후보 중 1위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지."
+      "rankRationale": "2008-09 DM 후보 중 1위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지.",
+      "externalAuditSegment2": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "leagueAssists",
+            "old": null,
+            "proposed": 5,
+            "action": "fill_missing",
+            "reason": "동일 구단 PL의 경기 집계와 시즌 집계가 일치한다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6336.json",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6358.json"
+        ]
+      }
     },
     {
       "id": "pl-2008-09-manutd-11",
@@ -1043,14 +1243,18 @@
       "leagueStarts": 11,
       "starts": 11,
       "leagueGoals": 0,
-      "leagueAssists": null,
+      "leagueAssists": 0,
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "2008_09_PL_season_statbunker_club_table",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/19538871/2008-2009/c9/Manchester-United-Stats-Premier-League",
-        "https://dr.statbunker.com/competitions/SeasonAppearances?club_id=3&comp_id=243"
+        "https://dr.statbunker.com/competitions/SeasonAppearances?club_id=3&comp_id=243",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6346.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6358.json"
       ],
       "previousSeasons": {
         "2006-07": {
@@ -1068,7 +1272,25 @@
       },
       "assessmentRationale": "2008-09 Manchester United FC의 DM 기용 및 개인 영향력을 기준으로 B 잠정 평가. 2008-09 최우선, 2007-08 보조, 2006-07 가장 낮게 가중. 팀의 리그 순위는 선수 티어에 가산하지 않음. 2008-09 PL 선발 자료 미확보, 골 자료 미확보; 이전 시즌 타 리그 이력은 추가 증빙 필요.",
       "candidateRationale": "4-4-2 / 4-2-3-1 계열 당시 전술과 실제 시즌 후보군을 기준으로 신규 선정. 개별 경기 최다 포지션은 추후 전술 시트와 대조.",
-      "rankRationale": "2008-09 DM 후보 중 12위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지."
+      "rankRationale": "2008-09 DM 후보 중 12위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지.",
+      "externalAuditSegment2": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "leagueAssists",
+            "old": null,
+            "proposed": 0,
+            "action": "fill_missing",
+            "reason": "동일 구단 PL의 경기 집계와 시즌 집계가 일치한다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6346.json",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6358.json"
+        ]
+      }
     },
     {
       "id": "pl-2008-09-manutd-12",
@@ -1087,14 +1309,18 @@
       "leagueStarts": 25,
       "starts": 25,
       "leagueGoals": 3,
-      "leagueAssists": null,
+      "leagueAssists": 0,
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "2008_09_PL_season_statbunker_club_table",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/19538871/2008-2009/c9/Manchester-United-Stats-Premier-League",
-        "https://dr.statbunker.com/competitions/SeasonAppearances?club_id=3&comp_id=243"
+        "https://dr.statbunker.com/competitions/SeasonAppearances?club_id=3&comp_id=243",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6336.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6346.json"
       ],
       "previousSeasons": {
         "2006-07": {
@@ -1112,7 +1338,25 @@
       },
       "assessmentRationale": "2008-09 Manchester United FC의 CM 기용 및 개인 영향력을 기준으로 A- 잠정 평가. 2008-09 최우선, 2007-08 보조, 2006-07 가장 낮게 가중. 팀의 리그 순위는 선수 티어에 가산하지 않음. 2008-09 PL 선발 자료 미확보, 골 자료 미확보; 이전 시즌 타 리그 이력은 추가 증빙 필요.",
       "candidateRationale": "4-4-2 / 4-2-3-1 계열 당시 전술과 실제 시즌 후보군을 기준으로 신규 선정. 개별 경기 최다 포지션은 추후 전술 시트와 대조.",
-      "rankRationale": "2008-09 CM 후보 중 11위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지."
+      "rankRationale": "2008-09 CM 후보 중 11위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지.",
+      "externalAuditSegment2": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "leagueAssists",
+            "old": null,
+            "proposed": 0,
+            "action": "fill_missing",
+            "reason": "동일 구단 PL의 경기 집계와 시즌 집계가 일치한다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6336.json",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6346.json"
+        ]
+      }
     },
     {
       "id": "pl-2008-09-manutd-13",
@@ -1131,14 +1375,18 @@
       "leagueStarts": 14,
       "starts": 14,
       "leagueGoals": 2,
-      "leagueAssists": null,
+      "leagueAssists": 2,
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "2008_09_PL_season_statbunker_club_table",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/19538871/2008-2009/c9/Manchester-United-Stats-Premier-League",
-        "https://dr.statbunker.com/competitions/SeasonAppearances?club_id=3&comp_id=243"
+        "https://dr.statbunker.com/competitions/SeasonAppearances?club_id=3&comp_id=243",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6336.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6346.json"
       ],
       "previousSeasons": {
         "2006-07": {
@@ -1156,7 +1404,25 @@
       },
       "assessmentRationale": "2008-09 Manchester United FC의 CM 기용 및 개인 영향력을 기준으로 B+ 잠정 평가. 2008-09 최우선, 2007-08 보조, 2006-07 가장 낮게 가중. 팀의 리그 순위는 선수 티어에 가산하지 않음. 2008-09 PL 선발 자료 미확보, 골 자료 미확보; 이전 시즌 타 리그 이력은 추가 증빙 필요.",
       "candidateRationale": "4-4-2 / 4-2-3-1 계열 당시 전술과 실제 시즌 후보군을 기준으로 신규 선정. 개별 경기 최다 포지션은 추후 전술 시트와 대조.",
-      "rankRationale": "2008-09 CM 후보 중 15위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지."
+      "rankRationale": "2008-09 CM 후보 중 15위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지.",
+      "externalAuditSegment2": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "leagueAssists",
+            "old": null,
+            "proposed": 2,
+            "action": "fill_missing",
+            "reason": "동일 구단 PL의 경기 집계와 시즌 집계가 일치한다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6336.json",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6346.json"
+        ]
+      }
     },
     {
       "id": "pl-2008-09-manutd-14",
@@ -1175,14 +1441,18 @@
       "leagueStarts": 15,
       "starts": 15,
       "leagueGoals": 2,
-      "leagueAssists": null,
+      "leagueAssists": 7,
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "2008_09_PL_season_statbunker_club_table",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/19538871/2008-2009/c9/Manchester-United-Stats-Premier-League",
-        "https://dr.statbunker.com/competitions/SeasonAppearances?club_id=3&comp_id=243"
+        "https://dr.statbunker.com/competitions/SeasonAppearances?club_id=3&comp_id=243",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6336.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6386.json"
       ],
       "previousSeasons": {
         "2006-07": {
@@ -1200,7 +1470,25 @@
       },
       "assessmentRationale": "2008-09 Manchester United FC의 CM 기용 및 개인 영향력을 기준으로 A+ 잠정 평가. 2008-09 최우선, 2007-08 보조, 2006-07 가장 낮게 가중. 팀의 리그 순위는 선수 티어에 가산하지 않음. 2008-09 PL 선발 자료 미확보, 골 자료 미확보; 이전 시즌 타 리그 이력은 추가 증빙 필요.",
       "candidateRationale": "4-4-2 / 4-2-3-1 계열 당시 전술과 실제 시즌 후보군을 기준으로 신규 선정. 개별 경기 최다 포지션은 추후 전술 시트와 대조.",
-      "rankRationale": "2008-09 CM 후보 중 4위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지."
+      "rankRationale": "2008-09 CM 후보 중 4위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지.",
+      "externalAuditSegment2": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "leagueAssists",
+            "old": null,
+            "proposed": 7,
+            "action": "fill_missing",
+            "reason": "동일 구단 PL의 경기 집계와 시즌 집계가 일치한다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6336.json",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6386.json"
+        ]
+      }
     },
     {
       "id": "pl-2008-09-manutd-15",
@@ -1219,14 +1507,18 @@
       "leagueStarts": 21,
       "starts": 21,
       "leagueGoals": 2,
-      "leagueAssists": null,
+      "leagueAssists": 2,
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "2008_09_PL_season_statbunker_club_table",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/19538871/2008-2009/c9/Manchester-United-Stats-Premier-League",
-        "https://dr.statbunker.com/competitions/SeasonAppearances?club_id=3&comp_id=243"
+        "https://dr.statbunker.com/competitions/SeasonAppearances?club_id=3&comp_id=243",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6371.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6380.json"
       ],
       "previousSeasons": {
         "2006-07": {
@@ -1244,7 +1536,25 @@
       },
       "assessmentRationale": "2008-09 Manchester United FC의 LW 기용 및 개인 영향력을 기준으로 B+ 잠정 평가. 2008-09 최우선, 2007-08 보조, 2006-07 가장 낮게 가중. 팀의 리그 순위는 선수 티어에 가산하지 않음. 2008-09 PL 선발 자료 미확보, 골 자료 미확보; 이전 시즌 타 리그 이력은 추가 증빙 필요.",
       "candidateRationale": "4-4-2 / 4-2-3-1 계열 당시 전술과 실제 시즌 후보군을 기준으로 신규 선정. 개별 경기 최다 포지션은 추후 전술 시트와 대조.",
-      "rankRationale": "2008-09 LW 후보 중 8위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지."
+      "rankRationale": "2008-09 LW 후보 중 8위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지.",
+      "externalAuditSegment2": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "leagueAssists",
+            "old": null,
+            "proposed": 2,
+            "action": "fill_missing",
+            "reason": "동일 구단 PL의 경기 집계와 시즌 집계가 일치한다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6371.json",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6380.json"
+        ]
+      }
     },
     {
       "id": "pl-2008-09-manutd-16",
@@ -1263,14 +1573,18 @@
       "leagueStarts": 7,
       "starts": 7,
       "leagueGoals": 1,
-      "leagueAssists": null,
+      "leagueAssists": 2,
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "2008_09_PL_season_statbunker_club_table",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/19538871/2008-2009/c9/Manchester-United-Stats-Premier-League",
-        "https://dr.statbunker.com/competitions/SeasonAppearances?club_id=3&comp_id=243"
+        "https://dr.statbunker.com/competitions/SeasonAppearances?club_id=3&comp_id=243",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6423.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6428.json"
       ],
       "previousSeasons": {
         "2006-07": {
@@ -1288,7 +1602,25 @@
       },
       "assessmentRationale": "2008-09 Manchester United FC의 LW 기용 및 개인 영향력을 기준으로 B 잠정 평가. 2008-09 최우선, 2007-08 보조, 2006-07 가장 낮게 가중. 팀의 리그 순위는 선수 티어에 가산하지 않음. 2008-09 PL 선발 자료 미확보, 골 자료 미확보; 이전 시즌 타 리그 이력은 추가 증빙 필요.",
       "candidateRationale": "4-4-2 / 4-2-3-1 계열 당시 전술과 실제 시즌 후보군을 기준으로 신규 선정. 개별 경기 최다 포지션은 추후 전술 시트와 대조.",
-      "rankRationale": "2008-09 LW 후보 중 10위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지."
+      "rankRationale": "2008-09 LW 후보 중 10위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지.",
+      "externalAuditSegment2": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "leagueAssists",
+            "old": null,
+            "proposed": 2,
+            "action": "fill_missing",
+            "reason": "동일 구단 PL의 경기 집계와 시즌 집계가 일치한다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6423.json",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6428.json"
+        ]
+      }
     },
     {
       "id": "pl-2008-09-manutd-17",
@@ -1311,7 +1643,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/19538871/2008-2009/c9/Manchester-United-Stats-Premier-League"
       ],
@@ -1354,7 +1686,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/19538871/2008-2009/c9/Manchester-United-Stats-Premier-League"
       ],
@@ -1397,7 +1729,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/19538871/2008-2009/c9/Manchester-United-Stats-Premier-League"
       ],
@@ -1436,14 +1768,18 @@
       "leagueStarts": 18,
       "starts": 18,
       "leagueGoals": 5,
-      "leagueAssists": null,
+      "leagueAssists": 3,
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "2008_09_PL_season_statbunker_club_table",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/19538871/2008-2009/c9/Manchester-United-Stats-Premier-League",
-        "https://dr.statbunker.com/competitions/SeasonAppearances?club_id=3&comp_id=243"
+        "https://dr.statbunker.com/competitions/SeasonAppearances?club_id=3&comp_id=243",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6346.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6358.json"
       ],
       "previousSeasons": {
         "2006-07": {
@@ -1461,7 +1797,25 @@
       },
       "assessmentRationale": "2008-09 Manchester United FC의 ST 기용 및 개인 영향력을 기준으로 A- 잠정 평가. 2008-09 최우선, 2007-08 보조, 2006-07 가장 낮게 가중. 팀의 리그 순위는 선수 티어에 가산하지 않음. 2008-09 PL 선발 자료 미확보, 골 자료 미확보; 이전 시즌 타 리그 이력은 추가 증빙 필요.",
       "candidateRationale": "4-4-2 / 4-2-3-1 계열 당시 전술과 실제 시즌 후보군을 기준으로 신규 선정. 개별 경기 최다 포지션은 추후 전술 시트와 대조.",
-      "rankRationale": "2008-09 ST 후보 중 8위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지."
+      "rankRationale": "2008-09 ST 후보 중 8위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지.",
+      "externalAuditSegment2": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "leagueAssists",
+            "old": null,
+            "proposed": 3,
+            "action": "fill_missing",
+            "reason": "동일 구단 PL의 경기 집계와 시즌 집계가 일치한다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6346.json",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6358.json"
+        ]
+      }
     },
     {
       "id": "pl-2008-09-liverpool-01",
@@ -1484,7 +1838,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/822bd0ba/2008-2009/c9/Liverpool-Stats-Premier-League"
       ],
@@ -1527,7 +1881,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/822bd0ba/2008-2009/c9/Liverpool-Stats-Premier-League"
       ],
@@ -1566,14 +1920,18 @@
       "leagueStarts": 20,
       "starts": 20,
       "leagueGoals": 0,
-      "leagueAssists": null,
+      "leagueAssists": 2,
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "2008_09_PL_season_statbunker_club_table",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/822bd0ba/2008-2009/c9/Liverpool-Stats-Premier-League",
-        "https://po.statbunker.com/competitions/SeasonAppearances?club_id=4&comp_id=243"
+        "https://po.statbunker.com/competitions/SeasonAppearances?club_id=4&comp_id=243",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6339.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6353.json"
       ],
       "previousSeasons": {
         "2006-07": {
@@ -1591,7 +1949,25 @@
       },
       "assessmentRationale": "2008-09 Liverpool FC의 CB 기용 및 개인 영향력을 기준으로 B+ 잠정 평가. 2008-09 최우선, 2007-08 보조, 2006-07 가장 낮게 가중. 팀의 리그 순위는 선수 티어에 가산하지 않음. 2008-09 PL 선발 자료 미확보, 골 자료 미확보; 이전 시즌 타 리그 이력은 추가 증빙 필요.",
       "candidateRationale": "4-2-3-1 계열 당시 전술과 실제 시즌 후보군을 기준으로 신규 선정. 개별 경기 최다 포지션은 추후 전술 시트와 대조.",
-      "rankRationale": "2008-09 CB 후보 중 20위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지."
+      "rankRationale": "2008-09 CB 후보 중 20위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지.",
+      "externalAuditSegment2": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "leagueAssists",
+            "old": null,
+            "proposed": 2,
+            "action": "fill_missing",
+            "reason": "동일 구단 PL의 경기 집계와 시즌 집계가 일치한다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6339.json",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6353.json"
+        ]
+      }
     },
     {
       "id": "pl-2008-09-liverpool-04",
@@ -1610,14 +1986,18 @@
       "leagueStarts": 15,
       "starts": 15,
       "leagueGoals": 1,
-      "leagueAssists": null,
+      "leagueAssists": 2,
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "2008_09_PL_season_statbunker_club_table",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/822bd0ba/2008-2009/c9/Liverpool-Stats-Premier-League",
-        "https://po.statbunker.com/competitions/SeasonAppearances?club_id=4&comp_id=243"
+        "https://po.statbunker.com/competitions/SeasonAppearances?club_id=4&comp_id=243",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6400.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6410.json"
       ],
       "previousSeasons": {
         "2006-07": {
@@ -1635,7 +2015,25 @@
       },
       "assessmentRationale": "2008-09 Liverpool FC의 CB 기용 및 개인 영향력을 기준으로 B+ 잠정 평가. 2008-09 최우선, 2007-08 보조, 2006-07 가장 낮게 가중. 팀의 리그 순위는 선수 티어에 가산하지 않음. 2008-09 PL 선발 자료 미확보, 골 자료 미확보; 이전 시즌 타 리그 이력은 추가 증빙 필요.",
       "candidateRationale": "4-2-3-1 계열 당시 전술과 실제 시즌 후보군을 기준으로 신규 선정. 개별 경기 최다 포지션은 추후 전술 시트와 대조.",
-      "rankRationale": "2008-09 CB 후보 중 17위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지."
+      "rankRationale": "2008-09 CB 후보 중 17위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지.",
+      "externalAuditSegment2": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "leagueAssists",
+            "old": null,
+            "proposed": 2,
+            "action": "fill_missing",
+            "reason": "동일 구단 PL의 경기 집계와 시즌 집계가 일치한다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6400.json",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6410.json"
+        ]
+      }
     },
     {
       "id": "pl-2008-09-liverpool-05",
@@ -1658,7 +2056,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "2008_09_PL_season_statbunker_club_table",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/822bd0ba/2008-2009/c9/Liverpool-Stats-Premier-League",
         "https://po.statbunker.com/competitions/SeasonAppearances?club_id=4&comp_id=243"
@@ -1698,14 +2096,18 @@
       "leagueStarts": 9,
       "starts": 9,
       "leagueGoals": 0,
-      "leagueAssists": null,
+      "leagueAssists": 0,
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "2008_09_PL_season_statbunker_club_table",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/822bd0ba/2008-2009/c9/Liverpool-Stats-Premier-League",
-        "https://po.statbunker.com/competitions/SeasonAppearances?club_id=4&comp_id=243"
+        "https://po.statbunker.com/competitions/SeasonAppearances?club_id=4&comp_id=243",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6477.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6501.json"
       ],
       "previousSeasons": {
         "2006-07": {
@@ -1723,7 +2125,25 @@
       },
       "assessmentRationale": "2008-09 Liverpool FC의 LB 기용 및 개인 영향력을 기준으로 B 잠정 평가. 2008-09 최우선, 2007-08 보조, 2006-07 가장 낮게 가중. 팀의 리그 순위는 선수 티어에 가산하지 않음. 2008-09 PL 선발 자료 미확보, 골 자료 미확보; 이전 시즌 타 리그 이력은 추가 증빙 필요.",
       "candidateRationale": "4-2-3-1 계열 당시 전술과 실제 시즌 후보군을 기준으로 신규 선정. 개별 경기 최다 포지션은 추후 전술 시트와 대조.",
-      "rankRationale": "2008-09 LB 후보 중 8위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지."
+      "rankRationale": "2008-09 LB 후보 중 8위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지.",
+      "externalAuditSegment2": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "leagueAssists",
+            "old": null,
+            "proposed": 0,
+            "action": "fill_missing",
+            "reason": "동일 구단 PL의 경기 집계와 시즌 집계가 일치한다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6477.json",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6501.json"
+        ]
+      }
     },
     {
       "id": "pl-2008-09-liverpool-07",
@@ -1741,14 +2161,18 @@
       "leagueAppearances": 29,
       "leagueStarts": 29,
       "starts": 29,
-      "leagueGoals": 0,
-      "leagueAssists": null,
+      "leagueGoals": 1,
+      "leagueAssists": 1,
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
-        "https://fbref.com/en/squads/822bd0ba/2008-2009/c9/Liverpool-Stats-Premier-League"
+        "https://fbref.com/en/squads/822bd0ba/2008-2009/c9/Liverpool-Stats-Premier-League",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6332.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6339.json"
       ],
       "previousSeasons": {
         "2006-07": {
@@ -1766,7 +2190,32 @@
       },
       "assessmentRationale": "2008-09 Liverpool FC의 RB 기용 및 개인 영향력을 기준으로 A- 잠정 평가. 2008-09 최우선, 2007-08 보조, 2006-07 가장 낮게 가중. 팀의 리그 순위는 선수 티어에 가산하지 않음. 2008-09 PL 선발 29, 골 0; 이전 시즌 타 리그 이력은 추가 증빙 필요.",
       "candidateRationale": "4-2-3-1 계열 당시 전술과 실제 시즌 후보군을 기준으로 신규 선정. 개별 경기 최다 포지션은 추후 전술 시트와 대조.",
-      "rankRationale": "2008-09 RB 후보 중 3위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지."
+      "rankRationale": "2008-09 RB 후보 중 3위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지.",
+      "externalAuditSegment2": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "leagueGoals",
+            "old": 0,
+            "proposed": 1,
+            "action": "replace",
+            "reason": "동일 구단 PL의 경기 집계와 시즌 집계가 일치한다."
+          },
+          {
+            "field": "leagueAssists",
+            "old": null,
+            "proposed": 1,
+            "action": "fill_missing",
+            "reason": "동일 구단 PL의 경기 집계와 시즌 집계가 일치한다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6332.json",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6339.json"
+        ]
+      }
     },
     {
       "id": "pl-2008-09-liverpool-08",
@@ -1785,13 +2234,17 @@
       "leagueStarts": 27,
       "starts": 27,
       "leagueGoals": 0,
-      "leagueAssists": null,
+      "leagueAssists": 1,
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
-        "https://fbref.com/en/squads/822bd0ba/2008-2009/c9/Liverpool-Stats-Premier-League"
+        "https://fbref.com/en/squads/822bd0ba/2008-2009/c9/Liverpool-Stats-Premier-League",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6353.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6358.json"
       ],
       "previousSeasons": {
         "2006-07": {
@@ -1809,7 +2262,25 @@
       },
       "assessmentRationale": "2008-09 Liverpool FC의 DM 기용 및 개인 영향력을 기준으로 A 잠정 평가. 2008-09 최우선, 2007-08 보조, 2006-07 가장 낮게 가중. 팀의 리그 순위는 선수 티어에 가산하지 않음. 2008-09 PL 선발 27, 골 0; 이전 시즌 타 리그 이력은 추가 증빙 필요.",
       "candidateRationale": "4-2-3-1 계열 당시 전술과 실제 시즌 후보군을 기준으로 신규 선정. 개별 경기 최다 포지션은 추후 전술 시트와 대조.",
-      "rankRationale": "2008-09 DM 후보 중 2위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지."
+      "rankRationale": "2008-09 DM 후보 중 2위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지.",
+      "externalAuditSegment2": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "leagueAssists",
+            "old": null,
+            "proposed": 1,
+            "action": "fill_missing",
+            "reason": "동일 구단 PL의 경기 집계와 시즌 집계가 일치한다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6353.json",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6358.json"
+        ]
+      }
     },
     {
       "id": "pl-2008-09-liverpool-09",
@@ -1828,14 +2299,18 @@
       "leagueStarts": 13,
       "starts": 13,
       "leagueGoals": 1,
-      "leagueAssists": null,
+      "leagueAssists": 2,
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "2008_09_PL_season_statbunker_club_table",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/822bd0ba/2008-2009/c9/Liverpool-Stats-Premier-League",
-        "https://po.statbunker.com/competitions/SeasonAppearances?club_id=4&comp_id=243"
+        "https://po.statbunker.com/competitions/SeasonAppearances?club_id=4&comp_id=243",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6353.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6422.json"
       ],
       "previousSeasons": {
         "2006-07": {
@@ -1853,7 +2328,25 @@
       },
       "assessmentRationale": "2008-09 Liverpool FC의 DM 기용 및 개인 영향력을 기준으로 B+ 잠정 평가. 2008-09 최우선, 2007-08 보조, 2006-07 가장 낮게 가중. 팀의 리그 순위는 선수 티어에 가산하지 않음. 2008-09 PL 선발 자료 미확보, 골 자료 미확보; 이전 시즌 타 리그 이력은 추가 증빙 필요.",
       "candidateRationale": "4-2-3-1 계열 당시 전술과 실제 시즌 후보군을 기준으로 신규 선정. 개별 경기 최다 포지션은 추후 전술 시트와 대조.",
-      "rankRationale": "2008-09 DM 후보 중 9위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지."
+      "rankRationale": "2008-09 DM 후보 중 9위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지.",
+      "externalAuditSegment2": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "leagueAssists",
+            "old": null,
+            "proposed": 2,
+            "action": "fill_missing",
+            "reason": "동일 구단 PL의 경기 집계와 시즌 집계가 일치한다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6353.json",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6422.json"
+        ]
+      }
     },
     {
       "id": "pl-2008-09-liverpool-10",
@@ -1871,14 +2364,18 @@
       "leagueAppearances": 33,
       "leagueStarts": 27,
       "starts": 27,
-      "leagueGoals": 4,
-      "leagueAssists": 5,
+      "leagueGoals": 3,
+      "leagueAssists": 4,
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
-        "https://fbref.com/en/squads/822bd0ba/2008-2009/c9/Liverpool-Stats-Premier-League"
+        "https://fbref.com/en/squads/822bd0ba/2008-2009/c9/Liverpool-Stats-Premier-League",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6339.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6353.json"
       ],
       "previousSeasons": {
         "2006-07": {
@@ -1897,7 +2394,32 @@
       "assessmentRationale": "2008-09 Liverpool FC의 CM 기용 및 개인 영향력을 기준으로 A+ 잠정 평가. 2008-09 최우선, 2007-08 보조, 2006-07 가장 낮게 가중. 팀의 리그 순위는 선수 티어에 가산하지 않음. 2008-09 PL 선발 27, 골 4; 이전 시즌 타 리그 이력은 추가 증빙 필요.",
       "candidateRationale": "4-2-3-1 계열 당시 전술과 실제 시즌 후보군을 기준으로 신규 선정. 개별 경기 최다 포지션은 추후 전술 시트와 대조.",
       "rankRationale": "2008-09 CM 후보 중 2위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지.",
-      "goalCrossSourceNote": "FBref historical 2008-09 Premier League goals used as primary; Statbunker may differ on some goals/own-goals."
+      "goalCrossSourceNote": "FBref historical 2008-09 Premier League goals used as primary; Statbunker may differ on some goals/own-goals.",
+      "externalAuditSegment2": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "leagueGoals",
+            "old": 4,
+            "proposed": 3,
+            "action": "replace",
+            "reason": "동일 구단 PL의 경기 집계와 시즌 집계가 일치한다."
+          },
+          {
+            "field": "leagueAssists",
+            "old": 5,
+            "proposed": 4,
+            "action": "replace",
+            "reason": "동일 구단 PL의 경기 집계와 시즌 집계가 일치한다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6339.json",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6353.json"
+        ]
+      }
     },
     {
       "id": "pl-2008-09-liverpool-11",
@@ -1920,7 +2442,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/822bd0ba/2008-2009/c9/Liverpool-Stats-Premier-League",
         "https://fbref.com/en/players/caeb5442/Steven-Gerrard"
@@ -1966,7 +2488,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/822bd0ba/2008-2009/c9/Liverpool-Stats-Premier-League"
       ],
@@ -2005,14 +2527,18 @@
       "leagueStarts": 6,
       "starts": 6,
       "leagueGoals": 3,
-      "leagueAssists": null,
+      "leagueAssists": 1,
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "2008_09_PL_season_statbunker_club_table",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/822bd0ba/2008-2009/c9/Liverpool-Stats-Premier-League",
-        "https://po.statbunker.com/competitions/SeasonAppearances?club_id=4&comp_id=243"
+        "https://po.statbunker.com/competitions/SeasonAppearances?club_id=4&comp_id=243",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6422.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6477.json"
       ],
       "previousSeasons": {
         "2006-07": {
@@ -2030,7 +2556,25 @@
       },
       "assessmentRationale": "2008-09 Liverpool FC의 LW 기용 및 개인 영향력을 기준으로 B 잠정 평가. 2008-09 최우선, 2007-08 보조, 2006-07 가장 낮게 가중. 팀의 리그 순위는 선수 티어에 가산하지 않음. 2008-09 PL 선발 자료 미확보, 골 자료 미확보; 이전 시즌 타 리그 이력은 추가 증빙 필요.",
       "candidateRationale": "4-2-3-1 계열 당시 전술과 실제 시즌 후보군을 기준으로 신규 선정. 개별 경기 최다 포지션은 추후 전술 시트와 대조.",
-      "rankRationale": "2008-09 LW 후보 중 11위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지."
+      "rankRationale": "2008-09 LW 후보 중 11위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지.",
+      "externalAuditSegment2": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "leagueAssists",
+            "old": null,
+            "proposed": 1,
+            "action": "fill_missing",
+            "reason": "동일 구단 PL의 경기 집계와 시즌 집계가 일치한다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6422.json",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6477.json"
+        ]
+      }
     },
     {
       "id": "pl-2008-09-liverpool-14",
@@ -2053,7 +2597,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/822bd0ba/2008-2009/c9/Liverpool-Stats-Premier-League"
       ],
@@ -2096,7 +2640,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "2008_09_PL_season_statbunker_club_table",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/822bd0ba/2008-2009/c9/Liverpool-Stats-Premier-League",
         "https://po.statbunker.com/competitions/SeasonAppearances?club_id=4&comp_id=243"
@@ -2140,7 +2684,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "2008_09_PL_season_statbunker_club_table",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/822bd0ba/2008-2009/c9/Liverpool-Stats-Premier-League",
         "https://po.statbunker.com/competitions/SeasonAppearances?club_id=4&comp_id=243",
@@ -2187,7 +2731,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "2008_09_PL_season_statbunker_club_table",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/822bd0ba/2008-2009/c9/Liverpool-Stats-Premier-League",
         "https://po.statbunker.com/competitions/SeasonAppearances?club_id=4&comp_id=243"
@@ -2231,7 +2775,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/cff3d9bb/2008-2009/c9/Chelsea-Stats-Premier-League"
       ],
@@ -2274,7 +2818,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/cff3d9bb/2008-2009/c9/Chelsea-Stats-Premier-League"
       ],
@@ -2317,7 +2861,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/cff3d9bb/2008-2009/c9/Chelsea-Stats-Premier-League"
       ],
@@ -2360,7 +2904,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/cff3d9bb/2008-2009/c9/Chelsea-Stats-Premier-League"
       ],
@@ -2403,7 +2947,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/cff3d9bb/2008-2009/c9/Chelsea-Stats-Premier-League"
       ],
@@ -2446,7 +2990,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/cff3d9bb/2008-2009/c9/Chelsea-Stats-Premier-League"
       ],
@@ -2489,7 +3033,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/cff3d9bb/2008-2009/c9/Chelsea-Stats-Premier-League",
         "https://fbref.com/en/players/13dd442f/Jose-Bosingwa"
@@ -2537,7 +3081,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/cff3d9bb/2008-2009/c9/Chelsea-Stats-Premier-League"
       ],
@@ -2580,7 +3124,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/cff3d9bb/2008-2009/c9/Chelsea-Stats-Premier-League"
       ],
@@ -2623,7 +3167,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/cff3d9bb/2008-2009/c9/Chelsea-Stats-Premier-League"
       ],
@@ -2666,7 +3210,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/cff3d9bb/2008-2009/c9/Chelsea-Stats-Premier-League"
       ],
@@ -2709,7 +3253,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/cff3d9bb/2008-2009/c9/Chelsea-Stats-Premier-League"
       ],
@@ -2752,7 +3296,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/cff3d9bb/2008-2009/c9/Chelsea-Stats-Premier-League"
       ],
@@ -2795,7 +3339,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/cff3d9bb/2008-2009/c9/Chelsea-Stats-Premier-League"
       ],
@@ -2838,7 +3382,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/cff3d9bb/2008-2009/c9/Chelsea-Stats-Premier-League"
       ],
@@ -2881,7 +3425,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/cff3d9bb/2008-2009/c9/Chelsea-Stats-Premier-League"
       ],
@@ -2924,7 +3468,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/cff3d9bb/2008-2009/c9/Chelsea-Stats-Premier-League",
         "https://fbref.com/en/players/931ed5e9/Nicolas-Anelka"
@@ -2982,7 +3526,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/cff3d9bb/2008-2009/c9/Chelsea-Stats-Premier-League"
       ],
@@ -3025,7 +3569,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/18bb7c10/2008-2009/c9/Arsenal-Stats-Premier-League"
       ],
@@ -3064,14 +3608,18 @@
       "leagueStarts": 5,
       "starts": 5,
       "leagueGoals": 0,
-      "leagueAssists": null,
+      "leagueAssists": 0,
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "2008_09_PL_season_statbunker_club_table",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/18bb7c10/2008-2009/c9/Arsenal-Stats-Premier-League",
-        "https://statbunker.com/competitions/SeasonAppearances?club_id=5&comp_id=243"
+        "https://statbunker.com/competitions/SeasonAppearances?club_id=5&comp_id=243",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6643.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6653.json"
       ],
       "previousSeasons": {
         "2006-07": {
@@ -3089,7 +3637,25 @@
       },
       "assessmentRationale": "2008-09 Arsenal FC의 GK 기용 및 개인 영향력을 기준으로 B- 잠정 평가. 2008-09 최우선, 2007-08 보조, 2006-07 가장 낮게 가중. 팀의 리그 순위는 선수 티어에 가산하지 않음. 2008-09 PL 선발 자료 미확보, 골 자료 미확보; 이전 시즌 타 리그 이력은 추가 증빙 필요.",
       "candidateRationale": "4-4-2 / 4-2-3-1 계열 당시 전술과 실제 시즌 후보군을 기준으로 신규 선정. 개별 경기 최다 포지션은 추후 전술 시트와 대조.",
-      "rankRationale": "2008-09 GK 후보 중 10위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지."
+      "rankRationale": "2008-09 GK 후보 중 10위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지.",
+      "externalAuditSegment2": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "leagueAssists",
+            "old": null,
+            "proposed": 0,
+            "action": "fill_missing",
+            "reason": "동일 구단 PL의 경기 집계와 시즌 집계가 일치한다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6643.json",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6653.json"
+        ]
+      }
     },
     {
       "id": "pl-2008-09-arsenal-03",
@@ -3108,13 +3674,17 @@
       "leagueStarts": 26,
       "starts": 26,
       "leagueGoals": 1,
-      "leagueAssists": 0,
+      "leagueAssists": 1,
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
-        "https://fbref.com/en/squads/18bb7c10/2008-2009/c9/Arsenal-Stats-Premier-League"
+        "https://fbref.com/en/squads/18bb7c10/2008-2009/c9/Arsenal-Stats-Premier-League",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6338.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6347.json"
       ],
       "previousSeasons": {
         "2006-07": {
@@ -3132,7 +3702,25 @@
       },
       "assessmentRationale": "2008-09 Arsenal FC의 CB 기용 및 개인 영향력을 기준으로 A- 잠정 평가. 2008-09 최우선, 2007-08 보조, 2006-07 가장 낮게 가중. 팀의 리그 순위는 선수 티어에 가산하지 않음. 2008-09 PL 선발 26, 골 1; 이전 시즌 타 리그 이력은 추가 증빙 필요.",
       "candidateRationale": "4-4-2 / 4-2-3-1 계열 당시 전술과 실제 시즌 후보군을 기준으로 신규 선정. 개별 경기 최다 포지션은 추후 전술 시트와 대조.",
-      "rankRationale": "2008-09 CB 후보 중 10위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지."
+      "rankRationale": "2008-09 CB 후보 중 10위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지.",
+      "externalAuditSegment2": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "leagueAssists",
+            "old": 0,
+            "proposed": 1,
+            "action": "replace",
+            "reason": "동일 구단 PL의 경기 집계와 시즌 집계가 일치한다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6338.json",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6347.json"
+        ]
+      }
     },
     {
       "id": "pl-2008-09-arsenal-04",
@@ -3155,7 +3743,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/18bb7c10/2008-2009/c9/Arsenal-Stats-Premier-League"
       ],
@@ -3195,14 +3783,18 @@
       "leagueStarts": 13,
       "starts": 13,
       "leagueGoals": 0,
-      "leagueAssists": null,
+      "leagueAssists": 0,
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "2008_09_PL_season_statbunker_club_table",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/18bb7c10/2008-2009/c9/Arsenal-Stats-Premier-League",
-        "https://statbunker.com/competitions/SeasonAppearances?club_id=5&comp_id=243"
+        "https://statbunker.com/competitions/SeasonAppearances?club_id=5&comp_id=243",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6327.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6459.json"
       ],
       "previousSeasons": {
         "2006-07": {
@@ -3220,7 +3812,25 @@
       },
       "assessmentRationale": "2008-09 Arsenal FC의 CB 기용 및 개인 영향력을 기준으로 B+ 잠정 평가. 2008-09 최우선, 2007-08 보조, 2006-07 가장 낮게 가중. 팀의 리그 순위는 선수 티어에 가산하지 않음. 2008-09 PL 선발 자료 미확보, 골 자료 미확보; 이전 시즌 타 리그 이력은 추가 증빙 필요.",
       "candidateRationale": "4-4-2 / 4-2-3-1 계열 당시 전술과 실제 시즌 후보군을 기준으로 신규 선정. 개별 경기 최다 포지션은 추후 전술 시트와 대조.",
-      "rankRationale": "2008-09 CB 후보 중 18위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지."
+      "rankRationale": "2008-09 CB 후보 중 18위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지.",
+      "externalAuditSegment2": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "leagueAssists",
+            "old": null,
+            "proposed": 0,
+            "action": "fill_missing",
+            "reason": "동일 구단 PL의 경기 집계와 시즌 집계가 일치한다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6327.json",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6459.json"
+        ]
+      }
     },
     {
       "id": "pl-2008-09-arsenal-06",
@@ -3238,14 +3848,18 @@
       "leagueAppearances": 31,
       "leagueStarts": 30,
       "starts": 30,
-      "leagueGoals": 0,
+      "leagueGoals": 1,
       "leagueAssists": 0,
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
-        "https://fbref.com/en/squads/18bb7c10/2008-2009/c9/Arsenal-Stats-Premier-League"
+        "https://fbref.com/en/squads/18bb7c10/2008-2009/c9/Arsenal-Stats-Premier-League",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6327.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6338.json"
       ],
       "previousSeasons": {
         "2006-07": {
@@ -3264,7 +3878,25 @@
       "assessmentRationale": "2008-09 Arsenal FC의 LB 기용 및 개인 영향력을 기준으로 A- 잠정 평가. 2008-09 최우선, 2007-08 보조, 2006-07 가장 낮게 가중. 팀의 리그 순위는 선수 티어에 가산하지 않음. 2008-09 PL 선발 30, 골 0; 이전 시즌 타 리그 이력은 추가 증빙 필요.",
       "candidateRationale": "4-4-2 / 4-2-3-1 계열 당시 전술과 실제 시즌 후보군을 기준으로 신규 선정. 개별 경기 최다 포지션은 추후 전술 시트와 대조.",
       "rankRationale": "2008-09 LB 후보 중 4위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지.",
-      "goalCrossSourceNote": "FBref 2008-09 PL: 0 league goals; Statbunker archive labels 1, conflicting historical attribution. Use FBref as primary."
+      "goalCrossSourceNote": "FBref 2008-09 PL: 0 league goals; Statbunker archive labels 1, conflicting historical attribution. Use FBref as primary.",
+      "externalAuditSegment2": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "leagueGoals",
+            "old": 0,
+            "proposed": 1,
+            "action": "replace",
+            "reason": "동일 구단 PL의 경기 집계와 시즌 집계가 일치한다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6327.json",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6338.json"
+        ]
+      }
     },
     {
       "id": "pl-2008-09-arsenal-07",
@@ -3283,14 +3915,18 @@
       "leagueStarts": 6,
       "starts": 6,
       "leagueGoals": 0,
-      "leagueAssists": null,
+      "leagueAssists": 0,
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "2008_09_PL_season_statbunker_club_table",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/18bb7c10/2008-2009/c9/Arsenal-Stats-Premier-League",
-        "https://statbunker.com/competitions/SeasonAppearances?club_id=5&comp_id=243"
+        "https://statbunker.com/competitions/SeasonAppearances?club_id=5&comp_id=243",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6643.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6653.json"
       ],
       "previousSeasons": {
         "2006-07": {
@@ -3308,7 +3944,25 @@
       },
       "assessmentRationale": "2008-09 Arsenal FC의 LB 기용 및 개인 영향력을 기준으로 B- 잠정 평가. 2008-09 최우선, 2007-08 보조, 2006-07 가장 낮게 가중. 팀의 리그 순위는 선수 티어에 가산하지 않음. 2008-09 PL 선발 자료 미확보, 골 자료 미확보; 이전 시즌 타 리그 이력은 추가 증빙 필요.",
       "candidateRationale": "4-4-2 / 4-2-3-1 계열 당시 전술과 실제 시즌 후보군을 기준으로 신규 선정. 개별 경기 최다 포지션은 추후 전술 시트와 대조.",
-      "rankRationale": "2008-09 LB 후보 중 9위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지."
+      "rankRationale": "2008-09 LB 후보 중 9위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지.",
+      "externalAuditSegment2": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "leagueAssists",
+            "old": null,
+            "proposed": 0,
+            "action": "fill_missing",
+            "reason": "동일 구단 PL의 경기 집계와 시즌 집계가 일치한다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6643.json",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6653.json"
+        ]
+      }
     },
     {
       "id": "pl-2008-09-arsenal-08",
@@ -3331,7 +3985,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/18bb7c10/2008-2009/c9/Arsenal-Stats-Premier-League"
       ],
@@ -3374,7 +4028,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/18bb7c10/2008-2009/c9/Arsenal-Stats-Premier-League"
       ],
@@ -3413,14 +4067,18 @@
       "leagueStarts": 16,
       "starts": 16,
       "leagueGoals": 3,
-      "leagueAssists": null,
+      "leagueAssists": 2,
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "2008_09_PL_season_statbunker_club_table",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/18bb7c10/2008-2009/c9/Arsenal-Stats-Premier-League",
-        "https://statbunker.com/competitions/SeasonAppearances?club_id=5&comp_id=243"
+        "https://statbunker.com/competitions/SeasonAppearances?club_id=5&comp_id=243",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6431.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6436.json"
       ],
       "previousSeasons": {
         "2006-07": {
@@ -3438,7 +4096,25 @@
       },
       "assessmentRationale": "2008-09 Arsenal FC의 DM 기용 및 개인 영향력을 기준으로 B 잠정 평가. 2008-09 최우선, 2007-08 보조, 2006-07 가장 낮게 가중. 팀의 리그 순위는 선수 티어에 가산하지 않음. 2008-09 PL 선발 자료 미확보, 골 자료 미확보; 이전 시즌 타 리그 이력은 추가 증빙 필요.",
       "candidateRationale": "4-4-2 / 4-2-3-1 계열 당시 전술과 실제 시즌 후보군을 기준으로 신규 선정. 개별 경기 최다 포지션은 추후 전술 시트와 대조.",
-      "rankRationale": "2008-09 DM 후보 중 11위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지."
+      "rankRationale": "2008-09 DM 후보 중 11위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지.",
+      "externalAuditSegment2": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "leagueAssists",
+            "old": null,
+            "proposed": 2,
+            "action": "fill_missing",
+            "reason": "동일 구단 PL의 경기 집계와 시즌 집계가 일치한다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6431.json",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6436.json"
+        ]
+      }
     },
     {
       "id": "pl-2008-09-arsenal-11",
@@ -3461,7 +4137,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/18bb7c10/2008-2009/c9/Arsenal-Stats-Premier-League"
       ],
@@ -3504,7 +4180,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/18bb7c10/2008-2009/c9/Arsenal-Stats-Premier-League"
       ],
@@ -3543,14 +4219,17 @@
       "leagueStarts": 1,
       "starts": 1,
       "leagueGoals": 0,
-      "leagueAssists": null,
+      "leagueAssists": 1,
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "2008_09_PL_season_statbunker_club_table",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/18bb7c10/2008-2009/c9/Arsenal-Stats-Premier-League",
-        "https://statbunker.com/competitions/SeasonAppearances?club_id=5&comp_id=243"
+        "https://statbunker.com/competitions/SeasonAppearances?club_id=5&comp_id=243",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6669.json"
       ],
       "previousSeasons": {
         "2006-07": {
@@ -3568,7 +4247,24 @@
       },
       "assessmentRationale": "2008-09 Arsenal FC의 CM 기용 및 개인 영향력을 기준으로 B- 잠정 평가. 2008-09 최우선, 2007-08 보조, 2006-07 가장 낮게 가중. 팀의 리그 순위는 선수 티어에 가산하지 않음. 2008-09 PL 선발 자료 미확보, 골 자료 미확보; 이전 시즌 타 리그 이력은 추가 증빙 필요.",
       "candidateRationale": "4-4-2 / 4-2-3-1 계열 당시 전술과 실제 시즌 후보군을 기준으로 신규 선정. 개별 경기 최다 포지션은 추후 전술 시트와 대조.",
-      "rankRationale": "2008-09 CM 후보 중 16위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지."
+      "rankRationale": "2008-09 CM 후보 중 16위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지.",
+      "externalAuditSegment2": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "leagueAssists",
+            "old": null,
+            "proposed": 1,
+            "action": "fill_missing",
+            "reason": "동일 구단 PL의 경기 집계와 시즌 집계가 일치한다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6669.json"
+        ]
+      }
     },
     {
       "id": "pl-2008-09-arsenal-14",
@@ -3587,13 +4283,17 @@
       "leagueStarts": 28,
       "starts": 28,
       "leagueGoals": 6,
-      "leagueAssists": 3,
+      "leagueAssists": 2,
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
-        "https://fbref.com/en/squads/18bb7c10/2008-2009/c9/Arsenal-Stats-Premier-League"
+        "https://fbref.com/en/squads/18bb7c10/2008-2009/c9/Arsenal-Stats-Premier-League",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6327.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6338.json"
       ],
       "previousSeasons": {
         "2006-07": {
@@ -3611,7 +4311,25 @@
       },
       "assessmentRationale": "2008-09 Arsenal FC의 LW 기용 및 개인 영향력을 기준으로 A- 잠정 평가. 2008-09 최우선, 2007-08 보조, 2006-07 가장 낮게 가중. 팀의 리그 순위는 선수 티어에 가산하지 않음. 2008-09 PL 선발 28, 골 6; 이전 시즌 타 리그 이력은 추가 증빙 필요.",
       "candidateRationale": "4-4-2 / 4-2-3-1 계열 당시 전술과 실제 시즌 후보군을 기준으로 신규 선정. 개별 경기 최다 포지션은 추후 전술 시트와 대조.",
-      "rankRationale": "2008-09 LW 후보 중 4위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지."
+      "rankRationale": "2008-09 LW 후보 중 4위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지.",
+      "externalAuditSegment2": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "leagueAssists",
+            "old": 3,
+            "proposed": 2,
+            "action": "replace",
+            "reason": "동일 구단 PL의 경기 집계와 시즌 집계가 일치한다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6327.json",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6338.json"
+        ]
+      }
     },
     {
       "id": "pl-2008-09-arsenal-15",
@@ -3630,14 +4348,18 @@
       "leagueStarts": 12,
       "starts": 12,
       "leagueGoals": 6,
-      "leagueAssists": null,
+      "leagueAssists": 5,
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "2008_09_PL_season_statbunker_club_table",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/18bb7c10/2008-2009/c9/Arsenal-Stats-Premier-League",
-        "https://statbunker.com/competitions/SeasonAppearances?club_id=5&comp_id=243"
+        "https://statbunker.com/competitions/SeasonAppearances?club_id=5&comp_id=243",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6576.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6586.json"
       ],
       "previousSeasons": {
         "2006-07": {
@@ -3655,7 +4377,25 @@
       },
       "assessmentRationale": "2008-09 Arsenal FC의 LW 기용 및 개인 영향력을 기준으로 A- 잠정 평가. 2008-09 최우선, 2007-08 보조, 2006-07 가장 낮게 가중. 팀의 리그 순위는 선수 티어에 가산하지 않음. 2008-09 PL 선발 자료 미확보, 골 자료 미확보; 이전 시즌 타 리그 이력은 추가 증빙 필요.",
       "candidateRationale": "4-4-2 / 4-2-3-1 계열 당시 전술과 실제 시즌 후보군을 기준으로 신규 선정. 개별 경기 최다 포지션은 추후 전술 시트와 대조.",
-      "rankRationale": "2008-09 LW 후보 중 5위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지."
+      "rankRationale": "2008-09 LW 후보 중 5위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지.",
+      "externalAuditSegment2": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "leagueAssists",
+            "old": null,
+            "proposed": 5,
+            "action": "fill_missing",
+            "reason": "동일 구단 PL의 경기 집계와 시즌 집계가 일치한다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6576.json",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6586.json"
+        ]
+      }
     },
     {
       "id": "pl-2008-09-arsenal-16",
@@ -3674,14 +4414,18 @@
       "leagueStarts": 16,
       "starts": 16,
       "leagueGoals": 2,
-      "leagueAssists": null,
+      "leagueAssists": 2,
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "2008_09_PL_season_statbunker_club_table",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/18bb7c10/2008-2009/c9/Arsenal-Stats-Premier-League",
-        "https://statbunker.com/competitions/SeasonAppearances?club_id=5&comp_id=243"
+        "https://statbunker.com/competitions/SeasonAppearances?club_id=5&comp_id=243",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6327.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6338.json"
       ],
       "previousSeasons": {
         "2006-07": {
@@ -3699,7 +4443,25 @@
       },
       "assessmentRationale": "2008-09 Arsenal FC의 RW 기용 및 개인 영향력을 기준으로 B+ 잠정 평가. 2008-09 최우선, 2007-08 보조, 2006-07 가장 낮게 가중. 팀의 리그 순위는 선수 티어에 가산하지 않음. 2008-09 PL 선발 자료 미확보, 골 자료 미확보; 이전 시즌 타 리그 이력은 추가 증빙 필요.",
       "candidateRationale": "4-4-2 / 4-2-3-1 계열 당시 전술과 실제 시즌 후보군을 기준으로 신규 선정. 개별 경기 최다 포지션은 추후 전술 시트와 대조.",
-      "rankRationale": "2008-09 RW 후보 중 8위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지."
+      "rankRationale": "2008-09 RW 후보 중 8위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지.",
+      "externalAuditSegment2": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "leagueAssists",
+            "old": null,
+            "proposed": 2,
+            "action": "fill_missing",
+            "reason": "동일 구단 PL의 경기 집계와 시즌 집계가 일치한다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6327.json",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6338.json"
+        ]
+      }
     },
     {
       "id": "pl-2008-09-arsenal-17",
@@ -3718,14 +4480,18 @@
       "leagueStarts": 17,
       "starts": 17,
       "leagueGoals": 3,
-      "leagueAssists": null,
+      "leagueAssists": 3,
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "2008_09_PL_season_statbunker_club_table",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/18bb7c10/2008-2009/c9/Arsenal-Stats-Premier-League",
-        "https://statbunker.com/competitions/SeasonAppearances?club_id=5&comp_id=243"
+        "https://statbunker.com/competitions/SeasonAppearances?club_id=5&comp_id=243",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6327.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6338.json"
       ],
       "previousSeasons": {
         "2006-07": {
@@ -3743,7 +4509,25 @@
       },
       "assessmentRationale": "2008-09 Arsenal FC의 RW 기용 및 개인 영향력을 기준으로 B 잠정 평가. 2008-09 최우선, 2007-08 보조, 2006-07 가장 낮게 가중. 팀의 리그 순위는 선수 티어에 가산하지 않음. 2008-09 PL 선발 자료 미확보, 골 자료 미확보; 이전 시즌 타 리그 이력은 추가 증빙 필요.",
       "candidateRationale": "4-4-2 / 4-2-3-1 계열 당시 전술과 실제 시즌 후보군을 기준으로 신규 선정. 개별 경기 최다 포지션은 추후 전술 시트와 대조.",
-      "rankRationale": "2008-09 RW 후보 중 10위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지."
+      "rankRationale": "2008-09 RW 후보 중 10위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지.",
+      "externalAuditSegment2": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "leagueAssists",
+            "old": null,
+            "proposed": 3,
+            "action": "fill_missing",
+            "reason": "동일 구단 PL의 경기 집계와 시즌 집계가 일치한다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6327.json",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6338.json"
+        ]
+      }
     },
     {
       "id": "pl-2008-09-arsenal-18",
@@ -3766,7 +4550,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/18bb7c10/2008-2009/c9/Arsenal-Stats-Premier-League"
       ],
@@ -3805,14 +4589,18 @@
       "leagueStarts": 21,
       "starts": 21,
       "leagueGoals": 10,
-      "leagueAssists": null,
+      "leagueAssists": 4,
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "2008_09_PL_season_statbunker_club_table",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/18bb7c10/2008-2009/c9/Arsenal-Stats-Premier-League",
-        "https://statbunker.com/competitions/SeasonAppearances?club_id=5&comp_id=243"
+        "https://statbunker.com/competitions/SeasonAppearances?club_id=5&comp_id=243",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6327.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6338.json"
       ],
       "previousSeasons": {
         "2006-07": {
@@ -3830,7 +4618,25 @@
       },
       "assessmentRationale": "2008-09 Arsenal FC의 ST 기용 및 개인 영향력을 기준으로 A- 잠정 평가. 2008-09 최우선, 2007-08 보조, 2006-07 가장 낮게 가중. 팀의 리그 순위는 선수 티어에 가산하지 않음. 2008-09 PL 선발 자료 미확보, 골 자료 미확보; 이전 시즌 타 리그 이력은 추가 증빙 필요.",
       "candidateRationale": "4-4-2 / 4-2-3-1 계열 당시 전술과 실제 시즌 후보군을 기준으로 신규 선정. 개별 경기 최다 포지션은 추후 전술 시트와 대조.",
-      "rankRationale": "2008-09 ST 후보 중 9위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지."
+      "rankRationale": "2008-09 ST 후보 중 9위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지.",
+      "externalAuditSegment2": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "leagueAssists",
+            "old": null,
+            "proposed": 4,
+            "action": "fill_missing",
+            "reason": "동일 구단 PL의 경기 집계와 시즌 집계가 일치한다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6327.json",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6338.json"
+        ]
+      }
     },
     {
       "id": "pl-2008-09-arsenal-20",
@@ -3849,14 +4655,18 @@
       "leagueStarts": 17,
       "starts": 17,
       "leagueGoals": 9,
-      "leagueAssists": null,
+      "leagueAssists": 2,
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "2008_09_PL_season_statbunker_club_table",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/18bb7c10/2008-2009/c9/Arsenal-Stats-Premier-League",
-        "https://statbunker.com/competitions/SeasonAppearances?club_id=5&comp_id=243"
+        "https://statbunker.com/competitions/SeasonAppearances?club_id=5&comp_id=243",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6327.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6367.json"
       ],
       "previousSeasons": {
         "2006-07": {
@@ -3874,7 +4684,25 @@
       },
       "assessmentRationale": "2008-09 Arsenal FC의 ST 기용 및 개인 영향력을 기준으로 B+ 잠정 평가. 2008-09 최우선, 2007-08 보조, 2006-07 가장 낮게 가중. 팀의 리그 순위는 선수 티어에 가산하지 않음. 2008-09 PL 선발 자료 미확보, 골 자료 미확보; 이전 시즌 타 리그 이력은 추가 증빙 필요.",
       "candidateRationale": "4-4-2 / 4-2-3-1 계열 당시 전술과 실제 시즌 후보군을 기준으로 신규 선정. 개별 경기 최다 포지션은 추후 전술 시트와 대조.",
-      "rankRationale": "2008-09 ST 후보 중 14위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지."
+      "rankRationale": "2008-09 ST 후보 중 14위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지.",
+      "externalAuditSegment2": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "leagueAssists",
+            "old": null,
+            "proposed": 2,
+            "action": "fill_missing",
+            "reason": "동일 구단 PL의 경기 집계와 시즌 집계가 일치한다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6327.json",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6367.json"
+        ]
+      }
     },
     {
       "id": "pl-2008-09-everton-01",
@@ -3897,7 +4725,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/d3fd31cc/2008-2009/c9/Everton-Stats-Premier-League"
       ],
@@ -3940,7 +4768,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/d3fd31cc/2008-2009/c9/Everton-Stats-Premier-League"
       ],
@@ -3983,7 +4811,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/d3fd31cc/2008-2009/c9/Everton-Stats-Premier-League"
       ],
@@ -4026,7 +4854,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/d3fd31cc/2008-2009/c9/Everton-Stats-Premier-League"
       ],
@@ -4069,9 +4897,13 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
-        "https://fbref.com/en/squads/d3fd31cc/2008-2009/c9/Everton-Stats-Premier-League"
+        "https://fbref.com/en/squads/d3fd31cc/2008-2009/c9/Everton-Stats-Premier-League",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5979.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5984.json"
       ],
       "previousSeasons": {
         "2006-07": {
@@ -4082,14 +4914,33 @@
         },
         "2007-08": {
           "club": "everton",
-          "leagueStarts": 17,
+          "leagueStarts": 13,
           "leagueGoals": 0,
-          "status": "prior_draft_source_pending_double_check"
+          "status": "prior_draft_source_pending_double_check",
+          "auditStatus": "specific_field_corrected_other_fields_not_reverified"
         }
       },
       "assessmentRationale": "2008-09 Everton FC의 LB 기용 및 개인 영향력을 기준으로 A- 잠정 평가. 2008-09 최우선, 2007-08 보조, 2006-07 가장 낮게 가중. 팀의 리그 순위는 선수 티어에 가산하지 않음. 2008-09 PL 선발 26, 골 1; 이전 시즌 타 리그 이력은 추가 증빙 필요.",
       "candidateRationale": "4-4-1-1 / 4-5-1 계열 당시 전술과 실제 시즌 후보군을 기준으로 신규 선정. 개별 경기 최다 포지션은 추후 전술 시트와 대조.",
-      "rankRationale": "2008-09 LB 후보 중 3위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지."
+      "rankRationale": "2008-09 LB 후보 중 3위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지.",
+      "externalAuditSegment2": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "previousSeasons.2007-08.leagueStarts",
+            "old": 17,
+            "proposed": 13,
+            "action": "replace",
+            "reason": "2007-08 Everton의 PL 원기록과 기존 이전 시즌 필드가 다르다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5979.json",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5984.json"
+        ]
+      }
     },
     {
       "id": "pl-2008-09-everton-06",
@@ -4112,7 +4963,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/d3fd31cc/2008-2009/c9/Everton-Stats-Premier-League"
       ],
@@ -4155,7 +5006,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/d3fd31cc/2008-2009/c9/Everton-Stats-Premier-League"
       ],
@@ -4198,16 +5049,21 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
-        "https://fbref.com/en/squads/d3fd31cc/2008-2009/c9/Everton-Stats-Premier-League"
+        "https://fbref.com/en/squads/d3fd31cc/2008-2009/c9/Everton-Stats-Premier-League",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5569.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5580.json"
       ],
       "previousSeasons": {
         "2006-07": {
           "club": "everton",
           "leagueStarts": 35,
-          "leagueGoals": 0,
-          "status": "prior_draft_source_pending_double_check"
+          "leagueGoals": 1,
+          "status": "prior_draft_source_pending_double_check",
+          "auditStatus": "specific_field_corrected_other_fields_not_reverified"
         },
         "2007-08": {
           "club": "everton",
@@ -4218,7 +5074,25 @@
       },
       "assessmentRationale": "2008-09 Everton FC의 DM 기용 및 개인 영향력을 기준으로 B+ 잠정 평가. 2008-09 최우선, 2007-08 보조, 2006-07 가장 낮게 가중. 팀의 리그 순위는 선수 티어에 가산하지 않음. 2008-09 PL 선발 36, 골 0; 이전 시즌 타 리그 이력은 추가 증빙 필요.",
       "candidateRationale": "4-4-1-1 / 4-5-1 계열 당시 전술과 실제 시즌 후보군을 기준으로 신규 선정. 개별 경기 최다 포지션은 추후 전술 시트와 대조.",
-      "rankRationale": "2008-09 DM 후보 중 7위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지."
+      "rankRationale": "2008-09 DM 후보 중 7위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지.",
+      "externalAuditSegment2": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "previousSeasons.2006-07.leagueGoals",
+            "old": 0,
+            "proposed": 1,
+            "action": "replace",
+            "reason": "2006-07 Everton의 PL 원기록과 기존 이전 시즌 필드가 다르다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5569.json",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/5580.json"
+        ]
+      }
     },
     {
       "id": "pl-2008-09-everton-09",
@@ -4241,7 +5115,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/d3fd31cc/2008-2009/c9/Everton-Stats-Premier-League"
       ],
@@ -4279,14 +5153,18 @@
       "leagueAppearances": 26,
       "leagueStarts": 26,
       "starts": 26,
-      "leagueGoals": 6,
+      "leagueGoals": 5,
       "leagueAssists": 6,
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
-        "https://fbref.com/en/squads/d3fd31cc/2008-2009/c9/Everton-Stats-Premier-League"
+        "https://fbref.com/en/squads/d3fd31cc/2008-2009/c9/Everton-Stats-Premier-League",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6329.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6343.json"
       ],
       "previousSeasons": {
         "2006-07": {
@@ -4305,7 +5183,25 @@
       "assessmentRationale": "2008-09 Everton FC의 CM 기용 및 개인 영향력을 기준으로 A- 잠정 평가. 2008-09 최우선, 2007-08 보조, 2006-07 가장 낮게 가중. 팀의 리그 순위는 선수 티어에 가산하지 않음. 2008-09 PL 선발 26, 골 6; 이전 시즌 타 리그 이력은 추가 증빙 필요.",
       "candidateRationale": "4-4-1-1 / 4-5-1 계열 당시 전술과 실제 시즌 후보군을 기준으로 신규 선정. 개별 경기 최다 포지션은 추후 전술 시트와 대조.",
       "rankRationale": "2008-09 CM 후보 중 7위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지.",
-      "goalCrossSourceNote": "FBref historical 2008-09 Premier League goals used as primary; Statbunker may differ on some goals/own-goals."
+      "goalCrossSourceNote": "FBref historical 2008-09 Premier League goals used as primary; Statbunker may differ on some goals/own-goals.",
+      "externalAuditSegment2": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "leagueGoals",
+            "old": 6,
+            "proposed": 5,
+            "action": "replace",
+            "reason": "동일 구단 PL의 경기 집계와 시즌 집계가 일치한다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6329.json",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6343.json"
+        ]
+      }
     },
     {
       "id": "pl-2008-09-everton-11",
@@ -4328,7 +5224,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/d3fd31cc/2008-2009/c9/Everton-Stats-Premier-League"
       ],
@@ -4371,7 +5267,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/d3fd31cc/2008-2009/c9/Everton-Stats-Premier-League"
       ],
@@ -4409,14 +5305,18 @@
       "leagueAppearances": 28,
       "leagueStarts": 27,
       "starts": 27,
-      "leagueGoals": 3,
+      "leagueGoals": 2,
       "leagueAssists": 7,
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
-        "https://fbref.com/en/squads/d3fd31cc/2008-2009/c9/Everton-Stats-Premier-League"
+        "https://fbref.com/en/squads/d3fd31cc/2008-2009/c9/Everton-Stats-Premier-League",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6391.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6396.json"
       ],
       "previousSeasons": {
         "2006-07": {
@@ -4435,7 +5335,25 @@
       "assessmentRationale": "2008-09 Everton FC의 LW 기용 및 개인 영향력을 기준으로 B+ 잠정 평가. 2008-09 최우선, 2007-08 보조, 2006-07 가장 낮게 가중. 팀의 리그 순위는 선수 티어에 가산하지 않음. 2008-09 PL 선발 27, 골 3; 이전 시즌 타 리그 이력은 추가 증빙 필요.",
       "candidateRationale": "4-4-1-1 / 4-5-1 계열 당시 전술과 실제 시즌 후보군을 기준으로 신규 선정. 개별 경기 최다 포지션은 추후 전술 시트와 대조.",
       "rankRationale": "2008-09 LW 후보 중 7위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지.",
-      "goalCrossSourceNote": "FBref historical 2008-09 Premier League goals used as primary; Statbunker may differ on some goals/own-goals."
+      "goalCrossSourceNote": "FBref historical 2008-09 Premier League goals used as primary; Statbunker may differ on some goals/own-goals.",
+      "externalAuditSegment2": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "leagueGoals",
+            "old": 3,
+            "proposed": 2,
+            "action": "replace",
+            "reason": "동일 구단 PL의 경기 집계와 시즌 집계가 일치한다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6391.json",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6396.json"
+        ]
+      }
     },
     {
       "id": "pl-2008-09-everton-14",
@@ -4458,7 +5376,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/d3fd31cc/2008-2009/c9/Everton-Stats-Premier-League"
       ],
@@ -4501,7 +5419,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/d3fd31cc/2008-2009/c9/Everton-Stats-Premier-League"
       ],
@@ -4544,7 +5462,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/d3fd31cc/2008-2009/c9/Everton-Stats-Premier-League"
       ],
@@ -4587,7 +5505,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/d3fd31cc/2008-2009/c9/Everton-Stats-Premier-League"
       ],
@@ -4630,7 +5548,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/8602292d/2008-2009/c9/Aston-Villa-Stats-Premier-League"
       ],
@@ -4673,7 +5591,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/8602292d/2008-2009/c9/Aston-Villa-Stats-Premier-League"
       ],
@@ -4716,7 +5634,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/8602292d/2008-2009/c9/Aston-Villa-Stats-Premier-League"
       ],
@@ -4759,7 +5677,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/8602292d/2008-2009/c9/Aston-Villa-Stats-Premier-League"
       ],
@@ -4802,7 +5720,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/8602292d/2008-2009/c9/Aston-Villa-Stats-Premier-League"
       ],
@@ -4845,7 +5763,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/8602292d/2008-2009/c9/Aston-Villa-Stats-Premier-League"
       ],
@@ -4884,14 +5802,18 @@
       "leagueStarts": 3,
       "starts": 3,
       "leagueGoals": 0,
-      "leagueAssists": null,
+      "leagueAssists": 0,
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "2008_09_PL_season_statbunker_club_table",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/8602292d/2008-2009/c9/Aston-Villa-Stats-Premier-League",
-        "https://www.statbunker.com/competitions/SeasonAppearances?club_id=24&comp_id=243"
+        "https://www.statbunker.com/competitions/SeasonAppearances?club_id=24&comp_id=243",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6544.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6555.json"
       ],
       "previousSeasons": {
         "2006-07": {
@@ -4909,7 +5831,25 @@
       },
       "assessmentRationale": "2008-09 Aston Villa FC의 RB 기용 및 개인 영향력을 기준으로 B 잠정 평가. 2008-09 최우선, 2007-08 보조, 2006-07 가장 낮게 가중. 팀의 리그 순위는 선수 티어에 가산하지 않음. 2008-09 PL 선발 자료 미확보, 골 자료 미확보; 이전 시즌 타 리그 이력은 추가 증빙 필요.",
       "candidateRationale": "4-3-3 / 4-4-2 계열 당시 전술과 실제 시즌 후보군을 기준으로 신규 선정. 개별 경기 최다 포지션은 추후 전술 시트와 대조.",
-      "rankRationale": "2008-09 RB 후보 중 10위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지."
+      "rankRationale": "2008-09 RB 후보 중 10위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지.",
+      "externalAuditSegment2": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "leagueAssists",
+            "old": null,
+            "proposed": 0,
+            "action": "fill_missing",
+            "reason": "동일 구단 PL의 경기 집계와 시즌 집계가 일치한다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6544.json",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6555.json"
+        ]
+      }
     },
     {
       "id": "pl-2008-09-astonvilla-08",
@@ -4932,7 +5872,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/8602292d/2008-2009/c9/Aston-Villa-Stats-Premier-League"
       ],
@@ -4971,13 +5911,17 @@
       "leagueStarts": 38,
       "starts": 38,
       "leagueGoals": 5,
-      "leagueAssists": 6,
+      "leagueAssists": 7,
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
-        "https://fbref.com/en/squads/8602292d/2008-2009/c9/Aston-Villa-Stats-Premier-League"
+        "https://fbref.com/en/squads/8602292d/2008-2009/c9/Aston-Villa-Stats-Premier-League",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6334.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6341.json"
       ],
       "previousSeasons": {
         "2006-07": {
@@ -4995,7 +5939,25 @@
       },
       "assessmentRationale": "2008-09 Aston Villa FC의 CM 기용 및 개인 영향력을 기준으로 A+ 잠정 평가. 2008-09 최우선, 2007-08 보조, 2006-07 가장 낮게 가중. 팀의 리그 순위는 선수 티어에 가산하지 않음. 2008-09 PL 선발 38, 골 5; 이전 시즌 타 리그 이력은 추가 증빙 필요.",
       "candidateRationale": "4-3-3 / 4-4-2 계열 당시 전술과 실제 시즌 후보군을 기준으로 신규 선정. 개별 경기 최다 포지션은 추후 전술 시트와 대조.",
-      "rankRationale": "2008-09 CM 후보 중 3위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지."
+      "rankRationale": "2008-09 CM 후보 중 3위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지.",
+      "externalAuditSegment2": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "leagueAssists",
+            "old": 6,
+            "proposed": 7,
+            "action": "replace",
+            "reason": "동일 구단 PL의 경기 집계와 시즌 집계가 일치한다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6334.json",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6341.json"
+        ]
+      }
     },
     {
       "id": "pl-2008-09-astonvilla-10",
@@ -5018,7 +5980,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/8602292d/2008-2009/c9/Aston-Villa-Stats-Premier-League"
       ],
@@ -5061,7 +6023,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/8602292d/2008-2009/c9/Aston-Villa-Stats-Premier-League",
         "https://fbref.com/en/players/be927d03/Ashley-Young"
@@ -5119,7 +6081,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/8602292d/2008-2009/c9/Aston-Villa-Stats-Premier-League"
       ],
@@ -5162,7 +6124,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/8602292d/2008-2009/c9/Aston-Villa-Stats-Premier-League"
       ],
@@ -5206,7 +6168,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/8602292d/2008-2009/c9/Aston-Villa-Stats-Premier-League"
       ],
@@ -5249,7 +6211,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/fd962109/2008-2009/c9/Fulham-Stats-Premier-League"
       ],
@@ -5292,7 +6254,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/fd962109/2008-2009/c9/Fulham-Stats-Premier-League"
       ],
@@ -5335,7 +6297,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/fd962109/2008-2009/c9/Fulham-Stats-Premier-League"
       ],
@@ -5374,14 +6336,18 @@
       "leagueStarts": 3,
       "starts": 3,
       "leagueGoals": 0,
-      "leagueAssists": null,
+      "leagueAssists": 0,
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "2008_09_PL_season_statbunker_club_table",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/fd962109/2008-2009/c9/Fulham-Stats-Premier-League",
-        "https://www.statbunker.com/competitions/SeasonAppearances?club_id=55&comp_id=243"
+        "https://www.statbunker.com/competitions/SeasonAppearances?club_id=55&comp_id=243",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6513.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6575.json"
       ],
       "previousSeasons": {
         "2006-07": {
@@ -5399,7 +6365,25 @@
       },
       "assessmentRationale": "2008-09 Fulham FC의 CB 기용 및 개인 영향력을 기준으로 B 잠정 평가. 2008-09 최우선, 2007-08 보조, 2006-07 가장 낮게 가중. 팀의 리그 순위는 선수 티어에 가산하지 않음. 2008-09 PL 선발 자료 미확보, 골 자료 미확보; 이전 시즌 타 리그 이력은 추가 증빙 필요.",
       "candidateRationale": "4-4-2 계열 당시 전술과 실제 시즌 후보군을 기준으로 신규 선정. 개별 경기 최다 포지션은 추후 전술 시트와 대조.",
-      "rankRationale": "2008-09 CB 후보 중 21위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지."
+      "rankRationale": "2008-09 CB 후보 중 21위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지.",
+      "externalAuditSegment2": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "leagueAssists",
+            "old": null,
+            "proposed": 0,
+            "action": "fill_missing",
+            "reason": "동일 구단 PL의 경기 집계와 시즌 집계가 일치한다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6513.json",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6575.json"
+        ]
+      }
     },
     {
       "id": "pl-2008-09-fulham-05",
@@ -5422,7 +6406,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/fd962109/2008-2009/c9/Fulham-Stats-Premier-League"
       ],
@@ -5465,7 +6449,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/fd962109/2008-2009/c9/Fulham-Stats-Premier-League"
       ],
@@ -5504,14 +6488,18 @@
       "leagueStarts": 19,
       "starts": 19,
       "leagueGoals": 1,
-      "leagueAssists": null,
+      "leagueAssists": 0,
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "2008_09_PL_season_statbunker_club_table",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/fd962109/2008-2009/c9/Fulham-Stats-Premier-League",
-        "https://www.statbunker.com/competitions/SeasonAppearances?club_id=55&comp_id=243"
+        "https://www.statbunker.com/competitions/SeasonAppearances?club_id=55&comp_id=243",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6519.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6542.json"
       ],
       "previousSeasons": {
         "2006-07": {
@@ -5529,7 +6517,25 @@
       },
       "assessmentRationale": "2008-09 Fulham FC의 DM 기용 및 개인 영향력을 기준으로 B+ 잠정 평가. 2008-09 최우선, 2007-08 보조, 2006-07 가장 낮게 가중. 팀의 리그 순위는 선수 티어에 가산하지 않음. 2008-09 PL 선발 자료 미확보, 골 자료 미확보; 이전 시즌 타 리그 이력은 추가 증빙 필요.",
       "candidateRationale": "4-4-2 계열 당시 전술과 실제 시즌 후보군을 기준으로 신규 선정. 개별 경기 최다 포지션은 추후 전술 시트와 대조.",
-      "rankRationale": "2008-09 DM 후보 중 8위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지."
+      "rankRationale": "2008-09 DM 후보 중 8위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지.",
+      "externalAuditSegment2": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "leagueAssists",
+            "old": null,
+            "proposed": 0,
+            "action": "fill_missing",
+            "reason": "동일 구단 PL의 경기 집계와 시즌 집계가 일치한다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6519.json",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6542.json"
+        ]
+      }
     },
     {
       "id": "pl-2008-09-fulham-09",
@@ -5552,7 +6558,7 @@
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/fd962109/2008-2009/c9/Fulham-Stats-Premier-League"
       ],
@@ -5591,14 +6597,18 @@
       "leagueStarts": 18,
       "starts": 18,
       "leagueGoals": 2,
-      "leagueAssists": null,
+      "leagueAssists": 3,
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "2008_09_PL_season_statbunker_club_table",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/fd962109/2008-2009/c9/Fulham-Stats-Premier-League",
-        "https://www.statbunker.com/competitions/SeasonAppearances?club_id=55&comp_id=243"
+        "https://www.statbunker.com/competitions/SeasonAppearances?club_id=55&comp_id=243",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6330.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6338.json"
       ],
       "previousSeasons": {
         "2006-07": {
@@ -5616,7 +6626,25 @@
       },
       "assessmentRationale": "2008-09 Fulham FC의 CM 기용 및 개인 영향력을 기준으로 B+ 잠정 평가. 2008-09 최우선, 2007-08 보조, 2006-07 가장 낮게 가중. 팀의 리그 순위는 선수 티어에 가산하지 않음. 2008-09 PL 선발 자료 미확보, 골 자료 미확보; 이전 시즌 타 리그 이력은 추가 증빙 필요.",
       "candidateRationale": "4-4-2 계열 당시 전술과 실제 시즌 후보군을 기준으로 신규 선정. 개별 경기 최다 포지션은 추후 전술 시트와 대조.",
-      "rankRationale": "2008-09 CM 후보 중 14위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지."
+      "rankRationale": "2008-09 CM 후보 중 14위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지.",
+      "externalAuditSegment2": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "leagueAssists",
+            "old": null,
+            "proposed": 3,
+            "action": "fill_missing",
+            "reason": "동일 구단 PL의 경기 집계와 시즌 집계가 일치한다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6330.json",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6338.json"
+        ]
+      }
     },
     {
       "id": "pl-2008-09-fulham-11",
@@ -5635,13 +6663,17 @@
       "leagueStarts": 28,
       "starts": 28,
       "leagueGoals": 7,
-      "leagueAssists": 4,
+      "leagueAssists": 2,
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
-        "https://fbref.com/en/squads/fd962109/2008-2009/c9/Fulham-Stats-Premier-League"
+        "https://fbref.com/en/squads/fd962109/2008-2009/c9/Fulham-Stats-Premier-League",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6388.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6449.json"
       ],
       "previousSeasons": {
         "2006-07": {
@@ -5659,7 +6691,25 @@
       },
       "assessmentRationale": "2008-09 Fulham FC의 LW 기용 및 개인 영향력을 기준으로 A- 잠정 평가. 2008-09 최우선, 2007-08 보조, 2006-07 가장 낮게 가중. 팀의 리그 순위는 선수 티어에 가산하지 않음. 2008-09 PL 선발 28, 골 7; 이전 시즌 타 리그 이력은 추가 증빙 필요.",
       "candidateRationale": "4-4-2 계열 당시 전술과 실제 시즌 후보군을 기준으로 신규 선정. 개별 경기 최다 포지션은 추후 전술 시트와 대조.",
-      "rankRationale": "2008-09 LW 후보 중 3위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지."
+      "rankRationale": "2008-09 LW 후보 중 3위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지.",
+      "externalAuditSegment2": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "leagueAssists",
+            "old": 4,
+            "proposed": 2,
+            "action": "replace",
+            "reason": "동일 구단 PL의 경기 집계와 시즌 집계가 일치한다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6388.json",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6449.json"
+        ]
+      }
     },
     {
       "id": "pl-2008-09-fulham-12",
@@ -5678,14 +6728,18 @@
       "leagueStarts": 20,
       "starts": 20,
       "leagueGoals": 2,
-      "leagueAssists": null,
+      "leagueAssists": 0,
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "2008_09_PL_season_statbunker_club_table",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/fd962109/2008-2009/c9/Fulham-Stats-Premier-League",
-        "https://www.statbunker.com/competitions/SeasonAppearances?club_id=55&comp_id=243"
+        "https://www.statbunker.com/competitions/SeasonAppearances?club_id=55&comp_id=243",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6330.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6338.json"
       ],
       "previousSeasons": {
         "2006-07": {
@@ -5703,7 +6757,25 @@
       },
       "assessmentRationale": "2008-09 Fulham FC의 LW 기용 및 개인 영향력을 기준으로 B+ 잠정 평가. 2008-09 최우선, 2007-08 보조, 2006-07 가장 낮게 가중. 팀의 리그 순위는 선수 티어에 가산하지 않음. 2008-09 PL 선발 자료 미확보, 골 자료 미확보; 이전 시즌 타 리그 이력은 추가 증빙 필요.",
       "candidateRationale": "4-4-2 계열 당시 전술과 실제 시즌 후보군을 기준으로 신규 선정. 개별 경기 최다 포지션은 추후 전술 시트와 대조.",
-      "rankRationale": "2008-09 LW 후보 중 9위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지."
+      "rankRationale": "2008-09 LW 후보 중 9위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지.",
+      "externalAuditSegment2": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "leagueAssists",
+            "old": null,
+            "proposed": 0,
+            "action": "fill_missing",
+            "reason": "동일 구단 PL의 경기 집계와 시즌 집계가 일치한다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6330.json",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6338.json"
+        ]
+      }
     },
     {
       "id": "pl-2008-09-fulham-13",
@@ -5722,13 +6794,17 @@
       "leagueStarts": 33,
       "starts": 33,
       "leagueGoals": 2,
-      "leagueAssists": 3,
+      "leagueAssists": 5,
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
-        "https://fbref.com/en/squads/fd962109/2008-2009/c9/Fulham-Stats-Premier-League"
+        "https://fbref.com/en/squads/fd962109/2008-2009/c9/Fulham-Stats-Premier-League",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6330.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6338.json"
       ],
       "previousSeasons": {
         "2006-07": {
@@ -5746,7 +6822,25 @@
       },
       "assessmentRationale": "2008-09 Fulham FC의 RW 기용 및 개인 영향력을 기준으로 B+ 잠정 평가. 2008-09 최우선, 2007-08 보조, 2006-07 가장 낮게 가중. 팀의 리그 순위는 선수 티어에 가산하지 않음. 2008-09 PL 선발 33, 골 2; 이전 시즌 타 리그 이력은 추가 증빙 필요.",
       "candidateRationale": "4-4-2 계열 당시 전술과 실제 시즌 후보군을 기준으로 신규 선정. 개별 경기 최다 포지션은 추후 전술 시트와 대조.",
-      "rankRationale": "2008-09 RW 후보 중 7위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지."
+      "rankRationale": "2008-09 RW 후보 중 7위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지.",
+      "externalAuditSegment2": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "leagueAssists",
+            "old": 3,
+            "proposed": 5,
+            "action": "replace",
+            "reason": "동일 구단 PL의 경기 집계와 시즌 집계가 일치한다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6330.json",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6338.json"
+        ]
+      }
     },
     {
       "id": "pl-2008-09-fulham-14",
@@ -5765,13 +6859,17 @@
       "leagueStarts": 30,
       "starts": 30,
       "leagueGoals": 7,
-      "leagueAssists": 2,
+      "leagueAssists": 3,
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
-        "https://fbref.com/en/squads/fd962109/2008-2009/c9/Fulham-Stats-Premier-League"
+        "https://fbref.com/en/squads/fd962109/2008-2009/c9/Fulham-Stats-Premier-League",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6357.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6366.json"
       ],
       "previousSeasons": {
         "2006-07": {
@@ -5789,7 +6887,25 @@
       },
       "assessmentRationale": "2008-09 Fulham FC의 ST 기용 및 개인 영향력을 기준으로 B+ 잠정 평가. 2008-09 최우선, 2007-08 보조, 2006-07 가장 낮게 가중. 팀의 리그 순위는 선수 티어에 가산하지 않음. 2008-09 PL 선발 30, 골 7; 이전 시즌 타 리그 이력은 추가 증빙 필요.",
       "candidateRationale": "4-4-2 계열 당시 전술과 실제 시즌 후보군을 기준으로 신규 선정. 개별 경기 최다 포지션은 추후 전술 시트와 대조.",
-      "rankRationale": "2008-09 ST 후보 중 11위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지."
+      "rankRationale": "2008-09 ST 후보 중 11위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지.",
+      "externalAuditSegment2": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "leagueAssists",
+            "old": 2,
+            "proposed": 3,
+            "action": "replace",
+            "reason": "동일 구단 PL의 경기 집계와 시즌 집계가 일치한다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6357.json",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6366.json"
+        ]
+      }
     },
     {
       "id": "pl-2008-09-fulham-15",
@@ -5808,13 +6924,17 @@
       "leagueStarts": 32,
       "starts": 32,
       "leagueGoals": 2,
-      "leagueAssists": 3,
+      "leagueAssists": 2,
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "FBref_2008_09_season_league_team_table_read",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
-        "https://fbref.com/en/squads/fd962109/2008-2009/c9/Fulham-Stats-Premier-League"
+        "https://fbref.com/en/squads/fd962109/2008-2009/c9/Fulham-Stats-Premier-League",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6330.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6338.json"
       ],
       "previousSeasons": {
         "2006-07": {
@@ -5832,7 +6952,25 @@
       },
       "assessmentRationale": "2008-09 Fulham FC의 ST 기용 및 개인 영향력을 기준으로 B 잠정 평가. 2008-09 최우선, 2007-08 보조, 2006-07 가장 낮게 가중. 팀의 리그 순위는 선수 티어에 가산하지 않음. 2008-09 PL 선발 32, 골 2; 이전 시즌 타 리그 이력은 추가 증빙 필요.",
       "candidateRationale": "4-4-2 계열 당시 전술과 실제 시즌 후보군을 기준으로 신규 선정. 개별 경기 최다 포지션은 추후 전술 시트와 대조.",
-      "rankRationale": "2008-09 ST 후보 중 17위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지."
+      "rankRationale": "2008-09 ST 후보 중 17위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지.",
+      "externalAuditSegment2": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "leagueAssists",
+            "old": 3,
+            "proposed": 2,
+            "action": "replace",
+            "reason": "동일 구단 PL의 경기 집계와 시즌 집계가 일치한다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6330.json",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6338.json"
+        ]
+      }
     },
     {
       "id": "pl-2008-09-fulham-16",
@@ -5851,14 +6989,18 @@
       "leagueStarts": 4,
       "starts": 4,
       "leagueGoals": 4,
-      "leagueAssists": null,
+      "leagueAssists": 2,
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "2008_09_PL_season_statbunker_club_table",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://fbref.com/en/squads/fd962109/2008-2009/c9/Fulham-Stats-Premier-League",
-        "https://www.statbunker.com/competitions/SeasonAppearances?club_id=55&comp_id=243"
+        "https://www.statbunker.com/competitions/SeasonAppearances?club_id=55&comp_id=243",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6666.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6679.json"
       ],
       "previousSeasons": {
         "2006-07": {
@@ -5876,7 +7018,25 @@
       },
       "assessmentRationale": "2008-09 Fulham FC의 ST 기용 및 개인 영향력을 기준으로 B- 잠정 평가. 2008-09 최우선, 2007-08 보조, 2006-07 가장 낮게 가중. 팀의 리그 순위는 선수 티어에 가산하지 않음. 2008-09 PL 선발 자료 미확보, 골 자료 미확보; 이전 시즌 타 리그 이력은 추가 증빙 필요.",
       "candidateRationale": "4-4-2 계열 당시 전술과 실제 시즌 후보군을 기준으로 신규 선정. 개별 경기 최다 포지션은 추후 전술 시트와 대조.",
-      "rankRationale": "2008-09 ST 후보 중 18위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지."
+      "rankRationale": "2008-09 ST 후보 중 18위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지.",
+      "externalAuditSegment2": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "leagueAssists",
+            "old": null,
+            "proposed": 2,
+            "action": "fill_missing",
+            "reason": "동일 구단 PL의 경기 집계와 시즌 집계가 일치한다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6666.json",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6679.json"
+        ]
+      }
     },
     {
       "id": "pl-2008-09-astonvilla-stevesidwell",
@@ -5895,14 +7055,18 @@
       "leagueStarts": 11,
       "starts": 11,
       "leagueGoals": 3,
-      "leagueAssists": null,
+      "leagueAssists": 0,
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "2008_09_PL_Statbunker_club_row_checked",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://www.statbunker.com/competitions/SeasonAppearances?club_id=24&comp_id=243",
-        "https://fbref.com/en/comps/9/2008-2009/stats/2008-2009-Premier-League-Stats"
+        "https://fbref.com/en/comps/9/2008-2009/stats/2008-2009-Premier-League-Stats",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6442.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6446.json"
       ],
       "previousSeasons": {
         "2006-07": {
@@ -5920,7 +7084,25 @@
       },
       "assessmentRationale": "2008-09 16회 출전, 11선발, 3골을 확인해 B 잠정 평가. 2006-07, 2007-08 구단 이동 이력 별도 검증 필요.",
       "candidateRationale": "2008-09 PL 시즌 실제 주전·후보 출전 및 포지션별 인원 상한을 고려한 신규 선정",
-      "rankRationale": "2008-09 GK 후보 중 6위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지."
+      "rankRationale": "2008-09 GK 후보 중 6위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지.",
+      "externalAuditSegment2": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "leagueAssists",
+            "old": null,
+            "proposed": 0,
+            "action": "fill_missing",
+            "reason": "동일 구단 PL의 경기 집계와 시즌 집계가 일치한다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6442.json",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6446.json"
+        ]
+      }
     },
     {
       "id": "pl-2008-09-astonvilla-emileheskey",
@@ -5939,14 +7121,18 @@
       "leagueStarts": 11,
       "starts": 11,
       "leagueGoals": 2,
-      "leagueAssists": null,
+      "leagueAssists": 1,
       "positionMajorityVerified": false,
       "rankStatus": "proposed_unapproved",
       "review": "draft_unapproved",
-      "currentSeasonStatsStatus": "2008_09_PL_Statbunker_club_row_checked",
+      "currentSeasonStatsStatus": "external_review_current_league_stats_complete_2026_11_26",
       "sources": [
         "https://www.statbunker.com/competitions/SeasonAppearances?club_id=24&comp_id=243",
-        "https://fbref.com/en/comps/9/2008-2009/stats/2008-2009-Premier-League-Stats"
+        "https://fbref.com/en/comps/9/2008-2009/stats/2008-2009-Premier-League-Stats",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+        "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6544.json",
+        "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6555.json"
       ],
       "previousSeasons": {
         "2006-07": {
@@ -5964,7 +7150,25 @@
       },
       "assessmentRationale": "2008-09 14회 출전, 11선발, 2골을 확인해 B 잠정 평가. 2006-07, 2007-08 구단 이동 이력 별도 검증 필요.",
       "candidateRationale": "2008-09 PL 시즌 실제 주전·후보 출전 및 포지션별 인원 상한을 고려한 신규 선정",
-      "rankRationale": "2008-09 GK 후보 중 6위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지."
+      "rankRationale": "2008-09 GK 후보 중 6위 DRAFT. 현재 시즌 개인 활약과 지속적인 선발/득점/창출, 직전 두 시즌 순차 보조 가중. Best XI 전술상 다른 슬롯에 나가더라도 실제 선수 주 포지션 순위는 유지.",
+      "externalAuditSegment2": {
+        "date": "2026-11-26",
+        "changes": [
+          {
+            "field": "leagueAssists",
+            "old": null,
+            "proposed": 1,
+            "action": "fill_missing",
+            "reason": "동일 구단 PL의 경기 집계와 시즌 집계가 일치한다."
+          }
+        ],
+        "sources": [
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_matches.csv",
+          "https://github.com/ethankaufman/PL-History-Dashboard/blob/8f35332cb8439e0a8b440b255bddb425e0f51efe/data/player_seasons.csv",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6544.json",
+          "https://github.com/TimHoare/Premier_League_Data/blob/09082f67d8cf39433f606e0b674aa6914239b729/data/games/6555.json"
+        ]
+      }
     }
   ],
   "bestXi": [
@@ -6004,18 +7208,18 @@
       "reason": "2008-09 RB 개인 티어 A, 포지션 순위 1. Best XI 최적 선수 우선, 필드의 RB 역할은 4-4-2 전술적 배치이며 선수 원래 포지션 RB은 유지."
     },
     {
-      "playerId": "pl-2008-09-chelsea-11",
       "position": "DM",
-      "displayPosition": "CM",
-      "actualPosition": "CM",
-      "reason": "2008-09 CM 개인 티어 S, 포지션 순위 1. Best XI 최적 선수 우선, 필드의 DM 역할은 4-4-2 전술적 배치이며 선수 원래 포지션 CM은 유지."
+      "playerId": "pl-2008-09-manutd-10",
+      "displayPosition": "DM",
+      "actualPosition": "DM",
+      "reason": "기존 XI는 CM 램파드를 DM, CAM 제라드를 CM에 배치했다. 4-4-2의 두 중앙 역할을 맞춰 등록 DM 1위 캐릭을 넣고 램파드는 CM으로 복귀시킨다. 제라드는 Torres 뒤에서 뛴 CAM으로 등록을 유지한다. 4-4-2 빈도는 수집된 36개 배치에서만 확인된다."
     },
     {
-      "playerId": "pl-2008-09-liverpool-11",
       "position": "CM",
+      "playerId": "pl-2008-09-chelsea-11",
       "displayPosition": "CM",
-      "actualPosition": "CAM",
-      "reason": "2008-09 CAM 개인 티어 S, 포지션 순위 1. Best XI 최적 선수 우선, 필드의 CM 역할은 4-4-2 전술적 배치이며 선수 원래 포지션 CAM은 유지."
+      "actualPosition": "CM",
+      "reason": "기존 XI는 CM 램파드를 DM, CAM 제라드를 CM에 배치했다. 4-4-2의 두 중앙 역할을 맞춰 등록 DM 1위 캐릭을 넣고 램파드는 CM으로 복귀시킨다. 제라드는 Torres 뒤에서 뛴 CAM으로 등록을 유지한다. 4-4-2 빈도는 수집된 36개 배치에서만 확인된다."
     },
     {
       "playerId": "pl-2008-09-astonvilla-11",
