@@ -8,3 +8,5 @@
 - Tier counts {"S":5,"A+":28,"A":29,"A-":43,"B+":54,"B":66,"B-":17,"C+":20,"C":4,"C-":2,"D":0}; 4-2-3-1, XI positions/ranks checked. Structural checks {"matches":true,"groupMatches":true,"goals":true,"participants":true,"evaluatedClubs":true,"groupTables":true,"uniqueIds":true,"uniqueExternalIds":true,"xi":true,"xiPositionRanks":true,"quota":true,"starterCounts":true,"rank":true,"births":true,"clubs":true,"positions":true,"pool":true,"matchScoreCrosscheck":true}.
 - Added 2018 selector; existing season JSONs untouched. Actual deployed browser interaction not verified.
 - Status: draft_unapproved.
+
+- Final readback: corrected Messi evidence text team duration to 360 minutes; public GitHub Pages HTML and JSON access attempts failed, real deployment unverified.
