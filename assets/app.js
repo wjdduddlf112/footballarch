@@ -385,8 +385,15 @@ function homeMarkup(){
   <div class="home-section-heading"><div><p class="home-overline">02 — CONTINENTAL</p><h2 id="home-europe-title">European nights<span class="home-period">.</span></h2></div><span class="home-section-count">03 COMPETITIONS</span></div>
   <div class="home-europe-grid">${homeEuropean.map(homeCard).join("")}</div>
  </section>
+ <section class="home-section" aria-labelledby="home-world-title">
+  <div class="home-section-heading"><div><p class="home-overline">03 — GLOBAL</p><h2 id="home-world-title">The world stage<span class="home-period">.</span></h2></div><span class="home-section-count">GLOBAL PLAYER ARCHIVE</span></div>
+  <div class="home-feature-grid">
+   <a class="home-feature" href="./world.html" style="text-decoration:none"><span class="home-feature-status">SEASONAL RANKINGS</span><strong>World <span>Class / Best XI</span></strong><span class="home-feature-description">시즌별 세계 포지션 랭킹과 베스트 11</span><span class="home-feature-bottom">Explore World <span aria-hidden="true">↗</span></span></a>
+   <a class="home-feature" href="./hall-of-fame.html" style="text-decoration:none"><span class="home-feature-status">CAREER LONGEVITY</span><strong>Hall of <span>Fame</span></strong><span class="home-feature-description">World Class 누적 5시즌 이상</span><span class="home-feature-bottom">Explore Hall of Fame <span aria-hidden="true">↗</span></span></a>
+  </div>
+ </section>
  <section class="home-section home-current" aria-labelledby="home-current-title">
-  <div class="home-section-heading"><div><p class="home-overline">03 — THE COLLECTION</p><h2 id="home-current-title">Inside the archive<span class="home-period">.</span></h2></div></div>
+  <div class="home-section-heading"><div><p class="home-overline">04 — THE COLLECTION</p><h2 id="home-current-title">Inside the archive<span class="home-period">.</span></h2></div></div>
   <div class="home-feature-grid">
    <button type="button" class="home-feature" data-open-league="laliga" data-open-season="1999-00"><span class="home-feature-status">DRAFT</span><strong>La Liga <span>1999–00</span></strong><span class="home-feature-bottom">후보 현황 보기 <span aria-hidden="true">↗</span></span></button>
    <button type="button" class="home-feature home-feature-demo" data-open-league="laliga" data-open-season="2022-23"><span class="home-feature-status">SAMPLE</span><strong>La Liga <span>2022–23</span></strong><span class="home-feature-bottom">시연 화면 보기 <span aria-hidden="true">↗</span></span></button>
