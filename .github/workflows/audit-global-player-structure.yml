@@ -1,0 +1,28 @@
+name: Global player structure audit
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/audit-global-player-structure.yml'
+      - 'scripts/audit-global-player-structure.mjs'
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Scan all 194 season files
+        run: node scripts/audit-global-player-structure.mjs global-player-structure.json | tee global-player-structure-summary.json
+      - name: Preserve detailed audit
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: global-player-structure-audit
+          path: |
+            global-player-structure.json
+            global-player-structure-summary.json
