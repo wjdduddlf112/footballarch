@@ -36,9 +36,7 @@
       "status": "provisional",
       "source": "BDFutbol final club tables, FootballSquads roster DOB with individual correction and Transfermarkt-derived April snapshot comparison",
       "snapshotStatConflicts": [],
-      "unmatchedDOBNames": [
-        "Julio Díaz"
-      ],
+      "unmatchedDOBNames": [],
       "birthConflicts": [],
       "birthCorrections": [
         {
@@ -79,7 +77,14 @@
         }
       ],
       "positionModalVerified": false,
-      "priorIndependentComplete": false
+      "priorIndependentComplete": false,
+      "priorCoverage": {
+        "0": 16,
+        "1": 43,
+        "2": 89
+      },
+      "otherLeagueArchiveReferences": 25,
+      "birthDateComparison": "141 roster+snapshot matches, 6 roster errors resolved against official profile and snapshot, Julio Diaz independently corroborated by official club and individual Transfermarkt profile."
     },
     "nodeCliValidation": {
       "status": "PASS",
@@ -588,7 +593,8 @@
         "https://www.transfermarkt.es/joan-garcia/profil/spieler/561613",
         "https://github.com/dmorenoli/Tipolog-a-y-Ciclo-de-Vida-de-los-Datos/blob/main/dataset/laliga_jugadores_2025_26.csv",
         "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2025.json",
-        "https://www.laliga.com/en-US/news/lamine-yamal-hansi-flick-joan-garcia-carlos-espi-and-arda-guler-named-winners-of-the-2025-26-laliga-awards"
+        "https://www.laliga.com/en-US/news/lamine-yamal-hansi-flick-joan-garcia-carlos-espi-and-arda-guler-named-winners-of-the-2025-26-laliga-awards",
+        "https://www.bdfutbol.com/en/j/j26538.html"
       ],
       "evidence": {
         "seasonPrimarySource": "https://www.bdfutbol.com/en/t/t2025-261.html",
@@ -597,15 +603,39 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "RCD Espanyol",
+                "league": "Segunda División regular season",
+                "leagueAppearances": 14,
+                "leagueStarts": 14,
+                "leagueMinutes": 1260,
+                "leagueGoals": 0,
+                "source": "https://www.bdfutbol.com/en/j/j26538.html",
+                "status": "BDFutbol_direct_individual_career_row",
+                "scope": "regular season; promotion playoffs excluded"
+              }
+            ],
             "secondarySnapshot": [],
-            "status": "evidence_pending_not_zero"
+            "status": "direct_source_available"
           },
           {
             "season": "2024-25",
-            "records": [],
+            "records": [
+              {
+                "club": "RCD Espanyol",
+                "league": "La Liga",
+                "leagueAppearances": 38,
+                "leagueStarts": 38,
+                "leagueMinutes": 3420,
+                "leagueGoals": 0,
+                "source": "https://www.bdfutbol.com/en/j/j26538.html",
+                "status": "BDFutbol_direct_individual_career_row",
+                "scope": "regular season; promotion playoffs excluded"
+              }
+            ],
             "secondarySnapshot": [],
-            "status": "evidence_pending_not_zero"
+            "status": "direct_source_available"
           }
         ]
       },
@@ -616,11 +646,11 @@
           "2025-26"
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
-        "priorCoverage": 0,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "priorCoverage": 2,
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "공식 최우수 골키퍼, 30경기 21실점, Espanyol에서의 이전 활약",
-      "assessmentRationale": "2025-26 30경기 30선발 2700분 0골 0도움. 공식 최우수 골키퍼, 30경기 21실점, Espanyol에서의 이전 활약. 이전 두 시즌 자료 0/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A+ 잠정 평가, 구단 순위 가산 없음.",
+      "assessmentRationale": "2025-26 30경기 30선발 2700분 0골 0도움. 공식 최우수 골키퍼, 30경기 21실점, Espanyol에서의 이전 활약. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A+ 잠정 평가, 구단 순위 가산 없음.",
       "rankReview": {
         "status": "provisional",
         "pool": 14,
@@ -665,7 +695,8 @@
         "https://github.com/dmorenoli/Tipolog-a-y-Ciclo-de-Vida-de-los-Datos/blob/main/dataset/laliga_jugadores_2025_26.csv",
         "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2025.json",
         "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2024-25.json",
-        "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2024.json"
+        "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2024.json",
+        "https://github.com/wjdduddlf112/footballarch/blob/main/data/seriea-2023-24.json"
       ],
       "evidence": {
         "seasonPrimarySource": "https://www.bdfutbol.com/en/t/t2025-261.html",
@@ -674,9 +705,21 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "Juventus FC",
+                "league": "Serie A",
+                "leagueAppearances": 35,
+                "leagueStarts": 35,
+                "leagueMinutes": 3150,
+                "leagueGoals": 0,
+                "tier": "A+",
+                "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/seriea-2023-24.json",
+                "status": "other_league_prior_DRAFT_not_independently_verified"
+              }
+            ],
             "secondarySnapshot": [],
-            "status": "evidence_pending_not_zero"
+            "status": "reference_available"
           },
           {
             "season": "2024-25",
@@ -716,11 +759,11 @@
           "2025-26"
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
-        "priorCoverage": 1,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "priorCoverage": 2,
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "선방·후방 안정에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
-      "assessmentRationale": "2025-26 8경기 8선발 720분 0골 0도움. 선방·후방 안정에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 1/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B 잠정 평가, 구단 순위 가산 없음.",
+      "assessmentRationale": "2025-26 8경기 8선발 720분 0골 0도움. 선방·후방 안정에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B 잠정 평가, 구단 순위 가산 없음.",
       "rankReview": {
         "status": "provisional",
         "pool": 14,
@@ -830,7 +873,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "31선발, 후방 빌드업·전진 패스 및 이전 두 시즌 성장",
       "assessmentRationale": "2025-26 31경기 31선발 2710분 1골 0도움. 31선발, 후방 빌드업·전진 패스 및 이전 두 시즌 성장. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A+ 잠정 평가, 구단 순위 가산 없음.",
@@ -955,7 +998,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중앙 수비·후방 전개에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 34경기 32선발 2730분 1골 2도움. 중앙 수비·후방 전개에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A 잠정 평가, 구단 순위 가산 없음.",
@@ -1055,7 +1098,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 1,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중앙 수비·후방 전개에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 32경기 26선발 2126분 0골 0도움. 중앙 수비·후방 전개에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 1/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
@@ -1180,7 +1223,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "좌측 수비·전진에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 28경기 21선발 1875분 0골 2도움. 좌측 수비·전진에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A- 잠정 평가, 구단 순위 가산 없음.",
@@ -1267,7 +1310,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 1,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "좌측 수비·전진에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 16경기 11선발 953분 2골. 좌측 수비·전진에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 1/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
@@ -1380,7 +1423,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "우측 수비·전진에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 30경기 24선발 2259분 1골 3도움. 우측 수비·전진에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A 잠정 평가, 구단 순위 가산 없음.",
@@ -1505,7 +1548,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중원 수비·전개에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 25경기 16선발 1630분 1골 5도움. 중원 수비·전개에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A 잠정 평가, 구단 순위 가산 없음.",
@@ -1605,7 +1648,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 1,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중원 수비·전개에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 24경기 10선발 981분 0골 1도움. 중원 수비·전개에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 1/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B 잠정 평가, 구단 순위 가산 없음.",
@@ -1718,7 +1761,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중앙 전개·운반과 9도움, 직전 시즌 최상위 기량",
       "assessmentRationale": "2025-26 29경기 23선발 2110분 2골 9도움. 중앙 전개·운반과 9도움, 직전 시즌 최상위 기량. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. S 잠정 평가, 구단 순위 가산 없음.",
@@ -1805,7 +1848,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 1,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중원 연결·전환에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 22경기 9선발 789분 2골 1도움. 중원 연결·전환에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 1/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B 잠정 평가, 구단 순위 가산 없음.",
@@ -1853,7 +1896,8 @@
         "https://github.com/dmorenoli/Tipolog-a-y-Ciclo-de-Vida-de-los-Datos/blob/main/dataset/laliga_jugadores_2025_26.csv",
         "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2025.json",
         "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2024-25.json",
-        "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2024.json"
+        "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2024.json",
+        "https://github.com/wjdduddlf112/footballarch/blob/main/data/bundesliga-2023-24.json"
       ],
       "evidence": {
         "seasonPrimarySource": "https://www.bdfutbol.com/en/t/t2025-261.html",
@@ -1862,9 +1906,21 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "RB Leipzig",
+                "league": "Bundesliga",
+                "leagueAppearances": 21,
+                "leagueStarts": 17,
+                "leagueMinutes": 1455,
+                "leagueGoals": null,
+                "tier": "A-",
+                "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/bundesliga-2023-24.json",
+                "status": "other_league_prior_DRAFT_not_independently_verified"
+              }
+            ],
             "secondarySnapshot": [],
-            "status": "evidence_pending_not_zero"
+            "status": "reference_available"
           },
           {
             "season": "2024-25",
@@ -1904,11 +1960,11 @@
           "2025-26"
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
-        "priorCoverage": 1,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "priorCoverage": 2,
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "7골 8도움, 2선 창조성",
-      "assessmentRationale": "2025-26 33경기 24선발 2074분 7골 8도움. 7골 8도움, 2선 창조성. 이전 두 시즌 자료 1/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A 잠정 평가, 구단 순위 가산 없음.",
+      "assessmentRationale": "2025-26 33경기 24선발 2074분 7골 8도움. 7골 8도움, 2선 창조성. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A 잠정 평가, 구단 순위 가산 없음.",
       "rankReview": {
         "status": "provisional",
         "pool": 8,
@@ -2018,7 +2074,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "6골 9도움, 2선 침투 및 창조성",
       "assessmentRationale": "2025-26 30경기 19선발 1797분 6골 9도움. 6골 9도움, 2선 침투 및 창조성. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A 잠정 평가, 구단 순위 가산 없음.",
@@ -2064,7 +2120,8 @@
         "https://www.footballsquads.co.uk/spain/2025-2026/laliga/barce.htm",
         "https://www.transfermarkt.es/marcus-rashford/profil/spieler/258923",
         "https://github.com/dmorenoli/Tipolog-a-y-Ciclo-de-Vida-de-los-Datos/blob/main/dataset/laliga_jugadores_2025_26.csv",
-        "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2025.json"
+        "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2025.json",
+        "https://github.com/wjdduddlf112/footballarch/blob/main/data/premierleague-2023-24.json"
       ],
       "evidence": {
         "seasonPrimarySource": "https://www.bdfutbol.com/en/t/t2025-261.html",
@@ -2073,9 +2130,21 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "Manchester United FC",
+                "league": "Premier League",
+                "leagueAppearances": 33,
+                "leagueStarts": 26,
+                "leagueMinutes": 2278,
+                "leagueGoals": 7,
+                "tier": "B-",
+                "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/premierleague-2023-24.json",
+                "status": "other_league_prior_DRAFT_not_independently_verified"
+              }
+            ],
             "secondarySnapshot": [],
-            "status": "evidence_pending_not_zero"
+            "status": "reference_available"
           },
           {
             "season": "2024-25",
@@ -2092,11 +2161,11 @@
           "2025-26"
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
-        "priorCoverage": 0,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "priorCoverage": 1,
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "좌측 공격에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
-      "assessmentRationale": "2025-26 32경기 18선발 1762분 8골 7도움. 좌측 공격에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 0/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A- 잠정 평가, 구단 순위 가산 없음.",
+      "assessmentRationale": "2025-26 32경기 18선발 1762분 8골 7도움. 좌측 공격에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 1/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A- 잠정 평가, 구단 순위 가산 없음.",
       "rankReview": {
         "status": "provisional",
         "pool": 12,
@@ -2225,7 +2294,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "13골, 직전 시즌 MVP 수준, 출전 시간 제한",
       "assessmentRationale": "2025-26 22경기 18선발 1390분 13골 3도움. 13골, 직전 시즌 MVP 수준, 출전 시간 제한. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A+ 잠정 평가, 구단 순위 가산 없음.",
@@ -2339,7 +2408,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "공식 시즌 MVP, 16골 11도움 및 측면 창조성과 돌파",
       "assessmentRationale": "2025-26 28경기 26선발 2270분 16골 11도움. 공식 시즌 MVP, 16골 11도움 및 측면 창조성과 돌파. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. S 잠정 평가, 구단 순위 가산 없음.",
@@ -2414,7 +2483,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 0,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "우측 공격에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 21경기 7선발 640분 1골 1도움. 우측 공격에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 0/2시즌 연결. 누락 자료는 0으로 대체하지 않음. C+ 잠정 평가, 구단 순위 가산 없음.",
@@ -2527,7 +2596,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "16골과 23선발, 중앙 공격수 기용 확대",
       "assessmentRationale": "2025-26 33경기 23선발 1973분 16골 2도움. 16골과 23선발, 중앙 공격수 기용 확대. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A 잠정 평가, 구단 순위 가산 없음.",
@@ -2640,7 +2709,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "전방 마무리·연계에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 31경기 17선발 1657분 14골 2도움. 전방 마무리·연계에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A 잠정 평가, 구단 순위 가산 없음.",
@@ -2752,7 +2821,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "32선발과 28실점, 장기간 최상위 선방",
       "assessmentRationale": "2025-26 32경기 32선발 2880분 0골 0도움. 32선발과 28실점, 장기간 최상위 선방. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A+ 잠정 평가, 구단 순위 가산 없음.",
@@ -2865,7 +2934,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "선방·후방 안정에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 6경기 6선발 540분 0골 0도움. 선방·후방 안정에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B 잠정 평가, 구단 순위 가산 없음.",
@@ -2911,7 +2980,8 @@
         "https://www.footballsquads.co.uk/spain/2025-2026/laliga/rmadrid.htm",
         "https://www.transfermarkt.es/dean-huijsen/profil/spieler/890290",
         "https://github.com/dmorenoli/Tipolog-a-y-Ciclo-de-Vida-de-los-Datos/blob/main/dataset/laliga_jugadores_2025_26.csv",
-        "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2025.json"
+        "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2025.json",
+        "https://github.com/wjdduddlf112/footballarch/blob/main/data/seriea-2023-24.json"
       ],
       "evidence": {
         "seasonPrimarySource": "https://www.bdfutbol.com/en/t/t2025-262.html",
@@ -2920,9 +2990,21 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "AS Roma",
+                "league": "Serie A",
+                "leagueAppearances": 13,
+                "leagueStarts": 4,
+                "leagueMinutes": 521,
+                "leagueGoals": 2,
+                "tier": "B",
+                "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/seriea-2023-24.json",
+                "status": "other_league_prior_DRAFT_not_independently_verified"
+              }
+            ],
             "secondarySnapshot": [],
-            "status": "evidence_pending_not_zero"
+            "status": "reference_available"
           },
           {
             "season": "2024-25",
@@ -2939,11 +3021,11 @@
           "2025-26"
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
-        "priorCoverage": 0,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "priorCoverage": 1,
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중앙 수비·후방 전개에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
-      "assessmentRationale": "2025-26 28경기 24선발 2038분 2골 2도움. 중앙 수비·후방 전개에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 0/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A- 잠정 평가, 구단 순위 가산 없음.",
+      "assessmentRationale": "2025-26 28경기 24선발 2038분 2골 2도움. 중앙 수비·후방 전개에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 1/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A- 잠정 평가, 구단 순위 가산 없음.",
       "rankReview": {
         "status": "provisional",
         "pool": 24,
@@ -3040,7 +3122,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 1,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중앙 수비·후방 전개에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 23경기 18선발 1707분 2골 0도움. 중앙 수비·후방 전개에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 1/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
@@ -3153,7 +3235,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중앙 수비·후방 전개에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 18경기 16선발 1491분 1골 0도움. 중앙 수비·후방 전개에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A- 잠정 평가, 구단 순위 가산 없음.",
@@ -3228,7 +3310,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 0,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "좌측 수비·전진에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 28경기 26선발 2334분 2골 3도움. 좌측 수비·전진에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 0/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A- 잠정 평가, 구단 순위 가산 없음.",
@@ -3353,7 +3435,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "좌측 수비·전진에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 13경기 10선발 930분 1골 1도움. 좌측 수비·전진에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B 잠정 평가, 구단 순위 가산 없음.",
@@ -3399,7 +3481,9 @@
         "https://www.footballsquads.co.uk/spain/2025-2026/laliga/rmadrid.htm",
         "https://www.transfermarkt.es/trent-alexander-arnold/profil/spieler/314353",
         "https://github.com/dmorenoli/Tipolog-a-y-Ciclo-de-Vida-de-los-Datos/blob/main/dataset/laliga_jugadores_2025_26.csv",
-        "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2025.json"
+        "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2025.json",
+        "https://github.com/wjdduddlf112/footballarch/blob/main/data/premierleague-2023-24.json",
+        "https://github.com/wjdduddlf112/footballarch/blob/main/data/premierleague-2024-25.json"
       ],
       "evidence": {
         "seasonPrimarySource": "https://www.bdfutbol.com/en/t/t2025-262.html",
@@ -3408,15 +3492,39 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "Liverpool FC",
+                "league": "Premier League",
+                "leagueAppearances": 28,
+                "leagueStarts": 25,
+                "leagueMinutes": 2159,
+                "leagueGoals": 3,
+                "tier": "A",
+                "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/premierleague-2023-24.json",
+                "status": "other_league_prior_DRAFT_not_independently_verified"
+              }
+            ],
             "secondarySnapshot": [],
-            "status": "evidence_pending_not_zero"
+            "status": "reference_available"
           },
           {
             "season": "2024-25",
-            "records": [],
+            "records": [
+              {
+                "club": "Liverpool FC",
+                "league": "Premier League",
+                "leagueAppearances": 33,
+                "leagueStarts": 28,
+                "leagueMinutes": 2377,
+                "leagueGoals": 3,
+                "tier": "A+",
+                "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/premierleague-2024-25.json",
+                "status": "other_league_prior_DRAFT_not_independently_verified"
+              }
+            ],
             "secondarySnapshot": [],
-            "status": "evidence_pending_not_zero"
+            "status": "reference_available"
           }
         ]
       },
@@ -3427,11 +3535,11 @@
           "2025-26"
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
-        "priorCoverage": 0,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "priorCoverage": 2,
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "우측 수비·전진에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
-      "assessmentRationale": "2025-26 21경기 14선발 1164분 0골 4도움. 우측 수비·전진에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 0/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A- 잠정 평가, 구단 순위 가산 없음.",
+      "assessmentRationale": "2025-26 21경기 14선발 1164분 0골 4도움. 우측 수비·전진에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A- 잠정 평가, 구단 순위 가산 없음.",
       "rankReview": {
         "status": "provisional",
         "pool": 15,
@@ -3541,7 +3649,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "우측 수비·전진에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 17경기 10선발 976분 0골 1도움. 우측 수비·전진에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B 잠정 평가, 구단 순위 가산 없음.",
@@ -3654,7 +3762,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "31선발, 중원 수비와 전개 균형",
       "assessmentRationale": "2025-26 33경기 31선발 2624분 1골 0도움. 31선발, 중원 수비와 전개 균형. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A+ 잠정 평가, 구단 순위 가산 없음.",
@@ -3767,7 +3875,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중원 수비·전개에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 29경기 16선발 1525분 1골 0도움. 중원 수비·전개에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
@@ -3892,7 +4000,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중원 및 측면 커버, 5골 8도움과 3시즌 꾸준함",
       "assessmentRationale": "2025-26 33경기 31선발 2746분 5골 8도움. 중원 및 측면 커버, 5골 8도움과 3시즌 꾸준함. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. S 잠정 평가, 구단 순위 가산 없음.",
@@ -3991,7 +4099,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중원 연결·전환에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 16경기 4선발 480분 0골 0도움. 중원 연결·전환에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. C+ 잠정 평가, 구단 순위 가산 없음.",
@@ -4104,7 +4212,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "6골 및 4도움, 직전 두 시즌 기량 반영하되 당해 출전 감소",
       "assessmentRationale": "2025-26 28경기 22선발 1918분 6골 4도움. 6골 및 4도움, 직전 두 시즌 기량 반영하되 당해 출전 감소. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A+ 잠정 평가, 구단 순위 가산 없음.",
@@ -4204,7 +4312,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 1,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "25선발·9도움, 중앙과 우측의 창조성",
       "assessmentRationale": "2025-26 33경기 25선발 2028분 4골 9도움. 25선발·9도움, 중앙과 우측의 창조성. 이전 두 시즌 자료 1/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A 잠정 평가, 구단 순위 가산 없음.",
@@ -4329,7 +4437,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "16골과 5도움, 직전 두 시즌 측면 돌파·공격 중심",
       "assessmentRationale": "2025-26 36경기 32선발 2825분 16골 5도움. 16골과 5도움, 직전 두 시즌 측면 돌파·공격 중심. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. S 잠정 평가, 구단 순위 가산 없음.",
@@ -4454,7 +4562,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "우측 공격에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 30경기 13선발 1253분 1골 6도움. 우측 공격에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
@@ -4529,7 +4637,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 0,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "우측 공격에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 23경기 11선발 1036분 1골 0도움. 우측 공격에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 0/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B- 잠정 평가, 구단 순위 가산 없음.",
@@ -4577,7 +4685,8 @@
         "https://github.com/dmorenoli/Tipolog-a-y-Ciclo-de-Vida-de-los-Datos/blob/main/dataset/laliga_jugadores_2025_26.csv",
         "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2025.json",
         "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2024-25.json",
-        "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2024.json"
+        "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2024.json",
+        "https://github.com/wjdduddlf112/footballarch/blob/main/data/ligue1-2023-24.json"
       ],
       "evidence": {
         "seasonPrimarySource": "https://www.bdfutbol.com/en/t/t2025-262.html",
@@ -4586,9 +4695,21 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "Paris Saint-Germain FC",
+                "league": "Ligue 1",
+                "leagueAppearances": 29,
+                "leagueStarts": 24,
+                "leagueMinutes": 2159,
+                "leagueGoals": 27,
+                "tier": "S",
+                "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/ligue1-2023-24.json",
+                "status": "other_league_prior_DRAFT_not_independently_verified"
+              }
+            ],
             "secondarySnapshot": [],
-            "status": "evidence_pending_not_zero"
+            "status": "reference_available"
           },
           {
             "season": "2024-25",
@@ -4628,11 +4749,11 @@
           "2025-26"
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
-        "priorCoverage": 1,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "priorCoverage": 2,
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "25골 득점왕, 2024-25 31골 및 이전 시즌 득점 지속성",
-      "assessmentRationale": "2025-26 31경기 29선발 2606분 25골 5도움. 25골 득점왕, 2024-25 31골 및 이전 시즌 득점 지속성. 이전 두 시즌 자료 1/2시즌 연결. 누락 자료는 0으로 대체하지 않음. S 잠정 평가, 구단 순위 가산 없음.",
+      "assessmentRationale": "2025-26 31경기 29선발 2606분 25골 5도움. 25골 득점왕, 2024-25 31골 및 이전 시즌 득점 지속성. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. S 잠정 평가, 구단 순위 가산 없음.",
       "rankReview": {
         "status": "provisional",
         "pool": 18,
@@ -4716,7 +4837,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 1,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "전방 마무리·연계에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 30경기 9선발 953분 6골 1도움. 전방 마무리·연계에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 1/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B 잠정 평가, 구단 순위 가산 없음.",
@@ -4816,7 +4937,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 1,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "선방·후방 안정에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 28경기 28선발 2520분 0골 0도움. 선방·후방 안정에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 1/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
@@ -4862,7 +4983,8 @@
         "https://www.footballsquads.co.uk/spain/2025-2026/laliga/villar.htm",
         "https://www.transfermarkt.es/arnau-tenas/profil/spieler/466783",
         "https://github.com/dmorenoli/Tipolog-a-y-Ciclo-de-Vida-de-los-Datos/blob/main/dataset/laliga_jugadores_2025_26.csv",
-        "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2025.json"
+        "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2025.json",
+        "https://github.com/wjdduddlf112/footballarch/blob/main/data/ligue1-2023-24.json"
       ],
       "evidence": {
         "seasonPrimarySource": "https://www.bdfutbol.com/en/t/t2025-2638.html",
@@ -4871,9 +4993,21 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "Paris Saint-Germain FC",
+                "league": "Ligue 1",
+                "leagueAppearances": 6,
+                "leagueStarts": 5,
+                "leagueMinutes": 528,
+                "leagueGoals": null,
+                "tier": "C+",
+                "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/ligue1-2023-24.json",
+                "status": "other_league_prior_DRAFT_not_independently_verified"
+              }
+            ],
             "secondarySnapshot": [],
-            "status": "evidence_pending_not_zero"
+            "status": "reference_available"
           },
           {
             "season": "2024-25",
@@ -4890,11 +5024,11 @@
           "2025-26"
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
-        "priorCoverage": 0,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "priorCoverage": 1,
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "선방·후방 안정에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
-      "assessmentRationale": "2025-26 10경기 10선발 900분 0골 0도움. 선방·후방 안정에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 0/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B 잠정 평가, 구단 순위 가산 없음.",
+      "assessmentRationale": "2025-26 10경기 10선발 900분 0골 0도움. 선방·후방 안정에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 1/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B 잠정 평가, 구단 순위 가산 없음.",
       "rankReview": {
         "status": "provisional",
         "pool": 14,
@@ -4937,7 +5071,8 @@
         "https://www.footballsquads.co.uk/spain/2025-2026/laliga/villar.htm",
         "https://www.transfermarkt.es/renato-veiga/profil/spieler/805714",
         "https://github.com/dmorenoli/Tipolog-a-y-Ciclo-de-Vida-de-los-Datos/blob/main/dataset/laliga_jugadores_2025_26.csv",
-        "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2025.json"
+        "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2025.json",
+        "https://github.com/wjdduddlf112/footballarch/blob/main/data/seriea-2024-25.json"
       ],
       "evidence": {
         "seasonPrimarySource": "https://www.bdfutbol.com/en/t/t2025-2638.html",
@@ -4952,9 +5087,21 @@
           },
           {
             "season": "2024-25",
-            "records": [],
+            "records": [
+              {
+                "club": "Juventus FC",
+                "league": "Serie A",
+                "leagueAppearances": 13,
+                "leagueStarts": 12,
+                "leagueMinutes": 1093,
+                "leagueGoals": 0,
+                "tier": "B",
+                "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/seriea-2024-25.json",
+                "status": "other_league_prior_DRAFT_not_independently_verified"
+              }
+            ],
             "secondarySnapshot": [],
-            "status": "evidence_pending_not_zero"
+            "status": "reference_available"
           }
         ]
       },
@@ -4965,11 +5112,11 @@
           "2025-26"
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
-        "priorCoverage": 0,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "priorCoverage": 1,
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중앙 수비·후방 전개에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
-      "assessmentRationale": "2025-26 32경기 27선발 2476분 0골 0도움. 중앙 수비·후방 전개에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 0/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A- 잠정 평가, 구단 순위 가산 없음.",
+      "assessmentRationale": "2025-26 32경기 27선발 2476분 0골 0도움. 중앙 수비·후방 전개에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 1/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A- 잠정 평가, 구단 순위 가산 없음.",
       "rankReview": {
         "status": "provisional",
         "pool": 24,
@@ -5053,7 +5200,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 1,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중앙 수비·후방 전개에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 23경기 21선발 1979분 1골 0도움. 중앙 수비·후방 전개에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 1/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
@@ -5153,7 +5300,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 1,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중앙 수비·후방 전개에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 23경기 23선발 1927분 0골 0도움. 중앙 수비·후방 전개에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 1/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
@@ -5265,7 +5412,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "좌측 수비·전진에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 31경기 20선발 1963분 1골 4도움. 좌측 수비·전진에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
@@ -5377,7 +5524,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "좌측 수비·전진에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 27경기 19선발 1692분 1골 3도움. 좌측 수비·전진에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B 잠정 평가, 구단 순위 가산 없음.",
@@ -5464,7 +5611,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 1,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "우측 수비·전진에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 28경기 27선발 2383분 1골 2도움. 우측 수비·전진에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 1/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
@@ -5576,7 +5723,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "우측 수비·전진에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 13경기 12선발 937분 0골 0도움. 우측 수비·전진에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B 잠정 평가, 구단 순위 가산 없음.",
@@ -5676,7 +5823,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 1,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중원 수비·전개에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 30경기 26선발 2143분 5골 2도움. 중원 수비·전개에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 1/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A- 잠정 평가, 구단 순위 가산 없음.",
@@ -5721,7 +5868,9 @@
         "https://www.bdfutbol.com/en/t/t2025-2638.html",
         "https://www.footballsquads.co.uk/spain/2025-2026/laliga/villar.htm",
         "https://www.transfermarkt.es/thomas-partey/profil/spieler/230784",
-        "https://github.com/dmorenoli/Tipolog-a-y-Ciclo-de-Vida-de-los-Datos/blob/main/dataset/laliga_jugadores_2025_26.csv"
+        "https://github.com/dmorenoli/Tipolog-a-y-Ciclo-de-Vida-de-los-Datos/blob/main/dataset/laliga_jugadores_2025_26.csv",
+        "https://github.com/wjdduddlf112/footballarch/blob/main/data/premierleague-2023-24.json",
+        "https://github.com/wjdduddlf112/footballarch/blob/main/data/premierleague-2024-25.json"
       ],
       "evidence": {
         "seasonPrimarySource": "https://www.bdfutbol.com/en/t/t2025-2638.html",
@@ -5730,15 +5879,39 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "Arsenal FC",
+                "league": "Premier League",
+                "leagueAppearances": 14,
+                "leagueStarts": 9,
+                "leagueMinutes": 788,
+                "leagueGoals": 0,
+                "tier": "B-",
+                "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/premierleague-2023-24.json",
+                "status": "other_league_prior_DRAFT_not_independently_verified"
+              }
+            ],
             "secondarySnapshot": [],
-            "status": "evidence_pending_not_zero"
+            "status": "reference_available"
           },
           {
             "season": "2024-25",
-            "records": [],
+            "records": [
+              {
+                "club": "Arsenal FC",
+                "league": "Premier League",
+                "leagueAppearances": 35,
+                "leagueStarts": 31,
+                "leagueMinutes": 2799,
+                "leagueGoals": 4,
+                "tier": "A-",
+                "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/premierleague-2024-25.json",
+                "status": "other_league_prior_DRAFT_not_independently_verified"
+              }
+            ],
             "secondarySnapshot": [],
-            "status": "evidence_pending_not_zero"
+            "status": "reference_available"
           }
         ]
       },
@@ -5749,11 +5922,11 @@
           "2025-26"
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
-        "priorCoverage": 0,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "priorCoverage": 2,
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중원 수비·전개에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
-      "assessmentRationale": "2025-26 25경기 8선발 922분 0골. 중원 수비·전개에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 0/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B 잠정 평가, 구단 순위 가산 없음.",
+      "assessmentRationale": "2025-26 25경기 8선발 922분 0골. 중원 수비·전개에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B 잠정 평가, 구단 순위 가산 없음.",
       "rankReview": {
         "status": "provisional",
         "pool": 15,
@@ -5862,7 +6035,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중원 연결·전환에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 34경기 28선발 2414분 3골 6도움. 중원 연결·전환에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A- 잠정 평가, 구단 순위 가산 없음.",
@@ -5974,7 +6147,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중원 연결·전환에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 32경기 16선발 1390분 1골 0도움. 중원 연결·전환에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
@@ -6073,7 +6246,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "10골·5도움, 좌측과 중앙의 연계",
       "assessmentRationale": "2025-26 37경기 30선발 2492분 10골 5도움. 10골·5도움, 좌측과 중앙의 연계. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A 잠정 평가, 구단 순위 가산 없음.",
@@ -6173,7 +6346,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 1,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "우측 공격에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 36경기 26선발 2397분 8골 8도움. 우측 공격에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 1/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A- 잠정 평가, 구단 순위 가산 없음.",
@@ -6260,7 +6433,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 1,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "우측 공격에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 34경기 21선발 1821분 7골 1도움. 우측 공격에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 1/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
@@ -6306,7 +6479,8 @@
         "https://www.footballsquads.co.uk/spain/2025-2026/laliga/villar.htm",
         "https://www.transfermarkt.es/georges-mikautadze/profil/spieler/729814",
         "https://github.com/dmorenoli/Tipolog-a-y-Ciclo-de-Vida-de-los-Datos/blob/main/dataset/laliga_jugadores_2025_26.csv",
-        "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2025.json"
+        "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2025.json",
+        "https://github.com/wjdduddlf112/footballarch/blob/main/data/ligue1-2024-25.json"
       ],
       "evidence": {
         "seasonPrimarySource": "https://www.bdfutbol.com/en/t/t2025-2638.html",
@@ -6321,9 +6495,21 @@
           },
           {
             "season": "2024-25",
-            "records": [],
+            "records": [
+              {
+                "club": "Olympique Lyonnais",
+                "league": "Ligue 1",
+                "leagueAppearances": 34,
+                "leagueStarts": 13,
+                "leagueMinutes": 1433,
+                "leagueGoals": 11,
+                "tier": "A-",
+                "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/ligue1-2024-25.json",
+                "status": "other_league_prior_DRAFT_not_independently_verified"
+              }
+            ],
             "secondarySnapshot": [],
-            "status": "evidence_pending_not_zero"
+            "status": "reference_available"
           }
         ]
       },
@@ -6334,11 +6520,11 @@
           "2025-26"
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
-        "priorCoverage": 0,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "priorCoverage": 1,
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "13골·6도움, 전방 득점과 연계",
-      "assessmentRationale": "2025-26 32경기 23선발 2115분 13골 6도움. 13골·6도움, 전방 득점과 연계. 이전 두 시즌 자료 0/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A- 잠정 평가, 구단 순위 가산 없음.",
+      "assessmentRationale": "2025-26 32경기 23선발 2115분 13골 6도움. 13골·6도움, 전방 득점과 연계. 이전 두 시즌 자료 1/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A- 잠정 평가, 구단 순위 가산 없음.",
       "rankReview": {
         "status": "provisional",
         "pool": 18,
@@ -6447,7 +6633,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "전방 마무리·연계에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 22경기 16선발 1349분 10골 0도움. 전방 마무리·연계에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
@@ -6567,7 +6753,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "전방 마무리·연계에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 25경기 12선발 1123분 5골 4도움. 전방 마무리·연계에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
@@ -6680,7 +6866,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "선방·후방 안정에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 30경기 30선발 2700분 0골 0도움. 선방·후방 안정에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A 잠정 평가, 구단 순위 가산 없음.",
@@ -6728,7 +6914,8 @@
         "https://github.com/dmorenoli/Tipolog-a-y-Ciclo-de-Vida-de-los-Datos/blob/main/dataset/laliga_jugadores_2025_26.csv",
         "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2025.json",
         "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2024-25.json",
-        "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2024.json"
+        "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2024.json",
+        "https://github.com/wjdduddlf112/footballarch/blob/main/data/seriea-2023-24.json"
       ],
       "evidence": {
         "seasonPrimarySource": "https://www.bdfutbol.com/en/t/t2025-267.html",
@@ -6737,9 +6924,21 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "Atalanta BC",
+                "league": "Serie A",
+                "leagueAppearances": 11,
+                "leagueStarts": 11,
+                "leagueMinutes": 990,
+                "leagueGoals": 0,
+                "tier": "B",
+                "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/seriea-2023-24.json",
+                "status": "other_league_prior_DRAFT_not_independently_verified"
+              }
+            ],
             "secondarySnapshot": [],
-            "status": "evidence_pending_not_zero"
+            "status": "reference_available"
           },
           {
             "season": "2024-25",
@@ -6779,11 +6978,11 @@
           "2025-26"
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
-        "priorCoverage": 1,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "priorCoverage": 2,
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "선방·후방 안정에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
-      "assessmentRationale": "2025-26 8경기 8선발 720분 0골 0도움. 선방·후방 안정에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 1/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B 잠정 평가, 구단 순위 가산 없음.",
+      "assessmentRationale": "2025-26 8경기 8선발 720분 0골 0도움. 선방·후방 안정에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B 잠정 평가, 구단 순위 가산 없음.",
       "rankReview": {
         "status": "provisional",
         "pool": 14,
@@ -6855,7 +7054,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 0,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중앙 수비·후방 전개에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 30경기 27선발 2433분 0골 2도움. 중앙 수비·후방 전개에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 0/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A- 잠정 평가, 구단 순위 가산 없음.",
@@ -6968,7 +7167,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중앙 수비·후방 전개에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 28경기 17선발 1782분 1골 1도움. 중앙 수비·후방 전개에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
@@ -7068,7 +7267,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 1,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중앙 수비·후방 전개에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 19경기 17선발 1394분 0골 1도움. 중앙 수비·후방 전개에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 1/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B 잠정 평가, 구단 순위 가산 없음.",
@@ -7114,7 +7313,9 @@
         "https://www.footballsquads.co.uk/spain/2025-2026/laliga/amadrid.htm",
         "https://www.transfermarkt.es/matteo-ruggeri/profil/spieler/616631",
         "https://github.com/dmorenoli/Tipolog-a-y-Ciclo-de-Vida-de-los-Datos/blob/main/dataset/laliga_jugadores_2025_26.csv",
-        "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2025.json"
+        "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2025.json",
+        "https://github.com/wjdduddlf112/footballarch/blob/main/data/seriea-2023-24.json",
+        "https://github.com/wjdduddlf112/footballarch/blob/main/data/seriea-2024-25.json"
       ],
       "evidence": {
         "seasonPrimarySource": "https://www.bdfutbol.com/en/t/t2025-267.html",
@@ -7123,15 +7324,39 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "Atalanta BC",
+                "league": "Serie A",
+                "leagueAppearances": 34,
+                "leagueStarts": 28,
+                "leagueMinutes": 2466,
+                "leagueGoals": 0,
+                "tier": "A-",
+                "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/seriea-2023-24.json",
+                "status": "other_league_prior_DRAFT_not_independently_verified"
+              }
+            ],
             "secondarySnapshot": [],
-            "status": "evidence_pending_not_zero"
+            "status": "reference_available"
           },
           {
             "season": "2024-25",
-            "records": [],
+            "records": [
+              {
+                "club": "Atalanta BC",
+                "league": "Serie A",
+                "leagueAppearances": 30,
+                "leagueStarts": 19,
+                "leagueMinutes": 1748,
+                "leagueGoals": 0,
+                "tier": "B+",
+                "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/seriea-2024-25.json",
+                "status": "other_league_prior_DRAFT_not_independently_verified"
+              }
+            ],
             "secondarySnapshot": [],
-            "status": "evidence_pending_not_zero"
+            "status": "reference_available"
           }
         ]
       },
@@ -7142,11 +7367,11 @@
           "2025-26"
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
-        "priorCoverage": 0,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "priorCoverage": 2,
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "좌측 수비·전진에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
-      "assessmentRationale": "2025-26 26경기 20선발 1775분 0골 3도움. 좌측 수비·전진에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 0/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
+      "assessmentRationale": "2025-26 26경기 20선발 1775분 0골 3도움. 좌측 수비·전진에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
       "rankReview": {
         "status": "provisional",
         "pool": 15,
@@ -7176,16 +7401,21 @@
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_editorial",
       "birthSource": "https://www.footballsquads.co.uk/spain/2025-2026/laliga/amadrid.htm",
-      "birthAuditStatus": "season_roster_single_source",
+      "birthAuditStatus": "season_roster_and_official_club_and_transfermarkt_profile_agree",
       "birthSources": [
-        "https://www.footballsquads.co.uk/spain/2025-2026/laliga/amadrid.htm"
+        "https://www.footballsquads.co.uk/spain/2025-2026/laliga/amadrid.htm",
+        "https://www.atleticodemadrid.com/noticias/julio-segundo-mejor-jugador-de-la-youth-league",
+        "https://www.transfermarkt.com/julio-diaz/profil/spieler/945753"
       ],
       "positionVerification": "representative_tactical_role_not_matchwise_modal",
       "positionReview": "4-4-2",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2025-267.html",
         "https://www.footballsquads.co.uk/spain/2025-2026/laliga/amadrid.htm",
-        "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2025.json"
+        "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2025.json",
+        "https://www.atleticodemadrid.com/noticias/julio-segundo-mejor-jugador-de-la-youth-league",
+        "https://www.transfermarkt.com/julio-diaz/profil/spieler/945753",
+        "https://www.bdfutbol.com/en/j/j13654.html"
       ],
       "evidence": {
         "seasonPrimarySource": "https://www.bdfutbol.com/en/t/t2025-267.html",
@@ -7200,9 +7430,20 @@
           },
           {
             "season": "2024-25",
-            "records": [],
+            "records": [
+              {
+                "club": "Atlético de Madrid B",
+                "league": "Primera Federación",
+                "leagueAppearances": 32,
+                "leagueStarts": 23,
+                "leagueMinutes": 2076,
+                "leagueGoals": 0,
+                "source": "https://www.bdfutbol.com/en/j/j13654.html",
+                "status": "BDFutbol_direct_individual_career_row"
+              }
+            ],
             "secondarySnapshot": [],
-            "status": "evidence_pending_not_zero"
+            "status": "direct_source_available"
           }
         ]
       },
@@ -7213,11 +7454,11 @@
           "2025-26"
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
-        "priorCoverage": 0,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "priorCoverage": 1,
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "좌측 수비·전진에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
-      "assessmentRationale": "2025-26 4경기 4선발 312분 0골 1도움. 좌측 수비·전진에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 0/2시즌 연결. 누락 자료는 0으로 대체하지 않음. C 잠정 평가, 구단 순위 가산 없음.",
+      "assessmentRationale": "2025-26 4경기 4선발 312분 0골 1도움. 좌측 수비·전진에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 1/2시즌 연결. 누락 자료는 0으로 대체하지 않음. C 잠정 평가, 구단 순위 가산 없음.",
       "rankReview": {
         "status": "provisional",
         "pool": 15,
@@ -7339,7 +7580,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "우측 수비·전진에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 29경기 25선발 2183분 0골 4도움. 우측 수비·전진에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A 잠정 평가, 구단 순위 가산 없음.",
@@ -7471,7 +7712,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "우측 수비·전진에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 26경기 13선발 1321분 2골 2도움. 우측 수비·전진에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
@@ -7596,7 +7837,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중원 수비·전개에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 34경기 24선발 2220분 2골 2도움. 중원 수비·전개에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A- 잠정 평가, 구단 순위 가산 없음.",
@@ -7721,7 +7962,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중원 수비·전개에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 15경기 12선발 893분 0골 0도움. 중원 수비·전개에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B 잠정 평가, 구단 순위 가산 없음.",
@@ -7846,7 +8087,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중원 연결·전환에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 23경기 20선발 1665분 1골 1도움. 중원 연결·전환에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
@@ -7892,7 +8133,8 @@
         "https://www.footballsquads.co.uk/spain/2025-2026/laliga/amadrid.htm",
         "https://www.transfermarkt.es/thiago-almada/profil/spieler/576028",
         "https://github.com/dmorenoli/Tipolog-a-y-Ciclo-de-Vida-de-los-Datos/blob/main/dataset/laliga_jugadores_2025_26.csv",
-        "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2025.json"
+        "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2025.json",
+        "https://github.com/wjdduddlf112/footballarch/blob/main/data/ligue1-2024-25.json"
       ],
       "evidence": {
         "seasonPrimarySource": "https://www.bdfutbol.com/en/t/t2025-267.html",
@@ -7907,9 +8149,21 @@
           },
           {
             "season": "2024-25",
-            "records": [],
+            "records": [
+              {
+                "club": "Olympique Lyonnais",
+                "league": "Ligue 1",
+                "leagueAppearances": 16,
+                "leagueStarts": 9,
+                "leagueMinutes": 948,
+                "leagueGoals": 1,
+                "tier": "B+",
+                "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/ligue1-2024-25.json",
+                "status": "other_league_prior_DRAFT_not_independently_verified"
+              }
+            ],
             "secondarySnapshot": [],
-            "status": "evidence_pending_not_zero"
+            "status": "reference_available"
           }
         ]
       },
@@ -7920,11 +8174,11 @@
           "2025-26"
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
-        "priorCoverage": 0,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "priorCoverage": 1,
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중앙 2선 창조성과 침투에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
-      "assessmentRationale": "2025-26 27경기 16선발 1313분 3골 1도움. 중앙 2선 창조성과 침투에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 0/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B 잠정 평가, 구단 순위 가산 없음.",
+      "assessmentRationale": "2025-26 27경기 16선발 1313분 3골 1도움. 중앙 2선 창조성과 침투에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 1/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B 잠정 평가, 구단 순위 가산 없음.",
       "rankReview": {
         "status": "provisional",
         "pool": 8,
@@ -8009,7 +8263,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 1,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "좌측 공격에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 27경기 21선발 1572분 2골 3도움. 좌측 공격에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 1/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A- 잠정 평가, 구단 순위 가산 없음.",
@@ -8055,7 +8309,9 @@
         "https://www.footballsquads.co.uk/spain/2025-2026/laliga/amadrid.htm",
         "https://www.transfermarkt.es/nico-gonzalez/profil/spieler/486031",
         "https://github.com/dmorenoli/Tipolog-a-y-Ciclo-de-Vida-de-los-Datos/blob/main/dataset/laliga_jugadores_2025_26.csv",
-        "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2025.json"
+        "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2025.json",
+        "https://github.com/wjdduddlf112/footballarch/blob/main/data/seriea-2023-24.json",
+        "https://github.com/wjdduddlf112/footballarch/blob/main/data/seriea-2024-25.json"
       ],
       "evidence": {
         "seasonPrimarySource": "https://www.bdfutbol.com/en/t/t2025-267.html",
@@ -8064,15 +8320,39 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "ACF Fiorentina",
+                "league": "Serie A",
+                "leagueAppearances": 29,
+                "leagueStarts": 21,
+                "leagueMinutes": 1913,
+                "leagueGoals": 12,
+                "tier": "A-",
+                "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/seriea-2023-24.json",
+                "status": "other_league_prior_DRAFT_not_independently_verified"
+              }
+            ],
             "secondarySnapshot": [],
-            "status": "evidence_pending_not_zero"
+            "status": "reference_available"
           },
           {
             "season": "2024-25",
-            "records": [],
+            "records": [
+              {
+                "club": "Juventus FC",
+                "league": "Serie A",
+                "leagueAppearances": 26,
+                "leagueStarts": 23,
+                "leagueMinutes": 1765,
+                "leagueGoals": 3,
+                "tier": "B+",
+                "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/seriea-2024-25.json",
+                "status": "other_league_prior_DRAFT_not_independently_verified"
+              }
+            ],
             "secondarySnapshot": [],
-            "status": "evidence_pending_not_zero"
+            "status": "reference_available"
           }
         ]
       },
@@ -8083,11 +8363,11 @@
           "2025-26"
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
-        "priorCoverage": 0,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "priorCoverage": 2,
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "좌측 공격에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
-      "assessmentRationale": "2025-26 24경기 18선발 1455분 5골 0도움. 좌측 공격에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 0/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
+      "assessmentRationale": "2025-26 24경기 18선발 1455분 5골 0도움. 좌측 공격에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
       "rankReview": {
         "status": "provisional",
         "pool": 12,
@@ -8196,7 +8476,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "우측 공격에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 31경기 25선발 2111분 4골 6도움. 우측 공격에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A- 잠정 평가, 구단 순위 가산 없음.",
@@ -8244,7 +8524,8 @@
         "https://github.com/dmorenoli/Tipolog-a-y-Ciclo-de-Vida-de-los-Datos/blob/main/dataset/laliga_jugadores_2025_26.csv",
         "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2025.json",
         "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2024-25.json",
-        "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2024.json"
+        "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2024.json",
+        "https://github.com/wjdduddlf112/footballarch/blob/main/data/premierleague-2023-24.json"
       ],
       "evidence": {
         "seasonPrimarySource": "https://www.bdfutbol.com/en/t/t2025-267.html",
@@ -8253,9 +8534,21 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "Manchester City FC",
+                "league": "Premier League",
+                "leagueAppearances": 36,
+                "leagueStarts": 31,
+                "leagueMinutes": 2657,
+                "leagueGoals": 11,
+                "tier": "A-",
+                "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/premierleague-2023-24.json",
+                "status": "other_league_prior_DRAFT_not_independently_verified"
+              }
+            ],
             "secondarySnapshot": [],
-            "status": "evidence_pending_not_zero"
+            "status": "reference_available"
           },
           {
             "season": "2024-25",
@@ -8295,11 +8588,11 @@
           "2025-26"
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
-        "priorCoverage": 1,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "priorCoverage": 2,
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "전방 마무리·연계에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
-      "assessmentRationale": "2025-26 29경기 22선발 1905분 8골 4도움. 전방 마무리·연계에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 1/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A 잠정 평가, 구단 순위 가산 없음.",
+      "assessmentRationale": "2025-26 29경기 22선발 1905분 8골 4도움. 전방 마무리·연계에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A 잠정 평가, 구단 순위 가산 없음.",
       "rankReview": {
         "status": "provisional",
         "pool": 18,
@@ -8408,7 +8701,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "13골, 직전 두 시즌 득점 생산성",
       "assessmentRationale": "2025-26 35경기 20선발 1976분 13골 0도움. 13골, 직전 두 시즌 득점 생산성. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A 잠정 평가, 구단 순위 가산 없음.",
@@ -8521,7 +8814,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "전방 마무리·연계에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 34경기 13선발 1469분 7골 4도움. 전방 마무리·연계에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A- 잠정 평가, 구단 순위 가산 없음.",
@@ -8615,7 +8908,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 1,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "선방·후방 안정에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 28경기 28선발 2520분 0골 0도움. 선방·후방 안정에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 1/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
@@ -8690,7 +8983,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 0,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "선방·후방 안정에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 9경기 9선발 810분 0골 0도움. 선방·후방 안정에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 0/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B 잠정 평가, 구단 순위 가산 없음.",
@@ -8790,7 +9083,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 1,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중앙 수비·후방 전개에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 33경기 32선발 2810분 0골 0도움. 중앙 수비·후방 전개에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 1/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A- 잠정 평가, 구단 순위 가산 없음.",
@@ -8902,7 +9195,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중앙 수비·후방 전개에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 25경기 21선발 1976분 1골 0도움. 중앙 수비·후방 전개에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
@@ -8977,7 +9270,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 0,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중앙 수비·후방 전개에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 28경기 19선발 1874분 1골 0도움. 중앙 수비·후방 전개에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 0/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
@@ -9077,7 +9370,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 1,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "좌측 수비·전진에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 23경기 18선발 1547분 0골 1도움. 좌측 수비·전진에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 1/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B 잠정 평가, 구단 순위 가산 없음.",
@@ -9189,7 +9482,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "우측 수비·전진에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 27경기 20선발 1821분 2골 3도움. 우측 수비·전진에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
@@ -9301,7 +9594,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "우측 수비·전진에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 27경기 20선발 1812분 4골 2도움. 우측 수비·전진에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
@@ -9426,7 +9719,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중원 수비·전개에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 29경기 23선발 2026분 1골 1도움. 중원 수비·전개에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
@@ -9472,7 +9765,8 @@
         "https://www.footballsquads.co.uk/spain/2025-2026/laliga/betis.htm",
         "https://www.transfermarkt.es/sofyan-amrabat/profil/spieler/287579",
         "https://github.com/dmorenoli/Tipolog-a-y-Ciclo-de-Vida-de-los-Datos/blob/main/dataset/laliga_jugadores_2025_26.csv",
-        "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2025.json"
+        "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2025.json",
+        "https://github.com/wjdduddlf112/footballarch/blob/main/data/premierleague-2023-24.json"
       ],
       "evidence": {
         "seasonPrimarySource": "https://www.bdfutbol.com/en/t/t2025-268.html",
@@ -9481,9 +9775,21 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "Manchester United FC",
+                "league": "Premier League",
+                "leagueAppearances": 21,
+                "leagueStarts": 10,
+                "leagueMinutes": 932,
+                "leagueGoals": 0,
+                "tier": "C+",
+                "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/premierleague-2023-24.json",
+                "status": "other_league_prior_DRAFT_not_independently_verified"
+              }
+            ],
             "secondarySnapshot": [],
-            "status": "evidence_pending_not_zero"
+            "status": "reference_available"
           },
           {
             "season": "2024-25",
@@ -9500,11 +9806,11 @@
           "2025-26"
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
-        "priorCoverage": 0,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "priorCoverage": 1,
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중원 수비·전개에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
-      "assessmentRationale": "2025-26 17경기 14선발 1295분 0골 0도움. 중원 수비·전개에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 0/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B 잠정 평가, 구단 순위 가산 없음.",
+      "assessmentRationale": "2025-26 17경기 14선발 1295분 0골 0도움. 중원 수비·전개에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 1/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B 잠정 평가, 구단 순위 가산 없음.",
       "rankReview": {
         "status": "provisional",
         "pool": 15,
@@ -9626,7 +9932,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "37경기 9골·6도움, 중앙 공격 전개",
       "assessmentRationale": "2025-26 37경기 34선발 2864분 9골 6도움. 37경기 9골·6도움, 중앙 공격 전개. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A 잠정 평가, 구단 순위 가산 없음.",
@@ -9726,7 +10032,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 1,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중원 연결·전환에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 24경기 13선발 1183분 1골 2도움. 중원 연결·전환에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 1/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B 잠정 평가, 구단 순위 가산 없음.",
@@ -9774,7 +10080,8 @@
         "https://github.com/dmorenoli/Tipolog-a-y-Ciclo-de-Vida-de-los-Datos/blob/main/dataset/laliga_jugadores_2025_26.csv",
         "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2025.json",
         "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2024-25.json",
-        "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2024.json"
+        "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2024.json",
+        "https://github.com/wjdduddlf112/footballarch/blob/main/data/premierleague-2023-24.json"
       ],
       "evidence": {
         "seasonPrimarySource": "https://www.bdfutbol.com/en/t/t2025-268.html",
@@ -9783,9 +10090,21 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "Tottenham Hotspur FC",
+                "league": "Premier League",
+                "leagueAppearances": 22,
+                "leagueStarts": 4,
+                "leagueMinutes": 497,
+                "leagueGoals": 2,
+                "tier": "B-",
+                "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/premierleague-2023-24.json",
+                "status": "other_league_prior_DRAFT_not_independently_verified"
+              }
+            ],
             "secondarySnapshot": [],
-            "status": "evidence_pending_not_zero"
+            "status": "reference_available"
           },
           {
             "season": "2024-25",
@@ -9825,11 +10144,11 @@
           "2025-26"
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
-        "priorCoverage": 1,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "priorCoverage": 2,
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중앙 2선 창조성과 침투에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
-      "assessmentRationale": "2025-26 24경기 15선발 1397분 2골 3도움. 중앙 2선 창조성과 침투에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 1/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
+      "assessmentRationale": "2025-26 24경기 15선발 1397분 2골 3도움. 중앙 2선 창조성과 침투에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
       "rankReview": {
         "status": "provisional",
         "pool": 8,
@@ -9951,7 +10270,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "10골·8도움, 측면 돌파와 창조성",
       "assessmentRationale": "2025-26 29경기 26선발 2254분 10골 8도움. 10골·8도움, 측면 돌파와 창조성. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A 잠정 평가, 구단 순위 가산 없음.",
@@ -10076,7 +10395,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "좌측 공격에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 25경기 7선발 809분 1골 1도움. 좌측 공격에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B- 잠정 평가, 구단 순위 가산 없음.",
@@ -10124,7 +10443,8 @@
         "https://github.com/dmorenoli/Tipolog-a-y-Ciclo-de-Vida-de-los-Datos/blob/main/dataset/laliga_jugadores_2025_26.csv",
         "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2025.json",
         "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2024-25.json",
-        "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2024.json"
+        "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2024.json",
+        "https://github.com/wjdduddlf112/footballarch/blob/main/data/premierleague-2023-24.json"
       ],
       "evidence": {
         "seasonPrimarySource": "https://www.bdfutbol.com/en/t/t2025-268.html",
@@ -10133,9 +10453,21 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "Manchester United FC",
+                "league": "Premier League",
+                "leagueAppearances": 29,
+                "leagueStarts": 15,
+                "leagueMinutes": 1323,
+                "leagueGoals": 1,
+                "tier": "C+",
+                "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/premierleague-2023-24.json",
+                "status": "other_league_prior_DRAFT_not_independently_verified"
+              }
+            ],
             "secondarySnapshot": [],
-            "status": "evidence_pending_not_zero"
+            "status": "reference_available"
           },
           {
             "season": "2024-25",
@@ -10175,11 +10507,11 @@
           "2025-26"
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
-        "priorCoverage": 1,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "priorCoverage": 2,
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "8골·6도움, 우측 공격 창조성",
-      "assessmentRationale": "2025-26 32경기 30선발 2462분 8골 6도움. 8골·6도움, 우측 공격 창조성. 이전 두 시즌 자료 1/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A 잠정 평가, 구단 순위 가산 없음.",
+      "assessmentRationale": "2025-26 32경기 30선발 2462분 8골 6도움. 8골·6도움, 우측 공격 창조성. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A 잠정 평가, 구단 순위 가산 없음.",
       "rankReview": {
         "status": "provisional",
         "pool": 12,
@@ -10283,7 +10615,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 1,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "전방 마무리·연계에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 32경기 30선발 2594분 11골 3도움. 전방 마무리·연계에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 1/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A- 잠정 평가, 구단 순위 가산 없음.",
@@ -10383,7 +10715,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "선방·후방 안정에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 37경기 37선발 3330분 0골 0도움. 선방·후방 안정에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
@@ -10495,7 +10827,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "선방·후방 안정에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 1경기 1선발 90분 0골 0도움. 선방·후방 안정에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. C 잠정 평가, 구단 순위 가산 없음.",
@@ -10581,7 +10913,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 1,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중앙 수비·후방 전개에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 25경기 25선발 2250분 2골. 중앙 수비·후방 전개에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 1/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
@@ -10627,7 +10959,9 @@
         "https://www.footballsquads.co.uk/spain/2025-2026/laliga/sociedad.htm",
         "https://www.transfermarkt.es/duje-caleta-car/profil/spieler/238266",
         "https://github.com/dmorenoli/Tipolog-a-y-Ciclo-de-Vida-de-los-Datos/blob/main/dataset/laliga_jugadores_2025_26.csv",
-        "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2025.json"
+        "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2025.json",
+        "https://github.com/wjdduddlf112/footballarch/blob/main/data/ligue1-2023-24.json",
+        "https://github.com/wjdduddlf112/footballarch/blob/main/data/ligue1-2024-25.json"
       ],
       "evidence": {
         "seasonPrimarySource": "https://www.bdfutbol.com/en/t/t2025-2630.html",
@@ -10636,15 +10970,39 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "Olympique Lyonnais",
+                "league": "Ligue 1",
+                "leagueAppearances": 24,
+                "leagueStarts": 22,
+                "leagueMinutes": 1992,
+                "leagueGoals": 0,
+                "tier": "B+",
+                "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/ligue1-2023-24.json",
+                "status": "other_league_prior_DRAFT_not_independently_verified"
+              }
+            ],
             "secondarySnapshot": [],
-            "status": "evidence_pending_not_zero"
+            "status": "reference_available"
           },
           {
             "season": "2024-25",
-            "records": [],
+            "records": [
+              {
+                "club": "Olympique Lyonnais",
+                "league": "Ligue 1",
+                "leagueAppearances": 19,
+                "leagueStarts": 17,
+                "leagueMinutes": 1585,
+                "leagueGoals": 1,
+                "tier": "B+",
+                "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/ligue1-2024-25.json",
+                "status": "other_league_prior_DRAFT_not_independently_verified"
+              }
+            ],
             "secondarySnapshot": [],
-            "status": "evidence_pending_not_zero"
+            "status": "reference_available"
           }
         ]
       },
@@ -10655,11 +11013,11 @@
           "2025-26"
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
-        "priorCoverage": 0,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "priorCoverage": 2,
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중앙 수비·후방 전개에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
-      "assessmentRationale": "2025-26 27경기 24선발 2150분 1골 0도움. 중앙 수비·후방 전개에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 0/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B 잠정 평가, 구단 순위 가산 없음.",
+      "assessmentRationale": "2025-26 27경기 24선발 2150분 1골 0도움. 중앙 수비·후방 전개에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B 잠정 평가, 구단 순위 가산 없음.",
       "rankReview": {
         "status": "provisional",
         "pool": 24,
@@ -10768,7 +11126,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중앙 수비·후방 전개에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 25경기 23선발 2081분 0골 1도움. 중앙 수비·후방 전개에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
@@ -10855,7 +11213,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 1,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "좌측 수비·전진에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 35경기 30선발 2706분 0골 6도움. 좌측 수비·전진에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 1/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
@@ -10967,7 +11325,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "좌측 수비·전진에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 21경기 9선발 843분 1골 0도움. 좌측 수비·전진에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B- 잠정 평가, 구단 순위 가산 없음.",
@@ -11054,7 +11412,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 1,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "우측 수비·전진에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 35경기 31선발 2778분 1골 0도움. 우측 수비·전진에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 1/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
@@ -11153,7 +11511,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "우측 수비·전진에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 16경기 8선발 719분 0골 1도움. 우측 수비·전진에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B- 잠정 평가, 구단 순위 가산 없음.",
@@ -11228,7 +11586,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 0,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중원 수비·전개에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 30경기 26선발 2217분 1골 3도움. 중원 수비·전개에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 0/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
@@ -11340,7 +11698,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중원 수비·전개에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 27경기 16선발 1349분 0골 3도움. 중원 수비·전개에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B 잠정 평가, 구단 순위 가산 없음.",
@@ -11415,7 +11773,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 0,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중원 연결·전환에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 33경기 26선발 2326분 4골 3도움. 중원 연결·전환에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 0/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
@@ -11502,7 +11860,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 1,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중원 연결·전환에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 22경기 10선발 1018분 3골 1도움. 중원 연결·전환에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 1/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B 잠정 평가, 구단 순위 가산 없음.",
@@ -11614,7 +11972,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중앙 2선 창조성과 침투에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 29경기 21선발 1671분 6골 2도움. 중앙 2선 창조성과 침투에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A- 잠정 평가, 구단 순위 가산 없음.",
@@ -11700,7 +12058,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 1,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중앙 2선 창조성과 침투에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 34경기 15선발 1494분 0골. 중앙 2선 창조성과 침투에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 1/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B 잠정 평가, 구단 순위 가산 없음.",
@@ -11812,7 +12170,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "좌측 공격에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 30경기 22선발 1772분 3골 5도움. 좌측 공격에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
@@ -11899,7 +12257,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 1,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "우측 공격에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 32경기 22선발 1830분 8골 4도움. 우측 공격에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 1/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
@@ -12011,7 +12369,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "우측 공격에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 24경기 17선발 1509분 2골 4도움. 우측 공격에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
@@ -12111,7 +12469,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "15골 및 전방 연계, 세 시즌 지속성",
       "assessmentRationale": "2025-26 34경기 30선발 2715분 15골 4도움. 15골 및 전방 연계, 세 시즌 지속성. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A+ 잠정 평가, 구단 순위 가산 없음.",
@@ -12198,7 +12556,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 1,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "전방 마무리·연계에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 20경기 8선발 829분 9골 0도움. 전방 마무리·연계에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 1/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
@@ -12273,7 +12631,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 0,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "선방·후방 안정에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 38경기 38선발 3420분 0골 0도움. 선방·후방 안정에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 0/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
@@ -12385,7 +12743,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중앙 수비·후방 전개에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 32경기 31선발 2770분 1골 0도움. 중앙 수비·후방 전개에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
@@ -12485,7 +12843,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 1,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중앙 수비·후방 전개에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 33경기 28선발 2560분 0골 1도움. 중앙 수비·후방 전개에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 1/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
@@ -12597,7 +12955,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중앙 수비·후방 전개에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 19경기 17선발 1492분 0골 0도움. 중앙 수비·후방 전개에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
@@ -12697,7 +13055,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 1,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "좌측 수비·전진에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 34경기 29선발 2693분 2골 1도움. 좌측 수비·전진에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 1/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
@@ -12797,7 +13155,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 1,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "좌측 수비·전진에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 28경기 15선발 1338분 4골 2도움. 좌측 수비·전진에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 1/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B 잠정 평가, 구단 순위 가산 없음.",
@@ -12909,7 +13267,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "우측 수비·전진에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 34경기 21선발 1968분 1골 4도움. 우측 수비·전진에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A- 잠정 평가, 구단 순위 가산 없음.",
@@ -12984,7 +13342,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 0,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "우측 수비·전진에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 26경기 16선발 1405분 2골 6도움. 우측 수비·전진에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 0/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
@@ -13084,7 +13442,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 1,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중원 수비·전개에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 20경기 16선발 1343분 0골 2도움. 중원 수비·전개에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 1/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B 잠정 평가, 구단 순위 가산 없음.",
@@ -13171,7 +13529,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 1,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중원 수비·전개에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 19경기 14선발 1310분 1골 0도움. 중원 수비·전개에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 1/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B 잠정 평가, 구단 순위 가산 없음.",
@@ -13283,7 +13641,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중원 연결·전환에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 36경기 26선발 2489분 2골 3도움. 중원 연결·전환에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
@@ -13383,7 +13741,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 1,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "좌측 공격에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 30경기 17선발 1428분 2골 2도움. 좌측 공격에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 1/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B 잠정 평가, 구단 순위 가산 없음.",
@@ -13495,7 +13853,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "좌측 공격에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 29경기 13선발 1267분 5골 5도움. 좌측 공격에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
@@ -13570,7 +13928,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 0,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "우측 공격에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 30경기 21선발 1663분 9골 3도움. 우측 공격에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 0/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
@@ -13645,7 +14003,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 0,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "우측 공격에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 17경기 13선발 1174분 1골 1도움. 우측 공격에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 0/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B 잠정 평가, 구단 순위 가산 없음.",
@@ -13758,7 +14116,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "14골과 전방 마무리",
       "assessmentRationale": "2025-26 35경기 21선발 1902분 14골 2도움. 14골과 전방 마무리. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A- 잠정 평가, 구단 순위 가산 없음.",
@@ -13877,7 +14235,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "전방 마무리·연계에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 32경기 11선발 1129분 5골 3도움. 전방 마무리·연계에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
@@ -13976,7 +14334,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "선방·후방 안정에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 38경기 38선발 3420분 0골 0도움. 선방·후방 안정에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A- 잠정 평가, 구단 순위 가산 없음.",
@@ -14075,7 +14433,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중앙 수비·후방 전개에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 34경기 34선발 2930분 1골 1도움. 중앙 수비·후방 전개에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
@@ -14174,7 +14532,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중앙 수비·후방 전개에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 34경기 32선발 2587분 0골 0도움. 중앙 수비·후방 전개에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
@@ -14273,7 +14631,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중앙 수비·후방 전개에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 23경기 17선발 1442분 0골 2도움. 중앙 수비·후방 전개에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B 잠정 평가, 구단 순위 가산 없음.",
@@ -14372,7 +14730,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "좌측 수비·전진에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 28경기 18선발 1752분 0골 0도움. 좌측 수비·전진에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B 잠정 평가, 구단 순위 가산 없음.",
@@ -14449,7 +14807,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 0,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "좌측 수비·전진에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 14경기 7선발 697분 0골 0도움. 좌측 수비·전진에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 0/2시즌 연결. 누락 자료는 0으로 대체하지 않음. C+ 잠정 평가, 구단 순위 가산 없음.",
@@ -14548,7 +14906,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "우측 수비·전진에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 37경기 36선발 3189분 1골 2도움. 우측 수비·전진에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
@@ -14660,7 +15018,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "우측 수비·전진에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 28경기 25선발 2022분 1골 1도움. 우측 수비·전진에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
@@ -14759,7 +15117,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중원 수비·전개에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 37경기 37선발 3255분 6골 2도움. 중원 수비·전개에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A- 잠정 평가, 구단 순위 가산 없음.",
@@ -14858,7 +15216,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "37선발·10도움, 중원 전개 및 세트피스 창조성",
       "assessmentRationale": "2025-26 37경기 37선발 3277분 1골 10도움. 37선발·10도움, 중원 전개 및 세트피스 창조성. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A+ 잠정 평가, 구단 순위 가산 없음.",
@@ -14933,7 +15291,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 0,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중원 연결·전환에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 35경기 26선발 2135분 2골 1도움. 중원 연결·전환에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 0/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
@@ -15032,7 +15390,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중원 연결·전환에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 17경기 4선발 544분 0골 0도움. 중원 연결·전환에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. C+ 잠정 평가, 구단 순위 가산 없음.",
@@ -15107,7 +15465,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 0,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "좌측 공격에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 18경기 5선발 702분 0골 1도움. 좌측 공격에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 0/2시즌 연결. 누락 자료는 0으로 대체하지 않음. C+ 잠정 평가, 구단 순위 가산 없음.",
@@ -15153,7 +15511,8 @@
         "https://www.footballsquads.co.uk/spain/2025-2026/laliga/getafe.htm",
         "https://www.transfermarkt.es/martin-satriano/profil/spieler/640109",
         "https://github.com/dmorenoli/Tipolog-a-y-Ciclo-de-Vida-de-los-Datos/blob/main/dataset/laliga_jugadores_2025_26.csv",
-        "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2025.json"
+        "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2025.json",
+        "https://github.com/wjdduddlf112/footballarch/blob/main/data/ligue1-2023-24.json"
       ],
       "evidence": {
         "seasonPrimarySource": "https://www.bdfutbol.com/en/t/t2025-2616.html",
@@ -15162,9 +15521,21 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "Stade Brestois 29",
+                "league": "Ligue 1",
+                "leagueAppearances": 33,
+                "leagueStarts": 21,
+                "leagueMinutes": 1869,
+                "leagueGoals": 4,
+                "tier": "B+",
+                "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/ligue1-2023-24.json",
+                "status": "other_league_prior_DRAFT_not_independently_verified"
+              }
+            ],
             "secondarySnapshot": [],
-            "status": "evidence_pending_not_zero"
+            "status": "reference_available"
           },
           {
             "season": "2024-25",
@@ -15181,11 +15552,11 @@
           "2025-26"
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
-        "priorCoverage": 0,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "priorCoverage": 1,
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "전방 마무리·연계에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
-      "assessmentRationale": "2025-26 18경기 18선발 1607분 6골 1도움. 전방 마무리·연계에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 0/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
+      "assessmentRationale": "2025-26 18경기 18선발 1607분 6골 1도움. 전방 마무리·연계에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 1/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
       "rankReview": {
         "status": "provisional",
         "pool": 18,
@@ -15257,7 +15628,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 0,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "전방 마무리·연계에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 28경기 21선발 1713분 3골 0도움. 전방 마무리·연계에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 0/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B 잠정 평가, 구단 순위 가산 없음.",
@@ -15356,7 +15727,7 @@
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
         "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior archive and incomplete snapshots; other league history not comprehensive"
+        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "전방 마무리·연계에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 16경기 12선발 1061분 4골 1도움. 전방 마무리·연계에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B 잠정 평가, 구단 순위 가산 없음.",
