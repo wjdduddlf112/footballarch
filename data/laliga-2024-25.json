@@ -37,7 +37,25 @@
       "source": "Opta-derived incomplete snapshot plus BDFutbol manual overrides and selected starts; season rosters and earlier archive DOB references",
       "positionModalVerified": false,
       "birthIndependentComplete": false,
-      "priorIndependentComplete": false
+      "priorIndependentComplete": false,
+      "birthDateCorrections20261125": [
+        {
+          "name": "Nahuel Molina",
+          "from": "1997-12-02",
+          "to": "1998-04-06"
+        },
+        {
+          "name": "Cucho Hernández",
+          "from": "1999-04-22",
+          "to": "1999-04-20"
+        },
+        {
+          "name": "Iago Aspas",
+          "from": "1987-08-11",
+          "to": "1987-08-01"
+        }
+      ],
+      "birthDateCorrectionNote": "Official LaLiga profiles supersede incorrect prior roster dates; original player IDs preserved for stable references; no tier/position change."
     },
     "nodeCliValidation": {
       "status": "PASS",
@@ -4742,7 +4760,7 @@
       "name": "Nahuel Molina",
       "nameOriginal": "Nahuel Molina",
       "nameKo": "나우엘 몰리나",
-      "born": "1997-12-02",
+      "born": "1998-04-06",
       "club": "atleti",
       "clubId": "atleti",
       "clubNameOriginal": "Atlético de Madrid",
@@ -4759,8 +4777,8 @@
       "rank": 8,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_editorial",
-      "birthSource": "https://www.footballsquads.co.uk/spain/2024-2025/laliga/amadrid.htm",
-      "birthAuditStatus": "roster_reference_or_prior_identity_not_exhaustively_row_verified",
+      "birthSource": "https://www.laliga.com/en-GB/player/nahuel-molina",
+      "birthAuditStatus": "official_laliga_profile_corrected_2026_11_25",
       "positionVerification": "representative_tactical_assignment_matchwise_modal_pending",
       "positionReview": "4-4-2",
       "sources": [
@@ -4769,7 +4787,8 @@
         "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2024.json",
         "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2022.json",
         "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2023-24.json",
-        "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2023.json"
+        "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2023.json",
+        "https://www.laliga.com/en-GB/player/nahuel-molina"
       ],
       "evidence": {
         "seasonPrimarySource": "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2024.json",
@@ -4838,6 +4857,12 @@
         "status": "provisional",
         "pool": 16,
         "method": "tier, editorial comparative order, minutes and goals tiebreak"
+      },
+      "birthCorrection": {
+        "rejectedRosterDate": "1997-12-02",
+        "correctDate": "1998-04-06",
+        "source": "https://www.laliga.com/en-GB/player/nahuel-molina",
+        "idPreserved": true
       }
     },
     {
@@ -10671,7 +10696,7 @@
       "name": "Cucho Hernández",
       "nameOriginal": "Cucho Hernández",
       "nameKo": "쿠초 에르난데스",
-      "born": "1999-04-22",
+      "born": "1999-04-20",
       "club": "betis",
       "clubId": "betis",
       "clubNameOriginal": "Real Betis",
@@ -10688,14 +10713,15 @@
       "rank": 11,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_editorial",
-      "birthSource": "https://www.footballsquads.co.uk/spain/2024-2025/laliga/betis.htm",
-      "birthAuditStatus": "roster_reference_or_prior_identity_not_exhaustively_row_verified",
+      "birthSource": "https://www.laliga.com/en-US/player/cucho",
+      "birthAuditStatus": "official_laliga_profile_corrected_2026_11_25",
       "positionVerification": "representative_tactical_assignment_matchwise_modal_pending",
       "positionReview": "4-2-3-1",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2024-258.html",
         "https://www.footballsquads.co.uk/spain/2024-2025/laliga/betis.htm",
-        "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2024.json"
+        "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2024.json",
+        "https://www.laliga.com/en-US/player/cucho"
       ],
       "evidence": {
         "seasonPrimarySource": "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2024.json",
@@ -10731,6 +10757,12 @@
         "status": "provisional",
         "pool": 18,
         "method": "tier, editorial comparative order, minutes and goals tiebreak"
+      },
+      "birthCorrection": {
+        "rejectedRosterDate": "1999-04-22",
+        "correctDate": "1999-04-20",
+        "source": "https://www.laliga.com/en-US/player/cucho",
+        "idPreserved": true
       }
     },
     {
@@ -11880,7 +11912,7 @@
       "name": "Iago Aspas",
       "nameOriginal": "Iago Aspas",
       "nameKo": "이아고 아스파스",
-      "born": "1987-08-11",
+      "born": "1987-08-01",
       "club": "celta",
       "clubId": "celta",
       "clubNameOriginal": "RC Celta",
@@ -11897,15 +11929,16 @@
       "rank": 4,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_editorial",
-      "birthSource": "https://www.footballsquads.co.uk/spain/2024-2025/laliga/celta.htm",
-      "birthAuditStatus": "roster_reference_or_prior_identity_not_exhaustively_row_verified",
+      "birthSource": "https://www.laliga.com/en-US/player/iago-aspas",
+      "birthAuditStatus": "official_laliga_profile_corrected_2026_11_25",
       "positionVerification": "representative_tactical_assignment_matchwise_modal_pending",
       "positionReview": "3-4-2-1",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2024-2511.html",
         "https://www.footballsquads.co.uk/spain/2024-2025/laliga/celta.htm",
         "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2024.json",
-        "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2023.json"
+        "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2023.json",
+        "https://www.laliga.com/en-US/player/iago-aspas"
       ],
       "evidence": {
         "seasonPrimarySource": "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2024.json",
@@ -11952,6 +11985,12 @@
         "status": "provisional",
         "pool": 12,
         "method": "tier, editorial comparative order, minutes and goals tiebreak"
+      },
+      "birthCorrection": {
+        "rejectedRosterDate": "1987-08-11",
+        "correctDate": "1987-08-01",
+        "source": "https://www.laliga.com/en-US/player/iago-aspas",
+        "idPreserved": true
       }
     },
     {
