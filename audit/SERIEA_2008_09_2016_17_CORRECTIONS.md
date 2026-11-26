@@ -211,3 +211,11 @@ For source conflicts: match-level source/scope not sufficiently resolved. For po
 - 2016-17 | 후보 자격 확인 | | 알레산드로 무르자 | Alessandro Murgia | SS Lazio | seriea-2016-17-lazio-alessandromurgia | CM | backup | 4 | 14 | [근거](https://www.bdfutbol.com/en/t/t2016-173018.html) |
 - 2016-17 | 후보 자격 확인 | | 크리스티아노 롬바르디 | Cristiano Lombardi | SS Lazio | seriea-2016-17-lazio-cristianolombardi | RW | backup | 3 | 18 | [근거](https://www.bdfutbol.com/en/t/t2016-173018.html) |
 - 2016-17 | 후보 자격 확인 | | 필리프 조르제비치 | Filip Đorđević | SS Lazio | seriea-2016-17-lazio-filiporevic | ST | backup | 4 | 17 | [근거](https://www.bdfutbol.com/en/t/t2016-173018.html) |
+
+## Post-write verification
+
+- Initial commit b9c252ea37acf7f87c9768f6cbed195dbf8f5dec: GitHub Actions season checks for 2009-10 through 2016-17 all completed successfully (8/8).
+- 2008-09 has no push workflow. Executed existing verify-seriea-2008-09.mjs against the branch JSON in a JavaScript isolate, replacing only the Node filesystem import with the fetched file reader and capturing output; pass=true, errors=[], 128 candidates, 7 clubs. This is not a native Node execution.
+- 2013-14 Torino and 2014-15 Sampdoria qualification routes already match the report; no change. Parma/Genoa licence exceptions preserved.
+- Post-write re-read: Chiellini 2009-10 4 goals, Felipe Melo 2009-10 3 goals, Chiellini 2011-12's 2009-10 reference 4. No 2010-11 candidate records for either player, no 2011-12 Felipe Melo candidate. Corrected Chiellini's stale 2009-10 tier explanation from 3 to 4 goals without changing tier/rank. 
+- Main unchanged; no deployment.
