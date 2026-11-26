@@ -64,7 +64,7 @@ def run():
             errors.append(f"{id_}: invalid tier {grade}")
         if grade is not None:
             tiers[grade] += 1
-        if p.get("season") != "2010-11":
+        if p.get("season") != "2011-12":
             errors.append(f"{id_}: wrong season")
         apps, starts, mins = [p.get(x) for x in ("leagueAppearances","leagueStarts","leagueMinutes")]
         if any(not isinstance(x, int) or x < 0 for x in (apps, starts, mins)) or starts > apps or mins > apps*90 + 120:

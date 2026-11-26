@@ -39,11 +39,12 @@
       "https://www.bdfutbol.com/en/t/t2014-151003.html"
     ],
     "formation": "4-2-3-1",
-    "formationReview": "representative_2014_15_without_leaguewide_306_match_modal_formation_count",
+    "formationReview": "DFB report: 306 matches, 612 team lineups; 4-2-3-1 303, 4-2-2-2 145, 4-1-4-1 54",
     "bestXiReview": {
       "status": "proposed_unapproved",
       "formation": "4-2-3-1",
-      "method": "2014-15 individual role/season contribution and 2013-14/2012-13 relative weighted, no club trophy bonus"
+      "method": "2014-15 individual role/season contribution and 2013-14/2012-13 relative weighted, no club trophy bonus",
+      "segment2Method": "current-season first, prior two seasons secondary; provisional comparison, team success not scored"
     },
     "clubTactics": {
       "bayern": {
@@ -839,7 +840,7 @@
       "leagueAppearances": 32,
       "leagueStarts": 31,
       "leagueMinutes": 2866,
-      "goals2014": null,
+      "goals2014": 0,
       "assists2014": null,
       "tier": "S",
       "rank": 1,
@@ -874,7 +875,10 @@
             "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2012-131016.html",
-            "verification": "prior_FootballArchive_DRAFT_not_independently_verified"
+            "verification": "prior_FootballArchive_DRAFT_not_independently_verified",
+            "goalsConceded": 18,
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2012-131016.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2013-14": {
             "club": "FC Bayern München",
@@ -884,17 +888,21 @@
             "goals": null,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2013-141016.html",
-            "verification": "prior_FootballArchive_DRAFT_not_independently_verified"
+            "verification": "prior_FootballArchive_DRAFT_not_independently_verified",
+            "goalsConceded": 18,
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2013-141016.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2014-15": {
             "club": "FC Bayern München",
             "appearances": 32,
             "starts": 31,
             "minutes": 2866,
-            "goals": null,
+            "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2014-151016.html",
-            "verification": "BDFutbol_2014_15_Bundesliga_squad_stats_directly_read"
+            "verification": "BDFutbol_2014_15_Bundesliga_squad_stats_directly_read",
+            "goalsConceded": 18
           }
         },
         "status": "2014_15_actual_league_stats_two_previous_season_historical_DRAFT_or_pending"
@@ -907,7 +915,42 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "leagueGoalsConceded": 18,
+      "segment2Audit": {
+        "goalkeeper": [
+          {
+            "season": "2014-15",
+            "club": "FC Bayern München",
+            "goals": 0,
+            "goalsConceded": 18,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151016.html",
+              "https://www.historical-lineups.com/wp-content/uploads/2024/07/Bundesliga-Player-Guide-1963-2023.pdf"
+            ]
+          }
+        ],
+        "priorClubRecords": [
+          {
+            "season": "2012-13",
+            "club": "Bayern München",
+            "goalsConceded": 18,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2012-131016.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2013-14",
+            "club": "Bayern München",
+            "goalsConceded": 18,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2013-141016.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-bayern-pepereina",
@@ -930,7 +973,7 @@
       "leagueAppearances": 3,
       "leagueStarts": 3,
       "leagueMinutes": 193,
-      "goals2014": null,
+      "goals2014": 0,
       "assists2014": null,
       "tier": "B-",
       "rank": 11,
@@ -981,10 +1024,11 @@
             "appearances": 3,
             "starts": 3,
             "minutes": 193,
-            "goals": null,
+            "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2014-151016.html",
-            "verification": "BDFutbol_2014_15_Bundesliga_squad_stats_directly_read"
+            "verification": "BDFutbol_2014_15_Bundesliga_squad_stats_directly_read",
+            "goalsConceded": 0
           }
         },
         "status": "2014_15_actual_league_stats_two_previous_season_historical_DRAFT_or_pending"
@@ -997,7 +1041,22 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "leagueGoalsConceded": 0,
+      "segment2Audit": {
+        "goalkeeper": [
+          {
+            "season": "2014-15",
+            "club": "FC Bayern München",
+            "goals": 0,
+            "goalsConceded": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151016.html",
+              "https://www.historical-lineups.com/wp-content/uploads/2024/07/Bundesliga-Player-Guide-1963-2023.pdf"
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-bayern-jeromeboateng",
@@ -1480,7 +1539,7 @@
       "goals2014": 0,
       "assists2014": null,
       "tier": "B+",
-      "rank": 5,
+      "rank": 3,
       "rankStatus": "provisional",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -1559,9 +1618,9 @@
       "born": "1983-11-11",
       "birthSource": "https://datencenter.dfb.de/bundesliga/2014-2015/mannschaft/bayern-muenchen",
       "birthVerification": "DFB_official_2014_15_squad_entry_date_source_linked_not_independent_two_source_recheck",
-      "position": "RB",
-      "originalTacticalRole": "RB",
-      "positionVerification": "Guardiola used RB and central midfield in 2014-15; registered RB provisionally pending exact matchwise frequencies",
+      "position": "CM",
+      "originalTacticalRole": "central midfield / right-back",
+      "positionVerification": "segment2_report_DFB_starting_lineup_count_provisional_in_match_movement_pending",
       "role": "starter",
       "roleVerification": "BDFutbol Bundesliga 2014-15: 20 league appearances, 17 starts, 1408 minutes",
       "leagueAppearances": 20,
@@ -1577,7 +1636,9 @@
       "evaluationStatus": "current_season_stats_direct_BDF_previous_two_seasons_partial_archive_references_not_independent",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2014-151016.html",
-        "https://datencenter.dfb.de/bundesliga/2014-2015/mannschaft/bayern-muenchen"
+        "https://datencenter.dfb.de/bundesliga/2014-2015/mannschaft/bayern-muenchen",
+        "https://datencenter.dfb.de/datencenter/bundesliga/2014-2015/3-spieltag/bayern-muenchen-vfb-stuttgart-2210814",
+        "https://datencenter.dfb.de/datencenter/bundesliga/2014-2015/6-spieltag/1-fc-koeln-bayern-muenchen-2210920"
       ],
       "evidence": {
         "currentSeason": "https://www.bdfutbol.com/en/t/t2014-151016.html",
@@ -1626,15 +1687,27 @@
         },
         "status": "2014_15_actual_league_stats_two_previous_season_historical_DRAFT_or_pending"
       },
-      "tierReview": "2014-15: 20 Bundesliga appearances, 17 starts, 1408 minutes, 2 goals. Provisional A+ among RB based on current role, contemporaneous impact and preceding two years where sources exist; not independently three-season fully verified.",
-      "assessmentRationale": "Current-year Bundesliga use 17 starts/20 appearances; personal contribution assessed without club table/title bonus. Independent two-earlier-season quality and matchwise main-position review pending.",
+      "tierReview": "17선발 중 중원 15회·수비 라인 2회. 2012-13 28선발, 2013-14 25선발의 지속성과 당해 중앙 전개·압박 회피 역할을 반영한다. 부상으로 당해 출전량이 제한되었으므로 A+는 잠정 유지.",
+      "assessmentRationale": "17선발 중 중원 15회·수비 라인 2회. 2012-13 28선발, 2013-14 25선발의 지속성과 당해 중앙 전개·압박 회피 역할을 반영한다. 부상으로 당해 출전량이 제한되었으므로 A+는 잠정 유지.",
       "verificationNeeded": [
         "independent_previous_two_years_appearance_start_minutes_goals_quality",
         "actual_2014_15_matchwise_main_position_frequency",
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "position": {
+          "from": "RB",
+          "to": "CM",
+          "reason": "17선발 중 중원 15회·수비 라인 2회. 2012-13 28선발, 2013-14 25선발의 지속성과 당해 중앙 전개·압박 회피 역할을 반영한다. 부상으로 당해 출전량이 제한되었으므로 A+는 잠정 유지.",
+          "sources": [
+            "https://datencenter.dfb.de/datencenter/bundesliga/2014-2015/3-spieltag/bayern-muenchen-vfb-stuttgart-2210814",
+            "https://datencenter.dfb.de/datencenter/bundesliga/2014-2015/6-spieltag/1-fc-koeln-bayern-muenchen-2210920"
+          ],
+          "verification": "audit report DFB formation and starting lineup counts; independent full match replay pending"
+        }
+      }
     },
     {
       "id": "bundesliga-2014-bayern-xabialonso",
@@ -1841,7 +1914,7 @@
       "goals2014": 5,
       "assists2014": null,
       "tier": "A",
-      "rank": 2,
+      "rank": 3,
       "rankStatus": "provisional",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -1929,9 +2002,9 @@
       "leagueStarts": 8,
       "leagueMinutes": 959,
       "goals2014": 2,
-      "assists2014": null,
+      "assists2014": 5,
       "tier": "B",
-      "rank": 11,
+      "rank": 12,
       "rankStatus": "provisional",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -1965,14 +2038,16 @@
             "verification": "prior_FootballArchive_DRAFT_not_independently_verified"
           },
           "2013-14": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Eintracht Frankfurt",
+            "appearances": 17,
+            "starts": 17,
+            "minutes": 1438,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2013-141010.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2013-141010.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2014-15": {
             "club": "FC Bayern München",
@@ -1980,7 +2055,7 @@
             "starts": 8,
             "minutes": 959,
             "goals": 2,
-            "assists": null,
+            "assists": 5,
             "source": "https://www.bdfutbol.com/en/t/t2014-151016.html",
             "verification": "BDFutbol_2014_15_Bundesliga_squad_stats_directly_read"
           }
@@ -1995,7 +2070,34 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "assists": [
+          {
+            "season": "2014-15",
+            "club": "FC Bayern München",
+            "value": 5,
+            "sources": [
+              "https://www.fussballtransfers.com/deutschland/bundesliga/2014-2015/vorlagengeber"
+            ],
+            "scope": "provider-specific league assists"
+          }
+        ],
+        "priorClubRecords": [
+          {
+            "season": "2013-14",
+            "club": "Eintracht Frankfurt",
+            "appearances": 17,
+            "starts": 17,
+            "minutes": 1438,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2013-141010.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-bayern-mariogotze",
@@ -2175,7 +2277,23 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "reviewPending": [
+          {
+            "section": "4선발 이하 후보 자격 재검토 (6행)",
+            "report": [
+              "CAM",
+              "backup",
+              "4",
+              "8"
+            ],
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151016.html"
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-bayern-franckribery",
@@ -2355,7 +2473,23 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "reviewPending": [
+          {
+            "section": "4선발 이하 후보 자격 재검토 (6행)",
+            "report": [
+              "LW",
+              "backup",
+              "3",
+              "9"
+            ],
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151016.html"
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-bayern-arjenrobben",
@@ -2379,7 +2513,7 @@
       "leagueStarts": 20,
       "leagueMinutes": 1678,
       "goals2014": 17,
-      "assists2014": null,
+      "assists2014": 7,
       "tier": "S",
       "rank": 1,
       "rankStatus": "provisional",
@@ -2410,22 +2544,26 @@
           "2012-13": {
             "club": "FC Bayern München",
             "appearances": 16,
-            "starts": null,
-            "minutes": null,
+            "starts": 11,
+            "minutes": 983,
             "goals": 5,
             "assists": null,
             "source": "https://www.rsssf.org/players/robbendata.html",
-            "verification": "RSSSF_independent_Bundesliga_year_appearances_goals_checked_other_metrics_not_independently_verified"
+            "verification": "RSSSF_independent_Bundesliga_year_appearances_goals_checked_other_metrics_not_independently_verified",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2012-131016.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2013-14": {
             "club": "FC Bayern München",
             "appearances": 28,
-            "starts": null,
-            "minutes": null,
+            "starts": 20,
+            "minutes": 1685,
             "goals": 11,
             "assists": null,
             "source": "https://www.rsssf.org/players/robbendata.html",
-            "verification": "RSSSF_independent_Bundesliga_year_appearances_goals_checked_other_metrics_not_independently_verified"
+            "verification": "RSSSF_independent_Bundesliga_year_appearances_goals_checked_other_metrics_not_independently_verified",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2013-141016.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2014-15": {
             "club": "FC Bayern München",
@@ -2433,7 +2571,7 @@
             "starts": 20,
             "minutes": 1678,
             "goals": 17,
-            "assists": null,
+            "assists": 7,
             "source": "https://www.bdfutbol.com/en/t/t2014-151016.html",
             "verification": "BDFutbol_2014_15_Bundesliga_squad_stats_directly_read"
           }
@@ -2448,7 +2586,42 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "assists": [
+          {
+            "season": "2014-15",
+            "club": "FC Bayern München",
+            "value": 7,
+            "sources": [
+              "https://www.fussballtransfers.com/deutschland/bundesliga/2014-2015/vorlagengeber"
+            ],
+            "scope": "provider-specific league assists"
+          }
+        ],
+        "priorClubRecords": [
+          {
+            "season": "2012-13",
+            "club": "Bayern München",
+            "starts": 11,
+            "minutes": 983,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2012-131016.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2013-14",
+            "club": "Bayern München",
+            "starts": 20,
+            "minutes": 1685,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2013-141016.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-bayern-thomasmuller",
@@ -2562,9 +2735,9 @@
       "leagueStarts": 8,
       "leagueMinutes": 777,
       "goals2014": 1,
-      "assists2014": null,
+      "assists2014": 4,
       "tier": "B-",
-      "rank": 11,
+      "rank": 12,
       "rankStatus": "provisional",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -2598,14 +2771,16 @@
             "verification": "evidence_pending"
           },
           "2013-14": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Bayern München",
+            "appearances": 3,
+            "starts": 2,
+            "minutes": 139,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2013-141016.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2013-141016.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2014-15": {
             "club": "FC Bayern München",
@@ -2613,7 +2788,7 @@
             "starts": 8,
             "minutes": 777,
             "goals": 1,
-            "assists": null,
+            "assists": 4,
             "source": "https://www.bdfutbol.com/en/t/t2014-151016.html",
             "verification": "BDFutbol_2014_15_Bundesliga_squad_stats_directly_read"
           }
@@ -2628,7 +2803,47 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "assists": [
+          {
+            "season": "2014-15",
+            "club": "FC Bayern München",
+            "value": 4,
+            "sources": [
+              "https://www.fussballtransfers.com/deutschland/bundesliga/2014-2015/vorlagengeber"
+            ],
+            "scope": "provider-specific league assists"
+          }
+        ],
+        "reviewPending": [
+          {
+            "section": "시즌 배정과 일반 프로필 위치 차이 (4행)",
+            "report": [
+              "RW",
+              "RB",
+              "8"
+            ],
+            "sources": [
+              "https://www.bdfutbol.com/en/j/j93418.html"
+            ]
+          }
+        ],
+        "priorClubRecords": [
+          {
+            "season": "2013-14",
+            "club": "Bayern München",
+            "appearances": 3,
+            "starts": 2,
+            "minutes": 139,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2013-141016.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-bayern-robertlewandowski",
@@ -2652,9 +2867,9 @@
       "leagueStarts": 28,
       "leagueMinutes": 2487,
       "goals2014": 17,
-      "assists2014": null,
+      "assists2014": 5,
       "tier": "A+",
-      "rank": 2,
+      "rank": 1,
       "rankStatus": "provisional",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -2707,7 +2922,7 @@
             "starts": 28,
             "minutes": 2487,
             "goals": 17,
-            "assists": null,
+            "assists": 5,
             "source": "https://www.bdfutbol.com/en/t/t2014-151016.html",
             "verification": "BDFutbol_2014_15_Bundesliga_squad_stats_directly_read"
           }
@@ -2718,15 +2933,44 @@
         ],
         "historicalRecencyWeightedAssessment20261107": "Dortmund 2012-13 31 Bundesliga games/24 goals; 2013-14 33/20; Bayern 2014-15 31/17. Three-season established individual scoring quality survives transfer, no trophy bonus."
       },
-      "tierReview": "2014-15: 31 Bundesliga appearances, 28 starts, 2487 minutes, 17 goals. Provisional A+ among ST based on current role, contemporaneous impact and preceding two years where sources exist; not independently three-season fully verified.",
-      "assessmentRationale": "Current-year Bundesliga use 28 starts/31 appearances; personal contribution assessed without club table/title bonus. Independent two-earlier-season quality and matchwise main-position review pending.",
+      "tierReview": "당해 레반도프스키 28선발 17골 5도움 대 오바메양 31선발 16골 6도움. 직접 공격 생산성이 비슷하므로 앞선 두 시즌 20·24골 대 13·19골의 지속성 및 중앙 공격수 역할을 반영해 레반도프스키 A+ 1위로 잠정 조정.",
+      "assessmentRationale": "당해 레반도프스키 28선발 17골 5도움 대 오바메양 31선발 16골 6도움. 직접 공격 생산성이 비슷하므로 앞선 두 시즌 20·24골 대 13·19골의 지속성 및 중앙 공격수 역할을 반영해 레반도프스키 A+ 1위로 잠정 조정.",
       "verificationNeeded": [
         "independent_previous_two_years_appearance_start_minutes_goals_quality",
         "actual_2014_15_matchwise_main_position_frequency",
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "assists": [
+          {
+            "season": "2014-15",
+            "club": "FC Bayern München",
+            "value": 5,
+            "sources": [
+              "https://www.fussballtransfers.com/deutschland/bundesliga/2014-2015/vorlagengeber"
+            ],
+            "scope": "provider-specific league assists"
+          }
+        ],
+        "reviewPending": [
+          {
+            "section": "Best XI와 동일 포지션 순위 불일치 (2행)",
+            "report": [
+              "피에르에메리크 오바메양 1위 (bundesliga-2014-dortmund-pierreemerickaubameyang)"
+            ],
+            "sources": []
+          }
+        ],
+        "xiReview": {
+          "previousSelection": "bundesliga-2014-bayern-robertlewandowski",
+          "selected": "bundesliga-2014-bayern-robertlewandowski",
+          "reason": "당해 레반도프스키 28선발 17골 5도움 대 오바메양 31선발 16골 6도움. 직접 공격 생산성이 비슷하므로 앞선 두 시즌 20·24골 대 13·19골의 지속성 및 중앙 공격수 역할을 반영해 레반도프스키 A+ 1위로 잠정 조정.",
+          "status": "proposed_unapproved",
+          "method": "current-season and previous two-season stats; qualitative caveats retained"
+        }
+      }
     },
     {
       "id": "bundesliga-2014-bayern-claudiopizarro",
@@ -2816,7 +3060,23 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "reviewPending": [
+          {
+            "section": "4선발 이하 후보 자격 재검토 (6행)",
+            "report": [
+              "ST",
+              "backup",
+              "2",
+              "13"
+            ],
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151016.html"
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-wolfsburg-diegobenaglio",
@@ -2839,7 +3099,7 @@
       "leagueAppearances": 31,
       "leagueStarts": 31,
       "leagueMinutes": 2790,
-      "goals2014": null,
+      "goals2014": 0,
       "assists2014": null,
       "tier": "A-",
       "rank": 4,
@@ -2866,14 +3126,17 @@
         "weighting": "2014-15 highest; 2013-14 second; 2012-13 least; club trophy/league rank no player bonus",
         "records": {
           "2012-13": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
+            "club": "Wolfsburg",
+            "appearances": 34,
+            "starts": 34,
+            "minutes": 3060,
             "goals": null,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2012-131001.html",
+            "verification": "evidence_pending",
+            "goalsConceded": 52,
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2012-131001.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2013-14": {
             "club": "VfL Wolfsburg",
@@ -2883,17 +3146,21 @@
             "goals": null,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2013-141001.html",
-            "verification": "prior_FootballArchive_DRAFT_not_independently_verified"
+            "verification": "prior_FootballArchive_DRAFT_not_independently_verified",
+            "goalsConceded": 43,
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2013-141001.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2014-15": {
             "club": "VfL Wolfsburg",
             "appearances": 31,
             "starts": 31,
             "minutes": 2790,
-            "goals": null,
+            "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2014-151001.html",
-            "verification": "BDFutbol_2014_15_Bundesliga_squad_stats_directly_read"
+            "verification": "BDFutbol_2014_15_Bundesliga_squad_stats_directly_read",
+            "goalsConceded": 32
           }
         },
         "status": "2014_15_actual_league_stats_two_previous_season_historical_DRAFT_or_pending"
@@ -2906,7 +3173,45 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "leagueGoalsConceded": 32,
+      "segment2Audit": {
+        "goalkeeper": [
+          {
+            "season": "2014-15",
+            "club": "VfL Wolfsburg",
+            "goals": 0,
+            "goalsConceded": 32,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151001.html",
+              "https://www.historical-lineups.com/wp-content/uploads/2024/07/Bundesliga-Player-Guide-1963-2023.pdf"
+            ]
+          }
+        ],
+        "priorClubRecords": [
+          {
+            "season": "2012-13",
+            "club": "Wolfsburg",
+            "appearances": 34,
+            "starts": 34,
+            "minutes": 3060,
+            "goalsConceded": 52,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2012-131001.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2013-14",
+            "club": "Wolfsburg",
+            "goalsConceded": 43,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2013-141001.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-wolfsburg-maxgrun",
@@ -2929,7 +3234,7 @@
       "leagueAppearances": 3,
       "leagueStarts": 3,
       "leagueMinutes": 270,
-      "goals2014": null,
+      "goals2014": 0,
       "assists2014": null,
       "tier": "C+",
       "rank": 12,
@@ -2956,14 +3261,17 @@
         "weighting": "2014-15 highest; 2013-14 second; 2012-13 least; club trophy/league rank no player bonus",
         "records": {
           "2012-13": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
+            "club": "Greuther Fürth",
+            "appearances": 17,
+            "starts": 17,
+            "minutes": 1530,
             "goals": null,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2012-131030.html",
+            "verification": "evidence_pending",
+            "goalsConceded": 33,
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2012-131030.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2013-14": {
             "club": "VfL Wolfsburg",
@@ -2973,17 +3281,21 @@
             "goals": null,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2013-141001.html",
-            "verification": "prior_FootballArchive_DRAFT_not_independently_verified"
+            "verification": "prior_FootballArchive_DRAFT_not_independently_verified",
+            "goalsConceded": 7,
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2013-141001.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2014-15": {
             "club": "VfL Wolfsburg",
             "appearances": 3,
             "starts": 3,
             "minutes": 270,
-            "goals": null,
+            "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2014-151001.html",
-            "verification": "BDFutbol_2014_15_Bundesliga_squad_stats_directly_read"
+            "verification": "BDFutbol_2014_15_Bundesliga_squad_stats_directly_read",
+            "goalsConceded": 6
           }
         },
         "status": "2014_15_actual_league_stats_two_previous_season_historical_DRAFT_or_pending"
@@ -2996,7 +3308,45 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "leagueGoalsConceded": 6,
+      "segment2Audit": {
+        "goalkeeper": [
+          {
+            "season": "2014-15",
+            "club": "VfL Wolfsburg",
+            "goals": 0,
+            "goalsConceded": 6,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151001.html",
+              "https://www.historical-lineups.com/wp-content/uploads/2024/07/Bundesliga-Player-Guide-1963-2023.pdf"
+            ]
+          }
+        ],
+        "priorClubRecords": [
+          {
+            "season": "2012-13",
+            "club": "Greuther Fürth",
+            "appearances": 17,
+            "starts": 17,
+            "minutes": 1530,
+            "goalsConceded": 33,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2012-131030.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2013-14",
+            "club": "Wolfsburg",
+            "goalsConceded": 7,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2013-141001.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-wolfsburg-naldo",
@@ -3050,12 +3400,14 @@
           "2012-13": {
             "club": "VfL Wolfsburg",
             "appearances": 31,
-            "starts": null,
-            "minutes": null,
+            "starts": 31,
+            "minutes": 2708,
             "goals": 6,
             "assists": null,
             "source": "https://datencenter.dfb.de/en/data-center/people/naldo/player",
-            "verification": "DFB_official_2012_13_31_Bundesliga_appearances_6_goals_independently_checked_other_fields_pending"
+            "verification": "DFB_official_2012_13_31_Bundesliga_appearances_6_goals_independently_checked_other_fields_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2012-131001.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2013-14": {
             "club": "VfL Wolfsburg",
@@ -3093,7 +3445,21 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2012-13",
+            "club": "Wolfsburg",
+            "starts": 31,
+            "minutes": 2708,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2012-131001.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-wolfsburg-robinknoche",
@@ -3143,14 +3509,16 @@
         "weighting": "2014-15 highest; 2013-14 second; 2012-13 least; club trophy/league rank no player bonus",
         "records": {
           "2012-13": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Wolfsburg",
+            "appearances": 11,
+            "starts": 8,
+            "minutes": 792,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2012-131001.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2012-131001.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2013-14": {
             "club": "VfL Wolfsburg",
@@ -3183,7 +3551,23 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2012-13",
+            "club": "Wolfsburg",
+            "appearances": 11,
+            "starts": 8,
+            "minutes": 792,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2012-131001.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-wolfsburg-timmklose",
@@ -3233,14 +3617,16 @@
         "weighting": "2014-15 highest; 2013-14 second; 2012-13 least; club trophy/league rank no player bonus",
         "records": {
           "2012-13": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Nürnberg",
+            "appearances": 32,
+            "starts": 32,
+            "minutes": 2800,
+            "goals": 2,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2012-131005.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2012-131005.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2013-14": {
             "club": "VfL Wolfsburg",
@@ -3273,7 +3659,23 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2012-13",
+            "club": "Nürnberg",
+            "appearances": 32,
+            "starts": 32,
+            "minutes": 2800,
+            "goals": 2,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2012-131005.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-wolfsburg-ricardorodriguez",
@@ -3326,12 +3728,14 @@
           "2012-13": {
             "club": "VfL Wolfsburg",
             "appearances": 24,
-            "starts": null,
-            "minutes": null,
+            "starts": 19,
+            "minutes": 1709,
             "goals": 0,
             "assists": null,
             "source": "https://datencenter.dfb.de/datencenter/personen/ricardo-rodriguez/spieler",
-            "verification": "DFB_official_2012_13_24_Bundesliga_appearances_0_goals_independently_checked_other_fields_pending"
+            "verification": "DFB_official_2012_13_24_Bundesliga_appearances_0_goals_independently_checked_other_fields_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2012-131001.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2013-14": {
             "club": "VfL Wolfsburg",
@@ -3369,7 +3773,21 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2012-13",
+            "club": "Wolfsburg",
+            "starts": 19,
+            "minutes": 1709,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2012-131001.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-wolfsburg-marcelschafer",
@@ -3419,14 +3837,16 @@
         "weighting": "2014-15 highest; 2013-14 second; 2012-13 least; club trophy/league rank no player bonus",
         "records": {
           "2012-13": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Wolfsburg",
+            "appearances": 31,
+            "starts": 22,
+            "minutes": 1993,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2012-131001.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2012-131001.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2013-14": {
             "club": "VfL Wolfsburg",
@@ -3459,7 +3879,23 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2012-13",
+            "club": "Wolfsburg",
+            "appearances": 31,
+            "starts": 22,
+            "minutes": 1993,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2012-131001.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-wolfsburg-vieirinha",
@@ -3474,18 +3910,18 @@
       "born": "1986-01-24",
       "birthSource": "https://datencenter.dfb.de/bundesliga/2014-2015/mannschaft/vfl-wolfsburg",
       "birthVerification": "DFB_official_2014_15_squad_entry_date_source_linked_not_independent_two_source_recheck",
-      "position": "RB",
-      "originalTacticalRole": "RB",
-      "positionVerification": "2014-15 season right back after winger-to-fullback conversion; VDV XI RB; separate winger historical use not applied retrospectively",
+      "position": "RW",
+      "originalTacticalRole": "right attacking midfield / right-back",
+      "positionVerification": "segment2_report_DFB_starting_lineup_count_provisional_in_match_movement_pending",
       "role": "starter",
       "roleVerification": "BDFutbol Bundesliga 2014-15: 31 league appearances, 25 starts, 2308 minutes",
       "leagueAppearances": 31,
       "leagueStarts": 25,
       "leagueMinutes": 2308,
       "goals2014": 1,
-      "assists2014": null,
+      "assists2014": 5,
       "tier": "A-",
-      "rank": 2,
+      "rank": 5,
       "rankStatus": "provisional",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -3493,7 +3929,9 @@
       "sources": [
         "https://www.bdfutbol.com/en/t/t2014-151001.html",
         "https://datencenter.dfb.de/bundesliga/2014-2015/mannschaft/vfl-wolfsburg",
-        "https://www.spielergewerkschaft.de/de/vdv11/archiv/120/VDV%2011%2020142015%20De%20Bruyne%20San%20und%20Favre%20auf%20dem%20Thron.htm"
+        "https://www.spielergewerkschaft.de/de/vdv11/archiv/120/VDV%2011%2020142015%20De%20Bruyne%20San%20und%20Favre%20auf%20dem%20Thron.htm",
+        "https://datencenter.dfb.de/datencenter/bundesliga/2014-2015/13-spieltag/vfl-wolfsburg-borussia-moenchengladbach-2211105",
+        "https://datencenter.dfb.de/datencenter/bundesliga/2014-2015/9-spieltag/vfl-wolfsburg-1-fsv-mainz-05-2210996"
       ],
       "evidence": {
         "currentSeason": "https://www.bdfutbol.com/en/t/t2014-151001.html",
@@ -3510,14 +3948,16 @@
         "weighting": "2014-15 highest; 2013-14 second; 2012-13 least; club trophy/league rank no player bonus",
         "records": {
           "2012-13": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Wolfsburg",
+            "appearances": 27,
+            "starts": 22,
+            "minutes": 1970,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2012-131001.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2012-131001.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2013-14": {
             "club": "VfL Wolfsburg",
@@ -3535,22 +3975,68 @@
             "starts": 25,
             "minutes": 2308,
             "goals": 1,
-            "assists": null,
+            "assists": 5,
             "source": "https://www.bdfutbol.com/en/t/t2014-151001.html",
             "verification": "BDFutbol_2014_15_Bundesliga_squad_stats_directly_read"
           }
         },
         "status": "2014_15_actual_league_stats_two_previous_season_historical_DRAFT_or_pending"
       },
-      "tierReview": "2014-15: 31 Bundesliga appearances, 25 starts, 2308 minutes, 1 goals. Provisional A- among RB based on current role, contemporaneous impact and preceding two years where sources exist; not independently three-season fully verified.",
-      "assessmentRationale": "Current-year Bundesliga use 25 starts/31 appearances; personal contribution assessed without club table/title bonus. Independent two-earlier-season quality and matchwise main-position review pending.",
+      "tierReview": "25선발 중 우측 공격 미드필드 14회, 수비 라인 11회. 우측 전진 역할을 주 포지션으로 잠정 재분류하되 경기 중 위치 이동·교체 기용은 미검증. 31경기 25선발 1골 5도움과 이전 22·7선발을 고려해 A- 유지.",
+      "assessmentRationale": "25선발 중 우측 공격 미드필드 14회, 수비 라인 11회. 우측 전진 역할을 주 포지션으로 잠정 재분류하되 경기 중 위치 이동·교체 기용은 미검증. 31경기 25선발 1골 5도움과 이전 22·7선발을 고려해 A- 유지.",
       "verificationNeeded": [
         "independent_previous_two_years_appearance_start_minutes_goals_quality",
         "actual_2014_15_matchwise_main_position_frequency",
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "assists": [
+          {
+            "season": "2014-15",
+            "club": "VfL Wolfsburg",
+            "value": 5,
+            "sources": [
+              "https://www.fussballtransfers.com/deutschland/bundesliga/2014-2015/vorlagengeber"
+            ],
+            "scope": "provider-specific league assists"
+          }
+        ],
+        "reviewPending": [
+          {
+            "section": "Best XI와 동일 포지션 순위 불일치 (2행)",
+            "report": [
+              "필리프 람 1위 (bundesliga-2014-bayern-philipplahm)"
+            ],
+            "sources": []
+          }
+        ],
+        "priorClubRecords": [
+          {
+            "season": "2012-13",
+            "club": "Wolfsburg",
+            "appearances": 27,
+            "starts": 22,
+            "minutes": 1970,
+            "goals": 1,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2012-131001.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ],
+        "position": {
+          "from": "RB",
+          "to": "RW",
+          "reason": "25선발 중 우측 공격 미드필드 14회, 수비 라인 11회. 우측 전진 역할을 주 포지션으로 잠정 재분류하되 경기 중 위치 이동·교체 기용은 미검증. 31경기 25선발 1골 5도움과 이전 22·7선발을 고려해 A- 유지.",
+          "sources": [
+            "https://datencenter.dfb.de/datencenter/bundesliga/2014-2015/13-spieltag/vfl-wolfsburg-borussia-moenchengladbach-2211105",
+            "https://datencenter.dfb.de/datencenter/bundesliga/2014-2015/9-spieltag/vfl-wolfsburg-1-fsv-mainz-05-2210996"
+          ],
+          "verification": "audit report DFB formation and starting lineup counts; independent full match replay pending"
+        }
+      }
     },
     {
       "id": "bundesliga-2014-wolfsburg-sebastianjung",
@@ -3576,7 +4062,7 @@
       "goals2014": 0,
       "assists2014": null,
       "tier": "B",
-      "rank": 10,
+      "rank": 8,
       "rankStatus": "provisional",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -3610,14 +4096,16 @@
             "verification": "prior_FootballArchive_DRAFT_not_independently_verified"
           },
           "2013-14": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Eintracht Frankfurt",
+            "appearances": 30,
+            "starts": 30,
+            "minutes": 2692,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2013-141010.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2013-141010.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2014-15": {
             "club": "VfL Wolfsburg",
@@ -3640,7 +4128,23 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2013-14",
+            "club": "Eintracht Frankfurt",
+            "appearances": 30,
+            "starts": 30,
+            "minutes": 2692,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2013-141010.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-wolfsburg-christiantrasch",
@@ -3666,7 +4170,7 @@
       "goals2014": 0,
       "assists2014": null,
       "tier": "B-",
-      "rank": 13,
+      "rank": 11,
       "rankStatus": "provisional",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -3690,14 +4194,16 @@
         "weighting": "2014-15 highest; 2013-14 second; 2012-13 least; club trophy/league rank no player bonus",
         "records": {
           "2012-13": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Wolfsburg",
+            "appearances": 17,
+            "starts": 11,
+            "minutes": 957,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2012-131001.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2012-131001.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2013-14": {
             "club": "VfL Wolfsburg",
@@ -3730,7 +4236,23 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2012-13",
+            "club": "Wolfsburg",
+            "appearances": 17,
+            "starts": 11,
+            "minutes": 957,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2012-131001.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-wolfsburg-luizgustavo",
@@ -3936,7 +4458,7 @@
       "goals2014": 4,
       "assists2014": null,
       "tier": "B+",
-      "rank": 9,
+      "rank": 10,
       "rankStatus": "provisional",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -3960,14 +4482,16 @@
         "weighting": "2014-15 highest; 2013-14 second; 2012-13 least; club trophy/league rank no player bonus",
         "records": {
           "2012-13": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Wolfsburg",
+            "appearances": 6,
+            "starts": 5,
+            "minutes": 405,
+            "goals": 3,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2012-131001.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2012-131001.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2013-14": {
             "club": "VfL Wolfsburg",
@@ -4000,7 +4524,23 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2012-13",
+            "club": "Wolfsburg",
+            "appearances": 6,
+            "starts": 5,
+            "minutes": 405,
+            "goals": 3,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2012-131001.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-wolfsburg-juniormalanda",
@@ -4026,7 +4566,7 @@
       "goals2014": 0,
       "assists2014": null,
       "tier": "B-",
-      "rank": 13,
+      "rank": 14,
       "rankStatus": "provisional",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -4060,14 +4600,16 @@
             "verification": "evidence_pending"
           },
           "2013-14": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Wolfsburg",
+            "appearances": 7,
+            "starts": 5,
+            "minutes": 401,
+            "goals": 2,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2013-141001.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2013-141001.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2014-15": {
             "club": "VfL Wolfsburg",
@@ -4090,7 +4632,37 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "reviewPending": [
+          {
+            "section": "4선발 이하 후보 자격 재검토 (6행)",
+            "report": [
+              "CM",
+              "backup",
+              "4",
+              "10"
+            ],
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151001.html"
+            ]
+          }
+        ],
+        "priorClubRecords": [
+          {
+            "season": "2013-14",
+            "club": "Wolfsburg",
+            "appearances": 7,
+            "starts": 5,
+            "minutes": 401,
+            "goals": 2,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2013-141001.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-wolfsburg-kevindebruyne",
@@ -4150,18 +4722,20 @@
           "2012-13": {
             "club": "SV Werder Bremen",
             "appearances": 33,
-            "starts": null,
+            "starts": 33,
             "minutes": 2966,
             "goals": 10,
             "assists": 9,
             "source": "https://datencenter.dfb.de/en/data-center/people/kevin-de-bruyne/player",
             "verification": "individual_DFB_Bundesliga_apps_goals_and_Opta_minutes_assists_directly_checked",
-            "supplementarySource": "https://theanalyst.com/players/4141/kevin-de-bruyne/career"
+            "supplementarySource": "https://theanalyst.com/players/4141/kevin-de-bruyne/career",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2012-131009.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2013-14": {
             "club": "VfL Wolfsburg",
             "appearances": 16,
-            "starts": null,
+            "starts": 16,
             "minutes": 1419,
             "goals": 3,
             "assists": 6,
@@ -4177,7 +4751,9 @@
               "assists": 1,
               "source": "https://theanalyst.com/players/4141/kevin-de-bruyne/career",
               "verification": "Opta_2013_14_England_3_league_matches"
-            }
+            },
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2013-141001.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2014-15": {
             "club": "VfL Wolfsburg",
@@ -4201,7 +4777,29 @@
         "contemporary_individual_performance_metrics_and_tier_peer_review",
         "three_season_qualitative_creative_comparison_and_matchwise_primary_position"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2012-13",
+            "club": "Werder Bremen",
+            "starts": 33,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2012-131009.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2013-14",
+            "club": "Wolfsburg",
+            "starts": 16,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2013-141001.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-wolfsburg-aaronhunt",
@@ -4251,24 +4849,28 @@
         "weighting": "2014-15 highest; 2013-14 second; 2012-13 least; club trophy/league rank no player bonus",
         "records": {
           "2012-13": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Werder Bremen",
+            "appearances": 28,
+            "starts": 26,
+            "minutes": 2344,
+            "goals": 11,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2012-131009.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2012-131009.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2013-14": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Werder Bremen",
+            "appearances": 31,
+            "starts": 31,
+            "minutes": 2676,
+            "goals": 7,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2013-141009.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2013-141009.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2014-15": {
             "club": "VfL Wolfsburg",
@@ -4291,7 +4893,49 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "reviewPending": [
+          {
+            "section": "4선발 이하 후보 자격 재검토 (6행)",
+            "report": [
+              "CAM",
+              "backup",
+              "3",
+              "15"
+            ],
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151001.html"
+            ]
+          }
+        ],
+        "priorClubRecords": [
+          {
+            "season": "2012-13",
+            "club": "Werder Bremen",
+            "appearances": 28,
+            "starts": 26,
+            "minutes": 2344,
+            "goals": 11,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2012-131009.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2013-14",
+            "club": "Werder Bremen",
+            "appearances": 31,
+            "starts": 31,
+            "minutes": 2676,
+            "goals": 7,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2013-141009.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-wolfsburg-ivanperisic",
@@ -4381,7 +5025,35 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2012-13",
+            "club": "Wolfsburg",
+            "appearances": 11,
+            "starts": 7,
+            "minutes": 543,
+            "goals": 2,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2012-131001.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2012-13",
+            "club": "Borussia Dortmund",
+            "appearances": 14,
+            "starts": 5,
+            "minutes": 505,
+            "goals": 2,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2012-131003.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-wolfsburg-andreschurrle",
@@ -4497,7 +5169,7 @@
       "goals2014": 7,
       "assists2014": null,
       "tier": "B+",
-      "rank": 6,
+      "rank": 7,
       "rankStatus": "provisional",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -4611,14 +5283,16 @@
         "weighting": "2014-15 highest; 2013-14 second; 2012-13 least; club trophy/league rank no player bonus",
         "records": {
           "2012-13": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Wolfsburg",
+            "appearances": 28,
+            "starts": 20,
+            "minutes": 1990,
+            "goals": 8,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2012-131001.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2012-131001.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2013-14": {
             "club": "VfL Wolfsburg",
@@ -4651,7 +5325,23 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2012-13",
+            "club": "Wolfsburg",
+            "appearances": 28,
+            "starts": 20,
+            "minutes": 1990,
+            "goals": 8,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2012-131001.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-wolfsburg-ivicaolic",
@@ -4701,14 +5391,16 @@
         "weighting": "2014-15 highest; 2013-14 second; 2012-13 least; club trophy/league rank no player bonus",
         "records": {
           "2012-13": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Wolfsburg",
+            "appearances": 32,
+            "starts": 28,
+            "minutes": 2425,
+            "goals": 9,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2012-131001.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2012-131001.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2013-14": {
             "club": "VfL Wolfsburg",
@@ -4741,7 +5433,23 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2012-13",
+            "club": "Wolfsburg",
+            "appearances": 32,
+            "starts": 28,
+            "minutes": 2425,
+            "goals": 9,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2012-131001.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-wolfsburg-nicklasbendtner",
@@ -4854,7 +5562,7 @@
       "leagueAppearances": 34,
       "leagueStarts": 34,
       "leagueMinutes": 3060,
-      "goals2014": null,
+      "goals2014": 0,
       "assists2014": null,
       "tier": "A+",
       "rank": 2,
@@ -4906,10 +5614,11 @@
             "appearances": 34,
             "starts": 34,
             "minutes": 3060,
-            "goals": null,
+            "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2014-151018.html",
-            "verification": "BDFutbol_2014_15_Bundesliga_squad_stats_directly_read"
+            "verification": "BDFutbol_2014_15_Bundesliga_squad_stats_directly_read",
+            "goalsConceded": 26
           }
         },
         "status": "2014_15_actual_league_stats_two_previous_season_historical_DRAFT_or_pending",
@@ -4926,7 +5635,22 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "leagueGoalsConceded": 26,
+      "segment2Audit": {
+        "goalkeeper": [
+          {
+            "season": "2014-15",
+            "club": "VfL Borussia Mönchengladbach",
+            "goals": 0,
+            "goalsConceded": 26,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151018.html",
+              "https://www.historical-lineups.com/wp-content/uploads/2024/07/Bundesliga-Player-Guide-1963-2023.pdf"
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-gladbach-tonyjantschke",
@@ -4976,14 +5700,16 @@
         "weighting": "2014-15 highest; 2013-14 second; 2012-13 least; club trophy/league rank no player bonus",
         "records": {
           "2012-13": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Borussia Mönchengladbach",
+            "appearances": 31,
+            "starts": 31,
+            "minutes": 2733,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2012-131018.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2012-131018.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2013-14": {
             "club": "VfL Borussia Mönchengladbach",
@@ -5016,7 +5742,23 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2012-13",
+            "club": "Borussia Mönchengladbach",
+            "appearances": 31,
+            "starts": 31,
+            "minutes": 2733,
+            "goals": 1,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2012-131018.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-gladbach-alvarodominguez",
@@ -5066,14 +5808,16 @@
         "weighting": "2014-15 highest; 2013-14 second; 2012-13 least; club trophy/league rank no player bonus",
         "records": {
           "2012-13": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Borussia Mönchengladbach",
+            "appearances": 30,
+            "starts": 30,
+            "minutes": 2700,
+            "goals": 2,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2012-131018.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2012-131018.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2013-14": {
             "club": "VfL Borussia Mönchengladbach",
@@ -5106,7 +5850,23 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2012-13",
+            "club": "Borussia Mönchengladbach",
+            "appearances": 30,
+            "starts": 30,
+            "minutes": 2700,
+            "goals": 2,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2012-131018.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-gladbach-martinstranzl",
@@ -5156,14 +5916,16 @@
         "weighting": "2014-15 highest; 2013-14 second; 2012-13 least; club trophy/league rank no player bonus",
         "records": {
           "2012-13": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Borussia Mönchengladbach",
+            "appearances": 26,
+            "starts": 26,
+            "minutes": 2274,
+            "goals": 5,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2012-131018.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2012-131018.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2013-14": {
             "club": "VfL Borussia Mönchengladbach",
@@ -5196,7 +5958,23 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2012-13",
+            "club": "Borussia Mönchengladbach",
+            "appearances": 26,
+            "starts": 26,
+            "minutes": 2274,
+            "goals": 5,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2012-131018.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-gladbach-roelbrouwers",
@@ -5246,14 +6024,16 @@
         "weighting": "2014-15 highest; 2013-14 second; 2012-13 least; club trophy/league rank no player bonus",
         "records": {
           "2012-13": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Borussia Mönchengladbach",
+            "appearances": 21,
+            "starts": 15,
+            "minutes": 1427,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2012-131018.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2012-131018.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2013-14": {
             "club": "VfL Borussia Mönchengladbach",
@@ -5286,7 +6066,23 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2012-13",
+            "club": "Borussia Mönchengladbach",
+            "appearances": 21,
+            "starts": 15,
+            "minutes": 1427,
+            "goals": 1,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2012-131018.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-gladbach-oscarwendt",
@@ -5336,14 +6132,16 @@
         "weighting": "2014-15 highest; 2013-14 second; 2012-13 least; club trophy/league rank no player bonus",
         "records": {
           "2012-13": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Borussia Mönchengladbach",
+            "appearances": 21,
+            "starts": 21,
+            "minutes": 1873,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2012-131018.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2012-131018.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2013-14": {
             "club": "VfL Borussia Mönchengladbach",
@@ -5376,7 +6174,23 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2012-13",
+            "club": "Borussia Mönchengladbach",
+            "appearances": 21,
+            "starts": 21,
+            "minutes": 1873,
+            "goals": 1,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2012-131018.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-gladbach-juliankorb",
@@ -5402,7 +6216,7 @@
       "goals2014": 0,
       "assists2014": null,
       "tier": "B+",
-      "rank": 6,
+      "rank": 4,
       "rankStatus": "provisional",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -5606,14 +6420,16 @@
         "weighting": "2014-15 highest; 2013-14 second; 2012-13 least; club trophy/league rank no player bonus",
         "records": {
           "2012-13": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Borussia Mönchengladbach",
+            "appearances": 31,
+            "starts": 30,
+            "minutes": 2575,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2012-131018.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2012-131018.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2013-14": {
             "club": "VfL Borussia Mönchengladbach",
@@ -5646,7 +6462,23 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2012-13",
+            "club": "Borussia Mönchengladbach",
+            "appearances": 31,
+            "starts": 30,
+            "minutes": 2575,
+            "goals": 1,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2012-131018.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-gladbach-granitxhaka",
@@ -5672,7 +6504,7 @@
       "goals2014": 2,
       "assists2014": null,
       "tier": "A",
-      "rank": 1,
+      "rank": 2,
       "rankStatus": "provisional",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -5697,14 +6529,16 @@
         "weighting": "2014-15 highest; 2013-14 second; 2012-13 least; club trophy/league rank no player bonus",
         "records": {
           "2012-13": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Borussia Mönchengladbach",
+            "appearances": 22,
+            "starts": 15,
+            "minutes": 1473,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2012-131018.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2012-131018.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2013-14": {
             "club": "VfL Borussia Mönchengladbach",
@@ -5737,7 +6571,23 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2012-13",
+            "club": "Borussia Mönchengladbach",
+            "appearances": 22,
+            "starts": 15,
+            "minutes": 1473,
+            "goals": 1,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2012-131018.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-gladbach-thorganhazard",
@@ -5761,7 +6611,7 @@
       "leagueStarts": 7,
       "leagueMinutes": 907,
       "goals2014": 1,
-      "assists2014": null,
+      "assists2014": 7,
       "tier": "B+",
       "rank": 7,
       "rankStatus": "provisional",
@@ -5812,7 +6662,7 @@
             "starts": 7,
             "minutes": 907,
             "goals": 1,
-            "assists": null,
+            "assists": 7,
             "source": "https://www.bdfutbol.com/en/t/t2014-151018.html",
             "verification": "BDFutbol_2014_15_Bundesliga_squad_stats_directly_read"
           }
@@ -5827,7 +6677,20 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "assists": [
+          {
+            "season": "2014-15",
+            "club": "VfL Borussia Mönchengladbach",
+            "value": 7,
+            "sources": [
+              "https://www.fussballtransfers.com/deutschland/bundesliga/2014-2015/vorlagengeber"
+            ],
+            "scope": "provider-specific league assists"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-gladbach-fabianjohnson",
@@ -5877,24 +6740,28 @@
         "weighting": "2014-15 highest; 2013-14 second; 2012-13 least; club trophy/league rank no player bonus",
         "records": {
           "2012-13": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hoffenheim",
+            "appearances": 31,
+            "starts": 30,
+            "minutes": 2677,
+            "goals": 3,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2012-131015.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2012-131015.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2013-14": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hoffenheim",
+            "appearances": 27,
+            "starts": 23,
+            "minutes": 2068,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2013-141015.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2013-141015.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2014-15": {
             "club": "VfL Borussia Mönchengladbach",
@@ -5917,7 +6784,35 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2012-13",
+            "club": "Hoffenheim",
+            "appearances": 31,
+            "starts": 30,
+            "minutes": 2677,
+            "goals": 3,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2012-131015.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2013-14",
+            "club": "Hoffenheim",
+            "appearances": 27,
+            "starts": 23,
+            "minutes": 2068,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2013-141015.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-gladbach-ibrahimatraore",
@@ -5977,14 +6872,16 @@
             "verification": "prior_FootballArchive_DRAFT_not_independently_verified"
           },
           "2013-14": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Stuttgart",
+            "appearances": 31,
+            "starts": 20,
+            "minutes": 1866,
+            "goals": 2,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2013-141002.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2013-141002.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2014-15": {
             "club": "VfL Borussia Mönchengladbach",
@@ -6007,7 +6904,23 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2013-14",
+            "club": "Stuttgart",
+            "appearances": 31,
+            "starts": 20,
+            "minutes": 1866,
+            "goals": 2,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2013-141002.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-gladbach-patrickherrmann",
@@ -6057,14 +6970,16 @@
         "weighting": "2014-15 highest; 2013-14 second; 2012-13 least; club trophy/league rank no player bonus",
         "records": {
           "2012-13": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Borussia Mönchengladbach",
+            "appearances": 32,
+            "starts": 30,
+            "minutes": 2498,
+            "goals": 6,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2012-131018.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2012-131018.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2013-14": {
             "club": "VfL Borussia Mönchengladbach",
@@ -6097,7 +7012,37 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "sourceConflicts": [
+          {
+            "section": "생년월일 출처 차이 (2행)",
+            "report": [
+              "1991-02-12",
+              "1988-03-16",
+              "DFB와 기존값 일치. 동명이인 구분."
+            ],
+            "sources": [
+              "https://datencenter.dfb.de/datencenter/personen/patrick-herrmann/spieler"
+            ],
+            "decision": "retain existing value pending match-level adjudication; not an automatic overwrite"
+          }
+        ],
+        "priorClubRecords": [
+          {
+            "season": "2012-13",
+            "club": "Borussia Mönchengladbach",
+            "appearances": 32,
+            "starts": 30,
+            "minutes": 2498,
+            "goals": 6,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2012-131018.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-gladbach-andrehahn",
@@ -6123,7 +7068,7 @@
       "goals2014": 3,
       "assists2014": null,
       "tier": "B",
-      "rank": 8,
+      "rank": 9,
       "rankStatus": "provisional",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -6147,24 +7092,28 @@
         "weighting": "2014-15 highest; 2013-14 second; 2012-13 least; club trophy/league rank no player bonus",
         "records": {
           "2012-13": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Augsburg",
+            "appearances": 16,
+            "starts": 12,
+            "minutes": 1112,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2012-131029.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2012-131029.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2013-14": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Augsburg",
+            "appearances": 32,
+            "starts": 30,
+            "minutes": 2736,
+            "goals": 12,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2013-141029.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2013-141029.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2014-15": {
             "club": "VfL Borussia Mönchengladbach",
@@ -6187,7 +7136,35 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2012-13",
+            "club": "Augsburg",
+            "appearances": 16,
+            "starts": 12,
+            "minutes": 1112,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2012-131029.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2013-14",
+            "club": "Augsburg",
+            "appearances": 32,
+            "starts": 30,
+            "minutes": 2736,
+            "goals": 12,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2013-141029.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-gladbach-maxkruse",
@@ -6211,7 +7188,7 @@
       "leagueStarts": 29,
       "leagueMinutes": 2587,
       "goals2014": 11,
-      "assists2014": null,
+      "assists2014": 9,
       "tier": "A",
       "rank": 3,
       "rankStatus": "provisional",
@@ -6262,7 +7239,7 @@
             "starts": 29,
             "minutes": 2587,
             "goals": 11,
-            "assists": null,
+            "assists": 9,
             "source": "https://www.bdfutbol.com/en/t/t2014-151018.html",
             "verification": "BDFutbol_2014_15_Bundesliga_squad_stats_directly_read"
           }
@@ -6277,7 +7254,20 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "assists": [
+          {
+            "season": "2014-15",
+            "club": "VfL Borussia Mönchengladbach",
+            "value": 9,
+            "sources": [
+              "https://www.fussballtransfers.com/deutschland/bundesliga/2014-2015/vorlagengeber"
+            ],
+            "scope": "provider-specific league assists"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-gladbach-raffael",
@@ -6417,14 +7407,16 @@
         "weighting": "2014-15 highest; 2013-14 second; 2012-13 least; club trophy/league rank no player bonus",
         "records": {
           "2012-13": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Borussia Mönchengladbach",
+            "appearances": 13,
+            "starts": 2,
+            "minutes": 368,
+            "goals": 3,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2012-131018.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2012-131018.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2013-14": {
             "club": "VfL Borussia Mönchengladbach",
@@ -6457,7 +7449,23 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2012-13",
+            "club": "Borussia Mönchengladbach",
+            "appearances": 13,
+            "starts": 2,
+            "minutes": 368,
+            "goals": 3,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2012-131018.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-leverkusen-berndleno",
@@ -6480,7 +7488,7 @@
       "leagueAppearances": 34,
       "leagueStarts": 34,
       "leagueMinutes": 3060,
-      "goals2014": null,
+      "goals2014": 0,
       "assists2014": null,
       "tier": "A-",
       "rank": 3,
@@ -6531,10 +7539,11 @@
             "appearances": 34,
             "starts": 34,
             "minutes": 3060,
-            "goals": null,
+            "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2014-151014.html",
-            "verification": "BDFutbol_2014_15_Bundesliga_squad_stats_directly_read"
+            "verification": "BDFutbol_2014_15_Bundesliga_squad_stats_directly_read",
+            "goalsConceded": 37
           }
         },
         "status": "2014_15_actual_league_stats_two_previous_season_historical_DRAFT_or_pending"
@@ -6547,7 +7556,42 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "leagueGoalsConceded": 37,
+      "segment2Audit": {
+        "goalkeeper": [
+          {
+            "season": "2014-15",
+            "club": "Bayer 04 Leverkusen",
+            "goals": 0,
+            "goalsConceded": 37,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151014.html",
+              "https://www.historical-lineups.com/wp-content/uploads/2024/07/Bundesliga-Player-Guide-1963-2023.pdf"
+            ]
+          }
+        ],
+        "priorClubRecords": [
+          {
+            "season": "2012-13",
+            "club": "Bayer Leverkusen",
+            "goalsConceded": 34,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2012-131014.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2013-14",
+            "club": "Bayer Leverkusen",
+            "goalsConceded": 41,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2013-141014.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-leverkusen-omertoprak",
@@ -6787,14 +7831,16 @@
             "verification": "prior_FootballArchive_DRAFT_not_independently_verified"
           },
           "2013-14": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Schalke 04",
+            "appearances": 4,
+            "starts": 1,
+            "minutes": 81,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2013-141006.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2013-141006.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2014-15": {
             "club": "Bayer 04 Leverkusen",
@@ -6817,7 +7863,37 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "sourceConflicts": [
+          {
+            "section": "생년월일 출처 차이 (2행)",
+            "report": [
+              "1992-02-23",
+              "1983-08-28",
+              "DFB와 기존값 일치. 동명이 성의 아브라암과 구분."
+            ],
+            "sources": [
+              "https://datencenter.dfb.de/datencenter/personen/kyriakos-papadopoulos/spieler"
+            ],
+            "decision": "retain existing value pending match-level adjudication; not an automatic overwrite"
+          }
+        ],
+        "priorClubRecords": [
+          {
+            "season": "2013-14",
+            "club": "Schalke 04",
+            "appearances": 4,
+            "starts": 1,
+            "minutes": 81,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2013-141006.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-leverkusen-wendell",
@@ -7021,9 +8097,9 @@
       "leagueStarts": 21,
       "leagueMinutes": 1791,
       "goals2014": 0,
-      "assists2014": null,
+      "assists2014": 5,
       "tier": "B+",
-      "rank": 7,
+      "rank": 5,
       "rankStatus": "provisional",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -7072,7 +8148,7 @@
             "starts": 21,
             "minutes": 1791,
             "goals": 0,
-            "assists": null,
+            "assists": 5,
             "source": "https://www.bdfutbol.com/en/t/t2014-151014.html",
             "verification": "BDFutbol_2014_15_Bundesliga_squad_stats_directly_read"
           }
@@ -7087,7 +8163,20 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "assists": [
+          {
+            "season": "2014-15",
+            "club": "Bayer 04 Leverkusen",
+            "value": 5,
+            "sources": [
+              "https://www.fussballtransfers.com/deutschland/bundesliga/2014-2015/vorlagengeber"
+            ],
+            "scope": "provider-specific league assists"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-leverkusen-tinjedvaj",
@@ -7113,7 +8202,7 @@
       "goals2014": 2,
       "assists2014": null,
       "tier": "B+",
-      "rank": 9,
+      "rank": 7,
       "rankStatus": "provisional",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -7177,7 +8266,22 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "reviewPending": [
+          {
+            "section": "시즌 배정과 일반 프로필 위치 차이 (4행)",
+            "report": [
+              "RB",
+              "CB",
+              "18"
+            ],
+            "sources": [
+              "https://www.bdfutbol.com/en/j/j90928.html"
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-leverkusen-giuliodonati",
@@ -7203,7 +8307,7 @@
       "goals2014": 0,
       "assists2014": null,
       "tier": "B-",
-      "rank": 14,
+      "rank": 12,
       "rankStatus": "provisional",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -7267,7 +8371,23 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "reviewPending": [
+          {
+            "section": "4선발 이하 후보 자격 재검토 (6행)",
+            "report": [
+              "RB",
+              "backup",
+              "4",
+              "8"
+            ],
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151014.html"
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-leverkusen-simonrolfes",
@@ -7473,7 +8593,7 @@
       "goals2014": 1,
       "assists2014": null,
       "tier": "A-",
-      "rank": 3,
+      "rank": 4,
       "rankStatus": "provisional",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -7561,9 +8681,9 @@
       "leagueStarts": 19,
       "leagueMinutes": 1782,
       "goals2014": 2,
-      "assists2014": null,
+      "assists2014": 7,
       "tier": "B+",
-      "rank": 7,
+      "rank": 8,
       "rankStatus": "provisional",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -7612,7 +8732,7 @@
             "starts": 19,
             "minutes": 1782,
             "goals": 2,
-            "assists": null,
+            "assists": 7,
             "source": "https://www.bdfutbol.com/en/t/t2014-151014.html",
             "verification": "BDFutbol_2014_15_Bundesliga_squad_stats_directly_read"
           }
@@ -7627,7 +8747,20 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "assists": [
+          {
+            "season": "2014-15",
+            "club": "Bayer 04 Leverkusen",
+            "value": 7,
+            "sources": [
+              "https://www.fussballtransfers.com/deutschland/bundesliga/2014-2015/vorlagengeber"
+            ],
+            "scope": "provider-specific league assists"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-leverkusen-hakancalhanoglu",
@@ -7651,7 +8784,7 @@
       "leagueStarts": 31,
       "leagueMinutes": 2521,
       "goals2014": 8,
-      "assists2014": null,
+      "assists2014": 6,
       "tier": "A",
       "rank": 2,
       "rankStatus": "provisional",
@@ -7687,14 +8820,16 @@
             "verification": "evidence_pending"
           },
           "2013-14": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hamburger",
+            "appearances": 32,
+            "starts": 28,
+            "minutes": 2443,
+            "goals": 11,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2013-141008.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2013-141008.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2014-15": {
             "club": "Bayer 04 Leverkusen",
@@ -7702,7 +8837,7 @@
             "starts": 31,
             "minutes": 2521,
             "goals": 8,
-            "assists": null,
+            "assists": 6,
             "source": "https://www.bdfutbol.com/en/t/t2014-151014.html",
             "verification": "BDFutbol_2014_15_Bundesliga_squad_stats_directly_read"
           }
@@ -7717,7 +8852,34 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "assists": [
+          {
+            "season": "2014-15",
+            "club": "Bayer 04 Leverkusen",
+            "value": 6,
+            "sources": [
+              "https://www.fussballtransfers.com/deutschland/bundesliga/2014-2015/vorlagengeber"
+            ],
+            "scope": "provider-specific league assists"
+          }
+        ],
+        "priorClubRecords": [
+          {
+            "season": "2013-14",
+            "club": "Hamburger",
+            "appearances": 32,
+            "starts": 28,
+            "minutes": 2443,
+            "goals": 11,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2013-141008.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-leverkusen-julianbrandt",
@@ -7857,14 +9019,16 @@
         "weighting": "2014-15 highest; 2013-14 second; 2012-13 least; club trophy/league rank no player bonus",
         "records": {
           "2012-13": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hamburger",
+            "appearances": 33,
+            "starts": 31,
+            "minutes": 2701,
+            "goals": 12,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2012-131008.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2012-131008.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2013-14": {
             "club": "Bayer 04 Leverkusen",
@@ -7897,7 +9061,23 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2012-13",
+            "club": "Hamburger",
+            "appearances": 33,
+            "starts": 31,
+            "minutes": 2701,
+            "goals": 12,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2012-131008.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-leverkusen-karimbellarabi",
@@ -7921,7 +9101,7 @@
       "leagueStarts": 32,
       "leagueMinutes": 2724,
       "goals2014": 12,
-      "assists2014": null,
+      "assists2014": 6,
       "tier": "A",
       "rank": 3,
       "rankStatus": "provisional",
@@ -7947,24 +9127,28 @@
         "weighting": "2014-15 highest; 2013-14 second; 2012-13 least; club trophy/league rank no player bonus",
         "records": {
           "2012-13": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Bayer Leverkusen",
+            "appearances": 8,
+            "starts": 5,
+            "minutes": 411,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2012-131014.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2012-131014.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2013-14": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Eintracht Braunschweig",
+            "appearances": 26,
+            "starts": 20,
+            "minutes": 1774,
+            "goals": 3,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2013-141032.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2013-141032.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2014-15": {
             "club": "Bayer 04 Leverkusen",
@@ -7972,7 +9156,7 @@
             "starts": 32,
             "minutes": 2724,
             "goals": 12,
-            "assists": null,
+            "assists": 6,
             "source": "https://www.bdfutbol.com/en/t/t2014-151014.html",
             "verification": "BDFutbol_2014_15_Bundesliga_squad_stats_directly_read"
           }
@@ -7987,7 +9171,46 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "assists": [
+          {
+            "season": "2014-15",
+            "club": "Bayer 04 Leverkusen",
+            "value": 6,
+            "sources": [
+              "https://www.fussballtransfers.com/deutschland/bundesliga/2014-2015/vorlagengeber"
+            ],
+            "scope": "provider-specific league assists"
+          }
+        ],
+        "priorClubRecords": [
+          {
+            "season": "2012-13",
+            "club": "Bayer Leverkusen",
+            "appearances": 8,
+            "starts": 5,
+            "minutes": 411,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2012-131014.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2013-14",
+            "club": "Eintracht Braunschweig",
+            "appearances": 26,
+            "starts": 20,
+            "minutes": 1774,
+            "goals": 3,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2013-141032.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-leverkusen-stefankiessling",
@@ -8137,14 +9360,16 @@
             "verification": "evidence_pending"
           },
           "2013-14": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Nürnberg",
+            "appearances": 33,
+            "starts": 30,
+            "minutes": 2661,
+            "goals": 17,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2013-141005.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2013-141005.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2014-15": {
             "club": "Bayer 04 Leverkusen",
@@ -8167,7 +9392,23 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2013-14",
+            "club": "Nürnberg",
+            "appearances": 33,
+            "starts": 30,
+            "minutes": 2661,
+            "goals": 17,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2013-141005.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-augsburg-marwinhitz",
@@ -8190,7 +9431,7 @@
       "leagueAppearances": 25,
       "leagueStarts": 25,
       "leagueMinutes": 2250,
-      "goals2014": null,
+      "goals2014": 1,
       "assists2014": null,
       "tier": "B+",
       "rank": 5,
@@ -8227,24 +9468,28 @@
             "verification": "evidence_pending"
           },
           "2013-14": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
+            "club": "Augsburg",
+            "appearances": 19,
+            "starts": 19,
+            "minutes": 1710,
             "goals": null,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2013-141029.html",
+            "verification": "evidence_pending",
+            "goalsConceded": 20,
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2013-141029.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2014-15": {
             "club": "FC Augsburg",
             "appearances": 25,
             "starts": 25,
             "minutes": 2250,
-            "goals": null,
+            "goals": 1,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2014-151029.html",
-            "verification": "BDFutbol_2014_15_Bundesliga_squad_stats_directly_read"
+            "verification": "BDFutbol_2014_15_Bundesliga_squad_stats_directly_read",
+            "goalsConceded": 28
           }
         },
         "status": "2014_15_actual_league_stats_two_previous_season_historical_DRAFT_or_pending"
@@ -8257,7 +9502,47 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "goal": [
+          {
+            "season": "2014-15",
+            "value": 1,
+            "sources": [
+              "https://datencenter.dfb.de/datencenter/bundesliga/2014-2015/22-spieltag/fc-augsburg-bayer-04-leverkusen-2211321",
+              "https://www.fcaugsburg.de/article/2014-als-torwart-hitz-zum-torjaeger-wurde-6705"
+            ]
+          }
+        ],
+        "goalkeeper": [
+          {
+            "season": "2014-15",
+            "club": "FC Augsburg",
+            "goals": 1,
+            "goalsConceded": 28,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151029.html",
+              "https://datencenter.dfb.de/datencenter/bundesliga/2014-2015/22-spieltag/fc-augsburg-bayer-04-leverkusen-2211321",
+              "https://www.fcaugsburg.de/article/2014-als-torwart-hitz-zum-torjaeger-wurde-6705"
+            ]
+          }
+        ],
+        "priorClubRecords": [
+          {
+            "season": "2013-14",
+            "club": "Augsburg",
+            "appearances": 19,
+            "starts": 19,
+            "minutes": 1710,
+            "goalsConceded": 20,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2013-141029.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      },
+      "leagueGoalsConceded": 28
     },
     {
       "id": "bundesliga-2014-augsburg-alexandermanninger",
@@ -8280,7 +9565,7 @@
       "leagueAppearances": 9,
       "leagueStarts": 9,
       "leagueMinutes": 810,
-      "goals2014": null,
+      "goals2014": 0,
       "assists2014": null,
       "tier": "B-",
       "rank": 9,
@@ -8307,34 +9592,41 @@
         "weighting": "2014-15 highest; 2013-14 second; 2012-13 least; club trophy/league rank no player bonus",
         "records": {
           "2012-13": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
+            "club": "Augsburg",
+            "appearances": 12,
+            "starts": 12,
+            "minutes": 1080,
             "goals": null,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2012-131029.html",
+            "verification": "evidence_pending",
+            "goalsConceded": 17,
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2012-131029.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2013-14": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
+            "club": "Augsburg",
+            "appearances": 13,
+            "starts": 13,
+            "minutes": 1170,
             "goals": null,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2013-141029.html",
+            "verification": "evidence_pending",
+            "goalsConceded": 22,
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2013-141029.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2014-15": {
             "club": "FC Augsburg",
             "appearances": 9,
             "starts": 9,
             "minutes": 810,
-            "goals": null,
+            "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2014-151029.html",
-            "verification": "BDFutbol_2014_15_Bundesliga_squad_stats_directly_read"
+            "verification": "BDFutbol_2014_15_Bundesliga_squad_stats_directly_read",
+            "goalsConceded": 15
           }
         },
         "status": "2014_15_actual_league_stats_two_previous_season_historical_DRAFT_or_pending"
@@ -8347,7 +9639,48 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "leagueGoalsConceded": 15,
+      "segment2Audit": {
+        "goalkeeper": [
+          {
+            "season": "2014-15",
+            "club": "FC Augsburg",
+            "goals": 0,
+            "goalsConceded": 15,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151029.html",
+              "https://www.historical-lineups.com/wp-content/uploads/2024/07/Bundesliga-Player-Guide-1963-2023.pdf"
+            ]
+          }
+        ],
+        "priorClubRecords": [
+          {
+            "season": "2012-13",
+            "club": "Augsburg",
+            "appearances": 12,
+            "starts": 12,
+            "minutes": 1080,
+            "goalsConceded": 17,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2012-131029.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2013-14",
+            "club": "Augsburg",
+            "appearances": 13,
+            "starts": 13,
+            "minutes": 1170,
+            "goalsConceded": 22,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2013-141029.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-augsburg-ragnarklavan",
@@ -8397,24 +9730,28 @@
         "weighting": "2014-15 highest; 2013-14 second; 2012-13 least; club trophy/league rank no player bonus",
         "records": {
           "2012-13": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Augsburg",
+            "appearances": 30,
+            "starts": 29,
+            "minutes": 2572,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2012-131029.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2012-131029.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2013-14": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Augsburg",
+            "appearances": 30,
+            "starts": 30,
+            "minutes": 2565,
+            "goals": 2,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2013-141029.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2013-141029.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2014-15": {
             "club": "FC Augsburg",
@@ -8437,7 +9774,35 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2012-13",
+            "club": "Augsburg",
+            "appearances": 30,
+            "starts": 29,
+            "minutes": 2572,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2012-131029.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2013-14",
+            "club": "Augsburg",
+            "appearances": 30,
+            "starts": 30,
+            "minutes": 2565,
+            "goals": 2,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2013-141029.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-augsburg-janingwercallsenbracker",
@@ -8487,24 +9852,28 @@
         "weighting": "2014-15 highest; 2013-14 second; 2012-13 least; club trophy/league rank no player bonus",
         "records": {
           "2012-13": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Augsburg",
+            "appearances": 24,
+            "starts": 23,
+            "minutes": 2062,
+            "goals": 2,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2012-131029.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2012-131029.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2013-14": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Augsburg",
+            "appearances": 33,
+            "starts": 33,
+            "minutes": 2909,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2013-141029.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2013-141029.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2014-15": {
             "club": "FC Augsburg",
@@ -8527,7 +9896,35 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2012-13",
+            "club": "Augsburg",
+            "appearances": 24,
+            "starts": 23,
+            "minutes": 2062,
+            "goals": 2,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2012-131029.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2013-14",
+            "club": "Augsburg",
+            "appearances": 33,
+            "starts": 33,
+            "minutes": 2909,
+            "goals": 1,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2013-141029.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-augsburg-hongjeongho",
@@ -8587,14 +9984,16 @@
             "verification": "evidence_pending"
           },
           "2013-14": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Augsburg",
+            "appearances": 16,
+            "starts": 6,
+            "minutes": 770,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2013-141029.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2013-141029.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2014-15": {
             "club": "FC Augsburg",
@@ -8617,7 +10016,23 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2013-14",
+            "club": "Augsburg",
+            "appearances": 16,
+            "starts": 6,
+            "minutes": 770,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2013-141029.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-augsburg-abdulrahmanbaba",
@@ -8667,14 +10082,16 @@
         "weighting": "2014-15 highest; 2013-14 second; 2012-13 least; club trophy/league rank no player bonus",
         "records": {
           "2012-13": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Greuther Fürth",
+            "appearances": 20,
+            "starts": 18,
+            "minutes": 1628,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2012-131030.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2012-131030.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2013-14": {
             "club": null,
@@ -8707,7 +10124,23 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2012-13",
+            "club": "Greuther Fürth",
+            "appearances": 20,
+            "starts": 18,
+            "minutes": 1628,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2012-131030.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-augsburg-paulverhaegh",
@@ -8733,7 +10166,7 @@
       "goals2014": 6,
       "assists2014": null,
       "tier": "B+",
-      "rank": 4,
+      "rank": 2,
       "rankStatus": "provisional",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -8757,24 +10190,28 @@
         "weighting": "2014-15 highest; 2013-14 second; 2012-13 least; club trophy/league rank no player bonus",
         "records": {
           "2012-13": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Augsburg",
+            "appearances": 17,
+            "starts": 16,
+            "minutes": 1470,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2012-131029.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2012-131029.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2013-14": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Augsburg",
+            "appearances": 30,
+            "starts": 29,
+            "minutes": 2513,
+            "goals": 3,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2013-141029.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2013-141029.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2014-15": {
             "club": "FC Augsburg",
@@ -8797,7 +10234,35 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2012-13",
+            "club": "Augsburg",
+            "appearances": 17,
+            "starts": 16,
+            "minutes": 1470,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2012-131029.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2013-14",
+            "club": "Augsburg",
+            "appearances": 30,
+            "starts": 29,
+            "minutes": 2513,
+            "goals": 3,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2013-141029.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-augsburg-danielbaier",
@@ -8847,24 +10312,28 @@
         "weighting": "2014-15 highest; 2013-14 second; 2012-13 least; club trophy/league rank no player bonus",
         "records": {
           "2012-13": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Augsburg",
+            "appearances": 33,
+            "starts": 33,
+            "minutes": 2949,
+            "goals": 2,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2012-131029.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2012-131029.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2013-14": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Augsburg",
+            "appearances": 34,
+            "starts": 34,
+            "minutes": 3060,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2013-141029.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2013-141029.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2014-15": {
             "club": "FC Augsburg",
@@ -8887,7 +10356,35 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2012-13",
+            "club": "Augsburg",
+            "appearances": 33,
+            "starts": 33,
+            "minutes": 2949,
+            "goals": 2,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2012-131029.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2013-14",
+            "club": "Augsburg",
+            "appearances": 34,
+            "starts": 34,
+            "minutes": 3060,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2013-141029.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-augsburg-markusfeulner",
@@ -8913,7 +10410,7 @@
       "goals2014": 1,
       "assists2014": null,
       "tier": "B+",
-      "rank": 6,
+      "rank": 7,
       "rankStatus": "provisional",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -8937,24 +10434,28 @@
         "weighting": "2014-15 highest; 2013-14 second; 2012-13 least; club trophy/league rank no player bonus",
         "records": {
           "2012-13": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Nürnberg",
+            "appearances": 23,
+            "starts": 17,
+            "minutes": 1530,
+            "goals": 4,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2012-131005.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2012-131005.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2013-14": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Nürnberg",
+            "appearances": 25,
+            "starts": 20,
+            "minutes": 1758,
+            "goals": 2,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2013-141005.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2013-141005.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2014-15": {
             "club": "FC Augsburg",
@@ -8977,7 +10478,35 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2012-13",
+            "club": "Nürnberg",
+            "appearances": 23,
+            "starts": 17,
+            "minutes": 1530,
+            "goals": 4,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2012-131005.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2013-14",
+            "club": "Nürnberg",
+            "appearances": 25,
+            "starts": 20,
+            "minutes": 1758,
+            "goals": 2,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2013-141005.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-augsburg-dominikkohr",
@@ -9003,7 +10532,7 @@
       "goals2014": 1,
       "assists2014": null,
       "tier": "B+",
-      "rank": 8,
+      "rank": 9,
       "rankStatus": "provisional",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -9027,14 +10556,16 @@
         "weighting": "2014-15 highest; 2013-14 second; 2012-13 least; club trophy/league rank no player bonus",
         "records": {
           "2012-13": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Bayer Leverkusen",
+            "appearances": 4,
+            "starts": 0,
+            "minutes": 29,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2012-131014.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2012-131014.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2013-14": {
             "club": null,
@@ -9067,7 +10598,47 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2012-13",
+            "club": "Bayer Leverkusen",
+            "appearances": 4,
+            "starts": 0,
+            "minutes": 29,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2012-131014.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2013-14",
+            "club": "Bayer Leverkusen",
+            "appearances": 2,
+            "starts": 0,
+            "minutes": 3,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2013-141014.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2013-14",
+            "club": "Augsburg",
+            "appearances": 8,
+            "starts": 5,
+            "minutes": 411,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2013-141029.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-augsburg-pierreemilehjbjerg",
@@ -9093,7 +10664,7 @@
       "goals2014": 2,
       "assists2014": null,
       "tier": "B",
-      "rank": 10,
+      "rank": 11,
       "rankStatus": "provisional",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -9117,24 +10688,28 @@
         "weighting": "2014-15 highest; 2013-14 second; 2012-13 least; club trophy/league rank no player bonus",
         "records": {
           "2012-13": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Bayern München",
+            "appearances": 2,
+            "starts": 0,
+            "minutes": 20,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2012-131016.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2012-131016.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2013-14": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Bayern München",
+            "appearances": 7,
+            "starts": 2,
+            "minutes": 280,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2013-141016.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2013-141016.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2014-15": {
             "club": "FC Augsburg",
@@ -9157,7 +10732,35 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2012-13",
+            "club": "Bayern München",
+            "appearances": 2,
+            "starts": 0,
+            "minutes": 20,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2012-131016.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2013-14",
+            "club": "Bayern München",
+            "appearances": 7,
+            "starts": 2,
+            "minutes": 280,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2013-141016.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-augsburg-halilaltntop",
@@ -9217,14 +10820,16 @@
             "verification": "evidence_pending"
           },
           "2013-14": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Augsburg",
+            "appearances": 34,
+            "starts": 34,
+            "minutes": 2715,
+            "goals": 10,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2013-141029.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2013-141029.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2014-15": {
             "club": "FC Augsburg",
@@ -9247,7 +10852,23 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2013-14",
+            "club": "Augsburg",
+            "appearances": 34,
+            "starts": 34,
+            "minutes": 2715,
+            "goals": 10,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2013-141029.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-augsburg-tobiaswerner",
@@ -9297,24 +10918,28 @@
         "weighting": "2014-15 highest; 2013-14 second; 2012-13 least; club trophy/league rank no player bonus",
         "records": {
           "2012-13": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Augsburg",
+            "appearances": 30,
+            "starts": 29,
+            "minutes": 2220,
+            "goals": 6,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2012-131029.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2012-131029.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2013-14": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Augsburg",
+            "appearances": 31,
+            "starts": 25,
+            "minutes": 2103,
+            "goals": 9,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2013-141029.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2013-141029.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2014-15": {
             "club": "FC Augsburg",
@@ -9337,7 +10962,35 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2012-13",
+            "club": "Augsburg",
+            "appearances": 30,
+            "starts": 29,
+            "minutes": 2220,
+            "goals": 6,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2012-131029.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2013-14",
+            "club": "Augsburg",
+            "appearances": 31,
+            "starts": 25,
+            "minutes": 2103,
+            "goals": 9,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2013-141029.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-augsburg-caiuby",
@@ -9453,7 +11106,7 @@
       "goals2014": 1,
       "assists2014": null,
       "tier": "B",
-      "rank": 10,
+      "rank": 11,
       "rankStatus": "provisional",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -9477,14 +11130,16 @@
         "weighting": "2014-15 highest; 2013-14 second; 2012-13 least; club trophy/league rank no player bonus",
         "records": {
           "2012-13": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Nürnberg",
+            "appearances": 27,
+            "starts": 19,
+            "minutes": 1676,
+            "goals": 2,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2012-131005.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2012-131005.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2013-14": {
             "club": null,
@@ -9517,7 +11172,47 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2012-13",
+            "club": "Nürnberg",
+            "appearances": 27,
+            "starts": 19,
+            "minutes": 1676,
+            "goals": 2,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2012-131005.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2013-14",
+            "club": "Nürnberg",
+            "appearances": 5,
+            "starts": 1,
+            "minutes": 129,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2013-141005.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2013-14",
+            "club": "Augsburg",
+            "appearances": 13,
+            "starts": 5,
+            "minutes": 608,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2013-141029.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-augsburg-jidongwon",
@@ -9543,7 +11238,7 @@
       "goals2014": 0,
       "assists2014": null,
       "tier": "B-",
-      "rank": 12,
+      "rank": 13,
       "rankStatus": "provisional",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -9567,24 +11262,28 @@
         "weighting": "2014-15 highest; 2013-14 second; 2012-13 least; club trophy/league rank no player bonus",
         "records": {
           "2012-13": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Augsburg",
+            "appearances": 17,
+            "starts": 17,
+            "minutes": 1495,
+            "goals": 5,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2012-131029.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2012-131029.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2013-14": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Augsburg",
+            "appearances": 12,
+            "starts": 2,
+            "minutes": 328,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2013-141029.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2013-141029.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2014-15": {
             "club": "FC Augsburg",
@@ -9607,7 +11306,35 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2012-13",
+            "club": "Augsburg",
+            "appearances": 17,
+            "starts": 17,
+            "minutes": 1495,
+            "goals": 5,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2012-131029.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2013-14",
+            "club": "Augsburg",
+            "appearances": 12,
+            "starts": 2,
+            "minutes": 328,
+            "goals": 1,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2013-141029.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-augsburg-raulbobadilla",
@@ -9667,14 +11394,16 @@
             "verification": "evidence_pending"
           },
           "2013-14": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Augsburg",
+            "appearances": 17,
+            "starts": 9,
+            "minutes": 834,
+            "goals": 3,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2013-141029.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2013-141029.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2014-15": {
             "club": "FC Augsburg",
@@ -9697,7 +11426,23 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2013-14",
+            "club": "Augsburg",
+            "appearances": 17,
+            "starts": 9,
+            "minutes": 834,
+            "goals": 3,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2013-141029.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-augsburg-nikolauric",
@@ -9747,14 +11492,16 @@
         "weighting": "2014-15 highest; 2013-14 second; 2012-13 least; club trophy/league rank no player bonus",
         "records": {
           "2012-13": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Greuther Fürth",
+            "appearances": 15,
+            "starts": 14,
+            "minutes": 1211,
+            "goals": 5,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2012-131030.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2012-131030.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2013-14": {
             "club": null,
@@ -9787,7 +11534,23 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2012-13",
+            "club": "Greuther Fürth",
+            "appearances": 15,
+            "starts": 14,
+            "minutes": 1211,
+            "goals": 5,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2012-131030.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-schalke-ralffahrmann",
@@ -9810,7 +11573,7 @@
       "leagueAppearances": 25,
       "leagueStarts": 25,
       "leagueMinutes": 2250,
-      "goals2014": null,
+      "goals2014": 0,
       "assists2014": null,
       "tier": "B+",
       "rank": 6,
@@ -9854,17 +11617,21 @@
             "goals": null,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2013-141006.html",
-            "verification": "prior_FootballArchive_DRAFT_not_independently_verified"
+            "verification": "prior_FootballArchive_DRAFT_not_independently_verified",
+            "goalsConceded": 19,
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2013-141006.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2014-15": {
             "club": "FC Schalke 04",
             "appearances": 25,
             "starts": 25,
             "minutes": 2250,
-            "goals": null,
+            "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2014-151006.html",
-            "verification": "BDFutbol_2014_15_Bundesliga_squad_stats_directly_read"
+            "verification": "BDFutbol_2014_15_Bundesliga_squad_stats_directly_read",
+            "goalsConceded": 30
           }
         },
         "status": "2014_15_actual_league_stats_two_previous_season_historical_DRAFT_or_pending"
@@ -9877,7 +11644,33 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "leagueGoalsConceded": 30,
+      "segment2Audit": {
+        "goalkeeper": [
+          {
+            "season": "2014-15",
+            "club": "FC Schalke 04",
+            "goals": 0,
+            "goalsConceded": 30,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151006.html",
+              "https://www.historical-lineups.com/wp-content/uploads/2024/07/Bundesliga-Player-Guide-1963-2023.pdf"
+            ]
+          }
+        ],
+        "priorClubRecords": [
+          {
+            "season": "2013-14",
+            "club": "Schalke 04",
+            "goalsConceded": 19,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2013-141006.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-schalke-timonwellenreuther",
@@ -9900,7 +11693,7 @@
       "leagueAppearances": 8,
       "leagueStarts": 7,
       "leagueMinutes": 674,
-      "goals2014": null,
+      "goals2014": 0,
       "assists2014": null,
       "tier": "B-",
       "rank": 10,
@@ -9951,10 +11744,11 @@
             "appearances": 8,
             "starts": 7,
             "minutes": 674,
-            "goals": null,
+            "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2014-151006.html",
-            "verification": "BDFutbol_2014_15_Bundesliga_squad_stats_directly_read"
+            "verification": "BDFutbol_2014_15_Bundesliga_squad_stats_directly_read",
+            "goalsConceded": 10
           }
         },
         "status": "2014_15_actual_league_stats_two_previous_season_historical_DRAFT_or_pending"
@@ -9967,7 +11761,22 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "leagueGoalsConceded": 10,
+      "segment2Audit": {
+        "goalkeeper": [
+          {
+            "season": "2014-15",
+            "club": "FC Schalke 04",
+            "goals": 0,
+            "goalsConceded": 10,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151006.html",
+              "https://www.historical-lineups.com/wp-content/uploads/2024/07/Bundesliga-Player-Guide-1963-2023.pdf"
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-schalke-benedikthowedes",
@@ -10377,14 +12186,16 @@
         "weighting": "2014-15 highest; 2013-14 second; 2012-13 least; club trophy/league rank no player bonus",
         "records": {
           "2012-13": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hamburger",
+            "appearances": 27,
+            "starts": 22,
+            "minutes": 1959,
+            "goals": 2,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2012-131008.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2012-131008.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2013-14": {
             "club": "FC Schalke 04",
@@ -10417,7 +12228,47 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2012-13",
+            "club": "Hamburger",
+            "appearances": 27,
+            "starts": 22,
+            "minutes": 1959,
+            "goals": 2,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2012-131008.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2013-14",
+            "club": "Schalke 04",
+            "appearances": 10,
+            "starts": 10,
+            "minutes": 889,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2013-141006.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2013-14",
+            "club": "Hamburger",
+            "appearances": 2,
+            "starts": 0,
+            "minutes": 30,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2013-141008.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-schalke-seadkolasinac",
@@ -10533,7 +12384,7 @@
       "goals2014": 0,
       "assists2014": null,
       "tier": "B+",
-      "rank": 8,
+      "rank": 6,
       "rankStatus": "provisional",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -10623,7 +12474,7 @@
       "goals2014": 0,
       "assists2014": null,
       "tier": "B",
-      "rank": 11,
+      "rank": 9,
       "rankStatus": "provisional",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -10687,7 +12538,22 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "reviewPending": [
+          {
+            "section": "시즌 배정과 일반 프로필 위치 차이 (4행)",
+            "report": [
+              "RB",
+              "CB",
+              "10"
+            ],
+            "sources": [
+              "https://www.bdfutbol.com/en/j/j98058.html"
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-schalke-romanneustadter",
@@ -10827,14 +12693,16 @@
         "weighting": "2014-15 highest; 2013-14 second; 2012-13 least; club trophy/league rank no player bonus",
         "records": {
           "2012-13": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Mainz 05",
+            "appearances": 18,
+            "starts": 9,
+            "minutes": 1088,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2012-131013.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2012-131013.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2013-14": {
             "club": null,
@@ -10867,7 +12735,60 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "reviewPending": [
+          {
+            "section": "시즌 배정과 일반 프로필 위치 차이 (4행)",
+            "report": [
+              "DM",
+              "CB",
+              "12"
+            ],
+            "sources": [
+              "https://www.bdfutbol.com/en/j/j93255.html"
+            ]
+          }
+        ],
+        "priorClubRecords": [
+          {
+            "season": "2012-13",
+            "club": "Mainz 05",
+            "appearances": 18,
+            "starts": 9,
+            "minutes": 1088,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2012-131013.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2013-14",
+            "club": "Schalke 04",
+            "appearances": 2,
+            "starts": 0,
+            "minutes": 33,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2013-141006.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2013-14",
+            "club": "Bayern München",
+            "appearances": 7,
+            "starts": 0,
+            "minutes": 82,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2013-141016.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-schalke-marcohoger",
@@ -10893,7 +12814,7 @@
       "goals2014": 1,
       "assists2014": null,
       "tier": "B+",
-      "rank": 5,
+      "rank": 6,
       "rankStatus": "provisional",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -11007,14 +12928,16 @@
         "weighting": "2014-15 highest; 2013-14 second; 2012-13 least; club trophy/league rank no player bonus",
         "records": {
           "2012-13": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Schalke 04",
+            "appearances": 5,
+            "starts": 0,
+            "minutes": 71,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2012-131006.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2012-131006.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2013-14": {
             "club": "FC Schalke 04",
@@ -11047,7 +12970,23 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2012-13",
+            "club": "Schalke 04",
+            "appearances": 5,
+            "starts": 0,
+            "minutes": 71,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2012-131006.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-schalke-kevinprinceboateng",
@@ -11251,7 +13190,7 @@
       "leagueStarts": 30,
       "leagueMinutes": 2556,
       "goals2014": 9,
-      "assists2014": null,
+      "assists2014": 6,
       "tier": "B+",
       "rank": 6,
       "rankStatus": "provisional",
@@ -11277,14 +13216,16 @@
         "weighting": "2014-15 highest; 2013-14 second; 2012-13 least; club trophy/league rank no player bonus",
         "records": {
           "2012-13": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Mainz 05",
+            "appearances": 8,
+            "starts": 4,
+            "minutes": 408,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2012-131013.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2012-131013.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2013-14": {
             "club": "1.FSV Mainz 05",
@@ -11302,7 +13243,7 @@
             "starts": 30,
             "minutes": 2556,
             "goals": 9,
-            "assists": null,
+            "assists": 6,
             "source": "https://www.bdfutbol.com/en/t/t2014-151006.html",
             "verification": "BDFutbol_2014_15_Bundesliga_squad_stats_directly_read"
           }
@@ -11317,7 +13258,34 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "assists": [
+          {
+            "season": "2014-15",
+            "club": "FC Schalke 04",
+            "value": 6,
+            "sources": [
+              "https://www.fussballtransfers.com/deutschland/bundesliga/2014-2015/vorlagengeber"
+            ],
+            "scope": "provider-specific league assists"
+          }
+        ],
+        "priorClubRecords": [
+          {
+            "season": "2012-13",
+            "club": "Mainz 05",
+            "appearances": 8,
+            "starts": 4,
+            "minutes": 408,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2012-131013.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-schalke-tranquillobarnetta",
@@ -11341,9 +13309,9 @@
       "leagueStarts": 10,
       "leagueMinutes": 1068,
       "goals2014": 3,
-      "assists2014": null,
+      "assists2014": 4,
       "tier": "B",
-      "rank": 9,
+      "rank": 10,
       "rankStatus": "provisional",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -11392,7 +13360,7 @@
             "starts": 10,
             "minutes": 1068,
             "goals": 3,
-            "assists": null,
+            "assists": 4,
             "source": "https://www.bdfutbol.com/en/t/t2014-151006.html",
             "verification": "BDFutbol_2014_15_Bundesliga_squad_stats_directly_read"
           }
@@ -11407,7 +13375,46 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "assists": [
+          {
+            "season": "2014-15",
+            "club": "FC Schalke 04",
+            "value": 4,
+            "sources": [
+              "https://www.fussballtransfers.com/deutschland/bundesliga/2014-2015/vorlagengeber"
+            ],
+            "scope": "provider-specific league assists"
+          }
+        ],
+        "priorClubRecords": [
+          {
+            "season": "2013-14",
+            "club": "Schalke 04",
+            "appearances": 1,
+            "starts": 0,
+            "minutes": 7,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2013-141006.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2013-14",
+            "club": "Eintracht Frankfurt",
+            "appearances": 22,
+            "starts": 20,
+            "minutes": 1649,
+            "goals": 1,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2013-141010.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-schalke-leroysane",
@@ -11433,7 +13440,7 @@
       "goals2014": 3,
       "assists2014": null,
       "tier": "B+",
-      "rank": 7,
+      "rank": 8,
       "rankStatus": "provisional",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -11468,14 +13475,16 @@
             "verification": "evidence_pending"
           },
           "2013-14": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Schalke 04",
+            "appearances": 1,
+            "starts": 0,
+            "minutes": 13,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2013-141006.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2013-141006.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2014-15": {
             "club": "FC Schalke 04",
@@ -11498,7 +13507,23 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2013-14",
+            "club": "Schalke 04",
+            "appearances": 1,
+            "starts": 0,
+            "minutes": 13,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2013-141006.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-schalke-jeffersonfarfan",
@@ -11524,7 +13549,7 @@
       "goals2014": 0,
       "assists2014": null,
       "tier": "B-",
-      "rank": 14,
+      "rank": 15,
       "rankStatus": "provisional",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -11701,7 +13726,7 @@
       "leagueAppearances": 25,
       "leagueStarts": 25,
       "leagueMinutes": 2250,
-      "goals2014": null,
+      "goals2014": 0,
       "assists2014": null,
       "tier": "B+",
       "rank": 7,
@@ -11735,7 +13760,10 @@
             "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2012-131003.html",
-            "verification": "prior_FootballArchive_DRAFT_not_independently_verified"
+            "verification": "prior_FootballArchive_DRAFT_not_independently_verified",
+            "goalsConceded": 36,
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2012-131003.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2013-14": {
             "club": "BV 09 Borussia Dortmund",
@@ -11745,17 +13773,21 @@
             "goals": null,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2013-141003.html",
-            "verification": "prior_FootballArchive_DRAFT_not_independently_verified"
+            "verification": "prior_FootballArchive_DRAFT_not_independently_verified",
+            "goalsConceded": 33,
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2013-141003.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2014-15": {
             "club": "BV 09 Borussia Dortmund",
             "appearances": 25,
             "starts": 25,
             "minutes": 2250,
-            "goals": null,
+            "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2014-151003.html",
-            "verification": "BDFutbol_2014_15_Bundesliga_squad_stats_directly_read"
+            "verification": "BDFutbol_2014_15_Bundesliga_squad_stats_directly_read",
+            "goalsConceded": 32
           }
         },
         "status": "2014_15_actual_league_stats_two_previous_season_historical_DRAFT_or_pending"
@@ -11768,7 +13800,42 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "leagueGoalsConceded": 32,
+      "segment2Audit": {
+        "goalkeeper": [
+          {
+            "season": "2014-15",
+            "club": "BV 09 Borussia Dortmund",
+            "goals": 0,
+            "goalsConceded": 32,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151003.html",
+              "https://www.historical-lineups.com/wp-content/uploads/2024/07/Bundesliga-Player-Guide-1963-2023.pdf"
+            ]
+          }
+        ],
+        "priorClubRecords": [
+          {
+            "season": "2012-13",
+            "club": "Borussia Dortmund",
+            "goalsConceded": 36,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2012-131003.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2013-14",
+            "club": "Borussia Dortmund",
+            "goalsConceded": 33,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2013-141003.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-dortmund-mitchelllangerak",
@@ -11791,7 +13858,7 @@
       "leagueAppearances": 9,
       "leagueStarts": 9,
       "leagueMinutes": 810,
-      "goals2014": null,
+      "goals2014": 0,
       "assists2014": null,
       "tier": "B",
       "rank": 8,
@@ -11825,7 +13892,10 @@
             "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2012-131003.html",
-            "verification": "prior_FootballArchive_DRAFT_not_independently_verified"
+            "verification": "prior_FootballArchive_DRAFT_not_independently_verified",
+            "goalsConceded": 5,
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2012-131003.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2013-14": {
             "club": "BV 09 Borussia Dortmund",
@@ -11835,17 +13905,21 @@
             "goals": null,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2013-141003.html",
-            "verification": "prior_FootballArchive_DRAFT_not_independently_verified"
+            "verification": "prior_FootballArchive_DRAFT_not_independently_verified",
+            "goalsConceded": 5,
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2013-141003.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2014-15": {
             "club": "BV 09 Borussia Dortmund",
             "appearances": 9,
             "starts": 9,
             "minutes": 810,
-            "goals": null,
+            "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2014-151003.html",
-            "verification": "BDFutbol_2014_15_Bundesliga_squad_stats_directly_read"
+            "verification": "BDFutbol_2014_15_Bundesliga_squad_stats_directly_read",
+            "goalsConceded": 10
           }
         },
         "status": "2014_15_actual_league_stats_two_previous_season_historical_DRAFT_or_pending"
@@ -11858,7 +13932,42 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "leagueGoalsConceded": 10,
+      "segment2Audit": {
+        "goalkeeper": [
+          {
+            "season": "2014-15",
+            "club": "BV 09 Borussia Dortmund",
+            "goals": 0,
+            "goalsConceded": 10,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151003.html",
+              "https://www.historical-lineups.com/wp-content/uploads/2024/07/Bundesliga-Player-Guide-1963-2023.pdf"
+            ]
+          }
+        ],
+        "priorClubRecords": [
+          {
+            "season": "2012-13",
+            "club": "Borussia Dortmund",
+            "goalsConceded": 5,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2012-131003.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2013-14",
+            "club": "Borussia Dortmund",
+            "goalsConceded": 5,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2013-141003.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-dortmund-matshummels",
@@ -12088,14 +14197,16 @@
         "weighting": "2014-15 highest; 2013-14 second; 2012-13 least; club trophy/league rank no player bonus",
         "records": {
           "2012-13": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Werder Bremen",
+            "appearances": 29,
+            "starts": 29,
+            "minutes": 2566,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2012-131009.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2012-131009.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2013-14": {
             "club": "BV 09 Borussia Dortmund",
@@ -12128,7 +14239,23 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2012-13",
+            "club": "Werder Bremen",
+            "appearances": 29,
+            "starts": 29,
+            "minutes": 2566,
+            "goals": 1,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2012-131009.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-dortmund-matthiasginter",
@@ -12188,14 +14315,16 @@
             "verification": "prior_FootballArchive_DRAFT_not_independently_verified"
           },
           "2013-14": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Freiburg",
+            "appearances": 34,
+            "starts": 34,
+            "minutes": 3039,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2013-141007.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2013-141007.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2014-15": {
             "club": "BV 09 Borussia Dortmund",
@@ -12218,7 +14347,23 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2013-14",
+            "club": "Freiburg",
+            "appearances": 34,
+            "starts": 34,
+            "minutes": 3039,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2013-141007.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-dortmund-marcelschmelzer",
@@ -12424,7 +14569,7 @@
       "goals2014": 0,
       "assists2014": null,
       "tier": "A-",
-      "rank": 3,
+      "rank": 1,
       "rankStatus": "provisional",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -12514,7 +14659,7 @@
       "goals2014": 0,
       "assists2014": null,
       "tier": "B-",
-      "rank": 12,
+      "rank": 10,
       "rankStatus": "provisional",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -12784,7 +14929,7 @@
       "goals2014": 3,
       "assists2014": null,
       "tier": "A-",
-      "rank": 4,
+      "rank": 5,
       "rankStatus": "provisional",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -12818,14 +14963,16 @@
             "verification": "prior_FootballArchive_DRAFT_not_independently_verified"
           },
           "2013-14": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Borussia Dortmund",
+            "appearances": 1,
+            "starts": 1,
+            "minutes": 57,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2013-141003.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2013-141003.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2014-15": {
             "club": "BV 09 Borussia Dortmund",
@@ -12848,7 +14995,23 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2013-14",
+            "club": "Borussia Dortmund",
+            "appearances": 1,
+            "starts": 1,
+            "minutes": 57,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2013-141003.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-dortmund-nurisahin",
@@ -12874,7 +15037,7 @@
       "goals2014": 1,
       "assists2014": null,
       "tier": "B-",
-      "rank": 12,
+      "rank": 13,
       "rankStatus": "provisional",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -12962,7 +15125,7 @@
       "leagueStarts": 23,
       "leagueMinutes": 1880,
       "goals2014": 5,
-      "assists2014": null,
+      "assists2014": 5,
       "tier": "B+",
       "rank": 5,
       "rankStatus": "provisional",
@@ -13013,7 +15176,7 @@
             "starts": 23,
             "minutes": 1880,
             "goals": 5,
-            "assists": null,
+            "assists": 5,
             "source": "https://www.bdfutbol.com/en/t/t2014-151003.html",
             "verification": "BDFutbol_2014_15_Bundesliga_squad_stats_directly_read"
           }
@@ -13028,7 +15191,20 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "assists": [
+          {
+            "season": "2014-15",
+            "club": "BV 09 Borussia Dortmund",
+            "value": 5,
+            "sources": [
+              "https://www.fussballtransfers.com/deutschland/bundesliga/2014-2015/vorlagengeber"
+            ],
+            "scope": "provider-specific league assists"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-dortmund-kevinkampl",
@@ -13142,7 +15318,7 @@
       "leagueStarts": 18,
       "leagueMinutes": 1571,
       "goals2014": 7,
-      "assists2014": null,
+      "assists2014": 5,
       "tier": "A",
       "rank": 2,
       "rankStatus": "provisional",
@@ -13193,7 +15369,7 @@
             "starts": 18,
             "minutes": 1571,
             "goals": 7,
-            "assists": null,
+            "assists": 5,
             "source": "https://www.bdfutbol.com/en/t/t2014-151003.html",
             "verification": "BDFutbol_2014_15_Bundesliga_squad_stats_directly_read"
           }
@@ -13208,7 +15384,20 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "assists": [
+          {
+            "season": "2014-15",
+            "club": "BV 09 Borussia Dortmund",
+            "value": 5,
+            "sources": [
+              "https://www.fussballtransfers.com/deutschland/bundesliga/2014-2015/vorlagengeber"
+            ],
+            "scope": "provider-specific league assists"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-dortmund-henrikhmkhitaryan",
@@ -13234,7 +15423,7 @@
       "goals2014": 3,
       "assists2014": null,
       "tier": "B+",
-      "rank": 5,
+      "rank": 6,
       "rankStatus": "provisional",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -13324,7 +15513,7 @@
       "goals2014": 0,
       "assists2014": null,
       "tier": "B-",
-      "rank": 13,
+      "rank": 14,
       "rankStatus": "provisional",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -13412,9 +15601,9 @@
       "leagueStarts": 31,
       "leagueMinutes": 2721,
       "goals2014": 16,
-      "assists2014": null,
+      "assists2014": 6,
       "tier": "A+",
-      "rank": 1,
+      "rank": 2,
       "rankStatus": "provisional",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -13466,7 +15655,7 @@
             "starts": 31,
             "minutes": 2721,
             "goals": 16,
-            "assists": null,
+            "assists": 6,
             "source": "https://www.bdfutbol.com/en/t/t2014-151003.html",
             "verification": "BDFutbol_2014_15_Bundesliga_squad_stats_directly_read"
           }
@@ -13485,7 +15674,20 @@
         "independent_birthdate_secondary_source",
         "contemporary_individual_performance_metrics_and_tier_peer_review"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "assists": [
+          {
+            "season": "2014-15",
+            "club": "BV 09 Borussia Dortmund",
+            "value": 6,
+            "sources": [
+              "https://www.fussballtransfers.com/deutschland/bundesliga/2014-2015/vorlagengeber"
+            ],
+            "scope": "provider-specific league assists"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2014-dortmund-ciroimmobile",
@@ -13614,8 +15816,8 @@
     {
       "position": "RB",
       "displayPosition": "RB",
-      "playerId": "bundesliga-2014-wolfsburg-vieirinha",
-      "reason": "Vieirinha: 31 appearances, 25 starts, 2308 minutes; 2014-15 individual performance/role, recency-weighted previous two years, no league-table bonuses; full 3-year independently verified qualitative checks pending.",
+      "playerId": "bundesliga-2014-dortmund-lukaszpiszczek",
+      "reason": "람·비에이리냐의 DFB 선발 역할 재분류 후 RB 1위. 2014-15 19선발, 이전 두 시즌 28·15선발 및 실제 우측 수비 기여를 비교한 잠정 A- 선정. 팀 성적 미가산.",
       "status": "proposed_unapproved",
       "alternates": []
     },
@@ -13630,8 +15832,8 @@
     {
       "position": "CM",
       "displayPosition": "CM",
-      "playerId": "bundesliga-2014-gladbach-granitxhaka",
-      "reason": "Granit Xhaka: 30 appearances, 30 starts, 2639 minutes; 2014-15 individual performance/role, recency-weighted previous two years, no league-table bonuses; full 3-year independently verified qualitative checks pending.",
+      "playerId": "bundesliga-2014-bayern-philipplahm",
+      "reason": "DFB 17선발 중 중앙 15회. 2014-15 중앙 전개 능력과 앞선 두 시즌 28·25선발의 개인 경기력 지속성을 고려한 A+ 잠정 선정. 자카의 당해 30선발도 비교했으며 출전량 우위는 자카에게 있음.",
       "status": "proposed_unapproved",
       "alternates": []
     },
@@ -13663,7 +15865,7 @@
       "position": "ST",
       "displayPosition": "ST",
       "playerId": "bundesliga-2014-bayern-robertlewandowski",
-      "reason": "Robert Lewandowski: 31 appearances, 28 starts, 2487 minutes; 2014-15 individual performance/role, recency-weighted previous two years, no league-table bonuses; full 3-year independently verified qualitative checks pending.",
+      "reason": "당해 레반도프스키 28선발 17골 5도움 대 오바메양 31선발 16골 6도움. 직접 공격 생산성이 비슷하므로 앞선 두 시즌 20·24골 대 13·19골의 지속성 및 중앙 공격수 역할을 반영해 레반도프스키 A+ 1위로 잠정 조정.",
       "status": "proposed_unapproved",
       "alternates": []
     }
@@ -13729,6 +15931,54 @@
         ],
         "verification": "quantitative_only_not_full_individual_qualitative"
       }
-    ]
+    ],
+    "segment2Corrections": {
+      "basisCommit": "e7ceebd9b5cda6bf3bedd40024c08bc5218f2200",
+      "report": "FOOTBALL_AUDIT_BUNDESLIGA_SEGMENT_2_CORRECTIONS.md",
+      "counts": {
+        "confirmed_goal": 1,
+        "current_record_goals": 12,
+        "source_conflict_documented": 2,
+        "assists": 16,
+        "current_record_assists": 16,
+        "gk_goals": 11,
+        "gk_conceded": 12,
+        "current_record_conceded": 12,
+        "already_matching": 2,
+        "review_flag": 12,
+        "prior_fields": 299,
+        "prior_club_filled": 70,
+        "prior_club_split_evidence": 14
+      },
+      "pending": [],
+      "scope": "source-based factual corrections and prior-club evidence; subjective review remains provisional",
+      "tacticalChanges": [
+        {
+          "id": "bundesliga-2014-bayern-philipplahm",
+          "from": "RB",
+          "to": "CM",
+          "reason": "17선발 중 중원 15회·수비 라인 2회. 2012-13 28선발, 2013-14 25선발의 지속성과 당해 중앙 전개·압박 회피 역할을 반영한다. 부상으로 당해 출전량이 제한되었으므로 A+는 잠정 유지."
+        },
+        {
+          "id": "bundesliga-2014-wolfsburg-vieirinha",
+          "from": "RB",
+          "to": "RW",
+          "reason": "25선발 중 우측 공격 미드필드 14회, 수비 라인 11회. 우측 전진 역할을 주 포지션으로 잠정 재분류하되 경기 중 위치 이동·교체 기용은 미검증. 31경기 25선발 1골 5도움과 이전 22·7선발을 고려해 A- 유지."
+        }
+      ],
+      "formationEvidence": {
+        "source": "https://datencenter.dfb.de/competitions/bundesliga/seasons/2014-2015",
+        "method": "DFB report: 306 matches, 612 team lineups; 4-2-3-1 303, 4-2-2-2 145, 4-1-4-1 54"
+      },
+      "xiReconciliation": [
+        {
+          "pos": "ST",
+          "oldId": "bundesliga-2014-bayern-robertlewandowski",
+          "newId": "bundesliga-2014-bayern-robertlewandowski",
+          "rank": 1,
+          "tier": "A+"
+        }
+      ]
+    }
   }
 }
