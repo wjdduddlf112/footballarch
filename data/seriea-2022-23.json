@@ -121,7 +121,10 @@
     "priorYearEvidence": {
       "linkedPreviousUnapprovedNumericSlots": 141,
       "fullIndependentThreeSeasonQualitative": 0,
-      "independentlyCrosscheckedHistoricalNumericSlots": 2
+      "independentlyCrosscheckedHistoricalNumericSlots": 2,
+      "numericSlotsPresent": 205,
+      "numericSlotsMissing": 59,
+      "auditReportBackfilledSlots": 62
     },
     "historicalExceptions": [
       "Juventus excluded from 2023-24 European competition (July 2023 UEFA ruling); Fiorentina rank 8 UECL as replacement.",
@@ -146,9 +149,36 @@
     },
     "lastReview": "2026-11-09",
     "birthdayPending": [],
-    "previousYearGaps": 121,
+    "previousYearGaps": 59,
     "topTierIndividualReasonsWritten": 32,
-    "assistsStatus": "no independent comprehensive 2022-23 league assists source; null values"
+    "assistsStatus": "no independent comprehensive 2022-23 league assists source; null values",
+    "segment3Audit": {
+      "source": "FOOTBALL_AUDIT_SERIEA_SEGMENT_3_CORRECTIONS.md",
+      "base": "e7ceebd9b5cda6bf3bedd40024c08bc5218f2200",
+      "counts": {
+        "players": 132,
+        "GK": 14,
+        "held": 8,
+        "prior": 62,
+        "clubRows": 67,
+        "split": 5,
+        "name": 1
+      },
+      "held": [
+        "seriea-2022-23-lazio-elseidhysaj 주 포지션 확인 LB RB",
+        "seriea-2022-23-inter-matteodarmian 주 포지션 확인 RB CB",
+        "seriea-2022-23-roma-nicolazalewski 주 포지션 확인 LB RB",
+        "seriea-2022-23-napoli-bartomiejbereszynski 후보 자격 확인 RB backup",
+        "seriea-2022-23-napoli-diegodemme 후보 자격 확인 DM backup",
+        "seriea-2022-23-napoli-giovannisimeone 후보 자격 확인 ST backup",
+        "seriea-2022-23-lazio-matteocancellieri 후보 자격 확인 RW backup",
+        "seriea-2022-23-milan-alessandroflorenzi 후보 자격 확인 RB backup"
+      ],
+      "xiReview": [
+        "CB Smalling 32/31/3 vs Bastoni 29/26/0; current availability and central defensive contribution support keeping Smalling, but Bastoni has superior documented continuity and progression; comparable back-four vs back-three role evidence insufficient to reorder."
+      ],
+      "limitations": "Report-backed transcription; not independent match-by-match review. Prior clubRecords preserves split Serie A club rows; unknown assists remain null."
+    }
   },
   "clubs": [
     {
@@ -984,7 +1014,11 @@
             "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2022-233003.html",
-            "verification": "single_source_BDFutbol_2022_23_manual_transcription_secondary_pending"
+            "verification": "single_source_BDFutbol_2022_23_manual_transcription_secondary_pending",
+            "goalsAgainst": 24,
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2022-233003.html"
+            ]
           }
         },
         "tierReason": "34경기 34선발 3060분 0골, GK 포지션 주전 경쟁·활약·로테이션 역할을 바탕으로 잠정 평가. 2020-21 22경기(이전 DRAFT), 2021-22 7경기(이전 DRAFT). 2022-23>2021-22>2020-21 우선, 팀 성적 가산점 제외. 등급 A0 잠정.",
@@ -994,7 +1028,8 @@
       "assessmentRationale": "34경기 34선발 3060분 0골, GK 포지션 주전 경쟁·활약·로테이션 역할을 바탕으로 잠정 평가. 2020-21 22경기(이전 DRAFT), 2021-22 7경기(이전 DRAFT). 2022-23>2021-22>2020-21 우선, 팀 성적 가산점 제외. 등급 A0 잠정.",
       "evaluationStatus": "provisional_tier_draft_unapproved",
       "gradeEvidenceStatus": "individual_2022_23_current_source_3year_independent_recheck_pending",
-      "rankStatus": "provisional_ordinal_in_position"
+      "rankStatus": "provisional_ordinal_in_position",
+      "leagueGoalsAgainst": 24
     },
     {
       "id": "seriea-2022-23-napoli-pierluigigollini",
@@ -1065,7 +1100,11 @@
             "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2022-233003.html",
-            "verification": "single_source_BDFutbol_2022_23_manual_transcription_secondary_pending"
+            "verification": "single_source_BDFutbol_2022_23_manual_transcription_secondary_pending",
+            "goalsAgainst": 4,
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2022-233003.html"
+            ]
           }
         },
         "tierReason": "4경기 4선발 360분 0골, GK 포지션 주전 경쟁·활약·로테이션 역할을 바탕으로 잠정 평가. 2020-21 25경기(이전 DRAFT), 2021-22 미확인. 2022-23>2021-22>2020-21 우선, 팀 성적 가산점 제외. 등급 B0 잠정.",
@@ -1075,7 +1114,8 @@
       "assessmentRationale": "4경기 4선발 360분 0골, GK 포지션 주전 경쟁·활약·로테이션 역할을 바탕으로 잠정 평가. 2020-21 25경기(이전 DRAFT), 2021-22 미확인. 2022-23>2021-22>2020-21 우선, 팀 성적 가산점 제외. 등급 B0 잠정.",
       "evaluationStatus": "provisional_tier_draft_unapproved",
       "gradeEvidenceStatus": "individual_2022_23_current_source_3year_independent_recheck_pending",
-      "rankStatus": "provisional_ordinal_in_position"
+      "rankStatus": "provisional_ordinal_in_position",
+      "leagueGoalsAgainst": 4
     },
     {
       "id": "seriea-2022-23-napoli-kimminjae",
@@ -1278,15 +1318,30 @@
         "weighting": "2022-23 highest, 2021-22 secondary, 2020-21 contextual; qualitative",
         "records": {
           "2020-21": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Roma",
+            "league": "Serie A",
+            "appearances": 5,
+            "starts": 0,
+            "minutes": 152,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2020-213009.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2020-213009.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Roma",
+                "league": "Serie A",
+                "starts": 0,
+                "appearances": 5,
+                "minutes": 152,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2020-213009.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2021-22": {
             "club": "SSC Napoli",
@@ -1565,10 +1620,10 @@
     },
     {
       "id": "seriea-2022-23-napoli-bartomiejbereszynski",
-      "name": "Bartłomiej Bereszyński",
-      "nameOriginal": "Bartłomiej Bereszyński",
-      "originalName": "Bartłomiej Bereszyński",
-      "nameKo": "바르트워미에이 베레신스키",
+      "name": "Bartosz Bereszyński",
+      "nameOriginal": "Bartosz Bereszyński",
+      "originalName": "Bartosz Bereszyński",
+      "nameKo": "바르토시 베레신스키",
       "born": "1992-07-12",
       "club": "napoli",
       "clubId": "napoli",
@@ -1591,7 +1646,8 @@
       "verificationStatus": "partially_verified",
       "positionVerification": "representative_tactical_role_dominant_fixture_position_not_independently_checked",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2022-233003.html"
+        "https://www.bdfutbol.com/en/t/t2022-233003.html",
+        "https://legacy.sscnapoli.it/il-napoli-ufficializza-lacquisizione-di-bereszynski-dalla-sampdoria-con-la-formula-del-prestito-con-diritto-di-riscatto/"
       ],
       "threeSeasonReview": {
         "assessmentSeasons": [
@@ -1602,26 +1658,56 @@
         "weighting": "2022-23 highest, 2021-22 secondary, 2020-21 contextual; qualitative",
         "records": {
           "2020-21": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Sampdoria",
+            "league": "Serie A",
+            "appearances": 31,
+            "starts": 29,
+            "minutes": 2606,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2020-213036.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2020-213036.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Sampdoria",
+                "league": "Serie A",
+                "starts": 29,
+                "appearances": 31,
+                "minutes": 2606,
+                "goals": 1,
+                "source": "https://www.bdfutbol.com/en/t/t2020-213036.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2021-22": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Sampdoria",
+            "league": "Serie A",
+            "appearances": 35,
+            "starts": 35,
+            "minutes": 2956,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2021-223036.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2021-223036.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Sampdoria",
+                "league": "Serie A",
+                "starts": 35,
+                "appearances": 35,
+                "minutes": 2956,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2021-223036.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2022-23": {
             "club": "SSC Napoli",
@@ -1683,15 +1769,30 @@
         "weighting": "2022-23 highest, 2021-22 secondary, 2020-21 contextual; qualitative",
         "records": {
           "2020-21": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Napoli",
+            "league": "Serie A",
+            "appearances": 15,
+            "starts": 0,
+            "minutes": 140,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2020-213003.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2020-213003.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Napoli",
+                "league": "Serie A",
+                "starts": 0,
+                "appearances": 15,
+                "minutes": 140,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2020-213003.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2021-22": {
             "club": "SSC Napoli",
@@ -2494,26 +2595,67 @@
         "weighting": "2022-23 highest, 2021-22 secondary, 2020-21 contextual; qualitative",
         "records": {
           "2020-21": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Cagliari",
+            "league": "Serie A",
+            "appearances": 33,
+            "starts": 19,
+            "minutes": 1742,
+            "goals": 6,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2020-213031.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2020-213031.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Cagliari",
+                "league": "Serie A",
+                "starts": 19,
+                "appearances": 33,
+                "minutes": 1742,
+                "goals": 6,
+                "source": "https://www.bdfutbol.com/en/t/t2020-213031.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2021-22": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hellas Verona / Cagliari",
+            "league": "Serie A",
+            "appearances": 36,
+            "starts": 32,
+            "minutes": 2674,
+            "goals": 17,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2021-223002.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2021-223002.html",
+              "https://www.bdfutbol.com/en/t/t2021-223031.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Hellas Verona",
+                "league": "Serie A",
+                "starts": 32,
+                "appearances": 35,
+                "minutes": 2668,
+                "goals": 17,
+                "source": "https://www.bdfutbol.com/en/t/t2021-223002.html",
+                "statsScope": "club-specific Serie A regular season"
+              },
+              {
+                "club": "Cagliari",
+                "league": "Serie A",
+                "starts": 0,
+                "appearances": 1,
+                "minutes": 6,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2021-223031.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2022-23": {
             "club": "SSC Napoli",
@@ -2575,26 +2717,58 @@
         "weighting": "2022-23 highest, 2021-22 secondary, 2020-21 contextual; qualitative",
         "records": {
           "2020-21": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
+            "club": "Spezia",
+            "league": "Serie A",
+            "appearances": 29,
+            "starts": 29,
+            "minutes": 2610,
             "goals": null,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2020-213053.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "goalsAgainst": 55,
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2020-213053.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Spezia",
+                "league": "Serie A",
+                "starts": 29,
+                "appearances": 29,
+                "minutes": 2610,
+                "goalsAgainst": 55,
+                "source": "https://www.bdfutbol.com/en/t/t2020-213053.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2021-22": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
+            "club": "Spezia",
+            "league": "Serie A",
+            "appearances": 31,
+            "starts": 31,
+            "minutes": 2762,
             "goals": null,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2021-223053.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "goalsAgainst": 52,
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2021-223053.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Spezia",
+                "league": "Serie A",
+                "starts": 31,
+                "appearances": 31,
+                "minutes": 2762,
+                "goalsAgainst": 52,
+                "source": "https://www.bdfutbol.com/en/t/t2021-223053.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2022-23": {
             "club": "SS Lazio",
@@ -2605,7 +2779,11 @@
             "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2022-233018.html",
-            "verification": "single_source_BDFutbol_2022_23_manual_transcription_secondary_pending"
+            "verification": "single_source_BDFutbol_2022_23_manual_transcription_secondary_pending",
+            "goalsAgainst": 30,
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2022-233018.html"
+            ]
           }
         },
         "tierReason": "38경기 37선발, 선방과 무실점 경기 다수로 2022-23 공식 최우수 골키퍼. 이전 스페치아 시즌은 독립 확인 대기. 2020-21 미확인, 2021-22 미확인. 2022-23>2021-22>2020-21 우선, 팀 성적 가산점 제외. 등급 A+ 잠정.",
@@ -2615,7 +2793,8 @@
       "assessmentRationale": "38경기 37선발, 선방과 무실점 경기 다수로 2022-23 공식 최우수 골키퍼. 이전 스페치아 시즌은 독립 확인 대기. 2020-21 미확인, 2021-22 미확인. 2022-23>2021-22>2020-21 우선, 팀 성적 가산점 제외. 등급 A+ 잠정.",
       "evaluationStatus": "provisional_tier_draft_unapproved",
       "gradeEvidenceStatus": "individual_2022_23_current_source_3year_independent_recheck_pending",
-      "rankStatus": "provisional_ordinal_in_position"
+      "rankStatus": "provisional_ordinal_in_position",
+      "leagueGoalsAgainst": 30
     },
     {
       "id": "seriea-2022-23-lazio-luismaximiano",
@@ -2686,7 +2865,11 @@
             "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2022-233018.html",
-            "verification": "single_source_BDFutbol_2022_23_manual_transcription_secondary_pending"
+            "verification": "single_source_BDFutbol_2022_23_manual_transcription_secondary_pending",
+            "goalsAgainst": 0,
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2022-233018.html"
+            ]
           }
         },
         "tierReason": "1경기 1선발 6분 0골, GK 포지션 주전 경쟁·활약·로테이션 역할을 바탕으로 잠정 평가. 2020-21 미확인, 2021-22 미확인. 2022-23>2021-22>2020-21 우선, 팀 성적 가산점 제외. 등급 C- 잠정.",
@@ -2696,7 +2879,8 @@
       "assessmentRationale": "1경기 1선발 6분 0골, GK 포지션 주전 경쟁·활약·로테이션 역할을 바탕으로 잠정 평가. 2020-21 미확인, 2021-22 미확인. 2022-23>2021-22>2020-21 우선, 팀 성적 가산점 제외. 등급 C- 잠정.",
       "evaluationStatus": "provisional_tier_draft_unapproved",
       "gradeEvidenceStatus": "individual_2022_23_current_source_3year_independent_recheck_pending",
-      "rankStatus": "provisional_ordinal_in_position"
+      "rankStatus": "provisional_ordinal_in_position",
+      "leagueGoalsAgainst": 0
     },
     {
       "id": "seriea-2022-23-lazio-alessioromagnoli",
@@ -2829,15 +3013,30 @@
             "verification": "evidence_pending"
           },
           "2021-22": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hellas Verona",
+            "league": "Serie A",
+            "appearances": 36,
+            "starts": 30,
+            "minutes": 2593,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2021-223002.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2021-223002.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Hellas Verona",
+                "league": "Serie A",
+                "starts": 30,
+                "appearances": 36,
+                "minutes": 2593,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2021-223002.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2022-23": {
             "club": "SS Lazio",
@@ -3223,15 +3422,30 @@
         "weighting": "2022-23 highest, 2021-22 secondary, 2020-21 contextual; qualitative",
         "records": {
           "2020-21": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Lazio",
+            "league": "Serie A",
+            "appearances": 19,
+            "starts": 4,
+            "minutes": 558,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2020-213018.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2020-213018.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Lazio",
+                "league": "Serie A",
+                "starts": 4,
+                "appearances": 19,
+                "minutes": 558,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2020-213018.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2021-22": {
             "club": "SS Lazio",
@@ -3547,26 +3761,56 @@
         "weighting": "2022-23 highest, 2021-22 secondary, 2020-21 contextual; qualitative",
         "records": {
           "2020-21": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Inter",
+            "league": "Serie A",
+            "appearances": 8,
+            "starts": 3,
+            "minutes": 280,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2020-213008.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2020-213008.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Inter",
+                "league": "Serie A",
+                "starts": 3,
+                "appearances": 8,
+                "minutes": 280,
+                "goals": 1,
+                "source": "https://www.bdfutbol.com/en/t/t2020-213008.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2021-22": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Inter",
+            "league": "Serie A",
+            "appearances": 17,
+            "starts": 2,
+            "minutes": 363,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2021-223008.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2021-223008.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Inter",
+                "league": "Serie A",
+                "starts": 2,
+                "appearances": 17,
+                "minutes": 363,
+                "goals": 1,
+                "source": "https://www.bdfutbol.com/en/t/t2021-223008.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2022-23": {
             "club": "SS Lazio",
@@ -3628,15 +3872,30 @@
         "weighting": "2022-23 highest, 2021-22 secondary, 2020-21 contextual; qualitative",
         "records": {
           "2020-21": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hellas Verona",
+            "league": "Serie A",
+            "appearances": 36,
+            "starts": 33,
+            "minutes": 2629,
+            "goals": 5,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2020-213002.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2020-213002.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Hellas Verona",
+                "league": "Serie A",
+                "starts": 33,
+                "appearances": 36,
+                "minutes": 2629,
+                "goals": 5,
+                "source": "https://www.bdfutbol.com/en/t/t2020-213002.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2021-22": {
             "club": "SS Lazio",
@@ -3882,15 +4141,30 @@
             "verification": "evidence_pending"
           },
           "2021-22": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hellas Verona",
+            "league": "Serie A",
+            "appearances": 12,
+            "starts": 1,
+            "minutes": 217,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2021-223002.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2021-223002.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Hellas Verona",
+                "league": "Serie A",
+                "starts": 1,
+                "appearances": 12,
+                "minutes": 217,
+                "goals": 1,
+                "source": "https://www.bdfutbol.com/en/t/t2021-223002.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2022-23": {
             "club": "SS Lazio",
@@ -4063,7 +4337,11 @@
             "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2022-233008.html",
-            "verification": "single_source_BDFutbol_2022_23_manual_transcription_secondary_pending"
+            "verification": "single_source_BDFutbol_2022_23_manual_transcription_secondary_pending",
+            "goalsAgainst": 24,
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2022-233008.html"
+            ]
           }
         },
         "tierReason": "24경기 24선발, 좁은 압박에서 빌드업과 빠른 커버, 핸더노비치와 주전 경쟁 뒤 확고한 선발. 2020-21 미확인, 2021-22 미확인. 2022-23>2021-22>2020-21 우선, 팀 성적 가산점 제외. 등급 A0 잠정.",
@@ -4073,7 +4351,8 @@
       "assessmentRationale": "24경기 24선발, 좁은 압박에서 빌드업과 빠른 커버, 핸더노비치와 주전 경쟁 뒤 확고한 선발. 2020-21 미확인, 2021-22 미확인. 2022-23>2021-22>2020-21 우선, 팀 성적 가산점 제외. 등급 A0 잠정.",
       "evaluationStatus": "provisional_tier_draft_unapproved",
       "gradeEvidenceStatus": "individual_2022_23_current_source_3year_independent_recheck_pending",
-      "rankStatus": "provisional_ordinal_in_position"
+      "rankStatus": "provisional_ordinal_in_position",
+      "leagueGoalsAgainst": 24
     },
     {
       "id": "seriea-2022-23-inter-samirhandanovic",
@@ -4144,7 +4423,11 @@
             "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2022-233008.html",
-            "verification": "single_source_BDFutbol_2022_23_manual_transcription_secondary_pending"
+            "verification": "single_source_BDFutbol_2022_23_manual_transcription_secondary_pending",
+            "goalsAgainst": 18,
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2022-233008.html"
+            ]
           }
         },
         "tierReason": "14경기 14선발 1235분 0골, GK 포지션 주전 경쟁·활약·로테이션 역할을 바탕으로 잠정 평가. 2020-21 37경기(이전 DRAFT), 2021-22 37경기(이전 DRAFT). 2022-23>2021-22>2020-21 우선, 팀 성적 가산점 제외. 등급 B+ 잠정.",
@@ -4154,7 +4437,8 @@
       "assessmentRationale": "14경기 14선발 1235분 0골, GK 포지션 주전 경쟁·활약·로테이션 역할을 바탕으로 잠정 평가. 2020-21 37경기(이전 DRAFT), 2021-22 37경기(이전 DRAFT). 2022-23>2021-22>2020-21 우선, 팀 성적 가산점 제외. 등급 B+ 잠정.",
       "evaluationStatus": "provisional_tier_draft_unapproved",
       "gradeEvidenceStatus": "individual_2022_23_current_source_3year_independent_recheck_pending",
-      "rankStatus": "provisional_ordinal_in_position"
+      "rankStatus": "provisional_ordinal_in_position",
+      "leagueGoalsAgainst": 18
     },
     {
       "id": "seriea-2022-23-inter-alessandrobastoni",
@@ -4519,15 +4803,30 @@
         "weighting": "2022-23 highest, 2021-22 secondary, 2020-21 contextual; qualitative",
         "records": {
           "2020-21": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hellas Verona",
+            "league": "Serie A",
+            "appearances": 35,
+            "starts": 29,
+            "minutes": 2615,
+            "goals": 5,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2020-213002.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2020-213002.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Hellas Verona",
+                "league": "Serie A",
+                "starts": 29,
+                "appearances": 35,
+                "minutes": 2615,
+                "goals": 5,
+                "source": "https://www.bdfutbol.com/en/t/t2020-213002.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2021-22": {
             "club": "FC Internazionale Milano",
@@ -4611,15 +4910,41 @@
             "verification": "linked_prior_unapproved_archive_not_independently_verified"
           },
           "2021-22": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Inter / Atalanta",
+            "league": "Serie A",
+            "appearances": 13,
+            "starts": 5,
+            "minutes": 624,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2021-223008.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2021-223008.html",
+              "https://www.bdfutbol.com/en/t/t2021-223017.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Inter",
+                "league": "Serie A",
+                "starts": 0,
+                "appearances": 7,
+                "minutes": 162,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2021-223008.html",
+                "statsScope": "club-specific Serie A regular season"
+              },
+              {
+                "club": "Atalanta",
+                "league": "Serie A",
+                "starts": 5,
+                "appearances": 6,
+                "minutes": 462,
+                "goals": 1,
+                "source": "https://www.bdfutbol.com/en/t/t2021-223017.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2022-23": {
             "club": "FC Internazionale Milano",
@@ -4935,15 +5260,30 @@
             "verification": "evidence_pending"
           },
           "2021-22": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Empoli",
+            "league": "Serie A",
+            "appearances": 23,
+            "starts": 14,
+            "minutes": 1346,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2021-223025.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2021-223025.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Empoli",
+                "league": "Serie A",
+                "starts": 14,
+                "appearances": 23,
+                "minutes": 1346,
+                "goals": 1,
+                "source": "https://www.bdfutbol.com/en/t/t2021-223025.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2022-23": {
             "club": "FC Internazionale Milano",
@@ -5521,7 +5861,11 @@
             "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2022-233015.html",
-            "verification": "single_source_BDFutbol_2022_23_manual_transcription_secondary_pending"
+            "verification": "single_source_BDFutbol_2022_23_manual_transcription_secondary_pending",
+            "goalsAgainst": 21,
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2022-233015.html"
+            ]
           }
         },
         "tierReason": "부상으로 22경기 22선발에 그쳤으나 선방·빌드업 능력은 높았음. 전년 최우수 골키퍼 이력과 당시 부재 감안. 2020-21 미확인, 2021-22 32경기(이전 DRAFT). 2022-23>2021-22>2020-21 우선, 팀 성적 가산점 제외. 등급 A+ 잠정.",
@@ -5531,7 +5875,8 @@
       "assessmentRationale": "부상으로 22경기 22선발에 그쳤으나 선방·빌드업 능력은 높았음. 전년 최우수 골키퍼 이력과 당시 부재 감안. 2020-21 미확인, 2021-22 32경기(이전 DRAFT). 2022-23>2021-22>2020-21 우선, 팀 성적 가산점 제외. 등급 A+ 잠정.",
       "evaluationStatus": "provisional_tier_draft_unapproved",
       "gradeEvidenceStatus": "individual_2022_23_current_source_3year_independent_recheck_pending",
-      "rankStatus": "provisional_ordinal_in_position"
+      "rankStatus": "provisional_ordinal_in_position",
+      "leagueGoalsAgainst": 21
     },
     {
       "id": "seriea-2022-23-milan-cipriantatarusanu",
@@ -5602,7 +5947,11 @@
             "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2022-233015.html",
-            "verification": "single_source_BDFutbol_2022_23_manual_transcription_secondary_pending"
+            "verification": "single_source_BDFutbol_2022_23_manual_transcription_secondary_pending",
+            "goalsAgainst": 22,
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2022-233015.html"
+            ]
           }
         },
         "tierReason": "16경기 16선발 1440분 0골, GK 포지션 주전 경쟁·활약·로테이션 역할을 바탕으로 잠정 평가. 2020-21 1경기(이전 DRAFT), 2021-22 6경기(이전 DRAFT). 2022-23>2021-22>2020-21 우선, 팀 성적 가산점 제외. 등급 B0 잠정.",
@@ -5612,7 +5961,8 @@
       "assessmentRationale": "16경기 16선발 1440분 0골, GK 포지션 주전 경쟁·활약·로테이션 역할을 바탕으로 잠정 평가. 2020-21 1경기(이전 DRAFT), 2021-22 6경기(이전 DRAFT). 2022-23>2021-22>2020-21 우선, 팀 성적 가산점 제외. 등급 B0 잠정.",
       "evaluationStatus": "provisional_tier_draft_unapproved",
       "gradeEvidenceStatus": "individual_2022_23_current_source_3year_independent_recheck_pending",
-      "rankStatus": "provisional_ordinal_in_position"
+      "rankStatus": "provisional_ordinal_in_position",
+      "leagueGoalsAgainst": 22
     },
     {
       "id": "seriea-2022-23-milan-fikayotomori",
@@ -6787,15 +7137,30 @@
         "weighting": "2022-23 highest, 2021-22 secondary, 2020-21 contextual; qualitative",
         "records": {
           "2020-21": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Crotone",
+            "league": "Serie A",
+            "appearances": 36,
+            "starts": 36,
+            "minutes": 3217,
+            "goals": 9,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2020-213050.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2020-213050.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Crotone",
+                "league": "Serie A",
+                "starts": 36,
+                "appearances": 36,
+                "minutes": 3217,
+                "goals": 9,
+                "source": "https://www.bdfutbol.com/en/t/t2020-213050.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2021-22": {
             "club": "AC Milan",
@@ -7111,26 +7476,58 @@
         "weighting": "2022-23 highest, 2021-22 secondary, 2020-21 contextual; qualitative",
         "records": {
           "2020-21": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
+            "club": "Udinese",
+            "league": "Serie A",
+            "appearances": 35,
+            "starts": 35,
+            "minutes": 3148,
             "goals": null,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2020-213005.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "goalsAgainst": 51,
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2020-213005.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Udinese",
+                "league": "Serie A",
+                "starts": 35,
+                "appearances": 35,
+                "minutes": 3148,
+                "goalsAgainst": 51,
+                "source": "https://www.bdfutbol.com/en/t/t2020-213005.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2021-22": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
+            "club": "Atalanta",
+            "league": "Serie A",
+            "appearances": 33,
+            "starts": 33,
+            "minutes": 2932,
             "goals": null,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2021-223017.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "goalsAgainst": 42,
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2021-223017.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Atalanta",
+                "league": "Serie A",
+                "starts": 33,
+                "appearances": 33,
+                "minutes": 2932,
+                "goalsAgainst": 42,
+                "source": "https://www.bdfutbol.com/en/t/t2021-223017.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2022-23": {
             "club": "Atalanta BC",
@@ -7141,7 +7538,11 @@
             "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2022-233017.html",
-            "verification": "single_source_BDFutbol_2022_23_manual_transcription_secondary_pending"
+            "verification": "single_source_BDFutbol_2022_23_manual_transcription_secondary_pending",
+            "goalsAgainst": 27,
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2022-233017.html"
+            ]
           }
         },
         "tierReason": "24경기 24선발 2078분 0골, GK 포지션 주전 경쟁·활약·로테이션 역할을 바탕으로 잠정 평가. 2020-21 미확인, 2021-22 미확인. 2022-23>2021-22>2020-21 우선, 팀 성적 가산점 제외. 등급 B+ 잠정.",
@@ -7151,7 +7552,8 @@
       "assessmentRationale": "24경기 24선발 2078분 0골, GK 포지션 주전 경쟁·활약·로테이션 역할을 바탕으로 잠정 평가. 2020-21 미확인, 2021-22 미확인. 2022-23>2021-22>2020-21 우선, 팀 성적 가산점 제외. 등급 B+ 잠정.",
       "evaluationStatus": "provisional_tier_draft_unapproved",
       "gradeEvidenceStatus": "individual_2022_23_current_source_3year_independent_recheck_pending",
-      "rankStatus": "provisional_ordinal_in_position"
+      "rankStatus": "provisional_ordinal_in_position",
+      "leagueGoalsAgainst": 27
     },
     {
       "id": "seriea-2022-23-atalanta-marcosportiello",
@@ -7203,15 +7605,31 @@
             "verification": "linked_prior_unapproved_archive_not_independently_verified"
           },
           "2021-22": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
+            "club": "Atalanta",
+            "league": "Serie A",
+            "appearances": 5,
+            "starts": 5,
+            "minutes": 450,
             "goals": null,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2021-223017.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "goalsAgainst": 5,
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2021-223017.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Atalanta",
+                "league": "Serie A",
+                "starts": 5,
+                "appearances": 5,
+                "minutes": 450,
+                "goalsAgainst": 5,
+                "source": "https://www.bdfutbol.com/en/t/t2021-223017.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2022-23": {
             "club": "Atalanta BC",
@@ -7222,7 +7640,11 @@
             "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2022-233017.html",
-            "verification": "single_source_BDFutbol_2022_23_manual_transcription_secondary_pending"
+            "verification": "single_source_BDFutbol_2022_23_manual_transcription_secondary_pending",
+            "goalsAgainst": 21,
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2022-233017.html"
+            ]
           }
         },
         "tierReason": "15경기 14선발 1340분 0골, GK 포지션 주전 경쟁·활약·로테이션 역할을 바탕으로 잠정 평가. 2020-21 15경기(이전 DRAFT), 2021-22 미확인. 2022-23>2021-22>2020-21 우선, 팀 성적 가산점 제외. 등급 B0 잠정.",
@@ -7232,7 +7654,8 @@
       "assessmentRationale": "15경기 14선발 1340분 0골, GK 포지션 주전 경쟁·활약·로테이션 역할을 바탕으로 잠정 평가. 2020-21 15경기(이전 DRAFT), 2021-22 미확인. 2022-23>2021-22>2020-21 우선, 팀 성적 가산점 제외. 등급 B0 잠정.",
       "evaluationStatus": "provisional_tier_draft_unapproved",
       "gradeEvidenceStatus": "individual_2022_23_current_source_3year_independent_recheck_pending",
-      "rankStatus": "provisional_ordinal_in_position"
+      "rankStatus": "provisional_ordinal_in_position",
+      "leagueGoalsAgainst": 21
     },
     {
       "id": "seriea-2022-23-atalanta-giorgioscalvini",
@@ -7284,15 +7707,30 @@
             "verification": "evidence_pending"
           },
           "2021-22": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Atalanta",
+            "league": "Serie A",
+            "appearances": 18,
+            "starts": 9,
+            "minutes": 760,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2021-223017.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2021-223017.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Atalanta",
+                "league": "Serie A",
+                "starts": 9,
+                "appearances": 18,
+                "minutes": 760,
+                "goals": 1,
+                "source": "https://www.bdfutbol.com/en/t/t2021-223017.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2022-23": {
             "club": "Atalanta BC",
@@ -7365,15 +7803,30 @@
             "verification": "linked_prior_unapproved_archive_not_independently_verified"
           },
           "2021-22": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Atalanta",
+            "league": "Serie A",
+            "appearances": 20,
+            "starts": 16,
+            "minutes": 1440,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2021-223017.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2021-223017.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Atalanta",
+                "league": "Serie A",
+                "starts": 16,
+                "appearances": 20,
+                "minutes": 1440,
+                "goals": 1,
+                "source": "https://www.bdfutbol.com/en/t/t2021-223017.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2022-23": {
             "club": "Atalanta BC",
@@ -7446,15 +7899,30 @@
             "verification": "linked_prior_unapproved_archive_not_independently_verified"
           },
           "2021-22": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Atalanta",
+            "league": "Serie A",
+            "appearances": 31,
+            "starts": 25,
+            "minutes": 2255,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2021-223017.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2021-223017.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Atalanta",
+                "league": "Serie A",
+                "starts": 25,
+                "appearances": 31,
+                "minutes": 2255,
+                "goals": 1,
+                "source": "https://www.bdfutbol.com/en/t/t2021-223017.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2022-23": {
             "club": "Atalanta BC",
@@ -7516,26 +7984,56 @@
         "weighting": "2022-23 highest, 2021-22 secondary, 2020-21 contextual; qualitative",
         "records": {
           "2020-21": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Juventus",
+            "league": "Serie A",
+            "appearances": 15,
+            "starts": 10,
+            "minutes": 937,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2020-213004.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2020-213004.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Juventus",
+                "league": "Serie A",
+                "starts": 10,
+                "appearances": 15,
+                "minutes": 937,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2020-213004.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2021-22": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Atalanta",
+            "league": "Serie A",
+            "appearances": 28,
+            "starts": 22,
+            "minutes": 1915,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2021-223017.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2021-223017.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Atalanta",
+                "league": "Serie A",
+                "starts": 22,
+                "appearances": 28,
+                "minutes": 1915,
+                "goals": 1,
+                "source": "https://www.bdfutbol.com/en/t/t2021-223017.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2022-23": {
             "club": "Atalanta BC",
@@ -7608,15 +8106,30 @@
             "verification": "linked_prior_unapproved_archive_not_independently_verified"
           },
           "2021-22": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Atalanta",
+            "league": "Serie A",
+            "appearances": 26,
+            "starts": 15,
+            "minutes": 1466,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2021-223017.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2021-223017.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Atalanta",
+                "league": "Serie A",
+                "starts": 15,
+                "appearances": 26,
+                "minutes": 1466,
+                "goals": 1,
+                "source": "https://www.bdfutbol.com/en/t/t2021-223017.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2022-23": {
             "club": "Atalanta BC",
@@ -7678,26 +8191,56 @@
         "weighting": "2022-23 highest, 2021-22 secondary, 2020-21 contextual; qualitative",
         "records": {
           "2020-21": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Atalanta",
+            "league": "Serie A",
+            "appearances": 6,
+            "starts": 3,
+            "minutes": 209,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2020-213017.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2020-213017.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Atalanta",
+                "league": "Serie A",
+                "starts": 3,
+                "appearances": 6,
+                "minutes": 209,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2020-213017.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2021-22": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Salernitana",
+            "league": "Serie A",
+            "appearances": 14,
+            "starts": 8,
+            "minutes": 678,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2021-223042.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2021-223042.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Salernitana",
+                "league": "Serie A",
+                "starts": 8,
+                "appearances": 14,
+                "minutes": 678,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2021-223042.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2022-23": {
             "club": "Atalanta BC",
@@ -7759,26 +8302,56 @@
         "weighting": "2022-23 highest, 2021-22 secondary, 2020-21 contextual; qualitative",
         "records": {
           "2020-21": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Genoa",
+            "league": "Serie A",
+            "appearances": 25,
+            "starts": 23,
+            "minutes": 2048,
+            "goals": 4,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2020-213035.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2020-213035.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Genoa",
+                "league": "Serie A",
+                "starts": 23,
+                "appearances": 25,
+                "minutes": 2048,
+                "goals": 4,
+                "source": "https://www.bdfutbol.com/en/t/t2020-213035.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2021-22": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Atalanta",
+            "league": "Serie A",
+            "appearances": 34,
+            "starts": 29,
+            "minutes": 2359,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2021-223017.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2021-223017.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Atalanta",
+                "league": "Serie A",
+                "starts": 29,
+                "appearances": 34,
+                "minutes": 2359,
+                "goals": 1,
+                "source": "https://www.bdfutbol.com/en/t/t2021-223017.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2022-23": {
             "club": "Atalanta BC",
@@ -7851,15 +8424,30 @@
             "verification": "linked_prior_unapproved_archive_not_independently_verified"
           },
           "2021-22": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Atalanta",
+            "league": "Serie A",
+            "appearances": 21,
+            "starts": 16,
+            "minutes": 1389,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2021-223017.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2021-223017.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Atalanta",
+                "league": "Serie A",
+                "starts": 16,
+                "appearances": 21,
+                "minutes": 1389,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2021-223017.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2022-23": {
             "club": "Atalanta BC",
@@ -7932,15 +8520,30 @@
             "verification": "linked_prior_unapproved_archive_not_independently_verified"
           },
           "2021-22": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Atalanta",
+            "league": "Serie A",
+            "appearances": 30,
+            "starts": 28,
+            "minutes": 2548,
+            "goals": 3,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2021-223017.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2021-223017.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Atalanta",
+                "league": "Serie A",
+                "starts": 28,
+                "appearances": 30,
+                "minutes": 2548,
+                "goals": 3,
+                "source": "https://www.bdfutbol.com/en/t/t2021-223017.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2022-23": {
             "club": "Atalanta BC",
@@ -8013,15 +8616,30 @@
             "verification": "evidence_pending"
           },
           "2021-22": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Atalanta",
+            "league": "Serie A",
+            "appearances": 30,
+            "starts": 23,
+            "minutes": 2126,
+            "goals": 4,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2021-223017.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2021-223017.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Atalanta",
+                "league": "Serie A",
+                "starts": 23,
+                "appearances": 30,
+                "minutes": 2126,
+                "goals": 4,
+                "source": "https://www.bdfutbol.com/en/t/t2021-223017.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2022-23": {
             "club": "Atalanta BC",
@@ -8094,15 +8712,30 @@
             "verification": "evidence_pending"
           },
           "2021-22": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Salernitana",
+            "league": "Serie A",
+            "appearances": 15,
+            "starts": 13,
+            "minutes": 1151,
+            "goals": 2,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2021-223042.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2021-223042.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Salernitana",
+                "league": "Serie A",
+                "starts": 13,
+                "appearances": 15,
+                "minutes": 1151,
+                "goals": 2,
+                "source": "https://www.bdfutbol.com/en/t/t2021-223042.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2022-23": {
             "club": "Atalanta BC",
@@ -8175,15 +8808,30 @@
             "verification": "linked_prior_unapproved_archive_not_independently_verified"
           },
           "2021-22": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Atalanta",
+            "league": "Serie A",
+            "appearances": 37,
+            "starts": 24,
+            "minutes": 2009,
+            "goals": 13,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2021-223017.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2021-223017.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Atalanta",
+                "league": "Serie A",
+                "starts": 24,
+                "appearances": 37,
+                "minutes": 2009,
+                "goals": 13,
+                "source": "https://www.bdfutbol.com/en/t/t2021-223017.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2022-23": {
             "club": "Atalanta BC",
@@ -8418,15 +9066,30 @@
             "verification": "linked_prior_unapproved_archive_not_independently_verified"
           },
           "2021-22": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Atalanta",
+            "league": "Serie A",
+            "appearances": 24,
+            "starts": 20,
+            "minutes": 1731,
+            "goals": 10,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2021-223017.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2021-223017.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Atalanta",
+                "league": "Serie A",
+                "starts": 20,
+                "appearances": 24,
+                "minutes": 1731,
+                "goals": 10,
+                "source": "https://www.bdfutbol.com/en/t/t2021-223017.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2022-23": {
             "club": "Atalanta BC",
@@ -8518,7 +9181,11 @@
             "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2022-233009.html",
-            "verification": "single_source_BDFutbol_2022_23_manual_transcription_secondary_pending"
+            "verification": "single_source_BDFutbol_2022_23_manual_transcription_secondary_pending",
+            "goalsAgainst": 35,
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2022-233009.html"
+            ]
           }
         },
         "tierReason": "35경기 35선발 3150분 0골, GK 포지션 주전 경쟁·활약·로테이션 역할을 바탕으로 잠정 평가. 2020-21 미확인, 2021-22 38경기(이전 DRAFT). 2022-23>2021-22>2020-21 우선, 팀 성적 가산점 제외. 등급 B+ 잠정.",
@@ -8528,7 +9195,8 @@
       "assessmentRationale": "35경기 35선발 3150분 0골, GK 포지션 주전 경쟁·활약·로테이션 역할을 바탕으로 잠정 평가. 2020-21 미확인, 2021-22 38경기(이전 DRAFT). 2022-23>2021-22>2020-21 우선, 팀 성적 가산점 제외. 등급 B+ 잠정.",
       "evaluationStatus": "provisional_tier_draft_unapproved",
       "gradeEvidenceStatus": "individual_2022_23_current_source_3year_independent_recheck_pending",
-      "rankStatus": "provisional_ordinal_in_position"
+      "rankStatus": "provisional_ordinal_in_position",
+      "leagueGoalsAgainst": 35
     },
     {
       "id": "seriea-2022-23-roma-milesvilar",
@@ -8599,7 +9267,11 @@
             "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2022-233009.html",
-            "verification": "single_source_BDFutbol_2022_23_manual_transcription_secondary_pending"
+            "verification": "single_source_BDFutbol_2022_23_manual_transcription_secondary_pending",
+            "goalsAgainst": 3,
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2022-233009.html"
+            ]
           }
         },
         "tierReason": "3경기 3선발 270분 0골, GK 포지션 주전 경쟁·활약·로테이션 역할을 바탕으로 잠정 평가. 2020-21 미확인, 2021-22 미확인. 2022-23>2021-22>2020-21 우선, 팀 성적 가산점 제외. 등급 C+ 잠정.",
@@ -8609,7 +9281,8 @@
       "assessmentRationale": "3경기 3선발 270분 0골, GK 포지션 주전 경쟁·활약·로테이션 역할을 바탕으로 잠정 평가. 2020-21 미확인, 2021-22 미확인. 2022-23>2021-22>2020-21 우선, 팀 성적 가산점 제외. 등급 C+ 잠정.",
       "evaluationStatus": "provisional_tier_draft_unapproved",
       "gradeEvidenceStatus": "individual_2022_23_current_source_3year_independent_recheck_pending",
-      "rankStatus": "provisional_ordinal_in_position"
+      "rankStatus": "provisional_ordinal_in_position",
+      "leagueGoalsAgainst": 3
     },
     {
       "id": "seriea-2022-23-roma-gianlucamancini",
@@ -8812,15 +9485,30 @@
         "weighting": "2022-23 highest, 2021-22 secondary, 2020-21 contextual; qualitative",
         "records": {
           "2020-21": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Roma",
+            "league": "Serie A",
+            "appearances": 16,
+            "starts": 13,
+            "minutes": 1110,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2020-213009.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2020-213009.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Roma",
+                "league": "Serie A",
+                "starts": 13,
+                "appearances": 16,
+                "minutes": 1110,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2020-213009.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2021-22": {
             "club": "AS Roma",
@@ -8974,15 +9662,30 @@
         "weighting": "2022-23 highest, 2021-22 secondary, 2020-21 contextual; qualitative",
         "records": {
           "2020-21": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Roma",
+            "league": "Serie A",
+            "appearances": 1,
+            "starts": 0,
+            "minutes": 10,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2020-213009.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2020-213009.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Roma",
+                "league": "Serie A",
+                "starts": 0,
+                "appearances": 1,
+                "minutes": 10,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2020-213009.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2021-22": {
             "club": "AS Roma",
@@ -9066,15 +9769,30 @@
             "verification": "linked_prior_unapproved_archive_not_independently_verified"
           },
           "2021-22": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Roma",
+            "league": "Serie A",
+            "appearances": 3,
+            "starts": 2,
+            "minutes": 129,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2021-223009.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2021-223009.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Roma",
+                "league": "Serie A",
+                "starts": 2,
+                "appearances": 3,
+                "minutes": 129,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2021-223009.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2022-23": {
             "club": "AS Roma",
@@ -9460,26 +10178,56 @@
         "weighting": "2022-23 highest, 2021-22 secondary, 2020-21 contextual; qualitative",
         "records": {
           "2020-21": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Roma",
+            "league": "Serie A",
+            "appearances": 1,
+            "starts": 0,
+            "minutes": 10,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2020-213009.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2020-213009.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Roma",
+                "league": "Serie A",
+                "starts": 0,
+                "appearances": 1,
+                "minutes": 10,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2020-213009.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2021-22": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Roma",
+            "league": "Serie A",
+            "appearances": 11,
+            "starts": 0,
+            "minutes": 63,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2021-223009.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2021-223009.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Roma",
+                "league": "Serie A",
+                "starts": 0,
+                "appearances": 11,
+                "minutes": 63,
+                "goals": 1,
+                "source": "https://www.bdfutbol.com/en/t/t2021-223009.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2022-23": {
             "club": "AS Roma",
@@ -9703,15 +10451,30 @@
         "weighting": "2022-23 highest, 2021-22 secondary, 2020-21 contextual; qualitative",
         "records": {
           "2020-21": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Roma",
+            "league": "Serie A",
+            "appearances": 10,
+            "starts": 6,
+            "minutes": 571,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2020-213009.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2020-213009.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Roma",
+                "league": "Serie A",
+                "starts": 6,
+                "appearances": 10,
+                "minutes": 571,
+                "goals": 1,
+                "source": "https://www.bdfutbol.com/en/t/t2020-213009.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2021-22": {
             "club": "AS Roma",
@@ -9865,26 +10628,56 @@
         "weighting": "2022-23 highest, 2021-22 secondary, 2020-21 contextual; qualitative",
         "records": {
           "2020-21": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Torino",
+            "league": "Serie A",
+            "appearances": 35,
+            "starts": 33,
+            "minutes": 2895,
+            "goals": 13,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2020-213019.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2020-213019.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Torino",
+                "league": "Serie A",
+                "starts": 33,
+                "appearances": 35,
+                "minutes": 2895,
+                "goals": 13,
+                "source": "https://www.bdfutbol.com/en/t/t2020-213019.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2021-22": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Torino",
+            "league": "Serie A",
+            "appearances": 22,
+            "starts": 16,
+            "minutes": 1378,
+            "goals": 8,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2021-223019.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2021-223019.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Torino",
+                "league": "Serie A",
+                "starts": 16,
+                "appearances": 22,
+                "minutes": 1378,
+                "goals": 8,
+                "source": "https://www.bdfutbol.com/en/t/t2021-223019.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2022-23": {
             "club": "AS Roma",
@@ -9946,15 +10739,31 @@
         "weighting": "2022-23 highest, 2021-22 secondary, 2020-21 contextual; qualitative",
         "records": {
           "2020-21": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
+            "club": "Fiorentina",
+            "league": "Serie A",
+            "appearances": 4,
+            "starts": 2,
+            "minutes": 270,
             "goals": null,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2020-213014.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "goalsAgainst": 4,
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2020-213014.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Fiorentina",
+                "league": "Serie A",
+                "starts": 2,
+                "appearances": 4,
+                "minutes": 270,
+                "goalsAgainst": 4,
+                "source": "https://www.bdfutbol.com/en/t/t2020-213014.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2021-22": {
             "club": "ACF Fiorentina",
@@ -9976,7 +10785,11 @@
             "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2022-233014.html",
-            "verification": "single_source_BDFutbol_2022_23_manual_transcription_secondary_pending"
+            "verification": "single_source_BDFutbol_2022_23_manual_transcription_secondary_pending",
+            "goalsAgainst": 38,
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2022-233014.html"
+            ]
           }
         },
         "tierReason": "29경기 29선발 2610분 0골, GK 포지션 주전 경쟁·활약·로테이션 역할을 바탕으로 잠정 평가. 2020-21 미확인, 2021-22 32경기(이전 DRAFT). 2022-23>2021-22>2020-21 우선, 팀 성적 가산점 제외. 등급 B+ 잠정.",
@@ -9986,7 +10799,8 @@
       "assessmentRationale": "29경기 29선발 2610분 0골, GK 포지션 주전 경쟁·활약·로테이션 역할을 바탕으로 잠정 평가. 2020-21 미확인, 2021-22 32경기(이전 DRAFT). 2022-23>2021-22>2020-21 우선, 팀 성적 가산점 제외. 등급 B+ 잠정.",
       "evaluationStatus": "provisional_tier_draft_unapproved",
       "gradeEvidenceStatus": "individual_2022_23_current_source_3year_independent_recheck_pending",
-      "rankStatus": "provisional_ordinal_in_position"
+      "rankStatus": "provisional_ordinal_in_position",
+      "leagueGoalsAgainst": 38
     },
     {
       "id": "seriea-2022-23-fiorentina-michelecerofolini",
@@ -10057,7 +10871,11 @@
             "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2022-233014.html",
-            "verification": "single_source_BDFutbol_2022_23_manual_transcription_secondary_pending"
+            "verification": "single_source_BDFutbol_2022_23_manual_transcription_secondary_pending",
+            "goalsAgainst": 3,
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2022-233014.html"
+            ]
           }
         },
         "tierReason": "5경기 5선발 450분 0골, GK 포지션 주전 경쟁·활약·로테이션 역할을 바탕으로 잠정 평가. 2020-21 미확인, 2021-22 미확인. 2022-23>2021-22>2020-21 우선, 팀 성적 가산점 제외. 등급 B0 잠정.",
@@ -10067,7 +10885,8 @@
       "assessmentRationale": "5경기 5선발 450분 0골, GK 포지션 주전 경쟁·활약·로테이션 역할을 바탕으로 잠정 평가. 2020-21 미확인, 2021-22 미확인. 2022-23>2021-22>2020-21 우선, 팀 성적 가산점 제외. 등급 B0 잠정.",
       "evaluationStatus": "provisional_tier_draft_unapproved",
       "gradeEvidenceStatus": "individual_2022_23_current_source_3year_independent_recheck_pending",
-      "rankStatus": "provisional_ordinal_in_position"
+      "rankStatus": "provisional_ordinal_in_position",
+      "leagueGoalsAgainst": 3
     },
     {
       "id": "seriea-2022-23-fiorentina-nikolamilenkovic",
@@ -10108,15 +10927,30 @@
         "weighting": "2022-23 highest, 2021-22 secondary, 2020-21 contextual; qualitative",
         "records": {
           "2020-21": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Fiorentina",
+            "league": "Serie A",
+            "appearances": 34,
+            "starts": 34,
+            "minutes": 3036,
+            "goals": 3,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2020-213014.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2020-213014.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Fiorentina",
+                "league": "Serie A",
+                "starts": 34,
+                "appearances": 34,
+                "minutes": 3036,
+                "goals": 3,
+                "source": "https://www.bdfutbol.com/en/t/t2020-213014.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2021-22": {
             "club": "ACF Fiorentina",
@@ -10189,15 +11023,30 @@
         "weighting": "2022-23 highest, 2021-22 secondary, 2020-21 contextual; qualitative",
         "records": {
           "2020-21": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Fiorentina",
+            "league": "Serie A",
+            "appearances": 21,
+            "starts": 13,
+            "minutes": 1164,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2020-213014.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2020-213014.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Fiorentina",
+                "league": "Serie A",
+                "starts": 13,
+                "appearances": 21,
+                "minutes": 1164,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2020-213014.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2021-22": {
             "club": "ACF Fiorentina",
@@ -10270,15 +11119,30 @@
         "weighting": "2022-23 highest, 2021-22 secondary, 2020-21 contextual; qualitative",
         "records": {
           "2020-21": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Fiorentina",
+            "league": "Serie A",
+            "appearances": 21,
+            "starts": 15,
+            "minutes": 1482,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2020-213014.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2020-213014.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Fiorentina",
+                "league": "Serie A",
+                "starts": 15,
+                "appearances": 21,
+                "minutes": 1482,
+                "goals": 1,
+                "source": "https://www.bdfutbol.com/en/t/t2020-213014.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2021-22": {
             "club": "ACF Fiorentina",
@@ -10362,15 +11226,30 @@
             "verification": "evidence_pending"
           },
           "2021-22": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Salernitana",
+            "league": "Serie A",
+            "appearances": 27,
+            "starts": 25,
+            "minutes": 2115,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2021-223042.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2021-223042.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Salernitana",
+                "league": "Serie A",
+                "starts": 25,
+                "appearances": 27,
+                "minutes": 2115,
+                "goals": 1,
+                "source": "https://www.bdfutbol.com/en/t/t2021-223042.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2022-23": {
             "club": "ACF Fiorentina",
@@ -10432,15 +11311,30 @@
         "weighting": "2022-23 highest, 2021-22 secondary, 2020-21 contextual; qualitative",
         "records": {
           "2020-21": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Fiorentina",
+            "league": "Serie A",
+            "appearances": 35,
+            "starts": 31,
+            "minutes": 2809,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2020-213014.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2020-213014.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Fiorentina",
+                "league": "Serie A",
+                "starts": 31,
+                "appearances": 35,
+                "minutes": 2809,
+                "goals": 1,
+                "source": "https://www.bdfutbol.com/en/t/t2020-213014.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2021-22": {
             "club": "ACF Fiorentina",
@@ -10675,15 +11569,30 @@
         "weighting": "2022-23 highest, 2021-22 secondary, 2020-21 contextual; qualitative",
         "records": {
           "2020-21": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Fiorentina",
+            "league": "Serie A",
+            "appearances": 28,
+            "starts": 21,
+            "minutes": 1760,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2020-213014.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2020-213014.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Fiorentina",
+                "league": "Serie A",
+                "starts": 21,
+                "appearances": 28,
+                "minutes": 1760,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2020-213014.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2021-22": {
             "club": "ACF Fiorentina",
@@ -10756,15 +11665,30 @@
         "weighting": "2022-23 highest, 2021-22 secondary, 2020-21 contextual; qualitative",
         "records": {
           "2020-21": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Fiorentina",
+            "league": "Serie A",
+            "appearances": 31,
+            "starts": 28,
+            "minutes": 2445,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2020-213014.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2020-213014.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Fiorentina",
+                "league": "Serie A",
+                "starts": 28,
+                "appearances": 31,
+                "minutes": 2445,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2020-213014.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2021-22": {
             "club": "ACF Fiorentina",
@@ -10837,26 +11761,67 @@
         "weighting": "2022-23 highest, 2021-22 secondary, 2020-21 contextual; qualitative",
         "records": {
           "2020-21": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Udinese / Torino",
+            "league": "Serie A",
+            "appearances": 27,
+            "starts": 20,
+            "minutes": 1919,
+            "goals": 3,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2020-213005.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2020-213005.html",
+              "https://www.bdfutbol.com/en/t/t2020-213019.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Udinese",
+                "league": "Serie A",
+                "starts": 3,
+                "appearances": 10,
+                "minutes": 393,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2020-213005.html",
+                "statsScope": "club-specific Serie A regular season"
+              },
+              {
+                "club": "Torino",
+                "league": "Serie A",
+                "starts": 17,
+                "appearances": 17,
+                "minutes": 1526,
+                "goals": 3,
+                "source": "https://www.bdfutbol.com/en/t/t2020-213019.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2021-22": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Torino",
+            "league": "Serie A",
+            "appearances": 21,
+            "starts": 16,
+            "minutes": 1319,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2021-223019.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2021-223019.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Torino",
+                "league": "Serie A",
+                "starts": 16,
+                "appearances": 21,
+                "minutes": 1319,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2021-223019.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2022-23": {
             "club": "ACF Fiorentina",
@@ -10918,15 +11883,30 @@
         "weighting": "2022-23 highest, 2021-22 secondary, 2020-21 contextual; qualitative",
         "records": {
           "2020-21": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Fiorentina",
+            "league": "Serie A",
+            "appearances": 34,
+            "starts": 27,
+            "minutes": 2265,
+            "goals": 3,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2020-213014.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2020-213014.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Fiorentina",
+                "league": "Serie A",
+                "starts": 27,
+                "appearances": 34,
+                "minutes": 2265,
+                "goals": 3,
+                "source": "https://www.bdfutbol.com/en/t/t2020-213014.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2021-22": {
             "club": "ACF Fiorentina",
@@ -10999,15 +11979,41 @@
         "weighting": "2022-23 highest, 2021-22 secondary, 2020-21 contextual; qualitative",
         "records": {
           "2020-21": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Fiorentina / Cagliari",
+            "league": "Serie A",
+            "appearances": 23,
+            "starts": 14,
+            "minutes": 1228,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2020-213014.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2020-213014.html",
+              "https://www.bdfutbol.com/en/t/t2020-213031.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Fiorentina",
+                "league": "Serie A",
+                "starts": 2,
+                "appearances": 4,
+                "minutes": 161,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2020-213014.html",
+                "statsScope": "club-specific Serie A regular season"
+              },
+              {
+                "club": "Cagliari",
+                "league": "Serie A",
+                "starts": 12,
+                "appearances": 19,
+                "minutes": 1067,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2020-213031.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2021-22": {
             "club": "ACF Fiorentina",
@@ -11080,26 +12086,56 @@
         "weighting": "2022-23 highest, 2021-22 secondary, 2020-21 contextual; qualitative",
         "records": {
           "2020-21": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hellas Verona",
+            "league": "Serie A",
+            "appearances": 34,
+            "starts": 32,
+            "minutes": 2772,
+            "goals": 7,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2020-213002.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2020-213002.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Hellas Verona",
+                "league": "Serie A",
+                "starts": 32,
+                "appearances": 34,
+                "minutes": 2772,
+                "goals": 7,
+                "source": "https://www.bdfutbol.com/en/t/t2020-213002.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2021-22": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hellas Verona",
+            "league": "Serie A",
+            "appearances": 29,
+            "starts": 27,
+            "minutes": 2348,
+            "goals": 11,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2021-223002.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2021-223002.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Hellas Verona",
+                "league": "Serie A",
+                "starts": 27,
+                "appearances": 29,
+                "minutes": 2348,
+                "goals": 11,
+                "source": "https://www.bdfutbol.com/en/t/t2021-223002.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2022-23": {
             "club": "ACF Fiorentina",
@@ -11161,15 +12197,30 @@
         "weighting": "2022-23 highest, 2021-22 secondary, 2020-21 contextual; qualitative",
         "records": {
           "2020-21": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Fiorentina",
+            "league": "Serie A",
+            "appearances": 33,
+            "starts": 9,
+            "minutes": 979,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2020-213014.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2020-213014.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Fiorentina",
+                "league": "Serie A",
+                "starts": 9,
+                "appearances": 33,
+                "minutes": 979,
+                "goals": 1,
+                "source": "https://www.bdfutbol.com/en/t/t2020-213014.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2021-22": {
             "club": null,
@@ -11242,15 +12293,41 @@
         "weighting": "2022-23 highest, 2021-22 secondary, 2020-21 contextual; qualitative",
         "records": {
           "2020-21": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Fiorentina / Spezia",
+            "league": "Serie A",
+            "appearances": 11,
+            "starts": 5,
+            "minutes": 441,
+            "goals": 2,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2020-213014.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2020-213014.html",
+              "https://www.bdfutbol.com/en/t/t2020-213053.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Fiorentina",
+                "league": "Serie A",
+                "starts": 0,
+                "appearances": 2,
+                "minutes": 50,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2020-213014.html",
+                "statsScope": "club-specific Serie A regular season"
+              },
+              {
+                "club": "Spezia",
+                "league": "Serie A",
+                "starts": 5,
+                "appearances": 9,
+                "minutes": 391,
+                "goals": 2,
+                "source": "https://www.bdfutbol.com/en/t/t2020-213053.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2021-22": {
             "club": "ACF Fiorentina",
@@ -11334,15 +12411,30 @@
             "verification": "evidence_pending"
           },
           "2021-22": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Fiorentina",
+            "league": "Serie A",
+            "appearances": 17,
+            "starts": 7,
+            "minutes": 646,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2021-223014.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2021-223014.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Fiorentina",
+                "league": "Serie A",
+                "starts": 7,
+                "appearances": 17,
+                "minutes": 646,
+                "goals": 1,
+                "source": "https://www.bdfutbol.com/en/t/t2021-223014.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2022-23": {
             "club": "ACF Fiorentina",
@@ -11743,7 +12835,7 @@
       "fiorentina": "https://www.bdfutbol.com/en/t/t2022-233014.html"
     },
     "previousYearsLinkedUnapprovedSlots": 141,
-    "previousYearsMissing": 121,
+    "previousYearsMissing": 59,
     "fullIndependentThreeSeasonPerformanceReview": false,
     "allLineupFiguresSecondaryChecked": false,
     "birthdatesIndependentlySecondaryChecked": false,
@@ -11757,6 +12849,8 @@
     "historicalExceptions": [
       "Raspadori 2020-21 and 2021-22 Sassuolo appearance/goals sourced separately from Napolipedia; 2022-23 predominant role SS/LW/CF unresolved; provisionally website LW.",
       "Ten A0 evaluations reviewed from originally provisional too-generous A+ or A- levels, to separate league-top from world-top."
-    ]
+    ],
+    "previousYearsNumericSlotsPresent": 205,
+    "auditReportBackfilledSlots": 62
   }
 }

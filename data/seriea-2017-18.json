@@ -89,7 +89,10 @@
     },
     "priorYearEvidence": {
       "linkedPreviousUnapprovedNumericSlots": 119,
-      "fullIndependentThreeSeasonQualitative": 0
+      "fullIndependentThreeSeasonQualitative": 0,
+      "numericSlotsPresent": 186,
+      "numericSlotsMissing": 60,
+      "auditReportBackfilledSlots": 67
     },
     "historicalExceptions": [
       "2018-19 top four Italy UCL qualification introduced: Juventus Napoli Roma Inter entered group stage.",
@@ -119,7 +122,34 @@
     },
     "lastReview": "2026-11-09",
     "birthdayPending": [],
-    "topTierIndividualReasonsWritten": 56
+    "topTierIndividualReasonsWritten": 56,
+    "segment3Audit": {
+      "source": "FOOTBALL_AUDIT_SERIEA_SEGMENT_3_CORRECTIONS.md",
+      "base": "e7ceebd9b5cda6bf3bedd40024c08bc5218f2200",
+      "counts": {
+        "players": 123,
+        "born": 1,
+        "GK": 11,
+        "held": 6,
+        "prior": 67,
+        "clubRows": 70,
+        "split": 3
+      },
+      "held": [
+        "seriea-2017-18-lazio-bastosquissanga 기존 이전 시즌 기록 대조 2016-17 선발 18 → 10 · 출전 25 → 11 · 득점 1 → 0",
+        "seriea-2017-18-lazio-stefanradu 주 포지션 확인 CB LB",
+        "seriea-2017-18-napoli-arkadiuszmilik 후보 자격 확인 ST backup",
+        "seriea-2017-18-inter-yannkaramoh 후보 자격 확인 RW backup",
+        "seriea-2017-18-inter-edercitadinmartins 후보 자격 확인 ST backup",
+        "seriea-2017-18-lazio-felipecaicedo 후보 자격 확인 ST backup"
+      ],
+      "xiReview": [
+        "CB Škriniar 38 starts/4 goals, Chiellini 26 appearances/25 starts and two preceding Juventus seasons; Škriniar's current availability supports retention; ranking dispute held pending defensive role comparison.",
+        "RB Cancelo 26/20 vs Hysaj 35/35; Cancelo attacking contribution and 2018 AIC selection support retention, but tier/rank discrepancy and earlier seasons comparison pending. https://football-italia.net/serie-a-team-of-2017-18/"
+      ],
+      "limitations": "Report-backed transcription; not independent match-by-match review. Prior clubRecords preserves split Serie A club rows; unknown assists remain null."
+    },
+    "previousYearGaps": 60
   },
   "clubs": [
     {
@@ -948,7 +978,11 @@
             "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2017-183004.html",
-            "verification": "transcribed_current_year_BDFutbol_PM_SM_Min_G_player_row_not_independent_second_source_audited"
+            "verification": "transcribed_current_year_BDFutbol_PM_SM_Min_G_player_row_not_independent_second_source_audited",
+            "goalsAgainst": 14,
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2017-183004.html"
+            ]
           }
         },
         "tierReason": "유벤투스 리그 21경기·21선발. 높은 박스 지휘와 위치 선정·경험에 기반한 수비 안정은 여전히 최상위지만 시즌 출전 분담이 커짐. 2015-16의 974분 연속 무실점과 2016-17 정상급 기량을 참고하되 2017-18의 21경기 가용성을 비중 있게 반영. **판정 A+ (미승인)**. 3시즌 출전 연결 상태: 2015-16 35경기·0골(기존 미승인 아카이브, 제2출처 재검증 전); 2016-17 30경기·0골(기존 미승인 아카이브, 제2출처 재검증 전). 모든 경기별 실제 최빈 위치·독립 동포지션 통계 비교는 추가 확인 필요.",
@@ -956,7 +990,8 @@
       },
       "tierReason": "유벤투스 리그 21경기·21선발. 높은 박스 지휘와 위치 선정·경험에 기반한 수비 안정은 여전히 최상위지만 시즌 출전 분담이 커짐. 2015-16의 974분 연속 무실점과 2016-17 정상급 기량을 참고하되 2017-18의 21경기 가용성을 비중 있게 반영. **판정 A+ (미승인)**. 3시즌 출전 연결 상태: 2015-16 35경기·0골(기존 미승인 아카이브, 제2출처 재검증 전); 2016-17 30경기·0골(기존 미승인 아카이브, 제2출처 재검증 전). 모든 경기별 실제 최빈 위치·독립 동포지션 통계 비교는 추가 확인 필요.",
       "gradeEvidenceStatus": "player_specific_grade_draft_verification_pending",
-      "rankStatus": "draft_position_relative_to_current_year_and_3year_sustained_performance"
+      "rankStatus": "draft_position_relative_to_current_year_and_3year_sustained_performance",
+      "leagueGoalsAgainst": 14
     },
     {
       "id": "seriea-2017-18-juventus-wojciechszczesny",
@@ -1028,7 +1063,11 @@
             "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2017-183004.html",
-            "verification": "transcribed_current_year_BDFutbol_PM_SM_Min_G_player_row_not_independent_second_source_audited"
+            "verification": "transcribed_current_year_BDFutbol_PM_SM_Min_G_player_row_not_independent_second_source_audited",
+            "goalsAgainst": 9,
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2017-183004.html"
+            ]
           }
         },
         "tierReason": "17경기를 17선발로 치르며 부폰과 함께 안정된 선방을 제공. 직전 두 시즌 로마에서 정규리그 주전 경험을 쌓은 만큼 단순 세컨드 GK로 저평가하지 않되, 현재 부폰과의 시즌 표본 분할을 감안. **판정 A0 (미승인)**. 3시즌 출전 연결 상태: 2015-16 34경기·0골(기존 미승인 아카이브, 제2출처 재검증 전); 2016-17 38경기·0골(기존 미승인 아카이브, 제2출처 재검증 전). 모든 경기별 실제 최빈 위치·독립 동포지션 통계 비교는 추가 확인 필요.",
@@ -1036,7 +1075,8 @@
       },
       "tierReason": "17경기를 17선발로 치르며 부폰과 함께 안정된 선방을 제공. 직전 두 시즌 로마에서 정규리그 주전 경험을 쌓은 만큼 단순 세컨드 GK로 저평가하지 않되, 현재 부폰과의 시즌 표본 분할을 감안. **판정 A0 (미승인)**. 3시즌 출전 연결 상태: 2015-16 34경기·0골(기존 미승인 아카이브, 제2출처 재검증 전); 2016-17 38경기·0골(기존 미승인 아카이브, 제2출처 재검증 전). 모든 경기별 실제 최빈 위치·독립 동포지션 통계 비교는 추가 확인 필요.",
       "gradeEvidenceStatus": "player_specific_grade_draft_verification_pending",
-      "rankStatus": "draft_position_relative_to_current_year_and_3year_sustained_performance"
+      "rankStatus": "draft_position_relative_to_current_year_and_3year_sustained_performance",
+      "leagueGoalsAgainst": 9
     },
     {
       "id": "seriea-2017-18-juventus-giorgiochiellini",
@@ -1169,15 +1209,30 @@
             "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
           },
           "2016-17": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Juventus",
+            "league": "Serie A",
+            "appearances": 15,
+            "starts": 14,
+            "minutes": 1183,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2016-173004.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2016-173004.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Juventus",
+                "league": "Serie A",
+                "starts": 14,
+                "appearances": 15,
+                "minutes": 1183,
+                "goals": 1,
+                "source": "https://www.bdfutbol.com/en/t/t2016-173004.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2017-18": {
             "club": "Juventus Football Club",
@@ -1249,15 +1304,30 @@
             "verification": "linked_previous_draft_archive_NOT_independent_source_rechecked"
           },
           "2016-17": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Juventus",
+            "league": "Serie A",
+            "appearances": 15,
+            "starts": 11,
+            "minutes": 1077,
+            "goals": 2,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2016-173004.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2016-173004.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Juventus",
+                "league": "Serie A",
+                "starts": 11,
+                "appearances": 15,
+                "minutes": 1077,
+                "goals": 2,
+                "source": "https://www.bdfutbol.com/en/t/t2016-173004.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2017-18": {
             "club": "Juventus Football Club",
@@ -1398,15 +1468,30 @@
         "weighting": "2017-18 highest > 2016-17 intermediate > 2015-16 lowest",
         "records": {
           "2015-16": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Juventus",
+            "league": "Serie A",
+            "appearances": 11,
+            "starts": 6,
+            "minutes": 567,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2015-163004.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2015-163004.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Juventus",
+                "league": "Serie A",
+                "starts": 6,
+                "appearances": 11,
+                "minutes": 567,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2015-163004.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2016-17": {
             "club": "Juventus Football Club",
@@ -1558,15 +1643,30 @@
         "weighting": "2017-18 highest > 2016-17 intermediate > 2015-16 lowest",
         "records": {
           "2015-16": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Milan",
+            "league": "Serie A",
+            "appearances": 22,
+            "starts": 21,
+            "minutes": 1843,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2015-163015.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2015-163015.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Milan",
+                "league": "Serie A",
+                "starts": 21,
+                "appearances": 22,
+                "minutes": 1843,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2015-163015.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2016-17": {
             "club": "Associazione Calcio Milan",
@@ -2388,7 +2488,11 @@
             "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2017-183003.html",
-            "verification": "transcribed_current_year_BDFutbol_PM_SM_Min_G_player_row_not_independent_second_source_audited"
+            "verification": "transcribed_current_year_BDFutbol_PM_SM_Min_G_player_row_not_independent_second_source_audited",
+            "goalsAgainst": 29,
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2017-183003.html"
+            ]
           }
         },
         "tierReason": "37경기 연속 선발. Sarri 체제 후방 빌드업과 높은 수비라인 뒷공간 관리에서 침착함. 2015-16, 2016-17 모두 주전인 지속성도 있으나 리그 내 최정상 개인 선방급보다 보수적인 A0. **판정 A0 (미승인)**. 3시즌 출전 연결 상태: 2015-16 37경기·0골(기존 미승인 아카이브, 제2출처 재검증 전); 2016-17 37경기·0골(기존 미승인 아카이브, 제2출처 재검증 전). 모든 경기별 실제 최빈 위치·독립 동포지션 통계 비교는 추가 확인 필요.",
@@ -2396,7 +2500,8 @@
       },
       "tierReason": "37경기 연속 선발. Sarri 체제 후방 빌드업과 높은 수비라인 뒷공간 관리에서 침착함. 2015-16, 2016-17 모두 주전인 지속성도 있으나 리그 내 최정상 개인 선방급보다 보수적인 A0. **판정 A0 (미승인)**. 3시즌 출전 연결 상태: 2015-16 37경기·0골(기존 미승인 아카이브, 제2출처 재검증 전); 2016-17 37경기·0골(기존 미승인 아카이브, 제2출처 재검증 전). 모든 경기별 실제 최빈 위치·독립 동포지션 통계 비교는 추가 확인 필요.",
       "gradeEvidenceStatus": "player_specific_grade_draft_verification_pending",
-      "rankStatus": "draft_position_relative_to_current_year_and_3year_sustained_performance"
+      "rankStatus": "draft_position_relative_to_current_year_and_3year_sustained_performance",
+      "leagueGoalsAgainst": 29
     },
     {
       "id": "seriea-2017-18-napoli-luigisepe",
@@ -2468,7 +2573,11 @@
             "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2017-183003.html",
-            "verification": "transcribed_current_year_BDFutbol_PM_SM_Min_G_player_row_not_independent_second_source_audited"
+            "verification": "transcribed_current_year_BDFutbol_PM_SM_Min_G_player_row_not_independent_second_source_audited",
+            "goalsAgainst": 0,
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2017-183003.html"
+            ]
           }
         },
         "tierReason": "2017-18 세리에 A 1경기(선발 1), 90분, 0골. GK 포지션에서의 개인 경기력·팀 내 실질적 역할·활용 빈도를 우선하며, 2016-17과 2015-16의 개인 기량 연속성은 각각 낮은 가중치를 적용한 잠정 등급이다. 구단 성적·대회 성과를 등급에 가산하지 않음. 3시즌 독립적인 선수별 분석과 경기별 최빈 위치 검증은 추가 필요.",
@@ -2476,7 +2585,8 @@
       },
       "tierReason": "2017-18 세리에 A 1경기(선발 1), 90분, 0골. GK 포지션에서의 개인 경기력·팀 내 실질적 역할·활용 빈도를 우선하며, 2016-17과 2015-16의 개인 기량 연속성은 각각 낮은 가중치를 적용한 잠정 등급이다. 구단 성적·대회 성과를 등급에 가산하지 않음. 3시즌 독립적인 선수별 분석과 경기별 최빈 위치 검증은 추가 필요.",
       "gradeEvidenceStatus": "player_specific_grade_draft_verification_pending",
-      "rankStatus": "draft_position_relative_to_current_year_and_3year_sustained_performance"
+      "rankStatus": "draft_position_relative_to_current_year_and_3year_sustained_performance",
+      "leagueGoalsAgainst": 0
     },
     {
       "id": "seriea-2017-18-napoli-kalidoukoulibaly",
@@ -2758,26 +2868,56 @@
         "weighting": "2017-18 highest > 2016-17 intermediate > 2015-16 lowest",
         "records": {
           "2015-16": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Empoli",
+            "league": "Serie A",
+            "appearances": 36,
+            "starts": 36,
+            "minutes": 3240,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2015-163025.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2015-163025.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Empoli",
+                "league": "Serie A",
+                "starts": 36,
+                "appearances": 36,
+                "minutes": 3240,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2015-163025.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2016-17": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Roma",
+            "league": "Serie A",
+            "appearances": 5,
+            "starts": 3,
+            "minutes": 344,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2016-173009.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2016-173009.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Roma",
+                "league": "Serie A",
+                "starts": 3,
+                "appearances": 5,
+                "minutes": 344,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2016-173009.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2017-18": {
             "club": "Società Sportiva Calcio Napoli",
@@ -3158,15 +3298,30 @@
         "weighting": "2017-18 highest > 2016-17 intermediate > 2015-16 lowest",
         "records": {
           "2015-16": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Bologna",
+            "league": "Serie A",
+            "appearances": 34,
+            "starts": 31,
+            "minutes": 2735,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2015-163010.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2015-163010.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Bologna",
+                "league": "Serie A",
+                "starts": 31,
+                "appearances": 34,
+                "minutes": 2735,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2015-163010.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2016-17": {
             "club": "Società Sportiva Calcio Napoli",
@@ -3398,15 +3553,30 @@
         "weighting": "2017-18 highest > 2016-17 intermediate > 2015-16 lowest",
         "records": {
           "2015-16": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Empoli",
+            "league": "Serie A",
+            "appearances": 35,
+            "starts": 35,
+            "minutes": 3035,
+            "goals": 5,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2015-163025.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2015-163025.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Empoli",
+                "league": "Serie A",
+                "starts": 35,
+                "appearances": 35,
+                "minutes": 3035,
+                "goals": 5,
+                "source": "https://www.bdfutbol.com/en/t/t2015-163025.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2016-17": {
             "club": "Società Sportiva Calcio Napoli",
@@ -3828,7 +3998,11 @@
             "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2017-183009.html",
-            "verification": "transcribed_current_year_BDFutbol_PM_SM_Min_G_player_row_not_independent_second_source_audited"
+            "verification": "transcribed_current_year_BDFutbol_PM_SM_Min_G_player_row_not_independent_second_source_audited",
+            "goalsAgainst": 28,
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2017-183009.html"
+            ]
           }
         },
         "tierReason": "37경기 모두 선발·리그 17클린시트. 박스 안 반사 선방과 빌드업·거리 조절에서 리그 최고 수준의 시즌. 2016-17 로마에서는 세리에 A 0경기였지만 2017-18 실질적 대체 불가능 수준의 개인 성능을 크게 평가해 S; 2015-16 Internacional 경력 비교는 추가 조사. **판정 S (미승인)**. 3시즌 출전 연결 상태: 2015-16 개인 기록 미연결(실제 0경기 뜻 아님); 2016-17 개인 기록 미연결(실제 0경기 뜻 아님). 모든 경기별 실제 최빈 위치·독립 동포지션 통계 비교는 추가 확인 필요.",
@@ -3836,7 +4010,8 @@
       },
       "tierReason": "37경기 모두 선발·리그 17클린시트. 박스 안 반사 선방과 빌드업·거리 조절에서 리그 최고 수준의 시즌. 2016-17 로마에서는 세리에 A 0경기였지만 2017-18 실질적 대체 불가능 수준의 개인 성능을 크게 평가해 S; 2015-16 Internacional 경력 비교는 추가 조사. **판정 S (미승인)**. 3시즌 출전 연결 상태: 2015-16 개인 기록 미연결(실제 0경기 뜻 아님); 2016-17 개인 기록 미연결(실제 0경기 뜻 아님). 모든 경기별 실제 최빈 위치·독립 동포지션 통계 비교는 추가 확인 필요.",
       "gradeEvidenceStatus": "player_specific_grade_draft_verification_pending",
-      "rankStatus": "draft_position_relative_to_current_year_and_3year_sustained_performance"
+      "rankStatus": "draft_position_relative_to_current_year_and_3year_sustained_performance",
+      "leagueGoalsAgainst": 28
     },
     {
       "id": "seriea-2017-18-roma-ukaszskorupski",
@@ -3878,26 +4053,58 @@
         "weighting": "2017-18 highest > 2016-17 intermediate > 2015-16 lowest",
         "records": {
           "2015-16": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
+            "club": "Empoli",
+            "league": "Serie A",
+            "appearances": 31,
+            "starts": 31,
+            "minutes": 2790,
             "goals": null,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2015-163025.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "goalsAgainst": 43,
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2015-163025.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Empoli",
+                "league": "Serie A",
+                "starts": 31,
+                "appearances": 31,
+                "minutes": 2790,
+                "goalsAgainst": 43,
+                "source": "https://www.bdfutbol.com/en/t/t2015-163025.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2016-17": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
+            "club": "Empoli",
+            "league": "Serie A",
+            "appearances": 35,
+            "starts": 35,
+            "minutes": 3150,
             "goals": null,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2016-173025.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "goalsAgainst": 56,
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2016-173025.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Empoli",
+                "league": "Serie A",
+                "starts": 35,
+                "appearances": 35,
+                "minutes": 3150,
+                "goalsAgainst": 56,
+                "source": "https://www.bdfutbol.com/en/t/t2016-173025.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2017-18": {
             "club": "Associazione Sportiva Roma",
@@ -3908,7 +4115,11 @@
             "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2017-183009.html",
-            "verification": "transcribed_current_year_BDFutbol_PM_SM_Min_G_player_row_not_independent_second_source_audited"
+            "verification": "transcribed_current_year_BDFutbol_PM_SM_Min_G_player_row_not_independent_second_source_audited",
+            "goalsAgainst": 0,
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2017-183009.html"
+            ]
           }
         },
         "tierReason": "2017-18 세리에 A 1경기(선발 1), 90분, 0골. GK 포지션에서의 개인 경기력·팀 내 실질적 역할·활용 빈도를 우선하며, 2016-17과 2015-16의 개인 기량 연속성은 각각 낮은 가중치를 적용한 잠정 등급이다. 구단 성적·대회 성과를 등급에 가산하지 않음. 3시즌 독립적인 선수별 분석과 경기별 최빈 위치 검증은 추가 필요.",
@@ -3916,7 +4127,8 @@
       },
       "tierReason": "2017-18 세리에 A 1경기(선발 1), 90분, 0골. GK 포지션에서의 개인 경기력·팀 내 실질적 역할·활용 빈도를 우선하며, 2016-17과 2015-16의 개인 기량 연속성은 각각 낮은 가중치를 적용한 잠정 등급이다. 구단 성적·대회 성과를 등급에 가산하지 않음. 3시즌 독립적인 선수별 분석과 경기별 최빈 위치 검증은 추가 필요.",
       "gradeEvidenceStatus": "player_specific_grade_draft_verification_pending",
-      "rankStatus": "draft_position_relative_to_current_year_and_3year_sustained_performance"
+      "rankStatus": "draft_position_relative_to_current_year_and_3year_sustained_performance",
+      "leagueGoalsAgainst": 0
     },
     {
       "id": "seriea-2017-18-roma-federicofazio",
@@ -4129,15 +4341,30 @@
             "verification": "linked_previous_draft_archive_NOT_independent_source_rechecked"
           },
           "2016-17": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Roma",
+            "league": "Serie A",
+            "appearances": 20,
+            "starts": 13,
+            "minutes": 1189,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2016-173009.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2016-173009.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Roma",
+                "league": "Serie A",
+                "starts": 13,
+                "appearances": 20,
+                "minutes": 1189,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2016-173009.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2017-18": {
             "club": "Associazione Sportiva Roma",
@@ -4358,15 +4585,30 @@
         "weighting": "2017-18 highest > 2016-17 intermediate > 2015-16 lowest",
         "records": {
           "2015-16": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Torino",
+            "league": "Serie A",
+            "appearances": 31,
+            "starts": 30,
+            "minutes": 2596,
+            "goals": 3,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2015-163019.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2015-163019.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Torino",
+                "league": "Serie A",
+                "starts": 30,
+                "appearances": 31,
+                "minutes": 2596,
+                "goals": 3,
+                "source": "https://www.bdfutbol.com/en/t/t2015-163019.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2016-17": {
             "club": "Associazione Sportiva Roma",
@@ -4689,15 +4931,30 @@
             "verification": "linked_previous_draft_archive_NOT_independent_source_rechecked"
           },
           "2016-17": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Sassuolo",
+            "league": "Serie A",
+            "appearances": 28,
+            "starts": 24,
+            "minutes": 1952,
+            "goals": 6,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2016-173040.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2016-173040.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Sassuolo",
+                "league": "Serie A",
+                "starts": 24,
+                "appearances": 28,
+                "minutes": 1952,
+                "goals": 6,
+                "source": "https://www.bdfutbol.com/en/t/t2016-173040.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2017-18": {
             "club": "Associazione Sportiva Roma",
@@ -4758,15 +5015,30 @@
         "weighting": "2017-18 highest > 2016-17 intermediate > 2015-16 lowest",
         "records": {
           "2015-16": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Roma",
+            "league": "Serie A",
+            "appearances": 5,
+            "starts": 2,
+            "minutes": 190,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2015-163009.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2015-163009.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Roma",
+                "league": "Serie A",
+                "starts": 2,
+                "appearances": 5,
+                "minutes": 190,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2015-163009.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2016-17": {
             "club": "Associazione Sportiva Roma",
@@ -5089,15 +5361,30 @@
             "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
           },
           "2016-17": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Sampdoria",
+            "league": "Serie A",
+            "appearances": 32,
+            "starts": 14,
+            "minutes": 1506,
+            "goals": 11,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2016-173036.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2016-173036.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Sampdoria",
+                "league": "Serie A",
+                "starts": 14,
+                "appearances": 32,
+                "minutes": 1506,
+                "goals": 11,
+                "source": "https://www.bdfutbol.com/en/t/t2016-173036.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2017-18": {
             "club": "Associazione Sportiva Roma",
@@ -5249,15 +5536,30 @@
             "verification": "linked_previous_draft_archive_NOT_independent_source_rechecked"
           },
           "2016-17": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Sassuolo",
+            "league": "Serie A",
+            "appearances": 29,
+            "starts": 23,
+            "minutes": 1961,
+            "goals": 12,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2016-173040.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2016-173040.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Sassuolo",
+                "league": "Serie A",
+                "starts": 23,
+                "appearances": 29,
+                "minutes": 1961,
+                "goals": 12,
+                "source": "https://www.bdfutbol.com/en/t/t2016-173040.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2017-18": {
             "club": "Associazione Sportiva Roma",
@@ -5329,15 +5631,31 @@
             "verification": "linked_previous_draft_archive_NOT_independent_source_rechecked"
           },
           "2016-17": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
+            "club": "Inter",
+            "league": "Serie A",
+            "appearances": 37,
+            "starts": 37,
+            "minutes": 3330,
             "goals": null,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2016-173008.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "goalsAgainst": 47,
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2016-173008.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Inter",
+                "league": "Serie A",
+                "starts": 37,
+                "appearances": 37,
+                "minutes": 3330,
+                "goalsAgainst": 47,
+                "source": "https://www.bdfutbol.com/en/t/t2016-173008.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2017-18": {
             "club": "Football Club Internazionale Milano",
@@ -5348,7 +5666,11 @@
             "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2017-183008.html",
-            "verification": "transcribed_current_year_BDFutbol_PM_SM_Min_G_player_row_not_independent_second_source_audited"
+            "verification": "transcribed_current_year_BDFutbol_PM_SM_Min_G_player_row_not_independent_second_source_audited",
+            "goalsAgainst": 30,
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2017-183008.html"
+            ]
           }
         },
         "tierReason": "38경기 전 경기 풀타임. 1대1 대응·페널티 지역 반사신경과 수비라인 조율에서 높은 개인 기여. 2015-16도 36경기 주전이었고 2016-17은 미승인 데이터 연결이 없어 추가 평가가 필요하지만 당해 A+. **판정 A+ (미승인)**. 3시즌 출전 연결 상태: 2015-16 36경기·0골(기존 미승인 아카이브, 제2출처 재검증 전); 2016-17 개인 기록 미연결(실제 0경기 뜻 아님). 모든 경기별 실제 최빈 위치·독립 동포지션 통계 비교는 추가 확인 필요.",
@@ -5356,7 +5678,8 @@
       },
       "tierReason": "38경기 전 경기 풀타임. 1대1 대응·페널티 지역 반사신경과 수비라인 조율에서 높은 개인 기여. 2015-16도 36경기 주전이었고 2016-17은 미승인 데이터 연결이 없어 추가 평가가 필요하지만 당해 A+. **판정 A+ (미승인)**. 3시즌 출전 연결 상태: 2015-16 36경기·0골(기존 미승인 아카이브, 제2출처 재검증 전); 2016-17 개인 기록 미연결(실제 0경기 뜻 아님). 모든 경기별 실제 최빈 위치·독립 동포지션 통계 비교는 추가 확인 필요.",
       "gradeEvidenceStatus": "player_specific_grade_draft_verification_pending",
-      "rankStatus": "draft_position_relative_to_current_year_and_3year_sustained_performance"
+      "rankStatus": "draft_position_relative_to_current_year_and_3year_sustained_performance",
+      "leagueGoalsAgainst": 30
     },
     {
       "id": "seriea-2017-18-inter-milanskriniar",
@@ -5398,26 +5721,56 @@
         "weighting": "2017-18 highest > 2016-17 intermediate > 2015-16 lowest",
         "records": {
           "2015-16": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Sampdoria",
+            "league": "Serie A",
+            "appearances": 3,
+            "starts": 2,
+            "minutes": 105,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2015-163036.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2015-163036.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Sampdoria",
+                "league": "Serie A",
+                "starts": 2,
+                "appearances": 3,
+                "minutes": 105,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2015-163036.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2016-17": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Sampdoria",
+            "league": "Serie A",
+            "appearances": 35,
+            "starts": 34,
+            "minutes": 2998,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2016-173036.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2016-173036.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Sampdoria",
+                "league": "Serie A",
+                "starts": 34,
+                "appearances": 35,
+                "minutes": 2998,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2016-173036.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2017-18": {
             "club": "Football Club Internazionale Milano",
@@ -5489,15 +5842,30 @@
             "verification": "linked_previous_draft_archive_NOT_independent_source_rechecked"
           },
           "2016-17": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Inter",
+            "league": "Serie A",
+            "appearances": 32,
+            "starts": 32,
+            "minutes": 2880,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2016-173008.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2016-173008.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Inter",
+                "league": "Serie A",
+                "starts": 32,
+                "appearances": 32,
+                "minutes": 2880,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2016-173008.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2017-18": {
             "club": "Football Club Internazionale Milano",
@@ -5558,26 +5926,67 @@
         "weighting": "2017-18 highest > 2016-17 intermediate > 2015-16 lowest",
         "records": {
           "2015-16": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Inter / Sampdoria",
+            "league": "Serie A",
+            "appearances": 24,
+            "starts": 14,
+            "minutes": 1350,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2015-163008.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2015-163008.html",
+              "https://www.bdfutbol.com/en/t/t2015-163036.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Inter",
+                "league": "Serie A",
+                "starts": 1,
+                "appearances": 10,
+                "minutes": 208,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2015-163008.html",
+                "statsScope": "club-specific Serie A regular season"
+              },
+              {
+                "club": "Sampdoria",
+                "league": "Serie A",
+                "starts": 13,
+                "appearances": 14,
+                "minutes": 1142,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2015-163036.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2016-17": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Inter",
+            "league": "Serie A",
+            "appearances": 5,
+            "starts": 5,
+            "minutes": 380,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2016-173008.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2016-173008.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Inter",
+                "league": "Serie A",
+                "starts": 5,
+                "appearances": 5,
+                "minutes": 380,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2016-173008.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2017-18": {
             "club": "Football Club Internazionale Milano",
@@ -5649,15 +6058,30 @@
             "verification": "linked_previous_draft_archive_NOT_independent_source_rechecked"
           },
           "2016-17": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Inter",
+            "league": "Serie A",
+            "appearances": 32,
+            "starts": 32,
+            "minutes": 2831,
+            "goals": 3,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2016-173008.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2016-173008.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Inter",
+                "league": "Serie A",
+                "starts": 32,
+                "appearances": 32,
+                "minutes": 2831,
+                "goals": 3,
+                "source": "https://www.bdfutbol.com/en/t/t2016-173008.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2017-18": {
             "club": "Football Club Internazionale Milano",
@@ -5729,15 +6153,30 @@
             "verification": "linked_previous_draft_archive_NOT_independent_source_rechecked"
           },
           "2016-17": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Inter",
+            "league": "Serie A",
+            "appearances": 14,
+            "starts": 11,
+            "minutes": 1018,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2016-173008.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2016-173008.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Inter",
+                "league": "Serie A",
+                "starts": 11,
+                "appearances": 14,
+                "minutes": 1018,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2016-173008.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2017-18": {
             "club": "Football Club Internazionale Milano",
@@ -5889,15 +6328,30 @@
             "verification": "linked_previous_draft_archive_NOT_independent_source_rechecked"
           },
           "2016-17": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Fiorentina",
+            "league": "Serie A",
+            "appearances": 31,
+            "starts": 25,
+            "minutes": 2324,
+            "goals": 3,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2016-173014.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2016-173014.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Fiorentina",
+                "league": "Serie A",
+                "starts": 25,
+                "appearances": 31,
+                "minutes": 2324,
+                "goals": 3,
+                "source": "https://www.bdfutbol.com/en/t/t2016-173014.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2017-18": {
             "club": "Football Club Internazionale Milano",
@@ -5958,15 +6412,30 @@
         "weighting": "2017-18 highest > 2016-17 intermediate > 2015-16 lowest",
         "records": {
           "2015-16": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Atalanta",
+            "league": "Serie A",
+            "appearances": 1,
+            "starts": 1,
+            "minutes": 82,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2015-163017.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2015-163017.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Atalanta",
+                "league": "Serie A",
+                "starts": 1,
+                "appearances": 1,
+                "minutes": 82,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2015-163017.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2016-17": {
             "club": "Atalanta Bergamasca Calcio",
@@ -6049,15 +6518,30 @@
             "verification": "linked_previous_draft_archive_NOT_independent_source_rechecked"
           },
           "2016-17": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Inter",
+            "league": "Serie A",
+            "appearances": 23,
+            "starts": 20,
+            "minutes": 1738,
+            "goals": 4,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2016-173008.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2016-173008.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Inter",
+                "league": "Serie A",
+                "starts": 20,
+                "appearances": 23,
+                "minutes": 1738,
+                "goals": 4,
+                "source": "https://www.bdfutbol.com/en/t/t2016-173008.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2017-18": {
             "club": "Football Club Internazionale Milano",
@@ -6129,15 +6613,30 @@
             "verification": "linked_previous_draft_archive_NOT_independent_source_rechecked"
           },
           "2016-17": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Fiorentina",
+            "league": "Serie A",
+            "appearances": 32,
+            "starts": 31,
+            "minutes": 2708,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2016-173014.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2016-173014.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Fiorentina",
+                "league": "Serie A",
+                "starts": 31,
+                "appearances": 32,
+                "minutes": 2708,
+                "goals": 1,
+                "source": "https://www.bdfutbol.com/en/t/t2016-173014.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2017-18": {
             "club": "Football Club Internazionale Milano",
@@ -6289,15 +6788,30 @@
             "verification": "linked_previous_draft_archive_NOT_independent_source_rechecked"
           },
           "2016-17": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Inter",
+            "league": "Serie A",
+            "appearances": 36,
+            "starts": 31,
+            "minutes": 2756,
+            "goals": 11,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2016-173008.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2016-173008.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Inter",
+                "league": "Serie A",
+                "starts": 31,
+                "appearances": 36,
+                "minutes": 2756,
+                "goals": 11,
+                "source": "https://www.bdfutbol.com/en/t/t2016-173008.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2017-18": {
             "club": "Football Club Internazionale Milano",
@@ -6358,26 +6872,56 @@
         "weighting": "2017-18 highest > 2016-17 intermediate > 2015-16 lowest",
         "records": {
           "2015-16": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Lazio",
+            "league": "Serie A",
+            "appearances": 30,
+            "starts": 28,
+            "minutes": 2204,
+            "goals": 10,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2015-163018.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2015-163018.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Lazio",
+                "league": "Serie A",
+                "starts": 28,
+                "appearances": 30,
+                "minutes": 2204,
+                "goals": 10,
+                "source": "https://www.bdfutbol.com/en/t/t2015-163018.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2016-17": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Inter",
+            "league": "Serie A",
+            "appearances": 38,
+            "starts": 36,
+            "minutes": 3021,
+            "goals": 6,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2016-173008.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2016-173008.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Inter",
+                "league": "Serie A",
+                "starts": 36,
+                "appearances": 38,
+                "minutes": 3021,
+                "goals": 6,
+                "source": "https://www.bdfutbol.com/en/t/t2016-173008.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2017-18": {
             "club": "Football Club Internazionale Milano",
@@ -6529,15 +7073,30 @@
             "verification": "linked_previous_draft_archive_NOT_independent_source_rechecked"
           },
           "2016-17": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Inter",
+            "league": "Serie A",
+            "appearances": 34,
+            "starts": 34,
+            "minutes": 3029,
+            "goals": 24,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2016-173008.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2016-173008.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Inter",
+                "league": "Serie A",
+                "starts": 34,
+                "appearances": 34,
+                "minutes": 3029,
+                "goals": 24,
+                "source": "https://www.bdfutbol.com/en/t/t2016-173008.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2017-18": {
             "club": "Football Club Internazionale Milano",
@@ -6598,26 +7157,67 @@
         "weighting": "2017-18 highest > 2016-17 intermediate > 2015-16 lowest",
         "records": {
           "2015-16": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Inter / Sampdoria",
+            "league": "Serie A",
+            "appearances": 33,
+            "starts": 27,
+            "minutes": 2395,
+            "goals": 13,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2015-163008.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2015-163008.html",
+              "https://www.bdfutbol.com/en/t/t2015-163036.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Inter",
+                "league": "Serie A",
+                "starts": 8,
+                "appearances": 14,
+                "minutes": 749,
+                "goals": 1,
+                "source": "https://www.bdfutbol.com/en/t/t2015-163008.html",
+                "statsScope": "club-specific Serie A regular season"
+              },
+              {
+                "club": "Sampdoria",
+                "league": "Serie A",
+                "starts": 19,
+                "appearances": 19,
+                "minutes": 1646,
+                "goals": 12,
+                "source": "https://www.bdfutbol.com/en/t/t2015-163036.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2016-17": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Inter",
+            "league": "Serie A",
+            "appearances": 33,
+            "starts": 13,
+            "minutes": 1473,
+            "goals": 8,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2016-173008.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2016-173008.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Inter",
+                "league": "Serie A",
+                "starts": 13,
+                "appearances": 33,
+                "minutes": 1473,
+                "goals": 8,
+                "source": "https://www.bdfutbol.com/en/t/t2016-173008.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2017-18": {
             "club": "Football Club Internazionale Milano",
@@ -6708,7 +7308,11 @@
             "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2017-183018.html",
-            "verification": "transcribed_current_year_BDFutbol_PM_SM_Min_G_player_row_not_independent_second_source_audited"
+            "verification": "transcribed_current_year_BDFutbol_PM_SM_Min_G_player_row_not_independent_second_source_audited",
+            "goalsAgainst": 49,
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2017-183018.html"
+            ]
           }
         },
         "tierReason": "2017-18 세리에 A 38경기(선발 38), 3420분, 0골. GK 포지션에서의 개인 경기력·팀 내 실질적 역할·활용 빈도를 우선하며, 2016-17과 2015-16의 개인 기량 연속성은 각각 낮은 가중치를 적용한 잠정 등급이다. 구단 성적·대회 성과를 등급에 가산하지 않음. 3시즌 독립적인 선수별 분석과 경기별 최빈 위치 검증은 추가 필요.",
@@ -6716,7 +7320,8 @@
       },
       "tierReason": "2017-18 세리에 A 38경기(선발 38), 3420분, 0골. GK 포지션에서의 개인 경기력·팀 내 실질적 역할·활용 빈도를 우선하며, 2016-17과 2015-16의 개인 기량 연속성은 각각 낮은 가중치를 적용한 잠정 등급이다. 구단 성적·대회 성과를 등급에 가산하지 않음. 3시즌 독립적인 선수별 분석과 경기별 최빈 위치 검증은 추가 필요.",
       "gradeEvidenceStatus": "player_specific_grade_draft_verification_pending",
-      "rankStatus": "draft_position_relative_to_current_year_and_3year_sustained_performance"
+      "rankStatus": "draft_position_relative_to_current_year_and_3year_sustained_performance",
+      "leagueGoalsAgainst": 49
     },
     {
       "id": "seriea-2017-18-lazio-stefandevrij",
@@ -6758,15 +7363,30 @@
         "weighting": "2017-18 highest > 2016-17 intermediate > 2015-16 lowest",
         "records": {
           "2015-16": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Lazio",
+            "league": "Serie A",
+            "appearances": 2,
+            "starts": 2,
+            "minutes": 180,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2015-163018.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2015-163018.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Lazio",
+                "league": "Serie A",
+                "starts": 2,
+                "appearances": 2,
+                "minutes": 180,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2015-163018.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2016-17": {
             "club": "Società Sportiva Lazio",
@@ -6838,15 +7458,30 @@
         "weighting": "2017-18 highest > 2016-17 intermediate > 2015-16 lowest",
         "records": {
           "2015-16": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Lazio",
+            "league": "Serie A",
+            "appearances": 13,
+            "starts": 13,
+            "minutes": 1092,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2015-163018.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2015-163018.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Lazio",
+                "league": "Serie A",
+                "starts": 13,
+                "appearances": 13,
+                "minutes": 1092,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2015-163018.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2016-17": {
             "club": "Società Sportiva Lazio",
@@ -6884,7 +7519,7 @@
       "nameOriginal": "Bastos Quissanga",
       "originalName": "Bastos Quissanga",
       "nameKo": "바스토스",
-      "born": "1994-10-14",
+      "born": "1991-03-27",
       "club": "lazio",
       "clubId": "lazio",
       "clubName": "Società Sportiva Lazio",
@@ -6907,7 +7542,9 @@
       "verificationStatus": "current_season_BDFutbol_roster_sourced_second_source_numeric_and_complete_3yr_peer_audit_pending",
       "positionVerification": "original_tactical_role_captured_but_38_match_modal_position_NOT independently_audited",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2017-183018.html"
+        "https://www.bdfutbol.com/en/t/t2017-183018.html",
+        "https://www.bdfutbol.com/en/j/j27255.html",
+        "https://www.cafonline.com/media/tp1jqmp3/teams-en.pdf"
       ],
       "threeSeasonReview": {
         "assessmentSeasons": [
@@ -7078,15 +7715,30 @@
         "weighting": "2017-18 highest > 2016-17 intermediate > 2015-16 lowest",
         "records": {
           "2015-16": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Lazio",
+            "league": "Serie A",
+            "appearances": 30,
+            "starts": 28,
+            "minutes": 2355,
+            "goals": 3,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2015-163018.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2015-163018.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Lazio",
+                "league": "Serie A",
+                "starts": 28,
+                "appearances": 30,
+                "minutes": 2355,
+                "goals": 3,
+                "source": "https://www.bdfutbol.com/en/t/t2015-163018.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2016-17": {
             "club": "Società Sportiva Lazio",
@@ -7169,15 +7821,30 @@
             "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
           },
           "2016-17": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Lazio",
+            "league": "Serie A",
+            "appearances": 16,
+            "starts": 8,
+            "minutes": 844,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2016-173018.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2016-173018.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Lazio",
+                "league": "Serie A",
+                "starts": 8,
+                "appearances": 16,
+                "minutes": 844,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2016-173018.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2017-18": {
             "club": "Società Sportiva Lazio",
@@ -7318,15 +7985,30 @@
         "weighting": "2017-18 highest > 2016-17 intermediate > 2015-16 lowest",
         "records": {
           "2015-16": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Lazio",
+            "league": "Serie A",
+            "appearances": 23,
+            "starts": 21,
+            "minutes": 1817,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2015-163018.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2015-163018.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Lazio",
+                "league": "Serie A",
+                "starts": 21,
+                "appearances": 23,
+                "minutes": 1817,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2015-163018.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2016-17": {
             "club": "Società Sportiva Lazio",
@@ -7478,15 +8160,30 @@
         "weighting": "2017-18 highest > 2016-17 intermediate > 2015-16 lowest",
         "records": {
           "2015-16": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Lazio",
+            "league": "Serie A",
+            "appearances": 25,
+            "starts": 17,
+            "minutes": 1640,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2015-163018.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2015-163018.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Lazio",
+                "league": "Serie A",
+                "starts": 17,
+                "appearances": 25,
+                "minutes": 1640,
+                "goals": 1,
+                "source": "https://www.bdfutbol.com/en/t/t2015-163018.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2016-17": {
             "club": "Società Sportiva Lazio",
@@ -7558,15 +8255,30 @@
         "weighting": "2017-18 highest > 2016-17 intermediate > 2015-16 lowest",
         "records": {
           "2015-16": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Lazio",
+            "league": "Serie A",
+            "appearances": 31,
+            "starts": 30,
+            "minutes": 2564,
+            "goals": 3,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2015-163018.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2015-163018.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Lazio",
+                "league": "Serie A",
+                "starts": 30,
+                "appearances": 31,
+                "minutes": 2564,
+                "goals": 3,
+                "source": "https://www.bdfutbol.com/en/t/t2015-163018.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2016-17": {
             "club": "Società Sportiva Lazio",
@@ -7729,15 +8441,30 @@
             "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
           },
           "2016-17": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Lazio",
+            "league": "Serie A",
+            "appearances": 9,
+            "starts": 4,
+            "minutes": 363,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2016-173018.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2016-173018.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Lazio",
+                "league": "Serie A",
+                "starts": 4,
+                "appearances": 9,
+                "minutes": 363,
+                "goals": 1,
+                "source": "https://www.bdfutbol.com/en/t/t2016-173018.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2017-18": {
             "club": "Società Sportiva Lazio",
@@ -7798,15 +8525,30 @@
         "weighting": "2017-18 highest > 2016-17 intermediate > 2015-16 lowest",
         "records": {
           "2015-16": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Lazio",
+            "league": "Serie A",
+            "appearances": 35,
+            "starts": 21,
+            "minutes": 2068,
+            "goals": 7,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2015-163018.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2015-163018.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Lazio",
+                "league": "Serie A",
+                "starts": 21,
+                "appearances": 35,
+                "minutes": 2068,
+                "goals": 7,
+                "source": "https://www.bdfutbol.com/en/t/t2015-163018.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2016-17": {
             "club": "Società Sportiva Lazio",
@@ -7878,15 +8620,30 @@
         "weighting": "2017-18 highest > 2016-17 intermediate > 2015-16 lowest",
         "records": {
           "2015-16": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Torino",
+            "league": "Serie A",
+            "appearances": 14,
+            "starts": 11,
+            "minutes": 987,
+            "goals": 5,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2015-163019.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2015-163019.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Torino",
+                "league": "Serie A",
+                "starts": 11,
+                "appearances": 14,
+                "minutes": 987,
+                "goals": 5,
+                "source": "https://www.bdfutbol.com/en/t/t2015-163019.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2016-17": {
             "club": "Società Sportiva Lazio",
@@ -8038,15 +8795,31 @@
         "weighting": "2017-18 highest > 2016-17 intermediate > 2015-16 lowest",
         "records": {
           "2015-16": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
+            "club": "Milan",
+            "league": "Serie A",
+            "appearances": 30,
+            "starts": 30,
+            "minutes": 2629,
             "goals": null,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2015-163015.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "goalsAgainst": 29,
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2015-163015.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Milan",
+                "league": "Serie A",
+                "starts": 30,
+                "appearances": 30,
+                "minutes": 2629,
+                "goalsAgainst": 29,
+                "source": "https://www.bdfutbol.com/en/t/t2015-163015.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2016-17": {
             "club": "Associazione Calcio Milan",
@@ -8068,7 +8841,11 @@
             "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2017-183015.html",
-            "verification": "transcribed_current_year_BDFutbol_PM_SM_Min_G_player_row_not_independent_second_source_audited"
+            "verification": "transcribed_current_year_BDFutbol_PM_SM_Min_G_player_row_not_independent_second_source_audited",
+            "goalsAgainst": 42,
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2017-183015.html"
+            ]
           }
         },
         "tierReason": "38경기 전 경기 풀타임. 젊은 정규리그 주전으로 반사 선방·근거리 대처와 승부처 개입이 매우 높음. 2015-16 데뷔 기량과 2016-17 38경기 주전의 지속성을 고려해 A+. **판정 A+ (미승인)**. 3시즌 출전 연결 상태: 2015-16 개인 기록 미연결(실제 0경기 뜻 아님); 2016-17 38경기·0골(기존 미승인 아카이브, 제2출처 재검증 전). 모든 경기별 실제 최빈 위치·독립 동포지션 통계 비교는 추가 확인 필요.",
@@ -8076,7 +8853,8 @@
       },
       "tierReason": "38경기 전 경기 풀타임. 젊은 정규리그 주전으로 반사 선방·근거리 대처와 승부처 개입이 매우 높음. 2015-16 데뷔 기량과 2016-17 38경기 주전의 지속성을 고려해 A+. **판정 A+ (미승인)**. 3시즌 출전 연결 상태: 2015-16 개인 기록 미연결(실제 0경기 뜻 아님); 2016-17 38경기·0골(기존 미승인 아카이브, 제2출처 재검증 전). 모든 경기별 실제 최빈 위치·독립 동포지션 통계 비교는 추가 확인 필요.",
       "gradeEvidenceStatus": "player_specific_grade_draft_verification_pending",
-      "rankStatus": "draft_position_relative_to_current_year_and_3year_sustained_performance"
+      "rankStatus": "draft_position_relative_to_current_year_and_3year_sustained_performance",
+      "leagueGoalsAgainst": 42
     },
     {
       "id": "seriea-2017-18-milan-leonardobonucci",
@@ -8198,15 +8976,30 @@
         "weighting": "2017-18 highest > 2016-17 intermediate > 2015-16 lowest",
         "records": {
           "2015-16": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Milan",
+            "league": "Serie A",
+            "appearances": 34,
+            "starts": 33,
+            "minutes": 2943,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2015-163015.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2015-163015.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Milan",
+                "league": "Serie A",
+                "starts": 33,
+                "appearances": 34,
+                "minutes": 2943,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2015-163015.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2016-17": {
             "club": "Associazione Calcio Milan",
@@ -8438,15 +9231,30 @@
         "weighting": "2017-18 highest > 2016-17 intermediate > 2015-16 lowest",
         "records": {
           "2015-16": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Milan",
+            "league": "Serie A",
+            "appearances": 6,
+            "starts": 3,
+            "minutes": 369,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2015-163015.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2015-163015.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Milan",
+                "league": "Serie A",
+                "starts": 3,
+                "appearances": 6,
+                "minutes": 369,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2015-163015.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2016-17": {
             "club": "Associazione Calcio Milan",
@@ -8518,15 +9326,30 @@
         "weighting": "2017-18 highest > 2016-17 intermediate > 2015-16 lowest",
         "records": {
           "2015-16": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Milan",
+            "league": "Serie A",
+            "appearances": 27,
+            "starts": 27,
+            "minutes": 2254,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2015-163015.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2015-163015.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Milan",
+                "league": "Serie A",
+                "starts": 27,
+                "appearances": 27,
+                "minutes": 2254,
+                "goals": 1,
+                "source": "https://www.bdfutbol.com/en/t/t2015-163015.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2016-17": {
             "club": "Associazione Calcio Milan",
@@ -8598,15 +9421,30 @@
         "weighting": "2017-18 highest > 2016-17 intermediate > 2015-16 lowest",
         "records": {
           "2015-16": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Lazio",
+            "league": "Serie A",
+            "appearances": 27,
+            "starts": 26,
+            "minutes": 2298,
+            "goals": 4,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2015-163018.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2015-163018.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Lazio",
+                "league": "Serie A",
+                "starts": 26,
+                "appearances": 27,
+                "minutes": 2298,
+                "goals": 4,
+                "source": "https://www.bdfutbol.com/en/t/t2015-163018.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2016-17": {
             "club": "Società Sportiva Lazio",
@@ -8678,26 +9516,56 @@
         "weighting": "2017-18 highest > 2016-17 intermediate > 2015-16 lowest",
         "records": {
           "2015-16": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Milan",
+            "league": "Serie A",
+            "appearances": 31,
+            "starts": 31,
+            "minutes": 2689,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2015-163015.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2015-163015.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Milan",
+                "league": "Serie A",
+                "starts": 31,
+                "appearances": 31,
+                "minutes": 2689,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2015-163015.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2016-17": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Milan",
+            "league": "Serie A",
+            "appearances": 9,
+            "starts": 9,
+            "minutes": 780,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2016-173015.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2016-173015.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Milan",
+                "league": "Serie A",
+                "starts": 9,
+                "appearances": 9,
+                "minutes": 780,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2016-173015.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2017-18": {
             "club": "Associazione Calcio Milan",
@@ -8758,15 +9626,30 @@
         "weighting": "2017-18 highest > 2016-17 intermediate > 2015-16 lowest",
         "records": {
           "2015-16": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Milan",
+            "league": "Serie A",
+            "appearances": 33,
+            "starts": 31,
+            "minutes": 2841,
+            "goals": 6,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2015-163015.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2015-163015.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Milan",
+                "league": "Serie A",
+                "starts": 31,
+                "appearances": 33,
+                "minutes": 2841,
+                "goals": 6,
+                "source": "https://www.bdfutbol.com/en/t/t2015-163015.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2016-17": {
             "club": "Associazione Calcio Milan",
@@ -8918,15 +9801,30 @@
         "weighting": "2017-18 highest > 2016-17 intermediate > 2015-16 lowest",
         "records": {
           "2015-16": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Milan",
+            "league": "Serie A",
+            "appearances": 2,
+            "starts": 1,
+            "minutes": 92,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2015-163015.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2015-163015.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Milan",
+                "league": "Serie A",
+                "starts": 1,
+                "appearances": 2,
+                "minutes": 92,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2015-163015.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2016-17": {
             "club": "Associazione Calcio Milan",
@@ -9158,15 +10056,41 @@
         "weighting": "2017-18 highest > 2016-17 intermediate > 2015-16 lowest",
         "records": {
           "2015-16": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Milan / Genoa",
+            "league": "Serie A",
+            "appearances": 20,
+            "starts": 16,
+            "minutes": 1231,
+            "goals": 6,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2015-163015.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2015-163015.html",
+              "https://www.bdfutbol.com/en/t/t2015-163035.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Milan",
+                "league": "Serie A",
+                "starts": 1,
+                "appearances": 1,
+                "minutes": 55,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2015-163015.html",
+                "statsScope": "club-specific Serie A regular season"
+              },
+              {
+                "club": "Genoa",
+                "league": "Serie A",
+                "starts": 15,
+                "appearances": 19,
+                "minutes": 1176,
+                "goals": 6,
+                "source": "https://www.bdfutbol.com/en/t/t2015-163035.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2016-17": {
             "club": "Associazione Calcio Milan",
@@ -9249,15 +10173,30 @@
             "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
           },
           "2016-17": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Milan",
+            "league": "Serie A",
+            "appearances": 1,
+            "starts": 0,
+            "minutes": 5,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2016-173015.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2016-173015.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Milan",
+                "league": "Serie A",
+                "starts": 0,
+                "appearances": 1,
+                "minutes": 5,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2016-173015.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2017-18": {
             "club": "Associazione Calcio Milan",
@@ -9329,15 +10268,30 @@
             "verification": "linked_previous_draft_archive_NOT_independent_source_rechecked"
           },
           "2016-17": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Fiorentina",
+            "league": "Serie A",
+            "appearances": 32,
+            "starts": 26,
+            "minutes": 2483,
+            "goals": 15,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2016-173014.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2016-173014.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Fiorentina",
+                "league": "Serie A",
+                "starts": 26,
+                "appearances": 32,
+                "minutes": 2483,
+                "goals": 15,
+                "source": "https://www.bdfutbol.com/en/t/t2016-173014.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2017-18": {
             "club": "Associazione Calcio Milan",
@@ -9398,15 +10352,31 @@
         "weighting": "2017-18 highest > 2016-17 intermediate > 2015-16 lowest",
         "records": {
           "2015-16": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
+            "club": "Lazio",
+            "league": "Serie A",
+            "appearances": 11,
+            "starts": 9,
+            "minutes": 870,
             "goals": null,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2015-163018.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "goalsAgainst": 13,
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2015-163018.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Lazio",
+                "league": "Serie A",
+                "starts": 9,
+                "appearances": 11,
+                "minutes": 870,
+                "goalsAgainst": 13,
+                "source": "https://www.bdfutbol.com/en/t/t2015-163018.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2016-17": {
             "club": "Atalanta Bergamasca Calcio",
@@ -9428,7 +10398,11 @@
             "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2017-183017.html",
-            "verification": "transcribed_current_year_BDFutbol_PM_SM_Min_G_player_row_not_independent_second_source_audited"
+            "verification": "transcribed_current_year_BDFutbol_PM_SM_Min_G_player_row_not_independent_second_source_audited",
+            "goalsAgainst": 34,
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2017-183017.html"
+            ]
           }
         },
         "tierReason": "2017-18 세리에 A 31경기(선발 31), 2790분, 0골. GK 포지션에서의 개인 경기력·팀 내 실질적 역할·활용 빈도를 우선하며, 2016-17과 2015-16의 개인 기량 연속성은 각각 낮은 가중치를 적용한 잠정 등급이다. 구단 성적·대회 성과를 등급에 가산하지 않음. 3시즌 독립적인 선수별 분석과 경기별 최빈 위치 검증은 추가 필요.",
@@ -9436,7 +10410,8 @@
       },
       "tierReason": "2017-18 세리에 A 31경기(선발 31), 2790분, 0골. GK 포지션에서의 개인 경기력·팀 내 실질적 역할·활용 빈도를 우선하며, 2016-17과 2015-16의 개인 기량 연속성은 각각 낮은 가중치를 적용한 잠정 등급이다. 구단 성적·대회 성과를 등급에 가산하지 않음. 3시즌 독립적인 선수별 분석과 경기별 최빈 위치 검증은 추가 필요.",
       "gradeEvidenceStatus": "player_specific_grade_draft_verification_pending",
-      "rankStatus": "draft_position_relative_to_current_year_and_3year_sustained_performance"
+      "rankStatus": "draft_position_relative_to_current_year_and_3year_sustained_performance",
+      "leagueGoalsAgainst": 34
     },
     {
       "id": "seriea-2017-18-atalanta-pierluigigollini",
@@ -9478,26 +10453,58 @@
         "weighting": "2017-18 highest > 2016-17 intermediate > 2015-16 lowest",
         "records": {
           "2015-16": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
+            "club": "Hellas Verona",
+            "league": "Serie A",
+            "appearances": 26,
+            "starts": 25,
+            "minutes": 2319,
             "goals": null,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2015-163002.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "goalsAgainst": 44,
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2015-163002.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Hellas Verona",
+                "league": "Serie A",
+                "starts": 25,
+                "appearances": 26,
+                "minutes": 2319,
+                "goalsAgainst": 44,
+                "source": "https://www.bdfutbol.com/en/t/t2015-163002.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2016-17": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
+            "club": "Atalanta",
+            "league": "Serie A",
+            "appearances": 4,
+            "starts": 4,
+            "minutes": 360,
             "goals": null,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2016-173017.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "goalsAgainst": 1,
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2016-173017.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Atalanta",
+                "league": "Serie A",
+                "starts": 4,
+                "appearances": 4,
+                "minutes": 360,
+                "goalsAgainst": 1,
+                "source": "https://www.bdfutbol.com/en/t/t2016-173017.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2017-18": {
             "club": "Atalanta Bergamasca Calcio",
@@ -9508,7 +10515,11 @@
             "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2017-183017.html",
-            "verification": "transcribed_current_year_BDFutbol_PM_SM_Min_G_player_row_not_independent_second_source_audited"
+            "verification": "transcribed_current_year_BDFutbol_PM_SM_Min_G_player_row_not_independent_second_source_audited",
+            "goalsAgainst": 4,
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2017-183017.html"
+            ]
           }
         },
         "tierReason": "2017-18 세리에 A 7경기(선발 7), 623분, 0골. GK 포지션에서의 개인 경기력·팀 내 실질적 역할·활용 빈도를 우선하며, 2016-17과 2015-16의 개인 기량 연속성은 각각 낮은 가중치를 적용한 잠정 등급이다. 구단 성적·대회 성과를 등급에 가산하지 않음. 3시즌 독립적인 선수별 분석과 경기별 최빈 위치 검증은 추가 필요.",
@@ -9516,7 +10527,8 @@
       },
       "tierReason": "2017-18 세리에 A 7경기(선발 7), 623분, 0골. GK 포지션에서의 개인 경기력·팀 내 실질적 역할·활용 빈도를 우선하며, 2016-17과 2015-16의 개인 기량 연속성은 각각 낮은 가중치를 적용한 잠정 등급이다. 구단 성적·대회 성과를 등급에 가산하지 않음. 3시즌 독립적인 선수별 분석과 경기별 최빈 위치 검증은 추가 필요.",
       "gradeEvidenceStatus": "player_specific_grade_draft_verification_pending",
-      "rankStatus": "draft_position_relative_to_current_year_and_3year_sustained_performance"
+      "rankStatus": "draft_position_relative_to_current_year_and_3year_sustained_performance",
+      "leagueGoalsAgainst": 4
     },
     {
       "id": "seriea-2017-18-atalanta-andreamasiello",
@@ -9558,15 +10570,30 @@
         "weighting": "2017-18 highest > 2016-17 intermediate > 2015-16 lowest",
         "records": {
           "2015-16": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Atalanta",
+            "league": "Serie A",
+            "appearances": 29,
+            "starts": 27,
+            "minutes": 2400,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2015-163017.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2015-163017.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Atalanta",
+                "league": "Serie A",
+                "starts": 27,
+                "appearances": 29,
+                "minutes": 2400,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2015-163017.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2016-17": {
             "club": "Atalanta Bergamasca Calcio",
@@ -9638,15 +10665,30 @@
         "weighting": "2017-18 highest > 2016-17 intermediate > 2015-16 lowest",
         "records": {
           "2015-16": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Atalanta",
+            "league": "Serie A",
+            "appearances": 24,
+            "starts": 21,
+            "minutes": 1895,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2015-163017.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2015-163017.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Atalanta",
+                "league": "Serie A",
+                "starts": 21,
+                "appearances": 24,
+                "minutes": 1895,
+                "goals": 1,
+                "source": "https://www.bdfutbol.com/en/t/t2015-163017.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2016-17": {
             "club": "Atalanta Bergamasca Calcio",
@@ -10049,15 +11091,30 @@
             "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
           },
           "2016-17": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Atalanta",
+            "league": "Serie A",
+            "appearances": 6,
+            "starts": 3,
+            "minutes": 289,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2016-173017.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2016-173017.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Atalanta",
+                "league": "Serie A",
+                "starts": 3,
+                "appearances": 6,
+                "minutes": 289,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2016-173017.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2017-18": {
             "club": "Atalanta Bergamasca Calcio",
@@ -10198,15 +11255,30 @@
         "weighting": "2017-18 highest > 2016-17 intermediate > 2015-16 lowest",
         "records": {
           "2015-16": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Atalanta",
+            "league": "Serie A",
+            "appearances": 36,
+            "starts": 35,
+            "minutes": 3095,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2015-163017.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2015-163017.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Atalanta",
+                "league": "Serie A",
+                "starts": 35,
+                "appearances": 36,
+                "minutes": 3095,
+                "goals": 1,
+                "source": "https://www.bdfutbol.com/en/t/t2015-163017.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2016-17": {
             "club": null,
@@ -10278,15 +11350,30 @@
         "weighting": "2017-18 highest > 2016-17 intermediate > 2015-16 lowest",
         "records": {
           "2015-16": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Palermo",
+            "league": "Serie A",
+            "appearances": 4,
+            "starts": 1,
+            "minutes": 94,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2015-163030.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2015-163030.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Palermo",
+                "league": "Serie A",
+                "starts": 1,
+                "appearances": 4,
+                "minutes": 94,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2015-163030.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2016-17": {
             "club": "Atalanta Bergamasca Calcio",
@@ -10358,15 +11445,30 @@
         "weighting": "2017-18 highest > 2016-17 intermediate > 2015-16 lowest",
         "records": {
           "2015-16": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Atalanta",
+            "league": "Serie A",
+            "appearances": 6,
+            "starts": 5,
+            "minutes": 450,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2015-163017.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2015-163017.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Atalanta",
+                "league": "Serie A",
+                "starts": 5,
+                "appearances": 6,
+                "minutes": 450,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2015-163017.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2016-17": {
             "club": "Atalanta Bergamasca Calcio",
@@ -10438,15 +11540,30 @@
         "weighting": "2017-18 highest > 2016-17 intermediate > 2015-16 lowest",
         "records": {
           "2015-16": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Atalanta",
+            "league": "Serie A",
+            "appearances": 34,
+            "starts": 33,
+            "minutes": 2825,
+            "goals": 7,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2015-163017.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2015-163017.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Atalanta",
+                "league": "Serie A",
+                "starts": 33,
+                "appearances": 34,
+                "minutes": 2825,
+                "goals": 7,
+                "source": "https://www.bdfutbol.com/en/t/t2015-163017.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2016-17": {
             "club": "Atalanta Bergamasca Calcio",
@@ -10529,15 +11646,30 @@
             "verification": "linked_previous_draft_archive_NOT_independent_source_rechecked"
           },
           "2016-17": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Fiorentina",
+            "league": "Serie A",
+            "appearances": 29,
+            "starts": 24,
+            "minutes": 1899,
+            "goals": 5,
             "assists": null,
-            "source": null,
-            "verification": "not_linked_other_team_or_league_and_NOT_zero_assumed"
+            "source": "https://www.bdfutbol.com/en/t/t2016-173014.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2016-173014.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Fiorentina",
+                "league": "Serie A",
+                "starts": 24,
+                "appearances": 29,
+                "minutes": 1899,
+                "goals": 5,
+                "source": "https://www.bdfutbol.com/en/t/t2016-173014.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2017-18": {
             "club": "Atalanta Bergamasca Calcio",
