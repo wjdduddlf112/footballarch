@@ -3384,25 +3384,29 @@
           "id": "bundesliga-2023-dortmund-gregorkobel",
           "section": "<summary>Best XI와 포지션 순위 불일치 (4행)</summary>",
           "row": "| GK | 그레고어 코벨 | 4 | bundesliga-2023-dortmund-gregorkobel | 올리버 바우만 1위 (bundesliga-2023-hoffenheim-oliverbaumann) | 당해 역할과 최근 세 시즌 개인 기여를 대조해 순위·XI·선정 이유 정합화. |",
-          "reason": "identity/scope mismatch"
+          "reason": "identity/scope mismatch",
+          "resolution": "reviewed in usageFollowup: tactical selection documented"
         },
         {
           "id": "bundesliga-2023-stuttgart-maximilianmittelstadt",
           "section": "<summary>Best XI와 포지션 순위 불일치 (4행)</summary>",
           "row": "| LB | 막시밀리안 미텔슈테트 | 3 | bundesliga-2023-stuttgart-maximilianmittelstadt | 알레한드로 그리말도 1위 (bundesliga-2023-leverkusen-alejandrogrimaldo) | 그리말도의 윙백과 미텔슈테트의 왼쪽 풀백 기용을 분리해 비교. |",
-          "reason": "identity/scope mismatch"
+          "reason": "identity/scope mismatch",
+          "resolution": "reviewed in usageFollowup: tactical selection documented"
         },
         {
           "id": "bundesliga-2023-bayern-joshuakimmich",
           "section": "<summary>Best XI와 포지션 순위 불일치 (4행)</summary>",
           "row": "| RB | 요주아 키미히 | 2 | bundesliga-2023-bayern-joshuakimmich | 제레미 프림퐁 1위 (bundesliga-2023-leverkusen-jeremiefrimpong) | 프림퐁의 윙백과 키미히의 오른쪽 풀백·중원 기용을 구분. |",
-          "reason": "identity/scope mismatch"
+          "reason": "identity/scope mismatch",
+          "resolution": "reviewed in usageFollowup: tactical selection documented"
         },
         {
           "id": "bundesliga-2023-stuttgart-chrisfuhrich",
           "section": "<summary>Best XI와 포지션 순위 불일치 (4행)</summary>",
           "row": "| LW | 크리스 퓌리히 | 2 | bundesliga-2023-stuttgart-chrisfuhrich | 사비 시몬스 1위 (bundesliga-2023-leipzig-xavisimons) | 당해 역할과 최근 세 시즌 개인 기여를 대조해 순위·XI·선정 이유 정합화. |",
-          "reason": "identity/scope mismatch"
+          "reason": "identity/scope mismatch",
+          "resolution": "reviewed in usageFollowup: tactical selection documented"
         },
         {
           "id": "bundesliga-2023-leverkusen-josipstanisic",
@@ -3553,7 +3557,36 @@
           "reason": "club-specific values recorded, aggregate not overwritten"
         }
       ],
-      "formationReview": "DFB modal existing formation confirmed by report; no formation change"
+      "formationReview": "DFB modal existing formation confirmed by report; no formation change",
+      "usageFollowup": {
+        "report": "FOOTBALL_AUDIT_BUNDESLIGA_SEGMENT_3_CORRECTIONS.md",
+        "status": "draft_unapproved",
+        "positions": [],
+        "excluded": [],
+        "xi": [
+          {
+            "old": "bundesliga-2023-dortmund-gregorkobel",
+            "new": "bundesliga-2023-hoffenheim-oliverbaumann",
+            "reason": "Baumann A rank 1 34 starts/3060 min vs Kobel A rank 4 27/2366; availability and existing rank. Comparable shot-stopping evidence incomplete."
+          },
+          {
+            "old": "bundesliga-2023-stuttgart-maximilianmittelstadt",
+            "new": "bundesliga-2023-leipzig-davidraum",
+            "reason": "Raum A rank 2 31 starts/2745 min/2G/8A vs Mittelstädt A rank 3 23/2104/2G; both orthodox LB, Grimaldo rank 1 LWB retains mapped rank."
+          },
+          {
+            "old": "bundesliga-2023-bayern-joshuakimmich",
+            "new": "bundesliga-2023-bayern-joshuakimmich",
+            "reason": "Kimmich A rank 2, second-half orthodox RB; Frimpong A+ rank 1 attack-heavy RWB. Four-back fit supports Kimmich; predominant minutes unresolved."
+          },
+          {
+            "old": "bundesliga-2023-stuttgart-chrisfuhrich",
+            "new": "bundesliga-2023-leipzig-xavisimons",
+            "reason": "Simons A+ rank 1 32 starts/2675 min/8G/13A vs Führich A rank 2 33/2593/8G; creative left half-space role fits 4-2-3-1."
+          }
+        ],
+        "method": "Current season highest weight; prior two seasons secondary; no team outcome bonus. DRAFT positional quality and tactical suitability."
+      }
     }
   },
   "clubs": [
@@ -18643,9 +18676,9 @@
     {
       "position": "GK",
       "displayPosition": "GK",
-      "playerId": "bundesliga-2023-dortmund-gregorkobel",
+      "playerId": "bundesliga-2023-hoffenheim-oliverbaumann",
       "status": "proposed_unapproved",
-      "reason": "2023-24 분데스리가 27경기 27선발 2366분. 2023-24 개인 활약과 해당 포지션 전술적 적합성 고려. 2021-22/2022-23 개인 활약은 낮은 비중으로 참조하되 전원 독립적 3시즌 정성 검증 미완료. 팀 우승/성적 자체 가산점 없음.",
+      "reason": "Baumann A rank 1 34 starts/3060 min vs Kobel A rank 4 27/2366; availability and existing rank. Comparable shot-stopping evidence incomplete. DRAFT; full independent three-season quality comparison incomplete.",
       "alternates": []
     },
     {
@@ -18667,9 +18700,9 @@
     {
       "position": "LB",
       "displayPosition": "LB",
-      "playerId": "bundesliga-2023-stuttgart-maximilianmittelstadt",
+      "playerId": "bundesliga-2023-leipzig-davidraum",
       "status": "proposed_unapproved",
-      "reason": "2023-24 분데스리가 31경기 23선발 2104분 2골. 2023-24 개인 활약과 해당 포지션 전술적 적합성 고려. 2021-22/2022-23 개인 활약은 낮은 비중으로 참조하되 전원 독립적 3시즌 정성 검증 미완료. 팀 우승/성적 자체 가산점 없음.",
+      "reason": "Raum A rank 2 31 starts/2745 min/2G/8A vs Mittelstädt A rank 3 23/2104/2G; both orthodox LB, Grimaldo rank 1 LWB retains mapped rank. DRAFT; full independent three-season quality comparison incomplete.",
       "alternates": []
     },
     {
@@ -18677,7 +18710,7 @@
       "displayPosition": "RB",
       "playerId": "bundesliga-2023-bayern-joshuakimmich",
       "status": "proposed_unapproved",
-      "reason": "2023-24 분데스리가 28경기 27선발 2185분 1골. 2023-24 개인 활약과 해당 포지션 전술적 적합성 고려. 2021-22/2022-23 개인 활약은 낮은 비중으로 참조하되 전원 독립적 3시즌 정성 검증 미완료. 팀 우승/성적 자체 가산점 없음.",
+      "reason": "Kimmich A rank 2, second-half orthodox RB; Frimpong A+ rank 1 attack-heavy RWB. Four-back fit supports Kimmich; predominant minutes unresolved. DRAFT; full independent three-season quality comparison incomplete.",
       "alternates": []
     },
     {
@@ -18707,9 +18740,9 @@
     {
       "position": "LW",
       "displayPosition": "LW",
-      "playerId": "bundesliga-2023-stuttgart-chrisfuhrich",
+      "playerId": "bundesliga-2023-leipzig-xavisimons",
       "status": "proposed_unapproved",
-      "reason": "2023-24 분데스리가 34경기 33선발 2593분 8골. 2023-24 개인 활약과 해당 포지션 전술적 적합성 고려. 2021-22/2022-23 개인 활약은 낮은 비중으로 참조하되 전원 독립적 3시즌 정성 검증 미완료. 팀 우승/성적 자체 가산점 없음.",
+      "reason": "Simons A+ rank 1 32 starts/2675 min/8G/13A vs Führich A rank 2 33/2593/8G; creative left half-space role fits 4-2-3-1. DRAFT; full independent three-season quality comparison incomplete.",
       "alternates": []
     },
     {
