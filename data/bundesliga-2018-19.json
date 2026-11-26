@@ -4557,7 +4557,8 @@
           "id": "bundesliga-2018-leipzig-marcelhalstenberg",
           "section": "<summary>Best XI와 포지션 순위 불일치 (1행)</summary>",
           "row": "| LB | 마르첼 할스텐베르크 | 3 | bundesliga-2018-leipzig-marcelhalstenberg | 필립 코스티치 1위 (bundesliga-2018-frankfurt-filipkostic) | 코스티치의 윙백 역할과 할스텐베르크의 풀백 역할을 분리하고 4-1-2-3 슬롯을 기준으로 비교. |",
-          "reason": "identity/scope mismatch"
+          "reason": "identity/scope mismatch",
+          "resolution": "reviewed in usageFollowup: tactical selection documented"
         },
         {
           "id": "bundesliga-2018-dortmund-raphaelguerreiro",
@@ -4756,6 +4757,20 @@
         ],
         "method": "Retain existing relative order of unmoved candidates; insert transferred candidates by existing tier and current league minutes; reindex affected groups. No new tier ratings.",
         "pending": "Substitution role distribution and independent three-season individual quality."
+      },
+      "usageFollowup": {
+        "report": "FOOTBALL_AUDIT_BUNDESLIGA_SEGMENT_3_CORRECTIONS.md",
+        "status": "draft_unapproved",
+        "positions": [],
+        "excluded": [],
+        "xi": [
+          {
+            "old": "bundesliga-2018-leipzig-marcelhalstenberg",
+            "new": "bundesliga-2018-leipzig-marcelhalstenberg",
+            "reason": "Halstenberg 27 starts, orthodox LB; Kostić rank 1 is Frankfurt LWB, Alaba rank 2 fewer starts. Four-back fit/current usage."
+          }
+        ],
+        "method": "Current season highest weight; prior two seasons secondary; no team outcome bonus. DRAFT positional quality and tactical suitability."
       }
     }
   },
@@ -18350,7 +18365,7 @@
       "position": "LB",
       "displayPosition": "LB",
       "playerId": "bundesliga-2018-leipzig-marcelhalstenberg",
-      "reason": "28경기 27선발, 왼쪽 풀백에서 수비 안정과 공격 전진 모두 기여. 2/2 past league-season appearance references available; A is draft grade, peer comparison and full individual historic quality independently unverified. Formation fit 4-1-2-3 prioritized: same-position competition, contemporary VDV context where available; not team title bonus.",
+      "reason": "Halstenberg 27 starts, orthodox LB; Kostić rank 1 is Frankfurt LWB, Alaba rank 2 fewer starts. Four-back fit/current usage. DRAFT; full independent three-season quality comparison incomplete.",
       "status": "proposed_unapproved",
       "alternates": []
     },

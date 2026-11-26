@@ -5442,25 +5442,29 @@
           "id": "bundesliga-2021-freiburg-markflekken",
           "section": "<summary>Best XI와 포지션 순위 불일치 (4행)</summary>",
           "row": "| GK | 마르크 플레컨 | 2 | bundesliga-2021-freiburg-markflekken | 마누엘 노이어 1위 (bundesliga-2021-bayern-manuelneuer) | 당해 역할과 최근 세 시즌 개인 기여를 대조해 순위·XI·선정 이유 정합화. |",
-          "reason": "identity/scope mismatch"
+          "reason": "identity/scope mismatch",
+          "resolution": "reviewed in usageFollowup: tactical selection documented"
         },
         {
           "id": "bundesliga-2021-bayern-niklassule",
           "section": "<summary>Best XI와 포지션 순위 불일치 (4행)</summary>",
           "row": "| CB | 니클라스 쥘레 | 8 | bundesliga-2021-bayern-niklassule | 니코 슐로터베크 1위 (bundesliga-2021-freiburg-nicoschlotterbeck), 요나탄 타 2위 (bundesliga-2021-leverkusen-jonathantah) | XI의 쥘레는 같은 포지션 8위다. 슐로터베크·타 등 상위 후보와 개인 기여를 대조. |",
-          "reason": "identity/scope mismatch"
+          "reason": "identity/scope mismatch",
+          "resolution": "reviewed in usageFollowup: tactical selection documented"
         },
         {
           "id": "bundesliga-2021-freiburg-christiangunter",
           "section": "<summary>Best XI와 포지션 순위 불일치 (4행)</summary>",
           "row": "| LB | 크리스티안 귄터 | 2 | bundesliga-2021-freiburg-christiangunter | 필리프 코스티치 1위 (bundesliga-2021-frankfurt-filipkostic) | 당해 역할과 최근 세 시즌 개인 기여를 대조해 순위·XI·선정 이유 정합화. |",
-          "reason": "identity/scope mismatch"
+          "reason": "identity/scope mismatch",
+          "resolution": "reviewed in usageFollowup: tactical selection documented"
         },
         {
           "id": "bundesliga-2021-leipzig-christophernkunku",
           "section": "<summary>Best XI와 포지션 순위 불일치 (4행)</summary>",
           "row": "| CAM | 크리스토퍼 은쿤쿠 | 2 | bundesliga-2021-leipzig-christophernkunku | 토마스 뮐러 1위 (bundesliga-2021-bayern-thomasmuller) | 은쿤쿠의 공격형 미드필더·세컨드 스트라이커 기용과 뮐러의 주 포지션을 비교. |",
-          "reason": "identity/scope mismatch"
+          "reason": "identity/scope mismatch",
+          "resolution": "reviewed in usageFollowup: tactical selection documented"
         },
         {
           "id": "bundesliga-2021-dortmund-emrecan",
@@ -5616,7 +5620,43 @@
           "reason": "club-specific values recorded, aggregate not overwritten"
         }
       ],
-      "formationReview": "DFB modal existing formation confirmed by report; no formation change"
+      "formationReview": "DFB modal existing formation confirmed by report; no formation change",
+      "usageFollowup": {
+        "report": "FOOTBALL_AUDIT_BUNDESLIGA_SEGMENT_3_CORRECTIONS.md",
+        "status": "draft_unapproved",
+        "positions": [
+          {
+            "id": "bundesliga-2021-leipzig-christophernkunku",
+            "before": 2,
+            "after": 1,
+            "reason": "Same A+ tier; exceptional current 20G/13A outweighs Müller's earlier continuity."
+          }
+        ],
+        "excluded": [],
+        "xi": [
+          {
+            "old": "bundesliga-2021-freiburg-markflekken",
+            "new": "bundesliga-2021-bayern-manuelneuer",
+            "reason": "Neuer A+ rank 1, 28 starts/2511 min vs Flekken A rank 2 32/2880. Prior continuity and existing goalkeeper quality grade outweigh availability."
+          },
+          {
+            "old": "bundesliga-2021-bayern-niklassule",
+            "new": "bundesliga-2021-leverkusen-jonathantah",
+            "reason": "Tah A rank 2 33 starts/2882 min/2G vs Süle A rank 8 19/1833/1G; current CB usage favours Tah."
+          },
+          {
+            "old": "bundesliga-2021-freiburg-christiangunter",
+            "new": "bundesliga-2021-freiburg-christiangunter",
+            "reason": "Günter 34 starts/3060 min and orthodox LB vs Kostić rank 1 LWB; tactical fit/full-season availability."
+          },
+          {
+            "old": "bundesliga-2021-leipzig-christophernkunku",
+            "new": "bundesliga-2021-leipzig-christophernkunku",
+            "reason": "Nkunku 20G/13A in 31 starts, CAM/second-striker hybrid; now rank 1 within A+. Müller rank 2 A+."
+          }
+        ],
+        "method": "Current season highest weight; prior two seasons secondary; no team outcome bonus. DRAFT positional quality and tactical suitability."
+      }
     }
   },
   "clubs": [
@@ -7483,7 +7523,7 @@
       "goals2021": 8,
       "assists2021": null,
       "tier": "A+",
-      "rank": 1,
+      "rank": 2,
       "rankStatus": "provisional_current_season_and_tier_sort_not_full_quality_audit",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -7541,7 +7581,7 @@
         },
         "status": "current_source_reference_prior_DRAFT_or_missing_independent_three_year_audit_pending"
       },
-      "tierReview": "2021-22 리그 32경기 / 32선발 / 2578분 / 8골. 해당 시즌의 개인 기용량·포지션 기여를 우선, 최근 3시즌 순서로 참고한 A+ 잠정 등급. 이전 시즌 출전기록 연결 2/2는 기존 미승인 DRAFT 참고값 또는 미확보이며 독립 검증이 아님. 팀 순위·우승 자체 가산점 없음. 전술 역할: nominal role; matchwise primary position not independently certified.",
+      "tierReview": "2021-22 리그 32경기 / 32선발 / 2578분 / 8골. 해당 시즌의 개인 기용량·포지션 기여를 우선, 최근 3시즌 순서로 참고한 A+ 잠정 등급. 이전 시즌 출전기록 연결 2/2는 기존 미승인 DRAFT 참고값 또는 미확보이며 독립 검증이 아님. 팀 순위·우승 자체 가산점 없음. 전술 역할: nominal role; matchwise primary position not independently certified. CAM rank 2 after Nkunku exceptional current output; A+ retained for continuity.",
       "assessmentRationale": "2021-22 리그 32경기 / 32선발 / 2578분 / 8골. 해당 시즌의 개인 기용량·포지션 기여를 우선, 최근 3시즌 순서로 참고한 A+ 잠정 등급. 이전 시즌 출전기록 연결 2/2는 기존 미승인 DRAFT 참고값 또는 미확보이며 독립 검증이 아님. 팀 순위·우승 자체 가산점 없음. 전술 역할: nominal role; matchwise primary position not independently certified.",
       "verificationNeeded": [
         "full_independent_three_season_audit",
@@ -13528,7 +13568,7 @@
       "goals2021": 20,
       "assists2021": 13,
       "tier": "A+",
-      "rank": 2,
+      "rank": 1,
       "rankStatus": "provisional_current_season_and_tier_sort_not_full_quality_audit",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -13590,7 +13630,7 @@
         },
         "status": "current_source_reference_prior_DRAFT_or_missing_independent_three_year_audit_pending"
       },
-      "tierReview": "2021-22 리그 34경기 / 31선발 / 2733분 / 20골. 해당 시즌의 개인 기용량·포지션 기여를 우선, 최근 3시즌 순서로 참고한 A+ 잠정 등급. 이전 시즌 출전기록 연결 2/2는 기존 미승인 DRAFT 참고값 또는 미확보이며 독립 검증이 아님. 팀 순위·우승 자체 가산점 없음. 전술 역할: support striker / CAM hybrid 3-4-1-2; matchwise role pending.",
+      "tierReview": "2021-22 리그 34경기 / 31선발 / 2733분 / 20골. 해당 시즌의 개인 기용량·포지션 기여를 우선, 최근 3시즌 순서로 참고한 A+ 잠정 등급. 이전 시즌 출전기록 연결 2/2는 기존 미승인 DRAFT 참고값 또는 미확보이며 독립 검증이 아님. 팀 순위·우승 자체 가산점 없음. 전술 역할: support striker / CAM hybrid 3-4-1-2; matchwise role pending. Current 20G/13A in 31 starts; CAM rank 1.",
       "assessmentRationale": "2021-22 리그 34경기 / 31선발 / 2733분 / 20골. 해당 시즌의 개인 기용량·포지션 기여를 우선, 최근 3시즌 순서로 참고한 A+ 잠정 등급. 이전 시즌 출전기록 연결 2/2는 기존 미승인 DRAFT 참고값 또는 미확보이며 독립 검증이 아님. 팀 순위·우승 자체 가산점 없음. 전술 역할: support striker / CAM hybrid 3-4-1-2; matchwise role pending.",
       "verificationNeeded": [
         "full_independent_three_season_audit",
@@ -21705,9 +21745,9 @@
     {
       "position": "GK",
       "displayPosition": "GK",
-      "playerId": "bundesliga-2021-freiburg-markflekken",
+      "playerId": "bundesliga-2021-bayern-manuelneuer",
       "status": "proposed_unapproved",
-      "reason": "2021-22 리그 32경기 / 32선발 / 2880분. 해당 시즌의 개인 기용량·포지션 기여를 우선, 최근 3시즌 순서로 참고한 A0 잠정 등급. 이전 시즌 출전기록 연결 0/2는 기존 미승인 DRAFT 참고값 또는 미확보이며 독립 검증이 아님. 팀 순위·우승 자체 가산점 없음. 전술 역할: nominal role; matchwise primary position not independently certified. 4-2-3-1 역할 적합성에 따른 미승인 제안. 과거 3시즌 개인 경기력 최종 검증 미완료.",
+      "reason": "Neuer A+ rank 1, 28 starts/2511 min vs Flekken A rank 2 32/2880. Prior continuity and existing goalkeeper quality grade outweigh availability. DRAFT; full independent three-season quality comparison incomplete.",
       "alternates": []
     },
     {
@@ -21729,9 +21769,9 @@
     {
       "position": "CB",
       "displayPosition": "CB",
-      "playerId": "bundesliga-2021-bayern-niklassule",
+      "playerId": "bundesliga-2021-leverkusen-jonathantah",
       "status": "proposed_unapproved",
-      "reason": "2021-22 리그 28경기 / 19선발 / 1833분 / 1골. 해당 시즌의 개인 기용량·포지션 기여를 우선, 최근 3시즌 순서로 참고한 A0 잠정 등급. 이전 시즌 출전기록 연결 2/2는 기존 미승인 DRAFT 참고값 또는 미확보이며 독립 검증이 아님. 팀 순위·우승 자체 가산점 없음. 전술 역할: nominal role; matchwise primary position not independently certified. 4-2-3-1 역할 적합성에 따른 미승인 제안. 과거 3시즌 개인 경기력 최종 검증 미완료.",
+      "reason": "Tah A rank 2 33 starts/2882 min/2G vs Süle A rank 8 19/1833/1G; current CB usage favours Tah. DRAFT; full independent three-season quality comparison incomplete.",
       "alternates": []
     },
     {
@@ -21739,7 +21779,7 @@
       "displayPosition": "LB",
       "playerId": "bundesliga-2021-freiburg-christiangunter",
       "status": "proposed_unapproved",
-      "reason": "2021-22 리그 34경기 / 34선발 / 3060분 / 2골. 해당 시즌의 개인 기용량·포지션 기여를 우선, 최근 3시즌 순서로 참고한 A0 잠정 등급. 이전 시즌 출전기록 연결 0/2는 기존 미승인 DRAFT 참고값 또는 미확보이며 독립 검증이 아님. 팀 순위·우승 자체 가산점 없음. 전술 역할: nominal role; matchwise primary position not independently certified. 4-2-3-1 역할 적합성에 따른 미승인 제안. 과거 3시즌 개인 경기력 최종 검증 미완료.",
+      "reason": "Günter 34 starts/3060 min and orthodox LB vs Kostić rank 1 LWB; tactical fit/full-season availability. DRAFT; full independent three-season quality comparison incomplete.",
       "alternates": []
     },
     {
@@ -21763,7 +21803,7 @@
       "displayPosition": "CAM",
       "playerId": "bundesliga-2021-leipzig-christophernkunku",
       "status": "proposed_unapproved",
-      "reason": "2021-22 리그 34경기 / 31선발 / 2733분 / 20골. 해당 시즌의 개인 기용량·포지션 기여를 우선, 최근 3시즌 순서로 참고한 A+ 잠정 등급. 이전 시즌 출전기록 연결 2/2는 기존 미승인 DRAFT 참고값 또는 미확보이며 독립 검증이 아님. 팀 순위·우승 자체 가산점 없음. 전술 역할: support striker / CAM hybrid 3-4-1-2; matchwise role pending. 4-2-3-1 역할 적합성에 따른 미승인 제안. 과거 3시즌 개인 경기력 최종 검증 미완료.",
+      "reason": "Nkunku 20G/13A in 31 starts, CAM/second-striker hybrid; now rank 1 within A+. Müller rank 2 A+. DRAFT; full independent three-season quality comparison incomplete.",
       "alternates": []
     },
     {

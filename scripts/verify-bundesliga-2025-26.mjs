@@ -29,6 +29,8 @@ const clubs=new Set(a.qualifiers.map(x=>x.club));
 check(approvedClubs.every(c=>clubs.has(c))&&clubs.size===7,'Qualifier scope mismatch');
 for(const q of a.qualifiers)check(expectedCompetition[q.club]===q.competition,'Competition mismatch for '+q.club);
 check(a.players?.length===a.meta?.candidateCount,'Candidate metadata count');
+check(a.players.find(p=>p.id.endsWith('-tombischof'))?.position==='LB','Reviewed Bischof role');
+check(a.players.filter(p=>p.club==='bayern'&&p.position==='LB').length===2,'Bayern LB 1+1 selection');
 check(new Set(a.players.map(p=>p.id)).size===a.players.length,'Duplicate player ids');
 for(const p of a.players){
  check(clubs.has(p.club)&&p.club===p.clubId,'Player outside eligible club: '+p.id);

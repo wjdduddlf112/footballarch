@@ -32,14 +32,14 @@ const page=await browser.newPage({viewport:{width:1350,height:920}});
 const exceptions=[];
 page.on("pageerror",e=>exceptions.push(e.message));
 try{
- await waitForPublishedSeason(page,"2017-18",135);
+ await waitForPublishedSeason(page,"2017-18",131);
  await page.locator('button[data-tab="tiers"]').click();
  assert.equal(await page.locator(".tier-directory-section").count(),7,"7 European qualifier club sections");
- assert.equal(await page.locator("tr[data-player]").count(),135,"135 club-view rows");
+ assert.equal(await page.locator("tr[data-player]").count(),131,"131 club-view rows");
  await page.locator('button[data-tier-view="positions"]').click();
- assert.equal(await page.locator("tr[data-player]").count(),135,"135 ranked position-view rows");
+ assert.equal(await page.locator("tr[data-player]").count(),131,"131 ranked position-view rows");
  await page.locator('button[data-tier-view="tiers"]').click();
- assert.equal(await page.locator("tr[data-player]").count(),135,"135 graded-view rows");
+ assert.equal(await page.locator("tr[data-player]").count(),131,"131 graded-view rows");
  await page.locator("tr[data-player]").first().click();
  const dialog=page.locator('[role="dialog"]');
  await dialog.waitFor();
@@ -59,5 +59,5 @@ try{
  await page.locator('button[data-tab="tiers"]').click();
  assert.equal(await page.locator("tr[data-player]").count(),130,"2016-17 prior-season regression");
  assert.deepEqual(exceptions,[],"browser errors "+exceptions.join(","));
- console.log("PASS: Bundesliga 2017-18 LIVE site 135 records 7 clubs 11 XI and prior-year regression.");
+ console.log("PASS: Bundesliga 2017-18 LIVE site 131 records 7 clubs 11 XI and prior-year regression.");
 } finally {await browser.close();}

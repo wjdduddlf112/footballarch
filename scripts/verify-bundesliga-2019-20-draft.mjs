@@ -17,6 +17,7 @@ ok(d.qualifiers.every(q=>archive.europeanParticipation[q.club]===q.competition),
 ok(d.qualifiers.some(q=>q.club==="wolfsburg"&&q.route.includes("AEK Athens")),"Wolfsburg 2020-21 UEL qualifying not omitted");
 ok(!d.qualifiers.some(q=>q.club==="frankfurt"),"Frankfurt must not qualify");
 ok(d.players.length===142&&d.meta.candidateCount===142,"142 players");
+ok(d.players.find(p=>p.id.endsWith("-lucashernandez"))?.position==="LB","reviewed Hernandez role");
 const ids=new Set(),backs={},dist=Object.fromEntries(tiers.map(t=>[t,0]));
 for(const p of d.players){
  ok(!ids.has(p.id),"duplicate "+p.id);ids.add(p.id);

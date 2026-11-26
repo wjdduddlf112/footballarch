@@ -55,9 +55,9 @@ try{
  assert.match(await page.locator("#content").innerText(),/Bayern/);
  await page.locator('button[data-tab="stats"]').click();
  assert.match(await page.locator("#content").innerText(),/Matching Players|League Top Class/);
- await waitForPublishedSeason(page,"2017-18",135);
+ await waitForPublishedSeason(page,"2017-18",131);
  await page.locator('button[data-tab="tiers"]').click();
- assert.equal(await page.locator("tr[data-player]").count(),135,"2017-18 prior-season regression");
+ assert.equal(await page.locator("tr[data-player]").count(),131,"2017-18 prior-season regression");
  assert.deepEqual(exceptions,[],"browser errors "+exceptions.join(","));
  console.log("PASS: Bundesliga 2018-19 LIVE site 133 records 7 clubs 11 XI and prior-year regression.");
 } finally {await browser.close();}
