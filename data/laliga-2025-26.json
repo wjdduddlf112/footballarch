@@ -79,12 +79,30 @@
       "positionModalVerified": false,
       "priorIndependentComplete": false,
       "priorCoverage": {
-        "0": 16,
-        "1": 43,
-        "2": 89
+        "0": 11,
+        "1": 38,
+        "2": 99
       },
       "otherLeagueArchiveReferences": 25,
-      "birthDateComparison": "141 roster+snapshot matches, 6 roster errors resolved against official profile and snapshot, Julio Diaz independently corroborated by official club and individual Transfermarkt profile."
+      "birthDateComparison": "141 roster+snapshot matches, 6 roster errors resolved against official profile and snapshot, Julio Diaz independently corroborated by official club and individual Transfermarkt profile.",
+      "externalBirthCorrection": {
+        "name": "Jon Gorrotxategi",
+        "from": "2002-02-02",
+        "to": "2002-09-02",
+        "sources": [
+          "https://www.bdfutbol.com/en/j/j201966.html",
+          "https://www.realsociedad.eus/es/equipo/jugador/real-sociedad/jon-gorrotxategi-etxaniz"
+        ]
+      },
+      "externalReview": {
+        "report": "audit/LALIGA_2017_2026_EXTERNAL_REVIEW_CORRECTIONS.json",
+        "status": "draft_external_report_applied",
+        "dobMissingCount": 0,
+        "startsMissingCount": 0,
+        "gkConcededRecorded": 14,
+        "fullHistoricalFactVerification": false,
+        "notes": "Current row facts updated; unresolved matchwise positions, minute convention and XI items remain provisional. Existing original audit notes describe pre-correction status."
+      }
     },
     "nodeCliValidation": {
       "status": "PASS",
@@ -12035,9 +12053,11 @@
       "rank": 6,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_editorial",
-      "birthSource": "https://www.bdfutbol.com/en/j/j201966.html",
-      "birthAuditStatus": "external_audit_profile_reference",
+      "birthSource": "https://www.realsociedad.eus/es/equipo/jugador/real-sociedad/jon-gorrotxategi-etxaniz",
+      "birthAuditStatus": "external_audit_individual_and_official_profile",
       "birthSources": [
+        "https://www.bdfutbol.com/en/j/j201966.html",
+        "https://www.realsociedad.eus/es/equipo/jugador/real-sociedad/jon-gorrotxategi-etxaniz",
         "https://www.footballsquads.co.uk/spain/2025-2026/laliga/sociedad.htm",
         "https://www.transfermarkt.es/jon-gorrotxategi/profil/spieler/711374",
         "https://github.com/dmorenoli/Tipolog-a-y-Ciclo-de-Vida-de-los-Datos/blob/main/dataset/laliga_jugadores_2025_26.csv"
@@ -12088,6 +12108,12 @@
         "status": "provisional",
         "pool": 15,
         "method": "editorial tier and peer priority; minutes then goals as provisional tiebreak"
+      },
+      "birthCorrection": {
+        "from": "2002-02-02",
+        "to": "2002-09-02",
+        "source": "https://www.realsociedad.eus/es/equipo/jugador/real-sociedad/jon-gorrotxategi-etxaniz",
+        "note": "External audit; existing ID preserved"
       }
     },
     {
