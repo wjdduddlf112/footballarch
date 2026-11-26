@@ -10,7 +10,7 @@
     "dataStatus": "draft_unapproved",
     "standingsOnly": false,
     "nominationStatus": "fresh_2025_26_source_led_seven_actual_2026_27_UEFA_entrants",
-    "candidateCount": 134,
+    "candidateCount": 132,
     "candidateCoverage": {
       "qualifiedClubs": 7,
       "clubsWithCandidates": 7,
@@ -86,7 +86,7 @@
       "A": 13,
       "A-": 23,
       "B+": 44,
-      "B": 29,
+      "B": 27,
       "B-": 11,
       "C+": 0,
       "C": 0,
@@ -96,14 +96,14 @@
     "worldClassCount": 14,
     "leagueTopClassCount": 50,
     "verificationSummary": {
-      "currentSeasonSourceListed": 134,
-      "identityDFBSquadReference": 134,
-      "priorTwoSeasonsBothWithArchivalData": 39,
-      "priorYearPlayerRecordsLinked": 120,
+      "currentSeasonSourceListed": 132,
+      "identityDFBSquadReference": 132,
+      "priorTwoSeasonsBothWithArchivalData": 38,
+      "priorYearPlayerRecordsLinked": 117,
       "fullThreeSeasonIndependentVerified": 0,
       "individualSecondaryStatCrosschecks": 0,
-      "sourceLinkedProvisional": 134,
-      "playerLeagueStartsUnverified": 19
+      "sourceLinkedProvisional": 132,
+      "playerLeagueStartsUnverified": 0
     },
     "notes": [
       "No future 2026-27 player form applied to 2025-26 tiers",
@@ -3947,7 +3947,8 @@
           "id": "CM",
           "section": "",
           "row": "| 톰 비쇼프 | Tom Bischof | bundesliga-2025-bayern-tombischof | CM | LB | 14선발 중 왼쪽 풀백 9경기, 오른쪽 1경기, 미드필드 4경기. | [대조 자료 1](https://datencenter.dfb.de/datencenter/bundesliga/2025-2026/14-spieltag/bayern-muenchen-1-fsv-mainz-05-2398576) · [대조 자료 2](https://datencenter.dfb.de/datencenter/bundesliga/2025-2026/5-spieltag/bayern-muenchen-werder-bremen-2398352) |",
-          "reason": "identity/scope mismatch"
+          "reason": "identity/scope mismatch",
+          "resolution": "reviewed in usageFollowup"
         },
         {
           "id": "bundesliga-2025-stuttgart-finnjeltsch",
@@ -4025,13 +4026,15 @@
           "id": "bundesliga-2025-bayern-aleksandarpavlovic",
           "section": "<summary>Best XI와 포지션 순위 불일치 (2행)</summary>",
           "row": "| DM | 알렉산다르 파블로비치 | 2 | bundesliga-2025-bayern-aleksandarpavlovic | 막시밀리안 에게슈타인 1위 (bundesliga-2025-freiburg-maximilianeggestein) | 당해 역할과 최근 세 시즌 개인 기여를 대조해 순위·XI·선정 이유 정합화. |",
-          "reason": "identity/scope mismatch"
+          "reason": "identity/scope mismatch",
+          "resolution": "reviewed in usageFollowup"
         },
         {
           "id": "bundesliga-2025-bayern-joshuakimmich",
           "section": "<summary>Best XI와 포지션 순위 불일치 (2행)</summary>",
           "row": "| CM | 요주아 키미히 | 2 | bundesliga-2025-bayern-joshuakimmich | 앙겔로 슈틸러 1위 (bundesliga-2025-stuttgart-angelostiller) | 당해 역할과 최근 세 시즌 개인 기여를 대조해 순위·XI·선정 이유 정합화. |",
-          "reason": "identity/scope mismatch"
+          "reason": "identity/scope mismatch",
+          "resolution": "reviewed in usageFollowup"
         },
         {
           "id": "bundesliga-2025-bayern-hirokiito",
@@ -4043,7 +4046,8 @@
           "id": "bundesliga-2025-bayern-tombischof",
           "section": "<summary>시즌 배정 대 선수 일반 프로필 (3행)</summary>",
           "row": "| 톰 비쇼프 | Tom Bischof | FC Bayern München | bundesliga-2025-bayern-tombischof | CM | LB | 14 | [근거](https://www.bdfutbol.com/en/j/j40709.html) |",
-          "reason": "requires separate evidence/selection review"
+          "reason": "requires separate evidence/selection review",
+          "resolution": "reviewed in usageFollowup"
         },
         {
           "id": "bundesliga-2025-hoffenheim-alexanderprass",
@@ -4132,7 +4136,242 @@
           "reason": "club-specific values recorded, aggregate not overwritten"
         }
       ],
-      "formationReview": "DFB modal existing formation confirmed by report; no formation change"
+      "formationReview": "DFB modal existing formation confirmed by report; no formation change",
+      "usageFollowup": {
+        "report": "FOOTBALL_AUDIT_BUNDESLIGA_SEGMENT_3_CORRECTIONS.md",
+        "status": "draft_unapproved",
+        "positions": [
+          {
+            "id": "bundesliga-2025-bayern-tombischof",
+            "before": "CM",
+            "after": "LB",
+            "reason": "DFB 14 starts: 9 LB, 1 RB, 4 midfield; 26 apps/1295 min/3G; prior Hoffenheim 31 apps/30 starts/2568 min/5G, 2023-24 13 apps. Official Bundesliga review confirms frequent fullback use; B+ reflects adaptation.",
+            "sources": [
+              "https://datencenter.dfb.de/datencenter/bundesliga/2025-2026/14-spieltag/bayern-muenchen-1-fsv-mainz-05-2398576",
+              "https://datencenter.dfb.de/datencenter/bundesliga/2025-2026/5-spieltag/bayern-muenchen-werder-bremen-2398352",
+              "https://www.bundesliga.com/en/bundesliga/news/tom-bischof-bayern-munich-role-shirt-number-kompany-38336/",
+              "https://fbref.com/en/players/07d3bfec/Tom-Bischof"
+            ]
+          }
+        ],
+        "excluded": [
+          {
+            "id": "bundesliga-2025-bayern-hirokiito",
+            "reason": "LB 1+1: Bischof 14 starts/1295 min (9 LB starts); Guerreiro 18 apps/8 starts/5G and prior 20/23 apps vs Itō 16/10/1G/922 min and prior 26/6 apps. Close provisional selection; goals all-position.",
+            "archivedPlayer": {
+              "id": "bundesliga-2025-bayern-hirokiito",
+              "club": "bayern",
+              "clubId": "bayern",
+              "clubNameOriginal": "FC Bayern München",
+              "season": "2025-26",
+              "name": "Hiroki Itō",
+              "nameOriginal": "Hiroki Itō",
+              "originalName": "Hiroki Itō",
+              "nameKo": "이토 히로키",
+              "born": "1999-05-12",
+              "birthSource": "https://datencenter.dfb.de/en/competitions/12/seasons/2025-2026/teams/209",
+              "birthVerification": "DFB 2025-26 historical squad; person-level secondary DOB check pending",
+              "position": "LB",
+              "originalTacticalRole": "LB",
+              "positionVerification": "provisional season tactical role; game-by-game role minutes audit pending",
+              "role": "starter",
+              "roleVerification": "2025-26 16 appearances, 10 starts, 922 minutes in linked team source",
+              "leagueAppearances": 16,
+              "leagueStarts": 10,
+              "leagueMinutes": 922,
+              "starts": 10,
+              "goals2025": 1,
+              "assists2025": null,
+              "tier": "B",
+              "rank": 8,
+              "rankStatus": "provisional qualitative tier, then position-specific current-season starts/minutes tiebreak",
+              "review": "draft_unapproved",
+              "verificationStatus": "partially_verified",
+              "evaluationStatus": "current_source_direct_previous_archive_unapproved_or_missing",
+              "sources": [
+                "https://www.bdfutbol.com/en/t/t2025-261016.html",
+                "https://datencenter.dfb.de/en/competitions/12/seasons/2025-2026/teams/209"
+              ],
+              "evidence": {
+                "currentSeason": "https://www.bdfutbol.com/en/t/t2025-261016.html",
+                "identity": "https://datencenter.dfb.de/en/competitions/12/seasons/2025-2026/teams/209",
+                "quality": "2025-26 main current-season personal evidence plus 2023-24/2024-25 prior DRAFT where matched",
+                "performance": "https://www.bundesliga.com/en/bundesliga/news/official-fantasy-manager-team-of-the-week-6350"
+              },
+              "threeSeasonReview": {
+                "assessmentSeasons": [
+                  "2023-24",
+                  "2024-25",
+                  "2025-26"
+                ],
+                "weighting": "2025-26 highest; 2024-25 second; 2023-24 lowest; trophies and team standing excluded",
+                "records": {
+                  "2023-24": {
+                    "club": "VfB Stuttgart",
+                    "league": "Bundesliga",
+                    "appearances": 26,
+                    "starts": 25,
+                    "minutes": 2232,
+                    "goals": 0,
+                    "assists": null,
+                    "source": "https://www.bdfutbol.com/en/t/t2023-241002.html",
+                    "verification": "matched person name and DOB in earlier UNAPPROVED Bundesliga DRAFT; prior season secondary verification still outstanding"
+                  },
+                  "2024-25": {
+                    "club": "Bayern München",
+                    "league": "Bundesliga",
+                    "appearances": 6,
+                    "starts": 3,
+                    "minutes": 250,
+                    "goals": 1,
+                    "assists": null,
+                    "source": null,
+                    "verification": "past season in foreign club, other non-qualifier, or archival reference unavailable; evidence pending",
+                    "externalReviewSources": [
+                      "https://www.bdfutbol.com/en/t/t2024-251016.html"
+                    ]
+                  },
+                  "2025-26": {
+                    "appearances": 16,
+                    "starts": 10,
+                    "minutes": 922,
+                    "goals": 1,
+                    "assists": null,
+                    "club": "FC Bayern München",
+                    "league": "Bundesliga",
+                    "source": "https://www.bdfutbol.com/en/t/t2025-261016.html",
+                    "verification": "2025-26 club-season source transcribed; individual second-source match audit pending"
+                  }
+                },
+                "status": "incomplete_prior_year_evidence_current_source_verified_at_team_table_level"
+              },
+              "tierReview": "16 Bundesliga appearances, 10 starts, 922 verified-source listed minutes; 1 league goals, assigned LB by season tactical-role review. reliable first-team regular with limited league-wide distinction. Current season highest weight; 2024-25 second, 2023-24 third, with prior archival records 1/2 matched by name and birth date. Team titles/finishing positions are not rating bonuses.",
+              "assessmentRationale": "16 Bundesliga appearances, 10 starts, 922 verified-source listed minutes; 1 league goals, assigned LB by season tactical-role review. reliable first-team regular with limited league-wide distinction. Current season highest weight; 2024-25 second, 2023-24 third, with prior archival records 1/2 matched by name and birth date. Team titles/finishing positions are not rating bonuses.",
+              "verificationNeeded": [
+                "2023_24_independent_personal_qualitative_review",
+                "2024_25_independent_personal_qualitative_review",
+                "2025_26_independent_person_level_secondary_stat_check",
+                "primary_position_matchwise_minutes",
+                "individual_birthday_second_source"
+              ]
+            }
+          },
+          {
+            "id": "bundesliga-2025-bayern-alphonsodavies",
+            "reason": "LB 1+1: 13 apps/6 starts/523 min vs Bischof 26/14/1295 and Guerreiro 18/8/782. Prior quality acknowledged but current usage dominates.",
+            "archivedPlayer": {
+              "id": "bundesliga-2025-bayern-alphonsodavies",
+              "club": "bayern",
+              "clubId": "bayern",
+              "clubNameOriginal": "FC Bayern München",
+              "season": "2025-26",
+              "name": "Alphonso Davies",
+              "nameOriginal": "Alphonso Davies",
+              "originalName": "Alphonso Davies",
+              "nameKo": "알폰소 데이비스",
+              "born": "2000-11-02",
+              "birthSource": "https://datencenter.dfb.de/en/competitions/12/seasons/2025-2026/teams/209",
+              "birthVerification": "DFB 2025-26 historical squad; person-level secondary DOB check pending",
+              "position": "LB",
+              "originalTacticalRole": "LB",
+              "positionVerification": "provisional season tactical role; game-by-game role minutes audit pending",
+              "role": "starter",
+              "roleVerification": "2025-26 13 appearances, 6 starts, 523 minutes in linked team source",
+              "leagueAppearances": 13,
+              "leagueStarts": 6,
+              "leagueMinutes": 523,
+              "starts": 6,
+              "goals2025": 1,
+              "assists2025": null,
+              "tier": "B",
+              "rank": 10,
+              "rankStatus": "provisional qualitative tier, then position-specific current-season starts/minutes tiebreak",
+              "review": "draft_unapproved",
+              "verificationStatus": "partially_verified",
+              "evaluationStatus": "current_source_direct_previous_archive_unapproved_or_missing",
+              "sources": [
+                "https://www.bdfutbol.com/en/t/t2025-261016.html",
+                "https://datencenter.dfb.de/en/competitions/12/seasons/2025-2026/teams/209"
+              ],
+              "evidence": {
+                "currentSeason": "https://www.bdfutbol.com/en/t/t2025-261016.html",
+                "identity": "https://datencenter.dfb.de/en/competitions/12/seasons/2025-2026/teams/209",
+                "quality": "2025-26 main current-season personal evidence plus 2023-24/2024-25 prior DRAFT where matched",
+                "performance": "https://www.bundesliga.com/en/bundesliga/news/official-fantasy-manager-team-of-the-week-6350"
+              },
+              "threeSeasonReview": {
+                "assessmentSeasons": [
+                  "2023-24",
+                  "2024-25",
+                  "2025-26"
+                ],
+                "weighting": "2025-26 highest; 2024-25 second; 2023-24 lowest; trophies and team standing excluded",
+                "records": {
+                  "2023-24": {
+                    "club": "FC Bayern München",
+                    "league": "Bundesliga",
+                    "appearances": 29,
+                    "starts": 24,
+                    "minutes": 2068,
+                    "goals": 2,
+                    "assists": null,
+                    "source": "https://www.bdfutbol.com/en/t/t2023-241016.html",
+                    "verification": "matched person name and DOB in earlier UNAPPROVED Bundesliga DRAFT; prior season secondary verification still outstanding"
+                  },
+                  "2024-25": {
+                    "club": "FC Bayern München",
+                    "league": "Bundesliga",
+                    "appearances": 19,
+                    "starts": 17,
+                    "minutes": 1562,
+                    "goals": 1,
+                    "assists": null,
+                    "source": "https://www.bdfutbol.com/en/t/t2024-251016.html",
+                    "verification": "matched person name and DOB in earlier UNAPPROVED Bundesliga DRAFT; prior season secondary verification still outstanding",
+                    "externalReviewSources": [
+                      "https://www.bdfutbol.com/en/t/t2024-251016.html"
+                    ]
+                  },
+                  "2025-26": {
+                    "appearances": 13,
+                    "starts": 6,
+                    "minutes": 523,
+                    "goals": 1,
+                    "assists": null,
+                    "club": "FC Bayern München",
+                    "league": "Bundesliga",
+                    "source": "https://www.bdfutbol.com/en/t/t2025-261016.html",
+                    "verification": "2025-26 club-season source transcribed; individual second-source match audit pending"
+                  }
+                },
+                "status": "prior_archival_draft_both_years_independent_check_pending"
+              },
+              "tierReview": "13 Bundesliga appearances, 6 starts, 523 verified-source listed minutes; 1 league goals, assigned LB by season tactical-role review. reliable first-team regular with limited league-wide distinction. Current season highest weight; 2024-25 second, 2023-24 third, with prior archival records 2/2 matched by name and birth date. Team titles/finishing positions are not rating bonuses.",
+              "assessmentRationale": "13 Bundesliga appearances, 6 starts, 523 verified-source listed minutes; 1 league goals, assigned LB by season tactical-role review. reliable first-team regular with limited league-wide distinction. Current season highest weight; 2024-25 second, 2023-24 third, with prior archival records 2/2 matched by name and birth date. Team titles/finishing positions are not rating bonuses.",
+              "verificationNeeded": [
+                "2023_24_independent_personal_qualitative_review",
+                "2024_25_independent_personal_qualitative_review",
+                "2025_26_independent_person_level_secondary_stat_check",
+                "primary_position_matchwise_minutes",
+                "individual_birthday_second_source"
+              ]
+            }
+          }
+        ],
+        "xi": [
+          {
+            "old": "bundesliga-2025-bayern-aleksandarpavlovic",
+            "new": "bundesliga-2025-freiburg-maximilianeggestein",
+            "reason": "Eggestein A rank 1, 34 starts/3060 min/3G vs Pavlović A rank 2, 16/1462/3G. Same holding role; current sustained availability."
+          },
+          {
+            "old": "bundesliga-2025-bayern-joshuakimmich",
+            "new": "bundesliga-2025-stuttgart-angelostiller",
+            "reason": "Stiller A+ rank 1, 30 starts/2744 min vs Kimmich A+ rank 2, 24/2280. Both deep distributors; Kimmich prior continuity and 2G/8A strong, current sustained role and existing rank favour Stiller."
+          }
+        ],
+        "method": "Current role and individual contribution prioritized, prior two seasons secondary. DFB starting positions; substitute roles pending."
+      }
     }
   },
   "clubs": [
@@ -5033,200 +5272,6 @@
       ]
     },
     {
-      "id": "bundesliga-2025-bayern-hirokiito",
-      "club": "bayern",
-      "clubId": "bayern",
-      "clubNameOriginal": "FC Bayern München",
-      "season": "2025-26",
-      "name": "Hiroki Itō",
-      "nameOriginal": "Hiroki Itō",
-      "originalName": "Hiroki Itō",
-      "nameKo": "이토 히로키",
-      "born": "1999-05-12",
-      "birthSource": "https://datencenter.dfb.de/en/competitions/12/seasons/2025-2026/teams/209",
-      "birthVerification": "DFB 2025-26 historical squad; person-level secondary DOB check pending",
-      "position": "LB",
-      "originalTacticalRole": "LB",
-      "positionVerification": "provisional season tactical role; game-by-game role minutes audit pending",
-      "role": "starter",
-      "roleVerification": "2025-26 16 appearances, 10 starts, 922 minutes in linked team source",
-      "leagueAppearances": 16,
-      "leagueStarts": 10,
-      "leagueMinutes": 922,
-      "starts": 10,
-      "goals2025": 1,
-      "assists2025": null,
-      "tier": "B",
-      "rank": 8,
-      "rankStatus": "provisional qualitative tier, then position-specific current-season starts/minutes tiebreak",
-      "review": "draft_unapproved",
-      "verificationStatus": "partially_verified",
-      "evaluationStatus": "current_source_direct_previous_archive_unapproved_or_missing",
-      "sources": [
-        "https://www.bdfutbol.com/en/t/t2025-261016.html",
-        "https://datencenter.dfb.de/en/competitions/12/seasons/2025-2026/teams/209"
-      ],
-      "evidence": {
-        "currentSeason": "https://www.bdfutbol.com/en/t/t2025-261016.html",
-        "identity": "https://datencenter.dfb.de/en/competitions/12/seasons/2025-2026/teams/209",
-        "quality": "2025-26 main current-season personal evidence plus 2023-24/2024-25 prior DRAFT where matched",
-        "performance": "https://www.bundesliga.com/en/bundesliga/news/official-fantasy-manager-team-of-the-week-6350"
-      },
-      "threeSeasonReview": {
-        "assessmentSeasons": [
-          "2023-24",
-          "2024-25",
-          "2025-26"
-        ],
-        "weighting": "2025-26 highest; 2024-25 second; 2023-24 lowest; trophies and team standing excluded",
-        "records": {
-          "2023-24": {
-            "club": "VfB Stuttgart",
-            "league": "Bundesliga",
-            "appearances": 26,
-            "starts": 25,
-            "minutes": 2232,
-            "goals": 0,
-            "assists": null,
-            "source": "https://www.bdfutbol.com/en/t/t2023-241002.html",
-            "verification": "matched person name and DOB in earlier UNAPPROVED Bundesliga DRAFT; prior season secondary verification still outstanding"
-          },
-          "2024-25": {
-            "club": "Bayern München",
-            "league": "Bundesliga",
-            "appearances": 6,
-            "starts": 3,
-            "minutes": 250,
-            "goals": 1,
-            "assists": null,
-            "source": null,
-            "verification": "past season in foreign club, other non-qualifier, or archival reference unavailable; evidence pending",
-            "externalReviewSources": [
-              "https://www.bdfutbol.com/en/t/t2024-251016.html"
-            ]
-          },
-          "2025-26": {
-            "appearances": 16,
-            "starts": 10,
-            "minutes": 922,
-            "goals": 1,
-            "assists": null,
-            "club": "FC Bayern München",
-            "league": "Bundesliga",
-            "source": "https://www.bdfutbol.com/en/t/t2025-261016.html",
-            "verification": "2025-26 club-season source transcribed; individual second-source match audit pending"
-          }
-        },
-        "status": "incomplete_prior_year_evidence_current_source_verified_at_team_table_level"
-      },
-      "tierReview": "16 Bundesliga appearances, 10 starts, 922 verified-source listed minutes; 1 league goals, assigned LB by season tactical-role review. reliable first-team regular with limited league-wide distinction. Current season highest weight; 2024-25 second, 2023-24 third, with prior archival records 1/2 matched by name and birth date. Team titles/finishing positions are not rating bonuses.",
-      "assessmentRationale": "16 Bundesliga appearances, 10 starts, 922 verified-source listed minutes; 1 league goals, assigned LB by season tactical-role review. reliable first-team regular with limited league-wide distinction. Current season highest weight; 2024-25 second, 2023-24 third, with prior archival records 1/2 matched by name and birth date. Team titles/finishing positions are not rating bonuses.",
-      "verificationNeeded": [
-        "2023_24_independent_personal_qualitative_review",
-        "2024_25_independent_personal_qualitative_review",
-        "2025_26_independent_person_level_secondary_stat_check",
-        "primary_position_matchwise_minutes",
-        "individual_birthday_second_source"
-      ]
-    },
-    {
-      "id": "bundesliga-2025-bayern-alphonsodavies",
-      "club": "bayern",
-      "clubId": "bayern",
-      "clubNameOriginal": "FC Bayern München",
-      "season": "2025-26",
-      "name": "Alphonso Davies",
-      "nameOriginal": "Alphonso Davies",
-      "originalName": "Alphonso Davies",
-      "nameKo": "알폰소 데이비스",
-      "born": "2000-11-02",
-      "birthSource": "https://datencenter.dfb.de/en/competitions/12/seasons/2025-2026/teams/209",
-      "birthVerification": "DFB 2025-26 historical squad; person-level secondary DOB check pending",
-      "position": "LB",
-      "originalTacticalRole": "LB",
-      "positionVerification": "provisional season tactical role; game-by-game role minutes audit pending",
-      "role": "starter",
-      "roleVerification": "2025-26 13 appearances, 6 starts, 523 minutes in linked team source",
-      "leagueAppearances": 13,
-      "leagueStarts": 6,
-      "leagueMinutes": 523,
-      "starts": 6,
-      "goals2025": 1,
-      "assists2025": null,
-      "tier": "B",
-      "rank": 10,
-      "rankStatus": "provisional qualitative tier, then position-specific current-season starts/minutes tiebreak",
-      "review": "draft_unapproved",
-      "verificationStatus": "partially_verified",
-      "evaluationStatus": "current_source_direct_previous_archive_unapproved_or_missing",
-      "sources": [
-        "https://www.bdfutbol.com/en/t/t2025-261016.html",
-        "https://datencenter.dfb.de/en/competitions/12/seasons/2025-2026/teams/209"
-      ],
-      "evidence": {
-        "currentSeason": "https://www.bdfutbol.com/en/t/t2025-261016.html",
-        "identity": "https://datencenter.dfb.de/en/competitions/12/seasons/2025-2026/teams/209",
-        "quality": "2025-26 main current-season personal evidence plus 2023-24/2024-25 prior DRAFT where matched",
-        "performance": "https://www.bundesliga.com/en/bundesliga/news/official-fantasy-manager-team-of-the-week-6350"
-      },
-      "threeSeasonReview": {
-        "assessmentSeasons": [
-          "2023-24",
-          "2024-25",
-          "2025-26"
-        ],
-        "weighting": "2025-26 highest; 2024-25 second; 2023-24 lowest; trophies and team standing excluded",
-        "records": {
-          "2023-24": {
-            "club": "FC Bayern München",
-            "league": "Bundesliga",
-            "appearances": 29,
-            "starts": 24,
-            "minutes": 2068,
-            "goals": 2,
-            "assists": null,
-            "source": "https://www.bdfutbol.com/en/t/t2023-241016.html",
-            "verification": "matched person name and DOB in earlier UNAPPROVED Bundesliga DRAFT; prior season secondary verification still outstanding"
-          },
-          "2024-25": {
-            "club": "FC Bayern München",
-            "league": "Bundesliga",
-            "appearances": 19,
-            "starts": 17,
-            "minutes": 1562,
-            "goals": 1,
-            "assists": null,
-            "source": "https://www.bdfutbol.com/en/t/t2024-251016.html",
-            "verification": "matched person name and DOB in earlier UNAPPROVED Bundesliga DRAFT; prior season secondary verification still outstanding",
-            "externalReviewSources": [
-              "https://www.bdfutbol.com/en/t/t2024-251016.html"
-            ]
-          },
-          "2025-26": {
-            "appearances": 13,
-            "starts": 6,
-            "minutes": 523,
-            "goals": 1,
-            "assists": null,
-            "club": "FC Bayern München",
-            "league": "Bundesliga",
-            "source": "https://www.bdfutbol.com/en/t/t2025-261016.html",
-            "verification": "2025-26 club-season source transcribed; individual second-source match audit pending"
-          }
-        },
-        "status": "prior_archival_draft_both_years_independent_check_pending"
-      },
-      "tierReview": "13 Bundesliga appearances, 6 starts, 523 verified-source listed minutes; 1 league goals, assigned LB by season tactical-role review. reliable first-team regular with limited league-wide distinction. Current season highest weight; 2024-25 second, 2023-24 third, with prior archival records 2/2 matched by name and birth date. Team titles/finishing positions are not rating bonuses.",
-      "assessmentRationale": "13 Bundesliga appearances, 6 starts, 523 verified-source listed minutes; 1 league goals, assigned LB by season tactical-role review. reliable first-team regular with limited league-wide distinction. Current season highest weight; 2024-25 second, 2023-24 third, with prior archival records 2/2 matched by name and birth date. Team titles/finishing positions are not rating bonuses.",
-      "verificationNeeded": [
-        "2023_24_independent_personal_qualitative_review",
-        "2024_25_independent_personal_qualitative_review",
-        "2025_26_independent_person_level_secondary_stat_check",
-        "primary_position_matchwise_minutes",
-        "individual_birthday_second_source"
-      ]
-    },
-    {
       "id": "bundesliga-2025-bayern-raphaelguerreiro",
       "club": "bayern",
       "clubId": "bayern",
@@ -5243,7 +5288,7 @@
       "originalTacticalRole": "LB",
       "positionVerification": "provisional season tactical role; game-by-game role minutes audit pending",
       "role": "backup",
-      "roleVerification": "2025-26 18 appearances, 8 starts, 782 minutes in linked team source",
+      "roleVerification": "2025-26 18 appearances, 8 starts, 782 minutes in linked team source; 18 apps/8 starts/5G and prior 20/23 apps with 3/4G support backup over Itō; goals not position-specific.",
       "leagueAppearances": 18,
       "leagueStarts": 8,
       "leagueMinutes": 782,
@@ -5929,11 +5974,11 @@
       "born": "2005-06-28",
       "birthSource": "https://datencenter.dfb.de/en/competitions/12/seasons/2025-2026/teams/209",
       "birthVerification": "DFB 2025-26 historical squad; person-level secondary DOB check pending",
-      "position": "CM",
-      "originalTacticalRole": "CM",
-      "positionVerification": "provisional season tactical role; game-by-game role minutes audit pending",
-      "role": "backup",
-      "roleVerification": "2025-26 26 appearances, 14 starts, 1295 minutes in linked team source",
+      "position": "LB",
+      "originalTacticalRole": "DFB 14 starts: 9 LB, 1 RB, 4 midfield; 26 apps/1295 min/3G; prior Hoffenheim 31 apps/30 starts/2568 min/5G, 2023-24 13 apps. Official Bundesliga review confirms frequent fullback use; B+ reflects adaptation.",
+      "positionVerification": "DFB_audit_starting_position_majority_DRAFT",
+      "role": "starter",
+      "roleVerification": "2025-26 26 appearances, 14 starts, 1295 minutes in linked team source; DFB 14 starts: 9 LB, 1 RB, 4 midfield; 26 apps/1295 min/3G; prior Hoffenheim 31 apps/30 starts/2568 min/5G, 2023-24 13 apps. Official Bundesliga review confirms frequent fullback use; B+ reflects adaptation.",
       "leagueAppearances": 26,
       "leagueStarts": 14,
       "leagueMinutes": 1295,
@@ -5941,14 +5986,18 @@
       "goals2025": 3,
       "assists2025": null,
       "tier": "B+",
-      "rank": 11,
+      "rank": 7,
       "rankStatus": "provisional qualitative tier, then position-specific current-season starts/minutes tiebreak",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
       "evaluationStatus": "current_source_direct_previous_archive_unapproved_or_missing",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2025-261016.html",
-        "https://datencenter.dfb.de/en/competitions/12/seasons/2025-2026/teams/209"
+        "https://datencenter.dfb.de/en/competitions/12/seasons/2025-2026/teams/209",
+        "https://datencenter.dfb.de/datencenter/bundesliga/2025-2026/14-spieltag/bayern-muenchen-1-fsv-mainz-05-2398576",
+        "https://datencenter.dfb.de/datencenter/bundesliga/2025-2026/5-spieltag/bayern-muenchen-werder-bremen-2398352",
+        "https://www.bundesliga.com/en/bundesliga/news/tom-bischof-bayern-munich-role-shirt-number-kompany-38336/",
+        "https://fbref.com/en/players/07d3bfec/Tom-Bischof"
       ],
       "evidence": {
         "currentSeason": "https://www.bdfutbol.com/en/t/t2025-261016.html",
@@ -5972,8 +6021,8 @@
             "minutes": 170,
             "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "past season in foreign club, other non-qualifier, or archival reference unavailable; evidence pending",
+            "source": "https://www.bdfutbol.com/en/t/t2023-241015.html",
+            "verification": "external_audit_report_DRAFT_source_linked",
             "externalReviewSources": [
               "https://www.bdfutbol.com/en/t/t2023-241015.html"
             ]
@@ -5986,8 +6035,8 @@
             "minutes": 2568,
             "goals": 5,
             "assists": null,
-            "source": null,
-            "verification": "past season in foreign club, other non-qualifier, or archival reference unavailable; evidence pending",
+            "source": "https://www.bdfutbol.com/en/t/t2024-251015.html",
+            "verification": "external_audit_report_DRAFT_source_linked",
             "externalReviewSources": [
               "https://www.bdfutbol.com/en/t/t2024-251015.html"
             ]
@@ -6006,8 +6055,8 @@
         },
         "status": "incomplete_prior_year_evidence_current_source_verified_at_team_table_level"
       },
-      "tierReview": "26 Bundesliga appearances, 14 starts, 1295 verified-source listed minutes; 3 league goals, assigned CM by season tactical-role review. regular core starter or essential rotation contributor near league top. Current season highest weight; 2024-25 second, 2023-24 third, with prior archival records 0/2 matched by name and birth date. Team titles/finishing positions are not rating bonuses.",
-      "assessmentRationale": "26 Bundesliga appearances, 14 starts, 1295 verified-source listed minutes; 3 league goals, assigned CM by season tactical-role review. regular core starter or essential rotation contributor near league top. Current season highest weight; 2024-25 second, 2023-24 third, with prior archival records 0/2 matched by name and birth date. Team titles/finishing positions are not rating bonuses.",
+      "tierReview": "DFB 14 starts: 9 LB, 1 RB, 4 midfield; 26 apps/1295 min/3G; prior Hoffenheim 31 apps/30 starts/2568 min/5G, 2023-24 13 apps. Official Bundesliga review confirms frequent fullback use; B+ reflects adaptation. Existing B+ retained, current season weighted most.",
+      "assessmentRationale": "DFB 14 starts: 9 LB, 1 RB, 4 midfield; 26 apps/1295 min/3G; prior Hoffenheim 31 apps/30 starts/2568 min/5G, 2023-24 13 apps. Official Bundesliga review confirms frequent fullback use; B+ reflects adaptation. Existing B+ retained, current season weighted most.",
       "verificationNeeded": [
         "2023_24_independent_personal_qualitative_review",
         "2024_25_independent_personal_qualitative_review",
@@ -7793,7 +7842,7 @@
       "goals2025": 0,
       "assists2025": null,
       "tier": "B",
-      "rank": 16,
+      "rank": 15,
       "rankStatus": "provisional qualitative tier, then position-specific current-season starts/minutes tiebreak",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -9073,7 +9122,7 @@
       "goals2025": 1,
       "assists2025": null,
       "tier": "B-",
-      "rank": 11,
+      "rank": 10,
       "rankStatus": "provisional qualitative tier, then position-specific current-season starts/minutes tiebreak",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -9578,7 +9627,7 @@
       "goals2025": 4,
       "assists2025": null,
       "tier": "B+",
-      "rank": 12,
+      "rank": 11,
       "rankStatus": "provisional qualitative tier, then position-specific current-season starts/minutes tiebreak",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -9675,7 +9724,7 @@
       "goals2025": 0,
       "assists2025": null,
       "tier": "B-",
-      "rank": 17,
+      "rank": 16,
       "rankStatus": "provisional qualitative tier, then position-specific current-season starts/minutes tiebreak",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -11711,7 +11760,7 @@
       "goals2025": 4,
       "assists2025": null,
       "tier": "B",
-      "rank": 13,
+      "rank": 12,
       "rankStatus": "provisional qualitative tier, then position-specific current-season starts/minutes tiebreak",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -15087,7 +15136,7 @@
       "goals2025": 0,
       "assists2025": null,
       "tier": "B",
-      "rank": 15,
+      "rank": 14,
       "rankStatus": "provisional qualitative tier, then position-specific current-season starts/minutes tiebreak",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -16450,7 +16499,7 @@
       "goals2025": 0,
       "assists2025": null,
       "tier": "B",
-      "rank": 7,
+      "rank": 8,
       "rankStatus": "provisional qualitative tier, then position-specific current-season starts/minutes tiebreak",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -16944,7 +16993,7 @@
       "goals2025": 1,
       "assists2025": null,
       "tier": "B",
-      "rank": 14,
+      "rank": 13,
       "rankStatus": "provisional qualitative tier, then position-specific current-season starts/minutes tiebreak",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -17837,17 +17886,17 @@
     {
       "position": "DM",
       "displayPosition": "DM",
-      "playerId": "bundesliga-2025-bayern-aleksandarpavlovic",
+      "playerId": "bundesliga-2025-freiburg-maximilianeggestein",
       "status": "proposed_unapproved",
-      "reason": "24 games, 16 starts, mature control as deeper central midfielder; award-season status but minutes limited. top-class current-season personal quality. Current season highest weight; 2024-25 second, 2023-24 third, with prior archival records 2/2 matched by name and birth date. Team titles/finishing positions are not rating bonuses.",
+      "reason": "Eggestein A rank 1, 34 starts/3060 min/3G vs Pavlović A rank 2, 16/1462/3G. Same holding role; current sustained availability. DRAFT; full independent three-year comparison incomplete.",
       "alternates": []
     },
     {
       "position": "CM",
       "displayPosition": "CM",
-      "playerId": "bundesliga-2025-bayern-joshuakimmich",
+      "playerId": "bundesliga-2025-stuttgart-angelostiller",
       "status": "proposed_unapproved",
-      "reason": "29 league appearances, 24 starts, 2280 minutes; tempo control and line-breaking passing over three seasons. league-elite output, control and importance with outstanding demonstrated ability. Current season highest weight; 2024-25 second, 2023-24 third, with prior archival records 2/2 matched by name and birth date. Team titles/finishing positions are not rating bonuses.",
+      "reason": "Stiller A+ rank 1, 30 starts/2744 min vs Kimmich A+ rank 2, 24/2280. Both deep distributors; Kimmich prior continuity and 2G/8A strong, current sustained role and existing rank favour Stiller. DRAFT; full independent three-year comparison incomplete.",
       "alternates": []
     },
     {
@@ -17930,8 +17979,9 @@
     },
     "sourceModel": "fresh_2025_26_7_UEFA_qualifiers",
     "priorHistoricalCoverage": {
-      "priorYearLinkedPlayerYears": 120,
-      "priorBothYears": 39
+      "priorYearLinkedPlayerYears": 117,
+      "priorBothYears": 38,
+      "reportLinkedPriorRecords": 109
     },
     "sourceLimitations": [
       "all-player independent three-season quality reviews pending",
