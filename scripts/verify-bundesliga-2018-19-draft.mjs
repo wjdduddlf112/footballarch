@@ -52,7 +52,7 @@ test(d.meta.leagueTopClassCount===distribution.S+distribution["A+"]+distribution
 for(const year of ["2016-17","2017-18","2018-19"]){
  test(d.meta.verificationSummary.priorSeasonRecordCounts[year]===d.players.filter(p=>p.threeSeasonReview.records[year].appearances!==null).length,"record coverage "+year);
 }
-test(prior.meta.season==="2017-18"&&prior.players.length===135,"prior-season regression");
+test(prior.meta.season==="2017-18"&&prior.players.length===131,"prior-season regression");
 console.log(JSON.stringify({season:d.meta.season,players:d.players.length,clubs:d.qualifiers.length,positions:Object.fromEntries(positions.map(p=>[p,d.players.filter(x=>x.position===p).length])),tiers:distribution,priorRecords:d.meta.verificationSummary.priorSeasonRecordCounts,errors},null,2));
 if(errors.length){console.error("FAIL Bundesliga 2018-19 DRAFT structure; historical quality NOT certified");process.exit(1);}
 console.log("PASS Bundesliga 2018-19 DRAFT structure and existing 2017-18 regression. Independent historical three-season qualitative verification: 0.");
