@@ -6,6 +6,9 @@ const clubs=["bayern","schalke","hoffenheim","dortmund","leverkusen","leipzig","
 let errors=[];const ok=(v,m)=>{if(!v)errors.push(m)};
 ok(d.meta.season==="2017-18"&&d.meta.leagueId==="bundesliga"&&d.meta.dataStatus==="draft_unapproved","season draft");
 ok(d.meta.bestXiReview.status==="proposed_unapproved","draft XI");
+ok(d.meta.formation==="4-2-2-2"&&d.meta.bestXiReview.formation==="4-2-2-2","report modal formation");
+ok(JSON.stringify(d.bestXi.map(x=>x.position).sort())===JSON.stringify(["CB","CB","CM","DM","GK","LB","LW","RB","RW","ST","ST"]),"4-2-2-2 slot counts");
+ok(d.bestXi.some(x=>x.position==="LW"&&x.displayPosition==="LAM")&&d.bestXi.some(x=>x.position==="RW"&&x.displayPosition==="RAM"),"narrow attacking slots distinguish primary positions");
 ok(JSON.stringify(d.standings)===JSON.stringify(ar.standings),"standings parity");
 ok(d.qualifiers.length===7&&clubs.every(c=>d.qualifiers.some(q=>q.club===c)),"UEFA seven");
 ok(d.qualifiers.every(q=>q.competition===ar.europeanParticipation[q.club]),"UEFA labels");
