@@ -1,0 +1,378 @@
+{
+  "baseline": "e7ceebd9b5cda6bf3bedd40024c08bc5218f2200",
+  "branch": "audit/seriea-2008-2017-review",
+  "method": "Final branch JSON re-read; existing season scripts executed in JS with repository file content substituted for Node filesystem. No GitHub Actions/browser or deployment claimed.",
+  "standingsValidator": {
+    "exitCode": 0,
+    "seasons": 27,
+    "rows": 530,
+    "scope": "Re-run after 2009-10 tie-break exception; raw RSSSF records unchanged."
+  },
+  "note": "4-3-3 DM plus two CM in 2015-16 and 2016-17 is supported by existing season validators; not a position error.",
+  "seasons": [
+    {
+      "season": "2008-09",
+      "players": 128,
+      "uniqueIds": true,
+      "qualifierMatch": true,
+      "startRelation": true,
+      "xiCount": 11,
+      "xiUnique": true,
+      "xiPosition": true,
+      "xiShape": {
+        "GK": 1,
+        "CB": 2,
+        "LB": 1,
+        "RB": 1,
+        "DM": 1,
+        "CM": 2,
+        "CAM": 1,
+        "ST": 2
+      },
+      "standingsParity": true,
+      "goalRefs": [],
+      "followup": {
+        "decision": "Hold existing XI and rank pending league match-by-match role review",
+        "notes": "Montolivo current 34 apps/32 starts/4 goals/6 assists and 36,34 apps in two earlier seasons; Seedorf current 33/30/6/5 and earlier 32/7,32/7 in linked records. Comparable current output, different depth/advanced roles; Zanetti 38/37 and DF,MF label establishes mixed usage, not CM frequency. No sufficient positional evidence to change the XI or rank merely for ordinal consistency.",
+        "sources": [
+          "https://fbref.com/en/players/b746d309/Riccardo-Montolivo",
+          "https://fbref.com/en/players/e6af3cc7/Clarence-Seedorf",
+          "https://fbref.com/en/squads/d609edc0/2008-2009/c11/Internazionale-Stats-Serie-A",
+          "https://fbref.com/en/squads/d609edc0/2008-2009/roster/Internazionale-Roster-Details",
+          "https://www.uefa.com/uefachampionsleague/news/0254-0d7c868e41ca-d8fbaba549a5-1000--seedorf-the-example-for-milan-to-follow/"
+        ],
+        "status": "proposed_unapproved"
+      },
+      "test": {
+        "exitCode": 0,
+        "logs": [
+          "{\n  \"pass\": true,\n  \"errors\": [],\n  \"candidateCount\": 128,\n  \"clubCount\": 7,\n  \"currentAppearances\": 128,\n  \"currentStarts\": 128,\n  \"currentMinutes\": 128,\n  \"priorBothNumeric\": 75,\n  \"notes\": \"Standalone Node check cannot certify 3-year qualitative assessment or actual Pages browser deployment\"\n}"
+        ]
+      }
+    },
+    {
+      "season": "2009-10",
+      "players": 123,
+      "uniqueIds": true,
+      "qualifierMatch": true,
+      "startRelation": true,
+      "xiCount": 11,
+      "xiUnique": true,
+      "xiPosition": true,
+      "xiShape": {
+        "GK": 1,
+        "CB": 2,
+        "LB": 1,
+        "RB": 1,
+        "DM": 1,
+        "CM": 2,
+        "CAM": 1,
+        "ST": 2
+      },
+      "standingsParity": true,
+      "headToHead": [
+        {
+          "rank": 14,
+          "club": "chievo",
+          "played": 38,
+          "wins": 12,
+          "draws": 8,
+          "losses": 18,
+          "goalsFor": 37,
+          "goalsAgainst": 42,
+          "gd": -5,
+          "points": 44,
+          "competition": null,
+          "outcome": "retained"
+        },
+        {
+          "rank": 15,
+          "club": "udinese",
+          "played": 38,
+          "wins": 11,
+          "draws": 11,
+          "losses": 16,
+          "goalsFor": 54,
+          "goalsAgainst": 59,
+          "gd": -5,
+          "points": 44,
+          "competition": null,
+          "outcome": "retained"
+        },
+        {
+          "rank": 16,
+          "club": "cagliari",
+          "played": 38,
+          "wins": 11,
+          "draws": 11,
+          "losses": 16,
+          "goalsFor": 56,
+          "goalsAgainst": 58,
+          "gd": -2,
+          "points": 44,
+          "competition": null,
+          "outcome": "retained"
+        }
+      ],
+      "goalRefs": [
+        {
+          "id": "seriea-2009-10-juventus-giorgiochiellini",
+          "goals": 4
+        },
+        {
+          "id": "seriea-2009-10-juventus-felipemelo",
+          "goals": 3
+        }
+      ],
+      "followup": {
+        "decision": "Retain Milito/Miccoli XI; reorder ST 2-4 Miccoli, Eto'o, Cassano",
+        "notes": "Eto'o two Barcelona league rows added, current output and secondary-striker fit justify Miccoli rank 2. Chiellini stale 3-goal rationale corrected to 4. All ranks provisional.",
+        "sources": [
+          "https://www.rsssf.org/players/miccolidata.html",
+          "https://fbref.com/en/squads/ee058a17/2009-2010/Palermo-Stats",
+          "https://fbref.com/en/players/06420c93/Samuel-Etoo",
+          "https://www.bdfutbol.com/en/j/j2444.html",
+          "https://www.inter.it/en/news/2020-05-08-all-of-militos-goals-inter-2009-2010-season",
+          "https://www.national-football-teams.com/player/3360/Fabrizio_Miccoli.html"
+        ],
+        "status": "proposed_unapproved"
+      },
+      "test": {
+        "exitCode": 0,
+        "logs": [
+          "{\n  \"passed\": true,\n  \"season\": \"2009-10\",\n  \"clubs\": 7,\n  \"players\": 123,\n  \"currentLeagueAppsPresent\": 123,\n  \"currentLeagueAppsPending\": 0,\n  \"provisionalWorldClass\": 16,\n  \"provisionalLeagueTop\": 41,\n  \"bestXiCount\": 11,\n  \"errors\": [],\n  \"notices\": [\n    \"Structural integrity only; not proof of current season appearance source authenticity or period tactical modal roles.\",\n    \"Historical 3-season qualitative independent audit is incomplete; ranking and S-D tiers are provisional.\",\n    \"GitHub Pages display and Actions are NOT verified by this script.\"\n  ]\n}\n"
+        ]
+      }
+    },
+    {
+      "season": "2010-11",
+      "players": 129,
+      "uniqueIds": true,
+      "qualifierMatch": true,
+      "startRelation": true,
+      "xiCount": 11,
+      "xiUnique": true,
+      "xiPosition": true,
+      "xiShape": {
+        "GK": 1,
+        "CB": 2,
+        "LB": 1,
+        "RB": 1,
+        "DM": 1,
+        "CM": 2,
+        "CAM": 1,
+        "ST": 2
+      },
+      "standingsParity": true,
+      "goalRefs": [],
+      "test": {
+        "exitCode": 0,
+        "logs": [
+          "{\n  \"passed\": true,\n  \"season\": \"2010-11\",\n  \"clubs\": 7,\n  \"players\": 129,\n  \"currentDomesticAppearances\": 129,\n  \"currentDomesticStarts\": 129,\n  \"currentDomesticMinutes\": 129,\n  \"currentDomesticGoals\": 129,\n  \"fullIndependentThreeSeasonAudits\": 0,\n  \"worldClass\": 20,\n  \"leagueTop\": 44,\n  \"bestXi\": 11,\n  \"gradeCounts\": {\n    \"S\": 5,\n    \"A+\": 15,\n    \"A\": 16,\n    \"A-\": 8,\n    \"B+\": 34,\n    \"B\": 26,\n    \"B-\": 20,\n    \"C+\": 5,\n    \"C\": 0,\n    \"C-\": 0,\n    \"D\": 0\n  },\n  \"errors\": [],\n  \"notices\": [\n    \"Passed structure and sources-linked numerics, not full independent source-by-source historical verification.\",\n    \"All 2010-11 league assists are unverified null, and prior two season DRAFT numeric links are not independent proof.\",\n    \"User approval and live visual browser checks are separate and incomplete.\"\n  ]\n}\n"
+        ]
+      }
+    },
+    {
+      "season": "2011-12",
+      "players": 109,
+      "uniqueIds": true,
+      "qualifierMatch": true,
+      "startRelation": true,
+      "xiCount": 11,
+      "xiUnique": true,
+      "xiPosition": true,
+      "xiShape": {
+        "GK": 1,
+        "CB": 3,
+        "LB": 1,
+        "RB": 1,
+        "DM": 1,
+        "CM": 2,
+        "ST": 2
+      },
+      "standingsParity": true,
+      "goalRefs": [
+        {
+          "id": "seriea-2011-12-juventus-giorgiochiellini",
+          "goals": 4
+        }
+      ],
+      "test": {
+        "exitCode": 0,
+        "logs": [
+          "{\n  \"passed\": true,\n  \"season\": \"2011-12\",\n  \"clubs\": 6,\n  \"players\": 109,\n  \"currentApps\": 109,\n  \"currentStarts\": 109,\n  \"currentMinutes\": 109,\n  \"currentGoals\": 109,\n  \"currentAssistsVerified\": 0,\n  \"worldClass\": 18,\n  \"leagueTop\": 36,\n  \"bestXi\": 11,\n  \"threeSeasonFullIndependentAudit\": 0,\n  \"errors\": [],\n  \"notices\": [\n    \"Structure only: individual football role/quality, 3-season independent peer review and DOB double-source audit incomplete.\",\n    \"GitHub Actions green status is NOT a live browser verification or user approval.\"\n  ]\n}\n"
+        ]
+      }
+    },
+    {
+      "season": "2012-13",
+      "players": 102,
+      "uniqueIds": true,
+      "qualifierMatch": true,
+      "startRelation": true,
+      "xiCount": 11,
+      "xiUnique": true,
+      "xiPosition": true,
+      "xiShape": {
+        "GK": 1,
+        "CB": 3,
+        "LB": 1,
+        "RB": 1,
+        "DM": 1,
+        "CM": 2,
+        "ST": 2
+      },
+      "standingsParity": true,
+      "goalRefs": [],
+      "followup": {
+        "decision": "Retain 3-CB XI; reorder Barzagli 1, Chiellini 2, Gonzalo 3, Bonucci 4",
+        "notes": "AIC and club retrospective support Barzagli/Chiellini. Current 34/34 vs injury-limited 24/23; Gonzalo 35/35 and 6 goals vs Bonucci 33/33. Prior Wolfsburg stint separately recorded and Villarreal evidence filled; divergent minutes left pending. Provisional ranking, not complete defensive-action audit.",
+        "sources": [
+          "https://www.juventus.com/en/news/articles/the-champions-andrea-barzagli",
+          "https://www.juventus.com/it/news/articoli/quattro-bianconeri-nella-top11-ecco-perch",
+          "https://grangala.assocalciatori.it/vincitori/squadra-dellanno/",
+          "https://dr.statbunker.com/competitions/SeasonAppearances?club_id=124&comp_id=414",
+          "https://www.bdfutbol.com/en/j/j974.html",
+          "https://www.statbunker.com/competitions/SeasonAppearances?club_id=152&comp_id=378",
+          "https://fbref.com/en/players/46e6fea3/",
+          "https://fbref.com/en/squads/4eaa11d7/2010-2011/Wolfsburg-Stats",
+          "https://www.bdfutbol.com/en/j/j92888.html"
+        ],
+        "status": "proposed_unapproved"
+      },
+      "test": {
+        "exitCode": 0,
+        "logs": [
+          "{\n  \"passed\": true,\n  \"season\": \"2012-13\",\n  \"qualifiedClubs\": 6,\n  \"candidates\": 102,\n  \"nominalStarters\": 66,\n  \"leagueAppsPresent\": 102,\n  \"leagueStartsPresent\": 102,\n  \"leagueMinutesPresent\": 102,\n  \"leagueGoalsPresent\": 102,\n  \"leagueAssistsVerified\": 0,\n  \"worldClass\": 16,\n  \"leagueTop\": 41,\n  \"gradeDistribution\": {\n    \"S\": 5,\n    \"A+\": 11,\n    \"A\": 22,\n    \"A-\": 3,\n    \"B+\": 32,\n    \"B\": 23,\n    \"B-\": 6,\n    \"C+\": 0,\n    \"C\": 0,\n    \"C-\": 0,\n    \"D\": 0\n  },\n  \"bestXi\": 11,\n  \"fullThreeSeasonIndependentPeerAudits\": 0,\n  \"errors\": [],\n  \"notices\": [\n    \"Current BDFutbol season raw data directly linked per club but independent per-match/FBref second reconciliation is not complete.\",\n    \"Historical individual qualitative all-3-year full peer audit 0/102, prior DRAFT numeric cells are not evidence of independent review.\",\n    \"DOB text filled, second independent verification not complete. League assists all null.\",\n    \"GitHub Actions pass checks data structure, not live GitHub Pages browser functionality or user approval.\"\n  ]\n}\n"
+        ]
+      }
+    },
+    {
+      "season": "2013-14",
+      "players": 106,
+      "uniqueIds": true,
+      "qualifierMatch": true,
+      "startRelation": true,
+      "xiCount": 11,
+      "xiUnique": true,
+      "xiPosition": true,
+      "xiShape": {
+        "GK": 1,
+        "CB": 3,
+        "LB": 1,
+        "RB": 1,
+        "DM": 1,
+        "CM": 2,
+        "ST": 2
+      },
+      "standingsParity": true,
+      "goalRefs": [],
+      "test": {
+        "exitCode": 0,
+        "logs": [
+          "{\n  \"passed\": true,\n  \"season\": \"2013-14\",\n  \"actualUEFAClubs\": 6,\n  \"players\": 106,\n  \"starters\": 66,\n  \"apps\": 106,\n  \"starts\": 106,\n  \"minutes\": 106,\n  \"goals\": 106,\n  \"assistsVerified\": 0,\n  \"bestXi\": 11,\n  \"worldClass\": 21,\n  \"leagueTop\": 41,\n  \"grades\": {\n    \"S\": 4,\n    \"A+\": 17,\n    \"A\": 20,\n    \"A-\": 0,\n    \"B+\": 33,\n    \"B\": 26,\n    \"B-\": 6,\n    \"C+\": 0,\n    \"C\": 0,\n    \"C-\": 0,\n    \"D\": 0\n  },\n  \"fullyIndependentlyReviewedThreeSeasonQuality\": 0,\n  \"errors\": [],\n  \"notes\": [\n    \"BDFutbol 2013-14 per-club player lines were transcribed for current-year numerics; individual 2nd-source reconciliation pending.\",\n    \"Old DRAFT 2011-12/2012-13 numeric links not fully independently re-audited. Four leading-player 2-year records independently checked.\",\n    \"DOB all present but individual two-source DOB audits and exact 38-match modal role unconfirmed.\",\n    \"Action pass does not mean historical quality validation or functioning live website UI.\"\n  ]\n}\n"
+        ]
+      }
+    },
+    {
+      "season": "2014-15",
+      "players": 115,
+      "uniqueIds": true,
+      "qualifierMatch": true,
+      "startRelation": true,
+      "xiCount": 11,
+      "xiUnique": true,
+      "xiPosition": true,
+      "xiShape": {
+        "GK": 1,
+        "CB": 2,
+        "LB": 1,
+        "RB": 1,
+        "DM": 1,
+        "CM": 1,
+        "CAM": 1,
+        "LW": 1,
+        "RW": 1,
+        "ST": 1
+      },
+      "standingsParity": true,
+      "goalRefs": [],
+      "test": {
+        "exitCode": 0,
+        "logs": [
+          "PASS: Serie A 2014-15: six actual UEFA clubs, 115 unique player IDs with 11 starter slots per club, full DOB and current year stat fields, rankings 1..N, tier counts, 11 unique 4-3-3 Best XI. Historical 3-season individual peer audit pending."
+        ]
+      }
+    },
+    {
+      "season": "2015-16",
+      "players": 116,
+      "uniqueIds": true,
+      "qualifierMatch": true,
+      "startRelation": true,
+      "xiCount": 11,
+      "xiUnique": true,
+      "xiPosition": true,
+      "xiShape": {
+        "GK": 1,
+        "CB": 2,
+        "LB": 1,
+        "RB": 1,
+        "DM": 1,
+        "CM": 2,
+        "LW": 1,
+        "RW": 1,
+        "ST": 1
+      },
+      "standingsParity": true,
+      "goalRefs": [],
+      "test": {
+        "exitCode": 0,
+        "logs": [
+          "PASS Serie A 2015-16: six 2016-17 actual UEFA clubs, 116 candidates and current-year numeric rows, 66 starter slots, backups <=1/role, tier distribution, 10 sequential rank groups, 47 top narratives and 11 unique 4-3-3 XI. Historical complete 3-year audit NOT claimed."
+        ]
+      }
+    },
+    {
+      "season": "2016-17",
+      "players": 106,
+      "uniqueIds": true,
+      "qualifierMatch": true,
+      "startRelation": true,
+      "xiCount": 11,
+      "xiUnique": true,
+      "xiPosition": true,
+      "xiShape": {
+        "GK": 1,
+        "CB": 2,
+        "LB": 1,
+        "RB": 1,
+        "DM": 1,
+        "CM": 2,
+        "LW": 1,
+        "RW": 1,
+        "ST": 1
+      },
+      "standingsParity": true,
+      "goalRefs": [],
+      "followup": {
+        "decision": "Replace Jorginho with Pjanić; retain DM ranks 1 and 2",
+        "notes": "Pjanić 30 appearances, 5 goals, 9 assists (FBref) and deeper Juventus double-pivot role; Jorginho 27 starts and strong 4-3-3 regista fit. Current and preceding two seasons weighed; provisional decision. Existing minutes preserved.",
+        "sources": [
+          "https://learning.coachesvoice.com/cv/max-allegri-juventus-pirlo/",
+          "https://fbref.com/en/squads/e0652b02/2016-2017/roster/Juventus-Roster-Details",
+          "https://fbref.com/en/players/ad6df2d5/Miralem-Pjanic",
+          "https://www.asroma.com/en/news/44602/serie-a-review-which-roma-player-was-among-the-top-passers-in-2015-16",
+          "https://www.football-napoli.net/Fixtures-and-Results/Napoli/2016-17/Serie-A/"
+        ],
+        "status": "proposed_unapproved"
+      },
+      "test": {
+        "exitCode": 0,
+        "logs": [
+          "PASS: 2016-17 Serie A, 6 actual UEFA clubs, 106 players, 66 starter slots, 40 backups, dates and current-year numeric fields, 10 position rank groups, 50 individualized top evaluations, 11 unique 4-3-3 Best XI. Qualitative independent three-season audit not claimed."
+        ]
+      }
+    }
+  ]
+}
