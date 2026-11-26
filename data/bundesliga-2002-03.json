@@ -158,13 +158,13 @@
       "teamPerformance": "excluded direct league place and trophies"
     },
     "evaluationSummary": {
-      "players": 163,
+      "players": 162,
       "starters": 99,
-      "backups": 64,
-      "verified2002LeagueAppearances": 102,
-      "currentAppearancesPending": 61,
-      "verifiedCurrentLeagueStarts": 89,
-      "birthDatesRecorded": 163,
+      "backups": 63,
+      "verified2002LeagueAppearances": 162,
+      "currentAppearancesPending": 0,
+      "verifiedCurrentLeagueStarts": 162,
+      "birthDatesRecorded": 162,
       "birthDatesLinkedDfbRoster": 163,
       "individualThreeSeasonDirectSources": 5,
       "priorTwoSeasonsDirectPlayerReauditPending": 158,
@@ -177,7 +177,7 @@
         "A-": 15,
         "B+": 62,
         "B": 43,
-        "B-": 3,
+        "B-": 2,
         "C+": 4,
         "C": 0,
         "C-": 1,
@@ -225,9 +225,9 @@
           "backups": 8
         },
         "kaiserslautern": {
-          "all": 19,
+          "all": 18,
           "starters": 11,
-          "backups": 8
+          "backups": 7
         }
       },
       "pendingHistoricalPositionAudit": 146,
@@ -258,15 +258,16 @@
         "held": 50,
         "birthRetained": 2,
         "minutes": 162,
-        "starts": 72,
-        "appearances": 60,
+        "starts": 73,
+        "appearances": 61,
         "goalsConceded": 17,
         "displayNormalizationOnly": 62,
         "priorSeasonGroups": 260,
         "priorClubRecords": 262,
         "rankCompacted": 1
       },
-      "remainingReview": "audit/BUNDESLIGA_SEGMENT_1_APPLIED_1999-2003.json"
+      "remainingReview": "audit/BUNDESLIGA_SEGMENT_1_APPLIED_1999-2003.json",
+      "followup": "audit/BUNDESLIGA_SEGMENT_1_FOLLOWUP.json"
     }
   },
   "clubs": [
@@ -6326,8 +6327,8 @@
       "originalTacticalRole": "LWB / LB",
       "role": "starter",
       "roleSlotMeaning": "season representative XI or alternate (provisional, not proof of 34-round starts)",
-      "leagueAppearances": 29,
-      "leagueStarts": null,
+      "leagueAppearances": 30,
+      "leagueStarts": 30,
       "goals2002": 3,
       "assists2002": null,
       "minutes": 2544,
@@ -6342,12 +6343,13 @@
       "sources": [
         "https://datencenter.dfb.de/competitions/bundesliga/seasons/2002-2003/teams/borussia-dortmund",
         "https://fbref.com/en/squads/add600ae/2002-2003/Dortmund-Stats",
-        "https://www.bdfutbol.com/en/t/t2002-031003.html"
+        "https://www.bdfutbol.com/en/t/t2002-031003.html",
+        "https://datencenter.dfb.de/datencenter/personen/dede/spieler"
       ],
       "evidence": {
         "officialRoster": "https://datencenter.dfb.de/competitions/bundesliga/seasons/2002-2003/teams/borussia-dortmund",
         "currentSeason": "https://fbref.com/en/squads/add600ae/2002-2003/Dortmund-Stats",
-        "starts": null,
+        "starts": "https://fbref.com/en/squads/add600ae/2002-2003/Dortmund-Stats",
         "sourceStatus": "specific_league_record_linked",
         "segment1Corrections": {
           "minutes": {
@@ -6357,6 +6359,23 @@
               "https://www.bdfutbol.com/en/t/t2002-031003.html"
             ],
             "scope": "Bundesliga club-specific; supplied audit"
+          },
+          "appearances": {
+            "old": 29,
+            "value": 30,
+            "sources": [
+              "https://datencenter.dfb.de/datencenter/personen/dede/spieler",
+              "https://fbref.com/en/squads/add600ae/2002-2003/Dortmund-Stats",
+              "https://www.bdfutbol.com/en/t/t2002-031003.html"
+            ]
+          },
+          "starts": {
+            "old": null,
+            "value": 30,
+            "sources": [
+              "https://fbref.com/en/squads/add600ae/2002-2003/Dortmund-Stats",
+              "https://www.bdfutbol.com/en/t/t2002-031003.html"
+            ]
           }
         }
       },
@@ -6427,13 +6446,13 @@
           }
         }
       },
-      "tierReview": "2002-03 29경기, 3골. 해당 구단 전술 역할과 2000-01·2001-02 앞선 두 시즌 자료를 최근시즌 우선 가중으로 평가한 A0 잠정 등급. 팀 순위는 직접 가점 없음. [2026-11-26 검수 보완: minutes=2544. 상충하는 기존 수치 서술보다 보완값 우선. 티어는 재평가 전 잠정 유지.]",
+      "tierReview": "2002-03 30경기·30선발, 3골. 해당 구단 전술 역할과 2000-01·2001-02 앞선 두 시즌 자료를 최근시즌 우선 가중으로 평가한 A0 잠정 등급. 팀 순위는 직접 가점 없음. [2026-11-26 검수 보완: minutes=2544. 상충하는 기존 수치 서술보다 보완값 우선. 티어는 재평가 전 잠정 유지.] DFB 30경기·3골, FBref/BDFutbol 30선발 대조. BDFutbol 2544분 유지(제공처별 분 집계 차이).",
       "verificationNeeded": [
-        "current_starts_unknown",
         "matchwise_primary_position_frequency_pending",
         "past_2000_01_2001_02_independent_performance_audit_pending"
       ],
-      "rankStatus": "source_evidence_plus_tier_provisional"
+      "rankStatus": "source_evidence_plus_tier_provisional",
+      "starts": 30
     },
     {
       "id": "bundesliga-2002-dortmund-jorg-heinrich",
