@@ -9,7 +9,7 @@
     "status": "draft",
     "label": "DRAFT",
     "dataPrepared": true,
-    "candidateCount": 156,
+    "candidateCount": 155,
     "qualifyingClubCount": 8,
     "formation": "4-2-3-1",
     "formationStatus": "provisional_representative_not_full_season_modal_verified",
@@ -72,8 +72,110 @@
         "startsMissingCount": 0,
         "gkConcededRecorded": 16,
         "fullHistoricalFactVerification": false,
-        "notes": "Current row facts updated; unresolved matchwise positions, minute convention and XI items remain provisional. Existing original audit notes describe pre-correction status."
-      }
+        "notes": "Follow-up applied; minutes standardized, XI discrepancies editorially resolved; matchwise position evidence remains incomplete."
+      },
+      "externalFollowupExcluded": [
+        {
+          "player": {
+            "id": "laliga-202425-celta-mihailoristic-19951031",
+            "name": "Mihailo Ristić",
+            "nameOriginal": "Mihailo Ristić",
+            "nameKo": "미하일로 리스티치",
+            "born": "1995-10-31",
+            "club": "celta",
+            "clubId": "celta",
+            "clubNameOriginal": "RC Celta",
+            "position": "LB",
+            "role": "backup",
+            "leagueAppearances": 10,
+            "leagueStarts": 6,
+            "starts": 6,
+            "leagueMinutes": 432,
+            "leagueGoals": 0,
+            "leagueAssists": 1,
+            "appearanceScope": "2024-25 La Liga",
+            "tier": "C+",
+            "rank": 16,
+            "review": "draft_unapproved",
+            "evaluationStatus": "provisional_editorial",
+            "birthSource": "https://www.footballsquads.co.uk/spain/2024-2025/laliga/celta.htm",
+            "birthAuditStatus": "roster_reference_or_prior_identity_not_exhaustively_row_verified",
+            "positionVerification": "representative_tactical_assignment_matchwise_modal_pending",
+            "positionReview": "3-4-2-1",
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2024-2511.html",
+              "https://www.footballsquads.co.uk/spain/2024-2025/laliga/celta.htm",
+              "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2024.json",
+              "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2023.json"
+            ],
+            "evidence": {
+              "seasonPrimarySource": "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2024.json",
+              "seasonStatsMethod": "Opta-derived secondary season snapshot (not complete); selected BDFutbol starts directly transcribed, otherwise null",
+              "priorSeasons": [
+                {
+                  "season": "2022-23",
+                  "records": [],
+                  "secondarySnapshot": [],
+                  "status": "evidence_pending_not_zero"
+                },
+                {
+                  "season": "2023-24",
+                  "records": [
+                    {
+                      "club": "RC Celta",
+                      "league": "La Liga",
+                      "source": "https://www.bdfutbol.com/en/t/t2023-2411.html",
+                      "leagueStarts": 9,
+                      "leagueAppearances": 12,
+                      "leagueMinutes": 807,
+                      "leagueGoals": 0,
+                      "status": "external_audit_BDFutbol_club_season"
+                    }
+                  ],
+                  "secondarySnapshot": [
+                    {
+                      "sourceTeamId": "6",
+                      "sourceOptaId": "p206340",
+                      "leagueAppearances": 12,
+                      "leagueMinutes": 808,
+                      "leagueGoals": 0,
+                      "leagueAssists": 0,
+                      "source": "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2023.json",
+                      "status": "same_Opta_ID_partial_snapshot"
+                    }
+                  ],
+                  "status": "direct_source_available"
+                }
+              ],
+              "minutesAudit": {
+                "previousSnapshotMinutes": 430,
+                "leagueMinutes": 432,
+                "source": "https://www.bdfutbol.com/en/t/t2024-2511.html",
+                "method": "BDFutbol club-season minutes selected as canonical; original snapshot retained here; provider conventions differ"
+              }
+            },
+            "threeSeasonReview": {
+              "seasons": [
+                "2022-23",
+                "2023-24",
+                "2024-25"
+              ],
+              "relativeWeight": "2024-25 > 2023-24 > 2022-23",
+              "priorCoverage": 1,
+              "olderSeasonsSourceAudit": "prior archive and incomplete secondary snapshot, not independent full review"
+            },
+            "assessmentRationale": "당해 10경기 선발 횟수 미확인 432분 0골 1도움. 좌측 수비·전진 역할의 주전 경쟁·로테이션 자원. 출전량·당해 개인 활약·기존 기량을 종합한 편집 평가. 이전 두 시즌 참고 자료 1/2시즌 연결, 미확보는 0으로 보지 않음. C+ 잠정 등급, 팀 순위 가산 없음. [외부 검수 정정: 리그 10경기, 6선발, 430분, 0골, 도움 1.]",
+            "tierReview": "좌측 수비·전진 역할의 주전 경쟁·로테이션 자원. 출전량·당해 개인 활약·기존 기량을 종합한 편집 평가",
+            "rankReview": {
+              "status": "provisional",
+              "pool": 16,
+              "method": "tier, editorial comparative order, minutes and goals tiebreak"
+            }
+          },
+          "reason": "LB 후보 1명 제한; Carreira 19선발을 주전, Hugo Álvarez 16선발을 후보로 재배치하여 6선발 Ristić 제외."
+        }
+      ],
+      "externalFollowup": "Eligibility and alternative positions reviewed; remaining matchwise modal uncertainty is explicitly recorded; no user approval implied."
     },
     "nodeCliValidation": {
       "status": "PASS",
@@ -1160,7 +1262,7 @@
       "leagueAssists": 3,
       "appearanceScope": "2024-25 La Liga",
       "tier": "B",
-      "rank": 11,
+      "rank": 12,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_editorial",
       "birthSource": "https://www.footballsquads.co.uk/spain/2024-2025/laliga/barce.htm",
@@ -1313,7 +1415,7 @@
       "tierReview": "우측 수비·전진 역할의 대표 주전 자원. 출전량·당해 개인 활약·기존 기량을 종합한 편집 평가",
       "rankReview": {
         "status": "provisional",
-        "pool": 16,
+        "pool": 15,
         "method": "tier, editorial comparative order, minutes and goals tiebreak"
       }
     },
@@ -1336,7 +1438,7 @@
       "leagueAssists": 0,
       "appearanceScope": "2024-25 La Liga",
       "tier": "C+",
-      "rank": 16,
+      "rank": 15,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_editorial",
       "birthSource": "https://www.footballsquads.co.uk/spain/2024-2025/laliga/barce.htm",
@@ -1397,7 +1499,7 @@
       "tierReview": "우측 수비·전진 역할의 주전 경쟁·로테이션 자원. 출전량·당해 개인 활약·기존 기량을 종합한 편집 평가",
       "rankReview": {
         "status": "provisional",
-        "pool": 16,
+        "pool": 15,
         "method": "tier, editorial comparative order, minutes and goals tiebreak"
       }
     },
@@ -3023,7 +3125,7 @@
       "leagueAssists": 1,
       "appearanceScope": "2024-25 La Liga",
       "tier": "B",
-      "rank": 12,
+      "rank": 13,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_editorial",
       "birthSource": "https://www.footballsquads.co.uk/spain/2024-2025/laliga/rmadrid.htm",
@@ -3218,7 +3320,7 @@
       "tierReview": "우측 수비·전진 역할의 대표 주전 자원. 출전량·당해 개인 활약·기존 기량을 종합한 편집 평가",
       "rankReview": {
         "status": "provisional",
-        "pool": 16,
+        "pool": 15,
         "method": "tier, editorial comparative order, minutes and goals tiebreak"
       }
     },
@@ -3241,7 +3343,7 @@
       "leagueAssists": 0,
       "appearanceScope": "2024-25 La Liga",
       "tier": "B+",
-      "rank": 10,
+      "rank": 9,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_editorial",
       "birthSource": "https://www.footballsquads.co.uk/spain/2024-2025/laliga/rmadrid.htm",
@@ -3315,7 +3417,7 @@
       "tierReview": "우측 수비·전진 역할의 주전 경쟁·로테이션 자원. 출전량·당해 개인 활약·기존 기량을 종합한 편집 평가",
       "rankReview": {
         "status": "provisional",
-        "pool": 16,
+        "pool": 15,
         "method": "tier, editorial comparative order, minutes and goals tiebreak"
       }
     },
@@ -3402,7 +3504,14 @@
             "secondarySnapshot": [],
             "status": "prior_reference"
           }
-        ]
+        ],
+        "positionAudit": {
+          "previous": "DM",
+          "alternative": "CB",
+          "source": "https://fbref.com/en/players/4f255115/matchlogs/2024-2025/c12/Aurelien-Tchouameni-Match-Logs",
+          "reason": "CB와 중원 병행; 부상 대체 CB 기용 확인. 포지션별 전체 집계 미확보.",
+          "decision": "retain_provisional_pending_matchwise_count"
+        }
       },
       "threeSeasonReview": {
         "seasons": [
@@ -4326,7 +4435,12 @@
             "secondarySnapshot": [],
             "status": "evidence_pending_not_zero"
           }
-        ]
+        ],
+        "eligibilityAudit": {
+          "decision": "retain_provisional_backup",
+          "reason": "3선발 22출전. 해당 구단 등록 후보군에서 동일 포지션 주전 Kylian Mbappé의 유일한 예비 후보. 5선발 하한 미설정; 저출전 비상·로테이션 후보로 유지. 전체 미등록 선수와의 비교는 미완료.",
+          "source": "https://www.bdfutbol.com/en/t/t2024-252.html"
+        }
       },
       "threeSeasonReview": {
         "seasons": [
@@ -4951,7 +5065,7 @@
       "leagueAssists": 0,
       "appearanceScope": "2024-25 La Liga",
       "tier": "B",
-      "rank": 13,
+      "rank": 14,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_editorial",
       "birthSource": "https://www.footballsquads.co.uk/spain/2024-2025/laliga/amadrid.htm",
@@ -5150,7 +5264,7 @@
       "tierReview": "우측 수비·전진 역할의 대표 주전 자원. 출전량·당해 개인 활약·기존 기량을 종합한 편집 평가",
       "rankReview": {
         "status": "provisional",
-        "pool": 16,
+        "pool": 15,
         "method": "tier, editorial comparative order, minutes and goals tiebreak"
       }
     },
@@ -5173,7 +5287,7 @@
       "leagueAssists": 3,
       "appearanceScope": "2024-25 La Liga",
       "tier": "B+",
-      "rank": 8,
+      "rank": 7,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_editorial",
       "birthSource": "https://www.laliga.com/en-GB/player/nahuel-molina",
@@ -5271,7 +5385,7 @@
       "tierReview": "우측 수비·전진 역할의 주전 경쟁·로테이션 자원. 출전량·당해 개인 활약·기존 기량을 종합한 편집 평가",
       "rankReview": {
         "status": "provisional",
-        "pool": 16,
+        "pool": 15,
         "method": "tier, editorial comparative order, minutes and goals tiebreak"
       },
       "birthCorrection": {
@@ -5900,7 +6014,12 @@
             ],
             "status": "prior_reference"
           }
-        ]
+        ],
+        "eligibilityAudit": {
+          "decision": "retain_provisional_backup",
+          "reason": "4선발 16출전. 해당 구단 등록 후보군에서 동일 포지션 주전 Samuel Lino의 유일한 예비 후보. 5선발 하한 미설정; 저출전 비상·로테이션 후보로 유지. 전체 미등록 선수와의 비교는 미완료.",
+          "source": "https://www.bdfutbol.com/en/t/t2024-257.html"
+        }
       },
       "threeSeasonReview": {
         "seasons": [
@@ -7011,7 +7130,7 @@
       "leagueAssists": 0,
       "appearanceScope": "2024-25 La Liga",
       "tier": "B",
-      "rank": 10,
+      "rank": 11,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_editorial",
       "birthSource": "https://www.footballsquads.co.uk/spain/2024-2025/laliga/abilbao.htm",
@@ -7084,7 +7203,7 @@
       "leagueAssists": 4,
       "appearanceScope": "2024-25 La Liga",
       "tier": "B+",
-      "rank": 9,
+      "rank": 8,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_editorial",
       "birthSource": "https://www.footballsquads.co.uk/spain/2024-2025/laliga/abilbao.htm",
@@ -7175,7 +7294,7 @@
       "tierReview": "우측 수비·전진 역할의 대표 주전 자원. 출전량·당해 개인 활약·기존 기량을 종합한 편집 평가",
       "rankReview": {
         "status": "provisional",
-        "pool": 16,
+        "pool": 15,
         "method": "tier, editorial comparative order, minutes and goals tiebreak"
       }
     },
@@ -7198,7 +7317,7 @@
       "leagueAssists": 2,
       "appearanceScope": "2024-25 La Liga",
       "tier": "B",
-      "rank": 12,
+      "rank": 11,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_editorial",
       "birthSource": "https://www.footballsquads.co.uk/spain/2024-2025/laliga/abilbao.htm",
@@ -7289,7 +7408,7 @@
       "tierReview": "우측 수비·전진 역할의 주전 경쟁·로테이션 자원. 출전량·당해 개인 활약·기존 기량을 종합한 편집 평가",
       "rankReview": {
         "status": "provisional",
-        "pool": 16,
+        "pool": 15,
         "method": "tier, editorial comparative order, minutes and goals tiebreak"
       }
     },
@@ -9054,7 +9173,7 @@
       "leagueAssists": 2,
       "appearanceScope": "2024-25 La Liga",
       "tier": "B-",
-      "rank": 15,
+      "rank": 16,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_editorial",
       "birthSource": "https://www.footballsquads.co.uk/spain/2024-2025/laliga/villar.htm",
@@ -9128,7 +9247,12 @@
             ],
             "status": "direct_source_available"
           }
-        ]
+        ],
+        "eligibilityAudit": {
+          "decision": "retain_provisional_backup",
+          "reason": "4선발 12출전. 해당 구단 등록 후보군에서 동일 포지션 주전 Sergi Cardona의 유일한 예비 후보. 5선발 하한 미설정; 저출전 비상·로테이션 후보로 유지. 전체 미등록 선수와의 비교는 미완료.",
+          "source": "https://www.bdfutbol.com/en/t/t2024-2538.html"
+        }
       },
       "threeSeasonReview": {
         "seasons": [
@@ -9264,7 +9388,7 @@
       "tierReview": "우측 수비·전진 역할의 대표 주전 자원. 출전량·당해 개인 활약·기존 기량을 종합한 편집 평가",
       "rankReview": {
         "status": "provisional",
-        "pool": 16,
+        "pool": 15,
         "method": "tier, editorial comparative order, minutes and goals tiebreak"
       }
     },
@@ -9287,7 +9411,7 @@
       "leagueAssists": 0,
       "appearanceScope": "2024-25 La Liga",
       "tier": "C+",
-      "rank": 15,
+      "rank": 14,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_editorial",
       "birthSource": "https://www.footballsquads.co.uk/spain/2024-2025/laliga/villar.htm",
@@ -9337,7 +9461,7 @@
       "tierReview": "우측 수비·전진 역할의 주전 경쟁·로테이션 자원. 출전량·당해 개인 활약·기존 기량을 종합한 편집 평가",
       "rankReview": {
         "status": "provisional",
-        "pool": 16,
+        "pool": 15,
         "method": "tier, editorial comparative order, minutes and goals tiebreak"
       }
     },
@@ -10660,7 +10784,7 @@
       "leagueAssists": 2,
       "appearanceScope": "2024-25 La Liga",
       "tier": "B",
-      "rank": 8,
+      "rank": 9,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_editorial",
       "birthSource": "https://www.footballsquads.co.uk/spain/2024-2025/laliga/betis.htm",
@@ -10727,7 +10851,7 @@
       "leagueAssists": 1,
       "appearanceScope": "2024-25 La Liga",
       "tier": "B",
-      "rank": 9,
+      "rank": 10,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_editorial",
       "birthSource": "https://www.footballsquads.co.uk/spain/2024-2025/laliga/betis.htm",
@@ -10800,7 +10924,7 @@
       "leagueAssists": 1,
       "appearanceScope": "2024-25 La Liga",
       "tier": "B",
-      "rank": 11,
+      "rank": 10,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_editorial",
       "birthSource": "https://www.footballsquads.co.uk/spain/2024-2025/laliga/betis.htm",
@@ -10880,7 +11004,7 @@
       "tierReview": "우측 수비·전진 역할의 대표 주전 자원. 출전량·당해 개인 활약·기존 기량을 종합한 편집 평가",
       "rankReview": {
         "status": "provisional",
-        "pool": 16,
+        "pool": 15,
         "method": "tier, editorial comparative order, minutes and goals tiebreak"
       }
     },
@@ -10903,7 +11027,7 @@
       "leagueAssists": 3,
       "appearanceScope": "2024-25 La Liga",
       "tier": "B",
-      "rank": 13,
+      "rank": 12,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_editorial",
       "birthSource": "https://www.footballsquads.co.uk/spain/2024-2025/laliga/betis.htm",
@@ -10999,7 +11123,7 @@
       "tierReview": "우측 수비·전진 역할의 주전 경쟁·로테이션 자원. 출전량·당해 개인 활약·기존 기량을 종합한 편집 평가",
       "rankReview": {
         "status": "provisional",
-        "pool": 16,
+        "pool": 15,
         "method": "tier, editorial comparative order, minutes and goals tiebreak"
       }
     },
@@ -12507,7 +12631,7 @@
       "clubId": "celta",
       "clubNameOriginal": "RC Celta",
       "position": "LB",
-      "role": "starter",
+      "role": "backup",
       "leagueAppearances": 26,
       "leagueStarts": 16,
       "starts": 16,
@@ -12516,7 +12640,7 @@
       "leagueAssists": 3,
       "appearanceScope": "2024-25 La Liga",
       "tier": "B+",
-      "rank": 7,
+      "rank": 8,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_editorial",
       "birthSource": "https://www.footballsquads.co.uk/spain/2024-2025/laliga/celta.htm",
@@ -12587,102 +12711,6 @@
       },
       "assessmentRationale": "당해 26경기 16선발 1569분 4골 3도움. 좌측 수비·전진 역할의 대표 주전 자원. 출전량·당해 개인 활약·기존 기량을 종합한 편집 평가. 이전 두 시즌 참고 자료 2/2시즌 연결, 미확보는 0으로 보지 않음. B+ 잠정 등급, 팀 순위 가산 없음.",
       "tierReview": "좌측 수비·전진 역할의 대표 주전 자원. 출전량·당해 개인 활약·기존 기량을 종합한 편집 평가",
-      "rankReview": {
-        "status": "provisional",
-        "pool": 16,
-        "method": "tier, editorial comparative order, minutes and goals tiebreak"
-      }
-    },
-    {
-      "id": "laliga-202425-celta-mihailoristic-19951031",
-      "name": "Mihailo Ristić",
-      "nameOriginal": "Mihailo Ristić",
-      "nameKo": "미하일로 리스티치",
-      "born": "1995-10-31",
-      "club": "celta",
-      "clubId": "celta",
-      "clubNameOriginal": "RC Celta",
-      "position": "LB",
-      "role": "backup",
-      "leagueAppearances": 10,
-      "leagueStarts": 6,
-      "starts": 6,
-      "leagueMinutes": 432,
-      "leagueGoals": 0,
-      "leagueAssists": 1,
-      "appearanceScope": "2024-25 La Liga",
-      "tier": "C+",
-      "rank": 16,
-      "review": "draft_unapproved",
-      "evaluationStatus": "provisional_editorial",
-      "birthSource": "https://www.footballsquads.co.uk/spain/2024-2025/laliga/celta.htm",
-      "birthAuditStatus": "roster_reference_or_prior_identity_not_exhaustively_row_verified",
-      "positionVerification": "representative_tactical_assignment_matchwise_modal_pending",
-      "positionReview": "3-4-2-1",
-      "sources": [
-        "https://www.bdfutbol.com/en/t/t2024-2511.html",
-        "https://www.footballsquads.co.uk/spain/2024-2025/laliga/celta.htm",
-        "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2024.json",
-        "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2023.json"
-      ],
-      "evidence": {
-        "seasonPrimarySource": "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2024.json",
-        "seasonStatsMethod": "Opta-derived secondary season snapshot (not complete); selected BDFutbol starts directly transcribed, otherwise null",
-        "priorSeasons": [
-          {
-            "season": "2022-23",
-            "records": [],
-            "secondarySnapshot": [],
-            "status": "evidence_pending_not_zero"
-          },
-          {
-            "season": "2023-24",
-            "records": [
-              {
-                "club": "RC Celta",
-                "league": "La Liga",
-                "source": "https://www.bdfutbol.com/en/t/t2023-2411.html",
-                "leagueStarts": 9,
-                "leagueAppearances": 12,
-                "leagueMinutes": 807,
-                "leagueGoals": 0,
-                "status": "external_audit_BDFutbol_club_season"
-              }
-            ],
-            "secondarySnapshot": [
-              {
-                "sourceTeamId": "6",
-                "sourceOptaId": "p206340",
-                "leagueAppearances": 12,
-                "leagueMinutes": 808,
-                "leagueGoals": 0,
-                "leagueAssists": 0,
-                "source": "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2023.json",
-                "status": "same_Opta_ID_partial_snapshot"
-              }
-            ],
-            "status": "direct_source_available"
-          }
-        ],
-        "minutesAudit": {
-          "previousSnapshotMinutes": 430,
-          "leagueMinutes": 432,
-          "source": "https://www.bdfutbol.com/en/t/t2024-2511.html",
-          "method": "BDFutbol club-season minutes selected as canonical; original snapshot retained here; provider conventions differ"
-        }
-      },
-      "threeSeasonReview": {
-        "seasons": [
-          "2022-23",
-          "2023-24",
-          "2024-25"
-        ],
-        "relativeWeight": "2024-25 > 2023-24 > 2022-23",
-        "priorCoverage": 1,
-        "olderSeasonsSourceAudit": "prior archive and incomplete secondary snapshot, not independent full review"
-      },
-      "assessmentRationale": "당해 10경기 선발 횟수 미확인 432분 0골 1도움. 좌측 수비·전진 역할의 주전 경쟁·로테이션 자원. 출전량·당해 개인 활약·기존 기량을 종합한 편집 평가. 이전 두 시즌 참고 자료 1/2시즌 연결, 미확보는 0으로 보지 않음. C+ 잠정 등급, 팀 순위 가산 없음. [외부 검수 정정: 리그 10경기, 6선발, 430분, 0골, 도움 1.]",
-      "tierReview": "좌측 수비·전진 역할의 주전 경쟁·로테이션 자원. 출전량·당해 개인 활약·기존 기량을 종합한 편집 평가",
       "rankReview": {
         "status": "provisional",
         "pool": 16,
@@ -12804,7 +12832,7 @@
       "tierReview": "우측 수비·전진 역할의 대표 주전 자원. 출전량·당해 개인 활약·기존 기량을 종합한 편집 평가",
       "rankReview": {
         "status": "provisional",
-        "pool": 16,
+        "pool": 15,
         "method": "tier, editorial comparative order, minutes and goals tiebreak"
       }
     },
@@ -12817,8 +12845,8 @@
       "club": "celta",
       "clubId": "celta",
       "clubNameOriginal": "RC Celta",
-      "position": "RB",
-      "role": "backup",
+      "position": "LB",
+      "role": "starter",
       "leagueAppearances": 23,
       "leagueStarts": 19,
       "starts": 19,
@@ -12867,7 +12895,15 @@
             "secondarySnapshot": [],
             "status": "evidence_pending_not_zero"
           }
-        ]
+        ],
+        "positionAudit": {
+          "previous": "RB",
+          "alternative": "LB",
+          "source": "https://11footy.com/teams/celta-vigo?season=2024",
+          "reason": "시즌 페이지 LWB 분류와 2025-08-04 보도상 전 시즌 왼쪽 기용 확인. LB로 편집상 재배치.",
+          "decision": "reassign_LB_editorial",
+          "newPosition": "LB"
+        }
       },
       "threeSeasonReview": {
         "seasons": [
@@ -12879,8 +12915,8 @@
         "priorCoverage": 1,
         "olderSeasonsSourceAudit": "prior archive and incomplete secondary snapshot, not independent full review"
       },
-      "assessmentRationale": "당해 23경기 19선발 1657분 0골 4도움. 우측 수비·전진 역할의 주전 경쟁·로테이션 자원. 출전량·당해 개인 활약·기존 기량을 종합한 편집 평가. 이전 두 시즌 참고 자료 1/2시즌 연결, 미확보는 0으로 보지 않음. B+ 잠정 등급, 팀 순위 가산 없음.",
-      "tierReview": "우측 수비·전진 역할의 주전 경쟁·로테이션 자원. 출전량·당해 개인 활약·기존 기량을 종합한 편집 평가",
+      "assessmentRationale": "당해 23경기 19선발 1657분. 좌측 윙백 역할을 LB로 매핑, 기존 B+ 유지. 시즌별 최빈 포지션 수치는 미확보.",
+      "tierReview": "좌측 윙백 역할 및 19선발에 따른 대표 주전 편집 평가",
       "rankReview": {
         "status": "provisional",
         "pool": 16,
@@ -13683,6 +13719,11 @@
             "https://www.bdfutbol.com/en/t/t2024-2511.html",
             "https://statz.ai/player/iker-losada/27048372"
           ]
+        },
+        "eligibilityAudit": {
+          "decision": "retain_provisional_backup",
+          "reason": "4선발 12출전. 해당 구단 등록 후보군에서 동일 포지션 주전 Alfon González의 유일한 예비 후보. 5선발 하한 미설정; 저출전 비상·로테이션 후보로 유지. 전체 미등록 선수와의 비교는 미완료.",
+          "source": "https://www.bdfutbol.com/en/t/t2024-2511.html"
         }
       },
       "threeSeasonReview": {
@@ -14556,7 +14597,7 @@
       "leagueAssists": 1,
       "appearanceScope": "2024-25 La Liga",
       "tier": "B",
-      "rank": 14,
+      "rank": 15,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_editorial",
       "birthSource": "https://www.footballsquads.co.uk/spain/2024-2025/laliga/rayo.htm",
@@ -14731,7 +14772,7 @@
       "tierReview": "우측 풀백의 전진·수비 및 높은 출전 비중",
       "rankReview": {
         "status": "provisional",
-        "pool": 16,
+        "pool": 15,
         "method": "tier, editorial comparative order, minutes and goals tiebreak"
       }
     },
@@ -14754,7 +14795,7 @@
       "leagueAssists": 0,
       "appearanceScope": "2024-25 La Liga",
       "tier": "B",
-      "rank": 14,
+      "rank": 13,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_editorial",
       "birthSource": "https://www.footballsquads.co.uk/spain/2024-2025/laliga/rayo.htm",
@@ -14838,7 +14879,7 @@
       "tierReview": "우측 수비·전진 역할의 주전 경쟁·로테이션 자원. 출전량·당해 개인 활약·기존 기량을 종합한 편집 평가",
       "rankReview": {
         "status": "provisional",
-        "pool": 16,
+        "pool": 15,
         "method": "tier, editorial comparative order, minutes and goals tiebreak"
       }
     },
