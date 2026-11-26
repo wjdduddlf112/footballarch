@@ -14,7 +14,7 @@ const validate=(d,master)=>{
  check(d.qualifiers.length===7&&Object.entries(expected.europeanParticipation).every(([k,v])=>q[k]===v),"qualifier parity");
  check(JSON.stringify(d.standings)===JSON.stringify(expected.standings),"standings parity");
  check(JSON.stringify(d.clubs)===JSON.stringify(master.clubs),"club metadata parity");
- for(const x of p){
+ for(const x of p){check(x.position!=="GK"||(Number.isInteger(x.leagueGoalsConceded)&&x.leagueGoalsConceded>=0),x.id+" goalkeeper conceded");
   check(x.nameKo&&x.nameOriginal&&validDate(x.born)&&x.birthSource&&x.sources?.length>=2,`${x.id}: identity or date format`);
   check(allowed.includes(x.tier)&&positions.includes(x.position)&&["starter","backup"].includes(x.role)&&x.review==="draft_unapproved"&&q[x.club]&&x.assessmentRationale,`${x.id}: evaluation fields`);
   check(Number.isInteger(x.leagueAppearances)&&x.leagueAppearances>0&&x.leagueAppearances<=38&&Number.isInteger(x.leagueStarts)&&x.leagueStarts>=0&&x.leagueStarts<=x.leagueAppearances&&x.leagueMinutes>0&&x.leagueMinutes<=3420,`${x.id}: league appearances`);
