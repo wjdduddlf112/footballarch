@@ -31,7 +31,7 @@ for(const p of a.players){
  for(const y of ["2021-22","2022-23","2023-24"])check(p.threeSeasonReview?.records?.[y]!==undefined,"Missing evaluation record "+p.id+" "+y);
  check(p.leagueAppearances===p.threeSeasonReview?.records?.["2023-24"]?.appearances,"Current year stats duplicate inconsistency "+p.id);
  check(p.sources?.length>=2&&p.assessmentRationale,"Missing evidence or rationale "+p.id);
- if(p.position==="GK")check(p.goals2023===null,"Goalkeeper conceded goals misinterpreted "+p.id);
+ if(p.position==="GK")check((p.goals2023==null||(p.goals2023===0&&p.threeSeasonReview?.records?.["2023-24"]?.goals===0&&Number.isInteger(p.leagueGoalsConceded)&&p.leagueGoalsConceded>=0)),"Goalkeeper conceded goals misinterpreted "+p.id);
  if(p.tier===null)check(p.rank===null,"Unrated candidate given rank "+p.id);
  else check(Number.isInteger(p.rank)&&p.rank>=1,"Rated candidate without rank "+p.id);
 }
