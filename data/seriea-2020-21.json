@@ -146,7 +146,30 @@
     "birthdayPending": [],
     "previousYearGaps": 93,
     "topTierIndividualReasonsWritten": 25,
-    "assistsStatus": "20_top_assister_source_2020_21_AS_com_other_null"
+    "assistsStatus": "20_top_assister_source_2020_21_AS_com_other_null",
+    "segment3Audit": {
+      "source": "FOOTBALL_AUDIT_SERIEA_SEGMENT_3_CORRECTIONS.md",
+      "base": "e7ceebd9b5cda6bf3bedd40024c08bc5218f2200",
+      "counts": {
+        "players": 126,
+        "GK": 14,
+        "held": 8,
+        "prior": 38,
+        "clubRows": 38
+      },
+      "held": [
+        "seriea-2020-21-milan-diogodalot 주 포지션 확인 LB RB",
+        "seriea-2020-21-milan-pierrekalulu 주 포지션 확인 RB CB",
+        "seriea-2020-21-juventus-daniloluizdasilva 주 포지션 확인 LB CB",
+        "seriea-2020-21-lazio-stefanradu 주 포지션 확인 CB LB",
+        "seriea-2020-21-lazio-adammarusic 주 포지션 확인 LB RB",
+        "seriea-2020-21-roma-brunoperes 주 포지션 확인 RB LB",
+        "seriea-2020-21-napoli-eljifelmas 후보 자격 확인 CM backup",
+        "seriea-2020-21-lazio-gonzaloescalante 후보 자격 확인 DM backup"
+      ],
+      "xiReview": [],
+      "limitations": "Report-backed transcription; not independent match-by-match review. Prior clubRecords preserves split Serie A club rows; unknown assists remain null."
+    }
   },
   "clubs": [
     {
@@ -974,7 +997,11 @@
             "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2020-213008.html",
-            "verification": "manual_BDFutbol_current_2020_21_PM_SM_Min_G"
+            "verification": "manual_BDFutbol_current_2020_21_PM_SM_Min_G",
+            "goalsAgainst": 33,
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2020-213008.html"
+            ]
           }
         },
         "tierReason": "37경기 37선발 3242분 0골. 선방·박스 통제의 개인 기여를 평가. 앞선 두 시즌: 2018-19 38경기/0골(미승인 자료); 2019-20 35경기/0골(미승인 자료). 2020-21 55%, 2019-20 30%, 2018-19 15% 순으로 평가하며 팀 우승/순위 자체는 개인 가산점 제외. 미연결 수치는 0점으로 취급하지 않음. A+ DRAFT.",
@@ -984,7 +1011,8 @@
       "assessmentRationale": "37경기 37선발 3242분 0골. 선방·박스 통제의 개인 기여를 평가. 앞선 두 시즌: 2018-19 38경기/0골(미승인 자료); 2019-20 35경기/0골(미승인 자료). 2020-21 55%, 2019-20 30%, 2018-19 15% 순으로 평가하며 팀 우승/순위 자체는 개인 가산점 제외. 미연결 수치는 0점으로 취급하지 않음. A+ DRAFT.",
       "evaluationStatus": "provisional_tier_draft_unapproved",
       "gradeEvidenceStatus": "individual_role_grade_draft_three_year_peer_audit_pending",
-      "rankStatus": "provisional_ordinal_in_position"
+      "rankStatus": "provisional_ordinal_in_position",
+      "leagueGoalsAgainst": 33
     },
     {
       "id": "seriea-2020-21-inter-ionutandreiradu",
@@ -1025,26 +1053,58 @@
         "weighting": "2020-21 55%, 2019-20 30%, 2018-19 15%, qualitative",
         "records": {
           "2018-19": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
+            "club": "Genoa",
+            "league": "Serie A",
+            "appearances": 33,
+            "starts": 33,
+            "minutes": 2970,
             "goals": null,
             "assists": null,
-            "source": null,
-            "verification": "missing_evidence"
+            "source": "https://www.bdfutbol.com/en/t/t2018-193035.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "goalsAgainst": 46,
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2018-193035.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Genoa",
+                "league": "Serie A",
+                "starts": 33,
+                "appearances": 33,
+                "minutes": 2970,
+                "goalsAgainst": 46,
+                "source": "https://www.bdfutbol.com/en/t/t2018-193035.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2019-20": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
+            "club": "Genoa",
+            "league": "Serie A",
+            "appearances": 17,
+            "starts": 17,
+            "minutes": 1530,
             "goals": null,
             "assists": null,
-            "source": null,
-            "verification": "missing_evidence"
+            "source": "https://www.bdfutbol.com/en/t/t2019-203035.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "goalsAgainst": 35,
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2019-203035.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Genoa",
+                "league": "Serie A",
+                "starts": 17,
+                "appearances": 17,
+                "minutes": 1530,
+                "goalsAgainst": 35,
+                "source": "https://www.bdfutbol.com/en/t/t2019-203035.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2020-21": {
             "club": "Football Club Internazionale Milano",
@@ -1055,7 +1115,11 @@
             "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2020-213008.html",
-            "verification": "manual_BDFutbol_current_2020_21_PM_SM_Min_G"
+            "verification": "manual_BDFutbol_current_2020_21_PM_SM_Min_G",
+            "goalsAgainst": 1,
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2020-213008.html"
+            ]
           }
         },
         "tierReason": "2경기 1선발 134분 0골. 선방·박스 통제의 개인 기여를 평가. 앞선 두 시즌: 2018-19 미연결; 2019-20 미연결. 2020-21 55%, 2019-20 30%, 2018-19 15% 순으로 평가하며 팀 우승/순위 자체는 개인 가산점 제외. 미연결 수치는 0점으로 취급하지 않음. C+ DRAFT.",
@@ -1065,7 +1129,8 @@
       "assessmentRationale": "2경기 1선발 134분 0골. 선방·박스 통제의 개인 기여를 평가. 앞선 두 시즌: 2018-19 미연결; 2019-20 미연결. 2020-21 55%, 2019-20 30%, 2018-19 15% 순으로 평가하며 팀 우승/순위 자체는 개인 가산점 제외. 미연결 수치는 0점으로 취급하지 않음. C+ DRAFT.",
       "evaluationStatus": "provisional_tier_draft_unapproved",
       "gradeEvidenceStatus": "individual_role_grade_draft_three_year_peer_audit_pending",
-      "rankStatus": "provisional_ordinal_in_position"
+      "rankStatus": "provisional_ordinal_in_position",
+      "leagueGoalsAgainst": 1
     },
     {
       "id": "seriea-2020-21-inter-stefandevrij",
@@ -1268,15 +1333,30 @@
         "weighting": "2020-21 55%, 2019-20 30%, 2018-19 15%, qualitative",
         "records": {
           "2018-19": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Parma",
+            "league": "Serie A",
+            "appearances": 24,
+            "starts": 18,
+            "minutes": 1686,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "missing_evidence"
+            "source": "https://www.bdfutbol.com/en/t/t2018-193013.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2018-193013.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Parma",
+                "league": "Serie A",
+                "starts": 18,
+                "appearances": 24,
+                "minutes": 1686,
+                "goals": 1,
+                "source": "https://www.bdfutbol.com/en/t/t2018-193013.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2019-20": {
             "club": "Football Club Internazionale Milano",
@@ -1349,26 +1429,56 @@
         "weighting": "2020-21 55%, 2019-20 30%, 2018-19 15%, qualitative",
         "records": {
           "2018-19": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Inter",
+            "league": "Serie A",
+            "appearances": 4,
+            "starts": 0,
+            "minutes": 59,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "missing_evidence"
+            "source": "https://www.bdfutbol.com/en/t/t2018-193008.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2018-193008.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Inter",
+                "league": "Serie A",
+                "starts": 0,
+                "appearances": 4,
+                "minutes": 59,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2018-193008.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2019-20": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Inter",
+            "league": "Serie A",
+            "appearances": 7,
+            "starts": 5,
+            "minutes": 525,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "missing_evidence"
+            "source": "https://www.bdfutbol.com/en/t/t2019-203008.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2019-203008.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Inter",
+                "league": "Serie A",
+                "starts": 5,
+                "appearances": 7,
+                "minutes": 525,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2019-203008.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2020-21": {
             "club": "Football Club Internazionale Milano",
@@ -1684,15 +1794,30 @@
             "verification": "missing_evidence"
           },
           "2019-20": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Parma",
+            "league": "Serie A",
+            "appearances": 33,
+            "starts": 30,
+            "minutes": 2685,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "missing_evidence"
+            "source": "https://www.bdfutbol.com/en/t/t2019-203013.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2019-203013.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Parma",
+                "league": "Serie A",
+                "starts": 30,
+                "appearances": 33,
+                "minutes": 2685,
+                "goals": 1,
+                "source": "https://www.bdfutbol.com/en/t/t2019-203013.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2020-21": {
             "club": "Football Club Internazionale Milano",
@@ -1997,15 +2122,30 @@
         "weighting": "2020-21 55%, 2019-20 30%, 2018-19 15%, qualitative",
         "records": {
           "2018-19": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Inter",
+            "league": "Serie A",
+            "appearances": 19,
+            "starts": 13,
+            "minutes": 1085,
+            "goals": 5,
             "assists": null,
-            "source": null,
-            "verification": "missing_evidence"
+            "source": "https://www.bdfutbol.com/en/t/t2018-193008.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2018-193008.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Inter",
+                "league": "Serie A",
+                "starts": 13,
+                "appearances": 19,
+                "minutes": 1085,
+                "goals": 5,
+                "source": "https://www.bdfutbol.com/en/t/t2018-193008.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2019-20": {
             "club": "Football Club Internazionale Milano",
@@ -2351,7 +2491,11 @@
             "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2020-213015.html",
-            "verification": "manual_BDFutbol_current_2020_21_PM_SM_Min_G"
+            "verification": "manual_BDFutbol_current_2020_21_PM_SM_Min_G",
+            "goalsAgainst": 38,
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2020-213015.html"
+            ]
           }
         },
         "tierReason": "37경기 37선발, 시즌 공식 최우수 골키퍼, 다년간 높은 선방 지속성. 앞선 두 시즌: 2018-19 36경기/0골(독립 출처 대조); 2019-20 36경기/0골(미승인 자료). 2020-21 55%, 2019-20 30%, 2018-19 15% 순으로 평가하며 팀 우승/순위 자체는 개인 가산점 제외. 미연결 수치는 0점으로 취급하지 않음. A+ DRAFT.",
@@ -2361,7 +2505,8 @@
       "assessmentRationale": "37경기 37선발, 시즌 공식 최우수 골키퍼, 다년간 높은 선방 지속성. 앞선 두 시즌: 2018-19 36경기/0골(독립 출처 대조); 2019-20 36경기/0골(미승인 자료). 2020-21 55%, 2019-20 30%, 2018-19 15% 순으로 평가하며 팀 우승/순위 자체는 개인 가산점 제외. 미연결 수치는 0점으로 취급하지 않음. A+ DRAFT.",
       "evaluationStatus": "provisional_tier_draft_unapproved",
       "gradeEvidenceStatus": "some_individual_3season_stats_now_external_crosschecked_performance_peer_audit_pending",
-      "rankStatus": "provisional_ordinal_in_position"
+      "rankStatus": "provisional_ordinal_in_position",
+      "leagueGoalsAgainst": 38
     },
     {
       "id": "seriea-2020-21-milan-cipriantatarusanu",
@@ -2432,7 +2577,11 @@
             "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2020-213015.html",
-            "verification": "manual_BDFutbol_current_2020_21_PM_SM_Min_G"
+            "verification": "manual_BDFutbol_current_2020_21_PM_SM_Min_G",
+            "goalsAgainst": 3,
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2020-213015.html"
+            ]
           }
         },
         "tierReason": "1경기 1선발 90분 0골. 선방·박스 통제의 개인 기여를 평가. 앞선 두 시즌: 2018-19 미연결; 2019-20 미연결. 2020-21 55%, 2019-20 30%, 2018-19 15% 순으로 평가하며 팀 우승/순위 자체는 개인 가산점 제외. 미연결 수치는 0점으로 취급하지 않음. C+ DRAFT.",
@@ -2442,7 +2591,8 @@
       "assessmentRationale": "1경기 1선발 90분 0골. 선방·박스 통제의 개인 기여를 평가. 앞선 두 시즌: 2018-19 미연결; 2019-20 미연결. 2020-21 55%, 2019-20 30%, 2018-19 15% 순으로 평가하며 팀 우승/순위 자체는 개인 가산점 제외. 미연결 수치는 0점으로 취급하지 않음. C+ DRAFT.",
       "evaluationStatus": "provisional_tier_draft_unapproved",
       "gradeEvidenceStatus": "individual_role_grade_draft_three_year_peer_audit_pending",
-      "rankStatus": "provisional_ordinal_in_position"
+      "rankStatus": "provisional_ordinal_in_position",
+      "leagueGoalsAgainst": 3
     },
     {
       "id": "seriea-2020-21-milan-simonkjr",
@@ -2564,15 +2714,30 @@
         "weighting": "2020-21 55%, 2019-20 30%, 2018-19 15%, qualitative",
         "records": {
           "2018-19": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Milan",
+            "league": "Serie A",
+            "appearances": 32,
+            "starts": 32,
+            "minutes": 2849,
+            "goals": 2,
             "assists": null,
-            "source": null,
-            "verification": "missing_evidence"
+            "source": "https://www.bdfutbol.com/en/t/t2018-193015.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2018-193015.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Milan",
+                "league": "Serie A",
+                "starts": 32,
+                "appearances": 32,
+                "minutes": 2849,
+                "goals": 2,
+                "source": "https://www.bdfutbol.com/en/t/t2018-193015.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2019-20": {
             "club": "Associazione Calcio Milan",
@@ -2888,15 +3053,30 @@
         "weighting": "2020-21 55%, 2019-20 30%, 2018-19 15%, qualitative",
         "records": {
           "2018-19": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Milan",
+            "league": "Serie A",
+            "appearances": 26,
+            "starts": 22,
+            "minutes": 1954,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "missing_evidence"
+            "source": "https://www.bdfutbol.com/en/t/t2018-193015.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2018-193015.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Milan",
+                "league": "Serie A",
+                "starts": 22,
+                "appearances": 26,
+                "minutes": 1954,
+                "goals": 1,
+                "source": "https://www.bdfutbol.com/en/t/t2018-193015.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2019-20": {
             "club": "Associazione Calcio Milan",
@@ -3050,15 +3230,30 @@
         "weighting": "2020-21 55%, 2019-20 30%, 2018-19 15%, qualitative",
         "records": {
           "2018-19": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Empoli",
+            "league": "Serie A",
+            "appearances": 37,
+            "starts": 32,
+            "minutes": 2960,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "missing_evidence"
+            "source": "https://www.bdfutbol.com/en/t/t2018-193025.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2018-193025.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Empoli",
+                "league": "Serie A",
+                "starts": 32,
+                "appearances": 37,
+                "minutes": 2960,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2018-193025.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2019-20": {
             "club": "Associazione Calcio Milan",
@@ -3142,15 +3337,30 @@
             "verification": "missing_evidence"
           },
           "2019-20": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Brescia",
+            "league": "Serie A",
+            "appearances": 35,
+            "starts": 34,
+            "minutes": 3019,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "missing_evidence"
+            "source": "https://www.bdfutbol.com/en/t/t2019-203006.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2019-203006.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Brescia",
+                "league": "Serie A",
+                "starts": 34,
+                "appearances": 35,
+                "minutes": 3019,
+                "goals": 1,
+                "source": "https://www.bdfutbol.com/en/t/t2019-203006.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2020-21": {
             "club": "Associazione Calcio Milan",
@@ -3212,15 +3422,30 @@
         "weighting": "2020-21 55%, 2019-20 30%, 2018-19 15%, qualitative",
         "records": {
           "2018-19": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Milan",
+            "league": "Serie A",
+            "appearances": 34,
+            "starts": 34,
+            "minutes": 3021,
+            "goals": 7,
             "assists": null,
-            "source": null,
-            "verification": "missing_evidence"
+            "source": "https://www.bdfutbol.com/en/t/t2018-193015.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2018-193015.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Milan",
+                "league": "Serie A",
+                "starts": 34,
+                "appearances": 34,
+                "minutes": 3021,
+                "goals": 7,
+                "source": "https://www.bdfutbol.com/en/t/t2018-193015.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2019-20": {
             "club": "Associazione Calcio Milan",
@@ -3293,26 +3518,56 @@
         "weighting": "2020-21 55%, 2019-20 30%, 2018-19 15%, qualitative",
         "records": {
           "2018-19": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Empoli",
+            "league": "Serie A",
+            "appearances": 33,
+            "starts": 33,
+            "minutes": 2784,
+            "goals": 5,
             "assists": null,
-            "source": null,
-            "verification": "missing_evidence"
+            "source": "https://www.bdfutbol.com/en/t/t2018-193025.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2018-193025.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Empoli",
+                "league": "Serie A",
+                "starts": 33,
+                "appearances": 33,
+                "minutes": 2784,
+                "goals": 5,
+                "source": "https://www.bdfutbol.com/en/t/t2018-193025.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2019-20": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Milan",
+            "league": "Serie A",
+            "appearances": 15,
+            "starts": 4,
+            "minutes": 529,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "missing_evidence"
+            "source": "https://www.bdfutbol.com/en/t/t2019-203015.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2019-203015.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Milan",
+                "league": "Serie A",
+                "starts": 4,
+                "appearances": 15,
+                "minutes": 529,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2019-203015.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2020-21": {
             "club": "Associazione Calcio Milan",
@@ -3374,15 +3629,30 @@
         "weighting": "2020-21 55%, 2019-20 30%, 2018-19 15%, qualitative",
         "records": {
           "2018-19": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Milan",
+            "league": "Serie A",
+            "appearances": 36,
+            "starts": 34,
+            "minutes": 2898,
+            "goals": 3,
             "assists": null,
-            "source": null,
-            "verification": "missing_evidence"
+            "source": "https://www.bdfutbol.com/en/t/t2018-193015.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2018-193015.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Milan",
+                "league": "Serie A",
+                "starts": 34,
+                "appearances": 36,
+                "minutes": 2898,
+                "goals": 3,
+                "source": "https://www.bdfutbol.com/en/t/t2018-193015.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2019-20": {
             "club": "Associazione Calcio Milan",
@@ -3709,15 +3979,30 @@
             "verification": "missing_evidence"
           },
           "2019-20": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Milan",
+            "league": "Serie A",
+            "appearances": 13,
+            "starts": 6,
+            "minutes": 681,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "missing_evidence"
+            "source": "https://www.bdfutbol.com/en/t/t2019-203015.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2019-203015.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Milan",
+                "league": "Serie A",
+                "starts": 6,
+                "appearances": 13,
+                "minutes": 681,
+                "goals": 1,
+                "source": "https://www.bdfutbol.com/en/t/t2019-203015.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2020-21": {
             "club": "Associazione Calcio Milan",
@@ -3779,15 +4064,30 @@
         "weighting": "2020-21 55%, 2019-20 30%, 2018-19 15%, qualitative",
         "records": {
           "2018-19": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Milan",
+            "league": "Serie A",
+            "appearances": 31,
+            "starts": 8,
+            "minutes": 1006,
+            "goals": 4,
             "assists": null,
-            "source": null,
-            "verification": "missing_evidence"
+            "source": "https://www.bdfutbol.com/en/t/t2018-193015.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2018-193015.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Milan",
+                "league": "Serie A",
+                "starts": 8,
+                "appearances": 31,
+                "minutes": 1006,
+                "goals": 4,
+                "source": "https://www.bdfutbol.com/en/t/t2018-193015.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2019-20": {
             "club": "Associazione Calcio Milan",
@@ -3971,7 +4271,11 @@
             "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2020-213017.html",
-            "verification": "manual_BDFutbol_current_2020_21_PM_SM_Min_G"
+            "verification": "manual_BDFutbol_current_2020_21_PM_SM_Min_G",
+            "goalsAgainst": 26,
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2020-213017.html"
+            ]
           }
         },
         "tierReason": "25경기 25선발 2158분 0골. 선방·박스 통제의 개인 기여를 평가. 앞선 두 시즌: 2018-19 20경기/0골(미승인 자료); 2019-20 33경기/0골(미승인 자료). 2020-21 55%, 2019-20 30%, 2018-19 15% 순으로 평가하며 팀 우승/순위 자체는 개인 가산점 제외. 미연결 수치는 0점으로 취급하지 않음. B+ DRAFT.",
@@ -3981,7 +4285,8 @@
       "assessmentRationale": "25경기 25선발 2158분 0골. 선방·박스 통제의 개인 기여를 평가. 앞선 두 시즌: 2018-19 20경기/0골(미승인 자료); 2019-20 33경기/0골(미승인 자료). 2020-21 55%, 2019-20 30%, 2018-19 15% 순으로 평가하며 팀 우승/순위 자체는 개인 가산점 제외. 미연결 수치는 0점으로 취급하지 않음. B+ DRAFT.",
       "evaluationStatus": "provisional_tier_draft_unapproved",
       "gradeEvidenceStatus": "individual_role_grade_draft_three_year_peer_audit_pending",
-      "rankStatus": "provisional_ordinal_in_position"
+      "rankStatus": "provisional_ordinal_in_position",
+      "leagueGoalsAgainst": 26
     },
     {
       "id": "seriea-2020-21-atalanta-marcosportiello",
@@ -4022,15 +4327,31 @@
         "weighting": "2020-21 55%, 2019-20 30%, 2018-19 15%, qualitative",
         "records": {
           "2018-19": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
+            "club": "Frosinone",
+            "league": "Serie A",
+            "appearances": 35,
+            "starts": 35,
+            "minutes": 3150,
             "goals": null,
             "assists": null,
-            "source": null,
-            "verification": "missing_evidence"
+            "source": "https://www.bdfutbol.com/en/t/t2018-193048.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "goalsAgainst": 64,
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2018-193048.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Frosinone",
+                "league": "Serie A",
+                "starts": 35,
+                "appearances": 35,
+                "minutes": 3150,
+                "goalsAgainst": 64,
+                "source": "https://www.bdfutbol.com/en/t/t2018-193048.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2019-20": {
             "club": "Atalanta Bergamasca Calcio",
@@ -4052,7 +4373,11 @@
             "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2020-213017.html",
-            "verification": "manual_BDFutbol_current_2020_21_PM_SM_Min_G"
+            "verification": "manual_BDFutbol_current_2020_21_PM_SM_Min_G",
+            "goalsAgainst": 21,
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2020-213017.html"
+            ]
           }
         },
         "tierReason": "15경기 13선발 1259분 0골. 선방·박스 통제의 개인 기여를 평가. 앞선 두 시즌: 2018-19 미연결; 2019-20 6경기/0골(미승인 자료). 2020-21 55%, 2019-20 30%, 2018-19 15% 순으로 평가하며 팀 우승/순위 자체는 개인 가산점 제외. 미연결 수치는 0점으로 취급하지 않음. B+ DRAFT.",
@@ -4062,7 +4387,8 @@
       "assessmentRationale": "15경기 13선발 1259분 0골. 선방·박스 통제의 개인 기여를 평가. 앞선 두 시즌: 2018-19 미연결; 2019-20 6경기/0골(미승인 자료). 2020-21 55%, 2019-20 30%, 2018-19 15% 순으로 평가하며 팀 우승/순위 자체는 개인 가산점 제외. 미연결 수치는 0점으로 취급하지 않음. B+ DRAFT.",
       "evaluationStatus": "provisional_tier_draft_unapproved",
       "gradeEvidenceStatus": "individual_role_grade_draft_three_year_peer_audit_pending",
-      "rankStatus": "provisional_ordinal_in_position"
+      "rankStatus": "provisional_ordinal_in_position",
+      "leagueGoalsAgainst": 21
     },
     {
       "id": "seriea-2020-21-atalanta-cristianromero",
@@ -4994,26 +5320,56 @@
         "weighting": "2020-21 55%, 2019-20 30%, 2018-19 15%, qualitative",
         "records": {
           "2018-19": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Atalanta",
+            "league": "Serie A",
+            "appearances": 12,
+            "starts": 1,
+            "minutes": 229,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "missing_evidence"
+            "source": "https://www.bdfutbol.com/en/t/t2018-193017.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2018-193017.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Atalanta",
+                "league": "Serie A",
+                "starts": 1,
+                "appearances": 12,
+                "minutes": 229,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2018-193017.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2019-20": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hellas Verona",
+            "league": "Serie A",
+            "appearances": 35,
+            "starts": 27,
+            "minutes": 2487,
+            "goals": 7,
             "assists": null,
-            "source": null,
-            "verification": "missing_evidence"
+            "source": "https://www.bdfutbol.com/en/t/t2019-203002.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2019-203002.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Hellas Verona",
+                "league": "Serie A",
+                "starts": 27,
+                "appearances": 35,
+                "minutes": 2487,
+                "goals": 7,
+                "source": "https://www.bdfutbol.com/en/t/t2019-203002.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2020-21": {
             "club": "Atalanta Bergamasca Calcio",
@@ -5318,15 +5674,30 @@
         "weighting": "2020-21 55%, 2019-20 30%, 2018-19 15%, qualitative",
         "records": {
           "2018-19": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Fiorentina",
+            "league": "Serie A",
+            "appearances": 19,
+            "starts": 16,
+            "minutes": 1444,
+            "goals": 6,
             "assists": null,
-            "source": null,
-            "verification": "missing_evidence"
+            "source": "https://www.bdfutbol.com/en/t/t2018-193014.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2018-193014.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Fiorentina",
+                "league": "Serie A",
+                "starts": 16,
+                "appearances": 19,
+                "minutes": 1444,
+                "goals": 6,
+                "source": "https://www.bdfutbol.com/en/t/t2018-193014.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2019-20": {
             "club": "Atalanta Bergamasca Calcio",
@@ -5429,7 +5800,11 @@
             "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2020-213004.html",
-            "verification": "manual_BDFutbol_current_2020_21_PM_SM_Min_G"
+            "verification": "manual_BDFutbol_current_2020_21_PM_SM_Min_G",
+            "goalsAgainst": 32,
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2020-213004.html"
+            ]
           }
         },
         "tierReason": "30경기 30선발 2678분 0골. 선방·박스 통제의 개인 기여를 평가. 앞선 두 시즌: 2018-19 28경기/0골(미승인 자료); 2019-20 29경기/0골(미승인 자료). 2020-21 55%, 2019-20 30%, 2018-19 15% 순으로 평가하며 팀 우승/순위 자체는 개인 가산점 제외. 미연결 수치는 0점으로 취급하지 않음. A0 DRAFT.",
@@ -5439,7 +5814,8 @@
       "assessmentRationale": "30경기 30선발 2678분 0골. 선방·박스 통제의 개인 기여를 평가. 앞선 두 시즌: 2018-19 28경기/0골(미승인 자료); 2019-20 29경기/0골(미승인 자료). 2020-21 55%, 2019-20 30%, 2018-19 15% 순으로 평가하며 팀 우승/순위 자체는 개인 가산점 제외. 미연결 수치는 0점으로 취급하지 않음. A0 DRAFT.",
       "evaluationStatus": "provisional_tier_draft_unapproved",
       "gradeEvidenceStatus": "individual_role_grade_draft_three_year_peer_audit_pending",
-      "rankStatus": "provisional_ordinal_in_position"
+      "rankStatus": "provisional_ordinal_in_position",
+      "leagueGoalsAgainst": 32
     },
     {
       "id": "seriea-2020-21-juventus-gianluigibuffon",
@@ -5510,7 +5886,11 @@
             "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2020-213004.html",
-            "verification": "manual_BDFutbol_current_2020_21_PM_SM_Min_G"
+            "verification": "manual_BDFutbol_current_2020_21_PM_SM_Min_G",
+            "goalsAgainst": 5,
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2020-213004.html"
+            ]
           }
         },
         "tierReason": "8경기 8선발 720분 0골. 선방·박스 통제의 개인 기여를 평가. 앞선 두 시즌: 2018-19 미연결; 2019-20 9경기/0골(미승인 자료). 2020-21 55%, 2019-20 30%, 2018-19 15% 순으로 평가하며 팀 우승/순위 자체는 개인 가산점 제외. 미연결 수치는 0점으로 취급하지 않음. B0 DRAFT.",
@@ -5520,7 +5900,8 @@
       "assessmentRationale": "8경기 8선발 720분 0골. 선방·박스 통제의 개인 기여를 평가. 앞선 두 시즌: 2018-19 미연결; 2019-20 9경기/0골(미승인 자료). 2020-21 55%, 2019-20 30%, 2018-19 15% 순으로 평가하며 팀 우승/순위 자체는 개인 가산점 제외. 미연결 수치는 0점으로 취급하지 않음. B0 DRAFT.",
       "evaluationStatus": "provisional_tier_draft_unapproved",
       "gradeEvidenceStatus": "individual_role_grade_draft_three_year_peer_audit_pending",
-      "rankStatus": "provisional_ordinal_in_position"
+      "rankStatus": "provisional_ordinal_in_position",
+      "leagueGoalsAgainst": 5
     },
     {
       "id": "seriea-2020-21-juventus-matthijsdeligt",
@@ -5734,15 +6115,30 @@
             "verification": "linked_previous_unapproved_draft_independent_second_source_pending"
           },
           "2019-20": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Juventus",
+            "league": "Serie A",
+            "appearances": 4,
+            "starts": 3,
+            "minutes": 203,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "missing_evidence"
+            "source": "https://www.bdfutbol.com/en/t/t2019-203004.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2019-203004.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Juventus",
+                "league": "Serie A",
+                "starts": 3,
+                "appearances": 4,
+                "minutes": 203,
+                "goals": 1,
+                "source": "https://www.bdfutbol.com/en/t/t2019-203004.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2020-21": {
             "club": "Juventus Football Club",
@@ -6614,26 +7010,56 @@
         "weighting": "2020-21 55%, 2019-20 30%, 2018-19 15%, qualitative",
         "records": {
           "2018-19": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Atalanta",
+            "league": "Serie A",
+            "appearances": 3,
+            "starts": 0,
+            "minutes": 103,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "missing_evidence"
+            "source": "https://www.bdfutbol.com/en/t/t2018-193017.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2018-193017.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Atalanta",
+                "league": "Serie A",
+                "starts": 0,
+                "appearances": 3,
+                "minutes": 103,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2018-193017.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2019-20": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Parma",
+            "league": "Serie A",
+            "appearances": 36,
+            "starts": 33,
+            "minutes": 2937,
+            "goals": 10,
             "assists": null,
-            "source": null,
-            "verification": "missing_evidence"
+            "source": "https://www.bdfutbol.com/en/t/t2019-203013.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2019-203013.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Parma",
+                "league": "Serie A",
+                "starts": 33,
+                "appearances": 36,
+                "minutes": 2937,
+                "goals": 10,
+                "source": "https://www.bdfutbol.com/en/t/t2019-203013.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2020-21": {
             "club": "Juventus Football Club",
@@ -6968,7 +7394,11 @@
             "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2020-213003.html",
-            "verification": "manual_BDFutbol_current_2020_21_PM_SM_Min_G"
+            "verification": "manual_BDFutbol_current_2020_21_PM_SM_Min_G",
+            "goalsAgainst": 29,
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2020-213003.html"
+            ]
           }
         },
         "tierReason": "22경기 22선발 1980분 0골. 선방·박스 통제의 개인 기여를 평가. 앞선 두 시즌: 2018-19 14경기/0골(미승인 자료); 2019-20 22경기/0골(미승인 자료). 2020-21 55%, 2019-20 30%, 2018-19 15% 순으로 평가하며 팀 우승/순위 자체는 개인 가산점 제외. 미연결 수치는 0점으로 취급하지 않음. B+ DRAFT.",
@@ -6978,7 +7408,8 @@
       "assessmentRationale": "22경기 22선발 1980분 0골. 선방·박스 통제의 개인 기여를 평가. 앞선 두 시즌: 2018-19 14경기/0골(미승인 자료); 2019-20 22경기/0골(미승인 자료). 2020-21 55%, 2019-20 30%, 2018-19 15% 순으로 평가하며 팀 우승/순위 자체는 개인 가산점 제외. 미연결 수치는 0점으로 취급하지 않음. B+ DRAFT.",
       "evaluationStatus": "provisional_tier_draft_unapproved",
       "gradeEvidenceStatus": "individual_role_grade_draft_three_year_peer_audit_pending",
-      "rankStatus": "provisional_ordinal_in_position"
+      "rankStatus": "provisional_ordinal_in_position",
+      "leagueGoalsAgainst": 29
     },
     {
       "id": "seriea-2020-21-napoli-davidospina",
@@ -7049,7 +7480,11 @@
             "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2020-213003.html",
-            "verification": "manual_BDFutbol_current_2020_21_PM_SM_Min_G"
+            "verification": "manual_BDFutbol_current_2020_21_PM_SM_Min_G",
+            "goalsAgainst": 12,
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2020-213003.html"
+            ]
           }
         },
         "tierReason": "16경기 16선발 1440분 0골. 선방·박스 통제의 개인 기여를 평가. 앞선 두 시즌: 2018-19 17경기/0골(미승인 자료); 2019-20 17경기/0골(미승인 자료). 2020-21 55%, 2019-20 30%, 2018-19 15% 순으로 평가하며 팀 우승/순위 자체는 개인 가산점 제외. 미연결 수치는 0점으로 취급하지 않음. B+ DRAFT.",
@@ -7059,7 +7494,8 @@
       "assessmentRationale": "16경기 16선발 1440분 0골. 선방·박스 통제의 개인 기여를 평가. 앞선 두 시즌: 2018-19 17경기/0골(미승인 자료); 2019-20 17경기/0골(미승인 자료). 2020-21 55%, 2019-20 30%, 2018-19 15% 순으로 평가하며 팀 우승/순위 자체는 개인 가산점 제외. 미연결 수치는 0점으로 취급하지 않음. B+ DRAFT.",
       "evaluationStatus": "provisional_tier_draft_unapproved",
       "gradeEvidenceStatus": "individual_role_grade_draft_three_year_peer_audit_pending",
-      "rankStatus": "provisional_ordinal_in_position"
+      "rankStatus": "provisional_ordinal_in_position",
+      "leagueGoalsAgainst": 12
     },
     {
       "id": "seriea-2020-21-napoli-kostasmanolas",
@@ -7273,15 +7709,30 @@
             "verification": "missing_evidence"
           },
           "2019-20": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hellas Verona",
+            "league": "Serie A",
+            "appearances": 36,
+            "starts": 36,
+            "minutes": 3229,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "missing_evidence"
+            "source": "https://www.bdfutbol.com/en/t/t2019-203002.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2019-203002.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Hellas Verona",
+                "league": "Serie A",
+                "starts": 36,
+                "appearances": 36,
+                "minutes": 3229,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2019-203002.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2020-21": {
             "club": "Società Sportiva Calcio Napoli",
@@ -7505,15 +7956,30 @@
         "weighting": "2020-21 55%, 2019-20 30%, 2018-19 15%, qualitative",
         "records": {
           "2018-19": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Empoli",
+            "league": "Serie A",
+            "appearances": 37,
+            "starts": 37,
+            "minutes": 3330,
+            "goals": 5,
             "assists": null,
-            "source": null,
-            "verification": "missing_evidence"
+            "source": "https://www.bdfutbol.com/en/t/t2018-193025.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2018-193025.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Empoli",
+                "league": "Serie A",
+                "starts": 37,
+                "appearances": 37,
+                "minutes": 3330,
+                "goals": 5,
+                "source": "https://www.bdfutbol.com/en/t/t2018-193025.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2019-20": {
             "club": "Società Sportiva Calcio Napoli",
@@ -7586,15 +8052,30 @@
         "weighting": "2020-21 55%, 2019-20 30%, 2018-19 15%, qualitative",
         "records": {
           "2018-19": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Milan",
+            "league": "Serie A",
+            "appearances": 31,
+            "starts": 26,
+            "minutes": 2301,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "missing_evidence"
+            "source": "https://www.bdfutbol.com/en/t/t2018-193015.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2018-193015.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Milan",
+                "league": "Serie A",
+                "starts": 26,
+                "appearances": 31,
+                "minutes": 2301,
+                "goals": 1,
+                "source": "https://www.bdfutbol.com/en/t/t2018-193015.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2019-20": {
             "club": null,
@@ -8396,26 +8877,58 @@
         "weighting": "2020-21 55%, 2019-20 30%, 2018-19 15%, qualitative",
         "records": {
           "2018-19": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
+            "club": "Milan",
+            "league": "Serie A",
+            "appearances": 4,
+            "starts": 2,
+            "minutes": 328,
             "goals": null,
             "assists": null,
-            "source": null,
-            "verification": "missing_evidence"
+            "source": "https://www.bdfutbol.com/en/t/t2018-193015.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "goalsAgainst": 5,
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2018-193015.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Milan",
+                "league": "Serie A",
+                "starts": 2,
+                "appearances": 4,
+                "minutes": 328,
+                "goalsAgainst": 5,
+                "source": "https://www.bdfutbol.com/en/t/t2018-193015.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2019-20": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
+            "club": "Milan",
+            "league": "Serie A",
+            "appearances": 1,
+            "starts": 1,
+            "minutes": 90,
             "goals": null,
             "assists": null,
-            "source": null,
-            "verification": "missing_evidence"
+            "source": "https://www.bdfutbol.com/en/t/t2019-203015.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "goalsAgainst": 1,
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2019-203015.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Milan",
+                "league": "Serie A",
+                "starts": 1,
+                "appearances": 1,
+                "minutes": 90,
+                "goalsAgainst": 1,
+                "source": "https://www.bdfutbol.com/en/t/t2019-203015.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2020-21": {
             "club": "Società Sportiva Lazio",
@@ -8426,7 +8939,11 @@
             "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2020-213018.html",
-            "verification": "manual_BDFutbol_current_2020_21_PM_SM_Min_G"
+            "verification": "manual_BDFutbol_current_2020_21_PM_SM_Min_G",
+            "goalsAgainst": 41,
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2020-213018.html"
+            ]
           }
         },
         "tierReason": "29경기 29선발 2610분 0골. 선방·박스 통제의 개인 기여를 평가. 앞선 두 시즌: 2018-19 미연결; 2019-20 미연결. 2020-21 55%, 2019-20 30%, 2018-19 15% 순으로 평가하며 팀 우승/순위 자체는 개인 가산점 제외. 미연결 수치는 0점으로 취급하지 않음. B+ DRAFT.",
@@ -8436,7 +8953,8 @@
       "assessmentRationale": "29경기 29선발 2610분 0골. 선방·박스 통제의 개인 기여를 평가. 앞선 두 시즌: 2018-19 미연결; 2019-20 미연결. 2020-21 55%, 2019-20 30%, 2018-19 15% 순으로 평가하며 팀 우승/순위 자체는 개인 가산점 제외. 미연결 수치는 0점으로 취급하지 않음. B+ DRAFT.",
       "evaluationStatus": "provisional_tier_draft_unapproved",
       "gradeEvidenceStatus": "individual_role_grade_draft_three_year_peer_audit_pending",
-      "rankStatus": "provisional_ordinal_in_position"
+      "rankStatus": "provisional_ordinal_in_position",
+      "leagueGoalsAgainst": 41
     },
     {
       "id": "seriea-2020-21-lazio-thomasstrakosha",
@@ -8507,7 +9025,11 @@
             "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2020-213018.html",
-            "verification": "manual_BDFutbol_current_2020_21_PM_SM_Min_G"
+            "verification": "manual_BDFutbol_current_2020_21_PM_SM_Min_G",
+            "goalsAgainst": 14,
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2020-213018.html"
+            ]
           }
         },
         "tierReason": "9경기 9선발 810분 0골. 선방·박스 통제의 개인 기여를 평가. 앞선 두 시즌: 2018-19 35경기/0골(미승인 자료); 2019-20 38경기/0골(미승인 자료). 2020-21 55%, 2019-20 30%, 2018-19 15% 순으로 평가하며 팀 우승/순위 자체는 개인 가산점 제외. 미연결 수치는 0점으로 취급하지 않음. B0 DRAFT.",
@@ -8517,7 +9039,8 @@
       "assessmentRationale": "9경기 9선발 810분 0골. 선방·박스 통제의 개인 기여를 평가. 앞선 두 시즌: 2018-19 35경기/0골(미승인 자료); 2019-20 38경기/0골(미승인 자료). 2020-21 55%, 2019-20 30%, 2018-19 15% 순으로 평가하며 팀 우승/순위 자체는 개인 가산점 제외. 미연결 수치는 0점으로 취급하지 않음. B0 DRAFT.",
       "evaluationStatus": "provisional_tier_draft_unapproved",
       "gradeEvidenceStatus": "individual_role_grade_draft_three_year_peer_audit_pending",
-      "rankStatus": "provisional_ordinal_in_position"
+      "rankStatus": "provisional_ordinal_in_position",
+      "leagueGoalsAgainst": 14
     },
     {
       "id": "seriea-2020-21-lazio-francescoacerbi",
@@ -8720,15 +9243,30 @@
         "weighting": "2020-21 55%, 2019-20 30%, 2018-19 15%, qualitative",
         "records": {
           "2018-19": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Lazio",
+            "league": "Serie A",
+            "appearances": 15,
+            "starts": 12,
+            "minutes": 1085,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "missing_evidence"
+            "source": "https://www.bdfutbol.com/en/t/t2018-193018.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2018-193018.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Lazio",
+                "league": "Serie A",
+                "starts": 12,
+                "appearances": 15,
+                "minutes": 1085,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2018-193018.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2019-20": {
             "club": "Società Sportiva Lazio",
@@ -8963,26 +9501,56 @@
         "weighting": "2020-21 55%, 2019-20 30%, 2018-19 15%, qualitative",
         "records": {
           "2018-19": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "SPAL",
+            "league": "Serie A",
+            "appearances": 35,
+            "starts": 32,
+            "minutes": 2947,
+            "goals": 3,
             "assists": null,
-            "source": null,
-            "verification": "missing_evidence"
+            "source": "https://www.bdfutbol.com/en/t/t2018-193051.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2018-193051.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "SPAL",
+                "league": "Serie A",
+                "starts": 32,
+                "appearances": 35,
+                "minutes": 2947,
+                "goals": 3,
+                "source": "https://www.bdfutbol.com/en/t/t2018-193051.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2019-20": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "SPAL",
+            "league": "Serie A",
+            "appearances": 8,
+            "starts": 5,
+            "minutes": 421,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "missing_evidence"
+            "source": "https://www.bdfutbol.com/en/t/t2019-203051.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2019-203051.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "SPAL",
+                "league": "Serie A",
+                "starts": 5,
+                "appearances": 8,
+                "minutes": 421,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2019-203051.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2020-21": {
             "club": "Società Sportiva Lazio",
@@ -9044,15 +9612,30 @@
         "weighting": "2020-21 55%, 2019-20 30%, 2018-19 15%, qualitative",
         "records": {
           "2018-19": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "SPAL",
+            "league": "Serie A",
+            "appearances": 33,
+            "starts": 33,
+            "minutes": 2842,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "missing_evidence"
+            "source": "https://www.bdfutbol.com/en/t/t2018-193051.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2018-193051.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "SPAL",
+                "league": "Serie A",
+                "starts": 33,
+                "appearances": 33,
+                "minutes": 2842,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2018-193051.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2019-20": {
             "club": "Società Sportiva Lazio",
@@ -9803,7 +10386,11 @@
             "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2020-213009.html",
-            "verification": "manual_BDFutbol_current_2020_21_PM_SM_Min_G"
+            "verification": "manual_BDFutbol_current_2020_21_PM_SM_Min_G",
+            "goalsAgainst": 29,
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2020-213009.html"
+            ]
           }
         },
         "tierReason": "21경기 20선발 1816분 0골. 선방·박스 통제의 개인 기여를 평가. 앞선 두 시즌: 2018-19 미연결; 2019-20 32경기/0골(미승인 자료). 2020-21 55%, 2019-20 30%, 2018-19 15% 순으로 평가하며 팀 우승/순위 자체는 개인 가산점 제외. 미연결 수치는 0점으로 취급하지 않음. B0 DRAFT.",
@@ -9813,7 +10400,8 @@
       "assessmentRationale": "21경기 20선발 1816분 0골. 선방·박스 통제의 개인 기여를 평가. 앞선 두 시즌: 2018-19 미연결; 2019-20 32경기/0골(미승인 자료). 2020-21 55%, 2019-20 30%, 2018-19 15% 순으로 평가하며 팀 우승/순위 자체는 개인 가산점 제외. 미연결 수치는 0점으로 취급하지 않음. B0 DRAFT.",
       "evaluationStatus": "provisional_tier_draft_unapproved",
       "gradeEvidenceStatus": "individual_role_grade_draft_three_year_peer_audit_pending",
-      "rankStatus": "provisional_ordinal_in_position"
+      "rankStatus": "provisional_ordinal_in_position",
+      "leagueGoalsAgainst": 29
     },
     {
       "id": "seriea-2020-21-roma-antoniomirante",
@@ -9884,7 +10472,11 @@
             "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2020-213009.html",
-            "verification": "manual_BDFutbol_current_2020_21_PM_SM_Min_G"
+            "verification": "manual_BDFutbol_current_2020_21_PM_SM_Min_G",
+            "goalsAgainst": 19,
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2020-213009.html"
+            ]
           }
         },
         "tierReason": "13경기 13선발 1154분 0골. 선방·박스 통제의 개인 기여를 평가. 앞선 두 시즌: 2018-19 11경기/0골(미승인 자료); 2019-20 5경기/0골(미승인 자료). 2020-21 55%, 2019-20 30%, 2018-19 15% 순으로 평가하며 팀 우승/순위 자체는 개인 가산점 제외. 미연결 수치는 0점으로 취급하지 않음. B0 DRAFT.",
@@ -9894,7 +10486,8 @@
       "assessmentRationale": "13경기 13선발 1154분 0골. 선방·박스 통제의 개인 기여를 평가. 앞선 두 시즌: 2018-19 11경기/0골(미승인 자료); 2019-20 5경기/0골(미승인 자료). 2020-21 55%, 2019-20 30%, 2018-19 15% 순으로 평가하며 팀 우승/순위 자체는 개인 가산점 제외. 미연결 수치는 0점으로 취급하지 않음. B0 DRAFT.",
       "evaluationStatus": "provisional_tier_draft_unapproved",
       "gradeEvidenceStatus": "individual_role_grade_draft_three_year_peer_audit_pending",
-      "rankStatus": "provisional_ordinal_in_position"
+      "rankStatus": "provisional_ordinal_in_position",
+      "leagueGoalsAgainst": 19
     },
     {
       "id": "seriea-2020-21-roma-gianlucamancini",
@@ -10016,26 +10609,56 @@
         "weighting": "2020-21 55%, 2019-20 30%, 2018-19 15%, qualitative",
         "records": {
           "2018-19": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Atalanta",
+            "league": "Serie A",
+            "appearances": 1,
+            "starts": 0,
+            "minutes": 1,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "missing_evidence"
+            "source": "https://www.bdfutbol.com/en/t/t2018-193017.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2018-193017.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Atalanta",
+                "league": "Serie A",
+                "starts": 0,
+                "appearances": 1,
+                "minutes": 1,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2018-193017.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2019-20": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Roma",
+            "league": "Serie A",
+            "appearances": 9,
+            "starts": 7,
+            "minutes": 615,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "missing_evidence"
+            "source": "https://www.bdfutbol.com/en/t/t2019-203009.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2019-203009.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Roma",
+                "league": "Serie A",
+                "starts": 7,
+                "appearances": 9,
+                "minutes": 615,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2019-203009.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2020-21": {
             "club": "Associazione Sportiva Roma",
@@ -10189,15 +10812,30 @@
             "verification": "missing_evidence"
           },
           "2019-20": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hellas Verona",
+            "league": "Serie A",
+            "appearances": 25,
+            "starts": 25,
+            "minutes": 1958,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "missing_evidence"
+            "source": "https://www.bdfutbol.com/en/t/t2019-203002.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2019-203002.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Hellas Verona",
+                "league": "Serie A",
+                "starts": 25,
+                "appearances": 25,
+                "minutes": 1958,
+                "goals": 1,
+                "source": "https://www.bdfutbol.com/en/t/t2019-203002.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2020-21": {
             "club": "Associazione Sportiva Roma",
@@ -10513,15 +11151,30 @@
             "verification": "missing_evidence"
           },
           "2019-20": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Roma",
+            "league": "Serie A",
+            "appearances": 9,
+            "starts": 2,
+            "minutes": 293,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "missing_evidence"
+            "source": "https://www.bdfutbol.com/en/t/t2019-203009.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2019-203009.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Roma",
+                "league": "Serie A",
+                "starts": 2,
+                "appearances": 9,
+                "minutes": 293,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2019-203009.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2020-21": {
             "club": "Associazione Sportiva Roma",
@@ -10664,15 +11317,30 @@
         "weighting": "2020-21 55%, 2019-20 30%, 2018-19 15%, qualitative",
         "records": {
           "2018-19": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Fiorentina",
+            "league": "Serie A",
+            "appearances": 33,
+            "starts": 33,
+            "minutes": 2944,
+            "goals": 5,
             "assists": null,
-            "source": null,
-            "verification": "missing_evidence"
+            "source": "https://www.bdfutbol.com/en/t/t2018-193014.html",
+            "verification": "audit_report_BDFutbol_club_rows_transcribed_secondary_scope_review_pending",
+            "auditSources": [
+              "https://www.bdfutbol.com/en/t/t2018-193014.html"
+            ],
+            "clubRecords": [
+              {
+                "club": "Fiorentina",
+                "league": "Serie A",
+                "starts": 33,
+                "appearances": 33,
+                "minutes": 2944,
+                "goals": 5,
+                "source": "https://www.bdfutbol.com/en/t/t2018-193014.html",
+                "statsScope": "club-specific Serie A regular season"
+              }
+            ]
           },
           "2019-20": {
             "club": "Associazione Sportiva Roma",

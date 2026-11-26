@@ -18,7 +18,10 @@ check(d.qualifiers.length===7,"exactly seven entrants");
 const qids=new Set();
 for(const q of d.qualifiers){check(qualifiers[q.club]===q.competition,"ineligible club "+q.club);check(!qids.has(q.club),"duplicate qualifier "+q.club);qids.add(q.club)}
 check(Object.keys(qualifiers).every(x=>qids.has(x)),"missing eligible team");
-check(d.players.length===131&&d.meta.candidateCount===d.players.length,"candidate count mismatch");
+check(d.players.length===130&&d.meta.candidateCount===d.players.length,"candidate count mismatch after verified ineligible Ibrahim Sulemana removal");
+check(!d.players.some(p=>p.id==="seriea-2025-26-atalanta-ibrahimsulemana"),"ineligible Ibrahim Sulemana must not be a candidate");
+check(d.meta.segment3Audit?.identitySeparation?.kamaldeen?.id==="seriea-2025-26-atalanta-kamaldeensulemana","distinct Kamaldeen identity audit missing");
+check(!d.players.some(p=>p.club==="atalanta"&&p.position==="CM"&&p.role==="backup"),"Atalanta CM backup must remain vacant pending verification");
 const ids=new Set();
 for(const p of d.players){
  check(!ids.has(p.id),"duplicate id "+p.id);ids.add(p.id);
