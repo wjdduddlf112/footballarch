@@ -81,7 +81,7 @@ async function load(){
    const earlier=new Map((data.standings||[]).map(r=>[r.club,r]));
    const verifiedEuropean=(verified.europeanParticipationStatus||"").startsWith("verified");const trustedSeasonQualifiers=Boolean(seasonData?.meta?.europeanQualificationVerified&&(seasonData.qualifiers||[]).length);const curatedEuropean=verifiedEuropean||(!trustedSeasonQualifiers&&["seriea","bundesliga"].includes(st.league));
    const european=verified.europeanParticipation||{};
-   data.standings=verified.standings.map(r=>({...r,competition:curatedEuropean?(european[r.club]||null):(earlier.get(r.club)?.competition||null)}));
+   data.standings=verified.standings.map(r=>({...r,...(r.outcome==='retained'&&r.relegationPlayoff===true&&earlier.get(r.club)?.relegationPlayoffResult?.result==='won'?{relegationPlayoffResult:earlier.get(r.club).relegationPlayoffResult}:{}),competition:curatedEuropean?(european[r.club]||null):(earlier.get(r.club)?.competition||null)}));
    if(curatedEuropean){
     data.qualifiers=Object.entries(european).map(([club,competition])=>({club,competition,route:verified.europeanParticipationNotes?.[club]||""}));
     data.meta.europeanQualificationVerified=verifiedEuropean;
