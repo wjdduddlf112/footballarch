@@ -34,6 +34,8 @@ export function verifySerieA(archive,referenceFiles){
   if(rank.size!==n||seen.size!==n||W!==L||GF!==GA)errors.push(season+": league-wide rank/match total mismatch");
   const demoted=rows.filter(r=>r.outcome==="relegated"||r.outcome==="relegated_administrative");
   if(demoted.length!==(y<=2003?4:3))errors.push(season+": relegation count incorrect");
+  if(season==="2000-01"&&(!demoted.some(x=>x.club==="reggina")||demoted.some(x=>x.club==="verona")))errors.push("2000-01 play-off relegation failed");
+  if(season==="2002-03"&&(!demoted.some(x=>x.club==="atalanta")||demoted.some(x=>x.club==="reggina")))errors.push("2002-03 play-off relegation failed");
   if(season==="2004-05"&&!demoted.some(x=>x.club==="bologna")||season==="2004-05"&&demoted.some(x=>x.club==="parma"))errors.push("2004-05 play-off relegation failed");
   if(season==="2005-06"&&!demoted.some(x=>x.club==="juventus"&&x.outcome==="relegated_administrative"))errors.push("2005-06 Calciopoli failed");
   const q=Object.entries(rec.europeanParticipation||{}),uniq=new Set(q.map(([id])=>id));
