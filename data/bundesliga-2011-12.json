@@ -37,7 +37,8 @@
     "bestXiReview": {
       "status": "proposed_unapproved",
       "formation": "4-2-3-1",
-      "method": "actual season individual contribution prioritized, historical role fit; no team trophy bonus"
+      "method": "actual season individual contribution prioritized, historical role fit; no team trophy bonus",
+      "segment2Method": "current-season first, prior two seasons secondary; provisional comparison, team success not scored"
     },
     "tierSummary": {
       "S": 2,
@@ -801,7 +802,10 @@
             "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2009-101003.html",
-            "verification": "prior_Football_Archive_DRAFT_not_independently_revalidated"
+            "verification": "prior_Football_Archive_DRAFT_not_independently_revalidated",
+            "goalsConceded": 30,
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2009-101003.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2010-11": {
             "club": "BV 09 Borussia Dortmund",
@@ -811,7 +815,10 @@
             "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2010-111003.html",
-            "verification": "prior_Football_Archive_DRAFT_not_independently_revalidated"
+            "verification": "prior_Football_Archive_DRAFT_not_independently_revalidated",
+            "goalsConceded": 21,
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2010-111003.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2011-12": {
             "club": "BV 09 Borussia Dortmund",
@@ -821,7 +828,8 @@
             "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2011-121003.html",
-            "verification": "currentSeason_BDFutbol_squad_table_directly_checked"
+            "verification": "currentSeason_BDFutbol_squad_table_directly_checked",
+            "goalsConceded": 22
           }
         },
         "status": "2011_12_current_year_direct_squad_prior_2_years_mixed_archived_DRAFT_or_pending"
@@ -834,7 +842,41 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "leagueGoalsConceded": 22,
+      "segment2Audit": {
+        "goalkeeper": [
+          {
+            "season": "2011-12",
+            "club": "BV 09 Borussia Dortmund",
+            "goals": 0,
+            "goalsConceded": 22,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2011-121003.html"
+            ]
+          }
+        ],
+        "priorClubRecords": [
+          {
+            "season": "2009-10",
+            "club": "Borussia Dortmund",
+            "goalsConceded": 30,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2009-101003.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2010-11",
+            "club": "Borussia Dortmund",
+            "goalsConceded": 21,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2010-111003.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-dortmund-mitchell-langerak",
@@ -900,7 +942,10 @@
             "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2010-111003.html",
-            "verification": "prior_Football_Archive_DRAFT_not_independently_revalidated"
+            "verification": "prior_Football_Archive_DRAFT_not_independently_revalidated",
+            "goalsConceded": 1,
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2010-111003.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2011-12": {
             "club": "BV 09 Borussia Dortmund",
@@ -910,7 +955,8 @@
             "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2011-121003.html",
-            "verification": "currentSeason_BDFutbol_squad_table_directly_checked"
+            "verification": "currentSeason_BDFutbol_squad_table_directly_checked",
+            "goalsConceded": 3
           }
         },
         "status": "2011_12_current_year_direct_squad_prior_2_years_mixed_archived_DRAFT_or_pending"
@@ -923,7 +969,32 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "leagueGoalsConceded": 3,
+      "segment2Audit": {
+        "goalkeeper": [
+          {
+            "season": "2011-12",
+            "club": "BV 09 Borussia Dortmund",
+            "goals": 0,
+            "goalsConceded": 3,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2011-121003.html"
+            ]
+          }
+        ],
+        "priorClubRecords": [
+          {
+            "season": "2010-11",
+            "club": "Borussia Dortmund",
+            "goalsConceded": 1,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2010-111003.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-dortmund-mats-hummels",
@@ -1554,7 +1625,23 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "reviewPending": [
+          {
+            "section": "4선발 이하 후보 자격 재검토 (9행)",
+            "report": [
+              "RB",
+              "backup",
+              "2",
+              "11"
+            ],
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2011-121003.html"
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-dortmund-sebastian-kehl",
@@ -1613,14 +1700,16 @@
             "verification": "prior_Football_Archive_DRAFT_not_independently_revalidated"
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Borussia Dortmund",
+            "appearances": 6,
+            "starts": 3,
+            "minutes": 229,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2010-111003.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2010-111003.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2011-12": {
             "club": "BV 09 Borussia Dortmund",
@@ -1643,7 +1732,23 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2010-11",
+            "club": "Borussia Dortmund",
+            "appearances": 6,
+            "starts": 3,
+            "minutes": 229,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2010-111003.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-dortmund-sven-bender",
@@ -1781,24 +1886,28 @@
         "weighting": "2011-12 highest; 2010-11 medium; 2009-10 least; no team trophy bonus",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Nürnberg",
+            "appearances": 22,
+            "starts": 19,
+            "minutes": 1612,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2009-101005.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2009-101005.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Nürnberg",
+            "appearances": 25,
+            "starts": 21,
+            "minutes": 1827,
+            "goals": 5,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2010-111005.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2010-111005.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2011-12": {
             "club": "BV 09 Borussia Dortmund",
@@ -1821,7 +1930,35 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2009-10",
+            "club": "Nürnberg",
+            "appearances": 22,
+            "starts": 19,
+            "minutes": 1612,
+            "goals": 1,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2009-101005.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2010-11",
+            "club": "Nürnberg",
+            "appearances": 25,
+            "starts": 21,
+            "minutes": 1827,
+            "goals": 5,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2010-111005.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-dortmund-moritz-leitner",
@@ -1909,7 +2046,23 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "reviewPending": [
+          {
+            "section": "4선발 이하 후보 자격 재검토 (9행)",
+            "report": [
+              "CM",
+              "backup",
+              "2",
+              "17"
+            ],
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2011-121003.html"
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-dortmund-shinji-kagawa",
@@ -2048,14 +2201,16 @@
         "weighting": "2011-12 highest; 2010-11 medium; 2009-10 least; no team trophy bonus",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Borussia Dortmund",
+            "appearances": 5,
+            "starts": 0,
+            "minutes": 42,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2009-101003.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2009-101003.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2010-11": {
             "club": "BV 09 Borussia Dortmund",
@@ -2088,7 +2243,23 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2009-10",
+            "club": "Borussia Dortmund",
+            "appearances": 5,
+            "starts": 0,
+            "minutes": 42,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2009-101003.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-dortmund-kevin-gro-kreutz",
@@ -2382,7 +2553,7 @@
       "goals2011": 22,
       "assists2011": null,
       "tier": "A+",
-      "rank": 1,
+      "rank": 2,
       "rankStatus": "provisional",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -2535,7 +2706,23 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "reviewPending": [
+          {
+            "section": "4선발 이하 후보 자격 재검토 (9행)",
+            "report": [
+              "ST",
+              "backup",
+              "3",
+              "18"
+            ],
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2011-121003.html"
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-bayern-manuel-neuer",
@@ -2593,7 +2780,10 @@
             "goals": 0,
             "assists": null,
             "source": "https://datencenter.dfb.de/en/people/manuel-neuer/player",
-            "verification": "independent_DFB_individual_league_appearances_goals"
+            "verification": "independent_DFB_individual_league_appearances_goals",
+            "goalsConceded": 31,
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2009-101006.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2010-11": {
             "club": "FC Schalke 04",
@@ -2603,7 +2793,10 @@
             "goals": 0,
             "assists": null,
             "source": "https://datencenter.dfb.de/en/people/manuel-neuer/player",
-            "verification": "independent_DFB_individual_league_appearances_goals"
+            "verification": "independent_DFB_individual_league_appearances_goals",
+            "goalsConceded": 44,
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2010-111006.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2011-12": {
             "club": "FC Bayern München",
@@ -2613,7 +2806,8 @@
             "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2011-121016.html",
-            "verification": "currentSeason_BDFutbol_squad_table_directly_checked"
+            "verification": "currentSeason_BDFutbol_squad_table_directly_checked",
+            "goalsConceded": 22
           }
         },
         "status": "prior_years_DFB_apps_goals_verified_qualitative_and_matchwise_pending"
@@ -2626,7 +2820,41 @@
         "goals_assists_and_defensive_creative_provider_definitions",
         "historical_2009_10_2010_11_independently_checked_appearances_goals_but_further_quality_review_pending"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "leagueGoalsConceded": 22,
+      "segment2Audit": {
+        "goalkeeper": [
+          {
+            "season": "2011-12",
+            "club": "FC Bayern München",
+            "goals": 0,
+            "goalsConceded": 22,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2011-121016.html"
+            ]
+          }
+        ],
+        "priorClubRecords": [
+          {
+            "season": "2009-10",
+            "club": "Schalke 04",
+            "goalsConceded": 31,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2009-101006.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2010-11",
+            "club": "Schalke 04",
+            "goalsConceded": 44,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2010-111006.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-bayern-holger-badstuber",
@@ -2764,14 +2992,16 @@
         "weighting": "2011-12 highest; 2010-11 medium; 2009-10 least; no team trophy bonus",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hamburger",
+            "appearances": 27,
+            "starts": 26,
+            "minutes": 2153,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2009-101008.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2009-101008.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2010-11": {
             "club": null,
@@ -2804,7 +3034,23 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2009-10",
+            "club": "Hamburger",
+            "appearances": 27,
+            "starts": 26,
+            "minutes": 2153,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2009-101008.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-bayern-daniel-van-buyten",
@@ -3035,14 +3281,16 @@
         "weighting": "2011-12 highest; 2010-11 medium; 2009-10 least; no team trophy bonus",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Bayern München",
+            "appearances": 3,
+            "starts": 2,
+            "minutes": 197,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2009-101016.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2009-101016.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2010-11": {
             "club": null,
@@ -3075,7 +3323,47 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2009-10",
+            "club": "Bayern München",
+            "appearances": 3,
+            "starts": 2,
+            "minutes": 197,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2009-101016.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2010-11",
+            "club": "Hoffenheim",
+            "appearances": 17,
+            "starts": 17,
+            "minutes": 1530,
+            "goals": 2,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2010-111015.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2010-11",
+            "club": "Bayern München",
+            "appearances": 2,
+            "starts": 0,
+            "minutes": 22,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2010-111016.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-bayern-diego-contento",
@@ -3303,14 +3591,16 @@
         "weighting": "2011-12 highest; 2010-11 medium; 2009-10 least; no team trophy bonus",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hoffenheim",
+            "appearances": 27,
+            "starts": 26,
+            "minutes": 2088,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2009-101015.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2009-101015.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2010-11": {
             "club": "FC Bayern München",
@@ -3343,7 +3633,47 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2009-10",
+            "club": "Hoffenheim",
+            "appearances": 27,
+            "starts": 26,
+            "minutes": 2088,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2009-101015.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2010-11",
+            "club": "Hoffenheim",
+            "appearances": 17,
+            "starts": 17,
+            "minutes": 1479,
+            "goals": 2,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2010-111015.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2010-11",
+            "club": "Bayern München",
+            "appearances": 14,
+            "starts": 13,
+            "minutes": 1077,
+            "goals": 1,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2010-111016.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-bayern-anatoliy-tymoshchuk",
@@ -4036,14 +4366,16 @@
             "verification": "prior_Football_Archive_DRAFT_not_independently_revalidated"
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Bayern München",
+            "appearances": 6,
+            "starts": 3,
+            "minutes": 279,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2010-111016.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2010-111016.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2011-12": {
             "club": "FC Bayern München",
@@ -4066,7 +4398,37 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "reviewPending": [
+          {
+            "section": "4선발 이하 후보 자격 재검토 (9행)",
+            "report": [
+              "ST",
+              "backup",
+              "4",
+              "20"
+            ],
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2011-121016.html"
+            ]
+          }
+        ],
+        "priorClubRecords": [
+          {
+            "season": "2010-11",
+            "club": "Bayern München",
+            "appearances": 6,
+            "starts": 3,
+            "minutes": 279,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2010-111016.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-schalke-lars-unnerstall",
@@ -4141,7 +4503,8 @@
             "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2011-121006.html",
-            "verification": "currentSeason_BDFutbol_squad_table_directly_checked"
+            "verification": "currentSeason_BDFutbol_squad_table_directly_checked",
+            "goalsConceded": 25
           }
         },
         "status": "2011_12_current_year_direct_squad_prior_2_years_mixed_archived_DRAFT_or_pending"
@@ -4154,7 +4517,21 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "leagueGoalsConceded": 25,
+      "segment2Audit": {
+        "goalkeeper": [
+          {
+            "season": "2011-12",
+            "club": "FC Schalke 04",
+            "goals": 0,
+            "goalsConceded": 25,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2011-121006.html"
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-schalke-ralf-fahrmann",
@@ -4202,24 +4579,30 @@
         "weighting": "2011-12 highest; 2010-11 medium; 2009-10 least; no team trophy bonus",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
+            "club": "Eintracht Frankfurt",
+            "appearances": 3,
+            "starts": 3,
+            "minutes": 270,
             "goals": null,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2009-101010.html",
+            "verification": "evidence_pending",
+            "goalsConceded": 9,
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2009-101010.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
+            "club": "Eintracht Frankfurt",
+            "appearances": 15,
+            "starts": 14,
+            "minutes": 1304,
             "goals": null,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2010-111010.html",
+            "verification": "evidence_pending",
+            "goalsConceded": 21,
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2010-111010.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2011-12": {
             "club": "FC Schalke 04",
@@ -4229,7 +4612,8 @@
             "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2011-121006.html",
-            "verification": "currentSeason_BDFutbol_squad_table_directly_checked"
+            "verification": "currentSeason_BDFutbol_squad_table_directly_checked",
+            "goalsConceded": 13
           }
         },
         "status": "2011_12_current_year_direct_squad_prior_2_years_mixed_archived_DRAFT_or_pending"
@@ -4242,7 +4626,47 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "leagueGoalsConceded": 13,
+      "segment2Audit": {
+        "goalkeeper": [
+          {
+            "season": "2011-12",
+            "club": "FC Schalke 04",
+            "goals": 0,
+            "goalsConceded": 13,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2011-121006.html"
+            ]
+          }
+        ],
+        "priorClubRecords": [
+          {
+            "season": "2009-10",
+            "club": "Eintracht Frankfurt",
+            "appearances": 3,
+            "starts": 3,
+            "minutes": 270,
+            "goalsConceded": 9,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2009-101010.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2010-11",
+            "club": "Eintracht Frankfurt",
+            "appearances": 15,
+            "starts": 14,
+            "minutes": 1304,
+            "goalsConceded": 21,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2010-111010.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-schalke-timo-hildebrand",
@@ -4290,14 +4714,17 @@
         "weighting": "2011-12 highest; 2010-11 medium; 2009-10 least; no team trophy bonus",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
+            "club": "Hoffenheim",
+            "appearances": 28,
+            "starts": 28,
+            "minutes": 2520,
             "goals": null,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2009-101015.html",
+            "verification": "evidence_pending",
+            "goalsConceded": 30,
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2009-101015.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2010-11": {
             "club": null,
@@ -4317,7 +4744,8 @@
             "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2011-121006.html",
-            "verification": "currentSeason_BDFutbol_squad_table_directly_checked"
+            "verification": "currentSeason_BDFutbol_squad_table_directly_checked",
+            "goalsConceded": 6
           }
         },
         "status": "2011_12_current_year_direct_squad_prior_2_years_mixed_archived_DRAFT_or_pending"
@@ -4330,7 +4758,35 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "leagueGoalsConceded": 6,
+      "segment2Audit": {
+        "goalkeeper": [
+          {
+            "season": "2011-12",
+            "club": "FC Schalke 04",
+            "goals": 0,
+            "goalsConceded": 6,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2011-121006.html"
+            ]
+          }
+        ],
+        "priorClubRecords": [
+          {
+            "season": "2009-10",
+            "club": "Hoffenheim",
+            "appearances": 28,
+            "starts": 28,
+            "minutes": 2520,
+            "goalsConceded": 30,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2009-101015.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-schalke-benedikt-howedes",
@@ -4509,7 +4965,23 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "sourceConflicts": [
+          {
+            "section": "생년월일 출처 차이 (5행)",
+            "report": [
+              "1992-02-23",
+              "1983-08-28",
+              "DFB와 기존값 일치. 동명이 성의 아브라암과 구분."
+            ],
+            "sources": [
+              "https://datencenter.dfb.de/datencenter/personen/kyriakos-papadopoulos/spieler"
+            ],
+            "decision": "retain existing value pending match-level adjudication; not an automatic overwrite"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-schalke-joel-matip",
@@ -4737,14 +5209,16 @@
         "weighting": "2011-12 highest; 2010-11 medium; 2009-10 least; no team trophy bonus",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Bochum",
+            "appearances": 31,
+            "starts": 29,
+            "minutes": 2593,
+            "goals": 4,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2009-101017.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2009-101017.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2010-11": {
             "club": "1.FSV Mainz 05",
@@ -4777,7 +5251,23 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2009-10",
+            "club": "Bochum",
+            "appearances": 31,
+            "starts": 29,
+            "minutes": 2593,
+            "goals": 4,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2009-101017.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-schalke-marco-hoger",
@@ -5133,7 +5623,37 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "sourceConflicts": [
+          {
+            "section": "생년월일 출처 차이 (5행)",
+            "report": [
+              "1990-01-27",
+              "1989-11-01",
+              "DFB와 기존값 일치"
+            ],
+            "sources": [
+              "https://datencenter.dfb.de/datencenter/personen/christoph-moritz/spieler"
+            ],
+            "decision": "retain existing value pending match-level adjudication; not an automatic overwrite"
+          }
+        ],
+        "reviewPending": [
+          {
+            "section": "4선발 이하 후보 자격 재검토 (9행)",
+            "report": [
+              "DM",
+              "backup",
+              "4",
+              "8"
+            ],
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2011-121006.html"
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-schalke-lewis-holtby",
@@ -5222,7 +5742,49 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "sourceConflicts": [
+          {
+            "section": "생년월일 출처 차이 (5행)",
+            "report": [
+              "1990-09-18",
+              "1987-03-24",
+              "DFB와 기존값 일치"
+            ],
+            "sources": [
+              "https://datencenter.dfb.de/datencenter/personen/lewis-holtby/spieler"
+            ],
+            "decision": "retain existing value pending match-level adjudication; not an automatic overwrite"
+          }
+        ],
+        "priorClubRecords": [
+          {
+            "season": "2009-10",
+            "club": "Schalke 04",
+            "appearances": 9,
+            "starts": 4,
+            "minutes": 272,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2009-101006.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2009-10",
+            "club": "Bochum",
+            "appearances": 14,
+            "starts": 11,
+            "minutes": 1093,
+            "goals": 2,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2009-101017.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-schalke-julian-draxler",
@@ -5538,24 +6100,28 @@
         "weighting": "2011-12 highest; 2010-11 medium; 2009-10 least; no team trophy bonus",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hoffenheim",
+            "appearances": 23,
+            "starts": 21,
+            "minutes": 1744,
+            "goals": 7,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2009-101015.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2009-101015.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hoffenheim",
+            "appearances": 5,
+            "starts": 2,
+            "minutes": 132,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2010-111015.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2010-111015.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2011-12": {
             "club": "FC Schalke 04",
@@ -5578,7 +6144,35 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2009-10",
+            "club": "Hoffenheim",
+            "appearances": 23,
+            "starts": 21,
+            "minutes": 1744,
+            "goals": 7,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2009-101015.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2010-11",
+            "club": "Hoffenheim",
+            "appearances": 5,
+            "starts": 2,
+            "minutes": 132,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2010-111015.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-schalke-klaas-jan-huntelaar",
@@ -5604,7 +6198,7 @@
       "goals2011": 29,
       "assists2011": null,
       "tier": "A+",
-      "rank": 2,
+      "rank": 1,
       "rankStatus": "provisional",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -5661,15 +6255,35 @@
         },
         "status": "2011_12_current_year_direct_squad_prior_2_years_mixed_archived_DRAFT_or_pending"
       },
-      "tierReview": "29 Bundesliga goals golden boot, VDV third 12.5%; 2010-11 8 goals lower, breakout 2011/12.",
-      "assessmentRationale": "29 Bundesliga goals golden boot, VDV third 12.5%; 2010-11 8 goals lower, breakout 2011/12.",
+      "tierReview": "당해 훈텔라르 32선발 29골 대 레반도프스키 34선발 22골, 직전 시즌 양쪽 8골. 2시즌 전 해외리그 기록의 독립 검증은 보류하되 당해 득점·전방 기여를 우선해 훈텔라르 A+ 1위로 잠정 조정.",
+      "assessmentRationale": "당해 훈텔라르 32선발 29골 대 레반도프스키 34선발 22골, 직전 시즌 양쪽 8골. 2시즌 전 해외리그 기록의 독립 검증은 보류하되 당해 득점·전방 기여를 우선해 훈텔라르 A+ 1위로 잠정 조정.",
       "verificationNeeded": [
         "prior_two_seasons_independent_quantitative_and_quality_verification",
         "individual_matchwise_main_role_frequency",
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "reviewPending": [
+          {
+            "section": "Best XI와 동일 포지션 순위 불일치 (1행)",
+            "report": [
+              "로베르트 레반도프스키 1위 (bundesliga-2011-dortmund-robert-lewandowski)"
+            ],
+            "sources": [
+              "https://datencenter.dfb.de/en/competitions/bundesliga/seasons/2011-2012/top_scorer"
+            ]
+          }
+        ],
+        "xiReview": {
+          "previousSelection": "bundesliga-2011-schalke-klaas-jan-huntelaar",
+          "selected": "bundesliga-2011-schalke-klaas-jan-huntelaar",
+          "reason": "당해 훈텔라르 32선발 29골 대 레반도프스키 34선발 22골, 직전 시즌 양쪽 8골. 2시즌 전 해외리그 기록의 독립 검증은 보류하되 당해 득점·전방 기여를 우선해 훈텔라르 A+ 1위로 잠정 조정.",
+          "status": "proposed_unapproved",
+          "method": "current-season and previous two-season stats; qualitative caveats retained"
+        }
+      }
     },
     {
       "id": "bundesliga-2011-schalke-raul-gonzalez",
@@ -5906,14 +6520,17 @@
             "verification": "evidence_pending"
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
+            "club": "Borussia Mönchengladbach",
+            "appearances": 6,
+            "starts": 6,
+            "minutes": 540,
             "goals": null,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2010-111018.html",
+            "verification": "evidence_pending",
+            "goalsConceded": 3,
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2010-111018.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2011-12": {
             "club": "VfL Borussia Mönchengladbach",
@@ -5923,7 +6540,8 @@
             "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2011-121018.html",
-            "verification": "currentSeason_BDFutbol_squad_table_directly_checked"
+            "verification": "currentSeason_BDFutbol_squad_table_directly_checked",
+            "goalsConceded": 24
           }
         },
         "status": "2011_12_current_year_direct_squad_prior_2_years_mixed_archived_DRAFT_or_pending"
@@ -5936,7 +6554,35 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "leagueGoalsConceded": 24,
+      "segment2Audit": {
+        "goalkeeper": [
+          {
+            "season": "2011-12",
+            "club": "VfL Borussia Mönchengladbach",
+            "goals": 0,
+            "goalsConceded": 24,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2011-121018.html"
+            ]
+          }
+        ],
+        "priorClubRecords": [
+          {
+            "season": "2010-11",
+            "club": "Borussia Mönchengladbach",
+            "appearances": 6,
+            "starts": 6,
+            "minutes": 540,
+            "goalsConceded": 3,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2010-111018.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-gladbach-dante",
@@ -5988,22 +6634,26 @@
           "2009-10": {
             "club": "Borussia Mönchengladbach",
             "appearances": 32,
-            "starts": null,
-            "minutes": null,
+            "starts": 32,
+            "minutes": 2849,
             "goals": 3,
             "assists": null,
             "source": "https://datencenter.dfb.de/en/data-center/people/dante/player",
-            "verification": "independent_DFB_individual_league_appearances_goals"
+            "verification": "independent_DFB_individual_league_appearances_goals",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2009-101018.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2010-11": {
             "club": "Borussia Mönchengladbach",
             "appearances": 18,
-            "starts": null,
-            "minutes": null,
+            "starts": 17,
+            "minutes": 1540,
             "goals": 2,
             "assists": null,
             "source": "https://datencenter.dfb.de/en/data-center/people/dante/player",
-            "verification": "independent_DFB_individual_league_appearances_goals"
+            "verification": "independent_DFB_individual_league_appearances_goals",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2010-111018.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2011-12": {
             "club": "VfL Borussia Mönchengladbach",
@@ -6026,7 +6676,31 @@
         "goals_assists_and_defensive_creative_provider_definitions",
         "historical_2009_10_2010_11_independently_checked_appearances_goals_but_further_quality_review_pending"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2009-10",
+            "club": "Borussia Mönchengladbach",
+            "starts": 32,
+            "minutes": 2849,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2009-101018.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2010-11",
+            "club": "Borussia Mönchengladbach",
+            "starts": 17,
+            "minutes": 1540,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2010-111018.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-gladbach-martin-stranzl",
@@ -6084,14 +6758,16 @@
             "verification": "evidence_pending"
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Borussia Mönchengladbach",
+            "appearances": 17,
+            "starts": 17,
+            "minutes": 1530,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2010-111018.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2010-111018.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2011-12": {
             "club": "VfL Borussia Mönchengladbach",
@@ -6114,7 +6790,23 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2010-11",
+            "club": "Borussia Mönchengladbach",
+            "appearances": 17,
+            "starts": 17,
+            "minutes": 1530,
+            "goals": 1,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2010-111018.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-gladbach-roel-brouwers",
@@ -6162,24 +6854,28 @@
         "weighting": "2011-12 highest; 2010-11 medium; 2009-10 least; no team trophy bonus",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Borussia Mönchengladbach",
+            "appearances": 34,
+            "starts": 34,
+            "minutes": 3060,
+            "goals": 8,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2009-101018.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2009-101018.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Borussia Mönchengladbach",
+            "appearances": 15,
+            "starts": 10,
+            "minutes": 807,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2010-111018.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2010-111018.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2011-12": {
             "club": "VfL Borussia Mönchengladbach",
@@ -6202,7 +6898,35 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2009-10",
+            "club": "Borussia Mönchengladbach",
+            "appearances": 34,
+            "starts": 34,
+            "minutes": 3060,
+            "goals": 8,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2009-101018.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2010-11",
+            "club": "Borussia Mönchengladbach",
+            "appearances": 15,
+            "starts": 10,
+            "minutes": 807,
+            "goals": 1,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2010-111018.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-gladbach-filip-daems",
@@ -6214,9 +6938,9 @@
       "nameOriginal": "Filip Daems",
       "originalName": "Filip Daems",
       "nameKo": "필리프 담스",
-      "born": "1978-10-30",
-      "birthSource": null,
-      "birthVerification": "provisional_biographical_lookup_pending",
+      "born": "1978-10-31",
+      "birthSource": "https://datencenter.dfb.de/datencenter/personen/filip-daems/spieler",
+      "birthVerification": "DFB and BDFutbol correction per segment 2 report",
       "position": "LB",
       "originalTacticalRole": "LB",
       "positionVerification": "season tactical role inferred; independent matchwise majority unverified",
@@ -6250,24 +6974,28 @@
         "weighting": "2011-12 highest; 2010-11 medium; 2009-10 least; no team trophy bonus",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Borussia Mönchengladbach",
+            "appearances": 18,
+            "starts": 18,
+            "minutes": 1528,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2009-101018.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2009-101018.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Borussia Mönchengladbach",
+            "appearances": 34,
+            "starts": 34,
+            "minutes": 3043,
+            "goals": 4,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2010-111018.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2010-111018.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2011-12": {
             "club": "VfL Borussia Mönchengladbach",
@@ -6290,7 +7018,46 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "birth": [
+          {
+            "season": "2011-12",
+            "old": "1978-10-30",
+            "value": "1978-10-31",
+            "sources": [
+              "https://datencenter.dfb.de/datencenter/personen/filip-daems/spieler",
+              "https://www.bdfutbol.com/en/j/j92418.html"
+            ]
+          }
+        ],
+        "priorClubRecords": [
+          {
+            "season": "2009-10",
+            "club": "Borussia Mönchengladbach",
+            "appearances": 18,
+            "starts": 18,
+            "minutes": 1528,
+            "goals": 1,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2009-101018.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2010-11",
+            "club": "Borussia Mönchengladbach",
+            "appearances": 34,
+            "starts": 34,
+            "minutes": 3043,
+            "goals": 4,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2010-111018.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-gladbach-oscar-wendt",
@@ -6302,9 +7069,9 @@
       "nameOriginal": "Oscar Wendt",
       "originalName": "Oscar Wendt",
       "nameKo": "오스카르 벤트",
-      "born": "1985-12-17",
-      "birthSource": null,
-      "birthVerification": "provisional_biographical_lookup_pending",
+      "born": "1985-10-24",
+      "birthSource": "https://datencenter.dfb.de/datencenter/personen/oscar-wendt/spieler",
+      "birthVerification": "DFB and BDFutbol correction per segment 2 report",
       "position": "LB",
       "originalTacticalRole": "LB",
       "positionVerification": "season tactical role inferred; independent matchwise majority unverified",
@@ -6378,7 +7145,20 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "birth": [
+          {
+            "season": "2011-12",
+            "old": "1985-12-17",
+            "value": "1985-10-24",
+            "sources": [
+              "https://datencenter.dfb.de/datencenter/personen/oscar-wendt/spieler",
+              "https://www.bdfutbol.com/en/j/j93368.html"
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-gladbach-tony-jantschke",
@@ -6426,24 +7206,28 @@
         "weighting": "2011-12 highest; 2010-11 medium; 2009-10 least; no team trophy bonus",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Borussia Mönchengladbach",
+            "appearances": 6,
+            "starts": 2,
+            "minutes": 254,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2009-101018.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2009-101018.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Borussia Mönchengladbach",
+            "appearances": 11,
+            "starts": 10,
+            "minutes": 907,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2010-111018.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2010-111018.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2011-12": {
             "club": "VfL Borussia Mönchengladbach",
@@ -6466,7 +7250,35 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2009-10",
+            "club": "Borussia Mönchengladbach",
+            "appearances": 6,
+            "starts": 2,
+            "minutes": 254,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2009-101018.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2010-11",
+            "club": "Borussia Mönchengladbach",
+            "appearances": 11,
+            "starts": 10,
+            "minutes": 907,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2010-111018.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-gladbach-roman-neustadter",
@@ -6514,24 +7326,28 @@
         "weighting": "2011-12 highest; 2010-11 medium; 2009-10 least; no team trophy bonus",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Borussia Mönchengladbach",
+            "appearances": 2,
+            "starts": 0,
+            "minutes": 8,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2009-101018.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2009-101018.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Borussia Mönchengladbach",
+            "appearances": 24,
+            "starts": 20,
+            "minutes": 1752,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2010-111018.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2010-111018.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2011-12": {
             "club": "VfL Borussia Mönchengladbach",
@@ -6554,7 +7370,35 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2009-10",
+            "club": "Borussia Mönchengladbach",
+            "appearances": 2,
+            "starts": 0,
+            "minutes": 8,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2009-101018.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2010-11",
+            "club": "Borussia Mönchengladbach",
+            "appearances": 24,
+            "starts": 20,
+            "minutes": 1752,
+            "goals": 1,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2010-111018.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-gladbach-havard-nordtveit",
@@ -6602,24 +7446,28 @@
         "weighting": "2011-12 highest; 2010-11 medium; 2009-10 least; no team trophy bonus",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Nürnberg",
+            "appearances": 19,
+            "starts": 14,
+            "minutes": 1293,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2009-101005.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2009-101005.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Borussia Mönchengladbach",
+            "appearances": 16,
+            "starts": 15,
+            "minutes": 1386,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2010-111018.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2010-111018.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2011-12": {
             "club": "VfL Borussia Mönchengladbach",
@@ -6642,7 +7490,35 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2009-10",
+            "club": "Nürnberg",
+            "appearances": 19,
+            "starts": 14,
+            "minutes": 1293,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2009-101005.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2010-11",
+            "club": "Borussia Mönchengladbach",
+            "appearances": 16,
+            "starts": 15,
+            "minutes": 1386,
+            "goals": 1,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2010-111018.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-gladbach-thorben-marx",
@@ -6654,9 +7530,9 @@
       "nameOriginal": "Thorben Marx",
       "originalName": "Thorben Marx",
       "nameKo": "토르벤 마르크스",
-      "born": "1981-07-27",
-      "birthSource": null,
-      "birthVerification": "provisional_biographical_lookup_pending",
+      "born": "1981-06-01",
+      "birthSource": "https://datencenter.dfb.de/datencenter/personen/thorben-marx/spieler",
+      "birthVerification": "DFB and BDFutbol correction per segment 2 report",
       "position": "DM",
       "originalTacticalRole": "DM",
       "positionVerification": "season tactical role inferred; independent matchwise majority unverified",
@@ -6690,24 +7566,28 @@
         "weighting": "2011-12 highest; 2010-11 medium; 2009-10 least; no team trophy bonus",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Borussia Mönchengladbach",
+            "appearances": 28,
+            "starts": 28,
+            "minutes": 2405,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2009-101018.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2009-101018.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Borussia Mönchengladbach",
+            "appearances": 27,
+            "starts": 19,
+            "minutes": 1766,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2010-111018.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2010-111018.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2011-12": {
             "club": "VfL Borussia Mönchengladbach",
@@ -6730,7 +7610,46 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "birth": [
+          {
+            "season": "2011-12",
+            "old": "1981-07-27",
+            "value": "1981-06-01",
+            "sources": [
+              "https://datencenter.dfb.de/datencenter/personen/thorben-marx/spieler",
+              "https://www.bdfutbol.com/en/j/j90429.html"
+            ]
+          }
+        ],
+        "priorClubRecords": [
+          {
+            "season": "2009-10",
+            "club": "Borussia Mönchengladbach",
+            "appearances": 28,
+            "starts": 28,
+            "minutes": 2405,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2009-101018.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2010-11",
+            "club": "Borussia Mönchengladbach",
+            "appearances": 27,
+            "starts": 19,
+            "minutes": 1766,
+            "goals": 1,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2010-111018.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-gladbach-juan-arango",
@@ -6778,24 +7697,28 @@
         "weighting": "2011-12 highest; 2010-11 medium; 2009-10 least; no team trophy bonus",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Borussia Mönchengladbach",
+            "appearances": 34,
+            "starts": 33,
+            "minutes": 2914,
+            "goals": 2,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2009-101018.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2009-101018.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Borussia Mönchengladbach",
+            "appearances": 25,
+            "starts": 24,
+            "minutes": 2004,
+            "goals": 4,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2010-111018.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2010-111018.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2011-12": {
             "club": "VfL Borussia Mönchengladbach",
@@ -6818,7 +7741,49 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "sourceConflicts": [
+          {
+            "section": "생년월일 출처 차이 (5행)",
+            "report": [
+              "1980-05-16",
+              "1980-05-17",
+              "DFB와 기존값 일치"
+            ],
+            "sources": [
+              "https://datencenter.dfb.de/datencenter/personen/juan-arango/spieler"
+            ],
+            "decision": "retain existing value pending match-level adjudication; not an automatic overwrite"
+          }
+        ],
+        "priorClubRecords": [
+          {
+            "season": "2009-10",
+            "club": "Borussia Mönchengladbach",
+            "appearances": 34,
+            "starts": 33,
+            "minutes": 2914,
+            "goals": 2,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2009-101018.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2010-11",
+            "club": "Borussia Mönchengladbach",
+            "appearances": 25,
+            "starts": 24,
+            "minutes": 2004,
+            "goals": 4,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2010-111018.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-gladbach-marco-reus",
@@ -6870,22 +7835,26 @@
           "2009-10": {
             "club": "Borussia Mönchengladbach",
             "appearances": 33,
-            "starts": null,
-            "minutes": null,
+            "starts": 27,
+            "minutes": 2471,
             "goals": 8,
             "assists": null,
             "source": "https://datencenter.dfb.de/en/people/marco-reus/player",
-            "verification": "independent_DFB_individual_league_appearances_goals"
+            "verification": "independent_DFB_individual_league_appearances_goals",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2009-101018.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2010-11": {
             "club": "Borussia Mönchengladbach",
             "appearances": 32,
-            "starts": null,
-            "minutes": null,
+            "starts": 32,
+            "minutes": 2857,
             "goals": 10,
             "assists": null,
             "source": "https://datencenter.dfb.de/en/people/marco-reus/player",
-            "verification": "independent_DFB_individual_league_appearances_goals"
+            "verification": "independent_DFB_individual_league_appearances_goals",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2010-111018.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2011-12": {
             "club": "VfL Borussia Mönchengladbach",
@@ -6908,7 +7877,31 @@
         "goals_assists_and_defensive_creative_provider_definitions",
         "historical_2009_10_2010_11_independently_checked_appearances_goals_but_further_quality_review_pending"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2009-10",
+            "club": "Borussia Mönchengladbach",
+            "starts": 27,
+            "minutes": 2471,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2009-101018.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2010-11",
+            "club": "Borussia Mönchengladbach",
+            "starts": 32,
+            "minutes": 2857,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2010-111018.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-gladbach-patrick-herrmann",
@@ -6957,24 +7950,28 @@
         "weighting": "2011-12 highest; 2010-11 medium; 2009-10 least; no team trophy bonus",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Borussia Mönchengladbach",
+            "appearances": 13,
+            "starts": 3,
+            "minutes": 395,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2009-101018.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2009-101018.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Borussia Mönchengladbach",
+            "appearances": 24,
+            "starts": 15,
+            "minutes": 1167,
+            "goals": 3,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2010-111018.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2010-111018.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2011-12": {
             "club": "VfL Borussia Mönchengladbach",
@@ -6997,7 +7994,49 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "sourceConflicts": [
+          {
+            "section": "생년월일 출처 차이 (5행)",
+            "report": [
+              "1991-02-12",
+              "1988-03-16",
+              "DFB와 기존값 일치. 동명이인 구분."
+            ],
+            "sources": [
+              "https://datencenter.dfb.de/datencenter/personen/patrick-herrmann/spieler"
+            ],
+            "decision": "retain existing value pending match-level adjudication; not an automatic overwrite"
+          }
+        ],
+        "priorClubRecords": [
+          {
+            "season": "2009-10",
+            "club": "Borussia Mönchengladbach",
+            "appearances": 13,
+            "starts": 3,
+            "minutes": 395,
+            "goals": 1,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2009-101018.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2010-11",
+            "club": "Borussia Mönchengladbach",
+            "appearances": 24,
+            "starts": 15,
+            "minutes": 1167,
+            "goals": 3,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2010-111018.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-gladbach-mike-hanke",
@@ -7045,14 +8084,16 @@
         "weighting": "2011-12 highest; 2010-11 medium; 2009-10 least; no team trophy bonus",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hannover 96",
+            "appearances": 18,
+            "starts": 5,
+            "minutes": 666,
+            "goals": 2,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2009-101012.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2009-101012.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2010-11": {
             "club": null,
@@ -7085,7 +8126,47 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2009-10",
+            "club": "Hannover 96",
+            "appearances": 18,
+            "starts": 5,
+            "minutes": 666,
+            "goals": 2,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2009-101012.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2010-11",
+            "club": "Hannover 96",
+            "appearances": 7,
+            "starts": 0,
+            "minutes": 139,
+            "goals": 3,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2010-111012.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2010-11",
+            "club": "Borussia Mönchengladbach",
+            "appearances": 14,
+            "starts": 10,
+            "minutes": 825,
+            "goals": 1,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2010-111018.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-gladbach-igor-de-camargo",
@@ -7143,14 +8224,16 @@
             "verification": "evidence_pending"
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Borussia Mönchengladbach",
+            "appearances": 19,
+            "starts": 14,
+            "minutes": 1197,
+            "goals": 7,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2010-111018.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2010-111018.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2011-12": {
             "club": "VfL Borussia Mönchengladbach",
@@ -7173,7 +8256,23 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2010-11",
+            "club": "Borussia Mönchengladbach",
+            "appearances": 19,
+            "starts": 14,
+            "minutes": 1197,
+            "goals": 7,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2010-111018.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-gladbach-raul-bobadilla",
@@ -7221,24 +8320,28 @@
         "weighting": "2011-12 highest; 2010-11 medium; 2009-10 least; no team trophy bonus",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Borussia Mönchengladbach",
+            "appearances": 30,
+            "starts": 25,
+            "minutes": 2070,
+            "goals": 4,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2009-101018.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2009-101018.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Borussia Mönchengladbach",
+            "appearances": 14,
+            "starts": 8,
+            "minutes": 816,
+            "goals": 3,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2010-111018.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2010-111018.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2011-12": {
             "club": "VfL Borussia Mönchengladbach",
@@ -7261,7 +8364,35 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2009-10",
+            "club": "Borussia Mönchengladbach",
+            "appearances": 30,
+            "starts": 25,
+            "minutes": 2070,
+            "goals": 4,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2009-101018.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2010-11",
+            "club": "Borussia Mönchengladbach",
+            "appearances": 14,
+            "starts": 8,
+            "minutes": 816,
+            "goals": 3,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2010-111018.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-leverkusen-bernd-leno",
@@ -7336,7 +8467,8 @@
             "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2011-121014.html",
-            "verification": "currentSeason_BDFutbol_squad_table_directly_checked"
+            "verification": "currentSeason_BDFutbol_squad_table_directly_checked",
+            "goalsConceded": 42
           }
         },
         "status": "2011_12_current_year_direct_squad_prior_2_years_mixed_archived_DRAFT_or_pending"
@@ -7349,7 +8481,21 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "leagueGoalsConceded": 42,
+      "segment2Audit": {
+        "goalkeeper": [
+          {
+            "season": "2011-12",
+            "club": "Bayer 04 Leverkusen",
+            "goals": 0,
+            "goalsConceded": 42,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2011-121014.html"
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-leverkusen-omer-toprak",
@@ -7397,24 +8543,28 @@
         "weighting": "2011-12 highest; 2010-11 medium; 2009-10 least; no team trophy bonus",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Freiburg",
+            "appearances": 14,
+            "starts": 10,
+            "minutes": 962,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2009-101007.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2009-101007.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Freiburg",
+            "appearances": 24,
+            "starts": 18,
+            "minutes": 1629,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2010-111007.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2010-111007.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2011-12": {
             "club": "Bayer 04 Leverkusen",
@@ -7437,7 +8587,35 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2009-10",
+            "club": "Freiburg",
+            "appearances": 14,
+            "starts": 10,
+            "minutes": 962,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2009-101007.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2010-11",
+            "club": "Freiburg",
+            "appearances": 24,
+            "starts": 18,
+            "minutes": 1629,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2010-111007.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-leverkusen-stefan-reinartz",
@@ -7797,7 +8975,22 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "reviewPending": [
+          {
+            "section": "시즌 배정과 일반 프로필 위치 차이 (2행)",
+            "report": [
+              "RB",
+              "CB",
+              "21"
+            ],
+            "sources": [
+              "https://www.bdfutbol.com/en/j/j93056.html"
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-leverkusen-vedran-corluka",
@@ -7885,7 +9078,22 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "reviewPending": [
+          {
+            "section": "시즌 배정과 일반 프로필 위치 차이 (2행)",
+            "report": [
+              "RB",
+              "CB",
+              "7"
+            ],
+            "sources": [
+              "https://www.bdfutbol.com/en/j/j93408.html"
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-leverkusen-gonzalo-castro",
@@ -8425,7 +9633,23 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "reviewPending": [
+          {
+            "section": "4선발 이하 후보 자격 재검토 (9행)",
+            "report": [
+              "LW",
+              "backup",
+              "3",
+              "7"
+            ],
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2011-121014.html"
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-leverkusen-andre-schurrle",
@@ -8474,14 +9698,16 @@
         "weighting": "2011-12 highest; 2010-11 medium; 2009-10 least; no team trophy bonus",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Mainz 05",
+            "appearances": 33,
+            "starts": 25,
+            "minutes": 2300,
+            "goals": 5,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2009-101013.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2009-101013.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2010-11": {
             "club": "1.FSV Mainz 05",
@@ -8514,7 +9740,23 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2009-10",
+            "club": "Mainz 05",
+            "appearances": 33,
+            "starts": 25,
+            "minutes": 2300,
+            "goals": 5,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2009-101013.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-leverkusen-sidney-sam",
@@ -8691,7 +9933,23 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "reviewPending": [
+          {
+            "section": "4선발 이하 후보 자격 재검토 (9행)",
+            "report": [
+              "RW",
+              "backup",
+              "0",
+              "10"
+            ],
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2011-121014.html"
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-leverkusen-stefan-kie-ling",
@@ -8927,17 +10185,23 @@
             "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2009-101002.html",
-            "verification": "prior_Football_Archive_DRAFT_not_independently_revalidated"
+            "verification": "prior_Football_Archive_DRAFT_not_independently_revalidated",
+            "goalsConceded": 3,
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2009-101002.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
+            "club": "Stuttgart",
+            "appearances": 34,
+            "starts": 34,
+            "minutes": 3060,
             "goals": null,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2010-111002.html",
+            "verification": "evidence_pending",
+            "goalsConceded": 59,
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2010-111002.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2011-12": {
             "club": "VfB Stuttgart",
@@ -8947,7 +10211,8 @@
             "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2011-121002.html",
-            "verification": "currentSeason_BDFutbol_squad_table_directly_checked"
+            "verification": "currentSeason_BDFutbol_squad_table_directly_checked",
+            "goalsConceded": 46
           }
         },
         "status": "2011_12_current_year_direct_squad_prior_2_years_mixed_archived_DRAFT_or_pending"
@@ -8960,7 +10225,44 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "leagueGoalsConceded": 46,
+      "segment2Audit": {
+        "goalkeeper": [
+          {
+            "season": "2011-12",
+            "club": "VfB Stuttgart",
+            "goals": 0,
+            "goalsConceded": 46,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2011-121002.html"
+            ]
+          }
+        ],
+        "priorClubRecords": [
+          {
+            "season": "2009-10",
+            "club": "Stuttgart",
+            "goalsConceded": 3,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2009-101002.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2010-11",
+            "club": "Stuttgart",
+            "appearances": 34,
+            "starts": 34,
+            "minutes": 3060,
+            "goalsConceded": 59,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2010-111002.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-stuttgart-serdar-tasc",
@@ -9019,14 +10321,16 @@
             "verification": "prior_Football_Archive_DRAFT_not_independently_revalidated"
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Stuttgart",
+            "appearances": 26,
+            "starts": 26,
+            "minutes": 2296,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2010-111002.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2010-111002.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2011-12": {
             "club": "VfB Stuttgart",
@@ -9049,7 +10353,23 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2010-11",
+            "club": "Stuttgart",
+            "appearances": 26,
+            "starts": 26,
+            "minutes": 2296,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2010-111002.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-stuttgart-francisco-javier-rodriguez",
@@ -9196,14 +10516,16 @@
             "verification": "prior_Football_Archive_DRAFT_not_independently_revalidated"
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Stuttgart",
+            "appearances": 29,
+            "starts": 25,
+            "minutes": 2258,
+            "goals": 5,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2010-111002.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2010-111002.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2011-12": {
             "club": "VfB Stuttgart",
@@ -9226,7 +10548,23 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2010-11",
+            "club": "Stuttgart",
+            "appearances": 29,
+            "starts": 25,
+            "minutes": 2258,
+            "goals": 5,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2010-111002.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-stuttgart-cristian-molinaro",
@@ -9285,14 +10623,16 @@
             "verification": "prior_Football_Archive_DRAFT_not_independently_revalidated"
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Stuttgart",
+            "appearances": 27,
+            "starts": 24,
+            "minutes": 2005,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2010-111002.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2010-111002.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2011-12": {
             "club": "VfB Stuttgart",
@@ -9315,7 +10655,23 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2010-11",
+            "club": "Stuttgart",
+            "appearances": 27,
+            "starts": 24,
+            "minutes": 2005,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2010-111002.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-stuttgart-arthur-boka",
@@ -9374,14 +10730,16 @@
             "verification": "prior_Football_Archive_DRAFT_not_independently_revalidated"
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Stuttgart",
+            "appearances": 23,
+            "starts": 18,
+            "minutes": 1623,
+            "goals": 2,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2010-111002.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2010-111002.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2011-12": {
             "club": "VfB Stuttgart",
@@ -9404,7 +10762,23 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2010-11",
+            "club": "Stuttgart",
+            "appearances": 23,
+            "starts": 18,
+            "minutes": 1623,
+            "goals": 2,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2010-111002.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-stuttgart-khalid-boulahrouz",
@@ -9452,24 +10826,28 @@
         "weighting": "2011-12 highest; 2010-11 medium; 2009-10 least; no team trophy bonus",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Stuttgart",
+            "appearances": 6,
+            "starts": 5,
+            "minutes": 494,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2009-101002.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2009-101002.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Stuttgart",
+            "appearances": 16,
+            "starts": 13,
+            "minutes": 1218,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2010-111002.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2010-111002.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2011-12": {
             "club": "VfB Stuttgart",
@@ -9492,7 +10870,35 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2009-10",
+            "club": "Stuttgart",
+            "appearances": 6,
+            "starts": 5,
+            "minutes": 494,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2009-101002.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2010-11",
+            "club": "Stuttgart",
+            "appearances": 16,
+            "starts": 13,
+            "minutes": 1218,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2010-111002.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-stuttgart-gotoku-sakai",
@@ -9727,14 +11133,16 @@
             "verification": "prior_Football_Archive_DRAFT_not_independently_revalidated"
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Stuttgart",
+            "appearances": 32,
+            "starts": 27,
+            "minutes": 2396,
+            "goals": 9,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2010-111002.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2010-111002.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2011-12": {
             "club": "VfB Stuttgart",
@@ -9757,7 +11165,23 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2010-11",
+            "club": "Stuttgart",
+            "appearances": 32,
+            "starts": 27,
+            "minutes": 2396,
+            "goals": 9,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2010-111002.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-stuttgart-christian-gentner",
@@ -9805,24 +11229,28 @@
         "weighting": "2011-12 highest; 2010-11 medium; 2009-10 least; no team trophy bonus",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Wolfsburg",
+            "appearances": 34,
+            "starts": 34,
+            "minutes": 2788,
+            "goals": 4,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2009-101001.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2009-101001.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Stuttgart",
+            "appearances": 31,
+            "starts": 23,
+            "minutes": 2049,
+            "goals": 5,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2010-111002.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2010-111002.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2011-12": {
             "club": "VfB Stuttgart",
@@ -9845,7 +11273,35 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2009-10",
+            "club": "Wolfsburg",
+            "appearances": 34,
+            "starts": 34,
+            "minutes": 2788,
+            "goals": 4,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2009-101001.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2010-11",
+            "club": "Stuttgart",
+            "appearances": 31,
+            "starts": 23,
+            "minutes": 2049,
+            "goals": 5,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2010-111002.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-stuttgart-tamas-hajnal",
@@ -9904,14 +11360,16 @@
             "verification": "prior_Football_Archive_DRAFT_not_independently_revalidated"
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Stuttgart",
+            "appearances": 12,
+            "starts": 11,
+            "minutes": 924,
+            "goals": 3,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2010-111002.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2010-111002.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2011-12": {
             "club": "VfB Stuttgart",
@@ -9934,7 +11392,23 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2010-11",
+            "club": "Stuttgart",
+            "appearances": 12,
+            "starts": 11,
+            "minutes": 924,
+            "goals": 3,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2010-111002.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-stuttgart-shinji-okazaki",
@@ -9992,14 +11466,16 @@
             "verification": "evidence_pending"
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Stuttgart",
+            "appearances": 12,
+            "starts": 12,
+            "minutes": 994,
+            "goals": 2,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2010-111002.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2010-111002.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2011-12": {
             "club": "VfB Stuttgart",
@@ -10022,7 +11498,23 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2010-11",
+            "club": "Stuttgart",
+            "appearances": 12,
+            "starts": 12,
+            "minutes": 994,
+            "goals": 2,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2010-111002.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-stuttgart-ibrahima-traore",
@@ -10110,7 +11602,23 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "reviewPending": [
+          {
+            "section": "4선발 이하 후보 자격 재검토 (9행)",
+            "report": [
+              "LW",
+              "backup",
+              "1",
+              "12"
+            ],
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2011-121002.html"
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-stuttgart-martin-harnik",
@@ -10168,14 +11676,16 @@
             "verification": "evidence_pending"
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Stuttgart",
+            "appearances": 32,
+            "starts": 17,
+            "minutes": 1867,
+            "goals": 9,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2010-111002.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2010-111002.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2011-12": {
             "club": "VfB Stuttgart",
@@ -10198,7 +11708,23 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2010-11",
+            "club": "Stuttgart",
+            "appearances": 32,
+            "starts": 17,
+            "minutes": 1867,
+            "goals": 9,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2010-111002.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-stuttgart-cacau",
@@ -10257,14 +11783,16 @@
             "verification": "prior_Football_Archive_DRAFT_not_independently_revalidated"
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Stuttgart",
+            "appearances": 27,
+            "starts": 24,
+            "minutes": 2106,
+            "goals": 8,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2010-111002.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2010-111002.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2011-12": {
             "club": "VfB Stuttgart",
@@ -10287,7 +11815,23 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2010-11",
+            "club": "Stuttgart",
+            "appearances": 27,
+            "starts": 24,
+            "minutes": 2106,
+            "goals": 8,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2010-111002.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-stuttgart-vedad-ibisevic",
@@ -10335,24 +11879,28 @@
         "weighting": "2011-12 highest; 2010-11 medium; 2009-10 least; no team trophy bonus",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hoffenheim",
+            "appearances": 34,
+            "starts": 30,
+            "minutes": 2580,
+            "goals": 12,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2009-101015.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2009-101015.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hoffenheim",
+            "appearances": 31,
+            "starts": 25,
+            "minutes": 2118,
+            "goals": 8,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2010-111015.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2010-111015.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2011-12": {
             "club": "VfB Stuttgart",
@@ -10362,7 +11910,32 @@
             "goals": 8,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2011-121002.html",
-            "verification": "currentSeason_BDFutbol_squad_table_directly_checked"
+            "verification": "currentSeason_BDFutbol_squad_table_directly_checked",
+            "clubRecords": [
+              {
+                "club": "TSG 1899 Hoffenheim",
+                "appearances": 10,
+                "starts": 7,
+                "goals": 5,
+                "minutes": null,
+                "scope": "league; minute totals conflict by provider"
+              },
+              {
+                "club": "VfB Stuttgart",
+                "appearances": 15,
+                "starts": 15,
+                "goals": 8,
+                "minutes": 1350,
+                "scope": "league"
+              }
+            ],
+            "seasonTotals": {
+              "appearances": 25,
+              "starts": 22,
+              "goals": 13,
+              "minutes": null
+            },
+            "scope": "Stuttgart-only candidate record; full-season club split in clubRecords"
           }
         },
         "status": "2011_12_current_year_direct_squad_prior_2_years_mixed_archived_DRAFT_or_pending"
@@ -10375,7 +11948,35 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2009-10",
+            "club": "Hoffenheim",
+            "appearances": 34,
+            "starts": 30,
+            "minutes": 2580,
+            "goals": 12,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2009-101015.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2010-11",
+            "club": "Hoffenheim",
+            "appearances": 31,
+            "starts": 25,
+            "minutes": 2118,
+            "goals": 8,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2010-111015.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-stuttgart-julian-schieber",
@@ -10434,14 +12035,16 @@
             "verification": "prior_Football_Archive_DRAFT_not_independently_revalidated"
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Nürnberg",
+            "appearances": 29,
+            "starts": 28,
+            "minutes": 2436,
+            "goals": 7,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2010-111005.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2010-111005.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2011-12": {
             "club": "VfB Stuttgart",
@@ -10464,7 +12067,23 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2010-11",
+            "club": "Nürnberg",
+            "appearances": 29,
+            "starts": 28,
+            "minutes": 2436,
+            "goals": 7,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2010-111005.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-hannover-ron-robert-zieler",
@@ -10530,7 +12149,10 @@
             "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2010-111012.html",
-            "verification": "prior_Football_Archive_DRAFT_not_independently_revalidated"
+            "verification": "prior_Football_Archive_DRAFT_not_independently_revalidated",
+            "goalsConceded": 11,
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2010-111012.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2011-12": {
             "club": "Hannover 96",
@@ -10540,7 +12162,8 @@
             "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2011-121012.html",
-            "verification": "currentSeason_BDFutbol_squad_table_directly_checked"
+            "verification": "currentSeason_BDFutbol_squad_table_directly_checked",
+            "goalsConceded": 45
           }
         },
         "status": "2011_12_current_year_direct_squad_prior_2_years_mixed_archived_DRAFT_or_pending"
@@ -10553,7 +12176,32 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "leagueGoalsConceded": 45,
+      "segment2Audit": {
+        "goalkeeper": [
+          {
+            "season": "2011-12",
+            "club": "Hannover 96",
+            "goals": 0,
+            "goalsConceded": 45,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2011-121012.html"
+            ]
+          }
+        ],
+        "priorClubRecords": [
+          {
+            "season": "2010-11",
+            "club": "Hannover 96",
+            "goalsConceded": 11,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2010-111012.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-hannover-emanuel-pogatetz",
@@ -10691,14 +12339,16 @@
         "weighting": "2011-12 highest; 2010-11 medium; 2009-10 least; no team trophy bonus",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hannover 96",
+            "appearances": 30,
+            "starts": 30,
+            "minutes": 2700,
+            "goals": 2,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2009-101012.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2009-101012.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2010-11": {
             "club": "Hannover 96",
@@ -10731,7 +12381,23 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2009-10",
+            "club": "Hannover 96",
+            "appearances": 30,
+            "starts": 30,
+            "minutes": 2700,
+            "goals": 2,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2009-101012.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-hannover-mario-eggimann",
@@ -10780,14 +12446,16 @@
         "weighting": "2011-12 highest; 2010-11 medium; 2009-10 least; no team trophy bonus",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hannover 96",
+            "appearances": 19,
+            "starts": 12,
+            "minutes": 1185,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2009-101012.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2009-101012.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2010-11": {
             "club": "Hannover 96",
@@ -10820,7 +12488,23 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2009-10",
+            "club": "Hannover 96",
+            "appearances": 19,
+            "starts": 12,
+            "minutes": 1185,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2009-101012.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-hannover-christian-schulz",
@@ -10869,14 +12553,16 @@
         "weighting": "2011-12 highest; 2010-11 medium; 2009-10 least; no team trophy bonus",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hannover 96",
+            "appearances": 33,
+            "starts": 33,
+            "minutes": 2825,
+            "goals": 2,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2009-101012.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2009-101012.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2010-11": {
             "club": "Hannover 96",
@@ -10909,7 +12595,23 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2009-10",
+            "club": "Hannover 96",
+            "appearances": 33,
+            "starts": 33,
+            "minutes": 2825,
+            "goals": 2,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2009-101012.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-hannover-christian-pander",
@@ -10967,14 +12669,16 @@
             "verification": "evidence_pending"
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Schalke 04",
+            "appearances": 4,
+            "starts": 1,
+            "minutes": 172,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2010-111006.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2010-111006.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2011-12": {
             "club": "Hannover 96",
@@ -10997,7 +12701,23 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2010-11",
+            "club": "Schalke 04",
+            "appearances": 4,
+            "starts": 1,
+            "minutes": 172,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2010-111006.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-hannover-steven-cherundolo",
@@ -11046,14 +12766,16 @@
         "weighting": "2011-12 highest; 2010-11 medium; 2009-10 least; no team trophy bonus",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hannover 96",
+            "appearances": 26,
+            "starts": 23,
+            "minutes": 2099,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2009-101012.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2009-101012.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2010-11": {
             "club": "Hannover 96",
@@ -11086,7 +12808,23 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2009-10",
+            "club": "Hannover 96",
+            "appearances": 26,
+            "starts": 23,
+            "minutes": 2099,
+            "goals": 1,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2009-101012.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-hannover-sofian-chahed",
@@ -11135,14 +12873,16 @@
         "weighting": "2011-12 highest; 2010-11 medium; 2009-10 least; no team trophy bonus",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hannover 96",
+            "appearances": 16,
+            "starts": 9,
+            "minutes": 953,
+            "goals": 2,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2009-101012.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2009-101012.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2010-11": {
             "club": "Hannover 96",
@@ -11175,7 +12915,23 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2009-10",
+            "club": "Hannover 96",
+            "appearances": 16,
+            "starts": 9,
+            "minutes": 953,
+            "goals": 2,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2009-101012.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-hannover-manuel-schmiedebach",
@@ -11224,14 +12980,16 @@
         "weighting": "2011-12 highest; 2010-11 medium; 2009-10 least; no team trophy bonus",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hannover 96",
+            "appearances": 14,
+            "starts": 11,
+            "minutes": 935,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2009-101012.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2009-101012.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2010-11": {
             "club": "Hannover 96",
@@ -11264,7 +13022,23 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2009-10",
+            "club": "Hannover 96",
+            "appearances": 14,
+            "starts": 11,
+            "minutes": 935,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2009-101012.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-hannover-sergio-pinto",
@@ -11313,14 +13087,16 @@
         "weighting": "2011-12 highest; 2010-11 medium; 2009-10 least; no team trophy bonus",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hannover 96",
+            "appearances": 26,
+            "starts": 20,
+            "minutes": 1757,
+            "goals": 4,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2009-101012.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2009-101012.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2010-11": {
             "club": "Hannover 96",
@@ -11353,7 +13129,23 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2009-10",
+            "club": "Hannover 96",
+            "appearances": 26,
+            "starts": 20,
+            "minutes": 1757,
+            "goals": 4,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2009-101012.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-hannover-lars-stindl",
@@ -11491,14 +13283,16 @@
         "weighting": "2011-12 highest; 2010-11 medium; 2009-10 least; no team trophy bonus",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hannover 96",
+            "appearances": 26,
+            "starts": 20,
+            "minutes": 1699,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2009-101012.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2009-101012.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2010-11": {
             "club": "Hannover 96",
@@ -11531,7 +13325,23 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2009-10",
+            "club": "Hannover 96",
+            "appearances": 26,
+            "starts": 20,
+            "minutes": 1699,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2009-101012.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-hannover-moritz-stoppelkamp",
@@ -11620,7 +13430,23 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "reviewPending": [
+          {
+            "section": "4선발 이하 후보 자격 재검토 (9행)",
+            "report": [
+              "RW",
+              "backup",
+              "4",
+              "21"
+            ],
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2011-121012.html"
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-hannover-jan-schlaudraff",
@@ -11669,14 +13495,16 @@
         "weighting": "2011-12 highest; 2010-11 medium; 2009-10 least; no team trophy bonus",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hannover 96",
+            "appearances": 10,
+            "starts": 5,
+            "minutes": 520,
+            "goals": 2,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2009-101012.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2009-101012.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2010-11": {
             "club": "Hannover 96",
@@ -11709,7 +13537,23 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2009-10",
+            "club": "Hannover 96",
+            "appearances": 10,
+            "starts": 5,
+            "minutes": 520,
+            "goals": 2,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2009-101012.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-hannover-mohammed-abdellaoue",
@@ -11847,14 +13691,16 @@
         "weighting": "2011-12 highest; 2010-11 medium; 2009-10 least; no team trophy bonus",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hannover 96",
+            "appearances": 25,
+            "starts": 24,
+            "minutes": 2013,
+            "goals": 9,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2009-101012.html",
+            "verification": "evidence_pending",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2009-101012.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2010-11": {
             "club": "Hannover 96",
@@ -11887,7 +13733,23 @@
         "independent_birthdate_profile_check",
         "goals_assists_and_defensive_creative_provider_definitions"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2009-10",
+            "club": "Hannover 96",
+            "appearances": 25,
+            "starts": 24,
+            "minutes": 2013,
+            "goals": 9,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2009-101012.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2011-hannover-mame-biram-diouf",
@@ -12063,7 +13925,7 @@
       "position": "ST",
       "displayPosition": "ST",
       "playerId": "bundesliga-2011-schalke-klaas-jan-huntelaar",
-      "reason": "29 Bundesliga goals golden boot, VDV third 12.5%; 2010-11 8 goals lower, breakout 2011/12. DRAFT 4-2-3-1 position fit and individual-form assessment; comparison with teammate/league rivals remains provisional.",
+      "reason": "당해 훈텔라르 32선발 29골 대 레반도프스키 34선발 22골, 직전 시즌 양쪽 8골. 2시즌 전 해외리그 기록의 독립 검증은 보류하되 당해 득점·전방 기여를 우선해 훈텔라르 A+ 1위로 잠정 조정.",
       "status": "proposed_unapproved",
       "alternates": []
     }
@@ -12165,6 +14027,32 @@
         "Toni Kroos"
       ],
       "scope": "2009-10 + 2010-11 league appearances/goals (not full matchwise or subjective quality review)"
+    },
+    "segment2Corrections": {
+      "basisCommit": "e7ceebd9b5cda6bf3bedd40024c08bc5218f2200",
+      "report": "FOOTBALL_AUDIT_BUNDESLIGA_SEGMENT_2_CORRECTIONS.md",
+      "counts": {
+        "dob": 3,
+        "source_conflict_documented": 5,
+        "already_matching": 20,
+        "gk_conceded": 10,
+        "current_record_conceded": 10,
+        "review_flag": 12,
+        "prior_fields": 283,
+        "prior_club_filled": 67,
+        "prior_club_split_evidence": 8
+      },
+      "pending": [],
+      "scope": "source-based factual corrections and prior-club evidence; subjective review remains provisional",
+      "xiReconciliation": [
+        {
+          "pos": "ST",
+          "oldId": "bundesliga-2011-schalke-klaas-jan-huntelaar",
+          "newId": "bundesliga-2011-schalke-klaas-jan-huntelaar",
+          "rank": 1,
+          "tier": "A+"
+        }
+      ]
     }
   }
 }
