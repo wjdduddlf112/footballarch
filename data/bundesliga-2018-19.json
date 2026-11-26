@@ -47,12 +47,12 @@
       "https://datencenter.dfb.de/competitions/bundesliga/seasons/2018-2019/teams/vfl-wolfsburg",
       "https://datencenter.dfb.de/competitions/bundesliga/seasons/2018-2019/teams/eintracht-frankfurt"
     ],
-    "formation": "4-2-3-1",
-    "formationReview": "period representative not statistically proven modal for 306 Bundesliga matches",
+    "formation": "4-1-2-3",
+    "formationReview": "External audit report: DFB 306 matches, 612 team starting formations, 4-1-2-3 modal 119, 4-2-2-2 98, 4-2-3-1 91. Report-backed; no new matchwise verification in this follow-up.",
     "bestXiReview": {
       "status": "proposed_unapproved",
-      "formation": "4-2-3-1",
-      "method": "2018-19 individual contribution highest, historical continuity secondary, 2019 VDV 11 reference; tactical role fit prioritized"
+      "formation": "4-1-2-3",
+      "method": "2018-19 individual contribution highest, historical continuity secondary, 2019 VDV 11 reference; tactical role fit prioritized; one DM and two CM slots; existing position grades preserved."
     },
     "clubTactics": {
       "bayern": {
@@ -4531,13 +4531,15 @@
           "id": "RB",
           "section": "",
           "row": "| 틴 예드바이 | Tin Jedvaj | bundesliga-2018-leverkusen-tinjedvaj | RB | LB | 13선발 중 왼쪽 풀백 9경기, 오른쪽 1경기, 3백 수비 2경기, 미드필드 1경기. | [대조 자료 1](https://datencenter.dfb.de/datencenter/bundesliga/2018-2019/12-spieltag/bayer-04-leverkusen-vfb-stuttgart-2261280) · [대조 자료 2](https://datencenter.dfb.de/datencenter/bundesliga/2018-2019/24-spieltag/bayer-04-leverkusen-sc-freiburg-2261507) |",
-          "reason": "identity/scope mismatch"
+          "reason": "identity/scope mismatch",
+          "resolution": "applied provisional starting-position migration; see positionFollowup"
         },
         {
           "id": "RB",
           "section": "",
           "row": "| 토니 얀치케 | Tony Jantschke | bundesliga-2018-gladbach-tonyjantschke | RB | CB | 선발 10경기 전부 3백 또는 4백 중앙 수비 라인. | [대조 자료 1](https://datencenter.dfb.de/datencenter/bundesliga/2018-2019/3-spieltag/borussia-moenchengladbach-fc-schalke-04-2261200) · [대조 자료 2](https://datencenter.dfb.de/datencenter/bundesliga/2018-2019/25-spieltag/1-fsv-mainz-05-borussia-moenchengladbach-2261522) |",
-          "reason": "identity/scope mismatch"
+          "reason": "identity/scope mismatch",
+          "resolution": "applied provisional starting-position migration; see positionFollowup"
         },
         {
           "id": "bundesliga-2018-gladbach-patrickherrmann",
@@ -4567,13 +4569,15 @@
           "id": "bundesliga-2018-leverkusen-tinjedvaj",
           "section": "<summary>시즌 배정 대 선수 일반 프로필 (3행)</summary>",
           "row": "| 틴 예드바이 | Tin Jedvaj | Bayer 04 Leverkusen | bundesliga-2018-leverkusen-tinjedvaj | RB | LB | 13 | [근거](https://www.bdfutbol.com/en/j/j90928.html) |",
-          "reason": "requires separate evidence/selection review"
+          "reason": "requires separate evidence/selection review",
+          "resolution": "applied provisional starting-position migration; see positionFollowup"
         },
         {
           "id": "bundesliga-2018-gladbach-tonyjantschke",
           "section": "<summary>시즌 배정 대 선수 일반 프로필 (3행)</summary>",
           "row": "| 토니 얀치케 | Tony Jantschke | VfL Borussia Mönchengladbach | bundesliga-2018-gladbach-tonyjantschke | RB | CB | 10 | [근거](https://www.bdfutbol.com/en/j/j92975.html) |",
-          "reason": "requires separate evidence/selection review"
+          "reason": "requires separate evidence/selection review",
+          "resolution": "applied provisional starting-position migration; see positionFollowup"
         },
         {
           "id": "bundesliga-2018-frankfurt-goncalopaciencia",
@@ -4707,7 +4711,52 @@
           "reason": "club-specific values recorded, aggregate not overwritten"
         }
       ],
-      "formationReview": "DFB modal 4-1-2-3 (119/612); XI and site slot migration held"
+      "formationReview": "DFB modal 4-1-2-3 (119/612); provisional XI and browser layout migration applied.",
+      "formationFollowup": {
+        "formation": "4-1-2-3",
+        "source": "https://datencenter.dfb.de/competitions/bundesliga/seasons/2018-19",
+        "coverage": "612/612",
+        "modalCount": 119,
+        "previousFormation": "4-2-3-1",
+        "report": "FOOTBALL_AUDIT_BUNDESLIGA_SEGMENT_3_CORRECTIONS.md",
+        "status": "draft_unapproved",
+        "note": "Existing provisional grades retained. Halstenberg retained at LB for orthodox fullback fit; Kostic was a wingback. Independent quality comparison remains pending."
+      },
+      "positionFollowup": {
+        "status": "draft_unapproved",
+        "changes": [
+          {
+            "id": "bundesliga-2018-leverkusen-tinjedvaj",
+            "from": "RB",
+            "to": "LB",
+            "role": "backup",
+            "note": "DFB report: 13 starts, 9 LB, 1 RB, 2 central back-three, 1 midfield.",
+            "sources": [
+              "https://datencenter.dfb.de/datencenter/bundesliga/2018-2019/12-spieltag/bayer-04-leverkusen-vfb-stuttgart-2261280",
+              "https://datencenter.dfb.de/datencenter/bundesliga/2018-2019/24-spieltag/bayer-04-leverkusen-sc-freiburg-2261507"
+            ],
+            "oldRank": 10,
+            "oldRole": "backup",
+            "newRank": 8
+          },
+          {
+            "id": "bundesliga-2018-gladbach-tonyjantschke",
+            "from": "RB",
+            "to": "CB",
+            "role": "backup",
+            "note": "DFB report: all 10 starts at central defence in a back three or back four. Behind Ginter (27 starts) and Elvedi (30 starts) in the CB group.",
+            "sources": [
+              "https://datencenter.dfb.de/datencenter/bundesliga/2018-2019/3-spieltag/borussia-moenchengladbach-fc-schalke-04-2261200",
+              "https://datencenter.dfb.de/datencenter/bundesliga/2018-2019/25-spieltag/1-fsv-mainz-05-borussia-moenchengladbach-2261522"
+            ],
+            "oldRank": 11,
+            "oldRole": "starter",
+            "newRank": 22
+          }
+        ],
+        "method": "Retain existing relative order of unmoved candidates; insert transferred candidates by existing tier and current league minutes; reindex affected groups. No new tier ratings.",
+        "pending": "Substitution role distribution and independent three-season individual quality."
+      }
     }
   },
   "clubs": [
@@ -5827,7 +5876,7 @@
       "goals2018": 1,
       "assists2018": null,
       "tier": "B",
-      "rank": 12,
+      "rank": 10,
       "rankStatus": "provisional",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -7582,7 +7631,7 @@
       "goals2018": 0,
       "assists2018": null,
       "tier": "B-",
-      "rank": 10,
+      "rank": 11,
       "rankStatus": "provisional",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -7772,7 +7821,7 @@
       "goals2018": 1,
       "assists2018": null,
       "tier": "B",
-      "rank": 13,
+      "rank": 11,
       "rankStatus": "provisional",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -9550,7 +9599,7 @@
       "goals2018": 0,
       "assists2018": null,
       "tier": "B-",
-      "rank": 9,
+      "rank": 10,
       "rankStatus": "provisional",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -11604,11 +11653,11 @@
       "born": "1995-11-28",
       "birthSource": "https://datencenter.dfb.de/en/competitions/bundesliga/seasons/2018-2019/teams/bayer-leverkusen",
       "birthVerification": "DFB_2018_19_official_team_roster_linked_secondary_independent_confirmation_pending",
-      "position": "RB",
-      "originalTacticalRole": "RB",
-      "positionVerification": "2018_19_tactical_assignment_match_by_match_primary_position_frequency_pending",
+      "position": "LB",
+      "originalTacticalRole": "LB",
+      "positionVerification": "external_audit_DFB_starting_position_majority_DRAFT_substitute_roles_pending",
       "role": "backup",
-      "roleVerification": "BDFutbol league 16 appearances 13 starts 1121 minutes",
+      "roleVerification": "BDFutbol league 16 appearances 13 starts 1121 minutes; DFB report: 13 starts, 9 LB, 1 RB, 2 central back-three, 1 midfield.",
       "leagueAppearances": 16,
       "leagueStarts": 13,
       "leagueMinutes": 1121,
@@ -11616,15 +11665,17 @@
       "goals2018": 0,
       "assists2018": null,
       "tier": "B",
-      "rank": 10,
-      "rankStatus": "provisional",
+      "rank": 8,
+      "rankStatus": "provisional_report_position_migration",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
       "evaluationStatus": "provisional_prior_year_missing_or_DRAFT",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2018-191014.html",
         "https://datencenter.dfb.de/en/competitions/bundesliga/seasons/2018-2019/teams/bayer-leverkusen",
-        "https://www.bdfutbol.com/en/t/t2017-181014.html"
+        "https://www.bdfutbol.com/en/t/t2017-181014.html",
+        "https://datencenter.dfb.de/datencenter/bundesliga/2018-2019/12-spieltag/bayer-04-leverkusen-vfb-stuttgart-2261280",
+        "https://datencenter.dfb.de/datencenter/bundesliga/2018-2019/24-spieltag/bayer-04-leverkusen-sc-freiburg-2261507"
       ],
       "evidence": {
         "currentSeason": "https://www.bdfutbol.com/en/t/t2018-191014.html",
@@ -11679,8 +11730,8 @@
         },
         "status": "current_direct_prior_years_incomplete"
       },
-      "tierReview": "2018-19 리그 16경기 13선발 1121분 0골; 측면 수비·전진 가담을 참고한 잠정 평가. 1/2 past league-season appearance references available; B is draft grade, peer comparison and full individual historic quality independently unverified.",
-      "assessmentRationale": "2018-19 리그 16경기 13선발 1121분 0골; 측면 수비·전진 가담을 참고한 잠정 평가. The 2018-19 season dominates recency weighting. 2017-18 and 2016-17 only support historical continuity when source-linked; no inferred zero for gaps. Team placement is not a personal grade bonus.",
+      "tierReview": "2018-19 리그 16경기 13선발 1121분 0골; 왼쪽 측면 수비·전진 가담을 참고한 잠정 평가. 1/2 past league-season appearance references available; B is draft grade, peer comparison and full individual historic quality independently unverified.",
+      "assessmentRationale": "2018-19 리그 16경기 13선발 1121분 0골; 왼쪽 측면 수비·전진 가담을 참고한 잠정 평가. The 2018-19 season dominates recency weighting. 2017-18 and 2016-17 only support historical continuity when source-linked; no inferred zero for gaps. Team placement is not a personal grade bonus. DFB report: 13 starts, 9 LB, 1 RB, 2 central back-three, 1 midfield. Existing tier retained as DRAFT.",
       "verificationNeeded": [
         "independent_2016_17_and_2017_18_per_club_or_cross_league_records",
         "independent_match_by_match_position_frequency",
@@ -13088,11 +13139,11 @@
       "born": "1990-04-07",
       "birthSource": "https://datencenter.dfb.de/bundesliga/2018-2019/mannschaft/borussia-moenchengladbach",
       "birthVerification": "DFB_2018_19_official_team_roster_linked_secondary_independent_confirmation_pending",
-      "position": "RB",
-      "originalTacticalRole": "RB",
-      "positionVerification": "2018_19_tactical_assignment_match_by_match_primary_position_frequency_pending",
-      "role": "starter",
-      "roleVerification": "BDFutbol league 14 appearances 10 starts 932 minutes",
+      "position": "CB",
+      "originalTacticalRole": "CB",
+      "positionVerification": "external_audit_DFB_starting_position_majority_DRAFT_substitute_roles_pending",
+      "role": "backup",
+      "roleVerification": "BDFutbol league 14 appearances 10 starts 932 minutes; DFB report: all 10 starts at central defence in a back three or back four. Behind Ginter (27 starts) and Elvedi (30 starts) in the CB group.",
       "leagueAppearances": 14,
       "leagueStarts": 10,
       "leagueMinutes": 932,
@@ -13100,14 +13151,16 @@
       "goals2018": 0,
       "assists2018": null,
       "tier": "B",
-      "rank": 11,
-      "rankStatus": "provisional",
+      "rank": 22,
+      "rankStatus": "provisional_report_position_migration",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
       "evaluationStatus": "provisional_prior_year_missing_or_DRAFT",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2018-191018.html",
-        "https://datencenter.dfb.de/bundesliga/2018-2019/mannschaft/borussia-moenchengladbach"
+        "https://datencenter.dfb.de/bundesliga/2018-2019/mannschaft/borussia-moenchengladbach",
+        "https://datencenter.dfb.de/datencenter/bundesliga/2018-2019/3-spieltag/borussia-moenchengladbach-fc-schalke-04-2261200",
+        "https://datencenter.dfb.de/datencenter/bundesliga/2018-2019/25-spieltag/1-fsv-mainz-05-borussia-moenchengladbach-2261522"
       ],
       "evidence": {
         "currentSeason": "https://www.bdfutbol.com/en/t/t2018-191018.html",
@@ -13166,8 +13219,8 @@
         },
         "status": "current_direct_prior_years_incomplete"
       },
-      "tierReview": "2018-19 리그 14경기 10선발 932분 0골; 측면 수비·전진 가담을 참고한 잠정 평가. 0/2 past league-season appearance references available; B is draft grade, peer comparison and full individual historic quality independently unverified.",
-      "assessmentRationale": "2018-19 리그 14경기 10선발 932분 0골; 측면 수비·전진 가담을 참고한 잠정 평가. The 2018-19 season dominates recency weighting. 2017-18 and 2016-17 only support historical continuity when source-linked; no inferred zero for gaps. Team placement is not a personal grade bonus.",
+      "tierReview": "2018-19 리그 14경기 10선발 932분 0골; 중앙 수비 기여을 참고한 잠정 평가. 0/2 past league-season appearance references available; B is draft grade, peer comparison and full individual historic quality independently unverified.",
+      "assessmentRationale": "2018-19 리그 14경기 10선발 932분 0골; 중앙 수비 기여을 참고한 잠정 평가. The 2018-19 season dominates recency weighting. 2017-18 and 2016-17 only support historical continuity when source-linked; no inferred zero for gaps. Team placement is not a personal grade bonus. DFB report: all 10 starts at central defence in a back three or back four. Behind Ginter (27 starts) and Elvedi (30 starts) in the CB group. Existing tier retained as DRAFT.",
       "verificationNeeded": [
         "independent_2016_17_and_2017_18_per_club_or_cross_league_records",
         "independent_match_by_match_position_frequency",
@@ -13201,7 +13254,7 @@
       "goals2018": 0,
       "assists2018": null,
       "tier": "C+",
-      "rank": 14,
+      "rank": 12,
       "rankStatus": "provisional",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -14906,7 +14959,7 @@
       "goals2018": 1,
       "assists2018": null,
       "tier": "B",
-      "rank": 22,
+      "rank": 23,
       "rankStatus": "provisional",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -17028,7 +17081,7 @@
       "goals2018": 0,
       "assists2018": null,
       "tier": "B-",
-      "rank": 23,
+      "rank": 24,
       "rankStatus": "provisional",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -17227,7 +17280,7 @@
       "goals2018": 0,
       "assists2018": null,
       "tier": "B",
-      "rank": 8,
+      "rank": 9,
       "rankStatus": "provisional",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -18265,7 +18318,7 @@
       "position": "GK",
       "displayPosition": "GK",
       "playerId": "bundesliga-2018-leipzig-petergulacsi",
-      "reason": "33경기 33선발, 2926분. 리그 최상위 수준 선방 안정성; 팀 순위나 트로피 가산 없음. 2/2 past league-season appearance references available; A+ is draft grade, peer comparison and full individual historic quality independently unverified. Formation fit 4-2-3-1 prioritized: same-position competition, contemporary VDV context where available; not team title bonus.",
+      "reason": "33경기 33선발, 2926분. 리그 최상위 수준 선방 안정성; 팀 순위나 트로피 가산 없음. 2/2 past league-season appearance references available; A+ is draft grade, peer comparison and full individual historic quality independently unverified. Formation fit 4-1-2-3 prioritized: same-position competition, contemporary VDV context where available; not team title bonus.",
       "status": "proposed_unapproved",
       "alternates": []
     },
@@ -18273,7 +18326,7 @@
       "position": "RB",
       "displayPosition": "RB",
       "playerId": "bundesliga-2018-bayern-joshuakimmich",
-      "reason": "34경기 34선발 3060분 전경기 출전, 오른쪽 풀백에서 압도적 측면 전개와 찬스 제공. 2/2 past league-season appearance references available; A+ is draft grade, peer comparison and full individual historic quality independently unverified. Formation fit 4-2-3-1 prioritized: same-position competition, contemporary VDV context where available; not team title bonus.",
+      "reason": "34경기 34선발 3060분 전경기 출전, 오른쪽 풀백에서 압도적 측면 전개와 찬스 제공. 2/2 past league-season appearance references available; A+ is draft grade, peer comparison and full individual historic quality independently unverified. Formation fit 4-1-2-3 prioritized: same-position competition, contemporary VDV context where available; not team title bonus.",
       "status": "proposed_unapproved",
       "alternates": []
     },
@@ -18281,7 +18334,7 @@
       "position": "CB",
       "displayPosition": "CB",
       "playerId": "bundesliga-2018-bayern-niklassule",
-      "reason": "31경기 29선발; 중앙 수비 대인 경합 및 빌드업과 VDV 동료 선정 베스트 XI. 2/2 past league-season appearance references available; A+ is draft grade, peer comparison and full individual historic quality independently unverified. Formation fit 4-2-3-1 prioritized: same-position competition, contemporary VDV context where available; not team title bonus.",
+      "reason": "31경기 29선발; 중앙 수비 대인 경합 및 빌드업과 VDV 동료 선정 베스트 XI. 2/2 past league-season appearance references available; A+ is draft grade, peer comparison and full individual historic quality independently unverified. Formation fit 4-1-2-3 prioritized: same-position competition, contemporary VDV context where available; not team title bonus.",
       "status": "proposed_unapproved",
       "alternates": []
     },
@@ -18289,7 +18342,7 @@
       "position": "CB",
       "displayPosition": "CB",
       "playerId": "bundesliga-2018-frankfurt-makotohasebe",
-      "reason": "28경기 28선발, 3백 중앙 리베로로 라인 운영·빌드업 핵심; VDV 베스트 XI. 1/2 past league-season appearance references available; A is draft grade, peer comparison and full individual historic quality independently unverified. Formation fit 4-2-3-1 prioritized: same-position competition, contemporary VDV context where available; not team title bonus.",
+      "reason": "28경기 28선발, 3백 중앙 리베로로 라인 운영·빌드업 핵심; VDV 베스트 XI. 1/2 past league-season appearance references available; A is draft grade, peer comparison and full individual historic quality independently unverified. Formation fit 4-1-2-3 prioritized: same-position competition, contemporary VDV context where available; not team title bonus.",
       "status": "proposed_unapproved",
       "alternates": []
     },
@@ -18297,7 +18350,7 @@
       "position": "LB",
       "displayPosition": "LB",
       "playerId": "bundesliga-2018-leipzig-marcelhalstenberg",
-      "reason": "28경기 27선발, 왼쪽 풀백에서 수비 안정과 공격 전진 모두 기여. 2/2 past league-season appearance references available; A is draft grade, peer comparison and full individual historic quality independently unverified. Formation fit 4-2-3-1 prioritized: same-position competition, contemporary VDV context where available; not team title bonus.",
+      "reason": "28경기 27선발, 왼쪽 풀백에서 수비 안정과 공격 전진 모두 기여. 2/2 past league-season appearance references available; A is draft grade, peer comparison and full individual historic quality independently unverified. Formation fit 4-1-2-3 prioritized: same-position competition, contemporary VDV context where available; not team title bonus.",
       "status": "proposed_unapproved",
       "alternates": []
     },
@@ -18305,7 +18358,7 @@
       "position": "DM",
       "displayPosition": "DM",
       "playerId": "bundesliga-2018-dortmund-axelwitsel",
-      "reason": "33경기 32선발; 중앙 빌드업, 간격 조절과 수비 전환의 전술적 핵심. 0/2 past league-season appearance references available; A+ is draft grade, peer comparison and full individual historic quality independently unverified. Formation fit 4-2-3-1 prioritized: same-position competition, contemporary VDV context where available; not team title bonus.",
+      "reason": "33경기 32선발; 중앙 빌드업, 간격 조절과 수비 전환의 전술적 핵심. 0/2 past league-season appearance references available; A+ is draft grade, peer comparison and full individual historic quality independently unverified. Formation fit 4-1-2-3 prioritized: same-position competition, contemporary VDV context where available; not team title bonus.",
       "status": "proposed_unapproved",
       "alternates": []
     },
@@ -18313,15 +18366,15 @@
       "position": "CM",
       "displayPosition": "CM",
       "playerId": "bundesliga-2018-bayern-thiagoalcantara",
-      "reason": "30경기 26선발 2407분; 중원 탈압박·볼순환·템포조절에서 개인 기여. 2/2 past league-season appearance references available; A+ is draft grade, peer comparison and full individual historic quality independently unverified. Formation fit 4-2-3-1 prioritized: same-position competition, contemporary VDV context where available; not team title bonus.",
+      "reason": "30경기 26선발 2407분; 중원 탈압박·볼순환·템포조절에서 개인 기여. 2/2 past league-season appearance references available; A+ is draft grade, peer comparison and full individual historic quality independently unverified. Formation fit 4-1-2-3 prioritized: same-position competition, contemporary VDV context where available; not team title bonus.",
       "status": "proposed_unapproved",
       "alternates": []
     },
     {
-      "position": "CAM",
-      "displayPosition": "CAM",
-      "playerId": "bundesliga-2018-dortmund-marcoreus",
-      "reason": "VDV 2018-19 올해의 선수, 17골. 중앙 2선의 득점·기회 창출과 팀 공격 구조에 지대한 개인 기여. 2/2 past league-season appearance references available; S is draft grade, peer comparison and full individual historic quality independently unverified. Formation fit 4-2-3-1 prioritized: same-position competition, contemporary VDV context where available; not team title bonus.",
+      "position": "CM",
+      "displayPosition": "CM",
+      "playerId": "bundesliga-2018-leverkusen-julianbrandt",
+      "reason": "Existing CM rank 2 (A), selected as the second central midfielder next to Thiago in the report-backed 4-1-2-3. Late-season advanced central-eight role supports this provisional selection; CAM Reus remains S and is not reclassified to fill a slot. Full matchwise role and historical quality review pending.",
       "status": "proposed_unapproved",
       "alternates": []
     },
@@ -18329,7 +18382,7 @@
       "position": "LW",
       "displayPosition": "LW",
       "playerId": "bundesliga-2018-gladbach-thorganhazard",
-      "reason": "33경기 전경기 선발 10골, 왼쪽 측면 득점 및 기회 창출의 꾸준함. 0/2 past league-season appearance references available; A is draft grade, peer comparison and full individual historic quality independently unverified. Formation fit 4-2-3-1 prioritized: same-position competition, contemporary VDV context where available; not team title bonus.",
+      "reason": "33경기 전경기 선발 10골, 왼쪽 측면 득점 및 기회 창출의 꾸준함. 0/2 past league-season appearance references available; A is draft grade, peer comparison and full individual historic quality independently unverified. Formation fit 4-1-2-3 prioritized: same-position competition, contemporary VDV context where available; not team title bonus.",
       "status": "proposed_unapproved",
       "alternates": []
     },
@@ -18337,7 +18390,7 @@
       "position": "RW",
       "displayPosition": "RW",
       "playerId": "bundesliga-2018-dortmund-jadonsancho",
-      "reason": "34경기 12골, VDV 2018-19 최고의 신인 수상. 우측 공격 창출과 생산성 최상위. 0/2 past league-season appearance references available; A+ is draft grade, peer comparison and full individual historic quality independently unverified. Formation fit 4-2-3-1 prioritized: same-position competition, contemporary VDV context where available; not team title bonus.",
+      "reason": "34경기 12골, VDV 2018-19 최고의 신인 수상. 우측 공격 창출과 생산성 최상위. 0/2 past league-season appearance references available; A+ is draft grade, peer comparison and full individual historic quality independently unverified. Formation fit 4-1-2-3 prioritized: same-position competition, contemporary VDV context where available; not team title bonus.",
       "status": "proposed_unapproved",
       "alternates": []
     },
@@ -18345,7 +18398,7 @@
       "position": "ST",
       "displayPosition": "ST",
       "playerId": "bundesliga-2018-bayern-robertlewandowski",
-      "reason": "33선발 22골로 2018-19 리그 득점왕; 2016-17·2017-18 득점 경쟁력의 지속성도 고려. 2/2 past league-season appearance references available; S is draft grade, peer comparison and full individual historic quality independently unverified. Formation fit 4-2-3-1 prioritized: same-position competition, contemporary VDV context where available; not team title bonus.",
+      "reason": "33선발 22골로 2018-19 리그 득점왕; 2016-17·2017-18 득점 경쟁력의 지속성도 고려. 2/2 past league-season appearance references available; S is draft grade, peer comparison and full individual historic quality independently unverified. Formation fit 4-1-2-3 prioritized: same-position competition, contemporary VDV context where available; not team title bonus.",
       "status": "proposed_unapproved",
       "alternates": []
     }
@@ -18374,7 +18427,8 @@
       "RB Leipzig uses 4-2-2-2, Sabitzer right half-space mapped RW, no forced LW",
       "Brandt late-season advanced central eight versus earlier LW, matchwise tally pending",
       "Weigl used at CB due injuries; full matchwise role split pending",
-      "Bayern James/Müller share advanced central attacking roles"
+      "Bayern James/Müller share advanced central attacking roles",
+      "Report-backed 2018-19 migration: Jedvaj RB→LB; Jantschke RB→CB backup. Substitute and in-match roles pending."
     ],
     "knownGaps": [
       "2016-17/2017-18 historical records incomplete and copied solely as labeled provisional references, not independently audited",
