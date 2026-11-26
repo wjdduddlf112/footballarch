@@ -22,3 +22,7 @@ Report: FOOTBALL_AUDIT_SERIEA_SEGMENT_3_CORRECTIONS.md (1505 lines). Main unchan
 - 2024-25: Kean → Lukaku (ST rank 2); Retegui already selected. Current 14 goals + 10 assists vs 19 + 3, stronger previous two years. Remaining 9 XI challenges held; reasons in season metadata. No tier changes; ranking for selected replacements already correct.
 - All existing standings and qualifier membership preserved; 2021-22 Vlahović club-specific records remain distinct. Prior stats filled only when original values compatible, club-level records retained separately. 302 positive assists matched on season/player/club; missing assists not treated as zero.
 - Structural checks before writing: unique player IDs, starts alias and starts <= appearances, eligible clubs, 11 distinct XI IDs/positions, unchanged standings, prior starts <= appearances. Existing native test runs tracked separately.
+
+## Post-write verification and metadata reconciliation
+
+Initial commit: 2017-18 native GitHub Actions passed. Existing 2018-19–2025-26 verifier logic executed in JavaScript isolate with fetched JSON file-reader adapter (not native Node); 6/8 passed initially, 2019-20 and 2020-21 failed stale previousYearGaps metadata only. Recalculated actual numeric slots/missing counts for all nine seasons; retained historical linked-source provenance separately. Remaining prior appearance gaps by season: 60, 66, 68, 55, 54, 59, 92, 49, 82. Final verifier rerun separate.
