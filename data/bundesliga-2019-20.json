@@ -105,8 +105,8 @@
       "individualFullThreeSeasonQualitativeVerified": 0,
       "sourceLinked2019_20SeasonPlayers": 142,
       "priorSeasonRecordCounts": {
-        "2017-18": 99,
-        "2018-19": 112,
+        "2017-18": 100,
+        "2018-19": 113,
         "2019-20": 142
       },
       "independentDOBDoubleChecked": 0,
@@ -3161,7 +3161,8 @@
           "id": "CB",
           "section": "",
           "row": "| 뤼카 에르난데스 | Lucas Hernández | bundesliga-2019-bayern-lucashernandez | CB | LB 재검토 | 10선발 중 왼쪽 풀백 6경기, 중앙 수비 4경기. 교체 출전 9경기의 위치도 대조. | [대조 자료 1](https://datencenter.dfb.de/datencenter/bundesliga/2019-20/6-spieltag/sc-paderborn-07-bayern-muenchen-2279372) · [대조 자료 2](https://datencenter.dfb.de/datencenter/bundesliga/2019-20/3-spieltag/bayern-muenchen-1-fsv-mainz-05-2279260) |",
-          "reason": "identity/scope mismatch"
+          "reason": "identity/scope mismatch",
+          "resolution": "reviewed in usageFollowup"
         },
         {
           "id": "bundesliga-2019-gladbach-patrickherrmann",
@@ -3173,7 +3174,8 @@
           "id": "bundesliga-2019-bayern-lucashernandez",
           "section": "<summary>시즌 배정 대 선수 일반 프로필 (1행)</summary>",
           "row": "| 뤼카 에르난데스 | Lucas Hernández | FC Bayern München | bundesliga-2019-bayern-lucashernandez | CB | LB | 10 | [근거](https://www.bdfutbol.com/en/j/j202479.html) |",
-          "reason": "requires separate evidence/selection review"
+          "reason": "requires separate evidence/selection review",
+          "resolution": "reviewed in usageFollowup"
         },
         {
           "id": "bundesliga-2019-bayern-joshuazirkzee",
@@ -3325,7 +3327,33 @@
           "reason": "club-specific values recorded, aggregate not overwritten"
         }
       ],
-      "formationReview": "DFB modal existing formation confirmed by report; no formation change"
+      "formationReview": "DFB modal existing formation confirmed by report; no formation change",
+      "usageFollowup": {
+        "report": "FOOTBALL_AUDIT_BUNDESLIGA_SEGMENT_3_CORRECTIONS.md",
+        "status": "draft_unapproved",
+        "positions": [
+          {
+            "id": "bundesliga-2019-bayern-lucashernandez",
+            "before": "CB",
+            "after": "LB",
+            "reason": "DFB 10 starts: 6 LB, 4 CB, 19 apps/915 min; Davies 24 starts/2233 min first choice. Prior Atlético class supports B, current injury-limited role dominates.",
+            "sources": [
+              "https://datencenter.dfb.de/datencenter/bundesliga/2019-20/6-spieltag/sc-paderborn-07-bayern-muenchen-2279372",
+              "https://datencenter.dfb.de/datencenter/bundesliga/2019-20/3-spieltag/bayern-muenchen-1-fsv-mainz-05-2279260",
+              "https://www.bdfutbol.com/es/j/j202479.html"
+            ]
+          },
+          {
+            "id": "bundesliga-2019-bayern-niklassule",
+            "before": "starter",
+            "after": "backup",
+            "reason": "BDFutbol 2019-20 league 8 appearances / 8 starts / 642 minutes; Alaba 27/Boateng 23 starts primary CBs; Süle 8 starts after injury third candidate, prior 20/29 starts sustain B+."
+          }
+        ],
+        "excluded": [],
+        "xi": [],
+        "method": "Current role and individual contribution prioritized, prior two seasons secondary. DFB starting positions; substitute roles pending."
+      }
     }
   },
   "clubs": [
@@ -4035,8 +4063,8 @@
       "position": "CB",
       "originalTacticalRole": "CB",
       "positionVerification": "2019_20_tactical_role_provisional_match_by_match_primary_frequency_pending",
-      "role": "starter",
-      "roleVerification": "BDFutbol 2019-20 league 8 appearances / 8 starts / 642 minutes",
+      "role": "backup",
+      "roleVerification": "BDFutbol 2019-20 league 8 appearances / 8 starts / 642 minutes; Alaba 27/Boateng 23 starts primary CBs; Süle 8 starts after injury third candidate, prior 20/29 starts sustain B+.",
       "leagueAppearances": 8,
       "leagueStarts": 8,
       "leagueMinutes": 642,
@@ -4128,11 +4156,11 @@
       "born": "1996-02-14",
       "birthSource": "https://datencenter.dfb.de/competitions/bundesliga/seasons/2019-20/teams/bayern-muenchen",
       "birthVerification": "DFB_2019_20_roster_reference_secondary_person_level_check_pending",
-      "position": "CB",
-      "originalTacticalRole": "CB",
-      "positionVerification": "2019_20_tactical_role_provisional_match_by_match_primary_frequency_pending",
+      "position": "LB",
+      "originalTacticalRole": "DFB 10 starts: 6 LB, 4 CB, 19 apps/915 min; Davies 24 starts/2233 min first choice. Prior Atlético class supports B, current injury-limited role dominates.",
+      "positionVerification": "DFB_audit_starting_position_majority_DRAFT",
       "role": "backup",
-      "roleVerification": "BDFutbol 2019-20 league 19 appearances / 10 starts / 915 minutes",
+      "roleVerification": "BDFutbol 2019-20 league 19 appearances / 10 starts / 915 minutes; DFB 10 starts: 6 LB, 4 CB, 19 apps/915 min; Davies 24 starts/2233 min first choice. Prior Atlético class supports B, current injury-limited role dominates.",
       "leagueAppearances": 19,
       "leagueStarts": 10,
       "leagueMinutes": 915,
@@ -4140,14 +4168,17 @@
       "goals2019": 0,
       "assists2019": null,
       "tier": "B",
-      "rank": 27,
+      "rank": 10,
       "rankStatus": "provisional_grade_and_current_form_rank",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
       "evaluationStatus": "current_year_direct_prior_years_partial",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2019-201016.html",
-        "https://datencenter.dfb.de/competitions/bundesliga/seasons/2019-20/teams/bayern-muenchen"
+        "https://datencenter.dfb.de/competitions/bundesliga/seasons/2019-20/teams/bayern-muenchen",
+        "https://datencenter.dfb.de/datencenter/bundesliga/2019-20/6-spieltag/sc-paderborn-07-bayern-muenchen-2279372",
+        "https://datencenter.dfb.de/datencenter/bundesliga/2019-20/3-spieltag/bayern-muenchen-1-fsv-mainz-05-2279260",
+        "https://www.bdfutbol.com/es/j/j202479.html"
       ],
       "evidence": {
         "currentSeason": "https://www.bdfutbol.com/en/t/t2019-201016.html",
@@ -4164,26 +4195,34 @@
         "weighting": "2019-20 highest, 2018-19 next, 2017-18 lowest; individual not team position/trophies/future fame",
         "records": {
           "2017-18": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Atlético de Madrid",
+            "league": "La Liga",
+            "appearances": 27,
+            "starts": 24,
+            "minutes": 2120,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_club_or_other_league"
+            "source": "https://www.bdfutbol.com/es/j/j202479.html",
+            "verification": "external_audit_report_DRAFT_followup_BDFutbol_cross_league_source",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/es/j/j202479.html",
+              "https://www.statscrew.com/worldfootball/stats/p-hernaluc003"
+            ]
           },
           "2018-19": {
-            "club": null,
-            "league": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Atlético de Madrid",
+            "league": "La Liga",
+            "appearances": 14,
+            "starts": 13,
+            "minutes": 1119,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_club_or_other_league"
+            "source": "https://www.bdfutbol.com/es/j/j202479.html",
+            "verification": "external_audit_report_DRAFT_followup_BDFutbol_cross_league_source",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/es/j/j202479.html",
+              "https://www.statscrew.com/worldfootball/stats/p-hernaluc003"
+            ]
           },
           "2019-20": {
             "club": "FC Bayern München",
@@ -4197,10 +4236,10 @@
             "verification": "2019_20_BDFutbol_team_lineup_current_league_source"
           }
         },
-        "status": "current_direct_prior_years_missing_or_ARCHIVED_DRAFT"
+        "status": "current_direct_prior_cross_league_sources_linked_DRAFT"
       },
-      "tierReview": "2019-20 리그 19경기 / 10선발 / 915분 / 0골; 센터백 수비·후방 배급와 실제 기용 기간을 반영한 잠정 비교. B 잠정 등급; 2019-20 활약에 최대 가중치, 과거 시즌 기록 확보 0/2. 3시즌 질적 검증은 미완료.",
-      "assessmentRationale": "2019-20 리그 19경기 / 10선발 / 915분 / 0골; 센터백 수비·후방 배급와 실제 기용 기간을 반영한 잠정 비교. 2017-18 기록 미확보 / 2018-19 기록 미확보. 자료 없는 연도는 실적 0으로 간주하지 않음. 팀 순위 자체는 티어 가산점 제외.",
+      "tierReview": "DFB 10 starts: 6 LB, 4 CB, 19 apps/915 min; Davies 24 starts/2233 min first choice. Prior Atlético class supports B, current injury-limited role dominates. Existing B retained, current season weighted most.",
+      "assessmentRationale": "DFB 10 starts: 6 LB, 4 CB, 19 apps/915 min; Davies 24 starts/2233 min first choice. Prior Atlético class supports B, current injury-limited role dominates. Existing B retained, current season weighted most. Atlético 27/24/2120 and 14/13/1119; provider minutes differ slightly.",
       "verificationNeeded": [
         "independent_prior_2017_18_and_2018_19_data_for_all_leagues_and_clubs",
         "2019_20_matchwise_predominant_position_confirmation",
@@ -6306,7 +6345,7 @@
       "goals2019": 1,
       "assists2019": null,
       "tier": "B-",
-      "rank": 12,
+      "rank": 13,
       "rankStatus": "provisional_grade_and_current_form_rank",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -8172,7 +8211,7 @@
       "goals2019": 0,
       "assists2019": null,
       "tier": "B",
-      "rank": 28,
+      "rank": 27,
       "rankStatus": "provisional_grade_and_current_form_rank",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -12117,7 +12156,7 @@
       "goals2019": 0,
       "assists2019": null,
       "tier": "B",
-      "rank": 10,
+      "rank": 11,
       "rankStatus": "provisional_grade_and_current_form_rank",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -14399,7 +14438,7 @@
       "goals2019": 2,
       "assists2019": null,
       "tier": "B",
-      "rank": 11,
+      "rank": 12,
       "rankStatus": "provisional_grade_and_current_form_rank",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -16199,7 +16238,7 @@
       "goals2019": 0,
       "assists2019": null,
       "tier": "B-",
-      "rank": 29,
+      "rank": 28,
       "rankStatus": "provisional_grade_and_current_form_rank",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
@@ -16396,7 +16435,7 @@
       "goals2019": 0,
       "assists2019": null,
       "tier": "C+",
-      "rank": 13,
+      "rank": 14,
       "rankStatus": "provisional_grade_and_current_form_rank",
       "review": "draft_unapproved",
       "verificationStatus": "partially_verified",
