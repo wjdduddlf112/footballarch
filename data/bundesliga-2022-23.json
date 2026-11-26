@@ -2482,13 +2482,15 @@
           "id": "bundesliga-2022-bayern-alphonsodavies",
           "section": "<summary>Best XI와 포지션 순위 불일치 (2행)</summary>",
           "row": "| LB | 알폰소 데이비스 | 2 | bundesliga-2022-bayern-alphonsodavies | 하파엘 게헤이루 1위 (bundesliga-2022-dortmund-raphaelguerreiro) | 당해 역할과 최근 세 시즌 개인 기여를 대조해 순위·XI·선정 이유 정합화. |",
-          "reason": "identity/scope mismatch"
+          "reason": "identity/scope mismatch",
+          "resolution": "reviewed in usageFollowup: tactical selection documented"
         },
         {
           "id": "bundesliga-2022-leipzig-dominikszoboszlai",
           "section": "<summary>Best XI와 포지션 순위 불일치 (2행)</summary>",
           "row": "| RW | 도미니크 소보슬러이 | 2 | bundesliga-2022-leipzig-dominikszoboszlai | 무사 디아비 1위 (bundesliga-2022-leverkusen-moussadiaby) | 소보슬러이의 우측 공격형 미드필더와 디아비의 우측 윙어 기용을 경기 기록에서 대조. |",
-          "reason": "identity/scope mismatch"
+          "reason": "identity/scope mismatch",
+          "resolution": "reviewed in usageFollowup: tactical selection documented"
         },
         {
           "id": "bundesliga-2022-dortmund-julianryerson",
@@ -2655,7 +2657,26 @@
           "reason": "club-specific values recorded, aggregate not overwritten"
         }
       ],
-      "formationReview": "DFB modal existing formation confirmed by report; no formation change"
+      "formationReview": "DFB modal existing formation confirmed by report; no formation change",
+      "usageFollowup": {
+        "report": "FOOTBALL_AUDIT_BUNDESLIGA_SEGMENT_3_CORRECTIONS.md",
+        "status": "draft_unapproved",
+        "positions": [],
+        "excluded": [],
+        "xi": [
+          {
+            "old": "bundesliga-2022-bayern-alphonsodavies",
+            "new": "bundesliga-2022-dortmund-raphaelguerreiro",
+            "reason": "Guerreiro A rank 1 26 starts/2296 min/4G/12A vs Davies A rank 2 24/2047/1G. Current contribution outweighs prior continuity; some CM usage acknowledged."
+          },
+          {
+            "old": "bundesliga-2022-leipzig-dominikszoboszlai",
+            "new": "bundesliga-2022-leverkusen-moussadiaby",
+            "reason": "Diaby A rank 1 33 starts/2716 min/9G/8A vs Szoboszlai A rank 2 28/2451/6G/8A; true RW closer to 4-2-3-1 fit."
+          }
+        ],
+        "method": "Current season highest weight; prior two seasons secondary; no team outcome bonus. DRAFT positional quality and tactical suitability."
+      }
     }
   },
   "clubs": [
@@ -16366,9 +16387,9 @@
     {
       "position": "LB",
       "displayPosition": "LB",
-      "playerId": "bundesliga-2022-bayern-alphonsodavies",
+      "playerId": "bundesliga-2022-dortmund-raphaelguerreiro",
       "status": "proposed_unapproved",
-      "reason": "2022-23 개인 영향력 및 LB 전술적 적합성; 현 시즌 24선발 2047분 1골. VDV 2022-23 동료 투표는 참고 증거이지 그 자체로 확정 평가가 아님. 이전 2시즌 독립적 정성 검증 미완료.",
+      "reason": "Guerreiro A rank 1 26 starts/2296 min/4G/12A vs Davies A rank 2 24/2047/1G. Current contribution outweighs prior continuity; some CM usage acknowledged. DRAFT; full independent three-season quality comparison incomplete.",
       "alternates": []
     },
     {
@@ -16406,9 +16427,9 @@
     {
       "position": "RW",
       "displayPosition": "RW",
-      "playerId": "bundesliga-2022-leipzig-dominikszoboszlai",
+      "playerId": "bundesliga-2022-leverkusen-moussadiaby",
       "status": "proposed_unapproved",
-      "reason": "2022-23 개인 영향력 및 RW 전술적 적합성; 현 시즌 28선발 2451분 6골. VDV 2022-23 동료 투표는 참고 증거이지 그 자체로 확정 평가가 아님. 이전 2시즌 독립적 정성 검증 미완료.",
+      "reason": "Diaby A rank 1 33 starts/2716 min/9G/8A vs Szoboszlai A rank 2 28/2451/6G/8A; true RW closer to 4-2-3-1 fit. DRAFT; full independent three-season quality comparison incomplete.",
       "alternates": []
     },
     {
