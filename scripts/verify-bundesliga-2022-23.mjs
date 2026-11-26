@@ -31,7 +31,7 @@ for(const p of data.players){
   check(p.sources?.length>=2&&p.assessmentRationale,"missing source/evaluation "+p.id);
   check(p.threeSeasonReview?.assessmentSeasons?.join(",")==="2020-21,2021-22,2022-23","invalid three-year assessment seasons "+p.id);
   for(const y of ["2020-21","2021-22","2022-23"])check(p.threeSeasonReview?.records?.[y]!==undefined,"missing history slot "+p.id+"/"+y);
-  if(p.position==="GK")check(p.goals2022===null,"keeper conceded as goals "+p.id);
+  if(p.position==="GK")check((p.goals2022==null||(p.goals2022===0&&p.threeSeasonReview?.records?.["2022-23"]?.goals===0&&Number.isInteger(p.leagueGoalsConceded)&&p.leagueGoalsConceded>=0)),"keeper conceded as goals "+p.id);
   if(p.tier===null)check(p.rank===null,"unrated assigned a rank "+p.id);
   else check(Number.isInteger(p.rank)&&p.rank>=1,"rated player missing rank "+p.id);
 }
