@@ -44,9 +44,9 @@
       "source": "BDFutbol club tables; FootballSquads roster DOB transcriptions; official profile overrides where noted",
       "sourceLimitations": "Some hybrid roles have provisional assignment. Madrid GK Kepa selected instead of injury-limited Courtois; Atlético and Girona reserve GK zero league appearances omitted. Not all eligible reserve positions filled. Birth source conflicts corrected for Raphinha and Ayoze; independent row audit pending for other players.",
       "priorCoverage": {
-        "0": 22,
-        "1": 45,
-        "2": 67
+        "0": 14,
+        "1": 30,
+        "2": 90
       },
       "priorSnapshotNote": "Secondary Opta-derived archive incomplete; same ID link preferred, unique exact name link flagged as identity pending. No missing figures interpreted as zero.",
       "birthDateCorrections20261125": [
@@ -56,7 +56,17 @@
           "to": "1998-04-06"
         }
       ],
-      "birthDateCorrectionNote": "Official LaLiga profiles supersede incorrect prior roster dates; original player IDs preserved for stable references; no tier/position change."
+      "birthDateCorrectionNote": "Official LaLiga profiles supersede incorrect prior roster dates; original player IDs preserved for stable references; no tier/position change.",
+      "externalReview": {
+        "report": "audit/LALIGA_2017_2026_EXTERNAL_REVIEW_CORRECTIONS.json",
+        "status": "draft_external_report_applied",
+        "dobMissingCount": 0,
+        "startsMissingCount": 0,
+        "gkConcededRecorded": 12,
+        "fullHistoricalFactVerification": false,
+        "notes": "Follow-up applied; minutes standardized, XI discrepancies editorially resolved; matchwise position evidence remains incomplete."
+      },
+      "externalFollowup": "Eligibility and alternative positions reviewed; remaining matchwise modal uncertainty is explicitly recorded; no user approval implied."
     }
   },
   "clubs": [
@@ -551,8 +561,20 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "evidence_pending_not_zero"
+            "records": [
+              {
+                "club": "Real Madrid",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-222.html",
+                "leagueStarts": 2,
+                "leagueAppearances": 2,
+                "leagueMinutes": 180,
+                "leagueGoals": 0,
+                "leagueGoalsConceded": 2,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available"
           },
           {
             "season": "2022-23",
@@ -566,13 +588,16 @@
                 "leagueGoals": 0,
                 "priorTier": "C+",
                 "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2022-23.json",
-                "status": "prior_DRAFT_reference_not_independently_reverified"
+                "status": "prior_DRAFT_reference_not_independently_reverified",
+                "leagueGoalsConceded": 7
               }
             ],
             "status": "archive_reference"
           }
         ],
-        "officialSeasonAward": false
+        "officialSeasonAward": false,
+        "goalkeeperStatsSource": "https://www.bdfutbol.com/en/t/t2023-242.html",
+        "goalkeeperStatDefinition": "leagueGoals = goals scored; leagueGoalsConceded = goals conceded"
       },
       "threeSeasonReview": {
         "seasons": [
@@ -582,7 +607,7 @@
         ],
         "relativeWeight": "2023-24 > 2022-23 > 2021-22",
         "olderSeasonsSourceAudit": "prior_archive_and_partial_secondary_snapshot; independent_full_3_year_audit_pending",
-        "priorCoverage": 1
+        "priorCoverage": 2
       },
       "assessmentRationale": "2023-24 21경기 21선발 1890분 0골. 부상 공백을 메운 안정적인 선방. 직전 두 시즌 자료 1/2시즌 기존 미승인 기록 또는 2차 통계 스냅샷 연결; 미확보는 0으로 간주하지 않음. 현재 시즌 최우선의 정성적 A- 잠정 평가; 구단 순위 가산 없음.",
       "tierReview": "부상 공백을 메운 안정적인 선방",
@@ -590,7 +615,8 @@
         "status": "provisional",
         "pool": 12,
         "method": "tier; selected editorial peer order; otherwise starts and minutes tiebreak, not definitive performance order"
-      }
+      },
+      "leagueGoalsConceded": 17
     },
     {
       "id": "laliga-202324-madrid-kepaarrizabalaga-19941003",
@@ -650,7 +676,9 @@
             "status": "evidence_pending_not_zero"
           }
         ],
-        "officialSeasonAward": false
+        "officialSeasonAward": false,
+        "goalkeeperStatsSource": "https://www.bdfutbol.com/en/t/t2023-242.html",
+        "goalkeeperStatDefinition": "leagueGoals = goals scored; leagueGoalsConceded = goals conceded"
       },
       "threeSeasonReview": {
         "seasons": [
@@ -668,7 +696,8 @@
         "status": "provisional",
         "pool": 12,
         "method": "tier; selected editorial peer order; otherwise starts and minutes tiebreak, not definitive performance order"
-      }
+      },
+      "leagueGoalsConceded": 9
     },
     {
       "id": "laliga-202324-madrid-antoniorudiger-19930303",
@@ -830,8 +859,19 @@
           },
           {
             "season": "2022-23",
-            "records": [],
-            "status": "evidence_pending_not_zero"
+            "records": [
+              {
+                "club": "Real Madrid",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2022-232.html",
+                "leagueStarts": 18,
+                "leagueAppearances": 27,
+                "leagueMinutes": 1632,
+                "leagueGoals": 1,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available"
           }
         ],
         "officialSeasonAward": false
@@ -844,7 +884,7 @@
         ],
         "relativeWeight": "2023-24 > 2022-23 > 2021-22",
         "olderSeasonsSourceAudit": "prior_archive_and_partial_secondary_snapshot; independent_full_3_year_audit_pending",
-        "priorCoverage": 1
+        "priorCoverage": 2
       },
       "assessmentRationale": "2023-24 29경기 18선발 1740분 0골. 부상자 대체와 수비 조율. 직전 두 시즌 자료 1/2시즌 기존 미승인 기록 또는 2차 통계 스냅샷 연결; 미확보는 0으로 간주하지 않음. 현재 시즌 최우선의 정성적 B+ 잠정 평가; 구단 순위 가산 없음.",
       "tierReview": "부상자 대체와 수비 조율",
@@ -893,8 +933,19 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Real Madrid",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-222.html",
+                "leagueStarts": 30,
+                "leagueAppearances": 30,
+                "leagueMinutes": 2645,
+                "leagueGoals": 2,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p50188",
@@ -998,8 +1049,19 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Real Madrid",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-222.html",
+                "leagueStarts": 20,
+                "leagueAppearances": 22,
+                "leagueMinutes": 1739,
+                "leagueGoals": 2,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p206255",
@@ -1090,8 +1152,19 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Rayo Vallecano",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-225.html",
+                "leagueStarts": 34,
+                "leagueAppearances": 34,
+                "leagueMinutes": 3027,
+                "leagueGoals": 1,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p227166",
@@ -1108,8 +1181,19 @@
           },
           {
             "season": "2022-23",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Rayo Vallecano",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2022-235.html",
+                "leagueStarts": 38,
+                "leagueAppearances": 38,
+                "leagueMinutes": 3409,
+                "leagueGoals": 2,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p227166",
@@ -1500,8 +1584,19 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Real Madrid",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-222.html",
+                "leagueStarts": 13,
+                "leagueAppearances": 26,
+                "leagueMinutes": 1230,
+                "leagueGoals": 2,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p475561",
@@ -1711,8 +1806,19 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Real Madrid",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-222.html",
+                "leagueStarts": 19,
+                "leagueAppearances": 31,
+                "leagueMinutes": 1830,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p223255",
@@ -1729,8 +1835,19 @@
           },
           {
             "season": "2022-23",
-            "records": [],
-            "status": "evidence_pending_not_zero"
+            "records": [
+              {
+                "club": "Real Madrid",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2022-232.html",
+                "leagueStarts": 29,
+                "leagueAppearances": 34,
+                "leagueMinutes": 2510,
+                "leagueGoals": 7,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available"
           }
         ],
         "officialSeasonAward": true
@@ -1743,7 +1860,7 @@
         ],
         "relativeWeight": "2023-24 > 2022-23 > 2021-22",
         "olderSeasonsSourceAudit": "prior_archive_and_partial_secondary_snapshot; independent_full_3_year_audit_pending",
-        "priorCoverage": 1
+        "priorCoverage": 2
       },
       "assessmentRationale": "2023-24 37경기 33선발 2911분 2골. 넓은 활동 반경, 전환과 중원 균형, 공식 시즌 선정. 직전 두 시즌 자료 1/2시즌 기존 미승인 기록 또는 2차 통계 스냅샷 연결; 미확보는 0으로 간주하지 않음. 현재 시즌 최우선의 정성적 A+ 잠정 평가; 구단 순위 가산 없음.",
       "tierReview": "넓은 활동 반경, 전환과 중원 균형, 공식 시즌 선정",
@@ -2144,8 +2261,19 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "evidence_pending_not_zero"
+            "records": [
+              {
+                "club": "Real Madrid",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-222.html",
+                "leagueStarts": 17,
+                "leagueAppearances": 33,
+                "leagueMinutes": 1524,
+                "leagueGoals": 4,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available"
           },
           {
             "season": "2022-23",
@@ -2175,7 +2303,7 @@
         ],
         "relativeWeight": "2023-24 > 2022-23 > 2021-22",
         "olderSeasonsSourceAudit": "prior_archive_and_partial_secondary_snapshot; independent_full_3_year_audit_pending",
-        "priorCoverage": 1
+        "priorCoverage": 2
       },
       "assessmentRationale": "2023-24 34경기 28선발 2390분 10골. 다이아몬드 오른쪽 공격수, 연계와 득점. 직전 두 시즌 자료 1/2시즌 기존 미승인 기록 또는 2차 통계 스냅샷 연결; 미확보는 0으로 간주하지 않음. 현재 시즌 최우선의 정성적 A 잠정 평가; 구단 순위 가산 없음.",
       "tierReview": "다이아몬드 오른쪽 공격수, 연계와 득점",
@@ -2221,13 +2349,35 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "evidence_pending_not_zero"
+            "records": [
+              {
+                "club": "Deportivo Alavés",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-223.html",
+                "leagueStarts": 35,
+                "leagueAppearances": 37,
+                "leagueMinutes": 3125,
+                "leagueGoals": 14,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available"
           },
           {
             "season": "2022-23",
-            "records": [],
-            "status": "evidence_pending_not_zero"
+            "records": [
+              {
+                "club": "RCD Espanyol",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2022-2314.html",
+                "leagueStarts": 33,
+                "leagueAppearances": 34,
+                "leagueMinutes": 2989,
+                "leagueGoals": 16,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available"
           }
         ],
         "officialSeasonAward": false
@@ -2240,7 +2390,7 @@
         ],
         "relativeWeight": "2023-24 > 2022-23 > 2021-22",
         "olderSeasonsSourceAudit": "prior_archive_and_partial_secondary_snapshot; independent_full_3_year_audit_pending",
-        "priorCoverage": 0
+        "priorCoverage": 2
       },
       "assessmentRationale": "2023-24 34경기 15선발 1674분 10골. 박스 안 득점과 직접 공격의 대안. 직전 두 시즌 자료 0/2시즌 기존 미승인 기록 또는 2차 통계 스냅샷 연결; 미확보는 0으로 간주하지 않음. 현재 시즌 최우선의 정성적 B+ 잠정 평가; 구단 순위 가산 없음.",
       "tierReview": "박스 안 득점과 직접 공격의 대안",
@@ -2299,7 +2449,8 @@
                 "leagueGoals": 0,
                 "priorTier": "A",
                 "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2021-22.json",
-                "status": "prior_DRAFT_reference_not_independently_reverified"
+                "status": "prior_DRAFT_reference_not_independently_reverified",
+                "leagueGoalsConceded": 34
               }
             ],
             "status": "archive_reference",
@@ -2329,13 +2480,16 @@
                 "leagueGoals": 0,
                 "priorTier": "S",
                 "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2022-23.json",
-                "status": "prior_DRAFT_reference_not_independently_reverified"
+                "status": "prior_DRAFT_reference_not_independently_reverified",
+                "leagueGoalsConceded": 18
               }
             ],
             "status": "archive_reference"
           }
         ],
-        "officialSeasonAward": false
+        "officialSeasonAward": false,
+        "goalkeeperStatsSource": "https://www.bdfutbol.com/en/t/t2023-241.html",
+        "goalkeeperStatDefinition": "leagueGoals = goals scored; leagueGoalsConceded = goals conceded"
       },
       "threeSeasonReview": {
         "seasons": [
@@ -2353,7 +2507,8 @@
         "status": "provisional",
         "pool": 12,
         "method": "tier; selected editorial peer order; otherwise starts and minutes tiebreak, not definitive performance order"
-      }
+      },
+      "leagueGoalsConceded": 27
     },
     {
       "id": "laliga-202324-barca-inakipena-19990302",
@@ -2411,8 +2566,20 @@
           },
           {
             "season": "2022-23",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "FC Barcelona",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2022-231.html",
+                "leagueStarts": 0,
+                "leagueAppearances": 2,
+                "leagueMinutes": 71,
+                "leagueGoals": null,
+                "leagueGoalsConceded": 2,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p210341",
@@ -2428,7 +2595,9 @@
             ]
           }
         ],
-        "officialSeasonAward": false
+        "officialSeasonAward": false,
+        "goalkeeperStatsSource": "https://www.bdfutbol.com/en/t/t2023-241.html",
+        "goalkeeperStatDefinition": "leagueGoals = goals scored; leagueGoalsConceded = goals conceded"
       },
       "threeSeasonReview": {
         "seasons": [
@@ -2446,7 +2615,8 @@
         "status": "provisional",
         "pool": 12,
         "method": "tier; selected editorial peer order; otherwise starts and minutes tiebreak, not definitive performance order"
-      }
+      },
+      "leagueGoalsConceded": 17
     },
     {
       "id": "laliga-202324-barca-ronaldaraujo-19990307",
@@ -2487,8 +2657,19 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "FC Barcelona",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-221.html",
+                "leagueStarts": 25,
+                "leagueAppearances": 30,
+                "leagueMinutes": 2270,
+                "leagueGoals": 4,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p445087",
@@ -2643,8 +2824,19 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Athletic Club",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-226.html",
+                "leagueStarts": 26,
+                "leagueAppearances": 27,
+                "leagueMinutes": 2343,
+                "leagueGoals": 3,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p90318",
@@ -2661,8 +2853,19 @@
           },
           {
             "season": "2022-23",
-            "records": [],
-            "status": "evidence_pending_not_zero"
+            "records": [
+              {
+                "club": "Athletic Club",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2022-236.html",
+                "leagueStarts": 15,
+                "leagueAppearances": 15,
+                "leagueMinutes": 1339,
+                "leagueGoals": 1,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available"
           }
         ],
         "officialSeasonAward": false
@@ -2675,7 +2878,7 @@
         ],
         "relativeWeight": "2023-24 > 2022-23 > 2021-22",
         "olderSeasonsSourceAudit": "prior_archive_and_partial_secondary_snapshot; independent_full_3_year_audit_pending",
-        "priorCoverage": 1
+        "priorCoverage": 2
       },
       "assessmentRationale": "2023-24 20경기 13선발 1291분 0골. 경험 있는 수비 로테이션. 직전 두 시즌 자료 1/2시즌 기존 미승인 기록 또는 2차 통계 스냅샷 연결; 미확보는 0으로 간주하지 않음. 현재 시즌 최우선의 정성적 B 잠정 평가; 구단 순위 가산 없음.",
       "tierReview": "경험 있는 수비 로테이션",
@@ -2826,8 +3029,19 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "FC Barcelona",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-221.html",
+                "leagueStarts": 2,
+                "leagueAppearances": 5,
+                "leagueMinutes": 187,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p493019",
@@ -2919,8 +3133,19 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Sevilla FC",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-2233.html",
+                "leagueStarts": 31,
+                "leagueAppearances": 32,
+                "leagueMinutes": 2738,
+                "leagueGoals": 2,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p220325",
@@ -3071,7 +3296,14 @@
             ]
           }
         ],
-        "officialSeasonAward": false
+        "officialSeasonAward": false,
+        "positionAudit": {
+          "previous": "DM",
+          "alternative": "CB",
+          "source": "https://www.fcbarcelona.com/en/football/first-team/jugadors/4495/-------------------andreas---------------christensen",
+          "reason": "공식 구단 기록상 CB와 미드필드 병행. 시즌 전체 주 포지션 집계 미확보.",
+          "decision": "retain_provisional_pending_matchwise_count"
+        }
       },
       "threeSeasonReview": {
         "seasons": [
@@ -3133,8 +3365,19 @@
           },
           {
             "season": "2022-23",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Girona FC",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2022-2378.html",
+                "leagueStarts": 33,
+                "leagueAppearances": 33,
+                "leagueMinutes": 2952,
+                "leagueGoals": 2,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p78056",
@@ -3300,8 +3543,19 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "FC Barcelona",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-221.html",
+                "leagueStarts": 30,
+                "leagueAppearances": 32,
+                "leagueMinutes": 2487,
+                "leagueGoals": 3,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p209712",
@@ -3391,8 +3645,19 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "evidence_pending_not_zero"
+            "records": [
+              {
+                "club": "FC Barcelona",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-221.html",
+                "leagueStarts": 10,
+                "leagueAppearances": 12,
+                "leagueMinutes": 889,
+                "leagueGoals": 3,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available"
           },
           {
             "season": "2022-23",
@@ -3422,7 +3687,7 @@
         ],
         "relativeWeight": "2023-24 > 2022-23 > 2021-22",
         "olderSeasonsSourceAudit": "prior_archive_and_partial_secondary_snapshot; independent_full_3_year_audit_pending",
-        "priorCoverage": 1
+        "priorCoverage": 2
       },
       "assessmentRationale": "2023-24 24경기 16선발 1481분 4골. 기술과 창조성, 반복 부상. 직전 두 시즌 자료 1/2시즌 기존 미승인 기록 또는 2차 통계 스냅샷 연결; 미확보는 0으로 간주하지 않음. 현재 시즌 최우선의 정성적 A- 잠정 평가; 구단 순위 가산 없음.",
       "tierReview": "기술과 창조성, 반복 부상",
@@ -3533,13 +3798,35 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "evidence_pending_not_zero"
+            "records": [
+              {
+                "club": "Atlético de Madrid",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-227.html",
+                "leagueStarts": 13,
+                "leagueAppearances": 24,
+                "leagueMinutes": 1262,
+                "leagueGoals": 8,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available"
           },
           {
             "season": "2022-23",
-            "records": [],
-            "status": "evidence_pending_not_zero"
+            "records": [
+              {
+                "club": "Atlético de Madrid",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2022-237.html",
+                "leagueStarts": 7,
+                "leagueAppearances": 14,
+                "leagueMinutes": 649,
+                "leagueGoals": 4,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available"
           }
         ],
         "officialSeasonAward": false
@@ -3552,7 +3839,7 @@
         ],
         "relativeWeight": "2023-24 > 2022-23 > 2021-22",
         "olderSeasonsSourceAudit": "prior_archive_and_partial_secondary_snapshot; independent_full_3_year_audit_pending",
-        "priorCoverage": 0
+        "priorCoverage": 2
       },
       "assessmentRationale": "2023-24 30경기 18선발 1544분 7골. 왼쪽 안쪽 공격 역할, 기복. 직전 두 시즌 자료 0/2시즌 기존 미승인 기록 또는 2차 통계 스냅샷 연결; 미확보는 0으로 간주하지 않음. 현재 시즌 최우선의 정성적 B+ 잠정 평가; 구단 순위 가산 없음.",
       "tierReview": "왼쪽 안쪽 공격 역할, 기복",
@@ -3600,8 +3887,19 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "FC Barcelona",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-221.html",
+                "leagueStarts": 17,
+                "leagueAppearances": 18,
+                "leagueMinutes": 1418,
+                "leagueGoals": 4,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p224444",
@@ -3696,8 +3994,19 @@
           },
           {
             "season": "2022-23",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "FC Barcelona",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2022-231.html",
+                "leagueStarts": 0,
+                "leagueAppearances": 1,
+                "leagueMinutes": 7,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p593109",
@@ -3976,7 +4285,12 @@
             "status": "evidence_pending_not_zero"
           }
         ],
-        "officialSeasonAward": false
+        "officialSeasonAward": false,
+        "eligibilityAudit": {
+          "decision": "retain_provisional_backup",
+          "reason": "2선발 14출전. 해당 구단 등록 후보군에서 동일 포지션 주전 Robert Lewandowski의 유일한 예비 후보. 5선발 하한 미설정; 저출전 비상·로테이션 후보로 유지. 전체 미등록 선수와의 비교는 미완료.",
+          "source": "https://www.bdfutbol.com/en/t/t2023-241.html"
+        }
       },
       "threeSeasonReview": {
         "seasons": [
@@ -4038,8 +4352,20 @@
           },
           {
             "season": "2022-23",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Girona FC",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2022-2378.html",
+                "leagueStarts": 28,
+                "leagueAppearances": 28,
+                "leagueMinutes": 2520,
+                "leagueGoals": null,
+                "leagueGoalsConceded": 37,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p102884",
@@ -4055,7 +4381,9 @@
             ]
           }
         ],
-        "officialSeasonAward": false
+        "officialSeasonAward": false,
+        "goalkeeperStatsSource": "https://www.bdfutbol.com/en/t/t2023-2478.html",
+        "goalkeeperStatDefinition": "leagueGoals = goals scored; leagueGoalsConceded = goals conceded"
       },
       "threeSeasonReview": {
         "seasons": [
@@ -4073,7 +4401,8 @@
         "status": "provisional",
         "pool": 12,
         "method": "tier; selected editorial peer order; otherwise starts and minutes tiebreak, not definitive performance order"
-      }
+      },
+      "leagueGoalsConceded": 46
     },
     {
       "id": "laliga-202324-girona-daleyblind-19900309",
@@ -4178,8 +4507,19 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "FC Barcelona",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-221.html",
+                "leagueStarts": 23,
+                "leagueAppearances": 26,
+                "leagueMinutes": 2043,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p432656",
@@ -4270,8 +4610,19 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "RCD Espanyol",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-2214.html",
+                "leagueStarts": 8,
+                "leagueAppearances": 18,
+                "leagueMinutes": 743,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p11129",
@@ -4288,8 +4639,19 @@
           },
           {
             "season": "2022-23",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Girona FC",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2022-2378.html",
+                "leagueStarts": 19,
+                "leagueAppearances": 20,
+                "leagueMinutes": 1657,
+                "leagueGoals": 3,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p11129",
@@ -4364,8 +4726,19 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Real Madrid",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-222.html",
+                "leagueStarts": 3,
+                "leagueAppearances": 3,
+                "leagueMinutes": 262,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p248498",
@@ -4382,8 +4755,19 @@
           },
           {
             "season": "2022-23",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Girona FC",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2022-2378.html",
+                "leagueStarts": 27,
+                "leagueAppearances": 34,
+                "leagueMinutes": 2398,
+                "leagueGoals": 2,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p248498",
@@ -4460,8 +4844,19 @@
           },
           {
             "season": "2022-23",
-            "records": [],
-            "status": "evidence_pending_not_zero"
+            "records": [
+              {
+                "club": "Girona FC",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2022-2378.html",
+                "leagueStarts": 12,
+                "leagueAppearances": 25,
+                "leagueMinutes": 1151,
+                "leagueGoals": 1,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available"
           }
         ],
         "officialSeasonAward": false
@@ -4474,7 +4869,7 @@
         ],
         "relativeWeight": "2023-24 > 2022-23 > 2021-22",
         "olderSeasonsSourceAudit": "prior_archive_and_partial_secondary_snapshot; independent_full_3_year_audit_pending",
-        "priorCoverage": 0
+        "priorCoverage": 1
       },
       "assessmentRationale": "2023-24 34경기 24선발 2245분 1골. 측면 전진과 공격 연결. 직전 두 시즌 자료 0/2시즌 기존 미승인 기록 또는 2차 통계 스냅샷 연결; 미확보는 0으로 간주하지 않음. 현재 시즌 최우선의 정성적 A- 잠정 평가; 구단 순위 가산 없음.",
       "tierReview": "측면 전진과 공격 연결",
@@ -4526,8 +4921,19 @@
           },
           {
             "season": "2022-23",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Girona FC",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2022-2378.html",
+                "leagueStarts": 32,
+                "leagueAppearances": 33,
+                "leagueMinutes": 2738,
+                "leagueGoals": 3,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p517333",
@@ -4606,8 +5012,19 @@
           },
           {
             "season": "2022-23",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Girona FC",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2022-2378.html",
+                "leagueStarts": 26,
+                "leagueAppearances": 30,
+                "leagueMinutes": 2340,
+                "leagueGoals": 1,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p178871",
@@ -4688,7 +5105,12 @@
             "status": "evidence_pending_not_zero"
           }
         ],
-        "officialSeasonAward": false
+        "officialSeasonAward": false,
+        "eligibilityAudit": {
+          "decision": "retain_provisional_backup",
+          "reason": "2선발 18출전. 해당 구단 등록 후보군에서 동일 포지션 주전 Aleix García의 유일한 예비 후보. 5선발 하한 미설정; 저출전 비상·로테이션 후보로 유지. 전체 미등록 선수와의 비교는 미완료.",
+          "source": "https://www.bdfutbol.com/en/t/t2023-2478.html"
+        }
       },
       "threeSeasonReview": {
         "seasons": [
@@ -4746,8 +5168,19 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "RCD Espanyol",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-2214.html",
+                "leagueStarts": 19,
+                "leagueAppearances": 23,
+                "leagueMinutes": 1649,
+                "leagueGoals": 1,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p226541",
@@ -4764,8 +5197,19 @@
           },
           {
             "season": "2022-23",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Girona FC",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2022-2378.html",
+                "leagueStarts": 12,
+                "leagueAppearances": 20,
+                "leagueMinutes": 965,
+                "leagueGoals": 2,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p226541",
@@ -4838,13 +5282,35 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "evidence_pending_not_zero"
+            "records": [
+              {
+                "club": "Deportivo Alavés",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-223.html",
+                "leagueStarts": 2,
+                "leagueAppearances": 6,
+                "leagueMinutes": 165,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available"
           },
           {
             "season": "2022-23",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Girona FC",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2022-2378.html",
+                "leagueStarts": 18,
+                "leagueAppearances": 24,
+                "leagueMinutes": 1591,
+                "leagueGoals": 3,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p224467",
@@ -4870,7 +5336,7 @@
         ],
         "relativeWeight": "2023-24 > 2022-23 > 2021-22",
         "olderSeasonsSourceAudit": "prior_archive_and_partial_secondary_snapshot; independent_full_3_year_audit_pending",
-        "priorCoverage": 1
+        "priorCoverage": 2
       },
       "assessmentRationale": "2023-24 36경기 33선발 2747분 5골. 중앙 연결 및 전방 지원, CM 겸임. 직전 두 시즌 자료 1/2시즌 기존 미승인 기록 또는 2차 통계 스냅샷 연결; 미확보는 0으로 간주하지 않음. 현재 시즌 최우선의 정성적 A- 잠정 평가; 구단 순위 가산 없음.",
       "tierReview": "중앙 연결 및 전방 지원, CM 겸임",
@@ -4922,8 +5388,19 @@
           },
           {
             "season": "2022-23",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "FC Barcelona",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2022-231.html",
+                "leagueStarts": 1,
+                "leagueAppearances": 8,
+                "leagueMinutes": 138,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p522627",
@@ -4939,7 +5416,12 @@
             ]
           }
         ],
-        "officialSeasonAward": false
+        "officialSeasonAward": false,
+        "eligibilityAudit": {
+          "decision": "retain_provisional_backup",
+          "reason": "4선발 26출전. 해당 구단 등록 후보군에서 동일 포지션 주전 Iván Martín의 유일한 예비 후보. 5선발 하한 미설정; 저출전 비상·로테이션 후보로 유지. 전체 미등록 선수와의 비교는 미완료.",
+          "source": "https://www.bdfutbol.com/en/t/t2023-2478.html"
+        }
       },
       "threeSeasonReview": {
         "seasons": [
@@ -5067,8 +5549,19 @@
           },
           {
             "season": "2022-23",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Girona FC",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2022-2378.html",
+                "leagueStarts": 7,
+                "leagueAppearances": 25,
+                "leagueMinutes": 958,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p469274",
@@ -5084,7 +5577,12 @@
             ]
           }
         ],
-        "officialSeasonAward": false
+        "officialSeasonAward": false,
+        "eligibilityAudit": {
+          "decision": "retain_provisional_backup",
+          "reason": "2선발 27출전. 해당 구단 등록 후보군에서 동일 포지션 주전 Sávio의 유일한 예비 후보. 5선발 하한 미설정; 저출전 비상·로테이션 후보로 유지. 전체 미등록 선수와의 비교는 미완료.",
+          "source": "https://www.bdfutbol.com/en/t/t2023-2478.html"
+        }
       },
       "threeSeasonReview": {
         "seasons": [
@@ -5146,8 +5644,19 @@
           },
           {
             "season": "2022-23",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Girona FC",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2022-2378.html",
+                "leagueStarts": 17,
+                "leagueAppearances": 19,
+                "leagueMinutes": 1494,
+                "leagueGoals": 3,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p194282",
@@ -5219,13 +5728,35 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "evidence_pending_not_zero"
+            "records": [
+              {
+                "club": "Real Sociedad",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-2230.html",
+                "leagueStarts": 17,
+                "leagueAppearances": 37,
+                "leagueMinutes": 1586,
+                "leagueGoals": 1,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available"
           },
           {
             "season": "2022-23",
-            "records": [],
-            "status": "evidence_pending_not_zero"
+            "records": [
+              {
+                "club": "Getafe CF",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2022-2316.html",
+                "leagueStarts": 17,
+                "leagueAppearances": 34,
+                "leagueMinutes": 1762,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available"
           }
         ],
         "officialSeasonAward": false
@@ -5238,7 +5769,7 @@
         ],
         "relativeWeight": "2023-24 > 2022-23 > 2021-22",
         "olderSeasonsSourceAudit": "prior_archive_and_partial_secondary_snapshot; independent_full_3_year_audit_pending",
-        "priorCoverage": 0
+        "priorCoverage": 2
       },
       "assessmentRationale": "2023-24 33경기 11선발 1178분 7골. 공격 여러 역할에서 교체 득점. 직전 두 시즌 자료 0/2시즌 기존 미승인 기록 또는 2차 통계 스냅샷 연결; 미확보는 0으로 간주하지 않음. 현재 시즌 최우선의 정성적 B+ 잠정 평가; 구단 순위 가산 없음.",
       "tierReview": "공격 여러 역할에서 교체 득점",
@@ -5356,8 +5887,19 @@
           },
           {
             "season": "2022-23",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Girona FC",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2022-2378.html",
+                "leagueStarts": 8,
+                "leagueAppearances": 32,
+                "leagueMinutes": 1075,
+                "leagueGoals": 9,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p49464",
@@ -5443,7 +5985,8 @@
                 "leagueGoals": 0,
                 "priorTier": "A",
                 "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2021-22.json",
-                "status": "prior_DRAFT_reference_not_independently_reverified"
+                "status": "prior_DRAFT_reference_not_independently_reverified",
+                "leagueGoalsConceded": 43
               }
             ],
             "status": "archive_reference",
@@ -5473,7 +6016,8 @@
                 "leagueGoals": 0,
                 "priorTier": "A",
                 "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2022-23.json",
-                "status": "prior_DRAFT_reference_not_independently_reverified"
+                "status": "prior_DRAFT_reference_not_independently_reverified",
+                "leagueGoalsConceded": 20
               }
             ],
             "status": "archive_reference",
@@ -5492,7 +6036,9 @@
             ]
           }
         ],
-        "officialSeasonAward": false
+        "officialSeasonAward": false,
+        "goalkeeperStatsSource": "https://www.bdfutbol.com/en/t/t2023-247.html",
+        "goalkeeperStatDefinition": "leagueGoals = goals scored; leagueGoalsConceded = goals conceded"
       },
       "threeSeasonReview": {
         "seasons": [
@@ -5510,7 +6056,8 @@
         "status": "provisional",
         "pool": 12,
         "method": "tier; selected editorial peer order; otherwise starts and minutes tiebreak, not definitive performance order"
-      }
+      },
+      "leagueGoalsConceded": 43
     },
     {
       "id": "laliga-202324-atleti-axelwitsel-19890112",
@@ -5897,8 +6444,19 @@
           },
           {
             "season": "2022-23",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Valencia CF",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2022-2336.html",
+                "leagueStarts": 33,
+                "leagueAppearances": 38,
+                "leagueMinutes": 2898,
+                "leagueGoals": 6,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p249823",
@@ -5976,8 +6534,19 @@
           },
           {
             "season": "2022-23",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Girona FC",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2022-2378.html",
+                "leagueStarts": 25,
+                "leagueAppearances": 34,
+                "leagueMinutes": 2187,
+                "leagueGoals": 4,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p437834",
@@ -6056,8 +6625,19 @@
           },
           {
             "season": "2022-23",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Atlético de Madrid",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2022-237.html",
+                "leagueStarts": 33,
+                "leagueAppearances": 33,
+                "leagueMinutes": 2872,
+                "leagueGoals": 4,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p221586",
@@ -6157,7 +6737,14 @@
             "status": "evidence_pending_not_zero"
           }
         ],
-        "officialSeasonAward": false
+        "officialSeasonAward": false,
+        "positionAudit": {
+          "previous": "RB",
+          "alternative": "CB",
+          "source": "https://www.bdfutbol.com/en/j/j405.html",
+          "reason": "선수 프로필상 대체 포지션 확인. 시즌 최빈 포지션을 확정할 경기별 집계 미확보.",
+          "decision": "retain_provisional_pending_matchwise_count"
+        }
       },
       "threeSeasonReview": {
         "seasons": [
@@ -6324,8 +6911,19 @@
           },
           {
             "season": "2022-23",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Atlético de Madrid",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2022-237.html",
+                "leagueStarts": 6,
+                "leagueAppearances": 21,
+                "leagueMinutes": 715,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p503523",
@@ -6399,8 +6997,19 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Atlético de Madrid",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-227.html",
+                "leagueStarts": 24,
+                "leagueAppearances": 36,
+                "leagueMinutes": 2155,
+                "leagueGoals": 3,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p119141",
@@ -6596,8 +7205,19 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "evidence_pending_not_zero"
+            "records": [
+              {
+                "club": "Atlético de Madrid",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-227.html",
+                "leagueStarts": 2,
+                "leagueAppearances": 3,
+                "leagueMinutes": 200,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available"
           },
           {
             "season": "2022-23",
@@ -6640,7 +7260,7 @@
         ],
         "relativeWeight": "2023-24 > 2022-23 > 2021-22",
         "olderSeasonsSourceAudit": "prior_archive_and_partial_secondary_snapshot; independent_full_3_year_audit_pending",
-        "priorCoverage": 1
+        "priorCoverage": 2
       },
       "assessmentRationale": "2023-24 34경기 14선발 1364분 1골. 중원 교체 역할과 낮아진 영향. 직전 두 시즌 자료 1/2시즌 기존 미승인 기록 또는 2차 통계 스냅샷 연결; 미확보는 0으로 간주하지 않음. 현재 시즌 최우선의 정성적 B- 잠정 평가; 구단 순위 가산 없음.",
       "tierReview": "중원 교체 역할과 낮아진 영향",
@@ -6991,8 +7611,20 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Athletic Club",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-226.html",
+                "leagueStarts": 34,
+                "leagueAppearances": 34,
+                "leagueMinutes": 3060,
+                "leagueGoals": null,
+                "leagueGoalsConceded": 31,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p212769",
@@ -7009,11 +7641,25 @@
           },
           {
             "season": "2022-23",
-            "records": [],
-            "status": "evidence_pending_not_zero"
+            "records": [
+              {
+                "club": "Athletic Club",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2022-236.html",
+                "leagueStarts": 31,
+                "leagueAppearances": 31,
+                "leagueMinutes": 2746,
+                "leagueGoals": null,
+                "leagueGoalsConceded": 37,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available"
           }
         ],
-        "officialSeasonAward": true
+        "officialSeasonAward": true,
+        "goalkeeperStatsSource": "https://www.bdfutbol.com/en/t/t2023-246.html",
+        "goalkeeperStatDefinition": "leagueGoals = goals scored; leagueGoalsConceded = goals conceded"
       },
       "threeSeasonReview": {
         "seasons": [
@@ -7023,7 +7669,7 @@
         ],
         "relativeWeight": "2023-24 > 2022-23 > 2021-22",
         "olderSeasonsSourceAudit": "prior_archive_and_partial_secondary_snapshot; independent_full_3_year_audit_pending",
-        "priorCoverage": 1
+        "priorCoverage": 2
       },
       "assessmentRationale": "2023-24 36경기 36선발 3184분 0골. 선방과 안정성, 공식 시즌 선정. 직전 두 시즌 자료 1/2시즌 기존 미승인 기록 또는 2차 통계 스냅샷 연결; 미확보는 0으로 간주하지 않음. 현재 시즌 최우선의 정성적 A+ 잠정 평가; 구단 순위 가산 없음.",
       "tierReview": "선방과 안정성, 공식 시즌 선정",
@@ -7031,7 +7677,8 @@
         "status": "provisional",
         "pool": 12,
         "method": "tier; selected editorial peer order; otherwise starts and minutes tiebreak, not definitive performance order"
-      }
+      },
+      "leagueGoalsConceded": 33
     },
     {
       "id": "laliga-202324-athletic-julenagirrezabala-20001226",
@@ -7071,8 +7718,20 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Athletic Club",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-226.html",
+                "leagueStarts": 4,
+                "leagueAppearances": 4,
+                "leagueMinutes": 360,
+                "leagueGoals": null,
+                "leagueGoalsConceded": 5,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p470508",
@@ -7089,8 +7748,20 @@
           },
           {
             "season": "2022-23",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Athletic Club",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2022-236.html",
+                "leagueStarts": 7,
+                "leagueAppearances": 8,
+                "leagueMinutes": 674,
+                "leagueGoals": null,
+                "leagueGoalsConceded": 6,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p470508",
@@ -7106,7 +7777,9 @@
             ]
           }
         ],
-        "officialSeasonAward": false
+        "officialSeasonAward": false,
+        "goalkeeperStatsSource": "https://www.bdfutbol.com/en/t/t2023-246.html",
+        "goalkeeperStatDefinition": "leagueGoals = goals scored; leagueGoalsConceded = goals conceded"
       },
       "threeSeasonReview": {
         "seasons": [
@@ -7124,7 +7797,8 @@
         "status": "provisional",
         "pool": 12,
         "method": "tier; selected editorial peer order; otherwise starts and minutes tiebreak, not definitive performance order"
-      }
+      },
+      "leagueGoalsConceded": 4
     },
     {
       "id": "laliga-202324-athletic-danivivian-19990705",
@@ -7164,8 +7838,19 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Athletic Club",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-226.html",
+                "leagueStarts": 22,
+                "leagueAppearances": 24,
+                "leagueMinutes": 1985,
+                "leagueGoals": 2,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p437554",
@@ -7182,8 +7867,19 @@
           },
           {
             "season": "2022-23",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Athletic Club",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2022-236.html",
+                "leagueStarts": 26,
+                "leagueAppearances": 29,
+                "leagueMinutes": 2374,
+                "leagueGoals": 1,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p437554",
@@ -7275,8 +7971,19 @@
           },
           {
             "season": "2022-23",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Athletic Club",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2022-236.html",
+                "leagueStarts": 9,
+                "leagueAppearances": 16,
+                "leagueMinutes": 854,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p440593",
@@ -7350,8 +8057,19 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Athletic Club",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-226.html",
+                "leagueStarts": 21,
+                "leagueAppearances": 22,
+                "leagueMinutes": 1860,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p197319",
@@ -7368,8 +8086,19 @@
           },
           {
             "season": "2022-23",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Athletic Club",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2022-236.html",
+                "leagueStarts": 27,
+                "leagueAppearances": 28,
+                "leagueMinutes": 2337,
+                "leagueGoals": 1,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p197319",
@@ -7443,8 +8172,19 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Athletic Club",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-226.html",
+                "leagueStarts": 11,
+                "leagueAppearances": 14,
+                "leagueMinutes": 1015,
+                "leagueGoals": 1,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p42670",
@@ -7461,8 +8201,19 @@
           },
           {
             "season": "2022-23",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Athletic Club",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2022-236.html",
+                "leagueStarts": 27,
+                "leagueAppearances": 29,
+                "leagueMinutes": 2408,
+                "leagueGoals": 1,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p42670",
@@ -7601,8 +8352,19 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Athletic Club",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-226.html",
+                "leagueStarts": 19,
+                "leagueAppearances": 22,
+                "leagueMinutes": 1685,
+                "leagueGoals": 1,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p59062",
@@ -7619,8 +8381,19 @@
           },
           {
             "season": "2022-23",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Athletic Club",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2022-236.html",
+                "leagueStarts": 32,
+                "leagueAppearances": 37,
+                "leagueMinutes": 2823,
+                "leagueGoals": 1,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p59062",
@@ -7694,8 +8467,19 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Athletic Club",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-226.html",
+                "leagueStarts": 22,
+                "leagueAppearances": 25,
+                "leagueMinutes": 1927,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p197314",
@@ -7712,8 +8496,19 @@
           },
           {
             "season": "2022-23",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Athletic Club",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2022-236.html",
+                "leagueStarts": 14,
+                "leagueAppearances": 20,
+                "leagueMinutes": 1321,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p197314",
@@ -7729,7 +8524,14 @@
             ]
           }
         ],
-        "officialSeasonAward": false
+        "officialSeasonAward": false,
+        "positionAudit": {
+          "previous": "RB",
+          "alternative": "LB",
+          "source": "https://www.athletic-club.eus/en/news/2024/06/05/athletic-club-debuts-in-2023-24/",
+          "reason": "좌측 풀백 출전 사례 확인. 양쪽 최빈값 미확보.",
+          "decision": "retain_provisional_pending_matchwise_count"
+        }
       },
       "threeSeasonReview": {
         "seasons": [
@@ -7787,8 +8589,19 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Athletic Club",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-226.html",
+                "leagueStarts": 17,
+                "leagueAppearances": 32,
+                "leagueMinutes": 1357,
+                "leagueGoals": 2,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p197326",
@@ -7805,8 +8618,19 @@
           },
           {
             "season": "2022-23",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Athletic Club",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2022-236.html",
+                "leagueStarts": 28,
+                "leagueAppearances": 36,
+                "leagueMinutes": 2574,
+                "leagueGoals": 3,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p197326",
@@ -7945,8 +8769,19 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "RCD Mallorca",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-2224.html",
+                "leagueStarts": 17,
+                "leagueAppearances": 22,
+                "leagueMinutes": 1389,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p96736",
@@ -7963,8 +8798,19 @@
           },
           {
             "season": "2022-23",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "RCD Mallorca",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2022-2324.html",
+                "leagueStarts": 28,
+                "leagueAppearances": 30,
+                "leagueMinutes": 2457,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p96736",
@@ -8042,8 +8888,19 @@
           },
           {
             "season": "2022-23",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Athletic Club",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2022-236.html",
+                "leagueStarts": 9,
+                "leagueAppearances": 17,
+                "leagueMinutes": 700,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p59846",
@@ -8117,8 +8974,19 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Athletic Club",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-226.html",
+                "leagueStarts": 16,
+                "leagueAppearances": 27,
+                "leagueMinutes": 1425,
+                "leagueGoals": 6,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p439772",
@@ -8135,8 +9003,19 @@
           },
           {
             "season": "2022-23",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Athletic Club",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2022-236.html",
+                "leagueStarts": 32,
+                "leagueAppearances": 36,
+                "leagueMinutes": 2553,
+                "leagueGoals": 10,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p439772",
@@ -8288,8 +9167,19 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Athletic Club",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-226.html",
+                "leagueStarts": 11,
+                "leagueAppearances": 34,
+                "leagueMinutes": 1324,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p523654",
@@ -8306,8 +9196,19 @@
           },
           {
             "season": "2022-23",
-            "records": [],
-            "status": "evidence_pending_not_zero"
+            "records": [
+              {
+                "club": "Athletic Club",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2022-236.html",
+                "leagueStarts": 32,
+                "leagueAppearances": 36,
+                "leagueMinutes": 2674,
+                "leagueGoals": 6,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available"
           }
         ],
         "officialSeasonAward": false
@@ -8320,7 +9221,7 @@
         ],
         "relativeWeight": "2023-24 > 2022-23 > 2021-22",
         "olderSeasonsSourceAudit": "prior_archive_and_partial_secondary_snapshot; independent_full_3_year_audit_pending",
-        "priorCoverage": 1
+        "priorCoverage": 2
       },
       "assessmentRationale": "2023-24 31경기 29선발 2282분 5골. 측면 돌파 및 기회 창출, 꾸준한 성장. 직전 두 시즌 자료 1/2시즌 기존 미승인 기록 또는 2차 통계 스냅샷 연결; 미확보는 0으로 간주하지 않음. 현재 시즌 최우선의 정성적 A 잠정 평가; 구단 순위 가산 없음.",
       "tierReview": "측면 돌파 및 기회 창출, 꾸준한 성장",
@@ -8368,8 +9269,19 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Athletic Club",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-226.html",
+                "leagueStarts": 24,
+                "leagueAppearances": 34,
+                "leagueMinutes": 2172,
+                "leagueGoals": 3,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p195385",
@@ -8386,8 +9298,19 @@
           },
           {
             "season": "2022-23",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Athletic Club",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2022-236.html",
+                "leagueStarts": 26,
+                "leagueAppearances": 37,
+                "leagueMinutes": 2302,
+                "leagueGoals": 4,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p195385",
@@ -8460,8 +9383,19 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Athletic Club",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-226.html",
+                "leagueStarts": 32,
+                "leagueAppearances": 38,
+                "leagueMinutes": 2786,
+                "leagueGoals": 8,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p197334",
@@ -8478,8 +9412,19 @@
           },
           {
             "season": "2022-23",
-            "records": [],
-            "status": "evidence_pending_not_zero"
+            "records": [
+              {
+                "club": "Athletic Club",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2022-236.html",
+                "leagueStarts": 34,
+                "leagueAppearances": 36,
+                "leagueMinutes": 2852,
+                "leagueGoals": 10,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available"
           }
         ],
         "officialSeasonAward": false
@@ -8492,7 +9437,7 @@
         ],
         "relativeWeight": "2023-24 > 2022-23 > 2021-22",
         "olderSeasonsSourceAudit": "prior_archive_and_partial_secondary_snapshot; independent_full_3_year_audit_pending",
-        "priorCoverage": 1
+        "priorCoverage": 2
       },
       "assessmentRationale": "2023-24 34경기 32선발 2855분 12골. 우측 전방 득점과 전환, 높은 기용량. 직전 두 시즌 자료 1/2시즌 기존 미승인 기록 또는 2차 통계 스냅샷 연결; 미확보는 0으로 간주하지 않음. 현재 시즌 최우선의 정성적 A 잠정 평가; 구단 순위 가산 없음.",
       "tierReview": "우측 전방 득점과 전환, 높은 기용량",
@@ -8543,11 +9488,27 @@
           },
           {
             "season": "2022-23",
-            "records": [],
-            "status": "evidence_pending_not_zero"
+            "records": [
+              {
+                "club": "Athletic Club",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2022-236.html",
+                "leagueStarts": 0,
+                "leagueAppearances": 8,
+                "leagueMinutes": 77,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available"
           }
         ],
-        "officialSeasonAward": false
+        "officialSeasonAward": false,
+        "eligibilityAudit": {
+          "decision": "retain_provisional_backup",
+          "reason": "2선발 12출전. 해당 구단 등록 후보군에서 동일 포지션 주전 Iñaki Williams의 유일한 예비 후보. 5선발 하한 미설정; 저출전 비상·로테이션 후보로 유지. 전체 미등록 선수와의 비교는 미완료.",
+          "source": "https://www.bdfutbol.com/en/t/t2023-246.html"
+        }
       },
       "threeSeasonReview": {
         "seasons": [
@@ -8557,7 +9518,7 @@
         ],
         "relativeWeight": "2023-24 > 2022-23 > 2021-22",
         "olderSeasonsSourceAudit": "prior_archive_and_partial_secondary_snapshot; independent_full_3_year_audit_pending",
-        "priorCoverage": 0
+        "priorCoverage": 1
       },
       "assessmentRationale": "2023-24 12경기 2선발 258분 0골. 우측 포함 측면의 제한 출전. 직전 두 시즌 자료 0/2시즌 기존 미승인 기록 또는 2차 통계 스냅샷 연결; 미확보는 0으로 간주하지 않음. 현재 시즌 최우선의 정성적 C 잠정 평가; 구단 순위 가산 없음.",
       "tierReview": "우측 포함 측면의 제한 출전",
@@ -8609,8 +9570,19 @@
           },
           {
             "season": "2022-23",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Athletic Club",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2022-236.html",
+                "leagueStarts": 17,
+                "leagueAppearances": 30,
+                "leagueMinutes": 1422,
+                "leagueGoals": 6,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p220182",
@@ -8683,8 +9655,19 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Athletic Club",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-226.html",
+                "leagueStarts": 3,
+                "leagueAppearances": 19,
+                "leagueMinutes": 537,
+                "leagueGoals": 2,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p212770",
@@ -8701,11 +9684,27 @@
           },
           {
             "season": "2022-23",
-            "records": [],
-            "status": "evidence_pending_not_zero"
+            "records": [
+              {
+                "club": "Athletic Club",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2022-236.html",
+                "leagueStarts": 1,
+                "leagueAppearances": 5,
+                "leagueMinutes": 96,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available"
           }
         ],
-        "officialSeasonAward": false
+        "officialSeasonAward": false,
+        "eligibilityAudit": {
+          "decision": "retain_provisional_backup",
+          "reason": "4선발 18출전. 해당 구단 등록 후보군에서 동일 포지션 주전 Gorka Guruzeta의 유일한 예비 후보. 5선발 하한 미설정; 저출전 비상·로테이션 후보로 유지. 전체 미등록 선수와의 비교는 미완료.",
+          "source": "https://www.bdfutbol.com/en/t/t2023-246.html"
+        }
       },
       "threeSeasonReview": {
         "seasons": [
@@ -8715,7 +9714,7 @@
         ],
         "relativeWeight": "2023-24 > 2022-23 > 2021-22",
         "olderSeasonsSourceAudit": "prior_archive_and_partial_secondary_snapshot; independent_full_3_year_audit_pending",
-        "priorCoverage": 1
+        "priorCoverage": 2
       },
       "assessmentRationale": "2023-24 18경기 4선발 503분 2골. 전방 교체 출전. 직전 두 시즌 자료 1/2시즌 기존 미승인 기록 또는 2차 통계 스냅샷 연결; 미확보는 0으로 간주하지 않음. 현재 시즌 최우선의 정성적 C+ 잠정 평가; 구단 순위 가산 없음.",
       "tierReview": "전방 교체 출전",
@@ -8763,8 +9762,20 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Real Sociedad",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-2230.html",
+                "leagueStarts": 35,
+                "leagueAppearances": 35,
+                "leagueMinutes": 3150,
+                "leagueGoals": 0,
+                "leagueGoalsConceded": 32,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p197316",
@@ -8781,8 +9792,20 @@
           },
           {
             "season": "2022-23",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Real Sociedad",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2022-2330.html",
+                "leagueStarts": 38,
+                "leagueAppearances": 38,
+                "leagueMinutes": 3420,
+                "leagueGoals": 0,
+                "leagueGoalsConceded": 35,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p197316",
@@ -8798,7 +9821,9 @@
             ]
           }
         ],
-        "officialSeasonAward": false
+        "officialSeasonAward": false,
+        "goalkeeperStatsSource": "https://www.bdfutbol.com/en/t/t2023-2430.html",
+        "goalkeeperStatDefinition": "leagueGoals = goals scored; leagueGoalsConceded = goals conceded"
       },
       "threeSeasonReview": {
         "seasons": [
@@ -8816,7 +9841,8 @@
         "status": "provisional",
         "pool": 12,
         "method": "tier; selected editorial peer order; otherwise starts and minutes tiebreak, not definitive performance order"
-      }
+      },
+      "leagueGoalsConceded": 36
     },
     {
       "id": "laliga-202324-sociedad-unaimarrero-20011009",
@@ -8877,7 +9903,9 @@
             ]
           }
         ],
-        "officialSeasonAward": false
+        "officialSeasonAward": false,
+        "goalkeeperStatsSource": "https://www.bdfutbol.com/en/t/t2023-2430.html",
+        "goalkeeperStatDefinition": "leagueGoals = goals scored; leagueGoalsConceded = goals conceded"
       },
       "threeSeasonReview": {
         "seasons": [
@@ -8895,7 +9923,8 @@
         "status": "provisional",
         "pool": 12,
         "method": "tier; selected editorial peer order; otherwise starts and minutes tiebreak, not definitive performance order"
-      }
+      },
+      "leagueGoalsConceded": 3
     },
     {
       "id": "laliga-202324-sociedad-robinlenormand-19961111",
@@ -8936,8 +9965,19 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Real Sociedad",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-2230.html",
+                "leagueStarts": 37,
+                "leagueAppearances": 37,
+                "leagueMinutes": 3330,
+                "leagueGoals": 1,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p224919",
@@ -9042,8 +10082,19 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Real Sociedad",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-2230.html",
+                "leagueStarts": 19,
+                "leagueAppearances": 26,
+                "leagueMinutes": 1649,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p216475",
@@ -9146,13 +10197,35 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "evidence_pending_not_zero"
+            "records": [
+              {
+                "club": "Real Sociedad",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-2230.html",
+                "leagueStarts": 4,
+                "leagueAppearances": 10,
+                "leagueMinutes": 376,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available"
           },
           {
             "season": "2022-23",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Real Sociedad",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2022-2330.html",
+                "leagueStarts": 12,
+                "leagueAppearances": 17,
+                "leagueMinutes": 1188,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p449931",
@@ -9178,7 +10251,7 @@
         ],
         "relativeWeight": "2023-24 > 2022-23 > 2021-22",
         "olderSeasonsSourceAudit": "prior_archive_and_partial_secondary_snapshot; independent_full_3_year_audit_pending",
-        "priorCoverage": 1
+        "priorCoverage": 2
       },
       "assessmentRationale": "2023-24 23경기 16선발 1521분 1골. 왼쪽 센터백 주전급 교대. 직전 두 시즌 자료 1/2시즌 기존 미승인 기록 또는 2차 통계 스냅샷 연결; 미확보는 0으로 간주하지 않음. 현재 시즌 최우선의 정성적 B+ 잠정 평가; 구단 순위 가산 없음.",
       "tierReview": "왼쪽 센터백 주전급 교대",
@@ -9318,8 +10391,19 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Real Sociedad",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-2230.html",
+                "leagueStarts": 15,
+                "leagueAppearances": 20,
+                "leagueMinutes": 1343,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p472145",
@@ -9492,8 +10576,19 @@
           },
           {
             "season": "2022-23",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Real Madrid",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2022-232.html",
+                "leagueStarts": 0,
+                "leagueAppearances": 3,
+                "leagueMinutes": 36,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p201172",
@@ -9567,8 +10662,19 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Real Sociedad",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-2230.html",
+                "leagueStarts": 26,
+                "leagueAppearances": 36,
+                "leagueMinutes": 2583,
+                "leagueGoals": 2,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p481655",
@@ -9659,8 +10765,19 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Real Sociedad",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-2230.html",
+                "leagueStarts": 33,
+                "leagueAppearances": 34,
+                "leagueMinutes": 2896,
+                "leagueGoals": 3,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p195384",
@@ -9752,8 +10869,19 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "RC Celta",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-2211.html",
+                "leagueStarts": 36,
+                "leagueAppearances": 37,
+                "leagueMinutes": 3035,
+                "leagueGoals": 4,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p178880",
@@ -9856,13 +10984,35 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "evidence_pending_not_zero"
+            "records": [
+              {
+                "club": "Real Sociedad",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-2230.html",
+                "leagueStarts": 1,
+                "leagueAppearances": 8,
+                "leagueMinutes": 202,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available"
           },
           {
             "season": "2022-23",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Real Sociedad",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2022-2330.html",
+                "leagueStarts": 1,
+                "leagueAppearances": 6,
+                "leagueMinutes": 102,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p488026",
@@ -9888,7 +11038,7 @@
         ],
         "relativeWeight": "2023-24 > 2022-23 > 2021-22",
         "olderSeasonsSourceAudit": "prior_archive_and_partial_secondary_snapshot; independent_full_3_year_audit_pending",
-        "priorCoverage": 1
+        "priorCoverage": 2
       },
       "assessmentRationale": "2023-24 29경기 19선발 1689분 0골. 중원 압박과 교대 기용. 직전 두 시즌 자료 1/2시즌 기존 미승인 기록 또는 2차 통계 스냅샷 연결; 미확보는 0으로 간주하지 않음. 현재 시즌 최우선의 정성적 B+ 잠정 평가; 구단 순위 가산 없음.",
       "tierReview": "중원 압박과 교대 기용",
@@ -9937,8 +11087,19 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Real Sociedad",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-2230.html",
+                "leagueStarts": 6,
+                "leagueAppearances": 11,
+                "leagueMinutes": 547,
+                "leagueGoals": 1,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p471138",
@@ -10108,8 +11269,19 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "RCD Mallorca",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-2224.html",
+                "leagueStarts": 17,
+                "leagueAppearances": 28,
+                "leagueMinutes": 1609,
+                "leagueGoals": 1,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p219271",
@@ -10413,8 +11585,29 @@
           },
           {
             "season": "2022-23",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Real Sociedad",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2022-2330.html",
+                "leagueStarts": 1,
+                "leagueAppearances": 2,
+                "leagueMinutes": 82,
+                "leagueGoals": 1,
+                "status": "external_audit_BDFutbol_club_season"
+              },
+              {
+                "club": "UD Almería",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2022-2343.html",
+                "leagueStarts": 3,
+                "leagueAppearances": 3,
+                "leagueMinutes": 242,
+                "leagueGoals": 2,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p196878",
@@ -10487,8 +11680,20 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "evidence_pending_not_zero"
+            "records": [
+              {
+                "club": "Real Betis",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-228.html",
+                "leagueStarts": 21,
+                "leagueAppearances": 22,
+                "leagueMinutes": 1963,
+                "leagueGoals": 0,
+                "leagueGoalsConceded": 21,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available"
           },
           {
             "season": "2022-23",
@@ -10502,13 +11707,16 @@
                 "leagueGoals": 0,
                 "priorTier": "B+",
                 "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2022-23.json",
-                "status": "prior_DRAFT_reference_not_independently_reverified"
+                "status": "prior_DRAFT_reference_not_independently_reverified",
+                "leagueGoalsConceded": 32
               }
             ],
             "status": "archive_reference"
           }
         ],
-        "officialSeasonAward": false
+        "officialSeasonAward": false,
+        "goalkeeperStatsSource": "https://www.bdfutbol.com/en/t/t2023-248.html",
+        "goalkeeperStatDefinition": "leagueGoals = goals scored; leagueGoalsConceded = goals conceded"
       },
       "threeSeasonReview": {
         "seasons": [
@@ -10518,7 +11726,7 @@
         ],
         "relativeWeight": "2023-24 > 2022-23 > 2021-22",
         "olderSeasonsSourceAudit": "prior_archive_and_partial_secondary_snapshot; independent_full_3_year_audit_pending",
-        "priorCoverage": 1
+        "priorCoverage": 2
       },
       "assessmentRationale": "2023-24 28경기 28선발 2476분 0골. 주전 선방과 후방 안정. 직전 두 시즌 자료 1/2시즌 기존 미승인 기록 또는 2차 통계 스냅샷 연결; 미확보는 0으로 간주하지 않음. 현재 시즌 최우선의 정성적 B+ 잠정 평가; 구단 순위 가산 없음.",
       "tierReview": "주전 선방과 후방 안정",
@@ -10526,7 +11734,8 @@
         "status": "provisional",
         "pool": 12,
         "method": "tier; selected editorial peer order; otherwise starts and minutes tiebreak, not definitive performance order"
-      }
+      },
+      "leagueGoalsConceded": 36
     },
     {
       "id": "laliga-202324-betis-claudiobravo-19830413",
@@ -10566,8 +11775,20 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Real Betis",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-228.html",
+                "leagueStarts": 17,
+                "leagueAppearances": 17,
+                "leagueMinutes": 1457,
+                "leagueGoals": 0,
+                "leagueGoalsConceded": 19,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p33148",
@@ -10584,8 +11805,20 @@
           },
           {
             "season": "2022-23",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Real Betis",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2022-238.html",
+                "leagueStarts": 12,
+                "leagueAppearances": 12,
+                "leagueMinutes": 1080,
+                "leagueGoals": 0,
+                "leagueGoalsConceded": 9,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p33148",
@@ -10601,7 +11834,9 @@
             ]
           }
         ],
-        "officialSeasonAward": false
+        "officialSeasonAward": false,
+        "goalkeeperStatsSource": "https://www.bdfutbol.com/en/t/t2023-248.html",
+        "goalkeeperStatDefinition": "leagueGoals = goals scored; leagueGoalsConceded = goals conceded"
       },
       "threeSeasonReview": {
         "seasons": [
@@ -10619,7 +11854,8 @@
         "status": "provisional",
         "pool": 12,
         "method": "tier; selected editorial peer order; otherwise starts and minutes tiebreak, not definitive performance order"
-      }
+      },
+      "leagueGoalsConceded": 5
     },
     {
       "id": "laliga-202324-betis-germanpezzella-19910627",
@@ -10659,8 +11895,19 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Real Betis",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-228.html",
+                "leagueStarts": 22,
+                "leagueAppearances": 23,
+                "leagueMinutes": 1991,
+                "leagueGoals": 1,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p121220",
@@ -10755,8 +12002,19 @@
           },
           {
             "season": "2022-23",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "FC Barcelona",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2022-231.html",
+                "leagueStarts": 0,
+                "leagueAppearances": 1,
+                "leagueMinutes": 1,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p515621",
@@ -10895,8 +12153,19 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Real Betis",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-228.html",
+                "leagueStarts": 9,
+                "leagueAppearances": 13,
+                "leagueMinutes": 782,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p433530",
@@ -10913,8 +12182,19 @@
           },
           {
             "season": "2022-23",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Real Betis",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2022-238.html",
+                "leagueStarts": 16,
+                "leagueAppearances": 21,
+                "leagueMinutes": 1473,
+                "leagueGoals": 3,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p433530",
@@ -10991,8 +12271,19 @@
           },
           {
             "season": "2022-23",
-            "records": [],
-            "status": "evidence_pending_not_zero"
+            "records": [
+              {
+                "club": "Real Betis",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2022-238.html",
+                "leagueStarts": 7,
+                "leagueAppearances": 13,
+                "leagueMinutes": 606,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available"
           }
         ],
         "officialSeasonAward": false
@@ -11005,7 +12296,7 @@
         ],
         "relativeWeight": "2023-24 > 2022-23 > 2021-22",
         "olderSeasonsSourceAudit": "prior_archive_and_partial_secondary_snapshot; independent_full_3_year_audit_pending",
-        "priorCoverage": 0
+        "priorCoverage": 1
       },
       "assessmentRationale": "2023-24 23경기 15선발 1395분 0골. 왼쪽 수비의 교대 기용. 직전 두 시즌 자료 0/2시즌 기존 미승인 기록 또는 2차 통계 스냅샷 연결; 미확보는 0으로 간주하지 않음. 현재 시즌 최우선의 정성적 B 잠정 평가; 구단 순위 가산 없음.",
       "tierReview": "왼쪽 수비의 교대 기용",
@@ -11052,8 +12343,19 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Real Betis",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-228.html",
+                "leagueStarts": 22,
+                "leagueAppearances": 23,
+                "leagueMinutes": 1979,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p98745",
@@ -11070,8 +12372,19 @@
           },
           {
             "season": "2022-23",
-            "records": [],
-            "status": "evidence_pending_not_zero"
+            "records": [
+              {
+                "club": "FC Barcelona",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2022-231.html",
+                "leagueStarts": 1,
+                "leagueAppearances": 3,
+                "leagueMinutes": 141,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available"
           }
         ],
         "officialSeasonAward": false
@@ -11084,7 +12397,7 @@
         ],
         "relativeWeight": "2023-24 > 2022-23 > 2021-22",
         "olderSeasonsSourceAudit": "prior_archive_and_partial_secondary_snapshot; independent_full_3_year_audit_pending",
-        "priorCoverage": 1
+        "priorCoverage": 2
       },
       "assessmentRationale": "2023-24 23경기 20선발 1713분 0골. 오른쪽 수비와 전개. 직전 두 시즌 자료 1/2시즌 기존 미승인 기록 또는 2차 통계 스냅샷 연결; 미확보는 0으로 간주하지 않음. 현재 시즌 최우선의 정성적 B 잠정 평가; 구단 순위 가산 없음.",
       "tierReview": "오른쪽 수비와 전개",
@@ -11132,8 +12445,19 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Real Betis",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-228.html",
+                "leagueStarts": 9,
+                "leagueAppearances": 10,
+                "leagueMinutes": 789,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p164474",
@@ -11223,8 +12547,19 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Real Betis",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-228.html",
+                "leagueStarts": 29,
+                "leagueAppearances": 32,
+                "leagueMinutes": 2533,
+                "leagueGoals": 1,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p197024",
@@ -11241,8 +12576,19 @@
           },
           {
             "season": "2022-23",
-            "records": [],
-            "status": "evidence_pending_not_zero"
+            "records": [
+              {
+                "club": "Real Betis",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2022-238.html",
+                "leagueStarts": 33,
+                "leagueAppearances": 34,
+                "leagueMinutes": 2877,
+                "leagueGoals": 1,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available"
           }
         ],
         "officialSeasonAward": false
@@ -11255,7 +12601,7 @@
         ],
         "relativeWeight": "2023-24 > 2022-23 > 2021-22",
         "olderSeasonsSourceAudit": "prior_archive_and_partial_secondary_snapshot; independent_full_3_year_audit_pending",
-        "priorCoverage": 1
+        "priorCoverage": 2
       },
       "assessmentRationale": "2023-24 24경기 22선발 1851분 2골. 수비형 중원 핵심 및 지속성. 직전 두 시즌 자료 1/2시즌 기존 미승인 기록 또는 2차 통계 스냅샷 연결; 미확보는 0으로 간주하지 않음. 현재 시즌 최우선의 정성적 A- 잠정 평가; 구단 순위 가산 없음.",
       "tierReview": "수비형 중원 핵심 및 지속성",
@@ -11445,16 +12791,43 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "evidence_pending_not_zero"
+            "records": [
+              {
+                "club": "Real Betis",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-228.html",
+                "leagueStarts": 20,
+                "leagueAppearances": 33,
+                "leagueMinutes": 1805,
+                "leagueGoals": 2,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available"
           },
           {
             "season": "2022-23",
-            "records": [],
-            "status": "evidence_pending_not_zero"
+            "records": [
+              {
+                "club": "Real Betis",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2022-238.html",
+                "leagueStarts": 31,
+                "leagueAppearances": 33,
+                "leagueMinutes": 2453,
+                "leagueGoals": 3,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available"
           }
         ],
-        "officialSeasonAward": false
+        "officialSeasonAward": false,
+        "eligibilityAudit": {
+          "decision": "retain_provisional_backup",
+          "reason": "4선발 22출전. 해당 구단 등록 후보군에서 동일 포지션 주전 Marc Roca의 유일한 예비 후보. 5선발 하한 미설정; 저출전 비상·로테이션 후보로 유지. 전체 미등록 선수와의 비교는 미완료.",
+          "source": "https://www.bdfutbol.com/en/t/t2023-248.html"
+        }
       },
       "threeSeasonReview": {
         "seasons": [
@@ -11464,7 +12837,7 @@
         ],
         "relativeWeight": "2023-24 > 2022-23 > 2021-22",
         "olderSeasonsSourceAudit": "prior_archive_and_partial_secondary_snapshot; independent_full_3_year_audit_pending",
-        "priorCoverage": 0
+        "priorCoverage": 2
       },
       "assessmentRationale": "2023-24 22경기 4선발 666분 1골. 기용량 감소, 과거 중원 영향. 직전 두 시즌 자료 0/2시즌 기존 미승인 기록 또는 2차 통계 스냅샷 연결; 미확보는 0으로 간주하지 않음. 현재 시즌 최우선의 정성적 B- 잠정 평가; 구단 순위 가산 없음.",
       "tierReview": "기용량 감소, 과거 중원 영향",
@@ -11511,13 +12884,35 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "evidence_pending_not_zero"
+            "records": [
+              {
+                "club": "Real Madrid",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-222.html",
+                "leagueStarts": 3,
+                "leagueAppearances": 14,
+                "leagueMinutes": 323,
+                "leagueGoals": 1,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available"
           },
           {
             "season": "2022-23",
-            "records": [],
-            "status": "evidence_pending_not_zero"
+            "records": [
+              {
+                "club": "Sevilla FC",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2022-2333.html",
+                "leagueStarts": 10,
+                "leagueAppearances": 12,
+                "leagueMinutes": 803,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available"
           }
         ],
         "officialSeasonAward": true
@@ -11530,7 +12925,7 @@
         ],
         "relativeWeight": "2023-24 > 2022-23 > 2021-22",
         "olderSeasonsSourceAudit": "prior_archive_and_partial_secondary_snapshot; independent_full_3_year_audit_pending",
-        "priorCoverage": 0
+        "priorCoverage": 2
       },
       "assessmentRationale": "2023-24 29경기 28선발 2340분 8골. 중앙 2선 창조성·8골, 공식 시즌 선정, 이전 시즌 공백. 직전 두 시즌 자료 0/2시즌 기존 미승인 기록 또는 2차 통계 스냅샷 연결; 미확보는 0으로 간주하지 않음. 현재 시즌 최우선의 정성적 A 잠정 평가; 구단 순위 가산 없음.",
       "tierReview": "중앙 2선 창조성·8골, 공식 시즌 선정, 이전 시즌 공백",
@@ -11578,8 +12973,19 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Real Betis",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-228.html",
+                "leagueStarts": 33,
+                "leagueAppearances": 34,
+                "leagueMinutes": 2811,
+                "leagueGoals": 6,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p166552",
@@ -11596,8 +13002,19 @@
           },
           {
             "season": "2022-23",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "Real Betis",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2022-238.html",
+                "leagueStarts": 12,
+                "leagueAppearances": 15,
+                "leagueMinutes": 965,
+                "leagueGoals": 2,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p166552",
@@ -11740,7 +13157,7 @@
       "leagueStarts": 6,
       "starts": 6,
       "leagueMinutes": 851,
-      "leagueGoals": 0,
+      "leagueGoals": 1,
       "appearanceScope": "2023-24 La Liga",
       "tier": "B-",
       "rank": 9,
@@ -11755,7 +13172,8 @@
         "https://www.bdfutbol.com/en/t/t2023-248.html",
         "https://footballsquads.co.uk/spain/2023-2024/laliga/betis.htm",
         "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2022-23.json",
-        "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2021.json"
+        "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2021.json",
+        "https://as.com/resultados/ficha/deportista/abdessamad_ezzalzouli/48616/"
       ],
       "evidence": {
         "seasonPrimarySource": "https://www.bdfutbol.com/en/t/t2023-248.html",
@@ -11763,8 +13181,19 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "secondary_snapshot_only",
+            "records": [
+              {
+                "club": "FC Barcelona",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-221.html",
+                "leagueStarts": 6,
+                "leagueAppearances": 10,
+                "leagueMinutes": 581,
+                "leagueGoals": 1,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available",
             "secondarySnapshot": [
               {
                 "sourceOptaId": "p500745",
@@ -11809,7 +13238,7 @@
         "olderSeasonsSourceAudit": "prior_archive_and_partial_secondary_snapshot; independent_full_3_year_audit_pending",
         "priorCoverage": 2
       },
-      "assessmentRationale": "2023-24 26경기 6선발 851분 0골. 측면 돌파에도 선발과 생산성 제한. 직전 두 시즌 자료 2/2시즌 기존 미승인 기록 또는 2차 통계 스냅샷 연결; 미확보는 0으로 간주하지 않음. 현재 시즌 최우선의 정성적 B- 잠정 평가; 구단 순위 가산 없음.",
+      "assessmentRationale": "2023-24 26경기 6선발 851분 1골. 측면 돌파에도 선발과 생산성 제한. 직전 두 시즌 자료 2/2시즌 기존 미승인 기록 또는 2차 통계 스냅샷 연결; 미확보는 0으로 간주하지 않음. 현재 시즌 최우선의 정성적 B- 잠정 평가; 구단 순위 가산 없음.",
       "tierReview": "측면 돌파에도 선발과 생산성 제한",
       "rankReview": {
         "status": "provisional",
@@ -11945,8 +13374,19 @@
         "priorSeasons": [
           {
             "season": "2021-22",
-            "records": [],
-            "status": "evidence_pending_not_zero"
+            "records": [
+              {
+                "club": "Real Betis",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2021-228.html",
+                "leagueStarts": 10,
+                "leagueAppearances": 21,
+                "leagueMinutes": 881,
+                "leagueGoals": 1,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
+            "status": "direct_source_available"
           },
           {
             "season": "2022-23",
@@ -11976,7 +13416,7 @@
         ],
         "relativeWeight": "2023-24 > 2022-23 > 2021-22",
         "olderSeasonsSourceAudit": "prior_archive_and_partial_secondary_snapshot; independent_full_3_year_audit_pending",
-        "priorCoverage": 1
+        "priorCoverage": 2
       },
       "assessmentRationale": "2023-24 29경기 9선발 1038분 0골. 우측 및 중앙 2선 교대. 직전 두 시즌 자료 1/2시즌 기존 미승인 기록 또는 2차 통계 스냅샷 연결; 미확보는 0으로 간주하지 않음. 현재 시즌 최우선의 정성적 B- 잠정 평가; 구단 순위 가산 없음.",
       "tierReview": "우측 및 중앙 2선 교대",
@@ -12163,7 +13603,12 @@
             "status": "archive_reference"
           }
         ],
-        "officialSeasonAward": false
+        "officialSeasonAward": false,
+        "eligibilityAudit": {
+          "decision": "retain_provisional_backup",
+          "reason": "4선발 11출전. 해당 구단 등록 후보군에서 동일 포지션 주전 Willian José의 유일한 예비 후보. 5선발 하한 미설정; 저출전 비상·로테이션 후보로 유지. 전체 미등록 선수와의 비교는 미완료.",
+          "source": "https://www.bdfutbol.com/en/t/t2023-248.html"
+        }
       },
       "threeSeasonReview": {
         "seasons": [

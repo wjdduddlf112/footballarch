@@ -25,11 +25,7 @@
       "sevilla": "4-2-3-1 / 4-3-3 with 3 managers"
     },
     "bestXiStatus": "proposed_unapproved",
-    "bestXiReview": {
-      "status": "proposed_unapproved",
-      "formation": "4-4-2",
-      "note": "Season shape representative; gamewise main positions, historical three-season individual form and birthdates need independent verification"
-    },
+    "bestXiReview": "External review follow-up: resolved flagged rank/XI mismatches as provisional editorial decisions, not user approval.",
     "userApproved": false,
     "historicalFactVerification": false,
     "browserValidation": false,
@@ -58,7 +54,7 @@
         "osasuna": "https://www.bdfutbol.com/en/t/t2022-2327.html",
         "sevilla": "https://www.bdfutbol.com/en/t/t2022-2333.html"
       },
-      "dobMissingCount": 5,
+      "dobMissingCount": 0,
       "birthdateIndependentlyVerifiedCount": 0,
       "independentTwoSourceDOBComplete": false,
       "primaryPositionAudit": "2022-23 match-by-match primary position not independently audited",
@@ -73,7 +69,17 @@
         "DOB carried from earlier demo and prior DRAFT is not independently two-source checked",
         "Three season qualitative weights 2022-23 highest, 2021-22 second, 2020-21 third, no direct club finish bonus",
         "Single season club roster data first source only; full independent second source starts and gamewise positions open"
-      ]
+      ],
+      "externalReview": {
+        "report": "audit/LALIGA_2017_2026_EXTERNAL_REVIEW_CORRECTIONS.json",
+        "status": "draft_external_report_applied",
+        "dobMissingCount": 0,
+        "startsMissingCount": 0,
+        "gkConcededRecorded": 14,
+        "fullHistoricalFactVerification": false,
+        "notes": "Follow-up applied; minutes standardized, XI discrepancies editorially resolved; matchwise position evidence remains incomplete."
+      },
+      "externalFollowup": "Eligibility and alternative positions reviewed; remaining matchwise modal uncertainty is explicitly recorded; no user approval implied."
     }
   },
   "clubs": [
@@ -584,7 +590,8 @@
             "leagueAppearances": 31,
             "leagueGoals": 0,
             "source": "https://www.bdfutbol.com/en/t/t2020-211.html",
-            "audit": "unverified_previous_DRAFT_pointer"
+            "audit": "unverified_previous_DRAFT_pointer",
+            "leagueGoalsConceded": 32
           },
           {
             "season": "2021-22",
@@ -593,9 +600,12 @@
             "leagueAppearances": 35,
             "leagueGoals": 0,
             "source": "https://www.bdfutbol.com/en/t/t2021-221.html",
-            "audit": "unverified_previous_DRAFT_pointer"
+            "audit": "unverified_previous_DRAFT_pointer",
+            "leagueGoalsConceded": 34
           }
-        ]
+        ],
+        "goalkeeperStatsSource": "https://www.bdfutbol.com/en/t/t2022-231.html",
+        "goalkeeperStatDefinition": "leagueGoals = goals scored; leagueGoalsConceded = goals conceded"
       },
       "threeSeasonReview": {
         "seasons": [
@@ -611,7 +621,8 @@
       "rankReview": {
         "status": "provisional",
         "pool": 14
-      }
+      },
+      "leagueGoalsConceded": 18
     },
     {
       "id": "laliga-202223-barca-02",
@@ -709,12 +720,13 @@
         "priorSeasons": [
           {
             "season": "2020-21",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "barca",
+            "source": "https://www.bdfutbol.com/en/t/t2020-211.html",
+            "leagueStarts": 16,
+            "leagueAppearances": 24,
+            "leagueMinutes": 1510,
+            "leagueGoals": 2,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2021-22",
@@ -848,12 +860,13 @@
           },
           {
             "season": "2021-22",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "barca",
+            "source": "https://www.bdfutbol.com/en/t/t2021-221.html",
+            "leagueStarts": 2,
+            "leagueAppearances": 5,
+            "leagueMinutes": 187,
+            "leagueGoals": 0,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ]
       },
@@ -1043,12 +1056,13 @@
           },
           {
             "season": "2021-22",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "barca",
+            "source": "https://www.bdfutbol.com/en/t/t2021-221.html",
+            "leagueStarts": 4,
+            "leagueAppearances": 9,
+            "leagueMinutes": 399,
+            "leagueGoals": 2,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ]
       },
@@ -1156,7 +1170,8 @@
       "evaluationStatus": "provisional",
       "positionVerification": "2022_23_gamewise_majority_position_not_verified",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2022-231.html"
+        "https://www.bdfutbol.com/en/t/t2022-231.html",
+        "https://fbref.com/en/stathead/player_comparison.cgi?comp_type=by_type&dom_lg=1&p1yrfrom=2022-2023&p2yrfrom=2022-2023&player_id1=0d9b2d31&player_id2=1bacc518&request=1&show_form=1&sum=0"
       ],
       "evidence": {
         "seasonPrimarySource": "https://www.bdfutbol.com/en/t/t2022-231.html",
@@ -1195,7 +1210,12 @@
       "assessmentRationale": "BDF PM 33, SM 29, G 2; tier A+ tentative and not user approved",
       "rankReview": {
         "status": "provisional",
-        "pool": 19
+        "pool": 19,
+        "externalAuditReason": "CM 기존 1위 프렝키 더 용: 33경기 29선발·2534분·2골 4도움, 페드리 26경기 22선발·1976분·6골 1도움. 페드리의 득점과 전진 기여도 인정하되, 중앙 미드필더로 더 많은 출전과 직전 2시즌 35·30선발의 지속성을 우선. 기존 1·2위와 티어 유지.",
+        "externalAuditSources": [
+          "https://fbref.com/en/stathead/player_comparison.cgi?comp_type=by_type&dom_lg=1&p1yrfrom=2022-2023&p2yrfrom=2022-2023&player_id1=0d9b2d31&player_id2=1bacc518&request=1&show_form=1&sum=0",
+          "https://www.bdfutbol.com/en/t/t2022-231.html"
+        ]
       }
     },
     {
@@ -1229,21 +1249,23 @@
         "priorSeasons": [
           {
             "season": "2020-21",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "barca",
+            "source": "https://www.bdfutbol.com/en/t/t2020-211.html",
+            "leagueStarts": 28,
+            "leagueAppearances": 37,
+            "leagueMinutes": 2419,
+            "leagueGoals": 3,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2021-22",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "barca",
+            "source": "https://www.bdfutbol.com/en/t/t2021-221.html",
+            "leagueStarts": 10,
+            "leagueAppearances": 12,
+            "leagueMinutes": 889,
+            "leagueGoals": 3,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ]
       },
@@ -1368,12 +1390,13 @@
           },
           {
             "season": "2021-22",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "barca",
+            "source": "https://www.bdfutbol.com/en/t/t2021-221.html",
+            "leagueStarts": 28,
+            "leagueAppearances": 34,
+            "leagueMinutes": 2328,
+            "leagueGoals": 2,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ]
       },
@@ -1433,12 +1456,13 @@
           },
           {
             "season": "2021-22",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "barca",
+            "source": "https://www.bdfutbol.com/en/t/t2021-221.html",
+            "leagueStarts": 3,
+            "leagueAppearances": 10,
+            "leagueMinutes": 332,
+            "leagueGoals": 4,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ]
       },
@@ -1754,7 +1778,8 @@
             "leagueAppearances": 38,
             "leagueGoals": 0,
             "source": "https://www.bdfutbol.com/en/t/t2020-212.html",
-            "audit": "unverified_previous_DRAFT_pointer"
+            "audit": "unverified_previous_DRAFT_pointer",
+            "leagueGoalsConceded": 28
           },
           {
             "season": "2021-22",
@@ -1763,9 +1788,12 @@
             "leagueAppearances": 36,
             "leagueGoals": 0,
             "source": "https://www.bdfutbol.com/en/t/t2021-222.html",
-            "audit": "unverified_previous_DRAFT_pointer"
+            "audit": "unverified_previous_DRAFT_pointer",
+            "leagueGoalsConceded": 29
           }
-        ]
+        ],
+        "goalkeeperStatsSource": "https://www.bdfutbol.com/en/t/t2022-232.html",
+        "goalkeeperStatDefinition": "leagueGoals = goals scored; leagueGoalsConceded = goals conceded"
       },
       "threeSeasonReview": {
         "seasons": [
@@ -1781,7 +1809,8 @@
       "rankReview": {
         "status": "provisional",
         "pool": 14
-      }
+      },
+      "leagueGoalsConceded": 29
     },
     {
       "id": "laliga-202223-madrid-02",
@@ -1828,9 +1857,12 @@
             "leagueAppearances": 2,
             "leagueGoals": 0,
             "source": "https://www.bdfutbol.com/en/t/t2021-222.html",
-            "audit": "unverified_previous_DRAFT_pointer"
+            "audit": "unverified_previous_DRAFT_pointer",
+            "leagueGoalsConceded": 2
           }
-        ]
+        ],
+        "goalkeeperStatsSource": "https://www.bdfutbol.com/en/t/t2022-232.html",
+        "goalkeeperStatDefinition": "leagueGoals = goals scored; leagueGoalsConceded = goals conceded"
       },
       "threeSeasonReview": {
         "seasons": [
@@ -1846,7 +1878,8 @@
       "rankReview": {
         "status": "provisional",
         "pool": 14
-      }
+      },
+      "leagueGoalsConceded": 7
     },
     {
       "id": "laliga-202223-madrid-03",
@@ -1879,12 +1912,13 @@
         "priorSeasons": [
           {
             "season": "2020-21",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "madrid",
+            "source": "https://www.bdfutbol.com/en/t/t2020-212.html",
+            "leagueStarts": 13,
+            "leagueAppearances": 14,
+            "leagueMinutes": 1132,
+            "leagueGoals": 1,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2021-22",
@@ -1910,7 +1944,8 @@
       "assessmentRationale": "BDF PM 33, SM 30, G 5; tier A+ tentative and not user approved",
       "rankReview": {
         "status": "provisional",
-        "pool": 24
+        "pool": 24,
+        "externalAuditReason": "밀리탕 30선발 5골과 직전 시즌 연속성, 기존 A+ 1위를 반영. 아라우호 21선발 및 우측 수비 혼용 고려."
       }
     },
     {
@@ -2083,12 +2118,13 @@
           },
           {
             "season": "2021-22",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "madrid",
+            "source": "https://www.bdfutbol.com/en/t/t2021-222.html",
+            "leagueStarts": 13,
+            "leagueAppearances": 26,
+            "leagueMinutes": 1230,
+            "leagueGoals": 2,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ]
       },
@@ -2373,8 +2409,8 @@
       "name": "Federico Valverde",
       "nameOriginal": "Federico Valverde",
       "nameKo": "페데리코 발베르데",
-      "born": null,
-      "birthAuditStatus": "missing",
+      "born": "1998-07-22",
+      "birthAuditStatus": "external_audit_profile_reference",
       "club": "madrid",
       "clubId": "madrid",
       "clubNameOriginal": "Real Madrid",
@@ -2391,7 +2427,8 @@
       "evaluationStatus": "provisional",
       "positionVerification": "2022_23_gamewise_majority_position_not_verified",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2022-232.html"
+        "https://www.bdfutbol.com/en/t/t2022-232.html",
+        "https://www.bdfutbol.com/en/j/j22396.html"
       ],
       "evidence": {
         "seasonPrimarySource": "https://www.bdfutbol.com/en/t/t2022-232.html",
@@ -2431,7 +2468,8 @@
       "rankReview": {
         "status": "provisional",
         "pool": 19
-      }
+      },
+      "birthSource": "https://www.bdfutbol.com/en/j/j22396.html"
     },
     {
       "id": "laliga-202223-madrid-12",
@@ -2659,21 +2697,23 @@
         "priorSeasons": [
           {
             "season": "2020-21",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "madrid",
+            "source": "https://www.bdfutbol.com/en/t/t2020-212.html",
+            "leagueStarts": 10,
+            "leagueAppearances": 22,
+            "leagueMinutes": 976,
+            "leagueGoals": 1,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2021-22",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "madrid",
+            "source": "https://www.bdfutbol.com/en/t/t2021-222.html",
+            "leagueStarts": 17,
+            "leagueAppearances": 33,
+            "leagueMinutes": 1524,
+            "leagueGoals": 4,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ]
       },
@@ -2859,7 +2899,8 @@
             "leagueAppearances": 38,
             "leagueGoals": 0,
             "source": "https://www.bdfutbol.com/en/t/t2020-217.html",
-            "audit": "unverified_previous_DRAFT_pointer"
+            "audit": "unverified_previous_DRAFT_pointer",
+            "leagueGoalsConceded": 25
           },
           {
             "season": "2021-22",
@@ -2868,9 +2909,12 @@
             "leagueAppearances": 38,
             "leagueGoals": 0,
             "source": "https://www.bdfutbol.com/en/t/t2021-227.html",
-            "audit": "unverified_previous_DRAFT_pointer"
+            "audit": "unverified_previous_DRAFT_pointer",
+            "leagueGoalsConceded": 43
           }
-        ]
+        ],
+        "goalkeeperStatsSource": "https://www.bdfutbol.com/en/t/t2022-237.html",
+        "goalkeeperStatDefinition": "leagueGoals = goals scored; leagueGoalsConceded = goals conceded"
       },
       "threeSeasonReview": {
         "seasons": [
@@ -2886,7 +2930,8 @@
       "rankReview": {
         "status": "provisional",
         "pool": 14
-      }
+      },
+      "leagueGoalsConceded": 20
     },
     {
       "id": "laliga-202223-atleti-02",
@@ -2935,7 +2980,9 @@
             "source": null,
             "audit": "unverified_previous_DRAFT_pointer"
           }
-        ]
+        ],
+        "goalkeeperStatsSource": "https://www.bdfutbol.com/en/t/t2022-237.html",
+        "goalkeeperStatDefinition": "leagueGoals = goals scored; leagueGoalsConceded = goals conceded"
       },
       "threeSeasonReview": {
         "seasons": [
@@ -2951,7 +2998,8 @@
       "rankReview": {
         "status": "provisional",
         "pool": 14
-      }
+      },
+      "leagueGoalsConceded": 12
     },
     {
       "id": "laliga-202223-atleti-03",
@@ -3309,21 +3357,23 @@
         "priorSeasons": [
           {
             "season": "2020-21",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "atleti",
+            "source": "https://www.bdfutbol.com/en/t/t2020-217.html",
+            "leagueStarts": 34,
+            "leagueAppearances": 37,
+            "leagueMinutes": 3022,
+            "leagueGoals": 1,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2021-22",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "atleti",
+            "source": "https://www.bdfutbol.com/en/t/t2021-227.html",
+            "leagueStarts": 29,
+            "leagueAppearances": 31,
+            "leagueMinutes": 2512,
+            "leagueGoals": 1,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ]
       },
@@ -3390,7 +3440,14 @@
             "source": null,
             "audit": "unverified_previous_DRAFT_pointer"
           }
-        ]
+        ],
+        "positionAudit": {
+          "previous": "DM",
+          "alternative": "CB",
+          "source": "https://www.football-espana.net/2022/09/22/axel-witsel-makes-thoughts-clear-to-diego-simeone-over-position-change",
+          "reason": "CB 전환 확인, 구단 공식 시즌 프로필은 MF. 전체 리그 경기별 집계 미확보.",
+          "decision": "retain_provisional_pending_matchwise_count"
+        }
       },
       "threeSeasonReview": {
         "seasons": [
@@ -3543,8 +3600,8 @@
       "name": "Yannick Carrasco",
       "nameOriginal": "Yannick Carrasco",
       "nameKo": "야니크 카라스코",
-      "born": "1993-01-07",
-      "birthAuditStatus": "prior_DRAFT_or_old_demo_unverified",
+      "born": "1993-09-04",
+      "birthAuditStatus": "external_audit_profile_reference",
       "club": "atleti",
       "clubId": "atleti",
       "clubNameOriginal": "Atlético de Madrid",
@@ -3561,7 +3618,8 @@
       "evaluationStatus": "provisional",
       "positionVerification": "2022_23_gamewise_majority_position_not_verified",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2022-237.html"
+        "https://www.bdfutbol.com/en/t/t2022-237.html",
+        "https://www.bdfutbol.com/en/j/j82276.html"
       ],
       "evidence": {
         "seasonPrimarySource": "https://www.bdfutbol.com/en/t/t2022-237.html",
@@ -3601,7 +3659,8 @@
       "rankReview": {
         "status": "provisional",
         "pool": 15
-      }
+      },
+      "birthSource": "https://www.bdfutbol.com/en/j/j82276.html"
     },
     {
       "id": "laliga-202223-atleti-13",
@@ -3643,12 +3702,13 @@
           },
           {
             "season": "2021-22",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "atleti",
+            "source": "https://www.bdfutbol.com/en/t/t2021-227.html",
+            "leagueStarts": 2,
+            "leagueAppearances": 3,
+            "leagueMinutes": 200,
+            "leagueGoals": 0,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ]
       },
@@ -3975,7 +4035,12 @@
             "source": "https://www.bdfutbol.com/en/t/t2021-221.html",
             "audit": "unverified_previous_DRAFT_pointer"
           }
-        ]
+        ],
+        "eligibilityAudit": {
+          "decision": "retain_provisional_backup",
+          "reason": "3선발 8출전. 해당 구단 등록 후보군에서 동일 포지션 주전 Antoine Griezmann, Álvaro Morata의 유일한 예비 후보. 5선발 하한 미설정; 저출전 비상·로테이션 후보로 유지. 전체 미등록 선수와의 비교는 미완료.",
+          "source": "https://www.bdfutbol.com/en/t/t2022-237.html"
+        }
       },
       "threeSeasonReview": {
         "seasons": [
@@ -3998,8 +4063,8 @@
       "name": "Álex Remiro",
       "nameOriginal": "Álex Remiro",
       "nameKo": "알렉스 레미로",
-      "born": null,
-      "birthAuditStatus": "missing",
+      "born": "1995-03-24",
+      "birthAuditStatus": "external_audit_profile_reference",
       "club": "sociedad",
       "clubId": "sociedad",
       "clubNameOriginal": "Real Sociedad",
@@ -4016,7 +4081,8 @@
       "evaluationStatus": "provisional",
       "positionVerification": "2022_23_gamewise_majority_position_not_verified",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2022-2330.html"
+        "https://www.bdfutbol.com/en/t/t2022-2330.html",
+        "https://www.bdfutbol.com/en/j/j201983.html"
       ],
       "evidence": {
         "seasonPrimarySource": "https://www.bdfutbol.com/en/t/t2022-2330.html",
@@ -4029,7 +4095,8 @@
             "leagueAppearances": 38,
             "leagueGoals": 0,
             "source": "https://www.bdfutbol.com/en/t/t2020-2130.html",
-            "audit": "unverified_previous_DRAFT_pointer"
+            "audit": "unverified_previous_DRAFT_pointer",
+            "leagueGoalsConceded": 38
           },
           {
             "season": "2021-22",
@@ -4038,9 +4105,12 @@
             "leagueAppearances": 35,
             "leagueGoals": 0,
             "source": "https://www.bdfutbol.com/en/t/t2021-2230.html",
-            "audit": "unverified_previous_DRAFT_pointer"
+            "audit": "unverified_previous_DRAFT_pointer",
+            "leagueGoalsConceded": 32
           }
-        ]
+        ],
+        "goalkeeperStatsSource": "https://www.bdfutbol.com/en/t/t2022-2330.html",
+        "goalkeeperStatDefinition": "leagueGoals = goals scored; leagueGoalsConceded = goals conceded"
       },
       "threeSeasonReview": {
         "seasons": [
@@ -4056,7 +4126,9 @@
       "rankReview": {
         "status": "provisional",
         "pool": 14
-      }
+      },
+      "birthSource": "https://www.bdfutbol.com/en/j/j201983.html",
+      "leagueGoalsConceded": 35
     },
     {
       "id": "laliga-202223-sociedad-02",
@@ -4235,7 +4307,14 @@
             "source": "https://www.bdfutbol.com/en/t/t2021-2230.html",
             "audit": "unverified_previous_DRAFT_pointer"
           }
-        ]
+        ],
+        "positionAudit": {
+          "previous": "CB",
+          "alternative": "RB",
+          "source": "https://fbref.com/en/players/f7dc2ae5/matchlogs/2022-2023/c12/summary/Aritz-Elustondo-Match-Logs",
+          "reason": "RB 출전 확인. CB/RB 최빈값 미확보.",
+          "decision": "retain_provisional_pending_matchwise_count"
+        }
       },
       "threeSeasonReview": {
         "seasons": [
@@ -4544,21 +4623,23 @@
         "priorSeasons": [
           {
             "season": "2020-21",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "sociedad",
+            "source": "https://www.bdfutbol.com/en/t/t2020-2130.html",
+            "leagueStarts": 6,
+            "leagueAppearances": 6,
+            "leagueMinutes": 342,
+            "leagueGoals": 0,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2021-22",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "sociedad",
+            "source": "https://www.bdfutbol.com/en/t/t2021-2230.html",
+            "leagueStarts": 6,
+            "leagueAppearances": 8,
+            "leagueMinutes": 379,
+            "leagueGoals": 0,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ]
       },
@@ -4674,21 +4755,23 @@
         "priorSeasons": [
           {
             "season": "2020-21",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "celta",
+            "source": "https://www.bdfutbol.com/en/t/t2020-2111.html",
+            "leagueStarts": 30,
+            "leagueAppearances": 34,
+            "leagueMinutes": 2677,
+            "leagueGoals": 9,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2021-22",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "celta",
+            "source": "https://www.bdfutbol.com/en/t/t2021-2211.html",
+            "leagueStarts": 36,
+            "leagueAppearances": 37,
+            "leagueMinutes": 3035,
+            "leagueGoals": 4,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ]
       },
@@ -4713,8 +4796,8 @@
       "name": "David Silva",
       "nameOriginal": "David Silva",
       "nameKo": "다비드 실바",
-      "born": "1992-04-30",
-      "birthAuditStatus": "prior_DRAFT_or_old_demo_unverified",
+      "born": "1986-01-08",
+      "birthAuditStatus": "external_audit_profile_reference",
       "club": "sociedad",
       "clubId": "sociedad",
       "clubNameOriginal": "Real Sociedad",
@@ -4731,7 +4814,8 @@
       "evaluationStatus": "provisional",
       "positionVerification": "2022_23_gamewise_majority_position_not_verified",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2022-2330.html"
+        "https://www.bdfutbol.com/en/t/t2022-2330.html",
+        "https://www.bdfutbol.com/en/j/j537.html"
       ],
       "evidence": {
         "seasonPrimarySource": "https://www.bdfutbol.com/en/t/t2022-2330.html",
@@ -4771,7 +4855,8 @@
       "rankReview": {
         "status": "provisional",
         "pool": 5
-      }
+      },
+      "birthSource": "https://www.bdfutbol.com/en/j/j537.html"
     },
     {
       "id": "laliga-202223-sociedad-13",
@@ -4934,21 +5019,33 @@
         "priorSeasons": [
           {
             "season": "2020-21",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "getafe",
+            "source": "https://www.bdfutbol.com/en/t/t2020-2116.html",
+            "leagueStarts": 8,
+            "leagueAppearances": 18,
+            "leagueMinutes": 799,
+            "leagueGoals": 1,
+            "audit": "external_audit_BDFutbol_club_season"
+          },
+          {
+            "season": "2020-21",
+            "club": "villarreal",
+            "source": "https://www.bdfutbol.com/en/t/t2020-2138.html",
+            "leagueStarts": 2,
+            "leagueAppearances": 13,
+            "leagueMinutes": 302,
+            "leagueGoals": 0,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2021-22",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "mallorca",
+            "source": "https://www.bdfutbol.com/en/t/t2021-2224.html",
+            "leagueStarts": 17,
+            "leagueAppearances": 28,
+            "leagueMinutes": 1609,
+            "leagueGoals": 1,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ]
       },
@@ -4965,7 +5062,8 @@
       "assessmentRationale": "BDF PM 35, SM 29, G 9; tier A tentative and not user approved",
       "rankReview": {
         "status": "provisional",
-        "pool": 15
+        "pool": 15,
+        "externalAuditReason": "구보 29선발 9골 4도움과 당해 공격 기여, 기존 1위 반영. 하피냐 이전 리즈 활약도 고려하되 당해 우선."
       }
     },
     {
@@ -5129,12 +5227,23 @@
         "priorSeasons": [
           {
             "season": "2020-21",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "sociedad",
+            "source": "https://www.bdfutbol.com/en/t/t2020-2130.html",
+            "leagueStarts": 4,
+            "leagueAppearances": 11,
+            "leagueMinutes": 385,
+            "leagueGoals": 1,
+            "audit": "external_audit_BDFutbol_club_season"
+          },
+          {
+            "season": "2020-21",
+            "club": "sevilla",
+            "source": "https://www.bdfutbol.com/en/t/t2020-2133.html",
+            "leagueStarts": 2,
+            "leagueAppearances": 5,
+            "leagueMinutes": 143,
+            "leagueGoals": 0,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2021-22",
@@ -5210,7 +5319,9 @@
             "source": null,
             "audit": "unverified_previous_DRAFT_pointer"
           }
-        ]
+        ],
+        "goalkeeperStatsSource": "https://www.bdfutbol.com/en/t/t2022-2338.html",
+        "goalkeeperStatDefinition": "leagueGoals = goals scored; leagueGoalsConceded = goals conceded"
       },
       "threeSeasonReview": {
         "seasons": [
@@ -5226,15 +5337,16 @@
       "rankReview": {
         "status": "provisional",
         "pool": 14
-      }
+      },
+      "leagueGoalsConceded": 27
     },
     {
       "id": "laliga-202223-villarreal-02",
       "name": "Gerónimo Rulli",
       "nameOriginal": "Gerónimo Rulli",
       "nameKo": "헤로니모 룰리",
-      "born": "1989-06-28",
-      "birthAuditStatus": "prior_DRAFT_or_old_demo_unverified",
+      "born": "1992-05-20",
+      "birthAuditStatus": "external_audit_profile_reference",
       "club": "villarreal",
       "clubId": "villarreal",
       "clubNameOriginal": "Villarreal CF",
@@ -5251,7 +5363,8 @@
       "evaluationStatus": "provisional",
       "positionVerification": "2022_23_gamewise_majority_position_not_verified",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2022-2338.html"
+        "https://www.bdfutbol.com/en/t/t2022-2338.html",
+        "https://www.bdfutbol.com/en/j/j18174.html"
       ],
       "evidence": {
         "seasonPrimarySource": "https://www.bdfutbol.com/en/t/t2022-2338.html",
@@ -5264,7 +5377,8 @@
             "leagueAppearances": 2,
             "leagueGoals": 0,
             "source": "https://www.bdfutbol.com/en/t/t2020-2138.html",
-            "audit": "unverified_previous_DRAFT_pointer"
+            "audit": "unverified_previous_DRAFT_pointer",
+            "leagueGoalsConceded": 4
           },
           {
             "season": "2021-22",
@@ -5273,9 +5387,12 @@
             "leagueAppearances": 32,
             "leagueGoals": 0,
             "source": "https://www.bdfutbol.com/en/t/t2021-2238.html",
-            "audit": "unverified_previous_DRAFT_pointer"
+            "audit": "unverified_previous_DRAFT_pointer",
+            "leagueGoalsConceded": 28
           }
-        ]
+        ],
+        "goalkeeperStatsSource": "https://www.bdfutbol.com/en/t/t2022-2338.html",
+        "goalkeeperStatDefinition": "leagueGoals = goals scored; leagueGoalsConceded = goals conceded"
       },
       "threeSeasonReview": {
         "seasons": [
@@ -5291,7 +5408,9 @@
       "rankReview": {
         "status": "provisional",
         "pool": 14
-      }
+      },
+      "birthSource": "https://www.bdfutbol.com/en/j/j18174.html",
+      "leagueGoalsConceded": 10
     },
     {
       "id": "laliga-202223-villarreal-03",
@@ -5355,7 +5474,8 @@
       "assessmentRationale": "BDF PM 34, SM 34, G 1; tier A tentative and not user approved",
       "rankReview": {
         "status": "provisional",
-        "pool": 24
+        "pool": 24,
+        "externalAuditReason": "파우 토레스 34선발 1골과 이전 두 시즌 중앙 수비·후방 전개 기여, 기존 A 2위 반영."
       }
     },
     {
@@ -5428,8 +5548,8 @@
       "name": "Aïssa Mandi",
       "nameOriginal": "Aïssa Mandi",
       "nameKo": "아이사 만디",
-      "born": "1992-04-30",
-      "birthAuditStatus": "prior_DRAFT_or_old_demo_unverified",
+      "born": "1991-10-22",
+      "birthAuditStatus": "external_audit_profile_reference",
       "club": "villarreal",
       "clubId": "villarreal",
       "clubNameOriginal": "Villarreal CF",
@@ -5446,7 +5566,8 @@
       "evaluationStatus": "provisional",
       "positionVerification": "2022_23_gamewise_majority_position_not_verified",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2022-2338.html"
+        "https://www.bdfutbol.com/en/t/t2022-2338.html",
+        "https://www.bdfutbol.com/en/j/j82607.html"
       ],
       "evidence": {
         "seasonPrimarySource": "https://www.bdfutbol.com/en/t/t2022-2338.html",
@@ -5486,15 +5607,16 @@
       "rankReview": {
         "status": "provisional",
         "pool": 24
-      }
+      },
+      "birthSource": "https://www.bdfutbol.com/en/j/j82607.html"
     },
     {
       "id": "laliga-202223-villarreal-06",
       "name": "Alfonso Pedraza",
       "nameOriginal": "Alfonso Pedraza",
       "nameKo": "알폰소 페드라사",
-      "born": "1989-06-28",
-      "birthAuditStatus": "prior_DRAFT_or_old_demo_unverified",
+      "born": "1996-04-09",
+      "birthAuditStatus": "external_audit_profile_reference",
       "club": "villarreal",
       "clubId": "villarreal",
       "clubNameOriginal": "Villarreal CF",
@@ -5511,7 +5633,8 @@
       "evaluationStatus": "provisional",
       "positionVerification": "2022_23_gamewise_majority_position_not_verified",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2022-2338.html"
+        "https://www.bdfutbol.com/en/t/t2022-2338.html",
+        "https://www.bdfutbol.com/en/j/j23095.html"
       ],
       "evidence": {
         "seasonPrimarySource": "https://www.bdfutbol.com/en/t/t2022-2338.html",
@@ -5551,15 +5674,16 @@
       "rankReview": {
         "status": "provisional",
         "pool": 15
-      }
+      },
+      "birthSource": "https://www.bdfutbol.com/en/j/j23095.html"
     },
     {
       "id": "laliga-202223-villarreal-07",
       "name": "Alberto Moreno",
       "nameOriginal": "Alberto Moreno",
       "nameKo": "알베르토 모레노",
-      "born": null,
-      "birthAuditStatus": "missing",
+      "born": "1992-07-05",
+      "birthAuditStatus": "external_audit_profile_reference",
       "club": "villarreal",
       "clubId": "villarreal",
       "clubNameOriginal": "Villarreal CF",
@@ -5576,7 +5700,8 @@
       "evaluationStatus": "provisional",
       "positionVerification": "2022_23_gamewise_majority_position_not_verified",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2022-2338.html"
+        "https://www.bdfutbol.com/en/t/t2022-2338.html",
+        "https://www.bdfutbol.com/en/j/j7010.html"
       ],
       "evidence": {
         "seasonPrimarySource": "https://www.bdfutbol.com/en/t/t2022-2338.html",
@@ -5584,12 +5709,13 @@
         "priorSeasons": [
           {
             "season": "2020-21",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "villarreal",
+            "source": "https://www.bdfutbol.com/en/t/t2020-2138.html",
+            "leagueStarts": 2,
+            "leagueAppearances": 5,
+            "leagueMinutes": 193,
+            "leagueGoals": 0,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2021-22",
@@ -5616,7 +5742,8 @@
       "rankReview": {
         "status": "provisional",
         "pool": 15
-      }
+      },
+      "birthSource": "https://www.bdfutbol.com/en/j/j7010.html"
     },
     {
       "id": "laliga-202223-villarreal-08",
@@ -5649,12 +5776,13 @@
         "priorSeasons": [
           {
             "season": "2020-21",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "villarreal",
+            "source": "https://www.bdfutbol.com/en/t/t2020-2138.html",
+            "leagueStarts": 13,
+            "leagueAppearances": 16,
+            "leagueMinutes": 1171,
+            "leagueGoals": 0,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2021-22",
@@ -5753,8 +5881,8 @@
       "name": "Étienne Capoue",
       "nameOriginal": "Étienne Capoue",
       "nameKo": "에티엔 카푸",
-      "born": "1989-06-28",
-      "birthAuditStatus": "prior_DRAFT_or_old_demo_unverified",
+      "born": "1988-07-11",
+      "birthAuditStatus": "external_audit_profile_reference",
       "club": "villarreal",
       "clubId": "villarreal",
       "clubNameOriginal": "Villarreal CF",
@@ -5771,7 +5899,8 @@
       "evaluationStatus": "provisional",
       "positionVerification": "2022_23_gamewise_majority_position_not_verified",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2022-2338.html"
+        "https://www.bdfutbol.com/en/t/t2022-2338.html",
+        "https://www.bdfutbol.com/en/j/j91017.html"
       ],
       "evidence": {
         "seasonPrimarySource": "https://www.bdfutbol.com/en/t/t2022-2338.html",
@@ -5811,7 +5940,8 @@
       "rankReview": {
         "status": "provisional",
         "pool": 14
-      }
+      },
+      "birthSource": "https://www.bdfutbol.com/en/j/j91017.html"
     },
     {
       "id": "laliga-202223-villarreal-11",
@@ -5853,12 +5983,13 @@
           },
           {
             "season": "2021-22",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "villarreal",
+            "source": "https://www.bdfutbol.com/en/t/t2021-2238.html",
+            "leagueStarts": 8,
+            "leagueAppearances": 20,
+            "leagueMinutes": 825,
+            "leagueGoals": 2,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ]
       },
@@ -5974,12 +6105,13 @@
         "priorSeasons": [
           {
             "season": "2020-21",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "villarreal",
+            "source": "https://www.bdfutbol.com/en/t/t2020-2138.html",
+            "leagueStarts": 2,
+            "leagueAppearances": 6,
+            "leagueMinutes": 138,
+            "leagueGoals": 0,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2021-22",
@@ -6078,8 +6210,8 @@
       "name": "Yeremy Pino",
       "nameOriginal": "Yeremy Pino",
       "nameKo": "예레미 피노",
-      "born": "1989-06-28",
-      "birthAuditStatus": "prior_DRAFT_or_old_demo_unverified",
+      "born": "2002-10-20",
+      "birthAuditStatus": "external_audit_profile_reference",
       "club": "villarreal",
       "clubId": "villarreal",
       "clubNameOriginal": "Villarreal CF",
@@ -6096,7 +6228,8 @@
       "evaluationStatus": "provisional",
       "positionVerification": "2022_23_gamewise_majority_position_not_verified",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2022-2338.html"
+        "https://www.bdfutbol.com/en/t/t2022-2338.html",
+        "https://www.bdfutbol.com/en/j/j15094.html"
       ],
       "evidence": {
         "seasonPrimarySource": "https://www.bdfutbol.com/en/t/t2022-2338.html",
@@ -6136,7 +6269,8 @@
       "rankReview": {
         "status": "provisional",
         "pool": 15
-      }
+      },
+      "birthSource": "https://www.bdfutbol.com/en/j/j15094.html"
     },
     {
       "id": "laliga-202223-villarreal-16",
@@ -6308,12 +6442,13 @@
           },
           {
             "season": "2021-22",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "villarreal",
+            "source": "https://www.bdfutbol.com/en/t/t2021-2238.html",
+            "leagueStarts": 0,
+            "leagueAppearances": 9,
+            "leagueMinutes": 157,
+            "leagueGoals": 0,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ]
       },
@@ -6429,12 +6564,14 @@
         "priorSeasons": [
           {
             "season": "2020-21",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
+            "club": "granada",
+            "source": "https://www.bdfutbol.com/en/t/t2020-2159.html",
+            "leagueStarts": 32,
+            "leagueAppearances": 32,
+            "leagueMinutes": 2880,
             "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "leagueGoalsConceded": 55,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2021-22",
@@ -6443,9 +6580,12 @@
             "leagueAppearances": 22,
             "leagueGoals": 0,
             "source": "https://www.bdfutbol.com/en/t/t2021-228.html",
-            "audit": "unverified_previous_DRAFT_pointer"
+            "audit": "unverified_previous_DRAFT_pointer",
+            "leagueGoalsConceded": 21
           }
-        ]
+        ],
+        "goalkeeperStatsSource": "https://www.bdfutbol.com/en/t/t2022-238.html",
+        "goalkeeperStatDefinition": "leagueGoals = goals scored; leagueGoalsConceded = goals conceded"
       },
       "threeSeasonReview": {
         "seasons": [
@@ -6461,15 +6601,16 @@
       "rankReview": {
         "status": "provisional",
         "pool": 14
-      }
+      },
+      "leagueGoalsConceded": 32
     },
     {
       "id": "laliga-202223-betis-02",
       "name": "Claudio Bravo",
       "nameOriginal": "Claudio Bravo",
       "nameKo": "클라우디오 브라보",
-      "born": "1992-04-30",
-      "birthAuditStatus": "prior_DRAFT_or_old_demo_unverified",
+      "born": "1983-04-13",
+      "birthAuditStatus": "external_audit_profile_reference",
       "club": "betis",
       "clubId": "betis",
       "clubNameOriginal": "Real Betis",
@@ -6486,7 +6627,8 @@
       "evaluationStatus": "provisional",
       "positionVerification": "2022_23_gamewise_majority_position_not_verified",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2022-238.html"
+        "https://www.bdfutbol.com/en/t/t2022-238.html",
+        "https://www.bdfutbol.com/en/j/j442.html"
       ],
       "evidence": {
         "seasonPrimarySource": "https://www.bdfutbol.com/en/t/t2022-238.html",
@@ -6499,7 +6641,8 @@
             "leagueAppearances": 20,
             "leagueGoals": 0,
             "source": "https://www.bdfutbol.com/en/t/t2020-218.html",
-            "audit": "unverified_previous_DRAFT_pointer"
+            "audit": "unverified_previous_DRAFT_pointer",
+            "leagueGoalsConceded": 25
           },
           {
             "season": "2021-22",
@@ -6508,9 +6651,12 @@
             "leagueAppearances": 17,
             "leagueGoals": 0,
             "source": "https://www.bdfutbol.com/en/t/t2021-228.html",
-            "audit": "unverified_previous_DRAFT_pointer"
+            "audit": "unverified_previous_DRAFT_pointer",
+            "leagueGoalsConceded": 19
           }
-        ]
+        ],
+        "goalkeeperStatsSource": "https://www.bdfutbol.com/en/t/t2022-238.html",
+        "goalkeeperStatDefinition": "leagueGoals = goals scored; leagueGoalsConceded = goals conceded"
       },
       "threeSeasonReview": {
         "seasons": [
@@ -6526,7 +6672,9 @@
       "rankReview": {
         "status": "provisional",
         "pool": 14
-      }
+      },
+      "birthSource": "https://www.bdfutbol.com/en/j/j442.html",
+      "leagueGoalsConceded": 9
     },
     {
       "id": "laliga-202223-betis-03",
@@ -6663,8 +6811,8 @@
       "name": "Edgar González",
       "nameOriginal": "Edgar González",
       "nameKo": "에드가르 곤살레스",
-      "born": null,
-      "birthAuditStatus": "missing",
+      "born": "1997-04-01",
+      "birthAuditStatus": "external_audit_profile_reference",
       "club": "betis",
       "clubId": "betis",
       "clubNameOriginal": "Real Betis",
@@ -6681,7 +6829,8 @@
       "evaluationStatus": "provisional",
       "positionVerification": "2022_23_gamewise_majority_position_not_verified",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2022-238.html"
+        "https://www.bdfutbol.com/en/t/t2022-238.html",
+        "https://www.bdfutbol.com/en/j/j23105.html"
       ],
       "evidence": {
         "seasonPrimarySource": "https://www.bdfutbol.com/en/t/t2022-238.html",
@@ -6698,12 +6847,13 @@
           },
           {
             "season": "2021-22",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "betis",
+            "source": "https://www.bdfutbol.com/en/t/t2021-228.html",
+            "leagueStarts": 14,
+            "leagueAppearances": 21,
+            "leagueMinutes": 1457,
+            "leagueGoals": 1,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ]
       },
@@ -6721,15 +6871,16 @@
       "rankReview": {
         "status": "provisional",
         "pool": 24
-      }
+      },
+      "birthSource": "https://www.bdfutbol.com/en/j/j23105.html"
     },
     {
       "id": "laliga-202223-betis-06",
       "name": "Juan Miranda",
       "nameOriginal": "Juan Miranda",
       "nameKo": "후안 미란다",
-      "born": "1992-04-30",
-      "birthAuditStatus": "prior_DRAFT_or_old_demo_unverified",
+      "born": "2000-01-19",
+      "birthAuditStatus": "external_audit_profile_reference",
       "club": "betis",
       "clubId": "betis",
       "clubNameOriginal": "Real Betis",
@@ -6746,7 +6897,8 @@
       "evaluationStatus": "provisional",
       "positionVerification": "2022_23_gamewise_majority_position_not_verified",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2022-238.html"
+        "https://www.bdfutbol.com/en/t/t2022-238.html",
+        "https://www.bdfutbol.com/en/j/j21475.html"
       ],
       "evidence": {
         "seasonPrimarySource": "https://www.bdfutbol.com/en/t/t2022-238.html",
@@ -6786,15 +6938,16 @@
       "rankReview": {
         "status": "provisional",
         "pool": 15
-      }
+      },
+      "birthSource": "https://www.bdfutbol.com/en/j/j21475.html"
     },
     {
       "id": "laliga-202223-betis-07",
       "name": "Álex Moreno",
       "nameOriginal": "Álex Moreno",
       "nameKo": "알렉스 모레노",
-      "born": "1992-04-30",
-      "birthAuditStatus": "prior_DRAFT_or_old_demo_unverified",
+      "born": "1993-06-08",
+      "birthAuditStatus": "external_audit_profile_reference",
       "club": "betis",
       "clubId": "betis",
       "clubNameOriginal": "Real Betis",
@@ -6811,7 +6964,8 @@
       "evaluationStatus": "provisional",
       "positionVerification": "2022_23_gamewise_majority_position_not_verified",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2022-238.html"
+        "https://www.bdfutbol.com/en/t/t2022-238.html",
+        "https://www.bdfutbol.com/en/j/j301828.html"
       ],
       "evidence": {
         "seasonPrimarySource": "https://www.bdfutbol.com/en/t/t2022-238.html",
@@ -6851,7 +7005,8 @@
       "rankReview": {
         "status": "provisional",
         "pool": 15
-      }
+      },
+      "birthSource": "https://www.bdfutbol.com/en/j/j301828.html"
     },
     {
       "id": "laliga-202223-betis-08",
@@ -6923,8 +7078,8 @@
       "name": "Aitor Ruibal",
       "nameOriginal": "Aitor Ruibal",
       "nameKo": "아이토르 루이발",
-      "born": "1992-04-30",
-      "birthAuditStatus": "prior_DRAFT_or_old_demo_unverified",
+      "born": "1996-03-22",
+      "birthAuditStatus": "external_audit_profile_reference",
       "club": "betis",
       "clubId": "betis",
       "clubNameOriginal": "Real Betis",
@@ -6941,7 +7096,8 @@
       "evaluationStatus": "provisional",
       "positionVerification": "2022_23_gamewise_majority_position_not_verified",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2022-238.html"
+        "https://www.bdfutbol.com/en/t/t2022-238.html",
+        "https://www.bdfutbol.com/en/j/j23106.html"
       ],
       "evidence": {
         "seasonPrimarySource": "https://www.bdfutbol.com/en/t/t2022-238.html",
@@ -6981,15 +7137,16 @@
       "rankReview": {
         "status": "provisional",
         "pool": 14
-      }
+      },
+      "birthSource": "https://www.bdfutbol.com/en/j/j23106.html"
     },
     {
       "id": "laliga-202223-betis-10",
       "name": "Guido Rodríguez",
       "nameOriginal": "Guido Rodríguez",
       "nameKo": "기도 로드리게스",
-      "born": "1992-04-30",
-      "birthAuditStatus": "prior_DRAFT_or_old_demo_unverified",
+      "born": "1994-04-12",
+      "birthAuditStatus": "external_audit_profile_reference",
       "club": "betis",
       "clubId": "betis",
       "clubNameOriginal": "Real Betis",
@@ -7006,7 +7163,8 @@
       "evaluationStatus": "provisional",
       "positionVerification": "2022_23_gamewise_majority_position_not_verified",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2022-238.html"
+        "https://www.bdfutbol.com/en/t/t2022-238.html",
+        "https://www.bdfutbol.com/en/j/j27658.html"
       ],
       "evidence": {
         "seasonPrimarySource": "https://www.bdfutbol.com/en/t/t2022-238.html",
@@ -7046,15 +7204,16 @@
       "rankReview": {
         "status": "provisional",
         "pool": 14
-      }
+      },
+      "birthSource": "https://www.bdfutbol.com/en/j/j27658.html"
     },
     {
       "id": "laliga-202223-betis-11",
       "name": "Andrés Guardado",
       "nameOriginal": "Andrés Guardado",
       "nameKo": "안드레스 과르다도",
-      "born": "1992-04-30",
-      "birthAuditStatus": "prior_DRAFT_or_old_demo_unverified",
+      "born": "1986-09-28",
+      "birthAuditStatus": "external_audit_profile_reference",
       "club": "betis",
       "clubId": "betis",
       "clubNameOriginal": "Real Betis",
@@ -7071,7 +7230,8 @@
       "evaluationStatus": "provisional",
       "positionVerification": "2022_23_gamewise_majority_position_not_verified",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2022-238.html"
+        "https://www.bdfutbol.com/en/t/t2022-238.html",
+        "https://www.bdfutbol.com/en/j/j4149.html"
       ],
       "evidence": {
         "seasonPrimarySource": "https://www.bdfutbol.com/en/t/t2022-238.html",
@@ -7088,12 +7248,13 @@
           },
           {
             "season": "2021-22",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "betis",
+            "source": "https://www.bdfutbol.com/en/t/t2021-228.html",
+            "leagueStarts": 17,
+            "leagueAppearances": 28,
+            "leagueMinutes": 1395,
+            "leagueGoals": 0,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ]
       },
@@ -7111,15 +7272,16 @@
       "rankReview": {
         "status": "provisional",
         "pool": 14
-      }
+      },
+      "birthSource": "https://www.bdfutbol.com/en/j/j4149.html"
     },
     {
       "id": "laliga-202223-betis-12",
       "name": "William Carvalho",
       "nameOriginal": "William Carvalho",
       "nameKo": "윌리엄 카르발류",
-      "born": "1992-04-30",
-      "birthAuditStatus": "prior_DRAFT_or_old_demo_unverified",
+      "born": "1992-04-07",
+      "birthAuditStatus": "external_audit_profile_reference",
       "club": "betis",
       "clubId": "betis",
       "clubNameOriginal": "Real Betis",
@@ -7136,7 +7298,8 @@
       "evaluationStatus": "provisional",
       "positionVerification": "2022_23_gamewise_majority_position_not_verified",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2022-238.html"
+        "https://www.bdfutbol.com/en/t/t2022-238.html",
+        "https://www.bdfutbol.com/en/j/j70061.html"
       ],
       "evidence": {
         "seasonPrimarySource": "https://www.bdfutbol.com/en/t/t2022-238.html",
@@ -7176,15 +7339,16 @@
       "rankReview": {
         "status": "provisional",
         "pool": 19
-      }
+      },
+      "birthSource": "https://www.bdfutbol.com/en/j/j70061.html"
     },
     {
       "id": "laliga-202223-betis-13",
       "name": "Sergio Canales",
       "nameOriginal": "Sergio Canales",
       "nameKo": "세르히오 카날레스",
-      "born": "1992-04-30",
-      "birthAuditStatus": "prior_DRAFT_or_old_demo_unverified",
+      "born": "1991-02-16",
+      "birthAuditStatus": "external_audit_profile_reference",
       "club": "betis",
       "clubId": "betis",
       "clubNameOriginal": "Real Betis",
@@ -7201,7 +7365,8 @@
       "evaluationStatus": "provisional",
       "positionVerification": "2022_23_gamewise_majority_position_not_verified",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2022-238.html"
+        "https://www.bdfutbol.com/en/t/t2022-238.html",
+        "https://www.bdfutbol.com/en/j/j8496.html"
       ],
       "evidence": {
         "seasonPrimarySource": "https://www.bdfutbol.com/en/t/t2022-238.html",
@@ -7241,15 +7406,16 @@
       "rankReview": {
         "status": "provisional",
         "pool": 5
-      }
+      },
+      "birthSource": "https://www.bdfutbol.com/en/j/j8496.html"
     },
     {
       "id": "laliga-202223-betis-14",
       "name": "Nabil Fekir",
       "nameOriginal": "Nabil Fekir",
       "nameKo": "나빌 페키르",
-      "born": "1992-04-30",
-      "birthAuditStatus": "prior_DRAFT_or_old_demo_unverified",
+      "born": "1993-07-18",
+      "birthAuditStatus": "external_audit_profile_reference",
       "club": "betis",
       "clubId": "betis",
       "clubNameOriginal": "Real Betis",
@@ -7266,7 +7432,8 @@
       "evaluationStatus": "provisional",
       "positionVerification": "2022_23_gamewise_majority_position_not_verified",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2022-238.html"
+        "https://www.bdfutbol.com/en/t/t2022-238.html",
+        "https://www.bdfutbol.com/en/j/j82254.html"
       ],
       "evidence": {
         "seasonPrimarySource": "https://www.bdfutbol.com/en/t/t2022-238.html",
@@ -7306,7 +7473,8 @@
       "rankReview": {
         "status": "provisional",
         "pool": 5
-      }
+      },
+      "birthSource": "https://www.bdfutbol.com/en/j/j82254.html"
     },
     {
       "id": "laliga-202223-betis-15",
@@ -7339,12 +7507,13 @@
         "priorSeasons": [
           {
             "season": "2020-21",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "betis",
+            "source": "https://www.bdfutbol.com/en/t/t2020-218.html",
+            "leagueStarts": 5,
+            "leagueAppearances": 15,
+            "leagueMinutes": 531,
+            "leagueGoals": 0,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2021-22",
@@ -7404,12 +7573,13 @@
         "priorSeasons": [
           {
             "season": "2020-21",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "betis",
+            "source": "https://www.bdfutbol.com/en/t/t2020-218.html",
+            "leagueStarts": 5,
+            "leagueAppearances": 16,
+            "leagueMinutes": 602,
+            "leagueGoals": 2,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2021-22",
@@ -7729,23 +7899,29 @@
         "priorSeasons": [
           {
             "season": "2020-21",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
+            "club": "levante",
+            "source": "https://www.bdfutbol.com/en/t/t2020-2120.html",
+            "leagueStarts": 29,
+            "leagueAppearances": 29,
+            "leagueMinutes": 2610,
             "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "leagueGoalsConceded": 44,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2021-22",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
+            "club": "levante",
+            "source": "https://www.bdfutbol.com/en/t/t2021-2220.html",
+            "leagueStarts": 13,
+            "leagueAppearances": 13,
+            "leagueMinutes": 1167,
             "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "leagueGoalsConceded": 29,
+            "audit": "external_audit_BDFutbol_club_season"
           }
-        ]
+        ],
+        "goalkeeperStatsSource": "https://www.bdfutbol.com/en/t/t2022-2327.html",
+        "goalkeeperStatDefinition": "leagueGoals = goals scored; leagueGoalsConceded = goals conceded"
       },
       "threeSeasonReview": {
         "seasons": [
@@ -7761,7 +7937,8 @@
       "rankReview": {
         "status": "provisional",
         "pool": 14
-      }
+      },
+      "leagueGoalsConceded": 19
     },
     {
       "id": "laliga-202223-osasuna-02",
@@ -7794,23 +7971,29 @@
         "priorSeasons": [
           {
             "season": "2020-21",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
+            "club": "osasuna",
+            "source": "https://www.bdfutbol.com/en/t/t2020-2127.html",
+            "leagueStarts": 32,
+            "leagueAppearances": 33,
+            "leagueMinutes": 2958,
             "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "leagueGoalsConceded": 40,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2021-22",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
+            "club": "osasuna",
+            "source": "https://www.bdfutbol.com/en/t/t2021-2227.html",
+            "leagueStarts": 36,
+            "leagueAppearances": 36,
+            "leagueMinutes": 3240,
             "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "leagueGoalsConceded": 48,
+            "audit": "external_audit_BDFutbol_club_season"
           }
-        ]
+        ],
+        "goalkeeperStatsSource": "https://www.bdfutbol.com/en/t/t2022-2327.html",
+        "goalkeeperStatDefinition": "leagueGoals = goals scored; leagueGoalsConceded = goals conceded"
       },
       "threeSeasonReview": {
         "seasons": [
@@ -7826,15 +8009,16 @@
       "rankReview": {
         "status": "provisional",
         "pool": 14
-      }
+      },
+      "leagueGoalsConceded": 23
     },
     {
       "id": "laliga-202223-osasuna-03",
       "name": "David García",
       "nameOriginal": "David García",
       "nameKo": "다비드 가르시아",
-      "born": "1994-01-14",
-      "birthAuditStatus": "prior_DRAFT_or_old_demo_unverified",
+      "born": "1994-02-14",
+      "birthAuditStatus": "external_audit_profile_reference",
       "club": "osasuna",
       "clubId": "osasuna",
       "clubNameOriginal": "CA Osasuna",
@@ -7851,7 +8035,8 @@
       "evaluationStatus": "provisional",
       "positionVerification": "2022_23_gamewise_majority_position_not_verified",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2022-2327.html"
+        "https://www.bdfutbol.com/en/t/t2022-2327.html",
+        "https://www.bdfutbol.com/en/j/j201018.html"
       ],
       "evidence": {
         "seasonPrimarySource": "https://www.bdfutbol.com/en/t/t2022-2327.html",
@@ -7859,21 +8044,23 @@
         "priorSeasons": [
           {
             "season": "2020-21",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "osasuna",
+            "source": "https://www.bdfutbol.com/en/t/t2020-2127.html",
+            "leagueStarts": 35,
+            "leagueAppearances": 35,
+            "leagueMinutes": 3150,
+            "leagueGoals": 1,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2021-22",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "osasuna",
+            "source": "https://www.bdfutbol.com/en/t/t2021-2227.html",
+            "leagueStarts": 35,
+            "leagueAppearances": 35,
+            "leagueMinutes": 3106,
+            "leagueGoals": 4,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ]
       },
@@ -7891,7 +8078,8 @@
       "rankReview": {
         "status": "provisional",
         "pool": 24
-      }
+      },
+      "birthSource": "https://www.bdfutbol.com/en/j/j201018.html"
     },
     {
       "id": "laliga-202223-osasuna-04",
@@ -7924,21 +8112,23 @@
         "priorSeasons": [
           {
             "season": "2020-21",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "osasuna",
+            "source": "https://www.bdfutbol.com/en/t/t2020-2127.html",
+            "leagueStarts": 24,
+            "leagueAppearances": 24,
+            "leagueMinutes": 2028,
+            "leagueGoals": 0,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2021-22",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "osasuna",
+            "source": "https://www.bdfutbol.com/en/t/t2021-2227.html",
+            "leagueStarts": 12,
+            "leagueAppearances": 15,
+            "leagueMinutes": 1157,
+            "leagueGoals": 0,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ]
       },
@@ -7989,21 +8179,23 @@
         "priorSeasons": [
           {
             "season": "2020-21",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "osasuna",
+            "source": "https://www.bdfutbol.com/en/t/t2020-2127.html",
+            "leagueStarts": 13,
+            "leagueAppearances": 17,
+            "leagueMinutes": 1239,
+            "leagueGoals": 0,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2021-22",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "osasuna",
+            "source": "https://www.bdfutbol.com/en/t/t2021-2227.html",
+            "leagueStarts": 15,
+            "leagueAppearances": 18,
+            "leagueMinutes": 1406,
+            "leagueGoals": 0,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ]
       },
@@ -8054,21 +8246,33 @@
         "priorSeasons": [
           {
             "season": "2020-21",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "osasuna",
+            "source": "https://www.bdfutbol.com/en/t/t2020-2127.html",
+            "leagueStarts": 10,
+            "leagueAppearances": 16,
+            "leagueMinutes": 975,
+            "leagueGoals": 0,
+            "audit": "external_audit_BDFutbol_club_season"
+          },
+          {
+            "season": "2020-21",
+            "club": "atleti",
+            "source": "https://www.bdfutbol.com/en/t/t2020-217.html",
+            "leagueStarts": 1,
+            "leagueAppearances": 1,
+            "leagueMinutes": 49,
+            "leagueGoals": 0,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2021-22",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "osasuna",
+            "source": "https://www.bdfutbol.com/en/t/t2021-2227.html",
+            "leagueStarts": 25,
+            "leagueAppearances": 33,
+            "leagueMinutes": 2260,
+            "leagueGoals": 1,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ]
       },
@@ -8119,21 +8323,23 @@
         "priorSeasons": [
           {
             "season": "2020-21",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "osasuna",
+            "source": "https://www.bdfutbol.com/en/t/t2020-2127.html",
+            "leagueStarts": 23,
+            "leagueAppearances": 26,
+            "leagueMinutes": 1964,
+            "leagueGoals": 0,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2021-22",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "osasuna",
+            "source": "https://www.bdfutbol.com/en/t/t2021-2227.html",
+            "leagueStarts": 22,
+            "leagueAppearances": 23,
+            "leagueMinutes": 1935,
+            "leagueGoals": 0,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ]
       },
@@ -8184,21 +8390,23 @@
         "priorSeasons": [
           {
             "season": "2020-21",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "osasuna",
+            "source": "https://www.bdfutbol.com/en/t/t2020-2127.html",
+            "leagueStarts": 25,
+            "leagueAppearances": 34,
+            "leagueMinutes": 2344,
+            "leagueGoals": 0,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2021-22",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "osasuna",
+            "source": "https://www.bdfutbol.com/en/t/t2021-2227.html",
+            "leagueStarts": 33,
+            "leagueAppearances": 35,
+            "leagueMinutes": 2906,
+            "leagueGoals": 0,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ]
       },
@@ -8258,12 +8466,13 @@
           },
           {
             "season": "2021-22",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "villarreal",
+            "source": "https://www.bdfutbol.com/en/t/t2021-2238.html",
+            "leagueStarts": 1,
+            "leagueAppearances": 7,
+            "leagueMinutes": 127,
+            "leagueGoals": 0,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ]
       },
@@ -8314,21 +8523,23 @@
         "priorSeasons": [
           {
             "season": "2020-21",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "osasuna",
+            "source": "https://www.bdfutbol.com/en/t/t2020-2127.html",
+            "leagueStarts": 17,
+            "leagueAppearances": 25,
+            "leagueMinutes": 1551,
+            "leagueGoals": 0,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2021-22",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "osasuna",
+            "source": "https://www.bdfutbol.com/en/t/t2021-2227.html",
+            "leagueStarts": 32,
+            "leagueAppearances": 33,
+            "leagueMinutes": 2734,
+            "leagueGoals": 1,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ]
       },
@@ -8353,8 +8564,8 @@
       "name": "Pablo Ibáñez",
       "nameOriginal": "Pablo Ibáñez",
       "nameKo": "파블로 이바녜스",
-      "born": null,
-      "birthAuditStatus": "missing",
+      "born": "1998-09-20",
+      "birthAuditStatus": "external_audit_profile_reference",
       "club": "osasuna",
       "clubId": "osasuna",
       "clubNameOriginal": "CA Osasuna",
@@ -8371,7 +8582,8 @@
       "evaluationStatus": "provisional",
       "positionVerification": "2022_23_gamewise_majority_position_not_verified",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2022-2327.html"
+        "https://www.bdfutbol.com/en/t/t2022-2327.html",
+        "https://www.bdfutbol.com/en/j/j43090.html"
       ],
       "evidence": {
         "seasonPrimarySource": "https://www.bdfutbol.com/en/t/t2022-2327.html",
@@ -8411,7 +8623,8 @@
       "rankReview": {
         "status": "provisional",
         "pool": 14
-      }
+      },
+      "birthSource": "https://www.bdfutbol.com/en/j/j43090.html"
     },
     {
       "id": "laliga-202223-osasuna-12",
@@ -8444,21 +8657,23 @@
         "priorSeasons": [
           {
             "season": "2020-21",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "osasuna",
+            "source": "https://www.bdfutbol.com/en/t/t2020-2127.html",
+            "leagueStarts": 28,
+            "leagueAppearances": 36,
+            "leagueMinutes": 2657,
+            "leagueGoals": 2,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2021-22",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "osasuna",
+            "source": "https://www.bdfutbol.com/en/t/t2021-2227.html",
+            "leagueStarts": 33,
+            "leagueAppearances": 36,
+            "leagueMinutes": 2923,
+            "leagueGoals": 2,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ]
       },
@@ -8509,21 +8724,23 @@
         "priorSeasons": [
           {
             "season": "2020-21",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "osasuna",
+            "source": "https://www.bdfutbol.com/en/t/t2020-2127.html",
+            "leagueStarts": 9,
+            "leagueAppearances": 16,
+            "leagueMinutes": 906,
+            "leagueGoals": 2,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2021-22",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "osasuna",
+            "source": "https://www.bdfutbol.com/en/t/t2021-2227.html",
+            "leagueStarts": 27,
+            "leagueAppearances": 35,
+            "leagueMinutes": 2412,
+            "leagueGoals": 1,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ]
       },
@@ -8639,21 +8856,23 @@
         "priorSeasons": [
           {
             "season": "2020-21",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "osasuna",
+            "source": "https://www.bdfutbol.com/en/t/t2020-2127.html",
+            "leagueStarts": 33,
+            "leagueAppearances": 37,
+            "leagueMinutes": 2729,
+            "leagueGoals": 3,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2021-22",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "osasuna",
+            "source": "https://www.bdfutbol.com/en/t/t2021-2227.html",
+            "leagueStarts": 30,
+            "leagueAppearances": 37,
+            "leagueMinutes": 2397,
+            "leagueGoals": 1,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ]
       },
@@ -8713,12 +8932,13 @@
           },
           {
             "season": "2021-22",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "villarreal",
+            "source": "https://www.bdfutbol.com/en/t/t2021-2238.html",
+            "leagueStarts": 13,
+            "leagueAppearances": 29,
+            "leagueMinutes": 1279,
+            "leagueGoals": 2,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ]
       },
@@ -8834,21 +9054,23 @@
         "priorSeasons": [
           {
             "season": "2020-21",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "osasuna",
+            "source": "https://www.bdfutbol.com/en/t/t2020-2127.html",
+            "leagueStarts": 2,
+            "leagueAppearances": 8,
+            "leagueMinutes": 199,
+            "leagueGoals": 0,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2021-22",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "osasuna",
+            "source": "https://www.bdfutbol.com/en/t/t2021-2227.html",
+            "leagueStarts": 22,
+            "leagueAppearances": 36,
+            "leagueMinutes": 1875,
+            "leagueGoals": 6,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ]
       },
@@ -8899,21 +9121,23 @@
         "priorSeasons": [
           {
             "season": "2020-21",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "osasuna",
+            "source": "https://www.bdfutbol.com/en/t/t2020-2127.html",
+            "leagueStarts": 17,
+            "leagueAppearances": 33,
+            "leagueMinutes": 1438,
+            "leagueGoals": 2,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2021-22",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "osasuna",
+            "source": "https://www.bdfutbol.com/en/t/t2021-2227.html",
+            "leagueStarts": 9,
+            "leagueAppearances": 21,
+            "leagueMinutes": 863,
+            "leagueGoals": 2,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ]
       },
@@ -8964,21 +9188,23 @@
         "priorSeasons": [
           {
             "season": "2020-21",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "osasuna",
+            "source": "https://www.bdfutbol.com/en/t/t2020-2127.html",
+            "leagueStarts": 18,
+            "leagueAppearances": 30,
+            "leagueMinutes": 1627,
+            "leagueGoals": 11,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2021-22",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "osasuna",
+            "source": "https://www.bdfutbol.com/en/t/t2021-2227.html",
+            "leagueStarts": 20,
+            "leagueAppearances": 28,
+            "leagueMinutes": 1741,
+            "leagueGoals": 8,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ]
       },
@@ -9029,21 +9255,23 @@
         "priorSeasons": [
           {
             "season": "2020-21",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "eibar",
+            "source": "https://www.bdfutbol.com/en/t/t2020-2147.html",
+            "leagueStarts": 36,
+            "leagueAppearances": 37,
+            "leagueMinutes": 3093,
+            "leagueGoals": 12,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2021-22",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "osasuna",
+            "source": "https://www.bdfutbol.com/en/t/t2021-2227.html",
+            "leagueStarts": 18,
+            "leagueAppearances": 33,
+            "leagueMinutes": 1853,
+            "leagueGoals": 5,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ]
       },
@@ -9097,9 +9325,11 @@
             "club": "sevilla",
             "leagueStarts": 33,
             "leagueAppearances": 33,
-            "leagueGoals": 0,
+            "leagueGoals": 1,
             "source": "https://www.bdfutbol.com/en/t/t2020-2133.html",
-            "audit": "unverified_previous_DRAFT_pointer"
+            "audit": "unverified_previous_DRAFT_pointer",
+            "leagueGoalsConceded": 28,
+            "goalScoredSource": "https://www.laliga.com/noticias/porteros-goleadores-en-la-historia-de-laliga"
           },
           {
             "season": "2021-22",
@@ -9108,9 +9338,12 @@
             "leagueAppearances": 31,
             "leagueGoals": 0,
             "source": "https://www.bdfutbol.com/en/t/t2021-2233.html",
-            "audit": "unverified_previous_DRAFT_pointer"
+            "audit": "unverified_previous_DRAFT_pointer",
+            "leagueGoalsConceded": 24
           }
-        ]
+        ],
+        "goalkeeperStatsSource": "https://www.bdfutbol.com/en/t/t2022-2333.html",
+        "goalkeeperStatDefinition": "leagueGoals = goals scored; leagueGoalsConceded = goals conceded"
       },
       "threeSeasonReview": {
         "seasons": [
@@ -9126,7 +9359,8 @@
       "rankReview": {
         "status": "provisional",
         "pool": 14
-      }
+      },
+      "leagueGoalsConceded": 41
     },
     {
       "id": "laliga-202223-sevilla-02",
@@ -9159,12 +9393,14 @@
         "priorSeasons": [
           {
             "season": "2020-21",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
+            "club": "eibar",
+            "source": "https://www.bdfutbol.com/en/t/t2020-2147.html",
+            "leagueStarts": 35,
+            "leagueAppearances": 35,
+            "leagueMinutes": 3120,
             "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "leagueGoalsConceded": 49,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2021-22",
@@ -9173,9 +9409,12 @@
             "leagueAppearances": 6,
             "leagueGoals": 0,
             "source": "https://www.bdfutbol.com/en/t/t2021-2233.html",
-            "audit": "unverified_previous_DRAFT_pointer"
+            "audit": "unverified_previous_DRAFT_pointer",
+            "leagueGoalsConceded": 5
           }
-        ]
+        ],
+        "goalkeeperStatsSource": "https://www.bdfutbol.com/en/t/t2022-2333.html",
+        "goalkeeperStatDefinition": "leagueGoals = goals scored; leagueGoalsConceded = goals conceded"
       },
       "threeSeasonReview": {
         "seasons": [
@@ -9191,7 +9430,8 @@
       "rankReview": {
         "status": "provisional",
         "pool": 14
-      }
+      },
+      "leagueGoalsConceded": 13
     },
     {
       "id": "laliga-202223-sevilla-03",
@@ -9393,8 +9633,8 @@
       "name": "Marcos Acuña",
       "nameOriginal": "Marcos Acuña",
       "nameKo": "마르코스 아쿠냐",
-      "born": "1989-03-29",
-      "birthAuditStatus": "prior_DRAFT_or_old_demo_unverified",
+      "born": "1991-10-28",
+      "birthAuditStatus": "external_audit_profile_reference",
       "club": "sevilla",
       "clubId": "sevilla",
       "clubNameOriginal": "Sevilla FC",
@@ -9411,7 +9651,8 @@
       "evaluationStatus": "provisional",
       "positionVerification": "2022_23_gamewise_majority_position_not_verified",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2022-2333.html"
+        "https://www.bdfutbol.com/en/t/t2022-2333.html",
+        "https://www.bdfutbol.com/en/j/j29160.html"
       ],
       "evidence": {
         "seasonPrimarySource": "https://www.bdfutbol.com/en/t/t2022-2333.html",
@@ -9451,7 +9692,8 @@
       "rankReview": {
         "status": "provisional",
         "pool": 15
-      }
+      },
+      "birthSource": "https://www.bdfutbol.com/en/j/j29160.html"
     },
     {
       "id": "laliga-202223-sevilla-07",
@@ -9679,21 +9921,23 @@
         "priorSeasons": [
           {
             "season": "2020-21",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "sevilla",
+            "source": "https://www.bdfutbol.com/en/t/t2020-2133.html",
+            "leagueStarts": 28,
+            "leagueAppearances": 31,
+            "leagueMinutes": 2547,
+            "leagueGoals": 3,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2021-22",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "sevilla",
+            "source": "https://www.bdfutbol.com/en/t/t2021-2233.html",
+            "leagueStarts": 21,
+            "leagueAppearances": 24,
+            "leagueMinutes": 1851,
+            "leagueGoals": 1,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ]
       },
@@ -9818,12 +10062,13 @@
           },
           {
             "season": "2021-22",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "sevilla",
+            "source": "https://www.bdfutbol.com/en/t/t2021-2233.html",
+            "leagueStarts": 11,
+            "leagueAppearances": 26,
+            "leagueMinutes": 1004,
+            "leagueGoals": 2,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ]
       },
@@ -10069,21 +10314,33 @@
         "priorSeasons": [
           {
             "season": "2020-21",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "sevilla",
+            "source": "https://www.bdfutbol.com/en/t/t2020-2133.html",
+            "leagueStarts": 0,
+            "leagueAppearances": 1,
+            "leagueMinutes": 13,
+            "leagueGoals": 0,
+            "audit": "external_audit_BDFutbol_club_season"
+          },
+          {
+            "season": "2020-21",
+            "club": "eibar",
+            "source": "https://www.bdfutbol.com/en/t/t2020-2147.html",
+            "leagueStarts": 26,
+            "leagueAppearances": 28,
+            "leagueMinutes": 2271,
+            "leagueGoals": 4,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2021-22",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "valencia",
+            "source": "https://www.bdfutbol.com/en/t/t2021-2236.html",
+            "leagueStarts": 9,
+            "leagueAppearances": 13,
+            "leagueMinutes": 756,
+            "leagueGoals": 0,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ]
       },
@@ -10208,12 +10465,13 @@
           },
           {
             "season": "2021-22",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "sevilla",
+            "source": "https://www.bdfutbol.com/en/t/t2021-2233.html",
+            "leagueStarts": 6,
+            "leagueAppearances": 8,
+            "leagueMinutes": 389,
+            "leagueGoals": 0,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ]
       },
@@ -10329,12 +10587,13 @@
         "priorSeasons": [
           {
             "season": "2020-21",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "unverified_previous_DRAFT_pointer"
+            "club": "huesca",
+            "source": "https://www.bdfutbol.com/en/t/t2020-2179.html",
+            "leagueStarts": 32,
+            "leagueAppearances": 38,
+            "leagueMinutes": 2881,
+            "leagueGoals": 13,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2021-22",
@@ -10370,12 +10629,14 @@
       "position": "GK"
     },
     {
-      "playerId": "laliga-202223-barca-03",
-      "position": "CB"
+      "playerId": "laliga-202223-madrid-03",
+      "position": "CB",
+      "reason": "밀리탕 30선발 5골과 직전 시즌 연속성, 기존 A+ 1위를 반영. 아라우호 21선발 및 우측 수비 혼용 고려. 잠정 편집 평가."
     },
     {
-      "playerId": "laliga-202223-sociedad-02",
-      "position": "CB"
+      "playerId": "laliga-202223-villarreal-03",
+      "position": "CB",
+      "reason": "파우 토레스 34선발 1골과 이전 두 시즌 중앙 수비·후방 전개 기여, 기존 A 2위 반영. 잠정 편집 평가."
     },
     {
       "playerId": "laliga-202223-barca-05",
@@ -10390,16 +10651,18 @@
       "position": "DM"
     },
     {
-      "playerId": "laliga-202223-barca-11",
-      "position": "CM"
+      "playerId": "laliga-202223-barca-10",
+      "position": "CM",
+      "reason": "CM 기존 1위 프렝키 더 용: 33경기 29선발·2534분·2골 4도움, 페드리 26경기 22선발·1976분·6골 1도움. 페드리의 득점과 전진 기여도 인정하되, 중앙 미드필더로 더 많은 출전과 직전 2시즌 35·30선발의 지속성을 우선. 기존 1·2위와 티어 유지."
     },
     {
       "playerId": "laliga-202223-madrid-14",
       "position": "LW"
     },
     {
-      "playerId": "laliga-202223-barca-15",
-      "position": "RW"
+      "playerId": "laliga-202223-sociedad-15",
+      "position": "RW",
+      "reason": "구보 29선발 9골 4도움과 당해 공격 기여, 기존 1위 반영. 하피냐 이전 리즈 활약도 고려하되 당해 우선. 잠정 편집 평가."
     },
     {
       "playerId": "laliga-202223-barca-17",

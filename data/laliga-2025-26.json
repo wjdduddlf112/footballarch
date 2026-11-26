@@ -9,7 +9,7 @@
     "status": "draft",
     "label": "DRAFT",
     "dataPrepared": true,
-    "candidateCount": 148,
+    "candidateCount": 147,
     "qualifyingClubCount": 8,
     "formation": "4-2-3-1",
     "formationStatus": "most_used_by_team_minutes_full_380_match_analysis",
@@ -79,18 +79,173 @@
       "positionModalVerified": false,
       "priorIndependentComplete": false,
       "priorCoverage": {
-        "0": 16,
-        "1": 43,
-        "2": 89
+        "0": 11,
+        "1": 38,
+        "2": 99
       },
       "otherLeagueArchiveReferences": 25,
-      "birthDateComparison": "141 roster+snapshot matches, 6 roster errors resolved against official profile and snapshot, Julio Diaz independently corroborated by official club and individual Transfermarkt profile."
+      "birthDateComparison": "141 roster+snapshot matches, 6 roster errors resolved against official profile and snapshot, Julio Diaz independently corroborated by official club and individual Transfermarkt profile.",
+      "externalBirthCorrection": {
+        "name": "Jon Gorrotxategi",
+        "from": "2002-02-02",
+        "to": "2002-09-02",
+        "sources": [
+          "https://www.bdfutbol.com/en/j/j201966.html",
+          "https://www.realsociedad.eus/es/equipo/jugador/real-sociedad/jon-gorrotxategi-etxaniz"
+        ]
+      },
+      "externalReview": {
+        "report": "audit/LALIGA_2017_2026_EXTERNAL_REVIEW_CORRECTIONS.json",
+        "status": "draft_external_report_applied",
+        "dobMissingCount": 0,
+        "startsMissingCount": 0,
+        "gkConcededRecorded": 14,
+        "fullHistoricalFactVerification": false,
+        "notes": "Follow-up applied; minutes standardized, XI discrepancies editorially resolved; matchwise position evidence remains incomplete."
+      },
+      "externalFollowupExcluded": [
+        {
+          "player": {
+            "id": "laliga-202526-villarreal-juanfoyth-19980112",
+            "name": "Juan Foyth",
+            "nameOriginal": "Juan Foyth",
+            "nameKo": "후안 포이트",
+            "born": "1998-01-12",
+            "club": "villarreal",
+            "clubId": "villarreal",
+            "clubNameOriginal": "Villarreal CF",
+            "position": "RB",
+            "role": "backup",
+            "leagueAppearances": 13,
+            "leagueStarts": 12,
+            "starts": 12,
+            "leagueMinutes": 937,
+            "leagueGoals": 0,
+            "leagueAssists": 0,
+            "appearanceScope": "2025-26 La Liga",
+            "tier": "B",
+            "rank": 14,
+            "review": "draft_unapproved",
+            "evaluationStatus": "provisional_editorial",
+            "birthSource": "https://www.footballsquads.co.uk/spain/2025-2026/laliga/villar.htm",
+            "birthAuditStatus": "season_roster_and_transfermarkt_snapshot_date_agree",
+            "birthSources": [
+              "https://www.footballsquads.co.uk/spain/2025-2026/laliga/villar.htm",
+              "https://www.transfermarkt.es/juan-foyth/profil/spieler/480763",
+              "https://github.com/dmorenoli/Tipolog-a-y-Ciclo-de-Vida-de-los-Datos/blob/main/dataset/laliga_jugadores_2025_26.csv"
+            ],
+            "positionVerification": "representative_tactical_role_not_matchwise_modal",
+            "positionReview": "4-4-2",
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2025-2638.html",
+              "https://www.footballsquads.co.uk/spain/2025-2026/laliga/villar.htm",
+              "https://www.transfermarkt.es/juan-foyth/profil/spieler/480763",
+              "https://github.com/dmorenoli/Tipolog-a-y-Ciclo-de-Vida-de-los-Datos/blob/main/dataset/laliga_jugadores_2025_26.csv",
+              "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2025.json",
+              "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2023.json",
+              "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2024-25.json",
+              "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2024.json"
+            ],
+            "evidence": {
+              "seasonPrimarySource": "https://www.bdfutbol.com/en/t/t2025-2638.html",
+              "seasonStatsMethod": "BDFutbol final club-specific PM/SM/Min/G transcribed, goalkeeper conceded excluded; assists only if snapshot agrees on apps/goals and minutes within five",
+              "snapshotCrosscheck": "apps_goals_match_minutes_within_5",
+              "priorSeasons": [
+                {
+                  "season": "2023-24",
+                  "records": [
+                    {
+                      "club": "Villarreal CF",
+                      "league": "La Liga",
+                      "source": "https://www.bdfutbol.com/en/t/t2023-2438.html",
+                      "leagueStarts": 12,
+                      "leagueAppearances": 12,
+                      "leagueMinutes": 1062,
+                      "leagueGoals": 1,
+                      "status": "external_audit_BDFutbol_club_season"
+                    }
+                  ],
+                  "secondarySnapshot": [
+                    {
+                      "sourceTeamId": "20",
+                      "sourceOptaId": "p234908",
+                      "leagueAppearances": 12,
+                      "leagueMinutes": 1062,
+                      "leagueGoals": 1,
+                      "leagueAssists": 1,
+                      "source": "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2023.json",
+                      "status": "same_Opta_ID_partial_snapshot"
+                    }
+                  ],
+                  "status": "direct_source_available"
+                },
+                {
+                  "season": "2024-25",
+                  "records": [
+                    {
+                      "club": "Villarreal CF",
+                      "leagueAppearances": 19,
+                      "leagueStarts": 17,
+                      "leagueMinutes": 1517,
+                      "leagueGoals": 1,
+                      "tier": "B+",
+                      "archiveBorn": "1998-01-12",
+                      "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2024-25.json",
+                      "status": "prior_DRAFT"
+                    }
+                  ],
+                  "secondarySnapshot": [
+                    {
+                      "sourceTeamId": "20",
+                      "sourceOptaId": "p234908",
+                      "leagueAppearances": 19,
+                      "leagueMinutes": 1517,
+                      "leagueGoals": 1,
+                      "leagueAssists": 0,
+                      "source": "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2024.json",
+                      "status": "same_Opta_ID_partial_snapshot"
+                    }
+                  ],
+                  "status": "reference_available"
+                }
+              ],
+              "positionAudit": {
+                "previous": "RB",
+                "alternative": "CB",
+                "source": "https://11footy.com/teams/villarreal?season=2025&tab=squad",
+                "reason": "시즌 페이지 CB 분류. 구단 공식 프로필은 CB/RB 겸용. CB 후보 3명보다 선발량 부족하여 후보 제외.",
+                "decision": "exclude_CB_pool_full"
+              }
+            },
+            "threeSeasonReview": {
+              "seasons": [
+                "2023-24",
+                "2024-25",
+                "2025-26"
+              ],
+              "relativeWeight": "2025-26 > 2024-25 > 2023-24",
+              "priorCoverage": 2,
+              "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
+            },
+            "tierReview": "우측 수비·전진에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
+            "assessmentRationale": "2025-26 13경기 12선발 937분 0골 0도움. 우측 수비·전진에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B 잠정 평가, 구단 순위 가산 없음.",
+            "rankReview": {
+              "status": "provisional",
+              "pool": 15,
+              "method": "editorial tier and peer priority; minutes then goals as provisional tiebreak"
+            }
+          },
+          "reason": "CB로 재분류 시 Veiga 27, Marín 21, Navarro 23선발 대비 Foyth 12선발; CB 후보 정원 제한."
+        }
+      ],
+      "externalFollowup": "Eligibility and alternative positions reviewed; remaining matchwise modal uncertainty is explicitly recorded; no user approval implied."
     },
     "nodeCliValidation": {
       "status": "PASS",
       "scope": "in-memory JavaScript structural validation; independent source truth and live browser not certified",
       "errors": []
-    }
+    },
+    "minutesAuditPolicy": "2024-25 prior archive records synchronized to BDFutbol; original secondary snapshots preserved."
   },
   "clubs": [
     {
@@ -637,7 +792,9 @@
             "secondarySnapshot": [],
             "status": "direct_source_available"
           }
-        ]
+        ],
+        "goalkeeperStatsSource": "https://www.bdfutbol.com/en/t/t2025-261.html",
+        "goalkeeperStatDefinition": "leagueGoals = goals scored; leagueGoalsConceded = goals conceded"
       },
       "threeSeasonReview": {
         "seasons": [
@@ -655,7 +812,8 @@
         "status": "provisional",
         "pool": 14,
         "method": "editorial tier and peer priority; minutes then goals as provisional tiebreak"
-      }
+      },
+      "leagueGoalsConceded": 21
     },
     {
       "id": "laliga-202526-barca-wojciechszczesny-19900418",
@@ -733,7 +891,8 @@
                 "tier": "B+",
                 "archiveBorn": "1990-04-18",
                 "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2024-25.json",
-                "status": "prior_DRAFT"
+                "status": "prior_DRAFT",
+                "leagueGoalsConceded": 12
               }
             ],
             "secondarySnapshot": [
@@ -750,7 +909,9 @@
             ],
             "status": "reference_available"
           }
-        ]
+        ],
+        "goalkeeperStatsSource": "https://www.bdfutbol.com/en/t/t2025-261.html",
+        "goalkeeperStatDefinition": "leagueGoals = goals scored; leagueGoalsConceded = goals conceded"
       },
       "threeSeasonReview": {
         "seasons": [
@@ -768,7 +929,8 @@
         "status": "provisional",
         "pool": 14,
         "method": "editorial tier and peer priority; minutes then goals as provisional tiebreak"
-      }
+      },
+      "leagueGoalsConceded": 15
     },
     {
       "id": "laliga-202526-barca-paucubarsi-20070122",
@@ -1249,7 +1411,7 @@
       "starts": 11,
       "leagueMinutes": 953,
       "leagueGoals": 2,
-      "leagueAssists": null,
+      "leagueAssists": 2,
       "appearanceScope": "2025-26 La Liga",
       "tier": "B+",
       "rank": 7,
@@ -1269,7 +1431,8 @@
         "https://www.footballsquads.co.uk/spain/2025-2026/laliga/barce.htm",
         "https://www.transfermarkt.es/joao-cancelo/profil/spieler/182712",
         "https://github.com/dmorenoli/Tipolog-a-y-Ciclo-de-Vida-de-los-Datos/blob/main/dataset/laliga_jugadores_2025_26.csv",
-        "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2023-24.json"
+        "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2023-24.json",
+        "https://www.statmuse.com/fc/ask?q=jo%C3%A3o+cancelo+assists+in+laliga+this+season"
       ],
       "evidence": {
         "seasonPrimarySource": "https://www.bdfutbol.com/en/t/t2025-261.html",
@@ -1313,7 +1476,7 @@
         "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "좌측 수비·전진에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
-      "assessmentRationale": "2025-26 16경기 11선발 953분 2골. 좌측 수비·전진에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 1/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
+      "assessmentRationale": "2025-26 16경기 11선발 953분 2골. 좌측 수비·전진에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 1/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음. [외부 검수 정정: 리그 16경기, 11선발, 953분, 2골, 도움 2.]",
       "rankReview": {
         "status": "provisional",
         "pool": 15,
@@ -1429,7 +1592,7 @@
       "assessmentRationale": "2025-26 30경기 24선발 2259분 1골 3도움. 우측 수비·전진에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A 잠정 평가, 구단 순위 가산 없음.",
       "rankReview": {
         "status": "provisional",
-        "pool": 15,
+        "pool": 14,
         "method": "editorial tier and peer priority; minutes then goals as provisional tiebreak"
       }
     },
@@ -1605,9 +1768,20 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "FC Barcelona",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2023-241.html",
+                "leagueStarts": 0,
+                "leagueAppearances": 2,
+                "leagueMinutes": 13,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [],
-            "status": "evidence_pending_not_zero"
+            "status": "direct_source_available"
           },
           {
             "season": "2024-25",
@@ -1647,7 +1821,7 @@
           "2025-26"
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
-        "priorCoverage": 1,
+        "priorCoverage": 2,
         "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중원 수비·전개에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
@@ -1823,7 +1997,18 @@
           },
           {
             "season": "2024-25",
-            "records": [],
+            "records": [
+              {
+                "club": "FC Barcelona",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2024-251.html",
+                "leagueStarts": 3,
+                "leagueAppearances": 3,
+                "leagueMinutes": 244,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "4",
@@ -1836,7 +2021,7 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           }
         ]
       },
@@ -2767,7 +2952,19 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "Real Madrid",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2023-242.html",
+                "leagueStarts": 4,
+                "leagueAppearances": 4,
+                "leagueMinutes": 333,
+                "leagueGoals": null,
+                "leagueGoalsConceded": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "15",
@@ -2780,7 +2977,7 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           },
           {
             "season": "2024-25",
@@ -2794,7 +2991,8 @@
                 "tier": "A+",
                 "archiveBorn": "1992-05-11",
                 "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2024-25.json",
-                "status": "prior_DRAFT"
+                "status": "prior_DRAFT",
+                "leagueGoalsConceded": 29
               }
             ],
             "secondarySnapshot": [
@@ -2811,7 +3009,9 @@
             ],
             "status": "reference_available"
           }
-        ]
+        ],
+        "goalkeeperStatsSource": "https://www.bdfutbol.com/en/t/t2025-262.html",
+        "goalkeeperStatDefinition": "leagueGoals = goals scored; leagueGoalsConceded = goals conceded"
       },
       "threeSeasonReview": {
         "seasons": [
@@ -2829,7 +3029,8 @@
         "status": "provisional",
         "pool": 14,
         "method": "editorial tier and peer priority; minutes then goals as provisional tiebreak"
-      }
+      },
+      "leagueGoalsConceded": 28
     },
     {
       "id": "laliga-202526-madrid-andriylunin-19990211",
@@ -2889,7 +3090,8 @@
                 "tier": "A-",
                 "archiveBorn": "1999-02-11",
                 "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2023-24.json",
-                "status": "prior_DRAFT"
+                "status": "prior_DRAFT",
+                "leagueGoalsConceded": 17
               }
             ],
             "secondarySnapshot": [],
@@ -2907,7 +3109,8 @@
                 "tier": "B",
                 "archiveBorn": "1999-02-11",
                 "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2024-25.json",
-                "status": "prior_DRAFT"
+                "status": "prior_DRAFT",
+                "leagueGoalsConceded": 7
               }
             ],
             "secondarySnapshot": [
@@ -2924,7 +3127,9 @@
             ],
             "status": "reference_available"
           }
-        ]
+        ],
+        "goalkeeperStatsSource": "https://www.bdfutbol.com/en/t/t2025-262.html",
+        "goalkeeperStatDefinition": "leagueGoals = goals scored; leagueGoalsConceded = goals conceded"
       },
       "threeSeasonReview": {
         "seasons": [
@@ -2942,7 +3147,8 @@
         "status": "provisional",
         "pool": 14,
         "method": "editorial tier and peer priority; minutes then goals as provisional tiebreak"
-      }
+      },
+      "leagueGoalsConceded": 7
     },
     {
       "id": "laliga-202526-madrid-deanhuijsen-20050414",
@@ -3290,9 +3496,20 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "Granada CF",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2023-2459.html",
+                "leagueStarts": 5,
+                "leagueAppearances": 13,
+                "leagueMinutes": 473,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [],
-            "status": "evidence_pending_not_zero"
+            "status": "direct_source_available"
           },
           {
             "season": "2024-25",
@@ -3309,7 +3526,7 @@
           "2025-26"
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
-        "priorCoverage": 0,
+        "priorCoverage": 1,
         "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "좌측 수비·전진에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
@@ -3403,12 +3620,17 @@
                 "club": "Real Madrid",
                 "leagueAppearances": 31,
                 "leagueStarts": 24,
-                "leagueMinutes": 2174,
+                "leagueMinutes": 2173,
                 "leagueGoals": 0,
                 "tier": "B+",
                 "archiveBorn": "1999-08-14",
                 "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2024-25.json",
-                "status": "prior_DRAFT"
+                "status": "prior_DRAFT",
+                "minutesAudit": {
+                  "previousSnapshotMinutes": 2174,
+                  "source": "https://www.bdfutbol.com/en/t/t2024-252.html",
+                  "method": "BDFutbol club-season minutes; secondary snapshot unchanged"
+                }
               }
             ],
             "secondarySnapshot": [
@@ -3542,7 +3764,7 @@
       "assessmentRationale": "2025-26 21경기 14선발 1164분 0골 4도움. 우측 수비·전진에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A- 잠정 평가, 구단 순위 가산 없음.",
       "rankReview": {
         "status": "provisional",
-        "pool": 15,
+        "pool": 14,
         "method": "editorial tier and peer priority; minutes then goals as provisional tiebreak"
       }
     },
@@ -3617,12 +3839,17 @@
                 "club": "Real Madrid",
                 "leagueAppearances": 8,
                 "leagueStarts": null,
-                "leagueMinutes": 609,
+                "leagueMinutes": 610,
                 "leagueGoals": 1,
                 "tier": "B+",
                 "archiveBorn": "1992-01-11",
                 "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2024-25.json",
-                "status": "prior_DRAFT"
+                "status": "prior_DRAFT",
+                "minutesAudit": {
+                  "previousSnapshotMinutes": 609,
+                  "source": "https://www.bdfutbol.com/en/t/t2024-252.html",
+                  "method": "BDFutbol club-season minutes; secondary snapshot unchanged"
+                }
               }
             ],
             "secondarySnapshot": [
@@ -3655,7 +3882,7 @@
       "assessmentRationale": "2025-26 17경기 10선발 976분 0골 1도움. 우측 수비·전진에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B 잠정 평가, 구단 순위 가산 없음.",
       "rankReview": {
         "status": "provisional",
-        "pool": 15,
+        "pool": 14,
         "method": "editorial tier and peer priority; minutes then goals as provisional tiebreak"
       }
     },
@@ -3843,12 +4070,17 @@
                 "club": "Real Madrid",
                 "leagueAppearances": 19,
                 "leagueStarts": null,
-                "leagueMinutes": 1096,
+                "leagueMinutes": 1097,
                 "leagueGoals": 1,
                 "tier": "B+",
                 "archiveBorn": "2002-11-10",
                 "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2024-25.json",
-                "status": "prior_DRAFT"
+                "status": "prior_DRAFT",
+                "minutesAudit": {
+                  "previousSnapshotMinutes": 1096,
+                  "source": "https://www.bdfutbol.com/en/t/t2024-252.html",
+                  "method": "BDFutbol club-season minutes; secondary snapshot unchanged"
+                }
               }
             ],
             "secondarySnapshot": [
@@ -3968,12 +4200,17 @@
                 "club": "Real Madrid",
                 "leagueAppearances": 36,
                 "leagueStarts": 34,
-                "leagueMinutes": 3032,
+                "leagueMinutes": 3034,
                 "leagueGoals": 6,
                 "tier": "S",
                 "archiveBorn": "1998-07-22",
                 "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2024-25.json",
-                "status": "prior_DRAFT"
+                "status": "prior_DRAFT",
+                "minutesAudit": {
+                  "previousSnapshotMinutes": 3032,
+                  "source": "https://www.bdfutbol.com/en/t/t2024-252.html",
+                  "method": "BDFutbol club-season minutes; secondary snapshot unchanged"
+                }
               }
             ],
             "secondarySnapshot": [
@@ -4057,7 +4294,18 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "Real Madrid",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2023-242.html",
+                "leagueStarts": 5,
+                "leagueAppearances": 20,
+                "leagueMinutes": 586,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "15",
@@ -4070,11 +4318,22 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           },
           {
             "season": "2024-25",
-            "records": [],
+            "records": [
+              {
+                "club": "Real Madrid",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2024-252.html",
+                "leagueStarts": 15,
+                "leagueAppearances": 23,
+                "leagueMinutes": 1219,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "15",
@@ -4087,9 +4346,14 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           }
-        ]
+        ],
+        "eligibilityAudit": {
+          "decision": "retain_provisional_backup",
+          "reason": "4선발 16출전. 해당 구단 등록 후보군에서 동일 포지션 주전 Federico Valverde의 유일한 예비 후보. 5선발 하한 미설정; 저출전 비상·로테이션 후보로 유지. 전체 미등록 선수와의 비교는 미완료.",
+          "source": "https://www.bdfutbol.com/en/t/t2025-262.html"
+        }
       },
       "threeSeasonReview": {
         "seasons": [
@@ -4180,12 +4444,17 @@
                 "club": "Real Madrid",
                 "leagueAppearances": 31,
                 "leagueStarts": 29,
-                "leagueMinutes": 2494,
+                "leagueMinutes": 2495,
                 "leagueGoals": 9,
                 "tier": "A+",
                 "archiveBorn": "2003-06-29",
                 "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2024-25.json",
-                "status": "prior_DRAFT"
+                "status": "prior_DRAFT",
+                "minutesAudit": {
+                  "previousSnapshotMinutes": 2494,
+                  "source": "https://www.bdfutbol.com/en/t/t2024-252.html",
+                  "method": "BDFutbol club-season minutes; secondary snapshot unchanged"
+                }
               }
             ],
             "secondarySnapshot": [
@@ -4269,9 +4538,20 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "Real Madrid",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2023-242.html",
+                "leagueStarts": 4,
+                "leagueAppearances": 10,
+                "leagueMinutes": 373,
+                "leagueGoals": 6,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [],
-            "status": "evidence_pending_not_zero"
+            "status": "direct_source_available"
           },
           {
             "season": "2024-25",
@@ -4280,12 +4560,17 @@
                 "club": "Real Madrid",
                 "leagueAppearances": 28,
                 "leagueStarts": 14,
-                "leagueMinutes": 1247,
+                "leagueMinutes": 1248,
                 "leagueGoals": 3,
                 "tier": "B+",
                 "archiveBorn": "2005-02-25",
                 "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2024-25.json",
-                "status": "prior_DRAFT"
+                "status": "prior_DRAFT",
+                "minutesAudit": {
+                  "previousSnapshotMinutes": 1247,
+                  "source": "https://www.bdfutbol.com/en/t/t2024-252.html",
+                  "method": "BDFutbol club-season minutes; secondary snapshot unchanged"
+                }
               }
             ],
             "secondarySnapshot": [
@@ -4311,7 +4596,7 @@
           "2025-26"
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
-        "priorCoverage": 1,
+        "priorCoverage": 2,
         "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "25선발·9도움, 중앙과 우측의 창조성",
@@ -4405,12 +4690,17 @@
                 "club": "Real Madrid",
                 "leagueAppearances": 30,
                 "leagueStarts": 24,
-                "leagueMinutes": 2257,
+                "leagueMinutes": 2258,
                 "leagueGoals": 11,
                 "tier": "A+",
                 "archiveBorn": "2000-07-12",
                 "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2024-25.json",
-                "status": "prior_DRAFT"
+                "status": "prior_DRAFT",
+                "minutesAudit": {
+                  "previousSnapshotMinutes": 2257,
+                  "source": "https://www.bdfutbol.com/en/t/t2024-252.html",
+                  "method": "BDFutbol club-season minutes; secondary snapshot unchanged"
+                }
               }
             ],
             "secondarySnapshot": [
@@ -4530,12 +4820,17 @@
                 "club": "Real Madrid",
                 "leagueAppearances": 31,
                 "leagueStarts": 16,
-                "leagueMinutes": 1380,
+                "leagueMinutes": 1381,
                 "leagueGoals": 4,
                 "tier": "B+",
                 "archiveBorn": "1999-08-03",
                 "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2024-25.json",
-                "status": "prior_DRAFT"
+                "status": "prior_DRAFT",
+                "minutesAudit": {
+                  "previousSnapshotMinutes": 1380,
+                  "source": "https://www.bdfutbol.com/en/t/t2024-252.html",
+                  "method": "BDFutbol club-season minutes; secondary snapshot unchanged"
+                }
               }
             ],
             "secondarySnapshot": [
@@ -4718,12 +5013,17 @@
                 "club": "Real Madrid",
                 "leagueAppearances": 34,
                 "leagueStarts": 34,
-                "leagueMinutes": 2915,
+                "leagueMinutes": 2917,
                 "leagueGoals": 31,
                 "tier": "S",
                 "archiveBorn": "1998-12-20",
                 "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2024-25.json",
-                "status": "prior_DRAFT"
+                "status": "prior_DRAFT",
+                "minutesAudit": {
+                  "previousSnapshotMinutes": 2915,
+                  "source": "https://www.bdfutbol.com/en/t/t2024-252.html",
+                  "method": "BDFutbol club-season minutes; secondary snapshot unchanged"
+                }
               }
             ],
             "secondarySnapshot": [
@@ -4806,13 +5106,35 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "Real Madrid",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2023-242.html",
+                "leagueStarts": 0,
+                "leagueAppearances": 2,
+                "leagueMinutes": 17,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [],
-            "status": "evidence_pending_not_zero"
+            "status": "direct_source_available"
           },
           {
             "season": "2024-25",
-            "records": [],
+            "records": [
+              {
+                "club": "Real Madrid",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2024-252.html",
+                "leagueStarts": 0,
+                "leagueAppearances": 3,
+                "leagueMinutes": 53,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "15",
@@ -4825,7 +5147,7 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           }
         ]
       },
@@ -4836,7 +5158,7 @@
           "2025-26"
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
-        "priorCoverage": 1,
+        "priorCoverage": 2,
         "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "전방 마무리·연계에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
@@ -4910,7 +5232,8 @@
                 "tier": "B",
                 "archiveBorn": "2001-01-14",
                 "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2024-25.json",
-                "status": "prior_DRAFT"
+                "status": "prior_DRAFT",
+                "leagueGoalsConceded": 18
               }
             ],
             "secondarySnapshot": [
@@ -4927,7 +5250,9 @@
             ],
             "status": "reference_available"
           }
-        ]
+        ],
+        "goalkeeperStatsSource": "https://www.bdfutbol.com/en/t/t2025-2638.html",
+        "goalkeeperStatDefinition": "leagueGoals = goals scored; leagueGoalsConceded = goals conceded"
       },
       "threeSeasonReview": {
         "seasons": [
@@ -4945,7 +5270,8 @@
         "status": "provisional",
         "pool": 14,
         "method": "editorial tier and peer priority; minutes then goals as provisional tiebreak"
-      }
+      },
+      "leagueGoalsConceded": 30
     },
     {
       "id": "laliga-202526-villarreal-arnautenas-20010530",
@@ -5015,7 +5341,9 @@
             "secondarySnapshot": [],
             "status": "evidence_pending_not_zero"
           }
-        ]
+        ],
+        "goalkeeperStatsSource": "https://www.bdfutbol.com/en/t/t2025-2638.html",
+        "goalkeeperStatDefinition": "leagueGoals = goals scored; leagueGoalsConceded = goals conceded"
       },
       "threeSeasonReview": {
         "seasons": [
@@ -5033,7 +5361,8 @@
         "status": "provisional",
         "pool": 14,
         "method": "editorial tier and peer priority; minutes then goals as provisional tiebreak"
-      }
+      },
+      "leagueGoalsConceded": 16
     },
     {
       "id": "laliga-202526-villarreal-renatoveiga-20030729",
@@ -5169,7 +5498,18 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "Deportivo Alavés",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2023-243.html",
+                "leagueStarts": 27,
+                "leagueAppearances": 33,
+                "leagueMinutes": 2440,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "21",
@@ -5182,7 +5522,7 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           },
           {
             "season": "2024-25",
@@ -5268,12 +5608,17 @@
                 "club": "Villarreal CF",
                 "leagueAppearances": 17,
                 "leagueStarts": null,
-                "leagueMinutes": 917,
+                "leagueMinutes": 913,
                 "leagueGoals": 0,
                 "tier": "C+",
                 "archiveBorn": "2005-04-25",
                 "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2024-25.json",
-                "status": "prior_DRAFT"
+                "status": "prior_DRAFT",
+                "minutesAudit": {
+                  "previousSnapshotMinutes": 917,
+                  "source": "https://www.bdfutbol.com/en/t/t2024-2538.html",
+                  "method": "BDFutbol club-season minutes; secondary snapshot unchanged"
+                }
               }
             ],
             "secondarySnapshot": [
@@ -5358,7 +5703,18 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "UD Las Palmas",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2023-2419.html",
+                "leagueStarts": 30,
+                "leagueAppearances": 35,
+                "leagueMinutes": 2814,
+                "leagueGoals": 1,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "31",
@@ -5371,7 +5727,7 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           },
           {
             "season": "2024-25",
@@ -5470,7 +5826,18 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "Villarreal CF",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2023-2438.html",
+                "leagueStarts": 14,
+                "leagueAppearances": 19,
+                "leagueMinutes": 1120,
+                "leagueGoals": 1,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "20",
@@ -5483,7 +5850,7 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           },
           {
             "season": "2024-25",
@@ -5586,7 +5953,18 @@
           },
           {
             "season": "2024-25",
-            "records": [],
+            "records": [
+              {
+                "club": "Deportivo Alavés",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2024-253.html",
+                "leagueStarts": 20,
+                "leagueAppearances": 25,
+                "leagueMinutes": 1846,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "21",
@@ -5599,7 +5977,7 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           }
         ]
       },
@@ -5617,119 +5995,7 @@
       "assessmentRationale": "2025-26 28경기 27선발 2383분 1골 2도움. 우측 수비·전진에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 1/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
       "rankReview": {
         "status": "provisional",
-        "pool": 15,
-        "method": "editorial tier and peer priority; minutes then goals as provisional tiebreak"
-      }
-    },
-    {
-      "id": "laliga-202526-villarreal-juanfoyth-19980112",
-      "name": "Juan Foyth",
-      "nameOriginal": "Juan Foyth",
-      "nameKo": "후안 포이트",
-      "born": "1998-01-12",
-      "club": "villarreal",
-      "clubId": "villarreal",
-      "clubNameOriginal": "Villarreal CF",
-      "position": "RB",
-      "role": "backup",
-      "leagueAppearances": 13,
-      "leagueStarts": 12,
-      "starts": 12,
-      "leagueMinutes": 937,
-      "leagueGoals": 0,
-      "leagueAssists": 0,
-      "appearanceScope": "2025-26 La Liga",
-      "tier": "B",
-      "rank": 14,
-      "review": "draft_unapproved",
-      "evaluationStatus": "provisional_editorial",
-      "birthSource": "https://www.footballsquads.co.uk/spain/2025-2026/laliga/villar.htm",
-      "birthAuditStatus": "season_roster_and_transfermarkt_snapshot_date_agree",
-      "birthSources": [
-        "https://www.footballsquads.co.uk/spain/2025-2026/laliga/villar.htm",
-        "https://www.transfermarkt.es/juan-foyth/profil/spieler/480763",
-        "https://github.com/dmorenoli/Tipolog-a-y-Ciclo-de-Vida-de-los-Datos/blob/main/dataset/laliga_jugadores_2025_26.csv"
-      ],
-      "positionVerification": "representative_tactical_role_not_matchwise_modal",
-      "positionReview": "4-4-2",
-      "sources": [
-        "https://www.bdfutbol.com/en/t/t2025-2638.html",
-        "https://www.footballsquads.co.uk/spain/2025-2026/laliga/villar.htm",
-        "https://www.transfermarkt.es/juan-foyth/profil/spieler/480763",
-        "https://github.com/dmorenoli/Tipolog-a-y-Ciclo-de-Vida-de-los-Datos/blob/main/dataset/laliga_jugadores_2025_26.csv",
-        "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2025.json",
-        "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2023.json",
-        "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2024-25.json",
-        "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2024.json"
-      ],
-      "evidence": {
-        "seasonPrimarySource": "https://www.bdfutbol.com/en/t/t2025-2638.html",
-        "seasonStatsMethod": "BDFutbol final club-specific PM/SM/Min/G transcribed, goalkeeper conceded excluded; assists only if snapshot agrees on apps/goals and minutes within five",
-        "snapshotCrosscheck": "apps_goals_match_minutes_within_5",
-        "priorSeasons": [
-          {
-            "season": "2023-24",
-            "records": [],
-            "secondarySnapshot": [
-              {
-                "sourceTeamId": "20",
-                "sourceOptaId": "p234908",
-                "leagueAppearances": 12,
-                "leagueMinutes": 1062,
-                "leagueGoals": 1,
-                "leagueAssists": 1,
-                "source": "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2023.json",
-                "status": "same_Opta_ID_partial_snapshot"
-              }
-            ],
-            "status": "reference_available"
-          },
-          {
-            "season": "2024-25",
-            "records": [
-              {
-                "club": "Villarreal CF",
-                "leagueAppearances": 19,
-                "leagueStarts": 17,
-                "leagueMinutes": 1517,
-                "leagueGoals": 1,
-                "tier": "B+",
-                "archiveBorn": "1998-01-12",
-                "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2024-25.json",
-                "status": "prior_DRAFT"
-              }
-            ],
-            "secondarySnapshot": [
-              {
-                "sourceTeamId": "20",
-                "sourceOptaId": "p234908",
-                "leagueAppearances": 19,
-                "leagueMinutes": 1517,
-                "leagueGoals": 1,
-                "leagueAssists": 0,
-                "source": "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2024.json",
-                "status": "same_Opta_ID_partial_snapshot"
-              }
-            ],
-            "status": "reference_available"
-          }
-        ]
-      },
-      "threeSeasonReview": {
-        "seasons": [
-          "2023-24",
-          "2024-25",
-          "2025-26"
-        ],
-        "relativeWeight": "2025-26 > 2024-25 > 2023-24",
-        "priorCoverage": 2,
-        "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
-      },
-      "tierReview": "우측 수비·전진에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
-      "assessmentRationale": "2025-26 13경기 12선발 937분 0골 0도움. 우측 수비·전진에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B 잠정 평가, 구단 순위 가산 없음.",
-      "rankReview": {
-        "status": "provisional",
-        "pool": 15,
+        "pool": 14,
         "method": "editorial tier and peer priority; minutes then goals as provisional tiebreak"
       }
     },
@@ -5791,12 +6057,17 @@
                 "club": "Villarreal CF",
                 "leagueAppearances": 34,
                 "leagueStarts": 26,
-                "leagueMinutes": 2232,
+                "leagueMinutes": 2233,
                 "leagueGoals": 4,
                 "tier": "B+",
                 "archiveBorn": "1999-01-24",
                 "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2024-25.json",
-                "status": "prior_DRAFT"
+                "status": "prior_DRAFT",
+                "minutesAudit": {
+                  "previousSnapshotMinutes": 2232,
+                  "source": "https://www.bdfutbol.com/en/t/t2024-2538.html",
+                  "method": "BDFutbol club-season minutes; secondary snapshot unchanged"
+                }
               }
             ],
             "secondarySnapshot": [
@@ -5849,7 +6120,7 @@
       "starts": 8,
       "leagueMinutes": 922,
       "leagueGoals": 0,
-      "leagueAssists": null,
+      "leagueAssists": 0,
       "appearanceScope": "2025-26 La Liga",
       "tier": "B",
       "rank": 14,
@@ -5913,7 +6184,8 @@
             "secondarySnapshot": [],
             "status": "reference_available"
           }
-        ]
+        ],
+        "assistsAuditSource": "https://fbref.com/en/players/529f49ab/all_comps/"
       },
       "threeSeasonReview": {
         "seasons": [
@@ -5981,7 +6253,18 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "Villarreal CF",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2023-2438.html",
+                "leagueStarts": 20,
+                "leagueAppearances": 27,
+                "leagueMinutes": 1656,
+                "leagueGoals": 2,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "20",
@@ -5994,7 +6277,7 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           },
           {
             "season": "2024-25",
@@ -6003,12 +6286,17 @@
                 "club": "Villarreal CF",
                 "leagueAppearances": 35,
                 "leagueStarts": 30,
-                "leagueMinutes": 2564,
+                "leagueMinutes": 2565,
                 "leagueGoals": 4,
                 "tier": "B+",
                 "archiveBorn": "1996-10-05",
                 "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2024-25.json",
-                "status": "prior_DRAFT"
+                "status": "prior_DRAFT",
+                "minutesAudit": {
+                  "previousSnapshotMinutes": 2564,
+                  "source": "https://www.bdfutbol.com/en/t/t2024-2538.html",
+                  "method": "BDFutbol club-season minutes; secondary snapshot unchanged"
+                }
               }
             ],
             "secondarySnapshot": [
@@ -6093,7 +6381,18 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "Villarreal CF",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2023-2438.html",
+                "leagueStarts": 29,
+                "leagueAppearances": 33,
+                "leagueMinutes": 2587,
+                "leagueGoals": 3,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "20",
@@ -6106,7 +6405,7 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           },
           {
             "season": "2024-25",
@@ -6115,12 +6414,17 @@
                 "club": "Villarreal CF",
                 "leagueAppearances": 36,
                 "leagueStarts": 26,
-                "leagueMinutes": 2277,
+                "leagueMinutes": 2278,
                 "leagueGoals": 3,
                 "tier": "A-",
                 "archiveBorn": "1989-04-16",
                 "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2024-25.json",
-                "status": "prior_DRAFT"
+                "status": "prior_DRAFT",
+                "minutesAudit": {
+                  "previousSnapshotMinutes": 2277,
+                  "source": "https://www.bdfutbol.com/en/t/t2024-2538.html",
+                  "method": "BDFutbol club-season minutes; secondary snapshot unchanged"
+                }
               }
             ],
             "secondarySnapshot": [
@@ -6204,7 +6508,18 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "UD Las Palmas",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2023-2419.html",
+                "leagueStarts": 21,
+                "leagueAppearances": 28,
+                "leagueMinutes": 1809,
+                "leagueGoals": 3,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "31",
@@ -6217,11 +6532,22 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           },
           {
             "season": "2024-25",
-            "records": [],
+            "records": [
+              {
+                "club": "UD Las Palmas",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2024-2519.html",
+                "leagueStarts": 32,
+                "leagueAppearances": 35,
+                "leagueMinutes": 2727,
+                "leagueGoals": 6,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "31",
@@ -6234,7 +6560,7 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           }
         ]
       },
@@ -6314,12 +6640,17 @@
                 "club": "Villarreal CF",
                 "leagueAppearances": 28,
                 "leagueStarts": 15,
-                "leagueMinutes": 1495,
+                "leagueMinutes": 1496,
                 "leagueGoals": 3,
                 "tier": "B+",
                 "archiveBorn": "1995-05-29",
                 "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2024-25.json",
-                "status": "prior_DRAFT"
+                "status": "prior_DRAFT",
+                "minutesAudit": {
+                  "previousSnapshotMinutes": 1495,
+                  "source": "https://www.bdfutbol.com/en/t/t2024-2538.html",
+                  "method": "BDFutbol club-season minutes; secondary snapshot unchanged"
+                }
               }
             ],
             "secondarySnapshot": [
@@ -6408,7 +6739,18 @@
           },
           {
             "season": "2024-25",
-            "records": [],
+            "records": [
+              {
+                "club": "Villarreal CF",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2024-2538.html",
+                "leagueStarts": 4,
+                "leagueAppearances": 13,
+                "leagueMinutes": 414,
+                "leagueGoals": 1,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "20",
@@ -6421,7 +6763,7 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           }
         ]
       },
@@ -6579,7 +6921,18 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "Villarreal CF",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2023-2438.html",
+                "leagueStarts": 28,
+                "leagueAppearances": 30,
+                "leagueMinutes": 2231,
+                "leagueGoals": 10,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "20",
@@ -6592,7 +6945,7 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           },
           {
             "season": "2024-25",
@@ -6601,12 +6954,17 @@
                 "club": "Villarreal CF",
                 "leagueAppearances": 17,
                 "leagueStarts": null,
-                "leagueMinutes": 717,
+                "leagueMinutes": 716,
                 "leagueGoals": 3,
                 "tier": "B",
                 "archiveBorn": "1992-04-07",
                 "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2024-25.json",
-                "status": "prior_DRAFT"
+                "status": "prior_DRAFT",
+                "minutesAudit": {
+                  "previousSnapshotMinutes": 717,
+                  "source": "https://www.bdfutbol.com/en/t/t2024-2538.html",
+                  "method": "BDFutbol club-season minutes; secondary snapshot unchanged"
+                }
               }
             ],
             "secondarySnapshot": [
@@ -6721,12 +7079,17 @@
                 "club": "Villarreal CF",
                 "leagueAppearances": 30,
                 "leagueStarts": 22,
-                "leagueMinutes": 1977,
+                "leagueMinutes": 1976,
                 "leagueGoals": 19,
                 "tier": "A+",
                 "archiveBorn": "1993-07-29",
                 "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2024-25.json",
-                "status": "prior_DRAFT"
+                "status": "prior_DRAFT",
+                "minutesAudit": {
+                  "previousSnapshotMinutes": 1977,
+                  "source": "https://www.bdfutbol.com/en/t/t2024-2538.html",
+                  "method": "BDFutbol club-season minutes; secondary snapshot unchanged"
+                }
               }
             ],
             "secondarySnapshot": [
@@ -6821,7 +7184,8 @@
                 "tier": "A",
                 "archiveBorn": "1993-01-07",
                 "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2023-24.json",
-                "status": "prior_DRAFT"
+                "status": "prior_DRAFT",
+                "leagueGoalsConceded": 43
               }
             ],
             "secondarySnapshot": [],
@@ -6839,7 +7203,8 @@
                 "tier": "A+",
                 "archiveBorn": "1993-01-07",
                 "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2024-25.json",
-                "status": "prior_DRAFT"
+                "status": "prior_DRAFT",
+                "leagueGoalsConceded": 30
               }
             ],
             "secondarySnapshot": [
@@ -6856,7 +7221,9 @@
             ],
             "status": "reference_available"
           }
-        ]
+        ],
+        "goalkeeperStatsSource": "https://www.bdfutbol.com/en/t/t2025-267.html",
+        "goalkeeperStatDefinition": "leagueGoals = goals scored; leagueGoalsConceded = goals conceded"
       },
       "threeSeasonReview": {
         "seasons": [
@@ -6874,7 +7241,8 @@
         "status": "provisional",
         "pool": 14,
         "method": "editorial tier and peer priority; minutes then goals as provisional tiebreak"
-      }
+      },
+      "leagueGoalsConceded": 31
     },
     {
       "id": "laliga-202526-atleti-juanmusso-19940506",
@@ -6952,7 +7320,8 @@
                 "tier": "C",
                 "archiveBorn": "1994-05-06",
                 "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2024-25.json",
-                "status": "prior_DRAFT"
+                "status": "prior_DRAFT",
+                "leagueGoalsConceded": 0
               }
             ],
             "secondarySnapshot": [
@@ -6969,7 +7338,9 @@
             ],
             "status": "reference_available"
           }
-        ]
+        ],
+        "goalkeeperStatsSource": "https://www.bdfutbol.com/en/t/t2025-267.html",
+        "goalkeeperStatDefinition": "leagueGoals = goals scored; leagueGoalsConceded = goals conceded"
       },
       "threeSeasonReview": {
         "seasons": [
@@ -6987,7 +7358,8 @@
         "status": "provisional",
         "pool": 14,
         "method": "editorial tier and peer priority; minutes then goals as provisional tiebreak"
-      }
+      },
+      "leagueGoalsConceded": 13
     },
     {
       "id": "laliga-202526-atleti-davidhancko-19971213",
@@ -7445,7 +7817,12 @@
             "secondarySnapshot": [],
             "status": "direct_source_available"
           }
-        ]
+        ],
+        "eligibilityAudit": {
+          "decision": "retain_provisional_backup",
+          "reason": "4선발 4출전. 해당 구단 등록 후보군에서 동일 포지션 주전 Matteo Ruggeri의 유일한 예비 후보. 5선발 하한 미설정; 저출전 비상·로테이션 후보로 유지. 전체 미등록 선수와의 비교는 미완료.",
+          "source": "https://www.bdfutbol.com/en/t/t2025-267.html"
+        }
       },
       "threeSeasonReview": {
         "seasons": [
@@ -7548,12 +7925,17 @@
                 "club": "Atlético de Madrid",
                 "leagueAppearances": 33,
                 "leagueStarts": 28,
-                "leagueMinutes": 2512,
+                "leagueMinutes": 2514,
                 "leagueGoals": 2,
                 "tier": "A",
                 "archiveBorn": "1995-01-30",
                 "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2024-25.json",
-                "status": "prior_DRAFT"
+                "status": "prior_DRAFT",
+                "minutesAudit": {
+                  "previousSnapshotMinutes": 2512,
+                  "source": "https://www.bdfutbol.com/en/t/t2024-257.html",
+                  "method": "BDFutbol club-season minutes; secondary snapshot unchanged"
+                }
               }
             ],
             "secondarySnapshot": [
@@ -7586,7 +7968,7 @@
       "assessmentRationale": "2025-26 29경기 25선발 2183분 0골 4도움. 우측 수비·전진에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A 잠정 평가, 구단 순위 가산 없음.",
       "rankReview": {
         "status": "provisional",
-        "pool": 15,
+        "pool": 14,
         "method": "editorial tier and peer priority; minutes then goals as provisional tiebreak"
       }
     },
@@ -7654,7 +8036,7 @@
                 "leagueMinutes": 1852,
                 "leagueGoals": 2,
                 "tier": "B+",
-                "archiveBorn": "1997-12-02",
+                "archiveBorn": "1998-04-06",
                 "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2023-24.json",
                 "status": "prior_DRAFT_DOB_corrected_by_official_profile"
               }
@@ -7680,12 +8062,17 @@
                 "club": "Atlético de Madrid",
                 "leagueAppearances": 30,
                 "leagueStarts": null,
-                "leagueMinutes": 1581,
+                "leagueMinutes": 1585,
                 "leagueGoals": 0,
                 "tier": "B+",
-                "archiveBorn": "1997-12-02",
+                "archiveBorn": "1998-04-06",
                 "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2024-25.json",
-                "status": "prior_DRAFT_DOB_corrected_by_official_profile"
+                "status": "prior_DRAFT_DOB_corrected_by_official_profile",
+                "minutesAudit": {
+                  "previousSnapshotMinutes": 1581,
+                  "source": "https://www.bdfutbol.com/en/t/t2024-257.html",
+                  "method": "BDFutbol club-season minutes; secondary snapshot unchanged"
+                }
               }
             ],
             "secondarySnapshot": [
@@ -7718,7 +8105,7 @@
       "assessmentRationale": "2025-26 26경기 13선발 1321분 2골 2도움. 우측 수비·전진에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
       "rankReview": {
         "status": "provisional",
-        "pool": 15,
+        "pool": 14,
         "method": "editorial tier and peer priority; minutes then goals as provisional tiebreak"
       }
     },
@@ -7805,12 +8192,17 @@
                 "club": "Atlético de Madrid",
                 "leagueAppearances": 32,
                 "leagueStarts": 20,
-                "leagueMinutes": 1927,
+                "leagueMinutes": 1926,
                 "leagueGoals": 1,
                 "tier": "B+",
                 "archiveBorn": "1992-01-08",
                 "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2024-25.json",
-                "status": "prior_DRAFT"
+                "status": "prior_DRAFT",
+                "minutesAudit": {
+                  "previousSnapshotMinutes": 1927,
+                  "source": "https://www.bdfutbol.com/en/t/t2024-257.html",
+                  "method": "BDFutbol club-season minutes; secondary snapshot unchanged"
+                }
               }
             ],
             "secondarySnapshot": [
@@ -8231,9 +8623,20 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "Villarreal CF",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2023-2438.html",
+                "leagueStarts": 33,
+                "leagueAppearances": 34,
+                "leagueMinutes": 2600,
+                "leagueGoals": 2,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [],
-            "status": "evidence_pending_not_zero"
+            "status": "direct_source_available"
           },
           {
             "season": "2024-25",
@@ -8262,7 +8665,7 @@
           "2025-26"
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
-        "priorCoverage": 1,
+        "priorCoverage": 2,
         "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "좌측 공격에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
@@ -8422,7 +8825,18 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "Deportivo Alavés",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2023-243.html",
+                "leagueStarts": 6,
+                "leagueAppearances": 14,
+                "leagueMinutes": 629,
+                "leagueGoals": 1,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "21",
@@ -8435,7 +8849,7 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           },
           {
             "season": "2024-25",
@@ -8444,12 +8858,17 @@
                 "club": "Atlético de Madrid",
                 "leagueAppearances": 33,
                 "leagueStarts": 26,
-                "leagueMinutes": 1940,
+                "leagueMinutes": 1942,
                 "leagueGoals": 2,
                 "tier": "B+",
                 "archiveBorn": "2002-12-18",
                 "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2024-25.json",
-                "status": "prior_DRAFT"
+                "status": "prior_DRAFT",
+                "minutesAudit": {
+                  "previousSnapshotMinutes": 1940,
+                  "source": "https://www.bdfutbol.com/en/t/t2024-257.html",
+                  "method": "BDFutbol club-season minutes; secondary snapshot unchanged"
+                }
               }
             ],
             "secondarySnapshot": [
@@ -8557,12 +8976,17 @@
                 "club": "Atlético de Madrid",
                 "leagueAppearances": 37,
                 "leagueStarts": 30,
-                "leagueMinutes": 2518,
+                "leagueMinutes": 2520,
                 "leagueGoals": 17,
                 "tier": "A+",
                 "archiveBorn": "2000-01-31",
                 "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2024-25.json",
-                "status": "prior_DRAFT"
+                "status": "prior_DRAFT",
+                "minutesAudit": {
+                  "previousSnapshotMinutes": 2518,
+                  "source": "https://www.bdfutbol.com/en/t/t2024-257.html",
+                  "method": "BDFutbol club-season minutes; secondary snapshot unchanged"
+                }
               }
             ],
             "secondarySnapshot": [
@@ -8647,7 +9071,18 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "Villarreal CF",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2023-2438.html",
+                "leagueStarts": 30,
+                "leagueAppearances": 34,
+                "leagueMinutes": 2492,
+                "leagueGoals": 23,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "20",
@@ -8660,7 +9095,7 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           },
           {
             "season": "2024-25",
@@ -8669,12 +9104,17 @@
                 "club": "Atlético de Madrid",
                 "leagueAppearances": 35,
                 "leagueStarts": null,
-                "leagueMinutes": 1560,
+                "leagueMinutes": 1559,
                 "leagueGoals": 20,
                 "tier": "A+",
                 "archiveBorn": "1995-12-05",
                 "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2024-25.json",
-                "status": "prior_DRAFT"
+                "status": "prior_DRAFT",
+                "minutesAudit": {
+                  "previousSnapshotMinutes": 1560,
+                  "source": "https://www.bdfutbol.com/en/t/t2024-257.html",
+                  "method": "BDFutbol club-season minutes; secondary snapshot unchanged"
+                }
               }
             ],
             "secondarySnapshot": [
@@ -8782,12 +9222,17 @@
                 "club": "Atlético de Madrid",
                 "leagueAppearances": 38,
                 "leagueStarts": 29,
-                "leagueMinutes": 2482,
+                "leagueMinutes": 2479,
                 "leagueGoals": 8,
                 "tier": "A+",
                 "archiveBorn": "1991-03-21",
                 "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2024-25.json",
-                "status": "prior_DRAFT"
+                "status": "prior_DRAFT",
+                "minutesAudit": {
+                  "previousSnapshotMinutes": 2482,
+                  "source": "https://www.bdfutbol.com/en/t/t2024-257.html",
+                  "method": "BDFutbol club-season minutes; secondary snapshot unchanged"
+                }
               }
             ],
             "secondarySnapshot": [
@@ -8877,7 +9322,19 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "UD Las Palmas",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2023-2419.html",
+                "leagueStarts": 37,
+                "leagueAppearances": 37,
+                "leagueMinutes": 3264,
+                "leagueGoals": null,
+                "leagueGoalsConceded": 44,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "31",
@@ -8890,7 +9347,7 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           },
           {
             "season": "2024-25",
@@ -8898,7 +9355,9 @@
             "secondarySnapshot": [],
             "status": "evidence_pending_not_zero"
           }
-        ]
+        ],
+        "goalkeeperStatsSource": "https://www.bdfutbol.com/en/t/t2025-268.html",
+        "goalkeeperStatDefinition": "leagueGoals = goals scored; leagueGoalsConceded = goals conceded"
       },
       "threeSeasonReview": {
         "seasons": [
@@ -8916,7 +9375,8 @@
         "status": "provisional",
         "pool": 14,
         "method": "editorial tier and peer priority; minutes then goals as provisional tiebreak"
-      }
+      },
+      "leagueGoalsConceded": 36
     },
     {
       "id": "laliga-202526-betis-paulopez-19941213",
@@ -8969,11 +9429,25 @@
           },
           {
             "season": "2024-25",
-            "records": [],
+            "records": [
+              {
+                "club": "Girona FC",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2024-2578.html",
+                "leagueStarts": 0,
+                "leagueAppearances": 1,
+                "leagueMinutes": 44,
+                "leagueGoals": null,
+                "leagueGoalsConceded": 2,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [],
-            "status": "evidence_pending_not_zero"
+            "status": "direct_source_available"
           }
-        ]
+        ],
+        "goalkeeperStatsSource": "https://www.bdfutbol.com/en/t/t2025-268.html",
+        "goalkeeperStatDefinition": "leagueGoals = goals scored; leagueGoalsConceded = goals conceded"
       },
       "threeSeasonReview": {
         "seasons": [
@@ -8982,7 +9456,7 @@
           "2025-26"
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
-        "priorCoverage": 0,
+        "priorCoverage": 1,
         "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "선방·후방 안정에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
@@ -8991,7 +9465,8 @@
         "status": "provisional",
         "pool": 14,
         "method": "editorial tier and peer priority; minutes then goals as provisional tiebreak"
-      }
+      },
+      "leagueGoalsConceded": 11
     },
     {
       "id": "laliga-202526-betis-natan-20010206",
@@ -9141,7 +9616,18 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "Real Betis",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2023-248.html",
+                "leagueStarts": 3,
+                "leagueAppearances": 3,
+                "leagueMinutes": 226,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "5",
@@ -9154,7 +9640,7 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           },
           {
             "season": "2024-25",
@@ -9260,7 +9746,14 @@
             "secondarySnapshot": [],
             "status": "evidence_pending_not_zero"
           }
-        ]
+        ],
+        "positionAudit": {
+          "previous": "CB",
+          "alternative": "LB",
+          "source": "https://www.bdfutbol.com/en/j/j34676.html",
+          "reason": "선수 프로필상 대체 포지션 확인. 시즌 최빈 포지션을 확정할 경기별 집계 미확보.",
+          "decision": "retain_provisional_pending_matchwise_count"
+        }
       },
       "threeSeasonReview": {
         "seasons": [
@@ -9457,7 +9950,18 @@
           },
           {
             "season": "2024-25",
-            "records": [],
+            "records": [
+              {
+                "club": "Real Betis",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2024-258.html",
+                "leagueStarts": 6,
+                "leagueAppearances": 9,
+                "leagueMinutes": 578,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "5",
@@ -9470,7 +9974,7 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           }
         ]
       },
@@ -9488,7 +9992,7 @@
       "assessmentRationale": "2025-26 27경기 20선발 1821분 2골 3도움. 우측 수비·전진에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
       "rankReview": {
         "status": "provisional",
-        "pool": 15,
+        "pool": 14,
         "method": "editorial tier and peer priority; minutes then goals as provisional tiebreak"
       }
     },
@@ -9540,7 +10044,18 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "Real Betis",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2023-248.html",
+                "leagueStarts": 11,
+                "leagueAppearances": 18,
+                "leagueMinutes": 1016,
+                "leagueGoals": 2,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "5",
@@ -9553,7 +10068,7 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           },
           {
             "season": "2024-25",
@@ -9600,7 +10115,7 @@
       "assessmentRationale": "2025-26 27경기 20선발 1812분 4골 2도움. 우측 수비·전진에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
       "rankReview": {
         "status": "provisional",
-        "pool": 15,
+        "pool": 14,
         "method": "editorial tier and peer priority; minutes then goals as provisional tiebreak"
       }
     },
@@ -9989,9 +10504,20 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "Real Betis",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2023-248.html",
+                "leagueStarts": 6,
+                "leagueAppearances": 14,
+                "leagueMinutes": 565,
+                "leagueGoals": 1,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [],
-            "status": "evidence_pending_not_zero"
+            "status": "direct_source_available"
           },
           {
             "season": "2024-25",
@@ -10031,7 +10557,7 @@
           "2025-26"
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
-        "priorCoverage": 1,
+        "priorCoverage": 2,
         "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중원 연결·전환에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
@@ -10210,10 +10736,10 @@
                 "leagueAppearances": 26,
                 "leagueStarts": 6,
                 "leagueMinutes": 851,
-                "leagueGoals": 0,
+                "leagueGoals": 1,
                 "tier": "B-",
                 "archiveBorn": "2001-12-17",
-                "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2023-24.json",
+                "source": "https://www.bdfutbol.com/en/t/t2023-248.html",
                 "status": "prior_DRAFT"
               }
             ],
@@ -10586,7 +11112,7 @@
                 "leagueMinutes": 1149,
                 "leagueGoals": 5,
                 "tier": "B+",
-                "archiveBorn": "1999-04-22",
+                "archiveBorn": "1999-04-20",
                 "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2024-25.json",
                 "status": "prior_DRAFT_DOB_corrected_by_official_profile"
               }
@@ -10682,7 +11208,8 @@
                 "tier": "A",
                 "archiveBorn": "1995-03-24",
                 "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2023-24.json",
-                "status": "prior_DRAFT"
+                "status": "prior_DRAFT",
+                "leagueGoalsConceded": 36
               }
             ],
             "secondarySnapshot": [],
@@ -10690,7 +11217,19 @@
           },
           {
             "season": "2024-25",
-            "records": [],
+            "records": [
+              {
+                "club": "Real Sociedad",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2024-2530.html",
+                "leagueStarts": 36,
+                "leagueAppearances": 36,
+                "leagueMinutes": 3240,
+                "leagueGoals": null,
+                "leagueGoalsConceded": 43,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "16",
@@ -10703,9 +11242,11 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           }
-        ]
+        ],
+        "goalkeeperStatsSource": "https://www.bdfutbol.com/en/t/t2025-2630.html",
+        "goalkeeperStatDefinition": "leagueGoals = goals scored; leagueGoalsConceded = goals conceded"
       },
       "threeSeasonReview": {
         "seasons": [
@@ -10723,7 +11264,8 @@
         "status": "provisional",
         "pool": 14,
         "method": "editorial tier and peer priority; minutes then goals as provisional tiebreak"
-      }
+      },
+      "leagueGoalsConceded": 60
     },
     {
       "id": "laliga-202526-sociedad-unaimarrero-20011009",
@@ -10783,7 +11325,8 @@
                 "tier": "C",
                 "archiveBorn": "2001-10-09",
                 "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2023-24.json",
-                "status": "prior_DRAFT"
+                "status": "prior_DRAFT",
+                "leagueGoalsConceded": 3
               }
             ],
             "secondarySnapshot": [
@@ -10802,7 +11345,19 @@
           },
           {
             "season": "2024-25",
-            "records": [],
+            "records": [
+              {
+                "club": "Real Sociedad",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2024-2530.html",
+                "leagueStarts": 2,
+                "leagueAppearances": 2,
+                "leagueMinutes": 180,
+                "leagueGoals": null,
+                "leagueGoalsConceded": 3,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "16",
@@ -10815,9 +11370,11 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           }
-        ]
+        ],
+        "goalkeeperStatsSource": "https://www.bdfutbol.com/en/t/t2025-2630.html",
+        "goalkeeperStatDefinition": "leagueGoals = goals scored; leagueGoalsConceded = goals conceded"
       },
       "threeSeasonReview": {
         "seasons": [
@@ -10835,7 +11392,8 @@
         "status": "provisional",
         "pool": 14,
         "method": "editorial tier and peer priority; minutes then goals as provisional tiebreak"
-      }
+      },
+      "leagueGoalsConceded": 1
     },
     {
       "id": "laliga-202526-sociedad-jonmartin-20060423",
@@ -10853,7 +11411,7 @@
       "starts": 25,
       "leagueMinutes": 2250,
       "leagueGoals": 2,
-      "leagueAssists": null,
+      "leagueAssists": 0,
       "appearanceScope": "2025-26 La Liga",
       "tier": "B+",
       "rank": 12,
@@ -10882,13 +11440,35 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "Real Sociedad",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2023-2430.html",
+                "leagueStarts": 0,
+                "leagueAppearances": 1,
+                "leagueMinutes": 23,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [],
-            "status": "evidence_pending_not_zero"
+            "status": "direct_source_available"
           },
           {
             "season": "2024-25",
-            "records": [],
+            "records": [
+              {
+                "club": "Real Sociedad",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2024-2530.html",
+                "leagueStarts": 6,
+                "leagueAppearances": 13,
+                "leagueMinutes": 897,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "16",
@@ -10901,9 +11481,10 @@
                 "status": "exact_alias_identity_pending"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           }
-        ]
+        ],
+        "assistsAuditSource": "https://fbref.com/en/squads/e31d1cd9/2025-2026/c12/Real-Sociedad-Stats-La-Liga"
       },
       "threeSeasonReview": {
         "seasons": [
@@ -10912,7 +11493,7 @@
           "2025-26"
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
-        "priorCoverage": 1,
+        "priorCoverage": 2,
         "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중앙 수비·후방 전개에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
@@ -11101,7 +11682,18 @@
           },
           {
             "season": "2024-25",
-            "records": [],
+            "records": [
+              {
+                "club": "Real Sociedad",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2024-2530.html",
+                "leagueStarts": 27,
+                "leagueAppearances": 28,
+                "leagueMinutes": 2273,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "16",
@@ -11114,7 +11706,7 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           }
         ]
       },
@@ -11188,7 +11780,18 @@
           },
           {
             "season": "2024-25",
-            "records": [],
+            "records": [
+              {
+                "club": "Real Sociedad",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2024-2530.html",
+                "leagueStarts": 31,
+                "leagueAppearances": 37,
+                "leagueMinutes": 2745,
+                "leagueGoals": 2,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "16",
@@ -11201,7 +11804,7 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           }
         ]
       },
@@ -11300,7 +11903,18 @@
           },
           {
             "season": "2024-25",
-            "records": [],
+            "records": [
+              {
+                "club": "Real Sociedad",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2024-2530.html",
+                "leagueStarts": 13,
+                "leagueAppearances": 21,
+                "leagueMinutes": 1098,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "16",
@@ -11313,7 +11927,7 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           }
         ]
       },
@@ -11381,13 +11995,35 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "Real Sociedad",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2023-2430.html",
+                "leagueStarts": 5,
+                "leagueAppearances": 11,
+                "leagueMinutes": 541,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [],
-            "status": "evidence_pending_not_zero"
+            "status": "direct_source_available"
           },
           {
             "season": "2024-25",
-            "records": [],
+            "records": [
+              {
+                "club": "Real Sociedad",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2024-2530.html",
+                "leagueStarts": 28,
+                "leagueAppearances": 35,
+                "leagueMinutes": 2462,
+                "leagueGoals": 1,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "16",
@@ -11400,7 +12036,7 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           }
         ]
       },
@@ -11411,14 +12047,14 @@
           "2025-26"
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
-        "priorCoverage": 1,
+        "priorCoverage": 2,
         "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "우측 수비·전진에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 35경기 31선발 2778분 1골 0도움. 우측 수비·전진에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 1/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
       "rankReview": {
         "status": "provisional",
-        "pool": 15,
+        "pool": 14,
         "method": "editorial tier and peer priority; minutes then goals as provisional tiebreak"
       }
     },
@@ -11441,7 +12077,7 @@
       "leagueAssists": 1,
       "appearanceScope": "2025-26 La Liga",
       "tier": "B-",
-      "rank": 15,
+      "rank": 14,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_editorial",
       "birthSource": "https://www.footballsquads.co.uk/spain/2025-2026/laliga/sociedad.htm",
@@ -11469,7 +12105,18 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "Real Sociedad",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2023-2430.html",
+                "leagueStarts": 7,
+                "leagueAppearances": 15,
+                "leagueMinutes": 807,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "16",
@@ -11482,11 +12129,22 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           },
           {
             "season": "2024-25",
-            "records": [],
+            "records": [
+              {
+                "club": "Real Sociedad",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2024-2530.html",
+                "leagueStarts": 16,
+                "leagueAppearances": 22,
+                "leagueMinutes": 1455,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "16",
@@ -11499,9 +12157,16 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           }
-        ]
+        ],
+        "positionAudit": {
+          "previous": "RB",
+          "alternative": "CB",
+          "source": "https://www.bdfutbol.com/en/j/j202438.html",
+          "reason": "선수 프로필상 대체 포지션 확인. 시즌 최빈 포지션을 확정할 경기별 집계 미확보.",
+          "decision": "retain_provisional_pending_matchwise_count"
+        }
       },
       "threeSeasonReview": {
         "seasons": [
@@ -11517,7 +12182,7 @@
       "assessmentRationale": "2025-26 16경기 8선발 719분 0골 1도움. 우측 수비·전진에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B- 잠정 평가, 구단 순위 가산 없음.",
       "rankReview": {
         "status": "provisional",
-        "pool": 15,
+        "pool": 14,
         "method": "editorial tier and peer priority; minutes then goals as provisional tiebreak"
       }
     },
@@ -11526,7 +12191,7 @@
       "name": "Jon Gorrotxategi",
       "nameOriginal": "Jon Gorrotxategi",
       "nameKo": "욘 고로차테기",
-      "born": "2002-02-02",
+      "born": "2002-09-02",
       "club": "sociedad",
       "clubId": "sociedad",
       "clubNameOriginal": "Real Sociedad",
@@ -11543,9 +12208,11 @@
       "rank": 6,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_editorial",
-      "birthSource": "https://www.footballsquads.co.uk/spain/2025-2026/laliga/sociedad.htm",
-      "birthAuditStatus": "season_roster_and_transfermarkt_snapshot_date_agree",
+      "birthSource": "https://www.realsociedad.eus/es/equipo/jugador/real-sociedad/jon-gorrotxategi-etxaniz",
+      "birthAuditStatus": "external_audit_individual_and_official_profile",
       "birthSources": [
+        "https://www.bdfutbol.com/en/j/j201966.html",
+        "https://www.realsociedad.eus/es/equipo/jugador/real-sociedad/jon-gorrotxategi-etxaniz",
         "https://www.footballsquads.co.uk/spain/2025-2026/laliga/sociedad.htm",
         "https://www.transfermarkt.es/jon-gorrotxategi/profil/spieler/711374",
         "https://github.com/dmorenoli/Tipolog-a-y-Ciclo-de-Vida-de-los-Datos/blob/main/dataset/laliga_jugadores_2025_26.csv"
@@ -11557,7 +12224,9 @@
         "https://www.footballsquads.co.uk/spain/2025-2026/laliga/sociedad.htm",
         "https://www.transfermarkt.es/jon-gorrotxategi/profil/spieler/711374",
         "https://github.com/dmorenoli/Tipolog-a-y-Ciclo-de-Vida-de-los-Datos/blob/main/dataset/laliga_jugadores_2025_26.csv",
-        "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2025.json"
+        "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2025.json",
+        "https://www.bdfutbol.com/en/j/j201966.html",
+        "https://www.realsociedad.eus/es/equipo/jugador/real-sociedad/jon-gorrotxategi-etxaniz"
       ],
       "evidence": {
         "seasonPrimarySource": "https://www.bdfutbol.com/en/t/t2025-2630.html",
@@ -11594,6 +12263,12 @@
         "status": "provisional",
         "pool": 15,
         "method": "editorial tier and peer priority; minutes then goals as provisional tiebreak"
+      },
+      "birthCorrection": {
+        "from": "2002-02-02",
+        "to": "2002-09-02",
+        "source": "https://www.realsociedad.eus/es/equipo/jugador/real-sociedad/jon-gorrotxategi-etxaniz",
+        "note": "External audit; existing ID preserved"
       }
     },
     {
@@ -11673,7 +12348,18 @@
           },
           {
             "season": "2024-25",
-            "records": [],
+            "records": [
+              {
+                "club": "Real Sociedad",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2024-2530.html",
+                "leagueStarts": 11,
+                "leagueAppearances": 21,
+                "leagueMinutes": 941,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "16",
@@ -11686,7 +12372,7 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           }
         ]
       },
@@ -11835,7 +12521,18 @@
           },
           {
             "season": "2024-25",
-            "records": [],
+            "records": [
+              {
+                "club": "Real Sociedad",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2024-2530.html",
+                "leagueStarts": 21,
+                "leagueAppearances": 29,
+                "leagueMinutes": 1797,
+                "leagueGoals": 1,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "16",
@@ -11848,7 +12545,7 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           }
         ]
       },
@@ -11947,7 +12644,18 @@
           },
           {
             "season": "2024-25",
-            "records": [],
+            "records": [
+              {
+                "club": "Real Sociedad",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2024-2530.html",
+                "leagueStarts": 19,
+                "leagueAppearances": 27,
+                "leagueMinutes": 1536,
+                "leagueGoals": 3,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "16",
@@ -11960,7 +12668,7 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           }
         ]
       },
@@ -11998,7 +12706,7 @@
       "starts": 15,
       "leagueMinutes": 1494,
       "leagueGoals": 0,
-      "leagueAssists": null,
+      "leagueAssists": 1,
       "appearanceScope": "2025-26 La Liga",
       "tier": "B",
       "rank": 7,
@@ -12018,7 +12726,8 @@
         "https://www.footballsquads.co.uk/spain/2025-2026/laliga/sociedad.htm",
         "https://www.transfermarkt.es/pablo-marin/profil/spieler/907813",
         "https://github.com/dmorenoli/Tipolog-a-y-Ciclo-de-Vida-de-los-Datos/blob/main/dataset/laliga_jugadores_2025_26.csv",
-        "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2024.json"
+        "https://github.com/DanielTomaro13/football-invincibles/blob/main/public/data/laliga/seasons/2024.json",
+        "https://www.statmuse.com/fc/ask?q=Pablo+Mar%C3%ADn+2025-26+stats"
       ],
       "evidence": {
         "seasonPrimarySource": "https://www.bdfutbol.com/en/t/t2025-2630.html",
@@ -12033,7 +12742,18 @@
           },
           {
             "season": "2024-25",
-            "records": [],
+            "records": [
+              {
+                "club": "Real Sociedad",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2024-2530.html",
+                "leagueStarts": 14,
+                "leagueAppearances": 23,
+                "leagueMinutes": 1238,
+                "leagueGoals": 1,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "16",
@@ -12046,7 +12766,7 @@
                 "status": "exact_alias_identity_pending"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           }
         ]
       },
@@ -12061,7 +12781,7 @@
         "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중앙 2선 창조성과 침투에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
-      "assessmentRationale": "2025-26 34경기 15선발 1494분 0골. 중앙 2선 창조성과 침투에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 1/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B 잠정 평가, 구단 순위 가산 없음.",
+      "assessmentRationale": "2025-26 34경기 15선발 1494분 0골. 중앙 2선 창조성과 침투에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 1/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B 잠정 평가, 구단 순위 가산 없음. [외부 검수 정정: 리그 34경기, 15선발, 1494분, 0골, 도움 1.]",
       "rankReview": {
         "status": "provisional",
         "pool": 8,
@@ -12145,7 +12865,18 @@
           },
           {
             "season": "2024-25",
-            "records": [],
+            "records": [
+              {
+                "club": "Real Sociedad",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2024-2530.html",
+                "leagueStarts": 14,
+                "leagueAppearances": 30,
+                "leagueMinutes": 1262,
+                "leagueGoals": 1,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "16",
@@ -12158,7 +12889,7 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           }
         ]
       },
@@ -12226,7 +12957,18 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "Villarreal CF",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2023-2438.html",
+                "leagueStarts": 9,
+                "leagueAppearances": 17,
+                "leagueMinutes": 949,
+                "leagueGoals": 3,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "20",
@@ -12239,7 +12981,7 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           },
           {
             "season": "2024-25",
@@ -12344,7 +13086,18 @@
           },
           {
             "season": "2024-25",
-            "records": [],
+            "records": [
+              {
+                "club": "Real Sociedad",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2024-2530.html",
+                "leagueStarts": 27,
+                "leagueAppearances": 36,
+                "leagueMinutes": 2381,
+                "leagueGoals": 5,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "16",
@@ -12357,7 +13110,7 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           }
         ]
       },
@@ -12444,7 +13197,18 @@
           },
           {
             "season": "2024-25",
-            "records": [],
+            "records": [
+              {
+                "club": "Real Sociedad",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2024-2530.html",
+                "leagueStarts": 28,
+                "leagueAppearances": 35,
+                "leagueMinutes": 2263,
+                "leagueGoals": 9,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "16",
@@ -12457,7 +13221,7 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           }
         ]
       },
@@ -12531,7 +13295,18 @@
           },
           {
             "season": "2024-25",
-            "records": [],
+            "records": [
+              {
+                "club": "Real Sociedad",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2024-2530.html",
+                "leagueStarts": 9,
+                "leagueAppearances": 23,
+                "leagueMinutes": 937,
+                "leagueGoals": 3,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "16",
@@ -12544,7 +13319,7 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           }
         ]
       },
@@ -12621,7 +13396,9 @@
             "secondarySnapshot": [],
             "status": "evidence_pending_not_zero"
           }
-        ]
+        ],
+        "goalkeeperStatsSource": "https://www.bdfutbol.com/en/t/t2025-2611.html",
+        "goalkeeperStatDefinition": "leagueGoals = goals scored; leagueGoalsConceded = goals conceded"
       },
       "threeSeasonReview": {
         "seasons": [
@@ -12639,7 +13416,8 @@
         "status": "provisional",
         "pool": 14,
         "method": "editorial tier and peer priority; minutes then goals as provisional tiebreak"
-      }
+      },
+      "leagueGoalsConceded": 48
     },
     {
       "id": "laliga-202526-celta-marcosalonso-19901228",
@@ -12689,7 +13467,18 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "FC Barcelona",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2023-241.html",
+                "leagueStarts": 3,
+                "leagueAppearances": 5,
+                "leagueMinutes": 251,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "4",
@@ -12702,7 +13491,7 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           },
           {
             "season": "2024-25",
@@ -12901,7 +13690,18 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "RC Celta",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2023-2411.html",
+                "leagueStarts": 26,
+                "leagueAppearances": 27,
+                "leagueMinutes": 2221,
+                "leagueGoals": 1,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "6",
@@ -12914,7 +13714,7 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           },
           {
             "season": "2024-25",
@@ -13045,7 +13845,14 @@
             ],
             "status": "reference_available"
           }
-        ]
+        ],
+        "positionAudit": {
+          "previous": "LB",
+          "alternative": "RB",
+          "source": "https://11footy.com/teams/celta-vigo?season=2025&tab=squad",
+          "reason": "시즌 LWB 분류와 2026-07-05 실제 선발 조합 보도 일치. LB 유지.",
+          "decision": "retain_supported_season_role"
+        }
       },
       "threeSeasonReview": {
         "seasons": [
@@ -13112,9 +13919,20 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "RC Celta",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2023-2411.html",
+                "leagueStarts": 8,
+                "leagueAppearances": 12,
+                "leagueMinutes": 762,
+                "leagueGoals": 1,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [],
-            "status": "evidence_pending_not_zero"
+            "status": "direct_source_available"
           },
           {
             "season": "2024-25",
@@ -13154,7 +13972,7 @@
           "2025-26"
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
-        "priorCoverage": 1,
+        "priorCoverage": 2,
         "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "좌측 수비·전진에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
@@ -13213,7 +14031,18 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "RC Celta",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2023-2411.html",
+                "leagueStarts": 33,
+                "leagueAppearances": 38,
+                "leagueMinutes": 3000,
+                "leagueGoals": 2,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "6",
@@ -13226,7 +14055,7 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           },
           {
             "season": "2024-25",
@@ -13257,7 +14086,14 @@
             ],
             "status": "reference_available"
           }
-        ]
+        ],
+        "positionAudit": {
+          "previous": "RB",
+          "alternative": "LB",
+          "source": "https://11footy.com/teams/celta-vigo?season=2025&tab=squad",
+          "reason": "시즌 RWB 분류 및 양쪽 윙백 기용 확인. RB 유지.",
+          "decision": "retain_supported_season_role"
+        }
       },
       "threeSeasonReview": {
         "seasons": [
@@ -13273,7 +14109,7 @@
       "assessmentRationale": "2025-26 34경기 21선발 1968분 1골 4도움. 우측 수비·전진에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. A- 잠정 평가, 구단 순위 가산 없음.",
       "rankReview": {
         "status": "provisional",
-        "pool": 15,
+        "pool": 14,
         "method": "editorial tier and peer priority; minutes then goals as provisional tiebreak"
       }
     },
@@ -13322,9 +14158,20 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "RC Celta",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2023-2411.html",
+                "leagueStarts": 0,
+                "leagueAppearances": 1,
+                "leagueMinutes": 19,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [],
-            "status": "evidence_pending_not_zero"
+            "status": "direct_source_available"
           },
           {
             "season": "2024-25",
@@ -13341,14 +14188,14 @@
           "2025-26"
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
-        "priorCoverage": 0,
+        "priorCoverage": 1,
         "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "우측 수비·전진에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
       "assessmentRationale": "2025-26 26경기 16선발 1405분 2골 6도움. 우측 수비·전진에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 0/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
       "rankReview": {
         "status": "provisional",
-        "pool": 15,
+        "pool": 14,
         "method": "editorial tier and peer priority; minutes then goals as provisional tiebreak"
       }
     },
@@ -13399,9 +14246,20 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "RC Celta",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2023-2411.html",
+                "leagueStarts": 8,
+                "leagueAppearances": 17,
+                "leagueMinutes": 719,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [],
-            "status": "evidence_pending_not_zero"
+            "status": "direct_source_available"
           },
           {
             "season": "2024-25",
@@ -13441,7 +14299,7 @@
           "2025-26"
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
-        "priorCoverage": 1,
+        "priorCoverage": 2,
         "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중원 수비·전개에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
@@ -13587,7 +14445,18 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "Getafe CF",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2023-2416.html",
+                "leagueStarts": 8,
+                "leagueAppearances": 14,
+                "leagueMinutes": 607,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "9",
@@ -13600,7 +14469,7 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           },
           {
             "season": "2024-25",
@@ -13799,7 +14668,18 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "RC Celta",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2023-2411.html",
+                "leagueStarts": 4,
+                "leagueAppearances": 15,
+                "leagueMinutes": 434,
+                "leagueGoals": 5,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "6",
@@ -13812,7 +14692,7 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           },
           {
             "season": "2024-25",
@@ -13989,9 +14869,20 @@
           },
           {
             "season": "2024-25",
-            "records": [],
+            "records": [
+              {
+                "club": "RC Celta",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2024-2511.html",
+                "leagueStarts": 7,
+                "leagueAppearances": 17,
+                "leagueMinutes": 667,
+                "leagueGoals": 2,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [],
-            "status": "evidence_pending_not_zero"
+            "status": "direct_source_available"
           }
         ]
       },
@@ -14002,7 +14893,7 @@
           "2025-26"
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
-        "priorCoverage": 0,
+        "priorCoverage": 1,
         "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "우측 공격에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
@@ -14181,7 +15072,18 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "RC Celta",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2023-2411.html",
+                "leagueStarts": 31,
+                "leagueAppearances": 35,
+                "leagueMinutes": 2716,
+                "leagueGoals": 9,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "6",
@@ -14194,7 +15096,7 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           },
           {
             "season": "2024-25",
@@ -14206,7 +15108,7 @@
                 "leagueMinutes": 1743,
                 "leagueGoals": 10,
                 "tier": "A-",
-                "archiveBorn": "1987-08-11",
+                "archiveBorn": "1987-08-01",
                 "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2024-25.json",
                 "status": "prior_DRAFT_DOB_corrected_by_official_profile"
               }
@@ -14292,7 +15194,19 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "Getafe CF",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2023-2416.html",
+                "leagueStarts": 38,
+                "leagueAppearances": 38,
+                "leagueMinutes": 3414,
+                "leagueGoals": null,
+                "leagueGoalsConceded": 52,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "9",
@@ -14305,11 +15219,23 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           },
           {
             "season": "2024-25",
-            "records": [],
+            "records": [
+              {
+                "club": "Getafe CF",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2024-2516.html",
+                "leagueStarts": 38,
+                "leagueAppearances": 38,
+                "leagueMinutes": 3420,
+                "leagueGoals": null,
+                "leagueGoalsConceded": 39,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "9",
@@ -14322,9 +15248,11 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           }
-        ]
+        ],
+        "goalkeeperStatsSource": "https://www.bdfutbol.com/en/t/t2025-2616.html",
+        "goalkeeperStatDefinition": "leagueGoals = goals scored; leagueGoalsConceded = goals conceded"
       },
       "threeSeasonReview": {
         "seasons": [
@@ -14342,7 +15270,8 @@
         "status": "provisional",
         "pool": 14,
         "method": "editorial tier and peer priority; minutes then goals as provisional tiebreak"
-      }
+      },
+      "leagueGoalsConceded": 38
     },
     {
       "id": "laliga-202526-getafe-domingosduarte-19950310",
@@ -14391,7 +15320,18 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "Getafe CF",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2023-2416.html",
+                "leagueStarts": 11,
+                "leagueAppearances": 15,
+                "leagueMinutes": 907,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "9",
@@ -14404,11 +15344,22 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           },
           {
             "season": "2024-25",
-            "records": [],
+            "records": [
+              {
+                "club": "Getafe CF",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2024-2516.html",
+                "leagueStarts": 21,
+                "leagueAppearances": 22,
+                "leagueMinutes": 1861,
+                "leagueGoals": 1,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "9",
@@ -14421,7 +15372,7 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           }
         ]
       },
@@ -14490,7 +15441,18 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "Getafe CF",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2023-2416.html",
+                "leagueStarts": 30,
+                "leagueAppearances": 33,
+                "leagueMinutes": 2493,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "9",
@@ -14503,11 +15465,22 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           },
           {
             "season": "2024-25",
-            "records": [],
+            "records": [
+              {
+                "club": "Getafe CF",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2024-2516.html",
+                "leagueStarts": 31,
+                "leagueAppearances": 31,
+                "leagueMinutes": 2556,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "9",
@@ -14520,7 +15493,7 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           }
         ]
       },
@@ -14589,7 +15562,18 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "Deportivo Alavés",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2023-243.html",
+                "leagueStarts": 27,
+                "leagueAppearances": 27,
+                "leagueMinutes": 2316,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "21",
@@ -14602,11 +15586,22 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           },
           {
             "season": "2024-25",
-            "records": [],
+            "records": [
+              {
+                "club": "Deportivo Alavés",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2024-253.html",
+                "leagueStarts": 29,
+                "leagueAppearances": 29,
+                "leagueMinutes": 2468,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "21",
@@ -14619,7 +15614,7 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           }
         ]
       },
@@ -14688,7 +15683,18 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "Getafe CF",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2023-2416.html",
+                "leagueStarts": 28,
+                "leagueAppearances": 32,
+                "leagueMinutes": 2537,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "9",
@@ -14701,11 +15707,22 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           },
           {
             "season": "2024-25",
-            "records": [],
+            "records": [
+              {
+                "club": "Getafe CF",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2024-2516.html",
+                "leagueStarts": 32,
+                "leagueAppearances": 33,
+                "leagueMinutes": 2820,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "9",
@@ -14718,7 +15735,7 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           }
         ]
       },
@@ -14864,7 +15881,18 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "Getafe CF",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2023-2416.html",
+                "leagueStarts": 16,
+                "leagueAppearances": 23,
+                "leagueMinutes": 1417,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "9",
@@ -14877,11 +15905,22 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           },
           {
             "season": "2024-25",
-            "records": [],
+            "records": [
+              {
+                "club": "Getafe CF",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2024-2516.html",
+                "leagueStarts": 32,
+                "leagueAppearances": 37,
+                "leagueMinutes": 2890,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "9",
@@ -14894,9 +15933,16 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           }
-        ]
+        ],
+        "positionAudit": {
+          "previous": "RB",
+          "alternative": "CB",
+          "source": "https://www.rotowire.com/soccer/player/juan-iglesias-34285",
+          "reason": "풀백·CB 겸용 확인, 최빈값 미확보.",
+          "decision": "retain_provisional_pending_matchwise_count"
+        }
       },
       "threeSeasonReview": {
         "seasons": [
@@ -14912,7 +15958,7 @@
       "assessmentRationale": "2025-26 37경기 36선발 3189분 1골 2도움. 우측 수비·전진에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
       "rankReview": {
         "status": "provisional",
-        "pool": 15,
+        "pool": 14,
         "method": "editorial tier and peer priority; minutes then goals as provisional tiebreak"
       }
     },
@@ -14964,7 +16010,18 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "Villarreal CF",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2023-2438.html",
+                "leagueStarts": 16,
+                "leagueAppearances": 23,
+                "leagueMinutes": 1580,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "20",
@@ -14977,7 +16034,7 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           },
           {
             "season": "2024-25",
@@ -14986,12 +16043,17 @@
                 "club": "Villarreal CF",
                 "leagueAppearances": 28,
                 "leagueStarts": null,
-                "leagueMinutes": 2229,
+                "leagueMinutes": 2232,
                 "leagueGoals": 0,
                 "tier": "B+",
                 "archiveBorn": "1991-02-02",
                 "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2024-25.json",
-                "status": "prior_DRAFT"
+                "status": "prior_DRAFT",
+                "minutesAudit": {
+                  "previousSnapshotMinutes": 2229,
+                  "source": "https://www.bdfutbol.com/en/t/t2024-2538.html",
+                  "method": "BDFutbol club-season minutes; secondary snapshot unchanged"
+                }
               }
             ],
             "secondarySnapshot": [
@@ -15024,7 +16086,7 @@
       "assessmentRationale": "2025-26 28경기 25선발 2022분 1골 1도움. 우측 수비·전진에서 주전 경쟁 및 로테이션 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가. 이전 두 시즌 자료 2/2시즌 연결. 누락 자료는 0으로 대체하지 않음. B+ 잠정 평가, 구단 순위 가산 없음.",
       "rankReview": {
         "status": "provisional",
-        "pool": 15,
+        "pool": 14,
         "method": "editorial tier and peer priority; minutes then goals as provisional tiebreak"
       }
     },
@@ -15075,7 +16137,18 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "Getafe CF",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2023-2416.html",
+                "leagueStarts": 3,
+                "leagueAppearances": 7,
+                "leagueMinutes": 337,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "9",
@@ -15088,11 +16161,22 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           },
           {
             "season": "2024-25",
-            "records": [],
+            "records": [
+              {
+                "club": "Getafe CF",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2024-2516.html",
+                "leagueStarts": 31,
+                "leagueAppearances": 35,
+                "leagueMinutes": 2665,
+                "leagueGoals": 10,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "9",
@@ -15105,7 +16189,7 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           }
         ]
       },
@@ -15174,7 +16258,18 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "Getafe CF",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2023-2416.html",
+                "leagueStarts": 25,
+                "leagueAppearances": 27,
+                "leagueMinutes": 2123,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "9",
@@ -15187,11 +16282,22 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           },
           {
             "season": "2024-25",
-            "records": [],
+            "records": [
+              {
+                "club": "Getafe CF",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2024-2516.html",
+                "leagueStarts": 32,
+                "leagueAppearances": 33,
+                "leagueMinutes": 2878,
+                "leagueGoals": 1,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "9",
@@ -15204,7 +16310,7 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           }
         ]
       },
@@ -15271,15 +16377,37 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "Real Madrid",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2023-242.html",
+                "leagueStarts": 0,
+                "leagueAppearances": 2,
+                "leagueMinutes": 16,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [],
-            "status": "evidence_pending_not_zero"
+            "status": "direct_source_available"
           },
           {
             "season": "2024-25",
-            "records": [],
+            "records": [
+              {
+                "club": "Real Valladolid",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2024-2537.html",
+                "leagueStarts": 20,
+                "leagueAppearances": 30,
+                "leagueMinutes": 1751,
+                "leagueGoals": 0,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [],
-            "status": "evidence_pending_not_zero"
+            "status": "direct_source_available"
           }
         ]
       },
@@ -15290,7 +16418,7 @@
           "2025-26"
         ],
         "relativeWeight": "2025-26 > 2024-25 > 2023-24",
-        "priorCoverage": 0,
+        "priorCoverage": 2,
         "olderSeasonsSourceAudit": "prior La Liga and other top-league DRAFTs, incomplete snapshots, selected individual direct history; independent full three-year review pending"
       },
       "tierReview": "중원 연결·전환에서 대표 주전 역할, 당해 기용량과 기존 경기력을 고려한 정성적 평가",
@@ -15348,7 +16476,18 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "UD Las Palmas",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2023-2419.html",
+                "leagueStarts": 30,
+                "leagueAppearances": 37,
+                "leagueMinutes": 2646,
+                "leagueGoals": 2,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "31",
@@ -15361,11 +16500,22 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           },
           {
             "season": "2024-25",
-            "records": [],
+            "records": [
+              {
+                "club": "UD Las Palmas",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2024-2519.html",
+                "leagueStarts": 28,
+                "leagueAppearances": 35,
+                "leagueMinutes": 2589,
+                "leagueGoals": 1,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "31",
@@ -15378,9 +16528,14 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           }
-        ]
+        ],
+        "eligibilityAudit": {
+          "decision": "retain_provisional_backup",
+          "reason": "4선발 17출전. 해당 구단 등록 후보군에서 동일 포지션 주전 Luis Milla, Mario Martín의 유일한 예비 후보. 5선발 하한 미설정; 저출전 비상·로테이션 후보로 유지. 전체 미등록 선수와의 비교는 미완료.",
+          "source": "https://www.bdfutbol.com/en/t/t2025-2616.html"
+        }
       },
       "threeSeasonReview": {
         "seasons": [
@@ -15685,7 +16840,18 @@
         "priorSeasons": [
           {
             "season": "2023-24",
-            "records": [],
+            "records": [
+              {
+                "club": "Getafe CF",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2023-2416.html",
+                "leagueStarts": 25,
+                "leagueAppearances": 27,
+                "leagueMinutes": 2165,
+                "leagueGoals": 15,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "9",
@@ -15698,11 +16864,22 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           },
           {
             "season": "2024-25",
-            "records": [],
+            "records": [
+              {
+                "club": "Getafe CF",
+                "league": "La Liga",
+                "source": "https://www.bdfutbol.com/en/t/t2024-2516.html",
+                "leagueStarts": 7,
+                "leagueAppearances": 24,
+                "leagueMinutes": 1100,
+                "leagueGoals": 5,
+                "status": "external_audit_BDFutbol_club_season"
+              }
+            ],
             "secondarySnapshot": [
               {
                 "sourceTeamId": "9",
@@ -15715,7 +16892,7 @@
                 "status": "same_Opta_ID_partial_snapshot"
               }
             ],
-            "status": "reference_available"
+            "status": "direct_source_available"
           }
         ]
       },

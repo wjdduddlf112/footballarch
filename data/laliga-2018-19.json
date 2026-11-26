@@ -24,11 +24,7 @@
       "espanyol": "4-3-3"
     },
     "bestXiStatus": "proposed_unapproved",
-    "bestXiReview": {
-      "status": "proposed_unapproved",
-      "formation": "4-3-3",
-      "note": "4-3-3 representative unapproved; Damián Suárez RB (Getafe 2017-18 33 apps/33 starts, 2018-19 36/36) selected over Santiago Arias current 25/20; 2016-17 independent comparison still needed."
-    },
+    "bestXiReview": "External review follow-up: resolved flagged rank/XI mismatches as provisional editorial decisions, not user approval.",
     "userApproved": false,
     "historicalFactVerification": false,
     "browserValidation": true,
@@ -140,7 +136,8 @@
         "Two prior DRAFT records reused only as possible birthday convenience and older-season pointer, no independent validation.",
         "Potential player ratings and ranks subjective provisional."
       ],
-      "birthdateIndependentlyVerifiedCount": 1
+      "birthdateIndependentlyVerifiedCount": 1,
+      "externalFollowup": "Eligibility and alternative positions reviewed; remaining matchwise modal uncertainty is explicitly recorded; no user approval implied."
     },
     "browserValidationScope": "PR structural and local Chromium plus actual public Pages Chromium five tabs and player details. Does NOT certify historical facts or 3-season quality.",
     "nodeCliValidationRun": "https://github.com/wjdduddlf112/footballarch/actions/runs/41778191731",
@@ -646,11 +643,14 @@
             "leagueAppearances": 37,
             "leagueGoals": 0,
             "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2017-18.json",
-            "audit": "historical_draft_pointer_not_independently_corroborated"
+            "audit": "historical_draft_pointer_not_independently_corroborated",
+            "leagueGoalsConceded": 28
           }
         ],
         "priorSeasonQualityAudit": "not_independently_completed",
-        "currentStatsSourceAudit": "single_2018_19_BDFutbol_team_squad_table_transcription_not_double_checked"
+        "currentStatsSourceAudit": "single_2018_19_BDFutbol_team_squad_table_transcription_not_double_checked",
+        "goalkeeperStatsSource": "https://www.bdfutbol.com/en/t/t2018-191.html",
+        "goalkeeperStatDefinition": "leagueGoals = goals scored; leagueGoalsConceded = goals conceded"
       },
       "sources": [
         "https://www.bdfutbol.com/en/t/t2018-191.html"
@@ -670,7 +670,8 @@
         "status": "provisional",
         "criteria": "tentative quality tier then current starts, appearances, goals; not independent final 3-season proof",
         "pool": 13
-      }
+      },
+      "leagueGoalsConceded": 32
     },
     {
       "id": "laliga-201819-barca-02",
@@ -716,11 +717,14 @@
             "leagueAppearances": 1,
             "leagueGoals": 0,
             "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2017-18.json",
-            "audit": "historical_draft_pointer_not_independently_corroborated"
+            "audit": "historical_draft_pointer_not_independently_corroborated",
+            "leagueGoalsConceded": 1
           }
         ],
         "priorSeasonQualityAudit": "not_independently_completed",
-        "currentStatsSourceAudit": "single_2018_19_BDFutbol_team_squad_table_transcription_not_double_checked"
+        "currentStatsSourceAudit": "single_2018_19_BDFutbol_team_squad_table_transcription_not_double_checked",
+        "goalkeeperStatsSource": "https://www.bdfutbol.com/en/t/t2018-191.html",
+        "goalkeeperStatDefinition": "leagueGoals = goals scored; leagueGoalsConceded = goals conceded"
       },
       "sources": [
         "https://www.bdfutbol.com/en/t/t2018-191.html"
@@ -740,7 +744,8 @@
         "status": "provisional",
         "criteria": "tentative quality tier then current starts, appearances, goals; not independent final 3-season proof",
         "pool": 13
-      }
+      },
+      "leagueGoalsConceded": 4
     },
     {
       "id": "laliga-201819-barca-03",
@@ -842,12 +847,13 @@
         "priorSeasons": [
           {
             "season": "2016-17",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "club": "sevilla",
+            "source": "https://www.bdfutbol.com/en/t/t2016-1733.html",
+            "leagueStarts": 15,
+            "leagueAppearances": 17,
+            "leagueMinutes": 1360,
+            "leagueGoals": 0,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2017-18",
@@ -1822,12 +1828,13 @@
         "priorSeasons": [
           {
             "season": "2016-17",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "club": "laspalmas",
+            "source": "https://www.bdfutbol.com/en/t/t2016-1719.html",
+            "leagueStarts": 25,
+            "leagueAppearances": 28,
+            "leagueMinutes": 1986,
+            "leagueGoals": 10,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2017-18",
@@ -1840,7 +1847,12 @@
           }
         ],
         "priorSeasonQualityAudit": "not_independently_completed",
-        "currentStatsSourceAudit": "single_2018_19_BDFutbol_team_squad_table_transcription_not_double_checked"
+        "currentStatsSourceAudit": "single_2018_19_BDFutbol_team_squad_table_transcription_not_double_checked",
+        "eligibilityAudit": {
+          "decision": "retain_provisional_backup",
+          "reason": "3선발 3출전. 해당 구단 등록 후보군에서 동일 포지션 주전 Luis Suárez의 유일한 예비 후보. 5선발 하한 미설정; 저출전 비상·로테이션 후보로 유지. 전체 미등록 선수와의 비교는 미완료.",
+          "source": "https://www.bdfutbol.com/en/t/t2018-191.html"
+        }
       },
       "sources": [
         "https://www.bdfutbol.com/en/t/t2018-191.html"
@@ -1906,11 +1918,14 @@
             "leagueAppearances": 37,
             "leagueGoals": 0,
             "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2017-18.json",
-            "audit": "historical_draft_pointer_not_independently_corroborated"
+            "audit": "historical_draft_pointer_not_independently_corroborated",
+            "leagueGoalsConceded": 22
           }
         ],
         "priorSeasonQualityAudit": "not_independently_completed",
-        "currentStatsSourceAudit": "single_2018_19_BDFutbol_team_squad_table_transcription_not_double_checked"
+        "currentStatsSourceAudit": "single_2018_19_BDFutbol_team_squad_table_transcription_not_double_checked",
+        "goalkeeperStatsSource": "https://www.bdfutbol.com/en/t/t2018-197.html",
+        "goalkeeperStatDefinition": "leagueGoals = goals scored; leagueGoalsConceded = goals conceded"
       },
       "sources": [
         "https://www.bdfutbol.com/en/t/t2018-197.html"
@@ -1930,7 +1945,8 @@
         "status": "provisional",
         "criteria": "tentative quality tier then current starts, appearances, goals; not independent final 3-season proof",
         "pool": 13
-      }
+      },
+      "leagueGoalsConceded": 27
     },
     {
       "id": "laliga-201819-atleti-02",
@@ -1962,12 +1978,14 @@
         "priorSeasons": [
           {
             "season": "2016-17",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
+            "club": "betis",
+            "source": "https://www.bdfutbol.com/en/t/t2016-178.html",
+            "leagueStarts": 37,
+            "leagueAppearances": 37,
+            "leagueMinutes": 3330,
             "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "leagueGoalsConceded": 62,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2017-18",
@@ -1976,11 +1994,14 @@
             "leagueAppearances": 30,
             "leagueGoals": 0,
             "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2017-18.json",
-            "audit": "historical_draft_pointer_not_independently_corroborated"
+            "audit": "historical_draft_pointer_not_independently_corroborated",
+            "leagueGoalsConceded": 53
           }
         ],
         "priorSeasonQualityAudit": "not_independently_completed",
-        "currentStatsSourceAudit": "single_2018_19_BDFutbol_team_squad_table_transcription_not_double_checked"
+        "currentStatsSourceAudit": "single_2018_19_BDFutbol_team_squad_table_transcription_not_double_checked",
+        "goalkeeperStatsSource": "https://www.bdfutbol.com/en/t/t2018-197.html",
+        "goalkeeperStatDefinition": "leagueGoals = goals scored; leagueGoalsConceded = goals conceded"
       },
       "sources": [
         "https://www.bdfutbol.com/en/t/t2018-197.html"
@@ -2000,7 +2021,8 @@
         "status": "provisional",
         "criteria": "tentative quality tier then current starts, appearances, goals; not independent final 3-season proof",
         "pool": 13
-      }
+      },
+      "leagueGoalsConceded": 2
     },
     {
       "id": "laliga-201819-atleti-03",
@@ -2650,7 +2672,7 @@
       "leagueGoals": 4,
       "appearanceScope": "2018-19 La Liga",
       "tier": "A",
-      "rank": 2,
+      "rank": 3,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_and_rank_unapproved",
       "positionVerification": "2018_19_game_by_game_primary_role_not_verified",
@@ -2699,7 +2721,8 @@
       "rankReview": {
         "status": "provisional",
         "criteria": "tentative quality tier then current starts, appearances, goals; not independent final 3-season proof",
-        "pool": 15
+        "pool": 15,
+        "externalAuditReason": "동일 티어 내 순위 재조정: 모드리치의 중앙 전개 역할과 직전 두 시즌 연속성을 고려해 사울보다 앞에 둔다. 두 선수 모두 A 유지."
       }
     },
     {
@@ -3049,7 +3072,8 @@
       "rankReview": {
         "status": "provisional",
         "criteria": "tentative quality tier then current starts, appearances, goals; not independent final 3-season proof",
-        "pool": 17
+        "pool": 17,
+        "externalAuditReason": "당해 37선발 15골, 직전 두 시즌 리그 19·16골과 득점 외 연계 기여를 반영해 기존 1위 그리즈만을 선정. 벤제마 당해 21골 우위는 인정."
       }
     },
     {
@@ -3240,7 +3264,9 @@
           }
         ],
         "priorSeasonQualityAudit": "not_independently_completed",
-        "currentStatsSourceAudit": "single_2018_19_BDFutbol_team_squad_table_transcription_not_double_checked"
+        "currentStatsSourceAudit": "single_2018_19_BDFutbol_team_squad_table_transcription_not_double_checked",
+        "goalkeeperStatsSource": "https://www.bdfutbol.com/en/t/t2018-192.html",
+        "goalkeeperStatDefinition": "leagueGoals = goals scored; leagueGoalsConceded = goals conceded"
       },
       "sources": [
         "https://www.bdfutbol.com/en/t/t2018-192.html"
@@ -3260,7 +3286,8 @@
         "status": "provisional",
         "criteria": "tentative quality tier then current starts, appearances, goals; not independent final 3-season proof",
         "pool": 13
-      }
+      },
+      "leagueGoalsConceded": 36
     },
     {
       "id": "laliga-201819-madrid-02",
@@ -3306,11 +3333,14 @@
             "leagueAppearances": 27,
             "leagueGoals": 0,
             "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2017-18.json",
-            "audit": "historical_draft_pointer_not_independently_corroborated"
+            "audit": "historical_draft_pointer_not_independently_corroborated",
+            "leagueGoalsConceded": 31
           }
         ],
         "priorSeasonQualityAudit": "not_independently_completed",
-        "currentStatsSourceAudit": "single_2018_19_BDFutbol_team_squad_table_transcription_not_double_checked"
+        "currentStatsSourceAudit": "single_2018_19_BDFutbol_team_squad_table_transcription_not_double_checked",
+        "goalkeeperStatsSource": "https://www.bdfutbol.com/en/t/t2018-192.html",
+        "goalkeeperStatDefinition": "leagueGoals = goals scored; leagueGoalsConceded = goals conceded"
       },
       "sources": [
         "https://www.bdfutbol.com/en/t/t2018-192.html"
@@ -3330,7 +3360,8 @@
         "status": "provisional",
         "criteria": "tentative quality tier then current starts, appearances, goals; not independent final 3-season proof",
         "pool": 13
-      }
+      },
+      "leagueGoalsConceded": 8
     },
     {
       "id": "laliga-201819-madrid-03",
@@ -3791,12 +3822,13 @@
           },
           {
             "season": "2017-18",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "club": "sociedad",
+            "source": "https://www.bdfutbol.com/en/t/t2017-1830.html",
+            "leagueStarts": 32,
+            "leagueAppearances": 35,
+            "leagueMinutes": 2919,
+            "leagueGoals": 0,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ],
         "priorSeasonQualityAudit": "not_independently_completed",
@@ -3922,12 +3954,13 @@
         "priorSeasons": [
           {
             "season": "2016-17",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "club": "alaves",
+            "source": "https://www.bdfutbol.com/en/t/t2016-173.html",
+            "leagueStarts": 31,
+            "leagueAppearances": 32,
+            "leagueMinutes": 2806,
+            "leagueGoals": 0,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2017-18",
@@ -3980,7 +4013,7 @@
       "leagueGoals": 3,
       "appearanceScope": "2018-19 La Liga",
       "tier": "A",
-      "rank": 3,
+      "rank": 2,
       "review": "draft_unapproved",
       "evaluationStatus": "provisional_tier_and_rank_unapproved",
       "positionVerification": "2018_19_game_by_game_primary_role_not_verified",
@@ -4029,7 +4062,8 @@
       "rankReview": {
         "status": "provisional",
         "criteria": "tentative quality tier then current starts, appearances, goals; not independent final 3-season proof",
-        "pool": 15
+        "pool": 15,
+        "externalAuditReason": "모드리치의 중앙 전개 역할과 직전 두 시즌 연속성을 고려해 사울보다 앞에 둔다. 두 선수 모두 A 유지."
       }
     },
     {
@@ -4132,21 +4166,23 @@
         "priorSeasons": [
           {
             "season": "2016-17",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "club": "betis",
+            "source": "https://www.bdfutbol.com/en/t/t2016-178.html",
+            "leagueStarts": 24,
+            "leagueAppearances": 30,
+            "leagueMinutes": 2337,
+            "leagueGoals": 2,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2017-18",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "club": "madrid",
+            "source": "https://www.bdfutbol.com/en/t/t2017-182.html",
+            "leagueStarts": 4,
+            "leagueAppearances": 12,
+            "leagueMinutes": 399,
+            "leagueGoals": 2,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ],
         "priorSeasonQualityAudit": "not_independently_completed",
@@ -4622,12 +4658,13 @@
         "priorSeasons": [
           {
             "season": "2016-17",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "club": "madrid",
+            "source": "https://www.bdfutbol.com/en/t/t2016-172.html",
+            "leagueStarts": 0,
+            "leagueAppearances": 8,
+            "leagueMinutes": 120,
+            "leagueGoals": 1,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2017-18",
@@ -4640,7 +4677,12 @@
           }
         ],
         "priorSeasonQualityAudit": "not_independently_completed",
-        "currentStatsSourceAudit": "single_2018_19_BDFutbol_team_squad_table_transcription_not_double_checked"
+        "currentStatsSourceAudit": "single_2018_19_BDFutbol_team_squad_table_transcription_not_double_checked",
+        "eligibilityAudit": {
+          "decision": "retain_provisional_backup",
+          "reason": "3선발 13출전. 해당 구단 등록 후보군에서 동일 포지션 주전 Karim Benzema의 유일한 예비 후보. 5선발 하한 미설정; 저출전 비상·로테이션 후보로 유지. 전체 미등록 선수와의 비교는 미완료.",
+          "source": "https://www.bdfutbol.com/en/t/t2018-192.html"
+        }
       },
       "sources": [
         "https://www.bdfutbol.com/en/t/t2018-192.html"
@@ -4706,11 +4748,14 @@
             "leagueAppearances": 33,
             "leagueGoals": 0,
             "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2017-18.json",
-            "audit": "historical_draft_pointer_not_independently_corroborated"
+            "audit": "historical_draft_pointer_not_independently_corroborated",
+            "leagueGoalsConceded": 33
           }
         ],
         "priorSeasonQualityAudit": "not_independently_completed",
-        "currentStatsSourceAudit": "single_2018_19_BDFutbol_team_squad_table_transcription_not_double_checked"
+        "currentStatsSourceAudit": "single_2018_19_BDFutbol_team_squad_table_transcription_not_double_checked",
+        "goalkeeperStatsSource": "https://www.bdfutbol.com/en/t/t2018-1936.html",
+        "goalkeeperStatDefinition": "leagueGoals = goals scored; leagueGoalsConceded = goals conceded"
       },
       "sources": [
         "https://www.bdfutbol.com/en/t/t2018-1936.html"
@@ -4730,7 +4775,8 @@
         "status": "provisional",
         "criteria": "tentative quality tier then current starts, appearances, goals; not independent final 3-season proof",
         "pool": 13
-      }
+      },
+      "leagueGoalsConceded": 34
     },
     {
       "id": "laliga-201819-valencia-02",
@@ -4762,12 +4808,14 @@
         "priorSeasons": [
           {
             "season": "2016-17",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
+            "club": "valencia",
+            "source": "https://www.bdfutbol.com/en/t/t2016-1736.html",
+            "leagueStarts": 3,
+            "leagueAppearances": 3,
+            "leagueMinutes": 270,
             "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "leagueGoalsConceded": 4,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2017-18",
@@ -4776,11 +4824,14 @@
             "leagueAppearances": 5,
             "leagueGoals": 0,
             "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2017-18.json",
-            "audit": "historical_draft_pointer_not_independently_corroborated"
+            "audit": "historical_draft_pointer_not_independently_corroborated",
+            "leagueGoalsConceded": 5
           }
         ],
         "priorSeasonQualityAudit": "not_independently_completed",
-        "currentStatsSourceAudit": "single_2018_19_BDFutbol_team_squad_table_transcription_not_double_checked"
+        "currentStatsSourceAudit": "single_2018_19_BDFutbol_team_squad_table_transcription_not_double_checked",
+        "goalkeeperStatsSource": "https://www.bdfutbol.com/en/t/t2018-1936.html",
+        "goalkeeperStatDefinition": "leagueGoals = goals scored; leagueGoalsConceded = goals conceded"
       },
       "sources": [
         "https://www.bdfutbol.com/en/t/t2018-1936.html"
@@ -4800,7 +4851,8 @@
         "status": "provisional",
         "criteria": "tentative quality tier then current starts, appearances, goals; not independent final 3-season proof",
         "pool": 13
-      }
+      },
+      "leagueGoalsConceded": 1
     },
     {
       "id": "laliga-201819-valencia-03",
@@ -4902,12 +4954,13 @@
         "priorSeasons": [
           {
             "season": "2016-17",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "club": "valencia",
+            "source": "https://www.bdfutbol.com/en/t/t2016-1736.html",
+            "leagueStarts": 27,
+            "leagueAppearances": 27,
+            "leagueMinutes": 2339,
+            "leagueGoals": 4,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2017-18",
@@ -5042,12 +5095,13 @@
         "priorSeasons": [
           {
             "season": "2016-17",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "club": "valencia",
+            "source": "https://www.bdfutbol.com/en/t/t2016-1736.html",
+            "leagueStarts": 24,
+            "leagueAppearances": 27,
+            "leagueMinutes": 2089,
+            "leagueGoals": 1,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2017-18",
@@ -5112,21 +5166,23 @@
         "priorSeasons": [
           {
             "season": "2016-17",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "club": "celta",
+            "source": "https://www.bdfutbol.com/en/t/t2016-1711.html",
+            "leagueStarts": 29,
+            "leagueAppearances": 32,
+            "leagueMinutes": 2381,
+            "leagueGoals": 3,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2017-18",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "club": "celta",
+            "source": "https://www.bdfutbol.com/en/t/t2017-1811.html",
+            "leagueStarts": 34,
+            "leagueAppearances": 35,
+            "leagueMinutes": 2930,
+            "leagueGoals": 4,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ],
         "priorSeasonQualityAudit": "not_independently_completed",
@@ -5184,12 +5240,13 @@
         "priorSeasons": [
           {
             "season": "2016-17",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "club": "betis",
+            "source": "https://www.bdfutbol.com/en/t/t2016-178.html",
+            "leagueStarts": 21,
+            "leagueAppearances": 23,
+            "leagueMinutes": 1741,
+            "leagueGoals": 2,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2017-18",
@@ -5254,12 +5311,13 @@
         "priorSeasons": [
           {
             "season": "2016-17",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "club": "valencia",
+            "source": "https://www.bdfutbol.com/en/t/t2016-1736.html",
+            "leagueStarts": 36,
+            "leagueAppearances": 36,
+            "leagueMinutes": 3191,
+            "leagueGoals": 5,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2017-18",
@@ -5604,12 +5662,13 @@
         "priorSeasons": [
           {
             "season": "2016-17",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "club": "valencia",
+            "source": "https://www.bdfutbol.com/en/t/t2016-1736.html",
+            "leagueStarts": 19,
+            "leagueAppearances": 23,
+            "leagueMinutes": 1725,
+            "leagueGoals": 3,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2017-18",
@@ -5744,12 +5803,13 @@
         "priorSeasons": [
           {
             "season": "2016-17",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "club": "valencia",
+            "source": "https://www.bdfutbol.com/en/t/t2016-1736.html",
+            "leagueStarts": 17,
+            "leagueAppearances": 19,
+            "leagueMinutes": 1392,
+            "leagueGoals": 5,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2017-18",
@@ -5814,12 +5874,13 @@
         "priorSeasons": [
           {
             "season": "2016-17",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "club": "valencia",
+            "source": "https://www.bdfutbol.com/en/t/t2016-1736.html",
+            "leagueStarts": 13,
+            "leagueAppearances": 29,
+            "leagueMinutes": 1407,
+            "leagueGoals": 6,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2017-18",
@@ -5954,12 +6015,14 @@
         "priorSeasons": [
           {
             "season": "2016-17",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
+            "club": "sevilla",
+            "source": "https://www.bdfutbol.com/en/t/t2016-1733.html",
+            "leagueStarts": 1,
+            "leagueAppearances": 1,
+            "leagueMinutes": 90,
             "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "leagueGoalsConceded": 0,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2017-18",
@@ -5968,11 +6031,14 @@
             "leagueAppearances": 15,
             "leagueGoals": 0,
             "source": "https://github.com/wjdduddlf112/footballarch/blob/main/data/laliga-2017-18.json",
-            "audit": "historical_draft_pointer_not_independently_corroborated"
+            "audit": "historical_draft_pointer_not_independently_corroborated",
+            "leagueGoalsConceded": 19
           }
         ],
         "priorSeasonQualityAudit": "not_independently_completed",
-        "currentStatsSourceAudit": "single_2018_19_BDFutbol_team_squad_table_transcription_not_double_checked"
+        "currentStatsSourceAudit": "single_2018_19_BDFutbol_team_squad_table_transcription_not_double_checked",
+        "goalkeeperStatsSource": "https://www.bdfutbol.com/en/t/t2018-1916.html",
+        "goalkeeperStatDefinition": "leagueGoals = goals scored; leagueGoalsConceded = goals conceded"
       },
       "sources": [
         "https://www.bdfutbol.com/en/t/t2018-1916.html"
@@ -5992,7 +6058,8 @@
         "status": "provisional",
         "criteria": "tentative quality tier then current starts, appearances, goals; not independent final 3-season proof",
         "pool": 13
-      }
+      },
+      "leagueGoalsConceded": 34
     },
     {
       "id": "laliga-201819-getafe-02",
@@ -6033,16 +6100,20 @@
           },
           {
             "season": "2017-18",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
+            "club": "laspalmas",
+            "source": "https://www.bdfutbol.com/en/t/t2017-1819.html",
+            "leagueStarts": 27,
+            "leagueAppearances": 27,
+            "leagueMinutes": 2430,
             "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "leagueGoalsConceded": 47,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ],
         "priorSeasonQualityAudit": "not_independently_completed",
-        "currentStatsSourceAudit": "single_2018_19_BDFutbol_team_squad_table_transcription_not_double_checked"
+        "currentStatsSourceAudit": "single_2018_19_BDFutbol_team_squad_table_transcription_not_double_checked",
+        "goalkeeperStatsSource": "https://www.bdfutbol.com/en/t/t2018-1916.html",
+        "goalkeeperStatDefinition": "leagueGoals = goals scored; leagueGoalsConceded = goals conceded"
       },
       "sources": [
         "https://www.bdfutbol.com/en/t/t2018-1916.html"
@@ -6062,7 +6133,8 @@
         "status": "provisional",
         "criteria": "tentative quality tier then current starts, appearances, goals; not independent final 3-season proof",
         "pool": 13
-      }
+      },
+      "leagueGoalsConceded": 1
     },
     {
       "id": "laliga-201819-getafe-03",
@@ -6103,12 +6175,13 @@
           },
           {
             "season": "2017-18",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "club": "getafe",
+            "source": "https://www.bdfutbol.com/en/t/t2017-1816.html",
+            "leagueStarts": 36,
+            "leagueAppearances": 36,
+            "leagueMinutes": 3239,
+            "leagueGoals": 1,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ],
         "priorSeasonQualityAudit": "not_independently_completed",
@@ -6173,12 +6246,13 @@
           },
           {
             "season": "2017-18",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "club": "getafe",
+            "source": "https://www.bdfutbol.com/en/t/t2017-1816.html",
+            "leagueStarts": 8,
+            "leagueAppearances": 9,
+            "leagueMinutes": 720,
+            "leagueGoals": 0,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ],
         "priorSeasonQualityAudit": "not_independently_completed",
@@ -6234,21 +6308,23 @@
         "priorSeasons": [
           {
             "season": "2016-17",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "club": "betis",
+            "source": "https://www.bdfutbol.com/en/t/t2016-178.html",
+            "leagueStarts": 15,
+            "leagueAppearances": 16,
+            "leagueMinutes": 1332,
+            "leagueGoals": 1,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2017-18",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "club": "getafe",
+            "source": "https://www.bdfutbol.com/en/t/t2017-1816.html",
+            "leagueStarts": 17,
+            "leagueAppearances": 20,
+            "leagueMinutes": 1540,
+            "leagueGoals": 0,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ],
         "priorSeasonQualityAudit": "not_independently_completed",
@@ -6313,12 +6389,13 @@
           },
           {
             "season": "2017-18",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "club": "getafe",
+            "source": "https://www.bdfutbol.com/en/t/t2017-1816.html",
+            "leagueStarts": 31,
+            "leagueAppearances": 34,
+            "leagueMinutes": 2798,
+            "leagueGoals": 0,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ],
         "priorSeasonQualityAudit": "not_independently_completed",
@@ -6383,12 +6460,13 @@
           },
           {
             "season": "2017-18",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "club": "getafe",
+            "source": "https://www.bdfutbol.com/en/t/t2017-1816.html",
+            "leagueStarts": 1,
+            "leagueAppearances": 3,
+            "leagueMinutes": 103,
+            "leagueGoals": 1,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ],
         "priorSeasonQualityAudit": "not_independently_completed",
@@ -6453,12 +6531,13 @@
           },
           {
             "season": "2017-18",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "club": "getafe",
+            "source": "https://www.bdfutbol.com/en/t/t2017-1816.html",
+            "leagueStarts": 33,
+            "leagueAppearances": 33,
+            "leagueMinutes": 2880,
+            "leagueGoals": 1,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ],
         "priorSeasonQualityAudit": "not_independently_completed",
@@ -6604,7 +6683,12 @@
           }
         ],
         "priorSeasonQualityAudit": "not_independently_completed",
-        "currentStatsSourceAudit": "single_2018_19_BDFutbol_team_squad_table_transcription_not_double_checked"
+        "currentStatsSourceAudit": "single_2018_19_BDFutbol_team_squad_table_transcription_not_double_checked",
+        "eligibilityAudit": {
+          "decision": "retain_provisional_backup",
+          "reason": "4선발 15출전. 해당 구단 등록 후보군에서 동일 포지션 주전 Nemanja Maksimović의 유일한 예비 후보. 5선발 하한 미설정; 저출전 비상·로테이션 후보로 유지. 전체 미등록 선수와의 비교는 미완료.",
+          "source": "https://www.bdfutbol.com/en/t/t2018-1916.html"
+        }
       },
       "sources": [
         "https://www.bdfutbol.com/en/t/t2018-1916.html"
@@ -6665,12 +6749,13 @@
           },
           {
             "season": "2017-18",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "club": "getafe",
+            "source": "https://www.bdfutbol.com/en/t/t2017-1816.html",
+            "leagueStarts": 26,
+            "leagueAppearances": 27,
+            "leagueMinutes": 2135,
+            "leagueGoals": 1,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ],
         "priorSeasonQualityAudit": "not_independently_completed",
@@ -6735,16 +6820,22 @@
           },
           {
             "season": "2017-18",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "club": "getafe",
+            "source": "https://www.bdfutbol.com/en/t/t2017-1816.html",
+            "leagueStarts": 6,
+            "leagueAppearances": 8,
+            "leagueMinutes": 482,
+            "leagueGoals": 0,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ],
         "priorSeasonQualityAudit": "not_independently_completed",
-        "currentStatsSourceAudit": "single_2018_19_BDFutbol_team_squad_table_transcription_not_double_checked"
+        "currentStatsSourceAudit": "single_2018_19_BDFutbol_team_squad_table_transcription_not_double_checked",
+        "eligibilityAudit": {
+          "decision": "retain_provisional_backup",
+          "reason": "4선발 10출전. 해당 구단 등록 후보군에서 동일 포지션 주전 Mauro Arambarri의 유일한 예비 후보. 5선발 하한 미설정; 저출전 비상·로테이션 후보로 유지. 전체 미등록 선수와의 비교는 미완료.",
+          "source": "https://www.bdfutbol.com/en/t/t2018-1916.html"
+        }
       },
       "sources": [
         "https://www.bdfutbol.com/en/t/t2018-1916.html"
@@ -6805,12 +6896,13 @@
           },
           {
             "season": "2017-18",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "club": "getafe",
+            "source": "https://www.bdfutbol.com/en/t/t2017-1816.html",
+            "leagueStarts": 36,
+            "leagueAppearances": 37,
+            "leagueMinutes": 2861,
+            "leagueGoals": 3,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ],
         "priorSeasonQualityAudit": "not_independently_completed",
@@ -6875,12 +6967,13 @@
           },
           {
             "season": "2017-18",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "club": "getafe",
+            "source": "https://www.bdfutbol.com/en/t/t2017-1816.html",
+            "leagueStarts": 28,
+            "leagueAppearances": 33,
+            "leagueMinutes": 2459,
+            "leagueGoals": 2,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ],
         "priorSeasonQualityAudit": "not_independently_completed",
@@ -6936,12 +7029,13 @@
         "priorSeasons": [
           {
             "season": "2016-17",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "club": "granada",
+            "source": "https://www.bdfutbol.com/en/t/t2016-1759.html",
+            "leagueStarts": 21,
+            "leagueAppearances": 22,
+            "leagueMinutes": 1874,
+            "leagueGoals": 0,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2017-18",
@@ -7015,12 +7109,13 @@
           },
           {
             "season": "2017-18",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "club": "getafe",
+            "source": "https://www.bdfutbol.com/en/t/t2017-1816.html",
+            "leagueStarts": 12,
+            "leagueAppearances": 22,
+            "leagueMinutes": 995,
+            "leagueGoals": 1,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ],
         "priorSeasonQualityAudit": "not_independently_completed",
@@ -7155,12 +7250,13 @@
           },
           {
             "season": "2017-18",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "club": "getafe",
+            "source": "https://www.bdfutbol.com/en/t/t2017-1816.html",
+            "leagueStarts": 31,
+            "leagueAppearances": 36,
+            "leagueMinutes": 2786,
+            "leagueGoals": 7,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ],
         "priorSeasonQualityAudit": "not_independently_completed",
@@ -7225,12 +7321,13 @@
           },
           {
             "season": "2017-18",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "club": "getafe",
+            "source": "https://www.bdfutbol.com/en/t/t2017-1816.html",
+            "leagueStarts": 26,
+            "leagueAppearances": 33,
+            "leagueMinutes": 2296,
+            "leagueGoals": 13,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ],
         "priorSeasonQualityAudit": "not_independently_completed",
@@ -7304,7 +7401,9 @@
           }
         ],
         "priorSeasonQualityAudit": "not_independently_completed",
-        "currentStatsSourceAudit": "single_2018_19_BDFutbol_team_squad_table_transcription_not_double_checked"
+        "currentStatsSourceAudit": "single_2018_19_BDFutbol_team_squad_table_transcription_not_double_checked",
+        "goalkeeperStatsSource": "https://www.bdfutbol.com/en/t/t2018-1933.html",
+        "goalkeeperStatDefinition": "leagueGoals = goals scored; leagueGoalsConceded = goals conceded"
       },
       "sources": [
         "https://www.bdfutbol.com/en/t/t2018-1933.html"
@@ -7324,7 +7423,8 @@
         "status": "provisional",
         "criteria": "tentative quality tier then current starts, appearances, goals; not independent final 3-season proof",
         "pool": 13
-      }
+      },
+      "leagueGoalsConceded": 44
     },
     {
       "id": "laliga-201819-sevilla-02",
@@ -7374,7 +7474,9 @@
           }
         ],
         "priorSeasonQualityAudit": "not_independently_completed",
-        "currentStatsSourceAudit": "single_2018_19_BDFutbol_team_squad_table_transcription_not_double_checked"
+        "currentStatsSourceAudit": "single_2018_19_BDFutbol_team_squad_table_transcription_not_double_checked",
+        "goalkeeperStatsSource": "https://www.bdfutbol.com/en/t/t2018-1933.html",
+        "goalkeeperStatDefinition": "leagueGoals = goals scored; leagueGoalsConceded = goals conceded"
       },
       "sources": [
         "https://www.bdfutbol.com/en/t/t2018-1933.html"
@@ -7394,7 +7496,8 @@
         "status": "provisional",
         "criteria": "tentative quality tier then current starts, appearances, goals; not independent final 3-season proof",
         "pool": 13
-      }
+      },
+      "leagueGoalsConceded": 2
     },
     {
       "id": "laliga-201819-sevilla-03",
@@ -7426,21 +7529,23 @@
         "priorSeasons": [
           {
             "season": "2016-17",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "club": "celta",
+            "source": "https://www.bdfutbol.com/en/t/t2016-1711.html",
+            "leagueStarts": 21,
+            "leagueAppearances": 25,
+            "leagueMinutes": 1904,
+            "leagueGoals": 0,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2017-18",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "club": "celta",
+            "source": "https://www.bdfutbol.com/en/t/t2017-1811.html",
+            "leagueStarts": 31,
+            "leagueAppearances": 33,
+            "leagueMinutes": 2682,
+            "leagueGoals": 1,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ],
         "priorSeasonQualityAudit": "not_independently_completed",
@@ -7566,21 +7671,23 @@
         "priorSeasons": [
           {
             "season": "2016-17",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "club": "sevilla",
+            "source": "https://www.bdfutbol.com/en/t/t2016-1733.html",
+            "leagueStarts": 6,
+            "leagueAppearances": 6,
+            "leagueMinutes": 453,
+            "leagueGoals": 0,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2017-18",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "club": "sevilla",
+            "source": "https://www.bdfutbol.com/en/t/t2017-1833.html",
+            "leagueStarts": 5,
+            "leagueAppearances": 6,
+            "leagueMinutes": 460,
+            "leagueGoals": 0,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ],
         "priorSeasonQualityAudit": "not_independently_completed",
@@ -7794,7 +7901,14 @@
           }
         ],
         "priorSeasonQualityAudit": "not_independently_completed",
-        "currentStatsSourceAudit": "single_2018_19_BDFutbol_team_squad_table_transcription_not_double_checked"
+        "currentStatsSourceAudit": "single_2018_19_BDFutbol_team_squad_table_transcription_not_double_checked",
+        "positionAudit": {
+          "previous": "RB",
+          "alternative": "CB",
+          "source": "https://fbref.com/en/players/bf97c188/matchlogs/2018-2019/c12/gca/Gabriel-Mercado-Match-Logs",
+          "reason": "CB 선발 사례 및 스리백 역할 확인. 전체 포지션별 선발 집계 미확보.",
+          "decision": "retain_provisional_pending_matchwise_count"
+        }
       },
       "sources": [
         "https://www.bdfutbol.com/en/t/t2018-1933.html"
@@ -7846,21 +7960,23 @@
         "priorSeasons": [
           {
             "season": "2016-17",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "club": "laspalmas",
+            "source": "https://www.bdfutbol.com/en/t/t2016-1719.html",
+            "leagueStarts": 34,
+            "leagueAppearances": 35,
+            "leagueMinutes": 3036,
+            "leagueGoals": 1,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2017-18",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "club": "sevilla",
+            "source": "https://www.bdfutbol.com/en/t/t2017-1833.html",
+            "leagueStarts": 4,
+            "leagueAppearances": 7,
+            "leagueMinutes": 343,
+            "leagueGoals": 0,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ],
         "priorSeasonQualityAudit": "not_independently_completed",
@@ -8074,7 +8190,14 @@
           }
         ],
         "priorSeasonQualityAudit": "not_independently_completed",
-        "currentStatsSourceAudit": "single_2018_19_BDFutbol_team_squad_table_transcription_not_double_checked"
+        "currentStatsSourceAudit": "single_2018_19_BDFutbol_team_squad_table_transcription_not_double_checked",
+        "positionAudit": {
+          "previous": "LW",
+          "alternative": "LB",
+          "source": "https://as.com/futbol/2018/09/17/primera/1537207187_240992.html",
+          "reason": "왼쪽 윙백 기용 확인; 시스템 변경에 따른 측면 역할 혼용.",
+          "decision": "retain_provisional_pending_matchwise_count"
+        }
       },
       "sources": [
         "https://www.bdfutbol.com/en/t/t2018-1933.html"
@@ -8336,25 +8459,31 @@
         "priorSeasons": [
           {
             "season": "2016-17",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
+            "club": "espanyol",
+            "source": "https://www.bdfutbol.com/en/t/t2016-1714.html",
+            "leagueStarts": 35,
+            "leagueAppearances": 35,
+            "leagueMinutes": 3111,
             "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "leagueGoalsConceded": 38,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2017-18",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
+            "club": "espanyol",
+            "source": "https://www.bdfutbol.com/en/t/t2017-1814.html",
+            "leagueStarts": 10,
+            "leagueAppearances": 10,
+            "leagueMinutes": 853,
             "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "leagueGoalsConceded": 11,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ],
         "priorSeasonQualityAudit": "not_independently_completed",
-        "currentStatsSourceAudit": "single_2018_19_BDFutbol_team_squad_table_transcription_not_double_checked"
+        "currentStatsSourceAudit": "single_2018_19_BDFutbol_team_squad_table_transcription_not_double_checked",
+        "goalkeeperStatsSource": "https://www.bdfutbol.com/en/t/t2018-1914.html",
+        "goalkeeperStatDefinition": "leagueGoals = goals scored; leagueGoalsConceded = goals conceded"
       },
       "sources": [
         "https://www.bdfutbol.com/en/t/t2018-1914.html"
@@ -8374,7 +8503,8 @@
         "status": "provisional",
         "criteria": "tentative quality tier then current starts, appearances, goals; not independent final 3-season proof",
         "pool": 13
-      }
+      },
+      "leagueGoalsConceded": 50
     },
     {
       "id": "laliga-201819-espanyol-02",
@@ -8415,12 +8545,13 @@
           },
           {
             "season": "2017-18",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "club": "espanyol",
+            "source": "https://www.bdfutbol.com/en/t/t2017-1814.html",
+            "leagueStarts": 22,
+            "leagueAppearances": 22,
+            "leagueMinutes": 1928,
+            "leagueGoals": 1,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ],
         "priorSeasonQualityAudit": "not_independently_completed",
@@ -8476,21 +8607,23 @@
         "priorSeasons": [
           {
             "season": "2016-17",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "club": "espanyol",
+            "source": "https://www.bdfutbol.com/en/t/t2016-1714.html",
+            "leagueStarts": 36,
+            "leagueAppearances": 36,
+            "leagueMinutes": 3240,
+            "leagueGoals": 3,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2017-18",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "club": "espanyol",
+            "source": "https://www.bdfutbol.com/en/t/t2017-1814.html",
+            "leagueStarts": 37,
+            "leagueAppearances": 37,
+            "leagueMinutes": 3330,
+            "leagueGoals": 1,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ],
         "priorSeasonQualityAudit": "not_independently_completed",
@@ -8555,12 +8688,13 @@
           },
           {
             "season": "2017-18",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "club": "espanyol",
+            "source": "https://www.bdfutbol.com/en/t/t2017-1814.html",
+            "leagueStarts": 10,
+            "leagueAppearances": 11,
+            "leagueMinutes": 920,
+            "leagueGoals": 0,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ],
         "priorSeasonQualityAudit": "not_independently_completed",
@@ -8625,12 +8759,13 @@
           },
           {
             "season": "2017-18",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "club": "espanyol",
+            "source": "https://www.bdfutbol.com/en/t/t2017-1814.html",
+            "leagueStarts": 7,
+            "leagueAppearances": 14,
+            "leagueMinutes": 727,
+            "leagueGoals": 0,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ],
         "priorSeasonQualityAudit": "not_independently_completed",
@@ -8756,21 +8891,23 @@
         "priorSeasons": [
           {
             "season": "2016-17",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "club": "espanyol",
+            "source": "https://www.bdfutbol.com/en/t/t2016-1714.html",
+            "leagueStarts": 17,
+            "leagueAppearances": 19,
+            "leagueMinutes": 1522,
+            "leagueGoals": 0,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2017-18",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "club": "espanyol",
+            "source": "https://www.bdfutbol.com/en/t/t2017-1814.html",
+            "leagueStarts": 12,
+            "leagueAppearances": 14,
+            "leagueMinutes": 966,
+            "leagueGoals": 0,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ],
         "priorSeasonQualityAudit": "not_independently_completed",
@@ -8826,21 +8963,23 @@
         "priorSeasons": [
           {
             "season": "2016-17",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "club": "malaga",
+            "source": "https://www.bdfutbol.com/en/t/t2016-1723.html",
+            "leagueStarts": 32,
+            "leagueAppearances": 32,
+            "leagueMinutes": 2860,
+            "leagueGoals": 1,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2017-18",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "club": "malaga",
+            "source": "https://www.bdfutbol.com/en/t/t2017-1823.html",
+            "leagueStarts": 35,
+            "leagueAppearances": 35,
+            "leagueMinutes": 3124,
+            "leagueGoals": 1,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ],
         "priorSeasonQualityAudit": "not_independently_completed",
@@ -8896,21 +9035,23 @@
         "priorSeasons": [
           {
             "season": "2016-17",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "club": "espanyol",
+            "source": "https://www.bdfutbol.com/en/t/t2016-1714.html",
+            "leagueStarts": 14,
+            "leagueAppearances": 25,
+            "leagueMinutes": 1326,
+            "leagueGoals": 0,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2017-18",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "club": "espanyol",
+            "source": "https://www.bdfutbol.com/en/t/t2017-1814.html",
+            "leagueStarts": 2,
+            "leagueAppearances": 8,
+            "leagueMinutes": 263,
+            "leagueGoals": 0,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ],
         "priorSeasonQualityAudit": "not_independently_completed",
@@ -8966,21 +9107,23 @@
         "priorSeasons": [
           {
             "season": "2016-17",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "club": "espanyol",
+            "source": "https://www.bdfutbol.com/en/t/t2016-1714.html",
+            "leagueStarts": 25,
+            "leagueAppearances": 26,
+            "leagueMinutes": 2281,
+            "leagueGoals": 1,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2017-18",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "club": "espanyol",
+            "source": "https://www.bdfutbol.com/en/t/t2017-1814.html",
+            "leagueStarts": 29,
+            "leagueAppearances": 30,
+            "leagueMinutes": 2459,
+            "leagueGoals": 0,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ],
         "priorSeasonQualityAudit": "not_independently_completed",
@@ -9045,12 +9188,13 @@
           },
           {
             "season": "2017-18",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "club": "espanyol",
+            "source": "https://www.bdfutbol.com/en/t/t2017-1814.html",
+            "leagueStarts": 32,
+            "leagueAppearances": 35,
+            "leagueMinutes": 2785,
+            "leagueGoals": 1,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ],
         "priorSeasonQualityAudit": "not_independently_completed",
@@ -9115,12 +9259,13 @@
           },
           {
             "season": "2017-18",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "club": "espanyol",
+            "source": "https://www.bdfutbol.com/en/t/t2017-1814.html",
+            "leagueStarts": 11,
+            "leagueAppearances": 25,
+            "leagueMinutes": 1228,
+            "leagueGoals": 1,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ],
         "priorSeasonQualityAudit": "not_independently_completed",
@@ -9185,12 +9330,13 @@
           },
           {
             "season": "2017-18",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "club": "espanyol",
+            "source": "https://www.bdfutbol.com/en/t/t2017-1814.html",
+            "leagueStarts": 14,
+            "leagueAppearances": 33,
+            "leagueMinutes": 1630,
+            "leagueGoals": 2,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ],
         "priorSeasonQualityAudit": "not_independently_completed",
@@ -9246,21 +9392,23 @@
         "priorSeasons": [
           {
             "season": "2016-17",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "club": "espanyol",
+            "source": "https://www.bdfutbol.com/en/t/t2016-1714.html",
+            "leagueStarts": 30,
+            "leagueAppearances": 30,
+            "leagueMinutes": 2340,
+            "leagueGoals": 10,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2017-18",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "club": "espanyol",
+            "source": "https://www.bdfutbol.com/en/t/t2017-1814.html",
+            "leagueStarts": 22,
+            "leagueAppearances": 30,
+            "leagueMinutes": 1745,
+            "leagueGoals": 2,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ],
         "priorSeasonQualityAudit": "not_independently_completed",
@@ -9316,21 +9464,23 @@
         "priorSeasons": [
           {
             "season": "2016-17",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "club": "espanyol",
+            "source": "https://www.bdfutbol.com/en/t/t2016-1714.html",
+            "leagueStarts": 2,
+            "leagueAppearances": 11,
+            "leagueMinutes": 308,
+            "leagueGoals": 0,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2017-18",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "club": "espanyol",
+            "source": "https://www.bdfutbol.com/en/t/t2017-1814.html",
+            "leagueStarts": 6,
+            "leagueAppearances": 18,
+            "leagueMinutes": 685,
+            "leagueGoals": 1,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ],
         "priorSeasonQualityAudit": "not_independently_completed",
@@ -9386,21 +9536,33 @@
         "priorSeasons": [
           {
             "season": "2016-17",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "club": "espanyol",
+            "source": "https://www.bdfutbol.com/en/t/t2016-1714.html",
+            "leagueStarts": 20,
+            "leagueAppearances": 32,
+            "leagueMinutes": 1784,
+            "leagueGoals": 3,
+            "audit": "external_audit_BDFutbol_club_season"
           },
           {
             "season": "2017-18",
-            "club": null,
-            "leagueStarts": null,
-            "leagueAppearances": null,
-            "leagueGoals": null,
-            "source": null,
-            "audit": "outside_archive_independent_check_missing"
+            "club": "espanyol",
+            "source": "https://www.bdfutbol.com/en/t/t2017-1814.html",
+            "leagueStarts": 1,
+            "leagueAppearances": 4,
+            "leagueMinutes": 139,
+            "leagueGoals": 0,
+            "audit": "external_audit_BDFutbol_club_season"
+          },
+          {
+            "season": "2017-18",
+            "club": "alaves",
+            "source": "https://www.bdfutbol.com/en/t/t2017-183.html",
+            "leagueStarts": 4,
+            "leagueAppearances": 10,
+            "leagueMinutes": 370,
+            "leagueGoals": 0,
+            "audit": "external_audit_BDFutbol_club_season"
           }
         ],
         "priorSeasonQualityAudit": "not_independently_completed",
@@ -9598,7 +9760,8 @@
     },
     {
       "playerId": "laliga-201819-madrid-12",
-      "position": "CM"
+      "position": "CM",
+      "reason": "모드리치의 중앙 전개 역할과 직전 두 시즌 연속성을 고려해 사울보다 앞에 둔다. 두 선수 모두 A 유지. 잠정 편집 평가."
     },
     {
       "playerId": "laliga-201819-barca-13",
@@ -9609,8 +9772,9 @@
       "position": "RW"
     },
     {
-      "playerId": "laliga-201819-madrid-20",
-      "position": "ST"
+      "playerId": "laliga-201819-atleti-17",
+      "position": "ST",
+      "reason": "당해 37선발 15골, 직전 두 시즌 리그 19·16골과 득점 외 연계 기여를 반영해 기존 1위 그리즈만을 선정. 벤제마 당해 21골 우위는 인정. 잠정 편집 평가."
     }
   ],
   "standings": [
