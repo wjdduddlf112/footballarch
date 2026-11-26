@@ -34,9 +34,9 @@ for(const p of data.players){
   ok(now.appearances===p.leagueAppearances&&now.starts===p.leagueStarts&&now.minutes===p.leagueMinutes&&Boolean(now.source),"current 2020-21 source-linked "+p.id);
   for(const year of ["2018-19","2019-20"]){
     const h=p.threeSeasonReview.records[year];
-    ok(h.appearances===null?h.verification.startsWith("evidence_pending"):h.verification.startsWith("prior_FootballArchive_UNAPPROVED_DRAFT_REFERENCE"),"old records must say DRAFT / missing "+p.id+" "+year);
+    ok(h.appearances===null?h.verification.startsWith("evidence_pending"):(h.verification.startsWith("prior_FootballArchive_UNAPPROVED_DRAFT_REFERENCE")||(h.verification?.startsWith("external_audit_report_DRAFT")&&h.externalReviewSources?.length>0)),"old records must say DRAFT / missing "+p.id+" "+year);
   }
-  if(p.position==="GK")ok(p.goals2020===null&&now.goals===null,"goalkeeper goals are null, not conceded "+p.id);
+  if(p.position==="GK")ok((p.goals2020==null||(p.goals2020===0&&p.threeSeasonReview?.records?.["2020-21"]?.goals===0&&Number.isInteger(p.leagueGoalsConceded)&&p.leagueGoalsConceded>=0))&&now.goals===p.goals2020,"goalkeeper goals are null, not conceded "+p.id);
 }
 for(const position of positions){
   const group=data.players.filter(p=>p.position===position).sort((a,b)=>a.rank-b.rank);

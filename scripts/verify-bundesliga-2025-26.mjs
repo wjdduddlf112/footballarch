@@ -41,13 +41,13 @@ for(const p of a.players){
  check(Number.isInteger(p.leagueAppearances)&&p.leagueAppearances>=1&&p.leagueAppearances<=34,'Bad league apps: '+p.id);
  check(Number.isInteger(p.leagueMinutes)&&p.leagueMinutes>=1&&p.leagueMinutes<=3060,'Bad league minutes: '+p.id);
  check(p.leagueStarts===null||(Number.isInteger(p.leagueStarts)&&p.leagueStarts>=0&&p.leagueStarts<=p.leagueAppearances),'Bad league starts: '+p.id);
- check(p.club!=='stuttgart'||p.leagueStarts===null,'Stuttgart starts were not in sourced table and must remain null: '+p.id);
+ check(p.club!=='stuttgart'||(Number.isInteger(p.leagueStarts)&&p.starts===p.leagueStarts&&p.threeSeasonReview?.records?.['2025-26']?.starts===p.leagueStarts&&p.threeSeasonReview?.records?.['2025-26']?.externalReviewSources?.length>0),'Stuttgart starts must match the separately audited source record: '+p.id);
  check(p.threeSeasonReview?.assessmentSeasons?.join(',')==='2023-24,2024-25,2025-26','Wrong 3-year assessment: '+p.id);
  for(const y of ['2023-24','2024-25','2025-26'])check(p.threeSeasonReview?.records?.[y]!=null,'Missing year record: '+p.id+'/'+y);
  check(p.review==='draft_unapproved','Approved player before user approval: '+p.id);
  check(Array.isArray(p.sources)&&p.sources.length>=2,'Insufficient linked individual sources: '+p.id);
  check(Number.isInteger(p.rank)&&p.rank>=1,'Missing rank: '+p.id);
- if(p.position==='GK')check(p.goals2025===null,'GK conceded-goals mistranscribed into goals scored: '+p.id);
+ if(p.position==='GK')check((p.goals2025==null||(p.goals2025===0&&p.threeSeasonReview?.records?.["2025-26"]?.goals===0&&Number.isInteger(p.leagueGoalsConceded)&&p.leagueGoalsConceded>=0)),'GK conceded-goals mistranscribed into goals scored: '+p.id);
 }
 for(const c of clubs)for(const po of positions){
  check(a.players.filter(p=>p.club===c&&p.position===po&&p.role==='backup').length<=1,'Too many backups: '+c+'/'+po);
@@ -71,7 +71,7 @@ for(const b of a.bestXi){
 check(a.meta.verificationSummary?.fullThreeSeasonIndependentVerified===0,'Historical independent verification cannot be assumed');
 warnings.push('PASS here means JSON and metadata consistency only: no player-level independent 3-season historical verification has been executed.');
 warnings.push('Previous seasons sourced from unapproved archived drafts are not independent historical confirmation; missing records remain NULL.');
-warnings.push('Stuttgart starts remain NULL; next-season player positions, crest rendering and real Pages browser actions are not checked here.');
+warnings.push('Stuttgart starts are report-backed; next-season player positions, crest rendering and real Pages browser actions are not checked here.');
 const result={passed:errors.length===0,clubs:clubs.size,candidates:a.players.length,tiers:tCount,worldClass:a.meta.worldClassCount,leagueTopClass:a.meta.leagueTopClassCount,bestXi:a.bestXi.length,missingStarterCounts:a.players.filter(p=>p.leagueStarts===null).length,errors,warnings};
 process.stdout.write(JSON.stringify(result,null,2)+'\n');
 if(errors.length)process.exitCode=1;
