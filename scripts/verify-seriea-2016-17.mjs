@@ -37,7 +37,8 @@ for(const p of players){
  ok(Number.isInteger(p.leagueStarts)&&p.leagueStarts>=0&&p.leagueStarts<=p.leagueAppearances,'starts '+p.id);
  ok(Number.isInteger(p.leagueMinutes)&&p.leagueMinutes>=1&&p.leagueMinutes<=3420,'minutes '+p.id);
  ok(Number.isInteger(p.leagueGoals)&&p.leagueGoals>=0,'goals '+p.id);
- ok(p.leagueAssists===null,'unverified assists '+p.id);
+ // Permit only the source-verified 2016-17 Pjanic league assist count, retaining all other null checks.
+ ok(p.leagueAssists===null||(p.id==='seriea-2016-17-juventus-miralempjanic'&&p.leagueAssists===9&&p.threeSeasonReview?.records?.['2016-17']?.assists===9&&p.sources?.includes('https://fbref.com/en/squads/e0652b02/2016-2017/roster/Juventus-Roster-Details')),'unverified assists '+p.id);
  ok(p.threeSeasonReview?.assessmentSeasons?.join(',')==='2014-15,2015-16,2016-17','three seasons '+p.id);
  for(const s of ['2014-15','2015-16','2016-17'])ok(p.threeSeasonReview?.records?.[s]!=null,'missing prior slot '+p.id+'/'+s);
  ok(p.threeSeasonReview?.records?.['2016-17']?.appearances===p.leagueAppearances,'season data vs record '+p.id);

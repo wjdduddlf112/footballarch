@@ -18,7 +18,17 @@ export function verifySerieA(archive,referenceFiles){
   const seen=new Set,rank=new Set;
   let W=0,L=0,GF=0,GA=0;
   for(let i=0;i<rows.length;i++){
-   const r=rows[i],s=ref.rows[i],p=3*r.wins+r.draws;
+   const r=rows[i],p=3*r.wins+r.draws;
+   // RSSSF lists the three 44-point clubs in a different order; retain its original rows.
+   // FIGC head-to-head points: Chievo 8, Udinese 6, Cagliari 1.
+   const tie200910={14:["chievo","AC Chievo Verona"],15:["udinese","Udinese Calcio"],16:["cagliari","Cagliari Calcio"]};
+   let s=ref.rows[i];
+   if(season==="2009-10"&&tie200910[i+1]){
+     const [club,name]=tie200910[i+1];
+     if(r.club!==club)errors.push("2009-10 head-to-head ranking failed at "+(i+1));
+     const source=ref.rows.find(x=>x.name===name);
+     s=source?{...source,rank:i+1}:undefined;
+   }
    if(!s) {errors.push(season+": reference row missing "+i);continue;}
    if(r.club===undefined||!ids.has(r.club)||seen.has(r.club))errors.push(season+": unknown/duplicate club "+r.club);
    seen.add(r.club);rank.add(r.rank);
@@ -47,6 +57,7 @@ export function verifySerieA(archive,referenceFiles){
  if(rowsChecked!==530)errors.push("Expected 530 standings records, got "+rowsChecked);
  const pendingCreasts=archive.clubs.filter(c=>!c.crestUrl).map(c=>c.id);
  notices.push("Reference final tables are from RSSSF; 1999-00 Milan (61 points) and Roma (12 draws) correct RSSSF source typos against independent club/table records.");
+ notices.push("2009-10: 44-point tie ordered by head-to-head points; club-level statistics still checked against unmodified RSSSF rows.");
  notices.push("Historical 1999-00 through 2024-25 UEFA participant lists remain curated and require season-by-season independent UEFA competition audit.");
  notices.push("Source-linked club crest URL coverage is "+(archive.clubs.length-pendingCreasts.length)+"/"+archive.clubs.length+"; browser image loads and historical badge variants were not independently tested.");
  notices.push("2004-05 title is unassigned after retroactive Calciopoli ruling; final source table preserves Juventus originally first, without marking it official champion.");
