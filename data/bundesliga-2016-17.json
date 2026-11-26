@@ -549,7 +549,7 @@
       "leagueStarts": 26,
       "leagueMinutes": 2340,
       "starts": 26,
-      "goals2016": null,
+      "goals2016": 0,
       "assists2016": null,
       "tier": "S",
       "rank": 1,
@@ -583,7 +583,10 @@
             "goals": null,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2014-151016.html",
-            "verification": "prior_FootballArchive_DRAFT_data_reference_not_independent"
+            "verification": "prior_FootballArchive_DRAFT_data_reference_not_independent",
+            "goalsConceded": 18,
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2014-151016.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2015-16": {
             "club": "FC Bayern München",
@@ -593,17 +596,21 @@
             "goals": null,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2015-161016.html",
-            "verification": "prior_FootballArchive_DRAFT_data_reference_not_independent"
+            "verification": "prior_FootballArchive_DRAFT_data_reference_not_independent",
+            "goalsConceded": 16,
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2015-161016.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2016-17": {
             "club": "FC Bayern München",
             "appearances": 26,
             "starts": 26,
             "minutes": 2340,
-            "goals": null,
+            "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2016-171016.html",
-            "verification": "2016_17_BDFutbol_lineup_direct_and_season_specific_current_year"
+            "verification": "2016_17_BDFutbol_lineup_direct_and_season_specific_current_year",
+            "goalsConceded": 13
           }
         },
         "status": "current_stats_direct_prior_two_years_partial_prior_FootballArchive_DRAFT_or_pending"
@@ -616,7 +623,42 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "leagueGoalsConceded": 13,
+      "segment2Audit": {
+        "goalkeeper": [
+          {
+            "season": "2016-17",
+            "club": "FC Bayern München",
+            "goals": 0,
+            "goalsConceded": 13,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2016-171016.html",
+              "https://www.historical-lineups.com/wp-content/uploads/2024/07/Bundesliga-Player-Guide-1963-2023.pdf"
+            ]
+          }
+        ],
+        "priorClubRecords": [
+          {
+            "season": "2014-15",
+            "club": "Bayern München",
+            "goalsConceded": 18,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151016.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2015-16",
+            "club": "Bayern München",
+            "goalsConceded": 16,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2015-161016.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-leipzig-petergulacsi",
@@ -640,7 +682,7 @@
       "leagueStarts": 33,
       "leagueMinutes": 2970,
       "starts": 33,
-      "goals2016": null,
+      "goals2016": 0,
       "assists2016": null,
       "tier": "A-",
       "rank": 2,
@@ -691,10 +733,11 @@
             "appearances": 33,
             "starts": 33,
             "minutes": 2970,
-            "goals": null,
+            "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2016-171049.html",
-            "verification": "2016_17_BDFutbol_lineup_direct_and_season_specific_current_year"
+            "verification": "2016_17_BDFutbol_lineup_direct_and_season_specific_current_year",
+            "goalsConceded": 39
           }
         },
         "status": "current_stats_direct_prior_two_years_partial_prior_FootballArchive_DRAFT_or_pending"
@@ -707,7 +750,22 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "leagueGoalsConceded": 39,
+      "segment2Audit": {
+        "goalkeeper": [
+          {
+            "season": "2016-17",
+            "club": "RB Leipzig",
+            "goals": 0,
+            "goalsConceded": 39,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2016-171049.html",
+              "https://www.historical-lineups.com/wp-content/uploads/2024/07/Bundesliga-Player-Guide-1963-2023.pdf"
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-hoffenheim-oliverbaumann",
@@ -731,7 +789,7 @@
       "leagueStarts": 34,
       "leagueMinutes": 3060,
       "starts": 34,
-      "goals2016": null,
+      "goals2016": 0,
       "assists2016": null,
       "tier": "A-",
       "rank": 3,
@@ -758,34 +816,41 @@
         "weighting": "2016-17 highest, 2015-16 second, 2014-15 least; individual rather than league table performance",
         "records": {
           "2014-15": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
+            "club": "Hoffenheim",
+            "appearances": 34,
+            "starts": 34,
+            "minutes": 3060,
             "goals": null,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2014-151015.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "goalsConceded": 55,
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2014-151015.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2015-16": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
+            "club": "Hoffenheim",
+            "appearances": 33,
+            "starts": 33,
+            "minutes": 2970,
             "goals": null,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2015-161015.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "goalsConceded": 50,
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2015-161015.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2016-17": {
             "club": "TSG 1899 Hoffenheim",
             "appearances": 34,
             "starts": 34,
             "minutes": 3060,
-            "goals": null,
+            "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2016-171015.html",
-            "verification": "2016_17_BDFutbol_lineup_direct_and_season_specific_current_year"
+            "verification": "2016_17_BDFutbol_lineup_direct_and_season_specific_current_year",
+            "goalsConceded": 37
           }
         },
         "status": "current_stats_direct_prior_two_years_partial_prior_FootballArchive_DRAFT_or_pending"
@@ -798,7 +863,48 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "leagueGoalsConceded": 37,
+      "segment2Audit": {
+        "goalkeeper": [
+          {
+            "season": "2016-17",
+            "club": "TSG 1899 Hoffenheim",
+            "goals": 0,
+            "goalsConceded": 37,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2016-171015.html",
+              "https://www.historical-lineups.com/wp-content/uploads/2024/07/Bundesliga-Player-Guide-1963-2023.pdf"
+            ]
+          }
+        ],
+        "priorClubRecords": [
+          {
+            "season": "2014-15",
+            "club": "Hoffenheim",
+            "appearances": 34,
+            "starts": 34,
+            "minutes": 3060,
+            "goalsConceded": 55,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151015.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2015-16",
+            "club": "Hoffenheim",
+            "appearances": 33,
+            "starts": 33,
+            "minutes": 2970,
+            "goalsConceded": 50,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2015-161015.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-hertha-runejarstein",
@@ -822,7 +928,7 @@
       "leagueStarts": 34,
       "leagueMinutes": 3060,
       "starts": 34,
-      "goals2016": null,
+      "goals2016": 0,
       "assists2016": null,
       "tier": "B+",
       "rank": 4,
@@ -849,14 +955,17 @@
         "weighting": "2016-17 highest, 2015-16 second, 2014-15 least; individual rather than league table performance",
         "records": {
           "2014-15": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
+            "club": "Hertha Berliner",
+            "appearances": 1,
+            "starts": 1,
+            "minutes": 90,
             "goals": null,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2014-151011.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "goalsConceded": 4,
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2014-151011.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2015-16": {
             "club": "Hertha BSC",
@@ -873,10 +982,11 @@
             "appearances": 34,
             "starts": 34,
             "minutes": 3060,
-            "goals": null,
+            "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/es/t/t2016-171011.html",
-            "verification": "2016_17_BDFutbol_lineup_direct_and_season_specific_current_year"
+            "verification": "2016_17_BDFutbol_lineup_direct_and_season_specific_current_year",
+            "goalsConceded": 47
           }
         },
         "status": "current_stats_direct_prior_two_years_partial_prior_FootballArchive_DRAFT_or_pending"
@@ -889,7 +999,36 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "leagueGoalsConceded": 47,
+      "segment2Audit": {
+        "goalkeeper": [
+          {
+            "season": "2016-17",
+            "club": "Hertha BSC",
+            "goals": 0,
+            "goalsConceded": 47,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2016-171011.html",
+              "https://www.historical-lineups.com/wp-content/uploads/2024/07/Bundesliga-Player-Guide-1963-2023.pdf"
+            ]
+          }
+        ],
+        "priorClubRecords": [
+          {
+            "season": "2014-15",
+            "club": "Hertha Berliner",
+            "appearances": 1,
+            "starts": 1,
+            "minutes": 90,
+            "goalsConceded": 4,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151011.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-freiburg-alexanderschwolow",
@@ -913,7 +1052,7 @@
       "leagueStarts": 34,
       "leagueMinutes": 3060,
       "starts": 34,
-      "goals2016": null,
+      "goals2016": 0,
       "assists2016": null,
       "tier": "B+",
       "rank": 5,
@@ -964,10 +1103,11 @@
             "appearances": 34,
             "starts": 34,
             "minutes": 3060,
-            "goals": null,
+            "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2016-171007.html",
-            "verification": "2016_17_BDFutbol_lineup_direct_and_season_specific_current_year"
+            "verification": "2016_17_BDFutbol_lineup_direct_and_season_specific_current_year",
+            "goalsConceded": 60
           }
         },
         "status": "current_stats_direct_prior_two_years_partial_prior_FootballArchive_DRAFT_or_pending"
@@ -980,7 +1120,22 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "leagueGoalsConceded": 60,
+      "segment2Audit": {
+        "goalkeeper": [
+          {
+            "season": "2016-17",
+            "club": "SC Freiburg",
+            "goals": 0,
+            "goalsConceded": 60,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2016-171007.html",
+              "https://www.historical-lineups.com/wp-content/uploads/2024/07/Bundesliga-Player-Guide-1963-2023.pdf"
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-dortmund-romanburki",
@@ -1004,7 +1159,7 @@
       "leagueStarts": 27,
       "leagueMinutes": 2430,
       "starts": 27,
-      "goals2016": null,
+      "goals2016": 0,
       "assists2016": null,
       "tier": "B+",
       "rank": 6,
@@ -1031,14 +1186,17 @@
         "weighting": "2016-17 highest, 2015-16 second, 2014-15 least; individual rather than league table performance",
         "records": {
           "2014-15": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
+            "club": "Freiburg",
+            "appearances": 34,
+            "starts": 34,
+            "minutes": 3060,
             "goals": null,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2014-151007.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "goalsConceded": 47,
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2014-151007.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2015-16": {
             "club": "BV 09 Borussia Dortmund",
@@ -1048,17 +1206,21 @@
             "goals": null,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2015-161003.html",
-            "verification": "prior_FootballArchive_DRAFT_data_reference_not_independent"
+            "verification": "prior_FootballArchive_DRAFT_data_reference_not_independent",
+            "goalsConceded": 34,
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2015-161003.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2016-17": {
             "club": "BV 09 Borussia Dortmund",
             "appearances": 27,
             "starts": 27,
             "minutes": 2430,
-            "goals": null,
+            "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2016-171003.html",
-            "verification": "2016_17_BDFutbol_lineup_direct_and_season_specific_current_year"
+            "verification": "2016_17_BDFutbol_lineup_direct_and_season_specific_current_year",
+            "goalsConceded": 29
           }
         },
         "status": "current_stats_direct_prior_two_years_partial_prior_FootballArchive_DRAFT_or_pending"
@@ -1071,7 +1233,45 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "leagueGoalsConceded": 29,
+      "segment2Audit": {
+        "goalkeeper": [
+          {
+            "season": "2016-17",
+            "club": "BV 09 Borussia Dortmund",
+            "goals": 0,
+            "goalsConceded": 29,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2016-171003.html",
+              "https://www.historical-lineups.com/wp-content/uploads/2024/07/Bundesliga-Player-Guide-1963-2023.pdf"
+            ]
+          }
+        ],
+        "priorClubRecords": [
+          {
+            "season": "2014-15",
+            "club": "Freiburg",
+            "appearances": 34,
+            "starts": 34,
+            "minutes": 3060,
+            "goalsConceded": 47,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151007.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2015-16",
+            "club": "Borussia Dortmund",
+            "goalsConceded": 34,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2015-161003.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-koln-timohorn",
@@ -1095,7 +1295,7 @@
       "leagueStarts": 20,
       "leagueMinutes": 1800,
       "starts": 20,
-      "goals2016": null,
+      "goals2016": 0,
       "assists2016": null,
       "tier": "B+",
       "rank": 7,
@@ -1122,34 +1322,41 @@
         "weighting": "2016-17 highest, 2015-16 second, 2014-15 least; individual rather than league table performance",
         "records": {
           "2014-15": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
+            "club": "Köln",
+            "appearances": 33,
+            "starts": 33,
+            "minutes": 2970,
             "goals": null,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2014-151004.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "goalsConceded": 38,
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2014-151004.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2015-16": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
+            "club": "Köln",
+            "appearances": 33,
+            "starts": 33,
+            "minutes": 2970,
             "goals": null,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2015-161004.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "goalsConceded": 40,
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2015-161004.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2016-17": {
             "club": "1. FC Köln",
             "appearances": 20,
             "starts": 20,
             "minutes": 1800,
-            "goals": null,
+            "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/es/t/t2016-171004.html",
-            "verification": "2016_17_BDFutbol_lineup_direct_and_season_specific_current_year"
+            "verification": "2016_17_BDFutbol_lineup_direct_and_season_specific_current_year",
+            "goalsConceded": 24
           }
         },
         "status": "current_stats_direct_prior_two_years_partial_prior_FootballArchive_DRAFT_or_pending"
@@ -1162,7 +1369,48 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "leagueGoalsConceded": 24,
+      "segment2Audit": {
+        "goalkeeper": [
+          {
+            "season": "2016-17",
+            "club": "1. FC Köln",
+            "goals": 0,
+            "goalsConceded": 24,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2016-171004.html",
+              "https://www.historical-lineups.com/wp-content/uploads/2024/07/Bundesliga-Player-Guide-1963-2023.pdf"
+            ]
+          }
+        ],
+        "priorClubRecords": [
+          {
+            "season": "2014-15",
+            "club": "Köln",
+            "appearances": 33,
+            "starts": 33,
+            "minutes": 2970,
+            "goalsConceded": 38,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151004.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2015-16",
+            "club": "Köln",
+            "appearances": 33,
+            "starts": 33,
+            "minutes": 2970,
+            "goalsConceded": 40,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2015-161004.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-koln-thomaskessler",
@@ -1186,7 +1434,7 @@
       "leagueStarts": 13,
       "leagueMinutes": 1170,
       "starts": 13,
-      "goals2016": null,
+      "goals2016": 0,
       "assists2016": null,
       "tier": "B",
       "rank": 8,
@@ -1213,34 +1461,41 @@
         "weighting": "2016-17 highest, 2015-16 second, 2014-15 least; individual rather than league table performance",
         "records": {
           "2014-15": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
+            "club": "Köln",
+            "appearances": 1,
+            "starts": 1,
+            "minutes": 90,
             "goals": null,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2014-151004.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "goalsConceded": 2,
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2014-151004.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2015-16": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
+            "club": "Köln",
+            "appearances": 1,
+            "starts": 1,
+            "minutes": 90,
             "goals": null,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2015-161004.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "goalsConceded": 2,
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2015-161004.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2016-17": {
             "club": "1. FC Köln",
             "appearances": 13,
             "starts": 13,
             "minutes": 1170,
-            "goals": null,
+            "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/es/t/t2016-171004.html",
-            "verification": "2016_17_BDFutbol_lineup_direct_and_season_specific_current_year"
+            "verification": "2016_17_BDFutbol_lineup_direct_and_season_specific_current_year",
+            "goalsConceded": 18
           }
         },
         "status": "current_stats_direct_prior_two_years_partial_prior_FootballArchive_DRAFT_or_pending"
@@ -1253,7 +1508,48 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "leagueGoalsConceded": 18,
+      "segment2Audit": {
+        "goalkeeper": [
+          {
+            "season": "2016-17",
+            "club": "1. FC Köln",
+            "goals": 0,
+            "goalsConceded": 18,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2016-171004.html",
+              "https://www.historical-lineups.com/wp-content/uploads/2024/07/Bundesliga-Player-Guide-1963-2023.pdf"
+            ]
+          }
+        ],
+        "priorClubRecords": [
+          {
+            "season": "2014-15",
+            "club": "Köln",
+            "appearances": 1,
+            "starts": 1,
+            "minutes": 90,
+            "goalsConceded": 2,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151004.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2015-16",
+            "club": "Köln",
+            "appearances": 1,
+            "starts": 1,
+            "minutes": 90,
+            "goalsConceded": 2,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2015-161004.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-dortmund-romanweidenfeller",
@@ -1277,7 +1573,7 @@
       "leagueStarts": 7,
       "leagueMinutes": 630,
       "starts": 7,
-      "goals2016": null,
+      "goals2016": 0,
       "assists2016": null,
       "tier": "B-",
       "rank": 9,
@@ -1311,7 +1607,10 @@
             "goals": null,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2014-151003.html",
-            "verification": "prior_FootballArchive_DRAFT_data_reference_not_independent"
+            "verification": "prior_FootballArchive_DRAFT_data_reference_not_independent",
+            "goalsConceded": 32,
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2014-151003.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2015-16": {
             "club": "BV 09 Borussia Dortmund",
@@ -1321,17 +1620,21 @@
             "goals": null,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2015-161003.html",
-            "verification": "prior_FootballArchive_DRAFT_data_reference_not_independent"
+            "verification": "prior_FootballArchive_DRAFT_data_reference_not_independent",
+            "goalsConceded": 0,
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2015-161003.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2016-17": {
             "club": "BV 09 Borussia Dortmund",
             "appearances": 7,
             "starts": 7,
             "minutes": 630,
-            "goals": null,
+            "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2016-171003.html",
-            "verification": "2016_17_BDFutbol_lineup_direct_and_season_specific_current_year"
+            "verification": "2016_17_BDFutbol_lineup_direct_and_season_specific_current_year",
+            "goalsConceded": 11
           }
         },
         "status": "current_stats_direct_prior_two_years_partial_prior_FootballArchive_DRAFT_or_pending"
@@ -1344,7 +1647,42 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "leagueGoalsConceded": 11,
+      "segment2Audit": {
+        "goalkeeper": [
+          {
+            "season": "2016-17",
+            "club": "BV 09 Borussia Dortmund",
+            "goals": 0,
+            "goalsConceded": 11,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2016-171003.html",
+              "https://www.historical-lineups.com/wp-content/uploads/2024/07/Bundesliga-Player-Guide-1963-2023.pdf"
+            ]
+          }
+        ],
+        "priorClubRecords": [
+          {
+            "season": "2014-15",
+            "club": "Borussia Dortmund",
+            "goalsConceded": 32,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151003.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2015-16",
+            "club": "Borussia Dortmund",
+            "goalsConceded": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2015-161003.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-bayern-svenulreich",
@@ -1368,7 +1706,7 @@
       "leagueStarts": 5,
       "leagueMinutes": 450,
       "starts": 5,
-      "goals2016": null,
+      "goals2016": 0,
       "assists2016": null,
       "tier": "B-",
       "rank": 10,
@@ -1395,34 +1733,41 @@
         "weighting": "2016-17 highest, 2015-16 second, 2014-15 least; individual rather than league table performance",
         "records": {
           "2014-15": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
+            "club": "Stuttgart",
+            "appearances": 28,
+            "starts": 28,
+            "minutes": 2520,
             "goals": null,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2014-151002.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "goalsConceded": 44,
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2014-151002.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2015-16": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
+            "club": "Bayern München",
+            "appearances": 1,
+            "starts": 0,
+            "minutes": 39,
             "goals": null,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2015-161016.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "goalsConceded": 1,
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2015-161016.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2016-17": {
             "club": "FC Bayern München",
             "appearances": 5,
             "starts": 5,
             "minutes": 450,
-            "goals": null,
+            "goals": 0,
             "assists": null,
             "source": "https://www.bdfutbol.com/en/t/t2016-171016.html",
-            "verification": "2016_17_BDFutbol_lineup_direct_and_season_specific_current_year"
+            "verification": "2016_17_BDFutbol_lineup_direct_and_season_specific_current_year",
+            "goalsConceded": 4
           }
         },
         "status": "current_stats_direct_prior_two_years_partial_prior_FootballArchive_DRAFT_or_pending"
@@ -1435,7 +1780,48 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "leagueGoalsConceded": 4,
+      "segment2Audit": {
+        "goalkeeper": [
+          {
+            "season": "2016-17",
+            "club": "FC Bayern München",
+            "goals": 0,
+            "goalsConceded": 4,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2016-171016.html",
+              "https://www.historical-lineups.com/wp-content/uploads/2024/07/Bundesliga-Player-Guide-1963-2023.pdf"
+            ]
+          }
+        ],
+        "priorClubRecords": [
+          {
+            "season": "2014-15",
+            "club": "Stuttgart",
+            "appearances": 28,
+            "starts": 28,
+            "minutes": 2520,
+            "goalsConceded": 44,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151002.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2015-16",
+            "club": "Bayern München",
+            "appearances": 1,
+            "starts": 0,
+            "minutes": 39,
+            "goalsConceded": 1,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2015-161016.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-hoffenheim-niklassule",
@@ -1679,14 +2065,16 @@
         "weighting": "2016-17 highest, 2015-16 second, 2014-15 least; individual rather than league table performance",
         "records": {
           "2014-15": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Bayern München",
+            "appearances": 1,
+            "starts": 1,
+            "minutes": 62,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2014-151016.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2014-151016.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2015-16": {
             "club": "FC Bayern München",
@@ -1719,7 +2107,23 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2014-15",
+            "club": "Bayern München",
+            "appearances": 1,
+            "starts": 1,
+            "minutes": 62,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151016.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-dortmund-sokratispapastathopoulos",
@@ -1952,24 +2356,28 @@
         "weighting": "2016-17 highest, 2015-16 second, 2014-15 least; individual rather than league table performance",
         "records": {
           "2014-15": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Köln",
+            "appearances": 32,
+            "starts": 30,
+            "minutes": 2689,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2014-151004.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2014-151004.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2015-16": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Köln",
+            "appearances": 23,
+            "starts": 17,
+            "minutes": 1477,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2015-161004.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2015-161004.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2016-17": {
             "club": "TSG 1899 Hoffenheim",
@@ -1992,7 +2400,35 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2014-15",
+            "club": "Köln",
+            "appearances": 32,
+            "starts": 30,
+            "minutes": 2689,
+            "goals": 1,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151004.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2015-16",
+            "club": "Köln",
+            "appearances": 23,
+            "starts": 17,
+            "minutes": 1477,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2015-161004.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-koln-dominiqueheintz",
@@ -2053,14 +2489,16 @@
             "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
           },
           "2015-16": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Köln",
+            "appearances": 33,
+            "starts": 32,
+            "minutes": 2873,
+            "goals": 2,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2015-161004.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2015-161004.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2016-17": {
             "club": "1. FC Köln",
@@ -2083,7 +2521,23 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2015-16",
+            "club": "Köln",
+            "appearances": 33,
+            "starts": 32,
+            "minutes": 2873,
+            "goals": 2,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2015-161004.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-koln-frederiksrensen",
@@ -2144,14 +2598,16 @@
             "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
           },
           "2015-16": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Köln",
+            "appearances": 22,
+            "starts": 19,
+            "minutes": 1676,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2015-161004.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2015-161004.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2016-17": {
             "club": "1. FC Köln",
@@ -2174,7 +2630,23 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2015-16",
+            "club": "Köln",
+            "appearances": 22,
+            "starts": 19,
+            "minutes": 1676,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2015-161004.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-hertha-niklasstark",
@@ -2407,14 +2879,16 @@
         "weighting": "2016-17 highest, 2015-16 second, 2014-15 least; individual rather than league table performance",
         "records": {
           "2014-15": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hertha Berliner",
+            "appearances": 16,
+            "starts": 15,
+            "minutes": 1356,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2014-151011.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2014-151011.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2015-16": {
             "club": "Hertha BSC",
@@ -2447,7 +2921,23 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2014-15",
+            "club": "Hertha Berliner",
+            "appearances": 16,
+            "starts": 15,
+            "minutes": 1356,
+            "goals": 1,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151011.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-hertha-johnbrooks",
@@ -2498,14 +2988,16 @@
         "weighting": "2016-17 highest, 2015-16 second, 2014-15 least; individual rather than league table performance",
         "records": {
           "2014-15": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hertha Berliner",
+            "appearances": 27,
+            "starts": 24,
+            "minutes": 2186,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2014-151011.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2014-151011.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2015-16": {
             "club": "Hertha BSC",
@@ -2538,7 +3030,23 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2014-15",
+            "club": "Hertha Berliner",
+            "appearances": 27,
+            "starts": 24,
+            "minutes": 2186,
+            "goals": 1,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151011.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-hoffenheim-benjaminhubner",
@@ -2599,14 +3107,16 @@
             "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
           },
           "2015-16": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Ingolstadt",
+            "appearances": 30,
+            "starts": 30,
+            "minutes": 2630,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2015-161044.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2015-161044.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2016-17": {
             "club": "TSG 1899 Hoffenheim",
@@ -2629,7 +3139,23 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2015-16",
+            "club": "Ingolstadt",
+            "appearances": 30,
+            "starts": 30,
+            "minutes": 2630,
+            "goals": 1,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2015-161044.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-leipzig-marvincompper",
@@ -3044,24 +3570,28 @@
         "weighting": "2016-17 highest, 2015-16 second, 2014-15 least; individual rather than league table performance",
         "records": {
           "2014-15": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Köln",
+            "appearances": 15,
+            "starts": 11,
+            "minutes": 1033,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2014-151004.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2014-151004.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2015-16": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Köln",
+            "appearances": 12,
+            "starts": 11,
+            "minutes": 991,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2015-161004.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2015-161004.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2016-17": {
             "club": "1. FC Köln",
@@ -3084,7 +3614,35 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2014-15",
+            "club": "Köln",
+            "appearances": 15,
+            "starts": 11,
+            "minutes": 1033,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151004.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2015-16",
+            "club": "Köln",
+            "appearances": 12,
+            "starts": 11,
+            "minutes": 991,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2015-161004.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-bayern-jeromeboateng",
@@ -3226,14 +3784,16 @@
         "weighting": "2016-17 highest, 2015-16 second, 2014-15 least; individual rather than league table performance",
         "records": {
           "2014-15": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Freiburg",
+            "appearances": 13,
+            "starts": 10,
+            "minutes": 917,
+            "goals": 2,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2014-151007.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2014-151007.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2015-16": {
             "club": null,
@@ -3266,7 +3826,23 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2014-15",
+            "club": "Freiburg",
+            "appearances": 13,
+            "starts": 10,
+            "minutes": 917,
+            "goals": 2,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151007.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-koln-nevensubotic",
@@ -3408,24 +3984,28 @@
         "weighting": "2016-17 highest, 2015-16 second, 2014-15 least; individual rather than league table performance",
         "records": {
           "2014-15": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hoffenheim",
+            "appearances": 24,
+            "starts": 24,
+            "minutes": 2071,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2014-151015.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2014-151015.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2015-16": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hoffenheim",
+            "appearances": 21,
+            "starts": 18,
+            "minutes": 1598,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2015-161015.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2015-161015.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2016-17": {
             "club": "TSG 1899 Hoffenheim",
@@ -3448,7 +4028,35 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2014-15",
+            "club": "Hoffenheim",
+            "appearances": 24,
+            "starts": 24,
+            "minutes": 2071,
+            "goals": 1,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151015.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2015-16",
+            "club": "Hoffenheim",
+            "appearances": 21,
+            "starts": 18,
+            "minutes": 1598,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2015-161015.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-leipzig-dayotupamecano",
@@ -3863,14 +4471,16 @@
         "weighting": "2016-17 highest, 2015-16 second, 2014-15 least; individual rather than league table performance",
         "records": {
           "2014-15": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hertha Berliner",
+            "appearances": 15,
+            "starts": 14,
+            "minutes": 1283,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2014-151011.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2014-151011.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2015-16": {
             "club": "Hertha BSC",
@@ -3903,7 +4513,23 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2014-15",
+            "club": "Hertha Berliner",
+            "appearances": 15,
+            "starts": 14,
+            "minutes": 1283,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151011.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-freiburg-christiangunter",
@@ -3954,14 +4580,16 @@
         "weighting": "2016-17 highest, 2015-16 second, 2014-15 least; individual rather than league table performance",
         "records": {
           "2014-15": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Freiburg",
+            "appearances": 34,
+            "starts": 32,
+            "minutes": 2885,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2014-151007.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2014-151007.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2015-16": {
             "club": null,
@@ -3994,7 +4622,23 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2014-15",
+            "club": "Freiburg",
+            "appearances": 34,
+            "starts": 32,
+            "minutes": 2885,
+            "goals": 1,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151007.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-leipzig-marcelhalstenberg",
@@ -4227,24 +4871,28 @@
         "weighting": "2016-17 highest, 2015-16 second, 2014-15 least; individual rather than league table performance",
         "records": {
           "2014-15": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hoffenheim",
+            "appearances": 17,
+            "starts": 5,
+            "minutes": 580,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2014-151015.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2014-151015.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2015-16": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hoffenheim",
+            "appearances": 12,
+            "starts": 6,
+            "minutes": 575,
+            "goals": 2,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2015-161015.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2015-161015.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2016-17": {
             "club": "TSG 1899 Hoffenheim",
@@ -4267,7 +4915,35 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2014-15",
+            "club": "Hoffenheim",
+            "appearances": 17,
+            "starts": 5,
+            "minutes": 580,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151015.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2015-16",
+            "club": "Hoffenheim",
+            "appearances": 12,
+            "starts": 6,
+            "minutes": 575,
+            "goals": 2,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2015-161015.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-koln-konstantinrausch",
@@ -4318,24 +4994,28 @@
         "weighting": "2016-17 highest, 2015-16 second, 2014-15 least; individual rather than league table performance",
         "records": {
           "2014-15": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Stuttgart",
+            "appearances": 4,
+            "starts": 0,
+            "minutes": 72,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2014-151002.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2014-151002.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2015-16": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Darmstadt",
+            "appearances": 31,
+            "starts": 27,
+            "minutes": 2128,
+            "goals": 2,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2015-161045.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2015-161045.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2016-17": {
             "club": "1. FC Köln",
@@ -4358,7 +5038,35 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2014-15",
+            "club": "Stuttgart",
+            "appearances": 4,
+            "starts": 0,
+            "minutes": 72,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151002.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2015-16",
+            "club": "Darmstadt",
+            "appearances": 31,
+            "starts": 27,
+            "minutes": 2128,
+            "goals": 2,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2015-161045.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-bayern-juanbernat",
@@ -4510,14 +5218,16 @@
             "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
           },
           "2015-16": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hertha Berliner",
+            "appearances": 3,
+            "starts": 2,
+            "minutes": 181,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2015-161011.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2015-161011.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2016-17": {
             "club": "Hertha BSC",
@@ -4540,7 +5250,23 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2015-16",
+            "club": "Hertha Berliner",
+            "appearances": 3,
+            "starts": 2,
+            "minutes": 181,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2015-161011.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-bayern-philipplahm",
@@ -4773,14 +5499,16 @@
         "weighting": "2016-17 highest, 2015-16 second, 2014-15 least; individual rather than league table performance",
         "records": {
           "2014-15": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hertha Berliner",
+            "appearances": 30,
+            "starts": 30,
+            "minutes": 2652,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2014-151011.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2014-151011.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2015-16": {
             "club": "Hertha BSC",
@@ -4813,7 +5541,23 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2014-15",
+            "club": "Hertha Berliner",
+            "appearances": 30,
+            "starts": 30,
+            "minutes": 2652,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151011.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-hoffenheim-pavelkaderabek",
@@ -4874,14 +5618,16 @@
             "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
           },
           "2015-16": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hoffenheim",
+            "appearances": 28,
+            "starts": 25,
+            "minutes": 2229,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2015-161015.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2015-161015.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2016-17": {
             "club": "TSG 1899 Hoffenheim",
@@ -4904,7 +5650,23 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2015-16",
+            "club": "Hoffenheim",
+            "appearances": 28,
+            "starts": 25,
+            "minutes": 2229,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2015-161015.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-leipzig-bernardo",
@@ -5137,24 +5899,28 @@
         "weighting": "2016-17 highest, 2015-16 second, 2014-15 least; individual rather than league table performance",
         "records": {
           "2014-15": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hoffenheim",
+            "appearances": 6,
+            "starts": 4,
+            "minutes": 380,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2014-151015.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2014-151015.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2015-16": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hoffenheim",
+            "appearances": 18,
+            "starts": 16,
+            "minutes": 1487,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2015-161015.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2015-161015.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2016-17": {
             "club": "TSG 1899 Hoffenheim",
@@ -5177,7 +5943,35 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2014-15",
+            "club": "Hoffenheim",
+            "appearances": 6,
+            "starts": 4,
+            "minutes": 380,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151015.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2015-16",
+            "club": "Hoffenheim",
+            "appearances": 18,
+            "starts": 16,
+            "minutes": 1487,
+            "goals": 1,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2015-161015.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-freiburg-pascalstenzel",
@@ -5592,24 +6386,28 @@
         "weighting": "2016-17 highest, 2015-16 second, 2014-15 least; individual rather than league table performance",
         "records": {
           "2014-15": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Köln",
+            "appearances": 27,
+            "starts": 24,
+            "minutes": 2110,
+            "goals": 2,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2014-151004.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2014-151004.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2015-16": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Köln",
+            "appearances": 19,
+            "starts": 13,
+            "minutes": 1059,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2015-161004.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2015-161004.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2016-17": {
             "club": "1. FC Köln",
@@ -5632,7 +6430,35 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2014-15",
+            "club": "Köln",
+            "appearances": 27,
+            "starts": 24,
+            "minutes": 2110,
+            "goals": 2,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151004.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2015-16",
+            "club": "Köln",
+            "appearances": 19,
+            "starts": 13,
+            "minutes": 1059,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2015-161004.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-freiburg-aleksandarignjovski",
@@ -5683,24 +6509,28 @@
         "weighting": "2016-17 highest, 2015-16 second, 2014-15 least; individual rather than league table performance",
         "records": {
           "2014-15": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Eintracht Frankfurt",
+            "appearances": 20,
+            "starts": 14,
+            "minutes": 1210,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2014-151010.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2014-151010.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2015-16": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Eintracht Frankfurt",
+            "appearances": 18,
+            "starts": 13,
+            "minutes": 1219,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2015-161010.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2015-161010.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2016-17": {
             "club": "SC Freiburg",
@@ -5723,7 +6553,35 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2014-15",
+            "club": "Eintracht Frankfurt",
+            "appearances": 20,
+            "starts": 14,
+            "minutes": 1210,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151010.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2015-16",
+            "club": "Eintracht Frankfurt",
+            "appearances": 18,
+            "starts": 13,
+            "minutes": 1219,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2015-161010.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-leipzig-bennoschmitz",
@@ -5875,14 +6733,16 @@
             "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
           },
           "2015-16": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Köln",
+            "appearances": 1,
+            "starts": 0,
+            "minutes": 14,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2015-161004.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2015-161004.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2016-17": {
             "club": "1. FC Köln",
@@ -5905,7 +6765,23 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2015-16",
+            "club": "Köln",
+            "appearances": 1,
+            "starts": 0,
+            "minutes": 14,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2015-161004.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-hoffenheim-sebastianrudy",
@@ -5957,24 +6833,28 @@
         "weighting": "2016-17 highest, 2015-16 second, 2014-15 least; individual rather than league table performance",
         "records": {
           "2014-15": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hoffenheim",
+            "appearances": 29,
+            "starts": 25,
+            "minutes": 2243,
+            "goals": 4,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2014-151015.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2014-151015.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2015-16": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hoffenheim",
+            "appearances": 24,
+            "starts": 22,
+            "minutes": 1801,
+            "goals": 2,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2015-161015.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2015-161015.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2016-17": {
             "club": "TSG 1899 Hoffenheim",
@@ -5997,7 +6877,35 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2014-15",
+            "club": "Hoffenheim",
+            "appearances": 29,
+            "starts": 25,
+            "minutes": 2243,
+            "goals": 4,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151015.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2015-16",
+            "club": "Hoffenheim",
+            "appearances": 24,
+            "starts": 22,
+            "minutes": 1801,
+            "goals": 2,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2015-161015.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-dortmund-julianweigl",
@@ -6096,7 +7004,18 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "reviewPending": [
+          {
+            "section": "Best XI와 동일 포지션 순위 불일치 (2행)",
+            "report": [
+              "제바스티안 루디 1위 (bundesliga-2016-hoffenheim-sebastianrudy)"
+            ],
+            "sources": []
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-koln-jonashector",
@@ -6147,24 +7066,28 @@
         "weighting": "2016-17 highest, 2015-16 second, 2014-15 least; individual rather than league table performance",
         "records": {
           "2014-15": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Köln",
+            "appearances": 33,
+            "starts": 33,
+            "minutes": 2970,
+            "goals": 2,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2014-151004.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2014-151004.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2015-16": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Köln",
+            "appearances": 32,
+            "starts": 32,
+            "minutes": 2859,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2015-161004.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2015-161004.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2016-17": {
             "club": "1. FC Köln",
@@ -6187,7 +7110,35 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2014-15",
+            "club": "Köln",
+            "appearances": 33,
+            "starts": 33,
+            "minutes": 2970,
+            "goals": 2,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151004.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2015-16",
+            "club": "Köln",
+            "appearances": 32,
+            "starts": 32,
+            "minutes": 2859,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2015-161004.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-bayern-xabialonso",
@@ -6511,14 +7462,16 @@
         "weighting": "2016-17 highest, 2015-16 second, 2014-15 least; individual rather than league table performance",
         "records": {
           "2014-15": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Freiburg",
+            "appearances": 20,
+            "starts": 15,
+            "minutes": 1417,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2014-151007.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2014-151007.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2015-16": {
             "club": null,
@@ -6551,7 +7504,23 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2014-15",
+            "club": "Freiburg",
+            "appearances": 20,
+            "starts": 15,
+            "minutes": 1417,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151007.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-koln-marcohoger",
@@ -6612,14 +7581,16 @@
             "verification": "prior_FootballArchive_DRAFT_data_reference_not_independent"
           },
           "2015-16": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Schalke 04",
+            "appearances": 5,
+            "starts": 3,
+            "minutes": 188,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2015-161006.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2015-161006.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2016-17": {
             "club": "1. FC Köln",
@@ -6642,7 +7613,23 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2015-16",
+            "club": "Schalke 04",
+            "appearances": 5,
+            "starts": 3,
+            "minutes": 188,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2015-161006.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-koln-matthiaslehmann",
@@ -6693,24 +7680,28 @@
         "weighting": "2016-17 highest, 2015-16 second, 2014-15 least; individual rather than league table performance",
         "records": {
           "2014-15": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Köln",
+            "appearances": 32,
+            "starts": 32,
+            "minutes": 2846,
+            "goals": 5,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2014-151004.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2014-151004.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2015-16": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Köln",
+            "appearances": 32,
+            "starts": 31,
+            "minutes": 2774,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2015-161004.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2015-161004.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2016-17": {
             "club": "1. FC Köln",
@@ -6733,7 +7724,35 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2014-15",
+            "club": "Köln",
+            "appearances": 32,
+            "starts": 32,
+            "minutes": 2846,
+            "goals": 5,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151004.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2015-16",
+            "club": "Köln",
+            "appearances": 32,
+            "starts": 31,
+            "minutes": 2774,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2015-161004.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-hertha-fabianlustenberger",
@@ -6784,14 +7803,16 @@
         "weighting": "2016-17 highest, 2015-16 second, 2014-15 least; individual rather than league table performance",
         "records": {
           "2014-15": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hertha Berliner",
+            "appearances": 27,
+            "starts": 26,
+            "minutes": 2189,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2014-151011.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2014-151011.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2015-16": {
             "club": "Hertha BSC",
@@ -6824,7 +7845,23 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2014-15",
+            "club": "Hertha Berliner",
+            "appearances": 27,
+            "starts": 26,
+            "minutes": 2189,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151011.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-freiburg-amirabrashi",
@@ -6966,14 +8003,16 @@
         "weighting": "2016-17 highest, 2015-16 second, 2014-15 least; individual rather than league table performance",
         "records": {
           "2014-15": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Freiburg",
+            "appearances": 21,
+            "starts": 18,
+            "minutes": 1548,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2014-151007.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2014-151007.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2015-16": {
             "club": null,
@@ -7006,7 +8045,23 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2014-15",
+            "club": "Freiburg",
+            "appearances": 21,
+            "starts": 18,
+            "minutes": 1548,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151007.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-hoffenheim-eugenpolanski",
@@ -7057,24 +8112,28 @@
         "weighting": "2016-17 highest, 2015-16 second, 2014-15 least; individual rather than league table performance",
         "records": {
           "2014-15": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hoffenheim",
+            "appearances": 30,
+            "starts": 29,
+            "minutes": 2541,
+            "goals": 5,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2014-151015.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2014-151015.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2015-16": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hoffenheim",
+            "appearances": 27,
+            "starts": 20,
+            "minutes": 1756,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2015-161015.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2015-161015.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2016-17": {
             "club": "TSG 1899 Hoffenheim",
@@ -7097,7 +8156,35 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2014-15",
+            "club": "Hoffenheim",
+            "appearances": 30,
+            "starts": 29,
+            "minutes": 2541,
+            "goals": 5,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151015.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2015-16",
+            "club": "Hoffenheim",
+            "appearances": 27,
+            "starts": 20,
+            "minutes": 1756,
+            "goals": 1,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2015-161015.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-leipzig-nabykeita",
@@ -7251,14 +8338,16 @@
         "weighting": "2016-17 highest, 2015-16 second, 2014-15 least; individual rather than league table performance",
         "records": {
           "2014-15": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Bayern München",
+            "appearances": 7,
+            "starts": 2,
+            "minutes": 282,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2014-151016.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2014-151016.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2015-16": {
             "club": "FC Bayern München",
@@ -7291,7 +8380,23 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2014-15",
+            "club": "Bayern München",
+            "appearances": 7,
+            "starts": 2,
+            "minutes": 282,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151016.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-bayern-arturovidal",
@@ -7617,14 +8722,16 @@
         "weighting": "2016-17 highest, 2015-16 second, 2014-15 least; individual rather than league table performance",
         "records": {
           "2014-15": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Freiburg",
+            "appearances": 25,
+            "starts": 14,
+            "minutes": 1194,
+            "goals": 4,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2014-151007.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2014-151007.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2015-16": {
             "club": null,
@@ -7657,7 +8764,23 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2014-15",
+            "club": "Freiburg",
+            "appearances": 25,
+            "starts": 14,
+            "minutes": 1194,
+            "goals": 4,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151007.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-hertha-perciljanskjelbred",
@@ -7708,14 +8831,16 @@
         "weighting": "2016-17 highest, 2015-16 second, 2014-15 least; individual rather than league table performance",
         "records": {
           "2014-15": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hertha Berliner",
+            "appearances": 26,
+            "starts": 26,
+            "minutes": 2239,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2014-151011.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2014-151011.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2015-16": {
             "club": "Hertha BSC",
@@ -7748,7 +8873,23 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2014-15",
+            "club": "Hertha Berliner",
+            "appearances": 26,
+            "starts": 26,
+            "minutes": 2239,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151011.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-hertha-vladimirdarida",
@@ -7799,14 +8940,16 @@
         "weighting": "2016-17 highest, 2015-16 second, 2014-15 least; individual rather than league table performance",
         "records": {
           "2014-15": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Freiburg",
+            "appearances": 31,
+            "starts": 27,
+            "minutes": 2420,
+            "goals": 6,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2014-151007.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2014-151007.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2015-16": {
             "club": "Hertha BSC",
@@ -7839,7 +8982,23 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2014-15",
+            "club": "Freiburg",
+            "appearances": 31,
+            "starts": 27,
+            "minutes": 2420,
+            "goals": 6,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151007.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-freiburg-janikhaberer",
@@ -8072,24 +9231,28 @@
         "weighting": "2016-17 highest, 2015-16 second, 2014-15 least; individual rather than league table performance",
         "records": {
           "2014-15": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hoffenheim",
+            "appearances": 7,
+            "starts": 4,
+            "minutes": 328,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2014-151015.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2014-151015.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2015-16": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hoffenheim",
+            "appearances": 25,
+            "starts": 16,
+            "minutes": 1461,
+            "goals": 4,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2015-161015.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2015-161015.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2016-17": {
             "club": "TSG 1899 Hoffenheim",
@@ -8112,7 +9275,35 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2014-15",
+            "club": "Hoffenheim",
+            "appearances": 7,
+            "starts": 4,
+            "minutes": 328,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151015.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2015-16",
+            "club": "Hoffenheim",
+            "appearances": 25,
+            "starts": 16,
+            "minutes": 1461,
+            "goals": 4,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2015-161015.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-koln-milosjojic",
@@ -8163,24 +9354,28 @@
         "weighting": "2016-17 highest, 2015-16 second, 2014-15 least; individual rather than league table performance",
         "records": {
           "2014-15": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Borussia Dortmund",
+            "appearances": 10,
+            "starts": 5,
+            "minutes": 512,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2014-151003.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2014-151003.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2015-16": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Köln",
+            "appearances": 15,
+            "starts": 2,
+            "minutes": 473,
+            "goals": 2,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2015-161004.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2015-161004.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2016-17": {
             "club": "1. FC Köln",
@@ -8203,7 +9398,35 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2014-15",
+            "club": "Borussia Dortmund",
+            "appearances": 10,
+            "starts": 5,
+            "minutes": 512,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151003.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2015-16",
+            "club": "Köln",
+            "appearances": 15,
+            "starts": 2,
+            "minutes": 473,
+            "goals": 2,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2015-161004.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-hoffenheim-lukasrupp",
@@ -8254,24 +9477,28 @@
         "weighting": "2016-17 highest, 2015-16 second, 2014-15 least; individual rather than league table performance",
         "records": {
           "2014-15": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Paderborn",
+            "appearances": 31,
+            "starts": 21,
+            "minutes": 2008,
+            "goals": 4,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2014-151040.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2014-151040.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2015-16": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Stuttgart",
+            "appearances": 29,
+            "starts": 24,
+            "minutes": 2104,
+            "goals": 5,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2015-161002.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2015-161002.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2016-17": {
             "club": "TSG 1899 Hoffenheim",
@@ -8294,7 +9521,35 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2014-15",
+            "club": "Paderborn",
+            "appearances": 31,
+            "starts": 21,
+            "minutes": 2008,
+            "goals": 4,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151040.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2015-16",
+            "club": "Stuttgart",
+            "appearances": 29,
+            "starts": 24,
+            "minutes": 2104,
+            "goals": 5,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2015-161002.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-leipzig-dominikkaiser",
@@ -8749,7 +10004,23 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "reviewPending": [
+          {
+            "section": "4선발 이하 후보 자격 재검토 (4행)",
+            "report": [
+              "CM",
+              "backup",
+              "3",
+              "13"
+            ],
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2016-171004.html"
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-bayern-thomasmuller",
@@ -8893,24 +10164,28 @@
         "weighting": "2016-17 highest, 2015-16 second, 2014-15 least; individual rather than league table performance",
         "records": {
           "2014-15": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Köln",
+            "appearances": 28,
+            "starts": 16,
+            "minutes": 1520,
+            "goals": 3,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2014-151004.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2014-151004.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2015-16": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Köln",
+            "appearances": 25,
+            "starts": 14,
+            "minutes": 1344,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2015-161004.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2015-161004.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2016-17": {
             "club": "1. FC Köln",
@@ -8933,7 +10208,35 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2014-15",
+            "club": "Köln",
+            "appearances": 28,
+            "starts": 16,
+            "minutes": 1520,
+            "goals": 3,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151004.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2015-16",
+            "club": "Köln",
+            "appearances": 25,
+            "starts": 14,
+            "minutes": 1344,
+            "goals": 1,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2015-161004.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-dortmund-shinjikagawa",
@@ -8958,7 +10261,7 @@
       "leagueMinutes": 1258,
       "starts": 13,
       "goals2016": 1,
-      "assists2016": null,
+      "assists2016": 6,
       "tier": "B+",
       "rank": 3,
       "rankStatus": "provisional",
@@ -9009,7 +10312,7 @@
             "starts": 13,
             "minutes": 1258,
             "goals": 1,
-            "assists": null,
+            "assists": 6,
             "source": "https://www.bdfutbol.com/en/t/t2016-171003.html",
             "verification": "2016_17_BDFutbol_lineup_direct_and_season_specific_current_year"
           }
@@ -9024,7 +10327,20 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "assists": [
+          {
+            "season": "2016-17",
+            "club": "BV 09 Borussia Dortmund",
+            "value": 6,
+            "sources": [
+              "https://www.fussballtransfers.com/deutschland/bundesliga/2016-2017/vorlagengeber"
+            ],
+            "scope": "provider-specific league assists"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-hertha-valentinstocker",
@@ -9075,14 +10391,16 @@
         "weighting": "2016-17 highest, 2015-16 second, 2014-15 least; individual rather than league table performance",
         "records": {
           "2014-15": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hertha Berliner",
+            "appearances": 26,
+            "starts": 22,
+            "minutes": 1864,
+            "goals": 3,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2014-151011.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2014-151011.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2015-16": {
             "club": "Hertha BSC",
@@ -9115,7 +10433,23 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2014-15",
+            "club": "Hertha Berliner",
+            "appearances": 26,
+            "starts": 22,
+            "minutes": 1864,
+            "goals": 3,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151011.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-dortmund-mariogotze",
@@ -9634,14 +10968,16 @@
         "weighting": "2016-17 highest, 2015-16 second, 2014-15 least; individual rather than league table performance",
         "records": {
           "2014-15": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hertha Berliner",
+            "appearances": 27,
+            "starts": 21,
+            "minutes": 1860,
+            "goals": 6,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2014-151011.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2014-151011.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2015-16": {
             "club": "Hertha BSC",
@@ -9674,7 +11010,23 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2014-15",
+            "club": "Hertha Berliner",
+            "appearances": 27,
+            "starts": 21,
+            "minutes": 1860,
+            "goals": 6,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151011.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-dortmund-christianpulisic",
@@ -9882,7 +11234,7 @@
       "leagueMinutes": 975,
       "starts": 12,
       "goals2016": 3,
-      "assists2016": null,
+      "assists2016": 5,
       "tier": "B+",
       "rank": 8,
       "rankStatus": "provisional",
@@ -9908,24 +11260,28 @@
         "weighting": "2016-17 highest, 2015-16 second, 2014-15 least; individual rather than league table performance",
         "records": {
           "2014-15": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hannover 96",
+            "appearances": 26,
+            "starts": 15,
+            "minutes": 1376,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2014-151012.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2014-151012.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2015-16": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Köln",
+            "appearances": 29,
+            "starts": 27,
+            "minutes": 2218,
+            "goals": 3,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2015-161004.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2015-161004.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2016-17": {
             "club": "1. FC Köln",
@@ -9933,7 +11289,7 @@
             "starts": 12,
             "minutes": 975,
             "goals": 3,
-            "assists": null,
+            "assists": 5,
             "source": "https://www.bdfutbol.com/es/t/t2016-171004.html",
             "verification": "2016_17_BDFutbol_lineup_direct_and_season_specific_current_year"
           }
@@ -9948,7 +11304,46 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "assists": [
+          {
+            "season": "2016-17",
+            "club": "1. FC Köln",
+            "value": 5,
+            "sources": [
+              "https://www.fussballtransfers.com/deutschland/bundesliga/2016-2017/vorlagengeber"
+            ],
+            "scope": "provider-specific league assists"
+          }
+        ],
+        "priorClubRecords": [
+          {
+            "season": "2014-15",
+            "club": "Hannover 96",
+            "appearances": 26,
+            "starts": 15,
+            "minutes": 1376,
+            "goals": 1,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151012.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2015-16",
+            "club": "Köln",
+            "appearances": 29,
+            "starts": 27,
+            "minutes": 2218,
+            "goals": 3,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2015-161004.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-bayern-arjenrobben",
@@ -10142,7 +11537,18 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "reviewPending": [
+          {
+            "section": "Best XI와 동일 포지션 순위 불일치 (2행)",
+            "report": [
+              "아르연 로번 1위 (bundesliga-2016-bayern-arjenrobben)"
+            ],
+            "sources": []
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-leipzig-marcelsabitzer",
@@ -10284,14 +11690,16 @@
         "weighting": "2016-17 highest, 2015-16 second, 2014-15 least; individual rather than league table performance",
         "records": {
           "2014-15": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hertha Berliner",
+            "appearances": 21,
+            "starts": 14,
+            "minutes": 1381,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2014-151011.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2014-151011.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2015-16": {
             "club": "Hertha BSC",
@@ -10324,7 +11732,23 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2014-15",
+            "club": "Hertha Berliner",
+            "appearances": 21,
+            "starts": 14,
+            "minutes": 1381,
+            "goals": 1,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151011.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-koln-marcelrisse",
@@ -10375,24 +11799,28 @@
         "weighting": "2016-17 highest, 2015-16 second, 2014-15 least; individual rather than league table performance",
         "records": {
           "2014-15": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Köln",
+            "appearances": 29,
+            "starts": 26,
+            "minutes": 2268,
+            "goals": 5,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2014-151004.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2014-151004.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2015-16": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Köln",
+            "appearances": 33,
+            "starts": 33,
+            "minutes": 2963,
+            "goals": 3,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2015-161004.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2015-161004.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2016-17": {
             "club": "1. FC Köln",
@@ -10415,7 +11843,48 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "reviewPending": [
+          {
+            "section": "시즌 배정과 일반 프로필 위치 차이 (1행)",
+            "report": [
+              "RW",
+              "RB",
+              "13"
+            ],
+            "sources": [
+              "https://www.bdfutbol.com/en/j/j92878.html"
+            ]
+          }
+        ],
+        "priorClubRecords": [
+          {
+            "season": "2014-15",
+            "club": "Köln",
+            "appearances": 29,
+            "starts": 26,
+            "minutes": 2268,
+            "goals": 5,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151004.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2015-16",
+            "club": "Köln",
+            "appearances": 33,
+            "starts": 33,
+            "minutes": 2963,
+            "goals": 3,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2015-161004.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-bayern-kingsleycoman",
@@ -10567,14 +12036,16 @@
             "verification": "prior_FootballArchive_DRAFT_data_reference_not_independent"
           },
           "2015-16": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Augsburg",
+            "appearances": 29,
+            "starts": 22,
+            "minutes": 1809,
+            "goals": 3,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2015-161029.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2015-161029.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2016-17": {
             "club": "Hertha BSC",
@@ -10597,7 +12068,23 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2015-16",
+            "club": "Augsburg",
+            "appearances": 29,
+            "starts": 22,
+            "minutes": 1809,
+            "goals": 3,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2015-161029.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-koln-christianclemens",
@@ -10688,7 +12175,35 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2014-15",
+            "club": "Schalke 04",
+            "appearances": 8,
+            "starts": 1,
+            "minutes": 271,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151006.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2014-15",
+            "club": "Mainz 05",
+            "appearances": 9,
+            "starts": 6,
+            "minutes": 412,
+            "goals": 1,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151013.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-freiburg-onurbulut",
@@ -10840,14 +12355,16 @@
             "verification": "prior_FootballArchive_DRAFT_data_reference_not_independent"
           },
           "2015-16": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Wolfsburg",
+            "appearances": 29,
+            "starts": 21,
+            "minutes": 1904,
+            "goals": 9,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2015-161001.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2015-161001.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2016-17": {
             "club": "BV 09 Borussia Dortmund",
@@ -10870,7 +12387,23 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2015-16",
+            "club": "Wolfsburg",
+            "appearances": 29,
+            "starts": 21,
+            "minutes": 1904,
+            "goals": 9,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2015-161001.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-leipzig-oliverburke",
@@ -11199,24 +12732,28 @@
           "2014-15": {
             "club": "TSG 1899 Hoffenheim",
             "appearances": 26,
-            "starts": null,
-            "minutes": null,
+            "starts": 16,
+            "minutes": 1299,
             "goals": 7,
             "assists": null,
             "source": "https://datencenter.dfb.de/en/data-center/people/anthony-modeste/player",
             "verification": "DFB_official_2014_15_Bundesliga_games_goals_only",
-            "league": "Bundesliga"
+            "league": "Bundesliga",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2014-151015.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2015-16": {
             "club": "1. FC Köln",
             "appearances": 34,
-            "starts": null,
-            "minutes": null,
+            "starts": 33,
+            "minutes": 2876,
             "goals": 15,
             "assists": null,
             "source": "https://datencenter.dfb.de/en/data-center/people/anthony-modeste/player",
             "verification": "DFB_official_2015_16_Bundesliga_games_goals_only",
-            "league": "Bundesliga"
+            "league": "Bundesliga",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2015-161004.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2016-17": {
             "club": "1. FC Köln",
@@ -11246,7 +12783,31 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2014-15",
+            "club": "Hoffenheim",
+            "starts": 16,
+            "minutes": 1299,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151015.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2015-16",
+            "club": "Köln",
+            "starts": 33,
+            "minutes": 2876,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2015-161004.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-leipzig-timowerner",
@@ -11301,24 +12862,28 @@
           "2014-15": {
             "club": "VfB Stuttgart",
             "appearances": 32,
-            "starts": null,
-            "minutes": null,
+            "starts": 16,
+            "minutes": 1626,
             "goals": 3,
             "assists": null,
             "source": "https://datencenter.dfb.de/personen/263930/spieler",
             "verification": "DFB_official_2014_15_Bundesliga_games_goals_only",
-            "league": "Bundesliga"
+            "league": "Bundesliga",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2014-151002.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2015-16": {
             "club": "VfB Stuttgart",
             "appearances": 33,
-            "starts": null,
-            "minutes": null,
+            "starts": 26,
+            "minutes": 2197,
             "goals": 6,
             "assists": null,
             "source": "https://datencenter.dfb.de/personen/263930/spieler",
             "verification": "DFB_official_2015_16_Bundesliga_games_goals_only",
-            "league": "Bundesliga"
+            "league": "Bundesliga",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2015-161002.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2016-17": {
             "club": "RB Leipzig",
@@ -11348,7 +12913,31 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2014-15",
+            "club": "Stuttgart",
+            "starts": 16,
+            "minutes": 1626,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151002.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2015-16",
+            "club": "Stuttgart",
+            "starts": 26,
+            "minutes": 2197,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2015-161002.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-hoffenheim-andrejkramaric",
@@ -11541,14 +13130,16 @@
         "weighting": "2016-17 highest, 2015-16 second, 2014-15 least; individual rather than league table performance",
         "records": {
           "2014-15": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Stuttgart",
+            "appearances": 14,
+            "starts": 6,
+            "minutes": 611,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2014-151002.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2014-151002.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2015-16": {
             "club": "Hertha BSC",
@@ -11581,7 +13172,23 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2014-15",
+            "club": "Stuttgart",
+            "appearances": 14,
+            "starts": 6,
+            "minutes": 611,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151002.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-hoffenheim-sandrowagner",
@@ -11632,24 +13239,28 @@
         "weighting": "2016-17 highest, 2015-16 second, 2014-15 least; individual rather than league table performance",
         "records": {
           "2014-15": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hertha Berliner",
+            "appearances": 15,
+            "starts": 0,
+            "minutes": 257,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2014-151011.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2014-151011.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2015-16": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Darmstadt",
+            "appearances": 32,
+            "starts": 27,
+            "minutes": 2478,
+            "goals": 14,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2015-161045.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2015-161045.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2016-17": {
             "club": "TSG 1899 Hoffenheim",
@@ -11672,7 +13283,35 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2014-15",
+            "club": "Hertha Berliner",
+            "appearances": 15,
+            "starts": 0,
+            "minutes": 257,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151011.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2015-16",
+            "club": "Darmstadt",
+            "appearances": 32,
+            "starts": 27,
+            "minutes": 2478,
+            "goals": 14,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2015-161045.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-freiburg-florianniederlechner",
@@ -11733,14 +13372,16 @@
             "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
           },
           "2015-16": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Mainz 05",
+            "appearances": 12,
+            "starts": 1,
+            "minutes": 177,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2015-161013.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2015-161013.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2016-17": {
             "club": "SC Freiburg",
@@ -11763,7 +13404,23 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2015-16",
+            "club": "Mainz 05",
+            "appearances": 12,
+            "starts": 1,
+            "minutes": 177,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2015-161013.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-freiburg-maximilianphilipp",
@@ -11814,14 +13471,16 @@
         "weighting": "2016-17 highest, 2015-16 second, 2014-15 least; individual rather than league table performance",
         "records": {
           "2014-15": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Freiburg",
+            "appearances": 24,
+            "starts": 10,
+            "minutes": 1159,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2014-151007.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2014-151007.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2015-16": {
             "club": null,
@@ -11854,7 +13513,23 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2014-15",
+            "club": "Freiburg",
+            "appearances": 24,
+            "starts": 10,
+            "minutes": 1159,
+            "goals": 1,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151007.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-leipzig-yussufpoulsen",
@@ -12036,7 +13711,35 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2014-15",
+            "club": "Freiburg",
+            "appearances": 12,
+            "starts": 5,
+            "minutes": 502,
+            "goals": 9,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151007.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2014-15",
+            "club": "Werder Bremen",
+            "appearances": 7,
+            "starts": 2,
+            "minutes": 222,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151009.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-hoffenheim-markuth",
@@ -12097,14 +13800,16 @@
             "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
           },
           "2015-16": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hoffenheim",
+            "appearances": 25,
+            "starts": 16,
+            "minutes": 1399,
+            "goals": 8,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2015-161015.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2015-161015.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2016-17": {
             "club": "TSG 1899 Hoffenheim",
@@ -12127,7 +13832,23 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2015-16",
+            "club": "Hoffenheim",
+            "appearances": 25,
+            "starts": 16,
+            "minutes": 1399,
+            "goals": 8,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2015-161015.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-koln-simonzoller",
@@ -12178,24 +13899,28 @@
         "weighting": "2016-17 highest, 2015-16 second, 2014-15 least; individual rather than league table performance",
         "records": {
           "2014-15": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Köln",
+            "appearances": 9,
+            "starts": 5,
+            "minutes": 483,
+            "goals": 1,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2014-151004.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2014-151004.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2015-16": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Köln",
+            "appearances": 24,
+            "starts": 14,
+            "minutes": 1219,
+            "goals": 6,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2015-161004.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2015-161004.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2016-17": {
             "club": "1. FC Köln",
@@ -12218,7 +13943,35 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "priorClubRecords": [
+          {
+            "season": "2014-15",
+            "club": "Köln",
+            "appearances": 9,
+            "starts": 5,
+            "minutes": 483,
+            "goals": 1,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151004.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2015-16",
+            "club": "Köln",
+            "appearances": 24,
+            "starts": 14,
+            "minutes": 1219,
+            "goals": 6,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2015-161004.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-leipzig-davieselke",
@@ -12269,14 +14022,16 @@
         "weighting": "2016-17 highest, 2015-16 second, 2014-15 least; individual rather than league table performance",
         "records": {
           "2014-15": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Werder Bremen",
+            "appearances": 30,
+            "starts": 22,
+            "minutes": 1988,
+            "goals": 9,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2014-151009.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2014-151009.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2015-16": {
             "club": null,
@@ -12309,7 +14064,37 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "reviewPending": [
+          {
+            "section": "4선발 이하 후보 자격 재검토 (4행)",
+            "report": [
+              "ST",
+              "backup",
+              "2",
+              "21"
+            ],
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2016-171049.html"
+            ]
+          }
+        ],
+        "priorClubRecords": [
+          {
+            "season": "2014-15",
+            "club": "Werder Bremen",
+            "appearances": 30,
+            "starts": 22,
+            "minutes": 1988,
+            "goals": 9,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151009.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-dortmund-adrianramos",
@@ -12360,14 +14145,16 @@
         "weighting": "2016-17 highest, 2015-16 second, 2014-15 least; individual rather than league table performance",
         "records": {
           "2014-15": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Borussia Dortmund",
+            "appearances": 18,
+            "starts": 6,
+            "minutes": 709,
+            "goals": 2,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2014-151003.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2014-151003.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2015-16": {
             "club": "BV 09 Borussia Dortmund",
@@ -12400,7 +14187,37 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "reviewPending": [
+          {
+            "section": "4선발 이하 후보 자격 재검토 (4행)",
+            "report": [
+              "ST",
+              "backup",
+              "4",
+              "7"
+            ],
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2016-171003.html"
+            ]
+          }
+        ],
+        "priorClubRecords": [
+          {
+            "season": "2014-15",
+            "club": "Borussia Dortmund",
+            "appearances": 18,
+            "starts": 6,
+            "minutes": 709,
+            "goals": 2,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151003.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     },
     {
       "id": "bundesliga-2016-hertha-julianschieber",
@@ -12451,24 +14268,28 @@
         "weighting": "2016-17 highest, 2015-16 second, 2014-15 least; individual rather than league table performance",
         "records": {
           "2014-15": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hertha Berliner",
+            "appearances": 16,
+            "starts": 15,
+            "minutes": 1281,
+            "goals": 7,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2014-151011.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2014-151011.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2015-16": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
+            "club": "Hertha Berliner",
+            "appearances": 6,
+            "starts": 0,
+            "minutes": 135,
+            "goals": 0,
             "assists": null,
-            "source": null,
-            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league"
+            "source": "https://www.bdfutbol.com/en/t/t2015-161011.html",
+            "verification": "evidence_pending_prior_year_not_current_eligible_club_or_external_league",
+            "segment2Source": "https://www.bdfutbol.com/en/t/t2015-161011.html",
+            "segment2Scope": "club-specific league fields from audit; qualitative verification pending"
           },
           "2016-17": {
             "club": "Hertha BSC",
@@ -12491,7 +14312,49 @@
         "independent_DOB_second_source",
         "2016_17_peer_compared_quality_and_defensive_metrics"
       ],
-      "evidencePending": true
+      "evidencePending": true,
+      "segment2Audit": {
+        "reviewPending": [
+          {
+            "section": "4선발 이하 후보 자격 재검토 (4행)",
+            "report": [
+              "ST",
+              "backup",
+              "2",
+              "18"
+            ],
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2016-171011.html"
+            ]
+          }
+        ],
+        "priorClubRecords": [
+          {
+            "season": "2014-15",
+            "club": "Hertha Berliner",
+            "appearances": 16,
+            "starts": 15,
+            "minutes": 1281,
+            "goals": 7,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2014-151011.html"
+            ],
+            "scope": "club-specific regular league"
+          },
+          {
+            "season": "2015-16",
+            "club": "Hertha Berliner",
+            "appearances": 6,
+            "starts": 0,
+            "minutes": 135,
+            "goals": 0,
+            "sources": [
+              "https://www.bdfutbol.com/en/t/t2015-161011.html"
+            ],
+            "scope": "club-specific regular league"
+          }
+        ]
+      }
     }
   ],
   "bestXi": [
@@ -12594,6 +14457,24 @@
       "Hoffenheim wingbacks mapped to LB/RB; Kramaric ST vs SS",
       "Dortmund Guerreiro LB vs CM",
       "Freiburg Philipp ST vs LW; season position frequency pending"
-    ]
+    ],
+    "segment2Corrections": {
+      "basisCommit": "e7ceebd9b5cda6bf3bedd40024c08bc5218f2200",
+      "report": "FOOTBALL_AUDIT_BUNDESLIGA_SEGMENT_2_CORRECTIONS.md",
+      "counts": {
+        "assists": 2,
+        "current_record_assists": 2,
+        "gk_goals": 10,
+        "current_record_goals": 10,
+        "gk_conceded": 10,
+        "current_record_conceded": 10,
+        "review_flag": 7,
+        "prior_fields": 349,
+        "prior_club_filled": 84,
+        "prior_club_split_evidence": 4
+      },
+      "pending": [],
+      "scope": "source-based factual corrections and prior-club evidence; subjective review remains provisional"
+    }
   }
 }
