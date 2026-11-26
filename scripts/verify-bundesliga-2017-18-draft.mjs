@@ -13,7 +13,9 @@ ok(JSON.stringify(d.standings)===JSON.stringify(ar.standings),"standings parity"
 ok(d.qualifiers.length===7&&clubs.every(c=>d.qualifiers.some(q=>q.club===c)),"UEFA seven");
 ok(d.qualifiers.every(q=>q.competition===ar.europeanParticipation[q.club]),"UEFA labels");
 ok(!d.qualifiers.some(q=>q.club==="stuttgart")&&d.qualifiers.some(q=>q.club==="frankfurt"),"cup winner Frankfurt exception");
-ok(d.players.length===d.meta.candidateCount&&d.players.length>=110,"candidate count");
+ok(d.players.length===131&&d.meta.candidateCount===131,"audited candidate count");
+ok(d.players.find(p=>p.id.endsWith("-benjaminhenrichs"))?.position==="RB"&&d.players.find(p=>p.id.endsWith("-rafinha"))?.position==="LB","reviewed fullback roles");
+ok(d.meta.segment3Audit.usageFollowup.excluded.length===4,"archived excluded candidates");
 let ids=new Set(),backs={},gradeCount=Object.fromEntries(tiers.map(t=>[t,0]));
 for(let p of d.players){
 ok(!ids.has(p.id),"duplicate ID "+p.id);ids.add(p.id);
