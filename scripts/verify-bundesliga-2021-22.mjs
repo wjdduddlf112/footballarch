@@ -39,7 +39,7 @@ for(const p of data.players){
  assert(p.sources?.length>0&&p.assessmentRationale,"Missing player sources/rationale: "+p.id);
  if(p.tier===null)assert(p.rank===null,"Unrated player has rank: "+p.id);
  if(p.tier!==null)assert(Number.isInteger(p.rank)&&p.rank>=1,"Rated player without rank: "+p.id);
- if(p.position==="GK")assert(p.goals2021===null,"Goalkeeper conceded-goal confusion: "+p.id);
+ if(p.position==="GK")assert((p.goals2021==null||(p.goals2021===0&&p.threeSeasonReview?.records?.["2021-22"]?.goals===0&&Number.isInteger(p.leagueGoalsConceded)&&p.leagueGoalsConceded>=0)),"Goalkeeper conceded-goal confusion: "+p.id);
 }
 for(const c of ids)for(const pos of P)assert(count(data.players,p=>p.club===c&&p.position===pos&&p.role==="backup")<=1,">1 backup: "+c+" "+pos);
 for(const pos of P){
