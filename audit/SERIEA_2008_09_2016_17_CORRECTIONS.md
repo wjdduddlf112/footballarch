@@ -219,3 +219,5 @@ For source conflicts: match-level source/scope not sufficiently resolved. For po
 - 2013-14 Torino and 2014-15 Sampdoria qualification routes already match the report; no change. Parma/Genoa licence exceptions preserved.
 - Post-write re-read: Chiellini 2009-10 4 goals, Felipe Melo 2009-10 3 goals, Chiellini 2011-12's 2009-10 reference 4. No 2010-11 candidate records for either player, no 2011-12 Felipe Melo candidate. Corrected Chiellini's stale 2009-10 tier explanation from 3 to 4 goals without changing tier/rank. 
 - Main unchanged; no deployment.
+
+- Follow-up commit 4d210191e5f1c8e712c7e883d9043b05ff58a4c3: 2009-10 GitHub Actions rerun passed. Re-read confirmed 0 missing current appearances/starts/minutes/goals, and Chiellini explanation 4 goals. Updated stale current-appearance coverage metadata from 58 present / 65 pending to 123 present / 0 pending; 65 are report-backed fills, not newly independently match-audited. 
