@@ -105,7 +105,7 @@ function uelHistoricalAudit(){return data?.meta?.competitionId==="uel"&&Number(d
 function europeanHistoricalAudit(){return uclHistoricalAudit()||uelHistoricalAudit()}
 function uelHistoricalName(){return Number(data.meta.season.slice(0,4))<=2008?"UEFA Cup":"UEFA Europa League"}
 function europeanHistoricalLabel(){return uelHistoricalAudit()?uelHistoricalName()+" 본선":"UCL 본선"}
-function uelHistoricalFinal(){const f=data?.knockout?.find(k=>k.stage==="final");return f?.ties?.[0]||f||null}
+function uelHistoricalFinal(){const f=data?.knockout?.find(k=>k.stage==="final");return f?.ties?.[0]||(uelModernAudit()?f:null)||null}
 function uelHistoricalRoundTitle(round){
  const y=Number(data.meta.season.slice(0,4));
  return ({first_round:"본선 1라운드",second_round:"2라운드",third_round:y>=2002&&y<=2003?"32강":"3라운드",fourth_round:y>=2002&&y<=2003?"16강":"4라운드",round_of_32:"32강",knockout_play_off:"녹아웃 플레이오프",knockout_playoffs:"녹아웃 플레이오프",round_of_16:"16강",quarter_final:"8강",quarter_finals:"8강",semi_final:"4강",semi_finals:"4강",final:"결승"})[round]||round;
@@ -113,12 +113,12 @@ function uelHistoricalRoundTitle(round){
 function uelHistoricalScore(m){
  const pk=m.penaltyShootout,v=Array.isArray(pk)?pk:pk?[pk.home,pk.away]:null;
  const reg=m.scoreAtRegulation,r=Array.isArray(reg)?reg:reg?[reg.home,reg.away]:null;
- return String(m.homeGoals??"—")+" : "+String(m.awayGoals??"—")+(m.extraTime?" (연장 종료"+(r&&r.every(x=>x!=null)?" · 90분 "+r[0]+"–"+r[1]:"")+")":"")+(v&&v.every(x=>x!=null)?" (PK "+v[0]+"–"+v[1]+")":"")+(m.forfeit?" (몰수)":"")+(m.singleLeg?" (단판)":"");
+ return String(m.homeGoals??"—")+" : "+String(m.awayGoals??"—")+(m.extraTime?" (연장 종료"+(r&&r.every(x=>x!=null)?" · 90분 "+r[0]+"–"+r[1]:"")+")":"")+(v&&v.every(x=>x!=null)?" (PK "+v[0]+"–"+v[1]+")":"")+(m.forfeit?" (몰수)":"")+(uelModernAudit()&&m.singleLeg?" (단판)":"");
 }
 function uelGroupTable(g){return (g.standings||g.table||[]).map(x=>({...x,gd:x.goalDifference??x.gd,status:x.status??(x.advanced?"round_of_32":"eliminated")}))}
 function uelGroupMatches(g,ms,byId){return g.matchIds?g.matchIds.map(id=>byId.get(id)).filter(Boolean):ms.filter(m=>["group","group_stage"].includes(m.round)&&m.group===(g.code??g.id))}
 function uelHistoricalMatchTable(ms){
- return '<div class="table-scroll"><table class="datagrid"><thead><tr><th>DATE / VENUE</th><th>HOME</th><th>SCORE</th><th>AWAY</th></tr></thead><tbody>'+ms.map(m=>'<tr data-match-id="'+esc(m.id??[m.round,m.date,m.home,m.away].join("|"))+'"><td>'+uclMatchDate(m)+(m.venue&&!m.neutral&&!m.startedDate?'<br><span class="muted small">'+esc(m.venue)+'</span>':"")+(m.scheduledDate&&m.scheduledDate!==m.date?'<br><span class="muted small">'+esc(m.scheduledDate+" 예정")+'</span>':"")+'</td><td>'+esc(club(m.home).name)+'</td><td><b>'+esc(uelHistoricalScore(m))+'</b></td><td>'+esc(club(m.away).name)+'</td></tr>').join("")+'</tbody></table></div>';
+ return '<div class="table-scroll"><table class="datagrid"><thead><tr><th>DATE / VENUE</th><th>HOME</th><th>SCORE</th><th>AWAY</th></tr></thead><tbody>'+ms.map(m=>'<tr data-match-id="'+esc(m.id??(uelModernAudit()?[m.round,m.date,m.home,m.away].join("|"):m.id))+'"><td>'+uclMatchDate(m)+(m.venue&&!m.neutral&&!m.startedDate?'<br><span class="muted small">'+esc(m.venue)+'</span>':"")+(m.scheduledDate&&m.scheduledDate!==m.date?'<br><span class="muted small">'+esc(m.scheduledDate+" 예정")+'</span>':"")+'</td><td>'+esc(club(m.home).name)+'</td><td><b>'+esc(uelHistoricalScore(m))+'</b></td><td>'+esc(club(m.away).name)+'</td></tr>').join("")+'</tbody></table></div>';
 }
 function uelHistoricalTournament(){
  if(uelModernAudit())return uelModernTournament();
@@ -225,7 +225,7 @@ function penaltyLabel(m){
 }
 function uclTable(g){
  let t='<div class="table-scroll"><table class="datagrid"><thead><tr><th>#</th><th>CLUB</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>GD</th><th>PTS</th><th>RESULT</th></tr></thead><tbody>';
- for(const a of g.table)t+='<tr><td>'+esc(a.rank)+'</td><td>'+esc(club(a.club).name)+'</td><td>'+esc(a.played)+'</td><td>'+esc(a.wins)+'</td><td>'+esc(a.draws)+'</td><td>'+esc(a.losses)+'</td><td>'+esc(a.goalsFor)+'</td><td>'+esc(a.goalsAgainst)+'</td><td>'+esc(a.gd)+'</td><td>'+esc(a.points)+'</td><td>'+esc(a.status==="in_progress"?"진행 중":(a.status==="knockout_playoffs"||a.status==="knockout_play_off")?(uelModernAudit()?"녹아웃 플레이오프":"플레이오프"):a.status==="conference_league_transfer"&&uelModernAudit()?"콘퍼런스리그 이관":a.status==="round_of_16"&&uelModernAudit()&&Number(data.meta.season.slice(0,4))>=2021?"16강 직행":a.status==="second_group_stage"?"2차 조별리그":a.status==="round_of_32"?"32강":a.status==="round_of_16"?"16강":a.status==="quarter_finals"?"8강":a.status==="europa_league"&&data?.meta?.competitionId==="ucl"&&["2021-22","2022-23","2023-24"].includes(data.meta.season)&&a.rank===3?"Europa League 녹아웃 플레이오프":a.status==="uefa_cup"?(data?.meta?.competitionId==="ucl"&&Number(data.meta.season.slice(0,4))>=2009?"Europa League":"UEFA Cup"):"탈락")+'</td></tr>';
+ for(const a of g.table)t+='<tr><td>'+esc(a.rank)+'</td><td>'+esc(club(a.club).name)+'</td><td>'+esc(a.played)+'</td><td>'+esc(a.wins)+'</td><td>'+esc(a.draws)+'</td><td>'+esc(a.losses)+'</td><td>'+esc(a.goalsFor)+'</td><td>'+esc(a.goalsAgainst)+'</td><td>'+esc(a.gd)+'</td><td>'+esc(a.points)+'</td><td>'+esc(a.status==="in_progress"?"진행 중":(a.status==="knockout_playoffs"||(uelModernAudit()&&a.status==="knockout_play_off"))?(uelModernAudit()?"녹아웃 플레이오프":"플레이오프"):a.status==="conference_league_transfer"&&uelModernAudit()?"콘퍼런스리그 이관":a.status==="round_of_16"&&uelModernAudit()&&Number(data.meta.season.slice(0,4))>=2021?"16강 직행":a.status==="second_group_stage"?"2차 조별리그":a.status==="round_of_32"?"32강":a.status==="round_of_16"?"16강":a.status==="quarter_finals"?"8강":a.status==="europa_league"&&data?.meta?.competitionId==="ucl"&&["2021-22","2022-23","2023-24"].includes(data.meta.season)&&a.rank===3?"Europa League 녹아웃 플레이오프":a.status==="uefa_cup"?(data?.meta?.competitionId==="ucl"&&Number(data.meta.season.slice(0,4))>=2009?"Europa League":"UEFA Cup"):"탈락")+'</td></tr>';
  return t+'</tbody></table></div>';
 }
 function uclRound(r){return r==="quarter_finals"?"quarter_final":r==="semi_finals"?"semi_final":r}
