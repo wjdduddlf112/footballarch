@@ -1,8 +1,14 @@
 import fs from "node:fs";
 import assert from "node:assert/strict";
+import {expected,validateUclAudit} from "./verify-ucl-2008-09-2016-17-audit.mjs";
 
 // DRAFT data structural verification, NOT proof of historical completion.
 const d=JSON.parse(fs.readFileSync("data/ucl-2011-12.json","utf8"));
+if(d.audit?.uclHistoricalPatch){
+ const result=validateUclAudit(d,expected);
+ assert.deepEqual(result.errors,[]);
+ console.log(JSON.stringify(result,null,2));
+}else{
 const positions=["GK","CB","LB","RB","DM","CM","CAM","LW","RW","ST"];
 const tiers=["S","A+","A","A-","B+","B","B-","C+","C","C-","D"];
 const clubIds=new Set(d.clubs.map(x=>x.id));
@@ -93,3 +99,5 @@ for(const pick of d.bestXi){
 const distribution={};
 for(const t of tiers)distribution[t]=d.players.filter(p=>p.tier===t).length;
 console.log(JSON.stringify({result:"PASS",scope:"DRAFT structure only, not full historical individual verification",season:"2011-12",clubs:d.clubs.length,groups:d.groups.length,matches:d.matches.length,goals:345,candidates:d.players.length,rated:287,unrated:0,bestXi:11,tiers:distribution},null,2));
+
+}
