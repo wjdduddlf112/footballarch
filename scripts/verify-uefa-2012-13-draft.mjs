@@ -4,6 +4,7 @@
  */
 import fs from "node:fs";
 import assert from "node:assert/strict";
+import {expected,validateUclAudit} from "./verify-ucl-2008-09-2016-17-audit.mjs";
 const seasons = [
   { id:"ucl", stageClubs:32, allClubs:32, groupCount:8, groupGames:96, knockoutGames:29, assessedClubs:16, goals:368 },
   { id:"uel", stageClubs:48, allClubs:56, groupCount:12, groupGames:144, knockoutGames:61, assessedClubs:8, goals:521 },
@@ -12,6 +13,13 @@ const positions=["GK","CB","LB","RB","DM","CM","CAM","LW","RW","ST"];
 for(const req of seasons){
  const file=`data/${req.id}-2012-13.json`;
  const doc=JSON.parse(fs.readFileSync(file,"utf8"));
+ if(req.id==="ucl"&&doc.audit?.uclHistoricalPatch){
+  const result=validateUclAudit(doc,expected);
+  assert.deepEqual(result.errors,[]);
+  console.log(JSON.stringify(result,null,2));
+  
+  continue;
+ }
  const {meta,clubs,participants,groups,matches,knockout,evaluatedClubs,players,bestXi}=doc;
  const err=(msg)=>`${file}: ${msg}`;
  assert.equal(meta.season,"2012-13");
