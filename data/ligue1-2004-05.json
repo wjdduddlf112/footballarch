@@ -126,7 +126,7 @@
       "positionFrequencyVerified": false,
       "past2002_03IndividuallyVerified": false,
       "past2003_04IndividuallyVerified": false,
-      "birthDatesMissing": 16,
+      "birthDatesMissing": 0,
       "birthDatesIndependentlyValidated": "partial_do_not_claim_100_percent",
       "knownStatDisagreements": [
         "Moussilou 12 vs 13 goals depending source",
@@ -136,7 +136,8 @@
         "Rennes official top scorer and assist leader",
         "Essien 2005 UNFP award",
         "Monaco UEFA contemporary roles"
-      ]
+      ],
+      "birthDateVerificationStatus": "Report-backed missing/corrected DOBs applied; remaining source conflicts pending; not a complete independent DOB audit."
     },
     "bestXiReview": {
       "status": "proposed_unapproved",
@@ -155,7 +156,17 @@
       "Rennes official 2005 season individual goal/assist figures integrated for Monterrubio/Frei and relevant team mates.",
       "2002-03 and 2003-04 historical independent full verification not claimed; unverified DOB left null.",
       "All 150 player tiers and positional ranks and Best XI are user-unapproved DRAFT."
-    ]
+    ],
+    "segment1CorrectionAudit": {
+      "scope": "Ligue 1 1999-00 to 2007-08 report-backed factual corrections; qualitative and conflicting-source items pending",
+      "report": "FOOTBALL_AUDIT_LIGUE1_SEGMENT_1_CORRECTIONS.md",
+      "auditBase": "eb4fe7c97c7e5c2d6543531707bf7b189b0f4764",
+      "integrationBase": "cae681f5b53fd0afeda61f7bb5867c5b8a4e061c",
+      "changes": 150,
+      "pending": 17,
+      "details": "audit/ligue1-segment1-corrections.json",
+      "review": "draft_unapproved"
+    }
   },
   "clubs": [
     {
@@ -761,7 +772,11 @@
             "minutes": 3109,
             "goals": 0,
             "source": "https://www.bdfutbol.com/en/t/t2002-034017.html",
-            "verification": "linked_prior_unapproved_archive_not_independently_reverified"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "goalsConceded": 39,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2002-034017.html"
+            ]
           },
           "2003-04": {
             "club": "Olympique Lyonnais",
@@ -770,7 +785,11 @@
             "minutes": 3141,
             "goals": 0,
             "source": "https://www.bdfutbol.com/en/t/t2003-044017.html",
-            "verification": "linked_prior_unapproved_archive_not_independently_reverified"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "goalsConceded": 22,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044017.html"
+            ]
           },
           "2004-05": {
             "club": "Olympique Lyonnais",
@@ -779,15 +798,21 @@
             "minutes": 2790,
             "goals": 0,
             "source": "https://www.bdfutbol.com/en/t/t2004-054017.html",
-            "verification": "BDFutbol season lineups"
+            "verification": "BDFutbol season lineups",
+            "goalsConceded": 19,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2004-054017.html"
+            ]
           }
         }
       },
-      "tierReview": "2004-05 리그 31경기·선발 31회·2790분. 실제 개인 역할과 3시즌 지속성을 고려한 A+ 잠정 평가. 우승·리그 순위 자체에 별도 가점 없음.",
+      "tierReview": "2004-05 정규리그 31경기·31선발·2790분·0골·19실점. 검수 보고서에 따른 수치 보정. 기존 A+ 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "2002-03/2003-04 individual cross-source validation",
         "main position minutes and tactical role audit"
-      ]
+      ],
+      "leagueGoalsConceded": 19,
+      "preAuditTierReview": "2004-05 리그 31경기·선발 31회·2790분. 실제 개인 역할과 3시즌 지속성을 고려한 A+ 잠정 평가. 우승·리그 순위 자체에 별도 가점 없음."
     },
     {
       "id": "ligue1-2004-05-lyon-nicolaspuydebois",
@@ -829,7 +854,15 @@
         "status": "prior_two_seasons_partly_archive_linked_not_independently_verified",
         "records": {
           "2002-03": {
-            "verification": "individual_independent_research_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Olympique Lyonnais",
+            "appearances": 2,
+            "starts": 1,
+            "minutes": 131,
+            "goalsConceded": 1,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2002-034017.html"
+            ]
           },
           "2003-04": {
             "club": "Olympique Lyonnais",
@@ -838,7 +871,11 @@
             "minutes": 180,
             "goals": 0,
             "source": "https://www.bdfutbol.com/en/t/t2003-044017.html",
-            "verification": "linked_prior_unapproved_archive_not_independently_reverified"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "goalsConceded": 3,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044017.html"
+            ]
           },
           "2004-05": {
             "club": "Olympique Lyonnais",
@@ -847,15 +884,21 @@
             "minutes": 630,
             "goals": 0,
             "source": "https://www.bdfutbol.com/en/t/t2004-054017.html",
-            "verification": "BDFutbol season lineups"
+            "verification": "BDFutbol season lineups",
+            "goalsConceded": 3,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2004-054017.html"
+            ]
           }
         }
       },
-      "tierReview": "2004-05 리그 7경기·선발 7회·630분. 실제 개인 역할과 3시즌 지속성을 고려한 C+ 잠정 평가. 우승·리그 순위 자체에 별도 가점 없음.",
+      "tierReview": "2004-05 정규리그 7경기·7선발·630분·0골·3실점. 검수 보고서에 따른 수치 보정. 기존 C+ 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "2002-03/2003-04 individual cross-source validation",
         "main position minutes and tactical role audit"
-      ]
+      ],
+      "leagueGoalsConceded": 3,
+      "preAuditTierReview": "2004-05 리그 7경기·선발 7회·630분. 실제 개인 역할과 3시즌 지속성을 고려한 C+ 잠정 평가. 우승·리그 순위 자체에 별도 가점 없음."
     },
     {
       "id": "ligue1-2004-05-lyon-cris",
@@ -1033,10 +1076,26 @@
         "status": "prior_two_seasons_partly_archive_linked_not_independently_verified",
         "records": {
           "2002-03": {
-            "verification": "individual_independent_research_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Rennes",
+            "appearances": 20,
+            "starts": 19,
+            "minutes": 1702,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2002-034020.html"
+            ]
           },
           "2003-04": {
-            "verification": "individual_independent_research_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Rennes",
+            "appearances": 32,
+            "starts": 32,
+            "minutes": 2871,
+            "goals": 3,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044020.html"
+            ]
           },
           "2004-05": {
             "club": "Olympique Lyonnais",
@@ -1095,7 +1154,15 @@
         "status": "prior_two_seasons_partly_archive_linked_not_independently_verified",
         "records": {
           "2002-03": {
-            "verification": "individual_independent_research_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Lille",
+            "appearances": 27,
+            "starts": 27,
+            "minutes": 2343,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2002-034009.html"
+            ]
           },
           "2003-04": {
             "club": "Lille OSC",
@@ -1231,7 +1298,15 @@
         "status": "prior_two_seasons_partly_archive_linked_not_independently_verified",
         "records": {
           "2002-03": {
-            "verification": "individual_independent_research_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Rennes",
+            "appearances": 20,
+            "starts": 20,
+            "minutes": 1789,
+            "goals": 1,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2002-034020.html"
+            ]
           },
           "2003-04": {
             "club": "Olympique Lyonnais",
@@ -1338,7 +1413,7 @@
       "name": "Jérémy Clément",
       "nameOriginal": "Jérémy Clément",
       "nameKo": "제레미 클레망",
-      "born": "1984-09-26",
+      "born": "1984-08-26",
       "club": "lyon",
       "clubNameOriginal": "Olympique Lyonnais",
       "position": "DM",
@@ -1359,9 +1434,11 @@
       "candidateStatus": "draft",
       "verificationStatus": "2004-05 BDFutbol source checked; formation roles provisional",
       "positionVerification": "Season role mapped provisionally: match-by-match position frequencies pending",
-      "birthDateVerification": "biographical_reference_pending_standalone_independent_audit",
+      "birthDateVerification": "audit_report_profile_source",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2004-054017.html"
+        "https://www.bdfutbol.com/en/t/t2004-054017.html",
+        "https://www.bdfutbol.com/en/j/j82289.html",
+        "https://www.fff.fr/equipe-nationale/joueur/9858-clement-jeremy/fiche.html"
       ],
       "threeSeasonReview": {
         "assessmentSeasons": [
@@ -1376,7 +1453,15 @@
             "verification": "individual_independent_research_pending"
           },
           "2003-04": {
-            "verification": "individual_independent_research_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Olympique Lyonnais",
+            "appearances": 2,
+            "starts": 0,
+            "minutes": 14,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044017.html"
+            ]
           },
           "2004-05": {
             "club": "Olympique Lyonnais",
@@ -1393,7 +1478,8 @@
       "verificationNeeded": [
         "2002-03/2003-04 individual cross-source validation",
         "main position minutes and tactical role audit"
-      ]
+      ],
+      "birthDateStatus": "audit_report_profile_source"
     },
     {
       "id": "ligue1-2004-05-lyon-michaelessien",
@@ -1436,7 +1522,15 @@
         "status": "prior_two_seasons_partly_archive_linked_not_independently_verified",
         "records": {
           "2002-03": {
-            "verification": "individual_independent_research_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Bastia",
+            "appearances": 29,
+            "starts": 29,
+            "minutes": 2519,
+            "goals": 6,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2002-034003.html"
+            ]
           },
           "2003-04": {
             "club": "Olympique Lyonnais",
@@ -1827,7 +1921,7 @@
       "name": "Tony Sylva",
       "nameOriginal": "Tony Sylva",
       "nameKo": "토니 실바",
-      "born": null,
+      "born": "1975-05-17",
       "club": "lille",
       "clubNameOriginal": "Lille OSC",
       "position": "GK",
@@ -1848,9 +1942,10 @@
       "candidateStatus": "draft",
       "verificationStatus": "2004-05 BDFutbol source checked; formation roles provisional",
       "positionVerification": "Season role mapped provisionally: match-by-match position frequencies pending",
-      "birthDateVerification": "unknown_set_null",
+      "birthDateVerification": "audit_report_profile_source",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2004-054009.html"
+        "https://www.bdfutbol.com/en/t/t2004-054009.html",
+        "https://www.bdfutbol.com/en/j/j84178.html"
       ],
       "threeSeasonReview": {
         "assessmentSeasons": [
@@ -1868,7 +1963,11 @@
             "minutes": 1045,
             "goals": 0,
             "source": "https://www.bdfutbol.com/en/t/t2002-034018.html",
-            "verification": "linked_prior_unapproved_archive_not_independently_reverified"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "goalsConceded": 9,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2002-034018.html"
+            ]
           },
           "2003-04": {
             "club": "AS Monaco FC",
@@ -1877,7 +1976,11 @@
             "minutes": 360,
             "goals": 0,
             "source": "https://www.bdfutbol.com/en/t/t2003-044018.html",
-            "verification": "linked_prior_unapproved_archive_not_independently_reverified"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "goalsConceded": 3,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044018.html"
+            ]
           },
           "2004-05": {
             "club": "Lille OSC",
@@ -1886,16 +1989,23 @@
             "minutes": 3376,
             "goals": 0,
             "source": "https://www.bdfutbol.com/en/t/t2004-054009.html",
-            "verification": "BDFutbol season lineups"
+            "verification": "BDFutbol season lineups",
+            "goalsConceded": 29,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2004-054009.html"
+            ]
           }
         }
       },
-      "tierReview": "2004-05 리그 38경기·선발 38회·3376분. 실제 개인 역할과 3시즌 지속성을 고려한 B+ 잠정 평가. 우승·리그 순위 자체에 별도 가점 없음.",
+      "tierReview": "2004-05 정규리그 38경기·38선발·3376분·0골·29실점. 검수 보고서에 따른 수치 보정. 기존 B+ 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "2002-03/2003-04 individual cross-source validation",
         "main position minutes and tactical role audit",
         "date of birth independent verification"
-      ]
+      ],
+      "birthDateStatus": "audit_report_profile_source",
+      "leagueGoalsConceded": 29,
+      "preAuditTierReview": "2004-05 리그 38경기·선발 38회·3376분. 실제 개인 역할과 3시즌 지속성을 고려한 B+ 잠정 평가. 우승·리그 순위 자체에 별도 가점 없음."
     },
     {
       "id": "ligue1-2004-05-lille-stathistavlaridis",
@@ -1970,7 +2080,7 @@
       "name": "Rafael Schmitz",
       "nameOriginal": "Rafael Schmitz",
       "nameKo": "하파에우 슈미츠",
-      "born": null,
+      "born": "1980-12-17",
       "club": "lille",
       "clubNameOriginal": "Lille OSC",
       "position": "CB",
@@ -1991,9 +2101,10 @@
       "candidateStatus": "draft",
       "verificationStatus": "2004-05 BDFutbol source checked; formation roles provisional",
       "positionVerification": "Season role mapped provisionally: match-by-match position frequencies pending",
-      "birthDateVerification": "unknown_set_null",
+      "birthDateVerification": "audit_report_profile_source",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2004-054009.html"
+        "https://www.bdfutbol.com/en/t/t2004-054009.html",
+        "https://www.bdfutbol.com/en/j/j95064.html"
       ],
       "threeSeasonReview": {
         "assessmentSeasons": [
@@ -2005,10 +2116,26 @@
         "status": "prior_two_seasons_partly_archive_linked_not_independently_verified",
         "records": {
           "2002-03": {
-            "verification": "individual_independent_research_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Lille",
+            "appearances": 2,
+            "starts": 2,
+            "minutes": 180,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2002-034009.html"
+            ]
           },
           "2003-04": {
-            "verification": "individual_independent_research_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Lille",
+            "appearances": 5,
+            "starts": 4,
+            "minutes": 379,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044009.html"
+            ]
           },
           "2004-05": {
             "club": "Lille OSC",
@@ -2026,14 +2153,15 @@
         "2002-03/2003-04 individual cross-source validation",
         "main position minutes and tactical role audit",
         "date of birth independent verification"
-      ]
+      ],
+      "birthDateStatus": "audit_report_profile_source"
     },
     {
       "id": "ligue1-2004-05-lille-milivojevitakic",
       "name": "Milivoje Vitakić",
       "nameOriginal": "Milivoje Vitakić",
       "nameKo": "밀리보예 비타키치",
-      "born": null,
+      "born": "1977-05-16",
       "club": "lille",
       "clubNameOriginal": "Lille OSC",
       "position": "CB",
@@ -2054,9 +2182,10 @@
       "candidateStatus": "draft",
       "verificationStatus": "2004-05 BDFutbol source checked; formation roles provisional",
       "positionVerification": "Season role mapped provisionally: match-by-match position frequencies pending",
-      "birthDateVerification": "unknown_set_null",
+      "birthDateVerification": "audit_report_profile_source",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2004-054009.html"
+        "https://www.bdfutbol.com/en/t/t2004-054009.html",
+        "https://www.bdfutbol.com/en/j/j83820.html"
       ],
       "threeSeasonReview": {
         "assessmentSeasons": [
@@ -2089,7 +2218,8 @@
         "2002-03/2003-04 individual cross-source validation",
         "main position minutes and tactical role audit",
         "date of birth independent verification"
-      ]
+      ],
+      "birthDateStatus": "audit_report_profile_source"
     },
     {
       "id": "ligue1-2004-05-lille-gregorytafforeau",
@@ -2131,7 +2261,15 @@
         "status": "prior_two_seasons_partly_archive_linked_not_independently_verified",
         "records": {
           "2002-03": {
-            "verification": "individual_independent_research_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Lille",
+            "appearances": 32,
+            "starts": 32,
+            "minutes": 2770,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2002-034009.html"
+            ]
           },
           "2003-04": {
             "club": "Lille OSC",
@@ -2164,7 +2302,7 @@
       "name": "Matthieu Chalmé",
       "nameOriginal": "Matthieu Chalmé",
       "nameKo": "마티외 샬메",
-      "born": null,
+      "born": "1980-10-07",
       "club": "lille",
       "clubNameOriginal": "Lille OSC",
       "position": "RB",
@@ -2185,9 +2323,10 @@
       "candidateStatus": "draft",
       "verificationStatus": "2004-05 BDFutbol source checked; formation roles provisional",
       "positionVerification": "Season role mapped provisionally: match-by-match position frequencies pending",
-      "birthDateVerification": "unknown_set_null",
+      "birthDateVerification": "audit_report_profile_source",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2004-054009.html"
+        "https://www.bdfutbol.com/en/t/t2004-054009.html",
+        "https://www.bdfutbol.com/en/j/j82791.html"
       ],
       "threeSeasonReview": {
         "assessmentSeasons": [
@@ -2199,7 +2338,15 @@
         "status": "prior_two_seasons_partly_archive_linked_not_independently_verified",
         "records": {
           "2002-03": {
-            "verification": "individual_independent_research_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Lille",
+            "appearances": 20,
+            "starts": 8,
+            "minutes": 875,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2002-034009.html"
+            ]
           },
           "2003-04": {
             "club": "Lille OSC",
@@ -2226,14 +2373,15 @@
         "2002-03/2003-04 individual cross-source validation",
         "main position minutes and tactical role audit",
         "date of birth independent verification"
-      ]
+      ],
+      "birthDateStatus": "audit_report_profile_source"
     },
     {
       "id": "ligue1-2004-05-lille-benoitangbwa",
       "name": "Benoît Angbwa",
       "nameOriginal": "Benoît Angbwa",
       "nameKo": "브누아 앙그바",
-      "born": null,
+      "born": "1982-01-01",
       "club": "lille",
       "clubNameOriginal": "Lille OSC",
       "position": "RB",
@@ -2254,9 +2402,10 @@
       "candidateStatus": "draft",
       "verificationStatus": "2004-05 BDFutbol source checked; formation roles provisional",
       "positionVerification": "Season role mapped provisionally: match-by-match position frequencies pending",
-      "birthDateVerification": "unknown_set_null",
+      "birthDateVerification": "audit_report_profile_source",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2004-054009.html"
+        "https://www.bdfutbol.com/en/t/t2004-054009.html",
+        "https://www.bdfutbol.com/en/j/j84686.html"
       ],
       "threeSeasonReview": {
         "assessmentSeasons": [
@@ -2289,7 +2438,8 @@
         "2002-03/2003-04 individual cross-source validation",
         "main position minutes and tactical role audit",
         "date of birth independent verification"
-      ]
+      ],
+      "birthDateStatus": "audit_report_profile_source"
     },
     {
       "id": "ligue1-2004-05-lille-jeaniimakoun",
@@ -2331,7 +2481,15 @@
         "status": "prior_two_seasons_partly_archive_linked_not_independently_verified",
         "records": {
           "2002-03": {
-            "verification": "individual_independent_research_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Lille",
+            "appearances": 10,
+            "starts": 2,
+            "minutes": 347,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2002-034009.html"
+            ]
           },
           "2003-04": {
             "club": "Lille OSC",
@@ -2364,7 +2522,7 @@
       "name": "Stéphane Dumont",
       "nameOriginal": "Stéphane Dumont",
       "nameKo": "스테판 뒤몽",
-      "born": null,
+      "born": "1982-09-06",
       "club": "lille",
       "clubNameOriginal": "Lille OSC",
       "position": "CM",
@@ -2385,9 +2543,10 @@
       "candidateStatus": "draft",
       "verificationStatus": "2004-05 BDFutbol source checked; formation roles provisional",
       "positionVerification": "Season role mapped provisionally: match-by-match position frequencies pending",
-      "birthDateVerification": "unknown_set_null",
+      "birthDateVerification": "audit_report_profile_source",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2004-054009.html"
+        "https://www.bdfutbol.com/en/t/t2004-054009.html",
+        "https://www.bdfutbol.com/en/j/j83559.html"
       ],
       "threeSeasonReview": {
         "assessmentSeasons": [
@@ -2402,7 +2561,15 @@
             "verification": "individual_independent_research_pending"
           },
           "2003-04": {
-            "verification": "individual_independent_research_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Lille",
+            "appearances": 6,
+            "starts": 2,
+            "minutes": 234,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044009.html"
+            ]
           },
           "2004-05": {
             "club": "Lille OSC",
@@ -2420,7 +2587,8 @@
         "2002-03/2003-04 individual cross-source validation",
         "main position minutes and tactical role audit",
         "date of birth independent verification"
-      ]
+      ],
+      "birthDateStatus": "audit_report_profile_source"
     },
     {
       "id": "ligue1-2004-05-lille-mathieubodmer",
@@ -2563,7 +2731,7 @@
       "name": "Philippe Brunel",
       "nameOriginal": "Philippe Brunel",
       "nameKo": "필리프 브뤼넬",
-      "born": null,
+      "born": "1973-02-28",
       "club": "lille",
       "clubNameOriginal": "Lille OSC",
       "position": "LW",
@@ -2584,9 +2752,10 @@
       "candidateStatus": "draft",
       "verificationStatus": "2004-05 BDFutbol source checked; formation roles provisional",
       "positionVerification": "Season role mapped provisionally: match-by-match position frequencies pending",
-      "birthDateVerification": "unknown_set_null",
+      "birthDateVerification": "audit_report_profile_source",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2004-054009.html"
+        "https://www.bdfutbol.com/en/t/t2004-054009.html",
+        "https://www.bdfutbol.com/en/j/j84289.html"
       ],
       "threeSeasonReview": {
         "assessmentSeasons": [
@@ -2598,7 +2767,15 @@
         "status": "prior_two_seasons_partly_archive_linked_not_independently_verified",
         "records": {
           "2002-03": {
-            "verification": "individual_independent_research_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Lille",
+            "appearances": 36,
+            "starts": 32,
+            "minutes": 2875,
+            "goals": 3,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2002-034009.html"
+            ]
           },
           "2003-04": {
             "club": "Lille OSC",
@@ -2625,14 +2802,15 @@
         "2002-03/2003-04 individual cross-source validation",
         "main position minutes and tactical role audit",
         "date of birth independent verification"
-      ]
+      ],
+      "birthDateStatus": "audit_report_profile_source"
     },
     {
       "id": "ligue1-2004-05-lille-geoffreydernis",
       "name": "Geoffrey Dernis",
       "nameOriginal": "Geoffrey Dernis",
       "nameKo": "조프레 데르니스",
-      "born": null,
+      "born": "1980-12-24",
       "club": "lille",
       "clubNameOriginal": "Lille OSC",
       "position": "LW",
@@ -2653,9 +2831,10 @@
       "candidateStatus": "draft",
       "verificationStatus": "2004-05 BDFutbol source checked; formation roles provisional",
       "positionVerification": "Season role mapped provisionally: match-by-match position frequencies pending",
-      "birthDateVerification": "unknown_set_null",
+      "birthDateVerification": "audit_report_profile_source",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2004-054009.html"
+        "https://www.bdfutbol.com/en/t/t2004-054009.html",
+        "https://www.bdfutbol.com/en/j/j83389.html"
       ],
       "threeSeasonReview": {
         "assessmentSeasons": [
@@ -2694,7 +2873,8 @@
         "2002-03/2003-04 individual cross-source validation",
         "main position minutes and tactical role audit",
         "date of birth independent verification"
-      ]
+      ],
+      "birthDateStatus": "audit_report_profile_source"
     },
     {
       "id": "ligue1-2004-05-lille-christophelandrin",
@@ -2736,7 +2916,15 @@
         "status": "prior_two_seasons_partly_archive_linked_not_independently_verified",
         "records": {
           "2002-03": {
-            "verification": "individual_independent_research_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Lille",
+            "appearances": 33,
+            "starts": 27,
+            "minutes": 2567,
+            "goals": 5,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2002-034009.html"
+            ]
           },
           "2003-04": {
             "club": "Lille OSC",
@@ -2807,7 +2995,15 @@
             "verification": "individual_independent_research_pending"
           },
           "2003-04": {
-            "verification": "individual_independent_research_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Lille",
+            "appearances": 6,
+            "starts": 3,
+            "minutes": 314,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044009.html"
+            ]
           },
           "2004-05": {
             "club": "Lille OSC",
@@ -2868,7 +3064,15 @@
         "status": "prior_two_seasons_partly_archive_linked_not_independently_verified",
         "records": {
           "2002-03": {
-            "verification": "individual_independent_research_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Lille",
+            "appearances": 16,
+            "starts": 3,
+            "minutes": 452,
+            "goals": 1,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2002-034009.html"
+            ]
           },
           "2003-04": {
             "club": "Lille OSC",
@@ -3005,7 +3209,11 @@
             "minutes": 2375,
             "goals": 0,
             "source": "https://www.bdfutbol.com/en/t/t2002-034018.html",
-            "verification": "linked_prior_unapproved_archive_not_independently_reverified"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "goalsConceded": 24,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2002-034018.html"
+            ]
           },
           "2003-04": {
             "club": "AS Monaco FC",
@@ -3014,7 +3222,11 @@
             "minutes": 3060,
             "goals": 0,
             "source": "https://www.bdfutbol.com/en/t/t2003-044018.html",
-            "verification": "linked_prior_unapproved_archive_not_independently_reverified"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "goalsConceded": 27,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044018.html"
+            ]
           },
           "2004-05": {
             "club": "AS Monaco FC",
@@ -3023,22 +3235,28 @@
             "minutes": 3060,
             "goals": 0,
             "source": "https://www.bdfutbol.com/en/t/t2004-054018.html",
-            "verification": "BDFutbol season lineups"
+            "verification": "BDFutbol season lineups",
+            "goalsConceded": 33,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2004-054018.html"
+            ]
           }
         }
       },
-      "tierReview": "2004-05 리그 34경기·선발 34회·3060분. 실제 개인 역할과 3시즌 지속성을 고려한 A0 잠정 평가. 우승·리그 순위 자체에 별도 가점 없음.",
+      "tierReview": "2004-05 정규리그 34경기·34선발·3060분·0골·33실점. 검수 보고서에 따른 수치 보정. 기존 A0 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "2002-03/2003-04 individual cross-source validation",
         "main position minutes and tactical role audit"
-      ]
+      ],
+      "leagueGoalsConceded": 33,
+      "preAuditTierReview": "2004-05 리그 34경기·선발 34회·3060분. 실제 개인 역할과 3시즌 지속성을 고려한 A0 잠정 평가. 우승·리그 순위 자체에 별도 가점 없음."
     },
     {
       "id": "ligue1-2004-05-monaco-fabienaudard",
       "name": "Fabien Audard",
       "nameOriginal": "Fabien Audard",
       "nameKo": "파비앵 오다르",
-      "born": null,
+      "born": "1978-03-28",
       "club": "monaco",
       "clubNameOriginal": "AS Monaco FC",
       "position": "GK",
@@ -3059,9 +3277,10 @@
       "candidateStatus": "draft",
       "verificationStatus": "2004-05 BDFutbol source checked; formation roles provisional",
       "positionVerification": "Season role mapped provisionally: match-by-match position frequencies pending",
-      "birthDateVerification": "unknown_set_null",
+      "birthDateVerification": "audit_report_profile_source",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2004-054018.html"
+        "https://www.bdfutbol.com/en/t/t2004-054018.html",
+        "https://www.bdfutbol.com/en/j/j82637.html"
       ],
       "threeSeasonReview": {
         "assessmentSeasons": [
@@ -3085,16 +3304,23 @@
             "minutes": 360,
             "goals": 0,
             "source": "https://www.bdfutbol.com/en/t/t2004-054018.html",
-            "verification": "BDFutbol season lineups"
+            "verification": "BDFutbol season lineups",
+            "goalsConceded": 2,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2004-054018.html"
+            ]
           }
         }
       },
-      "tierReview": "2004-05 리그 4경기·선발 4회·360분. 실제 개인 역할과 3시즌 지속성을 고려한 C+ 잠정 평가. 우승·리그 순위 자체에 별도 가점 없음.",
+      "tierReview": "2004-05 정규리그 4경기·4선발·360분·0골·2실점. 검수 보고서에 따른 수치 보정. 기존 C+ 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "2002-03/2003-04 individual cross-source validation",
         "main position minutes and tactical role audit",
         "date of birth independent verification"
-      ]
+      ],
+      "birthDateStatus": "audit_report_profile_source",
+      "leagueGoalsConceded": 2,
+      "preAuditTierReview": "2004-05 리그 4경기·선발 4회·360분. 실제 개인 역할과 3시즌 지속성을 고려한 C+ 잠정 평가. 우승·리그 순위 자체에 별도 가점 없음."
     },
     {
       "id": "ligue1-2004-05-monaco-gaelgivet",
@@ -3459,7 +3685,7 @@
       "name": "François Modesto",
       "nameOriginal": "François Modesto",
       "nameKo": "프랑수아 모데스토",
-      "born": null,
+      "born": "1978-08-19",
       "club": "monaco",
       "clubNameOriginal": "AS Monaco FC",
       "position": "RB",
@@ -3480,9 +3706,10 @@
       "candidateStatus": "draft",
       "verificationStatus": "2004-05 BDFutbol source checked; formation roles provisional",
       "positionVerification": "Season role mapped provisionally: match-by-match position frequencies pending",
-      "birthDateVerification": "unknown_set_null",
+      "birthDateVerification": "audit_report_profile_source",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2004-054018.html"
+        "https://www.bdfutbol.com/en/t/t2004-054018.html",
+        "https://www.bdfutbol.com/en/j/j96662.html"
       ],
       "threeSeasonReview": {
         "assessmentSeasons": [
@@ -3515,7 +3742,8 @@
         "2002-03/2003-04 individual cross-source validation",
         "main position minutes and tactical role audit",
         "date of birth independent verification"
-      ]
+      ],
+      "birthDateStatus": "audit_report_profile_source"
     },
     {
       "id": "ligue1-2004-05-monaco-akiszikos",
@@ -3767,7 +3995,15 @@
         "status": "prior_two_seasons_partly_archive_linked_not_independently_verified",
         "records": {
           "2002-03": {
-            "verification": "individual_independent_research_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Monaco",
+            "appearances": 4,
+            "starts": 0,
+            "minutes": 56,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2002-034018.html"
+            ]
           },
           "2003-04": {
             "club": "AS Monaco FC",
@@ -3836,10 +4072,26 @@
         "status": "prior_two_seasons_partly_archive_linked_not_independently_verified",
         "records": {
           "2002-03": {
-            "verification": "individual_independent_research_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Monaco",
+            "appearances": 11,
+            "starts": 5,
+            "minutes": 457,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2002-034018.html"
+            ]
           },
           "2003-04": {
-            "verification": "individual_independent_research_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Strasbourg",
+            "appearances": 30,
+            "starts": 30,
+            "minutes": 2444,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044034.html"
+            ]
           },
           "2004-05": {
             "club": "AS Monaco FC",
@@ -4169,23 +4421,29 @@
             "minutes": 3420,
             "goals": 0,
             "source": "https://www.bdfutbol.com/en/t/t2004-054020.html",
-            "verification": "BDFutbol 2004-05 lineup"
+            "verification": "BDFutbol 2004-05 lineup",
+            "goalsConceded": 42,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2004-054020.html"
+            ]
           }
         }
       },
-      "tierReview": "2004-05 리그 38경기·38선발·3420분. 시즌 당시 역할과 이전 2시즌 가중 검토를 반영한 잠정 A0; 우승·순위 자체는 평가 가점에서 제외.",
+      "tierReview": "2004-05 정규리그 38경기·38선발·3420분·0골·42실점. 검수 보고서에 따른 수치 보정. 기존 A0 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "prior 2002-03 and 2003-04 individual cross source",
         "season-specific positional role shares"
       ],
-      "assistsSource": "https://www.staderennais.com/actualites/equipe-pro/stats-2004-2005-lattaque-rennaise-la-loupe"
+      "assistsSource": "https://www.staderennais.com/actualites/equipe-pro/stats-2004-2005-lattaque-rennaise-la-loupe",
+      "leagueGoalsConceded": 42,
+      "preAuditTierReview": "2004-05 리그 38경기·38선발·3420분. 시즌 당시 역할과 이전 2시즌 가중 검토를 반영한 잠정 A0; 우승·순위 자체는 평가 가점에서 제외."
     },
     {
       "id": "ligue1-2004-05-rennes-abdeslamouaddou",
       "name": "Abdeslam Ouaddou",
       "nameOriginal": "Abdeslam Ouaddou",
       "nameKo": "압데슬람 우아두",
-      "born": null,
+      "born": "1978-11-01",
       "club": "rennes",
       "clubNameOriginal": "Stade Rennais FC",
       "position": "RB",
@@ -4206,10 +4464,11 @@
       "candidateStatus": "draft",
       "verificationStatus": "current 2004-05 source checked; tactical position details provisional",
       "positionVerification": "match-by-match role share to verify",
-      "birthDateVerification": "not_confirmed",
+      "birthDateVerification": "audit_report_profile_source",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2004-054020.html",
-        "https://www.staderennais.com/actualites/equipe-pro/stats-2004-2005-lattaque-rennaise-la-loupe"
+        "https://www.staderennais.com/actualites/equipe-pro/stats-2004-2005-lattaque-rennaise-la-loupe",
+        "https://www.bdfutbol.com/en/j/j94174.html"
       ],
       "threeSeasonReview": {
         "assessmentSeasons": [
@@ -4224,7 +4483,15 @@
             "verification": "individual_independent_audit_pending"
           },
           "2003-04": {
-            "verification": "individual_independent_audit_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Rennes",
+            "appearances": 29,
+            "starts": 29,
+            "minutes": 2525,
+            "goals": 2,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044020.html"
+            ]
           },
           "2004-05": {
             "club": "Stade Rennais FC",
@@ -4243,7 +4510,8 @@
         "season-specific positional role shares",
         "independent DOB"
       ],
-      "assistsSource": "https://www.staderennais.com/actualites/equipe-pro/stats-2004-2005-lattaque-rennaise-la-loupe"
+      "assistsSource": "https://www.staderennais.com/actualites/equipe-pro/stats-2004-2005-lattaque-rennaise-la-loupe",
+      "birthDateStatus": "audit_report_profile_source"
     },
     {
       "id": "ligue1-2004-05-rennes-jeanjoelperrierdoumbe",
@@ -4324,7 +4592,7 @@
       "name": "Doudou Faty",
       "nameOriginal": "Doudou Faty",
       "nameKo": "두두 파티",
-      "born": "1984-08-04",
+      "born": "1984-02-25",
       "club": "rennes",
       "clubNameOriginal": "Stade Rennais FC",
       "position": "CB",
@@ -4345,9 +4613,11 @@
       "candidateStatus": "draft",
       "verificationStatus": "current 2004-05 source checked; tactical position details provisional",
       "positionVerification": "match-by-match role share to verify",
-      "birthDateVerification": "biographical_reference_pending_standalone_audit",
+      "birthDateVerification": "audit_report_profile_source",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2004-054020.html"
+        "https://www.bdfutbol.com/en/t/t2004-054020.html",
+        "https://www.bdfutbol.com/en/j/j83274.html",
+        "https://www.fff.fr/equipe-nationale/joueur/9885-faty-jacques/fiche.html"
       ],
       "threeSeasonReview": {
         "assessmentSeasons": [
@@ -4359,10 +4629,26 @@
         "status": "prior_seasons_independent_recheck_pending",
         "records": {
           "2002-03": {
-            "verification": "individual_independent_audit_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Rennes",
+            "appearances": 9,
+            "starts": 8,
+            "minutes": 691,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2002-034020.html"
+            ]
           },
           "2003-04": {
-            "verification": "individual_independent_audit_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Rennes",
+            "appearances": 32,
+            "starts": 29,
+            "minutes": 2466,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044020.html"
+            ]
           },
           "2004-05": {
             "club": "Stade Rennais FC",
@@ -4379,7 +4665,8 @@
       "verificationNeeded": [
         "prior 2002-03 and 2003-04 individual cross source",
         "season-specific positional role shares"
-      ]
+      ],
+      "birthDateStatus": "audit_report_profile_source"
     },
     {
       "id": "ligue1-2004-05-rennes-adailton",
@@ -4483,10 +4770,26 @@
         "status": "prior_seasons_independent_recheck_pending",
         "records": {
           "2002-03": {
-            "verification": "individual_independent_audit_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Rennes",
+            "appearances": 21,
+            "starts": 18,
+            "minutes": 1669,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2002-034020.html"
+            ]
           },
           "2003-04": {
-            "verification": "individual_independent_audit_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Rennes",
+            "appearances": 17,
+            "starts": 11,
+            "minutes": 1070,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044020.html"
+            ]
           },
           "2004-05": {
             "club": "Stade Rennais FC",
@@ -4546,10 +4849,53 @@
         "status": "prior_seasons_independent_recheck_pending",
         "records": {
           "2002-03": {
-            "verification": "individual_independent_audit_pending"
+            "verification": "audit_report_BDFutbol_club_split",
+            "clubRecords": [
+              {
+                "club": "Bastia",
+                "source": "https://www.bdfutbol.com/en/t/t2002-034003.html",
+                "externalReviewSources": [
+                  "https://www.bdfutbol.com/en/t/t2002-034003.html"
+                ],
+                "verification": "audit_report_BDFutbol_club_season",
+                "appearances": 16,
+                "starts": 16,
+                "minutes": 1411,
+                "goals": 0
+              },
+              {
+                "club": "Rennes",
+                "source": "https://www.bdfutbol.com/en/t/t2002-034020.html",
+                "externalReviewSources": [
+                  "https://www.bdfutbol.com/en/t/t2002-034020.html"
+                ],
+                "verification": "audit_report_BDFutbol_club_season",
+                "appearances": 14,
+                "starts": 13,
+                "minutes": 1130,
+                "goals": 1
+              }
+            ],
+            "club": "Bastia / Rennes",
+            "appearances": 30,
+            "starts": 29,
+            "minutes": 2541,
+            "goals": 1,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2002-034003.html",
+              "https://www.bdfutbol.com/en/t/t2002-034020.html"
+            ]
           },
           "2003-04": {
-            "verification": "individual_independent_audit_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Rennes",
+            "appearances": 31,
+            "starts": 28,
+            "minutes": 2541,
+            "goals": 1,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044020.html"
+            ]
           },
           "2004-05": {
             "club": "Stade Rennais FC",
@@ -4609,10 +4955,26 @@
         "status": "prior_seasons_independent_recheck_pending",
         "records": {
           "2002-03": {
-            "verification": "individual_independent_audit_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Rennes",
+            "appearances": 22,
+            "starts": 18,
+            "minutes": 1649,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2002-034020.html"
+            ]
           },
           "2003-04": {
-            "verification": "individual_independent_audit_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Rennes",
+            "appearances": 20,
+            "starts": 18,
+            "minutes": 1560,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044020.html"
+            ]
           },
           "2004-05": {
             "club": "Stade Rennais FC",
@@ -4672,10 +5034,26 @@
         "status": "prior_seasons_independent_recheck_pending",
         "records": {
           "2002-03": {
-            "verification": "individual_independent_audit_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Rennes",
+            "appearances": 20,
+            "starts": 17,
+            "minutes": 1461,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2002-034020.html"
+            ]
           },
           "2003-04": {
-            "verification": "individual_independent_audit_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Rennes",
+            "appearances": 28,
+            "starts": 24,
+            "minutes": 2096,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044020.html"
+            ]
           },
           "2004-05": {
             "club": "Stade Rennais FC",
@@ -4739,7 +5117,15 @@
             "verification": "individual_independent_audit_pending"
           },
           "2003-04": {
-            "verification": "individual_independent_audit_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Rennes",
+            "appearances": 18,
+            "starts": 18,
+            "minutes": 1436,
+            "goals": 7,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044020.html"
+            ]
           },
           "2004-05": {
             "club": "Stade Rennais FC",
@@ -4864,7 +5250,15 @@
             "verification": "individual_independent_audit_pending"
           },
           "2003-04": {
-            "verification": "individual_independent_audit_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Rennes",
+            "appearances": 9,
+            "starts": 2,
+            "minutes": 234,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044020.html"
+            ]
           },
           "2004-05": {
             "club": "Stade Rennais FC",
@@ -4925,10 +5319,26 @@
         "status": "prior_seasons_independent_recheck_pending",
         "records": {
           "2002-03": {
-            "verification": "individual_independent_audit_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Rennes",
+            "appearances": 36,
+            "starts": 21,
+            "minutes": 1922,
+            "goals": 6,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2002-034020.html"
+            ]
           },
           "2003-04": {
-            "verification": "individual_independent_audit_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Rennes",
+            "appearances": 33,
+            "starts": 29,
+            "minutes": 2589,
+            "goals": 3,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044020.html"
+            ]
           },
           "2004-05": {
             "club": "Stade Rennais FC",
@@ -4989,10 +5399,26 @@
         "status": "prior_seasons_independent_recheck_pending",
         "records": {
           "2002-03": {
-            "verification": "individual_independent_audit_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Rennes",
+            "appearances": 32,
+            "starts": 25,
+            "minutes": 2219,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2002-034020.html"
+            ]
           },
           "2003-04": {
-            "verification": "individual_independent_audit_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Rennes",
+            "appearances": 28,
+            "starts": 16,
+            "minutes": 1609,
+            "goals": 3,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044020.html"
+            ]
           },
           "2004-05": {
             "club": "Stade Rennais FC",
@@ -5130,10 +5556,53 @@
         "status": "prior_seasons_independent_recheck_pending",
         "records": {
           "2002-03": {
-            "verification": "individual_independent_audit_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Rennes",
+            "appearances": 27,
+            "starts": 11,
+            "minutes": 1157,
+            "goals": 3,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2002-034020.html"
+            ]
           },
           "2003-04": {
-            "verification": "individual_independent_audit_pending"
+            "verification": "audit_report_BDFutbol_club_split",
+            "clubRecords": [
+              {
+                "club": "Metz",
+                "source": "https://www.bdfutbol.com/en/t/t2003-044010.html",
+                "externalReviewSources": [
+                  "https://www.bdfutbol.com/en/t/t2003-044010.html"
+                ],
+                "verification": "audit_report_BDFutbol_club_season",
+                "appearances": 33,
+                "starts": 33,
+                "minutes": 2757,
+                "goals": 12
+              },
+              {
+                "club": "Rennes",
+                "source": "https://www.bdfutbol.com/en/t/t2003-044020.html",
+                "externalReviewSources": [
+                  "https://www.bdfutbol.com/en/t/t2003-044020.html"
+                ],
+                "verification": "audit_report_BDFutbol_club_season",
+                "appearances": 1,
+                "starts": 1,
+                "minutes": 90,
+                "goals": 0
+              }
+            ],
+            "club": "Metz / Rennes",
+            "appearances": 34,
+            "starts": 34,
+            "minutes": 2847,
+            "goals": 12,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044010.html",
+              "https://www.bdfutbol.com/en/t/t2003-044020.html"
+            ]
           },
           "2004-05": {
             "club": "Stade Rennais FC",
@@ -5260,7 +5729,15 @@
             "verification": "individual_independent_audit_pending"
           },
           "2003-04": {
-            "verification": "individual_independent_audit_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Olympique de Marseille",
+            "appearances": 20,
+            "starts": 20,
+            "minutes": 1800,
+            "goalsConceded": 26,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044004.html"
+            ]
           },
           "2004-05": {
             "club": "Olympique de Marseille",
@@ -5269,15 +5746,21 @@
             "minutes": 2700,
             "goals": 0,
             "source": "https://www.bdfutbol.com/en/t/t2004-054004.html",
-            "verification": "BDFutbol 2004-05 lineup"
+            "verification": "BDFutbol 2004-05 lineup",
+            "goalsConceded": 29,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2004-054004.html"
+            ]
           }
         }
       },
-      "tierReview": "2004-05 리그 30경기·30선발·2700분. 시즌 당시 역할과 이전 2시즌 가중 검토를 반영한 잠정 A0; 우승·순위 자체는 평가 가점에서 제외.",
+      "tierReview": "2004-05 정규리그 30경기·30선발·2700분·0골·29실점. 검수 보고서에 따른 수치 보정. 기존 A0 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "prior 2002-03 and 2003-04 individual cross source",
         "season-specific positional role shares"
-      ]
+      ],
+      "leagueGoalsConceded": 29,
+      "preAuditTierReview": "2004-05 리그 30경기·30선발·2700분. 시즌 당시 역할과 이전 2시즌 가중 검토를 반영한 잠정 A0; 우승·순위 자체는 평가 가점에서 제외."
     },
     {
       "id": "ligue1-2004-05-marseille-jeremygavanon",
@@ -5322,7 +5805,15 @@
             "verification": "individual_independent_audit_pending"
           },
           "2003-04": {
-            "verification": "individual_independent_audit_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Olympique de Marseille",
+            "appearances": 2,
+            "starts": 2,
+            "minutes": 180,
+            "goalsConceded": 2,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044004.html"
+            ]
           },
           "2004-05": {
             "club": "Olympique de Marseille",
@@ -5331,15 +5822,21 @@
             "minutes": 720,
             "goals": 0,
             "source": "https://www.bdfutbol.com/en/t/t2004-054004.html",
-            "verification": "BDFutbol 2004-05 lineup"
+            "verification": "BDFutbol 2004-05 lineup",
+            "goalsConceded": 13,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2004-054004.html"
+            ]
           }
         }
       },
-      "tierReview": "2004-05 리그 8경기·8선발·720분. 시즌 당시 역할과 이전 2시즌 가중 검토를 반영한 잠정 B-; 우승·순위 자체는 평가 가점에서 제외.",
+      "tierReview": "2004-05 정규리그 8경기·8선발·720분·0골·13실점. 검수 보고서에 따른 수치 보정. 기존 B- 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "prior 2002-03 and 2003-04 individual cross source",
         "season-specific positional role shares"
-      ]
+      ],
+      "leagueGoalsConceded": 13,
+      "preAuditTierReview": "2004-05 리그 8경기·8선발·720분. 시즌 당시 역할과 이전 2시즌 가중 검토를 반영한 잠정 B-; 우승·순위 자체는 평가 가점에서 제외."
     },
     {
       "id": "ligue1-2004-05-marseille-abdoulayemeite",
@@ -5390,7 +5887,15 @@
             "verification": "prior_unapproved_archive_link_not_independently_reverified"
           },
           "2003-04": {
-            "verification": "individual_independent_audit_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Olympique de Marseille",
+            "appearances": 30,
+            "starts": 27,
+            "minutes": 2499,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044004.html"
+            ]
           },
           "2004-05": {
             "club": "Olympique de Marseille",
@@ -5449,7 +5954,15 @@
         "status": "prior_seasons_independent_recheck_pending",
         "records": {
           "2002-03": {
-            "verification": "individual_independent_audit_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "PSG",
+            "appearances": 31,
+            "starts": 31,
+            "minutes": 2690,
+            "goals": 1,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2002-034002.html"
+            ]
           },
           "2003-04": {
             "club": "Paris Saint-Germain FC",
@@ -5526,7 +6039,15 @@
             "verification": "prior_unapproved_archive_link_not_independently_reverified"
           },
           "2003-04": {
-            "verification": "individual_independent_audit_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Olympique de Marseille",
+            "appearances": 1,
+            "starts": 1,
+            "minutes": 90,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044004.html"
+            ]
           },
           "2004-05": {
             "club": "Olympique de Marseille",
@@ -5647,10 +6168,53 @@
         "status": "prior_seasons_independent_recheck_pending",
         "records": {
           "2002-03": {
-            "verification": "individual_independent_audit_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Strasbourg",
+            "appearances": 26,
+            "starts": 26,
+            "minutes": 2332,
+            "goals": 1,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2002-034034.html"
+            ]
           },
           "2003-04": {
-            "verification": "individual_independent_audit_pending"
+            "verification": "audit_report_BDFutbol_club_split",
+            "clubRecords": [
+              {
+                "club": "Olympique de Marseille",
+                "source": "https://www.bdfutbol.com/en/t/t2003-044004.html",
+                "externalReviewSources": [
+                  "https://www.bdfutbol.com/en/t/t2003-044004.html"
+                ],
+                "verification": "audit_report_BDFutbol_club_season",
+                "appearances": 22,
+                "starts": 17,
+                "minutes": 1559,
+                "goals": 0
+              },
+              {
+                "club": "Strasbourg",
+                "source": "https://www.bdfutbol.com/en/t/t2003-044034.html",
+                "externalReviewSources": [
+                  "https://www.bdfutbol.com/en/t/t2003-044034.html"
+                ],
+                "verification": "audit_report_BDFutbol_club_season",
+                "appearances": 1,
+                "starts": 1,
+                "minutes": 90,
+                "goals": 0
+              }
+            ],
+            "club": "Olympique de Marseille / Strasbourg",
+            "appearances": 23,
+            "starts": 18,
+            "minutes": 1649,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044004.html",
+              "https://www.bdfutbol.com/en/t/t2003-044034.html"
+            ]
           },
           "2004-05": {
             "club": "Olympique de Marseille",
@@ -5709,10 +6273,53 @@
         "status": "prior_seasons_independent_recheck_pending",
         "records": {
           "2002-03": {
-            "verification": "individual_independent_audit_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Bastia",
+            "appearances": 33,
+            "starts": 33,
+            "minutes": 2812,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2002-034003.html"
+            ]
           },
           "2003-04": {
-            "verification": "individual_independent_audit_pending"
+            "verification": "audit_report_BDFutbol_club_split",
+            "clubRecords": [
+              {
+                "club": "Bastia",
+                "source": "https://www.bdfutbol.com/en/t/t2003-044003.html",
+                "externalReviewSources": [
+                  "https://www.bdfutbol.com/en/t/t2003-044003.html"
+                ],
+                "verification": "audit_report_BDFutbol_club_season",
+                "appearances": 9,
+                "starts": 8,
+                "minutes": 731,
+                "goals": 0
+              },
+              {
+                "club": "Olympique de Marseille",
+                "source": "https://www.bdfutbol.com/en/t/t2003-044004.html",
+                "externalReviewSources": [
+                  "https://www.bdfutbol.com/en/t/t2003-044004.html"
+                ],
+                "verification": "audit_report_BDFutbol_club_season",
+                "appearances": 13,
+                "starts": 12,
+                "minutes": 1067,
+                "goals": 2
+              }
+            ],
+            "club": "Bastia / Olympique de Marseille",
+            "appearances": 22,
+            "starts": 20,
+            "minutes": 1798,
+            "goals": 2,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044003.html",
+              "https://www.bdfutbol.com/en/t/t2003-044004.html"
+            ]
           },
           "2004-05": {
             "club": "Olympique de Marseille",
@@ -5780,7 +6387,15 @@
             "verification": "prior_unapproved_archive_link_not_independently_reverified"
           },
           "2003-04": {
-            "verification": "individual_independent_audit_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Girondins de Bordeaux",
+            "appearances": 27,
+            "starts": 27,
+            "minutes": 2336,
+            "goals": 1,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044012.html"
+            ]
           },
           "2004-05": {
             "club": "Olympique de Marseille",
@@ -5839,10 +6454,26 @@
         "status": "prior_seasons_independent_recheck_pending",
         "records": {
           "2002-03": {
-            "verification": "individual_independent_audit_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Lille",
+            "appearances": 35,
+            "starts": 32,
+            "minutes": 2779,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2002-034009.html"
+            ]
           },
           "2003-04": {
-            "verification": "individual_independent_audit_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Olympique de Marseille",
+            "appearances": 20,
+            "starts": 15,
+            "minutes": 1428,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044004.html"
+            ]
           },
           "2004-05": {
             "club": "Olympique de Marseille",
@@ -6040,7 +6671,15 @@
             "verification": "individual_independent_audit_pending"
           },
           "2003-04": {
-            "verification": "individual_independent_audit_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Olympique de Marseille",
+            "appearances": 23,
+            "starts": 14,
+            "minutes": 1389,
+            "goals": 9,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044004.html"
+            ]
           },
           "2004-05": {
             "club": "Olympique de Marseille",
@@ -6099,10 +6738,80 @@
         "status": "prior_seasons_independent_recheck_pending",
         "records": {
           "2002-03": {
-            "verification": "individual_independent_audit_pending"
+            "verification": "audit_report_BDFutbol_club_split",
+            "clubRecords": [
+              {
+                "club": "Bastia",
+                "source": "https://www.bdfutbol.com/en/t/t2002-034003.html",
+                "externalReviewSources": [
+                  "https://www.bdfutbol.com/en/t/t2002-034003.html"
+                ],
+                "verification": "audit_report_BDFutbol_club_season",
+                "appearances": 19,
+                "starts": 19,
+                "minutes": 1635,
+                "goals": 4
+              },
+              {
+                "club": "Rennes",
+                "source": "https://www.bdfutbol.com/en/t/t2002-034020.html",
+                "externalReviewSources": [
+                  "https://www.bdfutbol.com/en/t/t2002-034020.html"
+                ],
+                "verification": "audit_report_BDFutbol_club_season",
+                "appearances": 15,
+                "starts": 12,
+                "minutes": 1075,
+                "goals": 0
+              }
+            ],
+            "club": "Bastia / Rennes",
+            "appearances": 34,
+            "starts": 31,
+            "minutes": 2710,
+            "goals": 4,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2002-034003.html",
+              "https://www.bdfutbol.com/en/t/t2002-034020.html"
+            ]
           },
           "2003-04": {
-            "verification": "individual_independent_audit_pending"
+            "verification": "audit_report_BDFutbol_club_split",
+            "clubRecords": [
+              {
+                "club": "Bastia",
+                "source": "https://www.bdfutbol.com/en/t/t2003-044003.html",
+                "externalReviewSources": [
+                  "https://www.bdfutbol.com/en/t/t2003-044003.html"
+                ],
+                "verification": "audit_report_BDFutbol_club_season",
+                "appearances": 19,
+                "starts": 19,
+                "minutes": 1640,
+                "goals": 0
+              },
+              {
+                "club": "Olympique de Marseille",
+                "source": "https://www.bdfutbol.com/en/t/t2003-044004.html",
+                "externalReviewSources": [
+                  "https://www.bdfutbol.com/en/t/t2003-044004.html"
+                ],
+                "verification": "audit_report_BDFutbol_club_season",
+                "appearances": 15,
+                "starts": 11,
+                "minutes": 935,
+                "goals": 3
+              }
+            ],
+            "club": "Bastia / Olympique de Marseille",
+            "appearances": 34,
+            "starts": 30,
+            "minutes": 2575,
+            "goals": 3,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044003.html",
+              "https://www.bdfutbol.com/en/t/t2003-044004.html"
+            ]
           },
           "2004-05": {
             "club": "Olympique de Marseille",
@@ -6161,7 +6870,15 @@
         "status": "prior_seasons_independent_recheck_pending",
         "records": {
           "2002-03": {
-            "verification": "individual_independent_audit_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "PSG",
+            "appearances": 32,
+            "starts": 29,
+            "minutes": 2497,
+            "goals": 4,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2002-034002.html"
+            ]
           },
           "2003-04": {
             "club": "Paris Saint-Germain FC",
@@ -6303,10 +7020,26 @@
         "status": "prior_seasons_independent_recheck_pending",
         "records": {
           "2002-03": {
-            "verification": "individual_independent_audit_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Montpellier",
+            "appearances": 33,
+            "starts": 31,
+            "minutes": 2645,
+            "goals": 4,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2002-034011.html"
+            ]
           },
           "2003-04": {
-            "verification": "individual_independent_audit_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Montpellier",
+            "appearances": 38,
+            "starts": 36,
+            "minutes": 3221,
+            "goals": 16,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044011.html"
+            ]
           },
           "2004-05": {
             "club": "Olympique de Marseille",
@@ -6368,7 +7101,15 @@
             "verification": "individual_independent_audit_pending"
           },
           "2003-04": {
-            "verification": "individual_independent_audit_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Olympique de Marseille",
+            "appearances": 10,
+            "starts": 6,
+            "minutes": 545,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044004.html"
+            ]
           },
           "2004-05": {
             "club": "Olympique de Marseille",
@@ -6439,15 +7180,21 @@
             "minutes": 3420,
             "goals": 0,
             "source": "https://www.bdfutbol.com/en/t/t2004-054008.html",
-            "verification": "BDFutbol 2004-05 lineup"
+            "verification": "BDFutbol 2004-05 lineup",
+            "goalsConceded": 34,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2004-054008.html"
+            ]
           }
         }
       },
-      "tierReview": "2004-05 리그 38경기·38선발·3420분. 시즌 당시 역할과 이전 2시즌 가중 검토를 반영한 잠정 A0; 우승·순위 자체는 평가 가점에서 제외.",
+      "tierReview": "2004-05 정규리그 38경기·38선발·3420분·0골·34실점. 검수 보고서에 따른 수치 보정. 기존 A0 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "prior 2002-03 and 2003-04 individual cross source",
         "season-specific positional role shares"
-      ]
+      ],
+      "leagueGoalsConceded": 34,
+      "preAuditTierReview": "2004-05 리그 38경기·38선발·3420분. 시즌 당시 역할과 이전 2시즌 가중 검토를 반영한 잠정 A0; 우승·순위 자체는 평가 가점에서 제외."
     },
     {
       "id": "ligue1-2004-05-saintetienne-zoumanacamara",
@@ -6489,7 +7236,15 @@
         "status": "prior_seasons_independent_recheck_pending",
         "records": {
           "2002-03": {
-            "verification": "individual_independent_audit_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Lens",
+            "appearances": 14,
+            "starts": 14,
+            "minutes": 1197,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2002-034014.html"
+            ]
           },
           "2003-04": {
             "verification": "individual_independent_audit_pending"
@@ -7112,7 +7867,15 @@
         "status": "prior_seasons_independent_recheck_pending",
         "records": {
           "2002-03": {
-            "verification": "individual_independent_audit_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Auxerre",
+            "appearances": 1,
+            "starts": 0,
+            "minutes": 7,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2002-034025.html"
+            ]
           },
           "2003-04": {
             "verification": "individual_independent_audit_pending"
@@ -7183,7 +7946,15 @@
             "verification": "prior_unapproved_archive_link_not_independently_reverified"
           },
           "2003-04": {
-            "verification": "individual_independent_audit_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Girondins de Bordeaux",
+            "appearances": 31,
+            "starts": 25,
+            "minutes": 2248,
+            "goals": 4,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044012.html"
+            ]
           },
           "2004-05": {
             "club": "AS Saint-Étienne",
@@ -7242,10 +8013,26 @@
         "status": "prior_seasons_independent_recheck_pending",
         "records": {
           "2002-03": {
-            "verification": "individual_independent_audit_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Rennes",
+            "appearances": 31,
+            "starts": 28,
+            "minutes": 2416,
+            "goals": 10,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2002-034020.html"
+            ]
           },
           "2003-04": {
-            "verification": "individual_independent_audit_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Rennes",
+            "appearances": 32,
+            "starts": 21,
+            "minutes": 1914,
+            "goals": 5,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044020.html"
+            ]
           },
           "2004-05": {
             "club": "AS Saint-Étienne",
@@ -7333,7 +8120,7 @@
       "name": "Lilian Compan",
       "nameOriginal": "Lilian Compan",
       "nameKo": "릴리앙 콩팡",
-      "born": "1977-12-30",
+      "born": "1977-04-30",
       "club": "saintetienne",
       "clubNameOriginal": "AS Saint-Étienne",
       "position": "ST",
@@ -7354,9 +8141,11 @@
       "candidateStatus": "draft",
       "verificationStatus": "current 2004-05 source checked; tactical position details provisional",
       "positionVerification": "match-by-match role share to verify",
-      "birthDateVerification": "biographical_reference_pending_standalone_audit",
+      "birthDateVerification": "audit_report_profile_source",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2004-054008.html"
+        "https://www.bdfutbol.com/en/t/t2004-054008.html",
+        "https://www.bdfutbol.com/en/j/j83714.html",
+        "https://www.fff.fr/equipe-nationale/joueur/10001-compan-lilian/fiche.html"
       ],
       "threeSeasonReview": {
         "assessmentSeasons": [
@@ -7388,7 +8177,8 @@
       "verificationNeeded": [
         "prior 2002-03 and 2003-04 individual cross source",
         "season-specific positional role shares"
-      ]
+      ],
+      "birthDateStatus": "audit_report_profile_source"
     },
     {
       "id": "ligue1-2004-05-lens-charlesitandje",
@@ -7436,10 +8226,22 @@
             "minutes": 1980,
             "goals": 0,
             "source": "https://www.bdfutbol.com/en/t/t2002-034014.html",
-            "verification": "linked_previous_archive_draft_not_independently_reverified"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "goalsConceded": 18,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2002-034014.html"
+            ]
           },
           "2003-04": {
-            "verification": "per_player_historical_research_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Lens",
+            "appearances": 35,
+            "starts": 35,
+            "minutes": 3150,
+            "goalsConceded": 42,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044014.html"
+            ]
           },
           "2004-05": {
             "club": "RC Lens",
@@ -7448,15 +8250,21 @@
             "minutes": 3420,
             "goals": 0,
             "source": "https://www.bdfutbol.com/en/t/t2004-054014.html",
-            "verification": "2004-05 BDFutbol season lineup"
+            "verification": "2004-05 BDFutbol season lineup",
+            "goalsConceded": 39,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2004-054014.html"
+            ]
           }
         }
       },
-      "tierReview": "2004-05 리그 38경기·38선발·3420분. 개인 출전 기여와 3시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 팀 최종 성적 자동 가점 없음.",
+      "tierReview": "2004-05 정규리그 38경기·38선발·3420분·0골·39실점. 검수 보고서에 따른 수치 보정. 기존 B+ 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "2002-03/2003-04 previous performances independently audit",
         "actual 2004-05 primary role and pitch positions"
-      ]
+      ],
+      "leagueGoalsConceded": 39,
+      "preAuditTierReview": "2004-05 리그 38경기·38선발·3420분. 개인 출전 기여와 3시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 팀 최종 성적 자동 가점 없음."
     },
     {
       "id": "ligue1-2004-05-lens-nicolasgillet",
@@ -7575,7 +8383,15 @@
             "verification": "per_player_historical_research_pending"
           },
           "2003-04": {
-            "verification": "per_player_historical_research_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Bastia",
+            "appearances": 14,
+            "starts": 14,
+            "minutes": 1245,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044003.html"
+            ]
           },
           "2004-05": {
             "club": "RC Lens",
@@ -7643,7 +8459,15 @@
             "verification": "linked_previous_archive_draft_not_independently_reverified"
           },
           "2003-04": {
-            "verification": "per_player_historical_research_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Lens",
+            "appearances": 26,
+            "starts": 25,
+            "minutes": 2070,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044014.html"
+            ]
           },
           "2004-05": {
             "club": "RC Lens",
@@ -7705,7 +8529,15 @@
             "verification": "per_player_historical_research_pending"
           },
           "2003-04": {
-            "verification": "per_player_historical_research_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Lens",
+            "appearances": 3,
+            "starts": 3,
+            "minutes": 270,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044014.html"
+            ]
           },
           "2004-05": {
             "club": "RC Lens",
@@ -7773,7 +8605,15 @@
             "verification": "linked_previous_archive_draft_not_independently_reverified"
           },
           "2003-04": {
-            "verification": "per_player_historical_research_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Lens",
+            "appearances": 26,
+            "starts": 24,
+            "minutes": 2160,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044014.html"
+            ]
           },
           "2004-05": {
             "club": "RC Lens",
@@ -7797,7 +8637,7 @@
       "name": "Éric Cubilier",
       "nameOriginal": "Éric Cubilier",
       "nameKo": "에리크 쿠빌리에",
-      "born": null,
+      "born": "1979-05-09",
       "club": "lens",
       "clubNameOriginal": "RC Lens",
       "position": "RB",
@@ -7818,9 +8658,11 @@
       "candidateStatus": "draft",
       "verificationStatus": "2004-05 BDFutbol source; role assignment provisional",
       "positionVerification": "match-level role frequency review pending",
-      "birthDateVerification": "unknown",
+      "birthDateVerification": "audit_report_profile_source",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2004-054014.html"
+        "https://www.bdfutbol.com/en/t/t2004-054014.html",
+        "https://www.bdfutbol.com/en/j/j84257.html",
+        "https://www.ogcnice.com/fr/fiche/2962/eric-cubilier.html"
       ],
       "threeSeasonReview": {
         "assessmentSeasons": [
@@ -7865,14 +8707,15 @@
         "2002-03/2003-04 previous performances independently audit",
         "actual 2004-05 primary role and pitch positions",
         "biographical DOB independent check"
-      ]
+      ],
+      "birthDateStatus": "audit_report_profile_source"
     },
     {
       "id": "ligue1-2004-05-lens-patrickbarul",
       "name": "Patrick Barul",
       "nameOriginal": "Patrick Barul",
       "nameKo": "파트리크 바륄",
-      "born": null,
+      "born": "1977-10-02",
       "club": "lens",
       "clubNameOriginal": "RC Lens",
       "position": "RB",
@@ -7893,9 +8736,10 @@
       "candidateStatus": "draft",
       "verificationStatus": "2004-05 BDFutbol source; role assignment provisional",
       "positionVerification": "match-level role frequency review pending",
-      "birthDateVerification": "unknown",
+      "birthDateVerification": "audit_report_profile_source",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2004-054014.html"
+        "https://www.bdfutbol.com/en/t/t2004-054014.html",
+        "https://www.bdfutbol.com/en/j/j84190.html"
       ],
       "threeSeasonReview": {
         "assessmentSeasons": [
@@ -7916,7 +8760,15 @@
             "verification": "linked_previous_archive_draft_not_independently_reverified"
           },
           "2003-04": {
-            "verification": "per_player_historical_research_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Lens",
+            "appearances": 19,
+            "starts": 17,
+            "minutes": 1524,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044014.html"
+            ]
           },
           "2004-05": {
             "club": "RC Lens",
@@ -7934,7 +8786,8 @@
         "2002-03/2003-04 previous performances independently audit",
         "actual 2004-05 primary role and pitch positions",
         "biographical DOB independent check"
-      ]
+      ],
+      "birthDateStatus": "audit_report_profile_source"
     },
     {
       "id": "ligue1-2004-05-lens-aloudiarra",
@@ -7976,10 +8829,26 @@
         "status": "previous_years_independent_checks_pending",
         "records": {
           "2002-03": {
-            "verification": "per_player_historical_research_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Le Havre",
+            "appearances": 25,
+            "starts": 15,
+            "minutes": 1526,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2002-034033.html"
+            ]
           },
           "2003-04": {
-            "verification": "per_player_historical_research_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Bastia",
+            "appearances": 35,
+            "starts": 30,
+            "minutes": 2823,
+            "goals": 4,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044003.html"
+            ]
           },
           "2004-05": {
             "club": "RC Lens",
@@ -8047,7 +8916,15 @@
             "verification": "linked_previous_archive_draft_not_independently_reverified"
           },
           "2003-04": {
-            "verification": "per_player_historical_research_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Lens",
+            "appearances": 22,
+            "starts": 15,
+            "minutes": 1393,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044014.html"
+            ]
           },
           "2004-05": {
             "club": "RC Lens",
@@ -8180,10 +9057,53 @@
         "status": "previous_years_independent_checks_pending",
         "records": {
           "2002-03": {
-            "verification": "per_player_historical_research_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "PSG",
+            "appearances": 33,
+            "starts": 33,
+            "minutes": 2813,
+            "goals": 5,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2002-034002.html"
+            ]
           },
           "2003-04": {
-            "verification": "per_player_historical_research_pending"
+            "verification": "audit_report_BDFutbol_club_split",
+            "clubRecords": [
+              {
+                "club": "PSG",
+                "source": "https://www.bdfutbol.com/en/t/t2003-044002.html",
+                "externalReviewSources": [
+                  "https://www.bdfutbol.com/en/t/t2003-044002.html"
+                ],
+                "verification": "audit_report_BDFutbol_club_season",
+                "appearances": 4,
+                "starts": 4,
+                "minutes": 300,
+                "goals": 1
+              },
+              {
+                "club": "Guingamp",
+                "source": "https://www.bdfutbol.com/en/t/t2003-044007.html",
+                "externalReviewSources": [
+                  "https://www.bdfutbol.com/en/t/t2003-044007.html"
+                ],
+                "verification": "audit_report_BDFutbol_club_season",
+                "appearances": 28,
+                "starts": 27,
+                "minutes": 2422,
+                "goals": 5
+              }
+            ],
+            "club": "PSG / Guingamp",
+            "appearances": 32,
+            "starts": 31,
+            "minutes": 2722,
+            "goals": 6,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044002.html",
+              "https://www.bdfutbol.com/en/t/t2003-044007.html"
+            ]
           },
           "2004-05": {
             "club": "RC Lens",
@@ -8251,7 +9171,15 @@
             "verification": "linked_previous_archive_draft_not_independently_reverified"
           },
           "2003-04": {
-            "verification": "per_player_historical_research_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Lens",
+            "appearances": 36,
+            "starts": 28,
+            "minutes": 2545,
+            "goals": 5,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044014.html"
+            ]
           },
           "2004-05": {
             "club": "RC Lens",
@@ -8319,7 +9247,15 @@
             "verification": "linked_previous_archive_draft_not_independently_reverified"
           },
           "2003-04": {
-            "verification": "per_player_historical_research_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Lens",
+            "appearances": 32,
+            "starts": 26,
+            "minutes": 2362,
+            "goals": 4,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044014.html"
+            ]
           },
           "2004-05": {
             "club": "RC Lens",
@@ -8405,7 +9341,7 @@
       "name": "Daniel Cousin",
       "nameOriginal": "Daniel Cousin",
       "nameKo": "다니엘 쿠쟁",
-      "born": "1977-02-02",
+      "born": "1977-02-07",
       "club": "lens",
       "clubNameOriginal": "RC Lens",
       "position": "ST",
@@ -8426,9 +9362,11 @@
       "candidateStatus": "draft",
       "verificationStatus": "2004-05 BDFutbol source; role assignment provisional",
       "positionVerification": "match-level role frequency review pending",
-      "birthDateVerification": "biographical_reference_pending_standalone_audit",
+      "birthDateVerification": "audit_report_profile_source",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2004-054014.html"
+        "https://www.bdfutbol.com/en/t/t2004-054014.html",
+        "https://www.bdfutbol.com/en/j/j95203.html",
+        "https://www.lequipe.fr/fiche/daniel-cousin/238358"
       ],
       "threeSeasonReview": {
         "assessmentSeasons": [
@@ -8443,7 +9381,15 @@
             "verification": "per_player_historical_research_pending"
           },
           "2003-04": {
-            "verification": "per_player_historical_research_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Le Mans",
+            "appearances": 33,
+            "starts": 31,
+            "minutes": 2726,
+            "goals": 11,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044031.html"
+            ]
           },
           "2004-05": {
             "club": "RC Lens",
@@ -8460,7 +9406,8 @@
       "verificationNeeded": [
         "2002-03/2003-04 previous performances independently audit",
         "actual 2004-05 primary role and pitch positions"
-      ]
+      ],
+      "birthDateStatus": "audit_report_profile_source"
     },
     {
       "id": "ligue1-2004-05-auxerre-fabiencool",
@@ -8508,7 +9455,11 @@
             "minutes": 3420,
             "goals": 0,
             "source": "https://www.bdfutbol.com/en/t/t2002-034025.html",
-            "verification": "linked_previous_archive_draft_not_independently_reverified"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "goalsConceded": 29,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2002-034025.html"
+            ]
           },
           "2003-04": {
             "club": "AJ Auxerre",
@@ -8517,7 +9468,11 @@
             "minutes": 3420,
             "goals": 0,
             "source": "https://www.bdfutbol.com/en/t/t2003-044025.html",
-            "verification": "linked_previous_archive_draft_not_independently_reverified"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "goalsConceded": 34,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044025.html"
+            ]
           },
           "2004-05": {
             "club": "AJ Auxerre",
@@ -8526,15 +9481,21 @@
             "minutes": 3376,
             "goals": 0,
             "source": "https://www.bdfutbol.com/en/t/t2004-054025.html",
-            "verification": "2004-05 BDFutbol season lineup"
+            "verification": "2004-05 BDFutbol season lineup",
+            "goalsConceded": 44,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2004-054025.html"
+            ]
           }
         }
       },
-      "tierReview": "2004-05 리그 38경기·38선발·3376분. 개인 출전 기여와 3시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 팀 최종 성적 자동 가점 없음.",
+      "tierReview": "2004-05 정규리그 38경기·38선발·3376분·0골·44실점. 검수 보고서에 따른 수치 보정. 기존 B+ 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "2002-03/2003-04 previous performances independently audit",
         "actual 2004-05 primary role and pitch positions"
-      ]
+      ],
+      "leagueGoalsConceded": 44,
+      "preAuditTierReview": "2004-05 리그 38경기·38선발·3376분. 개인 출전 기여와 3시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 팀 최종 성적 자동 가점 없음."
     },
     {
       "id": "ligue1-2004-05-auxerre-renebolf",
@@ -8603,7 +9564,7 @@
       "name": "Jean-Pascal Mignot",
       "nameOriginal": "Jean-Pascal Mignot",
       "nameKo": "장파스칼 미뇨",
-      "born": null,
+      "born": "1981-02-26",
       "club": "auxerre",
       "clubNameOriginal": "AJ Auxerre",
       "position": "CB",
@@ -8624,9 +9585,10 @@
       "candidateStatus": "draft",
       "verificationStatus": "2004-05 BDFutbol source; role assignment provisional",
       "positionVerification": "match-level role frequency review pending",
-      "birthDateVerification": "unknown",
+      "birthDateVerification": "audit_report_profile_source",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2004-054025.html"
+        "https://www.bdfutbol.com/en/t/t2004-054025.html",
+        "https://www.bdfutbol.com/en/j/j82780.html"
       ],
       "threeSeasonReview": {
         "assessmentSeasons": [
@@ -8638,7 +9600,15 @@
         "status": "previous_years_independent_checks_pending",
         "records": {
           "2002-03": {
-            "verification": "per_player_historical_research_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Auxerre",
+            "appearances": 5,
+            "starts": 2,
+            "minutes": 212,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2002-034025.html"
+            ]
           },
           "2003-04": {
             "club": "AJ Auxerre",
@@ -8665,14 +9635,15 @@
         "2002-03/2003-04 previous performances independently audit",
         "actual 2004-05 primary role and pitch positions",
         "biographical DOB independent check"
-      ]
+      ],
+      "birthDateStatus": "audit_report_profile_source"
     },
     {
       "id": "ligue1-2004-05-auxerre-stephanegrichting",
       "name": "Stéphane Grichting",
       "nameOriginal": "Stéphane Grichting",
       "nameKo": "스테판 그리히팅",
-      "born": null,
+      "born": "1979-03-30",
       "club": "auxerre",
       "clubNameOriginal": "AJ Auxerre",
       "position": "CB",
@@ -8693,9 +9664,10 @@
       "candidateStatus": "draft",
       "verificationStatus": "2004-05 BDFutbol source; role assignment provisional",
       "positionVerification": "match-level role frequency review pending",
-      "birthDateVerification": "unknown",
+      "birthDateVerification": "audit_report_profile_source",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2004-054025.html"
+        "https://www.bdfutbol.com/en/t/t2004-054025.html",
+        "https://www.bdfutbol.com/en/j/j83521.html"
       ],
       "threeSeasonReview": {
         "assessmentSeasons": [
@@ -8740,7 +9712,8 @@
         "2002-03/2003-04 previous performances independently audit",
         "actual 2004-05 primary role and pitch positions",
         "biographical DOB independent check"
-      ]
+      ],
+      "birthDateStatus": "audit_report_profile_source"
     },
     {
       "id": "ligue1-2004-05-auxerre-jeansebastienjaures",
@@ -9001,13 +9974,43 @@
             "verification": "linked_previous_archive_draft_not_independently_reverified"
           },
           "2003-04": {
-            "club": "AJ Auxerre",
-            "appearances": 31,
-            "starts": 31,
-            "minutes": 2776,
+            "club": "Olympique Lyonnais / Auxerre",
+            "appearances": 33,
+            "starts": 32,
+            "minutes": 2836,
             "goals": 1,
             "source": "https://www.bdfutbol.com/en/t/t2003-044025.html",
-            "verification": "linked_previous_archive_draft_not_independently_reverified"
+            "verification": "audit_report_BDFutbol_club_split",
+            "clubRecords": [
+              {
+                "club": "Olympique Lyonnais",
+                "source": "https://www.bdfutbol.com/en/t/t2003-044017.html",
+                "externalReviewSources": [
+                  "https://www.bdfutbol.com/en/t/t2003-044017.html"
+                ],
+                "verification": "audit_report_BDFutbol_club_season",
+                "appearances": 2,
+                "starts": 1,
+                "minutes": 60,
+                "goals": 0
+              },
+              {
+                "club": "Auxerre",
+                "source": "https://www.bdfutbol.com/en/t/t2003-044025.html",
+                "externalReviewSources": [
+                  "https://www.bdfutbol.com/en/t/t2003-044025.html"
+                ],
+                "verification": "audit_report_BDFutbol_club_season",
+                "appearances": 31,
+                "starts": 31,
+                "minutes": 2776,
+                "goals": 1
+              }
+            ],
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044017.html",
+              "https://www.bdfutbol.com/en/t/t2003-044025.html"
+            ]
           },
           "2004-05": {
             "club": "AJ Auxerre",
@@ -9066,7 +10069,15 @@
         "status": "previous_years_independent_checks_pending",
         "records": {
           "2002-03": {
-            "verification": "per_player_historical_research_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Lille",
+            "appearances": 31,
+            "starts": 18,
+            "minutes": 1843,
+            "goals": 1,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2002-034009.html"
+            ]
           },
           "2003-04": {
             "club": "Lille OSC",
@@ -9321,7 +10332,7 @@
       "name": "Kanga Akalé",
       "nameOriginal": "Kanga Akalé",
       "nameKo": "캉가 아칼레",
-      "born": null,
+      "born": "1981-03-07",
       "club": "auxerre",
       "clubNameOriginal": "AJ Auxerre",
       "position": "LW",
@@ -9342,9 +10353,10 @@
       "candidateStatus": "draft",
       "verificationStatus": "2004-05 BDFutbol source; role assignment provisional",
       "positionVerification": "match-level role frequency review pending",
-      "birthDateVerification": "unknown",
+      "birthDateVerification": "audit_report_profile_source",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2004-054025.html"
+        "https://www.bdfutbol.com/en/t/t2004-054025.html",
+        "https://www.bdfutbol.com/en/j/j8538.html"
       ],
       "threeSeasonReview": {
         "assessmentSeasons": [
@@ -9389,7 +10401,8 @@
         "2002-03/2003-04 previous performances independently audit",
         "actual 2004-05 primary role and pitch positions",
         "biographical DOB independent check"
-      ]
+      ],
+      "birthDateStatus": "audit_report_profile_source"
     },
     {
       "id": "ligue1-2004-05-auxerre-bonaventurekalou",
@@ -9508,7 +10521,15 @@
             "verification": "linked_previous_archive_draft_not_independently_reverified"
           },
           "2003-04": {
-            "verification": "per_player_historical_research_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Auxerre",
+            "appearances": 3,
+            "starts": 0,
+            "minutes": 79,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044025.html"
+            ]
           },
           "2004-05": {
             "club": "AJ Auxerre",
@@ -9629,7 +10650,15 @@
         "status": "previous_years_independent_checks_pending",
         "records": {
           "2002-03": {
-            "verification": "per_player_historical_research_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Troyes",
+            "appearances": 6,
+            "starts": 6,
+            "minutes": 540,
+            "goalsConceded": 7,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2002-034029.html"
+            ]
           },
           "2003-04": {
             "verification": "per_player_historical_research_pending"
@@ -9641,15 +10670,21 @@
             "minutes": 2970,
             "goals": 0,
             "source": "https://www.bdfutbol.com/en/t/t2004-054034.html",
-            "verification": "2004-05 BDFutbol season lineup"
+            "verification": "2004-05 BDFutbol season lineup",
+            "goalsConceded": 33,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2004-054034.html"
+            ]
           }
         }
       },
-      "tierReview": "2004-05 리그 33경기·33선발·2970분. 개인 출전 기여와 3시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 팀 최종 성적 자동 가점 없음.",
+      "tierReview": "2004-05 정규리그 33경기·33선발·2970분·0골·33실점. 검수 보고서에 따른 수치 보정. 기존 B+ 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "2002-03/2003-04 previous performances independently audit",
         "actual 2004-05 primary role and pitch positions"
-      ]
+      ],
+      "leagueGoalsConceded": 33,
+      "preAuditTierReview": "2004-05 리그 33경기·33선발·2970분. 개인 출전 기여와 3시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 팀 최종 성적 자동 가점 없음."
     },
     {
       "id": "ligue1-2004-05-strasbourg-remyvercoutre",
@@ -9697,10 +10732,22 @@
             "minutes": 180,
             "goals": 0,
             "source": "https://www.bdfutbol.com/en/t/t2002-034017.html",
-            "verification": "linked_previous_archive_draft_not_independently_reverified"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "goalsConceded": 1,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2002-034017.html"
+            ]
           },
           "2003-04": {
-            "verification": "per_player_historical_research_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Olympique Lyonnais",
+            "appearances": 2,
+            "starts": 1,
+            "minutes": 99,
+            "goalsConceded": 1,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044017.html"
+            ]
           },
           "2004-05": {
             "club": "RC Strasbourg",
@@ -9709,15 +10756,21 @@
             "minutes": 450,
             "goals": 0,
             "source": "https://www.bdfutbol.com/en/t/t2004-054034.html",
-            "verification": "2004-05 BDFutbol season lineup"
+            "verification": "2004-05 BDFutbol season lineup",
+            "goalsConceded": 10,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2004-054034.html"
+            ]
           }
         }
       },
-      "tierReview": "2004-05 리그 5경기·5선발·450분. 개인 출전 기여와 3시즌 지속성을 정성적으로 반영한 C+ 잠정 평가. 팀 최종 성적 자동 가점 없음.",
+      "tierReview": "2004-05 정규리그 5경기·5선발·450분·0골·10실점. 검수 보고서에 따른 수치 보정. 기존 C+ 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "2002-03/2003-04 previous performances independently audit",
         "actual 2004-05 primary role and pitch positions"
-      ]
+      ],
+      "leagueGoalsConceded": 10,
+      "preAuditTierReview": "2004-05 리그 5경기·5선발·450분. 개인 출전 기여와 3시즌 지속성을 정성적으로 반영한 C+ 잠정 평가. 팀 최종 성적 자동 가점 없음."
     },
     {
       "id": "ligue1-2004-05-strasbourg-cedrickante",
@@ -9762,7 +10815,15 @@
             "verification": "per_player_historical_research_pending"
           },
           "2003-04": {
-            "verification": "per_player_historical_research_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Strasbourg",
+            "appearances": 25,
+            "starts": 25,
+            "minutes": 2172,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044034.html"
+            ]
           },
           "2004-05": {
             "club": "RC Strasbourg",
@@ -9783,10 +10844,10 @@
     },
     {
       "id": "ligue1-2004-05-strasbourg-yvesdevaux",
-      "name": "Yves Devaux",
-      "nameOriginal": "Yves Devaux",
-      "nameKo": "이브 드보",
-      "born": "1975-05-17",
+      "name": "Jean-Christophe Devaux",
+      "nameOriginal": "Jean-Christophe Devaux",
+      "nameKo": "장크리스토프 드보",
+      "born": "1975-05-16",
       "club": "strasbourg",
       "clubNameOriginal": "RC Strasbourg",
       "position": "CB",
@@ -9807,9 +10868,12 @@
       "candidateStatus": "draft",
       "verificationStatus": "2004-05 BDFutbol source; role assignment provisional",
       "positionVerification": "match-level role frequency review pending",
-      "birthDateVerification": "biographical_reference_pending_standalone_audit",
+      "birthDateVerification": "audit_cross_source_profile",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2004-054034.html"
+        "https://www.bdfutbol.com/en/t/t2004-054034.html",
+        "https://www.bdfutbol.com/en/j/j84666.html",
+        "https://www.lequipe.fr/fiche/jean-christophe-devaux/123089",
+        "https://www.transfermarkt.fr/jean-christophe-devaux/profil/trainer/30562"
       ],
       "threeSeasonReview": {
         "assessmentSeasons": [
@@ -9821,10 +10885,26 @@
         "status": "previous_years_independent_checks_pending",
         "records": {
           "2002-03": {
-            "verification": "per_player_historical_research_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Strasbourg",
+            "appearances": 26,
+            "starts": 26,
+            "minutes": 2271,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2002-034034.html"
+            ]
           },
           "2003-04": {
-            "verification": "per_player_historical_research_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Strasbourg",
+            "appearances": 26,
+            "starts": 22,
+            "minutes": 1977,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044034.html"
+            ]
           },
           "2004-05": {
             "club": "RC Strasbourg",
@@ -9841,7 +10921,8 @@
       "verificationNeeded": [
         "2002-03/2003-04 previous performances independently audit",
         "actual 2004-05 primary role and pitch positions"
-      ]
+      ],
+      "birthDateStatus": "audit_cross_source_profile"
     },
     {
       "id": "ligue1-2004-05-strasbourg-karimhaggui",
@@ -10007,10 +11088,26 @@
         "status": "previous_years_independent_checks_pending",
         "records": {
           "2002-03": {
-            "verification": "per_player_historical_research_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Strasbourg",
+            "appearances": 31,
+            "starts": 28,
+            "minutes": 2537,
+            "goals": 1,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2002-034034.html"
+            ]
           },
           "2003-04": {
-            "verification": "per_player_historical_research_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Strasbourg",
+            "appearances": 31,
+            "starts": 27,
+            "minutes": 2374,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044034.html"
+            ]
           },
           "2004-05": {
             "club": "RC Strasbourg",
@@ -10069,10 +11166,26 @@
         "status": "previous_years_independent_checks_pending",
         "records": {
           "2002-03": {
-            "verification": "per_player_historical_research_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Strasbourg",
+            "appearances": 31,
+            "starts": 29,
+            "minutes": 2457,
+            "goals": 3,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2002-034034.html"
+            ]
           },
           "2003-04": {
-            "verification": "per_player_historical_research_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Strasbourg",
+            "appearances": 34,
+            "starts": 34,
+            "minutes": 3041,
+            "goals": 4,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044034.html"
+            ]
           },
           "2004-05": {
             "club": "RC Strasbourg",
@@ -10096,7 +11209,7 @@
       "name": "Pascal Johansen",
       "nameOriginal": "Pascal Johansen",
       "nameKo": "파스칼 요한센",
-      "born": "1979-06-16",
+      "born": "1979-04-28",
       "club": "strasbourg",
       "clubNameOriginal": "RC Strasbourg",
       "position": "CM",
@@ -10117,9 +11230,11 @@
       "candidateStatus": "draft",
       "verificationStatus": "2004-05 BDFutbol source; role assignment provisional",
       "positionVerification": "match-level role frequency review pending",
-      "birthDateVerification": "biographical_reference_pending_standalone_audit",
+      "birthDateVerification": "audit_report_profile_source",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t2004-054034.html"
+        "https://www.bdfutbol.com/en/t/t2004-054034.html",
+        "https://www.bdfutbol.com/en/j/j84241.html",
+        "https://www.fff.fr/equipe-nationale/joueur/10076-johansen-pascal/fiche.html"
       ],
       "threeSeasonReview": {
         "assessmentSeasons": [
@@ -10131,16 +11246,54 @@
         "status": "previous_years_independent_checks_pending",
         "records": {
           "2002-03": {
-            "club": "Olympique de Marseille",
-            "appearances": 29,
-            "starts": 26,
-            "minutes": 2413,
+            "club": "Olympique de Marseille / Strasbourg",
+            "appearances": 32,
+            "starts": 29,
+            "minutes": 2683,
             "goals": 2,
             "source": "https://www.bdfutbol.com/en/t/t2002-034004.html",
-            "verification": "linked_previous_archive_draft_not_independently_reverified"
+            "verification": "audit_report_BDFutbol_club_split",
+            "clubRecords": [
+              {
+                "club": "Olympique de Marseille",
+                "source": "https://www.bdfutbol.com/en/t/t2002-034004.html",
+                "externalReviewSources": [
+                  "https://www.bdfutbol.com/en/t/t2002-034004.html"
+                ],
+                "verification": "audit_report_BDFutbol_club_season",
+                "appearances": 29,
+                "starts": 26,
+                "minutes": 2413,
+                "goals": 2
+              },
+              {
+                "club": "Strasbourg",
+                "source": "https://www.bdfutbol.com/en/t/t2002-034034.html",
+                "externalReviewSources": [
+                  "https://www.bdfutbol.com/en/t/t2002-034034.html"
+                ],
+                "verification": "audit_report_BDFutbol_club_season",
+                "appearances": 3,
+                "starts": 3,
+                "minutes": 270,
+                "goals": 0
+              }
+            ],
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2002-034004.html",
+              "https://www.bdfutbol.com/en/t/t2002-034034.html"
+            ]
           },
           "2003-04": {
-            "verification": "per_player_historical_research_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Olympique de Marseille",
+            "appearances": 17,
+            "starts": 12,
+            "minutes": 1058,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044004.html"
+            ]
           },
           "2004-05": {
             "club": "RC Strasbourg",
@@ -10157,7 +11310,8 @@
       "verificationNeeded": [
         "2002-03/2003-04 previous performances independently audit",
         "actual 2004-05 primary role and pitch positions"
-      ]
+      ],
+      "birthDateStatus": "audit_report_profile_source"
     },
     {
       "id": "ligue1-2004-05-strasbourg-guillaumelacour",
@@ -10199,10 +11353,26 @@
         "status": "previous_years_independent_checks_pending",
         "records": {
           "2002-03": {
-            "verification": "per_player_historical_research_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Strasbourg",
+            "appearances": 20,
+            "starts": 11,
+            "minutes": 1111,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2002-034034.html"
+            ]
           },
           "2003-04": {
-            "verification": "per_player_historical_research_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Strasbourg",
+            "appearances": 26,
+            "starts": 24,
+            "minutes": 2119,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044034.html"
+            ]
           },
           "2004-05": {
             "club": "RC Strasbourg",
@@ -10264,7 +11434,15 @@
             "verification": "per_player_historical_research_pending"
           },
           "2003-04": {
-            "verification": "per_player_historical_research_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Strasbourg",
+            "appearances": 12,
+            "starts": 0,
+            "minutes": 274,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044034.html"
+            ]
           },
           "2004-05": {
             "club": "RC Strasbourg",
@@ -10323,10 +11501,26 @@
         "status": "previous_years_independent_checks_pending",
         "records": {
           "2002-03": {
-            "verification": "per_player_historical_research_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Strasbourg",
+            "appearances": 26,
+            "starts": 19,
+            "minutes": 1620,
+            "goals": 3,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2002-034034.html"
+            ]
           },
           "2003-04": {
-            "verification": "per_player_historical_research_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Strasbourg",
+            "appearances": 36,
+            "starts": 34,
+            "minutes": 2834,
+            "goals": 9,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044034.html"
+            ]
           },
           "2004-05": {
             "club": "RC Strasbourg",
@@ -10388,7 +11582,15 @@
             "verification": "per_player_historical_research_pending"
           },
           "2003-04": {
-            "verification": "per_player_historical_research_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Strasbourg",
+            "appearances": 22,
+            "starts": 14,
+            "minutes": 1431,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044034.html"
+            ]
           },
           "2004-05": {
             "club": "RC Strasbourg",
@@ -10450,7 +11652,15 @@
             "verification": "per_player_historical_research_pending"
           },
           "2003-04": {
-            "verification": "per_player_historical_research_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Strasbourg",
+            "appearances": 18,
+            "starts": 6,
+            "minutes": 780,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044034.html"
+            ]
           },
           "2004-05": {
             "club": "RC Strasbourg",
@@ -10509,10 +11719,26 @@
         "status": "previous_years_independent_checks_pending",
         "records": {
           "2002-03": {
-            "verification": "per_player_historical_research_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Troyes",
+            "appearances": 20,
+            "starts": 12,
+            "minutes": 1086,
+            "goals": 3,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2002-034029.html"
+            ]
           },
           "2003-04": {
-            "verification": "per_player_historical_research_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Strasbourg",
+            "appearances": 23,
+            "starts": 22,
+            "minutes": 1832,
+            "goals": 9,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044034.html"
+            ]
           },
           "2004-05": {
             "club": "RC Strasbourg",
@@ -10648,7 +11874,15 @@
             "verification": "per_player_historical_research_pending"
           },
           "2003-04": {
-            "verification": "per_player_historical_research_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Strasbourg",
+            "appearances": 2,
+            "starts": 0,
+            "minutes": 12,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2003-044034.html"
+            ]
           },
           "2004-05": {
             "club": "RC Strasbourg",

@@ -16,7 +16,7 @@ ck(ps.every(p=>p.nameKo&&p.nameOriginal&&p.clubNameOriginal&&(p.born===null||/^\
 ck(ps.every(p=>qs.includes(p.club)&&positions.includes(p.position)&&grades.includes(p.tier)&&p.review==='draft_unapproved'),'positions clubs grades');
 ck(ps.every(p=>p.leagueAppearances>0&&p.leagueStarts>=0&&p.leagueStarts<=p.leagueAppearances&&p.leagueMinutes>0),'2006-07 actual play');
 ck(ps.every(p=>p.threeSeasonReview?.assessmentSeasons?.join(',')==='2004-05,2005-06,2006-07'),'3 season periods');
-ck(ps.every(p=>p.sources?.length===1&&p.sources[0].startsWith('https://www.bdfutbol.com/en/t/t2006-07')),'independent current roster source');
+ck(ps.every(p=>Array.isArray(p.sources)&&p.sources.some(s=>typeof s==='string'&&s.startsWith('https://www.bdfutbol.com/en/t/t2006-07'))&&p.sources.every(s=>typeof s==='string'&&s.startsWith('https://'))),'independent current roster source');
 ck(ps.filter(p=>!p.born).length===d.meta.historicalValidation.birthDatesMissing,'missing birth count');
 for(const c of qs){let a=ps.filter(p=>p.club===c);ck(a.filter(p=>p.role==='starter').length===11,c+' 11 starters');for(const pos of positions)ck(a.filter(p=>p.position===pos&&p.role==='backup').length<=1,c+' '+pos+' <=1 backup')}
 for(const pos of positions){let a=ps.filter(p=>p.position===pos).sort((x,y)=>x.rank-y.rank);ck(a.length>0&&a.every((p,i)=>p.rank===i+1),pos+' rank 1..N');ck(a.every((p,i)=>!i||grades.indexOf(a[i-1].tier)<=grades.indexOf(p.tier)),pos+' grade order')}

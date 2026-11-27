@@ -106,7 +106,9 @@
         "Jean-Louis Montero name and 34 league matches corrected",
         "Di Rocco scoring conflicting records (8 and 9), adopted 8 provisionally.",
         "Sylvain Wiltord ST; Ali Benarbia RW; PSG Okocha CM, Ducrocq DM and Aliou Cissé CB based on contemporary match reports."
-      ]
+      ],
+      "birthDatesMissing": 0,
+      "birthDateVerificationStatus": "Report-backed missing/corrected DOBs applied; remaining source conflicts pending; not a complete independent DOB audit."
     },
     "reviewNotes": [
       "Historically named Division 1. 8 next-season actual UEFA/Intertoto clubs only; 18-club standings retained intact.",
@@ -123,7 +125,18 @@
       "Sedan striker Di Rocco goal total differs by provider (8/9). Current working figure eight pending primary record adjudication.",
       "Contemporaneous March 2000 Bordeaux 4-4-2 lineup identifies Sylvain Wiltord with Lilian Laslandes as starting pair: moved from RW to ST.",
       "1999-00 PSG 4-4-2 reportage: Ali Benarbia right-side playmaker, Jay-Jay Okocha deeper central midfield, Pierre Ducrocq DM, Aliou Cissé CB; previous cross-position assignments corrected."
-    ]
+    ],
+    "segment1CorrectionAudit": {
+      "scope": "Ligue 1 1999-00 to 2007-08 report-backed factual corrections; qualitative and conflicting-source items pending",
+      "report": "FOOTBALL_AUDIT_LIGUE1_SEGMENT_1_CORRECTIONS.md",
+      "auditBase": "eb4fe7c97c7e5c2d6543531707bf7b189b0f4764",
+      "integrationBase": "cae681f5b53fd0afeda61f7bb5867c5b8a4e061c",
+      "changes": 191,
+      "pending": 82,
+      "reportSource": "https://chatgpt.com/library?file_id=libfile_f6a1546b959c8191a4a016865c777460&account_id=personal",
+      "details": "audit/ligue1-segment1-corrections.json",
+      "review": "draft_unapproved"
+    }
   },
   "clubs": [
     {
@@ -677,22 +690,36 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Monaco",
+            "appearances": 32,
+            "starts": 32,
+            "minutes": 2869,
+            "goalsConceded": 30,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994018.html"
+            ]
           },
           "1999-00": {
             "appearances": 24,
             "starts": 24,
             "goals": null,
             "verification": "BDFutbol_individual_season_directly_verified",
-            "source": "https://www.bdfutbol.com/en/t/t1999-004018.html"
+            "source": "https://www.bdfutbol.com/en/t/t1999-004018.html",
+            "goalsConceded": 26,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004018.html"
+            ]
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "대표 선발; 24회 리그 선발/24회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 A0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.",
+      "tierReview": "1999-00 정규리그 24경기·24선발·2155분·미확인골·26실점. 검수 보고서에 따른 수치 보정. 기존 A0 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록"
-      ]
+      ],
+      "leagueGoalsConceded": 26,
+      "preAuditTierReview": "대표 선발; 24회 리그 선발/24회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 A0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료."
     },
     {
       "id": "ligue1-1999-00-monaco-tony-sylva",
@@ -710,7 +737,7 @@
       "review": "draft_unapproved",
       "leagueAppearances": 6,
       "leagueStarts": 5,
-      "leagueMinutes": null,
+      "leagueMinutes": 455,
       "appearanceScope": "domestic_league_only",
       "positionVerification": "needs_review",
       "verificationReason": "리그 6경기 중 5선발: 백업 GK로 적격",
@@ -750,15 +777,22 @@
             "starts": 5,
             "goals": null,
             "verification": "BDFutbol_individual_season_directly_verified",
-            "source": "https://www.bdfutbol.com/en/t/t1999-004018.html"
+            "source": "https://www.bdfutbol.com/en/t/t1999-004018.html",
+            "minutes": 455,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004018.html"
+            ],
+            "goalsConceded": 4
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "주요 후보; 5회 리그 선발/6회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B- 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.",
+      "tierReview": "1999-00 정규리그 6경기·5선발·455분·미확인골·4실점. 검수 보고서에 따른 수치 보정. 기존 B- 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록"
-      ]
+      ],
+      "leagueGoalsConceded": 4,
+      "preAuditTierReview": "주요 후보; 5회 리그 선발/6회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B- 잠정 평가. 이전 두 시즌 정량 교차검증 미완료."
     },
     {
       "id": "ligue1-1999-00-monaco-rafael-marquez",
@@ -875,7 +909,15 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Monaco",
+            "appearances": 23,
+            "starts": 18,
+            "minutes": 1694,
+            "goals": 1,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994018.html"
+            ]
           },
           "1999-00": {
             "appearances": 25,
@@ -908,7 +950,7 @@
       "review": "draft_unapproved",
       "leagueAppearances": 17,
       "leagueStarts": 15,
-      "leagueMinutes": null,
+      "leagueMinutes": 1403,
       "appearanceScope": "domestic_league_only",
       "positionVerification": "needs_review",
       "verificationReason": "CB/수비라인 내 세부 위치 경기별 재확인",
@@ -948,15 +990,20 @@
             "starts": 15,
             "goals": 0,
             "verification": "BDFutbol_individual_season_directly_verified",
-            "source": "https://www.bdfutbol.com/en/t/t1999-004018.html"
+            "source": "https://www.bdfutbol.com/en/t/t1999-004018.html",
+            "minutes": 1403,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004018.html"
+            ]
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "주요 후보; 15회 리그 선발/17회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.",
+      "tierReview": "1999-00 정규리그 17경기·15선발·1403분·0골. 검수 보고서에 따른 수치 보정. 기존 B0 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록"
-      ]
+      ],
+      "preAuditTierReview": "주요 후보; 15회 리그 선발/17회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료."
     },
     {
       "id": "ligue1-1999-00-monaco-philippe-leonard",
@@ -964,7 +1011,7 @@
       "name": "Philippe Léonard",
       "nameKo": "필리프 레오나르",
       "nameOriginal": "Philippe Léonard",
-      "born": "1974-02-12",
+      "born": "1974-02-14",
       "club": "monaco",
       "clubNameOriginal": "AS Monaco FC",
       "role": "starter",
@@ -974,19 +1021,22 @@
       "review": "draft_unapproved",
       "leagueAppearances": 19,
       "leagueStarts": 17,
-      "leagueMinutes": null,
+      "leagueMinutes": 1390,
       "appearanceScope": "domestic_league_only",
       "positionVerification": "provisional_source_crosscheck",
       "verificationReason": null,
       "sources": [
         "https://www.bdfutbol.com/en/t/t1999-004018.html",
         "https://fbref.com/en/squads/fd6114db/1999-2000/Monaco-Stats",
-        "https://www.national-football-teams.com/club/841/1999_1/As_Monaco.html"
+        "https://www.national-football-teams.com/club/841/1999_1/As_Monaco.html",
+        "https://www.bdfutbol.com/en/j/j84825.html",
+        "https://www.asmonaco.com/fr/joueurs/philippe-leonard",
+        "https://www.deux-zero.com/ligue-1/buteurs-epreuve/edition/1999-2000/equipe/0/joueur/2217"
       ],
       "candidateStatus": "draft",
       "evidence": {
         "currentSeason": "https://www.bdfutbol.com/en/t/t1999-004018.html",
-        "birthSource": null,
+        "birthSource": "https://www.bdfutbol.com/en/j/j84825.html",
         "previousTwoSeasons": []
       },
       "season": "1999-00",
@@ -1007,22 +1057,38 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Monaco",
+            "appearances": 16,
+            "starts": 16,
+            "minutes": 1339,
+            "goals": 1,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994018.html"
+            ]
           },
           "1999-00": {
             "appearances": 19,
             "starts": 17,
             "goals": 2,
             "verification": "BDFutbol_individual_season_directly_verified",
-            "source": "https://www.bdfutbol.com/en/t/t1999-004018.html"
+            "source": "https://www.bdfutbol.com/en/t/t1999-004018.html",
+            "minutes": 1390,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004018.html",
+              "https://www.deux-zero.com/ligue-1/buteurs-epreuve/edition/1999-2000/equipe/0/joueur/2217"
+            ]
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "대표 선발; 17회 리그 선발/19회 출전, 2골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.",
+      "tierReview": "1999-00 정규리그 19경기·17선발·1390분·2골. 검수 보고서에 따른 수치 보정. 기존 B+ 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록"
-      ]
+      ],
+      "birthDateVerification": "audit_report_profile_source",
+      "birthDateStatus": "audit_report_profile_source",
+      "preAuditTierReview": "대표 선발; 17회 리그 선발/19회 출전, 2골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료."
     },
     {
       "id": "ligue1-1999-00-monaco-john-arne-riise",
@@ -1040,14 +1106,15 @@
       "review": "draft_unapproved",
       "leagueAppearances": 21,
       "leagueStarts": 10,
-      "leagueMinutes": null,
+      "leagueMinutes": 1059,
       "appearanceScope": "domestic_league_only",
       "positionVerification": "needs_review",
       "verificationReason": "당시 좌측 수비와 측면 미드필더 역할 구분 필요",
       "sources": [
         "https://www.bdfutbol.com/en/t/t1999-004018.html",
         "https://fbref.com/en/squads/fd6114db/1999-2000/Monaco-Stats",
-        "https://www.national-football-teams.com/club/841/1999_1/As_Monaco.html"
+        "https://www.national-football-teams.com/club/841/1999_1/As_Monaco.html",
+        "https://www.deux-zero.com/ligue-1/buteurs-epreuve/edition/1999-2000/equipe/0/joueur/3180"
       ],
       "candidateStatus": "draft",
       "evidence": {
@@ -1073,22 +1140,36 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Monaco",
+            "appearances": 7,
+            "starts": 4,
+            "minutes": 321,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994018.html"
+            ]
           },
           "1999-00": {
             "appearances": 21,
             "starts": 10,
             "goals": 1,
             "verification": "BDFutbol_individual_season_directly_verified",
-            "source": "https://www.bdfutbol.com/en/t/t1999-004018.html"
+            "source": "https://www.bdfutbol.com/en/t/t1999-004018.html",
+            "minutes": 1059,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004018.html",
+              "https://www.deux-zero.com/ligue-1/buteurs-epreuve/edition/1999-2000/equipe/0/joueur/3180"
+            ]
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "주요 후보; 10회 리그 선발/21회 출전, 1골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B- 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.",
+      "tierReview": "1999-00 정규리그 21경기·10선발·1059분·1골. 검수 보고서에 따른 수치 보정. 기존 B- 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록"
-      ]
+      ],
+      "preAuditTierReview": "주요 후보; 10회 리그 선발/21회 출전, 1골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B- 잠정 평가. 이전 두 시즌 정량 교차검증 미완료."
     },
     {
       "id": "ligue1-1999-00-monaco-willy-sagnol",
@@ -1139,7 +1220,15 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Monaco",
+            "appearances": 20,
+            "starts": 19,
+            "minutes": 1629,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994018.html"
+            ]
           },
           "1999-00": {
             "appearances": 26,
@@ -1176,7 +1265,7 @@
       "leagueStarts": 7,
       "leagueAppearances": 8,
       "leagueGoals": 0,
-      "leagueMinutes": null,
+      "leagueMinutes": 657,
       "appearanceScope": "domestic_league_only",
       "candidateStatus": "draft",
       "verificationStatus": "league_appearance_starts_crosschecked_BDFutbol_partial_position_verification",
@@ -1201,22 +1290,35 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Monaco",
+            "appearances": 7,
+            "starts": 2,
+            "minutes": 339,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994018.html"
+            ]
           },
           "1999-00": {
             "appearances": 8,
             "starts": 7,
             "goals": 0,
             "verification": "BDFutbol_individual_season_directly_verified",
-            "source": "https://www.bdfutbol.com/en/t/t1999-004018.html"
+            "source": "https://www.bdfutbol.com/en/t/t1999-004018.html",
+            "minutes": 657,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004018.html"
+            ]
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "주요 후보; 7회 리그 선발/8회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B- 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.",
+      "tierReview": "1999-00 정규리그 8경기·7선발·657분·0골. 검수 보고서에 따른 수치 보정. 기존 B- 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록"
-      ]
+      ],
+      "preAuditTierReview": "주요 후보; 7회 리그 선발/8회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B- 잠정 평가. 이전 두 시즌 정량 교차검증 미완료."
     },
     {
       "id": "ligue1-1999-00-monaco-costinha",
@@ -1234,14 +1336,15 @@
       "review": "draft_unapproved",
       "leagueAppearances": 28,
       "leagueStarts": 25,
-      "leagueMinutes": null,
+      "leagueMinutes": 2231,
       "appearanceScope": "domestic_league_only",
       "positionVerification": "provisional_source_crosscheck",
       "verificationReason": null,
       "sources": [
         "https://www.bdfutbol.com/en/t/t1999-004018.html",
         "https://fbref.com/en/squads/fd6114db/1999-2000/Monaco-Stats",
-        "https://www.national-football-teams.com/club/841/1999_1/As_Monaco.html"
+        "https://www.national-football-teams.com/club/841/1999_1/As_Monaco.html",
+        "https://www.deux-zero.com/ligue-1/buteurs-epreuve/edition/1999-2000/equipe/0/joueur/923"
       ],
       "candidateStatus": "draft",
       "evidence": {
@@ -1267,22 +1370,36 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Monaco",
+            "appearances": 21,
+            "starts": 14,
+            "minutes": 1426,
+            "goals": 2,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994018.html"
+            ]
           },
           "1999-00": {
             "appearances": 28,
             "starts": 25,
             "goals": 1,
             "verification": "BDFutbol_individual_season_directly_verified",
-            "source": "https://www.bdfutbol.com/en/t/t1999-004018.html"
+            "source": "https://www.bdfutbol.com/en/t/t1999-004018.html",
+            "minutes": 2231,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004018.html",
+              "https://www.deux-zero.com/ligue-1/buteurs-epreuve/edition/1999-2000/equipe/0/joueur/923"
+            ]
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "대표 선발; 25회 리그 선발/28회 출전, 1골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 A- 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.",
+      "tierReview": "1999-00 정규리그 28경기·25선발·2231분·1골. 검수 보고서에 따른 수치 보정. 기존 A- 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록"
-      ]
+      ],
+      "preAuditTierReview": "대표 선발; 25회 리그 선발/28회 출전, 1골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 A- 잠정 평가. 이전 두 시즌 정량 교차검증 미완료."
     },
     {
       "id": "ligue1-1999-00-monaco-martin-djetou",
@@ -1300,7 +1417,7 @@
       "review": "draft_unapproved",
       "leagueAppearances": 22,
       "leagueStarts": 20,
-      "leagueMinutes": null,
+      "leagueMinutes": 1765,
       "appearanceScope": "domestic_league_only",
       "positionVerification": "needs_review",
       "verificationReason": "중앙 수비수와 수비형 미드필더 출전 비율 재검토",
@@ -1333,22 +1450,35 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Monaco",
+            "appearances": 15,
+            "starts": 14,
+            "minutes": 1190,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994018.html"
+            ]
           },
           "1999-00": {
             "appearances": 22,
             "starts": 20,
             "goals": 0,
             "verification": "BDFutbol_individual_season_directly_verified",
-            "source": "https://www.bdfutbol.com/en/t/t1999-004018.html"
+            "source": "https://www.bdfutbol.com/en/t/t1999-004018.html",
+            "minutes": 1765,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004018.html"
+            ]
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "주요 후보; 20회 리그 선발/22회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.",
+      "tierReview": "1999-00 정규리그 22경기·20선발·1765분·0골. 검수 보고서에 따른 수치 보정. 기존 B+ 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록"
-      ]
+      ],
+      "preAuditTierReview": "주요 후보; 20회 리그 선발/22회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료."
     },
     {
       "id": "ligue1-1999-00-monaco-sabri-lamouchi",
@@ -1399,7 +1529,15 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Monaco",
+            "appearances": 24,
+            "starts": 20,
+            "minutes": 1785,
+            "goals": 2,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994018.html"
+            ]
           },
           "1999-00": {
             "appearances": 32,
@@ -1502,7 +1640,7 @@
       "leagueStarts": 5,
       "leagueAppearances": 15,
       "leagueGoals": 0,
-      "leagueMinutes": null,
+      "leagueMinutes": 477,
       "appearanceScope": "domestic_league_only",
       "candidateStatus": "draft",
       "verificationStatus": "league_appearance_starts_crosschecked_BDFutbol_partial_position_verification",
@@ -1527,22 +1665,35 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Monaco",
+            "appearances": 4,
+            "starts": 0,
+            "minutes": 164,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994018.html"
+            ]
           },
           "1999-00": {
             "appearances": 15,
             "starts": 5,
             "goals": 0,
             "verification": "BDFutbol_individual_season_directly_verified",
-            "source": "https://www.bdfutbol.com/en/t/t1999-004018.html"
+            "source": "https://www.bdfutbol.com/en/t/t1999-004018.html",
+            "minutes": 477,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004018.html"
+            ]
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "주요 후보; 5회 리그 선발/15회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 C+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.",
+      "tierReview": "1999-00 정규리그 15경기·5선발·477분·0골. 검수 보고서에 따른 수치 보정. 기존 C+ 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록"
-      ]
+      ],
+      "preAuditTierReview": "주요 후보; 5회 리그 선발/15회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 C+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료."
     },
     {
       "id": "ligue1-1999-00-monaco-ludovic-giuly",
@@ -1593,7 +1744,15 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Monaco",
+            "appearances": 32,
+            "starts": 26,
+            "minutes": 2365,
+            "goals": 8,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994018.html"
+            ]
           },
           "1999-00": {
             "appearances": 33,
@@ -1659,7 +1818,15 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "PSG",
+            "appearances": 31,
+            "starts": 30,
+            "minutes": 2669,
+            "goals": 9,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994002.html"
+            ]
           },
           "1999-00": {
             "appearances": 34,
@@ -1725,7 +1892,15 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Monaco",
+            "appearances": 27,
+            "starts": 24,
+            "minutes": 2163,
+            "goals": 12,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994018.html"
+            ]
           },
           "1999-00": {
             "appearances": 30,
@@ -1762,12 +1937,13 @@
       "leagueStarts": 7,
       "leagueAppearances": 20,
       "leagueGoals": 2,
-      "leagueMinutes": null,
+      "leagueMinutes": 761,
       "appearanceScope": "domestic_league_only",
       "candidateStatus": "draft",
       "verificationStatus": "league_appearance_starts_crosschecked_BDFutbol_partial_position_verification",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t1999-004018.html"
+        "https://www.bdfutbol.com/en/t/t1999-004018.html",
+        "https://www.deux-zero.com/ligue-1/buteurs-epreuve/edition/1999-2000/equipe/0/joueur/3060"
       ],
       "evidence": {
         "currentSeason": "https://www.bdfutbol.com/en/t/t1999-004018.html",
@@ -1794,15 +1970,21 @@
             "starts": 7,
             "goals": 2,
             "verification": "BDFutbol_individual_season_directly_verified",
-            "source": "https://www.bdfutbol.com/en/t/t1999-004018.html"
+            "source": "https://www.bdfutbol.com/en/t/t1999-004018.html",
+            "minutes": 761,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004018.html",
+              "https://www.deux-zero.com/ligue-1/buteurs-epreuve/edition/1999-2000/equipe/0/joueur/3060"
+            ]
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "주요 후보; 7회 리그 선발/20회 출전, 2골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B- 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.",
+      "tierReview": "1999-00 정규리그 20경기·7선발·761분·2골. 검수 보고서에 따른 수치 보정. 기존 B- 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록"
-      ]
+      ],
+      "preAuditTierReview": "주요 후보; 7회 리그 선발/20회 출전, 2골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B- 잠정 평가. 이전 두 시즌 정량 교차검증 미완료."
     },
     {
       "id": "ligue1-1999-00-psg-bernard-lama",
@@ -1853,22 +2035,36 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "PSG",
+            "appearances": 32,
+            "starts": 32,
+            "minutes": 2880,
+            "goalsConceded": 31,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994002.html"
+            ]
           },
           "1999-00": {
             "appearances": 33,
             "starts": 33,
             "goals": null,
             "verification": "BDFutbol_individual_season_directly_verified",
-            "source": "https://www.bdfutbol.com/en/t/t1999-004002.html"
+            "source": "https://www.bdfutbol.com/en/t/t1999-004002.html",
+            "goalsConceded": 38,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004002.html"
+            ]
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "대표 선발; 33회 리그 선발/33회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 A0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.",
+      "tierReview": "1999-00 정규리그 33경기·33선발·2970분·미확인골·38실점. 검수 보고서에 따른 수치 보정. 기존 A0 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록"
-      ]
+      ],
+      "leagueGoalsConceded": 38,
+      "preAuditTierReview": "대표 선발; 33회 리그 선발/33회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 A0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료."
     },
     {
       "id": "ligue1-1999-00-psg-dominique-casagrande",
@@ -1890,7 +2086,7 @@
       "leagueStarts": 1,
       "leagueAppearances": 1,
       "leagueGoals": null,
-      "leagueMinutes": null,
+      "leagueMinutes": 90,
       "appearanceScope": "domestic_league_only",
       "candidateStatus": "draft",
       "verificationStatus": "league_appearance_starts_crosschecked_BDFutbol_partial_position_verification",
@@ -1915,22 +2111,37 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "PSG",
+            "appearances": 2,
+            "starts": 2,
+            "minutes": 180,
+            "goalsConceded": 4,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994002.html"
+            ]
           },
           "1999-00": {
             "appearances": 1,
             "starts": 1,
             "goals": null,
             "verification": "BDFutbol_individual_season_directly_verified",
-            "source": "https://www.bdfutbol.com/en/t/t1999-004002.html"
+            "source": "https://www.bdfutbol.com/en/t/t1999-004002.html",
+            "minutes": 90,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004002.html"
+            ],
+            "goalsConceded": 2
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "주요 후보; 1회 리그 선발/1회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 C0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.",
+      "tierReview": "1999-00 정규리그 1경기·1선발·90분·미확인골·2실점. 검수 보고서에 따른 수치 보정. 기존 C0 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록"
-      ]
+      ],
+      "leagueGoalsConceded": 2,
+      "preAuditTierReview": "주요 후보; 1회 리그 선발/1회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 C0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료."
     },
     {
       "id": "ligue1-1999-00-psg-eric-rabesandratana",
@@ -1981,7 +2192,15 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "PSG",
+            "appearances": 28,
+            "starts": 27,
+            "minutes": 2433,
+            "goals": 1,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994002.html"
+            ]
           },
           "1999-00": {
             "appearances": 33,
@@ -2048,7 +2267,15 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "PSG",
+            "appearances": 8,
+            "starts": 8,
+            "minutes": 679,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994002.html"
+            ]
           },
           "1999-00": {
             "appearances": 25,
@@ -2082,7 +2309,7 @@
       "review": "draft_unapproved",
       "leagueAppearances": 15,
       "leagueStarts": 14,
-      "leagueMinutes": null,
+      "leagueMinutes": 1165,
       "appearanceScope": "domestic_league_only",
       "positionVerification": "needs_review",
       "verificationReason": "PSGMAG 당시 CB 선발 XI의 2번째 선수; 출전 수가 적어 César와 비교 필요",
@@ -2115,22 +2342,35 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Strasbourg",
+            "appearances": 32,
+            "starts": 32,
+            "minutes": 2880,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994034.html"
+            ]
           },
           "1999-00": {
             "appearances": 15,
             "starts": 14,
             "goals": 0,
             "verification": "BDFutbol_individual_season_directly_verified",
-            "source": "https://www.bdfutbol.com/en/t/t1999-004002.html"
+            "source": "https://www.bdfutbol.com/en/t/t1999-004002.html",
+            "minutes": 1165,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004002.html"
+            ]
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "주요 후보; 14회 리그 선발/15회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.",
+      "tierReview": "1999-00 정규리그 15경기·14선발·1165분·0골. 검수 보고서에 따른 수치 보정. 기존 B0 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록"
-      ]
+      ],
+      "preAuditTierReview": "주요 후보; 14회 리그 선발/15회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료."
     },
     {
       "id": "ligue1-1999-00-psg-nicolas-laspalles",
@@ -2181,7 +2421,42 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_club_split",
+            "clubRecords": [
+              {
+                "club": "PSG",
+                "source": "https://www.bdfutbol.com/en/t/t1998-994002.html",
+                "externalReviewSources": [
+                  "https://www.bdfutbol.com/en/t/t1998-994002.html"
+                ],
+                "verification": "audit_report_BDFutbol_club_season",
+                "appearances": 5,
+                "starts": 4,
+                "minutes": 361,
+                "goals": 0
+              },
+              {
+                "club": "Lens",
+                "source": "https://www.bdfutbol.com/en/t/t1998-994014.html",
+                "externalReviewSources": [
+                  "https://www.bdfutbol.com/en/t/t1998-994014.html"
+                ],
+                "verification": "audit_report_BDFutbol_club_season",
+                "appearances": 10,
+                "starts": 8,
+                "minutes": 748,
+                "goals": 1
+              }
+            ],
+            "club": "PSG / Lens",
+            "appearances": 15,
+            "starts": 12,
+            "minutes": 1109,
+            "goals": 1,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994002.html",
+              "https://www.bdfutbol.com/en/t/t1998-994014.html"
+            ]
           },
           "1999-00": {
             "appearances": 21,
@@ -2247,7 +2522,15 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "PSG",
+            "appearances": 31,
+            "starts": 29,
+            "minutes": 2607,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994002.html"
+            ]
           },
           "1999-00": {
             "appearances": 23,
@@ -2313,7 +2596,15 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "PSG",
+            "appearances": 30,
+            "starts": 29,
+            "minutes": 2580,
+            "goals": 3,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994002.html"
+            ]
           },
           "1999-00": {
             "appearances": 20,
@@ -2380,7 +2671,15 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "PSG",
+            "appearances": 28,
+            "starts": 26,
+            "minutes": 2202,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994002.html"
+            ]
           },
           "1999-00": {
             "appearances": 33,
@@ -2418,7 +2717,7 @@
       "leagueStarts": 13,
       "leagueAppearances": 28,
       "leagueGoals": 0,
-      "leagueMinutes": null,
+      "leagueMinutes": 1410,
       "appearanceScope": "domestic_league_only",
       "candidateStatus": "draft",
       "verificationStatus": "league_appearance_starts_crosschecked_BDFutbol_partial_position_verification",
@@ -2443,22 +2742,35 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Rennes",
+            "appearances": 28,
+            "starts": 26,
+            "minutes": 2317,
+            "goals": 2,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994020.html"
+            ]
           },
           "1999-00": {
             "appearances": 28,
             "starts": 13,
             "goals": 0,
             "verification": "BDFutbol_individual_season_directly_verified",
-            "source": "https://www.bdfutbol.com/en/t/t1999-004002.html"
+            "source": "https://www.bdfutbol.com/en/t/t1999-004002.html",
+            "minutes": 1410,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004002.html"
+            ]
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "주요 후보; 13회 리그 선발/28회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.",
+      "tierReview": "1999-00 정규리그 28경기·13선발·1410분·0골. 검수 보고서에 따른 수치 보정. 기존 B0 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록"
-      ]
+      ],
+      "preAuditTierReview": "주요 후보; 13회 리그 선발/28회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료."
     },
     {
       "id": "ligue1-1999-00-psg-jay-jay-okocha",
@@ -2509,7 +2821,15 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "PSG",
+            "appearances": 25,
+            "starts": 23,
+            "minutes": 1837,
+            "goals": 4,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994002.html"
+            ]
           },
           "1999-00": {
             "appearances": 23,
@@ -2547,7 +2867,7 @@
       "leagueStarts": 8,
       "leagueAppearances": 16,
       "leagueGoals": 0,
-      "leagueMinutes": null,
+      "leagueMinutes": 806,
       "appearanceScope": "domestic_league_only",
       "candidateStatus": "draft",
       "verificationStatus": "league_appearance_starts_crosschecked_BDFutbol_partial_position_verification",
@@ -2579,15 +2899,20 @@
             "starts": 8,
             "goals": 0,
             "verification": "BDFutbol_individual_season_directly_verified",
-            "source": "https://www.bdfutbol.com/en/t/t1999-004002.html"
+            "source": "https://www.bdfutbol.com/en/t/t1999-004002.html",
+            "minutes": 806,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004002.html"
+            ]
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "주요 후보; 8회 리그 선발/16회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B- 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.",
+      "tierReview": "1999-00 정규리그 16경기·8선발·806분·0골. 검수 보고서에 따른 수치 보정. 기존 B- 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록"
-      ]
+      ],
+      "preAuditTierReview": "주요 후보; 8회 리그 선발/16회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B- 잠정 평가. 이전 두 시즌 정량 교차검증 미완료."
     },
     {
       "id": "ligue1-1999-00-psg-laurent-robert",
@@ -2639,7 +2964,15 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Montpellier",
+            "appearances": 32,
+            "starts": 32,
+            "minutes": 2745,
+            "goals": 11,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994011.html"
+            ]
           },
           "1999-00": {
             "appearances": 28,
@@ -2706,7 +3039,15 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Girondins de Bordeaux",
+            "appearances": 25,
+            "starts": 25,
+            "minutes": 2153,
+            "goals": 3,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994012.html"
+            ]
           },
           "1999-00": {
             "appearances": 27,
@@ -2810,12 +3151,13 @@
       "leagueStarts": 16,
       "leagueAppearances": 21,
       "leagueGoals": 8,
-      "leagueMinutes": null,
+      "leagueMinutes": 1321,
       "appearanceScope": "domestic_league_only",
       "candidateStatus": "draft",
       "verificationStatus": "league_appearance_starts_crosschecked_BDFutbol_partial_position_verification",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t1999-004002.html"
+        "https://www.bdfutbol.com/en/t/t1999-004002.html",
+        "https://www.deux-zero.com/ligue-1/buteurs-epreuve/edition/1999-2000/equipe/0/joueur/2329"
       ],
       "evidence": {
         "currentSeason": "https://www.bdfutbol.com/en/t/t1999-004002.html",
@@ -2835,22 +3177,36 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "PSG",
+            "appearances": 11,
+            "starts": 8,
+            "minutes": 706,
+            "goals": 3,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994002.html"
+            ]
           },
           "1999-00": {
             "appearances": 21,
             "starts": 16,
             "goals": 8,
             "verification": "BDFutbol_individual_season_directly_verified",
-            "source": "https://www.bdfutbol.com/en/t/t1999-004002.html"
+            "source": "https://www.bdfutbol.com/en/t/t1999-004002.html",
+            "minutes": 1321,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004002.html",
+              "https://www.deux-zero.com/ligue-1/buteurs-epreuve/edition/1999-2000/equipe/0/joueur/2329"
+            ]
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "대표 선발; 16회 리그 선발/21회 출전, 8골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.",
+      "tierReview": "1999-00 정규리그 21경기·16선발·1321분·8골. 검수 보고서에 따른 수치 보정. 기존 B+ 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록"
-      ]
+      ],
+      "preAuditTierReview": "대표 선발; 16회 리그 선발/21회 출전, 8골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료."
     },
     {
       "id": "ligue1-1999-00-psg-laurent-leroy",
@@ -2868,14 +3224,15 @@
       "review": "draft_unapproved",
       "leagueAppearances": 27,
       "leagueStarts": 16,
-      "leagueMinutes": null,
+      "leagueMinutes": 1403,
       "appearanceScope": "domestic_league_only",
       "positionVerification": "needs_review",
       "verificationReason": "1999-00 PSGMAG 선발 2톱. ST 후보 슬롯이지만 실질 주전급 기용; 2톱 구조 검토",
       "sources": [
         "https://www.bdfutbol.com/en/t/t1999-004002.html",
         "https://fbref.com/en/squads/e2d8892c/1999-2000/Paris-Saint-Germain-Stats",
-        "https://www.psgmag.net/1104-PSG-1999-2000-mieux-qu-une-saison.html"
+        "https://www.psgmag.net/1104-PSG-1999-2000-mieux-qu-une-saison.html",
+        "https://www.deux-zero.com/ligue-1/buteurs-epreuve/edition/1999-2000/equipe/0/joueur/2227"
       ],
       "candidateStatus": "draft",
       "evidence": {
@@ -2901,22 +3258,36 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "PSG",
+            "appearances": 4,
+            "starts": 0,
+            "minutes": 78,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994002.html"
+            ]
           },
           "1999-00": {
             "appearances": 27,
             "starts": 16,
             "goals": 8,
             "verification": "BDFutbol_individual_season_directly_verified",
-            "source": "https://www.bdfutbol.com/en/t/t1999-004002.html"
+            "source": "https://www.bdfutbol.com/en/t/t1999-004002.html",
+            "minutes": 1403,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004002.html",
+              "https://www.deux-zero.com/ligue-1/buteurs-epreuve/edition/1999-2000/equipe/0/joueur/2227"
+            ]
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "주요 후보; 16회 리그 선발/27회 출전, 8골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.",
+      "tierReview": "1999-00 정규리그 27경기·16선발·1403분·8골. 검수 보고서에 따른 수치 보정. 기존 B+ 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록"
-      ]
+      ],
+      "preAuditTierReview": "주요 후보; 16회 리그 선발/27회 출전, 8골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료."
     },
     {
       "id": "ligue1-1999-00-lyon-gregory-coupet",
@@ -2968,22 +3339,36 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Olympique Lyonnais",
+            "appearances": 34,
+            "starts": 34,
+            "minutes": 3060,
+            "goalsConceded": 31,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994017.html"
+            ]
           },
           "1999-00": {
             "appearances": 34,
             "starts": 34,
             "goals": null,
             "verification": "BDFutbol_individual_season_directly_verified",
-            "source": "https://www.bdfutbol.com/en/t/t1999-004017.html"
+            "source": "https://www.bdfutbol.com/en/t/t1999-004017.html",
+            "goalsConceded": 42,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004017.html"
+            ]
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "대표 선발; 34회 리그 선발/34회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 A0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.",
+      "tierReview": "1999-00 정규리그 34경기·34선발·2981분·미확인골·42실점. 검수 보고서에 따른 수치 보정. 기존 A0 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록"
-      ]
+      ],
+      "leagueGoalsConceded": 42,
+      "preAuditTierReview": "대표 선발; 34회 리그 선발/34회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 A0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료."
     },
     {
       "id": "ligue1-1999-00-lyon-angelo-hugues",
@@ -3005,7 +3390,7 @@
       "leagueStarts": 0,
       "leagueAppearances": 1,
       "leagueGoals": null,
-      "leagueMinutes": null,
+      "leagueMinutes": 79,
       "appearanceScope": "domestic_league_only",
       "candidateStatus": "draft",
       "verificationStatus": "league_appearance_starts_crosschecked_BDFutbol_partial_position_verification",
@@ -3030,22 +3415,37 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Lorient",
+            "appearances": 30,
+            "starts": 30,
+            "minutes": 2591,
+            "goalsConceded": 35,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994019.html"
+            ]
           },
           "1999-00": {
             "appearances": 1,
             "starts": 0,
             "goals": null,
             "verification": "BDFutbol_individual_season_directly_verified",
-            "source": "https://www.bdfutbol.com/en/t/t1999-004017.html"
+            "source": "https://www.bdfutbol.com/en/t/t1999-004017.html",
+            "minutes": 79,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004017.html"
+            ],
+            "goalsConceded": 0
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "주요 후보; 0회 리그 선발/1회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 C0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.",
+      "tierReview": "1999-00 정규리그 1경기·0선발·79분·미확인골·0실점. 검수 보고서에 따른 수치 보정. 기존 C0 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록"
-      ]
+      ],
+      "leagueGoalsConceded": 0,
+      "preAuditTierReview": "주요 후보; 0회 리그 선발/1회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 C0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료."
     },
     {
       "id": "ligue1-1999-00-lyon-florent-laville",
@@ -3097,7 +3497,15 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Olympique Lyonnais",
+            "appearances": 29,
+            "starts": 28,
+            "minutes": 2448,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994017.html"
+            ]
           },
           "1999-00": {
             "appearances": 28,
@@ -3134,12 +3542,13 @@
       "leagueStarts": 20,
       "leagueAppearances": 26,
       "leagueGoals": 2,
-      "leagueMinutes": null,
+      "leagueMinutes": 1677,
       "appearanceScope": "domestic_league_only",
       "candidateStatus": "draft",
       "verificationStatus": "league_appearance_starts_crosschecked_BDFutbol_partial_position_verification",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t1999-004017.html"
+        "https://www.bdfutbol.com/en/t/t1999-004017.html",
+        "https://www.deux-zero.com/ligue-1/buteurs-epreuve/edition/1999-2000/equipe/0/joueur/1063"
       ],
       "evidence": {
         "currentSeason": "https://www.bdfutbol.com/en/t/t1999-004017.html",
@@ -3159,22 +3568,36 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Olympique Lyonnais",
+            "appearances": 29,
+            "starts": 23,
+            "minutes": 2084,
+            "goals": 1,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994017.html"
+            ]
           },
           "1999-00": {
             "appearances": 26,
             "starts": 20,
             "goals": 2,
             "verification": "BDFutbol_individual_season_directly_verified",
-            "source": "https://www.bdfutbol.com/en/t/t1999-004017.html"
+            "source": "https://www.bdfutbol.com/en/t/t1999-004017.html",
+            "minutes": 1677,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004017.html",
+              "https://www.deux-zero.com/ligue-1/buteurs-epreuve/edition/1999-2000/equipe/0/joueur/1063"
+            ]
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "대표 선발; 20회 리그 선발/26회 출전, 2골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.",
+      "tierReview": "1999-00 정규리그 26경기·20선발·1677분·2골. 검수 보고서에 따른 수치 보정. 기존 B0 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록"
-      ]
+      ],
+      "preAuditTierReview": "대표 선발; 20회 리그 선발/26회 출전, 2골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료."
     },
     {
       "id": "ligue1-1999-00-lyon-hubert-fournier",
@@ -3225,7 +3648,15 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Olympique Lyonnais",
+            "appearances": 27,
+            "starts": 27,
+            "minutes": 2288,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994017.html"
+            ]
           },
           "1999-00": {
             "appearances": 20,
@@ -3248,7 +3679,7 @@
       "name": "Serge Blanc",
       "nameKo": "세르주 블랑",
       "nameOriginal": "Serge Blanc",
-      "born": "1972-10-22",
+      "born": "1972-09-22",
       "club": "lyon",
       "clubNameOriginal": "Olympique Lyonnais",
       "role": "starter",
@@ -3265,12 +3696,14 @@
       "sources": [
         "https://www.bdfutbol.com/en/t/t1999-004017.html",
         "https://fbref.com/en/squads/d53c0b06/1999-2000/Lyon-Stats",
-        "https://datencenter.dfb.de/en/competitions/europa-league/seasons/1999-2000/teams/olympique-lyon"
+        "https://datencenter.dfb.de/en/competitions/europa-league/seasons/1999-2000/teams/olympique-lyon",
+        "https://www.bdfutbol.com/en/j/j84916.html",
+        "https://www.fff.fr/equipe-nationale/joueur/10091-blanc-serge/fiche.html"
       ],
       "candidateStatus": "draft",
       "evidence": {
         "currentSeason": "https://www.bdfutbol.com/en/t/t1999-004017.html",
-        "birthSource": null,
+        "birthSource": "https://www.bdfutbol.com/en/j/j84916.html",
         "previousTwoSeasons": []
       },
       "season": "1999-00",
@@ -3291,7 +3724,42 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_club_split",
+            "clubRecords": [
+              {
+                "club": "Olympique de Marseille",
+                "source": "https://www.bdfutbol.com/en/t/t1998-994004.html",
+                "externalReviewSources": [
+                  "https://www.bdfutbol.com/en/t/t1998-994004.html"
+                ],
+                "verification": "audit_report_BDFutbol_club_season",
+                "appearances": 3,
+                "starts": 3,
+                "minutes": 270,
+                "goals": 0
+              },
+              {
+                "club": "Olympique Lyonnais",
+                "source": "https://www.bdfutbol.com/en/t/t1998-994017.html",
+                "externalReviewSources": [
+                  "https://www.bdfutbol.com/en/t/t1998-994017.html"
+                ],
+                "verification": "audit_report_BDFutbol_club_season",
+                "appearances": 5,
+                "starts": 5,
+                "minutes": 410,
+                "goals": 0
+              }
+            ],
+            "club": "Olympique de Marseille / Olympique Lyonnais",
+            "appearances": 8,
+            "starts": 8,
+            "minutes": 680,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994004.html",
+              "https://www.bdfutbol.com/en/t/t1998-994017.html"
+            ]
           },
           "1999-00": {
             "appearances": 24,
@@ -3306,7 +3774,9 @@
       "tierReview": "대표 선발; 20회 리그 선발/24회 출전, 2골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록"
-      ]
+      ],
+      "birthDateVerification": "audit_report_profile_source",
+      "birthDateStatus": "audit_report_profile_source"
     },
     {
       "id": "ligue1-1999-00-lyon-jeremie-brechet",
@@ -3358,7 +3828,15 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Olympique Lyonnais",
+            "appearances": 15,
+            "starts": 11,
+            "minutes": 1060,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994017.html"
+            ]
           },
           "1999-00": {
             "appearances": 16,
@@ -3425,7 +3903,15 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Olympique Lyonnais",
+            "appearances": 31,
+            "starts": 31,
+            "minutes": 2776,
+            "goals": 1,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994017.html"
+            ]
           },
           "1999-00": {
             "appearances": 31,
@@ -3462,7 +3948,7 @@
       "leagueStarts": 10,
       "leagueAppearances": 16,
       "leagueGoals": 0,
-      "leagueMinutes": null,
+      "leagueMinutes": 1005,
       "appearanceScope": "domestic_league_only",
       "candidateStatus": "draft",
       "verificationStatus": "league_appearance_starts_crosschecked_BDFutbol_partial_position_verification",
@@ -3487,22 +3973,35 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Olympique Lyonnais",
+            "appearances": 15,
+            "starts": 7,
+            "minutes": 620,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994017.html"
+            ]
           },
           "1999-00": {
             "appearances": 16,
             "starts": 10,
             "goals": 0,
             "verification": "BDFutbol_individual_season_directly_verified",
-            "source": "https://www.bdfutbol.com/en/t/t1999-004017.html"
+            "source": "https://www.bdfutbol.com/en/t/t1999-004017.html",
+            "minutes": 1005,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004017.html"
+            ]
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "주요 후보; 10회 리그 선발/16회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.",
+      "tierReview": "1999-00 정규리그 16경기·10선발·1005분·0골. 검수 보고서에 따른 수치 보정. 기존 B0 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록"
-      ]
+      ],
+      "preAuditTierReview": "주요 후보; 10회 리그 선발/16회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료."
     },
     {
       "id": "ligue1-1999-00-lyon-philippe-violeau",
@@ -3554,7 +4053,15 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Olympique Lyonnais",
+            "appearances": 30,
+            "starts": 30,
+            "minutes": 2685,
+            "goals": 3,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994017.html"
+            ]
           },
           "1999-00": {
             "appearances": 31,
@@ -3621,7 +4128,15 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Olympique Lyonnais",
+            "appearances": 34,
+            "starts": 33,
+            "minutes": 2941,
+            "goals": 2,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994017.html"
+            ]
           },
           "1999-00": {
             "appearances": 32,
@@ -3688,7 +4203,15 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Olympique Lyonnais",
+            "appearances": 28,
+            "starts": 16,
+            "minutes": 1582,
+            "goals": 3,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994017.html"
+            ]
           },
           "1999-00": {
             "appearances": 29,
@@ -3822,7 +4345,15 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Olympique Lyonnais",
+            "appearances": 21,
+            "starts": 16,
+            "minutes": 1382,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994017.html"
+            ]
           },
           "1999-00": {
             "appearances": 28,
@@ -3956,7 +4487,15 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Lens",
+            "appearances": 30,
+            "starts": 26,
+            "minutes": 2332,
+            "goals": 8,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994014.html"
+            ]
           },
           "1999-00": {
             "appearances": 33,
@@ -3993,7 +4532,7 @@
       "leagueStarts": 4,
       "leagueAppearances": 13,
       "leagueGoals": 1,
-      "leagueMinutes": null,
+      "leagueMinutes": 489,
       "appearanceScope": "domestic_league_only",
       "candidateStatus": "draft",
       "verificationStatus": "league_appearance_starts_crosschecked_BDFutbol_partial_position_verification",
@@ -4018,22 +4557,35 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Olympique Lyonnais",
+            "appearances": 29,
+            "starts": 29,
+            "minutes": 2310,
+            "goals": 17,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994017.html"
+            ]
           },
           "1999-00": {
             "appearances": 13,
             "starts": 4,
             "goals": 1,
             "verification": "BDFutbol_individual_season_directly_verified",
-            "source": "https://www.bdfutbol.com/en/t/t1999-004017.html"
+            "source": "https://www.bdfutbol.com/en/t/t1999-004017.html",
+            "minutes": 489,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004017.html"
+            ]
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "주요 후보; 4회 리그 선발/13회 출전, 1골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B- 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.",
+      "tierReview": "1999-00 정규리그 13경기·4선발·489분·1골. 검수 보고서에 따른 수치 보정. 기존 B- 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록"
-      ]
+      ],
+      "preAuditTierReview": "주요 후보; 4회 리그 선발/13회 출전, 1골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B- 잠정 평가. 이전 두 시즌 정량 교차검증 미완료."
     },
     {
       "id": "ligue1-1999-00-bordeaux-ulrich-rame",
@@ -4084,22 +4636,36 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Girondins de Bordeaux",
+            "appearances": 32,
+            "starts": 32,
+            "minutes": 2880,
+            "goalsConceded": 27,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994012.html"
+            ]
           },
           "1999-00": {
             "appearances": 34,
             "starts": 34,
             "goals": null,
             "verification": "BDFutbol_individual_season_directly_verified",
-            "source": "https://www.bdfutbol.com/en/t/t1999-004012.html"
+            "source": "https://www.bdfutbol.com/en/t/t1999-004012.html",
+            "goalsConceded": 40,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004012.html"
+            ]
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "대표 선발; 34회 리그 선발/34회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 A0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.",
+      "tierReview": "1999-00 정규리그 34경기·34선발·3060분·미확인골·40실점. 검수 보고서에 따른 수치 보정. 기존 A0 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록"
-      ]
+      ],
+      "leagueGoalsConceded": 40,
+      "preAuditTierReview": "대표 선발; 34회 리그 선발/34회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 A0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료."
     },
     {
       "id": "ligue1-1999-00-bordeaux-herve-alicarte",
@@ -4150,7 +4716,15 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Girondins de Bordeaux",
+            "appearances": 29,
+            "starts": 29,
+            "minutes": 2610,
+            "goals": 2,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994012.html"
+            ]
           },
           "1999-00": {
             "appearances": 27,
@@ -4216,7 +4790,15 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Girondins de Bordeaux",
+            "appearances": 19,
+            "starts": 15,
+            "minutes": 1322,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994012.html"
+            ]
           },
           "1999-00": {
             "appearances": 27,
@@ -4282,7 +4864,15 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Girondins de Bordeaux",
+            "appearances": 25,
+            "starts": 25,
+            "minutes": 2229,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994012.html"
+            ]
           },
           "1999-00": {
             "appearances": 21,
@@ -4414,7 +5004,15 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Girondins de Bordeaux",
+            "appearances": 23,
+            "starts": 22,
+            "minutes": 1938,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994012.html"
+            ]
           },
           "1999-00": {
             "appearances": 31,
@@ -4451,7 +5049,7 @@
       "leagueStarts": 5,
       "leagueAppearances": 12,
       "leagueGoals": 0,
-      "leagueMinutes": null,
+      "leagueMinutes": 502,
       "appearanceScope": "domestic_league_only",
       "candidateStatus": "draft",
       "verificationStatus": "league_appearance_starts_crosschecked_BDFutbol_partial_position_verification",
@@ -4476,22 +5074,35 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Girondins de Bordeaux",
+            "appearances": 13,
+            "starts": 12,
+            "minutes": 927,
+            "goals": 1,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994012.html"
+            ]
           },
           "1999-00": {
             "appearances": 12,
             "starts": 5,
             "goals": 0,
             "verification": "BDFutbol_individual_season_directly_verified",
-            "source": "https://www.bdfutbol.com/en/t/t1999-004012.html"
+            "source": "https://www.bdfutbol.com/en/t/t1999-004012.html",
+            "minutes": 502,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004012.html"
+            ]
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "주요 후보; 5회 리그 선발/12회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 C+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.",
+      "tierReview": "1999-00 정규리그 12경기·5선발·502분·0골. 검수 보고서에 따른 수치 보정. 기존 C+ 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록"
-      ]
+      ],
+      "preAuditTierReview": "주요 후보; 5회 리그 선발/12회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 C+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료."
     },
     {
       "id": "ligue1-1999-00-bordeaux-michel-pavon",
@@ -4542,7 +5153,15 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Girondins de Bordeaux",
+            "appearances": 29,
+            "starts": 29,
+            "minutes": 2535,
+            "goals": 2,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994012.html"
+            ]
           },
           "1999-00": {
             "appearances": 28,
@@ -4608,7 +5227,15 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Girondins de Bordeaux",
+            "appearances": 31,
+            "starts": 30,
+            "minutes": 2649,
+            "goals": 9,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994012.html"
+            ]
           },
           "1999-00": {
             "appearances": 31,
@@ -4674,7 +5301,15 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Girondins de Bordeaux",
+            "appearances": 30,
+            "starts": 29,
+            "minutes": 2490,
+            "goals": 1,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994012.html"
+            ]
           },
           "1999-00": {
             "appearances": 24,
@@ -4711,12 +5346,13 @@
       "leagueStarts": 13,
       "leagueAppearances": 13,
       "leagueGoals": 1,
-      "leagueMinutes": null,
+      "leagueMinutes": 1170,
       "appearanceScope": "domestic_league_only",
       "candidateStatus": "draft",
       "verificationStatus": "league_appearance_starts_crosschecked_BDFutbol_partial_position_verification",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t1999-004012.html"
+        "https://www.bdfutbol.com/en/t/t1999-004012.html",
+        "https://www.deux-zero.com/ligue-1/buteurs-epreuve/edition/1999-2000/equipe/0/joueur/2204"
       ],
       "evidence": {
         "currentSeason": "https://www.bdfutbol.com/en/t/t1999-004012.html",
@@ -4736,22 +5372,36 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Monaco",
+            "appearances": 14,
+            "starts": 13,
+            "minutes": 1178,
+            "goals": 1,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994018.html"
+            ]
           },
           "1999-00": {
             "appearances": 13,
             "starts": 13,
             "goals": 1,
             "verification": "BDFutbol_individual_season_directly_verified",
-            "source": "https://www.bdfutbol.com/en/t/t1999-004012.html"
+            "source": "https://www.bdfutbol.com/en/t/t1999-004012.html",
+            "minutes": 1170,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004012.html",
+              "https://www.deux-zero.com/ligue-1/buteurs-epreuve/edition/1999-2000/equipe/0/joueur/2204"
+            ]
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "주요 후보; 13회 리그 선발/13회 출전, 1골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.",
+      "tierReview": "1999-00 정규리그 13경기·13선발·1170분·1골. 검수 보고서에 따른 수치 보정. 기존 B0 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록"
-      ]
+      ],
+      "preAuditTierReview": "주요 후보; 13회 리그 선발/13회 출전, 1골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료."
     },
     {
       "id": "ligue1-1999-00-bordeaux-corentin-martins",
@@ -4773,7 +5423,7 @@
       "leagueStarts": 15,
       "leagueAppearances": 21,
       "leagueGoals": 0,
-      "leagueMinutes": null,
+      "leagueMinutes": 1293,
       "appearanceScope": "domestic_league_only",
       "candidateStatus": "draft",
       "verificationStatus": "league_appearance_starts_crosschecked_BDFutbol_partial_position_verification",
@@ -4798,22 +5448,35 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Strasbourg",
+            "appearances": 33,
+            "starts": 33,
+            "minutes": 2870,
+            "goals": 4,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994034.html"
+            ]
           },
           "1999-00": {
             "appearances": 21,
             "starts": 15,
             "goals": 0,
             "verification": "BDFutbol_individual_season_directly_verified",
-            "source": "https://www.bdfutbol.com/en/t/t1999-004012.html"
+            "source": "https://www.bdfutbol.com/en/t/t1999-004012.html",
+            "minutes": 1293,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004012.html"
+            ]
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "주요 후보; 15회 리그 선발/21회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.",
+      "tierReview": "1999-00 정규리그 21경기·15선발·1293분·0골. 검수 보고서에 따른 수치 보정. 기존 B0 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록"
-      ]
+      ],
+      "preAuditTierReview": "주요 후보; 15회 리그 선발/21회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료."
     },
     {
       "id": "ligue1-1999-00-bordeaux-stephane-ziani",
@@ -4931,7 +5594,15 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Girondins de Bordeaux",
+            "appearances": 33,
+            "starts": 30,
+            "minutes": 2642,
+            "goals": 22,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994012.html"
+            ]
           },
           "1999-00": {
             "appearances": 32,
@@ -4998,7 +5669,15 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Girondins de Bordeaux",
+            "appearances": 33,
+            "starts": 31,
+            "minutes": 2658,
+            "goals": 15,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994012.html"
+            ]
           },
           "1999-00": {
             "appearances": 31,
@@ -5031,7 +5710,7 @@
       "review": "draft_unapproved",
       "leagueAppearances": 12,
       "leagueStarts": 12,
-      "leagueMinutes": null,
+      "leagueMinutes": 837,
       "appearanceScope": "domestic_league_only",
       "positionVerification": "needs_review",
       "verificationReason": "FW/MF 기록만으로 좌측 공격 출전 우세 확인 불가; 임시 배치",
@@ -5064,22 +5743,35 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Olympique de Marseille",
+            "appearances": 28,
+            "starts": 20,
+            "minutes": 1746,
+            "goals": 4,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994004.html"
+            ]
           },
           "1999-00": {
             "appearances": 12,
             "starts": 12,
             "goals": 3,
             "verification": "BDFutbol_individual_season_directly_verified",
-            "source": "https://www.bdfutbol.com/en/t/t1999-004012.html"
+            "source": "https://www.bdfutbol.com/en/t/t1999-004012.html",
+            "minutes": 837,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004012.html"
+            ]
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "2000년 1월 마르세유에서 보르도로 이적, 해당 클럽 정규리그 12회 선발 3골. 1999-00 전반기 타 클럽에서의 활약을 보르도 출전으로 합산하지 않음.",
+      "tierReview": "1999-00 정규리그 12경기·12선발·837분·3골. 검수 보고서에 따른 수치 보정. 기존 B0 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록"
-      ]
+      ],
+      "preAuditTierReview": "2000년 1월 마르세유에서 보르도로 이적, 해당 클럽 정규리그 12회 선발 3골. 1999-00 전반기 타 클럽에서의 활약을 보르도 출전으로 합산하지 않음."
     },
     {
       "id": "ligue1-1999-00-nantes-mickael-landreau",
@@ -5130,22 +5822,36 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Nantes",
+            "appearances": 31,
+            "starts": 31,
+            "minutes": 2790,
+            "goalsConceded": 31,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994013.html"
+            ]
           },
           "1999-00": {
             "appearances": 33,
             "starts": 33,
             "goals": null,
             "verification": "BDFutbol_individual_season_directly_verified",
-            "source": "https://www.bdfutbol.com/en/t/t1999-004013.html"
+            "source": "https://www.bdfutbol.com/en/t/t1999-004013.html",
+            "goalsConceded": 38,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004013.html"
+            ]
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "대표 선발; 33회 리그 선발/33회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 A0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.",
+      "tierReview": "1999-00 정규리그 33경기·33선발·2970분·미확인골·38실점. 검수 보고서에 따른 수치 보정. 기존 A0 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록"
-      ]
+      ],
+      "leagueGoalsConceded": 38,
+      "preAuditTierReview": "대표 선발; 33회 리그 선발/33회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 A0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료."
     },
     {
       "id": "ligue1-1999-00-nantes-willy-grondin",
@@ -5167,7 +5873,7 @@
       "leagueStarts": 1,
       "leagueAppearances": 1,
       "leagueGoals": null,
-      "leagueMinutes": null,
+      "leagueMinutes": 90,
       "appearanceScope": "domestic_league_only",
       "candidateStatus": "draft",
       "verificationStatus": "league_appearance_starts_crosschecked_BDFutbol_partial_position_verification",
@@ -5199,15 +5905,22 @@
             "starts": 1,
             "goals": null,
             "verification": "BDFutbol_individual_season_directly_verified",
-            "source": "https://www.bdfutbol.com/en/t/t1999-004013.html"
+            "source": "https://www.bdfutbol.com/en/t/t1999-004013.html",
+            "minutes": 90,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004013.html"
+            ],
+            "goalsConceded": 2
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "주요 후보; 1회 리그 선발/1회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 C0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.",
+      "tierReview": "1999-00 정규리그 1경기·1선발·90분·미확인골·2실점. 검수 보고서에 따른 수치 보정. 기존 C0 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록"
-      ]
+      ],
+      "leagueGoalsConceded": 2,
+      "preAuditTierReview": "주요 후보; 1회 리그 선발/1회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 C0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료."
     },
     {
       "id": "ligue1-1999-00-nantes-nestor-fabbri",
@@ -5225,7 +5938,7 @@
       "review": "draft_unapproved",
       "leagueAppearances": 22,
       "leagueStarts": 22,
-      "leagueMinutes": null,
+      "leagueMinutes": 1851,
       "appearanceScope": "domestic_league_only",
       "positionVerification": "needs_review",
       "verificationReason": "시즌 경기별 실제 포지션과 선발 구성의 독립적 교차검증 대기",
@@ -5258,22 +5971,35 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Nantes",
+            "appearances": 31,
+            "starts": 31,
+            "minutes": 2790,
+            "goals": 4,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994013.html"
+            ]
           },
           "1999-00": {
             "appearances": 22,
             "starts": 22,
             "goals": 0,
             "verification": "BDFutbol_individual_season_directly_verified",
-            "source": "https://www.bdfutbol.com/en/t/t1999-004013.html"
+            "source": "https://www.bdfutbol.com/en/t/t1999-004013.html",
+            "minutes": 1851,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004013.html"
+            ]
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "대표 선발; 22회 리그 선발/22회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.",
+      "tierReview": "1999-00 정규리그 22경기·22선발·1851분·0골. 검수 보고서에 따른 수치 보정. 기존 B+ 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록"
-      ]
+      ],
+      "preAuditTierReview": "대표 선발; 22회 리그 선발/22회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료."
     },
     {
       "id": "ligue1-1999-00-nantes-nicolas-gillet",
@@ -5291,7 +6017,7 @@
       "review": "draft_unapproved",
       "leagueAppearances": 25,
       "leagueStarts": 20,
-      "leagueMinutes": null,
+      "leagueMinutes": 1935,
       "appearanceScope": "domestic_league_only",
       "positionVerification": "needs_review",
       "verificationReason": "시즌 경기별 실제 포지션과 선발 구성의 독립적 교차검증 대기",
@@ -5299,7 +6025,8 @@
       "sources": [
         "https://www.bdfutbol.com/en/t/t1999-004013.html",
         "https://fbref.com/en/squads/d7a486cd/1999-2000/Nantes-Stats",
-        "https://www.footballsquads.co.uk/france/1999-2000/div1/nantes.htm"
+        "https://www.footballsquads.co.uk/france/1999-2000/div1/nantes.htm",
+        "https://www.deux-zero.com/ligue-1/buteurs-epreuve/edition/1999-2000/equipe/0/joueur/1572"
       ],
       "evidence": {
         "currentSeason": "https://www.bdfutbol.com/en/t/t1999-004013.html",
@@ -5324,22 +6051,36 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Nantes",
+            "appearances": 17,
+            "starts": 11,
+            "minutes": 1146,
+            "goals": 1,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994013.html"
+            ]
           },
           "1999-00": {
             "appearances": 25,
             "starts": 20,
             "goals": 1,
             "verification": "BDFutbol_individual_season_directly_verified",
-            "source": "https://www.bdfutbol.com/en/t/t1999-004013.html"
+            "source": "https://www.bdfutbol.com/en/t/t1999-004013.html",
+            "minutes": 1935,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004013.html",
+              "https://www.deux-zero.com/ligue-1/buteurs-epreuve/edition/1999-2000/equipe/0/joueur/1572"
+            ]
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "대표 선발; 20회 리그 선발/25회 출전, 1골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.",
+      "tierReview": "1999-00 정규리그 25경기·20선발·1935분·1골. 검수 보고서에 따른 수치 보정. 기존 B+ 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록"
-      ]
+      ],
+      "preAuditTierReview": "대표 선발; 20회 리그 선발/25회 출전, 1골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료."
     },
     {
       "id": "ligue1-1999-00-nantes-pascal-delhommeau",
@@ -5361,7 +6102,7 @@
       "leagueStarts": 6,
       "leagueAppearances": 7,
       "leagueGoals": 0,
-      "leagueMinutes": null,
+      "leagueMinutes": 548,
       "appearanceScope": "domestic_league_only",
       "candidateStatus": "draft",
       "verificationStatus": "league_appearance_starts_crosschecked_BDFutbol_partial_position_verification",
@@ -5386,22 +6127,35 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Nantes",
+            "appearances": 3,
+            "starts": 2,
+            "minutes": 184,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994013.html"
+            ]
           },
           "1999-00": {
             "appearances": 7,
             "starts": 6,
             "goals": 0,
             "verification": "BDFutbol_individual_season_directly_verified",
-            "source": "https://www.bdfutbol.com/en/t/t1999-004013.html"
+            "source": "https://www.bdfutbol.com/en/t/t1999-004013.html",
+            "minutes": 548,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004013.html"
+            ]
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "주요 후보; 6회 리그 선발/7회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 C+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.",
+      "tierReview": "1999-00 정규리그 7경기·6선발·548분·0골. 검수 보고서에 따른 수치 보정. 기존 C+ 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록"
-      ]
+      ],
+      "preAuditTierReview": "주요 후보; 6회 리그 선발/7회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 C+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료."
     },
     {
       "id": "ligue1-1999-00-nantes-stephane-lievre",
@@ -5419,7 +6173,7 @@
       "review": "draft_unapproved",
       "leagueAppearances": 21,
       "leagueStarts": 21,
-      "leagueMinutes": null,
+      "leagueMinutes": 1666,
       "appearanceScope": "domestic_league_only",
       "positionVerification": "needs_review",
       "verificationReason": "시즌 경기별 실제 포지션과 선발 구성의 독립적 교차검증 대기",
@@ -5459,15 +6213,20 @@
             "starts": 21,
             "goals": 0,
             "verification": "BDFutbol_individual_season_directly_verified",
-            "source": "https://www.bdfutbol.com/en/t/t1999-004013.html"
+            "source": "https://www.bdfutbol.com/en/t/t1999-004013.html",
+            "minutes": 1666,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004013.html"
+            ]
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "대표 선발; 21회 리그 선발/21회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.",
+      "tierReview": "1999-00 정규리그 21경기·21선발·1666분·0골. 검수 보고서에 따른 수치 보정. 기존 B0 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록"
-      ]
+      ],
+      "preAuditTierReview": "대표 선발; 21회 리그 선발/21회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료."
     },
     {
       "id": "ligue1-1999-00-nantes-jean-marc-chanelet",
@@ -5518,7 +6277,15 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Nantes",
+            "appearances": 32,
+            "starts": 32,
+            "minutes": 2872,
+            "goals": 1,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994013.html"
+            ]
           },
           "1999-00": {
             "appearances": 32,
@@ -5551,7 +6318,7 @@
       "review": "draft_unapproved",
       "leagueAppearances": 6,
       "leagueStarts": 3,
-      "leagueMinutes": null,
+      "leagueMinutes": 294,
       "appearanceScope": "domestic_league_only",
       "positionVerification": "needs_review",
       "verificationReason": "수비측면, RB 경기별 배치 검수",
@@ -5584,22 +6351,35 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Nantes",
+            "appearances": 22,
+            "starts": 15,
+            "minutes": 1385,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994013.html"
+            ]
           },
           "1999-00": {
             "appearances": 6,
             "starts": 3,
             "goals": 0,
             "verification": "BDFutbol_individual_season_directly_verified",
-            "source": "https://www.bdfutbol.com/en/t/t1999-004013.html"
+            "source": "https://www.bdfutbol.com/en/t/t1999-004013.html",
+            "minutes": 294,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004013.html"
+            ]
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "주요 후보; 3회 리그 선발/6회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 C+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.",
+      "tierReview": "1999-00 정규리그 6경기·3선발·294분·0골. 검수 보고서에 따른 수치 보정. 기존 C+ 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록"
-      ]
+      ],
+      "preAuditTierReview": "주요 후보; 3회 리그 선발/6회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 C+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료."
     },
     {
       "id": "ligue1-1999-00-nantes-nicolas-savinaud",
@@ -5621,12 +6401,13 @@
       "leagueStarts": 28,
       "leagueAppearances": 28,
       "leagueGoals": 1,
-      "leagueMinutes": null,
+      "leagueMinutes": 2503,
       "appearanceScope": "domestic_league_only",
       "candidateStatus": "draft",
       "verificationStatus": "league_appearance_starts_crosschecked_BDFutbol_partial_position_verification",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t1999-004013.html"
+        "https://www.bdfutbol.com/en/t/t1999-004013.html",
+        "https://www.deux-zero.com/ligue-1/buteurs-epreuve/edition/1999-2000/equipe/0/joueur/3375"
       ],
       "evidence": {
         "currentSeason": "https://www.bdfutbol.com/en/t/t1999-004013.html",
@@ -5646,22 +6427,36 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Nantes",
+            "appearances": 21,
+            "starts": 18,
+            "minutes": 1627,
+            "goals": 1,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994013.html"
+            ]
           },
           "1999-00": {
             "appearances": 28,
             "starts": 28,
             "goals": 1,
             "verification": "BDFutbol_individual_season_directly_verified",
-            "source": "https://www.bdfutbol.com/en/t/t1999-004013.html"
+            "source": "https://www.bdfutbol.com/en/t/t1999-004013.html",
+            "minutes": 2503,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004013.html",
+              "https://www.deux-zero.com/ligue-1/buteurs-epreuve/edition/1999-2000/equipe/0/joueur/3375"
+            ]
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "대표 선발; 28회 리그 선발/28회 출전, 1골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.",
+      "tierReview": "1999-00 정규리그 28경기·28선발·2503분·1골. 검수 보고서에 따른 수치 보정. 기존 B+ 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록"
-      ]
+      ],
+      "preAuditTierReview": "대표 선발; 28회 리그 선발/28회 출전, 1골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료."
     },
     {
       "id": "ligue1-1999-00-nantes-sebastien-piocelle",
@@ -5679,7 +6474,7 @@
       "review": "draft_unapproved",
       "leagueAppearances": 21,
       "leagueStarts": 19,
-      "leagueMinutes": null,
+      "leagueMinutes": 1633,
       "appearanceScope": "domestic_league_only",
       "positionVerification": "needs_review",
       "verificationReason": "중앙 미드필더로도 기용",
@@ -5712,22 +6507,35 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Nantes",
+            "appearances": 24,
+            "starts": 22,
+            "minutes": 1944,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994013.html"
+            ]
           },
           "1999-00": {
             "appearances": 21,
             "starts": 19,
             "goals": 0,
             "verification": "BDFutbol_individual_season_directly_verified",
-            "source": "https://www.bdfutbol.com/en/t/t1999-004013.html"
+            "source": "https://www.bdfutbol.com/en/t/t1999-004013.html",
+            "minutes": 1633,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004013.html"
+            ]
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "대표 선발; 19회 리그 선발/21회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.",
+      "tierReview": "1999-00 정규리그 21경기·19선발·1633분·0골. 검수 보고서에 따른 수치 보정. 기존 B0 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록"
-      ]
+      ],
+      "preAuditTierReview": "대표 선발; 19회 리그 선발/21회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료."
     },
     {
       "id": "ligue1-1999-00-nantes-charles-devineau",
@@ -5749,13 +6557,14 @@
       "leagueStarts": 16,
       "leagueAppearances": 19,
       "leagueGoals": 2,
-      "leagueMinutes": null,
+      "leagueMinutes": 1250,
       "appearanceScope": "domestic_league_only",
       "candidateStatus": "draft",
       "verificationStatus": "league_appearance_starts_crosschecked_BDFutbol_partial_position_verification",
       "sources": [
         "https://www.bdfutbol.com/en/t/t1999-004013.html",
-        "https://www.fff.fr/equipe-nationale/joueur/10135-devineau-charles/fiche.html"
+        "https://www.fff.fr/equipe-nationale/joueur/10135-devineau-charles/fiche.html",
+        "https://www.deux-zero.com/ligue-1/buteurs-epreuve/edition/1999-2000/equipe/0/joueur/1104"
       ],
       "evidence": {
         "currentSeason": "https://www.bdfutbol.com/en/t/t1999-004013.html",
@@ -5778,22 +6587,36 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Nantes",
+            "appearances": 22,
+            "starts": 14,
+            "minutes": 1290,
+            "goals": 2,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994013.html"
+            ]
           },
           "1999-00": {
             "appearances": 19,
             "starts": 16,
             "goals": 2,
             "verification": "BDFutbol_individual_season_directly_verified",
-            "source": "https://www.bdfutbol.com/en/t/t1999-004013.html"
+            "source": "https://www.bdfutbol.com/en/t/t1999-004013.html",
+            "minutes": 1250,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004013.html",
+              "https://www.deux-zero.com/ligue-1/buteurs-epreuve/edition/1999-2000/equipe/0/joueur/1104"
+            ]
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "주요 후보; 16회 리그 선발/19회 출전, 2골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.",
+      "tierReview": "1999-00 정규리그 19경기·16선발·1250분·2골. 검수 보고서에 따른 수치 보정. 기존 B0 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록"
-      ]
+      ],
+      "preAuditTierReview": "주요 후보; 16회 리그 선발/19회 출전, 2골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료."
     },
     {
       "id": "ligue1-1999-00-nantes-eric-carriere",
@@ -5844,7 +6667,15 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Nantes",
+            "appearances": 33,
+            "starts": 33,
+            "minutes": 2925,
+            "goals": 1,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994013.html"
+            ]
           },
           "1999-00": {
             "appearances": 32,
@@ -5877,7 +6708,7 @@
       "review": "draft_unapproved",
       "leagueAppearances": 22,
       "leagueStarts": 17,
-      "leagueMinutes": null,
+      "leagueMinutes": 1677,
       "appearanceScope": "domestic_league_only",
       "positionVerification": "needs_review",
       "verificationReason": "LM/LW 겸업 및 LB 출전 확인",
@@ -5885,7 +6716,8 @@
       "sources": [
         "https://www.bdfutbol.com/en/t/t1999-004013.html",
         "https://fbref.com/en/squads/d7a486cd/1999-2000/Nantes-Stats",
-        "https://www.footballsquads.co.uk/france/1999-2000/div1/nantes.htm"
+        "https://www.footballsquads.co.uk/france/1999-2000/div1/nantes.htm",
+        "https://www.deux-zero.com/ligue-1/buteurs-epreuve/edition/1999-2000/equipe/0/joueur/2809"
       ],
       "evidence": {
         "currentSeason": "https://www.bdfutbol.com/en/t/t1999-004013.html",
@@ -5910,22 +6742,36 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Nantes",
+            "appearances": 29,
+            "starts": 22,
+            "minutes": 2131,
+            "goals": 1,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994013.html"
+            ]
           },
           "1999-00": {
             "appearances": 22,
             "starts": 17,
             "goals": 2,
             "verification": "BDFutbol_individual_season_directly_verified",
-            "source": "https://www.bdfutbol.com/en/t/t1999-004013.html"
+            "source": "https://www.bdfutbol.com/en/t/t1999-004013.html",
+            "minutes": 1677,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004013.html",
+              "https://www.deux-zero.com/ligue-1/buteurs-epreuve/edition/1999-2000/equipe/0/joueur/2809"
+            ]
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "대표 선발; 17회 리그 선발/22회 출전, 2골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.",
+      "tierReview": "1999-00 정규리그 22경기·17선발·1677분·2골. 검수 보고서에 따른 수치 보정. 기존 B+ 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록"
-      ]
+      ],
+      "preAuditTierReview": "대표 선발; 17회 리그 선발/22회 출전, 2골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료."
     },
     {
       "id": "ligue1-1999-00-nantes-marama-vahirua",
@@ -5947,12 +6793,13 @@
       "leagueStarts": 7,
       "leagueAppearances": 12,
       "leagueGoals": 1,
-      "leagueMinutes": null,
+      "leagueMinutes": 519,
       "appearanceScope": "domestic_league_only",
       "candidateStatus": "draft",
       "verificationStatus": "league_appearance_starts_crosschecked_BDFutbol_partial_position_verification",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t1999-004013.html"
+        "https://www.bdfutbol.com/en/t/t1999-004013.html",
+        "https://www.deux-zero.com/ligue-1/buteurs-epreuve/edition/1999-2000/equipe/0/joueur/3746"
       ],
       "evidence": {
         "currentSeason": "https://www.bdfutbol.com/en/t/t1999-004013.html",
@@ -5972,22 +6819,36 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Nantes",
+            "appearances": 1,
+            "starts": 0,
+            "minutes": 44,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994013.html"
+            ]
           },
           "1999-00": {
             "appearances": 12,
             "starts": 7,
             "goals": 1,
             "verification": "BDFutbol_individual_season_directly_verified",
-            "source": "https://www.bdfutbol.com/en/t/t1999-004013.html"
+            "source": "https://www.bdfutbol.com/en/t/t1999-004013.html",
+            "minutes": 519,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004013.html",
+              "https://www.deux-zero.com/ligue-1/buteurs-epreuve/edition/1999-2000/equipe/0/joueur/3746"
+            ]
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "주요 후보; 7회 리그 선발/12회 출전, 1골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 C+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.",
+      "tierReview": "1999-00 정규리그 12경기·7선발·519분·1골. 검수 보고서에 따른 수치 보정. 기존 C+ 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록"
-      ]
+      ],
+      "preAuditTierReview": "주요 후보; 7회 리그 선발/12회 출전, 1골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 C+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료."
     },
     {
       "id": "ligue1-1999-00-nantes-frederic-da-rocha",
@@ -6038,7 +6899,15 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Nantes",
+            "appearances": 30,
+            "starts": 30,
+            "minutes": 2616,
+            "goals": 7,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994013.html"
+            ]
           },
           "1999-00": {
             "appearances": 32,
@@ -6075,7 +6944,7 @@
       "leagueStarts": 8,
       "leagueAppearances": 17,
       "leagueGoals": 0,
-      "leagueMinutes": null,
+      "leagueMinutes": 702,
       "appearanceScope": "domestic_league_only",
       "candidateStatus": "draft",
       "verificationStatus": "league_appearance_starts_crosschecked_BDFutbol_partial_position_verification",
@@ -6107,15 +6976,20 @@
             "starts": 8,
             "goals": 0,
             "verification": "BDFutbol_individual_season_directly_verified",
-            "source": "https://www.bdfutbol.com/en/t/t1999-004013.html"
+            "source": "https://www.bdfutbol.com/en/t/t1999-004013.html",
+            "minutes": 702,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004013.html"
+            ]
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "주요 후보; 8회 리그 선발/17회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 C+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.",
+      "tierReview": "1999-00 정규리그 17경기·8선발·702분·0골. 검수 보고서에 따른 수치 보정. 기존 C+ 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록"
-      ]
+      ],
+      "preAuditTierReview": "주요 후보; 8회 리그 선발/17회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 C+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료."
     },
     {
       "id": "ligue1-1999-00-nantes-antoine-sibierski",
@@ -6166,7 +7040,15 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Nantes",
+            "appearances": 22,
+            "starts": 20,
+            "minutes": 1553,
+            "goals": 4,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994013.html"
+            ]
           },
           "1999-00": {
             "appearances": 28,
@@ -6199,7 +7081,7 @@
       "review": "draft_unapproved",
       "leagueAppearances": 17,
       "leagueStarts": 15,
-      "leagueMinutes": null,
+      "leagueMinutes": 1229,
       "appearanceScope": "domestic_league_only",
       "positionVerification": "needs_review",
       "verificationReason": "윙/세컨드 스트라이커 출전 비중 확인",
@@ -6207,7 +7089,8 @@
       "sources": [
         "https://www.bdfutbol.com/en/t/t1999-004013.html",
         "https://fbref.com/en/squads/d7a486cd/1999-2000/Nantes-Stats",
-        "https://www.footballsquads.co.uk/france/1999-2000/div1/nantes.htm"
+        "https://www.footballsquads.co.uk/france/1999-2000/div1/nantes.htm",
+        "https://www.deux-zero.com/ligue-1/buteurs-epreuve/edition/1999-2000/equipe/0/joueur/2608"
       ],
       "evidence": {
         "currentSeason": "https://www.bdfutbol.com/en/t/t1999-004013.html",
@@ -6232,22 +7115,36 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Nantes",
+            "appearances": 30,
+            "starts": 30,
+            "minutes": 2388,
+            "goals": 8,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994013.html"
+            ]
           },
           "1999-00": {
             "appearances": 17,
             "starts": 15,
             "goals": 3,
             "verification": "BDFutbol_individual_season_directly_verified",
-            "source": "https://www.bdfutbol.com/en/t/t1999-004013.html"
+            "source": "https://www.bdfutbol.com/en/t/t1999-004013.html",
+            "minutes": 1229,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004013.html",
+              "https://www.deux-zero.com/ligue-1/buteurs-epreuve/edition/1999-2000/equipe/0/joueur/2608"
+            ]
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "주요 후보; 15회 리그 선발/17회 출전, 3골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.",
+      "tierReview": "1999-00 정규리그 17경기·15선발·1229분·3골. 검수 보고서에 따른 수치 보정. 기존 B0 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록"
-      ]
+      ],
+      "preAuditTierReview": "주요 후보; 15회 리그 선발/17회 출전, 3골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료."
     },
     {
       "id": "ligue1-1999-00-lens-guillaume-warmuz",
@@ -6298,22 +7195,36 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Lens",
+            "appearances": 34,
+            "starts": 34,
+            "minutes": 3060,
+            "goalsConceded": 43,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994014.html"
+            ]
           },
           "1999-00": {
             "appearances": 32,
             "starts": 32,
             "goals": null,
             "verification": "BDFutbol_individual_season_directly_verified",
-            "source": "https://www.bdfutbol.com/en/t/t1999-004014.html"
+            "source": "https://www.bdfutbol.com/en/t/t1999-004014.html",
+            "goalsConceded": 40,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004014.html"
+            ]
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "대표 선발; 32회 리그 선발/32회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.",
+      "tierReview": "1999-00 정규리그 32경기·32선발·2880분·미확인골·40실점. 검수 보고서에 따른 수치 보정. 기존 B+ 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록"
-      ]
+      ],
+      "leagueGoalsConceded": 40,
+      "preAuditTierReview": "대표 선발; 32회 리그 선발/32회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료."
     },
     {
       "id": "ligue1-1999-00-lens-sebastien-chabbert",
@@ -6371,15 +7282,21 @@
             "starts": 2,
             "goals": null,
             "verification": "BDFutbol_individual_season_directly_verified",
-            "source": "https://www.bdfutbol.com/en/t/t1999-004014.html"
+            "source": "https://www.bdfutbol.com/en/t/t1999-004014.html",
+            "goalsConceded": 1,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004014.html"
+            ]
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "주요 후보; 2회 리그 선발/2회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 C0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.",
+      "tierReview": "1999-00 정규리그 2경기·2선발·180분·미확인골·1실점. 검수 보고서에 따른 수치 보정. 기존 C0 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록"
-      ]
+      ],
+      "leagueGoalsConceded": 1,
+      "preAuditTierReview": "주요 후보; 2회 리그 선발/2회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 C0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료."
     },
     {
       "id": "ligue1-1999-00-lens-valerien-ismael",
@@ -6430,7 +7347,15 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Lens",
+            "appearances": 20,
+            "starts": 20,
+            "minutes": 1758,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994014.html"
+            ]
           },
           "1999-00": {
             "appearances": 30,
@@ -6496,7 +7421,15 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Lens",
+            "appearances": 4,
+            "starts": 2,
+            "minutes": 203,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994014.html"
+            ]
           },
           "1999-00": {
             "appearances": 26,
@@ -6533,12 +7466,13 @@
       "leagueStarts": 12,
       "leagueAppearances": 16,
       "leagueGoals": 1,
-      "leagueMinutes": null,
+      "leagueMinutes": 1156,
       "appearanceScope": "domestic_league_only",
       "candidateStatus": "draft",
       "verificationStatus": "league_appearance_starts_crosschecked_BDFutbol_partial_position_verification",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t1999-004014.html"
+        "https://www.bdfutbol.com/en/t/t1999-004014.html",
+        "https://www.deux-zero.com/ligue-1/buteurs-epreuve/edition/1999-2000/equipe/0/joueur/3073"
       ],
       "evidence": {
         "currentSeason": "https://www.bdfutbol.com/en/t/t1999-004014.html",
@@ -6565,15 +7499,21 @@
             "starts": 12,
             "goals": 1,
             "verification": "BDFutbol_individual_season_directly_verified",
-            "source": "https://www.bdfutbol.com/en/t/t1999-004014.html"
+            "source": "https://www.bdfutbol.com/en/t/t1999-004014.html",
+            "minutes": 1156,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004014.html",
+              "https://www.deux-zero.com/ligue-1/buteurs-epreuve/edition/1999-2000/equipe/0/joueur/3073"
+            ]
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "주요 후보; 12회 리그 선발/16회 출전, 1골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.",
+      "tierReview": "1999-00 정규리그 16경기·12선발·1156분·1골. 검수 보고서에 따른 수치 보정. 기존 B0 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록"
-      ]
+      ],
+      "preAuditTierReview": "주요 후보; 12회 리그 선발/16회 출전, 1골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료."
     },
     {
       "id": "ligue1-1999-00-lens-yohan-lachor",
@@ -6624,7 +7564,15 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Lens",
+            "appearances": 13,
+            "starts": 9,
+            "minutes": 837,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994014.html"
+            ]
           },
           "1999-00": {
             "appearances": 23,
@@ -6690,7 +7638,15 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Lens",
+            "appearances": 24,
+            "starts": 23,
+            "minutes": 1975,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994014.html"
+            ]
           },
           "1999-00": {
             "appearances": 15,
@@ -6756,7 +7712,15 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Lens",
+            "appearances": 30,
+            "starts": 28,
+            "minutes": 2473,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994014.html"
+            ]
           },
           "1999-00": {
             "appearances": 29,
@@ -6793,7 +7757,7 @@
       "leagueStarts": 7,
       "leagueAppearances": 10,
       "leagueGoals": 0,
-      "leagueMinutes": null,
+      "leagueMinutes": 638,
       "appearanceScope": "domestic_league_only",
       "candidateStatus": "draft",
       "verificationStatus": "league_appearance_starts_crosschecked_BDFutbol_partial_position_verification",
@@ -6825,15 +7789,20 @@
             "starts": 7,
             "goals": 0,
             "verification": "BDFutbol_individual_season_directly_verified",
-            "source": "https://www.bdfutbol.com/en/t/t1999-004014.html"
+            "source": "https://www.bdfutbol.com/en/t/t1999-004014.html",
+            "minutes": 638,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004014.html"
+            ]
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "주요 후보; 7회 리그 선발/10회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B- 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.",
+      "tierReview": "1999-00 정규리그 10경기·7선발·638분·0골. 검수 보고서에 따른 수치 보정. 기존 B- 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록"
-      ]
+      ],
+      "preAuditTierReview": "주요 후보; 7회 리그 선발/10회 출전, 0골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B- 잠정 평가. 이전 두 시즌 정량 교차검증 미완료."
     },
     {
       "id": "ligue1-1999-00-lens-olivier-dacourt",
@@ -6841,7 +7810,7 @@
       "name": "Olivier Dacourt",
       "nameOriginal": "Olivier Dacourt",
       "nameKo": "올리비에 다쿠르",
-      "born": "1974-09-29",
+      "born": "1974-09-25",
       "club": "lens",
       "clubNameOriginal": "RC Lens",
       "role": "starter",
@@ -6859,11 +7828,13 @@
       "sources": [
         "https://www.bdfutbol.com/en/t/t1999-004014.html",
         "https://fbref.com/en/squads/fd4e0f7d/1999-2000/Lens-Stats",
-        "https://www.footballsquads.co.uk/france/1999-2000/div1/lens.htm"
+        "https://www.footballsquads.co.uk/france/1999-2000/div1/lens.htm",
+        "https://www.bdfutbol.com/en/j/j93686.html",
+        "https://www.fff.fr/equipe-nationale/joueur/8567-dacourt-olivier/fiche.html"
       ],
       "evidence": {
         "currentSeason": "https://www.bdfutbol.com/en/t/t1999-004014.html",
-        "birthSource": null,
+        "birthSource": "https://www.bdfutbol.com/en/j/j93686.html",
         "previousTwoSeasons": []
       },
       "season": "1999-00",
@@ -6899,7 +7870,9 @@
       "tierReview": "대표 선발; 25회 리그 선발/26회 출전, 2골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 A- 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록"
-      ]
+      ],
+      "birthDateVerification": "audit_report_profile_source",
+      "birthDateStatus": "audit_report_profile_source"
     },
     {
       "id": "ligue1-1999-00-lens-jocelyn-blanchard",
@@ -7016,7 +7989,15 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Lens",
+            "appearances": 24,
+            "starts": 18,
+            "minutes": 1501,
+            "goals": 3,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994014.html"
+            ]
           },
           "1999-00": {
             "appearances": 21,
@@ -7039,7 +8020,7 @@
       "name": "Philippe Brunel",
       "nameOriginal": "Philippe Brunel",
       "nameKo": "필리프 브뤼넬",
-      "born": "1975-02-28",
+      "born": "1973-02-28",
       "club": "lens",
       "clubNameOriginal": "RC Lens",
       "role": "starter",
@@ -7057,11 +8038,13 @@
       "sources": [
         "https://www.bdfutbol.com/en/t/t1999-004014.html",
         "https://fbref.com/en/squads/fd4e0f7d/1999-2000/Lens-Stats",
-        "https://www.footballsquads.co.uk/france/1999-2000/div1/lens.htm"
+        "https://www.footballsquads.co.uk/france/1999-2000/div1/lens.htm",
+        "https://www.bdfutbol.com/en/j/j84289.html",
+        "https://www.fff.fr/equipe-nationale/joueur/9912-brunel-philippe/fiche.html"
       ],
       "evidence": {
         "currentSeason": "https://www.bdfutbol.com/en/t/t1999-004014.html",
-        "birthSource": null,
+        "birthSource": "https://www.bdfutbol.com/en/j/j84289.html",
         "previousTwoSeasons": []
       },
       "season": "1999-00",
@@ -7082,7 +8065,15 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Lens",
+            "appearances": 17,
+            "starts": 10,
+            "minutes": 950,
+            "goals": 2,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994014.html"
+            ]
           },
           "1999-00": {
             "appearances": 32,
@@ -7097,7 +8088,9 @@
       "tierReview": "대표 선발; 27회 리그 선발/32회 출전, 2골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록"
-      ]
+      ],
+      "birthDateVerification": "audit_report_profile_source",
+      "birthDateStatus": "audit_report_profile_source"
     },
     {
       "id": "ligue1-1999-00-lens-charles-edouard-coridon",
@@ -7251,12 +8244,13 @@
       "leagueStarts": 12,
       "leagueAppearances": 19,
       "leagueGoals": 8,
-      "leagueMinutes": null,
+      "leagueMinutes": 1139,
       "appearanceScope": "domestic_league_only",
       "candidateStatus": "draft",
       "verificationStatus": "league_appearance_starts_crosschecked_BDFutbol_partial_position_verification",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t1999-004014.html"
+        "https://www.bdfutbol.com/en/t/t1999-004014.html",
+        "https://www.deux-zero.com/ligue-1/buteurs-epreuve/edition/1999-2000/equipe/0/joueur/2775"
       ],
       "evidence": {
         "currentSeason": "https://www.bdfutbol.com/en/t/t1999-004014.html",
@@ -7276,22 +8270,36 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Lens",
+            "appearances": 27,
+            "starts": 27,
+            "minutes": 2208,
+            "goals": 8,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994014.html"
+            ]
           },
           "1999-00": {
             "appearances": 19,
             "starts": 12,
             "goals": 8,
             "verification": "BDFutbol_individual_season_directly_verified",
-            "source": "https://www.bdfutbol.com/en/t/t1999-004014.html"
+            "source": "https://www.bdfutbol.com/en/t/t1999-004014.html",
+            "minutes": 1139,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004014.html",
+              "https://www.deux-zero.com/ligue-1/buteurs-epreuve/edition/1999-2000/equipe/0/joueur/2775"
+            ]
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "대표 선발; 12회 리그 선발/19회 출전, 8골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.",
+      "tierReview": "1999-00 정규리그 19경기·12선발·1139분·8골. 검수 보고서에 따른 수치 보정. 기존 B+ 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록"
-      ]
+      ],
+      "preAuditTierReview": "대표 선발; 12회 리그 선발/19회 출전, 8골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료."
     },
     {
       "id": "ligue1-1999-00-lens-joseph-desire-job",
@@ -7313,12 +8321,13 @@
       "leagueStarts": 15,
       "leagueAppearances": 24,
       "leagueGoals": 4,
-      "leagueMinutes": null,
+      "leagueMinutes": 1394,
       "appearanceScope": "domestic_league_only",
       "candidateStatus": "draft",
       "verificationStatus": "league_appearance_starts_crosschecked_BDFutbol_partial_position_verification",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t1999-004014.html"
+        "https://www.bdfutbol.com/en/t/t1999-004014.html",
+        "https://www.deux-zero.com/ligue-1/buteurs-epreuve/edition/1999-2000/equipe/0/joueur/1913"
       ],
       "evidence": {
         "currentSeason": "https://www.bdfutbol.com/en/t/t1999-004014.html",
@@ -7338,22 +8347,36 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Olympique Lyonnais",
+            "appearances": 19,
+            "starts": 9,
+            "minutes": 957,
+            "goals": 6,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994017.html"
+            ]
           },
           "1999-00": {
             "appearances": 24,
             "starts": 15,
             "goals": 4,
             "verification": "BDFutbol_individual_season_directly_verified",
-            "source": "https://www.bdfutbol.com/en/t/t1999-004014.html"
+            "source": "https://www.bdfutbol.com/en/t/t1999-004014.html",
+            "minutes": 1394,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004014.html",
+              "https://www.deux-zero.com/ligue-1/buteurs-epreuve/edition/1999-2000/equipe/0/joueur/1913"
+            ]
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "주요 후보; 15회 리그 선발/24회 출전, 4골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.",
+      "tierReview": "1999-00 정규리그 24경기·15선발·1394분·4골. 검수 보고서에 따른 수치 보정. 기존 B0 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록"
-      ]
+      ],
+      "preAuditTierReview": "주요 후보; 15회 리그 선발/24회 출전, 4골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료."
     },
     {
       "id": "ligue1-1999-00-sedan-nicolas-sachy",
@@ -7380,7 +8403,8 @@
         "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999",
         "https://fbref.com/en/squads/e4e952b9/1999-2000/Sedan-Stats",
         "https://www.footballsquads.co.uk/france/1999-2000/div1/sedan.htm",
-        "https://www.lequipe.fr/fiche/nicolas-sachy/238294"
+        "https://www.lequipe.fr/fiche/nicolas-sachy/238294",
+        "https://www.bdfutbol.com/en/t/t1999-004035.html"
       ],
       "evidence": {
         "currentSeason": "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999",
@@ -7421,16 +8445,22 @@
             "starts": 34,
             "goals": null,
             "verification": "historical_club_roster_verified_individual_stats_partial",
-            "source": "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999"
+            "source": "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999",
+            "goalsConceded": 44,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004035.html"
+            ]
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "대표 선발; 34회 리그 선발/34회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료, 당해 리그 선발 기록 및 좌우 포지션 보강 필요. 1998-99 2부 리그 38경기, 1997-98 36경기 출전 이력은 L'Équipe에서 확인; 이전 대회 분류는 추가 점검.",
+      "tierReview": "1999-00 정규리그 34경기·34선발·3060분·미확인골·44실점. 검수 보고서에 따른 수치 보정. 기존 B+ 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록",
         "1999-00 실전 좌우 포지션 확인"
-      ]
+      ],
+      "leagueGoalsConceded": 44,
+      "preAuditTierReview": "대표 선발; 34회 리그 선발/34회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료, 당해 리그 선발 기록 및 좌우 포지션 보강 필요. 1998-99 2부 리그 38경기, 1997-98 36경기 출전 이력은 L'Équipe에서 확인; 이전 대회 분류는 추가 점검."
     },
     {
       "id": "ligue1-1999-00-sedan-luis-satorra",
@@ -7456,7 +8486,8 @@
       "sources": [
         "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999",
         "https://fbref.com/en/squads/e4e952b9/1999-2000/Sedan-Stats",
-        "https://www.footballsquads.co.uk/france/1999-2000/div1/sedan.htm"
+        "https://www.footballsquads.co.uk/france/1999-2000/div1/sedan.htm",
+        "https://www.bdfutbol.com/en/t/t1999-004035.html"
       ],
       "evidence": {
         "currentSeason": "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999",
@@ -7466,7 +8497,7 @@
       "season": "1999-00",
       "originalTacticalRole": "CB",
       "displayTier": "B+",
-      "leagueGoals": null,
+      "leagueGoals": 0,
       "verificationStatus": "season_membership_confirmed_individual_league_starts_incomplete",
       "threeSeasonReview": {
         "status": "prior_two_seasons_not_fully_independently_verified",
@@ -7486,18 +8517,22 @@
           "1999-00": {
             "appearances": 28,
             "starts": 28,
-            "goals": null,
+            "goals": 0,
             "verification": "historical_club_roster_verified_individual_stats_partial",
-            "source": "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999"
+            "source": "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004035.html"
+            ]
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "대표 선발; 28회 리그 선발/28회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료, 당해 리그 선발 기록 및 좌우 포지션 보강 필요.",
+      "tierReview": "1999-00 정규리그 28경기·28선발·2520분·0골. 검수 보고서에 따른 수치 보정. 기존 B+ 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록",
         "1999-00 실전 좌우 포지션 확인"
-      ]
+      ],
+      "preAuditTierReview": "대표 선발; 28회 리그 선발/28회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료, 당해 리그 선발 기록 및 좌우 포지션 보강 필요."
     },
     {
       "id": "ligue1-1999-00-sedan-eduardo-oliveira",
@@ -7523,7 +8558,9 @@
       "sources": [
         "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999",
         "https://fbref.com/en/squads/e4e952b9/1999-2000/Sedan-Stats",
-        "https://www.footballsquads.co.uk/france/1999-2000/div1/sedan.htm"
+        "https://www.footballsquads.co.uk/france/1999-2000/div1/sedan.htm",
+        "https://www.bdfutbol.com/en/t/t1999-004035.html",
+        "https://www.deux-zero.com/ligue-1/buteurs-epreuve/edition/1999-2000/equipe/0/joueur/1208"
       ],
       "evidence": {
         "currentSeason": "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999",
@@ -7533,7 +8570,7 @@
       "season": "1999-00",
       "originalTacticalRole": "CB",
       "displayTier": "B+",
-      "leagueGoals": null,
+      "leagueGoals": 1,
       "verificationStatus": "season_membership_confirmed_individual_league_starts_incomplete",
       "threeSeasonReview": {
         "status": "prior_two_seasons_not_fully_independently_verified",
@@ -7553,18 +8590,23 @@
           "1999-00": {
             "appearances": 27,
             "starts": 25,
-            "goals": null,
+            "goals": 1,
             "verification": "historical_club_roster_verified_individual_stats_partial",
-            "source": "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999"
+            "source": "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004035.html",
+              "https://www.deux-zero.com/ligue-1/buteurs-epreuve/edition/1999-2000/equipe/0/joueur/1208"
+            ]
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "대표 선발; 25회 리그 선발/27회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료, 당해 리그 선발 기록 및 좌우 포지션 보강 필요.",
+      "tierReview": "1999-00 정규리그 27경기·25선발·2251분·1골. 검수 보고서에 따른 수치 보정. 기존 B+ 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록",
         "1999-00 실전 좌우 포지션 확인"
-      ]
+      ],
+      "preAuditTierReview": "대표 선발; 25회 리그 선발/27회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료, 당해 리그 선발 기록 및 좌우 포지션 보강 필요."
     },
     {
       "id": "ligue1-1999-00-sedan-eddy-capron",
@@ -7576,13 +8618,13 @@
       "club": "sedan",
       "clubNameOriginal": "CS Sedan-Ardennes",
       "role": "backup",
-      "starts": null,
+      "starts": 13,
       "tier": "B",
       "rank": 23,
       "review": "draft_unapproved",
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
+      "leagueAppearances": 15,
+      "leagueStarts": 13,
+      "leagueMinutes": 1114,
       "appearanceScope": "domestic_league_only",
       "positionVerification": "needs_review",
       "verificationReason": "센터백/풀백 주 출전 위치 미확인",
@@ -7590,7 +8632,8 @@
       "sources": [
         "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999",
         "https://fbref.com/en/squads/e4e952b9/1999-2000/Sedan-Stats",
-        "https://www.footballsquads.co.uk/france/1999-2000/div1/sedan.htm"
+        "https://www.footballsquads.co.uk/france/1999-2000/div1/sedan.htm",
+        "https://www.bdfutbol.com/en/t/t1999-004035.html"
       ],
       "evidence": {
         "currentSeason": "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999",
@@ -7600,7 +8643,7 @@
       "season": "1999-00",
       "originalTacticalRole": "CB",
       "displayTier": "B0",
-      "leagueGoals": null,
+      "leagueGoals": 0,
       "verificationStatus": "season_membership_confirmed_individual_league_starts_incomplete",
       "threeSeasonReview": {
         "status": "prior_two_seasons_not_fully_independently_verified",
@@ -7618,21 +8661,26 @@
             "verification": "independent_player_season_check_pending"
           },
           "1999-00": {
-            "appearances": null,
-            "starts": null,
-            "goals": null,
+            "appearances": 15,
+            "starts": 13,
+            "goals": 0,
             "verification": "historical_club_roster_verified_individual_stats_partial",
-            "source": "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999"
+            "source": "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004035.html"
+            ],
+            "minutes": 1114
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "주요 후보; 미확인회 리그 선발/미확인회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료, 당해 리그 선발 기록 및 좌우 포지션 보강 필요.",
+      "tierReview": "1999-00 정규리그 15경기·13선발·1114분·0골. 검수 보고서에 따른 수치 보정. 기존 B0 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1999-00 리그 선발 횟수",
         "1997-98 / 1998-99 개인 경기 기록",
         "1999-00 실전 좌우 포지션 확인"
-      ]
+      ],
+      "preAuditTierReview": "주요 후보; 미확인회 리그 선발/미확인회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료, 당해 리그 선발 기록 및 좌우 포지션 보강 필요."
     },
     {
       "id": "ligue1-1999-00-sedan-juan-luis-montero",
@@ -7648,7 +8696,7 @@
       "tier": "B",
       "rank": 4,
       "review": "draft_unapproved",
-      "leagueAppearances": 34,
+      "leagueAppearances": 30,
       "leagueStarts": 26,
       "leagueMinutes": 2351,
       "appearanceScope": "domestic_league_only",
@@ -7659,7 +8707,8 @@
         "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999",
         "https://fbref.com/en/squads/e4e952b9/1999-2000/Sedan-Stats",
         "https://www.footballsquads.co.uk/france/1999-2000/div1/sedan.htm",
-        "https://www.lequipe.fr/fiche/jean-louis-montero/238297"
+        "https://www.lequipe.fr/fiche/jean-louis-montero/238297",
+        "https://www.bdfutbol.com/en/t/t1999-004035.html"
       ],
       "evidence": {
         "currentSeason": "https://www.lequipe.fr/fiche/jean-louis-montero/238297",
@@ -7672,7 +8721,7 @@
       "season": "1999-00",
       "originalTacticalRole": "LB",
       "displayTier": "B0",
-      "leagueGoals": null,
+      "leagueGoals": 0,
       "verificationStatus": "L_Equipe_34_appearances_independent_starts_LB_role_partially_unverified",
       "threeSeasonReview": {
         "status": "prior_two_seasons_not_fully_independently_verified",
@@ -7687,24 +8736,37 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Lorient",
+            "appearances": 24,
+            "starts": 15,
+            "minutes": 1398,
+            "goals": 1,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994019.html"
+            ]
           },
           "1999-00": {
-            "appearances": 34,
+            "appearances": 30,
             "starts": 26,
-            "goals": null,
+            "goals": 0,
             "verification": "historical_club_roster_verified_individual_stats_partial",
-            "source": "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999"
+            "source": "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004035.html",
+              "https://fbref.com/en/squads/e4e952b9/1999-2000/Sedan-Stats"
+            ]
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "대표 선발; 26회 리그 선발/30회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료, 당해 리그 선발 기록 및 좌우 포지션 보강 필요.",
+      "tierReview": "1999-00 정규리그 30경기·26선발·2351분·0골. 검수 보고서에 따른 수치 보정. 기존 B0 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록",
         "1999-00 실전 좌우 포지션 확인",
         "팀 내 1999-00 왼쪽 수비 위치 경기별 대조"
-      ]
+      ],
+      "preAuditTierReview": "대표 선발; 26회 리그 선발/30회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료, 당해 리그 선발 기록 및 좌우 포지션 보강 필요."
     },
     {
       "id": "ligue1-1999-00-sedan-cedric-elzeard",
@@ -7722,16 +8784,17 @@
       "review": "draft_unapproved",
       "nameKo": "세드리크 엘제아르",
       "born": "1975-04-01",
-      "starts": null,
-      "leagueStarts": null,
-      "leagueAppearances": null,
-      "leagueGoals": null,
-      "leagueMinutes": null,
+      "starts": 7,
+      "leagueStarts": 7,
+      "leagueAppearances": 10,
+      "leagueGoals": 0,
+      "leagueMinutes": 632,
       "appearanceScope": "domestic_league_only",
       "candidateStatus": "draft",
       "verificationStatus": "season_membership_confirmed_individual_league_starts_incomplete",
       "sources": [
-        "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999"
+        "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999",
+        "https://www.bdfutbol.com/en/t/t1999-004035.html"
       ],
       "evidence": {
         "currentSeason": "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999",
@@ -7754,21 +8817,26 @@
             "verification": "independent_player_season_check_pending"
           },
           "1999-00": {
-            "appearances": null,
-            "starts": null,
-            "goals": null,
+            "appearances": 10,
+            "starts": 7,
+            "goals": 0,
             "verification": "historical_club_roster_verified_individual_stats_partial",
-            "source": "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999"
+            "source": "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004035.html"
+            ],
+            "minutes": 632
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "대표 선발; 미확인회 리그 선발/미확인회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료, 당해 리그 선발 기록 및 좌우 포지션 보강 필요.",
+      "tierReview": "1999-00 정규리그 10경기·7선발·632분·0골. 검수 보고서에 따른 수치 보정. 기존 B0 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1999-00 리그 선발 횟수",
         "1997-98 / 1998-99 개인 경기 기록",
         "1999-00 실전 좌우 포지션 확인"
-      ]
+      ],
+      "preAuditTierReview": "대표 선발; 미확인회 리그 선발/미확인회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료, 당해 리그 선발 기록 및 좌우 포지션 보강 필요."
     },
     {
       "id": "ligue1-1999-00-sedan-laurent-huard",
@@ -7794,7 +8862,9 @@
       "sources": [
         "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999",
         "https://fbref.com/en/squads/e4e952b9/1999-2000/Sedan-Stats",
-        "https://www.footballsquads.co.uk/france/1999-2000/div1/sedan.htm"
+        "https://www.footballsquads.co.uk/france/1999-2000/div1/sedan.htm",
+        "https://www.bdfutbol.com/en/t/t1999-004035.html",
+        "https://www.deux-zero.com/ligue-1/buteurs-epreuve/edition/1999-2000/equipe/0/joueur/1831"
       ],
       "evidence": {
         "currentSeason": "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999",
@@ -7804,7 +8874,7 @@
       "season": "1999-00",
       "originalTacticalRole": "DM",
       "displayTier": "B0",
-      "leagueGoals": null,
+      "leagueGoals": 2,
       "verificationStatus": "season_membership_confirmed_individual_league_starts_incomplete",
       "threeSeasonReview": {
         "status": "prior_two_seasons_not_fully_independently_verified",
@@ -7819,23 +8889,36 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Rennes",
+            "appearances": 18,
+            "starts": 8,
+            "minutes": 802,
+            "goals": 1,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994020.html"
+            ]
           },
           "1999-00": {
             "appearances": 31,
             "starts": 25,
-            "goals": null,
+            "goals": 2,
             "verification": "historical_club_roster_verified_individual_stats_partial",
-            "source": "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999"
+            "source": "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004035.html",
+              "https://www.deux-zero.com/ligue-1/buteurs-epreuve/edition/1999-2000/equipe/0/joueur/1831"
+            ]
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "대표 선발; 25회 리그 선발/31회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료, 당해 리그 선발 기록 및 좌우 포지션 보강 필요.",
+      "tierReview": "1999-00 정규리그 31경기·25선발·2148분·2골. 검수 보고서에 따른 수치 보정. 기존 B0 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록",
         "1999-00 실전 좌우 포지션 확인"
-      ]
+      ],
+      "preAuditTierReview": "대표 선발; 25회 리그 선발/31회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료, 당해 리그 선발 기록 및 좌우 포지션 보강 필요."
     },
     {
       "id": "ligue1-1999-00-sedan-eric-crosnier",
@@ -7853,16 +8936,18 @@
       "review": "draft_unapproved",
       "nameKo": "에리크 크로니에",
       "born": "1972-12-22",
-      "starts": null,
-      "leagueStarts": null,
-      "leagueAppearances": null,
-      "leagueGoals": null,
-      "leagueMinutes": null,
+      "starts": 4,
+      "leagueStarts": 4,
+      "leagueAppearances": 16,
+      "leagueGoals": 2,
+      "leagueMinutes": 576,
       "appearanceScope": "domestic_league_only",
       "candidateStatus": "draft",
       "verificationStatus": "season_membership_confirmed_individual_league_starts_incomplete",
       "sources": [
-        "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999"
+        "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999",
+        "https://www.bdfutbol.com/en/t/t1999-004035.html",
+        "https://www.deux-zero.com/ligue-1/buteurs-epreuve/edition/1999-2000/equipe/0/joueur/903"
       ],
       "evidence": {
         "currentSeason": "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999",
@@ -7885,21 +8970,27 @@
             "verification": "independent_player_season_check_pending"
           },
           "1999-00": {
-            "appearances": null,
-            "starts": null,
-            "goals": null,
+            "appearances": 16,
+            "starts": 4,
+            "goals": 2,
             "verification": "historical_club_roster_verified_individual_stats_partial",
-            "source": "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999"
+            "source": "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004035.html",
+              "https://www.deux-zero.com/ligue-1/buteurs-epreuve/edition/1999-2000/equipe/0/joueur/903"
+            ],
+            "minutes": 576
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "주요 후보; 미확인회 리그 선발/미확인회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B- 잠정 평가. 이전 두 시즌 정량 교차검증 미완료, 당해 리그 선발 기록 및 좌우 포지션 보강 필요.",
+      "tierReview": "1999-00 정규리그 16경기·4선발·576분·2골. 검수 보고서에 따른 수치 보정. 기존 B- 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1999-00 리그 선발 횟수",
         "1997-98 / 1998-99 개인 경기 기록",
         "1999-00 실전 좌우 포지션 확인"
-      ]
+      ],
+      "preAuditTierReview": "주요 후보; 미확인회 리그 선발/미확인회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B- 잠정 평가. 이전 두 시즌 정량 교차검증 미완료, 당해 리그 선발 기록 및 좌우 포지션 보강 필요."
     },
     {
       "id": "ligue1-1999-00-sedan-madjid-adjaoud",
@@ -7925,7 +9016,8 @@
       "sources": [
         "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999",
         "https://fbref.com/en/squads/e4e952b9/1999-2000/Sedan-Stats",
-        "https://www.footballsquads.co.uk/france/1999-2000/div1/sedan.htm"
+        "https://www.footballsquads.co.uk/france/1999-2000/div1/sedan.htm",
+        "https://www.bdfutbol.com/en/t/t1999-004035.html"
       ],
       "evidence": {
         "currentSeason": "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999",
@@ -7935,7 +9027,7 @@
       "season": "1999-00",
       "originalTacticalRole": "CM",
       "displayTier": "B0",
-      "leagueGoals": null,
+      "leagueGoals": 0,
       "verificationStatus": "season_membership_confirmed_individual_league_starts_incomplete",
       "threeSeasonReview": {
         "status": "prior_two_seasons_not_fully_independently_verified",
@@ -7955,18 +9047,22 @@
           "1999-00": {
             "appearances": 25,
             "starts": 21,
-            "goals": null,
+            "goals": 0,
             "verification": "historical_club_roster_verified_individual_stats_partial",
-            "source": "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999"
+            "source": "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004035.html"
+            ]
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "대표 선발; 21회 리그 선발/25회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료, 당해 리그 선발 기록 및 좌우 포지션 보강 필요.",
+      "tierReview": "1999-00 정규리그 25경기·21선발·1886분·0골. 검수 보고서에 따른 수치 보정. 기존 B0 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록",
         "1999-00 실전 좌우 포지션 확인"
-      ]
+      ],
+      "preAuditTierReview": "대표 선발; 21회 리그 선발/25회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료, 당해 리그 선발 기록 및 좌우 포지션 보강 필요."
     },
     {
       "id": "ligue1-1999-00-sedan-jean-philippe-faure",
@@ -7984,16 +9080,17 @@
       "review": "draft_unapproved",
       "nameKo": "장필리프 포르",
       "born": "1966-11-17",
-      "starts": null,
-      "leagueStarts": null,
-      "leagueAppearances": null,
-      "leagueGoals": null,
-      "leagueMinutes": null,
+      "starts": 12,
+      "leagueStarts": 12,
+      "leagueAppearances": 18,
+      "leagueGoals": 0,
+      "leagueMinutes": 1053,
       "appearanceScope": "domestic_league_only",
       "candidateStatus": "draft",
       "verificationStatus": "season_membership_confirmed_individual_league_starts_incomplete",
       "sources": [
-        "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999"
+        "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999",
+        "https://www.bdfutbol.com/en/t/t1999-004035.html"
       ],
       "evidence": {
         "currentSeason": "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999",
@@ -8016,21 +9113,26 @@
             "verification": "independent_player_season_check_pending"
           },
           "1999-00": {
-            "appearances": null,
-            "starts": null,
-            "goals": null,
+            "appearances": 18,
+            "starts": 12,
+            "goals": 0,
             "verification": "historical_club_roster_verified_individual_stats_partial",
-            "source": "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999"
+            "source": "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004035.html"
+            ],
+            "minutes": 1053
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "주요 후보; 미확인회 리그 선발/미확인회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료, 당해 리그 선발 기록 및 좌우 포지션 보강 필요.",
+      "tierReview": "1999-00 정규리그 18경기·12선발·1053분·0골. 검수 보고서에 따른 수치 보정. 기존 B0 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1999-00 리그 선발 횟수",
         "1997-98 / 1998-99 개인 경기 기록",
         "1999-00 실전 좌우 포지션 확인"
-      ]
+      ],
+      "preAuditTierReview": "주요 후보; 미확인회 리그 선발/미확인회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B0 잠정 평가. 이전 두 시즌 정량 교차검증 미완료, 당해 리그 선발 기록 및 좌우 포지션 보강 필요."
     },
     {
       "id": "ligue1-1999-00-sedan-olivier-quint",
@@ -8115,16 +9217,17 @@
       "review": "draft_unapproved",
       "nameKo": "조니 노바크",
       "born": "1969-09-04",
-      "starts": null,
-      "leagueStarts": null,
-      "leagueAppearances": null,
-      "leagueGoals": null,
-      "leagueMinutes": null,
+      "starts": 9,
+      "leagueStarts": 9,
+      "leagueAppearances": 11,
+      "leagueGoals": 0,
+      "leagueMinutes": 813,
       "appearanceScope": "domestic_league_only",
       "candidateStatus": "draft",
       "verificationStatus": "season_membership_confirmed_individual_league_starts_incomplete",
       "sources": [
-        "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999"
+        "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999",
+        "https://www.bdfutbol.com/en/t/t1999-004035.html"
       ],
       "evidence": {
         "currentSeason": "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999",
@@ -8144,24 +9247,37 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Le Havre",
+            "appearances": 21,
+            "starts": 20,
+            "minutes": 1724,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994033.html"
+            ]
           },
           "1999-00": {
-            "appearances": null,
-            "starts": null,
-            "goals": null,
+            "appearances": 11,
+            "starts": 9,
+            "goals": 0,
             "verification": "historical_club_roster_verified_individual_stats_partial",
-            "source": "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999"
+            "source": "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004035.html"
+            ],
+            "minutes": 813
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "주요 후보; 미확인회 리그 선발/미확인회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B- 잠정 평가. 이전 두 시즌 정량 교차검증 미완료, 당해 리그 선발 기록 및 좌우 포지션 보강 필요.",
+      "tierReview": "1999-00 정규리그 11경기·9선발·813분·0골. 검수 보고서에 따른 수치 보정. 기존 B- 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1999-00 리그 선발 횟수",
         "1997-98 / 1998-99 개인 경기 기록",
         "1999-00 실전 좌우 포지션 확인"
-      ]
+      ],
+      "preAuditTierReview": "주요 후보; 미확인회 리그 선발/미확인회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B- 잠정 평가. 이전 두 시즌 정량 교차검증 미완료, 당해 리그 선발 기록 및 좌우 포지션 보강 필요."
     },
     {
       "id": "ligue1-1999-00-sedan-pierre-deblock",
@@ -8246,16 +9362,17 @@
       "review": "draft_unapproved",
       "nameKo": "빌렐 지리",
       "born": "1972-01-21",
-      "starts": null,
-      "leagueStarts": null,
-      "leagueAppearances": null,
-      "leagueGoals": null,
-      "leagueMinutes": null,
+      "starts": 3,
+      "leagueStarts": 3,
+      "leagueAppearances": 13,
+      "leagueGoals": 0,
+      "leagueMinutes": 444,
       "appearanceScope": "domestic_league_only",
       "candidateStatus": "draft",
       "verificationStatus": "season_membership_confirmed_individual_league_starts_incomplete",
       "sources": [
-        "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999"
+        "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999",
+        "https://www.bdfutbol.com/en/t/t1999-004035.html"
       ],
       "evidence": {
         "currentSeason": "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999",
@@ -8278,21 +9395,26 @@
             "verification": "independent_player_season_check_pending"
           },
           "1999-00": {
-            "appearances": null,
-            "starts": null,
-            "goals": null,
+            "appearances": 13,
+            "starts": 3,
+            "goals": 0,
             "verification": "historical_club_roster_verified_individual_stats_partial",
-            "source": "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999"
+            "source": "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004035.html"
+            ],
+            "minutes": 444
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "주요 후보; 미확인회 리그 선발/미확인회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B- 잠정 평가. 이전 두 시즌 정량 교차검증 미완료, 당해 리그 선발 기록 및 좌우 포지션 보강 필요.",
+      "tierReview": "1999-00 정규리그 13경기·3선발·444분·0골. 검수 보고서에 따른 수치 보정. 기존 B- 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1999-00 리그 선발 횟수",
         "1997-98 / 1998-99 개인 경기 기록",
         "1999-00 실전 좌우 포지션 확인"
-      ]
+      ],
+      "preAuditTierReview": "주요 후보; 미확인회 리그 선발/미확인회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B- 잠정 평가. 이전 두 시즌 정량 교차검증 미완료, 당해 리그 선발 기록 및 좌우 포지션 보강 필요."
     },
     {
       "id": "ligue1-1999-00-sedan-pius-n-diefi",
@@ -8371,13 +9493,13 @@
       "club": "sedan",
       "clubNameOriginal": "CS Sedan-Ardennes",
       "role": "starter",
-      "starts": null,
+      "starts": 20,
       "tier": "B+",
       "rank": 15,
       "review": "draft_unapproved",
-      "leagueAppearances": null,
-      "leagueStarts": null,
-      "leagueMinutes": null,
+      "leagueAppearances": 27,
+      "leagueStarts": 20,
+      "leagueMinutes": 1802,
       "appearanceScope": "domestic_league_only",
       "positionVerification": "needs_review",
       "verificationReason": "선발 출전 횟수와 동시 투톱 여부 재검증",
@@ -8385,7 +9507,9 @@
       "sources": [
         "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999",
         "https://fbref.com/en/squads/e4e952b9/1999-2000/Sedan-Stats",
-        "https://www.footballsquads.co.uk/france/1999-2000/div1/sedan.htm"
+        "https://www.footballsquads.co.uk/france/1999-2000/div1/sedan.htm",
+        "https://www.bdfutbol.com/en/t/t1999-004035.html",
+        "https://www.deux-zero.com/ligue-1/buteurs-epreuve/edition/1999-2000/equipe/0/joueur/1111"
       ],
       "evidence": {
         "currentSeason": "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999",
@@ -8413,21 +9537,27 @@
             "verification": "independent_player_season_check_pending"
           },
           "1999-00": {
-            "appearances": null,
-            "starts": null,
+            "appearances": 27,
+            "starts": 20,
             "goals": 8,
             "verification": "historical_club_roster_verified_individual_stats_partial",
-            "source": "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999"
+            "source": "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004035.html",
+              "https://www.deux-zero.com/ligue-1/buteurs-epreuve/edition/1999-2000/equipe/0/joueur/1111"
+            ],
+            "minutes": 1802
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "대표 선발; 미확인회 리그 선발/미확인회 출전, 9골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료, 당해 리그 선발 기록 및 좌우 포지션 보강 필요. 시즌 골 수는 출처별 상이(8골과 9골); L'Équipe/FBref 자료의 8골 기준, 독립 재확인 필요.",
+      "tierReview": "1999-00 정규리그 27경기·20선발·1802분·8골. 검수 보고서에 따른 수치 보정. 기존 B+ 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1999-00 리그 선발 횟수",
         "1997-98 / 1998-99 개인 경기 기록",
         "1999-00 실전 좌우 포지션 확인"
-      ]
+      ],
+      "preAuditTierReview": "대표 선발; 미확인회 리그 선발/미확인회 출전, 9골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료, 당해 리그 선발 기록 및 좌우 포지션 보강 필요. 시즌 골 수는 출처별 상이(8골과 9골); L'Équipe/FBref 자료의 8골 기준, 독립 재확인 필요."
     },
     {
       "id": "ligue1-1999-00-sedan-cedric-mionnet",
@@ -8445,17 +9575,19 @@
       "review": "draft_unapproved",
       "nameKo": "세드리크 미오네",
       "born": "1974-07-08",
-      "starts": null,
-      "leagueStarts": null,
+      "starts": 19,
+      "leagueStarts": 19,
       "leagueAppearances": 23,
       "leagueGoals": 7,
-      "leagueMinutes": null,
+      "leagueMinutes": 1543,
       "appearanceScope": "domestic_league_only",
       "candidateStatus": "draft",
       "verificationStatus": "season_membership_confirmed_individual_league_starts_incomplete",
       "sources": [
         "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999",
-        "https://www.lequipe.fr/fiche/cedric-mionnet/238300"
+        "https://www.lequipe.fr/fiche/cedric-mionnet/238300",
+        "https://www.bdfutbol.com/en/t/t1999-004035.html",
+        "https://www.deux-zero.com/ligue-1/buteurs-epreuve/edition/1999-2000/equipe/0/joueur/2570"
       ],
       "evidence": {
         "currentSeason": "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999",
@@ -8490,20 +9622,26 @@
           },
           "1999-00": {
             "appearances": 23,
-            "starts": null,
+            "starts": 19,
             "goals": 7,
             "verification": "historical_club_roster_verified_individual_stats_partial",
-            "source": "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999"
+            "source": "https://www.transfermarkt.fr/cs-sedan-ardennes/startseite/verein/1081/saison_id/1999",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004035.html",
+              "https://www.deux-zero.com/ligue-1/buteurs-epreuve/edition/1999-2000/equipe/0/joueur/2570"
+            ],
+            "minutes": 1543
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "1999-00 Sedan 리그 23경기 7골 및 1998-99 2부 리그 37경기 17골 실적을 가중 평가. 1997-98 38경기 7골 이력은 대회 분류를 별도 검증 중. 선발 횟수 미확인.",
+      "tierReview": "1999-00 정규리그 23경기·19선발·1543분·7골. 검수 보고서에 따른 수치 보정. 기존 B+ 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1999-00 리그 선발 횟수",
         "1997-98 / 1998-99 개인 경기 기록",
         "1999-00 실전 좌우 포지션 확인"
-      ]
+      ],
+      "preAuditTierReview": "1999-00 Sedan 리그 23경기 7골 및 1998-99 2부 리그 37경기 17골 실적을 가중 평가. 1997-98 38경기 7골 이력은 대회 분류를 별도 검증 중. 선발 횟수 미확인."
     },
     {
       "id": "ligue1-1999-00-auxerre-fabien-cool",
@@ -8554,22 +9692,36 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Auxerre",
+            "appearances": 34,
+            "starts": 34,
+            "minutes": 3060,
+            "goalsConceded": 45,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994025.html"
+            ]
           },
           "1999-00": {
             "appearances": 34,
             "starts": 34,
             "goals": null,
             "verification": "BDFutbol_individual_season_directly_verified",
-            "source": "https://www.bdfutbol.com/en/t/t1999-004025.html"
+            "source": "https://www.bdfutbol.com/en/t/t1999-004025.html",
+            "goalsConceded": 39,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004025.html"
+            ]
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "대표 선발; 34회 리그 선발/34회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.",
+      "tierReview": "1999-00 정규리그 34경기·34선발·3039분·미확인골·39실점. 검수 보고서에 따른 수치 보정. 기존 B+ 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록"
-      ]
+      ],
+      "leagueGoalsConceded": 39,
+      "preAuditTierReview": "대표 선발; 34회 리그 선발/34회 출전. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 B+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료."
     },
     {
       "id": "ligue1-1999-00-auxerre-pedro-reyes",
@@ -8620,7 +9772,15 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Auxerre",
+            "appearances": 10,
+            "starts": 9,
+            "minutes": 799,
+            "goals": 1,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994025.html"
+            ]
           },
           "1999-00": {
             "appearances": 30,
@@ -8686,7 +9846,15 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Auxerre",
+            "appearances": 30,
+            "starts": 30,
+            "minutes": 2653,
+            "goals": 4,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994025.html"
+            ]
           },
           "1999-00": {
             "appearances": 26,
@@ -8752,7 +9920,15 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Auxerre",
+            "appearances": 13,
+            "starts": 9,
+            "minutes": 894,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994025.html"
+            ]
           },
           "1999-00": {
             "appearances": 22,
@@ -8818,7 +9994,15 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Auxerre",
+            "appearances": 20,
+            "starts": 20,
+            "minutes": 1592,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994025.html"
+            ]
           },
           "1999-00": {
             "appearances": 20,
@@ -8884,7 +10068,15 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Auxerre",
+            "appearances": 15,
+            "starts": 10,
+            "minutes": 1031,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994025.html"
+            ]
           },
           "1999-00": {
             "appearances": 32,
@@ -8950,7 +10142,15 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Auxerre",
+            "appearances": 25,
+            "starts": 25,
+            "minutes": 2139,
+            "goals": 2,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994025.html"
+            ]
           },
           "1999-00": {
             "appearances": 30,
@@ -9016,7 +10216,15 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Auxerre",
+            "appearances": 32,
+            "starts": 32,
+            "minutes": 2786,
+            "goals": 7,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994025.html"
+            ]
           },
           "1999-00": {
             "appearances": 30,
@@ -9082,7 +10290,15 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Auxerre",
+            "appearances": 24,
+            "starts": 20,
+            "minutes": 1857,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994025.html"
+            ]
           },
           "1999-00": {
             "appearances": 26,
@@ -9148,7 +10364,15 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Auxerre",
+            "appearances": 13,
+            "starts": 2,
+            "minutes": 374,
+            "goals": 1,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994025.html"
+            ]
           },
           "1999-00": {
             "appearances": 25,
@@ -9214,7 +10438,15 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Auxerre",
+            "appearances": 27,
+            "starts": 27,
+            "minutes": 2359,
+            "goals": 5,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994025.html"
+            ]
           },
           "1999-00": {
             "appearances": 19,
@@ -9251,12 +10483,13 @@
       "leagueStarts": 7,
       "leagueAppearances": 15,
       "leagueGoals": 3,
-      "leagueMinutes": null,
+      "leagueMinutes": 739,
       "appearanceScope": "domestic_league_only",
       "candidateStatus": "draft",
       "verificationStatus": "league_appearance_starts_crosschecked_BDFutbol_partial_position_verification",
       "sources": [
-        "https://www.bdfutbol.com/en/t/t1999-004025.html"
+        "https://www.bdfutbol.com/en/t/t1999-004025.html",
+        "https://www.deux-zero.com/ligue-1/buteurs-epreuve/edition/1999-2000/equipe/0/joueur/1970"
       ],
       "evidence": {
         "currentSeason": "https://www.bdfutbol.com/en/t/t1999-004025.html",
@@ -9276,22 +10509,36 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Auxerre",
+            "appearances": 1,
+            "starts": 0,
+            "minutes": 44,
+            "goals": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994025.html"
+            ]
           },
           "1999-00": {
             "appearances": 15,
             "starts": 7,
             "goals": 3,
             "verification": "BDFutbol_individual_season_directly_verified",
-            "source": "https://www.bdfutbol.com/en/t/t1999-004025.html"
+            "source": "https://www.bdfutbol.com/en/t/t1999-004025.html",
+            "minutes": 739,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1999-004025.html",
+              "https://www.deux-zero.com/ligue-1/buteurs-epreuve/edition/1999-2000/equipe/0/joueur/1970"
+            ]
           }
         },
         "note": "2026-11-09 draft. Contemporaneous 1999-00 starts and key scoring facts reviewed. Historical prior-two-year player-by-player quantitative evidence still incomplete; tier is a provisional qualitative judgement, not verified three-year numerical score."
       },
-      "tierReview": "주요 후보; 7회 리그 선발/15회 출전, 3골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 C+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료.",
+      "tierReview": "1999-00 정규리그 15경기·7선발·739분·3골. 검수 보고서에 따른 수치 보정. 기존 C+ 잠정 평가는 유지하며 최근 3시즌 경기별 기여 및 포지션 검토 후 재평가 필요.",
       "verificationNeeded": [
         "1997-98 / 1998-99 개인 경기 기록"
-      ]
+      ],
+      "preAuditTierReview": "주요 후보; 7회 리그 선발/15회 출전, 3골. 개인 영향력과 최근 시즌 지속성을 정성적으로 반영한 C+ 잠정 평가. 이전 두 시즌 정량 교차검증 미완료."
     },
     {
       "id": "ligue1-1999-00-auxerre-steve-marlet",
@@ -9342,7 +10589,15 @@
             "verification": "independent_player_season_check_pending"
           },
           "1998-99": {
-            "verification": "independent_player_season_check_pending"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "club": "Auxerre",
+            "appearances": 32,
+            "starts": 32,
+            "minutes": 2869,
+            "goals": 7,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t1998-994025.html"
+            ]
           },
           "1999-00": {
             "appearances": 33,
