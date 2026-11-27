@@ -138,7 +138,310 @@
       "2012 UNFP POY Eden Hazard, goalkeeper Hugo Lloris, young player Younès Belhanda, contemporaneous XI informs but does not mechanically determine grades.",
       "Jimmy Briand DOB 1985-08-02 from independent profile; some squad datasets have conflicting date.",
       "All players and XI remain user-unapproved. Complete independent earlier-season records, match-level role share and public browser validation pending."
-    ]
+    ],
+    "ligue1Segment2Audit": {
+      "report": "FOOTBALL_AUDIT_LIGUE1_SEGMENT_2_CORRECTIONS.md",
+      "baseline": "cae681f5b53fd0afeda61f7bb5867c5b8a4e061c",
+      "status": "partial_report_backed_factual_corrections_pending_independent_review",
+      "counts": {
+        "confirmed": 1,
+        "assists": 1,
+        "GK": 12,
+        "prior": 100,
+        "priorClubRecords": 5
+      },
+      "changes": [
+        {
+          "id": "ligue1-2011-12-psg-kevingameiro",
+          "field": "born",
+          "before": "1987-04-09",
+          "after": "1987-05-09",
+          "source": [
+            "https://www.bdfutbol.com/en/j/j15209.html",
+            "https://www.fff.fr/equipe-nationale/joueur/8677-gameiro-kevin/fiche.html"
+          ]
+        },
+        {
+          "id": "ligue1-2011-12-lille-edenhazard",
+          "field": "leagueAssists",
+          "before": null,
+          "after": 15,
+          "source": [
+            "https://ligue1.com/en/articles/l1_article_2586-"
+          ]
+        },
+        {
+          "id": "ligue1-2011-12-montpellier-geoffreyjourdren",
+          "field": "leagueGoalsConceded",
+          "before": null,
+          "after": 31,
+          "source": [
+            "https://www.bdfutbol.com/en/t/t2011-124011.html"
+          ]
+        },
+        {
+          "id": "ligue1-2011-12-montpellier-laurentpionnier",
+          "field": "leagueGoalsConceded",
+          "before": null,
+          "after": 3,
+          "source": [
+            "https://www.bdfutbol.com/en/t/t2011-124011.html"
+          ]
+        },
+        {
+          "id": "ligue1-2011-12-psg-salvatoresirigu",
+          "field": "leagueGoalsConceded",
+          "before": null,
+          "after": 41,
+          "source": [
+            "https://www.bdfutbol.com/en/t/t2011-124002.html"
+          ]
+        },
+        {
+          "id": "ligue1-2011-12-psg-nicolasdouchez",
+          "field": "leagueGoalsConceded",
+          "before": null,
+          "after": 0,
+          "source": [
+            "https://www.bdfutbol.com/en/t/t2011-124002.html"
+          ]
+        },
+        {
+          "id": "ligue1-2011-12-lille-mickaellandreau",
+          "field": "leagueGoalsConceded",
+          "before": null,
+          "after": 39,
+          "source": [
+            "https://www.bdfutbol.com/en/t/t2011-124009.html"
+          ]
+        },
+        {
+          "id": "ligue1-2011-12-lille-vincentenyeama",
+          "field": "leagueGoalsConceded",
+          "before": null,
+          "after": 0,
+          "source": [
+            "https://www.bdfutbol.com/en/t/t2011-124009.html"
+          ]
+        },
+        {
+          "id": "ligue1-2011-12-lyon-hugolloris",
+          "field": "leagueGoalsConceded",
+          "before": null,
+          "after": 48,
+          "source": [
+            "https://www.bdfutbol.com/en/t/t2011-124017.html"
+          ]
+        },
+        {
+          "id": "ligue1-2011-12-lyon-remyvercoutre",
+          "field": "leagueGoalsConceded",
+          "before": null,
+          "after": 3,
+          "source": [
+            "https://www.bdfutbol.com/en/t/t2011-124017.html"
+          ]
+        },
+        {
+          "id": "ligue1-2011-12-bordeaux-cedriccarrasso",
+          "field": "leagueGoalsConceded",
+          "before": null,
+          "after": 39,
+          "source": [
+            "https://www.bdfutbol.com/en/t/t2011-124012.html"
+          ]
+        },
+        {
+          "id": "ligue1-2011-12-bordeaux-kevinolimpa",
+          "field": "leagueGoalsConceded",
+          "before": null,
+          "after": 1,
+          "source": [
+            "https://www.bdfutbol.com/en/t/t2011-124012.html"
+          ]
+        },
+        {
+          "id": "ligue1-2011-12-marseille-stevemandanda",
+          "field": "leagueGoalsConceded",
+          "before": null,
+          "after": 41,
+          "source": [
+            "https://www.bdfutbol.com/en/t/t2011-124004.html"
+          ]
+        },
+        {
+          "id": "ligue1-2011-12-marseille-gennarobracigliano",
+          "field": "leagueGoalsConceded",
+          "before": null,
+          "after": 0,
+          "source": [
+            "https://www.bdfutbol.com/en/t/t2011-124004.html"
+          ]
+        }
+      ],
+      "pending": [
+        {
+          "section": "구단 대표 대형과 선발 집계 차이 (2행)",
+          "row": [
+            "lille",
+            "4-3-3",
+            "4-1-2-2-1",
+            "23",
+            "4-2-3-1 13",
+            "38",
+            "경기 전술 출처를 추가 대조",
+            "[근거](https://www.kaggle.com/datasets/hugomathien/soccer)"
+          ]
+        },
+        {
+          "section": "구단 대표 대형과 선발 집계 차이 (2행)",
+          "row": [
+            "lyon",
+            "4-4-2",
+            "4-2-3-1",
+            "22",
+            "4-2-2-2 16",
+            "38",
+            "경기 전술 출처를 추가 대조",
+            "[근거](https://www.kaggle.com/datasets/hugomathien/soccer)"
+          ]
+        },
+        {
+          "section": "누락 후보 비교 (2행)",
+          "row": [
+            "구단",
+            "원어명",
+            "출전",
+            "선발",
+            "근거"
+          ]
+        },
+        {
+          "section": "누락 후보 비교 (2행)",
+          "row": [
+            "PSG",
+            "Marcos Venancio de Albuquerque",
+            "24",
+            "17",
+            "[BDFutbol 선수](https://www.bdfutbol.com/en/j/j83408.html) · [구단](https://www.bdfutbol.com/en/t/t2011-124002.html)"
+          ]
+        },
+        {
+          "section": "누락 후보 비교 (2행)",
+          "row": [
+            "Olympique de Marseille",
+            "Stéphane M'Bia Etoundi",
+            "15",
+            "14",
+            "[BDFutbol 선수](https://www.bdfutbol.com/en/j/j95724.html) · [구단](https://www.bdfutbol.com/en/t/t2011-124004.html)"
+          ]
+        },
+        {
+          "section": "Best XI와 포지션 순위 차이 (1행)",
+          "row": [
+            "포지션",
+            "XI 선수",
+            "순위",
+            "선수 ID",
+            "상위 후보",
+            "검토"
+          ]
+        },
+        {
+          "section": "Best XI와 포지션 순위 차이 (1행)",
+          "row": [
+            "CM",
+            "킴 셸스트룀",
+            "2",
+            "ligue1-2011-12-lyon-kimkallstrom",
+            "야로슬라프 플라실 1위 (ligue1-2011-12-bordeaux-jaroslavplasil)",
+            "실제 주 포지션과 최근 3시즌 개인 활약을 대조해 순위·XI·선정 이유를 정리."
+          ]
+        },
+        {
+          "section": "일반 프로필 위치 대조 (2행)",
+          "row": [
+            "밀란 비셰바츠",
+            "Milan Biševac",
+            "Paris Saint-Germain FC",
+            "ligue1-2011-12-psg-milanbisevac",
+            "RB",
+            "CB",
+            "17",
+            "[근거](https://www.bdfutbol.com/en/j/j82247.html)"
+          ]
+        },
+        {
+          "section": "일반 프로필 위치 대조 (2행)",
+          "row": [
+            "사뮈엘 움티티",
+            "Samuel Umtiti",
+            "Olympique Lyonnais",
+            "ligue1-2011-12-lyon-samuelumtiti",
+            "LB",
+            "CB",
+            "11",
+            "[근거](https://www.bdfutbol.com/en/j/j82259.html)"
+          ]
+        },
+        {
+          "section": "선발 4경기 이하 자격 확인 (4행)",
+          "row": [
+            "압델하미드 엘 카우타리",
+            "Abdelhamid El Kaoutari",
+            "Montpellier HSC",
+            "ligue1-2011-12-montpellier-abdelhamidelkaoutari",
+            "CB",
+            "backup",
+            "3",
+            "5",
+            "[근거](https://www.bdfutbol.com/en/t/t2011-124011.html)"
+          ]
+        },
+        {
+          "section": "선발 4경기 이하 자격 확인 (4행)",
+          "row": [
+            "로맹 피토",
+            "Romain Pitau",
+            "Montpellier HSC",
+            "ligue1-2011-12-montpellier-romainpitau",
+            "DM",
+            "backup",
+            "2",
+            "10",
+            "[근거](https://www.bdfutbol.com/en/t/t2011-124011.html)"
+          ]
+        },
+        {
+          "section": "선발 4경기 이하 자격 확인 (4행)",
+          "row": [
+            "장크리스토프 바에베크",
+            "Jean-Christophe Bahebeck",
+            "Paris Saint-Germain FC",
+            "ligue1-2011-12-psg-jeanchristophebahebeck",
+            "LW",
+            "backup",
+            "0",
+            "8",
+            "[근거](https://www.bdfutbol.com/en/t/t2011-124002.html)"
+          ]
+        },
+        {
+          "section": "선발 4경기 이하 자격 확인 (4행)",
+          "row": [
+            "플로리앙 마랑주",
+            "Florian Marange",
+            "FC Girondins de Bordeaux",
+            "ligue1-2011-12-bordeaux-florianmarange",
+            "LB",
+            "backup",
+            "1",
+            "2",
+            "[근거](https://www.bdfutbol.com/en/t/t2011-124012.html)"
+          ]
+        }
+      ]
+    }
   },
   "clubs": [
     {
@@ -689,16 +992,24 @@
             "minutes": 3420,
             "goals": null,
             "source": "https://www.bdfutbol.com/en/t/t2009-104011.html",
-            "verification": "prior_unapproved_Archive_context_NOT_independent"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "goalsConceded": 40,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2009-104011.html"
+            ]
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
+            "club": "Montpellier",
+            "appearances": 37,
+            "starts": 37,
+            "minutes": 3330,
             "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2010-114011.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "goalsConceded": 42,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2010-114011.html"
+            ]
           },
           "2011-12": {
             "club": "Montpellier HSC",
@@ -707,17 +1018,24 @@
             "minutes": 3060,
             "goals": null,
             "source": "https://www.bdfutbol.com/en/t/t2011-124011.html",
-            "verification": "2011-12 direct club lineups"
+            "verification": "2011-12 direct club lineups",
+            "goalsConceded": 31,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2011-124011.html"
+            ]
           }
         }
       },
-      "assessmentRationale": "2011-12 리그 34경기·34선발·3060분 기용과 개인 공격·수비 기여, 포지션별 리그 상대적 영향력 우선. 2010-11/2009-10 경기력은 지속성 참고(독립 자료 일부 부족).",
-      "tierReview": "2011-12 리그 34경기·34선발·3060분 기용과 개인 공격·수비 기여, 포지션별 리그 상대적 영향력 우선. 2010-11/2009-10 경기력은 지속성 참고(독립 자료 일부 부족).",
+      "assessmentRationale": "2011-12 정규리그 34경기·34선발·3060분·미확인골·31실점. 검수 보고서 수치 반영; 기존 잠정 티어 유지, 경기별 기여 및 포지션 재검토 필요.",
+      "tierReview": "2011-12 정규리그 34경기·34선발·3060분·미확인골·31실점. 검수 보고서 수치 반영; 기존 잠정 티어 유지, 경기별 기여 및 포지션 재검토 필요.",
       "verificationNeeded": [
         "2009-10/2010-11 independently sourced match data",
         "match-level position frequency",
         "DOB name verification second profile if differing"
-      ]
+      ],
+      "leagueGoalsConceded": 31,
+      "preAuditAssessmentRationale": "2011-12 리그 34경기·34선발·3060분 기용과 개인 공격·수비 기여, 포지션별 리그 상대적 영향력 우선. 2010-11/2009-10 경기력은 지속성 참고(독립 자료 일부 부족).",
+      "preAuditTierReview": "2011-12 리그 34경기·34선발·3060분 기용과 개인 공격·수비 기여, 포지션별 리그 상대적 영향력 우선. 2010-11/2009-10 경기력은 지속성 참고(독립 자료 일부 부족)."
     },
     {
       "id": "ligue1-2011-12-montpellier-laurentpionnier",
@@ -770,13 +1088,17 @@
             "verification": "independent_previous_season_check_pending"
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
+            "club": "Montpellier",
+            "appearances": 1,
+            "starts": 1,
+            "minutes": 90,
             "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2010-114011.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "goalsConceded": 1,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2010-114011.html"
+            ]
           },
           "2011-12": {
             "club": "Montpellier HSC",
@@ -785,17 +1107,24 @@
             "minutes": 360,
             "goals": null,
             "source": "https://www.bdfutbol.com/en/t/t2011-124011.html",
-            "verification": "2011-12 direct club lineups"
+            "verification": "2011-12 direct club lineups",
+            "goalsConceded": 3,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2011-124011.html"
+            ]
           }
         }
       },
-      "assessmentRationale": "2011-12 리그 4경기·4선발·360분 기용과 개인 공격·수비 기여, 포지션별 리그 상대적 영향력 우선. 2010-11/2009-10 경기력은 지속성 참고(독립 자료 일부 부족).",
-      "tierReview": "2011-12 리그 4경기·4선발·360분 기용과 개인 공격·수비 기여, 포지션별 리그 상대적 영향력 우선. 2010-11/2009-10 경기력은 지속성 참고(독립 자료 일부 부족).",
+      "assessmentRationale": "2011-12 정규리그 4경기·4선발·360분·미확인골·3실점. 검수 보고서 수치 반영; 기존 잠정 티어 유지, 경기별 기여 및 포지션 재검토 필요.",
+      "tierReview": "2011-12 정규리그 4경기·4선발·360분·미확인골·3실점. 검수 보고서 수치 반영; 기존 잠정 티어 유지, 경기별 기여 및 포지션 재검토 필요.",
       "verificationNeeded": [
         "2009-10/2010-11 independently sourced match data",
         "match-level position frequency",
         "DOB name verification second profile if differing"
-      ]
+      ],
+      "leagueGoalsConceded": 3,
+      "preAuditAssessmentRationale": "2011-12 리그 4경기·4선발·360분 기용과 개인 공격·수비 기여, 포지션별 리그 상대적 영향력 우선. 2010-11/2009-10 경기력은 지속성 참고(독립 자료 일부 부족).",
+      "preAuditTierReview": "2011-12 리그 4경기·4선발·360분 기용과 개인 공격·수비 기여, 포지션별 리그 상대적 영향력 우선. 2010-11/2009-10 경기력은 지속성 참고(독립 자료 일부 부족)."
     },
     {
       "id": "ligue1-2011-12-montpellier-vitorinohilton",
@@ -839,22 +1168,28 @@
         "status": "previous_two_seasons_not_independently_completely_verified",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Olympique de Marseille",
+            "appearances": 12,
+            "starts": 9,
+            "minutes": 854,
+            "goals": 1,
+            "source": "https://www.bdfutbol.com/en/t/t2009-104004.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2009-104004.html"
+            ]
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Olympique de Marseille",
+            "appearances": 8,
+            "starts": 6,
+            "minutes": 583,
+            "goals": 0,
+            "source": "https://www.bdfutbol.com/en/t/t2010-114004.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2010-114004.html"
+            ]
           },
           "2011-12": {
             "club": "Montpellier HSC",
@@ -926,13 +1261,16 @@
             "verification": "prior_unapproved_Archive_context_NOT_independent"
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Montpellier",
+            "appearances": 36,
+            "starts": 36,
+            "minutes": 3179,
+            "goals": 1,
+            "source": "https://www.bdfutbol.com/en/t/t2010-114011.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2010-114011.html"
+            ]
           },
           "2011-12": {
             "club": "Montpellier HSC",
@@ -1004,13 +1342,16 @@
             "verification": "prior_unapproved_Archive_context_NOT_independent"
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Montpellier",
+            "appearances": 25,
+            "starts": 18,
+            "minutes": 1817,
+            "goals": 1,
+            "source": "https://www.bdfutbol.com/en/t/t2010-114011.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2010-114011.html"
+            ]
           },
           "2011-12": {
             "club": "Montpellier HSC",
@@ -1073,22 +1414,28 @@
         "status": "previous_two_seasons_not_independently_completely_verified",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Lens",
+            "appearances": 15,
+            "starts": 12,
+            "minutes": 1059,
+            "goals": 1,
+            "source": "https://www.bdfutbol.com/en/t/t2009-104014.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2009-104014.html"
+            ]
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Lens",
+            "appearances": 35,
+            "starts": 31,
+            "minutes": 2873,
+            "goals": 0,
+            "source": "https://www.bdfutbol.com/en/t/t2010-114014.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2010-114014.html"
+            ]
           },
           "2011-12": {
             "club": "Montpellier HSC",
@@ -1160,13 +1507,16 @@
             "verification": "prior_unapproved_Archive_context_NOT_independent"
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Montpellier",
+            "appearances": 31,
+            "starts": 31,
+            "minutes": 2602,
+            "goals": 0,
+            "source": "https://www.bdfutbol.com/en/t/t2010-114011.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2010-114011.html"
+            ]
           },
           "2011-12": {
             "club": "Montpellier HSC",
@@ -1235,16 +1585,43 @@
             "minutes": 785,
             "goals": 0,
             "source": "https://www.bdfutbol.com/en/t/t2009-104011.html",
-            "verification": "prior_unapproved_Archive_context_NOT_independent"
+            "verification": "audit_report_BDFutbol_club_scope_partial",
+            "clubRecords": [
+              {
+                "club": "Olympique de Marseille",
+                "appearances": 4,
+                "starts": 3,
+                "minutes": 247,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2009-104004.html",
+                "verification": "audit_report_BDFutbol_partial_club_record"
+              },
+              {
+                "club": "Montpellier",
+                "appearances": 12,
+                "starts": 8,
+                "minutes": 785,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2009-104011.html",
+                "verification": "audit_report_BDFutbol_partial_club_record"
+              }
+            ],
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2009-104004.html",
+              "https://www.bdfutbol.com/en/t/t2009-104011.html"
+            ]
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Montpellier",
+            "appearances": 29,
+            "starts": 27,
+            "minutes": 2414,
+            "goals": 3,
+            "source": "https://www.bdfutbol.com/en/t/t2010-114011.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2010-114011.html"
+            ]
           },
           "2011-12": {
             "club": "Montpellier HSC",
@@ -1316,13 +1693,16 @@
             "verification": "independent_previous_season_check_pending"
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Montpellier",
+            "appearances": 26,
+            "starts": 14,
+            "minutes": 1468,
+            "goals": 0,
+            "source": "https://www.bdfutbol.com/en/t/t2010-114011.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2010-114011.html"
+            ]
           },
           "2011-12": {
             "club": "Montpellier HSC",
@@ -1394,13 +1774,16 @@
             "verification": "prior_unapproved_Archive_context_NOT_independent"
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Montpellier",
+            "appearances": 14,
+            "starts": 5,
+            "minutes": 525,
+            "goals": 1,
+            "source": "https://www.bdfutbol.com/en/t/t2010-114011.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2010-114011.html"
+            ]
           },
           "2011-12": {
             "club": "Montpellier HSC",
@@ -1472,13 +1855,16 @@
             "verification": "prior_unapproved_Archive_context_NOT_independent"
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Montpellier",
+            "appearances": 30,
+            "starts": 27,
+            "minutes": 2223,
+            "goals": 0,
+            "source": "https://www.bdfutbol.com/en/t/t2010-114011.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2010-114011.html"
+            ]
           },
           "2011-12": {
             "club": "Montpellier HSC",
@@ -1550,13 +1936,16 @@
             "verification": "independent_previous_season_check_pending"
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Montpellier",
+            "appearances": 30,
+            "starts": 26,
+            "minutes": 2181,
+            "goals": 3,
+            "source": "https://www.bdfutbol.com/en/t/t2010-114011.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2010-114011.html"
+            ]
           },
           "2011-12": {
             "club": "Montpellier HSC",
@@ -1628,13 +2017,16 @@
             "verification": "prior_unapproved_Archive_context_NOT_independent"
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Montpellier",
+            "appearances": 35,
+            "starts": 30,
+            "minutes": 2603,
+            "goals": 1,
+            "source": "https://www.bdfutbol.com/en/t/t2010-114011.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2010-114011.html"
+            ]
           },
           "2011-12": {
             "club": "Montpellier HSC",
@@ -1706,13 +2098,16 @@
             "verification": "prior_unapproved_Archive_context_NOT_independent"
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Montpellier",
+            "appearances": 36,
+            "starts": 28,
+            "minutes": 2591,
+            "goals": 3,
+            "source": "https://www.bdfutbol.com/en/t/t2010-114011.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2010-114011.html"
+            ]
           },
           "2011-12": {
             "club": "Montpellier HSC",
@@ -1784,13 +2179,16 @@
             "verification": "independent_previous_season_check_pending"
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Montpellier",
+            "appearances": 11,
+            "starts": 9,
+            "minutes": 800,
+            "goals": 0,
+            "source": "https://www.bdfutbol.com/en/t/t2010-114011.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2010-114011.html"
+            ]
           },
           "2011-12": {
             "club": "Montpellier HSC",
@@ -1862,13 +2260,16 @@
             "verification": "prior_unapproved_Archive_context_NOT_independent"
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Montpellier",
+            "appearances": 25,
+            "starts": 14,
+            "minutes": 1245,
+            "goals": 1,
+            "source": "https://www.bdfutbol.com/en/t/t2010-114011.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2010-114011.html"
+            ]
           },
           "2011-12": {
             "club": "Montpellier HSC",
@@ -1940,13 +2341,16 @@
             "verification": "prior_unapproved_Archive_context_NOT_independent"
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Montpellier",
+            "appearances": 36,
+            "starts": 28,
+            "minutes": 2476,
+            "goals": 4,
+            "source": "https://www.bdfutbol.com/en/t/t2010-114011.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2010-114011.html"
+            ]
           },
           "2011-12": {
             "club": "Montpellier HSC",
@@ -2018,13 +2422,16 @@
             "verification": "independent_previous_season_check_pending"
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Arles-Avignon",
+            "appearances": 17,
+            "starts": 5,
+            "minutes": 670,
+            "goals": 3,
+            "source": "https://www.bdfutbol.com/en/t/t2010-114028.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2010-114028.html"
+            ]
           },
           "2011-12": {
             "club": "Montpellier HSC",
@@ -2096,13 +2503,16 @@
             "verification": "independent_previous_season_check_pending"
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Montpellier",
+            "appearances": 37,
+            "starts": 33,
+            "minutes": 2913,
+            "goals": 12,
+            "source": "https://www.bdfutbol.com/en/t/t2010-114011.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2010-114011.html"
+            ]
           },
           "2011-12": {
             "club": "Montpellier HSC",
@@ -2189,17 +2599,24 @@
             "minutes": 3420,
             "goals": null,
             "source": "https://www.bdfutbol.com/en/t/t2011-124002.html",
-            "verification": "2011-12 direct club lineups"
+            "verification": "2011-12 direct club lineups",
+            "goalsConceded": 41,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2011-124002.html"
+            ]
           }
         }
       },
-      "assessmentRationale": "리그 38경기 전부 선발. 새 소속팀에서의 안정성과 기여는 높지만 프랑스 리그 최상위 지속성은 첫 시즌.",
-      "tierReview": "리그 38경기 전부 선발. 새 소속팀에서의 안정성과 기여는 높지만 프랑스 리그 최상위 지속성은 첫 시즌.",
+      "assessmentRationale": "2011-12 정규리그 38경기·38선발·3420분·미확인골·41실점. 검수 보고서 수치 반영; 기존 잠정 티어 유지, 경기별 기여 및 포지션 재검토 필요.",
+      "tierReview": "2011-12 정규리그 38경기·38선발·3420분·미확인골·41실점. 검수 보고서 수치 반영; 기존 잠정 티어 유지, 경기별 기여 및 포지션 재검토 필요.",
       "verificationNeeded": [
         "2009-10/2010-11 independently sourced match data",
         "match-level position frequency",
         "DOB name verification second profile if differing"
-      ]
+      ],
+      "leagueGoalsConceded": 41,
+      "preAuditAssessmentRationale": "리그 38경기 전부 선발. 새 소속팀에서의 안정성과 기여는 높지만 프랑스 리그 최상위 지속성은 첫 시즌.",
+      "preAuditTierReview": "리그 38경기 전부 선발. 새 소속팀에서의 안정성과 기여는 높지만 프랑스 리그 최상위 지속성은 첫 시즌."
     },
     {
       "id": "ligue1-2011-12-psg-nicolasdouchez",
@@ -2243,13 +2660,17 @@
         "status": "previous_two_seasons_not_independently_completely_verified",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
+            "club": "Rennes",
+            "appearances": 37,
+            "starts": 37,
+            "minutes": 3330,
             "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2009-104020.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "goalsConceded": 40,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2009-104020.html"
+            ]
           },
           "2010-11": {
             "club": "Stade Rennais FC",
@@ -2258,7 +2679,11 @@
             "minutes": 3311,
             "goals": null,
             "source": "https://www.bdfutbol.com/en/t/t2010-114020.html",
-            "verification": "prior_unapproved_Archive_context_NOT_independent"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "goalsConceded": 32,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2010-114020.html"
+            ]
           },
           "2011-12": {
             "club": "Paris Saint-Germain FC",
@@ -2267,17 +2692,24 @@
             "minutes": 0,
             "goals": null,
             "source": "https://www.bdfutbol.com/en/t/t2011-124002.html",
-            "verification": "2011-12 direct club lineups"
+            "verification": "2011-12 direct club lineups",
+            "goalsConceded": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2011-124002.html"
+            ]
           }
         }
       },
-      "assessmentRationale": "2011-12 리그 0경기·0선발·0분 기용과 개인 공격·수비 기여, 포지션별 리그 상대적 영향력 우선. 2010-11/2009-10 경기력은 지속성 참고(독립 자료 일부 부족).",
-      "tierReview": "2011-12 리그 0경기·0선발·0분 기용과 개인 공격·수비 기여, 포지션별 리그 상대적 영향력 우선. 2010-11/2009-10 경기력은 지속성 참고(독립 자료 일부 부족).",
+      "assessmentRationale": "2011-12 정규리그 0경기·0선발·0분·미확인골·0실점. 검수 보고서 수치 반영; 기존 잠정 티어 유지, 경기별 기여 및 포지션 재검토 필요.",
+      "tierReview": "2011-12 정규리그 0경기·0선발·0분·미확인골·0실점. 검수 보고서 수치 반영; 기존 잠정 티어 유지, 경기별 기여 및 포지션 재검토 필요.",
       "verificationNeeded": [
         "2009-10/2010-11 independently sourced match data",
         "match-level position frequency",
         "DOB name verification second profile if differing"
-      ]
+      ],
+      "leagueGoalsConceded": 0,
+      "preAuditAssessmentRationale": "2011-12 리그 0경기·0선발·0분 기용과 개인 공격·수비 기여, 포지션별 리그 상대적 영향력 우선. 2010-11/2009-10 경기력은 지속성 참고(독립 자료 일부 부족).",
+      "preAuditTierReview": "2011-12 리그 0경기·0선발·0분 기용과 개인 공격·수비 기여, 포지션별 리그 상대적 영향력 우선. 2010-11/2009-10 경기력은 지속성 참고(독립 자료 일부 부족)."
     },
     {
       "id": "ligue1-2011-12-psg-mamadousakho",
@@ -2555,13 +2987,16 @@
         "status": "previous_two_seasons_not_independently_completely_verified",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Valenciennes",
+            "appearances": 28,
+            "starts": 26,
+            "minutes": 2276,
+            "goals": 1,
+            "source": "https://www.bdfutbol.com/en/t/t2009-104023.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2009-104023.html"
+            ]
           },
           "2010-11": {
             "club": "Paris Saint-Germain FC",
@@ -2789,22 +3224,28 @@
         "status": "previous_two_seasons_not_independently_completely_verified",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Valenciennes",
+            "appearances": 31,
+            "starts": 31,
+            "minutes": 2750,
+            "goals": 2,
+            "source": "https://www.bdfutbol.com/en/t/t2009-104023.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2009-104023.html"
+            ]
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Valenciennes",
+            "appearances": 32,
+            "starts": 32,
+            "minutes": 2798,
+            "goals": 2,
+            "source": "https://www.bdfutbol.com/en/t/t2010-114023.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2010-114023.html"
+            ]
           },
           "2011-12": {
             "club": "Paris Saint-Germain FC",
@@ -2867,22 +3308,28 @@
         "status": "previous_two_seasons_not_independently_completely_verified",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Saint-Étienne",
+            "appearances": 36,
+            "starts": 35,
+            "minutes": 3039,
+            "goals": 1,
+            "source": "https://www.bdfutbol.com/en/t/t2009-104008.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2009-104008.html"
+            ]
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Saint-Étienne",
+            "appearances": 34,
+            "starts": 34,
+            "minutes": 3052,
+            "goals": 0,
+            "source": "https://www.bdfutbol.com/en/t/t2010-114008.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2010-114008.html"
+            ]
           },
           "2011-12": {
             "club": "Paris Saint-Germain FC",
@@ -3257,13 +3704,16 @@
         "status": "previous_two_seasons_not_independently_completely_verified",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Monaco",
+            "appearances": 34,
+            "starts": 34,
+            "minutes": 2994,
+            "goals": 14,
+            "source": "https://www.bdfutbol.com/en/t/t2009-104018.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2009-104018.html"
+            ]
           },
           "2010-11": {
             "club": "Paris Saint-Germain FC",
@@ -3454,7 +3904,7 @@
       "name": "Kevin Gameiro",
       "nameOriginal": "Kevin Gameiro",
       "nameKo": "케뱅 가메이로",
-      "born": "1987-04-09",
+      "born": "1987-05-09",
       "club": "psg",
       "clubNameOriginal": "Paris Saint-Germain FC",
       "position": "ST",
@@ -3476,10 +3926,12 @@
       "evaluationStatus": "provisional_recency_weighted_three_season_review",
       "verificationStatus": "2011-12 BDFutbol team lineup directly sourced; historical prior seasons not independently complete",
       "positionVerification": "editorial principal role; match-by-match position frequency remains to be fully checked",
-      "birthDateVerification": "historical squad birthday reference; individual independent second profile not always checked",
+      "birthDateVerification": "audit_report_crosschecked",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2011-124002.html",
-        "https://www.footballsquads.co.uk/france/2011-2012/ligue1/psg.htm"
+        "https://www.footballsquads.co.uk/france/2011-2012/ligue1/psg.htm",
+        "https://www.bdfutbol.com/en/j/j15209.html",
+        "https://www.fff.fr/equipe-nationale/joueur/8677-gameiro-kevin/fiche.html"
       ],
       "threeSeasonReview": {
         "assessmentSeasons": [
@@ -3491,22 +3943,28 @@
         "status": "previous_two_seasons_not_independently_completely_verified",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Lorient",
+            "appearances": 35,
+            "starts": 34,
+            "minutes": 2994,
+            "goals": 17,
+            "source": "https://www.bdfutbol.com/en/t/t2009-104019.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2009-104019.html"
+            ]
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Lorient",
+            "appearances": 36,
+            "starts": 36,
+            "minutes": 3219,
+            "goals": 22,
+            "source": "https://www.bdfutbol.com/en/t/t2010-114019.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2010-114019.html"
+            ]
           },
           "2011-12": {
             "club": "Paris Saint-Germain FC",
@@ -3519,13 +3977,15 @@
           }
         }
       },
-      "assessmentRationale": "2011-12 리그 34경기·27선발·2283분 기용과 개인 공격·수비 기여, 포지션별 리그 상대적 영향력 우선. 2010-11/2009-10 경기력은 지속성 참고(독립 자료 일부 부족).",
-      "tierReview": "2011-12 리그 34경기·27선발·2283분 기용과 개인 공격·수비 기여, 포지션별 리그 상대적 영향력 우선. 2010-11/2009-10 경기력은 지속성 참고(독립 자료 일부 부족).",
+      "assessmentRationale": "2011-12 정규리그 34경기·27선발·2283분·11골. 검수 보고서 수치 반영; 기존 잠정 티어 유지, 경기별 기여 및 포지션 재검토 필요.",
+      "tierReview": "2011-12 정규리그 34경기·27선발·2283분·11골. 검수 보고서 수치 반영; 기존 잠정 티어 유지, 경기별 기여 및 포지션 재검토 필요.",
       "verificationNeeded": [
         "2009-10/2010-11 independently sourced match data",
         "match-level position frequency",
         "DOB name verification second profile if differing"
-      ]
+      ],
+      "preAuditAssessmentRationale": "2011-12 리그 34경기·27선발·2283분 기용과 개인 공격·수비 기여, 포지션별 리그 상대적 영향력 우선. 2010-11/2009-10 경기력은 지속성 참고(독립 자료 일부 부족).",
+      "preAuditTierReview": "2011-12 리그 34경기·27선발·2283분 기용과 개인 공격·수비 기여, 포지션별 리그 상대적 영향력 우선. 2010-11/2009-10 경기력은 지속성 참고(독립 자료 일부 부족)."
     },
     {
       "id": "ligue1-2011-12-psg-guillaumehoarau",
@@ -3653,7 +4113,11 @@
             "minutes": 2520,
             "goals": null,
             "source": "https://www.bdfutbol.com/en/t/t2009-104009.html",
-            "verification": "prior_unapproved_Archive_context_NOT_independent"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "goalsConceded": 26,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2009-104009.html"
+            ]
           },
           "2010-11": {
             "club": "Lille OSC",
@@ -3662,7 +4126,11 @@
             "minutes": 3420,
             "goals": null,
             "source": "https://www.bdfutbol.com/en/t/t2010-114009.html",
-            "verification": "prior_unapproved_Archive_context_NOT_independent"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "goalsConceded": 36,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2010-114009.html"
+            ]
           },
           "2011-12": {
             "club": "Lille OSC",
@@ -3671,17 +4139,24 @@
             "minutes": 3420,
             "goals": null,
             "source": "https://www.bdfutbol.com/en/t/t2011-124009.html",
-            "verification": "2011-12 direct club lineups"
+            "verification": "2011-12 direct club lineups",
+            "goalsConceded": 39,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2011-124009.html"
+            ]
           }
         }
       },
-      "assessmentRationale": "2011-12 리그 38경기·38선발·3420분 기용과 개인 공격·수비 기여, 포지션별 리그 상대적 영향력 우선. 2010-11/2009-10 경기력은 지속성 참고(독립 자료 일부 부족).",
-      "tierReview": "2011-12 리그 38경기·38선발·3420분 기용과 개인 공격·수비 기여, 포지션별 리그 상대적 영향력 우선. 2010-11/2009-10 경기력은 지속성 참고(독립 자료 일부 부족).",
+      "assessmentRationale": "2011-12 정규리그 38경기·38선발·3420분·미확인골·39실점. 검수 보고서 수치 반영; 기존 잠정 티어 유지, 경기별 기여 및 포지션 재검토 필요.",
+      "tierReview": "2011-12 정규리그 38경기·38선발·3420분·미확인골·39실점. 검수 보고서 수치 반영; 기존 잠정 티어 유지, 경기별 기여 및 포지션 재검토 필요.",
       "verificationNeeded": [
         "2009-10/2010-11 independently sourced match data",
         "match-level position frequency",
         "DOB name verification second profile if differing"
-      ]
+      ],
+      "leagueGoalsConceded": 39,
+      "preAuditAssessmentRationale": "2011-12 리그 38경기·38선발·3420분 기용과 개인 공격·수비 기여, 포지션별 리그 상대적 영향력 우선. 2010-11/2009-10 경기력은 지속성 참고(독립 자료 일부 부족).",
+      "preAuditTierReview": "2011-12 리그 38경기·38선발·3420분 기용과 개인 공격·수비 기여, 포지션별 리그 상대적 영향력 우선. 2010-11/2009-10 경기력은 지속성 참고(독립 자료 일부 부족)."
     },
     {
       "id": "ligue1-2011-12-lille-vincentenyeama",
@@ -3749,17 +4224,24 @@
             "minutes": 0,
             "goals": null,
             "source": "https://www.bdfutbol.com/en/t/t2011-124009.html",
-            "verification": "2011-12 direct club lineups"
+            "verification": "2011-12 direct club lineups",
+            "goalsConceded": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2011-124009.html"
+            ]
           }
         }
       },
-      "assessmentRationale": "2011-12 리그 0경기·0선발·0분 기용과 개인 공격·수비 기여, 포지션별 리그 상대적 영향력 우선. 2010-11/2009-10 경기력은 지속성 참고(독립 자료 일부 부족).",
-      "tierReview": "2011-12 리그 0경기·0선발·0분 기용과 개인 공격·수비 기여, 포지션별 리그 상대적 영향력 우선. 2010-11/2009-10 경기력은 지속성 참고(독립 자료 일부 부족).",
+      "assessmentRationale": "2011-12 정규리그 0경기·0선발·0분·미확인골·0실점. 검수 보고서 수치 반영; 기존 잠정 티어 유지, 경기별 기여 및 포지션 재검토 필요.",
+      "tierReview": "2011-12 정규리그 0경기·0선발·0분·미확인골·0실점. 검수 보고서 수치 반영; 기존 잠정 티어 유지, 경기별 기여 및 포지션 재검토 필요.",
       "verificationNeeded": [
         "2009-10/2010-11 independently sourced match data",
         "match-level position frequency",
         "DOB name verification second profile if differing"
-      ]
+      ],
+      "leagueGoalsConceded": 0,
+      "preAuditAssessmentRationale": "2011-12 리그 0경기·0선발·0분 기용과 개인 공격·수비 기여, 포지션별 리그 상대적 영향력 우선. 2010-11/2009-10 경기력은 지속성 참고(독립 자료 일부 부족).",
+      "preAuditTierReview": "2011-12 리그 0경기·0선발·0분 기용과 개인 공격·수비 기여, 포지션별 리그 상대적 영향력 우선. 2010-11/2009-10 경기력은 지속성 참고(독립 자료 일부 부족)."
     },
     {
       "id": "ligue1-2011-12-lille-aurelienchedjou",
@@ -4280,13 +4762,16 @@
             "verification": "prior_unapproved_Archive_context_NOT_independent"
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Monaco",
+            "appearances": 25,
+            "starts": 24,
+            "minutes": 2117,
+            "goals": 0,
+            "source": "https://www.bdfutbol.com/en/t/t2010-114018.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2010-114018.html"
+            ]
           },
           "2011-12": {
             "club": "Lille OSC",
@@ -4514,13 +4999,16 @@
             "verification": "prior_unapproved_Archive_context_NOT_independent"
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Auxerre",
+            "appearances": 20,
+            "starts": 20,
+            "minutes": 1800,
+            "goals": 5,
+            "source": "https://www.bdfutbol.com/en/t/t2010-114025.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2010-114025.html"
+            ]
           },
           "2011-12": {
             "club": "Lille OSC",
@@ -4638,7 +5126,7 @@
       "starts": 35,
       "leagueMinutes": 3212,
       "leagueGoals": 20,
-      "leagueAssists": null,
+      "leagueAssists": 15,
       "season": "2011-12",
       "appearanceScope": "domestic_league_only",
       "review": "draft_unapproved",
@@ -4649,7 +5137,8 @@
       "birthDateVerification": "historical squad birthday reference; individual independent second profile not always checked",
       "sources": [
         "https://www.bdfutbol.com/en/t/t2011-124009.html",
-        "https://www.footballsquads.co.uk/france/2011-2012/ligue1/lille.htm"
+        "https://www.footballsquads.co.uk/france/2011-2012/ligue1/lille.htm",
+        "https://ligue1.com/en/articles/l1_article_2586-"
       ],
       "threeSeasonReview": {
         "assessmentSeasons": [
@@ -4685,17 +5174,27 @@
             "minutes": 3212,
             "goals": 20,
             "source": "https://www.bdfutbol.com/en/t/t2011-124009.html",
-            "verification": "2011-12 direct club lineups"
+            "verification": "2011-12 direct club lineups",
+            "assists": 15,
+            "externalReviewSources": [
+              "https://ligue1.com/en/articles/l1_article_2586-"
+            ],
+            "assistProvider": "LFP",
+            "assistSource": "https://ligue1.com/en/articles/l1_article_2586-"
           }
         }
       },
-      "assessmentRationale": "2012 UNFP 올해의 선수(2연속), 리그 38경기·20골. 직전 2시즌 성장세와 공격 전개 지속성.",
-      "tierReview": "2012 UNFP 올해의 선수(2연속), 리그 38경기·20골. 직전 2시즌 성장세와 공격 전개 지속성.",
+      "assessmentRationale": "2011-12 정규리그 38경기·35선발·3212분·20골·15도움 (LFP). 검수 보고서 수치 반영; 기존 잠정 티어 유지, 경기별 기여 및 포지션 재검토 필요.",
+      "tierReview": "2011-12 정규리그 38경기·35선발·3212분·20골·15도움 (LFP). 검수 보고서 수치 반영; 기존 잠정 티어 유지, 경기별 기여 및 포지션 재검토 필요.",
       "verificationNeeded": [
         "2009-10/2010-11 independently sourced match data",
         "match-level position frequency",
         "DOB name verification second profile if differing"
-      ]
+      ],
+      "leagueAssistProvider": "LFP",
+      "leagueAssistSource": "https://ligue1.com/en/articles/l1_article_2586-",
+      "preAuditAssessmentRationale": "2012 UNFP 올해의 선수(2연속), 리그 38경기·20골. 직전 2시즌 성장세와 공격 전개 지속성.",
+      "preAuditTierReview": "2012 UNFP 올해의 선수(2연속), 리그 38경기·20골. 직전 2시즌 성장세와 공격 전개 지속성."
     },
     {
       "id": "ligue1-2011-12-lille-dimitripayet",
@@ -4739,22 +5238,28 @@
         "status": "previous_two_seasons_not_independently_completely_verified",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Saint-Étienne",
+            "appearances": 35,
+            "starts": 25,
+            "minutes": 2432,
+            "goals": 2,
+            "source": "https://www.bdfutbol.com/en/t/t2009-104008.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2009-104008.html"
+            ]
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Saint-Étienne",
+            "appearances": 33,
+            "starts": 28,
+            "minutes": 2523,
+            "goals": 13,
+            "source": "https://www.bdfutbol.com/en/t/t2010-114008.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2010-114008.html"
+            ]
           },
           "2011-12": {
             "club": "Lille OSC",
@@ -4895,13 +5400,16 @@
         "status": "previous_two_seasons_not_independently_completely_verified",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Rennes",
+            "appearances": 24,
+            "starts": 9,
+            "minutes": 969,
+            "goals": 3,
+            "source": "https://www.bdfutbol.com/en/t/t2009-104020.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2009-104020.html"
+            ]
           },
           "2010-11": {
             "club": "Lille OSC",
@@ -4982,13 +5490,16 @@
             "verification": "independent_previous_season_check_pending"
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Brest",
+            "appearances": 28,
+            "starts": 26,
+            "minutes": 2348,
+            "goals": 6,
+            "source": "https://www.bdfutbol.com/en/t/t2010-114022.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2010-114022.html"
+            ]
           },
           "2011-12": {
             "club": "Lille OSC",
@@ -5057,7 +5568,11 @@
             "minutes": 3240,
             "goals": null,
             "source": "https://www.bdfutbol.com/en/t/t2009-104017.html",
-            "verification": "prior_unapproved_Archive_context_NOT_independent"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "goalsConceded": 33,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2009-104017.html"
+            ]
           },
           "2010-11": {
             "club": "Olympique Lyonnais",
@@ -5066,7 +5581,11 @@
             "minutes": 3330,
             "goals": null,
             "source": "https://www.bdfutbol.com/en/t/t2010-114017.html",
-            "verification": "prior_unapproved_Archive_context_NOT_independent"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "goalsConceded": 40,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2010-114017.html"
+            ]
           },
           "2011-12": {
             "club": "Olympique Lyonnais",
@@ -5075,17 +5594,24 @@
             "minutes": 3194,
             "goals": null,
             "source": "https://www.bdfutbol.com/en/t/t2011-124017.html",
-            "verification": "2011-12 direct club lineups"
+            "verification": "2011-12 direct club lineups",
+            "goalsConceded": 48,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2011-124017.html"
+            ]
           }
         }
       },
-      "assessmentRationale": "2012 UNFP 최우수 골키퍼, 36경기 선발. 3시즌 최상위급 선방 능력 지속.",
-      "tierReview": "2012 UNFP 최우수 골키퍼, 36경기 선발. 3시즌 최상위급 선방 능력 지속.",
+      "assessmentRationale": "2011-12 정규리그 36경기·36선발·3194분·미확인골·48실점. 검수 보고서 수치 반영; 기존 잠정 티어 유지, 경기별 기여 및 포지션 재검토 필요.",
+      "tierReview": "2011-12 정규리그 36경기·36선발·3194분·미확인골·48실점. 검수 보고서 수치 반영; 기존 잠정 티어 유지, 경기별 기여 및 포지션 재검토 필요.",
       "verificationNeeded": [
         "2009-10/2010-11 independently sourced match data",
         "match-level position frequency",
         "DOB name verification second profile if differing"
-      ]
+      ],
+      "leagueGoalsConceded": 48,
+      "preAuditAssessmentRationale": "2012 UNFP 최우수 골키퍼, 36경기 선발. 3시즌 최상위급 선방 능력 지속.",
+      "preAuditTierReview": "2012 UNFP 최우수 골키퍼, 36경기 선발. 3시즌 최상위급 선방 능력 지속."
     },
     {
       "id": "ligue1-2011-12-lyon-remyvercoutre",
@@ -5135,7 +5661,11 @@
             "minutes": 180,
             "goals": null,
             "source": "https://www.bdfutbol.com/en/t/t2009-104017.html",
-            "verification": "prior_unapproved_Archive_context_NOT_independent"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "goalsConceded": 5,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2009-104017.html"
+            ]
           },
           "2010-11": {
             "club": "Olympique Lyonnais",
@@ -5144,7 +5674,11 @@
             "minutes": 90,
             "goals": null,
             "source": "https://www.bdfutbol.com/en/t/t2010-114017.html",
-            "verification": "prior_unapproved_Archive_context_NOT_independent"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "goalsConceded": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2010-114017.html"
+            ]
           },
           "2011-12": {
             "club": "Olympique Lyonnais",
@@ -5153,17 +5687,24 @@
             "minutes": 224,
             "goals": null,
             "source": "https://www.bdfutbol.com/en/t/t2011-124017.html",
-            "verification": "2011-12 direct club lineups"
+            "verification": "2011-12 direct club lineups",
+            "goalsConceded": 3,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2011-124017.html"
+            ]
           }
         }
       },
-      "assessmentRationale": "2011-12 리그 3경기·2선발·224분 기용과 개인 공격·수비 기여, 포지션별 리그 상대적 영향력 우선. 2010-11/2009-10 경기력은 지속성 참고(독립 자료 일부 부족).",
-      "tierReview": "2011-12 리그 3경기·2선발·224분 기용과 개인 공격·수비 기여, 포지션별 리그 상대적 영향력 우선. 2010-11/2009-10 경기력은 지속성 참고(독립 자료 일부 부족).",
+      "assessmentRationale": "2011-12 정규리그 3경기·2선발·224분·미확인골·3실점. 검수 보고서 수치 반영; 기존 잠정 티어 유지, 경기별 기여 및 포지션 재검토 필요.",
+      "tierReview": "2011-12 정규리그 3경기·2선발·224분·미확인골·3실점. 검수 보고서 수치 반영; 기존 잠정 티어 유지, 경기별 기여 및 포지션 재검토 필요.",
       "verificationNeeded": [
         "2009-10/2010-11 independently sourced match data",
         "match-level position frequency",
         "DOB name verification second profile if differing"
-      ]
+      ],
+      "leagueGoalsConceded": 3,
+      "preAuditAssessmentRationale": "2011-12 리그 3경기·2선발·224분 기용과 개인 공격·수비 기여, 포지션별 리그 상대적 영향력 우선. 2010-11/2009-10 경기력은 지속성 참고(독립 자료 일부 부족).",
+      "preAuditTierReview": "2011-12 리그 3경기·2선발·224분 기용과 개인 공격·수비 기여, 포지션별 리그 상대적 영향력 우선. 2010-11/2009-10 경기력은 지속성 참고(독립 자료 일부 부족)."
     },
     {
       "id": "ligue1-2011-12-lyon-bakarykone",
@@ -5363,13 +5904,16 @@
         "status": "previous_two_seasons_not_independently_completely_verified",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Olympique Lyonnais",
+            "appearances": 8,
+            "starts": 8,
+            "minutes": 680,
+            "goals": 0,
+            "source": "https://www.bdfutbol.com/en/t/t2009-104017.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2009-104017.html"
+            ]
           },
           "2010-11": {
             "club": "Olympique Lyonnais",
@@ -5675,13 +6219,16 @@
         "status": "previous_two_seasons_not_independently_completely_verified",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Saint-Étienne",
+            "appearances": 25,
+            "starts": 23,
+            "minutes": 1909,
+            "goals": 0,
+            "source": "https://www.bdfutbol.com/en/t/t2009-104008.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2009-104008.html"
+            ]
           },
           "2010-11": {
             "club": null,
@@ -5987,22 +6534,28 @@
         "status": "previous_two_seasons_not_independently_completely_verified",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Olympique Lyonnais",
+            "appearances": 3,
+            "starts": 0,
+            "minutes": 14,
+            "goals": 0,
+            "source": "https://www.bdfutbol.com/en/t/t2009-104017.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2009-104017.html"
+            ]
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Olympique Lyonnais",
+            "appearances": 7,
+            "starts": 2,
+            "minutes": 246,
+            "goals": 0,
+            "source": "https://www.bdfutbol.com/en/t/t2010-114017.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2010-114017.html"
+            ]
           },
           "2011-12": {
             "club": "Olympique Lyonnais",
@@ -6152,13 +6705,16 @@
             "verification": "prior_unapproved_Archive_context_NOT_independent"
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Olympique Lyonnais",
+            "appearances": 8,
+            "starts": 5,
+            "minutes": 429,
+            "goals": 2,
+            "source": "https://www.bdfutbol.com/en/t/t2010-114017.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2010-114017.html"
+            ]
           },
           "2011-12": {
             "club": "Olympique Lyonnais",
@@ -6221,13 +6777,16 @@
         "status": "previous_two_seasons_not_independently_completely_verified",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Rennes",
+            "appearances": 23,
+            "starts": 17,
+            "minutes": 1609,
+            "goals": 5,
+            "source": "https://www.bdfutbol.com/en/t/t2009-104020.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2009-104020.html"
+            ]
           },
           "2010-11": {
             "club": "Olympique Lyonnais",
@@ -6299,22 +6858,28 @@
         "status": "previous_two_seasons_not_independently_completely_verified",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Olympique Lyonnais",
+            "appearances": 1,
+            "starts": 0,
+            "minutes": 12,
+            "goals": 0,
+            "source": "https://www.bdfutbol.com/en/t/t2009-104017.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2009-104017.html"
+            ]
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Olympique Lyonnais",
+            "appearances": 9,
+            "starts": 0,
+            "minutes": 144,
+            "goals": 1,
+            "source": "https://www.bdfutbol.com/en/t/t2010-114017.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2010-114017.html"
+            ]
           },
           "2011-12": {
             "club": "Olympique Lyonnais",
@@ -6533,22 +7098,30 @@
         "status": "previous_two_seasons_not_independently_completely_verified",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
+            "club": "Girondins de Bordeaux",
+            "appearances": 29,
+            "starts": 29,
+            "minutes": 2578,
             "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2009-104012.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "goalsConceded": 29,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2009-104012.html"
+            ]
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
+            "club": "Girondins de Bordeaux",
+            "appearances": 35,
+            "starts": 34,
+            "minutes": 3094,
             "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2010-114012.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "goalsConceded": 39,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2010-114012.html"
+            ]
           },
           "2011-12": {
             "club": "FC Girondins de Bordeaux",
@@ -6557,17 +7130,24 @@
             "minutes": 3315,
             "goals": null,
             "source": "https://www.bdfutbol.com/en/t/t2011-124012.html",
-            "verification": "2011-12 direct club lineups"
+            "verification": "2011-12 direct club lineups",
+            "goalsConceded": 39,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2011-124012.html"
+            ]
           }
         }
       },
-      "assessmentRationale": "2011-12 리그 37경기·37선발·3315분 기용과 개인 공격·수비 기여, 포지션별 리그 상대적 영향력 우선. 2010-11/2009-10 경기력은 지속성 참고(독립 자료 일부 부족).",
-      "tierReview": "2011-12 리그 37경기·37선발·3315분 기용과 개인 공격·수비 기여, 포지션별 리그 상대적 영향력 우선. 2010-11/2009-10 경기력은 지속성 참고(독립 자료 일부 부족).",
+      "assessmentRationale": "2011-12 정규리그 37경기·37선발·3315분·미확인골·39실점. 검수 보고서 수치 반영; 기존 잠정 티어 유지, 경기별 기여 및 포지션 재검토 필요.",
+      "tierReview": "2011-12 정규리그 37경기·37선발·3315분·미확인골·39실점. 검수 보고서 수치 반영; 기존 잠정 티어 유지, 경기별 기여 및 포지션 재검토 필요.",
       "verificationNeeded": [
         "2009-10/2010-11 independently sourced match data",
         "match-level position frequency",
         "DOB name verification second profile if differing"
-      ]
+      ],
+      "leagueGoalsConceded": 39,
+      "preAuditAssessmentRationale": "2011-12 리그 37경기·37선발·3315분 기용과 개인 공격·수비 기여, 포지션별 리그 상대적 영향력 우선. 2010-11/2009-10 경기력은 지속성 참고(독립 자료 일부 부족).",
+      "preAuditTierReview": "2011-12 리그 37경기·37선발·3315분 기용과 개인 공격·수비 기여, 포지션별 리그 상대적 영향력 우선. 2010-11/2009-10 경기력은 지속성 참고(독립 자료 일부 부족)."
     },
     {
       "id": "ligue1-2011-12-bordeaux-kevinolimpa",
@@ -6620,13 +7200,17 @@
             "verification": "independent_previous_season_check_pending"
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
+            "club": "Girondins de Bordeaux",
+            "appearances": 2,
+            "starts": 2,
+            "minutes": 180,
             "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2010-114012.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "goalsConceded": 3,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2010-114012.html"
+            ]
           },
           "2011-12": {
             "club": "FC Girondins de Bordeaux",
@@ -6635,17 +7219,24 @@
             "minutes": 90,
             "goals": null,
             "source": "https://www.bdfutbol.com/en/t/t2011-124012.html",
-            "verification": "2011-12 direct club lineups"
+            "verification": "2011-12 direct club lineups",
+            "goalsConceded": 1,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2011-124012.html"
+            ]
           }
         }
       },
-      "assessmentRationale": "2011-12 리그 1경기·1선발·90분 기용과 개인 공격·수비 기여, 포지션별 리그 상대적 영향력 우선. 2010-11/2009-10 경기력은 지속성 참고(독립 자료 일부 부족).",
-      "tierReview": "2011-12 리그 1경기·1선발·90분 기용과 개인 공격·수비 기여, 포지션별 리그 상대적 영향력 우선. 2010-11/2009-10 경기력은 지속성 참고(독립 자료 일부 부족).",
+      "assessmentRationale": "2011-12 정규리그 1경기·1선발·90분·미확인골·1실점. 검수 보고서 수치 반영; 기존 잠정 티어 유지, 경기별 기여 및 포지션 재검토 필요.",
+      "tierReview": "2011-12 정규리그 1경기·1선발·90분·미확인골·1실점. 검수 보고서 수치 반영; 기존 잠정 티어 유지, 경기별 기여 및 포지션 재검토 필요.",
       "verificationNeeded": [
         "2009-10/2010-11 independently sourced match data",
         "match-level position frequency",
         "DOB name verification second profile if differing"
-      ]
+      ],
+      "leagueGoalsConceded": 1,
+      "preAuditAssessmentRationale": "2011-12 리그 1경기·1선발·90분 기용과 개인 공격·수비 기여, 포지션별 리그 상대적 영향력 우선. 2010-11/2009-10 경기력은 지속성 참고(독립 자료 일부 부족).",
+      "preAuditTierReview": "2011-12 리그 1경기·1선발·90분 기용과 개인 공격·수비 기여, 포지션별 리그 상대적 영향력 우선. 2010-11/2009-10 경기력은 지속성 참고(독립 자료 일부 부족)."
     },
     {
       "id": "ligue1-2011-12-bordeaux-laminesane",
@@ -6689,22 +7280,28 @@
         "status": "previous_two_seasons_not_independently_completely_verified",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Girondins de Bordeaux",
+            "appearances": 17,
+            "starts": 14,
+            "minutes": 1313,
+            "goals": 1,
+            "source": "https://www.bdfutbol.com/en/t/t2009-104012.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2009-104012.html"
+            ]
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Girondins de Bordeaux",
+            "appearances": 33,
+            "starts": 33,
+            "minutes": 2926,
+            "goals": 2,
+            "source": "https://www.bdfutbol.com/en/t/t2010-114012.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2010-114012.html"
+            ]
           },
           "2011-12": {
             "club": "FC Girondins de Bordeaux",
@@ -6767,22 +7364,28 @@
         "status": "previous_two_seasons_not_independently_completely_verified",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Girondins de Bordeaux",
+            "appearances": 30,
+            "starts": 29,
+            "minutes": 2512,
+            "goals": 2,
+            "source": "https://www.bdfutbol.com/en/t/t2009-104012.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2009-104012.html"
+            ]
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Girondins de Bordeaux",
+            "appearances": 29,
+            "starts": 27,
+            "minutes": 2422,
+            "goals": 3,
+            "source": "https://www.bdfutbol.com/en/t/t2010-114012.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2010-114012.html"
+            ]
           },
           "2011-12": {
             "club": "FC Girondins de Bordeaux",
@@ -6845,22 +7448,28 @@
         "status": "previous_two_seasons_not_independently_completely_verified",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Girondins de Bordeaux",
+            "appearances": 26,
+            "starts": 26,
+            "minutes": 2189,
+            "goals": 1,
+            "source": "https://www.bdfutbol.com/en/t/t2009-104012.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2009-104012.html"
+            ]
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Girondins de Bordeaux",
+            "appearances": 11,
+            "starts": 9,
+            "minutes": 850,
+            "goals": 0,
+            "source": "https://www.bdfutbol.com/en/t/t2010-114012.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2010-114012.html"
+            ]
           },
           "2011-12": {
             "club": "FC Girondins de Bordeaux",
@@ -6923,22 +7532,28 @@
         "status": "previous_two_seasons_not_independently_completely_verified",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Girondins de Bordeaux",
+            "appearances": 13,
+            "starts": 11,
+            "minutes": 1068,
+            "goals": 1,
+            "source": "https://www.bdfutbol.com/en/t/t2009-104012.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2009-104012.html"
+            ]
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Girondins de Bordeaux",
+            "appearances": 2,
+            "starts": 0,
+            "minutes": 88,
+            "goals": 0,
+            "source": "https://www.bdfutbol.com/en/t/t2010-114012.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2010-114012.html"
+            ]
           },
           "2011-12": {
             "club": "FC Girondins de Bordeaux",
@@ -7001,22 +7616,28 @@
         "status": "previous_two_seasons_not_independently_completely_verified",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Girondins de Bordeaux",
+            "appearances": 35,
+            "starts": 35,
+            "minutes": 3150,
+            "goals": 2,
+            "source": "https://www.bdfutbol.com/en/t/t2009-104012.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2009-104012.html"
+            ]
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Girondins de Bordeaux",
+            "appearances": 31,
+            "starts": 30,
+            "minutes": 2627,
+            "goals": 0,
+            "source": "https://www.bdfutbol.com/en/t/t2010-114012.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2010-114012.html"
+            ]
           },
           "2011-12": {
             "club": "FC Girondins de Bordeaux",
@@ -7079,22 +7700,28 @@
         "status": "previous_two_seasons_not_independently_completely_verified",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Nancy",
+            "appearances": 16,
+            "starts": 12,
+            "minutes": 1195,
+            "goals": 0,
+            "source": "https://www.bdfutbol.com/en/t/t2009-104026.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2009-104026.html"
+            ]
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Girondins de Bordeaux",
+            "appearances": 12,
+            "starts": 11,
+            "minutes": 1061,
+            "goals": 0,
+            "source": "https://www.bdfutbol.com/en/t/t2010-114012.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2010-114012.html"
+            ]
           },
           "2011-12": {
             "club": "FC Girondins de Bordeaux",
@@ -7235,22 +7862,28 @@
         "status": "previous_two_seasons_not_independently_completely_verified",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Girondins de Bordeaux",
+            "appearances": 33,
+            "starts": 33,
+            "minutes": 2970,
+            "goals": 0,
+            "source": "https://www.bdfutbol.com/en/t/t2009-104012.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2009-104012.html"
+            ]
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Girondins de Bordeaux",
+            "appearances": 20,
+            "starts": 18,
+            "minutes": 1635,
+            "goals": 0,
+            "source": "https://www.bdfutbol.com/en/t/t2010-114012.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2010-114012.html"
+            ]
           },
           "2011-12": {
             "club": "FC Girondins de Bordeaux",
@@ -7322,13 +7955,16 @@
             "verification": "independent_previous_season_check_pending"
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Nancy",
+            "appearances": 33,
+            "starts": 30,
+            "minutes": 2715,
+            "goals": 2,
+            "source": "https://www.bdfutbol.com/en/t/t2010-114026.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2010-114026.html"
+            ]
           },
           "2011-12": {
             "club": "FC Girondins de Bordeaux",
@@ -7391,22 +8027,28 @@
         "status": "previous_two_seasons_not_independently_completely_verified",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Girondins de Bordeaux",
+            "appearances": 34,
+            "starts": 27,
+            "minutes": 2368,
+            "goals": 2,
+            "source": "https://www.bdfutbol.com/en/t/t2009-104012.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2009-104012.html"
+            ]
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Girondins de Bordeaux",
+            "appearances": 38,
+            "starts": 38,
+            "minutes": 3355,
+            "goals": 4,
+            "source": "https://www.bdfutbol.com/en/t/t2010-114012.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2010-114012.html"
+            ]
           },
           "2011-12": {
             "club": "FC Girondins de Bordeaux",
@@ -7469,22 +8111,28 @@
         "status": "previous_two_seasons_not_independently_completely_verified",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Girondins de Bordeaux",
+            "appearances": 12,
+            "starts": 7,
+            "minutes": 587,
+            "goals": 0,
+            "source": "https://www.bdfutbol.com/en/t/t2009-104012.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2009-104012.html"
+            ]
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Lens",
+            "appearances": 23,
+            "starts": 11,
+            "minutes": 1073,
+            "goals": 0,
+            "source": "https://www.bdfutbol.com/en/t/t2010-114014.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2010-114014.html"
+            ]
           },
           "2011-12": {
             "club": "FC Girondins de Bordeaux",
@@ -7547,22 +8195,28 @@
         "status": "previous_two_seasons_not_independently_completely_verified",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Girondins de Bordeaux",
+            "appearances": 30,
+            "starts": 13,
+            "minutes": 1356,
+            "goals": 4,
+            "source": "https://www.bdfutbol.com/en/t/t2009-104012.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2009-104012.html"
+            ]
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Girondins de Bordeaux",
+            "appearances": 31,
+            "starts": 21,
+            "minutes": 1969,
+            "goals": 4,
+            "source": "https://www.bdfutbol.com/en/t/t2010-114012.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2010-114012.html"
+            ]
           },
           "2011-12": {
             "club": "FC Girondins de Bordeaux",
@@ -7625,13 +8279,16 @@
         "status": "previous_two_seasons_not_independently_completely_verified",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Sochaux",
+            "appearances": 37,
+            "starts": 34,
+            "minutes": 2912,
+            "goals": 0,
+            "source": "https://www.bdfutbol.com/en/t/t2009-104024.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2009-104024.html"
+            ]
           },
           "2010-11": {
             "club": "FC Sochaux-Montbéliard",
@@ -7781,13 +8438,16 @@
         "status": "previous_two_seasons_not_independently_completely_verified",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Valenciennes",
+            "appearances": 36,
+            "starts": 24,
+            "minutes": 2335,
+            "goals": 7,
+            "source": "https://www.bdfutbol.com/en/t/t2009-104023.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2009-104023.html"
+            ]
           },
           "2010-11": {
             "club": null,
@@ -7796,7 +8456,31 @@
             "minutes": null,
             "goals": null,
             "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "verification": "audit_report_BDFutbol_club_scope_partial",
+            "clubRecords": [
+              {
+                "club": "Girondins de Bordeaux",
+                "appearances": 32,
+                "starts": 26,
+                "minutes": 2181,
+                "goals": 1,
+                "source": "https://www.bdfutbol.com/en/t/t2010-114012.html",
+                "verification": "audit_report_BDFutbol_partial_club_record"
+              },
+              {
+                "club": "Valenciennes",
+                "appearances": 3,
+                "starts": 2,
+                "minutes": 192,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2010-114023.html",
+                "verification": "audit_report_BDFutbol_partial_club_record"
+              }
+            ],
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2010-114012.html",
+              "https://www.bdfutbol.com/en/t/t2010-114023.html"
+            ]
           },
           "2011-12": {
             "club": "FC Girondins de Bordeaux",
@@ -7859,22 +8543,28 @@
         "status": "previous_two_seasons_not_independently_completely_verified",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Girondins de Bordeaux",
+            "appearances": 32,
+            "starts": 22,
+            "minutes": 1780,
+            "goals": 5,
+            "source": "https://www.bdfutbol.com/en/t/t2009-104012.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2009-104012.html"
+            ]
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Girondins de Bordeaux",
+            "appearances": 22,
+            "starts": 15,
+            "minutes": 1360,
+            "goals": 2,
+            "source": "https://www.bdfutbol.com/en/t/t2010-114012.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2010-114012.html"
+            ]
           },
           "2011-12": {
             "club": "FC Girondins de Bordeaux",
@@ -7937,22 +8627,28 @@
         "status": "previous_two_seasons_not_independently_completely_verified",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Nancy",
+            "appearances": 2,
+            "starts": 0,
+            "minutes": 9,
+            "goals": 0,
+            "source": "https://www.bdfutbol.com/en/t/t2009-104026.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2009-104026.html"
+            ]
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Girondins de Bordeaux",
+            "appearances": 16,
+            "starts": 7,
+            "minutes": 724,
+            "goals": 4,
+            "source": "https://www.bdfutbol.com/en/t/t2010-114012.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2010-114012.html"
+            ]
           },
           "2011-12": {
             "club": "FC Girondins de Bordeaux",
@@ -8021,7 +8717,11 @@
             "minutes": 3177,
             "goals": null,
             "source": "https://www.bdfutbol.com/en/t/t2009-104004.html",
-            "verification": "prior_unapproved_Archive_context_NOT_independent"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "goalsConceded": 32,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2009-104004.html"
+            ]
           },
           "2010-11": {
             "club": "Olympique de Marseille",
@@ -8030,7 +8730,11 @@
             "minutes": 3420,
             "goals": null,
             "source": "https://www.bdfutbol.com/en/t/t2010-114004.html",
-            "verification": "prior_unapproved_Archive_context_NOT_independent"
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "goalsConceded": 39,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2010-114004.html"
+            ]
           },
           "2011-12": {
             "club": "Olympique de Marseille",
@@ -8039,17 +8743,24 @@
             "minutes": 3420,
             "goals": null,
             "source": "https://www.bdfutbol.com/en/t/t2011-124004.html",
-            "verification": "2011-12 direct club lineups"
+            "verification": "2011-12 direct club lineups",
+            "goalsConceded": 41,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2011-124004.html"
+            ]
           }
         }
       },
-      "assessmentRationale": "38경기 전부 선발. 이전 2시즌의 상위 골키퍼 지속성도 반영하며 팀 최종 순위 자체는 가감점하지 않음.",
-      "tierReview": "38경기 전부 선발. 이전 2시즌의 상위 골키퍼 지속성도 반영하며 팀 최종 순위 자체는 가감점하지 않음.",
+      "assessmentRationale": "2011-12 정규리그 38경기·38선발·3420분·미확인골·41실점. 검수 보고서 수치 반영; 기존 잠정 티어 유지, 경기별 기여 및 포지션 재검토 필요.",
+      "tierReview": "2011-12 정규리그 38경기·38선발·3420분·미확인골·41실점. 검수 보고서 수치 반영; 기존 잠정 티어 유지, 경기별 기여 및 포지션 재검토 필요.",
       "verificationNeeded": [
         "2009-10/2010-11 independently sourced match data",
         "match-level position frequency",
         "DOB name verification second profile if differing"
-      ]
+      ],
+      "leagueGoalsConceded": 41,
+      "preAuditAssessmentRationale": "38경기 전부 선발. 이전 2시즌의 상위 골키퍼 지속성도 반영하며 팀 최종 순위 자체는 가감점하지 않음.",
+      "preAuditTierReview": "38경기 전부 선발. 이전 2시즌의 상위 골키퍼 지속성도 반영하며 팀 최종 순위 자체는 가감점하지 않음."
     },
     {
       "id": "ligue1-2011-12-marseille-gennarobracigliano",
@@ -8093,22 +8804,30 @@
         "status": "previous_two_seasons_not_independently_completely_verified",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
+            "club": "Nancy",
+            "appearances": 32,
+            "starts": 32,
+            "minutes": 2880,
             "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2009-104026.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "goalsConceded": 43,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2009-104026.html"
+            ]
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
+            "club": "Nancy",
+            "appearances": 7,
+            "starts": 7,
+            "minutes": 630,
             "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "source": "https://www.bdfutbol.com/en/t/t2010-114026.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "goalsConceded": 14,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2010-114026.html"
+            ]
           },
           "2011-12": {
             "club": "Olympique de Marseille",
@@ -8117,17 +8836,24 @@
             "minutes": 0,
             "goals": null,
             "source": "https://www.bdfutbol.com/en/t/t2011-124004.html",
-            "verification": "2011-12 direct club lineups"
+            "verification": "2011-12 direct club lineups",
+            "goalsConceded": 0,
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2011-124004.html"
+            ]
           }
         }
       },
-      "assessmentRationale": "2011-12 리그 0경기·0선발·0분 기용과 개인 공격·수비 기여, 포지션별 리그 상대적 영향력 우선. 2010-11/2009-10 경기력은 지속성 참고(독립 자료 일부 부족).",
-      "tierReview": "2011-12 리그 0경기·0선발·0분 기용과 개인 공격·수비 기여, 포지션별 리그 상대적 영향력 우선. 2010-11/2009-10 경기력은 지속성 참고(독립 자료 일부 부족).",
+      "assessmentRationale": "2011-12 정규리그 0경기·0선발·0분·미확인골·0실점. 검수 보고서 수치 반영; 기존 잠정 티어 유지, 경기별 기여 및 포지션 재검토 필요.",
+      "tierReview": "2011-12 정규리그 0경기·0선발·0분·미확인골·0실점. 검수 보고서 수치 반영; 기존 잠정 티어 유지, 경기별 기여 및 포지션 재검토 필요.",
       "verificationNeeded": [
         "2009-10/2010-11 independently sourced match data",
         "match-level position frequency",
         "DOB name verification second profile if differing"
-      ]
+      ],
+      "leagueGoalsConceded": 0,
+      "preAuditAssessmentRationale": "2011-12 리그 0경기·0선발·0분 기용과 개인 공격·수비 기여, 포지션별 리그 상대적 영향력 우선. 2010-11/2009-10 경기력은 지속성 참고(독립 자료 일부 부족).",
+      "preAuditTierReview": "2011-12 리그 0경기·0선발·0분 기용과 개인 공격·수비 기여, 포지션별 리그 상대적 영향력 우선. 2010-11/2009-10 경기력은 지속성 참고(독립 자료 일부 부족)."
     },
     {
       "id": "ligue1-2011-12-marseille-nicolasnkoulou",
@@ -8171,22 +8897,28 @@
         "status": "previous_two_seasons_not_independently_completely_verified",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Monaco",
+            "appearances": 24,
+            "starts": 21,
+            "minutes": 1962,
+            "goals": 0,
+            "source": "https://www.bdfutbol.com/en/t/t2009-104018.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2009-104018.html"
+            ]
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Monaco",
+            "appearances": 30,
+            "starts": 26,
+            "minutes": 2490,
+            "goals": 0,
+            "source": "https://www.bdfutbol.com/en/t/t2010-114018.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2010-114018.html"
+            ]
           },
           "2011-12": {
             "club": "Olympique de Marseille",
@@ -8249,13 +8981,16 @@
         "status": "previous_two_seasons_not_independently_completely_verified",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Rennes",
+            "appearances": 38,
+            "starts": 38,
+            "minutes": 3420,
+            "goals": 0,
+            "source": "https://www.bdfutbol.com/en/t/t2009-104020.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2009-104020.html"
+            ]
           },
           "2010-11": {
             "club": "Olympique de Marseille",
@@ -8264,7 +8999,31 @@
             "minutes": 1639,
             "goals": 0,
             "source": "https://www.bdfutbol.com/en/t/t2010-114004.html",
-            "verification": "prior_unapproved_Archive_context_NOT_independent"
+            "verification": "audit_report_BDFutbol_club_scope_partial",
+            "clubRecords": [
+              {
+                "club": "Olympique de Marseille",
+                "appearances": 19,
+                "starts": 19,
+                "minutes": 1639,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2010-114004.html",
+                "verification": "audit_report_BDFutbol_partial_club_record"
+              },
+              {
+                "club": "Rennes",
+                "appearances": 11,
+                "starts": 11,
+                "minutes": 937,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2010-114020.html",
+                "verification": "audit_report_BDFutbol_partial_club_record"
+              }
+            ],
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2010-114004.html",
+              "https://www.bdfutbol.com/en/t/t2010-114020.html"
+            ]
           },
           "2011-12": {
             "club": "Olympique de Marseille",
@@ -8405,22 +9164,28 @@
         "status": "previous_two_seasons_not_independently_completely_verified",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Lorient",
+            "appearances": 19,
+            "starts": 18,
+            "minutes": 1597,
+            "goals": 0,
+            "source": "https://www.bdfutbol.com/en/t/t2009-104019.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2009-104019.html"
+            ]
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Lorient",
+            "appearances": 29,
+            "starts": 28,
+            "minutes": 2550,
+            "goals": 2,
+            "source": "https://www.bdfutbol.com/en/t/t2010-114019.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2010-114019.html"
+            ]
           },
           "2011-12": {
             "club": "Olympique de Marseille",
@@ -8483,22 +9248,28 @@
         "status": "previous_two_seasons_not_independently_completely_verified",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Monaco",
+            "appearances": 29,
+            "starts": 28,
+            "minutes": 2490,
+            "goals": 0,
+            "source": "https://www.bdfutbol.com/en/t/t2009-104018.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2009-104018.html"
+            ]
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Monaco",
+            "appearances": 7,
+            "starts": 5,
+            "minutes": 375,
+            "goals": 0,
+            "source": "https://www.bdfutbol.com/en/t/t2010-114018.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2010-114018.html"
+            ]
           },
           "2011-12": {
             "club": "Olympique de Marseille",
@@ -8639,22 +9410,28 @@
         "status": "previous_two_seasons_not_independently_completely_verified",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Girondins de Bordeaux",
+            "appearances": 30,
+            "starts": 30,
+            "minutes": 2547,
+            "goals": 1,
+            "source": "https://www.bdfutbol.com/en/t/t2009-104012.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2009-104012.html"
+            ]
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Girondins de Bordeaux",
+            "appearances": 32,
+            "starts": 32,
+            "minutes": 2798,
+            "goals": 4,
+            "source": "https://www.bdfutbol.com/en/t/t2010-114012.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2010-114012.html"
+            ]
           },
           "2011-12": {
             "club": "Olympique de Marseille",
@@ -9107,13 +9884,16 @@
         "status": "previous_two_seasons_not_independently_completely_verified",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Toulouse",
+            "appearances": 31,
+            "starts": 30,
+            "minutes": 2715,
+            "goals": 8,
+            "source": "https://www.bdfutbol.com/en/t/t2009-104016.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2009-104016.html"
+            ]
           },
           "2010-11": {
             "club": "Olympique de Marseille",
@@ -9122,7 +9902,31 @@
             "minutes": 1949,
             "goals": 8,
             "source": "https://www.bdfutbol.com/en/t/t2010-114004.html",
-            "verification": "prior_unapproved_Archive_context_NOT_independent"
+            "verification": "audit_report_BDFutbol_club_scope_partial",
+            "clubRecords": [
+              {
+                "club": "Olympique de Marseille",
+                "appearances": 30,
+                "starts": 20,
+                "minutes": 1949,
+                "goals": 8,
+                "source": "https://www.bdfutbol.com/en/t/t2010-114004.html",
+                "verification": "audit_report_BDFutbol_partial_club_record"
+              },
+              {
+                "club": "Toulouse",
+                "appearances": 1,
+                "starts": 1,
+                "minutes": 77,
+                "goals": 0,
+                "source": "https://www.bdfutbol.com/en/t/t2010-114016.html",
+                "verification": "audit_report_BDFutbol_partial_club_record"
+              }
+            ],
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2010-114004.html",
+              "https://www.bdfutbol.com/en/t/t2010-114016.html"
+            ]
           },
           "2011-12": {
             "club": "Olympique de Marseille",
@@ -9185,22 +9989,28 @@
         "status": "previous_two_seasons_not_independently_completely_verified",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Lorient",
+            "appearances": 37,
+            "starts": 37,
+            "minutes": 3286,
+            "goals": 6,
+            "source": "https://www.bdfutbol.com/en/t/t2009-104019.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2009-104019.html"
+            ]
           },
           "2010-11": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Lorient",
+            "appearances": 38,
+            "starts": 38,
+            "minutes": 3415,
+            "goals": 5,
+            "source": "https://www.bdfutbol.com/en/t/t2010-114019.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2010-114019.html"
+            ]
           },
           "2011-12": {
             "club": "Olympique de Marseille",
@@ -9263,13 +10073,16 @@
         "status": "previous_two_seasons_not_independently_completely_verified",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Olympique de Marseille",
+            "appearances": 4,
+            "starts": 0,
+            "minutes": 66,
+            "goals": 1,
+            "source": "https://www.bdfutbol.com/en/t/t2009-104004.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2009-104004.html"
+            ]
           },
           "2010-11": {
             "club": "Olympique de Marseille",
@@ -9341,13 +10154,16 @@
         "status": "previous_two_seasons_not_independently_completely_verified",
         "records": {
           "2009-10": {
-            "club": null,
-            "appearances": null,
-            "starts": null,
-            "minutes": null,
-            "goals": null,
-            "source": null,
-            "verification": "independent_previous_season_check_pending"
+            "club": "Nice",
+            "appearances": 34,
+            "starts": 33,
+            "minutes": 2874,
+            "goals": 14,
+            "source": "https://www.bdfutbol.com/en/t/t2009-104015.html",
+            "verification": "audit_report_BDFutbol_partial_club_record",
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2009-104015.html"
+            ]
           },
           "2010-11": {
             "club": "Olympique de Marseille",
@@ -9356,7 +10172,31 @@
             "minutes": 2163,
             "goals": 15,
             "source": "https://www.bdfutbol.com/en/t/t2010-114004.html",
-            "verification": "prior_unapproved_Archive_context_NOT_independent"
+            "verification": "audit_report_BDFutbol_club_scope_partial",
+            "clubRecords": [
+              {
+                "club": "Olympique de Marseille",
+                "appearances": 31,
+                "starts": 24,
+                "minutes": 2163,
+                "goals": 15,
+                "source": "https://www.bdfutbol.com/en/t/t2010-114004.html",
+                "verification": "audit_report_BDFutbol_partial_club_record"
+              },
+              {
+                "club": "Nice",
+                "appearances": 2,
+                "starts": 2,
+                "minutes": 180,
+                "goals": 1,
+                "source": "https://www.bdfutbol.com/en/t/t2010-114015.html",
+                "verification": "audit_report_BDFutbol_partial_club_record"
+              }
+            ],
+            "externalReviewSources": [
+              "https://www.bdfutbol.com/en/t/t2010-114004.html",
+              "https://www.bdfutbol.com/en/t/t2010-114015.html"
+            ]
           },
           "2011-12": {
             "club": "Olympique de Marseille",
