@@ -14,7 +14,7 @@ try{
   await page.locator("#content").getByText("8강 진출 평가 구단:",{exact:false}).waitFor();
   assert.equal(await page.locator("[data-club-go]").count(),8);
   await page.locator('[data-tab="table"]').click();
-  await page.locator("[data-match-id]").first().waitFor();
+  await page.locator("[data-match-id]").first().waitFor({state:"attached"});
   assert.equal(await page.locator("[data-match-id]").count(),d.matches.length);
   assert.equal(await page.locator("#content h2").filter({hasText:/^Matchday \d+$/}).count(),s<"2024-25"?0:6);
   if(s<"2024-25")assert.equal(await page.locator("#content h3").filter({hasText:/^Group [A-H]$/}).count(),8);
