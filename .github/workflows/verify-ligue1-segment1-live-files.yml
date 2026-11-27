@@ -1,0 +1,25 @@
+name: Verify deployed Ligue 1 correction files
+on:
+  push:
+    branches: [audit/ligue1-segment1-live-check]
+permissions:
+  contents: read
+jobs:
+  live-file-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 5068ea72e29e73055137614c17b85bd0fd8b6044
+          persist-credentials: false
+      - name: Compare all nine public JSON files to the merged commit
+        shell: bash
+        run: |
+          set -euo pipefail
+          for season in 1999-00 2000-01 2001-02 2002-03 2003-04 2004-05 2005-06 2006-07 2007-08; do
+            path="data/ligue1-$season.json"
+            curl --fail --silent --show-error --retry 3 --max-time 25 -H 'Cache-Control: no-cache' "https://wjdduddlf112.github.io/footballarch/$path?audit=$GITHUB_RUN_ID" -o /tmp/league.json
+            cmp "$path" /tmp/league.json
+            printf 'PASS %s ' "$season"
+            sha256sum /tmp/league.json
+          done
