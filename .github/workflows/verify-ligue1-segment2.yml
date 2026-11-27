@@ -1,0 +1,47 @@
+name: Ligue 1 segment 2 audit verification
+on:
+  pull_request:
+    paths:
+      - 'data/ligue1-*.json'
+      - 'scripts/verify-ligue1-*.mjs'
+      - 'assets/app.js'
+      - '.github/workflows/verify-ligue1-segment2.yml'
+  push:
+    branches: [main, 'audit/ligue1-2008-09-2016-17']
+    paths:
+      - 'data/ligue1-*.json'
+      - 'scripts/verify-ligue1-*.mjs'
+      - 'assets/app.js'
+      - '.github/workflows/verify-ligue1-segment2.yml'
+  workflow_dispatch:
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate nine season structures
+        run: |
+          set -e
+          node --check assets/app.js
+          for season in 2008-09 2009-10 2010-11 2011-12 2012-13 2013-14 2014-15 2015-16 2016-17; do
+            node "scripts/verify-ligue1-${season}.mjs"
+          done
+      - name: Install Chromium
+        run: |
+          npm install --no-save --no-package-lock playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Start local server
+        run: |
+          nohup python3 -m http.server 8877 --bind 127.0.0.1 >/tmp/l1-segment2.log 2>&1 &
+          sleep 3
+      - name: Verify nine local season screens and data
+        run: node scripts/verify-ligue1-segment2-browser.mjs
+      - name: Verify production Pages exact data and screens
+        if: github.ref == 'refs/heads/main'
+        env:
+          TARGET_BASE: https://wjdduddlf112.github.io/footballarch
+          LIVE: '1'
+        run: node scripts/verify-ligue1-segment2-browser.mjs

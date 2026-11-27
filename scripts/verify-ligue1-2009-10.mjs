@@ -17,7 +17,7 @@ check(p.every(x=>clubs.includes(x.club)&&positions.includes(x.position)&&tiers.i
 check(p.every(x=>x.nameKo&&x.nameOriginal&&x.clubNameOriginal&&x.assessmentRationale?.length>100),'display fields and assessment prose');
 check(p.every(x=>x.born===null||/^\d{4}-\d{2}-\d{2}$/.test(x.born)),'DOB string or null');
 check(p.every(x=>x.leagueAppearances>0&&x.leagueStarts>=0&&x.leagueStarts<=x.leagueAppearances&&x.leagueMinutes>0),'source-backed current-year apps/starts/minutes');
-check(p.every(x=>x.leagueAssists===null),'unverified assists left null');
+check(p.every(x=>(x.leagueAssists===null || (Number.isInteger(x.leagueAssists) && x.leagueAssists>=0 && ['LFP','Opta','Transfermarkt'].includes(x.leagueAssistProvider) && /^https:\/\//.test(x.leagueAssistSource||'')))),'assists unknown or sourced');
 check(p.every(x=>x.position!=='GK'||x.leagueGoals===null),'no GK goals-conceded mistaken for negative goals');
 check(p.every(x=>x.sources.some(u=>u.startsWith('https://www.bdfutbol.com/en/t/t2009-10'))),'2009-10 direct club roster cited');
 check(p.every(x=>x.threeSeasonReview?.assessmentSeasons?.join(',')==='2007-08,2008-09,2009-10'),'3 season lookback exactly');
@@ -47,3 +47,5 @@ check(data.meta.worldClassCount===wc&&data.meta.leagueTopClassCount===top,'world
 check(data.meta.provisionalTierCounts&&Object.entries(data.meta.provisionalTierCounts).every(([k,n])=>p.filter(x=>x.tier===k).length===n),'per-tier exact sums');
 const result={status:issues.length?'FAIL':'PASS',scope:'STRUCTURAL tests only; 2007-08 and 2008-09 per-player sources NOT fully independently verified',clubs:clubs.length,players:p.length,starters:p.filter(x=>x.role==='starter').length,backups:p.filter(x=>x.role==='backup').length,worldClass:wc,leagueTopClass:top,birthDatesMissing:p.filter(x=>x.born===null).length,birthDatesIndependentlyVerified:p.filter(x=>x.birthDateVerification==='2009-10_independent_national_football_teams_profile_checked').length,errors:issues};
 console.log(JSON.stringify(result,null,2));if(issues.length)process.exitCode=1;
+
+if(JSON.stringify(data.bestXi.map(x=>x.position).sort())!==JSON.stringify(["CB","CB","CM","DM","GK","LB","LW","RB","RW","ST","ST"])) {console.error("Best XI tactical slots mismatch");process.exitCode=1;}
