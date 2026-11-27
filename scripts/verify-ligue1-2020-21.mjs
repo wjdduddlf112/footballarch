@@ -15,14 +15,24 @@ chk(new Set(a.map(p=>norm(p.nameOriginal))).size===a.length,"unique human");
 chk(a.every(p=>clubs.includes(p.club)&&positions.includes(p.position)&&tiers.includes(p.tier)),"valid club position tier");
 chk(a.every(p=>p.nameKo&&p.nameOriginal&&p.clubNameOriginal&&/^\d{4}-\d{2}-\d{2}$/.test(p.born||"")),"names DOB");
 chk(a.every(p=>p.leagueAppearances>=1&&p.leagueStarts<=p.leagueAppearances&&p.leagueMinutes>=0),"league stats");
-chk(a.every(p=>p.leagueAssists===null&&(p.position!=="GK"||p.leagueGoals===null)),"unknown assists and GK goals null");
+chk(a.every(p=>(p.leagueAssists===null||(Number.isInteger(p.leagueAssists)&&p.leagueAssists>=0&&["LFP","Opta","Transfermarkt"].includes(p.leagueAssistProvider)&&/^https:\/\//.test(p.leagueAssistSource||"")))&&(p.position!=="GK"||p.leagueGoals===null)),"unknown assists and GK goals null");
 chk(a.every(p=>p.threeSeasonReview?.assessmentSeasons?.join(",")==="2018-19,2019-20,2020-21"),"correct weighting years");
 chk(a.every(p=>p.review==="draft_unapproved"&&p.sources?.some(s=>s.includes("/t/t2020-21"))),"source draft");
 for(const club of clubs){const team=a.filter(p=>p.club===club),xi=team.filter(p=>p.role==="starter");chk(xi.length===11,club+" exactly 11 starters");chk(xi.filter(p=>p.position==="GK").length===1,club+" one GK");chk(xi.filter(p=>p.position==="CB").length===2,club+" two CB");chk(xi.filter(p=>p.position==="LB").length===1&&xi.filter(p=>p.position==="RB").length===1,club+" side backs");for(const pos of positions)chk(team.filter(p=>p.position===pos&&p.role==="backup").length<=1,club+" "+pos+" reserve cap");}
 for(const pos of positions){const rows=a.filter(p=>p.position===pos).sort((x,y)=>x.rank-y.rank);chk(rows.length>0&&rows.every((p,i)=>p.rank===i+1),pos+" contiguous ranks");chk(rows.every((p,i)=>!i||tiers.indexOf(rows[i-1].tier)<=tiers.indexOf(p.tier)),pos+" tier order");}
 chk(d.bestXi?.length===11&&new Set(d.bestXi.map(x=>x.playerId)).size===11,"11 unique XI");
-chk(d.bestXi?.every(b=>a.some(p=>p.id===b.playerId&&p.position===b.position)),"XI matching primary positions");
+chk(d.bestXi?.every(b=>a.some(p=>p.id===b.playerId&&p.position===(b.seasonPrimaryPosition??b.position))),"XI matching primary positions");
 for(const t of tiers)chk(d.meta.provisionalTierCounts?.[t]===a.filter(p=>p.tier===t).length,t+" grade count");
 chk(d.meta.worldClassCount===a.filter(p=>["S","A+"].includes(p.tier)).length,"World Class count");
 chk(d.meta.leagueTopClassCount===a.filter(p=>["S","A+","A","A-"].includes(p.tier)).length,"League Top count");
 console.log(JSON.stringify({result:errors.length?"FAIL":"PASS",scope:"STRUCTURAL only; match-level historical and previous-2-years independent audit incomplete",clubs:6,players:a.length,starters:66,backups:a.length-66,world:d.meta.worldClassCount,top:d.meta.leagueTopClassCount,errors},null,2));if(errors.length)process.exitCode=1;
+
+const auditPlayers=d.players;
+const expectedSlots=d.meta.formation==="4-3-3"?["CB","CB","CM","CM","DM","GK","LB","LW","RB","RW","ST"]:["CAM","CB","CB","CM","DM","GK","LB","LW","RB","RW","ST"];
+const auditProblems=[];
+if(JSON.stringify(d.bestXi.map(x=>x.tacticalSlot??x.position).sort())!==JSON.stringify(expectedSlots))auditProblems.push("formation slots");
+if(d.bestXi.some(x=>!auditPlayers.some(p=>p.id===x.playerId&&p.position===x.seasonPrimaryPosition)||x.tacticalSlot!==x.position||!x.reason))auditProblems.push("XI primary/tactical slot and rationale");
+if(auditPlayers.some(p=>p.starts!==p.leagueStarts||p.leagueStarts==null))auditProblems.push("starts consistency");
+if(auditPlayers.some(p=>p.position==="GK"&&(!Number.isInteger(p.leagueGoalsConceded)||p.leagueGoalsConceded<0)))auditProblems.push("keeper conceded");
+if(auditPlayers.some(p=>{const r=p.threeSeasonReview?.records?.[d.meta.season];return !r||r.appearances!==p.leagueAppearances||r.starts!==p.leagueStarts||r.minutes!==p.leagueMinutes||r.goals!==p.leagueGoals||r.assists!==p.leagueAssists||p.position==="GK"&&r.goalsConceded!==p.leagueGoalsConceded;}))auditProblems.push("current season record sync");
+if(auditProblems.length){console.error(auditProblems);process.exitCode=1;}
