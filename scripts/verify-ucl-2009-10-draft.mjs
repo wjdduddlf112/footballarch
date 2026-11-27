@@ -1,8 +1,14 @@
 import fs from "node:fs";
 import assert from "node:assert/strict";
+import {expected,validateUclAudit} from "./verify-ucl-2008-09-2016-17-audit.mjs";
 
 // DRAFT data structural verification, NOT proof of historical completion.
 const d=JSON.parse(fs.readFileSync("data/ucl-2009-10.json","utf8"));
+if(d.audit?.uclHistoricalPatch){
+ const result=validateUclAudit(d,expected);
+ assert.deepEqual(result.errors,[]);
+ console.log(JSON.stringify(result,null,2));
+}else{
 const positions=["GK","CB","LB","RB","DM","CM","CAM","LW","RW","ST"];
 const tiers=["S","A+","A","A-","B+","B","B-","C+","C","C-","D"];
 const clubIds=new Set(d.clubs.map(x=>x.id));
@@ -58,8 +64,8 @@ for(const p of d.players){
  assert(p.nameKo&&p.nameOriginal&&p.clubNameOriginal);
  if(p.born!==null)assert.match(p.born,/^\d{4}-\d{2}-\d{2}$/,"DOB "+p.name);
  assert(positions.includes(p.position));
- assert.equal(p.appearances,null,"individual UCL appearance pending "+p.name);
- assert.equal(p.minutes,null,"individual UCL minutes pending "+p.name);
+ for(const k of ["appearances","starts","minutes","goals","assists","goalsConceded"]) assert(p[k]==null||Number.isInteger(p[k])&&p[k]>=0,"invalid "+k+" "+p.name);
+ assert(p.starts==null||p.appearances==null||p.starts<=p.appearances,"starts exceed appearances "+p.name);
  assert(p.appearanceScope?.includes("2009-10"),"appearance scope "+p.name);
  assert(["starter","backup"].includes(p.role));
  if(p.tier===null){
@@ -93,3 +99,5 @@ for(const pick of d.bestXi){
 const distribution={};
 for(const t of tiers)distribution[t]=d.players.filter(p=>p.tier===t).length;
 console.log(JSON.stringify({result:"PASS",scope:"DRAFT structure only, not full historical individual verification",season:"2009-10",clubs:d.clubs.length,groups:d.groups.length,matches:d.matches.length,goals:320,candidates:d.players.length,rated:288,unrated:0,bestXi:11,tiers:distribution},null,2));
+
+}

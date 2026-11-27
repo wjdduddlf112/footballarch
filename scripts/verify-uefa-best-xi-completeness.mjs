@@ -2,6 +2,7 @@
 // 1999-00 through 2004-05 have strict position/formation checks after 2026-11-14 repair.
 import fs from "node:fs";
 import path from "node:path";
+import {expected as auditedSeasons,validateUclAudit} from "./verify-ucl-2008-09-2016-17-audit.mjs";
 const dir="data",files=fs.readdirSync(dir).filter(f=>/^(ucl|uel|uecl)-\d{4}-\d{2}\.json$/.test(f)).sort();
 const exactYears=new Set(["1999-00","2000-01","2001-02","2002-03","2003-04","2004-05"]);
 const expectedFormations={"4-4-2":{GK:1,RB:1,CB:2,LB:1,DM:1,CM:1,LW:1,RW:1,ST:2},"4-3-3":{GK:1,RB:1,CB:2,LB:1,DM:1,CM:2,LW:1,RW:1,ST:1},"4-3-1-2":{GK:1,RB:1,CB:2,LB:1,DM:1,CM:2,CAM:1,ST:2},"4-2-3-1":{GK:1,RB:1,CB:2,LB:1,DM:1,CM:1,CAM:1,LW:1,RW:1,ST:1}};
@@ -14,6 +15,12 @@ for(const file of files){
  chk(xi.length===11,file+": Best XI must have 11; actual "+xi.length);
  chk(new Set(xi.map(p=>p.playerId)).size===xi.length,file+": duplicate best XI player IDs");
  for(const pick of xi)chk(idSet.has(pick.playerId),file+": unknown XI player ID "+pick.playerId);
+ if(competition==="ucl"&&auditedSeasons[season]&&d.audit?.uclHistoricalPatch){
+  const r=validateUclAudit(d,auditedSeasons);
+  errors.push(...r.errors.map(e=>file+": "+e));
+  results.push({file,players:d.players.length,xi:xi.length,formation:d.meta?.formation,audit:r});
+  continue;
+ }
 
  // UCL-wide checks: every XI player's field slot must match their registered
  // primary season role. Also catch the 2005-07 goalkeeper-name propagation bug.

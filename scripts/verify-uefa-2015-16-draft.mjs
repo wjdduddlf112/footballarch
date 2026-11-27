@@ -2,6 +2,7 @@
 // Structural checks DO NOT certify individual season-long UEFA player eligibility.
 import fs from "node:fs";
 import assert from "node:assert/strict";
+import {expected,validateUclAudit} from "./verify-ucl-2008-09-2016-17-audit.mjs";
 const REQUIRED=[
  {id:"ucl",teams:32,groupTeams:32,evaluated:16,groups:8,groupGames:96,knockoutGames:29,goals:347,nominal:176,allCandidates:290},
  {id:"uel",teams:56,groupTeams:48,evaluated:8,groups:12,groupGames:144,knockoutGames:61,goals:536,nominal:88,allCandidates:143}
@@ -12,6 +13,13 @@ const records={};
 for(const spec of REQUIRED){
  const file="data/"+spec.id+"-2015-16.json";
  const d=JSON.parse(fs.readFileSync(file,"utf8"));
+ if(spec.id==="ucl"&&d.audit?.uclHistoricalPatch){
+  const result=validateUclAudit(d,expected);
+  assert.deepEqual(result.errors,[]);
+  console.log(JSON.stringify(result,null,2));
+  records[spec.id]=d;
+  continue;
+ }
  const fail=(message)=>file+" "+message;
  assert.equal(d.meta.season,"2015-16");
  assert.equal(d.meta.competitionId,spec.id);
