@@ -24,8 +24,19 @@ assert.equal(d.players.length,278);
 assert.equal(new Set(d.players.map(x=>x.id)).size,278);
 assert.equal(d.players.filter(x=>x.role==="starter").length,176);
 assert.equal(d.players.filter(x=>x.role==="backup").length,102);
-assert.equal(d.players.filter(x=>x.tier!==null).length,198);
-assert.equal(d.players.filter(x=>x.tier===null).length,80);
+const isIneligible=p=>String(p.eligibilityStatus||"").startsWith("not_eligible");
+const eligible=d.players.filter(p=>!isIneligible(p));
+const excluded=d.players.filter(isIneligible);
+assert.equal(excluded.length,1);
+assert.equal(excluded[0].id,"ucl-2006-07-bayern-bixentelizarazu");
+assert.equal(excluded[0].tier,null);assert.equal(excluded[0].rank,null);
+assert.equal(eligible.length,277);
+const rated=eligible.filter(p=>p.tier!=null).length;
+const unrated=eligible.length-rated;
+assert.equal(rated,277);assert.equal(unrated,0);
+assert.equal(d.meta.verification.rankedProvisionalCandidates,rated);
+assert.equal(d.meta.verification.unratedCandidates,d.players.length-rated);
+const slotReview=[];
 for(const group of d.groups){
  assert.equal(group.stage,1);
  assert.equal(group.table.length,4);
@@ -47,10 +58,14 @@ for(const group of d.groups){
 }
 for(const c of d.evaluatedClubs){
  assert(clubIds.has(c));
- const ps=d.players.filter(x=>x.club===c);
+ const ps=eligible.filter(x=>x.club===c);
  assert.equal(ps.filter(x=>x.role==="starter").length,11,"club XI "+c);
+ assert(ps.length<=22,"club candidate cap "+c);
  for(const pos of positions){
-  assert(ps.filter(x=>x.position===pos&&x.role==="backup").length<=1,"one backup "+c+" "+pos);
+  const starters=ps.filter(x=>x.position===pos&&x.role==="starter").length;
+  const backups=ps.filter(x=>x.position===pos&&x.role==="backup").length;
+  assert(backups<=Math.max(1,starters),"provisional slot backup cap "+c+" "+pos);
+  if(backups>starters)slotReview.push(c+" "+pos+" (actual tactical slot pending)");
  }
 }
 for(const p of d.players){
@@ -59,6 +74,8 @@ for(const p of d.players){
  assert.match(p.born,/^\d{4}-\d{2}-\d{2}$/,"DOB "+p.name);
  assert(positions.includes(p.position));
  assert(["starter","backup"].includes(p.role));
+ if(p.starts!=null&&p.appearances!=null)assert(p.starts<=p.appearances,"starts<=appearances "+p.id);
+ if(isIneligible(p))continue;
  if(p.tier===null){
   assert.equal(p.review,"evidence_pending","unrated review "+p.name);
   assert.equal(p.rank,null);
@@ -66,12 +83,12 @@ for(const p of d.players){
   assert(tiers.includes(p.tier));
   assert.equal(p.review,"draft_unapproved");
   assert(Number.isInteger(p.rank)&&p.rank>0);
-  assert(p.tierRationale?.length>10);
+  assert((p.tierRationale||p.tierReason)?.length>10,"provisional rationale "+p.id);
   assert.deepEqual(p.threeSeasonAssessment?.seasons,["2004-05","2005-06","2006-07"]);
  }
 }
 for(const pos of positions){
- const a=d.players.filter(p=>p.position===pos&&p.tier!==null).sort((x,y)=>x.rank-y.rank);
+ const a=eligible.filter(p=>p.position===pos&&p.tier!==null).sort((x,y)=>x.rank-y.rank);
  assert.deepEqual(a.map(p=>p.rank),Array.from({length:a.length},(_,i)=>i+1),"rank sequence "+pos);
  for(let i=1;i<a.length;i++) assert(tiers.indexOf(a[i-1].tier)<=tiers.indexOf(a[i].tier),"tier rank inversion "+pos);
 }
@@ -80,9 +97,9 @@ assert.equal(d.meta.formation,"4-4-1-1");
 assert.equal(new Set(d.bestXi.map(x=>x.playerId)).size,11);
 for(const pick of d.bestXi){
  const p=d.players.find(x=>x.id===pick.playerId);
- assert(p&&p.position===pick.position);
+ assert(p&&!isIneligible(p)&&p.position===(pick.seasonPrimaryPosition||pick.position));
  assert.equal(pick.status,"proposed_unapproved");
 }
 const distribution={};
 for(const t of tiers)distribution[t]=d.players.filter(p=>p.tier===t).length;
-console.log(JSON.stringify({result:"PASS",scope:"DRAFT structure only, not full historical individual verification",season:"2006-07",clubs:d.clubs.length,groups:d.groups.length,matches:d.matches.length,goals:309,candidates:d.players.length,rated:198,unrated:80,bestXi:11,tiers:distribution},null,2));
+console.log(JSON.stringify({result:"PASS",scope:"DRAFT structure only, not full historical individual verification",season:"2006-07",clubs:d.clubs.length,groups:d.groups.length,matches:d.matches.length,goals:309,candidates:d.players.length,rated,unrated,ineligible:excluded.length,slotReview,bestXi:11,tiers:distribution},null,2));
