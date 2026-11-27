@@ -1,0 +1,29 @@
+name: Verify historical UEL 2008-09 to 2016-17 audit
+on:
+  pull_request:
+    paths:
+      - 'data/uel-*.json'
+      - 'assets/app.js'
+      - 'scripts/uel-historical-patch-core.mjs'
+      - 'scripts/verify-uel-2008-09-2016-17-audit.mjs'
+      - 'scripts/verify-uefa-best-xi-completeness.mjs'
+      - '.github/workflows/verify-uel-2008-09-2016-17-audit.yml'
+permissions:
+  contents: read
+jobs:
+  historical-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Compare original Best XI verifier to PR base and test rendered UEL data
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          git worktree add --detach "$RUNNER_TEMP/uel-audit-baseline" "$BASE_SHA"
+          node --check assets/app.js
+          node scripts/verify-uel-2008-09-2016-17-audit.mjs --baseline "$RUNNER_TEMP/uel-audit-baseline"
