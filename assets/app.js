@@ -101,26 +101,27 @@ async function load(){
 function setCompetition(){st.home=false;clearFilters();st.tab="overview";writeUrl();load()}
 function seasonsStatus(){return data?.meta?.status==="demo"?"demo":data?.meta?.status==="approved"?"approved":"pending"}
 function uclHistoricalAudit(){return data?.meta?.competitionId==="ucl"?data?.audit?.uclHistoricalPatch:null}
-function uelHistoricalAudit(){return data?.meta?.competitionId==="uel"&&Number(data?.meta?.season?.slice(0,4))>=1999&&Number(data?.meta?.season?.slice(0,4))<=2016?data?.audit?.uelHistoricalPatch:null}
+function uelHistoricalAudit(){return data?.meta?.competitionId==="uel"&&Number(data?.meta?.season?.slice(0,4))>=1999&&Number(data?.meta?.season?.slice(0,4))<=2025?data?.audit?.uelHistoricalPatch:null}
 function europeanHistoricalAudit(){return uclHistoricalAudit()||uelHistoricalAudit()}
 function uelHistoricalName(){return Number(data.meta.season.slice(0,4))<=2008?"UEFA Cup":"UEFA Europa League"}
 function europeanHistoricalLabel(){return uelHistoricalAudit()?uelHistoricalName()+" 본선":"UCL 본선"}
-function uelHistoricalFinal(){return data?.knockout?.find(k=>k.stage==="final")?.ties?.[0]||null}
+function uelHistoricalFinal(){const f=data?.knockout?.find(k=>k.stage==="final");return f?.ties?.[0]||f||null}
 function uelHistoricalRoundTitle(round){
  const y=Number(data.meta.season.slice(0,4));
- return ({first_round:"본선 1라운드",second_round:"2라운드",third_round:y>=2002&&y<=2003?"32강":"3라운드",fourth_round:y>=2002&&y<=2003?"16강":"4라운드",round_of_32:"32강",round_of_16:"16강",quarter_final:"8강",quarter_finals:"8강",semi_final:"4강",semi_finals:"4강",final:"결승"})[round]||round;
+ return ({first_round:"본선 1라운드",second_round:"2라운드",third_round:y>=2002&&y<=2003?"32강":"3라운드",fourth_round:y>=2002&&y<=2003?"16강":"4라운드",round_of_32:"32강",knockout_play_off:"녹아웃 플레이오프",knockout_playoffs:"녹아웃 플레이오프",round_of_16:"16강",quarter_final:"8강",quarter_finals:"8강",semi_final:"4강",semi_finals:"4강",final:"결승"})[round]||round;
 }
 function uelHistoricalScore(m){
  const pk=m.penaltyShootout,v=Array.isArray(pk)?pk:pk?[pk.home,pk.away]:null;
  const reg=m.scoreAtRegulation,r=Array.isArray(reg)?reg:reg?[reg.home,reg.away]:null;
- return String(m.homeGoals??"—")+" : "+String(m.awayGoals??"—")+(m.extraTime?" (연장 종료"+(r&&r.every(x=>x!=null)?" · 90분 "+r[0]+"–"+r[1]:"")+")":"")+(v&&v.every(x=>x!=null)?" (PK "+v[0]+"–"+v[1]+")":"")+(m.forfeit?" (몰수)":"");
+ return String(m.homeGoals??"—")+" : "+String(m.awayGoals??"—")+(m.extraTime?" (연장 종료"+(r&&r.every(x=>x!=null)?" · 90분 "+r[0]+"–"+r[1]:"")+")":"")+(v&&v.every(x=>x!=null)?" (PK "+v[0]+"–"+v[1]+")":"")+(m.forfeit?" (몰수)":"")+(m.singleLeg?" (단판)":"");
 }
 function uelGroupTable(g){return (g.standings||g.table||[]).map(x=>({...x,gd:x.goalDifference??x.gd,status:x.status??(x.advanced?"round_of_32":"eliminated")}))}
 function uelGroupMatches(g,ms,byId){return g.matchIds?g.matchIds.map(id=>byId.get(id)).filter(Boolean):ms.filter(m=>["group","group_stage"].includes(m.round)&&m.group===(g.code??g.id))}
 function uelHistoricalMatchTable(ms){
- return '<div class="table-scroll"><table class="datagrid"><thead><tr><th>DATE / VENUE</th><th>HOME</th><th>SCORE</th><th>AWAY</th></tr></thead><tbody>'+ms.map(m=>'<tr data-match-id="'+esc(m.id)+'"><td>'+uclMatchDate(m)+(m.venue&&!m.neutral&&!m.startedDate?'<br><span class="muted small">'+esc(m.venue)+'</span>':"")+(m.scheduledDate&&m.scheduledDate!==m.date?'<br><span class="muted small">'+esc(m.scheduledDate+" 예정")+'</span>':"")+'</td><td>'+esc(club(m.home).name)+'</td><td><b>'+esc(uelHistoricalScore(m))+'</b></td><td>'+esc(club(m.away).name)+'</td></tr>').join("")+'</tbody></table></div>';
+ return '<div class="table-scroll"><table class="datagrid"><thead><tr><th>DATE / VENUE</th><th>HOME</th><th>SCORE</th><th>AWAY</th></tr></thead><tbody>'+ms.map(m=>'<tr data-match-id="'+esc(m.id??[m.round,m.date,m.home,m.away].join("|"))+'"><td>'+uclMatchDate(m)+(m.venue&&!m.neutral&&!m.startedDate?'<br><span class="muted small">'+esc(m.venue)+'</span>':"")+(m.scheduledDate&&m.scheduledDate!==m.date?'<br><span class="muted small">'+esc(m.scheduledDate+" 예정")+'</span>':"")+'</td><td>'+esc(club(m.home).name)+'</td><td><b>'+esc(uelHistoricalScore(m))+'</b></td><td>'+esc(club(m.away).name)+'</td></tr>').join("")+'</tbody></table></div>';
 }
 function uelHistoricalTournament(){
+ if(uelModernAudit())return uelModernTournament();
  const ms=data.matches||[],groups=data.groups||[],byId=new Map(ms.map(m=>[m.id,m])),f=uelHistoricalFinal(),v=data.meta.verification||{},cup=Number(data.meta.season.slice(0,4))<=2008;
  let h='<section class="panel"><div class="section-heading"><h2>'+esc(uelHistoricalName())+' '+esc(data.meta.season)+' · 본선 전체 경기</h2><button class="pill" data-go="overview">Overview</button></div><p class="muted small">'+(groups.length?groups.length+'개 조 · 조당 '+(cup?'5팀, 10경기':'4팀, 12경기'):'조별리그 없음 · 녹아웃')+'</p><div class="cards">'+statValue("Clubs",(data.participants||[]).length)+statValue("Matches",ms.length)+statValue("Goals",v.totalGoals??ms.reduce((n,m)=>n+(m.homeGoals??0)+(m.awayGoals??0),0))+'</div>'+(f?'<p class="muted small">우승 '+esc(club(f.winner).name)+' · 준우승 '+esc(club(f.winner===f.home?f.away:f.home).name)+'</p>':'')+(v.actualScoreAdjustedGoals!=null?'<p class="muted small">몰수 결과 포함 '+esc(v.totalGoals)+'골 · 실제 경기 스코어 '+esc(v.actualScoreAdjustedGoals)+'골</p>':'')+'</section>';
  const panel=(r,items)=>'<section class="panel" style="margin-top:15px"><h2>'+esc(uelHistoricalRoundTitle(r))+'</h2>'+uelHistoricalMatchTable(items)+'</section>';
@@ -135,11 +136,55 @@ function uelHistoricalTournament(){
  return h;
 }
 function uelHistoricalOverview(){
+ if(uelModernAudit())return uelModernOverview();
  const f=uelHistoricalFinal(),groups=data.groups||[],people=eligiblePlayers(),v=data.meta.verification||{},qualifiers=data.evaluatedClubs||[];
  let h='<section class="panel"><div class="section-heading"><div><h2>'+esc(uelHistoricalName())+' · '+esc(data.meta.season)+'</h2><p class="muted small">'+(f?'우승 '+esc(club(f.winner).name)+' · 준우승 '+esc(club(f.winner===f.home?f.away:f.home).name):'결승 정보 미확인')+'</p></div><button class="pill" data-go="table">본선 전체 경기'+(groups.length?' 및 조별리그':'')+'</button></div><div class="cards">'+statValue("Clubs",(data.participants||[]).length)+statValue("Evaluated clubs",qualifiers.length)+statValue("Games",(data.matches||[]).length)+statValue("Goals",v.totalGoals??(data.matches||[]).reduce((n,m)=>n+(m.homeGoals??0)+(m.awayGoals??0),0))+'</div></section>';
  if(groups.length){h+='<section class="panel" style="margin-top:15px"><h2>조별리그 · '+groups.length+'개 조</h2>';for(const g of groups)h+='<p class="small"><b>Group '+esc(g.id??g.code)+'</b> · '+uelGroupTable(g).map(t=>esc(club(t.club).name)+(t.status==="round_of_32"?' ✓':'')).join(" · ")+'</p>';h+='<p class="muted small">✓ 32강 진출</p></section>';}
  return h+'<section class="panel" style="margin-top:15px"><h2>선수 평가 · DRAFT · 미승인</h2><p class="muted">후보 '+people.length+'명 · 평가 대상 '+qualifiers.length+'팀 · Best XI '+(data.bestXi||[]).length+'명(잠정)</p>'+historicalAuditNotice()+'<button class="pill" data-action="candidates">후보 '+people.length+'명 전체 보기</button></section>'+(st.showCandidates?candidatePool():"");
 }
+
+function uelModernAudit(){return uelHistoricalAudit()&&Number(data.meta.season.slice(0,4))>=2017}
+function uelHeldField(p,field){return (uelHistoricalAudit()?.held||[]).some(h=>h.entity?.type==="player"&&h.entity.id===p.id&&h.fields?.includes(field))}
+function uelModernRound(r){return r==="knockout_play_off"?"knockout_playoffs":uclRound(r)}
+function uelModernTies(){return (data.knockout||[]).flatMap(k=>(k.ties||[k]).map(t=>({stage:uelModernRound(k.stage),tie:t})))}
+function uelModernMatch(m){
+ const tie=uelModernTies().find(({stage,tie:t})=>stage===uelModernRound(m.round)&&((t.home===m.home&&t.away===m.away)||(t.home===m.away&&t.away===m.home)))?.tie;
+ return tie?.singleLeg?{...m,singleLeg:true}:m;
+}
+function uelModernFormat(){
+ const y=Number(data.meta.season.slice(0,4));
+ return y>=2024?"36팀 리그 페이즈 · 8매치데이 · 1~8위 16강 직행 · 9~24위 녹아웃 플레이오프":y>=2021?"8개 조 · 조 1위 16강 직행 · 조 2위 녹아웃 플레이오프 · 조 3위 콘퍼런스리그 이관":"12개 조 · 조 1~2위 32강 진출";
+}
+function uelModernCounts(){
+ const ms=data.matches||[],v=data.meta.verification||{},goals=ms.reduce((n,m)=>n+(m.homeGoals??0)+(m.awayGoals??0),0);
+ const played=ms.filter(m=>m.played!==false&&!m.forfeit);
+ const actual=played.reduce((n,m)=>n+(m.homeGoals??0)+(m.awayGoals??0),0);
+ return {rows:ms.length,played:v.playedMatchCount??played.length,goals:v.decidedScoreGoals??goals,actual:v.actualPlayedGoals??actual};
+}
+function uelModernCountNote(c){return c.played!==c.rows?'<p class="muted small">실제 경기 '+esc(c.played)+'경기 · '+esc(c.actual)+'골 / 몰수 결과 포함 '+esc(c.rows)+'행 · '+esc(c.goals)+'골</p>':""}
+function uelModernCancelled(){
+ const ties=uelModernTies().filter(({tie})=>String(tie.status||"").startsWith("cancelled"));
+ return ties.map(({stage,tie:t})=>'<p class="muted small" data-cancelled-tie="'+esc(stage+"|"+t.home+"|"+t.away)+'">'+esc(uelHistoricalRoundTitle(stage))+' · '+esc(club(t.home).name)+' – '+esc(club(t.away).name)+' · UEFA 결정에 따른 취소'+(t.winner?' · '+esc(club(t.winner).name)+' 진출':'')+'</p>').join("");
+}
+function uelModernTournament(){
+ const ms=data.matches||[],groups=data.groups||[],byId=new Map(ms.map(m=>[m.id,m])),f=uelHistoricalFinal(),c=uelModernCounts(),league=data.leaguePhase?.table?.length;
+ let h='<section class="panel"><div class="section-heading"><h2>'+esc(uelHistoricalName())+' '+esc(data.meta.season)+' · 본선 전체 경기</h2><button class="pill" data-go="overview">Overview</button></div><p class="muted small">'+esc(uelModernFormat())+'</p><div class="cards">'+statValue("Clubs",(data.participants||[]).length)+statValue("Matches",c.played)+statValue("Goals",c.actual)+'</div>'+(f?'<p class="muted small">우승 '+esc(club(f.winner).name)+' · 준우승 '+esc(club(f.winner===f.home?f.away:f.home).name)+'</p>':"")+uelModernCountNote(c)+'</section>';
+ const panel=(title,items)=>'<section class="panel" style="margin-top:15px"><h2>'+esc(title)+'</h2>'+uelHistoricalMatchTable(items.map(uelModernMatch))+'</section>';
+ if(league){h+='<section class="panel" style="margin-top:15px"><h2>League phase · 36 clubs</h2>'+uclTable(data.leaguePhase)+'</section>';for(let i=1;i<=8;i++)h+=panel("Matchday "+i,ms.filter(m=>m.round==="league_phase"&&m.matchday===i));}
+ else{h+='<section class="panel" style="margin-top:15px"><h2>조별리그 · '+groups.length+'개 조 · '+groups.reduce((n,g)=>n+uelGroupTable(g).length,0)+'개 구단</h2>';for(const g of groups){const gm=uelGroupMatches(g,ms,byId);h+='<div style="margin-top:18px"><h3>Group '+esc(g.id??g.code)+'</h3>'+uclTable({table:uelGroupTable(g)})+'<details style="margin-top:8px"><summary class="small muted" style="cursor:pointer">'+gm.length+'경기 결과</summary>'+uelHistoricalMatchTable(gm)+'</details></div>';}h+='</section>';}
+ for(const r of ["round_of_32","knockout_playoffs","round_of_16","quarter_final","semi_final","final"]){const items=ms.filter(m=>uelModernRound(m.round)===r);if(items.length)h+=panel(uelHistoricalRoundTitle(r),items);}
+ const cancelled=uelModernCancelled();if(cancelled)h+='<section class="panel" style="margin-top:15px"><h2>취소 대진</h2>'+cancelled+'</section>';
+ return h;
+}
+function uelModernOverview(){
+ const f=uelHistoricalFinal(),groups=data.groups||[],people=eligiblePlayers(),c=uelModernCounts(),qualifiers=data.evaluatedClubs||[],league=data.leaguePhase?.table?.length;
+ let h='<section class="panel"><div class="section-heading"><div><h2>'+esc(uelHistoricalName())+' · '+esc(data.meta.season)+'</h2><p class="muted small">'+(f?'우승 '+esc(club(f.winner).name)+' · 준우승 '+esc(club(f.winner===f.home?f.away:f.home).name):'결승 정보 미확인')+'</p></div><button class="pill" data-go="table">본선 전체 경기</button></div><p class="muted small">'+esc(uelModernFormat())+'</p><div class="cards">'+statValue("Clubs",(data.participants||[]).length)+statValue("Evaluated clubs",qualifiers.length)+statValue("Games",c.played)+statValue("Goals",c.actual)+'</div>'+uelModernCountNote(c)+'</section>';
+ if(league)h+='<section class="panel" style="margin-top:15px"><h2>League phase · 36 clubs</h2>'+uclTable(data.leaguePhase)+'</section>';
+ else{const modern=Number(data.meta.season.slice(0,4))>=2021;const result=t=>t.status==="round_of_32"?" ✓":modern&&t.rank===1?" (16강 직행)":modern&&t.rank===2?" (플레이오프)":modern&&t.rank===3?" (콘퍼런스리그 이관)":"";h+='<section class="panel" style="margin-top:15px"><h2>조별리그 · '+groups.length+'개 조</h2>';for(const g of groups)h+='<p class="small"><b>Group '+esc(g.id??g.code)+'</b> · '+uelGroupTable(g).map(t=>esc(club(t.club).name)+result(t)).join(" · ")+'</p>';if(!modern)h+='<p class="muted small">✓ 32강 진출</p>';h+='</section>';}
+ h+=uelModernCancelled();
+ return h+'<section class="panel" style="margin-top:15px"><h2>선수 평가 · DRAFT · 미승인</h2><p class="muted">후보 '+people.length+'명 · 평가 대상 '+qualifiers.length+'팀 · Best XI '+(data.bestXi||[]).length+'명(잠정)</p>'+historicalAuditNotice()+'<button class="pill" data-action="candidates">후보 '+people.length+'명 전체 보기</button></section>'+(st.showCandidates?candidatePool():"");
+}
+
 function eligiblePlayers(){return (data?.players||[]).filter(p=>!europeanHistoricalAudit()||!/^(?:not_eligible|ineligible)/.test(String(p.eligibilityStatus||"")))}
 function rankPlayers(){return eligiblePlayers().slice().sort((a,b)=>positions.indexOf(a.position)-positions.indexOf(b.position)||((a.rank||999)-(b.rank||999))||((a.tier?ranks.indexOf(a.tier):ranks.length)-(b.tier?ranks.indexOf(b.tier):ranks.length))||a.name.localeCompare(b.name))}
 function hasTop(){return eligiblePlayers().some(p=>top(p))}
@@ -180,7 +225,7 @@ function penaltyLabel(m){
 }
 function uclTable(g){
  let t='<div class="table-scroll"><table class="datagrid"><thead><tr><th>#</th><th>CLUB</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>GD</th><th>PTS</th><th>RESULT</th></tr></thead><tbody>';
- for(const a of g.table)t+='<tr><td>'+esc(a.rank)+'</td><td>'+esc(club(a.club).name)+'</td><td>'+esc(a.played)+'</td><td>'+esc(a.wins)+'</td><td>'+esc(a.draws)+'</td><td>'+esc(a.losses)+'</td><td>'+esc(a.goalsFor)+'</td><td>'+esc(a.goalsAgainst)+'</td><td>'+esc(a.gd)+'</td><td>'+esc(a.points)+'</td><td>'+esc(a.status==="in_progress"?"진행 중":a.status==="knockout_playoffs"?"플레이오프":a.status==="second_group_stage"?"2차 조별리그":a.status==="round_of_32"?"32강":a.status==="round_of_16"?"16강":a.status==="quarter_finals"?"8강":a.status==="europa_league"&&data?.meta?.competitionId==="ucl"&&["2021-22","2022-23","2023-24"].includes(data.meta.season)&&a.rank===3?"Europa League 녹아웃 플레이오프":a.status==="uefa_cup"?(data?.meta?.competitionId==="ucl"&&Number(data.meta.season.slice(0,4))>=2009?"Europa League":"UEFA Cup"):"탈락")+'</td></tr>';
+ for(const a of g.table)t+='<tr><td>'+esc(a.rank)+'</td><td>'+esc(club(a.club).name)+'</td><td>'+esc(a.played)+'</td><td>'+esc(a.wins)+'</td><td>'+esc(a.draws)+'</td><td>'+esc(a.losses)+'</td><td>'+esc(a.goalsFor)+'</td><td>'+esc(a.goalsAgainst)+'</td><td>'+esc(a.gd)+'</td><td>'+esc(a.points)+'</td><td>'+esc(a.status==="in_progress"?"진행 중":(a.status==="knockout_playoffs"||a.status==="knockout_play_off")?(uelModernAudit()?"녹아웃 플레이오프":"플레이오프"):a.status==="conference_league_transfer"&&uelModernAudit()?"콘퍼런스리그 이관":a.status==="round_of_16"&&uelModernAudit()&&Number(data.meta.season.slice(0,4))>=2021?"16강 직행":a.status==="second_group_stage"?"2차 조별리그":a.status==="round_of_32"?"32강":a.status==="round_of_16"?"16강":a.status==="quarter_finals"?"8강":a.status==="europa_league"&&data?.meta?.competitionId==="ucl"&&["2021-22","2022-23","2023-24"].includes(data.meta.season)&&a.rank===3?"Europa League 녹아웃 플레이오프":a.status==="uefa_cup"?(data?.meta?.competitionId==="ucl"&&Number(data.meta.season.slice(0,4))>=2009?"Europa League":"UEFA Cup"):"탈락")+'</td></tr>';
  return t+'</tbody></table></div>';
 }
 function uclRound(r){return r==="quarter_finals"?"quarter_final":r==="semi_finals"?"semi_final":r}
@@ -281,10 +326,10 @@ function auditStatsVisible(){return !!(europeanHistoricalAudit()||data?.meta?.se
 function playerGoals(p){if(europeanHistoricalAudit())return p.goals??"—";if(data?.meta?.ligue1Segment3Audit)return p.leagueGoals??"—";return p.leagueGoals??p["goals"+String(p.season||data.meta.season).slice(0,4)]??"—"}
 function auditAssistVisible(){return !!(europeanHistoricalAudit()||data?.meta?.segment3Audit||data?.meta?.ligue1Segment2Audit||data?.meta?.ligue1Segment3Audit)}
 function playerAssists(p){if(europeanHistoricalAudit())return uclAssistProvider(p)?p.assists??"—":"—";if(data?.meta?.ligue1Segment3Audit)return p.leagueAssists??"—";return p.leagueAssists??p["assists"+String(p.season||data.meta.season).slice(0,4)]??p.threeSeasonReview?.records?.[data.meta.season]?.assists??"—"}
-function uclAssistProvider(p){return p.assists!=null?(p.assistsProvider||p.uclAssistProvider||p.assistProvider||null):null}
+function uclAssistProvider(p){if(uelModernAudit()&&uelHeldField(p,"assists"))return null;return p.assists!=null?(p.assistsProvider||p.uclAssistProvider||p.assistProvider||null):null}
 function playerApps(p){return europeanHistoricalAudit()?p.appearances??"—":p.leagueAppearances??"—"}
 function playerStarts(p){return europeanHistoricalAudit()?p.starts??"—":p.starts??p.leagueStarts??"—"}
-function playerMinutes(p){return europeanHistoricalAudit()?p.minutes??"—":p.leagueMinutes??p.minutes??"—"}
+function playerMinutes(p){if(uelModernAudit()&&uelHeldField(p,"minutes"))return "—";return europeanHistoricalAudit()?p.minutes??"—":p.leagueMinutes??p.minutes??"—"}
 function playerConceded(p){return europeanHistoricalAudit()?p.goalsConceded??p.keeperGoalsConceded??"—":p.leagueGoalsConceded??"—"}
 function uclFieldSources(p){const audit=europeanHistoricalAudit();if(!audit)return "";const fields=audit.fieldSources?.["player:"+p.id]||{};return ["/appearances","/starts","/minutes","/goals","/goalsConceded","/assists","/born"].filter(f=>fields[f]).map(f=>f.slice(1)+": "+[...new Set(fields[f].map(id=>audit.sources[id]?.provider).filter(Boolean))].join(" / ")).join(" · ")}
 function playerAssistSource(p){if(europeanHistoricalAudit())return uclAssistProvider(p)||"—";if(p.leagueAssistProvider&&p.leagueAssists!=null)return p.leagueAssistProvider;const changes=data?.meta?.segment3Audit?.changes||[];const change=changes.find(c=>c.id===p.id&&c.kind==="assists"&&c.after===playerAssists(p));const urls=[...(Array.isArray(change?.source)?change.source:[]),...(p.threeSeasonReview?.records?.[data.meta.season]?.externalReviewSources||[])];const source=urls.find(u=>typeof u==="string"&&u.includes("fussballtransfers.com")&&u.includes("vorlagengeber"));return source?"Fussballtransfers":playerAssists(p)==="—"?"—":"공급자 미확인"}
