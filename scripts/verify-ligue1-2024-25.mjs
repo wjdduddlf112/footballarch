@@ -13,12 +13,22 @@ test(new Set(a.map(x=>x.id)).size===a.length,"unique IDs");
 test(new Set(a.map(x=>normal(x.nameOriginal)+"#"+x.born)).size===a.length,"distinct people");
 test(a.every(x=>x.nameKo&&x.nameOriginal&&x.clubNameOriginal&&/^[0-9]{4}-[0-9]{2}-[0-9]{2}$/.test(x.born||"")),"names and DOB format");
 test(a.every(x=>clubs.includes(x.club)&&positions.includes(x.position)&&tiers.includes(x.tier)),"club / position / tier");
-test(a.every(x=>x.leagueAppearances>0&&x.leagueStarts>=0&&x.leagueStarts<=x.leagueAppearances&&x.leagueMinutes>=0&&(x.leagueGoals===null||x.leagueGoals>=0)&&x.leagueAssists===null),"valid stats and unknown assists");
+test(a.every(x=>x.leagueAppearances>0&&x.leagueStarts>=0&&x.leagueStarts<=x.leagueAppearances&&x.leagueMinutes>=0&&(x.leagueGoals===null||x.leagueGoals>=0)&&(x.leagueAssists===null||(Number.isInteger(x.leagueAssists)&&x.leagueAssists>=0&&["LFP","Opta","Transfermarkt"].includes(x.leagueAssistProvider)&&/^https:\/\//.test(x.leagueAssistSource||"")))),"valid stats and unknown assists");
 test(a.every(x=>x.review==="draft_unapproved"&&x.threeSeasonReview?.assessmentSeasons.join(",")==="2022-23,2023-24,2024-25"),"3-year DRAFT");
 for(const c of clubs){const arr=a.filter(x=>x.club===c),xi=arr.filter(x=>x.role==="starter");test(xi.length===11,c+" XI 11");test(xi.filter(x=>x.position==="CB").length===(["marseille","nice"].includes(c)?3:2),c+" CB vs tactic");for(const p of positions)test(arr.filter(x=>x.position===p&&x.role==="backup").length<=1,c+" "+p+" backups <=1");}
 for(const p of positions){const arr=a.filter(x=>x.position===p).sort((x,y)=>x.rank-y.rank);test(arr.length>0&&arr.every((x,i)=>x.rank===i+1),p+" rank contiguous");test(arr.every((x,i)=>i===0||tiers.indexOf(arr[i-1].tier)<=tiers.indexOf(x.tier)),p+" rank vs tier order");}
-test(d.bestXi?.length===11&&new Set(d.bestXi.map(x=>x.playerId)).size===11&&d.bestXi.every(x=>a.some(y=>y.id===x.playerId&&y.position===x.position)),"11 distinct Best XI primary positions");
+test(d.bestXi?.length===11&&new Set(d.bestXi.map(x=>x.playerId)).size===11&&d.bestXi.every(x=>a.some(y=>y.id===x.playerId&&y.position===(x.seasonPrimaryPosition??x.position))),"11 distinct Best XI primary positions");
 for(const t of tiers)test(d.meta.provisionalTierCounts[t]===a.filter(x=>x.tier===t).length,"grade "+t);
 test(d.meta.worldClassCount===a.filter(x=>["S","A+"].includes(x.tier)).length,"World Class count");
 test(d.meta.leagueTopClassCount===a.filter(x=>["S","A+","A","A-"].includes(x.tier)).length,"League Top count");
 console.log(JSON.stringify({result:errors.length?"FAIL":"PASS",scope:"TECHNICAL structure only, NOT complete independent historical verification",clubs:7,players:a.length,starters:77,backups:51,world:d.meta.worldClassCount,leagueTop:d.meta.leagueTopClassCount,errors},null,2));if(errors.length)process.exitCode=1;
+
+const auditPlayers=d.players;
+const expectedSlots=d.meta.formation==="4-3-3"?["CB","CB","CM","CM","DM","GK","LB","LW","RB","RW","ST"]:["CAM","CB","CB","CM","DM","GK","LB","LW","RB","RW","ST"];
+const auditProblems=[];
+if(JSON.stringify(d.bestXi.map(x=>x.tacticalSlot??x.position).sort())!==JSON.stringify(expectedSlots))auditProblems.push("formation slots");
+if(d.bestXi.some(x=>!auditPlayers.some(p=>p.id===x.playerId&&p.position===x.seasonPrimaryPosition)||x.tacticalSlot!==x.position||!x.reason))auditProblems.push("XI primary/tactical slot and rationale");
+if(auditPlayers.some(p=>p.starts!==p.leagueStarts||p.leagueStarts==null))auditProblems.push("starts consistency");
+if(auditPlayers.some(p=>p.position==="GK"&&(!Number.isInteger(p.leagueGoalsConceded)||p.leagueGoalsConceded<0)))auditProblems.push("keeper conceded");
+if(auditPlayers.some(p=>{const r=p.threeSeasonReview?.records?.[d.meta.season];return !r||r.appearances!==p.leagueAppearances||r.starts!==p.leagueStarts||r.minutes!==p.leagueMinutes||r.goals!==p.leagueGoals||r.assists!==p.leagueAssists||p.position==="GK"&&r.goalsConceded!==p.leagueGoalsConceded;}))auditProblems.push("current season record sync");
+if(auditProblems.length){console.error(auditProblems);process.exitCode=1;}
