@@ -89,7 +89,14 @@ console.log(JSON.stringify({passed:true,summary,matchRows:sum("matches"),players
 if(process.argv[2]==="--baseline"){
  const base=path.resolve(process.argv[3]);const old=renderer(base);
  const files=fs.readdirSync(path.join(cwd,"data")).filter(f=>/^(ucl|uel|uecl)-\d{4}-\d{2}\.json$/.test(f));
- const untouched=files.filter(f=>!seasons.some(s=>f==="uel-"+s+".json"));let rendered=0,baselineRendererErrors=0;
+ // A separately verified UECL audit is a declared co-target, not an accidental data change.
+ const ueclTargets=["2021-22","2022-23","2023-24","2024-25","2025-26"].map(s=>"uecl-"+s+".json");
+ const joint=ueclTargets.every(f=>!read(base,f).audit?.ueclHistoricalPatch&&read(cwd,f).audit?.ueclHistoricalPatch?.baselineCommit==="4ab7033977982c310e34ca5962b9928492b01885");
+ if(joint){
+  const r=spawnSync(process.execPath,["scripts/verify-uecl-2021-22-2025-26-audit.mjs","--baseline",base],{cwd,stdio:"inherit"});
+  if(r.error)throw r.error;assert.equal(r.status,0,"separate UECL co-target verification");
+ }
+ const untouched=files.filter(f=>!seasons.some(s=>f==="uel-"+s+".json")&&!(joint&&ueclTargets.includes(f)));let rendered=0,baselineRendererErrors=0;
  function render(r,d){try{r.set(d);return {overview:r.overview(),tournament:r.tournament(),players:r.table(r.eligible())}}catch(e){return {error:e.name+": "+e.message}}}
  for(const f of untouched){const before=read(base,f),after=read(cwd,f);assert.deepEqual(after,before,f+" data changed outside target");const a=render(old,before),b=render(api,after);assert.deepEqual(b,a,f+" renderer regression");if(a.error)baselineRendererErrors++;else rendered++;}
  function bestXi(dir){const r=spawnSync(process.execPath,["scripts/verify-uefa-best-xi-completeness.mjs"],{cwd:dir,encoding:"utf8",maxBuffer:16*1024*1024});if(r.error)throw r.error;const report=JSON.parse((r.status===0?r.stdout:r.stderr).trim());assert.equal(report.totalFiles,61);return report.errors||[];}

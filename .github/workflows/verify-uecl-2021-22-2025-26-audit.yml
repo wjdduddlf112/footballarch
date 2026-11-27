@@ -1,0 +1,88 @@
+name: Verify historical UECL 2021-22 to 2025-26 audit
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
+    paths:
+      - 'data/uecl-*.json'
+      - 'assets/app.js'
+      - 'index.html'
+      - 'scripts/verify-uecl-2021-22-2025-26-audit.mjs'
+      - 'scripts/smoke-uecl-2021-22-2025-26-browser.mjs'
+      - '.github/workflows/verify-uecl-2021-22-2025-26-audit.yml'
+permissions:
+  contents: read
+  pages: read
+jobs:
+  uecl-audit:
+    if: github.event.action != 'closed'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify facts, rendering and untouched UEFA seasons against PR base
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          git worktree add --detach "$RUNNER_TEMP/uecl-baseline" "$BASE_SHA"
+          node --check assets/app.js
+          node scripts/verify-uecl-2021-22-2025-26-audit.mjs --baseline "$RUNNER_TEMP/uecl-baseline"
+      - name: Install isolated Chromium test dependencies
+        run: |
+          npm install --prefix "$RUNNER_TEMP/uecl-browser" --no-package-lock playwright@1.56.1
+          "$RUNNER_TEMP/uecl-browser/node_modules/.bin/playwright" install --with-deps chromium
+      - name: Smoke test five seasons in Chromium
+        run: |
+          python3 -m http.server 8765 --bind 127.0.0.1 > "$RUNNER_TEMP/uecl-http.log" 2>&1 &
+          export PLAYWRIGHT_MODULE="$RUNNER_TEMP/uecl-browser/node_modules/playwright/index.mjs"
+          for i in {1..20}; do curl -fsS http://127.0.0.1:8765/ > /dev/null && break; sleep 1; done
+          node scripts/smoke-uecl-2021-22-2025-26-browser.mjs
+  uecl-pages:
+    if: github.event.action == 'closed' && github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'main' && github.event.pull_request.head.ref == 'audit/uecl-2021-22-2025-26'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.merge_commit_sha }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify Pages serves exact merged files
+        env:
+          GH_TOKEN: ${{ github.token }}
+          MERGE_SHA: ${{ github.event.pull_request.merge_commit_sha }}
+          SITE: https://wjdduddlf112.github.io/footballarch/
+        run: |
+          echo "Expected merge SHA: $MERGE_SHA"
+          test "$(git rev-parse HEAD)" = "$MERGE_SHA"
+          for i in {1..40}; do
+            ok=1
+            for file in index.html assets/app.js data/uecl-{2021-22,2022-23,2023-24,2024-25,2025-26}.json; do
+              if ! curl -fsSL --max-time 15 -H 'Cache-Control: no-cache' "${SITE}${file}?audit=${MERGE_SHA}-${i}" -o "$RUNNER_TEMP/uecl-deployed-file" || ! cmp -s "$file" "$RUNNER_TEMP/uecl-deployed-file"; then
+                ok=0
+                break
+              fi
+            done
+            if [ "$ok" = 1 ]; then
+              echo "Seven deployed files match merged commit $MERGE_SHA"
+              break
+            fi
+            sleep 10
+          done
+          test "$ok" = 1
+          gh api "repos/$GITHUB_REPOSITORY/pages/builds/latest" --jq '{status, commit}' || true
+      - name: Install Chromium
+        run: |
+          npm install --prefix "$RUNNER_TEMP/uecl-browser" --no-package-lock playwright@1.56.1
+          "$RUNNER_TEMP/uecl-browser/node_modules/.bin/playwright" install --with-deps chromium
+      - name: Smoke test deployed five seasons
+        env:
+          UECL_SITE: https://wjdduddlf112.github.io/footballarch/
+        run: |
+          export PLAYWRIGHT_MODULE="$RUNNER_TEMP/uecl-browser/node_modules/playwright/index.mjs"
+          node scripts/smoke-uecl-2021-22-2025-26-browser.mjs
