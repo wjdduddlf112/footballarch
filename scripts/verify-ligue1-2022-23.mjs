@@ -11,17 +11,27 @@ chk(players.length===111&&players.filter(p=>p.role==="starter").length===66,"111
 const norm=s=>String(s).normalize("NFKD").replace(/[^a-z0-9]/gi,"").toLowerCase();
 chk(new Set(players.map(p=>p.id)).size===111,"unique season ID");
 chk(new Set(players.map(p=>norm(p.nameOriginal)+"#"+p.born)).size===111,"unique person / DOB (two Vitinhas are distinct)");
-chk(players.every(p=>p.nameKo&&p.nameOriginal&&p.clubNameOriginal&&/^\\d{4}-\\d{2}-\\d{2}$/.test(p.born||"")),"Korean/original/DOB");
+chk(players.every(p=>p.nameKo&&p.nameOriginal&&p.clubNameOriginal&&/^[0-9]{4}-[0-9]{2}-[0-9]{2}$/.test(p.born||"")),"Korean/original/DOB");
 chk(players.every(p=>clubs.includes(p.club)&&positions.includes(p.position)&&tiers.includes(p.tier)),"valid clubs/positions/grades");
-chk(players.every(p=>p.leagueAppearances>=1&&p.leagueStarts>=0&&p.leagueStarts<=p.leagueAppearances&&p.leagueMinutes>=0&&(p.leagueGoals===null||p.leagueGoals>=0)&&p.leagueAssists===null),"verified-formatted stats and no fictional assists");
+chk(players.every(p=>p.leagueAppearances>=1&&p.leagueStarts>=0&&p.leagueStarts<=p.leagueAppearances&&p.leagueMinutes>=0&&(p.leagueGoals===null||p.leagueGoals>=0)&&(p.leagueAssists===null||(Number.isInteger(p.leagueAssists)&&p.leagueAssists>=0&&["LFP","Opta","Transfermarkt"].includes(p.leagueAssistProvider)&&/^https:\/\//.test(p.leagueAssistSource||"")))),"verified-formatted stats and no fictional assists");
 chk(players.every(p=>p.review==="draft_unapproved"&&p.threeSeasonReview?.assessmentSeasons?.join(",")==="2020-21,2021-22,2022-23"),"every record 3season review lock");
 for(const club of clubs){const p=players.filter(x=>x.club===club),xi=p.filter(x=>x.role==="starter");chk(xi.length===11,club+" 11 starters");
  const expectedCB=["psg","lens","marseille"].includes(club)?3:2;chk(xi.filter(x=>x.position==="CB").length===expectedCB,club+" CB formation");
  for(const pos of positions)chk(p.filter(x=>x.position===pos&&x.role==="backup").length<=1,club+" "+pos+" reserves");}
 for(const pos of positions){const p=players.filter(x=>x.position===pos).sort((a,b)=>a.rank-b.rank);chk(p.length>0&&p.every((x,i)=>x.rank===i+1),pos+" contiguous ranks");chk(p.every((x,i)=>i===0||tiers.indexOf(p[i-1].tier)<=tiers.indexOf(x.tier)),pos+" rank-tier consistency");}
-chk(d.bestXi?.length===11&&new Set(d.bestXi.map(x=>x.playerId)).size===11&&d.bestXi.every(b=>players.some(p=>p.id===b.playerId&&p.position===b.position)),"11 best XI valid");
+chk(d.bestXi?.length===11&&new Set(d.bestXi.map(x=>x.playerId)).size===11&&d.bestXi.every(b=>players.some(p=>p.id===b.playerId&&p.position===(b.seasonPrimaryPosition??b.position))),"11 best XI valid");
 for(const t of tiers)chk(d.meta.provisionalTierCounts[t]===players.filter(p=>p.tier===t).length,"tier totals "+t);
 chk(d.meta.worldClassCount===players.filter(p=>["S","A+"].includes(p.tier)).length,"world class total");
 chk(d.meta.leagueTopClassCount===players.filter(p=>["S","A+","A","A-"].includes(p.tier)).length,"top class total");
 console.log(JSON.stringify({result:errors.length?"FAIL":"PASS",scope:"Technical structure only. History, DOB double-check, past two years, full game-by-game positions independently incomplete.",clubs:6,players:players.length,starters:66,backups:players.length-66,world:d.meta.worldClassCount,leagueTop:d.meta.leagueTopClassCount,errors},null,2));
 if(errors.length)process.exitCode=1;
+
+const auditPlayers=d.players;
+const expectedSlots=d.meta.formation==="4-3-3"?["CB","CB","CM","CM","DM","GK","LB","LW","RB","RW","ST"]:["CAM","CB","CB","CM","DM","GK","LB","LW","RB","RW","ST"];
+const auditProblems=[];
+if(JSON.stringify(d.bestXi.map(x=>x.tacticalSlot??x.position).sort())!==JSON.stringify(expectedSlots))auditProblems.push("formation slots");
+if(d.bestXi.some(x=>!auditPlayers.some(p=>p.id===x.playerId&&p.position===x.seasonPrimaryPosition)||x.tacticalSlot!==x.position||!x.reason))auditProblems.push("XI primary/tactical slot and rationale");
+if(auditPlayers.some(p=>p.starts!==p.leagueStarts||p.leagueStarts==null))auditProblems.push("starts consistency");
+if(auditPlayers.some(p=>p.position==="GK"&&(!Number.isInteger(p.leagueGoalsConceded)||p.leagueGoalsConceded<0)))auditProblems.push("keeper conceded");
+if(auditPlayers.some(p=>{const r=p.threeSeasonReview?.records?.[d.meta.season];return !r||r.appearances!==p.leagueAppearances||r.starts!==p.leagueStarts||r.minutes!==p.leagueMinutes||r.goals!==p.leagueGoals||r.assists!==p.leagueAssists||p.position==="GK"&&r.goalsConceded!==p.leagueGoalsConceded;}))auditProblems.push("current season record sync");
+if(auditProblems.length){console.error(auditProblems);process.exitCode=1;}
