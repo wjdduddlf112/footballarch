@@ -19,7 +19,7 @@ check(new Set(p.map(x=>norm(x.nameOriginal))).size===p.length,"no duplicate play
 check(p.every(x=>clubs.includes(x.club)&&pos.includes(x.position)&&(tiers.includes(x.tier)||x.tier===null)),"valid club / position / tier");
 check(p.every(x=>x.nameKo&&x.nameOriginal&&x.clubNameOriginal&&x.born&&/^\d{4}-\d{2}-\d{2}$/.test(x.born)),"names and ISO birthday");
 check(p.every(x=>x.leagueAppearances>=0&&(x.leagueStarts===null||(x.leagueStarts>=0&&x.leagueStarts<=x.leagueAppearances))&&x.leagueMinutes>=0),"appearance / starts / minutes");
-check(p.every(x=>x.leagueAssists===null),"unverified assists not invented");
+check(p.every(x=>(x.leagueAssists===null || (Number.isInteger(x.leagueAssists) && x.leagueAssists>=0 && ['LFP','Opta','Transfermarkt'].includes(x.leagueAssistProvider) && /^https:\/\//.test(x.leagueAssistSource||'')))),"assists unknown or sourced");
 check(p.every(x=>x.position!=="GK"||x.leagueGoals===null),"goalkeeper scored goals null");
 check(p.every(x=>x.sources?.some(s=>s.includes("/t/t2013-14"))),"direct 2013-14 roster source");
 check(p.every(x=>x.threeSeasonReview?.assessmentSeasons?.join(",")==="2011-12,2012-13,2013-14"),"three season window");
