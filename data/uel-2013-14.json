@@ -6657,7 +6657,7 @@
             2,
             2
           ],
-          "winner": "betis",
+          "winner": "sevilla",
           "awayGoalsRule": false,
           "extraTime": true,
           "penalties": {
@@ -20615,6 +20615,11 @@
             "src1",
             "src1278",
             "src1279"
+          ],
+          "/winner": [
+            "src1",
+            "src1278",
+            "src1279"
           ]
         },
         "player:uel-2013-14-sevilla-beto": {
@@ -26005,7 +26010,8 @@
           "/venue": "BDFutbol 경기장 항목. 보존된 명칭 표기를 사용하며 중립 여부는 별도 근거가 있을 때만 정정"
         },
         "tie:round_of_16|sevilla|betis": {
-          "/awayGoalsRule": "합산 2–2, 원정 득점 2–2, 세비야가 승부차기 4–3으로 진출"
+          "/awayGoalsRule": "합산 2–2, 원정 득점 2–2, 세비야가 승부차기 4–3으로 진출",
+          "/winner": "승부차기 합계 세비야 4–3 베티스 및 실제 세비야 8강 진출 일치. 사용자 명시 확정값과 경기 기록에 따른 보완."
         },
         "player:uel-2013-14-sevilla-beto": {
           "/minutes": "경기별 출전·교체·퇴장 시간. 정규 90분/연장 120분, 추가시간 제외",
@@ -28486,6 +28492,23 @@
         "uel-2013-14-juventus-marcostorari",
         "uel-2013-14-basel-germanovailati",
         "uel-2013-14-basel-ivanivanov"
+      ],
+      "supplementalChanges": [
+        {
+          "entity": {
+            "type": "tie",
+            "id": "round_of_16|sevilla|betis"
+          },
+          "field": "/winner",
+          "before": "betis",
+          "after": "sevilla",
+          "sources": [
+            "src1",
+            "src1278",
+            "src1279"
+          ],
+          "reason": "승부차기 합계 세비야 4–3 베티스 및 실제 세비야 8강 진출 일치. 사용자 명시 확정값과 경기 기록에 따른 보완."
+        }
       ]
     }
   },
