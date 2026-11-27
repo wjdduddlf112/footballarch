@@ -1,0 +1,28 @@
+name: Verify historical UEL 2017-18 to 2025-26 audit
+on:
+  pull_request:
+    paths:
+      - 'data/uel-*.json'
+      - 'assets/app.js'
+      - 'scripts/verify-uel-2017-18-2025-26-audit.mjs'
+      - 'scripts/verify-uefa-best-xi-completeness.mjs'
+      - '.github/workflows/verify-uel-2017-18-2025-26-audit.yml'
+permissions:
+  contents: read
+jobs:
+  modern-uel-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify modern UEL and compare untouched UEFA seasons to PR base
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          git worktree add --detach "$RUNNER_TEMP/uel-modern-baseline" "$BASE_SHA"
+          node --check assets/app.js
+          node scripts/verify-uel-2017-18-2025-26-audit.mjs --baseline "$RUNNER_TEMP/uel-modern-baseline"
