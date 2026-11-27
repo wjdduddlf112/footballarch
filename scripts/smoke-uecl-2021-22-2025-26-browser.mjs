@@ -33,7 +33,7 @@ try{
    const rows=pool.locator("tbody tr[data-player]"),people=active.filter(p=>p.club===id);
    assert.equal(await rows.count(),people.length);
    const p=people.find(p=>p.position==="GK")||people[0];await pool.locator('tr[data-player="'+p.id+'"]').click();
-   const modal=page.locator("#modalLayer");await modal.waitFor();
+   const modal=page.locator("#modalLayer [role=dialog]");await modal.waitFor();
    const mt=await modal.textContent();assert(mt.includes(d.meta.competition+" 본선 출전")&&mt.includes("Assist source")&&mt.includes("DRAFT"));if(p.position==="GK")assert(mt.includes("실점"));
    await modal.locator('[data-action="close"]').click();
   }
