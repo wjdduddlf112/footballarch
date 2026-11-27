@@ -18,7 +18,7 @@ check(new Set(players.map(p=>norm(p.nameOriginal))).size===players.length,"uniqu
 check(players.every(p=>clubs.includes(p.club)&&positions.includes(p.position)&&(p.tier===null||tiers.includes(p.tier))),"valid positions / clubs / tiers");
 check(players.every(p=>p.nameKo&&p.nameOriginal&&p.clubNameOriginal&&(p.born===null&&p.birthDateVerification==="date_unverified"||/^\d{4}-\d{2}-\d{2}$/.test(p.born||""))),"names and DOB format");
 check(players.every(p=>p.leagueAppearances>=0&&p.leagueStarts>=0&&p.leagueStarts<=p.leagueAppearances&&p.leagueMinutes>=0),"appearance / starts / minutes");
-check(players.every(p=>p.leagueAssists===null),"unverified assists not invented");
+check(players.every(p=>(p.leagueAssists===null || (Number.isInteger(p.leagueAssists) && p.leagueAssists>=0 && ['LFP','Opta','Transfermarkt'].includes(p.leagueAssistProvider) && /^https:\/\//.test(p.leagueAssistSource||'')))),"assists unknown or sourced");
 check(players.every(p=>p.position!=="GK"||p.leagueGoals===null),"GK goals unknown");
 check(players.every(p=>p.sources?.some(s=>s.includes("/t/t2016-17"))),"season sources");
 check(players.every(p=>p.threeSeasonReview?.assessmentSeasons?.join(",")==="2014-15,2015-16,2016-17"),"weighted 3-year windows");
@@ -47,3 +47,5 @@ check(d.meta.leagueTopClassCount===players.filter(p=>["S","A+","A","A-"].include
 check(players.every(p=>/^\d{4}-\d{2}-\d{2}$/.test(p.born||"")),"birth dates populated (independence not established for all)");
 console.log(JSON.stringify({result:errors.length?"FAIL":"PASS",scope:"Structural checks only; historical three-season and match-level positions remain partly unverified.",clubs:6,players:players.length,starters:66,backups:51,graded:players.length-ungraded.length,ungraded:ungraded.length,world:d.meta.worldClassCount,top:d.meta.leagueTopClassCount,errors},null,2));
 if(errors.length)process.exitCode=1;
+
+if(JSON.stringify(d.bestXi.map(x=>x.position).sort())!==JSON.stringify(["CB","CB","CM","CM","DM","GK","LB","LW","RB","RW","ST"])) {console.error("Best XI tactical slots mismatch");process.exitCode=1;}
