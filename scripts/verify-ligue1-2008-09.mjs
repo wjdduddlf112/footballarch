@@ -19,7 +19,7 @@ ck(ps.filter(p=>!p.born).length===d.meta.historicalValidation.birthDatesMissing,
 ck(ps.every(p=>p.leagueAppearances>0&&p.leagueStarts>=0&&p.leagueStarts<=p.leagueAppearances&&p.leagueMinutes>0),'confirmed positive league appearances and minutes');
 ck(ps.every(p=>p.threeSeasonReview?.assessmentSeasons?.join(',')==='2006-07,2007-08,2008-09'),'3 season range');
 ck(ps.every(p=>p.sources?.some(x=>x.startsWith('https://www.bdfutbol.com/en/t/t2008-09'))),'2008-09 source path');
-ck(ps.every(p=>p.leagueAssists===null),'unconfirmed assists left null');
+ck(ps.every(p=>(p.leagueAssists===null || (Number.isInteger(p.leagueAssists) && p.leagueAssists>=0 && ['LFP','Opta','Transfermarkt'].includes(p.leagueAssistProvider) && /^https:\/\//.test(p.leagueAssistSource||'')))),'assists unknown or sourced');
 for(const c of qs){const a=ps.filter(p=>p.club===c);ck(a.filter(p=>p.role==='starter').length===11,c+' 11 starters');for(const pos of positions)ck(a.filter(p=>p.position===pos&&p.role==='backup').length<=1,c+' '+pos+' reserve cap')}
 for(const pos of positions){const a=ps.filter(p=>p.position===pos).sort((x,y)=>x.rank-y.rank);ck(a.length>0&&a.every((p,i)=>p.rank===i+1),pos+' 1..N ranking');ck(a.every((p,i)=>!i||grades.indexOf(a[i-1].tier)<=grades.indexOf(p.tier)),pos+' consistent tier rank')}
 ck(d.bestXi.length===11&&new Set(d.bestXi.map(x=>x.playerId)).size===11,'11 different Best XI players');
@@ -28,3 +28,5 @@ ck(d.meta.worldClassCount===ps.filter(p=>['S','A+'].includes(p.tier)).length,'Wo
 ck(d.meta.leagueTopClassCount===ps.filter(p=>['S','A+','A','A-'].includes(p.tier)).length,'League Top Class total');
 const result={status:errors.length?'FAIL':'PASS',scope:'automated data structure ONLY, NOT all historical facts independently verified',clubs:qs.length,players:ps.length,starters:55,backups:ps.length-55,missingDOB:ps.filter(p=>!p.born).length,worldClass:d.meta.worldClassCount,leagueTopClass:d.meta.leagueTopClassCount,errors};
 console.log(JSON.stringify(result,null,2));if(errors.length)process.exitCode=1;
+
+if(JSON.stringify(d.bestXi.map(x=>x.position).sort())!==JSON.stringify(["CB","CB","CM","DM","GK","LB","LW","RB","RW","ST","ST"])) {console.error("Best XI tactical slots mismatch");process.exitCode=1;}
