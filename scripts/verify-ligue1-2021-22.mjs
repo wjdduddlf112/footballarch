@@ -15,15 +15,25 @@ chk(new Set(players.map(p=>norm(p.nameOriginal))).size===players.length,"unique 
 chk(players.every(p=>p.nameKo&&p.nameOriginal&&p.clubNameOriginal&&/^\d{4}-\d{2}-\d{2}$/.test(p.born||"")),"names DOB");
 chk(players.every(p=>clubs.includes(p.club)&&positions.includes(p.position)&&tiers.includes(p.tier)),"clubs positions tiers");
 chk(players.every(p=>p.leagueAppearances>=1&&p.leagueStarts>=0&&p.leagueStarts<=p.leagueAppearances&&(p.leagueMinutes===null||p.leagueMinutes>=0)),"valid appearances starts minutes-or-null");
-chk(players.every(p=>p.leagueAssists===null&&(p.position!=="GK"||p.leagueGoals===null)),"no fabricated assists/keeper goals");
+chk(players.every(p=>(p.leagueAssists===null||(Number.isInteger(p.leagueAssists)&&p.leagueAssists>=0&&["LFP","Opta","Transfermarkt"].includes(p.leagueAssistProvider)&&/^https:\/\//.test(p.leagueAssistSource||"")))&&(p.position!=="GK"||p.leagueGoals===null)),"no fabricated assists/keeper goals");
 chk(players.every(p=>p.review==="draft_unapproved"&&p.threeSeasonReview?.assessmentSeasons?.join(",")==="2019-20,2020-21,2021-22"),"3-year recent-weight DRAFT");
 chk(players.every(p=>p.sources?.some(s=>s.includes("2021-22")||s.includes("2021-2022"))),"current source");
 for(const c of clubs){const a=players.filter(p=>p.club===c),xi=a.filter(p=>p.role==="starter");chk(xi.length===11,c+" exactly 11 starters");for(const pos of ["GK","LB","RB"])chk(xi.filter(p=>p.position===pos).length===1,c+" "+pos+" starter");chk(xi.filter(p=>p.position==="CB").length===2,c+" two CB");for(const pos of positions)chk(a.filter(p=>p.position===pos&&p.role==="backup").length<=1,c+" "+pos+" one backup max");}
 for(const pos of positions){const a=players.filter(p=>p.position===pos).sort((x,y)=>x.rank-y.rank);chk(a.length>0&&a.every((p,i)=>p.rank===i+1),pos+" ranks");chk(a.every((p,i)=>!i||tiers.indexOf(a[i-1].tier)<=tiers.indexOf(p.tier)),pos+" grade ordering");}
 chk(d.bestXi?.length===11&&new Set(d.bestXi.map(b=>b.playerId)).size===11,"XI unique");
-chk(d.bestXi?.every(b=>players.some(p=>p.id===b.playerId&&p.position===b.position)),"XI actual primary positions");
+chk(d.bestXi?.every(b=>players.some(p=>p.id===b.playerId&&p.position===(b.seasonPrimaryPosition??b.position))),"XI actual primary positions");
 for(const t of tiers)chk(d.meta.provisionalTierCounts?.[t]===players.filter(p=>p.tier===t).length,"tier count "+t);
 chk(d.meta.worldClassCount===players.filter(p=>["S","A+"].includes(p.tier)).length,"world count");
 chk(d.meta.leagueTopClassCount===players.filter(p=>["S","A+","A","A-"].includes(p.tier)).length,"league top");
 chk(d.clubs?.find(c=>c.id==="nantes")?.name==="FC Nantes","historically correct 2021-22 Nantes name");
 console.log(JSON.stringify({result:errors.length?"FAIL":"PASS",scope:"Technical structure, not comprehensive independent match-by-match or three-year historical certification",clubs:6,players:players.length,starters:66,backups:players.length-66,world:d.meta.worldClassCount,leagueTop:d.meta.leagueTopClassCount,errors},null,2));if(errors.length)process.exitCode=1;
+
+const auditPlayers=d.players;
+const expectedSlots=d.meta.formation==="4-3-3"?["CB","CB","CM","CM","DM","GK","LB","LW","RB","RW","ST"]:["CAM","CB","CB","CM","DM","GK","LB","LW","RB","RW","ST"];
+const auditProblems=[];
+if(JSON.stringify(d.bestXi.map(x=>x.tacticalSlot??x.position).sort())!==JSON.stringify(expectedSlots))auditProblems.push("formation slots");
+if(d.bestXi.some(x=>!auditPlayers.some(p=>p.id===x.playerId&&p.position===x.seasonPrimaryPosition)||x.tacticalSlot!==x.position||!x.reason))auditProblems.push("XI primary/tactical slot and rationale");
+if(auditPlayers.some(p=>p.starts!==p.leagueStarts||p.leagueStarts==null))auditProblems.push("starts consistency");
+if(auditPlayers.some(p=>p.position==="GK"&&(!Number.isInteger(p.leagueGoalsConceded)||p.leagueGoalsConceded<0)))auditProblems.push("keeper conceded");
+if(auditPlayers.some(p=>{const r=p.threeSeasonReview?.records?.[d.meta.season];return !r||r.appearances!==p.leagueAppearances||r.starts!==p.leagueStarts||r.minutes!==p.leagueMinutes||r.goals!==p.leagueGoals||r.assists!==p.leagueAssists||p.position==="GK"&&r.goalsConceded!==p.leagueGoalsConceded;}))auditProblems.push("current season record sync");
+if(auditProblems.length){console.error(auditProblems);process.exitCode=1;}
